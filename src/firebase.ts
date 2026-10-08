@@ -12,17 +12,17 @@ import {
 import { useSyncExternalStore } from 'react'
 import type { Aircraft } from './types'
 import { actions, subscribe, getState } from './store'
+import { FIREBASE_CONFIG } from './firebase.config'
 
 const env = import.meta.env
 const config = {
-  apiKey: env.VITE_FIREBASE_API_KEY as string | undefined,
-  authDomain: env.VITE_FIREBASE_AUTH_DOMAIN as string | undefined,
-  projectId: env.VITE_FIREBASE_PROJECT_ID as string | undefined,
-  storageBucket: env.VITE_FIREBASE_STORAGE_BUCKET as string | undefined,
-  messagingSenderId: env.VITE_FIREBASE_MESSAGING_SENDER_ID as string | undefined,
-  appId: env.VITE_FIREBASE_APP_ID as string | undefined,
+  apiKey: (env.VITE_FIREBASE_API_KEY as string | undefined) || FIREBASE_CONFIG.apiKey,
+  authDomain: (env.VITE_FIREBASE_AUTH_DOMAIN as string | undefined) || FIREBASE_CONFIG.authDomain,
+  projectId: (env.VITE_FIREBASE_PROJECT_ID as string | undefined) || FIREBASE_CONFIG.projectId,
+  storageBucket: (env.VITE_FIREBASE_STORAGE_BUCKET as string | undefined) || FIREBASE_CONFIG.storageBucket,
+  messagingSenderId: (env.VITE_FIREBASE_MESSAGING_SENDER_ID as string | undefined) || FIREBASE_CONFIG.messagingSenderId,
+  appId: (env.VITE_FIREBASE_APP_ID as string | undefined) || FIREBASE_CONFIG.appId,
 }
-export const ADMIN_EMAIL = (env.VITE_ADMIN_EMAIL as string | undefined)?.toLowerCase()
 export const firebaseEnabled = !!(config.apiKey && config.projectId && config.appId)
 
 const app: FirebaseApp | null = firebaseEnabled ? initializeApp(config) : null
@@ -125,10 +125,13 @@ if (auth && db) {
     try {
       const ref = doc(db, 'users', user.uid)
       let snap = await getDoc(ref)
-      // primera entrada de la cuenta administradora: se crea su propio perfil
-      if (!snap.exists() && user.email?.toLowerCase() === ADMIN_EMAIL) {
-        await setDoc(ref, { uid: user.uid, email: user.email, name: 'Administrador', role: 'admin', createdAt: serverTimestamp(), lastSeen: serverTimestamp() })
-        snap = await getDoc(ref)
+      // sin perfil: si es la cuenta administradora de arranque, las reglas de Firestore le dejan crearse el suyo;
+      // a cualquier otra cuenta se lo deniegan (así el email admin no tiene que estar en el código del cliente)
+      if (!snap.exists()) {
+        try {
+          await setDoc(ref, { uid: user.uid, email: user.email, name: 'Administrador', role: 'admin', createdAt: serverTimestamp(), lastSeen: serverTimestamp() })
+          snap = await getDoc(ref)
+        } catch { /* no es la cuenta de arranque */ }
       }
       if (!snap.exists()) {
         await signOut(auth)
