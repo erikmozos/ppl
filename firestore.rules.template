@@ -1,0 +1,32 @@
+rules_version = '2';
+// Cockpit Flows — reglas de seguridad de Firestore.
+// Generado por scripts/build-rules.mjs a partir de este template (el email admin sale de VITE_ADMIN_EMAIL).
+service cloud.firestore {
+  match /databases/{db}/documents {
+
+    function signedIn() { return request.auth != null; }
+    // la cuenta de arranque (tú) es admin aunque todavía no tenga perfil
+    function isBootstrapAdmin() {
+      return signedIn() && request.auth.token.email == '__ADMIN_EMAIL__';
+    }
+    function profile() { return get(/databases/$(db)/documents/users/$(request.auth.uid)); }
+    function isAdmin() {
+      return isBootstrapAdmin() ||
+        (signedIn() && exists(/databases/$(db)/documents/users/$(request.auth.uid)) && profile().data.role == 'admin');
+    }
+    function isSelf(uid) { return signedIn() && request.auth.uid == uid; }
+
+    // Perfiles: los crea el admin. Cada usuario puede leer el suyo y actualizar solo su nombre y su última conexión.
+    match /users/{uid} {
+      allow read: if isSelf(uid) || isAdmin();
+      allow create, delete: if isAdmin();
+      allow update: if isAdmin() ||
+        (isSelf(uid) && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['name', 'lastSeen']));
+
+      // Progreso del usuario (repasos, flows propios, flashcards, tests, zonas…) y sus cabinas subidas
+      match /{sub}/{doc} {
+        allow read, write: if isSelf(uid) || isAdmin();
+      }
+    }
+  }
+}

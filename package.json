@@ -1,0 +1,28 @@
+{
+  "name": "cockpit-flows",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "audio": "tsx scripts/narrations.ts && uv run --python 3.12 --with piper-tts python scripts/tts_piper.py",
+    "deploy:rules": "node scripts/build-rules.mjs && firebase deploy --only firestore",
+    "deploy": "npm run build && node scripts/build-rules.mjs && firebase deploy"
+  },
+  "dependencies": {
+    "firebase": "^13.0.0",
+    "idb-keyval": "^6.3.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3"
+  }
+}

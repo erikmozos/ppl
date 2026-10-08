@@ -1,0 +1,381 @@
+import type { Aircraft } from '../types'
+import { B737_PHOTOS } from './photos'
+import { D, G, Gd, H, L, P, Rot, T, _ } from './h'
+
+export const b737: Aircraft = {
+  id: 'b737',
+  name: 'Boeing 737-800 (NG)',
+  short: 'B737NG',
+  category: 'Reactor comercial · Type rating',
+  tagline: 'El reactor de pasillo único más volado del mundo. Filosofía Boeing: flows por áreas de responsabilidad (Capitán / Primer Oficial).',
+  roles: [
+    { id: 'CPT', name: 'Capitán', color: '#38bdf8' },
+    { id: 'FO', name: 'Primer Oficial', color: '#f59e0b' },
+  ],
+  photos: B737_PHOTOS,
+  theme: { panel: '#5e6872', label: '#ffffff', bg: '#15181c' },
+  viewBox: [1600, 1470],
+  panels: [
+    // ── Overhead fila 1
+    {
+      id: 'fltctl', name: 'Flight control', x: 40, y: 20, w: 300, h: 160,
+      rows: [
+        [Gd('fltCtlA', 'FLT CTRL A', 'Sistema A a los mandos de vuelo: ON (protegido).'), Gd('fltCtlB', 'FLT CTRL B', 'Sistema B a los mandos de vuelo.')],
+        [Gd('splrA', 'SPOILER A', 'Spoilers sistema A.'), Gd('splrB', 'SPOILER B', 'Spoilers sistema B.'), T('yd', 'YAW DAMPER', 'Amortiguador de guiñada.')],
+      ],
+    },
+    {
+      id: 'fuel', name: 'Fuel', x: 360, y: 20, w: 380, h: 160,
+      desc: 'Seis bombas: dos en cada ala (FWD/AFT) y dos en el depósito central. El central se consume primero (sus bombas tienen más presión).',
+      rows: [
+        [T('lAft', 'L AFT', 'Bomba ala izq. trasera.'), T('lFwd', 'L FWD', 'Bomba ala izq. delantera.'), T('ctrL', 'CTR L', 'Bomba central izq.'), T('ctrR', 'CTR R', 'Bomba central der.'), T('rFwd', 'R FWD', 'Bomba ala der. delantera.'), T('rAft', 'R AFT', 'Bomba ala der. trasera.')],
+        [_(), Rot('xfeed', 'CROSSFEED', 'Válvula de alimentación cruzada.', { span: 2 }), G('fuelTemp', 'FUEL TEMP', 'Temperatura del combustible.'), _()],
+      ],
+    },
+    {
+      id: 'elec', name: 'Electrical', x: 760, y: 20, w: 420, h: 160,
+      rows: [
+        [Gd('bat', 'BATTERY', 'Batería (protegido en ON).'), T('cabUtil', 'CAB/UTIL', 'Servicios de cabina.'), T('ife', 'IFE/PASS SEAT', 'Entretenimiento y asientos.'), Gd('stbyPwr', 'STBY POWER', 'Alimentación de reserva: AUTO (protegido).'), D('elecMeters', 'AC/DC METERS', 'Indicadores eléctricos.', { span: 2 })],
+        [T('grdPwr', 'GRD POWER', 'Grupo eléctrico de tierra.'), T('gen1', 'GEN 1', 'Generador del motor 1.'), T('apuGenL', 'APU GEN', 'Generador del APU a los buses.', { span: 2 }), T('gen2', 'GEN 2', 'Generador del motor 2.'), _()],
+      ],
+    },
+    {
+      id: 'apu', name: 'APU', x: 1200, y: 20, w: 170, h: 160,
+      rows: [[G('apuEgt', 'APU EGT', 'Temperatura de gases del APU.')], [Rot('apuSw', 'APU', 'Selector OFF – ON – START (muelle).')]],
+    },
+    {
+      id: 'irs', name: 'IRS (aft overhead)', x: 1390, y: 20, w: 170, h: 160,
+      desc: 'Unidades de referencia inercial. En NAV necesitan unos 10 min de alineamiento con el avión quieto (más en latitudes altas).',
+      rows: [[Rot('irsL', 'IRS L', 'Selector IRS izq.: OFF – ALIGN – NAV – ATT.'), Rot('irsR', 'IRS R', 'Selector IRS der.')]],
+    },
+    // ── Overhead fila 2
+    {
+      id: 'signs', name: 'Emer lights / Signs', x: 40, y: 190, w: 300, h: 160,
+      rows: [[Gd('emerExit', 'EMER EXIT LTS', 'Luces de emergencia: ARMED (protegido).')], [T('noSmoke', 'NO SMOKING', 'Señal de no fumar.'), T('belts', 'FASTEN BELTS', 'Señal de cinturones.')]],
+    },
+    {
+      id: 'heat', name: 'Window / Probe heat', x: 360, y: 190, w: 380, h: 160,
+      rows: [
+        [P('wL1', 'L SIDE', 'Calefacción de ventanilla lateral izq.'), P('wL2', 'L FWD', 'Parabrisas izq.'), P('wR2', 'R FWD', 'Parabrisas der.'), P('wR1', 'R SIDE', 'Ventanilla lateral der.')],
+        [T('probeA', 'PROBE HEAT A', 'Calefacción de sondas del capitán.', { span: 2 }), T('probeB', 'PROBE HEAT B', 'Calefacción de sondas del primer oficial.', { span: 2 })],
+      ],
+    },
+    {
+      id: 'aice', name: 'Anti-ice', x: 760, y: 190, w: 260, h: 160,
+      rows: [[T('wingAi', 'WING ANTI-ICE', 'Antihielo de ala (sangrado). En tierra se corta por lógica de sensor de aire/tierra.')], [T('engAi1', 'ENG 1 ANTI-ICE', 'Antihielo de capó del motor 1.'), T('engAi2', 'ENG 2 ANTI-ICE', 'Antihielo de capó del motor 2.')]],
+    },
+    {
+      id: 'hyd', name: 'Hydraulics', x: 1040, y: 190, w: 520, h: 160,
+      desc: 'Sistemas A y B. Cada uno tiene una bomba accionada por motor (EDP) y otra eléctrica (EMDP). Orden en el panel: ENG 1 – ELEC 2 – ELEC 1 – ENG 2.',
+      rows: [[T('hydEng1', 'ENG 1 (A)', 'Bomba del motor 1, sistema A.'), T('hydElec2', 'ELEC 2 (A)', 'Bomba eléctrica 2, sistema A.'), T('hydElec1', 'ELEC 1 (B)', 'Bomba eléctrica 1, sistema B.'), T('hydEng2', 'ENG 2 (B)', 'Bomba del motor 2, sistema B.')]],
+    },
+    // ── Overhead fila 3
+    {
+      id: 'start', name: 'Engine start', x: 40, y: 360, w: 300, h: 160,
+      rows: [[Rot('engStart1', 'ENG START 1', 'GRD – OFF – CONT – FLT. En GRD abre la válvula de arranque y se mantiene por solenoide hasta ~56 % N2.'), Rot('ignSel', 'IGN SELECT', 'Selección de encendedor L / BOTH / R.'), Rot('engStart2', 'ENG START 2', 'Arranque del motor 2.')]],
+    },
+    {
+      id: 'air', name: 'Air conditioning / Bleed', x: 360, y: 360, w: 520, h: 160,
+      rows: [
+        [Rot('tCont', 'CONT CAB', 'Temperatura de cabina de vuelo.'), Rot('tFwd', 'FWD CAB', 'Temperatura de cabina delantera.'), Rot('tAft', 'AFT CAB', 'Temperatura de cabina trasera.'), T('recircL', 'L RECIRC', 'Ventilador de recirculación izq.'), T('recircR', 'R RECIRC', 'Ventilador de recirculación der.')],
+        [Rot('packL', 'L PACK', 'Pack izq.: OFF – AUTO – HIGH.'), T('bleed1', 'BLEED 1', 'Sangrado del motor 1.'), Rot('isoValve', 'ISOLATION', 'Válvula de aislamiento: CLOSE – AUTO – OPEN.'), T('apuBleed', 'APU BLEED', 'Sangrado del APU.'), T('bleed2', 'BLEED 2', 'Sangrado del motor 2.'), Rot('packR', 'R PACK', 'Pack der.')],
+      ],
+    },
+    {
+      id: 'press', name: 'Pressurization', x: 900, y: 360, w: 240, h: 160,
+      rows: [[D('fltAlt', 'FLT ALT', 'Altitud de crucero planificada.'), D('landAlt', 'LAND ALT', 'Elevación del aeropuerto de destino.')], [Rot('pressMode', 'MODE', 'AUTO – ALTN – MAN.', { span: 2 })]],
+    },
+    {
+      id: 'lights', name: 'Lights', x: 1160, y: 360, w: 400, h: 160,
+      rows: [
+        [T('landRetL', 'L RETRACT', 'Luz de aterrizaje retráctil izq.'), T('landRetR', 'R RETRACT', 'Retráctil der.'), T('landFixL', 'L FIXED', 'Aterrizaje fija izq.'), T('landFixR', 'R FIXED', 'Fija der.'), T('rwyL', 'RWY TURNOFF', 'Luces de salida de pista.'), T('taxi', 'TAXI', 'Luz de rodaje.')],
+        [T('logo', 'LOGO', 'Logo.'), T('position', 'POSITION', 'STEADY – OFF – STROBE & STEADY.', { span: 2 }), T('antiColl', 'ANTI COLLISION', 'Beacon (anticolisión).', { span: 2 }), T('wingLt', 'WING', 'Iluminación de ala.')],
+      ],
+    },
+    // ── Glareshield
+    {
+      id: 'efisC', name: 'EFIS CPT', x: 40, y: 540, w: 200, h: 130,
+      rows: [[P('fireWarnC', 'FIRE WARN', 'Aviso de fuego (campana) — CPT.'), P('mcC', 'MASTER CAUTION', 'Precaución maestra y RECALL — CPT.')], [D('efisCpt', 'EFIS', 'Selector de modo ND, rango y mínimos — CPT.', { span: 2 })]],
+    },
+    {
+      id: 'mcp', name: 'Mode control panel (MCP)', x: 260, y: 540, w: 1080, h: 130,
+      desc: 'Piloto automático y autothrottle: velocidades (N1, SPEED), modos laterales (LNAV, HDG SEL, VOR LOC) y verticales (VNAV, LVL CHG, ALT HOLD, V/S, APP).',
+      rows: [[
+        Rot('crsL', 'COURSE', 'Rumbo de curso VOR/ILS del CPT.'), T('fdL', 'F/D L', 'Director de vuelo del CPT.'), T('atArm', 'A/T ARM', 'Armado del autothrottle.'), P('n1', 'N1', 'Modo N1.'), P('spd', 'SPEED', 'Modo velocidad.'), Rot('spdKnob', 'IAS/MACH', 'Selector de velocidad.'),
+        P('vnav', 'VNAV', 'Navegación vertical.'), P('lnav', 'LNAV', 'Navegación lateral FMC.'), Rot('hdgKnob', 'HDG', 'Selector de rumbo / ángulo de alabeo.'), P('hdgSel', 'HDG SEL', 'Modo rumbo.'), P('lvlChg', 'LVL CHG', 'Cambio de nivel.'),
+        Rot('altKnob', 'ALTITUDE', 'Altitud seleccionada.'), P('altHold', 'ALT HOLD', 'Mantener altitud.'), P('vs', 'V/S', 'Velocidad vertical.'), P('vorLoc', 'VOR LOC', 'Captura de localizador / radial.'), P('app', 'APP', 'Aproximación ILS.'),
+        P('cmdA', 'CMD A', 'Autopiloto A.'), P('cmdB', 'CMD B', 'Autopiloto B.'), T('fdR', 'F/D R', 'Director de vuelo del FO.'), Rot('crsR', 'COURSE', 'Curso del FO.'),
+      ]],
+    },
+    {
+      id: 'efisF', name: 'EFIS F/O', x: 1360, y: 540, w: 200, h: 130,
+      rows: [[P('mcF', 'MASTER CAUTION', 'Precaución maestra — FO.'), P('fireWarnF', 'FIRE WARN', 'Aviso de fuego — FO.')], [D('efisFo', 'EFIS', 'Panel EFIS — FO.', { span: 2 })]],
+    },
+    // ── Panel principal
+    {
+      id: 'mainC', name: 'Panel CPT', x: 40, y: 690, w: 480, h: 320,
+      rows: [[D('pfdC', 'PFD', 'Pantalla primaria de vuelo del capitán.', { size: 3 }), D('ndC', 'ND', 'Navegación del capitán.', { size: 3 })], [Rot('abrk', 'AUTOBRAKE', 'Autofreno: RTO – OFF – 1 – 2 – 3 – MAX.'), Rot('mfd', 'DISPLAY SEL', 'Selector de pantallas.')]],
+    },
+    {
+      id: 'mainM', name: 'Panel central', x: 540, y: 690, w: 520, h: 320,
+      desc: 'Upper DU (motores N1/EGT y alertas de combustible), lower DU (motores secundarios y sistemas), instrumento de reserva y palanca de tren.',
+      rows: [
+        [D('isfd', 'STBY (ISFD)', 'Instrumento de reserva.'), D('upperDu', 'UPPER DU', 'N1, EGT, combustible y avisos.', { span: 2, size: 1.6 }), L('gear', 'GEAR', 'Palanca de tren: UP – OFF – DN.', { color: '#f8fafc' })],
+        [Rot('n1Set', 'N1 SET', 'Ajuste manual de N1 de referencia.'), D('lowerDu', 'LOWER DU', 'Parámetros secundarios y sistemas.', { span: 2, size: 1.4 }), P('ffBtn', 'FUEL FLOW', 'Flujo / combustible usado.')],
+      ],
+    },
+    {
+      id: 'mainF', name: 'Panel F/O', x: 1080, y: 690, w: 480, h: 320,
+      rows: [[D('ndF', 'ND', 'Navegación del FO.', { size: 3 }), D('pfdF', 'PFD', 'PFD del FO.', { size: 3 })], [P('recall', 'SYS ANNUNC', 'Avisos de sistema (six-pack).'), Rot('clockF', 'CLOCK', 'Reloj / cronómetro.')]],
+    },
+    // ── Pedestal
+    {
+      id: 'ped', name: 'Pedestal delantero', x: 300, y: 1030, w: 1000, h: 250,
+      rows: [[
+        D('cduL', 'CDU L', 'FMC del capitán.', { span: 3, size: 2.2 }),
+        L('spdBrk', 'SPEED BRAKE', 'Speedbrake: DOWN – ARMED – FLIGHT DETENT – UP.', { color: '#e5e7eb' }),
+        L('thr1', 'THRUST 1', 'Palanca de empuje 1.', { color: '#111827' }), L('thr2', 'THRUST 2', 'Palanca de empuje 2.', { color: '#111827' }),
+        L('flaps', 'FLAPS', 'Flaps: UP – 1 – 2 – 5 – 10 – 15 – 25 – 30 – 40.', { color: '#e5e7eb' }),
+        D('cduR', 'CDU R', 'FMC del FO.', { span: 3, size: 2.2 }),
+      ], [
+        _(2), L('startLev1', 'START LEVER 1', 'IDLE – CUTOFF (motor 1).', { color: '#e5e7eb' }), L('startLev2', 'START LEVER 2', 'IDLE – CUTOFF (motor 2).', { color: '#e5e7eb' }),
+        H('park', 'PARK BRAKE', 'Freno de aparcamiento.', { color: '#9ca3af' }), Gd('stabMain', 'STAB TRIM MAIN', 'Cut-out del trim eléctrico.'), Gd('stabAp', 'STAB TRIM AP', 'Cut-out del trim del autopiloto.'), _(2),
+      ]],
+    },
+    {
+      id: 'aft', name: 'Pedestal trasero', x: 300, y: 1290, w: 1000, h: 165,
+      rows: [[
+        H('fire1', 'ENG 1 FIRE', 'Maneta de fuego del motor 1.'), H('apuFire', 'APU FIRE', 'Maneta de fuego del APU.'), H('fire2', 'ENG 2 FIRE', 'Maneta de fuego del motor 2.'), T('fireTest', 'FIRE TEST', 'Prueba OVHT/FIRE y EXT.'),
+        D('vhf1', 'VHF 1', 'Radio VHF 1.', { span: 2 }), D('acp', 'ACP', 'Panel de audio.', { span: 2 }), D('xpdr', 'XPDR / TCAS', 'Transpondedor y TCAS.', { span: 2 }), D('wxr', 'WX RADAR', 'Radar meteorológico.', { span: 2 }),
+      ]],
+    },
+    {
+      id: 'sideC', name: 'Lateral CPT', x: 40, y: 1030, w: 240, h: 425,
+      rows: [[Rot('tiller', 'TILLER', 'Volante de dirección de la rueda de morro.')], [D('efbC', 'EFB', 'EFB: performances y cartas.')], [D('oxyC', 'OXY MASK', 'Máscara de oxígeno: prueba antes del vuelo.')]],
+    },
+    {
+      id: 'sideF', name: 'Lateral F/O', x: 1320, y: 1030, w: 240, h: 425,
+      rows: [[D('logbook', 'TECH LOG', 'Parte técnico y MEL.')], [D('efbF', 'EFB', 'EFB del FO.')], [D('oxyF', 'OXY MASK', 'Máscara de oxígeno.')]],
+    },
+  ],
+  flows: [
+    {
+      id: 'powerup', name: 'Electrical power up', phase: 'Prevuelo',
+      desc: 'Puesta en tensión con el avión frío, antes de los flows de preflight.',
+      steps: [
+        { c: 'logbook', a: 'Tech log / MEL — COMPROBADO', r: 'FO' },
+        { c: 'bat', a: 'BATTERY — ON (guard cerrado)', r: 'FO', w: 'Primera tensión al avión: alimenta los buses de batería y permite el resto de comprobaciones.' },
+        { c: 'stbyPwr', a: 'STANDBY POWER — guard cerrado (AUTO)', r: 'FO' },
+        { c: 'hydElec2', a: 'Bombas eléctricas hidráulicas — OFF', r: 'FO' },
+        { c: 'gear', a: 'Palanca de tren — DN', r: 'FO' },
+        { c: 'flaps', a: 'Flaps — de acuerdo con la indicación', r: 'FO' },
+        { c: 'grdPwr', a: 'GRD POWER — ON (si está disponible)', r: 'FO' },
+        { c: 'fireTest', a: 'Prueba de fuego — REALIZAR', r: 'FO' },
+        { c: 'apuSw', a: 'APU — START (si se necesita)', r: 'FO', w: 'El APU da electricidad y aire para el arranque sin depender de equipos de tierra.' },
+        { c: 'apuGenL', a: 'APU GEN — ON BUS (al apagarse APU MAINT/LOW OIL)', r: 'FO' },
+        { c: 'irsL', a: 'IRS L — NAV', r: 'FO', w: 'Las inerciales necesitan unos 10 minutos de alineamiento con el avión quieto.' },
+        { c: 'irsR', a: 'IRS R — NAV', r: 'FO' },
+      ],
+    },
+    {
+      id: 'fopreflight', name: 'Preflight — escaneo del F/O', phase: 'Prevuelo',
+      desc: 'Barrido del overhead de arriba abajo y de izquierda a derecha, y después glareshield, panel y pedestal del FO.',
+      steps: [
+        { c: 'fltCtlA', a: 'Flight control — guards cerrados', r: 'FO' },
+        { c: 'yd', a: 'YAW DAMPER — ON', r: 'FO' },
+        { c: 'irsL', a: 'IRS — NAV (alineando, sin luces de fallo)', r: 'FO' },
+        { c: 'lAft', a: 'Bombas de combustible — OFF', r: 'FO' },
+        { c: 'xfeed', a: 'CROSSFEED — CERRADO', r: 'FO' },
+        { c: 'cabUtil', a: 'CAB/UTIL — ON', r: 'FO' },
+        { c: 'ife', a: 'IFE/PASS SEAT — ON', r: 'FO' },
+        { c: 'stbyPwr', a: 'STANDBY POWER — guard cerrado', r: 'FO' },
+        { c: 'elecMeters', a: 'Indicadores eléctricos — COMPROBAR (batería y generadores)', r: 'FO' },
+        { c: 'emerExit', a: 'EMER EXIT LIGHTS — guard cerrado (ARMED)', r: 'FO' },
+        { c: 'belts', a: 'Señales — ON / AUTO', r: 'FO' },
+        { c: 'wL2', a: 'Window heat — ON', r: 'FO' },
+        { c: 'probeA', a: 'Probe heat — OFF', r: 'FO' },
+        { c: 'probeB', a: 'Probe heat B — OFF', r: 'FO' },
+        { c: 'wingAi', a: 'Anti-ice ala y motores — OFF', r: 'FO' },
+        { c: 'hydEng1', a: 'Bombas de motor — ON', r: 'FO' },
+        { c: 'hydElec2', a: 'Bombas eléctricas — OFF', r: 'FO' },
+        { c: 'engStart1', a: 'ENG START — OFF', r: 'FO' },
+        { c: 'ignSel', a: 'Ignition select — IGN L o R (alternar cada día)', r: 'FO', w: 'Se alterna el encendedor usado para comprobar que los dos funcionan.' },
+        { c: 'recircL', a: 'Recirc fans — AUTO', r: 'FO' },
+        { c: 'packL', a: 'Packs — AUTO', r: 'FO' },
+        { c: 'isoValve', a: 'Isolation valve — AUTO', r: 'FO' },
+        { c: 'apuBleed', a: 'Sangrados de motor y APU — ON', r: 'FO' },
+        { c: 'fltAlt', a: 'FLT ALT — AJUSTAR crucero', r: 'FO' },
+        { c: 'landAlt', a: 'LAND ALT — AJUSTAR destino', r: 'FO' },
+        { c: 'pressMode', a: 'Modo de presurización — AUTO', r: 'FO' },
+        { c: 'position', a: 'Position lights — STEADY (según SOP)', r: 'FO' },
+        { c: 'efisFo', a: 'EFIS — AJUSTADO', r: 'FO' },
+        { c: 'oxyF', a: 'Oxígeno — PROBAR', r: 'FO' },
+        { c: 'ndF', a: 'PFD / ND — COMPROBAR', r: 'FO' },
+        { c: 'cduR', a: 'FMC — VERIFICAR (cross-check)', r: 'FO' },
+        { c: 'xpdr', a: 'Transpondedor — AJUSTADO (STBY)', r: 'FO' },
+      ],
+    },
+    {
+      id: 'cptpreflight', name: 'Preflight — Capitán', phase: 'Prevuelo',
+      steps: [
+        { c: 'oxyC', a: 'Oxígeno — PROBAR', r: 'CPT' },
+        { c: 'mcC', a: 'Master caution / recall — PROBAR', r: 'CPT', w: 'Al pulsar RECALL se encienden todos los avisos de sistema: así compruebas que funcionan.' },
+        { c: 'efisCpt', a: 'EFIS — AJUSTADO (mínimos, baro)', r: 'CPT' },
+        { c: 'fdL', a: 'Flight director — ON (PF primero)', r: 'CPT' },
+        { c: 'atArm', a: 'A/T ARM — ARM', r: 'CPT' },
+        { c: 'spdKnob', a: 'IAS — V2', r: 'CPT' },
+        { c: 'hdgKnob', a: 'Rumbo — DE PISTA / SID', r: 'CPT' },
+        { c: 'altKnob', a: 'Altitud — AUTORIZADA', r: 'CPT' },
+        { c: 'pfdC', a: 'PFD / ND — COMPROBAR', r: 'CPT' },
+        { c: 'abrk', a: 'Autobrake — RTO', r: 'CPT' },
+        { c: 'cduL', a: 'FMC — PREPARAR (POS INIT, RTE, PERF)', r: 'CPT' },
+        { c: 'spdBrk', a: 'Speed brake — DOWN', r: 'CPT', w: 'Después de aterrizar se recogen los spoilers que se desplegaron en la toma.' },
+        { c: 'park', a: 'Parking brake — SET', r: 'CPT' },
+        { c: 'startLev1', a: 'Start levers — CUTOFF', r: 'CPT' },
+        { c: 'stabMain', a: 'Stab trim cutout — NORMAL', r: 'CPT' },
+        { c: 'wxr', a: 'Radar — OFF / TEST', r: 'CPT' },
+      ],
+    },
+    {
+      id: 'beforestart', name: 'Before start', phase: 'Arranque',
+      steps: [
+        { c: 'belts', a: 'FASTEN BELTS — ON', r: 'CPT' },
+        { c: 'wL2', a: 'Window heat — ON', r: 'FO' },
+        { c: 'hydElec2', a: 'Bombas eléctricas hidráulicas — ON', r: 'FO' },
+        { c: 'ctrL', a: 'Bombas de combustible — ON (centrales si hay combustible)', r: 'FO' },
+        { c: 'antiColl', a: 'ANTI COLLISION — ON', r: 'FO' },
+        { c: 'xpdr', a: 'Transpondedor — según SOP', r: 'FO' },
+        { c: 'stabMain', a: 'Trim — AJUSTADO (unidades de despegue)', r: 'CPT' },
+      ],
+    },
+    {
+      id: 'start', name: 'Engine start (motor 2 → 1)', phase: 'Arranque',
+      desc: 'Se arranca primero el motor 2. Vigilar la presión del conducto, N2, la subida de EGT y el aceite.',
+      steps: [
+        { c: 'packL', a: 'Packs — OFF', r: 'FO', w: 'Con los packs cerrados, todo el aire del APU va al motor de arranque y gira más rápido.' },
+        { c: 'apuBleed', a: 'APU BLEED — ON', r: 'FO' },
+        { c: 'engStart2', a: 'ENG START 2 — GRD', r: 'FO', w: 'Abre la válvula de arranque: el aire del APU empieza a girar N2.' },
+        { c: 'lowerDu', a: 'N2 / presión de aceite — VIGILAR', r: 'CPT' },
+        { c: 'startLev2', a: 'Start lever 2 — IDLE (al ~25 % N2 o máx. motoring)', r: 'CPT', w: 'Al pasar a IDLE entra combustible y encendido. Vigila que la EGT se encienda en unos 10 segundos.' },
+        { c: 'upperDu', a: 'EGT — VIGILAR (límite de arranque)', r: 'CPT' },
+        { c: 'engStart2', a: 'ENG START 2 — vuelve a OFF (~56 % N2)', r: 'FO', w: 'El selector vuelve solo a OFF al terminar el arranque; si no lo hace, hay que cortar.' },
+        { c: 'engStart1', a: 'ENG START 1 — GRD', r: 'FO' },
+        { c: 'startLev1', a: 'Start lever 1 — IDLE', r: 'CPT' },
+        { c: 'engStart1', a: 'ENG START 1 — vuelve a OFF', r: 'FO' },
+      ],
+    },
+    {
+      id: 'beforetaxi', name: 'Before taxi', phase: 'Rodaje',
+      steps: [
+        { c: 'gen1', a: 'GEN 1 y 2 — ON BUS', r: 'FO', w: 'Los generadores de los motores pasan a alimentar el avión y se puede apagar el APU.' },
+        { c: 'probeA', a: 'Probe heat — ON', r: 'FO' },
+        { c: 'engAi1', a: 'Anti-ice — SEGÚN CONDICIONES', r: 'FO' },
+        { c: 'packL', a: 'Packs — AUTO', r: 'FO' },
+        { c: 'isoValve', a: 'Isolation valve — AUTO', r: 'FO' },
+        { c: 'apuBleed', a: 'APU BLEED — OFF', r: 'FO' },
+        { c: 'apuSw', a: 'APU — OFF', r: 'FO' },
+        { c: 'engStart1', a: 'ENG START — CONT', r: 'FO' },
+        { c: 'startLev1', a: 'Start levers — IDLE DETENT', r: 'CPT' },
+        { c: 'flaps', a: 'Flaps — AJUSTADOS para el despegue', r: 'FO' },
+        { c: 'stabMain', a: 'Controles de vuelo — COMPROBAR (yoke y pedales)', r: 'CPT' },
+        { c: 'taxi', a: 'TAXI light — ON', r: 'CPT' },
+        { c: 'park', a: 'Parking brake — QUITAR', r: 'CPT' },
+      ],
+    },
+    {
+      id: 'afterlanding', name: 'After landing', phase: 'Tierra',
+      desc: 'Lo realiza el FO al dejar la pista, sin que lo pida el capitán.',
+      steps: [
+        { c: 'spdBrk', a: 'Speed brake — DOWN', r: 'FO' },
+        { c: 'apuSw', a: 'APU — START (según necesidad)', r: 'FO' },
+        { c: 'probeA', a: 'Probe heat — OFF', r: 'FO' },
+        { c: 'position', a: 'Strobes — OFF (STEADY)', r: 'FO' },
+        { c: 'landRetL', a: 'Luces de aterrizaje — OFF / RETRAÍDAS', r: 'FO' },
+        { c: 'rwyL', a: 'Runway turnoff — SEGÚN NECESIDAD', r: 'FO' },
+        { c: 'engStart1', a: 'ENG START — OFF', r: 'FO' },
+        { c: 'abrk', a: 'Autobrake — OFF', r: 'FO' },
+        { c: 'flaps', a: 'Flaps — UP', r: 'FO' },
+        { c: 'xpdr', a: 'Transpondedor — según aeropuerto', r: 'FO' },
+        { c: 'wxr', a: 'Radar — OFF', r: 'FO' },
+      ],
+    },
+    {
+      id: 'shutdown', name: 'Shutdown', phase: 'Tierra',
+      steps: [
+        { c: 'park', a: 'Parking brake — SET', r: 'CPT' },
+        { c: 'apuGenL', a: 'APU GEN (o GRD PWR) — ON BUS', r: 'FO' },
+        { c: 'startLev1', a: 'Start levers — CUTOFF', r: 'CPT' },
+        { c: 'belts', a: 'FASTEN BELTS — OFF', r: 'CPT' },
+        { c: 'antiColl', a: 'ANTI COLLISION — OFF', r: 'FO' },
+        { c: 'lAft', a: 'Bombas de combustible — OFF', r: 'FO' },
+        { c: 'wL2', a: 'Window heat — OFF', r: 'FO' },
+        { c: 'hydElec2', a: 'Bombas eléctricas hidráulicas — OFF', r: 'FO' },
+        { c: 'packL', a: 'Packs / APU bleed — SEGÚN NECESIDAD', r: 'FO' },
+        { c: 'fdL', a: 'Flight directors — OFF', r: 'CPT' },
+        { c: 'xpdr', a: 'Transpondedor — STBY', r: 'FO' },
+      ],
+    },
+    {
+      id: 'cdu', name: 'CDU preflight (FMC)', phase: 'Prevuelo',
+      desc: 'Preparación del FMC por páginas. El otro piloto lo verifica de forma independiente.',
+      steps: [
+        { c: 'cduL', a: 'IDENT — modelo, motores y base de datos VIGENTE', r: 'CPT', w: 'Una base de datos de navegación caducada puede tener procedimientos o frecuencias que ya no existen.' },
+        { c: 'cduL', a: 'POS INIT — posición de referencia (puerta / aeropuerto)', r: 'CPT', w: 'Las IRS necesitan la posición inicial para terminar de alinearse. Un error aquí desplaza toda la navegación.' },
+        { c: 'irsL', a: 'IRS — ALINEANDO / ALINEADAS', r: 'CPT' },
+        { c: 'cduL', a: 'ROUTE — origen, destino, número de vuelo, ruta · ACTIVATE · EXEC', r: 'CPT' },
+        { c: 'cduL', a: 'DEPARTURES — pista y SID', r: 'CPT' },
+        { c: 'cduL', a: 'PERF INIT — ZFW, combustible, reservas, cost index, nivel de crucero', r: 'CPT', w: 'Con el peso sin combustible (ZFW) y el combustible el FMC calcula el peso y las velocidades. Un ZFW erróneo es una causa conocida de incidentes en el despegue.' },
+        { c: 'cduL', a: 'N1 LIMIT — empuje de despegue, derate / temperatura asumida', r: 'CPT' },
+        { c: 'cduL', a: 'TAKEOFF REF — flaps, CG / trim, V1 · VR · V2', r: 'CPT', w: 'Las velocidades se comparan con las del cálculo de performances del EFB antes de aceptarlas.' },
+        { c: 'cduR', a: 'Ruta, pesos y velocidades — VERIFICAR (cross-check)', r: 'FO', w: 'El cruce independiente de datos es una de las defensas más eficaces contra errores de introducción.' },
+      ],
+    },
+    {
+      id: 'beforeto', name: 'Before takeoff y alineación', phase: 'Despegue',
+      steps: [
+        { c: 'flaps', a: 'Flaps — VERIFICADOS para el despegue', r: 'FO' },
+        { c: 'stabMain', a: 'Trim del estabilizador — VERIFICADO (unidades de despegue, banda verde)', r: 'CPT' },
+        { c: 'engStart1', a: 'Engine start — CONT', r: 'FO' },
+        { c: 'wxr', a: 'Radar — SEGÚN NECESIDAD', r: 'FO' },
+        { c: 'xpdr', a: 'Transpondedor — TA/RA', r: 'FO' },
+        { c: 'position', a: 'Position — STROBE & STEADY', r: 'CPT' },
+        { c: 'landRetL', a: 'Luces de aterrizaje — ON', r: 'CPT' },
+        { c: 'rwyL', a: 'Runway turnoff — ON', r: 'CPT' },
+        { c: 'thr1', a: 'Palancas — ~40 % N1 estabilizado, después TO/GA', r: 'CPT', w: 'Se deja estabilizar a unos 40 por ciento de N1 para que los dos motores aceleren igual, y luego se pulsa TO/GA para que el autothrottle fije el empuje de despegue.' },
+        { c: 'upperDu', a: 'Empuje de despegue — COMPROBADO ("thrust set")', r: 'FO' },
+      ],
+    },
+    {
+      id: 'secure', name: 'Secure (abandono del avión)', phase: 'Tierra',
+      steps: [
+        { c: 'irsL', a: 'IRS L — OFF', r: 'FO' },
+        { c: 'irsR', a: 'IRS R — OFF', r: 'FO' },
+        { c: 'emerExit', a: 'Emergency exit lights — OFF', r: 'FO', w: 'Si se dejan armadas con el avión sin tensión, descargan sus baterías.' },
+        { c: 'wL2', a: 'Window heat — OFF', r: 'FO' },
+        { c: 'packL', a: 'Packs — OFF', r: 'FO' },
+        { c: 'apuSw', a: 'APU — OFF (si no se necesita)', r: 'FO' },
+        { c: 'bat', a: 'Battery — OFF (si se deja el avión sin alimentación de tierra)', r: 'FO' },
+      ],
+    },
+  ],
+  guide: {
+    intro: 'El 737NG (-600/-700/-800/-900) tiene dos CFM56-7B y una cabina con seis pantallas, aunque mantiene muchos mandos clásicos de Boeing. La filosofía de Boeing reparte la cabina por áreas de responsabilidad (Capitán / FO). Los flows se hacen de memoria y después se lee el Normal Checklist (corto) para confirmar los puntos críticos. Cada operador (Ryanair, TUI, Air Europa…) tiene variaciones en sus SOP.',
+    specs: [
+      ['Motores', '2 × CFM56-7B (24–27 klbf)'],
+      ['Tripulación', '2 pilotos (CPT / FO)'],
+      ['APU', 'Honeywell 131-9B'],
+      ['Hidráulica', 'Sistemas A, B y STANDBY'],
+      ['Aviónica', '6 DU, FMC doble, MCP con CMD A/B'],
+    ],
+    sections: [
+      { title: 'Áreas de responsabilidad', body: 'En tierra, el FO lleva el overhead, el pedestal trasero y su panel; el capitán, el MCP, su panel y el pedestal delantero. En vuelo se trabaja como PF/PM. El FO hace el flow de after landing sin que se le pida.' },
+      { title: 'Arranque', body: 'Con el ENG START en GRD, la válvula de arranque se abre con el sangrado del APU (los packs en OFF dan más presión). El start lever pasa a IDLE con ~25 % N2 o al máximo de motoring. El selector vuelve a OFF a ~56 % N2; si no lo hace, hay que cortar el arranque.' },
+      { title: 'Combustible', body: 'El depósito central se consume primero porque sus bombas tienen más presión. Las bombas centrales se apagan con la luz LOW PRESSURE cuando el depósito se vacía, para no hacerlas funcionar en seco.' },
+      { title: 'Hidráulica', body: 'El sistema A tiene la bomba del motor 1 y la eléctrica 2; el B, la eléctrica 1 y la del motor 2. Por eso el orden en el panel es ENG 1 – ELEC 2 – ELEC 1 – ENG 2. Hay un sistema STANDBY como respaldo del timón, los slats y las reversas.' },
+    ],
+  },
+  refs: [
+    { title: 'Boeing 737NG FCOM / QRH (acceso a través del operador)', url: 'https://www.myboeingfleet.com/' },
+    { title: 'The Boeing 737 Technical Site (Chris Brady)', url: 'http://www.b737.org.uk/' },
+  ],
+}
