@@ -23,7 +23,8 @@ const config = {
   messagingSenderId: (env.VITE_FIREBASE_MESSAGING_SENDER_ID as string | undefined) || FIREBASE_CONFIG.messagingSenderId,
   appId: (env.VITE_FIREBASE_APP_ID as string | undefined) || FIREBASE_CONFIG.appId,
 }
-export const firebaseEnabled = !!(config.apiKey && config.projectId && config.appId)
+// VITE_NO_AUTH=1: modo local sin cuentas (desarrollo y pruebas)
+export const firebaseEnabled = !env.VITE_NO_AUTH && !!(config.apiKey && config.projectId && config.appId)
 
 const app: FirebaseApp | null = firebaseEnabled ? initializeApp(config) : null
 const auth = app ? getAuth(app) : null

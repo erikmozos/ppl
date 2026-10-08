@@ -3,7 +3,8 @@
 import { writeFileSync, mkdirSync } from 'node:fs'
 import { BUILTIN } from '../src/data'
 import { GUIDE } from '../src/data/guide'
-import { END_TEXT, TEST_TEXT, contextFor, flowIntro, stepNarration, textHash } from '../src/speech'
+import { END_TEXT, TEST_TEXT, contextFor, flowIntro, radioSpeech, stepNarration, textHash } from '../src/speech'
+import { MODULES } from '../src/data/licenses/modules'
 
 const texts = new Set<string>([END_TEXT, TEST_TEXT])
 for (const ac of BUILTIN) {
@@ -28,6 +29,14 @@ for (const ac of BUILTIN) {
 for (const g of GUIDE) texts.add(g.say)
 
 mkdirSync('public/audio', { recursive: true })
-const list = [...texts].map(t => ({ h: textHash(t), t }))
+const list: { h: string; t: string; v?: string }[] = [...texts].map(t => ({ h: textHash(t), t }))
+// mensajes de radio: cada uno con la voz de piloto o controlador en su idioma
+for (const m of MODULES) for (const sc of m.radio ?? []) for (const line of sc.lines) {
+  for (const l of ['es', 'en'] as const) {
+    const v = `${l}-${line.who === 'ATC' ? 'atc' : 'pilot'}`
+    const spoken = radioSpeech(line[l], l)
+    list.push({ h: textHash(v + '|' + spoken), t: spoken, v })
+  }
+}
 writeFileSync('public/audio/texts.json', JSON.stringify(list, null, 0))
 console.log(`${list.length} textos exportados`)

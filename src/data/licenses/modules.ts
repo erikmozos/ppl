@@ -3,6 +3,7 @@
 import type { Module } from './types'
 import { URL, airLaw, comms, humanPerf, meteo, navigation } from './ppl-common'
 import { agk, ops, perf, pof } from './ppl-aircraft'
+import { phraseology } from './phraseology'
 
 const EASA_P = (p: number) => `https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no?page=${p}`
 const AESA_GUIDE = 'https://www.senasa.es/recursos/adobePDF/2025/pdf/FOR-EFT-GU01_Ed_01_Examenes_teoricos_PART_%20FCL.pdf'
@@ -124,6 +125,7 @@ const prog = (m: Omit<Module, 'status'>): Module => ({ ...m, status: 'en-progres
 
 export const MODULES: Module[] = [
   ppl,
+  phraseology,
   prog({
     id: 'nvfr', name: 'Habilitación nocturna (VFR-N)', short: 'VFR-N', icon: '🌙', stage: '2',
     summary: 'Volar VFR de noche. Corta y muy útil para el hour building; no caduca.',

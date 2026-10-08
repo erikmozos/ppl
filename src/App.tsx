@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { useRoute } from './router'
 import { findAircraft, useStore } from './store'
 import { Hub } from './pages/Hub'
@@ -22,6 +23,8 @@ export function App() {
   const { parts, query } = useRoute()
   const s = useStore()
   const session = useSession()
+  const [menu, setMenu] = useState(false)
+  useEffect(() => { setMenu(false) }, [parts.join('/')])
   let page: React.ReactNode
 
   // con Firebase activo, la academia es privada: hay que entrar con una cuenta creada por el admin
@@ -41,7 +44,7 @@ export function App() {
     if (!parts[1]) page = <Licenses />
     else if (!m || (parts[2] && !sub)) page = <NotFound />
     else if (sub) page = <SubjectPage key={sub.id} m={m} sub={sub} tab={query.get('tab') ?? ''} />
-    else page = <ModulePage m={m} tab={query.get('tab') ?? ''} />
+    else page = <ModulePage m={m} tab={query.get('tab') ?? ''} sid={query.get('s')} />
   } else if (parts[0] === 'cockpits') page = <Fleet />
   else if (parts[0] === 'admin') page = <Admin />
   else if (parts[0] === 'new') page = <NewAircraft />
@@ -56,7 +59,8 @@ export function App() {
           <svg viewBox="0 0 64 64" width="28" height="28" aria-hidden><rect width="64" height="64" rx="14" fill="#0f1720" stroke="#1e293b" /><path d="M14 46 C24 44 22 22 32 22 S44 40 50 18" fill="none" stroke="#38bdf8" strokeWidth="5" strokeLinecap="round" /><circle cx="14" cy="46" r="5" fill="#f59e0b" /><circle cx="50" cy="18" r="5" fill="#f59e0b" /></svg>
           <span>Cockpit<b>Flows</b></span>
         </a>
-        <nav>
+        <button className="menu-btn" aria-label="Menú" aria-expanded={menu} onClick={() => setMenu(m => !m)}>{menu ? '✕' : '☰'}</button>
+        <nav className={menu ? 'open' : ''}>
           <a href="#/licencias">Licencias</a>
           <a href="#/cockpits">Cockpits</a>
           <a href="#/guia">Guía</a>

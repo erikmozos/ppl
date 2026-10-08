@@ -1,11 +1,19 @@
 import type { Module } from '../data/licenses/types'
 import { StudyBlock } from '../components/StudyBlock'
 import { useStore } from '../store'
+import { Quiz } from '../components/Quiz'
+import { RadioList, RadioTrainer } from '../components/RadioTrainer'
 
-export function ModulePage({ m, tab }: { m: Module; tab: string }) {
+export function ModulePage({ m, tab, sid }: { m: Module; tab: string; sid?: string | null }) {
   const s = useStore()
   const subs = m.subjects ?? []
-  const tabs: [string, string][] = [['resumen', 'Resumen y requisitos'], ...(subs.length ? [['asignaturas', `Asignaturas (${subs.length})`] as [string, string]] : []), ['fuentes', 'Fuentes']]
+  const tabs: [string, string][] = [
+    ['resumen', m.radio ? 'Fundamentos' : 'Resumen y requisitos'],
+    ...(subs.length ? [['asignaturas', `Asignaturas (${subs.length})`] as [string, string]] : []),
+    ...(m.radio ? [['radio', `🎙️ Simulador de radio (${m.radio.length})`] as [string, string]] : []),
+    ...(m.quiz ? [['test', `📝 Test (${m.quiz.length})`] as [string, string]] : []),
+    ['fuentes', 'Fuentes'],
+  ]
   const t = tabs.some(x => x[0] === tab) ? tab : subs.length && tab === '' ? 'asignaturas' : 'resumen'
   return (
     <div className="wrap">
@@ -49,6 +57,14 @@ export function ModulePage({ m, tab }: { m: Module; tab: string }) {
             )
           })}
         </div>
+      )}
+      {t === 'radio' && m.radio && (() => {
+        const sc = m.radio.find(x => x.id === sid)
+        const base = `#/licencias/${m.id}?tab=radio`
+        return sc ? <RadioTrainer sc={sc} back={base} quizKey={`${m.id}/radio-${sc.id}`} /> : <RadioList scenarios={m.radio} base={base} />
+      })()}
+      {t === 'test' && m.quiz && (
+        <div className="narrow-test"><Quiz id={`${m.id}/test`} questions={m.quiz} title={m.short} /></div>
       )}
       {t === 'fuentes' && (
         <div className="card">

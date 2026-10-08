@@ -154,3 +154,68 @@ export const TEST_TEXT = 'Beacon: encender. La luz anticolisión avisa al person
 export function flowIntro(ac: Aircraft, f: Flow) {
   return `${f.name}. ${ac.name}. ${f.desc ?? ''} Son ${f.steps.length} pasos. Sigue la línea sobre la cabina.`
 }
+
+/* ─────────── radio: voces de piloto y controlador en español e inglés ─────────── */
+
+export type RadioVoice = 'es-atc' | 'es-pilot' | 'en-atc' | 'en-pilot'
+
+const PHON: Record<string, string> = { A: 'Alfa', B: 'Bravo', C: 'Charlie', D: 'Delta', E: 'Echo', F: 'Foxtrot', G: 'Golf', H: 'Hotel', I: 'India', J: 'Juliett', K: 'Kilo', L: 'Lima', M: 'Mike', N: 'November', O: 'Oscar', P: 'Papa', Q: 'Quebec', R: 'Romeo', S: 'Sierra', T: 'Tango', U: 'Uniform', V: 'Victor', W: 'Whiskey', X: 'X-ray', Y: 'Yankee', Z: 'Zulu' }
+const DIG = {
+  es: ['cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve'],
+  en: ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'niner'],
+}
+const digits = (n: string, l: 'es' | 'en') => n.split('').map(d => DIG[l][+d]).join(' ')
+
+/** Convierte un mensaje escrito en cómo se pronuncia en radio (matrículas, números, siglas) */
+export function radioSpeech(text: string, l: 'es' | 'en') {
+  let t = text
+  // matrículas tipo EC-ABC → alfabeto fonético
+  t = t.replace(/\b([A-Z]{1,2})-([A-Z]{2,4})\b/g, (_, a: string, b: string) => (a + b).split('').map(c => PHON[c]).join(' '))
+  // siglas que se deletrean
+  t = t.replace(/\b(QNH|QFE|VFR|IFR|ATIS)\b/g, m => m.split('').join(' '))
+  // altitudes redondas: 2000 pies → dos mil pies / two thousand feet
+  t = t.replace(/\b(\d{1,2})000 (pies|feet)\b/g, (_, k: string, u: string) => (l === 'es' ? `${k === '1' ? '' : k} mil ${u}`.trim() : `${k} thousand ${u}`))
+  t = t.replace(/\b(\d{1,2})500 (pies|feet)\b/g, (_, k: string, u: string) => (l === 'es' ? `${k === '1' ? '' : k} mil quinientos ${u}`.trim() : `${k} thousand five hundred ${u}`))
+  // códigos SSR redondos: 7000 → siete mil / seven thousand
+  t = t.replace(/\b(transpond[ao]|squawk(?:ing)?) (\d)000\b/gi, (_, w: string, d: string) => `${w} ${DIG[l][+d]} ${l === 'es' ? 'mil' : 'thousand'}`)
+  // resto de números (QNH, pistas, rumbos, frecuencias, códigos): dígito a dígito
+  t = t.replace(/\d+/g, n => digits(n, l))
+  return t
+}
+
+let radioAudio: HTMLAudioElement | null = null
+/** Reproduce un mensaje de radio con la voz de piloto o de controlador */
+export function speakRadio(text: string, voice: RadioVoice): Promise<void> {
+  if (!prefs.enabled) return Promise.resolve()
+  const l = voice.startsWith('es') ? 'es' : 'en'
+  const spoken = radioSpeech(text, l)
+  const h = textHash(voice + '|' + spoken)
+  const my = ++token
+  if (supported) speechSynthesis.cancel()
+  audio?.pause(); radioAudio?.pause()
+  if (prefs.engine === 'neural' && neural.has(h)) {
+    return new Promise(resolve => {
+      const a = new Audio(`/audio/${h}.m4a`)
+      radioAudio = audio = a
+      a.playbackRate = prefs.rate
+      const done = () => { if (my === token) emit(); resolve() }
+      a.onended = done
+      a.onerror = done
+      a.play().then(emit).catch(done)
+    })
+  }
+  if (!supported) return Promise.resolve()
+  return new Promise(resolve => {
+    const u = new SpeechSynthesisUtterance(spoken)
+    const v = speechSynthesis.getVoices().find(x => x.lang.toLowerCase().startsWith(l === 'es' ? 'es-es' : 'en-gb')) ?? speechSynthesis.getVoices().find(x => x.lang.startsWith(l))
+    if (v) { u.voice = v; u.lang = v.lang } else u.lang = l === 'es' ? 'es-ES' : 'en-GB'
+    u.rate = prefs.rate
+    u.pitch = voice.endsWith('atc') ? 0.85 : 1.15
+    const done = () => { if (my === token) emit(); resolve() }
+    u.onend = done
+    u.onerror = done
+    speechSynthesis.speak(u)
+    emit()
+    setTimeout(done, 3000 + (spoken.length * 130) / prefs.rate)
+  })
+}

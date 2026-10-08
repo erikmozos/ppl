@@ -10,6 +10,13 @@ from pathlib import Path
 from piper import PiperVoice, SynthesisConfig
 
 VOICE = os.environ.get("PIPER_VOICE", "es_ES-davefx-medium")
+# voces del simulador de radio: (modelo, speaker_id)
+RADIO = {
+    "es-atc": ("es_ES-sharvard-medium", 1),
+    "es-pilot": ("es_ES-davefx-medium", None),
+    "en-atc": ("en_GB-alan-medium", None),
+    "en-pilot": ("en_US-ryan-medium", None),
+}
 OUT = Path("public/audio")
 VOICES = Path("scripts/.voices")
 
@@ -29,15 +36,23 @@ def ensure_voice(name: str) -> Path:
 
 def main():
     texts = json.loads((OUT / "texts.json").read_text())
-    voice = PiperVoice.load(str(ensure_voice(VOICE)))
-    # algo más pausado y expresivo que el valor por defecto
-    cfg = SynthesisConfig(length_scale=1.08, noise_scale=0.6, noise_w_scale=0.75)
+    voices = {}
+
+    def get(v):
+        model, speaker = RADIO.get(v, (VOICE, None))
+        if model not in voices:
+            voices[model] = PiperVoice.load(str(ensure_voice(model)))
+        # narración algo más pausada; la radio, a ritmo de radio
+        cfg = SynthesisConfig(length_scale=1.08 if v is None else 0.98, noise_scale=0.6, noise_w_scale=0.75, speaker_id=speaker)
+        return voices[model], cfg
+
     todo = [x for x in texts if not (OUT / f"{x['h']}.m4a").exists()]
-    print(f"{len(texts)} textos · {len(todo)} por generar con {VOICE}", flush=True)
+    print(f"{len(texts)} textos · {len(todo)} por generar", flush=True)
     tmp = Path(tempfile.mkdtemp())
     convert = []
     for i, x in enumerate(todo, 1):
         wav = tmp / f"{x['h']}.wav"
+        voice, cfg = get(x.get("v"))
         with wave.open(str(wav), "wb") as wf:
             voice.synthesize_wav(x["t"], wf, syn_config=cfg)
         convert.append(wav)

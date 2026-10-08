@@ -109,3 +109,15 @@ Proyecto: `cockpit-flows-academy` (configuración en `.env.local`, que no se sub
 - **Panel `#/admin`**: crear usuarios (con contraseña inicial y email para que elijan la suya), cambiar rol, desactivar, ver progreso, borrar progreso y eliminar perfil. Borrar la cuenta de Authentication requiere la consola (o un servidor con Admin SDK).
 - **Seguridad**: `firestore.rules.template` → `npm run deploy:rules` (genera `firestore.rules` con el email admin y lo despliega). Cada alumno solo puede leer y escribir lo suyo; el admin, todo.
 - **Despliegue en Firebase Hosting**: `npm run deploy`.
+
+## Fraseología (español e inglés OACI)
+
+Módulo `#/licencias/fraseologia` (`src/data/licenses/phraseology.ts`):
+- **Fundamentos**: alfabeto con pronunciación, números (ES/EN), cómo se dice cada dato (altitudes, niveles, rumbos, frecuencias, códigos SSR…), las 27 palabras normalizadas en los dos idiomas, colaciones obligatorias del AIP GEN 1.7, estructura de las llamadas y errores típicos.
+- **Simulador de radio** con 4 escenarios: vuelo VFR completo, circuito con tomas y motor y al aire, MAYDAY/PAN PAN y fallo de radio. Cada mensaje está en español, en inglés o en ambos, con voz de piloto y de controlador (Piper: `es_ES-davefx`, `es_ES-sharvard`, `en_GB-alan` y `en_US-ryan`). Las matrículas, números y siglas se pronuncian como en radio (`radioSpeech` en `src/speech.ts`). En el **modo práctica** contestas tú como piloto y recibes una explicación de cada error.
+- **Test** de 12 preguntas.
+- El aeródromo «Villanueva», sus puntos y frecuencias son ficticios.
+
+## Responsive
+
+Con menos de 860 px aparece un menú ☰, y en móvil se adaptan cabeceras, tutorial, simulador y tablas, que hacen scroll dentro de su caja. Se comprobó que las 27 páginas caben en 375 px sin scroll horizontal. Para probar en local sin cuentas: `VITE_NO_AUTH=1 npm run dev`.

@@ -10,7 +10,7 @@ const genPassword = () => Array.from(crypto.getRandomValues(new Uint8Array(9)), 
 const subjectName = (key: string) => {
   const [m, sub] = key.split('/')
   const mod = MODULES.find(x => x.id === m)
-  return `${mod?.short ?? m} · ${mod?.subjects?.find(x => x.id === sub)?.name ?? sub}`
+  return `${mod?.short ?? m} · ${mod?.subjects?.find(x => x.id === sub)?.name ?? (sub === 'test' ? 'Test' : mod?.radio?.find(r => 'radio-' + r.id === sub)?.title ?? sub)}`
 }
 
 /** Panel de administración: alta de usuarios, roles, estado y progreso de cada uno */
