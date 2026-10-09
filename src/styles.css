@@ -691,3 +691,12 @@ details.src p { margin: 6px 0 0; }
 .study > *, .split-main > *, .split-side > *, .form > *, .quiz > *, .hud > *, .radio > *, .radio-chat-wrap > *, .stack > *, .practice > *, .panel > *, .widget > * { min-width: 0; }
 input[type=file] { max-width: 100%; }
 .field > * { min-width: 0; max-width: 100%; }
+
+/* Vídeo de presentación */
+.video-modal { background: rgba(10,11,12,.72); }
+.video-box { width: min(980px, 100%); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,.35); }
+.video-box-top, .video-box-foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 14px; }
+.video-box video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000; }
+.nav-video { color: var(--muted); padding: 6px 10px; font-size: 15px; }
+.nav-video:hover { color: var(--text); text-decoration: none; }
+@media (max-width: 860px) { .nav-video { text-align: left; padding: 10px 4px; border-top: 1px solid var(--line); font-size: 16px; } }

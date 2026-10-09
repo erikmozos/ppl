@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
-import { GuideTour, guideSeen } from '../components/GuideTour'
+import { GuideTour } from '../components/GuideTour'
+import { openIntro } from '../components/IntroVideo'
 import { Icon } from '../components/Icon'
 import { allAircraft, useStore } from '../store'
 import { AIRHISPANIA, MODULES } from '../data/licenses/modules'
@@ -10,7 +11,7 @@ import { LESSON_IDS } from '../study/content'
 export function Hub() {
   const s = useStore()
   // primera visita: la guía se abre sola pero en silencio; con el botón, narrada
-  const [tour, setTour] = useState<'auto' | 'click' | null>(() => (guideSeen() ? null : 'auto'))
+  const [tour, setTour] = useState<'auto' | 'click' | null>(null)
   const fleet = allAircraft(s)
   const blocks = PPL_SYLLABUS.reduce((a, x) => a + x.blocks.length, 0)
   const read = Object.keys(s.study.lessons).length
@@ -26,7 +27,7 @@ export function Hub() {
       <section className="intro">
         <h1>Estudia para volar, de la PPL a la línea aérea.</h1>
         <p className="lead">El temario completo del PPL(A) con simulacros como los de AESA, el recorrido modular EASA en España y cabinas reales para aprender los procedimientos de cada avión.</p>
-        <button className="link-btn" onClick={() => setTour('click')}>Cómo funciona la app</button>
+        <p className="row gap wrap-row"><button className="btn" onClick={openIntro}><Icon name="play" /> Ver el vídeo de la app (4 min)</button><button className="link-btn" onClick={() => setTour('click')}>Guía paso a paso</button></p>
       </section>
 
       {(read > 0 || due > 0) && (

@@ -3,6 +3,7 @@ import { GUIDE } from '../data/guide'
 import { GuideTour } from '../components/GuideTour'
 import { VoiceSettings } from '../components/VoiceSettings'
 import { Icon } from '../components/Icon'
+import { openIntro } from '../components/IntroVideo'
 
 /** Guía de uso completa, en una sola página */
 export function GuidePage() {
@@ -15,7 +16,10 @@ export function GuidePage() {
           <h1>Cómo funciona Cockpit Flows</h1>
           <p className="muted">En unos 3 minutos sabrás usar todo. Puedes verla como presentación narrada o leerla aquí.</p>
         </div>
-        <button className="btn primary" onClick={() => setTour(0)}>Ver presentación narrada</button>
+        <div className="row gap wrap-row">
+          <button className="btn primary" onClick={openIntro}><Icon name="play" /> Ver el vídeo</button>
+          <button className="btn" onClick={() => setTour(0)}>Presentación paso a paso</button>
+        </div>
       </div>
       <div className="guide-grid">
         {GUIDE.map((g, i) => (

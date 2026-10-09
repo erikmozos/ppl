@@ -23,13 +23,19 @@ import { Login } from './pages/Login'
 import { Admin } from './pages/Admin'
 import { firebaseEnabled, logout, useSession } from './firebase'
 import { Icon } from './components/Icon'
+import { IntroVideo, introSeen, markIntroSeen, openIntro } from './components/IntroVideo'
 
 export function App() {
   const { parts, query } = useRoute()
   const s = useStore()
   const session = useSession()
   const [menu, setMenu] = useState(false)
+  const [intro, setIntro] = useState(false)
   useEffect(() => { setMenu(false) }, [parts.join('/')])
+  // vídeo de presentación: la primera vez que entra cada usuario, y cuando se pida desde el menú o la guía
+  const viewer = firebaseEnabled ? session.user?.uid : 'local'
+  useEffect(() => { if (viewer && !introSeen(viewer)) { setIntro(true); markIntroSeen(viewer) } }, [viewer])
+  useEffect(() => { const f = () => setIntro(true); window.addEventListener('cf:intro', f); return () => window.removeEventListener('cf:intro', f) }, [])
   let page: React.ReactNode
 
   // con Firebase activo, la academia es privada: hay que entrar con una cuenta creada por el admin
@@ -78,6 +84,7 @@ export function App() {
             return <a key={href} href={`#/${href}`} className={on ? 'on' : ''} aria-current={on ? 'page' : undefined}>{label}</a>
           })}
           {session.profile?.role === 'admin' && <a href="#/admin" className={parts[0] === 'admin' ? 'on' : ''}>Admin</a>}
+          <button className="link-btn nav-video" onClick={openIntro}>Vídeo</button>
           <ThemeToggle />
           {session.user && (
             <span className="user-chip" title={session.user.email ?? ''}>
@@ -89,6 +96,7 @@ export function App() {
         </nav>
       </header>
       <main>{page}</main>
+      {intro && <IntroVideo onClose={() => setIntro(false)} />}
       <footer className="foot wrap">
         <p>{DISCLAIMER}</p>
       </footer>
