@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300">
+  <title>Regla 1 en 60: desvío lateral respecto a la derrota, error de derrota en el origen y ángulo de cierre en la posición actual</title>
+  <defs>
+    <marker id="060-1en60-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+    <marker id="060-1en60-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker>
+  </defs>
+  <line x1="60" y1="230" x2="570" y2="230" class="ln thick dash"/>
+  <text x="315" y="256" class="tx2" text-anchor="middle">derrota deseada</text>
+  <path d="M60 230 L230 170" class="wa-ln thick" fill="none"/>
+  <path d="M230 170 L570 230" class="ac-ln thick dash" fill="none" marker-end="url(#060-1en60-f)"/>
+  <line x1="230" y1="170" x2="230" y2="230" class="ln2"/>
+  <circle cx="60" cy="230" r="5" class="ink-fill"/>
+  <circle cx="230" cy="170" r="5" class="wa-fill"/>
+  <circle cx="570" cy="230" r="5" class="ink-fill"/>
+  <text x="60" y="278" class="tx b" text-anchor="middle">Salida</text>
+  <text x="570" y="278" class="tx b" text-anchor="middle">Destino</text>
+  <text x="230" y="154" class="txw b" text-anchor="middle">Posición actual</text>
+  <text x="238" y="206" class="tx2">d = desvío</text>
+  <path d="M105 230 A45 45 0 0 0 100 213" class="wa-ln" fill="none"/>
+  <text x="112" y="212" class="txw b">A</text>
+  <path d="M284 183 A55 55 0 0 1 284 195" class="ac-ln" fill="none"/>
+  <text x="300" y="196" class="txa b">B</text>
+  <path d="M60 296 L230 296" class="ln2" marker-end="url(#060-1en60-f)" marker-start="url(#060-1en60-f)"/>
+  <text x="145" y="291" class="tx2" text-anchor="middle">recorrida</text>
+  <path d="M230 296 L570 296" class="ln2" marker-end="url(#060-1en60-f)" marker-start="url(#060-1en60-f)"/>
+  <text x="400" y="291" class="tx2" text-anchor="middle">restante</text>
+  <text x="330" y="40" class="tx b" text-anchor="middle">A (error de derrota) = d × 60 / distancia recorrida</text>
+  <text x="330" y="62" class="tx b" text-anchor="middle">B (ángulo de cierre) = d × 60 / distancia restante</text>
+  <text x="330" y="86" class="txo b" text-anchor="middle">Corrección total = A + B, hacia la derrota</text>
+</svg>

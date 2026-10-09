@@ -1,0 +1,422 @@
+{
+ "lesson": {
+  "title": "Flujo y fuerzas",
+  "summary": "Líneas de corriente, flujo bidimensional y tridimensional, la resultante aerodinámica y su descomposición en sustentación y resistencia, y la diferencia entre ángulo de ataque, de calaje, actitud y trayectoria.",
+  "objectives": [
+   "Interpretar las líneas de corriente y el tubo de corriente alrededor de un perfil",
+   "Distinguir el flujo bidimensional del tridimensional",
+   "Descomponer la resultante aerodinámica en sustentación (perpendicular al viento relativo) y resistencia (paralela)",
+   "Calcular la sustentación con L = ½ρV²S·CL",
+   "Diferenciar ángulo de ataque, ángulo de calaje, actitud y ángulo de trayectoria y relacionarlos"
+  ],
+  "sections": [
+   {
+    "title": "Líneas de corriente y tubos de corriente",
+    "text": [
+     "Una **línea de corriente** es la trayectoria que sigue una partícula de aire en un flujo estacionario: en cada punto, la tangente a la línea marca la dirección de la velocidad. Dos líneas de corriente nunca se cruzan y el aire no atraviesa una línea de corriente. Varias líneas juntas forman un **tubo de corriente**, y sobre él aplicas lo que ya conoces: la continuidad (A · V constante) y Bernoulli (p + ½ρV² constante).",
+     "Alrededor de un perfil con ángulo de ataque positivo las líneas se comportan así: delante del borde de ataque el aire sube (**corriente ascendente** o upwash); una línea llega al **punto de remanso**, donde el aire se frena del todo y se divide, y las demás pasan por encima o por debajo. Sobre el extradós las líneas se **juntan** (el tubo se estrecha), el aire se acelera y la presión estática baja. Detrás del borde de salida el aire queda desviado hacia abajo (**corriente descendente** o downwash): es la reacción de Newton a la fuerza que el ala ha ejercido sobre el aire."
+    ],
+    "figure": "svg:080-lineas-corriente",
+    "caption": "Líneas de corriente alrededor de un perfil: se juntan sobre el extradós, donde el aire corre más y la presión baja."
+   },
+   {
+    "title": "Flujo bidimensional y tridimensional",
+    "text": [
+     "En el **flujo 2D** se estudia un corte del ala, un perfil, como si el ala tuviera envergadura infinita: el aire solo se mueve en el plano del perfil (adelante, atrás, arriba, abajo). Sirve para entender la forma del perfil y su curva CL–α. En el **flujo 3D** hay un ala real, de envergadura finita, y aparece una componente a lo largo de la envergadura: el aire de abajo, a más presión, se escapa hacia la punta y sube al extradós, a menos presión. De ahí salen los torbellinos de punta, el downwash y la resistencia inducida, que verás en el bloque 080.06.",
+     "Para el examen basta esta idea: el perfil 2D tiene la sustentación «ideal»; el ala 3D pierde parte de ella y paga una resistencia extra por tener puntas."
+    ]
+   },
+   {
+    "title": "La resultante aerodinámica",
+    "text": [
+     "El aire actúa sobre toda la superficie del ala con presiones (más bajas en el extradós, más altas en el intradós) y con rozamiento. La suma de todas esas fuerzas es una única fuerza, la **resultante aerodinámica** (R), aplicada en el **centro de presiones**. Para trabajar con ella se descompone en dos componentes que se definen respecto al **viento relativo**, nunca respecto al horizonte ni a la cuerda:"
+    ],
+    "bullets": [
+     "**Sustentación (L):** componente **perpendicular** al viento relativo (es decir, a la trayectoria de vuelo).",
+     "**Resistencia (D):** componente **paralela** al viento relativo y de sentido contrario al movimiento.",
+     "El **viento relativo** es el flujo de aire que el ala «ve» y es igual y de sentido opuesto a la trayectoria del avión. Si el avión asciende, el viento relativo viene de arriba y delante."
+    ],
+    "figure": "svg:080-resultante",
+    "caption": "La resultante se descompone en sustentación (perpendicular al viento relativo) y resistencia (paralela). En ascenso, la sustentación se inclina hacia atrás respecto a la vertical."
+   },
+   {
+    "title": "Sustentación y resistencia: de qué dependen",
+    "text": [
+     "Sustentación y resistencia tienen la misma estructura, porque ambas son una presión dinámica multiplicada por una superficie y por un coeficiente que recoge la forma y el ángulo de ataque:",
+     "Los tres factores que controlas son la **velocidad** (al cuadrado), la **densidad** y el **ángulo de ataque** (a través de CL). La superficie S y la forma del perfil vienen de fábrica, aunque los flaps cambian ambas. En vuelo nivelado y uniforme la sustentación tiene que igualar al peso; si bajas la velocidad, solo puedes mantener L aumentando CL, es decir, el ángulo de ataque, hasta llegar al crítico. Por eso a poca velocidad el morro va alto, y por eso la pérdida tiene un límite de velocidad por abajo.",
+     "En un ascenso o descenso rectilíneo y estabilizado la sustentación no vale exactamente el peso: es **L = W · cos γ**, algo menor, porque parte del peso se reparte a lo largo de la trayectoria. Con γ de 5° la diferencia es del 0,4 %, despreciable en la práctica."
+    ],
+    "formulas": [
+     {
+      "f": "L = ½ · ρ · V² · S · CL",
+      "note": "ρ en kg/m³, V en m/s, S en m²: L en newtons."
+     },
+     {
+      "f": "D = ½ · ρ · V² · S · CD",
+      "note": "Misma presión dinámica y superficie; cambia el coeficiente."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Una avioneta de 1100 kg (W = 10 791 N) con S = 16 m² vuela a 100 kt a nivel del mar (ρ = 1,225). ¿Qué CL necesita en vuelo nivelado?",
+      "a": "V = 51,4 m/s; q = 0,6125 × 51,4² ≈ 1618 Pa. L = W, así que CL = W / (q · S) = 10 791 / (1618 × 16) ≈ 0,42."
+     },
+     {
+      "q": "La misma avioneta vuela ahora a 70 kt en nivelado. ¿Qué CL necesita?",
+      "a": "V = 36 m/s; q = 0,6125 × 36² ≈ 794 Pa. CL = 10 791 / (794 × 16) ≈ 0,85. Al bajar la velocidad de 100 a 70 kt, CL se ha duplicado: hay que subir el ángulo de ataque."
+     },
+     {
+      "q": "Con S = 16 m², V = 50 m/s, CL = 0,5 y ρ = 1,225, ¿cuánta sustentación hay?",
+      "a": "q = 0,6125 × 2500 = 1531 Pa; L = 1531 × 16 × 0,5 ≈ 12 250 N."
+     }
+    ]
+   },
+   {
+    "title": "Ángulo de ataque, calaje, actitud y trayectoria",
+    "text": [
+     "Cuatro ángulos que se confunden en el examen y que tienes que separar:",
+     "El **ángulo de ataque (α)** es el que forman la cuerda del perfil y el viento relativo. Es el que determina el CL y la pérdida. El **ángulo de calaje** (o de incidencia) es el que forma la cuerda del ala, en la raíz, con el eje longitudinal del fuselaje; lo fija el fabricante y no lo puedes cambiar en vuelo. La **actitud de cabeceo (θ)** es el ángulo del eje longitudinal con el horizonte: lo que ves por el parabrisas. El **ángulo de trayectoria (γ)** es el de la trayectoria con el horizonte: positivo si subes, negativo si bajas.",
+     "Se relacionan por α = θ + calaje − γ. Si ignoras el calaje (ala con la cuerda alineada con el eje), basta α = θ − γ: el ángulo de ataque es la actitud menos la trayectoria. Por eso un avión puede estar con el morro **arriba** y con ángulo de ataque **pequeño** (en ascenso rápido) o con el morro **abajo** y ángulo de ataque **grande** (en un picado que se tira de golpe de la palanca). La pérdida depende de α, no de la actitud."
+    ],
+    "formulas": [
+     {
+      "f": "α = θ + calaje − γ",
+      "note": "Con calaje nulo: α = actitud − trayectoria."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Un avión con calaje de 2° asciende con una actitud de 8° y una trayectoria de +5°. ¿Qué ángulo de ataque lleva?",
+      "a": "α = 8 + 2 − 5 = 5°."
+     },
+     {
+      "q": "En un descenso estabilizado con actitud de −2° y trayectoria de −5° (sin calaje), ¿cuál es α?",
+      "a": "α = −2 − (−5) = 3°. El morro está por debajo del horizonte y, sin embargo, el ala trabaja a un ángulo de ataque positivo."
+     }
+    ],
+    "figure": "svg:080-alfa-trayectoria",
+    "caption": "Con el mismo ángulo de ataque, el avión puede volar nivelado, subir o bajar: cambian la actitud y la trayectoria."
+   },
+   {
+    "title": "El calaje y la forma del perfil",
+    "text": [
+     "El ángulo de calaje existe para que en crucero el fuselaje vaya casi horizontal (menos resistencia y mejor visibilidad) mientras el ala trabaja ya con un ángulo de ataque útil. Otra cosa distinta es la **torsión (washout)** del ala, un calaje que disminuye hacia la punta y que verás en 080.03. No los mezcles: el calaje es un ángulo del conjunto ala‑fuselaje; el ángulo de ataque, un ángulo del flujo."
+    ],
+    "figure": "svg:080-perfil",
+    "caption": "Cuerda, línea media y ángulo de ataque frente a ángulo de calaje."
+   }
+  ],
+  "numbers": [
+   "Sustentación: L = ½ρV²S·CL, perpendicular al viento relativo",
+   "Resistencia: D = ½ρV²S·CD, paralela al viento relativo",
+   "A doble velocidad (mismo CL), cuádruple sustentación",
+   "α = θ + calaje − γ (con calaje nulo: actitud − trayectoria)",
+   "En ascenso o descenso estabilizado, L = W · cos γ"
+  ],
+  "traps": [
+   "La sustentación no es «hacia arriba»: es perpendicular al viento relativo, no al horizonte.",
+   "El ángulo de ataque no es la actitud: con el morro bajo puedes tener ángulo de ataque alto.",
+   "El calaje es fijo; el ángulo de ataque lo cambias tú con la palanca.",
+   "El viento relativo es opuesto a la trayectoria, no al eje del avión."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "080.02",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "080.02.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "La sustentación es la componente de la resultante aerodinámica que es:",
+   "options": [
+    "Perpendicular al horizonte",
+    "Perpendicular al viento relativo",
+    "Paralela a la cuerda del ala",
+    "Paralela al eje longitudinal del avión"
+   ],
+   "correct": 1,
+   "why": "Por definición, la sustentación se mide perpendicular al viento relativo, es decir, a la trayectoria de vuelo, y la resistencia paralela a él.",
+   "whyNot": [
+    "Eso sería la vertical local, que solo coincide en vuelo horizontal.",
+    null,
+    "La cuerda es una referencia del perfil, no del flujo.",
+    "El eje del avión es una referencia de la estructura, no del flujo."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.02.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "El ángulo de ataque es el ángulo formado por:",
+   "options": [
+    "La cuerda del perfil y el horizonte",
+    "El eje longitudinal y el horizonte",
+    "La cuerda del ala y el eje del fuselaje",
+    "La cuerda del perfil y el viento relativo"
+   ],
+   "correct": 3,
+   "why": "El ángulo de ataque relaciona la cuerda con el flujo que llega al ala (viento relativo).",
+   "whyNot": [
+    "Eso es el ángulo entre la cuerda y la horizontal, que depende de la actitud.",
+    "Es la actitud de cabeceo.",
+    "Eso es el ángulo de calaje, fijo.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.02.003",
+   "type": "concepto",
+   "level": 1,
+   "q": "El ángulo de calaje (incidencia) del ala es:",
+   "options": [
+    "Fijo, y lo forma la cuerda del ala con el eje longitudinal del fuselaje",
+    "Variable con la palanca de profundidad",
+    "Fijo, y lo forma la cuerda con el viento relativo",
+    "Variable con los flaps, siempre"
+   ],
+   "correct": 0,
+   "why": "El calaje lo fija el fabricante al montar el ala; no cambia en vuelo.",
+   "whyNot": [
+    null,
+    "Con la palanca cambia el ángulo de ataque y la actitud, no el calaje.",
+    "Eso es el ángulo de ataque, que sí varía.",
+    "Los flaps modifican la curvatura del perfil, no el calaje de la estructura."
+   ],
+   "ref": "AFH cap. 3"
+  },
+  {
+   "id": "080.02.004",
+   "type": "calculo",
+   "level": 2,
+   "q": "Un avión con calaje de 2° asciende con actitud de 8° y trayectoria de +5°. Su ángulo de ataque es:",
+   "options": [
+    "3°",
+    "1°",
+    "5°",
+    "11°"
+   ],
+   "correct": 2,
+   "why": "α = actitud + calaje − trayectoria = 8 + 2 − 5 = 5°.",
+   "whyNot": [
+    "Es 8 − 5 sin añadir el calaje.",
+    "Resultado de restar el calaje en lugar de sumarlo (8 − 2 − 5).",
+    null,
+    "Suma actitud, calaje y trayectoria con el mismo signo."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.02.005",
+   "type": "calculo",
+   "level": 1,
+   "q": "Si la velocidad se duplica manteniendo el mismo CL y la misma densidad, la sustentación:",
+   "options": [
+    "Se duplica",
+    "Se multiplica por dos raíz de dos",
+    "Se multiplica por cuatro",
+    "Se mantiene igual"
+   ],
+   "correct": 2,
+   "why": "L = ½ρV²S·CL depende de V al cuadrado: 2² = 4.",
+   "whyNot": [
+    "Sería así si L fuera proporcional a V.",
+    "Esa relación aparece con la raíz cuadrada, como en la Vs.",
+    null,
+    "Solo se mantendría si CL bajase a la cuarta parte."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.02.006",
+   "type": "calculo",
+   "level": 2,
+   "q": "Una avioneta con S = 16 m² vuela a 50 m/s con CL = 0,5 a nivel del mar (ρ = 1,225 kg/m³). La sustentación es aproximadamente:",
+   "options": [
+    "12 250 N",
+    "6 125 N",
+    "24 500 N",
+    "30 600 N"
+   ],
+   "correct": 0,
+   "why": "q = ½ · 1,225 · 50² = 1531 Pa; L = 1531 · 16 · 0,5 ≈ 12 250 N.",
+   "whyNot": [
+    null,
+    "Olvida la superficie o divide dos veces por 2.",
+    "Ha omitido el factor ½ de la presión dinámica.",
+    "Ha usado V sin elevar al cuadrado de forma coherente."
+   ],
+   "ref": "L = ½ρV²S·CL"
+  },
+  {
+   "id": "080.02.007",
+   "type": "concepto",
+   "level": 1,
+   "q": "¿Qué factor NO aparece en la fórmula de la sustentación?",
+   "options": [
+    "La densidad del aire",
+    "La superficie alar",
+    "El cuadrado de la velocidad",
+    "La masa del avión"
+   ],
+   "correct": 3,
+   "why": "L = ½ρV²S·CL: depende de ρ, V, S y CL. La masa no aparece; es el peso lo que la sustentación tiene que igualar en vuelo nivelado.",
+   "whyNot": [
+    "Es un factor directo de la fórmula.",
+    "Es un factor directo de la fórmula.",
+    "Es un factor directo de la fórmula.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.02.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "Sobre el extradós, las líneas de corriente se juntan. Esto implica que el aire:",
+   "options": [
+    "Se frena y su presión estática aumenta",
+    "Se acelera y su presión estática disminuye",
+    "Se acelera y su presión estática aumenta",
+    "Mantiene velocidad y presión"
+   ],
+   "correct": 1,
+   "why": "Continuidad: el tubo se estrecha y la velocidad aumenta. Bernoulli: a más velocidad, menos presión estática.",
+   "whyNot": [
+    "Es lo que ocurre donde las líneas se separan.",
+    null,
+    "Contradice a Bernoulli.",
+    "Si las líneas se juntan, la velocidad no puede mantenerse."
+   ],
+   "ref": "PHAK cap. 4"
+  },
+  {
+   "id": "080.02.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "El flujo bidimensional (2D) en aerodinámica corresponde a:",
+   "options": [
+    "Un perfil como si el ala tuviera envergadura infinita",
+    "Un ala real con torbellinos de punta",
+    "Un avión con dos alas",
+    "Un flujo con dos velocidades distintas"
+   ],
+   "correct": 0,
+   "why": "El 2D estudia un corte del ala sin movimiento a lo largo de la envergadura: sin torbellinos de punta ni resistencia inducida.",
+   "whyNot": [
+    null,
+    "Eso es el flujo 3D.",
+    "No tiene relación con el número de planos.",
+    "No hace referencia a velocidades."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.02.010",
+   "type": "concepto",
+   "level": 3,
+   "q": "En un ascenso rectilíneo estabilizado con trayectoria γ, la sustentación vale:",
+   "options": [
+    "W, exactamente",
+    "W · sen γ",
+    "W · cos γ, ligeramente menor que el peso",
+    "W / cos γ, mayor que el peso"
+   ],
+   "correct": 2,
+   "why": "El peso se reparte en una componente perpendicular a la trayectoria (W cos γ), que equilibra la sustentación, y otra paralela (W sen γ), que suma a la resistencia.",
+   "whyNot": [
+    "Solo es así en vuelo horizontal.",
+    "W sen γ es la componente del peso a lo largo de la trayectoria.",
+    null,
+    "Daría una sustentación mayor que el peso, que no hace falta."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.02.011",
+   "type": "lectura",
+   "level": 2,
+   "q": "En la figura, tres trayectorias con el mismo ángulo de ataque. ¿Qué ocurre cuando solo cambia la potencia con la palanca fija?",
+   "figure": "svg:080-alfa-trayectoria",
+   "options": [
+    "Cambia el ángulo de ataque y no la trayectoria",
+    "Cambia la trayectoria (nivelado, ascenso o descenso) y no el ángulo de ataque",
+    "Cambian ambos en la misma proporción",
+    "No cambia ninguno de los dos"
+   ],
+   "correct": 1,
+   "why": "Con el mismo ángulo de ataque y la misma velocidad, más potencia da ascenso y menos potencia, descenso: lo que varía es la trayectoria.",
+   "whyNot": [
+    "El ángulo de ataque lo fija la posición de la palanca (y la compensación).",
+    null,
+    "Sería cierto solo si moviera la palanca.",
+    "Se modifica la trayectoria, que es lo que muestra la figura."
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.02.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "La corriente descendente (downwash) detrás del ala es:",
+   "options": [
+    "Un defecto que se evita con el diedro",
+    "Producida solo por los flaps",
+    "Igual a la corriente ascendente delante del ala",
+    "La reacción del aire a la fuerza que el ala ejerce sobre él (tercera ley de Newton)"
+   ],
+   "correct": 3,
+   "why": "El ala desvía una masa de aire hacia abajo; el aire reacciona empujando el ala hacia arriba.",
+   "whyNot": [
+    "El diedro no tiene relación con el downwash.",
+    "El downwash existe siempre que hay sustentación.",
+    "Es de mayor intensidad que el upwash delante del ala.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.080.02.01",
+   "front": "Sustentación y resistencia: respecto a qué se definen",
+   "back": "Respecto al viento relativo: L perpendicular, D paralela"
+  },
+  {
+   "id": "c.080.02.02",
+   "front": "Ángulo de ataque",
+   "back": "Ángulo entre la cuerda del perfil y el viento relativo"
+  },
+  {
+   "id": "c.080.02.03",
+   "front": "Relación entre α, actitud, calaje y trayectoria",
+   "back": "α = actitud + calaje − trayectoria"
+  },
+  {
+   "id": "c.080.02.04",
+   "front": "Sustentación a doble velocidad con el mismo CL",
+   "back": "Cuatro veces mayor (depende de V²)"
+  }
+ ]
+}

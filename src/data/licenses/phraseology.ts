@@ -2,7 +2,7 @@
 // Base: OACI Anexo 10 vol. II y Doc 9432 (Manual de radiotelefonía, versiones inglesa y española),
 // SERA (Reglamento 923/2012, sección 14), AIP España GEN 1.7 (diferencias nacionales) y guía EGAST de EASA.
 // Aeródromo, frecuencias y puntos del simulador son ficticios (Villanueva) para no confundir con datos reales.
-import type { Module } from './types'
+import type { Module, RadioScenario } from './types'
 
 const AIP_GEN17 = 'https://aip.enaire.es/AIP/contenido_AIP/GEN/LE_GEN_1_7_en.html'
 const EGAST = 'https://www.easa.europa.eu/document-library/general-publications/egast-radiotelephony-guide-vfr-pilots'
@@ -256,3 +256,11 @@ export const phraseology: Module = {
     { title: 'Guía VFR digital (ENAIRE)', url: 'https://enaire.es/AIS/vfr_guide_%28online%29_' },
   ],
 }
+
+// escenarios adicionales redactados con el temario de Comunicaciones (src/content/ppl/radio-extra.json), si existen
+let extraRadio: RadioScenario[] = []
+try {
+  extraRadio = Object.values(import.meta.glob<RadioScenario[]>('../../content/ppl/radio-extra.json', { eager: true, import: 'default' })).flat()
+} catch { /* fuera de Vite (scripts de Node): los añade scripts/narrations.ts */ }
+phraseology.radio = [...(phraseology.radio ?? []), ...extraRadio]
+phraseology.facts = phraseology.facts.map(([k, v]) => (k === 'Simulador' ? [k, `${phraseology.radio!.length} escenarios con voces de piloto y ATC`] : [k, v]))

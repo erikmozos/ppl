@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380">
+<title>Carburador de flotador en corte con las tres zonas de formación de hielo</title>
+<defs>
+<marker id="020-carburador-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+</defs>
+<polygon points="250,40 250,100 288,150 288,180 250,230 250,320 380,320 380,230 342,180 342,150 380,100 380,40" class="ac" transform="translate(-10 0)"/>
+<line x1="285" y1="14" x2="285" y2="46" class="ln thick" marker-end="url(#020-carburador-f)"/>
+<text x="296" y="26" class="tx2">aire de admisión</text>
+<line x1="305" y1="322" x2="305" y2="360" class="ln thick" marker-end="url(#020-carburador-f)"/>
+<text x="316" y="352" class="tx2">mezcla al cilindro</text>
+<rect x="430" y="160" width="130" height="100" class="soft"/>
+<rect x="432" y="205" width="126" height="53" class="wa"/>
+<ellipse cx="495" cy="205" rx="24" ry="8" class="ln2"/>
+<text x="495" y="186" class="tx2" text-anchor="middle">cuba de flotador</text>
+<path d="M430 240 H352 V166 H332" class="wa-ln thick" fill="none"/>
+<text x="400" y="232" class="tx2" text-anchor="middle">surtidor</text>
+<text x="378" y="136" class="tx2">venturi</text>
+<line x1="245" y1="276" x2="355" y2="300" class="ln thick"/>
+<circle cx="300" cy="288" r="4" class="ink-fill"/>
+<text x="396" y="292" class="tx2">mariposa</text>
+<ellipse cx="270" cy="72" rx="48" ry="20" class="wa-ln dash" fill="none"/>
+<ellipse cx="290" cy="166" rx="56" ry="24" class="wa-ln dash" fill="none"/>
+<ellipse cx="300" cy="290" rx="66" ry="20" class="wa-ln dash" fill="none"/>
+<text x="10" y="40" class="txw b" font-size="13">1 Hielo de impacto</text>
+<text x="10" y="56" class="tx2">humedad visible bajo 0 °C</text>
+<text x="10" y="72" class="tx2">en la toma, el filtro y el</text>
+<text x="10" y="88" class="tx2">borde de la mariposa</text>
+<line x1="150" y1="64" x2="222" y2="68" class="ln2"/>
+<text x="10" y="150" class="txw b" font-size="13">2 Hielo de evaporación</text>
+<text x="10" y="166" class="tx2">la gasolina se evapora y el</text>
+<text x="10" y="182" class="tx2">venturi expande el aire:</text>
+<text x="10" y="198" class="tx2">el aire cae hasta ~20 °C</text>
+<line x1="150" y1="170" x2="236" y2="168" class="ln2"/>
+<text x="10" y="262" class="txw b" font-size="13">3 Hielo de estrangulamiento</text>
+<text x="10" y="278" class="tx2">tras la mariposa casi cerrada</text>
+<text x="10" y="294" class="tx2">la presión baja y enfría; es</text>
+<text x="10" y="310" class="tx2">el más probable con poca</text>
+<text x="10" y="326" class="tx2">potencia (descenso)</text>
+<line x1="150" y1="282" x2="232" y2="288" class="ln2"/>
+<text x="455" y="60" class="tx2" font-size="11">La calefacción envía aire</text>
+<text x="455" y="75" class="tx2" font-size="11">caliente (sin filtrar) a la</text>
+<text x="455" y="90" class="tx2" font-size="11">toma, antes del venturi</text>
+</svg>
