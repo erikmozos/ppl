@@ -1,0 +1,488 @@
+{
+  "lesson": {
+    "id": "070.02",
+    "title": "Combustible",
+    "summary": "La norma de combustible de Part-NCO: la planificación (NCO.OP.125 y su AMC con la reserva final de 10, 30 y 45 minutos) y la gestión en vuelo (NCO.OP.185): cuándo notificar MINIMUM FUEL y cuándo declarar MAYDAY FUEL, vigente desde el 30-10-2022.",
+    "objectives": [
+      "Enunciar la reserva final del AMC1 NCO.OP.125 según el tipo de vuelo",
+      "Distinguir MINIMUM FUEL de MAYDAY FUEL y saber cuándo se usa cada uno",
+      "Calcular el combustible previsto al aterrizar y compararlo con la reserva final",
+      "Aplicar buenas prácticas de gestión del combustible en vuelo"
+    ],
+    "sections": [
+      {
+        "title": "Dos reglas: planificar y vigilar",
+        "text": [
+          "La normativa de combustible de Part-NCO tiene dos partes que se complementan. **NCO.OP.125** obliga a **planificar**: antes de despegar, el piloto debe llevar combustible utilizable suficiente para el vuelo previsto, con una reserva. **NCO.OP.185** obliga a **gestionar en vuelo**: el piloto comprueba a intervalos regulares que el combustible restante basta para llegar a un aeródromo donde pueda aterrizar con seguridad **con la reserva final planificada intacta**, y, si no es así, lo comunica al control con el mensaje que corresponda."
+        ],
+        "note": {
+          "kind": "es",
+          "text": "Las dos normas, con la reserva final basada en el riesgo en el AMC y los mensajes MINIMUM FUEL y MAYDAY FUEL, aplican desde el **30-10-2022**, por el Reglamento (UE) 2021/1296. El Reglamento (UE) 2025/133 trata de otra cosa (autogiros) y no cambió este régimen: no hay ninguna fecha de 2026."
+        }
+      },
+      {
+        "title": "La reserva final (AMC1 NCO.OP.125)",
+        "text": [
+          "La **reserva final** es el combustible que debe quedar en los depósitos al tocar tierra. Su valor depende del tipo de vuelo y se calcula con una referencia de consumo concreta: la potencia máxima continua en el vuelo local de día y la velocidad de espera a 1500 ft sobre el destino en el resto de casos."
+        ],
+        "bullets": [
+          "El combustible de la reserva final **no se gasta**: se planifica para llegar con él.",
+          "El combustible inutilizable no cuenta.",
+          "El piloto puede (y debe, si la situación lo pide) llevar más: contingencia, alternativo y extra."
+        ],
+        "table": {
+          "caption": "Reserva final (FRF) para aviones, AMC1 NCO.OP.125(b), desde el 30-10-2022",
+          "head": [
+            "Tipo de vuelo",
+            "Reserva final"
+          ],
+          "rows": [
+            [
+              "VFR de día en vuelo local (mismo aeródromo, siempre a la vista)",
+              "10 min a potencia máxima continua de crucero"
+            ],
+            [
+              "VFR de día",
+              "30 min a velocidad de espera a 1500 ft sobre el destino"
+            ],
+            [
+              "VFR nocturno e IFR",
+              "45 min a velocidad de espera a 1500 ft sobre el destino"
+            ]
+          ],
+          "src": "AMC1 NCO.OP.125(b)"
+        }
+      },
+      {
+        "title": "Gestión del combustible en vuelo (NCO.OP.185)",
+        "text": [
+          "La norma obliga a **comprobar regularmente** que el combustible utilizable restante no es menor que el necesario para llegar a un aeródromo donde se pueda aterrizar con seguridad con la reserva final planificada intacta. En un avión ligero esto se concreta en cada punto de control (bloque 030.13): hora, depósito en uso, combustible restante estimado por tiempo y por indicador, y combustible previsto al aterrizar.",
+          "Hay **dos mensajes**, con significados distintos:"
+        ],
+        "table": {
+          "caption": "MINIMUM FUEL y MAYDAY FUEL (NCO.OP.185)",
+          "head": [
+            "Mensaje",
+            "Cuándo",
+            "Qué implica"
+          ],
+          "rows": [
+            [
+              "MINIMUM FUEL",
+              "Ya te has comprometido a aterrizar en un aeródromo concreto y calculas que cualquier cambio de la autorización existente puede hacerte aterrizar con menos de la reserva final planificada",
+              "Es un **aviso**, no una emergencia ni da prioridad. Informa al control de que no puede aceptar más demora"
+            ],
+            [
+              "MAYDAY MAYDAY MAYDAY FUEL",
+              "El combustible utilizable que calculas tener al aterrizar en el aeródromo seguro más cercano es **menor que la reserva final** planificada",
+              "Es una **emergencia** (peligro grave e inminente): el control da prioridad"
+            ]
+          ],
+          "src": "NCO.OP.185"
+        },
+        "figure": "svg:070-combustible",
+        "caption": "MINIMUM FUEL es un aviso cuando un cambio te llevaría por debajo de la reserva final; MAYDAY FUEL, cuando ya vas a aterrizar con menos."
+      },
+      {
+        "title": "Cómo se dice y cómo se actúa",
+        "text": [
+          "Los mensajes se dicen en **inglés** («MINIMUM FUEL») también en España, igual que «MAYDAY». Con MINIMUM FUEL le dices al control que no aceptes más demoras o desvíos: «**Madrid Control, EC-XYZ, minimum fuel**». Con MAYDAY FUEL, lo dices tres veces: «**MAYDAY, MAYDAY, MAYDAY FUEL**», indicas indicativo, posición, combustible restante (en tiempo) y personas a bordo, y sigues el procedimiento de emergencia (bloque 070.08 si hay que aterrizar fuera de aeródromo).",
+          "Si **no hay ATC** (aeródromo sin control, vuelo en espacio G sin contacto), los mensajes no tienen interlocutor, pero la lógica es la misma: la reserva final es lo último que tienes. Si ves que vas a tocarla, decide desviar mucho antes (bloque 030.13)."
+        ]
+      },
+      {
+        "title": "Buenas prácticas de gestión",
+        "bullets": [
+          "**Combustible por tiempo, no solo por indicador.** Los indicadores de los aviones ligeros son poco precisos: contrasta con el tiempo transcurrido y el consumo del POH.",
+          "**Selector de combustible.** En el PA-28 (LEFT/RIGHT/OFF) se cambia de depósito según el POH y la rutina de la escuela, y se vigila la bomba eléctrica en despegue y aterrizaje. En el C172S (BOTH) los dos depósitos alimentan al motor a la vez.",
+          "**Mezcla.** Empobrecer en crucero según el POH reduce el consumo, pero antes de la aproximación pon la mezcla en rica según la lista, por si hay que dar potencia en una ida al aire.",
+          "**Fuel starvation y fuel exhaustion.** *Starvation*: hay combustible a bordo pero no llega al motor (selector mal puesto, obstrucción, vapor). *Exhaustion*: no queda combustible. La conducta preventiva es la misma: comprueba selector y bomba y no apures.",
+          "**Decide pronto.** Con duda, aterriza antes. Repostar cuesta minutos; un aterrizaje forzoso, mucho más."
+        ],
+        "figure": "calc:fuel"
+      },
+      {
+        "title": "Ejemplos de decisión",
+        "text": [
+          "Datos de ejemplo. **Caso 1**: te quedan 20 l, la reserva final es 11 l y el aeródromo seguro más cercano está a 12 l de consumo. Combustible previsto al aterrizar: 20 − 12 = 8 l, menos que la reserva final: es **MAYDAY FUEL**. **Caso 2**: te quedan 25 l y 12 l para el aeródromo más cercano: 25 − 12 = 13 l, por encima de 11 l: no hay emergencia, pero si el control te manda a esperar y esa demora te bajaría de 11 l, debes notificar **MINIMUM FUEL**. **Caso 3**: ya estás en el circuito del destino con 12 l y la reserva final es 11 l; el control te pide una ida y vuelta de 3 l: te llevaría a 9 l; avisas de MINIMUM FUEL."
+        ],
+        "examples": [
+          {
+            "q": "Te quedan 20 l; la reserva final planificada es de 11 l y llegar al aeródromo más cercano cuesta 12 l. ¿Qué dices?",
+            "a": "Aterrizarías con 8 l, menos que la reserva final: MAYDAY MAYDAY MAYDAY FUEL."
+          },
+          {
+            "q": "Te quedan 25 l; llegar al destino cuesta 12 l y la reserva es de 11 l. Control te pide un circuito de espera que costaría 4 l más.",
+            "a": "13 − 4 = 9 l: la demora te bajaría de la reserva final. Notificas MINIMUM FUEL antes de aceptar."
+          }
+        ]
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Creer que MINIMUM FUEL da prioridad o equivale a una emergencia.",
+          "Esperar a que el indicador marque casi cero para avisar.",
+          "Declarar MAYDAY FUEL por ver «poca gasolina» sin calcular el combustible al aterrizar frente a la reserva final.",
+          "Contar la reserva final como combustible disponible para viaje.",
+          "Citar la fecha del cambio como 2026: es del 30-10-2022."
+        ]
+      }
+    ],
+    "numbers": [
+      "Reserva final (AMC1 NCO.OP.125): local diurno 10 min a potencia máxima continua; VFR de día 30 min a velocidad de espera a 1500 ft; VFR nocturno e IFR 45 min",
+      "MINIMUM FUEL: aviso; ya comprometido a un aeródromo y un cambio te bajaría de la reserva final",
+      "MAYDAY MAYDAY MAYDAY FUEL: emergencia; previsto aterrizar con menos que la reserva final",
+      "Aplican desde el 30-10-2022 (Reglamento (UE) 2021/1296)",
+      "NCO.OP.185: comprobar el combustible a intervalos regulares"
+    ],
+    "traps": [
+      "MINIMUM FUEL no es una emergencia ni da prioridad.",
+      "La reserva final se planifica para aterrizar con ella intacta.",
+      "El cambio de la regla no es de 2026 ni del Reglamento 2025/133.",
+      "Los mensajes se dicen en inglés."
+    ],
+    "sources": [
+      {
+        "title": "EASA, Easy Access Rules for Air Operations (Part-NCO, AMC y GM)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+      },
+      {
+        "title": "Reglamento (UE) 2021/1296 de la Comisión",
+        "url": "https://lawplayer.com/eu/act/32021R1296"
+      },
+      {
+        "title": "FOCA/BAZL, Calcul du carburant",
+        "url": "https://www.bazl.admin.ch/fr/calcul-du-carburant"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "070.02.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "«MINIMUM FUEL» es:",
+      "options": [
+        "Una emergencia con prioridad",
+        "Un aviso al control que no declara emergencia ni da prioridad",
+        "Una llamada PAN PAN",
+        "El mensaje de que el depósito está vacío"
+      ],
+      "correct": 1,
+      "why": "NCO.OP.185: se notifica cuando un cambio de la autorización puede hacerte aterrizar con menos de la reserva final.",
+      "whyNot": [
+        "La emergencia es MAYDAY FUEL.",
+        null,
+        "No equivale a PAN PAN.",
+        "No indica depósito vacío."
+      ],
+      "ref": "NCO.OP.185"
+    },
+    {
+      "id": "070.02.002",
+      "type": "regla",
+      "level": 1,
+      "q": "«MAYDAY MAYDAY MAYDAY FUEL» corresponde a cuando:",
+      "options": [
+        "Te quedan 30 min exactos",
+        "Se enciende el piloto de baja presión",
+        "Estás a más de 50 NM de tierra",
+        "Calculas aterrizar en el aeródromo seguro más cercano con menos que la reserva final"
+      ],
+      "correct": 3,
+      "why": "NCO.OP.185(c): combustible previsto al aterrizar menor que la reserva final planificada.",
+      "whyNot": [
+        "Con 30 min exactos sobre la reserva no hay emergencia.",
+        "No es una luz de aviso.",
+        "No depende de la distancia.",
+        null
+      ],
+      "ref": "NCO.OP.185"
+    },
+    {
+      "id": "070.02.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "Vuelo controlado: calculas que cualquier cambio de autorización te haría aterrizar con menos de la reserva final planificada. Debes:",
+      "options": [
+        "Notificar MINIMUM FUEL",
+        "Declarar MAYDAY FUEL",
+        "Pedir prioridad con PAN PAN",
+        "Esperar a tocar la reserva"
+      ],
+      "correct": 0,
+      "why": "Mientras la previsión de aterrizaje sea ≥ reserva final, avisas de MINIMUM FUEL; MAYDAY FUEL es para cuando ya iba a quedar por debajo.",
+      "whyNot": [
+        null,
+        "Aún no estás por debajo de la reserva.",
+        "No es una situación de PAN PAN.",
+        "Hay que avisar antes."
+      ],
+      "ref": "NCO.OP.185"
+    },
+    {
+      "id": "070.02.004",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Desde qué fecha aplican MINIMUM FUEL y MAYDAY FUEL (NCO.OP.185)?",
+      "options": [
+        "Desde el 18-02-2026",
+        "Desde el 1-1-2020",
+        "Desde el 30-10-2022",
+        "Desde 2012"
+      ],
+      "correct": 2,
+      "why": "Reglamento (UE) 2021/1296; no hay cambio en 2026.",
+      "whyNot": [
+        "El Reglamento 2025/133 es sobre autogiros.",
+        "No existe ese cambio en 2020.",
+        null,
+        "Es la fecha del Reglamento 965/2012, no del cambio."
+      ],
+      "ref": "Reg. (UE) 2021/1296"
+    },
+    {
+      "id": "070.02.005",
+      "type": "regla",
+      "level": 1,
+      "q": "Reserva final para un VFR de día no local:",
+      "options": [
+        "10 min a potencia máxima continua",
+        "45 min en crucero",
+        "15 min",
+        "30 min a velocidad de espera a 1500 ft sobre el destino"
+      ],
+      "correct": 3,
+      "why": "AMC1 NCO.OP.125(b): 30 min a velocidad de espera a 1500 ft sobre el destino.",
+      "whyNot": [
+        "Es la del local diurno.",
+        "Es la del nocturno e IFR, a velocidad de espera.",
+        "No es una cifra del AMC.",
+        null
+      ],
+      "ref": "AMC1 NCO.OP.125(b)"
+    },
+    {
+      "id": "070.02.006",
+      "type": "regla",
+      "level": 1,
+      "q": "Reserva final para un VFR nocturno:",
+      "options": [
+        "45 min a velocidad de espera a 1500 ft sobre el destino",
+        "30 min a velocidad de espera",
+        "10 min",
+        "60 min en crucero"
+      ],
+      "correct": 0,
+      "why": "AMC1 NCO.OP.125(b): 45 min a velocidad de espera a 1500 ft sobre el destino.",
+      "whyNot": [
+        null,
+        "Es la del VFR de día.",
+        "Es la del local diurno.",
+        "No es una cifra del AMC."
+      ],
+      "ref": "AMC1 NCO.OP.125(b)"
+    },
+    {
+      "id": "070.02.007",
+      "type": "regla",
+      "level": 2,
+      "q": "Reserva final de un vuelo local diurno (despegue y aterrizaje en el mismo aeródromo, siempre a la vista):",
+      "options": [
+        "30 min a velocidad de espera",
+        "45 min a velocidad de espera",
+        "10 min a potencia máxima continua de crucero",
+        "5 min"
+      ],
+      "correct": 2,
+      "why": "AMC1 NCO.OP.125(b): vuelo local de día, 10 min a potencia máxima continua.",
+      "whyNot": [
+        "Es la del VFR de día.",
+        "Es la del nocturno.",
+        null,
+        "No es una cifra del AMC."
+      ],
+      "ref": "AMC1 NCO.OP.125(b)"
+    },
+    {
+      "id": "070.02.008",
+      "type": "calculo",
+      "level": 2,
+      "q": "Te quedan 20 l, la reserva final es de 11 l y llegar al aeródromo seguro más cercano cuesta 12 l. Debes:",
+      "options": [
+        "Notificar MINIMUM FUEL",
+        "Declarar MAYDAY FUEL",
+        "No avisar: aún tienes 20 l",
+        "Pedir un alternativo más lejano"
+      ],
+      "correct": 1,
+      "why": "Aterrizarías con 8 l, menos que la reserva final.",
+      "whyNot": [
+        "No es MINIMUM: ya vas por debajo.",
+        null,
+        "El criterio es la previsión al aterrizar, no lo que hay ahora.",
+        "No resuelve el problema."
+      ],
+      "ref": "NCO.OP.185"
+    },
+    {
+      "id": "070.02.009",
+      "type": "calculo",
+      "level": 2,
+      "q": "Te quedan 25 l, el destino cuesta 12 l y la reserva final es de 11 l. Control te pide una espera que costaría 4 l más. Debes:",
+      "options": [
+        "Aceptar sin comentar",
+        "Notificar MINIMUM FUEL antes de aceptar la demora",
+        "Declarar MAYDAY FUEL",
+        "Cancelar el vuelo"
+      ],
+      "correct": 1,
+      "why": "25 − 12 − 4 = 9 l: la demora te bajaría de 11 l.",
+      "whyNot": [
+        "Te bajaría de la reserva final.",
+        null,
+        "Todavía no estás por debajo.",
+        "No hace falta cancelar."
+      ],
+      "ref": "NCO.OP.185"
+    },
+    {
+      "id": "070.02.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "La reserva final se planifica:",
+      "options": [
+        "Para gastarla en el viaje si hace falta",
+        "Para el alternativo",
+        "Como contingencia",
+        "Para aterrizar con ella intacta"
+      ],
+      "correct": 3,
+      "why": "Es el último margen: no es combustible de viaje.",
+      "whyNot": [
+        "No es combustible de viaje.",
+        "El alternativo es otra partida.",
+        "La contingencia es otra partida.",
+        null
+      ],
+      "ref": "AMC1 NCO.OP.125"
+    },
+    {
+      "id": "070.02.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cómo deben comprobarse los niveles de combustible en vuelo?",
+      "options": [
+        "Por tiempo y consumo, además del indicador, a intervalos regulares",
+        "Solo con el indicador",
+        "Solo al llegar",
+        "Solo al repostar"
+      ],
+      "correct": 0,
+      "why": "NCO.OP.185 exige comprobaciones regulares; el indicador es poco preciso.",
+      "whyNot": [
+        null,
+        "El indicador por sí solo no es fiable.",
+        "Hay que hacerlo en vuelo.",
+        "Es antes de repostar, no solo allí."
+      ],
+      "ref": "NCO.OP.185"
+    },
+    {
+      "id": "070.02.012",
+      "type": "concepto",
+      "level": 3,
+      "q": "En el fallo de potencia por «fuel starvation», lo que ocurre es que:",
+      "options": [
+        "No queda combustible en los depósitos",
+        "El motor se para por exceso de mezcla pobre",
+        "Hay combustible a bordo pero no llega al motor",
+        "La bomba eléctrica funciona de más"
+      ],
+      "correct": 2,
+      "why": "Starvation: combustible presente que no llega al motor; exhaustion: depósito vacío.",
+      "whyNot": [
+        "Eso es exhaustion.",
+        "No es la definición.",
+        null,
+        "No es la definición."
+      ],
+      "ref": "POH; Safety Sense"
+    },
+    {
+      "id": "070.02.013",
+      "type": "regla",
+      "level": 2,
+      "q": "El mensaje de MAYDAY FUEL se pronuncia:",
+      "options": [
+        "«PAN PAN PAN PAN FUEL»",
+        "«FUEL EMERGENCY» una vez",
+        "«MINIMUM FUEL» tres veces",
+        "«MAYDAY MAYDAY MAYDAY FUEL»"
+      ],
+      "correct": 3,
+      "why": "Se dice MAYDAY tres veces y FUEL.",
+      "whyNot": [
+        "Eso sería una urgencia.",
+        "No es el formato.",
+        "Es el aviso, no la emergencia.",
+        null
+      ],
+      "ref": "NCO.OP.185; fraseología de emergencia"
+    },
+    {
+      "id": "070.02.014",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si planeas con la reserva final de 30 min y te das cuenta de que llegarás con 25 min, estás:",
+      "options": [
+        "Por debajo de la reserva final: situación de combustible",
+        "Con margen suficiente",
+        "En ruta normal",
+        "En contingencia"
+      ],
+      "correct": 0,
+      "why": "25 min < 30 min: hay que tratarlo como combustible bajo y decidir un desvío.",
+      "whyNot": [
+        null,
+        "Es menor que la reserva.",
+        "No es una operación normal.",
+        "No es la partida de contingencia."
+      ],
+      "ref": "NCO.OP.185"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.070.02.01",
+      "front": "MINIMUM FUEL",
+      "back": "Aviso: comprometido a un aeródromo, un cambio te haría aterrizar con menos de la reserva final. No es emergencia ni da prioridad"
+    },
+    {
+      "id": "c.070.02.02",
+      "front": "MAYDAY MAYDAY MAYDAY FUEL",
+      "back": "Emergencia: el combustible previsto al aterrizar en el aeródromo seguro más cercano es menor que la reserva final"
+    },
+    {
+      "id": "c.070.02.03",
+      "front": "Reserva final (AMC1 NCO.OP.125, desde el 30-10-2022)",
+      "back": "Local diurno 10 min a potencia máxima continua; VFR de día 30 min; nocturno e IFR 45 min, a velocidad de espera a 1500 ft"
+    },
+    {
+      "id": "c.070.02.04",
+      "front": "Fecha del cambio",
+      "back": "30-10-2022, Reglamento (UE) 2021/1296 (no 2026; el 2025/133 es de autogiros)"
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+{
+ "lesson": {
+  "title": "Toma de decisiones y gestión del riesgo",
+  "summary": "Proceso de decisión (DECIDE y FOR-DEC), sesgos frecuentes, evaluación del riesgo y fijación de mínimos personales.",
+  "objectives": [
+   "Aplicar los modelos DECIDE y FOR-DEC",
+   "Reconocer sesgos: confirmación, empeño en continuar el plan, anclaje y exceso de confianza",
+   "Evaluar el riesgo como combinación de probabilidad y gravedad",
+   "Fijar y respetar mínimos personales",
+   "Decidir bajo presión de tiempo"
+  ],
+  "sections": [
+   {
+    "title": "La decisión como proceso",
+    "text": [
+     "Decidir bien no depende de ser listo: depende de **seguir un método** que obligue a mirar los hechos, las opciones y los riesgos antes de actuar. Una decisión pobre suele nacer de **información incompleta**, de **apresurarse**, de aferrarse a la primera opción o de **negar la realidad**. Los modelos de decisión ofrecen una estructura sencilla de recordar bajo presión. Los dos más conocidos son DECIDE y FOR-DEC."
+    ]
+   },
+   {
+    "title": "El modelo DECIDE",
+    "text": [
+     "DECIDE es una regla mnemotécnica de seis pasos, que se aplica en bucle: tras actuar, se vuelve a evaluar."
+    ],
+    "table": {
+     "caption": "Modelo DECIDE",
+     "head": [
+      "Letra",
+      "Paso",
+      "Pregunta"
+     ],
+     "rows": [
+      [
+       "D",
+       "Detectar (Detect)",
+       "¿Ha cambiado algo en la situación? Reconocer que hay un problema"
+      ],
+      [
+       "E",
+       "Estimar (Estimate)",
+       "¿Qué importancia tiene el cambio? ¿Cuánto tiempo hay?"
+      ],
+      [
+       "C",
+       "Elegir (Choose)",
+       "¿Cuál es el resultado deseable? Fijar el objetivo"
+      ],
+      [
+       "I",
+       "Identificar (Identify)",
+       "¿Qué soluciones hay? Comparar acciones posibles y sus riesgos"
+      ],
+      [
+       "D",
+       "Hacer (Do)",
+       "Poner en práctica la mejor opción"
+      ],
+      [
+       "E",
+       "Evaluar (Evaluate)",
+       "¿Ha funcionado? Si no, volver a empezar"
+      ]
+     ],
+     "src": "Modelo DECIDE"
+    },
+    "examples": [
+     {
+      "q": "En crucero a 4500 ft notas que la base de las nubes baja y el terreno delante sube. Aplica DECIDE.",
+      "a": "Detectar: la base baja y el terreno sube, y las nubes se acercan al relieve. Estimar: el margen sobre el terreno se reduce y queda poco tiempo para decidir. Elegir: mantener separación con el terreno y seguir en VMC. Identificar: dar la vuelta, desviarse, aterrizar en un aeródromo cercano o pedir ayuda. Hacer: virar a tiempo hacia el aeródromo de alternativa, anunciarlo al control. Evaluar: comprobar que el tiempo mejora y que el plan funciona."
+     }
+    ]
+   },
+   {
+    "title": "El modelo FOR-DEC",
+    "text": [
+     "FOR-DEC (de origen alemán) tiene pasos parecidos: **F**acts (hechos: ¿qué sé de la situación?), **O**ptions (opciones: ¿qué puedo hacer?), **R**isks & benefits (riesgos y beneficios de cada opción), **D**ecision (elegir), **E**xecution (ejecutar) y **C**heck (comprobar el resultado). Su característica es separar con claridad la fase de análisis (F-O-R) de la decisión, para que la elección se base en los hechos y no en la corazonada. Ambos modelos exigen **tiempo**: si hay prisa, se reduce la fase de análisis y se aplica el procedimiento de emergencia conocido; en una emergencia la prioridad es **pilotar (aviate), navegar y comunicar**."
+    ]
+   },
+   {
+    "title": "Sesgos y trampas de la decisión",
+    "text": [
+     "La mente usa atajos que ahorran esfuerzo pero producen errores sistemáticos (sesgos). Los más relevantes para un piloto privado son:"
+    ],
+    "bullets": [
+     "**Sesgo de confirmación**: buscar solo la información que confirma lo que ya se ha decidido, e ignorar la que lo contradice (leer el parte buscando lo bueno).",
+     "**Empeño en continuar el plan** (plan continuation bias, «get-there-itis»): seguir adelante con lo planeado a pesar de que las condiciones empeoran, porque ya se ha invertido tiempo o se está cerca del destino. Es una de las causas clásicas de accidentes en VFR hacia mal tiempo.",
+     "**Anclaje**: dar un peso excesivo a la primera información recibida (el pronóstico de la mañana) y no actualizar.",
+     "**Exceso de confianza** y **optimismo**: creer que a uno no le pasará («ya lo he hecho mil veces»).",
+     "**Costes hundidos**: seguir porque ya se ha gastado dinero, tiempo o esfuerzo (el viaje de dos horas, el pasaje de los invitados).",
+     "**Efecto de encuadre y presión social**: decidir distinto según cómo se presente el problema o por quedar bien ante los demás."
+    ],
+    "note": {
+     "kind": "warn",
+     "text": "La mejor defensa es fijar la decisión de antemano, con el vuelo todavía en tierra y con la cabeza fría: criterios claros de cancelar, desviar o aterrizar, y respetarlos."
+    }
+   },
+   {
+    "title": "Evaluación del riesgo",
+    "text": [
+     "El **riesgo** combina la **probabilidad** de un suceso y la **gravedad** de sus consecuencias. Un peligro que casi nunca ocurre pero es mortal (fallo de motor sobre terreno hostil) puede merecer más atención que otro más frecuente pero menor. Para evaluarlo antes del vuelo se revisan sistemáticamente cuatro grupos de factores, el llamado **PAVE**: **P**ilot (aptitud, descanso, experiencia, IMSAFE), **A**ircraft (estado, documentos, prestaciones), en**V**ironment (meteorología, terreno, espacio aéreo, luz del día) y **E**xternal pressures (presiones externas: horarios, pasajeros, compromisos).",
+     "Cuando varios factores se suman (pilotaje reciente, tiempo marginal, noche, pasajeros que quieren llegar), el riesgo no se suma: se **multiplica**. Los accidentes casi siempre son una cadena de decisiones, no un solo fallo; y cada punto de la cadena es una oportunidad para cortarla."
+    ]
+   },
+   {
+    "title": "Mínimos personales",
+    "text": [
+     "Los **mínimos personales** son límites **escritos** por el propio piloto, más estrictos que los legales, que fija con la cabeza fría y que se aplican **sin negociar** en el momento. Se ajustan a la experiencia, la práctica reciente, el avión y el terreno, y se hacen **más amplios** con el tiempo y la práctica. Se fijan para el techo de nubes, la visibilidad, el viento y el viento cruzado, la reserva de combustible, las horas de luz restantes, las horas de práctica en los últimos 90 días y la fatiga. Se revisan cada cierto tiempo."
+    ],
+    "table": {
+     "caption": "Ejemplo orientativo de mínimos personales de un piloto de pocas horas (no es una norma)",
+     "head": [
+      "Factor",
+      "Mínimo legal (VMC, por ejemplo)",
+      "Mínimo personal de ejemplo"
+     ],
+     "rows": [
+      [
+       "Techo y visibilidad en ruta",
+       "Según SERA.5001",
+       "Techo de 3000 ft sobre el terreno y visibilidad de 10 km"
+      ],
+      [
+       "Viento cruzado en pista",
+       "Límite demostrado del avión",
+       "Mitad del límite demostrado del POH"
+      ],
+      [
+       "Reserva de combustible",
+       "Reserva final de SERA/NCO",
+       "Reserva final más 30 minutos"
+      ],
+      [
+       "Luz del día",
+       "Vuelo diurno hasta el ocaso",
+       "Aterrizar al menos 30 min antes del ocaso"
+      ]
+     ],
+     "src": "Ejemplo didáctico"
+    },
+    "note": {
+     "kind": "tip",
+     "text": "Un buen piloto fija sus mínimos en tierra, los escribe y los respeta en el aire. La decisión de cancelar o desviarse es sencilla si se tomó antes de despegar."
+    }
+   }
+  ],
+  "numbers": [
+   "DECIDE: Detectar, Estimar, Elegir, Identificar, Hacer, Evaluar",
+   "FOR-DEC: Facts, Options, Risks & benefits, Decision, Execution, Check",
+   "PAVE: Pilot, Aircraft, enVironment, External pressures",
+   "Riesgo = probabilidad × gravedad",
+   "Sesgos: confirmación, empeño en continuar el plan, anclaje, exceso de confianza",
+   "Mínimos personales: escritos, más estrictos que los legales, fijados en tierra"
+  ],
+  "traps": [
+   "El empeño en continuar el plan aumenta al acercarse al destino: es justo cuando más cuesta desviarse.",
+   "El sesgo de confirmación busca solo lo que apoya la decisión ya tomada.",
+   "Los mínimos personales se fijan antes del vuelo, no durante.",
+   "En una emergencia no hay tiempo para un análisis completo: se aplica primero el procedimiento conocido.",
+   "Un riesgo bajo de probabilidad puede ser alto por su gravedad."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Risk Management Handbook (FAA-H-8083-2)",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/risk_management_handbook"
+   },
+   {
+    "title": "SKYbrary, FOR-DEC",
+    "url": "https://skybrary.aero/articles/for-dec-model"
+   }
+  ],
+  "id": "040.12",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "040.12.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "¿Qué significa la primera D del modelo DECIDE?",
+   "options": [
+    "Decidir",
+    "Detectar el cambio o problema",
+    "Dudar",
+    "Demorar"
+   ],
+   "correct": 1,
+   "why": "El primer paso es reconocer que algo ha cambiado.",
+   "whyNot": [
+    "Decidir es parte del proceso, pero no la primera D.",
+    null,
+    "No es un paso del modelo.",
+    "No es un paso del modelo."
+   ],
+   "ref": "Modelo DECIDE"
+  },
+  {
+   "id": "040.12.002",
+   "type": "concepto",
+   "level": 2,
+   "q": "En DECIDE, ¿qué hace el paso «Estimar»?",
+   "options": [
+    "Elige la solución",
+    "Ejecuta el plan",
+    "Comprueba el resultado",
+    "Valora la importancia del cambio y el tiempo disponible"
+   ],
+   "correct": 3,
+   "why": "Se determina la gravedad y la urgencia de la situación.",
+   "whyNot": [
+    "Eso es Identificar o Elegir.",
+    "Eso es Hacer.",
+    "Eso es Evaluar.",
+    null
+   ],
+   "ref": "Modelo DECIDE"
+  },
+  {
+   "id": "040.12.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "El último paso de DECIDE, «Evaluar», sirve para:",
+   "options": [
+    "Comprobar si la acción ha funcionado y volver a empezar si no",
+    "Terminar el proceso sin más",
+    "Elegir la alternativa",
+    "Detectar el problema"
+   ],
+   "correct": 0,
+   "why": "El ciclo es continuo: se evalúa el resultado y se corrige.",
+   "whyNot": [
+    null,
+    "Si no ha funcionado, hay que repetir.",
+    "Eso es Identificar.",
+    "Eso es Detectar."
+   ],
+   "ref": "Modelo DECIDE"
+  },
+  {
+   "id": "040.12.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "En FOR-DEC, la letra R corresponde a:",
+   "options": [
+    "Reglas",
+    "Respuesta",
+    "Riesgos y beneficios de cada opción",
+    "Reacción"
+   ],
+   "correct": 2,
+   "why": "Antes de decidir se valoran los pros y contras de cada opción.",
+   "whyNot": [
+    "Las reglas no son un paso.",
+    "No es un paso.",
+    null,
+    "No es un paso."
+   ],
+   "ref": "FOR-DEC"
+  },
+  {
+   "id": "040.12.005",
+   "type": "concepto",
+   "level": 1,
+   "q": "El sesgo de confirmación consiste en:",
+   "options": [
+    "Aceptar todas las opiniones por igual",
+    "Cambiar de opinión con frecuencia",
+    "Buscar solo la información que apoya lo ya decidido",
+    "Verificar dos veces cada dato"
+   ],
+   "correct": 2,
+   "why": "Se ignoran las señales que contradicen el plan.",
+   "whyNot": [
+    "Eso sería imparcialidad.",
+    "Eso sería indecisión.",
+    null,
+    "Eso sería prudencia."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.12.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "El «empeño en continuar el plan» (get-there-itis) es:",
+   "options": [
+    "Seguir adelante pese a que las condiciones empeoran",
+    "Cancelar el vuelo a la primera duda",
+    "Un tipo de hipoxia",
+    "Un fallo mecánico"
+   ],
+   "correct": 0,
+   "why": "Es un sesgo que lleva a no desviarse cuando se debería.",
+   "whyNot": [
+    null,
+    "Es lo contrario.",
+    "No es un trastorno fisiológico.",
+    "No es un fallo del avión."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.12.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "El riesgo se define como:",
+   "options": [
+    "La probabilidad únicamente",
+    "La gravedad únicamente",
+    "La suerte del piloto",
+    "La combinación de la probabilidad y la gravedad de un suceso"
+   ],
+   "correct": 3,
+   "why": "Un suceso improbable pero grave puede ser un riesgo alto.",
+   "whyNot": [
+    "La gravedad también cuenta.",
+    "La probabilidad también cuenta.",
+    "El riesgo no es azar, se evalúa.",
+    null
+   ],
+   "ref": "FAA Risk Management Handbook"
+  },
+  {
+   "id": "040.12.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "En PAVE, la letra V se refiere a:",
+   "options": [
+    "La velocidad",
+    "El entorno: tiempo, terreno y espacio aéreo",
+    "La visibilidad únicamente",
+    "El valor del avión"
+   ],
+   "correct": 1,
+   "why": "La V es de enVironment.",
+   "whyNot": [
+    "No se refiere a la velocidad.",
+    null,
+    "Comprende más que la visibilidad.",
+    "No se evalúa el valor económico."
+   ],
+   "ref": "FAA Risk Management Handbook"
+  },
+  {
+   "id": "040.12.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Los mínimos personales de un piloto deben:",
+   "options": [
+    "Decidirse en vuelo según la situación",
+    "Fijarse antes del vuelo, por escrito y respetarse en el aire",
+    "Ser iguales a los legales",
+    "Fijarse tras el primer incidente"
+   ],
+   "correct": 1,
+   "why": "Se establecen con la cabeza fría y no se negocian en el momento.",
+   "whyNot": [
+    "En vuelo hay presión y sesgos.",
+    null,
+    "Normalmente son más estrictos.",
+    "Deben ser preventivos."
+   ],
+   "ref": "FAA Risk Management Handbook"
+  },
+  {
+   "id": "040.12.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Cuál de estas medidas ayuda a contrarrestar el empeño en continuar el plan?",
+   "options": [
+    "Fiarse de la intuición",
+    "Ignorar los cambios de tiempo",
+    "Ir más deprisa para llegar antes",
+    "Fijar de antemano criterios claros para desviarse o cancelar"
+   ],
+   "correct": 3,
+   "why": "Decidir en tierra evita ceder a la presión en el aire.",
+   "whyNot": [
+    "La intuición está sesgada.",
+    "Son señales de alerta.",
+    "La prisa aumenta el riesgo.",
+    null
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.12.011",
+   "type": "concepto",
+   "level": 1,
+   "q": "En una emergencia, el orden de prioridades es:",
+   "options": [
+    "Pilotar, navegar y comunicar",
+    "Comunicar, navegar y pilotar",
+    "Navegar, comunicar y pilotar",
+    "Comunicar y después pilotar"
+   ],
+   "correct": 0,
+   "why": "Lo primero es mantener el control del avión.",
+   "whyNot": [
+    null,
+    "Comunicar no es la prioridad.",
+    "Pilotar va primero.",
+    "Pilotar va primero."
+   ],
+   "ref": "Procedimientos de emergencia"
+  },
+  {
+   "id": "040.12.012",
+   "type": "concepto",
+   "level": 3,
+   "q": "Llevas dos horas de vuelo, a 20 minutos del destino, y el tiempo en el aeródromo ha empeorado por debajo de tus mínimos. El sesgo que te empuja a seguir es:",
+   "options": [
+    "El sesgo de confirmación únicamente",
+    "La hipoxia",
+    "El empeño en continuar el plan",
+    "La ilusión de Coriolis"
+   ],
+   "correct": 2,
+   "why": "Cuanto más cerca del destino, más difícil es cambiar.",
+   "whyNot": [
+    "El de confirmación contribuye, pero la tendencia a seguir con el plan es el empeño en continuarlo.",
+    "No tiene relación fisiológica.",
+    null,
+    "Es una ilusión del oído interno."
+   ],
+   "ref": "ICAO Doc 9683"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.040.12.01",
+   "front": "DECIDE",
+   "back": "Detectar, Estimar, Elegir, Identificar, Hacer, Evaluar"
+  },
+  {
+   "id": "c.040.12.02",
+   "front": "PAVE",
+   "back": "Pilot, Aircraft, enVironment, External pressures"
+  },
+  {
+   "id": "c.040.12.03",
+   "front": "Empeño en continuar el plan",
+   "back": "Seguir pese al empeoramiento por la presión de llegar; se combate con criterios de cancelación fijados antes"
+  },
+  {
+   "id": "c.040.12.04",
+   "front": "Mínimos personales",
+   "back": "Escritos, más estrictos que los legales y fijados en tierra"
+  }
+ ]
+}

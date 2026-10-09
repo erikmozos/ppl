@@ -1,0 +1,383 @@
+{
+ "lesson": {
+  "title": "Error humano y fiabilidad",
+  "summary": "Clasificación de los errores (desliz, lapsus, equivocación y violación), gestión del error, fiabilidad humana, influencia social y organizativa y papel de las listas de chequeo como defensa.",
+  "objectives": [
+   "Clasificar un suceso como desliz, lapsus, equivocación o violación",
+   "Explicar la diferencia entre errores y violaciones y entre fallos activos y latentes",
+   "Describir los tres niveles de rendimiento: habilidad, reglas y conocimientos",
+   "Explicar cómo influyen las presiones sociales y de la organización",
+   "Aplicar las listas de chequeo como defensa contra el error"
+  ],
+  "sections": [
+   {
+    "title": "Errores y violaciones",
+    "text": [
+     "Un **error** es una acción u omisión no deseada o una decisión equivocada que desvía el resultado del esperado, sin intención de causar el daño. Es **normal**: todos los humanos erramos, y más cuanto más cansados, estresados o apresurados estemos. El objetivo no es «no equivocarse nunca» (imposible) sino **diseñar el vuelo** para que los errores se detecten y corrijan antes de producir daño. Una **violación**, en cambio, es un acto **deliberado** que se aparta de las normas o procedimientos.",
+     "Siguiendo a Reason, los errores se clasifican por el momento en que fallan y por la intención:"
+    ],
+    "table": {
+     "caption": "Clasificación de los errores y violaciones",
+     "head": [
+      "Tipo",
+      "Qué ocurre",
+      "Ejemplo en vuelo"
+     ],
+     "rows": [
+      [
+       "Desliz (slip)",
+       "Se hace algo distinto de lo planeado; el plan era correcto y la ejecución falla",
+       "Querías encender la bomba de combustible y encendiste las luces de aterrizaje"
+      ],
+      [
+       "Lapsus (lapse)",
+       "Se olvida un paso o una intención; fallo de memoria",
+       "Olvidas poner los flaps o comprobar el trimado antes del despegue"
+      ],
+      [
+       "Equivocación (mistake)",
+       "El plan es erróneo: mal juicio, mal conocimiento o una regla mal aplicada",
+       "Calculas mal el combustible por una suposición errónea y despegas con poco"
+      ],
+      [
+       "Violación",
+       "Se incumple a sabiendas una norma o procedimiento",
+       "Volar por debajo de los mínimos de VMC porque «hace un buen día»"
+      ]
+     ],
+     "src": "Reason, Human Error"
+    },
+    "note": {
+     "kind": "tip",
+     "text": "Regla rápida: si la intención era buena y ejecutaste mal, es un desliz. Si olvidaste algo, un lapsus. Si el plan era malo, una equivocación. Si lo sabías y lo hiciste igual, una violación."
+    }
+   },
+   {
+    "title": "Niveles de rendimiento: habilidad, reglas y conocimientos",
+    "text": [
+     "Rasmussen describe tres niveles de control de la conducta, y cada uno falla de forma distinta. En el nivel de **habilidad** (acciones automáticas, bien practicadas: aterrizar, mover los mandos) se producen **deslices y lapsus**. En el nivel de **reglas** (aplicar un procedimiento aprendido: «si pasa X, hago Y») se producen **equivocaciones** al aplicar una regla equivocada o una regla buena en un caso en que no vale. En el nivel de **conocimientos** (situación nueva sin procedimiento, hay que razonar) se producen también equivocaciones, y es donde más errores se cometen porque exige un gran esfuerzo mental, con información incompleta y bajo presión.",
+     "Las violaciones pueden ser **rutinarias** (atajos que se hacen siempre y se tornan costumbre), **situacionales** (nacen de la presión: el tiempo, el cansancio, el combustible justo) o **excepcionales** (una situación inusual en la que el piloto cree que la norma no vale). Una organización con violaciones toleradas acaba **normalizando la desviación**: lo que antes sorprendía ahora se acepta."
+    ]
+   },
+   {
+    "title": "Fiabilidad humana y gestión del error",
+    "text": [
+     "La **fiabilidad humana** es la probabilidad de realizar una tarea correctamente. Disminuye con el estrés, la fatiga, la carga de trabajo, la prisa, la distracción, el ruido y la falta de entrenamiento. Los errores no se eliminan del todo, así que se **gestionan** en tres niveles: **evitar** (formación, procedimientos claros, buen diseño), **detectar** (listas de chequeo, comprobación cruzada, un segundo par de ojos, alarmas) y **mitigar** las consecuencias (márgenes, alternativas, salidas de emergencia).",
+     "Con los errores ya cometidos importa el **margen de recuperación**: un error detectado a tiempo no tiene consecuencias. Los errores encadenados aparecen cuando uno no se detecta y condiciona el siguiente. Romper la cadena en cualquier punto evita el accidente (el queso suizo): volver a la lista, cuestionar lo que parece raro y aceptar la ayuda de los demás."
+    ]
+   },
+   {
+    "title": "El entorno social y la organización",
+    "text": [
+     "Ningún piloto decide en el vacío. La **presión social** (el instructor, los amigos, los pasajeros que quieren llegar, el compromiso de un evento) empuja a seguir con un vuelo que no debía hacerse; es la conocida **«ansia de llegar»** (get-home-itis). El **exceso de confianza** lleva a saltarse pasos, y la **complacencia** (relajarse ante una rutina que siempre sale bien) reduce la vigilancia. La **cultura de la escuela o del aeroclub** modela las conductas: donde se respetan los procedimientos y se notifican los errores, el nivel de seguridad es mayor. Donde se tolera cortar por lo sano, se acaba normalizando el atajo.",
+     "Por eso las organizaciones (y tú mismo, como comandante) defienden a quien plantea dudas, fijan **mínimos personales** y dan libertad para cancelar. Un buen ambiente de trabajo permite que cualquiera diga «no me gusta» sin miedo."
+    ]
+   },
+   {
+    "title": "Las listas de chequeo como defensa",
+    "text": [
+     "La **lista de chequeo** es la defensa más barata y eficaz contra los lapsus y deslices: descarga la memoria de trabajo y asegura que no se omite nada crítico. Tiene tipos: **lista de comprobación y respuesta** («lee y responde», usada para elementos críticos: se lee el punto, se comprueba y se responde) y **flujo seguido de lista** (haces la secuencia de memoria, recorriendo la cabina y después compruebas con la lista). Los procedimientos de emergencia suelen empezar de memoria («elementos de memoria») y después se completan con la lista.",
+     "Para que funcione hay que usarla **de forma disciplinada**: leer cada punto, comprobar de verdad (no responder por inercia), no acortarla por la prisa ni hacerla de memoria, y **reiniciarla** si te interrumpen. Sus límites son la complacencia («siempre está bien») y la mala redacción (condición latente). Una lista no sustituye al pilotaje ni al buen juicio."
+    ]
+   }
+  ],
+  "numbers": [
+   "Desliz: ejecución errónea de un plan correcto",
+   "Lapsus: olvido de un paso",
+   "Equivocación: plan o juicio erróneo",
+   "Violación: incumplimiento deliberado",
+   "Habilidad: deslices y lapsus; reglas y conocimientos: equivocaciones",
+   "Gestión del error: evitar, detectar y mitigar"
+  ],
+  "traps": [
+   "Un desliz no es un olvido (eso es un lapsus) ni un mal plan (equivocación).",
+   "Una violación no tiene por qué buscar el daño: se hace a sabiendas por comodidad o presión.",
+   "La lista de chequeo falla si se hace por inercia o se acorta.",
+   "La complacencia aparece cuando todo ha salido bien muchas veces.",
+   "El error humano no se elimina: se gestiona."
+  ],
+  "sources": [
+   {
+    "title": "Reason, J., Human Error (1990)",
+    "url": "https://skybrary.aero/articles/james-reasons-swiss-cheese-model"
+   },
+   {
+    "title": "SKYbrary, Human Error",
+    "url": "https://skybrary.aero/articles/human-error"
+   }
+  ],
+  "id": "040.11",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "040.11.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "Querías encender la bomba de combustible y encendiste las luces de aterrizaje. Es:",
+   "options": [
+    "Un lapsus",
+    "Un desliz",
+    "Una equivocación",
+    "Una violación"
+   ],
+   "correct": 1,
+   "why": "Desliz: acción distinta de la planeada.",
+   "whyNot": [
+    "Un lapsus es un olvido.",
+    null,
+    "Una equivocación es un plan erróneo.",
+    "Una violación es deliberada."
+   ],
+   "ref": "Reason, Human Error"
+  },
+  {
+   "id": "040.11.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "Olvidas bajar los flaps antes del despegue, aunque sabías que debías hacerlo. Es:",
+   "options": [
+    "Un desliz",
+    "Una equivocación",
+    "Una violación",
+    "Un lapsus"
+   ],
+   "correct": 3,
+   "why": "Lapsus: fallo de memoria en un paso.",
+   "whyNot": [
+    "El desliz es una acción distinta de la planeada.",
+    "No se trata de un mal plan.",
+    "No se hizo a sabiendas.",
+    null
+   ],
+   "ref": "Reason, Human Error"
+  },
+  {
+   "id": "040.11.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "Calculas el combustible con el consumo del manual de otro avión y sales con menos del necesario. Es:",
+   "options": [
+    "Una equivocación",
+    "Un desliz",
+    "Un lapsus",
+    "Una violación"
+   ],
+   "correct": 0,
+   "why": "El plan era erróneo desde el origen.",
+   "whyNot": [
+    null,
+    "El desliz se da en la ejecución de un plan correcto.",
+    "No hubo olvido, sino un error de juicio.",
+    "No se incumplió ninguna norma a sabiendas."
+   ],
+   "ref": "Reason, Human Error"
+  },
+  {
+   "id": "040.11.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "Despegar sabiendo que la visibilidad está por debajo de los mínimos VMC es:",
+   "options": [
+    "Un lapsus",
+    "Un desliz",
+    "Una violación",
+    "Una equivocación"
+   ],
+   "correct": 2,
+   "why": "Se incumple una norma de forma consciente.",
+   "whyNot": [
+    "No es un olvido.",
+    "No es un fallo de ejecución.",
+    null,
+    "No es un error de juicio sin conciencia."
+   ],
+   "ref": "Reason, Human Error"
+  },
+  {
+   "id": "040.11.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿En qué nivel de rendimiento se producen principalmente los deslices y lapsus?",
+   "options": [
+    "Conocimientos",
+    "Reglas",
+    "Habilidad (acciones automáticas)",
+    "Ninguno"
+   ],
+   "correct": 2,
+   "why": "Las acciones automáticas bien practicadas fallan por atención y memoria.",
+   "whyNot": [
+    "En conocimientos se dan equivocaciones.",
+    "En reglas se dan equivocaciones por mal uso de reglas.",
+    null,
+    "Se dan en el nivel de habilidad."
+   ],
+   "ref": "Rasmussen; Reason"
+  },
+  {
+   "id": "040.11.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Qué nivel de rendimiento es el más propenso a errores graves por exigir más esfuerzo mental?",
+   "options": [
+    "Conocimientos",
+    "Habilidad",
+    "Reglas aprendidas",
+    "Memoria sensorial"
+   ],
+   "correct": 0,
+   "why": "En una situación nueva sin procedimiento hay que razonar con información incompleta.",
+   "whyNot": [
+    null,
+    "Es automático y menos costoso.",
+    "Es más sencillo que razonar desde cero.",
+    "No es un nivel de rendimiento."
+   ],
+   "ref": "Rasmussen; Reason"
+  },
+  {
+   "id": "040.11.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "La «normalización de la desviación» consiste en:",
+   "options": [
+    "Cumplir siempre los procedimientos",
+    "Eliminar las listas de chequeo",
+    "Notificar todos los errores",
+    "Aceptar como normal un atajo que antes sorprendía"
+   ],
+   "correct": 3,
+   "why": "Las pequeñas violaciones repetidas pasan a ser la costumbre.",
+   "whyNot": [
+    "Es lo contrario.",
+    "No elimina las listas, las ignora.",
+    "Notificar es lo opuesto.",
+    null
+   ],
+   "ref": "Reason, Human Error"
+  },
+  {
+   "id": "040.11.008",
+   "type": "concepto",
+   "level": 1,
+   "q": "La gestión del error en vuelo se basa en:",
+   "options": [
+    "Eliminar todos los errores posibles",
+    "Evitar, detectar y mitigar los errores",
+    "Culpar al piloto",
+    "Ignorar los errores pequeños"
+   ],
+   "correct": 1,
+   "why": "Los errores no se eliminan del todo; se gestionan.",
+   "whyNot": [
+    "Es imposible.",
+    null,
+    "Nada se gana con ello.",
+    "Los pequeños pueden encadenarse."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.11.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "La «ansia de llegar» (get-home-itis) es:",
+   "options": [
+    "Un tipo de memoria",
+    "Una presión que empuja a seguir con un vuelo que no se debería hacer",
+    "Un síntoma de hipoxia",
+    "Una ilusión visual"
+   ],
+   "correct": 1,
+   "why": "Es un factor social que lleva a asumir riesgos.",
+   "whyNot": [
+    "No es un tipo de memoria.",
+    null,
+    "No es un síntoma fisiológico.",
+    "No es una ilusión visual."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.11.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "La complacencia consiste en:",
+   "options": [
+    "Aumentar la vigilancia",
+    "Seguir estrictamente los procedimientos",
+    "Un exceso de estrés",
+    "Relajar la vigilancia ante una rutina que siempre sale bien"
+   ],
+   "correct": 3,
+   "why": "Reduce la comprobación de los pasos críticos.",
+   "whyNot": [
+    "Es lo opuesto.",
+    "Es lo contrario de la complacencia.",
+    "Es un exceso de relajación, no de estrés.",
+    null
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.11.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "Para que una lista de chequeo sea una defensa eficaz hay que:",
+   "options": [
+    "Leer cada punto y comprobarlo realmente",
+    "Hacerla de memoria si se conoce",
+    "Acortarla cuando hay prisa",
+    "Usarla solo en emergencias"
+   ],
+   "correct": 0,
+   "why": "La disciplina en su uso es lo que la hace eficaz.",
+   "whyNot": [
+    null,
+    "Ahí está el riesgo de lapsus.",
+    "Se omiten pasos críticos.",
+    "Se usa en todas las fases."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.11.012",
+   "type": "concepto",
+   "level": 3,
+   "q": "Un piloto con mucha experiencia hace de memoria la comprobación previa al despegue y olvida un paso porque «siempre sale bien». Ha cometido:",
+   "options": [
+    "Una violación excepcional",
+    "Una equivocación basada en conocimientos",
+    "Un lapsus favorecido por la complacencia",
+    "Un desliz por accionar un mando equivocado"
+   ],
+   "correct": 2,
+   "why": "Olvido en un procedimiento automatizado; la rutina reduce la vigilancia.",
+   "whyNot": [
+    "No incumplió ninguna norma a sabiendas.",
+    "No falló el conocimiento ni el plan.",
+    null,
+    "No accionó un mando distinto del previsto: omitió un paso."
+   ],
+   "ref": "Reason, Human Error"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.040.11.01",
+   "front": "Desliz, lapsus, equivocación y violación",
+   "back": "Desliz: ejecución errónea. Lapsus: olvido. Equivocación: plan o juicio erróneo. Violación: incumplimiento deliberado"
+  },
+  {
+   "id": "c.040.11.02",
+   "front": "Habilidad, reglas y conocimientos",
+   "back": "Habilidad: deslices y lapsus. Reglas y conocimientos: equivocaciones"
+  },
+  {
+   "id": "c.040.11.03",
+   "front": "Gestión del error",
+   "back": "Evitar, detectar y mitigar; la lista de chequeo se lee y se comprueba, no se hace por inercia"
+  }
+ ]
+}

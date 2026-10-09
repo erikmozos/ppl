@@ -1,0 +1,297 @@
+{
+  "lesson": {
+    "id": "070.03",
+    "title": "Atenuación de ruido",
+    "summary": "Por qué hacen ruido los aviones de hélice, cómo se mide, qué procedimientos reducen el ruido en la salida, el crucero y la aproximación, y por qué la seguridad prevalece siempre sobre la atenuación del ruido.",
+    "objectives": [
+      "Explicar de qué depende el ruido de un avión de hélice y cómo disminuye con la distancia",
+      "Aplicar buenas prácticas de salida, crucero y aproximación para reducir el ruido",
+      "Localizar los procedimientos antirruido de un aeródromo en el AIP",
+      "Recordar que la seguridad prevalece sobre cualquier procedimiento de ruido"
+    ],
+    "sections": [
+      {
+        "title": "De dónde viene el ruido",
+        "text": [
+          "En un avión de hélice, la fuente principal de ruido es la **hélice**, sobre todo cuando las puntas se acercan a la velocidad del sonido: cuanto mayor es la velocidad en la punta, más ruido. Esa velocidad depende de las **RPM** y del diámetro. Después viene el **escape** del motor y, en menor medida, el ruido aerodinámico del fuselaje con flaps y tren fuera. Por eso reducir RPM y potencia en cuanto es seguro es la medida más eficaz.",
+          "El ruido percibido depende también de la **distancia**: a una distancia doble, el nivel baja unos **6 dB** (dependencia con el cuadrado de la distancia), y en una escala logarítmica una reducción de 10 dB se percibe como la mitad de intensidad sonora. Volar más alto sobre una zona habitada reduce de verdad el ruido, no solo en teoría."
+        ]
+      },
+      {
+        "title": "Salida: perfil antirruido",
+        "text": [
+          "Tras el despegue, el procedimiento antirruido de un avión ligero consiste en **ascender con el mejor régimen o ángulo hasta una altura segura** y reducir entonces potencia y RPM a los valores de ascenso del POH, evitando **sobrevolar zonas habitadas** a poca altura. La figura compara un ascenso tendido, que pasa cerca de las casas, con uno más pronunciado que gana altura antes y reduce potencia en el punto indicado."
+        ],
+        "figure": "svg:070-ruido",
+        "caption": "El ascenso más pronunciado pasa más alto sobre la zona habitada y permite reducir la potencia pronto.",
+        "note": {
+          "kind": "warn",
+          "text": "No reduzcas potencia por debajo de la altura que fija el POH ni a una altura en la que un fallo del motor te dejaría sin opciones: la seguridad manda (bloque 070.10)."
+        }
+      },
+      {
+        "title": "Crucero y aproximación",
+        "bullets": [
+          "**Crucero:** vuela alto si el espacio aéreo y la ruta lo permiten y evita pasar sobre núcleos habitados, hospitales, colegios y zonas protegidas; respeta la altura mínima legal (SERA.5005(f)), que no es una invitación a volar bajo.",
+          "**Régimen:** en crucero usa las RPM más bajas compatibles con la potencia que necesitas (con paso fijo, una menor RPM significa un menor ruido).",
+          "**Aproximación:** evita aproximaciones planas y largas con potencia: son más ruidosas que una aproximación estabilizada con el perfil normal (≈ 3° de ángulo de planeo) y baja RPM; no hagas pasadas bajas ni pasadas por encima sin necesidad.",
+          "**Circuito:** vuélalo a la altitud publicada y sin abrir demasiado hacia zonas habitadas; si hay circuito de ruido, sigue el trazado de la VAC.",
+          "**Flaps y tren:** configura el avión lo más tarde que sea seguro para no llevar la resistencia extra y la potencia que implican."
+        ]
+      },
+      {
+        "title": "Procedimientos antirruido en el aeródromo",
+        "text": [
+          "Cada aeródromo publica sus restricciones y procedimientos antirruido: rutas de salida y llegada que evitan zonas habitadas, pistas preferentes, horarios restringidos, alturas mínimas sobre ciertas poblaciones y limitaciones al circuito. En España están en el **AIP, parte AD 2** (sección AD 2.21 «Procedimientos antirruido») y en la **carta de aproximación visual (VAC)**. Léelos en la preparación previa y apúntalos en el navlog.",
+          "Los aviones tienen además una **certificación acústica** (Anexo 16 de la OACI) que fija un límite de ruido por categoría, y el piloto debe llevar el certificado de ruido a bordo cuando corresponda (NCO.GEN.135)."
+        ],
+        "note": {
+          "kind": "es",
+          "text": "En España consulta el AIP del aeródromo: algunas pistas, horarios o rutas están limitados por ruido. Un incumplimiento puede acarrear sanción."
+        },
+        "verify": true
+      },
+      {
+        "title": "La seguridad prevalece",
+        "text": [
+          "**NCO.OP.120** lo dice claramente: los procedimientos de atenuación de ruido **no deben comprometer la seguridad**. Si la técnica antirruido te obliga a un viraje a baja altura, a una potencia insuficiente o a una velocidad que el POH no admite, no se aplica. Si surge una emergencia, un tráfico, un cambio de viento o una condición que lo exija, se abandona el procedimiento. El ruido se atenúa cuando se puede hacerlo con seguridad, no a costa de ella."
+        ]
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Creer que bajar mucho la potencia justo tras despegar siempre ayuda: puede dejarte sin margen ante un fallo.",
+          "Reducir RPM por debajo de lo que permite el POH.",
+          "Volar bajo sobre una población para «ver» algo.",
+          "No consultar las restricciones del aeródromo y salir por una ruta no permitida.",
+          "Seguir un procedimiento antirruido cuando la seguridad lo desaconseja."
+        ]
+      }
+    ],
+    "numbers": [
+      "La hélice es la principal fuente de ruido; depende de RPM y de la velocidad en la punta",
+      "A doble distancia, unos 6 dB menos",
+      "La seguridad prevalece sobre la atenuación de ruido (NCO.OP.120)",
+      "En el AIP, AD 2.21: procedimientos antirruido del aeródromo",
+      "Altura mínima legal sobre zonas pobladas: SERA.5005(f)"
+    ],
+    "traps": [
+      "El ruido no se reduce solo bajando potencia: hay que subir y reducir RPM a la altura segura.",
+      "Un procedimiento antirruido nunca justifica comprometer la seguridad.",
+      "El ruido baja 6 dB al duplicar la distancia, no a la mitad.",
+      "La altura legal mínima no es una altitud recomendada de crucero."
+    ],
+    "sources": [
+      {
+        "title": "EASA, Easy Access Rules for Air Operations (Part-NCO, AMC y GM)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+      },
+      {
+        "title": "ENAIRE, AIP España (GEN 1.7, ENR 1.10, AD)",
+        "url": "https://aip.enaire.es"
+      },
+      {
+        "title": "OACI, Anexo 16 Protección del medio ambiente: ruido"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "070.03.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La principal fuente de ruido de un avión de hélice es:",
+      "options": [
+        "El tren de aterrizaje",
+        "La hélice, sobre todo con RPM altas",
+        "El sistema eléctrico",
+        "La antena de radio"
+      ],
+      "correct": 1,
+      "why": "La hélice con las puntas cerca de la velocidad del sonido y el escape son las fuentes dominantes.",
+      "whyNot": [
+        "No es la fuente principal.",
+        null,
+        "No es una fuente relevante.",
+        "No es una fuente relevante."
+      ],
+      "ref": "Anexo 16; PHAK"
+    },
+    {
+      "id": "070.03.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "Al duplicar la distancia entre el avión y el observador, el nivel de ruido baja aproximadamente:",
+      "options": [
+        "3 dB",
+        "12 dB",
+        "No varía",
+        "6 dB"
+      ],
+      "correct": 3,
+      "why": "La energía se reparte en una esfera: el nivel baja unos 6 dB por cada duplicación de distancia.",
+      "whyNot": [
+        "3 dB corresponde a una variación de potencia.",
+        "12 dB sería cuadruplicar la distancia dos veces.",
+        "Sí varía con la distancia.",
+        null
+      ],
+      "ref": "Acústica básica"
+    },
+    {
+      "id": "070.03.003",
+      "type": "regla",
+      "level": 1,
+      "q": "La atenuación del ruido frente a la seguridad:",
+      "options": [
+        "La seguridad prevalece siempre",
+        "Prevalece el ruido si hay población",
+        "Son equivalentes",
+        "Depende del propietario"
+      ],
+      "correct": 0,
+      "why": "NCO.OP.120: los procedimientos de ruido no deben comprometer la seguridad.",
+      "whyNot": [
+        null,
+        "No prevalece.",
+        "No son equivalentes.",
+        "No depende del propietario."
+      ],
+      "ref": "NCO.OP.120"
+    },
+    {
+      "id": "070.03.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un buen procedimiento de salida antirruido con avión ligero es:",
+      "options": [
+        "Despegar y bajar potencia inmediatamente por debajo de 100 ft",
+        "Ascender con ángulo mínimo sobre las casas",
+        "Ascender con el mejor régimen hasta la altura segura y reducir entonces potencia y RPM, evitando zonas habitadas",
+        "Virar a baja altura hacia las zonas despobladas"
+      ],
+      "correct": 2,
+      "why": "Se gana altura primero y se reduce potencia en el punto que fija el POH.",
+      "whyNot": [
+        "Sin altura se pierde margen ante un fallo de motor.",
+        "Un ascenso tendido pasa más cerca de las casas.",
+        null,
+        "Los virajes a baja altura son peligrosos."
+      ],
+      "ref": "Buenas prácticas; POH"
+    },
+    {
+      "id": "070.03.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "En crucero, para reducir el ruido sobre el suelo conviene:",
+      "options": [
+        "Volar más bajo para ver mejor",
+        "Aumentar RPM con paso fijo",
+        "Pasar siempre por encima de las ciudades",
+        "Volar más alto y evitar zonas habitadas, con las RPM más bajas compatibles con la potencia"
+      ],
+      "correct": 3,
+      "why": "La distancia reduce el ruido; menos RPM reduce la velocidad de la punta de pala.",
+      "whyNot": [
+        "Aumenta el ruido percibido.",
+        "Más RPM, más ruido.",
+        "Aumentan las molestias y el riesgo.",
+        null
+      ],
+      "ref": "Buenas prácticas"
+    },
+    {
+      "id": "070.03.006",
+      "type": "concepto",
+      "level": 1,
+      "es": true,
+      "q": "Los procedimientos antirruido de un aeródromo español se consultan en:",
+      "options": [
+        "El AIP, parte AD 2, y la carta VAC",
+        "Solo en la torre, por radio",
+        "Solo en el METAR",
+        "En el certificado de aeronavegabilidad"
+      ],
+      "correct": 0,
+      "why": "AD 2.21 recoge los procedimientos antirruido y la VAC los dibuja.",
+      "whyNot": [
+        null,
+        "No bastan por radio.",
+        "El METAR no contiene restricciones.",
+        "No figuran en el certificado."
+      ],
+      "ref": "AIP España AD 2"
+    },
+    {
+      "id": "070.03.007",
+      "type": "regla",
+      "level": 2,
+      "q": "Si un procedimiento antirruido te obliga a volar a una altura o una velocidad que el POH no recomienda, debes:",
+      "options": [
+        "Seguirlo igualmente",
+        "Pedir autorización a los vecinos",
+        "No seguirlo y volar con seguridad",
+        "Parar el motor"
+      ],
+      "correct": 2,
+      "why": "La seguridad prevalece sobre la atenuación de ruido.",
+      "whyNot": [
+        "Nunca por encima de la seguridad.",
+        "No tiene sentido.",
+        null,
+        "No procede."
+      ],
+      "ref": "NCO.OP.120"
+    },
+    {
+      "id": "070.03.008",
+      "type": "concepto",
+      "level": 3,
+      "q": "En la aproximación, para minimizar el ruido conviene:",
+      "options": [
+        "Un tramo largo a baja altura y potencia alta",
+        "Una aproximación estabilizada con el perfil normal y baja RPM, sin tramos planos largos con potencia",
+        "Una pasada baja sobre la pista antes de aterrizar",
+        "Una aproximación muy picada con el motor al máximo"
+      ],
+      "correct": 1,
+      "why": "Los tramos planos con potencia son más ruidosos y menos seguros.",
+      "whyNot": [
+        "Aumenta el ruido.",
+        null,
+        "Aumenta ruido y riesgo.",
+        "Una aproximación picada con motor al máximo no es estable ni segura."
+      ],
+      "ref": "Buenas prácticas"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.070.03.01",
+      "front": "Fuente principal de ruido",
+      "back": "La hélice (RPM y velocidad en la punta); menos RPM, menos ruido"
+    },
+    {
+      "id": "c.070.03.02",
+      "front": "Ruido y distancia",
+      "back": "A doble distancia, unos 6 dB menos; volar más alto reduce el ruido en el suelo"
+    },
+    {
+      "id": "c.070.03.03",
+      "front": "Ruido frente a seguridad",
+      "back": "NCO.OP.120: la seguridad prevalece; los procedimientos antirruido están en el AIP AD 2.21 y la VAC"
+    }
+  ]
+}

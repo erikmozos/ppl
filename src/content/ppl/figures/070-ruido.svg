@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300">
+<title>Perfil de salida con atenuación de ruido: ascenso más pronunciado y potencia reducida a una altura segura frente a un ascenso tendido sobre la zona habitada</title>
+<defs><marker id="070-ruido-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker></defs>
+<rect x="0" y="0" width="640" height="300" class="sky"/>
+<rect x="0" y="240" width="640" height="60" class="ground"/>
+<rect x="40" y="236" width="150" height="6" class="soft"/>
+<text x="115" y="262" class="tx2" text-anchor="middle">pista</text>
+<rect x="400" y="212" width="26" height="28" class="soft"/>
+<rect x="436" y="206" width="30" height="34" class="soft"/>
+<rect x="476" y="214" width="24" height="26" class="soft"/>
+<text x="450" y="262" class="tx2" text-anchor="middle">zona habitada</text>
+<path d="M150 236 L400 176 L610 140" class="wa-ln thick dash" fill="none"/>
+<path d="M150 236 L290 108 L420 82 L610 70" class="ok-ln thick" fill="none"/>
+<circle cx="290" cy="108" r="5" class="ok-fill"/>
+<text x="300" y="126" class="txo b">reducir potencia y RPM</text>
+<text x="300" y="142" class="txo">a la altura segura del POH</text>
+<text x="520" y="40" class="txo b" text-anchor="middle">más altura sobre las casas</text>
+<text x="540" y="196" class="txw b" text-anchor="middle">ascenso tendido: más cerca</text>
+<line x1="450" y1="86" x2="450" y2="170" class="ln2 dash" marker-end="url(#070-ruido-k)" marker-start="url(#070-ruido-k)"/>
+<text x="458" y="132" class="tx2">más distancia</text>
+<text x="20" y="30" class="tx b">Salida: antirruido (verde) frente a ascenso tendido (rojo)</text>
+</svg>

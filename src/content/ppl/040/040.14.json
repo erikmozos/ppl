@@ -1,0 +1,337 @@
+{
+ "lesson": {
+  "title": "Personalidad y actitudes peligrosas",
+  "summary": "Cómo se forma la personalidad, qué influye en ella y las cinco actitudes peligrosas (antiautoridad, impulsividad, invulnerabilidad, machismo y resignación) con sus antídotos.",
+  "objectives": [
+   "Describir qué es la personalidad y cómo se desarrolla",
+   "Explicar la influencia de la personalidad y las actitudes en la seguridad",
+   "Identificar las cinco actitudes peligrosas",
+   "Enunciar el antídoto de cada actitud",
+   "Reconocer el papel de la autoconciencia y del entorno"
+  ],
+  "sections": [
+   {
+    "title": "Qué es la personalidad y cómo se forma",
+    "text": [
+     "La **personalidad** es el conjunto de rasgos, hábitos y formas de pensar, sentir y reaccionar que caracterizan a una persona y que se mantiene bastante estable a lo largo del tiempo. Se forma a partir de la **herencia** (el temperamento con el que se nace), la **educación y la familia**, la **cultura**, las **experiencias vitales** y el **entorno social y profesional**. No puede cambiarse de golpe, pero sí **moderarse y entrenarse**: los hábitos y las **actitudes** (la predisposición aprendida a reaccionar de cierto modo ante personas o situaciones) se adquieren con la experiencia y se pueden modificar con formación y autoconocimiento.",
+     "No existe una personalidad «perfecta» de piloto. Rasgos como la confianza, la autodisciplina, la estabilidad emocional y la capacidad de trabajar con otros ayudan. En cambio, ciertas combinaciones, como la competitividad extrema, la necesidad de demostrar algo, la impulsividad, la tendencia a menospreciar el riesgo o la dificultad para aceptar críticas, pueden ser peligrosas. Un buen piloto conoce sus **puntos débiles** y los compensa con procedimientos, con mínimos personales y con la ayuda de los demás."
+    ]
+   },
+   {
+    "title": "Autoimagen, presión y entorno",
+    "text": [
+     "La **autoimagen** (cómo se ve uno mismo) y la **presión social** influyen en la conducta. Un piloto que necesita aparentar competencia delante de los pasajeros, de los compañeros del aeroclub o de su pareja es más propenso a asumir riesgos que contradicen su propio juicio. La **cultura** de la escuela y del aeroclub también cuenta: si se admira a quien «vuela con cualquier tiempo», se premia justo lo contrario de la seguridad. Y el **estado emocional** (problemas personales, estrés, euforia) modifica el comportamiento de cada uno en ese momento."
+    ]
+   },
+   {
+    "title": "Las cinco actitudes peligrosas",
+    "text": [
+     "La FAA describió cinco actitudes que se repiten en los accidentes de aviación general. Cada una tiene un **antídoto**: una frase corta que se aprende para recordarla cuando aparece la actitud. Reconocerlas en uno mismo es el primer paso para neutralizarlas."
+    ],
+    "table": {
+     "caption": "Actitudes peligrosas y antídotos",
+     "head": [
+      "Actitud",
+      "Cómo se manifiesta",
+      "Antídoto"
+     ],
+     "rows": [
+      [
+       "Antiautoridad",
+       "«No me digas lo que tengo que hacer»: rechaza las normas y los consejos",
+       "Sigue las reglas: casi siempre son correctas"
+      ],
+      [
+       "Impulsividad",
+       "«¡Hazlo rápido!»: actúa sin pensar, con la primera idea",
+       "No tan rápido: piensa primero"
+      ],
+      [
+       "Invulnerabilidad",
+       "«A mí no me va a pasar»: cree que los accidentes les ocurren a otros",
+       "Puede pasarme a mí"
+      ],
+      [
+       "Machismo (o exceso de ego)",
+       "«Puedo hacerlo»: se arriesga para demostrar su valía o impresionar",
+       "Arriesgarse es una tontería"
+      ],
+      [
+       "Resignación",
+       "«¿Para qué intentarlo? No sirve de nada»: se rinde y deja que otros decidan",
+       "No soy impotente: puedo marcar la diferencia"
+      ]
+     ],
+     "src": "FAA, Pilot's Handbook of Aeronautical Knowledge"
+    },
+    "note": {
+     "kind": "tip",
+     "text": "Para recordar la lista piensa en Antiautoridad, Impulsividad, Invulnerabilidad, Machismo y Resignación. Una pista: el antídoto de la impulsividad es parar y pensar; el de la invulnerabilidad, aceptar que el riesgo también es para ti."
+    }
+   },
+   {
+    "title": "Cómo gestionarlas",
+    "text": [
+     "No se trata de borrar la personalidad sino de **reconocer las propias tendencias**. Si tiendes a la impulsividad, impone pausas obligatorias (la lista de chequeo y el briefing frenan lo inmediato). Si tiendes a la invulnerabilidad o al machismo, fija **mínimos personales** y respétalos aunque haya presión. Si tiendes a la antiautoridad, recuerda que las normas recogen la experiencia de muchos accidentes. Si tiendes a la resignación, mantente activo: cualquier situación tiene siempre alguna opción.",
+     "El **feedback honesto** de un instructor o un compañero de confianza ayuda a ver puntos ciegos propios, y el **debriefing** tras cada vuelo es la ocasión de revisar cómo han intervenido las actitudes en las decisiones. La cultura justa de la que hablamos al principio del curso hace posible hablar de ello sin miedo."
+    ]
+   }
+  ],
+  "numbers": [
+   "Cinco actitudes: antiautoridad, impulsividad, invulnerabilidad, machismo y resignación",
+   "Antiautoridad: sigue las reglas",
+   "Impulsividad: no tan rápido, piensa primero",
+   "Invulnerabilidad: puede pasarme a mí",
+   "Machismo: arriesgarse es una tontería",
+   "Resignación: no soy impotente"
+  ],
+  "traps": [
+   "El antídoto de la impulsividad no es «hazlo rápido» sino parar y pensar.",
+   "El machismo no es solo cosa de hombres: es el exceso de ego que lleva a arriesgarse.",
+   "La resignación es dejar de intentarlo; no es prudencia.",
+   "La invulnerabilidad es creer que al riesgo se escapa uno mismo.",
+   "La personalidad no se cambia de golpe, pero se modera con hábitos y formación."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge, cap. 2: Aeronautical Decision-Making",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "SKYbrary, Hazardous attitudes",
+    "url": "https://skybrary.aero/articles/hazardous-attitudes"
+   }
+  ],
+  "id": "040.14",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "040.14.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "La actitud «¡Hazlo rápido!», que lleva a actuar sin pensar, es:",
+   "options": [
+    "Invulnerabilidad",
+    "Impulsividad",
+    "Resignación",
+    "Antiautoridad"
+   ],
+   "correct": 1,
+   "why": "El impulsivo actúa con la primera idea sin evaluar las alternativas.",
+   "whyNot": [
+    "Es creer que no le ocurrirá a uno.",
+    null,
+    "Es rendirse.",
+    "Es rechazar las normas."
+   ],
+   "ref": "FAA PHAK"
+  },
+  {
+   "id": "040.14.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "El antídoto de la invulnerabilidad es:",
+   "options": [
+    "Sigue las reglas",
+    "No soy impotente",
+    "Piensa primero",
+    "Puede pasarme a mí"
+   ],
+   "correct": 3,
+   "why": "Reconocer que el riesgo también afecta a uno mismo.",
+   "whyNot": [
+    "Es el antídoto de la antiautoridad.",
+    "Es el de la resignación.",
+    "Es el de la impulsividad.",
+    null
+   ],
+   "ref": "FAA PHAK"
+  },
+  {
+   "id": "040.14.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "El antídoto de la antiautoridad es:",
+   "options": [
+    "Sigue las reglas: casi siempre son correctas",
+    "Arriesgarse es una tontería",
+    "Puede pasarme a mí",
+    "No tan rápido"
+   ],
+   "correct": 0,
+   "why": "Las normas recogen la experiencia de accidentes anteriores.",
+   "whyNot": [
+    null,
+    "Es el antídoto del machismo.",
+    "Es el de la invulnerabilidad.",
+    "Es el de la impulsividad."
+   ],
+   "ref": "FAA PHAK"
+  },
+  {
+   "id": "040.14.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "«A mí no me va a pasar» corresponde a la actitud de:",
+   "options": [
+    "Machismo",
+    "Resignación",
+    "Invulnerabilidad",
+    "Impulsividad"
+   ],
+   "correct": 2,
+   "why": "Se subestima el riesgo propio y se cree inmune.",
+   "whyNot": [
+    "El machismo busca demostrar valía arriesgándose.",
+    "La resignación abandona la lucha.",
+    null,
+    "La impulsividad es actuar sin pensar."
+   ],
+   "ref": "FAA PHAK"
+  },
+  {
+   "id": "040.14.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un piloto que se arriesga para impresionar a sus pasajeros muestra:",
+   "options": [
+    "Resignación",
+    "Antiautoridad",
+    "Machismo (exceso de ego)",
+    "Prudencia"
+   ],
+   "correct": 2,
+   "why": "Busca demostrar su valía con un riesgo innecesario.",
+   "whyNot": [
+    "La resignación es no intentar nada.",
+    "La antiautoridad es rechazar normas.",
+    null,
+    "Es lo contrario de la prudencia."
+   ],
+   "ref": "FAA PHAK"
+  },
+  {
+   "id": "040.14.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "«¿Para qué intentarlo? No sirve de nada» es la actitud de:",
+   "options": [
+    "Resignación",
+    "Impulsividad",
+    "Antiautoridad",
+    "Machismo"
+   ],
+   "correct": 0,
+   "why": "Se renuncia a actuar y se deja a otros decidir.",
+   "whyNot": [
+    null,
+    "Impulsividad es actuar demasiado deprisa.",
+    "Antiautoridad es rechazar las reglas.",
+    "Machismo es arriesgarse para demostrar."
+   ],
+   "ref": "FAA PHAK"
+  },
+  {
+   "id": "040.14.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "El antídoto del machismo es:",
+   "options": [
+    "No soy impotente",
+    "Sigue las reglas",
+    "No tan rápido",
+    "Arriesgarse es una tontería"
+   ],
+   "correct": 3,
+   "why": "Se sustituye la necesidad de demostrar por la prudencia.",
+   "whyNot": [
+    "Es el de la resignación.",
+    "Es el de la antiautoridad.",
+    "Es el de la impulsividad.",
+    null
+   ],
+   "ref": "FAA PHAK"
+  },
+  {
+   "id": "040.14.008",
+   "type": "concepto",
+   "level": 1,
+   "q": "La personalidad se desarrolla principalmente por:",
+   "options": [
+    "Solo la herencia",
+    "Herencia, educación, cultura y experiencias",
+    "Solo la altitud",
+    "El tipo de avión que se pilota"
+   ],
+   "correct": 1,
+   "why": "Intervienen factores biológicos y del entorno.",
+   "whyNot": [
+    "No solo la herencia.",
+    null,
+    "La altitud no la determina.",
+    "Es un factor ajeno a la personalidad."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.14.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Cuál es la mejor forma de manejar una actitud peligrosa propia?",
+   "options": [
+    "Negar que existe",
+    "Reconocerla y compensarla con procedimientos y mínimos personales",
+    "Dejarse llevar por la intuición",
+    "Evitar hablar de ello con el instructor"
+   ],
+   "correct": 1,
+   "why": "La autoconciencia y los hábitos neutralizan las tendencias.",
+   "whyNot": [
+    "Negarla impide corregirla.",
+    null,
+    "La intuición es lo que se trata de moderar.",
+    "El feedback del instructor ayuda a detectarla."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.14.010",
+   "type": "concepto",
+   "level": 3,
+   "q": "Un piloto con tendencia a la impulsividad prepara el avión con prisa y salta pasos de la lista. La medida más útil es:",
+   "options": [
+    "Hacer el procedimiento de memoria más rápido",
+    "Ignorar la tendencia",
+    "Volar siempre acompañado",
+    "Imponerse pausas y usar la lista y el briefing como freno"
+   ],
+   "correct": 3,
+   "why": "Las defensas procedimentales frenan la acción inmediata.",
+   "whyNot": [
+    "Aumenta el riesgo de lapsus.",
+    "No se corrige lo que se ignora.",
+    "Volar acompañado no corrige la actitud.",
+    null
+   ],
+   "ref": "FAA PHAK"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.040.14.01",
+   "front": "Cinco actitudes peligrosas",
+   "back": "Antiautoridad, impulsividad, invulnerabilidad, machismo y resignación"
+  },
+  {
+   "id": "c.040.14.02",
+   "front": "Antídotos",
+   "back": "Antiautoridad: sigue las reglas. Impulsividad: piensa primero. Invulnerabilidad: puede pasarme a mí. Machismo: arriesgarse es una tontería. Resignación: no soy impotente"
+  },
+  {
+   "id": "c.040.14.03",
+   "front": "Personalidad",
+   "back": "Se forma por herencia, educación, cultura y experiencias; se modera con hábitos y autoconocimiento"
+  }
+ ]
+}

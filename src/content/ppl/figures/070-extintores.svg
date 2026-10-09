@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380">
+<title>Agentes extintores y clases de fuego según EN 2: agua, espuma, CO2, polvo y halón o halotron frente a fuegos de clase A, B, C, D y eléctricos</title>
+<text x="30" y="28" class="tx b">Agente extintor y clase de fuego (EN 2): adecuado frente a no recomendado</text>
+<text x="232.0" y="74" class="tx b" text-anchor="middle">A sólidos</text>
+<text x="316.0" y="74" class="tx b" text-anchor="middle">B líquidos</text>
+<text x="400.0" y="74" class="tx b" text-anchor="middle">C gases</text>
+<text x="484.0" y="74" class="tx b" text-anchor="middle">D metales</text>
+<text x="568.0" y="74" class="tx b" text-anchor="middle">Eléctrico</text>
+<text x="30" y="117" class="tx b">Agua</text>
+<rect x="194" y="90" width="76" height="36" class="ok"/>
+<text x="232.0" y="114" class="txo b" text-anchor="middle">sí</text>
+<rect x="278" y="90" width="76" height="36" class="wa"/>
+<text x="316.0" y="114" class="txw b" text-anchor="middle">no</text>
+<rect x="362" y="90" width="76" height="36" class="wa"/>
+<text x="400.0" y="114" class="txw b" text-anchor="middle">no</text>
+<rect x="446" y="90" width="76" height="36" class="wa"/>
+<text x="484.0" y="114" class="txw b" text-anchor="middle">no</text>
+<rect x="530" y="90" width="76" height="36" class="wa"/>
+<text x="568.0" y="114" class="txw b" text-anchor="middle">no</text>
+<text x="30" y="161" class="tx b">Espuma</text>
+<rect x="194" y="134" width="76" height="36" class="ok"/>
+<text x="232.0" y="158" class="txo b" text-anchor="middle">sí</text>
+<rect x="278" y="134" width="76" height="36" class="ok"/>
+<text x="316.0" y="158" class="txo b" text-anchor="middle">sí</text>
+<rect x="362" y="134" width="76" height="36" class="wa"/>
+<text x="400.0" y="158" class="txw b" text-anchor="middle">no</text>
+<rect x="446" y="134" width="76" height="36" class="wa"/>
+<text x="484.0" y="158" class="txw b" text-anchor="middle">no</text>
+<rect x="530" y="134" width="76" height="36" class="wa"/>
+<text x="568.0" y="158" class="txw b" text-anchor="middle">no</text>
+<text x="30" y="205" class="tx b">CO2</text>
+<rect x="194" y="178" width="76" height="36" class="wa"/>
+<text x="232.0" y="202" class="txw b" text-anchor="middle">no</text>
+<rect x="278" y="178" width="76" height="36" class="ok"/>
+<text x="316.0" y="202" class="txo b" text-anchor="middle">sí</text>
+<rect x="362" y="178" width="76" height="36" class="wa"/>
+<text x="400.0" y="202" class="txw b" text-anchor="middle">no</text>
+<rect x="446" y="178" width="76" height="36" class="wa"/>
+<text x="484.0" y="202" class="txw b" text-anchor="middle">no</text>
+<rect x="530" y="178" width="76" height="36" class="ok"/>
+<text x="568.0" y="202" class="txo b" text-anchor="middle">sí</text>
+<text x="30" y="249" class="tx b">Polvo ABC</text>
+<rect x="194" y="222" width="76" height="36" class="ok"/>
+<text x="232.0" y="246" class="txo b" text-anchor="middle">sí</text>
+<rect x="278" y="222" width="76" height="36" class="ok"/>
+<text x="316.0" y="246" class="txo b" text-anchor="middle">sí</text>
+<rect x="362" y="222" width="76" height="36" class="ok"/>
+<text x="400.0" y="246" class="txo b" text-anchor="middle">sí</text>
+<rect x="446" y="222" width="76" height="36" class="wa"/>
+<text x="484.0" y="246" class="txw b" text-anchor="middle">no</text>
+<rect x="530" y="222" width="76" height="36" class="ok"/>
+<text x="568.0" y="246" class="txo b" text-anchor="middle">sí</text>
+<text x="30" y="293" class="tx b">Halón / halotron</text>
+<rect x="194" y="266" width="76" height="36" class="ok"/>
+<text x="232.0" y="290" class="txo b" text-anchor="middle">sí</text>
+<rect x="278" y="266" width="76" height="36" class="ok"/>
+<text x="316.0" y="290" class="txo b" text-anchor="middle">sí</text>
+<rect x="362" y="266" width="76" height="36" class="wa"/>
+<text x="400.0" y="290" class="txw b" text-anchor="middle">no</text>
+<rect x="446" y="266" width="76" height="36" class="wa"/>
+<text x="484.0" y="290" class="txw b" text-anchor="middle">no</text>
+<rect x="530" y="266" width="76" height="36" class="ok"/>
+<text x="568.0" y="290" class="txo b" text-anchor="middle">sí</text>
+<text x="30" y="342" class="tx2">Agua: nunca sobre combustible, aceite ni equipo eléctrico. Tras usar un extintor en cabina, ventila.</text>
+<text x="30" y="362" class="tx2">Los extintores portátiles de cabina de un avión ligero son de halón o halotron (o de CO2).</text>
+</svg>

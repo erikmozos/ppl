@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300">
+<title>Decisión de combustible en vuelo: combustible previsto al aterrizar frente a la reserva final, con MAYDAY FUEL por debajo y MINIMUM FUEL cuando un cambio de autorización lo llevaría por debajo</title>
+<defs><marker id="070-comb-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker></defs>
+<text x="30" y="30" class="tx b">Combustible previsto al aterrizar (en el aeródromo seguro más cercano o en el destino)</text>
+<rect x="30" y="60" width="200" height="60" class="wa"/>
+<rect x="230" y="60" width="150" height="60" class="soft"/>
+<rect x="380" y="60" width="230" height="60" class="ok"/>
+<line x1="230" y1="50" x2="230" y2="130" class="ln thick"/>
+<text x="230" y="146" class="tx b" text-anchor="middle">reserva final planificada</text>
+<text x="130" y="86" class="txw b" text-anchor="middle">MAYDAY FUEL</text>
+<text x="130" y="106" class="tx2" text-anchor="middle">menos que la reserva final</text>
+<text x="305" y="86" class="tx b" text-anchor="middle">MINIMUM FUEL</text>
+<text x="305" y="106" class="tx2" text-anchor="middle">si un cambio te baja de ahí</text>
+<text x="495" y="86" class="txo b" text-anchor="middle">Normal</text>
+<text x="495" y="106" class="tx2" text-anchor="middle">sigue vigilando el combustible</text>
+<line x1="30" y1="180" x2="610" y2="180" class="ln2" marker-end="url(#070-comb-k)"/>
+<text x="30" y="204" class="tx2">menos combustible</text>
+<text x="610" y="204" class="tx2" text-anchor="end">más combustible</text>
+<text x="30" y="246" class="tx">MINIMUM FUEL: aviso al ATC, sin prioridad. MAYDAY MAYDAY MAYDAY FUEL: emergencia.</text>
+<text x="30" y="270" class="tx2">Ambas desde el 30-10-2022 (NCO.OP.185, Reglamento (UE) 2021/1296).</text>
+</svg>

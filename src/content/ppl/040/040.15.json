@@ -1,0 +1,362 @@
+{
+ "lesson": {
+  "title": "Carga de trabajo, estrés y fatiga",
+  "summary": "Relación entre activación y rendimiento (Yerkes-Dodson), sobrecarga e infracarga de trabajo, estrés agudo y crónico, síndrome general de adaptación y la fatiga: tipos, efectos y gestión.",
+  "objectives": [
+   "Interpretar la curva de Yerkes-Dodson",
+   "Distinguir sobrecarga e infracarga de trabajo y sus efectos",
+   "Distinguir estrés agudo y crónico y explicar el síndrome general de adaptación",
+   "Reconocer las fuentes de estrés y las técnicas de gestión",
+   "Describir los tipos de fatiga, sus efectos y cómo gestionarla"
+  ],
+  "sections": [
+   {
+    "title": "Activación y rendimiento: Yerkes-Dodson",
+    "text": [
+     "Para rendir bien hace falta cierto nivel de **activación** (alerta, tensión). La **ley de Yerkes-Dodson** dice que el rendimiento mejora con la activación hasta un **nivel óptimo** y que después, si la activación sigue aumentando, el rendimiento **empeora**: la gráfica es una **U invertida**. Con poca activación (aburrimiento, somnolencia) se rinde mal; con mucha (miedo, pánico) también. El nivel óptimo es **menor en las tareas complejas** que en las simples: cuanto más difícil es la tarea, antes se pasa del punto óptimo.",
+     "Bajo exceso de activación, la atención se **estrecha** (visión en túnel, fijación en un problema), se cometen más errores y se olvidan datos, se vuelve a lo conocido (hábitos antiguos) y el juicio empeora. La práctica, el entrenamiento y los procedimientos conocidos desplazan hacia la derecha el punto en el que empieza a fallar el rendimiento."
+    ],
+    "figure": "svg:040-yerkes",
+    "caption": "La activación moderada es la óptima; la tarea compleja tolera menos activación que la simple."
+   },
+   {
+    "title": "Carga de trabajo: sobrecarga e infracarga",
+    "text": [
+     "La **carga de trabajo** es la cantidad de esfuerzo mental y físico que exige una tarea en un tiempo dado, comparada con tu capacidad para afrontarla. Depende de la tarea (número de cosas por hacer, dificultad, tiempo disponible), de **cada piloto** (experiencia, entrenamiento, estado físico) y de las condiciones (meteorología, tráfico, estrés). Hay dos extremos peligrosos:"
+    ],
+    "bullets": [
+     "**Sobrecarga**: demasiadas tareas para el tiempo y la capacidad. Se pierde la conciencia situacional, se estrecha la atención, se cometen errores y se tiende a abandonar tareas importantes («descarte de tareas»). Es típica de las fases críticas (despegue, aproximación, emergencia, entrada en espacio aéreo complejo con tráfico y radio).",
+     "**Infracarga**: poca actividad, monotonía. Produce aburrimiento, somnolencia, pérdida de vigilancia, complacencia y errores por no atender. Es característica de los vuelos largos, tranquilos y de noche."
+    ],
+    "note": {
+     "kind": "warn",
+     "text": "La infracarga también baja el rendimiento y es tan peligrosa como la sobrecarga: no hace falta que ocurra algo para cometer un error grave."
+    }
+   },
+   {
+    "title": "Cómo gestionar la carga de trabajo",
+    "text": [
+     "Se gestiona **antes, durante y después**. Antes: planifica el vuelo con tiempo, prepara cartas, frecuencias y checklist, y decide por adelantado. Durante: **prioriza** (pilotar, navegar, comunicar), reparte tareas con quien vaya a bordo, usa las ayudas disponibles (piloto automático si lo hay, listas, GPS), **prepara las fases críticas** con antelación (inicia el briefing antes de entrar en el circuito) y **descarta lo menos importante** cuando haya sobrecarga (retrasa una llamada, pide un tiempo al ATC o pide «mantener»). Si la situación se desborda, pide ayuda o reduce la exigencia (sal de la zona, gana altura, circula en espera). En infracarga, mantén la actividad: comprueba el combustible y la posición con regularidad, habla, y toma un descanso."
+    ]
+   },
+   {
+    "title": "Estrés: agudo, crónico y síndrome general de adaptación",
+    "text": [
+     "El **estrés** es la respuesta del organismo ante exigencias (estresores) que percibimos como una amenaza o un reto. Los **estresores** pueden ser **físicos** (ruido, vibración, calor, frío, hipoxia, fatiga), **psicológicos** (carga de trabajo, miedo, incertidumbre, presión de tiempo, tener que dar buena imagen) y **de vida** (problemas familiares, económicos, laborales, duelo, enfermedad). Se suman: un piloto con un problema personal soporta peor un imprevisto en vuelo.",
+     "El estrés **agudo** es de aparición rápida y corta duración (una turbulencia fuerte, una emergencia): activa el sistema simpático (corazón y respiración más rápidos, músculos tensos, atención focalizada) y desaparece al cesar la causa. El estrés **crónico** se prolonga durante semanas o meses (problemas persistentes, exceso de trabajo) y produce agotamiento, irritabilidad, insomnio, mal rendimiento, fallos de memoria y enfermedades; es un factor de riesgo cardiovascular. Según Selye, la respuesta sostenida sigue el **síndrome general de adaptación** en tres fases: **alarma** (reacción inicial), **resistencia** (el cuerpo se adapta y mantiene un alto gasto) y **agotamiento** (los recursos se acaban y el rendimiento cae, con enfermedad).",
+     "Las **técnicas de gestión** incluyen: preparación y entrenamiento (lo que se conoce asusta menos), respiración lenta, descomponer el problema en pasos, hablar con alguien, mantener hábitos saludables (ejercicio regular, sueño, alimentación), tiempo para relajarse y **no volar** cuando hay un estrés vital importante: IMSAFE incluye el estrés como factor de decisión. El alcohol, el tabaco y las drogas **no son** formas válidas de gestionarlo."
+    ]
+   },
+   {
+    "title": "Fatiga",
+    "text": [
+     "La **fatiga** es un estado de disminución del rendimiento físico y mental por falta de sueño, vigilia prolongada, desajuste circadiano o carga de trabajo excesiva. Se distingue la **fatiga aguda** (tras un día largo o una noche corta, desaparece con descanso) de la **fatiga crónica** (acumulada durante semanas, no se recupera con una buena noche y se asocia con estrés crónico y enfermedades). También puede ser **física** (cansancio muscular) o **mental** (agotamiento de la atención).",
+     "Sus **efectos** son: lentitud de reacción, **fallos de atención y micro-sueños**, peor memoria, razonamiento y juicio, toma de riesgos, **irritabilidad**, desaparición de la comunicación, fijación en las tareas y errores de omisión. Lo peor es que **el piloto fatigado no se da cuenta** de que rinde mal. La gestión consiste en **prevenir** (dormir lo suficiente antes del vuelo, horario regular, evitar la deuda de sueño), **detectar** en uno mismo y en los demás, y **actuar**: no volar o aterrizar, hacer una **siesta** breve cuando sea posible, hidratarse y comer ligero, mantener la actividad. La **cafeína** solo enmascara la fatiga durante un rato; no sustituye al sueño."
+    ]
+   }
+  ],
+  "numbers": [
+   "Yerkes-Dodson: U invertida; el óptimo es menor en tareas complejas",
+   "Sobrecarga: se descartan tareas; infracarga: aburrimiento y pérdida de vigilancia",
+   "Estrés agudo: breve; crónico: prolongado y dañino",
+   "Síndrome general de adaptación: alarma, resistencia y agotamiento",
+   "Fatiga aguda y crónica; el piloto fatigado no percibe su bajo rendimiento",
+   "La cafeína enmascara la fatiga"
+  ],
+  "traps": [
+   "La infracarga también reduce el rendimiento y puede ser peligrosa.",
+   "En Yerkes-Dodson el exceso de activación no mejora el rendimiento.",
+   "La resistencia no es la última fase del síndrome general de adaptación: la última es el agotamiento.",
+   "La fatiga se subestima en uno mismo.",
+   "La cafeína no cura la fatiga."
+  ],
+  "sources": [
+   {
+    "title": "Yerkes & Dodson (1908); Selye (1936): síndrome general de adaptación",
+    "url": "https://skybrary.aero/articles/stress"
+   },
+   {
+    "title": "EASA, material de factores humanos y fatiga",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules"
+   }
+  ],
+  "id": "040.15",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "040.15.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "Según la ley de Yerkes-Dodson, el rendimiento:",
+   "options": [
+    "Aumenta siempre con la activación",
+    "Aumenta con la activación hasta un óptimo y después disminuye",
+    "Disminuye siempre con la activación",
+    "No depende de la activación"
+   ],
+   "correct": 1,
+   "why": "La relación tiene forma de U invertida.",
+   "whyNot": [
+    "Un exceso de activación empeora el rendimiento.",
+    null,
+    "Con muy poca activación también se rinde mal.",
+    "Depende claramente de ella."
+   ],
+   "ref": "Yerkes-Dodson"
+  },
+  {
+   "id": "040.15.002",
+   "type": "concepto",
+   "level": 2,
+   "q": "En una tarea compleja, el nivel óptimo de activación es:",
+   "options": [
+    "Mayor que en una tarea simple",
+    "Igual en toda tarea",
+    "Nulo",
+    "Menor que en una tarea simple"
+   ],
+   "correct": 3,
+   "why": "Cuanto más difícil es la tarea, antes se llega al exceso de activación.",
+   "whyNot": [
+    "Es al revés.",
+    "Varía con la complejidad.",
+    "Sin activación no hay rendimiento.",
+    null
+   ],
+   "ref": "Yerkes-Dodson"
+  },
+  {
+   "id": "040.15.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un efecto típico del exceso de estrés en vuelo es:",
+   "options": [
+    "El estrechamiento de la atención (visión en túnel)",
+    "Una mayor amplitud de atención",
+    "Mejor memoria",
+    "Mayor tolerancia a los errores"
+   ],
+   "correct": 0,
+   "why": "Se atiende a una sola cosa y se ignora el resto.",
+   "whyNot": [
+    null,
+    "Se estrecha, no se amplía.",
+    "La memoria empeora.",
+    "Se cometen más errores."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.15.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "La infracarga de trabajo produce principalmente:",
+   "options": [
+    "Estrés agudo",
+    "Hiperventilación",
+    "Aburrimiento y pérdida de vigilancia",
+    "Descarte de tareas"
+   ],
+   "correct": 2,
+   "why": "La monotonía reduce la atención y favorece la complacencia.",
+   "whyNot": [
+    "El estrés agudo se asocia a sobrecarga.",
+    "La hiperventilación es respuesta a ansiedad.",
+    null,
+    "El descarte de tareas aparece con sobrecarga."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.15.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "Ante una sobrecarga de trabajo, lo más adecuado es:",
+   "options": [
+    "Intentar hacerlo todo a la vez",
+    "Ignorar las comunicaciones",
+    "Priorizar las tareas, descartar las menos importantes y pedir tiempo o ayuda",
+    "Aumentar la velocidad"
+   ],
+   "correct": 2,
+   "why": "Se reordena el trabajo: primero pilotar, navegar y comunicar.",
+   "whyNot": [
+    "Aumenta los errores.",
+    "Se pierde información clave.",
+    null,
+    "Disminuye el tiempo de reacción."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.15.006",
+   "type": "concepto",
+   "level": 1,
+   "q": "El estrés agudo se caracteriza por:",
+   "options": [
+    "Aparición rápida y breve duración",
+    "Duración de meses",
+    "Ausencia de síntomas físicos",
+    "Aparecer solo de noche"
+   ],
+   "correct": 0,
+   "why": "Surge ante una amenaza concreta y cesa al desaparecer la causa.",
+   "whyNot": [
+    null,
+    "Eso es estrés crónico.",
+    "Activa el sistema simpático y da síntomas físicos.",
+    "No depende de la hora."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.15.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "El estrés crónico puede provocar:",
+   "options": [
+    "Mayor tolerancia al esfuerzo",
+    "Mejor sueño",
+    "Mayor atención",
+    "Agotamiento, irritabilidad, insomnio y problemas de memoria"
+   ],
+   "correct": 3,
+   "why": "Sostenido en el tiempo, agota los recursos del organismo.",
+   "whyNot": [
+    "Reduce la tolerancia.",
+    "Altera el sueño.",
+    "Reduce la atención.",
+    null
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.15.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "Las tres fases del síndrome general de adaptación (Selye) son:",
+   "options": [
+    "Alarma, descanso y recuperación",
+    "Alarma, resistencia y agotamiento",
+    "Resistencia, activación y relajación",
+    "Detección, evaluación y acción"
+   ],
+   "correct": 1,
+   "why": "La respuesta sostenida acaba en agotamiento si el estresor persiste.",
+   "whyNot": [
+    "No incluye recuperación.",
+    null,
+    "No son las fases del modelo.",
+    "Eso se parece a un proceso de decisión."
+   ],
+   "ref": "Selye"
+  },
+  {
+   "id": "040.15.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Qué es la fatiga crónica?",
+   "options": [
+    "Un cansancio que desaparece tras una siesta",
+    "Una fatiga acumulada que no se recupera con una sola noche de sueño",
+    "Una intoxicación aguda",
+    "Un tipo de hipoxia"
+   ],
+   "correct": 1,
+   "why": "Se acumula durante semanas y se asocia con estrés y deuda de sueño prolongados.",
+   "whyNot": [
+    "Eso es fatiga aguda.",
+    null,
+    "No tiene relación.",
+    "No es hipoxia."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.15.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un efecto típico de la fatiga es:",
+   "options": [
+    "Mejor tiempo de reacción",
+    "Mejor juicio",
+    "Más memoria",
+    "Que el piloto no se da cuenta de que rinde peor"
+   ],
+   "correct": 3,
+   "why": "La propia fatiga reduce la capacidad de autoevaluación.",
+   "whyNot": [
+    "Aumenta el tiempo de reacción.",
+    "Empeora el juicio.",
+    "La memoria empeora.",
+    null
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.15.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Qué hace la cafeína frente a la fatiga?",
+   "options": [
+    "Enmascara temporalmente los síntomas sin eliminar la causa",
+    "Elimina la fatiga",
+    "Sustituye al sueño",
+    "Corrige el desfase horario"
+   ],
+   "correct": 0,
+   "why": "El cuerpo sigue necesitando dormir.",
+   "whyNot": [
+    null,
+    "La fatiga persiste.",
+    "No sustituye el descanso.",
+    "El desfase se corrige con luz y tiempo."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.15.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un problema personal grave (un duelo, un despido) el día del vuelo es un factor que se evalúa en:",
+   "options": [
+    "El apartado A de IMSAFE",
+    "El apartado M de IMSAFE",
+    "El apartado S de IMSAFE (estrés)",
+    "Ninguno, porque no es un factor de vuelo"
+   ],
+   "correct": 2,
+   "why": "El estrés vital reduce la capacidad de afrontar los imprevistos.",
+   "whyNot": [
+    "A es alcohol.",
+    "M es medicación.",
+    null,
+    "El estado emocional sí afecta al vuelo."
+   ],
+   "ref": "Part-MED; FAA"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.040.15.01",
+   "front": "Yerkes-Dodson",
+   "back": "U invertida: el rendimiento sube con la activación hasta un óptimo y luego baja; el óptimo es menor en tareas complejas"
+  },
+  {
+   "id": "c.040.15.02",
+   "front": "Carga de trabajo",
+   "back": "Sobrecarga: se descartan tareas y se pierde conciencia situacional. Infracarga: aburrimiento y pérdida de vigilancia"
+  },
+  {
+   "id": "c.040.15.03",
+   "front": "Síndrome general de adaptación",
+   "back": "Alarma, resistencia y agotamiento"
+  },
+  {
+   "id": "c.040.15.04",
+   "front": "Fatiga",
+   "back": "Aguda o crónica; el piloto no percibe su bajo rendimiento; la cafeína solo la enmascara"
+  }
+ ]
+}

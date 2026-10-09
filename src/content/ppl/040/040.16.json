@@ -1,0 +1,342 @@
+{
+ "lesson": {
+  "title": "Gestión de amenazas y errores (TEM) y vuelo monopiloto",
+  "summary": "El modelo TEM de amenazas, errores y estados no deseados, sus contramedidas, la gestión de recursos del piloto único y el uso disciplinado de la lista de chequeo.",
+  "objectives": [
+   "Definir amenaza, error y estado no deseado de la aeronave",
+   "Aplicar el ciclo de TEM a un vuelo VFR de aviación general",
+   "Describir las contramedidas: planificación, briefing, listas, margen y comunicación",
+   "Aplicar la gestión de recursos del piloto único (SRM)",
+   "Usar la lista de chequeo con disciplina"
+  ],
+  "sections": [
+   {
+    "title": "El modelo TEM",
+    "text": [
+     "La **gestión de amenazas y errores** (TEM, Threat and Error Management) parte de una idea realista: en cada vuelo aparecen factores que complican la operación y el piloto, por muy competente que sea, comete errores. El objetivo no es un vuelo «sin problemas» sino **anticiparlos, detectarlos y manejarlos** antes de que afecten a la seguridad. El modelo reúne tres conceptos, que recoge la tabla. Una amenaza bien gestionada no deriva en error; un error bien gestionado no deriva en estado no deseado; y un estado no deseado bien gestionado se recupera sin accidente. Si falla la gestión, se avanza hacia el siguiente nivel y, al final, hacia un incidente o accidente. Las amenazas pueden ser **previsibles** (las anticipas con el parte y la ruta) o **imprevistas** (una llamada de radio, una avería)."
+    ],
+    "table": {
+     "caption": "Amenazas, errores y estados no deseados",
+     "head": [
+      "Concepto",
+      "Definición",
+      "Ejemplos en un vuelo en PA-28"
+     ],
+     "rows": [
+      [
+       "Amenaza",
+       "Acontecimiento o error ajeno al piloto que aumenta la complejidad y que hay que gestionar",
+       "Techo bajo, tráfico denso, viento cruzado fuerte, pasajero con prisa, fatiga propia, avión con pendiente de mantenimiento, NOTAM de pista parcialmente cerrada"
+      ],
+      [
+       "Error",
+       "Acción u omisión del piloto que se aparta de lo previsto",
+       "Calcular mal el combustible, no colacionar bien una autorización, olvidar los flaps"
+      ],
+      [
+       "Estado no deseado de la aeronave",
+       "Situación en la que el avión queda en una configuración o posición que reduce los márgenes de seguridad",
+       "Altitud por debajo de la prevista, desvío no planeado, aproximación inestable, combustible por debajo de la reserva final"
+      ]
+     ],
+     "src": "ICAO Doc 9683; SKYbrary"
+    }
+   },
+   {
+    "title": "Contramedidas",
+    "text": [
+     "Las **contramedidas** son las acciones que el piloto toma para impedir que las amenazas y los errores lleguen a mayores. Se agrupan en tres:"
+    ],
+    "bullets": [
+     "**Planificación y preparación**: preparar el vuelo con tiempo (tiempo, NOTAM, combustible con reserva, alternativas), definir los mínimos personales, hacer el briefing de salida y de llegada, y revisar las amenazas del día.",
+     "**Ejecución**: uso disciplinado de las listas de chequeo, comprobación cruzada de instrumentos y vista exterior, mantener un buen **margen** (altitud, combustible, tiempo y distancia), comunicación clara con el ATC y los pasajeros, y vigilancia de la conciencia situacional.",
+     "**Revisión y adaptación**: reevaluar con frecuencia (¿sigue siendo válido el plan?), cambiar de plan con tiempo, desviarse o aterrizar cuando haya amenazas acumuladas, y comentar después del vuelo lo ocurrido (**debriefing**) para aprender."
+    ],
+    "note": {
+     "kind": "tip",
+     "text": "Un buen margen es la contramedida más barata: si tienes combustible, altitud, tiempo y alternativas, casi cualquier amenaza o error se absorbe sin consecuencias."
+    }
+   },
+   {
+    "title": "Vuelo monopiloto: gestión de recursos del piloto único (SRM)",
+    "text": [
+     "En el avión de escuela vuelas solo, o con alumnos o pasajeros que no son tripulantes. La **gestión de recursos del piloto único** (SRM) es el arte de utilizar bien todos los recursos disponibles: **internos** (conocimientos, experiencia, habilidades, forma física) y **externos** (el avión y sus sistemas, las cartas y el GPS, el ATC, los servicios de información de vuelo, otros pilotos y los propios pasajeros). El piloto único no tiene copiloto que compruebe su trabajo, de modo que depende más de los **procedimientos** y de su disciplina.",
+     "Una forma práctica de revisar los riesgos del vuelo es la regla de las **cinco P**: **P**lan (ruta, tiempo, combustible), **P**lane (el avión), **P**ilot (tú: IMSAFE), **P**assengers (los pasajeros y su influencia) y **P**rogramming (los equipos y la navegación: GPS y radio). Se aplican antes de despegar y de nuevo antes de las fases críticas. También ayuda recordar el orden de prioridades **pilotar, navegar, comunicar**, apoyarse en el **piloto automático** si lo hay para liberar carga de trabajo, y **pedir ayuda al ATC** cuando se necesite: es un recurso disponible, no un signo de debilidad."
+    ]
+   },
+   {
+    "title": "Uso disciplinado de la lista de chequeo",
+    "text": [
+     "En vuelo monopiloto la lista de chequeo es la contramedida principal frente a los lapsus y deslices. Para que funcione hay que utilizarla con **disciplina**: seguirla en cada vuelo, sin saltarse pasos por haberla hecho muchas veces; **leer** cada punto y **comprobarlo** de verdad; usar la modalidad adecuada (flujo seguido de lista, o lectura y respuesta para los elementos críticos); **reiniciarla** si te interrumpen; y aplicarla en todas las fases (arranque, prueba de motor, antes del despegue, antes del aterrizaje, apagado). Las listas del PA-28 y del C172 de la app son un buen modelo para practicar el hábito. La lista de emergencia empieza con **elementos de memoria** (los críticos) y se completa luego con la lista escrita.",
+     "Ninguna lista sustituye al buen juicio ni a la visión global. Hay que desconfiar de la rutina: es la ocasión de pasarse pasos por alto."
+    ],
+    "links": [
+     {
+      "label": "Procedimiento de prueba de motor en el PA-28",
+      "href": "#/ac/pa28/flow/runup"
+     },
+     {
+      "label": "Procedimiento antes del aterrizaje en el C172",
+      "href": "#/ac/c172/flow/beforelanding"
+     }
+    ]
+   }
+  ],
+  "numbers": [
+   "TEM: amenazas, errores y estados no deseados de la aeronave",
+   "Amenaza bien gestionada: no hay error; error bien gestionado: no hay estado no deseado",
+   "Contramedidas: planificar, ejecutar con disciplina y revisar",
+   "SRM: usar todos los recursos, internos y externos",
+   "Orden de prioridades: pilotar, navegar y comunicar",
+   "Cinco P: Plan, Plane, Pilot, Passengers, Programming"
+  ],
+  "traps": [
+   "Una amenaza no es un error: un error es una acción del piloto; la amenaza viene de fuera.",
+   "Un estado no deseado de la aeronave no es un accidente: es una situación recuperable.",
+   "La mejor contramedida suele ser el margen (combustible, altitud, tiempo).",
+   "La lista de chequeo no debe hacerse de memoria ni de forma automática.",
+   "Pedir ayuda al ATC es un recurso, no un fracaso."
+  ],
+  "sources": [
+   {
+    "title": "ICAO Doc 9683, Manual de instrucción en factores humanos; SKYbrary, Threat and Error Management",
+    "url": "https://skybrary.aero/articles/threat-and-error-management-tem"
+   },
+   {
+    "title": "FAA, Single-Pilot Resource Management (Risk Management Handbook)",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/risk_management_handbook"
+   }
+  ],
+  "id": "040.16",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "040.16.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "En el modelo TEM, una amenaza es:",
+   "options": [
+    "Una acción equivocada del piloto",
+    "Un acontecimiento o error ajeno al piloto que aumenta la complejidad del vuelo",
+    "Un accidente",
+    "Una avería irreparable"
+   ],
+   "correct": 1,
+   "why": "Un techo bajo o una orden de ATC son amenazas externas que hay que gestionar.",
+   "whyNot": [
+    "Eso es un error.",
+    null,
+    "Un accidente es el desenlace final.",
+    "Una avería puede ser una amenaza, pero no toda amenaza lo es."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.16.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "Calcular mal el combustible es, en el modelo TEM:",
+   "options": [
+    "Una amenaza externa",
+    "Un estado no deseado",
+    "Una contramedida",
+    "Un error"
+   ],
+   "correct": 3,
+   "why": "Es una acción del piloto que se aparta de lo previsto.",
+   "whyNot": [
+    "La amenaza viene de fuera.",
+    "El estado no deseado es la consecuencia.",
+    "No evita nada.",
+    null
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.16.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una aproximación inestable (mal alineada o con velocidad excesiva) es:",
+   "options": [
+    "Un estado no deseado de la aeronave",
+    "Una amenaza",
+    "Una contramedida",
+    "Un lapsus"
+   ],
+   "correct": 0,
+   "why": "Es una situación que reduce los márgenes de seguridad y puede recuperarse.",
+   "whyNot": [
+    null,
+    "La amenaza es un factor externo previo.",
+    "No es una acción de defensa.",
+    "Es una situación, no un olvido."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.16.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Cuál de estas acciones es una contramedida del TEM?",
+   "options": [
+    "Despegar sin revisar el parte por falta de tiempo",
+    "Ignorar un NOTAM sobre la pista",
+    "Fijar un margen de combustible y elegir una alternativa antes del vuelo",
+    "Hacer la lista de memoria"
+   ],
+   "correct": 2,
+   "why": "Los márgenes y las alternativas absorben las amenazas y los errores.",
+   "whyNot": [
+    "Aumenta las amenazas.",
+    "Es una amenaza no gestionada.",
+    null,
+    "Aumenta el riesgo de olvidos."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.16.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "La gestión de recursos del piloto único (SRM) consiste en:",
+   "options": [
+    "Hacerlo todo sin ayuda",
+    "Delegar el pilotaje en los pasajeros",
+    "Utilizar todos los recursos, internos y externos, disponibles",
+    "Ignorar al ATC"
+   ],
+   "correct": 2,
+   "why": "Incluye el avión, las ayudas de navegación, el ATC y los pasajeros.",
+   "whyNot": [
+    "El piloto único debe apoyarse en los recursos.",
+    "No se delega el control del avión.",
+    null,
+    "El ATC es un recurso valioso."
+   ],
+   "ref": "FAA Risk Management Handbook"
+  },
+  {
+   "id": "040.16.006",
+   "type": "concepto",
+   "level": 1,
+   "q": "En una emergencia, el orden de prioridades es:",
+   "options": [
+    "Pilotar, navegar y comunicar",
+    "Comunicar, pilotar y navegar",
+    "Navegar, comunicar y pilotar",
+    "Comunicar, navegar y pilotar"
+   ],
+   "correct": 0,
+   "why": "Lo primero es mantener el control del avión.",
+   "whyNot": [
+    null,
+    "Comunicar no es la prioridad inicial.",
+    "Pilotar va primero.",
+    "Pilotar va primero."
+   ],
+   "ref": "Procedimientos de emergencia"
+  },
+  {
+   "id": "040.16.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Qué significa la P de «Passengers» en las cinco P?",
+   "options": [
+    "Contar los pasajeros",
+    "Informar al ATC de los pasajeros",
+    "El peso de los pasajeros únicamente",
+    "Evaluar el efecto de los pasajeros en el vuelo y la decisión"
+   ],
+   "correct": 3,
+   "why": "Los pasajeros pueden ser un recurso o una fuente de presión y distracción.",
+   "whyNot": [
+    "No es solo contar.",
+    "No es solo una comunicación.",
+    "El peso se incluye en Plane/Plan, pero no es toda la P.",
+    null
+   ],
+   "ref": "FAA Risk Management Handbook"
+  },
+  {
+   "id": "040.16.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "El uso disciplinado de la lista de chequeo supone:",
+   "options": [
+    "Hacerla de memoria cuando se conoce bien",
+    "Leer cada punto y comprobarlo, y reiniciarla tras una interrupción",
+    "Hacerla solo en el primer vuelo del día",
+    "Saltar los pasos que parecen obvios"
+   ],
+   "correct": 1,
+   "why": "La disciplina es lo que la convierte en defensa eficaz.",
+   "whyNot": [
+    "Se omiten pasos críticos.",
+    null,
+    "Hay que hacerla en cada fase.",
+    "Los pasos obvios son los que se olvidan."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.16.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una amenaza bien gestionada:",
+   "options": [
+    "Siempre produce un error",
+    "No llega a producir un error",
+    "Es imposible de gestionar",
+    "Se convierte en accidente"
+   ],
+   "correct": 1,
+   "why": "Si la anticipas y la manejas, el efecto no se transmite al siguiente nivel.",
+   "whyNot": [
+    "La gestión la contiene.",
+    null,
+    "Las amenazas pueden gestionarse.",
+    "El accidente es el último eslabón."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.16.010",
+   "type": "concepto",
+   "level": 3,
+   "q": "Vas a mitad de ruta y un viento en cara mayor del previsto hace que ya no llegues con la reserva final. ¿Qué es el viento en el modelo TEM y qué contramedida es válida?",
+   "options": [
+    "Un error; continuar y confiar en que el viento cambie",
+    "Un estado no deseado; ignorarlo",
+    "Una contramedida; reducir la velocidad",
+    "Una amenaza; reevaluar y desviarte a un aeródromo con combustible antes de perder el margen"
+   ],
+   "correct": 3,
+   "why": "El viento es una amenaza externa; el margen y la alternativa permiten gestionarla.",
+   "whyNot": [
+    "Continuar no es una contramedida y agrava el estado no deseado.",
+    "El viento no es un estado de la aeronave.",
+    "El viento no es una acción del piloto.",
+    null
+   ],
+   "ref": "ICAO Doc 9683"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.040.16.01",
+   "front": "TEM",
+   "back": "Amenazas (externas), errores (del piloto) y estados no deseados de la aeronave (situación con márgenes reducidos)"
+  },
+  {
+   "id": "c.040.16.02",
+   "front": "Prioridades en emergencia",
+   "back": "Pilotar, navegar, comunicar"
+  },
+  {
+   "id": "c.040.16.03",
+   "front": "Cinco P",
+   "back": "Plan, Plane, Pilot, Passengers, Programming"
+  }
+ ]
+}

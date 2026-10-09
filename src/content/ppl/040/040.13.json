@@ -1,0 +1,337 @@
+{
+ "lesson": {
+  "title": "Conciencia situacional y comunicación",
+  "summary": "Los tres niveles de la conciencia situacional, cómo se pierde y cómo se recupera, el proceso de comunicación, sus barreras y el briefing.",
+  "objectives": [
+   "Describir los tres niveles de la conciencia situacional (percibir, comprender, anticipar)",
+   "Reconocer las señales de pérdida de conciencia situacional",
+   "Explicar el proceso de comunicación y sus barreras",
+   "Aplicar la colación y la comunicación asertiva",
+   "Preparar un briefing de salida y de pasajeros"
+  ],
+  "sections": [
+   {
+    "title": "Conciencia situacional: tres niveles",
+    "text": [
+     "La **conciencia situacional** es saber qué está pasando a tu alrededor, qué significa y qué es probable que ocurra a continuación. Para un piloto privado incluye: la posición y la actitud del avión, la altitud y el terreno, el combustible y el tiempo restantes, el tiempo meteorológico, el espacio aéreo y el tráfico, el estado de los sistemas, tu propio estado y el de los pasajeros. Según Endsley tiene tres niveles que se construyen uno sobre otro, como muestra la tabla. Una buena conciencia situacional permite **adelantarse** a los acontecimientos; una mala te hace **reaccionar** a ellos cuando ya es tarde."
+    ],
+    "table": {
+     "caption": "Niveles de la conciencia situacional",
+     "head": [
+      "Nivel",
+      "Qué es",
+      "Ejemplo"
+     ],
+     "rows": [
+      [
+       "1. Percibir",
+       "Captar los datos de la situación",
+       "Ves que el combustible del depósito izquierdo baja, que las nubes se acercan al relieve"
+      ],
+      [
+       "2. Comprender",
+       "Entender qué significan los datos para tus objetivos",
+       "Entiendes que, con ese consumo, no llegarás con la reserva final"
+      ],
+      [
+       "3. Anticipar (proyectar)",
+       "Prever lo que ocurrirá en los próximos minutos",
+       "Prevés que tendrás que desviarte a un aeródromo antes de las nubes y repostar"
+      ]
+     ],
+     "src": "Endsley"
+    }
+   },
+   {
+    "title": "Cómo se pierde y cómo se recupera",
+    "text": [
+     "La conciencia situacional se pierde sin avisar. Las **causas** habituales son: sobrecarga de trabajo o, al contrario, aburrimiento y rutina; **distracciones** y interrupciones; fatiga, estrés y falta de experiencia; **fijación** en un problema; **expectativas** erróneas («siempre es así»); información ambigua o mal comunicada; y falta de preparación del vuelo.",
+     "Hay **señales de alarma** de que se está perdiendo: confusión o incertidumbre sobre dónde estás o qué ocurre; **ambigüedad** (dos fuentes que no coinciden); fijación en un detalle; apartarse del plan o de los procedimientos sin motivo; dejar de comprobar instrumentos; sensación de que «algo no cuadra»; comunicaciones que no se entienden; y no saber cuánto combustible queda. Al notar cualquiera de ellas, hay que **parar, comprobar y reevaluar**: pilotar el avión primero, volver a una situación segura (nivelar, ganar altura si hay margen), confirmar la posición con todas las fuentes (mapa, GPS, radioayudas, referencias exteriores), y pedir ayuda al ATC si hace falta («Estoy inseguro de mi posición»)."
+    ]
+   },
+   {
+    "title": "La comunicación",
+    "text": [
+     "La comunicación es un **proceso** con un emisor, un mensaje, un canal y un receptor, más la **retroalimentación** que cierra el ciclo y comprueba que el mensaje se ha entendido igual que se ha enviado. En aviación se comunica de forma **verbal** (radio, briefing, comunicación con los pasajeros) y **no verbal** (gestos, tono de voz, expresión, postura, señales luminosas, señales de mano en tierra). El tono y el lenguaje corporal pueden decir más que las palabras.",
+     "Las **barreras** que deforman el mensaje son: el ruido (cabina, radio con interferencias), el uso de jerga o lenguaje poco estándar, los acentos y el idioma, la rapidez y la falta de pausas, las **expectativas** (se oye lo que se espera), el estrés y la fatiga, la diferencia de autoridad o experiencia (el alumno que no se atreve a corregir al instructor, el pasajero que no dice lo que ve) y las suposiciones («seguro que lo sabe»)."
+    ]
+   },
+   {
+    "title": "Colación y comunicación asertiva",
+    "text": [
+     "La defensa principal es la **colación** (readback): repetir lo esencial de lo que se ha recibido (autorizaciones, rumbos, niveles, ajustes de altímetro, frecuencias) para que el emisor confirme que se ha entendido. Se usa **fraseología estándar** y, si hay dudas, se pide que repitan («Repita») sin vergüenza. Un mensaje no entendido y no corregido es una condición latente.",
+     "La **comunicación asertiva** consiste en expresar con claridad y respeto lo que se percibe y lo que se cree que hay que hacer, sin agresividad ni sumisión: **plantear la duda, proponer una solución y pedir confirmación** («Veo nubes bajas delante; propongo desviarnos al aeródromo de Y. ¿Estás de acuerdo?»). Es la base de la seguridad cuando hay más de una persona a bordo, aunque sea un pasajero que avisa de algo."
+    ],
+    "links": [
+     {
+      "label": "Fraseología ES/EN y simulador de radio",
+      "href": "#/licencias/fraseologia"
+     }
+    ]
+   },
+   {
+    "title": "El briefing",
+    "text": [
+     "El **briefing** es una comunicación preparada que fija el plan antes de ejecutarlo y evita improvisar con prisa. Se hace **antes de cada fase importante**: salida (despegue), llegada o aproximación y, cuando hay amenazas especiales, en ruta. Un briefing de salida incluye: pista y viento, configuración y velocidades, **qué harás si falla el motor** en la carrera de despegue y tras el despegue (altitud de decisión), la ruta de salida y las comunicaciones, y las amenazas del día (tráfico, terreno, tiempo). Un briefing de llegada incluye el aeródromo, el circuito, la pista prevista y la alternativa y el plan de motor y al aire.",
+     "El **briefing a los pasajeros** es parte de las obligaciones del comandante: cinturones y arneses, apertura y cierre de puertas, salidas de emergencia, silencio durante las fases críticas, qué hacer en un aterrizaje de emergencia, no tocar los mandos y cómo avisar de cualquier problema (NCO.OP.130). Hablarles por radio con claridad, pedirles que avisen de tráfico y de lo que vean, y tratarlos como parte del equipo mejora la seguridad."
+    ],
+    "verify": true
+   }
+  ],
+  "numbers": [
+   "Tres niveles: percibir, comprender y anticipar",
+   "Pérdida de conciencia situacional: confusión, ambigüedad, fijación, desvío del plan",
+   "Comunicación: emisor, mensaje, canal, receptor y retroalimentación",
+   "Colación para confirmar autorizaciones",
+   "Briefing: antes de cada fase crítica; incluye fallo de motor y amenazas"
+  ],
+  "traps": [
+   "El nivel 3 (anticipar) es el que más se pierde bajo carga de trabajo.",
+   "La retroalimentación (colación) es la parte que cierra el ciclo de comunicación; sin ella no hay seguridad.",
+   "La asertividad no es agresividad: es plantear dudas con claridad y respeto.",
+   "La comunicación no verbal también cuenta: tono y gestos.",
+   "Las expectativas hacen oír lo que se espera, no lo que se dice."
+  ],
+  "sources": [
+   {
+    "title": "Endsley, M. R., Toward a theory of situation awareness (1995); SKYbrary, Situational Awareness",
+    "url": "https://skybrary.aero/articles/situational-awareness"
+   },
+   {
+    "title": "NCO.OP.130, Passenger briefing (Reglamento (UE) 965/2012)",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules"
+   }
+  ],
+  "id": "040.13",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "040.13.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "¿Cuáles son los tres niveles de la conciencia situacional?",
+   "options": [
+    "Ver, oír y sentir",
+    "Percibir, comprender y anticipar",
+    "Planificar, ejecutar y evaluar",
+    "Detectar, decidir y actuar"
+   ],
+   "correct": 1,
+   "why": "Primero se captan los datos, luego se entienden y por último se proyecta lo que ocurrirá.",
+   "whyNot": [
+    "No es el modelo de los niveles.",
+    null,
+    "Son pasos de un proceso distinto.",
+    "Es el proceso de decisión, no de conciencia."
+   ],
+   "ref": "Endsley"
+  },
+  {
+   "id": "040.13.002",
+   "type": "concepto",
+   "level": 2,
+   "q": "Notar que el combustible baja es el nivel:",
+   "options": [
+    "2: comprender",
+    "3: anticipar",
+    "0: ninguno",
+    "1: percibir"
+   ],
+   "correct": 3,
+   "why": "Es captar el dato; comprender sería interpretar su efecto.",
+   "whyNot": [
+    "Comprender es entender lo que implica.",
+    "Anticipar es prever lo que ocurrirá.",
+    "Es un dato percibido.",
+    null
+   ],
+   "ref": "Endsley"
+  },
+  {
+   "id": "040.13.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "Prever que con ese consumo no llegarás y tendrás que desviarte es el nivel:",
+   "options": [
+    "3: anticipar",
+    "1: percibir",
+    "2: comprender",
+    "No es conciencia situacional"
+   ],
+   "correct": 0,
+   "why": "Es proyectar el futuro a partir de lo comprendido.",
+   "whyNot": [
+    null,
+    "Percibir es captar datos.",
+    "Comprender es entender lo que significan.",
+    "Es justamente conciencia situacional."
+   ],
+   "ref": "Endsley"
+  },
+  {
+   "id": "040.13.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Cuál es una señal de pérdida de la conciencia situacional?",
+   "options": [
+    "Revisar el plan con frecuencia",
+    "Comprobar los instrumentos con regularidad",
+    "Dos fuentes de información que no coinciden y no se resuelven",
+    "Hablar con el controlador"
+   ],
+   "correct": 2,
+   "why": "La ambigüedad sin resolver indica que el modelo mental no es fiable.",
+   "whyNot": [
+    "Revisar el plan la mantiene.",
+    "Es una buena práctica.",
+    null,
+    "Es una buena práctica."
+   ],
+   "ref": "SKYbrary"
+  },
+  {
+   "id": "040.13.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "Si dudas de tu posición, lo mejor es:",
+   "options": [
+    "Seguir con el rumbo y esperar a ver algo conocido",
+    "Descender rápido para ver mejor",
+    "Volver a una situación segura, confirmar la posición con todas las fuentes y pedir ayuda si hace falta",
+    "Apagar la radio para concentrarte"
+   ],
+   "correct": 2,
+   "why": "Se estabiliza el avión y se reconstruye la situación sin prisa.",
+   "whyNot": [
+    "Puede aumentar la desorientación.",
+    "Descender sin saber la posición agrava el riesgo.",
+    null,
+    "La radio es una fuente de ayuda."
+   ],
+   "ref": "SKYbrary"
+  },
+  {
+   "id": "040.13.006",
+   "type": "concepto",
+   "level": 1,
+   "q": "En el proceso de comunicación, la retroalimentación:",
+   "options": [
+    "Confirma que el mensaje se ha entendido como se envió",
+    "Aumenta el ruido",
+    "Es opcional siempre",
+    "Sustituye al mensaje"
+   ],
+   "correct": 0,
+   "why": "Cierra el ciclo y detecta malentendidos, como en una colación.",
+   "whyNot": [
+    null,
+    "No es ruido.",
+    "En mensajes importantes es esencial.",
+    "No sustituye al mensaje."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.13.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una barrera típica de la comunicación es:",
+   "options": [
+    "Usar fraseología estándar",
+    "Hablar despacio",
+    "Pedir que repitan",
+    "La expectativa de oír lo habitual"
+   ],
+   "correct": 3,
+   "why": "Se oye lo que se espera, no lo que se dice.",
+   "whyNot": [
+    "Reduce los malentendidos.",
+    "Ayuda a entender.",
+    "Es una buena práctica.",
+    null
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.13.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "La comunicación asertiva consiste en:",
+   "options": [
+    "Callar para evitar conflictos",
+    "Plantear la duda con claridad y respeto y proponer una alternativa",
+    "Imponer la opinión con autoridad",
+    "Discutir por radio"
+   ],
+   "correct": 1,
+   "why": "Es expresar lo que se percibe sin agresividad ni sumisión.",
+   "whyNot": [
+    "Eso es sumisión.",
+    null,
+    "Eso es agresividad.",
+    "La radio no es el sitio para discutir."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.13.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "El briefing de salida debe incluir:",
+   "options": [
+    "Solo la hora de llegada",
+    "Qué hacer si falla el motor en el despegue y las amenazas del día",
+    "La lista de pasajeros",
+    "El precio del combustible"
+   ],
+   "correct": 1,
+   "why": "Un briefing prepara las acciones ante lo que puede fallar.",
+   "whyNot": [
+    "Es insuficiente.",
+    null,
+    "No es lo esencial.",
+    "No es relevante para la seguridad del despegue."
+   ],
+   "ref": "NCO.OP.130; prácticas de CRM"
+  },
+  {
+   "id": "040.13.010",
+   "type": "regla",
+   "level": 2,
+   "q": "¿Quién es responsable de informar a los pasajeros sobre la seguridad antes del vuelo?",
+   "options": [
+    "El controlador",
+    "El personal de handling",
+    "Nadie, es voluntario",
+    "El piloto al mando"
+   ],
+   "correct": 3,
+   "why": "El comandante debe asegurarse de que los pasajeros reciban el briefing de seguridad.",
+   "whyNot": [
+    "El ATC no tiene esa función.",
+    "No sustituye al comandante.",
+    "Es una obligación del comandante.",
+    null
+   ],
+   "ref": "NCO.OP.130"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.040.13.01",
+   "front": "Niveles de conciencia situacional",
+   "back": "1 percibir, 2 comprender, 3 anticipar"
+  },
+  {
+   "id": "c.040.13.02",
+   "front": "Señales de pérdida de conciencia situacional",
+   "back": "Confusión, ambigüedad, fijación, desvío del plan sin motivo"
+  },
+  {
+   "id": "c.040.13.03",
+   "front": "Colación",
+   "back": "Repetir lo esencial confirma que el mensaje se ha entendido; es la retroalimentación del ciclo de comunicación"
+  }
+ ]
+}

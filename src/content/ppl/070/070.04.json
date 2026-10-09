@@ -1,0 +1,441 @@
+{
+  "lesson": {
+    "id": "070.04",
+    "title": "Incursiones en pista",
+    "summary": "Qué es una incursión en pista y por qué es uno de los mayores riesgos en tierra: marcas, letreros y luces de los puntos de espera, puntos conflictivos, colación de autorizaciones y buenas prácticas de rodaje.",
+    "objectives": [
+      "Definir incursión en pista y sus causas más frecuentes",
+      "Interpretar marcas, letreros y luces de un punto de espera de pista",
+      "Colacionar correctamente las autorizaciones que afectan a una pista",
+      "Aplicar buenas prácticas de rodaje y actuar ante la duda"
+    ],
+    "sections": [
+      {
+        "title": "Qué es una incursión en pista",
+        "text": [
+          "Una **incursión en pista** (*runway incursion*) es cualquier presencia **no autorizada** de una aeronave, un vehículo o una persona en el **área protegida** de la superficie designada para el aterrizaje y el despegue. No hace falta que haya otro avión: basta con que estés donde no debes. Las consecuencias pueden ser una colisión en tierra, el accidente más grave de la aviación general en aeródromos con tráfico.",
+          "Las causas más frecuentes son humanas: **mala comunicación** (autorización mal entendida o no colacionada), **pérdida de conciencia de la situación** (no saber en qué punto del aeródromo estás), indicativos parecidos, aeródromos con trazado complicado, mala visibilidad, distracciones en cabina (leer la lista, mirar la carta o el móvil) y prisa. La prevención combina preparación, técnica de radio y disciplina."
+        ]
+      },
+      {
+        "title": "Punto de espera: marcas",
+        "text": [
+          "El **punto de espera de pista** es el lugar de una calle de rodaje donde debes parar antes de entrar en la pista, salvo que tengas autorización. Su marca tiene **cuatro líneas amarillas**: dos continuas y dos discontinuas. Las **continuas** están del lado donde esperas (el lado del que vienes) y las **discontinuas**, del lado de la pista. La regla práctica: **si tienes delante líneas continuas, no las cruces sin autorización**; al **salir** de la pista, cuando las cruzas por las discontinuas, estás liberando la zona protegida.",
+          "Esta es la marca del **patrón A**, la habitual. Existe el **patrón B** (varias líneas a lo ancho, para pistas de aproximación de precisión CAT II y III) y un **punto de espera intermedio** (una línea discontinua), que sirve para esperar tráfico en cruces de calles de rodaje y no corresponde a una pista."
+        ],
+        "figure": "svg:070-punto-espera",
+        "caption": "Punto de espera de pista, patrón A: líneas continuas del lado de espera, discontinuas del lado de la pista, letreros y barra de parada."
+      },
+      {
+        "title": "Letreros y luces",
+        "bullets": [
+          "**Letrero de instrucción obligatoria:** inscripción blanca sobre fondo rojo (por ejemplo, «27-09»). Indica el punto de espera de pista. **No lo pases sin autorización.**",
+          "**Letreros de información** (negro sobre amarillo): ubicación (la calle de rodaje en que estás), dirección (hacia dónde va cada calle) y destino. Aprende a leerlos antes de rodar.",
+          "**Barra de parada** (*stop bar*): fila de luces **rojas** a lo ancho de la calle de rodaje en el punto de espera. **Si está encendida, no cruces**, aunque creas que te han autorizado: avisa a la dependencia ATS. Se apaga cuando te autorizan a entrar.",
+          "**Luces de guarda de pista** (*runway guard lights*): luces **amarillas intermitentes alternas** a ambos lados de la calle (o en el pavimento) en el punto de espera; avisan de que te acercas a una pista.",
+          "**Luces de eje de calle de rodaje:** verdes; las amarillas y verdes alternas marcan la zona sensible del ILS o la salida de la pista."
+        ]
+      },
+      {
+        "title": "Puntos conflictivos (hot spots)",
+        "text": [
+          "Un **punto conflictivo** (*hot spot*) es un lugar de la zona de movimiento donde ha habido colisiones o incursiones, o donde el riesgo es alto por su trazado: un cruce de calles que lleva a la pista, una calle que se bifurca justo antes del punto de espera, una zona sin referencias claras. Se indican en las **cartas de aeródromo** del AIP (AD 2) y en las de movimientos en tierra. Antes de cada vuelo, localízalos en la carta del aeródromo de salida y de llegada y repasa por dónde vas a rodar."
+        ],
+        "note": {
+          "kind": "es",
+          "text": "En España, la prevención de incursiones en pista sigue el plan europeo (EAPPRI) y los aeródromos publican sus puntos conflictivos en el AIP y en la información de aeródromo. Consulta los de tu aeródromo."
+        },
+        "verify": true
+      },
+      {
+        "title": "Autorizaciones y colación",
+        "text": [
+          "Las autorizaciones que afectan a una pista son las más críticas: **entrar, alinearse, despegar, aterrizar, cruzar, mantener antes de la pista y rodar por ella**. La norma exige **colacionarlas** (repetirlas exactamente) con tu indicativo (SERA.14050), de manera que el controlador pueda corregir cualquier error. **Nunca asumas** una autorización por inercia ni cruces una pista porque «ya lo hiciste otras veces».",
+          "**«Alinee y espere»** (*line up and wait*) significa que puedes entrar en la pista y alinearte, **pero no despegar**: la autorización de despegue es otro mensaje («autorizado a despegar»). **«Mantenga antes de la pista»** (*hold short*) obliga a parar en el punto de espera. Con la fraseología del aeródromo, repásala en el simulador de fraseología."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Buenas prácticas de rodaje",
+        "bullets": [
+          "**Prepara el rodaje en tierra:** estudia la carta, localiza los puntos de espera, los letreros y los hot spots.",
+          "**Cabina «estéril» al rodar:** nada de listas largas, móviles o ajustes de aviónica en movimiento. Mira fuera, con una mano en los frenos.",
+          "**Escucha la frecuencia:** conocer el tráfico te ayuda a notar a otro avión en la pista.",
+          "**Antes de entrar o cruzar**, mira a ambos lados de la pista, incluso con autorización, y comprueba que está libre. Enciende las luces (estroboscópicas y de aterrizaje) al entrar y alinearte.",
+          "**Duda, para:** si no sabes dónde estás, **detente** donde no estorbes, informa a la dependencia ATS y pide **rodaje progresivo** (*progressive taxi*).",
+          "**Cuidado con los indicativos parecidos** y con la prisa: no aceptes una autorización con la que no estés seguro.",
+          "**Responsabilidad:** el piloto al mando sigue siendo responsable de evitar colisiones aunque haya autorización del control."
+        ]
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Cruzar la línea continua sin autorización «porque la pista parecía libre».",
+          "No colacionar una autorización de entrada o de cruce.",
+          "Confundir «alinee y espere» con una autorización de despegue.",
+          "Cruzar una barra de parada encendida porque ya se tenía autorización.",
+          "Mirar la tablilla o la carta mientras se ruede por un cruce complicado."
+        ]
+      }
+    ],
+    "numbers": [
+      "Incursión en pista: presencia no autorizada en el área protegida de la pista",
+      "Marca patrón A: dos líneas continuas del lado de espera y dos discontinuas del lado de la pista",
+      "Letrero de instrucción obligatoria: blanco sobre rojo; de información: negro sobre amarillo",
+      "Barra de parada: luces rojas; encendida, no se cruza",
+      "Luces de guarda de pista: amarillas intermitentes alternas",
+      "Colación obligatoria de autorizaciones de pista (SERA.14050)"
+    ],
+    "traps": [
+      "«Alinee y espere» no autoriza a despegar.",
+      "Las líneas continuas son del lado de espera, no de la pista.",
+      "Una barra de parada encendida no se cruza aunque te hayan autorizado.",
+      "Con autorización del control, el piloto sigue siendo responsable de mirar fuera."
+    ],
+    "spain": [
+      "Consulta en el AIP (AD 2) la carta de movimientos en tierra y los puntos conflictivos de tu aeródromo."
+    ],
+    "sources": [
+      {
+        "title": "Reglamento (UE) 923/2012 (SERA), Easy Access Rules",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "ENAIRE, AIP España (GEN 1.7, ENR 1.10, AD)",
+        "url": "https://aip.enaire.es"
+      },
+      {
+        "title": "OACI, Manual de prevención de incursiones en pista (Doc 9870)"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "070.04.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "Se considera incursión en pista:",
+      "options": [
+        "Solo una colisión entre dos aviones",
+        "Cualquier presencia no autorizada de aeronave, vehículo o persona en el área protegida de la pista",
+        "Solo la entrada de un vehículo",
+        "Solo un despegue sin autorización"
+      ],
+      "correct": 1,
+      "why": "La definición incluye aeronaves, vehículos y personas, sin necesidad de que haya colisión.",
+      "whyNot": [
+        "No hace falta que haya colisión.",
+        null,
+        "Incluye aeronaves y personas.",
+        "No es solo un despegue."
+      ],
+      "ref": "OACI Doc 9870"
+    },
+    {
+      "id": "070.04.002",
+      "type": "regla",
+      "level": 1,
+      "q": "En la marca de punto de espera del patrón A, las líneas continuas están:",
+      "options": [
+        "Del lado de la pista",
+        "En el eje de la calle de rodaje",
+        "No hay líneas continuas",
+        "Del lado donde espera el avión (lado de espera)"
+      ],
+      "correct": 3,
+      "why": "Las continuas están del lado de espera; las discontinuas, del lado de la pista.",
+      "whyNot": [
+        "Es el lado de las discontinuas.",
+        "No es el eje.",
+        "Sí hay continuas.",
+        null
+      ],
+      "ref": "Anexo 14; AIP"
+    },
+    {
+      "id": "070.04.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si al rodar hacia la pista tienes delante las líneas continuas del punto de espera y no tienes autorización:",
+      "options": [
+        "Debes detenerte antes de las líneas continuas",
+        "Puedes cruzar si ves que la pista está libre",
+        "Puedes cruzar siempre de día",
+        "Debes cruzar rápidamente"
+      ],
+      "correct": 0,
+      "why": "Sin autorización, no se cruza el punto de espera de pista.",
+      "whyNot": [
+        null,
+        "La visión de pista libre no basta.",
+        "No depende de la hora.",
+        "Cruzar sin autorización es una incursión."
+      ],
+      "ref": "Anexo 14; SERA.14050"
+    },
+    {
+      "id": "070.04.004",
+      "type": "concepto",
+      "level": 1,
+      "q": "Un letrero con inscripción blanca sobre fondo rojo indica:",
+      "options": [
+        "Una información de destino",
+        "Una calle de salida rápida",
+        "Una instrucción obligatoria, como el punto de espera de pista",
+        "Una zona de estacionamiento"
+      ],
+      "correct": 2,
+      "why": "Los letreros de instrucción obligatoria son blancos sobre rojo.",
+      "whyNot": [
+        "Eso es negro sobre amarillo.",
+        "Es otro tipo de letrero.",
+        null,
+        "No es el significado."
+      ],
+      "ref": "Anexo 14"
+    },
+    {
+      "id": "070.04.005",
+      "type": "concepto",
+      "level": 1,
+      "q": "Un letrero negro sobre amarillo es:",
+      "options": [
+        "De instrucción obligatoria",
+        "De prohibido el paso",
+        "De pista cerrada",
+        "De información: ubicación, dirección o destino"
+      ],
+      "correct": 3,
+      "why": "Los letreros de información son negros sobre amarillo.",
+      "whyNot": [
+        "Eso es blanco sobre rojo.",
+        "No es el significado.",
+        "Un cierre se indica con otra señal.",
+        null
+      ],
+      "ref": "Anexo 14"
+    },
+    {
+      "id": "070.04.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una barra de parada encendida significa que:",
+      "options": [
+        "No debes cruzar, aunque creas que tienes autorización; avisa a la dependencia ATS",
+        "Puedes cruzar con precaución",
+        "Debes aumentar el rodaje",
+        "La pista está activa con tráfico de salida"
+      ],
+      "correct": 0,
+      "why": "La barra de parada encendida prohíbe cruzar.",
+      "whyNot": [
+        null,
+        "No se cruza.",
+        "No se aumenta la velocidad.",
+        "No indica tráfico concreto."
+      ],
+      "ref": "Anexo 14; SERA"
+    },
+    {
+      "id": "070.04.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "Las luces de guarda de pista son:",
+      "options": [
+        "Rojas fijas",
+        "Verdes fijas",
+        "Amarillas, intermitentes y alternas",
+        "Blancas intermitentes"
+      ],
+      "correct": 2,
+      "why": "Avisan de la proximidad de una pista activa.",
+      "whyNot": [
+        "Las rojas fijas son la barra de parada.",
+        "Las verdes son de eje de calle.",
+        null,
+        "No son blancas."
+      ],
+      "ref": "Anexo 14"
+    },
+    {
+      "id": "070.04.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un punto conflictivo (hot spot) es:",
+      "options": [
+        "Un punto de espera obligatorio",
+        "Un lugar de la zona de movimiento con riesgo de colisión o de incursión",
+        "Una zona de calentamiento de motores",
+        "El punto donde se mide el viento"
+      ],
+      "correct": 1,
+      "why": "Se indica en las cartas de aeródromo para extremar la atención.",
+      "whyNot": [
+        "No es un punto de espera.",
+        null,
+        "No es un lugar de calentamiento.",
+        "No es una medida meteorológica."
+      ],
+      "ref": "OACI Doc 9870; AIP"
+    },
+    {
+      "id": "070.04.009",
+      "type": "regla",
+      "level": 2,
+      "q": "Entre las autorizaciones que se deben colacionar están:",
+      "options": [
+        "Solo la de despegue",
+        "Entrar, aterrizar, despegar, mantener antes de, cruzar o rodar por la pista",
+        "Solo la de aterrizaje",
+        "Ninguna, si la comunicación es clara"
+      ],
+      "correct": 1,
+      "why": "SERA.14050 exige colacionar las autorizaciones que afectan a una pista.",
+      "whyNot": [
+        "No es solo esa.",
+        null,
+        "No es solo esa.",
+        "Hay que colacionar siempre."
+      ],
+      "ref": "SERA.14050"
+    },
+    {
+      "id": "070.04.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "«Line up and wait» («alinee y espere») significa:",
+      "options": [
+        "Estás autorizado a despegar",
+        "Debes mantenerte fuera de la pista",
+        "Puedes cruzar la pista",
+        "Puedes entrar en la pista y alinearte, pero no despegar"
+      ],
+      "correct": 3,
+      "why": "La autorización de despegue es otra frase.",
+      "whyNot": [
+        "No es la de despegue.",
+        "Eso es «hold short».",
+        "Eso es «cruce».",
+        null
+      ],
+      "ref": "Fraseología; SERA.14"
+    },
+    {
+      "id": "070.04.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si no sabes dónde estás en el aeródromo mientras ruedas, debes:",
+      "options": [
+        "Detenerte donde no estorbes, informar al ATS y pedir rodaje progresivo",
+        "Seguir rodando para encontrarte",
+        "Cruzar la pista más cercana",
+        "Apagar la radio"
+      ],
+      "correct": 0,
+      "why": "Ante la duda, detente y pregunta.",
+      "whyNot": [
+        null,
+        "Aumenta el riesgo de incursión.",
+        "No hay que cruzar sin autorización.",
+        "Hay que comunicar con el ATS."
+      ],
+      "ref": "Buenas prácticas"
+    },
+    {
+      "id": "070.04.012",
+      "type": "concepto",
+      "level": 1,
+      "q": "Durante el rodaje, una buena práctica es:",
+      "options": [
+        "Revisar la carta de ruta en la tablilla",
+        "Leer mensajes en el móvil",
+        "Mantener la cabina estéril, mirando fuera",
+        "Hacer las listas largas en movimiento"
+      ],
+      "correct": 2,
+      "why": "La atención fuera evita las incursiones.",
+      "whyNot": [
+        "Distrae.",
+        "Distrae.",
+        null,
+        "Se hacen detenido."
+      ],
+      "ref": "Buenas prácticas"
+    },
+    {
+      "id": "070.04.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "Tienes autorización de cruzar una pista. Antes de cruzar debes:",
+      "options": [
+        "Cruzar sin mirar, ya que hay autorización",
+        "Pedir otra autorización siempre",
+        "Aumentar la potencia",
+        "Mirar a ambos lados y comprobar que está libre"
+      ],
+      "correct": 3,
+      "why": "La autorización no sustituye al ver y evitar.",
+      "whyNot": [
+        "No basta con la autorización.",
+        "No es necesario pedirla de nuevo.",
+        "No hace falta más potencia.",
+        null
+      ],
+      "ref": "Buenas prácticas"
+    },
+    {
+      "id": "070.04.014",
+      "type": "concepto",
+      "level": 3,
+      "q": "Un punto de espera intermedio (línea única discontinua) se usa para:",
+      "options": [
+        "Esperar tráfico en cruces de calles de rodaje, sin corresponder a una pista",
+        "Esperar antes de una pista de precisión",
+        "Esperar antes del despegue",
+        "Indicar la zona de estacionamiento"
+      ],
+      "correct": 0,
+      "why": "Los puntos de espera intermedios sirven en cruces de calles.",
+      "whyNot": [
+        null,
+        "La pista de precisión usa el patrón B.",
+        "El despegue se espera en el punto de espera de pista.",
+        "No es una zona de estacionamiento."
+      ],
+      "ref": "Anexo 14"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.070.04.01",
+      "front": "Marca de punto de espera (patrón A)",
+      "back": "Dos líneas continuas del lado de espera y dos discontinuas del lado de la pista; no se cruzan las continuas sin autorización"
+    },
+    {
+      "id": "c.070.04.02",
+      "front": "Letreros y luces del punto de espera",
+      "back": "Instrucción obligatoria: blanco sobre rojo. Información: negro sobre amarillo. Barra de parada roja: no se cruza. Guarda de pista: amarillas intermitentes alternas"
+    },
+    {
+      "id": "c.070.04.03",
+      "front": "Alinee y espere",
+      "back": "Permite entrar en la pista y alinearse, pero no despegar"
+    },
+    {
+      "id": "c.070.04.04",
+      "front": "Ante la duda al rodar",
+      "back": "Detenerse, informar al ATS y pedir rodaje progresivo"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 324">
+  <title>Curva de Yerkes-Dodson: el rendimiento aumenta con la activación hasta un óptimo y luego cae; el óptimo es menor en tareas complejas</title>
+  <defs><marker id="040-yerkes-flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker></defs>
+  <rect x="60" y="30" width="150" height="220" class="soft"/>
+  <rect x="210" y="30" width="230" height="220" class="ok"/>
+  <rect x="440" y="30" width="150" height="220" class="wa"/>
+  <line x1="60" y1="250" x2="600" y2="250" class="ln" marker-end="url(#040-yerkes-flecha)"/>
+  <line x1="60" y1="250" x2="60" y2="20" class="ln" marker-end="url(#040-yerkes-flecha)"/>
+  <path d="M60 240 C130 240 180 80 270 76 C360 80 420 210 590 240" class="ac-ln thick" fill="none"/>
+  <path d="M60 244 C150 244 250 66 350 62 C450 66 520 190 590 236" class="ok-ln thick dash" fill="none"/>
+  <text x="135" y="52" class="tx b" font-size="12" text-anchor="middle">Infracarga</text>
+  <text x="135" y="68" class="tx2" font-size="11" text-anchor="middle">aburrimiento</text>
+  <text x="325" y="52" class="txo b" font-size="12" text-anchor="middle">Zona óptima</text>
+  <text x="515" y="52" class="txw b" font-size="12" text-anchor="middle">Sobrecarga</text>
+  <text x="515" y="68" class="tx2" font-size="11" text-anchor="middle">estrés, tunelización</text>
+  <text x="320" y="274" class="tx" text-anchor="middle">Nivel de activación (estrés)</text>
+  <text x="24" y="140" class="tx" text-anchor="middle" transform="rotate(-90 24 140)">Rendimiento</text>
+  <line x1="190" y1="291" x2="220" y2="291" class="ac-ln thick"/><text x="226" y="295" class="tx2" font-size="11">tarea compleja</text>
+  <line x1="350" y1="291" x2="380" y2="291" class="ok-ln thick dash"/><text x="386" y="295" class="tx2" font-size="11">tarea simple</text>
+  <text x="320" y="314" class="tx2" text-anchor="middle" font-size="11">En tareas complejas el óptimo se alcanza con menos activación y la caída llega antes</text>
+</svg>
