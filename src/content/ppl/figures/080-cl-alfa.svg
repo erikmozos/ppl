@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <title>Curva del coeficiente de sustentación frente al ángulo de ataque, con el ángulo crítico y el CL máximo</title>
+  <defs>
+    <marker id="080-cl-alfa-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+  </defs>
+  <line x1="70" y1="300" x2="615" y2="300" class="ln" marker-end="url(#080-cl-alfa-k)"/>
+  <line x1="160" y1="375" x2="160" y2="40" class="ln" marker-end="url(#080-cl-alfa-k)"/>
+  <text x="168" y="46" class="tx b">CL</text>
+  <text x="620" y="322" class="tx b" text-anchor="end">α (°)</text>
+  <line x1="156" y1="225" x2="164" y2="225" class="ln"/>
+  <line x1="156" y1="150" x2="164" y2="150" class="ln"/>
+  <line x1="156" y1="75" x2="164" y2="75" class="ln"/>
+  <text x="150" y="229" class="tx2" text-anchor="end">0,5</text>
+  <text x="150" y="154" class="tx2" text-anchor="end">1,0</text>
+  <text x="150" y="79" class="tx2" text-anchor="end">1,5</text>
+  <line x1="80" y1="296" x2="80" y2="304" class="ln"/>
+  <line x1="240" y1="296" x2="240" y2="304" class="ln"/>
+  <line x1="320" y1="296" x2="320" y2="304" class="ln"/>
+  <line x1="400" y1="296" x2="400" y2="304" class="ln"/>
+  <line x1="480" y1="296" x2="480" y2="304" class="ln"/>
+  <line x1="560" y1="296" x2="560" y2="304" class="ln"/>
+  <text x="80" y="316" class="tx2" text-anchor="middle">−4</text>
+  <text x="166" y="316" class="tx2">0</text>
+  <text x="240" y="316" class="tx2" text-anchor="middle">4</text>
+  <text x="320" y="316" class="tx2" text-anchor="middle">8</text>
+  <text x="400" y="316" class="tx2" text-anchor="middle">12</text>
+  <text x="480" y="316" class="tx2" text-anchor="middle">16</text>
+  <text x="560" y="316" class="tx2" text-anchor="middle">20</text>
+  <line x1="160" y1="75" x2="480" y2="75" class="ln2 dash"/>
+  <line x1="480" y1="75" x2="480" y2="300" class="ln2 dash"/>
+  <path d="M80 360 L340 165 C375 140 430 98 460 97 C480 97 495 115 510 132 C525 148 545 160 560 165" class="ln dash" fill="none"/>
+  <path d="M80 330 L320 150 C350 128 420 76 480 75 C505 75 515 95 530 110 C550 128 575 142 600 147" class="ac-ln thick" fill="none"/>
+  <circle cx="480" cy="75" r="5" class="wa-fill"/>
+  <circle cx="120" cy="300" r="4.5" class="ac-fill"/>
+  <text x="112" y="288" class="txa b" text-anchor="end">−2°</text>
+  <text x="300" y="66" class="tx">CL máx ≈ 1,5</text>
+  <text x="488" y="292" class="txw b">α crítico ≈ 16°</text>
+  <text x="172" y="160" class="txa b">perfil curvado</text>
+  <text x="372" y="222" class="tx">perfil simétrico</text>
+  <text x="372" y="238" class="tx2">(pasa por el origen)</text>
+  <text x="222" y="270" class="tx2">tramo lineal: CL crece con α</text>
+  <text x="562" y="200" class="txw b" text-anchor="middle">pérdida</text>
+  <text x="562" y="216" class="tx2" text-anchor="middle">CL cae, CD se dispara</text>
+  <text x="630" y="352" class="tx2" text-anchor="end">Valores de ejemplo de un perfil de avioneta. El punto azul</text>
+  <text x="630" y="370" class="tx2" text-anchor="end">marca el ángulo de sustentación nula del perfil curvado (−2°).</text>
+</svg>

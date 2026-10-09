@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260">
+  <title>Perfil alar: cuerda, línea media y ángulo de ataque</title>
+  <defs><marker id="ej-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker></defs>
+  <rect x="0" y="0" width="640" height="260" class="sky"/>
+  <path d="M120 140 C150 92 260 82 380 100 C450 110 500 124 540 140 C470 146 380 150 280 152 C200 153 140 150 120 140 Z" class="ac"/>
+  <line x1="120" y1="140" x2="540" y2="140" class="ln2 dash"/>
+  <path d="M120 140 C220 118 400 118 540 140" class="ac-ln"/>
+  <line x1="30" y1="182" x2="118" y2="146" class="ln" marker-end="url(#ej-arr)"/>
+  <text x="330" y="176" class="tx2" text-anchor="middle">cuerda</text>
+  <text x="330" y="112" class="txa b" text-anchor="middle">línea media (curvatura)</text>
+  <text x="40" y="206" class="tx">viento relativo</text>
+  <text x="130" y="168" class="txw b">α</text>
+</svg>

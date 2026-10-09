@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react'
 import {
-  createUser, deleteUserData, getUserProgress, listUsers, resetPassword, resetUserProgress, updateUser,
+  createUser, deleteUserData, getUserProgress, getUserStudy, listUsers, resetPassword, resetUserProgress, updateUser,
   useSession, type Role, type UserRow,
 } from '../firebase'
 import { MODULES } from '../data/licenses/modules'
+import { PPL_SYLLABUS, blockById, syllabusByCode } from '../data/licenses/ppl-syllabus'
+import { blockStats, readiness } from '../study/exam'
+import { REASONS } from '../components/Practice'
+import type { Study } from '../store'
 
 const fmt = (t?: { toDate: () => Date }) => (t ? t.toDate().toLocaleString('es-ES', { dateStyle: 'short', timeStyle: 'short' }) : '—')
 const genPassword = () => Array.from(crypto.getRandomValues(new Uint8Array(9)), b => 'abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789'[b % 55]).join('')
@@ -38,9 +42,9 @@ export function Admin() {
           <h1>Usuarios y progreso</h1>
           <p className="muted">Da de alta alumnos, cambia roles, desactiva cuentas y revisa el progreso de cada uno.</p>
         </div>
-        <button className="btn ghost" onClick={reload}>↻ Actualizar</button>
+        <button className="btn ghost" onClick={reload}>Actualizar</button>
       </div>
-      {err && <div className="card note-card">⚠️ {err}</div>}
+      {err && <div className="card note-card">{err}</div>}
 
       <div className="kpis">
         <div className="card kpi"><b>{rows?.length ?? '…'}</b><span>usuarios</span></div>
@@ -59,7 +63,7 @@ export function Admin() {
           {!rows ? <p className="muted">Cargando…</p> : (
             <div className="table-wrap">
               <table className="table admin-table">
-                <thead><tr><th>Usuario</th><th>Rol</th><th>Estado</th><th>Repasos</th><th>Nota media</th><th>Tests ✓</th><th>Última conexión</th><th></th></tr></thead>
+                <thead><tr><th>Usuario</th><th>Rol</th><th>Estado</th><th>PPL: respuestas</th><th>Acierto</th><th>Simulacros</th><th>Cabina</th><th>Última conexión</th><th></th></tr></thead>
                 <tbody>
                   {list.map(r => (
                     <tr key={r.uid} className={r.disabled ? 'off' : ''}>
@@ -70,9 +74,10 @@ export function Admin() {
                         </select>
                       </td>
                       <td>{r.disabled ? <span className="bad-text small">Desactivado</span> : <span className="ok-text small">Activo</span>}</td>
-                      <td>{r.summary?.attempts ?? 0}</td>
-                      <td>{r.summary?.attempts ? `${r.summary.avgScore}%` : '—'}</td>
-                      <td>{r.summary?.quizPassed ?? 0}</td>
+                      <td>{r.study?.answered ?? 0}</td>
+                      <td>{r.study?.answered ? `${r.study.accuracy} %` : '—'}</td>
+                      <td>{r.study?.exams ?? 0}</td>
+                      <td>{r.summary?.attempts ? `${r.summary.attempts} · ${r.summary.avgScore} %` : '—'}</td>
                       <td className="small">{fmt(r.lastSeen)}</td>
                       <td><button className="btn sm" onClick={() => setDetail(r)}>Ver</button></td>
                     </tr>
@@ -112,7 +117,7 @@ function CreateUser({ onCreated }: { onCreated: () => void }) {
 
   return (
     <form className="card form admin-create" onSubmit={submit}>
-      <h3>➕ Nuevo usuario</h3>
+      <h3>Nuevo usuario</h3>
       <label className="field">Nombre<input value={name} onChange={e => setName(e.target.value)} placeholder="Nombre y apellidos" /></label>
       <label className="field">Email<input type="email" value={email} onChange={e => setEmail(e.target.value)} required /></label>
       <label className="field">Contraseña inicial
@@ -125,7 +130,7 @@ function CreateUser({ onCreated }: { onCreated: () => void }) {
       {err && <p className="bad-text small">{err}</p>}
       {done && (
         <div className="card ok-box">
-          <b>✓ Usuario creado</b>
+          <b>Usuario creado</b>
           <p className="small">Email: <code>{done.email}</code><br />Contraseña: <code>{done.password}</code></p>
           <button type="button" className="btn ghost sm" onClick={() => navigator.clipboard?.writeText(`Acceso a Cockpit Flows\nEmail: ${done.email}\nContraseña: ${done.password}\n${location.origin}`)}>Copiar datos de acceso</button>
         </div>
@@ -139,7 +144,9 @@ function UserDetail({ row, self, onClose, onChanged }: { row: UserRow; self: boo
   const [prog, setProg] = useState<Record<string, any> | null | undefined>(undefined)
   const [name, setName] = useState(row.name)
   const [msg, setMsg] = useState('')
+  const [study, setStudy] = useState<Study | null | undefined>(undefined)
   useEffect(() => { getUserProgress(row.uid).then(setProg).catch(() => setProg(null)) }, [row.uid])
+  useEffect(() => { getUserStudy(row.uid).then(d => setStudy(d?.study ?? null)).catch(() => setStudy(null)) }, [row.uid])
   const data = prog?.data ?? {}
   const quiz = Object.entries((data.quiz ?? {}) as Record<string, { best: number; last: number; n: number }>)
   const attempts = (data.attempts ?? []) as { id: string; date: number; ac: string; flowName: string; score: number }[]
@@ -161,7 +168,10 @@ function UserDetail({ row, self, onClose, onChanged }: { row: UserRow; self: boo
           <button className="btn sm" onClick={() => act(() => updateUser(row.uid, { name }), 'Nombre guardado')}>Guardar</button>
         </div>
 
-        <h3>Progreso</h3>
+        <h3>Estudio del PPL</h3>
+        {study === undefined ? <p className="muted">Cargando…</p> : !study ? <p className="muted">Todavía no ha respondido preguntas del PPL.</p> : <StudyDetail st={study} />}
+
+        <h3>Cabinas y tests</h3>
         {prog === undefined ? <p className="muted">Cargando…</p> : !prog ? <p className="muted">Todavía no tiene progreso guardado.</p> : (
           <>
             <div className="kpis small-kpis">
@@ -187,14 +197,43 @@ function UserDetail({ row, self, onClose, onChanged }: { row: UserRow; self: boo
 
         <h3>Acciones</h3>
         <div className="row gap wrap-row">
-          <button className="btn sm" onClick={() => act(() => resetPassword(row.email), 'Email de nueva contraseña enviado')}>📧 Enviar cambio de contraseña</button>
-          {!self && <button className="btn sm" onClick={() => act(() => updateUser(row.uid, { disabled: !row.disabled }).then(onChanged), row.disabled ? 'Activado' : 'Desactivado')}>{row.disabled ? '✅ Activar cuenta' : '⛔ Desactivar cuenta'}</button>}
-          <button className="btn ghost sm" onClick={() => act(() => resetUserProgress(row.uid).then(() => setProg(null)), 'Progreso borrado', '¿Borrar todo el progreso de este usuario?')}>🧹 Borrar progreso</button>
-          {!self && <button className="btn ghost sm danger" onClick={() => act(() => deleteUserData(row.uid).then(onChanged), 'Usuario eliminado', '¿Eliminar el perfil y el progreso? (La cuenta de acceso se borra después desde la consola de Firebase › Authentication.)')}>🗑️ Eliminar usuario</button>}
+          <button className="btn sm" onClick={() => act(() => resetPassword(row.email), 'Email de nueva contraseña enviado')}>Enviar cambio de contraseña</button>
+          {!self && <button className="btn sm" onClick={() => act(() => updateUser(row.uid, { disabled: !row.disabled }).then(onChanged), row.disabled ? 'Activado' : 'Desactivado')}>{row.disabled ? 'Activar cuenta' : 'Desactivar cuenta'}</button>}
+          <button className="btn ghost sm" onClick={() => act(() => resetUserProgress(row.uid).then(() => setProg(null)), 'Progreso borrado', '¿Borrar todo el progreso de este usuario?')}>Borrar progreso</button>
+          {!self && <button className="btn ghost sm danger" onClick={() => act(() => deleteUserData(row.uid).then(onChanged), 'Usuario eliminado', '¿Eliminar el perfil y el progreso? (La cuenta de acceso se borra después desde la consola de Firebase › Authentication.)')}>Eliminar usuario</button>}
         </div>
         {msg && <p className="small">{msg}</p>}
         <p className="small muted">Desactivar impide entrar en la app. Para borrar del todo la cuenta de acceso, usa la consola de Firebase › Authentication: el SDK web no puede hacerlo sin un servidor.</p>
       </div>
     </div>
+  )
+}
+
+/** Dónde falla el alumno: acierto por materia, bloques más flojos, simulacros y motivos de fallo */
+function StudyDetail({ st }: { st: Study }) {
+  const stats = blockStats(st)
+  const weak = Object.entries(stats).filter(([, [, n]]) => n >= 5).sort((a, b) => a[1][0] / a[1][1] - b[1][0] / b[1][1]).slice(0, 8)
+  const reasons: Record<string, number> = {}
+  for (const q of Object.values(st.q)) if (q.r && !q.last) reasons[q.r] = (reasons[q.r] ?? 0) + 1
+  return (
+    <>
+      <div className="table-wrap">
+        <table className="table">
+          <thead><tr><th>Materia</th><th>Respuestas</th><th>Acierto</th><th>Últimos simulacros</th><th>Lista</th></tr></thead>
+          <tbody>{PPL_SYLLABUS.map(sub => {
+            const r = readiness(sub, st, stats)
+            return <tr key={sub.code}><td><span className="mono muted">{sub.code}</span> {sub.name}</td><td>{r.answered}</td><td>{r.accuracy === null ? '—' : `${r.accuracy} %`}</td><td>{r.runs.map(x => `${x.pct} %`).join(' · ') || '—'}</td><td>{r.ready ? <span className="ok-text">Sí</span> : <span className="muted">No</span>}</td></tr>
+          })}</tbody>
+        </table>
+      </div>
+      {weak.length > 0 && (
+        <>
+          <p className="small muted">Bloques más flojos (con 5 respuestas o más)</p>
+          <ul className="mini-list">{weak.map(([b, [ok, n]]) => <li key={b}><span className="mono">{b}</span> {blockById(b)?.title ?? ''} · {syllabusByCode(b.slice(0, 3))?.name}: <b>{Math.round((ok / n) * 100)} %</b> de {n}</li>)}</ul>
+        </>
+      )}
+      {Object.keys(reasons).length > 0 && <p className="small">Motivos de fallo: {REASONS.map(([k, l]) => `${l} ${reasons[k] ?? 0}`).join(' · ')}</p>}
+      <p className="small muted">{Object.keys(st.lessons).length} lecciones leídas · {st.exams.length} simulacros · {Object.values(st.srs).filter(v => v.due <= Date.now()).length} piezas pendientes de repaso</p>
+    </>
   )
 }

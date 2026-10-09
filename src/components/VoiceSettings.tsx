@@ -8,7 +8,7 @@ export function VoiceSettings() {
   return (
     <div className="card voice">
       <div className="row between">
-        <h3>🔊 Voz narradora</h3>
+        <h3>Voz narradora</h3>
         <label className="check"><input type="checkbox" checked={sp.prefs.enabled} onChange={e => setPrefs({ enabled: e.target.checked })} /> Activa</label>
       </div>
       <label className="field">Motor de voz

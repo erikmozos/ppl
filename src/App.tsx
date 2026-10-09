@@ -6,7 +6,11 @@ import { Fleet } from './pages/Fleet'
 import { Licenses } from './pages/Licenses'
 import { ModulePage } from './pages/ModulePage'
 import { SubjectPage } from './pages/SubjectPage'
-import { moduleById } from './data/licenses/modules'
+import { moduleById, ppl } from './data/licenses/modules'
+import { syllabusById } from './data/licenses/ppl-syllabus'
+import { PplHome } from './pages/ppl/PplHome'
+import { PplSubject } from './pages/ppl/PplSubject'
+import { PplLesson } from './pages/ppl/PplLesson'
 import { AircraftPage } from './pages/AircraftPage'
 import { FlowPage } from './pages/FlowPage'
 import { Editor } from './pages/Editor'
@@ -18,6 +22,7 @@ import { DISCLAIMER } from './data/h'
 import { Login } from './pages/Login'
 import { Admin } from './pages/Admin'
 import { firebaseEnabled, logout, useSession } from './firebase'
+import { Icon } from './components/Icon'
 
 export function App() {
   const { parts, query } = useRoute()
@@ -38,6 +43,13 @@ export function App() {
     else if (parts[2] === 'spots') page = <SpotEditor ac={ac} />
     else if (parts[2] === 'edit') page = <Editor key={parts[3] ?? 'new'} ac={ac} flowId={parts[3]} hotspots={query.get('tab') === 'hotspots'} />
     else page = <AircraftPage ac={ac} tab={query.get('tab') ?? 'guide'} />
+  } else if (parts[0] === 'licencias' && parts[1] === 'ppl') {
+    const syl = parts[2] ? syllabusById(parts[2]) : undefined
+    const tab = query.get('tab') ?? ''
+    if (!parts[2]) page = <PplHome m={ppl} tab={tab} />
+    else if (!syl) page = <NotFound />
+    else if (parts[3]) page = <PplLesson key={parts[3]} syl={syl} id={parts[3]} tab={tab} />
+    else page = <PplSubject key={syl.id} syl={syl} sub={ppl.subjects?.find(x => x.id === syl.id)} tab={tab} />
   } else if (parts[0] === 'licencias') {
     const m = parts[1] ? moduleById(parts[1]) : undefined
     const sub = m && parts[2] ? m.subjects?.find(x => x.id === parts[2]) : undefined
@@ -55,20 +67,22 @@ export function App() {
   return (
     <>
       <header className="top">
-        <a href="#/" className="brand">
-          <svg viewBox="0 0 64 64" width="28" height="28" aria-hidden><rect width="64" height="64" rx="14" fill="#0f1720" stroke="#1e293b" /><path d="M14 46 C24 44 22 22 32 22 S44 40 50 18" fill="none" stroke="#38bdf8" strokeWidth="5" strokeLinecap="round" /><circle cx="14" cy="46" r="5" fill="#f59e0b" /><circle cx="50" cy="18" r="5" fill="#f59e0b" /></svg>
-          <span>Cockpit<b>Flows</b></span>
+        <a href="#/" className="brand" aria-label="Cockpit Flows, inicio">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden><rect x="1" y="1" width="22" height="22" rx="5" className="brand-box" /><path d="M5 16c3-1 4-8 7-8s4 5 7-1" fill="none" className="brand-line" strokeWidth="2" strokeLinecap="round" /></svg>
+          <span>Cockpit Flows</span>
         </a>
-        <button className="menu-btn" aria-label="Menú" aria-expanded={menu} onClick={() => setMenu(m => !m)}>{menu ? '✕' : '☰'}</button>
+        <button className="menu-btn" aria-label="Menú" aria-expanded={menu} onClick={() => setMenu(m => !m)}><Icon name={menu ? 'x' : 'menu'} size={20} /></button>
         <nav className={menu ? 'open' : ''}>
-          <a href="#/licencias">Licencias</a>
-          <a href="#/cockpits">Cockpits</a>
-          <a href="#/guia">Guía</a>
-          <a href="#/progress">Progreso</a>
-          {session.profile?.role === 'admin' && <a href="#/admin">Admin</a>}
+          {([['licencias/ppl', 'PPL'], ['licencias', 'Licencias'], ['cockpits', 'Cockpits'], ['progress', 'Progreso'], ['guia', 'Guía']] as const).map(([href, label]) => {
+            const on = href === 'licencias/ppl' ? parts[0] === 'licencias' && parts[1] === 'ppl' : href === 'licencias' ? parts[0] === 'licencias' && parts[1] !== 'ppl' : parts[0] === href
+            return <a key={href} href={`#/${href}`} className={on ? 'on' : ''} aria-current={on ? 'page' : undefined}>{label}</a>
+          })}
+          {session.profile?.role === 'admin' && <a href="#/admin" className={parts[0] === 'admin' ? 'on' : ''}>Admin</a>}
+          <ThemeToggle />
           {session.user && (
             <span className="user-chip" title={session.user.email ?? ''}>
-              {session.syncing ? '⟳' : '☁️'} {session.profile?.name?.split(' ')[0] ?? session.user.email}
+              <span className={`sync-dot ${session.syncing ? 'busy' : ''}`} title={session.syncing ? 'Sincronizando' : 'Progreso guardado en la nube'} />
+              {session.profile?.name?.split(' ')[0] ?? session.user.email}
               <button className="btn ghost sm" onClick={() => logout()}>Salir</button>
             </span>
           )}
@@ -88,5 +102,22 @@ function NotFound() {
       <h1>No encontrado</h1>
       <p><a href="#/">Volver al inicio</a></p>
     </div>
+  )
+}
+
+/** Tema claro, oscuro o el del sistema (se recuerda en este navegador) */
+function ThemeToggle() {
+  const [theme, setTheme] = useState<string | null>(() => { try { return localStorage.getItem('cf.theme') } catch { return null } })
+  useEffect(() => {
+    const el = document.documentElement
+    if (theme) el.dataset.theme = theme
+    else delete el.dataset.theme
+    try { if (theme) localStorage.setItem('cf.theme', theme); else localStorage.removeItem('cf.theme') } catch { /* sin almacenamiento */ }
+  }, [theme])
+  const dark = theme ? theme === 'dark' : window.matchMedia?.('(prefers-color-scheme: dark)').matches
+  return (
+    <button className="icon-btn theme-btn" onClick={() => setTheme(dark ? 'light' : 'dark')} aria-label={dark ? 'Tema claro' : 'Tema oscuro'} title={dark ? 'Tema claro' : 'Tema oscuro'}>
+      <Icon name={dark ? 'sun' : 'moon'} />
+    </button>
   )
 }

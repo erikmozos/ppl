@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340">
+  <title>Corte vertical de un frente frío: cuña fría de pendiente fuerte, cumulonimbo con yunque, chubascos y aire inestable detrás</title>
+  <defs>
+    <marker id="050-ff-flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+    <marker id="050-ff-flecha-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker>
+  </defs>
+  <rect x="0" y="0" width="640" height="340" class="sky"/>
+  <rect x="0" y="270" width="640" height="70" class="ground"/>
+  <!-- cumulonimbo con yunque -->
+  <path d="M312 232 C296 214 304 190 322 184 C312 160 330 136 352 136 C350 110 368 90 386 88 L384 62 C360 58 340 52 330 44 C380 36 520 36 590 50 C560 58 470 62 426 64 L420 90 C440 96 452 118 446 140 C470 146 476 176 458 190 C474 204 466 228 448 232 Z" class="soft"/>
+  <!-- cúmulos detrás -->
+  <path d="M40 214 C34 200 46 190 58 192 C62 178 82 176 90 188 C102 184 112 196 106 214 Z" class="soft"/>
+  <path d="M150 204 C144 188 158 176 172 180 C178 164 202 164 208 178 C222 176 230 190 222 204 Z" class="soft"/>
+  <!-- estratos delante -->
+  <path d="M486 216 C500 208 540 206 570 208 C600 206 626 210 636 216 C620 224 580 226 550 224 C520 226 496 224 486 216 Z" class="soft"/>
+  <!-- chubascos -->
+  <g class="ac-ln">
+    <line x1="330" y1="236" x2="324" y2="268"/><line x1="346" y1="236" x2="340" y2="268"/>
+    <line x1="362" y1="236" x2="356" y2="268"/><line x1="378" y1="236" x2="372" y2="268"/>
+    <line x1="394" y1="236" x2="388" y2="268"/><line x1="410" y1="236" x2="404" y2="268"/>
+    <line x1="426" y1="236" x2="420" y2="268"/>
+    <line x1="64" y1="218" x2="60" y2="234"/><line x1="76" y1="218" x2="72" y2="234"/>
+    <line x1="176" y1="208" x2="172" y2="224"/><line x1="190" y1="208" x2="186" y2="224"/>
+  </g>
+  <!-- superficie frontal -->
+  <path d="M380 270 C330 230 290 170 262 70" class="ac-ln thick"/>
+  <!-- empuje del aire frío -->
+  <path d="M60 262 L290 262" class="ac-ln dash" marker-end="url(#050-ff-flecha-a)"/>
+  <!-- movimiento -->
+  <line x1="40" y1="30" x2="150" y2="30" class="ln" marker-end="url(#050-ff-flecha)"/>
+  <text x="40" y="20" class="tx2">movimiento del frente</text>
+  <!-- rótulos -->
+  <text x="384" y="170" class="tx b" text-anchor="middle">Cb</text>
+  <text x="520" y="30" class="tx2" text-anchor="middle">yunque</text>
+  <text x="40" y="244" class="txa b">aire frío</text>
+  <text x="520" y="120" class="txw b" text-anchor="middle">aire cálido</text>
+  <text x="520" y="138" class="tx2" text-anchor="middle">forzado a subir deprisa</text>
+  <text x="150" y="110" class="txa">superficie frontal</text>
+  <text x="150" y="126" class="txa">fuerte (≈ 1:50 a 1:100)</text>
+  <text x="60" y="160" class="tx2">Cu, chubascos y</text>
+  <text x="60" y="174" class="tx2">buena visibilidad</text>
+  <text x="560" y="244" class="tx2" text-anchor="middle">St, Sc, llovizna</text>
+  <text x="436" y="264" class="tx2">chubascos fuertes, granizo</text>
+  <!-- leyenda de cambios -->
+  <text x="20" y="296" class="tx b">Detrás</text>
+  <text x="20" y="314" class="tx2">viento NW racheado, T y Td bajan,</text>
+  <text x="20" y="330" class="tx2">la presión sube, visibilidad buena</text>
+  <text x="620" y="296" class="tx b" text-anchor="end">Delante</text>
+  <text x="620" y="314" class="tx2" text-anchor="end">viento SW, la presión baja,</text>
+  <text x="620" y="330" class="tx2" text-anchor="end">sector cálido húmedo</text>
+</svg>

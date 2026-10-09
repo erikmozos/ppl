@@ -51,7 +51,7 @@ export const phraseology: Module = {
       },
       bullets: [
         'En España se transmiten **dígito a dígito** los distintivos, rumbos, pistas, viento, reglajes de altímetro y frecuencias, salvo centenas y millares redondos (AIP GEN 1.7).',
-        'Frecuencias: 6 dígitos con canalización de 8,33 kHz; 5 con 25 kHz. Se dice «decimal», no «coma» ni «punto».',
+        'Frecuencias (SERA.14035): se dicen los 6 dígitos, salvo que el 5.º y el 6.º sean cero; entonces solo los 4 primeros. 118,100 → «uno uno ocho decimal uno»; 118,105 → «uno uno ocho decimal uno cero cinco»; 121,750 → «uno dos uno decimal siete cinco cero». Se dice «decimal», no «coma» ni «punto».',
       ],
     },
     {
@@ -130,7 +130,7 @@ export const phraseology: Module = {
         'Llamada inicial: **a quién** → **quién soy** → (saludo). Ejemplo: «Villanueva Torre, EC-ABC, buenos días».',
         'Después: tipo de aeronave, posición, altitud, información ATIS, intenciones.',
         'Informe de posición: distintivo, posición, hora, altitud o nivel, siguiente punto y hora estimada.',
-        'El distintivo abreviado (primera letra y las dos últimas de la matrícula) solo se usa después de que lo haga el controlador.',
+        'El distintivo abreviado (el primer carácter y al menos los dos últimos de la matrícula: EC-ABC → E-BC) solo se usa después de que lo haga el controlador.',
         '«Take-off» (despegue) solo se dice en la autorización de despegue o al cancelarla; en el resto se habla de «departure» (salida).',
       ],
     },
@@ -163,8 +163,8 @@ export const phraseology: Module = {
         { who: 'P', es: 'Pista 13, autorizado a despegar, notificaré abandonando por Sierra, EC-ABC.', en: 'Runway 13, cleared for take-off, wilco, EC-ABC.', note: 'La autorización de despegue se colaciona con la pista. La instrucción de notificar se acepta con «cumpliré/wilco» o repitiéndola.',
           wrong: [{ es: 'Autorizado, EC-ABC.', en: 'Cleared, EC-ABC.', why: 'Hay que colacionar la pista y la autorización completa.' }, { es: 'Afirmativo, despegando, EC-ABC.', en: 'Affirmative, taking off, EC-ABC.', why: '«Afirmativo/affirmative» no es fraseología OACI y falta la pista.' }] },
         { who: 'P', es: 'EC-ABC, abandonando el circuito por Sierra, 2000 pies.', en: 'EC-ABC, leaving the circuit via Sierra, 2000 feet.' },
-        { who: 'ATC', es: 'EC-ABC, contacte con Madrid Información en 124 decimal 700.', en: 'EC-ABC, contact Madrid Information on 124 decimal 700.' },
-        { who: 'P', es: '124 decimal 700, EC-ABC.', en: '124 decimal 700, EC-ABC.', note: 'Los cambios de frecuencia se colacionan.' },
+        { who: 'ATC', es: 'EC-ABC, contacte con Madrid Información en 124 decimal 7.', en: 'EC-ABC, contact Madrid Information on 124 decimal 7.' },
+        { who: 'P', es: '124 decimal 7, EC-ABC.', en: '124 decimal 7, EC-ABC.', note: 'Los cambios de frecuencia se colacionan. 124,700 se dice «uno dos cuatro decimal siete»: como el 5.º y el 6.º dígitos son cero, solo se dicen los 4 primeros.' },
         { who: 'P', es: 'Madrid Información, EC-ABC, buenos días.', en: 'Madrid Information, EC-ABC, good morning.' },
         { who: 'ATC', es: 'EC-ABC, Madrid Información, adelante.', en: 'EC-ABC, Madrid Information, pass your message.' },
         { who: 'P', es: 'EC-ABC, Cessna 172, VFR de Villanueva a Villanueva, 10 millas al norte de Villanueva, 3500 pies, QNH 1015, solicito información de vuelo.', en: 'EC-ABC, Cessna 172, VFR from Villanueva to Villanueva, 10 miles north of Villanueva, 3500 feet, QNH 1015, request flight information service.', note: 'Tipo, reglas de vuelo, origen y destino, posición, altitud y lo que solicitas.',

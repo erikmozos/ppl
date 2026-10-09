@@ -1,0 +1,236 @@
+{
+  "lesson": {
+    "id": "050.11",
+    "title": "Precipitación",
+    "summary": "Cómo crecen las gotas hasta caer (proceso de cristales de hielo y coalescencia), los tipos de precipitación con su código y la nube que los produce, y qué supone cada uno para el vuelo.",
+    "objectives": [
+      "Explicar el proceso de Bergeron-Findeisen y el de coalescencia",
+      "Relacionar llovizna, lluvia, nieve, granizo, granizo blando y precipitación engelante con la nube que los produce",
+      "Distinguir precipitación continua, intermitente y en chubascos, y leer su intensidad en un METAR",
+      "Explicar cómo se forma la lluvia engelante y qué hacer si la encuentras"
+    ],
+    "sections": [
+      {
+        "title": "Por qué no llueve de todas las nubes",
+        "text": [
+          "Una gotita de nube mide del orden de 0,01 a 0,02 mm. Es tan ligera que cualquier corriente ascendente la mantiene en el aire y, si cae, se evapora antes de recorrer unos metros bajo la base. Para que llegue al suelo tiene que crecer hasta medir 0,5 mm o más: su volumen debe multiplicarse alrededor de un millón de veces. La condensación sola es demasiado lenta para eso; hacen falta dos mecanismos más eficaces.",
+          "El **proceso de los cristales de hielo (Bergeron-Findeisen)** funciona en las nubes mixtas, donde conviven gotitas subfundidas (líquidas por debajo de 0 °C, algo posible hasta unos −40 °C) y cristales de hielo. La presión de vapor de saturación sobre el hielo es menor que sobre el agua líquida: el aire que está justo saturado respecto a las gotitas está sobresaturado respecto al hielo. Los cristales crecen así a costa de las gotitas, que se evaporan, y en poco tiempo pesan lo suficiente para caer como nieve. Si atraviesan el nivel de congelación (la isocero) se funden y llegan como lluvia. Es el mecanismo principal de la lluvia en latitudes medias, y por eso las nubes que precipitan con fuerza tienen cimas bien por debajo de 0 °C.",
+          "La **coalescencia (colisión y coalescencia)** actúa en nubes cálidas o en la parte cálida de una nube: las gotas algo mayores caen más deprisa, chocan con las pequeñas y se fusionan con ellas, y crecen cada vez más rápido. Es dominante en las nubes tropicales y marítimas, contribuye en cúmulos y cumulonimbos, y explica que un estrato sin hielo pueda dar llovizna."
+        ]
+      },
+      {
+        "title": "Tipos de precipitación y nube que los produce",
+        "text": [
+          "El tipo depende de la nube (estratiforme o convectiva), del tamaño de las gotas y del perfil de temperatura entre la nube y el suelo. La relación con la nube es pregunta fija del examen: llovizna de St, lluvia continua de Ns, chubascos de Cu y Cb, granizo de Cb."
+        ],
+        "table": {
+          "caption": "Precipitación, código y nube asociada",
+          "head": ["Tipo", "Código", "Cómo es", "Nube típica"],
+          "rows": [
+            ["Llovizna", "DZ", "Gotas muy pequeñas (menos de 0,5 mm) y muy numerosas; reduce mucho la visibilidad", "St (y Sc poco espesos)"],
+            ["Lluvia", "RA", "Gotas de 0,5 mm o más", "Ns y As (continua); Cu y Cb (chubascos, SHRA)"],
+            ["Nieve", "SN", "Cristales de hielo agregados en copos", "Ns, As, Sc; en chubascos (SHSN), Cu y Cb"],
+            ["Cinarra", "SG", "Granos de hielo muy pequeños y opacos; equivale a una llovizna sólida", "St"],
+            ["Hielo granulado", "PL", "Gotas que se congelan al caer por una capa bajo cero", "Ns, As (bajo una capa cálida)"],
+            ["Granizo blando o nieve granulada", "GS", "Bolitas blancas y blandas de menos de 5 mm", "Cu y Cb en aire frío"],
+            ["Granizo", "GR", "Piedras de hielo de 5 mm o más", "Cb"],
+            ["Llovizna y lluvia engelantes", "FZDZ, FZRA", "Gotas subfundidas que se congelan al impactar", "St (FZDZ); Ns bajo una inversión (FZRA)"]
+          ],
+          "src": "OACI Anexo 3, ap. 3; OMM, Atlas internacional de nubes"
+        }
+      },
+      {
+        "title": "Continua, intermitente o en chubascos",
+        "text": [
+          "Las **nubes estratiformes** (Ns, As, St) se forman por ascenso lento y extenso del aire, típicamente en un frente cálido. Dan **precipitación continua o intermitente**: empieza y termina de forma gradual, con intensidad bastante uniforme y durante horas, sobre zonas amplias, con techos bajos y mala visibilidad.",
+          "Las **nubes convectivas** (Cu congestus, Cb) se forman por ascensos fuertes y localizados en aire inestable. Dan **chubascos (SH)**: empiezan y acaban de golpe, cambian de intensidad en minutos, alternan con claros y suelen ir con rachas. Fuera del chubasco la visibilidad suele ser buena; dentro puede caer a pocos cientos de metros.",
+          "La intensidad se cifra con un signo delante: **«−» ligera, sin signo moderada, «+» fuerte**. Así, −RA es lluvia ligera, SHRA chubasco moderado de lluvia y +TSRAGR tormenta con lluvia fuerte y granizo. RE delante (RERA, RETS) indica tiempo reciente: ocurrió desde el informe anterior, pero no en el momento de la observación.",
+          "La **virga** son estelas de precipitación que se evaporan antes de llegar al suelo. Indica aire seco bajo la nube; al evaporarse, la precipitación enfría ese aire, que se vuelve más denso y puede caer con violencia: bajo virga de una nube convectiva puede haber reventones secos."
+        ],
+        "examples": [
+          {
+            "q": "Interpreta «VCSH» y «−SHSN» en un METAR.",
+            "a": "VCSH: chubascos en la vecindad, entre 8 y 16 km del aeródromo, no sobre él. −SHSN: chubascos ligeros de nieve sobre el aeródromo, de nube convectiva (Cu o Cb) en aire frío e inestable."
+          }
+        ]
+      },
+      {
+        "title": "Lluvia engelante y otros peligros",
+        "text": [
+          "La **lluvia engelante** necesita un perfil de temperatura muy concreto: una **capa cálida (por encima de 0 °C) en altura sobre una capa fría bajo cero junto al suelo**. Es el perfil de la cuña fría bajo un frente cálido o una oclusión en invierno. La nieve se funde en la capa cálida, la lluvia cae a la capa fría y se enfría por debajo de 0 °C sin congelarse; al tocar el avión o el suelo se congela de golpe y forma hielo claro muy deprisa. Si la capa fría es espesa, las gotas llegan a congelarse en el aire y caen como hielo granulado (PL): PL en superficie indica que hay lluvia engelante más arriba.",
+          "Para un avión ligero sin protección contra el hielo, la lluvia engelante es una emergencia: sal de inmediato por donde has venido o hacia donde sepas que no la hay. Buscar la capa cálida subiendo solo es una opción para aviones preparados y con información fiable del perfil de temperatura."
+        ],
+        "bullets": [
+          "Visibilidad: la nieve es lo que más la reduce, seguida de la llovizna y de la lluvia fuerte.",
+          "La lluvia fuerte deja el parabrisas casi opaco y aumenta el riesgo de hielo en el carburador por la humedad.",
+          "El granizo daña bordes de ataque, hélice y parabrisas; puede caer en aire claro bajo el yunque de un Cb.",
+          "La pista mojada o con nieve alarga el recorrido de aterrizaje y reduce la frenada.",
+          "Bajo un chubasco fuerte hay descendentes y viento racheado: no despegues ni aterrices debajo."
+        ]
+      }
+    ],
+    "numbers": [
+      "Gota de nube: 0,01–0,02 mm; gota de lluvia: 0,5 mm o más",
+      "Llovizna (DZ): gotas de menos de 0,5 mm, de St",
+      "Granizo (GR): 5 mm o más, de Cb; granizo blando (GS): menos de 5 mm",
+      "Gotas subfundidas: posibles entre 0 °C y unos −40 °C",
+      "Intensidad: «−» ligera, sin signo moderada, «+» fuerte",
+      "Lluvia engelante: capa cálida en altura sobre capa bajo cero en superficie"
+    ],
+    "traps": [
+      "La llovizna sale de estratos, no de nimboestratos ni de cumulonimbos.",
+      "La lluvia continua es de Ns; los chubascos, de Cu y Cb. SH en el código implica nube convectiva.",
+      "Sin signo delante, la intensidad es moderada, no ligera.",
+      "El proceso de Bergeron funciona porque la presión de vapor de saturación es menor sobre el hielo que sobre el agua, no al revés.",
+      "La lluvia engelante cae desde una capa cálida: si hace bajo cero en toda la columna, lo que cae es nieve."
+    ],
+    "sources": [
+      { "title": "OACI, Anexo 3, apéndice 3 (tiempo presente)" },
+      { "title": "OMM, Atlas internacional de nubes (hidrometeoros)", "url": "https://cloudatlas.wmo.int/en/home.html" },
+      { "title": "AEMET, Guía MET (AU-GUI-0102)", "url": "https://www.aemet.es/documentos/es/conocermas/aeronautica/AU-GUI-0102.pdf" },
+      { "title": "FAA-H-8083-28, Aviation Weather Handbook", "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook" }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "050.11.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La llovizna (DZ) procede típicamente de:",
+      "options": ["Cumulonimbos", "Nimboestratos", "Estratos", "Cirrostratos"],
+      "correct": 2,
+      "why": "La llovizna son gotas muy pequeñas y numerosas que caen de nubes bajas y poco espesas, sobre todo estratos (St), donde las gotas crecen poco.",
+      "whyNot": [
+        "Los Cb dan chubascos fuertes, granizo y tormenta.",
+        "Los Ns dan lluvia o nieve continua de gota mayor.",
+        null,
+        "Los Cs son nubes altas de hielo que no precipitan en superficie."
+      ],
+      "ref": "OMM, Atlas internacional de nubes"
+    },
+    {
+      "id": "050.11.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "El proceso de Bergeron-Findeisen hace crecer la precipitación porque:",
+      "options": [
+        "La presión de vapor de saturación es menor sobre el hielo que sobre el agua, y los cristales crecen a costa de las gotitas",
+        "Las gotas grandes caen más deprisa y capturan a las pequeñas por choque",
+        "El aire se calienta al subir y evapora las gotitas",
+        "Las gotitas subfundidas se congelan siempre a 0 °C"
+      ],
+      "correct": 0,
+      "why": "En una nube mixta, el aire saturado respecto al agua está sobresaturado respecto al hielo: el vapor se deposita en los cristales y las gotitas se evaporan para reponerlo. Los cristales engordan hasta caer.",
+      "whyNot": [
+        null,
+        "Eso es la coalescencia, el otro mecanismo.",
+        "El aire que sube se enfría, no se calienta.",
+        "Las gotitas pueden seguir líquidas hasta unos −40 °C; por eso hay nubes mixtas."
+      ],
+      "ref": "AEMET, apuntes de meteorología aeronáutica"
+    },
+    {
+      "id": "050.11.003",
+      "type": "regla",
+      "level": 1,
+      "q": "En los mensajes meteorológicos se cifra GR cuando las piedras de granizo miden:",
+      "options": ["Más de 1 mm", "5 mm o más", "Más de 2 cm", "Cualquier tamaño, si caen de un Cb"],
+      "correct": 1,
+      "why": "GR se usa cuando el diámetro de las mayores piedras es de 5 mm o más; por debajo se cifra GS (granizo blando o nieve granulada).",
+      "whyNot": [
+        "Con menos de 5 mm se cifra GS, no GR.",
+        null,
+        "No hace falta tanto; 2 cm ya es granizo grande.",
+        "El código depende del tamaño, no solo de la nube."
+      ],
+      "ref": "OACI Anexo 3, ap. 3, tabla A3-1"
+    },
+    {
+      "id": "050.11.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "La lluvia engelante (FZRA) se produce cuando:",
+      "options": [
+        "La temperatura está bajo cero en toda la columna, desde la nube hasta el suelo",
+        "Un cumulonimbo de verano produce granizo grande",
+        "La niebla se congela sobre la pista al amanecer",
+        "La lluvia cae desde una capa cálida en altura a una capa bajo cero junto al suelo"
+      ],
+      "correct": 3,
+      "why": "La lluvia se forma o se funde en la capa cálida, se subfunde al caer por la capa fría y se congela al impactar. Es el perfil de la cuña fría bajo un frente cálido u oclusión en invierno.",
+      "whyNot": [
+        "Con bajo cero en toda la columna cae nieve.",
+        "El granizo es hielo sólido, no lluvia subfundida.",
+        "Eso es niebla engelante (FZFG), no lluvia.",
+        null
+      ],
+      "ref": "FAA-H-8083-28; AEMET, apuntes"
+    },
+    {
+      "id": "050.11.005",
+      "type": "lectura",
+      "level": 2,
+      "q": "Según este METAR, ¿qué tipo de nube produce la precipitación?",
+      "data": "METAR LEBB 101030Z 31015G27KT 9999 -SHRA FEW020CB SCT025 13/08 Q1012",
+      "options": [
+        "Un nimboestrato extenso con lluvia continua",
+        "Nubes convectivas (Cu o Cb) con chubascos ligeros",
+        "Estratos bajos con llovizna",
+        "Altoestratos que anuncian un frente cálido"
+      ],
+      "correct": 1,
+      "why": "SH indica chubasco, es decir, precipitación de nube convectiva; además el METAR señala CB a 2000 ft. El «−» indica intensidad ligera. Viento racheado del noroeste y buena visibilidad: aire inestable tras un frente frío.",
+      "whyNot": [
+        "Un Ns da lluvia continua (RA sin SH) y techos bajos.",
+        null,
+        "Los St dan llovizna (DZ), no chubascos.",
+        "El As da lluvia continua débil o ninguna, no chubascos con CB."
+      ],
+      "ref": "OACI Anexo 3; AEMET Guía MET"
+    },
+    {
+      "id": "050.11.006",
+      "type": "regla",
+      "level": 1,
+      "q": "En un METAR, el grupo «RA» sin signo delante indica lluvia:",
+      "options": ["Moderada", "Ligera", "Fuerte", "Reciente"],
+      "correct": 0,
+      "why": "La intensidad se indica con «−» (ligera) o «+» (fuerte); sin signo es moderada.",
+      "whyNot": [
+        null,
+        "Ligera se cifra −RA.",
+        "Fuerte se cifra +RA.",
+        "La lluvia reciente se cifra RERA en la información suplementaria."
+      ],
+      "ref": "OACI Anexo 3, ap. 3, 4.4.2"
+    },
+    {
+      "id": "050.11.007",
+      "type": "concepto",
+      "level": 3,
+      "q": "Ves virga bajo la base alta de un cúmulo congestus en una tarde muy seca de verano. ¿Qué indica?",
+      "options": [
+        "Que la nube se está disipando y el aire será tranquilo",
+        "Que va a formarse niebla al anochecer",
+        "Lluvia engelante en altura",
+        "Aire seco bajo la nube y posibilidad de descendentes fuertes por evaporación"
+      ],
+      "correct": 3,
+      "why": "La precipitación se evapora antes de llegar al suelo porque el aire bajo la nube es seco. La evaporación enfría ese aire, que se hace más denso y puede bajar con violencia: es el escenario del reventón seco.",
+      "whyNot": [
+        "La virga no garantiza aire tranquilo; puede ir con descendentes peligrosas.",
+        "Con aire tan seco no hay niebla.",
+        "La lluvia engelante exige temperaturas bajo cero junto a la superficie, no una tarde de verano.",
+        null
+      ],
+      "ref": "FAA-H-8083-28, cap. 22"
+    }
+  ],
+  "cards": [
+    { "id": "c.050.11.01", "front": "Llovizna (DZ): tamaño y nube", "back": "Gotas de menos de 0,5 mm; de estratos (St)" },
+    { "id": "c.050.11.02", "front": "GR frente a GS", "back": "GR: granizo de 5 mm o más (Cb). GS: granizo blando de menos de 5 mm" },
+    { "id": "c.050.11.03", "front": "Proceso de Bergeron-Findeisen", "back": "En nubes mixtas, los cristales de hielo crecen a costa de las gotitas subfundidas (menor presión de vapor sobre el hielo)" },
+    { "id": "c.050.11.04", "front": "Perfil de la lluvia engelante", "back": "Capa cálida (sobre 0 °C) en altura encima de una capa bajo cero junto al suelo" }
+  ]
+}

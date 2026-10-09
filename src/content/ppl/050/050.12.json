@@ -1,0 +1,308 @@
+{
+  "lesson": {
+    "id": "050.12",
+    "title": "Masas de aire",
+    "summary": "Qué es una masa de aire, cómo se clasifica por su región de origen, cómo se modifica al desplazarse y qué tiempo traen las que llegan a España.",
+    "objectives": [
+      "Definir masa de aire y región de origen",
+      "Clasificar las masas por latitud (A, P, T) y por superficie (marítima o continental)",
+      "Predecir si una masa se estabiliza o se inestabiliza al moverse sobre una superficie más fría o más cálida",
+      "Reconocer las masas que llegan a España y el tiempo que traen para el vuelo VFR"
+    ],
+    "sections": [
+      {
+        "title": "Qué es una masa de aire",
+        "text": [
+          "Una masa de aire es un gran volumen de aire, de cientos a miles de kilómetros de extensión, cuya temperatura y humedad son bastante uniformes en horizontal a un mismo nivel. Las adquiere al permanecer días o semanas sobre una **región de origen**: una superficie extensa y homogénea (un océano, un gran continente, un casquete de hielo) donde el aire está casi quieto, lo que en la práctica significa un anticiclón persistente. Allí el aire se va pareciendo a la superficie: frío o cálido, seco o húmedo.",
+          "Cuando la circulación general la pone en movimiento, la masa lleva consigo esas propiedades, pero empieza a modificarse por la superficie que encuentra. El tiempo que trae depende tanto de su origen como de esa modificación. El límite entre dos masas distintas es un **frente**."
+        ]
+      },
+      {
+        "title": "Clasificación",
+        "text": [
+          "Se clasifican con dos letras. La mayúscula indica la latitud de origen y por tanto la temperatura: **A ártica (o antártica), P polar, T tropical y E ecuatorial**. La minúscula indica el tipo de superficie y por tanto la humedad: **m marítima (húmeda) y c continental (seca)**. Las combinaciones habituales son mA, cA, mP, cP, mT y cT.",
+          "A veces se añade una tercera letra que describe su relación con la superficie por la que pasa: **k** si la masa es más fría que la superficie (se calentará desde abajo) y **w** si es más cálida (se enfriará desde abajo). Esa letra adelanta su estabilidad."
+        ],
+        "table": {
+          "caption": "Masas de aire y sus regiones de origen",
+          "head": ["Masa", "Región de origen", "Propiedades en origen"],
+          "rows": [
+            ["Ártica marítima (mA)", "Océano Ártico, mares de Noruega y Groenlandia", "Muy fría y relativamente húmeda"],
+            ["Ártica o polar continental (cA, cP)", "Norte de Rusia, Siberia y Escandinavia en invierno", "Muy fría y seca, muy estable en origen"],
+            ["Polar marítima (mP)", "Atlántico Norte entre Terranova e Islandia", "Fresca y húmeda"],
+            ["Tropical marítima (mT)", "Atlántico subtropical, zona del anticiclón de las Azores", "Templada o cálida y muy húmeda"],
+            ["Tropical continental (cT)", "Norte de África (Sáhara)", "Cálida o muy cálida, seca, con polvo"]
+          ],
+          "src": "AEMET, apuntes de meteorología aeronáutica"
+        }
+      },
+      {
+        "title": "Cómo se modifica una masa al desplazarse",
+        "text": [
+          "La regla de oro es esta: **aire frío sobre una superficie más cálida se vuelve inestable; aire cálido sobre una superficie más fría se vuelve estable**. Cuando la superficie calienta la masa desde abajo, las capas bajas se calientan más que las altas, el gradiente vertical de temperatura aumenta y el aire tiende a subir: aparecen cúmulos y, si hay humedad y espesor, cumulonimbos con chubascos. La mezcla vertical limpia el aire y la visibilidad es buena fuera de la precipitación, pero hay turbulencia y rachas.",
+          "Cuando la superficie enfría la masa desde abajo, las capas bajas se enfrían, se forma una inversión y el aire queda estratificado: estratos, nieblas, llovizna, visibilidad mala (la contaminación y la humedad se quedan abajo) y aire en calma.",
+          "Además, al pasar sobre el mar una masa gana humedad y al pasar sobre tierra la pierde; al cruzar una cordillera, la ladera de sotavento recibe aire más seco y más cálido (efecto Foehn); y en un anticiclón la subsidencia la calienta y la seca desde arriba, reforzando su estabilidad."
+        ],
+        "table": {
+          "caption": "Masa inestable frente a masa estable",
+          "head": ["Rasgo", "Calentada desde abajo (inestable)", "Enfriada desde abajo (estable)"],
+          "rows": [
+            ["Nubes", "Cumuliformes: Cu, Cb", "Estratiformes: St, Sc, niebla"],
+            ["Precipitación", "Chubascos, a veces tormenta y granizo", "Llovizna o nada"],
+            ["Visibilidad", "Buena fuera de los chubascos", "Mala: neblina, niebla, calima atrapada"],
+            ["Aire", "Turbulento, racheado", "Tranquilo"],
+            ["Ejemplo en España", "mP en invierno sobre el Mediterráneo, más templado", "mT en invierno sobre la meseta fría"]
+          ],
+          "src": "AEMET, apuntes de meteorología aeronáutica"
+        },
+        "examples": [
+          {
+            "q": "En enero entra aire polar marítimo por el noroeste y alcanza el Mediterráneo, cuyas aguas están a 14 °C. ¿Qué cambia?",
+            "a": "El aire, más frío que el mar, se calienta desde abajo y gana humedad: aumenta el gradiente vertical y se inestabiliza. Esperas cúmulos y cumulonimbos con chubascos y rachas en el litoral y Baleares, con buena visibilidad entre chubascos."
+          }
+        ]
+      },
+      {
+        "title": "Las masas de aire que llegan a España",
+        "text": [
+          "La Península está a la latitud del frente polar y entre un océano y un continente, así que recibe casi todas las masas. Cuál domina depende de la posición del anticiclón de las Azores y de las borrascas atlánticas."
+        ],
+        "table": {
+          "caption": "Masas que afectan a España y tiempo típico",
+          "head": ["Masa", "Llega desde", "Cuándo", "Tiempo típico"],
+          "rows": [
+            ["Polar marítima (mP)", "Noroeste y oeste, tras los frentes fríos", "Todo el año, sobre todo de otoño a primavera", "Fresca e inestable: Cu y Cb, chubascos, rachas y muy buena visibilidad, sobre todo en Galicia y el Cantábrico"],
+            ["Ártica marítima (mA)", "Norte", "Invierno y primavera", "Irrupciones muy frías, chubascos de nieve en el Cantábrico y el norte, buena visibilidad"],
+            ["Polar continental (cP)", "Noreste y este de Europa", "Invierno, con anticiclón sobre Europa", "Muy fría y seca: heladas fuertes y cielos despejados; sobre el Mediterráneo se humedece y puede dar nieve en el este y Baleares"],
+            ["Tropical marítima (mT)", "Suroeste y oeste (Azores)", "Todo el año; en invierno, en los sectores cálidos", "Templada y húmeda: enfriada desde abajo da St, nieblas, llovizna y mala visibilidad"],
+            ["Tropical continental (cT)", "Sur y sureste (Sáhara)", "Sobre todo en verano; en Canarias también en invierno", "Calor intenso y seco, calima y polvo con visibilidad reducida; al humedecerse sobre el Mediterráneo, tormentas"]
+          ],
+          "src": "AEMET, apuntes de meteorología aeronáutica"
+        },
+        "note": { "kind": "es", "text": "En Canarias, la llegada de aire sahariano con viento del este («tiempo sur») trae calima que puede dejar la visibilidad en pocos kilómetros durante días, junto con temperaturas altas." }
+      },
+      {
+        "title": "Qué significa para tu vuelo",
+        "text": [
+          "Antes de mirar los mensajes, saber qué masa de aire hay te dice qué esperar. Tras el paso de un frente frío con viento del noroeste (mP): cielos con cúmulos, chubascos aislados, rachas y turbulencia en capas bajas, pero visibilidades excelentes; vuela de mañana, antes de que la convección crezca. Con aire tropical marítimo en invierno: techos bajos, nieblas y llovizna que pueden durar todo el día, aire tranquilo. Con aire sahariano: calor que empeora las actuaciones del avión, calima y polvo que reducen la visibilidad inclinada, sobre todo hacia el sol."
+        ]
+      }
+    ],
+    "numbers": [
+      "Letras de temperatura: A ártica, P polar, T tropical, E ecuatorial",
+      "Letras de humedad: m marítima (húmeda), c continental (seca)",
+      "k: masa más fría que la superficie (se inestabiliza); w: más cálida (se estabiliza)",
+      "Aire frío sobre superficie cálida: inestable, Cu/Cb, chubascos, buena visibilidad",
+      "Aire cálido sobre superficie fría: estable, St, niebla, llovizna, mala visibilidad"
+    ],
+    "traps": [
+      "La humedad la da la superficie de origen (marítima o continental), no la latitud.",
+      "Una masa polar no siempre es estable: al pasar sobre un mar más templado se vuelve inestable.",
+      "La calima en España la trae el aire tropical continental, no el tropical marítimo.",
+      "La masa inestable tiene buena visibilidad (fuera de los chubascos); la estable, mala. Es fácil invertirlo pensando que «inestable» es peor en todo."
+    ],
+    "spain": [
+      "La polar marítima es la masa más frecuente tras los frentes atlánticos.",
+      "La tropical continental trae calima y olas de calor; en Canarias, «tiempo sur»."
+    ],
+    "sources": [
+      { "title": "AEMET, Apuntes de meteorología aeronáutica", "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf" },
+      { "title": "FAA-H-8083-28, Aviation Weather Handbook (masas de aire)", "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook" }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "050.12.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "Una región de origen de masas de aire se caracteriza por:",
+      "options": [
+        "Una superficie extensa y homogénea donde el aire permanece casi quieto durante días",
+        "Una zona de vientos fuertes y cambiantes",
+        "Una cordillera que separa dos climas",
+        "El paso frecuente de frentes"
+      ],
+      "correct": 0,
+      "why": "El aire adquiere temperatura y humedad uniformes solo si permanece mucho tiempo sobre una superficie homogénea, lo que ocurre bajo anticiclones persistentes sobre océanos, continentes o hielo.",
+      "whyNot": [
+        null,
+        "Con viento fuerte el aire no tiene tiempo de adquirir las propiedades de la superficie.",
+        "Las cordilleras modifican las masas, no las crean.",
+        "Los frentes son los límites entre masas, no su origen."
+      ],
+      "ref": "AEMET, apuntes de meteorología aeronáutica"
+    },
+    {
+      "id": "050.12.002",
+      "type": "regla",
+      "level": 1,
+      "q": "La masa de aire cT es:",
+      "options": [
+        "Tropical marítima: cálida y húmeda",
+        "Tropical continental: cálida y seca",
+        "Polar continental: fría y seca",
+        "Polar marítima: fresca y húmeda"
+      ],
+      "correct": 1,
+      "why": "T indica origen tropical (cálida) y c continental (seca). En España llega desde el Sáhara.",
+      "whyNot": [
+        "Esa sería mT.",
+        null,
+        "Esa sería cP.",
+        "Esa sería mP."
+      ],
+      "ref": "AEMET, apuntes de meteorología aeronáutica"
+    },
+    {
+      "id": "050.12.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "En invierno, aire polar marítimo llega sobre el Mediterráneo, cuyas aguas están más templadas que el aire. La masa:",
+      "options": [
+        "Se estabiliza y forma nieblas",
+        "Se seca y trae calima",
+        "Se vuelve inestable, con cúmulos, cumulonimbos y chubascos",
+        "No cambia, porque el mar no influye en el aire"
+      ],
+      "correct": 2,
+      "why": "Calentada desde abajo y con aporte de humedad, el gradiente vertical aumenta y aparece la convección: Cu y Cb con chubascos y rachas, buena visibilidad fuera de ellos.",
+      "whyNot": [
+        "La estabilización ocurre cuando la masa se enfría desde abajo.",
+        "Sobre el mar gana humedad; la calima es de aire seco con polvo.",
+        null,
+        "La superficie modifica la masa: es el mecanismo principal de cambio."
+      ],
+      "ref": "AEMET, apuntes de meteorología aeronáutica"
+    },
+    {
+      "id": "050.12.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "En diciembre, aire tropical marítimo entra sobre la meseta, muy fría tras varias noches despejadas. ¿Qué tiempo esperas?",
+      "options": [
+        "Estratos bajos, niebla y llovizna con mala visibilidad",
+        "Cumulonimbos y tormentas por la tarde",
+        "Cielos despejados y visibilidad excelente",
+        "Chubascos de nieve con rachas"
+      ],
+      "correct": 0,
+      "why": "Aire cálido y húmedo sobre un suelo frío se enfría desde abajo: se estabiliza, se forma una inversión y aparecen St, nieblas y llovizna.",
+      "whyNot": [
+        null,
+        "La convección exige calentamiento desde abajo; aquí ocurre lo contrario.",
+        "La masa es húmeda y al enfriarse se satura; la visibilidad empeora.",
+        "Los chubascos de nieve son propios de aire frío e inestable."
+      ],
+      "ref": "AEMET, apuntes de meteorología aeronáutica"
+    },
+    {
+      "id": "050.12.005",
+      "type": "regla",
+      "level": 2,
+      "es": true,
+      "q": "En España, los episodios de calima intensa con polvo en suspensión se deben sobre todo a la llegada de:",
+      "options": [
+        "Aire polar marítimo del noroeste",
+        "Aire ártico marítimo del norte",
+        "Aire tropical marítimo del suroeste",
+        "Aire tropical continental del Sáhara"
+      ],
+      "correct": 3,
+      "why": "El aire tropical continental, cálido y seco, arrastra polvo del norte de África; con vientos del sur o del este deja calima en la Península y, de forma muy marcada, en Canarias.",
+      "whyNot": [
+        "La mP trae aire limpio y buena visibilidad.",
+        "La mA es muy fría y limpia.",
+        "La mT es húmeda: trae nieblas y llovizna, no polvo.",
+        null
+      ],
+      "ref": "AEMET, apuntes de meteorología aeronáutica"
+    },
+    {
+      "id": "050.12.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué masa de aire se asocia en Galicia y el Cantábrico al viento del noroeste tras un frente frío, con chubascos y visibilidad excelente?",
+      "options": ["Tropical continental", "Polar marítima", "Polar continental", "Tropical marítima"],
+      "correct": 1,
+      "why": "Tras el frente frío entra aire polar marítimo del Atlántico, fresco, que el mar calienta desde abajo: es inestable, con cúmulos y chubascos y aire muy limpio.",
+      "whyNot": [
+        "La cT llega del sur, cálida, seca y con calima.",
+        null,
+        "La cP llega del noreste o el este, seca y sin chubascos en origen.",
+        "La mT es la del sector cálido, con St y llovizna, antes del frente frío."
+      ],
+      "ref": "AEMET, apuntes de meteorología aeronáutica"
+    },
+    {
+      "id": "050.12.007",
+      "type": "regla",
+      "level": 3,
+      "q": "Una masa de aire se designa mPk. La «k» indica que:",
+      "options": [
+        "Es más cálida que la superficie y se estabilizará",
+        "Procede de un continente",
+        "Es más fría que la superficie por la que pasa y tenderá a inestabilizarse",
+        "Ha cruzado una cordillera"
+      ],
+      "correct": 2,
+      "why": "k (del alemán kalt, frío) señala una masa más fría que la superficie: se calienta desde abajo y tiende a la inestabilidad. La w indicaría lo contrario.",
+      "whyNot": [
+        "Eso sería w.",
+        "La procedencia continental la indica la «c» minúscula; aquí es «m», marítima.",
+        null,
+        "No hay letra que indique el cruce de una cordillera."
+      ],
+      "ref": "AEMET, apuntes de meteorología aeronáutica"
+    },
+    {
+      "id": "050.12.008",
+      "type": "lectura",
+      "level": 2,
+      "q": "¿Qué masa de aire describe mejor este METAR de Santiago en marzo?",
+      "data": "METAR LEST 141200Z 30018G30KT 9999 -SHRA FEW018CB SCT025 10/04 Q1014",
+      "options": [
+        "Tropical marítima en un sector cálido",
+        "Tropical continental con calima",
+        "Polar continental muy seca y estable",
+        "Polar marítima inestable tras un frente frío"
+      ],
+      "correct": 3,
+      "why": "Viento del noroeste racheado, visibilidad de 10 km o más, chubascos ligeros con CB y aire fresco (10 °C): aire polar marítimo inestable detrás de un frente frío.",
+      "whyNot": [
+        "El sector cálido daría viento del suroeste, St, llovizna y mala visibilidad.",
+        "La calima reduciría la visibilidad y no habría chubascos con CB.",
+        "Una masa continental seca no daría chubascos con CB y T − Td sería mayor.",
+        null
+      ],
+      "ref": "OACI Anexo 3; AEMET, apuntes"
+    },
+    {
+      "id": "050.12.009",
+      "type": "concepto",
+      "level": 3,
+      "q": "En invierno, aire polar continental muy frío llega desde Europa del Este a la costa mediterránea tras cruzar el mar. ¿Qué puede pasar?",
+      "options": [
+        "Que se humedezca y se inestabilice, con chubascos e incluso nevadas en el litoral y Baleares",
+        "Que traiga calima sahariana",
+        "Que se forme niebla de advección por aire cálido sobre suelo frío",
+        "Que siga completamente seca y estable"
+      ],
+      "correct": 0,
+      "why": "El mar, más templado, le aporta calor y humedad desde abajo: la masa se inestabiliza y puede dar chubascos de nieve en zonas costeras del este y en Baleares.",
+      "whyNot": [
+        null,
+        "La calima la trae el aire tropical continental del sur.",
+        "Aquí es aire frío sobre agua templada, el caso contrario a la advección.",
+        "Seca y estable es en origen; al cruzar el mar se modifica."
+      ],
+      "ref": "AEMET, apuntes de meteorología aeronáutica"
+    }
+  ],
+  "cards": [
+    { "id": "c.050.12.01", "front": "Clasificación de masas de aire", "back": "A, P, T, E (temperatura) + m marítima o c continental (humedad): mA, mP, cP, mT, cT" },
+    { "id": "c.050.12.02", "front": "Aire frío sobre superficie más cálida", "back": "Se inestabiliza: Cu y Cb, chubascos, rachas, buena visibilidad fuera de los chubascos" },
+    { "id": "c.050.12.03", "front": "Aire cálido sobre superficie más fría", "back": "Se estabiliza: St, niebla, llovizna, mala visibilidad, aire tranquilo" },
+    { "id": "c.050.12.04", "front": "Masa que trae calima a España", "back": "Tropical continental (cT), del Sáhara, con vientos del sur o del este" }
+  ]
+}

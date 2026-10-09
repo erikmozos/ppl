@@ -1,0 +1,385 @@
+{
+  "lesson": {
+    "id": "050.10",
+    "title": "Niebla, neblina y calima",
+    "summary": "Qué es la niebla y cómo se cifra, los cinco tipos (radiación, advección, vapor, frontal y orográfica), cómo se forma y cómo se disipa cada uno, y la diferencia entre neblina y calima.",
+    "objectives": [
+      "Distinguir niebla (FG), neblina (BR) y calima (HZ) por su visibilidad y por su naturaleza húmeda o seca",
+      "Explicar las condiciones de formación de la niebla de radiación, de advección, de vapor, frontal y orográfica",
+      "Prever cuándo se disipa cada tipo de niebla y cuál aguanta con viento",
+      "Usar la diferencia entre temperatura y punto de rocío para anticipar la niebla",
+      "Reconocer en un METAR o un TAF qué tipo de niebla es probable y qué supone para un vuelo VFR"
+    ],
+    "sections": [
+      {
+        "title": "Qué es la niebla y cómo se cifra",
+        "text": [
+          "La niebla es una nube que toca el suelo: una suspensión de gotitas de agua muy pequeñas (o de cristales de hielo si hace mucho frío) que reduce la visibilidad horizontal en superficie. La diferencia con el estrato es solo la altura de la base: si la base está en el suelo, es niebla; si se levanta unos cientos de pies, es un estrato (St) bajo.",
+          "En los mensajes aeronáuticos la frontera la marca la visibilidad. Se cifra **FG (niebla) cuando la visibilidad es inferior a 1000 m**. Si las gotitas reducen la visibilidad pero quedan **entre 1000 y 5000 m**, se cifra **BR (neblina, en inglés mist)**. Las dos son fenómenos húmedos: el aire está saturado o casi. La **calima o bruma seca (HZ)** es otra cosa: partículas sólidas secas (polvo, sal, contaminación) en aire seco, y se cifra cuando reducen la visibilidad a 5000 m o menos.",
+          "Hay descriptores que matizan la niebla: **MIFG** es niebla baja, de menos de 2 m de espesor (ves el cielo y las luces altas, pero no la pista a lo lejos); **BCFG**, bancos de niebla; **PRFG**, niebla que cubre parte del aeródromo; **VCFG**, niebla en las proximidades (entre 8 y 16 km); y **FZFG**, niebla engelante, formada por gotitas subfundidas a temperatura bajo cero que dejan escarcha sobre lo que tocan."
+        ],
+        "table": {
+          "caption": "Fenómenos que se confunden en el examen",
+          "head": ["Código", "Nombre", "Naturaleza", "Visibilidad con que se cifra"],
+          "rows": [
+            ["FG", "Niebla", "Gotitas de agua (aire saturado)", "Menos de 1000 m"],
+            ["BR", "Neblina", "Gotitas de agua (humedad muy alta)", "De 1000 a 5000 m"],
+            ["HZ", "Calima o bruma seca", "Partículas secas en aire seco", "5000 m o menos"],
+            ["FU", "Humo", "Partículas de combustión", "5000 m o menos"],
+            ["DU / SA", "Polvo / arena en suspensión", "Partículas minerales", "5000 m o menos"]
+          ],
+          "src": "OACI Anexo 3, apéndice 3; AEMET Guía MET"
+        }
+      },
+      {
+        "title": "Cómo se llega a la saturación",
+        "text": [
+          "Para que haya niebla el aire junto al suelo tiene que saturarse. Hay dos caminos: **enfriarlo hasta su punto de rocío** (radiación, advección sobre una superficie fría, ascenso por una ladera) o **añadirle vapor** hasta saturarlo (evaporación desde agua más cálida, lluvia que cae y se evapora). Casi siempre hay además núcleos de condensación abundantes: en zonas industriales o urbanas la niebla se forma antes y es más densa.",
+          "El dato que tienes a mano es la diferencia entre la temperatura y el punto de rocío (T − Td), que aparece en cada METAR. Cuanto menor es, más cerca estás de la saturación. Una diferencia de 2 o 3 °C al anochecer, con cielo despejado y viento flojo, es una alarma: basta que la noche enfríe el aire esos grados para que aparezca la niebla. Recuerda que el punto de rocío apenas baja durante la noche mientras que la temperatura cae varios grados."
+        ],
+        "examples": [
+          {
+            "q": "METAR de las 20:00 UTC en un aeródromo de la meseta en noviembre: temperatura y rocío 08/06, viento 03003KT, cielo despejado. Se prevé una mínima de 3 °C. ¿Esperas niebla?",
+            "a": "La diferencia T − Td es de 2 °C. Si la temperatura baja hasta 3 °C quedará por debajo del punto de rocío (6 °C, que apenas cambiará): el aire se satura. Con cielo despejado y viento flojo, la niebla de radiación es muy probable en la segunda mitad de la noche y al amanecer."
+          }
+        ]
+      },
+      {
+        "title": "Niebla de radiación",
+        "text": [
+          "Es la niebla típica de las noches de otoño e invierno en el interior de la Península. De noche el suelo pierde calor por radiación hacia el espacio; si el cielo está despejado no hay nubes que le devuelvan esa energía y se enfría deprisa, y enfría por contacto el aire que tiene encima. Si ese aire es húmedo, llega al punto de rocío y se forma la niebla, primero en las zonas bajas, porque el aire frío pesa más y se acumula en fondos de valle y hondonadas.",
+          "Necesita **cielo despejado, aire húmedo, noches largas y viento flojo**. El viento importa: en calma total el enfriamiento solo afecta a una capa finísima y lo que se forma es rocío o escarcha, o una niebla de pocos metros (MIFG); con un viento flojo, de unos **2 a 8 kt**, la turbulencia mezcla el enfriamiento en una capa de decenas o cientos de pies y la niebla gana espesor; con viento más fuerte la mezcla es tan grande que el enfriamiento se reparte y, como mucho, se forma un estrato bajo en lugar de niebla. **Solo se forma sobre tierra**: el mar apenas cambia de temperatura entre el día y la noche.",
+          "Suele ser más densa **justo después del amanecer**, porque el enfriamiento continúa hasta que el sol empieza a calentar. Se **disipa** cuando el sol calienta el suelo desde abajo (la niebla se levanta en estrato y luego se rompe en estratocúmulos o cúmulos), cuando aumenta el viento o cuando llega aire más seco. En invierno, bajo un anticiclón con inversión fuerte, el sol puede no bastar y la niebla persiste días enteros en la meseta norte, el valle del Ebro o el del Guadalquivir."
+        ],
+        "note": { "kind": "es", "text": "Las nieblas persistentes de la submeseta norte (Valladolid, Burgos, León, Salamanca) y del valle del Ebro en situaciones anticiclónicas de invierno son de radiación. Un aeródromo puede estar cerrado toda la mañana mientras otro a 50 km, más alto o con brisa, opera con CAVOK." }
+      },
+      {
+        "title": "Niebla de advección",
+        "text": [
+          "Se forma cuando **aire cálido y húmedo se desplaza sobre una superficie más fría** (mar frío o tierra fría) y se enfría por debajo hasta saturarse. A diferencia de la de radiación, **necesita viento para existir**: es el viento el que trae el aire húmedo. Por eso **persiste con vientos de 15 kt o más**; solo con viento bastante más fuerte la mezcla la levanta y se convierte en estrato bajo.",
+          "Puede formarse **de día o de noche**, sobre mar o sobre tierra, es extensa y duradera, y el sol no la disipa con facilidad porque sobre el mar no hay calentamiento diurno. Se va cuando cambia el viento y llega aire de otro origen, o cuando la superficie se calienta lo suficiente. Una niebla marina puede entrar en la costa empujada por la brisa a media tarde y cerrar un aeródromo que había estado despejado.",
+          "En España aparece en las costas de Galicia y del Cantábrico en verano, cuando aire templado y húmedo del Atlántico llega sobre aguas costeras frías; en el litoral mediterráneo y en el Estrecho con vientos húmedos sobre el mar más fresco; y en invierno, sobre tierra, cuando una masa de aire tropical marítimo llega sobre un suelo muy frío."
+        ]
+      },
+      {
+        "title": "Niebla de vapor, frontal y orográfica",
+        "text": [
+          "La **niebla de vapor** (o de evaporación, humo de mar) es la situación inversa a la advección: **aire frío sobre agua más cálida**. El agua se evapora en el aire frío, que se satura enseguida, y aparecen jirones de niebla que suben desde la superficie como vapor de una olla. Es típica de otoño e invierno sobre ríos, embalses, lagos y el mar tras una irrupción de aire frío. Suele ser poco espesa, pero puede cubrir un aeródromo junto a un embalse a primera hora.",
+          "La **niebla frontal** se forma por delante de un frente cálido (y en las oclusiones): la lluvia que cae desde el aire cálido de arriba atraviesa la capa de aire frío de abajo y se evapora en ella, añadiendo vapor hasta saturarla. Es extensa, va acompañada de estratos muy bajos y lluvia o llovizna, y no se disipa hasta que pasa el frente.",
+          "La **niebla orográfica** (de ladera) aparece cuando aire húmedo es forzado a subir por una ladera y se enfría por expansión adiabática hasta saturarse. Cubre la ladera de barlovento y las cumbres mientras dura el viento: desde el avión, son montes ocultos (MT OBSC en el GAMET). Es un peligro clásico para el VFR, porque desde lejos parece una nube más y en realidad está pegada al terreno."
+        ],
+        "table": {
+          "caption": "Resumen de los tipos de niebla",
+          "head": ["Tipo", "Cómo se forma", "Viento", "Dónde y cuándo", "Cómo se disipa"],
+          "rows": [
+            ["Radiación", "Suelo que se enfría de noche con cielo despejado", "Flojo, 2–8 kt", "Sobre tierra, valles, otoño e invierno, máxima al amanecer", "Sol que calienta el suelo, más viento, aire más seco"],
+            ["Advección", "Aire cálido y húmedo sobre superficie fría", "Persiste con 15 kt o más", "Costas y mar, también tierra fría en invierno; de día o de noche", "Cambio de viento o de masa de aire"],
+            ["Vapor", "Aire frío sobre agua más cálida", "Flojo", "Ríos, embalses, mar; otoño e invierno", "Al igualarse las temperaturas o al mezclarse"],
+            ["Frontal", "Lluvia cálida que se evapora en el aire frío", "Variable", "Delante del frente cálido y en oclusiones", "Al pasar el frente"],
+            ["Orográfica", "Ascenso forzado por una ladera", "El que empuja contra la ladera", "Barlovento y cumbres", "Al cesar o rolar el viento"]
+          ],
+          "src": "AEMET, apuntes de meteorología aeronáutica; FAA-H-8083-28"
+        }
+      },
+      {
+        "title": "La niebla y el vuelo VFR",
+        "text": [
+          "La niebla es la causa más frecuente de que un vuelo VFR termine mal en un aeródromo sin aproximación instrumental. Se forma deprisa al anochecer y al amanecer, puede cubrir el destino mientras el origen sigue despejado y no se ve bien desde arriba: con niebla poco espesa puedes ver el suelo en vertical y, sin embargo, no ver la pista en la aproximación oblicua, porque la visibilidad inclinada atraviesa mucha más niebla.",
+          "Antes de salir mira el METAR (BR, MIFG o BCFG ya avisan), la diferencia T − Td y su tendencia, el TAF (un PROB30 TEMPO con 0300 FG de madrugada es un aviso serio) y si el viento previsto es flojo con cielo despejado. Ten siempre un alternativo con otra exposición (más alto, en la costa con viento de tierra, o lejos de ríos y embalses) y combustible para llegar a él."
+        ],
+        "bullets": [
+          "No intentes «colarte» bajo la niebla ni descender a buscar la pista: el VFR exige referencia visual con el suelo y la visibilidad mínima de la clase de espacio aéreo.",
+          "Una niebla de radiación de madrugada suele levantarse a media mañana: muchas veces basta con esperar en tierra.",
+          "Una niebla de advección no se va con el sol: si el viento no cambia, puede durar todo el día.",
+          "FZFG en el METAR: además de visibilidad, el avión aparcado y el que despega recogen escarcha."
+        ]
+      },
+      {
+        "title": "Calima y neblina",
+        "text": [
+          "La **neblina (BR)** es húmeda: humedad relativa muy alta, gotitas microscópicas y un velo grisáceo. Suele preceder a la niebla o quedar cuando esta se disipa. La **calima (HZ)** es seca: un velo amarillento o pardo de partículas en aire seco, con temperatura y punto de rocío muy separados.",
+          "En España la calima más intensa llega con aire **tropical continental del Sahara**, con vientos del sur o del este: en Canarias puede dejar la visibilidad en 2 o 3 km durante días, y en la Península tiñe el cielo en verano. Bajo un anticiclón la inversión de subsidencia atrapa polvo y contaminación por debajo: arriba hay visibilidad excelente y abajo un velo que empeora mucho al volar **hacia el sol**. El humo de incendios forestales (FU) es habitual en verano en el oeste y el noroeste peninsular."
+        ]
+      }
+    ],
+    "numbers": [
+      "FG: visibilidad inferior a 1000 m",
+      "BR (neblina): visibilidad de 1000 a 5000 m, partículas de agua",
+      "HZ, FU, DU, SA: se cifran con visibilidad de 5000 m o menos",
+      "MIFG: niebla de menos de 2 m de espesor",
+      "VC (vecindad): entre 8 y 16 km del aeródromo",
+      "Niebla de radiación: viento flojo, unos 2–8 kt; más densa justo tras el amanecer",
+      "Niebla de advección: persiste con vientos de 15 kt o más",
+      "T − Td de 2–3 °C al anochecer con cielo despejado y viento flojo: riesgo alto de niebla"
+    ],
+    "traps": [
+      "La niebla de advección no se disipa con el viento: lo necesita. La que se disipa al arreciar el viento es la de radiación.",
+      "La niebla de radiación no se forma sobre el mar, porque el agua apenas se enfría de noche.",
+      "Niebla de vapor es aire frío sobre agua cálida; aire cálido sobre superficie fría es advección. Es fácil intercambiarlas.",
+      "Con viento demasiado fuerte no hay niebla de radiación, sino estratos bajos.",
+      "BR es húmeda y HZ es seca: no las distingue la visibilidad, sino la humedad (T y Td próximos o muy separados).",
+      "La niebla de radiación suele ser más densa poco después del amanecer, no a medianoche."
+    ],
+    "spain": [
+      "Nieblas de radiación persistentes en la submeseta norte, el valle del Ebro y el del Guadalquivir bajo anticiclones de invierno.",
+      "Nieblas de advección en las costas de Galicia y del Cantábrico en verano.",
+      "Calima sahariana con aire tropical continental, muy intensa en Canarias."
+    ],
+    "sources": [
+      { "title": "OACI, Anexo 3: Servicio meteorológico para la navegación aérea internacional (apéndice 3, tiempo presente)" },
+      { "title": "AEMET, Guía MET: información meteorológica aeronáutica (AU-GUI-0102, actualizada en octubre de 2025)", "url": "https://www.aemet.es/documentos/es/conocermas/aeronautica/AU-GUI-0102.pdf" },
+      { "title": "AEMET, Apuntes de meteorología aeronáutica", "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf" },
+      { "title": "FAA-H-8083-28, Aviation Weather Handbook", "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook" }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "050.10.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La niebla de radiación se forma sobre todo:",
+      "options": [
+        "Sobre tierra, en noches despejadas, con aire húmedo y viento flojo",
+        "Sobre el mar, cuando sopla viento fuerte y húmedo hacia la costa",
+        "Por la tarde, cuando el sol calienta el suelo y aumenta la evaporación",
+        "Detrás de un frente frío, con chubascos y viento racheado"
+      ],
+      "correct": 0,
+      "why": "El suelo pierde calor por radiación en las noches sin nubes y enfría el aire húmedo que tiene encima hasta el punto de rocío. Un viento flojo reparte el enfriamiento en una capa de cierto espesor.",
+      "whyNot": [
+        null,
+        "El mar apenas se enfría de noche y el viento fuerte impide este tipo de niebla.",
+        "El calentamiento diurno disipa la niebla, no la forma.",
+        "Tras el frente frío entra aire inestable con buena visibilidad fuera de los chubascos."
+      ],
+      "ref": "AEMET, apuntes de meteorología aeronáutica; FAA-H-8083-28"
+    },
+    {
+      "id": "050.10.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué caracteriza a la niebla de advección frente a la de radiación?",
+      "options": [
+        "Solo se forma de noche y se disipa con el primer sol",
+        "Se forma con aire cálido y húmedo sobre una superficie fría y persiste aunque haya viento",
+        "Necesita calma total y se limita a los fondos de valle",
+        "Se forma cuando aire frío pasa sobre agua más cálida"
+      ],
+      "correct": 1,
+      "why": "En la advección el viento trae aire cálido y húmedo sobre una superficie más fría, que lo enfría desde abajo. Puede formarse de día o de noche y aguanta con vientos de 15 kt o más.",
+      "whyNot": [
+        "Eso describe mejor la de radiación; la de advección no depende del ciclo día-noche.",
+        null,
+        "La calma y los fondos de valle son propios de la de radiación.",
+        "Aire frío sobre agua cálida produce niebla de vapor."
+      ],
+      "ref": "AEMET, apuntes de meteorología aeronáutica"
+    },
+    {
+      "id": "050.10.003",
+      "type": "regla",
+      "level": 1,
+      "q": "Un METAR indica 3000 m de visibilidad por gotitas de agua en suspensión, con temperatura 9 °C y punto de rocío 8 °C. El fenómeno se cifra:",
+      "options": ["FG", "HZ", "BR", "MIFG"],
+      "correct": 2,
+      "why": "Con visibilidad entre 1000 y 5000 m por partículas de agua (aire casi saturado, T y Td a 1 °C) se cifra BR, neblina.",
+      "whyNot": [
+        "FG exige visibilidad inferior a 1000 m.",
+        "HZ es calima: partículas secas en aire seco, con T y Td muy separados.",
+        null,
+        "MIFG es niebla de menos de 2 m de espesor, no una visibilidad general de 3 km."
+      ],
+      "ref": "OACI Anexo 3, ap. 3; AEMET Guía MET"
+    },
+    {
+      "id": "050.10.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "Noche despejada y aire húmedo sobre un aeródromo del interior, pero con viento constante de 20 kt. Lo más probable es que:",
+      "options": [
+        "Se forme una niebla de radiación muy densa al amanecer",
+        "Se forme niebla de vapor sobre la pista",
+        "La visibilidad baje por calima",
+        "No se forme niebla de radiación; como mucho, estratos bajos"
+      ],
+      "correct": 3,
+      "why": "Con viento fuerte la turbulencia mezcla el aire enfriado junto al suelo con el de más arriba; el enfriamiento se reparte y no llega a saturar la capa de superficie. Si hay saturación, se queda en estrato bajo.",
+      "whyNot": [
+        "La niebla de radiación necesita viento flojo, unos 2–8 kt.",
+        "La niebla de vapor requiere aire frío sobre agua más cálida.",
+        "La calima es seca y no depende del enfriamiento nocturno.",
+        null
+      ],
+      "ref": "FAA-H-8083-28; AEMET, apuntes"
+    },
+    {
+      "id": "050.10.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una mañana de diciembre, tras la entrada de aire muy frío, se ven jirones de niebla sobre un embalse junto al aeródromo. Es niebla:",
+      "options": ["De vapor", "De advección", "Orográfica", "Frontal"],
+      "correct": 0,
+      "why": "El aire frío pasa sobre agua más cálida; el agua se evapora en él y lo satura. Es la niebla de vapor o de evaporación.",
+      "whyNot": [
+        null,
+        "La advección es aire cálido y húmedo sobre una superficie más fría, lo contrario.",
+        "La orográfica exige ascenso por una ladera.",
+        "La frontal se asocia a la lluvia por delante de un frente cálido."
+      ],
+      "ref": "AEMET, apuntes de meteorología aeronáutica"
+    },
+    {
+      "id": "050.10.006",
+      "type": "regla",
+      "level": 2,
+      "q": "En un METAR aparece el grupo MIFG. Significa:",
+      "options": [
+        "Niebla en las proximidades, entre 8 y 16 km",
+        "Niebla baja, de menos de 2 m de espesor",
+        "Bancos de niebla que cubren parte del aeródromo",
+        "Niebla engelante con temperatura bajo cero"
+      ],
+      "correct": 1,
+      "why": "MI (shallow) indica niebla de poco espesor, menos de 2 m sobre el suelo: puede haber buena visibilidad a la altura de los ojos de un observador alto y mala a ras de pista.",
+      "whyNot": [
+        "Eso es VCFG.",
+        null,
+        "Eso es BCFG (o PRFG si cubre una parte).",
+        "Eso es FZFG."
+      ],
+      "ref": "OACI Anexo 3, ap. 3, tabla A3-1"
+    },
+    {
+      "id": "050.10.007",
+      "type": "calculo",
+      "level": 2,
+      "q": "A las 19:00 UTC un METAR da 10/07, viento 02004KT y cielo despejado. La mínima prevista es de 4 °C y el punto de rocío apenas cambiará. ¿Qué esperas?",
+      "options": [
+        "Nada: falta una diferencia de 7 °C para saturar",
+        "Calima al amanecer",
+        "Saturación y probable niebla de radiación en la segunda mitad de la noche",
+        "Niebla de advección inmediata"
+      ],
+      "correct": 2,
+      "why": "La diferencia T − Td es de 3 °C. Si la temperatura baja hasta 4 °C quedará 3 °C por debajo del rocío (7 °C): el aire se satura. Con cielo despejado y viento flojo, la niebla de radiación es lo esperable de madrugada.",
+      "whyNot": [
+        "La diferencia es de 3 °C (10 − 7), no de 7, y la noche enfriará más que eso.",
+        "La calima es seca y no tiene que ver con la saturación.",
+        null,
+        "No hay aporte de aire húmedo con viento; con 4 kt y cielo despejado el mecanismo es la radiación."
+      ],
+      "ref": "AEMET, apuntes de meteorología aeronáutica"
+    },
+    {
+      "id": "050.10.008",
+      "type": "lectura",
+      "level": 2,
+      "q": "Lee el METAR de enero de Valladolid. ¿Qué tipo de niebla es la más probable?",
+      "data": "METAR LEVD 120630Z 00000KT 0150 R23/0300N FG VV001 M01/M01 Q1031",
+      "options": [
+        "De advección, traída por viento del oeste",
+        "Frontal, por delante de un frente cálido",
+        "Orográfica, por ascenso por una ladera",
+        "De radiación, con calma y alta presión en invierno"
+      ],
+      "correct": 3,
+      "why": "Calma (00000KT), presión alta (1031 hPa, anticiclón), madrugada de invierno en la meseta y T = Td: todo apunta a niebla de radiación. Al estar a −1 °C, además es engelante en la práctica.",
+      "whyNot": [
+        "Sin viento no hay advección.",
+        "No hay lluvia ni presión baja que indiquen un frente cálido.",
+        "Sin viento no hay ascenso forzado por una ladera.",
+        null
+      ],
+      "ref": "OACI Anexo 3; AEMET Guía MET"
+    },
+    {
+      "id": "050.10.009",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuándo se cifra HZ (calima) en un METAR?",
+      "options": [
+        "Cuando partículas secas reducen la visibilidad a 5000 m o menos",
+        "Cuando gotitas de agua reducen la visibilidad a menos de 1000 m",
+        "Cuando la visibilidad está entre 1000 y 5000 m con humedad muy alta",
+        "Siempre que haya polvo, sea cual sea la visibilidad"
+      ],
+      "correct": 0,
+      "why": "HZ y el resto de litometeoros (FU, DU, SA) solo se cifran cuando reducen la visibilidad a 5000 m o menos. Son partículas secas.",
+      "whyNot": [
+        null,
+        "Eso es niebla, FG.",
+        "Eso es neblina, BR, que es húmeda.",
+        "Por encima de 5000 m de visibilidad no se cifra."
+      ],
+      "ref": "OACI Anexo 3, ap. 3, 4.4.2"
+    },
+    {
+      "id": "050.10.010",
+      "type": "lectura",
+      "level": 3,
+      "q": "Agosto en Vigo, mediodía. Con este METAR, ¿qué cabe esperar para la tarde?",
+      "data": "METAR LEVX 141200Z 23014KT 0400 FG VV002 17/17 Q1017",
+      "options": [
+        "Que el sol la disipe en una hora, como cualquier niebla matinal",
+        "Que siga mientras el viento húmedo del suroeste no cambie: es de advección",
+        "Que se transforme en calima al subir la temperatura",
+        "Que desaparezca porque 14 kt es demasiado viento para la niebla"
+      ],
+      "correct": 1,
+      "why": "Niebla a mediodía de verano, en la costa, con 14 kt de viento del mar: es niebla de advección. No depende del calentamiento diurno y persiste con viento mientras llegue el mismo aire húmedo sobre el agua fría.",
+      "whyNot": [
+        "A mediodía y con viento no es una niebla de radiación; el sol no la disipa con facilidad.",
+        null,
+        "La calima es seca; aquí T = Td, aire saturado.",
+        "Eso vale para la de radiación; la de advección aguanta 15 kt o más."
+      ],
+      "ref": "AEMET, apuntes de meteorología aeronáutica"
+    },
+    {
+      "id": "050.10.011",
+      "type": "concepto",
+      "level": 3,
+      "q": "Por delante de un frente cálido en invierno se forma una niebla extensa con llovizna. El mecanismo principal es:",
+      "options": [
+        "El enfriamiento nocturno del suelo con cielo despejado",
+        "El aire frío que pasa sobre agua más templada",
+        "La evaporación de la lluvia que cae desde el aire cálido en la capa fría de abajo",
+        "El calentamiento del aire al descender por la ladera"
+      ],
+      "correct": 2,
+      "why": "La lluvia que cae del aire cálido, más templada, se evapora al atravesar la cuña fría de superficie y le añade vapor hasta saturarla: niebla frontal.",
+      "whyNot": [
+        "Delante del frente cálido el cielo está cubierto; no hay enfriamiento radiativo eficaz.",
+        "Eso es niebla de vapor.",
+        null,
+        "El aire que desciende se calienta y se seca: disipa la niebla."
+      ],
+      "ref": "AEMET, apuntes; FAA-H-8083-28"
+    },
+    {
+      "id": "050.10.012",
+      "type": "concepto",
+      "level": 1,
+      "q": "Aire húmedo empujado por el viento contra una sierra se satura al subir y cubre la ladera. Es niebla:",
+      "options": ["De radiación", "De vapor", "Frontal", "Orográfica"],
+      "correct": 3,
+      "why": "Al ascender por la ladera el aire se expande y se enfría adiabáticamente hasta el punto de rocío: niebla orográfica, en la ladera de barlovento y las cumbres.",
+      "whyNot": [
+        "La de radiación se forma por enfriamiento nocturno del suelo, sin ascenso.",
+        "La de vapor es aire frío sobre agua cálida.",
+        "La frontal se debe a la lluvia por delante de un frente cálido.",
+        null
+      ],
+      "ref": "AEMET, apuntes de meteorología aeronáutica"
+    }
+  ],
+  "cards": [
+    { "id": "c.050.10.01", "front": "Niebla (FG): visibilidad", "back": "Inferior a 1000 m" },
+    { "id": "c.050.10.02", "front": "Neblina (BR): visibilidad y naturaleza", "back": "De 1000 a 5000 m; gotitas de agua, humedad muy alta" },
+    { "id": "c.050.10.03", "front": "Niebla de radiación: condiciones", "back": "Sobre tierra, noche despejada, aire húmedo y viento flojo (2–8 kt); se disipa con sol o más viento" },
+    { "id": "c.050.10.04", "front": "Niebla de advección: ¿aguanta con viento?", "back": "Sí: aire cálido y húmedo sobre superficie fría; persiste con 15 kt o más" },
+    { "id": "c.050.10.05", "front": "Niebla de vapor", "back": "Aire frío sobre agua más cálida (ríos, embalses, mar en otoño e invierno)" },
+    { "id": "c.050.10.06", "front": "Calima (HZ)", "back": "Partículas secas en aire seco; se cifra con visibilidad de 5000 m o menos" }
+  ]
+}

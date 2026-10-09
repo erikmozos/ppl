@@ -1,0 +1,365 @@
+{
+  "lesson": {
+    "id": "030.02",
+    "title": "Terminología de masas y cargas",
+    "summary": "Masa en vacío básica, carga útil y carga de pago, masa sin combustible, de rampa, de despegue y de aterrizaje, términos de combustible, aceite, conversiones de unidades y masas estándar.",
+    "objectives": [
+      "Definir cada término de masa (BEM, DOM, ZFM, masa de rampa, TOM, LM) y saber qué incluye y qué no",
+      "Distinguir carga útil de carga de pago, y combustible utilizable de no utilizable",
+      "Encadenar las masas desde el avión vacío hasta el aterrizaje con un ejemplo numérico",
+      "Convertir combustible y aceite entre litros, galones US, kilos y libras sin errores",
+      "Saber qué masas de pasajeros usar en un vuelo privado y de dónde salen las masas estándar"
+    ],
+    "sections": [
+      {
+        "title": "La cadena de masas: del avión vacío al aterrizaje",
+        "text": [
+          "Todos los cálculos de masa siguen la misma cadena. Partes del avión vacío tal como lo pesaron, le sumas lo que no es combustible (personas, equipaje, carga) y obtienes la masa sin combustible. Le sumas el combustible que cargas y tienes la masa en la plataforma, antes de arrancar. Al rodar gastas un poco y despegas con algo menos. En vuelo gastas el combustible de viaje y aterrizas con el resto.",
+          "Cada eslabón tiene su nombre y casi todos tienen un máximo en el AFM. Conocer la cadena evita los dos errores más comunes del examen: olvidar un término (normalmente el combustible) y sumar dos veces algo que ya estaba incluido (el aceite o el combustible no utilizable, que van dentro de la masa en vacío básica)."
+        ],
+        "table": {
+          "caption": "Cadena de masas de un avión ligero",
+          "head": ["Paso", "Resultado", "Límite que se comprueba"],
+          "rows": [
+            ["Masa en vacío básica (BEM)", "Avión pesado con equipo fijo, combustible no utilizable y aceite", "—"],
+            ["+ piloto, pasajeros, equipaje y carga", "Masa sin combustible (ZFM)", "MZFM, si el AFM la fija"],
+            ["+ combustible cargado (block fuel)", "Masa de rampa o de rodaje", "Masa máxima de rampa"],
+            ["− combustible de rodaje", "Masa al despegue (TOM)", "MTOM y masa limitada por performance"],
+            ["− combustible de viaje", "Masa al aterrizaje (LM)", "MLM y masa limitada por la pista de destino"]
+          ],
+          "src": "EASA AMC1 FCL.210, temario 031 02 01; FAA-H-8083-1B cap. 1"
+        },
+        "formulas": [
+          { "f": "ZFM = BEM + piloto + pasajeros + equipaje y carga", "note": "Si existe tripulación fija, BEM + tripulación = masa operativa en seco (DOM) y ZFM = DOM + carga de pago." },
+          { "f": "Masa de rampa = ZFM + combustible total cargado" },
+          { "f": "TOM = masa de rampa − combustible de rodaje" },
+          { "f": "LM = TOM − combustible de viaje" }
+        ],
+        "examples": [
+          {
+            "q": "BEM 690 kg. Piloto 82 kg, pasajero 68 kg, equipaje 15 kg. Cargas 150 l de AVGAS (0,72 kg/l), gastas 4 l en el rodaje y 95 l en el viaje. Calcula ZFM, masa de rampa, TOM y LM.",
+            "a": "ZFM = 690 + 82 + 68 + 15 = **855 kg**. Combustible: 150 × 0,72 = 108 kg, así que masa de rampa = 855 + 108 = **963 kg**. Rodaje: 4 × 0,72 = 2,9 kg; TOM = 963 − 2,9 = **960,1 kg**. Viaje: 95 × 0,72 = 68,4 kg; LM = 960,1 − 68,4 = **891,7 kg**. Comprueba cada una contra su máximo."
+          }
+        ]
+      },
+      {
+        "title": "Masa en vacío básica (BEM)",
+        "text": [
+          "La **masa en vacío básica** (basic empty mass, BEM) es la masa del avión listo para volar pero sin personas, sin carga y sin combustible utilizable. Incluye la célula, el motor, la hélice, todo el equipo instalado de forma fija (radios, transpondedor, ELT, extintor), el lastre fijo, el **combustible no utilizable** y los líquidos necesarios para funcionar, en los aviones modernos con el **aceite del motor completo**.",
+          "La BEM y la posición de su CG salen del **informe de pesada** del avión concreto (mass and balance report), que se guarda con la documentación del avión y en la sección de masa y centrado del POH. No vale la cifra genérica del folleto del fabricante: cada avión pesa distinto según su equipo, su pintura y sus reparaciones, y cada cambio de equipo actualiza el informe.",
+          "En los manuales estadounidenses verás «standard empty weight» (avión estándar del fabricante) y «basic empty weight» (estándar más equipo opcional instalado). Algunos POH antiguos, anteriores a la normalización GAMA de 1975, usaban «licensed empty weight», que solo incluía el aceite no drenable: si tu POH es de esos, hay que sumar el aceite en la hoja de carga. Lee siempre qué incluye la masa en vacío de tu avión."
+        ],
+        "note": { "kind": "warn", "text": "No sumes el combustible no utilizable ni el aceite en la hoja de carga si la BEM ya los incluye: es contarlos dos veces. Y no cuentes el combustible no utilizable en la autonomía: está en el depósito, pero el motor no puede usarlo en todas las actitudes de vuelo." }
+      },
+      {
+        "title": "Masa operativa en seco, masa operativa y masa en vuelo",
+        "text": [
+          "Estos términos vienen del transporte aéreo, pero salen en el temario. La **masa operativa en seco** (dry operating mass, DOM) es, según las definiciones de Air Ops, la masa total del avión preparado para un tipo de operación concreto, sin el combustible utilizable ni la carga de pago. Incluye a la tripulación con su equipaje y el equipo de servicio. En un avión de escuela puedes pensar en ella como BEM más el piloto.",
+          "La **masa operativa** (operating mass) es la DOM más el combustible de despegue. La **masa en vuelo** (in-flight o gross mass) es la masa en cada instante del vuelo: empieza en la TOM y baja a medida que se gasta combustible."
+        ]
+      },
+      {
+        "title": "Carga de pago y carga útil",
+        "text": [
+          "La **carga de pago** (traffic load o payload) es todo lo que se transporta y no forma parte del avión ni de su tripulación: pasajeros, equipaje, carga, equipo especial que se lleva a bordo y, si lo hay, lastre. Es lo que en un vuelo comercial genera ingresos.",
+          "La **carga útil** (useful load) es un término más amplio que usan los POH: la diferencia entre la masa máxima y la BEM. Es todo lo que puedes subir al avión: piloto, pasajeros, equipaje y **combustible utilizable**. Como la suma no puede pasar de la masa máxima, la carga útil se reparte entre personas y combustible: si llenas los depósitos, quizá no caben cuatro adultos; si llevas cuatro adultos, quizá tengas que despegar con menos combustible y hacer una escala."
+        ],
+        "formulas": [
+          { "f": "Carga útil = MTOM − BEM = piloto + pasajeros + equipaje + combustible utilizable" },
+          { "f": "Combustible máximo por masa = MTOM − ZFM", "note": "Y nunca más de lo que caben en los depósitos." }
+        ],
+        "examples": [
+          {
+            "q": "MTOM 1100 kg, BEM 690 kg. Van cuatro personas que suman 300 kg y 20 kg de equipaje. ¿Cuánto combustible puedes cargar como máximo?",
+            "a": "Carga útil = 1100 − 690 = 410 kg. Personas y equipaje: 320 kg. Quedan 90 kg para combustible: 90 / 0,72 = **125 l**. Si el depósito admite 182 l, no puedes llenarlo: la masa manda."
+          }
+        ]
+      },
+      {
+        "title": "Términos de combustible",
+        "text": [
+          "El combustible no utilizable va dentro de la BEM. Todo lo demás se cuenta en la hoja de carga, con estos nombres, que verás desarrollados en el bloque de combustible (030.10):"
+        ],
+        "bullets": [
+          "**Combustible utilizable**: el que el motor puede consumir; es el único que cuenta para la autonomía.",
+          "**Combustible no utilizable**: el que queda en depósitos y tuberías y no llega al motor; incluido en la BEM.",
+          "**Combustible total cargado** (block fuel o de rampa): el que hay a bordo al arrancar.",
+          "**Combustible de rodaje** (taxi fuel): puesta en marcha, rodaje y prueba de motor.",
+          "**Combustible de despegue**: el cargado menos el de rodaje.",
+          "**Combustible de viaje** (trip fuel): del despegue al aterrizaje en destino; es lo que restas para la LM.",
+          "**Reservas**: contingencia, alternativo y reserva final; y **combustible extra**, a decisión del piloto al mando."
+        ]
+      },
+      {
+        "title": "Conversiones de unidades",
+        "text": [
+          "El combustible se carga en litros (o en galones US en aviones americanos) pero la hoja de carga se hace en kilos (o libras). Convertir mal es el error más caro del examen y de la vida real: 100 l de AVGAS no son 100 kg, son 72 kg. Haz siempre la conversión en una línea aparte y escribe la unidad en cada número.",
+          "La densidad del AVGAS varía algo con la temperatura (en torno a 0,69–0,72 kg/l); en los cálculos de examen se usa **0,72 kg/l** salvo que el enunciado diga otra cosa. Si el enunciado da otra densidad (combustible de motores diésel, Jet A-1, en torno a 0,80 kg/l), usa la del enunciado."
+        ],
+        "table": {
+          "caption": "Factores de conversión de uso diario",
+          "head": ["Magnitud", "Equivalencia", "Comentario"],
+          "rows": [
+            ["Densidad del AVGAS 100LL", "0,72 kg/l", "Unas 6 lb por galón US"],
+            ["Galón US", "3,785 l", "El galón imperial (4,546 l) casi no se usa en aviación"],
+            ["Kilogramo", "2,205 lb", "1 lb = 0,4536 kg"],
+            ["Aceite de motor", "unos 0,9 kg/l", "7,5 lb por galón US"],
+            ["Pulgada", "2,54 cm", "Brazos de los POH americanos en pulgadas"]
+          ],
+          "src": "FAA-H-8083-1B cap. 2; FAA PHAK cap. 10"
+        },
+        "examples": [
+          { "q": "Pasa 40 galones US de AVGAS a kilos y a libras.", "a": "40 × 3,785 = 151,4 l. 151,4 × 0,72 = **109,0 kg**. 109,0 × 2,205 = **240 lb** (comprobación: 40 USG × 6 lb/USG = 240 lb)." },
+          { "q": "Un pasajero declara 176 lb. ¿Cuántos kilos son?", "a": "176 / 2,205 = **79,8 kg**. Si multiplicas en vez de dividir obtienes 388, un error que delata la falta de sentido común: un adulto no pesa 388 kg." }
+        ]
+      },
+      {
+        "title": "Masas máximas: resumen",
+        "text": [
+          "Los límites se tratan en 030.03, pero conviene fijar ya sus nombres. La **masa máxima de rampa** (o de rodaje) es la máxima para moverse en tierra; puede superar en unos kilos a la MTOM porque se gasta combustible en el rodaje. La **masa máxima de despegue** (MTOM) es la máxima al iniciar la carrera de despegue. La **masa máxima de aterrizaje** (MLM) es la máxima en la toma. La **masa máxima sin combustible** (MZFM) limita lo que puedes cargar en el fuselaje; por encima de ella, cualquier masa adicional tiene que ser combustible. En los monomotores de escuela lo habitual es que solo se publique la MTOM (y a veces la de rampa), con MLM igual a MTOM."
+        ]
+      },
+      {
+        "title": "Masas de pasajeros: reales o estándar",
+        "text": [
+          "En un vuelo privado (Part-NCO) **no hay tabla de masas estándar**: la regla es que la masa y el CG estén dentro de límites (NCO.POL.100), así que tienes que usar masas reales. Pregunta a cada pasajero, súmale la ropa y el equipaje de mano, y en caso de duda pésalo. En un avión de cuatro plazas, un error de 10 kg por persona puede sacarte de la envolvente.",
+          "Las masas estándar existen para el transporte comercial (Part-CAT). Su AMC permite, en aviones de menos de 10 asientos, usar la masa declarada por cada pasajero más al menos 4 kg de ropa y 6 kg de equipaje de mano, o bien las masas estándar de la tabla. Para aviones de 1 a 5 asientos de pasajero, la tabla da 104 kg por hombre, 86 kg por mujer y 35 kg por niño (con equipaje de mano). Para la tripulación técnica, 85 kg con equipaje de mano. Esas cifras son altas a propósito: en aviones pequeños la variación entre personas pesa mucho."
+        ],
+        "table": {
+          "caption": "Masas estándar de Part-CAT para aviones con 19 asientos de pasajero o menos (incluyen equipaje de mano)",
+          "head": ["Asientos de pasajero", "Hombre", "Mujer", "Niño"],
+          "rows": [
+            ["1 a 5", "104 kg", "86 kg", "35 kg"],
+            ["6 a 9", "96 kg", "78 kg", "35 kg"],
+            ["10 a 19", "92 kg", "74 kg", "35 kg"]
+          ],
+          "src": "AMC1 CAT.POL.MAB.100(e), tabla 2; tripulación: AMC2 CAT.POL.MAB.100(d)"
+        },
+        "note": { "kind": "tip", "text": "Si un enunciado del examen da masas estándar, úsalas tal cual. Si no las da, usa las masas reales que te ofrezca." }
+      }
+    ],
+    "numbers": [
+      "AVGAS: 0,72 kg/l (unas 6 lb por galón US)",
+      "1 galón US = 3,785 l; 1 kg = 2,205 lb; aceite ≈ 0,9 kg/l",
+      "BEM: incluye combustible no utilizable y aceite (aviones modernos: aceite completo)",
+      "Carga útil = MTOM − BEM (incluye el combustible utilizable)",
+      "Carga de pago: pasajeros, equipaje, carga y lastre (sin combustible ni tripulación)",
+      "TOM = masa de rampa − rodaje; LM = TOM − combustible de viaje",
+      "Part-CAT, 1 a 5 asientos: hombre 104 kg, mujer 86 kg, niño 35 kg; tripulación 85 kg",
+      "Part-NCO no fija masas estándar: masas reales"
+    ],
+    "traps": [
+      "Sumar litros como si fueran kilos: 100 l de AVGAS pesan 72 kg.",
+      "Confundir kilos y libras: dividir entre 2,205 para pasar de libras a kilos.",
+      "Contar dos veces el aceite o el combustible no utilizable, que ya están en la BEM.",
+      "Confundir carga útil (incluye combustible) con carga de pago (no lo incluye).",
+      "Restar el combustible de rodaje para la masa de aterrizaje, o el de viaje para la de despegue.",
+      "Usar la BEM del folleto del fabricante en lugar de la del informe de pesada del avión."
+    ],
+    "sources": [
+      { "title": "EASA Easy Access Rules for Air Operations: Anexo I (definiciones), NCO.POL.100, AMC1 y AMC2 CAT.POL.MAB.100", "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations" },
+      { "title": "EASA AMC1 FCL.210, temario 030 (031 02 01 Terminology)", "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011" },
+      { "title": "FAA Aircraft Weight and Balance Handbook (FAA-H-8083-1B), cap. 1 y 2", "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation" },
+      { "title": "FAA Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 10", "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak" }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "030.02.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La masa en vacío básica (BEM) de un avión ligero moderno incluye:",
+      "options": ["El combustible utilizable y el aceite", "El piloto y el combustible no utilizable", "El combustible no utilizable y el aceite del motor", "Solo la célula y el motor, sin líquidos"],
+      "correct": 2,
+      "why": "La BEM incluye la célula, el motor, el equipo fijo, el combustible no utilizable y los líquidos de funcionamiento, normalmente con el aceite completo. No incluye ni personas ni combustible utilizable.",
+      "whyNot": ["El combustible utilizable no forma parte de la BEM; se suma en la hoja de carga.", "El piloto nunca está incluido en la BEM.", null, "La BEM sí incluye el combustible no utilizable y el aceite."],
+      "ref": "FAA-H-8083-1B cap. 1; AMC1 FCL.210 (031 02 01 01)"
+    },
+    {
+      "id": "030.02.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "La carga de pago (traffic load) está formada por:",
+      "options": ["Pasajeros, equipaje y carga, incluido el lastre si lo hay", "Pasajeros, equipaje y combustible utilizable", "Todo lo que se suma a la BEM, incluido el combustible", "La tripulación y su equipaje"],
+      "correct": 0,
+      "why": "Air Ops define la carga de pago como la masa total de pasajeros, equipaje, carga y equipo especial a bordo, incluido el lastre. No incluye combustible ni tripulación.",
+      "whyNot": [null, "El combustible nunca es carga de pago.", "Eso se parece a la carga útil, que sí incluye el combustible.", "La tripulación forma parte de la masa operativa en seco, no de la carga de pago."],
+      "ref": "Reglamento (UE) 965/2012, Anexo I, definición 120 (traffic load)"
+    },
+    {
+      "id": "030.02.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un POH, la carga útil (useful load) es:",
+      "options": ["Pasajeros y equipaje solamente", "La MTOM menos la BEM, que incluye piloto, pasajeros, equipaje y combustible utilizable", "La ZFM menos la BEM", "La MTOM menos la ZFM"],
+      "correct": 1,
+      "why": "Carga útil = MTOM − BEM: todo lo que se puede subir al avión, incluido el combustible utilizable. Por eso se reparte entre personas y combustible.",
+      "whyNot": ["Eso es la carga de pago, que no incluye ni el piloto ni el combustible.", null, "ZFM − BEM excluye el combustible, que sí es carga útil.", "MTOM − ZFM es solo el combustible máximo que cabe por masa."],
+      "ref": "FAA-H-8083-1B cap. 1; FAA PHAK cap. 10"
+    },
+    {
+      "id": "030.02.004",
+      "type": "concepto",
+      "level": 1,
+      "q": "La masa sin combustible (ZFM) es:",
+      "options": ["La BEM más el aceite", "La masa al aterrizaje sin la reserva", "La masa de rampa menos el combustible de rodaje", "La masa total del avión cargado sin el combustible utilizable"],
+      "correct": 3,
+      "why": "ZFM = BEM + piloto + pasajeros + equipaje y carga: todo menos el combustible utilizable.",
+      "whyNot": ["El aceite ya está en la BEM y la ZFM incluye además las personas y el equipaje.", "La masa al aterrizaje incluye el combustible que queda, reservas incluidas.", "Eso es la masa al despegue.", null],
+      "ref": "AMC1 FCL.210 (031 02 01 01); FAA-H-8083-1B"
+    },
+    {
+      "id": "030.02.005",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Por qué algunos aviones tienen una masa máxima sin combustible (MZFM)?",
+      "options": ["Porque el combustible en las alas alivia la flexión en la raíz y la carga del fuselaje no", "Para limitar el combustible de rodaje", "Porque el tren no soporta la masa sin combustible", "Para asegurar la autonomía mínima"],
+      "correct": 0,
+      "why": "El combustible en las alas actúa contra la sustentación y reduce el momento de flexión en la raíz del ala. La masa en el fuselaje no lo alivia, así que se limita: por encima de la MZFM, toda masa adicional tiene que ser combustible.",
+      "whyNot": [null, "El combustible de rodaje no tiene relación con la MZFM.", "El tren se limita con la MLM y la masa de rampa.", "La autonomía se regula con las normas de combustible, no con la MZFM."],
+      "ref": "AMC1 FCL.210 (031 02 02 01); FAA-H-8083-1B"
+    },
+    {
+      "id": "030.02.006",
+      "type": "concepto",
+      "level": 1,
+      "q": "La masa de rampa se diferencia de la masa al despegue en:",
+      "options": ["El combustible de viaje", "La tripulación", "El combustible de rodaje", "El combustible no utilizable"],
+      "correct": 2,
+      "why": "Masa de rampa = masa al despegue + combustible de rodaje (puesta en marcha, rodaje y prueba de motor).",
+      "whyNot": ["El combustible de viaje separa la masa al despegue de la de aterrizaje.", "La tripulación está en ambas.", null, "El combustible no utilizable está en la BEM y por tanto en ambas."],
+      "ref": "AMC1 FCL.210 (031 02 01 01 y 02)"
+    },
+    {
+      "id": "030.02.007",
+      "type": "calculo",
+      "level": 1,
+      "q": "¿Cuánto pesan 150 litros de AVGAS (0,72 kg/l)?",
+      "options": ["150 kg", "108 kg", "208 kg", "238 kg"],
+      "correct": 1,
+      "why": "150 l × 0,72 kg/l = 108 kg.",
+      "whyNot": ["Es tomar litros por kilos.", null, "Es dividir entre la densidad (150 / 0,72) en lugar de multiplicar.", "Son las libras (108 × 2,205), no los kilos."],
+      "ref": "FAA-H-8083-1B cap. 2"
+    },
+    {
+      "id": "030.02.008",
+      "type": "calculo",
+      "level": 2,
+      "q": "Cargas 40 galones US de AVGAS. Su masa es aproximadamente:",
+      "options": ["151 kg", "240 kg", "29 kg", "109 kg"],
+      "correct": 3,
+      "why": "40 USG × 3,785 = 151,4 l; 151,4 × 0,72 = 109 kg (unas 240 lb).",
+      "whyNot": ["Son los litros, no los kilos.", "Son libras (40 × 6 lb), no kilos.", "Es multiplicar los galones por 0,72 sin pasarlos antes a litros.", null],
+      "ref": "FAA-H-8083-1B cap. 2"
+    },
+    {
+      "id": "030.02.009",
+      "type": "calculo",
+      "level": 2,
+      "q": "MTOM 1100 kg y BEM 690 kg. Ocupantes 240 kg y equipaje 40 kg. ¿Cuánto AVGAS (0,72 kg/l) puedes cargar como máximo por masa?",
+      "options": ["130 l", "94 l", "180 l", "59 l"],
+      "correct": 2,
+      "why": "Combustible máximo = 1100 − (690 + 240 + 40) = 130 kg. 130 / 0,72 = 180 l.",
+      "whyNot": ["Son los kilos, no los litros.", "Es multiplicar 130 por 0,72 en lugar de dividir.", null, "Es dividir entre 2,205, el factor de las libras."],
+      "ref": "FAA PHAK cap. 10"
+    },
+    {
+      "id": "030.02.010",
+      "type": "calculo",
+      "level": 2,
+      "q": "La masa de rampa es 1080 kg y prevés gastar 6 litros en el rodaje (AVGAS 0,72 kg/l). La masa al despegue es:",
+      "options": ["1075,7 kg", "1074,0 kg", "1084,3 kg", "1080,0 kg"],
+      "correct": 0,
+      "why": "Rodaje: 6 × 0,72 = 4,3 kg. TOM = 1080 − 4,3 = 1075,7 kg.",
+      "whyNot": [null, "Has restado 6 kg en lugar de 6 litros.", "Has sumado el combustible de rodaje en lugar de restarlo.", "El combustible de rodaje se gasta antes del despegue y hay que restarlo."],
+      "ref": "AMC1 FCL.210 (031 02 03)"
+    },
+    {
+      "id": "030.02.011",
+      "type": "calculo",
+      "level": 2,
+      "q": "Despegas con 1050 kg y el combustible de viaje es de 85 litros de AVGAS (0,72 kg/l). La masa al aterrizaje es:",
+      "options": ["965,0 kg", "988,8 kg", "915,1 kg", "1111,2 kg"],
+      "correct": 1,
+      "why": "Viaje: 85 × 0,72 = 61,2 kg. LM = 1050 − 61,2 = 988,8 kg.",
+      "whyNot": ["Has restado 85 kg en lugar de 85 litros.", null, "Has restado 135 lb como si fueran kilos (61,2 × 2,205).", "Has sumado el combustible en lugar de restarlo."],
+      "ref": "AMC1 FCL.210 (031 02 03)"
+    },
+    {
+      "id": "030.02.012",
+      "type": "lectura",
+      "level": 2,
+      "q": "Con los datos de la hoja, ¿cuál es la masa sin combustible (ZFM)?",
+      "data": "Masa en vacío básica ... 702 kg\nPiloto ................  85 kg\nPasajero delantero ....  68 kg\nEquipaje ..............  25 kg\nCombustible ........... 120 l (0,72 kg/l)",
+      "options": ["966,4 kg", "1000,0 kg", "795,0 kg", "880,0 kg"],
+      "correct": 3,
+      "why": "ZFM = 702 + 85 + 68 + 25 = 880 kg. El combustible no entra en la ZFM.",
+      "whyNot": ["Es la masa con combustible (880 + 86,4), es decir, la TOM.", "Has sumado los 120 l como si fueran kilos.", "Has dejado fuera al piloto; la ZFM incluye a todos los ocupantes.", null],
+      "ref": "AMC1 FCL.210 (031 02 01 01)"
+    },
+    {
+      "id": "030.02.013",
+      "type": "regla",
+      "level": 2,
+      "q": "Para calcular la masa de los pasajeros en un vuelo privado con un PA-28 (Part-NCO):",
+      "options": ["Se usa 75 kg por persona, según SERA", "Se usan masas reales, porque Part-NCO no fija masas estándar", "Se usa 84 kg por adulto, según Part-NCO", "Se usa 104 kg por adulto, obligatoriamente"],
+      "correct": 1,
+      "why": "Part-NCO solo exige que masa y CG estén dentro de los límites del AFM (NCO.POL.100); no publica masas estándar, así que se usan masas reales con ropa y equipaje de mano.",
+      "whyNot": ["SERA no trata de masas de pasajeros.", null, "84 kg es la masa estándar de adulto de Part-CAT para aviones de 30 asientos o más.", "104 kg es la cifra de Part-CAT para aviones de 1 a 5 asientos, no obligatoria en Part-NCO."],
+      "ref": "NCO.POL.100; AMC1 CAT.POL.MAB.100(e)"
+    },
+    {
+      "id": "030.02.014",
+      "type": "regla",
+      "level": 3,
+      "q": "En la tabla de masas estándar de Part-CAT para aviones de 1 a 5 asientos de pasajero, un hombre adulto, con su equipaje de mano, cuenta como:",
+      "options": ["104 kg", "88 kg", "84 kg", "75 kg"],
+      "correct": 0,
+      "why": "AMC1 CAT.POL.MAB.100(e), tabla 2: para 1 a 5 asientos, 104 kg por hombre, 86 kg por mujer y 35 kg por niño, con equipaje de mano.",
+      "whyNot": [null, "88 kg es el valor de hombre en aviones de 20 asientos o más.", "84 kg es el valor «todos adultos» para 30 asientos o más.", "75 kg es la masa estándar de la tripulación de cabina."],
+      "ref": "AMC1 CAT.POL.MAB.100(e), tabla 2",
+      "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+    },
+    {
+      "id": "030.02.015",
+      "type": "concepto",
+      "level": 1,
+      "q": "El combustible no utilizable:",
+      "options": ["Se suma a la carga útil en la hoja de carga", "Cuenta para la autonomía en emergencia", "Está incluido en la BEM y no cuenta para la autonomía", "Se resta de la masa al despegue"],
+      "correct": 2,
+      "why": "El combustible no utilizable queda en depósitos y tuberías y el motor no puede aprovecharlo con seguridad; por eso va dentro de la BEM y no se cuenta como autonomía.",
+      "whyNot": ["Ya está en la BEM: sumarlo otra vez es contarlo dos veces.", "Precisamente no se puede contar con él en vuelo.", null, "No se resta: forma parte de la masa del avión en todo momento."],
+      "ref": "FAA-H-8083-1B cap. 1; FAA PHAK cap. 10"
+    },
+    {
+      "id": "030.02.016",
+      "type": "calculo",
+      "level": 2,
+      "q": "El avión se pesó sin aceite y el POH dice que la BEM debe incluir el aceite completo, 7,5 litros (0,9 kg/l). ¿Cuánto hay que sumar a la masa pesada?",
+      "options": ["7,5 kg", "5,4 kg", "8,3 kg", "6,8 kg"],
+      "correct": 3,
+      "why": "7,5 l × 0,9 kg/l = 6,75 kg ≈ 6,8 kg.",
+      "whyNot": ["Es tomar litros por kilos.", "Es usar la densidad del AVGAS (0,72) en lugar de la del aceite.", "Es dividir entre la densidad en lugar de multiplicar.", null],
+      "ref": "FAA-H-8083-1B cap. 2"
+    },
+    {
+      "id": "030.02.017",
+      "type": "concepto",
+      "level": 2,
+      "q": "La masa operativa en seco (DOM) se define como la masa del avión preparado para un tipo de operación:",
+      "options": ["Con todo el combustible y sin carga de pago", "Sin combustible utilizable y sin carga de pago", "Sin tripulación ni combustible", "Con la carga de pago y sin combustible"],
+      "correct": 1,
+      "why": "Air Ops: la DOM es la masa total del avión preparado para un tipo de operación concreto, excluidos el combustible utilizable y la carga de pago. Incluye la tripulación.",
+      "whyNot": ["Con el combustible de despegue sería la masa operativa, no la DOM.", null, "La DOM incluye la tripulación.", "Con la carga de pago y sin combustible es la ZFM."],
+      "ref": "Reglamento (UE) 965/2012, Anexo I, definición 41"
+    }
+  ],
+  "cards": [
+    { "id": "c.030.02.01", "front": "Qué incluye la masa en vacío básica (BEM)", "back": "Célula, motor, equipo fijo, combustible no utilizable y aceite (completo en aviones modernos)" },
+    { "id": "c.030.02.02", "front": "Carga útil frente a carga de pago", "back": "Carga útil = MTOM − BEM (incluye combustible); carga de pago = pasajeros, equipaje, carga y lastre" },
+    { "id": "c.030.02.03", "front": "Densidad del AVGAS para los cálculos", "back": "0,72 kg/l (unas 6 lb por galón US)" },
+    { "id": "c.030.02.04", "front": "1 galón US y 1 kg en otras unidades", "back": "1 USG = 3,785 l; 1 kg = 2,205 lb" },
+    { "id": "c.030.02.05", "front": "Cadena de masas", "back": "BEM + ocupantes y carga = ZFM; + combustible = rampa; − rodaje = TOM; − viaje = LM" }
+  ]
+}

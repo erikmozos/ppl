@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320">
+  <title>Equilibrio longitudinal: sustentación, peso en el CG y carga hacia abajo en la cola, y efecto de adelantar o atrasar el CG</title>
+  <defs>
+    <marker id="030-equilibrio-flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+    <marker id="030-equilibrio-flecha-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker>
+  </defs>
+  <path d="M60 140 C60 126 80 120 110 119 L540 124 L580 92 L600 92 L592 132 L540 148 L110 152 C80 152 60 150 60 140 Z" class="soft"/>
+  <path d="M220 150 C240 140 330 138 370 146 C330 156 250 158 220 150 Z" class="ac"/>
+  <line x1="300" y1="138" x2="300" y2="48" class="ac-ln thick" marker-end="url(#030-equilibrio-flecha-a)"/>
+  <text x="310" y="58" class="txa b">sustentación del ala</text>
+  <line x1="262" y1="140" x2="262" y2="226" class="ln thick" marker-end="url(#030-equilibrio-flecha)"/>
+  <text x="252" y="222" class="tx b" text-anchor="end">peso (en el CG)</text>
+  <line x1="566" y1="126" x2="566" y2="182" class="wa-ln thick" marker-end="url(#030-equilibrio-flecha)"/>
+  <text x="560" y="200" class="txw b" text-anchor="end">carga hacia abajo en la cola</text>
+  <circle cx="262" cy="134" r="8" class="bg-fill"/>
+  <circle cx="262" cy="134" r="8" class="ln"/>
+  <path d="M262 126 A8 8 0 0 1 270 134 L262 134 Z" class="ink-fill"/>
+  <path d="M262 142 A8 8 0 0 1 254 134 L262 134 Z" class="ink-fill"/>
+  <rect x="222" y="100" width="68" height="10" class="ok"/>
+  <text x="214" y="110" class="txo" text-anchor="end">margen de CG permitido</text>
+  <text x="20" y="258" class="tx b">CG adelantado</text>
+  <text x="20" y="276" class="tx2">más carga en la cola, más sustentación necesaria:</text>
+  <text x="20" y="292" class="tx2">Vs mayor, más resistencia, más estable, mandos pesados</text>
+  <text x="20" y="308" class="tx2">y puede faltar timón de profundidad para rotar o recoger</text>
+  <text x="620" y="258" class="tx b" text-anchor="end">CG atrasado</text>
+  <text x="620" y="276" class="tx2" text-anchor="end">menos estable y mandos ligeros; pasado el límite</text>
+  <text x="620" y="292" class="tx2" text-anchor="end">trasero, inestable: la pérdida y la barrena pueden</text>
+  <text x="620" y="308" class="tx2" text-anchor="end">ser irrecuperables</text>
+</svg>

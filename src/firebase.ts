@@ -11,7 +11,8 @@ import {
 } from 'firebase/firestore'
 import { useSyncExternalStore } from 'react'
 import type { Aircraft } from './types'
-import { actions, subscribe, getState } from './store'
+import { actions, subscribe, getState, type Study } from './store'
+import { studySummary } from './study/summary'
 import { FIREBASE_CONFIG } from './firebase.config'
 
 const env = import.meta.env
@@ -53,33 +54,47 @@ export const useSession = () => useSyncExternalStore(cb => { subs.add(cb); retur
 /* ───────────── progreso en la nube ───────────── */
 
 const progressRef = (uid: string) => doc(db!, 'users', uid, 'data', 'progress')
+const studyRef = (uid: string) => doc(db!, 'users', uid, 'data', 'study')
 const aircraftCol = (uid: string) => collection(db!, 'users', uid, 'aircraft')
 const MAX_DOC = 900_000 // Firestore admite 1 MiB por documento
 
 let unsubStore: (() => void) | null = null
 let pushTimer: ReturnType<typeof setTimeout> | null = null
 let applyingRemote = false
+let pushedStudy: Study | null = null
 
 /** Descarga el progreso del usuario; si no hay nada en la nube, sube lo que haya en este navegador */
 async function pullProgress(uid: string) {
   setSession({ syncing: true })
   const snap = await getDoc(progressRef(uid))
+  const sSnap = await getDoc(studyRef(uid))
   const acs = await getDocs(aircraftCol(uid))
   const customAc = acs.docs.map(d => d.data().aircraft as Aircraft)
   if (snap.exists()) {
+    const remoteStudy = sSnap.exists() ? (sSnap.data().study as Study) : getState().study
     applyingRemote = true
-    actions.restore({ ...(snap.data().data ?? {}), customAc })
+    actions.restore({ ...(snap.data().data ?? {}), customAc, study: remoteStudy })
     applyingRemote = false
+    pushedStudy = sSnap.exists() ? getState().study : null
+    if (!sSnap.exists()) await pushStudy(uid)
   } else {
     await pushProgress(uid)
   }
   setSession({ syncing: false, lastSync: Date.now() })
 }
 
+/** Sube el estudio del PPL (respuestas, repaso, simulacros) a su propio documento, con un resumen para el admin */
+async function pushStudy(uid: string) {
+  const study = getState().study
+  await setDoc(studyRef(uid), { study, summary: studySummary(study), updatedAt: serverTimestamp() })
+  pushedStudy = study
+}
+
 /** Sube el progreso (y cada cabina propia en su documento si cabe en el límite de Firestore) */
 async function pushProgress(uid: string) {
-  const { attempts, flows, cards, quiz, spots, customAc } = getState()
+  const { attempts, flows, cards, quiz, spots, customAc, study } = getState()
   setSession({ syncing: true })
+  if (study !== pushedStudy) await pushStudy(uid)
   await setDoc(progressRef(uid), {
     data: { attempts, flows, cards, quiz, spots },
     summary: {
@@ -170,6 +185,7 @@ export async function logout() {
   applyingRemote = true
   actions.restore({})
   applyingRemote = false
+  pushedStudy = null
 }
 export async function resetPassword(email: string) {
   if (!auth) return
@@ -192,14 +208,15 @@ function authError(e: unknown) {
 
 /* ───────────── administración (solo rol admin; lo garantizan las reglas de Firestore) ───────────── */
 
-export interface UserRow extends Profile { summary?: Record<string, number>; updatedAt?: Timestamp }
+export interface UserRow extends Profile { summary?: Record<string, number>; updatedAt?: Timestamp; study?: ReturnType<typeof studySummary> }
 
 export async function listUsers(): Promise<UserRow[]> {
   const snap = await getDocs(collection(db!, 'users'))
   const rows = await Promise.all(snap.docs.map(async d => {
     const p = d.data() as Profile
     const prog = await getDoc(progressRef(d.id)).catch(() => null)
-    return { ...p, uid: d.id, summary: prog?.data()?.summary, updatedAt: prog?.data()?.updatedAt }
+    const st = await getDoc(studyRef(d.id)).catch(() => null)
+    return { ...p, uid: d.id, summary: prog?.data()?.summary, updatedAt: prog?.data()?.updatedAt, study: st?.data()?.summary }
   }))
   return rows.sort((a, b) => (a.role === b.role ? a.email.localeCompare(b.email) : a.role === 'admin' ? -1 : 1))
 }
@@ -207,6 +224,11 @@ export async function listUsers(): Promise<UserRow[]> {
 export async function getUserProgress(uid: string) {
   const snap = await getDoc(progressRef(uid))
   return snap.exists() ? snap.data() : null
+}
+
+export async function getUserStudy(uid: string) {
+  const snap = await getDoc(studyRef(uid))
+  return snap.exists() ? (snap.data() as { study: Study; summary: ReturnType<typeof studySummary> }) : null
 }
 
 /**
@@ -237,6 +259,7 @@ export async function updateUser(uid: string, patch: Partial<Pick<Profile, 'name
 
 export async function resetUserProgress(uid: string) {
   await deleteDoc(progressRef(uid))
+  await deleteDoc(studyRef(uid))
   const acs = await getDocs(aircraftCol(uid))
   for (const d of acs.docs) await deleteDoc(d.ref)
 }

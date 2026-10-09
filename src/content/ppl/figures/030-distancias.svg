@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330">
+  <title>Distancias declaradas TORA, TODA, ASDA y LDA con umbral desplazado, zona de parada (stopway) y zona libre de obstáculos (clearway)</title>
+  <defs>
+    <marker id="030-distancias-flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+  </defs>
+  <text x="20" y="26" class="tx b">Despegue hacia la derecha →</text>
+  <rect x="450" y="60" width="170" height="88" class="ok"/>
+  <text x="620" y="50" class="txo b" text-anchor="end">zona libre de obstáculos (CWY)</text>
+  <rect x="30" y="80" width="420" height="44" class="soft"/>
+  <rect x="450" y="80" width="56" height="44" class="wa"/>
+  <text x="478" y="107" class="txw b" text-anchor="middle">SWY</text>
+  <text x="536" y="140" class="txw" text-anchor="middle">zona de parada</text>
+  <line x1="40" y1="102" x2="440" y2="102" class="ln2 dash"/>
+  <line x1="120" y1="80" x2="120" y2="124" class="ln thick"/>
+  <path d="M44 92 L60 102 L44 112 M74 92 L90 102 L74 112" class="ln"/>
+  <text x="76" y="140" class="tx2" text-anchor="middle">umbral desplazado</text>
+  <text x="120" y="74" class="tx2" text-anchor="middle">umbral</text>
+  <text x="240" y="98" class="tx b" text-anchor="middle">PISTA</text>
+  <line x1="30" y1="186" x2="448" y2="186" class="ln" marker-start="url(#030-distancias-flecha)" marker-end="url(#030-distancias-flecha)"/>
+  <text x="240" y="180" class="tx b" text-anchor="middle">TORA: pista disponible para la carrera</text>
+  <line x1="30" y1="218" x2="618" y2="218" class="ok-ln" marker-start="url(#030-distancias-flecha)" marker-end="url(#030-distancias-flecha)"/>
+  <text x="324" y="212" class="txo b" text-anchor="middle">TODA = TORA + zona libre de obstáculos</text>
+  <line x1="30" y1="250" x2="504" y2="250" class="wa-ln" marker-start="url(#030-distancias-flecha)" marker-end="url(#030-distancias-flecha)"/>
+  <text x="267" y="244" class="txw b" text-anchor="middle">ASDA = TORA + zona de parada</text>
+  <line x1="122" y1="290" x2="448" y2="290" class="ac-ln" marker-start="url(#030-distancias-flecha)" marker-end="url(#030-distancias-flecha)"/>
+  <text x="285" y="284" class="txa b" text-anchor="middle">LDA: desde el umbral desplazado</text>
+  <line x1="30" y1="124" x2="30" y2="300" class="ln2 dash"/>
+  <line x1="450" y1="124" x2="450" y2="300" class="ln2 dash"/>
+  <line x1="120" y1="124" x2="120" y2="300" class="ln2 dash"/>
+  <text x="30" y="318" class="tx2">inicio de pista</text>
+  <text x="450" y="318" class="tx2" text-anchor="middle">fin de pista</text>
+</svg>

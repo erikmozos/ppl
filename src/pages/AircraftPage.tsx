@@ -125,7 +125,7 @@ function Guide({ ac }: { ac: Aircraft }) {
         ))}
         {SOURCES[ac.id] && (
           <div className="card">
-            <h3>📘 Manual de referencia</h3>
+            <h3>Manual de referencia</h3>
             <p className="small">{SOURCES[ac.id].manual}</p>
             <p className="small muted">Nivel: {SOURCES[ac.id].level}. {SOURCES[ac.id].note}</p>
           </div>
@@ -256,7 +256,7 @@ function Flashcards({ ac }: { ac: Aircraft }) {
             <>
               <h2 className="flash-name">{current.label}</h2>
               <p className="muted small">{current.desc}</p>
-              {result && <p className={result.ok ? 'ok-text' : 'bad-text'}>{result.ok ? '✓ ¡Correcto!' : `✗ Era el señalado en ámbar (${ac.panels.find(p => p.id === current.panel)?.name ?? ''})`}</p>}
+              {result && <p className={result.ok ? 'ok-text' : 'bad-text'}>{result.ok ? 'Correcto' : `✗ Era el señalado en ámbar (${ac.panels.find(p => p.id === current.panel)?.name ?? ''})`}</p>}
               <div className="row gap">
                 {result ? <button className="btn primary" onClick={next}>Siguiente →</button> : <button className="btn ghost" onClick={() => { if (current) answer({ ...current, id: '__skip' } as Control) }}>No lo sé</button>}
               </div>

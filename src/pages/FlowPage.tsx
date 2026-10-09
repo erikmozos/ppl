@@ -30,7 +30,7 @@ export function FlowPage({ ac, flowId, mode }: { ac: Aircraft; flowId: string; m
           <SourceBadge acId={ac.id} flowId={flow.id} custom={flow.custom} />
         </div>
         <div className="row gap wrap-row">
-        <button className="btn primary" onClick={() => setTutorial(true)}>🎬 Tutorial guiado</button>
+        <button className="btn primary" onClick={() => setTutorial(true)}>Tutorial guiado</button>
         <div className="seg">
           <a className={mode === 'study' ? 'on' : ''} href={`#/ac/${ac.id}/flow/${flow.id}`}>Estudio</a>
           <a className={mode === 'review' ? 'on' : ''} href={`#/ac/${ac.id}/flow/${flow.id}?mode=review`}>Repaso</a>
@@ -41,7 +41,7 @@ export function FlowPage({ ac, flowId, mode }: { ac: Aircraft; flowId: string; m
       {mode === 'study' ? <Study ac={ac} steps={flow.steps} title={flow.name} suspended={tutorial} /> : <Review ac={ac} steps={flow.steps} flowId={flow.id} flowName={flow.name} />}
       {mode === 'study' && (VIDEOS[ac.id] ?? []).some(v => v.flow === flow.id) && (
         <section>
-          <h2 className="sec">🎥 Vídeos de este procedimiento</h2>
+          <h2 className="sec">Vídeos de este procedimiento</h2>
           <VideoList videos={(VIDEOS[ac.id] ?? []).filter(v => v.flow === flow.id)} />
         </section>
       )}
@@ -171,7 +171,7 @@ function Study({ ac, steps: all, title, suspended }: { ac: Aircraft; steps: Step
         <div className="player card">
           <button className="btn sm" onClick={() => { stop(); setK(0) }} aria-label="Reiniciar">⏮</button>
           <button className="btn sm" onClick={() => goTo(kk - 1)} aria-label="Anterior">◀</button>
-          <button className="btn primary sm" onClick={() => (playing ? stop() : play())}>{playing ? '❚❚ Pausa' : '▶ Reproducir'}</button>
+          <button className="btn primary sm" onClick={() => (playing ? stop() : play())}>{playing ? 'Pausa' : 'Reproducir'}</button>
           <button className="btn sm" onClick={() => goTo(kk + 1)} aria-label="Siguiente">▶</button>
           <button className="btn sm" onClick={() => { stop(); setK(n) }}>Ver todo</button>
           <span className="muted small">{kk} / {n}</span>
@@ -189,13 +189,13 @@ function Study({ ac, steps: all, title, suspended }: { ac: Aircraft; steps: Step
             <div>
               <div className="now-c">{curC?.label} {cur.r && <span className="role" style={{ ['--c' as string]: roleColor(ac.roles, cur.r) }}>{cur.r}</span>}</div>
               <div className="now-a">{cur.a}</div>
-              {cur.w && <div className="why">💬 {cur.w}</div>}
-              {cur.n && <div className="note">📎 {cur.n}</div>}
+              {cur.w && <div className="why">{cur.w}</div>}
+              {cur.n && <div className="note">{cur.n}</div>}
               {contextFor(ac, cur.c) && (
                 <details className="ctx" open={showCtx} onToggle={e => setShowCtx((e.target as HTMLDetailsElement).open)}>
-                  <summary>➕ Más contexto <span className="muted small">— si no terminas de entender este paso</span></summary>
+                  <summary>Más contexto <span className="muted small">— si no terminas de entender este paso</span></summary>
                   <p>{contextFor(ac, cur.c)}</p>
-                  {sp.prefs.enabled && <button className="btn ghost sm" onClick={() => { run.current++; setPlaying(false); speak(contextFor(ac, cur.c)!) }}>🔊 Escuchar el contexto</button>}
+                  {sp.prefs.enabled && <button className="btn ghost sm" onClick={() => { run.current++; setPlaying(false); speak(contextFor(ac, cur.c)!) }}>Escuchar el contexto</button>}
                 </details>
               )}
             </div>
@@ -205,7 +205,7 @@ function Study({ ac, steps: all, title, suspended }: { ac: Aircraft; steps: Step
       <aside className="split-side">
         <RoleToggles ac={ac} steps={all} active={active} setActive={a => { stop(); setActive(a); setK(1) }} />
         <div className="card row gap wrap-row">
-          <label className="check"><input type="checkbox" checked={narrate} onChange={e => { setNarrate(e.target.checked); if (!e.target.checked) stopSpeech() }} /> 🔊 Narrar cada paso</label>
+          <label className="check"><input type="checkbox" checked={narrate} onChange={e => { setNarrate(e.target.checked); if (!e.target.checked) stopSpeech() }} /> Narrar cada paso</label>
           <label className="check"><input type="checkbox" checked={detailed} onChange={e => setDetailed(e.target.checked)} /> Con explicación</label>
           <label className="check"><input type="checkbox" checked={readCtx} onChange={e => setReadCtx(e.target.checked)} /> Leer también el contexto ampliado</label>
         </div>
@@ -216,7 +216,7 @@ function Study({ ac, steps: all, title, suspended }: { ac: Aircraft; steps: Step
               <div>
                 <b>{controlById(ac, st.c)?.label ?? st.c}</b>
                 <span>{st.a}</span>
-                {st.n && <em>📎 {st.n}</em>}
+                {st.n && <em>{st.n}</em>}
               </div>
             </li>
           ))}
@@ -336,9 +336,9 @@ function Review({ ac, steps: all, flowId, flowName }: { ac: Aircraft; steps: Ste
             <div className="counters">
               <span className="ok-text">✓ {ok}</span>
               <span className="bad-text">✗ {bad}</span>
-              <span className="muted">💡 {hints}</span>
+              <span className="muted">{hints} pistas</span>
             </div>
-            {hint >= 1 && target && <div className="hint-box">💡 {target.a}</div>}
+            {hint >= 1 && target && <div className="hint-box">{target.a}</div>}
             {misses > 0 && <p className="small bad-text">Fallos en este paso: {misses}/3 {misses === 2 && '(uno más y se revela)'}</p>}
             <div className="row gap wrap-row">
               <button className="btn" onClick={takeHint} disabled={hint >= 2}>{hint === 0 ? 'Pista 1 · acción' : hint === 1 ? 'Pista 2 · ubicación' : 'Sin más pistas'}</button>

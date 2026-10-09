@@ -1,0 +1,242 @@
+{
+  "lesson": {
+    "id": "030.01",
+    "title": "Por qué importan masa y CG",
+    "summary": "Qué limita la masa de un avión (estructura y performance) y qué pasa cuando el centro de gravedad se adelanta o se atrasa: estabilidad, control y actuaciones.",
+    "objectives": [
+      "Explicar por qué existe una masa máxima estructural y qué ocurre con el margen de resistencia si vuelas con sobrecarga",
+      "Enumerar los efectos de una masa mayor sobre la velocidad de pérdida, el despegue, el ascenso, el alcance y el aterrizaje",
+      "Calcular la nueva velocidad de pérdida con otra masa (Vs proporcional a la raíz de la masa)",
+      "Describir los efectos de un CG adelantado y de uno atrasado sobre la estabilidad, el control y la performance",
+      "Saber qué exige Part-NCO al piloto al mando sobre la carga, la masa y el CG"
+    ],
+    "sections": [
+      {
+        "title": "Dos límites distintos: cuánto pesa y dónde pesa",
+        "text": [
+          "Antes de cada vuelo tienes que comprobar dos cosas que no dependen una de la otra. La primera es **cuánto pesa** el avión: la masa total no puede superar las masas máximas que fija el manual de vuelo (AFM o POH). La segunda es **dónde está el centro de gravedad (CG)**, el punto en el que se puede considerar concentrada toda la masa: tiene que quedar entre un límite delantero y uno trasero.",
+          "Un avión puede ir por debajo de su masa máxima y aun así ser peligroso si el CG está fuera de límites, por ejemplo con dos pasajeros pesados detrás y la bodega llena. Y al revés: un CG perfecto no compensa una sobrecarga. Por eso la hoja de carga siempre da dos resultados, masa y CG, y los dos tienen que estar dentro de la envolvente al despegue, durante el vuelo y al aterrizaje.",
+          "Este bloque explica el porqué. Los términos de masa están en 030.02, los límites concretos en 030.03 y el cálculo paso a paso en 030.04."
+        ]
+      },
+      {
+        "title": "Límites estructurales de masa",
+        "text": [
+          "La estructura se diseña para soportar un **factor de carga límite** (n, en g) a la masa máxima de despegue. El factor de carga es la sustentación dividida por el peso: a 2 g las alas sostienen el doble del peso. Si la masa es mayor que la certificada, a cada g la fuerza real sobre las alas, los herrajes y el tren es mayor que la prevista, aunque el acelerómetro marque lo mismo.",
+          "Dicho de otra forma: volar con un 10 % de sobrecarga y tirar 3,8 g somete a la estructura a la misma fuerza que 4,18 g a la masa máxima (3,8 × 1,1). Has gastado sin darte cuenta parte del margen que te protege en una ráfaga fuerte o en una recogida brusca. La estructura tiene además un **factor de seguridad de 1,5** entre la carga límite y la carga última (la que rompe), pero ese margen es para imprevistos, no para cargar de más.",
+          "La masa máxima de aterrizaje existe por la misma razón: el tren y su anclaje se dimensionan para absorber un régimen de descenso en la toma con una masa concreta. En muchos monomotores ligeros, como el PA-28 y el C172, coincide con la masa máxima de despegue."
+        ],
+        "table": {
+          "caption": "Factores de carga límite habituales de la CS-23 tradicional (aviones certificados antes de la enmienda 5)",
+          "head": ["Categoría", "Positivo", "Negativo", "Uso"],
+          "rows": [
+            ["Normal", "+3,8 g", "−1,52 g", "Vuelo normal, virajes hasta 60°, pérdidas sin barrena"],
+            ["Utilitaria", "+4,4 g", "−1,76 g", "Maniobras limitadas, barrena si está aprobada"],
+            ["Acrobática", "+6,0 g", "−3,0 g", "Acrobacia sin restricciones salvo las del AFM"]
+          ],
+          "src": "CS-23 (enmienda 4) 23.3 y 23.337; FAA PHAK cap. 5"
+        },
+        "note": { "kind": "tip", "text": "Algunos aviones, como el C172S, tienen dos envolventes: categoría normal a la masa máxima y categoría utilitaria con menos masa y el CG más adelantado. Si quieres hacer maniobras de categoría utilitaria tienes que cargar el avión dentro de esa envolvente más pequeña." }
+      },
+      {
+        "title": "Límites de performance de masa",
+        "text": [
+          "Más masa exige más sustentación, y la sustentación cuesta velocidad, ángulo de ataque y potencia. Todas las actuaciones del avión empeoran con la masa, y lo hacen a la vez: el despegue es más largo justo cuando el ascenso es peor.",
+          "La velocidad de pérdida crece con la **raíz cuadrada** de la masa, porque a la misma CLmáx la sustentación necesaria depende de V². Las distancias de despegue crecen más que proporcionalmente: la velocidad de despegue aumenta y la aceleración disminuye a la vez. El manual de la FAA estima que un 10 % más de masa supone en torno a un 5 % más de velocidad de despegue, al menos un 9 % menos de aceleración y al menos un 21 % más de distancia de despegue."
+        ],
+        "formulas": [
+          { "f": "Vs2 = Vs1 · √(m2 / m1)", "note": "La misma fórmula vale para la velocidad de maniobra VA: con menos masa, VA baja." }
+        ],
+        "bullets": [
+          "Velocidad de pérdida y velocidades de rotación y de aproximación más altas.",
+          "Carrera y distancia de despegue más largas; distancia de aterrizaje más larga y más energía que disipar con los frenos.",
+          "Menor régimen y menor ángulo de ascenso: peor franqueamiento de obstáculos.",
+          "Techo más bajo y menor alcance (más combustible por milla).",
+          "Una masa permitida por la estructura puede no ser posible en un aeródromo corto, alto o caluroso: ese es el límite de performance."
+        ],
+        "examples": [
+          { "q": "Un avión entra en pérdida a 50 kt con 900 kg. ¿A qué velocidad lo hará con 1100 kg?", "a": "Vs2 = 50 × √(1100 / 900) = 50 × √1,222 = 50 × 1,106 ≈ **55 kt**. No es proporcional: un 22 % más de masa sube la Vs solo un 10,6 %." }
+        ]
+      },
+      {
+        "title": "El CG, la estabilidad y el control",
+        "text": [
+          "En vuelo recto y nivelado el avión está en equilibrio de fuerzas (sustentación igual a peso) y de momentos (no tiende a subir ni bajar el morro). En un avión convencional el CG queda algo por delante del centro de presiones del ala, así que el peso y la sustentación forman un par que baja el morro. El estabilizador horizontal lo compensa con una **fuerza hacia abajo** en la cola.",
+          "La estabilidad longitudinal estática depende de la distancia entre el CG y el **punto neutro** (el punto en el que el avión dejaría de ser estable). Cuanto más adelantado está el CG respecto a ese punto, más estable es el avión: tiende con fuerza a volver a su actitud compensada. Cuanto más atrasado, menos estable; si el CG llega al punto neutro la estabilidad desaparece y por detrás el avión es inestable.",
+          "Por eso los dos límites del CG no son arbitrarios. El **límite trasero** asegura un mínimo de estabilidad y de controlabilidad, sobre todo para salir de una pérdida o de una barrena. El **límite delantero** asegura que el timón de profundidad tiene autoridad suficiente para levantar el morro en la rotación y en la recogida, a la velocidad más baja y con los flaps extendidos."
+        ],
+        "figure": "svg:030-equilibrio",
+        "caption": "El peso actúa en el CG, la sustentación algo más atrás y la cola empuja hacia abajo para equilibrar el avión.",
+        "table": {
+          "caption": "Efectos de la posición del CG",
+          "head": ["Aspecto", "CG adelantado", "CG atrasado"],
+          "rows": [
+            ["Estabilidad longitudinal", "Mayor", "Menor; inestable pasado el límite"],
+            ["Fuerzas en los mandos", "Pesadas", "Ligeras, riesgo de sobrecontrol"],
+            ["Velocidad de pérdida", "Mayor", "Algo menor"],
+            ["Rotación y recogida", "Cuestan más; puede faltar profundidad", "Fáciles, riesgo de rotar de más"],
+            ["Recuperación de pérdida y barrena", "Más fácil", "Más difícil o imposible"],
+            ["Resistencia y crucero", "Más resistencia inducida, menos velocidad y más consumo", "Algo menos de resistencia"]
+          ],
+          "src": "FAA PHAK cap. 5 y cap. 10"
+        }
+      },
+      {
+        "title": "El CG y la performance",
+        "text": [
+          "La fuerza hacia abajo de la cola no sale gratis. Si el CG está adelantado, la cola tiene que empujar más hacia abajo, y el ala tiene que generar la sustentación necesaria para el peso **más** esa carga de cola. Es como si el avión pesara más: vuela a un ángulo de ataque mayor, con más resistencia inducida, entra en pérdida a una velocidad algo mayor, cruza más despacio a la misma potencia y gasta más combustible por milla.",
+          "Con el CG atrasado ocurre lo contrario: menos carga de cola, algo menos de resistencia y algo más de velocidad. La ganancia es pequeña y nunca justifica salirse del límite trasero, porque lo que se pierde es estabilidad y capacidad de recuperar una pérdida.",
+          "Recuerda que el CG se mueve durante el vuelo a medida que se gasta combustible. Si el depósito está detrás del CG, el CG avanza; si está delante, retrocede. Por eso hay que comprobar el CG al despegue y al aterrizaje, y también sin combustible utilizable."
+        ]
+      },
+      {
+        "title": "Qué exige la norma al piloto",
+        "text": [
+          "En Part-NCO (operaciones no comerciales con aeronaves no complejas, el marco de casi todos los vuelos privados), la regla de base es **NCO.POL.100**: durante cualquier fase de la operación, la carga, la masa y la posición del CG deben cumplir los límites del AFM o documento equivalente. Además, los letreros, listas y marcas de instrumentos con limitaciones que el AFM exige mostrar deben estar en el avión, como el letrero de carga máxima en la bodega.",
+          "**NCO.POL.105** obliga a que la masa y el CG del avión se establezcan pesándolo antes de su entrada en servicio y a documentar el efecto acumulado de reparaciones y modificaciones. El resultado es el informe de pesada que usarás como punto de partida en cada hoja de carga (030.04).",
+          "La responsabilidad final es del piloto al mando: no hay nadie que revise tu hoja de carga en un vuelo privado. En el examen esto aparece como «durante todas las fases del vuelo», no solo al despegue."
+        ],
+        "bullets": [
+          "Masa total ≤ masas máximas del AFM (rampa, despegue, aterrizaje y, si existe, sin combustible).",
+          "CG dentro de límites al despegue, al aterrizaje y sin combustible.",
+          "Límites de cada compartimento (equipaje, asientos) respetados.",
+          "Performance suficiente para la pista y los obstáculos con esa masa (NCO.POL.110)."
+        ]
+      }
+    ],
+    "numbers": [
+      "CS-23 categoría normal: factor de carga límite +3,8 g y −1,52 g",
+      "Categoría utilitaria +4,4 g; acrobática +6,0 g",
+      "Factor de seguridad entre carga límite y carga última: 1,5",
+      "Vs2 = Vs1 · √(m2/m1): la Vs crece con la raíz de la masa",
+      "Un 10 % más de masa: unos 21 % más de distancia de despegue (FAA)",
+      "NCO.POL.100: masa, carga y CG dentro de límites en todas las fases"
+    ],
+    "traps": [
+      "Creer que el factor de carga límite en g protege igual con sobrecarga: la fuerza real a cada g es mayor.",
+      "Pensar que la Vs aumenta en proporción a la masa: aumenta con su raíz cuadrada.",
+      "Confundir los efectos: el CG adelantado da más estabilidad pero más Vs y más consumo; el atrasado, menos estabilidad.",
+      "Comprobar el CG solo al despegue: el consumo de combustible lo mueve durante el vuelo.",
+      "Suponer que un CG dentro de límites permite superar la masa máxima, o al revés."
+    ],
+    "sources": [
+      { "title": "EASA Easy Access Rules for Air Operations (Part-NCO: NCO.POL.100, NCO.POL.105, NCO.POL.110)", "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations" },
+      { "title": "EASA AMC1 FCL.210 y FCL.215, temario 030 (Easy Access Rules for Aircrew)", "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011" },
+      { "title": "FAA Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5, 10 y 11", "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak" },
+      { "title": "EASA CS-23, Normal-category aeroplanes", "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-normal-category-aeroplanes-cs-23" }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      { "label": "Prevuelo del PA-28 (cabina)", "href": "#/ac/pa28/flow/preflight" },
+      { "label": "Prevuelo del C172 (cabina)", "href": "#/ac/c172/flow/preflight" }
+    ]
+  },
+  "questions": [
+    {
+      "id": "030.01.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "Si vuelas con una masa superior a la máxima certificada y haces una maniobra de 3 g, la estructura soporta:",
+      "options": ["Una fuerza mayor que la prevista para 3 g a la masa máxima", "Exactamente la fuerza prevista, porque el límite se da en g", "Menos fuerza, porque el avión acelera más despacio", "La misma fuerza, salvo en turbulencia"],
+      "correct": 0,
+      "why": "El factor de carga límite se certifica a la masa máxima. Con más masa, cada g supone más fuerza real (sustentación = n × peso), así que se consume parte del margen estructural.",
+      "whyNot": [null, "El valor en g solo es válido a la masa certificada; con sobrecarga la fuerza a cada g es mayor.", "La aceleración longitudinal no tiene relación con la carga en las alas durante la maniobra.", "La sobrecarga aumenta la fuerza en cualquier maniobra, no solo en turbulencia."],
+      "ref": "CS-23 (enm. 4) 23.321 y 23.337; FAA PHAK cap. 5"
+    },
+    {
+      "id": "030.01.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "Con el CG en el límite delantero, respecto a un CG centrado, la velocidad de pérdida:",
+      "options": ["Disminuye, porque el avión es más estable", "Aumenta, porque la cola carga más hacia abajo y el ala necesita más sustentación", "No cambia, porque solo depende de la masa", "Aumenta solo con flaps extendidos"],
+      "correct": 1,
+      "why": "Con el CG adelantado el estabilizador produce más carga hacia abajo; el ala debe sostener el peso más esa carga, como si el avión pesara más, y la Vs sube.",
+      "whyNot": ["La mayor estabilidad no reduce la Vs; la sube por la carga de cola.", null, "La Vs depende de la carga que soporta el ala, que incluye la carga de cola.", "El efecto existe en cualquier configuración."],
+      "ref": "FAA PHAK cap. 5 (efecto del CG)"
+    },
+    {
+      "id": "030.01.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué riesgo principal tiene cargar el avión con el CG por detrás del límite trasero?",
+      "options": ["Que falte timón de profundidad para rotar", "Que aumente mucho la velocidad de pérdida", "Que el avión sea inestable y la pérdida o la barrena no se puedan recuperar", "Que el consumo de combustible aumente"],
+      "correct": 2,
+      "why": "El límite trasero garantiza un margen mínimo de estabilidad longitudinal. Por detrás, el avión puede ser inestable, los mandos muy ligeros y la recuperación de pérdida o barrena difícil o imposible.",
+      "whyNot": ["La falta de autoridad para rotar es el problema del CG demasiado adelantado.", "Con el CG atrasado la Vs baja algo, no sube.", null, "El consumo aumenta con el CG adelantado, no con el atrasado."],
+      "ref": "FAA PHAK cap. 10; FAA-H-8083-1B cap. 1"
+    },
+    {
+      "id": "030.01.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "El límite delantero del CG lo fija sobre todo:",
+      "options": ["La resistencia del tren de morro en la toma", "El consumo de combustible en crucero", "La estabilidad mínima en vuelo", "La autoridad del timón de profundidad para rotar y recoger a baja velocidad"],
+      "correct": 3,
+      "why": "Con el CG muy adelantado hace falta mucha fuerza de cola hacia abajo para levantar el morro; el límite delantero asegura que el timón de profundidad tiene autoridad suficiente en la rotación y la recogida, a baja velocidad y con flaps.",
+      "whyNot": ["El tren de morro tiene sus propios límites de carga, pero no es lo que define el límite delantero del CG.", "El mayor consumo es una consecuencia del CG adelantado, no lo que fija el límite.", "La estabilidad mínima define el límite trasero.", null],
+      "ref": "FAA PHAK cap. 10; FAA-H-8083-1B cap. 1"
+    },
+    {
+      "id": "030.01.005",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un avión tiene una velocidad de pérdida de 50 kt con 900 kg. Con 1100 kg, la velocidad de pérdida será aproximadamente:",
+      "options": ["61 kt", "55 kt", "45 kt", "50 kt"],
+      "correct": 1,
+      "why": "Vs2 = Vs1 × √(m2/m1) = 50 × √(1100/900) = 50 × 1,106 ≈ 55 kt.",
+      "whyNot": ["Es el resultado de aplicar la proporción directa (50 × 1100/900); la Vs varía con la raíz de la masa.", null, "Has invertido la proporción: con más masa la Vs sube.", "La Vs sí cambia con la masa."],
+      "ref": "FAA PHAK cap. 5; fórmula de la sustentación"
+    },
+    {
+      "id": "030.01.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "En crucero a la misma potencia, un CG adelantado respecto a uno atrasado (ambos dentro de límites) da:",
+      "options": ["Más velocidad y menos consumo", "La misma velocidad", "Menos velocidad y más consumo por la mayor resistencia inducida", "Menos velocidad pero menos consumo"],
+      "correct": 2,
+      "why": "Con el CG adelantado la cola carga más hacia abajo, el ala necesita más sustentación y más ángulo de ataque, y aumenta la resistencia inducida: a igual potencia el avión va más despacio y gasta más por milla.",
+      "whyNot": ["Es el efecto del CG atrasado, no del adelantado.", "La carga de cola cambia la resistencia y, por tanto, la velocidad.", null, "Más resistencia significa más combustible por milla, no menos."],
+      "ref": "FAA PHAK cap. 10 (efectos del CG en la performance)"
+    },
+    {
+      "id": "030.01.007",
+      "type": "regla",
+      "level": 1,
+      "q": "Según NCO.POL.100, la carga, la masa y el CG deben estar dentro de los límites del AFM:",
+      "options": ["Durante cualquier fase de la operación", "Solo en el momento del despegue", "Al despegue y al aterrizaje, pero no en crucero", "Solo cuando se llevan pasajeros"],
+      "correct": 0,
+      "why": "NCO.POL.100(a): durante cualquier fase de la operación, la carga, la masa y el CG deben cumplir las limitaciones del AFM o documento equivalente.",
+      "whyNot": [null, "El combustible se consume y el CG se mueve: hay que cumplir en todo el vuelo.", "La norma no exceptúa el crucero.", "La norma se aplica a todo vuelo, con o sin pasajeros."],
+      "ref": "Part-NCO, NCO.POL.100",
+      "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+    },
+    {
+      "id": "030.01.008",
+      "type": "regla",
+      "level": 1,
+      "q": "En la CS-23 tradicional, el factor de carga límite positivo de un avión de categoría normal es:",
+      "options": ["+2,5 g", "+4,4 g", "+6,0 g", "+3,8 g"],
+      "correct": 3,
+      "why": "La categoría normal de la CS-23 (y de la FAR 23) tiene un factor de carga límite positivo de +3,8 g y negativo de −1,52 g.",
+      "whyNot": ["+2,5 g es el valor típico de los aviones de transporte grandes (CS-25), no de la CS-23 normal.", "+4,4 g corresponde a la categoría utilitaria.", "+6,0 g corresponde a la categoría acrobática.", null],
+      "ref": "CS-23 (enm. 4) 23.337; FAA PHAK cap. 5"
+    },
+    {
+      "id": "030.01.009",
+      "type": "concepto",
+      "level": 3,
+      "q": "Despegas de un aeródromo alto en un día caluroso con el avión a la masa máxima. ¿Qué afirmación es correcta?",
+      "options": ["Si no superas la MTOM, la performance está asegurada", "La masa máxima permitida puede ser menor que la MTOM por un límite de performance", "El calor solo afecta al motor, no a la masa permitida", "La MTOM aumenta con la altitud porque el aire pesa menos"],
+      "correct": 1,
+      "why": "La MTOM es un límite estructural. En pistas cortas, altas o calurosas la performance (distancia de despegue, ascenso) puede limitar la masa por debajo de la MTOM. NCO.POL.110 exige que la performance sea adecuada.",
+      "whyNot": ["Cumplir la MTOM no garantiza tener pista o ascenso suficientes.", null, "El calor reduce la densidad, que afecta a ala, hélice y motor, y por tanto a la masa con la que puedes despegar.", "La MTOM estructural no cambia; lo que baja con la altitud es la performance."],
+      "ref": "Part-NCO, NCO.POL.110; FAA PHAK cap. 11"
+    }
+  ],
+  "cards": [
+    { "id": "c.030.01.01", "front": "Efecto de la masa sobre la velocidad de pérdida", "back": "Vs2 = Vs1 · √(m2/m1): crece con la raíz cuadrada de la masa" },
+    { "id": "c.030.01.02", "front": "CG adelantado: tres efectos", "back": "Más estable y mandos pesados; Vs mayor; más resistencia y consumo (puede faltar profundidad para rotar o recoger)" },
+    { "id": "c.030.01.03", "front": "CG detrás del límite trasero", "back": "Avión poco estable o inestable; pérdida y barrena difíciles o imposibles de recuperar" },
+    { "id": "c.030.01.04", "front": "Factor de carga límite, CS-23 categoría normal", "back": "+3,8 g y −1,52 g (utilitaria +4,4 g; acrobática +6,0 g)" }
+  ]
+}

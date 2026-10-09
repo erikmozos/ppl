@@ -1,0 +1,341 @@
+{
+  "lesson": {
+    "id": "020.09",
+    "title": "Motor de pistón",
+    "summary": "Tipos de motor alternativo, componentes, ciclo de cuatro tiempos con avance y retraso de válvulas, avance del encendido, cilindrada y relación de compresión, con el Lycoming O-320 del PA-28-161 y el IO-360 del C172S como ejemplos.",
+    "objectives": [
+      "Nombrar los componentes de un motor de cilindros opuestos y decir qué hace cada uno",
+      "Describir los cuatro tiempos del ciclo Otto y en qué tiempo se produce el trabajo",
+      "Explicar por qué las válvulas se abren antes y se cierran después de los puntos muertos y qué es el cruce de válvulas",
+      "Calcular la cilindrada y la relación de compresión y relacionarla con la detonación y el octanaje",
+      "Interpretar la designación de un motor Lycoming (O-320, IO-360)"
+    ],
+    "sections": [
+      {
+        "title": "El motor alternativo y sus tipos",
+        "text": [
+          "Un motor de pistón es un motor de **combustión interna**: quema una mezcla de aire y gasolina dentro de un cilindro cerrado, la presión de los gases calientes empuja un pistón y una biela convierte ese movimiento de vaivén en el giro del **cigüeñal**, que mueve la hélice. Es el mismo principio que el de un coche de gasolina, pero adaptado a la aviación: tiene que ser ligero, fiable a potencia alta durante horas y seguir funcionando aunque falle la electricidad del avión.",
+          "Los motores se clasifican por la **disposición de los cilindros**. Los de los aviones de escuela son de **cilindros horizontales opuestos** (bóxer): dos filas de cilindros enfrentadas a ambos lados del cigüeñal. Son compactos, de poca sección frontal, bien equilibrados y fáciles de refrigerar por aire. Hay también motores en línea, en V y radiales (cilindros en estrella, mucha superficie frontal, típicos de aviones antiguos). Casi todos los de aviación general son de **cuatro tiempos**, **encendido por chispa** y **refrigerados por aire**; existen motores de dos tiempos (ultraligeros), motores diésel de aviación que queman Jet A-1 y algún rotativo Wankel, pero no son los del examen.",
+          "La designación de Lycoming dice mucho: **O** significa cilindros opuestos, el número es la **cilindrada en pulgadas cúbicas**, una **I** delante indica **inyección** y una **T**, turbocompresor. El **O-320** del PA-28-161 es un motor opuesto de 320 in³ (unos 5,2 l) con carburador; el **IO-360** del C172S es un opuesto de 360 in³ (unos 5,9 l) con inyección. Las letras y cifras finales (D3G, L2A) identifican la variante concreta."
+        ],
+        "table": {
+          "caption": "Los dos motores de referencia del curso",
+          "head": ["Dato", "PA-28-161 Warrior III", "Cessna 172S"],
+          "rows": [
+            ["Motor", "Lycoming O-320-D3G", "Lycoming IO-360-L2A"],
+            ["Cilindros", "4, horizontales opuestos", "4, horizontales opuestos"],
+            ["Cilindrada", "320 in³ (≈ 5,2 l)", "360 in³ (≈ 5,9 l)"],
+            ["Potencia máxima", "160 hp a 2700 RPM", "180 hp a 2700 RPM"],
+            ["Relación de compresión", "8,5:1", "8,5:1"],
+            ["Alimentación", "Carburador de flotador", "Inyección continua"],
+            ["Hélice", "Paso fijo, dos palas", "Paso fijo, dos palas"]
+          ],
+          "src": "Lycoming, manuales del operador O-320 e IO-360; manuales de información PA-28-161 y C172S"
+        },
+        "verify": true,
+        "note": { "kind": "tip", "text": "Los datos de la tabla salen de los manuales del fabricante y pueden variar entre números de serie. Para tu avión manda su POH." }
+      },
+      {
+        "title": "Componentes del motor",
+        "text": [
+          "Conviene conocer las piezas por su nombre porque el examen pregunta qué hace cada una. El **cárter** es la carcasa que aloja el cigüeñal y, en los motores de cárter húmedo, guarda el aceite. Atornillados al cárter están los **cilindros**, de acero con aletas de refrigeración, y encima de cada uno la **culata**, de aluminio, donde están la cámara de combustión, las dos **bujías** y las dos **válvulas** (admisión y escape).",
+          "Dentro del cilindro se mueve el **pistón**, que lleva **segmentos** (aros) de compresión, que sellan la cámara, y de engrase, que rascan el aceite de la pared. El pistón empuja la **biela**, unida al **cigüeñal**, que transforma el movimiento lineal en giro. El **árbol de levas** abre las válvulas a través de **empujadores**, **varillas** y **balancines**; los **muelles de válvula** las cierran. El árbol de levas gira a **la mitad de vueltas que el cigüeñal**, porque cada válvula se abre una sola vez por ciclo y el ciclo dura dos vueltas.",
+          "Alrededor del motor están los **accesorios**: dos **magnetos** para el encendido, **motor de arranque**, **alternador**, **bomba de aceite**, **bomba mecánica de combustible** y **bomba de vacío** para los giróscopos. Los **colectores de admisión** llevan la mezcla (o el aire, en inyección) a los cilindros y los **colectores de escape** sacan los gases quemados al silencioso; en el PA-28 el escape calienta también el aire de la calefacción del carburador y de la cabina."
+        ],
+        "bullets": [
+          "Válvula de escape: es la pieza más caliente del motor; trabaja al rojo y por eso la culata tiene más aletas a su alrededor.",
+          "Dos bujías por cilindro, una de cada magneto: doble encendido por seguridad y por mejor combustión.",
+          "Punto muerto superior (PMS): posición más alta del pistón. Punto muerto inferior (PMI): la más baja. La distancia entre ambos es la **carrera**; el diámetro del cilindro es el **calibre**."
+        ]
+      },
+      {
+        "title": "El ciclo de cuatro tiempos",
+        "text": [
+          "El motor funciona según el **ciclo Otto de cuatro tiempos**. Cada tiempo es una carrera del pistón (media vuelta de cigüeñal), así que el ciclo completo necesita **dos vueltas de cigüeñal (720°)** y en cada cilindro hay **un solo tiempo motor cada dos vueltas**. Con cuatro cilindros, el motor recibe dos impulsos por vuelta, repartidos para que el giro sea suave.",
+          "1) **Admisión**: el pistón baja del PMS al PMI con la válvula de admisión abierta; la depresión que crea aspira la mezcla. 2) **Compresión**: con las dos válvulas cerradas, el pistón sube y comprime la mezcla, que se calienta; poco antes del PMS salta la chispa. 3) **Combustión y expansión** (tiempo motor): la mezcla arde, la presión sube bruscamente y empuja el pistón hacia abajo; es el **único tiempo que produce trabajo**. 4) **Escape**: la válvula de escape se abre y el pistón, al subir, expulsa los gases quemados. Los otros tres tiempos consumen energía, que aporta la inercia del cigüeñal y de la hélice y los impulsos de los demás cilindros."
+        ],
+        "figure": "svg:020-cuatro-tiempos",
+        "caption": "Los cuatro tiempos y el diagrama de distribución real: la admisión se abre antes del PMS y se cierra después del PMI; el escape se abre antes del PMI y se cierra después del PMS. Valores angulares orientativos."
+      },
+      {
+        "title": "Distribución real: avance y retraso de válvulas",
+        "text": [
+          "En el ciclo teórico cada válvula se abre y se cierra justo en un punto muerto. En un motor real eso desaprovecharía potencia, porque los gases tienen **inercia** y una válvula tarda en abrirse del todo. Por eso las levas adelantan las aperturas y retrasan los cierres:",
+          "El **avance de apertura de la admisión** (AAA) abre la válvula unos grados **antes del PMS**, al final del escape, para que esté bien abierta cuando el pistón empiece a bajar. El **retraso de cierre de la admisión** (RCA) la mantiene abierta bastantes grados **después del PMI**: la columna de mezcla que entra a gran velocidad sigue llenando el cilindro aunque el pistón ya suba, y así entra más masa. El **avance de apertura del escape** (AAE) abre el escape **antes del PMI**, cuando la expansión ya ha dado casi todo su trabajo, para que los gases empiecen a salir por su propia presión. El **retraso de cierre del escape** (RCE) lo cierra **después del PMS**, para que el chorro de gases que sale termine de vaciar la cámara.",
+          "Consecuencia: alrededor del PMS, entre el final del escape y el principio de la admisión, **las dos válvulas están abiertas a la vez**. Es el **cruce de válvulas** (*valve overlap*): el gas de escape que sale arrastra la mezcla fresca y mejora el llenado y la limpieza del cilindro."
+        ],
+        "bullets": [
+          "Admisión: se abre **antes del PMS** y se cierra **después del PMI**.",
+          "Escape: se abre **antes del PMI** y se cierra **después del PMS**.",
+          "Cruce de válvulas: ambas abiertas cerca del PMS, al pasar del escape a la admisión.",
+          "Avance del encendido: la chispa salta unos **20–25° antes del PMS** (25° en el O-320-D3G según Lycoming) porque la mezcla tarda un tiempo en arder; así la presión máxima llega justo después del PMS, cuando mejor empuja."
+        ],
+        "verify": true,
+        "note": { "kind": "warn", "text": "Los grados exactos de la distribución dependen de cada motor y no se preguntan como cifra; lo que se pregunta es el sentido: aperturas adelantadas, cierres retrasados y cruce en el PMS." }
+      },
+      {
+        "title": "Cilindrada y relación de compresión",
+        "text": [
+          "La **cilindrada** de un cilindro es el volumen que barre el pistón entre el PMI y el PMS: área del pistón por carrera. La cilindrada del motor es esa cifra por el número de cilindros. Por encima del pistón en el PMS queda un volumen pequeño, la **cámara de combustión** (volumen de compresión).",
+          "La **relación de compresión** compara el volumen total del cilindro con el pistón en el PMI con el volumen que queda en el PMS. Cuanto más alta, más se comprime la mezcla, mejor es el **rendimiento térmico** y más potencia saca el motor de cada gramo de combustible. El límite lo pone la **detonación**: al comprimir más, la mezcla se calienta más y puede autoinflamarse. Por eso un motor de compresión alta exige gasolina de **más octanaje**. Los motores de escuela trabajan con unos 7:1 a 8,5:1; un O-320 de 150 hp con 7:1 se diseñó para gasolina de 80 octanos, y el O-320-D3G de 160 hp, con 8,5:1, necesita gasolina de grado más alto."
+        ],
+        "formulas": [
+          { "f": "Cilindrada de un cilindro = (π/4) · D² · carrera", "note": "D es el calibre (diámetro del cilindro)." },
+          { "f": "Relación de compresión = (Vbarrido + Vcámara) / Vcámara", "note": "Volumen total en el PMI entre volumen en el PMS." }
+        ],
+        "examples": [
+          { "q": "El O-320 tiene un calibre de 5,125 in y una carrera de 3,875 in. ¿Cuál es su cilindrada?", "a": "Área del pistón = π/4 × 5,125² ≈ 20,63 in². Por cilindro: 20,63 × 3,875 ≈ 79,9 in³. Por cuatro cilindros: ≈ 320 in³, de ahí el nombre O-320. En litros: 320 × 16,39 cm³ ≈ 5240 cm³ ≈ 5,2 l." },
+          { "q": "Un cilindro barre 1310 cm³ y su cámara de combustión mide 175 cm³. ¿Relación de compresión?", "a": "(1310 + 175) / 175 = 1485 / 175 ≈ 8,5. Relación 8,5:1." },
+          { "q": "Si con el mismo cilindro la cámara fuera de 218 cm³, ¿qué relación tendría y qué gasolina admitiría mejor?", "a": "(1310 + 218) / 218 ≈ 7,0:1. Al comprimir menos, la mezcla se calienta menos y tolera un octanaje más bajo." }
+        ]
+      },
+      {
+        "title": "Potencia, par y rendimiento",
+        "text": [
+          "La potencia es el par en el cigüeñal multiplicado por la velocidad de giro. En la práctica, un motor da más potencia cuanto **más masa de aire** consigue meter y quemar por minuto: depende de la apertura de gases (presión de admisión), de las RPM y de la densidad del aire. Por eso un motor atmosférico pierde potencia con la altitud y con el calor (bloque 020.17).",
+          "El rendimiento de un motor de gasolina es modesto: solo una parte de la energía del combustible, del orden de una cuarta parte o algo más, llega al cigüeñal. El resto se va con los gases de escape y como calor que hay que evacuar con la refrigeración y el aceite. Ese calor es la razón de ser de las aletas, los deflectores, el radiador de aceite y la vigilancia de las temperaturas."
+        ],
+        "bullets": [
+          "Ventajas del motor de cilindros opuestos refrigerado por aire: ligero, compacto, sin líquido refrigerante que pueda perderse, poca sección frontal.",
+          "Inconvenientes: refrigeración menos uniforme que con líquido y sensibilidad a los cambios bruscos de temperatura (enfriamiento brusco, bloques 020.12 y 020.17).",
+          "Las magnetos no dependen de la batería ni del alternador: con el maestro en OFF el motor sigue funcionando."
+        ],
+        "verify": true
+      }
+    ],
+    "numbers": [
+      "Ciclo de cuatro tiempos: 2 vueltas de cigüeñal (720°) y un tiempo motor por cilindro",
+      "El árbol de levas gira a la mitad de RPM que el cigüeñal",
+      "Admisión: abre antes del PMS, cierra después del PMI; escape: abre antes del PMI, cierra después del PMS",
+      "Cruce de válvulas: las dos abiertas cerca del PMS",
+      "Avance del encendido del O-320-D3G: 25° antes del PMS",
+      "O-320 = opuesto de 320 in³; IO-360 = inyección, opuesto, 360 in³",
+      "PA-28-161: 160 hp a 2700 RPM; C172S: 180 hp a 2700 RPM; ambos 8,5:1"
+    ],
+    "traps": [
+      "Creer que cada vuelta de cigüeñal tiene un tiempo motor por cilindro: son dos vueltas por ciclo.",
+      "Pensar que la válvula de admisión se cierra en el PMI: se cierra después, para aprovechar la inercia de la mezcla.",
+      "Confundir el cruce de válvulas (PMS, fin del escape) con el PMI.",
+      "Creer que una relación de compresión mayor permite usar gasolina de menos octanos: es al revés.",
+      "Asociar la I de IO-360 con algo distinto de la inyección (la T es el turbo)."
+    ],
+    "sources": [
+      { "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 7", "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak" },
+      { "title": "Lycoming, Operator's Manual O-320 y O-360 / IO-360 (publicaciones del fabricante)", "url": "https://www.lycoming.com/" },
+      { "title": "EASA, AMC1 FCL.210 y FCL.215 (temario 020)", "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no" }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      { "label": "Cabina del PA-28 (motor de carburador)", "href": "#/ac/pa28" },
+      { "label": "Cabina del C172 (motor de inyección)", "href": "#/ac/c172" }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.09.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "En un motor de cuatro tiempos, ¿cuántas vueltas da el cigüeñal para completar un ciclo en un cilindro?",
+      "options": ["Media vuelta", "Una vuelta", "Dos vueltas", "Cuatro vueltas"],
+      "correct": 2,
+      "why": "Cada tiempo es una carrera del pistón, es decir, media vuelta de cigüeñal. Cuatro tiempos son 720°: dos vueltas.",
+      "whyNot": ["Media vuelta es un solo tiempo, no el ciclo.", "Una vuelta es el ciclo de un motor de dos tiempos.", null, "Cuatro vueltas confunde tiempos con vueltas."],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.09.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿En qué tiempo del ciclo se produce trabajo útil sobre el cigüeñal?",
+      "options": ["Combustión y expansión", "Admisión", "Compresión", "Escape"],
+      "correct": 0,
+      "why": "Solo en el tiempo de combustión y expansión los gases empujan el pistón. Los otros tres consumen energía de la inercia y de los demás cilindros.",
+      "whyNot": [null, "En la admisión el pistón aspira mezcla: consume energía.", "Comprimir la mezcla cuesta energía.", "Expulsar los gases también cuesta energía."],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.09.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "La válvula de admisión se cierra después de que el pistón haya pasado el punto muerto inferior porque:",
+      "options": ["Así se reduce la temperatura de la culata", "La mezcla sigue entrando por su inercia y mejora el llenado", "Se evita el cruce de válvulas", "Se retrasa el encendido"],
+      "correct": 1,
+      "why": "La columna de mezcla que entra a gran velocidad sigue llenando el cilindro aunque el pistón empiece a subir. El retraso de cierre de la admisión aumenta la masa de mezcla atrapada.",
+      "whyNot": ["La distribución busca llenado, no refrigerar la culata.", null, "El cruce de válvulas ocurre cerca del PMS, no del PMI.", "El encendido depende de las magnetos, no del cierre de la admisión."],
+      "ref": "PHAK cap. 7; teoría del motor alternativo"
+    },
+    {
+      "id": "020.09.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "El cruce de válvulas es el periodo en el que:",
+      "options": ["Las dos válvulas están cerradas en el tiempo de compresión", "La válvula de escape se abre antes del punto muerto inferior", "Las válvulas de admisión y escape están abiertas a la vez cerca del punto muerto superior", "La chispa salta con las dos válvulas abiertas"],
+      "correct": 2,
+      "why": "Al final del escape la válvula de escape aún no se ha cerrado (retraso) y la de admisión ya se ha abierto (avance). Ambas están abiertas alrededor del PMS.",
+      "whyNot": ["Con las dos cerradas en compresión no hay cruce: es lo normal.", "Eso es el avance de apertura del escape, no el cruce.", null, "La chispa salta en compresión, con las dos válvulas cerradas."],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.09.005",
+      "type": "regla",
+      "level": 1,
+      "q": "En la designación de motor Lycoming IO-360, la letra I indica que el motor:",
+      "options": ["Tiene encendido electrónico", "Es de cilindros invertidos", "Está sobrealimentado", "Lleva inyección de combustible"],
+      "correct": 3,
+      "why": "En la nomenclatura de Lycoming, I = inyección (injected), O = cilindros opuestos, T = turbo. El número es la cilindrada en pulgadas cúbicas.",
+      "whyNot": ["El IO-360 del C172S tiene magnetos, no encendido electrónico.", "Los cilindros son horizontales opuestos (la O).", "La sobrealimentación por turbo se indica con una T (TIO).", null],
+      "ref": "Lycoming, nomenclatura de modelos"
+    },
+    {
+      "id": "020.09.006",
+      "type": "concepto",
+      "level": 1,
+      "q": "La pieza que transforma el movimiento alternativo del pistón en movimiento de giro es:",
+      "options": ["El árbol de levas", "El conjunto de biela y cigüeñal", "El balancín", "El volante de la magneto"],
+      "correct": 1,
+      "why": "La biela une el pistón con una muñequilla del cigüeñal, que convierte el vaivén en rotación.",
+      "whyNot": ["El árbol de levas abre las válvulas, no transmite la potencia.", null, "El balancín acciona la válvula.", "La magneto genera la chispa."],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.09.007",
+      "type": "regla",
+      "level": 2,
+      "q": "¿A qué velocidad gira el árbol de levas respecto al cigüeñal en un motor de cuatro tiempos?",
+      "options": ["A la misma velocidad", "Al doble", "A la mitad", "A la cuarta parte"],
+      "correct": 2,
+      "why": "Cada válvula se abre una vez por ciclo y el ciclo dura dos vueltas de cigüeñal, así que el árbol de levas da una vuelta por cada dos del cigüeñal.",
+      "whyNot": ["A la misma velocidad abriría cada válvula dos veces por ciclo.", "Al doble sería absurdo: cuatro aperturas por ciclo.", null, "A un cuarto, la válvula se abriría cada dos ciclos."],
+      "ref": "Teoría del motor de cuatro tiempos"
+    },
+    {
+      "id": "020.09.008",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un cilindro barre 1300 cm³ y su cámara de combustión mide 200 cm³. ¿Cuál es la relación de compresión?",
+      "options": ["6,5:1", "7,5:1", "8,5:1", "6,0:1"],
+      "correct": 1,
+      "why": "Relación = (volumen barrido + cámara) / cámara = (1300 + 200) / 200 = 1500 / 200 = 7,5.",
+      "whyNot": ["6,5 sale de dividir solo 1300 entre 200, sin sumar la cámara.", null, "8,5 corresponde a una cámara de unos 173 cm³.", "6,0 no sale de ningún planteamiento correcto con estos datos."],
+      "ref": "Definición de relación de compresión"
+    },
+    {
+      "id": "020.09.009",
+      "type": "calculo",
+      "level": 3,
+      "q": "Un motor de 4 cilindros tiene un calibre de 13 cm y una carrera de 10 cm. Su cilindrada total es aproximadamente:",
+      "options": ["1,3 l", "4,0 l", "5,3 l", "2,7 l"],
+      "correct": 2,
+      "why": "Área = π/4 × 13² ≈ 132,7 cm². Por cilindro: 132,7 × 10 ≈ 1327 cm³. Por 4 cilindros: ≈ 5309 cm³ ≈ 5,3 l, del orden del O-320.",
+      "whyNot": ["1,3 l es la cilindrada de un solo cilindro.", "4,0 l saldría con tres cilindros.", null, "2,7 l sale de usar el radio al cuadrado sin multiplicar por π."],
+      "ref": "Cálculo de cilindrada"
+    },
+    {
+      "id": "020.09.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si se aumenta la relación de compresión de un motor, manteniendo lo demás igual:",
+      "options": ["Mejora el rendimiento térmico, pero hace falta gasolina de más octanaje", "Baja la temperatura de la mezcla al final de la compresión", "Puede usarse gasolina de menos octanaje", "Disminuye la potencia"],
+      "correct": 0,
+      "why": "Comprimir más aprovecha mejor la energía del combustible, pero la mezcla llega más caliente y a más presión al final de la compresión, lo que favorece la detonación. Por eso se necesita un octanaje mayor.",
+      "whyNot": [null, "Al comprimir más, la mezcla se calienta más, no menos.", "Es al revés: más compresión exige más octanaje.", "Con más compresión la potencia aumenta."],
+      "ref": "PHAK cap. 7; Lycoming SI 1070 (combustibles por modelo)"
+    },
+    {
+      "id": "020.09.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Por qué la chispa salta antes de que el pistón llegue al punto muerto superior?",
+      "options": ["Para evitar el cruce de válvulas", "Para que la mezcla se enfríe antes de arder", "Porque la magneto no puede generar chispa en el PMS", "Porque la mezcla tarda en arder y la presión máxima debe llegar justo después del PMS"],
+      "correct": 3,
+      "why": "La combustión no es instantánea. Con avance del encendido, el frente de llama ha quemado casi toda la mezcla cuando el pistón empieza a bajar, que es cuando mejor aprovecha la presión.",
+      "whyNot": ["El cruce de válvulas es un asunto de distribución, no de encendido.", "No se busca enfriar la mezcla, sino quemarla a tiempo.", "La magneto puede dar chispa en cualquier punto; durante el arranque el acoplamiento de impulsos la retrasa precisamente al PMS.", null],
+      "ref": "PHAK cap. 7; Lycoming, manual del operador O-320"
+    },
+    {
+      "id": "020.09.012",
+      "type": "regla",
+      "level": 2,
+      "q": "Según el diagrama de distribución real, la válvula de escape:",
+      "options": ["Se abre en el PMI y se cierra en el PMS", "Se abre antes del PMI y se cierra después del PMS", "Se abre después del PMI y se cierra antes del PMS", "Se abre antes del PMS y se cierra después del PMI"],
+      "correct": 1,
+      "why": "Avance de apertura del escape (antes del PMI) para que los gases empiecen a salir por su presión, y retraso de cierre (después del PMS) para vaciar bien la cámara.",
+      "whyNot": ["Es el ciclo teórico, no el real.", null, "Es justo lo contrario de lo que hace la distribución real.", "Eso describe la válvula de admisión."],
+      "ref": "Teoría del motor alternativo",
+      "figure": "svg:020-cuatro-tiempos"
+    },
+    {
+      "id": "020.09.013",
+      "type": "lectura",
+      "level": 2,
+      "q": "En la figura, el pistón sube con las dos válvulas cerradas y la bujía está a punto de saltar. ¿Qué tiempo es?",
+      "figure": "svg:020-cuatro-tiempos",
+      "options": ["Admisión", "Escape", "Compresión", "Expansión"],
+      "correct": 2,
+      "why": "Pistón subiendo y válvulas cerradas: se comprime la mezcla. La chispa salta al final de este tiempo, poco antes del PMS.",
+      "whyNot": ["En la admisión el pistón baja con la válvula de admisión abierta.", "En el escape el pistón sube con la válvula de escape abierta.", null, "En la expansión el pistón baja empujado por los gases."],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.09.014",
+      "type": "lectura",
+      "level": 3,
+      "q": "En el diagrama de distribución de la figura, ¿en qué zona están las dos válvulas abiertas a la vez?",
+      "figure": "svg:020-cuatro-tiempos",
+      "options": ["Alrededor del PMI, entre expansión y escape", "Durante toda la compresión", "Justo después de la chispa", "Alrededor del PMS, entre el final del escape y el principio de la admisión"],
+      "correct": 3,
+      "why": "La admisión se abre antes del PMS y el escape se cierra después del PMS: el solape de ambos arcos es el cruce de válvulas.",
+      "whyNot": ["Entre la expansión y el escape solo está abierto el escape; la admisión sigue cerrada.", "En compresión las dos válvulas están cerradas.", "Tras la chispa, en la expansión, ambas están cerradas hasta el avance del escape.", null],
+      "ref": "Teoría del motor alternativo"
+    },
+    {
+      "id": "020.09.015",
+      "type": "concepto",
+      "level": 1,
+      "q": "Con el interruptor maestro en OFF y el motor en marcha, el motor de un PA-28-161:",
+      "options": ["Se para inmediatamente", "Sigue funcionando, porque las magnetos no dependen del sistema eléctrico", "Funciona solo con una magneto", "Se para al agotarse la batería"],
+      "correct": 1,
+      "why": "Las magnetos generan su propia corriente con un imán que gira movido por el motor. El encendido es independiente de la batería y del alternador.",
+      "whyNot": ["El maestro no corta el encendido; para eso está la llave de magnetos.", null, "Las dos magnetos siguen trabajando.", "El encendido no consume batería."],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.09.016",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un motor de 4 cilindros y cuatro tiempos gira a 2400 RPM. ¿Cuántas combustiones se producen por minuto en total?",
+      "options": ["2400", "9600", "1200", "4800"],
+      "correct": 3,
+      "why": "Cada cilindro tiene una combustión cada dos vueltas: 2400 / 2 = 1200 por cilindro. Por cuatro cilindros: 4800 por minuto.",
+      "whyNot": ["2400 supone una combustión por vuelta en un solo cilindro.", "9600 supone una combustión por vuelta en cada cilindro, como en un dos tiempos.", "1200 son las de un solo cilindro.", null],
+      "ref": "Ciclo de cuatro tiempos"
+    },
+    {
+      "id": "020.09.017",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Qué ventaja principal tiene la disposición de cilindros horizontales opuestos en un avión ligero?",
+      "options": ["Permite usar gasolina de automoción sin modificaciones", "Elimina la necesidad de aceite en los cilindros", "Es compacta, de poca sección frontal y bien equilibrada", "Admite cualquier relación de compresión sin detonación"],
+      "correct": 2,
+      "why": "Los cilindros enfrentados se compensan entre sí, el motor es corto y plano y se carena bien detrás de la hélice, con buena refrigeración por aire.",
+      "whyNot": ["El combustible admitido depende de la certificación, no de la disposición de cilindros.", "Todos los motores de pistón lubrican los cilindros.", null, "La detonación depende de la compresión, la mezcla y el combustible, no de la disposición."],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.09.018",
+      "type": "calculo",
+      "level": 3,
+      "q": "El O-320 tiene 320 in³ de cilindrada. Sabiendo que 1 in³ ≈ 16,4 cm³, su cilindrada en litros es aproximadamente:",
+      "options": ["3,2 l", "5,2 l", "6,4 l", "4,1 l"],
+      "correct": 1,
+      "why": "320 × 16,4 ≈ 5250 cm³ ≈ 5,2 l.",
+      "whyNot": ["3,2 l es tomar las pulgadas cúbicas como si fueran decilitros.", null, "6,4 l sale de usar 20 cm³ por pulgada cúbica.", "4,1 l no corresponde a ninguna conversión correcta."],
+      "ref": "Conversión de unidades; Lycoming O-320"
+    }
+  ],
+  "cards": [
+    { "id": "c.020.09.01", "front": "Vueltas de cigüeñal por ciclo en un motor de cuatro tiempos", "back": "Dos (720°), con un solo tiempo motor por cilindro" },
+    { "id": "c.020.09.02", "front": "Cruce de válvulas: dónde ocurre", "back": "Cerca del PMS, al final del escape y el principio de la admisión: las dos válvulas abiertas" },
+    { "id": "c.020.09.03", "front": "Relación de compresión", "back": "(Volumen barrido + volumen de la cámara) / volumen de la cámara; más compresión exige más octanaje" }
+  ]
+}

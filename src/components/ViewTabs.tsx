@@ -10,7 +10,7 @@ export function ViewTabs({ ac, view, setView, views, extra }: { ac: Aircraft; vi
       <div className="seg small-seg" role="tablist" aria-label="Vista de la cabina">
         {views.map(v => (
           <button key={v.id} role="tab" aria-selected={v.id === view} className={v.id === view ? 'on' : ''} onClick={() => setView(v.id)}>
-            {v.photo ? '📷 ' : '▦ '}{v.name}
+            {v.name}{v.photo ? ' · foto' : ''}
           </button>
         ))}
       </div>

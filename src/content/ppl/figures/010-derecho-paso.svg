@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320">
+  <title>Derecho de paso en vuelo: de frente, convergencia y alcance (SERA.3210)</title>
+  <defs>
+    <marker id="010-derecho-paso-flecha" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+    <path id="010-derecho-paso-avion" d="M0 -15 L2 -9 L2 -4 L14 0 L14 3 L2 1 L2 9 L6 12 L6 14 L0 13 L-6 14 L-6 12 L-2 9 L-2 1 L-14 3 L-14 0 L-2 -4 L-2 -9 Z"/>
+  </defs>
+  <rect x="8" y="8" width="200" height="304" rx="8" class="sky"/>
+  <rect x="220" y="8" width="200" height="304" rx="8" class="sky"/>
+  <rect x="432" y="8" width="200" height="304" rx="8" class="sky"/>
+
+  <text x="108" y="30" class="tx b" text-anchor="middle">De frente</text>
+  <line x1="108" y1="96" x2="108" y2="204" class="ln2 dash"/>
+  <use href="#010-derecho-paso-avion" transform="translate(108 222)" class="ac"/>
+  <use href="#010-derecho-paso-avion" transform="translate(108 78) rotate(180)" class="ac"/>
+  <path d="M112 200 C118 176 140 166 152 150" class="wa-ln" marker-end="url(#010-derecho-paso-flecha)"/>
+  <path d="M104 100 C98 124 76 134 64 150" class="wa-ln" marker-end="url(#010-derecho-paso-flecha)"/>
+  <text x="108" y="266" class="tx" text-anchor="middle">Ambas viran</text>
+  <text x="108" y="284" class="tx" text-anchor="middle">a la derecha</text>
+
+  <text x="320" y="30" class="tx b" text-anchor="middle">Convergencia</text>
+  <line x1="282" y1="216" x2="282" y2="118" class="ln2 dash"/>
+  <line x1="372" y1="118" x2="282" y2="118" class="ln2 dash"/>
+  <use href="#010-derecho-paso-avion" transform="translate(282 234)" class="wa"/>
+  <use href="#010-derecho-paso-avion" transform="translate(390 118) rotate(-90)" class="ac"/>
+  <path d="M286 212 C292 186 318 170 348 160" class="wa-ln" marker-end="url(#010-derecho-paso-flecha)"/>
+  <line x1="372" y1="102" x2="320" y2="102" class="ac-ln" marker-end="url(#010-derecho-paso-flecha)"/>
+  <text x="300" y="242" class="txw b">A cede:</text>
+  <text x="300" y="258" class="tx2">tiene a B a su derecha</text>
+  <text x="404" y="88" class="txa b" text-anchor="end">B mantiene</text>
+  <text x="404" y="146" class="tx2" text-anchor="end">rumbo y velocidad</text>
+  <text x="320" y="284" class="tx" text-anchor="middle">A pasa por detrás de B</text>
+
+  <text x="532" y="30" class="tx b" text-anchor="middle">Alcance</text>
+  <path d="M532 126 L612 155 A85 85 0 0 1 452 155 Z" class="soft"/>
+  <use href="#010-derecho-paso-avion" transform="translate(532 110)" class="ac"/>
+  <use href="#010-derecho-paso-avion" transform="translate(532 262)" class="wa"/>
+  <path d="M536 240 C548 214 586 200 590 166 L590 96" class="wa-ln" marker-end="url(#010-derecho-paso-flecha)"/>
+  <text x="566" y="178" class="tx2" text-anchor="end">70°</text>
+  <text x="498" y="178" class="tx2">70°</text>
+  <line x1="532" y1="126" x2="532" y2="212" class="ln2 dash"/>
+  <text x="532" y="292" class="tx" text-anchor="middle">Adelanta por la derecha</text>
+  <text x="446" y="62" class="tx2">Sector de alcance:</text>
+  <text x="446" y="78" class="tx2">menos de 70° a cada</text>
+  <text x="446" y="94" class="tx2">lado de la cola</text>
+</svg>

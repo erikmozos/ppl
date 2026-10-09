@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { actions, allAircraft, useStore } from '../store'
 import { firebaseEnabled, syncNow, useSession } from '../firebase'
+import { PPL_SYLLABUS } from '../data/licenses/ppl-syllabus'
+import { blockStats, readiness } from '../study/exam'
+import { readyText } from './ppl/PplSubject'
 
 export function Progress() {
   const s = useStore()
@@ -27,6 +30,9 @@ export function Progress() {
   return (
     <div className="wrap">
       <h1>Progreso</h1>
+      <h2 className="sec">PPL(A)</h2>
+      <PplProgress />
+      <h2 className="sec">Cabinas</h2>
       <div className="kpis">
         <div className="card kpi"><b>{s.attempts.length}</b><span>repasos</span></div>
         <div className="card kpi"><b>{avg}%</b><span>nota media</span></div>
@@ -39,7 +45,7 @@ export function Progress() {
       {s.attempts.length === 0 ? <p className="muted">Aún no has hecho ningún repaso.</p> : (
         <div className="card table-wrap">
           <table className="table">
-            <thead><tr><th>Fecha</th><th>Avión</th><th>Flow</th><th>Nota</th><th>✓</th><th>✗</th><th>💡</th></tr></thead>
+            <thead><tr><th>Fecha</th><th>Avión</th><th>Flow</th><th>Nota</th><th>Bien</th><th>Mal</th><th>Pistas</th></tr></thead>
             <tbody>
               {s.attempts.slice(0, 50).map(a => (
                 <tr key={a.id}>
@@ -100,9 +106,31 @@ function SyncCard() {
     <div className="card">
       <p>Conectado como <b>{s.user?.email}</b> ({s.profile?.role === 'admin' ? 'administrador' : 'alumno'}). Tu progreso se guarda automáticamente en la nube y lo verás en cualquier dispositivo con tu cuenta.</p>
       <p className="small muted">{s.syncing ? 'Sincronizando…' : s.lastSync ? `Última sincronización: ${new Date(s.lastSync).toLocaleTimeString('es-ES')}` : 'Pendiente de sincronizar'}{s.error ? ` · ⚠️ ${s.error}` : ''}</p>
-      <button className="btn sm" onClick={() => syncNow().then(() => setMsg('Sincronizado ✓')).catch(e => setMsg('Error: ' + (e as Error).message))}>Sincronizar ahora</button>
+      <button className="btn sm" onClick={() => syncNow().then(() => setMsg('Sincronizado')).catch(e => setMsg('Error: ' + (e as Error).message))}>Sincronizar ahora</button>
       {msg && <p className="small">{msg}</p>}
       <p className="small muted">Las cabinas que subas con imágenes muy grandes (más de ~900 KB) se quedan solo en este navegador.</p>
+    </div>
+  )
+}
+
+function PplProgress() {
+  const s = useStore()
+  const stats = blockStats(s.study)
+  const now = Date.now()
+  return (
+    <div className="stack">
+      <div className="kpi-row">
+        <div><b>{Object.keys(s.study.lessons).length}</b><span>lecciones leídas</span></div>
+        <div><b>{Object.values(stats).reduce((a, v) => a + v[1], 0)}</b><span>respuestas</span></div>
+        <div><b>{s.study.exams.length}</b><span>simulacros</span></div>
+        <div><b>{Object.values(s.study.srs).filter(v => v.due <= now).length}</b><span>pendientes de repaso</span></div>
+      </div>
+      <div className="table-wrap">
+        <table className="table">
+          <thead><tr><th>Materia</th><th>Acierto</th><th>Preparación</th></tr></thead>
+          <tbody>{PPL_SYLLABUS.map(sub => { const r = readiness(sub, s.study, stats); return <tr key={sub.code}><td><a href={`#/licencias/ppl/${sub.id}`}>{sub.code} {sub.name}</a></td><td>{r.accuracy === null ? '—' : `${r.accuracy} % de ${r.answered}`}</td><td className={r.ready ? 'ok-text' : 'muted small'}>{r.ready ? 'Lista para el examen' : readyText(r)}</td></tr> })}</tbody>
+        </table>
+      </div>
     </div>
   )
 }

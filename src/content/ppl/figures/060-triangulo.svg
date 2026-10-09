@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <title>Triángulo de velocidades: vector aire (rumbo y TAS), vector viento (W/V) y vector suelo (derrota y GS), con la deriva entre rumbo y derrota</title>
+  <defs>
+    <marker id="060-triangulo-ac" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 1L10 5L0 9z" class="ac-fill"/></marker>
+    <marker id="060-triangulo-wa" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1L10 5L0 9z" class="wa-fill"/></marker>
+    <marker id="060-triangulo-ok" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 1L10 5L0 9z" class="ok-fill"/></marker>
+    <marker id="060-triangulo-n" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+  </defs>
+  <line x1="120" y1="318" x2="120" y2="52" class="ln2 dash" marker-end="url(#060-triangulo-n)"/>
+  <text x="120" y="40" class="tx b" text-anchor="middle">N verdadero</text>
+  <path d="M120 310 L226.05 203.95 L332.1 97.9" class="ac-ln thick" fill="none" marker-mid="url(#060-triangulo-ac)"/>
+  <path d="M332.1 97.9 L344.7 119.7 L354.6 136.85 L364.5 154 L377.1 175.8" class="wa-ln thick" fill="none" marker-mid="url(#060-triangulo-wa)"/>
+  <path d="M120 310 L240.8 246.9 L256.3 238.9 L377.1 175.8" class="ok-ln thick" fill="none" marker-mid="url(#060-triangulo-ok)"/>
+  <path d="M120 240 A70 70 0 0 1 169.5 260.5" class="ln2" fill="none"/>
+  <text x="128" y="232" class="tx2">rumbo</text>
+  <path d="M169.5 260.5 A70 70 0 0 1 182 277.6" class="ln" fill="none"/>
+  <text x="188" y="300" class="tx b">deriva = corrección</text>
+  <text x="238" y="176" class="txa b" text-anchor="end">rumbo y TAS</text>
+  <text x="364" y="124" class="txw b">viento W/V</text>
+  <text x="266" y="266" class="txo b">derrota y GS</text>
+  <circle cx="120" cy="310" r="4" class="ink-fill"/>
+  <text x="108" y="330" class="tx2" text-anchor="middle">punto de salida</text>
+  <rect x="430" y="196" width="196" height="132" rx="6" class="soft"/>
+  <line x1="442" y1="218" x2="476" y2="218" class="ac-ln thick"/>
+  <text x="484" y="222" class="tx">aire: rumbo, TAS</text>
+  <text x="484" y="238" class="tx2">una punta de flecha</text>
+  <line x1="442" y1="258" x2="476" y2="258" class="wa-ln thick"/>
+  <text x="484" y="262" class="tx">viento: de dónde y kt</text>
+  <text x="484" y="278" class="tx2">tres puntas</text>
+  <line x1="442" y1="296" x2="476" y2="296" class="ok-ln thick"/>
+  <text x="484" y="300" class="tx">suelo: derrota, GS</text>
+  <text x="484" y="316" class="tx2">dos puntas</text>
+  <text x="320" y="352" class="tx2" text-anchor="middle">Viento por la izquierda: deriva a la derecha y rumbo corregido a la izquierda</text>
+</svg>

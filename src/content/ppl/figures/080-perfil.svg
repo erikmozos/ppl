@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 450">
+  <title>Perfil alar: nomenclatura (cuerda, línea media, curvatura, espesor) y ángulo de ataque frente a ángulo de calaje</title>
+  <defs>
+    <marker id="080-perfil-flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+  </defs>
+  <path d="M100 130 C125 70 250 58 380 76 C460 87 520 108 560 130 C490 136 390 142 290 146 C200 149 130 148 100 130 Z" class="ac"/>
+  <line x1="100" y1="130" x2="560" y2="130" class="ln2 dash"/>
+  <path d="M100 130 C190 98 380 96 560 130" class="ac-ln thick"/>
+  <line x1="300" y1="130" x2="300" y2="106" class="wa-ln thick"/>
+  <text x="308" y="125" class="txw" font-size="12">curvatura</text>
+  <line x1="250" y1="70" x2="250" y2="146" class="ln" marker-start="url(#080-perfil-flecha)" marker-end="url(#080-perfil-flecha)"/>
+  <text x="244" y="96" class="tx" font-size="12" text-anchor="end">espesor</text>
+  <circle cx="100" cy="130" r="3.5" class="ink-fill"/>
+  <circle cx="560" cy="130" r="3.5" class="ink-fill"/>
+  <text x="180" y="50" class="tx b" text-anchor="middle">extradós</text>
+  <text x="400" y="172" class="tx b" text-anchor="middle">intradós</text>
+  <text x="14" y="40" class="tx">borde de ataque</text>
+  <line x1="56" y1="46" x2="97" y2="125" class="ln2"/>
+  <text x="626" y="186" class="tx" text-anchor="end">borde de salida</text>
+  <line x1="590" y1="172" x2="563" y2="134" class="ln2"/>
+  <text x="470" y="40" class="txa b" text-anchor="middle">línea media</text>
+  <line x1="466" y1="46" x2="426" y2="109" class="ln2"/>
+  <text x="330" y="212" class="tx2" text-anchor="middle">cuerda: recta del borde de ataque al de salida</text>
+  <line x1="330" y1="198" x2="330" y2="132" class="ln2"/>
+  <line x1="20" y1="232" x2="620" y2="232" class="ln2"/>
+  <text x="620" y="258" class="tx2" text-anchor="end">Ángulos exagerados para verlos; vuelo nivelado</text>
+  <line x1="60" y1="390" x2="580" y2="390" class="ln2 dash"/>
+  <line x1="64" y1="326.6" x2="580" y2="390" class="ln dash"/>
+  <line x1="78" y1="255.4" x2="580" y2="390" class="ac-ln"/>
+  <path d="M100 130 C125 70 250 58 380 76 C460 87 520 108 560 130 C490 136 390 142 290 146 C200 149 130 148 100 130 Z" class="ac" transform="translate(483.4 364.1) rotate(15) scale(0.4348) translate(-330 -130)"/>
+  <path d="M140 390 A440 440 0 0 1 155 276.1" class="wa-ln thick"/>
+  <path d="M242.5 348.6 A340 340 0 0 1 251.6 302" class="ac-ln thick"/>
+  <path d="M320 390 A260 260 0 0 1 321.9 358.3" class="ln"/>
+  <text x="128" y="362" class="txw b" font-size="17" text-anchor="end">α</text>
+  <text x="228" y="330" class="txa b" font-size="16" text-anchor="middle">i</text>
+  <text x="301" y="381" class="tx b" font-size="13" text-anchor="middle">θ</text>
+  <text x="96" y="246" class="txa" transform="rotate(15 96 246)">cuerda</text>
+  <text x="76" y="318" class="tx" transform="rotate(7 76 318)">eje longitudinal</text>
+  <text x="380" y="406" class="tx2">dirección del viento relativo</text>
+  <line x1="300" y1="402" x2="370" y2="402" class="ln" marker-end="url(#080-perfil-flecha)"/>
+  <text x="20" y="428" class="tx"><tspan class="txw b">α</tspan> ángulo de ataque: cuerda y viento relativo (lo cambia el piloto)</text>
+  <text x="20" y="445" class="tx"><tspan class="txa b">i</tspan> calaje: cuerda y eje longitudinal (fijo) · <tspan class="b">θ</tspan> actitud</text>
+</svg>

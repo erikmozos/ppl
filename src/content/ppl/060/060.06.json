@@ -1,0 +1,801 @@
+{
+  "lesson": {
+    "id": "060.06",
+    "title": "Navegación a estima",
+    "summary": "Derrota, rumbos verdadero, magnético y de brújula, viento, IAS, CAS, TAS y GS, deriva y corrección de deriva, posición estimada y ETA: la base de todo el cálculo de navegación.",
+    "objectives": [
+      "Distinguir derrota, rumbo, deriva y corrección de deriva, y aplicar sus signos sin dudar",
+      "Pasar de rumbo verdadero a magnético y a brújula con la variación y el desvío",
+      "Encadenar IAS, CAS, TAS y GS y saber qué cambia con la altitud y qué con el viento",
+      "Descomponer el viento en componente cruzada y de cara con senos y cosenos o con la regla del reloj",
+      "Resolver de cabeza un triángulo de velocidades: corrección, rumbo y GS",
+      "Calcular una posición estimada y una ETA a partir del último punto conocido"
+    ],
+    "sections": [
+      {
+        "title": "Qué es navegar a estima",
+        "text": [
+          "Navegar a estima (DR, dead reckoning) es **calcular dónde estás a partir de dónde estabas**: conoces el último punto fijo (un pueblo, un cruce de autopista o una posición radio), el rumbo que has mantenido, la velocidad y el viento, y el tiempo transcurrido. Con eso dibujas la posición estimada sin mirar por la ventanilla.",
+          "En VFR la estima no sustituye a la navegación observada (comparar carta y terreno): la prepara. Antes del vuelo calculas rumbo, tiempo y combustible de cada tramo; en vuelo, la estima te dice **qué deberías ver y cuándo**, y la observación lo confirma o te avisa de que algo no cuadra. Si el GNSS falla o te pierdes, la estima es lo único que te queda.",
+          "El examen de AESA pregunta este bloque de dos maneras: conceptos (qué es la deriva, de dónde sopla el viento, qué vector es cada uno) y cálculos cortos que tienes que poder hacer con el computador y comprobar de cabeza. Esta lección enseña los conceptos y el cálculo mental; el manejo del computador está en la lección 060.07."
+        ]
+      },
+      {
+        "title": "Derrota, rumbo y las tres referencias de norte",
+        "text": [
+          "La **derrota** (track, TR) es la línea que el avión describe sobre el suelo. La **derrota prevista** es la que trazas en la carta entre dos puntos; la **derrota real** (track made good, TMG) es la que de verdad has seguido. El **rumbo** (heading, HDG) es hacia dónde apunta el morro. Si no hubiera viento, rumbo y derrota coincidirían; con viento lateral no coinciden nunca.",
+          "Las dos se miden en grados de 000° a 360° desde un norte de referencia. En la carta mides respecto al **norte verdadero** (los meridianos). La brújula, en cambio, apunta al **norte magnético**, y la diferencia entre ambos es la **variación** (o declinación), que la carta da con las isógonas. Además, el hierro y la electricidad del propio avión desvían la brújula: esa diferencia es el **desvío**, que da la tablilla de desvíos del avión. El rumbo que lees en la brújula es el **rumbo de brújula**.",
+          "La cadena se recorre siempre en el mismo orden: verdadero, variación, magnético, desvío, brújula. Al ir de verdadero a magnético **la variación oeste se suma y la este se resta**; con el desvío se hace igual al pasar de magnético a brújula. Es la regla inglesa «East is least, West is best»."
+        ],
+        "formulas": [
+          {
+            "f": "Rumbo verdadero ± variación = rumbo magnético ± desvío = rumbo de brújula",
+            "note": "Oeste (W) se suma, este (E) se resta, yendo de verdadero hacia brújula. De brújula hacia verdadero, al revés."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Derrota verdadera 135°, corrección de deriva 4° a la izquierda, variación 3° W y desvío 2° E. ¿Qué rumbo de brújula vuelas?",
+            "a": "Rumbo verdadero = 135° − 4° = 131°. Magnético = 131° + 3° (W se suma) = 134°. Brújula = 134° − 2° (E se resta) = 132°."
+          },
+          {
+            "q": "La brújula marca 268° y la tablilla da un desvío de 1° W; la variación es 2° E. ¿Rumbo verdadero?",
+            "a": "De brújula hacia verdadero se invierten los signos: magnético = 268° − 1° = 267°; verdadero = 267° + 2° = 269°."
+          }
+        ],
+        "note": {
+          "kind": "tip",
+          "text": "Escribe siempre la columna completa (V, var, M, desv, B) en el log. Casi todos los fallos de examen en esta materia son de signo, no de concepto."
+        }
+      },
+      {
+        "title": "Velocidades: IAS, CAS, TAS y GS",
+        "text": [
+          "El anemómetro mide la presión dinámica y la muestra como **IAS** (velocidad indicada). Corregida por los errores de instrumento y de posición de las tomas de presión (tabla de calibración del manual del avión) se convierte en **CAS** (velocidad calibrada). En avioneta, a baja velocidad, IAS y CAS difieren pocos nudos, y el error de compresibilidad (que daría la EAS) es despreciable.",
+          "El anemómetro está calibrado para la densidad del nivel del mar en atmósfera estándar. Al subir, el aire es menos denso y el avión tiene que moverse más deprisa respecto al aire para generar la misma presión dinámica: la **TAS** (velocidad verdadera respecto a la masa de aire) es mayor que la CAS. La aproximación de bolsillo es **TAS ≈ CAS + 2 % por cada 1000 ft**; con aire más caliente que el estándar la TAS es algo mayor todavía.",
+          "La **GS** (velocidad respecto al suelo) es la TAS más o menos el efecto del viento. Es la que manda en el tiempo y el combustible de cada tramo. El viento **no cambia la TAS ni la IAS** (el avión se mueve dentro de la masa de aire); solo cambia la GS y la derrota."
+        ],
+        "table": {
+          "caption": "Cadena de velocidades",
+          "head": [
+            "Velocidad",
+            "Qué es",
+            "Cómo se obtiene"
+          ],
+          "rows": [
+            [
+              "IAS",
+              "Indicada por el anemómetro",
+              "Lectura directa"
+            ],
+            [
+              "CAS",
+              "IAS corregida por instrumento y posición",
+              "Tabla de calibración del manual del avión"
+            ],
+            [
+              "TAS",
+              "Velocidad respecto a la masa de aire",
+              "CAS corregida por densidad: altitud de presión y temperatura (computador)"
+            ],
+            [
+              "GS",
+              "Velocidad respecto al suelo",
+              "TAS combinada con el viento (triángulo de velocidades)"
+            ]
+          ]
+        },
+        "examples": [
+          {
+            "q": "IAS 100 kt (CAS igual) a 5000 ft en atmósfera estándar. TAS aproximada.",
+            "a": "2 % × 5 = 10 %: TAS ≈ 110 kt. El computador da unos 108 kt; la regla siempre queda un poco por arriba."
+          }
+        ]
+      },
+      {
+        "title": "El viento: de dónde sopla y cómo se descompone",
+        "text": [
+          "El viento se da como dirección y fuerza, por ejemplo 270/20: **sopla desde** los 270° (del oeste) con 20 kt y, por tanto, empuja hacia los 090°. Confundir «de» con «hacia» invierte todo el triángulo y es un distractor clásico.",
+          "La referencia también importa. El viento del METAR, del TAF y de los pronósticos de viento en altura va en **grados verdaderos**, porque se combina con derrotas medidas en la carta. El viento en superficie que te da la torre o el ATIS para despegar y aterrizar va en **grados magnéticos**, para compararlo directamente con el número de la pista.",
+          "Para saber cuánto te desvía el viento y cuánto te frena, se descompone respecto a la derrota. El **ángulo del viento** es la diferencia entre la dirección del viento y la derrota. La **componente cruzada** es viento × seno del ángulo; la **componente de cara** (o de cola) es viento × coseno del ángulo. Sin calculadora se usa la **regla del reloj**: se lee el ángulo como si fueran minutos y se toma esa fracción de hora como fracción del viento."
+        ],
+        "formulas": [
+          {
+            "f": "Cruzada = V · sen(ángulo) · De cara = V · cos(ángulo)",
+            "note": "Ángulo = dirección del viento − derrota. Si el viento viene de entre 90° y 180° respecto a la derrota, la componente longitudinal es de cola."
+          }
+        ],
+        "table": {
+          "caption": "Senos y regla del reloj para la componente cruzada",
+          "head": [
+            "Ángulo del viento",
+            "Seno",
+            "Regla del reloj",
+            "Coseno (de cara)"
+          ],
+          "rows": [
+            [
+              "10°",
+              "0,17",
+              "1/6",
+              "0,98"
+            ],
+            [
+              "20°",
+              "0,34",
+              "1/3",
+              "0,94"
+            ],
+            [
+              "30°",
+              "0,50",
+              "1/2",
+              "0,87"
+            ],
+            [
+              "40°",
+              "0,64",
+              "2/3",
+              "0,77"
+            ],
+            [
+              "45°",
+              "0,71",
+              "3/4 aprox.",
+              "0,71"
+            ],
+            [
+              "50°",
+              "0,77",
+              "5/6",
+              "0,64"
+            ],
+            [
+              "60° o más",
+              "0,87 a 1",
+              "todo",
+              "0,50 a 0"
+            ]
+          ]
+        },
+        "examples": [
+          {
+            "q": "Derrota 250°, viento 220/30. Componentes.",
+            "a": "El viento viene 30° a la izquierda de la derrota. Cruzada = 30 × 0,5 = 15 kt desde la izquierda; de cara = 30 × 0,87 ≈ 26 kt."
+          }
+        ]
+      },
+      {
+        "title": "El triángulo de velocidades",
+        "text": [
+          "En vuelo intervienen tres movimientos que se suman como vectores. El **vector aire** es el movimiento del avión respecto a la masa de aire: dirección el rumbo y módulo la TAS. El **vector viento** es el movimiento de la masa de aire respecto al suelo (W/V). El **vector suelo** es la suma de los dos: dirección la derrota y módulo la GS. En los dibujos británicos el rumbo lleva una punta de flecha, la derrota dos y el viento tres.",
+          "La **deriva** es el ángulo entre el rumbo y la derrota, medido desde el rumbo. **Deriva a la derecha** (estribor) significa que la derrota queda a la derecha del rumbo: derrota = rumbo + deriva. Ocurre cuando el viento viene de la izquierda. La **corrección de deriva** (WCA, wind correction angle) es el ángulo que separas el rumbo de la derrota para anular esa deriva, y **siempre se hace hacia el viento**: viento por la izquierda, rumbo a la izquierda de la derrota.",
+          "La deriva es máxima cuando el viento llega a 90° de la derrota. Para ángulos pequeños, un viento de V nudos con una TAS dada produce una deriva de V × 60 / TAS grados: es la **deriva máxima**. Para cualquier otro ángulo se multiplica por el seno (o la fracción del reloj). La GS se obtiene restando a la TAS la componente de cara, o sumando la de cola; el pequeño coseno de la corrección solo se nota con correcciones grandes."
+        ],
+        "figure": "svg:060-triangulo",
+        "caption": "Vector aire (rumbo y TAS), vector viento (W/V) y vector suelo (derrota y GS). El viento viene de la izquierda: el avión deriva a la derecha y el piloto corrige a la izquierda.",
+        "formulas": [
+          {
+            "f": "Deriva máxima (°) ≈ V × 60 / TAS",
+            "note": "Exacta: arcsen(V / TAS). Con 20 kt y 100 kt da 11,5°, frente a 12° con la regla."
+          },
+          {
+            "f": "Corrección ≈ deriva máxima × sen(ángulo del viento)",
+            "note": "Hacia el lado del que viene el viento."
+          },
+          {
+            "f": "GS ≈ TAS − componente de cara (o + componente de cola)",
+            "note": "Más exacto: GS = TAS · cos(corrección) − V · cos(ángulo)."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Derrota 360°, TAS 100 kt, viento 270/20. Rumbo y GS.",
+            "a": "Ángulo del viento 90° por la izquierda: corrección = 20 × 60 / 100 = 12° a la izquierda (exacto 11,5°). Rumbo 348°. Componente de cara 0: GS = 100 × cos 12° ≈ 98 kt."
+          },
+          {
+            "q": "Derrota 090°, TAS 110 kt, viento 120/25. Rumbo y GS.",
+            "a": "Ángulo 30° por la derecha. Deriva máxima = 25 × 60 / 110 ≈ 13,6°; × 0,5 ≈ 7° a la derecha (exacto 6,5°). Rumbo ≈ 097°. De cara = 25 × 0,87 ≈ 22 kt: GS ≈ 88 kt."
+          },
+          {
+            "q": "Derrota 045°, TAS 95 kt, viento 360/15. Rumbo y GS.",
+            "a": "Ángulo 45° por la izquierda. Deriva máxima = 15 × 60 / 95 ≈ 9,5°; × 0,7 ≈ 6,5° a la izquierda. Rumbo ≈ 039°. De cara = 15 × 0,71 ≈ 11 kt: GS ≈ 84 kt."
+          }
+        ]
+      },
+      {
+        "title": "Calculadora: triángulo de velocidades",
+        "text": [
+          "Prueba con la calculadora los tres ejemplos anteriores y después inventa los tuyos. Antes de mirar el resultado, di en voz alta hacia qué lado corriges y si la GS será mayor o menor que la TAS: esa comprobación de dos segundos es la que te salva de un error de signo en el examen."
+        ],
+        "figure": "calc:wind"
+      },
+      {
+        "title": "Posición estimada, tiempo y ETA",
+        "text": [
+          "La **posición estimada** se construye en dos pasos. Desde el último punto fijo, el rumbo y la TAS durante el tiempo transcurrido dan la **posición aire** (donde estarías sin viento). Desde ella, el viento durante ese mismo tiempo desplaza el avión hasta la **posición estimada** (DR position). Si el viento previsto es bueno, coincidirá con lo que ves; si no, la diferencia te permite calcular el viento real (lección 060.08).",
+          "El tiempo de cada tramo (EET, tiempo estimado en ruta) es distancia × 60 / GS, en minutos. La **ETA** (hora estimada de llegada) es la hora de salida o de paso por el último punto más el EET. En aviación todas las horas van en **UTC**.",
+          "Ojo con las horas decimales: 0,7 h son 42 minutos, no 70; 1,3 h son 1 h 18 min. Para pasar de decimal a minutos se multiplica por 60. Y ojo con la velocidad: el tiempo se calcula con la **GS**, nunca con la TAS."
+        ],
+        "formulas": [
+          {
+            "f": "Tiempo (min) = distancia (NM) × 60 / GS (kt)",
+            "note": "GS 60 kt = 1 NM/min; 90 kt = 1,5 NM/min; 120 kt = 2 NM/min."
+          },
+          {
+            "f": "ETA = hora de salida (o de paso por el último punto) + EET"
+          }
+        ],
+        "examples": [
+          {
+            "q": "Sobrevuelas un punto fijo a las 10:20 UTC con rumbo verdadero 090°, TAS 100 kt y viento 360/20. ¿Dónde estás a las 10:50?",
+            "a": "En 30 min el vector aire te lleva 50 NM hacia el este (posición aire). El viento sopla desde el norte, hacia el sur: en 30 min te desplaza 10 NM al sur. Posición estimada: 50 NM al este y 10 NM al sur del punto, es decir, derrota real ≈ 101° y unas 51 NM recorridas."
+          },
+          {
+            "q": "Despegas a las 10:42 UTC. Tramo de 64 NM con TAS 110 kt y GS 96 kt. ETA.",
+            "a": "64 × 60 / 96 = 40 min. ETA 11:22 UTC. Con la TAS saldrían 35 min, y leer 0,67 h como 67 min daría 11:49: los dos son errores típicos."
+          }
+        ]
+      },
+      {
+        "title": "Comprobaciones rápidas antes de dar por bueno un resultado",
+        "bullets": [
+          "El rumbo queda **del lado del viento** respecto a la derrota. Si te sale al revés, has invertido el signo.",
+          "Con viento de cara, GS menor que TAS; con viento de cola, mayor. Con viento a 90°, la GS es solo un poco menor que la TAS.",
+          "La corrección nunca supera la deriva máxima (V × 60 / TAS).",
+          "Los vientos del METAR y de los pronósticos van en verdadero: combínalos con la derrota verdadera y aplica la variación después, al rumbo.",
+          "El tiempo, con GS; el resultado, en minutos; la ETA, en UTC."
+        ]
+      }
+    ],
+    "numbers": [
+      "Rumbo verdadero ± variación = magnético ± desvío = brújula; W se suma, E se resta (de verdadero hacia brújula)",
+      "Deriva máxima ≈ viento × 60 / TAS",
+      "Componente cruzada = V · sen(ángulo); de cara = V · cos(ángulo)",
+      "Regla del reloj: 10° = 1/6, 20° = 1/3, 30° = 1/2, 40° = 2/3, 50° = 5/6, 60° o más = todo",
+      "TAS ≈ CAS + 2 % por cada 1000 ft",
+      "Tiempo (min) = distancia × 60 / GS",
+      "Viento del METAR, TAF y pronósticos: verdadero; viento de torre y ATIS: magnético",
+      "Deriva a la derecha: derrota = rumbo + deriva; el viento viene de la izquierda"
+    ],
+    "traps": [
+      "Viento 270/20 sopla desde el oeste, no hacia el oeste: el avión se desplaza hacia el este.",
+      "La corrección se hace hacia el viento; la deriva, hacia el lado contrario.",
+      "El viento cambia la GS y la derrota, no la TAS ni la IAS.",
+      "El tiempo se calcula con la GS; usar la TAS es el distractor más repetido.",
+      "0,7 h son 42 min, no 70 min.",
+      "La variación W se suma al pasar de verdadero a magnético; restarla es el error de signo clásico.",
+      "Viento de pronóstico (verdadero) frente a viento de torre (magnético): no los mezcles con la derrota equivocada."
+    ],
+    "spain": [
+      "En el examen de AESA hay en pantalla una calculadora con memoria y una regla a escala, y el vigilante presta un computador de navegación (se admite uno propio revisado): aprende a hacer estos cálculos con el computador físico y a comprobarlos de cabeza."
+    ],
+    "sources": [
+      {
+        "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario de navegación (navegación a estima)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+      },
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 16 Navigation",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Pooleys, CRP-5 Computer Handbook (2017): triángulo de velocidades y aplicación de la deriva",
+        "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+      },
+      {
+        "title": "OACI, Anexo 3 (METAR y TAF) y Doc 4444 PANS-ATM (viento en superficie para despegue y aterrizaje)"
+      },
+      {
+        "title": "AESA, FOR-EFT-GU01, guía de los exámenes teóricos Part-FCL (material permitido)",
+        "url": "https://www.senasa.es/recursos/adobePDF/2025/pdf/FOR-EFT-GU01_Ed_01_Examenes_teoricos_PART_%20FCL.pdf"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28: brújula y direccional",
+        "href": "#/ac/pa28"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "060.06.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La deriva es el ángulo comprendido entre:",
+      "options": [
+        "La derrota y la dirección del viento",
+        "El rumbo y la derrota",
+        "El norte verdadero y el norte magnético",
+        "El rumbo y la dirección del viento"
+      ],
+      "correct": 1,
+      "why": "La deriva se mide desde el rumbo (hacia dónde apunta el morro) hasta la derrota (lo que el avión recorre sobre el suelo). La produce la componente cruzada del viento.",
+      "whyNot": [
+        "Ese es el ángulo del viento respecto a la derrota, que sirve para descomponerlo, no la deriva.",
+        null,
+        "Ese ángulo es la variación magnética.",
+        "La dirección del viento no es un lado de la deriva: la deriva es el efecto del viento, medido entre rumbo y derrota."
+      ],
+      "ref": "AMC1 FCL.210 (temario 060, navegación a estima); FAA PHAK cap. 16",
+      "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+    },
+    {
+      "id": "060.06.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "En el triángulo de velocidades, el vector suelo está formado por:",
+      "options": [
+        "El rumbo y la TAS",
+        "La dirección y la fuerza del viento",
+        "La derrota y la GS",
+        "El rumbo y la GS"
+      ],
+      "correct": 2,
+      "why": "El vector suelo es el movimiento del avión respecto al terreno: su dirección es la derrota y su módulo la GS. Es la suma del vector aire y del vector viento.",
+      "whyNot": [
+        "Rumbo y TAS forman el vector aire.",
+        "Dirección y fuerza del viento forman el vector viento.",
+        null,
+        "Mezcla dos vectores: el rumbo pertenece al vector aire y la GS al vector suelo."
+      ],
+      "ref": "AMC1 FCL.210 (temario 060, navegación a estima); FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.06.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "Mantienes rumbo verdadero 090° y la derrota real sobre el suelo resulta 096°. ¿De qué lado sopla el viento?",
+      "options": [
+        "Desde la izquierda del avión, del lado norte",
+        "Desde la derecha del avión, del lado sur",
+        "Exactamente de cara, desde el este",
+        "Exactamente de cola, desde el oeste"
+      ],
+      "correct": 0,
+      "why": "La derrota (096°) queda a la derecha del rumbo (090°): deriva de 6° a la derecha. Un avión deriva hacia el lado contrario al que viene el viento, así que el viento llega por la izquierda, desde el norte.",
+      "whyNot": [
+        null,
+        "Un viento del sur empujaría el avión hacia el norte y la derrota quedaría a la izquierda del rumbo, por debajo de 090°.",
+        "Un viento exactamente de cara no tiene componente cruzada: rumbo y derrota coincidirían.",
+        "Un viento exactamente de cola tampoco produce deriva."
+      ],
+      "ref": "AMC1 FCL.210 (temario 060, navegación a estima); FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.06.004",
+      "type": "regla",
+      "level": 1,
+      "q": "La dirección del viento de un METAR se expresa en:",
+      "options": [
+        "Grados magnéticos, hacia donde sopla",
+        "Grados magnéticos, desde donde sopla",
+        "Grados verdaderos, hacia donde sopla",
+        "Grados verdaderos, desde donde sopla"
+      ],
+      "correct": 3,
+      "why": "En el METAR, el TAF y los pronósticos de viento en altura la dirección es verdadera y es aquella desde la que sopla el viento: 27015KT es viento del oeste.",
+      "whyNot": [
+        "Ni magnética ni hacia donde sopla: son dos errores a la vez.",
+        "La referencia del METAR es el norte verdadero, no el magnético.",
+        "Se da siempre la dirección de procedencia, no la de destino.",
+        null
+      ],
+      "ref": "OACI Anexo 3, apéndice 3 (METAR)"
+    },
+    {
+      "id": "060.06.005",
+      "type": "regla",
+      "level": 2,
+      "q": "El viento en superficie que te da la torre para aterrizar viene referido a:",
+      "options": [
+        "El norte verdadero, como en el METAR",
+        "El norte magnético, para compararlo con la pista",
+        "El norte de la brújula de tu avión",
+        "La derrota de aproximación publicada"
+      ],
+      "correct": 1,
+      "why": "Los servicios de tránsito aéreo dan el viento para despegue y aterrizaje (torre y ATIS) en grados magnéticos, la misma referencia que el número de la pista, para que calcules directamente la componente cruzada.",
+      "whyNot": [
+        "El METAR va en verdadero, pero el viento que transmite la torre para la toma va en magnético.",
+        null,
+        "El norte de brújula depende del desvío de cada avión; ningún servicio lo usa.",
+        "El viento siempre se refiere a un norte, nunca a una derrota."
+      ],
+      "ref": "OACI Doc 4444 (PANS-ATM), información de viento en superficie"
+    },
+    {
+      "id": "060.06.006",
+      "type": "calculo",
+      "level": 1,
+      "q": "Viento de 25 kt y TAS de 100 kt. La deriva máxima posible es aproximadamente:",
+      "options": [
+        "4°",
+        "25°",
+        "10°",
+        "15°"
+      ],
+      "correct": 3,
+      "why": "Deriva máxima ≈ viento × 60 / TAS = 25 × 60 / 100 = 15°. Se da con el viento a 90° de la derrota.",
+      "whyNot": [
+        "Es TAS / viento (100 / 25): la división está invertida.",
+        "Confunde nudos de viento con grados de deriva.",
+        "10° correspondería a unos 17 kt de viento con esa TAS.",
+        null
+      ],
+      "ref": "AMC1 FCL.210 (temario 060, navegación a estima); FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.06.007",
+      "type": "calculo",
+      "level": 2,
+      "q": "Derrota verdadera 360°, TAS 100 kt, viento 270/20. Rumbo verdadero y GS aproximados:",
+      "options": [
+        "348° y 98 kt",
+        "012° y 98 kt",
+        "348° y 120 kt",
+        "012° y 80 kt"
+      ],
+      "correct": 0,
+      "why": "Viento a 90° por la izquierda: corrección = 20 × 60 / 100 = 12° a la izquierda (exacto 11,5°), rumbo 348°. Sin componente de cara, GS = 100 × cos 12° ≈ 98 kt.",
+      "whyNot": [
+        null,
+        "Corrige hacia el lado contrario al viento: así el avión derivaría el doble.",
+        "Suma el viento a la TAS como si fuera de cola, y es cruzado.",
+        "Corrección al revés y además resta el viento entero como si fuera de cara."
+      ],
+      "ref": "AMC1 FCL.210 (temario 060, navegación a estima); FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.06.008",
+      "type": "calculo",
+      "level": 2,
+      "q": "Derrota verdadera 090°, TAS 110 kt, viento 120/25. Rumbo verdadero y GS aproximados:",
+      "options": [
+        "083° y 88 kt",
+        "097° y 132 kt",
+        "090° y 85 kt",
+        "097° y 88 kt"
+      ],
+      "correct": 3,
+      "why": "Viento 30° a la derecha. Deriva máxima 25 × 60 / 110 ≈ 14°, por 0,5 ≈ 7° a la derecha: rumbo 097°. Componente de cara 25 × 0,87 ≈ 22 kt: GS ≈ 88 kt.",
+      "whyNot": [
+        "La corrección va hacia el viento, que viene de la derecha; 083° la aplica al revés.",
+        "El viento tiene componente de cara: hay que restarla, no sumarla.",
+        "Ignora la corrección de deriva; con 12,5 kt de cruzado el avión se saldría de la derrota.",
+        null
+      ],
+      "ref": "AMC1 FCL.210 (temario 060, navegación a estima); FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.06.009",
+      "type": "calculo",
+      "level": 3,
+      "q": "Rumbo verdadero 131°, variación 3° W y desvío 2° E. El rumbo de brújula es:",
+      "options": [
+        "130°",
+        "132°",
+        "136°",
+        "126°"
+      ],
+      "correct": 1,
+      "why": "Magnético = 131° + 3° (la variación oeste se suma) = 134°. Brújula = 134° − 2° (el desvío este se resta) = 132°.",
+      "whyNot": [
+        "Invierte los dos signos: 131 − 3 + 2.",
+        null,
+        "Suma las dos correcciones sin mirar si son este u oeste.",
+        "Resta las dos correcciones."
+      ],
+      "ref": "Regla verdadero-magnético-brújula (FAA PHAK cap. 16)"
+    },
+    {
+      "id": "060.06.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "Vuelas a IAS y altitud constantes y el viento pasa de ser de cara a ser de cola. ¿Qué ocurre?",
+      "options": [
+        "Aumentan la TAS y la GS",
+        "Aumenta la TAS y la GS no cambia",
+        "Aumenta la GS y la TAS no cambia",
+        "Disminuye la TAS y aumenta la GS"
+      ],
+      "correct": 2,
+      "why": "La TAS es la velocidad respecto a la masa de aire y depende de la IAS, la altitud y la temperatura, no del viento. El viento solo cambia la velocidad respecto al suelo.",
+      "whyNot": [
+        "La TAS no depende del viento.",
+        "Es al revés: lo que cambia con el viento es la GS.",
+        null,
+        "Con IAS y altitud constantes la TAS se mantiene."
+      ],
+      "ref": "AMC1 FCL.210 (temario 060, navegación a estima); FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.06.011",
+      "type": "concepto",
+      "level": 1,
+      "q": "La CAS es la IAS corregida por:",
+      "options": [
+        "Los errores de instrumento y de posición",
+        "La densidad del aire",
+        "La compresibilidad del aire",
+        "La componente de viento"
+      ],
+      "correct": 0,
+      "why": "La CAS se obtiene corrigiendo la IAS con la tabla de calibración del manual, que recoge el error del instrumento y el de posición de las tomas pitot y estática.",
+      "whyNot": [
+        null,
+        "La corrección por densidad convierte la CAS (o EAS) en TAS.",
+        "La compresibilidad da la EAS y es despreciable en avioneta.",
+        "El viento no interviene en las velocidades respecto al aire."
+      ],
+      "ref": "FAA PHAK cap. 8 (anemómetro) y cap. 16"
+    },
+    {
+      "id": "060.06.012",
+      "type": "concepto",
+      "level": 1,
+      "q": "Subes manteniendo la misma IAS. La TAS:",
+      "options": [
+        "Disminuye, porque el aire es menos denso",
+        "No cambia, porque la IAS es constante",
+        "Solo cambia si hay viento",
+        "Aumenta, porque el aire es menos denso"
+      ],
+      "correct": 3,
+      "why": "Con menos densidad hace falta más velocidad respecto al aire para producir la misma presión dinámica, que es lo que mide el anemómetro: a IAS constante, la TAS crece con la altitud (unos 2 % por cada 1000 ft).",
+      "whyNot": [
+        "La menor densidad hace que la TAS aumente, no que disminuya.",
+        "IAS constante no implica TAS constante si cambia la densidad.",
+        "El viento no afecta a la TAS.",
+        null
+      ],
+      "ref": "FAA PHAK cap. 8 y cap. 16"
+    },
+    {
+      "id": "060.06.013",
+      "type": "calculo",
+      "level": 1,
+      "q": "IAS 120 kt a 5000 ft (CAS igual a IAS). ¿Qué TAS da la regla del 2 % por cada 1000 ft?",
+      "options": [
+        "126 kt",
+        "132 kt",
+        "120 kt",
+        "144 kt"
+      ],
+      "correct": 1,
+      "why": "2 % × 5 = 10 %; 120 × 1,10 = 132 kt. El computador daría algo menos (unos 129 kt en atmósfera estándar): la regla sirve para comprobar.",
+      "whyNot": [
+        "Aplica un 1 % por cada 1000 ft.",
+        null,
+        "Olvida la corrección por densidad.",
+        "Aplica un 4 % por cada 1000 ft."
+      ],
+      "ref": "Regla práctica TAS (FAA PHAK cap. 8)"
+    },
+    {
+      "id": "060.06.014",
+      "type": "calculo",
+      "level": 3,
+      "q": "Pasas sobre un punto fijo a las 10:20 UTC con rumbo verdadero 090°, TAS 100 kt y viento 360/20. A las 10:50 tu posición estimada es:",
+      "options": [
+        "50 NM al este y 10 NM al norte del punto",
+        "60 NM al este del punto, sobre la derrota",
+        "50 NM al este y 10 NM al sur del punto",
+        "40 NM al este y 10 NM al sur del punto"
+      ],
+      "correct": 2,
+      "why": "En 30 min el vector aire te lleva 50 NM al este (posición aire). El viento sopla desde el norte, es decir, hacia el sur, y en 30 min desplaza 10 NM: posición estimada 50 NM al este y 10 NM al sur.",
+      "whyNot": [
+        "Aplica el viento hacia donde dice el número (360°) en lugar de hacia donde sopla.",
+        "Suma el viento a la TAS como si fuera de cola, y es cruzado.",
+        null,
+        "Resta el viento a la TAS y además lo aplica de lado: lo cuenta dos veces."
+      ],
+      "ref": "AMC1 FCL.210 (temario 060, navegación a estima); FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.06.015",
+      "type": "calculo",
+      "level": 2,
+      "q": "Despegas a las 10:42 UTC. El tramo mide 64 NM, la TAS es 110 kt y la GS prevista 96 kt. ETA:",
+      "options": [
+        "11:17 UTC",
+        "11:49 UTC",
+        "12:12 UTC",
+        "11:22 UTC"
+      ],
+      "correct": 3,
+      "why": "Tiempo = 64 × 60 / 96 = 40 min. ETA = 10:42 + 0:40 = 11:22 UTC.",
+      "whyNot": [
+        "Calcula el tiempo con la TAS (35 min) en lugar de con la GS.",
+        "Lee 0,67 h como 67 minutos; son 40 minutos.",
+        "Divide la GS entre la distancia (1,5) y lo toma como 1 h 30 min.",
+        null
+      ],
+      "ref": "AMC1 FCL.210 (temario 060, navegación a estima); FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.06.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "La posición aire es:",
+      "options": [
+        "La que resulta de aplicar solo el rumbo y la TAS durante el tiempo transcurrido",
+        "La posición confirmada por referencia visual con el terreno",
+        "La que resulta de aplicar la derrota y la GS durante el tiempo transcurrido",
+        "La posición que da el receptor GNSS"
+      ],
+      "correct": 0,
+      "why": "La posición aire es donde estaría el avión si no hubiera viento: rumbo y TAS desde el último fijo. Aplicándole el viento se obtiene la posición estimada.",
+      "whyNot": [
+        null,
+        "Una posición confirmada con el terreno es un punto fijo.",
+        "Con derrota y GS se obtiene la posición estimada, que ya incluye el viento.",
+        "El GNSS da un fijo, no una posición aire."
+      ],
+      "ref": "AMC1 FCL.210 (temario 060, navegación a estima); FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.06.017",
+      "type": "concepto",
+      "level": 2,
+      "q": "Para seguir una derrota con un viento que llega por la derecha, el rumbo debe quedar:",
+      "options": [
+        "A la izquierda de la derrota",
+        "A la derecha de la derrota",
+        "Igual a la derrota, corrigiendo con alabeo continuo",
+        "A un lado u otro según la TAS"
+      ],
+      "correct": 1,
+      "why": "La corrección se hace siempre hacia el viento: con viento por la derecha el avión tiende a derivar a la izquierda, y para anularlo se apunta el morro a la derecha de la derrota.",
+      "whyNot": [
+        "Corregir a la izquierda sumaría la corrección a la deriva y el error se duplicaría.",
+        null,
+        "La deriva se corrige con el rumbo, no volando con alabeo continuo.",
+        "La TAS cambia el valor de la corrección, no su lado."
+      ],
+      "ref": "AMC1 FCL.210 (temario 060, navegación a estima); FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.06.018",
+      "type": "calculo",
+      "level": 3,
+      "q": "Derrota verdadera 250°, viento 220/30. Componentes cruzada y longitudinal:",
+      "options": [
+        "15 kt desde la derecha y 26 kt de cara",
+        "26 kt desde la izquierda y 15 kt de cara",
+        "15 kt desde la izquierda y 26 kt de cara",
+        "15 kt desde la izquierda y 26 kt de cola"
+      ],
+      "correct": 2,
+      "why": "El viento viene de 220°, 30° a la izquierda de la derrota. Cruzada = 30 × sen 30° = 15 kt desde la izquierda; longitudinal = 30 × cos 30° ≈ 26 kt de cara.",
+      "whyNot": [
+        "220° está a la izquierda de 250°, no a la derecha.",
+        "Intercambia seno y coseno.",
+        null,
+        "Un viento a 30° de la derrota es de cara; sería de cola si llegara por detrás del través."
+      ],
+      "ref": "AMC1 FCL.210 (temario 060, navegación a estima); FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.06.019",
+      "type": "calculo",
+      "level": 3,
+      "q": "TAS 120 kt; un viento de 30 kt llega 20° a la derecha de la derrota. Corrección aproximada por la regla del reloj:",
+      "options": [
+        "15° a la derecha",
+        "5° a la izquierda",
+        "10° a la derecha",
+        "5° a la derecha"
+      ],
+      "correct": 3,
+      "why": "Deriva máxima = 30 × 60 / 120 = 15°. A 20° la regla del reloj da 1/3: 5°. La corrección va hacia el viento: 5° a la derecha.",
+      "whyNot": [
+        "15° es la deriva máxima, que solo se da con el viento a 90°.",
+        "El valor es correcto pero el lado no: se corrige hacia el viento.",
+        "Usa 2/3 de la deriva máxima, que corresponde a 40°.",
+        null
+      ],
+      "ref": "AMC1 FCL.210 (temario 060, navegación a estima); FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.06.020",
+      "type": "lectura",
+      "level": 2,
+      "q": "Con el viento de este METAR despegas para seguir una derrota verdadera de 210°. Si no corriges la deriva, el avión:",
+      "data": "METAR LEXX 091030Z 30015KT 9999 FEW035 19/08 Q1019=",
+      "options": [
+        "Derivará a la izquierda de la derrota",
+        "Derivará a la derecha de la derrota",
+        "No derivará, porque el viento es de cola",
+        "No derivará y perderá 15 kt de GS"
+      ],
+      "correct": 0,
+      "why": "El viento sopla desde 300°, que está 90° a la derecha de la derrota de 210°: viento cruzado puro por la derecha. Sin corrección, el avión es empujado hacia la izquierda.",
+      "whyNot": [
+        null,
+        "Un viento por la derecha empuja hacia la izquierda, no hacia la derecha.",
+        "300° respecto a 210° está a 90°: es cruzado, no de cola.",
+        "Con el viento a 90° no hay componente de cara apreciable; lo que hay es deriva."
+      ],
+      "ref": "OACI Anexo 3 (METAR); FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.06.021",
+      "type": "lectura",
+      "level": 2,
+      "q": "En la figura, si el piloto pusiera el rumbo igual a la derrota deseada, sin corregir, el avión acabaría:",
+      "figure": "svg:060-triangulo",
+      "options": [
+        "A la derecha de la derrota deseada",
+        "A la izquierda de la derrota deseada",
+        "Sobre la derrota, pero con retraso",
+        "Sobre la derrota, pero adelantado"
+      ],
+      "correct": 0,
+      "why": "El vector viento de la figura empuja hacia el sudeste: el viento llega por la izquierda de la derrota. Sin corrección, el avión deriva a la derecha; por eso el rumbo dibujado está a la izquierda de la derrota.",
+      "whyNot": [
+        null,
+        "El viento llega por la izquierda y empuja hacia la derecha.",
+        "Con componente cruzada el avión no se mantiene sobre la derrota.",
+        "Lo mismo: sin corrección hay deriva lateral, no solo cambio de GS."
+      ],
+      "ref": "AMC1 FCL.210 (temario 060, navegación a estima); FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.06.022",
+      "type": "regla",
+      "level": 1,
+      "q": "Rumbo verdadero 270° y deriva de 8° a la derecha. La derrota es:",
+      "options": [
+        "262°",
+        "278°",
+        "270°",
+        "090°"
+      ],
+      "correct": 1,
+      "why": "Deriva a la derecha significa que la derrota queda a la derecha del rumbo: derrota = rumbo + deriva = 270° + 8° = 278°.",
+      "whyNot": [
+        "Resta la deriva derecha: ese sería el rumbo necesario para corregirla, no la derrota.",
+        null,
+        "Con deriva, rumbo y derrota no coinciden.",
+        "Es el rumbo recíproco, sin relación con la deriva."
+      ],
+      "ref": "Pooleys CRP-5 Handbook, aplicación de la deriva"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.060.06.01",
+      "front": "Deriva máxima: fórmula rápida",
+      "back": "Viento × 60 / TAS, en grados (viento a 90° de la derrota)"
+    },
+    {
+      "id": "c.060.06.02",
+      "front": "Deriva a la derecha: ¿de dónde viene el viento?",
+      "back": "De la izquierda. Derrota = rumbo + deriva; se corrige con el rumbo a la izquierda"
+    },
+    {
+      "id": "c.060.06.03",
+      "front": "Viento del METAR, TAF y pronósticos en altura",
+      "back": "Grados verdaderos, dirección desde la que sopla"
+    },
+    {
+      "id": "c.060.06.04",
+      "front": "Viento que da la torre o el ATIS",
+      "back": "Grados magnéticos, para compararlo con la pista"
+    },
+    {
+      "id": "c.060.06.05",
+      "front": "Regla del reloj: fracción de la deriva máxima a 30° y a 60°",
+      "back": "30°: la mitad; 60° o más: toda"
+    },
+    {
+      "id": "c.060.06.06",
+      "front": "De rumbo verdadero a magnético con variación W",
+      "back": "Se suma la variación W; la E se resta"
+    }
+  ]
+}

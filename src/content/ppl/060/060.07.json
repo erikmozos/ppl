@@ -1,0 +1,1202 @@
+{
+  "lesson": {
+    "id": "060.07",
+    "title": "Computador de navegación",
+    "summary": "Manejo paso a paso del computador de navegación tipo CRP-5 o E6B: velocidad, tiempo, distancia, combustible, conversiones, TAS y altitud verdadera en el lado de cálculo; rumbo, GS y viento en el lado del viento. Con ejemplos resueltos y comprobación mental.",
+    "objectives": [
+      "Resolver velocidad, tiempo, distancia y combustible con la regla circular y situar la coma con una estimación previa",
+      "Convertir NM, km y SM; m y ft; litros, galones y kilos, incluido el paso de volumen a masa con la densidad",
+      "Obtener la TAS a partir de la CAS, la altitud de presión y la temperatura, y la altitud verdadera a partir de la indicada",
+      "Hallar rumbo y GS para una derrota dada con el método del viento abajo (CRP-5) y del viento arriba (E6B)",
+      "Hallar derrota y GS a partir del rumbo, y el viento a partir de rumbo, TAS, derrota y GS",
+      "Comprobar cada resultado con cálculo mental antes de marcar la respuesta"
+    ],
+    "sections": [
+      {
+        "title": "El computador en el examen de AESA",
+        "text": [
+          "El computador de navegación es una regla de cálculo circular por una cara y un pequeño tablero para dibujar el triángulo de velocidades por la otra. Los modelos más extendidos en Europa son el **CRP-5** (y sus parientes CRP-1 y ARC) y, de origen norteamericano, el **E6B**. Las escalas y las ventanas tienen nombres parecidos; lo que cambia es la forma de marcar el viento, y por eso esta lección explica los dos métodos.",
+          "En el examen teórico de AESA el vigilante presta un computador de navegación (se admite uno propio, revisado antes de empezar), y en pantalla tienes una calculadora con memoria y una regla a escala. Muchas preguntas de cálculo se pueden hacer con la calculadora; las de viento, en cambio, se resuelven antes con el computador. Practica con uno físico: los números de esta lección están calculados para que puedas repetirlos y comprobar si llegas al mismo resultado, con la tolerancia normal de la regla (uno o dos nudos, uno o dos grados).",
+          "La regla de oro: **antes de mover la regla, estima el resultado de cabeza**. La escala circular no tiene coma decimal; el mismo punto vale 24, 2,4 o 240. La estimación te dice cuál es."
+        ],
+        "note": {
+          "kind": "es",
+          "text": "Guía AESA FOR-EFT-GU01: computador de navegación facilitado por el vigilante (o propio revisado), calculadora con memoria y regla a escala en pantalla. Llévalo dominado: en 25 minutos y 12 preguntas no hay tiempo para aprender a usarlo."
+        }
+      },
+      {
+        "title": "Lado de cálculo: cómo funciona la regla circular",
+        "text": [
+          "Hay dos escalas logarítmicas enfrentadas: la **exterior**, fija, y la **interior**, que gira. Cualquier proporción P/Q = A/B se resuelve poniendo P en la exterior frente a Q en la interior; entonces A queda en la exterior frente a B en la interior, para cualquier par de valores. Por eso con una sola posición resuelves toda una tabla de tiempos o de consumos.",
+          "En la escala interior hay una marca especial en el 60, con forma de triángulo o flecha (índice de velocidad o de hora): representa **una hora**, 60 minutos. Casi todos los problemas de navegación son «algo por hora», así que se empieza poniendo ese índice frente a la velocidad o el consumo horario. Hay además una marca en el 10 (la unidad) para multiplicar y dividir, y una escala de horas y minutos junto a la interior que convierte minutos en horas (por ejemplo, 274 min = 4 h 34 min).",
+          "Las divisiones no son uniformes: entre 10 y 15 cada marca vale 0,1; entre 15 y 30, 0,2; a partir de 30, 0,5 o 1. Lee siempre qué vale la marca en la zona en la que estás."
+        ],
+        "bullets": [
+          "Escala exterior: distancia, combustible, velocidad en las proporciones; TAS y altitud verdadera en los problemas de altitud.",
+          "Escala interior: tiempo en minutos (índice 60 = 1 h); CAS y altitud indicada en los problemas de altitud.",
+          "Ventanas: velocidad (altitud de presión frente a temperatura) para la TAS; altitud para la altitud verdadera; altitud de densidad.",
+          "Marcas de conversión en la escala exterior: km, NM (náuticas), SM (terrestres), m, ft, litros, galones US e imperiales, kg y lb."
+        ]
+      },
+      {
+        "title": "Velocidad, tiempo y distancia",
+        "text": [
+          "La GS es la distancia recorrida en 60 minutos, así que GS / 60 = distancia / tiempo. Pon el **índice 60 de la escala interior frente a la GS en la exterior**: a partir de ahí, cada tiempo de la interior tiene enfrente, en la exterior, la distancia que recorres en ese tiempo. Si lo que buscas es la GS, se hace al revés: pones el tiempo de la interior frente a la distancia de la exterior y lees la GS en la exterior, frente al índice 60."
+        ],
+        "formulas": [
+          {
+            "f": "GS / 60 = distancia / tiempo (min)",
+            "note": "Índice 60 frente a la GS; distancia (exterior) frente a tiempo (interior)."
+          },
+          {
+            "f": "NM por minuto = GS / 60",
+            "note": "90 kt = 1,5 NM/min; 105 kt = 1,75 NM/min; 120 kt = 2 NM/min."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Tiempo para 42 NM con GS 105 kt.",
+            "a": "Estimación: 105 kt son algo menos de 2 NM/min; 42 NM, poco más de 20 min. Computador: índice 60 frente a 105; frente a 42 en la exterior lees 24 en la interior. Resultado: 24 min (0,4 h, que no son 40 min)."
+          },
+          {
+            "q": "Recorres 38 NM en 21 min. GS.",
+            "a": "Estimación: unas 40 NM en 20 min son unos 120 kt; algo menos. Computador: 21 de la interior frente a 38 de la exterior; frente al índice 60 lees 108-109. GS ≈ 109 kt."
+          },
+          {
+            "q": "Distancia en 35 min con GS 96 kt.",
+            "a": "Estimación: algo más de 1,5 NM/min por 35 min, unas 55 NM. Computador: índice 60 frente a 96; frente a 35 de la interior lees 56 en la exterior. Resultado: 56 NM."
+          }
+        ]
+      },
+      {
+        "title": "Combustible: consumo, cantidad y autonomía",
+        "text": [
+          "El combustible es exactamente el mismo problema con otro nombre: consumo horario / 60 = combustible / tiempo. Pon el **índice 60 frente al consumo por hora** y lee el combustible en la exterior frente a cada tiempo de la interior. Para la autonomía, lees el tiempo en la interior frente a la cantidad disponible en la exterior.",
+          "No mezcles unidades: si el consumo está en litros por hora, el resultado sale en litros; si está en galones US por hora, en galones US. Los consumos de esta sección son valores de ejemplo; los de tu avión salen de su manual (POH/AFM) y dependen de la potencia y de la mezcla."
+        ],
+        "formulas": [
+          {
+            "f": "Consumo horario / 60 = combustible / tiempo (min)"
+          }
+        ],
+        "examples": [
+          {
+            "q": "Consumo 34 l/h. ¿Cuánto gastas en 1 h 25 min?",
+            "a": "1 h 25 min = 85 min (no 1,25 h). Estimación: algo menos de 1,5 h × 34 ≈ 50 l. Computador: índice 60 frente a 34; frente a 85 lees 48,2. Resultado: unos 48 l."
+          },
+          {
+            "q": "Has gastado 21 l en 40 min. Consumo horario.",
+            "a": "40 min de la interior frente a 21 de la exterior; frente al índice 60 lees 31,5. Consumo 31,5 l/h. Comprobación: 40 min son 2/3 de hora; 21 × 3/2 = 31,5."
+          },
+          {
+            "q": "Quedan 140 l utilizables con un consumo de 32 l/h. Autonomía.",
+            "a": "Índice 60 frente a 32; frente a 140 de la exterior lees 262 en la interior: 262 min = 4 h 22 min. Con calculadora: 140 / 32 = 4,375 h, y 0,375 × 60 = 22,5 min. Si tienes que llegar con 30 min de reserva final, puedes volar 3 h 52 min antes de empezar a gastarla."
+          }
+        ]
+      },
+      {
+        "title": "Calculadora: tiempo y combustible",
+        "text": [
+          "Repite aquí los ejemplos de las dos secciones anteriores y compara con lo que leas en tu computador. Si la diferencia es mayor de un 2 %, revisa qué marca has leído o si has puesto el índice 60 o el 10."
+        ],
+        "figure": "calc:fuel"
+      },
+      {
+        "title": "Conversiones",
+        "text": [
+          "En el borde de la escala exterior hay marcas de unidades (km, NM, SM; m, ft; litros, galones imperiales y US; kg, lb). El procedimiento del CRP-5 es: pones la cantidad conocida de la escala interior frente a la marca de su unidad en la exterior, y lees en la interior, frente a la marca de la otra unidad, la cantidad convertida. El E6B funciona igual con sus flechas NAUT, STAT y KM.",
+          "Para pasar de volumen a masa hace falta la densidad (o el peso específico). La del AVGAS 100LL es de unos 0,72 kg/l; la del JET A-1, unos 0,80 kg/l; la del aceite, unos 0,90 kg/l. Si el enunciado da otra densidad, usa la del enunciado. En el examen la calculadora de la pantalla es más rápida para esto."
+        ],
+        "table": {
+          "caption": "Factores de conversión (y redondeos para comprobar)",
+          "head": [
+            "De",
+            "A",
+            "Factor exacto",
+            "Para comprobar"
+          ],
+          "rows": [
+            [
+              "1 NM",
+              "km",
+              "1,852",
+              "casi 2"
+            ],
+            [
+              "1 NM",
+              "SM",
+              "1,151",
+              "1,15"
+            ],
+            [
+              "1 SM",
+              "km",
+              "1,609",
+              "1,6"
+            ],
+            [
+              "1 m",
+              "ft",
+              "3,281",
+              "3,3"
+            ],
+            [
+              "1 ft",
+              "m",
+              "0,3048",
+              "0,3"
+            ],
+            [
+              "1 galón US",
+              "l",
+              "3,785",
+              "3,8"
+            ],
+            [
+              "1 galón imperial",
+              "l",
+              "4,546",
+              "4,5"
+            ],
+            [
+              "1 kg",
+              "lb",
+              "2,205",
+              "2,2"
+            ],
+            [
+              "1 l de AVGAS",
+              "kg",
+              "0,72 aprox.",
+              "0,7"
+            ]
+          ]
+        },
+        "examples": [
+          {
+            "q": "120 l de AVGAS (0,72 kg/l). ¿Masa en kg y en lb?",
+            "a": "120 × 0,72 = 86,4 kg; 86,4 × 2,205 ≈ 190 lb. Error típico: dividir entre 0,72 (167 kg)."
+          },
+          {
+            "q": "48 galones US en litros.",
+            "a": "48 × 3,785 ≈ 182 l. Con galones imperiales serían 218 l: lee bien qué galón es."
+          },
+          {
+            "q": "85 km en NM y en SM.",
+            "a": "85 / 1,852 ≈ 46 NM; 85 / 1,609 ≈ 53 SM. Comprobación: los kilómetros son casi el doble que las NM."
+          },
+          {
+            "q": "Elevación de 2400 m en pies.",
+            "a": "2400 × 3,281 ≈ 7870 ft. Comprobación: 2400 × 3,3 ≈ 7900."
+          }
+        ]
+      },
+      {
+        "title": "TAS con el computador",
+        "text": [
+          "El anemómetro está calibrado para la densidad estándar al nivel del mar; la TAS se obtiene corrigiendo la CAS por la densidad real, que depende de la presión (altitud de presión, la que marca el altímetro con 1013,25 hPa) y de la temperatura del aire exterior. Por eso el computador pide justo esos dos datos.",
+          "Procedimiento: en la ventana de velocidad (Air Speed) gira el disco hasta poner la **altitud de presión frente a la temperatura exterior**; después, frente a la **CAS en la escala interior**, lees la **TAS en la exterior**. En la ventana de altitud de densidad puedes leer, de paso, la altitud de densidad. Por encima de unos 300 kt de TAS hay que aplicar la corrección de compresibilidad, cosa que en avioneta no ocurre."
+        ],
+        "figure": "calc:tas",
+        "caption": "Calculadora de TAS: compara su resultado con el de tu computador y con la regla del 2 % por cada 1000 ft.",
+        "examples": [
+          {
+            "q": "CAS 100 kt, altitud de presión 6000 ft, temperatura exterior +5 °C. TAS.",
+            "a": "Ventana: 6 (miles de ft) frente a +5 °C. Frente a 100 en la interior lees unos 110 en la exterior. TAS ≈ 110 kt. Comprobación: 2 % × 6 = 12 % → 112 kt; la regla siempre sale algo alta."
+          },
+          {
+            "q": "CAS 110 kt a 4500 ft de altitud de presión: compara +6 °C (ISA) con +20 °C.",
+            "a": "Con ISA, TAS ≈ 118 kt; con +20 °C (ISA +14), TAS ≈ 120 kt. A igual CAS y altitud de presión, el aire caliente (menos denso) da más TAS."
+          }
+        ]
+      },
+      {
+        "title": "Altitud verdadera (y de densidad)",
+        "text": [
+          "El altímetro con el QNH marca la altitud correcta solo si la temperatura sigue la atmósfera estándar. En aire más frío que la ISA el aire es más denso, la presión cae más deprisa con la altura y el avión está **más bajo** de lo que indica el altímetro; en aire más cálido, más alto. Es el «del calor al frío, cuidado con el lío» de la altimetría.",
+          "Procedimiento: en la ventana de altitud (Altitude) pon la **altitud de presión frente a la temperatura exterior a ese nivel**; frente a la **altitud indicada en la escala interior** lees la **altitud verdadera en la exterior**. Rigurosamente, la corrección se aplica a la altura sobre la estación que da el QNH; si la estación está cerca del nivel del mar, la diferencia es pequeña.",
+          "Comprobación mental: la corrección es de **un 4 % de la altura sobre la estación por cada 10 °C** de diferencia con la ISA (unos 4 ft por cada 1000 ft y por grado)."
+        ],
+        "formulas": [
+          {
+            "f": "Corrección ≈ 4 % × altura sobre la estación × (ΔISA / 10 °C)",
+            "note": "Frío: altitud verdadera menor que la indicada. Calor: mayor."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Altímetro con QNH de un aeródromo costero: 5000 ft. Temperatura a ese nivel −5 °C. Altitud verdadera.",
+            "a": "ISA a 5000 ft = 15 − 10 = +5 °C; estás a ISA −10. Regla: −4 % de 5000 = −200 ft → unos 4800 ft. El computador da unos 4820 ft. Estás unos 200 ft más bajo de lo que crees."
+          },
+          {
+            "q": "Indicada 4000 ft, temperatura ISA +15.",
+            "a": "+6 % de 4000 ≈ +240 ft → unos 4240 ft (el computador da unos 4210 ft)."
+          }
+        ],
+        "note": {
+          "kind": "warn",
+          "text": "El error por frío es el peligroso: te acerca al terreno. Tenlo en cuenta al decidir tu altitud mínima de seguridad en invierno o sobre montaña."
+        }
+      },
+      {
+        "title": "Lado del viento: partes",
+        "text": [
+          "El lado del viento tiene un **disco transparente giratorio** con una rosa de 360° alrededor, un **índice** fijo arriba (rumbo o derrota verdadera) con una **escala de deriva** fija a cada lado, y una **regla deslizante** por debajo con **arcos de velocidad** y **líneas de deriva** que salen de un punto común situado por debajo de la regla. En el centro del disco hay un **punto central** (grommet en el E6B).",
+          "En el CRP-5 la regla tiene dos caras: baja velocidad (arcos de 40 a 300 kt; por debajo de 100 kt las líneas de deriva van de 2 en 2°) y alta velocidad. En el dibujo siguiente, el computador está resuelto para TAS 100 kt, viento 270/25 y derrota 220°: rumbo 231° y GS 82 kt.",
+          "Hay dos convenios para marcar el viento. En el **método del viento abajo** (el del manual del CRP-5) la cruz del viento se marca por debajo del punto central, en la dirección hacia la que sopla, y el punto central representa la punta del vector aire. En el **método del viento arriba** (el del E6B) el punto del viento se marca por encima del punto central, hacia el lado del que viene. Los dos dan el mismo resultado; no los mezcles."
+        ],
+        "figure": "svg:060-computador-viento",
+        "caption": "Lado del viento tipo CRP-5, método del viento abajo, ya resuelto: punto central sobre la TAS, rumbo bajo el índice, cruz del viento sobre el arco de la GS y la línea de deriva, y la derrota frente a esa misma deriva en la escala fija."
+      },
+      {
+        "title": "Problema 1: hallar rumbo y GS (conoces derrota, TAS y viento)",
+        "text": [
+          "Es el problema de la planificación: has medido la derrota en la carta, tienes el viento previsto y la TAS de crucero, y necesitas el rumbo y la GS para el log. Datos del ejemplo: **derrota 220° verdadera, TAS 100 kt, viento 270/25**."
+        ],
+        "bullets": [
+          "CRP-5 (viento abajo), paso 1: pon 270 bajo el índice y marca la cruz 25 kt por debajo del punto central, sobre la línea central (con el punto central en el arco de 100, la cruz cae en el de 75).",
+          "Paso 2: desliza la regla hasta que el punto central quede sobre la TAS (100).",
+          "Paso 3: pon la derrota (220) bajo el índice y lee la deriva bajo la cruz: unos 13° a la izquierda.",
+          "Paso 4: gira el disco hasta que la derrota (220) quede frente a 13° izquierda de la escala fija. La cruz se mueve: ahora marca unos 11°. Ajusta hasta que la deriva bajo la cruz sea igual a la deriva frente a la que está la derrota: 11° izquierda.",
+          "Paso 5: lee el rumbo bajo el índice, 231°, y la GS en el arco que pasa por la cruz, 82 kt.",
+          "E6B (viento arriba), paso 1: pon 270 bajo el índice y, con el punto central en un arco cómodo (100), marca el punto del viento 25 kt por encima (en 125).",
+          "Paso 2: pon la derrota (220) bajo el índice y desliza la regla hasta que el punto del viento quede sobre el arco de la TAS (100).",
+          "Paso 3: el punto queda unas 11 líneas a la derecha de la central: corrección 11° a la derecha (se suma). Bajo el punto central lees la GS: 82 kt. Rumbo = 220 + 11 = 231°."
+        ],
+        "examples": [
+          {
+            "q": "Comprobación mental del problema 1.",
+            "a": "Ángulo del viento 50° por la derecha. Cruzada ≈ 25 × 0,77 ≈ 19 kt → corrección ≈ 19 × 60 / 100 ≈ 11,5° a la derecha. De cara ≈ 25 × 0,64 = 16 kt → GS ≈ 84 kt (algo menos por la corrección: 82). Coincide: rumbo 231°, GS 82 kt."
+          }
+        ],
+        "note": {
+          "kind": "tip",
+          "text": "Al terminar, convierte el rumbo verdadero en magnético con la variación (y en brújula con el desvío). El computador trabaja con lo que le das: viento verdadero y derrota verdadera dan rumbo verdadero."
+        }
+      },
+      {
+        "title": "Problema 2: hallar derrota y GS (conoces rumbo, TAS y viento)",
+        "text": [
+          "Útil para saber adónde te lleva un rumbo, por ejemplo al desviarte o para dibujar una posición estimada. Con el método del viento abajo es el más directo: no hay que tantear."
+        ],
+        "bullets": [
+          "Marca el viento (CRP-5: cruz por debajo del punto central) y pon el punto central sobre la TAS.",
+          "Pon el rumbo bajo el índice. El computador ya está resuelto.",
+          "Lee la deriva bajo la cruz y la GS en el arco que pasa por ella. La derrota es el valor del disco que queda frente a esa deriva en la escala fija (derrota = rumbo + deriva derecha, o − deriva izquierda)."
+        ],
+        "examples": [
+          {
+            "q": "Rumbo 150° verdadero, TAS 110 kt, viento 200/20. Derrota y GS.",
+            "a": "Bajo la cruz: deriva 9° a la izquierda y GS 98 kt. Derrota = 150 − 9 = 141°. Comprobación: viento 50° a la derecha del rumbo → cruzada ≈ 15 kt → deriva ≈ 15 × 60 / 110 ≈ 8°, a la izquierda; de cara ≈ 13 kt → GS ≈ 97 kt."
+          }
+        ]
+      },
+      {
+        "title": "Problema 3: hallar el viento (conoces rumbo, TAS, derrota y GS)",
+        "text": [
+          "Es el problema del vuelo: has mantenido un rumbo y una TAS conocidos y, con dos puntos fijos, has medido la derrota real y la GS. Datos del ejemplo: **rumbo 075° verdadero, TAS 105 kt, derrota 083°, GS 92 kt**."
+        ],
+        "bullets": [
+          "CRP-5: pon el punto central sobre la TAS (105) y el rumbo (075) bajo el índice.",
+          "Busca la derrota (083) en el disco y lee frente a ella la deriva en la escala fija: 8° a la derecha.",
+          "Marca la cruz donde la línea de deriva de 8° derecha corta el arco de la GS (92).",
+          "Gira el disco hasta que la cruz quede en la línea central por debajo del punto central. Bajo el índice lees la dirección del viento, unos 032°, y la distancia del punto central a la cruz es la velocidad, unos 19 kt.",
+          "E6B: pon la derrota (083) bajo el índice y el punto central sobre la GS (92). Marca el punto sobre el arco de la TAS (105) en la línea de 8° a la izquierda (el rumbo está 8° a la izquierda de la derrota). Gira hasta que el punto quede en la línea central por encima del punto central: dirección bajo el índice, velocidad = distancia entre ambos."
+        ],
+        "examples": [
+          {
+            "q": "Comprobación mental del problema 3.",
+            "a": "Deriva 8° a la derecha con 105 kt: cruzada ≈ 8 × 105 / 60 ≈ 14 kt desde la izquierda. De cara ≈ 105 − 92 ≈ 13 kt. Un viento con 14 kt cruzado y 13 kt de cara viene unos 45-50° a la izquierda de la derrota (083 − 48 ≈ 035) y tiene unos 19 kt. Coincide con 032/19."
+          },
+          {
+            "q": "TAS 110 kt, GS 95 kt, derrota 090°, rumbo 080°. Viento.",
+            "a": "Deriva 10° a la derecha: viento por la izquierda (del norte-nordeste) y con componente de cara (GS < TAS). Computador: unos 035/23. Comprobación: cruzada ≈ 10 × 110 / 60 ≈ 18 kt, de cara ≈ 110 − 95 = 15 kt; módulo ≈ 23 kt a unos 50° a la izquierda de 090°."
+          }
+        ]
+      },
+      {
+        "title": "Errores típicos con el computador",
+        "bullets": [
+          "Poner bajo el índice la dirección hacia la que sopla el viento en vez de aquella desde la que sopla.",
+          "Mezclar métodos: marcar el viento abajo y luego buscar la TAS con el punto del viento, como en el E6B (o al revés).",
+          "Poner la GS donde va la TAS o la IAS donde va la TAS.",
+          "Leer líneas de deriva de 2° como si fueran de 1° (en el CRP-5, por debajo de 100 kt van de 2 en 2).",
+          "Combinar viento verdadero con derrota magnética, o dar como magnético el rumbo verdadero que sale del computador.",
+          "Leer horas decimales como minutos: 0,4 h son 24 min.",
+          "No estimar antes y colocar mal la coma: 24 min, 2,4 h y 240 NM están en el mismo punto de la escala."
+        ]
+      }
+    ],
+    "numbers": [
+      "Índice 60 de la escala interior = 1 hora: se pone frente a la GS o el consumo horario",
+      "Tiempo (min) = distancia × 60 / GS",
+      "TAS: altitud de presión frente a temperatura en la ventana de velocidad; TAS (exterior) frente a CAS (interior)",
+      "Altitud verdadera: frío → más bajo que lo indicado; ≈ 4 % de la altura por cada 10 °C de diferencia con la ISA",
+      "1 NM = 1,852 km = 1,15 SM; 1 SM = 1,609 km; 1 m = 3,281 ft",
+      "1 galón US = 3,785 l; 1 galón imperial = 4,546 l; 1 kg = 2,205 lb; AVGAS ≈ 0,72 kg/l",
+      "Viento abajo (CRP-5): punto central sobre la TAS, GS y deriva bajo la cruz del viento",
+      "Viento arriba (E6B): punto del viento sobre la TAS, GS bajo el punto central, corrección leída directamente"
+    ],
+    "traps": [
+      "La regla circular no tiene coma: estima siempre antes (24, 2,4 y 240 están en el mismo punto).",
+      "0,4 h son 24 min y 1 h 25 min son 85 min, no 1,25 h.",
+      "Litros entre 0,72 no dan kilos: los kilos son litros por 0,72.",
+      "Galón US (3,785 l) frente a galón imperial (4,546 l).",
+      "El viento se pone bajo el índice por su dirección de procedencia y en grados verdaderos.",
+      "En el CRP-5 el rumbo para una derrota se tantea hasta que coincidan las dos derivas; en el E6B la corrección sale directa.",
+      "El rumbo que sale del computador es verdadero si los datos lo eran: falta la variación.",
+      "En aire frío la altitud verdadera es menor que la indicada."
+    ],
+    "spain": [
+      "AESA presta el computador en el examen (o admite uno propio revisado) y la pantalla incluye calculadora con memoria y regla a escala (guía FOR-EFT-GU01)."
+    ],
+    "sources": [
+      {
+        "title": "Pooleys, CRP-5 & 5W Computer Handbook (2017): regla circular, conversiones, TAS, altitud verdadera y triángulo de velocidades",
+        "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+      },
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 16 Navigation (computador de vuelo y triángulo de viento)",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario de navegación (uso del computador)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+      },
+      {
+        "title": "AESA, FOR-EFT-GU01, guía de los exámenes teóricos Part-FCL (material permitido)",
+        "url": "https://www.senasa.es/recursos/adobePDF/2025/pdf/FOR-EFT-GU01_Ed_01_Examenes_teoricos_PART_%20FCL.pdf"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "060.07.001",
+      "type": "regla",
+      "level": 1,
+      "q": "En la escala interior del lado de cálculo del computador, el índice marcado en el 60 representa:",
+      "options": [
+        "60 NM",
+        "60 kt de viento",
+        "Una hora (60 minutos)",
+        "La unidad para multiplicar"
+      ],
+      "correct": 2,
+      "why": "El índice 60 es la marca de hora: se pone frente a la velocidad o el consumo horario y a partir de ahí cada tiempo de la escala interior tiene enfrente la distancia o el combustible correspondientes.",
+      "whyNot": [
+        "Las distancias se leen en la escala exterior; el 60 de la interior es tiempo.",
+        "No tiene relación con el viento.",
+        null,
+        "La unidad para multiplicar y dividir es la marca del 10."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Por qué conviene estimar de cabeza el resultado antes de usar la regla circular?",
+      "options": [
+        "Porque la escala no indica dónde va la coma decimal",
+        "Porque la regla solo es exacta por encima de 100",
+        "Porque la escala exterior está invertida",
+        "Porque el índice 60 cambia con la altitud"
+      ],
+      "correct": 0,
+      "why": "La regla circular trabaja con mantisas: el mismo punto vale 2,4, 24 o 240. La estimación previa decide el orden de magnitud.",
+      "whyNot": [
+        null,
+        "La precisión de la regla es la misma en toda la escala.",
+        "Las dos escalas crecen en el mismo sentido.",
+        "El índice 60 es fijo: representa una hora."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.003",
+      "type": "calculo",
+      "level": 1,
+      "q": "Tramo de 42 NM. TAS 115 kt y GS 105 kt. Tiempo de vuelo del tramo:",
+      "options": [
+        "40 min",
+        "22 min",
+        "2 h 30 min",
+        "24 min"
+      ],
+      "correct": 3,
+      "why": "Tiempo = 42 × 60 / 105 = 24 min. Con el computador: índice 60 frente a 105 y frente a 42 de la exterior se lee 24 en la interior.",
+      "whyNot": [
+        "42 / 105 = 0,4 h, que son 24 min, no 40.",
+        "Es el tiempo calculado con la TAS; el tiempo sobre el suelo depende de la GS.",
+        "Divide la GS entre la distancia (2,5) y lo toma como horas.",
+        null
+      ],
+      "ref": "FAA PHAK (FAA-H-8083-25C) cap. 16"
+    },
+    {
+      "id": "060.07.004",
+      "type": "calculo",
+      "level": 1,
+      "q": "Recorres 38 NM en 21 min. Tu GS es aproximadamente:",
+      "options": [
+        "181 kt",
+        "109 kt",
+        "33 kt",
+        "120 kt"
+      ],
+      "correct": 1,
+      "why": "GS = 38 × 60 / 21 ≈ 108,6 kt. En el computador: 21 de la interior frente a 38 de la exterior; frente al índice 60 se lee 109.",
+      "whyNot": [
+        "Toma 21 min como 0,21 h.",
+        null,
+        "Invierte la proporción (21 × 60 / 38).",
+        "Es la estimación redondeada (40 NM en 20 min); sirve para situar la coma, no como resultado."
+      ],
+      "ref": "FAA PHAK (FAA-H-8083-25C) cap. 16"
+    },
+    {
+      "id": "060.07.005",
+      "type": "calculo",
+      "level": 2,
+      "q": "GS 96 kt y TAS 103 kt. ¿Qué distancia recorres en 35 min?",
+      "options": [
+        "33,6 NM",
+        "56 NM",
+        "165 NM",
+        "60 NM"
+      ],
+      "correct": 1,
+      "why": "Distancia = 96 × 35 / 60 = 56 NM. Índice 60 frente a 96; frente a 35 de la interior se lee 56 en la exterior.",
+      "whyNot": [
+        "Multiplica 96 × 0,35, como si 35 min fueran 0,35 h.",
+        null,
+        "Divide la GS entre el tiempo y multiplica por 60.",
+        "Usa la TAS en lugar de la GS."
+      ],
+      "ref": "FAA PHAK (FAA-H-8083-25C) cap. 16"
+    },
+    {
+      "id": "060.07.006",
+      "type": "calculo",
+      "level": 1,
+      "q": "Consumo de 34 l/h. ¿Cuánto combustible gastas en 1 h 25 min?",
+      "options": [
+        "42,5 l",
+        "34,7 l",
+        "51 l",
+        "48 l"
+      ],
+      "correct": 3,
+      "why": "1 h 25 min = 85 min; 34 × 85 / 60 ≈ 48,2 l. Computador: índice 60 frente a 34, y frente a 85 se lee 48.",
+      "whyNot": [
+        "Toma 1 h 25 min como 1,25 h; son 1,42 h.",
+        "Son kilos (48 × 0,72), no litros.",
+        "Redondea el tiempo a 1 h 30 min.",
+        null
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.007",
+      "type": "calculo",
+      "level": 3,
+      "q": "Quedan 140 l utilizables, consumes 32 l/h y quieres aterrizar con 30 min de reserva final intacta. ¿Cuánto puedes volar antes de empezar a gastar la reserva?",
+      "options": [
+        "3 h 52 min",
+        "4 h 22 min",
+        "4 h 07 min",
+        "4 h 52 min"
+      ],
+      "correct": 0,
+      "why": "Autonomía total = 140 / 32 = 4,375 h = 4 h 22,5 min (262 min). Menos 30 min de reserva: unos 3 h 52 min.",
+      "whyNot": [
+        null,
+        "Es la autonomía hasta tanques secos; olvida la reserva.",
+        "Lee 4,375 h como 4 h 37 min y después resta la reserva.",
+        "Suma la reserva en lugar de restarla."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.008",
+      "type": "calculo",
+      "level": 2,
+      "q": "Has gastado 21 l en 40 min. El consumo horario es:",
+      "options": [
+        "14 l/h",
+        "52,5 l/h",
+        "31,5 l/h",
+        "21 l/h"
+      ],
+      "correct": 2,
+      "why": "Consumo = 21 × 60 / 40 = 31,5 l/h. Computador: 40 de la interior frente a 21 de la exterior; frente al índice 60, 31,5.",
+      "whyNot": [
+        "Invierte la proporción (21 × 40 / 60).",
+        "Toma 40 min como 0,4 h.",
+        null,
+        "Confunde lo gastado con lo que se gasta por hora."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.009",
+      "type": "calculo",
+      "level": 1,
+      "q": "Cargas 120 l de AVGAS con una densidad de 0,72 kg/l. La masa del combustible es:",
+      "options": [
+        "167 kg",
+        "190 kg",
+        "120 kg",
+        "86 kg"
+      ],
+      "correct": 3,
+      "why": "Masa = volumen × densidad = 120 × 0,72 = 86,4 kg.",
+      "whyNot": [
+        "Divide entre la densidad en vez de multiplicar.",
+        "Son libras (86,4 × 2,205), no kilos.",
+        "Supone que un litro de AVGAS pesa un kilo, como el agua.",
+        null
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.010",
+      "type": "calculo",
+      "level": 2,
+      "q": "48 galones US equivalen a:",
+      "options": [
+        "218 l",
+        "12,7 l",
+        "182 l",
+        "106 l"
+      ],
+      "correct": 2,
+      "why": "1 galón US = 3,785 l; 48 × 3,785 ≈ 182 l.",
+      "whyNot": [
+        "Usa el galón imperial (4,546 l).",
+        "Divide entre 3,785 en vez de multiplicar.",
+        null,
+        "Multiplica por 2,2, el factor de kilos a libras."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.011",
+      "type": "calculo",
+      "level": 1,
+      "q": "Un aeródromo está a 2400 m de elevación. En pies son aproximadamente:",
+      "options": [
+        "732 ft",
+        "7870 ft",
+        "7200 ft",
+        "5290 ft"
+      ],
+      "correct": 1,
+      "why": "1 m = 3,281 ft; 2400 × 3,281 ≈ 7874 ft.",
+      "whyNot": [
+        "Divide entre 3,281 en vez de multiplicar.",
+        null,
+        "Usa 3 ft por metro, un redondeo demasiado grosero.",
+        "Multiplica por 2,205, el factor de kilos a libras."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.012",
+      "type": "calculo",
+      "level": 2,
+      "q": "85 km equivalen aproximadamente a:",
+      "options": [
+        "46 NM",
+        "157 NM",
+        "53 NM",
+        "74 NM"
+      ],
+      "correct": 0,
+      "why": "1 NM = 1,852 km; 85 / 1,852 ≈ 46 NM. Comprobación: los kilómetros son casi el doble que las millas náuticas.",
+      "whyNot": [
+        null,
+        "Multiplica por 1,852 en vez de dividir.",
+        "Son millas terrestres (85 / 1,609), no náuticas.",
+        "Convierte 85 SM a NM; el dato estaba en km."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.013",
+      "type": "regla",
+      "level": 1,
+      "q": "Una milla náutica equivale a:",
+      "options": [
+        "1852 m",
+        "1609 m",
+        "1000 m",
+        "6076 m"
+      ],
+      "correct": 0,
+      "why": "La milla náutica internacional mide 1852 m, que es aproximadamente un minuto de arco de meridiano (6076 ft).",
+      "whyNot": [
+        null,
+        "1609 m es la milla terrestre (SM).",
+        "1000 m es un kilómetro.",
+        "6076 es el valor en pies, no en metros."
+      ],
+      "ref": "Definición de la milla náutica internacional; FAA PHAK (FAA-H-8083-25C) cap. 16"
+    },
+    {
+      "id": "060.07.014",
+      "type": "regla",
+      "level": 2,
+      "q": "Para convertir litros de AVGAS 100LL en kilos se usa normalmente una densidad de:",
+      "options": [
+        "0,80 kg/l",
+        "0,72 kg/l",
+        "0,90 kg/l",
+        "1,00 kg/l"
+      ],
+      "correct": 1,
+      "why": "La densidad típica del AVGAS 100LL es de unos 0,72 kg/l (unas 6 lb por galón US). Si el enunciado da otra, se usa la del enunciado.",
+      "whyNot": [
+        "0,80 kg/l es un valor típico del JET A-1.",
+        null,
+        "0,90 kg/l es el valor típico del aceite.",
+        "1,00 kg/l es el agua."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017); manuales de masa y centrado",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "Para obtener la TAS con el computador necesitas:",
+      "options": [
+        "La IAS, la altitud con QNH y la temperatura ISA",
+        "La GS, el viento y el rumbo",
+        "La CAS, la altitud de presión y la temperatura exterior real",
+        "La CAS, el QNH y el punto de rocío"
+      ],
+      "correct": 2,
+      "why": "La TAS es la CAS corregida por densidad, y la densidad depende de la presión (altitud de presión) y de la temperatura real del aire. En la ventana se pone la altitud de presión frente a la temperatura y se lee la TAS frente a la CAS.",
+      "whyNot": [
+        "La altitud con QNH no es la de presión, y la temperatura estándar no corrige nada si el día no es estándar.",
+        "Eso sirve para el triángulo de velocidades, no para la TAS.",
+        null,
+        "El punto de rocío no entra en el cálculo de la TAS en el computador."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.016",
+      "type": "calculo",
+      "level": 2,
+      "q": "CAS 100 kt, altitud de presión 6000 ft y temperatura exterior +5 °C. La TAS es aproximadamente:",
+      "options": [
+        "91 kt",
+        "100 kt",
+        "130 kt",
+        "110 kt"
+      ],
+      "correct": 3,
+      "why": "Con 6000 ft frente a +5 °C en la ventana de velocidad, frente a 100 de la interior se lee unos 110 kt. Comprobación: 2 % × 6 = 12 % → 112 kt.",
+      "whyNot": [
+        "Aplica la corrección al revés (divide en lugar de multiplicar).",
+        "Olvida la corrección por densidad.",
+        "Equivale a sumar un 5 % por cada 1000 ft, más del doble de lo real.",
+        null
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.017",
+      "type": "calculo",
+      "level": 3,
+      "q": "CAS 110 kt a 4500 ft de altitud de presión con +20 °C (ISA +14). La TAS es aproximadamente:",
+      "options": [
+        "110 kt",
+        "101 kt",
+        "135 kt",
+        "120 kt"
+      ],
+      "correct": 3,
+      "why": "El computador da unos 120 kt (con temperatura ISA saldrían unos 118 kt: el calor añade un poco). Regla: 2 % × 4,5 = 9 % → 120 kt.",
+      "whyNot": [
+        "Olvida la corrección por densidad.",
+        "Aplica la corrección al revés.",
+        "Suma un 2 % por cada 1000 ft y además un 1 % por grado sobre la ISA, lo que exagera el efecto de la temperatura.",
+        null
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con la misma CAS y la misma altitud de presión, si el aire está más caliente que la ISA, la TAS:",
+      "options": [
+        "Es mayor, porque el aire es menos denso",
+        "Es menor, porque el aire es menos denso",
+        "No cambia, porque la altitud de presión es la misma",
+        "Solo cambia si cambia el QNH"
+      ],
+      "correct": 0,
+      "why": "Más temperatura con la misma presión significa menos densidad; para producir la misma presión dinámica (misma CAS) el avión tiene que ir más rápido respecto al aire.",
+      "whyNot": [
+        null,
+        "Menos densidad implica más TAS, no menos.",
+        "La temperatura cambia la densidad aunque la presión sea la misma.",
+        "El QNH no interviene: se usa la altitud de presión."
+      ],
+      "ref": "FAA PHAK (FAA-H-8083-25C) cap. 16",
+      "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+    },
+    {
+      "id": "060.07.019",
+      "type": "concepto",
+      "level": 2,
+      "q": "Vuelas con el QNH ajustado en aire bastante más frío que la ISA. Respecto a la altitud indicada, tu altitud verdadera es:",
+      "options": [
+        "Mayor",
+        "Igual, porque el QNH corrige la temperatura",
+        "Menor",
+        "Mayor solo si el QNH es bajo"
+      ],
+      "correct": 2,
+      "why": "En aire frío la presión disminuye más deprisa con la altura: a una misma presión (misma indicación) se llega a menos altura. El avión está más bajo de lo que indica el altímetro.",
+      "whyNot": [
+        "Sería mayor en aire más cálido que la ISA.",
+        "El QNH corrige la presión al nivel del mar, no el gradiente por temperatura.",
+        null,
+        "El valor del QNH no cambia el sentido del error por temperatura."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.020",
+      "type": "calculo",
+      "level": 2,
+      "q": "Altímetro con el QNH de un aeródromo costero: 5000 ft. Temperatura exterior a ese nivel −5 °C. Altitud verdadera aproximada:",
+      "options": [
+        "5200 ft",
+        "4800 ft",
+        "4500 ft",
+        "5000 ft"
+      ],
+      "correct": 1,
+      "why": "ISA a 5000 ft = +5 °C; −5 °C es ISA −10. Corrección ≈ 4 % de 5000 = 200 ft, hacia abajo por ser aire frío: unos 4800 ft (el computador da unos 4820).",
+      "whyNot": [
+        "Aplica la corrección al revés: en frío la altitud verdadera es menor.",
+        null,
+        "Exagera la corrección (10 %).",
+        "Ignora la corrección por temperatura."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.021",
+      "type": "calculo",
+      "level": 3,
+      "q": "Altitud indicada 4000 ft (QNH de un aeródromo al nivel del mar) y temperatura ISA +15. Altitud verdadera aproximada:",
+      "options": [
+        "3760 ft",
+        "4000 ft",
+        "4240 ft",
+        "4600 ft"
+      ],
+      "correct": 2,
+      "why": "Corrección ≈ 4 % por cada 10 °C: 6 % de 4000 = 240 ft, hacia arriba por ser aire cálido. Unos 4240 ft (el computador da unos 4210).",
+      "whyNot": [
+        "Aplica la corrección al revés: en aire cálido estás más alto.",
+        "Ignora la temperatura.",
+        null,
+        "Usa un 15 %, como si fuera un 1 % por grado."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.022",
+      "type": "regla",
+      "level": 1,
+      "q": "En horas y minutos, 2,25 h son:",
+      "options": [
+        "2 h 15 min",
+        "2 h 25 min",
+        "2 h 02 min",
+        "2 h 40 min"
+      ],
+      "correct": 0,
+      "why": "0,25 h × 60 = 15 min. Las horas decimales se pasan a minutos multiplicando la parte decimal por 60.",
+      "whyNot": [
+        null,
+        "Lee los decimales como si fueran minutos.",
+        "Multiplica mal la parte decimal.",
+        "Confunde 0,25 h con 0,67 h."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.023",
+      "type": "concepto",
+      "level": 1,
+      "q": "En el lado del viento, la dirección del viento que colocas bajo el índice es:",
+      "options": [
+        "La dirección verdadera hacia la que sopla",
+        "La dirección magnética hacia la que sopla",
+        "El ángulo entre el viento y la derrota",
+        "La dirección verdadera desde la que sopla"
+      ],
+      "correct": 3,
+      "why": "El viento se da por su dirección de procedencia y, si viene de un pronóstico o del METAR, en grados verdaderos, igual que la derrota medida en la carta.",
+      "whyNot": [
+        "Poner la dirección hacia la que sopla invierte el triángulo.",
+        "Además de invertir el sentido, mezcla magnético con una derrota verdadera.",
+        "El ángulo del viento no se pone en el índice: lo resuelve el propio computador.",
+        null
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.024",
+      "type": "concepto",
+      "level": 2,
+      "q": "En el método del viento abajo (CRP-5), el punto central del disco se coloca sobre el arco de:",
+      "options": [
+        "La GS",
+        "La TAS",
+        "La velocidad del viento",
+        "La IAS"
+      ],
+      "correct": 1,
+      "why": "En ese método el punto central es la punta del vector aire: se desliza la regla hasta que quede sobre el arco de la TAS, y la GS se lee después bajo la cruz del viento.",
+      "whyNot": [
+        "La GS se lee bajo la cruz del viento; no se coloca en el centro.",
+        null,
+        "La velocidad del viento es la distancia del centro a la cruz.",
+        "El triángulo se resuelve con la TAS, no con la IAS."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.025",
+      "type": "concepto",
+      "level": 2,
+      "q": "Resuelto el triángulo con el método del viento abajo (CRP-5), la GS se lee:",
+      "options": [
+        "En el arco que pasa por el punto central",
+        "En el arco que pasa por la cruz del viento",
+        "En la escala de deriva, frente a la derrota",
+        "Bajo el índice"
+      ],
+      "correct": 1,
+      "why": "Con la TAS en el centro y el rumbo bajo el índice, la cruz del viento es la punta del vector suelo: su arco da la GS y su línea de deriva, la deriva.",
+      "whyNot": [
+        "Por el punto central pasa el arco de la TAS.",
+        null,
+        "La escala de deriva da ángulos, no velocidades.",
+        "Bajo el índice se lee el rumbo."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.026",
+      "type": "concepto",
+      "level": 2,
+      "q": "En el método del viento arriba (E6B), con la derrota bajo el índice, la regla se desliza hasta que:",
+      "options": [
+        "El punto central quede sobre el arco de la TAS",
+        "El punto del viento quede sobre el arco de la GS",
+        "El punto central quede sobre la velocidad del viento",
+        "El punto del viento quede sobre el arco de la TAS"
+      ],
+      "correct": 3,
+      "why": "En el método del viento arriba el punto del viento es la punta del vector aire: se coloca sobre la TAS, la corrección se lee en la línea de deriva que pasa por él y la GS bajo el punto central.",
+      "whyNot": [
+        "Eso corresponde al método del viento abajo (CRP-5).",
+        "La GS es lo que se busca: se lee bajo el punto central.",
+        "La velocidad del viento solo sirve para marcar el punto al principio.",
+        null
+      ],
+      "ref": "FAA PHAK (FAA-H-8083-25C) cap. 16; manual del E6B",
+      "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+    },
+    {
+      "id": "060.07.027",
+      "type": "concepto",
+      "level": 3,
+      "q": "Al buscar el rumbo para una derrota con el método del viento abajo (CRP-5) hay que tantear unos segundos. ¿Por qué?",
+      "options": [
+        "Porque la deriva leída depende del rumbo puesto bajo el índice, que es justo lo que se busca",
+        "Porque la TAS cambia al girar el disco",
+        "Porque el viento hay que marcarlo dos veces",
+        "Porque la escala de deriva solo llega a 10°"
+      ],
+      "correct": 0,
+      "why": "Se empieza con la derrota bajo el índice, se lee la deriva, se pone la derrota frente a esa deriva en la escala fija y se vuelve a leer, hasta que la deriva bajo la cruz coincide con la de la escala. En el E6B la corrección sale directamente.",
+      "whyNot": [
+        null,
+        "La TAS queda fija en el centro mientras se gira el disco.",
+        "El viento se marca una sola vez.",
+        "La escala de deriva fija llega a unos 50° a cada lado."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.028",
+      "type": "calculo",
+      "level": 2,
+      "q": "Derrota verdadera 220°, TAS 100 kt, viento 270/25. Rumbo verdadero y GS:",
+      "options": [
+        "209° y 82 kt",
+        "231° y 118 kt",
+        "231° y 82 kt",
+        "220° y 75 kt"
+      ],
+      "correct": 2,
+      "why": "Computador: rumbo 231° (11° a la derecha) y GS 82 kt. Comprobación: viento 50° a la derecha, cruzada ≈ 19 kt → 11,5°; de cara ≈ 16 kt → GS algo por debajo de 84 kt.",
+      "whyNot": [
+        "Corrige hacia el lado contrario al viento.",
+        "Suma la componente de cara en lugar de restarla.",
+        null,
+        "No corrige la deriva y resta el viento entero."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.029",
+      "type": "calculo",
+      "level": 2,
+      "q": "Rumbo verdadero 150°, TAS 110 kt, viento 200/20. Derrota y GS:",
+      "options": [
+        "159° y 98 kt",
+        "141° y 122 kt",
+        "150° y 90 kt",
+        "141° y 98 kt"
+      ],
+      "correct": 3,
+      "why": "El viento llega 50° por la derecha: el avión deriva unos 9° a la izquierda (derrota 141°) y tiene unos 13 kt de cara (GS ≈ 98 kt).",
+      "whyNot": [
+        "Aplica la deriva hacia el lado del viento: la deriva va al lado contrario.",
+        "Trata la componente longitudinal como de cola.",
+        "Ignora la deriva y resta el viento entero.",
+        null
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.030",
+      "type": "calculo",
+      "level": 3,
+      "q": "Rumbo verdadero 075°, TAS 105 kt; entre dos puntos fijos mides derrota 083° y GS 92 kt. El viento es aproximadamente:",
+      "options": [
+        "212/19",
+        "134/19",
+        "032/19",
+        "032/13"
+      ],
+      "correct": 2,
+      "why": "Deriva 8° a la derecha: viento por la izquierda; GS menor que TAS: con componente de cara. Cruzada ≈ 14 kt y de cara ≈ 13 kt dan unos 19 kt desde unos 50° a la izquierda de la derrota: 032/19.",
+      "whyNot": [
+        "Es la dirección hacia la que sopla, no de la que viene.",
+        "Pone el viento en el lado derecho; con deriva a la derecha el viento viene de la izquierda.",
+        null,
+        "Toma solo la diferencia TAS − GS como velocidad del viento y olvida la componente cruzada."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.031",
+      "type": "calculo",
+      "level": 2,
+      "q": "TAS 110 kt, GS 95 kt, derrota 090° y rumbo verdadero 080°. El viento es aproximadamente:",
+      "options": [
+        "215/23",
+        "035/23",
+        "125/23",
+        "080/15"
+      ],
+      "correct": 1,
+      "why": "La derrota queda 10° a la derecha del rumbo: el viento viene de la izquierda (norte). Como la GS es menor que la TAS, tiene componente de cara. El computador da unos 035/23.",
+      "whyNot": [
+        "Es la dirección hacia la que sopla.",
+        null,
+        "Pone el viento en el lado sur; empujaría el avión hacia la izquierda.",
+        "Toma el rumbo como dirección del viento y la diferencia de velocidades como fuerza."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.032",
+      "type": "concepto",
+      "level": 1,
+      "q": "Has resuelto el triángulo con el viento del pronóstico y la derrota medida en la carta. El rumbo que obtienes es:",
+      "options": [
+        "Verdadero; falta aplicar la variación para volarlo",
+        "Magnético, listo para la brújula",
+        "De brújula, porque el computador incluye el desvío",
+        "Magnético, porque el viento del pronóstico es magnético"
+      ],
+      "correct": 0,
+      "why": "Con datos verdaderos (derrota de la carta y viento del pronóstico) el computador da un rumbo verdadero. Después se aplica la variación para el magnético y el desvío para el de brújula.",
+      "whyNot": [
+        null,
+        "Para obtener el magnético hay que aplicar la variación.",
+        "El computador no sabe nada del desvío de tu brújula.",
+        "El viento de los pronósticos va en grados verdaderos."
+      ],
+      "ref": "FAA PHAK (FAA-H-8083-25C) cap. 16",
+      "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+    },
+    {
+      "id": "060.07.033",
+      "type": "lectura",
+      "level": 2,
+      "q": "La figura muestra un computador ya resuelto con TAS 100 kt y viento 270/25 para la derrota 220°. ¿Qué rumbo verdadero y qué GS resultan?",
+      "figure": "svg:060-computador-viento",
+      "options": [
+        "231° y 82 kt",
+        "209° y 82 kt",
+        "231° y 100 kt",
+        "220° y 75 kt"
+      ],
+      "correct": 0,
+      "why": "Bajo el índice está el rumbo (231°) y el arco que pasa por la cruz del viento da la GS (82 kt). La derrota 220° queda frente a 11° de deriva izquierda en la escala fija.",
+      "whyNot": [
+        null,
+        "Aplica los 11° hacia el lado equivocado.",
+        "100 kt es la TAS, que está en el punto central.",
+        "Lee la derrota como rumbo y la cruz como si marcara la velocidad del viento restada a la TAS."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.034",
+      "type": "lectura",
+      "level": 2,
+      "q": "Un compañero te describe así su E6B (método del viento arriba). ¿Qué rumbo verdadero y qué GS ha obtenido?",
+      "data": "Lado del viento, método del viento arriba\nBajo el índice: derrota 300°\nPunto del viento: sobre el arco de 110 kt (TAS),\n  6° a la izquierda de la línea central\nBajo el punto central: arco de 96 kt",
+      "options": [
+        "306° y 96 kt",
+        "294° y 96 kt",
+        "294° y 110 kt",
+        "300° y 104 kt"
+      ],
+      "correct": 1,
+      "why": "El punto del viento está 6° a la izquierda de la línea central: corrección 6° a la izquierda, rumbo = 300 − 6 = 294°. La GS es la que queda bajo el punto central: 96 kt.",
+      "whyNot": [
+        "Suma una corrección que está a la izquierda.",
+        null,
+        "110 kt es la TAS, el arco donde está el punto del viento.",
+        "Ignora la corrección y promedia TAS y GS."
+      ],
+      "ref": "FAA PHAK (FAA-H-8083-25C) cap. 16; manual del E6B",
+      "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+    },
+    {
+      "id": "060.07.035",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué regla mental sirve para comprobar una corrección de altitud verdadera hecha con el computador?",
+      "options": [
+        "Unos 2 % por cada 1000 ft de altitud",
+        "Unos 30 ft por cada hPa de diferencia",
+        "Unos 4 % de la altura sobre la estación por cada 10 °C de diferencia con la ISA",
+        "Unos 120 ft por cada grado de diferencia con la ISA"
+      ],
+      "correct": 2,
+      "why": "La corrección por temperatura es aproximadamente proporcional a la altura sobre la estación: un 4 % por cada 10 °C (4 ft por cada 1000 ft y grado). En frío se resta y en calor se suma.",
+      "whyNot": [
+        "Es la regla de la TAS.",
+        "Es la relación entre presión y altitud (para el QNH), no la corrección por temperatura.",
+        null,
+        "Es la regla de la altitud de densidad."
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.036",
+      "type": "concepto",
+      "level": 3,
+      "q": "Con el método del viento abajo (CRP-5) y un viento de cola, la cruz del viento queda:",
+      "options": [
+        "Por debajo del punto central, en un arco menor que la TAS",
+        "Exactamente sobre el punto central",
+        "Sobre la escala de deriva fija",
+        "Por encima del punto central, en un arco mayor que la TAS"
+      ],
+      "correct": 3,
+      "why": "La cruz se marca hacia donde sopla el viento. Con viento de cola sopla hacia el morro, es decir, hacia el índice: la cruz queda por encima del centro y su arco (la GS) es mayor que la TAS.",
+      "whyNot": [
+        "Eso es lo que pasa con viento de cara (GS menor que TAS).",
+        "Solo coincidiría con el centro sin viento.",
+        "La escala de deriva está en el borde fijo; la cruz se marca en el disco.",
+        null
+      ],
+      "ref": "Pooleys CRP-5 Computer Handbook (2017)",
+      "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.060.07.01",
+      "front": "Índice 60 de la escala interior",
+      "back": "Una hora: se pone frente a la GS o al consumo horario"
+    },
+    {
+      "id": "c.060.07.02",
+      "front": "TAS con el computador",
+      "back": "Altitud de presión frente a temperatura en la ventana de velocidad; TAS en la exterior frente a la CAS en la interior"
+    },
+    {
+      "id": "c.060.07.03",
+      "front": "Altitud verdadera en aire frío",
+      "back": "Menor que la indicada: unos 4 % de la altura por cada 10 °C bajo la ISA"
+    },
+    {
+      "id": "c.060.07.04",
+      "front": "Método del viento abajo (CRP-5)",
+      "back": "Punto central sobre la TAS; deriva y GS bajo la cruz del viento; el rumbo se tantea"
+    },
+    {
+      "id": "c.060.07.05",
+      "front": "Método del viento arriba (E6B)",
+      "back": "Punto del viento sobre la TAS; corrección en su línea de deriva; GS bajo el punto central"
+    },
+    {
+      "id": "c.060.07.06",
+      "front": "Galón US y galón imperial en litros",
+      "back": "US: 3,785 l; imperial: 4,546 l"
+    },
+    {
+      "id": "c.060.07.07",
+      "front": "Litros de AVGAS a kilos",
+      "back": "Multiplicar por unos 0,72 (kg/l)"
+    }
+  ]
+}

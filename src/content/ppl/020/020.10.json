@@ -1,0 +1,241 @@
+{
+  "lesson": {
+    "id": "020.10",
+    "title": "Combustibles",
+    "summary": "Gasolina de aviación: octanaje, grados y colores (100LL azul), UL91 y mogas con sus límites, por qué el Jet A-1 nunca va en un motor de gasolina, densidad y agua en el combustible.",
+    "objectives": [
+      "Explicar qué mide el octanaje y por qué no es lo mismo que la energía del combustible",
+      "Identificar los grados de AVGAS por su color y saber qué hacer si el color no cuadra",
+      "Conocer las condiciones para usar UL91 o gasolina de automoción y sus riesgos",
+      "Reconocer la contaminación por agua y por Jet A-1 y cómo se evita en el prevuelo y el repostaje",
+      "Convertir litros de AVGAS a kilos con su densidad"
+    ],
+    "sections": [
+      {
+        "title": "Qué se le pide a una gasolina de aviación",
+        "text": [
+          "El motor de pistón quema gasolina, una mezcla de hidrocarburos ligeros. La de aviación (**AVGAS**) se fabrica con una norma propia, la **ASTM D910** (en el Reino Unido, DEF STAN 91-090), mucho más estricta que la de automoción: volatilidad controlada para que arranque en frío sin formar vapor en verano o en altitud, punto de congelación muy bajo, estabilidad durante meses en el depósito y, sobre todo, **resistencia a la detonación** garantizada.",
+          "Su **densidad** ronda los **0,72 kg/l** a 15 °C, y cambia algo con la temperatura. Es la cifra que usarás en masa y centrado: 100 l de AVGAS pesan unos 72 kg. El agua pesa 1 kg/l, así que **se va al fondo** del depósito; ahí están los drenajes."
+        ],
+        "formulas": [
+          { "f": "masa (kg) = volumen (l) × 0,72", "note": "AVGAS; 1 galón US = 3,785 l." }
+        ],
+        "examples": [
+          { "q": "Repostas 120 l de AVGAS 100LL. ¿Cuántos kilos añades a la masa del avión?", "a": "120 × 0,72 = 86,4 kg." },
+          { "q": "Los dos depósitos del PA-28-161 llevan 48 galones US utilizables. ¿Cuántos litros y kilos son?", "a": "48 × 3,785 ≈ 182 l. 182 × 0,72 ≈ 131 kg." }
+        ]
+      },
+      {
+        "title": "Octanaje y detonación",
+        "text": [
+          "El **octanaje** mide la **resistencia de una gasolina a la detonación**, es decir, a autoinflamarse de forma explosiva cuando se comprime y se calienta en el cilindro. No mide la energía: un litro de gasolina de 100 octanos no tiene más energía que uno de 91. Lo que permite es trabajar con más compresión, más presión de admisión y más temperatura sin detonar.",
+          "El grado clásico se expresaba con dos cifras, como **100/130**: la primera es el índice con mezcla pobre y la segunda con mezcla rica. Hoy se habla de **100LL** (100 octanos, *low lead*, bajo contenido en plomo). El **tetraetilo de plomo** (TEL) es el aditivo que da a la AVGAS su resistencia a la detonación; deja depósitos en bujías y válvulas, por eso el 100LL lleva menos plomo que la antigua AVGAS 100 verde.",
+          "La regla del POH es sencilla: usa el **grado mínimo indicado o uno superior aprobado**, nunca uno inferior. Un grado inferior provoca detonación, sobretemperatura y daños graves. Un grado superior con más plomo del necesario no es peligroso para el vuelo, pero ensucia bujías y válvulas."
+        ],
+        "bullets": [
+          "Octanaje insuficiente → detonación → temperatura de culatas alta, pistones perforados, fallo del motor.",
+          "El octanaje no aporta potencia por sí mismo; solo permite que el motor la dé sin detonar.",
+          "Si en un aeródromo no hay el grado aprobado, no se sustituye por otro sin aprobación: se espera o se cambia de plan."
+        ]
+      },
+      {
+        "title": "Grados y colores",
+        "text": [
+          "Los grados de AVGAS se tiñen para reconocerlos a simple vista en la muestra del drenaje. El que verás casi siempre en España es el **100LL, azul**. El color es una ayuda, no una garantía: comprueba también el rótulo del surtidor o del camión, el olor y la boca de llenado del avión, que lleva una placa con el grado y la capacidad.",
+          "La **UL91** (sin plomo, norma ASTM D7547) se ha suministrado **incolora** desde su llegada a Europa. La revisión D7547-23 prevé teñirla de rojo (y la UL94 de morado), pero en 2026 el comité de ASTM ha ampliado el periodo en que puede suministrarse sin colorante, de modo que hoy puedes encontrarla de una forma u otra. Por eso el color, solo, no basta para identificarla.",
+          "El **Jet A-1** es queroseno para turbinas y motores diésel de aviación. Es incoloro o pajizo, huele a queroseno, deja un tacto aceitoso y se evapora mucho más despacio que la gasolina. **Nunca** va en un motor de gasolina: detona de forma violenta y el motor falla, a veces pocos minutos después del despegue, cuando se agota la gasolina que quedaba en tuberías y carburador."
+        ],
+        "table": {
+          "caption": "Combustibles que puedes encontrar en un aeródromo",
+          "head": ["Combustible", "Norma", "Color", "Uso"],
+          "rows": [
+            ["AVGAS 100LL", "ASTM D910", "Azul", "El estándar de los motores de escuela (PA-28-161, C172S)"],
+            ["AVGAS 100", "ASTM D910", "Verde", "Más plomo; hoy poco frecuente"],
+            ["AVGAS 80 (histórico)", "Antigua D910", "Rojo", "Motores de baja compresión; retirado de la norma"],
+            ["UL91", "ASTM D7547", "Incolora (tinte rojo previsto en D7547-23)", "Motores y aviones aprobados para ella"],
+            ["Mogas (gasolina de coche)", "EN 228", "Sin tinte normalizado", "Solo con aprobación de motor y avión (TC o STC)"],
+            ["Jet A-1", "DEF STAN 91-091 / ASTM D1655", "Incoloro a pajizo", "Turbinas y diésel de aviación; nunca en motor de gasolina"]
+          ],
+          "src": "ASTM D910; ASTM D7547; EASA SIB 2007-01R1"
+        },
+        "verify": true,
+        "note": { "kind": "warn", "text": "La mezcla de 100LL con Jet A-1 puede parecer casi normal en el vaso de muestras. Si el olor o el tacto te hacen dudar, no vueles: avisa y drena." }
+      },
+      {
+        "title": "UL91 y gasolina de automoción",
+        "text": [
+          "La **UL91** es gasolina de aviación sin plomo de 91 octanos (MON). Lycoming publica en su instrucción de servicio **SI 1070** qué modelos de motor la admiten; muchos motores de compresión moderada, entre ellos variantes del O-320, aparecen como aprobados. Pero no basta con el motor: el **avión** también tiene que estar aprobado para ese combustible (manual de vuelo o suplemento). Un motor que exige 100 octanos (alta compresión, turbo) no puede usarla.",
+          "La **gasolina de automoción** (mogas, norma EN 228) solo se usa si el motor y el avión están aprobados para ella por el titular del certificado de tipo o mediante un certificado de tipo suplementario (STC). Es el caso de algunos motores Rotax de ultraligeros y aviones ligeros. EASA advierte en su boletín **SIB 2007-01R1** de sus riesgos:"
+        ],
+        "bullets": [
+          "**Presión de vapor más alta**: más riesgo de **bloqueo por vapor** con calor, en altitud o tras un rodaje largo con el motor caliente.",
+          "**Etanol** (la EN 228 admite gasolinas con etanol, como la E5 y la E10): absorbe agua, puede **separarse en fases** al enfriarse, ataca juntas y elastómeros, aporta menos energía (más consumo) y falsea los indicadores capacitivos de cantidad.",
+          "Más riesgo de **hielo en el carburador** según informes de investigación de accidentes.",
+          "Si la aprobación es solo para mogas sin alcohol, hay que comprobar que no lleva etanol (certificado del proveedor o prueba de agua)."
+        ],
+        "verify": true,
+        "note": { "kind": "tip", "text": "Para el examen: mogas y UL91 solo con aprobación expresa de motor y avión; el combustible de referencia del PA-28-161 y del C172S es el AVGAS 100LL (o 100)." }
+      },
+      {
+        "title": "Agua, suciedad y prevención en el repostaje",
+        "text": [
+          "El agua entra en el depósito por **condensación** (depósitos medio vacíos que se enfrían de noche), por tapones mal cerrados o por combustible contaminado en origen. Como es más densa, forma una burbuja o capa clara en el **fondo** del vaso de muestras, con un límite nítido con la gasolina. Un motor que traga agua tose y se para.",
+          "Por eso se **drena antes del primer vuelo del día y después de cada repostaje**, en todos los puntos de drenaje (sumideros de los depósitos y filtro o decantador), dejando reposar el avión antes si se acaba de repostar. Se drena hasta que la muestra salga limpia, del color correcto y sin agua ni sedimentos. Llenar los depósitos al final del día reduce la condensación, siempre que la masa del siguiente vuelo lo permita.",
+          "En el repostaje, presencia y comprueba: grado del surtidor, toma de tierra (electricidad estática) antes de abrir el tapón, ningún foco de ignición cerca, tapones bien cerrados y orientados después. Las mangueras de Jet A-1 suelen tener una boquilla ancha que no entra en la boca de llenado restringida de un avión de gasolina, pero no confíes solo en eso."
+        ],
+        "bullets": [
+          "Agua: más densa (1 kg/l frente a 0,72 kg/l), va al fondo.",
+          "Drenar antes del primer vuelo y tras cada repostaje, en todos los drenajes.",
+          "Muestra correcta: color del grado, transparente, sin burbuja de agua ni partículas, olor a gasolina."
+        ]
+      }
+    ],
+    "numbers": [
+      "AVGAS 100LL: azul; AVGAS 100: verde; AVGAS 80 (histórico): rojo",
+      "UL91: incolora hasta ahora; ASTM D7547-23 prevé tinte rojo con periodo transitorio sin colorante",
+      "Densidad de la AVGAS: unos 0,72 kg/l; 1 galón US = 3,785 l",
+      "Usa el grado mínimo aprobado o uno superior aprobado, nunca uno inferior",
+      "Drenar antes del primer vuelo del día y después de cada repostaje"
+    ],
+    "traps": [
+      "Creer que más octanos dan más potencia o más energía: solo dan más resistencia a la detonación.",
+      "Pensar que el agua flota sobre la gasolina: va al fondo, por eso los drenajes están en el punto más bajo.",
+      "Identificar el combustible solo por el color: la UL91 puede venir incolora, igual que el Jet A-1.",
+      "Suponer que la UL91 vale para cualquier avión porque el motor está en la lista de Lycoming: también tiene que estar aprobado el avión.",
+      "Creer que el Jet A-1 hará que el motor falle al arrancar: suele fallar más tarde, al acabarse la gasolina de las tuberías."
+    ],
+    "spain": [
+      "En los aeródromos españoles el combustible habitual de los motores de pistón es el AVGAS 100LL; la UL91 tiene una implantación limitada. Consulta en el AIP (AD 2.4 y AD 2.6 de cada aeródromo) qué combustibles se suministran."
+    ],
+    "sources": [
+      { "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 7", "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak" },
+      { "title": "EASA, SIB 2007-01R1: uso de gasolina de automoción con etanol", "url": "https://ad.easa.europa.eu/ad/2007-01R1" },
+      { "title": "Lycoming, SI 1070 (combustibles especificados por modelo)", "url": "https://www.lycoming.com/" },
+      { "title": "ASTM D910 (AVGAS) y ASTM D7547 (gasolina de aviación sin plomo)", "url": "https://store.astm.org/d7547-26a.html" }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      { "label": "Prevuelo del PA-28: drenajes de combustible", "href": "#/ac/pa28/flow/preflight" },
+      { "label": "Prevuelo del C172", "href": "#/ac/c172/flow/preflight" }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.10.001",
+      "type": "regla",
+      "level": 1,
+      "q": "¿De qué color es el AVGAS 100LL?",
+      "options": ["Verde", "Rojo", "Azul", "Incoloro"],
+      "correct": 2,
+      "why": "El 100LL se tiñe de azul según la norma ASTM D910.",
+      "whyNot": ["El verde corresponde a la AVGAS 100, con más plomo.", "El rojo era la AVGAS 80, ya retirada de la norma.", null, "Incoloros son la UL91 tradicional y el Jet A-1."],
+      "ref": "ASTM D910; PHAK cap. 7"
+    },
+    {
+      "id": "020.10.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "El octanaje de una gasolina de aviación indica:",
+      "options": ["Su poder calorífico", "Su resistencia a la detonación", "Su densidad", "Su contenido de agua admisible"],
+      "correct": 1,
+      "why": "El octanaje mide la capacidad de la gasolina para resistir la autoinflamación por compresión y temperatura, no la energía que contiene.",
+      "whyNot": ["La energía por kilo es casi igual en todos los grados.", null, "La densidad es otra propiedad (unos 0,72 kg/l).", "El combustible no debe llevar agua libre, sea cual sea su grado."],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.10.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si no hay disponible el grado de AVGAS indicado en el POH, lo correcto es usar:",
+      "options": ["Un grado superior aprobado para el motor", "Un grado inferior y empobrecer la mezcla", "Un grado inferior y enriquecer la mezcla", "Jet A-1 mezclado con AVGAS a partes iguales"],
+      "correct": 0,
+      "why": "Se puede usar el grado mínimo o uno superior aprobado. Un grado inferior provoca detonación; uno superior con más plomo solo ensucia más las bujías.",
+      "whyNot": [null, "Un grado inferior detona, y empobrecer lo empeora.", "Enriquecer ayuda a refrigerar, pero no autoriza un grado inferior al aprobado.", "El Jet A-1 nunca debe ir en un motor de gasolina."],
+      "ref": "PHAK cap. 7; POH sección 2 (limitaciones de combustible)"
+    },
+    {
+      "id": "020.10.004",
+      "type": "concepto",
+      "level": 1,
+      "q": "Al drenar el depósito ves una burbuja clara con un límite nítido en el fondo del vaso de muestras. Es:",
+      "options": ["Jet A-1", "AVGAS 100 verde", "Aire atrapado", "Agua"],
+      "correct": 3,
+      "why": "El agua es más densa que la gasolina y se separa en el fondo con un límite claro. Hay que seguir drenando hasta que salga limpia.",
+      "whyNot": ["El Jet A-1 se mezcla con la gasolina, no forma una burbuja separada.", "La AVGAS 100 se vería verde y mezclada, no como una burbuja.", "El aire subiría, no se quedaría en el fondo.", null],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.10.005",
+      "type": "calculo",
+      "level": 2,
+      "q": "Repostas 150 l de AVGAS 100LL. ¿Cuánto aumenta aproximadamente la masa del avión?",
+      "options": ["150 kg", "108 kg", "208 kg", "72 kg"],
+      "correct": 1,
+      "why": "150 l × 0,72 kg/l = 108 kg.",
+      "whyNot": ["Confunde litros con kilos (densidad 1, la del agua).", null, "Divide entre 0,72 en vez de multiplicar.", "Es la masa de 100 l, no de 150 l."],
+      "ref": "Densidad de la AVGAS ≈ 0,72 kg/l"
+    },
+    {
+      "id": "020.10.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "Por error se ha repostado Jet A-1 en un avión con motor de gasolina. Lo más probable es que:",
+      "options": ["El motor funcione con algo menos de potencia", "El motor no arranque", "El motor arranque y falle poco después por detonación severa", "Solo se ensucien las bujías"],
+      "correct": 2,
+      "why": "El motor arranca con la gasolina que queda en tuberías y carburador. Cuando le llega la mezcla con queroseno, la detonación es violenta y el motor falla, a menudo en el despegue o el ascenso inicial.",
+      "whyNot": ["La pérdida no es leve: el queroseno detona y destruye el motor.", "Suele arrancar con la gasolina residual, y eso lo hace más peligroso.", null, "El daño es mucho más grave que unas bujías sucias."],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.10.007",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuándo puede usarse gasolina de automoción (mogas) en un avión?",
+      "options": ["Siempre que tenga al menos 95 octanos RON", "Solo si el motor y el avión están aprobados para ella", "En cualquier motor de baja compresión", "Solo en vuelos locales"],
+      "correct": 1,
+      "why": "EASA SIB 2007-01R1: el uso de mogas requiere que el diseño esté aprobado por el titular del certificado de tipo o por un STC. El octanaje no basta.",
+      "whyNot": ["El octanaje no sustituye la aprobación de motor y avión.", null, "La baja compresión no autoriza por sí misma el uso de mogas.", "El tipo de vuelo no cambia la aprobación del combustible."],
+      "ref": "EASA SIB 2007-01R1",
+      "url": "https://ad.easa.europa.eu/ad/2007-01R1"
+    },
+    {
+      "id": "020.10.008",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Qué riesgo añade el etanol presente en algunas gasolinas de automoción?",
+      "options": ["Aumenta el octanaje y elimina el hielo en el carburador", "Hace que el agua se separe en la parte superior del depósito", "Reduce la presión de vapor y el riesgo de bloqueo por vapor", "Absorbe agua, puede separarse en fases y ataca juntas y elastómeros"],
+      "correct": 3,
+      "why": "EASA SIB 2007-01R1: el etanol absorbe agua, puede separarse en fases al enfriarse, degrada materiales del sistema de combustible, reduce la energía y aumenta el riesgo de bloqueo por vapor.",
+      "whyNot": ["Además de absorber agua, se asocia a más hielo en el carburador, no menos.", "El agua y la fase alcohólica van al fondo, no arriba.", "La mogas tiene más presión de vapor, no menos.", null],
+      "ref": "EASA SIB 2007-01R1"
+    },
+    {
+      "id": "020.10.009",
+      "type": "lectura",
+      "level": 2,
+      "q": "Lee el resultado del drenaje del depósito izquierdo antes del primer vuelo de un PA-28-161:",
+      "data": "Muestra 1: líquido azul claro, transparente, olor a gasolina,\n          sin burbujas ni partículas en el fondo.",
+      "options": ["Muestra de AVGAS 100LL limpia: se puede continuar", "Muestra contaminada con agua: seguir drenando", "Jet A-1: no volar", "AVGAS 100 verde: comprobar el POH"],
+      "correct": 0,
+      "why": "Azul, transparente, olor a gasolina y sin agua ni sedimentos: es 100LL en buen estado.",
+      "whyNot": [null, "El agua se vería como una burbuja clara en el fondo.", "El Jet A-1 es incoloro o pajizo y huele a queroseno.", "La AVGAS 100 es verde, no azul."],
+      "ref": "PHAK cap. 7; POH PA-28-161, inspección prevuelo"
+    },
+    {
+      "id": "020.10.010",
+      "type": "lectura",
+      "level": 3,
+      "q": "En un aeródromo te ofrecen UL91 incolora. Tu PA-28 tiene un motor que figura en la lista de Lycoming SI 1070 para UL91. ¿Qué más necesitas para poder repostarla?",
+      "options": ["Nada: basta con la aprobación del motor", "Que el combustible esté teñido de rojo", "Que el avión también esté aprobado para UL91 en su manual de vuelo o un suplemento", "Mezclarla al 50 % con 100LL"],
+      "correct": 2,
+      "why": "La aprobación de un combustible alternativo debe cubrir el motor y la célula (sistema de combustible). Sin la aprobación del avión no puede usarse.",
+      "whyNot": ["La lista de Lycoming cubre solo el motor.", "En 2026 la UL91 puede suministrarse sin colorante; el color no es lo que la autoriza.", null, "Mezclar no sustituye la aprobación y no es un procedimiento admitido."],
+      "ref": "Lycoming SI 1070; manual de vuelo del avión"
+    }
+  ],
+  "cards": [
+    { "id": "c.020.10.01", "front": "Color del AVGAS 100LL", "back": "Azul" },
+    { "id": "c.020.10.02", "front": "Densidad aproximada de la AVGAS", "back": "0,72 kg/l (100 l ≈ 72 kg)" },
+    { "id": "c.020.10.03", "front": "Grado de combustible si no hay el del POH", "back": "Solo el mínimo indicado o uno superior aprobado; nunca inferior, nunca Jet A-1" }
+  ]
+}

@@ -386,7 +386,7 @@ export const comms: Subject = {
       bullets: [
         'Alfabeto OACI: Alfa… Zulu (*Juliett*, *X-ray*). En inglés: *tree*, *fower*, *fife*, *niner*.',
         'Distintivos, rumbos, pistas, viento y reglajes de altímetro: **dígito a dígito** (salvo centenas y millares redondos).',
-        'Frecuencias: 6 dígitos en 8,33 kHz; 5 en 25 kHz.',
+        'Frecuencias: los 6 dígitos, salvo que el 5.º y el 6.º sean cero; entonces los 4 primeros (118,100 → «uno uno ocho decimal uno»).',
         'Transpondedor: dígito a dígito, salvo millares redondos («squawk seven thousand»).',
       ],
     },
@@ -407,7 +407,7 @@ export const comms: Subject = {
     },
     {
       title: 'Ejemplo de salida',
-      examples: [{ q: 'Piloto: «Sabadell Tower, EC-ABC, Cessna 172 at the aero club apron, information Bravo, QNH 1015, request taxi for VFR flight…»', a: 'Torre: «EC-BC, taxi holding point runway 13 via A, QNH 1015». Piloto (colación): «Taxi holding point runway 13 via A, QNH 1015, EC-BC».' }],
+      examples: [{ q: 'Piloto: «Sabadell Tower, EC-ABC, Cessna 172 at the aero club apron, information Bravo, QNH 1015, request taxi for VFR flight…»', a: 'Torre: «E-BC, taxi holding point runway 13 via A, QNH 1015». Piloto (colación): «Taxi holding point runway 13 via A, QNH 1015, E-BC».' }],
       bullets: ['Informe de posición: distintivo, posición, hora, altitud, siguiente punto y hora estimada.'],
     },
     {

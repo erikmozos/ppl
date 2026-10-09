@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 350">
+  <title>Distribución de presiones sobre un perfil, punto de remanso, centro de presiones y su desplazamiento con el ángulo de ataque</title>
+  <defs>
+    <marker id="080-presiones-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+    <marker id="080-presiones-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker>
+    <marker id="080-presiones-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker>
+  </defs>
+  <text x="10" y="140" class="tx2">viento relativo</text>
+  <line x1="10" y1="160" x2="80" y2="152.7" class="ln" marker-end="url(#080-presiones-k)"/>
+  <line x1="10" y1="205" x2="80" y2="197.7" class="ln" marker-end="url(#080-presiones-k)"/>
+  <path d="M100 170 C125 110 250 98 380 116 C460 127 520 148 560 170 C490 176 390 182 290 186 C200 189 130 188 100 170 Z" class="ac"/>
+  <polyline points="92.1,130.3 103,89.7 134.5,58.2 191.3,52.4 250,59 323.5,72 451.4,104.9 506.9,131.5 560,170" class="ln2 dash" fill="none"/>
+  <line x1="117.6" y1="146.2" x2="92.1" y2="130.3" class="wa-ln" marker-end="url(#080-presiones-w)"/>
+  <line x1="136" y1="133.7" x2="103" y2="89.7" class="wa-ln" marker-end="url(#080-presiones-w)"/>
+  <line x1="159" y1="124" x2="134.5" y2="58.2" class="wa-ln" marker-end="url(#080-presiones-w)"/>
+  <line x1="200.6" y1="113.8" x2="191.3" y2="52.4" class="wa-ln" marker-end="url(#080-presiones-w)"/>
+  <line x1="250" y1="109" x2="250" y2="59" class="wa-ln" marker-end="url(#080-presiones-w)"/>
+  <line x1="322" y1="110" x2="323.5" y2="72" class="wa-ln" marker-end="url(#080-presiones-w)"/>
+  <line x1="446.6" y1="128.4" x2="451.4" y2="104.9" class="wa-ln" marker-end="url(#080-presiones-w)"/>
+  <line x1="502" y1="144.7" x2="506.9" y2="131.5" class="wa-ln" marker-end="url(#080-presiones-w)"/>
+  <line x1="160" y1="208" x2="162.6" y2="188" class="ac-ln" marker-end="url(#080-presiones-a)"/>
+  <line x1="193" y1="211" x2="193" y2="190" class="ac-ln" marker-end="url(#080-presiones-a)"/>
+  <line x1="251" y1="206" x2="251" y2="190" class="ac-ln" marker-end="url(#080-presiones-a)"/>
+  <text x="430" y="70" class="txw b" text-anchor="middle">succión (depresión)</text>
+  <text x="280" y="224" class="txa">sobrepresión en el intradós</text>
+  <circle cx="116" cy="177" r="4" class="ink-fill"/>
+  <text x="20" y="276" class="tx">punto de remanso</text>
+  <line x1="70" y1="264" x2="114" y2="181" class="ln2"/>
+  <line x1="223.4" y1="30.8" x2="268.2" y2="26.1" class="ln2 dash"/>
+  <line x1="282.8" y1="165.3" x2="268.2" y2="26.1" class="ln2 dash"/>
+  <line x1="238" y1="170" x2="223.4" y2="30.8" class="ac-ln thick" marker-end="url(#080-presiones-a)"/>
+  <line x1="238" y1="170" x2="282.8" y2="165.3" class="ac-ln thick" marker-end="url(#080-presiones-a)"/>
+  <line x1="238" y1="170" x2="268.2" y2="26.1" class="ln thick" marker-end="url(#080-presiones-k)"/>
+  <circle cx="238" cy="170" r="4" class="ink-fill"/>
+  <text x="216" y="36" class="txa b" text-anchor="end">L</text>
+  <text x="276" y="28" class="tx b">R</text>
+  <text x="290" y="172" class="txa b">D</text>
+  <text x="232" y="184" class="tx b" text-anchor="end">CP</text>
+  <text x="620" y="262" class="tx2" text-anchor="end">Centro de presiones de un perfil curvado (esquema cualitativo)</text>
+  <line x1="100" y1="300" x2="560" y2="300" class="ln thick"/>
+  <line x1="100" y1="294" x2="100" y2="306" class="ln"/>
+  <line x1="215" y1="294" x2="215" y2="306" class="ln"/>
+  <line x1="330" y1="294" x2="330" y2="306" class="ln"/>
+  <line x1="445" y1="294" x2="445" y2="306" class="ln"/>
+  <line x1="560" y1="294" x2="560" y2="306" class="ln"/>
+  <line x1="360" y1="286" x2="230" y2="286" class="ac-ln thick" marker-end="url(#080-presiones-a)"/>
+  <text x="370" y="290" class="txa">al aumentar α, el CP avanza</text>
+  <line x1="225" y1="316" x2="330" y2="316" class="wa-ln thick" marker-end="url(#080-presiones-w)"/>
+  <text x="340" y="320" class="txw">en la pérdida retrocede: morro abajo</text>
+  <text x="100" y="340" class="tx2" text-anchor="middle">0 %</text>
+  <text x="215" y="340" class="tx2" text-anchor="middle">25 %</text>
+  <text x="330" y="340" class="tx2" text-anchor="middle">50 %</text>
+  <text x="445" y="340" class="tx2" text-anchor="middle">75 %</text>
+  <text x="560" y="340" class="tx2" text-anchor="middle">100 % de la cuerda</text>
+</svg>

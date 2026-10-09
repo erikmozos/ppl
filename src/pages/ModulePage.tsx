@@ -10,8 +10,8 @@ export function ModulePage({ m, tab, sid }: { m: Module; tab: string; sid?: stri
   const tabs: [string, string][] = [
     ['resumen', m.radio ? 'Fundamentos' : 'Resumen y requisitos'],
     ...(subs.length ? [['asignaturas', `Asignaturas (${subs.length})`] as [string, string]] : []),
-    ...(m.radio ? [['radio', `🎙️ Simulador de radio (${m.radio.length})`] as [string, string]] : []),
-    ...(m.quiz ? [['test', `📝 Test (${m.quiz.length})`] as [string, string]] : []),
+    ...(m.radio ? [['radio', `Simulador de radio (${m.radio.length})`] as [string, string]] : []),
+    ...(m.quiz ? [['test', `Test (${m.quiz.length})`] as [string, string]] : []),
     ['fuentes', 'Fuentes'],
   ]
   const t = tabs.some(x => x[0] === tab) ? tab : subs.length && tab === '' ? 'asignaturas' : 'resumen'
@@ -21,7 +21,7 @@ export function ModulePage({ m, tab, sid }: { m: Module; tab: string; sid?: stri
         <div>
           <a className="back" href="#/licencias">← Recorrido modular</a>
           <p className="eyebrow">Etapa {m.stage} · {m.status === 'completo' ? 'Guía completa' : 'En progreso'}</p>
-          <h1>{m.icon} {m.name}</h1>
+          <h1>{m.name}</h1>
           <p className="muted">{m.summary}</p>
         </div>
       </div>
@@ -30,8 +30,7 @@ export function ModulePage({ m, tab, sid }: { m: Module; tab: string; sid?: stri
       </div>
       {m.featured?.map(f => (
         <a key={f.url} className="card featured" href={f.url} target="_blank" rel="noreferrer">
-          <span className="hub-icon">🕹️</span>
-          <div><p className="eyebrow">Recurso destacado</p><h3>{f.title} ↗</h3><p className="muted small">{f.text}</p></div>
+                    <div><p className="eyebrow">Recurso destacado</p><h3>{f.title} ↗</h3><p className="muted small">{f.text}</p></div>
         </a>
       ))}
       <div className="tabs" role="tablist">
@@ -39,7 +38,7 @@ export function ModulePage({ m, tab, sid }: { m: Module; tab: string; sid?: stri
       </div>
       {t === 'resumen' && (
         <div className="study">
-          {m.status !== 'completo' && <div className="card note-card">🛠️ Esta etapa está en progreso: aquí tienes los requisitos verificados. La guía de estudio completa por asignaturas se añadirá más adelante.</div>}
+          {m.status !== 'completo' && <div className="card note-card">Esta etapa está en progreso: aquí tienes los requisitos verificados. La guía de estudio completa por asignaturas se añadirá más adelante.</div>}
           {m.sections.map(b => <StudyBlock key={b.title} b={b} />)}
         </div>
       )}

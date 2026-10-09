@@ -1,0 +1,1062 @@
+{
+  "lesson": {
+    "id": "010.06",
+    "title": "Reglas generales del aire (Anexo 2 y SERA)",
+    "summary": "Definiciones básicas, responsabilidades del piloto al mando, protección de personas y bienes, zonas P, R y D, derecho de paso en vuelo y en tierra, luces, vuelo simulado por instrumentos, normas en el aeródromo, señales y hora UTC.",
+    "objectives": [
+      "Definir noche, techo, VMC, altitud, altura, nivel de vuelo y zona congestionada como lo hace SERA",
+      "Saber qué actividades (lanzamientos, remolque, paracaidismo, acrobacia, formación) exigen condiciones o autorización y qué añade el Real Decreto 1180/2018",
+      "Distinguir las zonas prohibidas, restringidas y peligrosas y saber cuándo puedes entrar en cada una",
+      "Resolver cualquier caso de derecho de paso en vuelo, en la aproximación, en tierra y en el agua",
+      "Interpretar de noche las luces de otra aeronave y saber cuándo deben ir encendidas las tuyas",
+      "Reconocer las señales de socorro y urgencia, las señales luminosas de la torre y las del área de señales, y acusar recibo",
+      "Expresar la hora en UTC y convertirla a la hora oficial de la península y de Canarias"
+    ],
+    "sections": [
+      {
+        "title": "Dónde están las reglas: Anexo 2, SERA y RD 1180/2018",
+        "text": [
+          "El **Anexo 2 de la OACI** (Reglamento del Aire) fija las reglas de vuelo para todos los Estados del Convenio de Chicago. Sobre alta mar se aplica tal cual, sin diferencias posibles. En la Unión Europea, el Anexo 2 se ha trasladado casi palabra por palabra al **Reglamento de Ejecución (UE) 923/2012**, conocido como **SERA** (Standardised European Rules of the Air, reglas del aire europeas normalizadas). SERA es directamente aplicable en España: obliga sin necesidad de una ley nacional que lo transponga.",
+          "Donde SERA deja margen a la «autoridad competente», cada Estado completa la norma. En España lo hace el **Real Decreto 1180/2018**, que desarrolla el Reglamento del Aire, y las diferencias con la OACI y con SERA se publican en el **AIP España, GEN 1.7**. La regla práctica para el examen: primero SERA; después, lo que España añade o concreta.",
+          "SERA se organiza por secciones: la 2 trata de la aplicación y las responsabilidades; la 3, de las reglas generales (protección de personas y bienes, cómo evitar colisiones, señales y hora); la 4, del plan de vuelo; la 5, de VMC, VFR e IFR; la 6, de las clases de espacio aéreo; la 8, del servicio de control; la 11, de la interferencia ilícita y la interceptación; y la 14, de la fraseología. El **apéndice 1** recoge las señales y el **apéndice 3**, la tabla de niveles de crucero."
+        ]
+      },
+      {
+        "title": "Definiciones que se preguntan",
+        "text": [
+          "Muchas preguntas se resuelven con la definición exacta. Fíjate en los detalles que se convierten en distractores: el techo es una **altura** (sobre el suelo o el agua), no una altitud, y solo cuenta la capa que cubre **más de la mitad del cielo** (BKN u OVC) por debajo de 20 000 ft; la noche se mide con el **crepúsculo civil**, no con la puesta de sol; la altitud se refiere al **nivel medio del mar** y el nivel de vuelo, a la presión de **1013,2 hPa**."
+        ],
+        "table": {
+          "caption": "Definiciones de SERA (artículo 2) que más caen",
+          "head": ["Término", "Definición"],
+          "rows": [
+            ["Noche", "Horas entre el final del crepúsculo civil vespertino y el comienzo del crepúsculo civil matutino. El crepúsculo civil termina por la tarde, y empieza por la mañana, cuando el centro del disco solar está 6° por debajo del horizonte"],
+            ["Techo de nubes", "Altura sobre el suelo o el agua de la base de la capa de nubes más baja, por debajo de 6000 m (20 000 ft), que cubre más de la mitad del cielo"],
+            ["VMC", "Condiciones meteorológicas expresadas en visibilidad, distancia a las nubes y techo iguales o mejores que los mínimos especificados. Si son peores, son IMC"],
+            ["Visibilidad de vuelo", "Visibilidad hacia delante desde la cabina de una aeronave en vuelo"],
+            ["Visibilidad en tierra", "Visibilidad en un aeródromo comunicada por un observador acreditado o por sistemas automáticos"],
+            ["Altitud", "Distancia vertical entre un nivel, un punto o un objeto considerado como punto y el nivel medio del mar (MSL)"],
+            ["Altura", "Distancia vertical entre un nivel, un punto o un objeto considerado como punto y una referencia especificada (el terreno, el aeródromo, el umbral)"],
+            ["Nivel de vuelo", "Superficie de presión atmosférica constante relacionada con 1013,2 hPa y separada de otras por intervalos de presión determinados. FL55 son 5500 ft con el altímetro en 1013,2"],
+            ["Altitud de transición", "Altitud a la cual, o por debajo de la cual, la posición vertical se expresa en altitudes. En España es 6000 ft, salvo excepciones (AIP ENR 1.7)"],
+            ["Zona congestionada", "En una ciudad, pueblo o asentamiento, cualquier zona usada sustancialmente para fines residenciales, comerciales o recreativos"],
+            ["Vuelo acrobático", "Maniobras intencionadas con un cambio brusco de actitud, una actitud anormal o una variación anormal de la velocidad, no necesarias para el vuelo normal ni para la instrucción (salvo la de la habilitación de acrobacia)"],
+            ["Tránsito de aeródromo", "Todo el tránsito en el área de maniobras y todas las aeronaves que vuelan en las inmediaciones del aeródromo (en el circuito, entrando en él o saliendo de él)"]
+          ],
+          "src": "SERA, art. 2; AIP España ENR 1.7"
+        }
+      },
+      {
+        "title": "El piloto al mando: responsabilidad, preparación y sustancias psicoactivas",
+        "text": [
+          "El piloto al mando es **responsable** de que la aeronave se opere conforme al Reglamento del Aire, lleve o no los mandos, y tiene la **autoridad final** sobre ella mientras está al mando (SERA.2010 y SERA.2015). Solo puede apartarse de las reglas cuando sea absolutamente necesario por razones de seguridad.",
+          "Antes de cada vuelo debe **familiarizarse con toda la información disponible** que corresponda. Si el vuelo sale de las inmediaciones del aeródromo (y en todo vuelo IFR), la preparación incluye estudiar con cuidado los informes y las previsiones meteorológicas actualizados, el combustible necesario y un **plan alternativo** por si el vuelo no puede completarse como estaba previsto.",
+          "**SERA.2020** prohíbe que nadie cuya función sea crítica para la seguridad (el piloto lo es) la ejerza bajo los efectos de una **sustancia psicoactiva** que disminuya su capacidad, y prohíbe además el consumo problemático de esas sustancias. SERA considera psicoactivos el alcohol, los opioides, los cannabinoides, los sedantes e hipnóticos, la cocaína y otros psicoestimulantes, los alucinógenos y los disolventes volátiles; quedan fuera el café y el tabaco.",
+          "SERA no fija una tasa de alcohol ni un plazo. La regla de las **8 horas** «de la botella al avión» es una **recomendación** prudente, no una norma de SERA: lo que la norma exige es no volar con la capacidad disminuida. En el plano médico rige además **MED.A.020**: no ejerzas las atribuciones de la licencia si sabes o sospechas que tu aptitud ha disminuido (enfermedad, medicación, alcohol, cansancio)."
+        ]
+      },
+      {
+        "title": "Protección de personas y bienes (SERA.3101 a 3145)",
+        "text": [
+          "El principio general es **SERA.3101**: no se opera una aeronave de forma **negligente o temeraria** que ponga en peligro la vida o los bienes de otros. Todas las reglas de esta sección desarrollan esa idea.",
+          "**Alturas mínimas (SERA.3105).** Salvo para despegar o aterrizar, o con permiso de la autoridad, no se vuela sobre zonas congestionadas ni sobre reuniones de personas al aire libre salvo a una altura que permita, si surge una emergencia, aterrizar sin riesgo indebido para las personas o los bienes en la superficie. Para VFR, SERA.5005(f) concreta las cifras: **300 m (1000 ft)** sobre el obstáculo más alto en un radio de **600 m** sobre zonas congestionadas o reuniones de personas, y **150 m (500 ft)** sobre el suelo o el agua, o sobre el obstáculo más alto en un radio de 150 m, en el resto. Las verás a fondo en la lección de VFR.",
+          "**Niveles de crucero (SERA.3110).** Se expresan en **niveles de vuelo** por encima de la altitud de transición (o desde el nivel de vuelo más bajo utilizable) y en **altitudes** a la altitud de transición o por debajo de ella.",
+          "Las actividades especiales comparten la misma estructura: solo se hacen conforme a la legislación de la Unión o nacional y según la información, el asesoramiento o la autorización de la dependencia ATS (servicios de tránsito aéreo) que corresponda. España concreta en el RD 1180/2018 quién puede hacerlas sin una autorización de operaciones especializadas."
+        ],
+        "bullets": [
+          "**Lanzamientos o rociados** desde una aeronave en vuelo (SERA.3115): solo conforme a la normativa y con la información, el asesoramiento o la autorización ATS. En España, sin licencia de operaciones especializadas, solo el vaciado de combustible en emergencia y el lastre de globos y planeadores, bajo la responsabilidad del piloto al mando y sin riesgo en tierra ni para otras aeronaves (RD 1180/2018, art. 7).",
+          "**Remolque** de aeronaves u objetos (SERA.3120) y **descensos en paracaídas** que no sean de emergencia (SERA.3125): mismas condiciones. En España los pueden hacer sin licencia de operaciones especializadas las organizaciones de formación y las entidades de deporte y aviación recreativa, sin ánimo de lucro (art. 7 del RD).",
+          "**Vuelo acrobático** (SERA.3130): solo en las condiciones que fije la autoridad y según la información, el asesoramiento o la autorización ATS. En España, sin autorización de operaciones especializadas, solo si **no se sobrevuelan** ciudades, pueblos, urbanizaciones, lugares habitados ni concentraciones de personas (art. 7 del RD).",
+          "**Vuelo en formación** (SERA.3135): solo por **acuerdo previo** entre los pilotos al mando. En espacio controlado, además: un **jefe de formación** designado; la formación navega y notifica su posición **como una sola aeronave**; la separación entre sus miembros es responsabilidad del jefe y de los pilotos al mando, también al unirse y al separarse; y cada aeronave no estatal se mantiene a no más de **1 km (0,5 NM)** lateral y longitudinalmente y **30 m (100 ft)** verticalmente del jefe. En España el plan de vuelo debe indicar que se trata de un vuelo en formación (art. 9 del RD).",
+          "**Globos libres no tripulados** (SERA.3140): solo en las condiciones de la autoridad y del apéndice 2 de SERA."
+        ],
+        "note": {
+          "kind": "es",
+          "text": "El RD 1180/2018 regula las excepciones a las alturas mínimas en España. El entrenamiento de aterrizajes forzosos puede bajar hasta **50 m (150 ft)** de altura si no supone riesgo ni molestias en superficie, manteniendo **150 m** de distancia de cualquier persona, vehículo, embarcación u obstáculo artificial (art. 33). Fuera de los casos del art. 33, volar por debajo de las alturas de SERA exige autorización de AESA (arts. 5 y 33)."
+        }
+      },
+      {
+        "title": "Zonas prohibidas, restringidas y peligrosas",
+        "text": [
+          "**SERA.3145** prohíbe volar en una **zona prohibida** o en una **zona restringida** cuyos detalles se hayan publicado, salvo conforme a las condiciones de la restricción o con permiso del Estado sobre cuyo territorio se ha establecido. La zona peligrosa es otra cosa: no prohíbe ni restringe la entrada, sino que avisa de una actividad peligrosa. Las zonas prohibidas y restringidas solo pueden establecerse sobre el territorio o las aguas territoriales de un Estado; una zona peligrosa puede estar también sobre alta mar.",
+          "En España se publican en el AIP, **ENR 5.1**, y aparecen en las cartas visuales con su identificador, sus límites verticales y su horario de actividad; algunas se activan por NOTAM. Antes de cada travesía revisa las que cruza tu ruta y su estado."
+        ],
+        "table": {
+          "caption": "Tipos de zonas y prefijos españoles",
+          "head": ["Zona", "Prefijo en España", "Qué significa"],
+          "rows": [
+            ["Prohibida", "LE-P", "Espacio aéreo de dimensiones definidas en el que **está prohibido** el vuelo"],
+            ["Restringida", "LE-R", "El vuelo está **restringido** según condiciones especificadas (horario, altitud, autorización)"],
+            ["Peligrosa", "LE-D", "En horas determinadas pueden desarrollarse **actividades peligrosas** para el vuelo (tiro, ejercicios). Entrar no está prohibido, pero debes conocer la actividad y evitarla si está activa"]
+          ],
+          "src": "SERA.3145; AIP España ENR 5.1"
+        }
+      },
+      {
+        "title": "Evitar colisiones: vigilancia y proximidad",
+        "text": [
+          "Nada exime al piloto al mando de hacer lo necesario para evitar una colisión, incluidas las maniobras basadas en los avisos de resolución del ACAS (SERA.3201). La **vigilancia exterior** es obligatoria en todo vuelo, sea cual sea la clase de espacio aéreo y aunque vueles con una autorización ATC: la autorización no te quita la obligación de mirar fuera. Tampoco se vuela tan cerca de otra aeronave que se cree riesgo de colisión (SERA.3205); la excepción organizada es el vuelo en formación.",
+          "Una técnica útil: una aeronave que mantiene la **misma marcación** respecto a ti (no se mueve en el parabrisas) mientras crece de tamaño está en **rumbo de colisión**. Es la situación más peligrosa, porque el ojo detecta mal lo que no se mueve."
+        ]
+      },
+      {
+        "title": "Derecho de paso en vuelo (SERA.3210)",
+        "text": [
+          "Las reglas de paso existen para que, cuando dos aeronaves se ven, ambas sepan sin hablar quién maniobra. La que **tiene el derecho de paso mantiene rumbo y velocidad**; la que debe ceder se aparta y **evita pasar por encima, por debajo o por delante** de la otra, salvo que lo haga a buena distancia y teniendo en cuenta la estela turbulenta. Tener preferencia no te exime de evitar la colisión si la otra no maniobra.",
+          "Antes que cualquier otro caso, una regla general: toda aeronave que sepa que otra tiene la **maniobrabilidad reducida** le cede el paso. Después vienen los casos geométricos y, dentro de ellos, las categorías: cuanto menos maniobrable es una aeronave, más preferencia tiene."
+        ],
+        "bullets": [
+          "**De frente** (o casi de frente) con peligro de colisión: **ambas viran a la derecha**.",
+          "**Convergencia** a un nivel parecido: cede el paso la que tiene a la otra **a su derecha**. Excepciones por categoría: los aerodinos propulsados ceden a los dirigibles, a los planeadores y a los globos; los dirigibles, a los planeadores y a los globos; los planeadores, a los globos; y las aeronaves propulsadas ceden a las que se ve que **remolcan** otras aeronaves u objetos.",
+          "**Alcance**: alcanza la que se acerca por detrás en una línea que forma **menos de 70°** con el plano de simetría de la otra, es decir, desde donde de noche solo vería su luz blanca de cola. La alcanzada tiene preferencia; la que alcanza, suba, baje o vaya nivelada, se aparta **virando a la derecha** y sigue obligada hasta haberla pasado y dejado atrás por completo. Un planeador que alcanza a otro planeador puede pasar por la derecha o por la izquierda.",
+          "**Aterrizaje**: la aeronave en vuelo, o en tierra o en el agua, cede el paso a la que aterriza o está en la fase final de la aproximación. Entre dos aerodinos que se aproximan para aterrizar, **el más alto cede al más bajo**, pero el más bajo no puede aprovechar la regla para cortar el paso a otro que está en final ni para adelantarlo. Aun así, los aerodinos propulsados **siempre ceden a los planeadores**.",
+          "**Aterrizaje de emergencia**: quien sepa que otra aeronave se ve obligada a aterrizar le cede el paso.",
+          "**Despegue**: la aeronave que rueda por el área de maniobras cede el paso a la que despega o está a punto de despegar."
+        ],
+        "figure": "svg:010-derecho-paso",
+        "caption": "Los tres casos geométricos: de frente, ambas a la derecha; en convergencia, cede la que tiene a la otra a su derecha; en alcance (por detrás, a menos de 70° del eje), se adelanta por la derecha.",
+        "note": {
+          "kind": "warn",
+          "text": "El orden por categorías que se memoriza es **globo, planeador, dirigible, aerodino propulsado**, y la aeronave que remolca va por delante de cualquier aeronave propulsada. El texto de SERA no deja claro el cruce entre un dirigible y un avión que remolca; el examen no suele preguntar ese par."
+        }
+      },
+      {
+        "title": "Derecho de paso en tierra y en el agua",
+        "text": [
+          "En el área de movimiento de un aeródromo las reglas se parecen a las de vuelo, con dos matices: de frente puedes **detenerte** en lugar de virar, y en el alcance la alcanzada tiene preferencia mientras la otra mantiene una distancia segura."
+        ],
+        "bullets": [
+          "De frente: ambas **se detienen** o, cuando sea posible, **se desvían a la derecha** para pasar con holgura.",
+          "Convergencia: cede la que tiene a la otra **a su derecha**.",
+          "Alcance: la alcanzada tiene preferencia y la que alcanza mantiene una distancia segura.",
+          "En un aeródromo controlado, la aeronave que rueda **se detiene en todos los puntos de espera de la pista** salvo que la torre la autorice a entrar o a cruzar, y se detiene ante toda **barra de parada iluminada**; puede seguir cuando la barra se apaga.",
+          "Personas y vehículos: los vehículos de emergencia que acuden a una aeronave en peligro tienen prioridad sobre todo el tránsito de superficie; los vehículos, incluidos los que remolcan aeronaves, ceden el paso a las aeronaves que aterrizan, despegan, ruedan o son remolcadas.",
+          "En el agua (SERA.3230): cede quien tiene a la otra aeronave o al barco a su derecha; de frente, se vira a la derecha; la alcanzada tiene preferencia; y al amerizar o despegar del agua te mantienes lejos de los barcos sin entorpecer su navegación."
+        ]
+      },
+      {
+        "title": "Luces de las aeronaves (SERA.3215)",
+        "text": [
+          "Las luces cumplen dos funciones distintas. Las **anticolisión** (destellos rojos o blancos: baliza giratoria o luces estroboscópicas) están para **llamar la atención**. Las **de navegación** (o de posición) indican a quien las ve la **trayectoria relativa** de la aeronave: roja en el extremo del ala izquierda, verde en el del ala derecha y blanca en la cola. Como cada una cubre un sector, el color que ves te dice qué costado del otro tienes delante."
+        ],
+        "bullets": [
+          "De noche, toda aeronave en vuelo lleva encendidas las **luces anticolisión** y las **de navegación**, y ninguna otra luz que pueda confundirse con ellas.",
+          "De noche, en el área de movimiento: luces de navegación si la aeronave se mueve; luces que señalen los extremos de su estructura salvo que esté parada y bien iluminada (en España, «en la medida de lo posible», AIP GEN 1.7); luces que llamen la atención si rueda o la remolcan; y luces que indiquen que los motores están en marcha.",
+          "Si la aeronave tiene luces anticolisión, las lleva encendidas **también de día** en vuelo y en el área de movimiento.",
+          "El piloto puede **apagar o atenuar** las luces de destellos si le perjudican en su tarea o pueden deslumbrar a un observador exterior (por ejemplo, las estroboscópicas dentro de nubes o en la plataforma junto a otras aeronaves)."
+        ],
+        "table": {
+          "caption": "Luces de navegación y anticolisión",
+          "head": ["Luz", "Posición", "Color", "Sector"],
+          "rows": [
+            ["Navegación izquierda", "Extremo del ala izquierda", "Roja fija", "110° desde el frente hacia la izquierda"],
+            ["Navegación derecha", "Extremo del ala derecha", "Verde fija", "110° desde el frente hacia la derecha"],
+            ["Navegación de cola", "Cola", "Blanca fija", "140° hacia atrás (70° a cada lado del eje)"],
+            ["Anticolisión", "Fuselaje, deriva o puntas de ala", "Roja o blanca de destellos", "Visible alrededor de la aeronave"]
+          ],
+          "src": "SERA.3215; OACI, Anexo 6, apéndice de luces"
+        },
+        "examples": [
+          {
+            "q": "De noche ves a tu derecha, a tu misma altitud, una luz roja fija y una luz de destellos cuya marcación no cambia. ¿Qué ocurre y qué haces?",
+            "a": "La roja fija es la luz de navegación izquierda del otro: ves su costado izquierdo, así que cruza de tu derecha hacia tu izquierda. La marcación constante indica rumbo de colisión. Como lo tienes a tu derecha, **cedes tú**: vira a la derecha para pasar por detrás de él, nunca por delante ni por debajo."
+          },
+          {
+            "q": "Ves a tu izquierda una luz verde fija con marcación constante.",
+            "a": "Ves su costado derecho: el otro te tiene a ti a su derecha y es él quien cede. Mantén rumbo y velocidad, pero no le pierdas de vista; si no maniobra, evita tú la colisión."
+          },
+          {
+            "q": "Ves delante a la vez una luz verde a la izquierda y una roja a la derecha.",
+            "a": "Ves las dos alas del otro: viene de frente. Ambos viráis a la derecha. Si solo vieras una luz blanca, irías detrás de él en su mismo sentido: lo estarías alcanzando y lo adelantarías por la derecha."
+          }
+        ]
+      },
+      {
+        "title": "Vuelo simulado por instrumentos (SERA.3220)",
+        "text": [
+          "Para practicar vuelo instrumental con capota o gafas que limitan la visión exterior, SERA exige dos condiciones: **doble mando completamente operativo** y un **piloto cualificado** en un puesto de pilotaje como **piloto de seguridad**, que vigila el exterior por quien vuela bajo capota. El piloto de seguridad debe tener una visión adecuada hacia delante y hacia los lados; si no la tiene, un **observador competente** en comunicación con él ocupa un puesto desde el que complemente su campo de visión."
+        ]
+      },
+      {
+        "title": "En el aeródromo y sus inmediaciones (SERA.3225)",
+        "text": [
+          "Toda aeronave que opere en un aeródromo o en sus inmediaciones, sea controlado o no:"
+        ],
+        "bullets": [
+          "vigila el tránsito del aeródromo para evitar colisiones;",
+          "se integra en el circuito que forman las demás aeronaves o se mantiene fuera de él;",
+          "hace **todos los virajes a la izquierda** al aproximarse para aterrizar y después de despegar, salvo que se indique otra cosa (circuito publicado por la derecha, flecha en el área de señales) o lo ordene el ATC;",
+          "aterriza y despega **contra el viento**, salvo que la seguridad, la configuración de la pista o el tránsito aconsejen otra dirección;",
+          "en España, los globos están exentos de las dos últimas reglas (AIP GEN 1.7)."
+        ]
+      },
+      {
+        "title": "Señales de socorro, urgencia y aviso (SERA, apéndice 1)",
+        "text": [
+          "SERA.3301 obliga a conocer las señales del apéndice 1 y a obedecerlas. Distingue bien las dos situaciones de emergencia: el **socorro** es un peligro grave e inminente que requiere ayuda inmediata; la **urgencia**, una situación que afecta a la seguridad pero no requiere ayuda inmediata."
+        ],
+        "bullets": [
+          "**Socorro**: MAYDAY por radiotelefonía; SOS (···−−−···) en Morse; cohetes o granadas que lanzan **luces rojas**, disparados de uno en uno a intervalos cortos; una bengala roja con paracaídas; o un mensaje por enlace de datos con el sentido de MAYDAY. En el transpondedor, 7700.",
+          "**Urgencia**: encender y apagar repetidamente los faros de aterrizaje o las luces de navegación, de forma distinta a unas luces de navegación de destellos, significa que la aeronave tiene dificultades que la obligan a aterrizar, pero **no necesita asistencia inmediata**. PAN PAN por radio (XXX en Morse) anuncia un mensaje muy urgente sobre la seguridad de una aeronave, un barco, un vehículo o una persona.",
+          "**Aviso de zona**: una serie de proyectiles lanzados desde tierra a intervalos de **10 segundos** que al estallar muestran **luces o estrellas rojas y verdes** indican a una aeronave no autorizada que vuela dentro, o está a punto de entrar, en una zona restringida, prohibida o peligrosa, y que debe tomar las medidas necesarias."
+        ]
+      },
+      {
+        "title": "Señales luminosas desde la torre",
+        "text": [
+          "Si falla la radio en un aeródromo controlado, la torre se comunica contigo con una lámpara de señales dirigida a tu aeronave. El significado depende de si estás en vuelo o en tierra. Una forma de recordarlo: el **verde** autoriza, el **rojo** detiene o niega y el **blanco** te devuelve (a la plataforma o al punto de partida)."
+        ],
+        "table": {
+          "caption": "Señales luminosas y pirotécnicas (tabla AP1-1)",
+          "head": ["Señal", "Aeronave en vuelo", "Aeronave en tierra"],
+          "rows": [
+            ["Verde fija", "Autorizado a aterrizar", "Autorizado a despegar"],
+            ["Roja fija", "Ceda el paso a otras aeronaves y siga en el circuito", "Alto"],
+            ["Destellos verdes", "Regrese para aterrizar (la autorización se dará después)", "Autorizado a rodar"],
+            ["Destellos rojos", "Aeródromo peligroso, no aterrice", "Apártese del área de aterrizaje en uso"],
+            ["Destellos blancos", "Aterrice en este aeródromo y diríjase a la plataforma (la autorización se dará después)", "Regrese al punto de partida en el aeródromo"],
+            ["Pirotecnia roja", "A pesar de las instrucciones anteriores, no aterrice por ahora", "—"]
+          ],
+          "src": "SERA, apéndice 1, 3.1"
+        },
+        "bullets": [
+          "**Acuse de recibo en vuelo**: de día, **alabeando**, salvo en los tramos de **base y final**; de noche, encendiendo y apagando **dos veces** los faros de aterrizaje o, si no los tienes, las luces de navegación.",
+          "**Acuse de recibo en tierra**: de día, moviendo los **alerones o el timón de dirección**; de noche, encendiendo y apagando dos veces los faros de aterrizaje o, si no los tienes, las luces de navegación.",
+          "Con fallo de radio en un aeródromo controlado, vigila la torre: es la única forma de recibir instrucciones."
+        ],
+        "figure": "svg:010-senales-luminosas",
+        "caption": "Señales de la lámpara de la torre: verde autoriza, rojo detiene o niega, blanco devuelve."
+      },
+      {
+        "title": "Señales visuales en tierra (área de señales)",
+        "text": [
+          "En los aeródromos, sobre todo en los no controlados, el **área de señales** (un recuadro visible desde el aire, cerca de la torre o de la pista) muestra paneles horizontales con instrucciones. Reconócelos al sobrevolar el campo antes de incorporarte al circuito. Las letras de la tabla corresponden a la figura."
+        ],
+        "table": {
+          "caption": "Señales visuales en tierra",
+          "head": ["Señal", "Significado"],
+          "rows": [
+            ["A. Panel cuadrado rojo con **dos** diagonales amarillas (aspa)", "Prohibido aterrizar; la prohibición puede prolongarse"],
+            ["B. Panel cuadrado rojo con **una** diagonal amarilla", "Precauciones especiales en la aproximación y el aterrizaje (mal estado del área de maniobras u otra razón)"],
+            ["C. Pesa blanca (dos círculos unidos por una barra)", "Aterrizar, despegar y rodar solo por pistas y calles de rodaje"],
+            ["D. Pesa blanca con una barra negra en cada círculo, perpendicular al eje", "Aterrizar y despegar solo en pistas; las demás maniobras pueden hacerse fuera de pistas y calles de rodaje"],
+            ["E. Cruz de un solo color (amarilla o blanca) sobre una pista o calle", "Zona no apta para el movimiento de aeronaves (pista o calle cerrada)"],
+            ["F. T de aterrizaje blanca o naranja", "Aterrizar y despegar en dirección paralela al palo de la T, hacia el travesaño. De noche va iluminada o perfilada con luces blancas"],
+            ["G. Flecha hacia la derecha de color llamativo", "Virajes a la derecha antes de aterrizar y después de despegar (circuito por la derecha)"],
+            ["H. Letra C negra sobre fondo amarillo, en vertical", "Oficina de notificación de los servicios de tránsito aéreo (ARO)"],
+            ["Doble cruz blanca horizontal", "El aeródromo se usa para vuelos de planeadores y hay planeadores volando"],
+            ["Dos cifras en vertical en la torre o cerca de ella", "Dirección de despegue en decenas de grados magnéticos (27 = 270°)"]
+          ],
+          "src": "SERA, apéndice 1, 3.2"
+        },
+        "figure": "svg:010-area-senales",
+        "caption": "Señales del área de señales. El significado de cada letra está en la tabla."
+      },
+      {
+        "title": "Hora UTC (SERA.3401)",
+        "text": [
+          "En aviación se usa siempre el **tiempo universal coordinado (UTC)**, expresado en horas y minutos (y segundos si hace falta) del día de 24 horas que empieza a medianoche. Planes de vuelo, METAR, TAF y NOTAM van en UTC; en los mensajes la hora lleva la letra Z (1430Z).",
+          "Antes de un vuelo controlado hay que obtener una **comprobación de la hora**, y repetirla durante el vuelo cuando haga falta. La torre te da la hora antes de rodar para despegar si no la obtienes de otra fuente, y cualquier dependencia ATS te la da si la pides, como mínimo redondeada al minuto.",
+          "Para convertir, recuerda el horario oficial de España: la península, Baleares, Ceuta y Melilla están en UTC + 1 en invierno y UTC + 2 en verano; Canarias, una hora menos. El horario de verano va del último domingo de marzo al último domingo de octubre."
+        ],
+        "table": {
+          "caption": "Hora oficial de España respecto a UTC",
+          "head": ["Territorio", "Invierno", "Verano"],
+          "rows": [
+            ["Península, Baleares, Ceuta y Melilla", "UTC + 1", "UTC + 2"],
+            ["Canarias", "UTC", "UTC + 1"]
+          ],
+          "src": "SERA.3401; Directiva 2000/84/CE (horario de verano)"
+        },
+        "examples": [
+          {
+            "q": "Un día de julio quieres salir de calzos en Sabadell a las 10:30 hora local. ¿Qué hora pones en el plan de vuelo?",
+            "a": "En verano la península está en UTC + 2. 10:30 − 2 h = **08:30 UTC**. En la casilla 13 escribes la hora como 0830."
+          },
+          {
+            "q": "Un METAR de Lanzarote de enero lleva la hora 1500Z. ¿Qué hora local es?",
+            "a": "Canarias en invierno está en UTC, así que son las **15:00** locales."
+          },
+          {
+            "q": "Un NOTAM de Madrid es válido hasta las 2200 UTC de un día de noviembre. ¿Hasta qué hora local?",
+            "a": "En noviembre la península está en UTC + 1: 22:00 + 1 h = **23:00** locales."
+          }
+        ],
+        "figure": "calc:time",
+        "caption": "Calculadora de UTC, hora media local y hora oficial de la península, Baleares y Canarias."
+      }
+    ],
+    "numbers": [
+      "Noche: del final del crepúsculo civil vespertino al comienzo del matutino (centro del Sol 6° bajo el horizonte)",
+      "Techo: base de la capa más baja que cubre más de la mitad del cielo, por debajo de 20 000 ft (6000 m), medida como altura",
+      "Formación no estatal en espacio controlado: máximo 1 km (0,5 NM) lateral y longitudinal y 30 m (100 ft) vertical respecto al jefe",
+      "Alcance: aproximación por detrás en una línea a menos de 70° del plano de simetría del otro",
+      "Luces de navegación: roja izquierda y verde derecha de 110° cada una; blanca de cola de 140°",
+      "Alturas mínimas VFR: 1000 ft sobre el obstáculo más alto en 600 m sobre zonas congestionadas; 500 ft sobre el suelo, el agua o el obstáculo más alto en 150 m en el resto",
+      "España: entrenamiento de aterrizaje forzoso hasta 50 m (150 ft), a 150 m de personas, vehículos, embarcaciones y obstáculos (RD 1180/2018, art. 33)",
+      "Proyectiles rojos y verdes cada 10 s: estás dentro o a punto de entrar en una zona prohibida, restringida o peligrosa",
+      "Acuse de recibo en vuelo: de día alabeando (no en base ni en final); de noche, dos destellos de faros o luces de navegación",
+      "Acuse de recibo en tierra: de día, moviendo alerones o timón; de noche, dos destellos de faros o luces de navegación",
+      "Hora oficial: península UTC + 1 en invierno y UTC + 2 en verano; Canarias UTC y UTC + 1",
+      "Altitud de transición en España: 6000 ft (13 000 ft en Madrid y Málaga; 7000 ft en Granada; 8000 ft en Andorra-La Seu)"
+    ],
+    "traps": [
+      "El techo es una altura sobre el suelo, no una altitud, y solo cuenta una capa que cubra más de la mitad del cielo (BKN u OVC).",
+      "En convergencia cede quien tiene al otro a su derecha; quien lo tiene a su izquierda mantiene rumbo y velocidad.",
+      "En el alcance se adelanta por la derecha aunque se esté subiendo o bajando, y la obligación dura hasta haber pasado por completo.",
+      "Entre dos aeronaves que van a aterrizar tiene preferencia la más baja, pero un avión siempre cede al planeador aunque este vaya más alto.",
+      "La roja fija en vuelo es «ceda el paso y siga en el circuito», no «no aterrice». «Aeródromo peligroso, no aterrice» son destellos rojos, y la pirotecnia roja es «no aterrice por ahora».",
+      "Los destellos verdes en vuelo significan «regrese para aterrizar»: todavía no estás autorizado a aterrizar.",
+      "No se acusa recibo alabeando en los tramos de base y final.",
+      "En una zona peligrosa (D) no está prohibido entrar; en una prohibida (P) sí, y en una restringida (R) solo con las condiciones publicadas o con permiso.",
+      "Tener el derecho de paso no exime de evitar la colisión si el otro no maniobra.",
+      "Encender y apagar los faros repetidamente es señal de urgencia (necesito aterrizar, sin ayuda inmediata); las luces rojas lanzadas con cohetes son socorro.",
+      "Las 8 horas sin alcohol son una recomendación; la norma (SERA.2020) prohíbe actuar con la capacidad disminuida por cualquier sustancia psicoactiva."
+    ],
+    "spain": [
+      "El RD 1180/2018 completa SERA en España: alturas mínimas y sus excepciones (arts. 5 y 33), acrobacia, remolque, lanzamientos y paracaidismo (art. 7) y vuelo en formación (art. 9).",
+      "Acrobacia sin autorización de operaciones especializadas: solo sin sobrevolar ciudades, pueblos, urbanizaciones, lugares habitados ni concentraciones de personas.",
+      "Volar por debajo de las alturas de SERA.5005(f), fuera de los casos del art. 33 del RD 1180/2018, exige autorización de AESA.",
+      "SERA.3215: las luces que señalan los extremos de la aeronave en el área de movimiento se exigen «en la medida de lo posible» (AIP GEN 1.7).",
+      "SERA.3225: los globos no están obligados a virar a la izquierda ni a aterrizar y despegar contra el viento (AIP GEN 1.7).",
+      "Zonas LE-P, LE-R y LE-D publicadas en el AIP España, ENR 5.1."
+    ],
+    "sources": [
+      { "title": "Easy Access Rules for Standardised European Rules of the Air (SERA), EASA", "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera" },
+      { "title": "Reglamento de Ejecución (UE) 923/2012 (SERA), EUR-Lex", "url": "https://eur-lex.europa.eu/eli/reg_impl/2012/923/oj" },
+      { "title": "Real Decreto 1180/2018, texto consolidado (BOE)", "url": "https://www.boe.es/eli/es/rd/2018/09/21/1180/con" },
+      { "title": "AIP España GEN 1.7: diferencias con la OACI y SERA (ENAIRE)", "url": "https://aip.enaire.es/AIP/contenido_AIP/GEN/LE_GEN_1_7_en.html" },
+      { "title": "AIP España ENR 1.7: procedimientos de reglaje de altímetro (ENAIRE)", "url": "https://aip.enaire.es/AIP/contenido_AIP/ENR/LE_ENR_1_7_en.pdf" },
+      { "title": "AESA: autorización para vuelos por debajo de las alturas mínimas de SERA", "url": "https://www.seguridadaerea.gob.es/en/ambitos/operaciones-aereas/operaciones-de-trabajos-aereos/autorizacion-para-realizar-vuelos-por-debajo-de-alturas-minimas-sera" }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      { "label": "Lista antes del aterrizaje del PA-28", "href": "#/ac/pa28/flow/beforelanding" },
+      { "label": "Fraseología", "href": "#/licencias/fraseologia" }
+    ]
+  },
+  "questions": [
+    {
+      "id": "010.06.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "Según SERA, la noche comprende:",
+      "options": [
+        "Desde la puesta del sol hasta su salida",
+        "Desde 30 minutos después de la puesta del sol hasta 30 minutos antes de su salida",
+        "Desde el final del crepúsculo civil vespertino hasta el comienzo del crepúsculo civil matutino",
+        "Desde que el Sol está 12° bajo el horizonte por la tarde hasta que vuelve a estarlo por la mañana"
+      ],
+      "correct": 2,
+      "why": "SERA, art. 2: noche son las horas entre el final del crepúsculo civil vespertino y el comienzo del matutino. El crepúsculo civil acaba por la tarde, y empieza por la mañana, cuando el centro del disco solar está 6° por debajo del horizonte.",
+      "whyNot": [
+        "La puesta y la salida del sol no marcan la noche aeronáutica: falta el crepúsculo civil.",
+        "Los 30 minutos son una aproximación que usan algunos países, no la definición de SERA.",
+        null,
+        "12° corresponde al crepúsculo náutico; el civil usa 6°."
+      ],
+      "ref": "SERA, art. 2 (noche)"
+    },
+    {
+      "id": "010.06.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "El techo de nubes se define como:",
+      "options": [
+        "La altitud de la base de la capa de nubes más baja, sea cual sea su cobertura",
+        "La altura sobre el suelo o el agua de la base de la capa más baja, por debajo de 20 000 ft, que cubre más de la mitad del cielo",
+        "La altura de la base de cualquier capa SCT o superior por debajo de 10 000 ft",
+        "La altura de la cima de la capa de nubes más alta que cubre todo el cielo"
+      ],
+      "correct": 1,
+      "why": "SERA, art. 2: techo es la altura sobre el suelo o el agua de la base de la capa de nubes más baja por debajo de 6000 m (20 000 ft) que cubre más de la mitad del cielo, es decir, BKN u OVC.",
+      "whyNot": [
+        "Es una altura, no una altitud, y solo cuenta la capa que cubre más de la mitad del cielo.",
+        null,
+        "SCT cubre menos de la mitad del cielo y el límite es 20 000 ft, no 10 000 ft.",
+        "Se mide la base de la capa más baja, no la cima de la más alta."
+      ],
+      "ref": "SERA, art. 2 (techo de nubes)"
+    },
+    {
+      "id": "010.06.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué diferencia hay entre altitud y altura?",
+      "options": [
+        "La altitud se mide desde el nivel medio del mar; la altura, desde una referencia especificada como el terreno o el aeródromo",
+        "La altitud se mide con el altímetro en 1013,2 hPa; la altura, con el QNH",
+        "La altitud se mide desde el terreno; la altura, desde el nivel medio del mar",
+        "Ninguna: SERA las usa como sinónimos"
+      ],
+      "correct": 0,
+      "why": "SERA, art. 2: altitud es la distancia vertical medida desde el nivel medio del mar (MSL); altura, la medida desde una referencia especificada (el terreno, el aeródromo, el umbral).",
+      "whyNot": [
+        null,
+        "Con 1013,2 hPa se obtienen niveles de vuelo; el QNH es el reglaje que da altitud.",
+        "Es justo al revés.",
+        "SERA las define por separado y con referencias distintas."
+      ],
+      "ref": "SERA, art. 2 (altitud, altura)"
+    },
+    {
+      "id": "010.06.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué establece SERA.2020 sobre las sustancias psicoactivas?",
+      "options": [
+        "Que un piloto puede volar si su tasa de alcohol en sangre es inferior a 0,5 g/l",
+        "Que solo está prohibido volar en las 8 horas siguientes a beber alcohol",
+        "Que cualquier medicamento con receta puede tomarse sin restricciones antes de volar",
+        "Que nadie con funciones críticas para la seguridad las ejercerá bajo los efectos de una sustancia psicoactiva que disminuya su capacidad"
+      ],
+      "correct": 3,
+      "why": "SERA.2020 prohíbe al personal crítico para la seguridad, incluido el piloto, actuar bajo los efectos de cualquier sustancia psicoactiva que disminuya su capacidad, y prohíbe además su consumo problemático. No fija tasas ni plazos.",
+      "whyNot": [
+        "0,5 g/l es el límite general de tráfico por carretera; SERA no fija ninguna tasa.",
+        "Las 8 horas son una recomendación habitual, no la regla de SERA, que atiende a la capacidad disminuida.",
+        "Un medicamento puede disminuir la aptitud; MED.A.020 obliga a no volar si sospechas que tu aptitud ha disminuido.",
+        null
+      ],
+      "ref": "SERA.2020; MED.A.020"
+    },
+    {
+      "id": "010.06.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "Para un vuelo que sale de las inmediaciones del aeródromo, la preparación que exige SERA.2010 incluye:",
+      "options": [
+        "Solo comprobar los NOTAM del aeródromo de destino",
+        "Estudiar los informes y previsiones meteorológicas actualizados, el combustible necesario y un plan alternativo por si no se puede completar el vuelo",
+        "Presentar siempre un plan de vuelo ante una oficina ARO",
+        "Obtener autorización previa de la torre del aeródromo de destino"
+      ],
+      "correct": 1,
+      "why": "SERA.2010: antes de todo vuelo el piloto al mando se familiariza con la información disponible; si sale de las inmediaciones del aeródromo, estudia la meteorología actualizada, el combustible y un curso de acción alternativo.",
+      "whyNot": [
+        "Los NOTAM forman parte de la información, pero la norma exige mucho más que eso.",
+        null,
+        "El plan de vuelo es obligatorio solo en los casos de SERA.4001(b), no en todo vuelo de travesía.",
+        "No existe una autorización previa de la torre de destino como parte de la preparación."
+      ],
+      "ref": "SERA.2010(b)"
+    },
+    {
+      "id": "010.06.006",
+      "type": "regla",
+      "level": 2,
+      "q": "En espacio aéreo controlado, cada aeronave no estatal de una formación debe mantenerse respecto al jefe de formación a no más de:",
+      "options": [
+        "500 m lateral y longitudinalmente y 50 ft verticalmente",
+        "1 NM lateral y longitudinalmente y 500 ft verticalmente",
+        "1500 m lateral y longitudinalmente y 1000 ft verticalmente",
+        "1 km (0,5 NM) lateral y longitudinalmente y 30 m (100 ft) verticalmente"
+      ],
+      "correct": 3,
+      "why": "SERA.3135: la formación exige acuerdo previo entre los pilotos al mando y, en espacio controlado, un jefe designado, navegación y notificación como una sola aeronave y, para aeronaves no estatales, no más de 1 km (0,5 NM) lateral y longitudinal y 30 m (100 ft) vertical respecto al jefe.",
+      "whyNot": [
+        "Son cifras inventadas; SERA fija 1 km y 100 ft.",
+        "1 NM duplica la distancia lateral y 500 ft es una separación vertical, no una distancia de formación.",
+        "1500 m y 1000 ft son distancias a las nubes de la tabla VMC.",
+        null
+      ],
+      "ref": "SERA.3135"
+    },
+    {
+      "id": "010.06.007",
+      "type": "lectura",
+      "level": 2,
+      "figure": "svg:010-area-senales",
+      "q": "Al sobrevolar un aeródromo ves en el área de señales la señal F de la figura. ¿En qué dirección debes aterrizar?",
+      "options": [
+        "Paralelo al travesaño de la T",
+        "Desde el travesaño hacia el pie del palo",
+        "Paralelo al palo de la T, en dirección hacia el travesaño",
+        "Perpendicular al palo, por el lado de la torre"
+      ],
+      "correct": 2,
+      "why": "SERA, apéndice 1, 3.2.5: la T de aterrizaje blanca o naranja indica la dirección de aterrizaje y despegue, paralela al palo de la T y hacia el travesaño. Piensa en la T como un avión visto desde arriba: el travesaño son las alas y el avión vuela hacia ellas.",
+      "whyNot": [
+        "La dirección la marca el palo, no el travesaño.",
+        "Es el sentido contrario: se aterriza hacia el travesaño, no desde él.",
+        null,
+        "La T no indica una dirección perpendicular a su palo."
+      ],
+      "ref": "SERA, apéndice 1, 3.2.5"
+    },
+    {
+      "id": "010.06.008",
+      "type": "regla",
+      "level": 1,
+      "es": true,
+      "q": "En España, ¿qué condición permite hacer acrobacia sin una autorización de operaciones especializadas?",
+      "options": [
+        "No sobrevolar ciudades, pueblos, urbanizaciones, lugares habitados ni concentraciones de personas",
+        "Volar siempre por encima de FL100",
+        "Hacerla dentro de una CTR con autorización de la torre",
+        "Que los dos ocupantes lleven paracaídas"
+      ],
+      "correct": 0,
+      "why": "SERA.3130 remite a las condiciones de la autoridad. En España, el RD 1180/2018 (art. 7) permite sin autorización de operaciones especializadas los vuelos acrobáticos que no sobrevuelen ciudades, pueblos, urbanizaciones, lugares habitados ni concentraciones de personas.",
+      "whyNot": [
+        null,
+        "No hay una altitud mínima de FL100 para la acrobacia en el RD 1180/2018.",
+        "El RD no exige hacerla en una CTR; además, SERA pide información o autorización ATS cuando corresponda, no solo de la torre.",
+        "El paracaídas no es la condición que fija el RD para esta excepción."
+      ],
+      "ref": "SERA.3130; RD 1180/2018, art. 7",
+      "url": "https://www.boe.es/eli/es/rd/2018/09/21/1180/con"
+    },
+    {
+      "id": "010.06.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "Según SERA.3115, los lanzamientos de objetos o los rociados desde una aeronave en vuelo:",
+      "options": [
+        "Están prohibidos en todos los casos",
+        "Están permitidos sin restricciones por encima de 500 ft sobre el terreno",
+        "Solo requieren avisar al aeródromo más cercano",
+        "Solo se hacen conforme a la normativa aplicable y según la información, el asesoramiento o la autorización de la dependencia ATS"
+      ],
+      "correct": 3,
+      "why": "SERA.3115 no los prohíbe, pero los somete a la legislación de la Unión o nacional y a la información, el asesoramiento o la autorización ATS pertinentes. En España, sin licencia de operaciones especializadas solo se admiten el vaciado de combustible en emergencia y el lastre de globos y planeadores.",
+      "whyNot": [
+        "No hay una prohibición absoluta: existen fumigación, extinción de incendios o lastre de globos.",
+        "SERA no fija una altura a partir de la cual se puedan lanzar objetos libremente.",
+        "Un simple aviso al aeródromo no es lo que exige la norma.",
+        null
+      ],
+      "ref": "SERA.3115; RD 1180/2018, art. 7"
+    },
+    {
+      "id": "010.06.010",
+      "type": "concepto",
+      "level": 1,
+      "q": "Una zona peligrosa (LE-D) es un espacio aéreo:",
+      "options": [
+        "En el que está prohibido volar",
+        "En el que solo pueden volar aeronaves de Estado",
+        "En el que pueden desarrollarse, en horas determinadas, actividades peligrosas para el vuelo",
+        "Cuyo acceso requiere siempre autorización previa de AESA"
+      ],
+      "correct": 2,
+      "why": "Una zona peligrosa es un espacio de dimensiones definidas en el que pueden existir, en horas determinadas, actividades peligrosas para el vuelo. No prohíbe la entrada, pero debes conocer la actividad y evitarla si está activa.",
+      "whyNot": [
+        "Eso es una zona prohibida (LE-P).",
+        "No está reservada a aeronaves de Estado.",
+        null,
+        "No requiere autorización; las condiciones de acceso son propias de las zonas restringidas."
+      ],
+      "ref": "SERA.3145; AIP España ENR 5.1"
+    },
+    {
+      "id": "010.06.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿En qué tipo de zona solo puedes volar conforme a las condiciones publicadas o con permiso del Estado, sin que el vuelo esté prohibido del todo?",
+      "options": [
+        "Zona restringida (R)",
+        "Zona prohibida (P)",
+        "Zona peligrosa (D)",
+        "Zona de tránsito de aeródromo (ATZ)"
+      ],
+      "correct": 0,
+      "why": "SERA.3145: en una zona restringida el vuelo está limitado por condiciones especificadas (horario, altitud, autorización) y solo se puede volar conforme a ellas o con permiso del Estado.",
+      "whyNot": [
+        null,
+        "En la zona prohibida el vuelo está prohibido, salvo permiso del Estado.",
+        "La zona peligrosa solo avisa de una actividad; no impone condiciones de acceso.",
+        "La ATZ protege el tránsito de aeródromo; no es una zona P, R o D."
+      ],
+      "ref": "SERA.3145"
+    },
+    {
+      "id": "010.06.012",
+      "type": "regla",
+      "level": 1,
+      "q": "Dos aviones se aproximan de frente, o casi de frente, con peligro de colisión. ¿Qué deben hacer?",
+      "options": [
+        "El más alto asciende y el más bajo desciende",
+        "Ambos viran a la izquierda",
+        "Ambos viran a la derecha",
+        "Cede el paso el más rápido"
+      ],
+      "correct": 2,
+      "why": "SERA.3210: cuando dos aeronaves se aproximan de frente o casi de frente y hay peligro de colisión, ambas alteran su rumbo hacia la derecha.",
+      "whyNot": [
+        "SERA no resuelve este caso con cambios de altitud.",
+        "El viraje es a la derecha, como en la circulación por carretera continental.",
+        null,
+        "La velocidad no da ni quita preferencia."
+      ],
+      "ref": "SERA.3210(c)(1)"
+    },
+    {
+      "id": "010.06.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "Vuelas un PA-28 y ves un planeador que converge desde tu izquierda a tu misma altitud. ¿Quién cede el paso?",
+      "options": [
+        "El planeador, porque te tiene a su derecha",
+        "Tú, porque los aerodinos propulsados ceden el paso a los planeadores",
+        "Ninguno: ambos viran a la derecha",
+        "El que vuele más bajo"
+      ],
+      "correct": 1,
+      "why": "SERA.3210: en convergencia, la regla de la derecha cede ante las categorías. Los aerodinos propulsados ceden el paso a dirigibles, planeadores y globos, venga el planeador por donde venga.",
+      "whyNot": [
+        "La regla de la derecha solo decide entre aeronaves de la misma categoría.",
+        null,
+        "Virar ambos a la derecha es la regla para el encuentro de frente.",
+        "La altura decide entre aeronaves que aterrizan, no en una convergencia en ruta."
+      ],
+      "ref": "SERA.3210(c)(2)"
+    },
+    {
+      "id": "010.06.014",
+      "type": "concepto",
+      "level": 3,
+      "q": "Un Cessna 172 converge a la misma altitud con un avión que remolca un planeador y que se acerca por la izquierda del Cessna. ¿Quién cede el paso?",
+      "options": [
+        "El avión remolcador, porque tiene al Cessna a su derecha",
+        "El planeador remolcado, porque es el más maniobrable",
+        "Los dos aviones viran a la derecha",
+        "El Cessna, porque las aeronaves propulsadas ceden el paso a las que remolcan"
+      ],
+      "correct": 3,
+      "why": "SERA.3210(c)(2): las aeronaves propulsadas ceden el paso a las que se ve que remolcan otras aeronaves u objetos. Esa preferencia prevalece sobre la regla de la derecha.",
+      "whyNot": [
+        "La regla de la derecha no se aplica: la categoría de remolque da preferencia al remolcador.",
+        "El planeador remolcado no puede maniobrar libremente; forma un conjunto con el remolcador.",
+        "Virar ambos a la derecha es para el encuentro de frente.",
+        null
+      ],
+      "ref": "SERA.3210(c)(2)"
+    },
+    {
+      "id": "010.06.015",
+      "type": "regla",
+      "level": 2,
+      "q": "Se considera que una aeronave alcanza a otra cuando se le acerca por detrás en una línea que forma con su plano de simetría un ángulo inferior a:",
+      "options": ["70°", "45°", "110°", "90°"],
+      "correct": 0,
+      "why": "SERA.3210(c)(3): alcanza la aeronave que se acerca por detrás en una línea que forma menos de 70° con el plano de simetría de la otra. Coincide con el sector de 140° de la luz blanca de cola (70° a cada lado).",
+      "whyNot": [
+        null,
+        "45° no es el valor de SERA.",
+        "110° es el sector de cada luz lateral de navegación, medido desde el frente.",
+        "90° sería el través; el límite es 70°."
+      ],
+      "ref": "SERA.3210(c)(3)"
+    },
+    {
+      "id": "010.06.016",
+      "type": "concepto",
+      "level": 3,
+      "q": "Estás alcanzando a otro avión mientras ambos ascendéis. ¿Cómo debes adelantarlo?",
+      "options": [
+        "Por la izquierda, que es el lado del piloto al mando",
+        "Por encima, ya que vas ascendiendo",
+        "Por la derecha, y la obligación de apartarte dura hasta haberlo pasado y dejado atrás por completo",
+        "Por cualquier lado, siempre que mantengas 500 ft de separación vertical"
+      ],
+      "correct": 2,
+      "why": "SERA.3210(c)(3): la aeronave que alcanza, tanto si sube como si baja o va nivelada, se aparta virando a la derecha, y ningún cambio posterior de posiciones la libera de esa obligación hasta haber pasado y dejado atrás a la otra.",
+      "whyNot": [
+        "El lado del piloto no tiene nada que ver: se adelanta por la derecha.",
+        "Pasar por encima de la aeronave a la que se cede el paso es precisamente lo que debe evitarse.",
+        null,
+        "Solo un planeador que alcanza a otro planeador puede elegir lado."
+      ],
+      "ref": "SERA.3210(c)(3)"
+    },
+    {
+      "id": "010.06.017",
+      "type": "concepto",
+      "level": 3,
+      "q": "Dos avionetas se aproximan a un aeródromo no controlado para aterrizar: la A a 1500 ft en el tramo base y la B a 800 ft en final larga. ¿Qué regla se aplica?",
+      "options": [
+        "La B tiene preferencia por ir más baja, pero no puede usarla para cortar el paso a otra que esté en final ni para adelantarla",
+        "La A tiene preferencia por ir más alta y tener más energía",
+        "Tiene preferencia la que primero haya comunicado su posición por radio",
+        "Tiene preferencia la más rápida, para no alargar el circuito"
+      ],
+      "correct": 0,
+      "why": "SERA.3210(c)(4): entre aerodinos que se aproximan para aterrizar, el más alto cede al más bajo, pero el más bajo no puede aprovechar la regla para cortar el paso a otro en la fase final de la aproximación ni para adelantarlo.",
+      "whyNot": [
+        null,
+        "Es al revés: el más alto cede al más bajo.",
+        "Comunicar primero no da preferencia; la radio sirve para coordinarse, no cambia la regla.",
+        "La velocidad no da preferencia."
+      ],
+      "ref": "SERA.3210(c)(4)"
+    },
+    {
+      "id": "010.06.018",
+      "type": "concepto",
+      "level": 3,
+      "q": "En la aproximación a un aeródromo, un planeador vuela 300 ft por encima de tu PA-28; ambos vais a aterrizar. ¿Quién tiene preferencia?",
+      "options": [
+        "Tú, porque vas más bajo",
+        "El planeador, porque los aerodinos propulsados ceden siempre el paso a los planeadores",
+        "El que esté más cerca del umbral",
+        "El que haya entrado antes en el circuito"
+      ],
+      "correct": 1,
+      "why": "SERA.3210(c)(4): la regla del más bajo tiene una excepción expresa: los aerodinos propulsados ceden el paso a los planeadores, también en la aproximación final.",
+      "whyNot": [
+        "La regla del más bajo no se aplica frente a un planeador.",
+        null,
+        "La distancia al umbral no es el criterio de SERA.",
+        "El orden de entrada en el circuito no da preferencia sobre un planeador."
+      ],
+      "ref": "SERA.3210(c)(4)"
+    },
+    {
+      "id": "010.06.019",
+      "type": "concepto",
+      "level": 2,
+      "q": "Dos aeronaves ruedan una hacia la otra, de frente, por una calle de rodaje. ¿Qué establece SERA?",
+      "options": [
+        "Cede el paso la más pequeña",
+        "Ambas se desvían a la izquierda",
+        "Tiene preferencia la que rueda hacia la pista",
+        "Ambas se detienen o, cuando sea posible, se desvían a la derecha para pasar con holgura"
+      ],
+      "correct": 3,
+      "why": "SERA.3210(d)(1): en tierra, si dos aeronaves se aproximan de frente, ambas se detienen o, cuando sea posible, alteran su rumbo hacia la derecha para mantenerse a suficiente distancia.",
+      "whyNot": [
+        "El tamaño no da preferencia en SERA.",
+        "El desvío es a la derecha, igual que en vuelo.",
+        "Dirigirse a la pista no da preferencia en un encuentro de frente.",
+        null
+      ],
+      "ref": "SERA.3210(d)(1)"
+    },
+    {
+      "id": "010.06.020",
+      "type": "regla",
+      "level": 1,
+      "q": "En un aeródromo controlado, una aeronave que rueda llega a una barra de parada iluminada. Debe:",
+      "options": [
+        "Detenerse y esperar; puede seguir cuando la barra se apague",
+        "Cruzarla si la torre la ha autorizado a rodar hasta el punto de espera",
+        "Cruzarla con precaución si no hay tránsito en final",
+        "Detenerse solo de noche o con baja visibilidad"
+      ],
+      "correct": 0,
+      "why": "SERA.3210(d): la aeronave que rueda se detiene ante toda barra de parada iluminada y puede continuar cuando las luces se apagan.",
+      "whyNot": [
+        null,
+        "Una autorización de rodaje no autoriza a cruzar una barra de parada encendida.",
+        "Nunca se cruza una barra encendida por decisión propia.",
+        "La barra encendida obliga siempre, de día y de noche."
+      ],
+      "ref": "SERA.3210(d)"
+    },
+    {
+      "id": "010.06.021",
+      "type": "lectura",
+      "level": 3,
+      "q": "De noche, a tu misma altitud, ves por tu derecha una luz roja fija y una luz de destellos cuya marcación no cambia. ¿Qué ocurre y qué haces?",
+      "options": [
+        "Ves su ala derecha; tienes preferencia y mantienes rumbo y velocidad",
+        "Es una aeronave que se aleja delante de ti; no hay riesgo",
+        "Ves su costado izquierdo: cruza de tu derecha a tu izquierda en rumbo de colisión y debes cederle el paso virando a la derecha",
+        "Es una aeronave que viene de frente; ambos viráis a la izquierda"
+      ],
+      "correct": 2,
+      "why": "La roja fija es la luz de navegación del ala izquierda: ves su costado izquierdo, luego cruza hacia tu izquierda. Marcación constante significa rumbo de colisión. Como está a tu derecha, cedes tú (SERA.3210) y pasas por detrás virando a la derecha.",
+      "whyNot": [
+        "El ala derecha lleva la luz verde, no la roja.",
+        "Una aeronave que se aleja delante mostraría la luz blanca de cola.",
+        null,
+        "De frente verías la verde y la roja a la vez; y la regla sería virar a la derecha."
+      ],
+      "ref": "SERA.3210; SERA.3215"
+    },
+    {
+      "id": "010.06.022",
+      "type": "regla",
+      "level": 1,
+      "q": "La luz de navegación del extremo del ala derecha es:",
+      "options": [
+        "Verde, visible en un sector de 110° desde el frente hacia la derecha",
+        "Roja, visible en 110° desde el frente hacia la derecha",
+        "Blanca, visible en 140° hacia atrás",
+        "Verde, visible en 180° hacia la derecha"
+      ],
+      "correct": 0,
+      "why": "Las luces de navegación son roja en el ala izquierda y verde en la derecha, cada una con un sector de 110° desde el frente, y blanca en la cola con 140° hacia atrás.",
+      "whyNot": [
+        null,
+        "La roja va en el ala izquierda.",
+        "Esa es la luz de cola.",
+        "El color es correcto, pero el sector es de 110°, no de 180°."
+      ],
+      "ref": "SERA.3215; OACI, Anexo 6, apéndice de luces"
+    },
+    {
+      "id": "010.06.023",
+      "type": "concepto",
+      "level": 2,
+      "q": "Tu avión tiene luces anticolisión y vuelas de día con buena visibilidad. Según SERA.3215:",
+      "options": [
+        "Debes llevarlas apagadas de día para no gastar batería",
+        "Solo debes encenderlas en espacio aéreo controlado",
+        "Solo debes encenderlas por debajo de 1000 ft sobre el terreno",
+        "Debes llevarlas encendidas también de día, aunque puedes apagarlas o atenuarlas si deslumbran o te perjudican"
+      ],
+      "correct": 3,
+      "why": "SERA.3215(c) y (e): la aeronave equipada con luces anticolisión las muestra también fuera del periodo nocturno; el piloto puede apagar o atenuar las de destellos si afectan a su tarea o pueden deslumbrar a un observador exterior.",
+      "whyNot": [
+        "La norma exige llevarlas encendidas si están instaladas.",
+        "La obligación no depende de la clase de espacio aéreo.",
+        "No hay un límite de altura para esta obligación.",
+        null
+      ],
+      "ref": "SERA.3215(c), (e)"
+    },
+    {
+      "id": "010.06.024",
+      "type": "regla",
+      "level": 2,
+      "q": "Para practicar vuelo simulado por instrumentos con capota, SERA exige:",
+      "options": [
+        "Un instructor de vuelo instrumental a bordo",
+        "Doble mando completamente operativo y un piloto cualificado como piloto de seguridad en un puesto de pilotaje",
+        "Volar en espacio aéreo controlado con plan de vuelo IFR",
+        "Que la aeronave esté certificada para vuelo IFR"
+      ],
+      "correct": 1,
+      "why": "SERA.3220: doble mando completamente operativo y un piloto cualificado en un puesto de pilotaje como piloto de seguridad, con visión adecuada hacia delante y a los lados o ayudado por un observador competente.",
+      "whyNot": [
+        "Basta un piloto cualificado como piloto de seguridad; no tiene que ser instructor.",
+        null,
+        "No se exige espacio controlado ni plan IFR.",
+        "No se exige certificación IFR de la aeronave."
+      ],
+      "ref": "SERA.3220"
+    },
+    {
+      "id": "010.06.025",
+      "type": "regla",
+      "level": 1,
+      "q": "Salvo indicación en contrario o instrucción del ATC, al aproximarte para aterrizar y después de despegar los virajes se hacen:",
+      "options": [
+        "A la derecha",
+        "Hacia el lado de la torre",
+        "A la izquierda",
+        "Hacia el lado contrario al viento cruzado"
+      ],
+      "correct": 2,
+      "why": "SERA.3225(c): salvo los globos, todas las aeronaves hacen los virajes a la izquierda al aproximarse para aterrizar y después de despegar, salvo que se indique otra cosa o lo ordene el ATC.",
+      "whyNot": [
+        "El circuito por la derecha solo se hace si se publica o se señala (flecha en el área de señales).",
+        "La posición de la torre no determina el sentido del circuito.",
+        null,
+        "El viento cruzado no decide el sentido de los virajes."
+      ],
+      "ref": "SERA.3225(c)"
+    },
+    {
+      "id": "010.06.026",
+      "type": "regla",
+      "level": 2,
+      "q": "En vuelo, la torre dirige a tu aeronave una luz roja fija. Significa:",
+      "options": [
+        "No aterrice: aeródromo peligroso",
+        "Ceda el paso a otras aeronaves y siga en el circuito",
+        "A pesar de las instrucciones anteriores, no aterrice por ahora",
+        "Alto"
+      ],
+      "correct": 1,
+      "why": "SERA, apéndice 1, tabla AP1-1: la roja fija en vuelo significa «ceda el paso a otras aeronaves y siga en el circuito»; en tierra, «alto».",
+      "whyNot": [
+        "«Aeródromo peligroso, no aterrice» son destellos rojos.",
+        null,
+        "Esa es la pirotecnia roja.",
+        "«Alto» es el significado de la roja fija para una aeronave en tierra."
+      ],
+      "ref": "SERA, apéndice 1, tabla AP1-1"
+    },
+    {
+      "id": "010.06.027",
+      "type": "regla",
+      "level": 1,
+      "q": "Estás en el circuito de un aeródromo controlado con fallo de radio y la torre te envía una serie de destellos verdes. Significa:",
+      "options": [
+        "Autorizado a aterrizar",
+        "Aterrice en este aeródromo y diríjase a la plataforma",
+        "Autorizado a rodar",
+        "Regrese para aterrizar; la autorización de aterrizaje se dará después"
+      ],
+      "correct": 3,
+      "why": "SERA, apéndice 1: los destellos verdes en vuelo significan «regrese para aterrizar»; la autorización de aterrizaje llegará después, normalmente con una verde fija.",
+      "whyNot": [
+        "Autorizado a aterrizar es la verde fija.",
+        "Eso son los destellos blancos en vuelo.",
+        "Autorizado a rodar es el significado de los destellos verdes en tierra.",
+        null
+      ],
+      "ref": "SERA, apéndice 1, tabla AP1-1"
+    },
+    {
+      "id": "010.06.028",
+      "type": "lectura",
+      "level": 2,
+      "figure": "svg:010-area-senales",
+      "q": "Al sobrevolar un aeródromo ves en el área de señales la señal A de la figura (panel rojo con dos diagonales amarillas). ¿Qué significa?",
+      "options": [
+        "Precauciones especiales en la aproximación y el aterrizaje",
+        "Prohibido aterrizar; la prohibición puede prolongarse",
+        "Hay planeadores volando en el aeródromo",
+        "Circuito por la derecha"
+      ],
+      "correct": 1,
+      "why": "SERA, apéndice 1, 3.2.1: el panel cuadrado rojo con dos diagonales amarillas significa que está prohibido aterrizar y que la prohibición puede prolongarse.",
+      "whyNot": [
+        "Las precauciones especiales se indican con una sola diagonal (señal B).",
+        null,
+        "Los planeadores se indican con una doble cruz blanca.",
+        "El circuito por la derecha se indica con una flecha (señal G)."
+      ],
+      "ref": "SERA, apéndice 1, 3.2.1"
+    },
+    {
+      "id": "010.06.029",
+      "type": "lectura",
+      "level": 3,
+      "figure": "svg:010-area-senales",
+      "q": "¿Qué indica la señal D de la figura, una pesa blanca con una barra negra en cada círculo?",
+      "options": [
+        "Aterrizar, despegar y rodar solo por pistas y calles de rodaje",
+        "Prohibido rodar fuera de la plataforma",
+        "Pista cerrada al tránsito",
+        "Aterrizar y despegar solo en pistas; las demás maniobras pueden hacerse fuera de pistas y calles de rodaje"
+      ],
+      "correct": 3,
+      "why": "SERA, apéndice 1, 3.2.3(b): la pesa con una barra negra perpendicular al eje en cada círculo obliga a aterrizar y despegar solo en pistas, pero el resto de maniobras no tiene por qué limitarse a pistas y calles.",
+      "whyNot": [
+        "Ese es el significado de la pesa blanca sin barras (señal C).",
+        "No existe esa señal con ese significado.",
+        "La zona no apta se indica con cruces de un solo color (señal E).",
+        null
+      ],
+      "ref": "SERA, apéndice 1, 3.2.3"
+    },
+    {
+      "id": "010.06.030",
+      "type": "regla",
+      "level": 3,
+      "q": "De día, ¿en qué tramos del circuito no debes acusar recibo de una señal luminosa alabeando?",
+      "options": [
+        "En el tramo de viento en cola y en el de base",
+        "En los tramos de base y final",
+        "Solo en la final corta",
+        "En ninguno: de día siempre se alabea"
+      ],
+      "correct": 1,
+      "why": "SERA, apéndice 1, 3.1.2: en vuelo y de día se acusa recibo alabeando, salvo en los tramos de base y final, donde alabear puede comprometer el control cerca del suelo.",
+      "whyNot": [
+        "En viento en cola sí puedes alabear para acusar recibo.",
+        null,
+        "La excepción incluye también el tramo base.",
+        "La propia norma excluye base y final."
+      ],
+      "ref": "SERA, apéndice 1, 3.1.2"
+    },
+    {
+      "id": "010.06.031",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un piloto enciende y apaga repetidamente los faros de aterrizaje, de forma distinta a unas luces de destellos. Según el apéndice 1 de SERA, indica:",
+      "options": [
+        "Que está en peligro grave e inminente y necesita ayuda inmediata",
+        "Que ha sido interceptado y obedece",
+        "Que tiene dificultades que le obligan a aterrizar, pero no necesita asistencia inmediata",
+        "Que acusa recibo de una señal luminosa de la torre"
+      ],
+      "correct": 2,
+      "why": "SERA, apéndice 1, 1.2: encender y apagar repetidamente los faros de aterrizaje o las luces de navegación es una señal de urgencia: la aeronave tiene dificultades que la obligan a aterrizar, sin necesitar ayuda inmediata.",
+      "whyNot": [
+        "El socorro se señala con MAYDAY, SOS o luces rojas lanzadas con cohetes o bengalas.",
+        "La respuesta a una interceptación es alabear y destellar las luces de navegación a intervalos irregulares, y seguir al interceptor.",
+        null,
+        "El acuse de recibo nocturno son solo dos destellos, no un encendido repetido."
+      ],
+      "ref": "SERA, apéndice 1, 1.2"
+    },
+    {
+      "id": "010.06.032",
+      "type": "regla",
+      "level": 1,
+      "q": "Desde tierra se lanzan proyectiles a intervalos de 10 segundos que estallan en luces rojas y verdes. Para el piloto significa:",
+      "options": [
+        "Que vuela dentro, o está a punto de entrar, en una zona restringida, prohibida o peligrosa y debe tomar medidas",
+        "Que debe aterrizar inmediatamente en el aeródromo más próximo",
+        "Que hay una aeronave en peligro en la zona",
+        "Que el aeródromo está cerrado por obras"
+      ],
+      "correct": 0,
+      "why": "SERA, apéndice 1, 2.1: la serie de proyectiles lanzados cada 10 segundos que muestran luces o estrellas rojas y verdes avisa a una aeronave no autorizada de que está dentro, o a punto de entrar, en una zona restringida, prohibida o peligrosa.",
+      "whyNot": [
+        null,
+        "No es una orden de aterrizar.",
+        "Una aeronave en peligro dispararía luces rojas, no rojas y verdes desde tierra.",
+        "El cierre de un aeródromo se indica con señales en el área de señales y por NOTAM."
+      ],
+      "ref": "SERA, apéndice 1, 2.1"
+    },
+    {
+      "id": "010.06.033",
+      "type": "calculo",
+      "level": 2,
+      "es": true,
+      "q": "Un día de agosto quieres salir de calzos en Valencia a las 09:45 hora local. ¿Qué hora pones en el plan de vuelo?",
+      "options": ["0845", "0745", "1145", "0945"],
+      "correct": 1,
+      "why": "En verano la península está en UTC + 2. 09:45 − 2 h = 07:45 UTC, que se escribe 0745. Los planes de vuelo van siempre en UTC (SERA.3401).",
+      "whyNot": [
+        "Restas solo una hora: eso valdría en invierno.",
+        null,
+        "Sumas en lugar de restar: la hora local va por delante de UTC.",
+        "Es la hora local, no UTC."
+      ],
+      "ref": "SERA.3401; horario oficial de España"
+    },
+    {
+      "id": "010.06.034",
+      "type": "calculo",
+      "level": 2,
+      "es": true,
+      "q": "Un NOTAM de Tenerife Norte es válido hasta las 1800 UTC de un día de diciembre. ¿Hasta qué hora local de Tenerife es válido?",
+      "options": ["19:00", "17:00", "20:00", "18:00"],
+      "correct": 3,
+      "why": "En invierno Canarias está en UTC + 0, así que las 1800 UTC son las 18:00 locales.",
+      "whyNot": [
+        "Aplicas el horario de invierno de la península (UTC + 1).",
+        "Restas una hora en lugar de dejarla igual.",
+        "Aplicas el horario de verano de la península (UTC + 2).",
+        null
+      ],
+      "ref": "SERA.3401; horario oficial de España"
+    }
+  ],
+  "cards": [
+    { "id": "c.010.06.01", "front": "Noche según SERA", "back": "Del final del crepúsculo civil vespertino al comienzo del matutino (centro del Sol 6° bajo el horizonte)" },
+    { "id": "c.010.06.02", "front": "Techo de nubes", "back": "Altura de la base de la capa más baja, por debajo de 20 000 ft, que cubre más de la mitad del cielo" },
+    { "id": "c.010.06.03", "front": "Formación en espacio controlado: distancia máxima al jefe", "back": "1 km (0,5 NM) lateral y longitudinal y 30 m (100 ft) vertical" },
+    { "id": "c.010.06.04", "front": "Ángulo que define el alcance", "back": "Aproximación por detrás a menos de 70° del plano de simetría del otro" },
+    { "id": "c.010.06.05", "front": "Convergencia entre dos aviones: quién cede", "back": "El que tiene al otro a su derecha" },
+    { "id": "c.010.06.06", "front": "Orden de preferencia por categorías", "back": "Globo, planeador, dirigible, aerodino propulsado; la aeronave que remolca, por delante de las propulsadas" },
+    { "id": "c.010.06.07", "front": "Dos aviones que van a aterrizar: quién tiene preferencia", "back": "El más bajo, sin cortar el paso al que está en final; frente a un planeador, cede siempre el avión" },
+    { "id": "c.010.06.08", "front": "Luces de navegación: colores y sectores", "back": "Roja izquierda y verde derecha de 110°; blanca de cola de 140°" },
+    { "id": "c.010.06.09", "front": "Verde fija de la torre", "back": "En vuelo: autorizado a aterrizar. En tierra: autorizado a despegar" },
+    { "id": "c.010.06.10", "front": "Roja fija de la torre", "back": "En vuelo: ceda el paso y siga en el circuito. En tierra: alto" },
+    { "id": "c.010.06.11", "front": "Destellos blancos de la torre", "back": "En vuelo: aterrice aquí y vaya a la plataforma. En tierra: regrese al punto de partida" },
+    { "id": "c.010.06.12", "front": "Acuse de recibo de una señal luminosa en vuelo", "back": "De día, alabeando (no en base ni en final); de noche, dos destellos de faros o luces de navegación" },
+    { "id": "c.010.06.13", "front": "Proyectiles rojos y verdes cada 10 s", "back": "Estás dentro o a punto de entrar en una zona prohibida, restringida o peligrosa" },
+    { "id": "c.010.06.14", "front": "Hora oficial de la península respecto a UTC", "back": "UTC + 1 en invierno y UTC + 2 en verano (Canarias, una hora menos)" }
+  ]
+}

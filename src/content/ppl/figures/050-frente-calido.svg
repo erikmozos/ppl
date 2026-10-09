@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340">
+  <title>Corte vertical de un frente cálido: superficie frontal suave y secuencia de nubes Ci, Cs, As, Ns y St</title>
+  <defs>
+    <marker id="050-fc-flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+    <marker id="050-fc-flecha-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker>
+  </defs>
+  <rect x="0" y="0" width="640" height="340" class="sky"/>
+  <rect x="0" y="270" width="640" height="70" class="ground"/>
+  <!-- nubes -->
+  <path d="M122 262 C110 230 128 200 150 190 C150 160 175 132 205 128 C220 104 262 98 285 112 C305 104 330 112 336 130 C352 138 352 160 336 168 L332 236 C300 240 200 246 160 252 C140 256 128 262 122 262 Z" class="soft"/>
+  <path d="M318 142 C340 128 380 126 410 130 C440 126 470 132 482 142 C470 156 440 160 410 158 C380 162 340 162 318 156 Z" class="soft"/>
+  <path d="M452 104 C480 94 530 92 566 98 C550 108 500 112 452 110 Z" class="soft"/>
+  <path d="M548 66 C570 56 590 60 612 52" class="ln2"/>
+  <path d="M556 76 C580 68 600 72 624 64" class="ln2"/>
+  <path d="M540 58 C556 50 568 52 580 46" class="ln2"/>
+  <ellipse cx="236" cy="258" rx="26" ry="6" class="soft"/>
+  <ellipse cx="292" cy="254" rx="22" ry="5" class="soft"/>
+  <!-- lluvia -->
+  <g class="ac-ln">
+    <line x1="150" y1="256" x2="146" y2="268"/><line x1="166" y1="252" x2="162" y2="266"/>
+    <line x1="182" y1="250" x2="178" y2="266"/><line x1="200" y1="248" x2="196" y2="264"/>
+    <line x1="266" y1="244" x2="262" y2="262"/><line x1="314" y1="240" x2="310" y2="262"/>
+    <line x1="326" y1="238" x2="322" y2="256"/>
+  </g>
+  <!-- superficie frontal -->
+  <path d="M130 270 L620 96" class="wa-ln thick"/>
+  <path d="M120 270 A10 10 0 0 1 140 270 Z" class="wa-fill"/>
+  <!-- ascenso del aire cálido -->
+  <path d="M60 236 C120 214 200 186 300 150" class="wa-ln dash" marker-end="url(#050-fc-flecha-w)"/>
+  <!-- movimiento -->
+  <line x1="40" y1="30" x2="150" y2="30" class="ln" marker-end="url(#050-fc-flecha)"/>
+  <text x="40" y="20" class="tx2">movimiento del frente</text>
+  <!-- rótulos -->
+  <text x="220" y="185" class="tx b" text-anchor="middle">Ns</text>
+  <text x="400" y="149" class="tx b" text-anchor="middle">As</text>
+  <text x="508" y="124" class="tx b" text-anchor="middle">Cs</text>
+  <text x="596" y="40" class="tx b" text-anchor="middle">Ci</text>
+  <text x="40" y="90" class="txw b">aire cálido</text>
+  <text x="40" y="108" class="tx2">sube despacio sobre la cuña fría</text>
+  <text x="520" y="226" class="txa b" text-anchor="middle">aire frío</text>
+  <text x="430" y="196" class="txw">superficie frontal suave (≈ 1:150)</text>
+  <text x="352" y="226" class="tx2">St, niebla frontal</text>
+  <text x="352" y="242" class="tx2">bajo la lluvia</text>
+  <text x="150" y="232" class="tx2">lluvia continua</text>
+  <!-- observadores -->
+  <g>
+    <circle cx="70" cy="295" r="11" class="bg-fill"/><circle cx="70" cy="295" r="11" class="ln"/>
+    <text x="70" y="300" class="tx b" text-anchor="middle">D</text>
+    <circle cx="230" cy="295" r="11" class="bg-fill"/><circle cx="230" cy="295" r="11" class="ln"/>
+    <text x="230" y="300" class="tx b" text-anchor="middle">C</text>
+    <circle cx="400" cy="295" r="11" class="bg-fill"/><circle cx="400" cy="295" r="11" class="ln"/>
+    <text x="400" y="300" class="tx b" text-anchor="middle">B</text>
+    <circle cx="590" cy="295" r="11" class="bg-fill"/><circle cx="590" cy="295" r="11" class="ln"/>
+    <text x="590" y="300" class="tx b" text-anchor="middle">A</text>
+  </g>
+  <text x="112" y="264" class="tx2" text-anchor="end">frente en superficie</text>
+  <text x="320" y="328" class="tx2" text-anchor="middle">A, B, C, D: observadores en superficie</text>
+</svg>

@@ -1,0 +1,314 @@
+{
+  "lesson": {
+    "id": "080.01",
+    "title": "Leyes y definiciones",
+    "summary": "Unidades y conversiones, las tres leyes de Newton, continuidad, Bernoulli y Venturi, presión estática, dinámica y total, densidad del aire e IAS frente a TAS.",
+    "objectives": [
+      "Convertir entre las unidades del examen (kt, m/s, ft, m, hPa, kg y N)",
+      "Aplicar las leyes de Newton al vuelo recto y nivelado, al ascenso y al viraje",
+      "Explicar con la continuidad y Bernoulli por qué baja la presión donde el aire se acelera",
+      "Distinguir presión estática, dinámica y total y saber qué mide el anemómetro",
+      "Razonar cómo cambian la densidad, la IAS y la TAS con la altitud y la temperatura"
+    ],
+    "sections": [
+      {
+        "title": "Unidades y conversiones",
+        "text": [
+          "Principios de vuelo mezcla dos mundos: la física se escribe en el **Sistema Internacional** (metros, segundos, kilogramos, newtons, pascales) y la cabina habla en **unidades aeronáuticas** (nudos, pies, hectopascales). En el examen tendrás que pasar de unas a otras sin dudar, y casi todos los errores de cálculo salen de aquí.",
+          "Distingue **masa** y **peso**. La masa (kg) es la cantidad de materia y no cambia; el peso es la fuerza con que la gravedad tira de esa masa, W = m · g, y se mide en newtons (N). Cuando el manual habla de «masa máxima al despegue» se refiere a kilos; cuando una fórmula pide W o L, quiere newtons. Con g = 9,81 m/s², 1 kg pesa 9,81 N."
+        ],
+        "table": {
+          "caption": "Conversiones que aparecen en el examen",
+          "head": ["Magnitud", "Unidad aeronáutica", "Equivalencia"],
+          "rows": [
+            ["Velocidad", "1 kt (1 NM por hora)", "1,852 km/h = 0,514 m/s"],
+            ["Distancia", "1 NM", "1852 m"],
+            ["Altura", "1 ft", "0,3048 m (1 m = 3,28 ft)"],
+            ["Velocidad vertical", "100 ft/min", "0,51 m/s"],
+            ["Presión", "1 hPa = 1 mbar", "100 Pa"],
+            ["Presión", "1 inHg", "33,86 hPa"],
+            ["Masa", "1 lb", "0,4536 kg"],
+            ["Fuerza (peso)", "1 kg de masa", "9,81 N"]
+          ],
+          "src": "Sistema Internacional; OACI, Anexo 5"
+        },
+        "examples": [
+          { "q": "Pasa 100 kt a m/s.", "a": "100 × 0,514 = 51,4 m/s. Al revés: m/s ÷ 0,514 (o × 1,944) da nudos." },
+          { "q": "Un avión tiene una masa de 1100 kg. ¿Cuánto pesa?", "a": "W = m · g = 1100 × 9,81 = 10 791 N, unos 10,8 kN. En vuelo recto y nivelado el ala tiene que producir esa misma sustentación." }
+        ]
+      },
+      {
+        "title": "Las tres leyes de Newton aplicadas al vuelo",
+        "text": [
+          "**Primera ley (inercia).** Un cuerpo sigue en reposo o en movimiento rectilíneo uniforme mientras la resultante de las fuerzas que actúan sobre él sea cero. Por eso, en vuelo recto, a velocidad y altitud constantes, la sustentación iguala al peso y la tracción iguala a la resistencia. Lo mismo vale para un ascenso o un descenso **rectilíneos a velocidad constante**: también ahí la resultante es nula. Para subir no hace falta «sobrante» de fuerza hacia arriba; hace falta que la tracción cubra la resistencia y además la componente del peso a lo largo de la trayectoria.",
+          "**Segunda ley.** F = m · a: para cambiar la velocidad o la dirección hace falta una fuerza neta. Acelerar en la carrera de despegue exige que la tracción supere a la resistencia y al rozamiento de las ruedas; virar exige una fuerza hacia el centro del viraje, que proporciona la componente horizontal de la sustentación al inclinar las alas.",
+          "**Tercera ley (acción y reacción).** Si un cuerpo ejerce una fuerza sobre otro, recibe una igual y de sentido contrario. El ala desvía hacia abajo una gran masa de aire (downwash) y el aire empuja el ala hacia arriba; la hélice acelera aire hacia atrás y el aire empuja la hélice hacia delante. La explicación de Newton y la de Bernoulli no compiten: son dos formas de describir el mismo fenómeno."
+        ],
+        "examples": [
+          { "q": "Un avión de 1000 kg en la carrera de despegue tiene una tracción de 2500 N y una resistencia total (aerodinámica y de rodadura) de 1000 N. ¿Qué aceleración lleva?", "a": "Fuerza neta = 2500 − 1000 = 1500 N. a = F / m = 1500 / 1000 = 1,5 m/s²." }
+        ]
+      },
+      {
+        "title": "Presión estática, dinámica y total",
+        "text": [
+          "La **presión estática** (p) es la que ejerce el aire en todas direcciones por el simple hecho de estar ahí, se mueva o no. Es la que miden las tomas estáticas del avión y la que usa el altímetro.",
+          "La **presión dinámica** (q) es la energía del movimiento del aire por unidad de volumen. Solo «aparece» cuando detienes el aire contra una superficie, y vale q = ½ · ρ · V². Depende de la densidad y del cuadrado de la velocidad: a doble velocidad, cuádruple presión dinámica.",
+          "La **presión total** o de remanso es la suma de las dos: la que se mide donde el aire queda frenado del todo, como en la boca del tubo pitot o en el punto de remanso del borde de ataque.",
+          "El **anemómetro** compara la presión total del pitot con la estática de las tomas: la diferencia es la presión dinámica, y la esfera está graduada en nudos para la densidad de la atmósfera estándar a nivel del mar. Por eso la IAS es, en la práctica, una medida de q, que es justo lo que «siente» el ala."
+        ],
+        "formulas": [
+          { "f": "q = ½ · ρ · V²", "note": "ρ en kg/m³ y V en m/s dan q en pascales (Pa)." },
+          { "f": "p total = p estática + q", "note": "Pitot: presión total. Tomas estáticas: presión estática. Anemómetro: la diferencia." }
+        ],
+        "examples": [
+          { "q": "Presión dinámica a 100 kt a nivel del mar en atmósfera estándar.", "a": "V = 51,4 m/s; q = 0,5 × 1,225 × 51,4² = 0,6125 × 2642 ≈ 1618 Pa ≈ 16 hPa. Es poco comparado con los 1013 hPa de presión estática, pero sobre 16 m² de ala da fuerzas de toneladas." }
+        ]
+      },
+      {
+        "title": "Continuidad, Bernoulli y Venturi",
+        "text": [
+          "A las velocidades de una avioneta el aire se comporta como un fluido **incompresible**: su densidad apenas cambia al acelerarlo. La **ecuación de continuidad** dice entonces que el caudal que entra en un tubo de corriente es el que sale: A · V = constante. Si la sección se estrecha a la mitad, la velocidad se duplica.",
+          "**Bernoulli** expresa la conservación de la energía a lo largo de una línea de corriente, sin rozamiento ni aporte de energía: p + ½ · ρ · V² = constante. La suma de la presión estática y la dinámica, es decir, la presión total, no cambia. Si el aire se acelera, su presión estática baja; si se frena, sube.",
+          "El **tubo de Venturi** une las dos ideas: en el estrechamiento (garganta) la velocidad aumenta y la presión estática disminuye. Lo encontrarás en el carburador (la depresión de la garganta aspira la gasolina, y la expansión enfría el aire: hielo de carburador) y en los venturis que movían los instrumentos giroscópicos en aviones antiguos. Sobre el extradós de un ala pasa algo parecido: las líneas de corriente se juntan, el aire se acelera y la presión estática baja.",
+          "Cuidado con la explicación del **«tiempo de tránsito igual»** (el aire de arriba tiene que reunirse en el borde de salida con el de abajo y por eso corre más): es falsa. El aire del extradós llega antes que el del intradós. La aceleración se debe a la forma del perfil y al ángulo de ataque, no a ninguna cita en el borde de salida."
+        ],
+        "formulas": [
+          { "f": "A₁ · V₁ = A₂ · V₂", "note": "Continuidad para flujo incompresible." },
+          { "f": "p₁ + ½ρV₁² = p₂ + ½ρV₂²", "note": "Bernoulli: la presión total se conserva a lo largo de una línea de corriente." }
+        ],
+        "examples": [
+          { "q": "Un Venturi pasa de 2 m² de sección a 1 m². Si el aire entra a 30 m/s, ¿a qué velocidad pasa por la garganta y cuánto baja la presión estática (ρ = 1,225 kg/m³)?", "a": "Continuidad: V₂ = 30 × 2 / 1 = 60 m/s. Bernoulli: Δp = ½ρ(V₂² − V₁²) = 0,6125 × (3600 − 900) = 0,6125 × 2700 ≈ 1654 Pa, unos 16,5 hPa menos en la garganta." }
+        ]
+      },
+      {
+        "title": "La densidad del aire",
+        "text": [
+          "La densidad ρ es la masa de aire por unidad de volumen. Sigue la ecuación de los gases: ρ = p / (R · T). Baja cuando **baja la presión** (al subir) y cuando **sube la temperatura**. La **humedad** también la reduce, porque el vapor de agua pesa menos que el aire seco al que desplaza. Aire **alto, caliente y húmedo** es aire poco denso: menos sustentación y menos tracción a la misma TAS, y un motor de pistón que rinde menos.",
+          "En la **atmósfera estándar** (ISA de la OACI) el nivel del mar tiene 1013,25 hPa, 15 °C y 1,225 kg/m³, y la temperatura baja 6,5 °C por kilómetro (unos 2 °C por cada 1000 ft) hasta los 11 km. La relación entre la densidad real y la del nivel del mar se llama **densidad relativa** σ."
+        ],
+        "table": {
+          "caption": "Densidad en la atmósfera estándar",
+          "head": ["Altitud", "Temperatura ISA", "ρ (kg/m³)", "σ = ρ / ρ₀"],
+          "rows": [
+            ["0 ft", "15 °C", "1,225", "1,000"],
+            ["4000 ft", "7 °C", "1,088", "0,888"],
+            ["8000 ft", "−1 °C", "0,963", "0,786"],
+            ["10 000 ft", "−5 °C", "0,905", "0,738"]
+          ],
+          "src": "OACI, Doc 7488 (Atmósfera tipo)"
+        }
+      },
+      {
+        "title": "IAS, CAS, EAS y TAS",
+        "text": [
+          "La **IAS** (velocidad indicada) es lo que marca el anemómetro. Corrigiendo los errores del instrumento y de posición de las tomas (la estática no mide exactamente la presión del aire libre, sobre todo con ángulo de ataque alto) se obtiene la **CAS** (velocidad calibrada); el POH trae la tabla de corrección. Corrigiendo además la compresibilidad del aire en el pitot se obtiene la **EAS** (equivalente), una corrección despreciable en una avioneta. La **TAS** (velocidad verdadera) es la velocidad real del avión respecto al aire.",
+          "Como el anemómetro mide presión dinámica y esta depende de ρ · V², a igual IAS el avión va más rápido respecto al aire cuanto menos denso es este: **TAS = EAS / √σ**. A igual IAS, la TAS aumenta con la altitud y con la temperatura. El ala responde a la presión dinámica, así que los fenómenos aerodinámicos (la pérdida, la mejor velocidad de planeo) ocurren a la misma IAS en altura, aunque a más TAS. La navegación, en cambio, necesita la TAS.",
+          "Regla rápida: la TAS supera a la IAS en **un 2 % por cada 1000 ft** de altitud de presión. Es una aproximación que se queda algo alta: con la densidad real la diferencia ronda el 1,5–1,7 % por cada 1000 ft en las altitudes de una avioneta. Para el examen vale la regla si no te dan datos; si te dan σ o una tabla, calcula."
+        ],
+        "formulas": [
+          { "f": "TAS = EAS / √σ", "note": "En una avioneta EAS ≈ CAS ≈ IAS corregida por el error de posición." },
+          { "f": "TAS ≈ IAS × (1 + 0,02 × altitud en miles de ft)", "note": "Regla práctica." }
+        ],
+        "examples": [
+          { "q": "Vuelas a 100 kt de CAS a 10 000 ft en atmósfera estándar. ¿Qué TAS llevas?", "a": "σ = 0,738; √σ = 0,859. TAS = 100 / 0,859 ≈ 116 kt. La regla del 2 % daría 120 kt: sirve para estimar, pero se pasa." },
+          { "q": "El mismo avión entra en pérdida a 50 kt de IAS a nivel del mar. ¿A qué IAS entra en pérdida a 8000 ft? ¿Y en TAS?", "a": "A la misma IAS, 50 kt, porque la pérdida depende de la presión dinámica. En TAS será mayor: 50 / √0,786 = 50 / 0,887 ≈ 56 kt." }
+        ],
+        "figure": "calc:tas",
+        "caption": "Prueba a cambiar la altitud de presión y la temperatura y mira cómo se separa la TAS de la IAS."
+      }
+    ],
+    "numbers": [
+      "1 kt = 1,852 km/h = 0,514 m/s; 1 NM = 1852 m; 1 ft = 0,3048 m",
+      "1 hPa = 1 mbar = 100 Pa; 1 inHg = 33,86 hPa",
+      "Peso W = m · g, con g = 9,81 m/s²",
+      "ISA a nivel del mar: 1013,25 hPa, 15 °C y 1,225 kg/m³; −2 °C por cada 1000 ft",
+      "Presión dinámica q = ½ρV²: a doble velocidad, cuádruple q",
+      "Presión total = estática + dinámica (constante a lo largo de una línea de corriente)",
+      "Continuidad: A · V = constante; media sección, doble velocidad",
+      "TAS = EAS / √σ; regla práctica: +2 % por cada 1000 ft",
+      "A 10 000 ft ISA la densidad es un 74 % de la del nivel del mar"
+    ],
+    "traps": [
+      "Bernoulli dice que baja la presión **estática** donde el aire se acelera; la presión total se mantiene.",
+      "El anemómetro no mide la velocidad directamente: mide la diferencia entre presión total y estática, es decir, la presión dinámica.",
+      "En un ascenso rectilíneo a velocidad constante la resultante de fuerzas es cero, igual que en vuelo nivelado (primera ley de Newton).",
+      "A la misma IAS, la TAS aumenta con la altitud y con la temperatura; la IAS de pérdida no cambia.",
+      "La humedad reduce la densidad: el aire húmedo es más ligero que el seco a la misma presión y temperatura.",
+      "La explicación del «tiempo de tránsito igual» es falsa: el aire del extradós llega antes al borde de salida."
+    ],
+    "sources": [
+      { "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), caps. 4 y 5", "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak" },
+      { "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080", "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011" },
+      { "title": "OACI, Doc 7488, Manual de la atmósfera tipo" }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      { "label": "Cabina del PA-28: anemómetro y altímetro", "href": "#/ac/pa28" },
+      { "label": "Cabina del C172: anemómetro y altímetro", "href": "#/ac/c172" }
+    ]
+  },
+  "questions": [
+    {
+      "id": "080.01.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "Según Bernoulli, cuando el aire se acelera a lo largo de una línea de corriente:",
+      "options": ["La presión total aumenta", "La presión estática disminuye", "La presión estática aumenta", "La densidad aumenta"],
+      "correct": 1,
+      "why": "p + ½ρV² = constante: si V aumenta, la presión dinámica sube y la estática tiene que bajar en la misma cantidad.",
+      "whyNot": ["La presión total se conserva: es la constante de Bernoulli.", null, "Es lo contrario: la estática sube cuando el aire se frena.", "A baja velocidad el aire se trata como incompresible: su densidad no cambia."],
+      "ref": "PHAK (FAA-H-8083-25C), cap. 4",
+      "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+    },
+    {
+      "id": "080.01.002",
+      "type": "regla",
+      "level": 2,
+      "q": "La presión total o de remanso que capta el tubo pitot es:",
+      "options": ["La presión estática menos la dinámica", "Solo la presión dinámica", "Solo la presión estática", "La suma de la presión estática y la dinámica"],
+      "correct": 3,
+      "why": "Al frenar del todo el aire en la boca del pitot se suma la presión dinámica (½ρV²) a la estática. El anemómetro resta después la estática de las tomas.",
+      "whyNot": ["No se resta: la dinámica se suma al frenar el aire.", "El pitot no puede separar la dinámica: recibe también la estática.", "La estática sola es la de las tomas laterales, no la del pitot.", null],
+      "ref": "PHAK, cap. 8 (sistema pitot-estático)"
+    },
+    {
+      "id": "080.01.003",
+      "type": "regla",
+      "level": 1,
+      "q": "La densidad del aire a nivel del mar en la atmósfera estándar (ISA) es:",
+      "options": ["1,225 kg/m³", "1013,25 kg/m³", "0,905 kg/m³", "15 kg/m³"],
+      "correct": 0,
+      "why": "ISA a nivel del mar: 1013,25 hPa, 15 °C y 1,225 kg/m³.",
+      "whyNot": [null, "1013,25 es la presión en hPa, no la densidad.", "0,905 kg/m³ es la densidad ISA a unos 10 000 ft.", "15 es la temperatura en °C."],
+      "ref": "OACI, Doc 7488"
+    },
+    {
+      "id": "080.01.004",
+      "type": "calculo",
+      "level": 1,
+      "q": "Un avión tiene una masa de 1000 kg. Su peso es aproximadamente:",
+      "options": ["1000 N", "102 N", "9810 N", "98 100 N"],
+      "correct": 2,
+      "why": "W = m · g = 1000 × 9,81 = 9810 N.",
+      "whyNot": ["Confunde masa con peso: 1000 es la masa en kg.", "Divide por g en lugar de multiplicar.", null, "Multiplica por 98,1: error de un cero."],
+      "ref": "Segunda ley de Newton; PHAK, cap. 4"
+    },
+    {
+      "id": "080.01.005",
+      "type": "calculo",
+      "level": 2,
+      "q": "Si la velocidad respecto al aire se duplica sin cambiar la densidad, la presión dinámica:",
+      "options": ["Se duplica", "No cambia", "Se cuadruplica", "Se reduce a la mitad"],
+      "correct": 2,
+      "why": "q = ½ρV²: con 2V, q pasa a ½ρ(2V)² = 4 · ½ρV².",
+      "whyNot": ["Sería así si dependiera de V, pero depende de V².", "Cambia con el cuadrado de la velocidad.", null, "Al acelerar, la presión dinámica aumenta."],
+      "ref": "PHAK, cap. 4"
+    },
+    {
+      "id": "080.01.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "En la garganta de un tubo de Venturi, comparada con la entrada:",
+      "options": ["La velocidad es mayor y la presión estática menor", "La velocidad y la presión estática son mayores", "La velocidad es menor y la presión estática mayor", "La velocidad es mayor y la presión total menor"],
+      "correct": 0,
+      "why": "Continuidad: menos sección, más velocidad. Bernoulli: más velocidad, menos presión estática.",
+      "whyNot": [null, "Si la velocidad sube, la estática no puede subir también: la total es constante.", "Es lo que pasa en un ensanchamiento, no en la garganta.", "La presión total se conserva en un flujo ideal; la que baja es la estática."],
+      "ref": "PHAK, cap. 4"
+    },
+    {
+      "id": "080.01.007",
+      "type": "calculo",
+      "level": 3,
+      "q": "Un tubo de corriente reduce su sección a un tercio. Si el flujo es incompresible, la velocidad en la sección estrecha es:",
+      "options": ["Un tercio de la inicial", "Igual a la inicial", "Nueve veces la inicial", "Tres veces la inicial"],
+      "correct": 3,
+      "why": "A₁ · V₁ = A₂ · V₂. Con A₂ = A₁/3, V₂ = 3 · V₁.",
+      "whyNot": ["Invierte la relación: menos sección significa más velocidad.", "El caudal se conserva, la velocidad no.", "Confunde con la presión dinámica, que sí se multiplica por nueve.", null],
+      "ref": "Ecuación de continuidad; PHAK, cap. 4"
+    },
+    {
+      "id": "080.01.008",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué ley de Newton explica que el ala reciba una fuerza hacia arriba al desviar aire hacia abajo?",
+      "options": ["La primera ley (inercia)", "La tercera ley (acción y reacción)", "La ley de la gravitación", "La ley de Boyle"],
+      "correct": 1,
+      "why": "El ala empuja aire hacia abajo (downwash) y el aire empuja el ala hacia arriba con una fuerza igual y opuesta.",
+      "whyNot": ["La inercia explica el equilibrio sin aceleración, no la reacción del aire.", null, "La gravitación explica el peso, no la sustentación.", "Boyle relaciona presión y volumen de un gas, no fuerzas sobre el ala."],
+      "ref": "PHAK, cap. 4"
+    },
+    {
+      "id": "080.01.009",
+      "type": "concepto",
+      "level": 3,
+      "q": "Un avión asciende en línea recta a velocidad y régimen de ascenso constantes. La resultante de todas las fuerzas que actúan sobre él es:",
+      "options": ["Nula", "Hacia arriba, igual al exceso de sustentación", "Hacia delante, igual al exceso de tracción", "Hacia arriba, igual al peso"],
+      "correct": 0,
+      "why": "Sin aceleración no hay fuerza neta (primera ley de Newton). La tracción equilibra la resistencia más la componente del peso a lo largo de la trayectoria; la sustentación equilibra la otra componente del peso.",
+      "whyNot": [null, "En ascenso estable la sustentación es incluso algo menor que el peso; no hay exceso.", "El exceso de tracción se gasta en vencer la componente del peso: no queda fuerza neta.", "Si la resultante fuera igual al peso hacia arriba, el avión aceleraría verticalmente."],
+      "ref": "Primera ley de Newton; PHAK, cap. 5"
+    },
+    {
+      "id": "080.01.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué combinación da la menor densidad del aire?",
+      "options": ["Aeródromo bajo, aire frío y seco", "Aeródromo bajo, aire caliente y seco", "Aeródromo alto, aire caliente y húmedo", "Aeródromo alto, aire frío y seco"],
+      "correct": 2,
+      "why": "La densidad baja con la altitud (menos presión), con la temperatura y con la humedad (el vapor es más ligero que el aire seco).",
+      "whyNot": ["Es la combinación de mayor densidad.", "El calor la reduce, pero la poca altitud y el aire seco la mantienen alta.", null, "La altitud la reduce, pero el frío y el aire seco la aumentan."],
+      "ref": "PHAK, cap. 4 (densidad y humedad)"
+    },
+    {
+      "id": "080.01.011",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con la regla práctica del 2 % por cada 1000 ft, una IAS de 100 kt a 6000 ft corresponde a una TAS de unos:",
+      "options": ["94 kt", "112 kt", "106 kt", "124 kt"],
+      "correct": 1,
+      "why": "6 × 2 % = 12 %; 100 × 1,12 = 112 kt. El cálculo con la densidad estándar da algo menos (unos 109 kt): la regla es una aproximación por exceso.",
+      "whyNot": ["Resta en lugar de sumar: en altura la TAS es mayor que la IAS.", null, "Aplica un 1 % por cada 1000 ft.", "Aplica un 4 % por cada 1000 ft."],
+      "ref": "PHAK, cap. 8"
+    },
+    {
+      "id": "080.01.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "El anemómetro de un avión mide en realidad:",
+      "options": ["La presión estática", "La velocidad respecto al suelo", "La presión total", "La diferencia entre la presión total y la estática"],
+      "correct": 3,
+      "why": "Compara la presión del pitot (total) con la de las tomas estáticas; la diferencia es la presión dinámica, que se gradúa en nudos para la densidad ISA a nivel del mar.",
+      "whyNot": ["La estática sola la usan el altímetro y el variómetro.", "Ningún instrumento pitot-estático mide la velocidad sobre el suelo.", "Con solo la total no se puede separar la parte dinámica.", null],
+      "ref": "PHAK, cap. 8"
+    },
+    {
+      "id": "080.01.013",
+      "type": "lectura",
+      "level": 3,
+      "q": "Con los datos de la tabla, un avión vuela a 90 kt de EAS a 8000 ft en atmósfera estándar. Su TAS es de unos:",
+      "data": "Altitud (ft)   Densidad relativa σ   √σ\n0              1,000                 1,000\n4000           0,888                 0,942\n8000           0,786                 0,887\n12000          0,693                 0,832",
+      "options": ["80 kt", "90 kt", "101 kt", "115 kt"],
+      "correct": 2,
+      "why": "TAS = EAS / √σ = 90 / 0,887 ≈ 101 kt.",
+      "whyNot": ["Multiplica por √σ en lugar de dividir.", "A 8000 ft la TAS ya es claramente mayor que la EAS.", null, "Divide por σ en lugar de por √σ."],
+      "ref": "OACI, Doc 7488; PHAK, cap. 8"
+    },
+    {
+      "id": "080.01.014",
+      "type": "regla",
+      "level": 1,
+      "q": "Un nudo (kt) equivale a:",
+      "options": ["1,852 km/h", "1,609 km/h", "0,3048 m/s", "1 km/h"],
+      "correct": 0,
+      "why": "Un nudo es una milla náutica por hora y la milla náutica mide 1852 m: 1 kt = 1,852 km/h ≈ 0,514 m/s.",
+      "whyNot": [null, "1,609 km/h es una milla terrestre (statute mile) por hora.", "0,3048 es la equivalencia del pie en metros.", "El nudo es casi el doble que el km/h."],
+      "ref": "OACI, Anexo 5"
+    }
+  ],
+  "cards": [
+    { "id": "c.080.01.01", "front": "Ecuación de Bernoulli", "back": "p + ½ρV² = constante: si el aire se acelera, baja la presión estática; la total no cambia" },
+    { "id": "c.080.01.02", "front": "Qué mide el anemómetro", "back": "Presión total (pitot) menos estática (tomas): la presión dinámica ½ρV²" },
+    { "id": "c.080.01.03", "front": "Atmósfera estándar a nivel del mar", "back": "1013,25 hPa, 15 °C y 1,225 kg/m³" },
+    { "id": "c.080.01.04", "front": "Relación entre TAS y EAS", "back": "TAS = EAS / √σ; regla rápida: +2 % por cada 1000 ft" }
+  ]
+}

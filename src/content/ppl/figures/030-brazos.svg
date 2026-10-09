@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340">
+  <title>Datum, brazos y momentos en el PA-28-161 de ejemplo: cada carga tiene su brazo medido desde el datum</title>
+  <defs>
+    <marker id="030-brazos-flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+    <marker id="030-brazos-flecha-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker>
+  </defs>
+  <text x="620" y="24" class="tx b" text-anchor="end">Momento = masa × brazo</text>
+  <text x="620" y="44" class="tx2" text-anchor="end">CG = suma de momentos / suma de masas</text>
+  <line x1="44" y1="40" x2="44" y2="330" class="wa-ln dash"/>
+  <text x="52" y="54" class="txw b">datum</text>
+  <text x="52" y="70" class="tx2">brazo = 0</text>
+  <path d="M70 128 C70 112 92 104 120 102 L250 96 C290 80 330 78 360 92 L420 104 L560 112 L600 70 L622 70 L612 126 L560 136 L420 146 L130 150 C96 150 70 144 70 128 Z" class="soft"/>
+  <path d="M250 96 C290 82 330 80 360 93 L330 98 L262 100 Z" class="sky"/>
+  <path d="M220 152 C240 140 330 138 380 146 C340 158 250 160 220 152 Z" class="ac"/>
+  <line x1="58" y1="112" x2="58" y2="144" class="ln thick"/>
+  <rect x="264" y="104" width="24" height="24" rx="4" class="ok"/>
+  <rect x="372" y="104" width="24" height="24" rx="4" class="ok"/>
+  <rect x="438" y="112" width="30" height="20" rx="3" class="wa"/>
+  <circle cx="314" cy="148" r="6" class="ac-fill"/>
+  <circle cx="298" cy="126" r="9" class="bg-fill"/>
+  <circle cx="298" cy="126" r="9" class="ln"/>
+  <path d="M298 117 A9 9 0 0 1 307 126 L298 126 Z" class="ink-fill"/>
+  <path d="M298 135 A9 9 0 0 1 289 126 L298 126 Z" class="ink-fill"/>
+  <text x="298" y="74" class="tx b" text-anchor="middle">CG</text>
+  <line x1="298" y1="78" x2="298" y2="114" class="ln2"/>
+  <text x="200" y="98" class="tx2" text-anchor="end">delanteros</text>
+  <text x="404" y="98" class="tx2">traseros</text>
+  <text x="474" y="160" class="tx2">equipaje</text>
+  <text x="314" y="176" class="txa" text-anchor="middle">combustible (alas)</text>
+  <line x1="276" y1="130" x2="276" y2="206" class="ln2 dash"/>
+  <line x1="314" y1="180" x2="314" y2="236" class="ln2 dash"/>
+  <line x1="384" y1="130" x2="384" y2="266" class="ln2 dash"/>
+  <line x1="453" y1="134" x2="453" y2="296" class="ln2 dash"/>
+  <line x1="44" y1="206" x2="274" y2="206" class="ln" marker-end="url(#030-brazos-flecha)"/>
+  <text x="70" y="200" class="tx">asientos delanteros 2,05 m</text>
+  <line x1="44" y1="236" x2="312" y2="236" class="ac-ln" marker-end="url(#030-brazos-flecha-a)"/>
+  <text x="70" y="230" class="txa">combustible 2,40 m</text>
+  <line x1="44" y1="266" x2="382" y2="266" class="ln" marker-end="url(#030-brazos-flecha)"/>
+  <text x="70" y="260" class="tx">asientos traseros 3,00 m</text>
+  <line x1="44" y1="296" x2="451" y2="296" class="wa-ln" marker-end="url(#030-brazos-flecha)"/>
+  <text x="70" y="290" class="txw">equipaje 3,60 m</text>
+  <line x1="40" y1="322" x2="8" y2="322" class="ln2" marker-end="url(#030-brazos-flecha)"/>
+  <text x="52" y="326" class="tx2">por delante del datum el brazo es negativo; por detrás, positivo</text>
+</svg>

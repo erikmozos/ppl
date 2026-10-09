@@ -1,0 +1,241 @@
+{
+  "lesson": {
+    "id": "030.03",
+    "title": "Límites de masa y de carga",
+    "summary": "Masas máximas estructurales, masas limitadas por performance y masa regulada al despegue y al aterrizaje, y límites de los compartimentos de equipaje en kg y en kg/m².",
+    "objectives": [
+      "Definir la masa máxima de rampa, de despegue, de aterrizaje y sin combustible, y explicar qué protege cada una",
+      "Distinguir límites estructurales de límites de performance y obtener la masa regulada (la menor de todas)",
+      "Calcular la masa máxima al despegue limitada por la masa máxima de aterrizaje o por la masa sin combustible",
+      "Comprobar los límites del compartimento de equipaje: masa máxima y carga por unidad de superficie",
+      "Calcular el margen de carga disponible (infracarga) o el exceso respecto a la masa permitida"
+    ],
+    "sections": [
+      {
+        "title": "Tres familias de límites",
+        "text": [
+          "Los límites de masa salen de tres sitios. Los **estructurales** los fija el fabricante al certificar el avión y no cambian nunca: protegen la estructura, el tren y los anclajes. Los **de performance** dependen del día y del aeródromo: con una pista corta, alta o caliente, o con obstáculos en la salida, el avión puede no ser capaz de despegar o de ascender lo suficiente con la masa estructural máxima. Y los **de compartimento** limitan cuánto puedes poner en cada sitio (equipaje, asientos, depósitos).",
+          "La masa con la que puedes despegar hoy es la **menor** de todas las que resultan de esos límites. En el temario se llama masa regulada al despegue (regulated take-off mass); lo mismo ocurre al aterrizaje."
+        ]
+      },
+      {
+        "title": "Masas máximas estructurales",
+        "text": [
+          "Están en la sección de limitaciones del AFM o POH. En un monomotor de escuela lo habitual es encontrar solo la MTOM, a veces la masa máxima de rampa, y la MLM igual a la MTOM. En aviones mayores aparecen todas."
+        ],
+        "table": {
+          "caption": "Masas máximas estructurales",
+          "head": ["Límite", "Qué es", "Qué protege"],
+          "rows": [
+            ["Masa máxima de rampa (o de rodaje)", "Máxima para rodar; supera a la MTOM en el combustible de rodaje", "Tren y estructura en tierra"],
+            ["MTOM (masa máxima de despegue)", "Máxima al iniciar la carrera de despegue", "Estructura en vuelo (factores de carga) y tren"],
+            ["MLM (masa máxima de aterrizaje)", "Máxima en la toma de contacto", "Tren y anclajes frente al impacto de la toma"],
+            ["MZFM (masa máxima sin combustible)", "Máxima sin combustible utilizable", "Flexión en la raíz del ala: lo que va en el fuselaje no la alivia"]
+          ],
+          "src": "AMC1 FCL.210, temario 031 02 02 01; FAA-H-8083-1B cap. 1"
+        },
+        "bullets": [
+          "Si aterrizas por encima de la MLM (por ejemplo, regresando nada más despegar con los depósitos llenos en un avión con MLM menor que MTOM), el AFM suele exigir una inspección estructural.",
+          "Si la ZFM llega a la MZFM, ya no puedes añadir más carga de pago: cualquier masa extra hasta la MTOM tiene que ser combustible.",
+          "Además hay límites de cada puesto: masa máxima por asiento, por compartimento y capacidad de cada depósito."
+        ]
+      },
+      {
+        "title": "Masas limitadas por performance y masa regulada",
+        "text": [
+          "La **masa al despegue limitada por performance** es la máxima con la que el avión cumple la distancia de despegue disponible y el ascenso necesario, con la altitud de presión, la temperatura, el viento, la pendiente y la superficie del día. La **masa al aterrizaje limitada por performance** es la máxima con la que el avión se detiene dentro de la distancia de aterrizaje disponible en destino. Las dos se sacan de las gráficas del manual (bloque 030.07).",
+          "Para obtener la masa máxima con la que puedes despegar, compara todas las restricciones y quédate con la más baja. Fíjate en que algunas se trasladan al despegue sumando combustible: si al aterrizar no puedes pasar de la MLM, al despegue no puedes pasar de la MLM más el combustible de viaje; si sin combustible no puedes pasar de la MZFM, al despegue no puedes pasar de la MZFM más el combustible de despegue."
+        ],
+        "formulas": [
+          { "f": "TOM máxima = la menor de: MTOM estructural · TOM limitada por performance · MLM (o LM limitada por la pista de destino) + combustible de viaje · MZFM + combustible de despegue" },
+          { "f": "Infracarga (under load) = TOM máxima permitida − TOM real", "note": "Si sale negativa, vas sobrecargado y tienes que quitar carga o combustible." }
+        ],
+        "examples": [
+          {
+            "q": "MTOM 1150 kg, MLM 1090 kg, combustible de viaje 70 l de AVGAS. Las gráficas de performance permiten 1170 kg. ¿Con cuánto puedes despegar como máximo?",
+            "a": "Combustible de viaje: 70 × 0,72 = 50,4 kg. Límite por aterrizaje: 1090 + 50,4 = 1140,4 kg. Comparas: 1150 (estructural), 1170 (performance), 1140,4 (aterrizaje). La menor es **1140,4 kg**: manda la MLM."
+          },
+          {
+            "q": "Masa máxima permitida al despegue 1100 kg. ZFM 905 kg y combustible de despegue 140 l. ¿Qué margen te queda?",
+            "a": "Combustible: 140 × 0,72 = 100,8 kg. TOM = 905 + 100,8 = 1005,8 kg. Infracarga = 1100 − 1005,8 = **94,2 kg** disponibles para más carga o combustible."
+          }
+        ]
+      },
+      {
+        "title": "Límites del compartimento de equipaje",
+        "text": [
+          "Cada compartimento tiene una **masa máxima** (en kg o lb), escrita en un letrero junto a la puerta y en el POH. Es un límite estructural del suelo y de sus anclajes, y existe aunque el avión vaya muy por debajo de su MTOM y con el CG en el centro de la envolvente. Además pesa mucho en el CG porque la bodega está lejos del datum.",
+          "En aviones con bodegas grandes se da también la **carga máxima por unidad de superficie** (floor load, en kg/m²): un objeto pesado con una base pequeña concentra la fuerza y puede romper el suelo aunque su masa esté por debajo del máximo del compartimento. Se comprueba dividiendo la masa entre la superficie de apoyo; si se supera, se reparte la carga sobre una tabla o plancha (spreader board) que aumenta la superficie. En aviones de carga se añade la carga por metro de longitud del fuselaje (running load, kg/m).",
+          "Por último, todo lo que va en la cabina y en la bodega tiene que ir **sujeto**. Una bolsa suelta se convierte en un proyectil en turbulencia o en un aterrizaje forzoso, puede bloquear los mandos y, si se desplaza hacia atrás, mueve el CG en el peor momento."
+        ],
+        "formulas": [
+          { "f": "Carga por superficie = masa / superficie de apoyo (kg/m²)" },
+          { "f": "Superficie mínima = masa / carga máxima admisible" }
+        ],
+        "examples": [
+          {
+            "q": "Una caja de 60 kg tiene una base de 0,4 m × 0,5 m. El suelo admite 250 kg/m². ¿Se puede apoyar directamente? ¿Qué superficie necesita?",
+            "a": "Superficie de apoyo: 0,4 × 0,5 = 0,20 m². Carga: 60 / 0,20 = **300 kg/m²**, por encima de 250: no se puede. Superficie mínima: 60 / 250 = **0,24 m²**; una plancha de 0,5 × 0,5 m (0,25 m²) basta, sumando su masa a la de la caja."
+          }
+        ],
+        "table": {
+          "caption": "Ejemplo de límites de equipaje en dos aviones de escuela (valores orientativos: compruébalos en el POH de tu avión)",
+          "head": ["Avión", "Compartimentos", "Límite"],
+          "rows": [
+            ["PA-28-161 Warrior", "Una bodega detrás de los asientos traseros", "Unos 90 kg (200 lb)"],
+            ["Cessna 172S", "Zona 1 y zona 2", "Zona 1 unos 54 kg (120 lb); zona 2 unos 23 kg (50 lb); las dos juntas, 54 kg como máximo"]
+          ],
+          "src": "POH de cada avión (datos orientativos)"
+        },
+        "verify": true
+      },
+      {
+        "title": "Letreros y responsabilidad",
+        "text": [
+          "NCO.POL.100(b) exige que los letreros, listas y marcas con las limitaciones que el AFM manda mostrar estén en el avión: la masa máxima de la bodega, las velocidades y las limitaciones de maniobras. Léelos en la inspección prevuelo junto con la hoja de carga.",
+          "Recuerda el orden práctico: primero compruebas que **cada compartimento** cumple su límite, después que **la masa total** no supera la masa permitida del día, y por último que **el CG** está dentro de la envolvente en todas las fases (030.04)."
+        ]
+      }
+    ],
+    "numbers": [
+      "Masa permitida al despegue = la menor de las restricciones estructurales y de performance",
+      "TOM máxima por aterrizaje = MLM + combustible de viaje",
+      "TOM máxima por MZFM = MZFM + combustible de despegue",
+      "Carga por superficie = masa / superficie de apoyo (kg/m²)",
+      "PA-28-161: bodega de unos 90 kg (200 lb), según POH",
+      "Masa de rampa máxima = MTOM + combustible de rodaje (si el AFM la publica)"
+    ],
+    "traps": [
+      "Usar la MTOM sin comprobar si la MLM, la MZFM o la performance la reducen.",
+      "Al trasladar la MLM al despegue, restar el combustible de viaje en lugar de sumarlo.",
+      "Pensar que una carga ligera no puede dañar el suelo: lo que cuenta es la masa por unidad de superficie.",
+      "Olvidar que dos zonas de equipaje pueden tener un límite conjunto además de los individuales.",
+      "Creer que si el avión está por debajo de la MTOM el equipaje no tiene límite propio."
+    ],
+    "sources": [
+      { "title": "EASA AMC1 FCL.210, temario 030 (031 02 02 Mass limits; 031 06 02 floor load)", "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011" },
+      { "title": "EASA Easy Access Rules for Air Operations (NCO.POL.100, NCO.POL.110)", "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations" },
+      { "title": "FAA Aircraft Weight and Balance Handbook (FAA-H-8083-1B)", "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation" },
+      { "title": "FAA Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 10", "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak" }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "030.03.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "Cuando un avión tiene la MLM menor que la MTOM, el motivo principal es:",
+      "options": ["Que la pista de aterrizaje suele ser más corta", "Que en el aterrizaje el ala genera menos sustentación", "Que el tren y su anclaje tienen que absorber el impacto de la toma", "Que el combustible se mueve al frenar"],
+      "correct": 2,
+      "why": "La MLM es un límite estructural: el tren de aterrizaje y la estructura a la que se ancla se dimensionan para absorber la energía de la toma con una masa concreta.",
+      "whyNot": ["La longitud de pista da un límite de performance, no la MLM estructural.", "La sustentación en la aproximación no define la MLM.", null, "El movimiento del combustible no es la razón de la MLM."],
+      "ref": "AMC1 FCL.210 (031 02 02 01); FAA-H-8083-1B cap. 1"
+    },
+    {
+      "id": "030.03.002",
+      "type": "calculo",
+      "level": 2,
+      "q": "MTOM 1150 kg, MLM 1090 kg y combustible de viaje 70 l de AVGAS (0,72 kg/l). Sin otras limitaciones, la masa máxima al despegue es:",
+      "options": ["1150,0 kg", "1090,0 kg", "1160,0 kg", "1140,4 kg"],
+      "correct": 3,
+      "why": "Por aterrizaje: 1090 + 70 × 0,72 = 1090 + 50,4 = 1140,4 kg, que es menor que la MTOM (1150 kg). Manda la más baja.",
+      "whyNot": ["Con 1150 kg llegarías a destino por encima de la MLM.", "La MLM es la masa al aterrizar; al despegue puedes llevar además el combustible de viaje.", "Has sumado 70 kg en lugar de 70 litros, y además supera la MTOM.", null],
+      "ref": "AMC1 FCL.210 (031 02 03 01)"
+    },
+    {
+      "id": "030.03.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un aeródromo alto, con temperatura alta y pista corta, la masa máxima al despegue que puedes usar es:",
+      "options": ["Siempre la MTOM, porque es un límite certificado", "La menor entre la MTOM y la masa limitada por performance del día", "La mayor entre la MTOM y la masa limitada por performance", "La MTOM menos un 10 % fijo"],
+      "correct": 1,
+      "why": "La MTOM es un máximo estructural, no una garantía de performance. Con altitud de densidad alta y pista corta, la masa limitada por performance puede ser menor, y entonces es esa la que vale.",
+      "whyNot": ["La MTOM no asegura que tengas pista o ascenso suficientes ese día.", null, "Nunca se puede usar la mayor: hay que cumplir todas las restricciones.", "No existe una reducción fija; se calcula con las gráficas del manual."],
+      "ref": "NCO.POL.110; AMC1 FCL.210 (031 02 02 02)"
+    },
+    {
+      "id": "030.03.004",
+      "type": "calculo",
+      "level": 2,
+      "q": "Una caja de 60 kg con una base de 0,4 m × 0,5 m se apoya en el suelo de la bodega. La carga sobre el suelo es:",
+      "options": ["300 kg/m²", "12 kg/m²", "67 kg/m²", "150 kg/m²"],
+      "correct": 0,
+      "why": "Superficie: 0,4 × 0,5 = 0,20 m². Carga: 60 / 0,20 = 300 kg/m².",
+      "whyNot": [null, "Has multiplicado la masa por la superficie en lugar de dividir.", "Has dividido entre la suma de los lados (0,9), que no es una superficie.", "Has dividido solo entre uno de los lados (0,4 m)."],
+      "ref": "AMC1 FCL.210 (031 06 02 01)"
+    },
+    {
+      "id": "030.03.005",
+      "type": "calculo",
+      "level": 3,
+      "q": "El suelo de la bodega admite 250 kg/m². ¿Qué superficie de apoyo mínima necesita un bulto de 60 kg?",
+      "options": ["4,17 m²", "0,24 m²", "0,20 m²", "2,40 m²"],
+      "correct": 1,
+      "why": "Superficie mínima = masa / carga admisible = 60 / 250 = 0,24 m².",
+      "whyNot": ["Has dividido la carga admisible entre la masa: la operación está al revés.", null, "0,20 m² daría 300 kg/m², por encima del límite.", "Error de coma: 60 / 250 son 0,24, no 2,4."],
+      "ref": "AMC1 FCL.210 (031 06 02 01)"
+    },
+    {
+      "id": "030.03.006",
+      "type": "concepto",
+      "level": 1,
+      "q": "El avión va por debajo de la MTOM y con el CG en el centro de la envolvente. El equipaje que llevas en la bodega:",
+      "options": ["No tiene límite propio si se cumplen la MTOM y el CG", "Solo está limitado por el volumen de la bodega", "Tiene además su propia masa máxima, que hay que respetar", "Puede superar el letrero si se compensa con menos combustible"],
+      "correct": 2,
+      "why": "La bodega tiene una masa máxima estructural (letrero y POH) que hay que cumplir siempre, además de la masa total y el CG.",
+      "whyNot": ["Cumplir la MTOM y el CG no exime del límite del compartimento.", "El límite es de masa, no de volumen.", null, "Quitar combustible no refuerza el suelo de la bodega."],
+      "ref": "NCO.POL.100; AMC1 FCL.210 (031 02 02 03)"
+    },
+    {
+      "id": "030.03.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "La ZFM ya es igual a la MZFM y aún estás 80 kg por debajo de la MTOM. Puedes:",
+      "options": ["Añadir 80 kg de equipaje", "Añadir 80 kg repartidos entre pasajeros y equipaje", "No añadir nada más, ni siquiera combustible", "Añadir hasta 80 kg de combustible, pero no más carga de pago"],
+      "correct": 3,
+      "why": "Por encima de la MZFM cualquier masa adicional tiene que ser combustible, que va en las alas y alivia la flexión. La carga de pago ya está en su máximo.",
+      "whyNot": ["El equipaje aumentaría la ZFM por encima de la MZFM.", "Pasajeros y equipaje también suben la ZFM.", "El combustible sí se puede añadir hasta la MTOM.", null],
+      "ref": "AMC1 FCL.210 (031 02 02 01)"
+    },
+    {
+      "id": "030.03.008",
+      "type": "lectura",
+      "level": 2,
+      "q": "Con los límites de equipaje de este avión de ejemplo, ¿puedes llevar 35 kg en la zona 1 y 20 kg en la zona 2?",
+      "data": "LÍMITES DE EQUIPAJE (avión de ejemplo)\nZona 1 ................... 54 kg máx.\nZona 2 ................... 23 kg máx.\nZonas 1 + 2 juntas ....... 54 kg máx.",
+      "options": ["No, porque la suma, 55 kg, supera el máximo conjunto de 54 kg", "Sí, porque cada zona está por debajo de su máximo", "No, porque la zona 2 supera su máximo", "Sí, si el avión no supera la MTOM"],
+      "correct": 0,
+      "why": "Cada zona cumple por separado (35 ≤ 54 y 20 ≤ 23), pero la suma, 55 kg, supera el límite conjunto de 54 kg.",
+      "whyNot": [null, "Además de los límites individuales hay un límite conjunto, y se supera.", "La zona 2 lleva 20 kg, por debajo de 23 kg.", "El límite de equipaje es independiente de la MTOM."],
+      "ref": "AMC1 FCL.210 (031 04 01 06); POH del avión"
+    },
+    {
+      "id": "030.03.009",
+      "type": "calculo",
+      "level": 3,
+      "q": "La masa máxima permitida al despegue es 1100 kg. ZFM 905 kg y combustible de despegue 140 l de AVGAS (0,72 kg/l). ¿Cuál es la situación?",
+      "options": ["Margen disponible de 55,0 kg", "Margen disponible de 195,0 kg", "Margen disponible de 94,2 kg", "Exceso de 27,3 kg"],
+      "correct": 2,
+      "why": "Combustible: 140 × 0,72 = 100,8 kg. TOM = 905 + 100,8 = 1005,8 kg. Margen (infracarga) = 1100 − 1005,8 = 94,2 kg.",
+      "whyNot": ["Has sumado 140 kg en lugar de 140 litros.", "Has olvidado el combustible.", null, "Has sumado las libras del combustible (222 lb) como si fueran kilos."],
+      "ref": "AMC1 FCL.210 (031 02 03 02)"
+    },
+    {
+      "id": "030.03.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "El aeródromo de destino tiene una pista corta que limita la masa al aterrizaje por debajo de la MLM. Al planificar:",
+      "options": ["Solo hay que comprobarlo al llegar", "La masa al despegue no puede superar esa masa limitada más el combustible de viaje", "Basta con aterrizar con flaps completos", "Se aplica la MLM, porque es la certificada"],
+      "correct": 1,
+      "why": "La masa limitada por performance en destino se traslada al despegue sumando el combustible de viaje: es una de las restricciones de la masa regulada al despegue.",
+      "whyNot": ["Hay que comprobarlo antes de salir: en vuelo ya no puedes quitar carga.", null, "Los flaps ya están considerados en las gráficas; no eliminan el límite.", "Cuando la pista limita más que la estructura, manda la más baja."],
+      "ref": "AMC1 FCL.210 (031 02 02 02 y 031 02 03 01)"
+    }
+  ],
+  "cards": [
+    { "id": "c.030.03.01", "front": "Masa máxima al despegue del día", "back": "La menor de: MTOM, TOM limitada por performance, MLM + combustible de viaje y MZFM + combustible de despegue" },
+    { "id": "c.030.03.02", "front": "Carga por unidad de superficie del suelo", "back": "Masa / superficie de apoyo (kg/m²); si se supera, repartir con una plancha" },
+    { "id": "c.030.03.03", "front": "Qué protege la MZFM", "back": "La flexión en la raíz del ala: por encima de ella solo se puede añadir combustible" }
+  ]
+}

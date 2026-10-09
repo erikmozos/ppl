@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { GUIDE } from '../data/guide'
 import { GuideTour } from '../components/GuideTour'
 import { VoiceSettings } from '../components/VoiceSettings'
+import { Icon } from '../components/Icon'
 
 /** Guía de uso completa, en una sola página */
 export function GuidePage() {
@@ -14,14 +15,14 @@ export function GuidePage() {
           <h1>Cómo funciona Cockpit Flows</h1>
           <p className="muted">En unos 3 minutos sabrás usar todo. Puedes verla como presentación narrada o leerla aquí.</p>
         </div>
-        <button className="btn primary" onClick={() => setTour(0)}>▶ Ver presentación narrada</button>
+        <button className="btn primary" onClick={() => setTour(0)}>Ver presentación narrada</button>
       </div>
       <div className="guide-grid">
         {GUIDE.map((g, i) => (
           <article key={i} className="card guide-card">
             <div className="row between">
-              <span className="guide-icon">{g.icon}</span>
-              <button className="btn ghost sm" onClick={() => setTour(i)} aria-label={`Escuchar: ${g.title}`}>🔊</button>
+              <span className="guide-n mono">{String(i + 1).padStart(2, "0")}</span>
+              <button className="btn ghost sm" onClick={() => setTour(i)} aria-label={`Escuchar: ${g.title}`}><Icon name="speaker" /></button>
             </div>
             <h3>{g.title}</h3>
             {g.body.map((p, k) => <p key={k}>{p}</p>)}

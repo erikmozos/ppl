@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import type { RadioLine, RadioScenario } from '../data/licenses/types'
 import { speakRadio, stopSpeech, useSpeech, type RadioVoice } from '../speech'
 import { actions } from '../store'
+import { Icon } from './Icon'
 
 type Lang = 'es' | 'en' | 'both'
 const voiceOf = (who: RadioLine['who'], l: 'es' | 'en'): RadioVoice => `${l}-${who === 'ATC' ? 'atc' : 'pilot'}` as RadioVoice
@@ -43,11 +44,11 @@ export function RadioTrainer({ sc, back, quizKey }: { sc: RadioScenario; back: s
       </div>
       <div className="card radio-bar">
         <div className="seg small-seg" role="tablist" aria-label="Idioma">
-          {([['es', '🇪🇸 Español'], ['en', '🇬🇧 English'], ['both', 'Ambos']] as const).map(([k, t]) => <button key={k} className={lang === k ? 'on' : ''} onClick={() => setL(k)}>{t}</button>)}
+          {([['es', 'Español'], ['en', 'English'], ['both', 'Ambos']] as const).map(([k, t]) => <button key={k} className={lang === k ? 'on' : ''} onClick={() => setL(k)}>{t}</button>)}
         </div>
         <div className="seg small-seg" role="tablist" aria-label="Modo">
-          <button className={mode === 'listen' ? 'on' : ''} onClick={() => { stopSpeech(); setMode('listen') }}>🎧 Escuchar</button>
-          <button className={mode === 'practice' ? 'on' : ''} onClick={() => { stopSpeech(); setMode('practice') }}>🎙️ Practicar como piloto</button>
+          <button className={mode === 'listen' ? 'on' : ''} onClick={() => { stopSpeech(); setMode('listen') }}>Escuchar</button>
+          <button className={mode === 'practice' ? 'on' : ''} onClick={() => { stopSpeech(); setMode('practice') }}>Practicar como piloto</button>
         </div>
         <label className="check small"><input type="checkbox" checked={notes} onChange={e => setNotes(e.target.checked)} /> Explicaciones</label>
         {!sp.prefs.enabled && <span className="small muted">La voz está desactivada (ajustes de voz)</span>}
@@ -62,10 +63,10 @@ export function RadioTrainer({ sc, back, quizKey }: { sc: RadioScenario; back: s
 function Bubble({ line, lang, notes, active, onPlay }: { line: RadioLine; lang: Lang; notes: boolean; active?: boolean; onPlay?: () => void }) {
   return (
     <div className={`bubble ${line.who === 'ATC' ? 'atc' : 'pilot'} ${active ? 'active' : ''}`}>
-      <div className="bubble-who">{line.who === 'ATC' ? '🗼 Controlador' : '🧑‍✈️ Piloto'}{onPlay && <button className="btn ghost sm" onClick={onPlay} aria-label="Escuchar mensaje">🔊</button>}</div>
+      <div className="bubble-who">{line.who === 'ATC' ? 'Controlador' : 'Piloto'}{onPlay && <button className="btn ghost sm" onClick={onPlay} aria-label="Escuchar mensaje"><Icon name="speaker" /></button>}</div>
       {lang !== 'en' && <p className="bubble-es">{lang === 'both' && <span className="flag">ES</span>}{line.es}</p>}
       {lang !== 'es' && <p className="bubble-en">{lang === 'both' && <span className="flag">EN</span>}{line.en}</p>}
-      {notes && line.note && <p className="bubble-note">💡 {line.note}</p>}
+      {notes && line.note && <p className="bubble-note">{line.note}</p>}
     </div>
   )
 }
@@ -100,8 +101,8 @@ function Listen({ sc, lang, notes }: { sc: RadioScenario; lang: Lang; notes: boo
   return (
     <div className="radio-chat-wrap">
       <div className="row gap wrap-row">
-        <button className="btn primary sm" onClick={() => (playing ? stop() : playAll(cur >= 0 && cur < sc.lines.length - 1 ? cur : 0))}>{playing ? '❚❚ Pausa' : '▶ Reproducir el intercambio'}</button>
-        <span className="small muted">Toca 🔊 en cualquier mensaje para escucharlo solo.</span>
+        <button className="btn primary sm" onClick={() => (playing ? stop() : playAll(cur >= 0 && cur < sc.lines.length - 1 ? cur : 0))}>{playing ? 'Pausa' : 'Reproducir el intercambio'}</button>
+        <span className="small muted">Toca el altavoz de cualquier mensaje para escucharlo solo.</span>
       </div>
       <div className="radio-chat" ref={listRef}>
         {sc.lines.map((l, i) => <Bubble key={i} line={l} lang={lang} notes={notes} active={i === cur} onPlay={() => { run.current++; setPlaying(false); setCur(i); playLine(i) }} />)}

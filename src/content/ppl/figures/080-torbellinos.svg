@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430">
+  <title>Flujo en envergadura, torbellinos de punta de ala, downwash y upwash, vistos desde atrás y desde arriba</title>
+  <defs>
+    <marker id="080-torbellinos-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+    <marker id="080-torbellinos-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker>
+    <marker id="080-torbellinos-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker>
+  </defs>
+  <text x="20" y="26" class="tx2">Visto desde atrás (el piloto mira hacia el fondo)</text>
+  <line x1="120" y1="112" x2="520" y2="112" class="ln thick"/>
+  <circle cx="320" cy="112" r="18" class="soft"/>
+  <path d="M120 142 A30 30 0 1 1 150 112" class="wa-ln thick" fill="none" marker-end="url(#080-torbellinos-w)"/>
+  <path d="M520 142 A30 30 0 1 0 490 112" class="wa-ln thick" fill="none" marker-end="url(#080-torbellinos-w)"/>
+  <text x="120" y="66" class="txw b" text-anchor="middle">torbellino izquierdo</text>
+  <text x="520" y="66" class="txw b" text-anchor="middle">torbellino derecho</text>
+  <text x="120" y="190" class="tx2" text-anchor="middle">sentido horario</text>
+  <text x="520" y="190" class="tx2" text-anchor="middle">sentido antihorario</text>
+  <line x1="200" y1="132" x2="200" y2="168" class="ac-ln" marker-end="url(#080-torbellinos-a)"/>
+  <line x1="255" y1="132" x2="255" y2="172" class="ac-ln" marker-end="url(#080-torbellinos-a)"/>
+  <line x1="385" y1="132" x2="385" y2="172" class="ac-ln" marker-end="url(#080-torbellinos-a)"/>
+  <line x1="440" y1="132" x2="440" y2="168" class="ac-ln" marker-end="url(#080-torbellinos-a)"/>
+  <text x="320" y="166" class="txa b" text-anchor="middle">downwash</text>
+  <text x="320" y="182" class="tx2" text-anchor="middle">(entre los torbellinos)</text>
+  <line x1="40" y1="150" x2="40" y2="116" class="ok-ln" marker-end="url(#080-torbellinos-k)"/>
+  <line x1="600" y1="150" x2="600" y2="116" class="ok-ln" marker-end="url(#080-torbellinos-k)"/>
+  <text x="40" y="168" class="txo b" text-anchor="middle">upwash</text>
+  <text x="600" y="168" class="txo b" text-anchor="middle">upwash</text>
+  <line x1="20" y1="212" x2="620" y2="212" class="ln2"/>
+  <text x="20" y="236" class="tx2">Visto desde arriba</text>
+  <ellipse cx="320" cy="288" rx="14" ry="44" class="soft"/>
+  <rect x="140" y="252" width="166" height="50" class="ac"/>
+  <rect x="334" y="252" width="166" height="50" class="ac"/>
+  <line x1="200" y1="258" x2="214" y2="294" class="ac-ln" marker-end="url(#080-torbellinos-a)"/>
+  <line x1="258" y1="258" x2="268" y2="294" class="ac-ln" marker-end="url(#080-torbellinos-a)"/>
+  <line x1="382" y1="258" x2="372" y2="294" class="ac-ln" marker-end="url(#080-torbellinos-a)"/>
+  <line x1="440" y1="258" x2="426" y2="294" class="ac-ln" marker-end="url(#080-torbellinos-a)"/>
+  <line x1="172" y1="258" x2="156" y2="294" class="wa-ln dash" marker-end="url(#080-torbellinos-w)"/>
+  <line x1="232" y1="258" x2="220" y2="294" class="wa-ln dash" marker-end="url(#080-torbellinos-w)"/>
+  <line x1="408" y1="258" x2="420" y2="294" class="wa-ln dash" marker-end="url(#080-torbellinos-w)"/>
+  <line x1="468" y1="258" x2="484" y2="294" class="wa-ln dash" marker-end="url(#080-torbellinos-w)"/>
+  <path d="M140 302 q-8 12 0 24 q8 12 0 24 q-8 12 0 24" class="wa-ln" fill="none"/>
+  <path d="M500 302 q8 12 0 24 q-8 12 0 24 q8 12 0 24" class="wa-ln" fill="none"/>
+  <text x="140" y="396" class="txw" text-anchor="middle">estela del torbellino</text>
+  <text x="500" y="396" class="txw" text-anchor="middle">estela del torbellino</text>
+  <line x1="600" y1="320" x2="600" y2="262" class="ln" marker-end="url(#080-torbellinos-k)"/>
+  <text x="600" y="338" class="tx" text-anchor="middle">vuelo</text>
+  <line x1="214" y1="352" x2="238" y2="352" class="ac-ln"/>
+  <text x="244" y="356" class="txa">extradós: hacia la raíz</text>
+  <line x1="214" y1="374" x2="238" y2="374" class="wa-ln dash"/>
+  <text x="244" y="378" class="txw">intradós: hacia la punta</text>
+  <text x="320" y="420" class="tx2" text-anchor="middle">Las dos corrientes se cruzan en el borde de salida y se enrollan en las puntas.</text>
+</svg>

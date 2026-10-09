@@ -48,12 +48,12 @@ export function GuideTour({ onClose, start = 0, autoplay = true }: { onClose: ()
         <div className="tour-top">
           <span className="eyebrow">Cómo funciona · {i + 1}/{GUIDE.length}</span>
           <div className="row gap">
-            <label className="check small"><input type="checkbox" checked={listen} onChange={e => { setListen(e.target.checked); go(i, e.target.checked) }} /> 🔊 Escuchar</label>
+            <label className="check small"><input type="checkbox" checked={listen} onChange={e => { setListen(e.target.checked); go(i, e.target.checked) }} /> Escuchar</label>
             <button className="btn ghost sm" onClick={close} aria-label="Cerrar guía">✕</button>
           </div>
         </div>
         <div className="tour-body" key={i}>
-          <div className="tour-icon">{g.icon}</div>
+          <div className="tour-n mono">{String(i + 1).padStart(2, "0")} / {String(GUIDE.length).padStart(2, "0")}</div>
           <h2>{g.title}</h2>
           {g.body.map((p, k) => <p key={k}>{p}</p>)}
         </div>

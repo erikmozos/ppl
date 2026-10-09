@@ -147,7 +147,7 @@ export function Tutorial({ ac, flow, onClose, onReview }: { ac: Aircraft; flow: 
             <p className="eyebrow">{ac.name}</p>
             <h2>{flow.name}</h2>
             <p>{flow.desc ?? `${n} pasos`}</p>
-            {sourceOf(ac.id, flow.id) && <p className="small muted">📘 Basado en: {sourceOf(ac.id, flow.id)!.section}</p>}
+            {sourceOf(ac.id, flow.id) && <p className="small muted">Basado en: {sourceOf(ac.id, flow.id)!.section}</p>}
           </div>
         )}
         {i >= n && (
@@ -166,21 +166,21 @@ export function Tutorial({ ac, flow, onClose, onReview }: { ac: Aircraft; flow: 
             <div>
               <div className="tut-c">{curC?.label}{role && ac.roles.length > 1 && <span className="role" style={{ ['--c' as string]: role.color }}>{role.name}</span>}</div>
               <div className="tut-a">{cur.a}</div>
-              {(cur.w || cur.n) && <div className="tut-w">{cur.w ?? ''} {cur.n && <em>📎 {cur.n}</em>}</div>}
-              {extended && contextFor(ac, cur.c) && <div className="tut-ctx">➕ {contextFor(ac, cur.c)}</div>}
+              {(cur.w || cur.n) && <div className="tut-w">{cur.w ?? ''} {cur.n && <em>{cur.n}</em>}</div>}
+              {extended && contextFor(ac, cur.c) && <div className="tut-ctx">{contextFor(ac, cur.c)}</div>}
             </div>
           </div>
         )}
       </div>
       <div className="tut-bar">
         <button className="btn sm" onClick={() => jump(i - 1)} aria-label="Anterior">◀</button>
-        <button className="btn primary sm" onClick={() => (playing ? pause() : playFrom(i >= n ? -1 : i))}>{playing ? '❚❚ Pausa' : '▶ Reproducir'}</button>
+        <button className="btn primary sm" onClick={() => (playing ? pause() : playFrom(i >= n ? -1 : i))}>{playing ? 'Pausa' : 'Reproducir'}</button>
         <button className="btn sm" onClick={() => jump(i + 1)} aria-label="Siguiente">▶</button>
         <div className="tut-progress"><i style={{ width: `${((i + 1) / (n + 1)) * 100}%` }} /></div>
         <span className="small muted">{Math.max(0, i + 1)}/{n}</span>
-        <label className="check small" title="Muestra y lee una explicación más amplia de cada mando"><input type="checkbox" checked={extended} onChange={e => setExtended(e.target.checked)} /> ➕ Más contexto</label>
+        <label className="check small" title="Muestra y lee una explicación más amplia de cada mando"><input type="checkbox" checked={extended} onChange={e => setExtended(e.target.checked)} /> Más contexto</label>
         {!sp.supported && <span className="small muted">Tu navegador no tiene voz</span>}
-        <button className="btn ghost sm" onClick={close}>✕ Salir</button>
+        <button className="btn ghost sm" onClick={close}>Salir</button>
       </div>
     </div>
   )
