@@ -1,0 +1,379 @@
+{
+  "lesson": {
+    "id": "070.10",
+    "title": "Emergencias del avión",
+    "summary": "Fallo de motor tras el despegue (sin volver a la pista a baja altura), fallo de motor en vuelo y fallo eléctrico, con las listas del PA-28-161 y del C172S, por qué difieren y cómo se estudian.",
+    "objectives": [
+      "Aplicar el procedimiento de fallo de motor tras el despegue y explicar por qué no se vuelve a la pista a baja altura",
+      "Seguir la lógica de un fallo de motor en vuelo (combustible, aire, ignición) y las listas del POH",
+      "Actuar ante un fallo eléctrico: reconocer, reducir carga y aterrizar",
+      "Explicar por qué las listas del PA-28-161 y del C172S difieren"
+    ],
+    "sections": [
+      {
+        "title": "Las listas del POH mandan",
+        "text": [
+          "Las emergencias de este bloque se resuelven con la **lista del POH del avión que vuelas**. Esa lista es el resultado de pruebas del fabricante con su avión y su motor, y **no es intercambiable**: la del PA-28-161 y la del C172S difieren porque los aviones difieren (carburador frente a inyección, selector LEFT/RIGHT/OFF frente a BOTH, bomba eléctrica, interruptor general). En el examen, lo que se pregunta son **principios y secuencias comunes**; en el avión, la lista exacta de tu POH.",
+          "Se estudian dos niveles: los **elementos de memoria** (acción inmediata, que se hace sin leer) y el resto, que se lee con la lista una vez estable. La primera acción de todas las emergencias es **volar el avión**: actitud, velocidad y rumbo. En tu cabina del curso tienes los procedimientos normales en #/ac/pa28 y #/ac/c172."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Fallo de motor tras el despegue",
+        "text": [
+          "Es la emergencia más crítica del vuelo ligero: poca altura, poca velocidad y pocos segundos. La acción inmediata es **bajar el morro para mantener la velocidad de planeo** (si no, la pérdida es inmediata) y **aterrizar al frente o dentro de unos ±30° de la trayectoria**, con virajes suaves y el campo más favorable de esa zona. Flaps según lo que haga falta, **cerrar combustible, mezcla, magnetos y general** antes del impacto si hay tiempo, y MAYDAY si es posible. No hay tiempo para diagnosticar: **vuela, elige, aterriza**.",
+          "**Por qué no volver a la pista a baja altura.** Para invertir el rumbo con el motor parado hay que hacer un viraje de **180° con bastante inclinación**, que aumenta la velocidad de pérdida y consume **cientos de pies** de altura, a lo que hay que sumar el tiempo de reacción del piloto (varios segundos, que son más de 200 o 300 ft de planeo). Con poca altura, el resultado habitual es una pérdida o una barrena a baja altura: el accidente típico. Por eso **por debajo de la altura que fija tu escuela, que es bastante superior a 500 ft, no se vuelve a la pista**: se aterriza al frente. Si la altura permite el viraje, es una decisión que se toma antes del despegue (briefing de salida)."
+        ],
+        "figure": "svg:070-fallo-motor",
+        "caption": "Fallo de motor a baja altura: campo dentro de unos ±30° al frente, no volver a la pista.",
+        "verify": true
+      },
+      {
+        "title": "Fallo de motor en vuelo: la lógica",
+        "text": [
+          "Con altura, se aplica la secuencia ya vista en 070.08: **velocidad de planeo**, **campo**, y **intentar resolver**. Un motor de pistón necesita **tres cosas: combustible, aire y ignición**. Con ese esquema la lista del POH se recorre en orden: **combustible** (selector en un depósito con combustible, bomba eléctrica ON, mezcla RICH), **aire** (calefacción del carburador ON en el PA-28, que es de carburador; en el C172S de inyección no hay calefacción de carburador) e **ignición** (magnetos en BOTH o prueba de L y R, y encendido en START si la hélice se ha parado). Si no se recupera, **se asegura el aterrizaje**: MAYDAY, transpondedor 7700, cinturones, cierre del combustible y de la ignición, y aterrizaje."
+        ],
+        "table": {
+          "caption": "Fallo de motor: resumen de pasos del POH (compara con tu manual)",
+          "head": [
+            "",
+            "PA-28-161 Warrior III",
+            "Cessna 172S"
+          ],
+          "rows": [
+            [
+              "Velocidad de planeo",
+              "≈ 73 KIAS",
+              "≈ 68 KIAS, flaps arriba"
+            ],
+            [
+              "Combustible",
+              "Selector en otro depósito; bomba eléctrica ON; mezcla RICH",
+              "Selector en BOTH; bomba auxiliar ON; mezcla RICH"
+            ],
+            [
+              "Aire",
+              "Calefacción de carburador ON",
+              "No aplica (inyección)"
+            ],
+            [
+              "Ignición",
+              "Magnetos: prueba L y R; a BOTH",
+              "Llave en BOTH (START si la hélice está parada)"
+            ],
+            [
+              "Si no hay potencia",
+              "Aterrizaje sin motor: combustible, magnetos y general cerrados",
+              "Aterrizaje sin motor: mezcla IDLE CUT-OFF, combustible OFF, ignición OFF, general OFF"
+            ]
+          ],
+          "src": "POH PA-28-161 y C172S (resumen)"
+        },
+        "note": {
+          "kind": "warn",
+          "text": "Este cuadro es un resumen para entender la lógica y puede variar con la edición del POH. Estudia la lista de tu manual."
+        },
+        "verify": true
+      },
+      {
+        "title": "Fallo eléctrico",
+        "text": [
+          "Si el alternador falla (indicador o luz de carga, amperímetro negativo, tensión baja), el avión sigue volando con **la batería**, que dura **unos 30 minutos** con la carga mínima (verifica el dato en tu POH). La acción es: **comprobar** (luz, amperímetro), **intentar restablecer** (interruptor del alternador OFF y ON, disyuntores sin reponer los que han saltado por fallo), **reducir la carga** (apagar lo no esencial), **aterrizar en el aeródromo adecuado más próximo**. Prepara el aterrizaje sin flaps eléctricos en el C172S si hay fallo total: baja los flaps con tiempo o aterriza sin ellos. En el PA-28, los flaps son manuales, no dependen de la electricidad.",
+          "Un fallo eléctrico total pierde la radio y el transpondedor: usa las **señales luminosas** y los códigos de fallo de comunicaciones (7600), y sigue las reglas de la carta."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Otras emergencias frecuentes",
+        "bullets": [
+          "**Fallo parcial de potencia:** vuela a velocidad de planeo y busca campo; la potencia parcial es un problema que puede empeorar.",
+          "**Hielo de carburador:** calefacción ON completa y potencia, según el POH (en el PA-28).",
+          "**Pérdida de presión de aceite o temperatura alta:** reducir potencia y aterrizar cuanto antes; el motor puede fallar.",
+          "**Fuego:** bloque 070.05.",
+          "**Puerta abierta en vuelo:** vuela el avión; cierra solo si es seguro; no te agaches."
+        ]
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Intentar el viraje de vuelta tras el despegue con poca altura.",
+          "Bajar el morro tarde y entrar en pérdida.",
+          "Buscar la causa sin volar el avión.",
+          "Aplicar la lista de un avión en otro.",
+          "No avisar por radio porque «no hay tiempo» (se avisa tras estabilizar el planeo)."
+        ]
+      }
+    ],
+    "numbers": [
+      "Fallo de motor tras el despegue: morro abajo, velocidad de planeo, aterrizar al frente dentro de ±30°",
+      "No se vuelve a la pista a baja altura: el viraje de 180° consume cientos de pies",
+      "Un motor necesita combustible, aire e ignición",
+      "Listas distintas entre PA-28-161 y C172S: estudiar la del POH de tu avión",
+      "Fallo eléctrico: reducir carga y aterrizar en el aeródromo adecuado más próximo"
+    ],
+    "traps": [
+      "«Volver a la pista» a baja altura es la causa clásica de pérdida y barrena.",
+      "Las listas del PA-28 y del C172S no se pueden intercambiar.",
+      "Primero se vuela el avión; el diagnóstico va después.",
+      "El campo se elige dentro de ±30° al frente tras un fallo a baja altura."
+    ],
+    "sources": [
+      {
+        "title": "Piper PA-28-161 Warrior III y Cessna 172S: POH, sección 3 Emergency Procedures"
+      },
+      {
+        "title": "FAA, Airplane Flying Handbook (FAA-H-8083-3C), cap. 18",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+      },
+      {
+        "title": "EASA, Easy Access Rules for Air Operations (Part-NCO, AMC y GM)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "070.10.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "Fallo de motor a 300 ft tras el despegue en un monomotor. Lo correcto es:",
+      "options": [
+        "Virar 180° y volver a la pista",
+        "Bajar el morro para planear y aterrizar al frente, con virajes suaves",
+        "Mantener el morro alto para ganar altura",
+        "Intentar el rearranque antes de nada"
+      ],
+      "correct": 1,
+      "why": "Primero la velocidad de planeo; el giro de 180° a baja altura acaba en pérdida o barrena.",
+      "whyNot": [
+        "El viraje consume mucha altura.",
+        null,
+        "Con el morro alto se entra en pérdida.",
+        "Antes hay que mantener la velocidad."
+      ],
+      "ref": "POH; FAA AFH"
+    },
+    {
+      "id": "070.10.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Por qué no se vuelve a la pista a baja altura tras un fallo de motor?",
+      "options": [
+        "Porque la pista está siempre ocupada",
+        "Porque el ATC lo prohíbe",
+        "Porque el viento siempre es de cola",
+        "Porque el viraje de 180° exige muchos pies y velocidad y suele acabar en pérdida o barrena"
+      ],
+      "correct": 3,
+      "why": "La combinación de pérdida de altura, inclinación y reacción lo hace peligroso.",
+      "whyNot": [
+        "No es la razón.",
+        "No es una norma del ATC.",
+        "No es una razón general.",
+        null
+      ],
+      "ref": "FAA AFH; Safety Sense"
+    },
+    {
+      "id": "070.10.003",
+      "type": "regla",
+      "level": 2,
+      "q": "Tras un fallo de motor a baja altura, los campos candidatos para aterrizar se buscan:",
+      "options": [
+        "Al frente y dentro de unos ±30° de la trayectoria",
+        "Detrás del avión",
+        "A 90° a cada lado",
+        "Solo en la pista"
+      ],
+      "correct": 0,
+      "why": "Es el sector al que puedes llegar con virajes suaves.",
+      "whyNot": [
+        null,
+        "Exige viraje de 180°.",
+        "Exige virajes cerrados.",
+        "No siempre es posible."
+      ],
+      "ref": "FAA AFH"
+    },
+    {
+      "id": "070.10.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un motor de pistón necesita para funcionar:",
+      "options": [
+        "Solo combustible",
+        "Combustible y electricidad",
+        "Combustible, aire e ignición",
+        "Aire y presión de aceite"
+      ],
+      "correct": 2,
+      "why": "La lista de fallo de motor repasa esos tres elementos.",
+      "whyNot": [
+        "Falta aire e ignición.",
+        "La electricidad no es esencial para el motor.",
+        null,
+        "Falta el combustible."
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "070.10.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con fallo de potencia en un PA-28, ¿cuál de estos pasos puede ser parte de la lista?",
+      "options": [
+        "Mezcla pobre y gases a fondo",
+        "Flaps fuera y tren abajo",
+        "Magnetos OFF directamente",
+        "Calefacción de carburador ON"
+      ],
+      "correct": 3,
+      "why": "El Warrior es de carburador; se comprueba el hielo con la calefacción.",
+      "whyNot": [
+        "No es el paso.",
+        "No es el paso.",
+        "Se prueba L y R, no se apaga todo.",
+        null
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "070.10.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué diferencia hay entre el fallo de motor del C172S y el del PA-28 respecto al carburador?",
+      "options": [
+        "El C172S, de inyección, no tiene calefacción de carburador",
+        "El C172S tiene dos carburadores",
+        "El PA-28 no tiene mezcla",
+        "Ninguna diferencia"
+      ],
+      "correct": 0,
+      "why": "La configuración del motor cambia la lista.",
+      "whyNot": [
+        null,
+        "No tiene carburador.",
+        "Sí tiene mezcla.",
+        "Las listas son distintas."
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "070.10.007",
+      "type": "regla",
+      "level": 1,
+      "q": "Con un fallo eléctrico, el avión puede seguir volando durante un tiempo con:",
+      "options": [
+        "La hélice",
+        "Los magnetos",
+        "La batería",
+        "El altímetro"
+      ],
+      "correct": 2,
+      "why": "Los magnetos mantienen el motor; la batería alimenta radio e instrumentos eléctricos.",
+      "whyNot": [
+        "No es una fuente eléctrica.",
+        "Los magnetos son del motor.",
+        null,
+        "No es una fuente."
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "070.10.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "Ante un fallo del alternador, la acción prioritaria es:",
+      "options": [
+        "Continuar al destino sin cambios",
+        "Reducir la carga eléctrica y aterrizar en el aeródromo adecuado más próximo",
+        "Encender todos los equipos",
+        "Apagar la batería"
+      ],
+      "correct": 1,
+      "why": "La batería es limitada: reduce la carga y aterriza.",
+      "whyNot": [
+        "La batería se agota.",
+        null,
+        "Aceleraría el agotamiento.",
+        "Quedarías sin nada."
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "070.10.009",
+      "type": "concepto",
+      "level": 1,
+      "q": "La primera acción ante cualquier emergencia es:",
+      "options": [
+        "Llamar por radio",
+        "Volar el avión",
+        "Abrir la puerta",
+        "Leer la lista completa"
+      ],
+      "correct": 1,
+      "why": "Controlar actitud, velocidad y rumbo viene primero.",
+      "whyNot": [
+        "Se hace después.",
+        null,
+        "No es la prioridad.",
+        "Se hace tras estabilizar."
+      ],
+      "ref": "POH; FAA AFH"
+    },
+    {
+      "id": "070.10.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Por qué difieren las listas de emergencia del PA-28-161 y del C172S?",
+      "options": [
+        "Porque las escribe cada escuela",
+        "Porque una está obsoleta",
+        "Porque cambian con el viento",
+        "Porque cada fabricante certifica la suya según la configuración de su avión"
+      ],
+      "correct": 3,
+      "why": "Motor, combustible y eléctrico distintos exigen listas distintas.",
+      "whyNot": [
+        "La lista la aprueba el fabricante.",
+        "No es una cuestión de edad.",
+        "No depende del viento.",
+        null
+      ],
+      "ref": "POH"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.070.10.01",
+      "front": "Fallo de motor tras el despegue",
+      "back": "Morro abajo a velocidad de planeo y aterrizar al frente (dentro de ±30°); no volver a la pista a baja altura"
+    },
+    {
+      "id": "c.070.10.02",
+      "front": "Un motor necesita",
+      "back": "Combustible, aire e ignición: la lista del POH repasa los tres"
+    },
+    {
+      "id": "c.070.10.03",
+      "front": "Listas del PA-28 y del C172S",
+      "back": "Son distintas porque los aviones son distintos: carburador/inyección, selector, bomba, general"
+    },
+    {
+      "id": "c.070.10.04",
+      "front": "Fallo eléctrico",
+      "back": "Reducir carga, no reponer el disyuntor averiado y aterrizar en el aeródromo adecuado más próximo"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+<title>Fallo de motor tras el despegue: aterrizar de frente o dentro de unos 30 grados a cada lado de la trayectoria, sin volver a la pista a baja altura</title>
+<defs><marker id="070-efato-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker></defs>
+<rect x="0" y="0" width="640" height="420" class="ground"/>
+<rect x="290" y="300" width="60" height="80" class="soft"/>
+<text x="320" y="345" class="tx b" text-anchor="middle">pista</text>
+<path d="M320 230 L210 40 L430 40 Z" class="ok" opacity="0.6"/>
+<text x="320" y="84" class="txo b" text-anchor="middle">campos dentro</text><text x="320" y="102" class="txo b" text-anchor="middle">de ±30° al frente</text>
+<line x1="320" y1="300" x2="320" y2="236" class="ac-ln thick" marker-end="url(#070-efato-k)"/>
+<circle cx="320" cy="230" r="6" class="wa-fill"/>
+<text x="332" y="226" class="txw b">fallo de motor</text>
+<text x="332" y="244" class="tx2">a baja altura</text>
+<path d="M312 226 C220 210 190 290 280 330" class="wa-ln thick dash" fill="none" marker-end="url(#070-efato-k)"/>
+<text x="150" y="228" class="txw b" text-anchor="end">volver a la pista:</text>
+<text x="150" y="246" class="txw b" text-anchor="end">NO a baja altura</text>
+<text x="20" y="26" class="tx b">Fallo de motor tras el despegue (planta)</text>
+<text x="20" y="410" class="tx2">Baja el morro, vuela la velocidad de planeo y aterriza al frente con virajes suaves.</text>
+</svg>

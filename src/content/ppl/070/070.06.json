@@ -1,0 +1,385 @@
+{
+  "lesson": {
+    "id": "070.06",
+    "title": "Cizalladura y microrráfaga",
+    "summary": "Qué es la cizalladura a baja altura, cómo se forma una microrráfaga, cómo reconocerla en el despegue y en la aproximación, cómo evitarla y qué hacer si te la encuentras.",
+    "objectives": [
+      "Definir cizalladura y microrráfaga y explicar su origen",
+      "Describir la secuencia de efectos en la aproximación: viento de cara, descendente y viento de cola",
+      "Reconocer las señales y las condiciones favorables",
+      "Aplicar las medidas de evitación y la maniobra de escape"
+    ],
+    "sections": [
+      {
+        "title": "Qué es la cizalladura",
+        "text": [
+          "La **cizalladura del viento** (*wind shear*) es un cambio brusco de la velocidad, de la dirección del viento o de ambas, en una distancia corta. Puede ser horizontal o vertical. A baja altura es peligrosa porque el avión vuela con poca energía y poco margen: en la salida y en la aproximación, un cambio de unos pocos segundos puede hacer perder o ganar mucha velocidad indicada y altura. Las causas principales son: las **tormentas y las microrráfagas**, los **frentes**, las **inversiones térmicas con viento fuerte en altura** (chorro de capas bajas), la **brisa marina** y los **obstáculos y el terreno** (rotores, estelas de edificios)."
+        ]
+      },
+      {
+        "title": "La microrráfaga",
+        "text": [
+          "La **microrráfaga** (*microburst*) es una corriente descendente intensa y localizada, normalmente asociada a una tormenta o a un cúmulo con lluvia, que al llegar al suelo **se abre en abanico en todas direcciones**. Su diámetro horizontal es de unos **4 km o menos**, y su duración, de unos **5 a 15 minutos**, con picos de pocos minutos. La corriente descendente puede alcanzar varios miles de pies por minuto, y el viento horizontal de salida, decenas de nudos. Puede darse con lluvia (microrráfaga húmeda) o sin ella (seca, con virga que se evapora antes de llegar al suelo). Su efecto en un avión ligero puede superar su capacidad de ascenso."
+        ],
+        "figure": "svg:050-microrrafaga",
+        "caption": "Microrráfaga: corriente descendente que se abre en abanico al llegar al suelo."
+      },
+      {
+        "title": "Efecto en la aproximación y en el despegue",
+        "text": [
+          "Un avión que cruza una microrráfaga en la aproximación experimenta, en pocos segundos, **tres fases**: primero un **viento de cara** (la IAS sube y el avión se eleva sobre la senda), luego la **corriente descendente** (el régimen de descenso aumenta) y por último un **viento de cola** (la IAS cae y el avión se hunde por debajo de la senda). El error clásico es reducir potencia en la primera fase, porque parece que sobra velocidad: cuando llega la tercera, no hay ni velocidad ni altura. En el **despegue** pasa igual: tras rotar, la corriente descendente y el viento de cola te dejan sin margen para ascender."
+        ],
+        "figure": "svg:070-cizalladura",
+        "caption": "Efecto de una microrráfaga en la aproximación: viento de cara, hundimiento y viento de cola."
+      },
+      {
+        "title": "Señales de aviso y condiciones favorables",
+        "bullets": [
+          "Tormentas o cúmulos con lluvia intensa cerca del aeródromo y de la senda; **virga** (lluvia que no llega al suelo).",
+          "**Nube de polvo o remolino** en forma de anillo en el suelo, humo que se abre en abanico, olas en el agua.",
+          "Cambios de viento y rachas fuertes notificados en el METAR (**WS** en el aeródromo) o por los pilotos (PIREP).",
+          "Cambios bruscos de IAS o de régimen de descenso sin cambios de potencia; la brújula o el rumbo cambian sin motivo.",
+          "Inversión térmica con viento fuerte a 1000–2000 ft: cizalladura vertical a baja altura, sobre todo de noche.",
+          "Información del ATIS o de la torre sobre cizalladura, y sistemas del aeródromo (LLWAS) donde existan."
+        ]
+      },
+      {
+        "title": "Cómo evitarla",
+        "bullets": [
+          "**No despegues ni aproximes con tormentas en las inmediaciones.** Si hay una tormenta cerca de la trayectoria, **espera** a que pase o ve a un alternativo. Una regla de uso común es mantener al menos 3 NM de distancia a la tormenta en la aproximación o en la salida.",
+          "**Informa de lo que veas** y atiende los avisos meteorológicos del aeródromo.",
+          "Con rachas fuertes, **añade a la velocidad de aproximación** la mitad del factor de ráfagas (diferencia entre racha y viento medio), sin pasar de los límites del POH (mejor margen sobre la pérdida).",
+          "Con viento de cara fuerte, aproximación estabilizada, no demasiado baja, con potencia suficiente para dar margen de ascenso.",
+          "**Decide pronto la ida al aire** si la aproximación no es estable o si la IAS varía mucho."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Maniobra de escape",
+        "text": [
+          "Si encuentras cizalladura severa en la aproximación (variación brusca de la IAS, desviación grande de la senda, régimen de descenso alto), **no continúes**: haz la maniobra de escape, que en un avión ligero se resume así: **potencia máxima de inmediato**, **mantén las alas niveladas**, **eleva el morro hasta obtener el mejor ascenso** posible, aceptando acercarte al aviso de pérdida (nunca más allá), **no cambies la configuración** (flaps y tren como estén, salvo que el POH diga otra cosa) hasta salir de la zona, y **no persigas la IAS**: una caída momentánea es normal. Cuando estés en ascenso estable, notifica al ATC.",
+          "En el **despegue**, si notas pérdida de rendimiento tras la rotación, aplica potencia máxima, mantén el morro al ángulo de ascenso y no vuelvas la cabeza hacia dentro. Mejor aún: si el viento o el tiempo son dudosos, **no despegues**."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Reducir potencia en la fase de viento de cara.",
+          "Cambiar la configuración (retraer flaps) en plena maniobra de escape.",
+          "Picar para «recuperar velocidad» en lugar de mantener la actitud de ascenso.",
+          "Seguir la aproximación «por si pasa» con una tormenta junto a la pista.",
+          "Despegar con virga o lluvia intensa cerca de la pista."
+        ]
+      }
+    ],
+    "numbers": [
+      "Microrráfaga: diámetro de unos 4 km o menos y duración de pocos minutos (hasta ~15)",
+      "Secuencia en la aproximación: viento de cara, corriente descendente, viento de cola",
+      "Escape: potencia máxima, alas niveladas, morro hasta el mejor ascenso, sin cambiar la configuración",
+      "Con rachas, añadir la mitad del factor de ráfagas a la velocidad de aproximación",
+      "No operar con tormentas cerca de la trayectoria"
+    ],
+    "traps": [
+      "Con el viento de cara inicial no se reduce potencia.",
+      "En la maniobra de escape no se cambia la configuración ni se pica.",
+      "Una IAS que sube de golpe en aproximación puede ser el primer síntoma de una microrráfaga.",
+      "La cizalladura puede darse sin tormenta (inversión, brisa, terreno)."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Advisory Circular AC 00-54 Pilot Windshear Guide"
+      },
+      {
+        "title": "AEMET, Guía de Meteorología Aeronáutica AU-GUI-0102",
+        "url": "https://www.aemet.es/documentos/es/conocermas/aeronautica/AU-GUI-0102.pdf"
+      },
+      {
+        "title": "EASA, Easy Access Rules for Air Operations (Part-NCO, AMC y GM)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "070.06.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La cizalladura del viento es:",
+      "options": [
+        "Un viento constante de más de 30 kt",
+        "Un cambio brusco de la velocidad o de la dirección del viento en una distancia corta",
+        "Un descenso gradual de la temperatura",
+        "Una nube de gran desarrollo"
+      ],
+      "correct": 1,
+      "why": "Puede ser horizontal o vertical y es especialmente peligrosa a baja altura.",
+      "whyNot": [
+        "No es un viento constante.",
+        null,
+        "No es un fenómeno térmico.",
+        "No es un tipo de nube."
+      ],
+      "ref": "AEMET; FAA AC 00-54"
+    },
+    {
+      "id": "070.06.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una microrráfaga es:",
+      "options": [
+        "Una racha de viento ascendente",
+        "Un tipo de frente cálido",
+        "Un viento de montaña",
+        "Una corriente descendente intensa y localizada que se abre en abanico al llegar al suelo"
+      ],
+      "correct": 3,
+      "why": "Está asociada a tormentas o cúmulos con lluvia.",
+      "whyNot": [
+        "Es descendente.",
+        "No es un frente.",
+        "No es un viento de montaña.",
+        null
+      ],
+      "ref": "AEMET; Guía MET"
+    },
+    {
+      "id": "070.06.003",
+      "type": "regla",
+      "level": 2,
+      "q": "El diámetro horizontal típico de una microrráfaga es de:",
+      "options": [
+        "Unos 4 km o menos",
+        "Unos 40 km",
+        "Más de 100 km",
+        "Unos 400 km"
+      ],
+      "correct": 0,
+      "why": "Es un fenómeno local y breve, de pocos minutos a unos 15.",
+      "whyNot": [
+        null,
+        "Eso es una tormenta organizada.",
+        "Eso es una escala sinóptica.",
+        "Eso es una escala sinóptica."
+      ],
+      "ref": "Guía MET"
+    },
+    {
+      "id": "070.06.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "En la aproximación, el primer efecto de una microrráfaga suele ser:",
+      "options": [
+        "Viento de cola inmediato",
+        "Pérdida de potencia del motor",
+        "Viento de cara: la IAS sube y el avión se eleva sobre la senda",
+        "Cambio de rumbo"
+      ],
+      "correct": 2,
+      "why": "Es el abanico de salida de la corriente descendente.",
+      "whyNot": [
+        "El viento de cola llega después.",
+        "No es un efecto en el motor.",
+        null,
+        "No es el primer efecto."
+      ],
+      "ref": "FAA AC 00-54"
+    },
+    {
+      "id": "070.06.005",
+      "type": "concepto",
+      "level": 3,
+      "q": "La secuencia típica de una microrráfaga en la aproximación es:",
+      "options": [
+        "Viento de cola, descendente y viento de cara",
+        "Corriente ascendente y viento de cara",
+        "Turbulencia sin cambio de viento",
+        "Viento de cara, corriente descendente y viento de cola"
+      ],
+      "correct": 3,
+      "why": "Es la secuencia de pasar por el abanico y el núcleo.",
+      "whyNot": [
+        "Es al revés.",
+        "No hay una ascendente.",
+        "Hay cambio de viento.",
+        null
+      ],
+      "ref": "FAA AC 00-54"
+    },
+    {
+      "id": "070.06.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con una IAS que sube de golpe en la aproximación, el error más peligroso es:",
+      "options": [
+        "Reducir potencia y perder el margen para la fase posterior de viento de cola",
+        "Mantener la potencia",
+        "Aumentar la velocidad",
+        "Hacer una ida al aire"
+      ],
+      "correct": 0,
+      "why": "Reducir potencia en la fase de viento de cara te deja sin margen cuando llega la corriente descendente y el viento de cola.",
+      "whyNot": [
+        null,
+        "No es un error.",
+        "No es el error.",
+        "Es la acción segura."
+      ],
+      "ref": "FAA AC 00-54"
+    },
+    {
+      "id": "070.06.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "Ante una microrráfaga severa en la aproximación, la maniobra de escape de un avión ligero consiste en:",
+      "options": [
+        "Reducir potencia y picar",
+        "Retraer flaps y virar",
+        "Potencia máxima, alas niveladas y morro hasta el mejor ascenso sin cambiar la configuración",
+        "Mantener potencia y aterrizar largo"
+      ],
+      "correct": 2,
+      "why": "Se prioriza no perder altura sin llegar al aviso de pérdida.",
+      "whyNot": [
+        "Reducir potencia sería fatal.",
+        "Cambiar la configuración puede perder sustentación.",
+        null,
+        "No se continúa la aproximación."
+      ],
+      "ref": "FAA AC 00-54; POH"
+    },
+    {
+      "id": "070.06.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál de estas es una señal de microrráfaga cercana?",
+      "options": [
+        "Cielo despejado y viento flojo",
+        "Una nube de polvo en forma de anillo en el suelo",
+        "Niebla de radiación",
+        "Una nube lenticular"
+      ],
+      "correct": 1,
+      "why": "El abanico de salida levanta polvo en forma de anillo.",
+      "whyNot": [
+        "No hay señal.",
+        null,
+        "Es otro fenómeno.",
+        "Es una nube de onda de montaña."
+      ],
+      "ref": "FAA AC 00-54"
+    },
+    {
+      "id": "070.06.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué conviene hacer si hay una tormenta cerca de la senda de aproximación?",
+      "options": [
+        "Aproximar rápido antes de que llegue",
+        "Esperar a que pase o ir a un alternativo",
+        "Reducir potencia al mínimo",
+        "Ignorar la tormenta si hay pista libre"
+      ],
+      "correct": 1,
+      "why": "No se opera con tormentas en las inmediaciones del aeródromo.",
+      "whyNot": [
+        "Es peligroso.",
+        null,
+        "No es la medida.",
+        "No es una condición segura."
+      ],
+      "ref": "Buenas prácticas"
+    },
+    {
+      "id": "070.06.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con rachas fuertes, la corrección habitual a la velocidad de aproximación es:",
+      "options": [
+        "No cambiar la velocidad",
+        "Reducirla un 10 %",
+        "Añadir el doble del factor de ráfagas",
+        "Añadir la mitad del factor de ráfagas, sin salirse de los límites del POH"
+      ],
+      "correct": 3,
+      "why": "Es una práctica extendida para más margen sobre la pérdida.",
+      "whyNot": [
+        "Hay que corregir.",
+        "No ayuda.",
+        "Es excesivo.",
+        null
+      ],
+      "ref": "FAA; práctica"
+    },
+    {
+      "id": "070.06.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Puede haber cizalladura peligrosa sin tormenta?",
+      "options": [
+        "Sí, por inversiones con viento fuerte en altura, brisas, frentes o terreno",
+        "No, solo con tormentas",
+        "Solo con niebla",
+        "Solo en vuelo nocturno"
+      ],
+      "correct": 0,
+      "why": "Hay otras causas de cizalladura a baja altura.",
+      "whyNot": [
+        null,
+        "No es exclusiva de las tormentas.",
+        "No depende de la niebla.",
+        "Puede ocurrir a cualquier hora."
+      ],
+      "ref": "AEMET"
+    },
+    {
+      "id": "070.06.012",
+      "type": "concepto",
+      "level": 3,
+      "q": "En la secuencia de la microrráfaga, el viento de cola de la fase final provoca:",
+      "options": [
+        "Un aumento de la IAS",
+        "Mayor sustentación",
+        "Una caída de la IAS y que el avión se hunda por debajo de la senda",
+        "Un descenso más suave"
+      ],
+      "correct": 2,
+      "why": "Es el momento de mayor peligro: poca energía y poca altura.",
+      "whyNot": [
+        "Disminuye la IAS.",
+        "Reduce la sustentación.",
+        null,
+        "El descenso es más rápido."
+      ],
+      "ref": "FAA AC 00-54"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.070.06.01",
+      "front": "Microrráfaga",
+      "back": "Corriente descendente intensa y localizada (≤ 4 km, pocos minutos) que se abre en abanico al llegar al suelo"
+    },
+    {
+      "id": "c.070.06.02",
+      "front": "Secuencia en la aproximación",
+      "back": "Viento de cara (IAS sube), corriente descendente, viento de cola (IAS cae)"
+    },
+    {
+      "id": "c.070.06.03",
+      "front": "Escape de cizalladura",
+      "back": "Potencia máxima, alas niveladas, morro al mejor ascenso, sin cambiar la configuración ni picar"
+    }
+  ]
+}

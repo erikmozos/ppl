@@ -1,0 +1,435 @@
+{
+  "lesson": {
+    "id": "070.09",
+    "title": "Pistas contaminadas",
+    "summary": "Cómo afectan el agua, la nieve fundente, la nieve y el hielo a la pista: tipos de contaminación, rozamiento y eficacia de frenado, formato global de notificación del estado de pista (RWYCC) e hidroplaneo.",
+    "objectives": [
+      "Distinguir pista seca, mojada y contaminada y los tipos de contaminante",
+      "Interpretar el código de estado de pista RWYCC de 6 a 0",
+      "Explicar el hidroplaneo y calcular su velocidad aproximada",
+      "Conocer los efectos en las distancias y las precauciones"
+    ],
+    "sections": [
+      {
+        "title": "Pista seca, mojada y contaminada",
+        "text": [
+          "Una pista está **seca** si no tiene humedad visible. Está **mojada** si la superficie tiene humedad o una capa de agua de **menos de 3 mm**: se nota el brillo pero no hay agua estancada. Está **contaminada** cuando una parte importante de la superficie (más del 25 %) está cubierta de agua estancada de **más de 3 mm**, nieve fundente, nieve (seca, mojada o compactada) o hielo. La contaminación reduce el **rozamiento** entre el neumático y el suelo y, con ello, la eficacia de frenado y el control direccional.",
+          "Hay dos efectos distintos: el contaminante **reduce la fricción** (el frenado es peor y la pista es resbaladiza) y, si es agua, nieve fundente o nieve blanda, **añade resistencia al avance** al despegar (arrastre del contaminante). Ambos alargan las distancias de despegue y aterrizaje, y pueden impedir un despegue seguro."
+        ]
+      },
+      {
+        "title": "Rozamiento y eficacia de frenado",
+        "text": [
+          "La **eficacia de frenado** (*braking action*) se describe con una escala de **buena** a **menos que mala**, que resume qué rozamiento esperas. En el mensaje de estado de pista aparece como código y como palabra: **buena**, **buena a media**, **media**, **media a mala**, **mala** y **menos que mala**. El rozamiento disminuye con la velocidad: cuanto más rápido, peor frenan los neumáticos sobre una película de agua."
+        ]
+      },
+      {
+        "title": "Formato global de notificación (RWYCC)",
+        "text": [
+          "Desde noviembre de 2020 los aeródromos notifican el estado de la pista con el **formato global de notificación** (GRF) de la OACI. Cada **tercio de la pista** recibe un **código de estado de pista** (RWYCC, *runway condition code*) de **6 (seca) a 0**, según el tipo y la profundidad del contaminante. Se acompaña de la **cobertura** (porcentaje), la **profundidad** y una descripción del contaminante. Lo importante para ti es el RWYCC: un número alto es buena adherencia, y un 0 o un 1, una pista muy peligrosa."
+        ],
+        "table": {
+          "caption": "Código de estado de pista (RWYCC) y eficacia de frenado, resumen",
+          "head": [
+            "RWYCC",
+            "Eficacia de frenado",
+            "Condición típica"
+          ],
+          "rows": [
+            [
+              "6",
+              "—",
+              "Pista seca"
+            ],
+            [
+              "5",
+              "Buena",
+              "Escarcha; mojada o con agua, nieve fundente o nieve de hasta 3 mm"
+            ],
+            [
+              "4",
+              "Buena a media",
+              "Nieve compactada a −15 °C o menos"
+            ],
+            [
+              "3",
+              "Media",
+              "Mojada «resbaladiza»; nieve de más de 3 mm; nieve compactada a más de −15 °C"
+            ],
+            [
+              "2",
+              "Media a mala",
+              "Más de 3 mm de agua o nieve fundente"
+            ],
+            [
+              "1",
+              "Mala",
+              "Hielo"
+            ],
+            [
+              "0",
+              "Menos que mala",
+              "Hielo mojado; agua sobre nieve compactada; nieve sobre hielo"
+            ]
+          ],
+          "src": "OACI Anexo 14; Doc 10064 (resumen)"
+        },
+        "figure": "svg:070-rwycc",
+        "caption": "Código de estado de pista de 6 a 0, un valor por tercio de pista.",
+        "verify": true
+      },
+      {
+        "title": "Hidroplaneo (aquaplaning)",
+        "text": [
+          "El **hidroplaneo** ocurre cuando una película de agua separa el neumático del suelo y el avión **pierde frenado y control direccional**. Hay tres tipos: **dinámico** (el agua levanta el neumático por velocidad: el más típico con agua estancada), **viscoso** (sobre una película muy fina en superficies lisas o con goma depositada) y **de goma revertida** (con ruedas bloqueadas: el calor vaporiza el agua y la goma se derrite sobre ella).",
+          "La velocidad a la que empieza el hidroplaneo dinámico depende de la **presión de inflado**: **V ≈ 9 × √p** (V en kt, p en psi). Con 36 psi: 9 × 6 = **54 kt**. Con 24 psi: 9 × 4,9 = 44 kt. La presión más alta eleva la velocidad crítica. Una vez iniciado, el hidroplaneo **se mantiene hasta velocidades menores**."
+        ],
+        "formulas": [
+          {
+            "f": "V hidroplaneo (kt) ≈ 9 · √p (psi)",
+            "note": "Dinámico; con p = 36 psi, 54 kt"
+          }
+        ],
+        "examples": [
+          {
+            "q": "Neumáticos a 36 psi: velocidad aproximada de hidroplaneo.",
+            "a": "9 × √36 = 9 × 6 = 54 kt."
+          },
+          {
+            "q": "Neumáticos a 25 psi.",
+            "a": "V ≈ 9 × √p = 9 × √25 = 9 × 5 = 45 kt."
+          }
+        ]
+      },
+      {
+        "title": "Efectos en las distancias y precauciones",
+        "bullets": [
+          "Con agua o nieve fundente en la pista, el **despegue** puede ser mucho más largo por el arrastre del contaminante. Un avión ligero **no debe despegar con nieve fundente o agua estancada** significativos; los manuales de los aviones ligeros no dan datos para ello.",
+          "En **aterrizaje**, la distancia sobre pista mojada se alarga de forma importante (como referencia, +15 % o más en las normas de transporte), y sobre contaminada mucho más. Usa los factores del manual de tu avión.",
+          "Aterriza **sin exceso de velocidad**, con **toma firme** en la zona de toma, sin flotar. Usa el **frenado aerodinámico** (alas niveladas, morro alto un poco) antes de los frenos, **frena suave** y sin bloquear ruedas.",
+          "Evita el viento cruzado fuerte con pista resbaladiza: el control direccional falla antes. Reduce los límites de viento cruzado.",
+          "Si la pista es **mala o menos que mala** (RWYCC 0–1), no es lugar para un avión ligero: elige otra pista u otro aeródromo.",
+          "Consulta el **NOTAM** o el parte de estado de pista antes de salir y de llegar."
+        ]
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Pensar que una pista «un poco mojada» no afecta a la distancia.",
+          "Frenar fuerte justo al tocar y bloquear ruedas.",
+          "No tener en cuenta el viento cruzado con rozamiento bajo.",
+          "Confundir el RWYCC 6 (seca) con el 0 (peor).",
+          "Aterrizar con exceso de velocidad por el miedo a la pérdida."
+        ]
+      }
+    ],
+    "numbers": [
+      "Mojada: menos de 3 mm de agua; contaminada: agua de más de 3 mm, nieve fundente, nieve o hielo (más del 25 % de la pista)",
+      "RWYCC de 6 (seca) a 0 (menos que mala), un código por tercio de pista",
+      "Hidroplaneo dinámico: V ≈ 9 × √p (psi), en kt",
+      "Con 36 psi, 54 kt",
+      "Frenado: aerodinámico primero, luego frenos suaves"
+    ],
+    "traps": [
+      "El RWYCC 6 es pista seca; el 0, la peor condición.",
+      "En aterrizaje sobre pista mojada, la distancia aumenta aunque no haya agua estancada.",
+      "El hidroplaneo depende de la presión del neumático, no del peso del avión.",
+      "No se bloquean las ruedas en hidroplaneo."
+    ],
+    "sources": [
+      {
+        "title": "OACI, Anexo 14 y Doc 10064 Aeroplane Performance Manual (matriz de evaluación del estado de pista)"
+      },
+      {
+        "title": "FAA, Airplane Flying Handbook (FAA-H-8083-3C)",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+      },
+      {
+        "title": "ENAIRE, AIP España (GEN 1.7, ENR 1.10, AD)",
+        "url": "https://aip.enaire.es"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "070.09.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "Una pista se considera contaminada cuando tiene:",
+      "options": [
+        "Cualquier humedad visible",
+        "Agua de más de 3 mm, nieve fundente, nieve o hielo en una parte importante",
+        "Una película fina de agua",
+        "Polvo en la superficie"
+      ],
+      "correct": 1,
+      "why": "La humedad o una película fina es pista mojada; el contaminante significativo la hace contaminada.",
+      "whyNot": [
+        "Eso es pista mojada.",
+        null,
+        "Eso es pista mojada.",
+        "No es contaminante."
+      ],
+      "ref": "OACI Anexo 14"
+    },
+    {
+      "id": "070.09.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "La contaminación de la pista produce:",
+      "options": [
+        "Mayor rozamiento",
+        "Menor distancia de despegue",
+        "Menor distancia de aterrizaje",
+        "Menor rozamiento y, con agua o nieve fundente, mayor arrastre en el despegue"
+      ],
+      "correct": 3,
+      "why": "Reduce la adherencia y aumenta las distancias.",
+      "whyNot": [
+        "El rozamiento disminuye.",
+        "Aumenta la distancia.",
+        "Aumenta la distancia.",
+        null
+      ],
+      "ref": "OACI Anexo 14"
+    },
+    {
+      "id": "070.09.003",
+      "type": "regla",
+      "level": 1,
+      "q": "En el formato global de notificación, el RWYCC 6 significa:",
+      "options": [
+        "Pista seca",
+        "Hielo",
+        "Más de 3 mm de agua",
+        "Pista cerrada"
+      ],
+      "correct": 0,
+      "why": "En la escala del RWYCC, el 6 es la pista seca y el 0 la peor condición.",
+      "whyNot": [
+        null,
+        "Hielo es 1.",
+        "Es 2.",
+        "El cierre no es un RWYCC."
+      ],
+      "ref": "OACI Doc 10064"
+    },
+    {
+      "id": "070.09.004",
+      "type": "regla",
+      "level": 2,
+      "q": "El RWYCC 0 corresponde a:",
+      "options": [
+        "Pista seca",
+        "Pista mojada normal",
+        "Eficacia de frenado menos que mala (por ejemplo, hielo mojado)",
+        "Escarcha"
+      ],
+      "correct": 2,
+      "why": "0 es el peor código.",
+      "whyNot": [
+        "Es 6.",
+        "Es 5 o 3.",
+        null,
+        "Es 5."
+      ],
+      "ref": "OACI Doc 10064"
+    },
+    {
+      "id": "070.09.005",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cada cuánto se notifica un RWYCC?",
+      "options": [
+        "Uno por pista completa",
+        "Uno por cada 100 m",
+        "Uno al día",
+        "Un código por cada tercio de pista"
+      ],
+      "correct": 3,
+      "why": "El formato global notifica un valor por tercio.",
+      "whyNot": [
+        "No es el criterio.",
+        "No es el criterio.",
+        "No es el criterio.",
+        null
+      ],
+      "ref": "OACI Doc 10064"
+    },
+    {
+      "id": "070.09.006",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué RWYCC corresponde a hielo?",
+      "options": [
+        "1",
+        "6",
+        "4",
+        "2"
+      ],
+      "correct": 0,
+      "why": "Hielo: eficacia de frenado mala (RWYCC 1); hielo mojado baja a 0.",
+      "whyNot": [
+        null,
+        "6 es seca.",
+        "4 es nieve compactada fría.",
+        "2 es más de 3 mm de agua."
+      ],
+      "ref": "OACI Doc 10064"
+    },
+    {
+      "id": "070.09.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "El hidroplaneo dinámico es:",
+      "options": [
+        "El calentamiento del neumático",
+        "Un fallo del tren",
+        "La pérdida de contacto del neumático con la pista por una película de agua a cierta velocidad",
+        "Un efecto de la hélice"
+      ],
+      "correct": 2,
+      "why": "Una película de agua levanta el neumático y se pierde frenado y control.",
+      "whyNot": [
+        "No es térmico.",
+        "No es un fallo del tren.",
+        null,
+        "No tiene que ver con la hélice."
+      ],
+      "ref": "FAA AFH"
+    },
+    {
+      "id": "070.09.008",
+      "type": "calculo",
+      "level": 2,
+      "q": "Neumáticos a 36 psi: velocidad aproximada de hidroplaneo dinámico:",
+      "options": [
+        "36 kt",
+        "54 kt",
+        "72 kt",
+        "108 kt"
+      ],
+      "correct": 1,
+      "why": "V ≈ 9 × √p = 9 × √36 = 9 × 6 = 54 kt.",
+      "whyNot": [
+        "Es la presión, no la velocidad.",
+        null,
+        "Duplica el valor.",
+        "Triplica con otro error."
+      ],
+      "ref": "FAA AFH"
+    },
+    {
+      "id": "070.09.009",
+      "type": "calculo",
+      "level": 2,
+      "q": "Neumáticos a 25 psi: velocidad aproximada de hidroplaneo:",
+      "options": [
+        "25 kt",
+        "45 kt",
+        "50 kt",
+        "225 kt"
+      ],
+      "correct": 1,
+      "why": "V ≈ 9 × √p = 9 × √25 = 9 × 5 = 45 kt.",
+      "whyNot": [
+        "Es la presión.",
+        null,
+        "Duplica la raíz.",
+        "Multiplica por la presión."
+      ],
+      "ref": "FAA AFH"
+    },
+    {
+      "id": "070.09.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "Al aterrizar sobre pista mojada o contaminada, la técnica recomendable es:",
+      "options": [
+        "Flotar largo para consumir velocidad",
+        "Frenar a fondo justo al tocar",
+        "Aterrizar con viento cruzado máximo",
+        "Tocar firmemente sin exceso de velocidad, frenar aerodinámicamente primero y luego suave"
+      ],
+      "correct": 3,
+      "why": "Reduce el riesgo de hidroplaneo y de bloqueo de ruedas.",
+      "whyNot": [
+        "Pierdes pista.",
+        "Puede bloquear las ruedas.",
+        "Reduce el control.",
+        null
+      ],
+      "ref": "FAA AFH"
+    },
+    {
+      "id": "070.09.011",
+      "type": "concepto",
+      "level": 3,
+      "q": "Si la eficacia de frenado de la pista se notifica como mala o menos que mala:",
+      "options": [
+        "Conviene elegir otra pista u otro aeródromo, sobre todo con un avión ligero",
+        "Aterrizar sin cambios",
+        "Aumentar la velocidad",
+        "Frenar antes de tocar"
+      ],
+      "correct": 0,
+      "why": "Un avión ligero tiene pocos recursos con esa pista.",
+      "whyNot": [
+        null,
+        "No es seguro.",
+        "Empeora.",
+        "No es posible."
+      ],
+      "ref": "Buenas prácticas"
+    },
+    {
+      "id": "070.09.012",
+      "type": "regla",
+      "level": 2,
+      "q": "Una pista con más de 3 mm de agua estancada tiene, en el formato global, un RWYCC de:",
+      "options": [
+        "5",
+        "3",
+        "2",
+        "6"
+      ],
+      "correct": 2,
+      "why": "Más de 3 mm de agua o nieve fundente: media a mala, RWYCC 2.",
+      "whyNot": [
+        "5 es hasta 3 mm de agua.",
+        "3 es mojada resbaladiza o nieve de más de 3 mm.",
+        null,
+        "6 es seca."
+      ],
+      "ref": "OACI Doc 10064"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.070.09.01",
+      "front": "RWYCC",
+      "back": "De 6 (seca) a 0 (menos que mala), un código por cada tercio de pista (formato global de notificación)"
+    },
+    {
+      "id": "c.070.09.02",
+      "front": "Hidroplaneo dinámico",
+      "back": "V ≈ 9 × √p (kt, p en psi); con 36 psi, 54 kt"
+    },
+    {
+      "id": "c.070.09.03",
+      "front": "Pista mojada o contaminada",
+      "back": "Mojada: menos de 3 mm; contaminada: más de 3 mm de agua, nieve fundente, nieve o hielo"
+    }
+  ]
+}

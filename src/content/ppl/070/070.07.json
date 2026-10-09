@@ -1,0 +1,511 @@
+{
+  "lesson": {
+    "id": "070.07",
+    "title": "Estela turbulenta",
+    "summary": "Cómo se forman los torbellinos de estela, de qué dependen, cómo se mueven, qué categorías y separaciones se aplican y cómo se aterriza y se despega detrás de un avión mayor.",
+    "objectives": [
+      "Explicar cómo se generan los torbellinos de punta de ala y qué los intensifica",
+      "Describir el comportamiento de los torbellinos: descenso, estabilización y deriva con el viento",
+      "Conocer las categorías de estela y las separaciones mínimas de llegada y salida",
+      "Aplicar los procedimientos de aterrizaje, despegue y cruce de trayectorias detrás de un avión mayor"
+    ],
+    "sections": [
+      {
+        "title": "Cómo se forman los torbellinos",
+        "text": [
+          "Un ala que produce sustentación tiene **mayor presión debajo que encima**. En la punta del ala, el aire de abajo intenta pasar al lado de arriba y forma un **torbellino de punta de ala**: dos remolinos de giro opuesto que salen de cada ala y se extienden tras el avión. Es la estela turbulenta, y es **la consecuencia inevitable de la sustentación**. Un avión grande y pesado la genera más fuerte, y para un avión pequeño que la encuentra puede significar un alabeo que supere la capacidad de los alerones, o una pérdida de control a baja altura.",
+          "Los torbellinos son **más intensos** cuando el avión es **pesado, lento y limpio** (flaps y tren recogidos): ese es el momento de mayor coeficiente de sustentación en un ala de mayor envergadura. Un avión en la salida (rotando y ascendiendo con flaps abajo y baja velocidad) y en la aproximación, también pesado y lento, genera la estela más peligrosa para el que le sigue."
+        ]
+      },
+      {
+        "title": "Comportamiento de los torbellinos",
+        "bullets": [
+          "Los torbellinos **bajan** a razón de unos **300 a 500 ft/min** y se estabilizan unos **500 a 900 ft por debajo** de la trayectoria del avión que los genera.",
+          "Al llegar al suelo (o cerca de él, a unos 100 ft sobre el terreno), se **desplazan lateralmente** hacia fuera a unos 5 kt.",
+          "Un **viento cruzado ligero** de **3 a 5 kt** puede **frenar** el torbellino del lado de barlovento y dejarlo **sobre la pista**; el de sotavento se aleja. Con **viento de cola** el torbellino puede avanzar hacia la pista de despegue.",
+          "Persisten **más de 2 minutos**, y con aire en calma, más de 3 o 5. Disminuyen con la turbulencia atmosférica.",
+          "Un **helicóptero en vuelo estacionario** o a baja velocidad genera una **fuerte estela de rotor** (corriente descendente), a veces peor que la de un avión del mismo peso."
+        ],
+        "figure": "svg:070-estela",
+        "caption": "Aterrizar por encima de la senda del mayor y más allá de su toma; despegar rotando antes y subiendo por encima de su trayectoria."
+      },
+      {
+        "title": "Categorías de estela y separaciones",
+        "text": [
+          "La OACI clasifica las aeronaves por su **masa máxima al despegue (MTOM)**: **LIGHT** (L), hasta 7000 kg; **MEDIUM** (M), entre 7000 y 136 000 kg; **HEAVY** (H), desde 136 000 kg; y **SUPER** (J) para las mayores (Airbus A380). Un PA-28 o un C172 son **LIGHT**. Las separaciones mínimas entre aeronaves, en tiempo, son las siguientes:"
+        ],
+        "table": {
+          "caption": "Separaciones mínimas por estela turbulenta (tiempo)",
+          "head": [
+            "Situación",
+            "Separación mínima"
+          ],
+          "rows": [
+            [
+              "Llegada: MEDIUM detrás de HEAVY",
+              "2 min"
+            ],
+            [
+              "Llegada: LIGHT detrás de MEDIUM o de HEAVY",
+              "3 min"
+            ],
+            [
+              "Llegada: LIGHT detrás de SUPER",
+              "4 min"
+            ],
+            [
+              "Salida: LIGHT o MEDIUM detrás de un HEAVY, misma pista",
+              "2 min"
+            ],
+            [
+              "Salida desde una intersección (parte intermedia de la pista) tras un HEAVY",
+              "3 min"
+            ]
+          ],
+          "src": "OACI Doc 4444; AIP España"
+        },
+        "note": {
+          "kind": "es",
+          "text": "En el espacio aéreo controlado, el ATC aplica las separaciones mínimas y avisa de la **«precaución estela turbulenta»**. Si te parece insuficiente, puedes **pedir más separación**. En un aeródromo sin ATC, la responsabilidad es tuya."
+        },
+        "verify": true
+      },
+      {
+        "title": "Procedimientos: aterrizaje y despegue",
+        "bullets": [
+          "**Aterrizar detrás de un avión mayor que aterriza:** mantente **por encima de su senda** y **toma tierra más allá de su punto de toma**.",
+          "**Aterrizar detrás de un mayor que despega:** toma tierra **antes de su punto de rotación**, si la pista lo permite.",
+          "**Despegar detrás de un mayor que despega:** **rota antes de su punto de rotación**, asciende **por encima de su trayectoria** y, si hay viento cruzado, gira hacia el lado contrario a su estela o a barlovento; o **espera** el tiempo de separación.",
+          "**Despegar detrás de un mayor que acaba de aterrizar:** **rota más allá de su punto de toma** y espera como mínimo **2 minutos**.",
+          "**Cruce de pistas o de trayectorias:** cruza **por encima** de la trayectoria del mayor; no vueles por debajo de ella.",
+          "**Pistas paralelas cercanas** (menos de unos 750 m de distancia entre ejes): la estela puede derivar a la otra pista; considera lo mismo."
+        ]
+      },
+      {
+        "title": "Si te encuentras con estela",
+        "text": [
+          "Los torbellinos no se ven, pero se notan: el avión alabea y se mueve de forma brusca en pocos segundos. Mantén el **control del avión**, evita sobrecorregir con los alerones y **sal del área** (hacia arriba y al lado, si puedes). Si estás en el final de la aproximación y sufres una perturbación fuerte, **haz ida al aire**. A la salida, es más grave porque no hay altura; lo mejor es evitarla."
+        ],
+        "note": {
+          "kind": "tip",
+          "text": "Los torbellinos bajan: si sigues a un mayor, **quédate por encima de su trayectoria**. Ese es el principio de todas las reglas."
+        }
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Aterrizar corto detrás de un mayor, en el punto de toma de este.",
+          "Despegar justo tras un mayor sin respetar los 2 o 3 minutos.",
+          "Cruzar por debajo de la trayectoria del mayor.",
+          "Olvidar que un viento cruzado ligero mantiene un torbellino sobre la pista.",
+          "Confundir las categorías: un avión ligero es LIGHT (hasta 7000 kg)."
+        ]
+      }
+    ],
+    "numbers": [
+      "LIGHT hasta 7000 kg; MEDIUM de 7000 a 136 000 kg; HEAVY desde 136 000 kg; SUPER (A380)",
+      "Llegada: MEDIUM tras HEAVY, 2 min; LIGHT tras HEAVY o MEDIUM, 3 min; LIGHT tras SUPER, 4 min",
+      "Salida: 2 min tras un HEAVY; 3 min si se sale de una intersección",
+      "Torbellinos: bajan 300–500 ft/min y se estabilizan 500–900 ft por debajo de la trayectoria",
+      "Con 3–5 kt de viento cruzado, un torbellino puede quedar sobre la pista",
+      "Despegue: rotar antes y ascender por encima; aterrizaje: por encima de la senda y más allá de su toma"
+    ],
+    "traps": [
+      "Un torbellino baja: quédate por encima de la trayectoria del mayor.",
+      "Aterriza más allá de su toma y despega antes de su rotación.",
+      "Un viento cruzado ligero puede dejar el torbellino sobre la pista.",
+      "LIGHT tras SUPER: 4 min."
+    ],
+    "spain": [
+      "En espacio controlado, el ATC aplica estas separaciones y avisa; en aeródromos sin ATC, la responsabilidad es del piloto."
+    ],
+    "sources": [
+      {
+        "title": "OACI, Doc 4444 PANS-ATM, capítulo 5 (separación por estela)"
+      },
+      {
+        "title": "FAA, Advisory Circular AC 90-23 Aircraft Wake Turbulence"
+      },
+      {
+        "title": "ENAIRE, AIP España (GEN 1.7, ENR 1.10, AD)",
+        "url": "https://aip.enaire.es"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "070.07.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La estela turbulenta es consecuencia directa de:",
+      "options": [
+        "El escape del motor",
+        "La generación de sustentación del ala",
+        "La resistencia parásita",
+        "La hélice"
+      ],
+      "correct": 1,
+      "why": "Los torbellinos de punta de ala nacen de la diferencia de presión entre intradós y extradós.",
+      "whyNot": [
+        "No es el escape.",
+        null,
+        "No es la resistencia parásita.",
+        "La hélice produce otro tipo de turbulencia."
+      ],
+      "ref": "Principios de vuelo"
+    },
+    {
+      "id": "070.07.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "La estela es más intensa cuando el avión que la genera está:",
+      "options": [
+        "Ligero, rápido y con flaps",
+        "Ligero, lento y limpio",
+        "Pesado, rápido y con flaps",
+        "Pesado, lento y limpio"
+      ],
+      "correct": 3,
+      "why": "Peso alto, velocidad baja y configuración limpia obligan a un coeficiente de sustentación mayor.",
+      "whyNot": [
+        "Es lo contrario.",
+        "El ligero genera menos.",
+        "Rápido y con flaps reduce la intensidad.",
+        null
+      ],
+      "ref": "FAA AC 90-23"
+    },
+    {
+      "id": "070.07.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "Los torbellinos de estela:",
+      "options": [
+        "Bajan unos 300–500 ft/min y se estabilizan 500–900 ft por debajo",
+        "Suben con el aire caliente",
+        "Permanecen a la altura del avión",
+        "Se desplazan hacia arriba"
+      ],
+      "correct": 0,
+      "why": "Bajan y se estabilizan por debajo de la trayectoria.",
+      "whyNot": [
+        null,
+        "No suben.",
+        "No permanecen.",
+        "No suben."
+      ],
+      "ref": "FAA AC 90-23"
+    },
+    {
+      "id": "070.07.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un viento cruzado de 3 a 5 kt en la pista puede:",
+      "options": [
+        "Eliminar la estela",
+        "Duplicar su intensidad",
+        "Dejar el torbellino de barlovento sobre la pista",
+        "Aumentar la separación necesaria a 10 minutos"
+      ],
+      "correct": 2,
+      "why": "El torbellino de barlovento se frena y se queda.",
+      "whyNot": [
+        "No la elimina.",
+        "No la duplica.",
+        null,
+        "No cambia a 10 minutos."
+      ],
+      "ref": "FAA AC 90-23"
+    },
+    {
+      "id": "070.07.005",
+      "type": "regla",
+      "level": 1,
+      "q": "Un avión LIGHT es el de masa máxima al despegue:",
+      "options": [
+        "Hasta 5700 kg",
+        "Entre 7000 y 136 000 kg",
+        "Desde 136 000 kg",
+        "Hasta 7000 kg"
+      ],
+      "correct": 3,
+      "why": "Categoría LIGHT: masa máxima al despegue de hasta 7000 kg (el PA-28 y el C172 lo son).",
+      "whyNot": [
+        "5700 kg es otro límite (complejo).",
+        "Eso es MEDIUM.",
+        "Eso es HEAVY.",
+        null
+      ],
+      "ref": "OACI Doc 4444"
+    },
+    {
+      "id": "070.07.006",
+      "type": "regla",
+      "level": 1,
+      "q": "Un avión HEAVY es el de masa máxima al despegue:",
+      "options": [
+        "Desde 136 000 kg",
+        "Desde 7000 kg",
+        "Desde 50 000 kg",
+        "Desde 300 000 kg"
+      ],
+      "correct": 0,
+      "why": "Categoría HEAVY: masa máxima al despegue de 136 000 kg o más.",
+      "whyNot": [
+        null,
+        "Es el límite LIGHT.",
+        "No es el límite de ninguna categoría.",
+        "Es más alto que el límite."
+      ],
+      "ref": "OACI Doc 4444"
+    },
+    {
+      "id": "070.07.007",
+      "type": "regla",
+      "level": 2,
+      "q": "En una llegada, la separación mínima por estela de un MEDIUM detrás de un HEAVY es:",
+      "options": [
+        "3 min",
+        "4 min",
+        "2 min",
+        "1 min"
+      ],
+      "correct": 2,
+      "why": "MEDIUM tras HEAVY: 2 min.",
+      "whyNot": [
+        "Es LIGHT tras MEDIUM o HEAVY.",
+        "Es LIGHT tras SUPER.",
+        null,
+        "No es el valor."
+      ],
+      "ref": "OACI Doc 4444"
+    },
+    {
+      "id": "070.07.008",
+      "type": "regla",
+      "level": 2,
+      "q": "Un LIGHT aterriza detrás de un MEDIUM. La separación mínima por estela es:",
+      "options": [
+        "2 min",
+        "3 min",
+        "4 min",
+        "Ninguna"
+      ],
+      "correct": 1,
+      "why": "LIGHT tras MEDIUM o HEAVY: 3 min.",
+      "whyNot": [
+        "Es MEDIUM tras HEAVY.",
+        null,
+        "Es LIGHT tras SUPER.",
+        "Sí hay separación."
+      ],
+      "ref": "OACI Doc 4444"
+    },
+    {
+      "id": "070.07.009",
+      "type": "regla",
+      "level": 2,
+      "q": "Un LIGHT aterriza detrás de un SUPER (A380). La separación mínima es:",
+      "options": [
+        "2 min",
+        "4 min",
+        "3 min",
+        "5 min"
+      ],
+      "correct": 1,
+      "why": "LIGHT tras SUPER: 4 min.",
+      "whyNot": [
+        "Es MEDIUM tras HEAVY.",
+        null,
+        "Es tras HEAVY o MEDIUM.",
+        "No es el valor."
+      ],
+      "ref": "OACI Doc 4444"
+    },
+    {
+      "id": "070.07.010",
+      "type": "regla",
+      "level": 2,
+      "q": "Un LIGHT despega detrás de un HEAVY desde una intersección. La separación mínima es:",
+      "options": [
+        "2 min",
+        "1 min",
+        "4 min",
+        "3 min"
+      ],
+      "correct": 3,
+      "why": "Desde la misma pista, 2 min; desde una intersección (parte intermedia), 3 min.",
+      "whyNot": [
+        "Es la separación de la misma pista.",
+        "Es menos de lo mínimo.",
+        "No es el valor.",
+        null
+      ],
+      "ref": "OACI Doc 4444"
+    },
+    {
+      "id": "070.07.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "Aterrizando detrás de un avión mayor que aterriza en la misma pista, debes:",
+      "options": [
+        "Mantenerte por encima de su senda y tomar tierra más allá de su punto de toma",
+        "Mantenerte por debajo de su senda",
+        "Tomar tierra antes de su punto de toma",
+        "Seguir su senda exacta"
+      ],
+      "correct": 0,
+      "why": "Los torbellinos bajan: por encima y más allá.",
+      "whyNot": [
+        null,
+        "Por debajo estarías en la estela.",
+        "Antes del punto de toma estarías en la estela.",
+        "Su senda es la peor trayectoria."
+      ],
+      "ref": "FAA AC 90-23"
+    },
+    {
+      "id": "070.07.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "Despegando detrás de un avión mayor que despega, debes:",
+      "options": [
+        "Rotar después de su punto de rotación",
+        "Ascender por debajo de su trayectoria",
+        "Rotar antes de su punto de rotación y ascender por encima de su trayectoria",
+        "Seguir su trayectoria exactamente"
+      ],
+      "correct": 2,
+      "why": "Así mantienes la trayectoria por encima de la estela.",
+      "whyNot": [
+        "Entrarías en la estela.",
+        "Es la peor opción.",
+        null,
+        "Es la peor opción."
+      ],
+      "ref": "FAA AC 90-23"
+    },
+    {
+      "id": "070.07.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "Despegando detrás de un mayor que acaba de aterrizar, debes:",
+      "options": [
+        "Rotar antes de su punto de toma",
+        "Despegar de inmediato",
+        "Despegar por una pista cruzada",
+        "Rotar más allá de su punto de toma y respetar la separación"
+      ],
+      "correct": 3,
+      "why": "La estela está en la zona de toma y a lo largo de la pista.",
+      "whyNot": [
+        "Estarías en la estela.",
+        "Sin separación hay riesgo.",
+        "Un cruce no elimina el riesgo.",
+        null
+      ],
+      "ref": "FAA AC 90-23"
+    },
+    {
+      "id": "070.07.014",
+      "type": "concepto",
+      "level": 2,
+      "q": "Al cruzar la trayectoria de un avión mayor, debes cruzar:",
+      "options": [
+        "Por encima de su trayectoria",
+        "Por debajo de su trayectoria",
+        "Exactamente por su trayectoria",
+        "Por detrás y por debajo"
+      ],
+      "correct": 0,
+      "why": "Los torbellinos están por debajo del avión que los genera.",
+      "whyNot": [
+        null,
+        "Estarías en la estela.",
+        "Es la zona más turbulenta.",
+        "Es la zona de los torbellinos."
+      ],
+      "ref": "FAA AC 90-23"
+    },
+    {
+      "id": "070.07.015",
+      "type": "concepto",
+      "level": 3,
+      "q": "Un helicóptero en vuelo estacionario genera:",
+      "options": [
+        "Ninguna estela",
+        "Una estela menor que la de un avión",
+        "Una estela de rotor intensa, con fuerte corriente descendente",
+        "Solo ruido"
+      ],
+      "correct": 2,
+      "why": "La corriente descendente del rotor es intensa y peligrosa para aviones ligeros cercanos.",
+      "whyNot": [
+        "Sí genera.",
+        "No es menor.",
+        null,
+        "No solo ruido."
+      ],
+      "ref": "FAA AC 90-23"
+    },
+    {
+      "id": "070.07.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "Aterrizando detrás de un avión mayor que despega de la misma pista, conviene:",
+      "options": [
+        "Tomar tierra más allá de su punto de rotación",
+        "Tomar tierra antes de su punto de rotación, si la pista lo permite",
+        "Aterrizar con senda baja",
+        "Seguir la senda del mayor"
+      ],
+      "correct": 1,
+      "why": "Así estás antes de la zona donde se forma la estela con más intensidad.",
+      "whyNot": [
+        "Estarías en la estela que va dejando.",
+        null,
+        "Una senda baja entra en la estela.",
+        "Su senda no es la referencia."
+      ],
+      "ref": "FAA AC 90-23"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.070.07.01",
+      "front": "Categorías de estela",
+      "back": "LIGHT hasta 7000 kg; MEDIUM 7000–136 000 kg; HEAVY desde 136 000 kg; SUPER (A380)"
+    },
+    {
+      "id": "c.070.07.02",
+      "front": "Separaciones de llegada",
+      "back": "MEDIUM tras HEAVY: 2 min; LIGHT tras HEAVY o MEDIUM: 3 min; LIGHT tras SUPER: 4 min"
+    },
+    {
+      "id": "c.070.07.03",
+      "front": "Separaciones de salida",
+      "back": "2 min tras un HEAVY; 3 min si se sale de una intersección"
+    },
+    {
+      "id": "c.070.07.04",
+      "front": "Comportamiento de los torbellinos",
+      "back": "Bajan 300–500 ft/min, se estabilizan 500–900 ft por debajo; un viento cruzado de 3–5 kt puede dejarlos sobre la pista"
+    },
+    {
+      "id": "c.070.07.05",
+      "front": "Aterrizar y despegar tras un mayor",
+      "back": "Aterriza más allá de su toma y por encima de su senda; despega antes de su rotación y por encima de su trayectoria"
+    }
+  ]
+}

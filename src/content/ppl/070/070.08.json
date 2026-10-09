@@ -1,0 +1,572 @@
+{
+  "lesson": {
+    "id": "070.08",
+    "title": "Aterrizajes de emergencia y de precaución",
+    "summary": "Diferencia entre aterrizaje de emergencia y de precaución, cómo se elige el campo, el circuito de planeo, qué se dice a los pasajeros, cómo se evacúa, qué se hace después del aterrizaje y las particularidades del amaraje.",
+    "objectives": [
+      "Distinguir aterrizaje de emergencia (forzoso) y de precaución y cuándo corresponde cada uno",
+      "Elegir un campo con un método y aplicar el circuito sin motor",
+      "Preparar a los pasajeros: posición de seguridad, cinturones, puertas",
+      "Actuar después del aterrizaje: evacuar, ELT, señales y aviso; conocer lo esencial del amaraje"
+    ],
+    "sections": [
+      {
+        "title": "Dos tipos de aterrizaje fuera de aeródromo",
+        "text": [
+          "Un **aterrizaje de emergencia** o **forzoso** se hace cuando **ya no se puede continuar el vuelo**: fallo total del motor, incendio, pérdida de control parcial, falta de combustible. No hay opciones: hay que aterrizar donde se pueda, ahora. Un **aterrizaje de precaución** es una **decisión deliberada** del piloto, con el avión aún operativo (con potencia), de aterrizar en un campo o en un aeródromo no previsto porque el vuelo ya no es seguro: meteorología que se cierra, combustible que no llega, avería menor, desorientación, hielo, cansancio.",
+          "La diferencia es la clave: el aterrizaje de precaución se toma **a tiempo**, con potencia, altura y elección. La mayoría de los accidentes con víctimas ocurre cuando el piloto **aplaza** la decisión hasta que se queda sin opciones. Es mejor aterrizar antes y con control, aunque cueste una molestia, que continuar y acabar en un aterrizaje forzoso."
+        ]
+      },
+      {
+        "title": "Fallo de motor en vuelo: la secuencia",
+        "text": [
+          "Con fallo de motor en crucero, **el avión sigue siendo un planeador**: la primera acción es **volar el avión**. La secuencia habitual es: **1. Velocidad de mejor planeo** (según el POH) y compensar. **2. Elegir el campo** y el sentido de aterrizaje, con el viento. **3. Intentar resolver la causa** con la lista del POH (combustible, mezcla, calefacción de carburador, magnetos, bomba eléctrica). **4. Comunicar**: MAYDAY en la frecuencia que uses o en 121,500, con transpondedor en **7700**. **5. Informar a los pasajeros** y ajustar cinturones. **6. Preparar el aterrizaje**: cortar combustible y magnetos y general, abrir las puertas, flaps. Las velocidades de mejor planeo del POH son (verifica en tu POH) aproximadamente 73 KIAS en el PA-28-161 y 68 KIAS en el C172S, con flaps arriba."
+        ],
+        "note": {
+          "kind": "tip",
+          "text": "El peor error es **mirar el motor y no el avión**: pierdes velocidad y altura mientras intentas arrancar. Primero planear, luego problema."
+        },
+        "verify": true
+      },
+      {
+        "title": "Elegir el campo",
+        "bullets": [
+          "**Viento:** aterriza contra el viento siempre que puedas; reduce la carrera y la velocidad sobre el suelo.",
+          "**Tamaño:** un campo largo y ancho, con espacio de frenado.",
+          "**Superficie:** prefiere campos de cultivo bajo o segado, pastos y rastrojos; evita terreno arado en surcos transversales, campos de maíz alto, árboles y pantanos.",
+          "**Pendiente:** aterriza **cuesta arriba** si hay pendiente, pues frena; evita descender contra una ladera hacia un obstáculo.",
+          "**Obstáculos** en la aproximación: cables, árboles y vallas. Los cables son lo más difícil de ver.",
+          "**Accesibilidad:** cerca de una carretera o de un camino, para que lleguen los equipos de rescate.",
+          "**Referencias de viento:** humo, banderas, ondulación de la vegetación, sombras de las nubes."
+        ]
+      },
+      {
+        "title": "Circuito de planeo sin motor",
+        "text": [
+          "Con altura suficiente, el circuito de emergencia reproduce el de aeródromo con dos puntos clave: el **punto alto** (*high key*), a unos 2000 ft sobre el terreno y a la altura de la toma, y el **punto bajo** (*low key*), a unos 1000 ft y al iniciar el viraje a base. Lo que sobre de altura se gasta con **virajes en S** o con flaps, no con maniobras bruscas. Los flaps se bajan **al final**, cuando tienes el campo asegurado: no hay ida al aire sin motor."
+        ],
+        "figure": "svg:070-forzoso",
+        "caption": "Circuito de aterrizaje forzoso: punto alto, punto bajo, base y final contra el viento.",
+        "note": {
+          "kind": "warn",
+          "text": "Las alturas son orientativas. No vueles en perdida: cada viraje cerrado a poca velocidad y baja altura aumenta el riesgo de barrena."
+        }
+      },
+      {
+        "title": "Pasajeros, cinturones y evacuación",
+        "bullets": [
+          "**Briefing breve**: indica el campo y la posición de seguridad (**brace**): cinturones y arnés **apretados**, cabeza protegida con los brazos contra el respaldo o la parte delantera, pies planos, objetos sueltos asegurados.",
+          "**Antes del contacto**: **abre las puertas un poco** (cuña con un objeto) para evitar que se atasquen si se deforma la estructura.",
+          "**Cierra** combustible, magnetos y general antes del impacto, para reducir el riesgo de incendio.",
+          "Tras parar: **evacúa deprisa** (cada uno por su salida), **aléjate del avión** y mantente a favor del viento, a unos 50 m, por si hay fuego.",
+          "**Lleva** contigo agua, ropa de abrigo, teléfono y el equipo de supervivencia."
+        ]
+      },
+      {
+        "title": "Después del aterrizaje",
+        "text": [
+          "Una vez a salvo: **atiende a los heridos**, **activa el ELT** manualmente si no se ha disparado (121,5 y 406 MHz), **llama al 112** si hay cobertura y avisa a ATS o a la escuela. **Permanece junto al avión**: es mayor y más visible que una persona, y los equipos de búsqueda lo localizarán antes. **Haz señales**: tela brillante, espejo, **señales tierra-aire** (V = necesito ayuda; X = necesito ayuda médica; N = no; Y = sí; una flecha = dirección tomada). Protege el lugar: no manipules los restos. La **notificación del suceso** es obligatoria (bloque 070.01)."
+        ]
+      },
+      {
+        "title": "Amaraje",
+        "text": [
+          "Un **amaraje** es el aterrizaje forzoso sobre el agua. Solo se hace como último recurso, pero la preparación decide: **chaleco puesto** antes de amarar, pero **sin inflar dentro del avión** (se infla al salir, para no quedar atrapado); **abre la puerta** un poco antes del contacto para evitar que la presión del agua la bloquee; **cinturones apretados**; **balsa** y ELT a mano. La técnica: con **mar de fondo** y viento ligero, aterriza **paralelo a las olas**; con **viento fuerte**, contra el viento y por el **lado posterior** de la ola. Toca con **mínima velocidad**, **morro algo alto** y **flaps** según el POH; tras parar, evacúa inmediatamente, infla el chaleco ya fuera, y mantente junto al flotador o a la balsa."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Retrasar la decisión de aterrizar de precaución hasta que ya no hay opciones.",
+          "Intentar arrancar sin volar el avión (perder velocidad de planeo).",
+          "Escoger un campo bonito pero corto o con cables.",
+          "No avisar por radio por falta de tiempo (primero volar, pero avisa cuando el avión esté estable).",
+          "Inflar el chaleco dentro del avión."
+        ]
+      }
+    ],
+    "numbers": [
+      "Aterrizaje de precaución: decisión deliberada, con potencia; de emergencia: forzoso, sin opciones",
+      "Secuencia: volar, elegir campo, intentar resolver, avisar (121,5 y 7700), pasajeros, preparar",
+      "Elegir campo: viento, tamaño, superficie, pendiente, obstáculos y accesibilidad",
+      "Abrir un poco las puertas antes del impacto; cinturones apretados",
+      "ELT: 121,5 y 406 MHz; permanecer junto al avión",
+      "Amaraje: chaleco puesto, sin inflar dentro del avión"
+    ],
+    "traps": [
+      "El aterrizaje de precaución se hace con potencia y a tiempo.",
+      "No se infla el chaleco dentro del avión.",
+      "Con fallo de motor, primero la velocidad de planeo y después la causa.",
+      "Un viento fuerte en el agua: contra el viento; mar de fondo con viento ligero: paralelo a las olas."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Airplane Flying Handbook (FAA-H-8083-3C), cap. 18 Emergency procedures",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+      },
+      {
+        "title": "Piper PA-28-161 y Cessna 172S: POH, sección 3"
+      },
+      {
+        "title": "EASA, Easy Access Rules for Air Operations (Part-NCO, AMC y GM)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "070.08.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La diferencia entre aterrizaje de emergencia y de precaución es que el de precaución:",
+      "options": [
+        "Siempre se hace sin potencia",
+        "Es una decisión deliberada, con el avión aún operativo, y se toma a tiempo",
+        "Se hace con fallo total de motor",
+        "Solo se hace en aeródromo"
+      ],
+      "correct": 1,
+      "why": "El de precaución se elige antes de perder opciones; el forzoso es consecuencia de no poder continuar.",
+      "whyNot": [
+        "El de precaución se hace con potencia.",
+        null,
+        "Eso es un aterrizaje forzoso.",
+        "Puede ser en un campo."
+      ],
+      "ref": "FAA AFH; Safety Sense"
+    },
+    {
+      "id": "070.08.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Por qué se recomienda tomar la decisión de aterrizaje de precaución pronto?",
+      "options": [
+        "Porque el motor funciona mejor",
+        "Porque los pasajeros prefieren aterrizar",
+        "Porque el ATC lo exige",
+        "Porque quedan altura, combustible y opciones de elección del campo"
+      ],
+      "correct": 3,
+      "why": "Retrasarla reduce las opciones y aumenta el riesgo.",
+      "whyNot": [
+        "No tiene relación con el motor.",
+        "No es un criterio.",
+        "No es una norma.",
+        null
+      ],
+      "ref": "Safety Sense"
+    },
+    {
+      "id": "070.08.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "Ante un fallo total de motor en crucero, la primera acción es:",
+      "options": [
+        "Establecer la velocidad de mejor planeo y compensar",
+        "Intentar arrancar sin cambiar nada",
+        "Llamar por radio a la escuela",
+        "Cerrar la mezcla y apagar el avión"
+      ],
+      "correct": 0,
+      "why": "Volar el avión es la prioridad: así dispones de más tiempo y distancia.",
+      "whyNot": [
+        null,
+        "Perderías altura y velocidad.",
+        "Se hace después.",
+        "No es la acción."
+      ],
+      "ref": "POH; FAA AFH"
+    },
+    {
+      "id": "070.08.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "Tras establecer el planeo, ¿qué es lo siguiente?",
+      "options": [
+        "Apagar el transpondedor",
+        "Subir flaps al máximo",
+        "Elegir el campo y el sentido de aterrizaje con el viento",
+        "Abrir la ventana"
+      ],
+      "correct": 2,
+      "why": "Hay que decidir pronto dónde aterrizar y con qué viento.",
+      "whyNot": [
+        "No es la acción.",
+        "Los flaps se bajan al final.",
+        null,
+        "No es la acción."
+      ],
+      "ref": "POH; FAA AFH"
+    },
+    {
+      "id": "070.08.005",
+      "type": "regla",
+      "level": 1,
+      "q": "En una emergencia, el código de transpondedor es:",
+      "options": [
+        "7000",
+        "7500",
+        "7600",
+        "7700"
+      ],
+      "correct": 3,
+      "why": "7700 es emergencia general.",
+      "whyNot": [
+        "7000 es VFR general.",
+        "7500 es interferencia ilícita.",
+        "7600 es fallo de comunicaciones.",
+        null
+      ],
+      "ref": "SERA.13"
+    },
+    {
+      "id": "070.08.006",
+      "type": "regla",
+      "level": 1,
+      "q": "En una emergencia en VHF sin frecuencia asignada, puedes llamar en:",
+      "options": [
+        "121,500 MHz",
+        "118,000 MHz",
+        "123,450 MHz",
+        "130,000 MHz"
+      ],
+      "correct": 0,
+      "why": "121,500 MHz es la frecuencia internacional de emergencia.",
+      "whyNot": [
+        null,
+        "No es la frecuencia de emergencia.",
+        "Es de aire a aire.",
+        "No es la frecuencia de emergencia."
+      ],
+      "ref": "Anexo 10"
+    },
+    {
+      "id": "070.08.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "Para elegir el campo de un aterrizaje forzoso, lo preferible es:",
+      "options": [
+        "Un campo corto con cables alrededor",
+        "Un campo arado con surcos transversales",
+        "Un campo largo, de cultivo bajo o rastrojo, aterrizando contra el viento",
+        "Un bosque"
+      ],
+      "correct": 2,
+      "why": "Superficie, tamaño y viento son los factores principales.",
+      "whyNot": [
+        "Los cables y la brevedad empeoran el riesgo.",
+        "Los surcos transversales hacen capotar.",
+        null,
+        "Los árboles destruyen el avión."
+      ],
+      "ref": "FAA AFH"
+    },
+    {
+      "id": "070.08.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si el campo tiene pendiente, es preferible aterrizar:",
+      "options": [
+        "Cuesta abajo",
+        "Cuesta arriba",
+        "Siempre en horizontal",
+        "Con viento en cola"
+      ],
+      "correct": 1,
+      "why": "La pendiente ascendente ayuda a frenar.",
+      "whyNot": [
+        "Aumenta la carrera.",
+        null,
+        "No hay terreno horizontal siempre.",
+        "Aumenta la velocidad respecto al suelo."
+      ],
+      "ref": "FAA AFH"
+    },
+    {
+      "id": "070.08.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué se hace con las puertas antes del contacto con el suelo?",
+      "options": [
+        "Se cierran con llave",
+        "Se abren un poco para evitar que se atasquen",
+        "Se retiran",
+        "Se dejan igual"
+      ],
+      "correct": 1,
+      "why": "La deformación de la estructura puede bloquearlas.",
+      "whyNot": [
+        "Dificultaría la evacuación.",
+        null,
+        "No se retiran.",
+        "No es lo recomendado."
+      ],
+      "ref": "POH; FAA AFH"
+    },
+    {
+      "id": "070.08.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "Antes del impacto, se cierran el combustible, las magnetos y el interruptor general para:",
+      "options": [
+        "Aumentar el planeo",
+        "Iluminar la cabina",
+        "Arrancar el motor",
+        "Reducir el riesgo de incendio"
+      ],
+      "correct": 3,
+      "why": "Se evitan chispas y fugas de combustible.",
+      "whyNot": [
+        "No mejora el planeo.",
+        "No es su función.",
+        "Al contrario.",
+        null
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "070.08.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "La posición de seguridad (brace) de los pasajeros consiste en:",
+      "options": [
+        "Cinturones apretados y cabeza protegida con los brazos",
+        "Ir de pie",
+        "Sentarse en el suelo",
+        "Quitarse el cinturón"
+      ],
+      "correct": 0,
+      "why": "Reduce las lesiones por impacto.",
+      "whyNot": [
+        null,
+        "Es peligroso.",
+        "Es peligroso.",
+        "Es peligroso."
+      ],
+      "ref": "POH; Safety Sense"
+    },
+    {
+      "id": "070.08.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "Tras el aterrizaje de emergencia, ¿qué se hace con el ELT?",
+      "options": [
+        "Se apaga",
+        "Se retira del avión",
+        "Se activa manualmente si no se ha disparado",
+        "Se deja sin batería"
+      ],
+      "correct": 2,
+      "why": "Emite en 121,5 y 406 MHz y facilita la localización.",
+      "whyNot": [
+        "Hay que activarlo.",
+        "Debe seguir en el avión.",
+        null,
+        "No es la acción."
+      ],
+      "ref": "NCO.IDE.A"
+    },
+    {
+      "id": "070.08.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si no puedes comunicar tras aterrizar fuera de aeródromo, conviene:",
+      "options": [
+        "Alejarse caminando",
+        "Quitar la matrícula",
+        "Apagar el ELT",
+        "Permanecer junto al avión, más visible que una persona"
+      ],
+      "correct": 3,
+      "why": "El avión es más grande y fácil de localizar.",
+      "whyNot": [
+        "Aumenta el riesgo de perderse.",
+        "No tiene sentido.",
+        "Hay que dejarlo activo.",
+        null
+      ],
+      "ref": "Safety Sense"
+    },
+    {
+      "id": "070.08.014",
+      "type": "regla",
+      "level": 1,
+      "q": "En las señales tierra-aire, una «V» significa:",
+      "options": [
+        "Necesito ayuda",
+        "No",
+        "Sí",
+        "Necesito agua"
+      ],
+      "correct": 0,
+      "why": "V = necesita ayuda (X = ayuda médica; N = no; Y = sí).",
+      "whyNot": [
+        null,
+        "No es N.",
+        "No es Y.",
+        "No es el significado."
+      ],
+      "ref": "Anexo 12"
+    },
+    {
+      "id": "070.08.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un amaraje, el chaleco salvavidas debe:",
+      "options": [
+        "Inflarse dentro antes de amarar",
+        "Guardarse en el equipaje",
+        "Estar puesto, pero inflarse fuera del avión",
+        "Dejarse en la balsa"
+      ],
+      "correct": 2,
+      "why": "Un chaleco inflado dentro puede impedir la salida.",
+      "whyNot": [
+        "Dificulta salir.",
+        "Debe estar puesto.",
+        null,
+        "Debe llevarse puesto."
+      ],
+      "ref": "NCO.IDE.A; AFM"
+    },
+    {
+      "id": "070.08.016",
+      "type": "concepto",
+      "level": 3,
+      "q": "Para amarar con mar de fondo marcado y viento ligero, la dirección preferible es:",
+      "options": [
+        "Perpendicular a las olas",
+        "Paralela a las olas",
+        "Contra el viento sin importar las olas",
+        "Con viento en cola"
+      ],
+      "correct": 1,
+      "why": "Con swell y poco viento, aterrizar paralelo a las olas evita chocar con un frente de ola.",
+      "whyNot": [
+        "Chocarías con la cresta.",
+        null,
+        "Con viento ligero manda el mar de fondo.",
+        "Aumenta la velocidad."
+      ],
+      "ref": "FAA AFH"
+    },
+    {
+      "id": "070.08.017",
+      "type": "concepto",
+      "level": 3,
+      "q": "En un amaraje con viento fuerte y olas pequeñas, lo mejor es:",
+      "options": [
+        "Amarar con el viento en cola",
+        "Amarar contra el viento",
+        "Amarar perpendicular al viento",
+        "No importa la dirección"
+      ],
+      "correct": 1,
+      "why": "Reduce la velocidad respecto a la superficie.",
+      "whyNot": [
+        "Aumenta la velocidad.",
+        null,
+        "Aumenta la deriva.",
+        "Sí importa."
+      ],
+      "ref": "FAA AFH"
+    },
+    {
+      "id": "070.08.018",
+      "type": "concepto",
+      "level": 1,
+      "q": "Un punto alto y un punto bajo en un circuito de planeo sirven para:",
+      "options": [
+        "Solicitar autorización",
+        "Medir el viento",
+        "Reducir el ruido",
+        "Gestionar la altura y la posición respecto al campo"
+      ],
+      "correct": 3,
+      "why": "Son referencias de altura y posición durante el planeo.",
+      "whyNot": [
+        "No son una autorización.",
+        "No miden viento.",
+        "No son para ruido.",
+        null
+      ],
+      "ref": "FAA AFH"
+    },
+    {
+      "id": "070.08.019",
+      "type": "concepto",
+      "level": 2,
+      "q": "Los flaps en un aterrizaje forzoso sin motor se bajan:",
+      "options": [
+        "Cuando el campo está asegurado, hacia el final",
+        "En cuanto falla el motor",
+        "Nunca",
+        "Antes de elegir el campo"
+      ],
+      "correct": 0,
+      "why": "Los flaps cambian el planeo; se usan al final.",
+      "whyNot": [
+        null,
+        "Reduciría el alcance.",
+        "Se usan.",
+        "Se elige antes el campo."
+      ],
+      "ref": "FAA AFH"
+    },
+    {
+      "id": "070.08.020",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un aterrizaje de precaución se justifica, por ejemplo, ante:",
+      "options": [
+        "Un día despejado con viento flojo",
+        "Una pista larga disponible",
+        "Meteorología que se cierra o combustible que no basta para llegar",
+        "Ausencia de tráfico"
+      ],
+      "correct": 2,
+      "why": "Son situaciones donde el vuelo deja de ser seguro.",
+      "whyNot": [
+        "No hay motivo.",
+        "No hay motivo.",
+        null,
+        "No hay motivo."
+      ],
+      "ref": "Safety Sense"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.070.08.01",
+      "front": "Aterrizaje de precaución frente a emergencia",
+      "back": "Precaución: decisión deliberada, a tiempo y con potencia. Emergencia (forzoso): no se puede continuar"
+    },
+    {
+      "id": "c.070.08.02",
+      "front": "Fallo de motor en crucero",
+      "back": "Planear a la velocidad de mejor planeo, elegir campo, intentar resolver, MAYDAY (121,5 y 7700), pasajeros, preparar"
+    },
+    {
+      "id": "c.070.08.03",
+      "front": "Antes del impacto",
+      "back": "Combustible, magnetos y general cerrados; cinturones apretados; puertas entreabiertas"
+    },
+    {
+      "id": "c.070.08.04",
+      "front": "Amaraje",
+      "back": "Chaleco puesto pero inflado fuera; paralelo a las olas con swell y viento ligero; contra viento si es fuerte"
+    }
+  ]
+}

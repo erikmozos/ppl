@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 450">
+<title>Estela turbulenta: aterrizaje tras un avión mayor por encima de su senda y más allá de su punto de toma, y despegue con rotación antes de su punto de rotación y ascenso por encima de su trayectoria</title>
+<defs><marker id="070-estela-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker></defs>
+<rect x="0" y="0" width="640" height="450" class="sky"/>
+<text x="20" y="26" class="tx b">Aterrizaje tras un avión mayor</text>
+<rect x="0" y="190" width="640" height="24" class="ground"/>
+<path d="M30 70 L330 190 L240 190 L30 130 Z" class="wa"/>
+<path d="M30 70 L330 190" class="wa-ln thick" marker-end="url(#070-estela-k)"/>
+<text x="40" y="62" class="txw b">avión mayor</text>
+<text x="45" y="126" class="txw">estela</text>
+<path d="M30 48 L400 190" class="ok-ln thick" marker-end="url(#070-estela-k)"/>
+<text x="250" y="96" class="txo b">tu avión: por encima de su senda</text>
+<line x1="330" y1="190" x2="330" y2="204" class="ln"/>
+<text x="326" y="232" class="tx2" text-anchor="end">toma del mayor</text>
+<line x1="400" y1="190" x2="400" y2="204" class="ln"/>
+<text x="404" y="232" class="txo b">tu toma: más allá</text>
+<text x="20" y="276" class="tx b">Despegue tras un avión mayor</text>
+<rect x="0" y="400" width="640" height="24" class="ground"/>
+<path d="M60 400 L200 400 L400 340 L610 290" class="wa-ln thick" fill="none" marker-end="url(#070-estela-k)"/>
+<text x="430" y="368" class="txw b">trayectoria del mayor</text>
+<path d="M60 400 L120 400 L300 320 L610 250" class="ok-ln thick" fill="none" marker-end="url(#070-estela-k)"/>
+<text x="40" y="300" class="txo b">tu trayectoria: por encima y rotando antes</text>
+<line x1="120" y1="400" x2="120" y2="414" class="ln"/>
+<text x="124" y="436" class="txo b" text-anchor="end">tu rotación</text>
+<line x1="200" y1="400" x2="200" y2="414" class="ln"/>
+<text x="196" y="436" class="tx2">rotación del mayor</text>
+</svg>

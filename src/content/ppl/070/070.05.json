@@ -1,0 +1,597 @@
+{
+  "lesson": {
+    "id": "070.05",
+    "title": "Fuego y humo",
+    "summary": "Prevención y tratamiento del fuego y del humo en un avión ligero: fuego durante el arranque, fuego de motor, eléctrico y de cabina, clases de fuego y agentes extintores, y por qué las listas del PA-28-161 y del C172S son distintas.",
+    "objectives": [
+      "Distinguir las clases de fuego (EN 2) y elegir el agente extintor adecuado",
+      "Describir la secuencia del POH para fuego en el arranque, de motor, eléctrico y de cabina",
+      "Explicar por qué las listas del PA-28-161 y del C172S difieren",
+      "Aplicar la prioridad: apagar, aterrizar cuanto antes y evacuar"
+    ],
+    "sections": [
+      {
+        "title": "Por qué el fuego es una emergencia de minutos",
+        "text": [
+          "Un incendio en un avión ligero te deja **muy poco tiempo**: el combustible, el aceite, la instalación eléctrica y el material de cabina arden, y el humo incapacita antes de que el fuego se vea. La respuesta tiene tres prioridades en este orden: **cortar la causa y apagar el fuego** (combustible, electricidad, o ambos), **aterrizar lo antes posible** y **evacuar y alejarse**. El resto de normas de este bloque son detalles de esas tres.",
+          "Las listas de emergencia (*checklists*) de tu avión están para eso: se estudian y se **memorizan los elementos de acción inmediata**, y el resto se lee con calma una vez controlada la situación."
+        ]
+      },
+      {
+        "title": "Clases de fuego y agentes extintores (EN 2)",
+        "text": [
+          "La norma europea **EN 2** clasifica los fuegos por el combustible que arde: **clase A**, sólidos (madera, papel, tela, tapizado); **clase B**, líquidos (gasolina, aceite); **clase C**, gases; **clase D**, metales (magnesio). Un fuego **eléctrico** no es una clase en EN 2 sino un fuego sobre equipo con tensión, que requiere un agente que no conduzca la electricidad. Cada agente sirve para unas clases y para otras es inútil o peligroso:"
+        ],
+        "bullets": [
+          "Los extintores portátiles de cabina de los aviones ligeros son de **halón 1211 o halotron** y, a veces, de CO2.",
+          "Uso: **retirar el pasador, apuntar a la base de las llamas, apretar y barrer**. Se descarga en ráfagas cortas y a distancia.",
+          "Después de usar el extintor en cabina cerrada, **ventila**: los vapores son irritantes."
+        ],
+        "table": {
+          "caption": "Agentes extintores y clases de fuego",
+          "head": [
+            "Agente",
+            "Clases adecuadas",
+            "No usar en"
+          ],
+          "rows": [
+            [
+              "Agua",
+              "A (sólidos)",
+              "B (combustible y aceite: lo extiende), eléctrico (conduce la electricidad), D"
+            ],
+            [
+              "Espuma",
+              "A y B",
+              "Eléctrico (conduce)"
+            ],
+            [
+              "CO2 (dióxido de carbono)",
+              "B y fuegos eléctricos",
+              "No tiene efecto duradero en A; ventila bien (asfixia)"
+            ],
+            [
+              "Polvo (ABC)",
+              "A, B, C y eléctrico",
+              "Equipos delicados: deja residuo; en cabina cerrada, se respira y estorba la visión"
+            ],
+            [
+              "Halón (1211) o halotron",
+              "A, B y eléctrico (extintor típico de cabina)",
+              "Ventila tras su uso (humos tóxicos al descomponerse)"
+            ]
+          ],
+          "src": "EN 2"
+        },
+        "figure": "svg:070-extintores",
+        "caption": "Agente extintor frente a clase de fuego. El agua no va en fuegos de combustible ni eléctricos."
+      },
+      {
+        "title": "Fuego durante el arranque",
+        "text": [
+          "En un motor con **carburador** (como el del PA-28-161 Warrior III) puede inflamarse el combustible acumulado en el colector de admisión si hay un retroceso o un exceso de cebado. La regla es **seguir girando el motor** (arrancador conectado) para que **aspire las llamas** hacia el interior y se consuman. Si arranca, se mantiene a unas 1700 RPM unos minutos y se para para inspeccionar daños. Si no arranca, se sigue girando, se corta la mezcla, se abre la mariposa y se **cierran los selectores de combustible y el interruptor general**, se saca el extintor y se evacua. Los pasos exactos son los del POH. En el C172S, de inyección, la lista es muy parecida: seguir girando para aspirar el fuego, y si no se apaga, cortar mezcla, combustible, magnetos y general, y apagar con el extintor."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Fuego de motor en vuelo: PA-28 y C172S",
+        "text": [
+          "**No hay una lista universal**: cada fabricante diseña y certifica la suya según la configuración del avión. La del PA-28-161 corta el combustible y deja el motor sin mezcla, y la del C172S corta primero la mezcla y el combustible y además la **batería** (llave general) y la calefacción. Ninguna de las dos manda dar «gases a fondo» ni cortar solo las magnetos: esa secuencia genérica no figura en los POH. Las dos terminan con un **aterrizaje de emergencia sin motor** (bloque 070.08).",
+          "¿**Por qué difieren**? Porque cada lista corta lo que alimenta el fuego **en ese avión**: el PA-28 es de ala baja con carburador y bomba eléctrica, y el C172S, de ala alta con inyección, selector BOTH e interruptor general que corta la instalación eléctrica. Aprende la de tu avión y mira la del otro como contraste."
+        ],
+        "table": {
+          "caption": "Fuego de motor en vuelo: resumen de las listas (comprueba el POH de tu avión)",
+          "head": [
+            "Paso",
+            "PA-28-161 Warrior III",
+            "Cessna 172S"
+          ],
+          "rows": [
+            [
+              "1",
+              "Selector de combustible OFF",
+              "Mezcla IDLE CUT-OFF"
+            ],
+            [
+              "2",
+              "Gases CERRADOS",
+              "Selector de combustible OFF"
+            ],
+            [
+              "3",
+              "Mezcla IDLE CUT-OFF",
+              "Interruptor general OFF"
+            ],
+            [
+              "4",
+              "Calefacción y desempañador OFF",
+              "Calefacción y aire de cabina cerrados (ventilas de techo abiertas)"
+            ],
+            [
+              "5",
+              "Procedimiento de aterrizaje sin motor",
+              "Velocidad 85 KIAS (más si el fuego no se apaga); aterrizaje forzoso"
+            ]
+          ],
+          "src": "POH PA-28-161 y C172S (resumen)"
+        },
+        "note": {
+          "kind": "warn",
+          "text": "La tabla es un resumen para entender la diferencia y puede variar con la edición del POH. La lista que vale es la del manual de vuelo del avión que pilotas. No intentes rearrancar un motor tras un fuego."
+        },
+        "verify": true
+      },
+      {
+        "title": "Fuego eléctrico y de cabina",
+        "text": [
+          "El **olor a quemado o el humo** de origen eléctrico (cableado, equipos de aviónica, baterías) se trata con prontitud: **cortar la fuente** de electricidad (interruptor general y resto de interruptores) para cortar la energía al circuito averiado, ventilar la cabina una vez controlado el fuego y usar el extintor si hay llama. El fuego de cabina (asientos, moqueta, equipaje) se ataca con el extintor, apuntando a la base de las llamas.",
+          "Una vez apagado el fuego, si necesitas alimentación para continuar (radio, instrumentos), la lista del C172S propone reconectar el general y los equipos **uno a uno**, con una pausa, para localizar el circuito dañado, **sin reponer** el disyuntor que saltó. En el PA-28 la lista es parecida y el principio idéntico. En todo caso: **aterriza cuanto antes**."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Humo en cabina",
+        "bullets": [
+          "Identifica el origen: eléctrico (olor a plástico quemado), de motor (aceite, olor a quemado procedente del cortafuegos), o de escape (monóxido de carbono, sin olor: dolor de cabeza, mareo).",
+          "Ventila: abre las rejillas de ventilación y, si es posible, una ventanilla según el POH (en algunos aviones se evita abrir la ventana ante fuego de motor para no avivarlo).",
+          "Corta la fuente según el POH y, si hay fuego, aplica la lista correspondiente.",
+          "Con humo denso, usa gafas y mascarilla si las hay, **desciende** y **aterriza cuanto antes**; avisa a ATC (PAN PAN o MAYDAY).",
+          "El **monóxido de carbono** es incoloro e inodoro: detectores de CO y un buen mantenimiento del escape son las defensas."
+        ]
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Aplicar la lista de un avión en otro (por ejemplo, la del C172S en un PA-28).",
+          "Usar agua en un fuego de combustible o eléctrico.",
+          "Parar el motor en un fuego de carburador durante el arranque, en lugar de seguir girando.",
+          "Intentar rearrancar tras un fuego de motor.",
+          "No cortar la fuente de electricidad en un fuego eléctrico.",
+          "Retrasar el aterrizaje para «ver si se apaga»."
+        ]
+      }
+    ],
+    "numbers": [
+      "Clases de fuego (EN 2): A sólidos, B líquidos, C gases, D metales",
+      "Agua: no usar en fuegos de combustible ni eléctricos",
+      "Extintor: retirar pasador, apuntar a la base, apretar y barrer",
+      "Fuego de carburador al arrancar: seguir girando el motor",
+      "Fuego de motor en vuelo: la lista del POH de tu avión (el PA-28 y el C172S difieren)",
+      "Tras un fuego de motor, aterrizaje de emergencia sin motor; sin rearrancar"
+    ],
+    "traps": [
+      "«Gases a fondo y magnetos OFF» no es la lista del PA-28 ni la del C172S.",
+      "Las listas del PA-28 y del C172S son distintas: usa la de tu avión.",
+      "El agua no se usa en fuegos de combustible ni eléctricos.",
+      "En el fuego de carburador al arrancar no se para el motor."
+    ],
+    "sources": [
+      {
+        "title": "EASA, Easy Access Rules for Air Operations (Part-NCO, AMC y GM)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+      },
+      {
+        "title": "Piper PA-28-161 Warrior III, POH, sección 3 Emergency Procedures"
+      },
+      {
+        "title": "Cessna 172S Skyhawk SP, POH, sección 3 Emergency Procedures"
+      },
+      {
+        "title": "Norma EN 2 clasificación de fuegos"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "070.05.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "En un fuego de carburador durante el arranque, lo primero que se hace es:",
+      "options": [
+        "Parar el motor y abrir la puerta",
+        "Seguir girando el motor para que aspire las llamas",
+        "Dar gases a fondo y soltar el arrancador",
+        "Cerrar el combustible y apartarse sin más"
+      ],
+      "correct": 1,
+      "why": "Si el motor sigue girando, aspira las llamas y el combustible acumulado y los consume.",
+      "whyNot": [
+        "Parar deja el fuego en el colector.",
+        null,
+        "Soltar el arrancador deja de aspirar.",
+        "Se hace después, si no se apaga."
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "070.05.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si el motor arranca tras un fuego en el arranque, la secuencia del POH es:",
+      "options": [
+        "Despegar de inmediato",
+        "Dar gases a fondo",
+        "Apagar sin inspeccionar",
+        "Mantener unos minutos a unas 1700 RPM, parar e inspeccionar daños"
+      ],
+      "correct": 3,
+      "why": "Se usa un régimen moderado para consumir el fuego y luego se inspecciona.",
+      "whyNot": [
+        "No se vuela con un motor dañado.",
+        "Los gases a fondo no ayudan.",
+        "Hay que inspeccionar.",
+        null
+      ],
+      "ref": "POH PA-28-161; C172S"
+    },
+    {
+      "id": "070.05.003",
+      "type": "regla",
+      "level": 1,
+      "q": "La clase de fuego B, según EN 2, corresponde a:",
+      "options": [
+        "Líquidos inflamables",
+        "Sólidos",
+        "Gases",
+        "Metales"
+      ],
+      "correct": 0,
+      "why": "A sólidos, B líquidos, C gases, D metales.",
+      "whyNot": [
+        null,
+        "Es la clase A.",
+        "Es la clase C.",
+        "Es la clase D."
+      ],
+      "ref": "EN 2"
+    },
+    {
+      "id": "070.05.004",
+      "type": "regla",
+      "level": 1,
+      "q": "No se debe usar agua sobre:",
+      "options": [
+        "Fuegos de papel",
+        "Fuegos de tela",
+        "Fuegos de combustible o aceite y fuegos eléctricos",
+        "Fuegos de madera"
+      ],
+      "correct": 2,
+      "why": "El agua extiende los líquidos inflamables y conduce la electricidad.",
+      "whyNot": [
+        "Es clase A: sí se puede.",
+        "Es clase A: sí se puede.",
+        null,
+        "Es clase A: sí se puede."
+      ],
+      "ref": "EN 2"
+    },
+    {
+      "id": "070.05.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "El extintor de cabina de un avión ligero suele ser de:",
+      "options": [
+        "Agua pulverizada",
+        "Espuma de gran volumen",
+        "Arena",
+        "Halón 1211 o halotron"
+      ],
+      "correct": 3,
+      "why": "Son agentes eficaces con clases A, B y eléctrico.",
+      "whyNot": [
+        "El agua no sirve con fuegos eléctricos o de combustible.",
+        "No es para cabina.",
+        "No es un extintor de cabina.",
+        null
+      ],
+      "ref": "EASA; práctica"
+    },
+    {
+      "id": "070.05.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "Usar el extintor en la cabina cerrada obliga después a:",
+      "options": [
+        "Ventilar, porque los vapores del agente son irritantes",
+        "Cerrar todas las ventilas",
+        "Encender la calefacción",
+        "Repostar"
+      ],
+      "correct": 0,
+      "why": "El agente y los productos de la combustión son irritantes.",
+      "whyNot": [
+        null,
+        "No se cierran.",
+        "No es la medida.",
+        "No tiene relación."
+      ],
+      "ref": "Buenas prácticas"
+    },
+    {
+      "id": "070.05.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "Durante un fuego de motor en vuelo en un PA-28-161, la lista del POH:",
+      "options": [
+        "Manda dar gases a fondo y cortar solo las magnetos",
+        "Manda rearrancar el motor",
+        "Corta el combustible y la mezcla y manda un aterrizaje sin motor",
+        "Manda apagar la radio"
+      ],
+      "correct": 2,
+      "why": "La lista del Warrior corta combustible, gases y mezcla y termina en aterrizaje sin motor.",
+      "whyNot": [
+        "Esa secuencia no figura en el POH.",
+        "No se rearranca.",
+        null,
+        "No tiene relación."
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "070.05.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "Las listas del PA-28 y del C172S para un fuego de motor en vuelo:",
+      "options": [
+        "Son idénticas",
+        "Difieren, así que se sigue la lista del avión que se pilota",
+        "Se pueden intercambiar",
+        "Las define la escuela, no el fabricante"
+      ],
+      "correct": 1,
+      "why": "Cada fabricante certifica su lista según la configuración del avión.",
+      "whyNot": [
+        "No son idénticas.",
+        null,
+        "No se intercambian.",
+        "El POH es del fabricante y está aprobado."
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "070.05.009",
+      "type": "concepto",
+      "level": 3,
+      "q": "En el fuego de motor en vuelo del C172S, además de cortar mezcla y combustible, el POH incluye:",
+      "options": [
+        "Gases a fondo",
+        "El interruptor general OFF y velocidad de 85 KIAS",
+        "Poner los flaps al máximo",
+        "Seleccionar la bomba eléctrica"
+      ],
+      "correct": 1,
+      "why": "La lista del C172S: mezcla IDLE CUT-OFF, combustible OFF, general OFF, calefacción cerrada y 85 KIAS.",
+      "whyNot": [
+        "No es parte de la lista.",
+        null,
+        "No es parte de la lista.",
+        "No es parte de la lista."
+      ],
+      "ref": "POH C172S"
+    },
+    {
+      "id": "070.05.010",
+      "type": "concepto",
+      "level": 1,
+      "q": "Tras un fuego de motor en vuelo, ¿puedes intentar rearrancar?",
+      "options": [
+        "Sí, una vez",
+        "Sí, si el fuego parece apagado",
+        "Solo con mezcla pobre",
+        "No: se aterriza sin motor"
+      ],
+      "correct": 3,
+      "why": "Un rearranque puede reavivar el fuego.",
+      "whyNot": [
+        "No se rearranca.",
+        "No se rearranca.",
+        "No se rearranca.",
+        null
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "070.05.011",
+      "type": "regla",
+      "level": 2,
+      "q": "En un fuego eléctrico, la primera acción es:",
+      "options": [
+        "Cortar la alimentación eléctrica (general y demás interruptores) según el POH",
+        "Soplar sobre los cables",
+        "Aumentar la carga eléctrica",
+        "Echar agua sobre el equipo"
+      ],
+      "correct": 0,
+      "why": "Cortar la energía elimina la fuente del fuego.",
+      "whyNot": [
+        null,
+        "No es procedimiento.",
+        "Alimentaría el fuego.",
+        "El agua conduce la electricidad."
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "070.05.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "Tras apagar un fuego eléctrico, para reponer equipos necesarios, el POH del C172S indica:",
+      "options": [
+        "Conectar todo a la vez",
+        "Reponer el disyuntor repetidamente",
+        "Conectar los equipos uno a uno con una pausa, sin reponer el disyuntor que saltó",
+        "No conectar nunca nada"
+      ],
+      "correct": 2,
+      "why": "Así se localiza el circuito dañado sin reavivar el fuego.",
+      "whyNot": [
+        "No localizaría la avería.",
+        "Un disyuntor que salta indica avería.",
+        null,
+        "Si se necesita, se hace de forma controlada."
+      ],
+      "ref": "POH C172S"
+    },
+    {
+      "id": "070.05.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "El monóxido de carbono en cabina:",
+      "options": [
+        "Huele a quemado",
+        "Se ve como humo blanco",
+        "Solo aparece de noche",
+        "Es incoloro e inodoro; sus síntomas son dolor de cabeza y mareo"
+      ],
+      "correct": 3,
+      "why": "Es peligroso porque no se percibe; un detector de CO es la defensa.",
+      "whyNot": [
+        "No tiene olor.",
+        "No se ve.",
+        "No depende de la hora.",
+        null
+      ],
+      "ref": "040; AFM"
+    },
+    {
+      "id": "070.05.014",
+      "type": "regla",
+      "level": 1,
+      "q": "Un extintor se usa:",
+      "options": [
+        "Apuntando a la base de las llamas y barriendo",
+        "Apuntando a las llamas de arriba",
+        "Desde lejos sin apuntar",
+        "Con la boquilla hacia el piloto"
+      ],
+      "correct": 0,
+      "why": "PASS: pasador, apuntar a la base, apretar, barrer.",
+      "whyNot": [
+        null,
+        "Hay que apuntar a la base.",
+        "Hay que apuntar.",
+        "No es correcto."
+      ],
+      "ref": "Buenas prácticas"
+    },
+    {
+      "id": "070.05.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con humo en cabina de origen desconocido, la prioridad es:",
+      "options": [
+        "Seguir al destino",
+        "Subir a mayor altitud",
+        "Ventilar, identificar el origen, aplicar la lista y aterrizar cuanto antes",
+        "Apagar todas las luces y seguir"
+      ],
+      "correct": 2,
+      "why": "El humo incapacita: hay que aterrizar cuanto antes.",
+      "whyNot": [
+        "Aumenta el riesgo.",
+        "No resuelve.",
+        null,
+        "No resuelve."
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "070.05.016",
+      "type": "regla",
+      "level": 2,
+      "q": "La clase D de fuego, según EN 2, se refiere a:",
+      "options": [
+        "Líquidos",
+        "Metales",
+        "Gases",
+        "Sólidos"
+      ],
+      "correct": 1,
+      "why": "D: metales como el magnesio.",
+      "whyNot": [
+        "B es la clase de los líquidos.",
+        null,
+        "C es la clase de los gases.",
+        "A es la clase de los sólidos."
+      ],
+      "ref": "EN 2"
+    },
+    {
+      "id": "070.05.017",
+      "type": "concepto",
+      "level": 1,
+      "q": "Las prioridades ante un incendio son:",
+      "options": [
+        "Hablar con el pasajero",
+        "Apagar o cortar la causa, aterrizar cuanto antes y evacuar",
+        "Revisar el navlog",
+        "Esperar a ver si se apaga"
+      ],
+      "correct": 1,
+      "why": "Es la secuencia de actuación con fuego a bordo.",
+      "whyNot": [
+        "No es prioridad.",
+        null,
+        "No es prioridad.",
+        "Retrasar es peligroso."
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "070.05.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un extintor de polvo usado en una cabina pequeña y cerrada:",
+      "options": [
+        "No deja residuo alguno",
+        "Es el único válido para fuegos eléctricos",
+        "Se usa mejor a un metro sin apuntar",
+        "Puede dificultar la respiración y la visión, por lo que hay que ventilar después"
+      ],
+      "correct": 3,
+      "why": "El polvo se dispersa en el aire de la cabina y es irritante.",
+      "whyNot": [
+        "Sí deja residuo.",
+        "También valen CO2 y halón.",
+        "Siempre se apunta a la base de las llamas.",
+        null
+      ],
+      "ref": "Buenas prácticas"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.070.05.01",
+      "front": "Clases de fuego (EN 2)",
+      "back": "A sólidos, B líquidos, C gases, D metales; el eléctrico es fuego en equipo con tensión"
+    },
+    {
+      "id": "c.070.05.02",
+      "front": "Agua",
+      "back": "No se usa en fuegos de combustible ni eléctricos"
+    },
+    {
+      "id": "c.070.05.03",
+      "front": "Fuego de carburador en el arranque",
+      "back": "Seguir girando el motor para aspirar las llamas; si no arranca, cortar mezcla, combustible y general y evacuar"
+    },
+    {
+      "id": "c.070.05.04",
+      "front": "Fuego de motor en vuelo",
+      "back": "Sigue la lista del POH de tu avión: PA-28 y C172S difieren; sin rearrancar; aterrizaje sin motor"
+    }
+  ]
+}
