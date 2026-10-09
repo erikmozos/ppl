@@ -1,0 +1,503 @@
+{
+  "lesson": {
+    "id": "030.11",
+    "title": "Preparación previa",
+    "summary": "Qué información debes obtener antes de volar y dónde: AIP, suplementos y circulares, NOTAM y boletín de información previa, servicios de información y de notificación, datos de los aeródromos y del espacio aéreo, y el briefing meteorológico, con un NOTAM descifrado campo a campo.",
+    "objectives": [
+      "Explicar para qué sirven el AIP, los suplementos, las circulares, los NOTAM y el PIB",
+      "Descifrar un NOTAM: serie, número, tipo, línea Q y los campos A a G",
+      "Elegir y comprobar los aeródromos de salida, destino y alternativo",
+      "Preparar el briefing meteorológico y comprobar que la información es completa y vigente"
+    ],
+    "sections": [
+      {
+        "title": "La obligación de informarse",
+        "text": [
+          "Antes de empezar un vuelo, el piloto al mando debe **conocer toda la información disponible** que sea apropiada para el vuelo previsto (SERA.2010). Si vuela fuera de las inmediaciones del aeródromo, debe además estudiar con detalle los partes y pronósticos meteorológicos vigentes, las necesidades de combustible y un plan alternativo por si el vuelo no puede completarse. Esa obligación se cumple con una **preparación previa** ordenada: información aeronáutica (AIP, NOTAM), meteorológica (METAR, TAF y mapas), datos de los aeródromos, espacio aéreo, masa y centrado, combustible y plan de vuelo.",
+          "El orden recomendado es: ruta y espacio aéreo, aeródromos (salida, destino y alternativos), NOTAM y avisos, meteorología, performance, combustible y plan de vuelo. Un NOTAM de última hora puede cambiar la decisión de volar, de modo que se consulta lo más tarde posible antes del despegue."
+        ]
+      },
+      {
+        "title": "El AIP y sus publicaciones asociadas",
+        "text": [
+          "La información aeronáutica la publica cada Estado en su **AIP** (*Aeronautical Information Publication*), organizado en tres partes: **GEN** (general: reglas, servicios, diferencias nacionales como GEN 1.7), **ENR** (en ruta: espacio aéreo, zonas, rutas, plan de vuelo en ENR 1.10) y **AD** (aeródromos: fichas, cartas VAC e IAC). En España lo publica ENAIRE (aip.enaire.es).",
+          "El AIP se revisa por ciclos **AIRAC** de **28 días**, que son las fechas comunes en que cambian los datos que afectan a las operaciones. Los cambios temporales de larga duración (tres meses o más) o los textos muy extensos o con gráficos van en **suplementos AIP (AIP SUP)**; la información de carácter más general, explicativo o de asesoramiento va en **circulares de información aeronáutica (AIC)**. Antes de volar, comprueba que tienes el AIP vigente y los suplementos que afectan a tu ruta."
+        ],
+        "table": {
+          "caption": "Publicaciones de información aeronáutica",
+          "head": [
+            "Publicación",
+            "Contenido",
+            "Ciclo o vigencia"
+          ],
+          "rows": [
+            [
+              "AIP (GEN, ENR, AD)",
+              "Información permanente y duradera",
+              "Revisión por ciclos AIRAC (28 días)"
+            ],
+            [
+              "AIP SUP",
+              "Cambios temporales largos (3 meses o más) o con mucho texto o gráficos",
+              "Los indica cada suplemento"
+            ],
+            [
+              "AIC",
+              "Información de asesoramiento o administrativa",
+              "Sin vigencia fija"
+            ],
+            [
+              "NOTAM",
+              "Cambios temporales o urgentes que afectan al vuelo",
+              "Los indica el NOTAM (máximo 3 meses si es temporal)"
+            ]
+          ],
+          "src": "OACI Anexo 15"
+        }
+      },
+      {
+        "title": "El NOTAM: estructura y lectura",
+        "text": [
+          "Un **NOTAM** (*Notice to Airmen*, en OACI) es un aviso con información sobre el establecimiento, estado o modificación de una instalación, servicio o procedimiento, o un peligro, que el personal de vuelo necesita conocer a tiempo. Se identifica con una **serie** (letra), un **número** y el **año** (A0432/26), y un **tipo**: **N** (nuevo), **R** (reemplaza a otro) o **C** (cancela a otro). Su contenido está en una **línea Q** (de filtrado, para el procesamiento automático) y en campos con letra: **A** (aeródromo o FIR), **B** (inicio, UTC), **C** (fin, UTC), **D** (horario, opcional), **E** (texto en lenguaje abreviado) y, si procede, **F** y **G** (límites inferior y superior).",
+          "Las fechas B) y C) se escriben **AAMMDDhhmm en UTC**: 2610150700 es el 15 de octubre de 2026 a las 07:00 UTC. Si el final es incierto, C) añade **EST** (estimado), y los NOTAM permanentes lo dicen con **PERM**. Sin D), el NOTAM es continuo entre B) y C); con D), solo afecta en el horario indicado."
+        ],
+        "examples": [
+          {
+            "q": "Descifra el NOTAM A0432/26.",
+            "a": "Serie A, número 432, año 2026, nuevo (N). Línea Q: FIR LECB; código QMRLC (instalación de aeródromo, pista, cerrada); tráfico IV (IFR y VFR); finalidad NBO (de notificación inmediata, para el boletín de información previa y de operación de vuelo); alcance A (aeródromo); límites de 000 a 999; coordenadas 39°35'N 002°42'E y radio de 5 NM. Campo A: LESB. Del 15-10-2026 07:00 UTC al 15-10-2026 15:00 UTC, cada día de 07:00 a 15:00. Texto: pista 06/24 cerrada por obras. Es decir: el 15 de octubre, la pista 06/24 de Son Bonet no se puede usar entre las 07:00 y las 15:00 UTC."
+          }
+        ]
+      },
+      {
+        "title": "NOTAM de ejemplo, campo a campo",
+        "text": [
+          "Dos avisos de ejemplo (datos ficticios, no corresponden a ninguna publicación real). En el primero la pista queda cerrada por obras; en el segundo hay un obstáculo temporal cerca de la pista."
+        ],
+        "bullets": [
+          "**Q) LECB/QMRLC/IV/NBO/A/000/999/3935N00242E005**: FIR, código Q (dos letras de sujeto y dos de condición: QMR = pista, LC = cerrada), tráfico, finalidad, alcance, límites en cientos de pies (000 a 999) y coordenadas con radio.",
+          "**QOBCE**: obstáculo (OB), grúa (BC), erigido o con presencia (E). Se lee en el texto: 640 ft AMSL / 330 ft AGL, iluminada, 1,2 NM al este del umbral de la pista 24.",
+          "Si el avión tiene que pasar sobre esa grúa por la trayectoria de aproximación, el obstáculo cambia tu altitud mínima de seguridad: 640 ft AMSL más margen.",
+          "**R**: sustituye a un NOTAM anterior; **C**: lo cancela. Siempre se leen en orden del más reciente al más antiguo."
+        ],
+        "note": {
+          "kind": "es",
+          "text": "En España, los NOTAM los publica ENAIRE a través de la oficina NOTAM y se consultan en el portal AIS (Insignia), junto con el boletín de información previa de la ruta. La FIR de Baleares es LECB (verifica el indicativo de FIR en el AIP)."
+        },
+        "verify": true
+      },
+      {
+        "title": "Boletín de información previa (PIB)",
+        "text": [
+          "El **PIB** (*Pre-flight Information Bulletin*) es un resumen de los NOTAM **vigentes** que afectan a tu ruta, aeródromos y espacio aéreo. Lo pides indicando ruta y horas y lo consultas **lo más tarde posible antes del despegue**. Es más cómodo que leer todos los NOTAM de una FIR, pero no te libra de leerlos con atención. Si el vuelo es largo, vuelve a consultarlos antes de salir de cada escala."
+        ],
+        "bullets": [
+          "El PIB tiene datos de la hora de la consulta: anótala. Si la salida se retrasa horas, repite la consulta.",
+          "Los NOTAM con finalidad **B** (para el PIB) o **N** (de notificación inmediata) entran en él.",
+          "Una zona de riesgo (por ejemplo, una zona peligrosa activa) aparece como NOTAM aunque esté en el AIP."
+        ]
+      },
+      {
+        "title": "Servicios: AIS, ARO y meteorología",
+        "text": [
+          "El **servicio de información aeronáutica (AIS)** proporciona el AIP, los NOTAM y los boletines. La **oficina de notificación de los servicios de tránsito aéreo (ARO)** recibe, comprueba y tramita los planes de vuelo. Las oficinas ARO de los aeródromos y los portales web de ENAIRE permiten presentar y gestionar el plan (bloque 030.12). La información meteorológica la da **AEMET** (METAR, TAF, mapas, avisos).",
+          "En muchos aeródromos pequeños no hay ARO propia: se presenta el plan por el portal, por teléfono o por radio al ATS en vuelo. En el aeródromo de salida confirma qué servicios hay y cuál es su horario."
+        ]
+      },
+      {
+        "title": "Aeródromos de salida, destino y alternativo",
+        "text": [
+          "De cada aeródromo comprueba en el AIP AD 2: **pistas** (longitud, anchura, superficie, orientación), **elevación**, **horario de operación**, **combustible** y servicios, **frecuencias**, **circuito**, **restricciones** (PPR, aeródromos con permiso previo, ruido, VFR nocturno) y **espacio aéreo** (CTR, ATZ). Revisa que la pista sea suficiente con la performance (bloque 030.06 y 030.07), que el aeródromo estará abierto a la hora de llegada, y qué NOTAM le afectan.",
+          "El **alternativo** (cuando haga falta) debe poder aceptarte con margen: estar abierto, tener pista suficiente, combustible si lo necesitas y meteorología utilizable a tu hora de llegada. Comprueba la meteorología de **los tres** aeródromos con METAR y TAF."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Espacio aéreo de la ruta",
+        "text": [
+          "Identifica cada espacio aéreo que cruzas (CTR, TMA, zonas de control, ATZ, zonas LEP/LER/LED, rutas de aproximación) y su **clase** (bloque 010). Comprueba si necesitas autorización, comunicación bilateral o transpondedor y qué mínimos VMC aplican en cada tramo. Anota las frecuencias del servicio de información de vuelo y de cada dependencia que contactarás, y las alturas máximas y mínimas de cada espacio."
+        ]
+      },
+      {
+        "title": "Briefing meteorológico",
+        "text": [
+          "El briefing meteorológico incluye: **METAR y TAF** de salida, destino y alternativo, el **mapa de tiempo significativo** para vuelos de baja cota, el **pronóstico de zona (GAMET)** y los avisos (SIGMET, AIRMET, avisos de aeródromo), la situación sinóptica, los vientos y temperaturas en altura y la altitud de la isoterma de 0 °C. Léelo pensando en la decisión: ¿se puede volar con los mínimos VMC legales y con los tuyos? ¿Qué tengo que vigilar? ¿A partir de qué cambio no continúo?",
+          "Las claves de lectura están en la materia 050 y en la calculadora de METAR y TAF."
+        ],
+        "figure": "calc:metar"
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Leer un NOTAM sin fijarse en las fechas y horas UTC.",
+          "No consultar los NOTAM justo antes de salir.",
+          "Confundir la hora local con UTC: España en verano es UTC+2.",
+          "Olvidar el alternativo o la hora de cierre del aeródromo.",
+          "Dar por válida una información de AIP antigua: hay que comprobar el ciclo AIRAC vigente."
+        ]
+      }
+    ],
+    "numbers": [
+      "AIRAC: ciclos de 28 días",
+      "AIP: GEN, ENR y AD",
+      "NOTAM: N nuevo, R reemplaza, C cancela; B) y C) en AAMMDDhhmm UTC",
+      "AIP SUP: cambios temporales de tres meses o más; AIC: información general",
+      "Antes de volar, SERA.2010: informarse de todo lo apropiado para el vuelo"
+    ],
+    "traps": [
+      "Las horas de los NOTAM son siempre UTC.",
+      "El PIB se pide lo más tarde posible antes del despegue.",
+      "El NOTAM con D) solo afecta en ese horario.",
+      "Un NOTAM R sustituye a uno anterior; un NOTAM C lo cancela."
+    ],
+    "spain": [
+      "AIP España de ENAIRE: aip.enaire.es.",
+      "Zonas prohibidas, restringidas y peligrosas con prefijos LEP, LER y LED."
+    ],
+    "sources": [
+      {
+        "title": "Reglamento (UE) 923/2012 (SERA), Easy Access Rules",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "ENAIRE, AIP España (GEN 1.7, ENR 1.10, AD)",
+        "url": "https://aip.enaire.es"
+      },
+      {
+        "title": "OACI, Anexo 15 Servicios de información aeronáutica",
+        "url": "https://www.icao.int"
+      },
+      {
+        "title": "EASA, Easy Access Rules for Air Operations (Part-NCO, AMC y GM)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "030.11.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "Un NOTAM sirve para:",
+      "options": [
+        "Publicar el AIP completo cada año",
+        "Informar de cambios temporales o urgentes que afectan a la operación de vuelo",
+        "Dar la previsión meteorológica de la ruta",
+        "Asignar pista a los aviones"
+      ],
+      "correct": 1,
+      "why": "Los NOTAM comunican a tiempo establecimiento, estado o modificación de instalaciones, servicios, procedimientos o peligros.",
+      "whyNot": [
+        "Eso lo hace el AIP, con ciclos AIRAC.",
+        null,
+        "Eso lo hace el TAF o el pronóstico de zona.",
+        "Eso lo hace el control del aeródromo."
+      ],
+      "ref": "OACI Anexo 15"
+    },
+    {
+      "id": "030.11.002",
+      "type": "regla",
+      "level": 1,
+      "q": "Los ciclos AIRAC de revisión del AIP son de:",
+      "options": [
+        "14 días",
+        "90 días",
+        "365 días",
+        "28 días"
+      ],
+      "correct": 3,
+      "why": "AIRAC: sistema de fechas comunes con intervalos de 28 días.",
+      "whyNot": [
+        "No es el intervalo de AIRAC.",
+        "Es la duración típica de un cambio temporal largo.",
+        "El AIP no se revisa solo una vez al año.",
+        null
+      ],
+      "ref": "OACI Anexo 15"
+    },
+    {
+      "id": "030.11.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "Las tres partes del AIP son:",
+      "options": [
+        "GEN, ENR y AD",
+        "GEN, NAV y AIR",
+        "AIC, NOTAM y PIB",
+        "VFR, IFR y MET"
+      ],
+      "correct": 0,
+      "why": "GEN (general), ENR (en ruta) y AD (aeródromos).",
+      "whyNot": [
+        null,
+        "NAV y AIR no son partes del AIP.",
+        "Son otras publicaciones.",
+        "Son tipos de vuelo y materia."
+      ],
+      "ref": "AIP; OACI Anexo 15"
+    },
+    {
+      "id": "030.11.004",
+      "type": "regla",
+      "level": 2,
+      "q": "En un NOTAM, el tipo «NOTAMR» indica que:",
+      "options": [
+        "Cancela un NOTAM anterior",
+        "Es un NOTAM nuevo",
+        "Reemplaza a un NOTAM anterior",
+        "Corrige solo la hora"
+      ],
+      "correct": 2,
+      "why": "N nuevo, R reemplaza, C cancela.",
+      "whyNot": [
+        "Eso es NOTAMC.",
+        "Eso es NOTAMN.",
+        null,
+        "Reemplaza el contenido, no solo la hora."
+      ],
+      "ref": "OACI Anexo 15"
+    },
+    {
+      "id": "030.11.005",
+      "type": "lectura",
+      "level": 1,
+      "q": "En el NOTAM A0432/26, ¿qué indica el campo B) 2610150700?",
+      "data": "A0432/26 NOTAMN\nQ) LECB/QMRLC/IV/NBO/A/000/999/3935N00242E005\nA) LESB\nB) 2610150700\nC) 2610151500\nD) DAILY 0700-1500\nE) RWY 06/24 CLSD DUE WIP\n",
+      "options": [
+        "Fin de vigencia: 26-10-15 a las 07:00 UTC",
+        "Inicio: 26 de octubre de 2015 a las 07:00 locales",
+        "Inicio: 15 de octubre a las 07:00 hora de España",
+        "Inicio de vigencia: 15-10-2026 a las 07:00 UTC"
+      ],
+      "correct": 3,
+      "why": "B) es el inicio y se escribe AAMMDDhhmm en UTC: 26-10-15 07:00 UTC.",
+      "whyNot": [
+        "El fin se indica en el campo C).",
+        "El orden es año, mes, día, hora y minuto.",
+        "Siempre se da en UTC.",
+        null
+      ],
+      "ref": "OACI Anexo 15"
+    },
+    {
+      "id": "030.11.006",
+      "type": "lectura",
+      "level": 2,
+      "q": "Según el NOTAM A0432/26, ¿qué está cerrado y cuándo?",
+      "data": "A0432/26 NOTAMN\nQ) LECB/QMRLC/IV/NBO/A/000/999/3935N00242E005\nA) LESB\nB) 2610150700\nC) 2610151500\nD) DAILY 0700-1500\nE) RWY 06/24 CLSD DUE WIP\n",
+      "options": [
+        "La pista 06/24 de LESB, el 15-10-2026 de 07:00 a 15:00 UTC",
+        "El aeródromo LESB durante todo el día 15-10-2026",
+        "La pista 06/24 de LESB hasta una fecha estimada",
+        "Todas las pistas de LESB las 24 horas"
+      ],
+      "correct": 0,
+      "why": "El texto E) dice pista 06/24 cerrada por obras, entre B) y C) y en el horario D).",
+      "whyNot": [
+        null,
+        "No se cierra todo el aeródromo, solo esa pista.",
+        "C) no lleva EST: el fin es fijo.",
+        "No son todas las pistas ni todo el día."
+      ],
+      "ref": "OACI Anexo 15"
+    },
+    {
+      "id": "030.11.007",
+      "type": "lectura",
+      "level": 2,
+      "q": "En el NOTAM B1187/26, el fin de vigencia «2612312359 EST» significa:",
+      "data": "B1187/26 NOTAMN\nQ) LECB/QOBCE/IV/M/AE/000/005/3938N00245E002\nA) LESB\nB) 2610010600\nC) 2612312359 EST\nE) CRANE ERECTED 1.2 NM E OF THR RWY 24\n   ELEV 640 FT AMSL / HGT 330 FT AGL\n   LIGHTED\n",
+      "options": [
+        "Hasta el 31-12-2012 a las 23:59 locales",
+        "Fin exacto y confirmado",
+        "Hasta el 31-12-2026 a las 23:59 UTC, fecha estimada",
+        "Finaliza al amanecer"
+      ],
+      "correct": 2,
+      "why": "EST indica que la fecha final es una estimación, el NOTAM puede cancelarse antes o ampliarse.",
+      "whyNot": [
+        "Se escribe AAMMDD: 26-12-31.",
+        "EST indica que es estimado, no confirmado.",
+        null,
+        "No se refiere al amanecer."
+      ],
+      "ref": "OACI Anexo 15"
+    },
+    {
+      "id": "030.11.008",
+      "type": "lectura",
+      "level": 3,
+      "q": "Con el NOTAM B1187/26, ¿qué altitud está ocupada por la grúa?",
+      "data": "B1187/26 NOTAMN\nQ) LECB/QOBCE/IV/M/AE/000/005/3938N00245E002\nA) LESB\nB) 2610010600\nC) 2612312359 EST\nE) CRANE ERECTED 1.2 NM E OF THR RWY 24\n   ELEV 640 FT AMSL / HGT 330 FT AGL\n   LIGHTED\n",
+      "options": [
+        "Hasta 330 ft AMSL",
+        "Hasta 640 ft AMSL (330 ft sobre el suelo)",
+        "Hasta 640 ft sobre el suelo",
+        "Hasta 1,2 NM"
+      ],
+      "correct": 1,
+      "why": "ELEV 640 ft AMSL es la elevación de la punta; HGT 330 ft AGL es su altura sobre el terreno.",
+      "whyNot": [
+        "330 ft es la altura sobre el suelo, no la altitud.",
+        null,
+        "640 ft es AMSL, no sobre el suelo.",
+        "1,2 NM es la distancia al umbral."
+      ],
+      "ref": "OACI Anexo 15"
+    },
+    {
+      "id": "030.11.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "Se publican en un suplemento AIP (AIP SUP):",
+      "options": [
+        "Los cambios urgentes de pocas horas",
+        "Los cambios temporales de larga duración o con mucho texto o gráficos",
+        "Los METAR de cada aeródromo",
+        "Los planes de vuelo presentados"
+      ],
+      "correct": 1,
+      "why": "AIP SUP: cambios temporales de tres meses o más, o de corta duración con mucha información.",
+      "whyNot": [
+        "Para eso están los NOTAM.",
+        null,
+        "Los publica AEMET.",
+        "Los tramita ARO."
+      ],
+      "ref": "OACI Anexo 15"
+    },
+    {
+      "id": "030.11.010",
+      "type": "concepto",
+      "level": 1,
+      "q": "El PIB (boletín de información previa) es:",
+      "options": [
+        "Un pronóstico meteorológico",
+        "Un plan de vuelo",
+        "Una carta de aproximación",
+        "Un resumen de los NOTAM vigentes que afectan a la ruta y a los aeródromos del vuelo"
+      ],
+      "correct": 3,
+      "why": "Pre-flight Information Bulletin: lista de NOTAM vigentes para el vuelo.",
+      "whyNot": [
+        "Eso es el TAF o el GAMET.",
+        "Eso es el FPL.",
+        "Eso es la VAC o la IAC.",
+        null
+      ],
+      "ref": "OACI Anexo 15"
+    },
+    {
+      "id": "030.11.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "Conviene consultar los NOTAM:",
+      "options": [
+        "Lo más tarde posible antes del despegue",
+        "Solo el día anterior",
+        "Una vez al mes",
+        "Solo si hay mal tiempo"
+      ],
+      "correct": 0,
+      "why": "Pueden publicarse NOTAM de última hora que cambian la decisión de volar.",
+      "whyNot": [
+        null,
+        "Un día antes puede quedar desfasado.",
+        "No cubre cambios nuevos.",
+        "No dependen de la meteorología."
+      ],
+      "ref": "SERA.2010; práctica"
+    },
+    {
+      "id": "030.11.012",
+      "type": "regla",
+      "level": 2,
+      "q": "En SERA.2010, antes de comenzar un vuelo lejos del aeródromo, el piloto al mando debe:",
+      "options": [
+        "Solo consultar la meteorología de salida",
+        "Solo presentar un plan de vuelo",
+        "Estudiar los partes y pronósticos, el combustible necesario y un plan alternativo",
+        "Comprobar solo el estado del avión"
+      ],
+      "correct": 2,
+      "why": "La norma exige informarse de todo lo apropiado para el vuelo, y en vuelos fuera de las inmediaciones, de meteorología, combustible y alternativas.",
+      "whyNot": [
+        "Es insuficiente.",
+        "El plan de vuelo no es la única preparación.",
+        null,
+        "El estado del avión no basta."
+      ],
+      "ref": "SERA.2010"
+    },
+    {
+      "id": "030.11.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "Para elegir un aeródromo alternativo, lo que más importa comprobar es que:",
+      "options": [
+        "Esté a menos de 5 NM del destino",
+        "Tenga un restaurante",
+        "Sea siempre un aeródromo controlado",
+        "Pueda aceptarte a tu hora de llegada, con pista, horario y meteorología adecuados"
+      ],
+      "correct": 3,
+      "why": "El alternativo debe estar abierto, tener pista suficiente y meteorología utilizable cuando lo necesites.",
+      "whyNot": [
+        "No hay una distancia fija.",
+        "No es un criterio operativo.",
+        "No tiene por qué ser controlado.",
+        null
+      ],
+      "ref": "NCO.OP.135"
+    },
+    {
+      "id": "030.11.014",
+      "type": "concepto",
+      "level": 1,
+      "q": "La información de las fichas de aeródromo (pistas, frecuencias, horario) está en el AIP, parte:",
+      "options": [
+        "AD",
+        "GEN",
+        "ENR",
+        "AIC"
+      ],
+      "correct": 0,
+      "why": "La parte AD (aeródromos) contiene las fichas y cartas de aeródromo.",
+      "whyNot": [
+        null,
+        "GEN trata reglas generales.",
+        "ENR es la información en ruta.",
+        "Es otra publicación, no una parte del AIP."
+      ],
+      "ref": "AIP"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.030.11.01",
+      "front": "NOTAM: tipos y fechas",
+      "back": "N nuevo, R reemplaza, C cancela. B) inicio y C) fin en AAMMDDhhmm UTC; EST = fin estimado"
+    },
+    {
+      "id": "c.030.11.02",
+      "front": "AIP y AIRAC",
+      "back": "Partes GEN, ENR y AD; revisión por ciclos AIRAC de 28 días; SUP: cambios temporales largos; AIC: información general"
+    },
+    {
+      "id": "c.030.11.03",
+      "front": "Preparación previa del vuelo",
+      "back": "SERA.2010: informarse de todo lo apropiado; NOTAM/PIB lo más tarde posible antes de despegar"
+    }
+  ]
+}

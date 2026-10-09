@@ -1,0 +1,412 @@
+{
+ "lesson": {
+  "title": "Atmósfera y leyes de los gases",
+  "summary": "Composición del aire, cómo cambia la presión con la altitud y las leyes de Dalton, Boyle y Henry aplicadas al cuerpo del piloto: oído, senos, dientes, intestino y enfermedad descompresiva tras el buceo.",
+  "objectives": [
+   "Dar la composición del aire y explicar por qué el porcentaje de oxígeno no cambia con la altitud",
+   "Aplicar la ley de Dalton a la presión parcial de oxígeno",
+   "Aplicar la ley de Boyle a los gases atrapados en el cuerpo",
+   "Explicar la ley de Henry y la enfermedad descompresiva",
+   "Aplicar las esperas recomendadas tras el buceo"
+  ],
+  "sections": [
+   {
+    "title": "Composición del aire y presión con la altitud",
+    "text": [
+     "El aire seco está formado por **nitrógeno (78 %)**, **oxígeno (21 %)** y pequeñas cantidades de argón (cerca del 0,9 %), dióxido de carbono (0,04 %) y otros gases. El cuerpo solo usa el oxígeno; el nitrógeno es inerte para la respiración pero tiene importancia en la descompresión. Lo esencial para el piloto: **el porcentaje de oxígeno es el 21 % a cualquier altitud** hasta unos 80 km. Lo que cambia con la altitud es la **presión**, y con ella la cantidad de moléculas de oxígeno que entran en cada respiración.",
+     "La presión atmosférica baja deprisa al subir. En la atmósfera estándar la presión a unos **18.000 ft (5500 m)** es la mitad de la del nivel del mar, y a 34.000 ft ya es solo la cuarta parte. Esta es la razón de que el cuerpo empiece a tener problemas de oxígeno a alturas que parecen modestas."
+    ],
+    "table": {
+     "caption": "Presión atmosférica aproximada en la atmósfera estándar",
+     "head": [
+      "Altitud",
+      "Presión (hPa)",
+      "Respecto al nivel del mar"
+     ],
+     "rows": [
+      [
+       "Nivel del mar",
+       "1013",
+       "100 %"
+      ],
+      [
+       "5000 ft",
+       "843",
+       "83 %"
+      ],
+      [
+       "10.000 ft",
+       "697",
+       "69 %"
+      ],
+      [
+       "18.000 ft",
+       "506",
+       "50 %"
+      ],
+      [
+       "FL340",
+       "250",
+       "25 %"
+      ]
+     ],
+     "src": "Atmósfera estándar ISA"
+    }
+   },
+   {
+    "title": "Ley de Dalton: presiones parciales",
+    "text": [
+     "La **ley de Dalton** dice que la presión total de una mezcla de gases es la suma de las presiones parciales de cada gas, y que la presión parcial de un gas es su porcentaje en la mezcla multiplicado por la presión total. Con el 21 % de oxígeno, la presión parcial de oxígeno (pO₂) es en el nivel del mar de unos 213 hPa (160 mmHg). A 18.000 ft la presión total es la mitad y la pO₂ también: unos 106 hPa.",
+     "Lo que determina que el oxígeno pase de los alvéolos a la sangre es precisamente su **presión parcial**, no su porcentaje. Por eso la altitud produce **hipoxia hipóxica** aunque el aire siga teniendo el 21 % de oxígeno: hay menos presión que empuje las moléculas a través de la membrana alveolar. Respirar oxígeno puro eleva el porcentaje al 100 % y, por tanto, la pO₂ para la misma presión total, lo que compensa la altitud hasta unos 33.000-34.000 ft (por encima, hace falta además oxígeno a presión)."
+    ],
+    "formulas": [
+     {
+      "f": "pO₂ = 0,21 × presión total",
+      "note": "A 10.000 ft: 0,21 × 697 hPa ≈ 146 hPa, el 69 % de la del nivel del mar."
+     }
+    ],
+    "examples": [
+     {
+      "q": "¿Qué presión parcial de oxígeno hay a 18.000 ft respecto a la del nivel del mar?",
+      "a": "La presión total es la mitad (506 hPa frente a 1013 hPa). El oxígeno sigue siendo el 21 %, así que la pO₂ también es la mitad: unos 106 hPa frente a unos 213 hPa."
+     }
+    ]
+   },
+   {
+    "title": "Ley de Boyle: gases atrapados",
+    "text": [
+     "La **ley de Boyle** establece que, a temperatura constante, el volumen de un gas es **inversamente proporcional a la presión**. Al subir, la presión baja y los gases del cuerpo **se expanden**; al bajar, se comprimen. Las cavidades afectadas son el **oído medio** (trompa de Eustaquio), los **senos paranasales**, las **caries y empastes** (barodontalgia) y el **tubo digestivo**. Un gas del intestino aumenta de volumen alrededor de un **45 %** a 10.000 ft respecto al nivel del mar (1013/697) y se **duplica** a 18.000 ft.",
+     "Durante el ascenso el aire sale solo por trompas y conductos y casi no se nota. El problema llega al **descenso**, cuando el aire tiene que entrar: si la trompa de Eustaquio o el conducto del seno están inflamados por un resfriado, una alergia o la congestión, el aire no entra y el dolor puede ser intenso (barotrauma, que se verá en el bloque del oído). En el intestino, los gases (más con comidas copiosas, bebidas con gas o alubias) producen cólicos y malestar durante el ascenso y pueden favorecer el mareo y la hipoventilación. Las recomendaciones son: **no volar con resfriado o congestión**, evitar comidas que formen gases y las bebidas gaseosas antes de volar, y mantener la boca y los dientes en buen estado."
+    ],
+    "formulas": [
+     {
+      "f": "P₁ × V₁ = P₂ × V₂",
+      "note": "A temperatura constante. Si la presión se reduce a la mitad, el volumen se duplica."
+     }
+    ],
+    "examples": [
+     {
+      "q": "¿Cuánto aumenta el volumen de un gas del intestino al pasar del nivel del mar a 10.000 ft?",
+      "a": "V₂ = V₁ × P₁/P₂ = V₁ × 1013/697 ≈ 1,45 × V₁: aumenta un 45 % aproximadamente."
+     }
+    ]
+   },
+   {
+    "title": "Ley de Henry: gases disueltos y descompresión",
+    "text": [
+     "La **ley de Henry** dice que la cantidad de gas disuelto en un líquido es proporcional a la presión parcial del gas sobre ese líquido. En la sangre y los tejidos hay nitrógeno disuelto. Si la presión baja **con lentitud**, el nitrógeno sale por los pulmones sin problema. Si baja **de forma rápida**, el nitrógeno forma **burbujas** en la sangre y los tejidos, como el gas que sale al abrir una botella de refresco.",
+     "Esas burbujas producen la **enfermedad descompresiva** (DCS). Los síntomas más típicos son dolor en las articulaciones (**bends**), dificultad para respirar y tos (**chokes**), picores y manchas en la piel (**creeps**), y alteraciones neurológicas como mareo, visión borrosa, hormigueo o parálisis (**staggers**). El tratamiento es descender o volver a presurizar y llevar a la víctima a una cámara hiperbárica; se administra oxígeno al 100 % y se evita la exposición a la altitud. En avionetas sin presurizar a pocos miles de pies se da sobre todo tras el buceo."
+    ]
+   },
+   {
+    "title": "Buceo y vuelo",
+    "text": [
+     "Quien bucea con botella respira aire a presión y acumula nitrógeno en sus tejidos. Si vuela poco después, la presión baja de golpe y ese nitrógeno acumulado puede desencadenar una **enfermedad descompresiva** a altitudes tan bajas como 5000-8000 ft, incluso en un avión sin presurizar o en un vuelo comercial. Las esperas recomendadas aparecen en la lista.",
+     "No hay una norma que obligue a respetar estas esperas al piloto privado: son una **recomendación de seguridad médica** de las autoridades y de los manuales de EASA. Son el mínimo; tras buceos largos, profundos o repetidos, más tiempo es más seguro."
+    ],
+    "bullets": [
+     "Tras un buceo que **no** ha exigido paradas de descompresión: esperar al menos **12 horas** antes de volar.",
+     "Tras un buceo que **sí** ha exigido paradas de descompresión: esperar al menos **24 horas**.",
+     "Una inmersión en apnea o un chapuzón en la piscina no cuentan: la regla se refiere al buceo con botella."
+    ]
+   }
+  ],
+  "numbers": [
+   "Aire: N₂ 78 %, O₂ 21 %, otros gases 1 %",
+   "El porcentaje de O₂ (21 %) no cambia con la altitud; baja la presión",
+   "A 18.000 ft la presión es la mitad de la del nivel del mar",
+   "pO₂ = 21 % de la presión total (Dalton)",
+   "Los gases se expanden al subir (Boyle): ×1,45 a 10.000 ft; ×2 a 18.000 ft",
+   "Buceo: 12 h sin paradas de descompresión; 24 h con paradas"
+  ],
+  "traps": [
+   "En altitud falta presión de oxígeno, no porcentaje: sigue siendo el 21 %.",
+   "Boyle: la expansión ocurre al subir, pero el dolor del oído y de los senos suele llegar al bajar.",
+   "La ley de Henry explica la descompresión (nitrógeno que sale de la disolución); la de Dalton, la hipoxia.",
+   "Las esperas tras el buceo son recomendaciones, no una prohibición legal con esas horas."
+  ],
+  "sources": [
+   {
+    "title": "EASA, Aircrew Part-MED y material de factores humanos",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules"
+   },
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge, cap. 17: Aeromedical factors",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   }
+  ],
+  "id": "040.02",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "040.02.001",
+   "type": "regla",
+   "level": 1,
+   "q": "¿Qué porcentaje de oxígeno hay en el aire a 18.000 ft?",
+   "options": [
+    "El 10,5 %, la mitad que en el nivel del mar",
+    "Aproximadamente el 21 %, como en el nivel del mar",
+    "Más del 30 %, porque el aire es más puro",
+    "Cerca del 5 %"
+   ],
+   "correct": 1,
+   "why": "La composición no cambia con la altitud; lo que baja es la presión total, y con ella la presión parcial del oxígeno.",
+   "whyNot": [
+    "Baja la presión, no el porcentaje.",
+    null,
+    "El aire no se enriquece en altura.",
+    "Ese valor no corresponde a ninguna altitud de vuelo."
+   ],
+   "ref": "Composición de la atmósfera"
+  },
+  {
+   "id": "040.02.002",
+   "type": "regla",
+   "level": 1,
+   "q": "¿A qué altitud aproximada la presión atmosférica es la mitad de la del nivel del mar?",
+   "options": [
+    "5000 ft",
+    "10.000 ft",
+    "34.000 ft",
+    "18.000 ft"
+   ],
+   "correct": 3,
+   "why": "En la atmósfera estándar la presión se reduce a la mitad hacia los 18.000 ft (5500 m).",
+   "whyNot": [
+    "A 5000 ft es todavía el 83 %.",
+    "A 10.000 ft es el 69 %.",
+    "A 34.000 ft es solo la cuarta parte.",
+    null
+   ],
+   "ref": "Atmósfera ISA"
+  },
+  {
+   "id": "040.02.003",
+   "type": "concepto",
+   "level": 1,
+   "q": "La ley de Dalton dice que la presión parcial de un gas en una mezcla es:",
+   "options": [
+    "Su porcentaje en la mezcla multiplicado por la presión total",
+    "El inverso de la presión total",
+    "Siempre la mitad de la presión total",
+    "Independiente de la presión total"
+   ],
+   "correct": 0,
+   "why": "pO₂ = 0,21 × presión total; por eso al bajar la presión total baja la presión parcial de oxígeno.",
+   "whyNot": [
+    null,
+    "No tiene relación inversa.",
+    "No hay proporción fija de un medio.",
+    "Depende directamente de la presión total."
+   ],
+   "ref": "Ley de Dalton"
+  },
+  {
+   "id": "040.02.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "La hipoxia a gran altitud se debe a que:",
+   "options": [
+    "Disminuye el porcentaje de oxígeno",
+    "Aumenta el nitrógeno del aire",
+    "Disminuye la presión parcial de oxígeno",
+    "Se enfría el aire que entra en los pulmones"
+   ],
+   "correct": 2,
+   "why": "Con el mismo 21 % y menos presión total, hay menos presión que empuje el oxígeno a la sangre.",
+   "whyNot": [
+    "El porcentaje es constante.",
+    "El porcentaje de nitrógeno tampoco cambia.",
+    null,
+    "La temperatura no explica la falta de oxígeno."
+   ],
+   "ref": "Ley de Dalton"
+  },
+  {
+   "id": "040.02.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "La ley de Boyle afirma que, a temperatura constante:",
+   "options": [
+    "El volumen de un gas es directamente proporcional a su presión",
+    "La cantidad de gas disuelto depende de la presión parcial",
+    "El volumen de un gas es inversamente proporcional a su presión",
+    "La presión de un gas no varía con el volumen"
+   ],
+   "correct": 2,
+   "why": "P × V = constante: si la presión baja al subir, el volumen aumenta.",
+   "whyNot": [
+    "Esa relación directa no existe.",
+    "Eso es la ley de Henry.",
+    null,
+    "Es justo lo contrario de lo que dice Boyle."
+   ],
+   "ref": "Ley de Boyle"
+  },
+  {
+   "id": "040.02.006",
+   "type": "calculo",
+   "level": 2,
+   "q": "Un gas del intestino ocupa 1 l en el nivel del mar. ¿Qué volumen aproximado ocupa a 18.000 ft (presión a la mitad)?",
+   "options": [
+    "2 l",
+    "0,5 l",
+    "1,5 l",
+    "4 l"
+   ],
+   "correct": 0,
+   "why": "Con la presión a la mitad, el volumen se duplica: 1 l × 1013/506 ≈ 2 l.",
+   "whyNot": [
+    null,
+    "Eso ocurriría si la presión se duplicase.",
+    "Con 1,5 l la presión tendría que ser del 67 %.",
+    "Un volumen cuatro veces mayor corresponde a unos 34.000 ft."
+   ],
+   "ref": "Ley de Boyle"
+  },
+  {
+   "id": "040.02.007",
+   "type": "concepto",
+   "level": 1,
+   "q": "El dolor de oído por barotrauma suele ser más intenso:",
+   "options": [
+    "Durante el ascenso",
+    "En vuelo nivelado",
+    "En tierra, antes de despegar",
+    "Durante el descenso"
+   ],
+   "correct": 3,
+   "why": "Al descender el aire tiene que entrar en el oído medio y, si la trompa de Eustaquio está obstruida, no puede equilibrarse la presión.",
+   "whyNot": [
+    "Al subir el aire sale con más facilidad.",
+    "En crucero no cambia la presión de forma apreciable.",
+    "En tierra no hay cambio de presión.",
+    null
+   ],
+   "ref": "Ley de Boyle; Part-MED"
+  },
+  {
+   "id": "040.02.008",
+   "type": "regla",
+   "level": 2,
+   "q": "Tras un buceo con botella que no ha exigido paradas de descompresión, la recomendación es esperar antes de volar al menos:",
+   "options": [
+    "2 horas",
+    "12 horas",
+    "24 horas",
+    "48 horas"
+   ],
+   "correct": 1,
+   "why": "12 horas tras un buceo sin paradas; 24 horas si hubo paradas de descompresión.",
+   "whyNot": [
+    "Es demasiado poco para eliminar el nitrógeno acumulado.",
+    null,
+    "Es la espera tras un buceo con paradas.",
+    "No es el valor habitual para este caso."
+   ],
+   "ref": "Recomendaciones de medicina aeronáutica"
+  },
+  {
+   "id": "040.02.009",
+   "type": "regla",
+   "level": 2,
+   "q": "Tras un buceo que sí ha exigido paradas de descompresión, la espera mínima recomendada antes de volar es:",
+   "options": [
+    "12 horas",
+    "24 horas",
+    "6 horas",
+    "1 hora"
+   ],
+   "correct": 1,
+   "why": "Cuando hay paradas, la carga de nitrógeno es mayor y se recomienda esperar al menos 24 horas.",
+   "whyNot": [
+    "Es la espera tras un buceo sin paradas.",
+    null,
+    "Es insuficiente.",
+    "Es una espera ridículamente corta."
+   ],
+   "ref": "Recomendaciones de medicina aeronáutica"
+  },
+  {
+   "id": "040.02.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "La enfermedad descompresiva se explica por:",
+   "options": [
+    "Falta de oxígeno en los tejidos",
+    "Exceso de dióxido de carbono en sangre",
+    "Dilatación del oído medio",
+    "Burbujas de nitrógeno que salen de la disolución al bajar rápidamente la presión"
+   ],
+   "correct": 3,
+   "why": "Según la ley de Henry el nitrógeno disuelto sale en forma de burbujas si la presión baja con rapidez.",
+   "whyNot": [
+    "Eso es hipoxia.",
+    "Eso es hipercapnia, no descompresión.",
+    "Eso es un barotrauma del oído.",
+    null
+   ],
+   "ref": "Ley de Henry"
+  },
+  {
+   "id": "040.02.011",
+   "type": "concepto",
+   "level": 1,
+   "q": "¿Cuál es el síntoma típico llamado «bends» de la enfermedad descompresiva?",
+   "options": [
+    "Dolor en las articulaciones",
+    "Visión en túnel",
+    "Pitidos en el oído",
+    "Picor de las manos por hiperventilación"
+   ],
+   "correct": 0,
+   "why": "Los «bends» son el dolor articular producido por burbujas de nitrógeno.",
+   "whyNot": [
+    null,
+    "La visión en túnel se asocia a la hipoxia o a la aceleración.",
+    "No es típico de la DCS.",
+    "Es un síntoma de hiperventilación."
+   ],
+   "ref": "Ley de Henry"
+  },
+  {
+   "id": "040.02.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Qué es lo más prudente si tienes congestión nasal fuerte el día del vuelo?",
+   "options": [
+    "Volar y tomar descongestivos sin consultar",
+    "Subir despacio y bajar rápido",
+    "No volar hasta recuperarte",
+    "Volar a menos de 5000 ft"
+   ],
+   "correct": 2,
+   "why": "La congestión impide equilibrar la presión del oído y los senos en el descenso: con un resfriado no se vuela.",
+   "whyNot": [
+    "Los medicamentos pueden además afectar al rendimiento.",
+    "Descender rápido agrava el barotrauma.",
+    null,
+    "Aun a baja cota hay cambios de presión en el descenso."
+   ],
+   "ref": "Part-MED; Ley de Boyle"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.040.02.01",
+   "front": "Composición del aire",
+   "back": "N₂ 78 %, O₂ 21 %, otros 1 %. El 21 % de oxígeno es el mismo a cualquier altitud"
+  },
+  {
+   "id": "c.040.02.02",
+   "front": "Leyes de los gases en aviación",
+   "back": "Dalton: presión parcial de O₂ (hipoxia). Boyle: gases atrapados (oído, senos, dientes, intestino). Henry: nitrógeno disuelto (descompresión y buceo)"
+  },
+  {
+   "id": "c.040.02.03",
+   "front": "Buceo y vuelo",
+   "back": "12 h de espera sin paradas de descompresión; 24 h si hubo paradas"
+  }
+ ]
+}

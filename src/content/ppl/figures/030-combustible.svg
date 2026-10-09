@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300">
+<title>Combustible del vuelo de ejemplo apilado por partidas: rodaje, viaje, contingencia, alternativo y reserva final, en litros</title>
+<text x="30" y="30" class="tx b">Combustible mínimo a bordo (ejemplo): 50,1 l en total</text>
+<rect x="30.0" y="120" width="34.7" height="50" class="soft"/>
+<line x1="47.4" y1="120" x2="47.4" y2="96" class="ln2"/>
+<text x="30.0" y="90" class="tx b" text-anchor="start">Rodaje</text>
+<text x="30.0" y="74" class="tx2" text-anchor="start">3 l</text>
+<rect x="64.7" y="120" width="198.0" height="50" class="ac"/>
+<line x1="163.7" y1="170" x2="163.7" y2="194" class="ln2"/>
+<text x="163.7" y="210" class="txa b" text-anchor="middle">Viaje</text>
+<text x="163.7" y="226" class="tx2" text-anchor="middle">17,1 l</text>
+<rect x="262.7" y="120" width="19.7" height="50" class="ok"/>
+<line x1="272.5" y1="120" x2="272.5" y2="96" class="ln2"/>
+<text x="272.5" y="90" class="txo b" text-anchor="middle">Contingencia</text>
+<text x="272.5" y="74" class="tx2" text-anchor="middle">1,7 l</text>
+<rect x="282.4" y="120" width="200.3" height="50" class="wa"/>
+<line x1="382.5" y1="170" x2="382.5" y2="194" class="ln2"/>
+<text x="382.5" y="210" class="txw b" text-anchor="middle">Alternativo</text>
+<text x="382.5" y="226" class="tx2" text-anchor="middle">17,3 l</text>
+<rect x="482.7" y="120" width="127.3" height="50" class="soft"/>
+<line x1="546.3" y1="120" x2="546.3" y2="96" class="ln2"/>
+<text x="610.0" y="90" class="tx b" text-anchor="end">Reserva final</text>
+<text x="610.0" y="74" class="tx2" text-anchor="end">11 l</text>
+<text x="30" y="250" class="tx2">Sin alternativo (si la previsión de destino no lo exige), el total baja a 32,8 l.</text>
+<text x="30" y="270" class="tx2">Los 11 l de la reserva final se planifican para aterrizar con ellos intactos. Extra: a criterio del piloto.</text>
+</svg>

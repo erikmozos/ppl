@@ -1,0 +1,555 @@
+{
+  "lesson": {
+    "id": "030.12",
+    "title": "Plan de vuelo OACI",
+    "summary": "El plan de vuelo OACI casilla a casilla: cuándo se presenta, cómo se rellena cada campo con un plan VFR completo de ejemplo, dónde se presenta en España y cómo se activa, modifica y cierra.",
+    "objectives": [
+      "Saber cuándo hay que presentar un plan de vuelo y con qué antelación",
+      "Rellenar las casillas 3, 7, 8, 9, 10, 13, 15, 16, 18 y 19 de un plan VFR",
+      "Leer y descifrar un mensaje FPL",
+      "Conocer la presentación, la activación, los cambios y el cierre del plan"
+    ],
+    "sections": [
+      {
+        "title": "Para qué sirve y cuándo se presenta",
+        "text": [
+          "El plan de vuelo es la información que se da a los servicios de tránsito aéreo (ATS) sobre el vuelo que vas a hacer: quién eres, qué avión, de dónde a dónde, a qué hora, por dónde, cuánto combustible llevas y cuántas personas viajan. Sirve para **dar servicio** (control o información de vuelo) y, sobre todo, para el **servicio de alerta**: si no llegas, los servicios de búsqueda y salvamento saben dónde buscarte.",
+          "La norma (SERA.4001) exige plan de vuelo en los vuelos con servicio de control de tránsito aéreo, en los IFR, en los que cruzan fronteras y en los que determine la autoridad. En VFR sin esa obligación, un plan es **muy recomendable** en travesías largas, sobre el agua o en terreno difícil. Presentarlo es una buena práctica incluso cuando no es obligatorio."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Cómo es el formato",
+        "text": [
+          "El plan se presenta en un formulario de **casillas** (*items*) numeradas, que se transmite como un mensaje de texto estructurado entre paréntesis y separadas por guiones. Hay casillas obligatorias para cualquier vuelo y otras opcionales. Todos los tiempos son **UTC**, escritos con cuatro cifras (hhmm).",
+          "Para un VFR privado sencillo las casillas relevantes son: **3** (tipo de mensaje), **7** (identificación), **8** (reglas de vuelo y tipo de vuelo), **9** (aeronave y estela), **10** (equipo), **13** (aeródromo y hora de salida), **15** (velocidad, nivel y ruta), **16** (destino, EET y alternativos), **18** (otros datos) y **19** (información suplementaria, para búsqueda y salvamento)."
+        ],
+        "table": {
+          "caption": "Casillas del plan de vuelo OACI para un VFR sencillo",
+          "head": [
+            "Casilla",
+            "Contenido",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "3",
+              "Tipo de mensaje: FPL (plan), CHG (modificación), CNL (cancelación), DLA (retraso), DEP (salida), ARR (llegada)",
+              "FPL"
+            ],
+            [
+              "7",
+              "Identificación de la aeronave (matrícula, hasta 7 caracteres, sin guion)",
+              "ECXYZ"
+            ],
+            [
+              "8",
+              "Reglas de vuelo (V, I, Y, Z) y tipo de vuelo (S regular, N no regular, G aviación general, M militar, X otros)",
+              "VG"
+            ],
+            [
+              "9",
+              "Número de aeronaves (si hay más de una), tipo y categoría de estela (L, M, H, J)",
+              "PA28/L"
+            ],
+            [
+              "10",
+              "Equipo de comunicaciones, navegación y vigilancia (a / b)",
+              "S/C"
+            ],
+            [
+              "13",
+              "Aeródromo de salida (OACI) y hora estimada fuera calzos (EOBT), en UTC",
+              "LESB1000"
+            ],
+            [
+              "15",
+              "Velocidad de crucero (N + kt), nivel (A + centenas de pies o VFR) y ruta",
+              "N0108A035 DCT"
+            ],
+            [
+              "16",
+              "Aeródromo de destino y EET total (hhmm); alternativos",
+              "LEMH0040 LESB"
+            ],
+            [
+              "18",
+              "Otros datos con indicador: REG/, EET/, OPR/, DOF/, RMK/…",
+              "REG/ECXYZ DOF/261015"
+            ],
+            [
+              "19",
+              "Autonomía E/, personas a bordo P/, equipo de emergencia, color y piloto (no se transmite)",
+              "E/0430 P/002"
+            ]
+          ],
+          "src": "OACI Doc 4444; AIP ENR 1.10"
+        }
+      },
+      {
+        "title": "Casillas una a una",
+        "bullets": [
+          "**Casilla 7:** la matrícula, sin guiones: EC-XYZ se escribe ECXYZ.",
+          "**Casilla 8:** primera letra, las reglas: **V** (VFR), **I** (IFR), **Y** (IFR y luego VFR) o **Z** (VFR y luego IFR). Segunda letra, el tipo de vuelo: **G** para aviación general. Un VFR privado es **VG**.",
+          "**Casilla 9:** el tipo de aeronave con su designador OACI (PA28, C172) y la categoría de estela por masa máxima al despegue: **L** (ligera, hasta 7000 kg), **M**, **H**, **J**. Un avión ligero es **/L**.",
+          "**Casilla 10:** a) equipo de radio y navegación (**S** significa equipo estándar: VHF, VOR, ILS y ADF, y se añaden letras para equipos adicionales); b) vigilancia (**C** = transpondedor Modo A y C). «S/C» es un avión con transpondedor Modo C; **N** significa sin equipo.",
+          "**Casilla 13:** el indicador OACI del aeródromo (LESB) y la hora de salida prevista en **UTC** (1000). Si no tiene indicador: **ZZZZ** y el nombre en la casilla 18 (DEP/).",
+          "**Casilla 15:** velocidad de crucero con N y tres dígitos de nudos (**N0108**); nivel con **A** y centenas de pies de altitud (**A035** para 3500 ft) o **VFR**; después la ruta: **DCT** si vas directo o los puntos. En un VFR, los puntos intermedios pueden ser aeródromos, ayudas o puntos de notificación; si no hay indicador oficial, se explica en RMK/.",
+          "**Casilla 16:** destino (LEMH), seguido del **EET total** en horas y minutos (0040), y hasta dos **alternativos** (LESB). Si no hay alternativo, se omite.",
+          "**Casilla 18:** datos que no tienen casilla propia, cada uno con su indicador y una barra: REG/ (matrícula real), OPR/ (operador), DOF/ (fecha del vuelo en AAMMDD), DEP/ o DEST/ (si el aeródromo es ZZZZ), RMK/ (observaciones).",
+          "**Casilla 19:** la autonomía **E/** en hhmm (0430 es 4 h 30 min de combustible total hasta agotar), las personas a bordo **P/** (o TBN si no se conocen), el equipo de emergencia **R/** (radio), **S/** (supervivencia), **J/** (chalecos), **D/** (balsas), **A/** (color y marcas de la aeronave) y **C/** (nombre del piloto)."
+        ],
+        "note": {
+          "kind": "warn",
+          "text": "La autonomía de la casilla 19 es el combustible TOTAL a bordo expresado en tiempo, no la reserva. Sirve a los servicios de búsqueda para saber hasta cuándo puedes seguir en el aire."
+        }
+      },
+      {
+        "title": "Un plan completo: Son Bonet – Menorca",
+        "text": [
+          "Vuelo VFR de ejemplo, del navlog de 030.09: PA-28 de matrícula ficticia **EC-XYZ**, salida de Son Bonet (LESB) a las 10:00 UTC, velocidad 108 kt, altitud 3500 ft, destino Menorca (LEMH), 40 min de vuelo, alternativo LESB, fecha 15-10-2026, con dos personas a bordo y 4 h 30 min de combustible total.",
+          "Cada línea del mensaje corresponde a una casilla, de arriba abajo: 3 y 7 con 8; 9 y 10; 13; 15; 16; y 18. La casilla 19 no se transmite en el FPL: se usa en el formulario para los servicios de búsqueda y salvamento."
+        ],
+        "table": {
+          "caption": "Mensaje FPL del ejemplo, línea a línea",
+          "head": [
+            "Casilla",
+            "Texto",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "3, 7, 8",
+              "(FPL-ECXYZ-VG",
+              "Plan; matrícula ECXYZ; VFR, aviación general"
+            ],
+            [
+              "9, 10",
+              "-PA28/L-S/C",
+              "PA-28, estela ligera; equipo estándar y transpondedor Modo C"
+            ],
+            [
+              "13",
+              "-LESB1000",
+              "Sale de LESB a las 10:00 UTC"
+            ],
+            [
+              "15",
+              "-N0108A035 DCT",
+              "108 kt, 3500 ft, ruta directa"
+            ],
+            [
+              "16",
+              "-LEMH0040 LESB",
+              "Destino LEMH, EET 40 min, alternativo LESB"
+            ],
+            [
+              "18",
+              "-REG/ECXYZ OPR/ESCUELA DE VUELO DOF/261015 RMK/VFR RUTA POR CABO FORMENTOR)",
+              "Matrícula, operador, fecha del vuelo y observación"
+            ]
+          ],
+          "src": "Datos de ejemplo"
+        },
+        "examples": [
+          {
+            "q": "Descifra el plan.",
+            "a": "Plan de vuelo (FPL) de la aeronave ECXYZ. VFR, aviación general. Un PA28 de estela ligera, con equipo estándar y transpondedor Modo C. Sale de LESB a las 10:00 UTC. Crucero a 108 kt y 3500 ft, ruta directa. Destino LEMH, EET 40 min, alternativo LESB. Matrícula ECXYZ, operador la escuela, fecha 15-10-2026 (DOF/261015) y observación sobre la ruta por Formentor."
+          },
+          {
+            "q": "¿A qué hora local sale?",
+            "a": "10:00 UTC más 2 h de horario de verano en España = 12:00 hora local. El 15 de octubre de 2026 todavía rige el horario de verano (cambia el último domingo de octubre)."
+          }
+        ]
+      },
+      {
+        "title": "Presentación, activación, cambios y cierre",
+        "text": [
+          "El plan se presenta a la **oficina de notificación de los servicios de tránsito aéreo (ARO)** o a través de los portales de ENAIRE, y también por teléfono o por radio en vuelo. Lo habitual es presentarlo con una **antelación mínima de 60 minutos** respecto a la EOBT; confirma el plazo exacto para tu tipo de vuelo en el AIP.",
+          "**Activar** el plan significa avisar de que has despegado: en un aeródromo con ATS, la dependencia lo hace por ti al despegar; si no la hay, tienes que informar a ARO por teléfono o a la dependencia ATS por radio. Si cambias la hora de salida o la ruta, se envía un mensaje de **modificación (CHG)** o de **retraso (DLA)**: un retraso de más de 30 minutos en un vuelo controlado, o de una hora si no lo es, obliga a actualizar el plan. Si no despegas, **cancela** (CNL).",
+          "El **cierre** del plan es un **informe de llegada**: se comunica al aterrizar a la dependencia ATS del aeródromo (o por teléfono a ARO si no hay) inmediatamente. Si no cierras, los servicios de alerta pueden iniciar la fase de incertidumbre cuando, pasados unos 30 minutos desde la ETA, no tengan noticias tuyas. Un plan sin cerrar moviliza medios de búsqueda: ciérralo siempre."
+        ],
+        "note": {
+          "kind": "es",
+          "text": "En España, ENAIRE publica en el AIP ENR 1.10 los detalles de presentación, y los plazos y la forma de presentar y cerrar un plan VFR. Consulta el AIP vigente."
+        },
+        "verify": true
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Escribir la matrícula con guion o el EET en minutos sueltos en vez de hhmm.",
+          "Poner la hora de salida en hora local, cuando todo va en UTC.",
+          "Confundir la autonomía (combustible total) con la reserva.",
+          "Olvidar el alternativo o el indicador ZZZZ para aeródromos sin código OACI.",
+          "No cerrar el plan al llegar.",
+          "Dar más de lo necesario en la casilla 15 en un VFR: nivel VFR o altitud, ruta DCT o puntos claros."
+        ]
+      }
+    ],
+    "numbers": [
+      "Casilla 8: V (VFR), I (IFR), Y, Z; tipo G = aviación general",
+      "Casilla 9: L = ligera, hasta 7000 kg",
+      "Casilla 13: aeródromo + EOBT en UTC; sin indicador, ZZZZ y DEP/ en la casilla 18",
+      "Casilla 15: N + 4 cifras (kt) y A + 3 cifras (centenas de ft) o VFR, y la ruta",
+      "Casilla 16: destino + EET total (hhmm) + alternativos",
+      "Casilla 19: E/ autonomía total, P/ personas a bordo; no se transmite en el FPL",
+      "Presentar el plan al menos 60 min antes de la EOBT"
+    ],
+    "traps": [
+      "Todo en UTC, también la hora de salida.",
+      "La autonomía E/ es el combustible total, no la reserva.",
+      "La casilla 19 no viaja en el mensaje FPL.",
+      "Si no cierras el plan, se puede iniciar una búsqueda."
+    ],
+    "spain": [
+      "AIP España ENR 1.10: presentación y cierre del plan.",
+      "En verano, la hora de España es UTC+2; en invierno, UTC+1."
+    ],
+    "sources": [
+      {
+        "title": "Reglamento (UE) 923/2012 (SERA), Easy Access Rules",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "ENAIRE, AIP España (GEN 1.7, ENR 1.10, AD)",
+        "url": "https://aip.enaire.es"
+      },
+      {
+        "title": "OACI, Doc 4444 PANS-ATM (plan de vuelo, apéndice 2)"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "030.12.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La finalidad principal del plan de vuelo es:",
+      "options": [
+        "Reservar la pista de destino",
+        "Informar a los servicios ATS y permitir el servicio de alerta",
+        "Sustituir al briefing meteorológico",
+        "Pagar las tasas de aterrizaje"
+      ],
+      "correct": 1,
+      "why": "El plan permite dar servicio de control o de información de vuelo y, sobre todo, el servicio de alerta si el vuelo no llega.",
+      "whyNot": [
+        "No reserva pista.",
+        null,
+        "No sustituye la meteorología.",
+        "No es un trámite de pago."
+      ],
+      "ref": "SERA.4001; Anexo 2"
+    },
+    {
+      "id": "030.12.002",
+      "type": "regla",
+      "level": 1,
+      "q": "En la casilla 8, un vuelo VFR de aviación general se escribe:",
+      "data": "(FPL-ECXYZ-VG\n-PA28/L-S/C\n-LESB1000\n-N0108A035 DCT\n-LEMH0040 LESB\n-REG/ECXYZ OPR/ESCUELA DE VUELO DOF/261015\n RMK/VFR RUTA POR CABO FORMENTOR)",
+      "options": [
+        "IG",
+        "VS",
+        "GV",
+        "VG"
+      ],
+      "correct": 3,
+      "why": "Primero las reglas (V), luego el tipo (G).",
+      "whyNot": [
+        "I es IFR.",
+        "S es vuelo regular.",
+        "El orden es reglas y tipo.",
+        null
+      ],
+      "ref": "OACI Doc 4444"
+    },
+    {
+      "id": "030.12.003",
+      "type": "regla",
+      "level": 1,
+      "q": "En la casilla 9, un avión ligero de hasta 7000 kg se indica con la categoría de estela:",
+      "options": [
+        "L",
+        "M",
+        "H",
+        "J"
+      ],
+      "correct": 0,
+      "why": "L (ligera) hasta 7000 kg; M media; H pesada; J súper.",
+      "whyNot": [
+        null,
+        "M es la intermedia.",
+        "H es la pesada.",
+        "J es el Airbus A380."
+      ],
+      "ref": "OACI Doc 4444"
+    },
+    {
+      "id": "030.12.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "En el plan de ejemplo, ¿qué indica «N0108A035»?",
+      "data": "(FPL-ECXYZ-VG\n-PA28/L-S/C\n-LESB1000\n-N0108A035 DCT\n-LEMH0040 LESB\n-REG/ECXYZ OPR/ESCUELA DE VUELO DOF/261015\n RMK/VFR RUTA POR CABO FORMENTOR)",
+      "options": [
+        "Número de aeronave 0108 y nivel 35",
+        "Velocidad de 0108 km/h y nivel de vuelo 35",
+        "Velocidad de crucero de 108 kt y altitud de 3500 ft",
+        "Número de personas a bordo: 108"
+      ],
+      "correct": 2,
+      "why": "N = nudos con cuatro cifras; A = altitud en centenas de pies.",
+      "whyNot": [
+        "La N no es número de aeronave.",
+        "No hay km/h ni nivel de vuelo.",
+        null,
+        "Las personas van en la casilla 19."
+      ],
+      "ref": "OACI Doc 4444"
+    },
+    {
+      "id": "030.12.005",
+      "type": "lectura",
+      "level": 2,
+      "q": "En el plan de ejemplo, el campo «LEMH0040 LESB» de la casilla 16 significa:",
+      "data": "(FPL-ECXYZ-VG\n-PA28/L-S/C\n-LESB1000\n-N0108A035 DCT\n-LEMH0040 LESB\n-REG/ECXYZ OPR/ESCUELA DE VUELO DOF/261015\n RMK/VFR RUTA POR CABO FORMENTOR)",
+      "options": [
+        "Destino LEMH, hora de llegada 00:40 UTC y alternativo LESB",
+        "Salida de LEMH, 40 min de espera y destino LESB",
+        "Dos destinos: LEMH y LESB",
+        "Destino LEMH, EET de 40 min y alternativo LESB"
+      ],
+      "correct": 3,
+      "why": "Destino, EET total hhmm y alternativo.",
+      "whyNot": [
+        "No es una hora de llegada, es el tiempo total de vuelo.",
+        "La salida está en la casilla 13.",
+        "LESB es el alternativo.",
+        null
+      ],
+      "ref": "OACI Doc 4444"
+    },
+    {
+      "id": "030.12.006",
+      "type": "regla",
+      "level": 2,
+      "q": "Las horas del plan de vuelo se escriben en:",
+      "options": [
+        "UTC",
+        "Hora local de España",
+        "Hora local del destino",
+        "Hora solar de la zona"
+      ],
+      "correct": 0,
+      "why": "Todos los tiempos del plan van en UTC (hhmm).",
+      "whyNot": [
+        null,
+        "Se convierte a UTC.",
+        "También en UTC.",
+        "Siempre UTC."
+      ],
+      "ref": "OACI Doc 4444"
+    },
+    {
+      "id": "030.12.007",
+      "type": "calculo",
+      "level": 2,
+      "es": true,
+      "q": "EOBT 10:00 UTC el 15 de octubre de 2026 en España. La hora local es:",
+      "options": [
+        "11:00",
+        "10:00",
+        "12:00",
+        "09:00"
+      ],
+      "correct": 2,
+      "why": "El 15 de octubre rige el horario de verano (UTC+2): 12:00 local.",
+      "whyNot": [
+        "UTC+1 sería el horario de invierno.",
+        "No es la hora UTC.",
+        null,
+        "Se restó en vez de sumar."
+      ],
+      "ref": "Hora oficial de España"
+    },
+    {
+      "id": "030.12.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "En la casilla 19, la autonomía «E/0430» significa:",
+      "data": "Casilla 19 (no se transmite en el mensaje FPL)\nE/0430  P/002  R/V  S/  J/  D/  A/BLANCO AZUL  N/  C/GARCIA",
+      "options": [
+        "Reserva final de 4 min 30 s",
+        "Combustible total para 4 h 30 min de vuelo",
+        "4 h 30 min de EET",
+        "4 personas y 30 kg de equipaje"
+      ],
+      "correct": 1,
+      "why": "E/ es la autonomía total en horas y minutos hasta agotar el combustible.",
+      "whyNot": [
+        "No es la reserva final.",
+        null,
+        "El EET está en la casilla 16.",
+        "Las personas se indican con P/."
+      ],
+      "ref": "OACI Doc 4444"
+    },
+    {
+      "id": "030.12.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "La casilla 19 del plan de vuelo:",
+      "options": [
+        "Se transmite igual que las demás",
+        "No se transmite en el mensaje FPL, sirve a los servicios de búsqueda y salvamento",
+        "Solo se rellena en IFR",
+        "Se sustituye por el combustible de la casilla 15"
+      ],
+      "correct": 1,
+      "why": "La información suplementaria se mantiene en el formulario para uso de los servicios SAR.",
+      "whyNot": [
+        "No viaja en el FPL.",
+        null,
+        "También en VFR.",
+        "No se sustituye."
+      ],
+      "ref": "OACI Doc 4444"
+    },
+    {
+      "id": "030.12.010",
+      "type": "regla",
+      "level": 1,
+      "q": "Si un aeródromo de salida no tiene indicador OACI, en la casilla 13 se escribe:",
+      "options": [
+        "XXXX",
+        "AAAA",
+        "NONE",
+        "ZZZZ"
+      ],
+      "correct": 3,
+      "why": "ZZZZ y el nombre en la casilla 18 con DEP/.",
+      "whyNot": [
+        "XXXX no es el código.",
+        "AAAA no es el código.",
+        "NONE no se usa.",
+        null
+      ],
+      "ref": "OACI Doc 4444"
+    },
+    {
+      "id": "030.12.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "En la casilla 10, «S/C» indica:",
+      "data": "(FPL-ECXYZ-VG\n-PA28/L-S/C\n-LESB1000\n-N0108A035 DCT\n-LEMH0040 LESB\n-REG/ECXYZ OPR/ESCUELA DE VUELO DOF/261015\n RMK/VFR RUTA POR CABO FORMENTOR)",
+      "options": [
+        "Equipo estándar y transpondedor Modo A y C",
+        "Sin equipo y sin transpondedor",
+        "Equipo especial y vigilancia automática",
+        "Solo VHF y sin transpondedor"
+      ],
+      "correct": 0,
+      "why": "S = estándar (VHF, VOR, ILS) y C = transpondedor Modo A y C.",
+      "whyNot": [
+        null,
+        "Sin equipo es N.",
+        "No es especial.",
+        "C no es ausencia de transpondedor."
+      ],
+      "ref": "OACI Doc 4444"
+    },
+    {
+      "id": "030.12.012",
+      "type": "concepto",
+      "level": 2,
+      "es": true,
+      "q": "Si el vuelo se retrasa mucho más de lo previsto sobre la EOBT, debes:",
+      "options": [
+        "No hacer nada",
+        "Cancelar el plan sin avisar a nadie",
+        "Enviar un mensaje de retraso (DLA) o modificación (CHG)",
+        "Despegar sin cambiar nada"
+      ],
+      "correct": 2,
+      "why": "El plan se actualiza si cambia la salida. Si no vas a volar, se cancela con CNL.",
+      "whyNot": [
+        "Un plan desfasado confunde al ATS.",
+        "La cancelación se envía, no se hace sin avisar.",
+        null,
+        "Es un error operativo."
+      ],
+      "ref": "SERA.4001; ENR 1.10"
+    },
+    {
+      "id": "030.12.013",
+      "type": "concepto",
+      "level": 1,
+      "q": "Cerrar el plan de vuelo significa:",
+      "options": [
+        "Cancelar el plan antes de salir",
+        "Enviar un nuevo plan de vuelo",
+        "Dar el parte meteorológico",
+        "Notificar la llegada al aterrizar"
+      ],
+      "correct": 3,
+      "why": "El informe de llegada cierra el plan; si no se hace, puede iniciarse una búsqueda.",
+      "whyNot": [
+        "La cancelación es CNL antes de despegar.",
+        "No es un nuevo plan.",
+        "No es un parte meteorológico.",
+        null
+      ],
+      "ref": "SERA.4001"
+    },
+    {
+      "id": "030.12.014",
+      "type": "concepto",
+      "level": 1,
+      "q": "En el plan de ejemplo (casilla 18), «DOF/261015» indica:",
+      "data": "(FPL-ECXYZ-VG\n-PA28/L-S/C\n-LESB1000\n-N0108A035 DCT\n-LEMH0040 LESB\n-REG/ECXYZ OPR/ESCUELA DE VUELO DOF/261015\n RMK/VFR RUTA POR CABO FORMENTOR)",
+      "options": [
+        "Fecha del vuelo: 15 de octubre de 2026",
+        "Duración del vuelo",
+        "Dirección del viento",
+        "Destino alternativo"
+      ],
+      "correct": 0,
+      "why": "DOF = fecha del vuelo en formato AAMMDD.",
+      "whyNot": [
+        null,
+        "La duración está en EET.",
+        "El viento no figura en el plan.",
+        "El alternativo va en la casilla 16."
+      ],
+      "ref": "OACI Doc 4444"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.030.12.01",
+      "front": "Casilla 8",
+      "back": "V (VFR), I (IFR), Y, Z y tipo de vuelo; un VFR de aviación general es VG"
+    },
+    {
+      "id": "c.030.12.02",
+      "front": "Casilla 19",
+      "back": "E/ autonomía total en hhmm, P/ personas a bordo; no se transmite en el mensaje FPL"
+    },
+    {
+      "id": "c.030.12.03",
+      "front": "Horas del plan",
+      "back": "Siempre en UTC; en verano, España es UTC+2"
+    }
+  ]
+}

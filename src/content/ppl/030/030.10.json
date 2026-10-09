@@ -1,0 +1,564 @@
+{
+  "lesson": {
+    "id": "030.10",
+    "title": "Combustible",
+    "summary": "Cómo se calcula el combustible mínimo de un vuelo VFR con aviones de hélice: rodaje, viaje, contingencia, alternativo, reserva final y extra, con la reserva final de AMC1 NCO.OP.125, las conversiones de unidades y el registro del combustible en vuelo.",
+    "objectives": [
+      "Enumerar las partidas del combustible mínimo y calcular cada una",
+      "Aplicar la reserva final según el tipo de vuelo (AMC1 NCO.OP.125, desde el 30-10-2022)",
+      "Convertir litros, galones, kilos y libras de AVGAS",
+      "Llevar un registro de combustible en vuelo y decidir cuando el consumo real se aparta del previsto"
+    ],
+    "sections": [
+      {
+        "title": "Por qué se calcula por partidas",
+        "text": [
+          "El combustible es el único recurso del vuelo que no se puede recuperar en el aire. Por eso no se despega «con lo que parece suficiente»: se calcula como la **suma de partidas**, cada una con un motivo. Si cuentas bien las partidas, sabes exactamente cuánto margen tienes y cuándo tienes que decidir un desvío. La norma (NCO.OP.125 y su AMC) exige que el piloto al mando lleve combustible utilizable suficiente para el vuelo previsto con una **reserva final** a salvo; el combustible **inutilizable** (el que no llega al motor) no cuenta nunca."
+        ],
+        "note": {
+          "kind": "es",
+          "text": "Desde el **30-10-2022** (Reglamento (UE) 2021/1296) la reserva final de NCO.OP.125 y su AMC se plantea según el riesgo del vuelo, y MINIMUM FUEL / MAYDAY FUEL se regulan en NCO.OP.185. Las cifras de 10, 30 y 45 minutos que siguen son las vigentes. No hay ningún cambio en 2026."
+        }
+      },
+      {
+        "title": "Las partidas del combustible mínimo",
+        "text": [
+          "La contingencia en Part-NCO no se fija como cifra única en la norma: aparece como una cantidad suficiente para imprevistos. Por eso este curso trabaja con un porcentaje del viaje que suele fijar la escuela. Cuando un ejercicio te dé el porcentaje, aplícalo; si no, usa el que marque tu manual de operaciones. En un examen siempre vendrá dado."
+        ],
+        "table": {
+          "caption": "Partidas del combustible mínimo para un vuelo VFR con avión",
+          "head": [
+            "Partida",
+            "Qué cubre",
+            "Cómo se calcula"
+          ],
+          "rows": [
+            [
+              "Rodaje (taxi)",
+              "Arranque, rodaje y comprobación de motor antes del despegue",
+              "Tiempo estimado × consumo en tierra; el POH o la escuela fijan un valor típico (2 a 5 l)"
+            ],
+            [
+              "Viaje (trip)",
+              "Del despegue al aterrizaje en el destino, con ascenso, crucero y descenso",
+              "Del navlog: tiempo por consumo, con viento previsto"
+            ],
+            [
+              "Contingencia",
+              "Imprevistos: viento mayor del previsto, desvíos pequeños, esperas",
+              "Un porcentaje del combustible de viaje; el piloto o la escuela lo fijan (práctica habitual de 5 a 10 %)"
+            ],
+            [
+              "Alternativo",
+              "Ir del destino a un aeródromo alternativo",
+              "Del navlog desde el destino al alternativo; solo si hace falta alternativo"
+            ],
+            [
+              "Reserva final",
+              "Último margen para aterrizar con seguridad",
+              "Según el tipo de vuelo (tabla siguiente)"
+            ],
+            [
+              "Extra",
+              "Lo que el piloto decide añadir",
+              "A criterio del piloto: meteorología dudosa, esperas probables, aeródromo sin combustible"
+            ]
+          ],
+          "src": "NCO.OP.125 y AMC1; NCO.OP.135"
+        },
+        "verify": true
+      },
+      {
+        "title": "La reserva final",
+        "text": [
+          "La **reserva final** (FRF, *final reserve fuel*) es el combustible que debe quedar en los depósitos **al aterrizar**. Se planifica para aterrizar con ella **intacta**: no es combustible de viaje que puedas gastar a gusto. Su cantidad depende del tipo de vuelo, y el AMC1 NCO.OP.125 (b) la fija así para aviones:"
+        ],
+        "bullets": [
+          "«Velocidad de espera a 1500 ft» significa el consumo del avión **en espera**, que es menor que el de crucero: 30 min a 22 l/h son 11 l.",
+          "Para convertir una reserva en tiempo a litros, multiplica los minutos por el consumo horario que corresponda y divide entre 60.",
+          "Si la previsión indica que vas a aterrizar con menos de la reserva final, la norma te obliga a notificar MINIMUM FUEL o a declarar MAYDAY FUEL (bloque 070.02)."
+        ],
+        "table": {
+          "caption": "Reserva final (FRF) para aviones según AMC1 NCO.OP.125(b), desde el 30-10-2022",
+          "head": [
+            "Tipo de vuelo",
+            "Reserva final"
+          ],
+          "rows": [
+            [
+              "VFR de día en vuelo local (despegue y aterrizaje en el mismo aeródromo, siempre a la vista)",
+              "10 min a potencia máxima continua de crucero"
+            ],
+            [
+              "VFR de día",
+              "30 min a velocidad de espera a 1500 ft sobre el destino"
+            ],
+            [
+              "VFR nocturno e IFR",
+              "45 min a velocidad de espera a 1500 ft sobre el destino"
+            ]
+          ],
+          "src": "AMC1 NCO.OP.125(b)"
+        }
+      },
+      {
+        "title": "Un ejemplo completo",
+        "text": [
+          "Vuelo de ejemplo del navlog del bloque 030.09: viaje de 17,1 l (39,3 min). Rodaje: 3 l. Contingencia: el 10 % del viaje, 1,7 l. Alternativo: volver a Son Bonet, a unas 72 NM del destino (40 min a 26 l/h, 17,3 l). Reserva final de un VFR de día: 30 min a 22 l/h de espera, 11 l.",
+          "Sin alternativo: 3 + 17,1 + 1,7 + 11 = 32,8 l. Con alternativo: 32,8 + 17,3 = 50,1 l. En kilos, 50,1 l × 0,72 = 36,1 kg. Con unos 110 l de combustible utilizable, sobra capacidad, y llevar más por criterio (extra) es una decisión del piloto: más combustible significa menos carga útil, y eso hay que sumarlo en el cálculo de masa y centrado."
+        ],
+        "figure": "svg:030-combustible",
+        "caption": "Partidas del ejemplo, en litros. La reserva final no se toca."
+      },
+      {
+        "title": "Unidades: litros, galones, kilos y libras",
+        "text": [
+          "Los aviones americanos (PA-28, Cessna 172) indican la capacidad en **galones USA** y la masa en **libras**. El examen mezcla unidades, así que domina las conversiones: **1 USG = 3,785 l**; **1 kg = 2,205 lb**; **AVGAS 100LL ≈ 0,72 kg/l** (aproximadamente 6 lb por USG). Un error clásico es mezclar litros con kilos: el combustible se pide en litros (unidad del repostaje) pero entra en el cálculo de masa en kilos."
+        ],
+        "formulas": [
+          {
+            "f": "1 USG = 3,785 l",
+            "note": "Densidad AVGAS: 0,72 kg/l ≈ 6,0 lb/USG"
+          },
+          {
+            "f": "Masa (kg) = litros × 0,72",
+            "note": "Litros = kg / 0,72"
+          }
+        ],
+        "examples": [
+          {
+            "q": "12 USG de AVGAS, ¿cuántos litros y cuántos kilos?",
+            "a": "12 × 3,785 = 45,4 l; 45,4 × 0,72 = 32,7 kg."
+          },
+          {
+            "q": "40 USG, ¿cuántos kilos?",
+            "a": "40 × 3,785 = 151,4 l; × 0,72 = 109 kg (240 lb, a 6 lb/USG)."
+          },
+          {
+            "q": "Un avión consume 8,5 USG/h. ¿Cuántos litros por hora son?",
+            "a": "8,5 × 3,785 = 32,2 l/h."
+          }
+        ]
+      },
+      {
+        "title": "Cálculo con la calculadora",
+        "text": [
+          "La calculadora de combustible combina velocidad, tiempo, distancia y consumo: puedes comprobar el consumo del viaje, la reserva final en litros o la autonomía."
+        ],
+        "figure": "calc:fuel"
+      },
+      {
+        "title": "Registro de combustible en vuelo",
+        "text": [
+          "El combustible se **vigila en vuelo** igual que la ruta: con un registro. En cada punto de control anota la hora, el combustible que queda en cada depósito (según el indicador, que no es fiable y debe contrastarse con el tiempo de vuelo), y compáralo con lo previsto en el navlog. Si usas depósitos separados, apunta también cuál estás usando y la hora de cada cambio (en el PA-28, selector LEFT/RIGHT; en el C172, BOTH, según el POH).",
+          "Si el consumo real es **mayor** del previsto o te quedan menos litros de los previstos, no esperes: **replanifica**. Recalcula la autonomía con el combustible real y la GS real, decide si el destino sigue siendo viable, si hace falta desviar a un alternativo o aterrizar antes. El momento de decidir es cuando todavía queda margen sobre la reserva final, no después de tocarla."
+        ],
+        "bullets": [
+          "Fiarse más del **tiempo de vuelo** que del indicador de cantidad, que en un avión ligero es poco preciso.",
+          "Tomar la decisión de desviar con margen: la reserva final es para imprevistos, no para planificar.",
+          "Anotar los cambios de depósito y la hora de arranque para saber cuánto combustible queda en cada uno."
+        ]
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Contar el combustible inutilizable como disponible.",
+          "Planificar la reserva final como combustible de viaje (aterrizar con ella ya gastada).",
+          "Calcular la reserva de 30 min con el consumo de crucero cuando el AMC habla de velocidad de espera.",
+          "Mezclar litros y kilos, o galones y litros.",
+          "Dar por buena la cantidad del indicador sin contrastarla con el tiempo de vuelo.",
+          "No sumar el combustible extra en el cálculo de masa y centrado."
+        ]
+      }
+    ],
+    "numbers": [
+      "Reserva final (AMC1 NCO.OP.125, desde el 30-10-2022): local diurno, 10 min; VFR de día, 30 min; VFR nocturno e IFR, 45 min",
+      "Reserva final de 30 y 45 min: a velocidad de espera a 1500 ft sobre el destino",
+      "Combustible mínimo = rodaje + viaje + contingencia + alternativo (si hace falta) + reserva final + extra",
+      "1 USG = 3,785 l; AVGAS ≈ 0,72 kg/l; 1 kg = 2,205 lb",
+      "La reserva final se planifica para aterrizar con ella intacta"
+    ],
+    "traps": [
+      "La reserva final no se gasta en la planificación: se aterriza con ella.",
+      "La regla de la reserva final y MINIMUM FUEL / MAYDAY FUEL aplica desde el 30-10-2022, no desde 2026.",
+      "El combustible inutilizable nunca cuenta.",
+      "La reserva de 30 y 45 min se calcula con el consumo en espera a 1500 ft, no con el de crucero."
+    ],
+    "sources": [
+      {
+        "title": "EASA, Easy Access Rules for Air Operations (Part-NCO, AMC y GM)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+      },
+      {
+        "title": "Reglamento (UE) 2021/1296 de la Comisión (reserva final y MINIMUM/MAYDAY FUEL)",
+        "url": "https://lawplayer.com/eu/act/32021R1296"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "030.10.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La reserva final de combustible debe:",
+      "options": [
+        "Usarse como combustible de viaje si hace falta",
+        "Estar intacta al aterrizar",
+        "Repartirse entre rodaje y alternativo",
+        "Sumarse a la contingencia y gastarse en ruta"
+      ],
+      "correct": 1,
+      "why": "La reserva final se planifica para aterrizar con ella; si se ha tocado, se está en una situación de combustible mínimo o emergencia.",
+      "whyNot": [
+        "No es combustible de viaje.",
+        null,
+        "No se destina a rodaje ni a alternativo.",
+        "No se gasta en ruta."
+      ],
+      "ref": "AMC1 NCO.OP.125(b)"
+    },
+    {
+      "id": "030.10.002",
+      "type": "regla",
+      "level": 1,
+      "q": "Reserva final para un VFR de día (no local) en un avión, según AMC1 NCO.OP.125 vigente desde el 30-10-2022:",
+      "options": [
+        "10 min a potencia máxima continua",
+        "45 min a velocidad de espera a 1500 ft",
+        "60 min a crucero",
+        "30 min a velocidad de espera a 1500 ft sobre el destino"
+      ],
+      "correct": 3,
+      "why": "VFR de día: 30 min a velocidad de espera a 1500 ft sobre el destino.",
+      "whyNot": [
+        "Es la reserva del vuelo local diurno.",
+        "Es la del VFR nocturno e IFR.",
+        "No es ninguna de las reservas del AMC.",
+        null
+      ],
+      "ref": "AMC1 NCO.OP.125(b)"
+    },
+    {
+      "id": "030.10.003",
+      "type": "regla",
+      "level": 1,
+      "q": "Reserva final para un VFR nocturno con avión:",
+      "options": [
+        "45 min",
+        "30 min",
+        "10 min",
+        "60 min"
+      ],
+      "correct": 0,
+      "why": "VFR nocturno e IFR: 45 min a velocidad de espera a 1500 ft sobre el destino.",
+      "whyNot": [
+        null,
+        "Es la del VFR de día.",
+        "Es la del vuelo local de día.",
+        "No es la cifra del AMC."
+      ],
+      "ref": "AMC1 NCO.OP.125(b)"
+    },
+    {
+      "id": "030.10.004",
+      "type": "regla",
+      "level": 2,
+      "q": "Un vuelo local diurno (despegue y aterrizaje en el mismo aeródromo, siempre a la vista) lleva como reserva final:",
+      "options": [
+        "30 min a velocidad de espera a 1500 ft",
+        "45 min a crucero",
+        "10 min a potencia máxima continua de crucero",
+        "Ninguna reserva"
+      ],
+      "correct": 2,
+      "why": "AMC1 NCO.OP.125(b): vuelo local de día, 10 min a potencia máxima continua de crucero.",
+      "whyNot": [
+        "Es la reserva del VFR de día no local.",
+        "Es la del vuelo nocturno.",
+        null,
+        "Siempre hay reserva final."
+      ],
+      "ref": "AMC1 NCO.OP.125(b)"
+    },
+    {
+      "id": "030.10.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Desde qué fecha aplican la reserva final basada en riesgo de NCO.OP.125 y el aviso MINIMUM FUEL / MAYDAY FUEL (NCO.OP.185)?",
+      "options": [
+        "Desde el 18-02-2026, por el Reglamento (UE) 2025/133",
+        "Desde 2012, con el Reglamento 965/2012",
+        "Desde el 1-1-2020",
+        "Desde el 30-10-2022, por el Reglamento (UE) 2021/1296"
+      ],
+      "correct": 3,
+      "why": "La reserva final basada en riesgo y los mensajes MINIMUM FUEL y MAYDAY FUEL aplican desde el 30-10-2022 por el Reglamento (UE) 2021/1296.",
+      "whyNot": [
+        "El Reglamento 2025/133 trata de autogiros.",
+        "El 965/2012 es la base original; el cambio es de 2022.",
+        "No existe ese cambio en 2020.",
+        null
+      ],
+      "ref": "Reg. (UE) 2021/1296"
+    },
+    {
+      "id": "030.10.006",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un avión consume 22 l/h en espera a 1500 ft. La reserva final de un VFR de día es de:",
+      "options": [
+        "11 l",
+        "22 l",
+        "7,3 l",
+        "16,5 l"
+      ],
+      "correct": 0,
+      "why": "30 min = 0,5 h; 0,5 × 22 = 11 l.",
+      "whyNot": [
+        null,
+        "22 l sería 1 hora.",
+        "7,3 l son 10 min.",
+        "16,5 l son 45 min."
+      ],
+      "ref": "AMC1 NCO.OP.125(b)"
+    },
+    {
+      "id": "030.10.007",
+      "type": "calculo",
+      "level": 2,
+      "q": "Viaje de 17,1 l, contingencia del 10 %, rodaje de 3 l y reserva final de 11 l, sin alternativo. El combustible mínimo es:",
+      "options": [
+        "31,1 l",
+        "33,9 l",
+        "32,8 l",
+        "28,1 l"
+      ],
+      "correct": 2,
+      "why": "3 + 17,1 + 1,7 + 11 = 32,8 l.",
+      "whyNot": [
+        "31,1 l omite la contingencia.",
+        "33,9 l duplica la contingencia.",
+        null,
+        "28,1 l omite el rodaje y la contingencia."
+      ],
+      "ref": "Lección"
+    },
+    {
+      "id": "030.10.008",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con el mismo vuelo y un alternativo de 17,3 l, el combustible mínimo es:",
+      "options": [
+        "32,8 l",
+        "50,1 l",
+        "43,8 l",
+        "61,1 l"
+      ],
+      "correct": 1,
+      "why": "32,8 + 17,3 = 50,1 l.",
+      "whyNot": [
+        "32,8 l es sin alternativo.",
+        null,
+        "43,8 l no suma bien las partidas.",
+        "61,1 l duplica una partida."
+      ],
+      "ref": "Lección"
+    },
+    {
+      "id": "030.10.009",
+      "type": "calculo",
+      "level": 1,
+      "q": "12 galones USA de AVGAS son:",
+      "options": [
+        "3,2 l",
+        "45,4 l",
+        "12,0 l",
+        "89,0 l"
+      ],
+      "correct": 1,
+      "why": "12 × 3,785 = 45,4 l.",
+      "whyNot": [
+        "3,2 l divide en lugar de multiplicar.",
+        null,
+        "No hay conversión.",
+        "89,0 l no tiene sentido."
+      ],
+      "ref": "Conversión de unidades"
+    },
+    {
+      "id": "030.10.010",
+      "type": "calculo",
+      "level": 2,
+      "q": "36 l de AVGAS pesan aproximadamente:",
+      "options": [
+        "50 kg",
+        "36 kg",
+        "12 kg",
+        "26 kg"
+      ],
+      "correct": 3,
+      "why": "36 × 0,72 = 25,9 kg.",
+      "whyNot": [
+        "50 kg divide por 0,72.",
+        "36 kg supone 1 kg/l.",
+        "12 kg no sale de la conversión.",
+        null
+      ],
+      "ref": "Conversión de unidades"
+    },
+    {
+      "id": "030.10.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "En el registro de combustible de un vuelo, ¿qué es más fiable para estimar el combustible restante?",
+      "options": [
+        "El tiempo de vuelo multiplicado por el consumo, contrastado con el indicador",
+        "Solo el indicador de cantidad",
+        "La cantidad recargada en la última escala",
+        "El valor del navlog sin comprobar"
+      ],
+      "correct": 0,
+      "why": "Los indicadores de los aviones ligeros son poco precisos: se contrastan con el tiempo de vuelo y el consumo.",
+      "whyNot": [
+        null,
+        "El indicador por sí solo no es fiable.",
+        "Lo repostado no dice lo que queda.",
+        "El navlog es lo previsto; hay que compararlo con lo real."
+      ],
+      "ref": "Prácticas de vuelo"
+    },
+    {
+      "id": "030.10.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un punto de control te quedan 6 l menos de lo previsto en el navlog. Lo más prudente es:",
+      "options": [
+        "Continuar, porque la reserva final lo cubre",
+        "Pobre la mezcla al máximo y no cambiar nada",
+        "Replanificar con el combustible y la GS reales y decidir si sigues al destino o desvías",
+        "Esperar al siguiente punto de control"
+      ],
+      "correct": 2,
+      "why": "Cuando el consumo se aparta de lo previsto, se recalcula la autonomía con los datos reales y se decide con margen sobre la reserva final.",
+      "whyNot": [
+        "La reserva no es para planificar.",
+        "No resuelve el problema y puede dañar el motor.",
+        null,
+        "Aplazar la decisión reduce el margen."
+      ],
+      "ref": "Gestión del combustible"
+    },
+    {
+      "id": "030.10.013",
+      "type": "calculo",
+      "level": 3,
+      "q": "90 l a bordo, 2 h de vuelo restantes y consumo real de 28 l/h. Reserva final de 11 l. ¿Con cuánto combustible aterrizarías y estás por encima de la reserva final?",
+      "options": [
+        "34 l, no",
+        "56 l, sí",
+        "11 l, sí",
+        "34 l, sí"
+      ],
+      "correct": 3,
+      "why": "Consumo 2 × 28 = 56 l; quedan 90 − 56 = 34 l, por encima de 11 l.",
+      "whyNot": [
+        "34 l es mayor que 11 l: sí cubre la reserva.",
+        "56 l es el combustible consumido, no el sobrante.",
+        "11 l es la reserva, no lo que queda.",
+        null
+      ],
+      "ref": "Gestión del combustible"
+    },
+    {
+      "id": "030.10.014",
+      "type": "concepto",
+      "level": 1,
+      "q": "El combustible inutilizable:",
+      "options": [
+        "No se cuenta como disponible en ningún cálculo de combustible",
+        "Se cuenta como parte de la reserva final",
+        "Se cuenta como combustible extra",
+        "Se suma a la contingencia"
+      ],
+      "correct": 0,
+      "why": "Es el que no llega al motor; sólo el combustible utilizable cuenta para planificar.",
+      "whyNot": [
+        null,
+        "No es reserva.",
+        "No es extra.",
+        "No es contingencia."
+      ],
+      "ref": "NCO.OP.125; masas del avión"
+    },
+    {
+      "id": "030.10.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "La reserva final de 30 min de un VFR de día se calcula con el consumo:",
+      "options": [
+        "De crucero rápido",
+        "De ascenso",
+        "A velocidad de espera a 1500 ft sobre el destino",
+        "Del rodaje"
+      ],
+      "correct": 2,
+      "why": "El AMC habla de velocidad de espera a 1500 ft, que consume menos que el crucero.",
+      "whyNot": [
+        "No es el consumo del AMC.",
+        "No es el de ascenso.",
+        null,
+        "No es el del rodaje."
+      ],
+      "ref": "AMC1 NCO.OP.125(b)"
+    },
+    {
+      "id": "030.10.016",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un avión consume 8,5 USG/h. En litros por hora son aproximadamente:",
+      "options": [
+        "2,2 l/h",
+        "32 l/h",
+        "8,5 l/h",
+        "50 l/h"
+      ],
+      "correct": 1,
+      "why": "8,5 × 3,785 = 32,2 l/h.",
+      "whyNot": [
+        "2,2 divide en lugar de multiplicar.",
+        null,
+        "No hay conversión.",
+        "50 l/h no corresponde a esa cifra."
+      ],
+      "ref": "Conversión de unidades"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.030.10.01",
+      "front": "Reserva final (AMC1 NCO.OP.125, desde el 30-10-2022)",
+      "back": "Local diurno: 10 min a potencia máxima continua; VFR de día: 30 min en espera a 1500 ft; VFR nocturno e IFR: 45 min"
+    },
+    {
+      "id": "c.030.10.02",
+      "front": "Combustible mínimo: partidas",
+      "back": "Rodaje + viaje + contingencia + alternativo (si hace falta) + reserva final + extra"
+    },
+    {
+      "id": "c.030.10.03",
+      "front": "Conversiones de combustible",
+      "back": "1 USG = 3,785 l; AVGAS ≈ 0,72 kg/l; 1 kg = 2,205 lb"
+    }
+  ]
+}

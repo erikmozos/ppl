@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300">
+  <title>Modelo del queso suizo de Reason: una trayectoria de accidente que atraviesa los agujeros alineados de varias defensas</title>
+  <defs><marker id="040-queso-flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker></defs>
+  <rect x="100" y="40" width="70" height="170" rx="6" class="soft"/>
+  <rect x="220" y="40" width="70" height="170" rx="6" class="soft"/>
+  <rect x="340" y="40" width="70" height="170" rx="6" class="soft"/>
+  <rect x="460" y="40" width="70" height="170" rx="6" class="soft"/>
+  <ellipse cx="135" cy="125" rx="14" ry="20" class="bg-fill"/>
+  <ellipse cx="135" cy="70" rx="9" ry="12" class="bg-fill"/>
+  <ellipse cx="255" cy="125" rx="14" ry="20" class="bg-fill"/>
+  <ellipse cx="255" cy="180" rx="9" ry="12" class="bg-fill"/>
+  <ellipse cx="375" cy="125" rx="14" ry="20" class="bg-fill"/>
+  <ellipse cx="375" cy="65" rx="9" ry="10" class="bg-fill"/>
+  <ellipse cx="495" cy="125" rx="14" ry="20" class="bg-fill"/>
+  <ellipse cx="495" cy="185" rx="9" ry="12" class="bg-fill"/>
+  <path d="M40 125 L590 125" class="wa-ln thick" marker-end="url(#040-queso-flecha)"/>
+  <text x="40" y="112" class="txw b" font-size="12">peligro</text>
+  <text x="590" y="112" class="txw b" font-size="12" text-anchor="end">accidente</text>
+  <text x="135" y="232" class="tx b" text-anchor="middle" font-size="12">Organización</text>
+  <text x="255" y="232" class="tx b" text-anchor="middle" font-size="12">Supervisión</text>
+  <text x="375" y="232" class="tx b" text-anchor="middle" font-size="12">Condiciones previas</text>
+  <text x="495" y="232" class="tx b" text-anchor="middle" font-size="12">Acción del piloto</text>
+  <text x="135" y="248" class="tx2" text-anchor="middle" font-size="11">latente</text>
+  <text x="255" y="248" class="tx2" text-anchor="middle" font-size="11">latente</text>
+  <text x="375" y="248" class="tx2" text-anchor="middle" font-size="11">latente</text>
+  <text x="495" y="248" class="tx2" text-anchor="middle" font-size="11">fallo activo</text>
+  <text x="320" y="282" class="tx2" text-anchor="middle" font-size="11">Cada capa es una defensa con agujeros; el accidente ocurre cuando se alinean</text>
+</svg>

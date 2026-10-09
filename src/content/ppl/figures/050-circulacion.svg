@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320">
+  <title>Circulación general de la atmósfera: células de Hadley, Ferrel y polar entre el ecuador y el polo, con vientos de superficie y zonas de presión</title>
+  <defs>
+    <marker id="050-circulacion-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker>
+    <marker id="050-circulacion-o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ok-fill"/></marker>
+    <marker id="050-circulacion-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker>
+  </defs>
+  <rect x="0" y="0" width="640" height="320" class="sky"/>
+  <rect x="0" y="246" width="640" height="34" class="ground"/>
+  <!-- Hadley -->
+  <line x1="60" y1="232" x2="60" y2="104" class="ac-ln thick" marker-end="url(#050-circulacion-a)"/>
+  <line x1="60" y1="96" x2="224" y2="96" class="ac-ln thick" marker-end="url(#050-circulacion-a)"/>
+  <line x1="232" y1="96" x2="232" y2="226" class="ac-ln thick" marker-end="url(#050-circulacion-a)"/>
+  <line x1="232" y1="234" x2="68" y2="234" class="ac-ln thick" marker-end="url(#050-circulacion-a)"/>
+  <!-- Ferrel -->
+  <line x1="408" y1="226" x2="408" y2="122" class="ok-ln thick" marker-end="url(#050-circulacion-o)"/>
+  <line x1="408" y1="114" x2="252" y2="114" class="ok-ln thick" marker-end="url(#050-circulacion-o)"/>
+  <line x1="248" y1="114" x2="248" y2="226" class="ok-ln thick" marker-end="url(#050-circulacion-o)"/>
+  <line x1="248" y1="234" x2="400" y2="234" class="ok-ln thick" marker-end="url(#050-circulacion-o)"/>
+  <!-- Polar -->
+  <line x1="424" y1="226" x2="424" y2="160" class="wa-ln thick" marker-end="url(#050-circulacion-w)"/>
+  <line x1="424" y1="152" x2="592" y2="152" class="wa-ln thick" marker-end="url(#050-circulacion-w)"/>
+  <line x1="600" y1="152" x2="600" y2="226" class="wa-ln thick" marker-end="url(#050-circulacion-w)"/>
+  <line x1="600" y1="234" x2="432" y2="234" class="wa-ln thick" marker-end="url(#050-circulacion-w)"/>
+  <text x="146" y="170" class="txa b" text-anchor="middle">Célula de Hadley</text>
+  <text x="146" y="188" class="tx2" text-anchor="middle">0°–30°</text>
+  <text x="328" y="172" class="txo b" text-anchor="middle">Célula de Ferrel</text>
+  <text x="328" y="190" class="tx2" text-anchor="middle">30°–60°</text>
+  <text x="512" y="196" class="txw b" text-anchor="middle">Célula polar</text>
+  <text x="512" y="214" class="tx2" text-anchor="middle">60°–90°</text>
+  <text x="60" y="38" class="tx b" text-anchor="middle">ZCIT</text>
+  <text x="60" y="56" class="tx2" text-anchor="middle">baja, ascenso</text>
+  <text x="240" y="38" class="tx b" text-anchor="middle">Alta subtropical</text>
+  <text x="240" y="56" class="tx2" text-anchor="middle">Azores, descenso</text>
+  <text x="416" y="38" class="tx b" text-anchor="middle">Frente polar</text>
+  <text x="416" y="56" class="tx2" text-anchor="middle">bajas, ascenso</text>
+  <text x="600" y="38" class="tx b" text-anchor="middle">Alta polar</text>
+  <text x="600" y="56" class="tx2" text-anchor="middle">descenso</text>
+  <text x="150" y="268" class="tx" text-anchor="middle">alisios (NE)</text>
+  <text x="326" y="268" class="tx" text-anchor="middle">oestes</text>
+  <text x="514" y="268" class="tx" text-anchor="middle">levantes polares (NE)</text>
+  <text x="60" y="302" class="tx2" text-anchor="middle">0° ecuador</text>
+  <text x="240" y="302" class="tx2" text-anchor="middle">30° N</text>
+  <text x="416" y="302" class="tx2" text-anchor="middle">60° N</text>
+  <text x="600" y="302" class="tx2" text-anchor="middle">90° N</text>
+</svg>

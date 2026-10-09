@@ -3,21 +3,11 @@
     "id": "020.08",
     "title": "Sistema eléctrico del avión",
     "summary": "Batería, alternador frente a generador, regulador y protección contra sobretensión, barras, interruptor máster y de aviónica, disyuntores, fusibles y relés, amperímetro, fallo del alternador, electricidad estática, rayos y documentos a bordo.",
-    "objectives": [
-      "Describir las fuentes de energía de un avión ligero y comparar alternador y generador",
-      "Explicar el papel del regulador de tensión y de la protección de sobretensión",
-      "Seguir la distribución: máster, barras, aviónica, disyuntores, fusibles y relés",
-      "Interpretar el amperímetro y actuar ante el fallo del alternador",
-      "Explicar la electricidad estática y los descargadores y los efectos de un rayo",
-      "Citar los documentos que han de llevarse a bordo según NCO.GEN.135"
-    ],
+    "objectives": ["Describir las fuentes de energía de un avión ligero y comparar alternador y generador", "Explicar el papel del regulador de tensión y de la protección de sobretensión", "Seguir la distribución: máster, barras, aviónica, disyuntores, fusibles y relés", "Interpretar el amperímetro y actuar ante el fallo del alternador", "Explicar la electricidad estática y los descargadores y los efectos de un rayo", "Citar los documentos que han de llevarse a bordo según NCO.GEN.135"],
     "sections": [
       {
         "title": "Batería, alternador y generador",
-        "text": [
-          "La energía eléctrica del avión viene de dos fuentes. La **batería**, de plomo-ácido (o de níquel-cadmio en aviones mayores), da energía para **arrancar** el motor y actúa como **reserva** si falla la fuente principal. El **alternador** (o el generador) la repone en vuelo y alimenta los consumidores. El **PA-28-161** usa un sistema de **14 V** (batería de 12 V) y el **C172S** uno de **28 V** (batería de 24 V), con un alternador del orden de 60 A (valores del POH).",
-          "El **generador** produce **corriente continua** directamente, con un colector de escobillas: entrega poca corriente a **bajas RPM** (en ralentí no carga) y es pesado. El **alternador** genera **corriente alterna** en el estator, la **rectifica** con diodos y da una **corriente útil incluso a bajas RPM**; es más ligero, más pequeño y fiable, y por eso lo montan casi todos los aviones ligeros actuales."
-        ],
+        "text": ["La energía eléctrica del avión viene de dos fuentes. La **batería**, de plomo-ácido (o de níquel-cadmio en aviones mayores), da energía para **arrancar** el motor y actúa como **reserva** si falla la fuente principal. El **alternador** (o el generador) la repone en vuelo y alimenta los consumidores. El **PA-28-161** usa un sistema de **14 V** (batería de 12 V) y el **C172S** uno de **28 V** (batería de 24 V), con un alternador del orden de 60 A (valores del POH).", "El **generador** produce **corriente continua** directamente, con un colector de escobillas: entrega poca corriente a **bajas RPM** (en ralentí no carga) y es pesado. El **alternador** genera **corriente alterna** en el estator, la **rectifica** con diodos y da una **corriente útil incluso a bajas RPM**; es más ligero, más pequeño y fiable, y por eso lo montan casi todos los aviones ligeros actuales."],
         "table": {
           "caption": "Generador y alternador",
           "head": ["Característica", "Generador", "Alternador"],
@@ -30,106 +20,87 @@
           ],
           "src": "PHAK cap. 6"
         },
-        "bullets": [
-          "Como el alternador necesita la **batería para excitar el campo**, el interruptor ALT no sirve sin el interruptor BAT en ON.",
-          "Los interruptores **BAT** y **ALT** forman el **máster** (o dos mitades): se conectan juntos para arrancar y se apagan juntos al final."
-        ]
+        "bullets": ["Como el alternador necesita la **batería para excitar el campo**, el interruptor ALT no sirve sin el interruptor BAT en ON.", "Los interruptores **BAT** y **ALT** forman el **máster** (o dos mitades): se conectan juntos para arrancar y se apagan juntos al final."]
       },
       {
         "title": "Regulador, sobretensión y máster",
-        "text": [
-          "La tensión que da un alternador cambia con las RPM y la carga. Un **regulador de tensión** vigila la salida y controla la corriente del campo del alternador para mantener la tensión casi constante (por ejemplo, unos 14 V en un sistema de 12 V). Si el regulador falla y la tensión sube demasiado, un **relé de protección de sobretensión** desconecta el alternador del circuito para proteger la batería y los equipos; se enciende la luz de aviso y el avión pasa a funcionar solo con la batería.",
-          "El **interruptor máster** cierra un **contactor** (un relé de gran potencia) que conecta la batería a la **barra principal**. El **máster de aviónica** conecta la **barra de aviónica**, que lleva radios, GPS y transpondedor, y se mantiene **apagado durante el arranque y la parada**, para evitar que las variaciones de tensión del arranque dañen los equipos."
-        ],
+        "text": ["La tensión que da un alternador cambia con las RPM y la carga. Un **regulador de tensión** vigila la salida y controla la corriente del campo del alternador para mantener la tensión casi constante (por ejemplo, unos 14 V en un sistema de 12 V). Si el regulador falla y la tensión sube demasiado, un **relé de protección de sobretensión** desconecta el alternador del circuito para proteger la batería y los equipos; se enciende la luz de aviso y el avión pasa a funcionar solo con la batería.", "El **interruptor máster** cierra un **contactor** (un relé de gran potencia) que conecta la batería a la **barra principal**. El **máster de aviónica** conecta la **barra de aviónica**, que lleva radios, GPS y transpondedor, y se mantiene **apagado durante el arranque y la parada**, para evitar que las variaciones de tensión del arranque dañen los equipos."],
         "figure": "svg:020-esquema-electrico",
         "caption": "Esquema eléctrico simplificado: batería, alternador, barra principal, disyuntores y barra de aviónica."
       },
       {
         "title": "Barras, disyuntores, fusibles y relés",
-        "text": [
-          "Una **barra** (*bus bar*) es un conductor de cobre desde el que se reparte la energía a los distintos circuitos. Hay una barra **principal** y otra de **aviónica**, y en algunos aviones una barra de **batería** que alimenta lo esencial aunque el máster esté apagado.",
-          "Cada circuito se protege con un **disyuntor** (*circuit breaker*) o un **fusible**, siempre en serie con el consumidor. El **fusible** se funde y hay que sustituirlo (se llevan repuestos). El **disyuntor** salta ante una sobrecarga, se identifica porque el botón sobresale y se puede **rearmar**. Si salta, se espera un minuto a que se enfríe y se rearma **una sola vez**; si vuelve a saltar, no se rearma: hay un fallo en el circuito. Un disyuntor puede tirarse a mano para aislar un circuito.",
-          "Un **relé** (o contactor) es un interruptor accionado electromagnéticamente: una corriente pequeña, controlada desde cabina, cierra un circuito de mucha corriente. Es el caso del **contactor del máster** y del **relé del motor de arranque**, que evitan llevar cables gruesos hasta los interruptores de la cabina."
-        ]
+        "text": ["Una **barra** (*bus bar*) es un conductor de cobre desde el que se reparte la energía a los distintos circuitos. Hay una barra **principal** y otra de **aviónica**, y en algunos aviones una barra de **batería** que alimenta lo esencial aunque el máster esté apagado.", "Cada circuito se protege con un **disyuntor** (*circuit breaker*) o un **fusible**, siempre en serie con el consumidor. El **fusible** se funde y hay que sustituirlo (se llevan repuestos). El **disyuntor** salta ante una sobrecarga, se identifica porque el botón sobresale y se puede **rearmar**. Si salta, se espera un minuto a que se enfríe y se rearma **una sola vez**; si vuelve a saltar, no se rearma: hay un fallo en el circuito. Un disyuntor puede tirarse a mano para aislar un circuito.", "Un **relé** (o contactor) es un interruptor accionado electromagnéticamente: una corriente pequeña, controlada desde cabina, cierra un circuito de mucha corriente. Es el caso del **contactor del máster** y del **relé del motor de arranque**, que evitan llevar cables gruesos hasta los interruptores de la cabina."]
       },
       {
         "title": "Amperímetro y fallo del alternador",
-        "text": [
-          "El **amperímetro** muestra el sentido y el valor de la corriente. Según el avión, indica la **carga y descarga de la batería** (cero en el centro: positivo, la batería se carga; negativo, se descarga) o la **corriente que entrega el alternador**. Algunos aviones tienen un voltímetro y una luz **LOW VOLTS** o **ALT**. Consulta el POH de tu avión.",
-          "Un **fallo del alternador** se reconoce porque el amperímetro marca descarga continua o cero, el voltímetro baja, la luz de aviso se enciende o los equipos pierden rendimiento. La batería sola dura unos **30 minutos** con la carga mínima (cifra orientativa; depende de su estado y de la carga)."
-        ],
-        "bullets": [
-          "Comprueba el **disyuntor** del alternador y rearma una vez.",
-          "Si hay luz de ALT, prueba a apagar y volver a encender el interruptor ALT (una vez, según POH).",
-          "Si no se recupera, **reduce las cargas**: apaga lo que no es esencial, deja la radio y lo imprescindible, y **aterriza en el aeródromo adecuado más cercano**.",
-          "Con solo batería, en el **C172S** los **flaps eléctricos** dejarán de funcionar al agotarse; en el **PA-28-161** el **aviso de pérdida eléctrico** y la **bomba eléctrica** dependen de la batería.",
-          "Si hay **olor a quemado o humo**, apaga el máster, ventila y aterriza según el POH; un fuego eléctrico se combate con el extintor."
-        ],
+        "text": ["El **amperímetro** muestra el sentido y el valor de la corriente. Según el avión, indica la **carga y descarga de la batería** (cero en el centro: positivo, la batería se carga; negativo, se descarga) o la **corriente que entrega el alternador**. Algunos aviones tienen un voltímetro y una luz **LOW VOLTS** o **ALT**. Consulta el POH de tu avión.", "Un **fallo del alternador** se reconoce porque el amperímetro marca descarga continua o cero, el voltímetro baja, la luz de aviso se enciende o los equipos pierden rendimiento. La batería sola dura unos **30 minutos** con la carga mínima (cifra orientativa; depende de su estado y de la carga)."],
+        "bullets": ["Comprueba el **disyuntor** del alternador y rearma una vez.", "Si hay luz de ALT, prueba a apagar y volver a encender el interruptor ALT (una vez, según POH).", "Si no se recupera, **reduce las cargas**: apaga lo que no es esencial, deja la radio y lo imprescindible, y **aterriza en el aeródromo adecuado más cercano**.", "Con solo batería, en el **C172S** los **flaps eléctricos** dejarán de funcionar al agotarse; en el **PA-28-161** el **aviso de pérdida eléctrico** y la **bomba eléctrica** dependen de la batería.", "Si hay **olor a quemado o humo**, apaga el máster, ventila y aterriza según el POH; un fuego eléctrico se combate con el extintor."],
         "verify": true
       },
       {
         "title": "Electricidad estática y rayos",
-        "text": [
-          "Al volar entre partículas (lluvia, nieve, polvo, hielo), el avión se **carga de electricidad estática** por fricción. Esa carga puede producir **ruido** en las radios y descargas molestas. Para evitarlo se instalan **descargadores de estática** (mechas) en el borde de salida de alerones y empenaje, que liberan la carga de forma continua y silenciosa, y se conectan entre sí las piezas metálicas con **cables de unión (bonding)**.",
-          "Un **rayo** puede alcanzar a un avión en vuelo. El fuselaje metálico actúa como una **jaula de Faraday**: la corriente fluye por la piel y sale por una extremidad, y los ocupantes no sufren daño. Pero puede dejar **perforaciones o quemaduras**, dañar la **aviónica**, **magnetizar la brújula** y deslumbrar al piloto. Tras un impacto, el avión debe ser **inspeccionado**. Se evita volando lejos de las tormentas, a una distancia prudente de los cumulonimbos."
-        ]
+        "text": ["Al volar entre partículas (lluvia, nieve, polvo, hielo), el avión se **carga de electricidad estática** por fricción. Esa carga puede producir **ruido** en las radios y descargas molestas. Para evitarlo se instalan **descargadores de estática** (mechas) en el borde de salida de alerones y empenaje, que liberan la carga de forma continua y silenciosa, y se conectan entre sí las piezas metálicas con **cables de unión (bonding)**.", "Un **rayo** puede alcanzar a un avión en vuelo. El fuselaje metálico actúa como una **jaula de Faraday**: la corriente fluye por la piel y sale por una extremidad, y los ocupantes no sufren daño. Pero puede dejar **perforaciones o quemaduras**, dañar la **aviónica**, **magnetizar la brújula** y deslumbrar al piloto. Tras un impacto, el avión debe ser **inspeccionado**. Se evita volando lejos de las tormentas, a una distancia prudente de los cumulonimbos."]
       },
       {
         "title": "Documentos a bordo (NCO.GEN.135)",
-        "text": [
-          "En vuelos no comerciales con aviones no complejos (Part-NCO), la norma **NCO.GEN.135** enumera los documentos, manuales e información que deben llevarse a bordo. Los principales son:"
-        ],
-        "bullets": [
-          "El **manual de vuelo (AFM)** o documento equivalente.",
-          "El **certificado de aeronavegabilidad (CofA)** original y el **certificado de matrícula** original.",
-          "El **certificado de ruido**, cuando proceda, y la **licencia de la estación de radio de la aeronave**.",
-          "El **certificado de seguro de responsabilidad civil** frente a terceros.",
-          "El **diario de a bordo** o documento equivalente.",
-          "El **plan de vuelo presentado**, si procede, las **cartas aeronáuticas** vigentes y adecuadas, y los procedimientos y **señales visuales de interceptación**.",
-          "La información sobre servicios de búsqueda y salvamento, y la información **meteorológica** y de **NOTAM** pertinentes, y la documentación de **masa y centrado**."
-        ],
-        "note": { "kind": "es", "text": "La lista exacta y si el certificado de revisión de aeronavegabilidad (ARC) o el certificado de puesta en servicio (CRS) deben ir a bordo conviene comprobarlo en el texto vigente de NCO.GEN.135 y en las instrucciones de AESA." },
+        "text": ["En vuelos no comerciales con aviones no complejos (Part-NCO), la norma **NCO.GEN.135** enumera los documentos, manuales e información que deben llevarse a bordo. Los principales son:"],
+        "bullets": ["El **manual de vuelo (AFM)** o documento equivalente.", "El **certificado de aeronavegabilidad (CofA)** original y el **certificado de matrícula** original.", "El **certificado de ruido**, cuando proceda, y la **licencia de la estación de radio de la aeronave**.", "El **certificado de seguro de responsabilidad civil** frente a terceros.", "El **diario de a bordo** o documento equivalente.", "El **plan de vuelo presentado**, si procede, las **cartas aeronáuticas** vigentes y adecuadas, y los procedimientos y **señales visuales de interceptación**.", "La información sobre servicios de búsqueda y salvamento, y la información **meteorológica** y de **NOTAM** pertinentes, y la documentación de **masa y centrado**."],
+        "note": {
+          "kind": "es",
+          "text": "La lista exacta y si el certificado de revisión de aeronavegabilidad (ARC) o el certificado de puesta en servicio (CRS) deben ir a bordo conviene comprobarlo en el texto vigente de NCO.GEN.135 y en las instrucciones de AESA."
+        },
         "verify": true
       }
     ],
-    "numbers": [
-      "PA-28-161: sistema de 14 V; C172S: 28 V; alternador del orden de 60 A (POH)",
-      "El alternador da corriente a bajas RPM; el generador no; el alternador necesita la batería para excitarse",
-      "Máster de aviónica apagado en el arranque y la parada",
-      "Disyuntor que salta: esperar un minuto y rearmar una sola vez",
-      "Batería sola: unos 30 minutos con carga mínima (orientativo)"
-    ],
-    "traps": [
-      "Creer que el alternador funciona sin batería: necesita excitación.",
-      "Pensar que se puede rearmar un disyuntor varias veces: una sola.",
-      "Dejar el máster de aviónica en ON durante el arranque.",
-      "Olvidar que con el alternador fallado se depende de la batería para flaps eléctricos (C172S) y bomba o aviso de pérdida (PA-28-161).",
-      "Creer que un rayo no deja secuelas por ser una jaula de Faraday: puede dañar aviónica y magnetizar la brújula."
-    ],
+    "numbers": ["PA-28-161: sistema de 14 V; C172S: 28 V; alternador del orden de 60 A (POH)", "El alternador da corriente a bajas RPM; el generador no; el alternador necesita la batería para excitarse", "Máster de aviónica apagado en el arranque y la parada", "Disyuntor que salta: esperar un minuto y rearmar una sola vez", "Batería sola: unos 30 minutos con carga mínima (orientativo)"],
+    "traps": ["Creer que el alternador funciona sin batería: necesita excitación.", "Pensar que se puede rearmar un disyuntor varias veces: una sola.", "Dejar el máster de aviónica en ON durante el arranque.", "Olvidar que con el alternador fallado se depende de la batería para flaps eléctricos (C172S) y bomba o aviso de pérdida (PA-28-161).", "Creer que un rayo no deja secuelas por ser una jaula de Faraday: puede dañar aviónica y magnetizar la brújula."],
     "sources": [
-      { "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 6: sistema eléctrico", "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak" },
-      { "title": "Reglamento (UE) n.º 965/2012, Part-NCO, NCO.GEN.135 (Easy Access Rules)", "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations" }
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 6: sistema eléctrico",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Reglamento (UE) n.º 965/2012, Part-NCO, NCO.GEN.135 (Easy Access Rules)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+      }
     ],
     "reviewed": "2026-10-09",
     "links": [
-      { "label": "Arranque del PA-28 (máster, aviónica y alternador)", "href": "#/ac/pa28/flow/start" },
-      { "label": "Arranque del C172", "href": "#/ac/c172/flow/start" },
-      { "label": "Parada del PA-28", "href": "#/ac/pa28/flow/shutdown" },
-      { "label": "Cabina del PA-28", "href": "#/ac/pa28" }
+      {
+        "label": "Arranque del PA-28 (máster, aviónica y alternador)",
+        "href": "#/ac/pa28/flow/start"
+      },
+      {
+        "label": "Arranque del C172",
+        "href": "#/ac/c172/flow/start"
+      },
+      {
+        "label": "Parada del PA-28",
+        "href": "#/ac/pa28/flow/shutdown"
+      },
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      }
     ]
   },
   "questions": [
     {
-      "id": "020.08.001", "type": "concepto", "level": 1,
+      "id": "020.08.001",
+      "type": "concepto",
+      "level": 1,
       "q": "El alternador de un avión ligero genera:",
-      "options": ["Corriente continua directa", "Corriente alterna que se rectifica con diodos", "Corriente alterna que se usa tal cual", "Solo magnetismo"],
-      "correct": 1,
+      "options": ["Corriente continua directa", "Corriente alterna que se usa tal cual", "Corriente alterna que se rectifica con diodos", "Solo magnetismo"],
+      "correct": 2,
       "why": "Genera CA en el estator y la rectifica con diodos para suministrar CC.",
-      "whyNot": ["Eso hace un generador de CC.", null, "Los consumidores son de CC.", "Genera electricidad."],
+      "whyNot": ["Eso hace un generador de CC.", "Los consumidores son de CC.", null, "Genera electricidad."],
       "ref": "PHAK cap. 6"
     },
     {
-      "id": "020.08.002", "type": "concepto", "level": 2,
+      "id": "020.08.002",
+      "type": "concepto",
+      "level": 2,
       "q": "Una ventaja del alternador frente al generador es:",
       "options": ["Entrega corriente útil a bajas RPM", "No necesita batería", "Pesa más", "Es más barato siempre"],
       "correct": 0,
@@ -138,43 +109,53 @@
       "ref": "PHAK cap. 6"
     },
     {
-      "id": "020.08.003", "type": "concepto", "level": 2,
+      "id": "020.08.003",
+      "type": "concepto",
+      "level": 2,
       "q": "El alternador no funciona si la batería está desconectada porque:",
-      "options": ["Genera CC", "Necesita la batería para excitar su campo", "Se funde", "Solo funciona de noche"],
-      "correct": 1,
+      "options": ["Genera CC", "Se funde", "Solo funciona de noche", "Necesita la batería para excitar su campo"],
+      "correct": 3,
       "why": "El campo se excita con corriente de la batería; sin ella, el alternador no se activa.",
-      "whyNot": ["Genera CA y la rectifica.", null, "No se funde por eso.", "El día o la noche no influyen."],
+      "whyNot": ["Genera CA y la rectifica.", "No se funde por eso.", "El día o la noche no influyen.", null],
       "ref": "PHAK cap. 6"
     },
     {
-      "id": "020.08.004", "type": "concepto", "level": 1,
+      "id": "020.08.004",
+      "type": "concepto",
+      "level": 1,
       "q": "El regulador de tensión sirve para:",
-      "options": ["Mantener la tensión del alternador casi constante", "Aumentar las RPM", "Cargar la brújula", "Desconectar la batería en tierra"],
-      "correct": 0,
-      "why": "Controla la corriente del campo para mantener la tensión estable aunque cambien las RPM y la carga.",
-      "whyNot": [null, "No actúa sobre las RPM.", "No tiene relación con la brújula.", "No desconecta la batería."],
-      "ref": "PHAK cap. 6"
-    },
-    {
-      "id": "020.08.005", "type": "concepto", "level": 2,
-      "q": "La protección de sobretensión:",
-      "options": ["Desconecta el alternador si la tensión es excesiva", "Aumenta la tensión", "Carga la batería a más corriente", "Apaga el motor"],
-      "correct": 0,
-      "why": "Si la tensión sube demasiado, un relé desconecta el alternador para proteger la batería y los equipos.",
-      "whyNot": [null, "Su función es limitarla.", "No cambia la carga de esa forma.", "No actúa sobre el motor."],
-      "ref": "PHAK cap. 6"
-    },
-    {
-      "id": "020.08.006", "type": "concepto", "level": 1,
-      "q": "El máster de aviónica debe estar apagado:",
-      "options": ["Durante el vuelo", "Durante el arranque y la parada del motor", "Solo de noche", "Siempre"],
+      "options": ["Aumentar las RPM", "Mantener la tensión del alternador casi constante", "Cargar la brújula", "Desconectar la batería en tierra"],
       "correct": 1,
+      "why": "Controla la corriente del campo para mantener la tensión estable aunque cambien las RPM y la carga.",
+      "whyNot": ["No actúa sobre las RPM.", null, "No tiene relación con la brújula.", "No desconecta la batería."],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.08.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "La protección de sobretensión:",
+      "options": ["Aumenta la tensión", "Desconecta el alternador si la tensión es excesiva", "Carga la batería a más corriente", "Apaga el motor"],
+      "correct": 1,
+      "why": "Si la tensión sube demasiado, un relé desconecta el alternador para proteger la batería y los equipos.",
+      "whyNot": ["Su función es limitarla.", null, "No cambia la carga de esa forma.", "No actúa sobre el motor."],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.08.006",
+      "type": "concepto",
+      "level": 1,
+      "q": "El máster de aviónica debe estar apagado:",
+      "options": ["Durante el vuelo", "Solo de noche", "Siempre", "Durante el arranque y la parada del motor"],
+      "correct": 3,
       "why": "Se evita que los picos de tensión del arranque dañen los equipos electrónicos.",
-      "whyNot": ["En vuelo se usa.", null, "No depende de la luz del día.", "Se enciende después del arranque."],
+      "whyNot": ["En vuelo se usa.", "No depende de la luz del día.", "Se enciende después del arranque.", null],
       "ref": "POH PA-28-161 y C172S"
     },
     {
-      "id": "020.08.007", "type": "concepto", "level": 2,
+      "id": "020.08.007",
+      "type": "concepto",
+      "level": 2,
       "q": "Una barra (bus bar) es:",
       "options": ["Un conductor desde el que se reparte la energía a varios circuitos", "Un tipo de fusible", "Un indicador de tensión", "Un sensor de temperatura"],
       "correct": 0,
@@ -183,61 +164,75 @@
       "ref": "PHAK cap. 6"
     },
     {
-      "id": "020.08.008", "type": "concepto", "level": 1,
+      "id": "020.08.008",
+      "type": "concepto",
+      "level": 1,
       "q": "La diferencia entre fusible y disyuntor es que:",
-      "options": ["El disyuntor se puede rearmar y el fusible se funde y se sustituye", "El fusible se rearma", "No hay diferencia", "El disyuntor solo protege la batería"],
-      "correct": 0,
+      "options": ["El fusible se rearma", "No hay diferencia", "El disyuntor se puede rearmar y el fusible se funde y se sustituye", "El disyuntor solo protege la batería"],
+      "correct": 2,
       "why": "El fusible se destruye al cortar; el disyuntor salta y se rearma.",
-      "whyNot": [null, "El fusible no se rearma.", "Se comportan de forma distinta.", "Protege cualquier circuito."],
+      "whyNot": ["El fusible no se rearma.", "Se comportan de forma distinta.", null, "Protege cualquier circuito."],
       "ref": "PHAK cap. 6"
     },
     {
-      "id": "020.08.009", "type": "regla", "level": 2,
+      "id": "020.08.009",
+      "type": "regla",
+      "level": 2,
       "q": "Un disyuntor ha saltado en vuelo. Lo habitual es:",
-      "options": ["Rearmarlo varias veces", "Esperar un minuto y rearmarlo una sola vez", "Forzarlo con la mano", "Cambiarlo en vuelo"],
-      "correct": 1,
+      "options": ["Rearmarlo varias veces", "Forzarlo con la mano", "Cambiarlo en vuelo", "Esperar un minuto y rearmarlo una sola vez"],
+      "correct": 3,
       "why": "Se espera a que se enfríe y se rearma una vez; si salta de nuevo, hay un fallo y no se rearma.",
-      "whyNot": ["Insistir puede provocar un incendio.", null, "Nunca se fuerza.", "No se sustituye en vuelo."],
+      "whyNot": ["Insistir puede provocar un incendio.", "Nunca se fuerza.", "No se sustituye en vuelo.", null],
       "ref": "POH; PHAK cap. 6"
     },
     {
-      "id": "020.08.010", "type": "concepto", "level": 2,
+      "id": "020.08.010",
+      "type": "concepto",
+      "level": 2,
       "q": "El contactor del interruptor máster es:",
-      "options": ["Un relé que conecta la batería a la barra principal", "Un fusible", "Un diodo", "Un condensador"],
-      "correct": 0,
+      "options": ["Un fusible", "Un relé que conecta la batería a la barra principal", "Un diodo", "Un condensador"],
+      "correct": 1,
       "why": "El máster activa un relé de gran potencia que cierra el circuito de la batería.",
-      "whyNot": [null, "No es un fusible.", "Un diodo rectifica.", "Un condensador almacena carga."],
+      "whyNot": ["No es un fusible.", null, "Un diodo rectifica.", "Un condensador almacena carga."],
       "ref": "PHAK cap. 6"
     },
     {
-      "id": "020.08.011", "type": "concepto", "level": 2,
+      "id": "020.08.011",
+      "type": "concepto",
+      "level": 2,
       "q": "En un avión con amperímetro de carga y descarga de batería, una indicación negativa continua en vuelo significa:",
-      "options": ["Que la batería se carga", "Que la batería se descarga: el alternador no aporta", "Que el motor está en ralentí", "Que el sistema funciona con normalidad"],
-      "correct": 1,
+      "options": ["Que la batería se carga", "Que el motor está en ralentí", "Que la batería se descarga: el alternador no aporta", "Que el sistema funciona con normalidad"],
+      "correct": 2,
       "why": "Indica descarga de la batería: el alternador no está dando la corriente que necesitan los consumidores.",
-      "whyNot": ["Eso sería indicación positiva.", null, "No guarda relación con el ralentí.", "Es una señal de fallo."],
+      "whyNot": ["Eso sería indicación positiva.", "No guarda relación con el ralentí.", null, "Es una señal de fallo."],
       "ref": "POH; PHAK cap. 6"
     },
     {
-      "id": "020.08.012", "type": "regla", "level": 2,
+      "id": "020.08.012",
+      "type": "regla",
+      "level": 2,
       "q": "Tras un fallo del alternador, lo primero que se hace es:",
-      "options": ["Apagar el máster por completo", "Comprobar el disyuntor del alternador y reducir cargas eléctricas", "Encender todo lo posible", "Aterrizar sin más comprobaciones"],
-      "correct": 1,
+      "options": ["Comprobar el disyuntor del alternador y reducir cargas eléctricas", "Apagar el máster por completo", "Encender todo lo posible", "Aterrizar sin más comprobaciones"],
+      "correct": 0,
       "why": "Se comprueba el disyuntor, se intenta rearmar una vez y se reducen las cargas para prolongar la batería.",
-      "whyNot": ["Sin batería se pierde todo.", null, "Aceleraría el agotamiento de la batería.", "Antes se hacen las comprobaciones del POH."],
+      "whyNot": [null, "Sin batería se pierde todo.", "Aceleraría el agotamiento de la batería.", "Antes se hacen las comprobaciones del POH."],
       "ref": "POH"
     },
     {
-      "id": "020.08.013", "type": "concepto", "level": 3,
+      "id": "020.08.013",
+      "type": "concepto",
+      "level": 3,
       "q": "Con el alternador fallado y la batería casi agotada en un C172S, dejará de funcionar:",
-      "options": ["Los flaps eléctricos", "El altímetro", "Los magnetos", "La brújula"],
-      "correct": 0,
+      "options": ["El altímetro", "Los magnetos", "Los flaps eléctricos", "La brújula"],
+      "correct": 2,
       "why": "Los flaps eléctricos dependen de la energía eléctrica; los magnetos, el altímetro y la brújula no.",
-      "whyNot": [null, "El altímetro no es eléctrico.", "Los magnetos son independientes.", "La brújula es magnética."],
+      "whyNot": ["El altímetro no es eléctrico.", "Los magnetos son independientes.", null, "La brújula es magnética."],
       "ref": "POH C172S"
     },
     {
-      "id": "020.08.014", "type": "concepto", "level": 3,
+      "id": "020.08.014",
+      "type": "concepto",
+      "level": 3,
       "q": "Con el alternador fallado y la batería casi agotada en un PA-28-161, puede dejar de funcionar:",
       "options": ["El aviso de pérdida eléctrico y la bomba eléctrica", "El motor", "La brújula", "El altímetro"],
       "correct": 0,
@@ -246,25 +241,31 @@
       "ref": "POH PA-28-161"
     },
     {
-      "id": "020.08.015", "type": "concepto", "level": 2,
+      "id": "020.08.015",
+      "type": "concepto",
+      "level": 2,
       "q": "La batería sola puede alimentar los equipos esenciales de un avión ligero durante aproximadamente:",
-      "options": ["5 horas", "30 minutos (orientativo)", "10 segundos", "Indefinidamente"],
-      "correct": 1,
+      "options": ["5 horas", "10 segundos", "Indefinidamente", "30 minutos (orientativo)"],
+      "correct": 3,
       "why": "Con carga mínima y buena batería, unos 30 minutos orientativos; el POH da el dato del avión.",
-      "whyNot": ["Es excesivo para la capacidad de la batería.", null, "Es demasiado poco.", "Se agota."],
+      "whyNot": ["Es excesivo para la capacidad de la batería.", "Es demasiado poco.", "Se agota.", null],
       "ref": "POH"
     },
     {
-      "id": "020.08.016", "type": "calculo", "level": 3,
+      "id": "020.08.016",
+      "type": "calculo",
+      "level": 3,
       "q": "Una batería de 30 Ah alimenta una carga de 20 A. ¿Cuánto dura teóricamente?",
-      "options": ["1,5 horas", "10 minutos", "50 horas", "0,5 horas"],
-      "correct": 0,
+      "options": ["10 minutos", "1,5 horas", "50 horas", "0,5 horas"],
+      "correct": 1,
       "why": "Tiempo = capacidad ÷ corriente = 30 ÷ 20 = 1,5 h teóricas; en la práctica menos.",
-      "whyNot": [null, "No concuerda con el cálculo.", "Multiplica en vez de dividir.", "Divide al revés."],
+      "whyNot": ["No concuerda con el cálculo.", null, "Multiplica en vez de dividir.", "Divide al revés."],
       "ref": "Capacidad (Ah) ÷ corriente (A)"
     },
     {
-      "id": "020.08.017", "type": "concepto", "level": 1,
+      "id": "020.08.017",
+      "type": "concepto",
+      "level": 1,
       "q": "Los descargadores de estática (mechas) del borde de salida sirven para:",
       "options": ["Aumentar la sustentación", "Descargar la electricidad estática acumulada y reducir el ruido de radio", "Frenar el avión", "Medir la velocidad"],
       "correct": 1,
@@ -273,16 +274,20 @@
       "ref": "PHAK cap. 6"
     },
     {
-      "id": "020.08.018", "type": "concepto", "level": 2,
+      "id": "020.08.018",
+      "type": "concepto",
+      "level": 2,
       "q": "El fuselaje metálico protege a los ocupantes de un rayo porque actúa como:",
-      "options": ["Un aislante", "Una jaula de Faraday", "Un transformador", "Un condensador"],
-      "correct": 1,
+      "options": ["Un aislante", "Un transformador", "Un condensador", "Una jaula de Faraday"],
+      "correct": 3,
       "why": "La corriente fluye por la piel conductora y no entra en la cabina.",
-      "whyNot": ["Es conductor, no aislante.", null, "No transforma tensión.", "No almacena carga."],
+      "whyNot": ["Es conductor, no aislante.", "No transforma tensión.", "No almacena carga.", null],
       "ref": "PHAK cap. 12"
     },
     {
-      "id": "020.08.019", "type": "concepto", "level": 2,
+      "id": "020.08.019",
+      "type": "concepto",
+      "level": 2,
       "q": "Tras recibir un rayo en vuelo, un posible efecto es:",
       "options": ["Magnetización de la brújula y daño a la aviónica", "Aumento de la sustentación", "Mejora del alternador", "Ninguno"],
       "correct": 0,
@@ -291,44 +296,54 @@
       "ref": "PHAK cap. 12"
     },
     {
-      "id": "020.08.020", "type": "regla", "level": 2,
+      "id": "020.08.020",
+      "type": "regla",
+      "level": 2,
       "q": "Según NCO.GEN.135, entre los documentos que deben llevarse a bordo está:",
-      "options": ["El título de propiedad de la aeronave", "El certificado de seguro de responsabilidad civil frente a terceros", "El certificado médico de los pasajeros", "El recibo del último repostaje"],
-      "correct": 1,
+      "options": ["El título de propiedad de la aeronave", "El certificado médico de los pasajeros", "El certificado de seguro de responsabilidad civil frente a terceros", "El recibo del último repostaje"],
+      "correct": 2,
       "why": "NCO.GEN.135 incluye el certificado de seguro de responsabilidad civil, junto con el AFM, el CofA y el certificado de matrícula, entre otros.",
-      "whyNot": ["No figura en la lista.", null, "No se exige a los pasajeros.", "No es un documento exigido."],
+      "whyNot": ["No figura en la lista.", "No se exige a los pasajeros.", null, "No es un documento exigido."],
       "ref": "NCO.GEN.135"
     },
     {
-      "id": "020.08.021", "type": "regla", "level": 2,
+      "id": "020.08.021",
+      "type": "regla",
+      "level": 2,
       "q": "¿Cuál de estos documentos debe llevarse a bordo de un avión en vuelo no comercial según NCO.GEN.135?",
-      "options": ["El diario de a bordo o documento equivalente", "Las cuentas de la escuela", "El contrato de alquiler obligatoriamente", "La licencia del instructor"],
-      "correct": 0,
+      "options": ["Las cuentas de la escuela", "El contrato de alquiler obligatoriamente", "La licencia del instructor", "El diario de a bordo o documento equivalente"],
+      "correct": 3,
       "why": "El diario de a bordo (o equivalente) figura en NCO.GEN.135.",
-      "whyNot": [null, "No es un documento exigido.", "No es requisito de esa norma.", "La licencia es del piloto y no figura en esa lista de documentos de la aeronave."],
+      "whyNot": ["No es un documento exigido.", "No es requisito de esa norma.", "La licencia es del piloto y no figura en esa lista de documentos de la aeronave.", null],
       "ref": "NCO.GEN.135"
     },
     {
-      "id": "020.08.022", "type": "concepto", "level": 2,
+      "id": "020.08.022",
+      "type": "concepto",
+      "level": 2,
       "q": "El relé del motor de arranque sirve para:",
-      "options": ["Conectar el motor de arranque a la batería con un circuito de gran corriente mandado desde un interruptor pequeño", "Regular la tensión del alternador", "Cargar la batería", "Medir la corriente"],
-      "correct": 0,
+      "options": ["Regular la tensión del alternador", "Conectar el motor de arranque a la batería con un circuito de gran corriente mandado desde un interruptor pequeño", "Cargar la batería", "Medir la corriente"],
+      "correct": 1,
       "why": "El relé conmuta la gran corriente del motor de arranque, mandado desde la llave.",
-      "whyNot": [null, "Eso es el regulador.", "El alternador carga la batería.", "El amperímetro mide la corriente."],
+      "whyNot": ["Eso es el regulador.", null, "El alternador carga la batería.", "El amperímetro mide la corriente."],
       "ref": "PHAK cap. 6"
     },
     {
-      "id": "020.08.023", "type": "lectura", "level": 2,
+      "id": "020.08.023",
+      "type": "lectura",
+      "level": 2,
       "q": "Según el esquema, ¿cómo se alimentan las radios y el GPS?",
       "figure": "svg:020-esquema-electrico",
-      "options": ["Directamente desde la batería", "Desde la barra de aviónica, a través del máster de aviónica", "Desde el motor de arranque", "Desde el alternador sin ningún interruptor"],
-      "correct": 1,
+      "options": ["Directamente desde la batería", "Desde el motor de arranque", "Desde la barra de aviónica, a través del máster de aviónica", "Desde el alternador sin ningún interruptor"],
+      "correct": 2,
       "why": "Cuelgan de la barra de aviónica, que se conecta con su propio máster, apagado en el arranque.",
-      "whyNot": ["Se conectan a la barra, no directamente a la batería.", null, "El motor de arranque tiene su propia derivación.", "Tienen el máster de aviónica como interruptor."],
+      "whyNot": ["Se conectan a la barra, no directamente a la batería.", "El motor de arranque tiene su propia derivación.", null, "Tienen el máster de aviónica como interruptor."],
       "ref": "PHAK cap. 6"
     },
     {
-      "id": "020.08.024", "type": "lectura", "level": 2,
+      "id": "020.08.024",
+      "type": "lectura",
+      "level": 2,
       "q": "En vuelo se enciende la luz de aviso del alternador y el amperímetro marca descarga. ¿Qué es lo más probable?",
       "data": "Luz ALT: encendida\nAmperímetro: descarga continua\nVoltímetro: 12,1 V (sistema de 14 V)\nMotor: normal",
       "options": ["El alternador no suministra corriente y la batería alimenta los equipos", "La batería se está cargando", "Hay avería de motor", "Falla el pitot"],
@@ -339,12 +354,40 @@
     }
   ],
   "cards": [
-    { "id": "c.020.08.01", "front": "Alternador frente a generador", "back": "El alternador entrega corriente a bajas RPM, es más ligero y necesita la batería para excitarse" },
-    { "id": "c.020.08.02", "front": "Protección de sobretensión", "back": "Desconecta el alternador si la tensión es excesiva; sigue la batería" },
-    { "id": "c.020.08.03", "front": "Máster de aviónica", "back": "Apagado durante el arranque y la parada" },
-    { "id": "c.020.08.04", "front": "Disyuntor que salta", "back": "Esperar un minuto y rearmar una sola vez" },
-    { "id": "c.020.08.05", "front": "Fallo de alternador", "back": "Comprobar disyuntor, reducir cargas y aterrizar; la batería dura unos 30 minutos" },
-    { "id": "c.020.08.06", "front": "Rayo en un avión metálico", "back": "Jaula de Faraday: protege a los ocupantes; puede dañar aviónica y magnetizar la brújula" },
-    { "id": "c.020.08.07", "front": "Documentos a bordo", "back": "NCO.GEN.135: AFM, CofA, matrícula, seguro, diario de a bordo, cartas, licencia de radio y otros" }
+    {
+      "id": "c.020.08.01",
+      "front": "Alternador frente a generador",
+      "back": "El alternador entrega corriente a bajas RPM, es más ligero y necesita la batería para excitarse"
+    },
+    {
+      "id": "c.020.08.02",
+      "front": "Protección de sobretensión",
+      "back": "Desconecta el alternador si la tensión es excesiva; sigue la batería"
+    },
+    {
+      "id": "c.020.08.03",
+      "front": "Máster de aviónica",
+      "back": "Apagado durante el arranque y la parada"
+    },
+    {
+      "id": "c.020.08.04",
+      "front": "Disyuntor que salta",
+      "back": "Esperar un minuto y rearmar una sola vez"
+    },
+    {
+      "id": "c.020.08.05",
+      "front": "Fallo de alternador",
+      "back": "Comprobar disyuntor, reducir cargas y aterrizar; la batería dura unos 30 minutos"
+    },
+    {
+      "id": "c.020.08.06",
+      "front": "Rayo en un avión metálico",
+      "back": "Jaula de Faraday: protege a los ocupantes; puede dañar aviónica y magnetizar la brújula"
+    },
+    {
+      "id": "c.020.08.07",
+      "front": "Documentos a bordo",
+      "back": "NCO.GEN.135: AFM, CofA, matrícula, seguro, diario de a bordo, cartas, licencia de radio y otros"
+    }
   ]
 }

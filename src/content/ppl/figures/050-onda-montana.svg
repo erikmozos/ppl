@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320">
+  <title>Onda de montaña: viento perpendicular a la cordillera, nubes lenticulares en las crestas de la onda, rotor bajo la cresta y nube de cima</title>
+  <defs>
+    <marker id="050-onda-montana-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+    <marker id="050-onda-montana-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker>
+  </defs>
+  <rect x="0" y="0" width="640" height="320" class="sky"/>
+  <path d="M20 80 L30 80 L40 80 L50 79 L60 79 L70 78 L80 78 L90 77 L100 76 L110 75 L120 73 L130 72 L140 70 L150 69 L160 67 L170 65 L180 63 L190 61 L200 58 L210 56 L220 57 L230 60 L240 65 L250 71 L260 77 L270 83 L280 87 L290 89 L300 89 L310 88 L320 84 L330 80 L340 74 L350 68 L360 63 L370 59 L380 57 L390 56 L400 57 L410 59 L420 63 L430 67 L440 71 L450 75 L460 77 L470 79 L480 79 L490 78 L500 76 L510 72 L520 69 L530 65 L540 61 L550 58 L560 57 L570 56 L580 57 L590 58 L600 61 L610 63 L620 66" class="ac-ln"/>
+  <path d="M20 130 L30 130 L40 130 L50 129 L60 129 L70 128 L80 128 L90 127 L100 126 L110 125 L120 123 L130 122 L140 120 L150 119 L160 117 L170 115 L180 113 L190 111 L200 108 L210 106 L220 107 L230 110 L240 115 L250 121 L260 127 L270 133 L280 137 L290 139 L300 139 L310 138 L320 134 L330 130 L340 124 L350 118 L360 113 L370 109 L380 107 L390 106 L400 107 L410 109 L420 113 L430 117 L440 121 L450 125 L460 127 L470 129 L480 129 L490 128 L500 126 L510 122 L520 119 L530 115 L540 111 L550 108 L560 107 L570 106 L580 107 L590 108 L600 111 L610 113 L620 116" class="ac-ln"/>
+  <path d="M20 180 L30 180 L40 180 L50 179 L60 179 L70 178 L80 178 L90 177 L100 176 L110 175 L120 173 L130 172 L140 170 L150 169 L160 167 L170 165 L180 163 L190 161 L200 158 L210 156 L220 157 L230 160 L240 165 L250 171 L260 177 L270 183 L280 187 L290 189 L300 189 L310 188 L320 184 L330 180 L340 174 L350 168 L360 163 L370 159 L380 157 L390 156 L400 157 L410 159 L420 163 L430 167 L440 171 L450 175 L460 177 L470 179 L480 179 L490 178 L500 176 L510 172 L520 169 L530 165 L540 161 L550 158 L560 157 L570 156 L580 157 L590 158 L600 161 L610 163 L620 166" class="ac-ln"/>
+  <rect x="0" y="262" width="640" height="58" class="ground"/>
+  <path d="M110 262 L210 160 L310 262 Z" class="soft"/>
+  <ellipse cx="390" cy="106" rx="46" ry="9" class="soft"/>
+  <ellipse cx="570" cy="108" rx="46" ry="9" class="soft"/>
+  <path d="M176 168 C196 148 226 148 244 168 C226 176 196 176 176 168 Z" class="soft"/>
+  <ellipse cx="390" cy="236" rx="40" ry="18" class="wa"/>
+  <path d="M368 244 C378 260 408 260 416 240" class="wa-ln thick" fill="none" marker-end="url(#050-onda-montana-w)"/>
+  <line x1="24" y1="44" x2="100" y2="44" class="ln thick" marker-end="url(#050-onda-montana-f)"/>
+  <text x="24" y="30" class="tx b">Viento ≥ 20–25 kt</text>
+  <text x="390" y="86" class="tx2" text-anchor="middle">nube lenticular</text>
+  <text x="570" y="88" class="tx2" text-anchor="middle">nube lenticular</text>
+  <text x="390" y="294" class="txw b" text-anchor="middle">rotor: turbulencia severa</text>
+  <text x="168" y="162" class="tx2" text-anchor="end" font-size="12">nube de cima</text>
+  <text x="210" y="294" class="tx b" text-anchor="middle">cordillera</text>
+  <text x="300" y="214" class="tx2" text-anchor="middle" font-size="12">descendente</text>
+  <text x="480" y="214" class="tx2" text-anchor="middle" font-size="12">descendente</text>
+</svg>

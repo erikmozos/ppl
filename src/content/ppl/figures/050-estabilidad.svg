@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320">
+  <title>Estabilidad del aire: gradientes adiabático seco y saturado frente a distintos gradientes reales de temperatura con la altura</title>
+  <rect x="0" y="0" width="640" height="320" class="sky"/>
+  <rect x="20" y="40" width="400" height="236" rx="6" class="soft"/>
+  <line x1="330" y1="270" x2="330" y2="65" class="ln2 dash"/>
+  <line x1="30" y1="270" x2="410" y2="270" class="ln"/>
+  <line x1="330" y1="270" x2="102" y2="70" class="ln"/>
+  <line x1="330" y1="270" x2="150" y2="70" class="wa-ln dash"/>
+  <line x1="330" y1="270" x2="186" y2="70" class="ln"/>
+  <line x1="330" y1="270" x2="222" y2="70" class="ac-ln dash"/>
+  <line x1="330" y1="270" x2="270" y2="70" class="ln"/>
+  <line x1="330" y1="270" x2="390" y2="70" class="ln"/>
+  <text x="102" y="62" class="tx b" text-anchor="middle">1</text>
+  <text x="150" y="62" class="tx b" text-anchor="middle">2</text>
+  <text x="186" y="62" class="tx b" text-anchor="middle">3</text>
+  <text x="222" y="62" class="tx b" text-anchor="middle">4</text>
+  <text x="270" y="62" class="tx b" text-anchor="middle">5</text>
+  <text x="390" y="62" class="tx b" text-anchor="middle">6</text>
+  <text x="330" y="286" class="tx2" text-anchor="middle" font-size="12">temperatura en el suelo</text>
+  <text x="34" y="62" class="tx2" font-size="12">altitud ↑</text>
+  <text x="34" y="264" class="tx2" font-size="12">0 ft</text>
+  <text x="438" y="62" class="tx b">Gradiente en °C/1000 ft</text>
+  <text x="438" y="92" class="tx" font-size="12"><tspan class="b">1</tspan>  Inestable (real &gt; 3)</text>
+  <text x="438" y="126" class="tx" font-size="12"><tspan class="b">2</tspan>  Adiabática seca: 3</text>
+  <text x="438" y="160" class="tx" font-size="12"><tspan class="b">3</tspan>  Condicional (1,8 a 3)</text>
+  <text x="438" y="194" class="tx" font-size="12"><tspan class="b">4</tspan>  Adiabática saturada: 1,8</text>
+  <text x="438" y="228" class="tx" font-size="12"><tspan class="b">5</tspan>  Estable (real &lt; 1,8)</text>
+  <text x="438" y="262" class="tx" font-size="12"><tspan class="b">6</tspan>  Inversión (T sube)</text>
+  <text x="438" y="300" class="tx2" font-size="11">Discontinuas: referencia</text>
+</svg>

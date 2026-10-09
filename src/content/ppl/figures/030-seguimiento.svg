@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330">
+<title>Control de derrota con la regla de 1 en 60: ángulo de error de derrota, ángulo de convergencia y corrección total de rumbo</title>
+<defs><marker id="030-seguimiento-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker></defs>
+<line x1="50" y1="110" x2="590" y2="110" class="ln dash"/>
+<line x1="50" y1="110" x2="260" y2="180" class="wa-ln thick"/>
+<line x1="260" y1="180" x2="590" y2="110" class="ok-ln thick" marker-end="url(#030-seguimiento-k)"/>
+<line x1="260" y1="110" x2="260" y2="180" class="ln2 dash"/>
+<circle cx="50" cy="110" r="5" class="ink-fill"/>
+<circle cx="590" cy="110" r="5" class="ink-fill"/>
+<circle cx="260" cy="180" r="6" class="wa-fill"/>
+<text x="50" y="94" class="tx b">Salida</text>
+<text x="590" y="94" class="tx b" text-anchor="end">Destino</text>
+<text x="150" y="90" class="tx2" text-anchor="middle">derrota prevista</text>
+<text x="170" y="170" class="txw" text-anchor="middle" transform="rotate(18 170 170)">derrota real</text>
+<text x="272" y="152" class="tx2">3 NM</text>
+<text x="272" y="200" class="txw b">posición actual</text>
+<text x="150" y="270" class="tx" text-anchor="middle">30 NM recorridas</text>
+<text x="420" y="270" class="tx" text-anchor="middle">60 NM por recorrer</text>
+<line x1="50" y1="248" x2="258" y2="248" class="ln2" marker-end="url(#030-seguimiento-k)" marker-start="url(#030-seguimiento-k)"/>
+<line x1="262" y1="248" x2="590" y2="248" class="ln2" marker-end="url(#030-seguimiento-k)" marker-start="url(#030-seguimiento-k)"/>
+<path d="M95 124 A 50 50 0 0 0 108 110" class="wa-ln" fill="none"/>
+<text x="112" y="132" class="txw b">6°</text>
+<path d="M520 124 A 70 70 0 0 1 535 118" class="ok-ln" fill="none"/>
+<text x="500" y="142" class="txo b">3°</text>
+<text x="320" y="312" class="txa b" text-anchor="middle">Error de derrota 3/30 × 60 = 6° · convergencia 3/60 × 60 = 3° · corrección total 9° a la izquierda</text>
+</svg>

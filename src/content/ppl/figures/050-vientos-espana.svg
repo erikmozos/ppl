@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <title>Esquema de vientos locales de España: Tramontana, Mistral, Cierzo, Levante, Poniente, Terral y Galerna</title>
+  <defs>
+    <marker id="050-vientos-espana-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker>
+    <marker id="050-vientos-espana-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker>
+  </defs>
+  <rect x="0" y="0" width="640" height="420" class="sky"/>
+  <path d="M60 95 L150 75 L300 80 L372 86 L470 112 L452 150 L416 190 L390 232 L345 285 L272 338 L215 355 L168 336 L125 326 L62 336 L48 252 L46 170 Z" class="ground"/>
+  <path d="M60 95 L150 75 L300 80 L372 86 L470 112 L452 150 L416 190 L390 232 L345 285 L272 338 L215 355 L168 336 L125 326 L62 336 L48 252 L46 170 Z" class="ln" fill="none"/>
+  <line x1="52" y1="276" x2="130" y2="326" class="ln2 dash"/>
+  <ellipse cx="512" cy="228" rx="24" ry="12" class="ground"/>
+  <ellipse cx="512" cy="228" rx="24" ry="12" class="ln" fill="none"/>
+  <text x="512" y="256" class="tx2" text-anchor="middle">Baleares</text>
+  <text x="280" y="218" class="tx2" text-anchor="middle" font-size="12">Península Ibérica</text>
+  <!-- Galerna -->
+  <line x1="215" y1="28" x2="238" y2="70" class="wa-ln thick" marker-end="url(#050-vientos-espana-w)"/>
+  <text x="206" y="22" class="txw b" text-anchor="middle">Galerna (NO)</text>
+  <!-- Tramontana -->
+  <line x1="497" y1="62" x2="472" y2="108" class="ac-ln thick" marker-end="url(#050-vientos-espana-a)"/>
+  <text x="500" y="52" class="txa b" text-anchor="middle">Tramontana (N)</text>
+  <!-- Mistral -->
+  <line x1="590" y1="86" x2="522" y2="136" class="ac-ln thick" marker-end="url(#050-vientos-espana-a)"/>
+  <text x="590" y="76" class="txa b" text-anchor="middle">Mistral (NO)</text>
+  <!-- Cierzo -->
+  <line x1="318" y1="118" x2="396" y2="176" class="ac-ln thick" marker-end="url(#050-vientos-espana-a)"/>
+  <text x="326" y="108" class="txa b" text-anchor="middle">Cierzo (NO, valle del Ebro)</text>
+  <!-- Terral -->
+  <line x1="222" y1="270" x2="262" y2="324" class="wa-ln thick" marker-end="url(#050-vientos-espana-w)"/>
+  <text x="212" y="262" class="txw b" text-anchor="end">Terral (N-NO, Málaga)</text>
+  <!-- Estrecho -->
+  <line x1="300" y1="376" x2="190" y2="376" class="ac-ln thick" marker-end="url(#050-vientos-espana-a)"/>
+  <text x="312" y="380" class="txa b">Levante (E)</text>
+  <line x1="120" y1="398" x2="240" y2="398" class="ac-ln thick" marker-end="url(#050-vientos-espana-a)"/>
+  <text x="252" y="402" class="txa b">Poniente (O)</text>
+  <text x="440" y="396" class="tx2" text-anchor="middle" font-size="12">Estrecho de Gibraltar</text>
+</svg>

@@ -1,0 +1,529 @@
+{
+ "lesson": {
+  "title": "Sistema nervioso y visión",
+  "summary": "Organización del sistema nervioso, anatomía del ojo, fóvea y punto ciego, visión de día y de noche, percepción de la profundidad, miopía de campo vacío, exploración visual para evitar colisiones y defectos de la vista.",
+  "objectives": [
+   "Distinguir sistema nervioso central, periférico y autónomo",
+   "Describir las partes del ojo y la función de conos y bastones",
+   "Explicar el punto ciego, la visión central y la periférica",
+   "Aplicar las reglas de visión nocturna y de exploración por sectores",
+   "Reconocer las claves de profundidad y la miopía de campo vacío",
+   "Conocer los defectos de la vista, las lentes correctoras y las gafas de sol"
+  ],
+  "sections": [
+   {
+    "title": "El sistema nervioso",
+    "text": [
+     "El **sistema nervioso central** (SNC) está formado por el **cerebro** y la **médula espinal**: recibe la información, la procesa y da las órdenes. El **sistema nervioso periférico** conecta el SNC con el resto del cuerpo mediante nervios: los **sensoriales** llevan la información de ojos, oídos, piel y órganos hacia el cerebro, y los **motores** llevan las órdenes a los músculos.",
+     "El **sistema nervioso autónomo** controla funciones involuntarias (corazón, respiración, digestión, pupilas). Tiene dos ramas que se contrarrestan: el **simpático**, que prepara para la acción o el estrés (acelera el corazón, dilata las pupilas, frena la digestión), y el **parasimpático**, que favorece el reposo. Bajo estrés o miedo domina el simpático, lo que explica el corazón acelerado y la boca seca. El cerebro es muy sensible a la falta de oxígeno, de ahí la importancia de la hipoxia vista antes."
+    ]
+   },
+   {
+    "title": "Anatomía del ojo",
+    "text": [
+     "La luz entra por la **córnea**, atraviesa la **pupila** (el **iris** regula su tamaño según la luz) y el **cristalino**, que cambia de forma para enfocar objetos cercanos o lejanos (**acomodación**). La imagen se forma en la **retina**, la capa de receptores del fondo del ojo, y los impulsos viajan por el **nervio óptico** al cerebro, que construye la imagen: lo que vemos se hace en el cerebro, no en el ojo.",
+     "La retina tiene dos tipos de receptores. Los **conos** (unos 6 millones) trabajan con luz intensa, ven el **color** y el **detalle** y se concentran en la **fóvea**, una pequeña zona central donde solo hay conos; es la **visión central**, y solo cubre unos pocos grados. Los **bastones** (unos 120 millones) se reparten por el **resto de la retina**: funcionan con **poca luz**, detectan el **movimiento** y las formas pero no el color ni el detalle; es la **visión periférica**."
+    ],
+    "figure": "svg:040-ojo",
+    "caption": "La fóvea solo tiene conos; el punto ciego es el lugar donde el nervio óptico sale de la retina."
+   },
+   {
+    "title": "Punto ciego",
+    "text": [
+     "En el lugar donde el nervio óptico sale de la retina no hay receptores: es el **punto ciego** (disco óptico). Cada ojo tiene el suyo, a unos 15° de la fóvea hacia el lado de la nariz y no se aprecia porque el otro ojo cubre esa zona y el cerebro rellena el hueco. Con un solo ojo, un avión que se acerque puede quedar justo en el punto ciego sin que se vea, sobre todo si no cambia su posición aparente. Por eso hay que **mover la cabeza y los ojos** y no confiar en un barrido fijo."
+    ]
+   },
+   {
+    "title": "Visión nocturna",
+    "text": [
+     "De noche la fóvea (solo conos) es casi inútil: ver un objeto débil exige usar los **bastones**, por lo que hay que mirar **ligeramente a un lado** (hacia 10° a 15° del objeto) y no directamente a él; el objeto se percibe mejor con la visión periférica, y desaparece si lo miras de frente. Esa técnica se llama **visión descentrada**.",
+     "La **adaptación a la oscuridad** de los bastones necesita unos **30 minutos**; basta un destello de luz blanca para perderla. Para protegerla se evitan las luces brillantes, se baja la luz de cabina y se usa luz tenue (la luz roja afecta menos a los bastones). Factores que empeoran la visión nocturna: **hipoxia (ya hacia los 5000 ft)**, tabaco, alcohol, fatiga, falta de vitamina A y edad. Con oxígeno suplementario mejora algo. De noche conviene además escanear continuamente porque la mirada fija sobre un punto tiende a desaparecer (fatiga de los receptores)."
+    ]
+   },
+   {
+    "title": "Exploración visual y prevención de colisiones",
+    "text": [
+     "Solo se ve bien un cono estrecho de unos pocos grados; el resto del campo es borroso y detecta sobre todo **movimiento**. Un avión en rumbo de colisión **no se mueve** en tu campo visual: permanece fijo y solo crece, de modo que es fácil que pase inadvertido hasta muy cerca. Un blanco visto solo con la visión periférica puede no distinguirse del fondo.",
+     "La técnica correcta es **exploración por sectores**: dividir el cielo en sectores de aproximadamente 10° a 15° y mirar cada uno **al menos 1 segundo**, con saltos cortos de unos 10°, para dar tiempo a que el ojo enfoque y detecte. Se alterna con el vistazo a los instrumentos, sin dejar de mirar fuera. Conviene prestar especial atención a los puntos de más tráfico (circuito, zonas de enlace), y preguntar al ATC por el tráfico en la radio.",
+     "Los **blancos que no se mueven respecto al parabrisas** son los que más peligran. Si sospechas un avión en rumbo de colisión, se actúa: se maniobra con arreglo a las reglas de paso de SERA.3210. El resplandor del sol, un parabrisas sucio y las ventanillas con arañazos reducen mucho la visibilidad: **parabrisas limpio**."
+    ]
+   },
+   {
+    "title": "Percepción de la profundidad",
+    "text": [
+     "La **visión binocular** (estereopsis) permite calcular la profundidad comparando las dos imágenes, pero solo es eficaz en distancias cortas (unos pocos metros, dentro de cabina); a las distancias de vuelo la profundidad se juzga con **claves monoculares**, que dependen de la experiencia: **tamaño relativo** y **tamaño conocido** (un avión parece más pequeño cuanto más lejos), **perspectiva lineal** (las líneas paralelas convergen: pista, carretera), **gradiente de textura** (los detalles del suelo se aprecian peor lejos), **interposición** (un objeto tapa a otro: está delante), **perspectiva aérea** (lo lejano se ve más borroso y azulado), **luces y sombras** y **paralaje de movimiento** (los objetos cercanos parecen moverse más deprisa que los lejanos).",
+     "Cuando faltan las claves (pista sin textura, nieve, agua, noche, una pista de ancho y longitud poco usuales) la apreciación de la distancia y la altura se hace peor: es el origen de varias **ilusiones de aproximación** que se estudian en el bloque 040.06."
+    ]
+   },
+   {
+    "title": "Miopía de campo vacío",
+    "text": [
+     "En un cielo sin nubes, sin referencias o con bruma uniforme, el ojo no tiene nada en lo que fijarse y **enfoca a un metro o dos**, el llamado punto de reposo de la acomodación: es la **miopía de campo vacío**. Un blanco lejano puede estar en el campo visual y no verse. La contramedida es **mirar de vez en cuando a un objeto lejano** (la punta del ala no sirve; un horizonte o una nube lejana, sí) y mantener la exploración."
+    ]
+   },
+   {
+    "title": "Defectos de la vista, lentes y gafas de sol",
+    "text": [
+     "La **miopía** (se ve mal de lejos) y la **hipermetropía** (se ve mal de cerca) son defectos de enfoque. La **presbicia** o vista cansada aparece alrededor de los 40-45 años: el cristalino pierde elasticidad y cuesta leer de cerca (cartas, instrumentos); se corrige con gafas de lectura o bifocales. El **astigmatismo** deforma la imagen. El **daltonismo** (confusión de rojos y verdes sobre todo, más frecuente en hombres) afecta a la lectura de luces y señales y se comprueba en el reconocimiento médico. Las **cataratas** (opacidad del cristalino) y el **glaucoma** (aumento de presión que daña el nervio óptico) aparecen con la edad; el glaucoma pierde primero la visión periférica sin dolor.",
+     "Si el reconocimiento médico exige **lentes correctoras**, tienes que llevarlas puestas durante el vuelo y **llevar un par de repuesto** a mano. Las lentes de contacto son aceptables si las toleras bien, pero conviene llevar también gafas. La cirugía refractiva debe comunicarse al médico examinador de aeronáutica (AeMC o AME).",
+     "Las **gafas de sol** deben ser de calidad, con filtro UV y lentes **neutras (gris)**, que no alteran los colores, y de tinte moderado (no demasiado oscuras). **No se usan de noche** ni se usan lentes de colores intensos. Las lentes **polarizadas** pueden hacer invisibles pantallas LCD y algunas lecturas de instrumentos: se prueban antes de volar. Se prefiere una montura fina que no estreche el campo visual."
+    ]
+   }
+  ],
+  "numbers": [
+   "Fóvea: solo conos; visión central, color y detalle",
+   "Bastones: periferia, poca luz y movimiento, sin color",
+   "Adaptación a la oscuridad: unos 30 min",
+   "De noche, mirar 10° a 15° a un lado del objeto (visión descentrada)",
+   "Exploración: sectores de 10°-15°, saltos de hasta 10° y al menos 1 s por sector",
+   "Miopía de campo vacío: cielo sin referencias; el ojo enfoca a 1-2 m",
+   "Gafas de sol: neutras y con filtro UV; no de noche"
+  ],
+  "traps": [
+   "El punto ciego es la salida del nervio óptico, no la fóvea.",
+   "De noche no se mira de frente: el objeto se ve mejor de reojo.",
+   "Un avión en rumbo de colisión no se mueve en el parabrisas: parece quieto.",
+   "La luz blanca arruina la adaptación a la oscuridad; la roja tenue la respeta más.",
+   "Las gafas polarizadas pueden ocultar lecturas de pantallas."
+  ],
+  "sources": [
+   {
+    "title": "EASA, Part-MED, requisitos visuales, y materiales de medicina aeronáutica",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules"
+   },
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge, cap. 17 (visión)",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "SERA.3210, derecho de paso (Reglamento (UE) 923/2012)",
+    "url": "https://eur-lex.europa.eu/eli/reg_impl/2012/923/oj"
+   }
+  ],
+  "id": "040.04",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "040.04.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "¿Qué forma el sistema nervioso central?",
+   "options": [
+    "Los nervios sensoriales y los motores",
+    "El cerebro y la médula espinal",
+    "El simpático y el parasimpático",
+    "El corazón y los pulmones"
+   ],
+   "correct": 1,
+   "why": "El SNC es el cerebro y la médula espinal; el resto es el sistema periférico.",
+   "whyNot": [
+    "Eso es el sistema periférico.",
+    null,
+    "Son las dos ramas del sistema autónomo.",
+    "Son órganos de otros sistemas."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.002",
+   "type": "concepto",
+   "level": 2,
+   "q": "El sistema simpático, ante una situación de miedo o estrés, produce:",
+   "options": [
+    "Disminución del ritmo cardiaco",
+    "Mayor actividad digestiva",
+    "Constricción de las pupilas",
+    "Aceleración del corazón y dilatación de las pupilas"
+   ],
+   "correct": 3,
+   "why": "El simpático prepara para la acción: más pulso, más presión, pupilas dilatadas y digestión frenada.",
+   "whyNot": [
+    "Eso lo hace el parasimpático.",
+    "La digestión se frena.",
+    "Las pupilas se dilatan.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.003",
+   "type": "concepto",
+   "level": 1,
+   "q": "¿Qué parte de la retina permite la visión de detalle y de color?",
+   "options": [
+    "La fóvea, con conos",
+    "La periferia, con bastones",
+    "El punto ciego",
+    "El cristalino"
+   ],
+   "correct": 0,
+   "why": "La fóvea tiene solo conos y da la mejor agudeza y el color.",
+   "whyNot": [
+    null,
+    "Los bastones no detectan color ni detalle.",
+    "No tiene receptores.",
+    "El cristalino enfoca, pero no detecta la luz."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "¿Qué receptores permiten ver con poca luz?",
+   "options": [
+    "Los conos",
+    "La córnea",
+    "Los bastones",
+    "El iris"
+   ],
+   "correct": 2,
+   "why": "Los bastones son sensibles a poca luz y a los movimientos, pero no al color.",
+   "whyNot": [
+    "Los conos necesitan luz intensa.",
+    "La córnea solo refracta la luz.",
+    null,
+    "El iris regula el tamaño de la pupila."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "El punto ciego es:",
+   "options": [
+    "La fóvea, que solo ve en blanco y negro",
+    "La zona de la retina con más bastones",
+    "La zona de la retina por la que sale el nervio óptico, sin receptores",
+    "Una mancha en el cristalino"
+   ],
+   "correct": 2,
+   "why": "En el disco óptico no hay conos ni bastones.",
+   "whyNot": [
+    "La fóvea es la zona de mayor agudeza.",
+    "La mayor concentración de bastones está fuera de la fóvea.",
+    null,
+    "No es una opacidad del cristalino."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "El punto ciego de un ojo normalmente no se nota porque:",
+   "options": [
+    "El otro ojo cubre la zona y el cerebro rellena el hueco",
+    "Los bastones lo compensan",
+    "La pupila se dilata",
+    "Lo cubre el cristalino"
+   ],
+   "correct": 0,
+   "why": "La visión binocular y el procesado cerebral compensan el hueco.",
+   "whyNot": [
+    null,
+    "Los bastones no lo cubren: no hay receptores allí.",
+    "La pupila no corrige el hueco.",
+    "El cristalino no tiene relación con él."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.007",
+   "type": "regla",
+   "level": 1,
+   "q": "El tiempo aproximado de adaptación a la oscuridad de los bastones es de:",
+   "options": [
+    "Unos 30 segundos",
+    "Unos 5 minutos",
+    "Unas 3 horas",
+    "Unos 30 minutos"
+   ],
+   "correct": 3,
+   "why": "La adaptación completa necesita en torno a media hora y se pierde con un destello de luz blanca.",
+   "whyNot": [
+    "Es insuficiente.",
+    "Es demasiado poco.",
+    "Es demasiado largo.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "Para ver un objeto débil de noche conviene mirar:",
+   "options": [
+    "Directamente a él con la fóvea",
+    "Ligeramente a un lado del objeto",
+    "Con los ojos cerrados un momento",
+    "A una luz brillante antes"
+   ],
+   "correct": 1,
+   "why": "Los bastones están fuera de la fóvea; mirar de reojo usa su sensibilidad.",
+   "whyNot": [
+    "La fóvea es casi ciega con poca luz.",
+    null,
+    "No ayuda.",
+    "Una luz brillante destruye la adaptación."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Qué factor empeora la visión nocturna ya hacia los 5000 ft?",
+   "options": [
+    "El aumento del oxígeno",
+    "La hipoxia leve",
+    "La luna llena",
+    "El descenso"
+   ],
+   "correct": 1,
+   "why": "Los bastones son de las células más sensibles a la falta de oxígeno.",
+   "whyNot": [
+    "El oxígeno mejora la visión.",
+    null,
+    "No empeora la visión.",
+    "No es un factor de salud."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "Para conservar la adaptación a la oscuridad en cabina lo mejor es:",
+   "options": [
+    "Encender las luces de cabina al máximo",
+    "Mirar a los faros",
+    "Usar gafas de sol",
+    "Luz tenue, preferiblemente roja, y evitar luces blancas intensas"
+   ],
+   "correct": 3,
+   "why": "La luz blanca la destruye; la roja tenue afecta menos a los bastones.",
+   "whyNot": [
+    "La luz blanca intensa destruye la adaptación.",
+    "Los faros deslumbran.",
+    "Las gafas oscurecen aún más.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.011",
+   "type": "regla",
+   "level": 2,
+   "q": "La técnica de exploración visual recomendada consiste en:",
+   "options": [
+    "Sectores de unos 10°-15°, mirando cada uno al menos 1 segundo",
+    "Barrido continuo y rápido sin fijar la vista",
+    "Fijar la vista en el frente sin moverla",
+    "Mirar solo a los instrumentos"
+   ],
+   "correct": 0,
+   "why": "Con saltos cortos y pausas el ojo tiene tiempo de enfocar y detectar.",
+   "whyNot": [
+    null,
+    "Un barrido rápido no deja tiempo para detectar.",
+    "El blanco puede estar en cualquier sector.",
+    "No se ve el tráfico desde los instrumentos."
+   ],
+   "ref": "SERA.3201; medicina aeronáutica"
+  },
+  {
+   "id": "040.04.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un avión en rumbo de colisión suele verse en el parabrisas:",
+   "options": [
+    "Moviéndose deprisa de un lado a otro",
+    "Desplazándose despacio hacia arriba",
+    "Quieto en su posición, aumentando de tamaño",
+    "Desapareciendo de repente"
+   ],
+   "correct": 2,
+   "why": "Si no hay movimiento angular relativo, el rumbo es de colisión y es el que más se pasa por alto.",
+   "whyNot": [
+    "Un blanco con movimiento angular claro pasará de largo.",
+    "Un blanco que se desplaza hacia arriba o abajo cruzará por encima o por debajo.",
+    null,
+    "Un blanco en colisión no desaparece: sigue creciendo."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.013",
+   "type": "concepto",
+   "level": 2,
+   "q": "La miopía de campo vacío es:",
+   "options": [
+    "El defecto de ver mal de lejos",
+    "La pérdida de visión periférica",
+    "El enfoque del ojo a 1-2 m cuando no hay referencias en el campo visual",
+    "La falta de color en la visión"
+   ],
+   "correct": 2,
+   "why": "Sin objetos a los que atender, el ojo enfoca cerca y los blancos lejanos no se ven.",
+   "whyNot": [
+    "La miopía de campo vacío no es un defecto del ojo.",
+    "No afecta al campo periférico.",
+    null,
+    "No afecta a la percepción del color."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.014",
+   "type": "concepto",
+   "level": 2,
+   "q": "Para contrarrestar la miopía de campo vacío conviene:",
+   "options": [
+    "Mirar de vez en cuando a un objeto lejano",
+    "Cerrar los ojos unos segundos",
+    "Mirar siempre al morro",
+    "Quitarse las gafas"
+   ],
+   "correct": 0,
+   "why": "Enfocar un punto lejano reajusta la acomodación del ojo.",
+   "whyNot": [
+    null,
+    "Los ojos cerrados no exploran el cielo.",
+    "Mirar el morro mantiene el enfoque cerca.",
+    "Sin gafas, si las lleva obligatorias, ve peor de lejos."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.015",
+   "type": "concepto",
+   "level": 1,
+   "q": "Una clave monocular de profundidad es:",
+   "options": [
+    "La estereopsis",
+    "La visión binocular",
+    "La acomodación de los ojos a la vez",
+    "La perspectiva lineal"
+   ],
+   "correct": 3,
+   "why": "Las líneas paralelas que convergen (una pista) informan de la distancia con un solo ojo.",
+   "whyNot": [
+    "La estereopsis es binocular.",
+    "Es binocular, con dos ojos.",
+    "No es una clave de profundidad lejana.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.016",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Cuál es el defecto asociado con la edad que dificulta leer de cerca a partir de los 40-45 años?",
+   "options": [
+    "La miopía",
+    "La presbicia",
+    "El astigmatismo",
+    "El daltonismo"
+   ],
+   "correct": 1,
+   "why": "El cristalino pierde elasticidad y la acomodación disminuye.",
+   "whyNot": [
+    "La miopía afecta a la visión lejana.",
+    null,
+    "El astigmatismo deforma la imagen.",
+    "El daltonismo es la confusión de colores."
+   ],
+   "ref": "Part-MED"
+  },
+  {
+   "id": "040.04.017",
+   "type": "concepto",
+   "level": 2,
+   "q": "El glaucoma afecta primero a:",
+   "options": [
+    "La visión central, de forma brusca",
+    "La visión periférica, sin dolor",
+    "El color únicamente",
+    "La visión de cerca"
+   ],
+   "correct": 1,
+   "why": "La presión daña el nervio óptico y se pierden primero los bordes del campo visual.",
+   "whyNot": [
+    "La visión central se pierde más tarde.",
+    null,
+    "El color se altera en el daltonismo, no en el glaucoma.",
+    "La visión de cerca falla en la presbicia."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.018",
+   "type": "regla",
+   "level": 2,
+   "q": "¿Qué lentes de sol son más adecuadas para volar?",
+   "options": [
+    "Rojas, para aumentar el contraste",
+    "Polarizadas, siempre, para reducir reflejos",
+    "Muy oscuras y con montura gruesa",
+    "Neutras (grises) con filtro UV"
+   ],
+   "correct": 3,
+   "why": "Los filtros neutros no alteran los colores de las luces y los instrumentos.",
+   "whyNot": [
+    "Alteran los colores.",
+    "Las polarizadas pueden ocultar pantallas.",
+    "Reducen el campo y la visibilidad.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.04.019",
+   "type": "regla",
+   "level": 1,
+   "q": "Si el certificado médico exige lentes correctoras, el piloto debe:",
+   "options": [
+    "Llevarlas puestas en vuelo y tener un par de repuesto",
+    "Llevarlas solo de noche",
+    "Quitárselas en aproximación",
+    "Usarlas solo para leer"
+   ],
+   "correct": 0,
+   "why": "Es una condición del certificado médico y se debe llevar siempre un repuesto accesible.",
+   "whyNot": [
+    null,
+    "La condición es durante todo el vuelo.",
+    "No son optativas durante la aproximación.",
+    "Es para toda la actividad de vuelo."
+   ],
+   "ref": "Part-MED"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.040.04.01",
+   "front": "Fóvea y bastones",
+   "back": "Fóvea: solo conos (detalle y color, visión central). Bastones: periferia, poca luz y movimiento"
+  },
+  {
+   "id": "c.040.04.02",
+   "front": "Visión nocturna",
+   "back": "Adaptación: unos 30 min; mirar 10° a 15° a un lado del objeto; la hipoxia la empeora desde 5000 ft"
+  },
+  {
+   "id": "c.040.04.03",
+   "front": "Exploración de tráfico",
+   "back": "Sectores de 10°-15°, al menos 1 s en cada uno; el rumbo de colisión se ve quieto y creciente"
+  },
+  {
+   "id": "c.040.04.04",
+   "front": "Miopía de campo vacío",
+   "back": "Sin referencias, el ojo enfoca a 1-2 m; mirar a un objeto lejano"
+  }
+ ]
+}

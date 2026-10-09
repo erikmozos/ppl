@@ -1,0 +1,403 @@
+{
+ "lesson": {
+  "title": "Procesamiento de la información: atención, percepción y memoria",
+  "summary": "Cómo el cerebro recibe, filtra y almacena información: modelo de procesamiento, atención selectiva y dividida, vigilancia, percepción y expectativas, y los tipos de memoria con sus límites.",
+  "objectives": [
+   "Describir el modelo de procesamiento de la información",
+   "Distinguir atención selectiva, dividida y sostenida (vigilancia)",
+   "Explicar cómo las expectativas condicionan la percepción",
+   "Describir la memoria sensorial, de trabajo, a largo plazo y motora, y sus límites",
+   "Aplicar técnicas para no sobrecargar la memoria en vuelo"
+  ],
+  "sections": [
+   {
+    "title": "Un modelo del procesamiento de la información",
+    "text": [
+     "Para volar necesitas captar información (instrumentos, vista exterior, radio), entenderla, decidir y actuar. El cerebro lo hace por etapas. Los **sentidos** captan estímulos del entorno y los guardan unos instantes en la **memoria sensorial**. La **atención** filtra lo que se va a procesar y la **percepción** le da sentido comparándolo con lo que ya sabemos. El resultado pasa a la **memoria de trabajo**, donde se manipula mientras se decide, con ayuda de la **memoria a largo plazo**. Después se actúa, y el resultado de la acción vuelve al entorno y genera nueva información (**retroalimentación**).",
+     "Dos etapas tienen capacidad **limitada**: la atención y la memoria de trabajo. Son los cuellos de botella del sistema, y de ellos nacen buena parte de los errores humanos: lo que no se atiende no se procesa, y lo que no cabe en la memoria de trabajo se pierde."
+    ],
+    "figure": "svg:040-procesamiento",
+    "caption": "Modelo de procesamiento: la atención y la memoria de trabajo son los cuellos de botella."
+   },
+   {
+    "title": "Atención",
+    "text": [
+     "La **atención** es la capacidad de concentrar los recursos mentales en una parte de la información e ignorar el resto. Es limitada y tiene varias formas."
+    ],
+    "bullets": [
+     "**Atención selectiva**: elegir un estímulo e ignorar los demás (oír tu distintivo entre varios mensajes por radio). Tiene un coste: el estímulo no atendido, aunque sea importante, puede pasar inadvertido.",
+     "**Atención dividida**: atender varias tareas a la vez. En realidad, el cerebro **alterna** entre ellas rápidamente; se rinde bien solo si una es automática (por tener práctica). Con tareas nuevas o difíciles, dividir la atención produce errores y lentitud.",
+     "**Atención sostenida o vigilancia**: mantener la alerta sobre una fuente poco frecuente de señales durante mucho tiempo (vigilar el cielo o los instrumentos en un vuelo largo y tranquilo). La vigilancia **disminuye con el tiempo**, a menudo en cuestión de 20-30 minutos, sobre todo con tareas monótonas, fatiga y sueño.",
+     "**Atención focalizada o fijación**: concentración excesiva en un solo problema (la luz de aviso, un fallo de motor) que lleva a **ignorar otros datos críticos**, como la altitud o la velocidad. Es una trampa típica en emergencias."
+    ],
+    "note": {
+     "kind": "warn",
+     "text": "Las interrupciones (una llamada de radio, un pasajero que habla) son una causa clásica de olvidos: la tarea que se estaba haciendo queda a medias. Tras una interrupción, vuelve a comprobar la lista desde el último punto confirmado."
+    }
+   },
+   {
+    "title": "Percepción y expectativas",
+    "text": [
+     "La **percepción** no es un espejo: el cerebro interpreta los estímulos con lo que **espera encontrar**, según la experiencia, el contexto y las expectativas. Es útil (te permite leer un instrumento de un vistazo), pero tiene un riesgo: **ves y oyes lo que esperas**. Ejemplos clásicos: oír la autorización que esperabas aunque el controlador haya dicho otra cosa (errores de colación), confundir dos indicativos parecidos, no ver un tráfico en un sitio donde no esperas ninguno, o creer que la pista está libre porque siempre lo estaba.",
+     "La percepción también depende del **contraste, el tamaño, la distancia, la iluminación y la agudeza** de los sentidos, y de la **motivación y el estado emocional**: el estrés, el miedo o la prisa estrechan la atención y sesgan la interpretación. El antídoto es contrastar con **varias fuentes** (instrumentos y vista exterior), pedir confirmación en caso de duda y ser consciente de las propias expectativas."
+    ]
+   },
+   {
+    "title": "La memoria",
+    "text": [
+     "Hay varios tipos de memoria con distintas capacidades y duraciones."
+    ],
+    "table": {
+     "caption": "Tipos de memoria",
+     "head": [
+      "Memoria",
+      "Capacidad",
+      "Duración",
+      "Ejemplo en vuelo"
+     ],
+     "rows": [
+      [
+       "Sensorial",
+       "Grande",
+       "1 a 4 s (visual: unos 1 s; auditiva: unos 3-4 s)",
+       "El eco de un mensaje de radio que todavía puedes repetir"
+      ],
+      [
+       "De trabajo (corto plazo)",
+       "Unos 7 ± 2 elementos",
+       "10-20 s sin repasar",
+       "Recordar un rumbo y una frecuencia mientras los pones"
+      ],
+      [
+       "A largo plazo",
+       "Prácticamente ilimitada",
+       "Años o toda la vida",
+       "Los procedimientos, las normas, el conocimiento del avión"
+      ],
+      [
+       "Motora (procedimental)",
+       "Grande",
+       "Muy larga, automática",
+       "Mover los mandos al redondear, sin pensar"
+      ]
+     ],
+     "src": "Medicina aeronáutica"
+    },
+    "bullets": [
+     "La **memoria de trabajo** es la que usas para retener un dato mientras lo utilizas; es muy frágil. Las distracciones, el estrés y la prisa la vacían. Por eso **se anota** todo lo que importa (frecuencia, QNH, clearance) en vez de confiar en la cabeza.",
+     "Se amplía con el **agrupamiento** (*chunking*): «121,500» se retiene mejor como «uno-dos-uno, cinco». También se retiene mejor **repitiendo** el dato (repaso) y la colación en radio.",
+     "Para pasar a la memoria a largo plazo hace falta **repetición y significado**: lo que se comprende se recuerda mejor que lo memorizado sin entender. La memoria a largo plazo falla por **olvido** (decaimiento) e **interferencia** (informaciones parecidas que se mezclan).",
+     "La **memoria motora** hace que las habilidades practicadas se ejecuten sin pensar, pero también que, **bajo estrés**, se vuelva a hábitos antiguos (por ejemplo, buscar la palanca manual de flaps del PA-28 al subir a un C172, cuyos flaps son eléctricos). Si cambias de avión, repasa con la lista de chequeo."
+    ]
+   },
+   {
+    "title": "Aplicación práctica",
+    "text": [
+     "Quien conoce los límites del sistema los respeta. Se **planifica antes** del vuelo para no tener que decidir con prisa; se **anota** lo importante; se usan **listas de chequeo** para no depender de la memoria; se limita la carga de trabajo para no saturar la atención; se **repite en voz alta** y se pide **confirmación** de lo que no está claro; y se evitan las distracciones en las fases críticas (despegue y aproximación): es la regla de la **cabina estéril**. Y se desconfía de la propia seguridad: si algo no encaja, vale más pararse a pensar que apoyarse en la expectativa."
+    ]
+   }
+  ],
+  "numbers": [
+   "Memoria sensorial: 1 a 4 s",
+   "Memoria de trabajo: unos 7 ± 2 elementos durante unos 10-20 s sin repaso",
+   "Memoria a largo plazo: capacidad casi ilimitada",
+   "Atención: selectiva, dividida y sostenida (vigilancia); la vigilancia decae en 20-30 min",
+   "Se ve y se oye lo que se espera: sesgo de expectativa"
+  ],
+  "traps": [
+   "La atención dividida es en realidad una alternancia rápida; con tareas nuevas, falla.",
+   "La memoria de trabajo no guarda mucho tiempo: se anota.",
+   "Las interrupciones son una causa típica de olvido de pasos de la lista.",
+   "Bajo estrés, la memoria motora vuelve a hábitos antiguos.",
+   "La fijación (atención focalizada) en un problema hace olvidar pilotar el avión."
+  ],
+  "sources": [
+   {
+    "title": "ICAO Doc 9683, Manual de instrucción en factores humanos",
+    "url": "https://www.icao.int"
+   },
+   {
+    "title": "EASA, material de factores humanos (Part-FCL, 040)",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules"
+   }
+  ],
+  "id": "040.10",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "040.10.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "¿Qué dos etapas del procesamiento de la información tienen capacidad limitada?",
+   "options": [
+    "La memoria a largo plazo y la motora",
+    "La atención y la memoria de trabajo",
+    "Los sentidos y la visión",
+    "La percepción y la decisión únicamente"
+   ],
+   "correct": 1,
+   "why": "La atención y la memoria de trabajo son los cuellos de botella del sistema.",
+   "whyNot": [
+    "La memoria a largo plazo es muy amplia.",
+    null,
+    "Los sentidos captan mucha información.",
+    "La capacidad limitada está en atención y memoria de trabajo."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.10.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "La atención selectiva consiste en:",
+   "options": [
+    "Atender dos tareas simultáneas",
+    "Mantener alerta durante mucho tiempo",
+    "Olvidar algo",
+    "Concentrarse en un estímulo ignorando otros"
+   ],
+   "correct": 3,
+   "why": "Se filtra un estímulo entre muchos, con el riesgo de no notar otros relevantes.",
+   "whyNot": [
+    "Eso es atención dividida.",
+    "Eso es atención sostenida o vigilancia.",
+    "No es el olvido.",
+    null
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.10.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "La atención dividida funciona bien cuando:",
+   "options": [
+    "Una de las tareas está automatizada por la práctica",
+    "Ambas tareas son nuevas",
+    "Hay mucho estrés",
+    "Las dos tareas exigen decisiones complejas"
+   ],
+   "correct": 0,
+   "why": "Con una tarea automática se libera atención para la otra.",
+   "whyNot": [
+    null,
+    "Con dos tareas nuevas falla.",
+    "El estrés reduce la capacidad.",
+    "La carga excede la capacidad de atención."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.10.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "La vigilancia (atención sostenida) tiende a:",
+   "options": [
+    "Aumentar con las horas",
+    "Mantenerse constante",
+    "Disminuir con el tiempo en tareas monótonas",
+    "Ser mejor con fatiga"
+   ],
+   "correct": 2,
+   "why": "Tras unos 20-30 minutos de tarea monótona el rendimiento cae.",
+   "whyNot": [
+    "Disminuye, no aumenta.",
+    "No se mantiene constante.",
+    null,
+    "La fatiga la empeora."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.10.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "La fijación en un solo problema, ignorando otros datos importantes, es:",
+   "options": [
+    "Atención dividida",
+    "Memoria de trabajo",
+    "Atención focalizada o fijación",
+    "Percepción selectiva de color"
+   ],
+   "correct": 2,
+   "why": "Es la trampa de fijarse en un fallo y olvidar pilotar.",
+   "whyNot": [
+    "La dividida reparte la atención.",
+    "No es un tipo de memoria.",
+    null,
+    "No es un fenómeno de color."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.10.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "Oír la autorización que esperabas aunque el controlador haya dicho otra cosa es un ejemplo de:",
+   "options": [
+    "Sesgo de expectativa en la percepción",
+    "Memoria sensorial",
+    "Fatiga auditiva",
+    "Memoria motora"
+   ],
+   "correct": 0,
+   "why": "Se percibe lo que se espera.",
+   "whyNot": [
+    null,
+    "La memoria sensorial solo almacena brevemente.",
+    "La fatiga no explica por qué se oye lo esperado.",
+    "No es un acto motor."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.10.007",
+   "type": "regla",
+   "level": 2,
+   "q": "La capacidad aproximada de la memoria de trabajo es de:",
+   "options": [
+    "1 elemento",
+    "20 elementos",
+    "Ilimitada",
+    "7 ± 2 elementos"
+   ],
+   "correct": 3,
+   "why": "La memoria de trabajo es de pocos elementos y corta duración.",
+   "whyNot": [
+    "Es demasiado poco.",
+    "Es demasiado.",
+    "La memoria a largo plazo es la casi ilimitada.",
+    null
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.10.008",
+   "type": "regla",
+   "level": 2,
+   "q": "Sin repaso, la información de la memoria de trabajo dura aproximadamente:",
+   "options": [
+    "5 minutos",
+    "10 a 20 segundos",
+    "1 hora",
+    "Un día"
+   ],
+   "correct": 1,
+   "why": "Se pierde en pocos segundos si no se repasa o se anota.",
+   "whyNot": [
+    "Cinco minutos serían propios de una memoria más duradera que la de trabajo.",
+    null,
+    "Una hora corresponde ya a la memoria a largo plazo.",
+    "Un día corresponde a la memoria a largo plazo."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.10.009",
+   "type": "concepto",
+   "level": 1,
+   "q": "La mejor forma de no depender de la memoria de trabajo para una autorización de ATC es:",
+   "options": [
+    "Memorizarla repitiéndola mentalmente",
+    "Anotarla y colacionarla",
+    "Confiar en la costumbre",
+    "Pedir que la repitan solo si dudas mucho"
+   ],
+   "correct": 1,
+   "why": "La escritura y la colación reducen el error.",
+   "whyNot": [
+    "El repaso mental es frágil.",
+    null,
+    "La costumbre da expectativas, no datos.",
+    "Conviene colacionar siempre."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.10.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "Agrupar «uno-dos-uno-cinco-cero» en «uno-dos-uno, cinco-cero» ayuda porque:",
+   "options": [
+    "Aumenta la memoria sensorial",
+    "Elimina la necesidad de memoria",
+    "Acorta el mensaje",
+    "Reduce el número de elementos que hay que retener"
+   ],
+   "correct": 3,
+   "why": "Es el agrupamiento (chunking): menos elementos para una memoria limitada.",
+   "whyNot": [
+    "No actúa sobre la memoria sensorial.",
+    "Se sigue necesitando memoria.",
+    "No acorta el mensaje, lo organiza.",
+    null
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.10.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "La memoria motora:",
+   "options": [
+    "Permite ejecutar habilidades practicadas sin pensar, pero bajo estrés puede revertir a hábitos antiguos",
+    "No se ve afectada por el estrés",
+    "Dura solo unos segundos",
+    "Solo se activa en vuelo instrumental"
+   ],
+   "correct": 0,
+   "why": "Es automática, y por eso puede traicionar al cambiar de avión.",
+   "whyNot": [
+    null,
+    "Bajo estrés vuelve a lo aprendido antes.",
+    "Dura mucho tiempo.",
+    "No se limita al vuelo instrumental."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.10.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "Tras una interrupción mientras se ejecuta una lista de chequeo, lo prudente es:",
+   "options": [
+    "Continuar donde crees que ibas",
+    "Saltar la lista si has hecho el procedimiento muchas veces",
+    "Retomarla desde el último punto confirmado o repetirla",
+    "Hacerla de memoria"
+   ],
+   "correct": 2,
+   "why": "Las interrupciones son causa habitual de pasos omitidos.",
+   "whyNot": [
+    "Se puede errar el punto.",
+    "Es una de las defensas esenciales.",
+    null,
+    "La memoria es el eslabón débil."
+   ],
+   "ref": "ICAO Doc 9683"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.040.10.01",
+   "front": "Cuellos de botella",
+   "back": "Atención y memoria de trabajo: de capacidad limitada"
+  },
+  {
+   "id": "c.040.10.02",
+   "front": "Memoria de trabajo",
+   "back": "7 ± 2 elementos durante unos 10-20 s sin repaso: anotar y agrupar (chunking)"
+  },
+  {
+   "id": "c.040.10.03",
+   "front": "Sesgo de expectativa",
+   "back": "Se ve y se oye lo que se espera: pedir confirmación y contrastar fuentes"
+  },
+  {
+   "id": "c.040.10.04",
+   "front": "Atención",
+   "back": "Selectiva, dividida (alterna) y sostenida o vigilancia (decae en 20-30 min)"
+  }
+ ]
+}

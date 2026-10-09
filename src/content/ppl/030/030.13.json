@@ -1,0 +1,447 @@
+{
+  "lesson": {
+    "id": "030.13",
+    "title": "Seguimiento en vuelo",
+    "summary": "Cómo se controla la navegación en vuelo: identificar la posición, medir el error de derrota y corregirlo con la regla de 1 en 60, revisar la velocidad respecto al suelo y la hora de llegada, vigilar el combustible y decidir cuándo replanificar o desviar.",
+    "objectives": [
+      "Comparar la posición real con el navlog en cada punto de control",
+      "Calcular el error de derrota, el ángulo de convergencia y la corrección total con la regla de 1 en 60",
+      "Recalcular la velocidad respecto al suelo, el viento y la hora estimada de llegada",
+      "Vigilar el combustible y decidir con tiempo un desvío o una escala",
+      "Actuar con método si no sabes dónde estás"
+    ],
+    "sections": [
+      {
+        "title": "Navegar es comparar lo previsto con lo real",
+        "text": [
+          "El navlog te dice dónde deberías estar y cuándo. En vuelo haces lo mismo que en tierra pero al revés: **observas dónde estás** y lo comparas con el plan. En cada punto de control anotas la **hora real de paso** (ATO), la **posición** respecto a la derrota y el **combustible** que queda, y con eso revisas tres cosas: la derrota, el tiempo y el combustible. Un piloto que no las revisa descubre que se ha desviado cuando ya es difícil corregirlo.",
+          "El método tiene tres reglas. **Una**: sitúate con referencias del terreno (puntos de control, elementos lineales) y confírmalas con la brújula o el VOR, no al revés. **Dos**: anota la hora al pasar cada punto, aunque sea en una tablilla. **Tres**: si el resultado no coincide, **corrige ya**: un error pequeño se arregla con pocos grados; uno grande, con maniobras."
+        ]
+      },
+      {
+        "title": "Error de derrota y regla de 1 en 60",
+        "text": [
+          "La **regla de 1 en 60** dice que, a 60 NM de distancia, 1° de ángulo equivale a 1 NM de desvío lateral. Con ella puedes calcular el ángulo con el que te has desviado y el que necesitas para volver sin trigonometría:"
+        ],
+        "formulas": [
+          {
+            "f": "Error de derrota (°) = distancia fuera de la derrota (NM) / distancia recorrida (NM) × 60",
+            "note": "Cuánto te has desviado, visto desde la salida"
+          },
+          {
+            "f": "Ángulo de convergencia (°) = distancia fuera de la derrota (NM) / distancia por recorrer (NM) × 60",
+            "note": "Cuánto debes girar para pasar de la derrota real al destino"
+          },
+          {
+            "f": "Corrección total = error de derrota + ángulo de convergencia",
+            "note": "Se corrige hacia el lado de la derrota prevista"
+          }
+        ],
+        "examples": [
+          {
+            "q": "A 30 NM de la salida estás 3 NM a la derecha de la derrota. Quedan 60 NM. ¿Qué corrección?",
+            "a": "Error de derrota: 3/30 × 60 = 6°. Convergencia: 3/60 × 60 = 3°. Corrección total: 6 + 3 = 9°, **a la izquierda** (hacia la derrota). Si solo corriges 6° no vuelves a la derrota, solo dejas de alejarte: sigues en paralelo a 3 NM."
+          }
+        ],
+        "figure": "svg:030-seguimiento",
+        "caption": "Estás a la derecha de la derrota. Corriges el error (6°) y además cierras hacia el destino (3°): 9° a la izquierda en total."
+      },
+      {
+        "title": "Variantes de la corrección",
+        "bullets": [
+          "**Corrección doble** (para volver a la derrota en la misma distancia): gira el doble del error de derrota (12° en el ejemplo anterior) durante la mitad del recorrido restante y vuelve al rumbo planeado (la «corrección en paralelo»).",
+          "**Corrección directa al destino**: gira el error de derrota más el de convergencia, como en el ejemplo, y vuela el nuevo rumbo hasta el destino.",
+          "Con viento, el rumbo de corrección se suma o resta al rumbo que ya llevas (que ya incluye el WCA previsto): un error sostenido en la misma dirección indica que el viento real no es el previsto.",
+          "Si vas a pasar sobre un espacio restringido o sobre una zona de otro espacio aéreo, corrige antes de entrar."
+        ],
+        "figure": "calc:1in60"
+      },
+      {
+        "title": "Control del tiempo y de la velocidad respecto al suelo",
+        "text": [
+          "Con las horas de paso de dos puntos de control, calculas la **GS real**: GS = distancia entre puntos / tiempo entre ellos. Si es menor que la prevista, el viento de cara es mayor que el estimado (o tu TAS es menor); si es mayor, al contrario. Con la nueva GS **recalculas la hora estimada de llegada**: ETA = hora actual + distancia restante / GS. Y como el combustible depende del tiempo, también recalculas cuánto te quedará al aterrizar."
+        ],
+        "examples": [
+          {
+            "q": "Pasas el punto A a las 10:00 y el B a las 10:18; entre ambos hay 36 NM. ¿GS real?",
+            "a": "36 NM en 18 min: 36/18 × 60 = 120 kt."
+          },
+          {
+            "q": "Pasas un punto a las 10:15 y quedan 60 NM con GS de 110 kt. ¿ETA?",
+            "a": "60/110 = 0,545 h = 32,7 min: ETA 10:48."
+          }
+        ]
+      },
+      {
+        "title": "Vigilar el combustible",
+        "text": [
+          "En cada punto de control comprueba el combustible. Anota el que **debería** quedar según el plan y el que **queda de verdad** (por tiempo y por indicador) y la **hora del último cambio de depósito**. Después, con la ETA actualizada, calcula con cuánto aterrizarás: combustible restante menos consumo hasta el destino. Debe quedar **por encima de la reserva final** con margen.",
+          "Si el resultado se acerca a la reserva final o la pasa, la decisión es **desviar o aterrizar antes**, no seguir confiando. Tocar la reserva final obliga a notificar **MINIMUM FUEL** o declarar **MAYDAY FUEL** (bloque 070.02); lo prudente es no llegar nunca a ese punto."
+        ],
+        "examples": [
+          {
+            "q": "A las 10:20 quedan 62 l, el consumo es de 26 l/h y faltan 50 min. ¿Con cuánto combustible aterrizas?",
+            "a": "50 min: 26 × 50/60 = 21,7 l. Quedan 62 − 21,7 ≈ 40,3 l, por encima de una reserva final de 11 l."
+          }
+        ]
+      },
+      {
+        "title": "Replanificar y desviar",
+        "text": [
+          "Replanificar es **tomar una decisión a tiempo**, no esperar a ver. Motivos habituales: meteorología peor que la prevista, viento que te frena, un espacio aéreo que se cierra, combustible insuficiente o desorientación. La regla es decidir **mientras tienes opciones**, es decir con margen de combustible, de luz y de tiempo.",
+          "Para desviar: elige un aeródromo (el alternativo del navlog u otro más cercano), mide en la carta su rumbo y distancia, convierte a rumbo magnético, calcula el tiempo con la GS actual, comprueba el combustible, informa al ATS (cambio de ruta o de destino) y gira. Haz un nuevo navlog simplificado: rumbo, distancia, tiempo, combustible."
+        ],
+        "note": {
+          "kind": "tip",
+          "text": "Pon un criterio de decisión antes de despegar: por ejemplo, desviar si el techo baja de cierta altitud o si el combustible previsto al aterrizar baja de una cifra. Decidir en tierra es más fácil que hacerlo con presión en el aire."
+        }
+      },
+      {
+        "title": "Si no sabes dónde estás",
+        "text": [
+          "Perderse es un fallo de seguimiento, y se resuelve con método. **Mantén el control del avión** (rumbo, altitud), no cambies de dirección al azar. **Piensa**: ¿cuánto tiempo has volado desde el último punto cierto, a qué rumbo y con qué velocidad? Con eso dibuja un círculo de incertidumbre en la carta. **Busca** elementos lineales grandes (costa, autopista) y ayudas de navegación (VOR, ADF, GPS como apoyo). **Pide ayuda temprano**: llama al servicio de información de vuelo o por la frecuencia de emergencia **121,500 MHz** con PAN PAN; no esperes a quedarte sin combustible. Si el combustible baja, el plan es aterrizar en el primer sitio razonable, no seguir buscando."
+        ],
+        "note": {
+          "kind": "es",
+          "text": "En España, el servicio de información de vuelo y el de alerta atienden en VHF; ante dudas, 121,500 MHz es la frecuencia de emergencia y también de escucha en la mayoría de aeródromos."
+        },
+        "verify": true
+      },
+      {
+        "title": "Punto de no retorno",
+        "text": [
+          "El **punto de no retorno** (PNR) es el último punto desde el que puedes volver al aeródromo de salida con el combustible restante. Se calcula con la **autonomía de seguridad E** (combustible utilizable menos la reserva final, en horas) y las dos velocidades respecto al suelo: GS de ida (O) y de vuelta (H). Tiempo hasta el PNR: **T = E × H / (O + H)**."
+        ],
+        "examples": [
+          {
+            "q": "Autonomía de seguridad 4 h, GS de ida 100 kt y de vuelta 140 kt. ¿Cuánto tiempo hasta el PNR?",
+            "a": "T = 4 × 140 / (100 + 140) = 2,33 h = 2 h 20 min. Distancia: 2,33 × 100 = 233 NM."
+          }
+        ]
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Corregir solo el error de derrota y no el ángulo de convergencia.",
+          "Medir el error con la distancia equivocada (usar la recorrida en el denominador de la convergencia).",
+          "Calcular la nueva ETA con la TAS y no con la GS.",
+          "No anotar la hora de paso y no poder recalcular la GS.",
+          "Dejar la decisión de desviar para cuando la reserva final ya se ha tocado."
+        ]
+      }
+    ],
+    "numbers": [
+      "1 en 60: a 60 NM, 1° ≈ 1 NM",
+      "Error de derrota = desvío / distancia recorrida × 60",
+      "Convergencia = desvío / distancia por recorrer × 60",
+      "Corrección total = error de derrota + convergencia",
+      "GS real = distancia entre puntos / tiempo; ETA = hora actual + distancia restante / GS",
+      "PNR: T = E × H / (O + H)",
+      "Frecuencia de emergencia: 121,500 MHz"
+    ],
+    "traps": [
+      "Corregir solo el error de derrota deja al avión paralelo a la derrota, no vuelve a ella.",
+      "La ETA se recalcula con la GS, no con la TAS.",
+      "Decidir el desvío antes de que el combustible alcance la reserva final.",
+      "El indicador de combustible no basta: contrasta con el tiempo."
+    ],
+    "sources": [
+      {
+        "title": "Reglamento (UE) 923/2012 (SERA), Easy Access Rules",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "ENAIRE, AIP España (GEN 1.7, ENR 1.10, AD)",
+        "url": "https://aip.enaire.es"
+      },
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 16 (navegación)",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "030.13.001",
+      "type": "calculo",
+      "level": 1,
+      "q": "A 40 NM de la salida estás 4 NM a la derecha de la derrota. El error de derrota, con la regla de 1 en 60, es de:",
+      "options": [
+        "10°",
+        "6°",
+        "4°",
+        "3°"
+      ],
+      "correct": 1,
+      "why": "Error de derrota = 4/40 × 60 = 6°.",
+      "whyNot": [
+        "10° resulta de omitir el 60.",
+        null,
+        "4° es la distancia en NM.",
+        "3° es el ángulo de convergencia con 80 NM por recorrer."
+      ],
+      "ref": "Regla 1 en 60"
+    },
+    {
+      "id": "030.13.002",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con el mismo desvío de 4 NM y 80 NM por recorrer, el ángulo de convergencia es de:",
+      "options": [
+        "6°",
+        "4°",
+        "2°",
+        "3°"
+      ],
+      "correct": 3,
+      "why": "Convergencia = 4/80 × 60 = 3°.",
+      "whyNot": [
+        "6° es el error de derrota.",
+        "4° es la distancia lateral.",
+        "2° no sale de la fórmula.",
+        null
+      ],
+      "ref": "Regla 1 en 60"
+    },
+    {
+      "id": "030.13.003",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con un error de derrota de 6° y una convergencia de 3°, estando a la derecha de la derrota, la corrección total es de:",
+      "options": [
+        "9° a la izquierda",
+        "3° a la izquierda",
+        "9° a la derecha",
+        "6° a la izquierda"
+      ],
+      "correct": 0,
+      "why": "6 + 3 = 9°, hacia la derrota prevista, que está a la izquierda.",
+      "whyNot": [
+        null,
+        "3° solo cerraría hacia el destino.",
+        "A la derecha te alejarías.",
+        "6° solo anula el error de derrota."
+      ],
+      "ref": "Regla 1 en 60"
+    },
+    {
+      "id": "030.13.004",
+      "type": "lectura",
+      "level": 2,
+      "q": "En la figura de seguimiento, el avión está a la derecha de la derrota. Para volver, hay que girar:",
+      "figure": "svg:030-seguimiento",
+      "options": [
+        "A la izquierda 6°",
+        "A la derecha 9°",
+        "A la izquierda 9° (6° + 3°)",
+        "A la izquierda 3°"
+      ],
+      "correct": 2,
+      "why": "Se corrige el error de derrota (6°) y la convergencia (3°) hacia la derrota.",
+      "whyNot": [
+        "6° solo mantiene el paralelismo.",
+        "A la derecha te alejas.",
+        null,
+        "3° no cancela el error acumulado."
+      ],
+      "ref": "Figura 030-seguimiento"
+    },
+    {
+      "id": "030.13.005",
+      "type": "calculo",
+      "level": 2,
+      "q": "Pasas el punto A a las 10:00 y el B a las 10:18, a 36 NM. La GS real es de:",
+      "options": [
+        "108 kt",
+        "133 kt",
+        "80 kt",
+        "120 kt"
+      ],
+      "correct": 3,
+      "why": "36 NM en 18 min: 36 × 60 / 18 = 120 kt.",
+      "whyNot": [
+        "108 kt es la TAS del navlog.",
+        "133 kt resulta de usar 16,25 min.",
+        "80 kt resulta de usar 27 min.",
+        null
+      ],
+      "ref": "Control del tiempo"
+    },
+    {
+      "id": "030.13.006",
+      "type": "calculo",
+      "level": 2,
+      "q": "Pasas un punto a las 10:15; quedan 60 NM y la GS es de 110 kt. La hora estimada de llegada es:",
+      "options": [
+        "10:48",
+        "10:45",
+        "10:50",
+        "10:35"
+      ],
+      "correct": 0,
+      "why": "60/110 h = 32,7 min; 10:15 + 32,7 min = 10:48.",
+      "whyNot": [
+        null,
+        "10:45 resulta de 30 min.",
+        "10:50 resulta de 35 min.",
+        "10:35 resulta de 20 min."
+      ],
+      "ref": "Control del tiempo"
+    },
+    {
+      "id": "030.13.007",
+      "type": "calculo",
+      "level": 2,
+      "q": "Quedan 62 l a las 10:20, consumo 26 l/h y faltan 50 min. El combustible al aterrizar es de aproximadamente:",
+      "options": [
+        "36 l",
+        "62 l",
+        "40 l",
+        "52 l"
+      ],
+      "correct": 2,
+      "why": "26 × 50/60 = 21,7 l; 62 − 21,7 = 40,3 l.",
+      "whyNot": [
+        "36 l resta 26 l.",
+        "62 l ignora el consumo.",
+        null,
+        "52 l resta 10 l."
+      ],
+      "ref": "Combustible en vuelo"
+    },
+    {
+      "id": "030.13.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si tu GS real es claramente menor que la prevista, debes:",
+      "options": [
+        "Seguir con el combustible del navlog sin cambios",
+        "Recalcular la ETA y el combustible al aterrizar con la GS real",
+        "Aumentar la altitud sin recalcular",
+        "Ignorar la diferencia si la reserva final es de 30 min"
+      ],
+      "correct": 1,
+      "why": "La GS menor alarga el tiempo y consume más combustible: hay que recalcular.",
+      "whyNot": [
+        "Los consumos reales cambian.",
+        null,
+        "Subir no resuelve el problema del tiempo.",
+        "La reserva final no se gasta."
+      ],
+      "ref": "Navegación en vuelo"
+    },
+    {
+      "id": "030.13.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una buena decisión de desviar por combustible se toma:",
+      "options": [
+        "Cuando el indicador llega a cero",
+        "Con margen sobre la reserva final y mientras hay opciones",
+        "Cuando se enciende el aviso de bajo combustible",
+        "Después de tocar la reserva final"
+      ],
+      "correct": 1,
+      "why": "Hay que decidir mientras haya margen de combustible, luz y tiempo.",
+      "whyNot": [
+        "Es demasiado tarde.",
+        null,
+        "Es demasiado tarde.",
+        "Es una situación de emergencia ya."
+      ],
+      "ref": "Gestión del combustible"
+    },
+    {
+      "id": "030.13.010",
+      "type": "concepto",
+      "level": 1,
+      "q": "Si no sabes dónde estás, ¿qué haces primero?",
+      "options": [
+        "Cambiar de rumbo al azar",
+        "Descender hasta el suelo",
+        "Apagar la radio",
+        "Mantener el control del avión y pensar con el tiempo, rumbo y velocidad desde el último punto cierto"
+      ],
+      "correct": 3,
+      "why": "Se mantiene la estima y se reduce la incertidumbre antes de decidir.",
+      "whyNot": [
+        "Aumenta la desorientación.",
+        "No es una acción segura.",
+        "Hay que usar la radio para pedir ayuda.",
+        null
+      ],
+      "ref": "Procedimiento si perdido"
+    },
+    {
+      "id": "030.13.011",
+      "type": "calculo",
+      "level": 3,
+      "q": "Autonomía de seguridad de 4 h, GS de ida 100 kt y de vuelta 140 kt. El tiempo hasta el punto de no retorno es:",
+      "options": [
+        "2 h 20 min",
+        "2 h 00 min",
+        "1 h 40 min",
+        "2 h 50 min"
+      ],
+      "correct": 0,
+      "why": "T = E × H / (O + H) = 4 × 140 / 240 = 2,33 h = 2 h 20 min.",
+      "whyNot": [
+        null,
+        "2 h resultaría con velocidades iguales.",
+        "1 h 40 min no corresponde.",
+        "2 h 50 min tampoco."
+      ],
+      "ref": "Planificación avanzada"
+    },
+    {
+      "id": "030.13.012",
+      "type": "regla",
+      "level": 1,
+      "es": true,
+      "q": "Frecuencia de emergencia de VHF para pedir ayuda cuando estás desorientado:",
+      "options": [
+        "118,000 MHz",
+        "123,450 MHz",
+        "121,500 MHz",
+        "243,0 MHz"
+      ],
+      "correct": 2,
+      "why": "121,500 MHz es la frecuencia internacional de emergencia en VHF.",
+      "whyNot": [
+        "118,000 es el inicio de la banda.",
+        "123,450 es de aire a aire.",
+        null,
+        "243,0 MHz es UHF."
+      ],
+      "ref": "Anexo 10"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.030.13.01",
+      "front": "Regla de 1 en 60: errores de derrota",
+      "back": "Error = desvío / recorrido × 60; convergencia = desvío / por recorrer × 60; corrección = suma"
+    },
+    {
+      "id": "c.030.13.02",
+      "front": "GS real y ETA",
+      "back": "GS = distancia entre puntos / tiempo; ETA = hora + distancia restante / GS"
+    },
+    {
+      "id": "c.030.13.03",
+      "front": "Decisión de desviar",
+      "back": "Con margen sobre la reserva final y mientras haya opciones; no esperar a tocar la reserva"
+    }
+  ]
+}

@@ -1,0 +1,484 @@
+{
+ "lesson": {
+  "title": "Vientos locales",
+  "summary": "Brisas de mar y tierra, vientos anabáticos y catabáticos, de valle y de montaña, canalización por efecto Venturi y efecto Foehn; los vientos regionales de España (Levante, Poniente, Tramontana, Cierzo, Mistral, Terral y Galerna) y la baja térmica.",
+  "objectives": [
+   "Explicar por qué se forman las brisas y los vientos de ladera, de valle y de montaña y cuándo soplan",
+   "Describir el efecto Venturi y dónde acelera el viento en España",
+   "Calcular la temperatura de un efecto Foehn con los gradientes seco y saturado",
+   "Reconocer los vientos regionales de España por su dirección, su lugar y su carácter",
+   "Prever el tiempo y las precauciones de pilotaje asociados a cada viento local"
+  ],
+  "sections": [
+   {
+    "title": "Por qué hay vientos locales",
+    "text": [
+     "Todo viento nace de una diferencia de presión, y el suelo desigual la crea a pequeña escala: la tierra se calienta y se enfría más deprisa que el agua; una ladera orientada al sol más que una a la sombra; un valle estrecho concentra el flujo. Estos **vientos locales** se superponen al viento general (el gradiente) y pueden duplicar su velocidad o girarlo por completo. Importan al pilotar porque afectan justo a donde operas: el aeródromo, el circuito, la pista y el mar o el valle que sobrevuelas.",
+     "Funcionan mejor cuando el viento general es flojo: con gradiente fuerte (más de 15 a 20 kt) tapan o anulan a los locales."
+    ]
+   },
+   {
+    "title": "Brisas de mar y de tierra",
+    "text": [
+     "De **día**, la tierra se calienta más que el mar. El aire sobre la tierra sube y baja la presión en superficie; el aire del mar, más fresco y pesado, se desplaza a ocupar su lugar. Es la **brisa marina**: sopla del mar a tierra. Empieza a media mañana, alcanza su máximo a primeras horas de la tarde (de unos 10 a 20 kt) y cesa al atardecer. Puede penetrar decenas de kilómetros tierra adentro y tiene un frente (frente de brisa), a menudo marcado por una línea de cúmulos y un cambio brusco de viento, y por un descenso de temperatura. Más arriba, un flujo de retorno sopla del interior al mar.",
+     "De **noche** ocurre lo contrario: la tierra se enfría más rápido que el mar, el aire sobre el mar es más cálido y sube, y el aire de tierra, más frío, se desliza hacia el mar. La **brisa terrestre** es más débil que la marina (unos 5 a 10 kt) y de poca extensión."
+    ],
+    "table": {
+     "caption": "Brisas costeras",
+     "head": [
+      "Brisa",
+      "Cuándo",
+      "Sentido",
+      "Intensidad típica"
+     ],
+     "rows": [
+      [
+       "Marina",
+       "De día, máxima por la tarde",
+       "Del mar a tierra",
+       "10–20 kt"
+      ],
+      [
+       "Terrestre",
+       "De noche, hasta primeras horas de la mañana",
+       "De tierra a mar",
+       "5–10 kt, más débil"
+      ]
+     ],
+     "verify": true
+    },
+    "note": {
+     "kind": "es",
+     "text": "En el litoral mediterráneo y en Baleares la brisa marina es la regla en verano y un componente del circuito: la pista orientada hacia el mar puede tener viento de cara por la tarde y calma o viento flojo de tierra por la mañana. Los cambios de pista a lo largo del día son habituales."
+    }
+   },
+   {
+    "title": "Anabáticos, catabáticos, viento de valle y de montaña",
+    "text": [
+     "Una ladera que recibe el sol calienta el aire junto a ella, y este sube por la pendiente: es un viento **anabático**, de ascenso, que sopla de día. De noche, la ladera se enfría por radiación, el aire que la toca se enfría, se vuelve más denso y baja: viento **catabático**, de descenso, que en laderas de nieve o hielo es fuerte y se mantiene también de día.",
+     "A mayor escala, el calentamiento del suelo del valle durante el día produce el **viento de valle**, que sube por el valle hacia la montaña, y de noche el **viento de montaña** baja de las cumbres hacia el valle. El aire frío que se acumula en el fondo puede dar inversiones y niebla de valle por la mañana."
+    ],
+    "bullets": [
+     "Anabático y de valle: de día, aire ascendente (útil para vuelo a vela, turbulento para el avión).",
+     "Catabático y de montaña: de noche, aire descendente que se acumula en las zonas bajas.",
+     "Un aeródromo en un valle puede cambiar de pista a lo largo del día por esta razón."
+    ]
+   },
+   {
+    "title": "Canalización y efecto Venturi",
+    "text": [
+     "Cuando el aire fluye por un estrechamiento (un paso entre montañas, un cañón, un estrecho), la velocidad aumenta y la presión baja: es el **efecto Venturi**. El mismo efecto acelera el viento entre edificios, entre hangares y a lo largo de las pistas flanqueadas por obstáculos. El resultado es un viento más fuerte y racheado que el del entorno y que sigue la dirección del paso, no la general.",
+     "En España, el ejemplo clásico es el **Estrecho de Gibraltar**, donde el Levante y el Poniente se aceleran al pasar entre Europa y África, y el **valle del Ebro**, que canaliza el cierzo. Fuera de la península, el valle del Ródano hace lo mismo con el mistral."
+    ]
+   },
+   {
+    "title": "Efecto Foehn",
+    "text": [
+     "Cuando el viento obliga al aire húmedo a **remontar una montaña**, el aire se enfría. Mientras no está saturado lo hace a razón de **3 °C por cada 1000 ft** (gradiente adiabático seco); desde que alcanza la saturación (base de la nube, unos 400 ft por cada grado de diferencia entre temperatura y punto de rocío) se enfría solo unos **1,8 °C por 1000 ft** (gradiente saturado), porque la condensación libera calor latente. Si llueve en la ladera de barlovento, el aire pierde agua.",
+     "Al **descender por sotavento**, el aire ya seco se calienta a 3 °C por 1000 ft, así que llega al valle **más cálido y más seco** que el aire de partida a la misma altura. Es el viento tipo Foehn: cálido, seco, racheado, con la nube de barlovento convertida en una pared en la cresta («muro del Foehn») y cielo despejado a sotavento."
+    ],
+    "examples": [
+     {
+      "q": "Aire a nivel del mar a 20 °C con punto de rocío 14 °C sube por una montaña de 8000 ft y baja por el otro lado hasta el nivel del mar. ¿Con qué temperatura llega?",
+      "a": "1) Base de nube: (20 − 14) × 400 = 2400 ft. 2) Hasta la base se enfría a 3 °C/1000 ft: 2,4 × 3 = 7,2 °C → 12,8 °C. 3) De 2400 a 8000 ft (5600 ft) se enfría a 1,8 °C/1000 ft: 5,6 × 1,8 ≈ 10,1 °C → unos 2,7 °C en la cima. 4) Al bajar 8000 ft se calienta a 3 °C/1000 ft: +24 °C → unos 26,7 °C. Llega unos 6–7 °C más cálido que al empezar."
+     }
+    ]
+   },
+   {
+    "title": "Vientos locales de España",
+    "text": [
+     "Estos nombres salen en el examen asociados a su dirección y su región. Aprende la pareja nombre–lugar–dirección–carácter:"
+    ],
+    "figure": "svg:050-vientos-espana",
+    "caption": "Esquema (no a escala) de los vientos locales de España.",
+    "table": {
+     "caption": "Vientos regionales de España",
+     "head": [
+      "Viento",
+      "Dirección",
+      "Dónde",
+      "Carácter"
+     ],
+     "rows": [
+      [
+       "Levante",
+       "E (ESE)",
+       "Estrecho de Gibraltar, golfo de Cádiz",
+       "Húmedo, con nube baja y poca visibilidad; acelerado por Venturi"
+      ],
+      [
+       "Poniente",
+       "O (WSW)",
+       "Estrecho de Gibraltar, golfo de Cádiz; también el interior mediterráneo",
+       "En el Estrecho es fresco y despejado; en el Mediterráneo es seco y cálido de verano"
+      ],
+      [
+       "Tramontana",
+       "N, NNO",
+       "Ampurdán (Girona), Cataluña norte y Baleares",
+       "Frío, seco, fuerte y racheado; cielo despejado"
+      ],
+      [
+       "Cierzo",
+       "NO",
+       "Valle del Ebro (Zaragoza, La Rioja, Navarra)",
+       "Frío, seco y fuerte; canalizado por el valle; frecuente en invierno y primavera"
+      ],
+      [
+       "Mistral",
+       "NO, NNO",
+       "Valle del Ródano (Francia) y golfo de León",
+       "Frío, muy fuerte; llega a Baleares y Cataluña como tramontana"
+      ],
+      [
+       "Terral",
+       "N, NO",
+       "Costa de Málaga",
+       "Cálido y seco, efecto Foehn al bajar de las montañas hacia la costa; ocurre en verano"
+      ],
+      [
+       "Galerna",
+       "NO, N",
+       "Costa cantábrica",
+       "Cambio brusco de viento tras un día muy cálido, con rachas fuertes y descenso de temperatura; se da en primavera y verano"
+      ]
+     ]
+    },
+    "bullets": [
+     "**Tramontana, Cierzo y Mistral** son de la misma familia: aire frío del norte o noroeste canalizado y acelerado entre montañas hacia una baja en el Mediterráneo.",
+     "**Levante y Poniente** se nombran por de dónde soplan: Levante del este (donde sale el sol), Poniente del oeste (donde se pone). Con Levante, el Estrecho se cubre de nube baja; con Poniente, despeja.",
+     "**Terral** también es el nombre general de la brisa nocturna de tierra, pero en el examen se refiere al viento cálido y seco de Málaga.",
+     "**Galerna**: aire marino fresco del Cantábrico que desplaza bruscamente al aire caliente de la costa. El primer aviso es un cambio brusco del viento, un descenso de temperatura, nubes bajas y mar gruesa."
+    ],
+    "verify": true
+   },
+   {
+    "title": "Baja térmica e interacción con el relieve",
+    "text": [
+     "En verano, el interior de la península se calienta tanto que se forma una **baja térmica ibérica** en superficie: no es una borrasca con frentes, sino una depresión poco profunda, producida por el calor. Atrae las brisas del mar hacia el interior, con convergencia que refuerza la convección, y favorece tormentas de tarde en el sistema Ibérico, el Central y los Pirineos. Se verá con más detalle en el bloque de sistemas de presión."
+    ],
+    "note": {
+     "kind": "warn",
+     "text": "Con viento fuerte sobre un relieve, el aire se acelera sobre las crestas y se vuelve turbulento a sotavento. Si el viento local supera los límites de viento cruzado del avión (el valor demostrado figura en el POH del avión), cambia de pista o de aeródromo."
+    }
+   }
+  ],
+  "numbers": [
+   "Gradiente adiabático seco: 3 °C por 1000 ft",
+   "Gradiente adiabático saturado: unos 1,8 °C por 1000 ft",
+   "Base de las nubes ≈ (T − Td) × 400 ft",
+   "Brisa marina: de día, del mar a tierra; terrestre: de noche, de tierra a mar",
+   "Anabático: ladera soleada, de día, ascendente; catabático: de noche, descendente",
+   "Efecto Foehn: el aire llega al valle de sotavento más cálido y seco que al ascender",
+   "Levante (E) y Poniente (O) en el Estrecho; Tramontana (N) en Cataluña; Cierzo (NO) en el Ebro; Mistral en el Ródano; Terral (N) en Málaga; Galerna en el Cantábrico"
+  ],
+  "traps": [
+   "Invertir el sentido de la brisa: de día la brisa es marina (del mar a tierra); de noche, terrestre.",
+   "Usar 3 °C por 1000 ft tanto en seco como en saturado: en saturado es unos 1,8 °C.",
+   "Decir que el Foehn llega frío: baja a sotavento calentándose a 3 °C por 1000 ft y llega más cálido y seco.",
+   "Confundir Levante con Poniente: el nombre indica de dónde sopla, no hacia dónde.",
+   "Asociar la Galerna a una situación de invierno: se da en primavera y verano, tras días de calor."
+  ],
+  "sources": [
+   {
+    "title": "AEMET, Apuntes de meteorología aeronáutica",
+    "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
+   },
+   {
+    "title": "AEMET, Glosario meteorológico (Cierzo, Tramontana, Terral, Galerna, Levante, Poniente)",
+    "url": "https://www.aemet.es/es/conocermas/recursos_en_linea/glosario"
+   },
+   {
+    "title": "FAA-H-8083-28, Aviation Weather Handbook (vientos locales)",
+    "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+   }
+  ],
+  "spain": [
+   "El Estrecho de Gibraltar canaliza Levante (E) y Poniente (O) por efecto Venturi; con Levante la visibilidad se reduce por nube baja.",
+   "Tramontana en el Ampurdán y Baleares, Cierzo en el valle del Ebro y Mistral en el Ródano son del mismo origen: aire frío del norte canalizado hacia el Mediterráneo.",
+   "El Terral de Málaga y la Galerna del Cantábrico son específicos de España; revisa el parte (AEMET) cuando se anuncien."
+  ],
+  "id": "050.06",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "050.06.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "La brisa marina:",
+   "options": [
+    "Sopla de día del mar hacia la tierra y es máxima por la tarde",
+    "Sopla de día de la tierra hacia el mar y es máxima al mediodía",
+    "Sopla de noche del mar hacia la tierra y es máxima de madrugada",
+    "Sopla de noche de la tierra hacia el mar y es máxima por la tarde"
+   ],
+   "correct": 0,
+   "why": "De día la tierra se calienta más que el mar, el aire sube sobre la tierra y el aire fresco del mar la sustituye: brisa marina, máxima a primeras horas de la tarde.",
+   "whyNot": [
+    null,
+    "Eso sería una brisa terrestre y no sucede de día.",
+    "La brisa marina no sopla de noche.",
+    "La brisa terrestre es de noche, pero no es máxima por la tarde."
+   ],
+   "ref": "AEMET, Apuntes de meteorología aeronáutica"
+  },
+  {
+   "id": "050.06.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "Un viento catabático es:",
+   "options": [
+    "El que sube por una ladera calentada por el sol",
+    "El que baja por una ladera enfriada, normalmente de noche",
+    "El que sopla de la costa hacia el interior de día",
+    "El que desciende a sotavento y llega cálido y seco"
+   ],
+   "correct": 1,
+   "why": "El aire en contacto con una ladera fría se enfría, se hace más denso y baja: catabático (de descenso).",
+   "whyNot": [
+    "Eso es un viento anabático.",
+    null,
+    "Eso es una brisa marina.",
+    "Eso es un efecto Foehn, que no depende del enfriamiento de la ladera."
+   ],
+   "ref": "AEMET, Apuntes de meteorología aeronáutica"
+  },
+  {
+   "id": "050.06.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "El efecto Venturi sobre un viento canalizado entre dos montañas produce:",
+   "options": [
+    "Aumento de velocidad y aumento de la presión",
+    "Disminución de velocidad y aumento de la presión",
+    "Aumento de velocidad y descenso de la presión",
+    "Disminución de velocidad y descenso de la presión"
+   ],
+   "correct": 2,
+   "why": "Al pasar por un estrechamiento el aire se acelera y su presión disminuye. Por eso el viento es más fuerte en pasos y desfiladeros.",
+   "whyNot": [
+    "La presión baja al aumentar la velocidad.",
+    "El estrechamiento acelera el aire, no lo frena.",
+    null,
+    "Con un estrechamiento el viento aumenta, no disminuye."
+   ],
+   "ref": "AEMET, Apuntes de meteorología aeronáutica"
+  },
+  {
+   "id": "050.06.004",
+   "type": "calculo",
+   "level": 3,
+   "q": "Aire a 18 °C y Td 12 °C remonta una montaña de 7000 ft y baja por sotavento hasta el nivel de salida, sin pérdidas ni mezcla. ¿Con qué temperatura llega?",
+   "options": [
+    "Unos 18 °C",
+    "Unos 26 °C",
+    "Unos 10 °C",
+    "Unos 24 °C"
+   ],
+   "correct": 3,
+   "why": "Base: (18 − 12) × 400 = 2400 ft, con enfriamiento 2,4 × 3 = 7,2 °C → 10,8 °C. De 2400 a 7000 ft (4600 ft) a 1,8 °C/1000 ft: −8,3 °C → 2,5 °C. Al bajar 7000 ft con 3 °C/1000 ft: +21 °C → unos 23,5 °C, es decir, unos 24 °C.",
+   "whyNot": [
+    "18 °C sería la respuesta si subida y bajada usaran el mismo gradiente; no lo hacen, por el calor latente.",
+    "26 °C resulta de usar 1,8 °C en toda la subida; el tramo seco es de 3 °C.",
+    "10 °C resulta de enfriar con 3 °C toda la subida y calentar con 1,8 °C al bajar; es al revés.",
+    null
+   ],
+   "ref": "Gradientes adiabáticos; AEMET"
+  },
+  {
+   "id": "050.06.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "El efecto Foehn hace que el aire de sotavento sea:",
+   "options": [
+    "Más frío y húmedo que el de barlovento",
+    "Más cálido y seco que el de barlovento a la misma altitud",
+    "Igual de cálido y más húmedo",
+    "Más frío y seco que el de barlovento"
+   ],
+   "correct": 1,
+   "why": "El aire pierde agua al subir (precipita) y, seco, se calienta a 3 °C/1000 ft al bajar, mientras que al subir se enfrió menos (1,8 °C/1000 ft): llega más cálido y seco.",
+   "whyNot": [
+    "Es más cálido, no más frío, y más seco.",
+    null,
+    "No es igual de cálido: el calor latente liberado lo calienta.",
+    "Es más cálido: baja calentándose por compresión."
+   ],
+   "ref": "Gradientes adiabáticos; AEMET"
+  },
+  {
+   "id": "050.06.006",
+   "type": "regla",
+   "level": 1,
+   "es": true,
+   "q": "El Cierzo es un viento:",
+   "options": [
+    "Del este, cálido y húmedo, en el Estrecho",
+    "Del norte, cálido y seco, en Málaga",
+    "Del noroeste, frío y seco, canalizado por el valle del Ebro",
+    "Del noroeste, cálido y húmedo, en el Cantábrico"
+   ],
+   "correct": 2,
+   "why": "El Cierzo es el viento del NO que recorre el valle del Ebro, frío, seco y fuerte.",
+   "whyNot": [
+    "Eso describe el Levante.",
+    "Eso describe el Terral, que además es cálido y seco.",
+    null,
+    "Eso se parece a la Galerna, que es fría y repentina, no cálida."
+   ],
+   "ref": "AEMET, Glosario meteorológico"
+  },
+  {
+   "id": "050.06.007",
+   "type": "regla",
+   "level": 2,
+   "es": true,
+   "q": "La Tramontana en el Ampurdán y en Baleares sopla del:",
+   "options": [
+    "Sur, cálida y húmeda",
+    "Este, con nubes bajas",
+    "Oeste, fresca y despejada",
+    "Norte, fría, seca y racheada"
+   ],
+   "correct": 3,
+   "why": "La Tramontana es el viento del N que baja por los Pirineos orientales: frío, seco y racheado.",
+   "whyNot": [
+    "No es un viento del sur.",
+    "El Levante es del este y trae nubes bajas.",
+    "El Poniente es del oeste.",
+    null
+   ],
+   "ref": "AEMET, Glosario meteorológico"
+  },
+  {
+   "id": "050.06.008",
+   "type": "regla",
+   "level": 2,
+   "es": true,
+   "q": "En el Estrecho de Gibraltar, el Levante se caracteriza por:",
+   "options": [
+    "Soplar del este con nube baja y poca visibilidad, acelerado por Venturi",
+    "Soplar del oeste con cielo despejado",
+    "Soplar del este con aire cálido y seco",
+    "Soplar del norte con aire frío"
+   ],
+   "correct": 0,
+   "why": "Levante: viento del E, húmedo, con nube baja y mala visibilidad, acelerado al pasar por el Estrecho.",
+   "whyNot": [
+    null,
+    "Es el Poniente: oeste y despejado.",
+    "Es húmedo, no seco, y suele ir con nube baja.",
+    "El Levante no es del norte."
+   ],
+   "ref": "AEMET, Glosario meteorológico"
+  },
+  {
+   "id": "050.06.009",
+   "type": "regla",
+   "level": 2,
+   "es": true,
+   "q": "El Terral de la costa de Málaga es:",
+   "options": [
+    "Un viento fresco y húmedo del sur",
+    "Un viento cálido y seco de componente norte que desciende de las montañas",
+    "Una brisa marina fresca en verano",
+    "Un viento frío del noroeste en invierno"
+   ],
+   "correct": 1,
+   "why": "El Terral se produce por efecto Foehn: baja desde las sierras del interior hacia la costa, cálido y seco.",
+   "whyNot": [
+    "Es cálido y seco y de componente norte.",
+    null,
+    "No es una brisa marina.",
+    "Se da en verano, es cálido, no frío."
+   ],
+   "ref": "AEMET, Glosario meteorológico"
+  },
+  {
+   "id": "050.06.010",
+   "type": "concepto",
+   "level": 2,
+   "es": true,
+   "q": "La Galerna cantábrica es:",
+   "options": [
+    "Una brisa suave del mar que dura todo el día",
+    "Un viento cálido de sur, sin cambios bruscos",
+    "Un cambio brusco a viento fuerte de NO, con rachas y descenso de temperatura",
+    "Un viento de montaña nocturno y flojo"
+   ],
+   "correct": 2,
+   "why": "La Galerna es la entrada repentina de aire marino fresco con viento fuerte y racheado, tras un día cálido en la costa.",
+   "whyNot": [
+    "Es brusca e intensa, no suave.",
+    "Su dirección es noroeste, y baja la temperatura.",
+    null,
+    "No es un viento de montaña ni flojo."
+   ],
+   "ref": "AEMET, Glosario meteorológico"
+  },
+  {
+   "id": "050.06.011",
+   "type": "concepto",
+   "level": 1,
+   "q": "De noche, en un valle de montaña, el viento más probable es:",
+   "options": [
+    "De valle: sube hacia las cumbres",
+    "De mar a tierra",
+    "Anabático por las laderas",
+    "De montaña: baja de las cumbres hacia el valle"
+   ],
+   "correct": 3,
+   "why": "De noche las laderas se enfrían y el aire frío y denso baja hacia el valle: viento de montaña (catabático).",
+   "whyNot": [
+    "El viento de valle es diurno.",
+    "Es el sentido de la brisa marina, de día.",
+    "El anabático es de día.",
+    null
+   ],
+   "ref": "AEMET, Apuntes de meteorología aeronáutica"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.050.06.01",
+   "front": "Brisa marina",
+   "back": "De día, del mar a la tierra; máxima por la tarde; ~10–20 kt"
+  },
+  {
+   "id": "c.050.06.02",
+   "front": "Brisa terrestre",
+   "back": "De noche, de tierra a mar; más débil que la marina"
+  },
+  {
+   "id": "c.050.06.03",
+   "front": "Anabático y catabático",
+   "back": "Anabático: sube por una ladera soleada (día). Catabático: baja por una ladera fría (noche)"
+  },
+  {
+   "id": "c.050.06.04",
+   "front": "Efecto Venturi",
+   "back": "Un estrechamiento acelera el aire y baja la presión"
+  },
+  {
+   "id": "c.050.06.05",
+   "front": "Efecto Foehn",
+   "back": "Sube con 3 °C/1000 ft hasta saturar y 1,8 °C/1000 ft después; baja con 3 °C/1000 ft: llega más cálido y seco"
+  },
+  {
+   "id": "c.050.06.06",
+   "front": "Levante y Poniente",
+   "back": "Levante: del E, húmedo y con nube baja. Poniente: del O, despejado. Estrecho de Gibraltar"
+  },
+  {
+   "id": "c.050.06.07",
+   "front": "Tramontana, Cierzo y Mistral",
+   "back": "Tramontana: N en el Ampurdán. Cierzo: NO en el valle del Ebro. Mistral: NO en el Ródano"
+  },
+  {
+   "id": "c.050.06.08",
+   "front": "Terral y Galerna",
+   "back": "Terral: viento cálido y seco de Málaga (Foehn). Galerna: cambio brusco con rachas en el Cantábrico"
+  }
+ ]
+}

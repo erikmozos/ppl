@@ -1,0 +1,405 @@
+{
+ "lesson": {
+  "title": "Salud e higiene del piloto",
+  "summary": "Forma física, enfermedades comunes, alimentación e hipoglucemia, hidratación, gases tóxicos y autoevaluación IMSAFE, con las obligaciones de MED.A.020 ante una disminución de la aptitud médica.",
+  "objectives": [
+   "Aplicar la lista IMSAFE antes de cada vuelo",
+   "Saber cuándo no volar con resfriado, gripe o problemas digestivos",
+   "Explicar la importancia de la alimentación, la hidratación y la hipoglucemia",
+   "Reconocer la exposición a gases tóxicos en cabina",
+   "Aplicar MED.A.020 ante una disminución de la aptitud médica"
+  ],
+  "sections": [
+   {
+    "title": "Aptitud médica y MED.A.020",
+    "text": [
+     "El certificado médico dice que cumpliste los requisitos el día del reconocimiento; no garantiza que estés en condiciones hoy. Por eso la normativa de la Unión (Part-MED, MED.A.020) obliga al titular a **no ejercer las atribuciones de su licencia mientras sepa o sospeche que su aptitud médica ha disminuido** de forma que pueda impedirle ejercerlas con seguridad. Además, ante determinados sucesos debe **pedir consejo médico** al médico examinador (AME) o al centro aeromédico (AeMC) y **no volar** hasta recibir su autorización: ingreso hospitalario, intervención quirúrgica o procedimiento invasivo, inicio del uso regular de medicación, lesión personal importante, enfermedad importante que incapacite durante un periodo prolongado (21 días o más; este plazo conviene contrastarlo con el texto vigente de MED.A.020), embarazo y primera necesidad de lentes correctoras.",
+     "La responsabilidad es del piloto: el reconocimiento médico es periódico y no detecta lo que ocurre entre medias. Conviene tener un médico de confianza que conozca el entorno aeronáutico."
+    ],
+    "verify": true,
+    "note": {
+     "kind": "es",
+     "text": "En España los reconocimientos para el PPL los realizan los médicos examinadores aéreos (AME) y los centros aeromédicos (AeMC) autorizados por AESA (Part-MED, Anexo IV del Reglamento (UE) 1178/2011)."
+    }
+   },
+   {
+    "title": "Autoevaluación antes de volar: IMSAFE",
+    "text": [
+     "Una lista breve de comprobaciones personales equivalente a la lista de chequeo del avión es **IMSAFE**: **I**llness (enfermedad: ¿tengo algún síntoma?), **M**edication (medicamentos: ¿tomo o he tomado algo que afecte?), **S**tress (estrés: ¿preocupaciones, presión de tiempo?), **A**lcohol (¿cuánto y cuándo?), **F**atigue (fatiga: ¿he dormido bien?) y **E**motion o **E**ating (estado emocional y alimentación: ¿he comido y bebido lo adecuado?). Si alguna respuesta es dudosa, el vuelo se retrasa o se cancela. Es una decisión de seguridad, no un fracaso."
+    ]
+   },
+   {
+    "title": "Enfermedades comunes: resfriado, gripe y digestivas",
+    "text": [
+     "Un **resfriado** común parece trivial pero es motivo para no volar: la inflamación de la nariz y la garganta bloquea la trompa de Eustaquio y los senos (barotrauma doloroso al descender, hasta con rotura del tímpano), y los síntomas reducen la concentración. Los descongestionantes **no son una solución**: su efecto es temporal, pueden causar somnolencia, palpitaciones o mareo, y el problema reaparece en el descenso.",
+     "La **gripe**, con fiebre, dolor muscular y fatiga, reduce mucho el rendimiento y la tolerancia a la hipoxia; se espera a estar totalmente recuperado. Las **infecciones digestivas** y las **intoxicaciones alimentarias** (vómitos, diarrea, deshidratación) hacen que el piloto sea incapaz de volar con seguridad; los gases intestinales se expanden con la altitud (Boyle) y agravan los cólicos. Una enfermedad que obliga a tomar medicación es motivo de consulta médica (MED.A.020)."
+    ]
+   },
+   {
+    "title": "Nutrición, hidratación e hipoglucemia",
+    "text": [
+     "El cerebro consume casi toda la glucosa que le llega y tolera mal su descenso. La **hipoglucemia** (azúcar bajo en sangre) se produce por **ayuno prolongado** o comidas muy ricas en azúcares simples que provocan una caída posterior; sus síntomas son **hambre, temblor, sudor frío, mareo, irritabilidad, visión borrosa, confusión** y, en casos graves, pérdida de consciencia. El piloto debe comer **comidas regulares**, ligeras y equilibradas, con hidratos de carbono complejos, evitar saltarse comidas en las vueltas largas y llevar algo de comer y beber. Hay que evitar comidas copiosas, grasas y picantes justo antes de volar. Las bebidas con gas y los alimentos que producen gases son una mala idea antes de subir.",
+     "La **deshidratación** es frecuente en cabina calurosa y seca. Con una pérdida de líquidos leve (por ejemplo, un 2 % del peso corporal) aparecen sed, dolor de cabeza, fatiga y menor concentración. Se previene bebiendo agua con regularidad (sin esperar a tener sed) y limitando el café y el alcohol, que deshidratan. La **obesidad** y el sedentarismo aumentan el riesgo de hipertensión, diabetes y enfermedad cardiaca, y dificultan el movimiento en una cabina pequeña; una **forma física** razonable (ejercicio moderado regular) mejora la tolerancia a la altitud y a las aceleraciones y reduce el estrés."
+    ]
+   },
+   {
+    "title": "Higiene y gases tóxicos",
+    "text": [
+     "La higiene personal y alimentaria evita infecciones: se desconfía de comidas en mal estado o de aguas de origen dudoso en destino; el lavado de manos reduce el riesgo de contagio. En viajes a zonas con enfermedades endémicas hay que consultar al médico sobre vacunas y profilaxis.",
+     "En cabina pueden entrar **gases tóxicos**. El más importante es el **monóxido de carbono** (CO), inodoro e incoloro, procedente de gases de escape que entran por una grieta del tubo de escape o del intercambiador de calor de la calefacción. Produce dolor de cabeza, mareo, náuseas, somnolencia, visión borrosa y, en grado leve, puede confundirse con fatiga. Se corta la calefacción, se abre la ventilación, se usa oxígeno si lo hay y se aterriza. También hay **vapores de combustible, aceite o fluido hidráulico** y humos de un incendio eléctrico: olores inusuales en vuelo obligan a ventilar y aterrizar. Las revisiones de mantenimiento incluyen la comprobación del intercambiador de calor."
+    ]
+   },
+   {
+    "title": "Buceo y vuelo",
+    "text": [
+     "Como se vio en el bloque de atmósfera y gases, el buceo con botella y el vuelo posterior se relacionan: tras un buceo sin paradas de descompresión, espera 12 horas; con paradas, 24 horas. La enfermedad descompresiva puede presentarse a altitudes modestas. El buceo en apnea no se incluye en esta regla."
+    ]
+   }
+  ],
+  "numbers": [
+   "IMSAFE: Illness, Medication, Stress, Alcohol, Fatigue, Emotion/Eating",
+   "MED.A.020: no ejercer las atribuciones si ha disminuido la aptitud médica",
+   "Consultar al AME/AeMC: ingreso, cirugía, medicación regular, lesión o enfermedad prolongada, embarazo, lentes",
+   "Con resfriado o congestión: no volar",
+   "Buceo: 12 h; 24 h si hubo paradas de descompresión",
+   "CO: inodoro; cortar calefacción, ventilar y aterrizar"
+  ],
+  "traps": [
+   "Un certificado médico en vigor no garantiza que seas apto hoy.",
+   "Los descongestionantes no hacen apto a un piloto con resfriado.",
+   "La hipoglucemia aparece también con ayuno y no solo con comidas muy dulces.",
+   "El CO no huele: la ausencia de olor no indica que no esté.",
+   "IMSAFE es una lista personal; no sustituye al criterio médico."
+  ],
+  "sources": [
+   {
+    "title": "Reglamento (UE) 1178/2011, Anexo IV (Part-MED), MED.A.020",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules"
+   },
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge, cap. 17",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   }
+  ],
+  "id": "040.07",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "040.07.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "La regla IMSAFE sirve para:",
+   "options": [
+    "Comprobar el avión antes del vuelo",
+    "Evaluar el propio estado antes del vuelo",
+    "Calcular la masa y el centrado",
+    "Verificar el plan de vuelo"
+   ],
+   "correct": 1,
+   "why": "Es una lista de autoevaluación del piloto: enfermedad, medicación, estrés, alcohol, fatiga y emoción/alimentación.",
+   "whyNot": [
+    "El avión se comprueba con la lista de la prerrevisión.",
+    null,
+    "No es un cálculo.",
+    "No tiene que ver con el plan."
+   ],
+   "ref": "Part-MED; FAA"
+  },
+  {
+   "id": "040.07.002",
+   "type": "concepto",
+   "level": 2,
+   "q": "En IMSAFE, la letra A corresponde a:",
+   "options": [
+    "Altitud",
+    "Actitud",
+    "Anemia",
+    "Alcohol"
+   ],
+   "correct": 3,
+   "why": "Illness, Medication, Stress, Alcohol, Fatigue y Emotion/Eating.",
+   "whyNot": [
+    "La altitud no figura.",
+    "La actitud no forma parte de la lista.",
+    "La anemia no forma parte de la lista.",
+    null
+   ],
+   "ref": "FAA"
+  },
+  {
+   "id": "040.07.003",
+   "type": "regla",
+   "level": 2,
+   "q": "Según MED.A.020, el titular de una licencia debe:",
+   "options": [
+    "No ejercer sus atribuciones si sabe que su aptitud médica ha disminuido",
+    "Volar con normalidad hasta el siguiente reconocimiento",
+    "Comunicar cualquier resfriado a AESA",
+    "Solo notificar enfermedades si hay hospitalización"
+   ],
+   "correct": 0,
+   "why": "La norma impone la autoevaluación continua y la obligación de no ejercer en caso de disminución de la aptitud.",
+   "whyNot": [
+    null,
+    "El certificado no cubre los cambios posteriores.",
+    "No se comunica todo resfriado a AESA.",
+    "Hay más supuestos, no solo la hospitalización."
+   ],
+   "ref": "MED.A.020"
+  },
+  {
+   "id": "040.07.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "Con un resfriado común y la nariz congestionada, un piloto debe:",
+   "options": [
+    "Volar sin problema",
+    "Volar solo en altitudes bajas",
+    "No volar",
+    "Volar si no hay pasajeros"
+   ],
+   "correct": 2,
+   "why": "La congestión bloquea la trompa de Eustaquio y los senos.",
+   "whyNot": [
+    "El barotrauma es posible al descender.",
+    "Los cambios de presión del descenso se dan a cualquier altitud.",
+    null,
+    "El riesgo es para el piloto, no depende de los pasajeros."
+   ],
+   "ref": "Part-MED"
+  },
+  {
+   "id": "040.07.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Por qué no basta con tomar un descongestionante para volar con resfriado?",
+   "options": [
+    "Aumentan el oxígeno",
+    "Cambian la presión del oído",
+    "El efecto es temporal y puede causar somnolencia o palpitaciones",
+    "Evitan la hipoxia"
+   ],
+   "correct": 2,
+   "why": "El fármaco enmascara la congestión, que reaparece, y tiene efectos secundarios.",
+   "whyNot": [
+    "No aumentan el oxígeno.",
+    "No regulan la presión del oído de forma estable.",
+    null,
+    "No tienen relación con la hipoxia."
+   ],
+   "ref": "Part-MED"
+  },
+  {
+   "id": "040.07.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una persona con gripe y fiebre no debe volar principalmente porque:",
+   "options": [
+    "Reduce la capacidad y la tolerancia a la hipoxia",
+    "La gripe contagia el avión",
+    "La fiebre sube la presión atmosférica",
+    "Desaparece el barotrauma"
+   ],
+   "correct": 0,
+   "why": "La fiebre y el malestar degradan el rendimiento y la tolerancia a la altura.",
+   "whyNot": [
+    null,
+    "El avión no se contagia.",
+    "La fiebre no cambia la presión.",
+    "Con fiebre se agrava, no desaparece."
+   ],
+   "ref": "Part-MED"
+  },
+  {
+   "id": "040.07.007",
+   "type": "concepto",
+   "level": 1,
+   "q": "La hipoglucemia es:",
+   "options": [
+    "Un exceso de oxígeno",
+    "Un nivel alto de azúcar",
+    "La falta de hierro",
+    "Un nivel bajo de azúcar en la sangre"
+   ],
+   "correct": 3,
+   "why": "El cerebro depende de la glucosa y su falta causa mareo, temblor y confusión.",
+   "whyNot": [
+    "Eso es hiperoxia.",
+    "Eso es hiperglucemia.",
+    "Eso es anemia ferropénica.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.07.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un síntoma típico de la hipoglucemia es:",
+   "options": [
+    "Hormigueo en manos y labios por respirar rápido",
+    "Temblor, sudor frío y confusión",
+    "Dolor de oído al descender",
+    "Hinchazón de articulaciones"
+   ],
+   "correct": 1,
+   "why": "El déficit de glucosa activa el sistema simpático y afecta al cerebro.",
+   "whyNot": [
+    "Es la hiperventilación.",
+    null,
+    "Es barotrauma.",
+    "Es un síntoma de la enfermedad descompresiva."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.07.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una pauta alimentaria prudente para un piloto es:",
+   "options": [
+    "Ayunar para evitar náuseas",
+    "Comidas regulares y ligeras, con hidratos de carbono complejos",
+    "Beber café en lugar de comer",
+    "Una comida copiosa justo antes de despegar"
+   ],
+   "correct": 1,
+   "why": "Se evita tanto el ayuno como las comidas pesadas.",
+   "whyNot": [
+    "El ayuno favorece la hipoglucemia.",
+    null,
+    "El café no aporta glucosa y deshidrata.",
+    "Las comidas copiosas dificultan el vuelo."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.07.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "La deshidratación leve en cabina produce:",
+   "options": [
+    "Aumento de la agudeza visual",
+    "Mejora de la memoria",
+    "Disminución de la sed",
+    "Dolor de cabeza, fatiga y pérdida de concentración"
+   ],
+   "correct": 3,
+   "why": "La falta de líquidos reduce el rendimiento mental.",
+   "whyNot": [
+    "No mejora la visión.",
+    "No mejora la memoria.",
+    "Aumenta la sed.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.07.011",
+   "type": "concepto",
+   "level": 1,
+   "q": "El monóxido de carbono:",
+   "options": [
+    "Es inodoro e incoloro",
+    "Huele a combustible",
+    "Es de color azul",
+    "Solo aparece por encima de 10.000 ft"
+   ],
+   "correct": 0,
+   "why": "No se percibe con los sentidos: solo se sospecha por sus síntomas.",
+   "whyNot": [
+    null,
+    "El combustible se huele, el CO no.",
+    "Es incoloro.",
+    "Puede aparecer a cualquier altitud."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.07.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "Si sospechas CO en cabina, lo más prudente es:",
+   "options": [
+    "Subir para respirar mejor",
+    "Aumentar la calefacción",
+    "Cortar la calefacción, ventilar y aterrizar",
+    "Seguir hasta el destino"
+   ],
+   "correct": 2,
+   "why": "La fuente es el escape o el calefactor y la solución es ventilar y salir de la exposición.",
+   "whyNot": [
+    "Subir agrava la hipoxia por CO.",
+    "Aumenta el aporte de CO.",
+    null,
+    "El riesgo de incapacitación es alto."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.07.013",
+   "type": "regla",
+   "level": 2,
+   "q": "Tras un buceo sin paradas de descompresión, la espera recomendada antes de volar es de:",
+   "options": [
+    "2 horas",
+    "6 horas",
+    "12 horas",
+    "1 hora"
+   ],
+   "correct": 2,
+   "why": "Se recomienda al menos 12 horas, y 24 si hubo paradas.",
+   "whyNot": [
+    "Dos horas dejan casi todo el nitrógeno acumulado.",
+    "Seis horas siguen siendo pocas tras un buceo con botella.",
+    null,
+    "Una hora es una espera ridícula frente al tiempo de eliminación."
+   ],
+   "ref": "Recomendaciones de medicina aeronáutica"
+  },
+  {
+   "id": "040.07.014",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Cuál de estos hechos obliga a pedir consejo médico antes de volver a volar?",
+   "options": [
+    "Una intervención quirúrgica",
+    "Un paseo corto",
+    "Una noche de sueño ligero",
+    "Un viaje en coche"
+   ],
+   "correct": 0,
+   "why": "La cirugía figura entre los supuestos de MED.A.020.",
+   "whyNot": [
+    null,
+    "Un paseo no altera la aptitud médica.",
+    "Dormir poco es fatiga, que se gestiona con IMSAFE, pero no es un supuesto de consulta obligatoria.",
+    "Un viaje en coche no es un hecho médico relevante."
+   ],
+   "ref": "MED.A.020"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.040.07.01",
+   "front": "IMSAFE",
+   "back": "Illness, Medication, Stress, Alcohol, Fatigue, Emotion/Eating: autoevaluación antes de volar"
+  },
+  {
+   "id": "c.040.07.02",
+   "front": "MED.A.020",
+   "back": "No ejercer las atribuciones si ha disminuido la aptitud médica; consultar al AME/AeMC ante cirugía, ingreso, medicación regular o enfermedad prolongada"
+  },
+  {
+   "id": "c.040.07.03",
+   "front": "Resfriado",
+   "back": "Con congestión no se vuela: barotrauma en el descenso; los descongestionantes no lo resuelven"
+  },
+  {
+   "id": "c.040.07.04",
+   "front": "Monóxido de carbono",
+   "back": "Inodoro e incoloro; cortar calefacción, ventilar y aterrizar"
+  }
+ ]
+}

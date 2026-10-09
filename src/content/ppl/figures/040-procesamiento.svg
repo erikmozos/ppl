@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 270">
+  <title>Modelo de procesamiento de la información: estímulos, memoria sensorial, atención y percepción, memoria de trabajo, decisión y acción, con la memoria a largo plazo y la retroalimentación</title>
+  <defs><marker id="040-procesamiento-flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker></defs>
+  <rect x="14" y="40" width="88" height="66" rx="6" class="soft"/>
+  <text x="58" y="68" class="tx b" font-size="12" text-anchor="middle">Entorno</text>
+  <text x="58" y="86" class="tx2" font-size="11" text-anchor="middle">estímulos</text>
+  <rect x="114" y="40" width="88" height="66" rx="6" class="soft"/>
+  <text x="158" y="62" class="tx b" font-size="12" text-anchor="middle">Memoria</text>
+  <text x="158" y="76" class="tx b" font-size="12" text-anchor="middle">sensorial</text>
+  <text x="158" y="94" class="tx2" font-size="11" text-anchor="middle">1 a 4 s</text>
+  <rect x="214" y="40" width="88" height="66" rx="6" class="ac"/>
+  <text x="258" y="62" class="txa b" font-size="12" text-anchor="middle">Atención</text>
+  <text x="258" y="76" class="txa b" font-size="12" text-anchor="middle">y percepción</text>
+  <text x="258" y="94" class="tx2" font-size="11" text-anchor="middle">filtro</text>
+  <rect x="314" y="40" width="88" height="66" rx="6" class="ac"/>
+  <text x="358" y="62" class="txa b" font-size="12" text-anchor="middle">Memoria</text>
+  <text x="358" y="76" class="txa b" font-size="12" text-anchor="middle">de trabajo</text>
+  <text x="358" y="94" class="tx2" font-size="11" text-anchor="middle">7 ± 2 ítems</text>
+  <rect x="414" y="40" width="88" height="66" rx="6" class="soft"/>
+  <text x="458" y="76" class="tx b" font-size="12" text-anchor="middle">Decisión</text>
+  <rect x="514" y="40" width="88" height="66" rx="6" class="soft"/>
+  <text x="558" y="76" class="tx b" font-size="12" text-anchor="middle">Acción</text>
+  <line x1="102" y1="73" x2="112" y2="73" class="ln" marker-end="url(#040-procesamiento-flecha)"/>
+  <line x1="202" y1="73" x2="212" y2="73" class="ln" marker-end="url(#040-procesamiento-flecha)"/>
+  <line x1="302" y1="73" x2="312" y2="73" class="ln" marker-end="url(#040-procesamiento-flecha)"/>
+  <line x1="402" y1="73" x2="412" y2="73" class="ln" marker-end="url(#040-procesamiento-flecha)"/>
+  <line x1="502" y1="73" x2="512" y2="73" class="ln" marker-end="url(#040-procesamiento-flecha)"/>
+  <rect x="214" y="160" width="188" height="50" rx="6" class="ok"/>
+  <text x="308" y="182" class="txo b" font-size="12" text-anchor="middle">Memoria a largo plazo</text>
+  <text x="308" y="198" class="tx2" font-size="11" text-anchor="middle">experiencia y procedimientos</text>
+  <line x1="258" y1="160" x2="258" y2="108" class="ln2"/>
+  <line x1="358" y1="160" x2="358" y2="108" class="ln2"/>
+  <path d="M558 108 L558 130 L58 130 L58 108" class="ln2 dash" fill="none" marker-end="url(#040-procesamiento-flecha)"/>
+  <text x="158" y="148" class="tx2" font-size="11" text-anchor="middle">retroalimentación</text>
+  <text x="320" y="248" class="tx2" font-size="11" text-anchor="middle">Los cuellos de botella son la atención y la memoria de trabajo: de capacidad limitada</text>
+</svg>

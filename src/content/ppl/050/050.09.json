@@ -1,0 +1,506 @@
+{
+ "lesson": {
+  "title": "Nubes",
+  "summary": "Cómo se forman las nubes (convección, relieve, frentes, mezcla y convergencia), los diez géneros por pisos y su significado para el vuelo, la relación con la estabilidad y las inversiones y cómo se notifican en el METAR (octas y techo).",
+  "objectives": [
+   "Explicar los procesos que enfrían el aire hasta la saturación y forman nubes",
+   "Clasificar los diez géneros por piso y reconocerlos por su aspecto",
+   "Relacionar el tipo de nube con la estabilidad del aire y con las inversiones",
+   "Asociar cada género con su tiempo y sus peligros (engelamiento, turbulencia, visibilidad, tormenta)",
+   "Interpretar la cantidad de nubes (FEW, SCT, BKN, OVC) y el techo en un METAR"
+  ],
+  "sections": [
+   {
+    "title": "Cómo se forma una nube",
+    "text": [
+     "Una nube se forma cuando el aire se enfría hasta su punto de rocío y el vapor se condensa sobre pequeñas partículas del aire (núcleos de condensación: sal, polvo, humo). La causa habitual es el ascenso: al subir, el aire se expande y se enfría adiabáticamente, como viste en el bloque de termodinámica. Otras veces el aire se enfría sin subir, por mezcla con aire más frío o por contacto con una superficie fría.",
+     "Los procesos que forman nubes son estos:"
+    ],
+    "table": {
+     "caption": "Procesos de formación de nubes",
+     "head": [
+      "Proceso",
+      "Cómo actúa",
+      "Nubes que produce"
+     ],
+     "rows": [
+      [
+       "Convección",
+       "El suelo calentado produce térmicas que ascienden",
+       "Cúmulos (Cu) y cumulonimbos (Cb)"
+      ],
+      [
+       "Ascenso orográfico",
+       "El viento obliga al aire a remontar el relieve",
+       "Estratos, estratocúmulos y cúmulos en barlovento; nubes de cima y lenticulares"
+      ],
+      [
+       "Ascenso frontal",
+       "Aire cálido asciende sobre cuña de aire frío o es empujado por una cuña fría",
+       "Ci, Cs, As, Ns (frente cálido); Cu y Cb (frente frío)"
+      ],
+      [
+       "Convergencia",
+       "El aire que converge en superficie debe ascender, p. ej. en una baja",
+       "Nubes extensas y a veces precipitación"
+      ],
+      [
+       "Mezcla y turbulencia",
+       "La mezcla turbulenta de capas, o el viento sobre superficie fría, enfría el aire hasta saturarlo",
+       "Estratos y estratocúmulos bajos, niebla elevada"
+      ],
+      [
+       "Enfriamiento radiativo o advectivo",
+       "El suelo pierde calor de noche o el aire cálido pasa sobre una superficie fría",
+       "Niebla y estratos bajos"
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Los diez géneros por pisos",
+    "text": [
+     "La OMM clasifica las nubes en diez **géneros**, agrupados por la altura de su base en tres pisos (valores de las regiones templadas), más las nubes de gran desarrollo vertical. Los nombres combinan prefijos: **cirro** (en altura, filamentoso), **alto** (medio), **cúmulo** (en montones, convectivo), **estrato** (en capas) y **nimbo** (que da precipitación)."
+    ],
+    "figure": "svg:050-nubes-pisos",
+    "caption": "Pisos y géneros (altitudes aproximadas). En los manuales de formación es frecuente simplificar a 20.000 ft y 7000 ft como límites.",
+    "table": {
+     "caption": "Géneros de nubes",
+     "head": [
+      "Género",
+      "Piso",
+      "Aspecto",
+      "Tiempo y peligro"
+     ],
+     "rows": [
+      [
+       "Cirro (Ci)",
+       "Alto",
+       "Filamentos blancos, cristales de hielo",
+       "Buen tiempo o primer signo de un frente cálido; sin engelamiento"
+      ],
+      [
+       "Cirrocúmulo (Cc)",
+       "Alto",
+       "Glóbulos finos, «cielo aborregado»",
+       "Poco significativo; hielo, sin engelamiento"
+      ],
+      [
+       "Cirrostrato (Cs)",
+       "Alto",
+       "Velo blanquecino que da halo al Sol o la Luna",
+       "Precursor de un frente cálido: lluvia en unas 12 a 24 h"
+      ],
+      [
+       "Altocúmulo (Ac)",
+       "Medio",
+       "Bancos de glóbulos",
+       "Ac castellanus: aire inestable en niveles medios, riesgo de tormenta. Ac lenticularis: ondas de montaña"
+      ],
+      [
+       "Altostrato (As)",
+       "Medio",
+       "Velo gris; el Sol se ve difuso",
+       "Lluvia débil y continua, engelamiento posible"
+      ],
+      [
+       "Nimboestrato (Ns)",
+       "Medio, se extiende a bajo",
+       "Capa gris oscura y espesa",
+       "Lluvia o nieve continua, visibilidad pobre, engelamiento; base baja"
+      ],
+      [
+       "Estratocúmulo (Sc)",
+       "Bajo",
+       "Capa o bancos con partes oscuras",
+       "Llovizna débil; techo bajo si cubre"
+      ],
+      [
+       "Estrato (St)",
+       "Bajo",
+       "Capa gris uniforme, muy baja",
+       "Llovizna, niebla elevada, techo y visibilidad pobres"
+      ],
+      [
+       "Cúmulo (Cu)",
+       "Bajo, con desarrollo vertical",
+       "Base plana, tope redondeado",
+       "Cu humilis: buen tiempo; congestus: chubascos; turbulencia"
+      ],
+      [
+       "Cumulonimbo (Cb)",
+       "Base baja y tope alto",
+       "Nube enorme con yunque",
+       "Tormentas, granizo, engelamiento, turbulencia severa y cizalladura"
+      ]
+     ]
+    },
+    "verify": true,
+    "note": {
+     "kind": "tip",
+     "text": "Ns: la OMM lo clasifica como nube de nivel medio, porque nace en esa capa, pero se extiende hacia niveles bajos y su base suele estar baja. Muchos manuales lo ponen entre las bajas. En el examen es la nube de la lluvia continua del frente cálido."
+    }
+   },
+   {
+    "title": "Estabilidad, inversiones y tipo de nube",
+    "text": [
+     "La forma de la nube delata la estabilidad del aire:",
+     "**Aire estable**: el aire no sube por sí solo, solo asciende si algo lo obliga (frente, relieve). Las nubes son **estratiformes** (en capas: St, Sc, As, Ns, Cs), la precipitación es continua o llovizna, la turbulencia es poca y la visibilidad es pobre.",
+     "**Aire inestable**: el aire sube con vigor y las nubes son **cumuliformes** (Cu, Cb, Ac castellanus): crecen verticalmente, dan chubascos y tormentas, turbulencia y buena visibilidad fuera de las nubes.",
+     "Una **inversión** actúa de techo: frena el crecimiento vertical de los cúmulos, que se aplastan en forma de estratocúmulos, y atrapa nubes bajas y bruma bajo ella. Los estratos y estratocúmulos de superficie en un día anticiclónico se deben a una inversión de subsidencia."
+    ],
+    "bullets": [
+     "Cúmulos con la cima plana a una altura constante: hay una inversión que los limita.",
+     "Cúmulos que crecen sin límite hasta hacerse cumulonimbos: aire condicionalmente inestable con humedad abundante.",
+     "Cielo cubierto de estrato bajo con llovizna: aire estable y húmedo, normalmente tras el paso de un frente o con una advección marina."
+    ]
+   },
+   {
+    "title": "Nubes en el METAR: cantidad y techo",
+    "text": [
+     "En el METAR la nubosidad se da en **octas** (octavos de cielo cubierto) y la **altura de la base** en pies sobre el aeródromo (AGL): **FEW** (1–2 octas), **SCT** (3–4), **BKN** (5–7) y **OVC** (8). Se añade **CB** (cumulonimbo) o **TCU** (cúmulo torreado) tras la altura cuando proceda. Solo se cifran las capas significativas.",
+     "El **techo** es la altura de la base de la capa **más baja que sea BKN u OVC**. Las capas FEW y SCT no forman techo."
+    ],
+    "examples": [
+     {
+      "q": "METAR con FEW008 SCT020 BKN035CB OVC090. ¿Cuál es el techo y qué nube peligrosa hay?",
+      "a": "FEW y SCT no cuentan. La capa más baja BKN u OVC es BKN035: techo 3500 ft AGL. Hay un cumulonimbo (CB) con 5 a 7 octas a 3500 ft: tormenta cerca, evítala."
+     }
+    ]
+   }
+  ],
+  "numbers": [
+   "Pisos: altas (Ci, Cc, Cs), medias (Ac, As, Ns) y bajas (Sc, St, Cu); Cb con gran desarrollo vertical",
+   "Bases aproximadas: altas desde 16.500 ft; medias de 6500 a 23.000 ft; bajas hasta 6500 ft",
+   "FEW 1–2 octas, SCT 3–4, BKN 5–7, OVC 8",
+   "Techo: la capa más baja BKN u OVC",
+   "Estable: nubes estratiformes; inestable: nubes cumuliformes",
+   "Ns: nube media que se extiende a bajo, lluvia continua; Cs: halo y precursor del frente cálido",
+   "Ac lenticularis: ondas; Ac castellanus: inestabilidad media y tormenta"
+  ],
+  "traps": [
+   "Poner el Ns solo entre las bajas: la OMM lo sitúa en el nivel medio y se extiende a bajo; di las dos cosas.",
+   "Pensar que las nubes altas dan engelamiento: son de cristales de hielo y no lo producen.",
+   "Contar la capa SCT o FEW como techo: solo BKN y OVC lo forman.",
+   "Confundir nimbo y cumulonimbo: el Ns es estratiforme y de lluvia continua; el Cb es convectivo y de chubasco.",
+   "Creer que la altura de las nubes en el METAR es sobre el nivel del mar: es sobre la elevación del aeródromo."
+  ],
+  "sources": [
+   {
+    "title": "AEMET, Apuntes de meteorología aeronáutica",
+    "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
+   },
+   {
+    "title": "OMM, Atlas internacional de nubes (géneros y niveles)",
+    "url": "https://cloudatlas.wmo.int/"
+   },
+   {
+    "title": "AEMET, Guía MET AU-GUI-0102 (cantidad y altura de nubes en el METAR)",
+    "url": "https://www.aemet.es/documentos/es/conocermas/aeronautica/AU-GUI-0102.pdf"
+   }
+  ],
+  "spain": [
+   "La nubosidad en los METAR de AEMET se da en pies sobre la elevación del aeródromo (AGL).",
+   "En verano, en el interior de la península, es frecuente ver los cúmulos con base alta (más de 6000 ft AGL) y desarrollo explosivo por la tarde, con tormentas en el Sistema Ibérico y los Pirineos."
+  ],
+  "id": "050.09",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "050.09.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "Los cumulonimbos se forman en aire:",
+   "options": [
+    "Inestable, con convección profunda",
+    "Estable, con subsidencia",
+    "Estable, bajo una inversión fuerte",
+    "Neutro, con calma y niebla"
+   ],
+   "correct": 0,
+   "why": "El Cb necesita aire inestable y humedad; la convección lo hace crecer hasta la tropopausa.",
+   "whyNot": [
+    null,
+    "La subsidencia impide el desarrollo vertical.",
+    "Una inversión frena el crecimiento vertical.",
+    "Sin ascenso no hay nube convectiva."
+   ],
+   "ref": "AEMET; OMM"
+  },
+  {
+   "id": "050.09.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "Las nubes que se extienden en capas (estratiformes) indican que el aire es:",
+   "options": [
+    "Inestable",
+    "Estable",
+    "Muy seco",
+    "Convectivo"
+   ],
+   "correct": 1,
+   "why": "Las nubes en capas son propias de aire estable: ascenso lento y forzado.",
+   "whyNot": [
+    "El aire inestable da nubes cumuliformes.",
+    null,
+    "La humedad es alta, no baja.",
+    "Convectivo es sinónimo de inestable."
+   ],
+   "ref": "AEMET"
+  },
+  {
+   "id": "050.09.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Qué nubes pertenecen al piso alto?",
+   "options": [
+    "Altocúmulo, altostrato y nimboestrato",
+    "Estrato, estratocúmulo y cúmulo",
+    "Cirro, cirrocúmulo y cirrostrato",
+    "Cumulonimbo, cúmulo y estrato"
+   ],
+   "correct": 2,
+   "why": "Altas: Ci, Cc y Cs. Medias: Ac, As y Ns. Bajas: Sc, St y Cu. El Cb tiene gran desarrollo vertical.",
+   "whyNot": [
+    "Son las medias.",
+    "Son las bajas.",
+    null,
+    "No son de un solo piso y no todas son altas."
+   ],
+   "ref": "OMM"
+  },
+  {
+   "id": "050.09.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "Con respecto al nimboestrato (Ns):",
+   "options": [
+    "Es siempre una nube alta de hielo, sin precipitación",
+    "Es una nube convectiva baja con granizo",
+    "Es una nube baja que da solo llovizna fina",
+    "La OMM lo considera de nivel medio, pero se extiende a niveles bajos y da lluvia continua"
+   ],
+   "correct": 3,
+   "why": "El Ns es una capa gris y espesa de lluvia o nieve continua; la OMM lo clasifica como medio, con base baja y gran espesor.",
+   "whyNot": [
+    "No es alta ni de hielo.",
+    "No es convectivo ni da granizo.",
+    "Da lluvia continua, no solo llovizna.",
+    null
+   ],
+   "ref": "OMM, Atlas de nubes"
+  },
+  {
+   "id": "050.09.005",
+   "type": "concepto",
+   "level": 1,
+   "q": "Un halo alrededor del Sol o de la Luna indica la presencia de:",
+   "options": [
+    "Cumulonimbos",
+    "Cirrostratos",
+    "Estratos",
+    "Estratocúmulos"
+   ],
+   "correct": 1,
+   "why": "El halo se produce por la refracción en los cristales de hielo del cirrostrato, que suele preceder a un frente cálido.",
+   "whyNot": [
+    "El Cb no deja ver el Sol.",
+    null,
+    "El estrato no produce halo.",
+    "Estratocúmulos son de gotas de agua."
+   ],
+   "ref": "OMM"
+  },
+  {
+   "id": "050.09.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "Los altocúmulos lenticulares (Ac lenticularis) son señal de:",
+   "options": [
+    "Tormentas inminentes en llanura",
+    "Niebla de radiación",
+    "Ondas de montaña",
+    "Un frente cálido"
+   ],
+   "correct": 2,
+   "why": "El lenticular se forma en las crestas de las ondas de montaña, con turbulencia y rotores.",
+   "whyNot": [
+    "Las tormentas están asociadas a Cb y a Ac castellanus.",
+    "La niebla no tiene forma lenticular.",
+    null,
+    "El frente cálido trae Ci, Cs, As y Ns."
+   ],
+   "ref": "OMM; AEMET"
+  },
+  {
+   "id": "050.09.007",
+   "type": "lectura",
+   "level": 2,
+   "q": "Un METAR muestra FEW006 SCT015 BKN030. El techo es:",
+   "data": "LEXX 091000Z 24008KT 9999 FEW006 SCT015 BKN030 18/14 Q1016",
+   "options": [
+    "600 ft sobre el aeródromo",
+    "1500 ft sobre el aeródromo",
+    "3000 ft sobre el nivel del mar",
+    "3000 ft sobre el aeródromo"
+   ],
+   "correct": 3,
+   "why": "El techo es la capa más baja BKN u OVC: BKN030, es decir, 3000 ft AGL. FEW y SCT no cuentan.",
+   "whyNot": [
+    "600 ft es FEW, que no forma techo.",
+    "1500 ft es SCT, que tampoco.",
+    "Las alturas del METAR son sobre el aeródromo, no sobre el nivel del mar.",
+    null
+   ],
+   "ref": "AEMET Guía MET; SERA"
+  },
+  {
+   "id": "050.09.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "En el METAR, 5 a 7 octas de cielo cubierto se notifican como:",
+   "options": [
+    "BKN",
+    "FEW",
+    "SCT",
+    "OVC"
+   ],
+   "correct": 0,
+   "why": "FEW 1–2, SCT 3–4, BKN 5–7 y OVC 8 octas.",
+   "whyNot": [
+    null,
+    "FEW son 1 o 2 octas.",
+    "SCT son 3 o 4 octas.",
+    "OVC es cielo cubierto, 8 octas."
+   ],
+   "ref": "AEMET Guía MET"
+  },
+  {
+   "id": "050.09.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Tras un frente cálido, la secuencia de nubes que se ve primero es:",
+   "options": [
+    "Cumulonimbos, cúmulos y cirros",
+    "Cirros, cirrostratos, altostratos y nimboestratos",
+    "Estratos, altocúmulos y cirros",
+    "Nimboestratos, altostratos y cirros"
+   ],
+   "correct": 1,
+   "why": "El aire cálido asciende sobre la cuña fría: primero cirros, luego velo con halo, luego altostrato y por último nimboestrato con lluvia continua.",
+   "whyNot": [
+    "Los Cb y Cu son propios del frente frío, no del cálido.",
+    null,
+    "Los estratos no van delante de un frente cálido y la secuencia no empieza en los bajos.",
+    "Es el orden inverso al que se ve al acercarse el frente."
+   ],
+   "ref": "AEMET"
+  },
+  {
+   "id": "050.09.010",
+   "type": "concepto",
+   "level": 3,
+   "q": "Cúmulos que dejan de crecer a una altura constante y se aplastan en la cima indican:",
+   "options": [
+    "Inestabilidad ilimitada hasta la tropopausa",
+    "Un frente frío",
+    "Una inversión que limita el desarrollo vertical",
+    "Ondas de montaña"
+   ],
+   "correct": 2,
+   "why": "Una inversión actúa de tapa: los cúmulos llegan a ella y se extienden en horizontal.",
+   "whyNot": [
+    "Con inestabilidad ilimitada se hacen cumulonimbos.",
+    "No es un indicador frontal.",
+    null,
+    "Las ondas dan lenticulares."
+   ],
+   "ref": "AEMET"
+  },
+  {
+   "id": "050.09.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Qué nube no produce engelamiento por estar formada por cristales de hielo?",
+   "options": [
+    "Altostrato",
+    "Cumulonimbo",
+    "Estratocúmulo",
+    "Cirro"
+   ],
+   "correct": 3,
+   "why": "Los cirros son de cristales de hielo, sin gotas sobreenfriadas; no producen engelamiento significativo.",
+   "whyNot": [
+    "El As contiene gotas sobreenfriadas.",
+    "El Cb contiene gotas sobreenfriadas y puede dar engelamiento severo.",
+    "El Sc contiene gotas de agua.",
+    null
+   ],
+   "ref": "AEMET; OMM"
+  },
+  {
+   "id": "050.09.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un estrato (St) que da llovizna suele indicar:",
+   "options": [
+    "Aire estable y húmedo en capas bajas",
+    "Aire inestable con convección profunda",
+    "Aire seco con subsidencia",
+    "Aire muy frío en altura sin humedad"
+   ],
+   "correct": 0,
+   "why": "El St es una capa baja y uniforme en aire estable y húmedo; la llovizna procede de gotas muy pequeñas.",
+   "whyNot": [
+    null,
+    "La convección profunda produce Cb.",
+    "La subsidencia seca no forma estratos con llovizna.",
+    "Hace falta humedad en capas bajas."
+   ],
+   "ref": "AEMET"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.050.09.01",
+   "front": "Los diez géneros por pisos",
+   "back": "Altas: Ci, Cc, Cs. Medias: Ac, As, Ns. Bajas: Sc, St, Cu. Gran desarrollo: Cb"
+  },
+  {
+   "id": "c.050.09.02",
+   "front": "Ns: dónde se clasifica",
+   "back": "La OMM lo pone como nube media que se extiende a niveles bajos; muchos manuales lo ponen entre las bajas"
+  },
+  {
+   "id": "c.050.09.03",
+   "front": "Nubes estratiformes y cumuliformes",
+   "back": "Estratiformes: aire estable. Cumuliformes: aire inestable"
+  },
+  {
+   "id": "c.050.09.04",
+   "front": "Cirrostrato",
+   "back": "Velo con halo; precursor del frente cálido"
+  },
+  {
+   "id": "c.050.09.05",
+   "front": "Ac lenticularis y Ac castellanus",
+   "back": "Lenticularis: ondas de montaña. Castellanus: inestabilidad en medios, riesgo de tormenta"
+  },
+  {
+   "id": "c.050.09.06",
+   "front": "Octas en el METAR",
+   "back": "FEW 1–2, SCT 3–4, BKN 5–7, OVC 8"
+  },
+  {
+   "id": "c.050.09.07",
+   "front": "Techo",
+   "back": "Base de la capa más baja BKN u OVC, en pies sobre el aeródromo"
+  },
+  {
+   "id": "c.050.09.08",
+   "front": "Cirros y engelamiento",
+   "back": "Los cirros son de hielo y no producen engelamiento"
+  }
+ ]
+}

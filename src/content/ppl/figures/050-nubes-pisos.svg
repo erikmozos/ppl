@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340">
+  <title>Los diez géneros de nubes por pisos: altas (Ci, Cc, Cs), medias (Ac, As, Ns) y bajas (Sc, St, Cu), y el cumulonimbo con gran desarrollo vertical</title>
+  <rect x="0" y="0" width="640" height="340" class="sky"/>
+  <rect x="70" y="24" width="430" height="84" class="soft"/>
+  <rect x="70" y="108" width="430" height="84" class="ac"/>
+  <rect x="70" y="192" width="430" height="84" class="soft"/>
+  <rect x="0" y="276" width="640" height="34" class="ground"/>
+  <text x="6" y="50" class="tx2" font-size="11">45.000 ft</text>
+  <text x="6" y="124" class="tx2" font-size="11">23.000 ft</text>
+  <text x="6" y="208" class="tx2" font-size="11">6.500 ft</text>
+  <text x="6" y="270" class="tx2" font-size="11">suelo</text>
+  <text x="90" y="50" class="tx b">Nubes altas</text>
+  <text x="90" y="68" class="tx2" font-size="12">base desde ≈ 16.500 ft; cristales de hielo</text>
+  <text x="90" y="96" class="tx"><tspan class="b">Ci</tspan> cirro   <tspan class="b">Cc</tspan> cirrocúmulo   <tspan class="b">Cs</tspan> cirrostrato</text>
+  <text x="90" y="134" class="txa b">Nubes medias</text>
+  <text x="90" y="152" class="tx2" font-size="12">base ≈ 6.500–23.000 ft</text>
+  <text x="90" y="180" class="tx"><tspan class="b">Ac</tspan> altocúmulo   <tspan class="b">As</tspan> altostrato   <tspan class="b">Ns</tspan> nimboestrato*</text>
+  <text x="90" y="218" class="tx b">Nubes bajas</text>
+  <text x="90" y="236" class="tx2" font-size="12">base hasta ≈ 6.500 ft</text>
+  <text x="90" y="264" class="tx"><tspan class="b">Sc</tspan> estratocúmulo   <tspan class="b">St</tspan> estrato   <tspan class="b">Cu</tspan> cúmulo</text>
+  <rect x="528" y="40" width="80" height="236" rx="8" class="wa"/>
+  <text x="568" y="140" class="txw b" text-anchor="middle">Cb</text>
+  <text x="568" y="158" class="txw" text-anchor="middle" font-size="12">cumulo-</text>
+  <text x="568" y="173" class="txw" text-anchor="middle" font-size="12">nimbo</text>
+  <text x="568" y="296" class="tx2" text-anchor="middle" font-size="11">base baja, tope alto</text>
+  <text x="20" y="330" class="tx2" font-size="12">* El Ns es de nivel medio según la OMM, pero se extiende hasta niveles bajos y suele tener la base baja.</text>
+</svg>

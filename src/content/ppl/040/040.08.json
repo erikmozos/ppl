@@ -1,0 +1,358 @@
+{
+ "lesson": {
+  "title": "Intoxicación: medicamentos, tabaco, alcohol, cafeína y drogas",
+  "summary": "Efectos sobre el rendimiento del piloto de medicamentos, tabaco, alcohol, cafeína y drogas, y marco normativo: SERA.2020 y MED.A.020, con las cifras de espera presentadas como recomendaciones.",
+  "objectives": [
+   "Aplicar la regla de no volar con medicación sin consulta médica",
+   "Explicar los efectos del alcohol, su eliminación lenta y su efecto sumado a la altitud",
+   "Distinguir lo que fija la norma (SERA.2020, MED.A.020) de lo que son recomendaciones (8 horas, 0,2 g/l)",
+   "Describir los efectos del tabaco y de la cafeína",
+   "Reconocer que las drogas son incompatibles con el vuelo"
+  ],
+  "sections": [
+   {
+    "title": "Marco normativo",
+    "text": [
+     "Dos normas europeas sostienen todo este bloque. **SERA.2020** (Reglamento (UE) 923/2012) prohíbe que una persona actúe como miembro de la tripulación de una aeronave mientras esté bajo la influencia de **sustancias psicoactivas o alcohol**, o cuando su aptitud para ejercer las funciones esté disminuida por el uso de cualquier sustancia. **MED.A.020** (Part-MED) obliga al titular a **no ejercer las atribuciones de su licencia mientras su aptitud médica esté disminuida**, y a pedir consejo médico antes de iniciar el uso regular de medicación.",
+     "Hay que tener claro lo que la norma no dice: **no fija un número de horas de espera ni una tasa máxima de alcohol** válida para el piloto privado. Las referencias de **8 horas desde la última bebida hasta el vuelo** («de la botella al acelerador») y de **0,2 g/l** de alcohol en sangre que se manejan en la práctica son **recomendaciones de buenas prácticas** (y en algunas normas nacionales u operadores, límites propios), pensadas para dejar un margen amplio. Si hay dudas sobre cuánto tiempo ha pasado, se espera más. La conducta segura es **no volar con alcohol en el organismo ni con resaca**."
+    ],
+    "verify": true
+   },
+   {
+    "title": "Alcohol",
+    "text": [
+     "El alcohol es un **depresor del sistema nervioso central**: reduce la atención, el juicio, la coordinación, la memoria y el tiempo de reacción, y produce **euforia y exceso de confianza** (el piloto no se da cuenta de su propia incapacidad). Perjudica la visión y es una causa de **hipoxia histotóxica**: las células no pueden utilizar el oxígeno. Por eso su efecto en altitud es mayor que en tierra: a unos miles de pies **la misma cantidad produce efectos mayores** (hipoxia añadida). También agrava el mareo cinético y la desorientación, ya que afecta al oído interno.",
+     "El hígado elimina el alcohol **muy despacio y a ritmo casi constante**, de unos 0,1 a 0,15 g/l por hora de media, con variaciones entre personas. **Nada lo acelera**: ni el café, ni una ducha fría, ni el aire fresco, ni dormir (que solo da tiempo). Y las consecuencias duran más que el alcohol en sangre: la **resaca** (deshidratación, fatiga, dolor de cabeza, náuseas, alteración del sueño) mantiene el rendimiento reducido durante horas, y el **nistagmo posicional por alcohol** (alteración del equilibrio por alcohol en el oído interno) puede durar **hasta 48 horas**. Una noche de bebida y poco sueño no deja a nadie en condiciones de volar a la mañana siguiente."
+    ],
+    "verify": true
+   },
+   {
+    "title": "Medicamentos",
+    "text": [
+     "Cualquier medicamento puede afectar al rendimiento, sea de receta o de venta libre. La regla básica: **no vuele con medicación nueva o regular sin consultar al médico examinador (AME) o al AeMC**, y no solo importa el medicamento sino **por qué se toma**: la enfermedad puede ser incompatible con el vuelo aunque el fármaco sea inocuo. Los grupos que más preocupan son: **antihistamínicos** (somnolencia, incluso los «no sedantes»), **descongestionantes** (palpitaciones, nerviosismo), **analgésicos fuertes y con codeína** (somnolencia y juicio alterado), **antitusígenos**, **somníferos y ansiolíticos**, **antidepresivos**, **antihipertensivos** (mareo, bajada de tensión), **antibióticos y antipalúdicos** (algunos producen mareo o alteraciones neurológicas) y la **anestesia local** (esperar a que desaparezca por completo y consultar).",
+     "La **automedicación** es la trampa: tomar «algo para el resfriado» y volar. Muchas pastillas combinan varios principios activos. Una norma útil es **probar cualquier fármaco nuevo en tierra y esperar a ver cómo sienta antes de volar** (los efectos secundarios pueden aparecer a las pocas horas o días). También afectan al vuelo las **vacunas** (malestar y fiebre) y los **suplementos y productos naturales** con efecto estimulante o sedante."
+    ]
+   },
+   {
+    "title": "Tabaco y cafeína",
+    "text": [
+     "El **tabaco** contiene nicotina (estimulante que acelera el pulso y estrecha las arterias) y produce **monóxido de carbono**: la hemoglobina del fumador está parcialmente ocupada, y al subir sufre más rápido hipoxia. Además daña los pulmones, la visión nocturna y aumenta el riesgo cardiovascular. Fumar pocas horas antes de volar equivale a empezar con una altitud fisiológica elevada. Dejar de fumar es lo único que lo corrige de verdad.",
+     "La **cafeína** es un estimulante útil con moderación, pero **no sustituye al sueño: solo enmascara la fatiga**. Dosis altas producen nerviosismo, temblor, taquicardia y, cuando el efecto pasa, un bajón. Tiene una vida media de varias horas, por lo que el café de la tarde puede alterar el sueño de esa noche. Es mejor beber agua y mantener un consumo estable que depender de ella en los vuelos largos."
+    ]
+   },
+   {
+    "title": "Drogas",
+    "text": [
+     "Las **drogas ilegales** (cannabis, cocaína, anfetaminas, opiáceos, alucinógenos) son totalmente incompatibles con el vuelo. Afectan a la percepción, el juicio y la coordinación, algunas con efectos que perduran días, y su uso problemático supone la pérdida de la aptitud médica y de la licencia (MED.A.020 y los requisitos médicos sobre uso problemático de sustancias). Las sustancias psicoactivas están cubiertas por SERA.2020. Los **medicamentos de uso indebido o sin prescripción** quedan en el mismo plano."
+    ]
+   }
+  ],
+  "numbers": [
+   "SERA.2020: prohibido actuar como tripulante bajo la influencia de alcohol o sustancias psicoactivas",
+   "MED.A.020: no ejercer con aptitud médica disminuida; consultar antes de usar medicación regular",
+   "8 horas y 0,2 g/l: recomendaciones, no un límite fijado en SERA.2020 para el PPL",
+   "Eliminación del alcohol: lenta (0,1-0,15 g/l por hora), nada la acelera",
+   "Alcohol en altitud: mayor efecto por la hipoxia añadida",
+   "La cafeína enmascara la fatiga; no la elimina"
+  ],
+  "traps": [
+   "Las 8 horas y los 0,2 g/l son recomendaciones y buenas prácticas, no un artículo de SERA.2020.",
+   "El café, la ducha o el aire fresco no aceleran la eliminación del alcohol.",
+   "Aun sin alcohol en sangre, la resaca reduce el rendimiento.",
+   "Los antihistamínicos «no sedantes» pueden dar somnolencia.",
+   "La cafeína no cura la fatiga."
+  ],
+  "sources": [
+   {
+    "title": "SERA.2020, Reglamento de Ejecución (UE) 923/2012",
+    "url": "https://eur-lex.europa.eu/eli/reg_impl/2012/923/oj"
+   },
+   {
+    "title": "Part-MED, MED.A.020 (Reglamento (UE) 1178/2011, Anexo IV)",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules"
+   },
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge, cap. 17",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   }
+  ],
+  "id": "040.08",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "040.08.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "El alcohol es un:",
+   "options": [
+    "Estimulante del sistema nervioso",
+    "Depresor del sistema nervioso central",
+    "Antídoto de la hipoxia",
+    "Fuente de oxígeno para el cerebro"
+   ],
+   "correct": 1,
+   "why": "Disminuye la atención, el juicio y la coordinación y da una falsa sensación de confianza.",
+   "whyNot": [
+    "No estimula el rendimiento.",
+    null,
+    "Agrava la hipoxia histotóxica.",
+    "No aporta oxígeno."
+   ],
+   "ref": "SERA.2020; medicina aeronáutica"
+  },
+  {
+   "id": "040.08.002",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Cómo afecta la altitud a los efectos del alcohol?",
+   "options": [
+    "Los reduce",
+    "No los modifica",
+    "Los elimina antes",
+    "Los aumenta, por la hipoxia añadida"
+   ],
+   "correct": 3,
+   "why": "El alcohol y la altura se suman: el cerebro recibe menos oxígeno y menos capacidad de utilizarlo.",
+   "whyNot": [
+    "No hay compensación.",
+    "Son efectos aditivos.",
+    "Tampoco acelera la eliminación.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.08.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Qué acelera la eliminación del alcohol del organismo?",
+   "options": [
+    "Nada: solo el paso del tiempo",
+    "Tomar café fuerte",
+    "Una ducha fría",
+    "Respirar oxígeno"
+   ],
+   "correct": 0,
+   "why": "El hígado lo metaboliza a ritmo casi constante y no se puede acelerar.",
+   "whyNot": [
+    null,
+    "El café solo despierta algo.",
+    "Despeja, pero no elimina.",
+    "El oxígeno no cambia el metabolismo hepático."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.08.004",
+   "type": "regla",
+   "level": 2,
+   "q": "Respecto a las «8 horas desde el último trago hasta el vuelo» y el 0,2 g/l, lo correcto es afirmar que:",
+   "options": [
+    "Son el límite legal fijado por SERA.2020",
+    "Aplican solo a pilotos comerciales",
+    "Son recomendaciones de buenas prácticas, no un límite fijado en SERA.2020 para el PPL",
+    "Son un requisito del certificado médico"
+   ],
+   "correct": 2,
+   "why": "SERA.2020 prohíbe volar bajo la influencia del alcohol sin fijar esas cifras; son márgenes de seguridad.",
+   "whyNot": [
+    "SERA.2020 no cita esos números.",
+    "Se aplican como referencia a todos los pilotos.",
+    null,
+    "No constan en el certificado médico."
+   ],
+   "ref": "SERA.2020; MED.A.020"
+  },
+  {
+   "id": "040.08.005",
+   "type": "regla",
+   "level": 2,
+   "q": "¿Qué prohíbe SERA.2020?",
+   "options": [
+    "Volar con más de cuatro horas de actividad",
+    "Llevar pasajeros con alcohol",
+    "Actuar como tripulante bajo la influencia de alcohol o sustancias psicoactivas",
+    "Beber agua en vuelo"
+   ],
+   "correct": 2,
+   "why": "La norma impide ejercer funciones críticas con la aptitud afectada por esas sustancias.",
+   "whyNot": [
+    "No regula la duración de la actividad.",
+    "No regula eso.",
+    null,
+    "No regula eso."
+   ],
+   "ref": "SERA.2020"
+  },
+  {
+   "id": "040.08.006",
+   "type": "regla",
+   "level": 2,
+   "q": "Antes de empezar a tomar un medicamento de forma regular, un piloto debe:",
+   "options": [
+    "Consultar a su AME o al AeMC",
+    "Tomarlo y observar los efectos en vuelo",
+    "Esperar a los resultados del siguiente reconocimiento",
+    "No hacer nada si es de venta libre"
+   ],
+   "correct": 0,
+   "why": "MED.A.020 obliga a pedir consejo médico ante el uso regular de medicación.",
+   "whyNot": [
+    null,
+    "Probarlo en vuelo es peligroso.",
+    "El reconocimiento puede ser meses después.",
+    "La medicación sin receta también puede afectar."
+   ],
+   "ref": "MED.A.020"
+  },
+  {
+   "id": "040.08.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "Los antihistamínicos (para la alergia o el resfriado) suelen producir:",
+   "options": [
+    "Más agudeza visual",
+    "Aumento de la presión parcial de oxígeno",
+    "Menos fatiga",
+    "Somnolencia y reducción del rendimiento"
+   ],
+   "correct": 3,
+   "why": "Muchos son sedantes, incluidos algunos que se anuncian como no sedantes.",
+   "whyNot": [
+    "No mejoran la visión.",
+    "No cambian la presión parcial.",
+    "Normalmente provocan fatiga.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.08.008",
+   "type": "concepto",
+   "level": 1,
+   "q": "La cafeína:",
+   "options": [
+    "Cura la fatiga",
+    "Enmascara la fatiga pero no la elimina",
+    "Elimina el alcohol",
+    "Aumenta el oxígeno en sangre"
+   ],
+   "correct": 1,
+   "why": "Es un estimulante: da alerta temporal, pero el cuerpo sigue necesitando dormir.",
+   "whyNot": [
+    "No sustituye al sueño.",
+    null,
+    "No tiene efecto sobre el alcohol.",
+    "No tiene relación con el oxígeno."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.08.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una consecuencia del tabaco relevante para el piloto es:",
+   "options": [
+    "Mejora la visión nocturna",
+    "El monóxido de carbono reduce el oxígeno transportado por la sangre",
+    "Aumenta la tolerancia a la altitud",
+    "Reduce el pulso"
+   ],
+   "correct": 1,
+   "why": "La hemoglobina del fumador está ocupada por CO.",
+   "whyNot": [
+    "La empeora.",
+    null,
+    "La disminuye.",
+    "Lo acelera."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.08.010",
+   "type": "concepto",
+   "level": 1,
+   "q": "El uso de drogas ilegales por un piloto:",
+   "options": [
+    "Se tolera si no se vuela ese día",
+    "Se permite en pequeña cantidad",
+    "Solo importa en vuelo comercial",
+    "Es incompatible con el vuelo y afecta a la aptitud médica"
+   ],
+   "correct": 3,
+   "why": "Alteran la percepción y el juicio, y su uso problemático invalida el certificado.",
+   "whyNot": [
+    "Algunas tienen efectos duraderos.",
+    "No hay cantidad segura.",
+    "Es aplicable al PPL también.",
+    null
+   ],
+   "ref": "SERA.2020; Part-MED"
+  },
+  {
+   "id": "040.08.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Qué es la «resaca» desde el punto de vista del vuelo?",
+   "options": [
+    "Una reducción del rendimiento que persiste aun sin alcohol en sangre",
+    "Un estado de mejor concentración",
+    "Una forma de hipoxia",
+    "Un síntoma sin importancia"
+   ],
+   "correct": 0,
+   "why": "La resaca deja deshidratación, fatiga y malestar durante horas.",
+   "whyNot": [
+    null,
+    "Es lo contrario.",
+    "No es hipoxia.",
+    "Afecta al juicio y a la atención."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.08.012",
+   "type": "concepto",
+   "level": 3,
+   "q": "Tras una noche de bebida, un piloto se levanta con 0,0 g/l en el alcoholímetro. Lo adecuado es:",
+   "options": [
+    "Volar, porque no hay alcohol",
+    "Tomar café para compensar",
+    "Valorar si está en condiciones de volar: puede persistir la resaca y la alteración del equilibrio",
+    "Volar solo en el circuito"
+   ],
+   "correct": 2,
+   "why": "Aunque no haya alcohol medible, puede haber nistagmo posicional y fatiga.",
+   "whyNot": [
+    "Quedan efectos residuales.",
+    "El café no compensa.",
+    null,
+    "El riesgo no depende del tipo de vuelo."
+   ],
+   "ref": "SERA.2020; MED.A.020"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.040.08.01",
+   "front": "SERA.2020",
+   "back": "Prohíbe actuar como tripulante bajo la influencia de alcohol o sustancias psicoactivas"
+  },
+  {
+   "id": "c.040.08.02",
+   "front": "8 horas y 0,2 g/l",
+   "back": "Recomendaciones de buenas prácticas para el alcohol, no un límite fijado por SERA.2020 en el PPL"
+  },
+  {
+   "id": "c.040.08.03",
+   "front": "Alcohol en altitud",
+   "back": "Efecto mayor por la hipoxia añadida; eliminación lenta (0,1-0,15 g/l/h) que nada acelera"
+  },
+  {
+   "id": "c.040.08.04",
+   "front": "Cafeína",
+   "back": "Enmascara la fatiga; no sustituye al sueño"
+  }
+ ]
+}

@@ -1,0 +1,714 @@
+{
+  "lesson": {
+    "id": "030.08",
+    "title": "Ascenso, crucero, autonomía y alcance",
+    "summary": "Cómo se leen las tablas de ascenso y de crucero de estilo POH, cuánto duran y cuánto alcanzan el combustible y el avión, qué velocidad da la máxima autonomía y cuál el máximo alcance, y cómo cambia todo con el viento.",
+    "objectives": [
+      "Leer tiempo, combustible y distancia de ascenso restando los valores de la altitud de salida a los de la de destino",
+      "Elegir una potencia de crucero en la tabla y obtener TAS y consumo",
+      "Calcular autonomía (tiempo) y alcance (distancia) con y sin viento",
+      "Distinguir la velocidad de máxima autonomía de la de máximo alcance y corregirla con el viento"
+    ],
+    "sections": [
+      {
+        "title": "El ascenso: qué da la tabla",
+        "text": [
+          "Un avión ligero asciende con **plena potencia** y a la velocidad de **Vy** (mejor régimen: más altura por minuto) o de **Vx** (mejor ángulo: más altura por distancia, para salvar obstáculos). Para planificar, el manual da una tabla o gráfica de **tiempo, combustible y distancia** que se emplean para subir desde el nivel del mar hasta cada altitud de presión, con la masa máxima, flaps arriba y temperatura ISA. Esos tres valores se leen en la altitud que te interesa.",
+          "No se entra con la altitud de salida: se leen los valores en la altitud de presión final y en la inicial, y se **restan**. Es el mismo método para los tres datos. Con el valor en nivel del mar igual a cero, desde un aeródromo al nivel del mar basta una lectura. Los datos que siguen son de un **avión de ejemplo** (1100 kg, Vy 76 kt): sirven para aprender el método y no son de ningún avión real."
+        ],
+        "table": {
+          "caption": "Ascenso del avión de ejemplo desde nivel del mar: masa máxima, flaps arriba, plena potencia, ISA, a Vy",
+          "head": [
+            "Altitud de presión (ft)",
+            "Tiempo (min)",
+            "Combustible (l)",
+            "Distancia en aire (NM)"
+          ],
+          "rows": [
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "2000",
+              "3",
+              "1,5",
+              "4"
+            ],
+            [
+              "4000",
+              "7",
+              "3,5",
+              "9"
+            ],
+            [
+              "6000",
+              "11",
+              "5,5",
+              "14"
+            ],
+            [
+              "8000",
+              "17",
+              "8,5",
+              "21"
+            ]
+          ],
+          "src": "Datos de ejemplo"
+        },
+        "examples": [
+          {
+            "q": "Asciendes desde un aeródromo a 1000 ft de elevación (PA 1000 ft) hasta 6000 ft. Calcula tiempo, combustible y distancia.",
+            "a": "A 1000 ft interpolas entre 0 y 2000: 1,5 min, 0,75 l y 2 NM. A 6000 ft: 11 min, 5,5 l y 14 NM. Restas: 9,5 min, 4,75 l y 12 NM."
+          },
+          {
+            "q": "¿Cuánto combustible se gasta de 2000 a 8000 ft?",
+            "a": "8,5 − 1,5 = 7,0 l."
+          }
+        ]
+      },
+      {
+        "title": "Gráfica de ascenso",
+        "text": [
+          "La misma información se presenta en gráficas: la altitud de presión en vertical y una línea para cada magnitud. Se entra por la altitud, se corta la línea y se baja hasta la escala horizontal. La que sigue es una versión propia y simplificada con los datos de la tabla, con la lectura del ejemplo anterior (de 1000 a 6000 ft)."
+        ],
+        "figure": "svg:030-ascenso",
+        "caption": "Tiempo, combustible y distancia de ascenso desde nivel del mar. Las dos líneas discontinuas marcan la lectura entre 1000 y 6000 ft: se lee en cada una y se resta.",
+        "note": {
+          "kind": "tip",
+          "text": "Si el aeródromo está por encima del nivel del mar, la tabla no se usa «tal cual»: o restas, o el manual ya incluye un método propio. Lee siempre las notas de la tabla."
+        }
+      },
+      {
+        "title": "Correcciones del ascenso: temperatura, viento y masa",
+        "text": [
+          "La tabla supone ISA. Si hace más calor, el avión asciende peor: **más tiempo, más combustible y más distancia**. El manual da una corrección, típicamente un porcentaje por cada 10 °C sobre ISA. En el avión de ejemplo, **+10 % por cada 10 °C sobre ISA** en los tres valores. A la inversa, con menos de ISA mejora el ascenso, aunque en un ejercicio de examen suele no aplicarse a la baja.",
+          "Con menos masa que la máxima, el ascenso mejora; muchos POH lo dan en tablas de varias masas. Y recuerda que la distancia de la tabla es **distancia en aire**: sobre el suelo se obtiene multiplicando el tiempo de ascenso por la velocidad respecto al suelo. En el avión de ejemplo la TAS media en ascenso es de unos 76 kt (14 NM en 11 min, de nivel del mar a 6000 ft)."
+        ],
+        "examples": [
+          {
+            "q": "Ascenso de 2000 a 6000 ft con ISA +20. ¿Cuánto tarda?",
+            "a": "Sin corrección: 11 − 3 = 8 min. Con +20 °C sobre ISA: +20 %, es decir 8 × 1,2 = 9,6 min."
+          },
+          {
+            "q": "Ascenso de nivel del mar a 6000 ft con 20 kt de viento de cara, TAS media 76 kt. ¿Qué distancia recorres sobre el suelo?",
+            "a": "Tiempo 11 min. Velocidad respecto al suelo: 76 − 20 = 56 kt. Distancia: 11/60 × 56 ≈ 10,3 NM (frente a 14 NM en aire en calma). Con 20 kt de cola: 76 + 20 = 96 kt, 17,6 NM."
+          }
+        ]
+      },
+      {
+        "title": "Techos y convergencia de Vx y Vy",
+        "text": [
+          "A medida que subes, la potencia disponible baja y el régimen de ascenso disminuye. **Vx aumenta ligeramente y Vy disminuye**, hasta que se juntan en el **techo absoluto**, donde el régimen de ascenso es cero. El **techo de servicio** es la altitud a la que el régimen máximo cae a 100 ft/min en los aviones monomotor de pistón (CS-23). En la práctica, el ascenso con plena potencia durante mucho tiempo calienta el motor, por eso el POH recomienda a veces ascender a velocidad mayor que Vy en días calurosos para refrigerar."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Potencia de crucero: la tabla",
+        "text": [
+          "En crucero eliges una **potencia** (como porcentaje de la máxima continua, o como RPM y presión de admisión en un motor de hélice de paso variable), y la tabla te da la **TAS** y el **consumo horario** para tu altitud de presión. Más potencia, más velocidad y más consumo; pero el consumo crece más deprisa que la velocidad, y por eso ir más rápido cuesta más combustible por milla. A la misma potencia, **más altitud da más TAS** con el mismo consumo, porque el aire menos denso resiste menos.",
+          "La tabla de ejemplo (110 l utilizables) está hecha con la mezcla ajustada según el POH. Para el consumo en crucero la mezcla se empobrece siguiendo el manual; con mezcla rica a altitud de crucero el consumo es mayor del que figura en la tabla."
+        ],
+        "table": {
+          "caption": "Crucero del avión de ejemplo: TAS (kt) y consumo (l/h) por altitud de presión y potencia",
+          "head": [
+            "PA (ft)",
+            "55 % potencia",
+            "65 % potencia",
+            "75 % potencia"
+          ],
+          "rows": [
+            [
+              "2000",
+              "97 kt · 22 l/h",
+              "105 kt · 26 l/h",
+              "112 kt · 31 l/h"
+            ],
+            [
+              "4000",
+              "100 kt · 22 l/h",
+              "108 kt · 26 l/h",
+              "115 kt · 31 l/h"
+            ],
+            [
+              "6000",
+              "103 kt · 22 l/h",
+              "111 kt · 26 l/h",
+              "118 kt · 31 l/h"
+            ]
+          ],
+          "src": "Datos de ejemplo"
+        },
+        "examples": [
+          {
+            "q": "Con PA 4000 ft y 65 % de potencia, ¿qué TAS y qué consumo da la tabla?",
+            "a": "108 kt y 26 l/h."
+          },
+          {
+            "q": "¿Qué altitud conviene para el mismo consumo y la mayor TAS entre las de la tabla?",
+            "a": "La más alta (6000 ft): a 65 %, 111 kt frente a 105 kt a 2000 ft con los mismos 26 l/h. Hay que compensar con lo que cuesta subir."
+          }
+        ]
+      },
+      {
+        "title": "Autonomía y alcance",
+        "text": [
+          "Son dos preguntas distintas. La **autonomía** es **cuánto tiempo** puedes volar con el combustible que llevas; el **alcance** es **cuánta distancia** recorres. La autonomía no depende del viento; el alcance sí."
+        ],
+        "formulas": [
+          {
+            "f": "Autonomía (h) = combustible utilizable (l) / consumo (l/h)",
+            "note": null
+          },
+          {
+            "f": "Alcance (NM) = autonomía (h) × velocidad respecto al suelo (kt)",
+            "note": null
+          },
+          {
+            "f": "Alcance específico (NM/l) = GS / consumo",
+            "note": null
+          }
+        ],
+        "examples": [
+          {
+            "q": "110 l utilizables, 65 % de potencia a PA 4000 ft (108 kt, 26 l/h). Autonomía y alcance en calma.",
+            "a": "Autonomía: 110 / 26 = 4,23 h, 4 h 14 min. Alcance: 4,23 × 108 = 457 NM."
+          },
+          {
+            "q": "El mismo vuelo con 20 kt de viento de cara.",
+            "a": "La autonomía no cambia (4 h 14 min). GS = 108 − 20 = 88 kt; alcance = 4,23 × 88 = 372 NM."
+          },
+          {
+            "q": "Con 30 kt de cola.",
+            "a": "GS = 138 kt; alcance = 4,23 × 138 = 584 NM."
+          }
+        ]
+      },
+      {
+        "title": "Comparar regímenes de potencia",
+        "text": [
+          "Para el avión de ejemplo con 110 l, PA 4000 ft y aire en calma: al 55 % la autonomía es de 5,0 h y el alcance de 500 NM; al 65 %, 4,2 h y 457 NM; al 75 %, 3,5 h y 408 NM. Ir más rápido acorta las dos cosas, y es una regla general: **en calma, más velocidad siempre gasta más combustible por milla**."
+        ],
+        "figure": "svg:030-crucero",
+        "caption": "Autonomía y alcance en calma de la tabla de crucero con 110 l utilizables. La potencia baja da más tiempo y más distancia."
+      },
+      {
+        "title": "Velocidad de máxima autonomía y de máximo alcance",
+        "text": [
+          "La aerodinámica te da dos velocidades que no coinciden. Con la curva de **potencia necesaria** frente a velocidad: la **máxima autonomía** se consigue en el mínimo de esa curva (mínima potencia, mínimo consumo por hora), a una velocidad de aproximadamente **0,76 × VMD**. El **máximo alcance** se consigue con la mínima resistencia, es decir la mejor relación L/D, que es la velocidad **VMD** (de mínima resistencia, también la de máximo planeo): gráficamente, la tangente a la curva trazada desde el origen. VMD es mayor que la velocidad de máxima autonomía.",
+          "La figura es una curva de ejemplo con VMD de 85 kt. A: mínima potencia (autonomía). B: tangente desde el origen (alcance en calma). Con **viento de cara** la tangente se traza desde un punto desplazado, y sale una velocidad mayor (C); con **viento de cola**, menor (D)."
+        ],
+        "figure": "svg:030-alcance",
+        "caption": "Potencia necesaria frente a velocidad: A, máxima autonomía; B, máximo alcance en calma; C, alcance con viento de cara; D, con viento de cola."
+      },
+      {
+        "title": "Efecto del viento en el crucero",
+        "bullets": [
+          "El viento **no cambia la autonomía** (el consumo por hora no depende de él), pero **sí el alcance**: la distancia es GS × tiempo.",
+          "Con **viento de cara**, conviene volar **algo más deprisa** que la velocidad de máximo alcance en calma: así pasas menos tiempo expuesto al viento. Con **viento de cola**, algo más despacio.",
+          "La velocidad de máxima autonomía no depende del viento: es la de mínima potencia.",
+          "En la planificación con tablas, se calcula la GS con el viento previsto y se aplica a la TAS de la tabla; se redondea del lado de la seguridad (más consumo, menos GS).",
+          "Los gráficos del POH de aviones reales traen la tabla con presión, temperatura y RPM; la mecánica es la de este bloque. Puedes comprobar tus cálculos con la calculadora de combustible, tiempo y distancia."
+        ],
+        "figure": "calc:fuel"
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "No restar el ascenso de la altitud de salida: leer solo el valor final.",
+          "Dar por buena una tabla ISA con día caluroso y no corregir.",
+          "Confundir distancia en aire (la de la tabla) con distancia sobre el suelo.",
+          "Pensar que el viento cambia la autonomía.",
+          "Usar el consumo en l/h de una potencia y la TAS de otra.",
+          "Olvidar que los datos de alcance suponen el combustible utilizable, sin la reserva final: tu alcance operativo es menor."
+        ]
+      }
+    ],
+    "numbers": [
+      "Ascenso: leer en la altitud final y en la inicial y restar, para tiempo, combustible y distancia",
+      "La distancia de ascenso de la tabla es distancia en aire: se pasa a suelo con la GS",
+      "Autonomía = combustible / consumo; alcance = autonomía × GS",
+      "Máxima autonomía: mínima potencia, ≈ 0,76 VMD; máximo alcance en calma: VMD (mínima resistencia)",
+      "Con viento de cara, más rápido que la velocidad de máximo alcance; con viento de cola, más lento",
+      "El viento no cambia la autonomía; sí el alcance"
+    ],
+    "traps": [
+      "La temperatura sobre ISA alarga el ascenso: hay que corregir.",
+      "Autonomía y alcance no se maximizan con la misma velocidad.",
+      "En un ascenso con viento, la distancia en aire de la tabla no es la distancia sobre el suelo.",
+      "A la misma potencia, más altitud da más TAS con el mismo consumo, pero subir también cuesta tiempo y combustible."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 11",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Manuales de vuelo de aviones ligeros (AFM/POH): secciones de ascenso, crucero y alcance, en general"
+      },
+      {
+        "title": "ENAIRE, AIP España (GEN 1.7, ENR 1.10, AD)",
+        "url": "https://aip.enaire.es"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "030.08.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La velocidad de mejor régimen de ascenso, Vy, es la que da:",
+      "options": [
+        "Más altura ganada por unidad de distancia",
+        "Más altura ganada por unidad de tiempo",
+        "Mayor autonomía en crucero",
+        "El menor consumo por milla"
+      ],
+      "correct": 1,
+      "why": "Vy da el máximo régimen de ascenso (ft/min). Vx, en cambio, da el máximo ángulo (más altura por distancia).",
+      "whyNot": [
+        "Es la definición de Vx, la del mejor ángulo, para salvar obstáculos.",
+        null,
+        "La autonomía en crucero depende de la potencia mínima, no de Vy.",
+        "El consumo por milla se relaciona con el alcance, no con el ascenso."
+      ],
+      "ref": "POH; PHAK cap. 11"
+    },
+    {
+      "id": "030.08.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "Al ganar altitud en un ascenso a plena potencia, Vx y Vy:",
+      "options": [
+        "Se alejan entre sí",
+        "Permanecen constantes",
+        "Vx baja y Vy sube",
+        "Se acercan hasta coincidir en el techo absoluto"
+      ],
+      "correct": 3,
+      "why": "Con la altitud Vx aumenta ligeramente y Vy disminuye; se juntan en el techo absoluto, donde el régimen de ascenso es nulo.",
+      "whyNot": [
+        "Es al revés: convergen.",
+        "Cambian ligeramente con la altitud.",
+        "Es justo lo contrario: Vx sube y Vy baja.",
+        null
+      ],
+      "ref": "PHAK cap. 11"
+    },
+    {
+      "id": "030.08.003",
+      "type": "calculo",
+      "level": 1,
+      "q": "En la tabla de ascenso del avión de ejemplo, ¿cuánto combustible se gasta desde nivel del mar hasta PA 6000 ft?",
+      "options": [
+        "5,5 l",
+        "3,5 l",
+        "8,5 l",
+        "11 l"
+      ],
+      "correct": 0,
+      "why": "En la fila de 6000 ft la tabla da 5,5 l de combustible desde nivel del mar.",
+      "whyNot": [
+        null,
+        "3,5 l es el valor de 4000 ft.",
+        "8,5 l es el valor de 8000 ft.",
+        "11 es el tiempo en minutos, no el combustible."
+      ],
+      "ref": "Tabla de ejemplo, lección"
+    },
+    {
+      "id": "030.08.004",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con la tabla de ascenso de ejemplo, ¿cuánto tiempo se tarda de PA 2000 a PA 6000 ft?",
+      "options": [
+        "11 min",
+        "3 min",
+        "8 min",
+        "14 min"
+      ],
+      "correct": 2,
+      "why": "Se restan los valores: 11 − 3 = 8 min. No se lee solo el valor final.",
+      "whyNot": [
+        "11 min es el valor desde nivel del mar a 6000 ft, sin restar el inicial.",
+        "3 min es el tiempo de nivel del mar a 2000 ft.",
+        null,
+        "14 es la distancia en NM de nivel del mar a 6000 ft."
+      ],
+      "ref": "Tabla de ejemplo, lección"
+    },
+    {
+      "id": "030.08.005",
+      "type": "calculo",
+      "level": 2,
+      "q": "Ascenso desde un aeródromo con PA 1000 ft hasta 6000 ft con la tabla de ejemplo (interpola linealmente). El combustible consumido es:",
+      "options": [
+        "5,5 l",
+        "5,25 l",
+        "0,75 l",
+        "4,75 l"
+      ],
+      "correct": 3,
+      "why": "A 1000 ft: 0,75 l (punto medio entre 0 y 1,5 l). A 6000 ft: 5,5 l. Diferencia: 5,5 − 0,75 = 4,75 l.",
+      "whyNot": [
+        "5,5 l es el valor sin restar el de 1000 ft.",
+        "5,25 l resulta de restar mal 0,25 l.",
+        "0,75 l es el valor interpolado de la altitud de salida.",
+        null
+      ],
+      "ref": "Tabla de ejemplo, lección"
+    },
+    {
+      "id": "030.08.006",
+      "type": "calculo",
+      "level": 2,
+      "q": "Ascenso de 2000 a 6000 ft en un día ISA +20, con la corrección de ejemplo de +10 % por cada 10 °C. El tiempo es:",
+      "options": [
+        "9,6 min",
+        "8,8 min",
+        "8 min",
+        "11,0 min"
+      ],
+      "correct": 0,
+      "why": "Tiempo ISA: 11 − 3 = 8 min. Con +20 °C sobre ISA: +20 %, 8 × 1,2 = 9,6 min.",
+      "whyNot": [
+        null,
+        "8,8 min aplica solo un 10 %.",
+        "8 min es el tiempo sin corrección.",
+        "11 min es el valor desde nivel del mar, sin restar."
+      ],
+      "ref": "Tabla de ejemplo, lección"
+    },
+    {
+      "id": "030.08.007",
+      "type": "calculo",
+      "level": 3,
+      "q": "Ascenso de nivel del mar a PA 6000 ft: 11 min, TAS media en ascenso 76 kt, viento de cara de 20 kt. La distancia recorrida sobre el suelo es de aproximadamente:",
+      "options": [
+        "14,0 NM",
+        "17,6 NM",
+        "10,3 NM",
+        "8,4 NM"
+      ],
+      "correct": 2,
+      "why": "GS = 76 − 20 = 56 kt. Distancia = 11/60 × 56 ≈ 10,3 NM.",
+      "whyNot": [
+        "14 NM es la distancia en aire de la tabla.",
+        "17,6 NM sería con 20 kt de viento de cola.",
+        null,
+        "8,4 NM resulta de aplicar el viento dos veces."
+      ],
+      "ref": "Lección, ascenso con viento"
+    },
+    {
+      "id": "030.08.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "En una tabla de ascenso del POH, las temperaturas por encima de ISA:",
+      "options": [
+        "Reducen el tiempo y el combustible",
+        "Aumentan tiempo, combustible y distancia",
+        "Solo aumentan la distancia",
+        "No afectan si el avión lleva menos masa"
+      ],
+      "correct": 1,
+      "why": "Más calor, menos densidad y menos potencia y sustentación: el ascenso es más lento y consume más combustible y distancia.",
+      "whyNot": [
+        "Es al revés: el ascenso empeora.",
+        null,
+        "Aumentan los tres valores, no solo la distancia.",
+        "La menor masa mejora el ascenso, pero no anula el efecto del calor."
+      ],
+      "ref": "POH; PHAK cap. 11"
+    },
+    {
+      "id": "030.08.009",
+      "type": "concepto",
+      "level": 1,
+      "q": "La autonomía de un avión es:",
+      "options": [
+        "La distancia máxima que puede recorrer",
+        "El tiempo que puede volar con el combustible utilizable",
+        "La altitud máxima de crucero",
+        "El combustible gastado por hora"
+      ],
+      "correct": 1,
+      "why": "Autonomía = combustible utilizable / consumo horario. Se expresa en horas.",
+      "whyNot": [
+        "Eso es el alcance.",
+        null,
+        "Eso es el techo.",
+        "Eso es el consumo horario, que es un dato de entrada."
+      ],
+      "ref": "Concepto de planificación"
+    },
+    {
+      "id": "030.08.010",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un avión lleva 110 l utilizables y consume 26 l/h. Su autonomía es de, aproximadamente:",
+      "options": [
+        "3 h 33 min",
+        "4 h 40 min",
+        "5 h 00 min",
+        "4 h 14 min"
+      ],
+      "correct": 3,
+      "why": "110 / 26 = 4,23 h = 4 h 14 min.",
+      "whyNot": [
+        "3 h 33 min resulta de dividir 110 entre 31.",
+        "4 h 40 min no corresponde a ese consumo.",
+        "5 h es la autonomía a 22 l/h.",
+        null
+      ],
+      "ref": "Lección, autonomía"
+    },
+    {
+      "id": "030.08.011",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con PA 4000 ft, 75 % de potencia (115 kt, 31 l/h), 110 l y aire en calma, el alcance es de aproximadamente:",
+      "options": [
+        "408 NM",
+        "457 NM",
+        "500 NM",
+        "325 NM"
+      ],
+      "correct": 0,
+      "why": "Autonomía 110 / 31 = 3,55 h; alcance 3,55 × 115 = 408 NM.",
+      "whyNot": [
+        null,
+        "457 NM es el valor al 65 %.",
+        "500 NM es el valor al 55 %.",
+        "325 NM no sale de ninguna combinación."
+      ],
+      "ref": "Tabla de ejemplo, lección"
+    },
+    {
+      "id": "030.08.012",
+      "type": "calculo",
+      "level": 3,
+      "q": "Alcance con 110 l a 108 kt y 26 l/h con 20 kt de viento de cara:",
+      "options": [
+        "457 NM",
+        "340 NM",
+        "372 NM",
+        "541 NM"
+      ],
+      "correct": 2,
+      "why": "GS = 108 − 20 = 88 kt. Autonomía 4,23 h. Alcance = 4,23 × 88 = 372 NM.",
+      "whyNot": [
+        "457 NM es el alcance en calma.",
+        "340 NM resulta de restar el viento dos veces.",
+        null,
+        "541 NM se obtiene con 20 kt de viento de cola, no de cara."
+      ],
+      "ref": "Lección, viento"
+    },
+    {
+      "id": "030.08.013",
+      "type": "concepto",
+      "level": 1,
+      "q": "Un viento de cara de 25 kt en crucero:",
+      "options": [
+        "Reduce la autonomía y el alcance",
+        "Aumenta la autonomía",
+        "Solo afecta a la velocidad indicada",
+        "No cambia la autonomía, pero reduce el alcance"
+      ],
+      "correct": 3,
+      "why": "La autonomía es tiempo y no depende del viento; el alcance = GS × tiempo, y la GS baja.",
+      "whyNot": [
+        "La autonomía en tiempo no cambia.",
+        "El viento de cara no aumenta el tiempo de vuelo posible.",
+        "Afecta a la GS, no a la IAS.",
+        null
+      ],
+      "ref": "Planificación"
+    },
+    {
+      "id": "030.08.014",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un avión de hélice, la velocidad de máximo alcance en calma se consigue en:",
+      "options": [
+        "La velocidad de mínima resistencia, VMD",
+        "La velocidad de mínima potencia",
+        "La velocidad de pérdida con flaps",
+        "La velocidad máxima del crucero"
+      ],
+      "correct": 0,
+      "why": "El máximo alcance se logra con la mejor relación L/D (mínima resistencia), que es VMD: tangente desde el origen a la curva de potencia.",
+      "whyNot": [
+        null,
+        "La mínima potencia da la máxima autonomía, no el alcance.",
+        "No tiene relación con el alcance.",
+        "Ir al máximo consume mucho más por milla."
+      ],
+      "ref": "Principios de vuelo; Thom"
+    },
+    {
+      "id": "030.08.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "La velocidad de máxima autonomía, comparada con la de máximo alcance en calma, es:",
+      "options": [
+        "Mayor, de aproximadamente 1,3 VMD",
+        "Igual",
+        "Menor, de aproximadamente 0,76 VMD",
+        "No tiene relación con VMD"
+      ],
+      "correct": 2,
+      "why": "La máxima autonomía está en el mínimo de la curva de potencia, a unos 0,76 de VMD, menor que la de máximo alcance.",
+      "whyNot": [
+        "Es al revés: la de autonomía es menor.",
+        "Son distintas.",
+        null,
+        "La relación es de aproximadamente 0,76."
+      ],
+      "ref": "Principios de vuelo; Thom"
+    },
+    {
+      "id": "030.08.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con viento de cara fuerte, para maximizar el alcance conviene volar:",
+      "options": [
+        "Algo más despacio que la velocidad de máximo alcance en calma",
+        "Algo más rápido que la velocidad de máximo alcance en calma",
+        "A la velocidad de máxima autonomía",
+        "A velocidad de pérdida"
+      ],
+      "correct": 1,
+      "why": "Se pasa menos tiempo luchando contra el viento: la tangente desde el punto desplazado da una velocidad mayor.",
+      "whyNot": [
+        "Eso se hace con viento de cola.",
+        null,
+        "Reduciría aún más la GS.",
+        "No es seguro ni eficiente."
+      ],
+      "ref": "Principios de vuelo; planificación"
+    },
+    {
+      "id": "030.08.017",
+      "type": "lectura",
+      "level": 2,
+      "q": "En la figura de potencia necesaria frente a velocidad, el punto A (mínimo de la curva) corresponde a:",
+      "figure": "svg:030-alcance",
+      "options": [
+        "El máximo alcance en calma",
+        "La máxima autonomía",
+        "El máximo alcance con viento de cara",
+        "La mínima resistencia"
+      ],
+      "correct": 1,
+      "why": "El mínimo de potencia necesaria da el mínimo consumo por hora: la máxima autonomía.",
+      "whyNot": [
+        "El alcance en calma está en B, la tangente desde el origen.",
+        null,
+        "Con viento de cara se usa C, a mayor velocidad.",
+        "La mínima resistencia es VMD, en B."
+      ],
+      "ref": "Figura 030-alcance"
+    },
+    {
+      "id": "030.08.018",
+      "type": "lectura",
+      "level": 2,
+      "q": "Según la gráfica de ascenso de ejemplo, ¿cuántos minutos hacen falta para subir de PA 1000 ft a 6000 ft?",
+      "figure": "svg:030-ascenso",
+      "options": [
+        "11 min",
+        "1,5 min",
+        "12 min",
+        "9,5 min"
+      ],
+      "correct": 3,
+      "why": "Se lee el tiempo en 6000 ft (11 min) y en 1000 ft (1,5 min) y se resta: 9,5 min.",
+      "whyNot": [
+        "11 min es el tiempo desde nivel del mar.",
+        "1,5 min es el tiempo hasta 1000 ft.",
+        "12 es la distancia en NM entre ambas altitudes, no el tiempo.",
+        null
+      ],
+      "ref": "Figura 030-ascenso"
+    },
+    {
+      "id": "030.08.019",
+      "type": "concepto",
+      "level": 2,
+      "q": "En las tablas de crucero, a la misma potencia y con el mismo consumo, al aumentar la altitud de presión:",
+      "options": [
+        "Aumenta la TAS",
+        "Aumenta el consumo horario",
+        "Disminuye la TAS",
+        "Disminuye el alcance"
+      ],
+      "correct": 0,
+      "why": "A igual potencia, el aire menos denso ofrece menos resistencia y la TAS sube. El consumo se mantiene.",
+      "whyNot": [
+        null,
+        "El consumo depende de la potencia, no de la altitud.",
+        "Disminuye la IAS, pero la TAS aumenta.",
+        "El alcance aumenta al subir la TAS."
+      ],
+      "ref": "POH; PHAK cap. 11"
+    },
+    {
+      "id": "030.08.020",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un vuelo de 200 NM en calma a 108 kt y 26 l/h. El combustible de crucero es:",
+      "options": [
+        "52 l",
+        "41 l",
+        "48 l",
+        "65 l"
+      ],
+      "correct": 2,
+      "why": "Tiempo 200 / 108 = 1,85 h. Combustible 1,85 × 26 ≈ 48 l.",
+      "whyNot": [
+        "52 l resulta de usar 100 kt en lugar de 108.",
+        "41 l es inferior al correcto.",
+        null,
+        "65 l corresponde a 2,5 h."
+      ],
+      "ref": "Lección, combustible de crucero"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.030.08.01",
+      "front": "Ascenso con tabla: cómo se obtiene el tiempo entre dos altitudes",
+      "back": "Se lee en la altitud final y en la inicial, y se restan los valores (igual con combustible y distancia)"
+    },
+    {
+      "id": "c.030.08.02",
+      "front": "Autonomía y alcance: fórmulas",
+      "back": "Autonomía = combustible / consumo; alcance = autonomía × GS. El viento solo cambia el alcance"
+    },
+    {
+      "id": "c.030.08.03",
+      "front": "Máxima autonomía frente a máximo alcance",
+      "back": "Autonomía: mínima potencia (≈ 0,76 VMD). Alcance en calma: VMD. Con viento de cara, algo más rápido"
+    },
+    {
+      "id": "c.030.08.04",
+      "front": "Convergencia de Vx y Vy",
+      "back": "Con la altitud Vx sube y Vy baja; coinciden en el techo absoluto (régimen 0)"
+    }
+  ]
+}

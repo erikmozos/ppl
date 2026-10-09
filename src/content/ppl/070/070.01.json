@@ -1,0 +1,996 @@
+{
+  "lesson": {
+    "id": "070.01",
+    "title": "Anexo 6 y Part-NCO",
+    "summary": "El marco operacional de la aviación general: Anexo 6 de la OACI y Part-NCO. Responsabilidades del piloto al mando, documentos a bordo, mercancías peligrosas, dispositivos electrónicos, briefing a pasajeros, preparación del vuelo, hielo, oxígeno y equipos de emergencia.",
+    "objectives": [
+      "Saber a quién se aplica Part-NCO y qué diferencia hay con NCC y SPO",
+      "Enumerar las responsabilidades del piloto al mando y los documentos que deben ir a bordo",
+      "Aplicar las reglas de briefing a pasajeros, preparación del vuelo, hielo y situaciones simuladas",
+      "Conocer los requisitos de oxígeno y de equipos de emergencia: ELT, chalecos, balsas y botiquín"
+    ],
+    "sections": [
+      {
+        "title": "El marco normativo: Anexo 6 y Part-NCO",
+        "text": [
+          "El **Anexo 6 al Convenio de Chicago** (OACI) regula la operación de aeronaves. Su **Parte I** se aplica al transporte aéreo comercial internacional y su **Parte II** a la **aviación general internacional**. En Europa, el Reglamento (UE) 965/2012 lo desarrolla en varias partes de requisitos: Part-CAT (transporte comercial), Part-NCC (**operaciones no comerciales con aeronaves complejas**), Part-NCO (**operaciones no comerciales con aeronaves a motor no complejas**) y Part-SPO (operaciones especializadas).",
+          "Un PPL que vuela un PA-28 o un C172 por placer o por instrucción opera bajo **Part-NCO**. Una aeronave a motor se considera **compleja** si tiene una masa máxima al despegue superior a 5700 kg, una configuración de más de 9 asientos de pasajeros, necesita al menos dos pilotos, tiene turborreactor o más de un turbohélice, o es un helicóptero con más de 19 asientos o con dos pilotos. Part-NCO es una norma más ligera que Part-CAT: confía más en el criterio del piloto."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Responsabilidades del piloto al mando",
+        "text": [
+          "El **piloto al mando (PIC)** es el responsable de la seguridad de la aeronave, de las personas a bordo y de cualquier carga durante toda la operación, y tiene la **autoridad** para tomar las decisiones necesarias para ello. Esto incluye verificar antes de cada vuelo que la aeronave está en condiciones de volar, que la información de masa y centrado es correcta, que se ha preparado el vuelo, y que los pasajeros han recibido las instrucciones de seguridad. También responde de cumplir las leyes del Estado sobre el que vuela y de usar la fraseología y el idioma que corresponda.",
+          "Hay obligaciones personales que no se delegan: **no volar bajo los efectos del alcohol, drogas o medicamentos** que reduzcan la capacidad (SERA.2020 y MED.A.020), ni con fatiga o enfermedad que afecte a la seguridad. Las **8 horas «de la botella al mando»** son una recomendación de buena práctica, no la única regla ni el único límite legal. Los **sucesos de seguridad** (incidentes y accidentes) se notifican según el Reglamento (UE) 376/2014, en un plazo de **72 horas** desde que el piloto tiene conocimiento."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Documentos a bordo (NCO.GEN.135)",
+        "text": [
+          "En cada vuelo debe llevarse a bordo la documentación que exige NCO.GEN.135. La lista va a ser la que se pregunte con más frecuencia, y hay documentos del **avión** y del **piloto**:"
+        ],
+        "table": {
+          "caption": "Documentos a bordo según NCO.GEN.135 (aeronaves a motor no complejas) y obligaciones personales del piloto",
+          "head": [
+            "Documento",
+            "Observación"
+          ],
+          "rows": [
+            [
+              "Manual de vuelo (AFM) o equivalente",
+              "El POH aprobado, actualizado"
+            ],
+            [
+              "Certificado de matrícula (original)",
+              "Emitido por AESA"
+            ],
+            [
+              "Certificado de aeronavegabilidad (original)",
+              "Con su certificado de revisión de la aeronavegabilidad (ARC), según la normativa de aeronavegabilidad continuada"
+            ],
+            [
+              "Certificado de ruido",
+              "Si es aplicable"
+            ],
+            [
+              "Licencia de estación de aeronave (radio)",
+              "Si es aplicable"
+            ],
+            [
+              "Certificado de seguro de responsabilidad civil frente a terceros",
+              "Obligatorio"
+            ],
+            [
+              "Diario de a bordo o equivalente",
+              "Registro de los vuelos de la aeronave"
+            ],
+            [
+              "Plan de vuelo presentado",
+              "Detalles del plan ATS, si procede"
+            ],
+            [
+              "Cartas aeronáuticas vigentes y adecuadas",
+              "Para la ruta y las rutas razonables de desvío"
+            ],
+            [
+              "Señales visuales y procedimientos de interceptación",
+              "Para aviones interceptores e interceptados"
+            ],
+            [
+              "Información sobre servicios de búsqueda y salvamento del área",
+              "De la zona del vuelo previsto"
+            ],
+            [
+              "Licencia, certificado médico y documento de identidad con foto del piloto",
+              "FCL.045: el piloto los lleva consigo"
+            ]
+          ],
+          "src": "NCO.GEN.135; FCL.045"
+        },
+        "note": {
+          "kind": "warn",
+          "text": "El certificado de revisión de mantenimiento (CRS) no es un documento obligatorio a bordo: forma parte de los registros de mantenimiento. Comprueba el ARC y la lista exacta con el reglamento vigente y con el manual de tu escuela."
+        },
+        "verify": true
+      },
+      {
+        "title": "Mercancías peligrosas y dispositivos electrónicos",
+        "text": [
+          "En aviación general el piloto al mando debe asegurarse de que **no se transportan mercancías peligrosas** (combustibles, baterías de litio fuera de norma, gases, explosivos, material radiactivo) salvo las que la normativa permite y siempre en las condiciones de las Instrucciones Técnicas de la OACI. Una bombona de oxígeno medicinal, un cartucho de bengala de supervivencia aprobado o el equipaje con una batería de litio pequeña en su bolsa normal son excepciones que sí se contemplan; transportar gasolina en una garrafa en la cabina no lo es.",
+          "Los **dispositivos electrónicos portátiles** (teléfonos, tabletas, auriculares) solo pueden usarse a bordo si el piloto al mando comprueba que **no interfieren** con los sistemas de la aeronave. En la práctica, los teléfonos se ponen en modo avión y las tabletas con cartas electrónicas son una ayuda de navegación, no sustituyen a los instrumentos obligatorios."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Briefing a pasajeros (NCO.OP.130)",
+        "text": [
+          "Antes del vuelo (o durante él, cuando sea más oportuno) el piloto al mando debe **informar a los pasajeros** sobre los equipos y los procedimientos de seguridad. La información típica incluye: uso de **cinturones y arneses** (abrochados al despegar, aterrizar y durante turbulencias), cómo **abrir las puertas y las salidas de emergencia**, ubicación y uso del **extintor, botiquín, ELT y chalecos**, **posición de seguridad** en un aterrizaje de emergencia, prohibición de fumar y uso de dispositivos electrónicos, y qué hacer tras un aterrizaje forzoso. Es un briefing breve pero obligatorio: acostúmbrate a hacerlo siempre, aunque los pasajeros ya hayan volado contigo."
+        ]
+      },
+      {
+        "title": "Preparación del vuelo y alternativos (NCO.OP.135)",
+        "text": [
+          "Antes de iniciar un vuelo, el piloto debe comprobar que las instalaciones y los servicios necesarios están disponibles y utilizables, y haber estudiado la **meteorología disponible** (partes y pronósticos), el combustible, la información de aeródromos y las **alternativas** por si el vuelo no puede completarse como estaba previsto. En VFR el vuelo solo se inicia o continúa cuando las condiciones a lo largo de la ruta y en el destino permiten volar VFR (SERA.5001 y SERA.5005). Si la previsión no garantiza que en tu hora de llegada podrás aterrizar en destino, hace falta un **alternativo** y combustible para llegar a él (bloque 030.10)."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Hielo en tierra y en vuelo",
+        "text": [
+          "**En tierra** (NCO.OP.165): no despegues con escarcha, hielo o nieve adheridos al avión, ni siquiera en una fina capa: alteran el perfil del ala, aumentan la resistencia y la velocidad de pérdida y pueden bloquear los mandos o el tubo de Pitot. Se elimina antes de volar, y se comprueba de nuevo si ha pasado tiempo. **En vuelo** (NCO.OP.170): una aeronave sin certificación para volar en condiciones de formación de hielo conocidas debe salir de ellas **sin demora**, cambiando de altitud o de ruta. La formación de hielo en el carburador o en el parabrisas son casos específicos que se tratan en 020 y 050."
+        ]
+      },
+      {
+        "title": "Situaciones simuladas y atenuación de ruido",
+        "text": [
+          "Si llevas pasajeros o carga, **no se simulan situaciones anormales o de emergencia** ni condiciones de vuelo por instrumentos con medios artificiales (NCO.OP.180): entrenas con instructor o solo. Los procedimientos de **atenuación de ruido** se cumplen siempre que sea posible, pero **la seguridad prevalece** sobre ellos (NCO.OP.120): si el procedimiento compromete la seguridad, no se sigue."
+        ]
+      },
+      {
+        "title": "Oxígeno suplementario (NCO.OP.190 y NCO.IDE.A)",
+        "text": [
+          "A mayor altitud hay menos oxígeno disponible, y la **hipoxia** (falta de oxígeno) deteriora el juicio sin que te des cuenta. El piloto al mando debe usar oxígeno suplementario **siempre que determine que la falta de oxígeno puede deteriorar las facultades de la tripulación o dañar a los pasajeros**. Como referencia habitual de las normas europeas para aviones no presurizados: **tripulación** con oxígeno cuando el vuelo supera **10 000 ft** de altitud de presión durante más de 30 minutos y siempre por encima de **13 000 ft**; **pasajeros** a partir de **13 000 ft**. La mayoría de los vuelos de un PPL de escuela no llegan a estos niveles; si vas a hacerlo, planifica el oxígeno antes de despegar."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Equipos: ELT, chalecos, balsas, botiquín y otros",
+        "bullets": [
+          "**ELT** (transmisor de localización de emergencia): emite en **121,5 y 406 MHz**. En la normativa que se estudia en el curso, el ELT debe ser **automático si el certificado de aeronavegabilidad es posterior al 1-7-2008**; en aviones de 6 asientos o menos puede sustituirse por una **baliza personal (PLB)** llevada por el piloto o un pasajero.",
+          "**Chalecos salvavidas**: son obligatorios en **monomotores** cuando el vuelo se hace sobre el agua **más allá de la distancia de planeo hasta tierra** (o cuando el despegue o el aterrizaje se hacen sobre el agua con riesgo de amaraje).",
+          "**Balsas y ELT de supervivencia**: se valoran cuando el vuelo sobre el agua supera **30 minutos** o **50 NM** (el menor) hasta tierra apta.",
+          "**Botiquín de primeros auxilios**: debe ir a bordo.",
+          "**Instrumentos mínimos VFR de día**: brújula magnética, reloj con horas, minutos y segundos, altímetro de presión y anemómetro (NCO.IDE.A). De noche se añaden más instrumentos y luces.",
+          "**Cinturones y arneses**: un asiento con cinturón para cada persona; arnés para el piloto."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Pensar que el certificado médico de un pasajero es un documento de a bordo.",
+          "Llevar documentos fotocopiados cuando se exigen originales.",
+          "Dar por válido un briefing solo con los pasajeros que ya han volado.",
+          "Despegar con escarcha en el ala «porque es muy fina».",
+          "Simular una emergencia con pasajeros a bordo.",
+          "Confundir el CRS con el ARC."
+        ]
+      }
+    ],
+    "numbers": [
+      "Part-NCO: operaciones no comerciales con aeronaves a motor no complejas",
+      "Documentos a bordo (NCO.GEN.135): AFM, matrícula, aeronavegabilidad, seguro, diario, cartas, plan, señales de interceptación",
+      "Sucesos: notificar en 72 h (Reg. 376/2014)",
+      "ELT en 121,5 y 406 MHz; automático si CofA posterior al 1-7-2008",
+      "Chaleco en monomotor más allá de la distancia de planeo; balsas a valorar a más de 30 min o 50 NM",
+      "Oxígeno: tripulación sobre 10 000 ft más de 30 min y siempre sobre 13 000 ft",
+      "Sin simulaciones con pasajeros (NCO.OP.180); la seguridad prevalece sobre el ruido (NCO.OP.120)"
+    ],
+    "traps": [
+      "El CRS no es un documento obligatorio a bordo.",
+      "Las 8 horas desde el alcohol son una recomendación, no la única regla legal.",
+      "La seguridad prevalece sobre la atenuación de ruido.",
+      "Con pasajeros no se simula ninguna emergencia.",
+      "El briefing a pasajeros es obligatorio aunque ya hayan volado."
+    ],
+    "sources": [
+      {
+        "title": "EASA, Easy Access Rules for Air Operations (Part-NCO, AMC y GM)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+      },
+      {
+        "title": "Reglamento (UE) 965/2012 (Air OPS) y Reglamento (UE) 376/2014",
+        "url": "https://www.easa.europa.eu/en/document-library/regulations"
+      },
+      {
+        "title": "OACI, Anexo 6 Operación de aeronaves, Parte II"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "070.01.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "Part-NCO regula:",
+      "options": [
+        "El transporte aéreo comercial",
+        "Las operaciones no comerciales con aeronaves a motor no complejas",
+        "Las operaciones no comerciales con aeronaves complejas",
+        "Las operaciones especializadas"
+      ],
+      "correct": 1,
+      "why": "NCO: non-commercial operations with other-than-complex motor-powered aircraft.",
+      "whyNot": [
+        "Eso es Part-CAT.",
+        null,
+        "Eso es Part-NCC.",
+        "Eso es Part-SPO."
+      ],
+      "ref": "Reg. (UE) 965/2012"
+    },
+    {
+      "id": "070.01.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una aeronave a motor se considera compleja si tiene, entre otras, estas características:",
+      "options": [
+        "Más de 2 asientos",
+        "Hélice de paso variable",
+        "Tren retráctil",
+        "Masa máxima superior a 5700 kg o más de 9 asientos de pasajeros"
+      ],
+      "correct": 3,
+      "why": "Son criterios de la definición: MTOM > 5700 kg, más de 9 asientos de pasajeros, necesidad de dos pilotos, turborreactor o más de un turbohélice.",
+      "whyNot": [
+        "Con tres asientos no es compleja.",
+        "No define el concepto de complejidad en Part-NCO.",
+        "El tren retráctil no es el criterio.",
+        null
+      ],
+      "ref": "Reg. (UE) 965/2012, art. 3"
+    },
+    {
+      "id": "070.01.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "La Parte II del Anexo 6 de la OACI se aplica a:",
+      "options": [
+        "La aviación general internacional",
+        "El transporte aéreo comercial internacional",
+        "Los helicópteros",
+        "Los globos y dirigibles"
+      ],
+      "correct": 0,
+      "why": "Parte I: transporte comercial; Parte II: aviación general; Parte III: helicópteros.",
+      "whyNot": [
+        null,
+        "Eso es la Parte I.",
+        "Eso es la Parte III.",
+        "No es el contenido de la Parte II."
+      ],
+      "ref": "Anexo 6, Partes I, II y III"
+    },
+    {
+      "id": "070.01.004",
+      "type": "concepto",
+      "level": 1,
+      "q": "El piloto al mando es responsable de:",
+      "options": [
+        "Solo de la seguridad del avión",
+        "Únicamente de lo que ocurre en vuelo, no en tierra",
+        "La seguridad de la aeronave, de las personas a bordo y de la carga durante la operación",
+        "De la seguridad solo cuando hay pasajeros"
+      ],
+      "correct": 2,
+      "why": "El PIC responde de toda la operación y tiene autoridad para decidir.",
+      "whyNot": [
+        "Incluye a las personas a bordo.",
+        "Responde también en tierra durante la operación.",
+        null,
+        "Es independiente de que haya pasajeros."
+      ],
+      "ref": "NCO.GEN.105"
+    },
+    {
+      "id": "070.01.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "La regla de las 8 horas entre la última bebida y el vuelo es:",
+      "options": [
+        "El único límite legal vigente",
+        "Una regla de EASA que sustituye al resto",
+        "Una regla solo para vuelos comerciales",
+        "Una recomendación de buena práctica; la norma prohíbe volar bajo los efectos del alcohol"
+      ],
+      "correct": 3,
+      "why": "La base legal es SERA.2020 y MED.A.020; las 8 h son una recomendación.",
+      "whyNot": [
+        "No es el único límite.",
+        "No sustituye a la norma.",
+        "Se recomienda para todo vuelo.",
+        null
+      ],
+      "ref": "SERA.2020; MED.A.020"
+    },
+    {
+      "id": "070.01.006",
+      "type": "regla",
+      "level": 2,
+      "q": "Los sucesos de seguridad se notifican en un plazo de:",
+      "options": [
+        "72 horas desde que se tiene conocimiento",
+        "24 horas",
+        "7 días",
+        "30 días"
+      ],
+      "correct": 0,
+      "why": "El Reglamento (UE) 376/2014 fija 72 horas.",
+      "whyNot": [
+        null,
+        "24 horas es más estricto.",
+        "7 días es excesivo.",
+        "30 días es excesivo."
+      ],
+      "ref": "Reg. (UE) 376/2014"
+    },
+    {
+      "id": "070.01.007",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Cuál de estos documentos debe llevarse a bordo en un avión no complejo en vuelo no comercial?",
+      "options": [
+        "El manual de operaciones de la escuela",
+        "El certificado médico del pasajero",
+        "El certificado de seguro de responsabilidad civil frente a terceros",
+        "El libro de motor del avión"
+      ],
+      "correct": 2,
+      "why": "NCO.GEN.135 incluye el certificado de seguro.",
+      "whyNot": [
+        "No forma parte de la lista de NCO.GEN.135.",
+        "No se exige de un pasajero.",
+        null,
+        "Los registros de mantenimiento se quedan en tierra."
+      ],
+      "ref": "NCO.GEN.135"
+    },
+    {
+      "id": "070.01.008",
+      "type": "regla",
+      "level": 1,
+      "es": true,
+      "q": "En un vuelo de PPL con avión no complejo, ¿cuál de estos documentos debe ir a bordo?",
+      "options": [
+        "El plan de mantenimiento programado",
+        "El certificado de matrícula original",
+        "El CRS de la última inspección",
+        "Un certificado de pesada anterior a la última revisión"
+      ],
+      "correct": 1,
+      "why": "El certificado de matrícula es uno de los documentos obligatorios.",
+      "whyNot": [
+        "No está en la lista de a bordo.",
+        null,
+        "Los CRS están en los registros de mantenimiento.",
+        "No es documento de a bordo."
+      ],
+      "ref": "NCO.GEN.135"
+    },
+    {
+      "id": "070.01.009",
+      "type": "regla",
+      "level": 1,
+      "q": "El diario de a bordo (o equivalente) de la aeronave:",
+      "options": [
+        "Se queda en el hangar",
+        "Debe llevarse a bordo en cada vuelo",
+        "Solo se lleva en vuelos nocturnos",
+        "Solo se lleva en vuelos internacionales"
+      ],
+      "correct": 1,
+      "why": "NCO.GEN.135 lo incluye entre los documentos a bordo.",
+      "whyNot": [
+        "Debe ir con el avión.",
+        null,
+        "No depende de la hora del vuelo.",
+        "No depende del tipo de ruta."
+      ],
+      "ref": "NCO.GEN.135"
+    },
+    {
+      "id": "070.01.010",
+      "type": "regla",
+      "level": 2,
+      "q": "Las cartas aeronáuticas a bordo deben ser:",
+      "options": [
+        "Cualquier carta antigua de la zona",
+        "Solo la del aeródromo de destino",
+        "Solo la de ruta, sin desvíos",
+        "Vigentes y adecuadas para la ruta y los desvíos razonables"
+      ],
+      "correct": 3,
+      "why": "NCO.GEN.135 pide cartas actuales y adecuadas para la ruta prevista y las rutas razonables de desvío.",
+      "whyNot": [
+        "Deben estar vigentes.",
+        "Incluyen la ruta y los desvíos.",
+        "Los desvíos también se cubren.",
+        null
+      ],
+      "ref": "NCO.GEN.135"
+    },
+    {
+      "id": "070.01.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué debe llevar consigo el piloto de una aeronave privada?",
+      "options": [
+        "Licencia, certificado médico y documento de identidad con fotografía",
+        "Solo la licencia",
+        "Solo el certificado médico",
+        "El certificado de matrícula del avión"
+      ],
+      "correct": 0,
+      "why": "FCL.045 exige llevar licencia, certificado médico válido y documento de identidad con foto.",
+      "whyNot": [
+        null,
+        "Faltan el médico y la identidad.",
+        "Falta la licencia y la identidad.",
+        "Eso es del avión, no del piloto."
+      ],
+      "ref": "FCL.045"
+    },
+    {
+      "id": "070.01.012",
+      "type": "concepto",
+      "level": 3,
+      "q": "El certificado de revisión de mantenimiento (CRS) de la última inspección:",
+      "options": [
+        "Debe llevarse siempre a bordo",
+        "Sustituye al seguro",
+        "No es un documento de a bordo: está en los registros de mantenimiento",
+        "Se lleva solo en vuelos nocturnos"
+      ],
+      "correct": 2,
+      "why": "Forma parte de los registros de mantenimiento. Lo que va a bordo es el ARC del certificado de aeronavegabilidad.",
+      "whyNot": [
+        "No es obligatorio llevarlo.",
+        "No tiene relación con el seguro.",
+        null,
+        "No depende de la hora."
+      ],
+      "ref": "NCO.GEN.135; Part-M/ML"
+    },
+    {
+      "id": "070.01.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con respecto a las mercancías peligrosas, en aviación general:",
+      "options": [
+        "Se pueden llevar siempre en la cabina",
+        "Solo se prohíben en vuelos comerciales",
+        "Solo se prohíben en vuelos nocturnos",
+        "No se transportan salvo que la normativa lo permita y en sus condiciones"
+      ],
+      "correct": 3,
+      "why": "El piloto al mando debe asegurarse de que no se transportan mercancías peligrosas fuera de la norma.",
+      "whyNot": [
+        "No hay libertad total.",
+        "Se aplican en todo tipo de vuelo.",
+        "No dependen de la hora.",
+        null
+      ],
+      "ref": "Part-NCO; Instrucciones Técnicas OACI"
+    },
+    {
+      "id": "070.01.014",
+      "type": "concepto",
+      "level": 1,
+      "q": "El uso de dispositivos electrónicos portátiles a bordo:",
+      "options": [
+        "Solo se permite si el piloto al mando comprueba que no interfieren con los sistemas",
+        "Está siempre prohibido",
+        "Está siempre permitido",
+        "Solo está permitido a los pasajeros"
+      ],
+      "correct": 0,
+      "why": "Si pueden afectar a los sistemas de la aeronave, el piloto al mando no debe permitirlo.",
+      "whyNot": [
+        null,
+        "No hay prohibición absoluta.",
+        "No es siempre admisible.",
+        "También afecta al piloto."
+      ],
+      "ref": "Part-NCO"
+    },
+    {
+      "id": "070.01.015",
+      "type": "concepto",
+      "level": 1,
+      "q": "El briefing a pasajeros incluye, entre otros:",
+      "options": [
+        "Solo el precio del vuelo",
+        "Las previsiones del mercado",
+        "Uso de cinturones, salidas de emergencia y equipos de seguridad",
+        "Solo la ruta del vuelo"
+      ],
+      "correct": 2,
+      "why": "NCO.OP.130: información de seguridad y de equipos y procedimientos de emergencia.",
+      "whyNot": [
+        "No es contenido del briefing.",
+        "No es contenido del briefing.",
+        null,
+        "La ruta no basta."
+      ],
+      "ref": "NCO.OP.130"
+    },
+    {
+      "id": "070.01.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "Los pasajeros que ya han volado contigo antes:",
+      "options": [
+        "No necesitan briefing",
+        "Deben recibir igualmente el briefing de seguridad",
+        "Solo lo reciben si preguntan",
+        "Solo lo reciben si el vuelo es nocturno"
+      ],
+      "correct": 1,
+      "why": "La obligación se aplica a todos los pasajeros del vuelo.",
+      "whyNot": [
+        "El briefing es obligatorio.",
+        null,
+        "No depende de que pregunten.",
+        "No depende de la hora."
+      ],
+      "ref": "NCO.OP.130"
+    },
+    {
+      "id": "070.01.017",
+      "type": "regla",
+      "level": 2,
+      "q": "Antes de un vuelo VFR, el piloto al mando debe:",
+      "options": [
+        "Solo mirar el cielo",
+        "Estudiar la meteorología disponible, el combustible y las alternativas",
+        "Solo preguntar al controlador",
+        "Solo comprobar el plan de vuelo"
+      ],
+      "correct": 1,
+      "why": "NCO.OP.135 exige preparar el vuelo con información suficiente.",
+      "whyNot": [
+        "No basta una mirada.",
+        null,
+        "El controlador no sustituye la preparación.",
+        "El plan no es toda la preparación."
+      ],
+      "ref": "NCO.OP.135"
+    },
+    {
+      "id": "070.01.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un vuelo VFR solo se inicia o continúa si:",
+      "options": [
+        "Hay nubes dispersas sin más condiciones",
+        "El avión lleva transpondedor",
+        "Hay tráfico de aeródromo cercano",
+        "Las condiciones a lo largo de la ruta y en el destino permiten volar VFR"
+      ],
+      "correct": 3,
+      "why": "SERA.5001 y SERA.5005: el VFR exige condiciones meteorológicas de vuelo visual.",
+      "whyNot": [
+        "No es el criterio.",
+        "El transpondedor no garantiza VMC.",
+        "El tráfico no es la condición.",
+        null
+      ],
+      "ref": "SERA.5001; NCO.OP.135"
+    },
+    {
+      "id": "070.01.019",
+      "type": "regla",
+      "level": 2,
+      "q": "El hielo o la escarcha adheridos al avión antes de despegar:",
+      "options": [
+        "Hay que eliminarlos antes del despegue",
+        "Se pueden ignorar si son finos",
+        "Se eliminan solo en vuelo",
+        "No afectan a la sustentación"
+      ],
+      "correct": 0,
+      "why": "Alteran el perfil del ala, aumentan la resistencia y la Vs y pueden bloquear mandos.",
+      "whyNot": [
+        null,
+        "Aun finos son peligrosos.",
+        "Hay que quitarlos antes de volar.",
+        "Reducen la sustentación."
+      ],
+      "ref": "NCO.OP.165"
+    },
+    {
+      "id": "070.01.020",
+      "type": "regla",
+      "level": 2,
+      "q": "Una aeronave sin certificación para hielo que encuentra formación de hielo en vuelo debe:",
+      "options": [
+        "Continuar y confiar en la calefacción",
+        "Reducir la velocidad y seguir",
+        "Salir de esas condiciones sin demora",
+        "Subir a mayor altitud sin cambiar de ruta"
+      ],
+      "correct": 2,
+      "why": "NCO.OP.170: abandonar las condiciones con prontitud, cambiando de altitud o de ruta.",
+      "whyNot": [
+        "La calefacción no lo resuelve.",
+        "Reducir velocidad agrava el problema.",
+        null,
+        "Subir puede agravarlo."
+      ],
+      "ref": "NCO.OP.170"
+    },
+    {
+      "id": "070.01.021",
+      "type": "regla",
+      "level": 1,
+      "q": "Con pasajeros a bordo se pueden simular situaciones anormales o de emergencia:",
+      "options": [
+        "Sí, si el piloto tiene instructor",
+        "Sí, solo de día",
+        "Sí, si los pasajeros están informados",
+        "No"
+      ],
+      "correct": 3,
+      "why": "NCO.OP.180 lo prohíbe con pasajeros o carga.",
+      "whyNot": [
+        "Ni siquiera con instructor.",
+        "No depende de la hora.",
+        "El conocimiento de los pasajeros no cambia la norma.",
+        null
+      ],
+      "ref": "NCO.OP.180"
+    },
+    {
+      "id": "070.01.022",
+      "type": "regla",
+      "level": 2,
+      "q": "Si un procedimiento de atenuación de ruido compromete la seguridad, el piloto debe:",
+      "options": [
+        "Priorizar la seguridad y no seguirlo",
+        "Seguirlo igualmente",
+        "Pedir permiso al propietario",
+        "Cancelar el vuelo"
+      ],
+      "correct": 0,
+      "why": "NCO.OP.120: la seguridad prevalece sobre la atenuación del ruido.",
+      "whyNot": [
+        null,
+        "Nunca por encima de la seguridad.",
+        "No es un asunto del propietario.",
+        "No exige cancelar el vuelo."
+      ],
+      "ref": "NCO.OP.120"
+    },
+    {
+      "id": "070.01.023",
+      "type": "concepto",
+      "level": 2,
+      "q": "El piloto al mando debe usar oxígeno suplementario:",
+      "options": [
+        "Solo por encima de 20 000 ft",
+        "Solo de noche",
+        "Siempre que la falta de oxígeno pueda deteriorar las facultades de la tripulación",
+        "Solo si los pasajeros lo piden"
+      ],
+      "correct": 2,
+      "why": "NCO.OP.190 lo basa en el riesgo de deterioro de facultades.",
+      "whyNot": [
+        "No es un umbral fijo único.",
+        "No depende de la hora.",
+        null,
+        "No depende de que lo pidan."
+      ],
+      "ref": "NCO.OP.190"
+    },
+    {
+      "id": "070.01.024",
+      "type": "regla",
+      "level": 3,
+      "q": "Como referencia habitual, la tripulación de un avión no presurizado usa oxígeno por encima de:",
+      "options": [
+        "5000 ft durante 10 min",
+        "10 000 ft durante más de 30 min, y siempre por encima de 13 000 ft",
+        "8000 ft en cualquier caso",
+        "15 000 ft sin tiempo"
+      ],
+      "correct": 1,
+      "why": "Valores de referencia europeos para aviones no presurizados.",
+      "whyNot": [
+        "Es un umbral demasiado bajo.",
+        null,
+        "No es el valor de referencia.",
+        "Es un valor demasiado alto."
+      ],
+      "ref": "NCO.IDE.A; AMC"
+    },
+    {
+      "id": "070.01.025",
+      "type": "concepto",
+      "level": 3,
+      "q": "La hipoxia en altura:",
+      "options": [
+        "Siempre provoca un dolor intenso",
+        "Deteriora el juicio sin que el piloto lo note",
+        "Afecta solo a los pasajeros",
+        "Solo aparece de noche"
+      ],
+      "correct": 1,
+      "why": "Es insidiosa: la euforia o la falta de coordinación aparecen sin aviso claro.",
+      "whyNot": [
+        "No siempre hay dolor.",
+        null,
+        "Afecta también a la tripulación.",
+        "No depende de la hora."
+      ],
+      "ref": "040; NCO.OP.190"
+    },
+    {
+      "id": "070.01.026",
+      "type": "regla",
+      "level": 1,
+      "q": "Un ELT de un avión ligero emite en:",
+      "options": [
+        "118 MHz y 406 MHz",
+        "121,5 MHz y 243 MHz",
+        "406 MHz y 1090 MHz",
+        "121,5 MHz y 406 MHz"
+      ],
+      "correct": 3,
+      "why": "Los ELT modernos transmiten en 121,5 y 406 MHz.",
+      "whyNot": [
+        "118 no es frecuencia de ELT.",
+        "243 MHz es obsoleta y UHF.",
+        "1090 MHz es otra función.",
+        null
+      ],
+      "ref": "NCO.IDE.A"
+    },
+    {
+      "id": "070.01.027",
+      "type": "regla",
+      "level": 2,
+      "es": true,
+      "q": "El ELT de un avión con certificado de aeronavegabilidad posterior al 1-7-2008 debe ser:",
+      "options": [
+        "Automático",
+        "Manual",
+        "Solo un PLB",
+        "No es obligatorio"
+      ],
+      "correct": 0,
+      "why": "La norma que se estudia exige ELT automático con CofA posterior a esa fecha.",
+      "whyNot": [
+        null,
+        "No basta el manual.",
+        "El PLB solo en avión pequeño.",
+        "Sí es obligatorio."
+      ],
+      "ref": "NCO.IDE.A"
+    },
+    {
+      "id": "070.01.028",
+      "type": "regla",
+      "level": 2,
+      "q": "En un avión de 6 asientos o menos, el ELT puede sustituirse por:",
+      "options": [
+        "Una radio de mano",
+        "El teléfono móvil",
+        "Una baliza personal (PLB) llevada por el piloto o un pasajero",
+        "Nada, nunca"
+      ],
+      "correct": 2,
+      "why": "NCO.IDE.A admite una PLB en aeronaves pequeñas.",
+      "whyNot": [
+        "No cumple la función.",
+        "No sustituye a una baliza.",
+        null,
+        "Sí hay una alternativa."
+      ],
+      "ref": "NCO.IDE.A"
+    },
+    {
+      "id": "070.01.029",
+      "type": "regla",
+      "level": 2,
+      "q": "En un monomotor, el chaleco salvavidas es obligatorio cuando se vuela sobre el agua:",
+      "options": [
+        "A cualquier distancia",
+        "A más de 100 NM",
+        "Solo de noche",
+        "Más allá de la distancia de planeo hasta tierra"
+      ],
+      "correct": 3,
+      "why": "NCO.IDE.A: más allá de la distancia de planeo (o si el despegue o aterrizaje son sobre agua con riesgo).",
+      "whyNot": [
+        "No es siempre.",
+        "No es una distancia fija.",
+        "No depende de la hora.",
+        null
+      ],
+      "ref": "NCO.IDE.A"
+    },
+    {
+      "id": "070.01.030",
+      "type": "regla",
+      "level": 3,
+      "q": "La valoración de llevar balsas salvavidas y ELT de supervivencia en vuelo sobre el agua se plantea cuando la distancia hasta tierra supera:",
+      "options": [
+        "30 minutos o 50 NM, el menor",
+        "5 min o 5 NM",
+        "60 minutos o 100 NM, el mayor",
+        "200 NM"
+      ],
+      "correct": 0,
+      "why": "El umbral es 30 min o 50 NM del terreno apto, el menor.",
+      "whyNot": [
+        null,
+        "Es demasiado poco.",
+        "Es demasiado.",
+        "Es demasiado."
+      ],
+      "ref": "NCO.IDE.A"
+    },
+    {
+      "id": "070.01.031",
+      "type": "concepto",
+      "level": 1,
+      "q": "Un avión no complejo en vuelo VFR diurno debe llevar, como instrumentos mínimos:",
+      "options": [
+        "Solo el altímetro",
+        "Horizonte artificial y variómetro",
+        "Brújula magnética, reloj, altímetro y anemómetro",
+        "Radar meteorológico"
+      ],
+      "correct": 2,
+      "why": "NCO.IDE.A: brújula, reloj, altímetro de presión y anemómetro.",
+      "whyNot": [
+        "No basta con el altímetro.",
+        "No son los mínimos VFR.",
+        null,
+        "No es obligatorio."
+      ],
+      "ref": "NCO.IDE.A"
+    },
+    {
+      "id": "070.01.032",
+      "type": "concepto",
+      "level": 1,
+      "q": "El botiquín de primeros auxilios:",
+      "options": [
+        "Es opcional",
+        "Debe ir a bordo del avión",
+        "Solo en vuelos nocturnos",
+        "Solo en vuelos de más de 3 h"
+      ],
+      "correct": 1,
+      "why": "NCO.IDE.A exige un botiquín en la aeronave.",
+      "whyNot": [
+        "No es opcional.",
+        null,
+        "No depende de la hora.",
+        "No depende de la duración."
+      ],
+      "ref": "NCO.IDE.A"
+    },
+    {
+      "id": "070.01.033",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa NCO en Part-NCO?",
+      "options": [
+        "Non-Commercial Operations with complex motor-powered aircraft",
+        "Non-Commercial Operations with other-than-complex motor-powered aircraft",
+        "Navigation and Control Operations",
+        "National Civil Operations"
+      ],
+      "correct": 1,
+      "why": "NCO: operaciones no comerciales con aeronaves a motor distintas de las complejas.",
+      "whyNot": [
+        "Eso es NCC.",
+        null,
+        "No es la sigla correcta.",
+        "No es la sigla correcta."
+      ],
+      "ref": "Reg. (UE) 965/2012"
+    },
+    {
+      "id": "070.01.034",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un PPL que vuela un PA-28 por afición opera según:",
+      "options": [
+        "Part-CAT",
+        "Part-SPO",
+        "Part-NCC",
+        "Part-NCO"
+      ],
+      "correct": 3,
+      "why": "Es un vuelo no comercial con aeronave no compleja.",
+      "whyNot": [
+        "Es transporte comercial.",
+        "Son operaciones especializadas.",
+        "NCC es para aeronaves complejas.",
+        null
+      ],
+      "ref": "Reg. (UE) 965/2012"
+    },
+    {
+      "id": "070.01.035",
+      "type": "concepto",
+      "level": 3,
+      "q": "El certificado de aeronavegabilidad (CofA) debe llevarse:",
+      "options": [
+        "En original a bordo",
+        "Solo una copia en el hangar",
+        "Solo por vía electrónica",
+        "No es necesario si hay seguro"
+      ],
+      "correct": 0,
+      "why": "NCO.GEN.135 pide el original del CofA a bordo.",
+      "whyNot": [
+        null,
+        "No basta una copia en tierra.",
+        "Se pide el original.",
+        "El seguro no lo sustituye."
+      ],
+      "ref": "NCO.GEN.135"
+    },
+    {
+      "id": "070.01.036",
+      "type": "regla",
+      "level": 2,
+      "es": true,
+      "q": "Si el avión lleva equipo de radio, la licencia de estación de aeronave:",
+      "options": [
+        "Se guarda siempre en la escuela",
+        "Solo la lleva el instructor",
+        "Debe ir a bordo si la normativa de telecomunicaciones la exige",
+        "No existe para aviones privados"
+      ],
+      "correct": 2,
+      "why": "NCO.GEN.135 incluye la licencia de radio de la aeronave cuando es aplicable.",
+      "whyNot": [
+        "No es un documento de oficina.",
+        "Es de la aeronave, no de una persona.",
+        null,
+        "Existe para aeronaves con radio."
+      ],
+      "ref": "NCO.GEN.135"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.070.01.01",
+      "front": "Part-NCO",
+      "back": "Operaciones no comerciales con aeronaves a motor no complejas; NCC si son complejas"
+    },
+    {
+      "id": "c.070.01.02",
+      "front": "Documentos a bordo (NCO.GEN.135)",
+      "back": "AFM, matrícula, CofA (con ARC), seguro, diario de a bordo, cartas vigentes, plan, señales de interceptación; el piloto: licencia, médico e identificación"
+    },
+    {
+      "id": "c.070.01.03",
+      "front": "Notificar sucesos",
+      "back": "72 horas (Reg. 376/2014)"
+    },
+    {
+      "id": "c.070.01.04",
+      "front": "ELT",
+      "back": "121,5 y 406 MHz; automático si CofA posterior al 1-7-2008; en ≤ 6 asientos vale un PLB"
+    },
+    {
+      "id": "c.070.01.05",
+      "front": "Chalecos y balsas",
+      "back": "Chaleco en monomotor más allá de la distancia de planeo; balsas a valorar a más de 30 min o 50 NM"
+    },
+    {
+      "id": "c.070.01.06",
+      "front": "Con pasajeros",
+      "back": "No se simulan emergencias (NCO.OP.180); briefing de seguridad siempre (NCO.OP.130)"
+    }
+  ]
+}

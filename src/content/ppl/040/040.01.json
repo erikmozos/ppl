@@ -1,0 +1,333 @@
+{
+ "lesson": {
+  "title": "Conceptos básicos de factores humanos",
+  "summary": "Qué estudian los factores humanos, su peso en los accidentes, los modelos SHELL y del queso suizo, la cultura justa y las competencias no técnicas del piloto.",
+  "objectives": [
+   "Explicar qué son los factores humanos y por qué importan en aviación general",
+   "Describir los cuatro interfaces del modelo SHELL con ejemplos de cabina",
+   "Distinguir fallos activos de condiciones latentes en el modelo del queso suizo",
+   "Explicar la cultura justa y la notificación de sucesos",
+   "Enumerar las competencias no técnicas que EASA espera de un piloto"
+  ],
+  "sections": [
+   {
+    "title": "Por qué existe esta materia",
+    "text": [
+     "Los **factores humanos** (en inglés, *human performance and limitations*) estudian cómo las capacidades y limitaciones de las personas influyen en la seguridad del vuelo. No son «psicología aplicada» por gusto: según los estudios de accidentes, la mayoría de los accidentes de aviación, en torno a las tres cuartas partes, tiene un factor humano entre sus causas. En aviación general la proporción no baja: la pérdida de control en vuelo, el vuelo VFR hacia mal tiempo, el choque con el terreno en condiciones controladas y la falta de combustible son errores de decisión o de ejecución, rara vez averías.",
+     "El enfoque moderno no busca culpables sino **por qué** una persona competente tomó una decisión que en ese momento le pareció razonable. El ser humano es a la vez la mayor fuente de error y la mejor defensa del sistema: detecta lo anómalo, improvisa y se adapta. Por eso el curso enseña las limitaciones del cuerpo (oxígeno, visión, oído, equilibrio), las de la mente (atención, memoria, estrés, fatiga) y las herramientas para convivir con ellas (listas de chequeo, briefings, mínimos personales, gestión de amenazas y errores)."
+    ]
+   },
+   {
+    "title": "Modelo SHELL",
+    "text": [
+     "El modelo **SHELL** (Edwards, adaptado por Hawkins) representa al piloto como una pieza con bordes irregulares que tiene que encajar con todo lo que le rodea. Las letras son: **S**oftware (normas, procedimientos, listas de chequeo, cartas y manuales, y también cómo están escritos), **H**ardware (el avión, los mandos, instrumentos, asientos y pantallas), **E**nvironment (el entorno: tiempo, turbulencia, ruido, temperatura, luz, relieve, tráfico, y también la presión de la organización o de los pasajeros) y **L**iveware, las personas. El Liveware aparece dos veces: el piloto en el centro (L) y las demás personas con las que interactúa (L).",
+     "Lo importante no son las piezas sino los **interfaces**: L-H (un selector de combustible ilegible o instrumentos mal distribuidos), L-S (una lista de chequeo confusa o una carta con exceso de información), L-E (volar con calor, ruido y turbulencia), L-L (comunicación con el control, el instructor, un pasajero que presiona). Cuando una pieza no encaja, hay un riesgo de error. La solución se busca primero en el diseño: adaptar el entorno y los equipos al ser humano, no pedirle al piloto que sea perfecto."
+    ],
+    "figure": "svg:040-shell",
+    "caption": "En el centro el piloto (Liveware); alrededor, los cuatro interfaces de Software, Hardware, Environment y otras personas.",
+    "examples": [
+     {
+      "q": "En el PA-28 se confunde el selector de combustible con el de las luces porque ambos tienen una forma parecida y están juntos. ¿Qué interfaz de SHELL falla?",
+      "a": "El interfaz L-H (piloto con hardware): el diseño y la ubicación del mando favorecen la confusión. La contramedida es de diseño (forma y color distintos) y de procedimiento (señalar y confirmar el mando antes de actuar)."
+     }
+    ]
+   },
+   {
+    "title": "Modelo del queso suizo",
+    "text": [
+     "James Reason explica los accidentes con el **modelo del queso suizo**. Un sistema seguro tiene varias capas de defensa (normas, formación, mantenimiento, supervisión, listas de chequeo, alarmas, el propio piloto). Ninguna es perfecta: cada una tiene agujeros, como las lonchas de queso. Un peligro solo produce un accidente cuando los agujeros de todas las capas se **alinean** y la trayectoria lo atraviesa.",
+     "Hay dos clases de agujeros. Los **fallos activos** son actos u omisiones de quien está en primera línea (pilotos, controladores) con efecto inmediato: una configuración mal puesta, un mal cálculo de combustible. Las **condiciones latentes** son fallos del sistema que pueden estar años sin manifestarse: decisiones de la organización, mantenimiento deficiente, procedimientos mal redactados, formación insuficiente, presión de calendario. Reason insiste en que los fallos activos son el último eslabón, mientras que las condiciones latentes preparan el terreno. Quitar al piloto del avión no arregla nada si las condiciones latentes siguen ahí.",
+     "Cada defensa añadida (otra lista de chequeo, un briefing, un mínimo personal) **reduce la probabilidad** de que los agujeros se alineen. Y si el piloto interrumpe la cadena de eventos en cualquier punto (cancelando el vuelo, desviándose, pidiendo ayuda), el accidente no se produce."
+    ],
+    "figure": "svg:040-queso-suizo",
+    "caption": "El accidente atraviesa capas con agujeros: tres latentes y un fallo activo en la acción del piloto."
+   },
+   {
+    "title": "Cultura justa y notificación de sucesos",
+    "text": [
+     "Una **cultura justa** (*just culture*) distingue entre el error humano honesto y el comportamiento temerario. Quien se equivoca de buena fe, aunque el error sea grave, no es sancionado por ello: se le anima a notificarlo para que otros aprendan. Se actúa contra la **negligencia grave** o la violación deliberada e injustificada. Sin esta confianza nadie notifica, y la organización pierde la información que le permite cerrar los agujeros del queso.",
+     "En la Unión Europea la notificación de sucesos de aviación civil está regulada por el Reglamento (UE) 376/2014: los sucesos que pongan en peligro la seguridad se comunican a la autoridad (en España, a través de AESA, con el sistema de notificación de sucesos) y la identidad del notificante está protegida. Notificar un incidente propio no es confesar un delito, es contribuir a la seguridad de todos."
+    ],
+    "note": {
+     "kind": "es",
+     "text": "En España los sucesos se notifican a AESA mediante su sistema de notificación de sucesos (Reglamento (UE) 376/2014). La CIAIAC investiga los accidentes e incidentes graves, con fines de prevención, sin determinar culpas."
+    }
+   },
+   {
+    "title": "Competencias no técnicas del piloto",
+    "text": [
+     "Además de saber pilotar, un piloto competente maneja bien las **competencias no técnicas**: comunicación, gestión de la carga de trabajo, conciencia situacional, resolución de problemas y toma de decisiones, gestión de amenazas y errores, liderazgo y trabajo en equipo (cuando hay más de una persona a bordo, aunque sea un alumno o un pasajero). Dominar la maniobra no basta si no se da cuenta de que la gasolina no alcanza o si no sabe pedir ayuda a tiempo.",
+     "En el PPL, un solo piloto a bordo, estas competencias se concretan en hábitos: planificar con margen, preparar un briefing antes de cada fase, usar la lista de chequeo con disciplina, fijar mínimos personales más estrictos que los legales, aceptar el consejo de otros, y **desviarse o aterrizar a tiempo** sin sentir que se fracasa. Estos hábitos son el contenido de los siguientes bloques."
+    ],
+    "bullets": [
+     "Comunicación: transmitir y comprobar la información de forma clara.",
+     "Conciencia situacional: saber qué ocurre, qué significa y qué vendrá.",
+     "Gestión de la carga de trabajo: priorizar, anticipar y delegar.",
+     "Decisiones: evaluar riesgos, tener alternativas y actuar a tiempo.",
+     "Gestión de amenazas y errores (TEM): prevenir, detectar y recuperarse."
+    ]
+   }
+  ],
+  "numbers": [
+   "Factor humano en torno al 70-80 % de los accidentes",
+   "SHELL: Software, Hardware, Environment, Liveware (L-S, L-H, L-E, L-L)",
+   "Queso suizo (Reason): accidente = alineación de agujeros en las defensas",
+   "Fallo activo: efecto inmediato; condición latente: puede estar años sin manifestarse",
+   "Cultura justa: se tolera el error honesto, no la negligencia grave ni la violación deliberada"
+  ],
+  "traps": [
+   "El error humano rara vez es «la causa»: casi siempre hay condiciones latentes detrás.",
+   "En SHELL el piloto está en el centro (L); no es la pieza que hay que cambiar sino la que hay que encajar.",
+   "Un fallo activo es el de la primera línea; la cultura de la organización es una condición latente.",
+   "Cultura justa no significa impunidad: la negligencia grave y la violación deliberada sí se sancionan."
+  ],
+  "spain": [
+   "Los sucesos se notifican a AESA (Reglamento (UE) 376/2014); la CIAIAC investiga los accidentes con fines de prevención, no de sanción."
+  ],
+  "sources": [
+   {
+    "title": "ICAO Doc 9683, Manual de instrucción en factores humanos",
+    "url": "https://www.icao.int"
+   },
+   {
+    "title": "Reglamento (UE) 376/2014 sobre notificación de sucesos",
+    "url": "https://eur-lex.europa.eu/eli/reg/2014/376/oj"
+   },
+   {
+    "title": "Reason, J., Human Error (1990) y el modelo del queso suizo",
+    "url": "https://skybrary.aero/articles/james-reasons-swiss-cheese-model"
+   }
+  ],
+  "id": "040.01",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "040.01.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "En el modelo SHELL, ¿qué representa la letra L situada en el centro?",
+   "options": [
+    "El Hardware: el avión y sus mandos",
+    "El piloto (Liveware), con el que el resto de elementos debe encajar",
+    "El Software: procedimientos y listas de chequeo",
+    "El Entorno: tiempo, ruido y relieve"
+   ],
+   "correct": 1,
+   "why": "En el centro está el Liveware, el ser humano; las demás letras son los elementos con los que se relaciona.",
+   "whyNot": [
+    "El hardware es la H, no la L.",
+    null,
+    "El software es la S: normas, procedimientos y manuales.",
+    "El entorno es la E."
+   ],
+   "ref": "ICAO Doc 9683; modelo SHELL"
+  },
+  {
+   "id": "040.01.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "Un asiento que no se puede regular y le impide al piloto alcanzar bien los pedales es un problema del interfaz:",
+   "options": [
+    "L-S, entre el piloto y los procedimientos",
+    "L-L, entre el piloto y otras personas",
+    "L-E, entre el piloto y el tiempo atmosférico",
+    "L-H, entre el piloto y el equipo"
+   ],
+   "correct": 3,
+   "why": "El asiento es hardware y su diseño no se adapta a la persona: interfaz L-H.",
+   "whyNot": [
+    "Los procedimientos no están implicados.",
+    "No interviene ninguna otra persona.",
+    "El tiempo no es el origen del problema.",
+    null
+   ],
+   "ref": "Modelo SHELL"
+  },
+  {
+   "id": "040.01.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "Según el modelo del queso suizo de Reason, un accidente se produce cuando:",
+   "options": [
+    "Se alinean los agujeros de varias capas de defensa",
+    "Un piloto comete un solo error grave",
+    "Falla una sola defensa, la más débil",
+    "El avión sufre una avería técnica"
+   ],
+   "correct": 0,
+   "why": "Las defensas tienen agujeros; solo cuando varios se alinean el peligro llega a producir daño.",
+   "whyNot": [
+    null,
+    "Un solo error no basta si las demás defensas funcionan.",
+    "Un único fallo se detiene en la siguiente capa.",
+    "El modelo es de causas múltiples, no solo de averías."
+   ],
+   "ref": "Reason, Human Error"
+  },
+  {
+   "id": "040.01.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "En el modelo del queso suizo, una condición latente es:",
+   "options": [
+    "Un error de un piloto con efecto inmediato",
+    "Una avería ocurrida durante el vuelo",
+    "Un fallo del sistema que puede pasar años sin manifestarse",
+    "Una violación deliberada de un procedimiento"
+   ],
+   "correct": 2,
+   "why": "Las condiciones latentes (diseño, formación, presión de la organización) esperan en el sistema hasta que se combinan con otros fallos.",
+   "whyNot": [
+    "Eso es un fallo activo.",
+    "Una avería no es necesariamente latente.",
+    null,
+    "Una violación es un acto, es decir, un fallo activo."
+   ],
+   "ref": "Reason, Human Error"
+  },
+  {
+   "id": "040.01.005",
+   "type": "concepto",
+   "level": 1,
+   "q": "La cultura justa (just culture) significa que:",
+   "options": [
+    "Nunca se sanciona nada si se notifica",
+    "Se sanciona todo error con consecuencias",
+    "El error honesto se trata como oportunidad de aprendizaje y la negligencia grave se sanciona",
+    "Solo se notifican los sucesos con daños"
+   ],
+   "correct": 2,
+   "why": "Se tolera el error de buena fe, se anima a notificarlo y se actúa solo contra la negligencia grave o la violación deliberada.",
+   "whyNot": [
+    "Nadie queda impune si hay negligencia grave.",
+    "Eso es lo contrario: haría que nadie notificase.",
+    null,
+    "Se notifican también los sucesos sin daños, porque enseñan."
+   ],
+   "ref": "Reglamento (UE) 376/2014"
+  },
+  {
+   "id": "040.01.006",
+   "type": "regla",
+   "level": 2,
+   "q": "¿Qué norma europea regula la notificación de sucesos de la aviación civil?",
+   "options": [
+    "Reglamento (UE) 376/2014",
+    "Reglamento (UE) 923/2012 (SERA)",
+    "Reglamento (UE) 1178/2011 (Part-FCL)",
+    "Reglamento (UE) 965/2012 (Air Ops)"
+   ],
+   "correct": 0,
+   "why": "El 376/2014 obliga a notificar sucesos y protege a quien los comunica.",
+   "whyNot": [
+    null,
+    "SERA regula las reglas del aire.",
+    "Es la norma de licencias de tripulación.",
+    "Es la norma de operaciones aéreas."
+   ],
+   "ref": "Reglamento (UE) 376/2014"
+  },
+  {
+   "id": "040.01.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un fallo activo es:",
+   "options": [
+    "Una decisión de la dirección tomada años antes",
+    "Una deficiencia de diseño de la cabina",
+    "Una laguna del manual de operaciones",
+    "Un acto u omisión de la primera línea con efecto inmediato"
+   ],
+   "correct": 3,
+   "why": "Los fallos activos los cometen las personas que están en contacto directo con el sistema y sus efectos se notan al momento.",
+   "whyNot": [
+    "Eso es una condición latente.",
+    "El diseño defectuoso es latente.",
+    "Un manual deficiente es una condición latente.",
+    null
+   ],
+   "ref": "Reason, Human Error"
+  },
+  {
+   "id": "040.01.008",
+   "type": "concepto",
+   "level": 1,
+   "q": "Aproximadamente, ¿en qué proporción de los accidentes de aviación interviene el factor humano?",
+   "options": [
+    "Menos del 10 %",
+    "En torno a las tres cuartas partes",
+    "Cerca de la mitad, solo en vuelos comerciales",
+    "Solo en los accidentes con víctimas"
+   ],
+   "correct": 1,
+   "why": "Los estudios sitúan el factor humano en torno al 70-80 % de los accidentes, también en aviación general.",
+   "whyNot": [
+    "Es una proporción mucho mayor.",
+    null,
+    "No se limita a vuelos comerciales.",
+    "Aparece también en accidentes sin víctimas."
+   ],
+   "ref": "ICAO Doc 9683"
+  },
+  {
+   "id": "040.01.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Tras un accidente, se descubre que el avión salió con una lista de chequeo mal redactada que la empresa nunca revisó. En el modelo de Reason es:",
+   "options": [
+    "Un fallo activo del piloto",
+    "Una condición latente",
+    "Una violación deliberada",
+    "Un lapsus"
+   ],
+   "correct": 1,
+   "why": "La mala redacción que persiste en el sistema es una condición latente que contribuyó al error.",
+   "whyNot": [
+    "El fallo activo es del piloto, no de la organización.",
+    null,
+    "No hay intención de saltarse la norma.",
+    "Un lapsus es un olvido de una persona."
+   ],
+   "ref": "Reason, Human Error"
+  },
+  {
+   "id": "040.01.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Cuál de las siguientes es una competencia no técnica del piloto?",
+   "options": [
+    "El dominio del aterrizaje con viento cruzado",
+    "El cálculo de masa y centrado",
+    "La navegación estimada",
+    "La gestión de la carga de trabajo"
+   ],
+   "correct": 3,
+   "why": "Las competencias no técnicas son cognitivas y sociales: comunicación, conciencia situacional, carga de trabajo, decisiones.",
+   "whyNot": [
+    "Es una habilidad técnica de pilotaje.",
+    "Es una destreza de planificación técnica.",
+    "Es una habilidad técnica de navegación.",
+    null
+   ],
+   "ref": "ICAO Doc 9683; EASA, competencias no técnicas"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.040.01.01",
+   "front": "Modelo SHELL",
+   "back": "Software, Hardware, Environment, Liveware; el piloto (L) en el centro; se estudian los interfaces L-S, L-H, L-E y L-L"
+  },
+  {
+   "id": "c.040.01.02",
+   "front": "Modelo del queso suizo",
+   "back": "Cada defensa tiene agujeros; el accidente ocurre cuando se alinean los de varias capas"
+  },
+  {
+   "id": "c.040.01.03",
+   "front": "Fallo activo frente a condición latente",
+   "back": "Activo: acto de la primera línea con efecto inmediato. Latente: fallo del sistema que puede esperar años"
+  }
+ ]
+}

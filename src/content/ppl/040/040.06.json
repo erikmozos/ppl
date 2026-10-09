@@ -1,0 +1,556 @@
+{
+ "lesson": {
+  "title": "Desorientación espacial e ilusiones",
+  "summary": "Por qué el cuerpo se engaña en vuelo, los tipos de desorientación espacial, las ilusiones vestibulares y visuales más importantes y las de aproximación, con la regla de oro: confiar en los instrumentos.",
+  "objectives": [
+   "Definir la desorientación espacial y sus tres tipos",
+   "Explicar leans, espiral mortal, Coriolis y la ilusión somatogravica",
+   "Reconocer las ilusiones visuales: autocinesis, parpadeo, falso horizonte y whiteout",
+   "Aplicar las ilusiones de aproximación a pistas estrechas, anchas y en pendiente",
+   "Aplicar las contramedidas: instrumentos y no mezclar sensaciones con realidad"
+  ],
+  "sections": [
+   {
+    "title": "Qué es la desorientación espacial",
+    "text": [
+     "La **desorientación espacial** es la incapacidad del piloto para saber con exactitud la posición, el movimiento o la actitud de su avión respecto a la Tierra. En la vida diaria mantenemos el equilibrio con la vista, el oído interno y los receptores del cuerpo; en vuelo, el oído interno y las sensaciones del asiento son poco fiables porque nunca evolucionaron para aceleraciones sostenidas en tres dimensiones. **La vista** es el sentido que de verdad informa, y solo si hay referencias exteriores o un horizonte artificial.",
+     "El peligro máximo está en **VMC que pasa a IMC** (entrar en nube o niebla, de noche sin horizonte, sobre agua o campo sin luces) cuando el piloto no tiene práctica de vuelo con instrumentos: pierde la vista y el cuerpo le miente. La desorientación es una de las causas de accidentes mortales en aviación general. Se clasifica así:"
+    ],
+    "table": {
+     "caption": "Tipos de desorientación espacial",
+     "head": [
+      "Tipo",
+      "Descripción",
+      "Resultado"
+     ],
+     "rows": [
+      [
+       "Tipo I (no reconocida)",
+       "El piloto no se da cuenta de que está desorientado",
+       "Controla el avión con confianza total hacia una situación peligrosa"
+      ],
+      [
+       "Tipo II (reconocida)",
+       "Percibe el conflicto entre lo que siente y lo que ve",
+       "Puede corregir confiando en los instrumentos"
+      ],
+      [
+       "Tipo III (incapacitante)",
+       "Desorientación intensa, con vértigo y náuseas",
+       "El piloto no puede controlar el avión"
+      ]
+     ],
+     "src": "Medicina aeronáutica"
+    }
+   },
+   {
+    "title": "Ilusiones vestibulares",
+    "text": [
+     "Son ilusiones que nacen del oído interno, que se engaña porque los canales semicirculares dejan de percibir un giro constante y los otolitos confunden aceleración con inclinación."
+    ],
+    "bullets": [
+     "**Leans** («inclinaciones»): tras un alabeo suave que no se aprecia, al nivelar las alas el piloto siente que está inclinado en sentido contrario y se inclina a su vez para compensar. Se resuelve mirando el horizonte artificial.",
+     "**Espiral mortal** (graveyard spiral): en un viraje descendente con alabeo constante, el cerebro deja de notar el giro. Al ver que baja la altura, el piloto tira del mando sin reducir el alabeo, con lo que la espiral se cierra y el avión pierde altitud con una velocidad creciente. Hay que **nivelar las alas primero** y después recuperar la altura.",
+     "**Ilusión de Coriolis**: al mover la cabeza (agacharse a por un mapa) durante un viraje, se estimulan varios canales a la vez y se siente un giro violento en un plano distinto. Puede ser incapacitante. Se evita **no moviendo la cabeza** durante virajes y vuelo instrumental.",
+     "**Ilusión somatogravica**: una aceleración hacia delante (despegue, o motor y al aire) la interpretan los otolitos como una inclinación del morro hacia arriba; el piloto empuja el morro hacia abajo. Al revés, una deceleración da la sensación de morro abajo. De noche, sin horizonte, es una causa clásica de accidentes tras el despegue.",
+     "**Somatogiral**: tras salir de un giro prolongado se tiene sensación de giro en sentido contrario al volver a nivelar, y el piloto puede reaccionar de forma errónea."
+    ]
+   },
+   {
+    "title": "Ilusiones visuales",
+    "text": [
+     "La vista también engaña cuando faltan referencias o hay estímulos engañosos."
+    ],
+    "bullets": [
+     "**Autocinesis**: de noche, una luz aislada y fija vista durante varios segundos (unos 6 a 12 s) parece **moverse**. Se evita mirando a otros puntos y moviendo los ojos; no se «persigue» una luz solitaria.",
+     "**Parpadeo (flicker vertigo)**: una luz que parpadea a unos **4 a 20 veces por segundo** (por ejemplo, el sol a través de las palas de la hélice o un faro anticolisión reflejado en nubes) produce mareo, náuseas, desorientación e incluso convulsiones en personas sensibles. Se cambia el rumbo o el régimen de la hélice, se apaga la luz si es posible y se evitan los destellos.",
+     "**Falso horizonte**: una banda de nubes inclinada, un terreno en pendiente, las luces de la costa o una aurora pueden parecer el horizonte y el piloto alinea el avión con ellas, quedando inclinado respecto al verdadero.",
+     "**Whiteout** (cielo blanco): con nieve, niebla uniforme o nubes bajas sobre suelo blanco no hay contraste ni textura, desaparece la apreciación de la altura y las distancias. Hay que volar por instrumentos.",
+     "**Agujero negro** (black hole): una aproximación nocturna sobre agua o terreno oscuro sin luces hacia una pista iluminada da la sensación de estar más alto de lo que se está, y lleva a una aproximación demasiado baja."
+    ]
+   },
+   {
+    "title": "Ilusiones de aproximación",
+    "text": [
+     "El cerebro estima la altura y el ángulo de la senda comparando la forma de la pista con la que espera. Si la pista es distinta de lo habitual, la estimación falla. Como regla, **lo que parece alto lleva a aproximar bajo, y lo que parece bajo lleva a aproximar alto**. Las ilusiones más frecuentes son estas."
+    ],
+    "figure": "svg:040-ilusiones-aproximacion",
+    "caption": "Trayectoria correcta (verde) y trayectoria volada por efecto de la ilusión (rojo).",
+    "bullets": [
+     "**Pista más estrecha o más larga de lo habitual**: parece que estás más alto y lejos; riesgo de aproximación baja y corta.",
+     "**Pista más ancha o más corta de lo habitual**: parece que estás más bajo y cerca; riesgo de aproximación alta, con toma larga.",
+     "**Pista con pendiente ascendente**: parece que estás más alto; riesgo de aproximación baja.",
+     "**Pista con pendiente descendente**: parece que estás más bajo; riesgo de aproximación alta.",
+     "**Aproximación nocturna con pocas luces o sobre agua (agujero negro)**: riesgo de aproximación baja."
+    ],
+    "note": {
+     "kind": "tip",
+     "text": "La mejor defensa es comprobar la senda con ayudas: VASI/PAPI si hay, la altitud con el altímetro en cada punto del circuito, la velocidad y un circuito normalizado. Si algo parece raro, a motor y al aire; no es una vergüenza dar la vuelta."
+    }
+   },
+   {
+    "title": "Contramedidas",
+    "text": [
+     "Las ilusiones no se eliminan, se gestionan. Primero, **conócelas**: saber que te engañarán te permite sospecharlo. Segundo, **confía en los instrumentos** cuando contradicen lo que sientes. Tercero, evita lo que las provoca: movimientos de cabeza en virajes, vuelo nocturno sin referencias, mirar fijamente una luz, fatiga y alcohol. Cuarto, **practica el vuelo por instrumentos**: aunque sea solo VFR, la formación incluye unas horas de instrucción de vuelo instrumental básica para salir de una situación de pérdida de referencias.",
+     "Si te desorientas, no te dejes llevar por la sensación: **nivela alas con el horizonte artificial, controla la actitud y la velocidad y después busca la altura**. Si hay dudas, **comunica la emergencia al control** y pide ayuda; la situación se resuelve mucho mejor con una llamada a tiempo."
+    ]
+   }
+  ],
+  "numbers": [
+   "Tres tipos: I no reconocida, II reconocida, III incapacitante",
+   "Leans: sensación falsa de inclinación al nivelar tras un alabeo suave",
+   "Espiral mortal: nivela alas primero y recupera después",
+   "Autocinesis: luz fija aislada que parece moverse (6-12 s)",
+   "Parpadeo: 4-20 destellos por segundo",
+   "Pista estrecha/larga/pendiente ascendente: se aproxima bajo; ancha/corta/descendente: alto",
+   "Somatogravica: aceleración = sensación de morro arriba"
+  ],
+  "traps": [
+   "El Coriolis aparece al mover la cabeza durante un viraje, no por el viraje mismo.",
+   "En la somatogravica, la aceleración se confunde con morro arriba (no con morro abajo).",
+   "El «agujero negro» provoca aproximación baja.",
+   "Ante una ilusión no se corrige con la sensación del cuerpo, sino con los instrumentos.",
+   "Una pista ancha hace pensar que estás más bajo, y se aproxima alto."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge, cap. 17: desorientación espacial",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "SKYbrary, Spatial Disorientation",
+    "url": "https://skybrary.aero/articles/spatial-disorientation"
+   }
+  ],
+  "id": "040.06",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "040.06.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "La desorientación espacial es:",
+   "options": [
+    "La pérdida de oído por el ruido",
+    "La incapacidad de determinar la posición, actitud o movimiento del avión respecto a la Tierra",
+    "La falta de oxígeno en el cerebro",
+    "Una avería del horizonte artificial"
+   ],
+   "correct": 1,
+   "why": "Es un error de percepción de la actitud o el movimiento del avión.",
+   "whyNot": [
+    "La pérdida de oído es sordera.",
+    null,
+    "Eso es hipoxia.",
+    "Es un fallo humano, no de un instrumento."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.002",
+   "type": "concepto",
+   "level": 2,
+   "q": "En la desorientación espacial de tipo I (no reconocida), el piloto:",
+   "options": [
+    "Es consciente del conflicto y lo corrige",
+    "Sufre vértigo y no puede pilotar",
+    "Se queda dormido",
+    "No sabe que está desorientado y controla el avión con confianza"
+   ],
+   "correct": 3,
+   "why": "Es la más peligrosa porque no hay conciencia del problema.",
+   "whyNot": [
+    "Eso es el tipo II.",
+    "Eso es el tipo III.",
+    "No es sueño.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "En una espiral mortal, la recuperación consiste en:",
+   "options": [
+    "Nivelar las alas y después recuperar la altura",
+    "Tirar fuerte del mando para ganar altura",
+    "Aumentar el alabeo",
+    "Quitar potencia y cerrar los ojos"
+   ],
+   "correct": 0,
+   "why": "Tirar sin nivelar tensa la espiral; primero se reduce el alabeo con los instrumentos.",
+   "whyNot": [
+    null,
+    "Cerraría más la espiral y aumentaría la carga.",
+    "Aumentaría la pérdida de altura.",
+    "Cerrar los ojos elimina la única fuente fiable."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "Los «leans» se producen cuando:",
+   "options": [
+    "Se asciende demasiado",
+    "Se hiperventila",
+    "Se nivela el avión tras un alabeo suave no percibido y se siente una inclinación contraria",
+    "Se mira una luz fija"
+   ],
+   "correct": 2,
+   "why": "El canal semicircular no notó el alabeo y al nivelar el piloto siente que se inclina.",
+   "whyNot": [
+    "La altitud no es la causa.",
+    "La hiperventilación da hormigueo.",
+    null,
+    "Eso es autocinesis."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "La ilusión de Coriolis aparece al:",
+   "options": [
+    "Entrar en un picado",
+    "Acelerar en la pista",
+    "Mover la cabeza durante un viraje sostenido",
+    "Mirar el sol"
+   ],
+   "correct": 2,
+   "why": "Mover la cabeza estimula varios canales a la vez y se siente un giro violento.",
+   "whyNot": [
+    "En picado no hay giro de cabeza.",
+    "Es la somatogravica.",
+    null,
+    "Es el parpadeo, con luz intermitente."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Qué evita la ilusión de Coriolis?",
+   "options": [
+    "No mover la cabeza bruscamente en virajes o vuelo instrumental",
+    "Respirar profundo",
+    "Volar más bajo",
+    "Usar gafas oscuras"
+   ],
+   "correct": 0,
+   "why": "La causa es el movimiento de cabeza en un entorno rotatorio.",
+   "whyNot": [
+    null,
+    "No tiene relación.",
+    "No cambia el mecanismo.",
+    "No afecta al oído interno."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "La ilusión somatogravica, de noche al despegar, hace sentir:",
+   "options": [
+    "Que el morro baja, y el piloto tiende a tirar",
+    "Que se gira a la derecha",
+    "Que se pierde altura",
+    "Que el morro sube, y el piloto tiende a empujar hacia abajo"
+   ],
+   "correct": 3,
+   "why": "Los otolitos interpretan la aceleración hacia delante como inclinación hacia atrás.",
+   "whyNot": [
+    "La deceleración da esa sensación, no la aceleración.",
+    "No es una sensación de giro.",
+    "No hay sensación de pérdida de altura.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "La autocinesis consiste en que:",
+   "options": [
+    "Una luz parpadeante provoca náuseas",
+    "Una luz fija y aislada parece moverse si se mira durante varios segundos",
+    "Un horizonte inclinado parece recto",
+    "La nieve elimina el contraste"
+   ],
+   "correct": 1,
+   "why": "Sin referencias, el ojo vagabundea y la luz parece desplazarse.",
+   "whyNot": [
+    "Eso es el parpadeo.",
+    null,
+    "Eso es el falso horizonte.",
+    "Eso es el whiteout."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.009",
+   "type": "regla",
+   "level": 2,
+   "q": "El «flicker vertigo» (parpadeo) se produce con luces que parpadean con una frecuencia aproximada de:",
+   "options": [
+    "1 vez por minuto",
+    "4 a 20 veces por segundo",
+    "100 veces por segundo",
+    "Una cada 5 segundos"
+   ],
+   "correct": 1,
+   "why": "Es la banda que afecta a las ondas cerebrales y puede producir mareo o convulsiones.",
+   "whyNot": [
+    "Es demasiado lento.",
+    null,
+    "Es demasiado rápido para percibirse como parpadeo.",
+    "No es una frecuencia de destello molesta."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.010",
+   "type": "concepto",
+   "level": 1,
+   "q": "Un falso horizonte puede deberse a:",
+   "options": [
+    "El viento en cola",
+    "La presión baja",
+    "La falta de oxígeno",
+    "Una capa de nubes inclinada o luces en tierra"
+   ],
+   "correct": 3,
+   "why": "Se toma por horizonte una referencia que no lo es.",
+   "whyNot": [
+    "El viento no afecta a la percepción visual.",
+    "No tiene relación con la ilusión.",
+    "La hipoxia es otro tema.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un whiteout:",
+   "options": [
+    "Desaparecen el contraste y las referencias de altura y distancia",
+    "Se ve todo con más detalle",
+    "Se distingue mejor el relieve",
+    "Aumenta la sensación de profundidad"
+   ],
+   "correct": 0,
+   "why": "Con superficies uniformemente blancas no hay textura ni sombras.",
+   "whyNot": [
+    null,
+    "Ocurre lo contrario.",
+    "El relieve se vuelve invisible.",
+    "La profundidad se pierde."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una pista más estrecha que las habituales produce la ilusión de estar:",
+   "options": [
+    "Más bajo, con riesgo de aproximación alta",
+    "A la altura correcta",
+    "Más alto, con riesgo de aproximación baja",
+    "Más veloz"
+   ],
+   "correct": 2,
+   "why": "La pista se ve más pequeña y parece más lejana: tendencia a bajar.",
+   "whyNot": [
+    "Eso ocurre con la pista ancha.",
+    "El cerebro está engañado.",
+    null,
+    "No cambia la sensación de velocidad."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.013",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una pista más ancha o más corta de lo habitual produce la ilusión de estar:",
+   "options": [
+    "Más alto, con riesgo de aproximación baja",
+    "En una senda correcta",
+    "Más bajo, con riesgo de aproximación alta",
+    "Más lejos del umbral"
+   ],
+   "correct": 2,
+   "why": "La pista parece mayor y más cercana: tendencia a ir alto.",
+   "whyNot": [
+    "Eso ocurre con la pista estrecha.",
+    "No es la senda correcta.",
+    null,
+    "Parece más cerca, no más lejos."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.014",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una pista en pendiente ascendente tiende a producir:",
+   "options": [
+    "Aproximación baja",
+    "Aproximación alta",
+    "Aproximación a la altura correcta",
+    "Ninguna ilusión"
+   ],
+   "correct": 0,
+   "why": "Parece que se está más alto de lo real, así que se baja de más.",
+   "whyNot": [
+    null,
+    "Eso es la pendiente descendente.",
+    "No hay ilusión neutra.",
+    "Sí produce ilusión."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.015",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una pista en pendiente descendente tiende a producir:",
+   "options": [
+    "Aproximación baja",
+    "Aproximación estable",
+    "Toma corta",
+    "Aproximación alta"
+   ],
+   "correct": 3,
+   "why": "Parece que se está más bajo, así que se vuela más alto.",
+   "whyNot": [
+    "Eso es la pendiente ascendente.",
+    "No tiende a la estabilidad.",
+    "Se tiende a aterrizar largo.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.016",
+   "type": "concepto",
+   "level": 2,
+   "q": "El «agujero negro» en una aproximación nocturna lleva a:",
+   "options": [
+    "Aproximación alta",
+    "Aproximación baja",
+    "Aproximación demasiado rápida",
+    "Aproximación correcta"
+   ],
+   "correct": 1,
+   "why": "La falta de referencias da la sensación de estar más alto.",
+   "whyNot": [
+    "Es lo contrario.",
+    null,
+    "No se vincula con la velocidad.",
+    "Es una ilusión que engaña."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.017",
+   "type": "concepto",
+   "level": 2,
+   "q": "Para contrarrestar una ilusión sensorial en vuelo, el piloto debe:",
+   "options": [
+    "Confiar en el instinto",
+    "Confiar en los instrumentos y no en las sensaciones",
+    "Cerrar los ojos",
+    "Subir rápidamente"
+   ],
+   "correct": 1,
+   "why": "Los instrumentos dan información objetiva; el oído interno es engañable.",
+   "whyNot": [
+    "El instinto es lo que se engaña.",
+    null,
+    "Elimina la única información fiable.",
+    "Solo agrava la situación."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.018",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un viraje de alabeo constante, tras unos segundos el cerebro:",
+   "options": [
+    "Siente un giro más fuerte",
+    "Siente que se asciende",
+    "Sufre barotrauma",
+    "Deja de sentir el giro"
+   ],
+   "correct": 3,
+   "why": "Los canales semicirculares se adaptan al giro constante.",
+   "whyNot": [
+    "Es lo contrario.",
+    "No hay sensación de ascenso.",
+    "No tiene que ver con la presión.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.06.019",
+   "type": "concepto",
+   "level": 3,
+   "q": "En un viraje descendente cada vez más cerrado, el piloto nota que baja la altura. La reacción instintiva (tirar del mando sin reducir el alabeo) provoca:",
+   "options": [
+    "Una espiral cada vez más cerrada y una pérdida de altitud acelerada",
+    "Un ascenso estable",
+    "Una entrada en barrena segura",
+    "Ninguna consecuencia"
+   ],
+   "correct": 0,
+   "why": "La elevación se orienta hacia el centro del viraje y la espiral se cierra.",
+   "whyNot": [
+    null,
+    "Sin reducir el alabeo no hay ascenso.",
+    "La barrena exige pérdida de sustentación.",
+    "Hay consecuencias graves."
+   ],
+   "ref": "Medicina aeronáutica"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.040.06.01",
+   "front": "Espiral mortal",
+   "back": "Viraje descendente no percibido: nivelar alas primero y después recuperar altura"
+  },
+  {
+   "id": "c.040.06.02",
+   "front": "Somatogravica y Coriolis",
+   "back": "Somatogravica: aceleración = sensación de morro arriba. Coriolis: mover la cabeza en un viraje"
+  },
+  {
+   "id": "c.040.06.03",
+   "front": "Autocinesis y parpadeo",
+   "back": "Autocinesis: luz fija que parece moverse. Parpadeo (4-20 Hz): mareo y desorientación"
+  },
+  {
+   "id": "c.040.06.04",
+   "front": "Ilusiones de aproximación",
+   "back": "Pista estrecha/larga/ascendente: se vuela bajo. Ancha/corta/descendente: se vuela alto"
+  },
+  {
+   "id": "c.040.06.05",
+   "front": "Contramedida a la desorientación",
+   "back": "Confiar en los instrumentos y no en las sensaciones"
+  }
+ ]
+}

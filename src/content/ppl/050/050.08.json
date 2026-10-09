@@ -1,0 +1,564 @@
+{
+ "lesson": {
+  "title": "Humedad y termodinámica",
+  "summary": "Vapor de agua, relación de mezcla, humedad relativa y punto de rocío; cambios de estado y calor latente; procesos adiabáticos y gradientes seco y saturado; y estabilidad absoluta, condicional e inestabilidad, con el cálculo de la base de las nubes.",
+  "objectives": [
+   "Definir humedad relativa, relación de mezcla y punto de rocío y saber cómo cambian con la temperatura",
+   "Explicar los cambios de estado del agua y el papel del calor latente",
+   "Aplicar los gradientes adiabáticos seco (3 °C/1000 ft) y saturado (≈ 1,8 °C/1000 ft)",
+   "Calcular la base de los cúmulos con (T − Td) × 400 ft",
+   "Clasificar la estabilidad del aire (estable, condicionalmente inestable, inestable) y predecir el tiempo asociado"
+  ],
+  "sections": [
+   {
+    "title": "El vapor de agua en el aire",
+    "text": [
+     "El aire contiene agua en forma de vapor, invisible. La cantidad máxima que puede contener **depende de la temperatura**: el aire cálido admite mucho más que el frío (aproximadamente el doble por cada 10 °C). Cuando contiene todo el vapor posible está **saturado**; si se enfría más, el exceso se condensa en gotas: nubes, niebla o rocío.",
+     "Las magnitudes que usarás:"
+    ],
+    "table": {
+     "caption": "Medidas de la humedad",
+     "head": [
+      "Magnitud",
+      "Qué es",
+      "Cómo cambia"
+     ],
+     "rows": [
+      [
+       "Relación de mezcla",
+       "Gramos de vapor por kg de aire seco (g/kg)",
+       "Se conserva al subir o bajar sin condensar; disminuye si hay condensación y aumenta con la evaporación"
+      ],
+      [
+       "Humedad relativa (HR)",
+       "Relación de mezcla actual dividida por la de saturación, en %",
+       "Aumenta al enfriarse el aire y disminuye al calentarse, aunque no cambie el vapor"
+      ],
+      [
+       "Punto de rocío (Td)",
+       "Temperatura a la que el aire se satura si se enfría a presión constante",
+       "No cambia con el calentamiento o el enfriamiento, mientras no cambie el vapor ni la presión"
+      ],
+      [
+       "Dispersión (T − Td)",
+       "Diferencia entre la temperatura y el punto de rocío",
+       "Cero con aire saturado (HR 100 %); cuanto menor, más cerca está la niebla o la nube"
+      ]
+     ]
+    },
+    "bullets": [
+     "La HR **es máxima al amanecer** (T mínima) y mínima a primeras horas de la tarde (T máxima), sin que cambie el vapor.",
+     "Si T y Td se igualan (en el METAR, dispersión 0 o 1 °C) hay riesgo de niebla o de nube baja.",
+     "Si en el METAR T = Td y llueve, el aire está saturado: HR 100 %."
+    ],
+    "examples": [
+     {
+      "q": "A las 06:00 hay 8 °C y Td 6 °C. A las 15:00 hay 20 °C y el vapor no ha cambiado. ¿Qué ocurre con la HR y con Td?",
+      "a": "Td sigue en 6 °C, porque no ha cambiado el vapor. La HR baja mucho porque el aire a 20 °C admite mucho más vapor: pasa de unos 85 % a unos 35 %."
+     }
+    ]
+   },
+   {
+    "title": "Cambios de estado y calor latente",
+    "text": [
+     "El agua pasa de un estado a otro absorbiendo o liberando calor. Ese calor, que no cambia la temperatura mientras se produce el cambio, es el **calor latente**. La clave: los cambios hacia un estado más ordenado liberan calor; hacia uno más desordenado, lo absorben."
+    ],
+    "table": {
+     "caption": "Cambios de estado y calor latente",
+     "head": [
+      "Cambio",
+      "Nombre",
+      "Calor"
+     ],
+     "rows": [
+      [
+       "Vapor → líquido",
+       "Condensación",
+       "Libera calor"
+      ],
+      [
+       "Líquido → vapor",
+       "Evaporación",
+       "Absorbe calor"
+      ],
+      [
+       "Líquido → hielo",
+       "Congelación",
+       "Libera calor"
+      ],
+      [
+       "Hielo → líquido",
+       "Fusión",
+       "Absorbe calor"
+      ],
+      [
+       "Vapor → hielo",
+       "Sublimación inversa (depósito)",
+       "Libera calor"
+      ],
+      [
+       "Hielo → vapor",
+       "Sublimación",
+       "Absorbe calor"
+      ]
+     ]
+    },
+    "bullets": [
+     "El calor liberado al condensarse calienta el aire que asciende: es el combustible de las tormentas y la razón por la que el gradiente saturado es menor que el seco.",
+     "La evaporación enfría: el aire que recibe lluvia que se evapora se enfría y se vuelve más denso (microrráfagas)."
+    ]
+   },
+   {
+    "title": "Procesos adiabáticos",
+    "text": [
+     "Un proceso es **adiabático** cuando una masa de aire cambia de temperatura sin intercambiar calor con el entorno, solo por cambiar de presión. El aire que **sube** encuentra menos presión, se **expande** y se **enfría**; el que **baja** se comprime y se calienta. Como el aire es mal conductor y las masas son enormes, este proceso domina en la atmósfera.",
+     "Mientras el aire no está saturado se enfría o se calienta a **3 °C por 1000 ft** (1 °C por cada 100 m): es el **gradiente adiabático seco**. Cuando asciende y alcanza la saturación, empieza a condensarse y a liberar calor latente: se enfría solo unos **1,8 °C por 1000 ft** (varía con la temperatura, entre unos 1,2 y 2,7): es el **gradiente adiabático saturado**. Lo importante es no confundirlos con el **gradiente real o ambiental** (ELR), que es lo que mide un sondeo (la ISA usa 1,98 °C por 1000 ft)."
+    ],
+    "formulas": [
+     {
+      "f": "Base de las nubes (ft) ≈ (T − Td) × 400",
+      "note": "Una burbuja ascendente se enfría 3 °C/1000 ft y su punto de rocío baja unos 0,5 °C/1000 ft: la dispersión se cierra 2,5 °C por 1000 ft, es decir, 400 ft por grado."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Superficie: 24 °C, Td 12 °C. ¿A qué altura sobre el suelo estará la base de los cúmulos?",
+      "a": "(24 − 12) × 400 = 4800 ft AGL, aproximadamente. En el METAR la base se da sobre la elevación del aeródromo."
+     },
+     {
+      "q": "Una burbuja a 15 °C con Td 11 °C se eleva a 5000 ft sobre el suelo. ¿Qué temperatura tiene allí?",
+      "a": "Base: 4 × 400 = 1600 ft. Hasta la base se enfría 1,6 × 3 = 4,8 °C → 10,2 °C. De 1600 a 5000 ft (3400 ft) con 1,8 °C/1000 ft: −6,1 °C → unos 4,1 °C."
+     }
+    ]
+   },
+   {
+    "title": "Estabilidad del aire",
+    "text": [
+     "Una burbuja de aire sube si es más cálida (menos densa) que el entorno y baja si es más fría. La **estabilidad** responde a una pregunta: si empujas una burbuja hacia arriba, ¿vuelve o sigue subiendo? La respuesta depende de cómo cambia la temperatura real con la altura (ELR) frente a los gradientes adiabáticos."
+    ],
+    "table": {
+     "caption": "Clasificación de la estabilidad",
+     "head": [
+      "Condición del gradiente real (ELR)",
+      "Estabilidad",
+      "Resultado"
+     ],
+     "rows": [
+      [
+       "ELR menor que el saturado (< 1,8 °C/1000 ft), incluidas las inversiones",
+       "Absolutamente estable",
+       "La burbuja siempre vuelve: nubes estratiformes, poca turbulencia, visibilidad reducida"
+      ],
+      [
+       "ELR entre el saturado y el seco (1,8 a 3 °C/1000 ft)",
+       "Condicionalmente inestable",
+       "Estable si el aire está seco; inestable si se satura (cúmulos y tormentas)"
+      ],
+      [
+       "ELR mayor que el seco (> 3 °C/1000 ft)",
+       "Absolutamente inestable",
+       "La burbuja sigue subiendo: cúmulos, turbulencia, buena visibilidad entre ellas"
+      ]
+     ]
+    },
+    "figure": "svg:050-estabilidad",
+    "caption": "Gradientes de referencia (discontinuas) y cuatro perfiles reales posibles.",
+    "bullets": [
+     "Una **inversión** (la temperatura sube con la altura) es la forma extrema de estabilidad: actúa de tapa e impide la convección y atrapa bruma y humo bajo ella.",
+     "Una masa de aire se **estabiliza** al enfriarse por abajo (noche, aire sobre una superficie fría) o al hundirse (subsidencia); se **desestabiliza** al calentarse por abajo (día, aire frío sobre superficie cálida) o al ascender (frentes, relieve).",
+     "Estable: nubes en capas (St, Sc), lluvia continua o llovizna, visibilidad pobre, aire suave. Inestable: nubes de desarrollo vertical (Cu, Cb), chubascos, buena visibilidad fuera de ellas, turbulencia."
+    ]
+   },
+   {
+    "title": "Cómo clasificar la estabilidad en un problema",
+    "text": [
+     "Si te dan la temperatura a dos niveles, calcula el **gradiente real**: diferencia de temperatura dividida entre la diferencia de altura, en °C por 1000 ft. Compáralo con 1,8 y con 3. Si el aire del problema está saturado (nube, niebla o lluvia), usa el saturado como referencia para el ascenso de la burbuja."
+    ],
+    "examples": [
+     {
+      "q": "A 0 ft hay 20 °C y a 3000 ft hay 12 °C. ¿Qué estabilidad hay?",
+      "a": "Gradiente real: 8 °C / 3 = 2,7 °C por 1000 ft. Está entre 1,8 y 3: condicionalmente inestable."
+     },
+     {
+      "q": "A 1000 ft hay 15 °C y a 3000 ft hay 14 °C. ¿Qué estabilidad hay?",
+      "a": "Gradiente real: 1 °C en 2000 ft = 0,5 °C por 1000 ft, menor que 1,8: absolutamente estable (casi una capa isoterma)."
+     }
+    ]
+   }
+  ],
+  "numbers": [
+   "Gradiente adiabático seco: 3 °C/1000 ft",
+   "Gradiente adiabático saturado: unos 1,8 °C/1000 ft",
+   "Gradiente ISA: 1,98 °C/1000 ft",
+   "Base de los cúmulos ≈ (T − Td) × 400 ft",
+   "La HR aumenta al enfriarse el aire y es máxima al amanecer; Td no cambia con la temperatura",
+   "Condensación, congelación y depósito liberan calor; evaporación, fusión y sublimación lo absorben",
+   "Estable: ELR < 1,8; condicionalmente inestable: 1,8 a 3; inestable: ELR > 3 °C/1000 ft"
+  ],
+  "traps": [
+   "Pensar que el punto de rocío cambia al calentarse el aire: no cambia mientras no varíe el vapor.",
+   "Usar 3 °C/1000 ft dentro de una nube: allí el gradiente es el saturado (≈ 1,8).",
+   "Calcular la base con T − Td sin multiplicar por 400 ft, o pasar a metros por error.",
+   "Creer que la inversión es inestable: es absolutamente estable.",
+   "Confundir el gradiente adiabático (de una burbuja que sube) con el real o ELR (del aire en reposo)."
+  ],
+  "sources": [
+   {
+    "title": "AEMET, Apuntes de meteorología aeronáutica",
+    "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
+   },
+   {
+    "title": "FAA-H-8083-28, Aviation Weather Handbook (humedad, estabilidad)",
+    "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+   },
+   {
+    "title": "OMM, Atlas internacional de nubes",
+    "url": "https://cloudatlas.wmo.int/"
+   }
+  ],
+  "spain": [
+   "En verano, con la baja térmica y el calor del interior de la península, la dispersión T − Td puede superar los 20 °C: la base de los cúmulos puede estar a más de 8000 ft sobre el suelo, y los cumulonimbos arrancan desde ahí."
+  ],
+  "id": "050.08",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "050.08.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "Si una masa de aire se calienta sin que cambie su contenido de vapor, su humedad relativa:",
+   "options": [
+    "Disminuye, y el punto de rocío no cambia",
+    "Aumenta, y el punto de rocío sube",
+    "Disminuye, y el punto de rocío baja",
+    "No cambia, y el punto de rocío sube"
+   ],
+   "correct": 0,
+   "why": "El aire más cálido admite más vapor: HR baja. El punto de rocío solo depende del vapor y de la presión, que no han cambiado.",
+   "whyNot": [
+    null,
+    "La HR no aumenta si el aire se calienta.",
+    "Td no baja, porque el vapor es el mismo.",
+    "La HR sí cambia con la temperatura."
+   ],
+   "ref": "AEMET; FAA-H-8083-28"
+  },
+  {
+   "id": "050.08.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "El punto de rocío es:",
+   "options": [
+    "La temperatura a la que el aire alcanza su máxima humedad relativa",
+    "La temperatura a la que el aire se satura al enfriarse a presión constante",
+    "La temperatura del aire cuando empieza a llover",
+    "La temperatura a la que se forma hielo en las nubes"
+   ],
+   "correct": 1,
+   "why": "Td es la temperatura de saturación a presión constante, sin añadir ni quitar vapor.",
+   "whyNot": [
+    "No es una HR máxima genérica: es la temperatura de saturación.",
+    null,
+    "No tiene relación directa con la lluvia.",
+    "No se refiere a la congelación."
+   ],
+   "ref": "AEMET"
+  },
+  {
+   "id": "050.08.003",
+   "type": "regla",
+   "level": 1,
+   "q": "El gradiente adiabático seco vale:",
+   "options": [
+    "1,8 °C por 1000 ft",
+    "2 °C por 1000 ft",
+    "3 °C por 1000 ft",
+    "6,5 °C por 1000 ft"
+   ],
+   "correct": 2,
+   "why": "En aire no saturado, el aire que sube se enfría 3 °C por 1000 ft (1 °C/100 m).",
+   "whyNot": [
+    "1,8 °C es el saturado.",
+    "2 °C es el gradiente ISA, que es del aire en reposo.",
+    null,
+    "6,5 °C por km es el gradiente ISA expresado en kilómetros; no es un gradiente adiabático."
+   ],
+   "ref": "AEMET; OACI Doc 7488"
+  },
+  {
+   "id": "050.08.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "El gradiente adiabático saturado es menor que el seco porque:",
+   "options": [
+    "La evaporación absorbe calor del aire ascendente",
+    "El aire saturado tiene menos masa",
+    "El vapor absorbe radiación solar",
+    "La condensación libera calor latente que calienta el aire ascendente"
+   ],
+   "correct": 3,
+   "why": "Al condensar, el vapor libera calor latente, que compensa parte del enfriamiento por expansión.",
+   "whyNot": [
+    "La evaporación enfriaría más, no menos.",
+    "La masa no es el motivo.",
+    "No es la radiación solar, es la condensación.",
+    null
+   ],
+   "ref": "AEMET"
+  },
+  {
+   "id": "050.08.005",
+   "type": "calculo",
+   "level": 1,
+   "q": "Temperatura 21 °C y punto de rocío 9 °C. La base de los cúmulos está aproximadamente a:",
+   "options": [
+    "1200 ft sobre el suelo",
+    "4800 ft sobre el suelo",
+    "3000 ft sobre el suelo",
+    "8400 ft sobre el suelo"
+   ],
+   "correct": 1,
+   "why": "(21 − 9) × 400 = 4800 ft.",
+   "whyNot": [
+    "1200 ft sería 12 × 100.",
+    null,
+    "3000 ft no sale de la fórmula.",
+    "8400 ft resulta de 21 × 400."
+   ],
+   "ref": "Regla de la dispersión"
+  },
+  {
+   "id": "050.08.006",
+   "type": "calculo",
+   "level": 2,
+   "q": "Una burbuja seca a 20 °C asciende 2000 ft sin saturarse. Su temperatura final es:",
+   "options": [
+    "16 °C",
+    "18 °C",
+    "14 °C",
+    "8 °C"
+   ],
+   "correct": 2,
+   "why": "Gradiente seco: 3 °C/1000 ft × 2 = 6 °C. 20 − 6 = 14 °C.",
+   "whyNot": [
+    "Es 16 °C si usas 2 °C/1000 ft, el ISA.",
+    "18 °C resulta de 1 °C por 1000 ft.",
+    null,
+    "8 °C sería enfriar 12 °C, el doble."
+   ],
+   "ref": "AEMET"
+  },
+  {
+   "id": "050.08.007",
+   "type": "calculo",
+   "level": 3,
+   "q": "Una burbuja a 15 °C con Td 11 °C se eleva hasta 5000 ft sobre el suelo. Su temperatura allí es aproximadamente:",
+   "options": [
+    "0 °C",
+    "10 °C",
+    "6 °C",
+    "4 °C"
+   ],
+   "correct": 3,
+   "why": "Base: 4 × 400 = 1600 ft, con 4,8 °C de enfriamiento → 10,2 °C. De 1600 a 5000 ft con 1,8 °C/1000 ft: −6,1 °C → unos 4 °C.",
+   "whyNot": [
+    "0 °C sale de aplicar 3 °C/1000 ft hasta los 5000 ft (15 − 15).",
+    "10 °C es la temperatura en la base, no a 5000 ft.",
+    "6 °C resulta de aplicar 1,8 °C hasta 5000 ft: 15 − 9 = 6.",
+    null
+   ],
+   "ref": "AEMET"
+  },
+  {
+   "id": "050.08.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "El aire está absolutamente estable cuando el gradiente real:",
+   "options": [
+    "Es menor que el adiabático saturado",
+    "Es mayor que el adiabático seco",
+    "Está entre el saturado y el seco",
+    "Es igual al adiabático seco"
+   ],
+   "correct": 0,
+   "why": "Si el gradiente real es menor que el saturado, una burbuja siempre vuelve a su nivel; las inversiones son el caso extremo.",
+   "whyNot": [
+    null,
+    "Eso es inestable.",
+    "Eso es condicionalmente inestable.",
+    "Es neutro para el aire no saturado."
+   ],
+   "ref": "AEMET"
+  },
+  {
+   "id": "050.08.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "El gradiente real mide 2,4 °C por 1000 ft. El aire es:",
+   "options": [
+    "Absolutamente estable",
+    "Condicionalmente inestable",
+    "Absolutamente inestable",
+    "Neutro en todo caso"
+   ],
+   "correct": 1,
+   "why": "2,4 está entre 1,8 (saturado) y 3 (seco): estable si el aire está seco, inestable si se satura.",
+   "whyNot": [
+    "Estable exige menos de 1,8.",
+    null,
+    "Inestable exigiría más de 3.",
+    "No es neutro: está entre ambos."
+   ],
+   "ref": "AEMET"
+  },
+  {
+   "id": "050.08.010",
+   "type": "concepto",
+   "level": 1,
+   "q": "Una inversión de temperatura es una capa en la que:",
+   "options": [
+    "La temperatura disminuye 3 °C por 1000 ft, con inestabilidad",
+    "La temperatura no cambia con la altura, con inestabilidad",
+    "La temperatura aumenta con la altura, con estabilidad absoluta",
+    "La temperatura disminuye 1,8 °C por 1000 ft, con estabilidad"
+   ],
+   "correct": 2,
+   "why": "En una inversión la temperatura sube con la altura: absolutamente estable, impide la convección y retiene bruma y humo.",
+   "whyNot": [
+    "Eso es el gradiente seco.",
+    "Una capa isoterma es muy estable, no inestable.",
+    null,
+    "Eso es el gradiente saturado, no una inversión."
+   ],
+   "ref": "AEMET"
+  },
+  {
+   "id": "050.08.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un cielo con nubes de gran desarrollo vertical, chubascos y buena visibilidad entre ellos indica:",
+   "options": [
+    "Aire estable",
+    "Una inversión bajo las nubes",
+    "Aire seco y subsidencia",
+    "Aire inestable"
+   ],
+   "correct": 3,
+   "why": "El desarrollo vertical, los chubascos y la visibilidad buena entre nubes son propios de aire inestable.",
+   "whyNot": [
+    "El aire estable da nubes en capas.",
+    "Una inversión impide el desarrollo vertical.",
+    "La subsidencia seca y estabiliza.",
+    null
+   ],
+   "ref": "AEMET"
+  },
+  {
+   "id": "050.08.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "La condensación del vapor de agua:",
+   "options": [
+    "Libera calor latente",
+    "Absorbe calor latente",
+    "No intercambia calor",
+    "Absorbe calor y enfría el aire"
+   ],
+   "correct": 0,
+   "why": "La condensación libera calor latente al aire, y calienta la burbuja ascendente.",
+   "whyNot": [
+    null,
+    "Eso describe la evaporación.",
+    "Siempre hay intercambio, es el calor latente.",
+    "Calienta, no enfría."
+   ],
+   "ref": "AEMET"
+  },
+  {
+   "id": "050.08.013",
+   "type": "lectura",
+   "level": 2,
+   "q": "Un METAR da T 14 °C / Td 13 °C con viento flojo y cielo despejado en la madrugada. Lo más probable es:",
+   "data": "LEXX 050430Z 02004KT CAVOK 14/13 Q1018",
+   "options": [
+    "Cúmulos con base alta",
+    "Niebla o nubes bajas por enfriamiento",
+    "Tormentas por la tarde",
+    "Turbulencia por inestabilidad"
+   ],
+   "correct": 1,
+   "why": "Una dispersión de 1 °C y enfriamiento nocturno acercan T a Td: se alcanza la saturación y puede formarse niebla.",
+   "whyNot": [
+    "Una base alta exige gran dispersión.",
+    null,
+    "No hay inestabilidad significativa en la madrugada.",
+    "La turbulencia convectiva es de día."
+   ],
+   "ref": "AEMET"
+  },
+  {
+   "id": "050.08.014",
+   "type": "concepto",
+   "level": 1,
+   "q": "La humedad relativa de un aire saturado es:",
+   "options": [
+    "50 %",
+    "0 %",
+    "100 %",
+    "Depende de la presión, entre 0 y 100 %"
+   ],
+   "correct": 2,
+   "why": "En el aire saturado la relación de mezcla actual es igual a la de saturación: HR 100 % y T = Td.",
+   "whyNot": [
+    "No puede ser 50 % si está saturado.",
+    "0 % es aire sin vapor.",
+    null,
+    "Un aire saturado siempre está al 100 %."
+   ],
+   "ref": "AEMET"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.050.08.01",
+   "front": "Gradiente adiabático seco",
+   "back": "3 °C por 1000 ft (aire no saturado)"
+  },
+  {
+   "id": "c.050.08.02",
+   "front": "Gradiente adiabático saturado",
+   "back": "Unos 1,8 °C por 1000 ft (por el calor latente liberado)"
+  },
+  {
+   "id": "c.050.08.03",
+   "front": "Base de los cúmulos",
+   "back": "(T − Td) × 400 ft sobre el suelo"
+  },
+  {
+   "id": "c.050.08.04",
+   "front": "Punto de rocío",
+   "back": "Temperatura de saturación a presión constante; no cambia al calentar o enfriar el aire"
+  },
+  {
+   "id": "c.050.08.05",
+   "front": "Humedad relativa",
+   "back": "Sube al enfriarse el aire y es máxima al amanecer"
+  },
+  {
+   "id": "c.050.08.06",
+   "front": "Calor latente",
+   "back": "Se libera al condensar, congelar y depositar; se absorbe al evaporar, fundir y sublimar"
+  },
+  {
+   "id": "c.050.08.07",
+   "front": "Estabilidad por el gradiente real",
+   "back": "< 1,8: estable; entre 1,8 y 3: condicionalmente inestable; > 3 °C/1000 ft: inestable"
+  },
+  {
+   "id": "c.050.08.08",
+   "front": "Inversión",
+   "back": "La temperatura sube con la altura: absolutamente estable; actúa de tapa"
+  }
+ ]
+}

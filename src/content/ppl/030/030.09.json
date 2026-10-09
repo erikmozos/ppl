@@ -1,0 +1,752 @@
+{
+  "lesson": {
+    "id": "030.09",
+    "title": "Plan de navegación VFR",
+    "summary": "Cómo se prepara una navegación VFR de principio a fin: elegir la ruta, medir rumbos y distancias en la carta, fijar altitudes, calcular rumbo magnético, velocidad respecto al suelo y tiempo, y completar el navlog con un ejemplo entre Mallorca y Menorca.",
+    "objectives": [
+      "Elegir una ruta y puntos de control adecuados y comprobar zonas prohibidas, restringidas y peligrosas",
+      "Medir rumbo y distancia en la carta y pasar de rumbo verdadero a magnético",
+      "Fijar altitudes: nivel semicircular y altitud mínima de seguridad",
+      "Calcular rumbo, velocidad respecto al suelo, tiempo y combustible por tramo y rellenar un navlog completo",
+      "Obtener frecuencias, circuitos y radioayudas de las cartas de aeródromo y del AIP"
+    ],
+    "sections": [
+      {
+        "title": "Qué es un plan de navegación y para qué sirve",
+        "text": [
+          "El plan de navegación (el **navlog**, de *navigation log*) es la hoja donde dejas calculado, antes de despegar, qué rumbo vas a volar en cada tramo, cuánto vas a tardar y cuánto combustible vas a gastar. En vuelo no se improvisa: sirve para **comparar lo previsto con lo real** y detectar enseguida si te desvías de la ruta, si el viento no es el esperado o si el combustible no va a bastar. Un navlog bien hecho es también la base del plan de vuelo OACI (bloque 030.12) y del cálculo del combustible (bloque 030.10).",
+          "El orden de trabajo es siempre el mismo: **elegir la ruta, medirla, fijar las altitudes, aplicar el viento y la variación, calcular tiempos y consumos, y anotar frecuencias y alternativos**. Todo lo que sigue sigue ese orden."
+        ]
+      },
+      {
+        "title": "Elegir la ruta y los puntos de control",
+        "text": [
+          "Traza una línea recta sobre la carta entre el aeródromo de salida y el de destino y revísala. Una ruta recta no siempre es la mejor: se desvía para **evitar zonas prohibidas, restringidas y peligrosas** (en España, con prefijo **LEP**, **LER** y **LED**), espacios aéreos que exigen autorización, terreno alto o una travesía de agua demasiado larga para un monomotor. Comprueba también que el espacio aéreo que cruzas te permite volar VFR y que cumples sus mínimos VMC.",
+          "Marca **puntos de control** (*checkpoints*) a lo largo de cada tramo: elementos que se vean desde el aire y no puedan confundirse, como un cabo, un embalse, una autopista, una isla o un cruce de ferrocarril. Los **elementos lineales** (costa, río, autopista) sirven de guía y de «barrera» de seguridad; los **puntuales** confirman tu posición. En un tramo largo, uno cada 10–15 NM es habitual. Elige además puntos donde la ruta cambie de rumbo y no cruces zonas sin referencias si no es imprescindible."
+        ],
+        "note": {
+          "kind": "es",
+          "text": "Las zonas LEP (prohibidas), LER (restringidas) y LED (peligrosas) figuran en el AIP España, parte ENR 5, y en las cartas VFR de ENAIRE. Consulta siempre si están activas y a qué horas, por NOTAM o por el AIP."
+        }
+      },
+      {
+        "title": "Medir el rumbo y la distancia en la carta",
+        "text": [
+          "La **derrota verdadera** (TC, *true course*) se mide con el transportador sobre un **meridiano próximo al centro del tramo**, porque en las cartas de proyección cónica (como las de ENAIRE, 1:500 000) los meridianos convergen y el rumbo cambia a lo largo de la línea. Mide hacia el destino y apunta tres cifras (005, 046, 270).",
+          "La **distancia** se mide con la regla y se pasa a millas náuticas con la escala de la carta o con la escala de latitud (1 minuto de latitud = 1 NM). 1 NM = 1852 m. En una carta 1:500 000, 1 cm son 5 km, es decir 2,7 NM; en una 1:250 000, 1 cm son 2,5 km, 1,35 NM. Si mides con la regla en centímetros: distancia (NM) = cm × escala / 1852 m, o directamente cm × 2,7 (1:500 000)."
+        ],
+        "examples": [
+          {
+            "q": "En una carta 1:500 000 mides 8 cm. ¿Cuántas millas son?",
+            "a": "8 × 5 km = 40 km; 40 / 1,852 = 21,6 NM."
+          },
+          {
+            "q": "En una carta 1:250 000 mides 12 cm.",
+            "a": "12 × 2,5 km = 30 km; 30 / 1,852 = 16,2 NM."
+          }
+        ]
+      },
+      {
+        "title": "Altitudes, alturas y elevaciones de la carta",
+        "text": [
+          "**Elevación** es la cota de un punto del terreno sobre el nivel medio del mar. **Altitud** es la distancia vertical sobre el nivel medio del mar (con QNH en el altímetro). **Altura** es la distancia vertical sobre el terreno o sobre un punto determinado (con QFE, o contando desde el suelo). En las cartas aeronáuticas, la elevación del terreno y la de los obstáculos se dan en pies **sobre el nivel del mar**, y la altura sobre el terreno, si se indica, va entre paréntesis (convención de OACI, Anexo 4).",
+          "Para pasar de una a otra: altitud = altura + elevación del terreno. El circuito de un aeródromo con elevación de 650 ft y circuito a 1000 ft de altura se vuela a 1650 ft de altitud con QNH."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Altitud mínima de seguridad y nivel de crucero",
+        "text": [
+          "La norma fija mínimos: sobre terreno despoblado, no menos de **150 m (500 ft)** sobre el suelo o el agua, o sobre el obstáculo más alto en un radio de 150 m; sobre **ciudades** y zonas habitadas, **300 m (1000 ft)** sobre el obstáculo más alto en un radio de 600 m (SERA.5005(f)). Son suelos legales, no un buen margen de planificación.",
+          "En la práctica, para cada tramo se calcula una **altitud mínima de seguridad**: la del obstáculo más alto en un corredor de unas 5 NM a cada lado de la derrota, más un margen de 1000 ft (2000 ft en terreno montañoso). Es una regla de buena práctica, no un valor de la norma, y conviene redondear hacia arriba. Después se elige el **nivel de crucero** semicircular según el **rumbo magnético**: de 000° a 179°, miles impares más 500 ft (3500, 5500 ft); de 180° a 359°, miles pares más 500 ft (4500, 6500 ft). Por debajo de la altitud de transición se expresa en altitudes (3500 ft) y por encima en niveles de vuelo (FL)."
+        ],
+        "verify": true
+      },
+      {
+        "title": "De rumbo verdadero a rumbo magnético",
+        "text": [
+          "Con la derrota (TC) medida y el viento previsto, se calcula la **corrección de deriva (WCA)** y el **rumbo verdadero** (TH = TC + WCA, con WCA positivo a la derecha). La **variación magnética** (VAR) la da la carta: se suma o resta para pasar a **rumbo magnético** (MH). Regla de oro: *variación este, magnético menos; variación oeste, magnético más* (MH = TH − VAR_E o MH = TH + VAR_W).",
+          "El WCA se calcula con el triángulo de velocidades (materia 060) o con la regla de 1 en 60: WCA ≈ (componente cruzada / TAS) × 60. Con 120 kt de TAS y 20 kt de viento cruzado puro: 20/120 × 60 = 10°. Después se hace con la calculadora o la regleta para obtener también la **velocidad respecto al suelo** (GS)."
+        ],
+        "formulas": [
+          {
+            "f": "MH = TH − VAR (este) · MH = TH + VAR (oeste)",
+            "note": null
+          },
+          {
+            "f": "GS = distancia / tiempo; ETE = distancia / GS",
+            "note": null
+          }
+        ],
+        "figure": "calc:wind"
+      },
+      {
+        "title": "Cartas de aeródromo, frecuencias y radioayudas",
+        "text": [
+          "De cada aeródromo del vuelo necesitas la **elevación**, las pistas, las **frecuencias** (torre, información, ATIS si existe), el **circuito** (lado, altura y puntos de notificación de llegada) y los **procedimientos especiales**. En España salen del **AIP, parte AD 2**: ficha del aeródromo y **carta de aproximación visual (VAC)** del aeródromo, que dibuja los puntos de notificación VFR, las rutas de llegada y salida, las zonas de ruido y los circuitos. Revisa también la fecha de vigencia del AIP y los NOTAM (bloque 030.11).",
+          "Anota las **radioayudas** que te sirvan: VOR (108,00–117,95 MHz, con identificación en Morse), DME, NDB (190–1750 kHz). Sirven para comprobar la posición con un radial o un QDM/QDR, aunque en VFR son un apoyo y no el método principal. Anota en el navlog cada **frecuencia de comunicaciones** por tramo en el orden en que la vas a necesitar, incluida la de emergencia 121,500 MHz."
+        ]
+      },
+      {
+        "title": "El navlog completo: ejemplo Son Bonet – Menorca",
+        "text": [
+          "Ejemplo con **datos de ejemplo**: salida desde Son Bonet (LESB), con paso por el Cabo de Formentor y destino Menorca (LEMH). Las coordenadas son aproximadas y las distancias se han medido sobre una carta idealizada; no sirven para navegar de verdad. Avión de ejemplo: TAS de 108 kt y consumo de 26 l/h; viento previsto 270/15; variación de 2° E; nivel 3500 ft (rumbos magnéticos entre 000° y 179°).",
+          "Los cálculos de cada tramo: **tramo 1** TC 046°, viento de 270° con 15 kt desde atrás a la izquierda, WCA de unos −5° (corregir a la izquierda), TH 041°, MH 039°, GS 118 kt, ETE = 32,5/118 = 16,5 min, combustible = 16,5/60 × 26 = 7,2 l. **Tramo 2** TC 097°, viento casi de cola, WCA de +1°, TH 098°, MH 096°, GS 123 kt, ETE = 46,7/123 = 22,8 min, combustible 9,9 l."
+        ],
+        "table": {
+          "caption": "Navlog del vuelo de ejemplo (TC, TH y MH en grados; DIST en NM; GS en kt; ETE en minutos; combustible en litros)",
+          "head": [
+            "Tramo",
+            "TC",
+            "WCA",
+            "TH",
+            "VAR",
+            "MH",
+            "DIST",
+            "GS",
+            "ETE",
+            "Comb"
+          ],
+          "rows": [
+            [
+              "LESB – Cabo Formentor",
+              "046",
+              "−5",
+              "041",
+              "−2",
+              "039",
+              "32,5",
+              "118",
+              "16,5",
+              "7,2"
+            ],
+            [
+              "Cabo Formentor – LEMH",
+              "097",
+              "+1",
+              "098",
+              "−2",
+              "096",
+              "46,7",
+              "123",
+              "22,8",
+              "9,9"
+            ],
+            [
+              "Total",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "79,2",
+              "",
+              "39,3",
+              "17,1"
+            ]
+          ],
+          "src": "Datos de ejemplo"
+        },
+        "examples": [
+          {
+            "q": "Calcula la hora estimada de paso por el Cabo de Formentor si despegas de LESB a las 09:40 UTC.",
+            "a": "ETO = 09:40 + 16,5 min ≈ 09:56 UTC."
+          },
+          {
+            "q": "Hora estimada de llegada a LEMH.",
+            "a": "09:40 + 39,3 min ≈ 10:19 UTC. La aproximación y el aterrizaje se añaden aparte."
+          }
+        ]
+      },
+      {
+        "title": "Del navlog al vuelo",
+        "bullets": [
+          "En la columna de tiempos pon la **hora real de paso** de cada punto y compara con la prevista: la diferencia te da la GS real y el viento real.",
+          "El navlog se rehace si cambia el viento: lo importante es el **método**, no que el viento previsto sea exacto.",
+          "Escribe en cada tramo la **altitud mínima de seguridad**, las frecuencias y el punto donde decidirías desviarte o aterrizar.",
+          "Prepara siempre el **alternativo** y su rumbo, distancia y tiempo desde el punto más crítico de la ruta."
+        ]
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Medir el rumbo en un meridiano alejado del centro del tramo.",
+          "Aplicar la variación con el signo equivocado (este, magnético menos).",
+          "Calcular el tiempo con TAS en lugar de con GS.",
+          "Usar un nivel de crucero según el rumbo verdadero y no el magnético.",
+          "Confundir altitud, altura y elevación.",
+          "Olvidar las zonas LEP, LER y LED o sus horarios de actividad."
+        ]
+      }
+    ],
+    "numbers": [
+      "1 NM = 1852 m; 1 cm en 1:500 000 = 5 km ≈ 2,7 NM",
+      "TC → TH con WCA → MH con VAR: este, magnético menos; oeste, magnético más",
+      "ETE = distancia / GS (nunca TAS)",
+      "Mínimos SERA.5005(f): 150 m (500 ft) en campo abierto; 300 m (1000 ft) sobre ciudades",
+      "Nivel semicircular VFR: rumbo magnético 000–179 → 3500, 5500 ft; 180–359 → 4500, 6500 ft",
+      "VOR 108,00–117,95 MHz; NDB 190–1750 kHz"
+    ],
+    "traps": [
+      "El tiempo se calcula con la velocidad respecto al suelo, no con la TAS.",
+      "El nivel de crucero depende del rumbo magnético, no del verdadero.",
+      "Variación este: magnético menos; oeste: magnético más.",
+      "Los mínimos de la norma no son un margen de seguridad de planificación."
+    ],
+    "spain": [
+      "Zonas prohibidas (LEP), restringidas (LER) y peligrosas (LED) en el AIP España ENR 5.",
+      "Cartas de aeródromo VFR (VAC) en el AIP España, parte AD 2."
+    ],
+    "sources": [
+      {
+        "title": "Reglamento (UE) 923/2012 (SERA), Easy Access Rules",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "ENAIRE, AIP España (GEN 1.7, ENR 1.10, AD)",
+        "url": "https://aip.enaire.es"
+      },
+      {
+        "title": "OACI, Anexo 4 Cartas aeronáuticas"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "030.09.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La altura de un avión es la distancia vertical medida sobre:",
+      "options": [
+        "El nivel medio del mar",
+        "El terreno o el punto de referencia elegido",
+        "La isobara de 1013 hPa",
+        "El nivel de transición"
+      ],
+      "correct": 1,
+      "why": "Altura: sobre el terreno o un punto determinado. La altitud se mide sobre el nivel medio del mar y el nivel de vuelo, sobre 1013 hPa.",
+      "whyNot": [
+        "Eso es la altitud.",
+        null,
+        "Eso es un nivel de vuelo.",
+        "El nivel de transición es una referencia de cambio, no un origen de medida."
+      ],
+      "ref": "OACI Anexo 4; Anexo 2"
+    },
+    {
+      "id": "030.09.002",
+      "type": "calculo",
+      "level": 1,
+      "q": "En una carta 1:500 000 mides 8 cm entre dos puntos. La distancia es de:",
+      "options": [
+        "40,0 NM",
+        "14,8 NM",
+        "43,2 NM",
+        "21,6 NM"
+      ],
+      "correct": 3,
+      "why": "8 cm × 5 km/cm = 40 km; 40 / 1,852 = 21,6 NM.",
+      "whyNot": [
+        "40 son los kilómetros, no las millas.",
+        "14,8 resulta de usar 1:250 000.",
+        "43,2 duplica la distancia.",
+        null
+      ],
+      "ref": "Escala de cartas"
+    },
+    {
+      "id": "030.09.003",
+      "type": "calculo",
+      "level": 1,
+      "q": "Derrota verdadera 090°, variación 3° W. La derrota magnética es:",
+      "options": [
+        "093°",
+        "087°",
+        "090°",
+        "083°"
+      ],
+      "correct": 0,
+      "why": "Variación oeste, magnético más: 090 + 3 = 093°.",
+      "whyNot": [
+        null,
+        "087° resta la variación oeste.",
+        "090° ignora la variación.",
+        "083° resta 7°."
+      ],
+      "ref": "060: variación magnética"
+    },
+    {
+      "id": "030.09.004",
+      "type": "calculo",
+      "level": 1,
+      "q": "Derrota verdadera 270°, variación 2° E. La derrota magnética es:",
+      "options": [
+        "272°",
+        "270°",
+        "268°",
+        "262°"
+      ],
+      "correct": 2,
+      "why": "Variación este, magnético menos: 270 − 2 = 268°.",
+      "whyNot": [
+        "272° suma la variación este.",
+        "270° ignora la variación.",
+        null,
+        "262° resta 8°."
+      ],
+      "ref": "060: variación magnética"
+    },
+    {
+      "id": "030.09.005",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un tramo de 46 NM con una velocidad respecto al suelo de 120 kt. El tiempo es de:",
+      "options": [
+        "28 min",
+        "20 min",
+        "30 min",
+        "23 min"
+      ],
+      "correct": 3,
+      "why": "46/120 = 0,383 h = 23 min.",
+      "whyNot": [
+        "28 min usa 100 kt.",
+        "20 min usa 138 kt.",
+        "30 min corresponde a 60 NM.",
+        null
+      ],
+      "ref": "Navlog"
+    },
+    {
+      "id": "030.09.006",
+      "type": "regla",
+      "level": 2,
+      "q": "En un tramo de rumbo magnético 096°, el nivel de crucero VFR semicircular será:",
+      "options": [
+        "3500 ft",
+        "4500 ft",
+        "3000 ft",
+        "4000 ft"
+      ],
+      "correct": 0,
+      "why": "De 000° a 179°, miles impares más 500 ft: 3500, 5500 ft. De 180° a 359°: 4500, 6500 ft.",
+      "whyNot": [
+        null,
+        "4500 ft corresponde a rumbos de 180° a 359°.",
+        "3000 ft no está entre los niveles semicirculares VFR.",
+        "4000 ft tampoco es un nivel semicircular VFR."
+      ],
+      "ref": "SERA.5005; Apéndice 3"
+    },
+    {
+      "id": "030.09.007",
+      "type": "regla",
+      "level": 2,
+      "q": "Sobre terreno despoblado y a la vista, la altura mínima legal es:",
+      "options": [
+        "300 m (1000 ft) sobre el suelo",
+        "150 m (500 ft) siempre, sin tener en cuenta obstáculos",
+        "150 m (500 ft) sobre el suelo o el agua, o sobre el obstáculo más alto en 150 m a la redonda",
+        "600 m (2000 ft) sobre el suelo"
+      ],
+      "correct": 2,
+      "why": "SERA.5005(f): 150 m sobre el suelo o el agua o sobre el obstáculo más alto en un radio de 150 m.",
+      "whyNot": [
+        "Es el mínimo sobre zonas pobladas.",
+        "Hay que contar con obstáculos en el radio de 150 m.",
+        null,
+        "No es el mínimo de la norma."
+      ],
+      "ref": "SERA.5005(f)"
+    },
+    {
+      "id": "030.09.008",
+      "type": "regla",
+      "level": 2,
+      "q": "Sobre una ciudad, la altura mínima de la norma sobre el obstáculo más alto es:",
+      "options": [
+        "150 m (500 ft) en un radio de 150 m",
+        "300 m (1000 ft) en un radio de 600 m",
+        "300 m (1000 ft) en un radio de 150 m",
+        "600 m (2000 ft) en un radio de 300 m"
+      ],
+      "correct": 1,
+      "why": "SERA.5005(f): sobre ciudades y zonas pobladas, 300 m sobre el obstáculo más alto en un radio de 600 m.",
+      "whyNot": [
+        "Es el valor de campo abierto.",
+        null,
+        "El radio es de 600 m, no de 150 m.",
+        "Los valores no coinciden con la norma."
+      ],
+      "ref": "SERA.5005(f)"
+    },
+    {
+      "id": "030.09.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "Sobre terreno montañoso, una buena práctica para fijar la altitud mínima de seguridad de un tramo es:",
+      "options": [
+        "La elevación del aeródromo de salida",
+        "El obstáculo más alto del corredor de la ruta más un margen de seguridad amplio",
+        "La altura legal mínima de 500 ft",
+        "La altitud de transición"
+      ],
+      "correct": 1,
+      "why": "La altitud mínima de seguridad se calcula con el obstáculo más alto del corredor a cada lado de la ruta, más un margen (2000 ft en montaña).",
+      "whyNot": [
+        "La elevación de salida no protege del terreno de la ruta.",
+        null,
+        "500 ft es un mínimo legal, no un margen de montaña.",
+        "La altitud de transición es una referencia de altímetro."
+      ],
+      "ref": "Buena práctica; SERA.5005(f)"
+    },
+    {
+      "id": "030.09.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "En una carta de proyección cónica, el rumbo verdadero de un tramo largo se mide:",
+      "options": [
+        "En el meridiano del origen",
+        "En el meridiano del destino",
+        "En cualquier meridiano, da lo mismo",
+        "En un meridiano próximo a la mitad del tramo"
+      ],
+      "correct": 3,
+      "why": "Los meridianos convergen y el rumbo cambia a lo largo de la línea: se toma el valor medio, en el meridiano central.",
+      "whyNot": [
+        "Daría un valor sesgado hacia el origen.",
+        "Daría un valor sesgado hacia el destino.",
+        "El rumbo cambia de un meridiano a otro.",
+        null
+      ],
+      "ref": "Navegación; Anexo 4"
+    },
+    {
+      "id": "030.09.011",
+      "type": "calculo",
+      "level": 2,
+      "q": "TAS 120 kt y viento perpendicular a la derrota de 20 kt. Con la regla de 1 en 60, la corrección de deriva es de aproximadamente:",
+      "options": [
+        "10°",
+        "6°",
+        "20°",
+        "2°"
+      ],
+      "correct": 0,
+      "why": "WCA ≈ (20/120) × 60 = 10°.",
+      "whyNot": [
+        null,
+        "6° resulta de dividir 20 entre 3,3.",
+        "20° confunde los nudos con grados.",
+        "2° resulta de dividir 20 entre 10."
+      ],
+      "ref": "060: regla 1 en 60"
+    },
+    {
+      "id": "030.09.012",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un tramo de 40 NM se vuela en 20 min. La velocidad respecto al suelo es de:",
+      "options": [
+        "133 kt",
+        "100 kt",
+        "120 kt",
+        "80 kt"
+      ],
+      "correct": 2,
+      "why": "GS = 40 NM / (20/60 h) = 120 kt.",
+      "whyNot": [
+        "133 kt resulta de dividir por 18 min.",
+        "100 kt resulta de dividir por 24 min.",
+        null,
+        "80 kt es la distancia dividida por 30 min."
+      ],
+      "ref": "Navlog"
+    },
+    {
+      "id": "030.09.013",
+      "type": "calculo",
+      "level": 2,
+      "q": "TC 046°, WCA de 5° a la izquierda y variación de 2° E. El rumbo magnético es:",
+      "options": [
+        "041°",
+        "043°",
+        "051°",
+        "039°"
+      ],
+      "correct": 3,
+      "why": "TH = 046 − 5 = 041°. MH = 041 − 2 = 039°.",
+      "whyNot": [
+        "041° es el rumbo verdadero.",
+        "043° suma la variación este.",
+        "051° suma el WCA y no lo resta.",
+        null
+      ],
+      "ref": "060: triángulo de velocidades"
+    },
+    {
+      "id": "030.09.014",
+      "type": "lectura",
+      "level": 2,
+      "q": "En el navlog del ejemplo, ¿cuál es el combustible previsto para el segundo tramo?",
+      "data": "NAVLOG DE EJEMPLO  LESB - LEMH   TAS 108 kt  consumo 26 l/h\nViento previsto 270/15  Variacion 2 E (ejemplo)  Nivel 3500 ft\n\nTramo         TC  WCA  TH  VAR  MH   DIST   GS   ETE   Comb\nLESB-Formentor 046  -5  041  -2  039  32,5   118  16,5  7,2\nFormentor-LEMH 097  +1  098  -2  096  46,7   123  22,8  9,9",
+      "options": [
+        "9,9 l",
+        "7,2 l",
+        "17,1 l",
+        "22,8 l"
+      ],
+      "correct": 0,
+      "why": "22,8 min a 26 l/h: 22,8/60 × 26 = 9,9 l.",
+      "whyNot": [
+        null,
+        "7,2 l es el combustible del primer tramo.",
+        "17,1 l es el total de los dos tramos.",
+        "22,8 es el tiempo, en minutos."
+      ],
+      "ref": "Navlog de ejemplo"
+    },
+    {
+      "id": "030.09.015",
+      "type": "lectura",
+      "level": 2,
+      "q": "En el navlog del ejemplo, ¿cuánto dura el vuelo de crucero completo (ETE total)?",
+      "data": "NAVLOG DE EJEMPLO  LESB - LEMH   TAS 108 kt  consumo 26 l/h\nViento previsto 270/15  Variacion 2 E (ejemplo)  Nivel 3500 ft\n\nTramo         TC  WCA  TH  VAR  MH   DIST   GS   ETE   Comb\nLESB-Formentor 046  -5  041  -2  039  32,5   118  16,5  7,2\nFormentor-LEMH 097  +1  098  -2  096  46,7   123  22,8  9,9",
+      "options": [
+        "16,5 min",
+        "79,2 min",
+        "39,3 min",
+        "22,8 min"
+      ],
+      "correct": 2,
+      "why": "16,5 + 22,8 = 39,3 min.",
+      "whyNot": [
+        "16,5 min es solo el primer tramo.",
+        "79,2 son las millas de la ruta.",
+        null,
+        "22,8 min es solo el segundo tramo."
+      ],
+      "ref": "Navlog de ejemplo"
+    },
+    {
+      "id": "030.09.016",
+      "type": "calculo",
+      "level": 2,
+      "q": "Despegas a las 09:40 UTC y el primer punto de control está a 16,5 min. La hora estimada de paso (ETO) es:",
+      "options": [
+        "09:46 UTC",
+        "09:56 UTC",
+        "10:06 UTC",
+        "09:24 UTC"
+      ],
+      "correct": 1,
+      "why": "09:40 + 16,5 min ≈ 09:56 UTC.",
+      "whyNot": [
+        "09:46 suma 6 min.",
+        null,
+        "10:06 suma 26 min.",
+        "09:24 resta el tiempo."
+      ],
+      "ref": "Navlog"
+    },
+    {
+      "id": "030.09.017",
+      "type": "concepto",
+      "level": 1,
+      "es": true,
+      "q": "En España, la carta de aproximación visual (VAC) de un aeródromo sirve para consultar:",
+      "options": [
+        "Solo la pista asignada por el control",
+        "Los puntos de notificación VFR, rutas de llegada y salida, circuito y frecuencias",
+        "El perfil de aproximación por instrumentos",
+        "Los precios de las tasas de aterrizaje"
+      ],
+      "correct": 1,
+      "why": "La VAC es la carta VFR del AIP AD 2, con puntos de notificación, circuito y datos del aeródromo.",
+      "whyNot": [
+        "No asigna pista.",
+        null,
+        "Eso es la carta de aproximación por instrumentos, IAC.",
+        "No contiene precios."
+      ],
+      "ref": "AIP España AD 2"
+    },
+    {
+      "id": "030.09.018",
+      "type": "regla",
+      "level": 2,
+      "q": "Las radioayudas VOR trabajan en la banda de:",
+      "options": [
+        "190–1750 kHz",
+        "118,000–136,975 MHz",
+        "1030–1090 MHz",
+        "108,00–117,95 MHz"
+      ],
+      "correct": 3,
+      "why": "El VOR trabaja en VHF, de 108,00 a 117,95 MHz.",
+      "whyNot": [
+        "Es la banda del NDB.",
+        "Es la banda de comunicaciones aeronáuticas.",
+        "Son las frecuencias del radar secundario.",
+        null
+      ],
+      "ref": "Anexo 10 vol. I"
+    },
+    {
+      "id": "030.09.019",
+      "type": "concepto",
+      "level": 1,
+      "es": true,
+      "q": "En España, las zonas con prefijo LER del AIP son:",
+      "options": [
+        "Zonas restringidas",
+        "Zonas prohibidas",
+        "Zonas peligrosas",
+        "Zonas de reglamento especial para helicópteros"
+      ],
+      "correct": 0,
+      "why": "LEP prohibidas, LER restringidas y LED peligrosas.",
+      "whyNot": [
+        null,
+        "Las prohibidas son LEP.",
+        "Las peligrosas son LED.",
+        "No es una categoría de ese prefijo."
+      ],
+      "ref": "AIP España ENR 5"
+    },
+    {
+      "id": "030.09.020",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un buen punto de control para navegar es:",
+      "options": [
+        "Cualquier pueblo pequeño de la zona",
+        "El borde de una carta",
+        "Un elemento visible y sin posibilidad de confusión cerca de la ruta",
+        "Un punto sin referencias visuales"
+      ],
+      "correct": 2,
+      "why": "Un punto de control debe ser fácil de identificar desde el aire y no confundible con otros.",
+      "whyNot": [
+        "Un pueblo pequeño puede confundirse con otros.",
+        "El borde de la carta no es un elemento del terreno.",
+        null,
+        "Sin referencias no se puede comprobar la posición."
+      ],
+      "ref": "Navegación a estima y visual"
+    },
+    {
+      "id": "030.09.021",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un aeródromo tiene una elevación de 650 ft y un circuito a 1000 ft de altura. El circuito se vuela a una altitud (QNH) de:",
+      "options": [
+        "1000 ft",
+        "350 ft",
+        "1350 ft",
+        "1650 ft"
+      ],
+      "correct": 3,
+      "why": "Altitud = altura + elevación = 1000 + 650 = 1650 ft.",
+      "whyNot": [
+        "1000 ft es la altura.",
+        "350 ft resulta de restar.",
+        "1350 ft es un error de suma.",
+        null
+      ],
+      "ref": "Aeródromos; altimetría"
+    },
+    {
+      "id": "030.09.022",
+      "type": "calculo",
+      "level": 2,
+      "q": "En una carta 1:250 000 mides 12 cm. La distancia es de aproximadamente:",
+      "options": [
+        "16,2 NM",
+        "32,4 NM",
+        "30,0 NM",
+        "8,1 NM"
+      ],
+      "correct": 0,
+      "why": "12 × 2,5 km = 30 km; 30/1,852 = 16,2 NM.",
+      "whyNot": [
+        null,
+        "32,4 es el valor en 1:500 000.",
+        "30 son los km.",
+        "8,1 es la mitad."
+      ],
+      "ref": "Escala de cartas"
+    },
+    {
+      "id": "030.09.023",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un navlog, el tiempo estimado de un tramo (ETE) se calcula con:",
+      "options": [
+        "La TAS",
+        "La IAS",
+        "La velocidad respecto al suelo",
+        "La velocidad de crucero del POH"
+      ],
+      "correct": 2,
+      "why": "ETE = distancia / GS. La GS incluye el efecto del viento; la TAS no.",
+      "whyNot": [
+        "La TAS no incluye el viento.",
+        "La IAS no es una velocidad verdadera.",
+        null,
+        "Es la TAS de la tabla, sin viento."
+      ],
+      "ref": "Navlog"
+    },
+    {
+      "id": "030.09.024",
+      "type": "concepto",
+      "level": 3,
+      "q": "Variación magnética 3° E, rumbo verdadero 100°. La regla correcta para obtener el rumbo magnético es:",
+      "options": [
+        "Variación este, magnético más: 103°",
+        "Variación este, magnético menos: 097°",
+        "Variación este, restar al magnético: 103°",
+        "No se aplica en VFR"
+      ],
+      "correct": 1,
+      "why": "Con variación este, el rumbo magnético es menor que el verdadero: 100 − 3 = 097°.",
+      "whyNot": [
+        "Esa regla es la de variación oeste.",
+        null,
+        "No es la regla correcta.",
+        "Se aplica siempre que se navega con brújula."
+      ],
+      "ref": "060: variación magnética"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.030.09.01",
+      "front": "Navlog: orden de cálculo",
+      "back": "TC → WCA → TH → VAR → MH; GS → ETE → combustible. ETE = distancia / GS"
+    },
+    {
+      "id": "c.030.09.02",
+      "front": "Variación y rumbo magnético",
+      "back": "Variación este, magnético menos; oeste, magnético más"
+    },
+    {
+      "id": "c.030.09.03",
+      "front": "Altura mínima de la norma (SERA.5005(f))",
+      "back": "Campo abierto: 150 m (500 ft). Ciudades: 300 m (1000 ft) sobre el obstáculo más alto en 600 m"
+    }
+  ]
+}

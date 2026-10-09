@@ -1,0 +1,349 @@
+{
+ "lesson": {
+  "title": "Ritmos circadianos y sueño",
+  "summary": "Reloj biológico y ritmo circadiano, fases del sueño, deuda de sueño y sus efectos, siestas, desfase horario y higiene del sueño aplicados al rendimiento del piloto.",
+  "objectives": [
+   "Explicar el ritmo circadiano, sus sincronizadores y los momentos de menor alerta",
+   "Describir las fases del sueño NREM y REM y la duración de un ciclo",
+   "Definir deuda de sueño y reconocer sus efectos",
+   "Aplicar las reglas de uso de siestas y de higiene del sueño",
+   "Explicar el desfase horario y por qué el viaje hacia el este es más difícil"
+  ],
+  "sections": [
+   {
+    "title": "El reloj biológico y el ritmo circadiano",
+    "text": [
+     "El cuerpo humano tiene un **reloj interno** (en el hipotálamo) que organiza en ciclos de unas 24 horas la temperatura corporal, las hormonas, la presión arterial, el apetito, el sueño y el rendimiento mental. A esos ciclos se les llama **ritmos circadianos** (del latín *circa diem*, «alrededor de un día»). Sin referencias externas, el ciclo natural dura algo más de 24 horas (en torno a 25), y el reloj se **sincroniza** cada día con las señales del entorno, sobre todo la **luz solar**, pero también las comidas, el ejercicio y los horarios sociales (llamados sincronizadores o *zeitgebers*).",
+     "La temperatura corporal sube durante el día y baja durante la noche, con un mínimo de madrugada. El rendimiento y la alerta siguen ese ritmo: son mayores a mediodía y a primera hora de la tarde y **más bajos de madrugada**, sobre todo entre las **02:00 y las 06:00** (la ventana de mínimo circadiano), con un bajón secundario a primera hora de la tarde (**14:00–16:00**, el «bajón de la sobremesa»). En esos momentos aumentan los errores y los micro-sueños. Un vuelo de madrugada o con el reloj interno desfasado es, por lo tanto, más arriesgado."
+    ]
+   },
+   {
+    "title": "Las fases del sueño",
+    "text": [
+     "El sueño no es uniforme. Se organiza en **ciclos de unos 90 minutos**, que se repiten de 4 a 6 veces por noche, y cada ciclo tiene fases. El **sueño NREM** (sin movimientos oculares rápidos) tiene cuatro etapas: las 1 y 2 son de sueño ligero (transición y sueño estable), y las 3 y 4 (sueño profundo o de ondas lentas) son las **más reparadoras**: el cuerpo se recupera y la memoria se consolida. El **sueño REM** (con movimientos oculares rápidos) es la fase de los **sueños** y es importante para la memoria, el aprendizaje y el equilibrio emocional; el cuerpo está paralizado.",
+     "En la primera parte de la noche predomina el sueño profundo y en la segunda, el REM. Por eso **acortar el sueño** por la mañana quita sobre todo REM, y despertarse en plena fase profunda produce **inercia del sueño**: confusión, torpeza y bajo rendimiento durante unos 15 a 30 minutos (a veces más). Una persona adulta necesita en promedio **entre 7 y 9 horas** de sueño de calidad, con variaciones individuales."
+    ]
+   },
+   {
+    "title": "Deuda de sueño y sus efectos",
+    "text": [
+     "Cuando se duerme menos de lo que necesitas, acumulas una **deuda de sueño**. Se paga durmiendo: no se corrige con café ni con fuerza de voluntad. Con la privación aparecen **somnolencia, reducción de la atención y de la vigilancia, lentitud de reacción, errores de juicio, olvidos, mal humor, y micro-sueños** (episodios de unos segundos en los que el cerebro se «apaga» aunque se tengan los ojos abiertos). Es una de las causas de accidentes. Después de unas 17 a 19 horas de vigilia, el rendimiento se parece al de una persona con una concentración de alcohol de aproximadamente 0,5 g/l, y tras 24 horas despierto, al de una con alrededor de 1 g/l.",
+     "Un buen descanso **antes** del vuelo es parte de la preparación. La **deuda crónica** es peor: las personas se acostumbran a rendir mal sin darse cuenta de que lo hacen. **Alcohol** (fragmenta el sueño y suprime el REM), **cafeína tarde**, **pantallas y luz fuerte** antes de dormir, **comidas copiosas**, calor, ruido y las preocupaciones empeoran la calidad del sueño. Los **somníferos** no se usan para volar sin consultar al médico examinador."
+    ],
+    "verify": true
+   },
+   {
+    "title": "Siestas e higiene del sueño",
+    "text": [
+     "Una **siesta corta** de **20 a 30 minutos** (no más de 40) mejora la alerta y el rendimiento durante varias horas sin llegar al sueño profundo, de modo que no deja inercia del sueño. Las siestas más largas llevan al sueño profundo y dejan al despertar una inercia que dura un buen rato; si es inevitable, conviene dejar al menos 15 a 30 minutos para despejarse antes de volar. La siesta es una **medida de emergencia** y no sustituye al sueño nocturno.",
+     "Para dormir bien conviene: **horarios regulares**, dormitorio **oscuro, silencioso y fresco**, evitar la cafeína por la tarde, el alcohol y las comidas copiosas por la noche, hacer ejercicio durante el día (no justo antes de dormir), y desconectar de las pantallas antes de acostarse."
+    ]
+   },
+   {
+    "title": "Desfase horario (jet lag)",
+    "text": [
+     "Al cruzar varios husos horarios el reloj interno sigue en la hora del origen y no coincide con el entorno: es el **desfase horario**. Los síntomas son fatiga diurna, insomnio nocturno, falta de concentración, trastornos digestivos y malestar. Se adapta aproximadamente un **día por cada huso** (con alguna variación), y la adaptación es **más lenta hacia el este** (se acorta el día y hay que dormir antes de lo que pide el cuerpo) que hacia el oeste (se alarga el día, lo que concuerda mejor con el ciclo natural de 25 horas). Ayudan la **exposición a la luz** de la nueva zona, ajustar las comidas y los horarios y, en estancias cortas, mantener el horario de origen. La melatonina solo se usa con consejo médico.",
+     "Para el piloto de aviación general que no cruza husos, el equivalente es el **trabajo a turnos** y los horarios irregulares: levantarse muy pronto para volar, volar tras una noche en blanco o hacer vuelos largos muy tarde, con el mínimo circadiano en contra."
+    ]
+   }
+  ],
+  "numbers": [
+   "Ritmo circadiano: ciclo de unas 24 h (natural ≈ 25 h); se sincroniza con la luz",
+   "Mínimo de alerta: 02:00–06:00; bajón menor: 14:00–16:00",
+   "Ciclo de sueño: unos 90 min; 4-6 por noche; NREM (profundo) y REM",
+   "Necesidad de un adulto: 7-9 h",
+   "Siesta eficaz: 20-30 min; la inercia del sueño dura 15-30 min",
+   "Desfase: ≈ 1 día por huso; peor hacia el este"
+  ],
+  "traps": [
+   "El café no paga la deuda de sueño: solo la enmascara.",
+   "La inercia del sueño aparece al despertar de sueño profundo, no de una siesta corta.",
+   "El desfase horario es más difícil hacia el este que hacia el oeste.",
+   "El alcohol ayuda a dormirse pero fragmenta el sueño y reduce el REM.",
+   "El mínimo circadiano está de madrugada (02:00–06:00), no a mediodía."
+  ],
+  "sources": [
+   {
+    "title": "EASA, material de factores humanos y fatiga (Part-ORO.FTL, principios)",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules"
+   },
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge, cap. 17: fatiga",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   }
+  ],
+  "id": "040.09",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "040.09.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "El ritmo circadiano es un ciclo biológico de aproximadamente:",
+   "options": [
+    "90 minutos",
+    "24 horas",
+    "7 días",
+    "12 horas"
+   ],
+   "correct": 1,
+   "why": "«Circadiano» significa alrededor de un día.",
+   "whyNot": [
+    "Eso es la duración de un ciclo de sueño.",
+    null,
+    "No es un ciclo biológico circadiano.",
+    "Es la mitad."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.09.002",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Cuál es el principal sincronizador del reloj biológico?",
+   "options": [
+    "El café",
+    "La presión atmosférica",
+    "El ruido",
+    "La luz solar"
+   ],
+   "correct": 3,
+   "why": "La luz de día ajusta el reloj interno a las 24 horas.",
+   "whyNot": [
+    "El café no sincroniza el reloj.",
+    "La presión no sincroniza.",
+    "El ruido no sincroniza.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.09.003",
+   "type": "regla",
+   "level": 2,
+   "q": "El momento del día en el que el rendimiento y la alerta suelen ser más bajos es:",
+   "options": [
+    "Entre las 02:00 y las 06:00",
+    "Entre las 10:00 y las 12:00",
+    "Hacia las 18:00",
+    "Entre las 20:00 y las 22:00"
+   ],
+   "correct": 0,
+   "why": "Coincide con el mínimo de temperatura corporal.",
+   "whyNot": [
+    null,
+    "Es un momento de buena alerta.",
+    "Es un momento de buena alerta.",
+    "Es un momento normal de vigilia."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.09.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "¿Cuánto dura aproximadamente un ciclo de sueño?",
+   "options": [
+    "Unos 10 minutos",
+    "Unas 4 horas",
+    "Unos 90 minutos",
+    "Unas 8 horas"
+   ],
+   "correct": 2,
+   "why": "Se repiten de 4 a 6 ciclos por noche.",
+   "whyNot": [
+    "Es demasiado corto.",
+    "Es demasiado largo.",
+    null,
+    "Es la noche entera."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.09.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Qué fase del sueño es la más profunda y reparadora?",
+   "options": [
+    "REM",
+    "Etapa 1",
+    "NREM, etapas 3 y 4",
+    "La vigilia relajada"
+   ],
+   "correct": 2,
+   "why": "Es el sueño de ondas lentas, de recuperación física.",
+   "whyNot": [
+    "El REM es importante para el aprendizaje pero no es el más profundo.",
+    "La etapa 1 es el sueño ligero.",
+    null,
+    "No es una fase de sueño."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.09.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿En qué fase del sueño tienen lugar los sueños más vívidos?",
+   "options": [
+    "REM",
+    "NREM etapa 1",
+    "NREM etapa 4",
+    "En ninguna fase"
+   ],
+   "correct": 0,
+   "why": "Es el sueño con movimientos oculares rápidos.",
+   "whyNot": [
+    null,
+    "Es una fase de transición.",
+    "Es sueño profundo.",
+    "Se sueña durante el REM."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.09.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "La inercia del sueño es:",
+   "options": [
+    "Un tipo de insomnio",
+    "La necesidad de dormir poco",
+    "Un efecto del café",
+    "La confusión y torpeza tras despertar de un sueño profundo"
+   ],
+   "correct": 3,
+   "why": "Dura de 15 a 30 minutos o más y reduce el rendimiento.",
+   "whyNot": [
+    "El insomnio es no poder dormir.",
+    "No es un hábito.",
+    "No se debe al café.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.09.008",
+   "type": "concepto",
+   "level": 1,
+   "q": "La deuda de sueño se corrige:",
+   "options": [
+    "Con café",
+    "Durmiendo",
+    "Con alcohol",
+    "Con ejercicio intenso"
+   ],
+   "correct": 1,
+   "why": "Solo el sueño la reduce; las demás medidas la enmascaran o la empeoran.",
+   "whyNot": [
+    "El café enmascara.",
+    null,
+    "El alcohol fragmenta el sueño.",
+    "El ejercicio no sustituye al sueño."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.09.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un efecto típico de la privación de sueño es:",
+   "options": [
+    "Mayor agudeza visual",
+    "Micro-sueños y fallos de atención",
+    "Mejor memoria",
+    "Reacción más rápida"
+   ],
+   "correct": 1,
+   "why": "El cerebro se apaga unos segundos sin que el piloto lo advierta.",
+   "whyNot": [
+    "No mejora la visión.",
+    null,
+    "La memoria empeora.",
+    "Los tiempos de reacción aumentan."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.09.010",
+   "type": "regla",
+   "level": 2,
+   "q": "La duración recomendada de una siesta para recuperar alerta sin entrar en sueño profundo es:",
+   "options": [
+    "2 horas",
+    "5 minutos",
+    "90 minutos",
+    "20 a 30 minutos"
+   ],
+   "correct": 3,
+   "why": "Una siesta breve no llega al sueño profundo y evita la inercia.",
+   "whyNot": [
+    "Llevaría al sueño profundo y dejaría inercia.",
+    "Es demasiado corta para tener efecto.",
+    "Es un ciclo completo y deja inercia.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.09.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "El desfase horario (jet lag) es más difícil de superar cuando se viaja:",
+   "options": [
+    "Hacia el este",
+    "Hacia el oeste",
+    "Hacia el norte",
+    "Hacia el sur sin cruzar husos"
+   ],
+   "correct": 0,
+   "why": "Hacia el este se acorta el día y cuesta dormir antes de lo que pide el cuerpo.",
+   "whyNot": [
+    null,
+    "Hacia el oeste el día se alarga, más compatible con el ciclo de 25 horas.",
+    "Norte y sur sin cruzar husos no producen desfase.",
+    "No hay desfase si no se cruzan husos."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.09.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Cuál de estas medidas ayuda más a dormir bien antes de un vuelo temprano?",
+   "options": [
+    "Beber alcohol para conciliar el sueño",
+    "Cenar abundante tarde",
+    "Horario regular, habitación oscura y evitar cafeína por la tarde",
+    "Usar pantallas hasta el último momento"
+   ],
+   "correct": 2,
+   "why": "La higiene del sueño mejora la calidad del descanso.",
+   "whyNot": [
+    "El alcohol fragmenta el sueño.",
+    "Las comidas copiosas lo dificultan.",
+    null,
+    "La luz de pantallas retrasa el sueño."
+   ],
+   "ref": "Medicina aeronáutica"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.040.09.01",
+   "front": "Mínimo circadiano",
+   "back": "Alerta mínima entre las 02:00 y las 06:00; bajón menor a primera hora de la tarde"
+  },
+  {
+   "id": "c.040.09.02",
+   "front": "Ciclo de sueño",
+   "back": "Unos 90 min; 4-6 por noche; NREM (profundo) y REM; adulto: 7-9 h"
+  },
+  {
+   "id": "c.040.09.03",
+   "front": "Siesta y jet lag",
+   "back": "Siesta de 20-30 min; el jet lag cuesta más hacia el este"
+  }
+ ]
+}

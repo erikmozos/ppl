@@ -1,0 +1,405 @@
+{
+ "lesson": {
+  "title": "Oído y equilibrio",
+  "summary": "Anatomía del oído, función de la trompa de Eustaquio y barotrauma, ruido y pérdida auditiva, y funcionamiento del sistema vestibular: canales semicirculares, otolitos y mareo cinético.",
+  "objectives": [
+   "Describir las tres partes del oído y la función de cada una",
+   "Explicar el barotrauma y por qué se produce sobre todo al descender",
+   "Distinguir pérdida auditiva conductiva y neurosensorial y los efectos del ruido",
+   "Explicar qué detectan los canales semicirculares y los otolitos",
+   "Describir el mareo cinético y cómo se previene"
+  ],
+  "sections": [
+   {
+    "title": "Anatomía del oído",
+    "text": [
+     "El oído cumple dos funciones: oír y mantener el equilibrio. Tiene tres partes. El **oído externo** (pabellón y conducto auditivo) recoge el sonido y lo lleva al **tímpano**. El **oído medio** es una cavidad de aire con tres huesecillos (martillo, yunque y estribo) que transmiten y amplifican las vibraciones del tímpano; se comunica con la garganta por la **trompa de Eustaquio**. El **oído interno** contiene la **cóclea** (el órgano de la audición, que convierte la vibración en impulsos nerviosos) y el **sistema vestibular** (el órgano del equilibrio, con los canales semicirculares y los otolitos).",
+     "La función de la **trompa de Eustaquio** es igualar la presión del oído medio con la del exterior. Normalmente está cerrada y se abre al **tragar, bostezar o masticar**. Mientras la presión se iguala, el tímpano queda en su posición y se oye bien."
+    ],
+    "figure": "svg:040-oido",
+    "caption": "Oído externo, medio e interno; la trompa de Eustaquio comunica el oído medio con la garganta."
+   },
+   {
+    "title": "Barotrauma del oído y de los senos",
+    "text": [
+     "Al **ascender**, la presión exterior baja y el aire del oído medio, más comprimido, se expande y sale por la trompa casi solo: se nota un «clic». Al **descender**, ocurre lo contrario: la presión exterior sube y el tímpano es empujado hacia dentro; el aire tiene que **entrar** por la trompa, que actúa como una válvula que deja salir el aire con facilidad y lo deja entrar con dificultad. Si la trompa se inflama (resfriado, alergia, sinusitis) o la maniobra es demasiado rápida, la presión no se iguala y aparece el **barotrauma del oído medio**: dolor, sensación de oído tapado, disminución de la audición, vértigo y, en casos extremos, **rotura del tímpano**. Por eso el barotrauma es **peor al descender** y con **resfriado no se vuela**.",
+     "Lo mismo ocurre con los **senos paranasales** (frontales y maxilares): dolor intenso en la frente o en los pómulos, sobre todo al descender."
+    ],
+    "bullets": [
+     "Antes de descender, traga, bosteza o mastica chicle con frecuencia.",
+     "**Maniobra de Valsalva**: tapa la nariz y sopla suavemente con la boca cerrada para abrir la trompa; nunca con fuerza.",
+     "Si se bloquea, **sube un poco** para aliviar la presión y vuelve a descender más despacio.",
+     "No te fíes de los descongestionantes para volar con congestión: el efecto pasa y deja el problema; lo prudente es no volar.",
+     "Si hay dolor persistente tras aterrizar, consulta a un médico aeronáutico."
+    ]
+   },
+   {
+    "title": "Ruido y pérdida auditiva",
+    "text": [
+     "El **sonido** se mide en decibelios (dB), en escala logarítmica: +3 dB duplica la energía y +10 dB se percibe aproximadamente como el doble de intensidad. En una avioneta con motor de pistón, el nivel de ruido en cabina es alto (la exposición prolongada sin protección es perjudicial a partir de unos 85 dB): conviene **usar auriculares con buena atenuación** (o con cancelación activa) y limitar el tiempo de exposición. La voz humana ocupa una banda entre 300 y 3000 Hz, por lo que la pérdida en ese rango es la que más afecta a las comunicaciones por radio.",
+     "La sordera puede ser de dos clases. En la **conductiva**, el sonido no llega bien al oído interno por un problema en el oído externo o medio (tapón de cera, perforación del tímpano, otitis, obstrucción de la trompa): suele ser temporal y tratable. En la **neurosensorial**, está dañada la cóclea o el nervio auditivo: se debe al **ruido crónico**, la **edad** (presbiacusia, que empieza por los sonidos agudos), traumas acústicos o fármacos tóxicos para el oído; es **irreversible**. El daño por ruido se nota primero alrededor de los 4000 Hz y suele ser gradual e indoloro, por lo que se detecta tarde. Tras un ruido intenso puede aparecer **acúfeno** (zumbido) y una pérdida temporal de audición."
+    ]
+   },
+   {
+    "title": "Sistema vestibular: canales semicirculares y otolitos",
+    "text": [
+     "El equilibrio se mantiene combinando tres fuentes: el **sistema vestibular** del oído interno, la **visión** y los **receptores del cuerpo** (músculos, articulaciones y piel, que dan la sensación del asiento). En vuelo el sistema vestibular se engaña con facilidad, y la vista es la fuente en la que hay que confiar.",
+     "Los **tres canales semicirculares** están en planos perpendiculares y detectan las **aceleraciones angulares**, es decir, los giros (cabeceo, alabeo, guiñada). Contienen un líquido (endolinfa) que, por inercia, se retrasa respecto a la cabeza al empezar a girar y estimula unos pelillos sensibles. El problema es que, en un giro **a velocidad constante**, el líquido acaba moviéndose con el canal y tras unos **10 a 20 segundos** el cerebro deja de notar el giro. Al terminar el giro, el líquido sigue moviéndose y se tiene la falsa sensación de girar en sentido contrario. Además, los giros muy suaves (por debajo del umbral de unos 2°/s) no se detectan.",
+     "Los **otolitos** (utrículo y sáculo) son cristalitos de calcio sobre unas células sensibles y detectan las **aceleraciones lineales** y la **gravedad** (la inclinación de la cabeza respecto a la vertical). Su límite es que **no distinguen** entre una inclinación hacia atrás y una aceleración hacia delante: el cerebro interpreta ambas igual. Esta confusión explica las ilusiones somatogravicas que se verán en el siguiente bloque."
+    ],
+    "table": {
+     "caption": "Qué detecta cada parte del sistema vestibular",
+     "head": [
+      "Órgano",
+      "Detecta",
+      "Limitación"
+     ],
+     "rows": [
+      [
+       "Canales semicirculares (3)",
+       "Aceleraciones angulares (giros)",
+       "En giro constante dejan de notarse a los 10-20 s; falsa sensación contraria al salir"
+      ],
+      [
+       "Otolitos (utrículo y sáculo)",
+       "Aceleraciones lineales y la gravedad",
+       "No distinguen inclinación de aceleración lineal"
+      ]
+     ],
+     "src": "Medicina aeronáutica"
+    }
+   },
+   {
+    "title": "Mareo cinético",
+    "text": [
+     "El **mareo cinético** (cinetosis) se produce cuando el cerebro recibe informaciones contradictorias de la vista, el oído interno y el cuerpo. Es más habitual en los pasajeros, los alumnos y con turbulencia, calor, olores, estrés, fatiga, ansiedad o un estómago vacío o lleno. Los síntomas son **palidez, sudor frío, salivación, náuseas, vómitos, dolor de cabeza** y, en casos serios, desorientación e incapacidad para pilotar bien.",
+     "Medidas: mirar el **horizonte**, evitar mover bruscamente la cabeza, aire fresco, comida ligera, hidratación y buen descanso, y **volar el avión uno mismo** (quien pilota se marea menos). Si empeora, se reduce el trabajo, se vuela nivelado con el piloto automático o se aterriza. **Los antihistamínicos y antimareo causan somnolencia**: no se toman sin consultar al médico aeronáutico, y no se vuela mientras duren sus efectos. La adaptación progresiva con las horas de vuelo ayuda."
+    ]
+   }
+  ],
+  "numbers": [
+   "Oído: externo, medio (huesecillos y trompa de Eustaquio) e interno (cóclea y sistema vestibular)",
+   "El barotrauma es peor al descender: con resfriado, no se vuela",
+   "Valsalva: soplar suavemente con la nariz tapada",
+   "Canales semicirculares: aceleraciones angulares; otolitos: lineales y gravedad",
+   "En giro constante, el giro deja de percibirse tras 10-20 s",
+   "Sordera conductiva: oído externo/medio; neurosensorial: cóclea o nervio (irreversible)"
+  ],
+  "traps": [
+   "El barotrauma duele más al bajar, aunque la expansión del aire ocurra al subir.",
+   "Los canales semicirculares no detectan la aceleración lineal: eso es de los otolitos.",
+   "El ruido daña la cóclea (neurosensorial), no el tímpano.",
+   "Los fármacos antimareo producen somnolencia y no se toman antes de volar sin consejo médico.",
+   "Los otolitos confunden inclinación con aceleración lineal."
+  ],
+  "sources": [
+   {
+    "title": "EASA, Part-MED y material de medicina aeronáutica",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules"
+   },
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge, cap. 17: oído y equilibrio",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   }
+  ],
+  "id": "040.05",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "040.05.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "La función de la trompa de Eustaquio es:",
+   "options": [
+    "Detectar los giros de la cabeza",
+    "Igualar la presión del oído medio con la exterior",
+    "Convertir el sonido en impulsos nerviosos",
+    "Amplificar las vibraciones del tímpano"
+   ],
+   "correct": 1,
+   "why": "Comunica el oído medio con la garganta y deja pasar aire para igualar presiones.",
+   "whyNot": [
+    "Eso lo hacen los canales semicirculares.",
+    null,
+    "Eso lo hace la cóclea.",
+    "Eso lo hacen los huesecillos."
+   ],
+   "ref": "Part-MED; medicina aeronáutica"
+  },
+  {
+   "id": "040.05.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "¿Cuándo es más probable el dolor de oído por barotrauma?",
+   "options": [
+    "Durante el ascenso",
+    "En crucero nivelado",
+    "Al encender el motor en tierra",
+    "Durante el descenso"
+   ],
+   "correct": 3,
+   "why": "Al descender el aire debe entrar en el oído medio y la trompa lo permite con dificultad.",
+   "whyNot": [
+    "Al ascender el aire sale con facilidad.",
+    "En crucero la presión no cambia mucho.",
+    "En tierra no cambia la presión.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.05.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "Con un resfriado fuerte y congestión nasal, lo más adecuado es:",
+   "options": [
+    "No volar hasta recuperarte",
+    "Volar tomando un descongestionante",
+    "Volar pero evitar el descenso rápido",
+    "Volar solo en vuelo local"
+   ],
+   "correct": 0,
+   "why": "La inflamación bloquea la trompa y los conductos de los senos; el riesgo de barotrauma es alto.",
+   "whyNot": [
+    null,
+    "El efecto del fármaco puede acabarse en vuelo y deja el problema.",
+    "No evita el barotrauma ni la incapacitación.",
+    "El descenso del circuito produce el mismo riesgo."
+   ],
+   "ref": "Part-MED"
+  },
+  {
+   "id": "040.05.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "Para aliviar la presión en el oído durante un descenso se puede:",
+   "options": [
+    "Soplar fuerte con la nariz tapada",
+    "Descender más deprisa",
+    "Tragar, bostezar o hacer una maniobra de Valsalva suave",
+    "Aguantar la respiración"
+   ],
+   "correct": 2,
+   "why": "Abrir la trompa suavemente basta; forzar puede dañar el tímpano.",
+   "whyNot": [
+    "Soplar fuerte puede dañar el oído.",
+    "Descender más deprisa agrava el problema.",
+    null,
+    "No ayuda a abrir la trompa."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.05.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "Si el dolor de oído se vuelve intenso durante el descenso y no se alivia, una buena medida es:",
+   "options": [
+    "Continuar el descenso a ritmo normal",
+    "Cerrar los oídos con los dedos",
+    "Volver a ascender un poco y descender más despacio",
+    "Quitarse los auriculares y tragar fuerte"
+   ],
+   "correct": 2,
+   "why": "Al subir se reduce la diferencia de presión y se puede igualar con calma.",
+   "whyNot": [
+    "Aumenta el dolor y el riesgo de rotura.",
+    "No iguala la presión.",
+    null,
+    "No resuelve la diferencia de presión."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.05.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "La sordera neurosensorial se caracteriza por:",
+   "options": [
+    "Daño en la cóclea o el nervio auditivo, normalmente irreversible",
+    "Obstrucción del conducto por cera",
+    "Perforación del tímpano",
+    "Una infección pasajera del oído medio"
+   ],
+   "correct": 0,
+   "why": "Las células ciliadas de la cóclea no se regeneran: el daño por ruido o la edad es permanente.",
+   "whyNot": [
+    null,
+    "Eso es sordera conductiva.",
+    "Es una causa conductiva.",
+    "Es una causa conductiva y suele ser tratable."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.05.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "La exposición prolongada al ruido de la cabina sin protección produce sobre todo:",
+   "options": [
+    "Sordera conductiva reversible",
+    "Más agudeza en agudos",
+    "Barotrauma",
+    "Pérdida auditiva neurosensorial"
+   ],
+   "correct": 3,
+   "why": "El ruido crónico destruye las células ciliadas de la cóclea.",
+   "whyNot": [
+    "El ruido no obstruye el oído medio.",
+    "No mejora la audición.",
+    "El barotrauma depende de la presión, no del ruido.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.05.008",
+   "type": "concepto",
+   "level": 1,
+   "q": "Los canales semicirculares detectan:",
+   "options": [
+    "Aceleraciones lineales",
+    "Aceleraciones angulares",
+    "La gravedad únicamente",
+    "Sonidos graves"
+   ],
+   "correct": 1,
+   "why": "Son tres, perpendiculares entre sí, y detectan los giros.",
+   "whyNot": [
+    "Eso lo hacen los otolitos.",
+    null,
+    "También lo hacen los otolitos.",
+    "La audición es función de la cóclea."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.05.009",
+   "type": "concepto",
+   "level": 1,
+   "q": "Los otolitos detectan:",
+   "options": [
+    "Aceleraciones angulares",
+    "Aceleraciones lineales y la gravedad",
+    "Los sonidos agudos",
+    "La presión del oído medio"
+   ],
+   "correct": 1,
+   "why": "Responden a aceleraciones en línea recta y a la inclinación de la cabeza.",
+   "whyNot": [
+    "Eso lo hacen los canales semicirculares.",
+    null,
+    "Los sonidos los detecta la cóclea.",
+    "No miden presión."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.05.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un viraje coordinado a velocidad angular constante, tras unos 10-20 s los canales semicirculares:",
+   "options": [
+    "Aumentan la sensación de giro",
+    "Indican un giro en sentido contrario",
+    "Se bloquean y causan vértigo",
+    "Dejan de dar sensación de giro"
+   ],
+   "correct": 3,
+   "why": "El líquido alcanza la velocidad del canal y el estímulo desaparece.",
+   "whyNot": [
+    "Es lo contrario: se adapta.",
+    "Eso ocurre al salir del viraje.",
+    "No se bloquean: se acomodan.",
+    null
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.05.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "Al salir de un viraje prolongado, el piloto puede sentir:",
+   "options": [
+    "Que gira en sentido contrario",
+    "Que sigue girando en el mismo sentido",
+    "Una aceleración vertical",
+    "Que no ocurre nada"
+   ],
+   "correct": 0,
+   "why": "El líquido sigue moviéndose y estimula los canales en sentido opuesto.",
+   "whyNot": [
+    null,
+    "Lo siente en el sentido opuesto.",
+    "La sensación no es de aceleración vertical.",
+    "Sí hay sensación y es engañosa."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.05.012",
+   "type": "concepto",
+   "level": 1,
+   "q": "La causa principal del mareo cinético es:",
+   "options": [
+    "Falta de oxígeno",
+    "Exceso de CO₂",
+    "Informaciones contradictorias entre vista, oído interno y cuerpo",
+    "Presión sobre el tímpano"
+   ],
+   "correct": 2,
+   "why": "El cerebro recibe señales que no concuerdan y reacciona con náuseas.",
+   "whyNot": [
+    "Eso es hipoxia.",
+    "Eso es hipercapnia.",
+    null,
+    "Eso es barotrauma."
+   ],
+   "ref": "Medicina aeronáutica"
+  },
+  {
+   "id": "040.05.013",
+   "type": "concepto",
+   "level": 2,
+   "q": "Si un pasajero se marea en vuelo, el piloto debe:",
+   "options": [
+    "Maniobrar con más fuerza para distraerle",
+    "Subir rápidamente",
+    "Reducir movimientos bruscos, ventilar y volar nivelado o aterrizar si empeora",
+    "Cubrir las ventanillas"
+   ],
+   "correct": 2,
+   "why": "Un vuelo suave, el aire fresco y la vista del horizonte ayudan.",
+   "whyNot": [
+    "Las maniobras bruscas empeoran el mareo.",
+    "La altitud no lo alivia.",
+    null,
+    "Cubrir las ventanillas elimina la referencia visual."
+   ],
+   "ref": "Medicina aeronáutica"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.040.05.01",
+   "front": "Barotrauma del oído",
+   "back": "Es peor al descender (el aire cuesta entrar por la trompa de Eustaquio). Con resfriado no se vuela"
+  },
+  {
+   "id": "c.040.05.02",
+   "front": "Canales semicirculares y otolitos",
+   "back": "Canales: aceleraciones angulares (giros). Otolitos: aceleraciones lineales y gravedad"
+  },
+  {
+   "id": "c.040.05.03",
+   "front": "Sordera conductiva y neurosensorial",
+   "back": "Conductiva: oído externo o medio, tratable. Neurosensorial: cóclea o nervio (ruido, edad), irreversible"
+  },
+  {
+   "id": "c.040.05.04",
+   "front": "Giro constante",
+   "back": "Tras 10-20 s los canales dejan de percibirlo; al salir se siente un giro contrario"
+  }
+ ]
+}

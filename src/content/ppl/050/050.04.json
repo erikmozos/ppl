@@ -1,0 +1,516 @@
+{
+ "lesson": {
+  "title": "Viento",
+  "summary": "Cómo se mide y se informa el viento (verdadero en METAR y TAF, magnético en torre y ATIS), las fuerzas que lo gobiernan (gradiente de presión, Coriolis, fricción), el viento geostrófico y del gradiente, la capa de fricción y la relación entre convergencia, divergencia y movimientos verticales.",
+  "objectives": [
+   "Distinguir el viento verdadero de los METAR y TAF del viento magnético de torre y ATIS, y convertir uno en otro",
+   "Explicar las fuerzas que actúan sobre el aire y deducir la dirección del viento a partir de un mapa de isobaras",
+   "Diferenciar viento geostrófico, viento del gradiente y viento de superficie",
+   "Describir cómo la fricción cambia la velocidad y la dirección del viento cerca del suelo",
+   "Relacionar la convergencia y la divergencia con el ascenso, el descenso y el tiempo asociado"
+  ],
+  "sections": [
+   {
+    "title": "Cómo se mide y cómo se informa el viento",
+    "text": [
+     "El viento se define por **de dónde sopla** (dirección, en grados) y **con qué velocidad** (en nudos). Un viento «270/15» sopla del oeste a 15 kt. La dirección se redondea a decenas de grados y la velocidad se mide con un anemómetro situado a 10 m sobre el suelo, en terreno despejado.",
+     "Lo importante para el examen es a **qué norte** se refiere el dato. Los mensajes meteorológicos son internacionales y no dependen de la variación magnética local, así que van en **norte verdadero**. Los mensajes que se leen a un piloto que va a aterrizar o despegar se refieren a la pista, orientada en rumbos magnéticos, y van en **norte magnético**."
+    ],
+    "table": {
+     "caption": "Viento: verdadero o magnético según el producto",
+     "head": [
+      "Producto",
+      "Norte de referencia",
+      "Promedio"
+     ],
+     "rows": [
+      [
+       "METAR y SPECI",
+       "Verdadero",
+       "10 minutos"
+      ],
+      [
+       "TAF y pronósticos de zona",
+       "Verdadero",
+       "Valor previsto"
+      ],
+      [
+       "Mapas de viento en altura (SIGWX, GAMET)",
+       "Verdadero",
+       "Valor previsto"
+      ],
+      [
+       "ATIS",
+       "Magnético",
+       "2 minutos"
+      ],
+      [
+       "Torre (autorización de despegue y aterrizaje)",
+       "Magnético",
+       "2 minutos"
+      ]
+     ],
+     "src": "OACI Anexo 3; Guía MET de AEMET"
+    },
+    "bullets": [
+     "**VRB** indica viento de dirección variable, habitual con viento flojo (3 kt o menos). Una variación de 60° o más con más de 3 kt se da como «280V350».",
+     "**Racha** (G): se añade cuando la velocidad máxima supera a la media en 10 kt o más, por ejemplo 27015G25KT se informa y 27015G24KT no (la racha de 24 kt solo supera la media en 9 kt).",
+     "**Calma**: 00000KT."
+    ],
+    "examples": [
+     {
+      "q": "El METAR dice 27012KT y la variación magnética local es 2° W. ¿Qué viento te dará la torre?",
+      "a": "Magnético = verdadero + variación W: 270° + 2° = 272°, que la torre redondeará o dirá como «dos siete dos». La regla es «variación oeste, magnético mayor»."
+     }
+    ]
+   },
+   {
+    "title": "Qué empuja al aire: gradiente de presión y Coriolis",
+    "text": [
+     "El aire se mueve porque hay diferencias de presión. La **fuerza del gradiente de presión** empuja siempre del anticiclón (alta presión, A) a la depresión (baja presión, B) y es **perpendicular a las isobaras**. Cuanto más juntas están las isobaras, mayor es el gradiente y más fuerte el viento. Es lo primero que miras en un mapa: isobaras apretadas, viento fuerte.",
+     "En cuanto el aire se pone en movimiento, la rotación de la Tierra lo desvía. Es la **fuerza de Coriolis**: desvía el movimiento hacia la **derecha** en el hemisferio norte, es perpendicular al viento, aumenta con la velocidad del viento y con la latitud, vale **cero en el ecuador** y no cambia la velocidad del aire, solo su dirección."
+    ],
+    "bullets": [
+     "La fuerza del gradiente es la única que pone el aire en marcha; Coriolis y la fricción reaccionan a ese movimiento.",
+     "A la misma diferencia de presión, a menor latitud hace falta más viento para equilibrar Coriolis: cerca del ecuador el viento tiende a cruzar las isobaras.",
+     "**Ley de Buys-Ballot** (hemisferio norte): si das la espalda al viento, la baja presión queda a tu izquierda."
+    ],
+    "figure": "svg:050-viento",
+    "caption": "En altura, el gradiente y Coriolis se equilibran y el viento sopla paralelo a las isobaras; en superficie, la fricción reduce Coriolis y el viento cruza las isobaras hacia la baja."
+   },
+   {
+    "title": "Viento geostrófico y viento del gradiente",
+    "text": [
+     "Por encima de la **capa de fricción** (en torno a 2000 ft sobre el suelo, aunque varía con el día y el terreno) el aire apenas roza el suelo. Con isobaras rectas y sin fricción, la fuerza del gradiente (hacia la baja) y la de Coriolis (hacia la derecha del viento) se igualan y apuntan en sentidos opuestos. El resultado es el **viento geostrófico**: sopla **paralelo a las isobaras**, con la baja a su izquierda en el hemisferio norte. En un mapa de superficie, el sentido es antihorario alrededor de una baja y horario alrededor de un anticiclón.",
+     "Si las isobaras son curvas aparece una tercera fuerza, la **centrífuga**, y el equilibrio se llama **viento del gradiente**. Alrededor de una **baja** la fuerza centrífuga actúa contra el gradiente y el viento es **más débil** que el geostrófico; alrededor de un **anticiclón** actúa en el mismo sentido que Coriolis y el viento es **más fuerte**. Por eso, con el mismo espaciado de isobaras, las altas dan vientos más fuertes en la teoría; en la práctica los anticiclones tienen gradientes suaves y vientos flojos, y las bajas profundas son las que dan los vientos intensos."
+    ],
+    "table": {
+     "caption": "Fuerzas y resultado según el nivel",
+     "head": [
+      "Situación",
+      "Fuerzas",
+      "Viento resultante"
+     ],
+     "rows": [
+      [
+       "Altura, isobaras rectas",
+       "Gradiente + Coriolis",
+       "Geostrófico: paralelo a las isobaras"
+      ],
+      [
+       "Altura, isobaras curvas",
+       "Gradiente + Coriolis + centrífuga",
+       "Viento del gradiente"
+      ],
+      [
+       "Superficie",
+       "Gradiente + Coriolis + fricción",
+       "Cruza las isobaras hacia la baja"
+      ]
+     ]
+    }
+   },
+   {
+    "title": "La capa de fricción",
+    "text": [
+     "Cerca del suelo, el rozamiento con el terreno frena el aire. Si el viento baja de velocidad, **Coriolis también disminuye**, pero el gradiente no cambia: el gradiente gana y el viento se desvía hacia la baja, cruzando las isobaras con un ángulo. Al subir, la fricción desaparece y el viento vuelve a ser paralelo a las isobaras, de modo que **el viento gira a la derecha (veers) al ganar altura** en el hemisferio norte, y al bajar gira a la izquierda (backs)."
+    ],
+    "table": {
+     "caption": "Efecto de la fricción (valores orientativos)",
+     "head": [
+      "Superficie",
+      "Reducción de velocidad respecto al geostrófico",
+      "Ángulo con las isobaras"
+     ],
+     "rows": [
+      [
+       "Tierra",
+       "Aproximadamente a la mitad (40–50 % menos)",
+       "Hasta unos 30° o más"
+      ],
+      [
+       "Mar",
+       "Aproximadamente un tercio menos",
+       "Unos 10–15°"
+      ]
+     ],
+     "src": "Apuntes de meteorología aeronáutica, AEMET"
+    },
+    "bullets": [
+     "Sobre tierra, el viento a unos 2000 ft sobre el suelo suele ser alrededor del doble que el de superficie y estar girado unos 30° a la derecha. Es una regla práctica, no una norma.",
+     "Durante el día la mezcla vertical trae a la superficie el viento más fuerte de arriba: el máximo de viento en superficie ocurre a primeras horas de la tarde.",
+     "De noche, con inversión, la mezcla se detiene: el viento de superficie amaina y puede haber cizalladura con el viento de unos cientos de pies más arriba."
+    ],
+    "verify": true,
+    "note": {
+     "kind": "tip",
+     "text": "En el examen, sin más datos, sobre tierra la fricción desvía el viento unos 30° hacia la baja y lo reduce a aproximadamente la mitad. Sobre el mar la desviación y la reducción son menores."
+    }
+   },
+   {
+    "title": "Convergencia y divergencia",
+    "text": [
+     "El aire no se acumula ni desaparece: si en superficie llega más aire del que sale, **sube**, y si sale más del que llega, **baja**. En la práctica:",
+     "Alrededor de una **baja** el viento de superficie cruza las isobaras hacia el centro: hay **convergencia** en superficie, el aire asciende, se enfría, condensa y aparecen nubes y precipitación. En altura, ese aire ascendente diverge. Alrededor de un **anticiclón** el viento sale hacia fuera: hay **divergencia** en superficie y el aire desciende desde arriba (**subsidencia**), se calienta y seca, lo que da cielos despejados y, bajo la inversión de subsidencia, bruma y niebla en invierno."
+    ],
+    "table": {
+     "caption": "Qué ocurre en cada sistema",
+     "head": [
+      "Sistema",
+      "Superficie",
+      "Movimiento vertical",
+      "Tiempo típico"
+     ],
+     "rows": [
+      [
+       "Depresión (B)",
+       "Convergencia, giro antihorario",
+       "Ascenso",
+       "Nubes, precipitación, viento"
+      ],
+      [
+       "Anticiclón (A)",
+       "Divergencia, giro horario",
+       "Descenso (subsidencia)",
+       "Despejado, estable, viento flojo"
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Calculadora de componentes del viento",
+    "text": [
+     "Una vez conoces la dirección y la velocidad del viento de torre, los componentes de cara y cruzado se calculan con el ángulo entre el viento y la pista. Prueba con el METAR y la pista del ejemplo: recuerda que la pista se da en rumbo magnético y el viento del METAR en verdadero."
+    ],
+    "figure": "calc:crosswind"
+   }
+  ],
+  "numbers": [
+   "Viento de METAR y TAF: dirección verdadera, promedio de 10 min",
+   "Viento de torre y ATIS: dirección magnética, promedio de 2 min",
+   "Racha en METAR: se informa si supera la media en 10 kt o más",
+   "Capa de fricción: hasta unos 2000 ft sobre el suelo",
+   "Fricción sobre tierra: unos 30° de desvío y alrededor de la mitad de velocidad",
+   "Hemisferio norte: viento antihorario alrededor de B y horario alrededor de A; Buys-Ballot, B a la izquierda con el viento a la espalda",
+   "Coriolis: cero en el ecuador, aumenta con la latitud y la velocidad del viento"
+  ],
+  "traps": [
+   "Confundir el norte de referencia: el METAR es verdadero y el ATIS magnético; con variación 2° W el ATIS da 2° más que el METAR.",
+   "Pensar que el viento sopla de la alta a la baja en línea recta: en altura va paralelo a las isobaras y en superficie las cruza con unos 30° hacia la baja.",
+   "Decir que la fricción aumenta Coriolis: lo reduce porque frena el viento, y por eso el gradiente gana.",
+   "Creer que en un anticiclón el aire asciende: desciende (subsidencia) y por eso se despeja.",
+   "Olvidar que Coriolis es cero en el ecuador, donde no hay viento geostrófico."
+  ],
+  "sources": [
+   {
+    "title": "AEMET, Apuntes de meteorología aeronáutica",
+    "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
+   },
+   {
+    "title": "AEMET, Guía MET AU-GUI-0102 (METAR y TAF: viento medio y racha)",
+    "url": "https://www.aemet.es/documentos/es/conocermas/aeronautica/AU-GUI-0102.pdf"
+   },
+   {
+    "title": "FAA-H-8083-28, Aviation Weather Handbook (viento)",
+    "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+   }
+  ],
+  "spain": [
+   "Los METAR de AEMET dan el viento en nudos, en grados verdaderos redondeados a decenas; la torre y el ATIS lo dan en grados magnéticos.",
+   "La variación magnética en la península ronda 0°–2° W en 2026 y cambia despacio cada año; consúltala en la carta (valor aproximado, comprueba el dato vigente)."
+  ],
+  "id": "050.04",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "050.04.001",
+   "type": "regla",
+   "level": 1,
+   "q": "El viento que figura en un METAR se refiere al norte:",
+   "options": [
+    "Verdadero, con promedio de 10 minutos",
+    "Magnético, con promedio de 10 minutos",
+    "Verdadero, con promedio de 2 minutos",
+    "Magnético, con promedio de 2 minutos"
+   ],
+   "correct": 0,
+   "why": "Los mensajes meteorológicos (METAR, SPECI, TAF) dan el viento en norte verdadero, con promedio de 10 minutos. La torre y el ATIS dan norte magnético y promedio de 2 minutos.",
+   "whyNot": [
+    null,
+    "Es el norte de ATIS y de la torre.",
+    "Los 2 minutos corresponden a ATIS y torre.",
+    "Combina dos errores: ni el norte ni el promedio son los del METAR."
+   ],
+   "ref": "OACI Anexo 3; Guía MET AEMET"
+  },
+  {
+   "id": "050.04.002",
+   "type": "calculo",
+   "level": 2,
+   "q": "El METAR da viento 180/10 kt y la variación magnética es 4° E. ¿Qué dirección magnética dará la torre?",
+   "options": [
+    "184°",
+    "176°",
+    "180°",
+    "190°"
+   ],
+   "correct": 1,
+   "why": "Magnético = verdadero − variación E: 180° − 4° = 176°. Con variación W se suma.",
+   "whyNot": [
+    "Has sumado la variación E; solo se suma si es W.",
+    null,
+    "La variación no es cero, hay que aplicarla.",
+    "Has sumado 10, que es la velocidad del viento."
+   ],
+   "ref": "Navegación: variación magnética"
+  },
+  {
+   "id": "050.04.003",
+   "type": "concepto",
+   "level": 1,
+   "q": "La fuerza del gradiente de presión actúa:",
+   "options": [
+    "Paralela a las isobaras, con la alta a la derecha",
+    "Perpendicular a las isobaras, de la baja a la alta presión",
+    "Perpendicular a las isobaras, de la alta a la baja presión",
+    "Paralela a las isobaras, en el sentido del viento"
+   ],
+   "correct": 2,
+   "why": "El gradiente empuja el aire de alta a baja presión, perpendicular a las isobaras. Es mayor cuanto más juntas están.",
+   "whyNot": [
+    "Eso describe el viento geostrófico, no la fuerza del gradiente.",
+    "Es al revés: el aire es empujado hacia la baja presión.",
+    null,
+    "El gradiente no es paralelo a las isobaras; el viento geostrófico sí."
+   ],
+   "ref": "AEMET, Apuntes de meteorología aeronáutica"
+  },
+  {
+   "id": "050.04.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "La fuerza de Coriolis en el hemisferio norte:",
+   "options": [
+    "Desvía el viento hacia la izquierda y es máxima en el ecuador",
+    "Desvía el viento hacia la derecha y es máxima en el ecuador",
+    "Frena el viento y es nula en los polos",
+    "Desvía el viento hacia la derecha y es nula en el ecuador"
+   ],
+   "correct": 3,
+   "why": "Coriolis desvía hacia la derecha en el hemisferio norte, crece con la latitud y la velocidad y es cero en el ecuador. No frena el aire, solo cambia su dirección.",
+   "whyNot": [
+    "Es la derecha en el hemisferio norte, y en el ecuador vale cero.",
+    "En el ecuador Coriolis es cero, no máxima.",
+    "No frena el viento y es máxima en los polos, no nula.",
+    null
+   ],
+   "ref": "AEMET, Apuntes de meteorología aeronáutica"
+  },
+  {
+   "id": "050.04.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "El viento geostrófico es el que resulta del equilibrio entre:",
+   "options": [
+    "El gradiente de presión y la fricción, con isobaras rectas",
+    "El gradiente de presión y Coriolis, con isobaras rectas y sin fricción",
+    "El gradiente de presión, Coriolis y la fuerza centrífuga",
+    "Coriolis y la fricción, con isobaras curvas"
+   ],
+   "correct": 1,
+   "why": "Geostrófico: gradiente y Coriolis iguales y opuestos, isobaras rectas, sin fricción. Sopla paralelo a las isobaras.",
+   "whyNot": [
+    "La fricción está presente en superficie, no en el viento geostrófico.",
+    null,
+    "Con fuerza centrífuga (isobaras curvas) se llama viento del gradiente.",
+    "No incluye fricción ni isobaras curvas."
+   ],
+   "ref": "AEMET, Apuntes de meteorología aeronáutica"
+  },
+  {
+   "id": "050.04.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "En el hemisferio norte, ¿cómo circula el viento en superficie alrededor de una depresión?",
+   "options": [
+    "En sentido horario y cruzando las isobaras hacia el centro",
+    "En sentido antihorario y paralelo a las isobaras",
+    "En sentido antihorario y cruzando las isobaras hacia el centro",
+    "En sentido horario y saliendo del centro"
+   ],
+   "correct": 2,
+   "why": "Alrededor de una baja el giro es antihorario y la fricción hace que el viento converja hacia el centro con unos 30° respecto a las isobaras.",
+   "whyNot": [
+    "El sentido horario es el de un anticiclón.",
+    "Eso solo ocurre por encima de la capa de fricción.",
+    null,
+    "El giro horario con salida del centro describe un anticiclón."
+   ],
+   "ref": "AEMET, Apuntes de meteorología aeronáutica"
+  },
+  {
+   "id": "050.04.007",
+   "type": "concepto",
+   "level": 1,
+   "q": "Dando la espalda al viento en el hemisferio norte, la baja presión queda:",
+   "options": [
+    "A tu derecha",
+    "Delante de ti",
+    "Detrás de ti",
+    "A tu izquierda"
+   ],
+   "correct": 3,
+   "why": "Ley de Buys-Ballot: en el hemisferio norte, con el viento a la espalda la baja presión queda a la izquierda (y la alta a la derecha).",
+   "whyNot": [
+    "La derecha es en el hemisferio sur.",
+    "La baja queda a un lado, no en la dirección del viento.",
+    "El viento sopla paralelo a las isobaras, no hacia el centro.",
+    null
+   ],
+   "ref": "Ley de Buys-Ballot"
+  },
+  {
+   "id": "050.04.008",
+   "type": "regla",
+   "level": 2,
+   "q": "Sobre tierra, la fricción en la capa inferior hace que el viento respecto al geostrófico:",
+   "options": [
+    "Se debilite de modo notable y se desvíe unos 30° hacia la baja presión",
+    "Se intensifique y se desvíe unos 30° hacia la alta presión",
+    "Se debilite y se desvíe 90° hacia la baja presión",
+    "Mantenga la velocidad y gire hacia la alta presión"
+   ],
+   "correct": 0,
+   "why": "La fricción frena el aire, Coriolis disminuye y el gradiente gana: el viento cruza las isobaras hacia la baja (unos 30° sobre tierra) con menor velocidad.",
+   "whyNot": [
+    null,
+    "La fricción no intensifica el viento ni lo desvía hacia la alta.",
+    "El ángulo típico es de unos 30°, no 90°.",
+    "La fricción reduce la velocidad y el desvío es hacia la baja."
+   ],
+   "ref": "AEMET, Apuntes de meteorología aeronáutica"
+  },
+  {
+   "id": "050.04.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un piloto asciende en el hemisferio norte desde la superficie hasta por encima de la capa de fricción. El viento:",
+   "options": [
+    "Gira a la izquierda y aumenta de velocidad",
+    "Gira a la derecha y aumenta de velocidad",
+    "Gira a la derecha y disminuye de velocidad",
+    "Gira a la izquierda y disminuye de velocidad"
+   ],
+   "correct": 1,
+   "why": "Sin fricción el viento vuelve a ser paralelo a las isobaras: gira a la derecha (veers) respecto al de superficie y es más rápido.",
+   "whyNot": [
+    "Al subir gira a la derecha, no a la izquierda.",
+    null,
+    "Al subir aumenta, porque desaparece el rozamiento.",
+    "Gira a la derecha y gana velocidad; los dos sentidos están al revés."
+   ],
+   "ref": "AEMET, Apuntes de meteorología aeronáutica"
+  },
+  {
+   "id": "050.04.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "Sobre una zona de convergencia de aire en superficie se espera:",
+   "options": [
+    "Descenso del aire y cielo despejado",
+    "Calma y formación de niebla",
+    "Ascenso del aire y formación de nubes",
+    "Subsidencia con inversión"
+   ],
+   "correct": 2,
+   "why": "Si el aire converge en superficie solo puede subir: se enfría, condensa y se forman nubes. La divergencia produce subsidencia.",
+   "whyNot": [
+    "El descenso corresponde a la divergencia y los anticiclones.",
+    "La niebla se forma con aire en calma y estable, sin ascenso.",
+    null,
+    "La subsidencia viene de la divergencia."
+   ],
+   "ref": "AEMET, Apuntes de meteorología aeronáutica"
+  },
+  {
+   "id": "050.04.011",
+   "type": "lectura",
+   "level": 2,
+   "q": "El mapa muestra isobaras muy juntas sobre tu ruta. Esperas:",
+   "options": [
+    "Viento más fuerte que donde las isobaras están separadas",
+    "Viento más débil, por mayor estabilidad",
+    "Viento de dirección variable",
+    "Viento del mismo valor, pero girado"
+   ],
+   "correct": 0,
+   "why": "El gradiente de presión aumenta con la proximidad de las isobaras, y con él el viento. La estabilidad y la dirección no se deducen de ese hecho.",
+   "whyNot": [
+    null,
+    "Más gradiente da más viento, no menos.",
+    "El viento con gradiente fuerte es persistente, no variable.",
+    "También cambia la velocidad, no solo la dirección."
+   ],
+   "ref": "AEMET, Apuntes de meteorología aeronáutica"
+  },
+  {
+   "id": "050.04.012",
+   "type": "concepto",
+   "level": 3,
+   "q": "Con el mismo espaciado de isobaras, el viento del gradiente alrededor de una baja respecto al geostrófico es:",
+   "options": [
+    "Mayor, porque la fuerza centrífuga se suma al gradiente",
+    "Igual, porque la centrífuga no actúa en superficie",
+    "Mayor, porque la centrífuga se suma a Coriolis",
+    "Menor, porque la fuerza centrífuga se opone al gradiente"
+   ],
+   "correct": 3,
+   "why": "Alrededor de una baja la centrífuga apunta hacia fuera, contra el gradiente, y el viento es subgeostrófico. Alrededor de un anticiclón es supergeostrófico.",
+   "whyNot": [
+    "La centrífuga en una baja apunta hacia fuera, contra el gradiente.",
+    "Aparece siempre que las isobaras son curvas.",
+    "Sumarse a Coriolis ocurre en un anticiclón, no en una baja.",
+    null
+   ],
+   "ref": "AEMET, Apuntes de meteorología aeronáutica"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.050.04.01",
+   "front": "Viento de METAR y TAF: norte y promedio",
+   "back": "Norte verdadero; promedio de 10 minutos"
+  },
+  {
+   "id": "c.050.04.02",
+   "front": "Viento de torre y ATIS: norte y promedio",
+   "back": "Norte magnético; promedio de 2 minutos"
+  },
+  {
+   "id": "c.050.04.03",
+   "front": "Fuerza del gradiente de presión",
+   "back": "Perpendicular a las isobaras, de alta a baja; más fuerte cuanto más juntas están"
+  },
+  {
+   "id": "c.050.04.04",
+   "front": "Coriolis (hemisferio norte)",
+   "back": "Desvía a la derecha; cero en el ecuador; no cambia la velocidad"
+  },
+  {
+   "id": "c.050.04.05",
+   "front": "Viento geostrófico",
+   "back": "Gradiente = Coriolis, isobaras rectas, sin fricción: sopla paralelo a las isobaras"
+  },
+  {
+   "id": "c.050.04.06",
+   "front": "Fricción sobre tierra",
+   "back": "Unos 30° de desvío hacia la baja y alrededor de la mitad de velocidad"
+  },
+  {
+   "id": "c.050.04.07",
+   "front": "Convergencia y divergencia en superficie",
+   "back": "Convergencia (baja): ascenso y nubes. Divergencia (alta): subsidencia y despejado"
+  }
+ ]
+}

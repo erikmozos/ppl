@@ -1,0 +1,410 @@
+[
+ {
+  "id": "no-controlado",
+  "title": "Aeródromo no controlado: autoinformación",
+  "icon": "",
+  "desc": "Villanueva no tiene torre ni AFIS. Tú sales y vuelves por la frecuencia de autoinformación (122 decimal 950) con mensajes a todo el tráfico, sin esperar autorización.",
+  "lines": [
+   {
+    "who": "P",
+    "es": "Villanueva Tráfico, EC-ABC, Cessna 172, en plataforma del aeroclub, rodando al punto de espera pista 31, Villanueva Tráfico.",
+    "en": "Villanueva Traffic, EC-ABC, Cessna 172, at the aero club apron, taxiing to holding point runway 31, Villanueva Traffic.",
+    "note": "Sin controlador no pides permiso: informas de lo que haces. Empiezas y terminas con el nombre de la estación («Villanueva Tráfico») para que todos sepan que el mensaje va al tráfico del aeródromo. La frecuencia 122,950 se dice con seis dígitos porque el 5.º no es cero: «uno dos dos decimal nueve cinco cero».",
+    "wrong": [
+     {
+      "es": "Villanueva Torre, EC-ABC, solicito rodar.",
+      "en": "Villanueva Tower, EC-ABC, request taxi.",
+      "why": "No existe torre: no hay nadie que autorice. El indicativo es «Tráfico» y no se solicita nada."
+     },
+     {
+      "es": "A quien corresponda, vamos a rodar.",
+      "en": "To whom it may concern, we are going to taxi.",
+      "why": "No es fraseología: faltan el distintivo, el tipo, la posición y la pista."
+     }
+    ]
+   },
+   {
+    "who": "ATC",
+    "es": "Villanueva Tráfico, EC-XYZ, Piper PA-28, 5 millas al este, 2000 pies, para incorporarse a viento en cola izquierda pista 31, Villanueva Tráfico.",
+    "en": "Villanueva Traffic, EC-XYZ, Piper PA-28, 5 miles east, 2000 feet, to join left downwind runway 31, Villanueva Traffic.",
+    "note": "Otro piloto (no hay ATC). Anota su posición, su altitud y su intención: serás tú quien deba verlo y separarte de él."
+   },
+   {
+    "who": "P",
+    "es": "Villanueva Tráfico, EC-ABC, punto de espera pista 31, tráfico PA-28 escuchado, lo tendré en cuenta, Villanueva Tráfico.",
+    "en": "Villanueva Traffic, EC-ABC, holding point runway 31, PA-28 traffic copied, will look out, Villanueva Traffic.",
+    "note": "Informas de dónde estás y confirmas que has oído al otro tráfico. La responsabilidad de ver y evitar es tuya.",
+    "wrong": [
+     {
+      "es": "EC-ABC, despegando.",
+      "en": "EC-ABC, taking off.",
+      "why": "Falta la estación, la posición y la pista, y despegas sin haber mirado al tráfico que llega."
+     },
+     {
+      "es": "Recibido, EC-XYZ.",
+      "en": "Roger, EC-XYZ.",
+      "why": "«Recibido» a otro piloto no sirve para el resto del tráfico y tu distintivo no es EC-XYZ."
+     }
+    ]
+   },
+   {
+    "who": "P",
+    "es": "Villanueva Tráfico, EC-ABC, alineándose y despegando pista 31, circuito a izquierdas, abandonaré el circuito por el oeste, Villanueva Tráfico.",
+    "en": "Villanueva Traffic, EC-ABC, lining up and departing runway 31, left-hand circuit, will leave the circuit to the west, Villanueva Traffic.",
+    "note": "Se informa antes de entrar en la pista y de nuevo si hace falta. En un aeródromo no controlado la pista en uso se deduce de la manga de viento y del circuito del resto del tráfico.",
+    "wrong": [
+     {
+      "es": "EC-ABC, listo para salir.",
+      "en": "EC-ABC, ready for departure.",
+      "why": "«Listo para salir» se dice a una torre que te puede autorizar; aquí lo haces tú."
+     },
+     {
+      "es": "EC-ABC, entrando en pista.",
+      "en": "EC-ABC, entering runway.",
+      "why": "Faltan la estación, la pista y tus intenciones tras el despegue."
+     }
+    ]
+   },
+   {
+    "who": "P",
+    "es": "Villanueva Tráfico, EC-ABC, abandonando el circuito por el oeste, 2000 pies.",
+    "en": "Villanueva Traffic, EC-ABC, leaving the circuit to the west, 2000 feet."
+   },
+   {
+    "who": "P",
+    "es": "Villanueva Tráfico, EC-ABC, 10 millas al oeste, 2500 pies, para incorporarse a viento en cola izquierda pista 31, Villanueva Tráfico.",
+    "en": "Villanueva Traffic, EC-ABC, 10 miles west, 2500 feet, to join left downwind runway 31, Villanueva Traffic.",
+    "note": "Al regresar, avisas con tiempo (en torno a 10 millas) de tu posición, altitud e intención de incorporación.",
+    "wrong": [
+     {
+      "es": "EC-ABC regresando.",
+      "en": "EC-ABC returning.",
+      "why": "No sirve: ni posición, ni altitud, ni pista, ni qué circuito harás."
+     },
+     {
+      "es": "Villanueva Tráfico, voy a aterrizar en cualquier pista.",
+      "en": "Villanueva Traffic, I will land on any runway.",
+      "why": "La pista en uso sale de la manga y del tráfico; hay que declarar una pista concreta."
+     }
+    ]
+   },
+   {
+    "who": "ATC",
+    "es": "EC-ABC, EC-XYZ, viento en cola izquierda pista 31, tráfico a la vista, Villanueva Tráfico.",
+    "en": "EC-ABC, EC-XYZ, left downwind runway 31, traffic in sight, Villanueva Traffic.",
+    "note": "El otro piloto te ve. Entre vosotros os repartís el orden de aterrizaje."
+   },
+   {
+    "who": "P",
+    "es": "Villanueva Tráfico, EC-ABC, número dos, tras el PA-28, viento en cola izquierda pista 31, Villanueva Tráfico.",
+    "en": "Villanueva Traffic, EC-ABC, number two, following PA-28, left downwind runway 31, Villanueva Traffic.",
+    "note": "Estableces la secuencia en voz alta: eres el segundo y sigues al otro tráfico.",
+    "wrong": [
+     {
+      "es": "EC-ABC, entrando.",
+      "en": "EC-ABC, joining.",
+      "why": "Tu mensaje no dice dónde ni a qué pista."
+     },
+     {
+      "es": "Villanueva Tráfico, tengo prioridad, soy más lento.",
+      "en": "Villanueva Traffic, I have priority, I am slower.",
+      "why": "La prioridad la determina el orden de llegada y el derecho de paso (SERA.3210), no la velocidad."
+     }
+    ]
+   },
+   {
+    "who": "P",
+    "es": "Villanueva Tráfico, EC-ABC, final pista 31, para tomar tierra, Villanueva Tráfico.",
+    "en": "Villanueva Traffic, EC-ABC, final runway 31, full stop, Villanueva Traffic."
+   },
+   {
+    "who": "P",
+    "es": "Villanueva Tráfico, EC-ABC, pista 31 libre, Villanueva Tráfico.",
+    "en": "Villanueva Traffic, EC-ABC, runway 31 vacated, Villanueva Traffic.",
+    "note": "Avisar de que has liberado la pista permite al tráfico siguiente aterrizar sin dudas."
+   }
+  ]
+ },
+ {
+  "id": "afis",
+  "title": "Zona de información de vuelo (FIZ) con AFIS",
+  "icon": "",
+  "desc": "Villanueva Información da servicio AFIS en 118 decimal 275. El AFIS informa del tráfico, el viento y el QNH, pero no controla ni da autorizaciones: la decisión y la separación son tuyas.",
+  "lines": [
+   {
+    "who": "P",
+    "es": "Villanueva Información, EC-ABC, Cessna 172, VFR procedente de Santa Clara, 15 millas al sur, 2500 pies, QNH 1016, solicito información para aterrizar.",
+    "en": "Villanueva Information, EC-ABC, Cessna 172, VFR from Santa Clara, 15 miles south, 2500 feet, QNH 1016, request information for landing.",
+    "note": "Antes de entrar en la FIZ llamas al AFIS con quién eres, de dónde vienes, posición, altitud y lo que solicitas. 118,275 se dice con seis dígitos («uno uno ocho decimal dos siete cinco»). Con 118,100 solo dirías «uno uno ocho decimal uno».",
+    "wrong": [
+     {
+      "es": "Villanueva Torre, EC-ABC, solicito autorización para aterrizar.",
+      "en": "Villanueva Tower, EC-ABC, request landing clearance.",
+      "why": "El AFIS no es una torre ni da autorizaciones: pides información, no permiso."
+     },
+     {
+      "es": "EC-ABC, 15 millas, entrando.",
+      "en": "EC-ABC, 15 miles, entering.",
+      "why": "Faltan la estación, el tipo, la altitud, la intención y el QNH; el AFIS no puede informarte."
+     }
+    ]
+   },
+   {
+    "who": "ATC",
+    "es": "EC-ABC, Villanueva Información, pista 31 en uso, circuito a izquierdas, viento 300 grados 8 nudos, QNH 1017, tráfico: un Piper PA-28 en viento en cola izquierda; notifique entrando en viento en cola.",
+    "en": "EC-ABC, Villanueva Information, runway 31 in use, left-hand circuit, wind 300 degrees 8 knots, QNH 1017, traffic is a Piper PA-28 on left downwind; report joining downwind.",
+    "note": "El AFIS da información (pista, circuito, viento, QNH y tráfico esencial), no instrucciones de control. El QNH es distinto del tuyo: 1017."
+   },
+   {
+    "who": "P",
+    "es": "Pista 31, circuito a izquierdas, QNH 1017, notificaré en viento en cola, EC-ABC.",
+    "en": "Runway 31, left-hand circuit, QNH 1017, will report downwind, EC-ABC.",
+    "note": "Colacionas la pista, el QNH y lo que prometes notificar. El tráfico no hace falta colacionarlo, pero sí verlo.",
+    "wrong": [
+     {
+      "es": "Recibido, EC-ABC.",
+      "en": "Roger, EC-ABC.",
+      "why": "No colaciona el QNH ni la pista."
+     },
+     {
+      "es": "QNH 1016, EC-ABC.",
+      "en": "QNH 1016, EC-ABC.",
+      "why": "Es el valor antiguo: has dado tu QNH, no el que te acaban de dar."
+     }
+    ]
+   },
+   {
+    "who": "P",
+    "es": "Villanueva Información, EC-ABC, viento en cola izquierda pista 31, tráfico a la vista, Villanueva Información.",
+    "en": "Villanueva Information, EC-ABC, left downwind runway 31, traffic in sight, Villanueva Information.",
+    "note": "Si ves al tráfico, lo dices. Si no lo ves, di «sin contacto visual» («negative contact»).",
+    "wrong": [
+     {
+      "es": "EC-ABC, en viento en cola.",
+      "en": "EC-ABC, downwind.",
+      "why": "Falta la estación llamada, la pista y si ves el tráfico indicado."
+     },
+     {
+      "es": "Villanueva Información, solicito autorización para entrar en el circuito.",
+      "en": "Villanueva Information, request clearance to join the circuit.",
+      "why": "El AFIS no concede autorizaciones: eres tú quien decide entrar según el tráfico."
+     }
+    ]
+   },
+   {
+    "who": "ATC",
+    "es": "EC-ABC, recibido; el PA-28 está en final, pista 31 ocupada hasta que despeje.",
+    "en": "EC-ABC, roger; the PA-28 is on final, runway 31 occupied until it vacates.",
+    "note": "El AFIS describe la situación en la pista pero no dice «autorizado a aterrizar»."
+   },
+   {
+    "who": "P",
+    "es": "Villanueva Información, EC-ABC, final pista 31.",
+    "en": "Villanueva Information, EC-ABC, final runway 31.",
+    "note": "Avisas de tu posición. Hasta que la pista esté libre, tú decides si continúas o te vas al aire.",
+    "wrong": [
+     {
+      "es": "EC-ABC, aterrizando.",
+      "en": "EC-ABC, landing.",
+      "why": "Dices lo que haces sin estación llamada y sin haber confirmado que la pista está libre."
+     }
+    ]
+   },
+   {
+    "who": "ATC",
+    "es": "EC-ABC, pista 31 libre, viento 300 grados 6 nudos.",
+    "en": "EC-ABC, runway 31 vacant, wind 300 degrees 6 knots.",
+    "note": "Es información: no hay «autorizado a aterrizar», que es una frase de torre."
+   },
+   {
+    "who": "P",
+    "es": "Pista 31 libre, tomando tierra, EC-ABC.",
+    "en": "Runway 31 vacant, landing, EC-ABC.",
+    "wrong": [
+     {
+      "es": "Autorizado a aterrizar, EC-ABC.",
+      "en": "Cleared to land, EC-ABC.",
+      "why": "Nadie te ha autorizado: el AFIS no puede hacerlo y tú no puedes colacionarlo."
+     },
+     {
+      "es": "Gracias, aterrizo.",
+      "en": "Thanks, landing.",
+      "why": "Falta el distintivo y la pista, que son obligatorios."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cruce-ctr",
+  "title": "Cruce de una CTR por puntos de notificación VFR",
+  "icon": "",
+  "desc": "Vas de Santa Clara a Cerro Alto y la CTR de Villanueva está en medio. La cruzas por los puntos VFR Oscar y Sierra con autorización condicional del control.",
+  "lines": [
+   {
+    "who": "P",
+    "es": "Villanueva Torre, EC-ABC, Cessna 172, VFR, 12 millas al oeste de Oscar, 2500 pies, QNH 1015, solicito atravesar la CTR de Oscar a Sierra.",
+    "en": "Villanueva Tower, EC-ABC, Cessna 172, VFR, 12 miles west of Oscar, 2500 feet, QNH 1015, request to cross the CTR from Oscar to Sierra.",
+    "note": "Llamas antes de llegar al límite de la CTR con tipo, reglas, posición, altitud y la ruta de cruce por puntos de notificación. Nunca entras sin autorización.",
+    "wrong": [
+     {
+      "es": "Villanueva Torre, EC-ABC, voy a pasar por su zona.",
+      "en": "Villanueva Tower, EC-ABC, I will pass through your zone.",
+      "why": "No es una solicitud: es un aviso. Hace falta pedir y recibir autorización."
+     },
+     {
+      "es": "EC-ABC, solicito cruzar por el centro del aeródromo.",
+      "en": "EC-ABC, request to cross over the middle of the aerodrome.",
+      "why": "Hay que usar los puntos de notificación publicados; además falta la estación llamada."
+     }
+    ]
+   },
+   {
+    "who": "ATC",
+    "es": "EC-ABC, Villanueva Torre, transponda 4521, mantenga fuera de la CTR y notifique en Oscar.",
+    "en": "EC-ABC, Villanueva Tower, squawk 4521, remain outside the CTR and report at Oscar.",
+    "note": "Aún no hay autorización: tu instrucción es no entrar."
+   },
+   {
+    "who": "P",
+    "es": "Transpondo 4521, fuera de la CTR, notificaré en Oscar, EC-ABC.",
+    "en": "Squawk 4521, remain outside the CTR, will report at Oscar, EC-ABC.",
+    "note": "Colacionas el código y la restricción de entrada (fuera de la CTR).",
+    "wrong": [
+     {
+      "es": "Recibido, EC-ABC.",
+      "en": "Roger, EC-ABC.",
+      "why": "No colaciona el código ni la restricción de no entrar."
+     },
+     {
+      "es": "Transpondo 4521, entrando en la CTR, EC-ABC.",
+      "en": "Squawk 4521, entering the CTR, EC-ABC.",
+      "why": "La instrucción era no entrar: aquí hay un error grave de colación."
+     }
+    ]
+   },
+   {
+    "who": "P",
+    "es": "Villanueva Torre, EC-ABC, en Oscar, 2500 pies.",
+    "en": "Villanueva Tower, EC-ABC, at Oscar, 2500 feet.",
+    "note": "Notificas en el punto cuando lo alcanzas, sin entrar."
+   },
+   {
+    "who": "ATC",
+    "es": "EC-ABC, detrás del Piper PA-28 a su derecha, que se dirige a Sierra, autorizado a entrar en la CTR por Oscar y a atravesar hasta Sierra, 2500 pies o inferior, notifique en Sierra.",
+    "en": "EC-ABC, behind the Piper PA-28 on your right, proceeding to Sierra, cleared to enter the CTR via Oscar and to cross to Sierra, 2500 feet or below, report at Sierra.",
+    "note": "Autorización condicional: la condición va primero y exige que identifiques el tráfico al que debes seguir. Si no lo ves, no puedes aceptar la autorización: di «sin contacto visual»."
+   },
+   {
+    "who": "P",
+    "es": "Detrás del PA-28 a mi derecha, autorizado a entrar en la CTR por Oscar y atravesar hasta Sierra, 2500 pies o inferior, notificaré en Sierra, EC-ABC.",
+    "en": "Behind the PA-28 on my right, cleared to enter the CTR via Oscar and to cross to Sierra, 2500 feet or below, will report at Sierra, EC-ABC.",
+    "note": "Se colaciona entera: la condición (detrás del PA-28), la autorización, la altitud máxima y el punto de notificación. Solo la aceptas si ves al PA-28.",
+    "wrong": [
+     {
+      "es": "Autorizado a entrar en la CTR, EC-ABC.",
+      "en": "Cleared to enter the CTR, EC-ABC.",
+      "why": "Se ha perdido la condición («detrás del PA-28»), la altitud y el punto de notificación."
+     },
+     {
+      "es": "Tráfico a la vista, entro en la CTR, EC-ABC.",
+      "en": "Traffic in sight, entering the CTR, EC-ABC.",
+      "why": "Falta colacionar la autorización completa: se acepta con la fraseología, no con una frase libre."
+     }
+    ]
+   },
+   {
+    "who": "P",
+    "es": "Villanueva Torre, EC-ABC, en Sierra, 2500 pies.",
+    "en": "Villanueva Tower, EC-ABC, at Sierra, 2500 feet.",
+    "note": "Al llegar a Sierra notificas que has terminado el cruce."
+   },
+   {
+    "who": "ATC",
+    "es": "EC-ABC, abandone la CTR, buen vuelo; contacte con Santa Clara Información en 127 decimal 825.",
+    "en": "EC-ABC, leave the CTR, have a nice flight; contact Santa Clara Information on 127 decimal 825.",
+    "note": "127,825 se dice con seis dígitos porque el 5.º y el 6.º no son ceros: «uno dos siete decimal ocho dos cinco»."
+   },
+   {
+    "who": "P",
+    "es": "Abandonando la CTR, 127 decimal 825, EC-ABC.",
+    "en": "Leaving the CTR, 127 decimal 825, EC-ABC.",
+    "note": "Se colaciona el cambio de frecuencia con los seis dígitos.",
+    "wrong": [
+     {
+      "es": "Abandonando la CTR, 127 decimal 8, EC-ABC.",
+      "en": "Leaving the CTR, 127 decimal 8, EC-ABC.",
+      "why": "Has abreviado la frecuencia: 127,825 no termina en dos ceros y hay que decirla completa."
+     },
+     {
+      "es": "Recibido, EC-ABC.",
+      "en": "Roger, EC-ABC.",
+      "why": "No colaciona la frecuencia."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "atis",
+  "title": "Escucha de ATIS y llamada inicial",
+  "icon": "",
+  "desc": "Antes de llamar a la torre de Villanueva escuchas el ATIS en 128 decimal 175, anotas la información y la mencionas en tu llamada inicial.",
+  "lines": [
+   {
+    "who": "ATC",
+    "es": "Villanueva, información Charlie, hora 08 30, pista en uso 13, viento 140 grados 8 nudos, visibilidad 10 kilómetros o más, nubes escasas a 4000 pies, temperatura 18, punto de rocío 11, QNH 1015. Al establecer el primer contacto con Villanueva Torre, confirme la recepción de la información Charlie.",
+    "en": "Villanueva, information Charlie, time 0830, runway in use 13, wind 140 degrees 8 knots, visibility 10 kilometres or more, few clouds 4000 feet, temperature 18, dew point 11, QNH 1015. On first contact with Villanueva Tower, acknowledge receipt of information Charlie.",
+    "note": "El ATIS es una grabación continua: anotas la letra (Charlie), la pista, el viento, las nubes, la temperatura y el QNH. El viento es magnético. La frecuencia 128,175 se dice «uno dos ocho decimal uno siete cinco». Si no oyes la grabación completa, escúchala de nuevo."
+   },
+   {
+    "who": "P",
+    "es": "Villanueva Torre, EC-ABC, buenos días, Cessna 172 en plataforma del aeroclub, con información Charlie, QNH 1015, solicito rodar para vuelo VFR local.",
+    "en": "Villanueva Tower, EC-ABC, good morning, Cessna 172 at the aero club apron, information Charlie, QNH 1015, request taxi for local VFR flight.",
+    "note": "Llamada inicial con ATIS: estación llamada, tu distintivo, tipo, posición, la letra de la información y lo que quieres. Añadir el QNH es opcional pero te protege de un error de lectura.",
+    "wrong": [
+     {
+      "es": "Villanueva Torre, EC-ABC, escuchado el ATIS, solicito rodar.",
+      "en": "Villanueva Tower, EC-ABC, heard the ATIS, request taxi.",
+      "why": "Falta la letra de la información: el controlador debe saber cuál tienes, no que «has oído» algo."
+     },
+     {
+      "es": "EC-ABC, Villanueva, con Charlie, ¿puedo rodar?",
+      "en": "EC-ABC, Villanueva, with Charlie, may I taxi?",
+      "why": "Orden incorrecto (primero la estación llamada) y la petición no es normalizada."
+     }
+    ]
+   },
+   {
+    "who": "ATC",
+    "es": "EC-ABC, Villanueva Torre, la información vigente es Delta, QNH 1014, ruede al punto de espera pista 13 por Alfa.",
+    "en": "EC-ABC, Villanueva Tower, current information is Delta, QNH 1014, taxi to holding point runway 13 via Alfa.",
+    "note": "El ATIS ha cambiado mientras llamabas. La torre te da el dato clave (QNH 1014) y te dice la letra vigente. Tu información Charlie ya no vale."
+   },
+   {
+    "who": "P",
+    "es": "Recibida información Delta, QNH 1014, al punto de espera pista 13 por Alfa, EC-ABC.",
+    "en": "Information Delta received, QNH 1014, holding point runway 13 via Alfa, EC-ABC.",
+    "note": "Colacionas el QNH nuevo y la ruta de rodaje. Mencionar la letra vigente muestra que tienes la información actual.",
+    "wrong": [
+     {
+      "es": "Recibida Charlie, QNH 1015, al punto de espera pista 13, EC-ABC.",
+      "en": "Information Charlie received, QNH 1015, holding point runway 13, EC-ABC.",
+      "why": "Sigues con el QNH antiguo y con la información que ya no es vigente: peligro en la altimetría."
+     },
+     {
+      "es": "Roger, EC-ABC.",
+      "en": "Roger, EC-ABC.",
+      "why": "«Roger» no sustituye a la colación: faltan el QNH y la ruta de rodaje."
+     }
+    ]
+   },
+   {
+    "who": "P",
+    "es": "Villanueva Torre, EC-ABC, punto de espera pista 13, listo para salir.",
+    "en": "Villanueva Tower, EC-ABC, holding point runway 13, ready for departure.",
+    "note": "Con la información vigente ya no repites la letra en las llamadas siguientes."
+   }
+  ]
+ }
+]
