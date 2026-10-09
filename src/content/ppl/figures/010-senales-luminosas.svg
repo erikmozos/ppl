@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 432">
+  <title>Señales luminosas y pirotécnicas de la torre de control para aeronaves en vuelo y en tierra (SERA, apéndice 1, tabla AP 1-1)</title>
+  <rect x="8" y="8" width="624" height="36" rx="6" class="ac"/>
+  <text x="24" y="31" class="tx b">Señal de la torre</text>
+  <text x="178" y="31" class="tx b">Aeronave en vuelo</text>
+  <text x="414" y="31" class="tx b">Aeronave en tierra</text>
+  <rect x="8" y="52" width="624" height="50" rx="6" class="soft"/>
+  <circle cx="40" cy="77.0" r="12" class="ok-fill"/>
+  <text x="68" y="75.0" class="txo b">Verde</text>
+  <text x="68" y="91.0" class="tx2">fija</text>
+  <line x1="170" y1="58" x2="170" y2="96" class="ln2"/>
+  <line x1="406" y1="58" x2="406" y2="96" class="ln2"/>
+  <text x="180" y="82.0" class="tx">Autorizado a aterrizar</text>
+  <text x="416" y="82.0" class="tx">Autorizado a despegar</text>
+  <rect x="8" y="106" width="624" height="50" rx="6" class="soft"/>
+  <circle cx="40" cy="131.0" r="12" class="wa-fill"/>
+  <text x="68" y="129.0" class="txw b">Roja</text>
+  <text x="68" y="145.0" class="tx2">fija</text>
+  <line x1="170" y1="112" x2="170" y2="150" class="ln2"/>
+  <line x1="406" y1="112" x2="406" y2="150" class="ln2"/>
+  <text x="180" y="128.0" class="tx">Ceda el paso y siga</text>
+  <text x="180" y="144.0" class="tx2">en el circuito</text>
+  <text x="416" y="136.0" class="tx">Alto</text>
+  <rect x="8" y="160" width="624" height="50" rx="6" class="soft"/>
+  <circle cx="40" cy="185.0" r="12" class="ok-fill"/>
+  <line x1="54.8" y1="191.1" x2="60.3" y2="193.4" class="ok-ln"/>
+  <line x1="46.1" y1="199.8" x2="48.4" y2="205.3" class="ok-ln"/>
+  <line x1="33.9" y1="199.8" x2="31.6" y2="205.3" class="ok-ln"/>
+  <line x1="25.2" y1="191.1" x2="19.7" y2="193.4" class="ok-ln"/>
+  <line x1="25.2" y1="178.9" x2="19.7" y2="176.6" class="ok-ln"/>
+  <line x1="33.9" y1="170.2" x2="31.6" y2="164.7" class="ok-ln"/>
+  <line x1="46.1" y1="170.2" x2="48.4" y2="164.7" class="ok-ln"/>
+  <line x1="54.8" y1="178.9" x2="60.3" y2="176.6" class="ok-ln"/>
+  <text x="68" y="183.0" class="txo b">Verde</text>
+  <text x="68" y="199.0" class="tx2">destellos</text>
+  <line x1="170" y1="166" x2="170" y2="204" class="ln2"/>
+  <line x1="406" y1="166" x2="406" y2="204" class="ln2"/>
+  <text x="180" y="182.0" class="tx">Regrese para aterrizar</text>
+  <text x="180" y="198.0" class="tx2">(autorización después)</text>
+  <text x="416" y="190.0" class="tx">Autorizado a rodar</text>
+  <rect x="8" y="214" width="624" height="50" rx="6" class="soft"/>
+  <circle cx="40" cy="239.0" r="12" class="wa-fill"/>
+  <line x1="54.8" y1="245.1" x2="60.3" y2="247.4" class="wa-ln"/>
+  <line x1="46.1" y1="253.8" x2="48.4" y2="259.3" class="wa-ln"/>
+  <line x1="33.9" y1="253.8" x2="31.6" y2="259.3" class="wa-ln"/>
+  <line x1="25.2" y1="245.1" x2="19.7" y2="247.4" class="wa-ln"/>
+  <line x1="25.2" y1="232.9" x2="19.7" y2="230.6" class="wa-ln"/>
+  <line x1="33.9" y1="224.2" x2="31.6" y2="218.7" class="wa-ln"/>
+  <line x1="46.1" y1="224.2" x2="48.4" y2="218.7" class="wa-ln"/>
+  <line x1="54.8" y1="232.9" x2="60.3" y2="230.6" class="wa-ln"/>
+  <text x="68" y="237.0" class="txw b">Roja</text>
+  <text x="68" y="253.0" class="tx2">destellos</text>
+  <line x1="170" y1="220" x2="170" y2="258" class="ln2"/>
+  <line x1="406" y1="220" x2="406" y2="258" class="ln2"/>
+  <text x="180" y="236.0" class="tx">Aeródromo peligroso:</text>
+  <text x="180" y="252.0" class="tx2">no aterrice</text>
+  <text x="416" y="236.0" class="tx">Apártese del área de</text>
+  <text x="416" y="252.0" class="tx2">aterrizaje en uso</text>
+  <rect x="8" y="268" width="624" height="50" rx="6" class="soft"/>
+  <circle cx="40" cy="293.0" r="12" class="bg-fill"/>
+  <circle cx="40" cy="293.0" r="12" class="ln"/>
+  <line x1="54.8" y1="299.1" x2="60.3" y2="301.4" class="ln"/>
+  <line x1="46.1" y1="307.8" x2="48.4" y2="313.3" class="ln"/>
+  <line x1="33.9" y1="307.8" x2="31.6" y2="313.3" class="ln"/>
+  <line x1="25.2" y1="299.1" x2="19.7" y2="301.4" class="ln"/>
+  <line x1="25.2" y1="286.9" x2="19.7" y2="284.6" class="ln"/>
+  <line x1="33.9" y1="278.2" x2="31.6" y2="272.7" class="ln"/>
+  <line x1="46.1" y1="278.2" x2="48.4" y2="272.7" class="ln"/>
+  <line x1="54.8" y1="286.9" x2="60.3" y2="284.6" class="ln"/>
+  <text x="68" y="291.0" class="tx b">Blanca</text>
+  <text x="68" y="307.0" class="tx2">destellos</text>
+  <line x1="170" y1="274" x2="170" y2="312" class="ln2"/>
+  <line x1="406" y1="274" x2="406" y2="312" class="ln2"/>
+  <text x="180" y="290.0" class="tx">Aterrice y vaya a la plataforma</text>
+  <text x="180" y="306.0" class="tx2">(autorización después)</text>
+  <text x="416" y="290.0" class="tx">Regrese al punto</text>
+  <text x="416" y="306.0" class="tx2">de partida</text>
+  <rect x="8" y="322" width="624" height="50" rx="6" class="soft"/>
+  <polygon points="40.0,332.0 42.3,341.5 50.6,336.4 45.5,344.7 55.0,347.0 45.5,349.3 50.6,357.6 42.3,352.5 40.0,362.0 37.7,352.5 29.4,357.6 34.5,349.3 25.0,347.0 34.5,344.7 29.4,336.4 37.7,341.5" class="wa-fill"/>
+  <text x="68" y="345.0" class="txw b">Pirotecnia</text>
+  <text x="68" y="361.0" class="tx2">roja</text>
+  <line x1="170" y1="328" x2="170" y2="366" class="ln2"/>
+  <line x1="406" y1="328" x2="406" y2="366" class="ln2"/>
+  <text x="180" y="344.0" class="tx">No aterrice por ahora</text>
+  <text x="180" y="360.0" class="tx2">pese a instrucciones anteriores</text>
+  <text x="416" y="352.0" class="tx">—</text>
+  <text x="320" y="390" class="tx b" text-anchor="middle">El verde autoriza · el rojo detiene o niega · el blanco devuelve</text>
+  <text x="320" y="410" class="tx2" text-anchor="middle">Acuse en vuelo: de día, alabear (no en base ni en final); de noche, dos destellos de faros.</text>
+  <text x="320" y="426" class="tx2" text-anchor="middle">Acuse en tierra: de día, mover alerones o timón; de noche, dos destellos de faros.</text>
+</svg>

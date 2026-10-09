@@ -3,6 +3,7 @@ import { StudyBlock } from '../components/StudyBlock'
 import { useStore } from '../store'
 import { Quiz } from '../components/Quiz'
 import { RadioList, RadioTrainer } from '../components/RadioTrainer'
+import { Icon } from '../components/Icon'
 
 export function ModulePage({ m, tab, sid }: { m: Module; tab: string; sid?: string | null }) {
   const s = useStore()
@@ -17,29 +18,23 @@ export function ModulePage({ m, tab, sid }: { m: Module; tab: string; sid?: stri
   const t = tabs.some(x => x[0] === tab) ? tab : subs.length && tab === '' ? 'asignaturas' : 'resumen'
   return (
     <div className="wrap">
-      <div className="ac-head">
-        <div>
-          <a className="back" href="#/licencias">← Recorrido modular</a>
-          <p className="eyebrow">Etapa {m.stage} · {m.status === 'completo' ? 'Guía completa' : 'En progreso'}</p>
-          <h1>{m.name}</h1>
-          <p className="muted">{m.summary}</p>
-        </div>
-      </div>
-      <div className="facts">
-        {m.facts.map(([k, v]) => <div key={k} className="card fact"><span className="muted small">{k}</span><b>{v}</b></div>)}
-      </div>
+      <header className="page-head">
+        <a className="back" href="#/licencias"><Icon name="left" size={14} /> Recorrido modular</a>
+        <p className="crumb">Etapa {m.stage} · {m.status === 'completo' ? 'Guía completa' : 'Requisitos verificados'}</p>
+        <h1>{m.name}</h1>
+        <p className="lead">{m.summary}</p>
+        <dl className="facts-line">{m.facts.map(([k, v]) => <div key={k}><dt>{k}</dt><dd>{v}</dd></div>)}</dl>
+      </header>
       {m.featured?.map(f => (
-        <a key={f.url} className="card featured" href={f.url} target="_blank" rel="noreferrer">
-                    <div><p className="eyebrow">Recurso destacado</p><h3>{f.title} ↗</h3><p className="muted small">{f.text}</p></div>
-        </a>
+        <p key={f.url} className="small"><a href={f.url} target="_blank" rel="noreferrer">{f.title}</a> <span className="muted">· {f.text}</span></p>
       ))}
-      <div className="tabs" role="tablist">
+      <nav className="tabs" role="tablist">
         {tabs.map(([id, name]) => <a key={id} role="tab" aria-selected={t === id} className={t === id ? 'on' : ''} href={`#/licencias/${m.id}?tab=${id}`}>{name}</a>)}
-      </div>
+      </nav>
       {t === 'resumen' && (
-        <div className="study">
-          {m.status !== 'completo' && <div className="card note-card">Esta etapa está en progreso: aquí tienes los requisitos verificados. La guía de estudio completa por asignaturas se añadirá más adelante.</div>}
-          {m.sections.map(b => <StudyBlock key={b.title} b={b} />)}
+        <div className="doc narrow-doc">
+          {m.status !== 'completo' && <div className="notice">Esta etapa está en progreso: aquí tienes los requisitos verificados. La guía de estudio completa por asignaturas se añadirá más adelante.</div>}
+          {m.sections.map(b => <StudyBlock key={b.title} b={b} level={2} />)}
         </div>
       )}
       {t === 'asignaturas' && (

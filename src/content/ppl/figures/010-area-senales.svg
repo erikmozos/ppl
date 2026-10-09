@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 490">
+  <title>Señales visuales en tierra del área de señales: prohibido aterrizar, precauciones especiales, solo pistas y calles, pista cerrada, T de aterrizaje, circuito a la derecha, oficina ATS, planeadores y dirección de despegue (SERA, apéndice 1, 3.2)</title>
+  <defs>
+    <marker id="010-area-senales-flecha" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+  </defs>
+  <rect x="12" y="12" width="148" height="150" rx="8" class="ground"/>
+  <rect x="56.0" y="42" width="60" height="60" class="wa-fill"/>
+  <polygon points="56.0,45 59.0,42 116.0,99 113.0,102" class="bg-fill"/>
+  <polygon points="116.0,45 113.0,42 56.0,99 59.0,102" class="bg-fill"/>
+  <circle cx="30" cy="30" r="11" class="ac"/>
+  <text x="30" y="34.5" class="tx b" text-anchor="middle">A</text>
+  <text x="86.0" y="126" class="tx b" font-size="12" text-anchor="middle">Prohibido aterrizar</text>
+  <text x="86.0" y="141" class="tx2" font-size="12" text-anchor="middle">Rojo con dos diagonales</text>
+  <text x="86.0" y="156" class="tx2" font-size="12" text-anchor="middle">amarillas</text>
+  <rect x="168" y="12" width="148" height="150" rx="8" class="ground"/>
+  <rect x="212.0" y="42" width="60" height="60" class="wa-fill"/>
+  <polygon points="212.0,45 215.0,42 272.0,99 269.0,102" class="bg-fill"/>
+  <circle cx="186" cy="30" r="11" class="ac"/>
+  <text x="186" y="34.5" class="tx b" text-anchor="middle">B</text>
+  <text x="242.0" y="126" class="tx b" font-size="12" text-anchor="middle">Precaución especial</text>
+  <text x="242.0" y="141" class="tx2" font-size="12" text-anchor="middle">Rojo con una diagonal</text>
+  <text x="242.0" y="156" class="tx2" font-size="12" text-anchor="middle">amarilla</text>
+  <rect x="324" y="12" width="148" height="150" rx="8" class="ground"/>
+  <g class="bg-fill"><circle cx="366.0" cy="72" r="14"/><circle cx="430.0" cy="72" r="14"/><rect x="366.0" y="68" width="64" height="8"/></g>
+  <g class="ln"><circle cx="366.0" cy="72" r="14"/><circle cx="430.0" cy="72" r="14"/><rect x="366.0" y="68" width="64" height="8"/></g>
+  <circle cx="342" cy="30" r="11" class="ac"/>
+  <text x="342" y="34.5" class="tx b" text-anchor="middle">C</text>
+  <text x="398.0" y="126" class="tx b" font-size="12" text-anchor="middle">Solo pistas y calles</text>
+  <text x="398.0" y="141" class="tx2" font-size="12" text-anchor="middle">Pesa blanca: aterrizar,</text>
+  <text x="398.0" y="156" class="tx2" font-size="12" text-anchor="middle">despegar y rodar</text>
+  <rect x="480" y="12" width="148" height="150" rx="8" class="ground"/>
+  <g class="bg-fill"><circle cx="522.0" cy="72" r="14"/><circle cx="586.0" cy="72" r="14"/><rect x="522.0" y="68" width="64" height="8"/></g>
+  <g class="ln"><circle cx="522.0" cy="72" r="14"/><circle cx="586.0" cy="72" r="14"/><rect x="522.0" y="68" width="64" height="8"/></g>
+  <rect x="519.5" y="58" width="5" height="28" class="ink-fill"/>
+  <rect x="583.5" y="58" width="5" height="28" class="ink-fill"/>
+  <circle cx="498" cy="30" r="11" class="ac"/>
+  <text x="498" y="34.5" class="tx b" text-anchor="middle">D</text>
+  <text x="554.0" y="126" class="tx b" font-size="12" text-anchor="middle">Despegue y aterrizaje</text>
+  <text x="554.0" y="141" class="tx b" font-size="12" text-anchor="middle">solo en pista</text>
+  <text x="554.0" y="156" class="tx2" font-size="12" text-anchor="middle">Pesa con barras negras</text>
+  <rect x="12" y="170" width="148" height="150" rx="8" class="ground"/>
+  <rect x="30.0" y="204" width="112" height="52" class="soft"/>
+  <line x1="56.0" y1="210" x2="116.0" y2="250" class="ln thick"/>
+  <line x1="116.0" y1="210" x2="56.0" y2="250" class="ln thick"/>
+  <circle cx="30" cy="188" r="11" class="ac"/>
+  <text x="30" y="192.5" class="tx b" text-anchor="middle">E</text>
+  <text x="86.0" y="284" class="tx b" font-size="12" text-anchor="middle">Pista o calle cerrada</text>
+  <text x="86.0" y="299" class="tx2" font-size="12" text-anchor="middle">Cruz blanca (pista)</text>
+  <text x="86.0" y="314" class="tx2" font-size="12" text-anchor="middle">o amarilla (calle)</text>
+  <rect x="168" y="170" width="148" height="150" rx="8" class="ground"/>
+  <g class="bg-fill"><rect x="216.0" y="196" width="52" height="10"/><rect x="237.0" y="206" width="10" height="56"/></g>
+  <g class="ln"><rect x="216.0" y="196" width="52" height="10"/><rect x="237.0" y="206" width="10" height="56"/></g>
+  <line x1="284.0" y1="260" x2="284.0" y2="204" class="ln" marker-end="url(#010-area-senales-flecha)"/>
+  <circle cx="186" cy="188" r="11" class="ac"/>
+  <text x="186" y="192.5" class="tx b" text-anchor="middle">F</text>
+  <text x="242.0" y="284" class="tx b" font-size="12" text-anchor="middle">Sentido de aterrizaje</text>
+  <text x="242.0" y="299" class="tx2" font-size="12" text-anchor="middle">T blanca o naranja:</text>
+  <text x="242.0" y="314" class="tx2" font-size="12" text-anchor="middle">hacia el travesaño</text>
+  <rect x="324" y="170" width="148" height="150" rx="8" class="ground"/>
+  <polygon points="362.0,221 404.0,221 404.0,206 436.0,230 404.0,254 404.0,239 362.0,239" class="wa-fill"/>
+  <circle cx="342" cy="188" r="11" class="ac"/>
+  <text x="342" y="192.5" class="tx b" text-anchor="middle">G</text>
+  <text x="398.0" y="284" class="tx b" font-size="12" text-anchor="middle">Circuito a la derecha</text>
+  <text x="398.0" y="299" class="tx2" font-size="12" text-anchor="middle">Flecha derecha de color</text>
+  <text x="398.0" y="314" class="tx2" font-size="12" text-anchor="middle">llamativo</text>
+  <rect x="480" y="170" width="148" height="150" rx="8" class="ground"/>
+  <rect x="526.0" y="198" width="56" height="64" class="soft"/>
+  <text x="554.0" y="246" class="tx b" font-size="46" text-anchor="middle">C</text>
+  <circle cx="498" cy="188" r="11" class="ac"/>
+  <text x="498" y="192.5" class="tx b" text-anchor="middle">H</text>
+  <text x="554.0" y="284" class="tx b" font-size="12" text-anchor="middle">Oficina ATS (ARO)</text>
+  <text x="554.0" y="299" class="tx2" font-size="12" text-anchor="middle">Letra C negra sobre</text>
+  <text x="554.0" y="314" class="tx2" font-size="12" text-anchor="middle">fondo amarillo</text>
+  <rect x="12" y="328" width="148" height="150" rx="8" class="ground"/>
+  <g class="bg-fill"><rect x="82.0" y="352" width="8" height="72"/><rect x="62.0" y="364" width="48" height="8"/><rect x="62.0" y="386" width="48" height="8"/></g>
+  <g class="ln"><rect x="82.0" y="352" width="8" height="72"/><rect x="62.0" y="364" width="48" height="8"/><rect x="62.0" y="386" width="48" height="8"/></g>
+  <text x="86.0" y="442" class="tx b" font-size="12" text-anchor="middle">Planeadores en vuelo</text>
+  <text x="86.0" y="457" class="tx2" font-size="12" text-anchor="middle">Doble cruz blanca</text>
+  <text x="86.0" y="472" class="tx2" font-size="12" text-anchor="middle">horizontal</text>
+  <rect x="168" y="328" width="148" height="150" rx="8" class="ground"/>
+  <text x="242.0" y="404" class="tx b mono" font-size="48" text-anchor="middle">27</text>
+  <text x="242.0" y="442" class="tx b" font-size="12" text-anchor="middle">Dirección de despegue</text>
+  <text x="242.0" y="457" class="tx2" font-size="12" text-anchor="middle">Decenas de grados</text>
+  <text x="242.0" y="472" class="tx2" font-size="12" text-anchor="middle">magnéticos: 27 = 270°</text>
+  <rect x="324" y="328" width="304" height="150" rx="8" class="soft"/>
+  <text x="340" y="358" class="tx b">Área de señales</text>
+  <text x="340" y="377" class="tx2">Recuadro visible desde el aire, junto a la</text>
+  <text x="340" y="396" class="tx2">torre o a la pista. Las letras A a H son las</text>
+  <text x="340" y="415" class="tx2">de la tabla de la lección. Los dibujos son</text>
+  <text x="340" y="434" class="tx2">esquemas: el color real de cada señal figura</text>
+  <text x="340" y="453" class="tx2">en su etiqueta (rojo, amarillo, blanco…).</text>
+</svg>

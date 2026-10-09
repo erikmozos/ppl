@@ -14,7 +14,6 @@ export function RadioList({ scenarios, base }: { scenarios: RadioScenario[]; bas
     <div className="subject-grid">
       {scenarios.map(sc => (
         <a key={sc.id} className="card subject-card" href={`${base}&s=${sc.id}`}>
-          <span className="subject-icon">{sc.icon}</span>
           <h3>{sc.title}</h3>
           <p className="small muted">{sc.desc}</p>
           <div className="stats"><span><b>{sc.lines.length}</b> mensajes</span><span><b>{sc.lines.filter(l => l.wrong).length}</b> para practicar</span></div>
@@ -38,7 +37,7 @@ export function RadioTrainer({ sc, back, quizKey }: { sc: RadioScenario; back: s
       <div className="ac-head">
         <div>
           <a className="back" href={back}>← Escenarios</a>
-          <h2>{sc.icon} {sc.title}</h2>
+          <h2>{sc.title}</h2>
           <p className="muted small">{sc.desc}</p>
         </div>
       </div>
