@@ -1,0 +1,554 @@
+{
+ "lesson": {
+  "title": "Estabilidad",
+  "summary": "Equilibrio y estabilidad estática y dinámica; estabilidad longitudinal y posición del CG, estabilidad lateral (diedro, ala alta, flecha) y direccional; espiral picada y balanceo holandés.",
+  "objectives": [
+   "Distinguir estabilidad estática y dinámica, positiva, neutra y negativa",
+   "Explicar cómo influyen el CG y la cola en la estabilidad longitudinal",
+   "Describir cómo contribuyen diedro, ala alta y flecha a la estabilidad lateral",
+   "Explicar la estabilidad direccional y su relación con la lateral",
+   "Distinguir espiral divergente y balanceo holandés"
+  ],
+  "sections": [
+   {
+    "title": "Equilibrio y estabilidad",
+    "text": [
+     "Un avión está en **equilibrio** cuando la suma de fuerzas y de momentos sobre él es cero. La **estabilidad** describe qué hace cuando una ráfaga lo saca de ese equilibrio. Se distinguen dos tipos:"
+    ],
+    "bullets": [
+     "**Estabilidad estática:** la tendencia **inicial** del avión tras la perturbación. Positiva: tiende a volver al equilibrio. Neutra: se queda en la nueva posición. Negativa: se aleja más.",
+     "**Estabilidad dinámica:** cómo evoluciona esa respuesta **a lo largo del tiempo**: oscilación amortiguada (estable), mantenida (neutra) o creciente (divergente)."
+    ],
+    "figure": "svg:080-estabilidad",
+    "caption": "Estabilidad estática (arriba) y dinámica (abajo)."
+   },
+   {
+    "title": "Resumen de la relación estática‑dinámica",
+    "text": [
+     "La estabilidad estática positiva es **necesaria pero no suficiente** para la estabilidad dinámica: un avión puede tender a volver al equilibrio y pasarse cada vez más (oscilación divergente). En cambio, un avión estáticamente negativo no puede ser dinámicamente estable. A más estabilidad, el avión es más fácil de volar, pero menos maniobrable: es el compromiso del diseñador, y del piloto cuando carga el avión."
+    ]
+   },
+   {
+    "title": "Estabilidad longitudinal (cabeceo)",
+    "text": [
+     "Es la estabilidad alrededor del eje lateral. Depende de la posición del **CG** respecto al **punto neutro**, que es el centro aerodinámico del conjunto del avión (ala, fuselaje y cola). Si el CG está **delante** del punto neutro, una subida del ángulo de ataque produce un momento de picado que lo corrige: estabilidad positiva. La distancia entre el CG y el punto neutro es el **margen estático**. La **cola** (estabilizador horizontal) es el elemento principal: está lejos del CG y, con su sustentación (normalmente hacia abajo) equilibra el momento del ala y da estabilidad.",
+     "El efecto del CG es el que más preguntan:"
+    ],
+    "table": {
+     "caption": "CG adelantado frente a CG atrasado",
+     "head": [
+      "Aspecto",
+      "CG adelantado",
+      "CG atrasado"
+     ],
+     "rows": [
+      [
+       "Estabilidad longitudinal",
+       "Mayor",
+       "Menor (hasta inestable en el límite trasero)"
+      ],
+      [
+       "Mandos de cabeceo",
+       "Más pesados; cuesta levantar el morro en el redondeo",
+       "Más ligeros; riesgo de sobrecontrol"
+      ],
+      [
+       "Velocidad de pérdida",
+       "Mayor",
+       "Menor"
+      ],
+      [
+       "Alcance y velocidad",
+       "Algo menores (cola con más carga hacia abajo)",
+       "Algo mayores"
+      ],
+      [
+       "Recuperación de pérdida y barrena",
+       "Más fácil",
+       "Más difícil"
+      ]
+     ],
+     "src": "PHAK cap. 5; AFH cap. 3"
+    },
+    "bullets": [
+     "**Fugoide:** oscilación larga (20–60 s) de velocidad y altitud con ángulo de ataque casi constante; está poco amortiguada y es suave. Se controla con la palanca.",
+     "**Oscilación de corto periodo:** cabeceo rápido, muy amortiguado."
+    ]
+   },
+   {
+    "title": "Estabilidad lateral (alabeo)",
+    "text": [
+     "Es la capacidad de recuperar la posición de alas niveladas cuando se produce un alabeo accidental. Un avión alabeado **se desliza hacia el ala baja** (deslizamiento), y el viento relativo llega con componente lateral. Los elementos que ayudan:"
+    ],
+    "bullets": [
+     "**Diedro:** el ala lleva un ángulo hacia arriba. En el deslizamiento, el ala baja recibe el flujo más de frente y aumenta su ángulo de ataque y su sustentación; sube y nivela. Es el elemento principal.",
+     "**Ala alta (efecto quilla):** el fuselaje bajo el ala bloquea el flujo lateral y aumenta el ángulo de ataque del ala baja; por eso un avión de ala alta tiene más estabilidad lateral que uno de ala baja con el mismo diedro, y los de ala baja necesitan más diedro (es lo que verás en el PA-28 frente al C172).",
+     "**Flecha:** el ala baja se presenta más perpendicular al flujo y sustenta más; contribuye a la estabilidad lateral.",
+     "**Ala baja:** la contribución es negativa (inestabilizante) y por eso se compensa con más diedro."
+    ]
+   },
+   {
+    "title": "Estabilidad direccional (guiñada)",
+    "text": [
+     "Es la estabilidad alrededor del eje vertical: el avión tiende a alinearse con el viento relativo, como una **veleta**. El responsable es la **deriva** (estabilizador vertical) y, en menor medida, la flecha y el fuselaje por detrás del CG. Si una racha lo desvía, el viento relativo ataca la deriva lateralmente y el avión gira de nuevo hacia el viento."
+    ]
+   },
+   {
+    "title": "Espiral divergente y balanceo holandés",
+    "text": [
+     "La estabilidad lateral y la direccional están acopladas; el equilibrio entre ambas determina qué modo lento aparece:"
+    ],
+    "bullets": [
+     "**Estabilidad direccional grande y lateral pequeña** → **espiral divergente**: un alabeo accidental se agrava lentamente; el avión baja el morro, aumenta la inclinación y entra en espiral picada. El modo es lento y se corrige con pilotaje.",
+     "**Estabilidad lateral grande y direccional pequeña** → **balanceo holandés (dutch roll):** oscilación acoplada de alabeo y guiñada, típica de alas en flecha y de aviones con mucha estabilidad lateral. Se amortigua con un **amortiguador de guiñada** (yaw damper) en los aviones grandes."
+    ],
+    "note": {
+     "kind": "tip",
+     "text": "Las avionetas se diseñan con ligera espiral divergente y balanceo holandés bien amortiguado, para que el piloto siempre tenga una respuesta suave."
+    }
+   }
+  ],
+  "numbers": [
+   "Estabilidad longitudinal: CG delante del punto neutro (margen estático)",
+   "CG adelantado: más estable, mandos más pesados y Vs mayor",
+   "CG atrasado: menos estable y recuperación más difícil",
+   "Lateral: diedro, ala alta, flecha; ala baja desestabiliza",
+   "Direccional grande y lateral pequeña: espiral. Lateral grande y direccional pequeña: balanceo holandés"
+  ],
+  "traps": [
+   "Estabilidad estática positiva no garantiza estabilidad dinámica.",
+   "CG adelantado: más estabilidad pero también más Vs.",
+   "Espiral picada no es barrena: no hay pérdida y la velocidad aumenta.",
+   "El ala alta aporta estabilidad lateral; el ala baja resta y se compensa con diedro."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "FAA, Airplane Flying Handbook (FAA-H-8083-3C)",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "080.11",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "080.11.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "La estabilidad estática positiva significa que, tras una perturbación, el avión:",
+   "options": [
+    "Se queda en la nueva posición",
+    "Tiende inicialmente a volver a su posición de equilibrio",
+    "Se aleja cada vez más",
+    "Oscila con amplitud constante"
+   ],
+   "correct": 1,
+   "why": "La estática describe la tendencia inicial: positiva si vuelve hacia el equilibrio.",
+   "whyNot": [
+    "Eso es estabilidad neutra.",
+    null,
+    "Eso es estabilidad negativa.",
+    "Eso describe la respuesta dinámica mantenida, no la estática."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.002",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una oscilación que crece con el tiempo corresponde a:",
+   "options": [
+    "Estabilidad estática neutra",
+    "Estabilidad dinámica positiva",
+    "Estabilidad dinámica neutra",
+    "Estabilidad dinámica negativa (divergente)"
+   ],
+   "correct": 3,
+   "why": "Una respuesta que crece con el tiempo es dinámicamente divergente.",
+   "whyNot": [
+    "La estática se refiere a la tendencia inicial, no a su evolución.",
+    "Positiva sería amortiguada.",
+    "Neutra sería amplitud constante.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un avión con estabilidad estática positiva pero dinámicamente divergente:",
+   "options": [
+    "Tiende a volver al equilibrio pero se pasa cada vez más",
+    "No puede existir",
+    "Es siempre fácil de pilotar",
+    "Es estáticamente neutro"
+   ],
+   "correct": 0,
+   "why": "La estática positiva es necesaria pero no suficiente para la dinámica.",
+   "whyNot": [
+    null,
+    "Sí puede existir: la estática positiva no basta para la estabilidad dinámica.",
+    "Será difícil de pilotar si diverge.",
+    "Su estática es positiva."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "La estabilidad longitudinal se refiere al movimiento alrededor del eje:",
+   "options": [
+    "Longitudinal (alabeo)",
+    "Vertical (guiñada)",
+    "Lateral (cabeceo)",
+    "Horizontal de trayectoria"
+   ],
+   "correct": 2,
+   "why": "El cabeceo es el giro alrededor del eje lateral.",
+   "whyNot": [
+    "El alabeo es la estabilidad lateral.",
+    "La guiñada es la direccional.",
+    null,
+    "No existe ese eje."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "Para tener estabilidad longitudinal positiva, el CG debe estar:",
+   "options": [
+    "Detrás del punto neutro",
+    "En el punto neutro",
+    "Delante del punto neutro",
+    "Sobre el borde de ataque"
+   ],
+   "correct": 2,
+   "why": "Delante del punto neutro, un aumento de α produce un momento de picado que recupera.",
+   "whyNot": [
+    "Con el CG detrás del punto neutro el avión sería inestable.",
+    "En el punto neutro sería neutra.",
+    null,
+    "El borde de ataque no es una referencia."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "Con un CG adelantado, el avión:",
+   "options": [
+    "Es más estable pero necesita más fuerza en la palanca",
+    "Es menos estable y más ágil",
+    "Tiene menor velocidad de pérdida",
+    "Recupera peor de una pérdida"
+   ],
+   "correct": 0,
+   "why": "Más distancia hasta el punto neutro da más estabilidad y mandos más pesados, y la cola carga más hacia abajo, con Vs mayor.",
+   "whyNot": [
+    null,
+    "Esos son los efectos de un CG atrasado.",
+    "Aumenta la velocidad de pérdida.",
+    "Con CG adelantado la recuperación de pérdida es más fácil, no más difícil."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "El mayor riesgo de un CG atrasado respecto a los límites es:",
+   "options": [
+    "Aumentar excesivamente la velocidad de pérdida",
+    "Hacer mandos muy pesados",
+    "Hacer imposible el despegue",
+    "Reducir la estabilidad longitudinal y dificultar la recuperación de pérdida o barrena"
+   ],
+   "correct": 3,
+   "why": "Con el CG atrasado el margen estático se reduce y los mandos se hacen ligeros.",
+   "whyNot": [
+    "Con CG atrasado la Vs baja.",
+    "Con CG atrasado los mandos son más ligeros, no más pesados.",
+    "El despegue es posible, pero con riesgo.",
+    null
+   ],
+   "ref": "AFH cap. 3"
+  },
+  {
+   "id": "080.11.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "La fugoide es:",
+   "options": [
+    "Una oscilación rápida de cabeceo muy amortiguada",
+    "Una oscilación lenta de velocidad y altitud con ángulo de ataque casi constante",
+    "Una oscilación de alabeo y guiñada",
+    "Una pérdida de sustentación"
+   ],
+   "correct": 1,
+   "why": "El periodo de la fugoide es de decenas de segundos.",
+   "whyNot": [
+    "Esa es la oscilación de corto periodo.",
+    null,
+    "Eso es el balanceo holandés.",
+    "No es una pérdida."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.009",
+   "type": "concepto",
+   "level": 1,
+   "q": "El elemento que más aporta a la estabilidad lateral de un ala es:",
+   "options": [
+    "El diedro",
+    "La deriva",
+    "El estabilizador horizontal",
+    "El timón de dirección"
+   ],
+   "correct": 0,
+   "why": "Con el diedro, el ala baja aumenta su ángulo de ataque en el deslizamiento y recupera.",
+   "whyNot": [
+    null,
+    "La deriva da estabilidad direccional.",
+    "El estabilizador es longitudinal.",
+    "El timón es un mando, no un elemento de estabilidad."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "A igual diedro, un avión de ala alta respecto a uno de ala baja tiene:",
+   "options": [
+    "Menor estabilidad lateral",
+    "La misma",
+    "Mayor estabilidad lateral",
+    "Mayor estabilidad direccional siempre"
+   ],
+   "correct": 2,
+   "why": "El fuselaje bajo el ala (efecto quilla) favorece que el ala baja aumente su ángulo de ataque.",
+   "whyNot": [
+    "El ala alta aumenta la estabilidad lateral, no la reduce.",
+    "La estabilidad lateral no es igual: el ala alta aporta efecto quilla.",
+    null,
+    "El efecto es lateral, no direccional."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "La estabilidad direccional se debe sobre todo a:",
+   "options": [
+    "El diedro",
+    "La deriva (estabilizador vertical)",
+    "El estabilizador horizontal",
+    "Los flaps"
+   ],
+   "correct": 1,
+   "why": "La deriva actúa como una veleta que alinea el avión con el viento relativo.",
+   "whyNot": [
+    "El diedro actúa en el alabeo.",
+    null,
+    "El estabilizador horizontal actúa en cabeceo.",
+    "Los flaps no estabilizan."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "Mucha estabilidad direccional y poca estabilidad lateral tienden a producir:",
+   "options": [
+    "Balanceo holandés",
+    "Pérdida profunda",
+    "Fugoide",
+    "Espiral divergente"
+   ],
+   "correct": 3,
+   "why": "Un alabeo accidental se agrava lentamente hasta una espiral picada.",
+   "whyNot": [
+    "Es lo contrario: poca direccional y mucha lateral.",
+    "La pérdida profunda es de cola en T.",
+    "La fugoide es longitudinal.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.013",
+   "type": "concepto",
+   "level": 2,
+   "q": "Mucha estabilidad lateral y poca direccional tienden a producir:",
+   "options": [
+    "Espiral divergente",
+    "Barrena plana",
+    "Fugoide",
+    "Balanceo holandés"
+   ],
+   "correct": 3,
+   "why": "Se origina una oscilación acoplada de alabeo y guiñada.",
+   "whyNot": [
+    "Eso ocurre con direccional grande.",
+    "La barrena es una pérdida con autorrotación.",
+    "La fugoide es longitudinal.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.014",
+   "type": "concepto",
+   "level": 2,
+   "q": "El amortiguador de guiñada (yaw damper) se usa principalmente para:",
+   "options": [
+    "Corregir la pérdida",
+    "Amortiguar el balanceo holandés",
+    "Compensar la hélice",
+    "Mover el CG"
+   ],
+   "correct": 1,
+   "why": "Genera mandos automáticos de timón que frenan la oscilación.",
+   "whyNot": [
+    "No actúa sobre la pérdida.",
+    null,
+    "La hélice no interviene.",
+    "El CG se mueve con la carga."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.015",
+   "type": "concepto",
+   "level": 3,
+   "q": "En un avión de ala baja, su posición respecto a la estabilidad lateral es:",
+   "options": [
+    "Más estabilizadora que el ala alta",
+    "Neutra siempre",
+    "Menos estabilizadora, por lo que suele llevar más diedro",
+    "Solo importa para la estabilidad direccional"
+   ],
+   "correct": 2,
+   "why": "El ala baja resta estabilidad lateral y se compensa con más diedro.",
+   "whyNot": [
+    "El ala baja resta estabilidad lateral respecto al ala alta, no suma.",
+    "El efecto del ala baja no es neutro: desestabiliza.",
+    null,
+    "La posición del ala afecta sobre todo a la estabilidad lateral."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.016",
+   "type": "concepto",
+   "level": 2,
+   "q": "La flecha del ala contribuye a la estabilidad:",
+   "options": [
+    "Lateral",
+    "Solo longitudinal",
+    "Solo en tierra",
+    "Ninguna"
+   ],
+   "correct": 0,
+   "why": "En el deslizamiento el ala baja se presenta más perpendicular al flujo y sustenta más.",
+   "whyNot": [
+    null,
+    "No afecta solo a la longitudinal.",
+    "Actúa en vuelo.",
+    "Contribuye de forma apreciable."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.017",
+   "type": "concepto",
+   "level": 2,
+   "q": "La distancia entre el CG y el punto neutro se denomina:",
+   "options": [
+    "Brazo de palanca",
+    "Margen estático",
+    "Momento de picado",
+    "Cuerda media aerodinámica"
+   ],
+   "correct": 1,
+   "why": "A mayor margen estático, mayor estabilidad longitudinal.",
+   "whyNot": [
+    "El brazo es otra medida.",
+    null,
+    "El momento de picado es un efecto.",
+    "La cuerda media es una referencia."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.11.018",
+   "type": "lectura",
+   "level": 2,
+   "q": "Según la figura, una oscilación que mantiene su amplitud con el tiempo es:",
+   "figure": "svg:080-estabilidad",
+   "options": [
+    "Dinámicamente estable",
+    "Dinámicamente divergente",
+    "Estáticamente negativa",
+    "Dinámicamente neutra"
+   ],
+   "correct": 3,
+   "why": "La amplitud constante corresponde a la estabilidad dinámica neutra.",
+   "whyNot": [
+    "Estable es amortiguada.",
+    "Divergente es creciente.",
+    "La estática negativa es otra cosa.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.080.11.01",
+   "front": "Estática positiva y dinámica",
+   "back": "La estática (tendencia inicial) es necesaria pero no suficiente para la dinámica (evolución en el tiempo)"
+  },
+  {
+   "id": "c.080.11.02",
+   "front": "CG adelantado frente a atrasado",
+   "back": "Adelantado: más estable, mandos pesados, Vs mayor. Atrasado: menos estable, Vs menor y peor recuperación"
+  },
+  {
+   "id": "c.080.11.03",
+   "front": "Direccional grande y lateral pequeña",
+   "back": "Espiral divergente"
+  },
+  {
+   "id": "c.080.11.04",
+   "front": "Lateral grande y direccional pequeña",
+   "back": "Balanceo holandés (dutch roll)"
+  }
+ ]
+}

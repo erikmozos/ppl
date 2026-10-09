@@ -1,0 +1,327 @@
+{
+ "lesson": {
+  "title": "Magnetismo",
+  "summary": "El campo magnético terrestre, sus componentes y la inclinación, el cambio anual de la variación, el magnetismo del propio avión y las limitaciones de la brújula magnética.",
+  "objectives": [
+   "Describir el campo magnético terrestre y sus polos",
+   "Distinguir la componente horizontal, la vertical y la inclinación",
+   "Explicar por qué la brújula pierde fiabilidad cerca de los polos magnéticos",
+   "Entender el cambio anual de la variación",
+   "Explicar el desvío producido por el magnetismo del avión y su compensación"
+  ],
+  "sections": [
+   {
+    "title": "El campo magnético terrestre",
+    "text": [
+     "La Tierra se comporta como un enorme imán con dos polos magnéticos cerca de los polos geográficos, pero no en ellos. Las líneas de fuerza salen del hemisferio sur, rodean el planeta y entran por el hemisferio norte. Una aguja imantada libre se alinea con esas líneas, y en la brújula se orienta hacia el **polo norte magnético**, que hoy está en el Ártico canadiense y se desplaza hacia Siberia a decenas de kilómetros por año.",
+     "Los polos magnéticos **no coinciden con los geográficos** y tampoco son antípodas exactos entre sí. Esa diferencia es la causa de que exista variación, y de que varíe de un lugar a otro. El campo cambia además de forma lenta pero continua por los movimientos del núcleo terrestre, y por eso hay que sustituir las cartas cada pocos años."
+    ]
+   },
+   {
+    "title": "Componentes: horizontal, vertical e inclinación",
+    "text": [
+     "En cada punto, el campo total (F) puede descomponerse en una **componente horizontal (H)** y una **componente vertical (Z)**. La brújula solo usa la **horizontal**, que es la que orienta la aguja hacia el norte magnético. La vertical tira de la aguja hacia abajo; por eso las agujas se equilibran con contrapesos, y las brújulas se fabrican para una zona magnética concreta.",
+     "La **inclinación magnética** (dip) es el ángulo que forman las líneas de fuerza con la horizontal. Es **0° en el ecuador magnético** (donde el campo es horizontal; la línea de inclinación cero se llama **aclínica**) y llega a **90° en los polos magnéticos**, donde las líneas son verticales. Las **isóclinas** son líneas de igual inclinación. Cuanto mayor es la inclinación, menor es la componente horizontal y la brújula se vuelve perezosa e imprecisa. Cerca de los polos magnéticos es **inservible**."
+    ],
+    "bullets": [
+     "Componente horizontal H: orienta la brújula; máxima en el ecuador magnético y nula en los polos.",
+     "Componente vertical Z: nula en el ecuador magnético y máxima en los polos.",
+     "Inclinación 0° en el ecuador magnético y 90° en los polos magnéticos.",
+     "Isógonas: igual variación. Isóclinas: igual inclinación. Aclínica: inclinación cero."
+    ]
+   },
+   {
+    "title": "Cambio de la variación",
+    "text": [
+     "La variación cambia con el tiempo, por la deriva de los polos magnéticos. Este **cambio anual** (variación secular) suele ser de unos pocos minutos de arco o décimas de grado al año en Europa, y la carta lo indica junto con la fecha de la variación. Por eso hay que usar cartas vigentes y nunca confiar en la variación del año pasado. También hay variaciones pequeñas **diarias** debidas a la actividad solar y variaciones locales causadas por rocas con hierro (anomalías magnéticas), que las isógonas no recogen."
+    ],
+    "examples": [
+     {
+      "q": "Una carta indica variación 2° W en 2020, cambio anual 0,1° E. ¿Variación en 2030?",
+      "a": "10 años × 0,1° = 1° hacia el este: la variación pasa de 2° W a 1° W."
+     }
+    ]
+   },
+   {
+    "title": "Magnetismo del propio avión",
+    "text": [
+     "El avión tiene masas de hierro y acero, circuitos con corriente, motores y radios que crean campos magnéticos locales. Se clasifican en **hierro duro**, con magnetismo permanente (por ejemplo el motor o piezas imantadas), y **hierro blando**, que se magnetiza por inducción con el campo terrestre y cambia con el rumbo. El efecto total sobre la brújula es el **desvío**, que varía con el rumbo y es distinto en cada avión.",
+     "Para reducirlo, la brújula se **compensa** en un lugar libre de interferencias, mediante imanes pequeños que contrarrestan los campos locales; los desvíos que quedan se anotan en la **tarjeta de desvíos**, que debe estar visible en cabina. Cualquier cambio en el panel, nuevos equipos o cables, o un móvil o unos auriculares con imanes junto a la brújula pueden cambiar el desvío, así que hay que mantenerlos alejados."
+    ]
+   },
+   {
+    "title": "Límites de la brújula",
+    "text": [
+     "La brújula de líquido es sencilla y no depende de energía, pero solo es fiable en **vuelo recto y nivelado, a velocidad constante y sin turbulencia**. Con la inclinación magnética, la aguja tiende a inclinarse en los virajes y en las aceleraciones, y da lecturas erróneas. Por eso el direccional se usa para gobernar y se contrasta con la brújula **cada 10 a 15 minutos en vuelo recto y nivelado**."
+    ],
+    "note": {
+     "kind": "warn",
+     "text": "Sobre latitudes muy altas, cerca del polo norte magnético, la brújula magnética deja de ser utilizable. No es un tema de vuelo VFR en España, pero sí de examen."
+    }
+   }
+  ],
+  "numbers": [
+   "Inclinación 0° en el ecuador magnético y 90° en los polos magnéticos",
+   "La brújula usa la componente horizontal del campo",
+   "Isóclinas: igual inclinación; aclínica: inclinación 0",
+   "La variación cambia cada año: usar cartas vigentes",
+   "El desvío depende del rumbo y del avión"
+  ],
+  "traps": [
+   "Los polos magnéticos no coinciden con los geográficos.",
+   "La componente horizontal disminuye hacia los polos: la brújula se vuelve menos fiable allí.",
+   "Isógona (variación) no es isóclina (inclinación).",
+   "Un móvil junto a la brújula puede cambiar el desvío."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 8 y 16",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "NOAA / BGS, World Magnetic Model (cambio anual de la variación)"
+   }
+  ],
+  "id": "060.04",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "060.04.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "La componente del campo magnético terrestre que orienta la brújula es:",
+   "options": [
+    "La inclinación",
+    "La horizontal",
+    "La vertical",
+    "La total en vertical"
+   ],
+   "correct": 1,
+   "why": "La aguja se alinea con la componente horizontal del campo, que apunta al norte magnético.",
+   "whyNot": [
+    "La inclinación es un ángulo, no una componente.",
+    null,
+    "La vertical tira de la aguja hacia abajo.",
+    "No existe tal componente."
+   ],
+   "ref": "FAA PHAK cap. 8"
+  },
+  {
+   "id": "060.04.002",
+   "type": "regla",
+   "level": 1,
+   "q": "La inclinación magnética es:",
+   "options": [
+    "90° en todo el planeta",
+    "0° en todo el planeta",
+    "0° en el ecuador magnético y 90° en los polos magnéticos",
+    "90° en el ecuador y 0° en los polos"
+   ],
+   "correct": 2,
+   "why": "La inclinación es 0° en el ecuador magnético (campo horizontal) y 90° en los polos (campo vertical).",
+   "whyNot": [
+    "No es constante.",
+    "No es nula en todos los sitios.",
+    null,
+    "Está invertida."
+   ],
+   "ref": "FAA PHAK cap. 8"
+  },
+  {
+   "id": "060.04.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "La brújula magnética pierde fiabilidad al acercarse a los polos magnéticos porque:",
+   "options": [
+    "La inclinación disminuye",
+    "La componente vertical disminuye",
+    "La componente horizontal del campo disminuye",
+    "La variación es cero"
+   ],
+   "correct": 2,
+   "why": "Cerca de los polos la inclinación es grande y la componente horizontal, la que orienta la aguja, es muy débil.",
+   "whyNot": [
+    "La inclinación aumenta.",
+    "La componente vertical aumenta, no disminuye.",
+    null,
+    "La variación no es cero necesariamente."
+   ],
+   "ref": "FAA PHAK cap. 8"
+  },
+  {
+   "id": "060.04.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "Las isóclinas son líneas que unen puntos de igual:",
+   "options": [
+    "Inclinación magnética",
+    "Desvío",
+    "Intensidad horizontal",
+    "Variación magnética"
+   ],
+   "correct": 0,
+   "why": "Las isóclinas unen puntos con la misma inclinación; la aclínica es la de inclinación cero.",
+   "whyNot": [
+    null,
+    "El desvío no depende del lugar.",
+    "No es su definición.",
+    "Eso son las isógonas."
+   ],
+   "ref": "FAA PHAK cap. 8"
+  },
+  {
+   "id": "060.04.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "El cambio anual de la variación se debe a:",
+   "options": [
+    "El desvío de la brújula",
+    "El desplazamiento lento de los polos magnéticos",
+    "La rotación de la Tierra",
+    "Los cambios de rumbo del avión"
+   ],
+   "correct": 1,
+   "why": "El campo magnético terrestre cambia de forma lenta; los polos se desplazan y la variación de cada lugar cambia con los años.",
+   "whyNot": [
+    "El desvío es un efecto del avión.",
+    null,
+    "La rotación no cambia la variación.",
+    "El rumbo no afecta a la variación."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.04.006",
+   "type": "calculo",
+   "level": 2,
+   "q": "Una carta indica variación 2° W en 2020 y un cambio anual de 0,1° hacia el este. La variación en 2030 será:",
+   "options": [
+    "1° W",
+    "3° W",
+    "2° W",
+    "1° E"
+   ],
+   "correct": 0,
+   "why": "En 10 años el cambio es 1° hacia el este: 2° W − 1° = 1° W.",
+   "whyNot": [
+    null,
+    "Suma el cambio en el sentido contrario.",
+    "No tiene en cuenta el cambio.",
+    "Correspondería a un cambio de 3° hacia el este."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.04.007",
+   "type": "concepto",
+   "level": 1,
+   "q": "El desvío de la brújula de un avión se debe a:",
+   "options": [
+    "Los campos magnéticos del propio avión",
+    "La variación magnética",
+    "El viento",
+    "La inclinación del campo terrestre"
+   ],
+   "correct": 0,
+   "why": "Los motores, circuitos eléctricos y masas de hierro del avión crean campos locales que desvían la aguja.",
+   "whyNot": [
+    null,
+    "La variación depende del lugar, no del avión.",
+    "El viento no actúa sobre la brújula.",
+    "La inclinación no produce desvío por sí sola."
+   ],
+   "ref": "FAA PHAK cap. 8"
+  },
+  {
+   "id": "060.04.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "La tarjeta de desvíos de la brújula se elabora:",
+   "options": [
+    "Una sola vez en la fábrica, sin repetirse",
+    "Con la variación indicada en la carta",
+    "Calculando el desvío con el viento",
+    "Compensando la brújula en una zona libre de interferencias y anotando los desvíos residuales"
+   ],
+   "correct": 3,
+   "why": "Al compensar con el avión orientado a distintos rumbos se anotan los desvíos residuales, y esa es la tarjeta.",
+   "whyNot": [
+    "Debe renovarse con cada cambio importante de equipos.",
+    "La variación es independiente del desvío.",
+    "El viento no interviene.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 8"
+  },
+  {
+   "id": "060.04.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "La brújula de un avión solo da una indicación fiable en:",
+   "options": [
+    "Aceleraciones fuertes",
+    "Turbulencia fuerte",
+    "Cualquier viraje",
+    "Vuelo recto y nivelado con velocidad constante"
+   ],
+   "correct": 3,
+   "why": "Por la inclinación magnética, la aguja tiene errores en virajes y aceleraciones; solo es fiable recta y nivelada.",
+   "whyNot": [
+    "Las aceleraciones producen errores.",
+    "La turbulencia hace oscilar la aguja.",
+    "En los virajes aparecen errores por la inclinación.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 8"
+  },
+  {
+   "id": "060.04.010",
+   "type": "concepto",
+   "level": 1,
+   "q": "Un teléfono móvil colocado junto a la brújula puede:",
+   "options": [
+    "Cambiar la variación de la zona",
+    "Cambiar su desvío",
+    "No tener efecto",
+    "Cambiar la inclinación magnética terrestre"
+   ],
+   "correct": 1,
+   "why": "Los imanes y circuitos cercanos crean campos que perturban la aguja: es una fuente de desvío.",
+   "whyNot": [
+    "La variación no depende de objetos locales.",
+    null,
+    "Un imán o un equipo electrónico sí puede afectar a la aguja.",
+    "La inclinación es un fenómeno terrestre."
+   ],
+   "ref": "FAA PHAK cap. 8"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.060.04.01",
+   "front": "Componente que usa la brújula",
+   "back": "La componente horizontal del campo magnético"
+  },
+  {
+   "id": "c.060.04.02",
+   "front": "Inclinación magnética",
+   "back": "0° en el ecuador magnético y 90° en los polos"
+  },
+  {
+   "id": "c.060.04.03",
+   "front": "Isógona, isóclina, aclínica, agónica",
+   "back": "Igual variación; igual inclinación; inclinación cero; variación cero"
+  },
+  {
+   "id": "c.060.04.04",
+   "front": "Cambio anual de la variación",
+   "back": "Por el desplazamiento de los polos magnéticos; usar cartas vigentes"
+  },
+  {
+   "id": "c.060.04.05",
+   "front": "Desvío",
+   "back": "Efecto del magnetismo del avión; se compensa y se anota en la tarjeta"
+  }
+ ]
+}

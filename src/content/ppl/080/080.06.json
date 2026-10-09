@@ -1,0 +1,440 @@
+{
+ "lesson": {
+  "title": "Flujo 3D",
+  "summary": "Flujo en envergadura, torbellinos de punta, downwash y ángulo de ataque inducido, resistencia inducida y efecto del alargamiento, winglets y estela turbulenta.",
+  "objectives": [
+   "Explicar cómo nace el flujo en envergadura y los torbellinos de punta",
+   "Describir el downwash y el ángulo de ataque inducido",
+   "Relacionar la resistencia inducida con CL, el alargamiento y la velocidad",
+   "Reconocer los factores que intensifican la estela turbulenta",
+   "Explicar el efecto de los winglets"
+  ],
+  "sections": [
+   {
+    "title": "Del flujo bidimensional al ala real",
+    "text": [
+     "Un ala de envergadura finita tiene extradós a baja presión e intradós a alta presión, y en las puntas ambas zonas se comunican. El aire del intradós tiende a **escaparse hacia la punta y subir al extradós**. El resultado es un flujo en envergadura: en el intradós las líneas de corriente se inclinan **hacia fuera** y en el extradós, **hacia dentro**.",
+     "Cuando las dos corrientes se encuentran en el borde de salida, forman láminas de torbellinos que se enrollan en un par de torbellinos concentrados, uno por cada punta de ala. Son los **torbellinos de punta**."
+    ],
+    "figure": "svg:080-torbellinos",
+    "caption": "Flujo en envergadura, torbellinos de punta, downwash entre ellos y upwash por fuera."
+   },
+   {
+    "title": "Torbellinos de punta, downwash y ángulo de ataque inducido",
+    "text": [
+     "Vistos desde detrás del avión, el torbellino de la punta derecha gira en sentido **antihorario** y el de la punta izquierda en sentido **horario**: el aire sube por **fuera** de las puntas (upwash) y baja **entre** los torbellinos (downwash), detrás de la envergadura. Es el mismo downwash que ya conoces como reacción de Newton, y es más fuerte cuanto más sustenta el ala.",
+     "Ese aire que desciende hace que el flujo que llega al ala no sea horizontal: el viento relativo **efectivo** viene ligeramente desde arriba. El ángulo entre el viento relativo real y el efectivo es el **ángulo de ataque inducido**. Como la sustentación es perpendicular al viento relativo efectivo, la resultante se inclina hacia atrás, y esa componente hacia atrás es la **resistencia inducida**. Es el precio de generar sustentación con un ala finita."
+    ]
+   },
+   {
+    "title": "Resistencia inducida",
+    "text": [
+     "La resistencia inducida crece con la sustentación que genera el ala: depende de **CL²**. Y decrece con el **alargamiento**: un ala larga y estrecha desvía poco aire una distancia grande hacia abajo, un ala corta y ancha desvía mucho aire una distancia corta. Con un reparto de sustentación elíptico y una eficiencia e = 1, es mínima; en las alas reales e ronda 0,7–0,9.",
+     "En vuelo nivelado, CL depende de la velocidad (a menos velocidad, más ángulo de ataque y más CL), por lo que la resistencia inducida **disminuye con V²**: es máxima a velocidad baja con ángulo de ataque alto (despegue, ascenso y pérdida), y pequeña en crucero. Con el doble de velocidad, la resistencia inducida es la cuarta parte."
+    ],
+    "formulas": [
+     {
+      "f": "CDi = CL² / (π · AR · e)",
+      "note": "AR alargamiento; e eficiencia de Oswald (0,7–0,9 en alas reales)."
+     },
+     {
+      "f": "Di ∝ 1 / V² (vuelo nivelado, masa constante)",
+      "note": "La parásita, en cambio, crece con V²."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Un ala con AR = 7,3 y e = 0,8 vuela con CL = 1,0. ¿Cuánto vale CDi?",
+      "a": "CDi = 1² / (π × 7,3 × 0,8) = 1 / 18,35 ≈ 0,054."
+     },
+     {
+      "q": "Con ese ala, la velocidad se reduce hasta que CL pasa de 1,0 a 1,4. ¿Por cuánto se multiplica CDi?",
+      "a": "CDi ∝ CL²: 1,4² = 1,96, casi el doble."
+     },
+     {
+      "q": "Una resistencia inducida de 400 N a 60 kt. ¿Cuánto vale a 120 kt en el mismo vuelo nivelado y con la misma masa?",
+      "a": "Di ∝ 1/V²: al doble de velocidad, un cuarto: 400 / 4 = 100 N."
+     }
+    ]
+   },
+   {
+    "title": "Cómo reducir la resistencia inducida",
+    "bullets": [
+     "**Alargamiento mayor:** alas más largas y estrechas (veleros).",
+     "**Winglets y placas de extremo:** dificultan que el aire pase de abajo a arriba por la punta y debilitan los torbellinos. Reducen la resistencia inducida sobre todo con CL alto (ascenso, baja velocidad).",
+     "**Alas elípticas o con buen reparto de sustentación:** e más cercano a 1.",
+     "**Menos CL:** volar más rápido en la fase de ascenso reduce la inducida (aunque aumenta la parásita).",
+     "**Efecto suelo:** cerca del suelo, el suelo limita el downwash y reduce la inducida (se ve en 080.07)."
+    ]
+   },
+   {
+    "title": "La estela turbulenta",
+    "text": [
+     "Los torbellinos de punta que dejas atrás constituyen la **estela turbulenta**. Su intensidad es proporcional al peso del avión que la genera e inversamente proporcional a la velocidad y a la envergadura: es máxima en un avión **pesado, lento y con configuración limpia** (flaps retraídos), justo en el despegue y en la aproximación, cuando CL es alto. Los torbellinos se hunden del orden de 300–500 ft/min y se estabilizan unos 900 ft por debajo de la trayectoria; con viento flojo pueden persistir minutos y derivar con el viento. Las separaciones y precauciones están en el bloque 070.07."
+    ],
+    "note": {
+     "kind": "warn",
+     "text": "Un avión ligero que vuela detrás de uno pesado por debajo de su trayectoria puede sufrir balanceos que superan la capacidad de los alerones. Evita la trayectoria del avión anterior y mantén la separación."
+    }
+   }
+  ],
+  "numbers": [
+   "Torbellino de punta derecha: antihorario visto desde atrás; izquierda: horario",
+   "Resistencia inducida ∝ CL² y ∝ 1/V² en nivelado",
+   "CDi = CL² / (π · AR · e)",
+   "Estela máxima: avión pesado, limpio y lento",
+   "Torbellinos: se hunden 300–500 ft/min y se estabilizan ≈ 900 ft por debajo"
+  ],
+  "traps": [
+   "La resistencia inducida baja con la velocidad al cuadrado: a más velocidad, menos inducida.",
+   "Los winglets reducen la inducida, no la parásita (de hecho, añaden algo de parásita).",
+   "El downwash está entre los torbellinos; el upwash, por fuera de las puntas.",
+   "La estela es peor en configuración limpia, no con flaps."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "FAA, Aeronautical Information Manual (AIM), 7-4: Wake turbulence",
+    "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_4.html"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "080.06",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "080.06.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "El flujo en envergadura de un ala real en vuelo normal se dirige:",
+   "options": [
+    "Hacia la raíz en el intradós y hacia la punta en el extradós",
+    "Hacia la punta en el intradós y hacia la raíz en el extradós",
+    "Hacia la punta en ambas superficies",
+    "Hacia la raíz en ambas superficies"
+   ],
+   "correct": 1,
+   "why": "El aire a mayor presión del intradós se escapa hacia la punta y sube al extradós, de menor presión.",
+   "whyNot": [
+    "Es el sentido contrario al real.",
+    null,
+    "En el extradós el flujo se dirige hacia dentro.",
+    "En el intradós el flujo se dirige hacia fuera."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.06.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "Los torbellinos de punta se originan por:",
+   "options": [
+    "La rotación de la hélice",
+    "La vibración del ala",
+    "La turbulencia del motor",
+    "La diferencia de presión entre el intradós y el extradós en las puntas"
+   ],
+   "correct": 3,
+   "why": "Al comunicarse la zona de alta presión con la de baja en la punta, el aire se enrolla en un torbellino.",
+   "whyNot": [
+    "La hélice genera su propia estela, que no es la de punta.",
+    "La vibración no causa torbellinos.",
+    "La turbulencia del motor no forma el par de torbellinos.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.06.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "Vistos desde detrás del avión, los torbellinos de punta giran:",
+   "options": [
+    "El derecho en sentido antihorario y el izquierdo en horario",
+    "Ambos en sentido horario",
+    "El derecho en sentido horario y el izquierdo en antihorario",
+    "Ambos en sentido antihorario"
+   ],
+   "correct": 0,
+   "why": "El aire sube por fuera de las puntas y baja entre los torbellinos.",
+   "whyNot": [
+    null,
+    "Girarían entonces en el mismo sentido, algo que no ocurre.",
+    "Es el sentido contrario al real.",
+    "Girarían entonces en el mismo sentido, algo que no ocurre."
+   ],
+   "ref": "AIM 7-4"
+  },
+  {
+   "id": "080.06.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "El downwash producido por un ala:",
+   "options": [
+    "Se produce fuera de las puntas del ala",
+    "Es independiente de la sustentación",
+    "Se produce entre los torbellinos de punta y aumenta con la sustentación",
+    "Solo existe con flaps extendidos"
+   ],
+   "correct": 2,
+   "why": "Es la reacción al empuje hacia abajo que el ala da al aire; a más sustentación, más downwash.",
+   "whyNot": [
+    "Fuera de las puntas el aire sube (upwash).",
+    "Aumenta con la sustentación.",
+    null,
+    "Existe siempre que haya sustentación."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.06.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "El ángulo de ataque inducido aparece porque:",
+   "options": [
+    "El ala está torsionada",
+    "La hélice desvía el flujo",
+    "El downwash inclina el viento relativo efectivo hacia abajo",
+    "El calaje disminuye hacia la punta"
+   ],
+   "correct": 2,
+   "why": "El viento relativo efectivo llega algo desde arriba y la resultante se inclina hacia atrás.",
+   "whyNot": [
+    "La torsión es un fenómeno distinto, de calaje.",
+    "La hélice no interviene en este fenómeno.",
+    null,
+    "El calaje es estructural y no produce ángulo inducido."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.06.006",
+   "type": "concepto",
+   "level": 1,
+   "q": "La resistencia inducida:",
+   "options": [
+    "Es consecuencia de generar sustentación con un ala de envergadura finita",
+    "Depende solo del rozamiento superficial",
+    "Es mayor en crucero rápido",
+    "No existe con flaps abajo"
+   ],
+   "correct": 0,
+   "why": "Se debe a la inclinación hacia atrás de la resultante por el downwash.",
+   "whyNot": [
+    null,
+    "Eso es resistencia parásita (fricción).",
+    "Es mayor a baja velocidad y alto CL.",
+    "Existe siempre que haya sustentación."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.06.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "Al aumentar el alargamiento de un ala (misma superficie y mismo CL), la resistencia inducida:",
+   "options": [
+    "Aumenta",
+    "No cambia",
+    "Se duplica siempre",
+    "Disminuye"
+   ],
+   "correct": 3,
+   "why": "CDi = CL²/(π·AR·e): con más AR, menos CDi.",
+   "whyNot": [
+    "Es lo contrario: más AR implica menos CDi.",
+    "Depende inversamente del alargamiento.",
+    "No sigue ninguna regla fija de duplicación.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.06.008",
+   "type": "calculo",
+   "level": 2,
+   "q": "Si el CL de un ala pasa de 0,6 a 1,2 (el doble), la resistencia inducida por coeficiente:",
+   "options": [
+    "Se duplica",
+    "Se multiplica por cuatro",
+    "Se mantiene",
+    "Se reduce a la mitad"
+   ],
+   "correct": 1,
+   "why": "El coeficiente inducido es proporcional a CL²: al duplicar CL, 2² = 4 veces mayor.",
+   "whyNot": [
+    "Sería así si dependiera linealmente de CL.",
+    null,
+    "CDi depende de CL, por lo que cambia.",
+    "La resistencia inducida crece con CL²; no puede reducirse al duplicar CL."
+   ],
+   "ref": "CDi = CL²/(π·AR·e)"
+  },
+  {
+   "id": "080.06.009",
+   "type": "calculo",
+   "level": 2,
+   "q": "En vuelo nivelado, la resistencia inducida es de 400 N a 60 kt. A 120 kt (misma masa) será:",
+   "options": [
+    "100 N",
+    "200 N",
+    "800 N",
+    "1600 N"
+   ],
+   "correct": 0,
+   "why": "Di ∝ 1/V²: al duplicar V, queda a la cuarta parte: 400/4 = 100 N.",
+   "whyNot": [
+    null,
+    "Sería la mitad: relación 1/V, que no es la correcta.",
+    "Sería el doble: signo de la relación invertido.",
+    "Sería cuatro veces: crece con V², que es lo propio de la parásita."
+   ],
+   "ref": "Di ∝ 1/V²"
+  },
+  {
+   "id": "080.06.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿En qué fase del vuelo la resistencia inducida es mayor en proporción?",
+   "options": [
+    "En crucero rápido",
+    "En un picado",
+    "Con velocidad baja y ángulo de ataque alto (despegue y ascenso)",
+    "En descenso con motor al ralentí a alta velocidad"
+   ],
+   "correct": 2,
+   "why": "Con poca velocidad hace falta mucho CL, y la inducida crece con CL².",
+   "whyNot": [
+    "En crucero rápido predomina la parásita.",
+    "En picado, la velocidad alta reduce la inducida.",
+    null,
+    "A alta velocidad, el CL es bajo."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.06.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "Los winglets:",
+   "options": [
+    "Eliminan la resistencia parásita",
+    "Reducen los torbellinos de punta y con ello la resistencia inducida",
+    "Aumentan el CLmax de forma notable",
+    "Reducen la superficie mojada"
+   ],
+   "correct": 1,
+   "why": "Dificultan el paso de aire de abajo a arriba por la punta y debilitan los torbellinos.",
+   "whyNot": [
+    "No actúan sobre la parásita; incluso añaden algo.",
+    null,
+    "El CLmax cambia poco.",
+    "Añaden superficie mojada."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.06.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "La estela turbulenta de un avión es más intensa cuando este es:",
+   "options": [
+    "Ligero, rápido y con flaps",
+    "Pesado, rápido y con flaps",
+    "Ligero, lento y con tren fuera",
+    "Pesado, lento y con configuración limpia"
+   ],
+   "correct": 3,
+   "why": "A mayor peso y menor velocidad, mayor CL y torbellinos más intensos; los flaps los debilitan algo.",
+   "whyNot": [
+    "Los torbellinos son menos intensos con poco peso y alta velocidad.",
+    "El peso aumenta la estela, pero la alta velocidad la reduce.",
+    "Peso bajo reduce la estela.",
+    null
+   ],
+   "ref": "AIM 7-4"
+  },
+  {
+   "id": "080.06.013",
+   "type": "concepto",
+   "level": 3,
+   "q": "Los torbellinos de estela, una vez generados, tienden a:",
+   "options": [
+    "Elevarse sobre la trayectoria",
+    "Quedarse en el mismo nivel del avión",
+    "Desaparecer al instante",
+    "Hundirse y separarse lateralmente con el viento en calma"
+   ],
+   "correct": 3,
+   "why": "Se hunden a unos 300–500 ft/min hasta unos 900 ft por debajo de la trayectoria.",
+   "whyNot": [
+    "Descienden, no ascienden.",
+    "El par se hunde con el tiempo.",
+    "Pueden persistir minutos.",
+    null
+   ],
+   "ref": "AIM 7-4"
+  },
+  {
+   "id": "080.06.014",
+   "type": "lectura",
+   "level": 2,
+   "q": "En la figura de torbellinos, ¿dónde está el downwash?",
+   "figure": "svg:080-torbellinos",
+   "options": [
+    "Fuera de las puntas de las alas",
+    "Entre los dos torbellinos, detrás del ala",
+    "Delante del borde de ataque",
+    "Solo en la raíz del ala"
+   ],
+   "correct": 1,
+   "why": "El aire baja entre los torbellinos y sube por fuera de las puntas.",
+   "whyNot": [
+    "Fuera de las puntas está el upwash.",
+    null,
+    "Delante del ala el aire sube (upwash).",
+    "El downwash se extiende a lo largo de la envergadura."
+   ],
+   "ref": "PHAK cap. 5"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.080.06.01",
+   "front": "Resistencia inducida: factores",
+   "back": "Crece con CL², baja con el alargamiento y, en nivelado, con V² (∝ 1/V²)"
+  },
+  {
+   "id": "c.080.06.02",
+   "front": "Sentido de giro de los torbellinos de punta",
+   "back": "Derecho antihorario, izquierdo horario (visto desde atrás)"
+  },
+  {
+   "id": "c.080.06.03",
+   "front": "Winglets",
+   "back": "Reducen la resistencia inducida al debilitar los torbellinos de punta"
+  },
+  {
+   "id": "c.080.06.04",
+   "front": "Estela turbulenta máxima",
+   "back": "Avión pesado, lento y limpio (flaps arriba)"
+  }
+ ]
+}

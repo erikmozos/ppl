@@ -1,0 +1,337 @@
+{
+  "lesson": {
+    "id": "020.05",
+    "title": "Antihielo",
+    "summary": "Calefacción del pitot y del parabrisas, otros sistemas antihielo y deshielo, el hielo estructural y por qué un PA-28 o un C172 no están certificados para volar en hielo conocido; calefacción de cabina y riesgo de monóxido de carbono.",
+    "objectives": [
+      "Explicar para qué sirve la calefacción del pitot y cómo se comprueba",
+      "Distinguir sistemas antihielo y de deshielo, y conocer los más habituales",
+      "Describir los efectos del hielo estructural y los tipos de hielo",
+      "Entender qué significa que un avión no esté certificado para volar en hielo conocido y qué hacer si se forma hielo",
+      "Reconocer el riesgo del monóxido de carbono de la calefacción de cabina"
+    ],
+    "sections": [
+      {
+        "title": "Hielo en el avión: por qué importa",
+        "text": [
+          "El hielo se forma cuando el avión vuela entre **gotas de agua sobreenfriadas** (líquidas por debajo de 0 °C) que se congelan al chocar con la superficie. Ocurre con más frecuencia en nubes, lluvia o niebla con temperaturas entre 0 y −20 °C aproximadamente. En un avión ligero sin protección, el hielo es una de las amenazas más serias del vuelo.",
+          "Sus efectos se acumulan: **cambia el perfil** de las alas y la cola, **reduce la sustentación** y **aumenta la resistencia**; aumenta el **peso**; sube la **velocidad de pérdida** y baja el ángulo de ataque crítico; en la **hélice**, desequilibra y reduce el empuje; en el **pitot y las tomas estáticas**, falsea o anula las indicaciones; en el **parabrisas**, quita visibilidad; en el **carburador**, causa pérdida de potencia (020.11). Además, un avión con hielo puede entrar en pérdida con una velocidad mayor y sin avisos."
+        ],
+        "bullets": [
+          "**Hielo escarcha (rime)**: opaco y blanquecino, de gotas pequeñas que se congelan al instante; se adhiere al borde de ataque.",
+          "**Hielo claro (clear)**: transparente y liso, de gotas grandes que se extienden antes de congelarse; es más peligroso, pesado y difícil de quitar.",
+          "**Hielo mixto**: mezcla de ambos."
+        ]
+      },
+      {
+        "title": "Calefacción del pitot",
+        "text": [
+          "El **tubo de pitot** lleva una **resistencia eléctrica** en su interior que lo calienta para evitar que el hielo cierre la toma y deje el anemómetro sin indicación (020.19). El mando está en el panel, con su disyuntor, y se activa con **humedad visible** y temperatura próxima o inferior a 0 °C. En el PA-28-161 hay un interruptor «PITOT HEAT» y en el C172S un interruptor similar.",
+          "En tierra se usa poco tiempo: sin el flujo de aire, la resistencia se calienta mucho y puede dañarse o quemar al que la toque. En el prevuelo se comprueba que funciona, con el máster conectado y el interruptor activado, a través de la lectura del amperímetro (una pequeña descarga) o con un toque rápido y cuidadoso del tubo, según indique el POH. Algunos aviones llevan una luz de aviso de fallo de la calefacción."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Sistemas antihielo y deshielo",
+        "text": [
+          "Un sistema **antihielo** evita que el hielo se forme; uno de **deshielo** lo elimina una vez formado. En aviones grandes y en algunos ligeros certificados para hielo hay:"
+        ],
+        "table": {
+          "caption": "Sistemas de protección contra el hielo",
+          "head": [
+            "Sistema",
+            "Tipo",
+            "Cómo actúa"
+          ],
+          "rows": [
+            [
+              "Calefacción del pitot y de las tomas estáticas",
+              "Antihielo",
+              "Resistencia eléctrica en el tubo"
+            ],
+            [
+              "Calefacción del parabrisas",
+              "Antihielo",
+              "Resistencia eléctrica en una capa conductora, o aire caliente"
+            ],
+            [
+              "Botas neumáticas",
+              "Deshielo",
+              "Se inflan en el borde de ataque y rompen el hielo"
+            ],
+            [
+              "Bordes de ataque calentados (aire caliente o resistencias)",
+              "Antihielo o deshielo",
+              "Evitan o funden el hielo"
+            ],
+            [
+              "Líquido antihielo (TKS)",
+              "Antihielo y deshielo",
+              "Un líquido sale por poros del borde de ataque y de la hélice"
+            ],
+            [
+              "Hélice con resistencias o líquido",
+              "Antihielo",
+              "Evita el hielo en las palas"
+            ],
+            [
+              "Calefacción del carburador",
+              "Antihielo",
+              "Aire caliente en la toma del carburador (020.11)"
+            ]
+          ],
+          "src": "PHAK cap. 6"
+        }
+      },
+      {
+        "title": "Aviones no certificados para hielo",
+        "text": [
+          "Un avión se certifica para volar en **hielo conocido** solo si lleva un sistema que protege la célula, la hélice y los instrumentos y se ha demostrado en vuelo. El PA-28-161 Warrior III y el C172S **no están certificados para volar en condiciones de hielo conocido**: tienen solo calefacción del pitot y del carburador, con aviso en el POH que prohíbe volar en esas condiciones. Con hielo sin protección, la única defensa es **evitar las condiciones**.",
+          "En la planificación, se consulta la **temperatura y la humedad** de las nubes: las condiciones más peligrosas son nubes de espesor con temperatura entre 0 y −20 °C. Si pese a todo se forma hielo, el procedimiento general es salir de la zona cuanto antes, **cambiando de altitud** hacia una capa más cálida o fuera de las nubes, o dando la vuelta; **no confiar en el aviso de pérdida**, volar más rápido que de costumbre, evitar maniobras bruscas, activar la calefacción del pitot y del carburador, y avisar a ATC si es necesario."
+        ],
+        "note": {
+          "kind": "warn",
+          "text": "Un avión ligero sin protección que entra en hielo no puede mantenerlo mucho tiempo. La decisión se toma al primer indicio, no cuando ya hay mucho."
+        }
+      },
+      {
+        "title": "Calefacción de cabina y monóxido de carbono",
+        "text": [
+          "En los aviones ligeros, la calefacción de cabina y el desempañado del parabrisas usan aire que se calienta al pasar por un **manguito** alrededor del **escape**. Si el escape tiene una grieta, pueden entrar gases en la cabina, con **monóxido de carbono (CO)**, un gas inodoro e incoloro que causa dolor de cabeza, mareo y somnolencia y que, sin aviso, puede hacer perder el conocimiento.",
+          "Se instala un **detector de CO** (un disco que cambia de color o un sensor electrónico). Si hay sospecha de CO (síntomas o detector), se **cierra la calefacción**, se **abre la ventilación** y se aterriza lo antes posible. En el prevuelo se inspecciona el escape y el manguito en busca de grietas y holguras."
+        ]
+      }
+    ],
+    "numbers": [
+      "Hielo en nubes, lluvia o niebla entre 0 y −20 °C aproximadamente",
+      "PA-28-161 y C172S: no certificados para hielo conocido; solo pitot y carburador (PA-28) calefactados",
+      "Rime (opaco) frente a hielo claro (transparente y más peligroso)",
+      "Pitot: poco tiempo en tierra para no dañarlo; comprobar en el prevuelo",
+      "CO: gas inodoro; cerrar calefacción, ventilar y aterrizar"
+    ],
+    "traps": [
+      "Creer que la calefacción del pitot resuelve el hielo estructural: solo protege el pitot.",
+      "Mantener la calefacción del pitot encendida mucho tiempo en tierra: se daña.",
+      "Fiarse del aviso de pérdida con hielo: la pérdida aparece a mayor velocidad.",
+      "Pensar que el hielo claro es menos peligroso por ser transparente: es peor.",
+      "Olvidar que la calefacción de cabina puede introducir CO."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 6 y cap. 12",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Manual de vuelo del PA-28-161 y del C172S: limitaciones",
+        "url": "https://www.piper.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Prevuelo del PA-28: pitot",
+        "href": "#/ac/pa28/flow/preflight"
+      },
+      {
+        "label": "Prevuelo del C172: pitot",
+        "href": "#/ac/c172/flow/preflight"
+      },
+      {
+        "label": "Cabina del PA-28 (calefacción del carburador)",
+        "href": "#/ac/pa28"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.05.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La calefacción del pitot sirve para:",
+      "options": [
+        "Calentar la cabina",
+        "Calentar el carburador",
+        "Evitar que el hielo cierre la toma del pitot",
+        "Fundir hielo de las alas"
+      ],
+      "correct": 2,
+      "why": "Una resistencia eléctrica evita que el hielo obstruya el pitot y deje sin lectura al anemómetro.",
+      "whyNot": [
+        "La cabina se calienta con otro sistema.",
+        "El carburador tiene su propia calefacción.",
+        null,
+        "No protege las alas."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.05.002",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuándo se conecta la calefacción del pitot?",
+      "options": [
+        "Con humedad visible y temperaturas próximas o inferiores a 0 °C",
+        "Siempre, desde el arranque",
+        "Solo de noche",
+        "Solo en tierra"
+      ],
+      "correct": 0,
+      "why": "Se conecta cuando hay riesgo de hielo: humedad visible y temperatura cercana a 0 °C o menos.",
+      "whyNot": [
+        null,
+        "En tierra sin flujo se calienta en exceso.",
+        "No depende de la hora del día.",
+        "En tierra solo se comprueba brevemente."
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "020.05.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un sistema de deshielo (de-icing) es el que:",
+      "options": [
+        "Evita que se forme hielo",
+        "Elimina el hielo ya formado",
+        "Calienta la cabina",
+        "Mide la temperatura exterior"
+      ],
+      "correct": 1,
+      "why": "El deshielo quita el hielo una vez formado, como las botas neumáticas; el antihielo lo previene.",
+      "whyNot": [
+        "Eso es el antihielo (anti-icing).",
+        null,
+        "No es un sistema de cabina.",
+        "No es un sensor."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.05.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "El hielo claro (clear ice) se distingue del rime porque es:",
+      "options": [
+        "Opaco y blanco",
+        "Solo propio de la hélice",
+        "Más fácil de quitar",
+        "Transparente, liso y pesado"
+      ],
+      "correct": 3,
+      "why": "El hielo claro se forma con gotas grandes que se extienden antes de congelarse: transparente, liso, pesado y difícil de eliminar.",
+      "whyNot": [
+        "Eso es el rime.",
+        "Se forma en toda la superficie.",
+        "Es más difícil de eliminar.",
+        null
+      ],
+      "ref": "PHAK cap. 12"
+    },
+    {
+      "id": "020.05.005",
+      "type": "concepto",
+      "level": 1,
+      "q": "El PA-28-161 Warrior III y el C172S:",
+      "options": [
+        "No están certificados para volar en hielo conocido",
+        "Están certificados para hielo conocido",
+        "Tienen botas neumáticas",
+        "Llevan líquido TKS"
+      ],
+      "correct": 0,
+      "why": "Sus POH prohíben volar en condiciones de hielo conocido: solo se evita.",
+      "whyNot": [
+        null,
+        "No lo están.",
+        "No llevan botas.",
+        "No llevan TKS."
+      ],
+      "ref": "POH PA-28-161 y C172S"
+    },
+    {
+      "id": "020.05.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "Efecto del hielo estructural en el ala:",
+      "options": [
+        "Aumenta la sustentación",
+        "Reduce la sustentación, aumenta la resistencia y sube la velocidad de pérdida",
+        "No afecta a la pérdida",
+        "Reduce el peso"
+      ],
+      "correct": 1,
+      "why": "Cambia el perfil: menos sustentación, más resistencia y peso, y mayor velocidad de pérdida.",
+      "whyNot": [
+        "Sucede lo contrario.",
+        null,
+        "Sí afecta: la velocidad de pérdida aumenta.",
+        "Añade peso."
+      ],
+      "ref": "PHAK cap. 12"
+    },
+    {
+      "id": "020.05.007",
+      "type": "regla",
+      "level": 2,
+      "q": "Si el avión empieza a acumular hielo en vuelo, lo más correcto es:",
+      "options": [
+        "Seguir y confiar en el aviso de pérdida",
+        "Reducir velocidad al máximo",
+        "Salir de las condiciones cambiando de altitud o de rumbo",
+        "Subir los flaps"
+      ],
+      "correct": 2,
+      "why": "Hay que salir cuanto antes: cambiar de altitud a una capa más cálida o fuera de la nube, o dar la vuelta. No conviene reducir la velocidad.",
+      "whyNot": [
+        "El aviso de pérdida es poco fiable con hielo.",
+        "Con hielo la velocidad de pérdida aumenta.",
+        null,
+        "No es la medida correcta."
+      ],
+      "ref": "PHAK cap. 12"
+    },
+    {
+      "id": "020.05.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "En la calefacción de cabina de un avión ligero, el principal riesgo es:",
+      "options": [
+        "Que se enfríe el motor",
+        "Hielo en la cabina",
+        "Un exceso de humedad",
+        "La entrada de monóxido de carbono por un escape agrietado"
+      ],
+      "correct": 3,
+      "why": "El aire de calefacción pasa por un manguito del escape: una grieta puede introducir CO, inodoro y peligroso.",
+      "whyNot": [
+        "La calefacción de cabina no enfría el motor.",
+        "No se forma hielo por ello.",
+        "No es un riesgo principal.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.05.01",
+      "front": "Calefacción del pitot",
+      "back": "Resistencia eléctrica contra el hielo en la toma; poco tiempo en tierra"
+    },
+    {
+      "id": "c.020.05.02",
+      "front": "Antihielo y deshielo",
+      "back": "Antihielo evita que se forme; deshielo lo elimina una vez formado"
+    },
+    {
+      "id": "c.020.05.03",
+      "front": "Hielo claro frente a rime",
+      "back": "Claro: transparente, pesado y más peligroso. Rime: opaco y blanquecino"
+    },
+    {
+      "id": "c.020.05.04",
+      "front": "PA-28 y C172S ante hielo",
+      "back": "No certificados para hielo conocido: evitarlo"
+    }
+  ]
+}

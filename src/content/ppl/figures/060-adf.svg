@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <title>Indicador de marcación relativa (RBI) e indicador radiomagnético (RMI): rumbo magnético 040 y marcación relativa 060, QDM 100</title>
+  <defs><marker id="060-adf-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker></defs>
+  <circle cx="170" cy="150" r="96" class="soft"/>
+  <line x1="170.0" y1="54.0" x2="170.0" y2="64.0" class="ln2"/>
+  <line x1="186.7" y1="55.5" x2="185.8" y2="60.4" class="ln2"/>
+  <line x1="202.8" y1="59.8" x2="201.1" y2="64.5" class="ln2"/>
+  <line x1="218.0" y1="66.9" x2="213.0" y2="75.5" class="ln2"/>
+  <line x1="231.7" y1="76.5" x2="228.5" y2="80.3" class="ln2"/>
+  <line x1="243.5" y1="88.3" x2="239.7" y2="91.5" class="ln2"/>
+  <line x1="253.1" y1="102.0" x2="244.5" y2="107.0" class="ln2"/>
+  <line x1="260.2" y1="117.2" x2="255.5" y2="118.9" class="ln2"/>
+  <line x1="264.5" y1="133.3" x2="259.6" y2="134.2" class="ln2"/>
+  <line x1="266.0" y1="150.0" x2="256.0" y2="150.0" class="ln2"/>
+  <line x1="264.5" y1="166.7" x2="259.6" y2="165.8" class="ln2"/>
+  <line x1="260.2" y1="182.8" x2="255.5" y2="181.1" class="ln2"/>
+  <line x1="253.1" y1="198.0" x2="244.5" y2="193.0" class="ln2"/>
+  <line x1="243.5" y1="211.7" x2="239.7" y2="208.5" class="ln2"/>
+  <line x1="231.7" y1="223.5" x2="228.5" y2="219.7" class="ln2"/>
+  <line x1="218.0" y1="233.1" x2="213.0" y2="224.5" class="ln2"/>
+  <line x1="202.8" y1="240.2" x2="201.1" y2="235.5" class="ln2"/>
+  <line x1="186.7" y1="244.5" x2="185.8" y2="239.6" class="ln2"/>
+  <line x1="170.0" y1="246.0" x2="170.0" y2="236.0" class="ln2"/>
+  <line x1="153.3" y1="244.5" x2="154.2" y2="239.6" class="ln2"/>
+  <line x1="137.2" y1="240.2" x2="138.9" y2="235.5" class="ln2"/>
+  <line x1="122.0" y1="233.1" x2="127.0" y2="224.5" class="ln2"/>
+  <line x1="108.3" y1="223.5" x2="111.5" y2="219.7" class="ln2"/>
+  <line x1="96.5" y1="211.7" x2="100.3" y2="208.5" class="ln2"/>
+  <line x1="86.9" y1="198.0" x2="95.5" y2="193.0" class="ln2"/>
+  <line x1="79.8" y1="182.8" x2="84.5" y2="181.1" class="ln2"/>
+  <line x1="75.5" y1="166.7" x2="80.4" y2="165.8" class="ln2"/>
+  <line x1="74.0" y1="150.0" x2="84.0" y2="150.0" class="ln2"/>
+  <line x1="75.5" y1="133.3" x2="80.4" y2="134.2" class="ln2"/>
+  <line x1="79.8" y1="117.2" x2="84.5" y2="118.9" class="ln2"/>
+  <line x1="86.9" y1="102.0" x2="95.5" y2="107.0" class="ln2"/>
+  <line x1="96.5" y1="88.3" x2="100.3" y2="91.5" class="ln2"/>
+  <line x1="108.3" y1="76.5" x2="111.5" y2="80.3" class="ln2"/>
+  <line x1="122.0" y1="66.9" x2="127.0" y2="75.5" class="ln2"/>
+  <line x1="137.2" y1="59.8" x2="138.9" y2="64.5" class="ln2"/>
+  <line x1="153.3" y1="55.5" x2="154.2" y2="60.4" class="ln2"/>
+  <text x="170.0" y="82.0" class="tx b" text-anchor="middle">0</text>
+  <text x="242.0" y="154.0" class="tx b" text-anchor="middle">90</text>
+  <text x="170.0" y="226.0" class="tx b" text-anchor="middle">180</text>
+  <text x="98.0" y="154.0" class="tx b" text-anchor="middle">270</text>
+  <line x1="93.8" y1="194.0" x2="246.2" y2="106.0" class="wa-ln thick" marker-end="url(#060-adf-f)"/>
+  <path d="M170 136 L177 158 L170 153 L163 158 Z" class="ink-fill"/>
+  <path d="M164 46 L176 46 L170 56 Z" class="ac-fill"/>
+  <text x="170" y="268" class="tx b" text-anchor="middle">RBI: tarjeta fija</text>
+  <circle cx="470" cy="150" r="96" class="soft"/>
+  <line x1="408.3" y1="76.5" x2="414.7" y2="84.1" class="ln2"/>
+  <line x1="422.0" y1="66.9" x2="424.5" y2="71.2" class="ln2"/>
+  <line x1="437.2" y1="59.8" x2="438.9" y2="64.5" class="ln2"/>
+  <line x1="453.3" y1="55.5" x2="455.1" y2="65.3" class="ln2"/>
+  <line x1="470.0" y1="54.0" x2="470.0" y2="59.0" class="ln2"/>
+  <line x1="486.7" y1="55.5" x2="485.8" y2="60.4" class="ln2"/>
+  <line x1="502.8" y1="59.8" x2="499.4" y2="69.2" class="ln2"/>
+  <line x1="518.0" y1="66.9" x2="515.5" y2="71.2" class="ln2"/>
+  <line x1="531.7" y1="76.5" x2="528.5" y2="80.3" class="ln2"/>
+  <line x1="543.5" y1="88.3" x2="535.9" y2="94.7" class="ln2"/>
+  <line x1="553.1" y1="102.0" x2="548.8" y2="104.5" class="ln2"/>
+  <line x1="560.2" y1="117.2" x2="555.5" y2="118.9" class="ln2"/>
+  <line x1="564.5" y1="133.3" x2="554.7" y2="135.1" class="ln2"/>
+  <line x1="566.0" y1="150.0" x2="561.0" y2="150.0" class="ln2"/>
+  <line x1="564.5" y1="166.7" x2="559.6" y2="165.8" class="ln2"/>
+  <line x1="560.2" y1="182.8" x2="550.8" y2="179.4" class="ln2"/>
+  <line x1="553.1" y1="198.0" x2="548.8" y2="195.5" class="ln2"/>
+  <line x1="543.5" y1="211.7" x2="539.7" y2="208.5" class="ln2"/>
+  <line x1="531.7" y1="223.5" x2="525.3" y2="215.9" class="ln2"/>
+  <line x1="518.0" y1="233.1" x2="515.5" y2="228.8" class="ln2"/>
+  <line x1="502.8" y1="240.2" x2="501.1" y2="235.5" class="ln2"/>
+  <line x1="486.7" y1="244.5" x2="484.9" y2="234.7" class="ln2"/>
+  <line x1="470.0" y1="246.0" x2="470.0" y2="241.0" class="ln2"/>
+  <line x1="453.3" y1="244.5" x2="454.2" y2="239.6" class="ln2"/>
+  <line x1="437.2" y1="240.2" x2="440.6" y2="230.8" class="ln2"/>
+  <line x1="422.0" y1="233.1" x2="424.5" y2="228.8" class="ln2"/>
+  <line x1="408.3" y1="223.5" x2="411.5" y2="219.7" class="ln2"/>
+  <line x1="396.5" y1="211.7" x2="404.1" y2="205.3" class="ln2"/>
+  <line x1="386.9" y1="198.0" x2="391.2" y2="195.5" class="ln2"/>
+  <line x1="379.8" y1="182.8" x2="384.5" y2="181.1" class="ln2"/>
+  <line x1="375.5" y1="166.7" x2="385.3" y2="164.9" class="ln2"/>
+  <line x1="374.0" y1="150.0" x2="379.0" y2="150.0" class="ln2"/>
+  <line x1="375.5" y1="133.3" x2="380.4" y2="134.2" class="ln2"/>
+  <line x1="379.8" y1="117.2" x2="389.2" y2="120.6" class="ln2"/>
+  <line x1="386.9" y1="102.0" x2="391.2" y2="104.5" class="ln2"/>
+  <line x1="396.5" y1="88.3" x2="400.3" y2="91.5" class="ln2"/>
+  <text x="423.7" y="98.8" class="tx b" text-anchor="middle">N</text>
+  <text x="525.2" y="107.7" class="tx b" text-anchor="middle">E</text>
+  <text x="516.3" y="209.2" class="tx b" text-anchor="middle">S</text>
+  <text x="414.8" y="200.3" class="tx b" text-anchor="middle">W</text>
+  <line x1="393.8" y1="194.0" x2="546.2" y2="106.0" class="wa-ln thick" marker-end="url(#060-adf-f)"/>
+  <path d="M470 136 L477 158 L470 153 L463 158 Z" class="ink-fill"/>
+  <path d="M464 46 L476 46 L470 56 Z" class="ac-fill"/>
+  <text x="470" y="268" class="tx b" text-anchor="middle">RMI: tarjeta con el rumbo</text>
+  <text x="170" y="296" class="tx" text-anchor="middle">Marcación relativa 060°</text>
+  <text x="170" y="314" class="tx2" text-anchor="middle">QDM = rumbo 040° + 060° = 100°</text>
+  <text x="470" y="296" class="tx" text-anchor="middle">Punta: QDM 100°; cola: QDR 280°</text>
+  <text x="470" y="314" class="tx2" text-anchor="middle">El RMI da el QDM sin calcular</text>
+  <text x="320" y="346" class="tx2" text-anchor="middle">Mismo avión: rumbo magnético 040°, NDB a la derecha</text>
+</svg>

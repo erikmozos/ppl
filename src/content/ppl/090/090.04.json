@@ -1,0 +1,610 @@
+{
+  "lesson": {
+    "id": "090.04",
+    "title": "Palabras y frases normalizadas",
+    "summary": "La lista de palabras normalizadas en español y en inglés y cuándo se usa cada una: ACUSE RECIBO, AFIRMO, NEGATIVO, RECIBIDO, CUMPLIRÉ, ESPERE, IMPOSIBLE, REPITA, CORRECCIÓN, IGNORE y otras, con sus trampas.",
+    "objectives": [
+      "Conocer la palabra normalizada y su equivalente inglés para las situaciones habituales",
+      "Distinguir RECIBIDO, CUMPLIRÉ y ACUSE RECIBO",
+      "Evitar términos no normalizados como «afirmativo», «repeat» u «OK»",
+      "Reconocer las particularidades españolas «SUBA» y «REINCORPORAR»"
+    ],
+    "sections": [
+      {
+        "title": "Por qué hay palabras normalizadas",
+        "text": [
+          "Una palabra normalizada tiene **un único significado** para todos los pilotos y controladores del mundo. Esto reduce los malentendidos, sobre todo cuando se habla un idioma que no es el propio. Los términos como «OK», «afirmativo», «sí» o «repeat» no son fraseología OACI: cada uno puede entenderse de varias maneras.",
+          "Aprende la lista como pares español-inglés y fíjate en el **momento** en el que se usa cada palabra, que es lo que se pregunta."
+        ]
+      },
+      {
+        "title": "La lista completa",
+        "table": {
+          "caption": "Palabras y frases normalizadas",
+          "head": [
+            "Español",
+            "Inglés",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "ACUSE RECIBO",
+              "ACKNOWLEDGE",
+              "Indique que ha recibido y entendido este mensaje"
+            ],
+            [
+              "AFIRMO",
+              "AFFIRM",
+              "Sí"
+            ],
+            [
+              "APROBADO",
+              "APPROVED",
+              "Autorización concedida para lo solicitado"
+            ],
+            [
+              "ANULE",
+              "CANCEL",
+              "Anule la autorización transmitida anteriormente"
+            ],
+            [
+              "VERIFIQUE",
+              "CHECK",
+              "Examine un sistema o procedimiento"
+            ],
+            [
+              "AUTORIZADO",
+              "CLEARED",
+              "Autorizado a proceder en las condiciones especificadas"
+            ],
+            [
+              "CONFIRME",
+              "CONFIRM",
+              "¿He recibido correctamente…? / ¿Recibió usted…?"
+            ],
+            [
+              "CONTACTE",
+              "CONTACT",
+              "Establezca comunicación con…"
+            ],
+            [
+              "CORRECTO",
+              "CORRECT",
+              "Lo que ha dicho es correcto"
+            ],
+            [
+              "CORRECCIÓN",
+              "CORRECTION",
+              "Me he equivocado; lo correcto es…"
+            ],
+            [
+              "IGNORE",
+              "DISREGARD",
+              "Considere ese mensaje como no enviado"
+            ],
+            [
+              "¿CÓMO ME RECIBE?",
+              "HOW DO YOU READ",
+              "¿Cuál es la legibilidad de mi transmisión?"
+            ],
+            [
+              "REPITO",
+              "I SAY AGAIN",
+              "Repito para aclarar o recalcar"
+            ],
+            [
+              "MANTENGA",
+              "MAINTAIN",
+              "Continúe según las condiciones indicadas"
+            ],
+            [
+              "ESCUCHE",
+              "MONITOR",
+              "Escuche en (frecuencia)"
+            ],
+            [
+              "NEGATIVO",
+              "NEGATIVE",
+              "No / permiso no concedido / no es correcto"
+            ],
+            [
+              "CAMBIO",
+              "OVER",
+              "Terminé mi transmisión y espero respuesta"
+            ],
+            [
+              "FIN",
+              "OUT",
+              "Terminó el intercambio y no espero respuesta"
+            ],
+            [
+              "COLACIONE",
+              "READ BACK",
+              "Repítame este mensaje tal como lo ha recibido"
+            ],
+            [
+              "NOTIFIQUE",
+              "REPORT",
+              "Comuníqueme la siguiente información"
+            ],
+            [
+              "SOLICITO",
+              "REQUEST",
+              "Desearía saber / desearía obtener"
+            ],
+            [
+              "RECIBIDO",
+              "ROGER",
+              "He recibido toda su última transmisión"
+            ],
+            [
+              "REPITA",
+              "SAY AGAIN",
+              "Repita todo o la parte siguiente"
+            ],
+            [
+              "HABLE MÁS DESPACIO",
+              "SPEAK SLOWER",
+              "Reduzca la velocidad de transmisión"
+            ],
+            [
+              "ESPERE",
+              "STANDBY",
+              "Espere y le llamaré"
+            ],
+            [
+              "IMPOSIBLE",
+              "UNABLE",
+              "No puedo cumplir la solicitud o instrucción"
+            ],
+            [
+              "CUMPLIRÉ",
+              "WILCO",
+              "He comprendido su mensaje y lo cumpliré"
+            ]
+          ],
+          "src": "Anexo 10, vol. II; SERA.14"
+        }
+      },
+      {
+        "title": "Las que se confunden",
+        "bullets": [
+          "**RECIBIDO (ROGER)** solo dice «he recibido toda su transmisión». **No es un «sí»** y **no sirve para colacionar**. Si el controlador te da una instrucción que se colaciona, no basta con «recibido».",
+          "**CUMPLIRÉ (WILCO)** significa «he entendido y lo cumpliré». Incluye el «recibido». Se usa con las instrucciones que no se colacionan, como «notifique en final».",
+          "**ACUSE RECIBO (ACKNOWLEDGE)** pide una respuesta de que se ha entendido; se contesta con la colación o con «cumpliré».",
+          "**AFIRMO (AFFIRM)** es «sí». No se dice «afirmativo» ni «affirmative». **NEGATIVO (NEGATIVE)** es «no».",
+          "**ESPERE (STANDBY)**: el que llama volverá a llamar; si no lo hace, vuelve a llamar tú.",
+          "**IMPOSIBLE (UNABLE)**: no puedes cumplir. Puedes añadir la razón.",
+          "**CORRECCIÓN** se usa cuando te equivocas; **IGNORE** anula todo el mensaje anterior.",
+          "**REPITA (SAY AGAIN)**: en inglés, nunca «repeat», que en la artillería significa «dispara de nuevo»."
+        ]
+      },
+      {
+        "title": "Particularidades de la fraseología española",
+        "text": [
+          "En el AIP España GEN 1.7 se fijan algunas expresiones propias del español, por ejemplo «**SUBA**» (en lugar de «ascienda») y «**REINCORPORAR**» (en lugar de «reanudar»). Los rumbos acabados en cero añaden «**grados**» y los alumnos usan el prefijo «**STUDENT**» en la primera llamada.",
+          "La palabra «**despegue**» (take-off) solo se pronuncia en la autorización de despegue o al cancelarla. En el resto de los casos se habla de «salida» (departure)."
+        ],
+        "verify": true
+      }
+    ],
+    "numbers": [
+      "AFIRMO = sí; NEGATIVO = no",
+      "RECIBIDO = he recibido todo; no colaciona y no es «sí»",
+      "CUMPLIRÉ = lo he entendido y lo cumpliré (incluye recibido)",
+      "REPITA = say again; «repeat» no se usa",
+      "«Despegue» solo en la autorización de despegue o al cancelarla"
+    ],
+    "traps": [
+      "ROGER no responde a una pregunta ni colaciona instrucciones.",
+      "El inglés es AFFIRM y no «affirmative»; en español, AFIRMO y no «afirmativo».",
+      "Pedir repetición en inglés es SAY AGAIN, no «repeat»; «I SAY AGAIN» es la forma de repetir tú.",
+      "«Take-off» solo en la autorización de despegue; en el resto, «departure»."
+    ],
+    "spain": [
+      "«SUBA» en lugar de «ascienda» y «REINCORPORAR» en lugar de «reanudar»; «grados» en rumbos acabados en cero; prefijo STUDENT."
+    ],
+    "sources": [
+      {
+        "title": "SERA, sección 14 (EASA)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "EGAST: Radiotelephony Guide for VFR Pilots (EASA)",
+        "url": "https://www.easa.europa.eu/document-library/general-publications/egast-radiotelephony-guide-vfr-pilots"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología ES/EN",
+        "href": "#/licencias/fraseologia"
+      },
+      {
+        "label": "Simulador de radio",
+        "href": "#/licencias/fraseologia?tab=radio"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "090.04.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Cómo se dice «sí» en fraseología OACI en español?",
+      "options": [
+        "Afirmativo",
+        "Correcto",
+        "Afirmo",
+        "Recibido"
+      ],
+      "correct": 2,
+      "why": "La palabra normalizada es AFIRMO (AFFIRM en inglés).",
+      "whyNot": [
+        "No es fraseología normalizada.",
+        "Significa que lo dicho es correcto.",
+        null,
+        "Solo acusa recibo."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.04.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "En inglés, ¿cómo se dice «sí»?",
+      "options": [
+        "Affirm",
+        "Affirmative",
+        "Roger",
+        "Okay"
+      ],
+      "correct": 0,
+      "why": "La palabra normalizada es AFFIRM.",
+      "whyNot": [
+        null,
+        "No es la palabra normalizada.",
+        "No significa sí.",
+        "No es fraseología OACI."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.04.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué significa ROGER?",
+      "options": [
+        "Sí",
+        "Lo cumpliré",
+        "Repita",
+        "He recibido toda su última transmisión"
+      ],
+      "correct": 3,
+      "why": "ROGER solo indica que se ha recibido la transmisión.",
+      "whyNot": [
+        "No significa sí.",
+        "Es WILCO.",
+        "Es SAY AGAIN.",
+        null
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.04.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa WILCO?",
+      "options": [
+        "Espere, le llamaré",
+        "He comprendido su mensaje y lo cumpliré",
+        "No puedo cumplirlo",
+        "Lo he recibido solamente"
+      ],
+      "correct": 1,
+      "why": "WILCO es la abreviatura de «will comply» e incluye el recibido.",
+      "whyNot": [
+        "Es STANDBY.",
+        null,
+        "Es UNABLE.",
+        "Es ROGER."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.04.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa STANDBY?",
+      "options": [
+        "Espere y le llamaré",
+        "He recibido su mensaje",
+        "Repita su mensaje",
+        "Terminó el intercambio"
+      ],
+      "correct": 0,
+      "why": "STANDBY (ESPERE) indica que quien lo dice llamará cuando pueda.",
+      "whyNot": [
+        null,
+        "Es ROGER.",
+        "Es SAY AGAIN.",
+        "Es OUT."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.04.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál es la forma correcta de pedir en inglés que repitan un mensaje?",
+      "options": [
+        "Repeat",
+        "Again please",
+        "Say again",
+        "Pardon"
+      ],
+      "correct": 2,
+      "why": "La frase normalizada es SAY AGAIN.",
+      "whyNot": [
+        "No se usa en radio aeronáutica.",
+        "No es fraseología normalizada.",
+        null,
+        "No es fraseología normalizada."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.04.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué quiere decir IGNORE (DISREGARD)?",
+      "options": [
+        "Repita el mensaje",
+        "Considere ese mensaje como no enviado",
+        "Espere",
+        "Acuse recibo"
+      ],
+      "correct": 1,
+      "why": "IGNORE anula el mensaje anterior.",
+      "whyNot": [
+        "No es el significado.",
+        null,
+        "No es el significado.",
+        "No es el significado."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.04.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "Cometes un error al transmitir un dato. ¿Qué dices?",
+      "options": [
+        "Ignore, y callas",
+        "Negativo, y repites todo",
+        "Repito, y repites todo",
+        "Corrección, y repites el dato correcto"
+      ],
+      "correct": 3,
+      "why": "CORRECCIÓN indica que te has equivocado y que lo correcto sigue.",
+      "whyNot": [
+        "Ignore anula el mensaje, no lo corrige.",
+        "Negativo es «no».",
+        "Repito es para recalcar.",
+        null
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.04.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa IMPOSIBLE (UNABLE)?",
+      "options": [
+        "No he entendido",
+        "Espere",
+        "No puedo cumplir la solicitud o instrucción",
+        "Se ha cancelado"
+      ],
+      "correct": 2,
+      "why": "UNABLE indica que no puedes cumplir.",
+      "whyNot": [
+        "Eso es SAY AGAIN.",
+        "Eso es STANDBY.",
+        null,
+        "Eso es CANCEL."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.04.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "El controlador dice «autorizado a aterrizar pista 13». ¿Basta responder «recibido»?",
+      "options": [
+        "No: la autorización de aterrizaje se colaciona",
+        "Sí, ROGER es suficiente",
+        "Sí, con «afirmativo»",
+        "Sí, con «cumpliré» solamente"
+      ],
+      "correct": 0,
+      "why": "La autorización de aterrizaje se colaciona con la pista y se termina con el distintivo.",
+      "whyNot": [
+        null,
+        "ROGER no colaciona.",
+        "Afirmativo no es fraseología.",
+        "Falta la colación."
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.04.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa CAMBIO (OVER)?",
+      "options": [
+        "Terminó el intercambio y no espero respuesta",
+        "Cambie de frecuencia",
+        "Repita el mensaje",
+        "Terminé mi transmisión y espero respuesta"
+      ],
+      "correct": 3,
+      "why": "OVER indica que se espera respuesta; OUT cierra el intercambio.",
+      "whyNot": [
+        "Eso es FIN (OUT).",
+        "No es el significado.",
+        "Eso es REPITA.",
+        null
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.04.012",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Cuándo se pronuncia la palabra «despegue» (take-off)?",
+      "options": [
+        "En cualquier mensaje de salida",
+        "Solo en la autorización de despegue o al cancelarla",
+        "Cuando el piloto avisa de que está listo",
+        "Cuando se acaba de despegar"
+      ],
+      "correct": 1,
+      "why": "«Take-off» se reserva a la autorización de despegue o a su cancelación para evitar confusiones.",
+      "whyNot": [
+        "Se reserva para la autorización.",
+        null,
+        "El piloto dice «salida».",
+        "No es el uso."
+      ],
+      "ref": "SERA.14"
+    },
+    {
+      "id": "090.04.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "En el punto de espera, el piloto avisa de que está listo diciendo:",
+      "options": [
+        "Listo para salir",
+        "Listo para despegar",
+        "Listo para volar",
+        "Listo para despegue"
+      ],
+      "correct": 0,
+      "why": "El piloto dice «listo para salir» y el ATC autoriza el despegue.",
+      "whyNot": [
+        null,
+        "«Despegar» queda reservado a la autorización.",
+        "No es fraseología.",
+        "«Despegue» queda reservado a la autorización."
+      ],
+      "ref": "SERA.14"
+    },
+    {
+      "id": "090.04.014",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa CONFIRME (CONFIRM)?",
+      "options": [
+        "Sí, correcto",
+        "Repita el mensaje",
+        "¿He recibido correctamente…? / ¿Recibió usted…?",
+        "Espere"
+      ],
+      "correct": 2,
+      "why": "CONFIRME pide verificar la recepción de un dato.",
+      "whyNot": [
+        "Eso es AFIRMO o CORRECTO.",
+        "Eso es REPITA.",
+        null,
+        "Eso es ESPERE."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.04.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa ACUSE RECIBO (ACKNOWLEDGE)?",
+      "options": [
+        "Lo he recibido solamente",
+        "Indique que ha recibido y entendido este mensaje",
+        "Cumpla la instrucción",
+        "Escuche en la frecuencia indicada"
+      ],
+      "correct": 1,
+      "why": "ACKNOWLEDGE pide al otro que confirme que ha recibido y entendido el mensaje.",
+      "whyNot": [
+        "Eso es ROGER.",
+        null,
+        "No es el significado.",
+        "Eso es MONITOR."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.04.016",
+      "type": "concepto",
+      "level": 3,
+      "q": "En España, ¿qué se dice en lugar de «ascienda»?",
+      "options": [
+        "Eleve",
+        "Reanude",
+        "Mantenga",
+        "Suba"
+      ],
+      "correct": 3,
+      "why": "El AIP GEN 1.7 recoge «SUBA» en lugar de «ascienda».",
+      "whyNot": [
+        "No es la palabra normalizada.",
+        "Es otra palabra.",
+        "Es otra palabra.",
+        null
+      ],
+      "ref": "AIP GEN 1.7",
+      "es": true
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.090.04.01",
+      "front": "AFIRMO / AFFIRM",
+      "back": "Sí. No se dice «afirmativo»"
+    },
+    {
+      "id": "c.090.04.02",
+      "front": "RECIBIDO / ROGER",
+      "back": "He recibido toda su transmisión; no es «sí» ni colaciona"
+    },
+    {
+      "id": "c.090.04.03",
+      "front": "CUMPLIRÉ / WILCO",
+      "back": "He comprendido y lo cumpliré"
+    },
+    {
+      "id": "c.090.04.04",
+      "front": "ESPERE / STANDBY",
+      "back": "Espere y le llamaré"
+    },
+    {
+      "id": "c.090.04.05",
+      "front": "IMPOSIBLE / UNABLE",
+      "back": "No puedo cumplir"
+    },
+    {
+      "id": "c.090.04.06",
+      "front": "REPITA / SAY AGAIN",
+      "back": "Repita; en inglés nunca «repeat»"
+    },
+    {
+      "id": "c.090.04.07",
+      "front": "Despegue",
+      "back": "Solo en la autorización de despegue o al cancelarla; el piloto dice «salida»"
+    },
+    {
+      "id": "c.090.04.08",
+      "front": "SUBA y REINCORPORAR",
+      "back": "Fraseología española en lugar de «ascienda» y «reanudar»"
+    }
+  ]
+}

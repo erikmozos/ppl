@@ -1,0 +1,594 @@
+{
+  "lesson": {
+    "id": "090.02",
+    "title": "Abreviaturas y códigos Q",
+    "summary": "Abreviaturas aeronáuticas habituales (ATIS, ETA, CAVOK, RVR, FIS, AFIS, ATZ, CTR, TMA, FIZ y otras) y los códigos Q: QDM, QDR, QTE, QUJ, QFE, QNH, QNE y QFU.",
+    "objectives": [
+      "Descifrar las abreviaturas más usadas en el examen",
+      "Distinguir QDM, QDR, QTE y QUJ por su referencia y por su sentido",
+      "Distinguir QFE, QNH y QNE y qué lee el altímetro con cada uno",
+      "Saber qué indica QFU"
+    ],
+    "sections": [
+      {
+        "title": "Abreviaturas que debes conocer",
+        "text": [
+          "La aviación usa abreviaturas OACI (Doc 8400) para ahorrar tiempo en los mensajes escritos y hablados. Muchas se pronuncian letra a letra («ATZ», «CTR») y otras como una palabra («ATIS», «CAVOK»). Las del examen son estas."
+        ],
+        "table": {
+          "caption": "Abreviaturas aeronáuticas habituales",
+          "head": [
+            "Sigla",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "ATIS",
+              "Servicio automático de información terminal: grabación continua con información del aeródromo"
+            ],
+            [
+              "ETA",
+              "Hora estimada de llegada"
+            ],
+            [
+              "ETD",
+              "Hora estimada de salida"
+            ],
+            [
+              "CAVOK",
+              "Techo y visibilidad correctos: visibilidad de 10 km o más, ninguna nube por debajo de 5000 ft ni de la altitud mínima de sector (la mayor), sin cumulonimbos ni cúmulos torreones y sin fenómenos significativos"
+            ],
+            [
+              "RVR",
+              "Alcance visual en la pista"
+            ],
+            [
+              "FIS",
+              "Servicio de información de vuelo"
+            ],
+            [
+              "AFIS",
+              "Servicio de información de vuelo de aeródromo"
+            ],
+            [
+              "ATZ",
+              "Zona de tránsito de aeródromo"
+            ],
+            [
+              "CTR",
+              "Zona de control"
+            ],
+            [
+              "TMA",
+              "Área de control terminal"
+            ],
+            [
+              "FIZ",
+              "Zona de información de vuelo"
+            ],
+            [
+              "AGL / AMSL",
+              "Sobre el suelo / sobre el nivel medio del mar"
+            ],
+            [
+              "VMC / IMC",
+              "Condiciones de vuelo visual / instrumental"
+            ],
+            [
+              "SVFR",
+              "VFR especial"
+            ]
+          ],
+          "src": "Doc 8400; Anexo 3"
+        }
+      },
+      {
+        "title": "Más abreviaturas de cartas, partes y aeródromos",
+        "table": {
+          "caption": "Otras abreviaturas frecuentes",
+          "head": [
+            "Sigla",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "METAR / TAF",
+              "Informe meteorológico de aeródromo / pronóstico de aeródromo"
+            ],
+            [
+              "SIGMET",
+              "Información de fenómenos meteorológicos significativos en ruta"
+            ],
+            [
+              "NOTAM",
+              "Aviso a los navegantes aéreos sobre instalaciones, servicios o peligros"
+            ],
+            [
+              "RWY / TWY",
+              "Pista / calle de rodaje"
+            ],
+            [
+              "SFC / UNL",
+              "Superficie / ilimitado"
+            ],
+            [
+              "PPR",
+              "Permiso previo requerido"
+            ],
+            [
+              "MNM / MAX",
+              "Mínimo / máximo"
+            ],
+            [
+              "FREQ",
+              "Frecuencia"
+            ],
+            [
+              "UTC",
+              "Tiempo universal coordinado"
+            ]
+          ],
+          "src": "Doc 8400"
+        },
+        "examples": [
+          {
+            "q": "Un METAR de Villanueva dice «LEXX 121000Z 27008KT CAVOK 18/09 Q1017». ¿Qué te dice CAVOK?",
+            "a": "Que la visibilidad es de 10 km o más, que no hay nubes por debajo de 5000 ft (ni de la altitud mínima de sector, si es mayor), que no hay cumulonimbos ni cúmulos torreones y que no hay fenómenos significativos. Es el mejor tiempo posible para un VFR."
+          }
+        ]
+      },
+      {
+        "title": "Los códigos Q de uso aeronáutico",
+        "text": [
+          "El **código Q** es un sistema de abreviaturas de tres letras que empiezan por Q. En radio aeronáutica se usan unos pocos, y se entienden como pregunta (QDM?) o como respuesta (QDM 270). Dos grupos importan: los de **marcación** (quien te localiza por radiogoniometría o ADF) y los de **reglaje de altímetro**."
+        ]
+      },
+      {
+        "title": "Marcaciones y rumbos: QDM, QDR, QTE y QUJ",
+        "table": {
+          "caption": "Códigos Q de marcación",
+          "head": [
+            "Código",
+            "Significado",
+            "Referencia"
+          ],
+          "rows": [
+            [
+              "QDM",
+              "Rumbo magnético a seguir para dirigirse a la estación, sin viento",
+              "Magnético; hacia la estación"
+            ],
+            [
+              "QDR",
+              "Marcación magnética de la aeronave desde la estación (el radial en el que estás)",
+              "Magnético; desde la estación"
+            ],
+            [
+              "QTE",
+              "Marcación verdadera de la aeronave desde la estación",
+              "Verdadero; desde la estación"
+            ],
+            [
+              "QUJ",
+              "Rumbo verdadero a seguir para dirigirse a la estación",
+              "Verdadero; hacia la estación"
+            ]
+          ],
+          "src": "Doc 8400; Anexo 10"
+        },
+        "bullets": [
+          "QDM y QDR son **opuestos**: difieren 180°. Si el QDM es 270°, el QDR es 090°.",
+          "La diferencia entre **magnético** y **verdadero** es la variación magnética local: QDR → QTE aplicando la variación.",
+          "Mnemotecnia: **QDM = hacia la estación (magnético)**, **QDR = radial desde ella (magnético)**; los verdaderos son QUJ (hacia) y QTE (desde)."
+        ],
+        "examples": [
+          {
+            "q": "Una estación radiogoniométrica te da QDR 120°. ¿Cuál es el QDM y qué rumbo volarías sin viento?",
+            "a": "El QDM es el opuesto: 120° + 180° = 300°. Sin viento, volarías rumbo magnético 300° hacia la estación."
+          }
+        ]
+      },
+      {
+        "title": "Reglajes del altímetro: QNH, QFE, QNE y QFU",
+        "table": {
+          "caption": "Códigos Q de altimetría y pista",
+          "head": [
+            "Código",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "QNH",
+              "Reglaje del altímetro para leer la altitud sobre el nivel medio del mar; en el aeródromo lees su elevación"
+            ],
+            [
+              "QFE",
+              "Reglaje del altímetro para leer la altura sobre el aeródromo; en tierra lees cero"
+            ],
+            [
+              "QNE",
+              "Altitud que indica el altímetro con 1013,25 hPa; en el aeródromo, su altitud de presión"
+            ],
+            [
+              "QFU",
+              "Orientación magnética de la pista"
+            ]
+          ],
+          "src": "Doc 8400; Doc 8168"
+        },
+        "text": [
+          "QFU es la orientación magnética de la pista; en la práctica se dice «pista 13» y no QFU. Los otros tres son reglajes que ya estudiaste en altimetría."
+        ]
+      }
+    ],
+    "numbers": [
+      "QDM: rumbo magnético hacia la estación (sin viento); QDR: marcación magnética desde la estación",
+      "QUJ: rumbo verdadero hacia la estación; QTE: marcación verdadera desde la estación",
+      "QDM y QDR difieren 180°",
+      "QNH: altitud; QFE: altura sobre el aeródromo; QNE: 1013,25 hPa",
+      "CAVOK: visibilidad ≥ 10 km, sin nubes bajo 5000 ft, sin CB/TCU y sin fenómenos significativos"
+    ],
+    "traps": [
+      "QDM es hacia la estación y QDR es desde la estación: no al revés.",
+      "QDM y QTE no son lo mismo: uno es magnético y otro verdadero, y uno va hacia la estación y otro desde ella.",
+      "QFE da altura sobre el aeródromo; QNH da altitud sobre el mar. Con QFE no lees altitudes.",
+      "CAVOK exige 10 km o más de visibilidad, no 8."
+    ],
+    "spain": [
+      "Las abreviaturas son las de la OACI; en España se usan igual en español y en inglés (por ejemplo, «ATIS», «CAVOK», «QNH»)."
+    ],
+    "sources": [
+      {
+        "title": "Doc 8400 de la OACI: Abreviaturas y códigos"
+      },
+      {
+        "title": "SERA, sección 14 (EASA)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología ES/EN",
+        "href": "#/licencias/fraseologia"
+      },
+      {
+        "label": "Simulador de radio",
+        "href": "#/licencias/fraseologia?tab=radio"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "090.02.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué significa ATIS?",
+      "options": [
+        "Servicio de tránsito aéreo y seguridad",
+        "Sistema automático de información de tormentas",
+        "Servicio automático de información terminal",
+        "Autorización de tránsito inmediato"
+      ],
+      "correct": 2,
+      "why": "ATIS son las siglas de Automatic Terminal Information Service.",
+      "whyNot": [
+        "No es el significado.",
+        "No es el significado.",
+        null,
+        "No es el significado."
+      ],
+      "ref": "Doc 8400"
+    },
+    {
+      "id": "090.02.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué significa ETA?",
+      "options": [
+        "Hora estimada de llegada",
+        "Hora estimada de salida",
+        "Hora de aterrizaje autorizada",
+        "Hora de apertura del aeródromo"
+      ],
+      "correct": 0,
+      "why": "ETA es la hora estimada de llegada; ETD es la de salida.",
+      "whyNot": [
+        null,
+        "Es la ETD.",
+        "No es el significado.",
+        "No es el significado."
+      ],
+      "ref": "Doc 8400"
+    },
+    {
+      "id": "090.02.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué condiciones indica CAVOK?",
+      "options": [
+        "Visibilidad de 8 km y cielo despejado",
+        "Visibilidad de 5 km y techo de 1500 ft",
+        "Cielo despejado sin límite de visibilidad",
+        "Visibilidad de 10 km o más, sin nubes por debajo de 5000 ft, sin CB ni TCU y sin fenómenos significativos"
+      ],
+      "correct": 3,
+      "why": "CAVOK sustituye a visibilidad, tiempo presente y nubes cuando se cumplen todas esas condiciones.",
+      "whyNot": [
+        "No son las condiciones de CAVOK.",
+        "Son los mínimos de operación en una CTR.",
+        "Hay un mínimo de 10 km.",
+        null
+      ],
+      "ref": "Anexo 3"
+    },
+    {
+      "id": "090.02.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es el RVR?",
+      "options": [
+        "La velocidad de rotación",
+        "El alcance visual en la pista",
+        "El radio de viraje de referencia",
+        "El registro de vuelo reciente"
+      ],
+      "correct": 1,
+      "why": "RVR es el alcance visual en la pista, que mide la distancia a la que se ven las marcas y luces.",
+      "whyNot": [
+        "No es el significado.",
+        null,
+        "No es el significado.",
+        "No es el significado."
+      ],
+      "ref": "Anexo 3"
+    },
+    {
+      "id": "090.02.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es una FIZ?",
+      "options": [
+        "Una zona de información de vuelo",
+        "Una zona de interceptación",
+        "Una zona de instrucción",
+        "Una zona de salida"
+      ],
+      "correct": 0,
+      "why": "La FIZ es el espacio no controlado en el que presta servicio un AFIS.",
+      "whyNot": [
+        null,
+        "No es el significado.",
+        "No es el significado.",
+        "No es el significado."
+      ],
+      "ref": "Doc 4444"
+    },
+    {
+      "id": "090.02.006",
+      "type": "regla",
+      "level": 2,
+      "q": "Una estación radiogoniométrica te da QDR 120°. ¿Cuál es el QDM?",
+      "options": [
+        "120°",
+        "210°",
+        "300°",
+        "030°"
+      ],
+      "correct": 2,
+      "why": "El QDM es el opuesto del QDR: 120° + 180° = 300°.",
+      "whyNot": [
+        "Es el QDR.",
+        "No es el opuesto.",
+        null,
+        "No es el opuesto."
+      ],
+      "ref": "Doc 8400"
+    },
+    {
+      "id": "090.02.007",
+      "type": "concepto",
+      "level": 1,
+      "q": "El rumbo magnético que hay que seguir hacia la estación sin viento es el:",
+      "options": [
+        "QDR",
+        "QDM",
+        "QTE",
+        "QUJ"
+      ],
+      "correct": 1,
+      "why": "El QDM es el rumbo magnético hacia la estación sin viento.",
+      "whyNot": [
+        "Es la marcación desde la estación.",
+        null,
+        "Es la marcación verdadera desde la estación.",
+        "Es el rumbo verdadero hacia la estación."
+      ],
+      "ref": "Doc 8400"
+    },
+    {
+      "id": "090.02.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "La marcación magnética de la aeronave desde la estación es el:",
+      "options": [
+        "QDM",
+        "QTE",
+        "QUJ",
+        "QDR"
+      ],
+      "correct": 3,
+      "why": "El QDR es la marcación magnética desde la estación.",
+      "whyNot": [
+        "Es el rumbo hacia la estación.",
+        "Es la marcación verdadera.",
+        "Es el rumbo verdadero hacia la estación.",
+        null
+      ],
+      "ref": "Doc 8400"
+    },
+    {
+      "id": "090.02.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "La marcación verdadera de la aeronave desde la estación es el:",
+      "options": [
+        "QDM",
+        "QDR",
+        "QTE",
+        "QUJ"
+      ],
+      "correct": 2,
+      "why": "El QTE es la marcación verdadera desde la estación.",
+      "whyNot": [
+        "Es magnético.",
+        "Es magnético.",
+        null,
+        "Es el rumbo hacia la estación."
+      ],
+      "ref": "Doc 8400"
+    },
+    {
+      "id": "090.02.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "El rumbo verdadero hacia la estación es el:",
+      "options": [
+        "QUJ",
+        "QTE",
+        "QDM",
+        "QNH"
+      ],
+      "correct": 0,
+      "why": "El QUJ es el rumbo verdadero hacia la estación.",
+      "whyNot": [
+        null,
+        "Es desde la estación.",
+        "Es magnético.",
+        "Es un reglaje de altímetro."
+      ],
+      "ref": "Doc 8400"
+    },
+    {
+      "id": "090.02.011",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué lees en el altímetro con el QFE puesto, al aterrizar?",
+      "options": [
+        "La elevación del aeródromo",
+        "1013,25",
+        "La altitud de presión",
+        "Cero"
+      ],
+      "correct": 3,
+      "why": "Con el QFE el altímetro indica altura sobre el aeródromo, y cero en tierra.",
+      "whyNot": [
+        "Es con el QNH.",
+        "Es el reglaje del QNE.",
+        "Es con 1013,25.",
+        null
+      ],
+      "ref": "Doc 8168"
+    },
+    {
+      "id": "090.02.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa QNE?",
+      "options": [
+        "La altitud sobre el aeródromo",
+        "La altitud que indica el altímetro con 1013,25 hPa",
+        "La altitud sobre el nivel del mar",
+        "La orientación de la pista"
+      ],
+      "correct": 1,
+      "why": "El QNE es la lectura con el reglaje estándar.",
+      "whyNot": [
+        "Es el QFE.",
+        null,
+        "Es el QNH.",
+        "Es el QFU."
+      ],
+      "ref": "Doc 8400"
+    },
+    {
+      "id": "090.02.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué indica QFU?",
+      "options": [
+        "La orientación magnética de la pista",
+        "La presión al nivel del mar",
+        "El rumbo verdadero a la estación",
+        "La altitud de presión"
+      ],
+      "correct": 0,
+      "why": "El QFU es la orientación magnética de la pista.",
+      "whyNot": [
+        null,
+        "Es el QNH.",
+        "Es el QUJ.",
+        "Es el QNE."
+      ],
+      "ref": "Doc 8400"
+    },
+    {
+      "id": "090.02.014",
+      "type": "concepto",
+      "level": 3,
+      "q": "Con el QNH puesto en la ventanilla, ¿qué lees al aterrizar?",
+      "options": [
+        "Cero",
+        "La altitud de presión",
+        "La elevación del aeródromo",
+        "La altura de la torre"
+      ],
+      "correct": 2,
+      "why": "Con el QNH, en el aeródromo lees su elevación sobre el nivel del mar.",
+      "whyNot": [
+        "Es con el QFE.",
+        "Es con 1013,25.",
+        null,
+        "No tiene relación."
+      ],
+      "ref": "Doc 8168"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.090.02.01",
+      "front": "QDM",
+      "back": "Rumbo magnético hacia la estación, sin viento"
+    },
+    {
+      "id": "c.090.02.02",
+      "front": "QDR",
+      "back": "Marcación magnética de la aeronave desde la estación"
+    },
+    {
+      "id": "c.090.02.03",
+      "front": "QTE",
+      "back": "Marcación verdadera de la aeronave desde la estación"
+    },
+    {
+      "id": "c.090.02.04",
+      "front": "QUJ",
+      "back": "Rumbo verdadero hacia la estación"
+    },
+    {
+      "id": "c.090.02.05",
+      "front": "QNH, QFE y QNE",
+      "back": "QNH: altitud sobre el mar; QFE: altura sobre el aeródromo; QNE: 1013,25 hPa"
+    },
+    {
+      "id": "c.090.02.06",
+      "front": "QFU",
+      "back": "Orientación magnética de la pista"
+    },
+    {
+      "id": "c.090.02.07",
+      "front": "CAVOK",
+      "back": "Visibilidad ≥ 10 km, sin nubes bajo 5000 ft, sin CB/TCU y sin fenómenos significativos"
+    }
+  ]
+}

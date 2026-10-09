@@ -1,0 +1,489 @@
+{
+ "lesson": {
+  "title": "Frentes",
+  "summary": "Qué es un frente, el frente cálido y el frío, el sector cálido, las oclusiones y el frente estacionario, el ciclo de vida de una borrasca frontal y los cambios de presión, viento, temperatura y visibilidad al paso.",
+  "objectives": [
+   "Definir un frente y una superficie frontal y su pendiente",
+   "Describir nubes y tiempo en un frente cálido y en uno frío",
+   "Explicar el sector cálido, la oclusión y el frente estacionario",
+   "Seguir el ciclo de vida de una borrasca frontal",
+   "Predecir los cambios de presión, temperatura, viento y visibilidad al paso de un frente",
+   "Valorar el riesgo para el vuelo VFR en cada tipo"
+  ],
+  "sections": [
+   {
+    "title": "Qué es un frente",
+    "text": [
+     "Un **frente** es la zona de transición entre dos masas de aire de características distintas, sobre todo de temperatura y humedad. El aire más cálido es menos denso y **no se mezcla** con el frío: se desliza por encima. La **superficie frontal** es esa pared inclinada, y el **frente en superficie** es la línea donde esa superficie corta el suelo y que se dibuja en el mapa. A los lados del frente cambian de golpe la temperatura, la humedad y el viento.",
+     "Los frentes se forman en zonas donde dos masas se acercan, y el Atlántico Norte, entre el aire polar frío y el tropical cálido, es la gran fábrica de frentes que llegan a España, sobre todo en otoño, invierno y primavera. Se llama **frente cálido** si el aire cálido avanza y sustituye al frío; **frente frío** si es el aire frío el que avanza y empuja al cálido; **estacionario** si no hay un avance claro; y **ocluido** cuando uno alcanza al otro."
+    ]
+   },
+   {
+    "title": "Frente cálido",
+    "text": [
+     "En un frente cálido el aire cálido avanza y **asciende suavemente por encima del frío** que retrocede. La pendiente de la superficie frontal es muy pequeña, de **alrededor de 1:150**, y por eso el ascenso es lento y generalizado. La secuencia de nubes que ves llegar es regular: primero **Ci** (cirros), después **Cs** (cirrostratos, con halo alrededor del Sol o la Luna), **As** (altostratos) y, cuando el frente está cerca, **Ns** (nimbostratos) con **lluvia continua y amplia**, y a veces estratos bajos y niebla bajo la lluvia.",
+     "El tiempo se deteriora despacio, con muchas horas de aviso: la presión baja, la visibilidad se reduce, la base de nubes baja y puede quedar en techo cero. La banda de lluvia es **ancha** (cientos de millas por delante del frente). En invierno, la lluvia que cae del aire cálido sobre aire frío por debajo de 0 °C puede ser **lluvia engelante**."
+    ],
+    "figure": "svg:050-frente-calido",
+    "caption": "Pendiente suave (≈ 1:150): Ci, Cs, As, Ns y estratos bajos.",
+    "examples": [
+     {
+      "q": "La superficie frontal de un frente cálido está a 6000 ft sobre tu posición. ¿A qué distancia está el frente en superficie y cuándo llegará si avanza a 15 kt?",
+      "a": "6000 ft son casi 1 NM de altura; con pendiente 1:150 el frente en superficie está a unas 150 NM. A 15 kt tarda 10 horas."
+     }
+    ]
+   },
+   {
+    "title": "Frente frío",
+    "text": [
+     "En un frente frío el aire frío, más denso, avanza como una cuña bajo el cálido y lo **levanta bruscamente**. La pendiente es mucho mayor, de **1:50 a 1:100**, y el ascenso es violento, por lo que se desarrollan **Cb** (cumulonimbos) y **chubascos y tormentas** en una banda **estrecha**, de unas decenas de millas. Los frentes fríos se mueven más deprisa que los cálidos: por eso alcanzan a estos y se forman las oclusiones.",
+     "Delante de un frente frío, con el aire cálido del sector cálido, el viento es del suroeste, la presión baja y la visibilidad suele ser moderada o mala por la bruma. Al llegar el frente hay chubascos, rachas, turbulencia y cizalladura, y a veces una **línea de turbonada**. Detrás, el aire frío es inestable y trae cúmulos, chubascos aislados y **muy buena visibilidad** entre ellos, con viento del noroeste racheado."
+    ],
+    "figure": "svg:050-frente-frio",
+    "caption": "Pendiente fuerte: Cb con yunque, chubascos y aire inestable detrás.",
+    "examples": [
+     {
+      "q": "Un frente frío con pendiente 1:50 tiene su superficie a 6000 ft sobre ti. ¿A qué distancia está el frente en superficie?",
+      "a": "6000 ft son casi 1 NM: unas 50 NM de distancia, mucho menos que en un frente cálido."
+     }
+    ]
+   },
+   {
+    "title": "Sector cálido y frente estacionario",
+    "text": [
+     "Entre el frente cálido y el frío de una borrasca queda el **sector cálido**, ocupado por aire tropical marítimo, cálido y húmedo, que sube despacio y por la poca altura tiene estratos, llovizna y niebla. Para el vuelo VFR es un sector de mala visibilidad y techo bajo, aunque no lleve la actividad convectiva del frente frío.",
+     "Un **frente estacionario** es un frente que no se desplaza: el viento sopla paralelo a él a cada lado. Suele tener una nubosidad parecida a la del frente cálido (menos intensa), con lloviznas y techos bajos persistentes, y a veces origina una onda y una nueva borrasca."
+    ]
+   },
+   {
+    "title": "Oclusión",
+    "text": [
+     "Como el frente frío corre más que el cálido, acaba alcanzándolo y **ocluye** el sector cálido, que queda **elevado**, separado del suelo. Hay dos tipos según cuál de las dos masas frías sea más fría. En la **oclusión fría**, el aire que sigue al frente frío es **más frío** que el que precede al frente cálido: el frío empuja por debajo de todo. En la **oclusión cálida**, el aire que sigue es **menos frío** que el que va delante: sube sobre él. La oclusión reúne nubes de ambos frentes y da un tiempo **mixto**, con Ns y lluvia continua y, en altura, núcleos de Cb ocultos entre nubes; es una de las situaciones más difíciles para el VFR."
+    ]
+   },
+   {
+    "title": "Ciclo de vida de una borrasca frontal",
+    "text": [
+     "Las borrascas de latitudes medias nacen sobre un frente estacionario. Una pequeña **onda** deforma el frente (1), se forma una baja y el frente se divide en uno cálido y uno frío con un **sector cálido amplio** entre ambos (2, ciclón joven). El frío, más rápido, alcanza al cálido y empieza la **oclusión** (3); la borrasca está entonces en su mayor intensidad. Por último, con el sector cálido elevado en altura, se corta el aporte de energía, el centro se **rellena** y la borrasca se **disipa** (4). Todo el proceso dura de tres a cinco días."
+    ],
+    "figure": "svg:050-onda-frontal",
+    "caption": "Cuatro fases en planta: onda inicial, ciclón joven, oclusión y disipación."
+   },
+   {
+    "title": "Qué cambia al paso de un frente",
+    "text": [
+     "Los cambios son la forma práctica de reconocer un frente. Al pasar un frente en el **hemisferio norte** el viento **rola a la derecha** (en sentido horario), tanto en el cálido como en el frío; en el frío el cambio es más brusco. La presión, que baja antes del frente, **deja de bajar** al paso del cálido y **sube** con claridad tras el frío."
+    ],
+    "table": {
+     "caption": "Cambios al paso de un frente (hemisferio norte)",
+     "head": [
+      "Elemento",
+      "Frente cálido",
+      "Frente frío"
+     ],
+     "rows": [
+      [
+       "Antes",
+       "Presión baja; viento del S-SE que refresca; nubes Ci a Ns; lluvia continua",
+       "Presión baja; viento del SW; bruma; nubes medias y Cb por delante"
+      ],
+      [
+       "Al paso",
+       "La presión se estabiliza; el viento rola a la derecha; la lluvia cesa",
+       "Chubascos, rachas, turbulencia y a veces tormenta; la presión sube de golpe; viento rola con brusquedad a la derecha (SW a NW)"
+      ],
+      [
+       "Temperatura",
+       "Sube",
+       "Baja (a menudo con salto brusco)"
+      ],
+      [
+       "Visibilidad",
+       "Mala por lluvia, bruma y niebla; mejora en el sector cálido solo si hay corriente",
+       "Mala en el chubasco, muy buena detrás"
+      ],
+      [
+       "Después",
+       "Sector cálido: St, llovizna, niebla, temperatura alta",
+       "Aire polar inestable: Cu, Cb, chubascos aislados, cielos que se abren"
+      ]
+     ],
+     "src": "AEMET; FAA-H-8083-28"
+    },
+    "bullets": [
+     "En el mapa de superficie, las isobaras describen una vaguada con un quiebro «en V» en el frente.",
+     "El frente frío es rápido y estrecho: pocas horas de mal tiempo; el cálido, lento y ancho: muchas horas de techo bajo."
+    ]
+   },
+   {
+    "title": "Frentes y vuelo VFR",
+    "text": [
+     "Cada frente plantea un problema distinto. El **cálido** no suele traer turbulencia fuerte, pero **degrada techo y visibilidad durante horas** y puede dar hielo y lluvia engelante; la decisión es no salir o cambiar de ruta con tiempo. El **frío** es más breve, pero trae **tormentas, turbulencia, cizalladura, rachas y reducción brusca de visibilidad** al paso; puede cruzarse atravesando la línea con una ventana de buen tiempo, pero **nunca atravesando una línea de turbonada**. La **oclusión** reúne lo peor de los dos. Con un frente cerca, vuela solo con una alternativa clara y deja la decisión de aterrizar a tiempo."
+    ],
+    "note": {
+     "kind": "es",
+     "text": "Los frentes llegan a España desde el Atlántico por Galicia, el Cantábrico y el golfo de Cádiz, sobre todo de octubre a mayo. En verano son raros y débiles; las tormentas de verano suelen ser convectivas, no frontales."
+    }
+   }
+  ],
+  "numbers": [
+   "Pendiente del frente cálido: 1:150; del frío: 1:50 a 1:100",
+   "Frente cálido: Ci, Cs, As, Ns; lluvia continua y amplia",
+   "Frente frío: Cb, chubascos y tormentas en banda estrecha; más rápido que el cálido",
+   "Al paso de un frente (hemisferio norte), el viento rola a la derecha",
+   "Tras el frío: presión sube, temperatura baja, visibilidad buena",
+   "El frente frío alcanza al cálido y se produce la oclusión"
+  ],
+  "traps": [
+   "Al paso de un frente el viento rola a la derecha (hemisferio norte), no a la izquierda.",
+   "La pendiente del cálido es la suave (1:150); la del frío, la fuerte.",
+   "La visibilidad detrás del frío es buena, pero con chubascos aislados.",
+   "La oclusión no es un frente más débil: reúne los fenómenos de los dos.",
+   "No hay Cb necesariamente en un frente cálido, pero sí lluvia continua y techo bajo."
+  ],
+  "spain": [
+   "Los frentes atlánticos entran por el noroeste y el golfo de Cádiz, sobre todo de octubre a mayo.",
+   "En verano los frentes son raros; la baja térmica ibérica no es una borrasca con frentes."
+  ],
+  "sources": [
+   {
+    "title": "AEMET, Apuntes de meteorología aeronáutica",
+    "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
+   },
+   {
+    "title": "FAA-H-8083-28, Aviation Weather Handbook (frentes)",
+    "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+   }
+  ],
+  "id": "050.13",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "050.13.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "En un frente cálido, el aire cálido:",
+   "options": [
+    "Asciende suavemente sobre el aire frío que retrocede",
+    "Se mezcla completamente con el frío",
+    "Permanece inmóvil",
+    "Se hunde bajo el aire frío"
+   ],
+   "correct": 0,
+   "why": "El aire cálido es menos denso y asciende por la superficie frontal de pendiente suave.",
+   "whyNot": [
+    null,
+    "Las masas no se mezclan; una se desliza sobre la otra.",
+    "Eso sería un frente estacionario.",
+    "Eso es lo que hace el aire frío en un frente frío."
+   ],
+   "ref": "AEMET apuntes; FAA-H-8083-28"
+  },
+  {
+   "id": "050.13.002",
+   "type": "regla",
+   "level": 1,
+   "q": "La pendiente aproximada de la superficie frontal de un frente cálido es de:",
+   "options": [
+    "1:50",
+    "1:150",
+    "1:10",
+    "1:1000"
+   ],
+   "correct": 1,
+   "why": "El frente cálido es suave: unos 1:150.",
+   "whyNot": [
+    "Es la de un frente frío.",
+    null,
+    "Sería una pared casi vertical.",
+    "Es demasiado plana."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.13.003",
+   "type": "concepto",
+   "level": 1,
+   "q": "Al acercarse un frente cálido, la secuencia de nubes más habitual es:",
+   "options": [
+    "Cb, Cu y Sc",
+    "Ac, Cc y Ci",
+    "St, Sc y Cu",
+    "Ci, Cs, As y Ns"
+   ],
+   "correct": 3,
+   "why": "El aire cálido asciende por la rampa y las nubes aparecen de más altas a más bajas.",
+   "whyNot": [
+    "Es la secuencia de aire inestable.",
+    "No es una secuencia frontal.",
+    "No sigue ninguna secuencia frontal.",
+    null
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.13.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "Al paso de un frente frío en el hemisferio norte, el viento:",
+   "options": [
+    "Rola a la derecha, bruscamente",
+    "No cambia",
+    "Rola a la izquierda",
+    "Se calma y rola a la izquierda"
+   ],
+   "correct": 0,
+   "why": "El cambio de viento es brusco y en sentido horario (SW a NW), con rachas.",
+   "whyNot": [
+    null,
+    "El viento sí cambia, y de forma brusca.",
+    "Rola a la derecha (de SW a NW), no a la izquierda.",
+    "No se calma: se hace racheado y rola a la derecha."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.13.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "Detrás de un frente frío activo encuentras normalmente:",
+   "options": [
+    "Estratos bajos y niebla persistente",
+    "Lluvia continua y visibilidad muy reducida",
+    "Aire inestable, cúmulos, chubascos aislados y buena visibilidad",
+    "Calima y viento sur"
+   ],
+   "correct": 2,
+   "why": "El aire polar marítimo es frío e inestable: da Cu, Cb, chubascos y visibilidad excelente entre ellos.",
+   "whyNot": [
+    "Eso es propio del sector cálido.",
+    "Eso es de un frente cálido u ocluido.",
+    null,
+    "Eso es propio de la tropical continental."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.13.006",
+   "type": "concepto",
+   "level": 1,
+   "q": "Tras el paso de un frente frío, la presión:",
+   "options": [
+    "No cambia",
+    "Sube",
+    "Fluctúa sin tendencia",
+    "Baja"
+   ],
+   "correct": 1,
+   "why": "El aire frío es más denso y la presión sube de forma clara.",
+   "whyNot": [
+    "El cambio es evidente.",
+    null,
+    "La tendencia es clara.",
+    "Antes baja; tras él sube."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.13.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "En una oclusión fría, el aire que sigue al frente frío es:",
+   "options": [
+    "Igual de cálido",
+    "Más frío que el aire que va delante del frente cálido",
+    "Siempre aire tropical",
+    "Menos frío que el aire de delante"
+   ],
+   "correct": 1,
+   "why": "En la oclusión fría, el frío de detrás empuja por debajo de todo y eleva el sector cálido.",
+   "whyNot": [
+    "Por definición es más frío.",
+    null,
+    "No hay oclusión sin aire frío.",
+    "Eso es una oclusión cálida."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.13.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "El tiempo típico de una oclusión es:",
+   "options": [
+    "Solo cirros",
+    "Calima seca",
+    "Despejado y estable",
+    "Mixto: nubes de ambos frentes, lluvia continua y posibles Cb ocultos"
+   ],
+   "correct": 3,
+   "why": "La oclusión combina Ns y lluvia del cálido con la inestabilidad del frío; es muy difícil para el VFR.",
+   "whyNot": [
+    "No hay estabilidad en la oclusión.",
+    "Hay nubes bajas y medias.",
+    "No es el tiempo de una oclusión.",
+    null
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.13.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un frente estacionario se caracteriza por:",
+   "options": [
+    "Presión que sube de forma brusca",
+    "Un avance rápido",
+    "Viento paralelo al frente a ambos lados y poco desplazamiento",
+    "Ausencia de nubes"
+   ],
+   "correct": 2,
+   "why": "No hay avance claro de ninguna masa: el viento sopla casi paralelo a la línea.",
+   "whyNot": [
+    "No es característica del estacionario.",
+    "Es lo contrario.",
+    null,
+    "Suele tener nubosidad y llovizna."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.13.010",
+   "type": "calculo",
+   "level": 2,
+   "q": "La superficie frontal de un frente cálido está 6000 ft sobre ti. A cuántas millas está el frente en superficie (pendiente 1:150)?",
+   "options": [
+    "Unas 15 NM",
+    "Unas 50 NM",
+    "Unas 900 NM",
+    "Unas 150 NM"
+   ],
+   "correct": 3,
+   "why": "6000 ft ≈ 1 NM; 1 NM × 150 ≈ 150 NM.",
+   "whyNot": [
+    "Se obtiene con pendiente 1:15.",
+    "Es la distancia con pendiente 1:50.",
+    "Resulta de multiplicar 6 por 150 sin convertir los pies a millas.",
+    null
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.13.011",
+   "type": "calculo",
+   "level": 2,
+   "q": "Un frente cálido avanza a 15 kt y empieza a llover unas 150 NM por delante. La lluvia llegará en:",
+   "options": [
+    "10 horas",
+    "150 minutos",
+    "15 horas",
+    "2 horas"
+   ],
+   "correct": 0,
+   "why": "150 NM / 15 kt = 10 h.",
+   "whyNot": [
+    null,
+    "Confunde millas con minutos.",
+    "Resulta de usar 10 kt.",
+    "Resulta de usar 75 kt."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.13.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "El frente frío alcanza al cálido porque:",
+   "options": [
+    "Está a más altitud",
+    "Es estacionario",
+    "Se mueve más deprisa",
+    "Es más cálido"
+   ],
+   "correct": 2,
+   "why": "El frente frío avanza más rápido y reduce el sector cálido hasta ocluirlo.",
+   "whyNot": [
+    "No es una cuestión de altitud.",
+    "Es lo contrario.",
+    null,
+    "No es más cálido, es más frío."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.13.013",
+   "type": "concepto",
+   "level": 1,
+   "q": "En invierno, delante de un frente cálido, el peligro especial es:",
+   "options": [
+    "La lluvia engelante",
+    "Las microrráfagas",
+    "La calima",
+    "El granizo grande"
+   ],
+   "correct": 0,
+   "why": "La lluvia del aire cálido cae sobre aire bajo cero y se congela al contacto con el avión.",
+   "whyNot": [
+    null,
+    "Es otro fenómeno.",
+    "No es propio de ese frente.",
+    "No es propio de ese frente."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.13.014",
+   "type": "concepto",
+   "level": 2,
+   "q": "El sector cálido de una borrasca frontal se caracteriza por:",
+   "options": [
+    "Aire frío y seco",
+    "Estratos, llovizna, niebla y temperatura alta",
+    "Cielos despejados",
+    "Cumulonimbos y granizo"
+   ],
+   "correct": 1,
+   "why": "Es aire tropical marítimo cálido y húmedo que sube lentamente: St, llovizna y niebla.",
+   "whyNot": [
+    "Es aire cálido y húmedo.",
+    null,
+    "Hay nubosidad baja.",
+    "Es del frente frío."
+   ],
+   "ref": "AEMET apuntes"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.050.13.01",
+   "front": "Frente cálido",
+   "back": "Pendiente 1:150; Ci, Cs, As, Ns; lluvia continua y ancha; el aire cálido asciende sobre el frío"
+  },
+  {
+   "id": "c.050.13.02",
+   "front": "Frente frío",
+   "back": "Pendiente 1:50 a 1:100; Cb y chubascos en banda estrecha; más rápido que el cálido"
+  },
+  {
+   "id": "c.050.13.03",
+   "front": "Paso de un frente (hemisferio norte)",
+   "back": "El viento rola a la derecha"
+  },
+  {
+   "id": "c.050.13.04",
+   "front": "Tras el frente frío",
+   "back": "Presión sube, temperatura baja, aire inestable y buena visibilidad"
+  },
+  {
+   "id": "c.050.13.05",
+   "front": "Oclusión",
+   "back": "El frío alcanza al cálido y eleva el sector cálido; tiempo mixto"
+  },
+  {
+   "id": "c.050.13.06",
+   "front": "Ciclo de la onda frontal",
+   "back": "Onda, ciclón joven con sector cálido, oclusión y disipación (3 a 5 días)"
+  }
+ ]
+}

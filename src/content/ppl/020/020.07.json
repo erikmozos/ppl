@@ -1,0 +1,470 @@
+{
+  "lesson": {
+    "id": "020.07",
+    "title": "Electricidad básica",
+    "summary": "Tensión, corriente y resistencia, ley de Ohm, potencia, corriente continua y alterna, circuitos en serie y en paralelo, y magnetismo básico, con ejemplos resueltos y ejemplos de un avión ligero.",
+    "objectives": [
+      "Definir tensión, corriente, resistencia y potencia y sus unidades",
+      "Aplicar la ley de Ohm y la fórmula de la potencia",
+      "Diferenciar corriente continua y alterna",
+      "Calcular resistencias equivalentes en serie y en paralelo y su efecto en corrientes y tensiones",
+      "Explicar las bases del magnetismo y la inducción, que explican el alternador y el magneto"
+    ],
+    "sections": [
+      {
+        "title": "Tensión, corriente y resistencia",
+        "text": [
+          "La corriente eléctrica es un flujo de electrones por un conductor. Tres magnitudes la describen, y se entienden bien con la analogía del agua en una tubería."
+        ],
+        "table": {
+          "caption": "Magnitudes básicas",
+          "head": [
+            "Magnitud",
+            "Símbolo",
+            "Unidad",
+            "Analogía hidráulica"
+          ],
+          "rows": [
+            [
+              "Tensión (voltaje)",
+              "V",
+              "voltio (V)",
+              "La presión del agua"
+            ],
+            [
+              "Corriente (intensidad)",
+              "I",
+              "amperio (A)",
+              "El caudal de agua"
+            ],
+            [
+              "Resistencia",
+              "R",
+              "ohmio (Ω)",
+              "El estrechamiento de la tubería"
+            ],
+            [
+              "Potencia",
+              "P",
+              "vatio (W)",
+              "La energía por segundo del chorro"
+            ]
+          ],
+          "src": "PHAK cap. 6"
+        },
+        "bullets": [
+          "Los aviones ligeros usan **corriente continua** a **14 V** (batería de 12 V y alternador) o **28 V** (batería de 24 V), según el modelo.",
+          "La **tensión** empuja a los electrones; la **resistencia** se opone al paso de la corriente."
+        ]
+      },
+      {
+        "title": "Ley de Ohm y potencia",
+        "text": [
+          "La **ley de Ohm** relaciona las tres magnitudes: a mayor tensión, mayor corriente; a mayor resistencia, menor corriente. La **potencia eléctrica** que consume un aparato es el producto de tensión por corriente."
+        ],
+        "formulas": [
+          {
+            "f": "V = I × R",
+            "note": "Tensión (V) = corriente (A) × resistencia (Ω)."
+          },
+          {
+            "f": "P = V × I",
+            "note": "Potencia (W) = tensión (V) × corriente (A); también P = I² × R = V² ÷ R."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Una lámpara de 28 V consume 2 A. ¿Qué resistencia tiene y qué potencia disipa?",
+            "a": "R = V ÷ I = 28 ÷ 2 = 14 Ω. P = V × I = 28 × 2 = 56 W."
+          },
+          {
+            "q": "Una radio conectada a 14 V consume 140 W. ¿Qué corriente circula?",
+            "a": "I = P ÷ V = 140 ÷ 14 = 10 A. El disyuntor de ese circuito tiene que ser de más de 10 A y protege el cableado."
+          },
+          {
+            "q": "¿Qué ocurre con la corriente si se duplica la resistencia con la misma tensión?",
+            "a": "Se reduce a la mitad (I = V ÷ R)."
+          }
+        ]
+      },
+      {
+        "title": "Corriente continua y alterna",
+        "text": [
+          "En la **corriente continua (CC)**, los electrones circulan siempre en el mismo sentido. La dan las baterías y se usa en casi todos los sistemas de un avión ligero. En la **corriente alterna (CA)**, el sentido y el valor cambian de forma periódica, con una **frecuencia** en hercios (Hz). El **alternador** de un avión ligero genera en realidad CA, que **rectifica** (convierte en CC) con diodos antes de distribuirla (020.08). Las redes domésticas europeas usan CA a 50 Hz; en aviones grandes se usa CA a 400 Hz.",
+          "Un **diodo** deja pasar la corriente solo en un sentido: es la pieza que rectifica. Un **condensador** almacena carga y filtra variaciones; una **bobina** se opone a los cambios de corriente."
+        ]
+      },
+      {
+        "title": "Circuitos en serie y en paralelo",
+        "text": [
+          "En un circuito en **serie**, los elementos se conectan uno detrás de otro: la corriente es **la misma** en todos y la tensión se **reparte**. La resistencia equivalente es la **suma**. En un circuito en **paralelo**, los elementos se conectan entre los mismos dos puntos: la tensión es **la misma** en todos y la corriente se **reparte**. La resistencia equivalente es **menor** que la menor de las resistencias.",
+          "En un avión, casi todos los consumidores (radios, luces, bombas) están en **paralelo** sobre la barra: así cada uno recibe la tensión completa y se puede apagar sin afectar a los demás. Los **fusibles** y **disyuntores** van en **serie** con el consumidor, para cortar el circuito si la corriente excede un valor."
+        ],
+        "formulas": [
+          {
+            "f": "Serie: R = R₁ + R₂ + …",
+            "note": "La corriente es la misma; las tensiones se suman."
+          },
+          {
+            "f": "Paralelo: 1/R = 1/R₁ + 1/R₂ + …",
+            "note": "La tensión es la misma; las corrientes se suman. Con dos resistencias iguales, R = R₁ ÷ 2."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Dos resistencias de 4 Ω y 6 Ω en serie con una batería de 12 V. ¿Qué corriente circula?",
+            "a": "R = 4 + 6 = 10 Ω. I = 12 ÷ 10 = 1,2 A, igual en las dos."
+          },
+          {
+            "q": "Dos resistencias de 6 Ω en paralelo. ¿Cuál es la resistencia equivalente?",
+            "a": "1/R = 1/6 + 1/6 = 2/6, luego R = 3 Ω."
+          }
+        ]
+      },
+      {
+        "title": "Magnetismo",
+        "text": [
+          "Un **imán** tiene dos polos, norte y sur; polos iguales se repelen y distintos se atraen. Un imán crea un **campo magnético**, representado por líneas de fuerza que salen del polo norte y entran en el sur. Algunos materiales (hierro, níquel, cobalto) son **ferromagnéticos**: se imantan y se atraen con un imán. Un imán **permanente** conserva su campo; un **electroimán** lo crea al pasar corriente por una bobina.",
+          "El vínculo entre electricidad y magnetismo explica casi todo el equipo eléctrico del avión. Una corriente crea un campo magnético (**electromagnetismo**: relés, solenoides, motor de arranque). Y un campo magnético **variable** en un conductor induce una **tensión** (**inducción electromagnética**, ley de Faraday), que es el principio del **alternador** y del **magneto** (020.14). El motor eléctrico es el proceso inverso."
+        ]
+      }
+    ],
+    "numbers": [
+      "V = I × R; P = V × I",
+      "Serie: R = suma y la corriente es la misma; paralelo: la tensión es la misma y 1/R es la suma de 1/R",
+      "Aviones ligeros: CC a 14 V (batería de 12 V) o 28 V (24 V)",
+      "El alternador genera CA y la rectifica a CC con diodos",
+      "Un campo magnético variable induce tensión (Faraday): alternador y magneto"
+    ],
+    "traps": [
+      "Confundir tensión (V) con corriente (A).",
+      "Sumar resistencias en paralelo como si estuvieran en serie.",
+      "Pensar que en serie la tensión es la misma en todos los elementos: es la corriente.",
+      "Olvidar que los fusibles van en serie con el circuito que protegen.",
+      "Dar por hecho que la batería suministra CA: es CC."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 6: sistema eléctrico",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "FAA, Aviation Maintenance Technician Handbook – General, cap. 9: electricidad básica",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/amt_general_handbook"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28: panel eléctrico",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172: panel eléctrico",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.07.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La unidad de la tensión eléctrica es:",
+      "options": [
+        "El voltio",
+        "El amperio",
+        "El ohmio",
+        "El vatio"
+      ],
+      "correct": 0,
+      "why": "La tensión se mide en voltios (V).",
+      "whyNot": [
+        null,
+        "El amperio mide la corriente.",
+        "El ohmio mide la resistencia.",
+        "El vatio mide la potencia."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.07.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "La ley de Ohm se expresa como:",
+      "options": [
+        "I = V × R",
+        "P = V ÷ I",
+        "R = V × I",
+        "V = I × R"
+      ],
+      "correct": 3,
+      "why": "La tensión es el producto de la corriente por la resistencia.",
+      "whyNot": [
+        "I = V ÷ R, no V × R.",
+        "La potencia es V × I.",
+        "La resistencia es V ÷ I.",
+        null
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.07.003",
+      "type": "calculo",
+      "level": 2,
+      "q": "Una resistencia de 10 Ω conectada a 24 V. ¿Qué corriente circula?",
+      "options": [
+        "240 A",
+        "2,4 A",
+        "14 A",
+        "0,42 A"
+      ],
+      "correct": 1,
+      "why": "I = V ÷ R = 24 ÷ 10 = 2,4 A.",
+      "whyNot": [
+        "Multiplica en lugar de dividir.",
+        null,
+        "Suma los valores.",
+        "Divide la resistencia entre la tensión."
+      ],
+      "ref": "V = I × R"
+    },
+    {
+      "id": "020.07.004",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un aparato de 28 V consume 5 A. ¿Qué potencia disipa?",
+      "options": [
+        "5,6 W",
+        "33 W",
+        "23 W",
+        "140 W"
+      ],
+      "correct": 3,
+      "why": "P = V × I = 28 × 5 = 140 W.",
+      "whyNot": [
+        "Divide 28 entre 5.",
+        "Suma los valores.",
+        "Resta los valores.",
+        null
+      ],
+      "ref": "P = V × I"
+    },
+    {
+      "id": "020.07.005",
+      "type": "calculo",
+      "level": 2,
+      "q": "Una radio de 70 W conectada a 14 V consume una corriente de:",
+      "options": [
+        "980 A",
+        "84 A",
+        "0,2 A",
+        "5 A"
+      ],
+      "correct": 3,
+      "why": "I = P ÷ V = 70 ÷ 14 = 5 A.",
+      "whyNot": [
+        "Multiplica en vez de dividir.",
+        "Suma 70 y 14.",
+        "Divide en sentido inverso.",
+        null
+      ],
+      "ref": "P = V × I"
+    },
+    {
+      "id": "020.07.006",
+      "type": "calculo",
+      "level": 2,
+      "q": "Dos resistencias de 3 Ω y 7 Ω en serie dan una resistencia total de:",
+      "options": [
+        "10 Ω",
+        "2,1 Ω",
+        "4 Ω",
+        "21 Ω"
+      ],
+      "correct": 0,
+      "why": "En serie las resistencias se suman: 3 + 7 = 10 Ω.",
+      "whyNot": [
+        null,
+        "Es el producto dividido por la suma, que corresponde a paralelo.",
+        "Es la resta.",
+        "Es el producto."
+      ],
+      "ref": "Serie: R = R₁ + R₂"
+    },
+    {
+      "id": "020.07.007",
+      "type": "calculo",
+      "level": 2,
+      "q": "Dos resistencias iguales de 8 Ω en paralelo dan una resistencia total de:",
+      "options": [
+        "4 Ω",
+        "16 Ω",
+        "8 Ω",
+        "64 Ω"
+      ],
+      "correct": 0,
+      "why": "En paralelo, 1/R = 1/8 + 1/8 = 2/8, luego R = 4 Ω.",
+      "whyNot": [
+        null,
+        "Es la suma, que corresponde a serie.",
+        "Sería de una sola resistencia.",
+        "Es el producto."
+      ],
+      "ref": "Paralelo: 1/R = 1/R₁ + 1/R₂"
+    },
+    {
+      "id": "020.07.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un circuito en serie, es la misma en todos los elementos:",
+      "options": [
+        "La tensión",
+        "La potencia",
+        "La corriente",
+        "La resistencia"
+      ],
+      "correct": 2,
+      "why": "En serie hay un único camino: circula la misma corriente por todos.",
+      "whyNot": [
+        "La tensión se reparte en serie.",
+        "La potencia depende de cada elemento.",
+        null,
+        "La resistencia puede ser distinta en cada uno."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.07.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un circuito en paralelo, es la misma en todos los elementos:",
+      "options": [
+        "La corriente",
+        "La tensión",
+        "La resistencia",
+        "La potencia"
+      ],
+      "correct": 1,
+      "why": "Cada elemento está conectado a los mismos dos puntos: recibe la misma tensión.",
+      "whyNot": [
+        "La corriente se reparte en paralelo.",
+        null,
+        "Cada uno tiene su resistencia.",
+        "La potencia depende de cada elemento."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.07.010",
+      "type": "concepto",
+      "level": 1,
+      "q": "Los consumidores de un avión (radio, luces, bombas) se conectan a la barra en:",
+      "options": [
+        "Serie",
+        "Paralelo",
+        "Serie y se apagan juntos",
+        "Corriente alterna sin barra"
+      ],
+      "correct": 1,
+      "why": "En paralelo cada consumidor recibe la tensión completa y se puede apagar sin afectar a los demás.",
+      "whyNot": [
+        "En serie, apagar uno apagaría todos.",
+        null,
+        "No se conectan en serie.",
+        "Se alimentan con corriente continua desde una barra."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.07.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un diodo en un alternador sirve para:",
+      "options": [
+        "Almacenar carga",
+        "Aumentar la tensión",
+        "Rectificar la corriente alterna a continua",
+        "Limitar la corriente"
+      ],
+      "correct": 2,
+      "why": "Deja pasar la corriente solo en un sentido y convierte la CA en CC.",
+      "whyNot": [
+        "Eso hace un condensador.",
+        "No aumenta la tensión.",
+        null,
+        "Eso lo hace un disyuntor o un fusible."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.07.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "El principio de inducción electromagnética, en el que se basan el alternador y el magneto, dice que:",
+      "options": [
+        "Los imanes iguales se atraen",
+        "Un conductor frío conduce mejor",
+        "Un campo magnético variable induce una tensión en un conductor",
+        "La corriente continua no crea campo magnético"
+      ],
+      "correct": 2,
+      "why": "La variación del campo magnético induce una tensión (ley de Faraday).",
+      "whyNot": [
+        "Los polos iguales se repelen.",
+        "La conductividad no depende de esa idea.",
+        null,
+        "La corriente continua sí crea campo magnético."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.07.013",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Dónde se conecta un fusible respecto al circuito que protege?",
+      "options": [
+        "En serie",
+        "En paralelo",
+        "Entre la batería y el alternador solamente",
+        "En el exterior del avión"
+      ],
+      "correct": 0,
+      "why": "En serie, para que toda la corriente del circuito pase por él y lo corte si excede su valor.",
+      "whyNot": [
+        null,
+        "En paralelo no protegería al circuito.",
+        "Protege cada circuito individual.",
+        "Va en el circuito eléctrico, no en el exterior."
+      ],
+      "ref": "PHAK cap. 6"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.07.01",
+      "front": "Ley de Ohm y potencia",
+      "back": "V = I × R; P = V × I"
+    },
+    {
+      "id": "c.020.07.02",
+      "front": "Serie y paralelo",
+      "back": "Serie: misma corriente, R = suma. Paralelo: misma tensión, 1/R = suma de 1/R"
+    },
+    {
+      "id": "c.020.07.03",
+      "front": "Corriente continua y alterna",
+      "back": "CC: un solo sentido (batería). CA: cambia de sentido; el alternador genera CA y la rectifica"
+    },
+    {
+      "id": "c.020.07.04",
+      "front": "Inducción electromagnética",
+      "back": "Un campo magnético variable induce tensión: alternador y magneto"
+    },
+    {
+      "id": "c.020.07.05",
+      "front": "Dónde van fusibles y disyuntores",
+      "back": "En serie con el circuito que protegen"
+    }
+  ]
+}

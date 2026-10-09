@@ -1,0 +1,500 @@
+{
+ "lesson": {
+  "title": "Tiempo",
+  "summary": "Tiempo solar aparente y medio, hora media local, UTC, hora oficial de España (península, Baleares y Canarias), línea de cambio de fecha, orto, ocaso, crepúsculo civil y noche aeronáutica.",
+  "objectives": [
+   "Convertir longitud en diferencia horaria con 15° = 1 h",
+   "Pasar de UTC a hora media local y a hora oficial de España en invierno y verano",
+   "Aplicar la línea de cambio de fecha",
+   "Definir orto, ocaso, crepúsculo civil y noche en SERA",
+   "Usar siempre UTC en la hora aeronáutica (planes, METAR, NOTAM)"
+  ],
+  "sections": [
+   {
+    "title": "De dónde viene la hora",
+    "text": [
+     "La Tierra gira 360° en 24 horas, es decir, **15° cada hora** o **1° cada 4 minutos** (1′ de longitud = 4 segundos). Cuando el Sol está en el meridiano de un lugar es mediodía allí. Un lugar más al este ve el Sol antes (su hora va por delante) y uno más al oeste, después.",
+     "El **tiempo solar aparente** es el que marca el Sol real, y no es uniforme: la órbita es elíptica y el eje está inclinado, y por eso el mediodía solar se adelanta o se retrasa hasta unos 16 minutos a lo largo del año (**ecuación del tiempo**). El **tiempo solar medio** es el de un Sol ficticio que se mueve a velocidad constante: es el que usan los relojes. La **hora media local (LMT)** es el tiempo solar medio del meridiano del lugar, y es la que se cuenta con 15° = 1 h.",
+     "La hora de referencia mundial en aviación es la **UTC** (tiempo universal coordinado), la hora media del meridiano de Greenwich. Se escribe con cuatro cifras seguidas de Z o UTC (1430Z). Los planes de vuelo, el METAR, el TAF, los NOTAM y las horas de la torre usan UTC."
+    ],
+    "formulas": [
+     {
+      "f": "LMT = UTC + longitud (en hora) ; este +, oeste −",
+      "note": "Longitud en horas: grados / 15; en minutos de tiempo, grados × 4 y minutos de arco × 4 segundos."
+     },
+     {
+      "f": "Hora oficial = UTC + 1 (invierno) o UTC + 2 (verano) en la península y Baleares",
+      "note": "Canarias: UTC + 0 en invierno y UTC + 1 en verano."
+     }
+    ]
+   },
+   {
+    "title": "Hora media local",
+    "text": [
+     "Para pasar longitud a diferencia horaria: grados × 4 = minutos de tiempo; minutos de arco × 4 = segundos de tiempo. Si la longitud es **este**, la LMT va por delante de UTC (se suma); si es **oeste**, por detrás (se resta)."
+    ],
+    "examples": [
+     {
+      "q": "Madrid está en 003° 40′ W. Hora media local cuando son las 12:00 UTC.",
+      "a": "3° × 4 = 12 min; 40′ × 4 = 160 s = 2 min 40 s. Total 14 min 40 s al oeste: LMT = 12:00:00 − 0:14:40 = 11:45:20."
+     },
+     {
+      "q": "Barcelona está en 002° 10′ E. LMT a las 10:00 UTC.",
+      "a": "2° × 4 = 8 min; 10′ × 4 = 40 s. Total 8 min 40 s al este: LMT = 10:08:40."
+     },
+     {
+      "q": "Un meridiano de 075° W. ¿Diferencia con UTC?",
+      "a": "75° / 15 = 5 h al oeste: LMT = UTC − 5 h."
+     }
+    ]
+   },
+   {
+    "title": "Hora oficial en España",
+    "text": [
+     "Los husos horarios agrupan países con una misma hora legal. La **península y Baleares** usan el huso de la Europa central: **UTC+1 en invierno** (CET) y **UTC+2 en verano** (CEST). **Canarias** usa la hora de la Europa occidental: **UTC+0 en invierno** (WET) y **UTC+1 en verano** (WEST). Por eso en Canarias es **siempre una hora menos** que en la península.",
+     "El horario de verano de la Unión Europea empieza el **último domingo de marzo** y termina el **último domingo de octubre**, en ambos casos a la 01:00 UTC. En todo el espacio aéreo la referencia es UTC: no hay que sumar nada para escribir un plan de vuelo, pero sí para saber cuándo anochece según tu reloj."
+    ],
+    "table": {
+     "caption": "Hora oficial para 10:00 UTC",
+     "head": [
+      "Lugar",
+      "Invierno",
+      "Verano"
+     ],
+     "rows": [
+      [
+       "Península y Baleares",
+       "11:00 (UTC+1)",
+       "12:00 (UTC+2)"
+      ],
+      [
+       "Canarias",
+       "10:00 (UTC+0)",
+       "11:00 (UTC+1)"
+      ]
+     ],
+     "src": "Normas del horario de verano de la UE"
+    },
+    "note": {
+     "kind": "es",
+     "text": "Ejemplo útil: salida de Cuatro Vientos a las 14:00 hora local de verano, es decir, 12:00 UTC. Un METAR emitido a las 1200Z se ha observado a las 14:00 hora peninsular en verano."
+    }
+   },
+   {
+    "title": "Calculadora de tiempo",
+    "text": [
+     "Cambia la longitud, la hora UTC y la época del año para ver la hora media local y la hora oficial. Comprueba antes los ejemplos de arriba a mano."
+    ],
+    "figure": "calc:time"
+   },
+   {
+    "title": "Línea de cambio de fecha",
+    "text": [
+     "Los 24 husos de 15° se cierran en el meridiano de **180°**, donde la hora de los dos lados difiere en 24 horas. Ahí está la **línea internacional de cambio de fecha**, con desvíos para no cortar países. Al cruzarla **hacia el este** (de oeste a este) la fecha **retrocede** un día, y al cruzarla **hacia el oeste** la fecha **avanza** un día. La hora del reloj no se cambia por la línea en sí: es la fecha la que se ajusta."
+    ]
+   },
+   {
+    "title": "Orto, ocaso, crepúsculos y noche",
+    "text": [
+     "El **orto** es el instante en que el borde superior del Sol aparece en el horizonte, y el **ocaso** el instante en que desaparece. En verano y en latitudes más al norte, los días son más largos; en invierno, más cortos. A lo largo de España la hora del orto y del ocaso varía notablemente de este a oeste: el Sol sale antes en Girona que en A Coruña.",
+     "Antes del orto y después del ocaso queda luz difusa: es el **crepúsculo**. El **crepúsculo civil** termina por la tarde (y empieza por la mañana) cuando el centro del Sol está **6° por debajo del horizonte**. El **náutico** llega a los 12° y el **astronómico** a los 18°. En el crepúsculo civil todavía se distinguen el horizonte y las formas del terreno.",
+     "En la normativa aeronáutica (SERA y OACI), la **noche** son las horas comprendidas entre el **final del crepúsculo civil vespertino y el comienzo del crepúsculo civil matutino**. Por tanto, desde el ocaso hasta el fin del crepúsculo civil todavía es de día a efectos de las reglas, y los vuelos VFR de noche exigen las condiciones de SERA.5005 y la habilitación nocturna. Las luces de navegación deben estar encendidas desde el ocaso al orto."
+    ],
+    "examples": [
+     {
+      "q": "Un orto a las 07:00 hora oficial de verano en Madrid. ¿A qué hora es en UTC y en LMT?",
+      "a": "Hora oficial de verano = UTC + 2, así que UTC = 05:00. LMT de Madrid = UTC − 14 min 40 s = 04:45:20."
+     }
+    ]
+   }
+  ],
+  "numbers": [
+   "15° = 1 h; 1° = 4 min; 1′ = 4 s",
+   "Madrid (003° 40′ W): LMT = UTC − 14 min 40 s",
+   "Península y Baleares: UTC+1 invierno, UTC+2 verano; Canarias: UTC+0 invierno, UTC+1 verano",
+   "Cambio de hora: último domingo de marzo y de octubre, 01:00 UTC",
+   "Crepúsculo civil: Sol a 6° bajo el horizonte",
+   "Cruzar la línea de fecha hacia el este: se resta un día; hacia el oeste: se suma",
+   "Hora aeronáutica: UTC"
+  ],
+  "traps": [
+   "En la LMT el este se suma y el oeste se resta; invertirlo es el error más frecuente.",
+   "Mezclar hora oficial y UTC: los METAR y los planes de vuelo van en UTC.",
+   "Canarias no tiene la misma hora que la península: siempre una hora menos.",
+   "Noche en SERA no es «después del ocaso», sino después del final del crepúsculo civil.",
+   "Usar 1′ de longitud = 1 min de tiempo: son 4 segundos."
+  ],
+  "spain": [
+   "El horario de verano en España sigue la normativa europea (último domingo de marzo y octubre, 01:00 UTC). Canarias mantiene una hora menos que la península todo el año."
+  ],
+  "sources": [
+   {
+    "title": "Reglamento (UE) 923/2012 (SERA), definiciones de día y noche; Anexo 2 de la OACI"
+   },
+   {
+    "title": "Directiva 2000/84/CE sobre las disposiciones relativas a la hora de verano"
+   },
+   {
+    "title": "ENAIRE, AIP España, GEN 2.1: unidades de medida, hora (UTC)",
+    "url": "https://aip.enaire.es/"
+   }
+  ],
+  "id": "060.02",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "060.02.001",
+   "type": "regla",
+   "level": 1,
+   "q": "Cada 15° de longitud corresponden a una diferencia horaria de:",
+   "options": [
+    "15 minutos",
+    "4 minutos",
+    "1 minuto",
+    "1 hora"
+   ],
+   "correct": 3,
+   "why": "La Tierra gira 360° en 24 h: 15° por hora, es decir, 1° cada 4 minutos.",
+   "whyNot": [
+    "No hay relación con 15 minutos.",
+    "Son los minutos de tiempo por cada grado.",
+    "Un minuto de tiempo son 15′ de arco.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.02.002",
+   "type": "calculo",
+   "level": 2,
+   "q": "Madrid está en 003° 40′ W. Cuando son las 12:00 UTC, la hora media local es:",
+   "options": [
+    "11:46:00",
+    "11:44:00",
+    "12:14:40",
+    "11:45:20"
+   ],
+   "correct": 3,
+   "why": "3° × 4 = 12 min y 40′ × 4 = 160 s; en total 14 min 40 s, que se restan por ser oeste: 11:45:20.",
+   "whyNot": [
+    "Resulta de restar 14 min en lugar de 14 min 40 s.",
+    "Resulta de restar 16 min, por un error de cálculo.",
+    "Resulta de sumar el desfase en vez de restarlo: el oeste va por detrás.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.02.003",
+   "type": "calculo",
+   "level": 2,
+   "q": "Barcelona está en 002° 10′ E. A las 10:00 UTC su hora media local es:",
+   "options": [
+    "10:02:10",
+    "10:10:00",
+    "09:51:20",
+    "10:08:40"
+   ],
+   "correct": 3,
+   "why": "2° × 4 = 8 min y 10′ × 4 = 40 s: +8 min 40 s por ser este.",
+   "whyNot": [
+    "Confunde grados y minutos con minutos de tiempo sin multiplicar por 4.",
+    "Confunde minutos de arco con minutos de tiempo.",
+    "Resulta de restar el desfase: el este va por delante.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.02.004",
+   "type": "regla",
+   "level": 1,
+   "q": "En invierno, la hora oficial de la península es:",
+   "options": [
+    "UTC+1",
+    "UTC+0",
+    "UTC+2",
+    "UTC−1"
+   ],
+   "correct": 0,
+   "why": "La península usa el huso CET (UTC+1) en invierno y CEST (UTC+2) en verano.",
+   "whyNot": [
+    null,
+    "Es la hora de Canarias en invierno.",
+    "Es la hora de verano.",
+    "Está por detrás de UTC, lo cual no es el caso de España."
+   ],
+   "ref": "Directiva 2000/84/CE"
+  },
+  {
+   "id": "060.02.005",
+   "type": "regla",
+   "level": 1,
+   "q": "En verano, la hora oficial de Canarias es:",
+   "options": [
+    "UTC+2",
+    "UTC+1",
+    "UTC+0",
+    "UTC−1"
+   ],
+   "correct": 1,
+   "why": "Canarias usa UTC+0 en invierno y UTC+1 en verano, siempre una hora menos que la península.",
+   "whyNot": [
+    "Es la hora de la península en verano.",
+    null,
+    "Es la hora de Canarias en invierno.",
+    "No corresponde a ningún huso oficial español."
+   ],
+   "ref": "Directiva 2000/84/CE"
+  },
+  {
+   "id": "060.02.006",
+   "type": "calculo",
+   "level": 1,
+   "q": "Son las 14:00 hora peninsular en agosto. ¿Qué hora UTC es?",
+   "options": [
+    "16:00",
+    "12:00",
+    "13:00",
+    "15:00"
+   ],
+   "correct": 1,
+   "why": "En agosto la península va en UTC+2: UTC = 14:00 − 2 h = 12:00.",
+   "whyNot": [
+    "Suma el huso dos veces.",
+    null,
+    "Restaría una sola hora, que es el huso de invierno.",
+    "Suma en vez de restar."
+   ],
+   "ref": "Directiva 2000/84/CE"
+  },
+  {
+   "id": "060.02.007",
+   "type": "concepto",
+   "level": 1,
+   "q": "La hora que se usa en los planes de vuelo, METAR y NOTAM es:",
+   "options": [
+    "La hora oficial local",
+    "UTC",
+    "La hora solar aparente",
+    "La hora media local"
+   ],
+   "correct": 1,
+   "why": "La aviación usa UTC en todo el mundo para evitar errores por husos y horarios de verano.",
+   "whyNot": [
+    "La hora oficial varía por país y época.",
+    null,
+    "Es la del Sol real, no uniforme.",
+    "Cambia con el meridiano del lugar."
+   ],
+   "ref": "Anexo 3 OACI; SERA"
+  },
+  {
+   "id": "060.02.008",
+   "type": "regla",
+   "level": 1,
+   "q": "El crepúsculo civil termina cuando el centro del Sol está:",
+   "options": [
+    "18° por debajo",
+    "12° por debajo",
+    "6° por debajo del horizonte",
+    "En el horizonte"
+   ],
+   "correct": 2,
+   "why": "El crepúsculo civil acaba con el centro del Sol a 6° bajo el horizonte.",
+   "whyNot": [
+    "Es el crepúsculo astronómico.",
+    "Es el crepúsculo náutico.",
+    null,
+    "Es el ocaso."
+   ],
+   "ref": "SERA.1001; Anexo 2 OACI"
+  },
+  {
+   "id": "060.02.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Según SERA, la noche es el periodo comprendido entre:",
+   "options": [
+    "El mediodía y la medianoche",
+    "El ocaso y el orto",
+    "El final del crepúsculo civil vespertino y el comienzo del matutino",
+    "El ocaso y el crepúsculo astronómico"
+   ],
+   "correct": 2,
+   "why": "La noche aeronáutica empieza cuando acaba el crepúsculo civil por la tarde y termina cuando empieza por la mañana.",
+   "whyNot": [
+    "No es un periodo definido por la norma.",
+    "Esa es la noche astronómica sin crepúsculos; la norma no la usa así.",
+    null,
+    "El crepúsculo astronómico no se usa en la definición."
+   ],
+   "ref": "SERA.1001"
+  },
+  {
+   "id": "060.02.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "Al cruzar la línea internacional de cambio de fecha hacia el este, la fecha:",
+   "options": [
+    "No cambia",
+    "Avanza 12 horas",
+    "Retrocede un día",
+    "Avanza un día"
+   ],
+   "correct": 2,
+   "why": "Hacia el este se repite el día (se resta uno); hacia el oeste se salta un día (se suma).",
+   "whyNot": [
+    "Siempre cambia un día.",
+    "El cambio es un día completo.",
+    null,
+    "Eso ocurre al cruzarla hacia el oeste."
+   ],
+   "ref": "Navegación general"
+  },
+  {
+   "id": "060.02.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "El tiempo solar aparente se diferencia del medio porque:",
+   "options": [
+    "La velocidad del Sol real respecto al meridiano varía a lo largo del año",
+    "La Tierra gira más rápido en verano",
+    "El eje de la Tierra es vertical",
+    "El Sol se mueve a velocidad constante"
+   ],
+   "correct": 0,
+   "why": "La órbita elíptica y la inclinación del eje hacen que el mediodía solar varíe hasta unos 16 minutos (ecuación del tiempo).",
+   "whyNot": [
+    null,
+    "La rotación es regular.",
+    "La Tierra tiene un eje inclinado.",
+    "Esa es la definición del tiempo medio."
+   ],
+   "ref": "Astronomía de posición"
+  },
+  {
+   "id": "060.02.012",
+   "type": "regla",
+   "level": 2,
+   "q": "El horario de verano en la UE comienza:",
+   "options": [
+    "El 1 de abril",
+    "El 21 de junio",
+    "El último domingo de marzo a la 01:00 UTC",
+    "El último domingo de octubre"
+   ],
+   "correct": 2,
+   "why": "La Directiva 2000/84/CE fija el último domingo de marzo para el inicio y el último de octubre para el fin, a la 01:00 UTC.",
+   "whyNot": [
+    "No es una fecha fija.",
+    "Es el solsticio, no el cambio de hora.",
+    null,
+    "Es la fecha de fin del horario de verano."
+   ],
+   "ref": "Directiva 2000/84/CE"
+  },
+  {
+   "id": "060.02.013",
+   "type": "lectura",
+   "level": 2,
+   "q": "Un METAR de Madrid emitido el 15 de julio incluye el grupo indicado. La hora oficial local de la observación es:",
+   "data": "LEMD 151200Z 24008KT CAVOK 31/12 Q1014 NOSIG",
+   "options": [
+    "14:00",
+    "10:00",
+    "12:00",
+    "13:00"
+   ],
+   "correct": 0,
+   "why": "La hora del METAR es UTC (1200Z). En julio la península va en UTC+2, es decir, 14:00.",
+   "whyNot": [
+    null,
+    "Resta dos horas en vez de sumarlas.",
+    "Es la hora UTC, sin sumar el huso.",
+    "Suma una sola hora, la de invierno."
+   ],
+   "ref": "Anexo 3 OACI"
+  },
+  {
+   "id": "060.02.014",
+   "type": "calculo",
+   "level": 3,
+   "q": "Madrid, orto a las 07:00 hora oficial de verano. La hora media local del orto es:",
+   "options": [
+    "06:00:00",
+    "04:45:20",
+    "05:14:40",
+    "07:14:40"
+   ],
+   "correct": 1,
+   "why": "UTC = 07:00 − 2 h = 05:00. LMT = UTC − 14:40 = 04:45:20.",
+   "whyNot": [
+    "Resulta de restar solo una hora de huso.",
+    null,
+    "Suma 14 min 40 s a UTC en vez de restarlos.",
+    "Suma el desfase a la hora oficial sin convertir a UTC."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.02.015",
+   "type": "concepto",
+   "level": 1,
+   "q": "En una latitud de 40° N, el día más largo es en:",
+   "options": [
+    "El solsticio de junio",
+    "El solsticio de diciembre",
+    "El equinoccio de septiembre",
+    "El equinoccio de marzo"
+   ],
+   "correct": 0,
+   "why": "El 21 de junio el Sol alcanza la mayor declinación norte y el día es el más largo del año en el hemisferio norte.",
+   "whyNot": [
+    null,
+    "Es el día más corto.",
+    "Días y noches iguales de nuevo.",
+    "Los días son iguales a las noches."
+   ],
+   "ref": "Astronomía de posición"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.060.02.01",
+   "front": "Longitud y hora",
+   "back": "15° = 1 hora; 1° = 4 min; 1′ = 4 s"
+  },
+  {
+   "id": "c.060.02.02",
+   "front": "Hora media local desde UTC",
+   "back": "Este: suma; oeste: resta. Madrid 003° 40′ W: UTC − 14 min 40 s"
+  },
+  {
+   "id": "c.060.02.03",
+   "front": "Hora oficial de la península y Baleares",
+   "back": "UTC+1 en invierno; UTC+2 en verano"
+  },
+  {
+   "id": "c.060.02.04",
+   "front": "Hora oficial de Canarias",
+   "back": "UTC+0 en invierno; UTC+1 en verano (una hora menos que la península)"
+  },
+  {
+   "id": "c.060.02.05",
+   "front": "Crepúsculo civil",
+   "back": "Termina con el Sol a 6° bajo el horizonte"
+  },
+  {
+   "id": "c.060.02.06",
+   "front": "Noche en SERA",
+   "back": "Entre el fin del crepúsculo civil vespertino y el comienzo del matutino"
+  },
+  {
+   "id": "c.060.02.07",
+   "front": "Línea de cambio de fecha",
+   "back": "180°: hacia el este se resta un día; hacia el oeste se suma"
+  }
+ ]
+}

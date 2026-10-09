@@ -1,0 +1,804 @@
+{
+  "lesson": {
+    "id": "010.08",
+    "title": "Plan de vuelo, autorizaciones y servicio ATC",
+    "summary": "Cuándo es obligatorio el plan de vuelo, cómo se presenta, modifica y cierra, casillas del plan OACI, autorizaciones ATC, desviaciones, comunicaciones obligatorias, interferencia ilícita e interceptación.",
+    "objectives": [
+      "Saber cuándo es obligatorio presentar un plan de vuelo y con qué antelación",
+      "Gestionar retrasos, cambios, cierre del plan y aviso de llegada para no activar el servicio de alerta",
+      "Interpretar las casillas principales de un plan de vuelo OACI",
+      "Aplicar las autorizaciones ATC y avisar de las desviaciones que SERA obliga a notificar",
+      "Actuar ante una interferencia ilícita y ante una interceptación"
+    ],
+    "sections": [
+      {
+        "title": "Para qué sirve el plan de vuelo",
+        "text": [
+          "El plan de vuelo es la información que das a los servicios de tránsito aéreo (ATS) sobre tu vuelo: quién eres, qué avión, de dónde a dónde, por dónde, cuándo y con qué autonomía. Tiene dos usos. El primero es **operativo**: permite a ATC coordinarte con otros tráficos y darte autorización. El segundo es **de seguridad**: si no llegas, el servicio de alerta sabe por dónde buscarte y cuándo empezar.",
+          "Un VFR que sale sin plan en un espacio sin servicios ATS puede ser perfectamente legal, pero si te pasa algo nadie sabrá que debías haber llegado. Por eso, aunque no sea obligatorio, presenta siempre plan para cualquier vuelo de travesía."
+        ]
+      },
+      {
+        "title": "Cuándo es obligatorio (SERA.4001)",
+        "text": [
+          "El plan de vuelo es obligatorio en los casos siguientes, que son los que cuentan para el examen:"
+        ],
+        "bullets": [
+          "Todo vuelo o parte de un vuelo al que deba prestarse **servicio de control de tránsito aéreo**, es decir, el que entra en una CTR, TMA o espacio controlado que exija autorización (clases B, C y D, y E cuando sea IFR).",
+          "Todo vuelo IFR en espacio aéreo con servicio de asesoramiento.",
+          "Los vuelos en o hacia **zonas designadas** o a lo largo de **rutas designadas** donde se exija para facilitar el servicio de información, de alerta y de búsqueda y salvamento.",
+          "Los vuelos en o hacia zonas o rutas designadas donde se exija para coordinar con las unidades militares o con las de ATS de Estados vecinos y evitar interceptaciones.",
+          "Todo vuelo que **cruce una frontera internacional**.",
+          "En España, todo vuelo **nocturno** VFR que salga de las inmediaciones del aeródromo (AIP GEN 1.7)."
+        ],
+        "note": {
+          "kind": "es",
+          "text": "La diferencia española: plan de vuelo obligatorio para el VFR nocturno que abandone las inmediaciones del aeródromo."
+        }
+      },
+      {
+        "title": "Presentación del plan (SERA.4005 y 4010)",
+        "text": [
+          "Se presenta a la **oficina de notificación de los servicios de tránsito aéreo (ARO)**, en persona, por teléfono o por los sistemas telemáticos de ENAIRE. Antes de la salida debes presentarlo, como mínimo, **60 minutos antes** de la hora prevista de salida (EOBT, estimated off-block time) o de que se te dé autorización de puesta en marcha, para que ATC pueda tramitarlo y coordinarlo.",
+          "Si el plan se presenta **en vuelo**, debe llegar a la dependencia ATS al menos **10 minutos antes** de que la aeronave llegue al punto de entrada previsto en un área de control o en una zona con servicio de asesoramiento, o al punto de cruce de una aerovía o ruta de asesoramiento.",
+          "La excepción es el **plan de vuelo en vuelo (AFIL, air-filed)**: cuando no se ha presentado plan en tierra, puedes presentarlo por radio a la dependencia ATS correspondiente, solicitando el servicio. Se usa cuando no ha sido posible presentarlo en tierra y quieres recibir servicio ATS."
+        ]
+      },
+      {
+        "title": "Retrasos, modificaciones, cierre y alerta",
+        "text": [
+          "Si el vuelo se retrasa, el plan deja de reflejar la realidad. SERA exige modificarlo o presentar uno nuevo y cancelar el anterior cuando el retraso sea de **30 minutos o más** en un vuelo **controlado**, o de **1 hora o más** en un vuelo **no controlado**. Si no lo haces, ATC puede cancelar tu plan.",
+          "Al terminar el vuelo, hay que **cerrar el plan de vuelo** (SERA.4020). Si hay dependencia ATS en el aeródromo de destino, el aviso de llegada se da a esa dependencia (en la práctica, al aterrizar). Si no la hay, hay que comunicarlo **lo antes posible** a la dependencia ATS más cercana, por el medio más rápido. Si tu plan no se cierra, se supone que sigues volando y se activa el servicio de alerta.",
+          "El servicio de alerta se activa por fases. La primera, **INCERFA** (fase de incertidumbre), se declara cuando no hay comunicación en los **30 minutos** siguientes a la hora en que se debió recibir, o cuando la aeronave no llega en los 30 minutos siguientes a la ETA. Las otras fases, ALERFA y DETRESFA, las verás en el bloque de espacio aéreo y ATS."
+        ],
+        "note": {
+          "kind": "tip",
+          "text": "Cierra siempre el plan al aterrizar: un plan abierto significa para el servicio de alerta que el avión sigue en el aire."
+        }
+      },
+      {
+        "title": "Casillas del plan de vuelo OACI",
+        "text": [
+          "El plan de vuelo OACI se compone de casillas numeradas. Para un VFR en avión monomotor, las más importantes son las siguientes."
+        ],
+        "table": {
+          "caption": "Casillas principales del plan de vuelo",
+          "head": [
+            "Casilla",
+            "Contenido",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "7",
+              "Identificación de la aeronave",
+              "ECABC"
+            ],
+            [
+              "8",
+              "Reglas de vuelo (V = VFR, I = IFR, Y, Z) y tipo de vuelo (G = aviación general)",
+              "VG"
+            ],
+            [
+              "9",
+              "Número de aeronaves, tipo y categoría de estela turbulenta (L = ligera)",
+              "P28A/L"
+            ],
+            [
+              "10",
+              "Equipo de comunicaciones, navegación y vigilancia (S = estándar) / transpondedor (C = modo A y C)",
+              "S/C"
+            ],
+            [
+              "13",
+              "Aeródromo de salida y hora estimada de calzos fuera (EOBT) en UTC",
+              "LEXX 0900"
+            ],
+            [
+              "15",
+              "Velocidad de crucero (N + kt), nivel y ruta",
+              "N0110 VFR DCT"
+            ],
+            [
+              "16",
+              "Aeródromo de destino, tiempo total estimado (EET) y alternativos",
+              "LEYY 0130"
+            ],
+            [
+              "18",
+              "Otros datos (RMK, DOF, etc.)",
+              "RMK/ VUELO DE INSTRUCCION"
+            ],
+            [
+              "19",
+              "Autonomía (HHMM), personas a bordo y equipo de emergencia",
+              "E/0300 P/002"
+            ]
+          ],
+          "src": "Doc 4444, apéndice 2"
+        },
+        "bullets": [
+          "Las horas se dan siempre en UTC. La velocidad de crucero se expresa como N (nudos) y tres cifras: N0110 = 110 kt TAS."
+        ]
+      },
+      {
+        "title": "Autorizaciones ATC y desviaciones",
+        "text": [
+          "Una **autorización ATC** (SERA.8015) te da permiso para proceder en condiciones concretas dentro de un espacio controlado. Solo puede darla la dependencia ATC, y solo cuando has presentado tu plan de vuelo o has solicitado el servicio. No es una instrucción de cumplimiento imposible: si no puedes cumplirla (por ejemplo, un nivel que no puedes alcanzar), debes **solicitar una autorización modificada** antes de actuar.",
+          "En vuelo controlado se mantiene el plan de vuelo en vigor. Debes avisar a ATC cuando la **TAS media** de crucero varíe, o vaya a variar, en más de un **5 %** de la del plan, y cuando la **ETA** al próximo punto de notificación, límite de región de información o aeródromo de destino cambie en más de **2 minutos**. Si, además, haces un cambio de ruta o de nivel, necesitas autorización antes.",
+          "Los **informes de posición** se dan en los puntos de notificación que fije ATC o el AIP, con distintivo, posición, hora, nivel y siguiente punto. En espacios con radar o VFR en CTR se utilizan los puntos de notificación VFR del AIP."
+        ],
+        "examples": [
+          {
+            "q": "Tu plan dice N0110 y vas a mantener una TAS media de 100 kt. ¿Debes avisar a ATC?",
+            "a": "La variación es (110 − 100) / 110 = 9 %. Supera el 5 %: debes notificarlo."
+          }
+        ]
+      },
+      {
+        "title": "Comunicaciones obligatorias",
+        "text": [
+          "En espacio controlado debes mantener **escucha permanente** y comunicación **bilateral** en la frecuencia de la dependencia ATC correspondiente. En un espacio donde se te preste servicio de información de vuelo y tengas plan, mantén escucha en la frecuencia asignada. En clases E, F y G no es obligatoria la radio salvo en RMZ y TMZ; el transpondedor se exige en TMZ.",
+          "Si pierdes las comunicaciones, el procedimiento (squawk 7600, transmisión a ciegas, seguir en VMC y aterrizar en el aeródromo adecuado más próximo) lo verás con detalle en el bloque de Comunicaciones."
+        ]
+      },
+      {
+        "title": "Interferencia ilícita (secuestro)",
+        "text": [
+          "Si eres objeto de una interferencia ilícita, tu prioridad es **proteger a los ocupantes** y avisar sin ser descubierto. SERA indica que debes poner el transpondedor en **7500**, salvo que la situación aconseje otra cosa, y comunicar el hecho a ATC si es posible. Intenta aterrizar en el aeródromo adecuado más próximo, siguiendo las instrucciones que recibas y evitando acciones que pongan en riesgo a la gente a bordo. Si no puedes comunicar con ATC y no sabes qué hacer, sigue volando mientras no cambie la situación, y comunica por la frecuencia en uso o por 121,5 MHz.",
+          "El código **7700** se reserva para emergencia y el **7600** para fallo de comunicaciones. Al cambiar el código de uno a otro, evita pasar por 75xx, 76xx o 77xx para no activar alarmas por error."
+        ]
+      },
+      {
+        "title": "Interceptación (SERA, sección 11)",
+        "text": [
+          "Una aeronave militar puede interceptarte para identificarte, ayudarte o escoltarte fuera de una zona. Si te interceptan, debes **seguir las instrucciones del interceptor**, interpretando las señales, avisar a la dependencia ATS correspondiente, intentar comunicar en **121,5 MHz** (o 243,0 MHz) con el interceptor, y poner el transpondedor en **7700**, salvo que ATS indique otra cosa.",
+          "Las señales visuales del interceptor y tus respuestas son las siguientes."
+        ],
+        "table": {
+          "caption": "Señales visuales de interceptación (SERA, apéndice 2)",
+          "head": [
+            "Interceptor",
+            "Significado",
+            "Respuesta del interceptado"
+          ],
+          "rows": [
+            [
+              "Alabea y destella luces de navegación a intervalos irregulares, delante y a la izquierda; después vira lentamente a la izquierda",
+              "Has sido interceptado: sígueme",
+              "Alabea, destella luces de navegación irregularmente y sigue"
+            ],
+            [
+              "Maniobra brusca de separación: viraje ascendente de 90° o más sin cruzar tu línea de vuelo",
+              "Puedes proseguir",
+              "Alabea"
+            ],
+            [
+              "Baja el tren, enciende luces y sobrevuela la pista de aterrizaje",
+              "Aterriza en este aeródromo",
+              "Baja el tren, sigue al interceptor y, si la pista es segura, aterriza"
+            ]
+          ],
+          "src": "SERA, apéndice 2"
+        },
+        "bullets": [
+          "Si el aeródromo designado es inadecuado, el interceptado levanta el tren sobre la pista a más de 300 m (1000 ft) y menos de 600 m (2000 ft) y sigue circulando.",
+          "Para indicar que no puedes cumplir, enciende y apaga todas las luces disponibles a intervalos regulares; para indicar que estás en peligro, destella todas las luces de forma irregular."
+        ],
+        "verify": true
+      }
+    ],
+    "numbers": [
+      "Presentación del plan: 60 minutos antes de la EOBT o de la autorización de puesta en marcha",
+      "Plan en vuelo: 10 minutos antes de llegar al punto de entrada en área de control o de cruce de aerovía",
+      "Retraso: 30 min en vuelo controlado, 1 h en vuelo no controlado: modificar o cancelar y presentar nuevo",
+      "Aviso de TAS: variación de más de un 5 % respecto al plan",
+      "Aviso de ETA: cambio de más de 2 minutos",
+      "INCERFA: 30 minutos sin comunicación o sin llegar",
+      "Códigos: 7500 interferencia ilícita, 7600 fallo de radio, 7700 emergencia; interceptado en 121,5 MHz"
+    ],
+    "traps": [
+      "Hay que avisar a ATC si la TAS varía más de un 5 % o la ETA cambia más de 2 minutos; no son 10 ni 3 minutos.",
+      "El retraso máximo es 30 min si el vuelo es controlado y 1 h si no lo es: confundir los dos es el fallo típico.",
+      "Un plan que no se cierra sigue activo y puede disparar el servicio de alerta.",
+      "En España, el VFR nocturno que sale de las inmediaciones del aeródromo exige plan, aunque no cruces espacio controlado."
+    ],
+    "spain": [
+      "Plan de vuelo obligatorio para todo vuelo VFR nocturno que salga de las inmediaciones del aeródromo.",
+      "Los planes de vuelo se tramitan en las oficinas ARO y por el sistema telemático de ENAIRE.",
+      "Interceptación: ENAIRE y el Ejército del Aire publican las señales en el AIP ENR 1.12."
+    ],
+    "sources": [
+      {
+        "title": "SERA (Reglamento (UE) 923/2012), Easy Access Rules, EASA",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "AIP España GEN 1.7: diferencias con la OACI y SERA (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/contenido_AIP/GEN/LE_GEN_1_7_en.html"
+      },
+      {
+        "title": "Doc 4444 PANS-ATM, OACI (apéndice 2)"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología",
+        "href": "#/licencias/fraseologia"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "010.08.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Para qué sirve principalmente el plan de vuelo?",
+      "options": [
+        "Para fijar el precio de las tasas de aterrizaje",
+        "Para sustituir a la autorización de ATC",
+        "Para que ATC coordine el vuelo y el servicio de alerta sepa dónde buscarte si no llegas",
+        "Para registrar las horas de vuelo del piloto"
+      ],
+      "correct": 2,
+      "why": "El plan informa a los ATS para coordinar el tráfico y activar la alerta si no llegas.",
+      "whyNot": [
+        "Las tasas no dependen del plan de vuelo.",
+        "El plan no sustituye a la autorización.",
+        null,
+        "Eso lo hace el registro de vuelo personal."
+      ],
+      "ref": "SERA.4001"
+    },
+    {
+      "id": "010.08.002",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Con qué antelación mínima debes presentar un plan de vuelo antes de la salida?",
+      "options": [
+        "60 minutos antes de la EOBT",
+        "30 minutos antes",
+        "10 minutos antes",
+        "120 minutos antes"
+      ],
+      "correct": 0,
+      "why": "SERA.4005: el plan se presenta, como mínimo, 60 minutos antes de la salida prevista.",
+      "whyNot": [
+        null,
+        "30 minutos es el retraso tras el que hay que modificar el plan.",
+        "Son los minutos de antelación del plan presentado en vuelo.",
+        "No es la cifra de SERA."
+      ],
+      "ref": "SERA.4005"
+    },
+    {
+      "id": "010.08.003",
+      "type": "regla",
+      "level": 2,
+      "q": "Si presentas el plan en vuelo, ¿con qué antelación debe recibirlo la dependencia ATS respecto al punto de entrada en un área de control?",
+      "options": [
+        "Al menos 5 minutos antes",
+        "Al menos 30 minutos antes",
+        "Al menos 60 minutos antes",
+        "Al menos 10 minutos antes"
+      ],
+      "correct": 3,
+      "why": "En vuelo, el plan debe llegar al ATS al menos 10 minutos antes de que estimes entrar en el área de control.",
+      "whyNot": [
+        "No es la cifra de SERA.",
+        "Son los minutos de retraso permitidos en un vuelo controlado.",
+        "Es la antelación en tierra.",
+        null
+      ],
+      "ref": "SERA.4005"
+    },
+    {
+      "id": "010.08.004",
+      "type": "regla",
+      "level": 2,
+      "q": "Un vuelo controlado sufre un retraso respecto a la EOBT. ¿Desde cuánto retraso hay que modificar el plan o presentar uno nuevo?",
+      "options": [
+        "10 minutos",
+        "30 minutos",
+        "1 hora",
+        "2 horas"
+      ],
+      "correct": 1,
+      "why": "Vuelos controlados: 30 minutos de retraso; no controlados: 1 hora.",
+      "whyNot": [
+        "No es la cifra de SERA.",
+        null,
+        "Es el retraso para vuelos no controlados.",
+        "No es la cifra de SERA."
+      ],
+      "ref": "SERA, sección 4 (cambios al plan)"
+    },
+    {
+      "id": "010.08.005",
+      "type": "regla",
+      "level": 2,
+      "q": "Un vuelo VFR no controlado se retrasa. ¿A partir de cuántos minutos debe modificarse el plan?",
+      "options": [
+        "60 minutos",
+        "30 minutos",
+        "15 minutos",
+        "120 minutos"
+      ],
+      "correct": 0,
+      "why": "Para vuelos no controlados el umbral de retraso es de 1 hora.",
+      "whyNot": [
+        null,
+        "Es el retraso en vuelos controlados.",
+        "No es la cifra de SERA.",
+        "No es la cifra de SERA."
+      ],
+      "ref": "SERA, sección 4 (cambios al plan)"
+    },
+    {
+      "id": "010.08.006",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿En cuál de estos casos es obligatorio presentar un plan de vuelo?",
+      "options": [
+        "Cuando vuelas en clase G a 2000 ft",
+        "Cuando haces un circuito de aeródromo",
+        "Cuando vas a cruzar una frontera internacional",
+        "Cuando vuelas por debajo de 3000 ft AMSL"
+      ],
+      "correct": 2,
+      "why": "SERA.4001: es obligatorio para los vuelos que cruzan fronteras internacionales, entre otros.",
+      "whyNot": [
+        "En clase G no es obligatorio por sí mismo.",
+        "No lo es para tráfico local.",
+        null,
+        "La altitud no lo obliga."
+      ],
+      "ref": "SERA.4001"
+    },
+    {
+      "id": "010.08.007",
+      "type": "regla",
+      "level": 2,
+      "q": "En España, ¿cuándo es obligatorio el plan de vuelo para un VFR nocturno?",
+      "options": [
+        "Solo si cruza un espacio controlado",
+        "Cuando sale de las inmediaciones del aeródromo",
+        "Solo si dura más de 2 horas",
+        "Nunca: la noche no cambia el plan"
+      ],
+      "correct": 1,
+      "why": "El AIP GEN 1.7 añade a SERA.4001 el plan obligatorio para todo VFR nocturno fuera de las inmediaciones.",
+      "whyNot": [
+        "La obligación no depende del espacio.",
+        null,
+        "No existe ese límite.",
+        "Sí lo cambia en España."
+      ],
+      "ref": "SERA.4001; AIP GEN 1.7",
+      "es": true
+    },
+    {
+      "id": "010.08.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es un plan de vuelo AFIL?",
+      "options": [
+        "Un plan presentado con más de 24 horas de antelación",
+        "Un plan de vuelo para aeronaves sin radio",
+        "Un plan cerrado automáticamente al aterrizar",
+        "Un plan presentado en vuelo por radio a la dependencia ATS"
+      ],
+      "correct": 3,
+      "why": "AFIL (air-filed) es un plan presentado desde el aire por radio.",
+      "whyNot": [
+        "Eso es un plan anticipado.",
+        "No existe ese tipo de plan.",
+        "El cierre es un trámite distinto.",
+        null
+      ],
+      "ref": "Doc 4444"
+    },
+    {
+      "id": "010.08.009",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué debes hacer al aterrizar en un aeródromo con dependencia ATS tras un vuelo con plan?",
+      "options": [
+        "Nada, el plan se cierra solo",
+        "Esperar 30 minutos antes de comunicarlo",
+        "Cerrar el plan de vuelo mediante el aviso de llegada",
+        "Anular el transpondedor por radio"
+      ],
+      "correct": 2,
+      "why": "SERA.4020: el aviso de llegada cierra el plan.",
+      "whyNot": [
+        "Un plan abierto activa la alerta.",
+        "Debe hacerse sin demora.",
+        null,
+        "No es el cierre del plan."
+      ],
+      "ref": "SERA.4020"
+    },
+    {
+      "id": "010.08.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "Aterrizas en un aeródromo sin dependencia ATS. ¿Cómo cierras el plan?",
+      "options": [
+        "Comunicándolo lo antes posible a la dependencia ATS más cercana por el medio más rápido",
+        "No hace falta: sin ATS no hay plan que cerrar",
+        "Esperando al día siguiente",
+        "Transmitiendo en 121,5 MHz a ciegas"
+      ],
+      "correct": 0,
+      "why": "Si no hay ATS en destino, el aviso se da lo antes posible a la dependencia más cercana.",
+      "whyNot": [
+        null,
+        "El plan debe cerrarse igualmente.",
+        "Un plan abierto activa la alerta.",
+        "Esa no es la vía para cerrar planes."
+      ],
+      "ref": "SERA.4020"
+    },
+    {
+      "id": "010.08.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuándo se declara la fase INCERFA?",
+      "options": [
+        "Cuando la aeronave llega 5 minutos tarde",
+        "Cuando se oye una señal 7700",
+        "Cuando se recibe una llamada de socorro",
+        "Cuando no hay comunicación en los 30 minutos siguientes a la hora en que debía recibirse o la aeronave no llega en 30 minutos desde la ETA"
+      ],
+      "correct": 3,
+      "why": "INCERFA es la fase de incertidumbre, que empieza a los 30 minutos sin noticias.",
+      "whyNot": [
+        "5 minutos es muy poco.",
+        "Esa señal es de emergencia.",
+        "El socorro corresponde a DETRESFA.",
+        null
+      ],
+      "ref": "Anexo 11; SERA"
+    },
+    {
+      "id": "010.08.012",
+      "type": "calculo",
+      "level": 2,
+      "q": "Tu plan lleva N0110. Vas a mantener una TAS media de 100 kt en crucero. ¿Debes avisar a ATC?",
+      "options": [
+        "No, porque la variación es menor del 10 %",
+        "Sí, porque la variación (9 %) supera el 5 %",
+        "No, porque la TAS no se avisa nunca",
+        "Sí, pero solo si es superior a 20 kt"
+      ],
+      "correct": 1,
+      "why": "(110 − 100) / 110 ≈ 9 %, más del 5 %.",
+      "whyNot": [
+        "El umbral es el 5 %, no el 10 %.",
+        null,
+        "Sí hay que avisar.",
+        "El umbral es porcentual."
+      ],
+      "ref": "SERA, sección 8 (ajuste al plan de vuelo)"
+    },
+    {
+      "id": "010.08.013",
+      "type": "regla",
+      "level": 2,
+      "q": "Debes informar a ATC de una variación de la ETA superior a:",
+      "options": [
+        "2 minutos",
+        "1 minuto",
+        "5 minutos",
+        "10 minutos"
+      ],
+      "correct": 0,
+      "why": "SERA exige notificar cambios de ETA de más de 2 minutos.",
+      "whyNot": [
+        null,
+        "No es la cifra.",
+        "No es la cifra de SERA.",
+        "No es la cifra de SERA."
+      ],
+      "ref": "SERA, sección 8 (ajuste al plan de vuelo)"
+    },
+    {
+      "id": "010.08.014",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si no puedes cumplir una autorización ATC, ¿qué debes hacer?",
+      "options": [
+        "Ignorarla y avisar después",
+        "Cumplir la mitad y avisar al aterrizar",
+        "Solicitar una autorización modificada antes de actuar",
+        "Cambiar de frecuencia y seguir tu plan"
+      ],
+      "correct": 2,
+      "why": "Si la autorización no es satisfactoria, debes pedir otra.",
+      "whyNot": [
+        "Solo se puede apartarse si hay emergencia.",
+        "No es una opción.",
+        null,
+        "Debes comunicarlo."
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "010.08.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "Vuelas en espacio controlado y quieres cambiar de nivel respecto a la autorización recibida. ¿Qué necesitas antes de hacerlo?",
+      "options": [
+        "Solo avisar después de hacerlo",
+        "Una nueva autorización de ATC",
+        "Presentar un plan nuevo en tierra",
+        "Nada, si el nuevo nivel es VMC"
+      ],
+      "correct": 1,
+      "why": "Cualquier cambio respecto a la autorización en vigor se pide y se recibe antes de ejecutarlo, salvo emergencia.",
+      "whyNot": [
+        "En espacio controlado el cambio requiere autorización previa.",
+        null,
+        "El cambio se tramita por radio con ATC.",
+        "Las VMC no eximen de autorización."
+      ],
+      "ref": "SERA, sección 8"
+    },
+    {
+      "id": "010.08.016",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Qué código de transpondedor se emplea ante una interferencia ilícita?",
+      "options": [
+        "7600",
+        "7700",
+        "7000",
+        "7500"
+      ],
+      "correct": 3,
+      "why": "7500 indica interferencia ilícita.",
+      "whyNot": [
+        "Es fallo de comunicaciones.",
+        "Es emergencia general.",
+        "Es el código VFR.",
+        null
+      ],
+      "ref": "SERA, sección 11 y apéndice de códigos"
+    },
+    {
+      "id": "010.08.017",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Qué código de transpondedor corresponde al fallo de comunicaciones?",
+      "options": [
+        "7500",
+        "7700",
+        "7600",
+        "2000"
+      ],
+      "correct": 2,
+      "why": "7600 es el código de fallo de radio.",
+      "whyNot": [
+        "Es interferencia ilícita.",
+        "Es emergencia.",
+        null,
+        "Es el código IFR sin asignar."
+      ],
+      "ref": "SERA, sección 11 y apéndice de códigos"
+    },
+    {
+      "id": "010.08.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "Eres interceptado por una aeronave militar. ¿Qué haces?",
+      "options": [
+        "Seguir sus instrucciones, avisar al ATS, llamar en 121,5 MHz y poner 7700",
+        "Continuar tu ruta y esperar a que te identifique",
+        "Cambiar a 7500 y apagar la radio",
+        "Descender a la altura mínima y no responder"
+      ],
+      "correct": 0,
+      "why": "SERA.11015: seguir instrucciones, notificar al ATS, 121,5 MHz y 7700 salvo indicación contraria.",
+      "whyNot": [
+        null,
+        "Debes cumplir.",
+        "7500 es para interferencia ilícita.",
+        "Debes responder."
+      ],
+      "ref": "SERA, sección 11 (interceptación)"
+    },
+    {
+      "id": "010.08.019",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué frecuencia debes intentar usar para comunicar con el interceptor?",
+      "options": [
+        "118,0 MHz",
+        "123,45 MHz",
+        "243,0 MHz VHF",
+        "121,5 MHz"
+      ],
+      "correct": 3,
+      "why": "La frecuencia de emergencia en VHF es 121,5 MHz.",
+      "whyNot": [
+        "No es la frecuencia de emergencia.",
+        "Es una frecuencia aire-aire de uso general.",
+        "243,0 MHz es la frecuencia UHF.",
+        null
+      ],
+      "ref": "SERA, sección 11 (interceptación)"
+    },
+    {
+      "id": "010.08.020",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa que el interceptor alabee y destelle luces delante y a tu izquierda y viraje lento a la izquierda?",
+      "options": [
+        "Aterriza en este aeródromo",
+        "Has sido interceptado: sígueme",
+        "Puedes proseguir",
+        "Estás en zona prohibida: sal ya"
+      ],
+      "correct": 1,
+      "why": "Es la señal de «sígueme».",
+      "whyNot": [
+        "Para eso baja el tren y sobrevuela la pista.",
+        null,
+        "Para eso hace un viraje ascendente brusco.",
+        "No es un significado de esa señal."
+      ],
+      "ref": "SERA, apéndice 2"
+    },
+    {
+      "id": "010.08.021",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa un viraje ascendente brusco de 90° o más del interceptor sin cruzar tu línea de vuelo?",
+      "options": [
+        "Puedes proseguir",
+        "Sígueme",
+        "Aterriza",
+        "Descienda ya"
+      ],
+      "correct": 0,
+      "why": "Es la señal de «puedes proseguir»; responde alabeando.",
+      "whyNot": [
+        null,
+        "Esa es la señal inicial.",
+        "Esa es sobrevolar la pista con el tren abajo.",
+        "No existe esa señal."
+      ],
+      "ref": "SERA, apéndice 2"
+    },
+    {
+      "id": "010.08.022",
+      "type": "lectura",
+      "level": 2,
+      "q": "En un plan de vuelo OACI, la casilla 8 muestra VG. ¿Qué significa?",
+      "options": [
+        "Vuelo IFR de aviación general",
+        "Vuelo VFR de transporte regular",
+        "Vuelo VFR de aviación general",
+        "Vuelo VFR militar"
+      ],
+      "correct": 2,
+      "why": "La casilla 8 recoge las reglas de vuelo (V = VFR) y el tipo (G = aviación general).",
+      "whyNot": [
+        "I es IFR; V es VFR.",
+        "El transporte regular es S.",
+        null,
+        "Militar es M."
+      ],
+      "ref": "Doc 4444, apéndice 2",
+      "data": "ITEM 7: ECABC\nITEM 8: VG\nITEM 9: P28A/L\nITEM 10: S/C"
+    },
+    {
+      "id": "010.08.023",
+      "type": "lectura",
+      "level": 2,
+      "q": "En la casilla 15 aparece N0110. ¿Qué indica?",
+      "options": [
+        "Nivel de crucero de 11 000 ft",
+        "Velocidad de crucero de 110 kt",
+        "Distancia de 110 NM",
+        "Autonomía de 1 h 10 min"
+      ],
+      "correct": 1,
+      "why": "N indica nudos y las tres cifras la velocidad: N0110 = 110 kt.",
+      "whyNot": [
+        "El nivel se indica con A, F, S o M.",
+        null,
+        "Es una velocidad, no una distancia.",
+        "La autonomía va en la casilla 19."
+      ],
+      "ref": "Doc 4444, apéndice 2"
+    },
+    {
+      "id": "010.08.024",
+      "type": "concepto",
+      "level": 2,
+      "q": "Sufres una interferencia ilícita en vuelo. ¿Cuál es la actitud correcta?",
+      "options": [
+        "Descender de inmediato y apagar el transpondedor",
+        "Cambiar a 7700 y declarar tráfico militar",
+        "Llamar a ciegas en 118,000 MHz sin transpondedor",
+        "Proteger a los ocupantes, poner 7500 si es posible sin riesgo y seguir las instrucciones recibidas"
+      ],
+      "correct": 3,
+      "why": "La prioridad es la seguridad de los ocupantes; el 7500 avisa a ATC discretamente.",
+      "whyNot": [
+        "Apagar el transpondedor no ayuda a ATC a localizarte.",
+        "7700 es emergencia general; para esta situación se usa 7500.",
+        "No es el procedimiento.",
+        null
+      ],
+      "ref": "SERA, sección 11"
+    },
+    {
+      "id": "010.08.025",
+      "type": "lectura",
+      "level": 2,
+      "q": "En la casilla 19 de un plan figura E/0300 P/002. ¿Qué significa?",
+      "options": [
+        "Distancia de 300 NM y dos aeronaves",
+        "Tiempo de vuelo estimado de 3 h y dos pasajeros",
+        "Autonomía de 3 horas y dos personas a bordo",
+        "Combustible de 300 litros y dos motores"
+      ],
+      "correct": 2,
+      "why": "E/ expresa la autonomía en horas y minutos y P/ las personas a bordo.",
+      "whyNot": [
+        "E indica autonomía, no distancia.",
+        "El EET va en la casilla 16.",
+        null,
+        "E no indica litros."
+      ],
+      "ref": "Doc 4444, apéndice 2",
+      "data": "ITEM 19: E/0300 P/002"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.010.08.01",
+      "front": "Plan de vuelo: presentación en tierra",
+      "back": "Como mínimo 60 minutos antes de la EOBT"
+    },
+    {
+      "id": "c.010.08.02",
+      "front": "Plan de vuelo: presentación en vuelo",
+      "back": "Debe llegar 10 minutos antes de la entrada en área de control o del cruce de aerovía"
+    },
+    {
+      "id": "c.010.08.03",
+      "front": "Retraso que obliga a modificar el plan",
+      "back": "30 minutos en vuelo controlado; 1 hora en vuelo no controlado"
+    },
+    {
+      "id": "c.010.08.04",
+      "front": "Cuándo avisar a ATC de la TAS",
+      "back": "Cuando varía más de un 5 % respecto al plan"
+    },
+    {
+      "id": "c.010.08.05",
+      "front": "Cuándo avisar a ATC de la ETA",
+      "back": "Cuando cambia más de 2 minutos"
+    },
+    {
+      "id": "c.010.08.06",
+      "front": "INCERFA",
+      "back": "Fase de incertidumbre: 30 minutos sin comunicación o sin llegar"
+    },
+    {
+      "id": "c.010.08.07",
+      "front": "Códigos de transpondedor",
+      "back": "7500 interferencia ilícita, 7600 fallo de radio, 7700 emergencia"
+    },
+    {
+      "id": "c.010.08.08",
+      "front": "Interceptado: acciones",
+      "back": "Seguir instrucciones, avisar al ATS, 121,5 MHz y 7700"
+    }
+  ]
+}

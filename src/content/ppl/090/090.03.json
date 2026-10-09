@@ -1,0 +1,710 @@
+{
+  "lesson": {
+    "id": "090.03",
+    "title": "Técnica de transmisión, números y hora",
+    "summary": "Alfabeto fonético, pronunciación de números (niveles, altitudes, rumbos, velocidades, QNH 1000 y códigos SSR), hora, regla de las frecuencias con ceros finales, técnica de transmisión y escala de legibilidad.",
+    "objectives": [
+      "Deletrear con el alfabeto OACI y pronunciar los números según la norma",
+      "Transmitir correctamente frecuencias, niveles, altitudes, rumbos, viento, QNH y códigos de transpondedor",
+      "Aplicar una técnica de transmisión clara y con ritmo constante",
+      "Usar la escala de legibilidad de 1 a 5"
+    ],
+    "sections": [
+      {
+        "title": "El alfabeto fonético y los dígitos",
+        "text": [
+          "Las letras se deletrean con el **alfabeto fonético OACI** (Alfa, Bravo, Charlie… Zulu) y se pronuncian siempre a la inglesa, también cuando la comunicación es en español. Úsalo para el distintivo, para los puntos de notificación y para cualquier palabra difícil.",
+          "Los dígitos se pronuncian de forma que no se confundan. En inglés: **zero, one, two, tree, fower, fife, six, seven, eight, niner**. En español: **cero, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve**. Se dice «**decimal**» para la coma, «**cien**» o «**hundred**» y «**mil**» o «**thousand**» para centenas y millares exactos."
+        ]
+      },
+      {
+        "title": "Cómo se transmiten los números",
+        "text": [
+          "La regla de fondo es **dígito a dígito**: así se reduce el riesgo de confundir 1 5 con 50. Solo se agrupan las centenas y millares **exactos**. Fíjate en las excepciones, porque son lo que se pregunta."
+        ],
+        "table": {
+          "caption": "Pronunciación de los datos más comunes",
+          "head": [
+            "Dato",
+            "Español",
+            "Inglés"
+          ],
+          "rows": [
+            [
+              "Distintivo EC-ABC",
+              "Eco Charlie Alfa Bravo Charlie",
+              "Echo Charlie Alpha Bravo Charlie"
+            ],
+            [
+              "Rumbo 090",
+              "rumbo cero nueve cero grados",
+              "heading zero nine zero"
+            ],
+            [
+              "Pista 13",
+              "pista uno tres",
+              "runway one three"
+            ],
+            [
+              "Viento 140/08",
+              "viento uno cuatro cero grados, ocho nudos",
+              "wind one four zero degrees, eight knots"
+            ],
+            [
+              "Altitud 2500 ft",
+              "dos mil quinientos pies",
+              "two thousand five hundred feet"
+            ],
+            [
+              "Altitud 3000 ft",
+              "tres mil pies",
+              "three thousand feet"
+            ],
+            [
+              "Nivel de vuelo 055",
+              "nivel de vuelo cero cinco cinco",
+              "flight level zero five five"
+            ],
+            [
+              "QNH 1015",
+              "QNH uno cero uno cinco",
+              "QNH one zero one five"
+            ],
+            [
+              "QNH 1000",
+              "QNH mil",
+              "QNH one thousand"
+            ],
+            [
+              "Transpondedor 4521",
+              "transponda cuatro cinco dos uno",
+              "squawk four five two one"
+            ],
+            [
+              "Transpondedor 7000",
+              "transponda siete mil",
+              "squawk seven thousand"
+            ],
+            [
+              "Visibilidad 1500 m",
+              "mil quinientos metros",
+              "one thousand five hundred metres"
+            ]
+          ],
+          "src": "Anexo 10, vol. II, 5.2.1.4; SERA.14025; AIP GEN 1.7"
+        },
+        "bullets": [
+          "Los **niveles de vuelo** se dicen dígito a dígito. Las **altitudes** y alturas se dicen en miles y centenas.",
+          "En España los rumbos terminados en cero añaden **grados** («cero nueve cero grados»).",
+          "El **QNH 1000** es la excepción de los reglajes: se dice «mil».",
+          "El código SSR **7000** se dice «siete mil»; los demás, dígito a dígito."
+        ]
+      },
+      {
+        "title": "Frecuencias: la regla de los ceros finales",
+        "text": [
+          "Las frecuencias se dicen dígito a dígito con «decimal». Desde la canalización de 8,33 kHz se transmiten **los seis dígitos**, salvo que el **quinto y el sexto sean cero**: entonces solo se dicen **los cuatro primeros** (SERA.14035)."
+        ],
+        "table": {
+          "caption": "Frecuencias y cómo se dicen",
+          "head": [
+            "Frecuencia",
+            "Cómo se dice"
+          ],
+          "rows": [
+            [
+              "118,100",
+              "uno uno ocho decimal uno"
+            ],
+            [
+              "121,500",
+              "uno dos uno decimal cinco"
+            ],
+            [
+              "124,700",
+              "uno dos cuatro decimal siete"
+            ],
+            [
+              "118,105",
+              "uno uno ocho decimal uno cero cinco"
+            ],
+            [
+              "123,455",
+              "uno dos tres decimal cuatro cinco cinco"
+            ],
+            [
+              "121,750",
+              "uno dos uno decimal siete cinco cero"
+            ]
+          ],
+          "src": "SERA.14035; AIP GEN 1.7"
+        },
+        "note": {
+          "kind": "warn",
+          "text": "118,100 se dice «uno uno ocho decimal uno»; 118,105 se dice con los seis dígitos. En 121,750 el sexto dígito es cero pero el quinto no, por eso se dicen los seis."
+        }
+      },
+      {
+        "title": "La hora",
+        "text": [
+          "La hora en radio es **UTC** y se da normalmente solo con los **minutos** (10:37 UTC = «tres siete»). Se añade la hora cuando puede haber confusión: «uno cero tres siete». Se pronuncia dígito a dígito. Para convertir de hora oficial a UTC usa la calculadora de la lección de reglas generales."
+        ]
+      },
+      {
+        "title": "Técnica de transmisión",
+        "bullets": [
+          "**Escucha antes de transmitir**: comprueba que la frecuencia está libre para no pisar a otro.",
+          "**Prepara el mensaje** antes de pulsar el PTT (push-to-talk): ten claro quién llama, a quién y qué quieres decir.",
+          "Pulsa el PTT, espera **un instante** y empieza a hablar; así no cortas el principio.",
+          "Habla con **ritmo constante y no muy rápido** (no más de unas 100 palabras por minuto si quien escucha tiene que anotar), con volumen normal y el micrófono cerca de los labios.",
+          "Evita las muletillas («eeh») y mantén el mensaje **breve**: si es largo, divídelo en partes.",
+          "Si cometes un error, di «**corrección**» y repite desde la parte correcta."
+        ]
+      },
+      {
+        "title": "Escala de legibilidad",
+        "text": [
+          "Cuando quieres saber cómo se te oye, preguntas «¿cómo me recibe?» (**how do you read**) y la estación contesta con un número de 1 a 5."
+        ],
+        "table": {
+          "caption": "Escala de legibilidad",
+          "head": [
+            "Valor",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "1",
+              "Ilegible"
+            ],
+            [
+              "2",
+              "Legible de vez en cuando"
+            ],
+            [
+              "3",
+              "Legible pero con dificultad"
+            ],
+            [
+              "4",
+              "Legible"
+            ],
+            [
+              "5",
+              "Perfectamente legible"
+            ]
+          ],
+          "src": "Anexo 10, vol. II"
+        },
+        "examples": [
+          {
+            "q": "Preguntas «Villanueva Torre, EC-ABC, ¿cómo me recibe?» y te contestan «EC-ABC, le recibo 3». ¿Qué significa?",
+            "a": "Que tu transmisión es legible pero con dificultad. Revisa el micrófono, el volumen y la distancia a los labios."
+          }
+        ]
+      }
+    ],
+    "numbers": [
+      "Los dígitos se dicen uno a uno; solo se agrupan centenas y millares exactos",
+      "Frecuencia: 6 dígitos, salvo que el 5.º y el 6.º sean cero (entonces, los 4 primeros)",
+      "QNH 1000: «mil»; SSR 7000: «siete mil»",
+      "Rumbos acabados en cero: añaden «grados» (España)",
+      "Legibilidad: 1 ilegible, 2 de vez en cuando, 3 con dificultad, 4 legible, 5 perfecta"
+    ],
+    "traps": [
+      "121,500 es «uno dos uno decimal cinco»; 121,505 requiere los seis dígitos.",
+      "No se dice «coma» ni «punto»: se dice «decimal».",
+      "Los niveles de vuelo se dicen dígito a dígito; las altitudes, en miles y centenas.",
+      "La legibilidad 5 es perfecta, no 4."
+    ],
+    "spain": [
+      "AIP GEN 1.7: rumbos acabados en cero con «grados» y distintivos con prefijo STUDENT en el primer contacto de un alumno solo."
+    ],
+    "sources": [
+      {
+        "title": "SERA, sección 14 (EASA)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "AIP España GEN 1.7 (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/contenido_AIP/GEN/LE_GEN_1_7_en.html"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología ES/EN",
+        "href": "#/licencias/fraseologia"
+      },
+      {
+        "label": "Simulador de radio",
+        "href": "#/licencias/fraseologia?tab=radio"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "090.03.001",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Cómo se transmite la frecuencia 118,100 MHz?",
+      "options": [
+        "Uno uno ocho decimal uno cero cero",
+        "Ciento dieciocho decimal uno",
+        "Uno uno ocho decimal uno",
+        "Uno uno ocho punto uno cero"
+      ],
+      "correct": 2,
+      "why": "SERA.14035: si el 5.º y el 6.º dígitos son cero, solo se dicen los 4 primeros.",
+      "whyNot": [
+        "El quinto y el sexto dígitos son cero: se omiten.",
+        "Los dígitos se dicen uno a uno.",
+        null,
+        "Se dice «decimal», no «punto»."
+      ],
+      "ref": "SERA.14035"
+    },
+    {
+      "id": "090.03.002",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cómo se transmite la frecuencia 118,105 MHz?",
+      "options": [
+        "Uno uno ocho decimal uno cero cinco",
+        "Uno uno ocho decimal uno",
+        "Uno uno ocho decimal uno cinco",
+        "Uno uno ocho decimal cero cinco"
+      ],
+      "correct": 0,
+      "why": "El 5.º dígito es 0 y el 6.º es 5: no son ambos cero y se dicen los seis dígitos.",
+      "whyNot": [
+        null,
+        "Eso es 118,100.",
+        "Faltan dígitos.",
+        "Faltan dígitos."
+      ],
+      "ref": "SERA.14035"
+    },
+    {
+      "id": "090.03.003",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cómo se dice la frecuencia 121,750 MHz?",
+      "options": [
+        "Uno dos uno decimal siete cinco",
+        "Uno dos uno decimal siete",
+        "Ciento veintiuno punto setenta y cinco",
+        "Uno dos uno decimal siete cinco cero"
+      ],
+      "correct": 3,
+      "why": "En 121,750 el 5.º dígito es 5 y el 6.º es 0, por lo que se dicen los seis.",
+      "whyNot": [
+        "Se omitiría el sexto dígito, que aquí es cero pero el quinto no.",
+        "Faltan dígitos.",
+        "Se dicen dígito a dígito y con «decimal».",
+        null
+      ],
+      "ref": "SERA.14035"
+    },
+    {
+      "id": "090.03.004",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cómo se dice la frecuencia de socorro 121,500 MHz?",
+      "options": [
+        "Uno dos uno decimal cinco cero cero",
+        "Uno dos uno decimal cinco",
+        "Ciento veintiuno punto cinco",
+        "Uno dos uno coma cinco"
+      ],
+      "correct": 1,
+      "why": "Los dos últimos dígitos son cero: se dicen los cuatro primeros.",
+      "whyNot": [
+        "El quinto y el sexto dígitos son cero.",
+        null,
+        "Se dicen dígito a dígito.",
+        "Se dice «decimal»."
+      ],
+      "ref": "SERA.14035"
+    },
+    {
+      "id": "090.03.005",
+      "type": "regla",
+      "level": 1,
+      "q": "En España, ¿cómo se transmite un rumbo de 090°?",
+      "options": [
+        "Rumbo cero nueve cero grados",
+        "Rumbo noventa",
+        "Rumbo cero nueve cero",
+        "Rumbo nueve cero"
+      ],
+      "correct": 0,
+      "why": "En España los rumbos acabados en cero añaden «grados».",
+      "whyNot": [
+        null,
+        "Se dice dígito a dígito.",
+        "Falta «grados».",
+        "No se omite el cero."
+      ],
+      "ref": "AIP GEN 1.7",
+      "es": true
+    },
+    {
+      "id": "090.03.006",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cómo se transmite un QNH de 1000 hPa?",
+      "options": [
+        "QNH uno cero cero cero",
+        "QNH diez cero",
+        "QNH mil",
+        "QNH ciento cero"
+      ],
+      "correct": 2,
+      "why": "La excepción de los reglajes de altímetro: 1000 se dice «mil».",
+      "whyNot": [
+        "El 1000 es la excepción: se dice «mil».",
+        "No es la forma.",
+        null,
+        "No es la forma."
+      ],
+      "ref": "Anexo 10, vol. II; AIP GEN 1.7"
+    },
+    {
+      "id": "090.03.007",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cómo se transmite un QNH de 1015?",
+      "options": [
+        "QNH mil quince",
+        "QNH uno cero uno cinco",
+        "QNH diez quince",
+        "QNH uno cero quince"
+      ],
+      "correct": 1,
+      "why": "Los reglajes se transmiten dígito a dígito, excepto el 1000.",
+      "whyNot": [
+        "Solo el 1000 se dice «mil».",
+        null,
+        "Los dígitos se dicen uno a uno.",
+        "Los dígitos se dicen uno a uno."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.03.008",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cómo se transmite el código de transpondedor 7000?",
+      "options": [
+        "Siete cero cero cero",
+        "Setenta cero",
+        "Siete uno cero cero",
+        "Siete mil"
+      ],
+      "correct": 3,
+      "why": "Los códigos con millares exactos se dicen con «mil».",
+      "whyNot": [
+        "Los millares exactos se dicen con «mil».",
+        "No es la forma.",
+        "No es el código.",
+        null
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.03.009",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cómo se transmite el código de transpondedor 4521?",
+      "options": [
+        "Cuarenta y cinco veintiuno",
+        "Cuatro mil quinientos veintiuno",
+        "Cuatro cinco dos uno",
+        "Cuatro cinco veintiuno"
+      ],
+      "correct": 2,
+      "why": "Los códigos que no son millares exactos se dicen dígito a dígito.",
+      "whyNot": [
+        "Se dice dígito a dígito.",
+        "Solo los millares exactos se agrupan.",
+        null,
+        "Se dice dígito a dígito."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.03.010",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cómo se transmite una altitud de 2500 ft?",
+      "options": [
+        "Dos mil quinientos pies",
+        "Dos cinco cero cero pies",
+        "Veinticinco cien pies",
+        "Nivel de vuelo dos cinco"
+      ],
+      "correct": 0,
+      "why": "Las altitudes se dicen en miles y centenas exactos.",
+      "whyNot": [
+        null,
+        "Las altitudes se dicen en miles y centenas.",
+        "No es la forma.",
+        "Es una altitud, no un nivel."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.03.011",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cómo se transmite el nivel de vuelo 055?",
+      "options": [
+        "Nivel de vuelo cincuenta y cinco",
+        "Cinco mil quinientos pies",
+        "Nivel de vuelo cinco cinco",
+        "Nivel de vuelo cero cinco cinco"
+      ],
+      "correct": 3,
+      "why": "Los niveles de vuelo se dicen dígito a dígito.",
+      "whyNot": [
+        "Los niveles se dicen dígito a dígito.",
+        "Eso es una altitud.",
+        "Falta el cero inicial.",
+        null
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.03.012",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué se dice para la coma decimal en las frecuencias?",
+      "options": [
+        "Coma",
+        "Decimal",
+        "Punto",
+        "Con"
+      ],
+      "correct": 1,
+      "why": "La palabra normalizada es «decimal».",
+      "whyNot": [
+        "No es la palabra normalizada.",
+        null,
+        "No es la palabra normalizada.",
+        "No es la palabra normalizada."
+      ],
+      "ref": "SERA.14035"
+    },
+    {
+      "id": "090.03.013",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Qué significa una legibilidad de 5?",
+      "options": [
+        "Perfectamente legible",
+        "Legible con dificultad",
+        "Ilegible",
+        "Legible"
+      ],
+      "correct": 0,
+      "why": "En la escala de 1 a 5, el 5 es perfectamente legible.",
+      "whyNot": [
+        null,
+        "Es la 3.",
+        "Es la 1.",
+        "Es la 4."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.03.014",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué significa la legibilidad 3?",
+      "options": [
+        "Legible de vez en cuando",
+        "Perfectamente legible",
+        "Legible pero con dificultad",
+        "Ilegible"
+      ],
+      "correct": 2,
+      "why": "La legibilidad 3 es «legible pero con dificultad».",
+      "whyNot": [
+        "Es la 2.",
+        "Es la 5.",
+        null,
+        "Es la 1."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.03.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "La hora en radio se da normalmente en:",
+      "options": [
+        "Hora local con la hora completa",
+        "UTC, solo con los minutos",
+        "Hora oficial de España con los minutos",
+        "UTC con segundos"
+      ],
+      "correct": 1,
+      "why": "Se usa UTC y normalmente solo los minutos.",
+      "whyNot": [
+        "Se usa UTC.",
+        null,
+        "Se usa UTC.",
+        "No se transmiten segundos."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.03.016",
+      "type": "concepto",
+      "level": 1,
+      "q": "Antes de transmitir, ¿qué debes hacer?",
+      "options": [
+        "Pulsar el PTT y pensar",
+        "Hablar lo más rápido posible",
+        "Repetir tu distintivo tres veces",
+        "Escuchar para comprobar que la frecuencia está libre"
+      ],
+      "correct": 3,
+      "why": "Escucha antes de transmitir y prepara el mensaje.",
+      "whyNot": [
+        "Prepara el mensaje antes.",
+        "Mantén un ritmo constante.",
+        "No es necesario.",
+        null
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.03.017",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué debes hacer tras un error en una transmisión?",
+      "options": [
+        "Decir «ignore» y colgar",
+        "Repetir todo el mensaje desde el principio sin avisar",
+        "Decir «corrección» y repetir desde la parte correcta",
+        "Esperar a que la estación te corrija"
+      ],
+      "correct": 2,
+      "why": "«Corrección» indica que se ha cometido un error y se repite lo correcto.",
+      "whyNot": [
+        "«Ignore» anula todo el mensaje.",
+        "Hay que avisar con «corrección».",
+        null,
+        "Corrígete tú."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.03.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál de estas es una buena técnica de transmisión?",
+      "options": [
+        "Hablar con ritmo constante y mensajes breves",
+        "Hablar rápido para ocupar poco la frecuencia",
+        "Alargar el mensaje con muletillas",
+        "Pulsar el PTT y hablar al instante"
+      ],
+      "correct": 0,
+      "why": "La técnica consiste en preparar, esperar un instante y hablar claro y constante.",
+      "whyNot": [
+        null,
+        "Una velocidad excesiva dificulta la comprensión.",
+        "Hay que ser breve.",
+        "Espera un instante para no cortar el principio."
+      ],
+      "ref": "Doc 9432"
+    },
+    {
+      "id": "090.03.019",
+      "type": "regla",
+      "level": 2,
+      "q": "Una pista 13 se dice:",
+      "options": [
+        "Pista trece",
+        "Pista uno treinta",
+        "Pista cero trece",
+        "Pista uno tres"
+      ],
+      "correct": 3,
+      "why": "Las pistas se dicen dígito a dígito.",
+      "whyNot": [
+        "Los dígitos se dicen uno a uno.",
+        "No es la forma.",
+        "No es la forma.",
+        null
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.03.020",
+      "type": "concepto",
+      "level": 1,
+      "q": "En inglés OACI, ¿cómo se pronuncia el dígito 9?",
+      "options": [
+        "Nine",
+        "Niner",
+        "Nueve",
+        "Nien"
+      ],
+      "correct": 1,
+      "why": "La pronunciación normalizada de 9 en inglés es «niner», para evitar confusiones con otras palabras.",
+      "whyNot": [
+        "Es la forma ordinaria; la OACI usa «niner» para no confundirlo.",
+        null,
+        "Es la forma española.",
+        "No es una pronunciación normalizada."
+      ],
+      "ref": "Anexo 10, vol. II"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.090.03.01",
+      "front": "Frecuencias: la regla de los ceros",
+      "back": "Seis dígitos, salvo que el 5.º y el 6.º sean cero; entonces, los cuatro primeros"
+    },
+    {
+      "id": "c.090.03.02",
+      "front": "118,100 y 118,105",
+      "back": "«Uno uno ocho decimal uno» y «uno uno ocho decimal uno cero cinco»"
+    },
+    {
+      "id": "c.090.03.03",
+      "front": "QNH 1000",
+      "back": "Se dice «mil»"
+    },
+    {
+      "id": "c.090.03.04",
+      "front": "Transpondedor 7000",
+      "back": "«Siete mil»; los demás códigos, dígito a dígito"
+    },
+    {
+      "id": "c.090.03.05",
+      "front": "Rumbos en España",
+      "back": "Los acabados en cero añaden «grados»"
+    },
+    {
+      "id": "c.090.03.06",
+      "front": "Escala de legibilidad",
+      "back": "1 ilegible, 2 de vez en cuando, 3 con dificultad, 4 legible, 5 perfecta"
+    },
+    {
+      "id": "c.090.03.07",
+      "front": "Hora en radio",
+      "back": "UTC, normalmente solo los minutos"
+    },
+    {
+      "id": "c.090.03.08",
+      "front": "Técnica de transmisión",
+      "back": "Escuchar, preparar el mensaje, esperar un instante, ritmo constante"
+    }
+  ]
+}

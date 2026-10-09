@@ -1,0 +1,461 @@
+{
+  "lesson": {
+    "id": "020.24",
+    "title": "Comunicaciones, avisos y pantallas",
+    "summary": "Radio VHF, HF y satélite y alcance de las ondas; aviso de pérdida neumático y eléctrico; pantallas electrónicas (PFD, MFD), AHRS y ordenador de datos de aire con sus fallos.",
+    "objectives": [
+      "Describir la banda VHF aeronáutica, su propagación en línea de vista y la fórmula de alcance",
+      "Diferenciar VHF, HF y comunicaciones por satélite y sus usos",
+      "Explicar cómo funciona el aviso de pérdida neumático y el eléctrico",
+      "Describir los elementos de una cabina con pantallas: PFD, MFD, AHRS y ordenador de datos de aire",
+      "Reconocer los fallos habituales de las pantallas y qué instrumentos de reserva se usan"
+    ],
+    "sections": [
+      {
+        "title": "Radio VHF",
+        "text": [
+          "La comunicación entre piloto y control, o entre aviones, se hace en **VHF** (muy alta frecuencia), en la banda aeronáutica de **118 a 136,975 MHz**, con modulación de **amplitud** (AM). Se usa la separación de canales de **25 kHz** y, en espacio aéreo con mucho tráfico, de **8,33 kHz**, que triplica los canales disponibles. La **frecuencia de emergencia** es **121,500 MHz**.",
+          "Las ondas VHF se propagan en **línea recta**, como la luz: no rodean la curvatura de la Tierra ni los obstáculos. El alcance depende de la **altura** del avión y de la estación: a más altitud, más alcance. La aproximación habitual es la distancia hasta el horizonte radioeléctrico:"
+        ],
+        "formulas": [
+          {
+            "f": "Alcance (NM) ≈ 1,23 × (√h₁ + √h₂), con h en ft",
+            "note": "h₁ altura del avión sobre el terreno y h₂ la de la antena de tierra; supone línea de vista despejada."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Un avión vuela a 3600 ft de altura sobre el terreno y la antena de tierra está a 100 ft. ¿Qué alcance máximo aproximado tiene la comunicación VHF?",
+            "a": "√3600 = 60 y √100 = 10. Alcance ≈ 1,23 × (60 + 10) ≈ 86 NM."
+          }
+        ],
+        "bullets": [
+          "Con poca altitud y relieve de por medio, el alcance real baja: una montaña entre ambos corta la señal.",
+          "La antena de VHF es vertical, para ondas con **polarización vertical**.",
+          "El **silenciador (squelch)** corta el ruido de fondo cuando no hay señal; se ajusta hasta que el ruido desaparece.",
+          "La transmisión es **simplex**: no se puede hablar y escuchar a la vez en la misma frecuencia (se pulsa el PTT)."
+        ]
+      },
+      {
+        "title": "HF y comunicaciones por satélite",
+        "text": [
+          "La banda **HF** (alta frecuencia, de **3 a 30 MHz**) se refleja en la ionosfera y permite comunicaciones a **larga distancia**, más allá de la línea de vista: es la usada en vuelos oceánicos. Es sensible a las condiciones atmosféricas y a la hora del día, con ruido y desvanecimiento. En la aviación ligera sobre tierra casi no se usa.",
+          "Las **comunicaciones por satélite (SATCOM)** transmiten voz y datos con cobertura global mediante satélites, y se emplean en vuelos transoceánicos o remotos y para mensajes de datos con el control (CPDLC). En el PPL basta con saber que existen y para qué sirven.",
+          "La **radiobaliza de emergencia (ELT)** transmite en **406 MHz** (con una señal de localización en 121,5 MHz) tras un impacto fuerte o cuando se activa a mano, y permite a los satélites localizar el avión (Cospas-Sarsat)."
+        ]
+      },
+      {
+        "title": "Aviso de pérdida",
+        "text": [
+          "El aviso de pérdida alerta al piloto de que el ala se acerca al ángulo de ataque crítico, unos 5 a 10 kt antes de la pérdida. Hay dos sistemas principales:",
+          "El **neumático** (Cessna 172S) usa una pequeña abertura en el borde de ataque del ala izquierda, conectada a una **trompeta con lengüeta**. A ángulos de ataque altos, el punto de remanso se desplaza y el aire aspirado por la abertura hace sonar la lengüeta. No necesita electricidad. El **eléctrico** (PA-28-161) usa una **veleta o detector de sustentación** en el borde de ataque que, al levantarse con el flujo, cierra un **interruptor** y activa un zumbador o una luz. Necesita el **máster conectado**."
+        ],
+        "table": {
+          "caption": "Aviso de pérdida en los dos aviones del curso",
+          "head": [
+            "",
+            "PA-28-161 Warrior III",
+            "Cessna 172S"
+          ],
+          "rows": [
+            [
+              "Tipo",
+              "Eléctrico (veleta en el borde de ataque)",
+              "Neumático (lengüeta en el borde de ataque izquierdo)"
+            ],
+            [
+              "Necesita electricidad",
+              "Sí, con el máster conectado",
+              "No"
+            ],
+            [
+              "Comprobación en el prevuelo",
+              "Con el máster conectado, activar la veleta a mano y comprobar el aviso",
+              "Aspirar suavemente por la abertura y oír el aviso"
+            ]
+          ],
+          "src": "POH PA-28-161 y C172S"
+        },
+        "verify": true
+      },
+      {
+        "title": "Pantallas electrónicas, AHRS y ADC",
+        "text": [
+          "Muchos aviones modernos sustituyen los instrumentos de esfera por **pantallas**. La pantalla de vuelo primaria (**PFD**) integra el horizonte artificial, el anemómetro, el altímetro, el variómetro y el indicador de rumbo en una sola. La pantalla multifunción (**MFD**) muestra mapa, planes de ruta y los instrumentos de motor (**EIS**).",
+          "Detrás hay dos unidades que sustituyen a los giróscopos y a las cápsulas mecánicas. El **AHRS** (*attitude and heading reference system*) mide la actitud y el rumbo con sensores de estado sólido (giros y acelerómetros electrónicos y un magnetómetro): no tiene rotor, y por eso responde más deprisa y se estropea menos. El **ADC** (*air data computer*, ordenador de datos de aire) recibe la presión del pitot, la estática y la temperatura exterior y calcula con sensores electrónicos la IAS, la altitud, la velocidad vertical, la TAS y la OAT.",
+          "Los colores de aviso siguen un código: **rojo** para avisos que exigen acción inmediata, **ámbar** para precauciones. Una **«X» roja** sobre un indicador significa que ese dato ha fallado y no es fiable. Si falla una pantalla, el sistema puede pasar a un **modo de reserva (reversionary)** y mostrar todo en la otra, y siempre hay **instrumentos de reserva** independientes (altímetro, anemómetro y horizonte)."
+        ],
+        "bullets": [
+          "Ventaja: más información integrada, menos piezas mecánicas, mayor fiabilidad.",
+          "Riesgo: **sobrefiar** de las pantallas, perder el hábito de vigilar los instrumentos de reserva y depender del sistema eléctrico: sin energía, las pantallas se apagan.",
+          "En un fallo de AHRS se pierde la actitud y el rumbo; en un fallo de ADC, velocidad, altitud y velocidad vertical. Se pilota con los instrumentos de reserva y la brújula."
+        ]
+      }
+    ],
+    "numbers": [
+      "VHF aeronáutico: 118 a 136,975 MHz, AM, separación 25 kHz y 8,33 kHz; emergencia 121,5 MHz",
+      "Alcance VHF ≈ 1,23 × (√h₁ + √h₂) NM, con h en ft",
+      "HF: 3 a 30 MHz, larga distancia; ELT: 406 MHz",
+      "Aviso de pérdida unos 5 a 10 kt antes de la pérdida; neumático sin electricidad, eléctrico con máster",
+      "AHRS: actitud y rumbo; ADC: velocidad, altitud, vertical y temperatura; X roja: dato fallado"
+    ],
+    "traps": [
+      "Pensar que el VHF tiene alcance ilimitado: es en línea de vista y depende de la altura.",
+      "Confundir HF (larga distancia, ionosfera) con VHF (línea de vista).",
+      "Olvidar que el aviso de pérdida eléctrico necesita el máster conectado y el neumático no.",
+      "Creer que el AHRS es un giróscopo de rotor: usa sensores de estado sólido.",
+      "Fiarse de un dato con una X roja: está fallado."
+    ],
+    "spain": [
+      "En España los servicios de tránsito aéreo se prestan en VHF con separación de canales de 25 kHz y, cada vez más, de 8,33 kHz: comprueba la frecuencia en el AIP o en la carta VFR de cada aeródromo."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), caps. 8 y 9",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Manual de vuelo del PA-28-161 y del C172S",
+        "url": "https://www.piper.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Fraseología ES/EN con simulador de radio",
+        "href": "#/licencias/fraseologia"
+      },
+      {
+        "label": "Prevuelo del PA-28 (aviso de pérdida)",
+        "href": "#/ac/pa28/flow/preflight"
+      },
+      {
+        "label": "Prevuelo del C172",
+        "href": "#/ac/c172/flow/preflight"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.24.001",
+      "type": "regla",
+      "level": 1,
+      "q": "La banda VHF aeronáutica de comunicaciones va de:",
+      "options": [
+        "3 a 30 MHz",
+        "300 a 3000 MHz",
+        "118 a 136,975 MHz",
+        "108 a 112 MHz"
+      ],
+      "correct": 2,
+      "why": "Las comunicaciones aeronáuticas VHF usan de 118 a 136,975 MHz.",
+      "whyNot": [
+        "Esa es la banda HF.",
+        "Es la banda UHF.",
+        null,
+        "Corresponde a ayudas a la navegación (ILS y VOR)."
+      ],
+      "ref": "Anexo 10 OACI"
+    },
+    {
+      "id": "020.24.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "Las ondas VHF se propagan:",
+      "options": [
+        "Siguiendo la curvatura de la Tierra",
+        "Solo por debajo del horizonte",
+        "Reflejándose en la ionosfera",
+        "En línea recta (línea de vista)"
+      ],
+      "correct": 3,
+      "why": "El VHF se propaga en línea recta: el alcance depende de las alturas del avión y de la antena y del relieve.",
+      "whyNot": [
+        "Eso es característico de las ondas largas.",
+        "El horizonte limita el VHF.",
+        "Eso es el HF.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.24.003",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un avión vuela a 2500 ft sobre el terreno y la antena de tierra está a 0 ft. El alcance VHF aproximado (1,23 × √h) es de:",
+      "options": [
+        "31 NM",
+        "61 NM",
+        "100 NM",
+        "123 NM"
+      ],
+      "correct": 1,
+      "why": "√2500 = 50; 1,23 × 50 ≈ 61 NM.",
+      "whyNot": [
+        "Divide entre 2.",
+        null,
+        "Valor sin fórmula.",
+        "Usa 2,46 × 50."
+      ],
+      "ref": "Alcance VHF ≈ 1,23 × (√h₁ + √h₂)"
+    },
+    {
+      "id": "020.24.004",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un avión a 900 ft de altura y una antena a 100 ft. El alcance VHF aproximado es de:",
+      "options": [
+        "49 NM",
+        "37 NM",
+        "123 NM",
+        "25 NM"
+      ],
+      "correct": 0,
+      "why": "√900 = 30 y √100 = 10: 1,23 × 40 ≈ 49 NM.",
+      "whyNot": [
+        null,
+        "Solo suma la raíz del avión: 1,23 × 30.",
+        "Multiplica en vez de sumar raíces.",
+        "Valor sin relación con la fórmula."
+      ],
+      "ref": "Alcance VHF ≈ 1,23 × (√h₁ + √h₂)"
+    },
+    {
+      "id": "020.24.005",
+      "type": "regla",
+      "level": 1,
+      "q": "La frecuencia de emergencia en VHF es:",
+      "options": [
+        "121,500 MHz",
+        "118,000 MHz",
+        "123,450 MHz",
+        "136,975 MHz"
+      ],
+      "correct": 0,
+      "why": "121,500 MHz es la frecuencia internacional de emergencia en VHF.",
+      "whyNot": [
+        null,
+        "Es el inicio de la banda, no una frecuencia de emergencia.",
+        "Es una frecuencia de uso entre aeronaves (aire-aire).",
+        "Es el final de la banda."
+      ],
+      "ref": "Anexo 10 OACI"
+    },
+    {
+      "id": "020.24.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "Las comunicaciones HF permiten largas distancias porque:",
+      "options": [
+        "Tienen más potencia que el VHF",
+        "Siguen la línea de vista",
+        "Usan satélites",
+        "Se reflejan en la ionosfera"
+      ],
+      "correct": 3,
+      "why": "En HF (3-30 MHz) las ondas se reflejan en la ionosfera y llegan más allá del horizonte.",
+      "whyNot": [
+        "La causa es la propagación, no la potencia.",
+        "Eso limita el VHF.",
+        "Eso es SATCOM.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.24.007",
+      "type": "regla",
+      "level": 2,
+      "q": "La radiobaliza de emergencia (ELT) moderna emite en:",
+      "options": [
+        "118 MHz",
+        "121,5 MHz exclusivamente",
+        "406 MHz",
+        "30 MHz"
+      ],
+      "correct": 2,
+      "why": "Las ELT actuales emiten en 406 MHz (Cospas-Sarsat), con una señal de localización en 121,5 MHz.",
+      "whyNot": [
+        "Es el inicio de la banda de comunicaciones.",
+        "Las antiguas ELT solo usaban 121,5 MHz, hoy sin cobertura por satélite.",
+        null,
+        "Es el límite superior de la banda HF."
+      ],
+      "ref": "Anexo 10 OACI; Cospas-Sarsat"
+    },
+    {
+      "id": "020.24.008",
+      "type": "concepto",
+      "level": 1,
+      "q": "El aviso de pérdida del Cessna 172S es:",
+      "options": [
+        "Eléctrico con veleta",
+        "Neumático con lengüeta en el ala izquierda",
+        "Visual con una luz roja",
+        "Un vibrador de la palanca"
+      ],
+      "correct": 1,
+      "why": "El aire aspirado por una abertura en el borde de ataque izquierdo hace sonar una lengüeta; no necesita electricidad.",
+      "whyNot": [
+        "Es el sistema habitual en el PA-28.",
+        null,
+        "No lleva luz de aviso de pérdida.",
+        "El vibrador de palanca no es de esta avioneta."
+      ],
+      "ref": "POH C172S"
+    },
+    {
+      "id": "020.24.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "El aviso de pérdida eléctrico del PA-28-161 funciona solo si:",
+      "options": [
+        "El motor está en marcha",
+        "El máster está conectado",
+        "Está conectada la calefacción del pitot",
+        "El flap está extendido"
+      ],
+      "correct": 1,
+      "why": "Necesita corriente para el interruptor y el zumbador: se comprueba con el máster conectado.",
+      "whyNot": [
+        "No depende del motor.",
+        null,
+        "El pitot no tiene relación.",
+        "Los flaps no intervienen."
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "020.24.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un AHRS electrónico, a diferencia del horizonte artificial clásico, se caracteriza por:",
+      "options": [
+        "Usar un rotor de vacío",
+        "Depender de la presión estática",
+        "No dar información de rumbo",
+        "Usar sensores de estado sólido sin rotor"
+      ],
+      "correct": 3,
+      "why": "El AHRS usa giros y acelerómetros electrónicos y un magnetómetro: sin partes giratorias, más rápido y más fiable.",
+      "whyNot": [
+        "Eso es el horizonte de vacío.",
+        "La presión estática alimenta el ADC.",
+        "Sí da actitud y rumbo.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.24.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "El ordenador de datos de aire (ADC) calcula:",
+      "options": [
+        "Velocidad, altitud, velocidad vertical y temperatura exterior",
+        "Actitud y rumbo",
+        "Posición GPS",
+        "La mezcla"
+      ],
+      "correct": 0,
+      "why": "El ADC recibe presión pitot, estática y temperatura y obtiene IAS, altitud, velocidad vertical, TAS y OAT.",
+      "whyNot": [
+        null,
+        "Eso lo hace el AHRS.",
+        "El GPS es otro sistema.",
+        "No controla la mezcla."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.24.012",
+      "type": "concepto",
+      "level": 1,
+      "q": "Una X roja sobre el indicador de velocidad de una pantalla significa que:",
+      "options": [
+        "El dato es correcto pero está en el límite",
+        "El dato ha fallado y no es fiable",
+        "Hay que reducir velocidad",
+        "El modo es de reserva"
+      ],
+      "correct": 1,
+      "why": "La X roja indica que ese dato no está disponible o no es válido: se usan los instrumentos de reserva.",
+      "whyNot": [
+        "No señala un límite, sino un fallo.",
+        null,
+        "No es una orden de maniobra.",
+        "El modo de reserva es otra función."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.24.013",
+      "type": "regla",
+      "level": 2,
+      "q": "Si falla el AHRS en un avión con pantallas, se pierde principalmente:",
+      "options": [
+        "La velocidad y la altitud",
+        "Las comunicaciones",
+        "La actitud y el rumbo",
+        "La temperatura de aceite"
+      ],
+      "correct": 2,
+      "why": "El AHRS proporciona actitud y rumbo; velocidad y altitud dependen del ADC.",
+      "whyNot": [
+        "Eso corresponde al ADC.",
+        "La radio es otro sistema.",
+        null,
+        "Los sensores de motor van al EIS."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.24.014",
+      "type": "concepto",
+      "level": 3,
+      "q": "El silenciador (squelch) de la radio sirve para:",
+      "options": [
+        "Eliminar el ruido de fondo cuando no hay señal",
+        "Aumentar la potencia de transmisión",
+        "Cambiar de frecuencia",
+        "Amplificar señales débiles"
+      ],
+      "correct": 0,
+      "why": "El squelch corta el audio cuando no llega una señal y evita escuchar ruido continuo.",
+      "whyNot": [
+        null,
+        "No actúa sobre la transmisión.",
+        "No cambia de frecuencia.",
+        "Si se sube demasiado, puede tapar señales débiles."
+      ],
+      "ref": "PHAK cap. 8"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.24.01",
+      "front": "Banda VHF aeronáutica y emergencia",
+      "back": "118 a 136,975 MHz, AM; emergencia 121,5 MHz"
+    },
+    {
+      "id": "c.020.24.02",
+      "front": "Alcance VHF",
+      "back": "≈ 1,23 × (√h₁ + √h₂) NM, con h en ft; línea de vista"
+    },
+    {
+      "id": "c.020.24.03",
+      "front": "HF y satélite",
+      "back": "HF (3-30 MHz) rebota en la ionosfera: larga distancia. SATCOM: cobertura global"
+    },
+    {
+      "id": "c.020.24.04",
+      "front": "Aviso de pérdida: C172S y PA-28",
+      "back": "C172S: neumático, sin electricidad. PA-28: eléctrico, con máster"
+    },
+    {
+      "id": "c.020.24.05",
+      "front": "AHRS y ADC",
+      "back": "AHRS: actitud y rumbo. ADC: velocidad, altitud, vertical y temperatura"
+    }
+  ]
+}

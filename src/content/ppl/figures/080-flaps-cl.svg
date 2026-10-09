@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <title>Curva CL–α con y sin flaps de borde de salida: más CL máximo, ángulo de sustentación nula más negativo y ángulo crítico algo menor</title>
+  <defs>
+    <marker id="080-flaps-cl-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+  </defs>
+  <line x1="70" y1="330" x2="615" y2="330" class="ln" marker-end="url(#080-flaps-cl-k)"/>
+  <line x1="200" y1="375" x2="200" y2="15" class="ln" marker-end="url(#080-flaps-cl-k)"/>
+  <text x="208" y="24" class="tx b">CL</text>
+  <text x="620" y="352" class="tx b" text-anchor="end">α (°)</text>
+  <line x1="196" y1="255" x2="204" y2="255" class="ln"/>
+  <line x1="196" y1="180" x2="204" y2="180" class="ln"/>
+  <line x1="196" y1="105" x2="204" y2="105" class="ln"/>
+  <line x1="196" y1="30" x2="204" y2="30" class="ln"/>
+  <text x="190" y="259" class="tx2" text-anchor="end">0,5</text>
+  <text x="190" y="184" class="tx2" text-anchor="end">1,0</text>
+  <text x="190" y="109" class="tx2" text-anchor="end">1,5</text>
+  <text x="190" y="34" class="tx2" text-anchor="end">2,0</text>
+  <text x="80" y="348" class="tx2" text-anchor="middle">−6</text>
+  <text x="160" y="348" class="tx2" text-anchor="middle">−2</text>
+  <text x="280" y="348" class="tx2" text-anchor="middle">4</text>
+  <text x="360" y="348" class="tx2" text-anchor="middle">8</text>
+  <text x="440" y="348" class="tx2" text-anchor="middle">12</text>
+  <text x="520" y="348" class="tx2" text-anchor="middle">16</text>
+  <line x1="200" y1="105" x2="520" y2="105" class="ln2 dash"/>
+  <line x1="200" y1="30" x2="480" y2="30" class="ln2 dash"/>
+  <line x1="520" y1="105" x2="520" y2="330" class="ln2 dash"/>
+  <line x1="480" y1="30" x2="480" y2="330" class="ln2 dash"/>
+  <path d="M160 330 L400 150 C440 120 490 105 520 105 C545 105 560 130 585 150" class="ln thick" fill="none"/>
+  <path d="M80 330 L420 75 C450 45 465 30 480 30 C505 30 520 60 545 85" class="wa-ln thick" fill="none"/>
+  <circle cx="520" cy="105" r="4.5" class="ink-fill"/>
+  <circle cx="480" cy="30" r="4.5" class="wa-fill"/>
+  <text x="590" y="170" class="tx b" text-anchor="end">sin flaps</text>
+  <text x="560" y="64" class="txw b">con flaps</text>
+  <text x="228" y="62" class="tx2">CLmax con flaps ≈ 2,0</text>
+  <text x="228" y="98" class="tx2">CLmax sin flaps ≈ 1,5</text>
+  <text x="482" y="318" class="txw b" text-anchor="end">14°</text>
+  <text x="560" y="318" class="tx b" text-anchor="end">16°</text>
+  <text x="120" y="320" class="txw" text-anchor="middle">α0 más negativo</text>
+  <text x="630" y="388" class="tx2" text-anchor="end">Valores de ejemplo. Con flaps sube CLmax y el ángulo crítico es algo menor.</text>
+</svg>

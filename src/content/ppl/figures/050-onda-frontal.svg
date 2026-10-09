@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330">
+  <title>Ciclo de vida de una borrasca frontal en planta: onda inicial, ciclón joven con sector cálido, oclusión y disipación</title>
+  <rect x="10" y="40" width="148" height="190" rx="6" class="soft"/>
+  <text x="84" y="30" class="tx b" text-anchor="middle" font-size="12">1 Onda inicial</text>
+  <path d="M20 150 C50 150 60 135 85 132 C110 135 120 150 148 150" class="ln thick dash" fill="none"/>
+  <text x="84" y="178" class="tx2" text-anchor="middle">aire frío</text>
+  <text x="84" y="110" class="tx2" text-anchor="middle">aire cálido</text>
+  <text x="72" y="104" class="tx b" text-anchor="middle" font-size="12"></text>
+  <text x="84" y="248" class="tx2" text-anchor="middle" font-size="11">Frente casi estacionario</text>
+  <text x="84" y="262" class="tx2" text-anchor="middle" font-size="11">con una pequeña onda</text>
+  <rect x="167" y="40" width="148" height="190" rx="6" class="soft"/>
+  <text x="241" y="30" class="tx b" text-anchor="middle" font-size="12">2 Ciclón joven</text>
+  <ellipse cx="229" cy="100" rx="20" ry="14" class="ln2"/>
+  <path d="M229 100 C249 104 284 108 307 124" class="wa-ln thick" fill="none"/>
+  <path d="M229 100 C219 130 199 150 192 185" class="ac-ln thick" fill="none"/>
+  <text x="270" y="168" class="txw b" font-size="11" text-anchor="middle">sector</text>
+  <text x="270" y="180" class="txw b" font-size="11" text-anchor="middle">cálido</text>
+  <text x="229" y="104" class="tx b" text-anchor="middle" font-size="12">B</text>
+  <text x="241" y="248" class="tx2" text-anchor="middle" font-size="11">Sector cálido amplio;</text>
+  <text x="241" y="262" class="tx2" text-anchor="middle" font-size="11">el frío avanza más rápido</text>
+  <rect x="324" y="40" width="148" height="190" rx="6" class="soft"/>
+  <text x="398" y="30" class="tx b" text-anchor="middle" font-size="12">3 Oclusión</text>
+  <ellipse cx="386" cy="100" rx="22" ry="15" class="ln2"/>
+  <path d="M386 100 L402 126" class="ok-ln thick" fill="none"/>
+  <path d="M402 126 C426 130 446 134 464 140" class="wa-ln thick" fill="none"/>
+  <path d="M402 126 C396 150 376 170 354 190" class="ac-ln thick" fill="none"/>
+  <text x="386" y="104" class="tx b" text-anchor="middle" font-size="12">B</text>
+  <text x="398" y="248" class="tx2" text-anchor="middle" font-size="11">El frío alcanza al cálido;</text>
+  <text x="398" y="262" class="tx2" text-anchor="middle" font-size="11">el sector cálido se eleva</text>
+  <rect x="481" y="40" width="148" height="190" rx="6" class="soft"/>
+  <text x="555" y="30" class="tx b" text-anchor="middle" font-size="12">4 Disipación</text>
+  <ellipse cx="543" cy="100" rx="16" ry="11" class="ln2"/>
+  <path d="M543 100 C553 120 563 140 565 155" class="ok-ln thick dash" fill="none"/>
+  <text x="543" y="104" class="tx b" text-anchor="middle" font-size="12">B</text>
+  <text x="555" y="248" class="tx2" text-anchor="middle" font-size="11">Queda el frente ocluido;</text>
+  <text x="555" y="262" class="tx2" text-anchor="middle" font-size="11">la borrasca se rellena</text>
+  <line x1="140" y1="298" x2="170" y2="298" class="wa-ln thick"/><text x="176" y="302" class="txw b" font-size="12">frente cálido</text>
+  <line x1="290" y1="298" x2="320" y2="298" class="ac-ln thick"/><text x="326" y="302" class="txa b" font-size="12">frente frío</text>
+  <line x1="430" y1="298" x2="460" y2="298" class="ok-ln thick"/><text x="466" y="302" class="txo b" font-size="12">oclusión</text>
+  <text x="320" y="324" class="tx2" text-anchor="middle" font-size="11">B = centro de bajas presiones. Evolución de 3 a 5 días en el Atlántico norte</text>
+</svg>

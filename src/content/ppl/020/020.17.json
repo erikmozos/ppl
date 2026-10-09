@@ -1,0 +1,424 @@
+{
+  "lesson": {
+    "id": "020.17",
+    "title": "Manejo del motor",
+    "summary": "De qué depende la potencia: presión de admisión y RPM, efecto de la altitud, la temperatura y la humedad, sobrealimentación, ajustes de potencia y mezcla en cada fase del vuelo y cuidados para no dañar el motor.",
+    "objectives": [
+      "Explicar qué mide la presión de admisión y cómo se relaciona con la potencia y las RPM",
+      "Describir cómo reducen la potencia la altitud, la temperatura y la humedad en un motor atmosférico",
+      "Distinguir un motor atmosférico de uno sobrealimentado y turboalimentado",
+      "Planificar potencia y mezcla en las fases de despegue, ascenso, crucero y descenso",
+      "Aplicar los cuidados de manejo: calentamiento, cambios suaves de potencia y enfriamiento gradual"
+    ],
+    "sections": [
+      {
+        "title": "De qué depende la potencia",
+        "text": [
+          "La potencia que da un motor de pistón depende de cuánto aire y combustible quema por segundo. Hay dos palancas: cuánta mezcla entra en cada ciclo y cuántos ciclos hay por minuto. En cabina eso se ve con dos instrumentos: la **presión de admisión** (MAP, *manifold absolute pressure*), que mide la presión del aire en el colector de admisión tras la mariposa, y las **RPM**, que miden el giro del cigüeñal.",
+          "Con el motor parado, la MAP marca la **presión atmosférica** del lugar (unas 29,9 inHg a nivel del mar). Con el motor en ralentí, la mariposa casi cerrada deja el colector con una depresión fuerte y la MAP baja a unas 10-12 inHg. Al abrir gases sube hacia el valor ambiente. Un motor **atmosférico** (como el O-320 del PA-28-161 y el IO-360 del C172S) **nunca** puede superar la presión ambiente en el colector; en la práctica queda unas pulgadas por debajo a plena potencia.",
+          "La potencia es aproximadamente proporcional al producto **MAP × RPM** a mezcla correcta. Con **hélice de paso fijo** controlas la potencia con un solo mando (gases), y el tacómetro refleja la potencia. Con **hélice de velocidad constante** tienes dos mandos y dos instrumentos, y la potencia depende de ambos."
+        ],
+        "bullets": [
+          "1 inHg ≈ 33,9 hPa. Presión estándar: 29,92 inHg a nivel del mar.",
+          "Potencia máxima del PA-28-161 Warrior III: 160 hp a 2700 RPM; del C172S: 180 hp a 2700 RPM (valores nominales, según POH)."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Influencia de la atmósfera",
+        "text": [
+          "Un motor atmosférico pierde potencia cuando el aire es **menos denso**: entra menos masa de aire por ciclo y se quema menos combustible. Así actúan:",
+          "**Altitud**: la presión baja con la altura (aproximadamente 1 inHg por cada 1000 ft en los niveles bajos), la MAP máxima posible baja con ella y la potencia disminuye del orden de un 3 % por cada 1000 ft. **Temperatura alta**: el aire caliente es menos denso; la altitud de densidad aumenta. **Humedad alta**: el vapor de agua ocupa sitio y desplaza oxígeno, con una pérdida pequeña pero real. Los tres efectos son los de un día caluroso, húmedo y de aeródromo alto: potencia baja, rodaje de despegue largo y ascenso débil.",
+          "Para compensar el aire menos denso se **empobrece la mezcla** en altitud (020.15). En un motor atmosférico, la potencia máxima disponible baja con la altitud y no se recupera con ningún mando."
+        ],
+        "examples": [
+          {
+            "q": "Con presión estándar de 29,92 inHg a nivel del mar, ¿qué presión máxima aproximada puede alcanzar la admisión de un motor atmosférico a 5000 ft?",
+            "a": "Unos 5 inHg menos: del orden de 25 inHg como máximo teórico (la presión estándar a 5000 ft es de unos 24,9 inHg), y en la práctica algo menos por las pérdidas de la admisión."
+          }
+        ]
+      },
+      {
+        "title": "Motores sobrealimentados",
+        "text": [
+          "Un **compresor** comprime el aire antes de la mariposa para que entre más masa de aire y se mantenga la MAP al subir. Hay dos tipos. El **sobrealimentador** (supercharger) lo mueve el cigüeñal y consume parte de la potencia del motor. El **turbocompresor** (turbo) lo mueve una turbina que aprovecha los gases de escape; una **válvula de descarga** (wastegate) deriva parte de los gases para no sobrepasar la presión límite. Un **intercambiador de calor** (intercooler) puede enfriar el aire comprimido.",
+          "Un motor sobrealimentado mantiene la potencia nominal hasta una **altitud crítica**, y por encima de ella pierde potencia como uno atmosférico. Puede superar la presión ambiente, de modo que la MAP puede ser mayor que la atmosférica: de ahí que el POH fije límites de **MAP** y **RPM** para evitar el *overboost*, causa de detonación. Los aviones de escuela del curso no llevan compresor."
+        ]
+      },
+      {
+        "title": "Potencia y mezcla en cada fase",
+        "text": [
+          "El ajuste del motor sigue las fases del vuelo. Los valores concretos son los del POH de tu avión; esta tabla recoge la lógica general."
+        ],
+        "table": {
+          "caption": "Ajustes habituales por fase (criterio general)",
+          "head": [
+            "Fase",
+            "Potencia",
+            "Mezcla"
+          ],
+          "rows": [
+            [
+              "Arranque y calentamiento",
+              "Ralentí a unas 1000 RPM (según POH) hasta que el aceite suba de temperatura",
+              "Rica"
+            ],
+            [
+              "Despegue",
+              "Potencia máxima (gases a fondo)",
+              "Rica (en aeródromos altos, POH: empobrecer para obtener las RPM máximas)"
+            ],
+            [
+              "Ascenso",
+              "Máxima continua o la que indique el POH",
+              "Rica, salvo empobrecimiento en altitud según POH"
+            ],
+            [
+              "Crucero",
+              "Habitualmente entre el 55 y el 75 % de potencia",
+              "Empobrecida según el procedimiento de EGT o RPM"
+            ],
+            [
+              "Descenso y aproximación",
+              "Reducida de forma progresiva",
+              "Enriquecer al bajar y rica en la aproximación"
+            ]
+          ],
+          "src": "PHAK cap. 7; POH"
+        },
+        "verify": true
+      },
+      {
+        "title": "Cuidados al manejar el motor",
+        "text": [
+          "Casi todos los daños de un motor de escuela vienen de un mal uso evitable. Estas son las reglas básicas:"
+        ],
+        "bullets": [
+          "**Calentamiento**: nunca cargues un motor frío. Aumenta potencia solo cuando el aceite haya llegado a la temperatura de trabajo (arco verde) y la presión sea estable.",
+          "**Movimientos suaves**: avanza y retrasa los gases con suavidad. Las acciones bruscas tensionan el motor, ahogan el carburador y son una causa de enfriamiento brusco (020.12).",
+          "**Enfriamiento gradual**: reduce potencia poco a poco en el descenso y evita ralentí prolongado a gran altura; las culatas no deben enfriarse muy deprisa. Algunos fabricantes dan una velocidad máxima de enfriamiento de las culatas (alrededor de 50 °F por minuto, según Lycoming).",
+          "**Rodaje**: a RPM bajas y con ralentí no demasiado largo; las bujías se ensucian con el ralentí prolongado y mezcla rica.",
+          "**Limites**: no superes la raya roja de RPM ni de MAP; una sobrerrevolución o un *overboost* se anota y obliga a una inspección.",
+          "**Control de instrumentos**: vigila presión y temperatura de aceite, temperatura de culatas y EGT en cada cambio de fase.",
+          "Para la **parada**: deja el motor al ralentí un momento, comprueba la caída de magnetos si el POH lo pide, mezcla a corte de ralentí y magnetos OFF."
+        ],
+        "verify": true
+      }
+    ],
+    "numbers": [
+      "MAP en parado = presión ambiente; ralentí ≈ 10-12 inHg; 1 inHg ≈ 33,9 hPa",
+      "Potencia ∝ MAP × RPM; un motor atmosférico nunca supera la presión ambiente",
+      "≈ 1 inHg menos por 1000 ft; ≈ 3 % menos de potencia por 1000 ft",
+      "PA-28-161: 160 hp a 2700 RPM; C172S: 180 hp a 2700 RPM",
+      "Enfriamiento de culatas: unos 50 °F por minuto como máximo (Lycoming)"
+    ],
+    "traps": [
+      "Creer que un motor atmosférico puede dar más MAP que la presión ambiente.",
+      "Pensar que la humedad no afecta a la potencia: la reduce un poco.",
+      "Subir MAP con RPM bajas con hélice de velocidad constante: overboost.",
+      "Confundir el turbo (gases de escape) con el supercharger (movido por el motor).",
+      "Reducir gases de golpe tras un ascenso largo: enfriamiento brusco."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 7",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Lycoming, Operator's Manual",
+        "url": "https://www.lycoming.com/"
+      },
+      {
+        "title": "Manual de vuelo del PA-28-161 y del C172S",
+        "url": "https://www.piper.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Prueba de motor del PA-28",
+        "href": "#/ac/pa28/flow/runup"
+      },
+      {
+        "label": "Prueba de motor del C172",
+        "href": "#/ac/c172/flow/runup"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.17.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La presión de admisión (MAP) mide:",
+      "options": [
+        "La presión del aceite",
+        "La presión del combustible",
+        "La presión absoluta del aire en el colector de admisión",
+        "La presión de los gases de escape"
+      ],
+      "correct": 2,
+      "why": "La MAP es la presión absoluta del aire en el colector, tras la mariposa.",
+      "whyNot": [
+        "La presión de aceite tiene su propio manómetro.",
+        "La presión de combustible se mide aparte.",
+        null,
+        "Los gases de escape no se miden con la MAP."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.17.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "Con el motor parado, el manómetro de presión de admisión indica:",
+      "options": [
+        "Cero",
+        "La presión de combustible",
+        "La presión atmosférica local",
+        "10 inHg"
+      ],
+      "correct": 2,
+      "why": "Sin motor en marcha no hay depresión en el colector: marca la presión atmosférica.",
+      "whyNot": [
+        "La presión es absoluta, por lo que no marca cero.",
+        "No mide combustible.",
+        null,
+        "10 inHg es un valor típico de ralentí en marcha."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.17.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un motor atmosférico, la presión de admisión máxima posible es:",
+      "options": [
+        "Mayor que la presión ambiente",
+        "Igual o algo menor que la presión ambiente",
+        "Siempre 30 inHg",
+        "Independiente de la altitud"
+      ],
+      "correct": 1,
+      "why": "Sin compresor, el motor no puede superar la presión exterior; con gases a fondo queda algo por debajo por las pérdidas.",
+      "whyNot": [
+        "Eso solo ocurre con sobrealimentación.",
+        null,
+        "Baja con la altitud.",
+        "Disminuye al subir."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.17.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué efecto tiene una alta altitud de densidad en un motor atmosférico?",
+      "options": [
+        "Menos potencia",
+        "Más potencia",
+        "Más presión de aceite",
+        "Más refrigeración"
+      ],
+      "correct": 0,
+      "why": "El aire menos denso lleva menos masa de oxígeno por ciclo: baja la potencia.",
+      "whyNot": [
+        null,
+        "Pasa lo contrario.",
+        "No tiene relación con la presión de aceite.",
+        "El aire menos denso refrigera peor."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.17.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "La humedad alta, a igual presión y temperatura, hace que un motor atmosférico dé:",
+      "options": [
+        "Algo más de potencia",
+        "Algo menos de potencia",
+        "La misma potencia",
+        "Más octanaje"
+      ],
+      "correct": 1,
+      "why": "El vapor de agua desplaza parte del aire seco: entra menos oxígeno y la potencia baja un poco.",
+      "whyNot": [
+        "La humedad no aumenta la potencia.",
+        null,
+        "El efecto es pequeño pero real.",
+        "El octanaje es del combustible."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.17.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál es la diferencia entre un turbocompresor y un sobrealimentador (supercharger)?",
+      "options": [
+        "El turbo lo mueve el cigüeñal y el supercharger los gases de escape",
+        "El turbo es solo para motores diésel",
+        "No hay diferencia",
+        "El turbo lo mueve una turbina de gases de escape y el supercharger lo mueve el motor"
+      ],
+      "correct": 3,
+      "why": "El turbo aprovecha la energía de los gases de escape; el sobrealimentador consume potencia del propio motor.",
+      "whyNot": [
+        "Es al revés.",
+        "Existen turbos en motores de gasolina de aviación.",
+        "Su accionamiento es distinto.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.17.007",
+      "type": "concepto",
+      "level": 3,
+      "q": "La altitud crítica de un motor sobrealimentado es aquella:",
+      "options": [
+        "Hasta la que mantiene la potencia nominal",
+        "En la que el motor se para",
+        "Donde la mezcla es estequiométrica",
+        "Donde empieza el hielo de carburador"
+      ],
+      "correct": 0,
+      "why": "Hasta esa altitud el compresor mantiene la MAP; por encima la potencia baja como en un motor atmosférico.",
+      "whyNot": [
+        null,
+        "No se para al superarla; solo pierde potencia.",
+        "No tiene relación con la mezcla.",
+        "No hay relación con el hielo."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.17.008",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué mezcla se usa normalmente en el despegue a nivel del mar?",
+      "options": [
+        "Pobre de máxima economía",
+        "Rica",
+        "En el pico de EGT",
+        "Corte de ralentí"
+      ],
+      "correct": 1,
+      "why": "Con potencia máxima, la mezcla rica refrigera y evita la detonación. Solo en aeródromos altos el POH indica empobrecer.",
+      "whyNot": [
+        "Con potencia máxima calentaría demasiado.",
+        null,
+        "El pico de EGT con plena potencia es peligroso.",
+        "Pararía el motor."
+      ],
+      "ref": "POH PA-28-161 y C172S"
+    },
+    {
+      "id": "020.17.009",
+      "type": "regla",
+      "level": 1,
+      "q": "El calentamiento de un motor frío antes del despegue se da por concluido cuando:",
+      "options": [
+        "Pasan 10 minutos",
+        "La temperatura exterior sube",
+        "La temperatura de aceite entra en el arco verde y la presión es estable",
+        "Las RPM llegan a 2000"
+      ],
+      "correct": 2,
+      "why": "El motor debe llegar a su temperatura de trabajo antes de pedirle potencia.",
+      "whyNot": [
+        "No hay un tiempo fijo.",
+        "No es referencia del motor.",
+        null,
+        "Las RPM no indican temperatura."
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "020.17.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "Para evitar el enfriamiento brusco al descender, conviene:",
+      "options": [
+        "Cortar gases de golpe",
+        "Subir las RPM",
+        "Empobrecer la mezcla",
+        "Reducir potencia de forma gradual"
+      ],
+      "correct": 3,
+      "why": "Una bajada rápida de temperatura de culatas y pistones puede dañar el motor; se reduce la potencia poco a poco.",
+      "whyNot": [
+        "Cortar gases de golpe es lo que provoca el problema.",
+        "Subir RPM no enfría gradualmente.",
+        "Empobrecer calienta más.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.17.011",
+      "type": "calculo",
+      "level": 2,
+      "q": "Si la presión estándar a nivel del mar es 29,92 inHg y baja aproximadamente 1 inHg por cada 1000 ft, ¿cuál es la presión estándar aproximada a 6000 ft?",
+      "options": [
+        "35,9 inHg",
+        "18,0 inHg",
+        "29,9 inHg",
+        "23,9 inHg"
+      ],
+      "correct": 3,
+      "why": "29,92 − 6 ≈ 23,9 inHg (el valor estándar real a 6000 ft es del orden de 23,98 inHg).",
+      "whyNot": [
+        "Suma en vez de restar.",
+        "Resta 12, que corresponde a 12 000 ft.",
+        "No tiene en cuenta la altitud.",
+        null
+      ],
+      "ref": "Atmósfera estándar internacional"
+    },
+    {
+      "id": "020.17.012",
+      "type": "calculo",
+      "level": 2,
+      "q": "Si un motor pierde un 3 % de potencia por cada 1000 ft, ¿qué potencia aproximada queda a 4000 ft partiendo de 160 hp a nivel del mar?",
+      "options": [
+        "141 hp",
+        "160 hp",
+        "128 hp",
+        "112 hp"
+      ],
+      "correct": 0,
+      "why": "Pérdida del 12 %: 160 × 0,88 ≈ 141 hp. Es una aproximación orientativa.",
+      "whyNot": [
+        null,
+        "No tiene en cuenta la altitud.",
+        "Corresponde a una pérdida del 20 %.",
+        "Corresponde a una pérdida del 30 %."
+      ],
+      "ref": "PHAK cap. 7 (aproximación)"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.17.01",
+      "front": "MAP con el motor parado",
+      "back": "La presión atmosférica local (unas 29,9 inHg a nivel del mar)"
+    },
+    {
+      "id": "c.020.17.02",
+      "front": "Un motor atmosférico y la presión ambiente",
+      "back": "Nunca puede superarla en el colector; baja con la altitud"
+    },
+    {
+      "id": "c.020.17.03",
+      "front": "Turbo frente a supercharger",
+      "back": "Turbo: turbina de gases de escape. Supercharger: lo mueve el motor"
+    },
+    {
+      "id": "c.020.17.04",
+      "front": "Cómo se evita el enfriamiento brusco",
+      "back": "Reduciendo potencia de forma gradual en el descenso"
+    }
+  ]
+}

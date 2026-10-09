@@ -1,0 +1,786 @@
+{
+ "lesson": {
+  "title": "Cartas",
+  "summary": "Proyecciones Mercator y Lambert y sus propiedades, la carta OACI 1:500.000 de ENAIRE (relieve, símbolos, espacios aéreos, puntos VFR), escalas y cómo medir y trazar distancias y rumbos.",
+  "objectives": [
+   "Reconocer las propiedades de las proyecciones Mercator y Lambert",
+   "Saber qué representa una recta en cada proyección y cómo se ve una ortodrómica",
+   "Convertir distancias entre carta y terreno con la escala",
+   "Leer la leyenda de la carta VFR 1:500.000: relieve, obstáculos, espacios aéreos, radioayudas y puntos VFR",
+   "Medir rumbos y distancias y trazar la ruta correctamente",
+   "Comprobar la vigencia de la carta antes del vuelo"
+  ],
+  "sections": [
+   {
+    "title": "Por qué hay proyecciones",
+    "text": [
+     "Representar la superficie curva de la Tierra en un plano obliga a deformarla. Ninguna proyección conserva a la vez ángulos, áreas y distancias. En navegación aérea importan sobre todo los **ángulos**, porque las derrotas y los rumbos se miden con transportador, y por eso las cartas aeronáuticas son **conformes**: conservan los ángulos y las formas pequeñas, aunque deformen áreas y escalas.",
+     "En una carta conforme los meridianos y los paralelos se cortan siempre a 90° y la escala en un punto es la misma en todas las direcciones. Hay dos proyecciones conformes que debes dominar: la **Mercator** (cilíndrica) y la **Lambert** (cónica)."
+    ]
+   },
+   {
+    "title": "Mercator y Lambert",
+    "text": [
+     "En la **Mercator** la Tierra se proyecta sobre un cilindro tangente al ecuador. Los meridianos son rectas paralelas, equidistantes; los paralelos son rectas horizontales **cada vez más separadas al aumentar la latitud**, para mantener la conformidad. Por eso la escala **crece con la latitud** y no se pueden representar los polos. En ella una **loxodrómica es una recta**, y una **ortodrómica es una curva** que se arquea hacia el polo.",
+     "En la **Lambert** conforme la Tierra se proyecta sobre un cono secante que corta en dos **paralelos de referencia** (paralelos estándar). Los meridianos son rectas que convergen hacia el polo, y los paralelos son arcos de circunferencia concéntricos. Entre los dos paralelos de referencia la escala es ligeramente menor y fuera de ellos, ligeramente mayor, pero se mantiene **casi constante** en toda la hoja. Una **recta es, con muy buena aproximación, un círculo máximo (ortodrómica)**, y la loxodrómica es una curva que se arquea hacia el ecuador. Por eso es la proyección de la mayoría de las cartas aeronáuticas, incluida la OACI 1:500.000."
+    ],
+    "figure": "svg:060-proyecciones",
+    "caption": "En Mercator, la recta es la loxodrómica. En Lambert, la recta es casi la ortodrómica.",
+    "table": {
+     "caption": "Propiedades comparadas",
+     "head": [
+      "Propiedad",
+      "Mercator",
+      "Lambert conforme"
+     ],
+     "rows": [
+      [
+       "Superficie auxiliar",
+       "Cilindro tangente",
+       "Cono secante"
+      ],
+      [
+       "Meridianos",
+       "Rectas paralelas",
+       "Rectas que convergen al polo"
+      ],
+      [
+       "Paralelos",
+       "Rectas paralelas",
+       "Arcos de circunferencia"
+      ],
+      [
+       "Escala",
+       "Aumenta con la latitud",
+       "Casi constante"
+      ],
+      [
+       "Línea recta",
+       "Loxodrómica (rumbo constante)",
+       "Casi ortodrómica (círculo máximo)"
+      ],
+      [
+       "Conformidad",
+       "Sí",
+       "Sí"
+      ],
+      [
+       "Uso",
+       "Cartas de navegación marítima y de vuelo a baja latitud",
+       "Cartas OACI 1:500.000 y 1:1.000.000"
+      ]
+     ],
+     "src": "Cartografía aeronáutica"
+    }
+   },
+   {
+    "title": "Medir rumbos en la carta",
+    "text": [
+     "Como los meridianos de la Lambert convergen, el rumbo de una recta cambia de un punto a otro. Para trazar o medir el rumbo se apoya el transportador en el **meridiano más cercano a la mitad del tramo**: ese es el rumbo medio, y es el que se vuela con una desviación mínima. En Mercator el rumbo es el mismo en cualquier meridiano.",
+     "La diferencia entre la derrota al principio y al final de una ortodrómica se llama **convergencia** y, entre dos puntos de la misma latitud, vale aproximadamente la diferencia de longitud multiplicada por el seno de la latitud."
+    ],
+    "examples": [
+     {
+      "q": "Tramo de 6° de longitud a 40° N. ¿Cuánto cambia la derrota entre el principio y el final?",
+      "a": "6° × sen 40° = 6° × 0,643 ≈ 3,9°, aproximadamente 4°."
+     }
+    ]
+   },
+   {
+    "title": "Escalas",
+    "text": [
+     "La escala 1:500.000 significa que **1 cm de la carta son 500.000 cm del terreno, es decir, 5 km**. Una milla náutica (1852 m) mide **3,7 mm** en la carta, y 1 cm equivale a **2,7 NM**. Las distancias se miden con regla sobre la ruta y se pasan a NM con la escala gráfica de la carta o con el cálculo. Con 1:250.000, 1 cm son 2,5 km; con 1:1.000.000, 10 km."
+    ],
+    "formulas": [
+     {
+      "f": "Distancia real = distancia en carta × denominador de la escala",
+      "note": "Por ejemplo, 12 cm × 500.000 = 6.000.000 cm = 60 km."
+     },
+     {
+      "f": "1 cm (1:500.000) = 5 km = 2,7 NM ; 1 NM = 3,7 mm",
+      "note": "Para pasar entre km y NM, divide o multiplica por 1,852."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Mides 7,4 cm sobre una carta 1:500.000. ¿Cuántas NM son?",
+      "a": "7,4 × 5 = 37 km; 37 / 1,852 = 20 NM."
+     },
+     {
+      "q": "Una etapa de 50 NM. ¿Cuántos centímetros ocupa en una carta 1:500.000?",
+      "a": "50 × 1,852 = 92,6 km = 18,5 cm."
+     }
+    ]
+   },
+   {
+    "title": "La carta OACI 1:500.000 de España",
+    "text": [
+     "La carta VFR de referencia en España es la **Carta Aeronáutica OACI 1:500.000** que publica ENAIRE (**VFR500**), en proyección Lambert conforme y varias hojas. Está pensada para vuelo VFR a baja cota y se lee con la leyenda a mano. Los elementos esenciales:",
+     "**Relieve**: tintes hipsométricos, es decir, colores por tramos de altitud, y curvas de nivel; las cotas y la elevación de obstáculos se dan en **pies sobre el nivel del mar**, y la altura de los obstáculos sobre el suelo entre paréntesis o en una segunda cifra. **Obstáculos** destacados: antenas, torres, tendidos eléctricos, parques eólicos y chimeneas, con símbolos diferentes para el aislado y el agrupado, y el de iluminación. **Hidrografía y población**: ríos, embalses y costas, y las poblaciones en tamaño y forma. **Espacios aéreos**: CTR, TMA, zonas de tránsito de aeródromo (ATZ), espacios con clase (A, C, D, E, G), con sus límites inferior y superior y su frecuencia. **Zonas peligrosas, restringidas y prohibidas**, con los designadores LED, LER y LEP más el número.",
+     "**Aeródromos**: símbolo y nombre con su elevación en pies, la longitud de pista, la frecuencia y el designador OACI. **Radioayudas**: VOR, DME, NDB, con su frecuencia, identificador en morse y rosa de rumbos. **Puntos de notificación VFR**: puntos con nombre que figuran en la AIP y en la carta; su símbolo exacto está en la leyenda de la edición vigente."
+    ],
+    "bullets": [
+     "Zona prohibida (LEP), restringida (LER), peligrosa (LED): prefijo de España más P, R o D y un número.",
+     "Las altitudes y alturas de la carta están en pies; las distancias, en NM o km según la escala gráfica.",
+     "Comprueba siempre la **fecha de edición**: la carta debe estar actualizada para volar (NCO.GEN.135, cartas actualizadas a bordo)."
+    ],
+    "note": {
+     "kind": "es",
+     "text": "ENAIRE publica la carta VFR 1:500.000 y las cartas de aproximación visual (VAC) en el AIP España, además de la herramienta Insignia VFR para consultar el espacio aéreo en pantalla. El símbolo exacto de los puntos VFR y de los obstáculos debe consultarse en la leyenda de la edición vigente."
+    },
+    "verify": true
+   },
+   {
+    "title": "Trazar y medir una ruta",
+    "text": [
+     "El procedimiento de trabajo en la carta es el mismo en todas las rutas. Marca la salida y el destino. Une los puntos con una línea recta fina. **Mide la derrota verdadera** con el transportador en el meridiano más cercano a la mitad del tramo. **Mide la distancia** con la regla y la escala. Marca hitos cada 10 NM o a tiempos regulares y anota los puntos de control. Comprueba por el camino los **espacios aéreos y las zonas** que cruzas y la elevación del terreno y de los obstáculos, para elegir una altitud segura que cumpla las alturas mínimas de SERA.5005(f).",
+     "Después se calculan viento, rumbo, GS y tiempos con el computador (véanse los bloques 060.06 y 060.07) y se anotan en el navlog."
+    ]
+   }
+  ],
+  "numbers": [
+   "Mercator y Lambert son conformes: conservan los ángulos",
+   "Mercator: loxodrómica recta; Lambert: ortodrómica casi recta",
+   "Escala 1:500.000: 1 cm = 5 km = 2,7 NM; 1 NM = 3,7 mm",
+   "Convergencia ≈ Δlongitud × sen(latitud)",
+   "Rumbos: medir en el meridiano más cercano al medio del tramo",
+   "Zonas LEP, LER y LED: prohibida, restringida y peligrosa"
+  ],
+  "traps": [
+   "En Mercator la ortodrómica es una curva; la recta es la loxodrómica.",
+   "En Lambert la recta es casi una ortodrómica, no una loxodrómica.",
+   "Medir el rumbo en el meridiano del punto de salida en lugar de en el del centro del tramo.",
+   "Pasar de km a NM multiplicando en lugar de dividiendo entre 1,852.",
+   "Usar una carta caducada: faltan espacios aéreos y obstáculos nuevos."
+  ],
+  "spain": [
+   "La carta OACI 1:500.000 de ENAIRE (VFR500) es una carta Lambert conforme.",
+   "Las zonas se designan en España con los prefijos LEP, LER y LED."
+  ],
+  "sources": [
+   {
+    "title": "OACI, Anexo 4: Cartas aeronáuticas; Doc 8697, Manual de cartas aeronáuticas"
+   },
+   {
+    "title": "ENAIRE, Carta Aeronáutica OACI 1:500.000 y cartas VAC, AIP España",
+    "url": "https://www.enaire.es/"
+   },
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 16",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   }
+  ],
+  "id": "060.05",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "060.05.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "Una carta conforme es la que conserva:",
+   "options": [
+    "Los ángulos",
+    "Las distancias",
+    "Las áreas",
+    "Las áreas y las distancias"
+   ],
+   "correct": 0,
+   "why": "Una proyección conforme conserva los ángulos (y las formas pequeñas), lo que permite medir rumbos con transportador.",
+   "whyNot": [
+    null,
+    "Las distancias no se conservan en ninguna proyección plana.",
+    "Las áreas se deforman, sobre todo en Mercator.",
+    "No se conserva ninguna de las dos."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "En una carta Mercator, una línea recta es:",
+   "options": [
+    "Una ortodrómica",
+    "Un círculo máximo",
+    "Una línea de igual variación",
+    "Una loxodrómica"
+   ],
+   "correct": 3,
+   "why": "En Mercator los meridianos son rectas paralelas, así que una recta corta a todos con el mismo ángulo: loxodrómica.",
+   "whyNot": [
+    "La ortodrómica es una curva.",
+    "Un círculo máximo es una curva en Mercator, salvo ecuador y meridianos.",
+    "Esas son las isógonas.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "En una carta Mercator, un círculo máximo (distinto de ecuador y meridianos) se representa como:",
+   "options": [
+    "Un círculo",
+    "Una curva que se arquea hacia el ecuador",
+    "Una curva que se arquea hacia el polo",
+    "Una recta"
+   ],
+   "correct": 2,
+   "why": "La ortodrómica es más corta que la loxodrómica, y en Mercator, que ensancha las distancias hacia el polo, se arquea hacia él.",
+   "whyNot": [
+    "No se representa como círculo.",
+    "La recta es la loxodrómica.",
+    null,
+    "Eso ocurre en la loxodrómica de Lambert."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "En una carta Lambert conforme, los meridianos son:",
+   "options": [
+    "Rectas paralelas",
+    "Rectas que convergen hacia el polo",
+    "Elipses",
+    "Arcos de circunferencia"
+   ],
+   "correct": 1,
+   "why": "En la Lambert los meridianos son rectas convergentes y los paralelos arcos concéntricos.",
+   "whyNot": [
+    "Eso ocurre en Mercator.",
+    null,
+    "No son elipses.",
+    "Los paralelos son los arcos."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.005",
+   "type": "concepto",
+   "level": 1,
+   "q": "En una carta Lambert conforme, los paralelos son:",
+   "options": [
+    "Elipses",
+    "Rectas paralelas",
+    "Arcos de circunferencia concéntricos",
+    "Rectas convergentes"
+   ],
+   "correct": 2,
+   "why": "En la Lambert, los paralelos son arcos de circunferencia con el mismo centro, el vértice del cono.",
+   "whyNot": [
+    "No se representan como elipses.",
+    "Esa es la forma en Mercator.",
+    null,
+    "Esa es la forma de los meridianos."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "En una carta Lambert, una recta entre dos puntos es aproximadamente:",
+   "options": [
+    "Un paralelo",
+    "Una línea de igual variación",
+    "Una loxodrómica",
+    "Un círculo máximo"
+   ],
+   "correct": 3,
+   "why": "La línea recta de una Lambert coincide con muy buena aproximación con el arco de círculo máximo.",
+   "whyNot": [
+    "Los paralelos son arcos.",
+    "Las isógonas son líneas distintas.",
+    "Es la loxodrómica la que se curva hacia el ecuador.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "La escala de una carta Mercator:",
+   "options": [
+    "Es nula en el ecuador",
+    "Es constante",
+    "Aumenta con la latitud",
+    "Disminuye con la latitud"
+   ],
+   "correct": 2,
+   "why": "Para conservar la conformidad, los paralelos se separan más con la latitud: la escala crece.",
+   "whyNot": [
+    "Es mínima en el ecuador y crece hacia los polos.",
+    "Esa es la propiedad de la Lambert.",
+    null,
+    "La escala varía con la latitud."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un inconveniente de la proyección Mercator es que:",
+   "options": [
+    "Los meridianos se cortan",
+    "No puede representar los polos",
+    "Tiene escala constante",
+    "No conserva los ángulos"
+   ],
+   "correct": 1,
+   "why": "La escala tiende a infinito en los polos, por lo que no pueden representarse.",
+   "whyNot": [
+    "Los meridianos son paralelos.",
+    null,
+    "Su escala varía.",
+    "Es conforme: conserva los ángulos."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.009",
+   "type": "regla",
+   "level": 1,
+   "q": "En una carta 1:500.000, 1 cm equivale a:",
+   "options": [
+    "5 km",
+    "50 km",
+    "500 m",
+    "5 NM"
+   ],
+   "correct": 0,
+   "why": "1 cm de carta son 500.000 cm de terreno; 500.000 cm = 5000 m = 5 km.",
+   "whyNot": [
+    null,
+    "Sería una escala 1:5.000.000.",
+    "Sería una escala 1:50.000.",
+    "1 cm son 2,7 NM, no 5."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.010",
+   "type": "calculo",
+   "level": 1,
+   "q": "Mides 10 cm sobre una carta 1:500.000. La distancia real es de unas:",
+   "options": [
+    "92 NM",
+    "5 NM",
+    "50 NM",
+    "27 NM"
+   ],
+   "correct": 3,
+   "why": "10 cm × 5 km = 50 km; 50 / 1,852 = 27 NM.",
+   "whyNot": [
+    "Multiplica por 1,852 en lugar de dividir.",
+    "Es la mitad de la distancia en km.",
+    "Son 50 km, no NM.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.011",
+   "type": "calculo",
+   "level": 2,
+   "q": "Una etapa de 50 NM ocupa en una carta 1:500.000 aproximadamente:",
+   "options": [
+    "10 cm",
+    "27 cm",
+    "18,5 cm",
+    "5 cm"
+   ],
+   "correct": 2,
+   "why": "50 NM = 92,6 km = 18,5 cm a 1:500.000.",
+   "whyNot": [
+    "Serían 50 km en lugar de 50 NM.",
+    "Resulta de multiplicar los 18,5 por 1,5.",
+    null,
+    "No se corresponde con esa escala."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.012",
+   "type": "calculo",
+   "level": 2,
+   "q": "En una carta 1:250.000, 12 cm equivalen a:",
+   "options": [
+    "24 NM",
+    "12 km",
+    "60 km",
+    "30 km"
+   ],
+   "correct": 3,
+   "why": "12 cm × 2,5 km = 30 km.",
+   "whyNot": [
+    "Convierte con un factor erróneo.",
+    "Sería 1 cm = 1 km.",
+    "Es el resultado con escala 1:500.000.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.013",
+   "type": "calculo",
+   "level": 2,
+   "q": "Mides 7,4 cm en una carta 1:500.000. La distancia en NM es:",
+   "options": [
+    "20 NM",
+    "68 NM",
+    "37 NM",
+    "13 NM"
+   ],
+   "correct": 0,
+   "why": "7,4 × 5 = 37 km; 37 / 1,852 = 20 NM.",
+   "whyNot": [
+    null,
+    "Multiplica por 1,852.",
+    "Son 37 km.",
+    "Divide por 5,5 en vez de 1,852."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.014",
+   "type": "calculo",
+   "level": 3,
+   "q": "Una ortodrómica entre dos puntos de latitud 40° N separados 6° de longitud. La convergencia de meridianos es de unos:",
+   "options": [
+    "9°",
+    "4°",
+    "6°",
+    "2°"
+   ],
+   "correct": 1,
+   "why": "6° × sen 40° = 6° × 0,643 ≈ 3,9°, unos 4°.",
+   "whyNot": [
+    "Resulta de dividir por 0,643.",
+    null,
+    "Es la diferencia de longitud, sin el seno.",
+    "Resulta de multiplicar por 0,3, que no es ningún seno aplicable."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.015",
+   "type": "concepto",
+   "level": 2,
+   "q": "Para medir el rumbo de una ruta en una carta Lambert, el transportador se apoya en:",
+   "options": [
+    "El meridiano del punto de salida",
+    "El meridiano más cercano a la mitad del tramo",
+    "El ecuador",
+    "El meridiano del destino"
+   ],
+   "correct": 1,
+   "why": "El rumbo medio se mide en el meridiano central del tramo para minimizar el error.",
+   "whyNot": [
+    "En Lambert los meridianos convergen, así que el rumbo cambia a lo largo del tramo.",
+    null,
+    "Daría un rumbo solo válido al final.",
+    "Daría un rumbo solo válido al inicio."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.016",
+   "type": "regla",
+   "level": 2,
+   "es": true,
+   "q": "La carta VFR de referencia 1:500.000 de ENAIRE utiliza la proyección:",
+   "options": [
+    "Estereográfica polar",
+    "Mercator",
+    "Lambert conforme",
+    "Cilíndrica equidistante"
+   ],
+   "correct": 2,
+   "why": "La carta OACI 1:500.000 usa proyección cónica conforme de Lambert.",
+   "whyNot": [
+    "Se usa en las regiones polares.",
+    "Es la de las cartas marinas.",
+    null,
+    "No es conforme."
+   ],
+   "ref": "OACI Anexo 4"
+  },
+  {
+   "id": "060.05.017",
+   "type": "regla",
+   "level": 1,
+   "q": "En una carta OACI, las cotas del relieve y la altura de los obstáculos se expresan en:",
+   "options": [
+    "Pies",
+    "Metros",
+    "Kilómetros",
+    "Millas"
+   ],
+   "correct": 0,
+   "why": "La altitud y la elevación de aeródromos y obstáculos se dan en pies sobre el nivel del mar.",
+   "whyNot": [
+    null,
+    "Se usan pies para la altitud.",
+    "No se usan kilómetros para altitud.",
+    "No se usan millas para altitud."
+   ],
+   "ref": "OACI Anexo 4"
+  },
+  {
+   "id": "060.05.018",
+   "type": "regla",
+   "level": 2,
+   "es": true,
+   "q": "Un espacio aéreo con designador LER seguido de un número en España es una zona:",
+   "options": [
+    "Peligrosa",
+    "De tránsito de aeródromo",
+    "Prohibida",
+    "Restringida"
+   ],
+   "correct": 3,
+   "why": "LEP, LER y LED son las zonas prohibida, restringida y peligrosa de España.",
+   "whyNot": [
+    "Las peligrosas son LED.",
+    "Las ATZ no llevan ese designador.",
+    "Las prohibidas son LEP.",
+    null
+   ],
+   "ref": "AIP España ENR 5.1"
+  },
+  {
+   "id": "060.05.019",
+   "type": "regla",
+   "level": 2,
+   "es": true,
+   "q": "Las zonas peligrosas de España se designan con las letras:",
+   "options": [
+    "LEP",
+    "LEA",
+    "LER",
+    "LED"
+   ],
+   "correct": 3,
+   "why": "LED = zona peligrosa; LER = restringida; LEP = prohibida.",
+   "whyNot": [
+    "Es el prefijo de las prohibidas.",
+    "No es un prefijo de zona.",
+    "Es el de las restringidas.",
+    null
+   ],
+   "ref": "AIP España ENR 5.1"
+  },
+  {
+   "id": "060.05.020",
+   "type": "regla",
+   "level": 1,
+   "q": "Antes de volar con una carta aeronáutica hay que comprobar:",
+   "options": [
+    "Que está plastificada",
+    "Que está actualizada, con la edición vigente",
+    "Que es de papel mate",
+    "Que tiene tres hojas"
+   ],
+   "correct": 1,
+   "why": "Una carta caducada puede carecer de espacios aéreos u obstáculos nuevos; las cartas deben estar vigentes.",
+   "whyNot": [
+    "Plastificar la carta no garantiza que esté al día.",
+    null,
+    "El tipo de papel no es un requisito de vuelo.",
+    "El número de hojas no tiene relación con su vigencia."
+   ],
+   "ref": "NCO.GEN.135"
+  },
+  {
+   "id": "060.05.021",
+   "type": "concepto",
+   "level": 2,
+   "q": "Los paralelos de referencia de una carta Lambert son aquellos en los que:",
+   "options": [
+    "Los meridianos se cortan",
+    "La escala es exacta",
+    "No hay deformación de áreas",
+    "La escala es máxima"
+   ],
+   "correct": 1,
+   "why": "El cono corta a la esfera en dos paralelos de referencia donde no hay distorsión de escala; entre ellos la escala es ligeramente menor, y fuera, algo mayor.",
+   "whyNot": [
+    "Los meridianos convergen en el polo.",
+    null,
+    "Una proyección conforme siempre deforma las áreas.",
+    "Fuera de ellos la escala es algo mayor."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.022",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un mapa conforme, ¿qué ocurre con las áreas?",
+   "options": [
+    "Se deforman",
+    "Se conservan solo en el ecuador",
+    "Se reducen a la mitad",
+    "Se conservan exactamente"
+   ],
+   "correct": 0,
+   "why": "La conformidad conserva ángulos, pero las áreas quedan deformadas, sobre todo en latitudes altas de Mercator.",
+   "whyNot": [
+    null,
+    "Solo se conserva la forma local.",
+    "No existe tal propiedad.",
+    "Una proyección conforme no conserva las áreas."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.023",
+   "type": "lectura",
+   "level": 2,
+   "q": "En la leyenda de una carta VFR, un círculo de puntos con centro corresponde a:",
+   "options": [
+    "Un NDB",
+    "Un VOR",
+    "Un aeródromo",
+    "Un DME"
+   ],
+   "correct": 0,
+   "why": "El NDB se dibuja con un círculo de puntos y su frecuencia en kHz; el VOR, con una rosa y un hexágono.",
+   "whyNot": [
+    null,
+    "El VOR se representa con un hexágono y rosa de rumbos.",
+    "Los aeródromos se representan con un círculo y las pistas.",
+    "El DME se representa con un cuadrado, normalmente asociado al VOR."
+   ],
+   "ref": "OACI Anexo 4"
+  },
+  {
+   "id": "060.05.024",
+   "type": "concepto",
+   "level": 1,
+   "es": true,
+   "q": "El prefijo de las zonas de España en la AIP comienza por:",
+   "options": [
+    "LF",
+    "EG",
+    "LE",
+    "ED"
+   ],
+   "correct": 2,
+   "why": "El prefijo OACI de España peninsular y Baleares es LE; en Canarias es GC.",
+   "whyNot": [
+    "Es el prefijo de Francia.",
+    "Es el prefijo de Reino Unido.",
+    null,
+    "Es el prefijo de Alemania."
+   ],
+   "ref": "OACI Doc 7910"
+  },
+  {
+   "id": "060.05.025",
+   "type": "calculo",
+   "level": 2,
+   "q": "Mides 12 cm en una carta 1:500.000. La distancia real es:",
+   "options": [
+    "12 km",
+    "6 km",
+    "60 km",
+    "600 km"
+   ],
+   "correct": 2,
+   "why": "12 cm × 5 km/cm = 60 km.",
+   "whyNot": [
+    "Son 12 cm sin aplicar la escala.",
+    "Sería una escala 1:50.000.",
+    null,
+    "Sería una escala 1:5.000.000."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.026",
+   "type": "calculo",
+   "level": 2,
+   "q": "Si en una carta 1 cm representa 2,5 km, la escala es:",
+   "options": [
+    "1:250.000",
+    "1:25.000",
+    "1:2.500.000",
+    "1:500.000"
+   ],
+   "correct": 0,
+   "why": "2,5 km = 250.000 cm, así que 1 cm de carta son 250.000 cm de terreno: 1:250.000.",
+   "whyNot": [
+    null,
+    "Corresponde a 1 cm = 250 m.",
+    "Corresponde a 1 cm = 25 km.",
+    "Corresponde a 1 cm = 5 km."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.05.027",
+   "type": "calculo",
+   "level": 2,
+   "q": "Una etapa de 40 NM en una carta 1:500.000 mide en la carta unos:",
+   "options": [
+    "8 cm",
+    "14,8 cm",
+    "7,4 cm",
+    "20 cm"
+   ],
+   "correct": 1,
+   "why": "40 × 1,852 = 74 km, y 74 / 5 = 14,8 cm.",
+   "whyNot": [
+    "Resulta de usar 1 cm = 5 NM.",
+    null,
+    "Es la mitad del valor correcto.",
+    "Resulta de usar 1 cm = 2 NM."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.060.05.01",
+   "front": "Proyección conforme",
+   "back": "Conserva los ángulos; deforma áreas y escalas"
+  },
+  {
+   "id": "c.060.05.02",
+   "front": "Mercator",
+   "back": "Cilindro; meridianos paralelos; escala crece con la latitud; recta = loxodrómica"
+  },
+  {
+   "id": "c.060.05.03",
+   "front": "Lambert conforme",
+   "back": "Cono secante; meridianos convergentes; escala casi constante; recta ≈ ortodrómica"
+  },
+  {
+   "id": "c.060.05.04",
+   "front": "Escala 1:500.000",
+   "back": "1 cm = 5 km = 2,7 NM; 1 NM = 3,7 mm"
+  },
+  {
+   "id": "c.060.05.05",
+   "front": "Dónde se mide el rumbo en Lambert",
+   "back": "En el meridiano más cercano a la mitad del tramo"
+  },
+  {
+   "id": "c.060.05.06",
+   "front": "Zonas en España",
+   "back": "LEP prohibida, LER restringida, LED peligrosa"
+  },
+  {
+   "id": "c.060.05.07",
+   "front": "Altitudes en la carta",
+   "back": "En pies sobre el nivel del mar"
+  }
+ ]
+}

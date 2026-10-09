@@ -1,0 +1,576 @@
+{
+  "lesson": {
+    "id": "090.01",
+    "title": "Definiciones, estaciones y categorías de mensajes",
+    "summary": "Términos básicos de radiotelefonía, estaciones aeronáuticas (Torre, Rodadura, Autorizaciones, Aproximación, Control, Información, AFIS y Radio), idioma de las comunicaciones y categorías de mensajes con su orden de prioridad.",
+    "objectives": [
+      "Definir los términos básicos de las comunicaciones aeronáuticas",
+      "Identificar qué estación presta cada servicio por el nombre con el que se la llama",
+      "Ordenar las categorías de mensajes por su prioridad",
+      "Saber en qué idioma se comunica un piloto VFR en España"
+    ],
+    "sections": [
+      {
+        "title": "Radiotelefonía aeronáutica: qué es y quién la regula",
+        "text": [
+          "La **radiotelefonía** es la comunicación por voz mediante ondas de radio. En aviación VFR se hace en la banda de **VHF** (118 a 136,975 MHz), con una frecuencia por servicio: cuando cambias de dependencia ATS, cambias de frecuencia. El **servicio móvil aeronáutico** es el que comunica estaciones de tierra con aeronaves, y entre ellas.",
+          "Las normas de procedimiento y de fraseología vienen del **Anexo 10 de la OACI** (volumen II) y del **Doc 9432** (Manual de radiotelefonía). En la Unión Europea se recogen en la **sección 14 de SERA** (SERA.14001 a 14050). España añade sus diferencias en el **AIP GEN 1.7**. La finalidad de todas estas reglas es una sola: que el mensaje se entienda a la primera, aunque quien habla y quien escucha tengan idiomas o acentos distintos."
+        ]
+      },
+      {
+        "title": "Términos que debes manejar",
+        "table": {
+          "caption": "Definiciones básicas",
+          "head": [
+            "Término",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "Estación aeronáutica",
+              "Estación de tierra del servicio móvil aeronáutico (torre, información, radio…)"
+            ],
+            [
+              "Estación de aeronave",
+              "La radio del avión; se identifica con el distintivo de la aeronave"
+            ],
+            [
+              "Frecuencia de socorro",
+              "121,5 MHz en VHF; la frecuencia internacional de emergencia"
+            ],
+            [
+              "Distintivo de llamada",
+              "Identificación con la que se llama a una estación o a una aeronave"
+            ],
+            [
+              "Colación",
+              "Repetición de una instrucción o autorización para confirmar que se ha entendido bien"
+            ],
+            [
+              "Legibilidad",
+              "Calidad de recepción de una transmisión, en una escala de 1 a 5"
+            ],
+            [
+              "Información de vuelo (FIS)",
+              "Servicio que facilita información útil para la seguridad y eficacia del vuelo, sin dar autorizaciones"
+            ],
+            [
+              "Control de tránsito aéreo (ATC)",
+              "Servicio que evita colisiones y ordena el tráfico y que da autorizaciones e instrucciones"
+            ]
+          ],
+          "src": "Anexo 10, vol. II; Doc 9432; SERA.14"
+        }
+      },
+      {
+        "title": "Las estaciones y cómo se las llama",
+        "text": [
+          "A cada dependencia se la llama con el **nombre del lugar más un sufijo** que dice qué servicio presta. Saber leer el sufijo te dice con quién estás hablando, qué puede pedirte y qué puedes pedirle."
+        ],
+        "table": {
+          "caption": "Sufijos de los distintivos de estación",
+          "head": [
+            "Sufijo",
+            "Inglés",
+            "Qué presta"
+          ],
+          "rows": [
+            [
+              "Torre",
+              "Tower",
+              "Control de aeródromo: despegues, aterrizajes y circuito"
+            ],
+            [
+              "Rodadura",
+              "Ground",
+              "Control de rodaje por el área de maniobras"
+            ],
+            [
+              "Autorizaciones",
+              "Delivery",
+              "Retransmite las autorizaciones de ruta antes de la puesta en marcha"
+            ],
+            [
+              "Aproximación",
+              "Approach",
+              "Control de aproximación: llegadas y salidas en la CTR y la TMA"
+            ],
+            [
+              "Control",
+              "Control",
+              "Control de área (centro de control)"
+            ],
+            [
+              "Información",
+              "Information",
+              "Servicio de información de vuelo (FIS) o servicio AFIS de aeródromo"
+            ],
+            [
+              "Radio",
+              "Radio",
+              "Estación de radio aeroterrestre que da información sin ser ATC"
+            ]
+          ],
+          "src": "Doc 9432; AIP España"
+        },
+        "note": {
+          "kind": "tip",
+          "text": "El AFIS informa y no autoriza. Torre autoriza. Si el sufijo es «Información» o «Radio», nadie te autoriza a despegar o a aterrizar: lo decides tú."
+        },
+        "verify": true
+      },
+      {
+        "title": "Idioma de las comunicaciones",
+        "text": [
+          "Las comunicaciones aeroterrestres se hacen en el idioma que habitualmente use la estación en tierra, o en **inglés**. En España se utilizan el **español** y el **inglés**, y el piloto puede pedir que se use inglés. Una vez elegido el idioma de un intercambio, no conviene cambiar sin motivo en mitad de la comunicación. El nivel de competencia lingüística que necesitas figura en tu licencia (nivel 4 como mínimo)."
+        ]
+      },
+      {
+        "title": "Categorías de mensajes y su prioridad",
+        "text": [
+          "No todos los mensajes valen lo mismo. Cuando varios quieren usar la frecuencia a la vez, el orden de prioridad es el siguiente, de mayor a menor."
+        ],
+        "table": {
+          "caption": "Orden de prioridad de los mensajes",
+          "head": [
+            "Prioridad",
+            "Categoría",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "1",
+              "Socorro (MAYDAY)",
+              "Fallo de motor con aterrizaje forzoso"
+            ],
+            [
+              "2",
+              "Urgencia (PAN PAN)",
+              "Alumno con posición incierta; paciente enfermo"
+            ],
+            [
+              "3",
+              "Comunicaciones relativas a la radiogoniometría",
+              "Petición de QDM"
+            ],
+            [
+              "4",
+              "Mensajes de seguridad de vuelo",
+              "Autorizaciones ATC, informes de posición, avisos de tráfico"
+            ],
+            [
+              "5",
+              "Mensajes meteorológicos",
+              "ATIS, SIGMET, informes de viento"
+            ],
+            [
+              "6",
+              "Mensajes de regularidad del vuelo",
+              "Cambios de horario, de combustible o de servicios"
+            ]
+          ],
+          "src": "Anexo 10, vol. II, 5.1.1"
+        },
+        "bullets": [
+          "Quien oye una llamada de socorro **interrumpe** cualquier transmisión que pudiera molestar y escucha.",
+          "Una llamada de socorro o de urgencia puede hacerse en la frecuencia en uso o en **121,5 MHz**."
+        ]
+      }
+    ],
+    "numbers": [
+      "Orden de prioridad: socorro, urgencia, radiogoniometría, seguridad de vuelo, meteorología, regularidad",
+      "Banda de comunicaciones aeronáuticas: 118 a 136,975 MHz",
+      "Frecuencia de socorro: 121,5 MHz",
+      "Legibilidad: escala de 1 a 5"
+    ],
+    "traps": [
+      "El mensaje de radiogoniometría va después de la urgencia y antes de la seguridad de vuelo.",
+      "Los mensajes meteorológicos van detrás de los de seguridad de vuelo.",
+      "Un AFIS no autoriza: «Información» no es Torre."
+    ],
+    "spain": [
+      "En España se emplea el español o el inglés; los distintivos de estación siguen los nombres de lugar más el sufijo.",
+      "Diferencias nacionales de fraseología y distintivos: AIP GEN 1.7."
+    ],
+    "sources": [
+      {
+        "title": "SERA, sección 14: fraseología (Easy Access Rules, EASA)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "AIP España GEN 1.7 (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/contenido_AIP/GEN/LE_GEN_1_7_en.html"
+      },
+      {
+        "title": "EGAST: Radiotelephony Guide for VFR Pilots (EASA)",
+        "url": "https://www.easa.europa.eu/document-library/general-publications/egast-radiotelephony-guide-vfr-pilots"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología ES/EN",
+        "href": "#/licencias/fraseologia"
+      },
+      {
+        "label": "Simulador de radio",
+        "href": "#/licencias/fraseologia?tab=radio"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "090.01.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿En qué banda de frecuencias se realizan las comunicaciones aeroterrestres VFR habituales?",
+      "options": [
+        "HF, de 3 a 30 MHz",
+        "UHF, de 225 a 400 MHz",
+        "VHF, de 118 a 136,975 MHz",
+        "VHF, de 108 a 117,975 MHz"
+      ],
+      "correct": 2,
+      "why": "Las comunicaciones aire-tierra civiles VFR usan VHF en la banda de 118 a 136,975 MHz.",
+      "whyNot": [
+        "La HF se usa en vuelos oceánicos.",
+        "La UHF es militar.",
+        null,
+        "Es la banda de las ayudas a la navegación."
+      ],
+      "ref": "Anexo 10, vol. III"
+    },
+    {
+      "id": "090.01.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "Según el orden de prioridad de los mensajes, ¿cuál es el primero?",
+      "options": [
+        "Socorro",
+        "Urgencia",
+        "Seguridad de vuelo",
+        "Regularidad del vuelo"
+      ],
+      "correct": 0,
+      "why": "La prioridad es: socorro, urgencia, radiogoniometría, seguridad de vuelo, meteorología y regularidad.",
+      "whyNot": [
+        null,
+        "Va después del socorro.",
+        "Está más abajo en la lista.",
+        "Es la de menor prioridad."
+      ],
+      "ref": "Anexo 10, vol. II, 5.1.1"
+    },
+    {
+      "id": "090.01.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué categoría de mensaje va inmediatamente después de la urgencia?",
+      "options": [
+        "Mensajes de seguridad de vuelo",
+        "Mensajes meteorológicos",
+        "Mensajes de regularidad del vuelo",
+        "Las comunicaciones relativas a la radiogoniometría"
+      ],
+      "correct": 3,
+      "why": "Tras socorro y urgencia van las comunicaciones de radiogoniometría.",
+      "whyNot": [
+        "Va detrás de la radiogoniometría.",
+        "Va detrás de seguridad de vuelo.",
+        "Es la última.",
+        null
+      ],
+      "ref": "Anexo 10, vol. II, 5.1.1"
+    },
+    {
+      "id": "090.01.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál de estos mensajes tiene mayor prioridad que un informe de posición?",
+      "options": [
+        "Un mensaje meteorológico",
+        "Una comunicación de urgencia",
+        "Un cambio de horario del vuelo",
+        "Un aviso de condiciones del aeródromo"
+      ],
+      "correct": 1,
+      "why": "El informe de posición es un mensaje de seguridad de vuelo; la urgencia tiene prioridad sobre él.",
+      "whyNot": [
+        "Va por detrás de los de seguridad de vuelo.",
+        null,
+        "Es de regularidad.",
+        "Es de seguridad o meteorología."
+      ],
+      "ref": "Anexo 10, vol. II, 5.1.1"
+    },
+    {
+      "id": "090.01.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un mensaje meteorológico frente a uno de regularidad del vuelo:",
+      "options": [
+        "Tiene mayor prioridad el meteorológico",
+        "Tiene mayor prioridad el de regularidad",
+        "Tienen la misma prioridad",
+        "Depende de la hora"
+      ],
+      "correct": 0,
+      "why": "Los meteorológicos van antes que los de regularidad del vuelo.",
+      "whyNot": [
+        null,
+        "La regularidad es la última categoría.",
+        "Tienen distinta.",
+        "No depende de la hora."
+      ],
+      "ref": "Anexo 10, vol. II, 5.1.1"
+    },
+    {
+      "id": "090.01.006",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Cuál es la frecuencia internacional de socorro en VHF?",
+      "options": [
+        "118,0 MHz",
+        "123,45 MHz",
+        "121,5 MHz",
+        "406 MHz"
+      ],
+      "correct": 2,
+      "why": "121,5 MHz es la frecuencia de socorro aeronáutica en VHF.",
+      "whyNot": [
+        "Es el inicio de la banda de comunicaciones.",
+        "Es una frecuencia aire-aire común.",
+        null,
+        "Es la de las balizas por satélite."
+      ],
+      "ref": "Anexo 10, vol. V"
+    },
+    {
+      "id": "090.01.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué estación autoriza los despegues y los aterrizajes en un aeródromo controlado?",
+      "options": [
+        "Información",
+        "Torre",
+        "Radio",
+        "Autorizaciones"
+      ],
+      "correct": 1,
+      "why": "La torre presta el control de aeródromo.",
+      "whyNot": [
+        "El FIS no autoriza.",
+        null,
+        "No autoriza.",
+        "Solo retransmite las autorizaciones de ruta."
+      ],
+      "ref": "Doc 9432"
+    },
+    {
+      "id": "090.01.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué estación te da la autorización de ruta antes de la puesta en marcha en un aeropuerto grande?",
+      "options": [
+        "Torre",
+        "Rodadura",
+        "Aproximación",
+        "Autorizaciones"
+      ],
+      "correct": 3,
+      "why": "«Autorizaciones» (Delivery) retransmite las autorizaciones de ruta.",
+      "whyNot": [
+        "Controla los despegues y aterrizajes.",
+        "Controla el rodaje.",
+        "Controla las llegadas y salidas.",
+        null
+      ],
+      "ref": "Doc 9432"
+    },
+    {
+      "id": "090.01.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué estación controla el rodaje por el área de maniobras?",
+      "options": [
+        "Torre",
+        "Información",
+        "Rodadura",
+        "Control"
+      ],
+      "correct": 2,
+      "why": "Rodadura (Ground) controla el movimiento por el área de maniobras.",
+      "whyNot": [
+        "Controla el circuito y la pista.",
+        "No es ATC.",
+        null,
+        "Es de ruta."
+      ],
+      "ref": "Doc 9432"
+    },
+    {
+      "id": "090.01.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "Hablas con «Villanueva Información». ¿Qué significa para ti?",
+      "options": [
+        "Que recibes información, pero no autorizaciones de despegue ni aterrizaje",
+        "Que Villanueva te autoriza a aterrizar",
+        "Que Villanueva es el control de área",
+        "Que Villanueva te da separación radar"
+      ],
+      "correct": 0,
+      "why": "«Información» designa un servicio de información de vuelo o un AFIS: informa pero no autoriza.",
+      "whyNot": [
+        null,
+        "El FIS o el AFIS no autoriza.",
+        "Control es otro sufijo.",
+        "No es lo que presta."
+      ],
+      "ref": "Doc 9432; AIP España"
+    },
+    {
+      "id": "090.01.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿En qué idioma se comunica un piloto VFR en España?",
+      "options": [
+        "Solo en español",
+        "Solo en inglés",
+        "En el que quiera, mezclando idiomas",
+        "En español o en inglés, según el piloto y la estación"
+      ],
+      "correct": 3,
+      "why": "Las comunicaciones se hacen en el idioma de la estación en tierra o en inglés.",
+      "whyNot": [
+        "El piloto puede usar inglés.",
+        "Se puede usar español.",
+        "Debe usarse uno solo en el intercambio.",
+        null
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.01.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una colación es:",
+      "options": [
+        "Un mensaje de seguridad de vuelo",
+        "La repetición de una instrucción o autorización para confirmar que se ha entendido",
+        "La respuesta «recibido»",
+        "Una petición de información meteorológica"
+      ],
+      "correct": 1,
+      "why": "Colacionar es repetir la información para que el emisor confirme que se ha entendido correctamente.",
+      "whyNot": [
+        "No es una categoría de mensaje.",
+        null,
+        "«Recibido» no colaciona.",
+        "No lo es."
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.01.013",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Dónde se publican las diferencias nacionales de fraseología de España?",
+      "options": [
+        "En el AIP GEN 1.7",
+        "En el AIP AD 2",
+        "En el AIP ENR 5.1",
+        "En SERA, apéndice 1"
+      ],
+      "correct": 0,
+      "why": "GEN 1.7 contiene las diferencias con la OACI y SERA, incluida la fraseología.",
+      "whyNot": [
+        null,
+        "Es la información del aeródromo.",
+        "Son las zonas peligrosas, restringidas y prohibidas.",
+        "El apéndice 1 trata las señales."
+      ],
+      "ref": "AIP GEN 1.7",
+      "es": true
+    },
+    {
+      "id": "090.01.014",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál de estas es una llamada de urgencia?",
+      "options": [
+        "Un motor parado en un aterrizaje forzoso",
+        "Una pregunta sobre el QNH",
+        "Un alumno piloto con la posición incierta pero sin peligro inmediato",
+        "Una solicitud de cambio de horario"
+      ],
+      "correct": 2,
+      "why": "La urgencia describe una condición que afecta a la seguridad sin requerir ayuda inmediata.",
+      "whyNot": [
+        "Es socorro.",
+        "Es información.",
+        null,
+        "Es regularidad."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.01.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál es el sufijo del servicio de control de aproximación?",
+      "options": [
+        "Información",
+        "Aproximación",
+        "Rodadura",
+        "Torre"
+      ],
+      "correct": 1,
+      "why": "«Aproximación» (Approach) es el control de llegadas y salidas.",
+      "whyNot": [
+        "Es el FIS.",
+        null,
+        "Es el control de rodaje.",
+        "Es el control de aeródromo."
+      ],
+      "ref": "Doc 9432"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.090.01.01",
+      "front": "Prioridad de los mensajes",
+      "back": "Socorro, urgencia, radiogoniometría, seguridad de vuelo, meteorología, regularidad"
+    },
+    {
+      "id": "c.090.01.02",
+      "front": "Frecuencia de socorro",
+      "back": "121,5 MHz"
+    },
+    {
+      "id": "c.090.01.03",
+      "front": "Banda VHF de comunicaciones",
+      "back": "118 a 136,975 MHz"
+    },
+    {
+      "id": "c.090.01.04",
+      "front": "Torre, Rodadura, Autorizaciones",
+      "back": "Torre: despegue y aterrizaje; Rodadura: rodaje; Autorizaciones: autorización de ruta"
+    },
+    {
+      "id": "c.090.01.05",
+      "front": "Información y AFIS",
+      "back": "Informan; no autorizan despegue ni aterrizaje"
+    },
+    {
+      "id": "c.090.01.06",
+      "front": "Idioma de las comunicaciones",
+      "back": "El de la estación en tierra o inglés; en España, español o inglés"
+    },
+    {
+      "id": "c.090.01.07",
+      "front": "Colación",
+      "back": "Repetir la instrucción para confirmar que se ha entendido"
+    }
+  ]
+}

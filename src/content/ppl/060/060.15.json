@@ -1,0 +1,281 @@
+{
+ "lesson": {
+  "title": "GNSS",
+  "summary": "Sistemas de navegación por satélite (GPS, GLONASS, Galileo): segmentos, principio de medida, fuentes de error, RAIM, EGNOS y uso prudente en vuelo VFR.",
+  "objectives": [
+   "Nombrar las constelaciones GNSS y los tres segmentos",
+   "Explicar por qué se necesitan cuatro satélites para una posición 3D",
+   "Reconocer las fuentes de error y el papel del DOP",
+   "Entender qué es el RAIM y cuántos satélites exige",
+   "Entender qué aporta EGNOS",
+   "Usar el GNSS en VFR con la base de datos actualizada y sin renunciar a la navegación visual"
+  ],
+  "sections": [
+   {
+    "title": "Constelaciones y segmentos",
+    "text": [
+     "**GNSS** (global navigation satellite system) es el nombre general de los sistemas de posicionamiento por satélite. Los globales son el **GPS** (Estados Unidos), el **GLONASS** (Rusia), el **Galileo** (Unión Europea) y el **BeiDou** (China). Cada uno tiene decenas de satélites en órbitas medias, a unos 20 000 km de altura, de modo que desde cualquier punto de la Tierra se ven varios al mismo tiempo.",
+     "Todo sistema GNSS tiene tres segmentos. El **segmento espacial** son los satélites, que llevan relojes atómicos y emiten su posición y la hora. El **segmento de control** son las estaciones en tierra que vigilan los satélites y actualizan sus datos. El **segmento de usuario** es el receptor, el tuyo."
+    ]
+   },
+   {
+    "title": "Principio de medida",
+    "text": [
+     "Cada satélite emite una señal con la **hora exacta** de emisión y su posición. El receptor mide cuánto tardó en llegar (a la velocidad de la luz) y obtiene su **distancia** al satélite. Con tres distancias a tres satélites se fija un punto en el espacio, pero el reloj del receptor es de cuarzo, mucho menos exacto que los atómicos, y un error de una milésima de segundo equivale a 300 km. Por eso el reloj del receptor es una **cuarta incógnita**.",
+     "Resultado: se necesitan **cuatro satélites** para una posición **3D** (latitud, longitud y altitud) más la corrección de reloj. Con **tres** y una altitud conocida (por ejemplo, la barométrica) se obtiene una posición **2D**. La posición se da en el sistema **WGS-84**, y la altitud que da el GPS es **geométrica**, no la altitud de presión del altímetro."
+    ]
+   },
+   {
+    "title": "Errores y calidad de la medida",
+    "text": [
+     "Los errores del GNSS son: el **retardo en la ionosfera y la troposfera**, que frenan y curvan la señal; los errores de **reloj y de posición del satélite**; las **reflexiones** (multitrayecto) en edificios o relieve; y la **geometría de los satélites**, que se resume en el **DOP** (dilución de la precisión): cuanto menor es, mejor es la geometría (satélites bien repartidos); si están todos juntos en el cielo, el error aumenta. Una antena mal ubicada o apantallada por la cubierta del avión empeora la recepción.",
+     "La precisión horizontal típica del GPS civil es de pocos metros. Las **interferencias deliberadas o accidentales** pueden degradar o impedir la señal: no confíes en una sola fuente."
+    ]
+   },
+   {
+    "title": "RAIM y EGNOS",
+    "text": [
+     "El GPS no avisa por sí solo de que un satélite está dando datos erróneos. El **RAIM** (receiver autonomous integrity monitoring) es una función del receptor que comprueba la coherencia de las medidas: con **5 satélites** puede **detectar** un fallo, y con **6** puede además **excluir** al satélite defectuoso y seguir funcionando. (Con ayuda de la altitud barométrica, bastan un satélite menos.) Si no hay RAIM disponible, el receptor avisa y no debes fiarte de la posición.",
+     "**EGNOS** es el sistema europeo de aumentación por satélite (SBAS). Una red de estaciones de referencia mide los errores del GPS y satélites geoestacionarios los difunden como correcciones y mensajes de **integridad**, de modo que mejoran la precisión (hasta uno o dos metros) y avisan en segundos si algo falla. Permite en España aproximaciones de precisión basadas en GNSS (LPV) en muchos aeródromos."
+    ]
+   },
+   {
+    "title": "Uso en vuelo VFR",
+    "text": [
+     "En VFR el GNSS es una **ayuda a la navegación** y no sustituye a la navegación visual ni a la estima. Los receptores portátiles y las tabletas son útiles, pero pueden fallar, perder la señal o quedarse sin batería. Un receptor de panel certificado tiene una **base de datos** (aeropuertos, espacios aéreos, radioayudas) que se actualiza cada 28 días con el ciclo AIRAC: usarla caducada es un riesgo, porque faltan cambios de espacio aéreo o de frecuencias.",
+     "Buenas prácticas: lleva siempre la carta y la ruta trazada; comprueba el avance con referencias visuales; verifica que la ruta cargada en el GPS coincide con la de la carta y con el plan de vuelo; y vigila el aviso de integridad (RAIM) o de pérdida de señal."
+    ],
+    "note": {
+     "kind": "warn",
+     "text": "La altitud del GPS no sirve para cumplir la separación con el terreno ni para ajustar el altímetro: usa el altímetro con el QNH. El GPS tampoco sustituye la escucha de la frecuencia ni la información del ATC."
+    }
+   }
+  ],
+  "numbers": [
+   "4 satélites para posición 3D (x, y, z y reloj); 3 con altitud conocida para 2D",
+   "RAIM: 5 satélites para detectar un fallo; 6 para excluir el satélite defectuoso",
+   "Altura orbital del GPS: unos 20 000 km",
+   "Base de datos AIRAC: se actualiza cada 28 días",
+   "Datum de referencia: WGS-84"
+  ],
+  "traps": [
+   "Se necesitan 4 satélites para 3D, no 3: la cuarta incógnita es el reloj del receptor.",
+   "La altitud GPS no es la altitud de presión.",
+   "RAIM detecta con 5 y excluye con 6, no al revés.",
+   "EGNOS corrige y da integridad, no es una constelación nueva.",
+   "El GNSS no es un sustituto de la carta y la escucha."
+  ],
+  "sources": [
+   {
+    "title": "OACI, Anexo 10, vol. I: GNSS"
+   },
+   {
+    "title": "OACI, Doc 9849: Manual del sistema mundial de navegación por satélite (GNSS)"
+   },
+   {
+    "title": "EGNOS (ESSP / ENAIRE): servicios y aproximaciones LPV",
+    "url": "https://egnos-user-support.essp-sas.eu/"
+   }
+  ],
+  "links": [],
+  "id": "060.15",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "060.15.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "Para obtener una posición 3D (latitud, longitud y altitud) el GNSS necesita como mínimo:",
+   "options": [
+    "3 satélites",
+    "4 satélites",
+    "5 satélites",
+    "6 satélites"
+   ],
+   "correct": 1,
+   "why": "Hay cuatro incógnitas: x, y, z y el error del reloj del receptor.",
+   "whyNot": [
+    "Con tres solo hay posición 2D con altitud conocida.",
+    null,
+    "Es el mínimo para detectar un fallo con RAIM.",
+    "Es el mínimo para excluir un fallo."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.15.002",
+   "type": "concepto",
+   "level": 2,
+   "q": "El RAIM con cinco satélites permite:",
+   "options": [
+    "Calcular la altitud de presión",
+    "Mejorar la precisión a un metro",
+    "Detectar un fallo de un satélite",
+    "Excluir un satélite defectuoso"
+   ],
+   "correct": 2,
+   "why": "Con 5 se detecta un fallo; con 6 se identifica y se excluye el satélite erróneo.",
+   "whyNot": [
+    "No tiene relación con el altímetro.",
+    "Eso lo hace EGNOS.",
+    null,
+    "Para excluirlo hacen falta seis."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.15.003",
+   "type": "concepto",
+   "level": 1,
+   "q": "En navegación por satélite, EGNOS es:",
+   "options": [
+    "Un sistema de aumentación por satélite europeo",
+    "Un radar",
+    "La constelación europea de satélites de posicionamiento",
+    "Un sistema de aterrizaje por radio"
+   ],
+   "correct": 0,
+   "why": "EGNOS envía correcciones y mensajes de integridad para mejorar el GPS.",
+   "whyNot": [
+    null,
+    "No es un radar.",
+    "Esa es Galileo.",
+    "No es el ILS."
+   ],
+   "ref": "EGNOS (ESSP)"
+  },
+  {
+   "id": "060.15.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un DOP bajo significa:",
+   "options": [
+    "Que el reloj es defectuoso",
+    "Buena geometría de satélites y menor error",
+    "Que hay pocos satélites",
+    "Mala geometría"
+   ],
+   "correct": 1,
+   "why": "El DOP resume la geometría: valores bajos son mejores.",
+   "whyNot": [
+    "El reloj es otro error.",
+    null,
+    "Con pocos satélites sube el DOP.",
+    "Mala geometría da un DOP alto."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.15.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "La altitud que da un receptor GPS es:",
+   "options": [
+    "Geométrica, referida al elipsoide",
+    "Verdadera con QNH",
+    "De presión",
+    "Densidad"
+   ],
+   "correct": 0,
+   "why": "El GPS da altitud geométrica; no sustituye al altímetro.",
+   "whyNot": [
+    null,
+    "El QNH lo usa el altímetro, no el GPS.",
+    "No usa la presión.",
+    "No mide densidad."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.15.006",
+   "type": "regla",
+   "level": 2,
+   "q": "La base de datos de navegación de un receptor GPS de panel se actualiza:",
+   "options": [
+    "Nunca",
+    "Cada año",
+    "Cada 5 años",
+    "Cada 28 días (ciclo AIRAC)"
+   ],
+   "correct": 3,
+   "why": "El ciclo AIRAC es de 28 días y la base de datos debe estar vigente.",
+   "whyNot": [
+    "Sin actualizar queda caducada.",
+    "Es demasiado espaciado.",
+    "Es demasiado espaciado.",
+    null
+   ],
+   "ref": "ENAIRE AIP"
+  },
+  {
+   "id": "060.15.007",
+   "type": "concepto",
+   "level": 1,
+   "q": "Los tres segmentos de un sistema GNSS son:",
+   "options": [
+    "Radar, satélite y estación",
+    "Orbital, aéreo y terrestre",
+    "Espacial, de control y de usuario",
+    "Primario, secundario y terciario"
+   ],
+   "correct": 2,
+   "why": "Los satélites, las estaciones de control en tierra y el receptor.",
+   "whyNot": [
+    "No es una clasificación del GNSS.",
+    "No son los nombres del sistema.",
+    null,
+    "No es una clasificación del GNSS."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.15.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "Los errores que afectan a la señal de un satélite al atravesar la atmósfera son:",
+   "options": [
+    "El efecto nocturno",
+    "La variación magnética",
+    "El cono de silencio",
+    "Retardos por la ionosfera y la troposfera"
+   ],
+   "correct": 3,
+   "why": "La ionosfera y la troposfera frenan y curvan la señal, y añaden error a la medida.",
+   "whyNot": [
+    "Es del ADF.",
+    "No afecta al GNSS.",
+    "Es del VOR.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 16"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.060.15.01",
+   "front": "Satélites GNSS necesarios",
+   "back": "4 para 3D; 3 con altitud conocida para 2D"
+  },
+  {
+   "id": "c.060.15.02",
+   "front": "RAIM",
+   "back": "5 satélites detectan un fallo; 6 lo excluyen"
+  },
+  {
+   "id": "c.060.15.03",
+   "front": "EGNOS",
+   "back": "SBAS europeo: correcciones e integridad sobre el GPS"
+  },
+  {
+   "id": "c.060.15.04",
+   "front": "Altitud GPS",
+   "back": "Geométrica; no sustituye al altímetro"
+  },
+  {
+   "id": "c.060.15.05",
+   "front": "Base de datos GNSS",
+   "back": "Ciclo AIRAC de 28 días"
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+<title>Esquema eléctrico simplificado de un avión ligero: batería, alternador, barra principal, disyuntores y barra de aviónica</title>
+<defs>
+<marker id="020-esquema-electrico-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+</defs>
+<rect x="30" y="30" width="120" height="50" class="ac"/>
+<text x="90" y="52" class="tx b" text-anchor="middle">Batería</text>
+<text x="90" y="68" class="tx2" font-size="11" text-anchor="middle">12 o 24 V (CC)</text>
+<line x1="90" y1="80" x2="90" y2="104" class="ln thick"/>
+<rect x="30" y="106" width="120" height="44" class="ok"/>
+<text x="90" y="125" class="txo b" text-anchor="middle">Contactor</text>
+<text x="90" y="141" class="tx2" font-size="11" text-anchor="middle">interruptor BAT</text>
+<line x1="90" y1="150" x2="90" y2="198" class="ln thick" marker-end="url(#020-esquema-electrico-f)"/>
+<rect x="490" y="30" width="130" height="50" class="ac"/>
+<text x="555" y="52" class="tx b" text-anchor="middle">Alternador</text>
+<text x="555" y="68" class="tx2" font-size="11" text-anchor="middle">CA y diodos: CC</text>
+<line x1="555" y1="80" x2="555" y2="104" class="ln thick"/>
+<rect x="490" y="106" width="130" height="44" class="ok"/>
+<text x="555" y="125" class="txo b" text-anchor="middle">Regulador</text>
+<text x="555" y="141" class="tx2" font-size="11" text-anchor="middle">y sobretensión (ALT)</text>
+<line x1="555" y1="150" x2="555" y2="198" class="ln thick" marker-end="url(#020-esquema-electrico-f)"/>
+<rect x="250" y="106" width="130" height="44" class="soft"/>
+<text x="315" y="125" class="tx b" text-anchor="middle">Amperímetro</text>
+<text x="315" y="141" class="tx2" font-size="11" text-anchor="middle">carga o descarga</text>
+<line x1="315" y1="150" x2="315" y2="198" class="ln2 dash"/>
+<line x1="60" y1="200" x2="600" y2="200" class="ac-ln thick"/>
+<text x="330" y="190" class="txa b" text-anchor="middle">Barra principal</text>
+<line x1="100" y1="200" x2="100" y2="250" class="ln"/>
+<rect x="92" y="220" width="16" height="14" class="ok"/>
+<rect x="30" y="250" width="140" height="40" class="soft"/>
+<text x="100" y="274" class="tx" text-anchor="middle">Motor de arranque</text>
+<line x1="250" y1="200" x2="250" y2="250" class="ln"/>
+<rect x="242" y="220" width="16" height="14" class="ok"/>
+<rect x="180" y="250" width="140" height="40" class="soft"/>
+<text x="250" y="274" class="tx" text-anchor="middle">Luces, pitot, bomba</text>
+<line x1="400" y1="200" x2="400" y2="250" class="ln"/>
+<rect x="392" y="220" width="16" height="14" class="wa"/>
+<rect x="330" y="250" width="140" height="40" class="ok"/>
+<text x="400" y="266" class="txo b" font-size="12" text-anchor="middle">Máster de aviónica</text>
+<text x="400" y="281" class="tx2" font-size="11" text-anchor="middle">barra de aviónica</text>
+<line x1="400" y1="290" x2="400" y2="318" class="ln" marker-end="url(#020-esquema-electrico-f)"/>
+<rect x="330" y="320" width="140" height="40" class="soft"/>
+<text x="400" y="344" class="tx" text-anchor="middle">Radios y GPS</text>
+<line x1="550" y1="200" x2="550" y2="250" class="ln"/>
+<rect x="542" y="220" width="16" height="14" class="ok"/>
+<rect x="480" y="250" width="140" height="40" class="soft"/>
+<text x="550" y="274" class="tx" text-anchor="middle">Instrumentos eléctricos</text>
+<text x="30" y="330" class="tx2" font-size="11">Cuadrados verdes: disyuntores en cada derivación.</text>
+<text x="30" y="346" class="tx2" font-size="11">Cuadrado naranja: disyuntor de la barra de aviónica.</text>
+<text x="30" y="378" class="tx2" font-size="11">Con el alternador fallado, la batería alimenta la barra hasta agotarse.</text>
+</svg>

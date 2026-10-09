@@ -1,0 +1,1105 @@
+{
+  "lesson": {
+    "id": "010.05",
+    "title": "Licencias y certificado médico (Part-FCL y Part-MED)",
+    "summary": "Definiciones, atribuciones de la PPL(A) y la LAPL(A), requisitos del PPL, cronología del examen, documentos, registro de vuelo, idioma, experiencia reciente, habilitación SEP y su revalidación, vuelo nocturno y certificado médico de clase 2.",
+    "objectives": [
+      "Definir piloto al mando, tiempo de vuelo, travesía y vuelo solo como lo hace Part-FCL",
+      "Conocer las atribuciones de la PPL(A) y de la LAPL(A) y sus diferencias",
+      "Seguir la cronología de la licencia: médico, teoría, exámenes, vuelo, prueba de pericia y emisión, y saber qué ocurre si suspendes",
+      "Aplicar las reglas de experiencia reciente, idioma, registro de vuelo y revalidación de la habilitación SEP",
+      "Calcular la validez del certificado médico de clase 2 según la edad y aplicar MED.A.020 ante una disminución de aptitud"
+    ],
+    "sections": [
+      {
+        "title": "Quién regula qué: Anexo 1, Part-FCL y Part-MED",
+        "text": [
+          "El **Anexo 1 de la OACI** (licencias del personal) fija el modelo mundial. En la Unión Europea lo desarrollan dos partes del **Reglamento (UE) 1178/2011**: **Part-FCL** (las licencias y habilitaciones: requisitos de edad, formación, exámenes y atribuciones) y **Part-MED** (los certificados médicos). En España la autoridad que emite las licencias y organiza los exámenes teóricos es **AESA**.",
+          "La licencia por sí sola no basta para volar. Para ejercer sus atribuciones necesitas **tres cosas vigentes a la vez**: la licencia con la **habilitación de clase** correspondiente (por ejemplo SEP, de avión monomotor de pistón), el **certificado médico** de la clase exigida y, si vas a usar la radio, la **anotación de idioma**."
+        ]
+      },
+      {
+        "title": "Definiciones que se preguntan (FCL.010)",
+        "table": {
+          "caption": "Definiciones de Part-FCL",
+          "head": [
+            "Término",
+            "Definición"
+          ],
+          "rows": [
+            [
+              "Piloto al mando (PIC)",
+              "El piloto designado para estar al mando y encargado de la conducción segura del vuelo"
+            ],
+            [
+              "Tiempo de vuelo (aviones)",
+              "Tiempo total desde que la aeronave empieza a moverse para despegar hasta que se detiene al terminar el vuelo (de calzos a calzos)"
+            ],
+            [
+              "Vuelo de travesía",
+              "Vuelo entre un punto de salida y uno de llegada siguiendo una ruta preplaneada con procedimientos normalizados de navegación"
+            ],
+            [
+              "Tiempo de vuelo solo",
+              "Tiempo de vuelo en el que el alumno piloto es el único ocupante de la aeronave"
+            ],
+            [
+              "Doble mando",
+              "Tiempo de vuelo o de instrucción en el que se recibe instrucción de un instructor debidamente autorizado"
+            ],
+            [
+              "Alumno piloto",
+              "Persona que recibe instrucción de vuelo bajo supervisión de un instructor"
+            ]
+          ],
+          "src": "FCL.010"
+        },
+        "note": {
+          "kind": "warn",
+          "text": "En las definiciones europeas, el tiempo de vuelo se cuenta desde que el avión se empieza a mover para despegar (con motor en marcha), no desde la puesta en marcha ni desde el momento del despegue."
+        }
+      },
+      {
+        "title": "Atribuciones de la PPL(A) y de la LAPL(A)",
+        "text": [
+          "La **PPL(A)** (licencia de piloto privado de avión) permite actuar como piloto al mando o copiloto de aviones o motoveleros con motor (TMG) en operaciones **no comerciales**. Se puede compartir el coste directo del vuelo entre todos los ocupantes, piloto incluido, con un **máximo de seis personas** (Reglamento (UE) 965/2012, art. 6). Lo que no puedes hacer es cobrar por volar ni hacer trabajo aéreo remunerado.",
+          "La **LAPL(A)** (licencia de piloto de aviones ligeros) es una licencia de menor exigencia: edad mínima 16 años, menos horas de curso y un certificado médico propio (LAPL), con limitaciones: aviones de **hasta 2000 kg** de masa máxima al despegue, **máximo 3 pasajeros** (nunca más de 4 personas a bordo) y solo después de **10 horas** como piloto al mando tras la emisión. La LAPL **no es una licencia OACI**: fuera del territorio de la UE hace falta el permiso del Estado donde vuelas, y la PPL sí es válida con ese reconocimiento internacional."
+        ],
+        "table": {
+          "caption": "PPL(A) y LAPL(A) de un vistazo",
+          "head": [
+            "Aspecto",
+            "PPL(A)",
+            "LAPL(A)"
+          ],
+          "rows": [
+            [
+              "Edad mínima de la licencia",
+              "17 años",
+              "16 años"
+            ],
+            [
+              "Certificado médico",
+              "Clase 2",
+              "Certificado LAPL (menos exigente)"
+            ],
+            [
+              "Formación mínima de vuelo",
+              "45 h",
+              "30 h"
+            ],
+            [
+              "Pasajeros",
+              "Sin límite de número salvo el del avión",
+              "Máximo 3, tras 10 h como PIC"
+            ],
+            [
+              "Masa máxima del avión",
+              "Sin límite en la licencia",
+              "2000 kg"
+            ],
+            [
+              "Validez internacional OACI",
+              "Sí",
+              "No"
+            ]
+          ],
+          "src": "FCL.105.A; FCL.110.A; FCL.200; FCL.210.A; MED.A.030"
+        }
+      },
+      {
+        "title": "Cronología de la licencia: del primer día a la emisión",
+        "text": [
+          "Antes de empezar conviene saber el recorrido completo. El curso se hace en una **ATO** (organización de formación aprobada) o en una **DTO** (organización de formación declarada), que tiene unos requisitos algo más ligeros para formación de PPL. Puedes cursar la teoría y el vuelo en organizaciones distintas.",
+          "Primero consigues el **certificado médico de clase 2**, necesario antes del primer vuelo solo. Después sigues el **curso de conocimientos teóricos** y la escuela te da la **recomendación** para examinarte, que vale **12 meses**. Los **exámenes teóricos** los organiza AESA: 120 preguntas tipo test repartidas en las nueve materias, con aprobado del **75 %** en cada una. En paralelo o después haces la **instrucción en vuelo** y, al final, la **prueba de pericia** con un examinador. Cuando todo está cumplido se emite la licencia con la habilitación de clase SEP."
+        ],
+        "figure": "svg:010-cronologia-ppl",
+        "caption": "Cronología del PPL(A) y plazos principales",
+        "table": {
+          "caption": "Requisitos y plazos",
+          "head": [
+            "Requisito",
+            "Valor",
+            "Norma"
+          ],
+          "rows": [
+            [
+              "Edad de la licencia",
+              "17 años; primer vuelo solo a los 16, autorizado y supervisado por el instructor",
+              "FCL.200; FCL.020"
+            ],
+            [
+              "Certificado médico",
+              "Clase 2 antes del primer vuelo solo",
+              "MED.A.030"
+            ],
+            [
+              "Teórico: formato",
+              "9 materias; 75 % en cada una; sin penalización por errores",
+              "FCL.215; FCL.025"
+            ],
+            [
+              "Teórico: plazo",
+              "Todas las materias en 18 meses desde el final del mes del primer intento",
+              "FCL.025(b)"
+            ],
+            [
+              "Teórico: intentos",
+              "Máximo 4 intentos por materia",
+              "FCL.025(b)"
+            ],
+            [
+              "Validez del teórico",
+              "24 meses desde que apruebas la última materia para obtener la licencia",
+              "FCL.025(c)"
+            ],
+            [
+              "Prueba de pericia",
+              "Dentro de los 24 meses desde el teórico aprobado",
+              "FCL.025; FCL.235"
+            ]
+          ],
+          "src": "Part-FCL"
+        }
+      },
+      {
+        "title": "La formación en vuelo: 45 horas y su desglose",
+        "text": [
+          "FCL.210.A exige un mínimo de **45 horas de vuelo**, de las que hasta **5** pueden hacerse en simulador (FSTD). Entre esas horas, al menos **25 horas de doble mando** y **10 horas de vuelo solo supervisado**. Dentro de lo anterior, el alumno completa al menos **5 horas de travesía solo** y, como parte de ellas, una travesía de al menos **270 km (150 NM)** con aterrizajes completos en **dos aeródromos distintos del de salida**.",
+          "El curso incluye además, según el AMC1 FCL.210, al menos **2 horas de entrenamiento de pérdidas y de prevención de la barrena**, y el instructor debe comprobar que sabes usar la radio y los sistemas del avión antes del primer vuelo solo. FCL.210 **no fija un número mínimo de horas de teoría**: lo que cuenta es aprobar los exámenes.",
+          "Si ya tienes una **LAPL(A)**, el paso a la PPL(A) acredita parte de lo hecho. El Reglamento (UE) 2024/2076 establece los requisitos específicos de ese paso; consulta con tu escuela el texto consolidado vigente antes de planificarlo."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Si suspendes: intentos, plazos y formación adicional",
+        "text": [
+          "Una materia suspendida se repite. Tienes **cuatro intentos por materia** y **18 meses** (contados desde el final del mes del primer intento) para aprobar todas. Los 18 meses corren aunque no te presentes. Si agotas los cuatro intentos de una materia o el plazo de 18 meses, necesitas **formación adicional** (la fija la organización de formación) y tendrás que **volver a examinarte de todas las materias**.",
+          "Por eso conviene presentarse a las materias cuando estás preparado. Si no te examinas de nada en los 12 meses de la recomendación, la escuela decide si necesitas más formación antes de renovarla. La prueba de pericia admite repetir cada maniobra una vez y no hay límite de intentos de la prueba."
+        ]
+      },
+      {
+        "title": "Documentos, registro de vuelo e idioma (FCL.045, FCL.050, FCL.055)",
+        "text": [
+          "Cuando ejerces las atribuciones de la licencia debes llevar contigo la **licencia**, el **certificado médico** en vigor y un **documento de identidad con fotografía**, y mostrarlos a quien lo solicite una autoridad competente (FCL.045). Los alumnos que vuelan solos llevan también la autorización del instructor.",
+          "Debes llevar un **registro fiable del tiempo de vuelo** en el formato que fije la autoridad (FCL.050). Los registros son tu prueba de la experiencia reciente, de las horas del curso y de los requisitos de revalidación.",
+          "Para usar la radio hace falta una **anotación de competencia lingüística** (FCL.055) en inglés o en el idioma de la comunicación. El **nivel 4** (operacional) se reevalúa cada **4 años**, el **nivel 5** (avanzado) cada **6 años** y el **nivel 6** (experto) no caduca. Los nativos de castellano tienen nivel 6 sin examen en España (Orden FOM/1146/2019)."
+        ]
+      },
+      {
+        "title": "Experiencia reciente y pasajeros (FCL.060)",
+        "text": [
+          "Para llevar pasajeros como piloto al mando o copiloto debes haber hecho, en los **90 días** anteriores, al menos **tres despegues, aproximaciones y aterrizajes** manejando tú los mandos, en un avión de la misma clase o tipo (o en simulador que lo represente). Para llevar pasajeros **de noche** necesitas además al menos **un despegue y aterrizaje nocturno** en esos 90 días, salvo que tengas habilitación de vuelo instrumental (IR)."
+        ],
+        "examples": [
+          {
+            "q": "Hace cuatro meses que no vuelas. ¿Puedes llevar a tu hermano de pasajero?",
+            "a": "No. Han pasado más de 90 días. Tienes que volver a hacer al menos tres despegues y aterrizajes antes de llevar pasajeros, solo o con instructor."
+          }
+        ]
+      },
+      {
+        "title": "Habilitación SEP y su revalidación (FCL.740.A)",
+        "text": [
+          "La habilitación de clase **SEP (land)** (avión monomotor de pistón, terrestre) es la que te permite volar los aviones de esa clase, como el PA-28-161 o el Cessna 172. Tiene una validez de **24 meses**. Para revalidarla tienes dos vías, dentro de los **3 meses** anteriores a la caducidad (así el nuevo plazo empieza al caducar la anterior) o en cualquier momento anterior si no te importa que el nuevo plazo cuente desde ese día.",
+          "**Por prueba de pericia:** superas una verificación (proficiency check) con un examinador en esa clase. **Por experiencia:** en los 12 meses previos a la caducidad has hecho al menos **12 horas de vuelo** en la clase, con **6 horas como piloto al mando**, **12 despegues y 12 aterrizajes**, y un **vuelo de refresco de al menos 1 hora** con un instructor (FI o CRI). Esa hora de refresco se sustituye por superar una verificación o una prueba de pericia en otra clase o tipo.",
+          "Si la habilitación ha caducado, no puedes ejercerla: hay que renovarla, con formación de refresco en una organización autorizada y una prueba de pericia, según lo que determine la autoridad."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Vuelo nocturno (FCL.810)",
+        "text": [
+          "Para volar de noche con una PPL(A) necesitas la **habilitación de vuelo nocturno**: un curso en una organización aprobada con al menos **5 horas de vuelo nocturno**, de las cuales **3 de doble mando** con **1 hora de navegación de travesía como mínimo**, más **5 despegues y 5 aterrizajes completos en solitario**. Las cifras exactas conviene comprobarlas en el Part-FCL vigente."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Certificado médico de clase 2 y disminución de aptitud",
+        "text": [
+          "La PPL exige el **certificado médico de clase 2** (Part-MED). Lo expide un **AeMC** o un **AME** autorizado, y se revalida con uno de ellos. Su validez depende de la edad."
+        ],
+        "table": {
+          "caption": "Validez del certificado médico de clase 2 (MED.A.045)",
+          "head": [
+            "Edad al emitirlo o revalidarlo",
+            "Validez"
+          ],
+          "rows": [
+            [
+              "Menos de 40 años",
+              "60 meses, pero nunca más allá de tu 42.º cumpleaños"
+            ],
+            [
+              "De 40 a 49 años",
+              "24 meses"
+            ],
+            [
+              "50 años o más",
+              "12 meses"
+            ]
+          ],
+          "src": "MED.A.045"
+        },
+        "examples": [
+          {
+            "q": "Obtienes tu clase 2 a los 38 años y 2 meses. ¿Hasta cuándo es válido?",
+            "a": "60 meses llegarían a los 43 años y 2 meses, pero la regla de los 42 lo limita: caduca el día de tu 42.º cumpleaños (aproximadamente 3 años y 10 meses después)."
+          }
+        ],
+        "bullets": [
+          "La disminución de aptitud médica (**MED.A.020**) prohíbe ejercer las atribuciones de la licencia si sabes o sospechas que tu aptitud ha disminuido de forma que no podrías volar con seguridad.",
+          "Debes consultar con un médico aeronáutico sin demora ante: un ingreso hospitalario o una intervención, el inicio de uso regular de medicación, una lesión importante, una enfermedad que te incapacite 21 días o más, un embarazo y la primera necesidad de lentes correctoras.",
+          "Alcohol y sustancias: la base legal es **SERA.2020** y MED.A.020. La regla de las 8 horas es una recomendación, no una norma de SERA."
+        ]
+      }
+    ],
+    "numbers": [
+      "Edad: 17 años para la licencia PPL; primer solo a los 16 (FCL.020, FCL.200)",
+      "Vuelo: 45 h (hasta 5 en simulador); 25 h de doble mando; 10 h de solo supervisado; 5 h de travesía solo con 270 km (150 NM) y dos aeródromos",
+      "Al menos 2 h de pérdidas y barrena en el curso",
+      "Teórico: 9 materias, 75 % en cada una, 4 intentos, 18 meses, validez 24 meses",
+      "Recomendación de la escuela: 12 meses",
+      "Médico clase 2: 60 meses hasta los 40 (máximo a los 42), 24 de 40 a 49, 12 desde los 50",
+      "Idioma: nivel 4 cada 4 años, nivel 5 cada 6 años, nivel 6 sin caducidad",
+      "FCL.060: 3 despegues y aterrizajes en 90 días para llevar pasajeros; 1 nocturno para pasajeros de noche",
+      "SEP: 24 meses; revalidación: 12 h (6 PIC) + 1 h con instructor en 12 meses, o prueba de pericia"
+    ],
+    "traps": [
+      "FCL.210 no establece horas de teoría: aprueban los exámenes, no las horas de clase.",
+      "El teórico vale 24 meses desde la última materia aprobada, pero tienes 18 meses desde el primer intento para aprobarlas todas.",
+      "La regla de los 42 años: el médico emitido antes de los 40 caduca como tarde en tu 42.º cumpleaños.",
+      "La LAPL no es una licencia OACI; la PPL sí.",
+      "La experiencia reciente es de 90 días, no de 12 meses; los 12 meses de FCL.740.A son para revalidar la habilitación."
+    ],
+    "spain": [
+      "AESA emite las licencias y organiza el examen teórico PPL(A) con un banco propio de preguntas.",
+      "Los hablantes nativos de castellano tienen nivel 6 de idioma sin examen (Orden FOM/1146/2019).",
+      "El banco de preguntas de AESA se revisa en el primer trimestre de 2027."
+    ],
+    "sources": [
+      {
+        "title": "Part-FCL: Easy Access Rules for Aircrew (EASA)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no"
+      },
+      {
+        "title": "Part-MED (Reglamento (UE) 1178/2011)",
+        "url": "https://eur-lex.europa.eu/eli/reg/2011/1178/oj"
+      },
+      {
+        "title": "AESA: exámenes teóricos de piloto",
+        "url": "https://www.seguridadaerea.gob.es/en/ambitos/formacion-y-examenes/examenes-de-piloto/examenes-teoricos/bancos-de-preguntas"
+      },
+      {
+        "title": "Orden FOM/1146/2019 (BOE)",
+        "url": "https://www.boe.es/eli/es/o/2019/11/13/fom1146/con"
+      }
+    ],
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "010.05.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué parte del Reglamento (UE) 1178/2011 regula los certificados médicos de los pilotos?",
+      "options": [
+        "Part-FCL",
+        "Part-NCO",
+        "Part-MED",
+        "Part-ML"
+      ],
+      "correct": 2,
+      "why": "Part-MED trata los requisitos médicos; Part-FCL, las licencias.",
+      "whyNot": [
+        "Part-FCL regula las licencias y habilitaciones.",
+        "Part-NCO regula operaciones no comerciales de aeronaves no complejas.",
+        null,
+        "Part-ML regula el mantenimiento de aeronaves ligeras."
+      ],
+      "ref": "Reglamento (UE) 1178/2011"
+    },
+    {
+      "id": "010.05.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es el tiempo de vuelo de un avión según Part-FCL?",
+      "options": [
+        "El tiempo desde que empieza a moverse para despegar hasta que se detiene al terminar el vuelo",
+        "El tiempo con las ruedas despegadas del suelo",
+        "El tiempo desde la puesta en marcha hasta el apagado del motor",
+        "El tiempo medido desde el despegue hasta el aterrizaje"
+      ],
+      "correct": 0,
+      "why": "FCL.010 lo define de calzos a calzos: desde que el avión se mueve para despegar hasta que se detiene.",
+      "whyNot": [
+        null,
+        "Eso es el tiempo en el aire.",
+        "No es la definición europea.",
+        "Eso es el tiempo en el aire."
+      ],
+      "ref": "FCL.010"
+    },
+    {
+      "id": "010.05.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es un vuelo de travesía?",
+      "options": [
+        "Un vuelo de más de 100 NM",
+        "Un vuelo con aterrizaje en otro país",
+        "Cualquier vuelo fuera del circuito de aeródromo",
+        "Un vuelo entre un punto de salida y uno de llegada siguiendo una ruta preplaneada con procedimientos normalizados de navegación"
+      ],
+      "correct": 3,
+      "why": "La travesía se define por la ruta preplaneada y los procedimientos de navegación, no por la distancia.",
+      "whyNot": [
+        "No hay un mínimo de distancia en la definición.",
+        "No tiene que cruzar fronteras.",
+        "Debe seguir una ruta preplaneada con navegación normalizada.",
+        null
+      ],
+      "ref": "FCL.010"
+    },
+    {
+      "id": "010.05.004",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué es el tiempo de vuelo solo de un alumno piloto?",
+      "options": [
+        "El tiempo en que vuela con un instructor a bordo que no toca los mandos",
+        "El tiempo en el que es el único ocupante de la aeronave",
+        "El tiempo en el circuito de aeródromo",
+        "El tiempo con piloto automático"
+      ],
+      "correct": 1,
+      "why": "Vuelo solo: el alumno es el único ocupante.",
+      "whyNot": [
+        "Con instructor a bordo no es vuelo solo.",
+        null,
+        "El circuito no define el vuelo solo.",
+        "No tiene relación."
+      ],
+      "ref": "FCL.010"
+    },
+    {
+      "id": "010.05.005",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Qué edad mínima exige Part-FCL para obtener la PPL(A)?",
+      "options": [
+        "17 años",
+        "16 años",
+        "18 años",
+        "21 años"
+      ],
+      "correct": 0,
+      "why": "FCL.200: 17 años para la PPL(A); a los 16 se puede hacer el primer solo.",
+      "whyNot": [
+        null,
+        "Es la edad para el primer vuelo solo y para la LAPL.",
+        "No es la edad mínima.",
+        "No es la edad mínima de la PPL."
+      ],
+      "ref": "FCL.200; FCL.020"
+    },
+    {
+      "id": "010.05.006",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuándo puede volar solo por primera vez un alumno piloto?",
+      "options": [
+        "A los 17 años, con la licencia ya emitida",
+        "A los 18 años",
+        "A los 16 años, con autorización y supervisión del instructor",
+        "A cualquier edad con certificado médico"
+      ],
+      "correct": 2,
+      "why": "FCL.020: primer vuelo solo con 16 años, autorizado y supervisado por un instructor.",
+      "whyNot": [
+        "No hace falta licencia.",
+        "No es la edad.",
+        null,
+        "Hay edad mínima."
+      ],
+      "ref": "FCL.020"
+    },
+    {
+      "id": "010.05.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué certificado médico exige la PPL(A)?",
+      "options": [
+        "Clase 1",
+        "Clase 2",
+        "Un certificado LAPL",
+        "No exige certificado"
+      ],
+      "correct": 1,
+      "why": "La PPL exige certificado médico de clase 2 (MED.A.030).",
+      "whyNot": [
+        "Es la de los pilotos comerciales.",
+        null,
+        "Es el del LAPL.",
+        "Exige certificado médico."
+      ],
+      "ref": "MED.A.030"
+    },
+    {
+      "id": "010.05.008",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Qué ocurre con la LAPL(A) fuera del territorio de la UE?",
+      "options": [
+        "Es válida en cualquier país",
+        "Es válida solo con la PPL",
+        "Solo en EE. UU.",
+        "Hace falta el permiso del Estado donde vuelas, porque no es una licencia OACI"
+      ],
+      "correct": 3,
+      "why": "La LAPL no cumple el Anexo 1 de la OACI, por lo que no se reconoce automáticamente.",
+      "whyNot": [
+        "No es una licencia OACI.",
+        "No es lo que dice la norma.",
+        "No hay esa excepción.",
+        null
+      ],
+      "ref": "FCL.105.A; Anexo 1"
+    },
+    {
+      "id": "010.05.009",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuál es el máximo de pasajeros de un piloto LAPL(A)?",
+      "options": [
+        "1",
+        "4",
+        "3",
+        "5"
+      ],
+      "correct": 2,
+      "why": "La LAPL(A) permite hasta 3 pasajeros y nunca más de 4 personas a bordo, en aviones de hasta 2000 kg.",
+      "whyNot": [
+        "No es el límite.",
+        "Cuatro es el máximo de personas a bordo, incluido el piloto.",
+        null,
+        "No es el límite."
+      ],
+      "ref": "FCL.105.A"
+    },
+    {
+      "id": "010.05.010",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuántas horas como piloto al mando debe acumular un piloto LAPL(A) antes de llevar pasajeros?",
+      "options": [
+        "10 horas",
+        "5 horas",
+        "20 horas",
+        "50 horas"
+      ],
+      "correct": 0,
+      "why": "FCL.105.A: solo después de 10 horas como piloto al mando tras la emisión de la licencia.",
+      "whyNot": [
+        null,
+        "No es la cifra.",
+        "No es la cifra.",
+        "No es la cifra."
+      ],
+      "ref": "FCL.105.A"
+    },
+    {
+      "id": "010.05.011",
+      "type": "regla",
+      "level": 2,
+      "q": "Un piloto con PPL puede compartir el coste directo del vuelo con un máximo de:",
+      "options": [
+        "Tres personas, el piloto incluido",
+        "Doce personas",
+        "Ninguna: la PPL no permite compartir gastos",
+        "Seis personas, el piloto incluido"
+      ],
+      "correct": 3,
+      "why": "El Reglamento 965/2012 permite compartir el coste directo si no hay más de seis personas.",
+      "whyNot": [
+        "No es la cifra.",
+        "No es la cifra.",
+        "Sí lo permite.",
+        null
+      ],
+      "ref": "Reglamento (UE) 965/2012, art. 6"
+    },
+    {
+      "id": "010.05.012",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Qué mínimo total de horas exige FCL.210.A para el curso de la PPL(A)?",
+      "options": [
+        "40 horas",
+        "45 horas",
+        "35 horas",
+        "100 horas"
+      ],
+      "correct": 1,
+      "why": "FCL.210.A exige un mínimo de 45 horas de vuelo, hasta 5 en simulador.",
+      "whyNot": [
+        "No es la cifra de FCL.210.A.",
+        null,
+        "No es la cifra de FCL.210.A.",
+        "No es la cifra y no hay horas de teoría fijadas."
+      ],
+      "ref": "FCL.210.A"
+    },
+    {
+      "id": "010.05.013",
+      "type": "regla",
+      "level": 2,
+      "q": "Dentro de las 45 h del curso, ¿cuántas horas de vuelo solo supervisado se exigen?",
+      "options": [
+        "10 horas",
+        "5 horas",
+        "25 horas",
+        "45 horas"
+      ],
+      "correct": 0,
+      "why": "FCL.210.A: al menos 25 h de doble mando y 10 h de vuelo solo supervisado.",
+      "whyNot": [
+        null,
+        "Son las horas de travesía solo.",
+        "Son las de doble mando.",
+        "Es el total."
+      ],
+      "ref": "FCL.210.A"
+    },
+    {
+      "id": "010.05.014",
+      "type": "regla",
+      "level": 3,
+      "q": "La travesía de largo recorrido del curso debe ser de al menos:",
+      "options": [
+        "150 km (80 NM) con un aterrizaje",
+        "185 km (100 NM) con tres aterrizajes",
+        "270 km (150 NM) con aterrizajes completos en dos aeródromos distintos del de salida",
+        "370 km (200 NM) sin aterrizaje"
+      ],
+      "correct": 2,
+      "why": "FCL.210.A exige una travesía solo de 270 km (150 NM) con aterrizajes completos en dos aeródromos distintos del de salida.",
+      "whyNot": [
+        "No es la cifra.",
+        "No es la cifra.",
+        null,
+        "No es la cifra."
+      ],
+      "ref": "FCL.210.A"
+    },
+    {
+      "id": "010.05.015",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuántas horas mínimas de entrenamiento de pérdidas y prevención de la barrena incluye el curso?",
+      "options": [
+        "30 minutos",
+        "2 horas",
+        "5 horas",
+        "10 horas"
+      ],
+      "correct": 1,
+      "why": "El AMC1 FCL.210 incluye al menos 2 horas de pérdidas y prevención de la barrena.",
+      "whyNot": [
+        "No es la cifra.",
+        null,
+        "No es la cifra.",
+        "No es la cifra."
+      ],
+      "ref": "AMC1 FCL.210"
+    },
+    {
+      "id": "010.05.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuántas horas de teoría fija FCL.210 para la PPL?",
+      "options": [
+        "100 horas",
+        "45 horas",
+        "120 horas",
+        "Ninguna: no establece un mínimo de horas de teoría"
+      ],
+      "correct": 3,
+      "why": "FCL.210 no fija un mínimo de horas de teoría; lo que cuenta es aprobar los exámenes.",
+      "whyNot": [
+        "FCL.210 no fija esa cifra.",
+        "Son las horas de vuelo.",
+        "Son las preguntas del examen.",
+        null
+      ],
+      "ref": "FCL.210"
+    },
+    {
+      "id": "010.05.017",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Con qué porcentaje se aprueba cada materia del examen teórico de la PPL?",
+      "options": [
+        "50 %",
+        "60 %",
+        "75 %",
+        "90 %"
+      ],
+      "correct": 2,
+      "why": "Se aprueba con el 75 % de cada materia, sin penalización por fallos.",
+      "whyNot": [
+        "No es el umbral.",
+        "No es el umbral.",
+        null,
+        "No es el umbral."
+      ],
+      "ref": "FCL.025(b)(1)"
+    },
+    {
+      "id": "010.05.018",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuántos intentos tienes por materia en el examen teórico?",
+      "options": [
+        "Cuatro",
+        "Dos",
+        "Tres",
+        "Ilimitados"
+      ],
+      "correct": 0,
+      "why": "FCL.025: máximo 4 intentos por materia.",
+      "whyNot": [
+        null,
+        "No es la cifra.",
+        "No es la cifra.",
+        "Hay máximo de cuatro."
+      ],
+      "ref": "FCL.025(b)"
+    },
+    {
+      "id": "010.05.019",
+      "type": "regla",
+      "level": 2,
+      "q": "¿En cuánto tiempo debes aprobar todas las materias del examen teórico?",
+      "options": [
+        "12 meses desde la recomendación",
+        "24 meses desde el primer intento",
+        "6 meses",
+        "18 meses desde el final del mes del primer intento"
+      ],
+      "correct": 3,
+      "why": "FCL.025(b)(2): todas las materias en 18 meses.",
+      "whyNot": [
+        "Los 12 meses son la validez de la recomendación.",
+        "Los 24 meses son la validez del teórico.",
+        "No es la cifra.",
+        null
+      ],
+      "ref": "FCL.025(b)"
+    },
+    {
+      "id": "010.05.020",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuánto tiempo vale el teórico aprobado para obtener la licencia?",
+      "options": [
+        "12 meses",
+        "24 meses desde que apruebas la última materia",
+        "18 meses",
+        "36 meses"
+      ],
+      "correct": 1,
+      "why": "FCL.025(c): el teórico es válido 24 meses para la emisión de la licencia.",
+      "whyNot": [
+        "Es la validez de la recomendación.",
+        null,
+        "Es el plazo para aprobar las materias.",
+        "No es la cifra."
+      ],
+      "ref": "FCL.025(c)"
+    },
+    {
+      "id": "010.05.021",
+      "type": "concepto",
+      "level": 3,
+      "q": "Has agotado los cuatro intentos de una materia. ¿Qué ocurre?",
+      "options": [
+        "Debes recibir formación adicional y volver a examinarte de todas las materias",
+        "Pierdes la licencia ya emitida",
+        "Puedes seguir intentándolo sin límite",
+        "Solo repites esa materia tras 12 meses"
+      ],
+      "correct": 0,
+      "why": "Agotados los intentos o el plazo de 18 meses, se exige formación adicional y repetir todas las materias.",
+      "whyNot": [
+        null,
+        "No tienes licencia aún.",
+        "No es posible.",
+        "Hay que repetir todas."
+      ],
+      "ref": "FCL.025(b)"
+    },
+    {
+      "id": "010.05.022",
+      "type": "regla",
+      "level": 3,
+      "q": "¿Cuántas veces puede repetirse una maniobra en la prueba de pericia?",
+      "options": [
+        "Dos veces",
+        "Ninguna",
+        "Una vez, y no hay límite de intentos de la prueba",
+        "Tres veces"
+      ],
+      "correct": 2,
+      "why": "Cada maniobra se puede repetir una vez y no hay límite de intentos de la prueba.",
+      "whyNot": [
+        "Solo una.",
+        "Se permite una vez.",
+        null,
+        "Solo una."
+      ],
+      "ref": "FCL.235; AMC1 FCL.235"
+    },
+    {
+      "id": "010.05.023",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué documentos debes llevar al ejercer las atribuciones de la licencia, según FCL.045?",
+      "options": [
+        "Solo la licencia",
+        "Licencia, certificado médico y documento de identidad con fotografía",
+        "Licencia y registro de vuelo",
+        "Certificado médico y seguro"
+      ],
+      "correct": 1,
+      "why": "FCL.045: licencia, certificado médico en vigor y documento de identidad con foto.",
+      "whyNot": [
+        "También el certificado médico y el documento de identidad.",
+        null,
+        "El registro no se exige a bordo.",
+        "El seguro es de la aeronave."
+      ],
+      "ref": "FCL.045"
+    },
+    {
+      "id": "010.05.024",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Para qué debes mantener el registro del tiempo de vuelo?",
+      "options": [
+        "Solo para el seguro",
+        "Para cobrar el vuelo",
+        "Para renovar el médico",
+        "Para demostrar la experiencia y cumplir los requisitos de revalidación"
+      ],
+      "correct": 3,
+      "why": "FCL.050: registro fiable del tiempo de vuelo.",
+      "whyNot": [
+        "No es su finalidad principal.",
+        "La PPL no permite cobrar.",
+        "El médico no lo exige.",
+        null
+      ],
+      "ref": "FCL.050"
+    },
+    {
+      "id": "010.05.025",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cada cuánto se reevalúa un nivel 4 de idioma?",
+      "options": [
+        "Cada 6 años",
+        "Nunca",
+        "Cada 4 años",
+        "Cada 2 años"
+      ],
+      "correct": 2,
+      "why": "FCL.055: nivel 4 cada 4 años, nivel 5 cada 6 años, nivel 6 sin caducidad.",
+      "whyNot": [
+        "Es la del nivel 5.",
+        "Es el nivel 6.",
+        null,
+        "No es la cifra."
+      ],
+      "ref": "FCL.055"
+    },
+    {
+      "id": "010.05.026",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué experiencia reciente exige FCL.060 para llevar pasajeros?",
+      "options": [
+        "Tres despegues y aterrizajes en los 90 días anteriores",
+        "Un despegue y aterrizaje en 12 meses",
+        "Tres horas de vuelo en 6 meses",
+        "Cinco aterrizajes en 30 días"
+      ],
+      "correct": 0,
+      "why": "FCL.060(b): 3 despegues, aproximaciones y aterrizajes en los 90 días previos.",
+      "whyNot": [
+        null,
+        "No es la cifra.",
+        "No es la cifra.",
+        "No es la cifra."
+      ],
+      "ref": "FCL.060(b)"
+    },
+    {
+      "id": "010.05.027",
+      "type": "regla",
+      "level": 2,
+      "q": "Para llevar pasajeros de noche, además hace falta:",
+      "options": [
+        "Dos horas de vuelo nocturno",
+        "Un vuelo de instrucción cada 12 meses",
+        "Nada más",
+        "Al menos un despegue y aterrizaje nocturno en los 90 días anteriores, salvo con IR"
+      ],
+      "correct": 3,
+      "why": "FCL.060(b): un despegue y aterrizaje nocturno en 90 días, salvo con IR.",
+      "whyNot": [
+        "No es la cifra.",
+        "No es la cifra.",
+        "Hace falta una experiencia nocturna.",
+        null
+      ],
+      "ref": "FCL.060(b)"
+    },
+    {
+      "id": "010.05.028",
+      "type": "calculo",
+      "level": 2,
+      "q": "Tu último vuelo con tres despegues y aterrizajes fue hace 100 días. ¿Puedes llevar pasajeros?",
+      "options": [
+        "Sí, porque tienes la licencia en vigor",
+        "No: han pasado más de 90 días",
+        "Sí, si es de día",
+        "Sí, si vuelas con instructor"
+      ],
+      "correct": 1,
+      "why": "Desde tu última vez pasaron más de 90 días, por lo que debes volver a hacer tres despegues y aterrizajes.",
+      "whyNot": [
+        "La experiencia reciente es un requisito aparte.",
+        null,
+        "Es igual de día o de noche.",
+        "Con instructor no se aplica; vuelas como instrucción."
+      ],
+      "ref": "FCL.060(b)"
+    },
+    {
+      "id": "010.05.029",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuál es la validez de la habilitación SEP?",
+      "options": [
+        "24 meses",
+        "12 meses",
+        "36 meses",
+        "60 meses"
+      ],
+      "correct": 0,
+      "why": "FCL.740.A: la habilitación SEP tiene 24 meses de validez.",
+      "whyNot": [
+        null,
+        "No es la cifra.",
+        "No es la cifra.",
+        "Es la del médico antes de los 40."
+      ],
+      "ref": "FCL.740.A"
+    },
+    {
+      "id": "010.05.030",
+      "type": "regla",
+      "level": 3,
+      "q": "Para revalidar la SEP por experiencia, ¿qué debes haber hecho en los 12 meses anteriores?",
+      "options": [
+        "6 horas de vuelo y una verificación",
+        "20 horas, 10 como PIC",
+        "12 horas de vuelo, 6 como PIC, 12 despegues y aterrizajes y 1 hora de vuelo con un instructor",
+        "3 horas de vuelo con un instructor"
+      ],
+      "correct": 2,
+      "why": "FCL.740.A: 12 h en la clase, 6 como PIC, 12 despegues y aterrizajes y un vuelo de refresco de 1 h con instructor.",
+      "whyNot": [
+        "No es la combinación.",
+        "No es la cifra.",
+        null,
+        "No es la combinación."
+      ],
+      "ref": "FCL.740.A"
+    },
+    {
+      "id": "010.05.031",
+      "type": "calculo",
+      "level": 3,
+      "q": "Obtienes el certificado médico de clase 2 a los 38 años. ¿Hasta cuándo es válido como máximo?",
+      "options": [
+        "Hasta tu 43.º cumpleaños, 60 meses después",
+        "Hasta tu 42.º cumpleaños",
+        "Hasta tu 40.º cumpleaños",
+        "Hasta los 40 años y 24 meses"
+      ],
+      "correct": 1,
+      "why": "MED.A.045: si lo obtienes antes de los 40, los 60 meses se limitan al 42.º cumpleaños.",
+      "whyNot": [
+        "Los 60 meses se limitan al 42.º cumpleaños.",
+        null,
+        "No caduca a los 40.",
+        "No es la regla."
+      ],
+      "ref": "MED.A.045"
+    },
+    {
+      "id": "010.05.032",
+      "type": "regla",
+      "level": 2,
+      "q": "Un piloto de 52 años revalida su clase 2. ¿Cuál es la validez?",
+      "options": [
+        "24 meses",
+        "60 meses",
+        "6 meses",
+        "12 meses"
+      ],
+      "correct": 3,
+      "why": "Desde los 50 años, la clase 2 vale 12 meses.",
+      "whyNot": [
+        "Es la de 40 a 49 años.",
+        "Es la de menores de 40.",
+        "No es la cifra.",
+        null
+      ],
+      "ref": "MED.A.045"
+    },
+    {
+      "id": "010.05.033",
+      "type": "concepto",
+      "level": 2,
+      "q": "Has estado una noche ingresado en un hospital. ¿Qué dice MED.A.020?",
+      "options": [
+        "Puedes volar si te sientes bien",
+        "Solo debes avisar a la escuela",
+        "No debes ejercer hasta consultar con un médico aeronáutico",
+        "No afecta al certificado"
+      ],
+      "correct": 2,
+      "why": "MED.A.020: ante un ingreso hospitalario no debes ejercer y debes consultar con un médico aeronáutico.",
+      "whyNot": [
+        "Debes consultar antes.",
+        "Debes consultar con un médico aeronáutico.",
+        null,
+        "Un ingreso hospitalario obliga a consultar."
+      ],
+      "ref": "MED.A.020"
+    },
+    {
+      "id": "010.05.034",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Cuánto tiempo es válida la recomendación de la escuela para presentarte a los exámenes teóricos?",
+      "options": [
+        "12 meses",
+        "6 meses",
+        "18 meses",
+        "24 meses"
+      ],
+      "correct": 0,
+      "why": "FCL.025(a): la recomendación del curso vale 12 meses; si no te examinas de nada en ese plazo, la escuela decide si necesitas más formación.",
+      "whyNot": [
+        null,
+        "No es la cifra.",
+        "Es el plazo para aprobar las materias.",
+        "Es la validez del teórico aprobado."
+      ],
+      "ref": "FCL.025(a)"
+    },
+    {
+      "id": "010.05.035",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un piloto LAPL(A) quiere volar un avión de 2400 kg de masa máxima al despegue. ¿Puede hacerlo con su licencia?",
+      "options": [
+        "Sí, porque es un avión monomotor de pistón",
+        "Sí, si el avión no lleva pasajeros",
+        "Sí, con la habilitación SEP",
+        "No: la LAPL(A) se limita a aviones de hasta 2000 kg"
+      ],
+      "correct": 3,
+      "why": "FCL.105.A limita la LAPL(A) a aviones de hasta 2000 kg de MTOM.",
+      "whyNot": [
+        "El límite se refiere a la masa máxima al despegue.",
+        "El límite se aplica con o sin pasajeros.",
+        "La SEP no elimina el límite de masa.",
+        null
+      ],
+      "ref": "FCL.105.A"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.010.05.01",
+      "front": "Edad de la PPL(A) y del primer solo",
+      "back": "17 años para la licencia; 16 para el primer vuelo solo supervisado"
+    },
+    {
+      "id": "c.010.05.02",
+      "front": "Horas mínimas del curso PPL(A)",
+      "back": "45 h (hasta 5 en simulador): 25 h de doble mando y 10 h de solo supervisado"
+    },
+    {
+      "id": "c.010.05.03",
+      "front": "Travesía del curso",
+      "back": "5 h de travesía solo con una de 270 km (150 NM) y aterrizajes en dos aeródromos distintos del de salida"
+    },
+    {
+      "id": "c.010.05.04",
+      "front": "Teoría PPL: horas mínimas",
+      "back": "Ninguna: FCL.210 no fija horas de teoría"
+    },
+    {
+      "id": "c.010.05.05",
+      "front": "Examen teórico: aprobado, intentos y plazo",
+      "back": "75 % por materia; 4 intentos; 18 meses"
+    },
+    {
+      "id": "c.010.05.06",
+      "front": "Validez del teórico",
+      "back": "24 meses desde la última materia aprobada"
+    },
+    {
+      "id": "c.010.05.07",
+      "front": "Médico clase 2: validez",
+      "back": "60 meses (máximo hasta los 42 años) hasta los 40; 24 de 40 a 49; 12 desde los 50"
+    },
+    {
+      "id": "c.010.05.08",
+      "front": "Idioma: reevaluación",
+      "back": "Nivel 4 cada 4 años; nivel 5 cada 6 años; nivel 6 sin caducidad"
+    },
+    {
+      "id": "c.010.05.09",
+      "front": "FCL.060: experiencia reciente",
+      "back": "3 despegues y aterrizajes en 90 días para llevar pasajeros; 1 nocturno de noche"
+    },
+    {
+      "id": "c.010.05.10",
+      "front": "Validez y revalidación de la SEP",
+      "back": "24 meses; 12 h (6 PIC), 12 despegues y aterrizajes y 1 h con instructor en 12 meses"
+    },
+    {
+      "id": "c.010.05.11",
+      "front": "LAPL(A): pasajeros",
+      "back": "Máximo 3, tras 10 h como PIC; avión de hasta 2000 kg"
+    },
+    {
+      "id": "c.010.05.12",
+      "front": "Documentos al volar (FCL.045)",
+      "back": "Licencia, certificado médico y documento de identidad con foto"
+    }
+  ]
+}

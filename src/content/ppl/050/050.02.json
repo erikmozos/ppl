@@ -1,0 +1,415 @@
+{
+ "lesson": {
+  "title": "Presión y densidad",
+  "summary": "Qué es la presión atmosférica y cómo cambia con la altura, isobaras, QFF, QNH y QFE, relación entre los sistemas en superficie y en altura, y densidad con sus factores (temperatura, presión, humedad).",
+  "objectives": [
+   "Definir presión y expresarla en hPa",
+   "Explicar por qué la presión baja más rápido con la altura en aire frío",
+   "Distinguir QFF, QNH, QFE y QNE",
+   "Estimar la variación de altitud por hPa",
+   "Explicar la densidad y los factores que la modifican, incluida la humedad",
+   "Relacionar los sistemas de presión de superficie con los de altura"
+  ],
+  "sections": [
+   {
+    "title": "Qué es la presión atmosférica",
+    "text": [
+     "La **presión atmosférica** es el peso del aire que hay encima, por unidad de superficie. Se mide en **hectopascales (hPa)**; 1 hPa = 100 Pa = 1 milibar. El valor medio al nivel del mar es **1013,25 hPa** (29,92 inHg), pero cambia con la situación meteorológica: en un anticiclón puede pasar de 1030 y en una borrasca bajar de 980. La presión mide con un **barómetro**, y en el avión se usa en el altímetro como medida indirecta de altitud.",
+     "La presión **disminuye con la altura**, porque cada vez hay menos aire encima, y no lo hace de forma lineal: al subir los primeros kilómetros baja con mucha rapidez, y después más despacio. Hasta unos 5000 ft puedes tomar **1 hPa ≈ 30 ft** (más exactamente, 27 ft en el nivel del mar); a unos 18 000 ft hay solo la mitad (**≈ 500 hPa**) y la variación por hPa es de unos 50 ft."
+    ],
+    "examples": [
+     {
+      "q": "La presión baja 8 hPa en tu aeródromo, a nivel del mar. ¿Cuántos pies cambia la altitud que marca un altímetro sin reajustar?",
+      "a": "8 hPa × 30 ft/hPa ≈ 240 ft (con 27 ft/hPa serían 216 ft): el altímetro marca unos 240 ft más."
+     }
+    ]
+   },
+   {
+    "title": "La presión baja más rápido en aire frío",
+    "text": [
+     "El aire frío es más denso y pesa más por cada pie de altura, de modo que **la presión cae más rápido al subir en una columna de aire frío** que en una de aire cálido. Equivalente: las superficies de igual presión están **más cerca del suelo** en el aire frío y más altas en el cálido. Esto tiene una consecuencia práctica fundamental: si vuelas con un reglaje fijo hacia aire más frío, el altímetro marca más altitud de la que tienes, y tu altitud real es **inferior** (véase 050.03)."
+    ],
+    "bullets": [
+     "Aire frío: presión baja deprisa con la altura; superficies de presión bajas.",
+     "Aire cálido: presión baja despacio; superficies de presión altas.",
+     "De ahí que en una borrasca fría los niveles de altitud sean bajos, y en una dorsal cálida, altos."
+    ]
+   },
+   {
+    "title": "QFF, QNH, QFE y QNE",
+    "text": [
+     "Una presión medida en un lugar depende de su altitud, así que para comparar puntos o dibujar mapas hay que **reducirla a un nivel común**. Cada reducción tiene su nombre en código Q:",
+     "El **QNH** es el que se da en el METAR, en el ATIS y por radio, y es el que usas en el altímetro por debajo de la altitud de transición. El **QFF** (con la temperatura real) se usa en mapas para dibujar las **isobaras**, líneas que unen puntos de la misma presión reducida al nivel del mar. QNH y QFF difieren poco salvo en aeródromos altos o con temperaturas muy distintas de la ISA."
+    ],
+    "table": {
+     "caption": "Presiones de referencia",
+     "head": [
+      "Código",
+      "Qué es",
+      "Para qué sirve"
+     ],
+     "rows": [
+      [
+       "QFE",
+       "Presión en el aeródromo (a su elevación)",
+       "Con QFE el altímetro marca 0 en la pista (altura sobre el aeródromo)"
+      ],
+      [
+       "QNH",
+       "Presión reducida al nivel del mar con la atmósfera estándar",
+       "Con QNH el altímetro marca la altitud (la elevación del aeródromo en tierra)"
+      ],
+      [
+       "QFF",
+       "Presión reducida al nivel del mar con la temperatura real",
+       "Mapas de superficie (isobaras)"
+      ],
+      [
+       "QNE",
+       "Se refiere a 1013,25 hPa",
+       "Con 1013,25 el altímetro marca la altitud de presión: nivel de vuelo"
+      ]
+     ],
+     "src": "OACI Anexo 3 y Doc 8168"
+    }
+   },
+   {
+    "title": "Presión en superficie y en altura",
+    "text": [
+     "Los sistemas de presión de superficie cambian de forma al subir. Una **baja fría** (aire frío en toda la columna) **se intensifica con la altura**, porque la presión baja deprisa en aire frío; es el caso de una DANA. Una **alta cálida** (columna de aire cálido) también se **intensifica con la altura**, porque la presión cae lentamente: así son las dorsales subtropicales como la de las Azores. En cambio, las **altas frías** de invierno se debilitan con la altura y desaparecen, y las **bajas térmicas** de verano (cálidas) se debilitan y se vuelven altas en altura.",
+     "En un mapa de altura (500 hPa, por ejemplo), no se dibujan isobaras, sino **isohipsas**: líneas de igual altitud de la superficie de presión."
+    ]
+   },
+   {
+    "title": "Densidad",
+    "text": [
+     "La **densidad** es la masa de aire por unidad de volumen. Se obtiene de la ecuación de los gases, ρ = p / (R · T): **aumenta con la presión** y **disminuye con la temperatura**. En la ISA al nivel del mar es **1,225 kg/m³**. Con la altura la presión baja mucho más que la temperatura, por lo que la densidad baja: a 18 000 ft es aproximadamente la mitad.",
+     "La **humedad** también reduce la densidad: una molécula de vapor de agua (masa 18) es más ligera que las de nitrógeno y oxígeno (28 y 32) a las que sustituye, así que **el aire húmedo es menos denso que el seco**. El efecto es pequeño en cifras, pero es contraintuitivo y aparece en los exámenes. Un día **caluroso, húmedo y a gran altitud** da la menor densidad, la **altitud de densidad** más alta y las peores prestaciones: carrera de despegue más larga, ascenso más lento y menos potencia del motor y de la hélice."
+    ],
+    "formulas": [
+     {
+      "f": "ρ = p / (R · T)",
+      "note": "Densidad proporcional a la presión e inversa a la temperatura absoluta."
+     }
+    ]
+   }
+  ],
+  "numbers": [
+   "1013,25 hPa y 1,225 kg/m³ al nivel del mar (ISA)",
+   "1 hPa ≈ 27 ft (30 ft de forma aproximada) cerca del suelo; 500 hPa ≈ 18 000 ft",
+   "QNH: altitud; QFE: altura sobre el aeródromo; 1013,25: nivel de vuelo",
+   "QFF: mapas de superficie con temperatura real",
+   "Aire frío: la presión baja más rápido con la altura",
+   "El aire húmedo es menos denso que el seco"
+  ],
+  "traps": [
+   "El aire húmedo es menos denso que el seco, no más.",
+   "La presión no baja de forma lineal con la altura.",
+   "QNH y QFF no son lo mismo: el QNH usa la atmósfera estándar.",
+   "En altura, las bajas frías se intensifican y las altas frías se debilitan.",
+   "Densidad baja = prestaciones peores."
+  ],
+  "sources": [
+   {
+    "title": "OACI, Anexo 3 y Doc 8168 PANS-OPS: QNH, QFE, QNE",
+    "url": "https://www.icao.int/"
+   },
+   {
+    "title": "AEMET, Apuntes de meteorología aeronáutica",
+    "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
+   },
+   {
+    "title": "FAA PHAK (FAA-H-8083-25C), cap. 4 y 8",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   }
+  ],
+  "id": "050.02",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "050.02.001",
+   "type": "regla",
+   "level": 1,
+   "q": "La presión ISA al nivel del mar es de:",
+   "options": [
+    "1013,25 hPa",
+    "1013 inHg",
+    "1000 hPa",
+    "1025 hPa"
+   ],
+   "correct": 0,
+   "why": "La ISA fija la presión en 1013,25 hPa (29,92 inHg) al nivel del mar.",
+   "whyNot": [
+    null,
+    "Las unidades no son las correctas.",
+    "Es un valor redondeado, no el de referencia.",
+    "No es el valor estándar."
+   ],
+   "ref": "OACI Doc 7488"
+  },
+  {
+   "id": "050.02.002",
+   "type": "regla",
+   "level": 1,
+   "q": "Cerca del nivel del mar, 1 hPa de variación de presión equivale a unos:",
+   "options": [
+    "100 ft de altura",
+    "30 ft de altura",
+    "10 ft de altura",
+    "300 ft de altura"
+   ],
+   "correct": 1,
+   "why": "Cerca del suelo, unos 27 ft por hPa (30 en el cálculo rápido).",
+   "whyNot": [
+    "Es el valor de 3 hPa.",
+    null,
+    "Es demasiado poco.",
+    "Es el valor de 10 hPa."
+   ],
+   "ref": "FAA PHAK cap. 8"
+  },
+  {
+   "id": "050.02.003",
+   "type": "calculo",
+   "level": 2,
+   "q": "Si la presión sube 5 hPa en tu aeródromo, un altímetro que no se reajusta marca unos:",
+   "options": [
+    "500 ft más",
+    "50 ft menos",
+    "150 ft más",
+    "150 ft menos"
+   ],
+   "correct": 3,
+   "why": "5 hPa × 30 ft = 150 ft menos: con más presión, el altímetro cree que estás más bajo.",
+   "whyNot": [
+    "Resulta de usar 10 ft por hPa.",
+    "Es el signo contrario.",
+    "Marca más baja la altitud al subir la presión.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 8"
+  },
+  {
+   "id": "050.02.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "La presión disminuye más rápidamente con la altura en:",
+   "options": [
+    "Una columna de aire cálido",
+    "Aire seco",
+    "Una columna de aire frío",
+    "Una inversión"
+   ],
+   "correct": 2,
+   "why": "El aire frío es más denso y pesa más por cada pie de altura.",
+   "whyNot": [
+    "En aire cálido baja más despacio.",
+    "No depende de la humedad.",
+    null,
+    "No es la causa."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.02.005",
+   "type": "concepto",
+   "level": 1,
+   "q": "El QNH es la presión:",
+   "options": [
+    "Reducida al nivel del mar con la temperatura real",
+    "Reducida al nivel del mar con la atmósfera estándar",
+    "De 1013,25 hPa",
+    "Medida en la pista"
+   ],
+   "correct": 1,
+   "why": "Con QNH puesto, el altímetro indica la altitud sobre el nivel del mar.",
+   "whyNot": [
+    "Es el QFF.",
+    null,
+    "Es el QNE.",
+    "Es el QFE."
+   ],
+   "ref": "OACI Doc 8168"
+  },
+  {
+   "id": "050.02.006",
+   "type": "concepto",
+   "level": 1,
+   "q": "Con el QFE puesto en la subventana, el altímetro indica en la pista:",
+   "options": [
+    "El nivel de vuelo",
+    "La altitud de densidad",
+    "0 ft",
+    "La elevación del aeródromo"
+   ],
+   "correct": 2,
+   "why": "El QFE es la presión del aeródromo y el altímetro indica altura sobre él.",
+   "whyNot": [
+    "Eso ocurre con 1013.",
+    "No es lo que indica.",
+    null,
+    "Eso ocurre con QNH."
+   ],
+   "ref": "OACI Doc 8168"
+  },
+  {
+   "id": "050.02.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "Las isobaras de un mapa de superficie unen puntos de igual:",
+   "options": [
+    "Temperatura",
+    "Presión reducida al nivel del mar",
+    "Altitud",
+    "Densidad"
+   ],
+   "correct": 1,
+   "why": "El QFF es la presión reducida que se representa en los mapas.",
+   "whyNot": [
+    "Eso son las isotermas.",
+    null,
+    "Eso son las isohipsas.",
+    "No se dibujan isolíneas de densidad."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.02.008",
+   "type": "concepto",
+   "level": 1,
+   "q": "La densidad del aire:",
+   "options": [
+    "Disminuye con la altura y con la temperatura",
+    "Aumenta con la altura",
+    "Aumenta con la temperatura",
+    "Es constante"
+   ],
+   "correct": 0,
+   "why": "La densidad es proporcional a la presión e inversamente proporcional a la temperatura.",
+   "whyNot": [
+    null,
+    "Con la altura baja la presión y la densidad.",
+    "Al subir la temperatura, el aire se expande y es menos denso.",
+    "Varía."
+   ],
+   "ref": "FAA PHAK cap. 11"
+  },
+  {
+   "id": "050.02.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Comparando aire seco y aire húmedo a la misma presión y temperatura:",
+   "options": [
+    "Tienen la misma densidad",
+    "El húmedo es más denso",
+    "El húmedo es mucho más denso",
+    "El húmedo es menos denso"
+   ],
+   "correct": 3,
+   "why": "La molécula de agua pesa menos que las de N₂ y O₂ que sustituye.",
+   "whyNot": [
+    "El vapor es más ligero.",
+    "El vapor de agua es más ligero que el aire seco.",
+    "Hay una pequeña diferencia.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 11"
+  },
+  {
+   "id": "050.02.010",
+   "type": "regla",
+   "level": 1,
+   "q": "La densidad ISA al nivel del mar es de:",
+   "options": [
+    "1,013 kg/m³",
+    "0,5 kg/m³",
+    "1,225 kg/m³",
+    "1,5 kg/m³"
+   ],
+   "correct": 2,
+   "why": "La ISA fija 1,225 kg/m³.",
+   "whyNot": [
+    "Confunde la densidad con la presión.",
+    "Es la densidad a unos 18 000 ft.",
+    null,
+    "No es el valor estándar."
+   ],
+   "ref": "OACI Doc 7488"
+  },
+  {
+   "id": "050.02.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una baja fría en superficie, con la altura:",
+   "options": [
+    "Se convierte en alta",
+    "Se debilita",
+    "No cambia",
+    "Se intensifica"
+   ],
+   "correct": 3,
+   "why": "En aire frío la presión baja rápido, de modo que la baja se hace más profunda en altura; es el caso de la DANA.",
+   "whyNot": [
+    "No se invierte.",
+    "Eso le ocurre a una alta fría.",
+    "Cambia por el gradiente térmico.",
+    null
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.02.012",
+   "type": "regla",
+   "level": 2,
+   "q": "A unos 18 000 ft la presión es aproximadamente:",
+   "options": [
+    "500 hPa",
+    "1000 hPa",
+    "850 hPa",
+    "300 hPa"
+   ],
+   "correct": 0,
+   "why": "A 18 000 ft queda la mitad de la presión del nivel del mar.",
+   "whyNot": [
+    null,
+    "Es el nivel del mar.",
+    "Es unos 5000 ft.",
+    "Es unos 30 000 ft."
+   ],
+   "ref": "OACI Doc 7488"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.050.02.01",
+   "front": "Presión ISA",
+   "back": "1013,25 hPa; densidad ISA 1,225 kg/m³"
+  },
+  {
+   "id": "c.050.02.02",
+   "front": "Pies por hPa",
+   "back": "Cerca del nivel del mar, 1 hPa ≈ 27 ft (30 ft de forma rápida)"
+  },
+  {
+   "id": "c.050.02.03",
+   "front": "QNH, QFE y 1013",
+   "back": "QNH: altitud; QFE: altura sobre el aeródromo; 1013,25: nivel de vuelo"
+  },
+  {
+   "id": "c.050.02.04",
+   "front": "QFF",
+   "back": "Presión reducida al nivel del mar con la temperatura real; mapas de superficie"
+  },
+  {
+   "id": "c.050.02.05",
+   "front": "Aire frío y presión",
+   "back": "La presión baja más rápido con la altura en aire frío"
+  },
+  {
+   "id": "c.050.02.06",
+   "front": "Aire húmedo y densidad",
+   "back": "El aire húmedo es menos denso que el seco"
+  }
+ ]
+}

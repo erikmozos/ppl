@@ -1,0 +1,616 @@
+{
+  "lesson": {
+    "id": "090.07",
+    "title": "Procedimientos de radio en VFR",
+    "summary": "Llamada inicial, rodaje, salida, tránsito por una CTR con puntos de notificación VFR, información de vuelo, llegada y circuito, aeródromo no controlado, aeródromo con AFIS y cambio de frecuencia, con ejemplos en español e inglés OACI.",
+    "objectives": [
+      "Estructurar una llamada inicial y el resto de mensajes de un vuelo VFR",
+      "Pedir y colacionar una autorización para cruzar una CTR por puntos de notificación VFR",
+      "Informar correctamente en un aeródromo no controlado y en una FIZ con AFIS",
+      "Cambiar de frecuencia sin perder el contacto"
+    ],
+    "sections": [
+      {
+        "title": "La estructura de la llamada inicial",
+        "text": [
+          "Toda llamada sigue el mismo orden: **a quién llamas**, **quién eres**, **dónde estás**, **qué información tienes** y **qué quieres**. Ese orden evita confusiones y deja claro cuándo termina el mensaje. En el primer contacto con una estación das tu distintivo completo; después, el abreviado cuando el ATS lo haya usado.",
+          "Si no sabes qué frecuencia usar, escucha primero. Una llamada empieza siempre por el nombre de la estación, nunca por tu distintivo."
+        ],
+        "examples": [
+          {
+            "q": "Español: llamada inicial a la torre desde la plataforma, con información Bravo.",
+            "a": "«Villanueva Torre, Eco Charlie Alfa Bravo Charlie, Cessna 172, en la plataforma del aeroclub, con información Bravo, QNH 1015, solicito rodar para vuelo VFR local.»"
+          },
+          {
+            "q": "Inglés: la misma llamada.",
+            "a": "«Villanueva Tower, Echo Charlie Alpha Bravo Charlie, Cessna 172, at the aero club apron, information Bravo, QNH 1015, request taxi for local VFR flight.»"
+          }
+        ]
+      },
+      {
+        "title": "Rodaje y salida",
+        "text": [
+          "El controlador te da la ruta de rodaje, el punto de espera, el QNH y, en su caso, el código SSR. Los colacionas y terminas con el distintivo. En el punto de espera haces las comprobaciones previas al despegue (prueba de motores) y, cuando estás listo, **avisas con «listo para salir»**, no «listo para despegar».",
+          "El controlador puede decirte «**alinee y espere**» (line up and wait) y después «**autorizado a despegar**» (cleared for take-off). Cuando estás en la pista y has recibido la autorización, colacionas la pista. Al abandonar el circuito, notificas el punto por el que sales y la altitud."
+        ],
+        "table": {
+          "caption": "Frases habituales de salida",
+          "head": [
+            "Español",
+            "Inglés"
+          ],
+          "rows": [
+            [
+              "Ruede al punto de espera pista 13 vía Alfa",
+              "Taxi to holding point runway 13 via Alfa"
+            ],
+            [
+              "Listo para salir",
+              "Ready for departure"
+            ],
+            [
+              "Alinee y espere",
+              "Line up and wait"
+            ],
+            [
+              "Pista 13, autorizado a despegar",
+              "Runway 13, cleared for take-off"
+            ],
+            [
+              "Notifique abandonando el circuito",
+              "Report leaving the circuit"
+            ]
+          ],
+          "src": "SERA.14; Doc 9432"
+        }
+      },
+      {
+        "title": "Tránsito por una CTR con puntos de notificación VFR",
+        "text": [
+          "Para atravesar una CTR clase D necesitas **autorización** antes de entrar. Las cartas VFR muestran **puntos de notificación** con nombres de una letra o de un lugar (Sierra, November…) que sirven para la entrada, la salida y el cruce. Llamas con tiempo (al menos unos minutos antes) a la dependencia ATC de la CTR, indicas tu posición y tu petición, y esperas la autorización. Hasta que no la tengas **no entras**.",
+          "La autorización suele darte el punto de entrada, la altitud máxima, el QNH y el siguiente punto de notificación, y puede venir con **condiciones**. Debes colacionarla completa."
+        ],
+        "examples": [
+          {
+            "q": "Español: pides cruzar la CTR de Villanueva de este a oeste, 10 millas al este del punto November, 3500 pies.",
+            "a": "Piloto: «Villanueva Aproximación, EC-ABC, Cessna 172, VFR, 10 millas al este de November, 3500 pies, solicito cruzar la CTR de este a oeste.» ATC: «EC-ABC, autorizado a entrar en la CTR por November, no más de 2500 pies, QNH 1014, notifique en Sierra.» Piloto: «Autorizado a entrar en la CTR por November, no más de 2500 pies, QNH 1014, notificaré en Sierra, EC-ABC.»"
+          },
+          {
+            "q": "Inglés: la misma autorización.",
+            "a": "ATC: «EC-ABC, cleared to enter the control zone via November, not above 2500 feet, QNH 1014, report Sierra.» Piloto: «Cleared to enter the control zone via November, not above 2500 feet, QNH 1014, wilco, EC-ABC.»"
+          }
+        ],
+        "note": {
+          "kind": "warn",
+          "text": "Si te dicen «mantenga fuera de la CTR» (remain outside the control zone), no entres hasta que te autoricen. Mantente en espera fuera de la CTR."
+        }
+      },
+      {
+        "title": "Información de vuelo y cambio de frecuencia",
+        "text": [
+          "En ruta, fuera de espacio controlado, puedes contactar con el servicio de información de vuelo de la FIR («Madrid Información») para recibir información y que sepan de ti. Das tu distintivo, tipo, reglas de vuelo, posición, altitud, ruta y lo que solicitas.",
+          "Cuando una estación te manda cambiar de frecuencia, **colacionas la frecuencia**, la sintonizas y llamas en la nueva. Hasta que no hayas llamado y te hayan contestado, no abandones la anterior sin avisar si hay tráfico. Una buena práctica es anotar la frecuencia siguiente antes de dejar la actual."
+        ]
+      },
+      {
+        "title": "Llegada y circuito de tráfico",
+        "text": [
+          "Llamas con antelación, indicas tu posición y altitud, la información ATIS y que vas para aterrizar. La torre te dice por dónde incorporarte y qué notificar. En un circuito de mano izquierda los puntos críticos que notificas son **viento en cola**, **base** y **final**; y al salir de pista, «**pista libre**»."
+        ],
+        "table": {
+          "caption": "Frases habituales de llegada",
+          "head": [
+            "Español",
+            "Inglés"
+          ],
+          "rows": [
+            [
+              "Entre en viento en cola izquierda pista 13",
+              "Join left downwind runway 13"
+            ],
+            [
+              "Número 2, siga al Piper en base",
+              "Number 2, follow the Piper on base"
+            ],
+            [
+              "Pista 13, autorizado a aterrizar",
+              "Runway 13, cleared to land"
+            ],
+            [
+              "Pista libre",
+              "Runway vacated"
+            ],
+            [
+              "Motor y al aire",
+              "Going around"
+            ]
+          ],
+          "src": "SERA.14; Doc 9432"
+        }
+      },
+      {
+        "title": "Aeródromo no controlado: autoinformación",
+        "text": [
+          "En un aeródromo sin ATC ni AFIS **nadie te autoriza**. Los pilotos se informan unos a otros por la frecuencia del aeródromo («Villanueva Tráfico»), siguen el circuito y se ceden el paso. Tu llamada indica **quién eres**, **tipo**, **posición**, **altitud** e **intenciones**; y notificas los puntos críticos: entrada, viento en cola, base, final y pista libre. Escucha siempre antes de transmitir.",
+          "Tú decides cuándo entrar al circuito, siguiendo las reglas de SERA.3225 (ceder el paso al tráfico que ya está en circuito, aterrizar la que está más baja…)."
+        ],
+        "examples": [
+          {
+            "q": "Español: llamada a 10 NM, desde el norte, para aterrizar.",
+            "a": "«Villanueva Tráfico, Eco Charlie Alfa Bravo Charlie, Cessna 172, 10 millas al norte, 3000 pies, para aterrizar, pista 13, notificaré entrando en viento en cola.»"
+          },
+          {
+            "q": "Inglés: la misma llamada.",
+            "a": "«Villanueva Traffic, Echo Charlie Alpha Bravo Charlie, Cessna 172, 10 miles north, 3000 feet, inbound for landing, runway 13, will report joining downwind.»"
+          }
+        ]
+      },
+      {
+        "title": "FIZ con AFIS",
+        "text": [
+          "En una zona de información de vuelo (FIZ), el **AFIS** te da información: pista en uso, QNH, viento y tráfico conocido. **No te autoriza.** Contestas con tu distintivo y la colación de los datos que se colacionan (pista en uso, QNH), y **eres tú quien decide** entrar, aterrizar o esperar. Notificas los mismos puntos que en un aeródromo no controlado.",
+          "La fraseología del AFIS usa «**información**» en lugar de «autorización»: «pista 13 en uso, viento 140 grados 8 nudos, QNH 1015, tráfico en circuito: un Piper en base»."
+        ]
+      }
+    ],
+    "numbers": [
+      "Orden de la llamada: a quién, quién soy, dónde estoy, información recibida, qué quiero",
+      "En el punto de espera: «listo para salir», no «listo para despegar»",
+      "Antes de cruzar una CTR clase D: autorización",
+      "En un aeródromo no controlado y en AFIS: nadie autoriza; decide el piloto",
+      "Puntos de notificación del circuito: viento en cola, base, final, pista libre"
+    ],
+    "traps": [
+      "No se entra en una CTR hasta tener autorización, aunque estés en el punto de notificación.",
+      "El AFIS no autoriza: informa. «Información» no es «Torre».",
+      "En un aeródromo no controlado no hay autorizaciones: te informas y decides tú.",
+      "Los cambios de frecuencia se colacionan."
+    ],
+    "spain": [
+      "AIP España: cada CTR publica sus puntos de notificación VFR y sus procedimientos; consúltalos en el AD y en la carta VFR."
+    ],
+    "sources": [
+      {
+        "title": "SERA, sección 14 (EASA)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "EGAST: Radiotelephony Guide for VFR Pilots (EASA)",
+        "url": "https://www.easa.europa.eu/document-library/general-publications/egast-radiotelephony-guide-vfr-pilots"
+      },
+      {
+        "title": "Guía VFR digital (ENAIRE)",
+        "url": "https://enaire.es/AIS/vfr_guide_%28online%29_"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología ES/EN",
+        "href": "#/licencias/fraseologia"
+      },
+      {
+        "label": "Simulador de radio",
+        "href": "#/licencias/fraseologia?tab=radio"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "090.07.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Cuál es el orden correcto de una llamada inicial?",
+      "options": [
+        "Distintivo, estación llamada, petición",
+        "Petición, distintivo, estación",
+        "Estación llamada, distintivo, posición, información y petición",
+        "Saludo, petición, distintivo"
+      ],
+      "correct": 2,
+      "why": "La llamada empieza por la estación llamada y luego te identificas.",
+      "whyNot": [
+        "Primero se dice a quién se llama.",
+        "El orden es al revés.",
+        null,
+        "Falta el orden normalizado."
+      ],
+      "ref": "Doc 9432"
+    },
+    {
+      "id": "090.07.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "En el punto de espera, ¿qué dice el piloto cuando está listo?",
+      "options": [
+        "Listo para salir",
+        "Listo para despegar",
+        "Listo para volar",
+        "Solicito despegar"
+      ],
+      "correct": 0,
+      "why": "El piloto dice «listo para salir»; «despegue» solo lo dice el ATC.",
+      "whyNot": [
+        null,
+        "«Despegar» queda reservado a la autorización.",
+        "No es fraseología.",
+        "No es fraseología."
+      ],
+      "ref": "SERA.14"
+    },
+    {
+      "id": "090.07.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa «alinee y espere» (line up and wait)?",
+      "options": [
+        "Que despegues de inmediato",
+        "Que abandones la pista",
+        "Que esperes fuera de la pista",
+        "Que entres en la pista y esperes, sin despegar"
+      ],
+      "correct": 3,
+      "why": "Es una instrucción de alinearse y esperar la autorización de despegue.",
+      "whyNot": [
+        "Eso es «autorizado a despegar».",
+        "No es el significado.",
+        "Eso es «mantenga posición».",
+        null
+      ],
+      "ref": "SERA.14"
+    },
+    {
+      "id": "090.07.004",
+      "type": "concepto",
+      "level": 1,
+      "q": "Quieres atravesar una CTR de clase D. ¿Qué necesitas antes de entrar?",
+      "options": [
+        "Un plan de vuelo IFR",
+        "Una autorización de ATC",
+        "Solo escuchar la frecuencia",
+        "Nada, si vuelas bajo 1000 ft"
+      ],
+      "correct": 1,
+      "why": "En clase D el VFR necesita autorización y radio bilateral.",
+      "whyNot": [
+        "No es el requisito.",
+        null,
+        "Necesitas autorización.",
+        "Necesitas autorización."
+      ],
+      "ref": "SERA.6001"
+    },
+    {
+      "id": "090.07.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "Te dicen «mantenga fuera de la CTR». ¿Qué haces?",
+      "options": [
+        "Esperas fuera de la CTR hasta que te autoricen",
+        "Entras por el punto más cercano",
+        "Entras si la visibilidad es buena",
+        "Entras a baja altitud"
+      ],
+      "correct": 0,
+      "why": "«Mantenga fuera» es una instrucción de no entrar.",
+      "whyNot": [
+        null,
+        "No debes entrar.",
+        "No debes entrar.",
+        "No debes entrar."
+      ],
+      "ref": "SERA.14"
+    },
+    {
+      "id": "090.07.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "Recibes: «autorizado a entrar en la CTR por November, no más de 2500 pies, QNH 1014, notifique en Sierra». ¿Qué colacionas?",
+      "options": [
+        "Recibido, y el distintivo",
+        "Autorizado, y el distintivo",
+        "Autorización completa: entrada por November, no más de 2500 pies, QNH 1014, notificaré en Sierra, y el distintivo",
+        "Entrando por November, y el distintivo"
+      ],
+      "correct": 2,
+      "why": "Se colacionan la ruta, la altitud, el QNH y la instrucción de notificar.",
+      "whyNot": [
+        "Recibido no colaciona.",
+        "Falta lo que hay que colacionar.",
+        null,
+        "Faltan altitud, QNH y notificación."
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.07.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un aeródromo sin ATC ni AFIS, ¿quién te autoriza a entrar en el circuito?",
+      "options": [
+        "La torre del aeródromo más cercano",
+        "Nadie: decides tú siguiendo las reglas del aire y las llamadas de otros pilotos",
+        "El FIS de la FIR",
+        "El primer piloto que llama"
+      ],
+      "correct": 1,
+      "why": "Sin ATC no hay autorizaciones: te informas y decides.",
+      "whyNot": [
+        "No hay torre.",
+        null,
+        "El FIS no autoriza.",
+        "No existen autorizaciones entre pilotos."
+      ],
+      "ref": "SERA.3225"
+    },
+    {
+      "id": "090.07.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué datos incluye una llamada de autoinformación en un aeródromo no controlado?",
+      "options": [
+        "Solo el distintivo",
+        "Solo la altitud y el rumbo",
+        "La autorización de ATC",
+        "Distintivo, tipo, posición, altitud e intenciones"
+      ],
+      "correct": 3,
+      "why": "La llamada informa a los demás de quién eres, dónde estás y qué vas a hacer.",
+      "whyNot": [
+        "No basta.",
+        "No basta.",
+        "No hay ATC.",
+        null
+      ],
+      "ref": "Doc 9432"
+    },
+    {
+      "id": "090.07.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué hace el AFIS cuando le llamas desde un aeródromo con FIZ?",
+      "options": [
+        "Te autoriza a aterrizar",
+        "Te da separación radar",
+        "Te da información de pista, QNH, viento y tráfico, sin autorizarte",
+        "Te controla el rodaje"
+      ],
+      "correct": 2,
+      "why": "El AFIS informa; la decisión es tuya.",
+      "whyNot": [
+        "No autoriza.",
+        "No presta ese servicio.",
+        null,
+        "No lo hace."
+      ],
+      "ref": "Doc 4444"
+    },
+    {
+      "id": "090.07.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué puntos del circuito notificas normalmente en un aeródromo no controlado?",
+      "options": [
+        "Viento en cola, base, final y pista libre",
+        "Solo la final",
+        "Solo al aterrizar",
+        "Solo la entrada"
+      ],
+      "correct": 0,
+      "why": "Los puntos críticos del circuito son viento en cola, base, final y pista libre.",
+      "whyNot": [
+        null,
+        "Se notifican varios puntos.",
+        "Se notifican varios puntos.",
+        "Se notifican varios puntos."
+      ],
+      "ref": "Doc 9432"
+    },
+    {
+      "id": "090.07.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Se colaciona un cambio de frecuencia?",
+      "options": [
+        "No, basta con cambiar",
+        "Solo en espacio controlado",
+        "Solo si la frecuencia es de ATIS",
+        "Sí, repitiendo la frecuencia y el distintivo"
+      ],
+      "correct": 3,
+      "why": "La frecuencia se colaciona.",
+      "whyNot": [
+        "Es obligatorio.",
+        "Es obligatorio.",
+        "Es obligatorio.",
+        null
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.07.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un controlador te dice «notifique abandonando el circuito por Sierra». ¿Cómo respondes?",
+      "options": [
+        "Con «recibido» solamente",
+        "«Notificaré abandonando por Sierra» o «cumpliré», con el distintivo",
+        "Con «afirmativo»",
+        "No respondes hasta salir"
+      ],
+      "correct": 1,
+      "why": "Notificar se acepta con «cumpliré» o repitiendo la instrucción.",
+      "whyNot": [
+        "Una instrucción de notificar se acepta con cumpliré o repetida.",
+        null,
+        "No es fraseología.",
+        "Debes acusarlo."
+      ],
+      "ref": "SERA.14"
+    },
+    {
+      "id": "090.07.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "Al llamar a la torre como alumno solo en España, tu primera llamada empieza:",
+      "options": [
+        "Villanueva Torre, STUDENT y tu distintivo",
+        "Con tu distintivo y luego STUDENT",
+        "Sin STUDENT",
+        "Con «alumno solo» en español"
+      ],
+      "correct": 0,
+      "why": "El prefijo STUDENT va antes del distintivo en la primera llamada.",
+      "whyNot": [
+        null,
+        "El prefijo va delante del distintivo.",
+        "Debes usarlo.",
+        "El prefijo es STUDENT."
+      ],
+      "ref": "AIP GEN 1.7",
+      "es": true
+    },
+    {
+      "id": "090.07.014",
+      "type": "concepto",
+      "level": 3,
+      "q": "En un aeródromo con AFIS te dicen «pista 13 en uso». ¿Qué colacionas?",
+      "options": [
+        "Nada, es solo información",
+        "Recibido",
+        "Pista 13 en uso y tu distintivo",
+        "Autorizado a aterrizar"
+      ],
+      "correct": 2,
+      "why": "La pista en uso es un dato de colación obligatoria, aunque no sea una autorización.",
+      "whyNot": [
+        "La pista en uso se colaciona.",
+        "No colaciona.",
+        null,
+        "El AFIS no autoriza."
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.07.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "En la fraseología española de circuito, ¿qué dice el ATC para que dejes de aproximar y subas?",
+      "options": [
+        "Continúe aproximación",
+        "Motor y al aire",
+        "Mantenga posición",
+        "Autorizado a despegar"
+      ],
+      "correct": 1,
+      "why": "«Motor y al aire» ordena abandonar la aproximación.",
+      "whyNot": [
+        "Es lo contrario.",
+        null,
+        "Es para detenerte en tierra.",
+        "Es otra instrucción."
+      ],
+      "ref": "SERA.14"
+    },
+    {
+      "id": "090.07.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué haces tras recibir «motor y al aire»?",
+      "options": [
+        "Pedir que lo repitan",
+        "Colacionar y seguir la aproximación",
+        "Esperar a ver qué pasa",
+        "Ejecutarlo de inmediato y después colacionar"
+      ],
+      "correct": 3,
+      "why": "Primero vuelas; después comunicas.",
+      "whyNot": [
+        "Debes ejecutarlo.",
+        "Debes ejecutarlo.",
+        "Debes ejecutarlo.",
+        null
+      ],
+      "ref": "SERA.14"
+    },
+    {
+      "id": "090.07.017",
+      "type": "concepto",
+      "level": 3,
+      "q": "Llamas a Información para recibir servicio en ruta. ¿Qué datos das?",
+      "options": [
+        "Solo tu posición",
+        "Solo la matrícula",
+        "Distintivo, tipo, reglas de vuelo, ruta, posición y altitud, y lo que solicitas",
+        "Solo tus intenciones"
+      ],
+      "correct": 2,
+      "why": "El FIS necesita saber quién eres, dónde estás y qué quieres.",
+      "whyNot": [
+        "No basta.",
+        "No basta.",
+        null,
+        "No basta."
+      ],
+      "ref": "Doc 9432"
+    },
+    {
+      "id": "090.07.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "Antes de transmitir en un aeródromo no controlado debes:",
+      "options": [
+        "Escuchar la frecuencia",
+        "Transmitir de inmediato",
+        "Esperar autorización del ATC",
+        "Cambiar a 121,5"
+      ],
+      "correct": 0,
+      "why": "Escucha primero para no interferir con otras llamadas.",
+      "whyNot": [
+        null,
+        "Puedes pisar a otro.",
+        "No hay ATC.",
+        "No es la frecuencia del aeródromo."
+      ],
+      "ref": "Doc 9432"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.090.07.01",
+      "front": "Orden de una llamada inicial",
+      "back": "Estación llamada, distintivo, tipo, posición, información (ATIS) y petición"
+    },
+    {
+      "id": "c.090.07.02",
+      "front": "Punto de espera",
+      "back": "«Listo para salir», nunca «listo para despegar»"
+    },
+    {
+      "id": "c.090.07.03",
+      "front": "CTR de clase D",
+      "back": "No se entra sin autorización"
+    },
+    {
+      "id": "c.090.07.04",
+      "front": "Aeródromo sin ATC ni AFIS",
+      "back": "Autoinformación: nadie autoriza; decides tú"
+    },
+    {
+      "id": "c.090.07.05",
+      "front": "AFIS",
+      "back": "Informa; no autoriza"
+    },
+    {
+      "id": "c.090.07.06",
+      "front": "Puntos del circuito",
+      "back": "Viento en cola, base, final y pista libre"
+    },
+    {
+      "id": "c.090.07.07",
+      "front": "Cambio de frecuencia",
+      "back": "Se colaciona"
+    }
+  ]
+}

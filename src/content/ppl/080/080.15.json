@@ -1,0 +1,635 @@
+{
+ "lesson": {
+  "title": "Mecánica de vuelo",
+  "summary": "Fuerzas y equilibrio en vuelo recto y nivelado, en ascenso (gradiente, Vx y Vy), en descenso y planeo (L/D) y en viraje (inclinación, factor de carga, radio y régimen 1).",
+  "objectives": [
+   "Plantear el equilibrio de fuerzas en vuelo nivelado, ascenso y planeo",
+   "Calcular gradiente y régimen de ascenso a partir del exceso de empuje",
+   "Calcular ángulo y distancia de planeo con L/D",
+   "Aplicar n = 1/cos φ, r = V²/(g·tan φ) y el régimen 1 en un viraje",
+   "Reconocer el efecto de la masa, el viento y los flaps en planeo y viraje"
+  ],
+  "sections": [
+   {
+    "title": "Vuelo recto y nivelado",
+    "text": [
+     "Un avión en vuelo recto, nivelado y a velocidad constante está en **equilibrio**: la sustentación iguala al peso (L = W) y la tracción a la resistencia (T = D). Los cuatro vectores no pasan por el mismo punto, así que además hay momentos que se equilibran: el ala suele dar un momento de picado y la cola, una fuerza hacia abajo que lo cancela. Si cambias la potencia o la actitud rompes el equilibrio y el avión acelera o cambia de trayectoria hasta encontrar uno nuevo."
+    ]
+   },
+   {
+    "title": "Ascenso: gradiente y régimen",
+    "text": [
+     "En un ascenso rectilíneo y estabilizado con trayectoria γ, el peso se descompone en una componente perpendicular a la trayectoria (W cos γ ≈ L) y otra paralela (W sen γ), que se suma a la resistencia. La tracción debe cubrir las dos:",
+     "El **gradiente de ascenso** (altura ganada por distancia recorrida) depende del **exceso de empuje** (T − D). El **régimen de ascenso** (ft/min) depende del **exceso de potencia**. Por eso hay dos velocidades notables: **Vx**, la del mejor ángulo de ascenso (máximo exceso de empuje, la más baja de las dos, para salvar un obstáculo), y **Vy**, la del mejor régimen (máximo exceso de potencia, más alta que Vx, la que da más altura en menos tiempo). Con la altitud ambas se acercan, hasta coincidir en el techo."
+    ],
+    "formulas": [
+     {
+      "f": "T = D + W · sen γ",
+      "note": "Equilibrio a lo largo de la trayectoria en un ascenso estabilizado."
+     },
+     {
+      "f": "sen γ ≈ (T − D) / W",
+      "note": "Gradiente de ascenso (× 100 = %)."
+     },
+     {
+      "f": "Régimen = V · sen γ = (P disponible − P necesaria) / W",
+      "note": "V en m/s da m/s; × 196,85 para ft/min."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Un avión de W = 10 791 N tiene T = 1800 N y D = 1000 N en ascenso estabilizado a 40 m/s. ¿Gradiente y régimen?",
+      "a": "sen γ = 800 / 10 791 = 0,0741: γ ≈ 4,25° y gradiente ≈ 7,4 %. Régimen = 40 × 0,0741 = 2,96 m/s ≈ 583 ft/min."
+     }
+    ],
+    "bullets": [
+     "La **masa** mayor reduce gradiente y régimen. La **altitud** (menos potencia disponible) también. Los **flaps** aumentan la resistencia y reducen el ascenso.",
+     "El **viento de cara** no cambia el régimen (vertical), pero sí el **gradiente respecto al suelo** (más ángulo con el suelo): ayuda a pasar un obstáculo. El de cola, al contrario."
+    ]
+   },
+   {
+    "title": "Descenso y planeo",
+    "text": [
+     "Con el motor al ralentí o parado, el peso reparte su efecto: W cos γ = L y **W sen γ = D**. Dividiendo, el ángulo de planeo solo depende de la relación L/D, no del peso:",
+     "Un avión con L/D = 10 desciende 1 ft por cada 10 ft horizontales; desde 3000 ft recorre 30 000 ft (4,9 NM) en aire en calma. El **máximo alcance de planeo** se consigue a la velocidad de mejor L/D (VMD)."
+    ],
+    "formulas": [
+     {
+      "f": "tan γ = D / L = 1 / (L/D)",
+      "note": "Ángulo de planeo."
+     },
+     {
+      "f": "Distancia de planeo ≈ altura × L/D",
+      "note": "Aire en calma y velocidad de mejor planeo."
+     }
+    ],
+    "figure": "svg:080-planeo",
+    "caption": "Equilibrio en el planeo: el peso se reparte entre L y D.",
+    "examples": [
+     {
+      "q": "L/D = 12. ¿Qué distancia recorre en planeo desde 6000 ft en aire en calma?",
+      "a": "6000 × 12 = 72 000 ft ≈ 11,9 NM (1 NM = 6076 ft)."
+     },
+     {
+      "q": "L/D = 8. ¿Ángulo de planeo?",
+      "a": "tan γ = 1/8 = 0,125 → γ ≈ 7,1°."
+     }
+    ],
+    "bullets": [
+     "**Masa:** no cambia γ ni la distancia máxima, pero la velocidad de mejor planeo ∝ √masa y el régimen de descenso aumenta.",
+     "**Viento de cara:** reduce la distancia respecto al suelo; **de cola:** la aumenta.",
+     "**Flaps y hélice parada o en molinete:** aumentan la resistencia y empinan el planeo.",
+     "El avión planea siempre al ángulo de ataque de mejor L/D: si quieres llegar más lejos o más cerca, ajusta la velocidad solo con pequeñas correcciones."
+    ]
+   },
+   {
+    "title": "Fuerzas en el viraje",
+    "text": [
+     "En un viraje la sustentación se inclina un ángulo φ (la inclinación). Su componente vertical tiene que seguir igualando al peso para mantener la altitud: **L cos φ = W**. Su componente horizontal, **L sen φ**, es la fuerza centrípeta que curva la trayectoria. Del primer balance sale el **factor de carga**; del segundo, el **radio** y el **régimen**:"
+    ],
+    "formulas": [
+     {
+      "f": "n = L / W = 1 / cos φ",
+      "note": "30° → 1,15; 45° → 1,41; 60° → 2; 70° → 2,92."
+     },
+     {
+      "f": "r = V² / (g · tan φ)",
+      "note": "V en m/s. El radio crece con V² y decrece con la inclinación."
+     },
+     {
+      "f": "Régimen ω = V / r = g · tan φ / V",
+      "note": "En rad/s. Régimen 1 = 3°/s = 2 min por vuelta."
+     },
+     {
+      "f": "Inclinación del régimen 1 ≈ TAS/10 + 7",
+      "note": "Regla práctica; a 100 kt da 17° (el valor exacto es 15,4°)."
+     }
+    ],
+    "figure": "svg:080-viraje",
+    "caption": "Fuerzas en un viraje nivelado visto desde delante.",
+    "examples": [
+     {
+      "q": "Viraje de 45° a 90 kt (46,3 m/s). ¿Radio?",
+      "a": "r = 46,3² / (9,81 × tan 45°) = 2144 / 9,81 ≈ 218 m."
+     },
+     {
+      "q": "Con la misma inclinación, el avión pasa de 90 a 180 kt. ¿Qué pasa con el radio?",
+      "a": "r ∝ V²: se multiplica por 4 (≈ 874 m)."
+     },
+     {
+      "q": "Inclinación del régimen 1 a 120 kt de TAS (regla práctica).",
+      "a": "120/10 + 7 = 19°. Una vuelta completa (360°) a régimen 1 dura 2 minutos; medio círculo (180°), 1 minuto."
+     },
+     {
+      "q": "¿Cuánto vale la sustentación en un viraje nivelado de 60° para un avión de 1000 kg?",
+      "a": "n = 2: L = 2 × 1000 kg = 2000 kg (≈ 19 620 N). La Vs sube un 41 %."
+     }
+    ]
+   },
+   {
+    "title": "Calculadora de viraje",
+    "text": [
+     "Prueba distintas inclinaciones y velocidades: observa cómo n, el aumento de Vs, el radio y el régimen cambian. Fíjate en que, a la misma inclinación, doblar la velocidad cuadruplica el radio y que, para mantener el régimen 1, a más velocidad se necesita más inclinación."
+    ],
+    "figure": "calc:turn",
+    "caption": "Viraje: inclinación y TAS → n, Vs, radio y régimen."
+   },
+   {
+    "title": "Pérdida de altura, derrape y deslizamiento",
+    "text": [
+     "En un viraje, para mantener la altitud hay que aumentar el ángulo de ataque (más CL), con lo que sube la resistencia y la velocidad cae: necesitas más potencia. Con un viraje coordinado, la **bola** del coordinador queda centrada. Si la bola va hacia el **interior** del viraje, el avión se **desliza** (slip): sobra inclinación o falta timón. Si va hacia el **exterior**, **derrapa** (skid): sobra timón. En un viraje con mucha inclinación, el ala exterior va más rápida y sustenta más y el avión tiende a **aumentar** la inclinación por sí solo: hay que corregir con alerón contrario."
+    ]
+   }
+  ],
+  "numbers": [
+   "Equilibrio: L = W y T = D en vuelo nivelado",
+   "Ascenso: T = D + W sen γ; Vx < Vy",
+   "tan γ = D/L; distancia de planeo = altura × L/D",
+   "n = 1/cos φ; r = V²/(g tan φ)",
+   "Régimen 1: 3°/s; vuelta en 2 min; inclinación ≈ TAS/10 + 7"
+  ],
+  "traps": [
+   "La masa no cambia el ángulo de planeo (cambia la velocidad).",
+   "Doblar la velocidad en un viraje con la misma inclinación cuadruplica el radio.",
+   "En un ascenso, L ≈ W cos γ, no W.",
+   "El viento de cara no cambia el régimen de ascenso, pero sí el ángulo respecto al suelo.",
+   "La regla TAS/10 + 7 es aproximada; el valor exacto es algo menor."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "FAA, Airplane Flying Handbook (FAA-H-8083-3C)",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "080.15",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "080.15.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "En vuelo recto y nivelado a velocidad constante se cumple:",
+   "options": [
+    "L > W y T = D",
+    "L = W y T = D",
+    "L = W y T > D",
+    "L < W y T < D"
+   ],
+   "correct": 1,
+   "why": "La primera ley de Newton exige resultante nula en vuelo uniforme.",
+   "whyNot": [
+    "Con L > W el avión subiría.",
+    null,
+    "Con T > D acelerarían.",
+    "Con ambas menores el avión perdería altura y velocidad."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.15.002",
+   "type": "calculo",
+   "level": 2,
+   "q": "Con W = 10 791 N, T = 1800 N y D = 1000 N en ascenso estabilizado, el gradiente de ascenso es aproximadamente:",
+   "options": [
+    "10 %",
+    "18 %",
+    "74 %",
+    "7,4 %"
+   ],
+   "correct": 3,
+   "why": "sen γ = (T − D)/W = 800/10 791 = 0,074, es decir, 7,4 %.",
+   "whyNot": [
+    "Resulta de dividir por 8000 en lugar de por el peso.",
+    "Resulta de dividir T entre W (1800/10 791 ≈ 16,7 %), sin restar D.",
+    "Resulta de expresar 0,74 sin el factor 10.",
+    null
+   ],
+   "ref": "sen γ = (T − D)/W"
+  },
+  {
+   "id": "080.15.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "La velocidad de mejor ángulo de ascenso (Vx) es, respecto a la de mejor régimen (Vy):",
+   "options": [
+    "Menor",
+    "Mayor",
+    "Igual",
+    "Mayor solo por encima del techo"
+   ],
+   "correct": 0,
+   "why": "Vx corresponde al máximo exceso de empuje, que se da a menor velocidad que el máximo exceso de potencia.",
+   "whyNot": [
+    null,
+    "Es Vy la mayor.",
+    "Solo coinciden en el techo.",
+    "Por encima del techo no se asciende."
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.15.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "Para salvar un obstáculo cercano tras el despegue se vuela a:",
+   "options": [
+    "Vy, el mejor régimen",
+    "La VNE",
+    "Vx, el mejor ángulo de ascenso",
+    "La de máxima autonomía"
+   ],
+   "correct": 2,
+   "why": "Vx da la mayor altura ganada por distancia recorrida.",
+   "whyNot": [
+    "Vy da más altura por minuto, no por distancia.",
+    "Esa velocidad es un límite estructural.",
+    null,
+    "La autonomía se refiere al combustible."
+   ],
+   "ref": "AFH cap. 5"
+  },
+  {
+   "id": "080.15.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un viento de cara durante el ascenso:",
+   "options": [
+    "Aumenta el régimen de ascenso",
+    "Reduce el régimen y el gradiente",
+    "Mejora el gradiente respecto al suelo sin cambiar el régimen de ascenso",
+    "No cambia ninguno de los dos"
+   ],
+   "correct": 2,
+   "why": "El aire mueve el avión hacia atrás respecto al suelo: mismo ascenso vertical por menos distancia.",
+   "whyNot": [
+    "El régimen es vertical y no depende del viento horizontal.",
+    "El gradiente respecto al suelo aumenta.",
+    null,
+    "El gradiente respecto al suelo sí cambia."
+   ],
+   "ref": "AFH cap. 5"
+  },
+  {
+   "id": "080.15.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un planeo estabilizado sin motor, el ángulo de planeo depende de:",
+   "options": [
+    "La relación L/D",
+    "El peso del avión",
+    "La altitud",
+    "La velocidad del viento únicamente"
+   ],
+   "correct": 0,
+   "why": "tan γ = D/L: solo depende de la finura.",
+   "whyNot": [
+    null,
+    "El peso cambia la velocidad, no el ángulo.",
+    "La altitud no modifica la finura.",
+    "El viento cambia la trayectoria respecto al suelo, no el ángulo de planeo en el aire."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.15.007",
+   "type": "calculo",
+   "level": 2,
+   "q": "Un avión con L/D = 12 empieza el planeo desde 6000 ft en aire en calma. Alcanzará una distancia aproximada de:",
+   "options": [
+    "6 NM",
+    "72 NM",
+    "1 NM",
+    "12 NM"
+   ],
+   "correct": 3,
+   "why": "6000 ft × 12 = 72 000 ft ≈ 11,9 NM.",
+   "whyNot": [
+    "Resulta de dividir 72 000 por 12 000.",
+    "Resulta de dividir entre 1000 en lugar de 6076.",
+    "Resulta de confundir ft con NM.",
+    null
+   ],
+   "ref": "Distancia = altura × L/D"
+  },
+  {
+   "id": "080.15.008",
+   "type": "calculo",
+   "level": 2,
+   "q": "Con L/D = 8, el ángulo de planeo es aproximadamente:",
+   "options": [
+    "12,5°",
+    "7,1°",
+    "8°",
+    "0,13°"
+   ],
+   "correct": 1,
+   "why": "γ = arctan(1/8) = 7,1°.",
+   "whyNot": [
+    "Resulta de usar 100/8 como grados.",
+    null,
+    "No es igual a L/D en grados.",
+    "Es el valor de la tangente en radianes mal usado."
+   ],
+   "ref": "tan γ = D/L"
+  },
+  {
+   "id": "080.15.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Al aumentar la masa del avión, en planeo sin viento:",
+   "options": [
+    "La distancia máxima de planeo no cambia y la velocidad de mejor planeo aumenta",
+    "La distancia máxima aumenta",
+    "La distancia máxima disminuye",
+    "El ángulo de planeo disminuye"
+   ],
+   "correct": 0,
+   "why": "La L/D máxima es la misma, pero se alcanza a mayor velocidad.",
+   "whyNot": [
+    null,
+    "Más peso no aumenta la distancia.",
+    "No disminuye por la masa.",
+    "El ángulo depende de L/D."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.15.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "Con viento de cola en el planeo:",
+   "options": [
+    "La distancia sobre el suelo disminuye",
+    "El ángulo de planeo en el aire aumenta",
+    "La distancia sobre el suelo aumenta",
+    "La velocidad de pérdida disminuye"
+   ],
+   "correct": 2,
+   "why": "El aire arrastra el avión hacia delante: más distancia respecto al suelo.",
+   "whyNot": [
+    "Es con viento de cara.",
+    "El ángulo en el aire no cambia.",
+    null,
+    "La pérdida depende del ángulo de ataque, no del viento."
+   ],
+   "ref": "AFH cap. 8"
+  },
+  {
+   "id": "080.15.011",
+   "type": "calculo",
+   "level": 1,
+   "q": "El factor de carga en un viraje nivelado de 60° es:",
+   "options": [
+    "1,41",
+    "2",
+    "1,15",
+    "3"
+   ],
+   "correct": 1,
+   "why": "n = 1/cos 60° = 1/0,5 = 2.",
+   "whyNot": [
+    "Es el valor a 45°.",
+    null,
+    "Es el valor a 30°.",
+    "Haría falta unos 70,5° de inclinación."
+   ],
+   "ref": "n = 1/cos φ"
+  },
+  {
+   "id": "080.15.012",
+   "type": "calculo",
+   "level": 2,
+   "q": "Si, con la misma inclinación, la velocidad de un viraje pasa de 90 a 180 kt, el radio:",
+   "options": [
+    "Se duplica",
+    "Se divide por 2",
+    "No cambia",
+    "Se multiplica por 4"
+   ],
+   "correct": 3,
+   "why": "r = V²/(g tan φ): al duplicar V, el radio se cuadruplica.",
+   "whyNot": [
+    "Sería con una relación lineal.",
+    "Disminuiría solo si bajara la velocidad.",
+    "Cambia: el radio es proporcional a V².",
+    null
+   ],
+   "ref": "r = V²/(g·tan φ)"
+  },
+  {
+   "id": "080.15.013",
+   "type": "calculo",
+   "level": 2,
+   "q": "A 90 kt (46,3 m/s) y 45° de inclinación, el radio de viraje es aproximadamente:",
+   "options": [
+    "440 m",
+    "109 m",
+    "2100 m",
+    "218 m"
+   ],
+   "correct": 3,
+   "why": "r = 46,3² / (9,81 · tan 45°) = 2144/9,81 ≈ 218 m.",
+   "whyNot": [
+    "Resulta de usar V² / (g/2).",
+    "Resulta de dividir 218 entre 2.",
+    "Resulta de no dividir por g.",
+    null
+   ],
+   "ref": "r = V²/(g·tan φ)"
+  },
+  {
+   "id": "080.15.014",
+   "type": "regla",
+   "level": 1,
+   "q": "El régimen 1 de viraje supone:",
+   "options": [
+    "6° por segundo y 1 minuto por vuelta",
+    "3° por segundo y 2 minutos por vuelta completa",
+    "3° por segundo y 1 minuto por vuelta",
+    "1° por segundo y 6 minutos por vuelta"
+   ],
+   "correct": 1,
+   "why": "360° / 3°/s = 120 s = 2 min.",
+   "whyNot": [
+    "Eso es un régimen 2.",
+    null,
+    "3°/s son 120 s por vuelta, no 60.",
+    "Es un régimen muy lento, no el régimen 1."
+   ],
+   "ref": "PHAK cap. 15"
+  },
+  {
+   "id": "080.15.015",
+   "type": "calculo",
+   "level": 2,
+   "q": "Con la regla práctica TAS/10 + 7, la inclinación para un viraje de régimen 1 a 120 kt de TAS es:",
+   "options": [
+    "12°",
+    "27°",
+    "19°",
+    "7°"
+   ],
+   "correct": 2,
+   "why": "La regla práctica da TAS/10 + 7 = 120/10 + 7 = 19°.",
+   "whyNot": [
+    "La inclinación necesaria aumenta con la velocidad para mantener el régimen.",
+    "Resulta de multiplicar por 10 + 7 al revés.",
+    null,
+    "Resulta de no dividir TAS entre 10."
+   ],
+   "ref": "Regla práctica"
+  },
+  {
+   "id": "080.15.016",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un viraje coordinado de régimen 1, un aumento de la velocidad exige:",
+   "options": [
+    "Mayor inclinación para mantener los 3°/s",
+    "Menor inclinación",
+    "La misma inclinación",
+    "Más timón sin cambiar la inclinación"
+   ],
+   "correct": 0,
+   "why": "ω = g·tan φ / V: para el mismo ω, a más V hay que aumentar tan φ.",
+   "whyNot": [
+    null,
+    "Menos inclinación reduciría el régimen.",
+    "Con la misma inclinación el régimen baja.",
+    "Solo el alabeo cambia el régimen."
+   ],
+   "ref": "PHAK cap. 15"
+  },
+  {
+   "id": "080.15.017",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un viraje nivelado, la componente vertical de la sustentación:",
+   "options": [
+    "Es mayor que el peso",
+    "Es igual al peso",
+    "Es menor que el peso",
+    "Es nula"
+   ],
+   "correct": 1,
+   "why": "L cos φ = W; la componente horizontal L sen φ es la fuerza centrípeta.",
+   "whyNot": [
+    "Si fuera mayor, el avión subiría.",
+    null,
+    "Si fuera menor, descendería.",
+    "La vertical no es nula."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.15.018",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un viraje, la bola del coordinador está hacia el interior del viraje: el avión se encuentra:",
+   "options": [
+    "Derrapando (skid)",
+    "En vuelo coordinado",
+    "En pérdida",
+    "Deslizando (slip), con exceso de inclinación para el régimen"
+   ],
+   "correct": 3,
+   "why": "La bola se desplaza hacia el lado en que se inclina el avión: sobra inclinación o falta timón.",
+   "whyNot": [
+    "En el derrape, la bola va hacia fuera.",
+    "Coordinado es con la bola centrada.",
+    "No es un síntoma de pérdida.",
+    null
+   ],
+   "ref": "PHAK cap. 8"
+  },
+  {
+   "id": "080.15.019",
+   "type": "concepto",
+   "level": 3,
+   "q": "En un viraje de gran inclinación, la tendencia del avión a aumentar la inclinación (overbanking) se debe a que:",
+   "options": [
+    "El ala exterior va más rápida y produce más sustentación",
+    "El ala interior va más rápida",
+    "El timón se bloquea",
+    "La hélice aumenta de rpm"
+   ],
+   "correct": 0,
+   "why": "El ala exterior recorre un arco mayor, con más velocidad y más sustentación.",
+   "whyNot": [
+    null,
+    "Es el ala exterior la más rápida.",
+    "No es un fallo de timón.",
+    "La hélice no es la causa."
+   ],
+   "ref": "AFH cap. 5"
+  },
+  {
+   "id": "080.15.020",
+   "type": "lectura",
+   "level": 2,
+   "q": "En la figura del viraje, la componente horizontal de la sustentación:",
+   "figure": "svg:080-viraje",
+   "options": [
+    "Equilibra el peso",
+    "Es nula en vuelo nivelado",
+    "Es la fuerza centrípeta que curva la trayectoria",
+    "Aumenta la velocidad"
+   ],
+   "correct": 2,
+   "why": "L sen φ = m V²/r, hacia el centro del viraje.",
+   "whyNot": [
+    "Esa es la componente vertical.",
+    "No es nula si hay inclinación.",
+    null,
+    "No afecta al módulo de la velocidad."
+   ],
+   "ref": "PHAK cap. 5"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.080.15.01",
+   "front": "Planeo: ángulo y distancia",
+   "back": "tan γ = 1/(L/D); distancia = altura × L/D; la masa no cambia el ángulo"
+  },
+  {
+   "id": "c.080.15.02",
+   "front": "Factor de carga en viraje",
+   "back": "n = 1/cos φ: 1,15 a 30°, 1,41 a 45°, 2 a 60°"
+  },
+  {
+   "id": "c.080.15.03",
+   "front": "Radio de viraje",
+   "back": "r = V²/(g·tan φ): doble velocidad, radio ×4"
+  },
+  {
+   "id": "c.080.15.04",
+   "front": "Régimen 1",
+   "back": "3°/s, 2 min por vuelta; inclinación ≈ TAS/10 + 7"
+  },
+  {
+   "id": "c.080.15.05",
+   "front": "Vx y Vy",
+   "back": "Vx: mejor ángulo (exceso de empuje), menor. Vy: mejor régimen (exceso de potencia), mayor"
+  }
+ ]
+}

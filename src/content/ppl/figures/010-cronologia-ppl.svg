@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 270">
+  <title>Cronología del PPL(A): médico, curso teórico, recomendación, exámenes en 18 meses, vuelo, prueba de pericia dentro de 24 meses y emisión</title>
+  <defs>
+    <marker id="010-cronologia-flecha" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+  </defs>
+  <rect x="8" y="8" width="624" height="254" rx="8" class="sky"/>
+  <rect x="20" y="30" width="130" height="56" rx="6" class="soft"/>
+  <text x="85" y="54" class="tx b" text-anchor="middle" font-size="13">1. Escuela y médico</text>
+  <text x="85" y="72" class="tx2" text-anchor="middle" font-size="12">Clase 2 antes del solo</text>
+  <rect x="170" y="30" width="130" height="56" rx="6" class="soft"/>
+  <text x="235" y="54" class="tx b" text-anchor="middle" font-size="13">2. Curso teórico</text>
+  <text x="235" y="72" class="tx2" text-anchor="middle" font-size="12">ATO o DTO</text>
+  <rect x="320" y="30" width="130" height="56" rx="6" class="soft"/>
+  <text x="385" y="54" class="tx b" text-anchor="middle" font-size="13">3. Recomendación</text>
+  <text x="385" y="72" class="tx2" text-anchor="middle" font-size="12">Válida 12 meses</text>
+  <rect x="470" y="30" width="150" height="56" rx="6" class="ac"/>
+  <text x="545" y="54" class="txa b" text-anchor="middle" font-size="13">4. Exámenes AESA</text>
+  <text x="545" y="72" class="tx2" text-anchor="middle" font-size="12">18 meses · 4 intentos</text>
+  <line x1="150" y1="58" x2="168" y2="58" class="ln" marker-end="url(#010-cronologia-flecha)"/>
+  <line x1="300" y1="58" x2="318" y2="58" class="ln" marker-end="url(#010-cronologia-flecha)"/>
+  <line x1="450" y1="58" x2="468" y2="58" class="ln" marker-end="url(#010-cronologia-flecha)"/>
+  <path d="M545 88 L545 120 L85 120 L85 138" class="ln" fill="none" marker-end="url(#010-cronologia-flecha)"/>
+  <rect x="20" y="140" width="190" height="62" rx="6" class="soft"/>
+  <text x="115" y="164" class="tx b" text-anchor="middle" font-size="13">5. Instrucción en vuelo</text>
+  <text x="115" y="182" class="tx2" text-anchor="middle" font-size="12">45 h, 10 h de solo supervisado</text>
+  <rect x="240" y="140" width="190" height="62" rx="6" class="ok"/>
+  <text x="335" y="164" class="txo b" text-anchor="middle" font-size="13">6. Prueba de pericia</text>
+  <text x="335" y="182" class="tx2" text-anchor="middle" font-size="12">En 24 meses desde el teórico</text>
+  <rect x="460" y="140" width="160" height="62" rx="6" class="ok"/>
+  <text x="540" y="164" class="txo b" text-anchor="middle" font-size="13">7. Licencia PPL(A)</text>
+  <text x="540" y="182" class="tx2" text-anchor="middle" font-size="12">Con habilitación SEP</text>
+  <line x1="210" y1="171" x2="238" y2="171" class="ln" marker-end="url(#010-cronologia-flecha)"/>
+  <line x1="430" y1="171" x2="458" y2="171" class="ln" marker-end="url(#010-cronologia-flecha)"/>
+  <text x="320" y="232" class="tx2" text-anchor="middle" font-size="12">Suspender: se repite la materia (máximo 4 intentos). Agotadas las tentativas o el plazo,</text>
+  <text x="320" y="250" class="tx2" text-anchor="middle" font-size="12">formación adicional y se vuelven a examinar todas las materias.</text>
+</svg>

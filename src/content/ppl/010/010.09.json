@@ -1,0 +1,925 @@
+{
+  "lesson": {
+    "id": "010.09",
+    "title": "Espacio aéreo y servicios de tránsito aéreo",
+    "summary": "Servicios ATS (control, información de vuelo, AFIS y alerta), clases A a G, zonas CTR, CTA, TMA, ATZ, RMZ, TMZ y FIZ, regiones de información de vuelo de España, fases de alerta con sus tiempos, separación visual, circuito y servicio radar.",
+    "objectives": [
+      "Distinguir los servicios de tránsito aéreo y qué presta cada dependencia",
+      "Aplicar la clasificación A a G a un vuelo VFR: autorización, radio, separación y servicio",
+      "Reconocer CTR, CTA, TMA, ATZ, RMZ, TMZ, FIZ y las FIR de España",
+      "Aplicar las fases INCERFA, ALERFA y DETRESFA con sus tiempos",
+      "Usar la separación visual, las posiciones críticas del circuito y el servicio radar"
+    ],
+    "sections": [
+      {
+        "title": "Los servicios de tránsito aéreo (ATS)",
+        "text": [
+          "Los **servicios de tránsito aéreo (ATS)** son el conjunto de servicios que prestan las dependencias en tierra para que el tráfico sea seguro y ordenado. Son tres, y se distinguen por lo que te garantizan.",
+          "El **servicio de control de tránsito aéreo (ATC)** evita colisiones entre aeronaves y con obstáculos, y acelera y ordena el tráfico. Se divide en control de **aeródromo** (torre: tráfico en el aeródromo y en su circuito), de **aproximación** (aeronaves que llegan o salen) y de **área** (ruta). Te da autorizaciones e instrucciones que debes cumplir.",
+          "El **servicio de información de vuelo (FIS)** da la información útil para realizar el vuelo de forma segura y eficaz: meteorología, estado de aeródromos, NOTAM, tráfico conocido. **No da separación ni autorizaciones.** En un aeródromo sin ATC, el equivalente es el **servicio AFIS** (servicio de información de vuelo de aeródromo): informa del tráfico, de la pista y del tiempo, pero **no autoriza ni da instrucciones**; el piloto decide.",
+          "El **servicio de alerta** avisa a los organismos de búsqueda y salvamento cuando una aeronave necesita ayuda y los asiste. Se presta a todo vuelo que tenga plan, que reciba servicio ATC o que sea conocido por los ATS."
+        ]
+      },
+      {
+        "title": "Clases de espacio aéreo (SERA.6001)",
+        "text": [
+          "El espacio aéreo se clasifica en siete clases, de la **A** (la más restrictiva) a la **G** (la menos). Cada clase fija qué vuelos admite (IFR, VFR), qué separación recibe cada uno, qué servicio y si exige radio y autorización ATC. Lo que debes poder decir de memoria es qué ocurre con un VFR.",
+          "La regla de oro: en las clases **B, C y D** el VFR necesita **autorización ATC y radio bilateral**; en **E, F y G** no necesita autorización ni radio, salvo que exista una zona RMZ o TMZ."
+        ],
+        "table": {
+          "caption": "Servicios que recibe el VFR en cada clase",
+          "head": [
+            "Clase",
+            "VFR",
+            "Separación para el VFR",
+            "Servicio al VFR",
+            "Radio y autorización"
+          ],
+          "rows": [
+            [
+              "A",
+              "No admitido",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "B",
+              "Sí",
+              "De todo el tráfico",
+              "ATC",
+              "Radio bilateral continua y autorización"
+            ],
+            [
+              "C",
+              "Sí",
+              "Del IFR; del VFR solo recibe información de tráfico",
+              "ATC",
+              "Radio bilateral continua y autorización"
+            ],
+            [
+              "D",
+              "Sí",
+              "No se separa de ningún tráfico",
+              "ATC: información de tráfico",
+              "Radio bilateral continua y autorización"
+            ],
+            [
+              "E",
+              "Sí",
+              "No",
+              "Información de tráfico en la medida de lo posible",
+              "No se exige radio ni autorización (salvo RMZ y TMZ)"
+            ],
+            [
+              "F",
+              "Sí",
+              "No",
+              "FIS (asesoramiento al IFR)",
+              "No se exige"
+            ],
+            [
+              "G",
+              "Sí",
+              "No",
+              "FIS si lo solicitas",
+              "No se exige"
+            ]
+          ],
+          "src": "SERA.6001, tabla S6-1"
+        },
+        "bullets": [
+          "En **D** hace falta autorización pero **no hay separación** respecto a ningún tráfico: solo información. Es la trampa más repetida.",
+          "En **E** el VFR no necesita autorización. En clases C a G, por debajo de FL100, el límite es **250 kt IAS**.",
+          "En España, los espacios inferiores se clasifican como C, D, E y G (AIP ENR 1.4)."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Qué es cada zona: CTR, CTA, TMA, ATZ, RMZ, TMZ y FIZ",
+        "table": {
+          "caption": "Tipos de espacio aéreo que debes reconocer",
+          "head": [
+            "Zona",
+            "Qué es"
+          ],
+          "rows": [
+            [
+              "CTR",
+              "Zona de control: espacio controlado que se extiende desde la superficie hasta un límite superior especificado. Protege las llegadas y salidas de un aeródromo"
+            ],
+            [
+              "CTA",
+              "Área de control: espacio controlado que se extiende hacia arriba desde un límite especificado sobre el terreno"
+            ],
+            [
+              "TMA",
+              "Área de control terminal: CTA situada en la confluencia de rutas ATS cerca de uno o varios aeródromos importantes"
+            ],
+            [
+              "Aerovía",
+              "Área de control o parte de ella en forma de pasillo"
+            ],
+            [
+              "ATZ",
+              "Zona de tránsito de aeródromo: espacio de dimensiones definidas alrededor de un aeródromo para protección del tránsito de aeródromo"
+            ],
+            [
+              "RMZ",
+              "Zona de uso obligatorio de radio: hay que mantener escucha y comunicación bilateral"
+            ],
+            [
+              "TMZ",
+              "Zona de uso obligatorio de transpondedor"
+            ],
+            [
+              "FIZ",
+              "Zona de información de vuelo: espacio no controlado alrededor de un aeródromo con servicio AFIS"
+            ],
+            [
+              "FIR",
+              "Región de información de vuelo: espacio con servicio de información de vuelo y servicio de alerta. España tiene tres: Madrid, Barcelona y Canarias"
+            ]
+          ],
+          "src": "SERA, art. 2; Anexo 11; AIP ENR 2.1"
+        },
+        "figure": "svg:010-corte-espacios",
+        "caption": "Corte vertical de un aeródromo ficticio (Villanueva): ATZ dentro de la CTR, TMA encima, clase G alrededor y límite VFR de FL195. No refleja ningún aeródromo real",
+        "note": {
+          "kind": "es",
+          "text": "En España las FIR son Madrid, Barcelona y Canarias, con el espacio superior (UIR) por encima de FL195. Los límites y clases de cada CTR, TMA y ATZ están en el AIP ENR 2.1 y en el AD de cada aeródromo."
+        }
+      },
+      {
+        "title": "AFIS y FIZ en la práctica",
+        "text": [
+          "Muchos aeródromos pequeños no tienen torre de control pero sí un servicio **AFIS**. La operación se nota en la fraseología: el AFIS **informa**, no autoriza. Te dará la pista en uso, el QNH, el tráfico conocido y el viento, y te pedirá que informes en puntos concretos. Las decisiones (entrar al circuito, aterrizar, esperar) son **tuyas**, y en la radio dirás «solicito información» y «pista libre» sin esperar una autorización. La zona donde se presta se llama **FIZ**.",
+          "Tampoco son autorizaciones las frases de los operadores AFIS como «ninguno conocido» o «a su discreción». Si dudas, pide información, no autorización."
+        ]
+      },
+      {
+        "title": "Servicio de alerta: INCERFA, ALERFA y DETRESFA",
+        "text": [
+          "Cuando se considera que una aeronave puede necesitar ayuda, el servicio de alerta pasa por tres fases de gravedad creciente. Cada una se declara con tiempos concretos."
+        ],
+        "table": {
+          "caption": "Fases de emergencia (Anexo 11, cap. 5)",
+          "head": [
+            "Fase",
+            "Significado",
+            "Cuándo se declara"
+          ],
+          "rows": [
+            [
+              "INCERFA",
+              "Incertidumbre",
+              "No se recibe comunicación en los 30 minutos siguientes a la hora en que debía recibirse, o la aeronave no llega en los 30 minutos siguientes a la ETA comunicada o estimada por los ATS (la más tardía)"
+            ],
+            [
+              "ALERFA",
+              "Alerta",
+              "Tras INCERFA, los nuevos intentos de comunicación o las consultas fracasan; o la aeronave autorizada a aterrizar no lo hace en 5 minutos tras la hora prevista y no hay comunicación; o se sabe o se cree que sufre interferencia ilícita"
+            ],
+            [
+              "DETRESFA",
+              "Peligro",
+              "Tras ALERFA, siguen sin noticias o se sabe que el combustible está agotado; o hay información de que el aparato no está en condiciones de continuar y es probable un aterrizaje forzoso, o que este se ha producido"
+            ]
+          ],
+          "src": "Anexo 11; Doc 4444"
+        },
+        "note": {
+          "kind": "warn",
+          "text": "Los 30 minutos son de INCERFA. Si no llegas y el plan sigue abierto, el servicio de alerta no espera: por eso cerrar el plan al aterrizar es esencial."
+        }
+      },
+      {
+        "title": "Separación visual, circuito y posiciones críticas",
+        "text": [
+          "En VFR la separación entre aeronaves es **visual**: tú ves y evitas. En el circuito de aeródromo esto se concreta en normas. El circuito estándar es de **mano izquierda** (virajes a la izquierda), salvo que se indique otra cosa, y se sigue el tráfico anterior. Las **posiciones críticas** donde debes informar al ATC o al AFIS suelen ser: entrada o viento en cola, **base**, **final** y **pista libre**, además del punto de notificación de entrada al circuito.",
+          "No te incorpores al circuito sin ver el tráfico, no cruces la final de otro y deja espacio con el que va delante. Si ATC te da instrucciones de espaciamiento, las cumples; si es solo información de tráfico, la responsabilidad de la separación sigue siendo tuya."
+        ]
+      },
+      {
+        "title": "Servicio radar",
+        "text": [
+          "El **servicio de vigilancia ATS** (radar) permite a ATC identificarte, darte información de posición, vectores (rumbos para guiarte) y tráfico. Para que te identifique necesita tu transpondedor: **A7000** en VFR salvo instrucción distinta, o el código que te asigne. Un vector radar no te exime de responsabilidad: sigues vigilando el exterior en VMC.",
+          "ATC puede pedirte **IDENT** o un cambio de código para identificarte. El IDENT activa un destello en la pantalla; no lo pulses sin que te lo pidan."
+        ]
+      }
+    ],
+    "numbers": [
+      "Clases B, C y D: VFR con autorización y radio bilateral; E, F y G: sin autorización ni radio (salvo RMZ y TMZ)",
+      "Clase D: sin separación para el VFR, solo información de tráfico",
+      "Por debajo de FL100, en clases C a G, el límite es 250 kt IAS",
+      "INCERFA: 30 minutos sin comunicación o sin llegar",
+      "ALERFA: tras INCERFA sin noticias; aterrizaje no efectuado a los 5 minutos de la hora prevista",
+      "DETRESFA: combustible agotado o probable aterrizaje forzoso",
+      "FIR de España: Madrid, Barcelona y Canarias",
+      "Circuito estándar: mano izquierda"
+    ],
+    "traps": [
+      "En clase D hace falta autorización pero no hay separación respecto al VFR; en clase E el VFR no necesita autorización.",
+      "El AFIS informa; no autoriza ni da instrucciones, aunque el aeródromo tenga un operador.",
+      "El servicio FIS no incluye separación: es solo información.",
+      "INCERFA es incertidumbre (30 minutos); ALERFA, alerta; DETRESFA, peligro: no las confundas con las fases de socorro de la radio."
+    ],
+    "spain": [
+      "FIR de Madrid, Barcelona y Canarias.",
+      "Las CTR, TMA y ATZ de cada aeródromo y su clase están en el AIP España, ENR 2.1 y AD 2.",
+      "AFIS: servicio de información de vuelo de aeródromo, sin autorizaciones."
+    ],
+    "sources": [
+      {
+        "title": "SERA (Reglamento (UE) 923/2012), Easy Access Rules, EASA",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "AIP España ENR 2.1 y AD (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología y simulador de radio",
+        "href": "#/licencias/fraseologia?tab=radio"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "010.09.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Cuáles son los tres servicios de tránsito aéreo (ATS)?",
+      "options": [
+        "Control, meteorología y salvamento",
+        "Información, aeródromo y radar",
+        "Control de tránsito aéreo, información de vuelo y alerta",
+        "Control, tasas y despacho"
+      ],
+      "correct": 2,
+      "why": "Los ATS comprenden el servicio de control, el de información de vuelo y el de alerta.",
+      "whyNot": [
+        "La meteorología y el salvamento no son ATS como tales.",
+        "El servicio de aeródromo forma parte del control; el radar es un medio.",
+        null,
+        "Tasas y despacho no son ATS."
+      ],
+      "ref": "Anexo 11"
+    },
+    {
+      "id": "010.09.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué distingue al servicio de información de vuelo (FIS)?",
+      "options": [
+        "Da información útil, pero no separación ni autorizaciones",
+        "Garantiza la separación entre tráficos VFR",
+        "Autoriza los despegues y aterrizajes",
+        "Es un servicio de control de área"
+      ],
+      "correct": 0,
+      "why": "El FIS facilita información para el vuelo seguro y eficaz; no ordena ni separa.",
+      "whyNot": [
+        null,
+        "La separación la da ATC, no el FIS.",
+        "Eso corresponde al control de aeródromo.",
+        "El FIS es un servicio distinto del control."
+      ],
+      "ref": "Anexo 11"
+    },
+    {
+      "id": "010.09.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un aeródromo con servicio AFIS, ¿qué te da el operador?",
+      "options": [
+        "Autorización de aterrizaje y de rodaje",
+        "Separación garantizada con el tráfico del circuito",
+        "Control de aproximación radar",
+        "Información de tráfico, pista y meteorología, sin autorizaciones ni instrucciones"
+      ],
+      "correct": 3,
+      "why": "El AFIS informa; la decisión de entrar, aterrizar o esperar es del piloto.",
+      "whyNot": [
+        "El AFIS no autoriza.",
+        "Los pilotos se separan por sí mismos.",
+        "El AFIS no presta control.",
+        null
+      ],
+      "ref": "Doc 4444; AIP ENR"
+    },
+    {
+      "id": "010.09.004",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿En qué clases de espacio aéreo necesita el VFR autorización ATC y radio bilateral?",
+      "options": [
+        "A, B y C",
+        "B, C y D",
+        "C, D y E",
+        "D, E y F"
+      ],
+      "correct": 1,
+      "why": "En B, C y D el VFR necesita autorización y comunicación bilateral; en E, F y G no.",
+      "whyNot": [
+        "En A no se admite VFR.",
+        null,
+        "En E no se necesita autorización.",
+        "En E y F no se necesita."
+      ],
+      "ref": "SERA.6001"
+    },
+    {
+      "id": "010.09.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un VFR vuela en espacio de clase D. ¿Qué servicio recibe?",
+      "options": [
+        "Información de tráfico, pero no separación",
+        "Separación del tráfico IFR y VFR",
+        "Ningún servicio ATC",
+        "Servicio de alerta únicamente"
+      ],
+      "correct": 0,
+      "why": "En D el VFR requiere autorización y radio, pero recibe solo información de tráfico.",
+      "whyNot": [
+        null,
+        "Solo en B se separa de todo; en C solo del IFR.",
+        "Sí recibe servicio ATC: información.",
+        "Recibe ATC."
+      ],
+      "ref": "SERA.6001"
+    },
+    {
+      "id": "010.09.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué clase de espacio aéreo no admite vuelos VFR?",
+      "options": [
+        "Clase B",
+        "Clase D",
+        "Clase A",
+        "Clase E"
+      ],
+      "correct": 2,
+      "why": "En clase A solo se admite IFR.",
+      "whyNot": [
+        "En B se admite el VFR con autorización.",
+        "En D se admite el VFR con autorización.",
+        null,
+        "En E se admite el VFR sin autorización."
+      ],
+      "ref": "SERA.6001"
+    },
+    {
+      "id": "010.09.007",
+      "type": "concepto",
+      "level": 1,
+      "q": "En clase E, un vuelo VFR:",
+      "options": [
+        "Necesita siempre autorización de ATC",
+        "No necesita autorización ATC (salvo en RMZ o TMZ)",
+        "No puede entrar",
+        "Necesita radio bilateral continua"
+      ],
+      "correct": 1,
+      "why": "En E el VFR no necesita autorización y no se le exige radio.",
+      "whyNot": [
+        "La necesita en B, C y D.",
+        null,
+        "Puede entrar.",
+        "No se exige radio, salvo RMZ."
+      ],
+      "ref": "SERA.6001"
+    },
+    {
+      "id": "010.09.008",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué límite de velocidad rige para el VFR por debajo de FL100 en clase D?",
+      "options": [
+        "140 kt IAS",
+        "200 kt TAS",
+        "Ninguno",
+        "250 kt IAS"
+      ],
+      "correct": 3,
+      "why": "En clases C a G, por debajo de FL100, el límite es 250 kt IAS.",
+      "whyNot": [
+        "Es el límite del VFR especial.",
+        "No es el límite.",
+        "Sí existe: 250 kt IAS.",
+        null
+      ],
+      "ref": "SERA.6001"
+    },
+    {
+      "id": "010.09.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es una CTR?",
+      "options": [
+        "Un espacio controlado que empieza a una altura sobre el terreno",
+        "Una zona de uso obligatorio de radio",
+        "Un espacio controlado desde la superficie hasta un límite superior especificado",
+        "Un pasillo de área de control"
+      ],
+      "correct": 2,
+      "why": "La CTR (zona de control) va de la superficie a un límite superior y protege las llegadas y salidas de un aeródromo.",
+      "whyNot": [
+        "Eso es una CTA.",
+        "Eso es una RMZ.",
+        null,
+        "Eso es una aerovía."
+      ],
+      "ref": "SERA, art. 2"
+    },
+    {
+      "id": "010.09.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es una TMA?",
+      "options": [
+        "Un área de control terminal situada en la confluencia de rutas cerca de aeródromos importantes",
+        "Un espacio controlado desde la superficie alrededor del aeródromo",
+        "Un espacio alrededor de un aeródromo no controlado",
+        "Una zona donde es obligatorio el transpondedor"
+      ],
+      "correct": 0,
+      "why": "La TMA es una CTA situada en la confluencia de rutas ATS en las proximidades de aeródromos.",
+      "whyNot": [
+        null,
+        "Eso es una CTR.",
+        "Eso es una ATZ o FIZ.",
+        "Eso es una TMZ."
+      ],
+      "ref": "SERA, art. 2"
+    },
+    {
+      "id": "010.09.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es una RMZ?",
+      "options": [
+        "Una zona en la que es obligatorio el transpondedor",
+        "Una zona de tránsito de aeródromo",
+        "Una zona de información de vuelo",
+        "Una zona en la que es obligatorio el uso de radio"
+      ],
+      "correct": 3,
+      "why": "La RMZ exige mantener escucha y comunicación bilateral con la dependencia indicada.",
+      "whyNot": [
+        "Eso es una TMZ.",
+        "Eso es una ATZ.",
+        "Eso es una FIZ.",
+        null
+      ],
+      "ref": "SERA, art. 2"
+    },
+    {
+      "id": "010.09.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una TMZ es una zona donde es obligatorio llevar:",
+      "options": [
+        "Radio en la frecuencia del aeródromo",
+        "Transpondedor en funcionamiento",
+        "Plan de vuelo IFR",
+        "Luces de navegación"
+      ],
+      "correct": 1,
+      "why": "La TMZ es una zona de uso obligatorio del transpondedor.",
+      "whyNot": [
+        "Eso es una RMZ.",
+        null,
+        "No es el requisito.",
+        "No es el requisito."
+      ],
+      "ref": "SERA, art. 2"
+    },
+    {
+      "id": "010.09.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es una ATZ?",
+      "options": [
+        "Un espacio alrededor de un aeródromo para proteger el tránsito de aeródromo",
+        "Una zona de uso obligatorio de radio",
+        "Una zona restringida de alta velocidad",
+        "Una región con servicio de alerta"
+      ],
+      "correct": 0,
+      "why": "La ATZ protege el tránsito de aeródromo en torno a un aeródromo.",
+      "whyNot": [
+        null,
+        "Eso es una RMZ.",
+        "No es el concepto.",
+        "Eso es la FIR."
+      ],
+      "ref": "SERA, art. 2"
+    },
+    {
+      "id": "010.09.014",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es una FIZ?",
+      "options": [
+        "Un espacio de clase A",
+        "Un sector militar de control",
+        "Un espacio no controlado alrededor de un aeródromo con servicio AFIS",
+        "Una región de información de vuelo"
+      ],
+      "correct": 2,
+      "why": "La FIZ es la zona donde el AFIS informa a los pilotos.",
+      "whyNot": [
+        "No lo es.",
+        "No lo es.",
+        null,
+        "Eso es la FIR."
+      ],
+      "ref": "Doc 4444"
+    },
+    {
+      "id": "010.09.015",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Cuántas FIR tiene España y cuáles son?",
+      "options": [
+        "Dos: Madrid y Barcelona",
+        "Tres: Madrid, Barcelona y Canarias",
+        "Cuatro: Madrid, Barcelona, Sevilla y Canarias",
+        "Una única FIR nacional"
+      ],
+      "correct": 1,
+      "why": "España gestiona las FIR de Madrid, Barcelona y Canarias.",
+      "whyNot": [
+        "Falta Canarias.",
+        null,
+        "No existe la FIR de Sevilla.",
+        "Son tres."
+      ],
+      "ref": "AIP ENR 2.1",
+      "es": true
+    },
+    {
+      "id": "010.09.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es una FIR?",
+      "options": [
+        "Una zona de control desde la superficie",
+        "Una ruta de área de control",
+        "Una zona prohibida",
+        "Una región de información de vuelo con servicio de información y de alerta"
+      ],
+      "correct": 3,
+      "why": "La FIR presta FIS y alerta a todos los vuelos en su región.",
+      "whyNot": [
+        "Eso es una CTR.",
+        "Eso es una aerovía.",
+        "No lo es.",
+        null
+      ],
+      "ref": "Anexo 11"
+    },
+    {
+      "id": "010.09.017",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuándo se declara INCERFA?",
+      "options": [
+        "A los 5 minutos del retraso",
+        "A los 60 minutos de la ETA",
+        "Cuando no hay comunicación en 30 minutos tras la hora debida o la aeronave no llega en 30 minutos desde la ETA",
+        "Al recibir un mensaje de socorro"
+      ],
+      "correct": 2,
+      "why": "INCERFA es la fase de incertidumbre: 30 minutos.",
+      "whyNot": [
+        "Es la fase ALERFA.",
+        "No es la cifra.",
+        null,
+        "Es DETRESFA o ALERFA."
+      ],
+      "ref": "Anexo 11, cap. 5"
+    },
+    {
+      "id": "010.09.018",
+      "type": "regla",
+      "level": 3,
+      "q": "Una aeronave autorizada a aterrizar no aterriza dentro de los 5 minutos siguientes a la hora prevista y no se restablece comunicación. ¿Qué fase se declara?",
+      "options": [
+        "ALERFA",
+        "INCERFA",
+        "DETRESFA",
+        "Ninguna"
+      ],
+      "correct": 0,
+      "why": "ALERFA incluye el aterrizaje no efectuado a los 5 minutos de la hora prevista sin comunicación.",
+      "whyNot": [
+        null,
+        "INCERFA se declara por 30 minutos sin comunicación.",
+        "Requiere combustible agotado o aterrizaje forzoso probable.",
+        "Se declara ALERFA."
+      ],
+      "ref": "Anexo 11, cap. 5"
+    },
+    {
+      "id": "010.09.019",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué condición implica DETRESFA?",
+      "options": [
+        "Se pierde la comunicación 30 minutos",
+        "Un retraso de la ETA superior a 2 minutos",
+        "Un cambio de frecuencia",
+        "Se cree que el combustible está agotado o que es probable un aterrizaje forzoso"
+      ],
+      "correct": 3,
+      "why": "DETRESFA es la fase de peligro: combustible agotado, aterrizaje forzoso probable o producido.",
+      "whyNot": [
+        "Es INCERFA.",
+        "Es una notificación de plan.",
+        "No tiene relevancia.",
+        null
+      ],
+      "ref": "Anexo 11, cap. 5"
+    },
+    {
+      "id": "010.09.020",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Hacia qué lado se hacen los virajes del circuito de aeródromo estándar?",
+      "options": [
+        "Hacia la derecha",
+        "Hacia la izquierda, salvo indicación contraria",
+        "Alternando según la hora",
+        "Hacia el lado del que sopla el viento"
+      ],
+      "correct": 1,
+      "why": "El circuito estándar es de mano izquierda: todos los virajes son a la izquierda.",
+      "whyNot": [
+        "Solo si lo indica la información del aeródromo.",
+        null,
+        "No existe esa norma.",
+        "Se fija por el aeródromo, no por el viento."
+      ],
+      "ref": "Anexo 14; SERA.3225"
+    },
+    {
+      "id": "010.09.021",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si recibes solo información de tráfico del ATC, ¿quién es responsable de la separación?",
+      "options": [
+        "El piloto",
+        "El controlador",
+        "El AFIS",
+        "El FIS"
+      ],
+      "correct": 0,
+      "why": "La información de tráfico no relieva al piloto de ver y evitar.",
+      "whyNot": [
+        null,
+        "Solo si te da instrucciones de separación.",
+        "El AFIS no separa.",
+        "El FIS no separa."
+      ],
+      "ref": "Doc 4444"
+    },
+    {
+      "id": "010.09.022",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué código de transpondedor se usa en VFR en espacio donde no se asigna otro?",
+      "options": [
+        "2000",
+        "7500",
+        "7000",
+        "1200"
+      ],
+      "correct": 2,
+      "why": "7000 es el código VFR en Europa si no se asigna otro.",
+      "whyNot": [
+        "Es el código de IFR sin asignar.",
+        "Interferencia ilícita.",
+        null,
+        "Es el código VFR de EE. UU."
+      ],
+      "ref": "Doc 7030"
+    },
+    {
+      "id": "010.09.023",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es un vector radar?",
+      "options": [
+        "Una autorización de ruta directa",
+        "Un rumbo dado por ATC para guiar a la aeronave",
+        "Una altitud mínima",
+        "Un nivel de transición"
+      ],
+      "correct": 1,
+      "why": "El vector es un rumbo asignado por ATC; el piloto sigue responsable del exterior en VMC.",
+      "whyNot": [
+        "No es lo mismo.",
+        null,
+        "No es lo mismo.",
+        "No es lo mismo."
+      ],
+      "ref": "Doc 4444"
+    },
+    {
+      "id": "010.09.024",
+      "type": "concepto",
+      "level": 2,
+      "q": "En una FIZ, el piloto debe:",
+      "options": [
+        "Esperar la autorización del AFIS para aterrizar",
+        "Seguir ciegamente el rumbo que indique el AFIS",
+        "Evitar la zona por ser espacio de clase A",
+        "Decidir por sí mismo, apoyándose en la información del AFIS"
+      ],
+      "correct": 3,
+      "why": "El AFIS informa y el piloto decide.",
+      "whyNot": [
+        "El AFIS no autoriza.",
+        "Son informaciones, no instrucciones.",
+        "No es clase A.",
+        null
+      ],
+      "ref": "AIP ENR"
+    },
+    {
+      "id": "010.09.025",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué hace el servicio de alerta?",
+      "options": [
+        "Separa el tráfico",
+        "Da el tiempo",
+        "Avisa a los organismos de búsqueda y salvamento y los asiste",
+        "Autoriza el plan"
+      ],
+      "correct": 2,
+      "why": "El servicio de alerta notifica a los organismos de SAR y colabora.",
+      "whyNot": [
+        "Eso es ATC.",
+        "Eso es meteorología.",
+        null,
+        "Eso corresponde al ARO."
+      ],
+      "ref": "Anexo 11"
+    },
+    {
+      "id": "010.09.026",
+      "type": "concepto",
+      "level": 3,
+      "q": "Vuelas VFR en clase C a 5000 ft. ¿Qué separación recibes?",
+      "options": [
+        "Del tráfico IFR, mientras que del VFR solo recibes información",
+        "De todo el tráfico, como en la clase B",
+        "Ninguna",
+        "Solo de otros VFR"
+      ],
+      "correct": 0,
+      "why": "En C el VFR queda separado del IFR e informado del VFR.",
+      "whyNot": [
+        null,
+        "La separación de todos es de la clase B.",
+        "En C se separa del IFR.",
+        "Es al revés."
+      ],
+      "ref": "SERA.6001"
+    },
+    {
+      "id": "010.09.027",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué ocurre con el IDENT?",
+      "options": [
+        "Cambia automáticamente a 7700",
+        "Cancela el plan de vuelo",
+        "Corta la comunicación en la frecuencia",
+        "Activa un destello en la pantalla de ATC para identificarte, y se usa cuando ATC lo pide"
+      ],
+      "correct": 3,
+      "why": "IDENT es para que ATC te identifique en la pantalla.",
+      "whyNot": [
+        "No cambia el código.",
+        "No cancela nada.",
+        "No afecta a la radio.",
+        null
+      ],
+      "ref": "Doc 4444"
+    },
+    {
+      "id": "010.09.028",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa el límite de FL195 en SERA?",
+      "options": [
+        "Que por debajo de FL195 no hay clase A",
+        "Que no se vuela VFR por encima de FL195",
+        "Que el IFR no puede volar por debajo",
+        "Que el transpondedor es obligatorio"
+      ],
+      "correct": 1,
+      "why": "El VFR no se permite por encima de FL195.",
+      "whyNot": [
+        "No es el significado.",
+        null,
+        "No es el significado.",
+        "No es el significado."
+      ],
+      "ref": "SERA.5005"
+    },
+    {
+      "id": "010.09.029",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿A qué dependencia correspondería avisar del tráfico y la pista en uso en un aeródromo sin torre pero con AFIS?",
+      "options": [
+        "Al operador AFIS del aeródromo",
+        "A la torre de control de aproximación",
+        "Al centro de control de área",
+        "Al servicio meteorológico"
+      ],
+      "correct": 0,
+      "why": "El AFIS suministra información de tráfico, pista y tiempo en la FIZ.",
+      "whyNot": [
+        null,
+        "No hay torre de control.",
+        "El ACC no informa del circuito.",
+        "AEMET da el tiempo, no el tráfico."
+      ],
+      "ref": "Doc 4444"
+    },
+    {
+      "id": "010.09.030",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué debes hacer con el VFR en clase B?",
+      "options": [
+        "Volar sin radio si es de día",
+        "Solo tener plan de vuelo",
+        "Obtener autorización y mantener comunicación bilateral; recibes separación de todo el tráfico",
+        "Nada, no admite VFR"
+      ],
+      "correct": 2,
+      "why": "En B el VFR se separa de todos los tráficos y necesita autorización y radio.",
+      "whyNot": [
+        "No se exime a ningún vuelo.",
+        "También se necesita autorización.",
+        null,
+        "Sí admite VFR."
+      ],
+      "ref": "SERA.6001"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.010.09.01",
+      "front": "Clases donde el VFR necesita autorización y radio",
+      "back": "B, C y D"
+    },
+    {
+      "id": "c.010.09.02",
+      "front": "Servicio al VFR en clase D",
+      "back": "Información de tráfico, sin separación"
+    },
+    {
+      "id": "c.010.09.03",
+      "front": "AFIS",
+      "back": "Informa, no autoriza ni da instrucciones"
+    },
+    {
+      "id": "c.010.09.04",
+      "front": "INCERFA",
+      "back": "30 minutos sin comunicación o sin llegar"
+    },
+    {
+      "id": "c.010.09.05",
+      "front": "ALERFA",
+      "back": "Tras INCERFA sin noticias; no aterriza a los 5 minutos de lo previsto; interferencia ilícita"
+    },
+    {
+      "id": "c.010.09.06",
+      "front": "DETRESFA",
+      "back": "Combustible agotado o aterrizaje forzoso probable"
+    },
+    {
+      "id": "c.010.09.07",
+      "front": "FIR de España",
+      "back": "Madrid, Barcelona y Canarias"
+    },
+    {
+      "id": "c.010.09.08",
+      "front": "RMZ y TMZ",
+      "back": "RMZ: radio obligatoria; TMZ: transpondedor obligatorio"
+    }
+  ]
+}

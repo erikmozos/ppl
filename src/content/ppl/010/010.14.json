@@ -1,0 +1,296 @@
+{
+  "lesson": {
+    "id": "010.14",
+    "title": "Seguridad y accidentes (Anexos 17 y 13)",
+    "summary": "Objetivo de la seguridad contra actos ilícitos (Anexo 17); definiciones de accidente, incidente grave e incidente; objeto y conclusión de la investigación (Anexo 13); notificación de sucesos en 72 horas (Reglamento 376/2014); y la CIAIAC.",
+    "objectives": [
+      "Explicar el objetivo del Anexo 17 y el papel del piloto en la seguridad",
+      "Distinguir accidente, incidente grave e incidente",
+      "Saber qué se persigue con la investigación y cómo termina",
+      "Aplicar el plazo de 72 horas del Reglamento 376/2014 y reconocer el papel de la CIAIAC"
+    ],
+    "sections": [
+      {
+        "title": "Seguridad: Anexo 17",
+        "text": [
+          "La palabra «seguridad» tiene dos significados en aviación. **Safety** es la seguridad operacional (evitar accidentes por fallos, errores o condiciones peligrosas). **Security** es la protección frente a **actos de interferencia ilícita**: secuestro, sabotaje, intrusión. El **Anexo 17** de la OACI se ocupa de la segunda: su objetivo es **salvaguardar la aviación civil contra los actos de interferencia ilícita**, mediante un programa nacional que cada Estado aplica en aeropuertos, aeronaves y operadores.",
+          "Como piloto, tu papel en la seguridad consiste en proteger tu avión: cerrar y vigilar la aeronave, controlar quién sube a bordo, notificar cualquier anomalía y saber qué hacer ante una interferencia ilícita (código 7500)."
+        ]
+      },
+      {
+        "title": "Definiciones del Anexo 13",
+        "table": {
+          "caption": "Accidente, incidente grave e incidente",
+          "head": [
+            "Término",
+            "Definición"
+          ],
+          "rows": [
+            [
+              "Accidente",
+              "Suceso relacionado con la utilización de una aeronave, ocurrido entre el momento de embarcar con intención de volar y el de desembarcar, en el que una persona sufre lesiones mortales o graves, la aeronave sufre daños o fallos estructurales que afectan gravemente a su resistencia, comportamiento o características de vuelo y exigen una reparación importante, o la aeronave desaparece o es totalmente inaccesible"
+            ],
+            [
+              "Incidente grave",
+              "Incidente cuyas circunstancias indican que casi se produjo un accidente"
+            ],
+            [
+              "Incidente",
+              "Suceso, distinto de un accidente, relacionado con la utilización de una aeronave, que afecta o podría afectar a la seguridad de la operación"
+            ]
+          ],
+          "src": "Anexo 13; Reglamento (UE) 996/2010"
+        },
+        "bullets": [
+          "Una **lesión mortal** es la que causa la muerte en los 30 días siguientes al suceso.",
+          "Una **lesión grave** incluye, entre otras, la hospitalización de más de 48 horas dentro de los 7 días siguientes o ciertas fracturas.",
+          "La diferencia entre accidente e incidente grave es el **resultado**: en el incidente grave, por poco, no hubo accidente."
+        ]
+      },
+      {
+        "title": "La investigación: objeto y resultado",
+        "text": [
+          "La investigación de accidentes e incidentes se rige por el **Anexo 13** y, en la UE, por el Reglamento (UE) **996/2010**. Su **único objetivo es prevenir futuros accidentes e incidentes**. **No tiene por objeto determinar culpas ni responsabilidades** (esa es una cuestión judicial independiente). Por eso las investigaciones técnicas se separan de las judiciales y los testimonios obtenidos para ella tienen protección.",
+          "La investigación la realiza el Estado en cuyo territorio ocurre el suceso, con la participación del Estado de matrícula, del operador, del diseño y de la fabricación. Termina con un **informe final**, que se publica, idealmente en un plazo de **12 meses**; si no es posible, se publican **declaraciones provisionales** en cada aniversario.",
+          "En España investiga la **CIAIAC** (Comisión de Investigación de Accidentes e Incidentes de Aviación Civil), un organismo independiente. Si presencias un accidente o te ves implicado, no muevas los restos salvo para rescatar a las personas, y conserva las pruebas."
+        ]
+      },
+      {
+        "title": "Notificación de sucesos: Reglamento 376/2014",
+        "text": [
+          "Además de la investigación, el Reglamento (UE) **376/2014** crea un sistema de **notificación de sucesos** para detectar riesgos antes de que causen un accidente. Los pilotos y otros profesionales deben notificar a su autoridad (en España, AESA) los sucesos que puedan representar un riesgo significativo para la seguridad aérea, **en las 72 horas siguientes** a que se tenga conocimiento de ellos. La notificación es independiente de la investigación y se protege con una **cultura justa**: el notificante no será sancionado por comunicar un suceso, salvo negligencia grave o dolo.",
+          "Hay también notificación **voluntaria**, para sucesos que no son obligatorios pero que aportan información útil."
+        ]
+      }
+    ],
+    "numbers": [
+      "Notificación obligatoria de sucesos: 72 horas",
+      "Lesión mortal: muerte en 30 días; lesión grave: hospitalización de más de 48 horas dentro de los 7 días",
+      "Informe final de la investigación: idealmente en 12 meses; si no, declaraciones provisionales cada aniversario",
+      "Objeto de la investigación: prevenir; no determinar culpas"
+    ],
+    "traps": [
+      "El incidente grave no es «un accidente leve»: es un incidente en el que casi hubo un accidente.",
+      "La investigación técnica no busca culpables; la responsabilidad se dirime en otro procedimiento.",
+      "Los 72 horas son de la notificación del suceso (376/2014), no de la investigación."
+    ],
+    "spain": [
+      "La CIAIAC investiga los accidentes e incidentes de aviación civil en España.",
+      "La notificación obligatoria de sucesos se hace ante AESA."
+    ],
+    "sources": [
+      {
+        "title": "Reglamento (UE) 376/2014 relativo a la notificación de sucesos (EUR-Lex)",
+        "url": "https://eur-lex.europa.eu/eli/reg/2014/376/oj"
+      },
+      {
+        "title": "Reglamento (UE) 996/2010 sobre investigación de accidentes (EUR-Lex)",
+        "url": "https://eur-lex.europa.eu/eli/reg/2010/996/oj"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología",
+        "href": "#/licencias/fraseologia"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "010.14.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Cuál es el objetivo del Anexo 17 de la OACI?",
+      "options": [
+        "Regular la investigación de accidentes",
+        "Establecer las reglas del aire",
+        "Salvaguardar la aviación civil contra los actos de interferencia ilícita",
+        "Regular el mantenimiento"
+      ],
+      "correct": 2,
+      "why": "El Anexo 17 trata la seguridad (security) de la aviación civil frente a actos ilícitos.",
+      "whyNot": [
+        "Eso es el Anexo 13.",
+        "Eso es el Anexo 2.",
+        null,
+        "No es su objeto."
+      ],
+      "ref": "Anexo 17"
+    },
+    {
+      "id": "010.14.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es un accidente según el Anexo 13?",
+      "options": [
+        "Un suceso con lesiones mortales o graves, daños que exijan reparación importante o aeronave desaparecida",
+        "Cualquier suceso con un pasajero mareado",
+        "Un suceso en el que casi hay un choque",
+        "Cualquier suceso que afecte a la operación"
+      ],
+      "correct": 0,
+      "why": "El accidente exige lesiones graves o mortales, daños importantes o desaparición de la aeronave.",
+      "whyNot": [
+        null,
+        "No cumple la definición.",
+        "Eso es un incidente grave.",
+        "Eso es un incidente."
+      ],
+      "ref": "Anexo 13"
+    },
+    {
+      "id": "010.14.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es un incidente grave?",
+      "options": [
+        "Un accidente con daños menores",
+        "Un suceso sin riesgo para la seguridad",
+        "Un accidente sin heridos",
+        "Un incidente cuyas circunstancias indican que casi se produjo un accidente"
+      ],
+      "correct": 3,
+      "why": "El incidente grave es un casi accidente.",
+      "whyNot": [
+        "Es un accidente si hay daños importantes.",
+        "No sería un incidente grave.",
+        "No lo define.",
+        null
+      ],
+      "ref": "Anexo 13"
+    },
+    {
+      "id": "010.14.004",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Cuál es el único objetivo de la investigación técnica de un accidente?",
+      "options": [
+        "Determinar al culpable",
+        "Prevenir futuros accidentes e incidentes",
+        "Calcular las indemnizaciones",
+        "Sancionar a la tripulación"
+      ],
+      "correct": 1,
+      "why": "La investigación no determina culpas: busca causas para prevenir.",
+      "whyNot": [
+        "No es su objetivo.",
+        null,
+        "No es su objetivo.",
+        "No es su objetivo."
+      ],
+      "ref": "Anexo 13; Reglamento (UE) 996/2010"
+    },
+    {
+      "id": "010.14.005",
+      "type": "regla",
+      "level": 1,
+      "q": "¿En qué plazo se notifica un suceso según el Reglamento 376/2014?",
+      "options": [
+        "72 horas",
+        "24 horas",
+        "7 días",
+        "30 días"
+      ],
+      "correct": 0,
+      "why": "Los sucesos se notifican en las 72 horas siguientes a conocerlos.",
+      "whyNot": [
+        null,
+        "No es el plazo.",
+        "No es el plazo.",
+        "No es el plazo."
+      ],
+      "ref": "Reglamento (UE) 376/2014"
+    },
+    {
+      "id": "010.14.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es la «cultura justa» en la notificación de sucesos?",
+      "options": [
+        "Que solo se notifican los sucesos con daños",
+        "Que la autoridad sanciona siempre al piloto",
+        "Que el notificante no es sancionado por notificar, salvo negligencia grave o dolo",
+        "Que la notificación es opcional"
+      ],
+      "correct": 2,
+      "why": "La cultura justa protege al notificante para fomentar que se notifique.",
+      "whyNot": [
+        "No es su significado.",
+        "Es lo contrario.",
+        null,
+        "No es su significado."
+      ],
+      "ref": "Reglamento (UE) 376/2014"
+    },
+    {
+      "id": "010.14.007",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué organismo investiga accidentes de aviación civil en España?",
+      "options": [
+        "AESA",
+        "La CIAIAC",
+        "ENAIRE",
+        "AEMET"
+      ],
+      "correct": 1,
+      "why": "La CIAIAC es la autoridad de investigación.",
+      "whyNot": [
+        "Es la autoridad supervisora.",
+        null,
+        "Presta el control.",
+        "Presta la meteorología."
+      ],
+      "ref": "Reglamento (UE) 996/2010"
+    },
+    {
+      "id": "010.14.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una lesión mortal, a efectos de accidente, es la que causa la muerte:",
+      "options": [
+        "En las 24 horas siguientes",
+        "En los 7 días siguientes",
+        "En los 12 meses siguientes",
+        "En los 30 días siguientes al suceso"
+      ],
+      "correct": 3,
+      "why": "Se considera mortal si fallece en los 30 días siguientes.",
+      "whyNot": [
+        "No es el plazo.",
+        "No es el plazo.",
+        "No es el plazo.",
+        null
+      ],
+      "ref": "Anexo 13"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.010.14.01",
+      "front": "Anexo 17",
+      "back": "Seguridad (security): protección contra actos de interferencia ilícita"
+    },
+    {
+      "id": "c.010.14.02",
+      "front": "Accidente, incidente grave, incidente",
+      "back": "Accidente: daños o lesiones graves; incidente grave: casi accidente; incidente: afecta a la seguridad"
+    },
+    {
+      "id": "c.010.14.03",
+      "front": "Objeto de la investigación",
+      "back": "Prevenir; no determinar culpas"
+    },
+    {
+      "id": "c.010.14.04",
+      "front": "Notificación de sucesos",
+      "back": "72 horas (Reglamento 376/2014)"
+    },
+    {
+      "id": "c.010.14.05",
+      "front": "CIAIAC",
+      "back": "Investiga accidentes e incidentes de aviación civil en España"
+    }
+  ]
+}

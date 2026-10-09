@@ -1,0 +1,429 @@
+{
+  "lesson": {
+    "id": "020.13",
+    "title": "Lubricación",
+    "summary": "Funciones del aceite del motor, sistema de cárter húmedo y de cárter seco, bomba, válvula de alivio, filtro y radiador, tipos y viscosidad del aceite, lectura de presión y temperatura y qué hacer ante un fallo.",
+    "objectives": [
+      "Enumerar las funciones del aceite además de lubricar",
+      "Diferenciar un sistema de cárter húmedo de uno de cárter seco y seguir el recorrido del aceite",
+      "Explicar qué hacen la válvula de alivio, el filtro, su válvula de derivación y el radiador de aceite",
+      "Interpretar presión y temperatura de aceite y decidir qué hacer ante un fallo",
+      "Distinguir aceite mineral, con detergentes y multigrado, y el significado de la viscosidad"
+    ],
+    "sections": [
+      {
+        "title": "Para qué sirve el aceite",
+        "text": [
+          "El aceite hace mucho más que reducir el rozamiento. Cada una de sus funciones explica una pregunta de examen.",
+          "**Lubrica**: forma una película entre piezas metálicas en movimiento (cigüeñal, bielas, árbol de levas, camisas y segmentos) y evita el contacto directo. **Refrigera**: se lleva calor de pistones y cojinetes que el aire no alcanza y lo cede en el radiador de aceite. **Sella**: la película entre segmentos y camisa mejora la compresión. **Limpia**: arrastra partículas y residuos de combustión hasta el filtro. **Protege** contra la corrosión de las piezas internas, sobre todo cuando el motor está parado, y **amortigua** golpes de las piezas."
+        ]
+      },
+      {
+        "title": "El circuito: cárter húmedo",
+        "text": [
+          "En un sistema de **cárter húmedo**, el aceite se guarda en el propio cárter, bajo el motor, que hace de depósito. Es el sistema del O-320 del PA-28-161 y del IO-360 del C172S. El recorrido es este:"
+        ],
+        "bullets": [
+          "Una **bomba de engranajes**, movida por el motor, **aspira** el aceite del cárter a través de un colador.",
+          "Una **válvula de alivio** (relief valve) limita la presión máxima y devuelve el exceso al cárter. Por eso, con aceite frío (más denso) la presión sube al arrancar pero no pasa de un máximo, y con aceite caliente es algo menor.",
+          "El aceite pasa por el **filtro** y, si este se obstruye, una **válvula de derivación** (bypass) permite que el aceite siga llegando al motor sin filtrar en lugar de quedarse sin lubricación.",
+          "Se reparte por galerías hasta los cojinetes y demás piezas, y cae de nuevo al cárter.",
+          "Si hay un **radiador de aceite**, una válvula termostática lo desvía por el radiador cuando el aceite está caliente y lo evita cuando está frío, para que el aceite llegue pronto a su temperatura de trabajo.",
+          "Un **respiradero** del cárter ventila los gases que se escapan por los segmentos y evita que suba la presión interna; el aceite que sale por él mancha la parte inferior del fuselaje."
+        ]
+      },
+      {
+        "title": "Cárter seco",
+        "text": [
+          "En un sistema de **cárter seco**, el aceite se almacena en un **depósito separado** y el cárter solo recoge el que cae; una bomba de recuperación lo devuelve al depósito. Se usa en motores acrobáticos, turboalimentados y de más potencia, porque el depósito puede ser mayor y refrigerar mejor, y funciona con el avión invertido. No es el caso de tu avión de escuela."
+        ]
+      },
+      {
+        "title": "Tipos de aceite y viscosidad",
+        "text": [
+          "La **viscosidad** es la resistencia del aceite a fluir. Se indica con el número SAE: cuanto más alto, más espeso. Un aceite demasiado fluido no mantiene la película con calor; uno demasiado espeso circula mal con frío y tarda en llegar al motor al arrancar.",
+          "Un aceite **monogrado** (SAE 40, SAE 50) tiene una viscosidad que cambia mucho con la temperatura. Un **multigrado** (por ejemplo 20W-50) se comporta como uno fluido en frío (el número con W, de *winter*) y como uno más espeso con calor, así que sirve todo el año. El aceite elegido para un motor es el que fija el POH según la temperatura exterior; no se mezclan marcas ni tipos sin consultar.",
+          "Hay dos grandes familias. El aceite **mineral** sin aditivos se usa en el **rodaje** de un motor nuevo o recién rectificado, para que los segmentos se asienten. El aceite **con detergentes y dispersantes sin cenizas** (ashless dispersant) mantiene en suspensión los residuos y los lleva al filtro; es el habitual en el servicio normal. Un mismo motor no cambia de uno a otro sin respetar las indicaciones del fabricante."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Presión y temperatura en cabina",
+        "text": [
+          "Dos instrumentos te dicen cómo va el aceite: la **presión** y la **temperatura**, con arcos verde, amarillo y raya roja cuyos valores exactos son los del POH.",
+          "Tras el arranque, la **presión debe subir en unos segundos** (el POH del avión da el tiempo, normalmente unos 30 s en motor frío; si no hay indicación, se para el motor). Con aceite frío la presión es alta, por la mayor viscosidad, y baja al calentarse. Se vigila el aceite a lo largo de toda la prueba de motor y en vuelo."
+        ],
+        "table": {
+          "caption": "Qué sugieren las combinaciones de presión y temperatura de aceite",
+          "head": [
+            "Presión",
+            "Temperatura",
+            "Probable causa"
+          ],
+          "rows": [
+            [
+              "Baja o a cero",
+              "Normal",
+              "Fallo del sensor o del indicador, o de la bomba o la válvula de alivio"
+            ],
+            [
+              "Baja",
+              "Alta",
+              "Poco aceite o pérdida de aceite: avería real del motor"
+            ],
+            [
+              "Alta",
+              "Normal o baja",
+              "Aceite frío tras arrancar, válvula de alivio atascada o conducto obstruido"
+            ],
+            [
+              "Normal",
+              "Alta",
+              "Aceite degradado, nivel bajo, poca refrigeración o mezcla pobre"
+            ]
+          ],
+          "src": "PHAK cap. 7; POH"
+        },
+        "verify": true,
+        "bullets": [
+          "Antes del primer vuelo del día se comprueba el **nivel de aceite** con la varilla, con el motor parado y frío, y que el tapón esté cerrado.",
+          "Un consumo de aceite ligeramente mayor con mucho uso es normal, pero una pérdida repentina o aceite en el parabrisas indica avería."
+        ]
+      },
+      {
+        "title": "Fallo de lubricación en vuelo",
+        "text": [
+          "La **pérdida de presión de aceite** es una emergencia: sin lubricación, el motor se agarrota en minutos. Si la presión cae a cero y la temperatura sube, es una pérdida de aceite real. Procedimiento general:"
+        ],
+        "bullets": [
+          "Reduce la potencia al mínimo necesario y elige el campo o el aeródromo más cercano.",
+          "Prepara un aterrizaje de emergencia: el motor puede pararse en cualquier momento.",
+          "Informa a ATC si es posible y sigue la lista del POH del avión.",
+          "No intentes continuar el vuelo a destino con presión baja o nula."
+        ],
+        "note": {
+          "kind": "warn",
+          "text": "Presión baja con la temperatura normal puede ser un sensor averiado; presión baja con temperatura creciente casi nunca lo es. Ante la duda, trátalo como avería real."
+        }
+      }
+    ],
+    "numbers": [
+      "Funciones: lubricar, refrigerar, sellar, limpiar, proteger y amortiguar",
+      "Cárter húmedo (PA-28-161 y C172S): el cárter es el depósito; cárter seco: depósito separado",
+      "Válvula de alivio: limita la presión; válvula de derivación del filtro: asegura el caudal si se obstruye",
+      "Presión tras el arranque: debe subir en unos segundos (30 s en el POH típico)",
+      "Multigrado 20W-50: fluido en frío y más espeso en caliente"
+    ],
+    "traps": [
+      "Creer que el aceite solo lubrica: refrigera, sella, limpia y protege.",
+      "Pensar que con aceite frío la presión alta indica avería: es normal.",
+      "Confundir el aceite mineral de rodaje con el aceite con detergentes del servicio normal.",
+      "Pensar que la válvula de derivación del filtro es un fallo: es una protección que prioriza el caudal."
+    ],
+    "spain": [
+      "En verano, en los aeródromos del interior y del sur, la temperatura de aceite sube con facilidad en el rodaje y el ascenso: vigílala."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 7",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Manual de vuelo del PA-28-161 y del C172S",
+        "url": "https://www.piper.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Arranque del PA-28: presión de aceite",
+        "href": "#/ac/pa28/flow/start"
+      },
+      {
+        "label": "Arranque del C172",
+        "href": "#/ac/c172/flow/start"
+      },
+      {
+        "label": "Prevuelo del PA-28 (nivel de aceite)",
+        "href": "#/ac/pa28/flow/preflight"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.13.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "Además de lubricar, el aceite del motor:",
+      "options": [
+        "Aumenta la presión de admisión",
+        "Mejora el octanaje del combustible",
+        "Refrigera, limpia, sella y protege contra la corrosión",
+        "Reduce el consumo de combustible directamente"
+      ],
+      "correct": 2,
+      "why": "El aceite lleva calor al radiador, arrastra residuos al filtro, sella segmentos y camisas y protege las piezas internas.",
+      "whyNot": [
+        "La presión de admisión depende de la mariposa y la atmósfera.",
+        "El octanaje es propiedad del combustible.",
+        null,
+        "No actúa sobre el consumo directamente."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.13.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "En un sistema de cárter húmedo, el aceite se almacena:",
+      "options": [
+        "En el propio cárter, bajo el motor",
+        "En un depósito separado del motor",
+        "En el filtro",
+        "En el radiador de aceite"
+      ],
+      "correct": 0,
+      "why": "En el cárter húmedo, el cárter hace de depósito. Es el sistema del O-320 y del IO-360.",
+      "whyNot": [
+        null,
+        "El depósito separado es propio del cárter seco.",
+        "El filtro solo retiene partículas.",
+        "El radiador solo enfría el aceite que pasa por él."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.13.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué ventaja tiene el sistema de cárter seco?",
+      "options": [
+        "Es más sencillo y ligero",
+        "Permite un depósito mayor y funciona con el avión invertido",
+        "Elimina la necesidad de filtro",
+        "Funciona sin bomba"
+      ],
+      "correct": 1,
+      "why": "Con el aceite en un depósito aparte, hay más capacidad y mejor refrigeración, y el motor se lubrica también en actitudes extremas.",
+      "whyNot": [
+        "El cárter seco es más complejo.",
+        null,
+        "También lleva filtro.",
+        "Necesita bombas de presión y de recuperación."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.13.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "La válvula de alivio del circuito de aceite:",
+      "options": [
+        "Evita que el aceite se caliente",
+        "Abre el radiador cuando el aceite está frío",
+        "Filtra el aceite",
+        "Limita la presión máxima devolviendo el exceso al cárter"
+      ],
+      "correct": 3,
+      "why": "Mantiene la presión dentro de un máximo aunque la bomba suministre más caudal, sobre todo con aceite frío.",
+      "whyNot": [
+        "Esa es la función del radiador.",
+        "Esa es la función de la válvula termostática.",
+        "El filtrado lo hace el filtro.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.13.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si el filtro de aceite se obstruye, la válvula de derivación (bypass):",
+      "options": [
+        "Corta el aceite al motor",
+        "Aumenta la presión por encima del máximo",
+        "Cierra el motor",
+        "Permite que el aceite siga llegando al motor sin filtrar"
+      ],
+      "correct": 3,
+      "why": "Se prefiere aceite sin filtrar a no tener aceite: la derivación asegura el caudal.",
+      "whyNot": [
+        "Haría que el motor se agarrote.",
+        "La presión máxima la limita la válvula de alivio.",
+        "No actúa sobre la marcha del motor, solo sobre el flujo.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.13.006",
+      "type": "concepto",
+      "level": 1,
+      "q": "Un aceite multigrado 20W-50 se comporta, respecto a uno monogrado, como:",
+      "options": [
+        "Uno más espeso en frío",
+        "Uno sin detergentes",
+        "Uno fluido en frío y más espeso en caliente",
+        "Uno solo apto para el rodaje"
+      ],
+      "correct": 2,
+      "why": "El primer número (20W) indica el comportamiento en frío y el segundo (50) el comportamiento en caliente: sirve en un rango amplio de temperaturas.",
+      "whyNot": [
+        "En frío es más fluido que un monogrado 50.",
+        "La viscosidad no dice nada de los aditivos.",
+        null,
+        "Los multigrado con detergentes son para el servicio normal."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.13.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "Se recomienda aceite mineral sin aditivos en:",
+      "options": [
+        "Motores con turbo",
+        "El rodaje de un motor nuevo",
+        "Cualquier motor tras 50 horas",
+        "Un motor con aceite de más de un año"
+      ],
+      "correct": 1,
+      "why": "El aceite mineral sin detergentes favorece el asentamiento de los segmentos en las primeras horas de un motor nuevo o rectificado.",
+      "whyNot": [
+        "El turbo exige un aceite acorde con el POH, normalmente con detergentes.",
+        null,
+        "Las horas no determinan el tipo de aceite.",
+        "La edad del aceite se resuelve cambiándolo, no con otro tipo."
+      ],
+      "ref": "FAA PHAK cap. 7; indicaciones del fabricante del motor"
+    },
+    {
+      "id": "020.13.008",
+      "type": "regla",
+      "level": 2,
+      "q": "Tras arrancar el motor, la presión de aceite debe indicar un valor normal:",
+      "options": [
+        "Al cabo de unos segundos, según el POH (unos 30 s en motor frío)",
+        "A los 10 minutos",
+        "Solo cuando el aceite esté caliente",
+        "Cuando se aplique plena potencia"
+      ],
+      "correct": 0,
+      "why": "Si no sube en el tiempo indicado por el POH, hay que parar el motor para evitar daños. La presión debe aparecer pronto, incluso con aceite frío.",
+      "whyNot": [
+        null,
+        "Diez minutos sin presión destruirían el motor.",
+        "La presión se espera con el aceite aún frío.",
+        "Con plena potencia ya sería tarde."
+      ],
+      "ref": "POH PA-28-161 y C172S, procedimiento de arranque"
+    },
+    {
+      "id": "020.13.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "Presión de aceite baja con temperatura de aceite en aumento sugiere:",
+      "options": [
+        "Un sensor de presión averiado",
+        "Una mezcla demasiado rica",
+        "Aceite frío tras arrancar",
+        "Una pérdida real de aceite"
+      ],
+      "correct": 3,
+      "why": "Si baja la presión y sube la temperatura, es el patrón típico de una pérdida de aceite: el aceite restante se calienta más. Hay que prepararse para aterrizar.",
+      "whyNot": [
+        "Un sensor averiado no cambia la temperatura.",
+        "La mezcla rica enfría y no baja la presión.",
+        "Con aceite frío la presión sería alta, no baja.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.13.010",
+      "type": "concepto",
+      "level": 1,
+      "q": "Con el motor recién arrancado en un día frío, es normal que la presión de aceite sea:",
+      "options": [
+        "Más baja de lo habitual",
+        "Cero durante un minuto",
+        "Más alta de lo habitual, porque el aceite está frío y es más viscoso",
+        "Igual que con el motor caliente"
+      ],
+      "correct": 2,
+      "why": "El aceite frío es más viscoso y la bomba lo envía con más presión, limitada por la válvula de alivio. Baja al calentarse.",
+      "whyNot": [
+        "Es al revés: frío, más presión.",
+        "Cero durante un minuto no es normal.",
+        null,
+        "La temperatura sí afecta a la viscosidad y a la presión."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.13.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "En vuelo la presión de aceite cae a cero y la temperatura sube. ¿Qué haces?",
+      "options": [
+        "Continuar a destino con la potencia de crucero",
+        "Reducir potencia y prepararte para un aterrizaje de emergencia cercano",
+        "Empobrecer la mezcla",
+        "Aumentar las RPM para subir la presión"
+      ],
+      "correct": 1,
+      "why": "Sin presión de aceite el motor puede agarrotarse en minutos. Reduce potencia, elige un campo y sigue el POH.",
+      "whyNot": [
+        "Seguir con potencia agota el aceite restante.",
+        null,
+        "Empobrecer calienta más el motor.",
+        "Más RPM no sube la presión si falta aceite."
+      ],
+      "ref": "POH; PHAK cap. 7"
+    },
+    {
+      "id": "020.13.012",
+      "type": "lectura",
+      "level": 2,
+      "q": "Lees los siguientes datos en la prueba de motor. ¿Qué indican?",
+      "data": "Presión de aceite: 85 psi (arco verde máximo 100 psi)\nTemperatura de aceite: 10 °C, subiendo\nMotor recién arrancado, día frío",
+      "options": [
+        "Valores normales en un motor frío que aún se está calentando",
+        "Fallo grave de la bomba",
+        "Falta de aceite",
+        "Sobrecalentamiento"
+      ],
+      "correct": 0,
+      "why": "Presión alta con aceite frío es normal; baja al calentarse. La temperatura sube de forma progresiva.",
+      "whyNot": [
+        null,
+        "Una bomba averiada daría presión baja.",
+        "Con poco aceite la presión sería baja.",
+        "10 °C no es una temperatura alta de aceite."
+      ],
+      "ref": "PHAK cap. 7"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.13.01",
+      "front": "Funciones del aceite",
+      "back": "Lubricar, refrigerar, sellar, limpiar, proteger y amortiguar"
+    },
+    {
+      "id": "c.020.13.02",
+      "front": "Cárter húmedo frente a seco",
+      "back": "Húmedo: el cárter es el depósito (PA-28 y C172S). Seco: depósito separado y bomba de recuperación"
+    },
+    {
+      "id": "c.020.13.03",
+      "front": "Válvula de alivio y válvula de derivación del filtro",
+      "back": "Alivio: limita la presión máxima. Derivación: asegura el caudal si el filtro se obstruye"
+    },
+    {
+      "id": "c.020.13.04",
+      "front": "Presión de aceite baja y temperatura en aumento",
+      "back": "Pérdida de aceite: reducir potencia y prepararse para aterrizar"
+    }
+  ]
+}

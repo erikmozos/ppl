@@ -1,0 +1,331 @@
+{
+  "lesson": {
+    "id": "010.15",
+    "title": "Diferencias de España (AIP GEN 1.7)",
+    "summary": "Lo que España añade o cambia respecto a SERA y a la OACI: VFR especial solo de día, plan de vuelo nocturno, colaciones y fraseología, prefijo STUDENT, zonas LE-P, LE-R y LE-D y zonas sensibles para la fauna.",
+    "objectives": [
+      "Saber dónde se publican las diferencias de España y cómo se leen",
+      "Aplicar las diferencias que más se preguntan: VFR especial, plan de vuelo nocturno y fraseología",
+      "Reconocer las zonas LE-P, LE-R y LE-D y las zonas sensibles para la fauna"
+    ],
+    "sections": [
+      {
+        "title": "Cómo se aplican las diferencias",
+        "text": [
+          "SERA se aplica tal cual en España, pero deja a cada Estado completar ciertos puntos y publicar sus diferencias con el Anexo 2 de la OACI. En España, esas diferencias están en el **AIP GEN 1.7** que publica ENAIRE. En el examen, cuando una pregunta dice «en España» o «según el AIP», la respuesta es la de GEN 1.7, no la de SERA genérico.",
+          "Las diferencias más preguntadas son las que afectan al piloto de VFR. Las verás ahora reunidas, cada una con su lección de origen."
+        ]
+      },
+      {
+        "title": "Las diferencias más preguntadas",
+        "table": {
+          "caption": "Diferencias de España en el AIP GEN 1.7",
+          "head": [
+            "Asunto",
+            "Diferencia española",
+            "Lección"
+          ],
+          "rows": [
+            [
+              "VFR especial",
+              "Solo de día, en CTR, libre de nubes, 1500 m de visibilidad y 140 kt IAS o menos",
+              "010.07"
+            ],
+            [
+              "Plan de vuelo nocturno",
+              "Obligatorio para todo vuelo VFR nocturno que salga de las inmediaciones del aeródromo",
+              "010.08"
+            ],
+            [
+              "Rumbos",
+              "Los rumbos acabados en cero añaden «grados»: «rumbo cero nueve cero grados»",
+              "090.03"
+            ],
+            [
+              "Palabras españolas",
+              "«SUBA» en lugar de «ascienda» y «REINCORPORAR» en lugar de «reanudar»",
+              "090.04"
+            ],
+            [
+              "Alumnos solos",
+              "Prefijo STUDENT en el primer contacto",
+              "090.05"
+            ],
+            [
+              "Colaciones",
+              "Lista obligatoria de elementos que se repiten (SERA.8015), que debe repetirse completa",
+              "090.06"
+            ],
+            [
+              "Altitud de transición",
+              "Con carácter general 6000 ft, con excepciones locales (ENR 1.7)",
+              "010.10"
+            ],
+            [
+              "Alturas mínimas",
+              "Por debajo de las alturas de SERA.5005(f) hace falta autorización de AESA",
+              "010.07"
+            ]
+          ],
+          "src": "AIP España GEN 1.7; RD 1180/2018"
+        },
+        "note": {
+          "kind": "es",
+          "text": "En la fraseología en español, España usa «SUBA» (no «ascienda») y «REINCORPORAR» (no «reanudar»). Comprueba el uso exacto en el AIP GEN 1.7 vigente."
+        },
+        "verify": true
+      },
+      {
+        "title": "Ejemplos de aplicación",
+        "examples": [
+          {
+            "q": "Vuelas de noche desde el aeródromo de Villanueva a un campo a 40 NM. ¿Qué tienes que hacer antes de salir?",
+            "a": "Presentar plan de vuelo: el vuelo nocturno sale de las inmediaciones del aeródromo y en España es obligatorio, aunque no cruces espacio controlado."
+          },
+          {
+            "q": "La torre de una CTR te propone un VFR especial a las 22:30 locales con visibilidad de 2000 m. ¿Puede concedértelo?",
+            "a": "No. En España el VFR especial solo se concede de día, aunque la visibilidad supere los 1500 m."
+          },
+          {
+            "q": "Ves en la carta una zona LE-D activa a tu altitud. ¿Puedes atravesarla?",
+            "a": "Sí, bajo tu responsabilidad, porque es una zona peligrosa y solo avisa de una actividad; si fuera LE-R, tendrías que cumplir las condiciones publicadas, y en LE-P no puedes entrar sin permiso."
+          }
+        ]
+      },
+      {
+        "title": "Zonas prohibidas, restringidas y peligrosas: LE-P, LE-R y LE-D",
+        "text": [
+          "En España las zonas de uso especial se identifican con el prefijo **LE** y una letra: **LE-P** para las zonas **prohibidas**, **LE-R** para las **restringidas** y **LE-D** para las **peligrosas**, seguidas del número de la zona. Sus límites horizontales y verticales, las condiciones de acceso y los horarios están en el **AIP ENR 5.1**. Las zonas que se activan por NOTAM se consultan allí y en el boletín de información previa.",
+          "La regla de SERA.3145 se aplica igual: en una zona **prohibida** el vuelo está prohibido, salvo permiso del Estado; en una zona **restringida** solo se puede volar conforme a las condiciones especificadas; en una **peligrosa** se vuela bajo tu responsabilidad, porque solo avisa de una actividad peligrosa."
+        ]
+      },
+      {
+        "title": "Zonas sensibles para la fauna (ENR 5.6)",
+        "text": [
+          "Además de las zonas anteriores, el AIP España recoge en **ENR 5.6** las zonas de migración de aves y las **zonas sensibles para la fauna**, donde se recomienda o se impone no volar por debajo de ciertas alturas para no molestar a la fauna ni exponerse a colisiones con aves. Las cifras concretas y los periodos están en el AIP y en las cartas, y se actualizan; antes de volar sobre un espacio natural protegido, consulta ENR 5.6 y los NOTAM."
+        ],
+        "verify": true
+      }
+    ],
+    "numbers": [
+      "VFR especial: solo de día; 1500 m; 140 kt IAS",
+      "Plan de vuelo obligatorio en VFR nocturno fuera de las inmediaciones",
+      "Rumbos acabados en cero: «grados»; alumnos solos: STUDENT",
+      "Zonas: LE-P prohibida, LE-R restringida, LE-D peligrosa (ENR 5.1)",
+      "Fauna y aves: AIP ENR 5.6"
+    ],
+    "traps": [
+      "Si la pregunta dice «en España», aplica el AIP GEN 1.7, no el SERA genérico.",
+      "La P es prohibida, la R restringida y la D peligrosa; la P no se atraviesa salvo permiso, la D sí se puede atravesar bajo tu responsabilidad.",
+      "El VFR especial en España no se concede de noche."
+    ],
+    "spain": [
+      "Las diferencias se publican en el AIP GEN 1.7; las zonas LE-P, LE-R y LE-D, en ENR 5.1; las zonas sensibles para la fauna, en ENR 5.6."
+    ],
+    "sources": [
+      {
+        "title": "AIP España GEN 1.7: diferencias con la OACI y SERA (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/contenido_AIP/GEN/LE_GEN_1_7_en.html"
+      },
+      {
+        "title": "AIP España ENR 5.1 y ENR 5.6 (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología",
+        "href": "#/licencias/fraseologia"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "010.15.001",
+      "type": "regla",
+      "level": 1,
+      "q": "En España, el VFR especial se autoriza:",
+      "options": [
+        "De día y de noche con 1500 m",
+        "Solo de noche",
+        "Solo de día, con 1500 m de visibilidad de vuelo y 140 kt IAS o menos",
+        "Con 800 m en cualquier espacio aéreo"
+      ],
+      "correct": 2,
+      "why": "AIP GEN 1.7: solo de día, libre de nubes, con superficie a la vista, 1500 m y 140 kt IAS o menos.",
+      "whyNot": [
+        "De noche no se autoriza en España.",
+        "No se autoriza de noche.",
+        null,
+        "800 m es el valor para helicópteros."
+      ],
+      "ref": "AIP GEN 1.7",
+      "es": true
+    },
+    {
+      "id": "010.15.002",
+      "type": "regla",
+      "level": 2,
+      "q": "Según el AIP España, ¿cuándo es obligatorio el plan de vuelo para un VFR nocturno?",
+      "options": [
+        "Cuando sale de las inmediaciones del aeródromo",
+        "Nunca, si se vuela en espacio no controlado",
+        "Solo si dura más de 2 horas",
+        "Solo si cruza una FIR"
+      ],
+      "correct": 0,
+      "why": "GEN 1.7 añade el plan obligatorio al VFR nocturno fuera de las inmediaciones del aeródromo.",
+      "whyNot": [
+        null,
+        "La diferencia española lo exige.",
+        "No existe ese límite.",
+        "No es la condición."
+      ],
+      "ref": "AIP GEN 1.7",
+      "es": true
+    },
+    {
+      "id": "010.15.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cómo se transmite en España el rumbo 090?",
+      "options": [
+        "Rumbo noventa",
+        "Rumbo nueve cero",
+        "Rumbo cero nueve cero",
+        "Rumbo cero nueve cero grados"
+      ],
+      "correct": 3,
+      "why": "En España los rumbos acabados en cero añaden «grados».",
+      "whyNot": [
+        "Se transmite dígito a dígito y con «grados».",
+        "No se omite el cero inicial.",
+        "Falta «grados».",
+        null
+      ],
+      "ref": "AIP GEN 1.7",
+      "es": true
+    },
+    {
+      "id": "010.15.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué prefijo usa en España un alumno piloto que vuela solo en su primer contacto?",
+      "options": [
+        "SOLO",
+        "STUDENT",
+        "ALUMNO",
+        "CADETE"
+      ],
+      "correct": 1,
+      "why": "GEN 1.7 establece el prefijo STUDENT para los alumnos solos.",
+      "whyNot": [
+        "No es el prefijo.",
+        null,
+        "No es el prefijo.",
+        "No es el prefijo."
+      ],
+      "ref": "AIP GEN 1.7",
+      "es": true
+    },
+    {
+      "id": "010.15.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "En España, las zonas peligrosas llevan el prefijo:",
+      "options": [
+        "LE-D",
+        "LE-P",
+        "LE-R",
+        "LE-S"
+      ],
+      "correct": 0,
+      "why": "LE-P prohibidas, LE-R restringidas y LE-D peligrosas.",
+      "whyNot": [
+        null,
+        "Son las prohibidas.",
+        "Son las restringidas.",
+        "No es un prefijo oficial."
+      ],
+      "ref": "AIP ENR 5.1",
+      "es": true
+    },
+    {
+      "id": "010.15.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Dónde publica el AIP España las zonas prohibidas, restringidas y peligrosas?",
+      "options": [
+        "En GEN 1.7",
+        "En AD 2",
+        "En ENR 5.1",
+        "En ENR 5.6"
+      ],
+      "correct": 2,
+      "why": "ENR 5.1 recoge las zonas de uso especial.",
+      "whyNot": [
+        "Contiene las diferencias.",
+        "Contiene los aeródromos.",
+        null,
+        "Contiene aves y fauna."
+      ],
+      "ref": "AIP ENR 5.1",
+      "es": true
+    },
+    {
+      "id": "010.15.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Dónde se recogen las zonas sensibles para la fauna en el AIP España?",
+      "options": [
+        "En GEN 1.7",
+        "En ENR 5.6",
+        "En ENR 5.1",
+        "En AD 1"
+      ],
+      "correct": 1,
+      "why": "ENR 5.6 trata la migración de aves y las zonas sensibles para la fauna.",
+      "whyNot": [
+        "Son las diferencias con la OACI.",
+        null,
+        "Son las zonas prohibidas, restringidas y peligrosas.",
+        "No es la sección de fauna."
+      ],
+      "ref": "AIP ENR 5.6",
+      "es": true
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.010.15.01",
+      "front": "VFR especial en España",
+      "back": "Solo de día; 1500 m; 140 kt IAS"
+    },
+    {
+      "id": "c.010.15.02",
+      "front": "Plan de vuelo nocturno",
+      "back": "Obligatorio si el vuelo VFR sale de las inmediaciones del aeródromo"
+    },
+    {
+      "id": "c.010.15.03",
+      "front": "Rumbos en España",
+      "back": "Los acabados en cero añaden «grados»"
+    },
+    {
+      "id": "c.010.15.04",
+      "front": "Prefijo de alumno solo",
+      "back": "STUDENT"
+    },
+    {
+      "id": "c.010.15.05",
+      "front": "Zonas LE",
+      "back": "LE-P prohibida, LE-R restringida, LE-D peligrosa (ENR 5.1)"
+    },
+    {
+      "id": "c.010.15.06",
+      "front": "Fauna y aves",
+      "back": "AIP ENR 5.6"
+    }
+  ]
+}

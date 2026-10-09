@@ -1,0 +1,349 @@
+{
+  "lesson": {
+    "id": "090.09",
+    "title": "Fallo de comunicaciones",
+    "summary": "Comprobaciones ante un fallo de radio, código 7600, transmisión a ciegas, seguir en VMC y aterrizar en el aeródromo adecuado más próximo, señales luminosas de la torre y procedimientos del AIP para cada CTR.",
+    "objectives": [
+      "Seguir el orden de comprobaciones ante una pérdida de comunicaciones",
+      "Aplicar el procedimiento VFR de fallo de comunicaciones",
+      "Interpretar las señales luminosas de la torre y acusar recibo",
+      "Diferenciar el procedimiento VFR del IFR"
+    ],
+    "sections": [
+      {
+        "title": "Primero, comprueba tu radio",
+        "text": [
+          "La mayoría de «fallos de radio» no son averías, son un fallo de uso. Antes de declarar nada, comprueba: **volumen** y **squelch**, **frecuencia** correcta sintonizada, **cascos** y **micrófono** bien conectados, **PTT** (que no esté atascado), **interruptor de radio** (avionics master) y **fusibles** o disyuntores. Si tienes dos radios, prueba con la otra, y llama a otra estación o a otro avión, o en 121,5 MHz.",
+          "Mantén el control del avión primero: no te distraigas de volar mientras buscas el fallo."
+        ]
+      },
+      {
+        "title": "Procedimiento VFR de fallo de comunicaciones",
+        "text": [
+          "Si no logras restablecer la comunicación, aplicas el procedimiento VFR: **pon el transpondedor en 7600**, **transmite a ciegas** repitiendo cada mensaje (por si tu transmisor funciona aunque no oigas), **continúa en VMC**, **aterriza en el aeródromo adecuado más próximo** e **informa de tu llegada** al ATS por el medio más rápido. En un aeródromo controlado, **obedece las señales luminosas** de la torre.",
+          "Una transmisión a ciegas sigue esta estructura: «Transmitiendo a ciegas por fallo del receptor, [distintivo], [posición, altitud, intenciones]». Si solo falla el transmisor y recibes, ATC puede pedirte que respondas con el IDENT o cambiando de código; hazlo."
+        ],
+        "examples": [
+          {
+            "q": "Español: pierdes la recepción a 8 millas al norte de Villanueva, a 2500 pies, y decides aterrizar allí.",
+            "a": "«Transmitiendo a ciegas por fallo del receptor, Villanueva Torre, Eco Charlie Alfa Bravo Charlie, 8 millas al norte, 2500 pies, voy a entrar en viento en cola izquierda pista 13 para aterrizar, transpondo 7600.»"
+          },
+          {
+            "q": "Inglés: la misma transmisión.",
+            "a": "«Transmitting blind due to receiver failure, Villanueva Tower, Echo Charlie Alpha Bravo Charlie, 8 miles north, 2500 feet, joining left downwind runway 13 for landing, squawking 7600.»"
+          }
+        ]
+      },
+      {
+        "title": "Por qué no «mantener nivel y ruta»",
+        "text": [
+          "El procedimiento de mantener el último nivel asignado y la ruta durante cierto tiempo es un procedimiento **IFR**, pensado para que ATC sepa dónde estás. En **VFR** la regla es diferente: sigues volando en VMC y **aterrizas en el aeródromo adecuado más próximo**. Si no puedes mantener las VMC, el vuelo ya no es VFR y la situación se convierte en una emergencia (MAYDAY por transmisión a ciegas y 7700)."
+        ],
+        "note": {
+          "kind": "warn",
+          "text": "Fallo de radio VFR: 7600, VMC y aeródromo adecuado más próximo. El procedimiento de mantener nivel y ruta es IFR."
+        }
+      },
+      {
+        "title": "Señales luminosas de la torre",
+        "text": [
+          "Si la torre ve tu avión y no te puede hablar, te comunica con señales luminosas. Debes conocerlas en vuelo y en tierra. Acusa recibo **alabeando** de día o **destellando los faros de aterrizaje o las luces de navegación** de noche."
+        ],
+        "figure": "svg:010-senales-luminosas",
+        "caption": "Señales luminosas y pirotécnicas de la torre"
+      },
+      {
+        "title": "Después de aterrizar y cómo prevenirlo",
+        "text": [
+          "Una vez en tierra, **informa de tu llegada** al ATS del aeródromo o, si no hay, por teléfono a la dependencia ATS más cercana, para que no se active la búsqueda. Pide que revisen la radio antes de volver a volar.",
+          "La mejor prevención es la preparación: comprueba la radio en tierra («comprobación de radio» con la torre o con la estación de información), lleva las frecuencias anotadas, conoce las señales luminosas y, si es posible, ten una radio portátil de reserva con batería cargada. Un fallo de radio sin preparación es una situación de alta carga de trabajo; con ella es un procedimiento más."
+        ]
+      },
+      {
+        "title": "Procedimientos del AIP para cada CTR",
+        "text": [
+          "Cada CTR publica en el AIP (AD 2) y en la carta VFR sus **procedimientos de fallo de comunicaciones**: por qué punto abandonar la CTR o por dónde incorporarte al circuito, y qué altitud mantener. Consúltalos antes de entrar en una CTR; saberlos te ahorra improvisar en un momento en el que tienes mucha carga de trabajo."
+        ]
+      }
+    ],
+    "numbers": [
+      "Código de transpondedor en fallo de comunicaciones: 7600",
+      "Procedimiento VFR: seguir en VMC, aterrizar en el aeródromo adecuado más próximo e informar",
+      "Acuse a señales luminosas: alabeo de día, destello de luces de noche",
+      "Frecuencia para intentar contacto: 121,5 MHz"
+    ],
+    "traps": [
+      "Mantener nivel y ruta es procedimiento IFR, no VFR.",
+      "7600 es fallo de comunicaciones; 7700 emergencia; 7500 interferencia ilícita.",
+      "La luz roja fija en vuelo es «ceda el paso y siga en circuito», no «no aterrice»."
+    ],
+    "spain": [
+      "El AIP España, AD 2, publica los procedimientos de fallo de comunicaciones de cada CTR."
+    ],
+    "sources": [
+      {
+        "title": "Anexo 2 y SERA (fallo de comunicaciones)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "AIP España AD 2 (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología ES/EN",
+        "href": "#/licencias/fraseologia"
+      },
+      {
+        "label": "Simulador de radio",
+        "href": "#/licencias/fraseologia?tab=radio"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "090.09.001",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Qué código de transpondedor se pone ante un fallo de comunicaciones?",
+      "options": [
+        "7500",
+        "7700",
+        "7600",
+        "7000"
+      ],
+      "correct": 2,
+      "why": "7600 es el código de fallo de comunicaciones.",
+      "whyNot": [
+        "Es interferencia ilícita.",
+        "Es emergencia.",
+        null,
+        "Es el código VFR."
+      ],
+      "ref": "SERA; Doc 7030"
+    },
+    {
+      "id": "090.09.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "Primera medida ante un posible fallo de radio:",
+      "options": [
+        "Comprobar volumen, frecuencia, cascos, PTT y conexiones",
+        "Poner 7700 de inmediato",
+        "Aterrizar en cualquier campo",
+        "Subir a un nivel mayor"
+      ],
+      "correct": 0,
+      "why": "Muchos fallos son de uso y se resuelven con una comprobación.",
+      "whyNot": [
+        null,
+        "Primero se comprueba el equipo.",
+        "No es la primera medida.",
+        "No es la primera medida."
+      ],
+      "ref": "Doc 9432"
+    },
+    {
+      "id": "090.09.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "Fallo de radio en VFR: ¿cuál es el procedimiento?",
+      "options": [
+        "Mantener el último nivel y la ruta",
+        "Volver siempre al aeródromo de salida",
+        "Ascender a FL100",
+        "Poner 7600, seguir en VMC y aterrizar en el aeródromo adecuado más próximo"
+      ],
+      "correct": 3,
+      "why": "El procedimiento VFR es seguir en VMC, aterrizar en el aeródromo adecuado más próximo e informar.",
+      "whyNot": [
+        "Eso es IFR.",
+        "No siempre es lo adecuado.",
+        "No es el procedimiento.",
+        null
+      ],
+      "ref": "Anexo 2; SERA"
+    },
+    {
+      "id": "090.09.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si pierdes la recepción pero tu transmisor funciona, ¿qué haces?",
+      "options": [
+        "No transmites nada",
+        "Transmites a ciegas tu posición e intenciones, repitiendo los mensajes",
+        "Transmites solo en 121,5 a ciegas",
+        "Apagas la radio"
+      ],
+      "correct": 1,
+      "why": "La transmisión a ciegas informa de tus intenciones por si el transmisor funciona.",
+      "whyNot": [
+        "Debes transmitir a ciegas.",
+        null,
+        "Primero en la frecuencia en uso.",
+        "No se apaga."
+      ],
+      "ref": "Doc 9432"
+    },
+    {
+      "id": "090.09.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es la transmisión a ciegas?",
+      "options": [
+        "Transmitir tus intenciones sin saber si te escuchan, por si funciona tu transmisor",
+        "Transmitir sin transpondedor",
+        "Transmitir sin identificarte",
+        "Transmitir en una frecuencia no asignada"
+      ],
+      "correct": 0,
+      "why": "Se transmite repitiendo el mensaje para que lo reciba quien pueda.",
+      "whyNot": [
+        null,
+        "No tiene relación.",
+        "Debes identificarte.",
+        "No es el significado."
+      ],
+      "ref": "Doc 9432"
+    },
+    {
+      "id": "090.09.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "Luz verde fija de la torre dirigida a una aeronave en vuelo:",
+      "options": [
+        "Regrese para aterrizar",
+        "Ceda el paso y siga en circuito",
+        "Autorizado a aterrizar",
+        "Aeródromo peligroso, no aterrice"
+      ],
+      "correct": 2,
+      "why": "Verde fija en vuelo: autorizado a aterrizar.",
+      "whyNot": [
+        "Eso son destellos verdes.",
+        "Es la roja fija.",
+        null,
+        "Son destellos rojos."
+      ],
+      "ref": "SERA, apéndice 1"
+    },
+    {
+      "id": "090.09.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "Luz roja fija de la torre dirigida a una aeronave en vuelo:",
+      "options": [
+        "Autorizado a aterrizar",
+        "Ceda el paso a otra aeronave y siga en circuito",
+        "Aeródromo peligroso, no aterrice",
+        "Aterrice y vaya a la plataforma"
+      ],
+      "correct": 1,
+      "why": "Roja fija en vuelo: ceda el paso y siga en circuito.",
+      "whyNot": [
+        "Es la verde fija.",
+        null,
+        "Son destellos rojos.",
+        "Son destellos blancos."
+      ],
+      "ref": "SERA, apéndice 1"
+    },
+    {
+      "id": "090.09.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "Destellos rojos de la torre dirigidos a una aeronave en vuelo:",
+      "options": [
+        "Ceda el paso",
+        "Regrese para aterrizar",
+        "Siga en circuito",
+        "Aeródromo peligroso, no aterrice"
+      ],
+      "correct": 3,
+      "why": "Los destellos rojos significan que el aeródromo es peligroso.",
+      "whyNot": [
+        "Es la roja fija.",
+        "Son destellos verdes.",
+        "Es la roja fija.",
+        null
+      ],
+      "ref": "SERA, apéndice 1"
+    },
+    {
+      "id": "090.09.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cómo se acusa recibo de día de una señal luminosa de la torre?",
+      "options": [
+        "Destellando luces",
+        "Con el transpondedor",
+        "Alabeando",
+        "Con un viraje de 360°"
+      ],
+      "correct": 2,
+      "why": "De día se acusa alabeando; de noche, destellando las luces.",
+      "whyNot": [
+        "Es la señal nocturna.",
+        "No es la señal.",
+        null,
+        "No es la señal."
+      ],
+      "ref": "SERA, apéndice 1"
+    },
+    {
+      "id": "090.09.010",
+      "type": "concepto",
+      "level": 3,
+      "q": "Un vuelo VFR pierde el contacto y no puede mantener VMC. ¿Qué situación crea?",
+      "options": [
+        "Una emergencia: debe declararla y poner 7700",
+        "Un fallo de comunicaciones sin más",
+        "Una urgencia sin riesgo",
+        "No cambia nada"
+      ],
+      "correct": 0,
+      "why": "Si no se pueden mantener las VMC, el vuelo deja de ser VFR y es una emergencia.",
+      "whyNot": [
+        null,
+        "Pierdes las VMC además de la radio.",
+        "Es una emergencia.",
+        "Cambia el procedimiento."
+      ],
+      "ref": "SERA"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.090.09.01",
+      "front": "Fallo de radio: código",
+      "back": "7600"
+    },
+    {
+      "id": "c.090.09.02",
+      "front": "Procedimiento VFR de fallo de comunicaciones",
+      "back": "7600, seguir en VMC, aterrizar en el aeródromo adecuado más próximo e informar"
+    },
+    {
+      "id": "c.090.09.03",
+      "front": "Mantener nivel y ruta",
+      "back": "Es procedimiento IFR, no VFR"
+    },
+    {
+      "id": "c.090.09.04",
+      "front": "Luz verde fija en vuelo",
+      "back": "Autorizado a aterrizar"
+    },
+    {
+      "id": "c.090.09.05",
+      "front": "Luz roja fija en vuelo",
+      "back": "Ceda el paso y siga en circuito"
+    },
+    {
+      "id": "c.090.09.06",
+      "front": "Acuse a señales luminosas",
+      "back": "Alabeo de día; destello de luces de noche"
+    }
+  ]
+}

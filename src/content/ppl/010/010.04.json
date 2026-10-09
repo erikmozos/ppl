@@ -1,0 +1,308 @@
+{
+  "lesson": {
+    "id": "010.04",
+    "title": "Marcas de nacionalidad y matrícula (Anexo 7)",
+    "summary": "Qué son las marcas de nacionalidad y de matrícula, el prefijo EC de España, dónde se colocan y qué tamaño tienen, el certificado de matrícula y la placa de identificación ignífuga.",
+    "objectives": [
+      "Componer e interpretar una matrícula española como EC-ABC",
+      "Conocer la colocación y el tamaño de las marcas en alas y fuselaje o cola",
+      "Saber qué acredita el certificado de matrícula y qué es la placa de identificación"
+    ],
+    "sections": [
+      {
+        "title": "Nacionalidad y matrícula de una aeronave",
+        "text": [
+          "Toda aeronave civil tiene la **nacionalidad** del Estado en el que está **matriculada** (Convenio de Chicago, arts. 17 a 21), y solo puede estar matriculada en un Estado a la vez. El **Anexo 7** de la OACI fija las **marcas de nacionalidad y de matrícula** que lleva cada aeronave para identificarse a simple vista.",
+          "La marca está formada por dos partes: las **marcas de nacionalidad**, que son una o más letras asignadas a cada Estado, y las **marcas de matrícula**, que identifican la aeronave concreta en ese Estado. Las españolas llevan el prefijo **EC**, un guion y tres letras. Un avión **EC-ABC** es el avión matriculado como ABC en España. El guion se coloca después de las letras de nacionalidad."
+        ]
+      },
+      {
+        "title": "Colocación y tamaño de las marcas",
+        "text": [
+          "Las marcas deben ser claras, visibles y de color contrastado con el fondo, y deben mantenerse limpias. En un avión se colocan en dos sitios, con tamaños mínimos distintos."
+        ],
+        "table": {
+          "caption": "Colocación y altura mínima de las marcas",
+          "head": [
+            "Zona",
+            "Colocación",
+            "Altura mínima"
+          ],
+          "rows": [
+            [
+              "Alas",
+              "Superficie inferior del ala, repartidas entre las dos mitades; las letras se leen de modo que la parte superior mira hacia el borde de ataque",
+              "50 cm"
+            ],
+            [
+              "Fuselaje",
+              "A cada lado del fuselaje, entre las alas y la cola",
+              "30 cm"
+            ],
+            [
+              "Cola",
+              "O en las mitades superiores de los planos verticales de cola (alternativa al fuselaje)",
+              "30 cm"
+            ]
+          ],
+          "src": "Anexo 7, cap. 4"
+        },
+        "note": {
+          "kind": "tip",
+          "text": "Regla de examen: alas 50 cm, fuselaje o cola 30 cm."
+        }
+      },
+      {
+        "title": "Forma de las marcas",
+        "text": [
+          "Las letras de las marcas son **mayúsculas del alfabeto latino**, sin adornos, de trazo sencillo y de un color que contraste con el fondo, de modo que se puedan leer con facilidad desde otro avión o desde el suelo. El guion tiene la misma altura mínima que el fuselaje o cola y se coloca entre las dos partes. No pueden usarse combinaciones que se confundan con las señales de socorro o con códigos de urgencia, y las marcas se mantienen limpias y legibles."
+        ]
+      },
+      {
+        "title": "La matrícula en la radio",
+        "text": [
+          "La matrícula es también tu **distintivo de llamada** de aeronave. En la primera llamada se dice completa, letra a letra con el alfabeto de deletreo: EC-ABC se transmite «Eco Charlie Alfa Bravo Charlie». Una vez que el servicio ATS ha usado el distintivo abreviado, puedes abreviarlo al primer carácter y los dos últimos: «E-BC». La regla completa la verás en el bloque de comunicaciones."
+        ]
+      },
+      {
+        "title": "Cambio de propietario y cambio de Estado",
+        "text": [
+          "La matrícula acompaña a la aeronave mientras siga inscrita en el mismo registro. Si se vende a otro propietario del mismo Estado, el certificado de matrícula se actualiza con el nuevo titular. Si se vende a otro Estado, se **cancela** la matrícula en el registro de origen y se **matricula de nuevo** en el nuevo Estado, con nuevas marcas de nacionalidad y matrícula: los certificados anteriores dejan de valer y la aeronave debe obtener los nuevos. Una aeronave con la matrícula cancelada no puede volar."
+        ]
+      },
+      {
+        "title": "Certificado de matrícula y placa de identificación",
+        "text": [
+          "El **certificado de matrícula** acredita que la aeronave está inscrita en el registro de un Estado, con el nombre del propietario y las marcas. Lo emite en España AESA, que lleva el Registro de Matrícula de Aeronaves, y debe llevarse a bordo (art. 29 del Convenio de Chicago).",
+          "La aeronave lleva además una **placa de identificación** (ignífuga) de metal o de otro material resistente al fuego, con las marcas de nacionalidad y de matrícula, fijada en un lugar visible cerca de la entrada principal, que permite identificar la aeronave aunque se destruyan las marcas pintadas tras un accidente."
+        ]
+      }
+    ],
+    "numbers": [
+      "Prefijo español: EC; formato EC-ABC",
+      "Marcas en alas: ≥ 50 cm de altura",
+      "Marcas en fuselaje o cola: ≥ 30 cm de altura",
+      "Certificado de matrícula: a bordo (art. 29 del Convenio de Chicago)"
+    ],
+    "traps": [
+      "Los 50 cm son las alas; los 30 cm son el fuselaje o la cola, no al revés.",
+      "El guion va entre la nacionalidad y la matrícula: EC-ABC, no ECABC en las marcas pintadas.",
+      "La nacionalidad es la del Estado de matrícula, no la del propietario."
+    ],
+    "spain": [
+      "La matrícula española empieza por EC; AESA lleva el Registro de Matrícula de Aeronaves."
+    ],
+    "sources": [
+      {
+        "title": "Anexo 7 de la OACI: Marcas de nacionalidad y de matrícula de las aeronaves"
+      },
+      {
+        "title": "AESA: matriculación de aeronaves"
+      }
+    ],
+    "links": [
+      {
+        "label": "Cabina del Cessna 172",
+        "href": "#/ac/c172"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "010.04.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué prefijo de nacionalidad llevan las aeronaves matriculadas en España?",
+      "options": [
+        "ES",
+        "EA",
+        "EC",
+        "SP"
+      ],
+      "correct": 2,
+      "why": "Las aeronaves civiles españolas llevan el prefijo EC.",
+      "whyNot": [
+        "Es el prefijo de Estonia.",
+        "No es el prefijo de España.",
+        null,
+        "No es el prefijo de España."
+      ],
+      "ref": "Anexo 7"
+    },
+    {
+      "id": "010.04.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "En la matrícula EC-ABC, ¿qué significan «EC» y «ABC»?",
+      "options": [
+        "Nacionalidad española y la identificación concreta de la aeronave",
+        "Tipo de avión y número de serie",
+        "Estado de operación y año",
+        "Escuela y base"
+      ],
+      "correct": 0,
+      "why": "EC es la marca de nacionalidad y ABC es la marca de matrícula.",
+      "whyNot": [
+        null,
+        "La matrícula no indica tipo.",
+        "No indican año.",
+        "No indican escuela."
+      ],
+      "ref": "Anexo 7"
+    },
+    {
+      "id": "010.04.003",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué altura mínima tienen las marcas de matrícula en las alas?",
+      "options": [
+        "30 cm",
+        "20 cm",
+        "100 cm",
+        "50 cm"
+      ],
+      "correct": 3,
+      "why": "Alas: al menos 50 cm.",
+      "whyNot": [
+        "Es la del fuselaje o la cola.",
+        "No es la cifra.",
+        "No es la cifra.",
+        null
+      ],
+      "ref": "Anexo 7, cap. 4"
+    },
+    {
+      "id": "010.04.004",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué altura mínima tienen las marcas en el fuselaje o en la cola?",
+      "options": [
+        "50 cm",
+        "30 cm",
+        "15 cm",
+        "60 cm"
+      ],
+      "correct": 1,
+      "why": "Fuselaje o cola: al menos 30 cm.",
+      "whyNot": [
+        "Es la de las alas.",
+        null,
+        "No es la cifra.",
+        "No es la cifra."
+      ],
+      "ref": "Anexo 7, cap. 4"
+    },
+    {
+      "id": "010.04.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Dónde se colocan las marcas en las alas?",
+      "options": [
+        "En la superficie inferior del ala",
+        "En el borde de ataque",
+        "En la superficie superior del ala",
+        "En los flaps"
+      ],
+      "correct": 0,
+      "why": "Las marcas alares se sitúan en la superficie inferior.",
+      "whyNot": [
+        null,
+        "No es la ubicación.",
+        "Es la inferior.",
+        "No es la ubicación."
+      ],
+      "ref": "Anexo 7, cap. 4"
+    },
+    {
+      "id": "010.04.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué acredita el certificado de matrícula?",
+      "options": [
+        "Que la aeronave es aeronavegable",
+        "Que el piloto está habilitado",
+        "La inscripción de la aeronave en el registro de un Estado, con su propietario",
+        "Que el avión está asegurado"
+      ],
+      "correct": 2,
+      "why": "El certificado de matrícula acredita la inscripción en el registro y debe estar a bordo.",
+      "whyNot": [
+        "Eso es el CofA.",
+        "Eso es la licencia.",
+        null,
+        "Eso es el seguro."
+      ],
+      "ref": "Convenio de Chicago, arts. 19 y 29"
+    },
+    {
+      "id": "010.04.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es la placa de identificación de una aeronave?",
+      "options": [
+        "Una placa de limitaciones de peso",
+        "Una placa ignífuga con las marcas de nacionalidad y de matrícula",
+        "Una placa del motor",
+        "Una placa de la escuela"
+      ],
+      "correct": 1,
+      "why": "La placa ignífuga permite identificar la aeronave aunque se destruyan las marcas pintadas.",
+      "whyNot": [
+        "No es la placa de identificación.",
+        null,
+        "No es la placa de identificación.",
+        "No es la placa de identificación."
+      ],
+      "ref": "Anexo 7"
+    },
+    {
+      "id": "010.04.008",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Cuántos Estados pueden registrar una misma aeronave civil a la vez?",
+      "options": [
+        "Dos, si hay un acuerdo",
+        "Los que el propietario elija",
+        "Ninguno si es privada",
+        "Uno solo"
+      ],
+      "correct": 3,
+      "why": "Una aeronave no puede estar matriculada válidamente en más de un Estado.",
+      "whyNot": [
+        "No se admite doble matrícula.",
+        "No se admite doble matrícula.",
+        "Toda aeronave civil se matricula.",
+        null
+      ],
+      "ref": "Convenio de Chicago, art. 18"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.010.04.01",
+      "front": "Matrícula española",
+      "back": "Prefijo EC, guion y tres letras (EC-ABC)"
+    },
+    {
+      "id": "c.010.04.02",
+      "front": "Marcas en las alas",
+      "back": "Superficie inferior, al menos 50 cm"
+    },
+    {
+      "id": "c.010.04.03",
+      "front": "Marcas en fuselaje o cola",
+      "back": "Al menos 30 cm"
+    },
+    {
+      "id": "c.010.04.04",
+      "front": "Certificado de matrícula",
+      "back": "Acredita la inscripción en el registro; se lleva a bordo"
+    },
+    {
+      "id": "c.010.04.05",
+      "front": "Placa de identificación",
+      "back": "Ignífuga, con marcas de nacionalidad y matrícula"
+    }
+  ]
+}

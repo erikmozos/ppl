@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330">
+  <title>Fuerzas en un viraje nivelado: la sustentación inclinada se descompone en una componente vertical que equilibra el peso y otra horizontal que curva la trayectoria</title>
+  <defs>
+    <marker id="080-viraje-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+    <marker id="080-viraje-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker>
+    <marker id="080-viraje-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker>
+  </defs>
+  <line x1="40" y1="170" x2="420" y2="170" class="ln2 dash"/>
+  <text x="44" y="162" class="tx2">horizonte</text>
+  <line x1="120" y1="95" x2="380" y2="245" class="ln thick"/>
+  <ellipse cx="250" cy="170" rx="14" ry="9" class="soft" transform="rotate(30 250 170)"/>
+  <line x1="250" y1="170" x2="315" y2="57" class="ac-ln thick" marker-end="url(#080-viraje-a)"/>
+  <line x1="250" y1="170" x2="250" y2="283" class="wa-ln thick" marker-end="url(#080-viraje-w)"/>
+  <line x1="250" y1="170" x2="250" y2="57" class="ln2 dash"/>
+  <line x1="250" y1="170" x2="315" y2="170" class="ln thick" marker-end="url(#080-viraje-k)"/>
+  <line x1="315" y1="57" x2="315" y2="170" class="ln2 dash"/>
+  <line x1="250" y1="57" x2="315" y2="57" class="ln2 dash"/>
+  <path d="M250 110 A60 60 0 0 1 280 118" class="ln" fill="none"/>
+  <text x="262" y="102" class="tx b">φ</text>
+  <text x="326" y="50" class="txa b">L</text>
+  <text x="258" y="296" class="txw b">W</text>
+  <text x="242" y="100" class="tx2" text-anchor="end">L cos φ = W</text>
+  <text x="322" y="162" class="tx b">L sen φ</text>
+  <text x="322" y="180" class="tx2">hacia el centro</text>
+  <text x="392" y="262" class="tx2">ala baja</text>
+  <text x="440" y="40" class="tx b">Viraje nivelado</text>
+  <text x="440" y="72" class="tx">n = L / W = 1 / cos φ</text>
+  <text x="440" y="96" class="tx">r = V² / (g · tan φ)</text>
+  <text x="440" y="120" class="tx">régimen = V / r</text>
+  <text x="440" y="156" class="tx2">Vertical: L cos φ = W</text>
+  <text x="440" y="176" class="tx2">Horizontal: L sen φ = m V² / r</text>
+  <text x="440" y="212" class="tx2">Con φ = 60°, cos φ = 0,5:</text>
+  <text x="440" y="230" class="tx2">L = 2 W y n = 2.</text>
+  <text x="40" y="310" class="tx2">Vista desde delante, viraje a la derecha.</text>
+</svg>

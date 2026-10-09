@@ -1,0 +1,410 @@
+{
+  "lesson": {
+    "id": "090.10",
+    "title": "Socorro y urgencia",
+    "summary": "Definiciones de socorro y urgencia, frecuencias y escucha (121,5 MHz), estructura del mensaje MAYDAY y PAN PAN, imposición de silencio, retransmisión, fin del tráfico de socorro y el código 7700.",
+    "objectives": [
+      "Distinguir una situación de socorro de una de urgencia",
+      "Construir un mensaje MAYDAY y uno PAN PAN con el orden correcto",
+      "Conocer la frecuencia que usar y qué hacer si oyes un mensaje de socorro",
+      "Saber imponer y levantar el silencio y retransmitir un socorro",
+      "Usar el código 7700 y las palabras MINIMUM FUEL y MAYDAY FUEL"
+    ],
+    "sections": [
+      {
+        "title": "Socorro y urgencia: dos situaciones distintas",
+        "text": [
+          "Una **situación de socorro** es la que implica un **peligro grave e inminente** y requiere **ayuda inmediata**: fallo de motor sin posibilidad de llegar a un aeródromo, incendio, pérdida de control. Se declara con **MAYDAY** y tiene prioridad absoluta sobre cualquier otro tráfico.",
+          "Una **situación de urgencia** es la que afecta a la **seguridad** de la aeronave o de una persona a bordo, pero **no requiere ayuda inmediata**: posición incierta, pérdida de combustible no crítica, un pasajero enfermo, mal tiempo que dificulta el vuelo. Se declara con **PAN PAN** y tiene prioridad sobre el tráfico normal, aunque no sobre un socorro."
+        ]
+      },
+      {
+        "title": "El mensaje de socorro: MAYDAY",
+        "text": [
+          "Se transmite en la frecuencia en uso. Si no obtienes respuesta, repite en **121,5 MHz**. Llevas el transpondedor a **7700**. El orden del mensaje se recuerda así: quién eres, qué pasa, qué vas a hacer y dónde estás."
+        ],
+        "table": {
+          "caption": "Estructura del mensaje MAYDAY y PAN PAN",
+          "head": [
+            "Elemento",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "MAYDAY o PAN PAN, tres veces",
+              "MAYDAY, MAYDAY, MAYDAY"
+            ],
+            [
+              "Estación llamada",
+              "Villanueva Torre"
+            ],
+            [
+              "Distintivo",
+              "EC-ABC"
+            ],
+            [
+              "Naturaleza de la emergencia",
+              "Fallo de motor"
+            ],
+            [
+              "Intenciones",
+              "Realizo aterrizaje forzoso"
+            ],
+            [
+              "Posición, nivel y rumbo",
+              "5 millas al norte de Villanueva, 2000 pies, rumbo 180"
+            ],
+            [
+              "Otros datos",
+              "Dos personas a bordo"
+            ]
+          ],
+          "src": "SERA.14; Anexo 10, vol. II"
+        },
+        "examples": [
+          {
+            "q": "Español: fallo de motor, 5 millas al norte de Villanueva, 2000 pies, rumbo 180, dos personas a bordo.",
+            "a": "«MAYDAY, MAYDAY, MAYDAY, Villanueva Torre, Eco Charlie Alfa Bravo Charlie, Cessna 172, fallo de motor, realizo aterrizaje forzoso, 5 millas al norte de Villanueva, 2000 pies, rumbo 180, dos personas a bordo.»"
+          },
+          {
+            "q": "Inglés: el mismo mensaje.",
+            "a": "«MAYDAY, MAYDAY, MAYDAY, Villanueva Tower, Echo Charlie Alpha Bravo Charlie, Cessna 172, engine failure, making forced landing, 5 miles north of Villanueva, 2000 feet, heading 180, two persons on board.»"
+          }
+        ]
+      },
+      {
+        "title": "El mensaje de urgencia: PAN PAN",
+        "text": [
+          "Tiene la misma estructura, con «**PAN PAN, PAN PAN, PAN PAN**». Si eres alumno, díselo al controlador: «alumno piloto» (student pilot) para que adapte las instrucciones. Si estás perdido, el ATS puede **identificarte** por radar o por radiogoniometría (pide un QDM) y guiarte a un aeródromo."
+        ]
+      },
+      {
+        "title": "Prioridades cuando algo va mal",
+        "text": [
+          "En una emergencia el orden de prioridades es **volar, navegar y comunicar**: primero controlas el avión (actitud, velocidad de mejor planeo, lista del POH), después decides adónde ir y solo al final llamas por radio. Una llamada de socorro correcta es muy útil, pero no te salva si pierdes el control. Cuando ya has estabilizado el avión, transmite el MAYDAY o el PAN PAN con la estructura anterior y sigue las instrucciones del controlador, que puede ofrecerte rumbo, aeródromo cercano y servicios de emergencia.",
+          "No esperes a que la situación empeore para declarar la urgencia. Es mejor declarar un PAN PAN que no necesitas que llegar tarde a un MAYDAY."
+        ]
+      },
+      {
+        "title": "Silencio, retransmisión y fin del tráfico de socorro",
+        "table": {
+          "caption": "Frases del tráfico de socorro",
+          "head": [
+            "Español",
+            "Inglés",
+            "Quién y para qué"
+          ],
+          "rows": [
+            [
+              "CESE DE TRANSMITIR, MAYDAY",
+              "STOP TRANSMITTING, MAYDAY",
+              "La estación en socorro o la que controla el tráfico impone silencio"
+            ],
+            [
+              "MAYDAY RELAY (retransmisión)",
+              "MAYDAY RELAY",
+              "Otra estación retransmite el socorro de una aeronave que no puede"
+            ],
+            [
+              "TRÁFICO DE SOCORRO TERMINADO",
+              "DISTRESS TRAFFIC ENDED",
+              "Se levanta el silencio cuando ya no hace falta"
+            ]
+          ],
+          "src": "SERA.14; Anexo 10, vol. II"
+        },
+        "bullets": [
+          "Si oyes un MAYDAY, **no transmitas** salvo que puedas ayudar o que nadie lo haya oído; si hace falta, **retransmítelo**.",
+          "Mientras haya silencio impuesto, no se transmite en esa frecuencia hasta que se anuncie el fin."
+        ]
+      },
+      {
+        "title": "Código 7700 y mensajes de combustible",
+        "text": [
+          "El **7700** es el código de **emergencia**. Se pone junto con MAYDAY o PAN PAN. Cuando la reserva de combustible llega a un nivel que preocupa, se usan dos mensajes especiales: **«MINIMUM FUEL»** (combustible mínimo) informa de que no puedes aceptar demoras pero **no es una emergencia**; **«MAYDAY, MAYDAY, MAYDAY FUEL»** declara una emergencia de combustible, cuando se prevé aterrizar con menos de la reserva final. Ambos se aplican desde el 30 de octubre de 2022 (Reglamento (UE) 2021/1296)."
+        ]
+      }
+    ],
+    "numbers": [
+      "MAYDAY ×3: socorro; PAN PAN ×3: urgencia",
+      "Frecuencia de socorro: 121,5 MHz; transpondedor 7700",
+      "Orden: quién soy, qué pasa, qué voy a hacer, dónde estoy",
+      "Silencio: «cese de transmitir, MAYDAY»; fin: «tráfico de socorro terminado»",
+      "MINIMUM FUEL no es una emergencia; MAYDAY FUEL sí"
+    ],
+    "traps": [
+      "MAYDAY y PAN PAN se dicen tres veces.",
+      "MINIMUM FUEL no declara emergencia; MAYDAY FUEL sí.",
+      "El silencio de socorro lo levanta «tráfico de socorro terminado», no «recibido».",
+      "La urgencia es PAN PAN, no «urgencia»."
+    ],
+    "spain": [
+      "En España se escucha 121,5 MHz de forma continua en los centros de control y en los servicios de información de vuelo."
+    ],
+    "sources": [
+      {
+        "title": "SERA, sección 14 (EASA)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "Reglamento (UE) 2021/1296 (combustible)",
+        "url": "https://eur-lex.europa.eu/eli/reg_impl/2021/1296/oj"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología ES/EN",
+        "href": "#/licencias/fraseologia"
+      },
+      {
+        "label": "Simulador de radio",
+        "href": "#/licencias/fraseologia?tab=radio"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "090.10.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué palabra se usa para declarar una situación de socorro?",
+      "options": [
+        "PAN PAN",
+        "SÉCURITÉ",
+        "MAYDAY",
+        "EMERGENCIA"
+      ],
+      "correct": 2,
+      "why": "El socorro se declara con MAYDAY tres veces.",
+      "whyNot": [
+        "Es urgencia.",
+        "No se usa en aviación VFR para socorro.",
+        null,
+        "No es fraseología OACI."
+      ],
+      "ref": "SERA.14"
+    },
+    {
+      "id": "090.10.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué palabra se usa para declarar una urgencia?",
+      "options": [
+        "PAN PAN",
+        "MAYDAY",
+        "ALERTA",
+        "URGENCIA"
+      ],
+      "correct": 0,
+      "why": "La urgencia se declara con PAN PAN tres veces.",
+      "whyNot": [
+        null,
+        "Es socorro.",
+        "No es fraseología.",
+        "No es fraseología."
+      ],
+      "ref": "SERA.14"
+    },
+    {
+      "id": "090.10.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué distingue el socorro de la urgencia?",
+      "options": [
+        "El socorro se declara solo en 121,5 MHz",
+        "La urgencia se declara solo de noche",
+        "Son lo mismo",
+        "El socorro implica peligro grave e inminente que requiere ayuda inmediata"
+      ],
+      "correct": 3,
+      "why": "El socorro implica peligro grave e inminente; la urgencia no requiere ayuda inmediata.",
+      "whyNot": [
+        "Se declara en la frecuencia en uso.",
+        "No depende de la hora.",
+        "Son distintos.",
+        null
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.10.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un alumno que ha perdido la posición pero no está en peligro inmediato debe declarar:",
+      "options": [
+        "MAYDAY",
+        "PAN PAN",
+        "MINIMUM FUEL",
+        "Nada: puede seguir volando"
+      ],
+      "correct": 1,
+      "why": "La posición incierta sin peligro inmediato es una urgencia.",
+      "whyNot": [
+        "No hay peligro inmediato.",
+        null,
+        "No es un problema de combustible.",
+        "Debe pedir ayuda."
+      ],
+      "ref": "SERA.14"
+    },
+    {
+      "id": "090.10.005",
+      "type": "regla",
+      "level": 1,
+      "q": "¿En qué frecuencia debes repetir una llamada de socorro si no responden en la frecuencia en uso?",
+      "options": [
+        "121,5 MHz",
+        "118,0 MHz",
+        "123,45 MHz",
+        "406 MHz"
+      ],
+      "correct": 0,
+      "why": "La frecuencia de socorro es 121,5 MHz.",
+      "whyNot": [
+        null,
+        "No es la frecuencia de socorro.",
+        "Es una frecuencia aire-aire.",
+        "Es la de las balizas."
+      ],
+      "ref": "Anexo 10, vol. V"
+    },
+    {
+      "id": "090.10.006",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Qué código de transpondedor se pone en una emergencia?",
+      "options": [
+        "7600",
+        "7500",
+        "7700",
+        "7000"
+      ],
+      "correct": 2,
+      "why": "El 7700 es el código de emergencia.",
+      "whyNot": [
+        "Es fallo de comunicaciones.",
+        "Es interferencia ilícita.",
+        null,
+        "Es el código VFR."
+      ],
+      "ref": "SERA; Doc 7030"
+    },
+    {
+      "id": "090.10.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál es el orden correcto de un mensaje MAYDAY?",
+      "options": [
+        "Posición, MAYDAY, distintivo",
+        "MAYDAY ×3, estación, distintivo, naturaleza, intenciones, posición y otros datos",
+        "Distintivo, posición, MAYDAY",
+        "Intenciones, MAYDAY, naturaleza"
+      ],
+      "correct": 1,
+      "why": "El orden es MAYDAY ×3, estación, quién eres, qué pasa, intenciones, dónde estás y otros datos.",
+      "whyNot": [
+        "No es el orden.",
+        null,
+        "No es el orden.",
+        "No es el orden."
+      ],
+      "ref": "SERA.14"
+    },
+    {
+      "id": "090.10.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa «cese de transmitir, MAYDAY»?",
+      "options": [
+        "Que el MAYDAY ha terminado",
+        "Que se repite el MAYDAY",
+        "Que se ha cambiado de frecuencia",
+        "Que se impone silencio en la frecuencia por un tráfico de socorro"
+      ],
+      "correct": 3,
+      "why": "Es la orden de silencio durante el socorro.",
+      "whyNot": [
+        "Eso es «tráfico de socorro terminado».",
+        "No es el significado.",
+        "No es el significado.",
+        null
+      ],
+      "ref": "SERA.14"
+    },
+    {
+      "id": "090.10.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué frase pone fin al tráfico de socorro?",
+      "options": [
+        "Cambio y fuera",
+        "Recibido MAYDAY",
+        "Tráfico de socorro terminado",
+        "Cese de transmitir"
+      ],
+      "correct": 2,
+      "why": "«Tráfico de socorro terminado» (distress traffic ended) levanta el silencio.",
+      "whyNot": [
+        "No es la frase.",
+        "Es el acuse del socorro.",
+        null,
+        "Impone el silencio."
+      ],
+      "ref": "SERA.14"
+    },
+    {
+      "id": "090.10.010",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Qué significa MINIMUM FUEL?",
+      "options": [
+        "Que no puedes aceptar demoras, pero no es una emergencia",
+        "Que declaras emergencia por falta de combustible",
+        "Que ya estás en reserva final",
+        "Que has aterrizado"
+      ],
+      "correct": 0,
+      "why": "MINIMUM FUEL avisa de que el combustible es limitado, sin declarar emergencia.",
+      "whyNot": [
+        null,
+        "Eso es MAYDAY FUEL.",
+        "No es el significado.",
+        "No es el significado."
+      ],
+      "ref": "NCO.OP.185"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.090.10.01",
+      "front": "MAYDAY y PAN PAN",
+      "back": "MAYDAY ×3: socorro; PAN PAN ×3: urgencia"
+    },
+    {
+      "id": "c.090.10.02",
+      "front": "Frecuencia de socorro y código",
+      "back": "121,5 MHz y 7700"
+    },
+    {
+      "id": "c.090.10.03",
+      "front": "Orden de un MAYDAY",
+      "back": "Quién soy, qué pasa, qué voy a hacer, dónde estoy y otros datos"
+    },
+    {
+      "id": "c.090.10.04",
+      "front": "Silencio en socorro",
+      "back": "«Cese de transmitir, MAYDAY»; se levanta con «tráfico de socorro terminado»"
+    },
+    {
+      "id": "c.090.10.05",
+      "front": "MINIMUM FUEL",
+      "back": "No es emergencia: no se pueden aceptar demoras"
+    },
+    {
+      "id": "c.090.10.06",
+      "front": "MAYDAY FUEL",
+      "back": "Emergencia de combustible"
+    }
+  ]
+}

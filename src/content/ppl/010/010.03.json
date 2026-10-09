@@ -1,0 +1,407 @@
+{
+  "lesson": {
+    "id": "010.03",
+    "title": "Aeronavegabilidad (Anexo 8)",
+    "summary": "Certificado de aeronavegabilidad (CofA), certificado de revisión de la aeronavegabilidad (ARC) de 12 meses, cuándo deja de valer, permiso de vuelo, directivas de aeronavegabilidad, certificado de aptitud para el servicio (CRS) y mantenimiento por el piloto-propietario según Part-ML.",
+    "objectives": [
+      "Explicar qué acredita el CofA y qué lo hace perder validez",
+      "Aplicar la regla del ARC de 12 meses",
+      "Distinguir CofA, ARC, CRS y permiso de vuelo",
+      "Conocer qué mantenimiento puede realizar un piloto-propietario con Part-ML"
+    ],
+    "sections": [
+      {
+        "title": "Qué es la aeronavegabilidad",
+        "text": [
+          "Una aeronave es **aeronavegable** cuando cumple su diseño certificado y está en condiciones de operar con seguridad. El **Anexo 8** de la OACI establece los requisitos mínimos, que en la Unión Europea desarrollan **Part 21** (aeronavegabilidad inicial: Reglamento 748/2012) y **Part-M** y **Part-ML** (aeronavegabilidad continuada, mantenimiento: Reglamento 1321/2014). Dos ideas la gobiernan: que el avión **se diseñó y construyó bien** (certificado de tipo) y que **se mantiene bien** durante su vida útil.",
+          "Como piloto, no certificas la aeronavegabilidad del avión, pero sí tienes que comprobar antes de cada vuelo que los documentos están en regla y que no hay anomalías visibles. Un vuelo con una aeronave no aeronavegable, o con documentos caducados, es una infracción grave."
+        ]
+      },
+      {
+        "title": "Los certificados: CofA, ARC y CRS",
+        "table": {
+          "caption": "Certificados de aeronavegabilidad",
+          "head": [
+            "Certificado",
+            "Qué acredita",
+            "Validez"
+          ],
+          "rows": [
+            [
+              "Certificado de aeronavegabilidad (CofA)",
+              "Que la aeronave cumple su diseño de tipo y es segura para operar. Lo emite la autoridad del Estado de matrícula",
+              "No tiene fecha de caducidad en la UE, pero solo vale si se mantiene en vigor el ARC"
+            ],
+            [
+              "Certificado de revisión de la aeronavegabilidad (ARC)",
+              "Que se ha hecho una revisión y la aeronave está en condiciones de seguir volando",
+              "12 meses; puede prorrogarse"
+            ],
+            [
+              "Certificado de aptitud para el servicio (CRS)",
+              "Que se ha realizado el mantenimiento correctamente y la aeronave o el componente pueden volver al servicio",
+              "Tras cada mantenimiento"
+            ],
+            [
+              "Permiso de vuelo",
+              "Autoriza vuelos de aeronaves sin CofA pero seguras para un vuelo concreto (pruebas, traslado)",
+              "El que fije la autoridad"
+            ]
+          ],
+          "src": "Part 21; Part-ML; Anexo 8"
+        }
+      },
+      {
+        "title": "Cuándo deja de valer el CofA",
+        "text": [
+          "El CofA deja de ser válido si se suspende, se revoca o se devuelve; si la aeronave deja de estar matriculada en ese Estado; si el **ARC no está en vigor**; si la aeronave **no se mantiene** conforme al programa de mantenimiento; si se hacen **modificaciones no aprobadas**; o si queda dañada y no se repara de forma aprobada. Un CofA sin ARC en vigor **no permite volar**.",
+          "También hay que cumplir las **directivas de aeronavegabilidad** (AD): son instrucciones obligatorias que publica la autoridad para corregir una condición insegura. Una AD incumplida inhabilita la aeronave hasta que se cumpla."
+        ],
+        "note": {
+          "kind": "warn",
+          "text": "Un CofA sin ARC en vigor no permite volar. Antes de cada vuelo comprueba que el ARC no ha caducado."
+        }
+      },
+      {
+        "title": "El permiso de vuelo",
+        "text": [
+          "Hay aeronaves que no cumplen todos los requisitos de aeronavegabilidad (por ejemplo, tras un cambio importante que aún no está aprobado) pero que son seguras para un vuelo concreto. La autoridad puede emitir un **permiso de vuelo** que limita las condiciones: ferry (traslado), pruebas de vuelo, demostraciones, y aeronaves de construcción por aficionados. No es un CofA y su uso queda restringido a lo que indica."
+        ]
+      },
+      {
+        "title": "Mantenimiento: programa, CRS y piloto-propietario (Part-ML)",
+        "text": [
+          "Toda aeronave tiene un **programa de mantenimiento** (AMP) con las inspecciones y tareas periódicas. Cuando se realiza un mantenimiento, quien lo hace emite el **CRS**; sin él, el avión no vuelve al servicio. Para aeronaves ligeras (por ejemplo, aviones de hasta 2730 kg de masa máxima al despegue no complejos y no comerciales), **Part-ML** simplifica el sistema y reconoce el papel del propietario.",
+          "El **piloto-propietario** (un piloto que es propietario o copropietario de la aeronave, que no se usa comercialmente) puede realizar **tareas limitadas de mantenimiento** de una lista, como cambiar el aceite, comprobar presiones y sustituir ciertos elementos sencillos. El piloto-propietario emite el CRS de esas tareas y debe anotarlas en el registro. El resto (revisiones periódicas, reparaciones de estructura, motor) solo las hace personal autorizado."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Qué comprueba el piloto antes de volar",
+        "bullets": [
+          "Que el certificado de matrícula, el CofA y el ARC están en vigor y a bordo.",
+          "Que la aeronave tiene el CRS de la última intervención de mantenimiento y que no hay AD pendientes.",
+          "Que no hay anomalías conocidas sin resolver (diario de a bordo).",
+          "Que el avión está dentro de sus limitaciones de masa y centrado y lleva el equipo mínimo."
+        ]
+      }
+    ],
+    "numbers": [
+      "ARC: 12 meses de validez",
+      "CofA sin ARC en vigor: no se puede volar",
+      "CRS: certifica la vuelta al servicio tras el mantenimiento",
+      "Part-ML: aviones no complejos de hasta 2730 kg MTOM"
+    ],
+    "traps": [
+      "El CofA no tiene fecha de caducidad en la UE, pero sin ARC en vigor no sirve.",
+      "Una AD incumplida inhabilita la aeronave aunque el ARC esté en vigor.",
+      "El piloto-propietario solo puede hacer las tareas de la lista, y debe emitir el CRS de las que haga."
+    ],
+    "spain": [
+      "En España, AESA es la autoridad que emite el CofA, el ARC (o lo supervisa) y los permisos de vuelo."
+    ],
+    "sources": [
+      {
+        "title": "Reglamento (UE) 1321/2014, incluido Part-ML (EASA Easy Access Rules)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-continuing-airworthiness"
+      },
+      {
+        "title": "Reglamento (UE) 748/2012 (Part 21)",
+        "url": "https://eur-lex.europa.eu/eli/reg/2012/748/oj"
+      }
+    ],
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "010.03.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué acredita el certificado de aeronavegabilidad (CofA)?",
+      "options": [
+        "Que el piloto tiene licencia",
+        "Que el avión está asegurado",
+        "Que la aeronave cumple su diseño de tipo y es segura para operar",
+        "Que el avión está matriculado"
+      ],
+      "correct": 2,
+      "why": "El CofA acredita que la aeronave cumple su diseño certificado y es segura para operar.",
+      "whyNot": [
+        "Es la licencia.",
+        "Es el seguro.",
+        null,
+        "Es el certificado de matrícula."
+      ],
+      "ref": "Anexo 8; Part 21"
+    },
+    {
+      "id": "010.03.002",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Cuál es la validez del ARC?",
+      "options": [
+        "12 meses",
+        "6 meses",
+        "24 meses",
+        "36 meses"
+      ],
+      "correct": 0,
+      "why": "El certificado de revisión de la aeronavegabilidad tiene una validez de 12 meses.",
+      "whyNot": [
+        null,
+        "No es la cifra.",
+        "No es la cifra.",
+        "No es la cifra."
+      ],
+      "ref": "Part-ML; Part-M"
+    },
+    {
+      "id": "010.03.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un avión tiene el CofA pero el ARC ha caducado. ¿Puede volar?",
+      "options": [
+        "Sí, el CofA no caduca nunca",
+        "Sí, si es un vuelo local",
+        "Sí, con permiso verbal del jefe de escuela",
+        "No: sin ARC en vigor no es válido para volar"
+      ],
+      "correct": 3,
+      "why": "El CofA solo sirve con el ARC en vigor.",
+      "whyNot": [
+        "El ARC debe estar en vigor.",
+        "Un vuelo local también exige el ARC.",
+        "No existe esa autorización.",
+        null
+      ],
+      "ref": "Part 21; Part-ML"
+    },
+    {
+      "id": "010.03.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es el CRS?",
+      "options": [
+        "El certificado de ruido",
+        "El certificado que acredita que el mantenimiento se ha realizado y la aeronave puede volver al servicio",
+        "El certificado de revisión de aeronavegabilidad",
+        "El certificado de matrícula"
+      ],
+      "correct": 1,
+      "why": "El CRS es el certificado de aptitud para el servicio tras el mantenimiento.",
+      "whyNot": [
+        "Es otro certificado.",
+        null,
+        "Es el ARC.",
+        "Es otro certificado."
+      ],
+      "ref": "Part-ML; Part-145"
+    },
+    {
+      "id": "010.03.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Para qué sirve un permiso de vuelo?",
+      "options": [
+        "Para permitir vuelos concretos de aeronaves sin CofA que son seguras para ese vuelo",
+        "Para volar con un ARC caducado de forma ilimitada",
+        "Para sustituir el seguro",
+        "Para sustituir la licencia del piloto"
+      ],
+      "correct": 0,
+      "why": "El permiso de vuelo autoriza vuelos concretos (pruebas, traslado) cuando no hay CofA.",
+      "whyNot": [
+        null,
+        "No es su finalidad.",
+        "No tiene relación.",
+        "No tiene relación."
+      ],
+      "ref": "Part 21"
+    },
+    {
+      "id": "010.03.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es una directiva de aeronavegabilidad (AD)?",
+      "options": [
+        "Una recomendación opcional del fabricante",
+        "Un certificado de matrícula",
+        "Una instrucción obligatoria para corregir una condición insegura",
+        "Un programa de mantenimiento"
+      ],
+      "correct": 2,
+      "why": "Las AD son obligatorias y su incumplimiento invalida la aeronavegabilidad.",
+      "whyNot": [
+        "Es obligatoria.",
+        "No lo es.",
+        null,
+        "No lo es."
+      ],
+      "ref": "Part 21"
+    },
+    {
+      "id": "010.03.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué puede hacer un piloto-propietario con Part-ML?",
+      "options": [
+        "Cualquier reparación del motor",
+        "Realizar tareas limitadas de mantenimiento de una lista y emitir el CRS de ellas",
+        "Renovar el ARC por sí mismo siempre",
+        "Modificar la estructura del avión"
+      ],
+      "correct": 1,
+      "why": "Part-ML permite al piloto-propietario realizar un conjunto de tareas limitadas y emitir el CRS.",
+      "whyNot": [
+        "Solo las tareas de la lista.",
+        null,
+        "El ARC lo gestiona la organización o la autoridad.",
+        "No lo permite Part-ML."
+      ],
+      "ref": "Part-ML"
+    },
+    {
+      "id": "010.03.008",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué reglamento europeo regula la aeronavegabilidad inicial (Part 21)?",
+      "options": [
+        "El Reglamento (UE) 1321/2014",
+        "El Reglamento (UE) 965/2012",
+        "El Reglamento (UE) 923/2012",
+        "El Reglamento (UE) 748/2012"
+      ],
+      "correct": 3,
+      "why": "Part 21 está en el Reglamento 748/2012.",
+      "whyNot": [
+        "Es la aeronavegabilidad continuada.",
+        "Son las operaciones aéreas.",
+        "Es SERA.",
+        null
+      ],
+      "ref": "Reglamento (UE) 748/2012"
+    },
+    {
+      "id": "010.03.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué puede invalidar el CofA?",
+      "options": [
+        "Un vuelo nocturno",
+        "Un cambio de piloto",
+        "Modificaciones no aprobadas o mantenimiento no realizado conforme al programa",
+        "Un aterrizaje con viento cruzado"
+      ],
+      "correct": 2,
+      "why": "El CofA pierde validez si hay modificaciones no aprobadas o no se mantiene según el programa.",
+      "whyNot": [
+        "No lo invalida.",
+        "No lo invalida.",
+        null,
+        "No lo invalida."
+      ],
+      "ref": "Part 21"
+    },
+    {
+      "id": "010.03.010",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Qué ocurre si hay una AD pendiente de cumplir?",
+      "options": [
+        "La aeronave no puede volar hasta cumplirla, aunque el ARC esté en vigor",
+        "Nada, si el piloto lo conoce",
+        "Solo hay que cumplirla al año siguiente",
+        "Solo afecta a vuelos comerciales"
+      ],
+      "correct": 0,
+      "why": "Una AD incumplida inhabilita la aeronave.",
+      "whyNot": [
+        null,
+        "Es obligatoria.",
+        "Debe cumplirse en el plazo de la AD.",
+        "Afecta a toda la aviación."
+      ],
+      "ref": "Part 21"
+    },
+    {
+      "id": "010.03.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué documento emite el Estado de matrícula y reconoce que la aeronave cumple su diseño?",
+      "options": [
+        "El certificado de ruido",
+        "El certificado de matrícula",
+        "El ARC",
+        "El certificado de aeronavegabilidad"
+      ],
+      "correct": 3,
+      "why": "El CofA lo expide el Estado de matrícula.",
+      "whyNot": [
+        "No es el CofA.",
+        "Acredita la nacionalidad.",
+        "Es la revisión periódica.",
+        null
+      ],
+      "ref": "Anexo 8"
+    },
+    {
+      "id": "010.03.012",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué anexo de la OACI trata la aeronavegabilidad?",
+      "options": [
+        "El Anexo 7",
+        "El Anexo 8",
+        "El Anexo 6",
+        "El Anexo 14"
+      ],
+      "correct": 1,
+      "why": "El Anexo 8 trata la aeronavegabilidad.",
+      "whyNot": [
+        "Trata la matrícula.",
+        null,
+        "Trata la operación.",
+        "Trata los aeródromos."
+      ],
+      "ref": "Anexo 8"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.010.03.01",
+      "front": "ARC",
+      "back": "Certificado de revisión de la aeronavegabilidad: 12 meses"
+    },
+    {
+      "id": "c.010.03.02",
+      "front": "CofA sin ARC",
+      "back": "No permite volar"
+    },
+    {
+      "id": "c.010.03.03",
+      "front": "CRS",
+      "back": "Acredita que el mantenimiento se ha realizado y la aeronave puede volver al servicio"
+    },
+    {
+      "id": "c.010.03.04",
+      "front": "Permiso de vuelo",
+      "back": "Para vuelos concretos de aeronaves sin CofA (pruebas, traslado)"
+    },
+    {
+      "id": "c.010.03.05",
+      "front": "Directiva de aeronavegabilidad",
+      "back": "Instrucción obligatoria para corregir una condición insegura"
+    },
+    {
+      "id": "c.010.03.06",
+      "front": "Piloto-propietario (Part-ML)",
+      "back": "Tareas limitadas de mantenimiento de una lista y CRS de ellas"
+    }
+  ]
+}

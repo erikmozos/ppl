@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 230">
+  <title>Código visual tierra-aire de los supervivientes: V necesitamos ayuda, X necesitamos asistencia médica, N no, Y sí y flecha seguimos en esa dirección</title>
+  <defs>
+    <marker id="010-codigo-flecha" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+  </defs>
+  <rect x="8" y="8" width="624" height="214" rx="8" class="ground"/>
+  <g class="ln thick">
+    <path d="M40 40 L72 110 L104 40"/>
+    <path d="M162 40 L226 110 M226 40 L162 110"/>
+    <path d="M298 110 L298 40 L354 110 L354 40"/>
+    <path d="M410 40 L442 78 L474 40 M442 78 L442 110"/>
+    <line x1="560" y1="110" x2="560" y2="40" marker-end="url(#010-codigo-flecha)"/>
+  </g>
+  <text x="72" y="140" class="tx b" text-anchor="middle">V</text>
+  <text x="72" y="160" class="tx2" text-anchor="middle" font-size="12">Necesitamos</text>
+  <text x="72" y="176" class="tx2" text-anchor="middle" font-size="12">ayuda</text>
+  <text x="194" y="140" class="tx b" text-anchor="middle">X</text>
+  <text x="194" y="160" class="tx2" text-anchor="middle" font-size="12">Necesitamos</text>
+  <text x="194" y="176" class="tx2" text-anchor="middle" font-size="12">asistencia médica</text>
+  <text x="326" y="140" class="tx b" text-anchor="middle">N</text>
+  <text x="326" y="160" class="tx2" text-anchor="middle" font-size="12">No (negativo)</text>
+  <text x="442" y="140" class="tx b" text-anchor="middle">Y</text>
+  <text x="442" y="160" class="tx2" text-anchor="middle" font-size="12">Sí (afirmativo)</text>
+  <text x="560" y="140" class="tx b" text-anchor="middle">Flecha</text>
+  <text x="560" y="160" class="tx2" text-anchor="middle" font-size="12">Vamos en</text>
+  <text x="560" y="176" class="tx2" text-anchor="middle" font-size="12">esta dirección</text>
+  <text x="320" y="206" class="tx2" text-anchor="middle" font-size="12">Cada signo mide al menos 2,5 m y se forma con material que contraste con el suelo</text>
+</svg>

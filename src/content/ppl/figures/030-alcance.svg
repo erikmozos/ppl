@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <title>Potencia necesaria frente a velocidad: mínima potencia para la máxima autonomía y tangentes desde el origen y desde ±30 kt de viento para el máximo alcance</title>
+  <defs>
+    <marker id="030-alcance-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+  </defs>
+  <line x1="90" y1="340" x2="660" y2="340" class="ln" marker-end="url(#030-alcance-k)"/>
+  <line x1="90" y1="340" x2="90" y2="30" class="ln" marker-end="url(#030-alcance-k)"/>
+  <text x="98" y="36" class="tx b">Potencia necesaria</text>
+  <text x="660" y="378" class="tx b" text-anchor="end">Velocidad (kt)</text>
+  <line x1="140" y1="336" x2="140" y2="344" class="ln"/>
+  <text x="140" y="358" class="tx2" text-anchor="middle">40</text>
+  <line x1="240" y1="336" x2="240" y2="344" class="ln"/>
+  <text x="240" y="358" class="tx2" text-anchor="middle">60</text>
+  <line x1="340" y1="336" x2="340" y2="344" class="ln"/>
+  <text x="340" y="358" class="tx2" text-anchor="middle">80</text>
+  <line x1="440" y1="336" x2="440" y2="344" class="ln"/>
+  <text x="440" y="358" class="tx2" text-anchor="middle">100</text>
+  <line x1="540" y1="336" x2="540" y2="344" class="ln"/>
+  <text x="540" y="358" class="tx2" text-anchor="middle">120</text>
+  <line x1="640" y1="336" x2="640" y2="344" class="ln"/>
+  <text x="640" y="358" class="tx2" text-anchor="middle">140</text>
+  <line x1="90.0" y1="300.1" x2="640.0" y2="153.9" class="ln2 dash"/>
+  <line x1="90.0" y1="340.0" x2="640.0" y2="121.0" class="wa-ln dash"/>
+  <line x1="90.0" y1="281.6" x2="640.0" y2="174.5" class="ok-ln dash"/>
+  <polyline points="140.0 214.1 160.0 223.0 180.0 229.8 200.0 234.7 220.0 238.1 240.0 240.1 260.0 240.8 280.0 240.4 300.0 239.0 320.0 236.4 340.0 232.9 360.0 228.3 380.0 222.7 400.0 216.2 420.0 208.6 440.0 200.0 460.0 190.3 480.0 179.6 500.0 167.9 520.0 155.0 540.0 141.0 560.0 125.9 580.0 109.5 600.0 92.0 620.0 73.3 640.0 53.2" class="ac-ln thick" fill="none"/>
+  <circle cx="262.9" cy="240.9" r="5" class="ac-fill"/>
+  <text x="248.9" y="232.9" class="tx b">A</text>
+  <circle cx="365.0" cy="227.0" r="5" class="ink-fill"/>
+  <text x="359.0" y="215.0" class="tx b">B</text>
+  <circle cx="417.5" cy="209.6" r="5" class="wa-fill"/>
+  <text x="425.5" y="201.6" class="tx b">C</text>
+  <circle cx="336.6" cy="233.5" r="5" class="ok-fill"/>
+  <text x="320.6" y="249.5" class="tx b">D</text>
+  <line x1="262.9" y1="240.9" x2="262.9" y2="340" class="ln2 dash"/>
+  <circle cx="345" cy="56" r="5" class="ac-fill"/>
+  <text x="358" y="60" class="tx2">A: mínima potencia: máxima autonomía (≈ 0,76 VMD)</text>
+  <circle cx="345" cy="78" r="5" class="ink-fill"/>
+  <text x="358" y="82" class="tx2">B: tangente desde el origen: máximo alcance en calma (VMD)</text>
+  <circle cx="345" cy="100" r="5" class="wa-fill"/>
+  <text x="358" y="104" class="tx2">C: viento de cara: se vuela algo más rápido</text>
+  <circle cx="345" cy="122" r="5" class="ok-fill"/>
+  <text x="358" y="126" class="tx2">D: viento de cola: se vuela algo más lento</text>
+  <text x="630" y="396" class="tx2" text-anchor="end">Curva de ejemplo con VMD = 85 kt y viento de 30 kt.</text>
+</svg>

@@ -1,0 +1,511 @@
+{
+  "lesson": {
+    "id": "020.16",
+    "title": "Hélices",
+    "summary": "Cómo funciona una hélice: ángulo de pala, de avance y de ataque; hélices de paso fijo (ascenso y crucero) y de velocidad constante con su regulador; orden de las palancas y fallos habituales.",
+    "objectives": [
+      "Definir ángulo de pala, ángulo de avance y ángulo de ataque de una hélice",
+      "Explicar por qué una hélice de paso fijo es un compromiso y la diferencia entre paso de ascenso y de crucero",
+      "Describir el funcionamiento de una hélice de velocidad constante y de su regulador",
+      "Aplicar el orden correcto de las palancas al subir o bajar potencia",
+      "Reconocer los fallos típicos de la hélice y el mantenimiento básico"
+    ],
+    "sections": [
+      {
+        "title": "La hélice como ala giratoria",
+        "text": [
+          "Una pala de hélice es un perfil alar que gira. Cada sección de la pala tiene una **cuerda** y está inclinada respecto al **plano de rotación** de la hélice. El ángulo entre la cuerda y ese plano es el **ángulo de pala** (β). La pala gira y a la vez avanza con el avión, así que el viento relativo que ve es la suma de las dos velocidades: la **velocidad de giro** (U, que crece hacia la punta) y la de **avance** (V). El ángulo entre el viento relativo y el plano de rotación es el **ángulo de avance** (φ, con tan φ = V ÷ U). El **ángulo de ataque** es lo que queda: **α = β − φ**.",
+          "El empuje sale de la sustentación de cada pala, perpendicular al viento relativo, del mismo modo que un ala. Como la punta va mucho más deprisa que la raíz, la pala está **torsionada**: el ángulo de pala disminuye hacia la punta para que el ángulo de ataque sea parecido en toda su longitud. El **paso** es el avance teórico de la hélice en una vuelta, como un tornillo; a mayor ángulo de pala, mayor paso."
+        ],
+        "figure": "svg:020-angulo-pala",
+        "caption": "Sección de pala: β ángulo de pala, φ ángulo de avance y α = β − φ el ángulo de ataque.",
+        "bullets": [
+          "A igual RPM, al **aumentar la velocidad** del avión crece φ y **disminuye α**: la pala trabaja con menos ángulo y da menos empuje.",
+          "Con el avión parado o despacio (despegue), φ es pequeño y α es grande, cercano a la pérdida de la pala: el empuje estático es alto, pero la pala puede entrar en pérdida si el ángulo de pala es excesivo."
+        ]
+      },
+      {
+        "title": "Hélice de paso fijo",
+        "text": [
+          "En una hélice de **paso fijo** el ángulo de pala no se puede cambiar: es el del PA-28-161 Warrior III y el de muchas avionetas. Es un compromiso entre despegue y crucero, y el fabricante elige uno de los dos extremos:",
+          "El paso de **ascenso** (ángulo pequeño, paso corto) da mucho empuje a baja velocidad y permite que el motor llegue a sus RPM máximas, con buen ascenso, pero en crucero el motor podría pasarse de vueltas o gastar de más. El paso de **crucero** (ángulo mayor, paso largo) rinde mejor a velocidad alta, pero en el despegue el motor no llega a RPM máximas y el empuje estático es peor. Tu avión de escuela suele montar una hélice de compromiso."
+        ],
+        "table": {
+          "caption": "Hélice de paso fijo: ascenso y crucero",
+          "head": [
+            "",
+            "Paso de ascenso (fino)",
+            "Paso de crucero (grueso)"
+          ],
+          "rows": [
+            [
+              "Ángulo de pala",
+              "Pequeño",
+              "Grande"
+            ],
+            [
+              "Empuje a baja velocidad",
+              "Alto",
+              "Menor"
+            ],
+            [
+              "RPM en el despegue",
+              "Alcanza las máximas",
+              "No llega a las máximas"
+            ],
+            [
+              "Rendimiento en crucero",
+              "Peor",
+              "Mejor"
+            ]
+          ],
+          "src": "PHAK cap. 7"
+        },
+        "bullets": [
+          "Con paso fijo, el **tacómetro** mide la potencia: más gases, más RPM. Las RPM también suben al ganar velocidad (picado) y bajan si el avión reduce la velocidad en ascenso.",
+          "En un picado pronunciado las RPM pueden superar la raya roja: reduce potencia y velocidad."
+        ]
+      },
+      {
+        "title": "Hélice de velocidad constante",
+        "text": [
+          "Una hélice de **paso variable** puede cambiar el ángulo de pala en vuelo. La más habitual en aviación ligera es la de **velocidad constante**: un **regulador** (governor) cambia el paso para mantener las RPM que el piloto elige con el **mando de hélice**. El **mando de gases** fija la **presión de admisión** (MAP), que es la potencia disponible; el mando de la hélice fija las **RPM**, que se mantienen aunque cambien la velocidad o la potencia.",
+          "El regulador usa **contrapesos** que se abren por la fuerza centrífuga y mueven una válvula: si las RPM suben por encima de las elegidas, la válvula hace que la hélice pase a **paso grueso** (más ángulo, más par resistente, las RPM bajan); si bajan, la hélice pasa a **paso fino** y las RPM suben. Se mueve con **aceite del motor a presión**, que el regulador aumenta con una bomba propia. El resultado es un rendimiento muy bueno en todo el rango, porque la pala trabaja siempre con un ángulo de ataque favorable.",
+          "El despegue se hace con la palanca de hélice en **paso fino** (RPM máximas), y el crucero se hace con menos RPM y un paso más grueso, con menos ruido y consumo. Por eso este tipo de hélice y el motor con mando de MAP pide más atención al operar el motor."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Orden de las palancas y límites",
+        "text": [
+          "Las palancas están en este orden, de izquierda a derecha: **gases** (negra), **hélice** (azul) y **mezcla** (roja). Con hélice de velocidad constante hay una regla para no sobrecargar el motor, que el POH formula con sus propios límites de MAP y RPM: para evitar la **detonación**, no se debe tener una presión de admisión alta con RPM bajas."
+        ],
+        "bullets": [
+          "**Para subir potencia**: mezcla (rica), después **hélice** (RPM altas, paso fino) y por último **gases** (MAP).",
+          "**Para bajar potencia**: primero **gases** (MAP), después **hélice** (RPM) y la mezcla según proceda.",
+          "Cuando se sube MAP con las RPM bajas, la presión en el cilindro sube más que la que soporta la combustión (*overboost*): detonación y daño en el motor. Los POH dan una combinación máxima de MAP y RPM; sigue la tabla del avión.",
+          "Con mando de hélice a pleno paso fino, las RPM las gobierna ya el motor como en una hélice de paso fijo."
+        ],
+        "note": {
+          "kind": "tip",
+          "text": "Para recordarlo: «subir: mezcla, hélice y gases; bajar: gases, hélice y mezcla»."
+        },
+        "verify": true
+      },
+      {
+        "title": "Fallos y mantenimiento",
+        "text": [
+          "En una hélice de velocidad constante de **simple efecto** (aceite en un solo sentido), un fallo del regulador o la pérdida de presión de aceite lleva normalmente la hélice a **paso fino**, con RPM altas: es la posición que conserva el empuje, aunque con riesgo de sobrerrevoluciones. Si las RPM suben sin control, se reduce potencia y velocidad y se tira del mando de hélice. Según el fabricante, la respuesta puede variar: en caso de duda, manda el POH.",
+          "Con un motor parado en vuelo, un mando de hélice a **paso grueso** reduce la resistencia de la hélice en planeo, según indique el POH.",
+          "En el prevuelo se examinan las palas: **grietas**, **muescas** y **golpes** en el borde de ataque (una muesca concentra esfuerzos y puede romper la pala), juego, fugas de aceite en el cubo y estado del cono. Una hélice dañada no se vuela. No gires la hélice a mano: el motor puede arrancar si un magneto está vivo."
+        ],
+        "verify": true
+      }
+    ],
+    "numbers": [
+      "α = β − φ: ángulo de ataque = ángulo de pala − ángulo de avance",
+      "Paso fijo: el tacómetro mide la potencia; paso de ascenso (fino) frente a crucero (grueso)",
+      "Velocidad constante: gases = MAP, hélice = RPM; el regulador cambia el paso",
+      "Subir potencia: mezcla, hélice, gases; bajar potencia: gases, hélice, mezcla",
+      "Simple efecto: sin presión de aceite, normalmente paso fino y RPM altas (según POH)"
+    ],
+    "traps": [
+      "Confundir el ángulo de pala con el ángulo de ataque: el de ataque es β − φ.",
+      "Creer que en una hélice de paso fijo el ascenso se hace con paso grueso: es paso fino.",
+      "Subir la presión de admisión con RPM bajas: puede provocar detonación.",
+      "Pensar que con paso fijo se controlan por separado MAP y RPM: solo hay gases.",
+      "Olvidar que la hélice puede arrancar con magneto vivo aunque la llave esté en OFF."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 7: hélices",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Manual de vuelo del PA-28-161 Warrior III y del Cessna 172S",
+        "url": "https://www.piper.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28 (gases, mezcla y hélice de paso fijo)",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      },
+      {
+        "label": "Prueba de motor del PA-28",
+        "href": "#/ac/pa28/flow/runup"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.16.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "El ángulo de pala de una hélice es el que forman:",
+      "options": [
+        "La cuerda y el plano de rotación",
+        "La cuerda y el viento relativo",
+        "El viento relativo y el plano de rotación",
+        "El eje del motor y el horizonte"
+      ],
+      "correct": 0,
+      "why": "El ángulo de pala (β) se mide entre la cuerda de la sección y el plano de rotación de la hélice.",
+      "whyNot": [
+        null,
+        "Ese es el ángulo de ataque.",
+        "Ese es el ángulo de avance.",
+        "No define ningún ángulo de la hélice."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.16.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "El ángulo de ataque de una sección de pala es igual a:",
+      "options": [
+        "Ángulo de pala más ángulo de avance",
+        "Ángulo de pala menos ángulo de avance",
+        "Ángulo de avance menos ángulo de pala",
+        "Ángulo de avance dividido por el ángulo de pala"
+      ],
+      "correct": 1,
+      "why": "α = β − φ: el ángulo de pala menos el ángulo que forma el viento relativo con el plano de rotación.",
+      "whyNot": [
+        "Sumarlos daría un ángulo mayor que el de pala.",
+        null,
+        "Resultaría negativo con valores normales.",
+        "No hay relación de cociente."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.16.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con RPM constantes, si aumenta la velocidad del avión en una hélice de paso fijo, el ángulo de ataque de la pala:",
+      "options": [
+        "Aumenta",
+        "Se hace negativo siempre",
+        "No cambia",
+        "Disminuye"
+      ],
+      "correct": 3,
+      "why": "Al aumentar V crece el ángulo de avance φ y, con β constante, α = β − φ disminuye.",
+      "whyNot": [
+        "Aumentaría si bajase la velocidad.",
+        "Solo sería negativo con velocidades extremas.",
+        "φ depende de V, luego α cambia.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.16.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Por qué la pala de una hélice está torsionada (menor ángulo de pala en la punta)?",
+      "options": [
+        "Porque la punta gira más deprisa y así se iguala el ángulo de ataque a lo largo de la pala",
+        "Para reducir el ruido",
+        "Para aumentar la resistencia en la raíz",
+        "Por razones solo estéticas"
+      ],
+      "correct": 0,
+      "why": "La velocidad de giro crece hacia la punta; reduciendo el ángulo de pala allí se mantiene un ángulo de ataque similar en toda la pala.",
+      "whyNot": [
+        null,
+        "El ruido depende de otros factores.",
+        "No busca aumentar la resistencia.",
+        "Tiene una razón aerodinámica."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.16.005",
+      "type": "concepto",
+      "level": 1,
+      "q": "Una hélice de paso fijo de ascenso, comparada con una de crucero, tiene:",
+      "options": [
+        "Mayor ángulo de pala",
+        "El mismo ángulo de pala",
+        "Menor ángulo de pala",
+        "Ángulo de pala ajustable en vuelo"
+      ],
+      "correct": 2,
+      "why": "El paso de ascenso es fino (ángulo pequeño): da más empuje a baja velocidad y permite alcanzar las RPM máximas.",
+      "whyNot": [
+        "El mayor ángulo es el del paso de crucero.",
+        "Son opuestos.",
+        null,
+        "Es un paso fijo: no se ajusta."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.16.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "En una hélice de paso fijo, el tacómetro indica:",
+      "options": [
+        "La potencia que da el motor, junto con la velocidad",
+        "La presión de admisión",
+        "El ángulo de pala",
+        "La temperatura de culatas"
+      ],
+      "correct": 0,
+      "why": "Con paso fijo, las RPM dependen de la potencia y de la velocidad: sirve como indicación de potencia.",
+      "whyNot": [
+        null,
+        "La MAP la mide el manómetro de admisión.",
+        "El ángulo de pala no varía.",
+        "La temperatura tiene su propio instrumento."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.16.007",
+      "type": "concepto",
+      "level": 1,
+      "q": "En una hélice de velocidad constante, el mando de hélice fija:",
+      "options": [
+        "La presión de admisión",
+        "La temperatura del aceite",
+        "La mezcla",
+        "Las RPM"
+      ],
+      "correct": 3,
+      "why": "El mando de hélice elige las RPM de régimen; el regulador cambia el paso para mantenerlas.",
+      "whyNot": [
+        "La MAP la fija el mando de gases.",
+        "No actúa sobre temperaturas.",
+        "La mezcla tiene su propio mando.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.16.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si las RPM suben por encima de las seleccionadas en una hélice de velocidad constante, el regulador:",
+      "options": [
+        "Pasa a paso más fino",
+        "Corta el combustible",
+        "Pasa a paso más grueso",
+        "Cierra la mariposa"
+      ],
+      "correct": 2,
+      "why": "Aumenta el ángulo de pala (paso grueso), con lo que la hélice absorbe más par y las RPM bajan al valor elegido.",
+      "whyNot": [
+        "Un paso más fino aceleraría aún más el giro.",
+        "No actúa sobre el combustible.",
+        null,
+        "No actúa sobre la mariposa."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.16.009",
+      "type": "regla",
+      "level": 2,
+      "q": "Para aumentar la potencia en un avión con hélice de velocidad constante, el orden correcto es:",
+      "options": [
+        "Gases, hélice, mezcla",
+        "Mezcla, hélice, gases",
+        "Hélice, gases, mezcla",
+        "Mezcla, gases, hélice"
+      ],
+      "correct": 1,
+      "why": "Primero mezcla rica, después RPM (hélice) y por último MAP (gases), para no tener MAP alta con RPM bajas.",
+      "whyNot": [
+        "Es el orden para reducir potencia.",
+        null,
+        "La mezcla debe ir primero para que el motor esté seguro.",
+        "Los gases deben ir después de la hélice."
+      ],
+      "ref": "PHAK cap. 7; POH"
+    },
+    {
+      "id": "020.16.010",
+      "type": "regla",
+      "level": 2,
+      "q": "Para reducir potencia en un avión con hélice de velocidad constante, se actúa primero sobre:",
+      "options": [
+        "La mezcla",
+        "Los gases (MAP)",
+        "La hélice",
+        "El cebador"
+      ],
+      "correct": 1,
+      "why": "Se baja primero la MAP y luego las RPM, para evitar una presión de admisión alta con RPM bajas.",
+      "whyNot": [
+        "La mezcla se ajusta al final.",
+        null,
+        "Bajar RPM antes que MAP deja MAP alta con RPM bajas.",
+        "El cebador no interviene en vuelo."
+      ],
+      "ref": "PHAK cap. 7; POH"
+    },
+    {
+      "id": "020.16.011",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Por qué hay que evitar una presión de admisión alta con RPM bajas?",
+      "options": [
+        "Porque se pierde empuje",
+        "Porque se hiela el carburador",
+        "Porque se enfría el aceite",
+        "Porque la presión en los cilindros sube mucho y puede causar detonación"
+      ],
+      "correct": 3,
+      "why": "Esa combinación (overboost) hace que la presión de combustión sea excesiva, con riesgo de detonación y daño en el motor.",
+      "whyNot": [
+        "El empuje no es el problema.",
+        "El hielo depende de humedad y temperatura.",
+        "El aceite no se enfría por eso.",
+        null
+      ],
+      "ref": "PHAK cap. 7; POH"
+    },
+    {
+      "id": "020.16.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "En una hélice de velocidad constante de simple efecto, la pérdida de presión de aceite al regulador suele llevar la hélice a:",
+      "options": [
+        "Paso grueso con RPM bajas",
+        "Paso inverso",
+        "Bandera",
+        "Paso fino con RPM altas"
+      ],
+      "correct": 3,
+      "why": "La posición de reposo normal es paso fino: conserva el empuje, con riesgo de sobrerrevoluciones. Depende del fabricante: manda el POH.",
+      "whyNot": [
+        "Es el comportamiento contrario.",
+        "El paso inverso es de turbohélices.",
+        "La bandera es de multimotores con mando específico.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.16.013",
+      "type": "concepto",
+      "level": 1,
+      "q": "En el prevuelo, una muesca en el borde de ataque de una pala:",
+      "options": [
+        "Es un defecto que concentra esfuerzos y puede romper la pala",
+        "Es irrelevante si es pequeña",
+        "Mejora la refrigeración",
+        "Solo afecta al ruido"
+      ],
+      "correct": 0,
+      "why": "Las muescas y grietas concentran esfuerzos; una hélice dañada no debe volarse sin revisión.",
+      "whyNot": [
+        null,
+        "Una muesca no se descarta sin revisión.",
+        "No tiene que ver con refrigeración.",
+        "Afecta a la integridad estructural."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.16.014",
+      "type": "lectura",
+      "level": 2,
+      "q": "Con la sección de pala de la figura, si el ángulo de pala es de 28° y el de avance de 14°, el ángulo de ataque es:",
+      "figure": "svg:020-angulo-pala",
+      "options": [
+        "42°",
+        "28°",
+        "14°",
+        "2°"
+      ],
+      "correct": 2,
+      "why": "α = β − φ = 28° − 14° = 14°.",
+      "whyNot": [
+        "Suma los dos ángulos.",
+        "Es el ángulo de pala, no el de ataque.",
+        null,
+        "Divide en vez de restar."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.16.015",
+      "type": "calculo",
+      "level": 2,
+      "q": "Una pala tiene 22° de ángulo de pala y el viento relativo forma 9° con el plano de rotación. ¿Cuál es el ángulo de ataque?",
+      "options": [
+        "31°",
+        "9°",
+        "13°",
+        "22°"
+      ],
+      "correct": 2,
+      "why": "α = β − φ = 22° − 9° = 13°, el ángulo entre la cuerda y el viento relativo.",
+      "whyNot": [
+        "Suma 22 y 9.",
+        "Es el ángulo de avance.",
+        null,
+        "Es el ángulo de pala."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.16.016",
+      "type": "concepto",
+      "level": 3,
+      "q": "En un picado con hélice de paso fijo, las RPM:",
+      "options": [
+        "Bajan porque aumenta φ",
+        "Suben porque la pala trabaja con menos ángulo de ataque y absorbe menos par",
+        "No cambian",
+        "Se estabilizan siempre en la mitad"
+      ],
+      "correct": 1,
+      "why": "Al aumentar la velocidad disminuye α, la hélice frena menos el motor y las RPM suben; hay que vigilar la raya roja.",
+      "whyNot": [
+        "φ aumenta, pero eso lleva a mayores RPM, no menores.",
+        null,
+        "La velocidad cambia las RPM.",
+        "No hay estabilización fija."
+      ],
+      "ref": "PHAK cap. 7"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.16.01",
+      "front": "Ángulo de ataque de la pala",
+      "back": "α = β − φ (ángulo de pala menos ángulo de avance)"
+    },
+    {
+      "id": "c.020.16.02",
+      "front": "Paso fijo de ascenso frente a crucero",
+      "back": "Ascenso: ángulo pequeño (paso fino); crucero: ángulo mayor (paso grueso)"
+    },
+    {
+      "id": "c.020.16.03",
+      "front": "Hélice de velocidad constante: gases y hélice",
+      "back": "Gases = presión de admisión; hélice = RPM; el regulador cambia el paso"
+    },
+    {
+      "id": "c.020.16.04",
+      "front": "Orden de palancas para subir potencia",
+      "back": "Mezcla, hélice, gases (para bajar: gases, hélice, mezcla)"
+    },
+    {
+      "id": "c.020.16.05",
+      "front": "Fallo de aceite al regulador (simple efecto)",
+      "back": "Normalmente paso fino y RPM altas (según POH)"
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+ "lesson": {
+  "title": "Hélices",
+  "summary": "La hélice como ala giratoria: ángulo de pala, paso y torsión, paso fijo y variable, hielo, hélice en molinete, y los efectos del giro (par de reacción, estela, factor P y precesión).",
+  "objectives": [
+   "Explicar el ángulo de ataque de la pala y su relación con el ángulo de pala y la velocidad de avance",
+   "Justificar la torsión de la pala",
+   "Diferenciar hélice de paso fijo y de paso variable",
+   "Explicar qué ocurre con una hélice en molinete",
+   "Enumerar los efectos de giro y por qué en el despegue el avión tiende a irse a la izquierda"
+  ],
+  "sections": [
+   {
+    "title": "La pala como un ala",
+    "text": [
+     "Cada pala es un perfil alar que gira. Su sustentación (aquí **tracción** o empuje) se produce igual que en un ala, con un ángulo de ataque respecto al **viento relativo de la pala**. Ese viento es la suma de dos velocidades: la velocidad de avance del avión y la velocidad de giro de la sección, que aumenta con el radio (ω·r). El ángulo que forma la trayectoria helicoidal con el plano de rotación es el **ángulo de avance**:",
+     "Y el ángulo de ataque de la pala es la diferencia entre el **ángulo de pala** (el que forma la cuerda de la sección con el plano de rotación) y el ángulo de avance. Si aumentas la velocidad de avance con las mismas rpm, el ángulo de avance crece y el de ataque de la pala disminuye: baja el empuje. Si el avión frena (despegue), el ángulo de ataque de la pala es grande."
+    ],
+    "formulas": [
+     {
+      "f": "tan φ = V / (2π · r · n)",
+      "note": "φ ángulo de avance; V velocidad de avance (m/s); r radio de la sección (m); n rev/s."
+     },
+     {
+      "f": "α pala = ángulo de pala − φ",
+      "note": "Ángulo de ataque de la sección de pala."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Un avión vuela a 100 kt (51,4 m/s) con la hélice a 2400 rpm (40 rev/s). ¿Ángulo de avance a 0,6 m del eje y ángulo de ataque si el ángulo de pala es 24°?",
+      "a": "2π · 0,6 · 40 = 150,8 m/s; tan φ = 51,4 / 150,8 = 0,341 → φ ≈ 18,8°. α pala = 24 − 18,8 ≈ 5,2°."
+     }
+    ]
+   },
+   {
+    "title": "Torsión de la pala y paso",
+    "text": [
+     "La velocidad tangencial crece con el radio: en la punta la pala se mueve mucho más rápido que cerca del buje. Si el ángulo de pala fuera igual en toda la pala, el ángulo de ataque sería muy distinto en cada punto y la punta trabajaría con un ángulo inadecuado. Por eso la pala se fabrica con **torsión**: **ángulo de pala mayor cerca del buje y menor en la punta**, de modo que el ángulo de ataque sea más o menos constante a lo largo de la pala y la tracción se reparta bien.",
+     "El **paso** es el avance teórico de la hélice en una vuelta (como un tornillo), y depende del ángulo de pala. Un ángulo de pala **pequeño** es un **paso fino** (muchas rpm, buen empuje a baja velocidad: despegue); uno **grande** es un **paso grueso** (menos rpm, mejor para crucero rápido)."
+    ],
+    "bullets": [
+     "**Ejemplo de ángulo de pala por radio:** a 100 kt y 2400 rpm, a 0,9 m del eje el ángulo de avance es 12,8° (frente a 18,8° a 0,6 m); para tener un ángulo de ataque de unos 5° harían falta ≈ 17,8° de pala a 0,9 m y ≈ 23,8° a 0,6 m."
+    ]
+   },
+   {
+    "title": "Hélice de paso fijo y de paso variable",
+    "text": [
+     "En la **hélice de paso fijo** (la del PA-28-161 y la del C172S) el ángulo de pala no cambia. Es un compromiso: buen rendimiento solo a una combinación de velocidad y rpm. En el despegue las rpm son algo menores que en crucero; el piloto regula la potencia con el acelerador y las rpm indican esa potencia.",
+     "En la hélice de **velocidad constante** un regulador (governor) cambia el ángulo de pala para mantener las rpm que fija la palanca de la hélice: paso fino en el despegue y paso grueso en crucero. La **bandera** (feathering) pone las palas casi paralelas al viento si se para el motor, reduciendo la resistencia."
+    ]
+   },
+   {
+    "title": "Hélice en molinete (windmilling)",
+    "text": [
+     "Si el motor falla en vuelo, el aire puede seguir **haciendo girar la hélice** y esta se convierte en un disco de gran resistencia: se dice que está en molinete. En una avioneta de paso fijo la resistencia aumenta mucho, y el ángulo de planeo se hace más pronunciado. Volar a la velocidad de mejor planeo del POH minimiza el efecto. Con paso variable y motor parado, se pone la **bandera**, que deja las palas casi paralelas al flujo."
+    ]
+   },
+   {
+    "title": "Efectos del giro de la hélice",
+    "text": [
+     "La hélice de un avión de un solo motor (con giro a derechas visto desde la cabina) produce cuatro efectos que, en el despegue y en ascenso a potencia alta, **hacen girar el morro a la izquierda**:"
+    ],
+    "bullets": [
+     "**Par de reacción:** acción y reacción: si la hélice gira a la derecha, el avión tiende a alabear a la izquierda. Es más notable a plena potencia y poca velocidad.",
+     "**Estela helicoidal (slipstream):** el aire que acelera la hélice gira en espiral hacia atrás y golpea el lado izquierdo de la deriva, empujando la cola a la derecha y el morro a la izquierda.",
+     "**Factor P (carga asimétrica):** con el avión con ángulo de ataque alto (en ascenso o con el morro alto), la pala que baja (la derecha) tiene mayor ángulo de ataque y más empuje; el empuje total se desplaza a la derecha y el morro gira a la izquierda.",
+     "**Precesión giroscópica:** al intentar inclinar el eje de la hélice (en un avión de tren convencional, al subir la cola), la fuerza se manifiesta 90° adelante en el sentido de giro: el morro gira a la izquierda."
+    ],
+    "note": {
+     "kind": "tip",
+     "text": "Corrección: **pie derecho** en el despegue y en el ascenso a plena potencia con una hélice a derechas. En una hélice que gira a la izquierda, los efectos son los contrarios."
+    }
+   },
+   {
+    "title": "Hielo y límites de rpm",
+    "text": [
+     "El hielo en las palas cambia el perfil, reduce la tracción y produce **vibraciones** por desequilibrio; si el hielo se desprende de forma asimétrica, la vibración puede ser fuerte. Además, la **velocidad de la punta** no debe acercarse a la velocidad del sonido: aparece resistencia de onda, ruido y pérdida de rendimiento. Por eso las hélices tienen un límite de rpm y las de gran diámetro giran más despacio. Ejemplo: una hélice de 1,83 m a 2400 rpm tiene una velocidad de punta π · D · n = π · 1,83 · 40 ≈ 230 m/s, es decir, Mach ≈ 0,68 a nivel del mar (a 2700 rpm, 259 m/s, Mach ≈ 0,76)."
+    ]
+   }
+  ],
+  "numbers": [
+   "Torsión: ángulo de pala mayor en la raíz que en la punta",
+   "α pala = ángulo de pala − ángulo de avance",
+   "Paso fino: despegue; paso grueso: crucero",
+   "Hélice a derechas: par, estela, factor P y precesión llevan el morro a la izquierda; pie derecho",
+   "Velocidad de punta limitada por Mach"
+  ],
+  "traps": [
+   "La torsión de la pala es lo contrario de lo que haría pensar la intuición: más ángulo cerca del buje.",
+   "El factor P y la precesión no son lo mismo: el primero es aerodinámico y el segundo, giroscópico.",
+   "La hélice en molinete no produce empuje: es resistencia.",
+   "Los efectos del par van a la izquierda con una hélice que gira a derechas vista desde la cabina."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "FAA, Airplane Flying Handbook (FAA-H-8083-3C)",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "080.14",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "080.14.001",
+   "type": "concepto",
+   "level": 2,
+   "q": "El ángulo de ataque de una sección de pala es la diferencia entre:",
+   "options": [
+    "El ángulo de pala y la actitud del avión",
+    "El ángulo de pala y el ángulo de avance",
+    "El paso y el diámetro",
+    "La velocidad de giro y la de avance"
+   ],
+   "correct": 1,
+   "why": "El viento relativo de la pala forma el ángulo de avance con el plano de rotación; el ángulo de ataque es lo que sobra del ángulo de pala.",
+   "whyNot": [
+    "La actitud no entra en la definición.",
+    null,
+    "Paso y diámetro no son ángulos.",
+    "Esas son velocidades, no ángulos."
+   ],
+   "ref": "PHAK cap. 7"
+  },
+  {
+   "id": "080.14.002",
+   "type": "concepto",
+   "level": 2,
+   "q": "La pala de una hélice está torsionada porque:",
+   "options": [
+    "Reduce el peso de la pala",
+    "Es más fácil de fabricar",
+    "Disminuye la velocidad de punta",
+    "La velocidad tangencial aumenta con el radio y se quiere un ángulo de ataque casi constante"
+   ],
+   "correct": 3,
+   "why": "A mayor radio, el ángulo de avance baja; el ángulo de pala debe bajar con él.",
+   "whyNot": [
+    "No es una cuestión de peso.",
+    "La torsión complica la fabricación.",
+    "La velocidad de punta depende de rpm y diámetro.",
+    null
+   ],
+   "ref": "PHAK cap. 7"
+  },
+  {
+   "id": "080.14.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "En una pala torsionada, el ángulo de pala es:",
+   "options": [
+    "Mayor en la raíz que en la punta",
+    "Mayor en la punta que en la raíz",
+    "Igual en toda la pala",
+    "Cero en la raíz"
+   ],
+   "correct": 0,
+   "why": "Cerca del buje la velocidad tangencial es pequeña y el ángulo de avance grande.",
+   "whyNot": [
+    null,
+    "Sería al contrario de lo que pide el flujo.",
+    "Si fuera igual, el ángulo de ataque variaría mucho.",
+    "No se anula en la raíz."
+   ],
+   "ref": "PHAK cap. 7"
+  },
+  {
+   "id": "080.14.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "Una hélice de paso fino es adecuada para:",
+   "options": [
+    "El crucero rápido",
+    "El vuelo en molinete",
+    "El despegue, con muchas rpm y buen empuje a baja velocidad",
+    "La pérdida"
+   ],
+   "correct": 2,
+   "why": "Con ángulo de pala pequeño, la pala conserva un buen ángulo de ataque cuando el avión va despacio.",
+   "whyNot": [
+    "El crucero rápido pide paso grueso.",
+    "El molinete no se resuelve con el paso fino.",
+    null,
+    "No tiene relación con la pérdida."
+   ],
+   "ref": "PHAK cap. 7"
+  },
+  {
+   "id": "080.14.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "El paso de una hélice es:",
+   "options": [
+    "La distancia entre las puntas de pala",
+    "El ángulo del eje con el horizonte",
+    "El avance teórico de la hélice en una vuelta",
+    "El número de palas"
+   ],
+   "correct": 2,
+   "why": "Se compara con un tornillo: lo que avanzaría en una vuelta sin deslizamiento.",
+   "whyNot": [
+    "Esa es una medida de diámetro.",
+    "El eje del motor no define el paso.",
+    null,
+    "El número de palas no es el paso."
+   ],
+   "ref": "PHAK cap. 7"
+  },
+  {
+   "id": "080.14.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "La hélice de velocidad constante mantiene las rpm cambiando:",
+   "options": [
+    "El ángulo de pala",
+    "El diámetro",
+    "El número de palas",
+    "La posición del CG"
+   ],
+   "correct": 0,
+   "why": "El regulador modifica el paso para mantener las rpm seleccionadas.",
+   "whyNot": [
+    null,
+    "El diámetro de la hélice es fijo; el regulador solo cambia el ángulo de pala.",
+    "No se cambian las palas en vuelo.",
+    "El CG no depende de la hélice."
+   ],
+   "ref": "PHAK cap. 7"
+  },
+  {
+   "id": "080.14.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una hélice en molinete tras un fallo de motor:",
+   "options": [
+    "Produce empuje útil",
+    "No tiene efecto aerodinámico",
+    "Aumenta el alcance en planeo",
+    "Produce resistencia y empeora el planeo"
+   ],
+   "correct": 3,
+   "why": "El aire hace girar la hélice y se comporta como un disco de gran resistencia.",
+   "whyNot": [
+    "Es resistencia, no empuje.",
+    "Sí tiene un efecto notable.",
+    "Con hélice en molinete la resistencia reduce el alcance de planeo.",
+    null
+   ],
+   "ref": "AFH cap. 17"
+  },
+  {
+   "id": "080.14.008",
+   "type": "concepto",
+   "level": 1,
+   "q": "Con una hélice de giro a la derecha (vista desde la cabina), la tendencia del morro en el despegue es girar:",
+   "options": [
+    "A la derecha",
+    "A la izquierda",
+    "Hacia arriba",
+    "Hacia abajo"
+   ],
+   "correct": 1,
+   "why": "Par de reacción, estela, factor P y precesión empujan el morro a la izquierda.",
+   "whyNot": [
+    "Sería el caso de una hélice que gira a la izquierda.",
+    null,
+    "El efecto es de guiñada, no de cabeceo.",
+    "El efecto es de guiñada, no de cabeceo."
+   ],
+   "ref": "AFH cap. 5"
+  },
+  {
+   "id": "080.14.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "La corrección habitual de esta tendencia en el despegue es:",
+   "options": [
+    "Pie derecho",
+    "Pie izquierdo",
+    "Alerones a la izquierda",
+    "Reducir flaps"
+   ],
+   "correct": 0,
+   "why": "El timón a la derecha compensa la guiñada a la izquierda.",
+   "whyNot": [
+    null,
+    "Aumentaría la guiñada.",
+    "Los alerones no corrigen guiñada.",
+    "Los flaps no corrigen la guiñada."
+   ],
+   "ref": "AFH cap. 5"
+  },
+  {
+   "id": "080.14.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "El factor P se produce porque, con un ángulo de ataque alto del avión:",
+   "options": [
+    "La pala que sube tiene mayor ángulo de ataque",
+    "Las dos palas producen el mismo empuje",
+    "La pala que baja tiene mayor ángulo de ataque y más empuje que la que sube",
+    "La estela golpea el estabilizador horizontal"
+   ],
+   "correct": 2,
+   "why": "Con el eje inclinado, el flujo llega a la pala descendente con más ángulo de ataque.",
+   "whyNot": [
+    "Es la pala descendente la que ve el mayor ángulo.",
+    "Con ángulo de ataque alto no son iguales.",
+    null,
+    "La estela afecta a la deriva, no al estabilizador horizontal."
+   ],
+   "ref": "AFH cap. 5"
+  },
+  {
+   "id": "080.14.011",
+   "type": "concepto",
+   "level": 3,
+   "q": "La precesión giroscópica en un avión de tren convencional se manifiesta cuando:",
+   "options": [
+    "Se retrae el tren",
+    "Se levanta la cola en la carrera de despegue",
+    "Se extienden los flaps",
+    "Se baja el morro en aterrizaje"
+   ],
+   "correct": 1,
+   "why": "Al inclinar el eje de la hélice hacia delante, la fuerza aparece 90° adelante en el sentido de giro.",
+   "whyNot": [
+    "No inclina el eje de la hélice.",
+    null,
+    "Los flaps no afectan al eje.",
+    "En aterrizaje el efecto es otro."
+   ],
+   "ref": "AFH cap. 5"
+  },
+  {
+   "id": "080.14.012",
+   "type": "calculo",
+   "level": 2,
+   "q": "Una hélice de 1,83 m de diámetro gira a 2400 rpm. La velocidad de la punta es aproximadamente:",
+   "options": [
+    "115 m/s",
+    "460 m/s",
+    "75 m/s",
+    "230 m/s"
+   ],
+   "correct": 3,
+   "why": "π · D · n = π · 1,83 · 40 ≈ 230 m/s.",
+   "whyNot": [
+    "Resulta de usar el radio en vez del diámetro.",
+    "Resulta de duplicar el resultado correcto.",
+    "Resulta de no incluir π.",
+    null
+   ],
+   "ref": "v = π·D·n"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.080.14.01",
+   "front": "Torsión de la pala",
+   "back": "Ángulo de pala mayor en la raíz y menor en la punta para mantener el ángulo de ataque casi constante"
+  },
+  {
+   "id": "c.080.14.02",
+   "front": "Efectos de la hélice a derechas en el despegue",
+   "back": "Par, estela, factor P y precesión llevan el morro a la izquierda: pie derecho"
+  },
+  {
+   "id": "c.080.14.03",
+   "front": "Hélice en molinete",
+   "back": "El aire la hace girar: mucha resistencia; con paso variable se pone la bandera"
+  },
+  {
+   "id": "c.080.14.04",
+   "front": "Ángulo de ataque de la pala",
+   "back": "Ángulo de pala menos ángulo de avance"
+  }
+ ]
+}

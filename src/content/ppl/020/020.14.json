@@ -1,0 +1,517 @@
+{
+  "lesson": {
+    "id": "020.14",
+    "title": "Encendido",
+    "summary": "El sistema de encendido por magnetos: cómo genera la chispa sin batería, acoplamiento de impulsos, avance, bujías, doble encendido, interruptor, prueba de magnetos con los límites del POH y magneto vivo.",
+    "objectives": [
+      "Explicar cómo un magneto genera la alta tensión sin depender de la batería ni del alternador",
+      "Describir el acoplamiento de impulsos y por qué se adelanta o se retrasa la chispa",
+      "Justificar el doble encendido: seguridad y combustión más completa",
+      "Realizar e interpretar la prueba de magnetos con los límites del PA-28-161 y del C172S",
+      "Reconocer el peligro de un magneto vivo y manejar con seguridad la hélice"
+    ],
+    "sections": [
+      {
+        "title": "Un magneto: la chispa sin batería",
+        "text": [
+          "Los motores de pistón de aviación no encienden la mezcla con la batería, sino con **magnetos**: pequeños generadores movidos por el propio motor. Esa independencia es una decisión de seguridad: un fallo eléctrico, un alternador averiado o la batería descargada no paran el motor.",
+          "Un magneto tiene un **imán permanente** giratorio, una **bobina primaria** de pocas vueltas de hilo grueso y una **bobina secundaria** de muchísimas vueltas de hilo fino. Al girar el imán, genera una corriente en el primario. En el momento justo se abre el **ruptor** (contact breaker, también llamado platinos), el primario se corta de golpe y el campo magnético se desploma. Esa variación brusca induce en el secundario una **tensión muy alta, de varios miles de voltios**. Un **distribuidor** reparte esa tensión en el orden de encendido a cada **bujía** por medio de cables apantallados, y la chispa salta entre los electrodos. Un **condensador** en paralelo con el ruptor evita chispas en los platinos y hace más rápido el colapso del campo.",
+          "El magneto produce chispa **siempre que gira el motor**, incluso al dar vueltas a la hélice a mano. Por eso necesita un interruptor que lo ponga a masa para pararlo."
+        ]
+      },
+      {
+        "title": "Doble encendido",
+        "text": [
+          "Cada cilindro tiene **dos bujías** y cada bujía recibe la chispa de un magneto distinto. El interruptor de encendido permite seleccionar **R** (derecho), **L** (izquierdo) o **BOTH** (ambos). Hay dos razones para tener dos sistemas independientes:",
+          "**Seguridad**: si falla un magneto, un cable o una bujía, el otro sistema mantiene el motor funcionando, con algo menos de potencia. **Combustión más completa**: con dos chispas la mezcla se enciende desde dos puntos, los frentes de llama se encuentran antes y la combustión es más rápida y más completa, lo que da algo más de potencia (del orden de unos pocos por ciento) y menos riesgo de detonación."
+        ],
+        "figure": "svg:020-doble-encendido",
+        "caption": "Doble encendido: cada magneto alimenta una bujía de cada cilindro; con BOTH hay dos frentes de llama (esquema propio).",
+        "bullets": [
+          "Con un solo magneto el motor funciona, pero pierde algo de potencia: es lo que ves como caída de RPM en la prueba.",
+          "Los dos magnetos no se apoyan uno en el otro: cada uno tiene su ruptor, su distribuidor y sus cables."
+        ]
+      },
+      {
+        "title": "Avance de la chispa y acoplamiento de impulsos",
+        "text": [
+          "La mezcla tarda en quemarse unos milisegundos. Para que la presión máxima ocurra poco después del punto muerto superior (PMS), la chispa salta **antes** de que el pistón llegue arriba, con un **avance** de unos 20 a 25° de cigüeñal antes del PMS en la mayoría de los Lycoming (valor exacto en el manual del motor).",
+          "En el arranque el motor gira muy despacio, el magneto no genera una chispa fuerte y esa chispa tan adelantada podría hacer que el pistón retroceda (retroceso o *kickback*), con riesgo de dañar el arranque y de lesiones. Para evitarlo, en el arranque se usa un **acoplamiento de impulsos** (impulse coupling): un resorte retiene el imán y lo suelta de golpe, lo que da una chispa fuerte, y a la vez **retrasa** la chispa hasta cerca del PMS. Cuando el motor arranca y gira más rápido, el acoplamiento deja de actuar y la chispa vuelve a su avance normal. Algunos motores consiguen lo mismo con un vibrador de inducción que da una lluvia de chispas con el motor lento. El chasquido que oyes al girar la hélice a mano es el del acoplamiento."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Las bujías",
+        "text": [
+          "La **bujía** tiene un electrodo central aislado con cerámica, un electrodo de masa y una rosca que la fija a la culata. Tiene que resistir temperaturas altas, presión y la corrosión de los gases de la combustión. Cada motor tiene el tipo de bujía indicado por el fabricante: el **grado térmico** (bujía caliente o fría) determina la facilidad con que evacua el calor, y un grado erróneo causa preencendido o ensuciamiento.",
+          "Se ensucian de tres formas: **carbonilla** (hollín negro por mezcla demasiado rica o ralentí prolongado), **aceite** (por segmentos o guías desgastadas) y **plomo** (por el tetraetilo del 100LL, sobre todo con mezcla pobre y temperaturas bajas). Una bujía sucia falla en alguna chispa y el motor funciona con aspereza. Se limpian en el taller, y en tierra se previene con una mezcla bien ajustada y evitando ralentí largo."
+        ]
+      },
+      {
+        "title": "El interruptor y el magneto vivo",
+        "text": [
+          "El interruptor de encendido (la llave en el PA-28 y el C172S) tiene las posiciones OFF, R, L, BOTH y START. Su función es **poner a masa** el circuito primario del magneto: en OFF, los dos magnetos quedan en cortocircuito y no hay chispa. Esa conexión se hace con el **cable P** (P-lead).",
+          "Si el cable P se **suelta o se corta**, el interruptor ya no pone el magneto a masa: el magneto está **vivo** (hot) aunque la llave esté en OFF y puede arrancar el motor si alguien gira la hélice. Por eso la hélice se **trata siempre como si estuviera conectada** y no se mueve a mano sin necesidad. Es una razón de peso para respetar el procedimiento de apagado y la comprobación de masa."
+        ],
+        "note": {
+          "kind": "warn",
+          "text": "Una hélice nunca está desconectada: aunque la llave esté fuera, puede arrancar si un cable P está suelto. Si tienes que moverla, hazlo como si el motor fuera a arrancar."
+        }
+      },
+      {
+        "title": "Prueba de magnetos",
+        "text": [
+          "En la prueba de motor se comprueba cada magneto por separado con las RPM que indique el POH, en un lugar donde el avión esté bien frenado y de cara al viento. Se pasa de BOTH a **R**, se anotan las RPM, se vuelve a **BOTH** y se hace lo mismo con **L**. No se detiene el interruptor en OFF entre posiciones, para no cortar el encendido. Se miran dos cosas: la **caída máxima** de RPM y la **diferencia máxima** entre los dos magnetos."
+        ],
+        "table": {
+          "caption": "Prueba de magnetos según el POH",
+          "head": [
+            "Avión",
+            "Caída máxima",
+            "Diferencia máxima entre magnetos"
+          ],
+          "rows": [
+            [
+              "PA-28-161 Warrior III",
+              "175 RPM",
+              "50 RPM"
+            ],
+            [
+              "Cessna 172S",
+              "150 RPM",
+              "50 RPM"
+            ]
+          ],
+          "src": "POH PA-28-161 y C172S, prueba de motor"
+        },
+        "verify": true,
+        "bullets": [
+          "**Caída excesiva** en un magneto: probablemente bujías sucias. Se corrige en tierra empobreciendo la mezcla con las RPM de la prueba durante un momento para quemar los depósitos y se repite la prueba.",
+          "**Diferencia mayor de 50 RPM**: desigualdad entre magnetos; el avión no sale hasta que se resuelva.",
+          "**Ninguna caída** al seleccionar un magneto: no es buena señal. Puede ser que el interruptor no esté desconectando ese magneto, es decir, un magneto vivo o mal puesto a masa, o un avance mal ajustado.",
+          "**Motor en ralentí y comprobación de masa**: al pasar brevemente la llave a OFF a ralentí, el motor debe pararse (y se vuelve enseguida a BOTH). Si no se para, el magneto no está a masa."
+        ],
+        "examples": [
+          {
+            "q": "En un PA-28-161 (límite: 175 RPM de caída y 50 de diferencia) anotas: BOTH 2000, R 1880, L 1810. ¿Cumple?",
+            "a": "Caída en R: 120 RPM; en L: 190 RPM. La caída en L supera 175 y la diferencia entre R y L es de 70 RPM (> 50). No cumple: hay que revisar el magneto izquierdo o sus bujías."
+          },
+          {
+            "q": "En un C172S (límite 150 y 50) tienes BOTH 1800, R 1690, L 1670. ¿Cumple?",
+            "a": "Caídas de 110 y 130 RPM, ambas bajo 150, con diferencia de 20 RPM (< 50): cumple."
+          }
+        ]
+      }
+    ],
+    "numbers": [
+      "PA-28-161: caída máxima en la prueba de magnetos 175 RPM; C172S: 150 RPM; diferencia máxima entre magnetos 50 RPM (ambos)",
+      "Dos magnetos y dos bujías por cilindro: seguridad y combustión más completa",
+      "El magneto no depende de la batería ni del alternador",
+      "Cable P suelto: magneto vivo aunque la llave esté en OFF",
+      "Chispa adelantada unos 20-25° antes del PMS; en el arranque se retrasa con el acoplamiento de impulsos"
+    ],
+    "traps": [
+      "Creer que sin caída en la prueba todo está perfecto: puede ser un magneto vivo.",
+      "Pensar que el motor para si falla la batería: los magnetos son independientes.",
+      "Pasar por OFF al cambiar de R a L: se pasa siempre por BOTH.",
+      "Mezclar los límites: 175 RPM es del PA-28-161 y 150 RPM del C172S (según POH).",
+      "Creer que una hélice con la llave sacada no puede arrancar: con el cable P suelto, sí."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 7",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Manual de vuelo del PA-28-161 Warrior III y del Cessna 172S, prueba de motor",
+        "url": "https://www.piper.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Prueba de motor del PA-28: magnetos",
+        "href": "#/ac/pa28/flow/runup"
+      },
+      {
+        "label": "Arranque del PA-28",
+        "href": "#/ac/pa28/flow/start"
+      },
+      {
+        "label": "Arranque del C172",
+        "href": "#/ac/c172/flow/start"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.14.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "El sistema de encendido de un motor de pistón de avioneta:",
+      "options": [
+        "Es independiente de la batería y del alternador",
+        "Depende de la batería",
+        "Depende del alternador",
+        "Necesita el máster conectado"
+      ],
+      "correct": 0,
+      "why": "Los magnetos generan la chispa por sí mismos, movidos por el motor. Si falla el sistema eléctrico, el motor sigue funcionando.",
+      "whyNot": [
+        null,
+        "La batería solo se usa en el arranque.",
+        "El alternador alimenta la aviónica, no el encendido.",
+        "El máster alimenta el circuito eléctrico, no los magnetos."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.14.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "La alta tensión en un magneto se induce en el secundario cuando:",
+      "options": [
+        "Se abre el ruptor y colapsa el campo del primario",
+        "Se cierra el ruptor",
+        "Se pone la llave en START",
+        "Se conecta el máster"
+      ],
+      "correct": 0,
+      "why": "Al abrir el ruptor se interrumpe la corriente del primario, el campo se desploma y el secundario, con muchas más espiras, produce miles de voltios.",
+      "whyNot": [
+        null,
+        "Con el ruptor cerrado circula corriente por el primario, pero no se induce la alta tensión.",
+        "START solo conecta el motor de arranque.",
+        "El máster no interviene en los magnetos."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.14.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Por qué cada cilindro lleva dos bujías?",
+      "options": [
+        "Para reducir el ruido",
+        "Para consumir menos combustible a baja potencia",
+        "Por seguridad y para una combustión más completa",
+        "Para poder usar dos octanajes"
+      ],
+      "correct": 2,
+      "why": "Hay dos sistemas independientes y la mezcla se enciende desde dos puntos: más seguridad y combustión más rápida y completa.",
+      "whyNot": [
+        "No tiene relación con el ruido.",
+        "No reduce de forma directa el consumo.",
+        null,
+        "El octanaje es una propiedad del combustible."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.14.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "El acoplamiento de impulsos (impulse coupling) sirve para:",
+      "options": [
+        "Dar chispa fuerte y retrasada en el arranque, cuando el motor gira despacio",
+        "Aumentar la potencia en crucero",
+        "Sincronizar los magnetos con la hélice",
+        "Reducir la tensión de las bujías"
+      ],
+      "correct": 0,
+      "why": "Retiene y suelta el imán para dar una chispa fuerte con el motor lento y retrasa la chispa para evitar retrocesos del pistón.",
+      "whyNot": [
+        null,
+        "Solo actúa en el arranque.",
+        "No sincroniza con la hélice; se ocupa del giro lento del motor.",
+        "No reduce la tensión; da más chispa."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.14.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un magneto vivo (hot) es aquel que:",
+      "options": [
+        "Tiene una temperatura de funcionamiento alta",
+        "Genera chispa aunque el interruptor esté en OFF por un cable P suelto",
+        "Está sincronizado con retraso",
+        "Solo funciona con la batería conectada"
+      ],
+      "correct": 1,
+      "why": "El interruptor en OFF pone el primario a masa mediante el cable P. Si se suelta, el magneto sigue produciendo chispa y el motor puede arrancar al mover la hélice.",
+      "whyNot": [
+        "No tiene que ver con la temperatura.",
+        null,
+        "No guarda relación con la sincronización.",
+        "Los magnetos no dependen de la batería."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.14.006",
+      "type": "regla",
+      "level": 1,
+      "q": "Según el POH, la caída máxima de RPM por magneto en la prueba del PA-28-161 es:",
+      "options": [
+        "125 RPM",
+        "150 RPM",
+        "175 RPM",
+        "50 RPM"
+      ],
+      "correct": 2,
+      "why": "El PA-28-161 admite una caída máxima de 175 RPM y 50 RPM de diferencia máxima entre magnetos.",
+      "whyNot": [
+        "125 RPM es una cifra típica de otros motores, no el límite del POH.",
+        "150 RPM es el límite del C172S.",
+        null,
+        "50 RPM es la diferencia máxima, no la caída máxima."
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "020.14.007",
+      "type": "regla",
+      "level": 1,
+      "q": "Según el POH, la caída máxima de RPM por magneto en la prueba del C172S es:",
+      "options": [
+        "175 RPM",
+        "150 RPM",
+        "50 RPM",
+        "100 RPM"
+      ],
+      "correct": 1,
+      "why": "El C172S admite 150 RPM de caída máxima y 50 RPM de diferencia máxima entre magnetos.",
+      "whyNot": [
+        "175 RPM es el límite del PA-28-161.",
+        null,
+        "50 RPM es la diferencia máxima, no la caída.",
+        "100 RPM no es el valor del POH."
+      ],
+      "ref": "POH C172S"
+    },
+    {
+      "id": "020.14.008",
+      "type": "regla",
+      "level": 2,
+      "q": "En ambos aviones del curso, la diferencia máxima entre las RPM de los dos magnetos es:",
+      "options": [
+        "25 RPM",
+        "175 RPM",
+        "100 RPM",
+        "50 RPM"
+      ],
+      "correct": 3,
+      "why": "El POH fija 50 RPM de diferencia máxima entre los dos magnetos.",
+      "whyNot": [
+        "Es más restrictivo que el POH.",
+        "175 RPM es la caída máxima del PA-28-161.",
+        "Es demasiado permisivo.",
+        null
+      ],
+      "ref": "POH PA-28-161 y C172S"
+    },
+    {
+      "id": "020.14.009",
+      "type": "calculo",
+      "level": 2,
+      "q": "En un C172S (límite 150 RPM y 50 RPM de diferencia) anotas: BOTH 1800, R 1660, L 1730. ¿Qué concluyes?",
+      "options": [
+        "Cumple: ambas caídas son menores de 150",
+        "No cumple: la caída del derecho supera el límite",
+        "No cumple: la diferencia entre magnetos supera 50 RPM",
+        "No cumple: el izquierdo cae demasiado poco"
+      ],
+      "correct": 2,
+      "why": "Caídas: R 140 y L 70, ambas bajo 150. Pero la diferencia es 70 RPM, mayor de 50: no cumple.",
+      "whyNot": [
+        "Las caídas cumplen, pero falta comprobar la diferencia.",
+        "R cae 140 RPM, por debajo de 150.",
+        null,
+        "Una caída pequeña no es un fallo por sí sola; lo que importa es la diferencia."
+      ],
+      "ref": "POH C172S"
+    },
+    {
+      "id": "020.14.010",
+      "type": "calculo",
+      "level": 2,
+      "q": "En un PA-28-161 (límite 175 y 50) anotas: BOTH 2000, R 1850, L 1810. ¿Cumple?",
+      "options": [
+        "Sí: caídas de 150 y 190 RPM",
+        "No: la caída del izquierdo es de 190 RPM y supera 175",
+        "No: la diferencia es de 40 RPM",
+        "Sí: ambas caídas son inferiores a 175"
+      ],
+      "correct": 1,
+      "why": "Caída R: 150 RPM; L: 190 RPM. L supera el límite de 175, aunque la diferencia sea 40 RPM (menor de 50).",
+      "whyNot": [
+        "Las caídas son de 150 y 190, pero 190 no cumple.",
+        null,
+        "La diferencia de 40 RPM sí cumple; el fallo es la caída de L.",
+        "La caída de L es de 190 RPM, no menor de 175."
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "020.14.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "En la prueba de magnetos no hay ninguna caída de RPM al seleccionar R. Esto indica posiblemente:",
+      "options": [
+        "Motor en perfecto estado",
+        "Hielo en el carburador",
+        "Mezcla pobre",
+        "Un magneto no puesto a masa correctamente (posible magneto vivo)"
+      ],
+      "correct": 3,
+      "why": "Si al seleccionar R el magneto izquierdo no se desconecta, el interruptor no lo pone a masa: puede estar vivo. No se vuela hasta revisarlo.",
+      "whyNot": [
+        "Una caída pequeña es normal; ninguna caída no lo es.",
+        "El hielo no explica la falta de caída.",
+        "La mezcla pobre no impide la caída.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.14.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si la caída en un magneto es excesiva en la prueba, la causa más frecuente es:",
+      "options": [
+        "Batería descargada",
+        "Bujías sucias por mezcla rica",
+        "Falta de aceite",
+        "Filtro de aire obstruido"
+      ],
+      "correct": 1,
+      "why": "Las bujías sucias fallan chispas con un solo magneto. A menudo se corrige empobreciendo la mezcla en tierra para quemar los depósitos.",
+      "whyNot": [
+        "La batería no interviene en el encendido por magneto.",
+        null,
+        "La falta de aceite afectaría a la presión, no a un magneto.",
+        "Afectaría a ambos magnetos por igual."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.14.013",
+      "type": "regla",
+      "level": 1,
+      "q": "Al cambiar de R a L en la prueba de magnetos debes:",
+      "options": [
+        "Pasar por OFF para ahorrar tiempo",
+        "Reducir RPM al ralentí",
+        "Pasar por START",
+        "Volver a BOTH y después seleccionar L"
+      ],
+      "correct": 3,
+      "why": "Se vuelve a BOTH entre una posición y otra; pasar por OFF corta el encendido y puede dar petardeos y daños.",
+      "whyNot": [
+        "Pasar por OFF corta el encendido.",
+        "La prueba se hace a las RPM del POH, no en ralentí.",
+        "START es el motor de arranque.",
+        null
+      ],
+      "ref": "POH PA-28-161 y C172S"
+    },
+    {
+      "id": "020.14.014",
+      "type": "concepto",
+      "level": 3,
+      "q": "En vuelo falla un magneto. ¿Qué efecto notarás?",
+      "options": [
+        "Parada inmediata del motor",
+        "Pérdida total de aviónica",
+        "Una pequeña pérdida de potencia y algo de aspereza; el motor sigue funcionando",
+        "Subida de la presión de aceite"
+      ],
+      "correct": 2,
+      "why": "Con un solo magneto el motor sigue funcionando con algo menos de potencia. Se aterriza pronto en un aeródromo adecuado.",
+      "whyNot": [
+        "Los dos sistemas son independientes: el otro sostiene el motor.",
+        "La aviónica depende del sistema eléctrico, no de los magnetos.",
+        null,
+        "No hay relación con la presión de aceite."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.14.015",
+      "type": "concepto",
+      "level": 3,
+      "q": "El avance de la chispa antes del PMS tiene como objetivo:",
+      "options": [
+        "Que la presión máxima de la combustión ocurra poco después del PMS",
+        "Reducir las RPM",
+        "Aumentar la tensión de la bujía",
+        "Evitar el hielo en el carburador"
+      ],
+      "correct": 0,
+      "why": "La mezcla tarda unos milisegundos en quemarse: la chispa salta antes de que el pistón llegue arriba para lograr el máximo empuje poco después del PMS.",
+      "whyNot": [
+        null,
+        "No busca reducir RPM.",
+        "La tensión depende del magneto.",
+        "Es un tema independiente del hielo."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.14.016",
+      "type": "lectura",
+      "level": 2,
+      "q": "Lee los datos de la prueba de magnetos de un PA-28-161 con límites 175 y 50. ¿Qué decides?",
+      "data": "BOTH  2000 RPM\nR     1880 RPM\nL     1900 RPM",
+      "options": [
+        "No cumple: caída de L excesiva",
+        "No cumple: caída de R excesiva",
+        "No cumple: diferencia mayor de 50 RPM",
+        "Cumple el POH: puedes continuar"
+      ],
+      "correct": 3,
+      "why": "Caídas: R 120 RPM, L 100 RPM; diferencia 20 RPM. Todo dentro de los límites.",
+      "whyNot": [
+        "100 RPM está por debajo de 175.",
+        "120 RPM está por debajo de 175.",
+        "La diferencia es de 20 RPM, no de más de 50.",
+        null
+      ],
+      "ref": "POH PA-28-161"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.14.01",
+      "front": "Prueba de magnetos del PA-28-161 (POH)",
+      "back": "Caída máxima 175 RPM; diferencia máxima 50 RPM"
+    },
+    {
+      "id": "c.020.14.02",
+      "front": "Prueba de magnetos del C172S (POH)",
+      "back": "Caída máxima 150 RPM; diferencia máxima 50 RPM"
+    },
+    {
+      "id": "c.020.14.03",
+      "front": "Qué es un magneto vivo",
+      "back": "Magneto que da chispa con la llave en OFF por tener el cable P suelto"
+    },
+    {
+      "id": "c.020.14.04",
+      "front": "Por qué dos magnetos y dos bujías por cilindro",
+      "back": "Seguridad y combustión más completa"
+    },
+    {
+      "id": "c.020.14.05",
+      "front": "Cómo se cambia de R a L en la prueba",
+      "back": "Pasando por BOTH, nunca por OFF"
+    },
+    {
+      "id": "c.020.14.06",
+      "front": "Acoplamiento de impulsos",
+      "back": "Da chispa fuerte y retrasada con el motor girando despacio en el arranque"
+    }
+  ]
+}

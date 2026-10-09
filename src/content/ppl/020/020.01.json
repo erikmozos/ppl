@@ -1,0 +1,582 @@
+{
+  "lesson": {
+    "id": "020.01",
+    "title": "Cargas y estructura",
+    "summary": "Las cinco cargas básicas (tracción, compresión, cortadura, torsión y flexión), los tipos de estructura de un avión ligero (tubos, monocasco, semimonocasco, composites), materiales, alas, fuselaje, empenaje y parabrisas, y los límites de carga y de fatiga.",
+    "objectives": [
+      "Reconocer tracción, compresión, cortadura, torsión y flexión y dónde actúan en un avión",
+      "Diferenciar estructura de tubos, monocasco y semimonocasco y sus ventajas e inconvenientes",
+      "Conocer los materiales habituales y sus problemas: corrosión y fatiga",
+      "Describir las partes de ala, fuselaje y empenaje y el cuidado del parabrisas",
+      "Distinguir carga límite y carga última y el factor de carga de las categorías normal y utility"
+    ],
+    "sections": [
+      {
+        "title": "Las cinco cargas",
+        "text": [
+          "Una estructura de avión soporta fuerzas de distinto tipo. Se agrupan en cinco **cargas** básicas, y cada pieza suele soportar varias a la vez:"
+        ],
+        "table": {
+          "caption": "Cargas básicas y un ejemplo en un avión ligero",
+          "head": [
+            "Carga",
+            "Qué hace",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Tracción",
+              "Estira el material",
+              "Los montantes del ala del C172 con el avión en vuelo; la parte inferior del ala al doblarse hacia arriba"
+            ],
+            [
+              "Compresión",
+              "Comprime o acorta",
+              "El tren de aterrizaje al tocar la pista; la parte superior del ala en vuelo"
+            ],
+            [
+              "Cortadura (cizalladura)",
+              "Desliza una capa del material sobre otra",
+              "Los remaches y tornillos que unen el ala al fuselaje; el alma del larguero"
+            ],
+            [
+              "Torsión",
+              "Retuerce",
+              "El fuselaje al aplicar el timón de dirección; el ala por el momento del perfil"
+            ],
+            [
+              "Flexión",
+              "Curva: tracción en un lado y compresión en el otro",
+              "El larguero del ala: sostiene el peso del avión en vuelo"
+            ]
+          ],
+          "src": "PHAK cap. 6"
+        },
+        "bullets": [
+          "En vuelo la sustentación **dobla el ala hacia arriba**: el extradós (superior) se comprime y el intradós (inferior) se estira. En tierra, con el avión parado, ocurre al revés.",
+          "La flexión es la suma de una tracción y una compresión a ambos lados del eje neutro: por eso el larguero tiene alas (cabezas) separadas por un alma."
+        ]
+      },
+      {
+        "title": "Tipos de estructura",
+        "table": {
+          "caption": "Tipos de estructura del fuselaje",
+          "head": [
+            "Estructura",
+            "Cómo es",
+            "Ventajas e inconvenientes"
+          ],
+          "rows": [
+            [
+              "Celosía de tubos",
+              "Armazón de tubos de acero soldados, cubierto de tela",
+              "Sencilla y robusta; difícil de dar buenas formas aerodinámicas; hoy poco frecuente"
+            ],
+            [
+              "Monocasco",
+              "El revestimiento exterior soporta todas las cargas, con cuadernas para darle forma",
+              "Muy limpia aerodinámicamente; frágil: una abolladura o un agujero debilita la pieza"
+            ],
+            [
+              "Semimonocasco",
+              "Revestimiento + cuadernas + largueros y larguerillos; el conjunto soporta las cargas",
+              "El más usado (PA-28, C172): ligero, resistente y con redundancia si falla un elemento"
+            ],
+            [
+              "Materiales compuestos",
+              "Fibra de carbono o vidrio con resina, a menudo en sándwich con núcleo de espuma o nido de abeja",
+              "Muy ligera y de formas suaves; hay que vigilar delaminaciones, impactos y exposición al calor o a disolventes"
+            ]
+          ],
+          "src": "PHAK cap. 6"
+        },
+        "figure": "svg:020-semimonocasco",
+        "caption": "Estructura semimonocasco: cuadernas, largueros, larguerillos y revestimiento.",
+        "text": [
+          "La forma de organizar la estructura define cómo se reparten las cargas.",
+          "El PA-28-161 y el C172S son de **semimonocasco** de aleación de aluminio. Las **cuadernas** (mamparos) dan forma a la sección, los **largueros** y **larguerillos** llevan la flexión a lo largo del fuselaje y el **revestimiento** (la piel) soporta tracción y cortadura y ayuda a repartir las cargas."
+        ]
+      },
+      {
+        "title": "Materiales",
+        "text": [
+          "El material ideal es **ligero, resistente, rígido y fácil de reparar**. Los más usados son:",
+          "Las **aleaciones de aluminio** (series 2024 y 7075, a menudo revestidas con una capa de aluminio puro, *Alclad*, que protege de la corrosión) forman casi todo el PA-28 y el C172. El **acero** (por ejemplo cromo-molibdeno) se usa en piezas muy cargadas: bancada del motor, tren principal, herrajes. El **titanio** y el **magnesio** aparecen en piezas especiales. Los **materiales compuestos** se extienden en aviones modernos.",
+          "Dos enemigos de la estructura son la **corrosión** (oxidación que debilita el metal, favorecida por humedad, salinidad y contacto entre metales distintos) y la **fatiga**: la repetición de ciclos de carga produce pequeñas grietas que crecen aunque la carga sea menor que el límite de rotura. Por eso las revisiones buscan grietas, corrosión y deformaciones."
+        ]
+      },
+      {
+        "title": "Ala, fuselaje y empenaje",
+        "text": [
+          "El **ala** es una caja estructural. Los **largueros** (principal y secundario) son las piezas longitudinales que soportan la flexión; las **costillas** dan forma al perfil y reparten la carga entre largueros y revestimiento; y el **revestimiento** cierra la caja y colabora en la resistencia. En el interior del ala van los **depósitos de combustible**, uno en cada lado, tanto en el PA-28-161 como en el C172S. El C172S es de **ala alta con montantes** (puntales), que aligeran la flexión en la raíz; el PA-28-161 es de **ala baja en voladizo** de planta rectangular, sin montantes.",
+          "El **fuselaje** aloja cabina, equipaje y motor, y une alas y empenaje. El **empenaje** (la cola) tiene el **estabilizador vertical**, con el timón de dirección, y el **horizontal**, con el timón de profundidad. En el PA-28-161 el horizontal es un **estabilizador móvil de una sola pieza (stabilator)**; el C172S lleva estabilizador fijo y timón de profundidad separado.",
+          "El **parabrisas** y las ventanillas son de **metacrilato (acrílico)**. Se rayan con facilidad y el polvo seco las arañaría: se limpian con agua y jabón suave, con paño blando o piel de gamuza, sin disolventes ni productos de limpieza de uso doméstico, que las agrietan y vuelven opacas. Una grieta en el parabrisas reduce la resistencia a la presión de un impacto de ave y la visibilidad."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Límites de carga",
+        "text": [
+          "Cada avión tiene un límite de lo que su estructura puede soportar. La **carga límite** es la máxima carga que se espera en servicio; la estructura debe soportarla **sin deformación permanente**. La **carga última** es la que provoca la rotura, y las normas la fijan en **1,5 veces la carga límite** (factor de seguridad 1,5): la estructura debe aguantarla al menos 3 segundos sin romper. Se expresa con el **factor de carga** n, en múltiplos de g.",
+          "Para un avión de categoría **normal**, el factor de carga límite es de **+3,8 g y −1,52 g** en configuración limpia; en **utility**, +4,4 g; en acrobática, +6 g y −3 g. Con flaps extendidos el límite positivo suele ser de **+2 g** (según POH). Estos valores se relacionan con el diagrama V-n y con la velocidad de maniobra VA, que verás en Principios de vuelo."
+        ],
+        "formulas": [
+          {
+            "f": "Carga última = 1,5 × carga límite",
+            "note": "Factor de seguridad de las normas de certificación."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Un avión de categoría normal tiene un factor de carga límite de +3,8 g. ¿Cuál es el factor de carga último?",
+            "a": "3,8 × 1,5 = 5,7 g."
+          }
+        ],
+        "verify": true
+      }
+    ],
+    "numbers": [
+      "Cinco cargas: tracción, compresión, cortadura, torsión y flexión",
+      "En vuelo, extradós del ala en compresión e intradós en tracción",
+      "Estructura habitual: semimonocasco de aluminio; el monocasco es frágil ante abolladuras",
+      "Carga última = 1,5 × carga límite",
+      "Categoría normal: +3,8 g y −1,52 g; utility: +4,4 g"
+    ],
+    "traps": [
+      "Confundir cortadura con torsión: la cortadura desliza capas, la torsión retuerce.",
+      "Creer que el monocasco es más resistente: una pequeña abolladura lo debilita.",
+      "Pensar que el límite de rotura es la carga límite: es la última (1,5 veces).",
+      "Limpiar el parabrisas con producto doméstico o paño seco: agrieta y raya el metacrilato.",
+      "Olvidar que el sentido de las cargas del ala se invierte en tierra y en vuelo."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 6: sistemas aeronáuticos",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "EASA CS-23: cargas y factor de seguridad",
+        "url": "https://www.easa.europa.eu/en/document-library/certification-specifications"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Prevuelo del PA-28: ala, fuselaje y cola",
+        "href": "#/ac/pa28/flow/preflight"
+      },
+      {
+        "label": "Prevuelo del C172",
+        "href": "#/ac/c172/flow/preflight"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.01.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La carga que tiende a retorcer una pieza es:",
+      "options": [
+        "Torsión",
+        "Compresión",
+        "Tracción",
+        "Cortadura"
+      ],
+      "correct": 0,
+      "why": "La torsión retuerce: el fuselaje la soporta al aplicar el timón de dirección.",
+      "whyNot": [
+        null,
+        "La compresión acorta.",
+        "La tracción estira.",
+        "La cortadura desliza capas del material."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.01.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "Los remaches que unen el ala al fuselaje trabajan principalmente a:",
+      "options": [
+        "Torsión",
+        "Compresión",
+        "Cortadura",
+        "Flexión"
+      ],
+      "correct": 2,
+      "why": "Los remaches y tornillos están cargados en dirección transversal a su eje: trabajan a cortadura.",
+      "whyNot": [
+        "Un remache no se retuerce de forma apreciable.",
+        "No se aplastan a lo largo de su eje.",
+        null,
+        "La flexión es de piezas largas como el larguero."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.01.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con el avión en vuelo y el ala doblándose hacia arriba, el extradós (superficie superior) trabaja a:",
+      "options": [
+        "Tracción",
+        "Torsión",
+        "Cortadura",
+        "Compresión"
+      ],
+      "correct": 3,
+      "why": "Al curvarse hacia arriba, la parte superior se acorta (compresión) y la inferior se estira (tracción).",
+      "whyNot": [
+        "La tracción es del intradós.",
+        "La torsión retuerce, no curva.",
+        "No es la carga principal de la superficie.",
+        null
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.01.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál de estas cargas combina tracción y compresión en lados opuestos de la pieza?",
+      "options": [
+        "Torsión",
+        "Cortadura",
+        "Flexión",
+        "Compresión pura"
+      ],
+      "correct": 2,
+      "why": "En una pieza que se curva, un lado se estira y el otro se comprime: es la flexión.",
+      "whyNot": [
+        "La torsión retuerce la pieza.",
+        "La cortadura desliza capas.",
+        null,
+        "La compresión pura acorta toda la pieza."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.01.005",
+      "type": "concepto",
+      "level": 1,
+      "q": "En una estructura monocasco, las cargas las soporta principalmente:",
+      "options": [
+        "El revestimiento exterior",
+        "Un armazón interior de tubos",
+        "Los largueros",
+        "Los remaches"
+      ],
+      "correct": 0,
+      "why": "En el monocasco el revestimiento es la estructura resistente; las cuadernas solo dan forma.",
+      "whyNot": [
+        null,
+        "Eso es una estructura de celosía.",
+        "Los largueros destacan en el semimonocasco.",
+        "Los remaches son solo una unión."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.01.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "El semimonocasco, frente al monocasco puro, aporta:",
+      "options": [
+        "Mayor peso sin ventaja",
+        "Menor resistencia a la flexión",
+        "Ausencia de revestimiento",
+        "Largueros y larguerillos que llevan parte de la carga y dan redundancia"
+      ],
+      "correct": 3,
+      "why": "Los largueros y larguerillos ayudan a llevar las cargas y permiten que, si un elemento falla, otros asuman parte.",
+      "whyNot": [
+        "Es más ligero y resistente.",
+        "Mejora la resistencia a la flexión.",
+        "Sí lleva revestimiento.",
+        null
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.01.007",
+      "type": "concepto",
+      "level": 1,
+      "q": "El PA-28-161 y el C172S son aviones de estructura:",
+      "options": [
+        "Semimonocasco de aleación de aluminio",
+        "De tubos soldados y tela",
+        "Monocasco de madera",
+        "De fibra de carbono"
+      ],
+      "correct": 0,
+      "why": "Ambos son de semimonocasco de aleación de aluminio.",
+      "whyNot": [
+        null,
+        "Esa estructura es de aviones antiguos.",
+        "No son de madera.",
+        "No son de composite."
+      ],
+      "ref": "POH PA-28-161 y C172S"
+    },
+    {
+      "id": "020.01.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "El material habitual del revestimiento de un avión ligero es:",
+      "options": [
+        "Aleación de aluminio",
+        "Acero inoxidable",
+        "Plomo",
+        "Cobre"
+      ],
+      "correct": 0,
+      "why": "Las aleaciones de aluminio combinan ligereza, resistencia y facilidad de fabricación y reparación.",
+      "whyNot": [
+        null,
+        "Es muy pesado para el revestimiento.",
+        "No tiene resistencia ni ligereza.",
+        "No se usa estructuralmente."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.01.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "La fatiga de un metal se debe a:",
+      "options": [
+        "Una carga única muy alta",
+        "La repetición de ciclos de carga que crea grietas",
+        "La corrosión por agua salada",
+        "El exceso de calor del motor"
+      ],
+      "correct": 1,
+      "why": "La carga cíclica crea y hace crecer pequeñas grietas incluso por debajo del límite de rotura.",
+      "whyNot": [
+        "Eso sería una sobrecarga.",
+        null,
+        "Eso es corrosión.",
+        "El calor puede dañar, pero no es la fatiga."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.01.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un ala, las costillas:",
+      "options": [
+        "Llevan toda la flexión",
+        "Dan forma al perfil y reparten la carga entre revestimiento y largueros",
+        "Son el combustible",
+        "Sustituyen al revestimiento"
+      ],
+      "correct": 1,
+      "why": "Las costillas mantienen la forma del perfil y transmiten las cargas del revestimiento a los largueros.",
+      "whyNot": [
+        "La flexión la llevan los largueros.",
+        null,
+        "Los depósitos son un elemento distinto.",
+        "El revestimiento sigue siendo necesario."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.01.011",
+      "type": "concepto",
+      "level": 1,
+      "q": "El C172S es un avión de:",
+      "options": [
+        "Ala baja sin montantes",
+        "Biplano",
+        "Ala media",
+        "Ala alta con montantes"
+      ],
+      "correct": 3,
+      "why": "El Cessna 172 lleva ala alta sostenida por montantes (puntales).",
+      "whyNot": [
+        "Ese es el PA-28-161.",
+        "No es biplano.",
+        "No es de ala media.",
+        null
+      ],
+      "ref": "POH C172S"
+    },
+    {
+      "id": "020.01.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "El estabilizador horizontal del PA-28-161 es:",
+      "options": [
+        "Fijo, con timón de profundidad",
+        "Una doble cola en V",
+        "Un canard",
+        "Un estabilizador móvil de una sola pieza (stabilator)"
+      ],
+      "correct": 3,
+      "why": "El PA-28 monta un estabilizador móvil de una pieza; el C172S lleva uno fijo con timón de profundidad.",
+      "whyNot": [
+        "Esa es la cola del C172S.",
+        "No es de cola en V.",
+        "No lleva canard.",
+        null
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "020.01.013",
+      "type": "regla",
+      "level": 2,
+      "q": "La relación entre la carga última y la carga límite, según las normas, es de:",
+      "options": [
+        "1,0",
+        "1,5",
+        "2,0",
+        "3,0"
+      ],
+      "correct": 1,
+      "why": "La carga última es 1,5 veces la carga límite (factor de seguridad 1,5).",
+      "whyNot": [
+        "Sin margen de seguridad.",
+        null,
+        "El factor reglamentario es menor.",
+        "Es un valor excesivo."
+      ],
+      "ref": "CS-23"
+    },
+    {
+      "id": "020.01.014",
+      "type": "calculo",
+      "level": 2,
+      "q": "El factor de carga límite de una avioneta es de +3,8 g. ¿Cuál es el factor de carga último?",
+      "options": [
+        "5,7 g",
+        "3,8 g",
+        "2,5 g",
+        "7,6 g"
+      ],
+      "correct": 0,
+      "why": "Carga última = 1,5 × carga límite: 3,8 × 1,5 = 5,7 g.",
+      "whyNot": [
+        null,
+        "Es el valor límite, no el último.",
+        "Divide entre 1,5.",
+        "Multiplica por 2."
+      ],
+      "ref": "CS-23"
+    },
+    {
+      "id": "020.01.015",
+      "type": "regla",
+      "level": 2,
+      "q": "Los factores de carga límite de la categoría normal son:",
+      "options": [
+        "+4,4 g y −1,76 g",
+        "+6 g y −3 g",
+        "+3,8 g y −1,52 g",
+        "+2 g y 0 g"
+      ],
+      "correct": 2,
+      "why": "En categoría normal, con flaps retraídos: +3,8 g y −1,52 g.",
+      "whyNot": [
+        "El +4,4 g es de la categoría utility.",
+        "Corresponde a la categoría acrobática.",
+        null,
+        "No corresponden a una categoría."
+      ],
+      "ref": "CS-23"
+    },
+    {
+      "id": "020.01.016",
+      "type": "regla",
+      "level": 1,
+      "q": "Para limpiar el parabrisas de metacrilato se debe usar:",
+      "options": [
+        "Disolvente y trapo seco",
+        "Un producto doméstico con amoniaco",
+        "Agua y jabón suave con paño blando",
+        "Cepillo duro"
+      ],
+      "correct": 2,
+      "why": "El metacrilato se raya con facilidad y los disolventes lo agrietan: se limpia con agua y jabón suave, y paño blando.",
+      "whyNot": [
+        "El disolvente y el trapo seco lo dañan.",
+        "El amoniaco agrieta el acrílico.",
+        null,
+        "Un cepillo duro lo raya."
+      ],
+      "ref": "POH; PHAK cap. 6"
+    },
+    {
+      "id": "020.01.017",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Por qué el PA-28-161 de ala baja puede prescindir de montantes?",
+      "options": [
+        "Porque lleva dos alas",
+        "Porque el ala es en voladizo y su larguero soporta la flexión",
+        "Porque el fuselaje es más grande",
+        "Porque las alas son plegables"
+      ],
+      "correct": 1,
+      "why": "El ala en voladizo se sostiene desde la raíz con un larguero resistente; en el C172 los montantes aligeran esa flexión.",
+      "whyNot": [
+        "Es monoplano.",
+        null,
+        "El tamaño del fuselaje no lo explica.",
+        "No son plegables."
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "020.01.018",
+      "type": "lectura",
+      "level": 2,
+      "q": "En la figura, los elementos que dan forma a la sección del fuselaje son:",
+      "figure": "svg:020-semimonocasco",
+      "options": [
+        "Los larguerillos",
+        "Las cuadernas",
+        "El revestimiento",
+        "Los remaches"
+      ],
+      "correct": 1,
+      "why": "Las cuadernas (mamparos) son los anillos transversales que dan forma a la sección.",
+      "whyNot": [
+        "Los larguerillos van a lo largo del fuselaje.",
+        null,
+        "El revestimiento cubre y colabora en la resistencia.",
+        "Los remaches solo unen piezas."
+      ],
+      "ref": "PHAK cap. 6"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.01.01",
+      "front": "Las cinco cargas",
+      "back": "Tracción, compresión, cortadura, torsión y flexión"
+    },
+    {
+      "id": "c.020.01.02",
+      "front": "Ala en vuelo: extradós e intradós",
+      "back": "Extradós en compresión; intradós en tracción"
+    },
+    {
+      "id": "c.020.01.03",
+      "front": "Estructura del PA-28 y del C172S",
+      "back": "Semimonocasco de aleación de aluminio"
+    },
+    {
+      "id": "c.020.01.04",
+      "front": "Carga última y carga límite",
+      "back": "Última = 1,5 × límite; categoría normal +3,8 g y −1,52 g"
+    },
+    {
+      "id": "c.020.01.05",
+      "front": "Limpieza del parabrisas",
+      "back": "Agua y jabón suave con paño blando; nunca disolventes"
+    }
+  ]
+}

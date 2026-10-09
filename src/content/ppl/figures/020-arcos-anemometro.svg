@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300">
+<title>Arcos del anemómetro: blanco, verde, amarillo y raya roja (valores de ejemplo)</title>
+<defs>
+<marker id="020-arcos-anemometro-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+</defs>
+<rect x="100" y="100" width="304" height="24" class="ok"/>
+<rect x="404" y="100" width="136" height="24" class="wa"/>
+<rect x="76" y="128" width="236" height="12" class="soft"/>
+<line x1="540" y1="88" x2="540" y2="144" class="wa-ln thick"/>
+<text x="188" y="116" class="txo b" text-anchor="middle">Arco verde</text>
+<text x="472" y="116" class="txw b" text-anchor="middle">Arco amarillo</text>
+<text x="194" y="152" class="tx2" font-size="11" text-anchor="middle">Arco blanco (flaps)</text>
+<line x1="60" y1="170" x2="580" y2="170" class="ln"/>
+<line x1="60" y1="165" x2="60" y2="175" class="ln"/><text x="60" y="190" class="tx2" font-size="11" text-anchor="middle">40</text>
+<line x1="140" y1="165" x2="140" y2="175" class="ln"/><text x="140" y="190" class="tx2" font-size="11" text-anchor="middle">60</text>
+<line x1="220" y1="165" x2="220" y2="175" class="ln"/><text x="220" y="190" class="tx2" font-size="11" text-anchor="middle">80</text>
+<line x1="300" y1="165" x2="300" y2="175" class="ln"/><text x="300" y="190" class="tx2" font-size="11" text-anchor="middle">100</text>
+<line x1="380" y1="165" x2="380" y2="175" class="ln"/><text x="380" y="190" class="tx2" font-size="11" text-anchor="middle">120</text>
+<line x1="460" y1="165" x2="460" y2="175" class="ln"/><text x="460" y="190" class="tx2" font-size="11" text-anchor="middle">140</text>
+<line x1="540" y1="165" x2="540" y2="175" class="ln"/><text x="540" y="190" class="tx2" font-size="11" text-anchor="middle">160 kt</text>
+<line x1="76" y1="128" x2="76" y2="70" class="ln2"/><text x="76" y="62" class="tx2" font-size="11" text-anchor="middle">VS0 44</text>
+<line x1="100" y1="100" x2="100" y2="44" class="ln2"/><text x="100" y="36" class="tx2" font-size="11" text-anchor="middle">VS1 50</text>
+<line x1="312" y1="128" x2="312" y2="70" class="ln2"/><text x="312" y="62" class="tx2" font-size="11" text-anchor="middle">VFE 103</text>
+<line x1="404" y1="100" x2="404" y2="44" class="ln2"/><text x="404" y="36" class="tx2" font-size="11" text-anchor="middle">VNO 126</text>
+<line x1="540" y1="88" x2="540" y2="70" class="ln2"/><text x="540" y="62" class="tx2" font-size="11" text-anchor="middle">VNE 160</text>
+<text x="40" y="236" class="tx"><tspan class="txo b">Verde</tspan>: de VS1 a VNO, uso normal con flaps retraídos.</text>
+<text x="40" y="256" class="tx"><tspan class="txw b">Amarillo</tspan>: de VNO a VNE, solo en aire en calma y con precaución.</text>
+<text x="40" y="276" class="tx"><tspan class="b">Blanco</tspan>: de VS0 a VFE, con flaps extendidos. Raya roja: VNE, nunca excederla.</text>
+<text x="40" y="296" class="tx2" font-size="11">Valores de ejemplo, cercanos a los de un PA-28-161.</text>
+</svg>

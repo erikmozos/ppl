@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <title>Gráfica de estilo POH con datos de ejemplo: distancia de despegue hasta 50 ft frente a temperatura exterior para varias altitudes de presión, con un ejemplo de lectura</title>
+  <defs>
+    <marker id="030-despegue-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+    <marker id="030-despegue-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker>
+  </defs>
+  <line x1="90" y1="340" x2="550" y2="340" class="ln2 dash"/>
+  <text x="84" y="344" class="tx2" text-anchor="end">400</text>
+  <line x1="90" y1="294" x2="550" y2="294" class="ln2 dash"/>
+  <text x="84" y="298" class="tx2" text-anchor="end">500</text>
+  <line x1="90" y1="248" x2="550" y2="248" class="ln2 dash"/>
+  <text x="84" y="252" class="tx2" text-anchor="end">600</text>
+  <line x1="90" y1="202" x2="550" y2="202" class="ln2 dash"/>
+  <text x="84" y="206" class="tx2" text-anchor="end">700</text>
+  <line x1="90" y1="155" x2="550" y2="155" class="ln2 dash"/>
+  <text x="84" y="159" class="tx2" text-anchor="end">800</text>
+  <line x1="90" y1="109" x2="550" y2="109" class="ln2 dash"/>
+  <text x="84" y="113" class="tx2" text-anchor="end">900</text>
+  <line x1="90" y1="63" x2="550" y2="63" class="ln2 dash"/>
+  <text x="84" y="67" class="tx2" text-anchor="end">1000</text>
+  <line x1="90" y1="40" x2="90" y2="340" class="ln2 dash"/>
+  <text x="90" y="358" class="tx2" text-anchor="middle">0</text>
+  <line x1="205" y1="40" x2="205" y2="340" class="ln2 dash"/>
+  <text x="205" y="358" class="tx2" text-anchor="middle">10</text>
+  <line x1="320" y1="40" x2="320" y2="340" class="ln2 dash"/>
+  <text x="320" y="358" class="tx2" text-anchor="middle">20</text>
+  <line x1="435" y1="40" x2="435" y2="340" class="ln2 dash"/>
+  <text x="435" y="358" class="tx2" text-anchor="middle">30</text>
+  <line x1="550" y1="40" x2="550" y2="340" class="ln2 dash"/>
+  <text x="550" y="358" class="tx2" text-anchor="middle">40</text>
+  <line x1="90" y1="340" x2="560" y2="340" class="ln" marker-end="url(#030-despegue-k)"/>
+  <line x1="90" y1="340" x2="90" y2="30" class="ln" marker-end="url(#030-despegue-k)"/>
+  <text x="320" y="380" class="tx b" text-anchor="middle">Temperatura exterior (°C)</text>
+  <text x="24" y="190" class="tx b" text-anchor="middle" transform="rotate(-90 24 190)">Distancia hasta 50 ft (m)</text>
+  <polyline points="90.0 336.3 147.5 325.2 205.0 314.2 262.5 303.1 320.0 292.0 377.5 280.9 435.0 269.8 492.5 258.8 550.0 247.7" class="ln thick" fill="none"/>
+  <text x="564" y="252" class="tx b">0 ft</text>
+  <polyline points="90.0 290.0 147.5 276.8 205.0 263.6 262.5 250.4 320.0 237.3 377.5 224.1 435.0 210.9 492.5 197.7 550.0 184.5" class="ac-ln thick" fill="none"/>
+  <text x="564" y="189" class="txa b">2000 ft</text>
+  <polyline points="90.0 240.3 147.5 225.0 205.0 209.7 262.5 194.4 320.0 179.1 377.5 163.9 435.0 148.6 492.5 133.3 550.0 118.0" class="ok-ln thick" fill="none"/>
+  <text x="564" y="122" class="txo b">4000 ft</text>
+  <polyline points="90.0 187.2 147.5 169.8 205.0 152.5 262.5 135.1 320.0 117.7 377.5 100.3 435.0 82.9 492.5 65.5 550.0 48.1" class="wa-ln thick" fill="none"/>
+  <text x="564" y="52" class="txw b">6000 ft</text>
+  <line x1="378" y1="340" x2="378" y2="164" class="wa-ln dash" marker-end="url(#030-despegue-a)"/>
+  <line x1="378" y1="164" x2="90" y2="164" class="wa-ln dash" marker-end="url(#030-despegue-a)"/>
+  <circle cx="378" cy="164" r="4.5" class="wa-fill"/>
+  <text x="370" y="154" class="txw b" text-anchor="end">≈ 780 m</text>
+  <text x="100" y="22" class="tx b">Despegue a 1100 kg, flaps 10°, pista seca de asfalto, sin viento</text>
+  <text x="630" y="406" class="tx2" text-anchor="end">Datos de ejemplo, no del POH. Lectura: 25 °C y altitud de presión 4000 ft.</text>
+</svg>

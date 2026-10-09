@@ -1,0 +1,438 @@
+{
+  "lesson": {
+    "id": "020.22",
+    "title": "Brújula",
+    "summary": "Magnetismo terrestre (variación e inclinación), construcción de la brújula magnética, desvío y compensación, errores en virajes y aceleraciones (UNOS y ANDS en el hemisferio norte) y cálculo de rumbos con variación y desvío.",
+    "objectives": [
+      "Describir el campo magnético terrestre, la variación y la inclinación y su efecto sobre la brújula",
+      "Explicar cómo está construida una brújula de aviación y para qué sirve el líquido y la compensación",
+      "Distinguir variación y desvío y calcular rumbo verdadero, magnético y de brújula",
+      "Aplicar los errores de virajes (UNOS) y de aceleraciones (ANDS) en el hemisferio norte",
+      "Saber cuándo es fiable la lectura de la brújula"
+    ],
+    "sections": [
+      {
+        "title": "El campo magnético de la Tierra",
+        "text": [
+          "La Tierra se comporta como un imán con dos polos magnéticos, cercanos pero distintos de los polos geográficos. Las **líneas de fuerza** salen del polo sur magnético (en el hemisferio norte) y entran en el polo norte magnético. Una aguja imantada y libre se orienta según esas líneas.",
+          "Hay dos ángulos que conviene distinguir. La **variación** (o declinación magnética) es el ángulo entre el **norte verdadero** y el **norte magnético** en un punto. Cambia con el lugar y con el tiempo y se publica en las cartas con líneas isogónicas. La **inclinación** (*dip*) es el ángulo que forman las líneas de fuerza con la horizontal: **0° en el ecuador magnético** (las líneas son horizontales) y **90° en los polos magnéticos** (verticales). La componente horizontal del campo es la que orienta la brújula, y disminuye al acercarse a los polos: cerca de ellos la brújula magnética deja de ser útil."
+        ],
+        "note": {
+          "kind": "es",
+          "text": "En la península ibérica la variación actual es de pocos grados, entre el este y el oeste según la zona y la fecha; en Canarias es oeste y más acusada. Consulta siempre el valor y la fecha de la carta VFR."
+        },
+        "verify": true
+      },
+      {
+        "title": "Cómo es una brújula de aviación",
+        "text": [
+          "La brújula magnética de cabina es sencilla y no depende de la electricidad. Un conjunto de **imanes** pegados a una **rosa de los vientos** flota en una cápsula llena de **líquido** (queroseno o alcohol), sobre un pivote. Este líquido **amortigua** las oscilaciones de la rosa y la **sostiene** con parte de su peso, para que gire con poco rozamiento. Un **fuelle** o una membrana compensa la dilatación del líquido con la temperatura. La rosa se lee frente a una **línea de fe** fija en el cristal.",
+          "Los imanes se montan de modo que el sistema esté **pendular** por debajo del pivote: así la rosa tiende a quedar horizontal aunque el avión cabecee o alabee ligeramente. Ese montaje es el origen de los errores que verás más abajo."
+        ]
+      },
+      {
+        "title": "Desvío y compensación",
+        "text": [
+          "Los imanes de la brújula no solo reciben el campo terrestre: también el campo del propio avión (metales ferrosos, el motor, cables con corriente, radios y altavoces). Esta perturbación es el **desvío** (*deviation*), el ángulo entre el norte magnético y el norte que marca la brújula. Cambia según el rumbo del avión.",
+          "Se reduce con la **compensación** (*compass swing*): un técnico gira el avión en tierra, lejos de masas metálicas, y con unos pequeños imanes (tornillos de compensación) ajusta la brújula en N-S y E-O. El desvío que queda se recoge en la **tarjeta de desvíos** que va en cabina, con un valor cada 30° de rumbo. La compensación se repite si se cambian equipos o tras un impacto. Mantén fuera de la brújula teléfonos, auriculares, imanes y objetos metálicos."
+        ]
+      },
+      {
+        "title": "De rumbo verdadero a rumbo de brújula",
+        "text": [
+          "La cadena de rumbos es: **rumbo verdadero (RV)** → **rumbo magnético (RM)** con la **variación** → **rumbo de brújula (RB)** con el **desvío**. La regla es la misma en ambos pasos, de verdadero a brújula: **oeste suma, este resta**. A la inversa, de brújula a verdadero: **este suma, oeste resta** («CDMVT: Compass, Deviation, Magnetic, Variation, True: *Can Dead Men Vote Twice*, se suma el Este»)."
+        ],
+        "examples": [
+          {
+            "q": "Rumbo verdadero 120°, variación 3° W, desvío 2° E (según la tarjeta). ¿Qué rumbo de brújula debes volar?",
+            "a": "RM = 120° + 3° = 123°. RB = 123° − 2° = 121°."
+          },
+          {
+            "q": "Marcas un rumbo de brújula de 250° con un desvío de 4° W y una variación de 1° E. ¿Cuál es el rumbo verdadero?",
+            "a": "De brújula a magnético: oeste resta: 250° − 4° = 246°. De magnético a verdadero: este suma: 246° + 1° = 247°."
+          }
+        ]
+      },
+      {
+        "title": "Errores de la brújula: virajes y aceleraciones",
+        "text": [
+          "La brújula debe leerse en **vuelo recto y nivelado, a velocidad constante**. Por la inclinación magnética, el campo tiene también una componente vertical que atrae el extremo norte de la aguja hacia abajo (en el hemisferio norte). Para compensarlo, el centro de gravedad del conjunto se desplaza algo hacia el sur del pivote. Cuando el avión cambia de rumbo o de velocidad, la masa del conjunto reacciona y la rosa gira sin que lo haga el avión realmente. De ahí dos errores clásicos, **en el hemisferio norte**:",
+          "**Error de virajes (UNOS)**: *Undershoot North, Overshoot South*. En un viraje hacia el **norte** la brújula se queda **corta** (indica menos giro del real): debes salir del viraje **antes** de que marque N, tantos grados como la latitud, aproximadamente. En un viraje hacia el **sur** la brújula se **adelanta**: debes seguir girando **después** de que marque S. El error es máximo con rumbos N y S y nulo con E y O.",
+          "**Error de aceleración (ANDS)**: *Accelerate North, Decelerate South*. Con rumbos **este u oeste**, al **acelerar** (despegue, cambio de potencia) la brújula indica un giro hacia el **norte**; al **decelerar**, hacia el **sur**. Es máximo en E y O y nulo en N y S. En el hemisferio sur se invierten los errores."
+        ],
+        "figure": "svg:020-errores-brujula",
+        "caption": "Errores de la brújula en el hemisferio norte: UNOS en virajes y ANDS en aceleraciones.",
+        "bullets": [
+          "Para virar a un rumbo concreto con la brújula, calcula de antemano cuánto antes o después salir.",
+          "Usa el direccional para los virajes y la brújula solo para ponerlo en hora.",
+          "A mayor latitud, mayor error de virajes y de aceleración, porque aumenta la inclinación magnética."
+        ]
+      },
+      {
+        "title": "Cuándo fiarse de la brújula",
+        "text": [
+          "El direccional (020.23) es más cómodo, pero deriva y se alinea con la brújula. Por eso la brújula es la referencia absoluta de rumbo: se compara con ella **cada unos 15 minutos**, en vuelo recto y nivelado, y se ajusta el direccional. Con turbulencia, la rosa oscila y se lee el valor medio."
+        ]
+      }
+    ],
+    "numbers": [
+      "Variación: norte verdadero − norte magnético; desvío: del avión",
+      "Inclinación: 0° en el ecuador magnético, 90° en los polos",
+      "De verdadero a brújula: W suma, E resta; de brújula a verdadero: E suma, W resta",
+      "UNOS: Undershoot North, Overshoot South (virajes; máximo en N y S)",
+      "ANDS: Accelerate North, Decelerate South (máximo en E y O)"
+    ],
+    "traps": [
+      "Confundir variación (del lugar) con desvío (del avión).",
+      "Aplicar los signos al revés al cambiar de verdadero a magnético.",
+      "Pensar que el error de virajes es máximo en E y O: es máximo en N y S; el de aceleración es máximo en E y O.",
+      "Leer la brújula durante un viraje o una aceleración.",
+      "Olvidar que UNOS y ANDS valen solo en el hemisferio norte."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 8: brújula magnética",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "AIP España y cartas OACI 1:500 000: variación magnética",
+        "url": "https://aip.enaire.es/AIP/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28 (brújula)",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.22.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La variación magnética es el ángulo entre:",
+      "options": [
+        "El rumbo y la derrota",
+        "El norte magnético y el norte de brújula",
+        "El horizonte y las líneas de fuerza",
+        "El norte verdadero y el norte magnético"
+      ],
+      "correct": 3,
+      "why": "La variación (declinación) es la diferencia entre el norte verdadero y el magnético en un punto.",
+      "whyNot": [
+        "Eso es la deriva.",
+        "Eso es el desvío.",
+        "Eso es la inclinación magnética.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.22.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "El desvío de la brújula se debe a:",
+      "options": [
+        "Los campos magnéticos del propio avión",
+        "La posición del polo magnético",
+        "La latitud",
+        "La altitud"
+      ],
+      "correct": 0,
+      "why": "El desvío lo producen los materiales ferrosos, el motor y los circuitos eléctricos del avión.",
+      "whyNot": [
+        null,
+        "Eso causa la variación.",
+        "La latitud afecta a la inclinación y a los errores de la brújula, no al desvío.",
+        "La altitud no interviene."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.22.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "La inclinación magnética en el ecuador magnético es:",
+      "options": [
+        "90°",
+        "0°",
+        "45°",
+        "180°"
+      ],
+      "correct": 1,
+      "why": "En el ecuador magnético las líneas de fuerza son horizontales: inclinación 0°.",
+      "whyNot": [
+        "Es el valor en los polos.",
+        null,
+        "Es un valor intermedio, a latitud media.",
+        "No es un valor posible."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.22.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "El líquido de la cápsula de la brújula sirve para:",
+      "options": [
+        "Calentar la rosa",
+        "Compensar la variación",
+        "Aumentar el desvío",
+        "Amortiguar las oscilaciones y reducir el rozamiento"
+      ],
+      "correct": 3,
+      "why": "Amortigua las oscilaciones y sostiene parte del peso de la rosa para que gire con poco rozamiento.",
+      "whyNot": [
+        "No calienta nada.",
+        "La variación depende del lugar.",
+        "El líquido no genera desvío.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.22.005",
+      "type": "regla",
+      "level": 2,
+      "q": "La tarjeta de compensación de la cabina sirve para:",
+      "options": [
+        "Calcular la variación",
+        "Dar el desvío residual para cada rumbo",
+        "Indicar la inclinación magnética",
+        "Corregir la deriva"
+      ],
+      "correct": 1,
+      "why": "Tras la compensación queda un desvío residual; la tarjeta lo recoge cada 30° de rumbo.",
+      "whyNot": [
+        "La variación se toma de la carta.",
+        null,
+        "La inclinación no se corrige con una tarjeta.",
+        "La deriva es del viento."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.22.006",
+      "type": "calculo",
+      "level": 2,
+      "q": "Rumbo verdadero 180°, variación 4° W. ¿Cuál es el rumbo magnético?",
+      "options": [
+        "176°",
+        "180°",
+        "184°",
+        "174°"
+      ],
+      "correct": 2,
+      "why": "De verdadero a magnético, la variación oeste suma: 180° + 4° = 184°.",
+      "whyNot": [
+        "Resta en lugar de sumar.",
+        "No aplica la variación.",
+        null,
+        "Resta 6 en lugar de sumar 4."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.22.007",
+      "type": "calculo",
+      "level": 2,
+      "q": "Rumbo magnético 090°, desvío 3° E. ¿Qué rumbo de brújula debes volar?",
+      "options": [
+        "093°",
+        "087°",
+        "090°",
+        "083°"
+      ],
+      "correct": 1,
+      "why": "De magnético a brújula: este resta, 090° − 3° = 087°.",
+      "whyNot": [
+        "Suma en vez de restar.",
+        null,
+        "No aplica el desvío.",
+        "Resta 7 en lugar de 3."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.22.008",
+      "type": "calculo",
+      "level": 3,
+      "q": "Rumbo de brújula 300°, desvío 2° W, variación 3° E. ¿Cuál es el rumbo verdadero?",
+      "options": [
+        "301°",
+        "298°",
+        "305°",
+        "299°"
+      ],
+      "correct": 0,
+      "why": "De brújula a magnético, oeste resta: 300° − 2° = 298°. De magnético a verdadero, este suma: 298° + 3° = 301°.",
+      "whyNot": [
+        null,
+        "Aplica solo el desvío.",
+        "Suma los dos valores al revés.",
+        "Aplica mal los signos."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.22.009",
+      "type": "regla",
+      "level": 2,
+      "q": "En el hemisferio norte, en un viraje hacia el norte la brújula magnética se:",
+      "options": [
+        "Adelanta, hay que salir después de pasar N",
+        "Comporta con normalidad",
+        "Bloquea",
+        "Retrasa: hay que salir del viraje antes de que marque N"
+      ],
+      "correct": 3,
+      "why": "UNOS: la brújula se queda corta hacia el norte (Undershoot North), así que se sale antes de que marque N.",
+      "whyNot": [
+        "Eso es hacia el sur.",
+        "Tiene error de virajes.",
+        "No se bloquea.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.22.010",
+      "type": "regla",
+      "level": 2,
+      "q": "En el hemisferio norte, en un viraje hacia el sur la brújula:",
+      "options": [
+        "Se queda corta",
+        "No tiene error",
+        "Se adelanta: debes seguir girando después de que marque S",
+        "Marca siempre N"
+      ],
+      "correct": 2,
+      "why": "UNOS: Overshoot South; la brújula se adelanta y hay que girar algo más allá del S indicado.",
+      "whyNot": [
+        "Eso es el comportamiento hacia el norte.",
+        "Hay error de virajes en N y S.",
+        null,
+        "No cambia a N."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.22.011",
+      "type": "regla",
+      "level": 2,
+      "q": "Volando al este en el hemisferio norte, al acelerar, la brújula indica:",
+      "options": [
+        "Un giro hacia el norte",
+        "Un giro hacia el sur",
+        "Ningún cambio",
+        "Un giro hacia el oeste"
+      ],
+      "correct": 0,
+      "why": "ANDS: Accelerate North, Decelerate South. En rumbos E y O el error es máximo.",
+      "whyNot": [
+        null,
+        "Eso ocurre al decelerar.",
+        "El error de aceleración es máximo con E u O.",
+        "No indica un giro hacia el oeste."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.22.012",
+      "type": "concepto",
+      "level": 3,
+      "q": "El error de aceleración de la brújula es máximo con rumbos:",
+      "options": [
+        "Norte y sur",
+        "Cualquiera por igual",
+        "Este y oeste",
+        "Norte solamente"
+      ],
+      "correct": 2,
+      "why": "Con rumbos E u O la aceleración mueve la rosa en el plano del giro: error máximo. Con N y S es nulo.",
+      "whyNot": [
+        "Con N y S el error de virajes es máximo, no el de aceleración.",
+        "Depende del rumbo.",
+        null,
+        "Es nulo en N."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.22.013",
+      "type": "lectura",
+      "level": 2,
+      "q": "Según la figura, en un PA-28 en hemisferio norte, al virar de 090° hacia el norte sales del viraje justo cuando la brújula marca 360°. ¿Qué ocurre?",
+      "figure": "svg:020-errores-brujula",
+      "options": [
+        "Sales en el rumbo exacto 360°",
+        "Ya has pasado el norte: debías salir antes de que marcara N",
+        "Debías salir después de que marcara N",
+        "El error no se aplica al norte"
+      ],
+      "correct": 1,
+      "why": "UNOS: hacia el N la brújula se queda corta, así que al marcar 360° ya has pasado el norte real; hay que salir antes.",
+      "whyNot": [
+        "Con error de virajes el valor leído no es el real.",
+        null,
+        "Eso es para el sur.",
+        "El error es máximo en N."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.22.014",
+      "type": "concepto",
+      "level": 2,
+      "q": "Para comprobar el direccional con la brújula, esta debe leerse:",
+      "options": [
+        "En vuelo recto y nivelado a velocidad constante",
+        "En viraje",
+        "Durante la aceleración",
+        "En ascenso"
+      ],
+      "correct": 0,
+      "why": "Solo en esas condiciones la brújula no tiene errores de virajes ni de aceleración.",
+      "whyNot": [
+        null,
+        "Hay error de virajes.",
+        "Hay error de aceleración.",
+        "El cambio de actitud y de velocidad introduce errores."
+      ],
+      "ref": "PHAK cap. 8"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.22.01",
+      "front": "Variación y desvío",
+      "back": "Variación: norte verdadero − norte magnético (lugar). Desvío: campo del avión (rumbo)"
+    },
+    {
+      "id": "c.020.22.02",
+      "front": "Signos de verdadero a brújula",
+      "back": "Oeste suma, este resta (variación y desvío)"
+    },
+    {
+      "id": "c.020.22.03",
+      "front": "UNOS",
+      "back": "Undershoot North, Overshoot South: errores de virajes en el hemisferio norte"
+    },
+    {
+      "id": "c.020.22.04",
+      "front": "ANDS",
+      "back": "Accelerate North, Decelerate South: error de aceleración, máximo en E y O"
+    },
+    {
+      "id": "c.020.22.05",
+      "front": "Inclinación magnética",
+      "back": "0° en el ecuador magnético, 90° en los polos"
+    }
+  ]
+}

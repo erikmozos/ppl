@@ -1,0 +1,428 @@
+{
+ "lesson": {
+  "title": "Tormentas y cizalladura",
+  "summary": "Condiciones de formación, tipos y ciclo de vida de las tormentas, líneas de turbonada, electricidad y granizo, reventones y microrráfagas, evitación y cizalladura en frentes, inversiones y relieve.",
+  "objectives": [
+   "Enumerar las condiciones que necesita una tormenta",
+   "Describir las tres fases de una celda y los tipos de tormenta",
+   "Reconocer los peligros: turbulencia, granizo, rayos, microrráfagas y cizalladura",
+   "Explicar la secuencia de una microrráfaga en aproximación",
+   "Evitar las tormentas con distancias de seguridad y conocer cómo se informa de la cizalladura en España"
+  ],
+  "sections": [
+   {
+    "title": "Condiciones de formación",
+    "text": [
+     "Una tormenta necesita tres cosas: **aire húmedo** en capas bajas, una atmósfera **inestable** (suficiente enfriamiento con la altura para que el aire que sube siga subiendo) y un **disparador** que inicie la ascendencia. Disparadores habituales: el **calentamiento del suelo** (convección diurna del verano), el **relieve** (aire forzado a subir por una ladera), los **frentes** (el aire cálido levantado por el frío) y la **convergencia** de vientos (brisas, bajas térmicas). Por eso en España las tormentas de verano son de tarde en el interior y las de otoño, a menudo, marítimas en el Mediterráneo.",
+     "La nube de la tormenta es el **cumulonimbo (Cb)**, que puede superar los 30 000 ft. En el METAR y TAF aparece como CB, y la **torre de cúmulos (TCU)** es un cúmulo de gran desarrollo que va camino de serlo."
+    ]
+   },
+   {
+    "title": "Ciclo de vida de una celda",
+    "text": [
+     "Una celda tormentosa tiene tres fases. En la fase de **cúmulo** hay solo **corrientes ascendentes** en toda la nube; todavía no llueve, y la nube crece. En la fase de **madurez** convive la ascendente con **descendentes** (arrastran el aire frío y la precipitación hacia abajo); es la fase **más peligrosa**, con lluvia intensa, granizo, rayos, turbulencia fuerte y rachas. En la de **disipación** dominan las descendentes y la tormenta se agota. Una celda aislada dura de **30 a 60 minutos**."
+    ],
+    "figure": "svg:050-tormenta",
+    "caption": "Cúmulo, madurez y disipación de una celda de masa de aire.",
+    "bullets": [
+     "Tormenta de masa de aire: celdas aisladas, de convección local.",
+     "Multicelular: varias celdas en distintas fases, que se renuevan con otras nuevas.",
+     "Línea de turbonada: línea de tormentas que avanza con un frente de racha; suele ir delante de un frente frío.",
+     "Supercélula: una ascendente giratoria muy intensa; da granizo grande y a veces tornados; es poco frecuente pero la más peligrosa."
+    ]
+   },
+   {
+    "title": "Peligros de una tormenta",
+    "text": [
+     "**Turbulencia severa**: las ascendentes y descendentes alcanzan decenas de nudos, y se extiende dentro y fuera de la nube, incluso 10 o 20 NM a su alrededor. **Granizo**: se forma en las fuertes ascendentes y puede caer fuera de la nube, **bajo el yunque** (la parte superior que se extiende horizontalmente); un granizo grande abolla el avión y rompe parabrisas. **Engelamiento**: abundante agua sobreenfriada en la nube. **Rayos**: dañan el revestimiento, los equipos de radio y la brújula, y el destello puede deslumbrar. **Reducción de visibilidad y techo** por la lluvia intensa. **Cambios de presión locales**: el QNH puede variar con rapidez. **Microrráfagas y cizalladura** en la base.",
+     "No se puede volar a través de una tormenta ni bajo el yunque. Se recomienda mantener **al menos 10 NM** de distancia de una tormenta, y **20 NM** si es severa. El radar de a bordo no es habitual en los aviones de entrenamiento, así que la información procede del METAR, del TAF, de los SIGMET, del radar y del satélite de AEMET."
+    ]
+   },
+   {
+    "title": "Reventones y microrráfagas",
+    "text": [
+     "Una **corriente descendente intensa** que choca con el suelo y se abre en abanico se llama **reventón** (downburst). Si afecta a un área menor de **4 km** de diámetro es una **microrráfaga**, y si es mayor, una **macrorráfaga**. Una microrráfaga dura de **5 a 15 minutos** y puede ocurrir con lluvia o sin ella («seca»), y es extraordinariamente peligrosa en despegue y aproximación.",
+     "En aproximación, el avión atraviesa tres fases: primero encuentra **viento de cara**, que aumenta la IAS y sustentación y hace que el avión **suba** sobre la senda; si el piloto reduce potencia, después llega a la **corriente descendente** y, por último, al **viento de cola**, que hace caer la IAS y la sustentación justo cuando el avión está bajo y lento. Para salir hay que **dar potencia máxima y cabecear para subir sin reducir demasiado la velocidad**, es decir, **ir al aire**."
+    ],
+    "figure": "svg:050-microrrafaga",
+    "caption": "Secuencia: viento de cara, descendente, viento de cola."
+   },
+   {
+    "title": "Cizalladura",
+    "text": [
+     "La **cizalladura** (wind shear) es un cambio brusco de **velocidad o dirección del viento** en una distancia corta, en horizontal o en vertical. Es peligrosa cerca del suelo, donde el avión no tiene altura para recuperar. Aparece: **junto a un frente**, sobre todo el frío, donde el viento cambia de golpe; en una **inversión de temperatura**, especialmente nocturna, cuando el viento en superficie está en calma y a unos 1000 ft sopla fuerte; en las **ráfagas de una tormenta** y **microrráfagas**; en el **relieve y los edificios**, a sotavento de montañas o hangares; y con **brisas marinas**.",
+     "Cuando sospeches cizalladura en la aproximación, aumenta la velocidad de aproximación unos nudos, mantén la potencia disponible y **no dudes en ir al aire** si la IAS fluctúa más de lo normal. Un cambio rápido de la IAS sin cambio de potencia es el aviso."
+    ],
+    "note": {
+     "kind": "es",
+     "text": "En España no se difunde un aviso general de cizalladura. El único aeródromo con aviso es Tenerife Sur (GCTS), y se informa en el METAR con el grupo suplementario WS (por ejemplo, WS RWY 08). En el resto, el riesgo hay que deducirlo del METAR (rachas, tormentas) y del pronóstico."
+    }
+   }
+  ],
+  "numbers": [
+   "Tres requisitos: humedad, inestabilidad y disparador",
+   "Fases: cúmulo (ascendentes), madurez (ascendentes y descendentes), disipación (descendentes); celda de 30 a 60 min",
+   "Distancia de seguridad: 10 NM (20 NM si es severa)",
+   "Microrráfaga: menos de 4 km; 5 a 15 min",
+   "Secuencia en aproximación: viento de cara, descendente, viento de cola",
+   "Cizalladura en España: aviso solo en Tenerife Sur (WS en el METAR)"
+  ],
+  "traps": [
+   "La fase más peligrosa es la de madurez, no la de cúmulo.",
+   "El granizo puede caer fuera de la nube, bajo el yunque.",
+   "La microrráfaga puede ocurrir sin lluvia en superficie.",
+   "No pases bajo el yunque ni entre dos tormentas: la turbulencia se extiende fuera de la nube.",
+   "El viento de cara inicial engaña: parece una ventaja y es el principio de la peor secuencia."
+  ],
+  "spain": [
+   "En verano las tormentas son de tarde en el interior peninsular, Pirineos y Sistema Ibérico; en otoño, en el Mediterráneo, asociadas a DANA.",
+   "Solo Tenerife Sur emite aviso de cizalladura; se informa como WS en el METAR."
+  ],
+  "sources": [
+   {
+    "title": "AEMET, Apuntes de meteorología aeronáutica",
+    "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
+   },
+   {
+    "title": "AEMET, Guía de productos aeronáuticos AU-GUI-0102",
+    "url": "https://www.aemet.es/documentos/es/conocermas/aeronautica/AU-GUI-0102.pdf"
+   },
+   {
+    "title": "FAA-H-8083-28, Aviation Weather Handbook (tormentas y cizalladura)",
+    "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+   }
+  ],
+  "id": "050.16",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "050.16.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "Para que se forme una tormenta hacen falta:",
+   "options": [
+    "Niebla, calma y frío",
+    "Aire seco, estabilidad y viento fuerte",
+    "Aire húmedo, inestabilidad y un disparador",
+    "Una inversión fuerte y aire seco"
+   ],
+   "correct": 2,
+   "why": "Sin humedad, sin inestabilidad o sin un mecanismo que inicie la ascendencia no hay cumulonimbo.",
+   "whyNot": [
+    "La niebla es una situación estable.",
+    "El aire seco y estable no desarrolla Cb.",
+    null,
+    "La inversión impide la convección."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.16.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "La fase más peligrosa de una celda tormentosa es:",
+   "options": [
+    "Las tres por igual",
+    "La de disipación",
+    "La de madurez",
+    "La de cúmulo"
+   ],
+   "correct": 2,
+   "why": "En la madurez coexisten ascendentes, descendentes, lluvia, granizo y rayos.",
+   "whyNot": [
+    "Cada fase tiene intensidad distinta.",
+    "Domina la descendente y se debilita.",
+    null,
+    "Solo hay ascendentes y no hay precipitación."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.16.003",
+   "type": "concepto",
+   "level": 1,
+   "q": "En la fase de cúmulo de una tormenta hay:",
+   "options": [
+    "Solo corrientes ascendentes",
+    "Aire en calma",
+    "Solo descendentes",
+    "Ascendentes y descendentes"
+   ],
+   "correct": 0,
+   "why": "El cúmulo crece con ascendentes a lo largo de toda la nube; aún no cae lluvia.",
+   "whyNot": [
+    null,
+    "Hay ascendentes fuertes.",
+    "Eso ocurre en disipación.",
+    "Eso ocurre en madurez."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.16.004",
+   "type": "regla",
+   "level": 2,
+   "q": "La distancia mínima recomendada de seguridad respecto a una tormenta es de:",
+   "options": [
+    "2 NM",
+    "50 NM",
+    "Basta con no entrar en la nube",
+    "10 NM, y 20 NM si es severa"
+   ],
+   "correct": 3,
+   "why": "La turbulencia y el granizo se extienden varias millas fuera de la nube.",
+   "whyNot": [
+    "Es demasiado poco.",
+    "Es excesivo para una tormenta ordinaria.",
+    "La turbulencia se extiende fuera de la nube.",
+    null
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.16.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una microrráfaga es una corriente descendente que afecta a un área de:",
+   "options": [
+    "Solo sobre el mar",
+    "Menos de 4 km de diámetro",
+    "Exactamente 10 km",
+    "Más de 40 km"
+   ],
+   "correct": 1,
+   "why": "Menos de 4 km y de 5 a 15 minutos de duración.",
+   "whyNot": [
+    "Ocurre en tierra y en el mar.",
+    null,
+    "No se refiere a ese tamaño.",
+    "Eso es una macrorráfaga."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.16.006",
+   "type": "lectura",
+   "level": 2,
+   "q": "En la figura de la microrráfaga, la fase 3 (viento de cola) produce:",
+   "figure": "svg:050-microrrafaga",
+   "options": [
+    "Mejora de la senda",
+    "Cese de la corriente descendente",
+    "Aumento de la IAS",
+    "Caída de la IAS y pérdida de sustentación"
+   ],
+   "correct": 3,
+   "why": "Al pasar a viento de cola, la IAS cae justo cuando el avión está bajo y lento.",
+   "whyNot": [
+    "El viento de cola empeora la senda: el avión se hunde.",
+    "El viento de cola es consecuencia de la descendente, no el final del fenómeno.",
+    "Eso ocurre en la fase 1 (viento de cara).",
+    null
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.16.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "En una aproximación, la secuencia de una microrráfaga es:",
+   "options": [
+    "Viento de cola, descendente y viento de cara",
+    "Viento de cara, descendente y viento de cola",
+    "Descendente, viento de cara y viento de cola",
+    "Calma, viento de cola y de cara"
+   ],
+   "correct": 1,
+   "why": "El avión primero entra por el lado del viento de cara, después atraviesa el centro descendente y sale con viento de cola.",
+   "whyNot": [
+    "Está invertida.",
+    null,
+    "La descendente aparece en medio.",
+    "El viento de cara ocurre al principio."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.16.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una línea de turbonada es:",
+   "options": [
+    "Una fase de disipación",
+    "Una línea de tormentas con un frente de racha, a menudo delante de un frente frío",
+    "Una línea de nubes altas",
+    "Una única celda aislada"
+   ],
+   "correct": 1,
+   "why": "El frente de racha trae viento fuerte y cambio brusco de dirección y temperatura.",
+   "whyNot": [
+    "No es una fase de una celda.",
+    null,
+    "No son nubes altas.",
+    "Es una línea de varias celdas."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.16.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "El granizo de una tormenta puede encontrarse:",
+   "options": [
+    "Fuera de la nube, bajo el yunque",
+    "Solo dentro de la nube",
+    "Solo en el nivel de 0 °C",
+    "Solo en tierra"
+   ],
+   "correct": 0,
+   "why": "La corriente ascendente lanza el granizo hacia el yunque y puede caer fuera de la nube.",
+   "whyNot": [
+    null,
+    "Puede ser lanzado fuera.",
+    "No se limita a esa altitud.",
+    "Es un hidrometeoro que cae."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.16.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una cizalladura de baja cota por inversión nocturna se debe a:",
+   "options": [
+    "Un frente frío",
+    "Una niebla densa",
+    "Viento en calma en superficie y fuerte a unos 1000 ft",
+    "Un Cb"
+   ],
+   "correct": 2,
+   "why": "Bajo la inversión el aire en superficie está desacoplado del viento más fuerte de arriba.",
+   "whyNot": [
+    "Es otra causa de cizalladura.",
+    "La niebla se asocia a estabilidad, no a cizalladura.",
+    null,
+    "Es otra causa de cizalladura."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.16.011",
+   "type": "concepto",
+   "level": 1,
+   "q": "Ante una tormenta que bloquea la ruta, lo adecuado es:",
+   "options": [
+    "Desviarse con margen o aterrizar en un aeródromo seguro",
+    "Pasar entre dos celdas",
+    "Volar bajo el yunque",
+    "Atravesar la zona con velocidad de maniobra"
+   ],
+   "correct": 0,
+   "why": "El VFR no tiene medios para atravesar una tormenta: se evita.",
+   "whyNot": [
+    null,
+    "La zona entre celdas también es turbulenta.",
+    "Allí hay granizo y turbulencia fuertes.",
+    "La velocidad de maniobra no te protege del granizo ni de las descendentes."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.16.012",
+   "type": "regla",
+   "level": 2,
+   "es": true,
+   "q": "En España, el aviso de cizalladura se emite solo en:",
+   "options": [
+    "Todos los aeropuertos",
+    "Tenerife Sur, y se informa como WS en el METAR",
+    "Madrid-Barajas",
+    "Ninguno, nunca"
+   ],
+   "correct": 1,
+   "why": "Solo Tenerife Sur (GCTS) lo emite; aparece como información suplementaria WS en el METAR.",
+   "whyNot": [
+    "No hay un servicio general.",
+    null,
+    "No emite aviso específico.",
+    "Sí existe en Tenerife Sur."
+   ],
+   "ref": "AEMET AU-GUI-0102"
+  },
+  {
+   "id": "050.16.013",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una supercélula se caracteriza por:",
+   "options": [
+    "Una ascendente giratoria muy intensa con granizo grande y posibles tornados",
+    "Durar solo unos minutos y sin lluvia",
+    "Ser una nube estable",
+    "Ser una tormenta débil"
+   ],
+   "correct": 0,
+   "why": "La rotación de la ascendente le permite durar horas y producir granizo grande y tornados.",
+   "whyNot": [
+    null,
+    "Es de larga duración.",
+    "No es estable.",
+    "Es la más peligrosa."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.16.014",
+   "type": "concepto",
+   "level": 1,
+   "q": "Una cizalladura de viento es:",
+   "options": [
+    "Una turbulencia por estela",
+    "Un frente cálido",
+    "Un viento constante",
+    "Un cambio brusco de velocidad o dirección del viento en una distancia corta"
+   ],
+   "correct": 3,
+   "why": "Es peligrosa cerca del suelo, donde no hay altitud para recuperar.",
+   "whyNot": [
+    "La estela es otro fenómeno.",
+    "Es una discontinuidad de masas, no de viento.",
+    "Es lo contrario.",
+    null
+   ],
+   "ref": "FAA-H-8083-28"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.050.16.01",
+   "front": "Condiciones de una tormenta",
+   "back": "Aire húmedo, inestabilidad y un disparador"
+  },
+  {
+   "id": "c.050.16.02",
+   "front": "Fases de una celda",
+   "back": "Cúmulo (ascendentes), madurez (ascendentes y descendentes, la peor), disipación (descendentes)"
+  },
+  {
+   "id": "c.050.16.03",
+   "front": "Distancia de seguridad",
+   "back": "10 NM de una tormenta; 20 NM si es severa"
+  },
+  {
+   "id": "c.050.16.04",
+   "front": "Microrráfaga",
+   "back": "Menos de 4 km, 5 a 15 min; viento de cara, descendente y viento de cola"
+  },
+  {
+   "id": "c.050.16.05",
+   "front": "Cizalladura en España",
+   "back": "Aviso solo en Tenerife Sur; se informa como WS en el METAR"
+  },
+  {
+   "id": "c.050.16.06",
+   "front": "Línea de turbonada",
+   "back": "Línea de tormentas con frente de racha, delante de un frente frío"
+  }
+ ]
+}

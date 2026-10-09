@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380">
+  <title>Cuatro tipos de flap de borde de salida: simple, de intradós, ranurado y Fowler, con el flap extendido</title>
+  <defs>
+    <marker id="080-flaps-tipos-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="3" markerHeight="3" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker>
+  </defs>
+  <text x="30" y="26" class="tx b">Simple</text>
+  <text x="30" y="44" class="tx2">el borde de salida gira hacia abajo</text>
+  <g transform="translate(30 100) scale(2.2)">
+    <path d="M0 2 C0 -8 15 -14 40 -14 L70 -9 L70 4 C40 8 15 8 0 2 Z" class="soft"/>
+    <path d="M70 -9 L98 0 L70 4 Z" class="ac" transform="rotate(30 70 2)"/>
+  </g>
+  <text x="350" y="26" class="tx b">De intradós</text>
+  <text x="350" y="44" class="tx2">solo baja una placa de la cara inferior</text>
+  <g transform="translate(350 100) scale(2.2)">
+    <path d="M0 2 C0 -8 15 -14 40 -14 L100 0 L40 8 C20 8 8 8 0 2 Z" class="soft"/>
+    <line x1="66" y1="5.5" x2="94" y2="5.5" class="ac-ln" transform="rotate(42 66 5.5)"/>
+  </g>
+  <text x="30" y="216" class="tx b">Ranurado</text>
+  <text x="30" y="234" class="tx2">la ranura lleva aire del intradós al extradós</text>
+  <g transform="translate(30 290) scale(2.2)">
+    <path d="M0 2 C0 -8 15 -14 40 -14 L70 -9 L70 4 C40 8 15 8 0 2 Z" class="soft"/>
+    <path d="M72 -8 L100 0 L72 4 Z" class="ac" transform="rotate(30 72 2) translate(3 3)"/>
+    <path d="M58 9 C70 10 78 3 86 -6" class="ac-ln" fill="none" marker-end="url(#080-flaps-tipos-k)"/>
+  </g>
+  <text x="350" y="216" class="tx b">Fowler</text>
+  <text x="350" y="234" class="tx2">se desliza hacia atrás: más cuerda y más superficie</text>
+  <g transform="translate(350 290) scale(2.2)">
+    <path d="M0 2 C0 -8 15 -14 40 -14 L70 -9 L70 4 C40 8 15 8 0 2 Z" class="soft"/>
+    <path d="M70 -9 L98 0 L70 4 Z" class="ln2 dash" fill="none"/>
+    <path d="M82 -7 L112 2 L82 6 Z" class="ac" transform="rotate(28 82 4)"/>
+  </g>
+</svg>

@@ -1,0 +1,479 @@
+{
+ "lesson": {
+  "title": "Resistencia",
+  "summary": "Resistencia parásita (forma, fricción, interferencia), inducida y total, su relación con la velocidad, la velocidad de mínima resistencia (VMD) y el efecto suelo.",
+  "objectives": [
+   "Distinguir los tipos de resistencia parásita y su dependencia de la velocidad",
+   "Dibujar e interpretar la curva de resistencia total y localizar la VMD",
+   "Relacionar VMD con la mejor distancia de planeo y con la masa y la altitud",
+   "Describir el efecto suelo y sus consecuencias en despegue y aterrizaje"
+  ],
+  "sections": [
+   {
+    "title": "Resistencia parásita",
+    "text": [
+     "La **resistencia parásita** es toda la que no está ligada a la sustentación. Aumenta con el cuadrado de la velocidad, igual que la sustentación, y se suma por tres vías:"
+    ],
+    "bullets": [
+     "**De forma (o de presión):** aparece porque el aire no puede seguir una forma roma; detrás del cuerpo queda una estela de baja presión. Las formas afiladas y el carenado de tren y ruedas la reducen.",
+     "**De fricción:** el rozamiento del aire con la superficie. Depende de la superficie mojada y de su rugosidad: pintura rugosa, remaches, insectos y suciedad la aumentan.",
+     "**De interferencia:** aparece donde se encuentran elementos del avión (unión ala‑fuselaje, montantes, carenados de ruedas) porque las capas límite se mezclan y se produce más resistencia que la suma de las partes. Los carenados de raíz del ala la reducen.",
+     "La **resistencia de refrigeración** (el aire que pasa por el motor y sale por la rejilla) se suele incluir también en la parásita."
+    ]
+   },
+   {
+    "title": "Resistencia total y velocidad",
+    "text": [
+     "Las dos resistencias varían en sentidos opuestos: la parásita crece con V² y la inducida decrece con 1/V². Su suma es la **resistencia total**, que tiene un mínimo. La velocidad a la que ocurre ese mínimo es la **VMD** (velocidad de mínima resistencia). Sucede justo cuando las dos resistencias son **iguales**, y en ese punto la relación L/D es máxima.",
+     "A la izquierda de la VMD el avión vuela en el **lado de atrás de la curva** (régimen de velocidad inestable): si reduces la velocidad, la resistencia total **aumenta** y exige más potencia para mantenerla. A la derecha, el comportamiento es normal: más velocidad, más resistencia."
+    ],
+    "figure": "svg:080-resistencia",
+    "caption": "Resistencia parásita (∝ V²), inducida (∝ 1/V²) y total; la VMD está en el mínimo, donde parásita e inducida son iguales."
+   },
+   {
+    "title": "VMD, mejor planeo, alcance y autonomía",
+    "text": [
+     "Como L = W en nivelado, mínima resistencia significa máxima L/D. La VMD es, por tanto, la velocidad de **mejor planeo** (el máximo alcance horizontal desde una altura, sin viento) y la de **máximo alcance** con aire en calma (con viento en contra el mejor alcance se logra algo por encima de ella; con viento de cola, algo por debajo). La **autonomía máxima** y el **mínimo régimen de descenso** se logran con la mínima **potencia**, a una velocidad aproximadamente 76 % de la VMD.",
+     "La **masa** modifica la VMD: con más peso hace falta más CL a una velocidad dada, así que la VMD (en IAS) aumenta en proporción a √masa. La relación L/D máxima no cambia con el peso (se obtiene al mismo ángulo de ataque), ni cambia con la altitud: la IAS de mejor planeo se mantiene, pero la TAS aumenta."
+    ],
+    "examples": [
+     {
+      "q": "La VMD de una avioneta a 1100 kg es 70 kt. ¿Cuánto sube a 900 kg?",
+      "a": "VMD ∝ √masa: 70 × √(900/1100) = 70 × 0,905 ≈ 63 kt."
+     },
+     {
+      "q": "La resistencia parásita es de 300 N a 100 kt. ¿Cuánto vale a 150 kt?",
+      "a": "Parásita ∝ V²: 300 × (150/100)² = 300 × 2,25 = 675 N."
+     },
+     {
+      "q": "Si la resistencia total mínima es de 1000 N en la VMD, ¿cuánto valen la parásita y la inducida?",
+      "a": "En la VMD son iguales: 500 N cada una."
+     },
+     {
+      "q": "Con una resistencia total de 1200 N a 50 m/s, ¿qué potencia consume vencer la resistencia?",
+      "a": "P = D × V = 1200 × 50 = 60 000 W = 60 kW."
+     }
+    ]
+   },
+   {
+    "title": "Efecto suelo",
+    "text": [
+     "Cuando el ala vuela a menos de **una envergadura de altura** sobre el suelo, el suelo interfiere con el flujo: impide que el downwash se desarrolle por completo y debilita los torbellinos de punta. Los efectos son:"
+    ],
+    "bullets": [
+     "Disminuye el ángulo de ataque inducido y, con ello, la **resistencia inducida** (aprox. un 25 % a un cuarto de envergadura y cerca de la mitad a una décima).",
+     "A igual ángulo de ataque, **aumenta la sustentación** (aumenta CL).",
+     "El avión **flota** al aterrizar y puede despegar con IAS por debajo de la de vuelo normal.",
+     "Se modifica la corriente en la cola y se tiende a un **momento de morro abajo**.",
+     "El error de posición de las tomas estáticas cambia: el anemómetro y el altímetro pueden leer ligeramente distinto."
+    ],
+    "figure": "svg:080-efecto-suelo",
+    "caption": "El suelo reduce el downwash y los torbellinos: menos resistencia inducida y más sustentación.",
+    "note": {
+     "kind": "warn",
+     "text": "Despegar «con la ayuda» del efecto suelo por debajo de la velocidad segura es peligroso: al salir del efecto, la resistencia inducida vuelve a subir y el avión se hunde. Rota a la velocidad del POH y acelera en vuelo bajo hasta Vx/Vy."
+    }
+   }
+  ],
+  "numbers": [
+   "Parásita ∝ V²; inducida ∝ 1/V²",
+   "En la VMD: parásita = inducida y L/D máxima",
+   "VMD ∝ √masa (en IAS); L/D máxima no depende de la masa",
+   "Mínima potencia ≈ 76 % de la VMD (autonomía máxima)",
+   "Efecto suelo: hasta una envergadura de altura"
+  ],
+  "traps": [
+   "La VMD es la de mejor planeo, no la de mínima velocidad.",
+   "L/D máxima no cambia con la masa, pero sí la velocidad a la que se consigue.",
+   "Con efecto suelo no mejora la resistencia parásita, sino la inducida.",
+   "A velocidades por debajo de la VMD, bajar más la velocidad aumenta la resistencia."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "FAA, Airplane Flying Handbook (FAA-H-8083-3C)",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "080.07",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "080.07.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "La resistencia parásita:",
+   "options": [
+    "Disminuye con el cuadrado de la velocidad",
+    "Aumenta con el cuadrado de la velocidad",
+    "Es independiente de la velocidad",
+    "Aumenta al disminuir la velocidad"
+   ],
+   "correct": 1,
+   "why": "Su presión dinámica ½ρV² crece con V².",
+   "whyNot": [
+    "Esa es la inducida.",
+    null,
+    "La parásita sí depende de la velocidad.",
+    "Aumenta con la velocidad."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.07.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "La resistencia de interferencia aparece principalmente:",
+   "options": [
+    "En el borde de ataque únicamente",
+    "En el intradós del ala",
+    "Por la hélice",
+    "En las uniones entre elementos, como ala‑fuselaje"
+   ],
+   "correct": 3,
+   "why": "Las capas límite de dos elementos se mezclan y generan más resistencia.",
+   "whyNot": [
+    "No es exclusiva del borde de ataque.",
+    "No es característica del intradós.",
+    "La hélice no genera resistencia de interferencia.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.07.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Cuál de los siguientes es un ejemplo de resistencia de fricción?",
+   "options": [
+    "Rozamiento del aire con una superficie rugosa",
+    "Torbellino de punta",
+    "Estela detrás de una forma roma",
+    "Mezcla de capas límite entre ala y fuselaje"
+   ],
+   "correct": 0,
+   "why": "La fricción depende de la superficie mojada y de su rugosidad.",
+   "whyNot": [
+    null,
+    "Es resistencia inducida.",
+    "Es resistencia de forma.",
+    "Es resistencia de interferencia."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.07.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "La resistencia inducida, en vuelo nivelado, varía con la velocidad de la siguiente forma:",
+   "options": [
+    "Aumenta con el cuadrado de la velocidad",
+    "Es constante",
+    "Disminuye al aumentar la velocidad",
+    "Aumenta linealmente con V"
+   ],
+   "correct": 2,
+   "why": "En nivelado la inducida es proporcional a 1/V²: a más velocidad, menos CL y menos inducida.",
+   "whyNot": [
+    "Eso describe la parásita.",
+    "Cambia con el CL necesario.",
+    null,
+    "No sigue una relación lineal con V."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.07.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "La velocidad de mínima resistencia (VMD) se da cuando:",
+   "options": [
+    "La inducida es el doble de la parásita",
+    "La parásita es nula",
+    "La resistencia parásita es igual a la inducida",
+    "La inducida es nula"
+   ],
+   "correct": 2,
+   "why": "En el mínimo de la curva total ambas se igualan.",
+   "whyNot": [
+    "Eso ocurre a menor velocidad que la VMD.",
+    "La parásita nunca es nula.",
+    null,
+    "La inducida nunca es nula con sustentación."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.07.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "La velocidad de mínima resistencia corresponde a:",
+   "options": [
+    "La mejor relación L/D",
+    "La máxima autonomía",
+    "La máxima velocidad",
+    "La velocidad de pérdida"
+   ],
+   "correct": 0,
+   "why": "Si L = W, la mínima D coincide con la máxima L/D, es decir, el mejor planeo.",
+   "whyNot": [
+    null,
+    "La autonomía máxima se da con mínima potencia, a menor velocidad.",
+    "La velocidad máxima requiere máxima potencia.",
+    "La pérdida ocurre a α crítico, mucho menor velocidad."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.07.007",
+   "type": "calculo",
+   "level": 2,
+   "q": "La VMD de una avioneta con 1100 kg es de 70 kt. Con 900 kg, será aproximadamente:",
+   "options": [
+    "57 kt",
+    "70 kt",
+    "77 kt",
+    "63 kt"
+   ],
+   "correct": 3,
+   "why": "VMD ∝ √masa: 70 · √(900/1100) ≈ 63 kt.",
+   "whyNot": [
+    "Resulta de aplicar la proporción directa de masas (70 · 0,82).",
+    "Tendría que ser igual solo si no dependiera de la masa.",
+    "Sube si aumenta la masa, no si disminuye.",
+    null
+   ],
+   "ref": "VMD ∝ √m"
+  },
+  {
+   "id": "080.07.008",
+   "type": "calculo",
+   "level": 2,
+   "q": "La resistencia parásita es de 300 N a 100 kt. A 150 kt valdrá aproximadamente:",
+   "options": [
+    "450 N",
+    "675 N",
+    "900 N",
+    "200 N"
+   ],
+   "correct": 1,
+   "why": "Parásita ∝ V²: 300 · 1,5² = 675 N.",
+   "whyNot": [
+    "Sería lineal con V.",
+    null,
+    "Resulta de multiplicar por 3, sin relación.",
+    "Disminuiría, que es lo propio de la inducida."
+   ],
+   "ref": "D ∝ V²"
+  },
+  {
+   "id": "080.07.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "La relación L/D máxima de un avión al aumentar la masa:",
+   "options": [
+    "No cambia, pero la velocidad a la que se obtiene aumenta",
+    "Disminuye",
+    "Aumenta",
+    "Se obtiene a menor velocidad"
+   ],
+   "correct": 0,
+   "why": "La finura máxima depende del ángulo de ataque óptimo, no del peso; para sostener más peso hace falta más velocidad.",
+   "whyNot": [
+    null,
+    "No disminuye por el peso.",
+    "No aumenta por el peso.",
+    "Se obtiene a mayor velocidad."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.07.010",
+   "type": "concepto",
+   "level": 3,
+   "q": "Al volar a una velocidad inferior a la VMD y reducirla aún más con el mismo ajuste de motor, la resistencia total:",
+   "options": [
+    "Disminuye",
+    "No cambia",
+    "Aumenta",
+    "Se anula"
+   ],
+   "correct": 2,
+   "why": "Por debajo de la VMD domina la inducida, que crece al bajar V: región de atrás de la curva.",
+   "whyNot": [
+    "Eso ocurre por encima de la VMD.",
+    "Cambia con la velocidad.",
+    null,
+    "La resistencia nunca se anula: con sustentación siempre hay inducida."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.07.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "El efecto suelo se nota sobre todo cuando el ala está a una altura menor que:",
+   "options": [
+    "Diez envergaduras",
+    "Una envergadura",
+    "Una cuerda media",
+    "La longitud del fuselaje"
+   ],
+   "correct": 1,
+   "why": "El suelo interfiere con el downwash en las proximidades, hasta una envergadura de altura.",
+   "whyNot": [
+    "A esa altura el efecto es nulo.",
+    null,
+    "Es una referencia demasiado baja para la definición.",
+    "No se mide con el fuselaje."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.07.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "Dentro del efecto suelo, comparado con vuelo fuera de él al mismo ángulo de ataque:",
+   "options": [
+    "La resistencia inducida aumenta y el CL disminuye",
+    "La resistencia parásita disminuye mucho",
+    "El ángulo de ataque crítico aumenta",
+    "La resistencia inducida disminuye y el CL aumenta"
+   ],
+   "correct": 3,
+   "why": "El suelo limita el downwash: menor ángulo de ataque inducido y más sustentación efectiva.",
+   "whyNot": [
+    "El suelo reduce la inducida y aumenta la sustentación; no al revés.",
+    "La parásita no se ve modificada.",
+    "El crítico es una propiedad del perfil.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.07.013",
+   "type": "concepto",
+   "level": 3,
+   "q": "Un riesgo de despegar antes de la velocidad de rotación del POH aprovechando el efecto suelo es que:",
+   "options": [
+    "El avión pierde la hélice",
+    "Aumenta la sustentación sin límite",
+    "Disminuye la masa",
+    "Al salir del efecto suelo el avión puede hundirse y no subir"
+   ],
+   "correct": 3,
+   "why": "Fuera del efecto suelo la resistencia inducida vuelve a subir y la sustentación baja.",
+   "whyNot": [
+    "No es un efecto de la hélice.",
+    "Al subir, el efecto desaparece.",
+    "Despegar en efecto suelo no cambia la masa del avión.",
+    null
+   ],
+   "ref": "AFH cap. 5"
+  },
+  {
+   "id": "080.07.014",
+   "type": "calculo",
+   "level": 1,
+   "q": "La resistencia total mínima de una avioneta es de 1000 N en la VMD. ¿Cuánto vale cada una de las dos resistencias en ese punto?",
+   "options": [
+    "1000 N",
+    "500 N",
+    "250 N",
+    "0 N"
+   ],
+   "correct": 1,
+   "why": "En la VMD la parásita y la inducida son iguales y suman la total: 500 N cada una.",
+   "whyNot": [
+    "Cada una vale la mitad, no el total.",
+    null,
+    "Ese reparto no corresponde a la igualdad.",
+    "Ninguna es nula."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.07.015",
+   "type": "calculo",
+   "level": 2,
+   "q": "Una avioneta vuela a 50 m/s con una resistencia total de 1200 N. La potencia que invierte en vencerla es:",
+   "options": [
+    "24 kW",
+    "600 W",
+    "60 kW",
+    "6 kW"
+   ],
+   "correct": 2,
+   "why": "P = D · V = 1200 · 50 = 60 000 W = 60 kW.",
+   "whyNot": [
+    "Resulta de dividir D entre V (1200/50 = 24).",
+    "Resulta de un error de unidades en la potencia.",
+    null,
+    "Resulta de dividir 60 kW por 10."
+   ],
+   "ref": "P = D·V"
+  },
+  {
+   "id": "080.07.016",
+   "type": "lectura",
+   "level": 2,
+   "q": "En la curva de resistencia de la figura, la velocidad de mejor planeo se corresponde con:",
+   "figure": "svg:080-resistencia",
+   "options": [
+    "El mínimo de la curva de resistencia total",
+    "El punto en que la inducida es máxima",
+    "El punto en que la parásita es máxima",
+    "El origen de la gráfica"
+   ],
+   "correct": 0,
+   "why": "Mínima resistencia total = máxima L/D = mejor planeo.",
+   "whyNot": [
+    null,
+    "La inducida es máxima a velocidades bajas.",
+    "La parásita es máxima a velocidades altas.",
+    "El origen representa velocidad cero."
+   ],
+   "ref": "PHAK cap. 5"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.080.07.01",
+   "front": "Qué tipos de resistencia parásita hay",
+   "back": "De forma (presión), de fricción y de interferencia"
+  },
+  {
+   "id": "c.080.07.02",
+   "front": "VMD",
+   "back": "Velocidad de mínima resistencia: parásita = inducida; máxima L/D; mejor planeo"
+  },
+  {
+   "id": "c.080.07.03",
+   "front": "Efecto suelo: distancia y efectos",
+   "back": "Menos de una envergadura; menos inducida y más CL"
+  },
+  {
+   "id": "c.080.07.04",
+   "front": "VMD con la masa",
+   "back": "VMD ∝ √masa; la L/D máxima no cambia"
+  }
+ ]
+}

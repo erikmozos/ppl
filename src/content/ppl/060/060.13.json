@@ -1,0 +1,315 @@
+{
+ "lesson": {
+  "title": "DME",
+  "summary": "Equipo medidor de distancia: principio de interrogación y respuesta, distancia oblicua, cálculo de GS y tiempo a la estación, alcance y asociación con el VOR.",
+  "objectives": [
+   "Explicar cómo mide la distancia el DME",
+   "Distinguir distancia oblicua y distancia horizontal",
+   "Calcular GS y tiempo a la estación a partir de lecturas sucesivas",
+   "Conocer la banda de frecuencias y el emparejamiento con el VOR",
+   "Reconocer cuándo la lectura de GS del DME es fiable"
+  ],
+  "sections": [
+   {
+    "title": "Principio del DME",
+    "text": [
+     "El **DME** (distance measuring equipment) mide la **distancia entre el avión y la estación**. Es un sistema de **interrogación y respuesta**: el interrogador del avión emite pares de pulsos de radio; el transpondedor de la estación los recibe y, tras un retardo fijo de 50 µs, emite la respuesta; el avión mide el tiempo total de ida y vuelta y lo convierte en distancia. El receptor reconoce sus propias respuestas por la secuencia de intervalos entre pulsos, de modo que una estación puede atender a un centenar de aviones.",
+     "Trabaja en **UHF, entre 960 y 1215 MHz**, y es una ayuda de línea de vista. Casi siempre está **asociado a un VOR** (VOR/DME) o a un localizador ILS, y la frecuencia de ambos está emparejada: al sintonizar el VOR el receptor selecciona automáticamente el canal DME correspondiente, y comparten la identificación en morse."
+    ]
+   },
+   {
+    "title": "Distancia oblicua",
+    "text": [
+     "Lo que mide el DME es la **distancia oblicua** (slant range): la línea recta entre la antena del avión y la de la estación, no la distancia sobre el suelo. Si vuelas alto y cerca, la diferencia es grande. Sobre la estación a **6000 ft** (1 NM) el DME indica **aproximadamente 1 NM**, aunque la distancia horizontal sea cero. A partir de unas pocas millas, el error es despreciable.",
+     "La distancia horizontal se obtiene con Pitágoras: la oblicua es la hipotenusa y la altura sobre la estación (en NM) es un cateto."
+    ],
+    "formulas": [
+     {
+      "f": "Distancia horizontal = √(oblicua² − altura²)",
+      "note": "Altura sobre la estación en NM: 6076 ft = 1 NM."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Sobrevuelas una estación VOR/DME a 6000 ft sobre ella. ¿Qué indica el DME?",
+      "a": "Unas 1,0 NM: es la altura convertida a millas."
+     },
+     {
+      "q": "El DME indica 5,0 NM y vuelas 3000 ft sobre la estación (0,5 NM). ¿Distancia horizontal?",
+      "a": "√(25 − 0,25) = 4,97 NM. La diferencia es de solo 0,03 NM."
+     }
+    ]
+   },
+   {
+    "title": "GS y tiempo a la estación",
+    "text": [
+     "El DME puede darte la **GS** y el **tiempo a la estación**, calculados a partir del cambio de distancia. Solo son fiables si vuelas **directamente hacia la estación o alejándote por el mismo radial**; si vuelas de través, la distancia casi no varía y la lectura de velocidad es falsa. Sin este dato en el equipo, puedes calcularlo tú con dos lecturas."
+    ],
+    "formulas": [
+     {
+      "f": "GS (kt) = variación de distancia (NM) × 60 / tiempo transcurrido (min)",
+      "note": "Solo hacia o desde la estación."
+     },
+     {
+      "f": "Tiempo a la estación (min) = distancia (NM) × 60 / GS (kt)",
+      "note": "Con la GS medida."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Volando directo a la estación, el DME pasa de 20 NM a 14 NM en 4 minutos. GS y tiempo restante.",
+      "a": "6 NM en 4 min: GS = 6 × 60 / 4 = 90 kt. Tiempo restante = 14 × 60 / 90 = 9,3 min."
+     }
+    ]
+   },
+   {
+    "title": "Alcance y uso",
+    "text": [
+     "El alcance es de **línea de vista**: crece con la altitud (≈ 1,23 × √h NM) y suele ser de 100 NM o más a altitud de crucero. Una lectura DME y un radial VOR de la misma estación dan una **posición exacta** (rho-theta), la ayuda más sencilla para situarte con precisión: radial 270° y 25 DME significan 25 NM al oeste de la estación. Antes de usarlo, comprueba la identificación y que el equipo no muestra guiones (sin señal)."
+    ],
+    "note": {
+     "kind": "es",
+     "text": "En la carta VFR de España, la frecuencia DME suele ir con la del VOR, y el canal DME no se escribe: se toma del emparejamiento. Consulta la leyenda de la carta vigente."
+    },
+    "verify": true
+   }
+  ],
+  "numbers": [
+   "DME: UHF, 960–1215 MHz",
+   "Retardo de respuesta del transpondedor: 50 µs",
+   "Mide distancia oblicua: sobre la estación a 6000 ft marca ≈ 1 NM",
+   "GS = Δdistancia × 60 / Δtiempo; solo fiable hacia o desde la estación",
+   "Radial VOR + distancia DME = posición exacta"
+  ],
+  "traps": [
+   "El DME mide distancia oblicua, no horizontal.",
+   "La GS del DME es falsa si no vuelas hacia o desde la estación.",
+   "El DME es UHF (960–1215 MHz), no VHF.",
+   "Los guiones en el display indican pérdida de señal, no distancia cero."
+  ],
+  "sources": [
+   {
+    "title": "OACI, Anexo 10, vol. I: DME"
+   },
+   {
+    "title": "FAA, Instrument Flying Handbook (FAA-H-8083-15B), cap. 9",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation"
+   }
+  ],
+  "id": "060.13",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "060.13.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "El DME mide:",
+   "options": [
+    "La distancia oblicua entre avión y estación",
+    "La marcación a la estación",
+    "La altitud",
+    "La distancia horizontal exacta"
+   ],
+   "correct": 0,
+   "why": "El DME mide el tiempo de ida y vuelta de los pulsos y lo convierte en distancia en línea recta.",
+   "whyNot": [
+    null,
+    "Eso lo hace el VOR o el ADF.",
+    "No mide altitud.",
+    "Es la distancia oblicua; la horizontal hay que calcularla."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.13.002",
+   "type": "regla",
+   "level": 1,
+   "q": "La banda de frecuencias del DME es:",
+   "options": [
+    "960 a 1215 MHz",
+    "118 a 137 MHz",
+    "190 a 1750 kHz",
+    "108 a 117,975 MHz"
+   ],
+   "correct": 0,
+   "why": "El DME opera en UHF, de 960 a 1215 MHz.",
+   "whyNot": [
+    null,
+    "Es la de comunicaciones.",
+    "Es la del NDB.",
+    "Es la del VOR."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.13.003",
+   "type": "calculo",
+   "level": 2,
+   "q": "Sobre una estación DME y a 6000 ft sobre ella, el equipo indica aproximadamente:",
+   "options": [
+    "0 NM",
+    "10 NM",
+    "6 NM",
+    "1 NM"
+   ],
+   "correct": 3,
+   "why": "El DME mide la distancia oblicua: 6000 ft = 1 NM.",
+   "whyNot": [
+    "Se indica la altura, no cero.",
+    "No corresponde.",
+    "Son pies, no millas.",
+    null
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.13.004",
+   "type": "calculo",
+   "level": 2,
+   "q": "Volando directo a la estación, el DME pasa de 20 NM a 14 NM en 4 minutos. La GS es:",
+   "options": [
+    "150 kt",
+    "90 kt",
+    "75 kt",
+    "60 kt"
+   ],
+   "correct": 1,
+   "why": "6 NM en 4 min: 6 × 60 / 4 = 90 kt.",
+   "whyNot": [
+    "Corresponde a recorrer 6 NM en 2,4 minutos.",
+    null,
+    "Corresponde a recorrer 6 NM en 4,8 minutos.",
+    "Corresponde a recorrer 4 NM en 4 min, no 6."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.13.005",
+   "type": "calculo",
+   "level": 2,
+   "q": "Con GS 90 kt y 14 NM a la estación, el tiempo restante es de:",
+   "options": [
+    "14 min",
+    "6,4 min",
+    "15 min",
+    "9,3 min"
+   ],
+   "correct": 3,
+   "why": "14 × 60 / 90 = 9,3 min.",
+   "whyNot": [
+    "Es la distancia en minutos.",
+    "Es el tiempo con 130 kt.",
+    "Es el tiempo con 56 kt.",
+    null
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.13.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "La GS que da el DME es fiable cuando vuelas:",
+   "options": [
+    "Directamente hacia la estación o alejándote por el mismo radial",
+    "Sobre la estación",
+    "En espera",
+    "Perpendicular al radial"
+   ],
+   "correct": 0,
+   "why": "El cambio de distancia solo representa tu velocidad si te acercas o alejas en línea recta de la estación.",
+   "whyNot": [
+    null,
+    "No es el caso: en el cono de silencio no se mide.",
+    "No es fiable en un hipódromo.",
+    "En ese caso la distancia casi no cambia."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.13.007",
+   "type": "concepto",
+   "level": 1,
+   "q": "El DME funciona por:",
+   "options": [
+    "Marcación del cuadro de antena",
+    "Radar primario",
+    "Interrogación y respuesta",
+    "Medida de la fase de dos señales de 30 Hz"
+   ],
+   "correct": 2,
+   "why": "El avión interroga y la estación responde tras 50 µs: el tiempo total da la distancia.",
+   "whyNot": [
+    "Es el principio del ADF.",
+    "No es radar primario.",
+    null,
+    "Es el principio del VOR."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.13.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un VOR/DME ofrece, con un radial y una distancia:",
+   "options": [
+    "Solo la GS",
+    "Una posición exacta",
+    "Solo una línea de posición",
+    "Solo la altitud"
+   ],
+   "correct": 1,
+   "why": "Radial + distancia de la misma estación definen un punto.",
+   "whyNot": [
+    "No es un dato de GS.",
+    null,
+    "Con la distancia, la línea se convierte en punto.",
+    "No es altitud."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.13.009",
+   "type": "calculo",
+   "level": 3,
+   "q": "El DME indica 5,0 NM a 3000 ft sobre la estación (0,5 NM). La distancia horizontal es de unas:",
+   "options": [
+    "2,5 NM",
+    "5,5 NM",
+    "4,97 NM",
+    "4,5 NM"
+   ],
+   "correct": 2,
+   "why": "√(5,0² − 0,5²) = √24,75 = 4,97 NM.",
+   "whyNot": [
+    "Resulta de dividir entre 2.",
+    "Resulta de sumar la altura.",
+    null,
+    "Resulta de restar la altura directamente."
+   ],
+   "ref": "FAA IFH cap. 9"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.060.13.01",
+   "front": "DME",
+   "back": "Interrogación y respuesta; UHF 960–1215 MHz; mide distancia oblicua"
+  },
+  {
+   "id": "c.060.13.02",
+   "front": "DME sobre la estación",
+   "back": "Marca la altura en NM: 6000 ft ≈ 1 NM"
+  },
+  {
+   "id": "c.060.13.03",
+   "front": "GS con el DME",
+   "back": "Δdistancia × 60 / Δtiempo; solo hacia o desde la estación"
+  },
+  {
+   "id": "c.060.13.04",
+   "front": "VOR + DME",
+   "back": "Radial y distancia: posición exacta"
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 410">
+<title>Sistemas de combustible del PA-28-161 (ala baja, carburador) y del C172S (ala alta, inyección)</title>
+<defs>
+<marker id="020-sistemas-combustible-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+</defs>
+<text x="150" y="20" class="tx b" text-anchor="middle">PA-28-161 Warrior III</text>
+<rect x="20" y="40" width="110" height="44" class="ac"/><text x="75" y="66" class="tx" text-anchor="middle">Depósito izq.</text>
+<rect x="170" y="40" width="110" height="44" class="ac"/><text x="225" y="66" class="tx" text-anchor="middle">Depósito der.</text>
+<path d="M75 84 V104 H110 V120" class="ln" fill="none" marker-end="url(#020-sistemas-combustible-f)"/>
+<path d="M225 84 V104 H190 V120" class="ln" fill="none" marker-end="url(#020-sistemas-combustible-f)"/>
+<rect x="50" y="122" width="200" height="40" class="ok"/><text x="150" y="139" class="txo b" text-anchor="middle">Selector</text><text x="150" y="155" class="txo" font-size="12" text-anchor="middle">IZQ · DER · CERRADO</text>
+<line x1="150" y1="162" x2="150" y2="190" class="ln" marker-end="url(#020-sistemas-combustible-f)"/>
+<rect x="50" y="192" width="200" height="40" class="soft"/><text x="150" y="216" class="tx" text-anchor="middle">Filtro (gascolator) y drenaje</text>
+<line x1="150" y1="232" x2="150" y2="260" class="ln" marker-end="url(#020-sistemas-combustible-f)"/>
+<rect x="50" y="262" width="200" height="40" class="soft"/><text x="150" y="286" class="tx" text-anchor="middle">Bomba mecánica + eléctrica</text>
+<line x1="150" y1="302" x2="150" y2="330" class="ln" marker-end="url(#020-sistemas-combustible-f)"/>
+<rect x="50" y="332" width="200" height="40" class="wa"/><text x="150" y="356" class="txw b" text-anchor="middle">Carburador</text>
+<text x="150" y="396" class="tx2" font-size="11" text-anchor="middle">Ala baja: hace falta bomba</text>
+<text x="490" y="20" class="tx b" text-anchor="middle">Cessna 172S</text>
+<rect x="360" y="40" width="110" height="44" class="ac"/><text x="415" y="66" class="tx" text-anchor="middle">Depósito izq.</text>
+<rect x="510" y="40" width="110" height="44" class="ac"/><text x="565" y="66" class="tx" text-anchor="middle">Depósito der.</text>
+<path d="M415 84 V104 H450 V120" class="ln" fill="none" marker-end="url(#020-sistemas-combustible-f)"/>
+<path d="M565 84 V104 H530 V120" class="ln" fill="none" marker-end="url(#020-sistemas-combustible-f)"/>
+<rect x="390" y="122" width="200" height="40" class="ok"/><text x="490" y="139" class="txo b" text-anchor="middle">Selector</text><text x="490" y="155" class="txo" font-size="12" text-anchor="middle">IZQ · DER · AMBOS · CERRADO</text>
+<line x1="490" y1="162" x2="490" y2="190" class="ln" marker-end="url(#020-sistemas-combustible-f)"/>
+<rect x="390" y="192" width="200" height="40" class="soft"/><text x="490" y="216" class="tx" text-anchor="middle">Filtro y drenaje</text>
+<line x1="490" y1="232" x2="490" y2="260" class="ln" marker-end="url(#020-sistemas-combustible-f)"/>
+<rect x="390" y="262" width="200" height="40" class="soft"/><text x="490" y="286" class="tx" text-anchor="middle">Bomba eléctrica + mecánica</text>
+<line x1="490" y1="302" x2="490" y2="330" class="ln" marker-end="url(#020-sistemas-combustible-f)"/>
+<rect x="390" y="332" width="200" height="40" class="wa"/><text x="490" y="356" class="txw b" text-anchor="middle">Inyección</text>
+<text x="490" y="396" class="tx2" font-size="11" text-anchor="middle">Ala alta: baja por gravedad</text>
+<line x1="320" y1="14" x2="320" y2="380" class="ln2 dash"/>
+</svg>

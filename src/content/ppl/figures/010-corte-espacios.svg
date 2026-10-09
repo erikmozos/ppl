@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <title>Corte vertical de espacios aéreos alrededor de un aeródromo de ejemplo: ATZ, CTR, TMA, clase G y FIR</title>
+  <rect x="8" y="8" width="624" height="344" rx="8" class="sky"/>
+  <rect x="40" y="40" width="560" height="40" class="soft"/>
+  <text x="320" y="64" class="tx b" text-anchor="middle">Espacio aéreo superior (UIR): sobre FL195 no hay VFR</text>
+  <line x1="40" y1="80" x2="600" y2="80" class="wa-ln thick"/>
+  <text x="604" y="84" class="txw b" font-size="12">FL195</text>
+  <rect x="100" y="160" width="440" height="100" class="ok"/>
+  <text x="320" y="182" class="txo b" text-anchor="middle">TMA clase C (2500 ft a FL115)</text>
+  <text x="320" y="200" class="tx2" text-anchor="middle">VFR con autorización y radio</text>
+  <rect x="200" y="260" width="240" height="60" class="ac"/>
+  <text x="320" y="274" class="txa b" text-anchor="middle">CTR clase D (SFC a 2500 ft)</text>
+  <text x="320" y="289" class="tx2" font-size="11" text-anchor="middle">autorización y radio</text>
+  <rect x="270" y="296" width="100" height="24" class="ln2 dash" fill="none"/>
+  <text x="320" y="313" class="tx2" font-size="11" text-anchor="middle">ATZ</text>
+  <rect x="40" y="260" width="160" height="60" class="soft"/>
+  <rect x="440" y="260" width="160" height="60" class="soft"/>
+  <text x="120" y="294" class="tx b" text-anchor="middle">Clase G</text>
+  <text x="120" y="310" class="tx2" font-size="11" text-anchor="middle">FIS, sin autorización</text>
+  <text x="520" y="294" class="tx b" text-anchor="middle">Clase G</text>
+  <text x="520" y="310" class="tx2" font-size="11" text-anchor="middle">FIS, sin autorización</text>
+  <rect x="40" y="160" width="60" height="100" class="soft"/>
+  <rect x="540" y="160" width="60" height="100" class="soft"/>
+  <text x="70" y="214" class="tx2" font-size="11" text-anchor="middle">G o E</text>
+  <text x="570" y="214" class="tx2" font-size="11" text-anchor="middle">G o E</text>
+  <rect x="40" y="80" width="560" height="80" class="soft" fill-opacity="0.4"/>
+  <text x="320" y="124" class="tx b" text-anchor="middle">Espacio inferior de la FIR (Madrid, Barcelona o Canarias)</text>
+  <line x1="40" y1="320" x2="600" y2="320" class="ln thick"/>
+  <rect x="40" y="320" width="560" height="22" class="ground"/>
+  <text x="320" y="336" class="tx2" font-size="11" text-anchor="middle">Aeródromo de ejemplo: Villanueva</text>
+</svg>

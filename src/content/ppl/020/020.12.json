@@ -1,0 +1,301 @@
+{
+  "lesson": {
+    "id": "020.12",
+    "title": "Refrigeración",
+    "summary": "Cómo se enfría un motor de pistón refrigerado por aire: aletas, deflectores, flaps de capó, indicador de temperatura de culatas, causas del sobrecalentamiento y del enfriamiento brusco.",
+    "objectives": [
+      "Explicar por qué el motor necesita refrigeración y cómo lo consigue el aire, el aceite y la propia mezcla",
+      "Describir la función de las aletas, los deflectores y los flaps de capó",
+      "Reconocer las causas del sobrecalentamiento y aplicar la corrección adecuada",
+      "Explicar por qué se debe evitar el enfriamiento brusco del motor"
+    ],
+    "sections": [
+      {
+        "title": "Por qué hay que refrigerar",
+        "text": [
+          "Solo una parte de la energía de la gasolina se convierte en trabajo útil: aproximadamente un tercio. El resto sale como calor, una parte por el escape y otra por las paredes del cilindro y el aceite. Si ese calor no se evacua, las culatas y los pistones se dilatan, el aceite pierde viscosidad y se degrada, aparecen la **detonación** y el **preencendido**, y el motor puede griparse. Hay que mantener las temperaturas dentro de un margen estrecho: demasiado calor destruye el motor y demasiado frío lo desgasta.",
+          "Los motores de los aviones de escuela, como el Lycoming O-320 del PA-28-161 y el IO-360 del C172S, son de **cilindros opuestos horizontales refrigerados por aire**. Eliminan el radiador, el líquido y las bombas del motor refrigerado por agua, con lo que pesan menos y fallan menos, pero dependen del aire que entra por el capó y de que ese aire recorra bien los cilindros."
+        ]
+      },
+      {
+        "title": "Aletas, deflectores y capó",
+        "text": [
+          "Los cilindros llevan **aletas** de refrigeración: delgadas láminas de aluminio, sobre todo en las culatas, que aumentan la superficie de contacto con el aire. El aire entra por las tomas del frente del capó, aprovechando la presión dinámica de la hélice y del avance, y baja hacia la parte inferior del capó, por donde sale.",
+          "Para que ese aire no se escape por donde no debe, el capó lleva **deflectores** (baffles): chapas y tiras de goma que obligan al aire a pasar entre las aletas de cada cilindro. Es una pieza crítica: un deflector roto, doblado o desprendido deja zonas sin refrigerar y provoca puntos calientes. Por eso se revisa en las inspecciones y en el prevuelo, cuando se levanta el capó.",
+          "Los aviones con motores potentes o que operan con mucho calor llevan **flaps de capó (cowl flaps)**: trampillas en la salida del aire que se abren para aumentar el caudal y se cierran para reducir la resistencia y evitar el enfriamiento excesivo. El PA-28-161 Warrior III y el C172S llevan capó fijo, sin flaps de capó, de modo que el piloto controla la temperatura con la velocidad, la potencia y la mezcla."
+        ],
+        "bullets": [
+          "Capó con flaps abiertos: más refrigeración y más resistencia. Cerrados: menos refrigeración y menos resistencia.",
+          "Abre los flaps de capó en tierra, en el despegue y en el ascenso; ciérralos en el descenso con poca potencia, según el POH.",
+          "El aceite también refrigera: lleva calor desde los pistones y las culatas hasta el **radiador de aceite**, que cede ese calor al aire."
+        ]
+      },
+      {
+        "title": "Medir la temperatura",
+        "text": [
+          "El instrumento que importa es el de **temperatura de culatas** (CHT, cylinder head temperature), medida con un sensor en el cilindro más caliente o en varios. También se vigila la **temperatura del aceite**, que refleja la del conjunto del motor. Ambas tienen **arco verde** (régimen normal), **amarillo** (precaución) y **raya roja** (límite máximo). Los valores exactos son los del POH de cada avión, por ejemplo la temperatura máxima de aceite; no los des por sabidos para otro modelo.",
+          "Una temperatura más alta de lo habitual en el aceite o en las culatas es una señal temprana de problema: poca mezcla, deflector dañado, aceite insuficiente o potencia alta con poca velocidad."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Sobrecalentamiento: causas y qué hacer",
+        "text": [
+          "Las causas más frecuentes son: **mezcla demasiado pobre** (la gasolina que se evapora refrigera, y la mezcla rica enfría más), **potencia alta con poca velocidad** (ascenso a Vx, que refrigera poco porque entra menos aire), **temperatura exterior alta**, **nivel de aceite bajo** o aceite degradado, **deflectores dañados** y funcionamiento prolongado en tierra a bajas RPM, sin el flujo de aire del avance.",
+          "La respuesta del piloto busca más aire y menos calor, en este orden de ideas:"
+        ],
+        "bullets": [
+          "**Enriquecer la mezcla**: más combustible evaporándose enfría y baja la temperatura de combustión.",
+          "**Aumentar la velocidad** bajando el morro: entra más aire por el capó (en ascenso, pasa de Vx a Vy o a velocidad de ascenso de crucero).",
+          "**Reducir la potencia** si no basta, y abrir los flaps de capó si el avión los tiene.",
+          "Si la temperatura de aceite o culatas sigue subiendo o la presión de aceite baja, aterriza en cuanto sea posible: puede haber una avería real."
+        ],
+        "examples": [
+          {
+            "q": "En un día caluroso asciendes a Vx y la temperatura de culatas se acerca al arco amarillo. ¿Qué haces?",
+            "a": "Bajas el morro para ganar velocidad (más aire por el capó), compruebas que la mezcla está en rica según POH y, si sigue subiendo, reduces potencia y planeas aterrizar."
+          }
+        ]
+      },
+      {
+        "title": "Enfriamiento brusco",
+        "text": [
+          "El motor tiene piezas de materiales distintos (acero, aluminio) que se dilatan de forma diferente. Si se enfría de golpe, por ejemplo al cerrar la potencia en un descenso largo con el capó abierto y la hélice girando a bajo régimen, los cilindros se contraen más deprisa que los pistones y las válvulas, lo que puede agrietar culatas y ensuciar las bujías. Es el llamado **shock cooling**.",
+          "Se evita con descensos de potencia gradual, con una velocidad moderada, sin dejar el motor al ralentí largo rato y, si hay flaps de capó, cerrándolos. Es una de las razones por las que el POH recomienda reducir potencia de forma progresiva y mantener algo de potencia en el descenso."
+        ],
+        "note": {
+          "kind": "tip",
+          "text": "Mnemotecnia para el examen: sobrecalentamiento, más aire y mezcla rica; enfriamiento brusco, potencia reducida poco a poco."
+        }
+      }
+    ],
+    "numbers": [
+      "Cilindros opuestos refrigerados por aire: PA-28-161 (O-320) y C172S (IO-360), ambos con capó fijo",
+      "Aproximadamente un tercio de la energía del combustible se convierte en trabajo; el resto, calor",
+      "Instrumentos: temperatura de culatas (CHT) y de aceite, con arcos verde, amarillo y raya roja",
+      "Sobrecalentamiento: mezcla rica, más velocidad, menos potencia; abrir flaps de capó si hay"
+    ],
+    "traps": [
+      "Creer que el aceite solo lubrica: también evacua calor del motor.",
+      "Pensar que enriquecer la mezcla no sirve: baja la temperatura aunque gaste más combustible.",
+      "Subir a Vx durante mucho tiempo en un día caluroso: es el peor régimen de refrigeración.",
+      "Cerrar gases bruscamente en un descenso largo: provoca enfriamiento brusco."
+    ],
+    "spain": [
+      "En verano, con temperaturas altas y operaciones desde aeródromos altos o con pistas largas de rodaje, vigila CHT y aceite en el rodaje y el ascenso."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 7",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Manual de vuelo del PA-28-161 y del C172S",
+        "url": "https://www.piper.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Arranque del PA-28: temperatura y presión de aceite",
+        "href": "#/ac/pa28/flow/start"
+      },
+      {
+        "label": "Prueba de motor del PA-28",
+        "href": "#/ac/pa28/flow/runup"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.12.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "Los motores del PA-28-161 y del C172S se refrigeran principalmente con:",
+      "options": [
+        "Un radiador de agua",
+        "Aire que circula por las aletas de los cilindros",
+        "Combustible en circuito cerrado",
+        "Un líquido anticongelante"
+      ],
+      "correct": 1,
+      "why": "Son motores de cilindros opuestos refrigerados por aire: las aletas aumentan la superficie de intercambio con el aire que entra por el capó.",
+      "whyNot": [
+        "No llevan radiador de agua.",
+        null,
+        "El combustible se quema; solo ayuda a enfriar al evaporarse.",
+        "No hay anticongelante: no hay circuito de líquido."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.12.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "La función de los deflectores (baffles) del capó es:",
+      "options": [
+        "Reducir la resistencia del capó",
+        "Obligar al aire a pasar entre las aletas de los cilindros",
+        "Filtrar el aire de admisión",
+        "Insonorizar el motor"
+      ],
+      "correct": 1,
+      "why": "Los deflectores canalizan el aire por las aletas de cada cilindro. Si fallan, quedan zonas sin refrigerar.",
+      "whyNot": [
+        "Su función es canalizar el aire, no la aerodinámica.",
+        null,
+        "El filtrado se hace en la toma de admisión.",
+        "No tienen función acústica."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.12.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "Los flaps de capó (cowl flaps), cuando existen, se abren para:",
+      "options": [
+        "Reducir la resistencia en crucero",
+        "Calentar el aceite",
+        "Aumentar el caudal de aire de refrigeración",
+        "Mejorar la admisión"
+      ],
+      "correct": 2,
+      "why": "Abiertos, dejan salir más aire caliente y refrigeran más, con más resistencia. Se abren en tierra, despegue y ascenso.",
+      "whyNot": [
+        "Abiertos aumentan la resistencia.",
+        "Enfrían, no calientan.",
+        null,
+        "No tienen relación con la admisión."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.12.004",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Cuál de estas medidas ayuda a bajar la temperatura de culatas en vuelo?",
+      "options": [
+        "Aumentar la velocidad y enriquecer la mezcla",
+        "Empobrecer la mezcla",
+        "Subir el morro para ascender más despacio",
+        "Cerrar los flaps de capó"
+      ],
+      "correct": 0,
+      "why": "Más velocidad significa más aire por el capó y la mezcla rica enfría por la evaporación del combustible.",
+      "whyNot": [
+        null,
+        "Una mezcla más pobre calienta más.",
+        "Subir el morro disminuye la velocidad y la refrigeración.",
+        "Cerrados, los flaps reducen el caudal de aire."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.12.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿En qué situación es más probable el sobrecalentamiento de un motor refrigerado por aire?",
+      "options": [
+        "Ascenso a velocidad baja, con potencia alta y temperatura exterior alta",
+        "Descenso con poca potencia",
+        "Crucero con mezcla rica",
+        "Rodaje con viento de cara"
+      ],
+      "correct": 0,
+      "why": "Con potencia alta y poca velocidad entra poco aire por el capó y se genera mucho calor.",
+      "whyNot": [
+        null,
+        "En un descenso con poca potencia hay más riesgo de enfriamiento brusco.",
+        "La mezcla rica enfría.",
+        "El viento de cara ayuda a la refrigeración."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.12.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "El enfriamiento brusco (shock cooling) se debe a que:",
+      "options": [
+        "La gasolina se evapora más rápido",
+        "El carburador se hiela",
+        "El aceite se espesa y bloquea el motor",
+        "Los cilindros se contraen más rápido que los pistones, con riesgo de grietas"
+      ],
+      "correct": 3,
+      "why": "Los materiales se contraen de forma distinta; una caída rápida de temperatura puede agrietar culatas. Se evita reduciendo potencia de forma gradual.",
+      "whyNot": [
+        "La evaporación no es la causa del problema.",
+        "El hielo de carburador es otro fenómeno.",
+        "El aceite frío afecta al arranque, no al shock cooling.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.12.007",
+      "type": "concepto",
+      "level": 3,
+      "q": "Además de lubricar, el aceite del motor contribuye a:",
+      "options": [
+        "Aumentar la compresión",
+        "Regular la mezcla",
+        "Mejorar el octanaje",
+        "Refrigerar, llevando calor al radiador de aceite"
+      ],
+      "correct": 3,
+      "why": "El aceite recoge calor de pistones y culatas y lo cede al aire en el radiador de aceite.",
+      "whyNot": [
+        "La compresión depende del sellado de segmentos, no de una función térmica del aceite.",
+        "La mezcla la regula el carburador o el inyector.",
+        "El octanaje es una propiedad del combustible.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.12.008",
+      "type": "lectura",
+      "level": 2,
+      "q": "Durante un ascenso en un día caluroso lees lo siguiente. La acción más adecuada es:",
+      "data": "Temperatura de aceite: arco amarillo, subiendo\nTemperatura de culatas: cerca del arco amarillo\nPresión de aceite: normal\nVelocidad: Vx, mezcla en rica",
+      "options": [
+        "Mantener Vx para ganar altura cuanto antes",
+        "Empobrecer la mezcla",
+        "Bajar el morro para aumentar la velocidad y, si sigue subiendo, reducir potencia",
+        "Cerrar el capó"
+      ],
+      "correct": 2,
+      "why": "Vx refrigera poco. Más velocidad aumenta el caudal de aire; si no basta, menos potencia y aterrizar si persiste.",
+      "whyNot": [
+        "Mantener Vx agrava el problema.",
+        "Con mezcla en rica, empobrecer calienta más.",
+        null,
+        "El capó del avión es fijo; no se puede cerrar."
+      ],
+      "ref": "PHAK cap. 7; POH"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.12.01",
+      "front": "Refrigeración de los motores de escuela",
+      "back": "Por aire: aletas en los cilindros y deflectores que canalizan el aire"
+    },
+    {
+      "id": "c.020.12.02",
+      "front": "Qué se hace ante sobrecalentamiento en vuelo",
+      "back": "Más velocidad, mezcla rica, menos potencia y flaps de capó abiertos si hay"
+    },
+    {
+      "id": "c.020.12.03",
+      "front": "Qué es el shock cooling",
+      "back": "Enfriamiento brusco del motor, que puede agrietar culatas; se evita reduciendo potencia poco a poco"
+    }
+  ]
+}

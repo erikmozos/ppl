@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380">
+<title>Sistema pitot-estático con anemómetro, altímetro y variómetro</title>
+<defs>
+<marker id="020-pitot-estatico-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+</defs>
+<line x1="10" y1="62" x2="52" y2="62" class="ln thick" marker-end="url(#020-pitot-estatico-f)"/>
+<text x="10" y="48" class="tx2" font-size="11">viento</text>
+<rect x="54" y="54" width="70" height="16" class="soft"/>
+<text x="89" y="86" class="tx2" font-size="11" text-anchor="middle">tubo de pitot</text>
+<text x="89" y="100" class="tx2" font-size="11" text-anchor="middle">(con calefactor y</text>
+<text x="89" y="114" class="tx2" font-size="11" text-anchor="middle">orificio de drenaje)</text>
+<path d="M124 62 H360" class="wa-ln thick" fill="none"/>
+<text x="240" y="54" class="txw b" text-anchor="middle">presión total</text>
+<rect x="30" y="196" width="60" height="26" class="soft"/>
+<circle cx="60" cy="209" r="4" class="ink-fill"/>
+<text x="60" y="240" class="tx2" font-size="11" text-anchor="middle">toma estática</text>
+<text x="60" y="254" class="tx2" font-size="11" text-anchor="middle">(a ambos lados)</text>
+<path d="M90 209 H300" class="ac-ln thick" fill="none"/>
+<path d="M300 100 V300" class="ac-ln thick" fill="none"/>
+<path d="M300 100 H360" class="ac-ln thick" fill="none"/>
+<path d="M300 200 H360" class="ac-ln thick" fill="none"/>
+<path d="M300 300 H360" class="ac-ln thick" fill="none"/>
+<text x="196" y="200" class="txa b" text-anchor="middle">presión estática</text>
+<rect x="360" y="30" width="260" height="90" class="soft"/>
+<text x="490" y="52" class="tx b" text-anchor="middle">Anemómetro (ASI)</text>
+<text x="490" y="72" class="tx2" font-size="11" text-anchor="middle">Cápsula con presión total (pitot);</text>
+<text x="490" y="86" class="tx2" font-size="11" text-anchor="middle">la caja recibe la estática.</text>
+<text x="490" y="104" class="tx2" font-size="11" text-anchor="middle">Mide la diferencia (presión dinámica)</text>
+<rect x="360" y="150" width="260" height="90" class="soft"/>
+<text x="490" y="172" class="tx b" text-anchor="middle">Altímetro</text>
+<text x="490" y="192" class="tx2" font-size="11" text-anchor="middle">Cápsulas aneroides selladas dentro</text>
+<text x="490" y="206" class="tx2" font-size="11" text-anchor="middle">de una caja con la presión estática.</text>
+<text x="490" y="224" class="tx2" font-size="11" text-anchor="middle">Mide la presión absoluta</text>
+<rect x="360" y="260" width="260" height="90" class="soft"/>
+<text x="490" y="282" class="tx b" text-anchor="middle">Variómetro (VSI)</text>
+<text x="490" y="302" class="tx2" font-size="11" text-anchor="middle">Cápsula con estática directa; la caja</text>
+<text x="490" y="316" class="tx2" font-size="11" text-anchor="middle">la recibe por un orificio calibrado.</text>
+<text x="490" y="334" class="tx2" font-size="11" text-anchor="middle">Mide la variación de la estática</text>
+<rect x="120" y="300" width="140" height="44" class="ok"/>
+<text x="190" y="318" class="txo b" font-size="11" text-anchor="middle">Fuente estática</text>
+<text x="190" y="332" class="txo b" font-size="11" text-anchor="middle">alterna (cabina)</text>
+<line x1="260" y1="322" x2="300" y2="300" class="ok-ln dash"/>
+</svg>

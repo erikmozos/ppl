@@ -1,0 +1,768 @@
+{
+  "lesson": {
+    "id": "020.11",
+    "title": "Carburador e inyección",
+    "summary": "Cómo dosifica la mezcla un carburador de flotador, el hielo de carburador (tipos, condiciones, síntomas y calefacción) y cómo cambia todo con un motor de inyección como el del C172S, incluido el arranque en caliente.",
+    "objectives": [
+      "Describir cómo un carburador de flotador forma la mezcla (venturi, cuba, surtidor, mariposa) y qué hacen la bomba de aceleración y el corrector de mezcla",
+      "Distinguir los tres tipos de hielo de carburador y las condiciones de temperatura y humedad en que aparecen",
+      "Predecir el efecto de la calefacción del carburador en las RPM con y sin hielo, en paso fijo y en velocidad constante",
+      "Explicar los inconvenientes de la calefacción: pérdida de potencia y aire sin filtrar",
+      "Comparar el sistema de inyección del C172S con el carburador del PA-28-161, incluidos el aire alternativo y el arranque en caliente"
+    ],
+    "sections": [
+      {
+        "title": "Qué tiene que hacer el sistema de alimentación",
+        "text": [
+          "El motor necesita mezclar aire y gasolina en una proporción muy concreta y hacerlo en todo el rango de potencias, del ralentí a la potencia máxima. Esa proporción se mide en masa: la mezcla químicamente perfecta, la **estequiométrica**, es de unos **15 kg de aire por 1 kg de gasolina** (15:1). Con más aire la mezcla es pobre; con menos, rica. En el bloque 020.15 verás qué proporción conviene en cada fase.",
+          "Hay dos maneras de dosificar el combustible: el **carburador**, que lo aspira aprovechando la depresión del aire que pasa, y la **inyección**, que lo envía a presión hasta cada cilindro. El PA-28-161 Warrior III lleva un Lycoming O-320 con carburador; el Cessna 172S lleva un Lycoming IO-360 con inyección. Esa diferencia determina cómo arrancas, qué vigilas en el descenso y qué haces ante el hielo."
+        ],
+        "examples": [
+          {
+            "q": "Un motor aspira 60 kg de aire en cierto tiempo con mezcla estequiométrica 15:1. ¿Cuánto combustible consume en ese tiempo?",
+            "a": "60 ÷ 15 = 4 kg de gasolina, unos 5,6 l de AVGAS a 0,72 kg/l."
+          }
+        ]
+      },
+      {
+        "title": "El carburador de flotador",
+        "text": [
+          "El aire entra por la toma, pasa por el filtro y atraviesa el carburador. Su corazón es el **venturi**, un estrechamiento donde el aire se acelera y su presión baja (principio de Bernoulli). Esa depresión aspira la gasolina por el **surtidor principal**, que sale de la **cuba de flotador**. Después del venturi, la **mariposa** (la válvula que mueve la palanca de gases) regula cuánta mezcla llega al motor y, por tanto, la potencia.",
+          "La cuba mantiene un **nivel de gasolina constante**: un flotador cierra la **válvula de aguja** cuando el nivel sube y la abre cuando baja. Con el nivel constante, el caudal que sale por el surtidor depende solo de la depresión del venturi, es decir, del aire que pasa. Si la válvula de aguja se queda pegada abierta, la cuba rebosa y la mezcla se enriquece en exceso; si se queda cerrada, el motor se queda sin gasolina."
+        ],
+        "figure": "svg:020-carburador",
+        "caption": "Corte esquemático de un carburador de flotador y las tres zonas donde puede formarse hielo (esquema propio).",
+        "bullets": [
+          "**Circuito de ralentí**: con la mariposa casi cerrada el venturi apenas aspira, así que un conducto aparte, junto a la mariposa, aporta el combustible a bajas RPM.",
+          "**Bomba de aceleración**: al abrir los gases de golpe, el aire llega antes que la gasolina y la mezcla se empobrece un instante. Un pistón o un diafragma inyecta un chorro extra de combustible y evita tirones o que el motor se ahogue. Por eso se avanza la palanca de gases con suavidad.",
+          "**Corrector de mezcla**: el mando de mezcla reduce el caudal de combustible mediante una aguja dosificadora. Es la forma de compensar la menor densidad del aire con la altitud (ver 020.15).",
+          "**Corte de ralentí (idle cut-off)**: al llevar la mezcla al extremo de pobre se corta el combustible y el motor se para. Es la forma normal de parar un motor de carburador, con el ralentí estabilizado."
+        ]
+      },
+      {
+        "title": "Hielo de carburador: por qué se forma",
+        "text": [
+          "El hielo de carburador no exige que haga frío: puede formarse con aire a **20 °C o más** si la humedad es alta. Se debe al enfriamiento del aire dentro del carburador. La gasolina que se **evapora** absorbe calor del aire (como el alcohol en la piel) y el aire que se **expande** en el venturi y tras la mariposa también se enfría. La suma puede ser una caída de **20 °C o más**. Si el aire contiene humedad, el vapor se condensa y se congela sobre las paredes frías y sobre la mariposa.",
+          "Hay **tres tipos de hielo**, y conviene saber dónde aparece cada uno:"
+        ],
+        "table": {
+          "caption": "Tipos de hielo en el carburador",
+          "head": [
+            "Tipo",
+            "Dónde y cuándo",
+            "Notas"
+          ],
+          "rows": [
+            [
+              "Hielo de evaporación (por vaporización del combustible)",
+              "Alrededor del surtidor y del venturi, por la evaporación de la gasolina y la expansión del aire",
+              "El más habitual; aparece con aire húmedo a temperatura moderada, incluso por encima de 20 °C"
+            ],
+            [
+              "Hielo de estrangulamiento (de mariposa)",
+              "En la mariposa y justo después, cuando está casi cerrada: la presión cae y el aire se enfría",
+              "Peligroso con poca potencia: descenso, ralentí, circuito de espera"
+            ],
+            [
+              "Hielo de impacto",
+              "En la toma de aire, el filtro y los bordes de la mariposa, al volar entre nubes, lluvia o niebla con temperaturas cercanas o inferiores a 0 °C",
+              "No depende del enfriamiento en el carburador; también afecta a los motores de inyección"
+            ]
+          ],
+          "src": "FAA PHAK cap. 7"
+        }
+      },
+      {
+        "title": "Cuándo hay riesgo",
+        "text": [
+          "El riesgo crece con la **humedad relativa alta** (sobre todo por encima del 60 %), con temperaturas del aire entre unos **−10 °C y +25 °C** y con **poca potencia**, porque la mariposa casi cerrada enfría más. Cielo despejado no significa aire seco: puede haber hielo con humedad alta en una mañana húmeda o tras la lluvia. La figura es una versión propia y orientativa del gráfico que traen los manuales: te sirve para decidir cuándo ser más prudente, no como límite."
+        ],
+        "figure": "svg:020-riesgo-hielo",
+        "caption": "Riesgo orientativo de hielo de carburador según temperatura y humedad (esquema propio).",
+        "verify": true,
+        "note": {
+          "kind": "tip",
+          "text": "En el examen, la respuesta casi siempre es la combinación: humedad alta, temperatura moderada (unos −10 a +25 °C) y potencia reducida. El aire seco o muy frío y el muy caliente y seco son poco peligrosos."
+        }
+      },
+      {
+        "title": "Síntomas y calefacción del carburador",
+        "text": [
+          "Con la **hélice de paso fijo** del PA-28-161, el primer síntoma del hielo es una **caída gradual de RPM** a gases constantes, a veces con vibración o funcionamiento irregular. Con una **hélice de velocidad constante** las RPM las mantiene el regulador, así que el síntoma es una **caída de la presión de admisión** (MAP). Si no se actúa, el motor se ahoga y se para.",
+          "La **calefacción del carburador** (mando carb heat) toma aire caliente de un manguito que rodea el escape y lo envía a la toma del carburador. Ese aire llega **sin filtrar**, por lo que usarla en tierra sobre polvo o arena puede dañar el motor. Además, el aire caliente es **menos denso**: entra menos masa de aire por la misma depresión y el carburador, que dosifica por volumen, da una mezcla **más rica**. Resultado: **menos potencia**.",
+          "Ese efecto en las RPM te sirve para diagnosticar. Aplica calefacción total y observa:"
+        ],
+        "table": {
+          "caption": "Qué ocurre al aplicar la calefacción total (paso fijo)",
+          "head": [
+            "Situación",
+            "RPM al conectar",
+            "Después",
+            "Al desconectar"
+          ],
+          "rows": [
+            [
+              "Sin hielo",
+              "Bajan",
+              "Se quedan bajas y estables",
+              "Vuelven al valor inicial"
+            ],
+            [
+              "Con hielo",
+              "Bajan",
+              "Suben cuando el hielo se derrite (puede haber unos segundos de funcionamiento irregular)",
+              "Quedan por encima del valor inicial con hielo"
+            ]
+          ],
+          "src": "FAA PHAK cap. 7; POH PA-28-161"
+        },
+        "bullets": [
+          "La caída que **se queda baja** indica que no había hielo; la que **se recupera** indica que lo había.",
+          "No uses calefacción parcial: puede llevar la temperatura al rango en que el hielo se forma. Es todo o nada.",
+          "En el descenso con poca potencia, el POH o la escuela indican cuándo conectarla; hazlo antes de reducir y no esperes a notar la caída.",
+          "No la uses con potencia máxima (despegue) salvo indicación del POH: reduce la potencia y el aire entra sin filtrar.",
+          "Rodando sobre polvo o arena, calefacción apagada, por el aire sin filtrar."
+        ],
+        "note": {
+          "kind": "es",
+          "text": "En el PA-28 la comprobación de la calefacción forma parte de la prueba de motor (cabina de la app). El momento exacto de conectarla en descenso y aproximación lo fija el POH o el criterio de la escuela."
+        },
+        "verify": true
+      },
+      {
+        "title": "Inyección: el motor del C172S",
+        "text": [
+          "En un motor de **inyección** (el IO-360 del C172S) una bomba envía gasolina a presión a un dosificador y de ahí a un **inyector por cilindro**, junto a la válvula de admisión. No hay venturi ni mariposa que enfríen el aire con el combustible, así que **no existe el hielo de evaporación ni el de estrangulamiento** y tampoco hay mando de calefacción del carburador. La distribución entre cilindros es más uniforme y el motor responde mejor a los gases.",
+          "Sigue existiendo el **hielo de impacto** en la toma o el filtro. Para eso el C172S lleva una **toma de aire alternativa**: una trampilla que deja entrar el aire del interior del capó, más caliente, y se abre sola o a mano si el filtro se obstruye. Un indicio de filtro obstruido es la caída de la presión de admisión.",
+          "Inconvenientes: tras parar un motor caliente, el calor acumulado vaporiza el combustible en las líneas y el arranque es más difícil; además, un exceso de cebado ahoga el motor. El **arranque en caliente** de un motor de inyección tiene un procedimiento propio en el POH (mezcla, gases, bomba eléctrica): sigue el del avión y no improvises."
+        ],
+        "table": {
+          "caption": "Carburador e inyección en los dos aviones del curso",
+          "head": [
+            "",
+            "PA-28-161 Warrior III",
+            "Cessna 172S"
+          ],
+          "rows": [
+            [
+              "Motor",
+              "Lycoming O-320, carburador",
+              "Lycoming IO-360, inyección"
+            ],
+            [
+              "Hielo",
+              "Evaporación, estrangulamiento e impacto",
+              "Solo de impacto en toma o filtro"
+            ],
+            [
+              "Medida contra el hielo",
+              "Calefacción del carburador (carb heat)",
+              "Aire alternativo"
+            ],
+            [
+              "Arranque en frío",
+              "Cebador (primer)",
+              "Bomba eléctrica de combustible y cebado según POH"
+            ],
+            [
+              "Parada",
+              "Mezcla a corte de ralentí",
+              "Mezcla a corte de ralentí"
+            ]
+          ],
+          "src": "POH del PA-28-161 y del C172S"
+        },
+        "verify": true
+      }
+    ],
+    "numbers": [
+      "Mezcla estequiométrica: unos 15 kg de aire por 1 kg de gasolina (15:1)",
+      "Caída de temperatura en el carburador: 20 °C o más; hielo posible incluso con 20 °C y humedad alta",
+      "Riesgo máximo: humedad alta, unos −10 a +25 °C y potencia reducida",
+      "Calefacción sin hielo: las RPM bajan y se quedan bajas; con hielo: bajan y luego suben",
+      "Paso fijo: el hielo se nota en las RPM; velocidad constante: en la MAP"
+    ],
+    "traps": [
+      "Creer que solo hay hielo con frío: el hielo de evaporación se forma por encima de 20 °C con humedad alta.",
+      "Esperar que las RPM suban siempre al conectar la calefacción: sin hielo bajan y se quedan bajas.",
+      "Usar calefacción parcial: puede ser peor que no usarla.",
+      "Olvidar que el aire de la calefacción no pasa por el filtro.",
+      "Pensar que un motor de inyección no puede helarse: sigue habiendo hielo de impacto en la toma o el filtro."
+    ],
+    "spain": [
+      "En costa o tras la lluvia, con humedad alta y entre 10 y 20 °C, el riesgo de hielo de carburador en descenso existe durante todo el año, también en verano."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 7: sistemas de la aeronave",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Manual de vuelo (POH) del Piper PA-28-161 Warrior III y del Cessna 172S",
+        "url": "https://www.piper.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Prueba de motor en la cabina del PA-28 (calefacción del carburador)",
+        "href": "#/ac/pa28/flow/runup"
+      },
+      {
+        "label": "Arranque del PA-28 (cebador y mezcla)",
+        "href": "#/ac/pa28/flow/start"
+      },
+      {
+        "label": "Arranque del C172 (inyección)",
+        "href": "#/ac/c172/flow/start"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.11.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "En un carburador, la gasolina sale por el surtidor porque:",
+      "options": [
+        "La depresión del venturi la aspira",
+        "Una bomba la empuja a presión",
+        "El flotador la impulsa hacia arriba",
+        "La mariposa la pulveriza al cerrarse"
+      ],
+      "correct": 0,
+      "why": "El aire se acelera en el venturi, su presión baja y esa depresión aspira la gasolina de la cuba por el surtidor.",
+      "whyNot": [
+        null,
+        "La bomba a presión es propia de la inyección.",
+        "El flotador solo regula el nivel de la cuba mediante la válvula de aguja.",
+        "La mariposa regula la cantidad de mezcla, no aspira el combustible."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "La función de la cuba de flotador es:",
+      "options": [
+        "Mantener un nivel de combustible constante",
+        "Calentar la gasolina",
+        "Filtrar el agua",
+        "Medir la mezcla según la altitud"
+      ],
+      "correct": 0,
+      "why": "El flotador y la válvula de aguja mantienen el nivel constante, así el caudal del surtidor depende solo de la depresión del venturi.",
+      "whyNot": [
+        null,
+        "La cuba no calienta nada; la calefacción actúa sobre el aire.",
+        "El filtrado de agua se hace en el decantador y los drenajes.",
+        "La altitud se compensa con el mando de mezcla."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Para qué sirve la bomba de aceleración de un carburador?",
+      "options": [
+        "Para evitar que se empobrezca la mezcla un instante al abrir los gases de golpe",
+        "Para empobrecer la mezcla en altitud",
+        "Para subir la presión de combustible en crucero",
+        "Para cebar el motor en el arranque en frío"
+      ],
+      "correct": 0,
+      "why": "Al abrir la mariposa de golpe el aire llega antes que la gasolina. La bomba inyecta un chorro extra y evita el tirón o la parada del motor.",
+      "whyNot": [
+        null,
+        "Añade combustible, no lo quita.",
+        "En crucero no actúa; funciona solo al mover los gases.",
+        "El cebado en frío lo hace el cebador, aunque la bomba da un chorro extra si se mueven los gases."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si ascendes sin tocar el mando de mezcla en un motor de carburador, la mezcla se vuelve:",
+      "options": [
+        "Más rica, porque el aire es menos denso y el carburador dosifica por volumen",
+        "Más pobre, porque hay menos aire",
+        "Igual, porque la altitud no afecta a la mezcla",
+        "Estequiométrica en todo el ascenso"
+      ],
+      "correct": 0,
+      "why": "El carburador sigue dosificando el mismo volumen de combustible pero entra menos masa de aire: la mezcla se enriquece y hay que empobrecerla.",
+      "whyNot": [
+        null,
+        "El aire menos denso lleva a una mezcla más rica, no pobre.",
+        "La altitud sí cambia la densidad del aire y, con ella, la mezcla.",
+        "No hay ninguna razón para que sea estequiométrica todo el ascenso."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué enfría el aire dentro del carburador y favorece el hielo de evaporación?",
+      "options": [
+        "El aire frío del exterior solamente",
+        "El calor que sale del escape",
+        "La evaporación de la gasolina y la expansión del aire en el venturi",
+        "La fricción del aire con el filtro"
+      ],
+      "correct": 2,
+      "why": "La gasolina que se evapora absorbe calor y el aire expandido se enfría: la caída puede ser de 20 °C o más.",
+      "whyNot": [
+        "El enfriamiento ocurre aunque el aire exterior sea templado.",
+        "El escape calienta, no enfría; es la fuente del aire de la calefacción.",
+        null,
+        "La fricción en el filtro no enfría el aire de forma apreciable."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.006",
+      "type": "regla",
+      "level": 2,
+      "q": "¿En cuál de estas condiciones es más probable el hielo en el carburador?",
+      "options": [
+        "10 °C y humedad del 90 %, con poca potencia",
+        "30 °C y humedad del 20 %, a plena potencia",
+        "−25 °C y aire muy seco, en crucero",
+        "40 °C y cielo despejado, a plena potencia"
+      ],
+      "correct": 0,
+      "why": "Humedad alta, temperatura moderada y potencia reducida es la combinación más peligrosa, porque la mariposa casi cerrada enfría más.",
+      "whyNot": [
+        null,
+        "Aire cálido y seco con mucha potencia: riesgo bajo.",
+        "El aire muy frío es seco y contiene poco vapor de agua.",
+        "Con 40 °C y plena potencia el riesgo es mínimo."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.007",
+      "type": "concepto",
+      "level": 1,
+      "q": "El hielo de carburador en un avión de paso fijo se detecta primero por:",
+      "options": [
+        "Subida de la presión de aceite",
+        "Subida de las RPM",
+        "Subida de la temperatura de culatas",
+        "Caída gradual de RPM"
+      ],
+      "correct": 3,
+      "why": "El hielo reduce el paso de la mezcla y con la hélice de paso fijo se refleja como una caída gradual de RPM, a veces con vibración.",
+      "whyNot": [
+        "La presión de aceite no depende del hielo.",
+        "Las RPM bajan al obstruirse el paso.",
+        "Con menos potencia las culatas se enfrían, no se calientan.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con hélice de velocidad constante, el primer síntoma de hielo en el carburador es:",
+      "options": [
+        "Caída de RPM",
+        "Caída de la presión de admisión",
+        "Subida de la presión de admisión",
+        "Subida de la temperatura del aceite"
+      ],
+      "correct": 1,
+      "why": "El regulador mantiene las RPM y compensa con el paso de pala, así que el síntoma es la caída de la presión de admisión (MAP).",
+      "whyNot": [
+        "Las RPM las mantiene el regulador hasta el límite.",
+        null,
+        "Con menos aire en el motor la MAP baja, no sube.",
+        "No hay relación directa con la temperatura del aceite."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.009",
+      "type": "concepto",
+      "level": 1,
+      "q": "Sin hielo en el carburador, al aplicar la calefacción total en un avión de paso fijo las RPM:",
+      "options": [
+        "Suben",
+        "Bajan y se quedan bajas",
+        "Bajan y luego suben",
+        "No cambian"
+      ],
+      "correct": 1,
+      "why": "El aire caliente es menos denso y enriquece la mezcla: las RPM bajan y se quedan bajas. Si hubiera hielo, subirían después al derretirse.",
+      "whyNot": [
+        "Suben solo si hay hielo y se derrite; y antes habrán bajado.",
+        null,
+        "Ese comportamiento indica que había hielo.",
+        "El aire caliente cambia la mezcla y siempre hay un descenso."
+      ],
+      "ref": "PHAK cap. 7; POH PA-28-161"
+    },
+    {
+      "id": "020.11.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "Al aplicar la calefacción, las RPM bajan, luego suben y el motor funciona algo irregular unos segundos. Esto indica:",
+      "options": [
+        "Que no había hielo",
+        "Que la calefacción está averiada",
+        "Que la mezcla está demasiado pobre",
+        "Que había hielo y se está derritiendo"
+      ],
+      "correct": 3,
+      "why": "El descenso inicial es el efecto del aire caliente; la subida posterior y la irregularidad son el hielo derritiéndose y entrando como agua.",
+      "whyNot": [
+        "Sin hielo las RPM bajarían y se quedarían bajas.",
+        "Es el comportamiento esperado con hielo, no una avería.",
+        "La mezcla pobre no se corrige con calefacción.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.011",
+      "type": "concepto",
+      "level": 3,
+      "q": "Has fundido el hielo con la calefacción y la vuelves a cerrar. Las RPM quedan, respecto al valor con hielo:",
+      "options": [
+        "Más bajas",
+        "Iguales",
+        "Oscilando sin estabilizarse siempre",
+        "Más altas"
+      ],
+      "correct": 3,
+      "why": "Sin hielo el motor recibe de nuevo la mezcla normal y recupera la potencia perdida: las RPM quedan por encima del valor con hielo.",
+      "whyNot": [
+        "Con el hielo eliminado la potencia mejora.",
+        "Sería igual solo si el hielo no hubiera estorbado.",
+        "Si hubiera oscilaciones persistentes, habría otro problema.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.012",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Por qué no se usa la calefacción del carburador rodando sobre una pista de tierra con polvo?",
+      "options": [
+        "Porque enfría el motor",
+        "Porque corta el combustible",
+        "Porque el aire caliente entra sin filtrar",
+        "Porque aumenta la presión de aceite"
+      ],
+      "correct": 2,
+      "why": "El aire de la calefacción se toma del manguito del escape y no pasa por el filtro: el polvo y la arena desgastan el motor.",
+      "whyNot": [
+        "Calienta el aire, no el motor.",
+        "No interviene en el suministro de combustible.",
+        null,
+        "No afecta a la lubricación."
+      ],
+      "ref": "PHAK cap. 7; POH PA-28-161"
+    },
+    {
+      "id": "020.11.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Por qué la calefacción del carburador reduce la potencia?",
+      "options": [
+        "Porque cierra la mariposa",
+        "Porque el hielo se acumula en el venturi",
+        "Porque desvía la gasolina de la cuba",
+        "Porque el aire caliente es menos denso y la mezcla resulta más rica"
+      ],
+      "correct": 3,
+      "why": "Entra menos masa de aire por el mismo volumen y la mezcla se enriquece, con lo que baja la potencia.",
+      "whyNot": [
+        "La calefacción no actúa sobre la mariposa.",
+        "La calefacción quita el hielo, no lo acumula.",
+        "No desvía combustible; solo cambia la temperatura del aire.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.014",
+      "type": "regla",
+      "level": 2,
+      "q": "Respecto a la calefacción parcial del carburador, la práctica correcta es:",
+      "options": [
+        "Usarla siempre a medias para no perder potencia",
+        "Usarla solo con humedad inferior al 30 %",
+        "Usarla solo en tierra",
+        "Usar la calefacción total o ninguna"
+      ],
+      "correct": 3,
+      "why": "Una calefacción parcial puede subir la temperatura al rango en que se forma el hielo sin eliminarlo. Es todo o nada.",
+      "whyNot": [
+        "A medias puede favorecer el hielo.",
+        "Con humedad baja el riesgo es pequeño y no hace falta.",
+        "Es una ayuda para el vuelo, sobre todo en descenso y aproximación.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué tipo de hielo puede afectar también a un motor de inyección?",
+      "options": [
+        "Hielo de evaporación en el venturi",
+        "Hielo de estrangulamiento en la mariposa del carburador",
+        "Hielo de impacto en la toma o el filtro",
+        "Hielo en la cuba de flotador"
+      ],
+      "correct": 2,
+      "why": "El hielo de impacto se forma en la toma de aire con humedad visible cerca o bajo 0 °C y no depende del carburador.",
+      "whyNot": [
+        "La inyección no tiene venturi con surtidor.",
+        "No hay mariposa con carburador en la inyección.",
+        null,
+        "No existe cuba de flotador en la inyección."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.016",
+      "type": "concepto",
+      "level": 1,
+      "q": "En el C172S, si el filtro de aire se obstruye por hielo, el piloto puede recurrir a:",
+      "options": [
+        "La calefacción del carburador",
+        "El cebador",
+        "La toma de aire alternativo",
+        "El corte de ralentí"
+      ],
+      "correct": 2,
+      "why": "La toma de aire alternativo deja entrar aire de dentro del capó, sin pasar por el filtro obstruido.",
+      "whyNot": [
+        "El C172S no tiene carburador ni calefacción.",
+        "El cebador añade combustible para arrancar, no ayuda al aire.",
+        null,
+        "El corte de ralentí para el motor."
+      ],
+      "ref": "POH C172S"
+    },
+    {
+      "id": "020.11.017",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una ventaja de la inyección frente al carburador es:",
+      "options": [
+        "No necesita bomba de combustible",
+        "Reparte la mezcla más uniformemente entre cilindros y no tiene hielo de evaporación",
+        "No necesita control de mezcla",
+        "Funciona con cualquier combustible"
+      ],
+      "correct": 1,
+      "why": "Cada cilindro tiene su inyector; no hay venturi ni mariposa de carburador que enfríen el aire, así que no hay hielo de evaporación ni de estrangulamiento.",
+      "whyNot": [
+        "La inyección necesita bomba y presión.",
+        null,
+        "También lleva mando de mezcla.",
+        "Sigue necesitando el grado de AVGAS del POH."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.018",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Por qué un motor de inyección caliente puede arrancar mal tras una parada corta?",
+      "options": [
+        "Porque el combustible se vaporiza en las líneas por el calor residual",
+        "Porque el aceite está demasiado frío",
+        "Porque la batería se descarga con el calor",
+        "Porque el filtro de aire se obstruye"
+      ],
+      "correct": 0,
+      "why": "El calor del motor parado vaporiza el combustible en las líneas y el motor recibe vapor en vez de líquido. El POH da un procedimiento propio.",
+      "whyNot": [
+        null,
+        "Tras una parada corta el aceite está caliente.",
+        "El calor no descarga la batería de ese modo.",
+        "El filtro no se obstruye por calor."
+      ],
+      "ref": "POH C172S; PHAK cap. 7"
+    },
+    {
+      "id": "020.11.019",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con mezcla estequiométrica 15:1 por masa, ¿cuánto aire necesitan 3 kg de gasolina?",
+      "options": [
+        "5 kg",
+        "18 kg",
+        "45 kg",
+        "0,2 kg"
+      ],
+      "correct": 2,
+      "why": "15 kg de aire por kg de gasolina: 3 × 15 = 45 kg.",
+      "whyNot": [
+        "Divide entre 15 en vez de multiplicar.",
+        "Suma 15 en lugar de multiplicar.",
+        null,
+        "Es el cociente inverso de 3 entre 15."
+      ],
+      "ref": "Mezcla estequiométrica 15:1"
+    },
+    {
+      "id": "020.11.020",
+      "type": "lectura",
+      "level": 2,
+      "q": "En el descenso de un PA-28-161 con 2300 RPM aplicas calefacción y lees lo siguiente. ¿Qué indica?",
+      "data": "Gases constantes\n2300 RPM -> calefacción ON: 2200 RPM\nDespués de 10 s: 2200 RPM, estable y sin ruido",
+      "options": [
+        "Había hielo y se ha fundido",
+        "La calefacción no funciona",
+        "No había hielo: la caída es efecto del aire caliente",
+        "El motor tiene mezcla pobre"
+      ],
+      "correct": 2,
+      "why": "Las RPM bajan y se quedan bajas: es el efecto del aire caliente, menos denso. Si hubiera habido hielo, subirían después.",
+      "whyNot": [
+        "Con hielo subirían tras bajar.",
+        "Una calefacción que funciona hace bajar las RPM.",
+        null,
+        "No hay nada en los datos que indique mezcla pobre."
+      ],
+      "ref": "PHAK cap. 7; POH PA-28-161"
+    },
+    {
+      "id": "020.11.021",
+      "type": "lectura",
+      "level": 2,
+      "q": "Lee la secuencia de RPM en un PA-28-161 con gases constantes. ¿Qué ha ocurrido?",
+      "data": "2300 RPM (inicio)\n2220 RPM (cae sola, sin tocar nada)\nCalefacción ON: 2130 RPM, irregular\nA los 15 s: 2260 RPM, estable\nCalefacción OFF: 2310 RPM",
+      "options": [
+        "No había hielo",
+        "La hélice ha cambiado de paso",
+        "El motor tiene una magneto averiada",
+        "Se había formado hielo y la calefacción lo ha derretido"
+      ],
+      "correct": 3,
+      "why": "La caída espontánea indica hielo; con calefacción baja, sube al derretirse y, al cerrarla, queda por encima del valor con hielo.",
+      "whyNot": [
+        "La caída sin tocar nada y la recuperación posterior indican hielo.",
+        "La hélice de paso fijo no cambia de paso.",
+        "Una magneto averiada no se cura al aplicar calor.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.022",
+      "type": "lectura",
+      "level": 2,
+      "q": "Según el gráfico propio de la lección, con 15 °C y humedad del 80 % la formación de hielo de carburador es:",
+      "figure": "svg:020-riesgo-hielo",
+      "options": [
+        "Improbable",
+        "Grave a cualquier potencia",
+        "Posible solo con potencia reducida",
+        "Imposible por la temperatura"
+      ],
+      "correct": 1,
+      "why": "El punto (15 °C, 80 %) cae en la zona interior del gráfico, la de riesgo grave a cualquier potencia.",
+      "whyNot": [
+        "Está dentro de la zona de riesgo, no fuera.",
+        null,
+        "Esa es la zona exterior; el punto está en la interior.",
+        "Con 15 °C el hielo no solo es posible, es probable."
+      ],
+      "ref": "Esquema propio orientativo; PHAK cap. 7"
+    },
+    {
+      "id": "020.11.023",
+      "type": "lectura",
+      "level": 2,
+      "q": "En el esquema, el hielo que se forma justo detrás de la mariposa casi cerrada es el de:",
+      "figure": "svg:020-carburador",
+      "options": [
+        "Impacto",
+        "Estrangulamiento",
+        "Evaporación",
+        "Condensación en la cuba"
+      ],
+      "correct": 1,
+      "why": "Con la mariposa casi cerrada la presión cae y el aire se enfría tras ella: hielo de estrangulamiento (zona 3).",
+      "whyNot": [
+        "El de impacto se forma en la toma y el filtro (zona 1).",
+        null,
+        "El de evaporación se forma en el venturi y el surtidor (zona 2).",
+        "No es uno de los tres tipos de hielo del carburador."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.11.024",
+      "type": "concepto",
+      "level": 1,
+      "q": "La forma normal de parar un motor con carburador es:",
+      "options": [
+        "Cerrar el selector de combustible y esperar",
+        "Llevar la mezcla a corte de ralentí",
+        "Apagar el máster",
+        "Poner el interruptor en L"
+      ],
+      "correct": 1,
+      "why": "El corte de ralentí corta el combustible con el motor estabilizado y lo para limpiamente; después se apagan magnetos y se comprueban.",
+      "whyNot": [
+        "Cerrar el selector es una acción de emergencia y deja el motor girando hasta consumir la gasolina.",
+        null,
+        "El máster no actúa sobre un motor con magnetos.",
+        "El interruptor de magnetos se cierra después, no a la vez."
+      ],
+      "ref": "POH PA-28-161; PHAK cap. 7"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.11.01",
+      "front": "Mezcla estequiométrica",
+      "back": "Unos 15 kg de aire por 1 kg de gasolina (15:1)"
+    },
+    {
+      "id": "c.020.11.02",
+      "front": "Calefacción del carburador sin hielo: RPM",
+      "back": "Bajan y se quedan bajas (aire caliente menos denso)"
+    },
+    {
+      "id": "c.020.11.03",
+      "front": "Calefacción con hielo: RPM",
+      "back": "Bajan y luego suben al derretirse el hielo"
+    },
+    {
+      "id": "c.020.11.04",
+      "front": "Síntoma del hielo: paso fijo / velocidad constante",
+      "back": "Paso fijo: caída de RPM. Velocidad constante: caída de la MAP"
+    },
+    {
+      "id": "c.020.11.05",
+      "front": "Los tres tipos de hielo de carburador",
+      "back": "Evaporación (venturi), estrangulamiento (mariposa) e impacto (toma y filtro)"
+    },
+    {
+      "id": "c.020.11.06",
+      "front": "Inconveniente de la calefacción",
+      "back": "Menos potencia y aire sin filtrar"
+    },
+    {
+      "id": "c.020.11.07",
+      "front": "Motor de inyección: qué hielo sigue existiendo",
+      "back": "Hielo de impacto en la toma; se resuelve con el aire alternativo"
+    }
+  ]
+}

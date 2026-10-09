@@ -1,0 +1,334 @@
+{
+ "lesson": {
+  "title": "VDF",
+  "summary": "Radiogoniómetro de VHF en tierra: principio, códigos Q (QDM, QDR, QTE, QUJ), clases de precisión, alcance y cómo se pide y se usa en vuelo.",
+  "objectives": [
+   "Explicar cómo funciona el VDF y quién mide la dirección",
+   "Distinguir QDM, QDR, QTE y QUJ y pasar de uno a otro",
+   "Conocer las clases de precisión A, B y C",
+   "Estimar el alcance y entender las limitaciones",
+   "Saber cómo se solicita una marcación al ATS"
+  ],
+  "sections": [
+   {
+    "title": "Qué es el VDF",
+    "text": [
+     "El **VDF** (VHF Direction Finder) es una estación en tierra que determina de **qué dirección llega** la transmisión de radio de una aeronave. Es la ayuda más sencilla para el piloto: no necesitas equipo especial a bordo, solo la radio de comunicaciones VHF. El procedimiento es el de siempre en una ayuda de este tipo: llamas al ATS, pides una marcación («solicito QDM»), pulsas el micrófono unos segundos y el controlador, que ve en su equipo la dirección de la señal, te da el resultado.",
+     "La antena VDF de la estación mide el ángulo de llegada de tu señal (por la diferencia de fase entre sus elementos) y da la marcación **desde la estación hasta ti**. Es una **ayuda en tierra**: la medida se hace en la estación y se te comunica por radio, así que tienes que mantener contacto bilateral con ella. En una emergencia, es uno de los medios más útiles para un piloto perdido, porque en VHF solo necesitas hablar."
+    ]
+   },
+   {
+    "title": "Códigos Q de marcación",
+    "text": [
+     "Las cuatro marcaciones se piden con códigos Q de la OACI. Todos se miden en grados de 000 a 360, y se dan con la referencia de norte magnético (QDM, QDR) o verdadero (QTE, QUJ). Dos de ellas se refieren a la dirección **hacia la estación** y dos a la dirección **desde la estación**:"
+    ],
+    "table": {
+     "caption": "Códigos Q de marcación",
+     "head": [
+      "Código",
+      "Qué es",
+      "Referencia",
+      "Relación"
+     ],
+     "rows": [
+      [
+       "QDM",
+       "Rumbo magnético a volar para ir a la estación (sin viento)",
+       "Magnético",
+       "QDM = QDR ± 180°"
+      ],
+      [
+       "QDR",
+       "Marcación magnética de la aeronave desde la estación",
+       "Magnético",
+       "QDR = QDM ± 180°"
+      ],
+      [
+       "QUJ",
+       "Rumbo verdadero a volar para ir a la estación (sin viento)",
+       "Verdadero",
+       "QUJ = QTE ± 180°"
+      ],
+      [
+       "QTE",
+       "Marcación verdadera de la aeronave desde la estación",
+       "Verdadero",
+       "QTE = QDR − variación W (+ variación E)"
+      ]
+     ],
+     "src": "Anexo 10 OACI, vol. II; PANS-ABC"
+    },
+    "examples": [
+     {
+      "q": "Pides QDM y la estación responde QDM 270. ¿Cuál es el QDR?",
+      "a": "QDR = 270 − 180 = 090°: estás al este de la estación."
+     },
+     {
+      "q": "QDR 090° y variación 2° W. ¿QTE?",
+      "a": "El verdadero se obtiene restando la variación oeste del magnético: QTE = 088°."
+     }
+    ]
+   },
+   {
+    "title": "Clases de precisión, alcance y uso",
+    "text": [
+     "Cada estación VDF tiene una **clase de precisión**: **A** con un error de ±2°, **B** con ±5°, **C** con ±10° y **D** con más de ±10°. La lectura que te da el controlador va acompañada de la clase, por ejemplo «QDM 270, clase Bravo», y eso te dice cuánto te puedes fiar: ±5° a 60 NM supone un error de unas 5 NM (regla 1 en 60).",
+     "El alcance es el de la VHF: **línea de vista**, de modo que aumenta con la altura del avión (≈ 1,23 × (√h1 + √h2) NM). Los errores del VDF dependen del emplazamiento (reflexiones en el relieve y en edificios) y de la calidad de la transmisión; si tu transmisión es corta, el controlador no tiene tiempo de medir bien. Una marcación sola da una **línea de posición**; dos marcaciones de dos estaciones, o una más una distancia, dan un punto.",
+     "Para usar el servicio con seguridad: transmite la señal sin interrupción durante unos cinco segundos contando «uno, dos, tres, cuatro, cinco, ...», indica tu altitud, y mantén el rumbo mientras tanto, porque un viraje cambia el resultado."
+    ],
+    "bullets": [
+     "Clase A: ±2°; clase B: ±5°; clase C: ±10°; clase D: peor que ±10°.",
+     "La marcación se mide en la estación y se comunica por radio: no necesitas instrumentos a bordo.",
+     "QDM y QDR son recíprocos, igual que QUJ y QTE.",
+     "Una sola marcación da una línea de posición."
+    ],
+    "note": {
+     "kind": "es",
+     "text": "El VDF aparece en el AIP España entre los servicios de algunos aeródromos y de los centros de control. Consulta la disponibilidad concreta en el AIP: no puede darse por supuesto."
+    },
+    "verify": true
+   }
+  ],
+  "numbers": [
+   "QDM: rumbo magnético para ir a la estación; QDR: marcación magnética desde la estación; QDM = QDR ± 180°",
+   "QUJ y QTE: las versiones verdaderas",
+   "Clases de precisión: A ±2°, B ±5°, C ±10°",
+   "Alcance: línea de vista (VHF)"
+  ],
+  "traps": [
+   "QDM es hacia la estación; QDR es desde la estación; no los confundas.",
+   "Los códigos Q de referencia magnética (QDM, QDR) frente a los de referencia verdadera (QUJ, QTE).",
+   "Una marcación sola es una línea de posición, no un punto.",
+   "Un viraje durante la transmisión estropea la medida."
+  ],
+  "sources": [
+   {
+    "title": "OACI, Anexo 10, vol. I y II; PANS-ABC (Doc 8400): códigos Q"
+   },
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 16",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   }
+  ],
+  "id": "060.10",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "060.10.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "El VDF es:",
+   "options": [
+    "Una estación de tierra que mide la dirección de llegada de la señal VHF de una aeronave",
+    "Un radar meteorológico",
+    "Un equipo de a bordo que recibe señales VHF",
+    "Un sistema de aterrizaje instrumental"
+   ],
+   "correct": 0,
+   "why": "La estación VDF mide el ángulo de llegada de la transmisión de la aeronave y se lo comunica al piloto.",
+   "whyNot": [
+    null,
+    "No es un equipo meteorológico.",
+    "No requiere equipo especial a bordo.",
+    "No es un sistema de aterrizaje."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.10.002",
+   "type": "regla",
+   "level": 1,
+   "q": "El código Q QDM significa:",
+   "options": [
+    "Rumbo magnético a volar para ir a la estación, sin viento",
+    "Marcación magnética de la aeronave desde la estación",
+    "Marcación verdadera de la aeronave desde la estación",
+    "Rumbo verdadero para ir a la estación"
+   ],
+   "correct": 0,
+   "why": "QDM es el rumbo magnético a volar para dirigirse a la estación con viento nulo.",
+   "whyNot": [
+    null,
+    "Es el QDR.",
+    "Es el QTE.",
+    "Es el QUJ."
+   ],
+   "ref": "PANS-ABC"
+  },
+  {
+   "id": "060.10.003",
+   "type": "regla",
+   "level": 1,
+   "q": "El código Q QDR significa:",
+   "options": [
+    "Rumbo magnético a la estación",
+    "Marcación magnética de la aeronave desde la estación",
+    "Marcación verdadera desde la estación",
+    "Rumbo verdadero a la estación"
+   ],
+   "correct": 1,
+   "why": "QDR es la marcación magnética de la aeronave medida desde la estación.",
+   "whyNot": [
+    "Es el QDM.",
+    null,
+    "Es el QTE.",
+    "Es el QUJ."
+   ],
+   "ref": "PANS-ABC"
+  },
+  {
+   "id": "060.10.004",
+   "type": "calculo",
+   "level": 1,
+   "q": "El controlador te da QDM 270°. El QDR es:",
+   "options": [
+    "180°",
+    "270°",
+    "000°",
+    "090°"
+   ],
+   "correct": 3,
+   "why": "QDR = QDM ± 180° = 090°; estás al este de la estación.",
+   "whyNot": [
+    "Resulta de restar 90°.",
+    "Es el mismo valor, sin invertirlo.",
+    "Resulta de sumar 90°.",
+    null
+   ],
+   "ref": "PANS-ABC"
+  },
+  {
+   "id": "060.10.005",
+   "type": "calculo",
+   "level": 2,
+   "q": "QDR 090° y variación 2° W. El QTE es:",
+   "options": [
+    "092°",
+    "270°",
+    "090°",
+    "088°"
+   ],
+   "correct": 3,
+   "why": "De magnético a verdadero el oeste se resta: 090 − 2 = 088°.",
+   "whyNot": [
+    "Suma la variación W en el sentido de magnético a verdadero.",
+    "Es el QDM.",
+    "Ignora la variación.",
+    null
+   ],
+   "ref": "PANS-ABC"
+  },
+  {
+   "id": "060.10.006",
+   "type": "regla",
+   "level": 2,
+   "q": "Una estación VDF de clase B tiene una precisión de:",
+   "options": [
+    "±5°",
+    "±10°",
+    "±1°",
+    "±2°"
+   ],
+   "correct": 0,
+   "why": "Las clases son A ±2°, B ±5° y C ±10°.",
+   "whyNot": [
+    null,
+    "Es la clase C.",
+    "No corresponde a ninguna clase.",
+    "Es la clase A."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.10.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "El alcance del VDF está limitado por:",
+   "options": [
+    "La potencia de la antena del avión únicamente",
+    "La línea de vista (VHF)",
+    "La curvatura de la Tierra, que se sigue con onda de tierra",
+    "La ionosfera"
+   ],
+   "correct": 1,
+   "why": "Es una propagación VHF directa; el alcance aumenta con la altura del avión.",
+   "whyNot": [
+    "Depende de la altura de las antenas.",
+    null,
+    "No sigue la curvatura: es VHF.",
+    "No usa reflexión ionosférica."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.10.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una sola marcación del VDF te proporciona:",
+   "options": [
+    "Una posición exacta",
+    "El viento",
+    "Una línea de posición",
+    "Una altitud"
+   ],
+   "correct": 2,
+   "why": "Una marcación es una línea sobre la que estás; la posición exacta se obtiene con otra línea.",
+   "whyNot": [
+    "Hace falta una segunda marcación o una distancia.",
+    "No proporciona viento.",
+    null,
+    "No proporciona altitud."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.10.009",
+   "type": "concepto",
+   "level": 1,
+   "q": "Para obtener una buena marcación VDF, durante la transmisión conviene:",
+   "options": [
+    "Virar continuamente",
+    "Cambiar de frecuencia",
+    "Mantener rumbo y transmitir unos segundos sin interrupción",
+    "Transmitir brevemente, un segundo"
+   ],
+   "correct": 2,
+   "why": "La estación necesita unos segundos de señal estable; mantener el rumbo evita errores.",
+   "whyNot": [
+    "Un viraje cambia la medida.",
+    "Cambiaría de estación.",
+    null,
+    "No da tiempo a medir."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.060.10.01",
+   "front": "QDM",
+   "back": "Rumbo magnético para ir a la estación, sin viento"
+  },
+  {
+   "id": "c.060.10.02",
+   "front": "QDR",
+   "back": "Marcación magnética de la aeronave desde la estación"
+  },
+  {
+   "id": "c.060.10.03",
+   "front": "QUJ y QTE",
+   "back": "Rumbo verdadero a la estación y marcación verdadera desde ella"
+  },
+  {
+   "id": "c.060.10.04",
+   "front": "QDM y QDR",
+   "back": "Se diferencian en 180°"
+  },
+  {
+   "id": "c.060.10.05",
+   "front": "Clases de precisión VDF",
+   "back": "A ±2°, B ±5°, C ±10°"
+  }
+ ]
+}

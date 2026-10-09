@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280">
+  <title>Indicador de desviación del VOR (CDI) en cuatro situaciones: centrado con TO, desviado a la izquierda, centrado con FROM y bandera de alarma</title>
+  <circle cx="80" cy="100" r="58" class="soft"/>
+  <circle cx="30" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="40" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="50" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="60" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="70" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="90" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="100" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="110" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="120" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="130" cy="100" r="2.5" class="ink-fill"/>
+  <line x1="80" y1="60" x2="80" y2="140" class="wa-ln thick"/>
+  <path d="M110 130 L120 144 L100 144 Z" class="ac-fill"/>
+  <circle cx="240" cy="100" r="58" class="soft"/>
+  <circle cx="190" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="200" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="210" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="220" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="230" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="250" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="260" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="270" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="280" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="290" cy="100" r="2.5" class="ink-fill"/>
+  <line x1="216" y1="60" x2="216" y2="140" class="wa-ln thick"/>
+  <path d="M270 130 L280 144 L260 144 Z" class="ac-fill"/>
+  <circle cx="400" cy="100" r="58" class="soft"/>
+  <circle cx="350" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="360" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="370" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="380" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="390" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="410" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="420" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="430" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="440" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="450" cy="100" r="2.5" class="ink-fill"/>
+  <line x1="400" y1="60" x2="400" y2="140" class="wa-ln thick"/>
+  <path d="M420 130 L440 130 L430 144 Z" class="ac-fill"/>
+  <circle cx="560" cy="100" r="58" class="soft"/>
+  <circle cx="510" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="520" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="530" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="540" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="550" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="570" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="580" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="590" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="600" cy="100" r="2.5" class="ink-fill"/>
+  <circle cx="610" cy="100" r="2.5" class="ink-fill"/>
+  <rect x="520" y="66" width="80" height="22" rx="3" class="wa"/>
+  <text x="560" y="81" class="txw b" text-anchor="middle">OFF</text>
+  <line x1="560" y1="95" x2="560" y2="140" class="ln2 dash"/>
+  <text x="80" y="188" class="tx b" text-anchor="middle">Centrado, TO</text>
+  <text x="80" y="206" class="tx2" text-anchor="middle">Sobre la derrota, rumbo</text>
+  <text x="80" y="220" class="tx2" text-anchor="middle">a la estación</text>
+  <text x="240" y="188" class="tx b" text-anchor="middle">Aguja a la izquierda</text>
+  <text x="240" y="206" class="tx2" text-anchor="middle">El radial queda a la izquierda:</text>
+  <text x="240" y="220" class="tx2" text-anchor="middle">gira hacia él</text>
+  <text x="400" y="188" class="tx b" text-anchor="middle">Centrado, FROM</text>
+  <text x="400" y="206" class="tx2" text-anchor="middle">Sobre el radial, ya</text>
+  <text x="400" y="220" class="tx2" text-anchor="middle">alejándote de la estación</text>
+  <text x="560" y="188" class="tx b" text-anchor="middle">Bandera OFF</text>
+  <text x="560" y="206" class="tx2" text-anchor="middle">Señal insuficiente o</text>
+  <text x="560" y="220" class="tx2" text-anchor="middle">equipo averiado: no la uses</text>
+  <text x="320" y="30" class="tx b" text-anchor="middle">OBS en 360°. Cada punto del CDI son 2°; el extremo, 10°</text>
+  <text x="320" y="260" class="tx2" text-anchor="middle">El CDI no depende del rumbo del avión: depende de la posición respecto al radial</text>
+</svg>

@@ -1,0 +1,1072 @@
+{
+  "lesson": {
+    "id": "010.07",
+    "title": "Reglas de vuelo visual (VFR)",
+    "summary": "Mínimos VMC por clase y altitud, condiciones para operar en una CTR, VFR especial (solo de día en España), VFR nocturno, alturas mínimas, límite de FL195 y niveles de crucero semicirculares.",
+    "objectives": [
+      "Aplicar la tabla VMC de SERA.5001 según la clase de espacio aéreo, la altitud y la altura sobre el terreno",
+      "Decidir si puedes despegar, aterrizar o entrar en el circuito de una CTR con un techo y una visibilidad dados",
+      "Conocer los requisitos del VFR especial y por qué en España solo se concede de día",
+      "Enumerar las condiciones del VFR nocturno y las alturas mínimas de SERA.5005(f)",
+      "Elegir el nivel de crucero VFR correcto según la derrota magnética y la altitud de transición"
+    ],
+    "sections": [
+      {
+        "title": "Qué es volar VFR y qué es VMC",
+        "text": [
+          "Volar **VFR** (Visual Flight Rules, reglas de vuelo visual) significa que la separación con el terreno y con otras aeronaves la garantizas tú, mirando fuera. Para que eso sea posible hace falta ver: de ahí las **VMC** (Visual Meteorological Conditions, condiciones meteorológicas de vuelo visual), que SERA.5001 define con tres magnitudes: **visibilidad de vuelo**, **distancia a las nubes** y **techo**. Si alguna de ellas es peor que el mínimo, las condiciones son IMC y el vuelo VFR deja de ser legal y, sobre todo, de ser seguro.",
+          "Los mínimos no son iguales en todas partes. Cuanto más rápido vas (a mayor altitud la velocidad verdadera es mayor) y más tráfico puede haber, más margen necesitas para ver y evitar: por eso a FL100 o por encima se exigen 8 km, y por debajo 5 km. En el espacio aéreo de las clases F y G, con menos tráfico y menos servicio ATS, SERA admite una rebaja a baja cota: basta con ir libre de nubes y con la superficie a la vista.",
+          "La tabla se llama S5-1 y es la más preguntada de la materia. Aprenderla de memoria es necesario, pero entenderla evita errores: las dos preguntas que debes hacerte siempre son «¿en qué banda de altitud estoy?» y «¿en qué clase de espacio aéreo?»."
+        ]
+      },
+      {
+        "title": "La tabla VMC (SERA.5001, tabla S5-1)",
+        "text": [
+          "La banda inferior se define con el **mayor** de dos valores: 3000 ft AMSL o 1000 ft sobre el terreno (AGL). En terreno llano a nivel del mar, 1000 ft AGL es menos que 3000 ft AMSL, así que manda 3000 ft AMSL. En una meseta a 4000 ft AMSL, 1000 ft AGL son 5000 ft AMSL y manda ese. Por eso en España interior la banda baja sube muchísimo."
+        ],
+        "table": {
+          "caption": "Mínimos VMC de SERA.5001. A* = los mínimos se dan solo a título orientativo, porque en clase A no se admite VFR",
+          "head": [
+            "Banda de altitud",
+            "Clases",
+            "Visibilidad de vuelo",
+            "Distancia a las nubes"
+          ],
+          "rows": [
+            [
+              "A FL100 o por encima",
+              "A*, B, C, D, E, F, G",
+              "8 km",
+              "1500 m en horizontal y 1000 ft (300 m) en vertical"
+            ],
+            [
+              "Por debajo de FL100 y por encima de 3000 ft AMSL o 1000 ft AGL (lo que sea mayor)",
+              "A*, B, C, D, E, F, G",
+              "5 km",
+              "1500 m en horizontal y 1000 ft en vertical"
+            ],
+            [
+              "A 3000 ft AMSL o 1000 ft AGL, o por debajo (lo que sea mayor)",
+              "A*, B, C, D, E",
+              "5 km",
+              "1500 m en horizontal y 1000 ft en vertical"
+            ],
+            [
+              "A 3000 ft AMSL o 1000 ft AGL, o por debajo (lo que sea mayor)",
+              "F, G",
+              "5 km",
+              "Libre de nubes y con la superficie a la vista"
+            ]
+          ],
+          "src": "SERA.5001, tabla S5-1"
+        },
+        "bullets": [
+          "Si la altitud de transición es inferior a 10 000 ft AMSL, el límite superior de la banda se toma en **FL100**, no en 10 000 ft.",
+          "La reducción a «libre de nubes y con la superficie a la vista» solo existe en las clases **F y G** y solo en la banda baja. En clase D a 2000 ft sigues necesitando 1500 m y 1000 ft de las nubes.",
+          "Una nota de SERA permite a la autoridad reducir la visibilidad de F y G a 1500 m para vuelos a 140 kt IAS o menos; no la apliques en el examen salvo que la pregunta lo diga."
+        ],
+        "note": {
+          "kind": "tip",
+          "text": "Regla de memoria: 8 – 5 – 5 y «1500 – 1000». Solo hay una excepción en toda la tabla: F y G, abajo, libres de nubes."
+        }
+      },
+      {
+        "title": "Calculadora de mínimos VMC",
+        "text": [
+          "Prueba tú mismo distintos casos con la calculadora: cambia la clase, la altitud y la elevación del terreno y comprueba qué banda se aplica."
+        ],
+        "figure": "calc:vmc",
+        "caption": "Calculadora de mínimos VMC por clase, altitud y altura sobre el terreno"
+      },
+      {
+        "title": "Ejemplos resueltos de la tabla",
+        "examples": [
+          {
+            "q": "Vuelas en clase D a 2500 ft AMSL sobre un terreno a 500 ft AMSL. ¿Qué mínimos aplican?",
+            "a": "Banda baja: el mayor de 3000 ft AMSL y 1500 ft AMSL (500 + 1000) es 3000 ft AMSL, y estás por debajo. Clase D: no hay reducción. Mínimos: 5 km de visibilidad, 1500 m en horizontal y 1000 ft en vertical de las nubes."
+          },
+          {
+            "q": "Vuelas en clase G a 4500 ft AMSL sobre una meseta a 4000 ft AMSL (500 ft AGL). ¿Puedes ir libre de nubes?",
+            "a": "El límite de la banda baja es el mayor de 3000 ft AMSL y 5000 ft AMSL (4000 + 1000): 5000 ft AMSL. Estás por debajo, en clase G: basta con ir libre de nubes y con la superficie a la vista, con 5 km de visibilidad."
+          },
+          {
+            "q": "Vuelas en clase E a FL110. ¿Qué visibilidad necesitas?",
+            "a": "Estás en FL100 o por encima: 8 km de visibilidad, 1500 m en horizontal y 1000 ft en vertical de las nubes."
+          }
+        ]
+      },
+      {
+        "title": "Condiciones para operar en una CTR (SERA.5005(b))",
+        "text": [
+          "Una **CTR** (zona de control) es el espacio controlado que rodea a un aeródromo desde el suelo. Allí hay tráfico IFR llegando y saliendo con malas condiciones, y el VFR tiene que ser capaz de ver y apartarse con holgura. Por eso, además de la tabla VMC, SERA.5005(b) impone un suelo más exigente al despegar, aterrizar, entrar en la **ATZ** (zona de tránsito de aeródromo) o en el circuito de un aeródromo dentro de una CTR.",
+          "Sin autorización especial (VFR especial), no puedes hacerlo si el **techo** es inferior a **1500 ft** o la **visibilidad en tierra** es inferior a **5 km**. Fíjate en que aquí se habla de visibilidad en tierra, comunicada por el observador o por los sensores del aeródromo, y de techo, que es la capa de nubes que cubre más de la mitad del cielo (BKN u OVC). Un cielo FEW o SCT no define techo.",
+          "Si no se cumplen, queda la opción de pedir VFR especial. Si ATC no lo concede, la alternativa es esperar fuera de la CTR o desviarte."
+        ],
+        "examples": [
+          {
+            "q": "METAR LEXX 121000Z 27008KT 6000 BKN012 18/14 Q1017. Quieres despegar de LEXX (CTR clase D) en VFR. ¿Puedes hacerlo sin más?",
+            "a": "Visibilidad 6000 m: cumple los 5 km. Techo: BKN012 es una capa que cubre más de la mitad del cielo a 1200 ft, que es menos de 1500 ft. No cumple: necesitas autorización de VFR especial."
+          }
+        ]
+      },
+      {
+        "title": "VFR especial (SERA.5010 y AIP GEN 1.7)",
+        "text": [
+          "El **VFR especial** es una autorización de ATC para operar dentro de una CTR con condiciones peores que las VMC normales de la CTR. Tú la solicitas y ATC la concede, siempre que el tráfico IFR lo permita. No existe fuera de las CTR.",
+          "Para volar con VFR especial el piloto debe ir **libre de nubes y con la superficie a la vista**, con una **visibilidad de vuelo de al menos 1500 m** y a **140 kt IAS o menos**, para tener tiempo de ver el tráfico y las obstrucciones. Cualquier otra cosa exige IFR.",
+          "En España el AIP GEN 1.7 limita todavía más: el VFR especial se autoriza **solo de día**. Además, no se concede con visibilidad en tierra inferior a **1500 m** ni con techo inferior a **600 ft** (cifras del AIP España; comprueba siempre la edición vigente). En la norma SERA genérica la autoridad podría autorizarlo también de noche; en España no."
+        ],
+        "note": {
+          "kind": "es",
+          "text": "VFR especial en España: solo de día, solo en CTR, libre de nubes y con la superficie a la vista, 1500 m de visibilidad y 140 kt IAS como máximo."
+        },
+        "bullets": [
+          "Un VFR especial no te da separación respecto del IFR más allá de la que ATC aplique: sigues siendo responsable de ver y evitar."
+        ]
+      },
+      {
+        "title": "VFR nocturno (SERA.5005(c))",
+        "text": [
+          "De noche se ve mucho menos terreno, el horizonte desaparece y la desorientación espacial es un riesgo real. Por eso el VFR nocturno añade requisitos: tienes que haber cumplido la **experiencia y habilitación nocturna** (FCL.810, que verás en el bloque de licencias), llevar el equipo de iluminación y aplicar la tabla S5-1 con un techo de al menos 1500 ft y sin las reducciones de visibilidad, y mantener la superficie a la vista de forma continua cuando vuelas a 3000 ft AMSL o 1000 ft AGL (el mayor) o por debajo.",
+          "SERA.5005(c) exige además **comunicación bilateral con el ATS cuando exista un canal disponible**. No basta con escuchar: debes poder hablar con la dependencia que te corresponda.",
+          "En España se suma la diferencia del AIP GEN 1.7 a SERA.4001: es obligatorio **presentar plan de vuelo** para todo vuelo VFR nocturno que salga de las inmediaciones del aeródromo."
+        ],
+        "bullets": [
+          "Altitud mínima de noche en ruta: la que publique el Estado o, si no hay ninguna, **1000 ft** sobre el obstáculo más alto en un radio de **8 km** de la posición estimada; **2000 ft** en terreno elevado o montañoso.",
+          "En un circuito nocturno cumples tu propia altura de circuito, pero esas cifras mandan en ruta."
+        ]
+      },
+      {
+        "title": "Alturas mínimas VFR (SERA.5005(f))",
+        "text": [
+          "Salvo para despegar o aterrizar, o con permiso de la autoridad competente, un vuelo VFR no puede ir más bajo de lo que permitiría una emergencia sin daño a terceros. SERA.5005(f) lo concreta en dos casos."
+        ],
+        "table": {
+          "caption": "Alturas mínimas VFR de SERA.5005(f)",
+          "head": [
+            "Dónde",
+            "Altura mínima"
+          ],
+          "rows": [
+            [
+              "Sobre zonas congestionadas de ciudades, pueblos o asentamientos, o sobre reuniones de personas al aire libre",
+              "300 m (1000 ft) sobre el obstáculo más alto en un radio de 600 m de la aeronave"
+            ],
+            [
+              "En el resto de los casos",
+              "150 m (500 ft) sobre el suelo o el agua, o sobre el obstáculo más alto en un radio de 150 m de la aeronave"
+            ]
+          ],
+          "src": "SERA.5005(f)"
+        },
+        "examples": [
+          {
+            "q": "Sobrevuelas una población y el edificio más alto en 600 m de ti tiene una altura de 400 ft. ¿Cuál es la altura mínima sobre el terreno?",
+            "a": "Debes estar a 1000 ft sobre el obstáculo más alto: 400 ft + 1000 ft = 1400 ft sobre el terreno (medidos desde la base del edificio)."
+          }
+        ],
+        "note": {
+          "kind": "es",
+          "text": "Para volar más bajo que estas alturas en España hace falta autorización de AESA (RD 1180/2018) salvo despegue y aterrizaje."
+        }
+      },
+      {
+        "title": "FL195 y límite de velocidad",
+        "bullets": [
+          "No se vuela VFR por encima de **FL195** (SERA.5005), salvo autorización. El techo VFR para niveles de crucero semicirculares es, por tanto, FL195.",
+          "En clases **C, D, E, F y G**, por debajo de FL100, hay un límite de **250 kt IAS** (tabla S6-1 de SERA.6001). No aplica a las clases A y B, y puede variar con la autoridad.",
+          "La clase A no admite VFR. Las clases B, C y D exigen autorización de ATC y radio bilateral. La E y la F/G no exigen autorización (la E sí en RMZ y TMZ)."
+        ]
+      },
+      {
+        "title": "Niveles de crucero VFR (SERA.5005(g) y apéndice 3)",
+        "text": [
+          "Cuando navegas en crucero nivelado **por encima de 3000 ft sobre el terreno o el agua**, el nivel depende de tu **derrota magnética** (track), no de tu rumbo. La razón es evitar que dos aviones que vuelan en sentido contrario coincidan en la misma altitud. Si tu derrota va hacia el este (de 000° a 179°), vuelas en **miles impares más 500**; si va hacia el oeste (de 180° a 359°), en **miles pares más 500**.",
+          "Los niveles se expresan de dos formas según lo que mande la altitud de transición (en España, 6000 ft con carácter general). **Por debajo** o **a** la altitud de transición el nivel se da en **altitudes** con el QNH: 3500 y 5500 ft hacia el este y 4500 ft hacia el oeste. **Por encima** de la transición se vuela en **niveles de vuelo** con 1013,25 hPa: FL75, FL95… hacia el este; FL65, FL85… hacia el oeste (los niveles VFR llegan hasta FL195).",
+          "Por debajo de 3000 ft AGL no se aplica la regla semicircular: vuela a la altura que necesites para el circuito o la ruta."
+        ],
+        "figure": "svg:010-niveles-vfr",
+        "caption": "Niveles de crucero VFR según la derrota magnética",
+        "table": {
+          "caption": "Niveles de crucero VFR",
+          "head": [
+            "Derrota magnética",
+            "Miles",
+            "Altitudes (a la transición o por debajo)",
+            "Niveles de vuelo (sobre la transición)"
+          ],
+          "rows": [
+            [
+              "000° a 179°",
+              "Impares + 500",
+              "3500, 5500 ft",
+              "FL75, FL95, FL115… hasta FL195"
+            ],
+            [
+              "180° a 359°",
+              "Pares + 500",
+              "4500 ft",
+              "FL65, FL85, FL105… hasta FL185"
+            ]
+          ],
+          "src": "SERA.5005(g), apéndice 3"
+        },
+        "examples": [
+          {
+            "q": "Tu derrota magnética es 095° y vuelas por debajo de la altitud de transición sobre terreno llano. ¿A qué altitud puedes ir en crucero?",
+            "a": "Derrota entre 000° y 179°: miles impares más 500. A 3500 o 5500 ft de altitud, con el QNH de la zona."
+          }
+        ]
+      },
+      {
+        "title": "Si las condiciones empeoran",
+        "text": [
+          "Lo más grave del VFR es seguir hacia delante cuando ya no ves. Si no puedes mantener las VMC, SERA permite cambiar a IFR, pero solo si tienes la habilitación, el avión equipado y un plan de vuelo IFR aceptado. Un piloto PPL sin habilitación de instrumentos tiene que tomar la decisión **antes**: dar la vuelta, desviarte hacia mejor tiempo o aterrizar en un aeródromo adecuado, y pedir ayuda a ATC o al FIS en cuanto empiece a dudar. Es una decisión de planificación y de carácter, no de pericia."
+        ]
+      }
+    ],
+    "numbers": [
+      "VMC: 8 km desde FL100; 5 km por debajo; 1500 m en horizontal y 1000 ft en vertical de las nubes",
+      "F y G, a 3000 ft AMSL o 1000 ft AGL (el mayor) o por debajo: libre de nubes y con la superficie a la vista",
+      "CTR sin VFR especial: techo ≥ 1500 ft y visibilidad en tierra ≥ 5 km",
+      "VFR especial: 1500 m, libre de nubes, superficie a la vista y ≤ 140 kt IAS; en España, solo de día",
+      "Alturas mínimas: 1000 ft sobre el obstáculo más alto en 600 m (zonas pobladas); 500 ft en el resto (150 m)",
+      "Noche: 1000 ft sobre el obstáculo más alto en 8 km; 2000 ft en montaña",
+      "VFR hasta FL195; 250 kt IAS bajo FL100 en clases C a G",
+      "Niveles: derrota 000–179° impares + 500; 180–359° pares + 500; solo sobre 3000 ft AGL"
+    ],
+    "traps": [
+      "La reducción a «libre de nubes» solo existe en las clases F y G. En D o E con 2000 ft sigues necesitando 1500 m y 1000 ft de las nubes.",
+      "El límite inferior de la banda baja es el mayor de 3000 ft AMSL y 1000 ft AGL, no el menor.",
+      "El techo de 1500 ft para operar en una CTR vale solo sin VFR especial; el techo se mide con la capa BKN u OVC, no FEW ni SCT.",
+      "Los niveles semicirculares se eligen por derrota magnética, no por rumbo, y por debajo de la altitud de transición van en altitudes: 3500, 4500, 5500 ft, no FL35, FL45, FL55.",
+      "En España el VFR especial no se concede de noche, aunque SERA genérico lo permitiría."
+    ],
+    "spain": [
+      "VFR especial solo de día (AIP GEN 1.7), con 1500 m, libre de nubes y 140 kt IAS o menos.",
+      "Vuelo nocturno que sale de las inmediaciones del aeródromo: plan de vuelo obligatorio.",
+      "Altitud de transición habitual: 6000 ft (AIP ENR 1.7).",
+      "Volar por debajo de las alturas mínimas de SERA exige autorización de AESA (RD 1180/2018)."
+    ],
+    "sources": [
+      {
+        "title": "SERA (Reglamento (UE) 923/2012), Easy Access Rules, EASA",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "AIP España GEN 1.7: diferencias con la OACI y SERA (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/contenido_AIP/GEN/LE_GEN_1_7_en.html"
+      },
+      {
+        "title": "AIP España ENR 1.7: reglaje de altímetro (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/contenido_AIP/ENR/LE_ENR_1_7_en.pdf"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología",
+        "href": "#/licencias/fraseologia"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "010.07.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué son las condiciones meteorológicas de vuelo visual (VMC)?",
+      "options": [
+        "Cualquier condición con cielo despejado y sin viento",
+        "Condiciones en las que se puede volar sin radio ni plan de vuelo",
+        "Condiciones expresadas en visibilidad, distancia a las nubes y techo iguales o mejores que los mínimos especificados",
+        "Las condiciones en las que se vuela sin transpondedor"
+      ],
+      "correct": 2,
+      "why": "SERA define las VMC por tres magnitudes: visibilidad de vuelo, distancia a las nubes y techo. Si son peores que los mínimos, son IMC.",
+      "whyNot": [
+        "El viento no entra en la definición; cuentan visibilidad, nubes y techo.",
+        "Las VMC no eximen de radio ni de plan de vuelo cuando son exigibles.",
+        null,
+        "El transpondedor depende del espacio aéreo, no de las VMC."
+      ],
+      "ref": "SERA, art. 2"
+    },
+    {
+      "id": "010.07.002",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Qué visibilidad de vuelo mínima exige SERA para volar VFR a FL100 o por encima en clase E?",
+      "options": [
+        "8 km",
+        "5 km",
+        "1500 m",
+        "10 km"
+      ],
+      "correct": 0,
+      "why": "A FL100 o por encima la tabla S5-1 pide 8 km, y 1500 m en horizontal y 1000 ft en vertical de las nubes.",
+      "whyNot": [
+        null,
+        "5 km es el mínimo por debajo de FL100.",
+        "1500 m es la visibilidad del VFR especial y la distancia horizontal a las nubes.",
+        "SERA no exige 10 km en ninguna banda."
+      ],
+      "ref": "SERA.5001, tabla S5-1"
+    },
+    {
+      "id": "010.07.003",
+      "type": "regla",
+      "level": 2,
+      "q": "Vuelas en clase D a 6000 ft AMSL sobre un terreno a 1000 ft AMSL. ¿Qué mínimos de visibilidad y de distancia a las nubes aplican?",
+      "options": [
+        "8 km, 1500 m en horizontal y 1000 ft en vertical",
+        "5 km y libre de nubes",
+        "1500 m y libre de nubes",
+        "5 km, 1500 m en horizontal y 1000 ft en vertical"
+      ],
+      "correct": 3,
+      "why": "Estás por debajo de FL100 y en clase D: 5 km, 1500 m en horizontal y 1000 ft en vertical. No hay reducción en clase D.",
+      "whyNot": [
+        "8 km solo se exige a FL100 o por encima.",
+        "Libre de nubes solo existe en F y G, y a baja cota.",
+        "Es la rebaja del VFR especial, no de la tabla S5-1.",
+        null
+      ],
+      "ref": "SERA.5001"
+    },
+    {
+      "id": "010.07.004",
+      "type": "regla",
+      "level": 2,
+      "q": "En clase G, a 2000 ft AMSL sobre un terreno a 1200 ft AMSL, ¿qué distancia a las nubes exige la tabla S5-1?",
+      "options": [
+        "1500 m en horizontal y 1000 ft en vertical",
+        "Libre de nubes y con la superficie a la vista",
+        "600 m en horizontal y 500 ft en vertical",
+        "Solo visibilidad de 8 km, sin distancia a las nubes"
+      ],
+      "correct": 1,
+      "why": "El límite de la banda baja es el mayor de 3000 ft AMSL y 2200 ft AMSL (1200 + 1000): 3000 ft AMSL. Estás por debajo y en clase G: libre de nubes y con la superficie a la vista, con 5 km de visibilidad.",
+      "whyNot": [
+        "Esa distancia aplica por encima de la banda baja o en las clases A a E.",
+        null,
+        "No son valores de la tabla S5-1.",
+        "8 km corresponde a FL100 o por encima."
+      ],
+      "ref": "SERA.5001"
+    },
+    {
+      "id": "010.07.005",
+      "type": "calculo",
+      "level": 3,
+      "q": "Vuelas en clase G a 4500 ft AMSL sobre una meseta a 4000 ft AMSL. ¿Qué mínimos de nubes aplican?",
+      "options": [
+        "Libre de nubes y con la superficie a la vista, porque 1000 ft AGL son 5000 ft AMSL y estás por debajo",
+        "1500 m en horizontal y 1000 ft en vertical, porque estás por encima de 3000 ft AMSL",
+        "Libre de nubes porque estás a 500 ft AGL, por debajo de 1000 ft",
+        "8 km de visibilidad y 1500 m de las nubes"
+      ],
+      "correct": 0,
+      "why": "1000 ft AGL son 5000 ft AMSL (4000 + 1000), mayor que 3000 ft AMSL. Como vuelas a 4500 ft AMSL, estás en la banda baja; en clase G basta ir libre de nubes y con la superficie a la vista.",
+      "whyNot": [
+        null,
+        "El límite de la banda baja es el mayor de 3000 ft AMSL y 1000 ft AGL.",
+        "La referencia correcta es el mayor de los dos límites, no el menor.",
+        "8 km solo desde FL100."
+      ],
+      "ref": "SERA.5001"
+    },
+    {
+      "id": "010.07.006",
+      "type": "regla",
+      "level": 2,
+      "q": "¿En qué clases de espacio aéreo existe la reducción a «libre de nubes y con la superficie a la vista»?",
+      "options": [
+        "En las clases D, E, F y G",
+        "En todas las clases por debajo de FL100",
+        "Solo en las clases F y G, en la banda baja",
+        "Solo en la clase G por debajo de 1000 ft AGL"
+      ],
+      "correct": 2,
+      "why": "La tabla S5-1 solo reduce las distancias a las nubes en F y G, en la banda baja.",
+      "whyNot": [
+        "En D y E no hay reducción.",
+        "Solo F y G, y solo por debajo de 3000 ft AMSL o 1000 ft AGL.",
+        null,
+        "También se aplica en F y el límite es el mayor de 3000 ft AMSL o 1000 ft AGL."
+      ],
+      "ref": "SERA.5001"
+    },
+    {
+      "id": "010.07.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "En la tabla S5-1, ¿qué significa el asterisco de «A*»?",
+      "options": [
+        "Que en clase A se admite VFR con autorización especial",
+        "Que los mínimos se dan como guía, porque en clase A no se admite VFR",
+        "Que los mínimos de A son más estrictos que los de B",
+        "Que el VFR en clase A es obligatorio de noche"
+      ],
+      "correct": 1,
+      "why": "SERA indica que los mínimos de clase A se dan solo a título de guía y no implican aceptación de vuelos VFR en esa clase.",
+      "whyNot": [
+        "En clase A no se admite VFR.",
+        null,
+        "Los mínimos son los mismos; solo cambia que son orientativos.",
+        "No se admite VFR en clase A de día ni de noche."
+      ],
+      "ref": "SERA.5001, nota de la tabla S5-1"
+    },
+    {
+      "id": "010.07.008",
+      "type": "regla",
+      "level": 2,
+      "q": "Si la altitud de transición es inferior a 10 000 ft AMSL, ¿dónde empieza la fila de 8 km de la tabla S5-1?",
+      "options": [
+        "En 10 000 ft AMSL",
+        "En la altitud de transición",
+        "En FL120",
+        "En FL100"
+      ],
+      "correct": 3,
+      "why": "La tabla se aplica en niveles de vuelo por encima de la altitud de transición: si esta es menor de 10 000 ft, se usa FL100.",
+      "whyNot": [
+        "La nota de la tabla indica FL100 cuando la transición es inferior a 10 000 ft.",
+        "El cambio de fila no depende de la transición, sino de FL100.",
+        "FL120 no interviene en la tabla.",
+        null
+      ],
+      "ref": "SERA.5001, nota de la tabla S5-1"
+    },
+    {
+      "id": "010.07.009",
+      "type": "concepto",
+      "level": 1,
+      "q": "Para las VMC, ¿qué visibilidad es la que tiene que cumplir la tabla S5-1 durante el vuelo?",
+      "options": [
+        "La visibilidad en tierra comunicada por el METAR",
+        "La visibilidad vertical",
+        "La visibilidad de vuelo, hacia delante desde la cabina",
+        "El alcance visual en pista (RVR)"
+      ],
+      "correct": 2,
+      "why": "La tabla S5-1 habla de visibilidad de vuelo; para despegar o aterrizar en una CTR se usa la visibilidad en tierra.",
+      "whyNot": [
+        "La visibilidad en tierra se usa para despegar o aterrizar en una CTR.",
+        "La visibilidad vertical describe los cielos cubiertos, no entra en la tabla.",
+        null,
+        "El RVR es para operaciones con baja visibilidad en pista."
+      ],
+      "ref": "SERA, art. 2; SERA.5001"
+    },
+    {
+      "id": "010.07.010",
+      "type": "regla",
+      "level": 1,
+      "q": "Sin VFR especial, ¿qué techo y visibilidad en tierra mínimos necesitas para despegar en VFR dentro de una CTR?",
+      "options": [
+        "Techo de 1500 ft y visibilidad en tierra de 5 km",
+        "Techo de 1000 ft y visibilidad en tierra de 5 km",
+        "Techo de 1500 ft y visibilidad en tierra de 8 km",
+        "Techo de 600 ft y visibilidad en tierra de 1500 m"
+      ],
+      "correct": 0,
+      "why": "SERA.5005(b) prohíbe despegar, aterrizar o entrar en la ATZ o en el circuito de una CTR con techo inferior a 1500 ft o visibilidad en tierra inferior a 5 km, salvo VFR especial.",
+      "whyNot": [
+        null,
+        "El techo mínimo son 1500 ft.",
+        "8 km no se exige en una CTR a baja cota.",
+        "Son valores del VFR especial en España."
+      ],
+      "ref": "SERA.5005(b)"
+    },
+    {
+      "id": "010.07.011",
+      "type": "lectura",
+      "level": 2,
+      "q": "Quieres despegar en VFR de LEXX, dentro de una CTR de clase D, sin pedir VFR especial. Según este METAR, ¿puedes hacerlo?",
+      "options": [
+        "Sí, porque la visibilidad de 6000 m supera los 5 km",
+        "No, porque el viento de 270°/8 kt supera el límite VFR",
+        "Sí, porque BKN no se considera techo",
+        "No, porque el techo (BKN012, 1200 ft) es inferior a 1500 ft"
+      ],
+      "correct": 3,
+      "why": "BKN012 es una capa que cubre más de la mitad del cielo a 1200 ft, inferior al mínimo de 1500 ft. Sin VFR especial no puedes despegar.",
+      "whyNot": [
+        "Cumples la visibilidad, pero también tiene que cumplirse el techo.",
+        "El viento no limita el VFR en SERA.",
+        "BKN (5 a 7 octas) cubre más de la mitad del cielo y sí forma techo.",
+        null
+      ],
+      "ref": "SERA.5005(b)",
+      "data": "LEXX 121000Z 27008KT 6000 BKN012 18/14 Q1017"
+    },
+    {
+      "id": "010.07.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es el VFR especial?",
+      "options": [
+        "Un tipo de plan de vuelo para vuelos nocturnos",
+        "Una autorización de ATC para operar en una CTR con condiciones peores que las VMC normales de la CTR",
+        "Una autorización para volar por encima de FL195",
+        "Una reducción de mínimos que el piloto puede aplicar por su cuenta"
+      ],
+      "correct": 1,
+      "why": "SERA.5010: la dependencia ATC puede autorizar a un VFR especial en una zona de control, siempre que el tráfico lo permita.",
+      "whyNot": [
+        "El plan de vuelo no es una autorización de VFR especial.",
+        null,
+        "El límite VFR de FL195 no lo cambia el VFR especial.",
+        "Necesita autorización de ATC."
+      ],
+      "ref": "SERA.5010"
+    },
+    {
+      "id": "010.07.013",
+      "type": "regla",
+      "level": 1,
+      "q": "En España, el VFR especial se autoriza:",
+      "options": [
+        "Solo de día, con 1500 m de visibilidad de vuelo y 140 kt IAS o menos",
+        "De día y de noche con 1500 m",
+        "Solo de noche, con 800 m",
+        "Con 800 m en cualquier espacio aéreo"
+      ],
+      "correct": 0,
+      "why": "AIP GEN 1.7 (SERA.5010): solo de día, libre de nubes, con la superficie a la vista, 1500 m y 140 kt IAS o menos.",
+      "whyNot": [
+        null,
+        "De noche no se autoriza en España.",
+        "No se autoriza de noche ni con 800 m.",
+        "Solo en CTR y con 1500 m; 800 m se exige a helicópteros."
+      ],
+      "ref": "SERA.5010; AIP GEN 1.7",
+      "es": true,
+      "url": "https://aip.enaire.es/AIP/contenido_AIP/GEN/LE_GEN_1_7_en.html"
+    },
+    {
+      "id": "010.07.014",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué velocidad máxima debes mantener con un VFR especial?",
+      "options": [
+        "120 kt IAS",
+        "250 kt IAS",
+        "140 kt IAS",
+        "100 kt TAS"
+      ],
+      "correct": 2,
+      "why": "SERA.5010 limita el VFR especial a 140 kt IAS para dar tiempo a ver el tráfico y los obstáculos.",
+      "whyNot": [
+        "No es la cifra de SERA.",
+        "Es el límite general bajo FL100 en las clases C a G.",
+        null,
+        "Se limita la IAS, no la TAS, y a 140 kt."
+      ],
+      "ref": "SERA.5010"
+    },
+    {
+      "id": "010.07.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Dónde puede concederse un VFR especial?",
+      "options": [
+        "En cualquier espacio aéreo de clase G",
+        "Dentro de una zona de control (CTR)",
+        "En una TMA",
+        "Solo en la ATZ de un aeródromo no controlado"
+      ],
+      "correct": 1,
+      "why": "SERA.5010 habla de vuelos VFR especiales en una CTR, sujetos a autorización ATC.",
+      "whyNot": [
+        "Se concede dentro de una CTR.",
+        null,
+        "No es el espacio al que se refiere SERA.5010.",
+        "En un aeródromo no controlado no hay quien lo autorice."
+      ],
+      "ref": "SERA.5010"
+    },
+    {
+      "id": "010.07.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "Mientras vuelas con VFR especial, ¿qué debes cumplir?",
+      "options": [
+        "Mantener 1500 m en horizontal y 1000 ft en vertical de las nubes",
+        "Volar por encima de 3000 ft AMSL",
+        "Volar con plan de vuelo IFR",
+        "Ir libre de nubes y con la superficie a la vista"
+      ],
+      "correct": 3,
+      "why": "SERA.5010 exige permanecer libre de nubes y con la superficie a la vista, además de visibilidad de vuelo de 1500 m y 140 kt IAS o menos.",
+      "whyNot": [
+        "Es el mínimo VMC normal; el especial es más reducido.",
+        "El VFR especial es una operación a baja cota.",
+        "Es un vuelo VFR, no IFR.",
+        null
+      ],
+      "ref": "SERA.5010"
+    },
+    {
+      "id": "010.07.017",
+      "type": "regla",
+      "level": 3,
+      "q": "Según el AIP España, ¿con qué techo o visibilidad en tierra no se concede el VFR especial?",
+      "options": [
+        "Techo inferior a 1500 ft o visibilidad en tierra inferior a 5 km",
+        "Techo inferior a 300 ft o visibilidad en tierra inferior a 800 m",
+        "Techo inferior a 600 ft o visibilidad en tierra inferior a 1500 m",
+        "Techo inferior a 1000 ft o visibilidad en tierra inferior a 3 km"
+      ],
+      "correct": 2,
+      "why": "El AIP GEN 1.7 no autoriza el VFR especial a aviones con techo inferior a 600 ft ni con visibilidad en tierra menor de 1500 m.",
+      "whyNot": [
+        "Son los mínimos para operar en CTR sin VFR especial.",
+        "No son cifras del AIP España.",
+        null,
+        "No son cifras del AIP España."
+      ],
+      "ref": "AIP GEN 1.7",
+      "es": true
+    },
+    {
+      "id": "010.07.018",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué exige SERA.5005(c) a un vuelo VFR nocturno respecto a las comunicaciones?",
+      "options": [
+        "Comunicación bilateral con el ATS cuando haya un canal disponible",
+        "Solo escucha en la frecuencia, sin transmitir",
+        "Ninguna comunicación si hay plan de vuelo",
+        "Transmitir a ciegas en 121,5 MHz cada 10 minutos"
+      ],
+      "correct": 0,
+      "why": "SERA.5005(c): los vuelos VFR nocturnos mantienen comunicación bilateral con la dependencia ATS correspondiente cuando haya un canal disponible.",
+      "whyNot": [
+        null,
+        "SERA pide comunicación bilateral, no solo escucha.",
+        "El plan de vuelo no sustituye a la radio.",
+        "Esa es una práctica de fallo de comunicaciones."
+      ],
+      "ref": "SERA.5005(c)"
+    },
+    {
+      "id": "010.07.019",
+      "type": "regla",
+      "level": 1,
+      "q": "Vas a hacer un VFR nocturno que sale de las inmediaciones del aeródromo. ¿Qué es obligatorio en España?",
+      "options": [
+        "Volar a FL055 o superior",
+        "Llevar transpondedor en modo S",
+        "Llamar al FIS cada 30 minutos",
+        "Presentar plan de vuelo"
+      ],
+      "correct": 3,
+      "why": "El AIP GEN 1.7 añade a SERA.4001 la obligación de plan de vuelo para todo vuelo VFR nocturno que salga de las inmediaciones del aeródromo.",
+      "whyNot": [
+        "No hay un nivel mínimo obligatorio como ese.",
+        "El modo S no es la exigencia de esta diferencia.",
+        "No existe esa obligación.",
+        null
+      ],
+      "ref": "SERA.5005(c); AIP GEN 1.7",
+      "es": true
+    },
+    {
+      "id": "010.07.020",
+      "type": "calculo",
+      "level": 2,
+      "q": "De noche, en terreno llano, el obstáculo más alto en 8 km de tu posición estimada alcanza 1350 ft AMSL. ¿Cuál es la altitud mínima en ruta?",
+      "options": [
+        "1850 ft AMSL",
+        "2350 ft AMSL",
+        "3350 ft AMSL",
+        "1000 ft AMSL"
+      ],
+      "correct": 1,
+      "why": "De noche el margen es 1000 ft sobre el obstáculo más alto en 8 km: 1350 + 1000 = 2350 ft AMSL.",
+      "whyNot": [
+        "Serían 500 ft de margen, que no corresponden a la noche.",
+        null,
+        "Serían 2000 ft de margen, que es el valor de terreno montañoso.",
+        "Es el margen, no la altitud."
+      ],
+      "ref": "SERA.5005; AIP GEN 1.7"
+    },
+    {
+      "id": "010.07.021",
+      "type": "regla",
+      "level": 2,
+      "q": "De noche sobre terreno montañoso, ¿qué margen mínimo sobre el obstáculo más alto debes dejar en un radio de 8 km?",
+      "options": [
+        "2000 ft",
+        "1000 ft",
+        "500 ft",
+        "3000 ft"
+      ],
+      "correct": 0,
+      "why": "En terreno montañoso el margen nocturno se duplica a 2000 ft.",
+      "whyNot": [
+        null,
+        "Es el margen en terreno llano.",
+        "Es el margen diurno fuera de zonas pobladas.",
+        "No es la cifra de SERA."
+      ],
+      "ref": "SERA.5005; AIP GEN 1.7"
+    },
+    {
+      "id": "010.07.022",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Qué altura mínima sobre el obstáculo más alto en un radio de 600 m exige SERA.5005(f) sobre zonas congestionadas?",
+      "options": [
+        "150 m (500 ft)",
+        "600 m (2000 ft)",
+        "300 m (1000 ft)",
+        "450 m (1500 ft)"
+      ],
+      "correct": 2,
+      "why": "SERA.5005(f): 300 m (1000 ft) sobre el obstáculo más alto en un radio de 600 m de la aeronave sobre ciudades, pueblos o reuniones de personas.",
+      "whyNot": [
+        "Es el mínimo fuera de zonas pobladas.",
+        "El radio es de 600 m, no la altura.",
+        null,
+        "No es una cifra de SERA.5005(f)."
+      ],
+      "ref": "SERA.5005(f)"
+    },
+    {
+      "id": "010.07.023",
+      "type": "calculo",
+      "level": 2,
+      "q": "Sobrevuelas un pueblo. El edificio más alto en 600 m de tu posición mide 400 ft sobre el terreno. ¿Qué altura mínima sobre el terreno debes mantener?",
+      "options": [
+        "1000 ft",
+        "1400 ft",
+        "900 ft",
+        "500 ft"
+      ],
+      "correct": 1,
+      "why": "1000 ft de margen sobre el obstáculo más alto: 400 + 1000 = 1400 ft sobre el terreno.",
+      "whyNot": [
+        "Es el margen sobre el obstáculo; debes sumar su altura.",
+        null,
+        "El margen se suma a la altura del obstáculo, no se resta.",
+        "Es el mínimo fuera de zonas pobladas."
+      ],
+      "ref": "SERA.5005(f)"
+    },
+    {
+      "id": "010.07.024",
+      "type": "regla",
+      "level": 1,
+      "q": "Fuera de zonas pobladas, ¿qué altura mínima exige SERA.5005(f)?",
+      "options": [
+        "300 m (1000 ft) sobre el terreno",
+        "150 m (500 ft) sobre el nivel del mar",
+        "600 m (2000 ft) sobre el terreno",
+        "150 m (500 ft) sobre el suelo o el agua, o sobre el obstáculo más alto en 150 m"
+      ],
+      "correct": 3,
+      "why": "En el resto de casos la altura mínima es 150 m (500 ft) sobre el suelo o el agua, o sobre el obstáculo más alto en un radio de 150 m.",
+      "whyNot": [
+        "Es el mínimo sobre zonas pobladas.",
+        "Se mide sobre el suelo o el agua, no sobre el mar.",
+        "No es una cifra de SERA.5005(f).",
+        null
+      ],
+      "ref": "SERA.5005(f)"
+    },
+    {
+      "id": "010.07.025",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuándo no se aplican las alturas mínimas de SERA.5005(f) a un vuelo VFR?",
+      "options": [
+        "Cuando vuelas con plan de vuelo",
+        "Cuando llevas piloto instructor",
+        "Para despegar o aterrizar, o con permiso de la autoridad competente",
+        "Cuando el espacio aéreo es de clase G"
+      ],
+      "correct": 2,
+      "why": "La norma exceptúa el despegue y el aterrizaje, y los casos en que la autoridad competente lo permita.",
+      "whyNot": [
+        "El plan de vuelo no exime de las alturas mínimas.",
+        "La instrucción no cambia las alturas mínimas.",
+        null,
+        "Las alturas mínimas rigen en cualquier clase."
+      ],
+      "ref": "SERA.5005(f); RD 1180/2018"
+    },
+    {
+      "id": "010.07.026",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Cuál es el nivel de vuelo máximo para el vuelo VFR?",
+      "options": [
+        "FL195",
+        "FL150",
+        "FL285",
+        "FL245"
+      ],
+      "correct": 0,
+      "why": "SERA.5005 prohíbe el vuelo VFR por encima de FL195 salvo autorización.",
+      "whyNot": [
+        null,
+        "No es el límite.",
+        "Es el límite superior del espacio no RVSM.",
+        "No es un límite VFR."
+      ],
+      "ref": "SERA.5005"
+    },
+    {
+      "id": "010.07.027",
+      "type": "regla",
+      "level": 2,
+      "q": "Vuelas VFR en clase D por debajo de FL100. ¿Cuál es el límite de velocidad?",
+      "options": [
+        "140 kt IAS",
+        "200 kt IAS",
+        "250 kt TAS",
+        "250 kt IAS"
+      ],
+      "correct": 3,
+      "why": "La tabla S6-1 de SERA.6001 limita a 250 kt IAS por debajo de FL100 en las clases C, D, E, F y G.",
+      "whyNot": [
+        "Es la velocidad máxima del VFR especial.",
+        "No es el límite de SERA.",
+        "El límite es de IAS.",
+        null
+      ],
+      "ref": "SERA.6001, tabla S6-1"
+    },
+    {
+      "id": "010.07.028",
+      "type": "lectura",
+      "level": 3,
+      "q": "Derrota magnética de 095°, sobre terreno llano por debajo de la altitud de transición y a más de 3000 ft AGL. ¿Qué nivel VFR corresponde?",
+      "options": [
+        "FL55",
+        "5500 ft de altitud, con QNH",
+        "6000 ft",
+        "4500 ft"
+      ],
+      "correct": 1,
+      "why": "095° va hacia el este: miles impares más 500. Por debajo de la altitud de transición se expresa en altitudes: 3500 o 5500 ft.",
+      "whyNot": [
+        "Bajo la altitud de transición el nivel se da en altitudes, no en niveles de vuelo.",
+        null,
+        "6000 ft son miles pares: no corresponde al este.",
+        "4500 ft son miles pares más 500: sentido oeste."
+      ],
+      "ref": "SERA.5005(g), apéndice 3"
+    },
+    {
+      "id": "010.07.029",
+      "type": "concepto",
+      "level": 1,
+      "q": "Los niveles semicirculares VFR se eligen según:",
+      "options": [
+        "La derrota magnética",
+        "El rumbo magnético",
+        "La derrota verdadera",
+        "El rumbo de la brújula"
+      ],
+      "correct": 0,
+      "why": "La tabla del apéndice 3 de SERA se aplica según la derrota magnética, que es la trayectoria real sobre el suelo.",
+      "whyNot": [
+        null,
+        "Si hay viento, el rumbo no coincide con la derrota.",
+        "Se utiliza la derrota magnética.",
+        "El nivel se elige por la derrota, no por el rumbo."
+      ],
+      "ref": "SERA.5005(g), apéndice 3"
+    },
+    {
+      "id": "010.07.030",
+      "type": "regla",
+      "level": 2,
+      "q": "Con derrota magnética de 270° y por encima de la altitud de transición, ¿cuál de estos es un nivel VFR válido?",
+      "options": [
+        "FL80",
+        "FL75",
+        "FL85",
+        "FL90"
+      ],
+      "correct": 2,
+      "why": "De 180° a 359°: miles pares más 500: FL65, FL85, FL105…",
+      "whyNot": [
+        "FL80 es un nivel par sin +500, no es nivel VFR.",
+        "FL75 es el nivel del este (impares + 500).",
+        null,
+        "FL90 no corresponde a ningún nivel VFR."
+      ],
+      "ref": "SERA.5005(g), apéndice 3"
+    },
+    {
+      "id": "010.07.031",
+      "type": "regla",
+      "level": 2,
+      "q": "Con derrota magnética de 359°, por debajo de la altitud de transición y a más de 3000 ft AGL, ¿qué altitud corresponde?",
+      "options": [
+        "3500 ft",
+        "4500 ft",
+        "5500 ft",
+        "4000 ft"
+      ],
+      "correct": 1,
+      "why": "De 180° a 359° corresponden miles pares más 500: 4500 ft por debajo de la altitud de transición.",
+      "whyNot": [
+        "3500 ft son miles impares: este.",
+        null,
+        "5500 ft son miles impares: este.",
+        "No es nivel VFR: falta el +500."
+      ],
+      "ref": "SERA.5005(g), apéndice 3"
+    },
+    {
+      "id": "010.07.032",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una regla semicircular de crucero se aplica en vuelo nivelado:",
+      "options": [
+        "A cualquier altura sobre el terreno",
+        "Solo en espacios controlados",
+        "Solo cuando se vuela con plan de vuelo",
+        "A más de 3000 ft sobre el terreno o el agua"
+      ],
+      "correct": 3,
+      "why": "La regla semicircular se aplica en crucero por encima de 900 m (3000 ft) sobre el terreno o el agua; por debajo se vuela a la altura que convenga.",
+      "whyNot": [
+        "No rige por debajo de 3000 ft AGL.",
+        "Se aplica en cualquier clase.",
+        "Se aplica con o sin plan.",
+        null
+      ],
+      "ref": "SERA.5005(g)"
+    },
+    {
+      "id": "010.07.033",
+      "type": "concepto",
+      "level": 2,
+      "q": "Por debajo de la altitud de transición, ¿cómo se expresan los niveles de crucero VFR?",
+      "options": [
+        "En niveles de vuelo, con 1013,25 hPa",
+        "En alturas, con el QFE",
+        "En altitudes, con el QNH",
+        "En altitud de presión"
+      ],
+      "correct": 2,
+      "why": "SERA.3110: a la altitud de transición o por debajo, se expresan en altitudes; por encima, en niveles de vuelo.",
+      "whyNot": [
+        "Los niveles de vuelo se utilizan sobre la transición.",
+        "Los niveles de crucero no usan alturas.",
+        null,
+        "La altitud de presión se refiere a 1013,25."
+      ],
+      "ref": "SERA.3110; SERA.5005(g)"
+    },
+    {
+      "id": "010.07.034",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una clase de espacio aéreo en la que el VFR exige autorización de ATC y radio bilateral es:",
+      "options": [
+        "Clase C",
+        "Clase E",
+        "Clase G",
+        "Clase A"
+      ],
+      "correct": 0,
+      "why": "En las clases B, C y D el VFR necesita autorización y comunicación bilateral; en E, F y G no.",
+      "whyNot": [
+        null,
+        "En E el VFR no necesita autorización.",
+        "En G no hay autorización ni radio obligatoria.",
+        "En A no se admite VFR."
+      ],
+      "ref": "SERA.6001"
+    },
+    {
+      "id": "010.07.035",
+      "type": "concepto",
+      "level": 2,
+      "q": "Vuelas VFR en una zona con visibilidad deteriorándose y no estás habilitado para IFR. ¿Cuál es la decisión correcta?",
+      "options": [
+        "Continuar a menor altura para mantener la superficie a la vista",
+        "Subir a FL195 buscando mejores condiciones",
+        "Cancelar el plan de vuelo y continuar",
+        "Dar la vuelta o aterrizar cuanto antes en un aeródromo adecuado, avisando a ATC o al FIS"
+      ],
+      "correct": 3,
+      "why": "Sin habilitación IFR debes evitar entrar en IMC: dar la vuelta, desviarte o aterrizar antes de que las condiciones se degraden y pedir ayuda al ATS.",
+      "whyNot": [
+        "Bajar de las alturas mínimas empeora el peligro.",
+        "FL195 sin instrumentos ni habilitación es una trampa.",
+        "Cancelar el plan no cambia el riesgo.",
+        null
+      ],
+      "ref": "SERA.5005; AMC de preparación del vuelo"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.010.07.01",
+      "front": "Visibilidad VMC a FL100 o por encima",
+      "back": "8 km, con 1500 m en horizontal y 1000 ft en vertical de las nubes"
+    },
+    {
+      "id": "c.010.07.02",
+      "front": "Visibilidad VMC por debajo de FL100",
+      "back": "5 km, con 1500 m en horizontal y 1000 ft en vertical de las nubes"
+    },
+    {
+      "id": "c.010.07.03",
+      "front": "Dónde existe «libre de nubes y con la superficie a la vista»",
+      "back": "Solo en las clases F y G, a 3000 ft AMSL o 1000 ft AGL (el mayor) o por debajo"
+    },
+    {
+      "id": "c.010.07.04",
+      "front": "Techo y visibilidad en tierra para operar en una CTR sin VFR especial",
+      "back": "Techo de 1500 ft y visibilidad en tierra de 5 km (SERA.5005(b))"
+    },
+    {
+      "id": "c.010.07.05",
+      "front": "VFR especial en España",
+      "back": "Solo de día, en CTR, libre de nubes, superficie a la vista, 1500 m y 140 kt IAS o menos"
+    },
+    {
+      "id": "c.010.07.06",
+      "front": "VFR nocturno: comunicaciones y plan de vuelo",
+      "back": "Comunicación bilateral con ATS si hay canal (SERA.5005(c)); en España, plan de vuelo si sale de las inmediaciones"
+    },
+    {
+      "id": "c.010.07.07",
+      "front": "Altura mínima VFR sobre zonas pobladas",
+      "back": "300 m (1000 ft) sobre el obstáculo más alto en un radio de 600 m"
+    },
+    {
+      "id": "c.010.07.08",
+      "front": "Altura mínima VFR fuera de zonas pobladas",
+      "back": "150 m (500 ft) sobre el suelo o el agua, o sobre el obstáculo más alto en 150 m"
+    },
+    {
+      "id": "c.010.07.09",
+      "front": "Niveles de crucero VFR hacia el este (000–179°)",
+      "back": "Miles impares + 500: 3500, 5500 ft y FL75, FL95…"
+    },
+    {
+      "id": "c.010.07.10",
+      "front": "Niveles de crucero VFR hacia el oeste (180–359°)",
+      "back": "Miles pares + 500: 4500 ft y FL65, FL85, FL105…"
+    },
+    {
+      "id": "c.010.07.11",
+      "front": "Límite de nivel VFR y de velocidad bajo FL100",
+      "back": "FL195; 250 kt IAS en las clases C a G"
+    }
+  ]
+}

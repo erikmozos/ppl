@@ -1,0 +1,528 @@
+{
+  "lesson": {
+    "id": "020.02",
+    "title": "Tren, frenos y neumáticos",
+    "summary": "Tipos de tren de aterrizaje, amortiguadores, dirección de la rueda de morro y amortiguador de shimmy, frenos de disco hidráulicos y freno de aparcamiento, neumáticos, presión, desgaste y aquaplaning.",
+    "objectives": [
+      "Distinguir el tren triciclo, el convencional y el tándem y sus efectos en tierra",
+      "Describir el amortiguador oleoneumático y el de ballesta de acero y cómo se comprueba",
+      "Explicar la dirección de la rueda de morro y para qué sirve el amortiguador de shimmy",
+      "Describir el sistema de frenos de disco hidráulicos y el freno de aparcamiento",
+      "Interpretar el estado y la presión de los neumáticos y reconocer el aquaplaning"
+    ],
+    "sections": [
+      {
+        "title": "Tipos de tren",
+        "text": [
+          "El **tren de aterrizaje** soporta el avión en tierra, absorbe la energía del aterrizaje y permite rodar y frenar. Por su disposición hay tres tipos."
+        ],
+        "table": {
+          "caption": "Disposición del tren de aterrizaje",
+          "head": [
+            "Tipo",
+            "Cómo es",
+            "Características"
+          ],
+          "rows": [
+            [
+              "Triciclo",
+              "Dos ruedas principales detrás del centro de gravedad y una rueda de morro",
+              "Estable en tierra, buena visibilidad y fácil de manejar; es el del PA-28-161 y el del C172S"
+            ],
+            [
+              "Convencional (patín de cola)",
+              "Dos ruedas delante del CG y una rueda o patín de cola",
+              "Más ligero y adecuado para pistas sin pavimentar, pero inestable en tierra: riesgo de «caballito» y de trompo"
+            ],
+            [
+              "Tándem",
+              "Ruedas en línea bajo el fuselaje, con apoyos en las puntas alares",
+              "Poco común; típico de planeadores y algunos motoveleros"
+            ]
+          ],
+          "src": "PHAK cap. 6"
+        }
+      },
+      {
+        "title": "Estabilidad en tierra y tren fijo o retráctil",
+        "text": [
+          "En el tren **triciclo** el centro de gravedad queda **por delante del tren principal**: si el avión se desvía, la fuerza centrífuga lo devuelve a la trayectoria. En el convencional el CG queda **por detrás** y un desvío tiende a agrandarse (trompo, *ground loop*).",
+          "El tren puede ser **fijo** (más simple y barato, con más resistencia) o **retráctil** (menor resistencia, más peso, complejidad y riesgo de aterrizar con el tren arriba). El PA-28-161 Warrior III y el C172S llevan tren **triciclo fijo**."
+        ]
+      },
+      {
+        "title": "Amortiguadores",
+        "text": [
+          "Al tocar tierra, la energía vertical del avión se disipa en el tren. Hay dos soluciones comunes."
+        ],
+        "bullets": [
+          "**Oleoneumático**: un cilindro con **aceite** y aire (o nitrógeno) a presión. El aire actúa como muelle y el aceite, al pasar por un orificio, amortigua el rebote. Es el amortiguador de las tres patas del PA-28-161 y de la rueda de morro del C172S. Se revisa que tenga la **extensión** correcta (el vástago visible) y que no pierda aceite: un amortiguador sin aire o sin aceite queda aplastado.",
+          "**Ballesta o tubo de acero flexible**: las patas principales del C172S son de **acero de muelle**, que se flexiona y absorbe energía sin aceite. Es sencillo, robusto y no necesita mantenimiento de fluido.",
+          "El conjunto lleva una **horquilla de torsión** (torque link) que impide que la rueda gire respecto al tubo."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Dirección y amortiguador de shimmy",
+        "text": [
+          "En el tren triciclo, la **rueda de morro** guía el avión en tierra. En el PA-28-161 y el C172S es **dirigible con los pedales**: unas varillas o cables unen los pedales del timón de dirección a la rueda, de modo que pisar un pedal mueve la rueda y el timón a la vez. Para virajes cerrados se usa además el **freno diferencial**. En algunos aviones la rueda es **libre** (se orienta sola) y se maneja con frenos y empuje. Para mover el avión sin motor se usa la **barra de remolque** en la rueda de morro, sin forzar el giro más allá de sus topes.",
+          "A cierta velocidad, la rueda de morro puede empezar a oscilar de lado a lado de forma violenta: el **shimmy**. Un **amortiguador de shimmy** (hidráulico o de fricción) en la pata de morro frena esas oscilaciones. Un neumático desgastado de forma desigual, falta de presión o holguras aumentan el riesgo."
+        ]
+      },
+      {
+        "title": "Frenos",
+        "text": [
+          "Los frenos de un avión ligero son de **disco hidráulicos** montados en las ruedas principales. Cada pedal (la punta, *toe brake*) acciona un **cilindro maestro**, que envía líquido a presión por unos tubos hasta una **pinza** (caliper) que aprieta unas **pastillas** contra el disco. Los frenos izquierdo y derecho son **independientes**: sirven para dirigir el avión rodando, con el freno diferencial. El **líquido hidráulico** mineral (MIL-PRF-5606, de color rojo) transmite la presión (ver 020.03).",
+          "El **freno de aparcamiento** retiene la presión en el circuito: en el PA-28-161 se tira del mando mientras se pisan a fondo los pedales; en el C172S se pisan los pedales y se tira del mando de freno de estacionamiento. Se suelta pisando los pedales. No se recomienda dejarlo puesto con calor, porque el líquido se dilata y aumenta la presión, ni con frío extremo, porque el hielo puede pegar las pastillas."
+        ],
+        "bullets": [
+          "**Pedal esponjoso**: hay aire en el circuito; hay que purgarlo.",
+          "**Pedal que se hunde lentamente**: fuga de líquido o fallo del cilindro maestro.",
+          "**Frenar con fuerza y rodar largo** calienta los frenos: pueden desvanecerse (*fade*).",
+          "Los frenos de un avión ligero son solo de las **ruedas principales**; el de morro no frena."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Neumáticos",
+        "text": [
+          "Un neumático de aviación tiene una banda de rodadura con **estrías**, una carcasa de tejido y caucho y, en muchos casos, una **cámara**. La **presión** que fija el POH es crítica: demasiado baja provoca desgaste en los bordes, calentamiento y riesgo de que se salga de la llanta; demasiado alta, desgaste en el centro, menos adherencia y menos amortiguación. Se comprueba con el neumático frío.",
+          "Las **marcas de deslizamiento (slip marks)**, líneas pintadas a la vez en el neumático y en la llanta, deben estar alineadas: si se separan, el neumático ha girado sobre la llanta y puede arrancar la válvula. En el prevuelo se miran también el desgaste (no deben verse las lonas), los cortes, las ampollas y la presión. Un neumático plano en un solo punto indica un bloqueo de freno en un aterrizaje."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Aquaplaning",
+        "text": [
+          "En pista mojada, con una capa de agua, el neumático puede **perder el contacto con el suelo** y flotar sobre ella: es el **aquaplaning** (hidroplaneo dinámico). Los frenos dejan de funcionar y no hay control direccional. Ocurre por encima de una **velocidad crítica** que depende de la presión del neumático, y una aproximación habitual es:"
+        ],
+        "formulas": [
+          {
+            "f": "V (kt) ≈ 9 × √(presión del neumático en psi)",
+            "note": "Aproximación didáctica para aquaplaning dinámico (NASA)."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Un neumático con 36 psi. ¿A qué velocidad aproximada puede aparecer el aquaplaning?",
+            "a": "√36 = 6; 9 × 6 = 54 kt."
+          }
+        ],
+        "bullets": [
+          "Con riesgo de aquaplaning, usa la parte de pista menos mojada, toca con la velocidad más baja posible y evita frenar fuerte hasta que baje la velocidad.",
+          "Con viento cruzado y pista mojada, el riesgo de perder el control direccional aumenta."
+        ],
+        "verify": true
+      }
+    ],
+    "numbers": [
+      "PA-28-161 y C172S: tren triciclo fijo",
+      "Triciclo: CG por delante de las ruedas principales; convencional: por detrás",
+      "Amortiguador oleoneumático (aceite y aire): PA-28; ballesta de acero: patas principales del C172S",
+      "Shimmy: oscilación de la rueda de morro; lo reduce el amortiguador de shimmy",
+      "Velocidad de aquaplaning ≈ 9 × √(psi) en kt"
+    ],
+    "traps": [
+      "Creer que el tren convencional es más estable en tierra: es el triciclo.",
+      "Pensar que el freno de aparcamiento funciona solo con el mando: hay que pisar los pedales mientras se tira.",
+      "Confundir shimmy (oscilación de la rueda de morro) con aquaplaning.",
+      "Medir la presión del neumático con el neumático caliente.",
+      "Pensar que los frenos están en las tres ruedas: solo en las principales."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 6",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Manual de vuelo del PA-28-161 y del C172S",
+        "url": "https://www.piper.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Prevuelo del PA-28: tren y neumáticos",
+        "href": "#/ac/pa28/flow/preflight"
+      },
+      {
+        "label": "Prevuelo del C172",
+        "href": "#/ac/c172/flow/preflight"
+      },
+      {
+        "label": "Arranque del PA-28 (freno de aparcamiento)",
+        "href": "#/ac/pa28/flow/start"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.02.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "El tren de aterrizaje del PA-28-161 y del C172S es:",
+      "options": [
+        "Convencional retráctil",
+        "Tándem",
+        "Triciclo fijo",
+        "Triciclo retráctil"
+      ],
+      "correct": 2,
+      "why": "Ambos aviones llevan tren triciclo fijo.",
+      "whyNot": [
+        "No tienen rueda de cola.",
+        "El tándem es de planeadores.",
+        null,
+        "Son de tren fijo."
+      ],
+      "ref": "POH PA-28-161 y C172S"
+    },
+    {
+      "id": "020.02.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un tren triciclo, el centro de gravedad está:",
+      "options": [
+        "Por detrás de las ruedas principales",
+        "Sobre el eje de las alas",
+        "Sobre la rueda de morro",
+        "Por delante de las ruedas principales"
+      ],
+      "correct": 3,
+      "why": "Con el CG delante del tren principal, un desvío tiende a corregirse solo.",
+      "whyNot": [
+        "Eso ocurre en el tren convencional.",
+        "No tiene relación con el eje de las alas.",
+        "El CG no se sitúa sobre la rueda de morro.",
+        null
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.02.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "El riesgo de «trompo» (ground loop) es característico del tren:",
+      "options": [
+        "Triciclo",
+        "Convencional",
+        "Retráctil",
+        "De morro dirigible"
+      ],
+      "correct": 1,
+      "why": "En el convencional el CG queda detrás de las ruedas principales y un desvío se agranda.",
+      "whyNot": [
+        "El triciclo es estable en tierra.",
+        null,
+        "No depende de que sea retráctil.",
+        "La dirección de morro ayuda, no causa el trompo."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.02.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un amortiguador oleoneumático disipa la energía mediante:",
+      "options": [
+        "Un muelle de acero únicamente",
+        "Gomas elásticas",
+        "Aire a presión como muelle y aceite que pasa por un orificio",
+        "Un cable tenso"
+      ],
+      "correct": 2,
+      "why": "El aire hace de muelle y el aceite, al pasar por el orificio, amortigua el rebote.",
+      "whyNot": [
+        "Eso es una ballesta.",
+        "Las gomas se usan en trenes antiguos.",
+        null,
+        "No usa cables."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.02.005",
+      "type": "concepto",
+      "level": 1,
+      "q": "El amortiguador de shimmy sirve para:",
+      "options": [
+        "Frenar las oscilaciones de la rueda de morro",
+        "Absorber el golpe del aterrizaje",
+        "Frenar el avión",
+        "Soltar el freno de aparcamiento"
+      ],
+      "correct": 0,
+      "why": "El shimmy es una oscilación lateral de la rueda de morro; el amortiguador la frena.",
+      "whyNot": [
+        null,
+        "Eso es el amortiguador principal.",
+        "El freno lo da el sistema hidráulico.",
+        "No tiene relación con el aparcamiento."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.02.006",
+      "type": "concepto",
+      "level": 1,
+      "q": "La rueda de morro del PA-28-161 y del C172S se dirige:",
+      "options": [
+        "Con una palanca independiente",
+        "Con los pedales del timón de dirección",
+        "Solo con los frenos",
+        "Con el volante"
+      ],
+      "correct": 1,
+      "why": "Los pedales mueven a la vez el timón de dirección y la rueda de morro.",
+      "whyNot": [
+        "No hay palanca independiente.",
+        null,
+        "Los frenos ayudan en virajes cerrados, pero la dirección es mecánica.",
+        "El volante gobierna alerones y profundidad."
+      ],
+      "ref": "POH PA-28-161 y C172S"
+    },
+    {
+      "id": "020.02.007",
+      "type": "concepto",
+      "level": 1,
+      "q": "Los frenos de un avión ligero actúan sobre:",
+      "options": [
+        "Las ruedas principales",
+        "La rueda de morro",
+        "Las tres ruedas",
+        "Solo la rueda izquierda"
+      ],
+      "correct": 0,
+      "why": "Los frenos de disco hidráulicos están en las ruedas principales.",
+      "whyNot": [
+        null,
+        "La rueda de morro no tiene freno.",
+        "Solo las principales frenan.",
+        "Hay un freno en cada rueda principal."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.02.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "El pedal del freno está esponjoso. La causa más probable es:",
+      "options": [
+        "Aire en el circuito hidráulico",
+        "Pastillas demasiado gruesas",
+        "Exceso de presión del neumático",
+        "Falta de aceite en el motor"
+      ],
+      "correct": 0,
+      "why": "El aire se comprime y da sensación esponjosa; hay que purgar el circuito.",
+      "whyNot": [
+        null,
+        "Pastillas gruesas no ablandan el pedal.",
+        "La presión del neumático no afecta al pedal.",
+        "No tiene relación con el motor."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.02.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un pedal de freno que se hunde lentamente hasta el fondo indica:",
+      "options": [
+        "Amortiguador sin aire",
+        "Neumático con exceso de presión",
+        "Fuga de líquido o fallo del cilindro maestro",
+        "Freno de aparcamiento puesto"
+      ],
+      "correct": 2,
+      "why": "El líquido se escapa o el cilindro maestro no mantiene la presión.",
+      "whyNot": [
+        "El amortiguador no afecta al circuito de frenos.",
+        "La presión del neumático no cambia el pedal.",
+        null,
+        "El freno de aparcamiento retendría el pedal."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.02.010",
+      "type": "regla",
+      "level": 2,
+      "q": "Para poner el freno de aparcamiento del PA-28-161 se:",
+      "options": [
+        "Cierra el selector de combustible",
+        "Gira un volante",
+        "Pisa solo el pedal derecho",
+        "Tira del mando mientras se pisan los pedales a fondo"
+      ],
+      "correct": 3,
+      "why": "Se pisan los pedales para generar presión y se tira del mando para retenerla.",
+      "whyNot": [
+        "El selector no afecta a los frenos.",
+        "No hay volante de aparcamiento.",
+        "Hay que pisar ambos pedales.",
+        null
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "020.02.011",
+      "type": "regla",
+      "level": 2,
+      "q": "La presión de un neumático se comprueba:",
+      "options": [
+        "Con el neumático frío y según el POH",
+        "Con el neumático caliente tras el aterrizaje",
+        "Solo al cambiarlo",
+        "Con el avión cargado"
+      ],
+      "correct": 0,
+      "why": "El calor aumenta la presión: se mide en frío y se compara con el valor del POH.",
+      "whyNot": [
+        null,
+        "En caliente marca más de lo real.",
+        "Hay que comprobarla en cada prevuelo.",
+        "La carga no es la referencia."
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "020.02.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si las marcas de deslizamiento entre neumático y llanta dejan de estar alineadas:",
+      "options": [
+        "Es normal",
+        "Hay que inflar a más presión",
+        "El neumático tiene poca presión únicamente",
+        "El neumático ha girado sobre la llanta y hay que revisarlo"
+      ],
+      "correct": 3,
+      "why": "El neumático ha resbalado sobre la llanta y puede dañar la válvula.",
+      "whyNot": [
+        "No es normal.",
+        "Inflar más no corrige el problema.",
+        "Puede haber poca presión, pero el hallazgo es otro.",
+        null
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.02.013",
+      "type": "concepto",
+      "level": 1,
+      "q": "El aquaplaning se produce cuando:",
+      "options": [
+        "El neumático se desinfla",
+        "La rueda de morro oscila",
+        "El freno se bloquea por calor",
+        "Una capa de agua separa el neumático del suelo"
+      ],
+      "correct": 3,
+      "why": "El neumático flota sobre el agua: se pierde la fricción y el control.",
+      "whyNot": [
+        "La falta de presión es otro problema.",
+        "Eso es shimmy.",
+        "El bloqueo por calor es distinto.",
+        null
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.02.014",
+      "type": "calculo",
+      "level": 3,
+      "q": "Con un neumático de 49 psi, la velocidad aproximada de aquaplaning (9 × √p) es de:",
+      "options": [
+        "441 kt",
+        "49 kt",
+        "63 kt",
+        "18 kt"
+      ],
+      "correct": 2,
+      "why": "√49 = 7 y 9 × 7 = 63 kt.",
+      "whyNot": [
+        "Multiplica 9 por 49.",
+        "Confunde psi con kt.",
+        null,
+        "Usa 9 × 2."
+      ],
+      "ref": "Aproximación 9 × √psi"
+    },
+    {
+      "id": "020.02.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "La pata principal de ballesta de acero del C172S:",
+      "options": [
+        "Contiene aceite y aire a presión",
+        "Absorbe la energía flexionándose, sin fluido",
+        "Es hidráulica",
+        "Es un muelle de goma"
+      ],
+      "correct": 1,
+      "why": "La pata de acero de muelle se flexiona y vuelve a su forma, sin aceite.",
+      "whyNot": [
+        "Eso es el oleoneumático.",
+        null,
+        "No es hidráulica.",
+        "No es de goma."
+      ],
+      "ref": "POH C172S"
+    },
+    {
+      "id": "020.02.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un neumático con exceso de presión suele desgastarse más en:",
+      "options": [
+        "Los bordes",
+        "El centro de la banda de rodadura",
+        "Un solo lado",
+        "La llanta"
+      ],
+      "correct": 1,
+      "why": "Con exceso de presión, el centro de la banda soporta la carga y se desgasta antes.",
+      "whyNot": [
+        "Los bordes se desgastan con poca presión.",
+        null,
+        "El desgaste de un lado indica alineación.",
+        "La llanta no se desgasta por presión."
+      ],
+      "ref": "PHAK cap. 6"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.02.01",
+      "front": "Tren del PA-28 y del C172S",
+      "back": "Triciclo fijo; CG delante de las ruedas principales"
+    },
+    {
+      "id": "c.020.02.02",
+      "front": "Amortiguadores: PA-28 y C172S",
+      "back": "PA-28: oleoneumático. C172S: ballesta de acero en las principales, oleoneumático en morro"
+    },
+    {
+      "id": "c.020.02.03",
+      "front": "Shimmy",
+      "back": "Oscilación de la rueda de morro; la frena el amortiguador de shimmy"
+    },
+    {
+      "id": "c.020.02.04",
+      "front": "Frenos de un avión ligero",
+      "back": "Discos hidráulicos en las ruedas principales, independientes, con cilindro maestro por pedal"
+    },
+    {
+      "id": "c.020.02.05",
+      "front": "Marcas de deslizamiento",
+      "back": "Líneas en neumático y llanta: si se separan, el neumático ha girado sobre la llanta"
+    },
+    {
+      "id": "c.020.02.06",
+      "front": "Velocidad de aquaplaning",
+      "back": "≈ 9 × √(presión en psi), en kt"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "lesson": {
+    "id": "090.08",
+    "title": "Meteorología por radio: ATIS, VOLMET y AIREP",
+    "summary": "Información meteorológica de aeródromo por radio, estructura y contenido del ATIS con su letra, cómo se acusa, VOLMET y AIREP.",
+    "objectives": [
+      "Interpretar un mensaje ATIS y saber qué datos contiene",
+      "Acusar el ATIS en la primera llamada con la letra recibida",
+      "Distinguir ATIS, VOLMET y AIREP",
+      "Saber cuándo cambia la letra del ATIS"
+    ],
+    "sections": [
+      {
+        "title": "Qué es el ATIS",
+        "text": [
+          "El **ATIS** (Automatic Terminal Information Service) es una **emisión continua y repetida** que da información rutinaria del aeródromo a las aeronaves que llegan y salen, para que el controlador no tenga que repetirla en cada llamada. Se emite en una frecuencia propia y se identifica con una **letra** del alfabeto fonético (Alfa, Bravo, Charlie…). Cada vez que cambia la información, cambia la letra siguiendo el orden alfabético.",
+          "En la **primera llamada** a la dependencia ATS dices la letra del ATIS que has recibido: «con información Bravo». Así el controlador sabe qué información tienes y solo te comunica lo que ha cambiado."
+        ]
+      },
+      {
+        "title": "Contenido de un mensaje ATIS",
+        "text": [
+          "Siempre sigue el mismo orden, así que sabes dónde buscar cada dato."
+        ],
+        "table": {
+          "caption": "Contenido de un ATIS",
+          "head": [
+            "Orden",
+            "Dato"
+          ],
+          "rows": [
+            [
+              "1",
+              "Nombre del aeródromo y letra del mensaje"
+            ],
+            [
+              "2",
+              "Hora de la observación (UTC)"
+            ],
+            [
+              "3",
+              "Tipo de aproximación y pista(s) en uso"
+            ],
+            [
+              "4",
+              "Viento en superficie (dirección y velocidad)"
+            ],
+            [
+              "5",
+              "Visibilidad y, si procede, RVR"
+            ],
+            [
+              "6",
+              "Tiempo presente y nubes"
+            ],
+            [
+              "7",
+              "Temperatura y punto de rocío"
+            ],
+            [
+              "8",
+              "QNH (y QFE si procede)"
+            ],
+            [
+              "9",
+              "Información adicional y tendencia"
+            ]
+          ],
+          "src": "Anexo 11; Anexo 3; Doc 4444"
+        },
+        "examples": [
+          {
+            "q": "Escuchas: «Villanueva información Bravo, hora uno cero tres cero, pista en uso uno tres, viento uno cuatro cero grados ocho nudos, visibilidad diez kilómetros o más, nubes escasas dos mil pies, temperatura uno ocho, punto de rocío uno cero, QNH uno cero uno cinco». ¿Qué dices en la primera llamada?",
+            "a": "«Villanueva Torre, Eco Charlie Alfa Bravo Charlie, … con información Bravo, QNH 1015…». Dices la letra y el QNH que te ha dado el ATIS."
+          }
+        ]
+      },
+      {
+        "title": "Cómo usar el ATIS en la aproximación",
+        "text": [
+          "Escucha el ATIS **antes de llamar**, con tiempo, cuando estés a unos 20 o 30 minutos del destino o al salir del aparcamiento si despegas. Anota la letra, la pista en uso, el viento y el QNH. Con esos datos preparas la aproximación y el reglaje del altímetro, y tu primera llamada es corta y completa. Si el viento supera tus límites de viento cruzado en la pista en uso, decide pronto: pide otra pista o cambia de aeródromo."
+        ]
+      },
+      {
+        "title": "Cuándo cambia la letra del ATIS",
+        "bullets": [
+          "La letra cambia cuando hay un **cambio significativo** en la información meteorológica o de pista, y en cada nueva emisión periódica.",
+          "Si el controlador te da un valor distinto del ATIS (por ejemplo, un QNH nuevo), prevalece el que te dé el controlador.",
+          "Si tu letra no es la vigente, el controlador te dará la información actualizada o te pedirá que escuches la nueva emisión."
+        ]
+      },
+      {
+        "title": "Información meteorológica de aeródromo sin ATIS",
+        "text": [
+          "Si el aeródromo no tiene ATIS, la información viene por el controlador, el AFIS o un operador de radio: viento, visibilidad, QNH. También puedes consultar el **METAR** y el **TAF** antes del vuelo y el **SPECI** si hay cambios significativos. En una FIZ, el AFIS te da el viento y el QNH."
+        ]
+      },
+      {
+        "title": "VOLMET",
+        "text": [
+          "El **VOLMET** es una emisión continua de METAR, SPECI y a veces TAF y SIGMET de varios aeródromos, en VHF o en HF. Se usa en vuelo para consultar el tiempo de destino y de alternativos sin preguntar al ATC. Es una emisión pensada sobre todo para el vuelo en ruta de larga distancia, pero también es útil en VFR de travesía."
+        ]
+      },
+      {
+        "title": "AIREP y observaciones desde el aire",
+        "text": [
+          "Un **AIREP** (informe de aeronave) es el informe que una aeronave en vuelo hace de su posición y de las **condiciones que observa**. Los **AIREP especiales** informan de fenómenos significativos: turbulencia fuerte, engelamiento, cumulonimbos, cizalladura, ceniza volcánica. Si encuentras algo peligroso, comunícalo al ATS: ayuda a otros pilotos y a los pronósticos. Los informes se hacen con la forma normalizada: posición, hora, nivel y fenómeno."
+        ]
+      }
+    ],
+    "numbers": [
+      "ATIS: emisión continua; letra del alfabeto fonético que cambia con la información",
+      "Primera llamada: «con información Bravo»",
+      "Orden del ATIS: aeródromo y letra, hora, pista, viento, visibilidad, tiempo y nubes, temperatura y rocío, QNH",
+      "VOLMET: emisión continua de METAR de varios aeródromos",
+      "AIREP especial: fenómenos peligrosos en ruta"
+    ],
+    "traps": [
+      "El ATIS no es una autorización: la autorización la da el controlador.",
+      "Si el controlador te da un QNH distinto del ATIS, vale el del controlador.",
+      "El VOLMET no es el ATIS: el VOLMET da el METAR de varios aeródromos."
+    ],
+    "spain": [
+      "ENAIRE publica en el AIP, en AD 2, las frecuencias de ATIS y el VOLMET."
+    ],
+    "sources": [
+      {
+        "title": "Anexo 11 y Doc 4444 (ATIS)"
+      },
+      {
+        "title": "AIP España AD 2 (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología ES/EN",
+        "href": "#/licencias/fraseologia"
+      },
+      {
+        "label": "Simulador de radio",
+        "href": "#/licencias/fraseologia?tab=radio"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "090.08.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué es el ATIS?",
+      "options": [
+        "Una autorización de aterrizaje",
+        "Un pronóstico para la ruta",
+        "Una emisión continua de información rutinaria del aeródromo",
+        "Un servicio de radar"
+      ],
+      "correct": 2,
+      "why": "El ATIS es una emisión continua y repetida con información de aeródromo.",
+      "whyNot": [
+        "El ATIS no autoriza.",
+        "No es un pronóstico.",
+        null,
+        "No es un servicio radar."
+      ],
+      "ref": "Anexo 11"
+    },
+    {
+      "id": "090.08.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Cómo se identifica cada mensaje ATIS?",
+      "options": [
+        "Con una letra del alfabeto fonético",
+        "Con un número de tres cifras",
+        "Con la hora UTC",
+        "Con el distintivo del aeródromo"
+      ],
+      "correct": 0,
+      "why": "Cada mensaje se identifica con una letra: Alfa, Bravo, Charlie…",
+      "whyNot": [
+        null,
+        "Se usa una letra.",
+        "La hora forma parte del contenido.",
+        "No identifica el mensaje."
+      ],
+      "ref": "Anexo 11"
+    },
+    {
+      "id": "090.08.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "Has escuchado el ATIS de la letra Bravo. ¿Qué dices en la primera llamada?",
+      "options": [
+        "«Bravo» sin más",
+        "«ATIS recibido»",
+        "Nada, el controlador ya lo sabe",
+        "«Con información Bravo»"
+      ],
+      "correct": 3,
+      "why": "Se acusa la letra del ATIS en la primera llamada.",
+      "whyNot": [
+        "Debes decir que es la información.",
+        "No es la forma.",
+        "Debes acusar la letra.",
+        null
+      ],
+      "ref": "Doc 4444"
+    },
+    {
+      "id": "090.08.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué ocurre con la letra del ATIS cuando cambia la información?",
+      "options": [
+        "Vuelve a empezar por Alfa",
+        "Cambia a la siguiente letra",
+        "Se mantiene",
+        "Se sustituye por un número"
+      ],
+      "correct": 1,
+      "why": "Cada nueva información lleva la siguiente letra.",
+      "whyNot": [
+        "Sigue el orden alfabético.",
+        null,
+        "Cambia.",
+        "Se usa una letra."
+      ],
+      "ref": "Anexo 11"
+    },
+    {
+      "id": "090.08.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "El ATIS dice QNH 1015 y el controlador te da QNH 1014. ¿Cuál usas?",
+      "options": [
+        "El del controlador",
+        "El del ATIS",
+        "El mayor",
+        "El menor"
+      ],
+      "correct": 0,
+      "why": "El valor dado por el controlador prevalece sobre el ATIS.",
+      "whyNot": [
+        null,
+        "Prevalece el del controlador.",
+        "No es el criterio.",
+        "No es el criterio."
+      ],
+      "ref": "Doc 4444"
+    },
+    {
+      "id": "090.08.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es el VOLMET?",
+      "options": [
+        "Una autorización de ruta",
+        "Un servicio de radar",
+        "Una emisión continua de METAR de varios aeródromos",
+        "Un mensaje de socorro"
+      ],
+      "correct": 2,
+      "why": "El VOLMET difunde información meteorológica de varios aeródromos.",
+      "whyNot": [
+        "No es una autorización.",
+        "No es un servicio radar.",
+        null,
+        "No es socorro."
+      ],
+      "ref": "Anexo 3"
+    },
+    {
+      "id": "090.08.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es un AIREP?",
+      "options": [
+        "Un plan de vuelo en vuelo",
+        "Un informe de la aeronave en vuelo con su posición y las condiciones observadas",
+        "Un aviso de aeródromo cerrado",
+        "Una emisión de ATIS"
+      ],
+      "correct": 1,
+      "why": "El AIREP informa de posición y de las condiciones observadas.",
+      "whyNot": [
+        "Eso es el AFIL.",
+        null,
+        "No es un AIREP.",
+        "No es un AIREP."
+      ],
+      "ref": "Anexo 3"
+    },
+    {
+      "id": "090.08.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuándo debes hacer un AIREP especial?",
+      "options": [
+        "En cada punto de notificación",
+        "Antes de cada aterrizaje",
+        "Cada hora",
+        "Cuando encuentras un fenómeno peligroso, como turbulencia fuerte o engelamiento"
+      ],
+      "correct": 3,
+      "why": "Los AIREP especiales informan de fenómenos peligrosos.",
+      "whyNot": [
+        "Es para fenómenos significativos.",
+        "Es para fenómenos significativos.",
+        "Es para fenómenos significativos.",
+        null
+      ],
+      "ref": "Anexo 3"
+    },
+    {
+      "id": "090.08.009",
+      "type": "lectura",
+      "level": 2,
+      "q": "En el ATIS de Villanueva oyes «pista uno tres, viento uno cuatro cero grados ocho nudos». ¿Qué pista está en uso y qué viento hay?",
+      "options": [
+        "Pista 14; viento de 130° con 8 kt",
+        "Pista 31; viento de 140° con 18 kt",
+        "Pista 13; viento de 140° con 8 kt",
+        "Pista 13; viento de 080° con 14 kt"
+      ],
+      "correct": 2,
+      "why": "El ATIS dice la pista en uso y el viento en dirección y velocidad.",
+      "whyNot": [
+        "La pista es la 13.",
+        "La pista en uso es la 13.",
+        null,
+        "El viento es de 140° y 8 kt."
+      ],
+      "ref": "Anexo 11"
+    },
+    {
+      "id": "090.08.010",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Qué datos no encontrarás en un ATIS?",
+      "options": [
+        "La autorización de despegue",
+        "El QNH",
+        "La pista en uso",
+        "El viento en superficie"
+      ],
+      "correct": 0,
+      "why": "El ATIS informa, no autoriza.",
+      "whyNot": [
+        null,
+        "Sí figura.",
+        "Sí figura.",
+        "Sí figura."
+      ],
+      "ref": "Anexo 11"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.090.08.01",
+      "front": "ATIS",
+      "back": "Emisión continua de información de aeródromo; letra que cambia"
+    },
+    {
+      "id": "c.090.08.02",
+      "front": "Primera llamada con ATIS",
+      "back": "«Con información Bravo»"
+    },
+    {
+      "id": "c.090.08.03",
+      "front": "ATIS y controlador",
+      "back": "Si difieren, prevalece el valor del controlador"
+    },
+    {
+      "id": "c.090.08.04",
+      "front": "VOLMET",
+      "back": "Emisión continua de METAR de varios aeródromos"
+    },
+    {
+      "id": "c.090.08.05",
+      "front": "AIREP",
+      "back": "Informe de posición y condiciones observadas"
+    }
+  ]
+}

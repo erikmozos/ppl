@@ -1,0 +1,537 @@
+{
+ "lesson": {
+  "title": "Conceptos de performance",
+  "summary": "Clases de performance, fases del vuelo, y cómo cambian las distancias y los ascensos con la masa, el viento, la altitud de presión y de densidad, la pendiente y el estado de la pista; gradientes.",
+  "objectives": [
+   "Distinguir las clases de performance y saber cuál afecta a un avión monomotor de pistón",
+   "Nombrar las fases del vuelo que recoge el manual y qué distancia se mide en cada una",
+   "Calcular altitud de presión y de densidad",
+   "Estimar cómo cambian despegue y ascenso con masa, viento, altitud de densidad, pendiente y superficie",
+   "Convertir entre gradiente en %, en ft/NM y régimen de ascenso"
+  ],
+  "sections": [
+   {
+    "title": "Qué es la performance y para qué sirve",
+    "text": [
+     "La **performance** es lo que el avión es capaz de hacer en unas condiciones dadas: cuánta pista necesita para despegar y para detenerse, con qué pendiente sube, hasta dónde llega, a qué velocidad y con cuánto combustible. Los valores salen del **manual de vuelo (AFM/POH)**, obtenidos en ensayos con un avión nuevo, un piloto de pruebas, pista seca y asfaltada y sin viento. Tu avión, tu pista y tu día suelen ser peores: de ahí los factores de corrección y los márgenes de seguridad que verás en 030.07.",
+     "La norma de operaciones no comerciales (Part-NCO, NCO.POL.110, rendimiento en general) pide operar solo si el rendimiento del avión es suficiente para cumplir las reglas del aire y las limitaciones del manual en cada fase. Ninguna norma te impide despegar de una pista corta; sí te hace responsable de calcular antes que cabe."
+    ],
+    "verify": true
+   },
+   {
+    "title": "Clases de performance",
+    "text": [
+     "Para el transporte aéreo comercial la normativa clasifica los aviones en tres **clases de performance** según su tipo de motor y su masa: **clase A** (turbohélices de más de 5700 kg o 9 asientos de pasajeros, y reactores), **clase B** (hélice de hasta 5700 kg y 9 asientos o menos) y **clase C** (pistón de más de 5700 kg o más de 9 pasajeros). Un avión de escuela monomotor de pistón queda en la clase B por masa y número de pasajeros. Esa clase fija qué se garantiza ante un fallo de motor, pero en la aviación general no comercial (Part-NCO) no se exige una clase: se aplican las limitaciones del AFM y las reglas del aire. Recuerda además que un monomotor no tiene performance con fallo de motor: tras un fallo solo cuentas con el planeo."
+    ],
+    "verify": true
+   },
+   {
+    "title": "Fases del vuelo y distancias",
+    "bullets": [
+     "**Carrera de despegue (ground roll):** desde el inicio de la carrera hasta que el avión se despega del suelo.",
+     "**Distancia de despegue hasta 50 ft:** la que se necesita para llegar a 50 ft (15 m) sobre la pista; es la distancia que usa el manual para obstáculos.",
+     "**Ascenso inicial y en ruta:** con gradiente y régimen de ascenso (Vx y Vy).",
+     "**Crucero:** con potencia, consumo y velocidad a cada altitud.",
+     "**Descenso y aproximación.**",
+     "**Aterrizaje:** distancia desde 50 ft sobre el umbral hasta parar (landing distance), y la carrera de aterrizaje (ground roll) desde el toque.",
+     "**Reglas de redondeo:** el manual separa siempre carrera y distancia hasta 50 ft."
+    ]
+   },
+   {
+    "title": "Altitud de presión y de densidad",
+    "text": [
+     "El motor, la hélice y el ala responden a la **densidad del aire**, no a la altitud geométrica. La **altitud de presión (PA)** es la altitud que marca el altímetro con 1013 hPa en la subescala. La **altitud de densidad (DA)** es la altitud de presión corregida por la temperatura: es la altitud de la atmósfera estándar en la que el aire tendría la misma densidad que hoy. A mayor DA, **menos densidad**: el motor desarrolla menos potencia, la hélice menos tracción, el ala necesita más TAS para sustentar la misma masa y todo el rendimiento empeora. Con la DA más alta que la elevación, el avión se comporta como si el aeródromo estuviera más alto."
+    ],
+    "formulas": [
+     {
+      "f": "PA = elevación + (1013 − QNH) × 27 ft",
+      "note": "Con QNH en hPa. Algunos textos usan 30 ft/hPa: comprueba el factor del examen."
+     },
+     {
+      "f": "Temperatura ISA a la PA = 15 °C − 2 °C × (PA / 1000)",
+      "note": "El gradiente estándar es −1,98 °C/1000 ft, redondeado a 2 °C."
+     },
+     {
+      "f": "DA ≈ PA + 120 × (OAT − T ISA)",
+      "note": "Aproximación habitual; la desviación ISA se multiplica por 120 ft."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Elevación 1500 ft, QNH 1003 hPa y temperatura exterior 28 °C. ¿PA y DA?",
+      "a": "PA = 1500 + (1013 − 1003) × 27 = 1770 ft. T ISA a esa PA = 15 − 2 × 1,77 = 11.5 °C; la desviación es 28 − 11.5 = 16.5 °C. DA = 1770 + 120 × 16.5 ≈ 3755 ft: el avión rinde como si el aeródromo estuviera a unos 3750 ft."
+     },
+     {
+      "q": "PA 4000 ft y temperatura 17 °C. ¿Desviación ISA y DA?",
+      "a": "T ISA a 4000 ft = 15 − 8 = 7 °C. Desviación ISA +10. DA = 4000 + 120 × 10 = 5200 ft."
+     },
+     {
+      "q": "Elevación 500 ft, QNH 998 hPa y 35 °C. ¿DA?",
+      "a": "PA = 500 + 15 × 27 = 905 ft. T ISA = 15 − 2 × 0,905 = 13.2 °C; desviación 21.8. DA = 905 + 120 × 21.8 ≈ 3522 ft. Un aeródromo casi a nivel del mar se comporta como uno a 3500 ft."
+     }
+    ],
+    "figure": "calc:altimetry",
+    "caption": "Calculadora de altitud de presión y de densidad."
+   },
+   {
+    "title": "Qué empeora el rendimiento y cuánto",
+    "text": [
+     "Los efectos se acumulan y a menudo se multiplican. Estas son las reglas de orden de magnitud que conviene tener en la cabeza; las cifras exactas son las del manual de tu avión:"
+    ],
+    "table": {
+     "caption": "Factores que alargan las distancias de despegue y aterrizaje",
+     "head": [
+      "Factor",
+      "Efecto",
+      "Orden de magnitud"
+     ],
+     "rows": [
+      [
+       "Más masa",
+       "Más Vs y más aceleración necesaria",
+       "+10 % de masa: ≈ +20 % de carrera de despegue"
+      ],
+      [
+       "Mayor altitud de densidad",
+       "Menos potencia y menos sustentación",
+       "≈ +10 % de distancia por cada 1000 ft de DA"
+      ],
+      [
+       "Viento en cola",
+       "Más velocidad respecto al suelo para la misma IAS",
+       "Alarga mucho la carrera y el aterrizaje; las tablas lo aplican al 150 %"
+      ],
+      [
+       "Viento de cara",
+       "Menos velocidad respecto al suelo",
+       "Reduce la carrera; las tablas lo aplican al 50 %"
+      ],
+      [
+       "Pendiente ascendente",
+       "Cuesta arriba hay que ganar altura y acelerar",
+       "Despegue más largo; aterrizaje algo más corto"
+      ],
+      [
+       "Hierba, nieve, barro",
+       "Más rozamiento en la carrera",
+       "Hierba seca ≈ +20 %; mojada ≈ +30 % (orientativo)"
+      ],
+      [
+       "Pista mojada o contaminada",
+       "Frenado deficiente",
+       "Aterrizaje mucho más largo (≈ +15 % en pista mojada, más si hay agua)"
+      ],
+      [
+       "Flaps incorrectos",
+       "Mayor o menor distancia según el manual",
+       "Siempre los del manual"
+      ]
+     ],
+     "src": "CAA Safety Sense 7; FAA PHAK cap. 11 (orientativo)"
+    },
+    "verify": true,
+    "note": {
+     "kind": "warn",
+     "text": "Con viento en cola, la velocidad respecto al suelo en el despegue y en el aterrizaje es mayor para la misma IAS: la carrera crece mucho más de lo que ayuda el viento de cara. No despegues ni aterrices con viento en cola si hay alternativa."
+    }
+   },
+   {
+    "title": "Gradientes y régimen de ascenso",
+    "text": [
+     "Un **gradiente** relaciona la altura ganada con la distancia recorrida. Puede expresarse en **porcentaje** (100 ft de altura por cada 10 000 ft de distancia = 1 %) o en **ft por NM**. Como 1 NM son unos 6076 ft, un gradiente del 1 % equivale a unos **60 ft/NM**. El **régimen de ascenso** (ft/min) y el gradiente se relacionan con la velocidad respecto al suelo:",
+     "En la pista, la **pendiente** se mide como desnivel dividido por la longitud (en %), y es positiva si sube en el sentido del despegue."
+    ],
+    "formulas": [
+     {
+      "f": "Gradiente (ft/NM) = régimen (ft/min) × 60 / GS (kt)",
+      "note": "Conversión basada en que a GS kt se recorren GS/60 NM por minuto."
+     },
+     {
+      "f": "Gradiente (%) = gradiente (ft/NM) / 60,76",
+      "note": "Valor aproximado: 1 % ≈ 60 ft/NM."
+     },
+     {
+      "f": "Pendiente de pista (%) = desnivel / longitud × 100",
+      "note": "+ si sube en el sentido del despegue."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Un avión asciende a 700 ft/min con una velocidad respecto al suelo de 80 kt. ¿Qué gradiente tiene?",
+      "a": "700 × 60 / 80 = 525 ft/NM, es decir, 525 / 60,76 ≈ 8,6 %."
+     },
+     {
+      "q": "Un obstáculo de 150 ft de altura está a 1,5 NM del final de la pista. ¿Qué gradiente mínimo hay que mantener?",
+      "a": "150 ft / 1,5 NM = 100 ft/NM, es decir, ≈ 1,6 %. A 90 kt de GS hace falta un régimen de 100 × 90 / 60 = 150 ft/min, con margen."
+     },
+     {
+      "q": "Pista de 800 m con 12 m de desnivel ascendente. ¿Pendiente?",
+      "a": "12 / 800 × 100 = 1,5 % ascendente."
+     }
+    ]
+   },
+   {
+    "title": "Cómo se combinan los efectos",
+    "text": [
+     "Un día de verano a las 15:00 en un aeródromo alto con la masa máxima, hierba y viento en cola reúne casi todos los factores a la vez y puede duplicar la distancia respecto a la del manual. Antes de despegar, calcula la altitud de densidad, consulta las tablas con la masa real y aplica las correcciones de superficie y pendiente. Si no hay margen, reduce la masa (menos combustible o menos carga), espera a un momento más fresco o cambia de pista."
+    ]
+   }
+  ],
+  "numbers": [
+   "PA = elevación + (1013 − QNH) × 27 ft; T ISA = 15 − 2 °C por 1000 ft",
+   "DA ≈ PA + 120 × (OAT − T ISA)",
+   "+10 % de masa: ≈ +20 % de distancia de despegue (orden de magnitud)",
+   "1 % de gradiente ≈ 60 ft/NM",
+   "Gradiente (ft/NM) = régimen (ft/min) × 60 / GS (kt)",
+   "Distancias del manual: pista seca, asfalto y avión nuevo"
+  ],
+  "traps": [
+   "La altitud de densidad aumenta con la temperatura; el avión rinde peor, no mejor.",
+   "Confundir QNH y 1013 para la altitud de presión.",
+   "El viento en cola perjudica más de lo que el de cara ayuda.",
+   "El gradiente en % y en ft/NM no son lo mismo (factor 60)."
+  ],
+  "sources": [
+   {
+    "title": "CAA (Reino Unido), Safety Sense Leaflet 7: Aeroplane Performance"
+   },
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "EASA, Part-NCO y AMC/GM (Reglamento (UE) 965/2012), Easy Access Rules for Air Operations",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 030",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "030.05",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "030.05.001",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un avión monomotor de pistón de pequeña masa, como el de la escuela, pertenece por masa y motor a la clase de performance:",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "No pertenece a ninguna clase por ser monomotor"
+   ],
+   "correct": 1,
+   "why": "La clase B reúne las aeronaves de hélice de hasta 5700 kg y 9 plazas de pasajeros o menos.",
+   "whyNot": [
+    "La clase A incluye turbohélices más grandes y reactores.",
+    null,
+    "La clase C es de pistón con más de 5700 kg o más de 9 pasajeros.",
+    "La clasificación la fijan masa y número de pasajeros, no solo el motor."
+   ],
+   "ref": "Anexo 6 OACI / Part-CAT"
+  },
+  {
+   "id": "030.05.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "La distancia de despegue que da el manual para evaluar obstáculos es la que se necesita para:",
+   "options": [
+    "Despegar y alcanzar 500 ft",
+    "Rodar hasta la velocidad de rotación",
+    "Alcanzar Vy",
+    "Alcanzar 50 ft (15 m) sobre la pista"
+   ],
+   "correct": 3,
+   "why": "Se mide desde el inicio de la carrera hasta la altura de 50 ft sobre la pista.",
+   "whyNot": [
+    "500 ft es la altura habitual de un circuito, no la del manual.",
+    "Eso es solo la carrera de despegue en suelo.",
+    "Vy es una velocidad de ascenso, no un punto de la distancia de despegue.",
+    null
+   ],
+   "ref": "AFM; PHAK cap. 11"
+  },
+  {
+   "id": "030.05.003",
+   "type": "concepto",
+   "level": 1,
+   "q": "La altitud de presión es la altitud que marca el altímetro con:",
+   "options": [
+    "1013 hPa en la subescala",
+    "El QNH del aeródromo",
+    "El QFE del aeródromo",
+    "La temperatura estándar"
+   ],
+   "correct": 0,
+   "why": "La altitud de presión usa siempre 1013,25 hPa como referencia.",
+   "whyNot": [
+    null,
+    "Con el QNH se obtiene la altitud sobre el nivel del mar.",
+    "Con el QFE el altímetro marca altura sobre el aeródromo.",
+    "La temperatura no es una referencia de la subescala."
+   ],
+   "ref": "PHAK cap. 11"
+  },
+  {
+   "id": "030.05.004",
+   "type": "calculo",
+   "level": 2,
+   "q": "Elevación 2000 ft y QNH 1003 hPa (27 ft por hPa). La altitud de presión es:",
+   "options": [
+    "1730 ft",
+    "2300 ft",
+    "2270 ft",
+    "2000 ft"
+   ],
+   "correct": 2,
+   "why": "PA = 2000 + (1013 − 1003) × 27 = 2270 ft.",
+   "whyNot": [
+    "Resulta de restar la corrección en lugar de sumarla.",
+    "Resulta de usar 30 ft/hPa.",
+    null,
+    "Es la elevación: faltaba la corrección por QNH."
+   ],
+   "ref": "PA = elev + (1013 − QNH) × 27"
+  },
+  {
+   "id": "030.05.005",
+   "type": "calculo",
+   "level": 2,
+   "q": "PA 4000 ft y temperatura exterior +17 °C. La desviación respecto a ISA es:",
+   "options": [
+    "ISA +2",
+    "ISA −10",
+    "ISA +10",
+    "ISA +17"
+   ],
+   "correct": 2,
+   "why": "T ISA a 4000 ft = 15 − 8 = 7 °C; 17 − 7 = +10.",
+   "whyNot": [
+    "Resulta de usar 15 °C como referencia: 17 − 15.",
+    "Resulta de invertir el signo.",
+    null,
+    "Es la temperatura, no la desviación."
+   ],
+   "ref": "ISA"
+  },
+  {
+   "id": "030.05.006",
+   "type": "calculo",
+   "level": 3,
+   "q": "Elevación 1500 ft, QNH 1003 hPa y 28 °C. La altitud de densidad es aproximadamente:",
+   "options": [
+    "3755 ft",
+    "1770 ft",
+    "3330 ft",
+    "5130 ft"
+   ],
+   "correct": 0,
+   "why": "PA = 1770 ft; T ISA = 11,5 °C; desviación +16,5; DA = 1770 + 120 × 16,5 ≈ 3755 ft.",
+   "whyNot": [
+    null,
+    "Es la altitud de presión, sin la corrección por temperatura.",
+    "Resulta de tomar 15 °C como referencia a la PA, sin descontar 2 °C por cada 1000 ft.",
+    "Resulta de multiplicar 120 por la temperatura total (28 °C) en lugar de por la desviación."
+   ],
+   "ref": "DA ≈ PA + 120 × (OAT − ISA)"
+  },
+  {
+   "id": "030.05.007",
+   "type": "concepto",
+   "level": 1,
+   "q": "Una altitud de densidad mayor que la elevación del aeródromo significa que:",
+   "options": [
+    "El avión rinde mejor",
+    "El motor produce más potencia",
+    "El ala sustenta más a la misma TAS",
+    "El avión rinde como si el aeródromo estuviera más alto"
+   ],
+   "correct": 3,
+   "why": "El aire es menos denso: menos potencia, menos tracción y más TAS necesaria para sustentar.",
+   "whyNot": [
+    "El rendimiento empeora.",
+    "Con menos densidad el motor aspira menos masa de aire y rinde menos.",
+    "La sustentación depende de ρ: baja con menos densidad.",
+    null
+   ],
+   "ref": "PHAK cap. 11"
+  },
+  {
+   "id": "030.05.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un día de verano a media tarde, en un aeródromo alto, respecto a una mañana fresca:",
+   "options": [
+    "La altitud de densidad es menor",
+    "La altitud de densidad es mayor y el despegue es más largo",
+    "La carrera de despegue se acorta",
+    "Solo cambia la autonomía"
+   ],
+   "correct": 1,
+   "why": "La temperatura sube la DA; a mayor DA, el avión acelera peor y asciende menos.",
+   "whyNot": [
+    "La DA aumenta con el calor.",
+    null,
+    "El despegue se alarga.",
+    "Cambian la carrera, el ascenso y el crucero."
+   ],
+   "ref": "PHAK cap. 11"
+  },
+  {
+   "id": "030.05.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un aumento del 10 % en la masa al despegue produce, aproximadamente, una carrera de despegue:",
+   "options": [
+    "Un 20 % mayor",
+    "Un 10 % menor",
+    "Un 5 % mayor",
+    "Igual"
+   ],
+   "correct": 0,
+   "why": "La carrera varía aproximadamente con el cuadrado de la masa: 1,1² ≈ 1,21, es decir, ≈ +20 %.",
+   "whyNot": [
+    null,
+    "Más masa nunca acorta el despegue.",
+    "Un +5 % no corresponde a la relación cuadrática.",
+    "Cambia la aceleración y la velocidad de rotación, así que la carrera varía."
+   ],
+   "ref": "FAA, PHAK cap. 11"
+  },
+  {
+   "id": "030.05.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "Con viento en cola en el despegue, la carrera de despegue:",
+   "options": [
+    "Disminuye",
+    "No cambia",
+    "Aumenta mucho, porque la velocidad respecto al suelo para despegar es mayor",
+    "Aumenta solo la distancia de ascenso"
+   ],
+   "correct": 2,
+   "why": "La IAS necesaria es la misma, pero la GS es mayor, así que hace falta más pista.",
+   "whyNot": [
+    "El viento de cara es el que acorta.",
+    "Cambia porque la velocidad respecto al suelo es mayor.",
+    null,
+    "También se alarga la carrera, no solo el ascenso."
+   ],
+   "ref": "AFM; PHAK cap. 11"
+  },
+  {
+   "id": "030.05.011",
+   "type": "calculo",
+   "level": 2,
+   "q": "Un avión asciende a 700 ft/min con una velocidad respecto al suelo de 80 kt. El gradiente es aproximadamente:",
+   "options": [
+    "560 ft/NM",
+    "525 ft/NM",
+    "8,75 ft/NM",
+    "58 ft/NM"
+   ],
+   "correct": 1,
+   "why": "Gradiente = régimen × 60 / GS = 700 × 60 / 80 = 525 ft/NM ≈ 8,6 %.",
+   "whyNot": [
+    "Resulta de multiplicar régimen por GS.",
+    null,
+    "Resulta de dividir régimen entre 80.",
+    "Resulta de dividir régimen por 12."
+   ],
+   "ref": "Gradiente = régimen × 60 / GS"
+  },
+  {
+   "id": "030.05.012",
+   "type": "calculo",
+   "level": 2,
+   "q": "Una pista de 800 m tiene un desnivel ascendente de 12 m en el sentido del despegue. Su pendiente es:",
+   "options": [
+    "15 % ascendente",
+    "0,15 % ascendente",
+    "1,5 % descendente",
+    "1,5 % ascendente"
+   ],
+   "correct": 3,
+   "why": "12 / 800 × 100 = 1,5 %.",
+   "whyNot": [
+    "Resulta de un error de unidades.",
+    "Resulta de dividir mal por mil.",
+    "Es ascendente en el sentido del despegue.",
+    null
+   ],
+   "ref": "Pendiente = desnivel / longitud"
+  },
+  {
+   "id": "030.05.013",
+   "type": "regla",
+   "level": 2,
+   "q": "Un gradiente de ascenso del 1 % equivale aproximadamente a:",
+   "options": [
+    "100 ft/NM",
+    "6 ft/NM",
+    "600 ft/NM",
+    "60 ft/NM"
+   ],
+   "correct": 3,
+   "why": "1 NM ≈ 6076 ft; el 1 % son ≈ 60 ft.",
+   "whyNot": [
+    "Es el 1,6 %.",
+    "Es el 0,1 %.",
+    "Es el 10 %.",
+    null
+   ],
+   "ref": "Gradiente"
+  },
+  {
+   "id": "030.05.014",
+   "type": "concepto",
+   "level": 2,
+   "q": "Respecto a la pista, una pendiente ascendente en el sentido del despegue:",
+   "options": [
+    "Acorta la carrera de despegue",
+    "Alarga la carrera de despegue",
+    "No afecta a la carrera",
+    "Solo afecta a la velocidad de rotación"
+   ],
+   "correct": 1,
+   "why": "Cuesta arriba hay que ganar altura y acelerar al mismo tiempo.",
+   "whyNot": [
+    "Cuesta abajo el despegue es más corto.",
+    null,
+    "La carrera cambia con la pendiente.",
+    "La velocidad de rotación es la misma."
+   ],
+   "ref": "AFM; PHAK cap. 11"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.030.05.01",
+   "front": "Altitud de densidad",
+   "back": "DA ≈ PA + 120 ft × (OAT − T ISA); PA = elev + (1013 − QNH) × 27"
+  },
+  {
+   "id": "c.030.05.02",
+   "front": "+10 % de masa",
+   "back": "≈ +20 % de carrera de despegue (orden de magnitud)"
+  },
+  {
+   "id": "c.030.05.03",
+   "front": "Gradiente de ascenso",
+   "back": "ft/NM = ft/min × 60 / GS; 1 % ≈ 60 ft/NM"
+  }
+ ]
+}

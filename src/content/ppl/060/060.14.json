@@ -1,0 +1,278 @@
+{
+ "lesson": {
+  "title": "Radar y SSR",
+  "summary": "Radar primario y secundario, frecuencias 1030 y 1090 MHz, modos A, C y S del transpondedor, códigos especiales, IDENT y ADS-B.",
+  "objectives": [
+   "Distinguir radar primario y secundario",
+   "Recordar las frecuencias de interrogación y respuesta del SSR",
+   "Explicar qué transmiten los modos A, C y S",
+   "Usar el transpondedor y los códigos especiales",
+   "Entender qué es el ADS-B"
+  ],
+  "sections": [
+   {
+    "title": "Radar primario",
+    "text": [
+     "El **radar primario** emite pulsos de radio muy cortos y potentes y recibe el **eco** que rebota en el avión. La distancia se obtiene del tiempo de ida y vuelta, y la dirección de la orientación de la antena giratoria en el momento de recibir el eco. Detecta cualquier objeto reflectante aunque no lleve ningún equipo, por eso se usa también para el tiempo y para vigilar la zona. Pero **no da la altitud ni la identidad**, tiene un alcance limitado por la potencia y la línea de vista, y recibe ecos del suelo y de la lluvia (clutter)."
+    ]
+   },
+   {
+    "title": "Radar secundario (SSR) y transpondedor",
+    "text": [
+     "El **radar secundario** no espera un eco: **interroga** al avión y el **transpondedor** de a bordo **responde** de forma activa, con más información y con mucho más alcance con menos potencia. La estación emite en **1030 MHz** (interrogación) y el avión contesta en **1090 MHz** (respuesta). El transpondedor se manda desde un panel con modos de funcionamiento (OFF, STBY, ON, ALT) y una ventana de código de cuatro cifras.",
+     "Cada modo corresponde a una información distinta:"
+    ],
+    "table": {
+     "caption": "Modos del transpondedor",
+     "head": [
+      "Modo",
+      "Qué responde",
+      "Detalles"
+     ],
+     "rows": [
+      [
+       "A",
+       "Código de identificación",
+       "Cuatro cifras en octal (0 a 7): 4096 códigos"
+      ],
+      [
+       "C",
+       "Altitud de presión",
+       "Referida a 1013,25 hPa, en escalones de 100 ft; se activa con ALT"
+      ],
+      [
+       "S",
+       "Dirección de 24 bits y datos",
+       "Interrogación selectiva a cada avión; base del ADS-B y del enlace de datos"
+      ]
+     ],
+     "src": "Anexo 10 OACI, vol. IV"
+    },
+    "bullets": [
+     "El código lo asigna el ATC; si vuelas VFR sin control, usa el código general (en Europa, 7000).",
+     "IDENT: pulsa el botón solo cuando el ATC te lo pida; el identificador destaca tu eco en su pantalla durante unos segundos.",
+     "Códigos especiales: 7700 emergencia; 7600 fallo de comunicaciones; 7500 interferencia ilícita (secuestro).",
+     "El modo C transmite altitud de presión (1013,25), no la altitud con QNH: el ATC la corrige con el QNH."
+    ]
+   },
+   {
+    "title": "Uso del transpondedor en vuelo",
+    "text": [
+     "El procedimiento normal en un vuelo VFR es poner el transpondedor en **STBY** durante el rodaje, pasar a **ALT** (con modo C) antes de entrar en la pista para despegar y volver a **STBY** o **OFF** al aparcar. En el PA-28 y en el C172 el transpondedor está en la pila de aviónica, junto a la radio; la lista de comprobación de la cabina recoge cuándo activarlo.",
+     "Si el ATC te asigna un código, lo repites en la colación y lo fijas con el selector; no se pulsa IDENT hasta que lo pida el controlador. Si vuelas sin control, usa el código general y revisa si cruzas una zona con uso obligatorio de transpondedor. Una indicación de altitud errónea en el modo C (por ejemplo, por un altímetro mal calibrado o un codificador averiado) se detecta porque el controlador la compara con la tuya: avísale y apaga el modo C si te lo pide.",
+     "El radar primario sigue usándose como respaldo y para detectar aeronaves sin transpondedor o con averías, pero es el SSR quien proporciona la identidad y la altitud que permite al controlador gestionar el tráfico."
+    ]
+   },
+   {
+    "title": "ADS-B",
+    "text": [
+     "El **ADS-B Out** (automatic dependent surveillance-broadcast) es un modo S ampliado: el avión transmite sin ser interrogado (cada segundo, en 1090 MHz, el llamado extended squitter) su **posición**, obtenida de su receptor GNSS, junto con altitud, velocidad e identidad. Es **dependiente** porque necesita la posición del propio avión, y **de difusión** porque se emite para cualquiera que escuche. Lo reciben el ATC, otros aviones con ADS-B In y estaciones de aficionados.",
+     "Mejora la vigilancia donde no hay radar y alimenta los sistemas anticolisión. Un transpondedor modo S suele ser también la base del equipo de ADS-B Out de avionetas."
+    ],
+    "note": {
+     "kind": "es",
+     "text": "En España existen zonas de uso obligatorio de transpondedor (TMZ) y zonas de radio obligatoria (RMZ); su reglamentación está en el AIP (ENR 1.4) y en SERA.6005. Comprueba cada vuelo si cruzas alguna."
+    },
+    "verify": true
+   }
+  ],
+  "numbers": [
+   "SSR: interrogación 1030 MHz; respuesta 1090 MHz",
+   "Modo A: 4096 códigos (cuatro cifras en octal); modo C: altitud de presión en escalones de 100 ft; modo S: dirección de 24 bits",
+   "7700 emergencia; 7600 fallo de comunicaciones; 7500 interferencia ilícita; 7000 VFR general en Europa",
+   "Radar primario: eco pasivo, sin altitud ni identidad"
+  ],
+  "traps": [
+   "1030 y 1090 no son intercambiables: el avión recibe 1030 y emite 1090.",
+   "El modo C da altitud de presión, no con QNH.",
+   "El radar primario detecta aviones sin transpondedor; el secundario no.",
+   "IDENT solo a petición del ATC."
+  ],
+  "sources": [
+   {
+    "title": "OACI, Anexo 10, vol. IV: sistemas de vigilancia y anticolisión"
+   },
+   {
+    "title": "Reglamento (UE) 923/2012 (SERA), sección 13 y SERA.6005",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+   },
+   {
+    "title": "ENAIRE, AIP España, ENR 1.4",
+    "url": "https://aip.enaire.es/"
+   }
+  ],
+  "id": "060.14",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "060.14.001",
+   "type": "regla",
+   "level": 1,
+   "q": "En el radar secundario, las frecuencias de interrogación y de respuesta son, respectivamente:",
+   "options": [
+    "960 MHz y 1215 MHz",
+    "1030 MHz y 1090 MHz",
+    "118 MHz y 137 MHz",
+    "1090 MHz y 1030 MHz"
+   ],
+   "correct": 1,
+   "why": "La estación interroga en 1030 MHz y el transpondedor responde en 1090 MHz.",
+   "whyNot": [
+    "Es la banda del DME.",
+    null,
+    "Es la banda de comunicaciones.",
+    "Están invertidas."
+   ],
+   "ref": "Anexo 10 OACI vol. IV"
+  },
+  {
+   "id": "060.14.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "El radar primario se diferencia del secundario en que:",
+   "options": [
+    "Da la identidad",
+    "Da la altitud",
+    "Detecta por el eco, sin que el avión tenga que llevar equipo",
+    "Necesita transpondedor"
+   ],
+   "correct": 2,
+   "why": "El primario solo recibe el eco de la señal reflejada; el secundario recibe una respuesta activa.",
+   "whyNot": [
+    "Eso es del secundario.",
+    "Eso es del secundario.",
+    null,
+    "Eso es del secundario."
+   ],
+   "ref": "FAA PHAK cap. 15"
+  },
+  {
+   "id": "060.14.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "El modo C del transpondedor transmite:",
+   "options": [
+    "La dirección de 24 bits",
+    "La altitud con QNH",
+    "La altitud de presión referida a 1013,25 hPa",
+    "El código del avión"
+   ],
+   "correct": 2,
+   "why": "El modo C envía la altitud de presión; el ATC la corrige con el QNH.",
+   "whyNot": [
+    "Es el modo S.",
+    "Con QNH la corrige el ATC.",
+    null,
+    "Es el modo A."
+   ],
+   "ref": "Anexo 10 OACI vol. IV"
+  },
+  {
+   "id": "060.14.004",
+   "type": "regla",
+   "level": 1,
+   "q": "El número de códigos del modo A es de:",
+   "options": [
+    "4096",
+    "1000",
+    "256",
+    "9999"
+   ],
+   "correct": 0,
+   "why": "Son cuatro cifras en octal (0 a 7): 8⁴ = 4096.",
+   "whyNot": [
+    null,
+    "Serían las combinaciones decimales de tres cifras.",
+    "Es un valor sin relación con las cuatro cifras octales.",
+    "Sería el máximo en decimal, pero el modo A solo usa dígitos del 0 al 7."
+   ],
+   "ref": "Anexo 10 OACI vol. IV"
+  },
+  {
+   "id": "060.14.005",
+   "type": "regla",
+   "level": 1,
+   "q": "El código para declarar un fallo de comunicaciones es:",
+   "options": [
+    "7600",
+    "7500",
+    "7000",
+    "7700"
+   ],
+   "correct": 0,
+   "why": "7600 indica fallo de radio; 7700, emergencia; 7500, interferencia ilícita.",
+   "whyNot": [
+    null,
+    "Es la interferencia ilícita.",
+    "Es el código VFR general.",
+    "Es la emergencia."
+   ],
+   "ref": "SERA.13001"
+  },
+  {
+   "id": "060.14.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "El botón IDENT se pulsa:",
+   "options": [
+    "En emergencia, antes del 7700",
+    "Siempre antes de despegar",
+    "Al cambiar de frecuencia",
+    "Cuando lo solicita el ATC"
+   ],
+   "correct": 3,
+   "why": "IDENT produce una indicación en la pantalla del controlador; se activa solo a petición.",
+   "whyNot": [
+    "El código de emergencia no necesita IDENT.",
+    "No es una norma.",
+    "No está relacionado con la frecuencia.",
+    null
+   ],
+   "ref": "SERA.13001"
+  },
+  {
+   "id": "060.14.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "El ADS-B Out de una avioneta:",
+   "options": [
+    "Es una forma de radar primario",
+    "Transmite su posición GNSS en 1090 MHz sin ser interrogado",
+    "Es una ayuda de aterrizaje",
+    "Mide la distancia a una estación"
+   ],
+   "correct": 1,
+   "why": "Es una difusión periódica de posición, altitud e identidad en el modo S ampliado.",
+   "whyNot": [
+    "No usa eco.",
+    null,
+    "No guía al aterrizaje.",
+    "No es el DME."
+   ],
+   "ref": "Anexo 10 OACI vol. IV"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.060.14.01",
+   "front": "SSR: frecuencias",
+   "back": "Interrogación 1030 MHz; respuesta 1090 MHz"
+  },
+  {
+   "id": "c.060.14.02",
+   "front": "Modos A, C y S",
+   "back": "A: código (4096); C: altitud de presión; S: dirección de 24 bits y datos"
+  },
+  {
+   "id": "c.060.14.03",
+   "front": "Códigos especiales",
+   "back": "7700 emergencia; 7600 fallo de comunicaciones; 7500 interferencia ilícita"
+  },
+  {
+   "id": "c.060.14.04",
+   "front": "ADS-B Out",
+   "back": "Difunde posición GNSS sin interrogación en 1090 MHz"
+  }
+ ]
+}

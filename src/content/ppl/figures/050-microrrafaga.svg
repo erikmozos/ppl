@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300">
+  <title>Microrráfaga en una aproximación: corriente descendente que se abre en abanico al llegar al suelo y secuencia viento de cara, descendente y viento de cola</title>
+  <defs>
+    <marker id="050-microrrafaga-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker>
+    <marker id="050-microrrafaga-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker>
+  </defs>
+  <rect x="0" y="0" width="640" height="300" class="sky"/>
+  <rect x="0" y="240" width="640" height="60" class="ground"/>
+  <path d="M230 40 C270 20 400 20 440 44 C420 62 390 58 340 62 C290 62 250 62 230 40 Z" class="soft"/>
+  <text x="335" y="46" class="tx b" text-anchor="middle">Cb</text>
+  <line x1="335" y1="68" x2="335" y2="190" class="ac-ln thick" marker-end="url(#050-microrrafaga-a)"/>
+  <path d="M335 196 C310 224 270 232 200 236" class="ac-ln thick" fill="none" marker-end="url(#050-microrrafaga-a)"/>
+  <path d="M335 196 C360 224 400 232 470 236" class="ac-ln thick" fill="none" marker-end="url(#050-microrrafaga-a)"/>
+  <text x="344" y="140" class="txa b">2 Descendente</text>
+  <text x="344" y="156" class="tx2">hasta 4 km de diámetro</text>
+  <path d="M100 170 L560 170" class="ln2 dash"/>
+  <line x1="330" y1="258" x2="370" y2="258" class="ln2 dash"/>
+  <text x="376" y="262" class="tx2">trayectoria normal</text>
+  <path d="M60 120 L200 160 L300 200 L400 214 L500 200 L580 160" class="ln thick" fill="none"/>
+  <text x="130" y="108" class="txo b" text-anchor="middle">1 Viento de cara</text>
+  <text x="130" y="122" class="tx2" text-anchor="middle">sube la IAS: se queda alto</text>
+  <text x="500" y="108" class="txw b" text-anchor="middle">3 Viento de cola</text>
+  <text x="500" y="122" class="tx2" text-anchor="middle">cae la IAS: se hunde</text>
+  <line x1="40" y1="260" x2="120" y2="260" class="wa-ln thick" marker-end="url(#050-microrrafaga-w)"/>
+  <text x="130" y="264" class="tx2">sentido de la aproximación</text>
+  <text x="335" y="290" class="tx2" text-anchor="middle">Duración de 5 a 15 min; el cambio puede superar 40 kt en pocos segundos</text>
+</svg>

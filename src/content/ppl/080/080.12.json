@@ -1,0 +1,541 @@
+{
+ "lesson": {
+  "title": "Control",
+  "summary": "Ejes y planos de movimiento, mandos primarios (profundidad, alerones, timón), guiñada adversa, compensación aerodinámica, tabs (compensador, antibalance, servo) y balance de masas.",
+  "objectives": [
+   "Relacionar cada mando con su eje, su movimiento y su plano",
+   "Explicar el efecto del downwash y de la estela sobre la profundidad",
+   "Explicar la guiñada adversa y las soluciones de diseño y de pilotaje",
+   "Distinguir los tipos de compensación aerodinámica y de tab y el sentido de cada uno",
+   "Explicar para qué sirve el balance de masas"
+  ],
+  "sections": [
+   {
+    "title": "Ejes, movimientos y mandos primarios",
+    "text": [
+     "El avión se mueve alrededor de tres ejes que se cruzan en el CG. Cada uno se controla con un mando primario y un movimiento distinto del piloto:"
+    ],
+    "table": {
+     "caption": "Ejes, movimientos y mandos",
+     "head": [
+      "Eje",
+      "Movimiento",
+      "Mando primario",
+      "Control del piloto"
+     ],
+     "rows": [
+      [
+       "Longitudinal (morro a cola)",
+       "Alabeo (roll)",
+       "Alerones",
+       "Palanca o volante a derecha e izquierda"
+      ],
+      [
+       "Lateral (de punta a punta)",
+       "Cabeceo (pitch)",
+       "Profundidad",
+       "Palanca adelante y atrás"
+      ],
+      [
+       "Vertical",
+       "Guiñada (yaw)",
+       "Timón de dirección",
+       "Pedales"
+      ]
+     ],
+     "src": "PHAK cap. 6"
+    }
+   },
+   {
+    "title": "Profundidad, downwash y estela",
+    "text": [
+     "La **profundidad** (elevator) cambia la sustentación de la cola y con ella el momento de cabeceo. Palanca atrás: la superficie sube su borde de salida, la cola hace fuerza hacia abajo y el morro sube. Algunos aviones, como el **PA-28**, usan un **estabilizador móvil de una pieza (stabilator)**; el C172 usa estabilizador fijo con profundidad articulada.",
+     "La cola trabaja en el **downwash** del ala: el aire que llega a ella viene inclinado hacia abajo, y ese ángulo cambia con la configuración. Al **extender flaps** el downwash aumenta; con **potencia**, la estela de la hélice mejora la eficacia de la profundidad. Una cola en T queda **fuera** de la estela del ala y de la hélice, y por eso su eficacia en pérdida es mala (pérdida profunda)."
+    ]
+   },
+   {
+    "title": "Timón y alerones",
+    "text": [
+     "El **timón** produce una fuerza lateral en la cola que gira el morro a un lado. Sirve para coordinar los virajes, compensar la guiñada del motor y mantener el rumbo en un viento cruzado.",
+     "Los **alerones** actúan en sentido diferente en cada ala: el que baja aumenta la curvatura y la sustentación; el que sube la disminuye. La diferencia de sustentación produce el alabeo."
+    ]
+   },
+   {
+    "title": "Guiñada adversa",
+    "text": [
+     "Cuando bajas el alerón de un ala (la que sube), este aumenta su sustentación y también su **resistencia inducida**. Mientras tanto, el alerón del ala que baja reduce la suya. La diferencia de resistencia hace que el morro **gire hacia el lado contrario al viraje**: es la **guiñada adversa**. Es más intensa a poca velocidad, con mucha deflexión y alta incidencia."
+    ],
+    "bullets": [
+     "**Alerones diferenciales:** el alerón que sube deflecta más que el que baja, y se iguala la resistencia.",
+     "**Alerones tipo Frise:** el borde de ataque del alerón que sube sobresale por debajo del ala y produce resistencia que compensa la del otro.",
+     "**Pilotaje:** coordinar con el timón, pisando el pedal del lado del viraje."
+    ]
+   },
+   {
+    "title": "Compensación aerodinámica",
+    "text": [
+     "Los mandos grandes y rápidos exigen mucho esfuerzo en palanca porque el aire empuja las superficies hacia atrás. La **compensación aerodinámica (balance)** reduce ese esfuerzo con una parte de la superficie por delante de la bisagra:"
+    ],
+    "bullets": [
+     "**Balance de cuerno:** una pequeña parte de la superficie sobresale por delante de la bisagra.",
+     "**Bisagra retrasada (set‑back hinge):** la bisagra está detrás del borde de ataque de la superficie.",
+     "**Balance interno:** una cámara sellada dentro del ala lleva presión diferencial a la parte anterior de la superficie.",
+     "**Frise:** además de reducir la guiñada adversa, actúa como balance."
+    ]
+   },
+   {
+    "title": "Tabs: compensador, antibalance, servo y balance",
+    "text": [
+     "Un **tab** es una pequeña superficie articulada en el borde de salida de la superficie de control. Según cómo se mueva y quién lo accione, tiene cuatro usos:"
+    ],
+    "table": {
+     "caption": "Tipos de tab",
+     "head": [
+      "Tab",
+      "Accionamiento",
+      "Sentido respecto a la superficie",
+      "Para qué sirve"
+     ],
+     "rows": [
+      [
+       "Compensador (trim)",
+       "El piloto con la rueda de trim",
+       "Contrario",
+       "Mantener la superficie en la posición deseada sin esfuerzo"
+      ],
+      [
+       "Balance (geared)",
+       "Unido al mando",
+       "Contrario",
+       "Reducir el esfuerzo de palanca"
+      ],
+      [
+       "Antibalance (anti‑servo)",
+       "Unido al mando",
+       "El mismo",
+       "Aumentar el esfuerzo y dar estabilidad a un estabilizador móvil; suele servir también como compensador"
+      ],
+      [
+       "Servo",
+       "El piloto mueve solo el tab",
+       "La superficie se mueve al contrario que el tab",
+       "Mover superficies grandes con poco esfuerzo"
+      ]
+     ]
+    },
+    "figure": "svg:080-tabs",
+    "caption": "Sentido del tab respecto a la superficie.",
+    "note": {
+     "kind": "tip",
+     "text": "En el PA-28 el tab del estabilizador móvil es un antibalance que hace de compensador; en el C172 el compensador es un tab clásico en la profundidad (movido por la rueda de trim)."
+    }
+   },
+   {
+    "title": "Balance de masas",
+    "text": [
+     "Las superficies de control pueden empezar a vibrar con aire sin turbulencia: el **flameo (flutter)** es una oscilación acoplada entre la aerodinámica y la elasticidad de la estructura que puede destruir la superficie en segundos. Para evitarlo se hace **balance de masas**: se colocan pesos por delante de la bisagra, de forma que el **CG de la superficie** quede sobre ella o ligeramente por delante. Por eso no se debe pintar una superficie de control sin recalcular el equilibrio, ni añadir peso sin autorización: se altera el balance y aumenta el riesgo de flameo."
+    ]
+   }
+  ],
+  "numbers": [
+   "Alabeo: alerones; cabeceo: profundidad; guiñada: timón",
+   "Guiñada adversa: morro hacia el lado contrario al viraje",
+   "Alerón diferencial: el que sube deflecta más",
+   "Trim tab: sentido contrario; antibalance: mismo sentido",
+   "Balance de masas: CG de la superficie en la bisagra o delante"
+  ],
+  "traps": [
+   "La guiñada adversa se corrige con timón del lado del viraje, no del contrario.",
+   "El tab compensador se mueve al contrario que la superficie; el antibalance, en el mismo sentido.",
+   "El balance aerodinámico y el balance de masas son cosas distintas: uno reduce esfuerzo, el otro evita el flameo.",
+   "Una cola en T queda fuera de la estela: mala eficacia en pérdida profunda."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "FAA, Airplane Flying Handbook (FAA-H-8083-3C)",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "080.12",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "080.12.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "El movimiento de alabeo (roll) se produce alrededor del eje:",
+   "options": [
+    "Lateral, controlado con la profundidad",
+    "Longitudinal, controlado con los alerones",
+    "Vertical, controlado con el timón",
+    "Lateral, controlado con los alerones"
+   ],
+   "correct": 1,
+   "why": "El alabeo es el giro alrededor del eje que va del morro a la cola, y lo controlan los alerones.",
+   "whyNot": [
+    "El eje lateral corresponde al cabeceo.",
+    null,
+    "El eje vertical corresponde a la guiñada.",
+    "Los alerones no controlan el cabeceo; el eje lateral es del cabeceo."
+   ],
+   "ref": "PHAK cap. 6"
+  },
+  {
+   "id": "080.12.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "La profundidad controla el movimiento de:",
+   "options": [
+    "Alabeo, alrededor del eje longitudinal",
+    "Guiñada, alrededor del eje vertical",
+    "Derrape, alrededor del eje lateral",
+    "Cabeceo, alrededor del eje lateral"
+   ],
+   "correct": 3,
+   "why": "Al mover la palanca adelante o atrás, la cola cambia su sustentación y el morro sube o baja.",
+   "whyNot": [
+    "El alabeo lo controlan los alerones.",
+    "La guiñada la controla el timón de dirección.",
+    "El derrape no es un movimiento angular de control; el eje lateral es del cabeceo.",
+    null
+   ],
+   "ref": "PHAK cap. 6"
+  },
+  {
+   "id": "080.12.003",
+   "type": "concepto",
+   "level": 1,
+   "q": "Cuando tiras de la palanca hacia atrás, la profundidad:",
+   "options": [
+    "Sube su borde de salida y la cola empuja hacia abajo",
+    "Baja su borde de salida y la cola empuja hacia abajo",
+    "Sube su borde de salida y la cola empuja hacia arriba",
+    "No se mueve; se mueve el estabilizador solo"
+   ],
+   "correct": 0,
+   "why": "El borde de salida sube y la cola produce menos sustentación (o más fuerza hacia abajo), por lo que el morro sube.",
+   "whyNot": [
+    null,
+    "Con el borde de salida abajo el morro bajaría.",
+    "Una fuerza hacia arriba en la cola bajaría el morro.",
+    "En un avión con profundidad articulada, es la profundidad la que se mueve."
+   ],
+   "ref": "PHAK cap. 6"
+  },
+  {
+   "id": "080.12.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un estabilizador móvil de una sola pieza (stabilator) como el del PA-28:",
+   "options": [
+    "Es fijo y lleva profundidad articulada",
+    "Solo se mueve con el compensador",
+    "Mueve todo el estabilizador y lleva un tab antiservo",
+    "No tiene tab"
+   ],
+   "correct": 2,
+   "why": "El PA-28 usa un stabilator con tab antiservo, que actúa también como compensador.",
+   "whyNot": [
+    "Esa es la disposición del C172.",
+    "El stabilator se mueve con la palanca y el compensador mueve su tab, no el conjunto.",
+    null,
+    "Lleva tab, que sirve de compensador."
+   ],
+   "ref": "POH PA-28-161"
+  },
+  {
+   "id": "080.12.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "Al extender los flaps, el downwash que llega a la cola:",
+   "options": [
+    "Disminuye",
+    "No cambia",
+    "Aumenta",
+    "Se anula"
+   ],
+   "correct": 2,
+   "why": "Los flaps aumentan la sustentación del ala y con ella el downwash sobre la cola.",
+   "whyNot": [
+    "Con más sustentación hay más downwash.",
+    "El downwash varía con la sustentación.",
+    null,
+    "Nunca se anula con sustentación."
+   ],
+   "ref": "PHAK cap. 6"
+  },
+  {
+   "id": "080.12.006",
+   "type": "concepto",
+   "level": 1,
+   "q": "La guiñada adversa es la tendencia del morro a girar:",
+   "options": [
+    "Hacia el lado contrario al del viraje que se inicia",
+    "Hacia el lado del viraje",
+    "Hacia arriba",
+    "Hacia abajo"
+   ],
+   "correct": 0,
+   "why": "La resistencia mayor en el ala que sube tira de ella hacia atrás y gira el morro hacia el lado contrario.",
+   "whyNot": [
+    null,
+    "Eso sería guiñada favorable.",
+    "Es un movimiento de guiñada, no de cabeceo.",
+    "Es un movimiento de guiñada, no de cabeceo."
+   ],
+   "ref": "PHAK cap. 6"
+  },
+  {
+   "id": "080.12.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "La guiñada adversa es más intensa:",
+   "options": [
+    "A alta velocidad con pequeñas deflexiones",
+    "Solo con flaps abajo",
+    "Con el CG atrasado",
+    "A baja velocidad y con grandes deflexiones de alerón"
+   ],
+   "correct": 3,
+   "why": "Con ángulos de ataque altos y grandes deflexiones, la diferencia de resistencia inducida es mayor.",
+   "whyNot": [
+    "Con alta velocidad y poca deflexión es menor.",
+    "Los flaps no son la causa.",
+    "El CG no es el factor principal.",
+    null
+   ],
+   "ref": "AFH cap. 3"
+  },
+  {
+   "id": "080.12.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "Los alerones diferenciales reducen la guiñada adversa porque:",
+   "options": [
+    "El que baja deflecta más que el que sube",
+    "El alerón que sube deflecta más que el que baja",
+    "Los dos deflectan lo mismo",
+    "Tienen tab servo"
+   ],
+   "correct": 1,
+   "why": "Con más deflexión del que sube se iguala la resistencia de ambas alas.",
+   "whyNot": [
+    "Sería al revés: aumentaría la guiñada adversa.",
+    null,
+    "Con igual deflexión, la guiñada adversa se mantiene.",
+    "El tab servo no es el mecanismo."
+   ],
+   "ref": "PHAK cap. 6"
+  },
+  {
+   "id": "080.12.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un alerón tipo Frise, el borde de ataque del alerón que sube:",
+   "options": [
+    "Sobresale por debajo del ala y genera resistencia",
+    "Se esconde dentro del ala",
+    "Mueve el tab",
+    "Genera sustentación adicional"
+   ],
+   "correct": 0,
+   "why": "La resistencia añadida en el ala que baja compensa la del otro lado.",
+   "whyNot": [
+    null,
+    "Eso aumentaría la guiñada adversa.",
+    "No mueve ningún tab.",
+    "Su propósito es crear resistencia, no sustentación."
+   ],
+   "ref": "PHAK cap. 6"
+  },
+  {
+   "id": "080.12.010",
+   "type": "concepto",
+   "level": 1,
+   "q": "Para coordinar un viraje a la derecha y evitar la guiñada adversa, se usa:",
+   "options": [
+    "Pedal izquierdo",
+    "Ningún pedal",
+    "Pedal derecho",
+    "Compensador de dirección a la izquierda"
+   ],
+   "correct": 2,
+   "why": "El timón del lado del viraje contrarresta el giro del morro hacia el lado contrario.",
+   "whyNot": [
+    "Aumentaría la guiñada adversa.",
+    "Sin timón la guiñada adversa se mantiene.",
+    null,
+    "El compensador no resuelve el problema; se necesita pedal."
+   ],
+   "ref": "AFH cap. 3"
+  },
+  {
+   "id": "080.12.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un tab compensador (trim tab) de la profundidad se mueve:",
+   "options": [
+    "En el mismo sentido que la superficie",
+    "En sentido contrario al de la superficie",
+    "Solo en tierra",
+    "Siempre hacia arriba"
+   ],
+   "correct": 1,
+   "why": "Genera una fuerza aerodinámica que mantiene la superficie en la posición deseada sin esfuerzo.",
+   "whyNot": [
+    "Ese es el antibalance.",
+    null,
+    "Se mueve en vuelo con la rueda de trim.",
+    "Se mueve en ambos sentidos."
+   ],
+   "ref": "PHAK cap. 6"
+  },
+  {
+   "id": "080.12.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "El tab antibalance (antiservo) se mueve:",
+   "options": [
+    "En sentido contrario y reduce el esfuerzo",
+    "Solo con flaps",
+    "Sin relación con el mando",
+    "En el mismo sentido que la superficie y aumenta el esfuerzo"
+   ],
+   "correct": 3,
+   "why": "Está unido al mando de modo que el tab sigue a la superficie y se opone a su movimiento.",
+   "whyNot": [
+    "Ese es el tab de balance.",
+    "No depende de los flaps.",
+    "El tab antibalance está unido al mando y sigue a la superficie.",
+    null
+   ],
+   "ref": "PHAK cap. 6"
+  },
+  {
+   "id": "080.12.013",
+   "type": "concepto",
+   "level": 2,
+   "q": "El balance aerodinámico de una superficie de control sirve para:",
+   "options": [
+    "Evitar el flameo",
+    "Aumentar la resistencia",
+    "Aumentar la velocidad de pérdida",
+    "Reducir el esfuerzo en el mando"
+   ],
+   "correct": 3,
+   "why": "Al tener parte de la superficie por delante de la bisagra, el aire ayuda a mover el mando.",
+   "whyNot": [
+    "Eso lo hace el balance de masas.",
+    "Su propósito es reducir esfuerzos.",
+    "El balance aerodinámico no cambia la velocidad de pérdida.",
+    null
+   ],
+   "ref": "PHAK cap. 6"
+  },
+  {
+   "id": "080.12.014",
+   "type": "concepto",
+   "level": 2,
+   "q": "El balance de masas de una superficie de control sirve para:",
+   "options": [
+    "Reducir el esfuerzo en la palanca",
+    "Evitar el flameo situando el CG de la superficie sobre la bisagra o delante",
+    "Aumentar el CLmax",
+    "Disminuir la resistencia de forma del fuselaje"
+   ],
+   "correct": 1,
+   "why": "Evita la oscilación acoplada aerodinámica‑estructural que puede destruir la superficie.",
+   "whyNot": [
+    "Eso es el balance aerodinámico.",
+    null,
+    "El CLmax depende del perfil y los flaps, no de la pintura de un mando.",
+    "El balance de masas no tiene relación con la resistencia."
+   ],
+   "ref": "PHAK cap. 6"
+  },
+  {
+   "id": "080.12.015",
+   "type": "concepto",
+   "level": 3,
+   "q": "Repintar una superficie de control sin recalcular su balance es un riesgo porque:",
+   "options": [
+    "Solo cambia el aspecto",
+    "Aumenta la sustentación",
+    "Puede alterar el balance de masas y favorecer el flameo",
+    "No tiene importancia si se pinta igual"
+   ],
+   "correct": 2,
+   "why": "Añadir pintura o peso en el borde de salida desplaza el CG de la superficie hacia atrás.",
+   "whyNot": [
+    "Cambia el comportamiento aeroelástico de la superficie, más que su aspecto.",
+    "La sustentación no es lo que está en riesgo, sino el flameo.",
+    null,
+    "Sí tiene importancia: el peso de la pintura altera el balance de masas."
+   ],
+   "ref": "PHAK cap. 6"
+  },
+  {
+   "id": "080.12.016",
+   "type": "lectura",
+   "level": 2,
+   "q": "En la figura, el tab antibalance respecto a la profundidad se mueve:",
+   "figure": "svg:080-tabs",
+   "options": [
+    "Hacia arriba, en el mismo sentido que la profundidad",
+    "Hacia abajo, en sentido contrario",
+    "Se queda inmóvil",
+    "Solo en tierra"
+   ],
+   "correct": 0,
+   "why": "Con la profundidad hacia arriba, el tab antibalance también sube.",
+   "whyNot": [
+    null,
+    "Eso ocurre con el compensador.",
+    "El tab se mueve junto con el mando.",
+    "Funciona en vuelo."
+   ],
+   "ref": "PHAK cap. 6"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.080.12.01",
+   "front": "Guiñada adversa",
+   "back": "Morro hacia el lado contrario al viraje; se corrige con alerones diferenciales o Frise y con timón"
+  },
+  {
+   "id": "c.080.12.02",
+   "front": "Tab compensador y antibalance",
+   "back": "Compensador: sentido contrario a la superficie. Antibalance: mismo sentido"
+  },
+  {
+   "id": "c.080.12.03",
+   "front": "Balance de masas",
+   "back": "CG de la superficie en la bisagra o delante: evita el flameo"
+  },
+  {
+   "id": "c.080.12.04",
+   "front": "Eje y mando",
+   "back": "Longitudinal: alerones (alabeo). Lateral: profundidad (cabeceo). Vertical: timón (guiñada)"
+  }
+ ]
+}

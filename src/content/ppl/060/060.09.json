@@ -1,0 +1,400 @@
+{
+ "lesson": {
+  "title": "Propagación",
+  "summary": "Ondas de radio: frecuencia y longitud de onda, bandas, antenas, onda de tierra, ionosférica y directa, alcance en VHF y por qué NDB y VOR se comportan de forma distinta.",
+  "objectives": [
+   "Relacionar frecuencia y longitud de onda",
+   "Conocer las bandas de frecuencia y qué ayuda usa cada una",
+   "Distinguir onda de tierra, ionosférica y directa",
+   "Calcular el alcance en VHF con la altura",
+   "Explicar los efectos nocturno, de costa y de estática en radioayudas"
+  ],
+  "sections": [
+   {
+    "title": "Frecuencia, longitud de onda y bandas",
+    "text": [
+     "Una onda de radio viaja a la velocidad de la luz (**300 000 km/s**). Su **frecuencia** (f, en hercios) y su **longitud de onda** (λ, la distancia que recorre en un ciclo) están ligadas: cuanto mayor es la frecuencia, menor la longitud de onda. El espectro se divide en bandas por décadas de frecuencia; en aviación se usan desde las más bajas (NDB) hasta las muy altas (radar y GNSS)."
+    ],
+    "formulas": [
+     {
+      "f": "λ (m) = 300 / f (MHz)",
+      "note": "Por ejemplo, 121,5 MHz → λ = 2,47 m."
+     },
+     {
+      "f": "Alcance VHF (NM) ≈ 1,23 × (√h1 + √h2), con h en pies",
+      "note": "Es el alcance óptico entre dos puntos; h1 y h2 son las alturas de las antenas sobre el terreno."
+     }
+    ],
+    "table": {
+     "caption": "Bandas y usos en aviación",
+     "head": [
+      "Banda",
+      "Frecuencia",
+      "Uso en aviación"
+     ],
+     "rows": [
+      [
+       "LF",
+       "30–300 kHz",
+       "NDB (parte), balizas, ayudas antiguas"
+      ],
+      [
+       "MF",
+       "300 kHz–3 MHz",
+       "NDB (190–1750 kHz), radiodifusión AM"
+      ],
+      [
+       "HF",
+       "3–30 MHz",
+       "Comunicaciones de largo alcance"
+      ],
+      [
+       "VHF",
+       "30–300 MHz",
+       "Comunicaciones (118–137 MHz), VOR (108–117,975 MHz), ILS (localizador y senda)"
+      ],
+      [
+       "UHF",
+       "300 MHz–3 GHz",
+       "DME (960–1215 MHz), SSR (1030 y 1090 MHz), GNSS (1,2–1,6 GHz)"
+      ],
+      [
+       "SHF",
+       "3–30 GHz",
+       "Radar meteorológico y de a bordo"
+      ]
+     ],
+     "src": "Reglamento de Radiocomunicaciones UIT; Anexo 10 OACI"
+    }
+   },
+   {
+    "title": "Antenas",
+    "text": [
+     "Una antena emite o recibe ondas. La antena más sencilla, el **dipolo**, mide media longitud de onda (λ/2); en aviación se emplean mucho las de **λ/4** montadas sobre el fuselaje, que usan el metal del avión como plano de tierra. En VHF aeronáutica la **polarización es vertical**, por eso las antenas de comunicaciones del avión son varillas verticales. Cuanto mayor la frecuencia, más corta es la antena: el NDB necesita una antena larga (hilo o lazo) y la de VHF solo unos centímetros.",
+     "La forma de la antena determina su **diagrama de radiación**: dónde emite o recibe más energía. Las de comunicaciones son omnidireccionales en el plano horizontal; el ADF usa una antena de cuadro direccional y otra de sentido; el VOR usa una antena especial que emite una señal que depende de la dirección."
+    ]
+   },
+   {
+    "title": "Cómo viajan las ondas",
+    "text": [
+     "La **onda de tierra** sigue la curvatura de la Tierra y se propaga pegada al suelo. Funciona bien en **LF y MF** (con las que se alcanzan cientos de kilómetros), pero se atenúa con el terreno: el mar la deja pasar mejor que el suelo seco o las montañas. Es la que usa el **NDB**.",
+     "La **onda ionosférica** (o de cielo) se refleja en capas ionizadas de la atmósfera alta (la ionosfera, de unos 60 a más de 400 km de altura). Las **HF** (y la parte alta de las MF) rebotan en la ionosfera y pueden recorrer miles de kilómetros: es la base de las comunicaciones HF de largo alcance. Entre el punto donde termina el alcance de la onda de tierra y el punto donde regresa la ionosférica hay una **zona de silencio**. De día la capa D absorbe las ondas bajas y de noche desaparece, por lo que el alcance cambia; de noche las MF llegan mucho más lejos.",
+     "La **onda directa** (o espacial) viaja en línea recta entre emisor y receptor, y es la de **VHF, UHF y superiores**. Las ondas VHF no se reflejan en la ionosfera ni siguen la curvatura: su alcance está limitado por el **horizonte óptico**, y aumenta con la altura de ambas antenas. A mayor altitud del avión, más alcance de comunicación y de recepción de ayudas, y es el motivo por el que los obstáculos y el relieve pueden cortar una señal."
+    ],
+    "examples": [
+     {
+      "q": "Avión a 3600 ft sobre el terreno comunicando con una torre cuya antena está a 100 ft. ¿Alcance óptico?",
+      "a": "√3600 = 60 y √100 = 10; 1,23 × (60 + 10) ≈ 86 NM."
+     },
+     {
+      "q": "¿Qué longitud de onda tiene 121,5 MHz y cuánto mide un dipolo de media onda?",
+      "a": "λ = 300 / 121,5 = 2,47 m; el dipolo mide λ/2 ≈ 1,23 m."
+     }
+    ]
+   },
+   {
+    "title": "Efectos que debes conocer",
+    "text": [
+     "Como el NDB usa onda de tierra y MF/LF, sufre fenómenos que no afectan al VOR o al DME en VHF/UHF. El **efecto nocturno** aparece al caer la tarde y al amanecer: la onda ionosférica, reflejada sin absorción por la capa D, interfiere con la de tierra y la aguja del ADF oscila. El **efecto de costa** (refracción en la línea de costa) desvía la onda de tierra cuando atraviesa la costa con un ángulo pequeño, y el error es mayor cuanto más oblicuo sea el cruce. Las **tormentas** generan estática (descargas) que atrae la aguja del ADF hacia la nube.",
+     "Las ondas VHF/UHF son más limpias, pero dependen de la **línea de vista**: el relieve provoca zonas de sombra y reflexiones, y puede haber errores del VOR por trayectorias múltiples. La lluvia fuerte afecta a las ondas del radar meteorológico."
+    ],
+    "bullets": [
+     "Onda de tierra: LF y MF; sigue la curvatura; la usa el NDB.",
+     "Onda ionosférica: HF; se refleja; largo alcance; con zona de silencio.",
+     "Onda directa: VHF y superiores; línea de vista; la usan comunicaciones, VOR, DME, radar y GNSS.",
+     "Efecto nocturno y de costa: solo afectan al NDB."
+    ]
+   }
+  ],
+  "numbers": [
+   "Velocidad de las ondas: 300 000 km/s",
+   "λ (m) = 300 / f (MHz)",
+   "NDB: 190–1750 kHz; VOR: 108–117,975 MHz; comunicaciones VHF: 118–137 MHz; DME: 960–1215 MHz",
+   "Alcance VHF ≈ 1,23 × (√h1 + √h2) NM, con h en pies",
+   "Dipolo de media onda λ/2; polarización vertical en VHF aeronáutica"
+  ],
+  "traps": [
+   "Mayor frecuencia significa menor longitud de onda, no mayor.",
+   "La onda de tierra pertenece a LF/MF, no a VHF.",
+   "El efecto nocturno afecta al ADF, no al VOR.",
+   "El alcance VHF depende de la altura de las dos antenas, no solo de la del avión.",
+   "HF puede alcanzar miles de kilómetros; VHF, solo línea de vista."
+  ],
+  "sources": [
+   {
+    "title": "OACI, Anexo 10, vol. I: radioayudas para la navegación"
+   },
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 16 y 15",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   }
+  ],
+  "id": "060.09",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "060.09.001",
+   "type": "regla",
+   "level": 1,
+   "q": "Las comunicaciones aeronáuticas en VHF se propagan principalmente por:",
+   "options": [
+    "Onda directa, con alcance de línea de vista",
+    "Onda de tierra",
+    "Onda ionosférica",
+    "Onda superficial"
+   ],
+   "correct": 0,
+   "why": "La VHF no sigue la curvatura de la Tierra ni se refleja en la ionosfera: su alcance es óptico.",
+   "whyNot": [
+    null,
+    "La onda de tierra pertenece a LF y MF.",
+    "La ionosférica es propia de HF.",
+    "Es otro nombre de la onda de tierra."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.09.002",
+   "type": "calculo",
+   "level": 2,
+   "q": "La longitud de onda de 121,5 MHz es de unos:",
+   "options": [
+    "2,5 km",
+    "0,25 m",
+    "2,5 m",
+    "25 m"
+   ],
+   "correct": 2,
+   "why": "λ = 300 / 121,5 = 2,47 m.",
+   "whyNot": [
+    "Confunde unidades.",
+    "Resulta de usar una frecuencia 10 veces mayor.",
+    null,
+    "Resulta de usar una frecuencia 10 veces menor."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.09.003",
+   "type": "concepto",
+   "level": 1,
+   "q": "Al aumentar la frecuencia de una onda:",
+   "options": [
+    "Disminuye su velocidad",
+    "Disminuye su longitud de onda",
+    "Aumenta su velocidad",
+    "Aumenta su longitud de onda"
+   ],
+   "correct": 1,
+   "why": "La velocidad es constante, por lo que frecuencia y longitud de onda son inversamente proporcionales.",
+   "whyNot": [
+    "La velocidad no depende de la frecuencia.",
+    null,
+    "Todas viajan a la velocidad de la luz.",
+    "Es justo al revés: λ = c / f."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.09.004",
+   "type": "regla",
+   "level": 1,
+   "q": "Las comunicaciones de largo alcance (miles de km) usan:",
+   "options": [
+    "HF",
+    "SHF",
+    "UHF",
+    "VHF"
+   ],
+   "correct": 0,
+   "why": "Las HF se reflejan en la ionosfera y alcanzan grandes distancias.",
+   "whyNot": [
+    null,
+    "Es línea de vista.",
+    "Es línea de vista también.",
+    "Su alcance es óptico."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.09.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "El efecto nocturno en el ADF se debe a:",
+   "options": [
+    "La refracción en la costa",
+    "La estática de las tormentas",
+    "La interferencia de la onda ionosférica con la onda de tierra",
+    "La polarización vertical"
+   ],
+   "correct": 2,
+   "why": "Al caer la capa D, las ondas MF se reflejan en la ionosfera y se mezclan con la de tierra, y la aguja oscila.",
+   "whyNot": [
+    "Eso es el efecto de costa.",
+    "Eso es la interferencia de tormentas.",
+    null,
+    "No tiene relación con la noche."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.09.006",
+   "type": "regla",
+   "level": 1,
+   "q": "La banda de frecuencias del NDB es:",
+   "options": [
+    "190 a 1750 kHz",
+    "118 a 137 MHz",
+    "108 a 117,975 MHz",
+    "960 a 1215 MHz"
+   ],
+   "correct": 0,
+   "why": "El NDB usa LF/MF, entre 190 y 1750 kHz.",
+   "whyNot": [
+    null,
+    "Es la banda de comunicaciones VHF.",
+    "Es la banda del VOR.",
+    "Es la banda del DME."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.09.007",
+   "type": "calculo",
+   "level": 2,
+   "q": "Un avión a 3600 ft sobre el terreno comunica con una torre cuya antena está a 100 ft. El alcance óptico es de unos:",
+   "options": [
+    "74 NM",
+    "86 NM",
+    "123 NM",
+    "60 NM"
+   ],
+   "correct": 1,
+   "why": "1,23 × (√3600 + √100) = 1,23 × 70 = 86 NM.",
+   "whyNot": [
+    "Calcula la raíz de la suma de alturas en vez de la suma de raíces.",
+    null,
+    "Resulta de usar 1,23 × 100, sin hacer raíces.",
+    "Es solo la raíz de la altura del avión, sin el factor 1,23."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.09.008",
+   "type": "concepto",
+   "level": 1,
+   "q": "El VOR y el NDB se diferencian en que el VOR:",
+   "options": [
+    "Sufre efecto nocturno",
+    "Usa onda de tierra",
+    "Usa MF",
+    "No sufre efecto nocturno ni de costa"
+   ],
+   "correct": 3,
+   "why": "Al estar en VHF y propagarse por onda directa, el VOR no tiene los errores nocturno y de costa.",
+   "whyNot": [
+    "Eso es del NDB.",
+    "El VOR usa onda directa.",
+    "El VOR usa VHF.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.09.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "La onda de tierra se atenúa menos al propagarse sobre:",
+   "options": [
+    "Terreno rocoso y seco",
+    "El mar",
+    "Terreno desértico",
+    "Una cordillera"
+   ],
+   "correct": 1,
+   "why": "El agua salada conduce bien y la onda de tierra se propaga con menos pérdidas que sobre terreno seco o rocoso.",
+   "whyNot": [
+    "Atenúa más.",
+    null,
+    "Atenúa más.",
+    "Atenúa mucho más."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.09.010",
+   "type": "concepto",
+   "level": 1,
+   "q": "En VHF aeronáutica la polarización de las antenas es:",
+   "options": [
+    "Horizontal",
+    "Circular",
+    "Cruzada",
+    "Vertical"
+   ],
+   "correct": 3,
+   "why": "Las antenas de VHF de comunicaciones son varillas verticales con polarización vertical.",
+   "whyNot": [
+    "Se usa en radiodifusión de TV, no en comunicaciones aeronáuticas.",
+    "Se usa en algunas antenas de satélite, como las de GNSS.",
+    "No es un tipo de polarización de uso aeronáutico.",
+    null
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.09.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "Entre el final de la onda de tierra y el comienzo de la reflexión ionosférica queda una:",
+   "options": [
+    "Zona de absorción",
+    "Zona de sombra de montaña",
+    "Zona de silencio",
+    "Zona de cono de silencio"
+   ],
+   "correct": 2,
+   "why": "En HF existe una zona de silencio donde no llega ni la onda de tierra ni la ionosférica.",
+   "whyNot": [
+    "La absorción es un fenómeno distinto.",
+    "No se debe al relieve.",
+    null,
+    "El cono de silencio es el del VOR sobre la estación."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.060.09.01",
+   "front": "Longitud de onda",
+   "back": "λ (m) = 300 / f (MHz); a más frecuencia, menos longitud de onda"
+  },
+  {
+   "id": "c.060.09.02",
+   "front": "Onda de tierra",
+   "back": "LF y MF; sigue la curvatura; NDB"
+  },
+  {
+   "id": "c.060.09.03",
+   "front": "Onda ionosférica",
+   "back": "HF; se refleja en la ionosfera; largo alcance"
+  },
+  {
+   "id": "c.060.09.04",
+   "front": "Onda directa",
+   "back": "VHF y superiores; línea de vista; alcance ≈ 1,23 × (√h1 + √h2) NM"
+  },
+  {
+   "id": "c.060.09.05",
+   "front": "Bandas de las ayudas",
+   "back": "NDB 190–1750 kHz; VOR 108–117,975 MHz; DME 960–1215 MHz"
+  },
+  {
+   "id": "c.060.09.06",
+   "front": "Efecto nocturno y de costa",
+   "back": "Solo en el NDB (MF)"
+  }
+ ]
+}

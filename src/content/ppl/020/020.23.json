@@ -1,0 +1,532 @@
+{
+  "lesson": {
+    "id": "020.23",
+    "title": "Giróscopos",
+    "summary": "Rigidez y precesión del giróscopo, deriva real y aparente (15° × sen latitud por hora), horizonte artificial, direccional, coordinador de viraje y bola, fuentes de vacío y eléctricas, y cómo se reconocen y se gestionan los fallos.",
+    "objectives": [
+      "Explicar la rigidez en el espacio y la precesión de un giróscopo",
+      "Calcular la deriva aparente del direccional a una latitud dada y distinguirla de la deriva real",
+      "Describir el horizonte artificial, el direccional y el coordinador de viraje con su bola",
+      "Diferenciar los instrumentos movidos por vacío de los eléctricos y el valor normal de la succión",
+      "Reconocer el fallo de la bomba de vacío y qué instrumentos pierden la referencia"
+    ],
+    "sections": [
+      {
+        "title": "Rigidez y precesión",
+        "text": [
+          "Un **giróscopo** es un rotor pesado que gira muy deprisa. Tiene dos propiedades que lo hacen útil como referencia.",
+          "La primera es la **rigidez en el espacio** (inercia giroscópica): el eje de un rotor que gira mantiene su orientación respecto al espacio si no lo perturba una fuerza. Es mayor cuanto **más masa** tiene el rotor, **más rápido gira** y **más lejos del eje** está concentrada la masa. La segunda es la **precesión**: cuando se aplica una fuerza al eje, el giróscopo no se inclina en la dirección de la fuerza, sino que responde **90° más allá, en el sentido de giro del rotor**. Es lo que hace que un instrumento giroscópico reaccione a un viraje del avión y es también la fuente de varios errores.",
+          "Un giróscopo con **dos grados de libertad** (montado en dos anillos, o cardan) puede orientarse en cualquier dirección y es el que usan el horizonte y el direccional. Uno con **un solo grado de libertad** solo puede girar en torno a un eje, y se usa para medir velocidades de giro (el coordinador)."
+        ]
+      },
+      {
+        "title": "Deriva real y aparente",
+        "text": [
+          "Ningún giróscopo es perfecto. La **deriva real** (*real wander*) viene del rozamiento en los cojinetes, de imperfecciones de equilibrio del rotor y de otros defectos mecánicos; es pequeña e impredecible. La **deriva aparente** (*apparent wander*) no la causa el instrumento: la Tierra gira bajo el giróscopo, que mantiene su orientación respecto al espacio, y a un observador en el suelo le parece que el eje se desvía.",
+          "Para un giróscopo de eje horizontal, como el del direccional, esa deriva aparente depende de la latitud: es máxima en el polo, **15° por hora**, y nula en el ecuador. La fórmula es: **deriva ≈ 15° × sen(latitud) por hora**. Además hay una **deriva por transporte**, pues el avión se mueve sobre la superficie curva de la Tierra, que depende de la velocidad y del rumbo."
+        ],
+        "formulas": [
+          {
+            "f": "Deriva aparente ≈ 15° × sen(latitud) por hora",
+            "note": "Giróscopo horizontal; 15° por hora es la velocidad de rotación de la Tierra."
+          }
+        ],
+        "examples": [
+          {
+            "q": "¿Qué deriva aparente tiene el direccional en una hora a 40° N?",
+            "a": "15° × sen 40° = 15° × 0,643 ≈ 9,6°, es decir, unos 10° por hora."
+          },
+          {
+            "q": "¿Y a 28° N, en Canarias?",
+            "a": "15° × sen 28° = 15° × 0,469 ≈ 7° por hora."
+          }
+        ],
+        "verify": true
+      },
+      {
+        "title": "Horizonte artificial",
+        "text": [
+          "El horizonte artificial (indicador de actitud) es un giróscopo de **eje vertical** con dos grados de libertad. Mantiene fijo el plano horizontal mientras el avión cabecea y alabea alrededor, de modo que la silueta del avión de la esfera muestra su actitud respecto al horizonte. Un mecanismo de **erección** (péndulos o aletas) lo mantiene vertical respecto a la gravedad y lo corrige tras las perturbaciones.",
+          "Tiene pequeños **errores**: tras virajes sostenidos y con aceleraciones, puede marcar una ligera falsa actitud (por ejemplo, un pequeño ascenso al acelerar) que se corrige sola poco después. Un error grande indica un problema del instrumento."
+        ]
+      },
+      {
+        "title": "Direccional",
+        "text": [
+          "El direccional (indicador de rumbo, DG) es un giróscopo de **eje horizontal**, también con dos grados de libertad. Una **rosa de rumbos** gira solidaria con el avión alrededor de su eje, que se mantiene fijo respecto al espacio. No es magnético: no busca el norte, solo mantiene el rumbo que le pongas. Por eso hay que **ponerlo en hora con la brújula** al arrancar y volver a comprobarlo cada unos 15 minutos, porque deriva.",
+          "Un botón de **reajuste** permite girar la rosa para alinearla. Se reajusta en vuelo recto y nivelado, no en viraje. Con alabeos o cabeceos grandes (más de unos 50 o 60° en los modelos antiguos) el giróscopo choca con sus topes y pierde la referencia (*tumbling*)."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Coordinador de viraje y bola",
+        "text": [
+          "El **coordinador de viraje** es un giróscopo de un solo grado de libertad, con el **eje inclinado unos 30°** respecto al eje longitudinal. Así responde al **alabeo** y al **régimen de viraje**: la silueta del avión se inclina al empezar a alabear y se estabiliza en una marca cuando el viraje es estándar. Un indicador de viraje antiguo (aguja) solo muestra el régimen de giro. El **viraje estándar** (régimen uno) es de **3° por segundo** y completa 360° en 2 minutos; la marca del instrumento suele ser «2 MIN».",
+          "Bajo el coordinador va la **bola**, un inclinómetro de bola en un tubo curvo con líquido. Mide la **coordinación**: la bola centrada indica vuelo coordinado. Si la bola cae hacia el **interior** del viraje, hay **resbale** (*slip*): demasiada inclinación para el rumbo; si se va al **exterior**, **derrape** (*skid*): demasiado pedal. «Pisa la bola»: para centrarla se aplica pedal del lado hacia el que cae."
+        ]
+      },
+      {
+        "title": "Fuentes de energía y fallos",
+        "text": [
+          "Los giróscopos necesitan un rotor que gire. En los aviones del curso, el horizonte y el direccional funcionan por **vacío** (succión): una **bomba de vacío movida por el motor** extrae aire de la caja de los instrumentos y el aire que entra por un chorro hace girar el rotor. La succión normal es de **4,5 a 5,5 inHg**. El coordinador de viraje es **eléctrico**. En muchos aviones hay un indicador de succión y, a veces, un aviso de baja succión.",
+          "Si falla la bomba, la succión cae a cero, el horizonte y el direccional pierden velocidad y empiezan a dar indicaciones erróneas de forma **gradual**, a veces sin bandera de aviso. El coordinador sigue funcionando. Se pasa a pilotar con el **coordinador de viraje y la bola**, la brújula, el anemómetro, el altímetro y el variómetro, y se mantiene el avión en actitud con la referencia visual del exterior o se aterriza lo antes posible."
+        ],
+        "figure": "svg:020-giroscopos",
+        "caption": "Instrumentos giroscópicos: eje, grados de libertad y alimentación de cada uno."
+      }
+    ],
+    "numbers": [
+      "Precesión: la respuesta aparece 90° más allá, en el sentido de giro del rotor",
+      "Deriva aparente ≈ 15° × sen(latitud) por hora (unos 10° por hora a 40° N)",
+      "Vacío normal: 4,5 a 5,5 inHg; horizonte y direccional por vacío, coordinador eléctrico",
+      "Viraje estándar: 3° por segundo, 360° en 2 minutos",
+      "Direccional: comprobar con la brújula cada 15 minutos aproximadamente"
+    ],
+    "traps": [
+      "Creer que el direccional es magnético: solo mantiene la orientación y deriva.",
+      "Confundir deriva real (defectos del instrumento) con deriva aparente (rotación de la Tierra).",
+      "Pensar que el coordinador depende del vacío: es eléctrico en los aviones del curso.",
+      "Olvidar que la precesión actúa 90° después de la fuerza aplicada.",
+      "Interpretar al revés la bola: cae hacia el interior en resbale y hacia el exterior en derrape."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 8: instrumentos giroscópicos",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Manual de vuelo del PA-28-161 y del C172S: sistema de vacío",
+        "url": "https://www.piper.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28 (instrumentos de vuelo y vacío)",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      },
+      {
+        "label": "Prueba de motor del PA-28 (succión)",
+        "href": "#/ac/pa28/flow/runup"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.23.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La rigidez en el espacio de un giróscopo es mayor cuanto:",
+      "options": [
+        "Más masa, más velocidad de giro y masa más alejada del eje",
+        "Menos masa y menos velocidad de giro",
+        "Menos masa y más velocidad",
+        "Más masa pero menos velocidad"
+      ],
+      "correct": 0,
+      "why": "La rigidez aumenta con la masa, la velocidad angular y la distancia de la masa al eje.",
+      "whyNot": [
+        null,
+        "Disminuye con menos masa y menos giro.",
+        "Menos masa reduce la rigidez.",
+        "Menos velocidad reduce la rigidez."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.23.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "La precesión giroscópica es la respuesta del giróscopo a una fuerza aplicada, que aparece:",
+      "options": [
+        "En la misma dirección de la fuerza",
+        "En dirección opuesta",
+        "90° más allá, en el sentido de giro del rotor",
+        "Solo con el rotor parado"
+      ],
+      "correct": 2,
+      "why": "El efecto de la fuerza aparece 90° después, en el sentido de giro del rotor.",
+      "whyNot": [
+        "La respuesta no coincide con la fuerza.",
+        "No es una respuesta opuesta.",
+        null,
+        "Solo ocurre con el rotor girando."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.23.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "La deriva aparente de un giróscopo de eje horizontal se debe a:",
+      "options": [
+        "Defectos del rotor",
+        "La rotación de la Tierra",
+        "El rozamiento en los cojinetes",
+        "El viento"
+      ],
+      "correct": 1,
+      "why": "El eje mantiene su orientación en el espacio mientras la Tierra gira: desde el suelo parece que se desvía.",
+      "whyNot": [
+        "Eso es deriva real.",
+        null,
+        "También es deriva real.",
+        "El viento no afecta al giróscopo."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.23.004",
+      "type": "calculo",
+      "level": 2,
+      "q": "La deriva aparente del direccional a 40° N, aproximadamente, es de:",
+      "options": [
+        "0° por hora",
+        "15° por hora",
+        "10° por hora",
+        "40° por hora"
+      ],
+      "correct": 2,
+      "why": "15° × sen 40° ≈ 9,6° por hora.",
+      "whyNot": [
+        "Solo sería 0 en el ecuador.",
+        "Solo sería 15° en el polo.",
+        null,
+        "40° es la latitud, no la deriva."
+      ],
+      "ref": "Deriva aparente = 15° × sen(latitud)"
+    },
+    {
+      "id": "020.23.005",
+      "type": "calculo",
+      "level": 2,
+      "q": "La deriva aparente aproximada de un direccional a 30° de latitud norte es:",
+      "options": [
+        "7,5° por hora",
+        "15° por hora",
+        "26° por hora",
+        "30° por hora"
+      ],
+      "correct": 0,
+      "why": "15° × sen 30° = 15° × 0,5 = 7,5° por hora.",
+      "whyNot": [
+        null,
+        "Sería 15° en el polo.",
+        "No corresponde a ninguna aplicación correcta de la fórmula.",
+        "30° es la latitud."
+      ],
+      "ref": "Deriva aparente = 15° × sen(latitud)"
+    },
+    {
+      "id": "020.23.006",
+      "type": "concepto",
+      "level": 1,
+      "q": "El horizonte artificial es un giróscopo de:",
+      "options": [
+        "Eje horizontal",
+        "Eje vertical",
+        "Eje inclinado 30°",
+        "Sin eje definido"
+      ],
+      "correct": 1,
+      "why": "El rotor gira en un plano horizontal, con eje vertical, y mantiene la referencia del horizonte.",
+      "whyNot": [
+        "Ese es el direccional.",
+        null,
+        "Ese es el coordinador de viraje.",
+        "Todos los giróscopos tienen eje."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.23.007",
+      "type": "concepto",
+      "level": 1,
+      "q": "El direccional es un giróscopo de eje:",
+      "options": [
+        "Horizontal",
+        "Vertical",
+        "Inclinado 30°",
+        "Móvil por el campo magnético"
+      ],
+      "correct": 0,
+      "why": "Su rotor gira en un plano vertical, con eje horizontal, manteniendo fija la rosa respecto al espacio.",
+      "whyNot": [
+        null,
+        "Ese es el horizonte.",
+        "Ese es el coordinador.",
+        "No es magnético."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.23.008",
+      "type": "regla",
+      "level": 1,
+      "q": "El direccional debe comprobarse con la brújula:",
+      "options": [
+        "Solo antes del vuelo",
+        "Nunca; es magnético",
+        "Cada 2 horas",
+        "Cada unos 15 minutos, en vuelo recto y nivelado"
+      ],
+      "correct": 3,
+      "why": "Deriva por la rotación de la Tierra y por defectos; se alinea con la brújula en vuelo recto y nivelado a intervalos regulares.",
+      "whyNot": [
+        "Hay que repetirlo en vuelo.",
+        "El direccional no es magnético.",
+        "Dos horas son demasiadas.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.23.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "El eje del giróscopo del coordinador de viraje está inclinado unos 30° para que:",
+      "options": [
+        "Responda al alabeo y al régimen de viraje",
+        "Mida solo el cabeceo",
+        "Funcione sin electricidad",
+        "Mantenga el norte"
+      ],
+      "correct": 0,
+      "why": "Con el eje inclinado, el rotor responde al giro alrededor del eje de guiñada y del de alabeo.",
+      "whyNot": [
+        null,
+        "No mide cabeceo.",
+        "Es eléctrico.",
+        "No tiene relación con el norte."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.23.010",
+      "type": "regla",
+      "level": 1,
+      "q": "Un viraje estándar (régimen uno) es de:",
+      "options": [
+        "1° por segundo",
+        "10° por segundo",
+        "6° por segundo",
+        "3° por segundo"
+      ],
+      "correct": 3,
+      "why": "3° por segundo: 360° en 2 minutos.",
+      "whyNot": [
+        "Un grado por segundo tardaría 6 minutos.",
+        "Es mucho más rápido que un viraje estándar.",
+        "6° por segundo es un viraje de régimen doble.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.23.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un viraje la bola está desplazada hacia el exterior del viraje. Es un:",
+      "options": [
+        "Resbale",
+        "Viraje estándar",
+        "Viraje coordinado",
+        "Derrape"
+      ],
+      "correct": 3,
+      "why": "La bola hacia el exterior indica derrape: demasiado pedal respecto a la inclinación.",
+      "whyNot": [
+        "En el resbale la bola cae hacia el interior.",
+        "El régimen no dice nada de la coordinación.",
+        "En un viraje coordinado la bola está centrada.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.23.012",
+      "type": "regla",
+      "level": 2,
+      "q": "Para centrar la bola que está a la derecha se aplica:",
+      "options": [
+        "Pedal izquierdo",
+        "Más alabeo a la izquierda",
+        "Pedal derecho",
+        "Más gases"
+      ],
+      "correct": 2,
+      "why": "«Pisa la bola»: se aplica pedal del lado hacia el que está la bola.",
+      "whyNot": [
+        "Sería alejarla más.",
+        "Cambia el alabeo pero no corrige la coordinación directamente.",
+        null,
+        "La potencia no centra la bola."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.23.013",
+      "type": "regla",
+      "level": 1,
+      "q": "La succión normal del sistema de vacío de un avión ligero es de:",
+      "options": [
+        "1,0 a 2,0 inHg",
+        "4,5 a 5,5 inHg",
+        "10 a 12 inHg",
+        "20 a 25 inHg"
+      ],
+      "correct": 1,
+      "why": "El valor habitual en aviones de escuela está entre 4,5 y 5,5 inHg (consulta el POH).",
+      "whyNot": [
+        "Es insuficiente para mover los rotores.",
+        null,
+        "Es la MAP típica de ralentí, no la succión.",
+        "No corresponde a ningún sistema de vacío."
+      ],
+      "ref": "POH; PHAK cap. 8"
+    },
+    {
+      "id": "020.23.014",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si falla la bomba de vacío, ¿qué instrumentos pierden la referencia?",
+      "options": [
+        "Anemómetro y altímetro",
+        "Horizonte artificial y direccional",
+        "Coordinador de viraje",
+        "Brújula"
+      ],
+      "correct": 1,
+      "why": "El horizonte y el direccional funcionan por vacío; el coordinador es eléctrico y los demás no usan giróscopos.",
+      "whyNot": [
+        "Funcionan con presión estática y pitot.",
+        null,
+        "Es eléctrico y sigue funcionando.",
+        "Es magnética y no depende de energía."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.23.015",
+      "type": "concepto",
+      "level": 3,
+      "q": "El fallo gradual de la bomba de vacío en vuelo suele manifestarse como:",
+      "options": [
+        "Indicaciones erróneas del horizonte y del direccional que se van degradando",
+        "Una bandera roja inmediata",
+        "Una explosión del motor",
+        "Caída inmediata de RPM"
+      ],
+      "correct": 0,
+      "why": "Los rotores van frenando poco a poco y las indicaciones se degradan sin aviso brusco.",
+      "whyNot": [
+        null,
+        "Muchos instrumentos no tienen bandera de aviso.",
+        "No afecta al motor.",
+        "No afecta a las RPM."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.23.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿A cuál de estos errores corresponde la deriva por rozamiento en los cojinetes del giróscopo?",
+      "options": [
+        "Deriva aparente",
+        "Deriva por transporte",
+        "Deriva real",
+        "Error de aceleración"
+      ],
+      "correct": 2,
+      "why": "La deriva real viene de los defectos del instrumento: rozamiento, desequilibrio o imperfecciones.",
+      "whyNot": [
+        "La aparente se debe a la rotación de la Tierra.",
+        "La de transporte depende del movimiento sobre la Tierra.",
+        null,
+        "Es un error de actitud del horizonte."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.23.017",
+      "type": "lectura",
+      "level": 2,
+      "q": "Según la figura, en caso de fallo del vacío, ¿qué instrumento giroscópico de los tres sigue funcionando?",
+      "figure": "svg:020-giroscopos",
+      "options": [
+        "El horizonte artificial",
+        "El coordinador de viraje",
+        "El direccional",
+        "Ninguno"
+      ],
+      "correct": 1,
+      "why": "El coordinador es eléctrico: sigue funcionando aunque falle el vacío.",
+      "whyNot": [
+        "Funciona por vacío.",
+        null,
+        "También funciona por vacío.",
+        "Uno de ellos es eléctrico."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.23.018",
+      "type": "lectura",
+      "level": 2,
+      "q": "El direccional marca 090° pero la brújula, en vuelo recto y nivelado, marca 094°. ¿Qué se hace?",
+      "data": "Direccional: 090°\nBrújula: 094° (estable, vuelo recto y nivelado)\nDesvío: despreciable",
+      "options": [
+        "Nada: la brújula no es fiable",
+        "Apagar el direccional",
+        "Cambiar de rumbo 4°",
+        "Reajustar el direccional a 094° con el botón"
+      ],
+      "correct": 3,
+      "why": "El direccional ha derivado y se realinea con la brújula en vuelo recto y nivelado.",
+      "whyNot": [
+        "La brújula es la referencia en vuelo recto y nivelado.",
+        "No se apaga: se reajusta.",
+        "El rumbo real es el de la brújula, no hay que cambiar de rumbo.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.23.01",
+      "front": "Precesión",
+      "back": "La respuesta a una fuerza aparece 90° más allá, en el sentido de giro del rotor"
+    },
+    {
+      "id": "c.020.23.02",
+      "front": "Deriva aparente del direccional",
+      "back": "≈ 15° × sen(latitud) por hora (unos 10° por hora a 40° N)"
+    },
+    {
+      "id": "c.020.23.03",
+      "front": "Eje de cada giróscopo",
+      "back": "Horizonte: vertical. Direccional: horizontal. Coordinador: inclinado unos 30°"
+    },
+    {
+      "id": "c.020.23.04",
+      "front": "Succión normal del vacío",
+      "back": "4,5 a 5,5 inHg"
+    },
+    {
+      "id": "c.020.23.05",
+      "front": "Instrumentos por vacío y eléctricos",
+      "back": "Vacío: horizonte y direccional. Eléctrico: coordinador de viraje"
+    },
+    {
+      "id": "c.020.23.06",
+      "front": "Bola hacia el exterior del viraje",
+      "back": "Derrape; hacia el interior, resbale. Se centra con pedal del lado de la bola"
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+ "lesson": {
+  "title": "Sistemas de presión",
+  "summary": "Anticiclones cálidos y fríos, dorsales y subsidencia; depresiones frontales, térmicas, orográficas y polares; vaguadas, pantano barométrico y DANA, con el tiempo asociado a cada uno.",
+  "objectives": [
+   "Describir el movimiento del aire y el tiempo en un anticiclón y en una depresión",
+   "Distinguir anticiclones cálidos y fríos y dorsales",
+   "Explicar qué es la baja térmica ibérica y por qué no tiene frentes",
+   "Reconocer vaguadas, pantanos barométricos y DANA",
+   "Asociar cada sistema a su tiempo y riesgo para el vuelo"
+  ],
+  "sections": [
+   {
+    "title": "Anticiclón y depresión",
+    "text": [
+     "Un **anticiclón** (alta presión) es un área donde la presión en el centro es mayor que a su alrededor. Una **depresión o borrasca** (baja presión) es lo contrario. En el hemisferio norte el viento rodea el anticiclón en **sentido horario** y la depresión en **sentido antihorario**, y en superficie, por la fricción, se desvía hacia fuera del anticiclón y hacia dentro de la borrasca.",
+     "En el anticiclón el aire **diverge en superficie** y **desciende desde arriba (subsidencia)**; al bajar se comprime y se calienta, y las nubes se disipan. En la depresión el aire **converge en superficie** y **asciende**, se enfría, condensa y forma nubes y precipitación. De ahí la regla básica: **anticiclón, tiempo estable y despejado; borrasca, nubosidad y precipitación**. Las isobaras muy juntas indican viento fuerte."
+    ]
+   },
+   {
+    "title": "Anticiclones",
+    "text": [
+     "Un **anticiclón cálido** o dinámico, como el de las **Azores**, es profundo: la subsidencia genera una **inversión de subsidencia** en capas bajas que atrapa humedad y polvo por debajo, y el resultado es estabilidad, cielos despejados y, a veces, calima o niebla baja en invierno. Un **anticiclón frío** o térmico, como el que se forma en invierno sobre el continente por el enfriamiento del suelo, es poco profundo y se asocia a **inversión de radiación**, nieblas y estratos bajos persistentes, con viento flojo.",
+     "Una **dorsal** es una prolongación de la alta presión, como una cuña; el tiempo en ella es estable y de buen aspecto, aunque la subsidencia produce niebla o estratos por debajo de la inversión. Su contrario es la **vaguada**."
+    ]
+   },
+   {
+    "title": "Depresiones",
+    "text": [
+     "Las **depresiones frontales** son las borrascas atlánticas de latitudes medias, con frentes cálido, frío y oclusión (véase 050.13). Otras bajas no son frontales. La **depresión térmica**, como la **baja térmica ibérica** del verano, se forma sobre la meseta por el calentamiento intenso del suelo: el aire caliente sube y la presión baja. No tiene frentes, produce convergencia en superficie y, con humedad, tormentas de tarde, además de calima y rachas de viento. Las **depresiones orográficas** (de sotavento) se forman por el flujo sobre una cordillera, por ejemplo, la de Génova a sotavento de los Alpes. Las **bajas polares** son pequeñas e intensas, sobre el mar en aire frío inestable.",
+     "La **vaguada** es una prolongación alargada de baja presión, con isobaras en forma de V. En ella hay convergencia y nubosidad, y suelen acompañar a los frentes. El **pantano barométrico** es una región amplia de presiones casi iguales, con isobaras muy separadas y poco viento; los fenómenos locales (nieblas, tormentas convectivas) dependen del suelo, del calentamiento y de la humedad, y son difíciles de predecir."
+    ]
+   },
+   {
+    "title": "DANA y gota fría",
+    "text": [
+     "Una **DANA** (depresión aislada en niveles altos) es una masa de aire frío en altura que se aísla de la corriente en chorro y gira como un remolino a unos 5 o 6 km de altura. Lo que se llama **gota fría** es la misma idea. En altura es muy fría, así que, si encima hay aire cálido y húmedo en superficie (por ejemplo, el Mediterráneo en otoño, aún caliente), el gradiente se vuelve muy inestable: **tormentas intensas, lluvias muy fuertes, granizo y mal tiempo persistente**, y puede ser peligrosa tanto para el vuelo como en tierra.",
+     "Rasgos prácticos: su centro es lento e impredecible; puede llevar tormentas al mismo punto durante muchas horas; el mal tiempo puede no coincidir con frentes. En el mapa de superficie puede haber poca señal, y en la altura se ve como una baja cerrada de aire frío."
+    ],
+    "note": {
+     "kind": "es",
+     "text": "En España las DANA son más frecuentes en otoño y primavera. Las lluvias torrenciales del Mediterráneo y las grandes inundaciones se han asociado repetidamente a ellas."
+    }
+   }
+  ],
+  "numbers": [
+   "Anticiclón: sentido horario (HN), divergencia en superficie, subsidencia, tiempo estable",
+   "Depresión: sentido antihorario (HN), convergencia, ascenso, nubes y precipitación",
+   "Baja térmica ibérica: verano, sin frentes; tormentas de tarde y calima",
+   "DANA: baja aislada en altura, fría; tormentas y lluvia intensa si hay aire cálido y húmedo debajo",
+   "Isobaras juntas: viento fuerte"
+  ],
+  "traps": [
+   "La baja térmica ibérica no es una borrasca con frentes.",
+   "Anticiclón no siempre es buen tiempo: las nieblas y los estratos bajos aparecen bajo la inversión.",
+   "Una DANA no tiene que mostrar un frente en superficie.",
+   "En el hemisferio norte el viento gira en horario alrededor de los anticiclones y en antihorario alrededor de las borrascas."
+  ],
+  "spain": [
+   "La baja térmica ibérica domina el interior peninsular en verano.",
+   "Las DANA, sobre todo en otoño, provocan lluvias torrenciales en el Mediterráneo."
+  ],
+  "sources": [
+   {
+    "title": "AEMET, Apuntes de meteorología aeronáutica",
+    "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
+   },
+   {
+    "title": "FAA-H-8083-28, Aviation Weather Handbook",
+    "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+   }
+  ],
+  "id": "050.14",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "050.14.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "En el hemisferio norte, el viento alrededor de un anticiclón gira en sentido:",
+   "options": [
+    "Alterna cada día",
+    "Antihorario",
+    "Horario",
+    "Hacia el centro sin rotar"
+   ],
+   "correct": 2,
+   "why": "El flujo es horario alrededor de la alta y antihorario alrededor de la baja.",
+   "whyNot": [
+    "No alterna.",
+    "Es el sentido en una borrasca.",
+    null,
+    "La rotación existe por la fuerza de Coriolis."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.14.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "Dentro de un anticiclón, el aire:",
+   "options": [
+    "Desciende y converge en superficie",
+    "Asciende y diverge en superficie",
+    "Asciende y converge en superficie",
+    "Desciende (subsidencia) y diverge en superficie"
+   ],
+   "correct": 3,
+   "why": "El hundimiento del aire lo calienta y disipa las nubes.",
+   "whyNot": [
+    "Si convergiera en superficie, subiría.",
+    "El aire que sube diverge arriba, no en superficie.",
+    "Eso es una borrasca.",
+    null
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.14.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "La baja térmica ibérica:",
+   "options": [
+    "Es una borrasca atlántica con frentes",
+    "Es un anticiclón cálido",
+    "Es una DANA",
+    "Es una depresión de verano sin frentes sobre la meseta"
+   ],
+   "correct": 3,
+   "why": "El calentamiento del suelo hace subir el aire y baja la presión; puede producir tormentas de tarde.",
+   "whyNot": [
+    "No tiene frentes.",
+    "Es una baja, no una alta.",
+    "Es una baja en superficie, no en altura.",
+    null
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.14.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una DANA típica produce el peor tiempo cuando:",
+   "options": [
+    "Hay una dorsal fuerte",
+    "Hay aire cálido y húmedo en superficie bajo el aire frío de altura",
+    "El suelo está frío y seco",
+    "Hay niebla de radiación"
+   ],
+   "correct": 1,
+   "why": "La combinación de aire muy frío en altura y cálido en superficie da inestabilidad intensa.",
+   "whyNot": [
+    "No hay inestabilidad.",
+    null,
+    "Hay estabilidad y poco riesgo de tormentas.",
+    "La niebla es una situación estable."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.14.005",
+   "type": "concepto",
+   "level": 1,
+   "q": "Un anticiclón frío invernal sobre tierra se asocia con:",
+   "options": [
+    "Inversión de radiación, nieblas y estratos bajos",
+    "Viento muy fuerte",
+    "Frentes activos",
+    "Tormentas fuertes"
+   ],
+   "correct": 0,
+   "why": "El enfriamiento del suelo crea una inversión que atrapa humedad en la capa baja.",
+   "whyNot": [
+    null,
+    "Con isobaras anchas el viento es flojo.",
+    "No hay frentes.",
+    "No hay inestabilidad suficiente."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.14.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un pantano barométrico es una región con:",
+   "options": [
+    "Presiones casi uniformes, isobaras muy separadas y poco viento",
+    "Una depresión muy profunda",
+    "Isobaras muy juntas",
+    "Un frente frío activo"
+   ],
+   "correct": 0,
+   "why": "El gradiente de presión es débil, así que el viento es flojo y el tiempo depende de efectos locales.",
+   "whyNot": [
+    null,
+    "Es una zona de presiones parecidas.",
+    "Eso da viento fuerte.",
+    "No hay frentes."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.14.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una vaguada es:",
+   "options": [
+    "Un frente estacionario",
+    "Una prolongación alargada de baja presión, con isobaras en V",
+    "Una región sin viento",
+    "Una prolongación de alta presión"
+   ],
+   "correct": 1,
+   "why": "La vaguada tiene convergencia y nubosidad; suele acompañar a los frentes.",
+   "whyNot": [
+    "El frente puede acompañarla, pero no es lo mismo.",
+    null,
+    "Es un pantano barométrico.",
+    "Es una dorsal."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.14.008",
+   "type": "concepto",
+   "level": 1,
+   "q": "Isobaras muy próximas entre sí indican:",
+   "options": [
+    "Aire seco",
+    "Presión alta",
+    "Viento fuerte",
+    "Viento flojo"
+   ],
+   "correct": 2,
+   "why": "A mayor gradiente de presión, mayor viento.",
+   "whyNot": [
+    "No indica humedad.",
+    "La proximidad no indica el valor de presión.",
+    null,
+    "Isobaras separadas indican viento flojo."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.14.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "El anticiclón de las Azores es un anticiclón:",
+   "options": [
+    "Cálido y profundo, con subsidencia",
+    "Frío y superficial",
+    "Térmico estacional",
+    "Orográfico"
+   ],
+   "correct": 0,
+   "why": "Es un anticiclón subtropical dinámico, profundo, con subsidencia y estabilidad.",
+   "whyNot": [
+    null,
+    "Es el invernal continental.",
+    "No es de origen térmico local.",
+    "No se origina por una cordillera."
+   ],
+   "ref": "AEMET apuntes"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.050.14.01",
+   "front": "Anticiclón",
+   "back": "Horario (HN); subsidencia; divergencia en superficie; estable"
+  },
+  {
+   "id": "c.050.14.02",
+   "front": "Borrasca",
+   "back": "Antihorario (HN); convergencia; ascenso; nubes y precipitación"
+  },
+  {
+   "id": "c.050.14.03",
+   "front": "Baja térmica ibérica",
+   "back": "Baja de verano sin frentes sobre la meseta; tormentas de tarde y calima"
+  },
+  {
+   "id": "c.050.14.04",
+   "front": "DANA",
+   "back": "Baja aislada fría en altura; con aire cálido y húmedo debajo da tormentas intensas"
+  },
+  {
+   "id": "c.050.14.05",
+   "front": "Pantano barométrico",
+   "back": "Presiones casi iguales, poco viento, tiempo local"
+  }
+ ]
+}

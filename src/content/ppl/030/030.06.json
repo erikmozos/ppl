@@ -1,0 +1,474 @@
+{
+ "lesson": {
+  "title": "Distancias y velocidades",
+  "summary": "Distancias declaradas TORA, TODA, ASDA y LDA, carrera de despegue y distancia hasta 50 ft, y velocidades características: VR, Vx, Vy, VS0, VS1 y velocidad de aproximación.",
+  "objectives": [
+   "Definir TORA, TODA, ASDA y LDA y calcularlas con zona libre de obstáculos, zona de parada y umbral desplazado",
+   "Distinguir carrera de despegue y distancia hasta 50 ft",
+   "Conocer VR, Vx, Vy, VS0, VS1 y la velocidad de aproximación y cuándo se usa cada una",
+   "Comparar distancia disponible y distancia requerida"
+  ],
+  "sections": [
+   {
+    "title": "Las cuatro distancias declaradas",
+    "text": [
+     "Un aeródromo publica, para cada sentido de la pista, cuatro **distancias declaradas**. Son las que debes comparar con las que necesita tu avión. Las define el Anexo 14 de la OACI (y su equivalente en la normativa europea) y vienen en la tabla AD 2 de la AIP y en la carta de aeródromo:"
+    ],
+    "table": {
+     "caption": "Distancias declaradas",
+     "head": [
+      "Sigla",
+      "Nombre",
+      "Qué es"
+     ],
+     "rows": [
+      [
+       "TORA",
+       "Recorrido de despegue disponible",
+       "Longitud de pista disponible y adecuada para la carrera de despegue"
+      ],
+      [
+       "TODA",
+       "Distancia de despegue disponible",
+       "TORA más la zona libre de obstáculos (clearway)"
+      ],
+      [
+       "ASDA",
+       "Distancia de aceleración‑parada disponible",
+       "TORA más la zona de parada (stopway)"
+      ],
+      [
+       "LDA",
+       "Distancia de aterrizaje disponible",
+       "Longitud de pista desde el umbral (el desplazado, si lo hay) disponible y adecuada para la carrera de aterrizaje"
+      ]
+     ],
+     "src": "OACI Anexo 14, cap. 1"
+    },
+    "bullets": [
+     "La **zona libre de obstáculos** (CWY) es un área más allá del final de pista, bajo control del aeródromo, sin obstáculos que perforen cierto plano; el avión puede pasar sobre ella, pero no rodar. Su longitud útil no supera la mitad de la TORA.",
+     "La **zona de parada** (SWY) es una zona de resistencia suficiente para detener un avión abortando el despegue, pero que no se usa para la carrera normal.",
+     "El **umbral desplazado** retrasa el punto de toque: acorta la LDA en ese sentido, pero la pista antes del umbral puede usarse para el despegue y para el rodaje de aterrizaje de la dirección opuesta."
+    ],
+    "figure": "svg:030-distancias",
+    "caption": "TORA, TODA, ASDA y LDA con zona libre de obstáculos, zona de parada y umbral desplazado."
+   },
+   {
+    "title": "Ejemplos resueltos",
+    "examples": [
+     {
+      "q": "Pista de 1500 m con zona libre de obstáculos de 150 m, zona de parada de 100 m y umbral desplazado 200 m (para el sentido de aterrizaje que se considera). ¿TORA, TODA, ASDA y LDA?",
+      "a": "TORA = 1500 m. TODA = 1500 + 150 = 1650 m. ASDA = 1500 + 100 = 1600 m. LDA = 1500 − 200 = 1300 m (el umbral desplazado acorta el aterrizaje, no el despegue)."
+     },
+     {
+      "q": "Un avión necesita 620 m de carrera de despegue y 880 m hasta 50 ft. ¿Puede despegar de una pista con TORA 800 m y TODA 950 m?",
+      "a": "Sí en el manual: la carrera (620 m) cabe en la TORA y la distancia hasta 50 ft (880 m) cabe en la TODA (950 m) con un margen de 70 m. Con el factor de seguridad de 1,33 serían 1170 m: no cabe. Tu margen se decide por la seguridad, no solo por la norma."
+     },
+     {
+      "q": "LDA 700 m y distancia de aterrizaje de manual 480 m (desde 50 ft). ¿Cuál es el factor de seguridad disponible?",
+      "a": "700 / 480 = 1,46: supera el 1,43 recomendado, pero con poco margen en pista mojada."
+     }
+    ]
+   },
+   {
+    "title": "Despegue y aterrizaje: carrera y distancia hasta 50 ft",
+    "text": [
+     "En el manual de vuelo encontrarás dos números para el despegue: la **carrera de despegue** (ground roll), que es lo que rueda el avión hasta que se despega, y la **distancia hasta 50 ft (15 m)**, que incluye además la subida inicial hasta superar un obstáculo ficticio. Para decidir si cabes en una pista, compara la primera con la TORA y la segunda con la TODA (o con la TORA, si hay obstáculos justo al final). En el aterrizaje ocurre lo mismo: el manual da la **carrera de aterrizaje** (desde el toque) y la **distancia desde 50 ft** sobre el umbral, que se compara con la LDA.",
+     "El manual da los valores para pista seca, asfaltada o de hormigón, sin viento y avión nuevo. Aplica los factores de superficie, pendiente y viento de 030.05 y 030.07 antes de comparar."
+    ]
+   },
+   {
+    "title": "Velocidades características",
+    "text": [
+     "Tendrás que reconocerlas por su nombre y saber cuándo se usan:"
+    ],
+    "table": {
+     "caption": "Velocidades de despegue, ascenso y aterrizaje",
+     "head": [
+      "Velocidad",
+      "Significado",
+      "Uso"
+     ],
+     "rows": [
+      [
+       "VS0",
+       "Pérdida con flaps en configuración de aterrizaje (límite inferior del arco blanco)",
+       "Base de la velocidad de aproximación"
+      ],
+      [
+       "VS1",
+       "Pérdida en configuración limpia (límite inferior del arco verde)",
+       "Referencia en crucero y ascenso"
+      ],
+      [
+       "VR",
+       "Velocidad de rotación: se levanta el morro",
+       "En el despegue"
+      ],
+      [
+       "VLOF / V50",
+       "Velocidad de despegue del suelo y a los 50 ft sobre la pista",
+       "Las usa el manual para la distancia hasta 50 ft"
+      ],
+      [
+       "Vx",
+       "Mejor ángulo de ascenso",
+       "Obstáculos, pista corta"
+      ],
+      [
+       "Vy",
+       "Mejor régimen de ascenso",
+       "Ascenso normal"
+      ],
+      [
+       "VREF / Vapp",
+       "Velocidad de aproximación final, ≈ 1,3 VS0",
+       "Aterrizaje"
+      ],
+      [
+       "Mejor planeo",
+       "Velocidad de máximo alcance sin motor",
+       "Fallo de motor"
+      ]
+     ],
+     "src": "AFM; CS-23"
+    },
+    "bullets": [
+     "Un monomotor no tiene **V1** (velocidad de decisión): el concepto de despegue abortado a V1 es de multimotores y de transporte. En tu avión, si el motor falla en la carrera, frenas; si falla ya en el aire, aterrizas con lo que tienes.",
+     "La **velocidad de aproximación** se aumenta con viento fuerte o racha: añade la mitad del viento de cara y toda la racha, hasta un máximo (regla práctica).",
+     "Con la altitud, **Vx y Vy convergen**: en el techo de servicio coinciden y el ascenso es cero."
+    ],
+    "verify": true
+   },
+   {
+    "title": "Viento cruzado en el despegue y el aterrizaje",
+    "text": [
+     "El manual da, como información, el **viento cruzado máximo demostrado** (por ejemplo, unos 17 kt en el PA-28-161 y unos 15 kt en el C172S; comprueba el POH). No es un límite estructural, es el máximo que el piloto de pruebas pudo manejar en la certificación: tú puedes tener un límite personal menor. La componente cruzada se calcula con el ángulo entre el viento y la pista."
+    ],
+    "figure": "calc:crosswind",
+    "caption": "Viento cruzado y de cara según pista y viento.",
+    "examples": [
+     {
+      "q": "Pista 27 y viento 300° a 20 kt. ¿Componente cruzada y de cara?",
+      "a": "Ángulo = 300 − 270 = 30°. Cruzada = 20 × sen 30° = 10 kt; de cara = 20 × cos 30° ≈ 17 kt."
+     }
+    ],
+    "verify": true
+   }
+  ],
+  "numbers": [
+   "TODA = TORA + zona libre de obstáculos; ASDA = TORA + zona de parada",
+   "LDA = pista desde el umbral (desplazado si lo hay)",
+   "Carrera: hasta el despegue; distancia: hasta 50 ft (15 m)",
+   "VREF ≈ 1,3 VS0",
+   "Vx < Vy; convergen con la altitud",
+   "Un monomotor no tiene V1"
+  ],
+  "traps": [
+   "TODA incluye la zona libre de obstáculos; ASDA, la zona de parada.",
+   "El umbral desplazado acorta la LDA, no la TORA.",
+   "La distancia hasta 50 ft es mayor que la carrera de despegue.",
+   "El viento cruzado demostrado no es un límite estructural."
+  ],
+  "sources": [
+   {
+    "title": "OACI, Anexo 14: Aeródromos, vol. I, cap. 1 (distancias declaradas)"
+   },
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "EASA, Part-NCO y AMC/GM (Reglamento (UE) 965/2012), Easy Access Rules for Air Operations",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 030",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "030.06",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "030.06.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "La TODA (distancia de despegue disponible) es:",
+   "options": [
+    "La TORA más la zona de parada",
+    "La TORA más la zona libre de obstáculos",
+    "La LDA más la zona libre de obstáculos",
+    "La pista menos el umbral desplazado"
+   ],
+   "correct": 1,
+   "why": "TODA = TORA + CWY: el avión puede pasar sobre la zona libre de obstáculos, pero no rodar.",
+   "whyNot": [
+    "Eso es la ASDA.",
+    null,
+    "La LDA no interviene en el despegue.",
+    "Eso es, aproximadamente, la LDA."
+   ],
+   "ref": "OACI Anexo 14"
+  },
+  {
+   "id": "030.06.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "La ASDA (distancia de aceleración‑parada disponible) es:",
+   "options": [
+    "La TORA más la zona libre de obstáculos",
+    "La LDA más la zona de parada",
+    "La pista más el umbral desplazado",
+    "La TORA más la zona de parada"
+   ],
+   "correct": 3,
+   "why": "Es la longitud disponible para acelerar y detenerse si se aborta el despegue.",
+   "whyNot": [
+    "Eso es la TODA.",
+    "La LDA es de aterrizaje.",
+    "El umbral desplazado no se suma.",
+    null
+   ],
+   "ref": "OACI Anexo 14"
+  },
+  {
+   "id": "030.06.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "El umbral desplazado afecta a:",
+   "options": [
+    "La LDA, que se acorta; no a la TORA",
+    "La TORA, que se acorta",
+    "La TODA y la ASDA",
+    "Todas las distancias declaradas"
+   ],
+   "correct": 0,
+   "why": "Solo desplaza el punto de toque; la pista previa sigue siendo utilizable para despegar.",
+   "whyNot": [
+    null,
+    "La TORA no cambia.",
+    "No se alteran por un umbral desplazado.",
+    "Solo la LDA cambia."
+   ],
+   "ref": "OACI Anexo 14"
+  },
+  {
+   "id": "030.06.004",
+   "type": "calculo",
+   "level": 2,
+   "q": "Pista de 1500 m con zona libre de obstáculos de 150 m y zona de parada de 100 m. La TODA y la ASDA son respectivamente:",
+   "options": [
+    "1600 m y 1650 m",
+    "1750 m y 1750 m",
+    "1650 m y 1600 m",
+    "1500 m y 1500 m"
+   ],
+   "correct": 2,
+   "why": "TODA = 1500 + 150 = 1650 m; ASDA = 1500 + 100 = 1600 m.",
+   "whyNot": [
+    "Resulta de intercambiar las zonas.",
+    "Resulta de sumar las dos zonas a ambas.",
+    null,
+    "Son iguales a la TORA solo sin zonas adicionales."
+   ],
+   "ref": "OACI Anexo 14"
+  },
+  {
+   "id": "030.06.005",
+   "type": "calculo",
+   "level": 2,
+   "q": "Pista de 1500 m con umbral desplazado de 200 m en el sentido de aterrizaje. La LDA es:",
+   "options": [
+    "1500 m",
+    "1700 m",
+    "1300 m",
+    "200 m"
+   ],
+   "correct": 2,
+   "why": "LDA = 1500 − 200 = 1300 m.",
+   "whyNot": [
+    "La TORA no cambia, pero la LDA sí.",
+    "Un umbral desplazado no alarga la pista.",
+    null,
+    "Son los metros desplazados, no la longitud útil."
+   ],
+   "ref": "OACI Anexo 14"
+  },
+  {
+   "id": "030.06.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "La zona libre de obstáculos (clearway) se diferencia de la zona de parada en que:",
+   "options": [
+    "Se puede sobrevolar pero no está preparada para rodar o frenar",
+    "Sirve para detener el avión en un despegue abortado",
+    "Forma parte de la pista y se puede rodar",
+    "Reduce la TODA"
+   ],
+   "correct": 0,
+   "why": "Solo cuenta para la distancia de despegue disponible, en el aire.",
+   "whyNot": [
+    null,
+    "Eso es la zona de parada.",
+    "La zona libre no es pista.",
+    "La amplía, no la reduce."
+   ],
+   "ref": "OACI Anexo 14"
+  },
+  {
+   "id": "030.06.007",
+   "type": "concepto",
+   "level": 1,
+   "q": "La distancia de despegue hasta 50 ft (15 m) incluye:",
+   "options": [
+    "Solo la carrera en tierra",
+    "Solo el ascenso de 50 ft",
+    "La carrera y el ascenso hasta 500 ft",
+    "La carrera en tierra y la subida inicial hasta 50 ft"
+   ],
+   "correct": 3,
+   "why": "Se mide desde el inicio de la carrera hasta alcanzar los 50 ft sobre la pista.",
+   "whyNot": [
+    "Eso es la carrera de despegue.",
+    "No existe sin la carrera previa.",
+    "500 ft es la altura habitual de un circuito, no del manual.",
+    null
+   ],
+   "ref": "AFM"
+  },
+  {
+   "id": "030.06.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "La velocidad de aproximación final suele ser, aproximadamente:",
+   "options": [
+    "1,1 VS1",
+    "1,3 VS0",
+    "1,5 VNO",
+    "VR"
+   ],
+   "correct": 1,
+   "why": "VREF ≈ 1,3 VS0; en ráfagas se aumenta con la corrección que indique el POH.",
+   "whyNot": [
+    "1,1 VS1 es más lenta y con flaps sin referencia.",
+    null,
+    "VNO es un límite de crucero, no de aproximación.",
+    "VR es la de rotación en el despegue."
+   ],
+   "ref": "CS-23; POH"
+  },
+  {
+   "id": "030.06.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un monomotor de pistón NO tiene V1 porque:",
+   "options": [
+    "El concepto de decisión de despegue abortado a V1 es propio de multimotores y transporte",
+    "Despega siempre a baja velocidad",
+    "No puede abortar nunca",
+    "La V1 es igual a la VR"
+   ],
+   "correct": 0,
+   "why": "La V1 equilibra la distancia de parada con la de continuar con un motor inoperativo; en un monomotor no hay continuación.",
+   "whyNot": [
+    null,
+    "La velocidad de despegue no justifica la ausencia.",
+    "Sí puede abortar en la carrera.",
+    "La V1 y la VR son velocidades distintas en aviones que la usan."
+   ],
+   "ref": "CS-23"
+  },
+  {
+   "id": "030.06.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "Con la altitud, las velocidades Vx y Vy:",
+   "options": [
+    "Se separan",
+    "No cambian",
+    "Convergen hasta coincidir en el techo",
+    "Vx se hace menor que VS0"
+   ],
+   "correct": 2,
+   "why": "En el techo de servicio el exceso de potencia es nulo y las dos coinciden.",
+   "whyNot": [
+    "Se acercan, no se alejan.",
+    "Cambian con la altitud.",
+    null,
+    "Vx nunca baja de la velocidad de pérdida."
+   ],
+   "ref": "PHAK cap. 11"
+  },
+  {
+   "id": "030.06.011",
+   "type": "calculo",
+   "level": 2,
+   "q": "Pista 27 y viento 300° a 20 kt. La componente cruzada es:",
+   "options": [
+    "17 kt",
+    "10 kt",
+    "20 kt",
+    "6 kt"
+   ],
+   "correct": 1,
+   "why": "Ángulo 30°; 20 × sen 30° = 10 kt.",
+   "whyNot": [
+    "Es la componente de cara (20 × cos 30°).",
+    null,
+    "Es todo el viento, sin descomponer.",
+    "Resulta de usar un ángulo equivocado."
+   ],
+   "ref": "Componente cruzada = V × sen α"
+  },
+  {
+   "id": "030.06.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "El viento cruzado máximo demostrado que figura en el manual es:",
+   "options": [
+    "Un límite estructural del tren de aterrizaje",
+    "El viento cruzado máximo legal en España",
+    "La componente de cara máxima",
+    "Lo máximo que el piloto de pruebas manejó en la certificación, no un límite estructural"
+   ],
+   "correct": 3,
+   "why": "No es obligatorio como límite, pero es una referencia de lo que el avión tolera con un piloto experto.",
+   "whyNot": [
+    "No es un límite estructural.",
+    "La norma no lo fija así.",
+    "Se refiere a la componente cruzada, no a la de cara.",
+    null
+   ],
+   "ref": "AFM; CS-23"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.030.06.01",
+   "front": "TODA y ASDA",
+   "back": "TODA = TORA + zona libre de obstáculos (CWY); ASDA = TORA + zona de parada (SWY)"
+  },
+  {
+   "id": "c.030.06.02",
+   "front": "Umbral desplazado",
+   "back": "Acorta la LDA, no la TORA"
+  },
+  {
+   "id": "c.030.06.03",
+   "front": "Velocidad de aproximación",
+   "back": "≈ 1,3 VS0; Vx < Vy y convergen con la altitud"
+  }
+ ]
+}

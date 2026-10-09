@@ -1,0 +1,225 @@
+{
+  "lesson": {
+    "id": "090.11",
+    "title": "Propagación VHF y frecuencias",
+    "summary": "Propagación en línea de vista de las ondas VHF, alcance aproximado 1,23 × √altura, factores que lo limitan, banda de 118 a 136,975 MHz y canalización de 25 kHz y de 8,33 kHz.",
+    "objectives": [
+      "Explicar por qué el alcance VHF depende de la altura de las antenas",
+      "Calcular el alcance aproximado con la fórmula 1,23 × √h",
+      "Conocer los factores que limitan el alcance",
+      "Conocer la banda de comunicaciones aeronáuticas y la canalización de 25 kHz y 8,33 kHz"
+    ],
+    "sections": [
+      {
+        "title": "La VHF viaja en línea recta",
+        "text": [
+          "Las ondas de **VHF** se propagan en **línea de vista**: viajan en línea recta y no siguen la curvatura de la Tierra ni rodean obstáculos grandes. Por eso el alcance de una comunicación VHF depende sobre todo de **la altura de las antenas**: cuanto más alto estás, más lejos ves el horizonte y más lejos llega tu señal. A baja altura, una montaña o el propio horizonte te cortan la comunicación aunque la estación esté a pocas millas.",
+          "Esta es la razón por la que a baja altura en la sierra a veces no oyes a la torre de un aeropuerto cercano y, en cambio, a 8000 ft los oyes a 100 NM."
+        ]
+      },
+      {
+        "title": "El alcance: 1,23 × √altura",
+        "text": [
+          "Una estimación práctica del alcance en línea de vista es:"
+        ],
+        "formulas": [
+          {
+            "f": "Alcance (NM) ≈ 1,23 × √h (ft)",
+            "note": "h es la altura de la aeronave sobre la antena de tierra. Si la antena de tierra también está elevada, se suma su raíz: 1,23 × (√h1 + √h2)."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Una aeronave vuela a 2500 ft sobre una estación en el suelo. ¿Qué alcance tiene?",
+            "a": "√2500 = 50, y 1,23 × 50 ≈ 61 NM."
+          },
+          {
+            "q": "Una aeronave a 4900 ft habla con una torre cuya antena está a 100 ft. ¿Qué alcance tiene?",
+            "a": "√4900 = 70 y √100 = 10; 1,23 × (70 + 10) ≈ 98 NM."
+          }
+        ]
+      },
+      {
+        "title": "Factores que limitan el alcance",
+        "bullets": [
+          "La **altura** de las dos antenas: es el factor principal.",
+          "Los **obstáculos**: montañas, edificios o el propio terreno entre las dos antenas.",
+          "La **potencia** del transmisor y la **sensibilidad** del receptor.",
+          "La **antena**: su tipo, su estado y su posición en la aeronave (la señal se atenúa si el fuselaje la tapa).",
+          "Las condiciones atmosféricas y las interferencias, aunque su efecto es menor en VHF que en otras bandas."
+        ]
+      },
+      {
+        "title": "La banda y los canales",
+        "text": [
+          "Las comunicaciones aire-tierra civiles usan la banda de **118,000 a 136,975 MHz**. La banda de **108 a 117,975 MHz** corresponde a las ayudas de navegación (VOR e ILS). La frecuencia **121,500 MHz** es la de emergencia.",
+          "Tradicionalmente cada canal ocupaba **25 kHz**, lo que daba 760 canales. Para tener más, se introdujo la canalización de **8,33 kHz**, que divide cada canal de 25 kHz en tres y multiplica la capacidad. Los canales de 8,33 kHz se identifican con **seis dígitos** (118,005; 118,010; 118,015…), de ahí la regla de decir los seis dígitos salvo si el quinto y el sexto son cero. Las radios VHF modernas sintonizan 8,33 kHz."
+        ],
+        "verify": true
+      }
+    ],
+    "numbers": [
+      "Alcance VHF ≈ 1,23 × √h (ft) en NM",
+      "Banda de comunicaciones: 118,000 a 136,975 MHz",
+      "Canalización: 25 kHz (760 canales) y 8,33 kHz (tres canales por cada uno de 25 kHz)",
+      "Frecuencia de socorro: 121,5 MHz"
+    ],
+    "traps": [
+      "El alcance depende de la altura, no de la potencia en primer lugar.",
+      "La VHF no sigue la curvatura de la Tierra; la HF sí, por reflexión en la ionosfera.",
+      "108 a 117,975 MHz es la banda de navegación, no de comunicaciones."
+    ],
+    "spain": [
+      "En el AIP España, AD 2, figuran las frecuencias de cada aeródromo con sus seis dígitos (8,33 kHz)."
+    ],
+    "sources": [
+      {
+        "title": "Anexo 10, vol. III (VHF)"
+      },
+      {
+        "title": "SERA, sección 14 (EASA)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología ES/EN",
+        "href": "#/licencias/fraseologia"
+      },
+      {
+        "label": "Simulador de radio",
+        "href": "#/licencias/fraseologia?tab=radio"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "090.11.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Cómo se propagan las ondas VHF?",
+      "options": [
+        "Siguiendo la curvatura de la Tierra",
+        "Reflejándose en la ionosfera",
+        "En línea de vista",
+        "Rodeando las montañas"
+      ],
+      "correct": 2,
+      "why": "La VHF viaja en línea recta; el alcance depende de la altura.",
+      "whyNot": [
+        "Eso es la HF.",
+        "Eso es la HF.",
+        null,
+        "No rodean obstáculos grandes."
+      ],
+      "ref": "Anexo 10, vol. III"
+    },
+    {
+      "id": "090.11.002",
+      "type": "calculo",
+      "level": 2,
+      "q": "Una aeronave vuela a 2500 ft sobre una estación de tierra. ¿Cuál es el alcance aproximado?",
+      "options": [
+        "61 NM",
+        "25 NM",
+        "122 NM",
+        "250 NM"
+      ],
+      "correct": 0,
+      "why": "1,23 × √2500 = 1,23 × 50 ≈ 61 NM.",
+      "whyNot": [
+        null,
+        "Es la altura dividida por 100.",
+        "Es el doble.",
+        "No es el cálculo."
+      ],
+      "ref": "Doc 9432"
+    },
+    {
+      "id": "090.11.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál es el factor que más limita el alcance de la VHF?",
+      "options": [
+        "La temperatura",
+        "La hora del día",
+        "La frecuencia exacta",
+        "La altura de las antenas y los obstáculos"
+      ],
+      "correct": 3,
+      "why": "El alcance depende de la línea de vista, determinada por la altura y los obstáculos.",
+      "whyNot": [
+        "No es el factor principal.",
+        "No es el factor principal.",
+        "No es el factor principal.",
+        null
+      ],
+      "ref": "Doc 9432"
+    },
+    {
+      "id": "090.11.004",
+      "type": "regla",
+      "level": 2,
+      "q": "¿En qué banda se hacen las comunicaciones aire-tierra civiles de VHF?",
+      "options": [
+        "108 a 117,975 MHz",
+        "118,000 a 136,975 MHz",
+        "137 a 150 MHz",
+        "225 a 400 MHz"
+      ],
+      "correct": 1,
+      "why": "La banda de comunicaciones va de 118,000 a 136,975 MHz.",
+      "whyNot": [
+        "Es la banda de navegación.",
+        null,
+        "No es la banda de comunicaciones.",
+        "Es UHF militar."
+      ],
+      "ref": "Anexo 10, vol. III"
+    },
+    {
+      "id": "090.11.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuántos canales de 8,33 kHz caben en cada canal de 25 kHz?",
+      "options": [
+        "Tres",
+        "Dos",
+        "Cuatro",
+        "Seis"
+      ],
+      "correct": 0,
+      "why": "La canalización de 8,33 kHz triplica los canales de 25 kHz.",
+      "whyNot": [
+        null,
+        "No es la cifra.",
+        "No es la cifra.",
+        "No es la cifra."
+      ],
+      "ref": "Anexo 10, vol. III"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.090.11.01",
+      "front": "Alcance VHF",
+      "back": "≈ 1,23 × √h (ft), en NM"
+    },
+    {
+      "id": "c.090.11.02",
+      "front": "Propagación VHF",
+      "back": "En línea de vista; depende de la altura y de los obstáculos"
+    },
+    {
+      "id": "c.090.11.03",
+      "front": "Banda de comunicaciones",
+      "back": "118,000 a 136,975 MHz"
+    },
+    {
+      "id": "c.090.11.04",
+      "front": "Canalización",
+      "back": "25 kHz o 8,33 kHz (tres canales por cada uno de 25 kHz)"
+    }
+  ]
+}

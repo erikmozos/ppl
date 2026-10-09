@@ -1,0 +1,836 @@
+{
+ "lesson": {
+  "title": "Navegación en vuelo",
+  "summary": "Cómo se vuela una ruta VFR ya planificada: lectura de la carta en vuelo, corrección de la derrota con la regla 1 en 60, revisión de GS y ETA, viento calculado en vuelo, navlog y procedimiento de extravío.",
+  "objectives": [
+   "Leer la carta en vuelo, anticipando lo que debes ver y comprobándolo con varias referencias",
+   "Corregir la derrota con la regla 1 en 60: error de derrota, ángulo de cierre y corrección total",
+   "Revisar la GS y el ETA a partir de tiempos reales entre puntos y calcular el viento en vuelo",
+   "Calcular el punto de inicio del descenso y el régimen para una senda de 3°",
+   "Rellenar y leer un navlog con rumbos, tiempos y combustible",
+   "Aplicar el procedimiento de extravío sin esperar a estar perdido del todo"
+  ],
+  "sections": [
+   {
+    "title": "Volar la ruta que has planificado",
+    "text": [
+     "La navegación en vuelo es la fase en la que compruebas que la ruta del suelo coincide con la que dibujaste. Todo lo que hagas en el aire se apoya en tres cosas que traes preparadas de tierra: una **derrota trazada** en la carta con marcas cada 5 o 10 NM, un **navlog** con rumbos, tiempos y combustible por tramo, y **puntos de control** (referencias fáciles de ver) a lo largo de cada tramo.",
+     "El método es siempre el mismo: **fijar posición, comparar con la estima, corregir y volver a fijar**. No es buena práctica volar «a ojo» hacia el destino. Con la estima sabes dónde deberías estar; con la carta y el terreno compruebas dónde estás; la diferencia es el error que hay que corregir.",
+     "En una cabina pequeña como la del PA-28 no hay sitio ni tiempo para un trabajo de oficina. Lo normal es: carta plegada con la ruta a la vista, navlog en una tablilla de rodilla, lápiz atado y la hora anotada en cada punto. Antes de salir del tramo anterior, ya tienes que haber mirado qué viene en el siguiente."
+    ]
+   },
+   {
+    "title": "Lectura de la carta en vuelo",
+    "text": [
+     "Se lee la carta **de la carta al terreno**: primero miras en la carta lo que debería aparecer en los próximos minutos (un río, una autopista, un pueblo con ferrocarril, una línea eléctrica) y después lo buscas fuera. Hacerlo al revés, mirar un pueblo y buscar en la carta cuál puede ser, es el origen de la mayoría de los errores de identificación.",
+     "Una sola referencia no basta. Un pueblo grande se parece a otro. Confirma con **al menos dos o tres detalles**: forma del pueblo, cruce con una carretera, un embalse, un relieve cercano o la distancia al punto anterior. El tiempo transcurrido es el detalle que menos se usa y el más fiable.",
+     "Para no pasar de largo un punto, usa los **accidentes lineales** que cruzan la derrota (un río, una autopista, una costa, un ferrocarril): sirven de tope, porque si los cruzas sin haber visto el punto sabes que te lo has pasado. Los que corren casi paralelos a la derrota sirven para detectar que te desvías, pero no para fijar posición.",
+     "Sitúa los puntos de control a tiempos regulares (cada 10 a 15 minutos o 15 a 25 NM) y elige referencias grandes y únicas. Los puntos pequeños, como una granja o una torre, se olvidan en cuanto la visibilidad baja."
+    ],
+    "bullets": [
+     "Orienta la carta con la derrota hacia arriba y compara lo que ves a izquierda y derecha con lo que la carta dice a izquierda y derecha.",
+     "Pasa por el punto anotando la hora, aunque vayas bien: así sabes la GS real.",
+     "Mira por delante del punto: una pregunta útil es «¿qué esperaría ver ahora a la izquierda de la derrota?».",
+     "Comprueba el direccional con la brújula cada 10 a 15 minutos y después de cada viraje largo; el direccional deriva y no corrige solo."
+    ]
+   },
+   {
+    "title": "La regla 1 en 60",
+    "text": [
+     "A una distancia de 60 NM, **1° de ángulo equivale a 1 NM de separación lateral**. Es una aproximación válida para ángulos pequeños (hasta unos 20°) y sirve para convertir desvío en ángulo sin necesidad de trigonometría. Se aplica en dos pasos.",
+     "Primero, el **error de derrota** (A): el ángulo con el que te has apartado de la derrota deseada desde el punto de salida. Segundo, el **ángulo de cierre** (B): el ángulo que debes sumar para volver a la derrota antes de llegar al destino. La corrección total es A + B, siempre hacia el lado de la derrota."
+    ],
+    "figure": "svg:060-1en60",
+    "caption": "A se calcula con la distancia recorrida; B, con la distancia que queda. Si solo corriges A, vuelas paralelo a la derrota deseada y no regresas a ella.",
+    "formulas": [
+     {
+      "f": "Error de derrota (°) = desvío (NM) × 60 / distancia recorrida (NM)",
+      "note": "El ángulo con el que te has alejado desde el origen."
+     },
+     {
+      "f": "Ángulo de cierre (°) = desvío (NM) × 60 / distancia restante (NM)",
+      "note": "El ángulo extra para converger en el destino."
+     },
+     {
+      "f": "Corrección total (°) = error de derrota + ángulo de cierre",
+      "note": "Hacia el lado de la derrota, es decir, hacia el lado contrario al que estás desviado."
+     },
+     {
+      "f": "Desvío (NM) = ángulo (°) × distancia (NM) / 60",
+      "note": "Para saber cuánto te separarás si mantienes un error."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Ruta de 90 NM. A las 30 NM estás 3 NM a la izquierda de la derrota. ¿Qué corrección aplicas?",
+      "a": "Error de derrota: 3 × 60 / 30 = 6°. Quedan 60 NM, así que el ángulo de cierre es 3 × 60 / 60 = 3°. Corrección total: 9° a la derecha sobre el rumbo que llevas."
+     },
+     {
+      "q": "Llevas rumbo 090°. A 45 NM del origen y con 30 NM por delante estás 3 NM al sur de la derrota (a la derecha, porque vuelas hacia el este). ¿Nuevo rumbo?",
+      "a": "Error: 3 × 60 / 45 = 4°. Cierre: 3 × 60 / 30 = 6°. Total 10° hacia la izquierda: rumbo 080°."
+     },
+     {
+      "q": "Mantienes un error de derrota de 4° durante 30 NM. ¿Cuántas millas te apartas?",
+      "a": "4 × 30 / 60 = 2 NM."
+     }
+    ],
+    "note": {
+     "kind": "tip",
+     "text": "Cuando ya estás a menos de un tercio de la distancia restante, el ángulo de cierre domina. Si estás cerca del destino, corrige rápido y con una cifra grande, y vuelve a comprobar a los 5 minutos."
+    }
+   },
+   {
+    "title": "Calculadora: regla 1 en 60",
+    "text": [
+     "Introduce el desvío, la distancia recorrida y la distancia restante, y la calculadora te da el error de derrota, el ángulo de cierre y la corrección total. Comprueba antes tus propios resultados de cabeza con los ejemplos de arriba."
+    ],
+    "figure": "calc:1in60"
+   },
+   {
+    "title": "Revisar la GS, el ETA y el combustible",
+    "text": [
+     "El viento del pronóstico es una previsión. La **GS real** se mide: dos puntos de control, la distancia entre ellos y el tiempo que has tardado. Con ella rehaces el ETA del resto de la ruta y comprueba el combustible.",
+     "El procedimiento es corto: GS = distancia × 60 / tiempo (min); tiempo restante = distancia restante × 60 / GS; ETA = hora actual + tiempo restante. Si la GS real es muy distinta a la prevista, hay viento diferente al esperado y conviene actualizar también el combustible que te queda en destino, no solo la hora."
+    ],
+    "examples": [
+     {
+      "q": "Pasas por A a las 10:12 y por B a las 10:30. Hay 27 NM entre ambos. GS y ETA a un destino situado a 45 NM más allá de B.",
+      "a": "Tiempo entre A y B: 18 min. GS = 27 × 60 / 18 = 90 kt. Tiempo restante: 45 × 60 / 90 = 30 min. ETA = 10:30 + 0:30 = 11:00."
+     },
+     {
+      "q": "Consumo 30 l/h. Tramo de 36 NM con GS 90 kt. ¿Cuánto combustible gastas?",
+      "a": "Tiempo: 36 × 60 / 90 = 24 min = 0,4 h. Combustible: 30 × 0,4 = 12 l."
+     }
+    ],
+    "note": {
+     "kind": "warn",
+     "text": "Según NCO.OP.125, la reserva final de un avión VFR de día es de 30 minutos a velocidad de crucero normal. La reserva no se gasta para llegar al destino: si la estima te la come, decide pronto desviarte a un aeródromo más cercano."
+    }
+   },
+   {
+    "title": "Calcular el viento en vuelo",
+    "text": [
+     "Cuando la deriva y la GS observadas no coinciden con las previstas, puedes **calcular el viento que hay realmente**. Conoces el rumbo que llevas, tu TAS, la derrota que observas (por la posición entre dos puntos) y la GS que has medido. Con esos cuatro datos se resuelve el triángulo de velocidades al revés: el vector viento cierra el triángulo entre el vector aire (rumbo y TAS) y el vector suelo (derrota y GS).",
+     "Una comprobación de sentido común antes de abrir el computador: si la derrota está a la derecha del rumbo, el viento viene **por la izquierda**; si la GS es mayor que la TAS, el viento tiene componente de cola.",
+     "Si no tienes computador, un método rápido en vuelo es **comparar las dos GS**: vuela dos minutos con un rumbo y compara con la GS prevista, y luego repite con el viento sustituido en la tabla de deriva. En el examen se espera el resultado con el computador, con tolerancia de unos grados y uno o dos nudos."
+    ],
+    "figure": "svg:060-triangulo",
+    "caption": "Con rumbo y TAS (azul), derrota y GS (verde), el viento (rojo) es el vector que cierra el triángulo.",
+    "examples": [
+     {
+      "q": "Rumbo 040°, TAS 100 kt. Observas derrota 050° y GS 110 kt. ¿Viento?",
+      "a": "La derrota queda a la derecha del rumbo, así que el viento viene por la izquierda. Con el computador (o con componentes: aire E 64, N 77; suelo E 84, N 71): el viento se desplaza hacia el este y un poco al sur, por lo que viene de 285° con unos 20 kt."
+     }
+    ]
+   },
+   {
+    "title": "Descenso planificado",
+    "text": [
+     "Una senda de 3° desciende unos **300 ft por cada milla náutica** recorrida, y el régimen de descenso necesario en pies por minuto es aproximadamente **GS × 5**. La razón es la regla 1 en 60: 1° son unos 100 ft por NM, así que 3° son 300 ft/NM; y 1 NM tarda 60 / GS minutos, de modo que el régimen es 300 × GS / 60 = 5 × GS.",
+     "Para saber dónde empezar a bajar: divide la altura a perder entre 300 y obtienes las millas antes del punto de llegada. Si ese punto está a pocas millas del circuito, añade margen para estar estabilizado."
+    ],
+    "examples": [
+     {
+      "q": "Tienes que perder 3000 ft para llegar a la altitud del circuito con GS 90 kt. ¿A cuántas millas empiezas el descenso y con qué régimen?",
+      "a": "Millas: 3000 / 300 = 10 NM. Régimen: 90 × 5 = 450 ft/min."
+     },
+     {
+      "q": "Descenso de 4500 ft a 500 ft/min con GS 120 kt. ¿Cuántas millas antes de la llegada?",
+      "a": "Tiempo: 9 min. Distancia: 120 × 9 / 60 = 18 NM."
+     }
+    ]
+   },
+   {
+    "title": "El navlog",
+    "text": [
+     "El navlog (registro de navegación) es la hoja en la que resuelves cada tramo antes del vuelo y apuntas los tiempos durante él. Una columna por cada dato que necesitas: **derrota verdadera, viento, deriva, rumbo verdadero, variación, rumbo magnético, desvío, rumbo de brújula, TAS, GS, distancia, tiempo, combustible, hora estimada y hora real**. Al final suma tiempo y combustible y añade las reservas.",
+     "El orden de cálculo es el de siempre: derrota (medida en la carta) más o menos la deriva da el rumbo verdadero; rumbo verdadero con la variación da el magnético; con el desvío (tarjeta de la brújula) da el rumbo de brújula. En el aire, lo que se sigue es este último."
+    ],
+    "table": {
+     "caption": "Un tramo calculado: A → B, 36 NM, derrota verdadera 060°, TAS 100 kt, viento 330/15 kt, variación 1° W, desvío 2° E, consumo 28 l/h",
+     "head": [
+      "Dato",
+      "Cálculo",
+      "Resultado"
+     ],
+     "rows": [
+      [
+       "Ángulo de viento",
+       "330° a 060° son 90°: viento de través por la izquierda",
+       "15 kt de través"
+      ],
+      [
+       "Deriva",
+       "15 × 60 / 100 = 9°",
+       "9° (corregir a la izquierda)"
+      ],
+      [
+       "Rumbo verdadero",
+       "060° − 9°",
+       "051°"
+      ],
+      [
+       "Rumbo magnético",
+       "051° + 1° (la variación oeste se suma)",
+       "052°"
+      ],
+      [
+       "Rumbo de brújula",
+       "052° − 2° (el desvío este se resta)",
+       "050°"
+      ],
+      [
+       "GS",
+       "Con viento de través puro, GS ≈ TAS menos algo",
+       "99 kt"
+      ],
+      [
+       "Tiempo",
+       "36 × 60 / 99",
+       "22 min"
+      ],
+      [
+       "Combustible",
+       "28 × 22 / 60",
+       "10,3 l"
+      ]
+     ],
+     "src": "Cálculo de ejemplo (viento 330/15, TAS 100 kt)"
+    }
+   },
+   {
+    "title": "Procedimiento de extravío",
+    "text": [
+     "Perderse es una cuestión de tiempo y de ánimo: el error mortal es no reconocerlo y seguir volando sin plan hasta tener poco combustible o mala visibilidad. Hay una regla mnemotécnica de las **5 C**, cuyo orden es una guía y no una norma legal:",
+     "**Confesar**: reconoce que no sabes dónde estás, cuanto antes, y que pides ayuda. **Comunicar**: llama al ATC de la frecuencia que llevas o a la de emergencia **121,500 MHz** y da tu última posición conocida, la hora, rumbo, altitud y combustible; si el controlador pide, activa el transpondedor con el código que te indique, y **7700** si declaras emergencia. **Ascender** (climb): más altura da más alcance de radio y de vista, siempre que el tiempo lo permita. **Cumplir** (comply): sigue las instrucciones del controlador. **Conservar**: reduce potencia a régimen de autonomía máxima, y mantén un rumbo que sepas controlar.",
+     "Mientras tanto, **mantén el rumbo y el tiempo**: calcula un **círculo de incertidumbre** con radio igual al 10 % de la distancia recorrida desde la última posición segura. Si llevas 40 NM desde el último punto, estás en un círculo de 4 NM de radio, ampliado por el error del viento. Busca un accidente lineal grande (costa, autopista, río) y úsalo para tomar posición. Con una radioayuda (VOR, NDB) obtienes una línea de posición; con dos, un punto.",
+     "Si se agota el margen de combustible o de luz, **aterriza con precaución en un campo adecuado** antes que seguir hasta quedarte sin nada."
+    ],
+    "bullets": [
+     "7700: emergencia; 7600: fallo de comunicaciones; 7500: interferencia ilícita; 7000: código VFR genérico en espacio aéreo europeo.",
+     "Un círculo de incertidumbre crece con el tiempo: cuanto más esperas, menos útil es una referencia del pasado.",
+     "Una radio y un teléfono también valen: AESA, aeródromos cercanos y el 112 son parte del plan."
+    ],
+    "note": {
+     "kind": "es",
+     "text": "En España, la frecuencia 121,500 MHz está vigilada y es la de socorro en VHF; el servicio de información de vuelo y los centros de control dan ayuda de posición. Úsala también si no consigues contactar con nadie en la frecuencia que llevabas."
+    }
+   }
+  ],
+  "numbers": [
+   "1 en 60: a 60 NM, 1° = 1 NM de desvío",
+   "Error de derrota = desvío × 60 / distancia recorrida; ángulo de cierre = desvío × 60 / distancia restante",
+   "Corrección total = error de derrota + ángulo de cierre",
+   "Senda de 3° ≈ 300 ft por NM; régimen ≈ GS × 5 ft/min",
+   "Círculo de incertidumbre: radio = 10 % de la distancia recorrida desde el último punto",
+   "Frecuencia de socorro VHF: 121,500 MHz; transpondedor de emergencia: 7700",
+   "Reserva final VFR de día en avión: 30 min (NCO.OP.125)",
+   "Comprobar el direccional con la brújula cada 10-15 min"
+  ],
+  "traps": [
+   "Aplicar solo el error de derrota: vuelas paralelo a la derrota y no llegas al destino.",
+   "Corregir hacia el lado equivocado: la corrección se hace hacia la derrota, que es el lado opuesto al que estás desviado.",
+   "Usar la distancia total en lugar de la recorrida o la restante en la regla 1 en 60.",
+   "Calcular el ETA con la TAS en vez de la GS.",
+   "Confundir 7700 (emergencia) con 7600 (fallo de comunicaciones).",
+   "Identificar un punto por una sola referencia y seguir hasta el siguiente sin comprobar la hora."
+  ],
+  "spain": [
+   "La frecuencia de emergencia 121,500 MHz es escuchada por los centros de control y de información de vuelo en España.",
+   "Para comprobar tu posición en vuelo sobre territorio español puedes usar las radioayudas (VOR, NDB) indicadas en la carta VFR 1:500.000 de ENAIRE y los puntos de notificación VFR."
+  ],
+  "sources": [
+   {
+    "title": "Reglamento (UE) 965/2012, Anexo VII (Part-NCO), NCO.OP.125 (combustible)",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+   },
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 16 Navegación",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "ENAIRE, AIP España, ENR 1.1 y GEN 3.4 (frecuencia de emergencia y códigos SSR)",
+    "url": "https://aip.enaire.es/"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28: brújula y direccional",
+    "href": "#/ac/pa28"
+   }
+  ],
+  "id": "060.08",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "060.08.001",
+   "type": "calculo",
+   "level": 2,
+   "q": "A 40 NM de la salida estás 4 NM a la derecha de la derrota y quedan 80 NM. ¿Qué corrección total aplicas?",
+   "options": [
+    "6° a la izquierda",
+    "9° a la izquierda",
+    "3° a la izquierda",
+    "9° a la derecha"
+   ],
+   "correct": 1,
+   "why": "Error de derrota: 4 × 60 / 40 = 6°. Ángulo de cierre: 4 × 60 / 80 = 3°. Total 9°, hacia la derrota, es decir, a la izquierda porque estás a la derecha.",
+   "whyNot": [
+    "Solo es el error de derrota (4 × 60 / 40): faltaría sumar el cierre.",
+    null,
+    "Solo es el ángulo de cierre (4 × 60 / 80).",
+    "Corrección en el sentido equivocado: estás a la derecha, así que hay que ir a la izquierda."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.002",
+   "type": "calculo",
+   "level": 1,
+   "q": "Mantienes durante 30 NM un error de derrota de 4°. ¿Cuántas millas te separas de la derrota?",
+   "options": [
+    "1 NM",
+    "8 NM",
+    "2 NM",
+    "4 NM"
+   ],
+   "correct": 2,
+   "why": "Desvío = ángulo × distancia / 60 = 4 × 30 / 60 = 2 NM.",
+   "whyNot": [
+    "Correspondería a un error de 2°.",
+    "Resulta de multiplicar 30 × 4 y dividir entre 15.",
+    null,
+    "Es el valor del ángulo, no de la distancia."
+   ],
+   "ref": "Regla 1 en 60; FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.003",
+   "type": "concepto",
+   "level": 1,
+   "q": "En la regla 1 en 60, el ángulo de cierre se calcula con el desvío multiplicado por 60 y dividido entre:",
+   "options": [
+    "La distancia que queda hasta el destino",
+    "La TAS",
+    "La distancia total de la ruta",
+    "La distancia ya recorrida"
+   ],
+   "correct": 0,
+   "why": "El ángulo de cierre mide cuánto hay que girar para converger con el destino desde la posición actual, y depende de lo que queda por recorrer.",
+   "whyNot": [
+    null,
+    "La velocidad no interviene en la regla geométrica.",
+    "La distancia total no interviene en ninguno de los dos ángulos.",
+    "Esa distancia es la del error de derrota."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.004",
+   "type": "calculo",
+   "level": 2,
+   "q": "En una ruta de 75 NM, a 45 NM de la salida estás 3 NM a la izquierda de la derrota. ¿Qué corrección total necesitas?",
+   "options": [
+    "10° a la derecha",
+    "4° a la derecha",
+    "16° a la derecha",
+    "6° a la derecha"
+   ],
+   "correct": 0,
+   "why": "Error: 3 × 60 / 45 = 4°. Cierre: 3 × 60 / 30 = 6° (quedan 30 NM). Total 10° a la derecha, que es el lado de la derrota.",
+   "whyNot": [
+    null,
+    "Solo el error de derrota (3 × 60 / 45 = 4°).",
+    "Suma el error y doble cierre; el cierre se aplica una sola vez.",
+    "Solo el ángulo de cierre (3 × 60 / 30 = 6°)."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.005",
+   "type": "calculo",
+   "level": 2,
+   "q": "Para una senda de 3° con GS 120 kt, el régimen de descenso aproximado es:",
+   "options": [
+    "1000 ft/min",
+    "300 ft/min",
+    "600 ft/min",
+    "360 ft/min"
+   ],
+   "correct": 2,
+   "why": "Régimen ≈ GS × 5 ft/min: 120 × 5 = 600 ft/min (300 ft/NM × 2 NM/min).",
+   "whyNot": [
+    "Es demasiado para una senda de 3°; equivale a unos 5° de senda.",
+    "Corresponde a 300 ft por NM tomado como régimen sin multiplicar por la velocidad.",
+    null,
+    "Sería GS × 3 en vez de GS × 5."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.006",
+   "type": "calculo",
+   "level": 2,
+   "q": "Debes descender 3000 ft para llegar a la altitud del circuito con una senda de 3°. ¿A qué distancia del punto de llegada empiezas?",
+   "options": [
+    "10 NM",
+    "30 NM",
+    "9 NM",
+    "3 NM"
+   ],
+   "correct": 0,
+   "why": "Una senda de 3° pierde unos 300 ft por NM: 3000 / 300 = 10 NM.",
+   "whyNot": [
+    null,
+    "Divide entre 100, que es la relación por grado, no por milla en una senda de 3°.",
+    "Se obtiene al dividir entre 330 y no entre 300.",
+    "Es la altura en miles de pies, no la distancia."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.007",
+   "type": "regla",
+   "level": 1,
+   "q": "¿Cuántos pies por milla náutica pierde aproximadamente una senda de 3°?",
+   "options": [
+    "300 ft/NM",
+    "100 ft/NM",
+    "60 ft/NM",
+    "500 ft/NM"
+   ],
+   "correct": 0,
+   "why": "1° equivale a unos 100 ft/NM (regla 1 en 60); 3° son 300 ft/NM.",
+   "whyNot": [
+    null,
+    "Es lo que pierde una senda de 1°.",
+    "No tiene relación con la regla 1 en 60.",
+    "Correspondería a una senda de unos 5°."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.008",
+   "type": "calculo",
+   "level": 2,
+   "q": "Pasas por A a las 10:12 y por B a las 10:30. La distancia A–B es 27 NM. La GS es:",
+   "options": [
+    "108 kt",
+    "27 kt",
+    "81 kt",
+    "90 kt"
+   ],
+   "correct": 3,
+   "why": "Tiempo 18 min; GS = 27 × 60 / 18 = 90 kt.",
+   "whyNot": [
+    "Se obtiene al dividir por 15 minutos.",
+    "Es la distancia, no la velocidad.",
+    "Se obtiene al dividir por 20 minutos en lugar de 18.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.009",
+   "type": "calculo",
+   "level": 2,
+   "q": "A las 11:00 estás sobre un punto de control. Quedan 45 NM y has medido una GS de 90 kt. El ETA es:",
+   "options": [
+    "11:20",
+    "11:30",
+    "11:45",
+    "11:27"
+   ],
+   "correct": 1,
+   "why": "45 NM a 90 kt son 30 min; 11:00 + 30 min = 11:30.",
+   "whyNot": [
+    "Es el tiempo calculado con 135 kt.",
+    null,
+    "Es el tiempo con una GS de 60 kt.",
+    "Es el tiempo calculado con 100 kt."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.010",
+   "type": "calculo",
+   "level": 3,
+   "q": "Rumbo 040°, TAS 100 kt. Observas derrota 050° y GS 110 kt. El viento es aproximadamente:",
+   "options": [
+    "105° / 20 kt",
+    "330° / 20 kt",
+    "285° / 20 kt",
+    "040° / 10 kt"
+   ],
+   "correct": 2,
+   "why": "La derrota está a la derecha del rumbo, así que el viento viene por la izquierda, y con GS mayor que TAS hay componente de cola. Resolviendo el triángulo, 285° con unos 20 kt.",
+   "whyNot": [
+    "Es el viento recíproco: hacia donde sopla, no de donde viene.",
+    "Dirección demasiado al norte y componente de cola exagerada.",
+    null,
+    "Un viento de cara/cola puro no produce deriva a la derecha."
+   ],
+   "ref": "FAA PHAK cap. 16; computador de navegación"
+  },
+  {
+   "id": "060.08.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "Vuelas con rumbo 090° y tu derrota observada es 100°. El viento viene principalmente de:",
+   "options": [
+    "Directamente de cola",
+    "La derecha del rumbo",
+    "Directamente de cara",
+    "La izquierda del rumbo"
+   ],
+   "correct": 3,
+   "why": "El avión se desplaza hacia el lado al que le empuja el viento: derrota a la derecha del rumbo significa viento por la izquierda.",
+   "whyNot": [
+    "Un viento de cola no produce deriva.",
+    "Si viniera de la derecha, la derrota quedaría a la izquierda del rumbo.",
+    "Un viento de cara no produce deriva.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.012",
+   "type": "concepto",
+   "level": 1,
+   "q": "Al darte cuenta de que no sabes dónde estás, lo más adecuado es:",
+   "options": [
+    "Reconocerlo cuanto antes y pedir ayuda por radio, manteniendo rumbo",
+    "Cambiar de rumbo con frecuencia para buscar referencias",
+    "Descender hasta 500 ft para ver mejor el terreno",
+    "Seguir sin avisar hasta ver algún punto conocido"
+   ],
+   "correct": 0,
+   "why": "El procedimiento (las 5 C) empieza por confesar y comunicar. Cuanto antes se pide ayuda, más pequeño es el área de búsqueda y más combustible queda.",
+   "whyNot": [
+    null,
+    "Cambiar de rumbo sin criterio hace crecer la zona de incertidumbre.",
+    "Bajar reduce el alcance de radio y de visión y te acerca a obstáculos.",
+    "Retrasar la petición de ayuda gasta combustible y reduce las opciones."
+   ],
+   "ref": "Procedimiento de extravío (5 C)"
+  },
+  {
+   "id": "060.08.013",
+   "type": "regla",
+   "level": 1,
+   "q": "La frecuencia de socorro en VHF es:",
+   "options": [
+    "243,000 MHz",
+    "123,450 MHz",
+    "118,000 MHz",
+    "121,500 MHz"
+   ],
+   "correct": 3,
+   "why": "121,500 MHz es la frecuencia internacional de emergencia en VHF, escuchada en España por los centros ATS.",
+   "whyNot": [
+    "Es la frecuencia de emergencia en UHF militar.",
+    "Es la frecuencia aire-aire de uso general, no la de emergencia.",
+    "Es el límite inferior de la banda aeronáutica, sin uso de emergencia.",
+    null
+   ],
+   "ref": "Anexo 10 OACI vol. V; AIP España",
+   "url": "https://aip.enaire.es/"
+  },
+  {
+   "id": "060.08.014",
+   "type": "regla",
+   "level": 1,
+   "q": "¿Qué código de transpondedor se selecciona para declarar una emergencia?",
+   "options": [
+    "7600",
+    "7700",
+    "7000",
+    "7500"
+   ],
+   "correct": 1,
+   "why": "El 7700 indica emergencia general. El 7600 es fallo de comunicaciones y el 7500, interferencia ilícita.",
+   "whyNot": [
+    "Es fallo de comunicaciones.",
+    null,
+    "Es el código VFR genérico europeo.",
+    "Es interferencia ilícita (secuestro)."
+   ],
+   "ref": "SERA.13001 y Anexo 10 OACI"
+  },
+  {
+   "id": "060.08.015",
+   "type": "calculo",
+   "level": 2,
+   "q": "Llevas 40 NM desde el último punto de posición seguro y estás perdido. El radio del círculo de incertidumbre es:",
+   "options": [
+    "4 NM",
+    "40 NM",
+    "1 NM",
+    "10 NM"
+   ],
+   "correct": 0,
+   "why": "El área de incertidumbre se estima como el 10 % de la distancia recorrida desde el último punto seguro: 4 NM.",
+   "whyNot": [
+    null,
+    "Es la propia distancia recorrida, no su décima parte.",
+    "Es un 2,5 %: es menor que el error normal.",
+    "Es el 25 % de la distancia, demasiado grande para la regla."
+   ],
+   "ref": "Procedimiento de extravío; UK CAA (guía)"
+  },
+  {
+   "id": "060.08.016",
+   "type": "concepto",
+   "level": 1,
+   "q": "Un accidente lineal que cruza la derrota, como un río o una autopista, sirve sobre todo para:",
+   "options": [
+    "Sustituir al direccional",
+    "Calcular el viento",
+    "Saber que has sobrepasado un punto si lo cruzas sin haberlo visto",
+    "Determinar la altitud verdadera"
+   ],
+   "correct": 2,
+   "why": "Hace de tope: si lo cruzas sin haber pasado por el punto previsto, sabes que ya te lo has pasado y puedes rehacer la estima.",
+   "whyNot": [
+    "No tiene relación con la brújula.",
+    "El viento se obtiene de la deriva y la GS.",
+    null,
+    "No es una medida de altura."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.017",
+   "type": "regla",
+   "level": 1,
+   "q": "El direccional se comprueba con la brújula magnética:",
+   "options": [
+    "Solo antes del despegue",
+    "Una vez al llegar a crucero",
+    "Cada 10 a 15 minutos",
+    "Cada hora"
+   ],
+   "correct": 2,
+   "why": "El direccional gira por precesión y no se corrige solo: se compara con la brújula cada 10 a 15 minutos y tras un viraje largo.",
+   "whyNot": [
+    "No basta: el direccional deriva durante el vuelo.",
+    "Una sola comprobación no cubre la deriva posterior.",
+    null,
+    "Es demasiado espaciado para el error de precesión."
+   ],
+   "ref": "POH PA-28-161 y FAA PHAK cap. 8"
+  },
+  {
+   "id": "060.08.018",
+   "type": "lectura",
+   "level": 2,
+   "q": "Salida de A a las 10:05. Navlog del tramo:",
+   "data": "TRAMO A-B  DIST 36 NM  TAS 100  VIENTO 330/15\nRV 051  GS 099  TIEMPO 22 min  COMB 10,3 l",
+   "options": [
+    "10:22",
+    "10:37",
+    "10:05",
+    "10:27"
+   ],
+   "correct": 3,
+   "why": "El navlog da 22 min para 36 NM con 99 kt, y 10:05 + 22 min = 10:27.",
+   "whyNot": [
+    "Es el tiempo de vuelo, no la hora.",
+    "Se obtiene sumando 32 minutos en vez de 22.",
+    "Es la hora de salida.",
+    null
+   ],
+   "ref": "Navlog de ejemplo"
+  },
+  {
+   "id": "060.08.019",
+   "type": "lectura",
+   "level": 2,
+   "q": "Navlog con rumbo verdadero 051°, variación 1° W y desvío 2° E. El rumbo de brújula es:",
+   "options": [
+    "048°",
+    "052°",
+    "050°",
+    "054°"
+   ],
+   "correct": 2,
+   "why": "Verdadero 051° + 1° (W) = magnético 052°; el desvío este se resta: 052° − 2° = 050°.",
+   "whyNot": [
+    "Resta la variación oeste en vez de sumarla.",
+    "Invierte ambos signos.",
+    null,
+    "Aplica el desvío con el signo opuesto."
+   ],
+   "ref": "TVMDC; FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.020",
+   "type": "concepto",
+   "level": 2,
+   "q": "Si corriges solo el error de derrota y no sumas el ángulo de cierre:",
+   "options": [
+    "Vuelas paralelo a la derrota deseada y no llegas al destino",
+    "Llegas pero con otro viento",
+    "Vuelas en círculos",
+    "Llegas exactamente al destino"
+   ],
+   "correct": 0,
+   "why": "El error de derrota solo detiene el alejamiento. Para recuperar la derrota hay que añadir el cierre, que depende de la distancia restante.",
+   "whyNot": [
+    null,
+    "El viento no cambia por tu corrección.",
+    "No existe relación con círculos.",
+    "Para llegar necesitas volver a la derrota con el ángulo de cierre."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.021",
+   "type": "calculo",
+   "level": 2,
+   "q": "Consumo 30 l/h. Tramo de 36 NM con GS 90 kt. El combustible del tramo es:",
+   "options": [
+    "24 l",
+    "10,8 l",
+    "18 l",
+    "12 l"
+   ],
+   "correct": 3,
+   "why": "Tiempo = 36 × 60 / 90 = 24 min = 0,4 h; 30 l/h × 0,4 h = 12 l.",
+   "whyNot": [
+    "Es el tiempo en minutos tomado como litros.",
+    "Es el producto de distancia por consumo dividido entre cien.",
+    "Es el consumo de 36 minutos, no de 24.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.022",
+   "type": "concepto",
+   "level": 2,
+   "q": "¿Cómo se identifica correctamente un punto de control en vuelo?",
+   "options": [
+    "Elegir el pueblo más cercano que se vea y buscarlo en la carta",
+    "Prever en la carta lo que debe verse y confirmarlo con varias referencias y la hora",
+    "Mirar la carta una vez al despegar",
+    "Confiar solo en el GPS portátil"
+   ],
+   "correct": 1,
+   "why": "El método es de la carta al terreno: se anticipa, se busca y se confirma con varios detalles y con el tiempo transcurrido.",
+   "whyNot": [
+    "Es el método al revés y genera errores de identificación.",
+    null,
+    "La carta debe consultarse de forma continua.",
+    "Un solo medio no es suficiente y no sustituye a la visual."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.023",
+   "type": "regla",
+   "level": 2,
+   "q": "Según NCO.OP.125, un avión VFR de día debe llevar combustible para el vuelo más una reserva final de:",
+   "options": [
+    "60 minutos",
+    "30 minutos a velocidad de crucero normal",
+    "45 minutos",
+    "10 minutos"
+   ],
+   "correct": 1,
+   "why": "La reserva final VFR de día en avión es de 30 minutos a velocidad de crucero, a la que se suman las demás partes del cálculo.",
+   "whyNot": [
+    "Supera lo exigido por la norma.",
+    null,
+    "Es el valor del VFR nocturno.",
+    "No es un valor de reserva final para este tipo de vuelo."
+   ],
+   "ref": "NCO.OP.125 (Reg. UE 965/2012)"
+  },
+  {
+   "id": "060.08.024",
+   "type": "calculo",
+   "level": 2,
+   "q": "TAS 120 kt y viento de través puro de 30 kt. La deriva máxima aproximada es:",
+   "options": [
+    "25°",
+    "15°",
+    "30°",
+    "4°"
+   ],
+   "correct": 1,
+   "why": "Deriva ≈ viento × 60 / TAS = 30 × 60 / 120 = 15°.",
+   "whyNot": [
+    "Resulta de 30 × 60 / 72, un valor erróneo.",
+    null,
+    "Es la velocidad del viento, no el ángulo.",
+    "Es 30 / 120 × 60 con un error de dividir dos veces."
+   ],
+   "ref": "FAA PHAK cap. 16"
+  },
+  {
+   "id": "060.08.025",
+   "type": "calculo",
+   "level": 3,
+   "q": "Vuelas hacia el este (rumbo 090°) y a 24 NM de la salida estás 2 NM al norte de la derrota, con 36 NM por delante. El rumbo corregido es:",
+   "options": [
+    "080°",
+    "095°",
+    "082°",
+    "098°"
+   ],
+   "correct": 3,
+   "why": "Error: 2 × 60 / 24 = 5°. Cierre: 2 × 60 / 36 = 3,3° ≈ 3°. Total 8° hacia el sur, que es a la derecha: 098°.",
+   "whyNot": [
+    "Es un giro de 10° al lado contrario de la derrota.",
+    "Solo aplica el error de derrota (5°).",
+    "Giro en sentido contrario: estando al norte hay que ir hacia el sur.",
+    null
+   ],
+   "ref": "FAA PHAK cap. 16"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.060.08.01",
+   "front": "Regla 1 en 60",
+   "back": "A 60 NM, 1° de ángulo = 1 NM de desvío lateral"
+  },
+  {
+   "id": "c.060.08.02",
+   "front": "Error de derrota",
+   "back": "Desvío × 60 / distancia recorrida"
+  },
+  {
+   "id": "c.060.08.03",
+   "front": "Ángulo de cierre",
+   "back": "Desvío × 60 / distancia restante"
+  },
+  {
+   "id": "c.060.08.04",
+   "front": "Corrección total hacia la derrota",
+   "back": "Error de derrota + ángulo de cierre"
+  },
+  {
+   "id": "c.060.08.05",
+   "front": "Senda de 3°",
+   "back": "Unos 300 ft por NM; régimen ≈ GS × 5 ft/min"
+  },
+  {
+   "id": "c.060.08.06",
+   "front": "5 C del extravío",
+   "back": "Confesar, comunicar, ascender, cumplir (las instrucciones), conservar combustible"
+  },
+  {
+   "id": "c.060.08.07",
+   "front": "Círculo de incertidumbre",
+   "back": "Radio = 10 % de la distancia recorrida desde el último punto seguro"
+  },
+  {
+   "id": "c.060.08.08",
+   "front": "Frecuencia de socorro VHF y código de emergencia",
+   "back": "121,500 MHz y 7700"
+  }
+ ]
+}

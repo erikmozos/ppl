@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340">
+  <title>La Tierra como esfera: ecuador y meridianos (círculos máximos), paralelo (círculo menor), latitud y longitud de un punto</title>
+  <defs>
+    <marker id="060-esfera-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker>
+  </defs>
+  <circle cx="190" cy="170" r="120" class="sky"/>
+  <path d="M70 170 A120 30 0 0 0 310 170" class="ln thick" fill="none"/>
+  <path d="M70 170 A120 30 0 0 1 310 170" class="ln2 dash" fill="none"/>
+  <path d="M98 93 A92 23 0 0 0 282 93" class="ac-ln" fill="none"/>
+  <path d="M98 93 A92 23 0 0 1 282 93" class="ac-ln dash" fill="none"/>
+  <path d="M190 50 A30 120 0 0 1 190 290" class="ln thick" fill="none"/>
+  <path d="M190 50 A30 120 0 0 0 190 290" class="ln2 dash" fill="none"/>
+  <path d="M190 50 A70 120 0 0 1 190 290" class="ok-ln" fill="none"/>
+  <line x1="190" y1="30" x2="190" y2="310" class="ln2" />
+  <circle cx="190" cy="170" r="3" class="ink-fill"/>
+  <circle cx="260" cy="194" r="5" class="wa-fill"/>
+  <path d="M190 170 L260 194" class="wa-ln"/>
+  <text x="196" y="26" class="tx b">Polo N</text>
+  <text x="196" y="326" class="tx b">Polo S</text>
+  <text x="268" y="210" class="txw b">P</text>
+  <text x="318" y="170" class="tx b">Ecuador</text>
+  <text x="318" y="184" class="tx2">círculo máximo</text>
+  <text x="300" y="86" class="txa b">Paralelo</text>
+  <text x="300" y="100" class="tx2">círculo menor</text>
+  <text x="278" y="130" class="txo b">Meridiano</text>
+  <text x="278" y="144" class="txo b">de P</text>
+  <text x="130" y="205" class="tx2" text-anchor="end">Meridiano de</text>
+  <text x="130" y="219" class="tx2" text-anchor="end">Greenwich (0°)</text>
+  <rect x="440" y="40" width="190" height="250" rx="6" class="soft"/>
+  <text x="452" y="64" class="tx b">Coordenadas</text>
+  <text x="452" y="88" class="tx">Latitud: 0° a 90°, N o S</text>
+  <text x="452" y="106" class="tx2">ángulo desde el ecuador</text>
+  <text x="452" y="132" class="tx">Longitud: 0° a 180°, E o W</text>
+  <text x="452" y="150" class="tx2">ángulo desde Greenwich</text>
+  <text x="452" y="182" class="tx b">Distancias</text>
+  <text x="452" y="204" class="tx">1′ de latitud = 1 NM</text>
+  <text x="452" y="226" class="tx">1′ de longitud = 1 NM × cos lat</text>
+  <text x="452" y="256" class="tx2">Círculo máximo: el plano pasa</text>
+  <text x="452" y="272" class="tx2">por el centro de la Tierra</text>
+</svg>

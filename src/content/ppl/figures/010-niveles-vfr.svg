@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <title>Niveles de crucero VFR: miles impares más 500 hacia el este y pares más 500 hacia el oeste, con altitud de transición a 6000 ft</title>
+  <rect x="8" y="8" width="624" height="344" rx="8" class="sky"/>
+  <rect x="150" y="30" width="190" height="300" class="ac"/>
+  <rect x="370" y="30" width="190" height="300" class="ok"/>
+  <text x="245" y="24" class="txa b" text-anchor="middle">Derrota 000° a 179°</text>
+  <text x="465" y="24" class="txo b" text-anchor="middle">Derrota 180° a 359°</text>
+  <text x="245" y="346" class="tx2" text-anchor="middle">impares + 500</text>
+  <text x="465" y="346" class="tx2" text-anchor="middle">pares + 500</text>
+  <line x1="150" y1="200" x2="560" y2="200" class="wa-ln dash"/>
+  <text x="566" y="196" class="txw b" font-size="12">Altitud de</text>
+  <text x="566" y="210" class="txw b" font-size="12">transición</text>
+  <text x="566" y="224" class="txw" font-size="12">6000 ft</text>
+  <text x="142" y="330" class="tx2" text-anchor="end">3000 ft</text>
+  <line x1="150" y1="326" x2="560" y2="326" class="ln2"/>
+  <line x1="150" y1="304" x2="340" y2="304" class="ac-ln thick"/>
+  <text x="245" y="298" class="tx b" text-anchor="middle">3500 ft</text>
+  <line x1="370" y1="261" x2="560" y2="261" class="ok-ln thick"/>
+  <text x="465" y="255" class="tx b" text-anchor="middle">4500 ft</text>
+  <line x1="150" y1="218" x2="340" y2="218" class="ac-ln thick"/>
+  <text x="245" y="236" class="tx b" text-anchor="middle">5500 ft</text>
+  <line x1="370" y1="175" x2="560" y2="175" class="ok-ln thick"/>
+  <text x="465" y="169" class="tx b" text-anchor="middle">FL65</text>
+  <line x1="150" y1="132" x2="340" y2="132" class="ac-ln thick"/>
+  <text x="245" y="126" class="tx b" text-anchor="middle">FL75</text>
+  <line x1="370" y1="89" x2="560" y2="89" class="ok-ln thick"/>
+  <text x="465" y="83" class="tx b" text-anchor="middle">FL85</text>
+  <line x1="150" y1="46" x2="340" y2="46" class="ac-ln thick"/>
+  <text x="245" y="62" class="tx b" text-anchor="middle">FL95</text>
+  <text x="20" y="150" class="tx2" font-size="12">Por encima</text>
+  <text x="20" y="166" class="tx2" font-size="12">de 3000 ft</text>
+  <text x="20" y="182" class="tx2" font-size="12">AGL, según</text>
+  <text x="20" y="198" class="tx2" font-size="12">derrota</text>
+  <text x="20" y="214" class="tx2" font-size="12">magnética</text>
+</svg>

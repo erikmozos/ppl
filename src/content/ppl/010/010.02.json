@@ -1,0 +1,495 @@
+{
+  "lesson": {
+    "id": "010.02",
+    "title": "Marco normativo europeo y español",
+    "summary": "El Reglamento Base 2018/1139 y EASA; los reglamentos de aplicación (Part-FCL, Part-MED, Part-NCO, SERA, Part-ML, Part 21); AESA, ENAIRE, AEMET y CIAIAC; y la normativa española: Ley 48/1960, Ley 21/2003 y Real Decreto 1180/2018.",
+    "objectives": [
+      "Situar cada reglamento europeo con su materia: licencias, médicos, operaciones, reglas del aire, mantenimiento y aeronavegabilidad inicial",
+      "Distinguir las funciones de EASA, AESA, ENAIRE, AEMET y CIAIAC",
+      "Conocer la jerarquía entre reglamento europeo, ley y real decreto",
+      "Saber qué son AMC y GM y su valor legal"
+    ],
+    "sections": [
+      {
+        "title": "EASA y el Reglamento Base",
+        "text": [
+          "La **Agencia de la Unión Europea para la Seguridad Aérea (EASA)**, con sede en Colonia, nació para tener un marco común de seguridad en todos los Estados miembros. El instrumento básico es el **Reglamento (UE) 2018/1139** («Reglamento Base»), que fija los objetivos y principios de la seguridad de la aviación civil en la Unión y atribuye a EASA tres tareas: **elaborar la normativa** (propuestas a la Comisión), **certificar** productos y organizaciones (aeronaves, motores, hélices) y **supervisar** que los Estados aplican las reglas (inspecciones de normalización).",
+          "Un **reglamento** europeo es **directamente aplicable** en cada Estado, sin transponer, y prevalece sobre las normas nacionales contrarias. Por eso gran parte de lo que estudias en esta materia (SERA, Part-FCL) es derecho europeo."
+        ]
+      },
+      {
+        "title": "Los reglamentos que debes conocer",
+        "table": {
+          "caption": "Reglamentos europeos y su materia",
+          "head": [
+            "Reglamento",
+            "Materia"
+          ],
+          "rows": [
+            [
+              "(UE) 2018/1139",
+              "Reglamento Base: marco general y funciones de EASA"
+            ],
+            [
+              "(UE) 1178/2011",
+              "Tripulación aérea: Part-FCL (licencias), Part-MED (certificados médicos), organizaciones de formación (ATO, DTO)"
+            ],
+            [
+              "(UE) 965/2012",
+              "Operaciones aéreas: Part-NCO (no comerciales, aeronaves no complejas), Part-NCC, Part-CAT, Part-SPO, Part-ORO"
+            ],
+            [
+              "(UE) 923/2012",
+              "SERA: reglas del aire estandarizadas europeas"
+            ],
+            [
+              "(UE) 1321/2014",
+              "Aeronavegabilidad continuada: Part-M, Part-ML (mantenimiento de aeronaves ligeras), Part-145, Part-66"
+            ],
+            [
+              "(UE) 748/2012",
+              "Aeronavegabilidad inicial: Part 21 (certificación de tipo, certificados de aeronavegabilidad)"
+            ],
+            [
+              "(UE) 376/2014",
+              "Notificación de sucesos de aviación civil"
+            ],
+            [
+              "(UE) 996/2010",
+              "Investigación y prevención de accidentes e incidentes"
+            ]
+          ],
+          "src": "Easy Access Rules, EASA"
+        },
+        "text": [
+          "A medida que avances en el temario, cada reglamento aparecerá con su parte: Part-FCL en el bloque de licencias, SERA en reglas generales y VFR, Part-NCO en documentos a bordo y equipos, Part-ML en aeronavegabilidad."
+        ]
+      },
+      {
+        "title": "AMC y GM: ¿son obligatorios?",
+        "text": [
+          "Las **IR** (Implementing Rules) son los reglamentos obligatorios. Además, EASA publica **AMC** (Acceptable Means of Compliance, medios aceptables de cumplimiento) y **GM** (Guidance Material, material guía). Los AMC no son obligatorios en sí mismos, pero si los sigues, se presume que cumples el reglamento. Puedes usar un **medio alternativo** si demuestras a la autoridad que cumple igual la norma. Los GM solo explican.",
+          "Las **Easy Access Rules** son compilaciones de EASA que reúnen reglamento, AMC y GM de cada materia en un texto legible. No son derecho por sí mismas: son una consolidación."
+        ]
+      },
+      {
+        "title": "Dónde buscar cada cosa: ejemplos",
+        "text": [
+          "Una forma práctica de estudiar es preguntarte siempre «¿qué norma cubre esto?». Estos son casos típicos que verás a lo largo del temario."
+        ],
+        "table": {
+          "caption": "Casos frecuentes y su norma",
+          "head": [
+            "Pregunta",
+            "Dónde está"
+          ],
+          "rows": [
+            [
+              "¿Cuántas horas necesito para el PPL?",
+              "Part-FCL (Reglamento 1178/2011), FCL.210.A"
+            ],
+            [
+              "¿Cuánto dura mi médico de clase 2?",
+              "Part-MED (Reglamento 1178/2011), MED.A.045"
+            ],
+            [
+              "¿Qué mínimos VMC aplican?",
+              "SERA (Reglamento 923/2012), SERA.5001"
+            ],
+            [
+              "¿Qué documentos llevo a bordo en un vuelo privado?",
+              "Part-NCO (Reglamento 965/2012), NCO.GEN.135"
+            ],
+            [
+              "¿Qué mantenimiento puede hacer el piloto-propietario?",
+              "Part-ML (Reglamento 1321/2014)"
+            ],
+            [
+              "¿Cuándo notifico un suceso?",
+              "Reglamento 376/2014: en 72 horas"
+            ],
+            [
+              "¿Cómo se sanciona volar sin licencia?",
+              "Ley 21/2003, de Seguridad Aérea"
+            ],
+            [
+              "¿Qué diferencias tiene España con SERA?",
+              "AIP España GEN 1.7"
+            ]
+          ],
+          "src": "Normativa vigente"
+        },
+        "examples": [
+          {
+            "q": "Quieres volar bajo la altura mínima de SERA para una fotografía aérea. ¿Dónde está el requisito?",
+            "a": "SERA fija la altura mínima y el RD 1180/2018 regula en España cuándo se puede volar por debajo, con autorización de AESA."
+          }
+        ]
+      },
+      {
+        "title": "Organismos españoles",
+        "table": {
+          "caption": "Quién hace qué en España",
+          "head": [
+            "Organismo",
+            "Función"
+          ],
+          "rows": [
+            [
+              "AESA (Agencia Estatal de Seguridad Aérea)",
+              "Autoridad nacional de supervisión: licencias, certificados médicos, matriculación, aeronavegabilidad, organizaciones de formación, exámenes teóricos y régimen sancionador"
+            ],
+            [
+              "ENAIRE",
+              "Proveedor de servicios de navegación aérea: control de tránsito aéreo, información aeronáutica (AIS, AIP) y comunicaciones, navegación y vigilancia"
+            ],
+            [
+              "AEMET",
+              "Servicio meteorológico nacional y autoridad meteorológica aeronáutica"
+            ],
+            [
+              "CIAIAC",
+              "Comisión de Investigación de Accidentes e Incidentes de Aviación Civil: investigación técnica independiente para prevenir, sin fines punitivos"
+            ]
+          ],
+          "src": "AESA; ENAIRE; AEMET; CIAIAC"
+        }
+      },
+      {
+        "title": "La normativa española",
+        "text": [
+          "Dentro del derecho español, sobre el europeo, están tres normas que se preguntan. La **Ley 48/1960**, sobre Navegación Aérea, es la ley básica del sector. La **Ley 21/2003**, de Seguridad Aérea, regula las **infracciones y sanciones** (leves, graves y muy graves) y atribuye a AESA la potestad de inspeccionar y sancionar. El **Real Decreto 1180/2018** desarrolla el Reglamento del Aire y establece, entre otras cosas, la operación de drones, la acrobacia, el remolque, el paracaidismo y los vuelos por debajo de las alturas mínimas.",
+          "La jerarquía de aplicación, de mayor a menor, es: **reglamento europeo**, **ley**, **real decreto** y normas de menor rango (órdenes, circulares). En caso de contradicción prevalece la norma de mayor rango."
+        ]
+      }
+    ],
+    "numbers": [
+      "Reglamento Base: 2018/1139. Tripulación: 1178/2011. Operaciones: 965/2012. SERA: 923/2012",
+      "Part-ML: 1321/2014. Part 21: 748/2012",
+      "Notificación de sucesos: 376/2014. Investigación de accidentes: 996/2010",
+      "Ley 48/1960 (Navegación Aérea), Ley 21/2003 (Seguridad Aérea), RD 1180/2018 (Reglamento del Aire)"
+    ],
+    "traps": [
+      "Un reglamento europeo se aplica directamente; una directiva exige transposición.",
+      "AMC y GM no son obligatorios, pero seguir un AMC da presunción de cumplimiento.",
+      "La CIAIAC investiga para prevenir; no atribuye culpas ni responsabilidades.",
+      "AESA supervisa; ENAIRE presta el control y la información aeronáutica; AEMET, la meteorología."
+    ],
+    "spain": [
+      "AESA, ENAIRE, AEMET y CIAIAC son los organismos españoles de referencia.",
+      "La Ley 21/2003 es la base del régimen sancionador; el RD 1180/2018 desarrolla el Reglamento del Aire."
+    ],
+    "sources": [
+      {
+        "title": "Reglamento (UE) 2018/1139 (EUR-Lex)",
+        "url": "https://eur-lex.europa.eu/eli/reg/2018/1139/oj"
+      },
+      {
+        "title": "Easy Access Rules, EASA",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules"
+      },
+      {
+        "title": "Real Decreto 1180/2018 (BOE)",
+        "url": "https://www.boe.es/eli/es/rd/2018/09/21/1180/con"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología",
+        "href": "#/licencias/fraseologia"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "010.02.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Cuál es el reglamento europeo que establece EASA y sus funciones?",
+      "options": [
+        "El Reglamento (UE) 923/2012",
+        "El Reglamento (UE) 1178/2011",
+        "El Reglamento (UE) 2018/1139",
+        "El Reglamento (UE) 965/2012"
+      ],
+      "correct": 2,
+      "why": "El Reglamento Base 2018/1139 crea el marco de seguridad y atribuye funciones a EASA.",
+      "whyNot": [
+        "Es SERA.",
+        "Es el de tripulación aérea.",
+        null,
+        "Es el de operaciones aéreas."
+      ],
+      "ref": "Reglamento (UE) 2018/1139"
+    },
+    {
+      "id": "010.02.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué reglamento contiene Part-FCL y Part-MED?",
+      "options": [
+        "El Reglamento (UE) 1178/2011",
+        "El Reglamento (UE) 965/2012",
+        "El Reglamento (UE) 748/2012",
+        "El Reglamento (UE) 1321/2014"
+      ],
+      "correct": 0,
+      "why": "El 1178/2011 regula licencias, certificados médicos y organizaciones de formación.",
+      "whyNot": [
+        null,
+        "Contiene Part-NCO, CAT y otras de operaciones.",
+        "Es Part 21.",
+        "Es el de aeronavegabilidad continuada."
+      ],
+      "ref": "Reglamento (UE) 1178/2011"
+    },
+    {
+      "id": "010.02.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué reglamento europeo contiene SERA?",
+      "options": [
+        "El Reglamento (UE) 1321/2014",
+        "El Reglamento (UE) 376/2014",
+        "El Reglamento (UE) 996/2010",
+        "El Reglamento de Ejecución (UE) 923/2012"
+      ],
+      "correct": 3,
+      "why": "SERA está en el Reglamento 923/2012.",
+      "whyNot": [
+        "Es Part-M y Part-ML.",
+        "Es el de notificación de sucesos.",
+        "Es el de investigación de accidentes.",
+        null
+      ],
+      "ref": "Reglamento (UE) 923/2012"
+    },
+    {
+      "id": "010.02.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "Part-NCO regula:",
+      "options": [
+        "El mantenimiento de aeronaves ligeras",
+        "Las operaciones no comerciales con aeronaves no complejas",
+        "Las licencias de piloto",
+        "Los certificados de aeronavegabilidad iniciales"
+      ],
+      "correct": 1,
+      "why": "Part-NCO está en el Reglamento 965/2012 y trata las operaciones no comerciales con aeronaves no complejas.",
+      "whyNot": [
+        "Es Part-ML.",
+        null,
+        "Es Part-FCL.",
+        "Es Part 21."
+      ],
+      "ref": "Reglamento (UE) 965/2012"
+    },
+    {
+      "id": "010.02.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "Part-ML trata:",
+      "options": [
+        "El mantenimiento de aeronaves ligeras",
+        "Las licencias de piloto",
+        "Las operaciones comerciales",
+        "La investigación de accidentes"
+      ],
+      "correct": 0,
+      "why": "Part-ML establece los requisitos de aeronavegabilidad continuada para aeronaves ligeras.",
+      "whyNot": [
+        null,
+        "Es Part-FCL.",
+        "Es Part-CAT.",
+        "Es el Reglamento 996/2010."
+      ],
+      "ref": "Reglamento (UE) 1321/2014"
+    },
+    {
+      "id": "010.02.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿De qué trata Part 21?",
+      "options": [
+        "Del mantenimiento diario del piloto",
+        "De los certificados médicos",
+        "De la certificación y aeronavegabilidad inicial de aeronaves y productos",
+        "De los espacios aéreos"
+      ],
+      "correct": 2,
+      "why": "El Reglamento 748/2012 (Part 21) trata la certificación de tipo y la aeronavegabilidad inicial.",
+      "whyNot": [
+        "Es Part-ML.",
+        "Es Part-MED.",
+        null,
+        "Es SERA."
+      ],
+      "ref": "Reglamento (UE) 748/2012"
+    },
+    {
+      "id": "010.02.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál es la función de AESA?",
+      "options": [
+        "Prestar el servicio de control de tránsito aéreo",
+        "Ser la autoridad nacional de supervisión de la aviación civil en España",
+        "Elaborar la información meteorológica aeronáutica",
+        "Investigar los accidentes de aviación"
+      ],
+      "correct": 1,
+      "why": "AESA emite licencias, matricula aeronaves y supervisa y sanciona.",
+      "whyNot": [
+        "Es de ENAIRE.",
+        null,
+        "Es de AEMET.",
+        "Es de la CIAIAC."
+      ],
+      "ref": "Ley 21/2003"
+    },
+    {
+      "id": "010.02.008",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué organismo presta el control de tránsito aéreo y publica el AIP de España?",
+      "options": [
+        "AESA",
+        "AEMET",
+        "CIAIAC",
+        "ENAIRE"
+      ],
+      "correct": 3,
+      "why": "ENAIRE es el proveedor de servicios de navegación aérea en España.",
+      "whyNot": [
+        "Es la autoridad supervisora.",
+        "Presta la meteorología.",
+        "Investiga accidentes.",
+        null
+      ],
+      "ref": "AIP España"
+    },
+    {
+      "id": "010.02.009",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué organismo investiga técnicamente los accidentes de aviación civil en España?",
+      "options": [
+        "AESA",
+        "ENAIRE",
+        "La CIAIAC",
+        "AEMET"
+      ],
+      "correct": 2,
+      "why": "La CIAIAC investiga accidentes e incidentes para prevenir futuros.",
+      "whyNot": [
+        "Es la autoridad supervisora.",
+        "Presta servicios de navegación.",
+        null,
+        "Presta la meteorología."
+      ],
+      "ref": "Reglamento (UE) 996/2010"
+    },
+    {
+      "id": "010.02.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué regula la Ley 21/2003?",
+      "options": [
+        "La seguridad aérea y el régimen de infracciones y sanciones",
+        "La navegación aérea en general",
+        "El Reglamento del Aire",
+        "El mantenimiento de aeronaves"
+      ],
+      "correct": 0,
+      "why": "La Ley 21/2003 regula las infracciones y sanciones en materia de seguridad aérea.",
+      "whyNot": [
+        null,
+        "Es la Ley 48/1960.",
+        "Es el RD 1180/2018.",
+        "Es Part-ML."
+      ],
+      "ref": "Ley 21/2003"
+    },
+    {
+      "id": "010.02.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es un AMC?",
+      "options": [
+        "Una norma obligatoria del Reglamento",
+        "Solo un texto explicativo sin valor",
+        "Una directiva que debe transponerse",
+        "Un medio aceptable de cumplimiento: seguirlo da presunción de cumplir la norma, pero no es obligatorio"
+      ],
+      "correct": 3,
+      "why": "Los AMC son medios aceptables de cumplimiento: no son obligatorios, pero dan presunción de conformidad.",
+      "whyNot": [
+        "Es una IR.",
+        "Eso es un GM.",
+        "No es una directiva.",
+        null
+      ],
+      "ref": "Reglamento (UE) 2018/1139"
+    },
+    {
+      "id": "010.02.012",
+      "type": "concepto",
+      "level": 3,
+      "q": "En caso de contradicción entre una norma europea (reglamento) y una española, ¿cuál prevalece?",
+      "options": [
+        "La norma española, por ser nacional",
+        "El reglamento europeo, por su aplicación directa y primacía",
+        "La de fecha más reciente",
+        "La que decida AESA"
+      ],
+      "correct": 1,
+      "why": "Un reglamento europeo se aplica directamente y prevalece.",
+      "whyNot": [
+        "Prevalece el reglamento europeo.",
+        null,
+        "No es el criterio.",
+        "No es el criterio."
+      ],
+      "ref": "Tratado de Funcionamiento de la UE"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.010.02.01",
+      "front": "Reglamentos europeos clave",
+      "back": "2018/1139 base; 1178/2011 tripulación; 965/2012 operaciones; 923/2012 SERA"
+    },
+    {
+      "id": "c.010.02.02",
+      "front": "Part-ML y Part 21",
+      "back": "Part-ML: mantenimiento de aeronaves ligeras (1321/2014); Part 21: aeronavegabilidad inicial (748/2012)"
+    },
+    {
+      "id": "c.010.02.03",
+      "front": "AESA",
+      "back": "Autoridad nacional de supervisión: licencias, matrícula, aeronavegabilidad, sanciones"
+    },
+    {
+      "id": "c.010.02.04",
+      "front": "ENAIRE",
+      "back": "Control de tránsito aéreo, AIS y AIP"
+    },
+    {
+      "id": "c.010.02.05",
+      "front": "AEMET",
+      "back": "Servicio meteorológico nacional y aeronáutico"
+    },
+    {
+      "id": "c.010.02.06",
+      "front": "CIAIAC",
+      "back": "Investigación técnica de accidentes e incidentes; no atribuye culpas"
+    },
+    {
+      "id": "c.010.02.07",
+      "front": "Normas españolas",
+      "back": "Ley 48/1960 navegación aérea; Ley 21/2003 seguridad aérea y sanciones; RD 1180/2018 Reglamento del Aire"
+    }
+  ]
+}

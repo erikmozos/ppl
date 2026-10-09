@@ -1,0 +1,455 @@
+{
+ "lesson": {
+  "title": "Atmósfera y temperatura",
+  "summary": "Composición y capas de la atmósfera, altura de la tropopausa, formas de transmisión del calor, gradiente térmico, inversiones, variación diurna de la temperatura y efecto de las nubes y del viento.",
+  "objectives": [
+   "Nombrar los gases de la atmósfera y sus proporciones",
+   "Describir las capas y la tropopausa, con su altura por latitudes",
+   "Explicar radiación, conducción, convección, advección y calor latente",
+   "Entender el gradiente térmico vertical y los distintos tipos de inversión",
+   "Predecir la variación diurna de la temperatura y la influencia de nubes y viento"
+  ],
+  "sections": [
+   {
+    "title": "Composición de la atmósfera",
+    "text": [
+     "La atmósfera es una mezcla de gases que se mantiene unida a la Tierra por la gravedad. Hasta unos 80 km la proporción de los gases principales es prácticamente constante: **nitrógeno (78 %)**, **oxígeno (21 %)** y **argón (0,9 %)**; el resto son gases traza, como el dióxido de carbono (0,04 %) y el ozono. El **vapor de agua** es la excepción: su proporción varía de casi 0 hasta un 4 % del volumen según el lugar y la temperatura. Aunque es un componente pequeño, es la materia prima de las nubes y la precipitación y el motor del tiempo, y por eso casi todos los fenómenos meteorológicos ocurren en las capas bajas, donde está el vapor.",
+     "Con la altura, la **presión y la densidad disminuyen**, no la composición. A 18 000 ft (500 hPa) queda la mitad de la presión del nivel del mar, y a 36 000 ft, la cuarta parte aproximadamente. Por eso a gran altitud falta oxígeno, aunque el 21 % sea el mismo."
+    ]
+   },
+   {
+    "title": "Capas de la atmósfera",
+    "text": [
+     "La capa en la que vives y vuelas es la **troposfera**. La temperatura baja con la altura (de media, **1,98 °C por cada 1000 ft**, es decir, 6,5 °C por km), y en ella ocurren las nubes y casi todo el tiempo atmosférico. Su límite superior es la **tropopausa**, una capa de transición donde la temperatura deja de bajar. Por encima está la **estratosfera**, donde la temperatura es casi constante al principio y sube después gracias a la absorción del ozono; allí hay muy poca humedad, de modo que no hay nubes (salvo excepcionales). Más arriba están la mesosfera y la termosfera.",
+     "La altura de la tropopausa **cambia con la latitud y la estación**: unos **8 km (26 000 ft) en los polos**, **11 km (36 090 ft) en latitudes medias** (valor ISA) y **16 a 18 km en el ecuador**, y es más alta en verano que en invierno. En la tropopausa, la temperatura es de unos **−56,5 °C** en la ISA, más fría sobre el ecuador (donde puede bajar de −75 °C) que sobre los polos. Cerca de la tropopausa se encuentran las **corrientes en chorro**, y el techo de las tormentas."
+    ],
+    "figure": "svg:050-atmosfera",
+    "caption": "Perfil de temperatura ISA y altura de la tropopausa por latitudes."
+   },
+   {
+    "title": "Cómo se calienta la atmósfera",
+    "text": [
+     "El Sol emite radiación de **onda corta** que atraviesa la atmósfera casi sin calentarla y calienta el **suelo y el mar**. Estos emiten a su vez radiación de **onda larga** (infrarroja), que sí absorben el vapor de agua y el dióxido de carbono: la atmósfera se calienta **desde abajo**. Por eso en la troposfera la temperatura baja con la altura y por eso la nieve (que refleja gran parte de la luz) calienta poco y las superficies oscuras, mucho."
+    ],
+    "table": {
+     "caption": "Formas de transmisión del calor",
+     "head": [
+      "Proceso",
+      "Qué es",
+      "Efecto en el tiempo"
+     ],
+     "rows": [
+      [
+       "Radiación",
+       "Energía en forma de ondas electromagnéticas; no necesita medio",
+       "El suelo se calienta de día y se enfría de noche"
+      ],
+      [
+       "Conducción",
+       "Transmisión por contacto entre moléculas",
+       "Calienta o enfría una capa muy fina de aire en contacto con el suelo"
+      ],
+      [
+       "Convección",
+       "Movimientos verticales del aire por diferencias de temperatura",
+       "Corrientes térmicas, cúmulos, turbulencia convectiva"
+      ],
+      [
+       "Advección",
+       "Transporte horizontal del aire (viento)",
+       "Traslada calor y humedad; da nieblas de advección"
+      ],
+      [
+       "Calor latente",
+       "Calor que se libera o absorbe al cambiar de fase del agua",
+       "La condensación calienta el aire e impulsa los cumulonimbos; la evaporación enfría"
+      ]
+     ],
+     "src": "AEMET; FAA-H-8083-28"
+    }
+   },
+   {
+    "title": "Gradiente térmico e inversiones",
+    "text": [
+     "El **gradiente térmico vertical** es la variación de la temperatura con la altura. En la atmósfera estándar vale **−1,98 °C por 1000 ft** (**≈ 2 °C**), pero en la atmósfera real varía mucho de un día a otro y de una capa a otra. Si la temperatura **aumenta** con la altura, hay una **inversión**; si se mantiene, una capa **isoterma**. Una inversión es una capa muy **estable**: impide los movimientos verticales, atrapa humo, calima y humedad por debajo y, por encima, deja una excelente visibilidad.",
+     "Hay varios tipos de inversión, según su origen. La de **radiación** se forma en noches despejadas y con poco viento, cuando el suelo se enfría y enfría el aire en contacto: es baja y desaparece cuando el sol calienta el suelo por la mañana. La de **subsidencia** se forma en los anticiclones: el aire que desciende se comprime y se calienta, y deja una capa cálida sobre otra más fría, en general entre 1000 y 5000 ft; da estratos y calima por debajo. La **frontal** se produce en un frente: el aire cálido se desliza sobre el frío. La de **turbulencia** aparece sobre una capa de rozamiento mezclada por el viento: la mezcla enfría la parte baja y deja una capa más cálida encima. Y la de **advección**, cuando aire cálido pasa sobre una superficie fría."
+    ],
+    "examples": [
+     {
+      "q": "A 3000 ft la temperatura ISA, partiendo de 15 °C al nivel del mar.",
+      "a": "15 − 2 × 3 = 9 °C."
+     },
+     {
+      "q": "Mides 8 °C a 3000 ft y 11 °C a 4000 ft. ¿Qué hay entre ambos niveles?",
+      "a": "La temperatura sube con la altura: una inversión (3 °C en 1000 ft)."
+     }
+    ]
+   },
+   {
+    "title": "Variación diurna y efecto de nubes y viento",
+    "text": [
+     "La temperatura del aire sigue con retraso al calentamiento del suelo. La **máxima** ocurre **una o dos horas después del mediodía solar** (hacia las 14 o 16 h locales) y la **mínima**, **poco después de la salida del Sol**, cuando el suelo ha perdido calor toda la noche. La **amplitud** (diferencia entre máxima y mínima) es mayor con **cielo despejado, aire seco, viento flojo y suelo seco**; es pequeña sobre el **mar** (apenas 1 °C) porque el agua tiene gran capacidad calorífica y se mezcla.",
+     "Las **nubes** reducen la amplitud: de día reflejan la radiación solar y el suelo se calienta menos; de noche retienen la radiación terrestre y se enfría menos. El **viento** mezcla el aire y también reduce la amplitud. La **inversión de radiación** es máxima al amanecer."
+    ]
+   }
+  ],
+  "numbers": [
+   "N₂ 78 %, O₂ 21 %, Ar 0,9 %; vapor de agua 0 a 4 %",
+   "Tropopausa: polos 8 km, latitudes medias 11 km (36 090 ft), ecuador 16-18 km; −56,5 °C en la ISA",
+   "Gradiente ISA: −1,98 °C por 1000 ft (6,5 °C por km)",
+   "Máxima de temperatura: 1-2 h después del mediodía; mínima: poco después del orto",
+   "Inversión: la temperatura aumenta con la altura"
+  ],
+  "traps": [
+   "La composición del aire no cambia con la altura: cambia la presión y la densidad.",
+   "La tropopausa es más alta en el ecuador que en los polos, no al revés.",
+   "La atmósfera se calienta desde abajo, no por la radiación solar directa.",
+   "El mar tiene una variación diurna de temperatura muy pequeña.",
+   "Una inversión es una capa estable, no una zona de convección."
+  ],
+  "sources": [
+   {
+    "title": "OACI, Doc 7488: Atmósfera tipo",
+    "url": "https://www.icao.int/"
+   },
+   {
+    "title": "AEMET, Apuntes de meteorología aeronáutica",
+    "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
+   },
+   {
+    "title": "FAA-H-8083-28, Aviation Weather Handbook",
+    "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+   }
+  ],
+  "id": "050.01",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "050.01.001",
+   "type": "regla",
+   "level": 1,
+   "q": "El gas más abundante de la atmósfera es el:",
+   "options": [
+    "Argón (1 %)",
+    "Oxígeno (21 %)",
+    "Nitrógeno (78 %)",
+    "Dióxido de carbono"
+   ],
+   "correct": 2,
+   "why": "La composición seca es 78 % de nitrógeno, 21 % de oxígeno y 0,9 % de argón.",
+   "whyNot": [
+    "Es un gas minoritario.",
+    "Es el segundo, con el 21 %.",
+    null,
+    "Es un gas traza."
+   ],
+   "ref": "OACI Doc 7488"
+  },
+  {
+   "id": "050.01.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "La capa donde ocurren casi todos los fenómenos meteorológicos es la:",
+   "options": [
+    "Mesosfera",
+    "Termosfera",
+    "Troposfera",
+    "Estratosfera"
+   ],
+   "correct": 2,
+   "why": "La troposfera contiene la mayor parte del vapor de agua y las nubes.",
+   "whyNot": [
+    "Está mucho más arriba.",
+    "Está mucho más arriba.",
+    null,
+    "Tiene muy poca humedad y casi no hay nubes."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.01.003",
+   "type": "regla",
+   "level": 1,
+   "q": "La altura de la tropopausa es mayor en:",
+   "options": [
+    "Es igual en todas partes",
+    "Latitudes medias",
+    "El ecuador",
+    "Los polos"
+   ],
+   "correct": 2,
+   "why": "La troposfera es más profunda en el ecuador, donde llega a 16-18 km; en los polos, unos 8 km.",
+   "whyNot": [
+    "Varía con la latitud.",
+    "Tiene un valor intermedio.",
+    null,
+    "Es menor en los polos."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.01.004",
+   "type": "regla",
+   "level": 2,
+   "q": "En la ISA, la tropopausa está a:",
+   "options": [
+    "36 090 ft con −56,5 °C",
+    "50 000 ft con −60 °C",
+    "18 000 ft con −20 °C",
+    "30 000 ft con −40 °C"
+   ],
+   "correct": 0,
+   "why": "La ISA fija la tropopausa en 11 km (36 090 ft) y −56,5 °C.",
+   "whyNot": [
+    null,
+    "50 000 ft está ya en la estratosfera, unos 14 000 ft por encima de la tropopausa.",
+    "A 18 000 ft la ISA da unos −21 °C, también en la troposfera.",
+    "A 30 000 ft la ISA da unos −45 °C y aún estás en la troposfera."
+   ],
+   "ref": "OACI Doc 7488"
+  },
+  {
+   "id": "050.01.005",
+   "type": "concepto",
+   "level": 1,
+   "q": "La atmósfera se calienta principalmente por:",
+   "options": [
+    "La absorción directa de la radiación solar",
+    "La radiación de onda larga que emite el suelo",
+    "El rozamiento del viento",
+    "El calor interno de la Tierra"
+   ],
+   "correct": 1,
+   "why": "El suelo absorbe la radiación solar y emite infrarrojo, que el vapor de agua y el CO₂ absorben.",
+   "whyNot": [
+    "La mayor parte atraviesa la atmósfera sin calentarla.",
+    null,
+    "Su efecto es despreciable.",
+    "Su efecto es despreciable."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.01.006",
+   "type": "concepto",
+   "level": 1,
+   "q": "Un movimiento vertical del aire por diferencias de temperatura se llama:",
+   "options": [
+    "Advección",
+    "Radiación",
+    "Conducción",
+    "Convección"
+   ],
+   "correct": 3,
+   "why": "La convección es el ascenso de aire caliente y el descenso de aire frío.",
+   "whyNot": [
+    "Es el movimiento horizontal.",
+    "Es la emisión de ondas.",
+    "Es la transmisión por contacto.",
+    null
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.01.007",
+   "type": "concepto",
+   "level": 1,
+   "q": "El transporte horizontal de aire cálido o frío por el viento se llama:",
+   "options": [
+    "Advección",
+    "Radiación",
+    "Convección",
+    "Conducción"
+   ],
+   "correct": 0,
+   "why": "La advección traslada propiedades del aire, como calor y humedad, de un lugar a otro.",
+   "whyNot": [
+    null,
+    "Es por contacto.",
+    "Es vertical.",
+    "Es por ondas."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.01.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "El calor latente de condensación:",
+   "options": [
+    "No tiene efecto",
+    "Se absorbe al formarse las nubes",
+    "Enfría el aire que rodea la nube",
+    "Se libera al formarse las nubes y alimenta la convección"
+   ],
+   "correct": 3,
+   "why": "Al condensar el vapor se libera calor, que hace que el aire ascienda con más fuerza.",
+   "whyNot": [
+    "Es importante en cumulonimbos.",
+    "Se absorbe en la evaporación.",
+    "Calienta el aire.",
+    null
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.01.009",
+   "type": "concepto",
+   "level": 1,
+   "q": "En una inversión, la temperatura:",
+   "options": [
+    "Disminuye con la altura",
+    "Aumenta con la altura",
+    "Es de 0 °C",
+    "Es la misma a todas las alturas"
+   ],
+   "correct": 1,
+   "why": "Una inversión es una capa en la que el aire más alto es más cálido.",
+   "whyNot": [
+    "Es el gradiente normal.",
+    null,
+    "No tiene ese valor fijo.",
+    "Eso es una capa isoterma."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.01.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "La inversión de radiación se forma típicamente:",
+   "options": [
+    "Al mediodía en verano",
+    "En un frente frío",
+    "Con viento fuerte y nubes bajas",
+    "En noches despejadas con viento flojo"
+   ],
+   "correct": 3,
+   "why": "El suelo pierde calor por radiación y enfría el aire en contacto, que queda más frío que el de encima.",
+   "whyNot": [
+    "Es de día; no hay enfriamiento.",
+    "Es una causa distinta.",
+    "No favorece el enfriamiento del suelo.",
+    null
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.01.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "La inversión de subsidencia es típica de:",
+   "options": [
+    "Los anticiclones",
+    "Los cumulonimbos",
+    "Los frentes fríos",
+    "Las borrascas"
+   ],
+   "correct": 0,
+   "why": "El aire que desciende en un anticiclón se comprime y se calienta, y forma una capa cálida sobre otra más fría.",
+   "whyNot": [
+    null,
+    "En un Cb el aire asciende.",
+    "La frontal es otra.",
+    "En borrascas el aire asciende."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.01.012",
+   "type": "concepto",
+   "level": 1,
+   "q": "La temperatura máxima diaria suele darse:",
+   "options": [
+    "Al atardecer",
+    "Una o dos horas después del mediodía solar",
+    "Al mediodía exacto",
+    "A la salida del Sol"
+   ],
+   "correct": 1,
+   "why": "El suelo y el aire siguen calentándose mientras reciban más energía de la que pierden.",
+   "whyNot": [
+    "El suelo sigue calentándose algo más.",
+    null,
+    "Hay un retraso por la inercia térmica.",
+    "La mínima se da al amanecer."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.01.013",
+   "type": "concepto",
+   "level": 2,
+   "q": "Las nubes hacen que la amplitud térmica diaria:",
+   "options": [
+    "Disminuya",
+    "No cambie",
+    "Se anule siempre",
+    "Aumente"
+   ],
+   "correct": 0,
+   "why": "De día reflejan la radiación solar y de noche retienen el calor del suelo.",
+   "whyNot": [
+    null,
+    "Sí cambia, en un sentido.",
+    "No desaparece.",
+    "Con cielo despejado aumenta."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.01.014",
+   "type": "calculo",
+   "level": 2,
+   "q": "Partiendo de 15 °C al nivel del mar, la temperatura ISA a 5000 ft es:",
+   "options": [
+    "10 °C",
+    "5 °C",
+    "−5 °C",
+    "0 °C"
+   ],
+   "correct": 1,
+   "why": "Cada 1000 ft baja unos 2 °C: 15 − 2 × 5 = 5 °C.",
+   "whyNot": [
+    "Resulta de usar 1 °C por 1000 ft.",
+    null,
+    "Resulta de usar 3 °C por 1000 ft.",
+    "Resulta de restar 15."
+   ],
+   "ref": "OACI Doc 7488"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.050.01.01",
+   "front": "Composición del aire",
+   "back": "N₂ 78 %, O₂ 21 %, Ar 0,9 %; vapor de agua 0 a 4 %"
+  },
+  {
+   "id": "c.050.01.02",
+   "front": "Tropopausa",
+   "back": "Polos 8 km, latitudes medias 11 km (36 090 ft), ecuador 16-18 km; −56,5 °C en la ISA"
+  },
+  {
+   "id": "c.050.01.03",
+   "front": "Gradiente ISA",
+   "back": "−1,98 °C por 1000 ft (6,5 °C por km) hasta la tropopausa"
+  },
+  {
+   "id": "c.050.01.04",
+   "front": "Inversión",
+   "back": "La temperatura aumenta con la altura: capa estable"
+  },
+  {
+   "id": "c.050.01.05",
+   "front": "Máxima y mínima diarias",
+   "back": "Máxima 1-2 h después del mediodía; mínima poco después del orto"
+  },
+  {
+   "id": "c.050.01.06",
+   "front": "Formas de transmisión del calor",
+   "back": "Radiación, conducción, convección, advección y calor latente"
+  }
+ ]
+}

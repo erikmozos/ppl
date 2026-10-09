@@ -1,0 +1,400 @@
+{
+  "lesson": {
+    "id": "020.18",
+    "title": "Sensores de motor",
+    "summary": "Cómo se miden presiones, temperaturas, cantidad y caudal de combustible y RPM en un avión ligero: tubo de Bourdon, cápsula aneroide, termopares, termorresistencias, flotadores, caudalímetro y tacómetro.",
+    "objectives": [
+      "Explicar el funcionamiento del tubo de Bourdon y de la cápsula aneroide",
+      "Diferenciar un termopar de una termorresistencia y saber qué mide cada uno",
+      "Describir cómo se mide la cantidad de combustible y por qué no se debe fiar solo del indicador",
+      "Explicar qué mide el caudalímetro de un motor de inyección y el tacómetro",
+      "Interpretar la falsedad de un indicador frente a una avería real"
+    ],
+    "sections": [
+      {
+        "title": "Presión: tubo de Bourdon y cápsula",
+        "text": [
+          "Muchos instrumentos del motor son manómetros. El más habitual usa un **tubo de Bourdon**: un tubo metálico de sección aplanada, enrollado en forma de C. Cuando entra presión en su interior, el tubo trata de enderezarse, como un matasuegras que se despliega. Ese pequeño movimiento se amplifica con un sector dentado y un piñón que mueve la aguja. Se usa para la **presión de aceite**, la de **combustible** y la de **vacío o succión** de los giróscopos, y se llama manómetro de presión **relativa** porque mide frente a la presión exterior.",
+          "El indicador de **presión de admisión** (MAP) necesita medir una presión **absoluta**. Lleva una **cápsula aneroide** cerrada y sin aire (casi vacío), que se dilata o contrae con la presión del colector y mueve la aguja. Como en el altímetro, la cápsula es la referencia de presión absoluta; se calibra en **pulgadas de mercurio** (inHg).",
+          "Una avería del tubo o de la tubería que lo conecta puede hacer que el instrumento no marque nada, aunque el motor esté bien. Por eso, un fallo del indicador y una avería real se distinguen por el resto de datos: temperatura, ruido, olor y comportamiento del motor."
+        ]
+      },
+      {
+        "title": "Temperatura: termopar y termorresistencia",
+        "text": [
+          "Hay dos sensores eléctricos de temperatura, adecuados a rangos distintos:",
+          "El **termopar** son dos hilos de metales diferentes (por ejemplo hierro-constantán o cromel-alumel) unidos en un extremo. Cuando la unión se calienta respecto al otro extremo se genera una **pequeña tensión** proporcional a la diferencia de temperatura. No necesita alimentación eléctrica, resiste altas temperaturas y se usa para la **temperatura de gases de escape (EGT)** (cientos de °C) y la de **culatas (CHT)**.",
+          "La **termorresistencia** es un hilo (platino, por ejemplo) cuya **resistencia eléctrica** cambia con la temperatura. Se mide con un puente de resistencias y exige alimentación. Es más precisa en rangos moderados y se usa para la **temperatura de aceite** y la **temperatura exterior (OAT)**. Antiguamente se empleaba también un **termómetro de bulbo y capilar**, con un líquido o gas cuyo volumen o presión cambia y se transmite a un tubo de Bourdon."
+        ],
+        "table": {
+          "caption": "Sensores de temperatura",
+          "head": [
+            "Sensor",
+            "Principio",
+            "Se usa para"
+          ],
+          "rows": [
+            [
+              "Termopar",
+              "Dos metales distintos generan una tensión según la temperatura",
+              "EGT y CHT (temperaturas altas)"
+            ],
+            [
+              "Termorresistencia",
+              "La resistencia del hilo varía con la temperatura",
+              "Aceite y temperatura exterior"
+            ],
+            [
+              "Bulbo y capilar",
+              "El fluido del bulbo se dilata y mueve un tubo de Bourdon",
+              "Instrumentos antiguos de aceite"
+            ]
+          ],
+          "src": "PHAK cap. 8"
+        }
+      },
+      {
+        "title": "Cantidad y caudal de combustible",
+        "text": [
+          "El **indicador de cantidad** de combustible usa un **flotador** en el depósito unido a un **potenciómetro**: al subir o bajar el flotador cambia la resistencia y con ella la corriente que mueve la aguja. En aviones más grandes se usa un sistema **capacitivo**, que mide el cambio de capacidad entre placas sumergidas. Estos indicadores son poco exactos, sobre todo en actitudes distintas del vuelo nivelado, con depósito casi vacío o con el avión inclinado en tierra.",
+          "Por eso el piloto **comprueba la cantidad visualmente** antes de volar (varilla o visual en el depósito) y la **calcula** con el consumo y el tiempo. No se debe fiar solo del indicador. La normativa solo exige que el indicador marque con precisión **cero** cuando el depósito esté vacío de combustible utilizable."
+        ],
+        "bullets": [
+          "En el PA-28-161 con carburador hay **manómetro de presión de combustible** (psi), que informa de la presión que llega al carburador, y no de cuánto combustible consume.",
+          "En el C172S de inyección el **indicador de caudal** mide la presión del combustible hasta los inyectores y la presenta como **galones por hora**. Así puedes ver el consumo y ajustar la mezcla. Otros sistemas usan un caudalímetro con turbina o paleta.",
+          "Un caudal más alto de lo normal puede indicar una fuga o una obstrucción en un inyector; uno más bajo, mezcla muy pobre o un filtro obstruido."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Tacómetro y contadores",
+        "text": [
+          "El **tacómetro** mide las **RPM** del cigüeñal. En los antiguos, un cable flexible gira un imán que arrastra una copa metálica por **corrientes parásitas** y mueve la aguja. En los modernos, un **generador trifásico** movido por el motor, o los pulsos de los magnetos o del alternador, alimenta un motor síncrono o un circuito electrónico que muestra las RPM. Es el instrumento principal de potencia con hélice de paso fijo, con arco verde, arco amarillo (precaución) y raya roja.",
+          "El **contador de horas** lleva dos formas: el **tiempo de motor en funcionamiento** (Hobbs, mide el tiempo con el motor encendido o con presión de aceite) y el **tiempo de tacómetro**, que acumula horas ajustadas al régimen: pasa más despacio con RPM bajas y a ritmo de reloj en el régimen de referencia. Se usan en el mantenimiento y no son lo mismo que las horas de vuelo."
+        ]
+      },
+      {
+        "title": "Indicadores falsos y averías reales",
+        "text": [
+          "Los instrumentos de motor fallan: un conductor suelto, un sensor averiado o una tubería de aceite. Para distinguir un fallo del indicador de una avería real, mira si el resto de parámetros acompaña. **Presión de aceite baja con temperatura normal y motor suave** sugiere un sensor. **Presión baja con temperatura en aumento** apunta a pérdida de aceite real (020.13). **EGT que cae en un cilindro** puede ser un termopar roto o un problema de ese cilindro. Ante la duda, trata el instrumento como si dijera la verdad."
+        ],
+        "note": {
+          "kind": "tip",
+          "text": "Un instrumento del motor que se vuelve loco con otros normales suele ser el sensor; si dos o tres se mueven en el mismo sentido, es el motor."
+        }
+      }
+    ],
+    "numbers": [
+      "Tubo de Bourdon: presión de aceite, combustible y vacío (presión relativa)",
+      "Cápsula aneroide: presión de admisión (absoluta, en inHg)",
+      "Termopar: EGT y CHT (sin alimentación); termorresistencia: aceite y OAT",
+      "Indicador de cantidad: flotador y potenciómetro; no fiable, hay que comprobarlo visualmente",
+      "C172S (inyección): indicador de caudal en galones por hora; PA-28 (carburador): presión de combustible"
+    ],
+    "traps": [
+      "Confundir la termorresistencia (varía la resistencia) con el termopar (genera una tensión).",
+      "Creer que el indicador de combustible es fiable al 100 %: hay que comprobar con varilla o visual.",
+      "Pensar que la MAP se mide con un tubo de Bourdon: usa una cápsula aneroide.",
+      "Confundir el caudal en galones por hora con la presión de combustible en psi.",
+      "Dar por hecho que un instrumento con valor extraño siempre implica avería real: puede ser el sensor."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 8: sistemas de instrumentos",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Manual de vuelo del PA-28-161 y del C172S",
+        "url": "https://www.piper.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28: instrumentos de motor",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172: indicador de caudal",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.18.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "El tubo de Bourdon se basa en que:",
+      "options": [
+        "Un tubo curvo tiende a enderezarse al aumentar la presión interior",
+        "Una cápsula se dilata con el vacío",
+        "Un hilo cambia su resistencia con la temperatura",
+        "Dos metales distintos generan tensión"
+      ],
+      "correct": 0,
+      "why": "El tubo aplanado y enrollado se endereza con la presión y ese movimiento se transmite a la aguja.",
+      "whyNot": [
+        null,
+        "Eso describe una cápsula aneroide.",
+        "Eso es una termorresistencia.",
+        "Eso es un termopar."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.18.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "El indicador de presión de admisión (MAP) utiliza:",
+      "options": [
+        "Un tubo de Bourdon",
+        "Un potenciómetro",
+        "Un termopar",
+        "Una cápsula aneroide"
+      ],
+      "correct": 3,
+      "why": "Mide presión absoluta del colector con una cápsula aneroide cerrada.",
+      "whyNot": [
+        "El Bourdon mide presiones relativas del aceite o del combustible.",
+        "El potenciómetro es del indicador de cantidad.",
+        "El termopar mide temperatura.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.18.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un termopar genera:",
+      "options": [
+        "Una variación de resistencia",
+        "Una variación de capacidad",
+        "Una pequeña tensión proporcional a la diferencia de temperatura",
+        "Una variación de presión"
+      ],
+      "correct": 2,
+      "why": "Dos metales distintos unidos generan una tensión según la temperatura de la unión.",
+      "whyNot": [
+        "Eso describe la termorresistencia.",
+        "La variación de capacidad es de sensores capacitivos de combustible.",
+        null,
+        "La presión no es el principio del termopar."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.18.004",
+      "type": "concepto",
+      "level": 1,
+      "q": "El sensor más adecuado para medir la temperatura de gases de escape (EGT) es:",
+      "options": [
+        "Un tubo de Bourdon",
+        "Un termopar",
+        "Un flotador",
+        "Una cápsula aneroide"
+      ],
+      "correct": 1,
+      "why": "Resiste temperaturas altas, no necesita alimentación y es la solución habitual para EGT y CHT.",
+      "whyNot": [
+        "Mide presión, no temperatura.",
+        null,
+        "El flotador mide nivel de líquido.",
+        "Mide presión absoluta."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.18.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "La temperatura de aceite y la temperatura exterior se miden habitualmente con:",
+      "options": [
+        "Un termopar",
+        "Un caudalímetro",
+        "Una termorresistencia",
+        "Un manómetro"
+      ],
+      "correct": 2,
+      "why": "La resistencia de un hilo metálico varía con la temperatura: es preciso para rangos moderados.",
+      "whyNot": [
+        "El termopar se reserva para altas temperaturas.",
+        "El caudalímetro mide caudal.",
+        null,
+        "El manómetro mide presión."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.18.006",
+      "type": "concepto",
+      "level": 1,
+      "q": "El indicador de cantidad de combustible funciona normalmente con:",
+      "options": [
+        "Un termopar",
+        "Un flotador unido a un potenciómetro",
+        "Un tubo de Bourdon",
+        "Un giróscopo"
+      ],
+      "correct": 1,
+      "why": "El flotador sube o baja con el nivel y cambia la resistencia que mueve la aguja.",
+      "whyNot": [
+        "Mide temperaturas.",
+        null,
+        "Mide presiones.",
+        "No tiene relación con el combustible."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.18.007",
+      "type": "regla",
+      "level": 2,
+      "q": "Respecto al indicador de combustible, un piloto debe:",
+      "options": [
+        "Fiarse solo del indicador",
+        "Fiarse del indicador solo en crucero",
+        "Ignorar el indicador",
+        "Comprobar visualmente la cantidad antes del vuelo y no depender solo del indicador"
+      ],
+      "correct": 3,
+      "why": "Los indicadores son poco precisos; se verifica la cantidad con varilla o a la vista y se calcula el consumo.",
+      "whyNot": [
+        "Son poco precisos.",
+        "En vuelo también conviene contrastarlo con el cálculo.",
+        "Es útil aunque no sea exacto.",
+        null
+      ],
+      "ref": "PHAK cap. 8; POH"
+    },
+    {
+      "id": "020.18.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "El indicador de caudal de combustible de un motor de inyección como el del C172S presenta el valor en:",
+      "options": [
+        "galones por hora",
+        "psi de presión de aceite",
+        "pulgadas de mercurio",
+        "grados Celsius"
+      ],
+      "correct": 0,
+      "why": "Mide la presión del combustible a los inyectores y la presenta como caudal en galones por hora.",
+      "whyNot": [
+        null,
+        "Es presión de aceite, otro instrumento.",
+        "Las pulgadas de mercurio son de la MAP.",
+        "Los grados Celsius son de temperatura."
+      ],
+      "ref": "POH C172S"
+    },
+    {
+      "id": "020.18.009",
+      "type": "concepto",
+      "level": 3,
+      "q": "El tacómetro eléctrico moderno obtiene las RPM de:",
+      "options": [
+        "Un generador o los pulsos de los magnetos o del alternador",
+        "La presión de aceite",
+        "La presión de admisión",
+        "La temperatura de culatas"
+      ],
+      "correct": 0,
+      "why": "Un generador movido por el motor, o los pulsos de los magnetos o del alternador, dan una señal proporcional a las RPM.",
+      "whyNot": [
+        null,
+        "La presión de aceite no depende de las RPM de forma lineal.",
+        "La MAP depende de la mariposa.",
+        "La temperatura no mide giro."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.18.010",
+      "type": "lectura",
+      "level": 2,
+      "q": "En vuelo de crucero lees los siguientes datos. ¿Qué es lo más probable?",
+      "data": "Presión de aceite: 0 psi\nTemperatura de aceite: 85 °C, estable\nCHT: normal\nMotor: funcionamiento suave, sin ruidos",
+      "options": [
+        "Pérdida de aceite grave",
+        "Sobrecalentamiento",
+        "Fallo del indicador o su sensor de presión",
+        "Hielo de carburador"
+      ],
+      "correct": 2,
+      "why": "Si el resto de parámetros es normal y el motor funciona suave, lo más probable es un fallo del indicador, aunque se debe aterrizar pronto y revisarlo.",
+      "whyNot": [
+        "Con pérdida real, subiría la temperatura y el motor protestaría.",
+        "Las temperaturas son normales.",
+        null,
+        "El hielo afectaría a RPM o MAP."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.18.011",
+      "type": "concepto",
+      "level": 3,
+      "q": "El tubo de Bourdon se emplea normalmente para medir:",
+      "options": [
+        "El nivel de combustible",
+        "La temperatura de gases de escape",
+        "Las RPM",
+        "La presión de aceite"
+      ],
+      "correct": 3,
+      "why": "El Bourdon mide presiones relativas: aceite, combustible y vacío.",
+      "whyNot": [
+        "El nivel se mide con un flotador.",
+        "La EGT se mide con un termopar.",
+        "Las RPM se miden con el tacómetro.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.18.012",
+      "type": "concepto",
+      "level": 3,
+      "q": "El contador Hobbs registra:",
+      "options": [
+        "Las horas de vuelo oficiales del libro",
+        "El tiempo con el motor en funcionamiento (o con presión de aceite)",
+        "Las RPM acumuladas",
+        "El consumo total"
+      ],
+      "correct": 1,
+      "why": "Mide el tiempo de motor en marcha; el tiempo de tacómetro se ajusta a las RPM.",
+      "whyNot": [
+        "Las horas oficiales las anota el piloto en el libro de vuelo.",
+        null,
+        "No acumula RPM.",
+        "No mide combustible."
+      ],
+      "ref": "PHAK cap. 8"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.18.01",
+      "front": "Tubo de Bourdon",
+      "back": "Tubo curvo que se endereza con la presión; presión de aceite, combustible y vacío"
+    },
+    {
+      "id": "c.020.18.02",
+      "front": "Termopar y termorresistencia",
+      "back": "Termopar: genera tensión (EGT, CHT). Termorresistencia: varía la resistencia (aceite, OAT)"
+    },
+    {
+      "id": "c.020.18.03",
+      "front": "Instrumento de presión de admisión",
+      "back": "Cápsula aneroide; mide presión absoluta en inHg"
+    },
+    {
+      "id": "c.020.18.04",
+      "front": "Indicador de cantidad de combustible",
+      "back": "Flotador y potenciómetro; no es fiable al 100 %: comprobar visualmente"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340">
+<title>Doble encendido: dos magnetos independientes, dos bujías por cilindro y el interruptor de encendido</title>
+<defs>
+<marker id="020-doble-encendido-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+</defs>
+<rect x="230" y="150" width="180" height="120" class="soft"/>
+<text x="320" y="292" class="tx2" text-anchor="middle">Cámara de combustión de un cilindro</text>
+<rect x="250" y="116" width="26" height="36" class="soft"/>
+<rect x="364" y="116" width="26" height="36" class="soft"/>
+<line x1="263" y1="152" x2="263" y2="176" class="ln thick"/>
+<line x1="377" y1="152" x2="377" y2="176" class="ln thick"/>
+<circle cx="263" cy="180" r="4" class="wa-fill"/>
+<circle cx="377" cy="180" r="4" class="wa-fill"/>
+<path d="M263 188 C290 200 300 230 320 250" class="wa-ln dash" fill="none"/>
+<path d="M377 188 C350 200 340 230 320 250" class="wa-ln dash" fill="none"/>
+<text x="320" y="224" class="txw" font-size="11" text-anchor="middle">dos frentes</text>
+<text x="320" y="238" class="txw" font-size="11" text-anchor="middle">de llama</text>
+<rect x="20" y="30" width="120" height="56" class="ac"/>
+<text x="80" y="54" class="tx b" text-anchor="middle">Magneto</text>
+<text x="80" y="72" class="tx2" text-anchor="middle">izquierdo (L)</text>
+<rect x="500" y="30" width="120" height="56" class="ac"/>
+<text x="560" y="54" class="tx b" text-anchor="middle">Magneto</text>
+<text x="560" y="72" class="tx2" text-anchor="middle">derecho (R)</text>
+<path d="M140 58 H263 V116" class="ac-ln thick" fill="none" marker-end="url(#020-doble-encendido-f)"/>
+<path d="M500 58 H377 V116" class="ac-ln thick" fill="none" marker-end="url(#020-doble-encendido-f)"/>
+<text x="196" y="76" class="tx2" font-size="11" text-anchor="middle">alta tensión</text>
+<text x="444" y="76" class="tx2" font-size="11" text-anchor="middle">alta tensión</text>
+<rect x="250" y="14" width="140" height="62" class="ok"/>
+<text x="320" y="34" class="txo b" text-anchor="middle">Interruptor</text>
+<text x="320" y="50" class="tx2" font-size="11" text-anchor="middle">OFF · R · L</text><text x="320" y="66" class="tx2" font-size="11" text-anchor="middle">BOTH · START</text>
+<line x1="250" y1="30" x2="80" y2="30" class="ok-ln dash"/>
+<line x1="390" y1="30" x2="560" y2="30" class="ok-ln dash"/>
+<text x="20" y="130" class="tx2" font-size="11">En OFF el interruptor conecta</text>
+<text x="20" y="144" class="tx2" font-size="11">a masa el primario de cada</text>
+<text x="20" y="158" class="tx2" font-size="11">magneto (cable P).</text>
+<text x="20" y="190" class="tx2" font-size="11">Los magnetos no usan la batería:</text>
+<text x="20" y="204" class="tx2" font-size="11">solo el arranque la necesita.</text>
+<text x="320" y="320" class="tx2" font-size="11" text-anchor="middle">Cada magneto alimenta una bujía de cada cilindro.</text>
+</svg>

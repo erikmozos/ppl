@@ -1,0 +1,468 @@
+{
+  "lesson": {
+    "id": "020.19",
+    "title": "Pitot-estático y temperatura",
+    "summary": "Presiones total, estática y dinámica; tomas y drenajes del sistema pitot-estático; qué marca cada instrumento cuando se obstruye una toma; fuente estática alternativa; tipos de error y medida de la temperatura exterior.",
+    "objectives": [
+      "Relacionar presión total, estática y dinámica y explicar cómo las usan el anemómetro, el altímetro y el variómetro",
+      "Describir las tomas del sistema: tubo pitot con calefactor y drenaje, tomas estáticas y fuente alternativa",
+      "Predecir la lectura de los tres instrumentos con el pitot o la estática obstruidos",
+      "Distinguir los errores de posición, de instrumento y de retardo",
+      "Explicar cómo se mide la temperatura exterior y qué errores tiene"
+    ],
+    "sections": [
+      {
+        "title": "Las tres presiones",
+        "text": [
+          "El aire que rodea al avión ejerce una **presión estática** (la atmosférica, que medirías en reposo a esa altura). Cuando el avión se mueve, el aire que choca de frente contra una abertura se frena y añade la **presión dinámica**, q = ½ · ρ · V². La suma de ambas es la **presión total** (o de impacto). Un solo montaje basta para medir las tres cosas necesarias: altitud, velocidad y velocidad vertical.",
+          "El **tubo de pitot** apunta al viento relativo y recoge la **presión total**. Las **tomas estáticas** son pequeños orificios a ras del fuselaje, a los lados, donde el aire fluye sin perturbaciones; recogen solo la **presión estática**. Se ponen a **ambos lados** y se conectan entre sí para compensar la presión en un derrape. Los tres instrumentos se alimentan de estas dos fuentes:"
+        ],
+        "figure": "svg:020-pitot-estatico",
+        "caption": "Sistema pitot-estático: la presión total del pitot va solo al anemómetro; la estática alimenta los tres instrumentos.",
+        "bullets": [
+          "**Anemómetro**: cápsula con la presión total dentro y la estática en la caja; su deflexión mide la **presión dinámica**, que da la velocidad.",
+          "**Altímetro**: cápsulas aneroides selladas en una caja con la presión estática; mide la presión absoluta y la traduce a altitud.",
+          "**Variómetro (VSI)**: la estática llega a la cápsula directamente y a la caja a través de un orificio calibrado; mide la **velocidad de cambio** de la presión estática, con un retraso de unos segundos."
+        ]
+      },
+      {
+        "title": "Tubo de pitot, drenaje y calefacción",
+        "text": [
+          "El pitot lleva un **calefactor eléctrico** que evita el hielo, un **orificio de drenaje** pequeño que deja salir el agua que entra por la lluvia y un tubo de conexión hasta el anemómetro. En el prevuelo se comprueba que la **funda** está quitada, que el tubo y el orificio de drenaje están libres (insectos, suciedad) y que la calefacción funciona, con cuidado de no quemarse. En el PA-28-161 y el C172S el interruptor de calefacción del pitot está en el panel; se conecta con humedad visible y temperatura cercana a 0 °C."
+        ]
+      },
+      {
+        "title": "Obstrucciones: qué marca cada instrumento",
+        "text": [
+          "Este es el apartado que más cae en el examen. Razona cada caso con lo que acabas de ver, en vez de memorizarlo. Si se atrapa una presión, el instrumento solo responde al cambio de la otra."
+        ],
+        "table": {
+          "caption": "Lectura de los instrumentos con cada obstrucción",
+          "head": [
+            "Avería",
+            "Anemómetro",
+            "Altímetro",
+            "Variómetro"
+          ],
+          "rows": [
+            [
+              "Pitot obstruido con el orificio de drenaje abierto",
+              "Cae a cero (la presión del pitot se escapa por el drenaje)",
+              "Normal",
+              "Normal"
+            ],
+            [
+              "Pitot y drenaje obstruidos",
+              "No responde a la velocidad; funciona como un altímetro: indica más al subir y menos al bajar",
+              "Normal",
+              "Normal"
+            ],
+            [
+              "Toma estática obstruida",
+              "Indica menos de la real al ascender y más al descender; en nivel parece normal",
+              "Congelado en la altitud del bloqueo",
+              "Cero"
+            ],
+            [
+              "Fuente estática alternativa en cabina",
+              "Algo más alto del real",
+              "Algo más alto del real",
+              "Salto momentáneo de ascenso al abrirla"
+            ]
+          ],
+          "src": "PHAK cap. 8; POH"
+        },
+        "bullets": [
+          "**Por qué**: con la estática atrapada a la altitud del bloqueo, al ascender la estática real baja, la diferencia con la total se hace menor y el anemómetro marca menos. Al descender ocurre lo contrario.",
+          "**Pitot y drenaje obstruidos**: la presión total queda atrapada; al subir baja la estática de la caja y la diferencia aumenta, así que el anemómetro indica más, como un altímetro. En descenso indica menos.",
+          "Una fuente alternativa en cabina toma una presión algo **menor** que la exterior (por el efecto del flujo alrededor del fuselaje), así que los instrumentos leen algo más alto de lo real. El POH da las correcciones si las hay.",
+          "En un avión **sin fuente alternativa**, el recurso de emergencia es romper el cristal del variómetro para dejar entrar la presión de cabina: solo con la toma estática obstruida y siguiendo el POH."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Errores de los instrumentos",
+        "text": [
+          "Los instrumentos de presión tienen varios errores. El **error de instrumento** viene de la fabricación y se reduce con tablas de calibración. El **error de posición** (o de presión) aparece porque la toma estática y el pitot no reciben la presión perfecta en todas las actitudes: cambia con el ángulo de ataque, con los flaps y con el derrape. El **error de retardo** es el tiempo que tardan los instrumentos en seguir un cambio, notable en el **variómetro** (6 a 9 s) y algo en el altímetro durante cambios rápidos. Para las velocidades, el error de posición y de instrumento sumados llevan de IAS a CAS (020.21).",
+          "El **derrape** y la actitud de morro alto modifican el flujo en las tomas. En vuelo recto y nivelado a velocidad de crucero, los errores son mínimos."
+        ]
+      },
+      {
+        "title": "Temperatura exterior (OAT)",
+        "text": [
+          "La **temperatura del aire exterior (OAT)** se mide con una sonda sobresaliente (en el PA-28-161, normalmente en el parabrisas o el ala; en el C172S, con una sonda en el ala o en el parabrisas) conectada a un indicador. Muchas son bimetálicas o de termorresistencia. A baja velocidad, el aire que choca contra la sonda se calienta algo por la compresión y la fricción; esta diferencia es pequeña en aviones lentos y significativa por encima de unos 200 kt.",
+          "Dos errores prácticos: la **radiación solar** puede calentar la sonda cuando está parado al sol, y la **humedad** o una sonda mojada en una nube pueden enfriarla. Se usa la OAT para calcular la TAS, la altitud de densidad y valorar el riesgo de hielo (por ejemplo, el hielo de carburador o la formación en nubes cerca de 0 °C)."
+        ],
+        "verify": true
+      }
+    ],
+    "numbers": [
+      "Presión total = estática + dinámica; dinámica = ½ · ρ · V²",
+      "Anemómetro: pitot y estática; altímetro y variómetro: solo estática",
+      "Estática obstruida: altímetro congelado, variómetro a cero, anemómetro mal en ascensos y descensos",
+      "Pitot y drenaje obstruidos: el anemómetro actúa como altímetro",
+      "Fuente alternativa: lecturas algo altas; retardo del variómetro: 6-9 s"
+    ],
+    "traps": [
+      "Confundir los efectos: con el pitot obstruido y drenaje abierto el anemómetro cae a cero; con el drenaje también obstruido, funciona como altímetro.",
+      "Con la estática obstruida el anemómetro marca menos al subir, no más.",
+      "Pensar que el variómetro mide presión absoluta: mide su variación.",
+      "Olvidar que el drenaje del pitot es un orificio para el agua, no un fallo.",
+      "Dar por buena la OAT leída en tierra al sol: la sonda se calienta."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 8: sistemas de instrumentos de vuelo",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Manual de vuelo del PA-28-161 y del C172S",
+        "url": "https://www.piper.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Prevuelo del PA-28: pitot y toma estática",
+        "href": "#/ac/pa28/flow/preflight"
+      },
+      {
+        "label": "Prevuelo del C172",
+        "href": "#/ac/c172/flow/preflight"
+      },
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.19.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La presión total que mide el tubo de pitot es la suma de:",
+      "options": [
+        "Presión dinámica y temperatura",
+        "Presión estática y presión de aceite",
+        "Presión estática y presión dinámica",
+        "Presión estática y presión de admisión"
+      ],
+      "correct": 2,
+      "why": "El pitot recoge la presión estática más la presión dinámica debida al movimiento.",
+      "whyNot": [
+        "La temperatura no es una presión.",
+        "La presión de aceite no interviene.",
+        null,
+        "La presión de admisión es del motor."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.19.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué instrumentos reciben la presión del tubo de pitot?",
+      "options": [
+        "Anemómetro y variómetro",
+        "Anemómetro y altímetro",
+        "Solo el anemómetro",
+        "Los tres"
+      ],
+      "correct": 2,
+      "why": "El pitot alimenta solo el anemómetro; los otros dos usan la estática.",
+      "whyNot": [
+        "El variómetro usa solo la estática.",
+        "El altímetro usa solo la estática.",
+        null,
+        "Dos de los tres no usan la presión total."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.19.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Para qué sirve el orificio de drenaje del tubo de pitot?",
+      "options": [
+        "Para medir la presión estática",
+        "Para dejar salir el agua que entra",
+        "Para enfriar el calefactor",
+        "Para calibrar el anemómetro"
+      ],
+      "correct": 1,
+      "why": "Evacua el agua que entra con la lluvia; sin él, el agua obstruiría el sistema.",
+      "whyNot": [
+        "La estática se toma en otro punto del fuselaje.",
+        null,
+        "No tiene relación con la refrigeración.",
+        "No sirve para calibrar."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.19.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "Las tomas estáticas se colocan a ambos lados del fuselaje para:",
+      "options": [
+        "Alimentar el pitot",
+        "Medir la presión dinámica",
+        "Calentar el sistema",
+        "Compensar el error por derrape"
+      ],
+      "correct": 3,
+      "why": "Conectadas entre sí, se promedian las presiones de ambos lados, de modo que el derrape afecta menos.",
+      "whyNot": [
+        "El pitot tiene su propia toma.",
+        "Miden estática, no dinámica.",
+        "No tienen calefacción de ese tipo.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.19.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con el pitot obstruido pero con el orificio de drenaje abierto, el anemómetro:",
+      "options": [
+        "Funciona normal",
+        "Marca siempre más",
+        "Actúa como un altímetro",
+        "Cae hacia cero"
+      ],
+      "correct": 3,
+      "why": "La presión atrapada en el pitot se escapa por el drenaje y la presión total se iguala con la estática: el anemómetro cae a cero.",
+      "whyNot": [
+        "Sin presión total no puede indicar velocidad.",
+        "No sube: la presión se escapa.",
+        "Eso ocurre si el drenaje también está obstruido.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.19.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con el pitot y el drenaje obstruidos, al ascender a velocidad constante, el anemómetro:",
+      "options": [
+        "Indica más",
+        "Indica menos",
+        "Se queda a cero",
+        "No cambia con la altitud y mide bien"
+      ],
+      "correct": 0,
+      "why": "La presión total queda atrapada; al subir baja la estática de la caja y la diferencia crece: el anemómetro indica más, como un altímetro.",
+      "whyNot": [
+        null,
+        "Indicaría menos en un descenso.",
+        "Con la presión atrapada, no baja a cero.",
+        "Sí cambia con la altitud."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.19.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con la toma estática obstruida, en ascenso, el anemómetro indica:",
+      "options": [
+        "Más de la velocidad real",
+        "Menos de la velocidad real",
+        "Cero",
+        "Lo correcto"
+      ],
+      "correct": 1,
+      "why": "La estática atrapada es mayor que la real: la diferencia con la presión total es menor y el anemómetro marca menos.",
+      "whyNot": [
+        "Marcaría más en descenso.",
+        null,
+        "No llega a cero.",
+        "Se desvía respecto a la realidad."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.19.008",
+      "type": "concepto",
+      "level": 1,
+      "q": "Con la toma estática obstruida, el altímetro:",
+      "options": [
+        "Indica menos al subir",
+        "Funciona normal",
+        "Indica más al bajar",
+        "Se queda congelado"
+      ],
+      "correct": 3,
+      "why": "El altímetro responde solo a cambios de presión estática; si está atrapada, no cambia.",
+      "whyNot": [
+        "No responde al ascenso.",
+        "Se queda en la altitud del bloqueo.",
+        "Tampoco responde al descenso.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.19.009",
+      "type": "concepto",
+      "level": 1,
+      "q": "Con la toma estática obstruida, el variómetro indica:",
+      "options": [
+        "Cero",
+        "Régimen de ascenso exagerado",
+        "Régimen de descenso",
+        "Funciona normal"
+      ],
+      "correct": 0,
+      "why": "La presión estática no cambia, así que no detecta variación alguna.",
+      "whyNot": [
+        null,
+        "No hay variación que medir.",
+        "Tampoco indicaría descenso.",
+        "Se queda a cero con la estática atrapada."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.19.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "Al abrir la fuente estática alternativa de la cabina, normalmente:",
+      "options": [
+        "El altímetro indica algo menos",
+        "El altímetro e indicador de velocidad leen algo más alto",
+        "El anemómetro cae a cero",
+        "El variómetro se bloquea"
+      ],
+      "correct": 1,
+      "why": "La presión en cabina suele ser algo menor que la exterior en vuelo, así que los instrumentos leen algo más alto.",
+      "whyNot": [
+        "La presión menor da lecturas mayores, no menores.",
+        null,
+        "No cae a cero: sigue recibiendo presión total.",
+        "El variómetro tiene un salto momentáneo, no se bloquea."
+      ],
+      "ref": "PHAK cap. 8; POH"
+    },
+    {
+      "id": "020.19.011",
+      "type": "concepto",
+      "level": 3,
+      "q": "El retraso (lag) de unos segundos en las indicaciones es especialmente notable en:",
+      "options": [
+        "El anemómetro",
+        "El compás",
+        "El variómetro",
+        "El tacómetro"
+      ],
+      "correct": 2,
+      "why": "El orificio calibrado de la caja retrasa la lectura 6-9 s respecto a la variación real de la estática.",
+      "whyNot": [
+        "La respuesta del anemómetro es casi inmediata.",
+        "Es un error de otro tipo.",
+        null,
+        "El tacómetro no depende del sistema pitot-estático."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.19.012",
+      "type": "lectura",
+      "level": 2,
+      "q": "En un ascenso a velocidad constante lees lo siguiente. ¿Qué avería es más probable?",
+      "data": "Altímetro: 3000 ft, fijo desde hace 2 minutos\nVariómetro: 0 ft/min\nAnemómetro: baja lentamente aunque no cambias de actitud",
+      "options": [
+        "Toma estática obstruida",
+        "Pitot obstruido con drenaje abierto",
+        "Fallo del giróscopo",
+        "Fuente de vacío averiada"
+      ],
+      "correct": 0,
+      "why": "Altímetro congelado, variómetro a cero y anemómetro que se desvía en ascenso: es la estática obstruida. Usa la fuente estática alternativa.",
+      "whyNot": [
+        null,
+        "Eso afectaría solo al anemómetro, que caería a cero.",
+        "El giróscopo no afecta a estos instrumentos.",
+        "El vacío afecta a horizonte y direccional."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.19.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "El error de posición de la toma estática:",
+      "options": [
+        "Es constante y no depende de la actitud",
+        "Cambia con el ángulo de ataque, los flaps y el derrape",
+        "Solo aparece en tierra",
+        "Solo afecta a la temperatura"
+      ],
+      "correct": 1,
+      "why": "La presión recogida varía con el flujo local: cambia con el ángulo de ataque, la configuración y el derrape.",
+      "whyNot": [
+        "No es constante.",
+        null,
+        "Aparece en vuelo.",
+        "Afecta a los instrumentos de presión."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.19.014",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué puede falsear la lectura de la OAT con el avión parado al sol?",
+      "options": [
+        "La radiación solar sobre la sonda",
+        "El drenaje del pitot",
+        "La presión de aceite",
+        "El ángulo de ataque"
+      ],
+      "correct": 0,
+      "why": "La sonda se calienta por radiación y muestra una temperatura superior a la del aire.",
+      "whyNot": [
+        null,
+        "No interviene en el termómetro.",
+        "No tiene relación.",
+        "Sin vuelo no hay ángulo de ataque."
+      ],
+      "ref": "PHAK cap. 8"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.19.01",
+      "front": "Presión total",
+      "back": "Presión estática más presión dinámica (½ · ρ · V²)"
+    },
+    {
+      "id": "c.020.19.02",
+      "front": "Estática obstruida: lecturas",
+      "back": "Altímetro congelado, variómetro a cero; anemómetro menos al subir y más al bajar"
+    },
+    {
+      "id": "c.020.19.03",
+      "front": "Pitot obstruido con drenaje abierto",
+      "back": "El anemómetro cae a cero"
+    },
+    {
+      "id": "c.020.19.04",
+      "front": "Pitot y drenaje obstruidos",
+      "back": "El anemómetro actúa como altímetro: más al subir, menos al bajar"
+    },
+    {
+      "id": "c.020.19.05",
+      "front": "Fuente estática alternativa",
+      "back": "Altímetro y anemómetro algo altos; salto momentáneo en el variómetro"
+    },
+    {
+      "id": "c.020.19.06",
+      "front": "Retardo del variómetro",
+      "back": "Unos 6 a 9 segundos"
+    }
+  ]
+}

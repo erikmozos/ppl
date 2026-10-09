@@ -1,0 +1,702 @@
+{
+  "lesson": {
+    "id": "010.01",
+    "title": "Convenio de Chicago, OACI y convenios internacionales",
+    "summary": "El Convenio de Chicago (Doc 7300): soberanía, vuelos no regulares, cabotaje, nacionalidad, documentos a bordo, licencias y normas; la OACI y sus órganos; las libertades del aire; y los convenios de Tokio, La Haya, Montreal, Varsovia y Roma.",
+    "objectives": [
+      "Citar los artículos clave del Convenio de Chicago y lo que establece cada uno",
+      "Distinguir normas y métodos recomendados, los anexos y los documentos PANS",
+      "Conocer los órganos de la OACI y su función",
+      "Explicar las cinco primeras libertades del aire",
+      "Reconocer el objeto de cada convenio internacional que se pregunta"
+    ],
+    "sections": [
+      {
+        "title": "El Convenio de Chicago (1944)",
+        "text": [
+          "El **Convenio sobre Aviación Civil Internacional**, firmado en Chicago en 1944 (Doc 7300), es la base del derecho aéreo mundial. Estableció la **OACI** (Organización de Aviación Civil Internacional, con sede en Montreal) y fijó los principios por los que los Estados se comprometen a cooperar para que la aviación civil se desarrolle de forma segura y ordenada. Se aplica a las aeronaves **civiles**; las de Estado (militares, aduanas, policía) quedan fuera, aunque deben tener en cuenta la seguridad de las civiles (art. 3).",
+          "Los artículos que debes saber, con su asunto, son los siguientes."
+        ],
+        "table": {
+          "caption": "Artículos del Convenio de Chicago que se preguntan",
+          "head": [
+            "Artículo",
+            "Asunto"
+          ],
+          "rows": [
+            [
+              "1",
+              "Soberanía: cada Estado tiene soberanía completa y exclusiva sobre el espacio aéreo situado sobre su territorio"
+            ],
+            [
+              "2",
+              "Territorio: tierras y aguas territoriales adyacentes bajo la soberanía del Estado"
+            ],
+            [
+              "5",
+              "Vuelos no regulares: las aeronaves de Estados contratantes que no efectúen servicios aéreos regulares pueden entrar y atravesar el territorio sin escala o hacer escalas no comerciales sin permiso previo"
+            ],
+            [
+              "6",
+              "Servicios aéreos regulares: requieren permiso o autorización especial del Estado"
+            ],
+            [
+              "7",
+              "Cabotaje: cada Estado puede negar a aeronaves extranjeras el transporte de pasajeros o carga entre dos puntos de su territorio"
+            ],
+            [
+              "12",
+              "Reglas del aire: sobre alta mar rigen las establecidas conforme al Convenio (Anexo 2); sobre un Estado, sus propias reglas"
+            ],
+            [
+              "17 a 21",
+              "Nacionalidad: la aeronave tiene la del Estado en que está matriculada, no puede estar matriculada en más de uno y lleva las marcas apropiadas"
+            ],
+            [
+              "29",
+              "Documentos a bordo en vuelo internacional"
+            ],
+            [
+              "31 y 32",
+              "Certificado de aeronavegabilidad y licencias del personal, expedidos o convalidados por el Estado de matrícula"
+            ],
+            [
+              "33",
+              "Reconocimiento de certificados y licencias expedidos conforme a normas mínimas"
+            ],
+            [
+              "37",
+              "Adopción de normas y métodos recomendados internacionales (los Anexos)"
+            ],
+            [
+              "38",
+              "Desviaciones: el Estado que no cumpla una norma debe notificar la diferencia a la OACI"
+            ]
+          ],
+          "src": "Convenio de Chicago (Doc 7300)"
+        }
+      },
+      {
+        "title": "Documentos a bordo (artículo 29)",
+        "text": [
+          "El artículo 29 enumera los documentos que debe llevar toda aeronave en un vuelo internacional: el **certificado de matrícula**, el **certificado de aeronavegabilidad**, las **licencias del personal** de la tripulación, el **libro de a bordo**, la **licencia de la estación de radio** (si lleva radio) y, si transporta pasajeros, la **lista de pasajeros** con sus nombres, lugares de embarque y destino, y el manifiesto de carga y declaración detallada si lleva carga.",
+          "Hoy, para vuelos no comerciales de aeronaves no complejas en la UE, los documentos a bordo los concreta Part-NCO (NCO.GEN.135), que verás en otras materias."
+        ]
+      },
+      {
+        "title": "La OACI y sus órganos",
+        "text": [
+          "La **OACI** (ICAO) es un organismo especializado de las Naciones Unidas. Su función es establecer las normas y los métodos internacionales para la aviación civil y vigilar que los Estados los apliquen. Tiene los siguientes órganos."
+        ],
+        "table": {
+          "caption": "Órganos de la OACI",
+          "head": [
+            "Órgano",
+            "Función"
+          ],
+          "rows": [
+            [
+              "Asamblea",
+              "Órgano soberano: reúne a todos los Estados miembros (cada tres años) y fija la política general"
+            ],
+            [
+              "Consejo",
+              "Órgano ejecutivo permanente, de 36 Estados elegidos por la Asamblea; adopta las normas y métodos recomendados como Anexos"
+            ],
+            [
+              "Comisión de Aeronavegación",
+              "Órgano técnico que asesora al Consejo en las normas técnicas"
+            ],
+            [
+              "Secretaría",
+              "Personal de la organización en Montreal; incluye las oficinas regionales"
+            ]
+          ],
+          "src": "Convenio de Chicago, arts. 43 a 66"
+        }
+      },
+      {
+        "title": "Normas, métodos recomendados, Anexos y documentos PANS",
+        "text": [
+          "Los **Anexos** del Convenio contienen **SARPs** (Standards and Recommended Practices, normas y métodos recomendados). Las **normas** son especificaciones cuya aplicación uniforme se considera necesaria para la seguridad; los **métodos recomendados** son deseables. Si un Estado no puede cumplir una norma, debe **notificar la diferencia** a la OACI (art. 38), y España lo publica en el **AIP GEN 1.7**.",
+          "Los **PANS** (Procedimientos para los Servicios de Navegación Aérea), como el Doc 4444 (gestión del tránsito aéreo) y el Doc 8168 (operación de aeronaves), no son Anexos: son procedimientos que el Consejo aprueba y recomienda aplicar. El Doc 7030 reúne los procedimientos suplementarios regionales."
+        ],
+        "bullets": [
+          "Anexo 1 licencias; 2 reglamento del aire; 3 meteorología; 6 operación de aeronaves; 7 marcas de nacionalidad y matrícula; 8 aeronavegabilidad; 10 telecomunicaciones; 11 servicios de tránsito aéreo; 12 búsqueda y salvamento; 13 investigación de accidentes; 14 aeródromos; 15 servicios de información aeronáutica; 17 seguridad; 18 mercancías peligrosas; 19 gestión de la seguridad operacional.",
+          "El Anexo 2 no admite diferencias sobre alta mar: se aplica tal cual."
+        ]
+      },
+      {
+        "title": "Las libertades del aire",
+        "text": [
+          "Las libertades del aire son los derechos que se conceden entre Estados para que sus aeronaves operen servicios en el territorio del otro. Las dos primeras salen del Convenio de Tránsito de 1944; las demás se negocian de forma bilateral."
+        ],
+        "table": {
+          "caption": "Libertades del aire",
+          "head": [
+            "Libertad",
+            "Derecho"
+          ],
+          "rows": [
+            [
+              "1.ª",
+              "Sobrevolar el territorio de otro Estado sin aterrizar"
+            ],
+            [
+              "2.ª",
+              "Aterrizar en otro Estado por motivos no comerciales (escala técnica)"
+            ],
+            [
+              "3.ª",
+              "Desembarcar en otro Estado pasajeros o carga procedentes del Estado propio"
+            ],
+            [
+              "4.ª",
+              "Embarcar en otro Estado pasajeros o carga con destino al Estado propio"
+            ],
+            [
+              "5.ª",
+              "Transportar pasajeros o carga entre dos Estados extranjeros, en un vuelo que parte o llega al Estado propio"
+            ]
+          ],
+          "src": "Convenio de Tránsito de los Servicios Aéreos Internacionales (1944)"
+        }
+      },
+      {
+        "title": "Otros convenios internacionales",
+        "table": {
+          "caption": "Convenios que se preguntan",
+          "head": [
+            "Convenio",
+            "Asunto"
+          ],
+          "rows": [
+            [
+              "Tokio (1963)",
+              "Infracciones y otros actos cometidos a bordo de las aeronaves; poderes del comandante y jurisdicción del Estado de matrícula"
+            ],
+            [
+              "La Haya (1970)",
+              "Represión del apoderamiento ilícito de aeronaves (secuestro)"
+            ],
+            [
+              "Montreal (1971)",
+              "Represión de actos ilícitos contra la seguridad de la aviación civil (sabotaje)"
+            ],
+            [
+              "Varsovia (1929)",
+              "Unificación de normas sobre la responsabilidad del transportista aéreo internacional"
+            ],
+            [
+              "Montreal (1999)",
+              "Convenio para la unificación de ciertas reglas del transporte aéreo internacional: actualiza y sustituye a Varsovia"
+            ],
+            [
+              "Roma (1952)",
+              "Daños causados por aeronaves extranjeras a terceros en la superficie"
+            ]
+          ],
+          "src": "OACI, tratados internacionales"
+        }
+      }
+    ],
+    "numbers": [
+      "Convenio de Chicago: 1944; sede de la OACI en Montreal",
+      "Art. 1 soberanía; 5 vuelos no regulares; 7 cabotaje; 17 a 21 nacionalidad; 29 documentos; 31 a 33 certificados y licencias; 37 y 38 normas y diferencias",
+      "Consejo de la OACI: 36 Estados; Asamblea cada tres años",
+      "Libertades: 1.ª sobrevolar, 2.ª escala técnica, 3.ª y 4.ª pasaje entre tu Estado y otro, 5.ª entre dos extranjeros",
+      "Tokio 1963 (a bordo), La Haya 1970 (secuestro), Montreal 1971 (sabotaje), Varsovia 1929 y Montreal 1999 (responsabilidad), Roma 1952 (terceros)"
+    ],
+    "traps": [
+      "El Convenio se aplica a aeronaves civiles, no de Estado.",
+      "La soberanía es del Estado, no de la OACI: la OACI no impone, establece normas que cada Estado incorpora.",
+      "La 5.ª libertad es entre dos Estados extranjeros; la 3.ª y la 4.ª son entre tu Estado y otro.",
+      "Los PANS no son Anexos y no son SARPs.",
+      "Tokio es «a bordo», La Haya es «secuestro» y Montreal 1971 es «sabotaje»; no los mezcles."
+    ],
+    "spain": [
+      "España publica sus diferencias con los Anexos de la OACI en el AIP GEN 1.7.",
+      "La autoridad aeronáutica de España es AESA; el proveedor de servicios de navegación aérea es ENAIRE."
+    ],
+    "sources": [
+      {
+        "title": "Convenio sobre Aviación Civil Internacional (Doc 7300), OACI"
+      },
+      {
+        "title": "AIP España GEN 1.7 (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/contenido_AIP/GEN/LE_GEN_1_7_en.html"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología",
+        "href": "#/licencias/fraseologia"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "010.01.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué establece el artículo 1 del Convenio de Chicago?",
+      "options": [
+        "La libertad de sobrevolar cualquier Estado sin permiso",
+        "El derecho de las aeronaves a matricularse en cualquier Estado",
+        "Que cada Estado tiene soberanía completa y exclusiva sobre el espacio aéreo sobre su territorio",
+        "El uso de las normas de la OACI sobre cualquier territorio"
+      ],
+      "correct": 2,
+      "why": "El artículo 1 reconoce la soberanía completa y exclusiva de cada Estado sobre su espacio aéreo.",
+      "whyNot": [
+        "Los sobrevuelos están sujetos a las condiciones del Convenio.",
+        "La matrícula se trata en los arts. 17 a 21.",
+        null,
+        "Las normas se aplican según lo que cada Estado adopte."
+      ],
+      "ref": "Convenio de Chicago, art. 1"
+    },
+    {
+      "id": "010.01.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "El artículo 5 del Convenio de Chicago se refiere a:",
+      "options": [
+        "Los vuelos no regulares de aeronaves de Estados contratantes",
+        "El cabotaje",
+        "Los documentos a bordo",
+        "La nacionalidad de las aeronaves"
+      ],
+      "correct": 0,
+      "why": "El art. 5 permite a las aeronaves que no hacen servicios regulares entrar y atravesar el territorio o hacer escalas no comerciales sin permiso previo.",
+      "whyNot": [
+        null,
+        "Es el art. 7.",
+        "Es el art. 29.",
+        "Son los arts. 17 a 21."
+      ],
+      "ref": "Convenio de Chicago, art. 5"
+    },
+    {
+      "id": "010.01.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es el cabotaje, según el artículo 7?",
+      "options": [
+        "El sobrevuelo de un Estado sin aterrizar",
+        "El transporte entre dos Estados extranjeros",
+        "La escala técnica en otro Estado",
+        "El transporte de pasajeros o carga entre dos puntos del mismo Estado, que este puede reservar a sus aeronaves"
+      ],
+      "correct": 3,
+      "why": "El art. 7 permite al Estado negar a aeronaves extranjeras el tráfico de cabotaje.",
+      "whyNot": [
+        "Es la 1.ª libertad.",
+        "Es la 5.ª libertad.",
+        "Es la 2.ª libertad.",
+        null
+      ],
+      "ref": "Convenio de Chicago, art. 7"
+    },
+    {
+      "id": "010.01.004",
+      "type": "regla",
+      "level": 2,
+      "q": "¿En qué artículos se trata la nacionalidad y la matrícula de las aeronaves?",
+      "options": [
+        "En los artículos 1 a 5",
+        "En los artículos 17 a 21",
+        "En el artículo 29",
+        "En los artículos 37 y 38"
+      ],
+      "correct": 1,
+      "why": "Los arts. 17 a 21 recogen la nacionalidad y la matrícula.",
+      "whyNot": [
+        "Tratan soberanía y vuelos no regulares.",
+        null,
+        "Trata los documentos a bordo.",
+        "Tratan normas y diferencias."
+      ],
+      "ref": "Convenio de Chicago, arts. 17-21"
+    },
+    {
+      "id": "010.01.005",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuántas matrículas puede tener una aeronave según el Convenio?",
+      "options": [
+        "Una sola: no puede estar válidamente matriculada en más de un Estado",
+        "Dos, una por cada país de operación",
+        "Tantas como Estados la autoricen",
+        "Ninguna si es de uso privado"
+      ],
+      "correct": 0,
+      "why": "Art. 18: una aeronave no puede estar matriculada válidamente en más de un Estado.",
+      "whyNot": [
+        null,
+        "No se permite doble matrícula.",
+        "No se permite.",
+        "Toda aeronave civil debe estar matriculada."
+      ],
+      "ref": "Convenio de Chicago, art. 18"
+    },
+    {
+      "id": "010.01.006",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Qué artículo enumera los documentos que debe llevar una aeronave en vuelo internacional?",
+      "options": [
+        "El artículo 12",
+        "El artículo 31",
+        "El artículo 29",
+        "El artículo 38"
+      ],
+      "correct": 2,
+      "why": "El art. 29 enumera los documentos a bordo.",
+      "whyNot": [
+        "Trata las reglas del aire.",
+        "Trata los certificados de aeronavegabilidad.",
+        null,
+        "Trata las diferencias con los Anexos."
+      ],
+      "ref": "Convenio de Chicago, art. 29"
+    },
+    {
+      "id": "010.01.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál de estos documentos aparece en la lista del artículo 29?",
+      "options": [
+        "El seguro de pasajeros",
+        "El certificado de aeronavegabilidad",
+        "El plan de vuelo",
+        "El certificado médico del pasajero"
+      ],
+      "correct": 1,
+      "why": "El art. 29 incluye el certificado de matrícula, el de aeronavegabilidad, las licencias del personal, el libro de a bordo y otros.",
+      "whyNot": [
+        "No figura en la lista.",
+        null,
+        "No es un documento de la aeronave.",
+        "No figura en la lista."
+      ],
+      "ref": "Convenio de Chicago, art. 29"
+    },
+    {
+      "id": "010.01.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué establece el artículo 38 del Convenio de Chicago?",
+      "options": [
+        "La obligación de aplicar los Anexos sin excepciones",
+        "La creación del Consejo",
+        "El reconocimiento de licencias extranjeras",
+        "La obligación de notificar a la OACI las diferencias con los Anexos"
+      ],
+      "correct": 3,
+      "why": "El art. 38 permite diferencias con los Estándares, pero exige notificarlas a la OACI.",
+      "whyNot": [
+        "Permite diferencias si se notifican.",
+        "Se trata en otros artículos.",
+        "Es el art. 33.",
+        null
+      ],
+      "ref": "Convenio de Chicago, art. 38"
+    },
+    {
+      "id": "010.01.009",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Dónde tiene su sede la OACI?",
+      "options": [
+        "En Ginebra",
+        "En Londres",
+        "En Montreal",
+        "En Chicago"
+      ],
+      "correct": 2,
+      "why": "La OACI tiene su sede en Montreal.",
+      "whyNot": [
+        "No es la sede.",
+        "No es la sede.",
+        null,
+        "El Convenio se firmó allí, pero la sede es Montreal."
+      ],
+      "ref": "Convenio de Chicago"
+    },
+    {
+      "id": "010.01.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál es el órgano soberano de la OACI?",
+      "options": [
+        "La Asamblea",
+        "El Consejo",
+        "La Comisión de Aeronavegación",
+        "La Secretaría"
+      ],
+      "correct": 0,
+      "why": "La Asamblea reúne a todos los Estados y es el órgano soberano.",
+      "whyNot": [
+        null,
+        "Es el órgano ejecutivo.",
+        "Es un órgano técnico asesor.",
+        "Es el personal de la organización."
+      ],
+      "ref": "Convenio de Chicago, art. 48"
+    },
+    {
+      "id": "010.01.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué órgano de la OACI adopta los Anexos?",
+      "options": [
+        "La Asamblea",
+        "La Secretaría",
+        "La Comisión de Aeronavegación",
+        "El Consejo"
+      ],
+      "correct": 3,
+      "why": "El Consejo adopta las normas y métodos recomendados como Anexos.",
+      "whyNot": [
+        "La Asamblea fija la política general.",
+        "No adopta normas.",
+        "Asesora al Consejo.",
+        null
+      ],
+      "ref": "Convenio de Chicago, art. 54"
+    },
+    {
+      "id": "010.01.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué función tiene la Comisión de Aeronavegación?",
+      "options": [
+        "Aprobar el presupuesto",
+        "Asesorar técnicamente al Consejo",
+        "Elegir a los miembros del Consejo",
+        "Dirigir las oficinas regionales"
+      ],
+      "correct": 1,
+      "why": "La Comisión de Aeronavegación asesora técnicamente al Consejo.",
+      "whyNot": [
+        "No es su función.",
+        null,
+        "Lo hace la Asamblea.",
+        "No es su función."
+      ],
+      "ref": "Convenio de Chicago, arts. 56-57"
+    },
+    {
+      "id": "010.01.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál es la diferencia entre una norma y un método recomendado?",
+      "options": [
+        "La norma es necesaria para la uniformidad; el método recomendado es deseable",
+        "La norma es opcional y el método es obligatorio",
+        "Los métodos recomendados son solo para aeródromos",
+        "No hay diferencia"
+      ],
+      "correct": 0,
+      "why": "Las normas requieren aplicación uniforme; los métodos recomendados son deseables.",
+      "whyNot": [
+        null,
+        "Es al revés.",
+        "No se limitan a eso.",
+        "Sí la hay."
+      ],
+      "ref": "Convenio de Chicago, art. 37"
+    },
+    {
+      "id": "010.01.014",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué es el Anexo 2 de la OACI?",
+      "options": [
+        "Las licencias del personal",
+        "La meteorología",
+        "El reglamento del aire",
+        "Los aeródromos"
+      ],
+      "correct": 2,
+      "why": "El Anexo 2 es el reglamento del aire, que SERA traslada a la legislación europea.",
+      "whyNot": [
+        "Es el Anexo 1.",
+        "Es el Anexo 3.",
+        null,
+        "Es el Anexo 14."
+      ],
+      "ref": "Anexo 2"
+    },
+    {
+      "id": "010.01.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es la primera libertad del aire?",
+      "options": [
+        "Aterrizar por motivos técnicos",
+        "Sobrevolar el territorio de otro Estado sin aterrizar",
+        "Transportar pasajeros entre dos Estados extranjeros",
+        "Embarcar pasajeros con destino a tu Estado"
+      ],
+      "correct": 1,
+      "why": "La 1.ª libertad es el sobrevuelo sin aterrizar.",
+      "whyNot": [
+        "Es la 2.ª libertad.",
+        null,
+        "Es la 5.ª libertad.",
+        "Es la 4.ª libertad."
+      ],
+      "ref": "Convenio de Tránsito, 1944"
+    },
+    {
+      "id": "010.01.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "La tercera libertad del aire es el derecho a:",
+      "options": [
+        "Embarcar en otro Estado pasajeros para tu Estado",
+        "Sobrevolar sin aterrizar",
+        "Aterrizar para repostar",
+        "Desembarcar en otro Estado pasajeros o carga procedentes de tu Estado"
+      ],
+      "correct": 3,
+      "why": "La 3.ª libertad es llevar pasajeros o carga de tu Estado a otro; la 4.ª es la inversa.",
+      "whyNot": [
+        "Es la 4.ª libertad.",
+        "Es la 1.ª libertad.",
+        "Es la 2.ª libertad.",
+        null
+      ],
+      "ref": "Convenio de Tránsito, 1944"
+    },
+    {
+      "id": "010.01.017",
+      "type": "concepto",
+      "level": 2,
+      "q": "La quinta libertad del aire es el derecho a:",
+      "options": [
+        "Aterrizar por motivos técnicos",
+        "Sobrevolar el territorio de otro Estado",
+        "Transportar pasajeros o carga entre dos Estados extranjeros en un vuelo que parte o termina en tu Estado",
+        "Embarcar pasajeros para tu Estado"
+      ],
+      "correct": 2,
+      "why": "La 5.ª libertad conecta dos Estados extranjeros dentro de un vuelo que empieza o acaba en el propio.",
+      "whyNot": [
+        "Es la 2.ª libertad.",
+        "Es la 1.ª libertad.",
+        null,
+        "Es la 4.ª libertad."
+      ],
+      "ref": "Convenio de Tránsito, 1944"
+    },
+    {
+      "id": "010.01.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué trata el Convenio de Tokio de 1963?",
+      "options": [
+        "Las infracciones y otros actos cometidos a bordo de las aeronaves",
+        "El apoderamiento ilícito de aeronaves",
+        "Los actos contra la seguridad de la aviación civil",
+        "Los daños a terceros en la superficie"
+      ],
+      "correct": 0,
+      "why": "Tokio regula los actos a bordo y los poderes del comandante.",
+      "whyNot": [
+        null,
+        "Es La Haya 1970.",
+        "Es Montreal 1971.",
+        "Es Roma 1952."
+      ],
+      "ref": "Convenio de Tokio, 1963"
+    },
+    {
+      "id": "010.01.019",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué trata el Convenio de La Haya de 1970?",
+      "options": [
+        "Los actos cometidos a bordo",
+        "Los daños a terceros",
+        "La responsabilidad del transportista",
+        "La represión del apoderamiento ilícito de aeronaves"
+      ],
+      "correct": 3,
+      "why": "La Haya reprime el apoderamiento ilícito (secuestro) de aeronaves.",
+      "whyNot": [
+        "Es Tokio.",
+        "Es Roma.",
+        "Es Varsovia y Montreal 1999.",
+        null
+      ],
+      "ref": "Convenio de La Haya, 1970"
+    },
+    {
+      "id": "010.01.020",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Qué trata el Convenio de Roma de 1952?",
+      "options": [
+        "El transporte aéreo internacional de pasajeros",
+        "Los daños causados por aeronaves extranjeras a terceros en la superficie",
+        "Los actos ilícitos contra la aviación civil",
+        "El secuestro de aeronaves"
+      ],
+      "correct": 1,
+      "why": "Roma 1952 regula los daños a terceros en la superficie.",
+      "whyNot": [
+        "Es Varsovia y Montreal 1999.",
+        null,
+        "Es Montreal 1971.",
+        "Es La Haya."
+      ],
+      "ref": "Convenio de Roma, 1952"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.010.01.01",
+      "front": "Art. 1 del Convenio de Chicago",
+      "back": "Soberanía completa y exclusiva sobre el espacio aéreo del territorio"
+    },
+    {
+      "id": "c.010.01.02",
+      "front": "Arts. 5 y 7",
+      "back": "5: vuelos no regulares; 7: cabotaje"
+    },
+    {
+      "id": "c.010.01.03",
+      "front": "Arts. 17 a 21",
+      "back": "Nacionalidad y matrícula de aeronaves"
+    },
+    {
+      "id": "c.010.01.04",
+      "front": "Art. 29",
+      "back": "Documentos a bordo en vuelo internacional"
+    },
+    {
+      "id": "c.010.01.05",
+      "front": "Arts. 37 y 38",
+      "back": "Normas y métodos recomendados; diferencias notificadas a la OACI"
+    },
+    {
+      "id": "c.010.01.06",
+      "front": "Órganos de la OACI",
+      "back": "Asamblea (soberana), Consejo (ejecutivo), Comisión de Aeronavegación (técnica), Secretaría"
+    },
+    {
+      "id": "c.010.01.07",
+      "front": "Libertades 1.ª a 5.ª",
+      "back": "Sobrevolar; escala técnica; 3.ª y 4.ª pasaje entre tu Estado y otro; 5.ª entre dos Estados extranjeros"
+    },
+    {
+      "id": "c.010.01.08",
+      "front": "Tokio, La Haya, Montreal 1971",
+      "back": "A bordo; secuestro; sabotaje"
+    }
+  ]
+}

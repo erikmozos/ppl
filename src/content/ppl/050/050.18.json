@@ -1,0 +1,358 @@
+{
+ "lesson": {
+  "title": "Observación y mapas",
+  "summary": "Cómo se observa la atmósfera (estaciones, radiosondeo, satélite visible, infrarrojo y de vapor de agua, radar, AIREP) y cómo se leen el mapa de superficie, el SIGWX de baja cota y los mapas de viento y temperatura en altura.",
+  "objectives": [
+   "Describir los medios de observación y qué mide cada uno",
+   "Interpretar imágenes de satélite visible, infrarrojo y de vapor de agua, y el radar",
+   "Leer un mapa de superficie: isobaras, centros de presión y frentes",
+   "Conocer los niveles de presión estándar y su altitud aproximada",
+   "Leer un SIGWX de baja cota y un mapa de viento y temperatura en altura",
+   "Saber qué es un AIREP y cuándo se envía"
+  ],
+  "sections": [
+   {
+    "title": "Observación en superficie y en altura",
+    "text": [
+     "Las **estaciones meteorológicas de superficie** (manuales o automáticas) miden temperatura, punto de rocío, presión, viento, visibilidad, nubes y fenómenos. Con ellas se elaboran los informes **METAR** de los aeródromos y los mensajes **SYNOP** de la red general. El **radiosondeo** es un globo con un sensor que sube hasta unos 30 km y mide presión, temperatura, humedad y viento (por el seguimiento del globo); se lanza normalmente a las **00 y las 12 UTC** y proporciona el perfil vertical de la atmósfera, útil para ver inversiones, el nivel de 0 °C o la estabilidad.",
+     "Un **AIREP** es el informe que un piloto transmite en vuelo con la posición, la hora, el nivel y los datos meteorológicos observados. Hay AIREP **rutinarios** y **especiales**, estos últimos obligatorios para fenómenos que afectan a la seguridad (turbulencia severa, engelamiento, cizalladura, tormentas, ceniza). Un piloto VFR puede informar de las condiciones al ATC por radio, con lo que ayuda a otros pilotos."
+    ]
+   },
+   {
+    "title": "Satélite y radar",
+    "text": [
+     "Los **satélites meteorológicos** miran la Tierra desde órbita geoestacionaria (Meteosat) o polar. Las imágenes más usadas son tres. En la imagen **visible** se ve la luz del Sol reflejada: las nubes gruesas son blancas y las finas, grises; solo existe de día. La imagen **infrarroja** mide la temperatura del tope de las nubes: **cuanto más frío (más alto), más blanco** (en la escala habitual); sirve de día y de noche. La imagen de **vapor de agua** muestra la humedad de la media y alta troposfera: las zonas oscuras indican aire seco y descendente, las claras, aire húmedo, y se ven bien las corrientes en chorro y las DANA aunque no haya nubes.",
+     "El **radar meteorológico** emite pulsos que rebotan en las gotas y cristales de la **precipitación**: cuanta más intensidad, mayor eco. Detecta la lluvia, el granizo y la nieve, y su intensidad y movimiento, pero **no ve nubes sin precipitación** y tiene huecos de cobertura en zonas de relieve. Los **detectores de rayos** localizan las descargas y señalan los núcleos tormentosos activos."
+    ],
+    "bullets": [
+     "Visible: nubes por su brillo; solo de día.",
+     "Infrarrojo: temperatura del tope; blanco brillante = tope frío y alto = Cb o nubes altas; día y noche.",
+     "Vapor de agua: humedad en altura; chorros y DANA.",
+     "Radar: precipitación, no nubes."
+    ]
+   },
+   {
+    "title": "Mapa de superficie",
+    "text": [
+     "El **mapa de superficie** (análisis) muestra la presión reducida al nivel del mar con **isobaras** (normalmente cada 4 hPa), los centros de **alta (A o H)** y de **baja (B o L)**, y los **frentes**. Cuanto más juntas están las isobaras, más viento. En el hemisferio norte, la baja queda a la izquierda si te pones de espaldas al viento. Los frentes llevan símbolos: **frío**, línea con triángulos hacia donde avanza (azules); **cálido**, línea con semicírculos (rojos); **ocluido**, ambos (púrpura); **estacionario**, alterna ambos.",
+     "Con un mapa de superficie puedes deducir la **dirección y fuerza del viento general**, la posición de los frentes y de las vaguadas y la tendencia del tiempo. No reemplaza al METAR ni al TAF, pero te da el contexto: de dónde viene el frente que da esa nubosidad."
+    ]
+   },
+   {
+    "title": "Mapas de altura y SIGWX",
+    "text": [
+     "En altura se usan las **superficies de presión constante**: en lugar de la presión a una altitud, el mapa muestra a qué **altitud** está esa presión y qué viento y temperatura hay allí. Las más habituales se resumen en la tabla.",
+     "En el mapa de **viento y temperatura en altura** se leen, para cada punto y nivel, la dirección y velocidad del viento (con flechas con barbas) y la temperatura. Con ello se calculan el viento de la ruta y el **nivel de 0 °C**. El **SIGWX de baja cota** (SFC a FL150, de AEMET) muestra, para un instante dado y con validez de unas 3 h antes y después, la **nubosidad** significativa (con la altitud de base y tope, en pies sobre el nivel del mar), los **fenómenos peligrosos** (tormentas, CB, turbulencia, engelamiento, visibilidad reducida) y el **nivel de congelación**. Los mapas se emiten a las 00, 06, 12 y 18 UTC."
+    ],
+    "table": {
+     "caption": "Niveles de presión estándar",
+     "head": [
+      "Nivel",
+      "Altitud aproximada",
+      "Nivel de vuelo"
+     ],
+     "rows": [
+      [
+       "850 hPa",
+       "1500 m (5000 ft)",
+       "FL050"
+      ],
+      [
+       "700 hPa",
+       "3000 m (10 000 ft)",
+       "FL100"
+      ],
+      [
+       "500 hPa",
+       "5500 m (18 000 ft)",
+       "FL180"
+      ],
+      [
+       "300 hPa",
+       "9000 m (30 000 ft)",
+       "FL300"
+      ]
+     ],
+     "src": "ISA; AEMET"
+    }
+   },
+   {
+    "title": "Cómo se aprovecha todo para planificar",
+    "text": [
+     "La rutina previa al vuelo es: **mapa de superficie** (situación general), **satélite y radar** (qué hay ahora), **METAR y TAF** de salida, destino y alternativas, **SIGWX** y **GAMET** (peligros en la ruta) y **viento en altura** (cálculo de rumbos y tiempos). Las alturas del SIGWX están referidas al nivel del mar (AMSL), y las del METAR, al aeródromo (AGL): no las mezcles."
+    ],
+    "note": {
+     "kind": "es",
+     "text": "AEMET publica sus productos aeronáuticos en el portal AMA y en su web: imágenes de satélite Meteosat, radar de la red nacional, mapas de superficie y de altura, SIGWX de baja cota y GAMET. Consulta siempre la fecha y la hora de validez."
+    }
+   }
+  ],
+  "numbers": [
+   "Radiosondeo: a las 00 y las 12 UTC",
+   "Isobaras normalmente cada 4 hPa",
+   "850 hPa ≈ 5000 ft; 700 hPa ≈ 10 000 ft; 500 hPa ≈ 18 000 ft; 300 hPa ≈ 30 000 ft",
+   "SIGWX de baja cota: SFC–FL150; emisión 00, 06, 12 y 18 UTC; ±3 h",
+   "Infrarrojo: más frío = tope más alto = más blanco"
+  ],
+  "traps": [
+   "El radar solo ve precipitación, no nubes.",
+   "El visible solo sirve de día; el infrarrojo, siempre.",
+   "Las alturas del SIGWX son AMSL; las del METAR, AGL.",
+   "Las isobaras juntas indican viento fuerte, no mucha presión."
+  ],
+  "sources": [
+   {
+    "title": "AEMET, Guía de productos aeronáuticos AU-GUI-0102",
+    "url": "https://www.aemet.es/documentos/es/conocermas/aeronautica/AU-GUI-0102.pdf"
+   },
+   {
+    "title": "AEMET, Apuntes de meteorología aeronáutica",
+    "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
+   },
+   {
+    "title": "OACI, Anexo 3 (AIREP) y Doc 8896 Manual de meteorología aeronáutica"
+   }
+  ],
+  "id": "050.18",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "050.18.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "En una imagen de satélite infrarroja, las nubes más blancas suelen ser:",
+   "options": [
+    "Las de tope más cálido",
+    "Las de tope más frío, es decir, más alto",
+    "Siempre estratos bajos",
+    "Las de menor espesor"
+   ],
+   "correct": 1,
+   "why": "El infrarrojo mide la temperatura del tope; más frío = más alto = más blanco.",
+   "whyNot": [
+    "Las de tope cálido son más oscuras.",
+    null,
+    "Los estratos bajos son grises.",
+    "El brillo depende de la temperatura, no del espesor."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.18.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "El radar meteorológico detecta:",
+   "options": [
+    "La precipitación",
+    "Todas las nubes",
+    "El viento",
+    "La temperatura"
+   ],
+   "correct": 0,
+   "why": "Los pulsos se reflejan en las gotas y cristales de la precipitación.",
+   "whyNot": [
+    null,
+    "No ve nubes sin precipitación.",
+    "Solo el efecto Doppler da el viento.",
+    "No mide temperatura."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.18.003",
+   "type": "concepto",
+   "level": 1,
+   "q": "La imagen de satélite visible:",
+   "options": [
+    "Solo se puede obtener de día",
+    "Mide el vapor de agua",
+    "Se obtiene también de noche",
+    "Mide la temperatura del tope"
+   ],
+   "correct": 0,
+   "why": "Necesita luz solar para ver las nubes.",
+   "whyNot": [
+    null,
+    "Eso es otro canal.",
+    "Es luz reflejada del Sol.",
+    "Eso es el infrarrojo."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.18.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "En el mapa de superficie, isobaras muy juntas indican:",
+   "options": [
+    "Viento flojo",
+    "Presión alta",
+    "Aire seco",
+    "Viento fuerte"
+   ],
+   "correct": 3,
+   "why": "El gradiente de presión es grande y el viento, intenso.",
+   "whyNot": [
+    "Isobaras separadas dan viento flojo.",
+    "No indica el valor de presión.",
+    "No indica humedad.",
+    null
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.18.005",
+   "type": "regla",
+   "level": 2,
+   "q": "El nivel de 500 hPa se encuentra aproximadamente a:",
+   "options": [
+    "5500 m (FL180)",
+    "9000 m (FL300)",
+    "1500 m (FL050)",
+    "3000 m (FL100)"
+   ],
+   "correct": 0,
+   "why": "500 hPa corresponde a unos 5500 m, FL180.",
+   "whyNot": [
+    null,
+    "Es el de 300 hPa.",
+    "Es el de 850 hPa.",
+    "Es el de 700 hPa."
+   ],
+   "ref": "ISA"
+  },
+  {
+   "id": "050.18.006",
+   "type": "regla",
+   "level": 2,
+   "q": "El nivel de 850 hPa está aproximadamente a:",
+   "options": [
+    "3000 m",
+    "1500 m (5000 ft)",
+    "9000 m",
+    "5500 m"
+   ],
+   "correct": 1,
+   "why": "850 hPa son unos 1500 m, FL050.",
+   "whyNot": [
+    "Es el de 700 hPa.",
+    null,
+    "Es el de 300 hPa.",
+    "Es el de 500 hPa."
+   ],
+   "ref": "ISA"
+  },
+  {
+   "id": "050.18.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "El SIGWX de baja cota muestra la información:",
+   "options": [
+    "Con alturas AGL",
+    "Solo de viento",
+    "De superficie a FL150, con alturas AMSL",
+    "Solo por encima de FL250"
+   ],
+   "correct": 2,
+   "why": "Cubre de la superficie a FL150; las alturas de base y tope son AMSL.",
+   "whyNot": [
+    "Las alturas del SIGWX son sobre el nivel del mar.",
+    "Incluye nubes y fenómenos.",
+    null,
+    "Es el SIGWX de alta cota."
+   ],
+   "ref": "AEMET AU-GUI-0102"
+  },
+  {
+   "id": "050.18.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un AIREP especial se emite cuando el piloto observa:",
+   "options": [
+    "Un cielo despejado",
+    "Condiciones normales",
+    "Turbulencia severa, engelamiento severo, cizalladura o ceniza",
+    "Visibilidad buena"
+   ],
+   "correct": 2,
+   "why": "Los fenómenos que afectan a la seguridad de otros aviones se informan con un AIREP especial.",
+   "whyNot": [
+    "Un cielo despejado no es un fenómeno que afecte a la seguridad.",
+    "Con condiciones normales basta el informe rutinario.",
+    null,
+    "Una buena visibilidad no es motivo de un informe especial."
+   ],
+   "ref": "OACI Anexo 3"
+  },
+  {
+   "id": "050.18.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "El radiosondeo se realiza normalmente a las:",
+   "options": [
+    "06 y 18 UTC",
+    "Solo al amanecer",
+    "Cada hora",
+    "00 y las 12 UTC"
+   ],
+   "correct": 3,
+   "why": "Los globos se lanzan a las 00 y 12 UTC en toda la red mundial.",
+   "whyNot": [
+    "No son los horarios habituales.",
+    "No se limita a un horario.",
+    "Es demasiado frecuente.",
+    null
+   ],
+   "ref": "OACI Anexo 3"
+  },
+  {
+   "id": "050.18.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "En la imagen de vapor de agua, las zonas oscuras indican:",
+   "options": [
+    "Aire húmedo",
+    "Aire seco",
+    "Precipitación intensa",
+    "Nubes bajas"
+   ],
+   "correct": 1,
+   "why": "Las zonas oscuras corresponden a aire seco y descendente en la media y alta troposfera.",
+   "whyNot": [
+    "Las claras son aire húmedo.",
+    null,
+    "Eso lo muestra el radar.",
+    "No muestra nubes bajas."
+   ],
+   "ref": "AEMET apuntes"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.050.18.01",
+   "front": "Satélite infrarrojo",
+   "back": "Temperatura del tope: más frío = más alto = más blanco; día y noche"
+  },
+  {
+   "id": "c.050.18.02",
+   "front": "Satélite visible",
+   "back": "Luz solar reflejada; solo de día"
+  },
+  {
+   "id": "c.050.18.03",
+   "front": "Radar meteorológico",
+   "back": "Detecta precipitación, no nubes"
+  },
+  {
+   "id": "c.050.18.04",
+   "front": "Niveles de presión",
+   "back": "850 hPa 5000 ft; 700 hPa 10 000 ft; 500 hPa 18 000 ft; 300 hPa 30 000 ft"
+  },
+  {
+   "id": "c.050.18.05",
+   "front": "SIGWX de baja cota",
+   "back": "SFC a FL150, alturas AMSL; 00, 06, 12 y 18 UTC, ±3 h"
+  }
+ ]
+}

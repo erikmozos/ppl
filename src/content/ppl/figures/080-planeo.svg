@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320">
+  <title>Fuerzas en el planeo sin motor: el peso se descompone en una componente perpendicular a la trayectoria que equilibra la sustentación y otra paralela que equilibra la resistencia</title>
+  <defs>
+    <marker id="080-planeo-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+    <marker id="080-planeo-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker>
+    <marker id="080-planeo-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker>
+  </defs>
+  <line x1="250" y1="160" x2="440" y2="160" class="ln2 dash"/>
+  <line x1="40" y1="86" x2="440" y2="226" class="ln2"/>
+  <path d="M330 160 A80 80 0 0 1 325 187" class="ln" fill="none"/>
+  <text x="340" y="180" class="tx b">γ</text>
+  <circle cx="250" cy="160" r="5" class="ink-fill"/>
+  <line x1="250" y1="160" x2="289" y2="54" class="ac-ln thick" marker-end="url(#080-planeo-a)"/>
+  <line x1="250" y1="160" x2="211" y2="146" class="ln thick" marker-end="url(#080-planeo-k)"/>
+  <line x1="250" y1="160" x2="250" y2="280" class="wa-ln thick" marker-end="url(#080-planeo-w)"/>
+  <line x1="250" y1="160" x2="289" y2="174" class="ln2 dash"/>
+  <line x1="250" y1="160" x2="211" y2="266" class="ln2 dash"/>
+  <line x1="289" y1="174" x2="250" y2="280" class="ln2 dash"/>
+  <line x1="211" y1="266" x2="250" y2="280" class="ln2 dash"/>
+  <text x="298" y="52" class="txa b">L</text>
+  <text x="188" y="142" class="tx b">D</text>
+  <text x="258" y="294" class="txw b">W</text>
+  <text x="300" y="214" class="tx2">W sen γ = D</text>
+  <text x="204" y="270" class="tx2" text-anchor="end">W cos γ = L</text>
+  <text x="450" y="40" class="tx b">Planeo sin motor</text>
+  <text x="450" y="72" class="tx">tan γ = D / L = 1 / (L/D)</text>
+  <text x="450" y="104" class="tx2">L/D = 10 → γ ≈ 5,7°</text>
+  <text x="450" y="124" class="tx2">Distancia = altura × L/D</text>
+  <text x="450" y="156" class="tx2">La masa no cambia γ;</text>
+  <text x="450" y="174" class="tx2">sí la velocidad de mejor planeo.</text>
+  <text x="450" y="214" class="tx2">Trayectoria con γ exagerado</text>
+  <text x="450" y="232" class="tx2">para dibujar los vectores.</text>
+</svg>

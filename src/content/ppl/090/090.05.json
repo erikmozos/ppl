@@ -1,0 +1,371 @@
+{
+  "lesson": {
+    "id": "090.05",
+    "title": "Distintivos de llamada",
+    "summary": "Distintivos de estaciones y de aeronaves, forma completa y abreviada (primer carácter y al menos los dos últimos, solo después de que lo use el ATS), distintivos parecidos y el prefijo STUDENT en España.",
+    "objectives": [
+      "Componer el distintivo de una estación y el de una aeronave de aviación general",
+      "Abreviar un distintivo de aeronave con la regla del primer carácter y los dos últimos, y saber cuándo se puede",
+      "Actuar cuando hay distintivos parecidos en la frecuencia",
+      "Usar el prefijo STUDENT cuando corresponde"
+    ],
+    "sections": [
+      {
+        "title": "El distintivo de las estaciones",
+        "text": [
+          "Cada dependencia ATS tiene un distintivo formado por el **nombre del lugar** y un **sufijo** que dice el servicio: Villanueva **Torre**, Villanueva **Rodadura**, Villanueva **Aproximación**, Madrid **Control**, Madrid **Información**. Cuando ya has establecido comunicación con la estación y no hay riesgo de confusión, puede abreviarse a su servicio («Torre»).",
+          "El nombre del lugar se pronuncia como lo hacen en la frecuencia, no deletreado."
+        ]
+      },
+      {
+        "title": "El distintivo de las aeronaves",
+        "text": [
+          "Para un avión de aviación general se usa la **matrícula**, deletreada con el alfabeto fonético: EC-ABC es «Eco Charlie Alfa Bravo Charlie». En la primera llamada puedes anteponer el **tipo o el fabricante**: «Cessna EC-ABC» o «Cessna uno siete dos EC-ABC». Esa forma completa se mantiene hasta que el ATS use la abreviada.",
+          "El **distintivo abreviado** conserva el **primer carácter** y **al menos los dos últimos**: EC-ABC pasa a ser «**E-BC**» (Eco Bravo Charlie), y con el tipo, «Cessna BC». Es importante: **solo puedes abreviar tu distintivo después de que lo haya hecho el ATS** con tu aeronave. Si lo abrevias antes, puedes crear confusión con otros aviones."
+        ],
+        "table": {
+          "caption": "Formas del distintivo de EC-ABC",
+          "head": [
+            "Situación",
+            "Se dice"
+          ],
+          "rows": [
+            [
+              "Primera llamada",
+              "«Eco Charlie Alfa Bravo Charlie» (o con el tipo: «Cessna Eco Charlie Alfa Bravo Charlie»)"
+            ],
+            [
+              "Tras la abreviatura del ATS",
+              "«Eco Bravo Charlie»"
+            ],
+            [
+              "Alumno solo en España, primera llamada",
+              "«STUDENT Eco Charlie Alfa Bravo Charlie»"
+            ]
+          ],
+          "src": "Anexo 10, vol. II; AIP GEN 1.7"
+        },
+        "note": {
+          "kind": "warn",
+          "text": "No cambies de tipo de distintivo en vuelo, salvo que ATC te lo indique por razones de seguridad. El cambio es temporal y se revierte cuando el ATC lo indique."
+        }
+      },
+      {
+        "title": "Distintivos parecidos",
+        "text": [
+          "Cuando en una misma frecuencia hay **distintivos parecidos** (por ejemplo, EC-ABC y EC-ABD), el riesgo de que un piloto cumpla la instrucción del otro es real. Para evitarlo se repite el distintivo **al principio y al final del mensaje**, y el controlador puede indicarte que uses el distintivo completo o que lo cambies temporalmente. Si oyes un distintivo parecido al tuyo, **escucha con más atención** antes de contestar."
+        ]
+      },
+      {
+        "title": "Ejemplos de uso en una llamada",
+        "examples": [
+          {
+            "q": "Primera llamada de EC-ABC a Villanueva Torre, en español OACI.",
+            "a": "«Villanueva Torre, Eco Charlie Alfa Bravo Charlie, Cessna 172, en la plataforma, con información Bravo, solicito rodar.» Se dice primero la estación y después tu distintivo completo."
+          },
+          {
+            "q": "La torre contesta «Eco Bravo Charlie, ruede al punto de espera». ¿Qué distintivo usas en tu respuesta?",
+            "a": "El abreviado, «Eco Bravo Charlie», porque el ATS lo ha utilizado antes. Tu colación termina con él."
+          },
+          {
+            "q": "Un alumno que vuela solo llama por primera vez a la torre.",
+            "a": "«Villanueva Torre, STUDENT Eco Charlie Alfa Bravo Charlie, ...». El prefijo STUDENT solo va en la primera llamada."
+          }
+        ]
+      },
+      {
+        "title": "Errores típicos con los distintivos",
+        "bullets": [
+          "Abreviar el distintivo en la primera llamada «para ir más rápido»: aumenta la confusión y no está permitido.",
+          "Decir solo el tipo de avión («Cessna») sin matrícula: el controlador no sabe a quién se dirige la respuesta.",
+          "No terminar la colación con el distintivo: el controlador no sabe quién ha colacionado.",
+          "Contestar a una instrucción dirigida a otro avión de distintivo parecido. Antes de cumplir, comprueba que el distintivo es el tuyo."
+        ]
+      },
+      {
+        "title": "Prefijo STUDENT",
+        "text": [
+          "Los **alumnos piloto que vuelan solos** añaden el prefijo **STUDENT** a su distintivo en la primera llamada a una estación: «STUDENT Eco Charlie Alfa Bravo Charlie». Es una diferencia española (AIP GEN 1.7) que avisa a ATC de que el piloto es un alumno, para que hable más despacio y dé instrucciones más sencillas. Una vez establecido el contacto, se sigue con el distintivo habitual."
+        ]
+      }
+    ],
+    "numbers": [
+      "Distintivo abreviado: primer carácter y al menos los dos últimos (EC-ABC → E-BC)",
+      "Solo se abrevia después de que el ATS lo haga",
+      "Distintivos parecidos: se repite el distintivo al principio y al final del mensaje",
+      "Alumno solo en España: prefijo STUDENT en la primera llamada"
+    ],
+    "traps": [
+      "No cambies el orden de la llamada: primero la estación llamada y después tú.",
+      "El piloto no puede abreviar su distintivo por iniciativa propia.",
+      "El distintivo abreviado de EC-ABC es E-BC, no EC-BC ni ABC.",
+      "STUDENT es un prefijo español; no sustituye al distintivo completo."
+    ],
+    "spain": [
+      "AIP GEN 1.7: prefijo STUDENT para alumnos solos y repetición del distintivo cuando son parecidos."
+    ],
+    "sources": [
+      {
+        "title": "SERA, sección 14 (EASA)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "AIP España GEN 1.7 (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/contenido_AIP/GEN/LE_GEN_1_7_en.html"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología ES/EN",
+        "href": "#/licencias/fraseologia"
+      },
+      {
+        "label": "Simulador de radio",
+        "href": "#/licencias/fraseologia?tab=radio"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "090.05.001",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Cuál es el distintivo abreviado de EC-ABC?",
+      "options": [
+        "EC-BC",
+        "ABC",
+        "E-BC",
+        "EC-C"
+      ],
+      "correct": 2,
+      "why": "La forma abreviada conserva el primer carácter y al menos los dos últimos: E-BC.",
+      "whyNot": [
+        "No sigue la regla del primer carácter y los dos últimos.",
+        "Faltaría el primer carácter.",
+        null,
+        "No son los dos últimos caracteres."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.05.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Cuándo puedes usar el distintivo abreviado de tu aeronave?",
+      "options": [
+        "Solo después de que lo haya usado el ATS",
+        "Desde la primera llamada",
+        "Siempre que haya poco tráfico",
+        "Cuando lo decida el piloto"
+      ],
+      "correct": 0,
+      "why": "El piloto abrevia su distintivo únicamente cuando lo ha hecho el ATS.",
+      "whyNot": [
+        null,
+        "No puedes abreviarlo por tu cuenta.",
+        "No depende del tráfico.",
+        "No puede decidirlo el piloto."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.05.003",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué prefijo usa un alumno que vuela solo en España en su primera llamada?",
+      "options": [
+        "ALUMNO",
+        "CADET",
+        "SOLO",
+        "STUDENT"
+      ],
+      "correct": 3,
+      "why": "El AIP GEN 1.7 establece el prefijo STUDENT.",
+      "whyNot": [
+        "No es el prefijo.",
+        "No es el prefijo.",
+        "No es el prefijo.",
+        null
+      ],
+      "ref": "AIP GEN 1.7",
+      "es": true
+    },
+    {
+      "id": "090.05.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué se dice en la primera llamada de EC-ABC?",
+      "options": [
+        "Eco Bravo Charlie",
+        "El distintivo completo, deletreado: Eco Charlie Alfa Bravo Charlie",
+        "Charlie Alfa Bravo",
+        "Cessna uno siete dos"
+      ],
+      "correct": 1,
+      "why": "En la primera llamada se dice el distintivo completo.",
+      "whyNot": [
+        "Es la forma abreviada.",
+        null,
+        "No son los caracteres de la matrícula.",
+        "No es un distintivo completo."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.05.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "Hay en la frecuencia dos aeronaves con distintivos parecidos. ¿Qué se hace para evitar confusiones?",
+      "options": [
+        "Se repite el distintivo al principio y al final del mensaje",
+        "Se transmite más rápido",
+        "Se evita el distintivo",
+        "Se usa solo el tipo de avión"
+      ],
+      "correct": 0,
+      "why": "Repetir el distintivo al principio y al final reduce el riesgo de confusión.",
+      "whyNot": [
+        null,
+        "Hablar más rápido empeora la comprensión.",
+        "El distintivo es obligatorio.",
+        "No es suficiente."
+      ],
+      "ref": "AIP GEN 1.7",
+      "es": true
+    },
+    {
+      "id": "090.05.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cómo se identifica la torre de Villanueva?",
+      "options": [
+        "Villanueva Información",
+        "Torre de Villanueva Radio",
+        "Villanueva Torre",
+        "Villanueva Control"
+      ],
+      "correct": 2,
+      "why": "El distintivo se forma con el nombre del lugar y el sufijo del servicio.",
+      "whyNot": [
+        "Es el servicio de información.",
+        "No es la forma normalizada.",
+        null,
+        "Es el control de área."
+      ],
+      "ref": "Doc 9432"
+    },
+    {
+      "id": "090.05.007",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Puedes cambiar por tu cuenta el tipo de distintivo de tu aeronave durante el vuelo?",
+      "options": [
+        "Sí, si el tráfico es intenso",
+        "No: solo si ATC te lo indica por razones de seguridad",
+        "Sí, con aviso a ATC después",
+        "Sí, en cualquier fase del vuelo"
+      ],
+      "correct": 1,
+      "why": "El cambio de distintivo es temporal y solo por instrucción del ATC.",
+      "whyNot": [
+        "No lo decide el piloto.",
+        null,
+        "No lo decide el piloto.",
+        "No lo decide el piloto."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.05.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué quiere avisar a ATC el prefijo STUDENT?",
+      "options": [
+        "Que el avión es de una escuela",
+        "Que hay un instructor a bordo",
+        "Que tiene prioridad de aterrizaje",
+        "Que quien llama es un alumno piloto que vuela solo"
+      ],
+      "correct": 3,
+      "why": "STUDENT avisa de que el piloto es un alumno, para que se hable más despacio y sencillo.",
+      "whyNot": [
+        "No avisa de eso.",
+        "No avisa de eso.",
+        "No tiene prioridad.",
+        null
+      ],
+      "ref": "AIP GEN 1.7",
+      "es": true
+    },
+    {
+      "id": "090.05.009",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué parte de la matrícula conserva siempre el distintivo abreviado?",
+      "options": [
+        "Solo los tres últimos",
+        "Solo el primero y el último",
+        "El primer carácter y al menos los dos últimos",
+        "El prefijo de nacionalidad completo"
+      ],
+      "correct": 2,
+      "why": "Regla: primer carácter y al menos los dos últimos.",
+      "whyNot": [
+        "Se conserva también el primero.",
+        "Se conservan al menos los dos últimos.",
+        null,
+        "Se conserva solo el primer carácter."
+      ],
+      "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.05.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "El controlador te llama por tu distintivo abreviado (E-BC) y tú contestas con el distintivo completo. ¿Es correcto?",
+      "options": [
+        "Sí, pero lo habitual es contestar con la forma abreviada",
+        "No, está prohibido",
+        "Sí, y además es obligatorio",
+        "No, hay que cambiar de frecuencia"
+      ],
+      "correct": 0,
+      "why": "Puedes usar la forma completa; lo habitual es contestar con la forma que usa el ATS.",
+      "whyNot": [
+        null,
+        "No lo está.",
+        "No es obligatorio.",
+        "No tiene relación."
+      ],
+      "ref": "Anexo 10, vol. II"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.090.05.01",
+      "front": "Distintivo abreviado",
+      "back": "Primer carácter y al menos los dos últimos: EC-ABC → E-BC"
+    },
+    {
+      "id": "c.090.05.02",
+      "front": "Cuándo abreviar",
+      "back": "Solo tras abreviar el ATS"
+    },
+    {
+      "id": "c.090.05.03",
+      "front": "Prefijo de alumno",
+      "back": "STUDENT en la primera llamada (España)"
+    },
+    {
+      "id": "c.090.05.04",
+      "front": "Distintivos parecidos",
+      "back": "Repetir el distintivo al principio y al final"
+    },
+    {
+      "id": "c.090.05.05",
+      "front": "Cambio de distintivo en vuelo",
+      "back": "Solo por instrucción de ATC, de forma temporal"
+    }
+  ]
+}

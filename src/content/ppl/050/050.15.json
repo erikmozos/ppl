@@ -1,0 +1,360 @@
+{
+ "lesson": {
+  "title": "Engelamiento",
+  "summary": "Condiciones del engelamiento, tipos de hielo (claro, opaco y mixto), escarcha y lluvia engelante, efectos sobre el avión, cómo evitarlo y relación con el hielo de carburador.",
+  "objectives": [
+   "Explicar cuándo y por qué se forma hielo en un avión en vuelo",
+   "Distinguir hielo claro, opaco y mixto, y la escarcha",
+   "Reconocer los efectos del hielo sobre la sustentación, el peso, las tomas y la hélice",
+   "Evitar las condiciones de engelamiento y saber qué hacer si se entra en ellas",
+   "Entender el hielo de carburador y su prevención con calor de carburador"
+  ],
+  "sections": [
+   {
+    "title": "Cuándo hay engelamiento",
+    "text": [
+     "El hielo estructural se forma cuando el avión vuela en **aire con agua líquida visible** (nubes o precipitación) y la **superficie del avión está a 0 °C o menos**. Lo sorprendente es que el agua puede seguir **líquida por debajo de 0 °C**: son gotas **sobreenfriadas**, que no se han congelado porque les falta un núcleo; al chocar con el avión se congelan al instante. En una nube, la mayor parte del agua sobreenfriada se encuentra entre **0 y −20 °C**; hacia −40 °C ya casi todo son cristales de hielo, que no se pegan al avión.",
+     "Es más probable e intenso en **Ns y Cb**, en las zonas frontales, en las laderas de barlovento con ascendencias orográficas y cerca de la isoterma de 0 °C. El aire frío y seco no produce engelamiento. En los GAMET figura el **nivel de congelación (FZLVL)**."
+    ]
+   },
+   {
+    "title": "Tipos de hielo",
+    "table": {
+     "caption": "Tipos de engelamiento en vuelo",
+     "head": [
+      "Tipo",
+      "Aspecto",
+      "Cómo se forma",
+      "Peligro"
+     ],
+     "rows": [
+      [
+       "Claro (glaze)",
+       "Transparente, liso y duro",
+       "Gotas grandes, a 0 °C a −10 °C; lluvia engelante; se extiende sobre la superficie",
+       "Muy alto: se pega, es pesado y difícil de eliminar; el más peligroso"
+      ],
+      [
+       "Opaco (rime)",
+       "Blanquecino, rugoso y quebradizo",
+       "Gotas pequeñas, −10 °C a −20 °C; congelan al instante y atrapan aire",
+       "Alto: deforma el borde de ataque, aunque se rompe con más facilidad"
+      ],
+      [
+       "Mixto",
+       "Mezcla de ambos",
+       "Gotas de distintos tamaños, entre −10 °C y −15 °C",
+       "Alto"
+      ]
+     ],
+     "src": "FAA-H-8083-28; AEMET"
+    },
+    "text": [
+     "El tipo de hielo depende del **tamaño de las gotas** y de la temperatura, como resume la tabla.",
+     "La **lluvia engelante** es lluvia cuyas gotas están sobreenfriadas, y es muy peligrosa: se forma cuando la precipitación atraviesa una **capa de aire frío** bajo cero tras haber estado en una capa cálida encima. Se congela al contacto con cualquier superficie y puede formar una capa de hielo claro grueso en minutos.",
+     "La **escarcha** es distinta: es un depósito de cristales de hielo sobre superficies **estacionadas** en una noche fría, despejada y húmeda. No se forma en vuelo. Una capa de escarcha **estropea el perfil del ala** y debe retirarse **antes de despegar**: una superficie contaminada puede perder una gran parte de la sustentación."
+    ]
+   },
+   {
+    "title": "Efectos sobre el avión",
+    "text": [
+     "El hielo afecta al avión de varias formas a la vez. **Aumenta el peso** y **deforma el perfil**, de modo que la sustentación máxima disminuye y la **velocidad de pérdida sube** (a veces sin aviso previo del morro). **Aumenta la resistencia** y reduce la potencia útil. Puede **bloquear las tomas del pitot y de estática**, dando indicaciones erróneas de velocidad, altitud y régimen vertical, y bloquear las **superficies de mando**. En la hélice produce vibraciones y pérdida de tracción; en las antenas, ruido de radio; y en el parabrisas, pérdida de visibilidad.",
+     "Con hielo acumulado la velocidad de pérdida sube: aproxima más deprisa de lo normal, con poco flap y sin maniobras bruscas."
+    ]
+   },
+   {
+    "title": "Cómo evitarlo",
+    "text": [
+     "Los aviones de entrenamiento como el PA-28 y el Cessna 172 **no están certificados para volar en condiciones de engelamiento conocido**; el único método fiable es **evitarlo**. Antes del vuelo, estudia el nivel de congelación y las nubes en la ruta. En vuelo, **sal de la zona cuanto antes**: desciende hacia aire más cálido (si el terreno lo permite y hay aire por encima de 0 °C), o cambia de rumbo hacia aire sin nubes, o asciende a una capa más fría con cielo despejado. **Evita las nubes y la precipitación** si la temperatura está cerca de 0 °C o por debajo. Si el avión tiene calentador del pitot, enciéndelo antes de entrar en zonas de riesgo."
+    ],
+    "bullets": [
+     "Retira toda la escarcha, hielo y nieve antes de despegar; el avión debe estar limpio.",
+     "Con el nivel 0 °C bajo tu altitud de crucero, una nube es una trampa de hielo.",
+     "Con lluvia engelante, da media vuelta: es la peor situación."
+    ]
+   },
+   {
+    "title": "Hielo de carburador",
+    "text": [
+     "En un motor con **carburador** (como el del PA-28), la evaporación del combustible y la bajada de presión en el venturi pueden enfriar el aire de admisión **hasta unos 20 °C por debajo de la temperatura exterior**. Si hay humedad, el vapor se congela y se acumula en el venturi y en la mariposa. Puede formarse **con cielos despejados y temperaturas exteriores de hasta 20 a 25 °C** y humedad alta; es más probable con potencia reducida (descenso, rodaje, aproximación).",
+     "Síntomas: pérdida de revoluciones o de presión de admisión sin causa y funcionamiento áspero. El remedio es **aplicar calor al carburador al completo** y mantenerlo; el motor puede ir peor unos segundos mientras el hielo se derrite. Usa el calor de carburador **de forma preventiva** en las condiciones propicias, **siempre antes de reducir potencia para aproximar**, y consulta el POH. Un motor de **inyección** (como el del C172S) no tiene carburador y no sufre hielo en el venturi, aunque tiene su propia toma de aire alterna."
+    ],
+    "links": [
+     {
+      "label": "Prueba de motor del PA-28: comprobación del calor de carburador",
+      "href": "#/ac/pa28/flow/runup"
+     }
+    ]
+   }
+  ],
+  "numbers": [
+   "Hielo estructural: agua líquida visible y superficie a 0 °C o menos",
+   "Más probable entre 0 y −20 °C",
+   "Hielo claro: gotas grandes, 0 a −10 °C; opaco: gotas pequeñas, −10 a −20 °C",
+   "La lluvia engelante es el engelamiento más peligroso",
+   "Hielo de carburador posible con hasta 20–25 °C y humedad alta",
+   "Un PA-28 o un C172 no están certificados para engelamiento conocido"
+  ],
+  "traps": [
+   "El hielo claro es el más peligroso, aunque parezca inofensivo.",
+   "La escarcha no se forma en vuelo; se retira antes del despegue.",
+   "Se puede formar hielo de carburador con cielo despejado y temperaturas altas.",
+   "Con muy bajas temperaturas (−40 °C) casi no hay hielo estructural, porque ya no hay agua líquida.",
+   "Aire seco y frío no produce engelamiento."
+  ],
+  "sources": [
+   {
+    "title": "FAA-H-8083-28, Aviation Weather Handbook: engelamiento",
+    "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+   },
+   {
+    "title": "AEMET, Apuntes de meteorología aeronáutica",
+    "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
+   },
+   {
+    "title": "Piper PA-28-161 Warrior III, POH: calor de carburador"
+   }
+  ],
+  "id": "050.15",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "050.15.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "Para que haya engelamiento estructural en vuelo es necesario:",
+   "options": [
+    "Cielo despejado y aire seco",
+    "Agua líquida visible y superficie a 0 °C o menos",
+    "Una temperatura exterior mayor de 20 °C",
+    "Que la humedad sea del 100 % siempre"
+   ],
+   "correct": 1,
+   "why": "El hielo se forma cuando gotas de agua sobreenfriadas se congelan al chocar con el avión.",
+   "whyNot": [
+    "Sin agua no hay hielo.",
+    null,
+    "El hielo de carburador sí puede darse así; el estructural no.",
+    "Podría no ser imprescindible la saturación."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.15.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "El tipo de engelamiento más peligroso es:",
+   "options": [
+    "La escarcha en tierra",
+    "El hielo claro",
+    "El hielo seco",
+    "El opaco"
+   ],
+   "correct": 1,
+   "why": "El claro es duro, pesado y difícil de eliminar, y se extiende por la superficie.",
+   "whyNot": [
+    "No se forma en vuelo.",
+    null,
+    "No es un tipo de engelamiento.",
+    "Es más fácil de eliminar y deforma menos."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.15.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "El hielo opaco (rime) se forma con:",
+   "options": [
+    "Gotas grandes que fluyen antes de congelar",
+    "Cristales de hielo secos",
+    "Gotas pequeñas que congelan al instante",
+    "Lluvia engelante"
+   ],
+   "correct": 2,
+   "why": "Las gotas pequeñas congelan al contacto y atrapan aire: aspecto blanquecino.",
+   "whyNot": [
+    "Eso da hielo claro.",
+    "Los cristales no se pegan al avión.",
+    null,
+    "Es la lluvia engelante la que da hielo claro."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.15.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "La lluvia engelante se forma cuando:",
+   "options": [
+    "La lluvia cae a través de una capa de aire bajo cero",
+    "Hay cielo despejado",
+    "Hay niebla de radiación",
+    "Hay viento fuerte"
+   ],
+   "correct": 0,
+   "why": "Las gotas se sobreenfrían al atravesar la capa fría y se congelan al contacto con cualquier superficie.",
+   "whyNot": [
+    null,
+    "Sin nubes no hay lluvia.",
+    "La niebla no es lluvia.",
+    "El viento no es la causa."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.15.005",
+   "type": "concepto",
+   "level": 1,
+   "q": "Un avión que ha pasado la noche con escarcha en las alas debe:",
+   "options": [
+    "Despegar con más velocidad",
+    "Esperar a que suba la presión",
+    "Ignorarla porque se derrite en vuelo",
+    "Retirar la escarcha antes de despegar"
+   ],
+   "correct": 3,
+   "why": "La capa de escarcha altera el perfil y puede reducir la sustentación de forma importante.",
+   "whyNot": [
+    "No resuelve el problema de sustentación.",
+    "La presión no influye.",
+    "La escarcha puede reducir mucho la sustentación.",
+    null
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.15.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un efecto del hielo sobre el avión es:",
+   "options": [
+    "Aumenta la sustentación máxima",
+    "Disminuye el peso",
+    "Aumenta la velocidad de pérdida",
+    "Reduce la resistencia"
+   ],
+   "correct": 2,
+   "why": "El hielo deforma el perfil y añade peso: se entra en pérdida a mayor velocidad.",
+   "whyNot": [
+    "Disminuye la sustentación máxima.",
+    "Aumenta el peso.",
+    null,
+    "Aumenta la resistencia."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.15.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "El hielo de carburador puede formarse:",
+   "options": [
+    "Con cielo despejado y temperatura exterior de hasta 20-25 °C si hay humedad",
+    "Solo por debajo de 0 °C",
+    "Solo en nubes",
+    "Solo con motor de inyección"
+   ],
+   "correct": 0,
+   "why": "La evaporación del combustible enfría el aire de admisión por debajo de 0 °C incluso en días templados.",
+   "whyNot": [
+    null,
+    "Puede darse a temperaturas mucho mayores.",
+    "No hace falta estar en nube.",
+    "Es propio de los motores con carburador."
+   ],
+   "ref": "POH PA-28; FAA PHAK cap. 7"
+  },
+  {
+   "id": "050.15.008",
+   "type": "concepto",
+   "level": 1,
+   "q": "El primer remedio ante un posible hielo de carburador es:",
+   "options": [
+    "Enriquecer la mezcla al mínimo",
+    "Aplicar calor al carburador al completo",
+    "Reducir al ralentí y esperar",
+    "Quitar la bomba eléctrica de combustible"
+   ],
+   "correct": 1,
+   "why": "El calor de carburador funde el hielo; se mantiene aplicado hasta que el motor recupere potencia.",
+   "whyNot": [
+    "No elimina el hielo.",
+    null,
+    "Reducir potencia favorece el hielo.",
+    "No tiene relación."
+   ],
+   "ref": "POH PA-28"
+  },
+  {
+   "id": "050.15.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un avión sin certificación para engelamiento conocido debe:",
+   "options": [
+    "Evitar nubes y precipitación con temperatura cercana o inferior a 0 °C",
+    "Volar siempre en nubes bajas",
+    "Subir siempre por encima de las nubes",
+    "Encender la luz estroboscópica"
+   ],
+   "correct": 0,
+   "why": "El único método fiable es evitar la zona de engelamiento.",
+   "whyNot": [
+    null,
+    "Es el lugar de mayor riesgo.",
+    "No es una solución general.",
+    "No ayuda."
+   ],
+   "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.15.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "A temperaturas muy bajas, por debajo de −20 °C, en una nube el engelamiento estructural:",
+   "options": [
+    "Es máximo",
+    "No ocurre nunca",
+    "Solo ocurre en tormentas",
+    "Es menos probable porque casi todo son cristales de hielo"
+   ],
+   "correct": 3,
+   "why": "A temperaturas muy bajas hay muy poca agua líquida; predominan los cristales.",
+   "whyNot": [
+    "La mayor parte del agua sobreenfriada está entre 0 y −20 °C.",
+    "Puede ocurrir, pero es menos probable.",
+    "Es más probable entre 0 y −20 °C.",
+    null
+   ],
+   "ref": "FAA-H-8083-28"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.050.15.01",
+   "front": "Engelamiento estructural",
+   "back": "Agua líquida visible y superficie a 0 °C o menos; más probable entre 0 y −20 °C"
+  },
+  {
+   "id": "c.050.15.02",
+   "front": "Hielo claro y opaco",
+   "back": "Claro: gotas grandes, transparente y peligroso. Opaco: gotas pequeñas, blanquecino"
+  },
+  {
+   "id": "c.050.15.03",
+   "front": "Lluvia engelante",
+   "back": "Lluvia que cae por una capa bajo cero y congela al contacto: la más peligrosa"
+  },
+  {
+   "id": "c.050.15.04",
+   "front": "Escarcha",
+   "back": "Se deposita en tierra; debe retirarse antes de despegar"
+  },
+  {
+   "id": "c.050.15.05",
+   "front": "Hielo de carburador",
+   "back": "Posible con cielo despejado y hasta 20-25 °C con humedad; calor de carburador completo"
+  }
+ ]
+}

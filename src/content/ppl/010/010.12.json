@@ -1,0 +1,805 @@
+{
+  "lesson": {
+    "id": "010.12",
+    "title": "Aeródromos: pistas, distancias, señales y luces",
+    "summary": "Pista, franja, zona de parada y zona libre de obstáculos; distancias declaradas TORA, TODA, ASDA y LDA; marcas, luces, PAPI, letreros, área de señales, balizamiento de obstáculos, zonas fuera de servicio y salvamento y extinción de incendios.",
+    "objectives": [
+      "Definir pista, franja, zona de parada y zona libre de obstáculos y calcular TORA, TODA, ASDA y LDA",
+      "Interpretar el designador de pista, el umbral, el umbral desplazado y los puntos de espera",
+      "Reconocer los colores de las luces de pista y de rodadura y leer un PAPI",
+      "Distinguir los letreros de instrucción obligatoria de los de información",
+      "Conocer el balizamiento de obstáculos, las zonas fuera de servicio y los servicios de salvamento y extinción"
+    ],
+    "sections": [
+      {
+        "title": "Las partes de un aeródromo (Anexo 14)",
+        "text": [
+          "El **Anexo 14** de la OACI fija las características físicas de los aeródromos. Para el piloto, importa saber qué parte del terreno puede usar y para qué. La **pista** es el área rectangular preparada para el aterrizaje y el despegue. La **franja** que la rodea incluye la pista (y la zona de parada si existe) y reduce el riesgo de daños si el avión se sale. El **área de maniobras** reúne pistas y calles de rodaje; la **plataforma** (apron) es donde se estaciona y se embarca.",
+          "Dos prolongaciones de la pista tienen funciones muy distintas. La **zona de parada (stopway, SWY)** es un rectángulo del ancho de la pista, más allá de su final, capaz de soportar al avión en un despegue interrumpido. **No sirve para despegar ni para aterrizar.** La **zona libre de obstáculos (clearway, CWY)** es un área bajo control del aeródromo, de al menos **150 m** de ancho y de longitud máxima la mitad de la carrera de despegue disponible, con pendiente ascendente no superior al **1,25 %**, sobre la que el avión puede hacer parte de su ascenso inicial. El avión no rueda sobre ella: la sobrevuela."
+        ]
+      },
+      {
+        "title": "Distancias declaradas: TORA, TODA, ASDA y LDA",
+        "text": [
+          "El gestor del aeródromo publica cuatro distancias para cada sentido de la pista. Son las que debes comparar con las que te salgan en tu cálculo de performance."
+        ],
+        "table": {
+          "caption": "Distancias declaradas",
+          "head": [
+            "Sigla",
+            "Nombre",
+            "Cómo se obtiene"
+          ],
+          "rows": [
+            [
+              "TORA",
+              "Carrera de despegue disponible",
+              "Longitud de pista declarada disponible y adecuada para la carrera de despegue"
+            ],
+            [
+              "TODA",
+              "Distancia de despegue disponible",
+              "TORA + zona libre de obstáculos (CWY)"
+            ],
+            [
+              "ASDA",
+              "Distancia de aceleración-parada disponible",
+              "TORA + zona de parada (SWY)"
+            ],
+            [
+              "LDA",
+              "Distancia de aterrizaje disponible",
+              "Longitud de pista disponible para la carrera de aterrizaje, desde el umbral (el umbral desplazado la reduce)"
+            ]
+          ],
+          "src": "Anexo 14, cap. 1 y 3"
+        },
+        "figure": "svg:010-distancias-declaradas",
+        "caption": "Distancias declaradas con umbral desplazado, zona de parada y zona libre de obstáculos",
+        "examples": [
+          {
+            "q": "Una pista mide 1100 m, con 150 m de zona libre de obstáculos y 100 m de zona de parada tras el final. ¿Cuánto valen la TORA, la ASDA y la TODA?",
+            "a": "TORA = 1100 m. ASDA = TORA + SWY = 1100 + 100 = 1200 m. TODA = TORA + CWY = 1100 + 150 = 1250 m."
+          },
+          {
+            "q": "La misma pista tiene un umbral desplazado de 200 m para la cabecera de aterrizaje. ¿Cuánto vale la LDA y cómo cambia la TORA?",
+            "a": "El umbral desplazado se puede usar para despegar y rodar, pero no para tomar tierra: LDA = 1100 − 200 = 900 m. La TORA sigue siendo 1100 m."
+          }
+        ],
+        "note": {
+          "kind": "tip",
+          "text": "Truco para no confundir: ASDA es el «Stop» (parada); TODA es lo que puedes «Ganar» sobrevolando la zona libre. La LDA solo la reduce un umbral desplazado."
+        }
+      },
+      {
+        "title": "Marcas de pista",
+        "text": [
+          "Las marcas de pista son **blancas**. El **designador** indica el rumbo magnético de la pista visto desde la aproximación, dividido por 10 y redondeado a la decena: una pista orientada 267° se llama **27**. Si hay pistas paralelas se añaden **L, C o R** (izquierda, centro, derecha). El designador de una pista de 094° es 09, con cero a la izquierda.",
+          "El **umbral** se señala con franjas longitudinales y el **eje** con trazos discontinuos. El **punto de visada** son dos barras anchas a cierta distancia del umbral, que sirve de referencia para la toma, y la **zona de toma de contacto** se marca con pares de barras más pequeñas. Si el umbral está **desplazado**, se marca con una barra transversal y flechas que apuntan hacia ella a lo largo del eje."
+        ],
+        "figure": "svg:010-pista-marcas",
+        "caption": "Marcas de pista, umbral desplazado y punto de espera de pista",
+        "bullets": [
+          "Una **cruz** sobre la pista, o sobre una parte de ella, indica que está **cerrada** (blanca en pista y amarilla en calle de rodaje).",
+          "Las marcas de calles de rodaje son **amarillas**. En el **punto de espera de pista (patrón A)** hay cuatro rayas: dos continuas y dos discontinuas. Las **continuas** están del lado donde esperas y las **discontinuas** del lado de la pista; no se rebasan las continuas sin autorización."
+        ]
+      },
+      {
+        "title": "Luces de pista y de rodadura",
+        "text": [
+          "El color de la luz te dice dónde estás de la pista incluso con poca visibilidad o de noche. Las más preguntadas:"
+        ],
+        "table": {
+          "caption": "Colores de las luces de aeródromo",
+          "head": [
+            "Luz",
+            "Color"
+          ],
+          "rows": [
+            [
+              "Borde de pista",
+              "Blanca"
+            ],
+            [
+              "Umbral de pista",
+              "Verde"
+            ],
+            [
+              "Final de pista",
+              "Roja"
+            ],
+            [
+              "Eje de pista",
+              "Blanca"
+            ],
+            [
+              "Eje de calle de rodaje",
+              "Verde"
+            ],
+            [
+              "Borde de calle de rodaje",
+              "Azul"
+            ],
+            [
+              "Barra de parada (stop bar)",
+              "Roja"
+            ],
+            [
+              "Faro de aeródromo (aeródromo terrestre civil)",
+              "Destellos alternados de blanco y verde"
+            ]
+          ],
+          "src": "Anexo 14, cap. 5"
+        }
+      },
+      {
+        "title": "Indicador de pendiente de aproximación: PAPI",
+        "text": [
+          "El **PAPI** (precision approach path indicator) son cuatro unidades de luz en una barra junto a la pista, con un sector blanco encima y otro rojo debajo de la trayectoria. Con el ángulo nominal (en general 3°) ves **dos blancas y dos rojas**. Cuanto más alto estás, más luces blancas ves; cuanto más bajo, más luces rojas."
+        ],
+        "table": {
+          "caption": "Indicaciones del PAPI",
+          "head": [
+            "Luces",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "4 blancas",
+              "Demasiado alto"
+            ],
+            [
+              "3 blancas y 1 roja",
+              "Algo alto"
+            ],
+            [
+              "2 blancas y 2 rojas",
+              "En la trayectoria"
+            ],
+            [
+              "1 blanca y 3 rojas",
+              "Algo bajo"
+            ],
+            [
+              "4 rojas",
+              "Demasiado bajo"
+            ]
+          ],
+          "src": "Anexo 14, cap. 5"
+        },
+        "note": {
+          "kind": "tip",
+          "text": "Si ves rojo, estás por debajo: sube. Más rojo, más bajo."
+        }
+      },
+      {
+        "title": "Letreros",
+        "text": [
+          "Los letreros de aeródromo se agrupan en dos familias. Los de **instrucción obligatoria** tienen **fondo rojo e inscripción blanca**: indican un punto de espera de pista, una entrada prohibida o una pista en uso. No se pasa de ellos sin autorización. Los de **información** tienen fondo amarillo e inscripción negra (dirección, destino) o fondo negro con inscripción amarilla (localización: dónde estás)."
+        ]
+      },
+      {
+        "title": "Área de señales y manga de viento",
+        "text": [
+          "En el **área de señales** de los aeródromos sin servicio de comunicaciones se colocan figuras que indican a las aeronaves en vuelo las condiciones del aeródromo (por ejemplo, la T que indica la dirección de aterrizaje y despegue, o la prohibición de aterrizar). La **manga de viento** indica la dirección y la fuerza aproximada del viento; debe verse desde el aire y desde el suelo. Las figuras del área de señales y su significado completo los tienes en el bloque de reglas generales."
+        ],
+        "figure": "svg:010-area-senales",
+        "caption": "Señales visuales del área de señales"
+      },
+      {
+        "title": "Obstáculos, zonas fuera de servicio y salvamento",
+        "text": [
+          "Los **obstáculos** se señalan con colores que contrastan con el entorno (franjas alternas de naranja y blanco) y, si son un peligro de noche, con luces rojas. Una **zona fuera de servicio** en el área de maniobras se marca con conos, banderas o paneles y, de noche, con **luces rojas fijas**.",
+          "Los aeródromos disponen de **servicio de salvamento y extinción de incendios (RFF)**, clasificado en **categorías** según la longitud total y la anchura del fuselaje del avión más grande que opera habitualmente. Las categorías 1 y 2 cubren la aviación ligera (longitud de menos de 9 m y de 9 a menos de 12 m, respectivamente). El nivel de protección debe estar publicado en el AIP y no se aplica a todos los aeródromos."
+        ]
+      }
+    ],
+    "numbers": [
+      "TODA = TORA + CWY; ASDA = TORA + SWY; LDA = pista disponible desde el umbral",
+      "Zona libre de obstáculos: ≥ 150 m de ancho; longitud ≤ mitad de la TORA; pendiente ≤ 1,25 %",
+      "Designador: rumbo magnético / 10, redondeado (267° = 27)",
+      "Luces: borde blanco, umbral verde, final rojo, eje de calle verde, borde de calle azul",
+      "PAPI: 2 blancas y 2 rojas en la trayectoria",
+      "Letreros: rojo con blanco (obligatoria), amarillo con negro (información)"
+    ],
+    "traps": [
+      "El umbral desplazado reduce la LDA pero no la TORA ni la ASDA.",
+      "La zona libre de obstáculos se sobrevuela; no se rueda sobre ella. La zona de parada puede soportar un despegue interrumpido, pero no se despega desde ella.",
+      "En el PAPI, más rojo significa más bajo.",
+      "Las luces de borde de calle son azules y las de eje de calle, verdes; no al revés."
+    ],
+    "spain": [
+      "El AIP España, AD 2, publica para cada aeródromo las distancias declaradas, el balizamiento, las ayudas visuales y el nivel de salvamento y extinción."
+    ],
+    "sources": [
+      {
+        "title": "Anexo 14 de la OACI: Aeródromos"
+      },
+      {
+        "title": "AIP España, parte AD (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología: el circuito",
+        "href": "#/licencias/fraseologia"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "010.12.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué es la TORA?",
+      "options": [
+        "La longitud de pista disponible para aterrizar",
+        "La longitud de pista más la zona de parada",
+        "La longitud de pista declarada disponible y adecuada para la carrera de despegue",
+        "La longitud total de la franja"
+      ],
+      "correct": 2,
+      "why": "La TORA es la longitud de pista que el gestor declara disponible para la carrera de despegue.",
+      "whyNot": [
+        "Eso es la LDA.",
+        "Eso es la ASDA.",
+        null,
+        "La franja no se usa para declarar distancias."
+      ],
+      "ref": "Anexo 14, cap. 1"
+    },
+    {
+      "id": "010.12.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cómo se calcula la TODA?",
+      "options": [
+        "TORA más la zona libre de obstáculos",
+        "TORA más la zona de parada",
+        "LDA más la zona libre de obstáculos",
+        "Longitud de la franja menos el umbral desplazado"
+      ],
+      "correct": 0,
+      "why": "La TODA añade a la TORA la zona libre de obstáculos (CWY).",
+      "whyNot": [
+        null,
+        "Eso es la ASDA.",
+        "La LDA no interviene en las distancias de despegue.",
+        "No es la definición."
+      ],
+      "ref": "Anexo 14, cap. 1"
+    },
+    {
+      "id": "010.12.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cómo se calcula la ASDA?",
+      "options": [
+        "TORA más la zona libre de obstáculos",
+        "LDA más la zona de parada",
+        "TORA menos el umbral desplazado",
+        "TORA más la zona de parada"
+      ],
+      "correct": 3,
+      "why": "La ASDA es la TORA más la zona de parada: la pista que puedes usar para acelerar y parar.",
+      "whyNot": [
+        "Eso es la TODA.",
+        "La LDA no se usa en ese cálculo.",
+        "El umbral desplazado afecta a la LDA, no a la TORA.",
+        null
+      ],
+      "ref": "Anexo 14, cap. 1"
+    },
+    {
+      "id": "010.12.004",
+      "type": "calculo",
+      "level": 2,
+      "q": "Una pista tiene TORA de 1100 m, zona de parada de 100 m y zona libre de obstáculos de 150 m. ¿Cuánto vale la ASDA?",
+      "options": [
+        "1250 m",
+        "1200 m",
+        "1350 m",
+        "1100 m"
+      ],
+      "correct": 1,
+      "why": "ASDA = TORA + zona de parada = 1100 + 100 = 1200 m.",
+      "whyNot": [
+        "Es la TODA: TORA + zona libre de obstáculos.",
+        null,
+        "Sumas las dos prolongaciones, que no se combinan.",
+        "Es la TORA: olvidas la zona de parada."
+      ],
+      "ref": "Anexo 14, cap. 1"
+    },
+    {
+      "id": "010.12.005",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con los mismos datos (TORA 1100 m, zona de parada 100 m, zona libre de obstáculos 150 m), ¿cuánto vale la TODA?",
+      "options": [
+        "1250 m",
+        "1200 m",
+        "1350 m",
+        "1100 m"
+      ],
+      "correct": 0,
+      "why": "TODA = TORA + zona libre de obstáculos = 1100 + 150 = 1250 m.",
+      "whyNot": [
+        null,
+        "Es la ASDA.",
+        "Sumas las dos prolongaciones, que no se combinan.",
+        "Es la TORA."
+      ],
+      "ref": "Anexo 14, cap. 1"
+    },
+    {
+      "id": "010.12.006",
+      "type": "calculo",
+      "level": 2,
+      "q": "Una pista de 1100 m tiene un umbral desplazado de 200 m en la cabecera de aterrizaje. ¿Cuánto vale la LDA?",
+      "options": [
+        "1100 m",
+        "1300 m",
+        "900 m",
+        "200 m"
+      ],
+      "correct": 2,
+      "why": "LDA = 1100 − 200 = 900 m. La parte desplazada se puede usar para despegar y rodar, no para tomar tierra.",
+      "whyNot": [
+        "Es la longitud total: olvidas el umbral desplazado.",
+        "Sumas el desplazamiento en lugar de restarlo.",
+        null,
+        "Es el desplazamiento, no la LDA."
+      ],
+      "ref": "Anexo 14, cap. 3"
+    },
+    {
+      "id": "010.12.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué distancia declarada reduce un umbral desplazado?",
+      "options": [
+        "La TORA",
+        "La LDA",
+        "La ASDA",
+        "La TODA"
+      ],
+      "correct": 1,
+      "why": "El umbral desplazado reduce la distancia disponible para aterrizar (LDA); para despegar se usa la pista completa.",
+      "whyNot": [
+        "Se puede despegar desde la parte desplazada.",
+        null,
+        "No la reduce.",
+        "No la reduce."
+      ],
+      "ref": "Anexo 14, cap. 3"
+    },
+    {
+      "id": "010.12.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Para qué sirve la zona de parada (stopway)?",
+      "options": [
+        "Para aterrizar con viento cruzado",
+        "Para que el avión inicie su ascenso inicial",
+        "Para estacionar aeronaves en emergencia",
+        "Para detener un avión en un despegue interrumpido"
+      ],
+      "correct": 3,
+      "why": "La zona de parada soporta un despegue interrumpido; no está prevista para despegar ni aterrizar.",
+      "whyNot": [
+        "No se aterriza en ella.",
+        "Eso lo permite la zona libre de obstáculos.",
+        "No es su función.",
+        null
+      ],
+      "ref": "Anexo 14, cap. 3"
+    },
+    {
+      "id": "010.12.009",
+      "type": "regla",
+      "level": 3,
+      "q": "¿Qué ancho mínimo debe tener una zona libre de obstáculos (clearway)?",
+      "options": [
+        "60 m",
+        "300 m",
+        "150 m",
+        "El ancho de la pista"
+      ],
+      "correct": 2,
+      "why": "La zona libre de obstáculos tiene al menos 150 m de ancho, centrada en la prolongación del eje, y como máximo la mitad de la TORA de longitud.",
+      "whyNot": [
+        "No es la cifra de Anexo 14.",
+        "Es el doble.",
+        null,
+        "Eso corresponde a la zona de parada."
+      ],
+      "ref": "Anexo 14, cap. 3"
+    },
+    {
+      "id": "010.12.010",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Qué designador corresponde a una pista de rumbo magnético 267°?",
+      "options": [
+        "27",
+        "26",
+        "267",
+        "09"
+      ],
+      "correct": 0,
+      "why": "El designador es el rumbo magnético visto desde la aproximación, redondeado a la decena y dividido por 10: 267° → 270° → 27.",
+      "whyNot": [
+        null,
+        "267 redondeado a la decena da 270, es decir, 27.",
+        "El designador se da en decenas.",
+        "Corresponde a una pista orientada al este."
+      ],
+      "ref": "Anexo 14, cap. 5"
+    },
+    {
+      "id": "010.12.011",
+      "type": "concepto",
+      "level": 1,
+      "q": "En un aeródromo con tres pistas paralelas, ¿cómo se distinguen?",
+      "options": [
+        "Con números distintos",
+        "Con colores de las marcas",
+        "Con la longitud de pista",
+        "Con L, C y R tras el número"
+      ],
+      "correct": 3,
+      "why": "Las pistas paralelas llevan L, C o R: izquierda, centro y derecha.",
+      "whyNot": [
+        "El número es el mismo; solo cambia la letra.",
+        "Todas son blancas.",
+        "No es una forma de designación.",
+        null
+      ],
+      "ref": "Anexo 14, cap. 5"
+    },
+    {
+      "id": "010.12.012",
+      "type": "lectura",
+      "level": 2,
+      "q": "Una barra transversal blanca con flechas dirigidas hacia ella a lo largo del eje de la pista indica:",
+      "options": [
+        "Una pista cerrada",
+        "Un umbral desplazado",
+        "Un punto de espera de pista",
+        "Una zona de parada"
+      ],
+      "correct": 1,
+      "why": "Las flechas y la barra transversal señalan el umbral desplazado.",
+      "whyNot": [
+        "Una pista cerrada se marca con una cruz.",
+        null,
+        "El punto de espera se marca con rayas en la calle.",
+        "La zona de parada se marca con chevrones."
+      ],
+      "ref": "Anexo 14, cap. 5"
+    },
+    {
+      "id": "010.12.013",
+      "type": "concepto",
+      "level": 1,
+      "q": "Una cruz blanca sobre una pista significa que:",
+      "options": [
+        "La pista está cerrada",
+        "La pista está en uso para despegues",
+        "Es una pista de césped",
+        "Es un punto de espera de pista"
+      ],
+      "correct": 0,
+      "why": "La cruz sobre una pista o parte de ella indica que está cerrada.",
+      "whyNot": [
+        null,
+        "No indica uso.",
+        "No indica el tipo de superficie.",
+        "El punto de espera es un conjunto de rayas."
+      ],
+      "ref": "Anexo 14, cap. 5"
+    },
+    {
+      "id": "010.12.014",
+      "type": "lectura",
+      "level": 2,
+      "q": "Te acercas a una pista por una calle de rodaje y encuentras el punto de espera con rayas continuas y discontinuas. ¿Dónde están las continuas?",
+      "options": [
+        "Del lado de la pista",
+        "Entre las dos discontinuas",
+        "Del lado donde esperas, más lejos de la pista",
+        "No hay rayas continuas en el patrón A"
+      ],
+      "correct": 2,
+      "why": "En el punto de espera (patrón A), las rayas continuas están del lado de la calle donde se espera y no se rebasan sin autorización.",
+      "whyNot": [
+        "Ahí están las discontinuas.",
+        "No hay esa disposición.",
+        null,
+        "El patrón A tiene dos continuas y dos discontinuas."
+      ],
+      "ref": "Anexo 14, cap. 5"
+    },
+    {
+      "id": "010.12.015",
+      "type": "regla",
+      "level": 1,
+      "q": "¿De qué color son las luces de umbral de pista?",
+      "options": [
+        "Blancas",
+        "Verdes",
+        "Rojas",
+        "Azules"
+      ],
+      "correct": 1,
+      "why": "Las luces del umbral son verdes y las del final de pista, rojas.",
+      "whyNot": [
+        "Son las del borde de pista.",
+        null,
+        "Son las del final de pista.",
+        "Son las del borde de calle de rodaje."
+      ],
+      "ref": "Anexo 14, cap. 5"
+    },
+    {
+      "id": "010.12.016",
+      "type": "regla",
+      "level": 1,
+      "q": "Las luces de borde de una calle de rodaje son:",
+      "options": [
+        "Verdes",
+        "Blancas",
+        "Amarillas",
+        "Azules"
+      ],
+      "correct": 3,
+      "why": "El borde de calle de rodaje es azul y el eje, verde.",
+      "whyNot": [
+        "Son las del eje de calle.",
+        "Son las del borde de pista.",
+        "No son el color de las luces de calle.",
+        null
+      ],
+      "ref": "Anexo 14, cap. 5"
+    },
+    {
+      "id": "010.12.017",
+      "type": "regla",
+      "level": 1,
+      "q": "Las luces de eje de una calle de rodaje son:",
+      "options": [
+        "Azules",
+        "Rojas",
+        "Verdes",
+        "Blancas"
+      ],
+      "correct": 2,
+      "why": "Las luces de eje de calle de rodaje son verdes.",
+      "whyNot": [
+        "Son las del borde.",
+        "Son la barra de parada.",
+        null,
+        "Son el eje de pista."
+      ],
+      "ref": "Anexo 14, cap. 5"
+    },
+    {
+      "id": "010.12.018",
+      "type": "lectura",
+      "level": 2,
+      "q": "En la aproximación ves en el PAPI dos luces blancas y dos rojas. ¿Qué indica?",
+      "options": [
+        "Estás en la trayectoria de aproximación",
+        "Estás algo alto",
+        "Estás algo bajo",
+        "Estás demasiado bajo"
+      ],
+      "correct": 0,
+      "why": "Con 2 blancas y 2 rojas estás en la pendiente nominal.",
+      "whyNot": [
+        null,
+        "Algo alto es 3 blancas y 1 roja.",
+        "Algo bajo es 1 blanca y 3 rojas.",
+        "Demasiado bajo son 4 rojas."
+      ],
+      "ref": "Anexo 14, cap. 5"
+    },
+    {
+      "id": "010.12.019",
+      "type": "lectura",
+      "level": 2,
+      "q": "En la aproximación ves una luz blanca y tres rojas en el PAPI. ¿Qué haces?",
+      "options": [
+        "Estás algo alto: reduces el régimen de descenso",
+        "Estás en la trayectoria: continúas igual",
+        "Estás demasiado alto: asciendes",
+        "Estás algo bajo: corriges subiendo hacia la trayectoria"
+      ],
+      "correct": 3,
+      "why": "Más rojo indica que estás por debajo de la trayectoria.",
+      "whyNot": [
+        "Algo alto es 3 blancas y 1 roja.",
+        "En la trayectoria son 2 y 2.",
+        "Demasiado alto son 4 blancas.",
+        null
+      ],
+      "ref": "Anexo 14, cap. 5"
+    },
+    {
+      "id": "010.12.020",
+      "type": "lectura",
+      "level": 2,
+      "q": "Ves cuatro luces rojas en el PAPI. ¿Qué indica?",
+      "options": [
+        "Estás demasiado alto",
+        "Estás demasiado bajo",
+        "Estás en la trayectoria",
+        "El PAPI está averiado"
+      ],
+      "correct": 1,
+      "why": "Cuatro rojas indican que estás muy por debajo de la pendiente.",
+      "whyNot": [
+        "Demasiado alto son 4 blancas.",
+        null,
+        "En la trayectoria son 2 y 2.",
+        "No es lo que indican 4 rojas."
+      ],
+      "ref": "Anexo 14, cap. 5"
+    },
+    {
+      "id": "010.12.021",
+      "type": "concepto",
+      "level": 1,
+      "q": "Un letrero de fondo rojo con inscripción blanca es:",
+      "options": [
+        "Un letrero de instrucción obligatoria",
+        "Un letrero de información",
+        "Un letrero de localización",
+        "Un letrero de destino"
+      ],
+      "correct": 0,
+      "why": "Los letreros de instrucción obligatoria son blancos sobre rojo.",
+      "whyNot": [
+        null,
+        "Los de información son amarillos con inscripción negra.",
+        "Los de localización son negros con inscripción amarilla.",
+        "Los de destino son amarillos."
+      ],
+      "ref": "Anexo 14, cap. 5"
+    },
+    {
+      "id": "010.12.022",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un letrero amarillo con inscripción negra es:",
+      "options": [
+        "Un letrero de instrucción obligatoria",
+        "Un letrero de pista cerrada",
+        "Un letrero de información de dirección o destino",
+        "Un letrero de zona de parada"
+      ],
+      "correct": 2,
+      "why": "Los de dirección y destino son amarillos con inscripción negra.",
+      "whyNot": [
+        "Esos son blancos sobre rojo.",
+        "La pista cerrada se indica con cruz.",
+        null,
+        "No es su función."
+      ],
+      "ref": "Anexo 14, cap. 5"
+    },
+    {
+      "id": "010.12.023",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cómo se señala de noche una zona fuera de servicio en el área de maniobras?",
+      "options": [
+        "Con luces verdes intermitentes",
+        "Con luces rojas fijas",
+        "Con luces azules fijas",
+        "No se señala de noche"
+      ],
+      "correct": 1,
+      "why": "Las zonas fuera de servicio se marcan con conos, banderas o paneles y, de noche, con luces rojas fijas.",
+      "whyNot": [
+        "No es el color.",
+        null,
+        "Son para el borde de calle.",
+        "Se señala siempre."
+      ],
+      "ref": "Anexo 14, cap. 7"
+    },
+    {
+      "id": "010.12.024",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué indica el faro de aeródromo de destellos blancos y verdes alternados?",
+      "options": [
+        "Un aeródromo militar",
+        "Una pista cerrada",
+        "Un hidroaeródromo",
+        "Un aeródromo terrestre civil"
+      ],
+      "correct": 3,
+      "why": "Los destellos alternados de blanco y verde son los del faro de un aeródromo civil terrestre.",
+      "whyNot": [
+        "No es su significado.",
+        "Se indica con cruz.",
+        "Es blanco y amarillo.",
+        null
+      ],
+      "ref": "Anexo 14, cap. 5"
+    },
+    {
+      "id": "010.12.025",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Qué factor determina la categoría de salvamento y extinción de incendios (RFF) de un aeródromo?",
+      "options": [
+        "El número de pistas del aeródromo",
+        "La altitud del aeródromo sobre el nivel del mar",
+        "La longitud total y la anchura del fuselaje del avión más grande que opera habitualmente",
+        "El número de operaciones diarias"
+      ],
+      "correct": 2,
+      "why": "La categoría RFF se basa en las dimensiones del avión más grande que usa el aeródromo con regularidad.",
+      "whyNot": [
+        "Las pistas no determinan la categoría.",
+        "La altitud no interviene.",
+        null,
+        "El volumen de tráfico no define la categoría."
+      ],
+      "ref": "Anexo 14, cap. 9"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.010.12.01",
+      "front": "TODA",
+      "back": "TORA + zona libre de obstáculos"
+    },
+    {
+      "id": "c.010.12.02",
+      "front": "ASDA",
+      "back": "TORA + zona de parada"
+    },
+    {
+      "id": "c.010.12.03",
+      "front": "LDA y umbral desplazado",
+      "back": "El umbral desplazado reduce la LDA; no la TORA"
+    },
+    {
+      "id": "c.010.12.04",
+      "front": "Zona libre de obstáculos",
+      "back": "≥ 150 m de ancho; ≤ mitad de la TORA; se sobrevuela"
+    },
+    {
+      "id": "c.010.12.05",
+      "front": "Designador de pista",
+      "back": "Rumbo magnético / 10, redondeado (267° = 27)"
+    },
+    {
+      "id": "c.010.12.06",
+      "front": "Colores de luces de pista",
+      "back": "Borde blanco, umbral verde, final rojo"
+    },
+    {
+      "id": "c.010.12.07",
+      "front": "Colores de luces de rodadura",
+      "back": "Eje verde, borde azul"
+    },
+    {
+      "id": "c.010.12.08",
+      "front": "PAPI correcto",
+      "back": "2 blancas y 2 rojas"
+    },
+    {
+      "id": "c.010.12.09",
+      "front": "Letrero rojo con blanco",
+      "back": "Instrucción obligatoria"
+    }
+  ]
+}

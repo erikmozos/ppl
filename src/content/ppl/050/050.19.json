@@ -1,0 +1,634 @@
+{
+ "lesson": {
+  "title": "Mensajes y servicios",
+  "summary": "Cómo leer METAR, SPECI, TAF y TREND grupo a grupo, y qué son el SIGMET, el AIRMET, el GAMET, los avisos de aeródromo, el ATIS, el VOLMET, el portal AMA, las oficinas meteorológicas y el WAFS, con ejemplos descifrados.",
+  "objectives": [
+   "Descifrar un METAR y un SPECI grupo a grupo",
+   "Interpretar un TAF con sus grupos BECMG, TEMPO, FM y PROB",
+   "Distinguir TREND, SIGMET, AIRMET y GAMET por validez y alcance",
+   "Saber qué dice el ATIS y cómo se diferencia su viento del del METAR",
+   "Conocer VOLMET, avisos de aeródromo, portal AMA, oficinas meteorológicas y WAFS",
+   "Usar la información en la planificación: techo, visibilidad, QNH, tendencia"
+  ],
+  "sections": [
+   {
+    "title": "METAR: el informe de observación",
+    "text": [
+     "El **METAR** es el informe rutinario de observación de un aeródromo. En España se emite **cada 30 minutos** (a las :00 y las :30), y se completa con un **TREND** de dos horas. Cuando hay un cambio significativo entre dos METAR se emite un **SPECI** (informe especial), con el mismo formato. Los grupos van siempre en el mismo orden y los que no aplican se omiten.",
+     "El **viento** del METAR es la media de los 10 minutos anteriores y se da respecto al **norte verdadero**. Si no hay dirección predominante aparece **VRB** (por ejemplo, VRB03KT) y si no hay viento, **00000KT**. La **altura de las nubes** es sobre el nivel del aeródromo (AGL). El **techo** (ceiling) es la altura de la capa más baja de **BKN u OVC**; FEW y SCT no son techo. Si el cielo está oculto por niebla, se da **VV** y la visibilidad vertical (VV002 = 200 ft).",
+     "**CAVOK** (se pronuncia «kavok») sustituye a visibilidad, tiempo presente y nubes cuando se cumple todo: visibilidad de **10 km o más**, **ninguna nube por debajo de 5000 ft** (o de la altitud mínima de sector más alta, si es mayor), **ni CB ni TCU**, y ningún fenómeno significativo."
+    ],
+    "table": {
+     "caption": "Grupos del METAR",
+     "head": [
+      "Grupo",
+      "Ejemplo",
+      "Significado"
+     ],
+     "rows": [
+      [
+       "Indicador y hora",
+       "LEMD 081030Z",
+       "Madrid-Barajas; día 8, 10:30 UTC"
+      ],
+      [
+       "Viento",
+       "22012G25KT 190V250",
+       "De 220° verdadero, 12 kt de media en 10 min, con rachas de 25 kt (G si la racha supera la media en 10 kt o más); variable entre 190° y 250° (se indica si la variación es de 60° o más)"
+      ],
+      [
+       "Visibilidad",
+       "6000",
+       "6000 m; 9999 = 10 km o más"
+      ],
+      [
+       "RVR",
+       "R32L/0800",
+       "Alcance visual en pista 32L, 800 m; solo si la visibilidad es menor de 1500 m"
+      ],
+      [
+       "Tiempo presente",
+       "-RA, +TSRA, VCTS, FZFG, BR",
+       "- ligero, sin signo moderado, + fuerte; VC en las proximidades"
+      ],
+      [
+       "Nubes",
+       "SCT015 BKN030",
+       "Cantidad y altura en cientos de ft AGL: FEW 1-2 octas, SCT 3-4, BKN 5-7, OVC 8; CB o TCU añadidos si los hay"
+      ],
+      [
+       "Temperatura y rocío",
+       "18/14, M02/M04",
+       "°C; la M indica negativo"
+      ],
+      [
+       "QNH",
+       "Q1008",
+       "Reglaje de presión en hPa"
+      ],
+      [
+       "Tiempo reciente",
+       "RERA",
+       "Fenómeno reciente (última hora)"
+      ],
+      [
+       "Cizalladura",
+       "WS RWY 08",
+       "Cizalladura notificada en la pista"
+      ],
+      [
+       "TREND",
+       "NOSIG, BECMG, TEMPO",
+       "Evolución prevista en las 2 h siguientes"
+      ]
+     ],
+     "src": "OACI Anexo 3; AEMET AU-GUI-0102"
+    },
+    "examples": [
+     {
+      "q": "LEMD 081030Z 22012G25KT 190V250 6000 -RA SCT015 BKN030 18/14 Q1008 NOSIG",
+      "a": "Madrid-Barajas, día 8, 10:30 UTC. Viento de 220° (verdadero) a 12 kt con rachas de 25, variable entre 190° y 250°. Visibilidad 6 km con lluvia ligera. Nubes dispersas a 1500 ft y cielo cubierto en parte (BKN) a 3000 ft: el techo es 3000 ft AGL. Temperatura 18 °C y rocío 14 °C. QNH 1008. Sin cambios significativos en 2 h. Base de cúmulos aproximada: (18 − 14) × 400 = 1600 ft."
+     },
+     {
+      "q": "LEVT 110730Z 02003KT 0400 R12/0600 FG VV002 03/03 Q1030 BECMG 1200 FG",
+      "a": "Vitoria, día 11, 07:30 UTC. Viento 020° 3 kt. Visibilidad 400 m con RVR 600 m en la pista 12, niebla (FG) y cielo oculto con visibilidad vertical de 200 ft. Temperatura y rocío iguales (3/3): saturado. QNH 1030. En 2 h, tendencia a mejorar la visibilidad hasta 1200 m en niebla."
+     }
+    ]
+   },
+   {
+    "title": "Descifrador de METAR y TAF",
+    "text": [
+     "Pega un mensaje en la calculadora y comprueba su lectura grupo a grupo. Úsalo para repasar, no para sustituir el aprendizaje: en el examen no hay herramienta."
+    ],
+    "figure": "calc:metar"
+   },
+   {
+    "title": "TAF: la previsión de aeródromo",
+    "text": [
+     "El **TAF** es la previsión para un aeródromo, de **24 o 30 horas** de validez, emitido cada 6 horas (00, 06, 12 y 18 UTC), con un TAF corto de 9 horas en algunos aeródromos. Tiene el mismo formato de viento, visibilidad y nubes que el METAR, pero con **grupos de cambio**. La validez va como DDHH/DDHH: 0906/1006 es de las 06 UTC del día 9 a las 06 UTC del día 10."
+    ],
+    "bullets": [
+     "**BECMG** (becoming): el cambio gradual, regular, ocurre dentro del periodo indicado (normalmente de 2 h, como máximo 4 h) y las nuevas condiciones **se quedan**.",
+     "**TEMPO**: fluctuaciones **temporales** durante el periodo indicado; cada una dura **menos de 1 hora** y entre todas suman **menos de la mitad** del periodo. No cambian la situación base.",
+     "**FM** (from): cambio rápido a una hora concreta. Sustituye **todas** las condiciones anteriores desde ese momento.",
+     "**PROB30 / PROB40**: probabilidad del 30 % o el 40 % de que ocurra lo indicado; se usa con TEMPO."
+    ],
+    "examples": [
+     {
+      "q": "TAF LEMD 090500Z 0906/1006 22010KT 9999 SCT040 TEMPO 0912/0916 3000 TSRA BKN015CB BECMG 0918/0920 VRB03KT",
+      "a": "Madrid, emitido el día 9 a las 05:00 UTC, válido de las 06 del día 9 a las 06 del día 10. Base: viento 220° a 10 kt, visibilidad 10 km o más y nubes dispersas a 4000 ft. De las 12 a las 16 UTC, fluctuaciones temporales de menos de una hora cada una (y en total menos de 2 h) con visibilidad 3000 m, tormenta con lluvia y cielo cubierto en parte a 1500 ft con CB. Entre las 18 y las 20 UTC el viento pasa a variable de 3 kt y se queda así."
+     }
+    ],
+    "verify": true
+   },
+   {
+    "title": "TREND, SIGMET, AIRMET y GAMET",
+    "text": [
+     "El **TREND** es una previsión de aterrizaje de **2 horas** que acompaña al METAR: **NOSIG** (sin cambios significativos), **BECMG** (cambio) o **TEMPO** (temporal), con FM (desde), TL (hasta) o AT (a las). Los **SIGMET** informan de fenómenos significativos en ruta (tormentas, ciclones tropicales, turbulencia y engelamiento severos, ondas de montaña, ceniza volcánica) para la FIR; su validez es de **hasta 4 horas** y de **6 horas** para ceniza o ciclón tropical. En España los emite la **oficina de vigilancia meteorológica de AEMET (LEVA)** para las FIR de Madrid y Barcelona y **GCGC** para Canarias.",
+     "El **AIRMET** informa de fenómenos de intensidad moderada que afectan a vuelos a baja cota (visibilidad reducida, techos bajos, tormentas aisladas, turbulencia y engelamiento moderados); validez de hasta 4 horas. El **GAMET** es un pronóstico de área para vuelos a **baja cota (por debajo de FL150)**, emitido cada 6 horas y válido 6 horas, con una **sección I** de fenómenos peligrosos y una **sección II** de pronóstico (centros de presión, nubes, nivel de congelación FZLVL, QNH mínimo). El GAMET reemplaza al AIRMET en las zonas en las que se emite."
+    ]
+   },
+   {
+    "title": "ATIS, VOLMET, avisos y oficinas",
+    "text": [
+     "El **ATIS** (servicio automático de información terminal) es una grabación continua, en una frecuencia VHF propia, con la información rutinaria del aeródromo: pista en uso, **viento en grados magnéticos** (a diferencia del METAR, en verdadero), visibilidad, nubes, temperatura, QNH y avisos. Se actualiza cada 30 minutos o ante cambios importantes y se identifica con una **letra** del alfabeto (ALFA, BRAVO…); debes decir al ATC «tengo la información Bravo». El **VOLMET** es una emisión continua de METAR y SIGMET de varios aeródromos, en HF o VHF, para pilotos en ruta.",
+     "Los **avisos de aeródromo** informan de condiciones que pueden afectar a las aeronaves en tierra y en el aeródromo (viento fuerte, tormenta, nieve, helada, ceniza). En España no hay aviso de cizalladura salvo en Tenerife Sur, donde se difunde como WS en el METAR.",
+     "Cada aeródromo tiene una **oficina meteorológica** (OMA) que observa y emite sus informes, y la **oficina de vigilancia meteorológica** (MWO) vigila la FIR y emite SIGMET. El **WAFS** (sistema mundial de pronósticos de área) proporciona mapas **SIGWX de alto nivel** (FL250 a FL630) y mallas de viento y temperatura; los centros son Londres y Washington. El piloto consulta todo ello a través del **portal AMA de AEMET**, que requiere registro previo."
+    ],
+    "note": {
+     "kind": "es",
+     "text": "El viento del ATIS y de la torre es magnético; el del METAR, TAF y pronósticos es verdadero. Con una variación de 1° W en Madrid, un METAR de 270° equivale a 271° magnético, diferencia pequeña pero que no hay que confundir en el examen."
+    }
+   }
+  ],
+  "numbers": [
+   "METAR cada 30 min; TREND de 2 h; TAF de 24 o 30 h",
+   "Racha (G) si supera la media en 10 kt o más; variación de dirección si es de 60° o más",
+   "RVR si la visibilidad es menor de 1500 m; 9999 = 10 km o más",
+   "FEW 1-2, SCT 3-4, BKN 5-7, OVC 8 octas; techo = primera capa BKN u OVC",
+   "CAVOK: 10 km o más, sin nubes bajo 5000 ft ni CB/TCU",
+   "TEMPO: menos de 1 h cada vez y menos de la mitad del periodo; BECMG: cambio que se queda",
+   "SIGMET: hasta 4 h (6 h cenizas y ciclón tropical); AIRMET: hasta 4 h; GAMET: cada 6 h, válido 6 h, bajo FL150",
+   "SIGMET en España: LEVA para Madrid y Barcelona; GCGC para Canarias",
+   "METAR: viento verdadero; ATIS y torre: viento magnético"
+  ],
+  "traps": [
+   "TEMPO no es un cambio permanente: BECMG sí.",
+   "La altura de las nubes en el METAR es AGL; en el SIGWX, AMSL.",
+   "Solo BKN y OVC cuentan como techo.",
+   "El viento del METAR es verdadero y el del ATIS, magnético.",
+   "FM sustituye todas las condiciones anteriores, no solo las del grupo anterior.",
+   "En España no hay aviso de cizalladura salvo en Tenerife Sur."
+  ],
+  "spain": [
+   "Productos de AEMET: METAR, SPECI, TAF, TREND, SIGMET (LEVA y GCGC), AIRMET, GAMET, SIGWX de baja cota y avisos de aeródromo, accesibles en el portal AMA.",
+   "Salvo en Tenerife Sur, no hay aviso de cizalladura; se informa como WS en el METAR."
+  ],
+  "sources": [
+   {
+    "title": "AEMET, Guía de productos aeronáuticos AU-GUI-0102",
+    "url": "https://www.aemet.es/documentos/es/conocermas/aeronautica/AU-GUI-0102.pdf"
+   },
+   {
+    "title": "OACI, Anexo 3: servicio meteorológico para la navegación aérea internacional"
+   },
+   {
+    "title": "Reglamento (UE) 2017/373 y SERA.8005: información meteorológica"
+   },
+   {
+    "title": "AEMET, portal AMA: meteorología aeronáutica",
+    "url": "https://ama.aemet.es/"
+   }
+  ],
+  "id": "050.19",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "050.19.001",
+   "type": "lectura",
+   "level": 1,
+   "q": "En el METAR indicado, el techo de nubes es:",
+   "data": "LEMD 081030Z 22012G25KT 190V250 6000 -RA SCT015 BKN030 18/14 Q1008 NOSIG",
+   "options": [
+    "1500 ft AMSL",
+    "No hay techo",
+    "3000 ft AGL",
+    "1500 ft AGL"
+   ],
+   "correct": 2,
+   "why": "El techo es la altura de la capa más baja de BKN u OVC: BKN030 = 3000 ft AGL.",
+   "whyNot": [
+    "La altura del METAR es sobre el aeródromo, no sobre el nivel del mar.",
+    "Hay una capa BKN, que sí es techo.",
+    null,
+    "Es la altura de la capa SCT, que no cuenta como techo."
+   ],
+   "ref": "AEMET AU-GUI-0102"
+  },
+  {
+   "id": "050.19.002",
+   "type": "lectura",
+   "level": 2,
+   "q": "En ese mismo METAR, el viento es:",
+   "data": "LEMD 081030Z 22012G25KT 190V250 6000 -RA SCT015 BKN030 18/14 Q1008 NOSIG",
+   "options": [
+    "220° verdadero, 12 kt con rachas de 25 kt",
+    "220° magnético, 25 kt",
+    "12° a 25 kt",
+    "190° a 250°, 12 kt siempre"
+   ],
+   "correct": 0,
+   "why": "22012G25KT: dirección 220° verdadera, 12 kt de media y rachas de 25 kt; variable entre 190° y 250°.",
+   "whyNot": [
+    null,
+    "Los METAR dan viento verdadero, no magnético.",
+    "No son grados.",
+    "La variación es un rango alrededor de la media."
+   ],
+   "ref": "AEMET AU-GUI-0102"
+  },
+  {
+   "id": "050.19.003",
+   "type": "regla",
+   "level": 1,
+   "q": "En un METAR, «9999» en el grupo de visibilidad significa:",
+   "options": [
+    "Visibilidad cero",
+    "10 km o más",
+    "99,99 km",
+    "9999 m exactos"
+   ],
+   "correct": 1,
+   "why": "9999 indica visibilidad de 10 km o más.",
+   "whyNot": [
+    "La visibilidad cero se da como 0000.",
+    null,
+    "No es una cantidad en km.",
+    "Es un indicador de 10 km o más, no un valor exacto."
+   ],
+   "ref": "OACI Anexo 3"
+  },
+  {
+   "id": "050.19.004",
+   "type": "regla",
+   "level": 2,
+   "q": "CAVOK exige, además de visibilidad de 10 km o más y sin tiempo significativo:",
+   "options": [
+    "Sin viento",
+    "Sin nubes por debajo de 5000 ft ni CB/TCU",
+    "Sin nubes en todo el cielo",
+    "Cielo con menos de 3 octas"
+   ],
+   "correct": 1,
+   "why": "CAVOK: 10 km o más, sin nubes bajo 5000 ft (o MSA) ni CB/TCU y sin fenómenos significativos.",
+   "whyNot": [
+    "No limita el viento.",
+    null,
+    "Pueden existir nubes sobre 5000 ft.",
+    "No exige limitar la cantidad de nubes altas."
+   ],
+   "ref": "OACI Anexo 3"
+  },
+  {
+   "id": "050.19.005",
+   "type": "regla",
+   "level": 1,
+   "q": "Cuatro octas de nubes se codifican como:",
+   "options": [
+    "OVC",
+    "BKN",
+    "FEW",
+    "SCT"
+   ],
+   "correct": 3,
+   "why": "SCT son 3-4 octas; FEW 1-2; BKN 5-7; OVC 8.",
+   "whyNot": [
+    "OVC es de 8 octas.",
+    "BKN es de 5 a 7 octas.",
+    "FEW es de 1 a 2 octas.",
+    null
+   ],
+   "ref": "OACI Anexo 3"
+  },
+  {
+   "id": "050.19.006",
+   "type": "lectura",
+   "level": 2,
+   "q": "En el METAR siguiente, VV002 significa:",
+   "data": "LEVT 110730Z 02003KT 0400 R12/0600 FG VV002 03/03 Q1030",
+   "options": [
+    "Cielo oculto con visibilidad vertical de 200 ft",
+    "Visibilidad horizontal de 200 m",
+    "Variación de viento de 2°",
+    "Visibilidad vertical de 2000 ft"
+   ],
+   "correct": 0,
+   "why": "VV es visibilidad vertical, con el cielo oculto por niebla; 002 son 200 ft.",
+   "whyNot": [
+    null,
+    "La visibilidad horizontal es 0400.",
+    "La variación se expresa con V entre dos direcciones.",
+    "Son centenas de ft: 002 = 200 ft."
+   ],
+   "ref": "OACI Anexo 3"
+  },
+  {
+   "id": "050.19.007",
+   "type": "calculo",
+   "level": 2,
+   "q": "Con temperatura 18 °C y punto de rocío 14 °C (METAR), la base aproximada de los cúmulos es:",
+   "options": [
+    "4000 ft AGL",
+    "1600 ft AGL",
+    "400 ft AGL",
+    "8000 ft AGL"
+   ],
+   "correct": 1,
+   "why": "(18 − 14) × 400 = 1600 ft.",
+   "whyNot": [
+    "Multiplica 10 por 400.",
+    null,
+    "Resulta de multiplicar por 100.",
+    "Multiplica 20 por 400."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.19.008",
+   "type": "lectura",
+   "level": 3,
+   "q": "En el TAF indicado, «TEMPO 0912/0916 3000 TSRA BKN015CB» significa:",
+   "data": "TAF LEMD 090500Z 0906/1006 22010KT 9999 SCT040 TEMPO 0912/0916 3000 TSRA BKN015CB",
+   "options": [
+    "Una probabilidad del 30 % de tormenta",
+    "Cuatro horas seguidas de tormenta",
+    "Entre las 12 y las 16 UTC del día 9, periodos de menos de 1 h cada uno y en total menos de la mitad del intervalo, con tormenta",
+    "Un cambio permanente a tormenta a las 12 UTC"
+   ],
+   "correct": 2,
+   "why": "TEMPO indica fluctuaciones temporales: cada una dura menos de 1 h y en total menos de la mitad del periodo.",
+   "whyNot": [
+    "Eso es PROB30.",
+    "TEMPO no describe una condición continua.",
+    null,
+    "Eso es BECMG."
+   ],
+   "ref": "AEMET AU-GUI-0102"
+  },
+  {
+   "id": "050.19.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un TAF, BECMG indica:",
+   "options": [
+    "Un cambio gradual cuyas nuevas condiciones se mantienen",
+    "Una probabilidad de cambio",
+    "Una fluctuación temporal",
+    "Un cambio brusco a una hora concreta"
+   ],
+   "correct": 0,
+   "why": "BECMG describe una transición, normalmente de 2 h (máximo 4 h), tras la que persisten las nuevas condiciones.",
+   "whyNot": [
+    null,
+    "Es PROB.",
+    "Es TEMPO.",
+    "Es FM."
+   ],
+   "ref": "OACI Anexo 3"
+  },
+  {
+   "id": "050.19.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un TAF, el grupo FM:",
+   "options": [
+    "Solo cambia el viento",
+    "Indica probabilidad",
+    "Es una fluctuación breve",
+    "Sustituye todas las condiciones anteriores desde esa hora"
+   ],
+   "correct": 3,
+   "why": "FM (from) es un cambio rápido: desde esa hora rigen las condiciones nuevas y se descartan las anteriores.",
+   "whyNot": [
+    "Sustituye todo, no solo el viento.",
+    "Es PROB.",
+    "Es TEMPO.",
+    null
+   ],
+   "ref": "OACI Anexo 3"
+  },
+  {
+   "id": "050.19.011",
+   "type": "regla",
+   "level": 1,
+   "q": "El TREND que acompaña al METAR tiene una validez de:",
+   "options": [
+    "2 horas",
+    "24 horas",
+    "6 horas",
+    "30 minutos"
+   ],
+   "correct": 0,
+   "why": "El TREND es una previsión de aterrizaje de 2 horas.",
+   "whyNot": [
+    null,
+    "Es la del TAF.",
+    "Es la del GAMET.",
+    "Es la periodicidad del METAR."
+   ],
+   "ref": "AEMET AU-GUI-0102"
+  },
+  {
+   "id": "050.19.012",
+   "type": "regla",
+   "level": 2,
+   "q": "Un SIGMET que no es de ceniza volcánica ni de ciclón tropical tiene una validez máxima de:",
+   "options": [
+    "2 horas",
+    "6 horas",
+    "4 horas",
+    "12 horas"
+   ],
+   "correct": 2,
+   "why": "Hasta 4 h; 6 h para ceniza volcánica y ciclón tropical.",
+   "whyNot": [
+    "Es insuficiente.",
+    "Es la de ceniza y ciclón tropical.",
+    null,
+    "Es excesiva."
+   ],
+   "ref": "OACI Anexo 3"
+  },
+  {
+   "id": "050.19.013",
+   "type": "concepto",
+   "level": 2,
+   "es": true,
+   "q": "En España, los SIGMET de las FIR de Madrid y Barcelona los emite:",
+   "options": [
+    "El ATC de cada torre",
+    "LEVA, y GCGC para Canarias",
+    "ENAIRE",
+    "AESA"
+   ],
+   "correct": 1,
+   "why": "La oficina de vigilancia de AEMET (LEVA) para Madrid y Barcelona y GCGC para Canarias.",
+   "whyNot": [
+    "La torre no emite SIGMET.",
+    null,
+    "Presta servicios de tránsito aéreo.",
+    "No emite productos meteorológicos."
+   ],
+   "ref": "AEMET AU-GUI-0102"
+  },
+  {
+   "id": "050.19.014",
+   "type": "concepto",
+   "level": 2,
+   "q": "El GAMET es:",
+   "options": [
+    "Un aviso de cenizas volcánicas",
+    "Un informe de observación cada 30 min",
+    "Un pronóstico de área para vuelos a baja cota (bajo FL150), cada 6 h y válido 6 h",
+    "Un mapa de alto nivel"
+   ],
+   "correct": 2,
+   "why": "El GAMET reúne en dos secciones los fenómenos peligrosos y el pronóstico de nubes, viento, FZLVL y QNH mínimo.",
+   "whyNot": [
+    "Esa es la del SIGMET de ceniza.",
+    "Esa es la descripción del METAR.",
+    null,
+    "Eso es el SIGWX de alto nivel."
+   ],
+   "ref": "AEMET AU-GUI-0102"
+  },
+  {
+   "id": "050.19.015",
+   "type": "concepto",
+   "level": 1,
+   "q": "El viento que da el ATIS está referido al norte:",
+   "options": [
+    "De cuadrícula",
+    "De brújula",
+    "Verdadero",
+    "Magnético"
+   ],
+   "correct": 3,
+   "why": "El ATIS y la torre usan viento magnético; el METAR, verdadero.",
+   "whyNot": [
+    "No es una referencia usada.",
+    "No es una referencia usada.",
+    "Es el del METAR y TAF.",
+    null
+   ],
+   "ref": "OACI Anexo 3; AIP España"
+  },
+  {
+   "id": "050.19.016",
+   "type": "calculo",
+   "level": 2,
+   "q": "METAR con viento 270° a 10 kt en Madrid (variación 1° W). El viento que daría la torre es:",
+   "options": [
+    "270° magnético sin cambio",
+    "271° magnético",
+    "269° magnético",
+    "180°"
+   ],
+   "correct": 1,
+   "why": "De verdadero a magnético, el oeste se suma: 270 + 1 = 271°.",
+   "whyNot": [
+    "El viento cambia por la variación.",
+    null,
+    "Resta la variación W en vez de sumarla.",
+    "No tiene relación."
+   ],
+   "ref": "OACI Anexo 3"
+  },
+  {
+   "id": "050.19.017",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un SPECI se emite cuando:",
+   "options": [
+    "Hay un cambio significativo entre dos METAR",
+    "El piloto lo solicita",
+    "Hay niebla",
+    "Pasan 30 minutos"
+   ],
+   "correct": 0,
+   "why": "El SPECI es un METAR especial, fuera de hora, ante un cambio significativo.",
+   "whyNot": [
+    null,
+    "No se emite a petición del piloto.",
+    "Solo si hay un cambio significativo.",
+    "Eso es el METAR rutinario."
+   ],
+   "ref": "OACI Anexo 3"
+  },
+  {
+   "id": "050.19.018",
+   "type": "concepto",
+   "level": 1,
+   "q": "El VOLMET es:",
+   "options": [
+    "Un mapa de viento",
+    "Un TAF de 9 horas",
+    "Un aviso de aeródromo",
+    "Una emisión continua de METAR y SIGMET de varios aeródromos"
+   ],
+   "correct": 3,
+   "why": "Son emisiones de información meteorológica por radio para aeronaves en vuelo.",
+   "whyNot": [
+    "No es un mapa.",
+    "No es un pronóstico.",
+    "No es un aviso.",
+    null
+   ],
+   "ref": "OACI Anexo 3"
+  },
+  {
+   "id": "050.19.019",
+   "type": "concepto",
+   "level": 2,
+   "q": "El WAFS proporciona:",
+   "options": [
+    "Los avisos de aeródromo",
+    "Los METAR de cada aeródromo",
+    "SIGWX de alto nivel y mallas de viento y temperatura",
+    "El ATIS"
+   ],
+   "correct": 2,
+   "why": "El WAFS lo gestionan los centros de Londres y Washington.",
+   "whyNot": [
+    "Los emite la oficina local.",
+    "Los METAR los emite cada aeródromo.",
+    null,
+    "Lo emite cada aeródromo."
+   ],
+   "ref": "OACI Anexo 3"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.050.19.01",
+   "front": "TEMPO en un TAF",
+   "back": "Fluctuaciones de menos de 1 h cada una y en total menos de la mitad del periodo"
+  },
+  {
+   "id": "c.050.19.02",
+   "front": "BECMG en un TAF",
+   "back": "Cambio gradual cuyas condiciones se mantienen"
+  },
+  {
+   "id": "c.050.19.03",
+   "front": "FM en un TAF",
+   "back": "Cambio a una hora concreta; sustituye todo lo anterior"
+  },
+  {
+   "id": "c.050.19.04",
+   "front": "Techo",
+   "back": "Altura de la primera capa BKN u OVC (AGL)"
+  },
+  {
+   "id": "c.050.19.05",
+   "front": "CAVOK",
+   "back": "10 km o más, sin nubes bajo 5000 ft, sin CB/TCU y sin tiempo significativo"
+  },
+  {
+   "id": "c.050.19.06",
+   "front": "Viento del METAR y del ATIS",
+   "back": "METAR: verdadero. ATIS y torre: magnético"
+  },
+  {
+   "id": "c.050.19.07",
+   "front": "SIGMET",
+   "back": "Hasta 4 h (6 h cenizas y ciclón tropical); LEVA y GCGC"
+  },
+  {
+   "id": "c.050.19.08",
+   "front": "GAMET",
+   "back": "Cada 6 h, válido 6 h, bajo FL150"
+  }
+ ]
+}

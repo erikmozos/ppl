@@ -1,0 +1,817 @@
+{
+ "lesson": {
+  "title": "Pérdida",
+  "summary": "Qué es la pérdida y por qué depende del ángulo de ataque, factores que cambian la velocidad de pérdida, avisos, recuperación, pérdida acelerada en viraje, cola en T, barrena y diferencia con la espiral picada.",
+  "objectives": [
+   "Explicar que la pérdida depende del ángulo de ataque y no de la velocidad",
+   "Calcular la velocidad de pérdida con masa, factor de carga y configuración",
+   "Reconocer los avisos y aplicar la recuperación correcta, incluida la pérdida con potencia y en viraje",
+   "Describir la barrena, reconocerla y aplicar PARE",
+   "Diferenciar barrena de espiral picada"
+  ],
+  "sections": [
+   {
+    "title": "Qué es la pérdida y por qué depende del ángulo de ataque",
+    "text": [
+     "El ala entra en **pérdida** cuando supera el **ángulo de ataque crítico** (15°–18° en una avioneta): el flujo se separa del extradós, la sustentación cae de golpe y la resistencia aumenta. Lo que importa es el **ángulo de ataque**: el avión puede entrar en pérdida a cualquier velocidad, con cualquier actitud y a cualquier potencia, si se supera ese ángulo. La velocidad de pérdida del POH es solo la velocidad a la que se llega al ángulo crítico en vuelo recto, 1 g, masa máxima y configuración indicada.",
+     "Antes de la pérdida completa, la separación empieza en el borde de salida y avanza hacia delante. Los remolinos de la zona separada golpean la cola: es el **bataneo (buffet)**. Es un aviso natural, pero solo si la torsión del ala hace que el flujo separado alcance primero la raíz y el estabilizador."
+    ]
+   },
+   {
+    "title": "Velocidad de pérdida y sus factores",
+    "text": [
+     "Con L = W y CL = CLmax, Vs = √(2W / ρ S CLmax). De ahí salen los factores del examen. Las cifras de IAS que da el POH están en el anemómetro, así que la altitud no las modifica."
+    ],
+    "table": {
+     "caption": "Factores que modifican la velocidad de pérdida (IAS)",
+     "head": [
+      "Factor",
+      "Efecto en Vs",
+      "Motivo"
+     ],
+     "rows": [
+      [
+       "Más masa",
+       "Aumenta (∝ √masa)",
+       "Se necesita más sustentación"
+      ],
+      [
+       "Factor de carga n (viraje, tirón)",
+       "Aumenta (∝ √n)",
+       "La sustentación debe ser n · W"
+      ],
+      [
+       "Flaps",
+       "Disminuye",
+       "Suben CLmax y S"
+      ],
+      [
+       "Potencia",
+       "Disminuye (con hélice)",
+       "Componente vertical del empuje y chorro de la hélice sobre el ala"
+      ],
+      [
+       "CG adelantado",
+       "Aumenta",
+       "La cola tiene que empujar más hacia abajo y el ala sustentar más"
+      ],
+      [
+       "CG atrasado",
+       "Disminuye",
+       "Menor carga de cola"
+      ],
+      [
+       "Altitud",
+       "No cambia en IAS; sube la TAS",
+       "El anemómetro mide ½ρV²"
+      ],
+      [
+       "Hielo, escarcha, suciedad",
+       "Aumenta",
+       "Menor CLmax"
+      ],
+      [
+       "Mayor carga alar (W/S)",
+       "Aumenta",
+       "Más peso por m² de ala"
+      ]
+     ],
+     "src": "PHAK cap. 5; AFH cap. 4"
+    },
+    "examples": [
+     {
+      "q": "Vs = 55 kt a 1100 kg. ¿Vs a 1000 kg?",
+      "a": "55 × √(1000/1100) = 55 × 0,953 ≈ 52,4 kt."
+     },
+     {
+      "q": "Con Vs = 50 kt en vuelo recto, ¿Vs en un viraje nivelado de 60° de inclinación?",
+      "a": "n = 1/cos 60° = 2; Vs = 50 × √2 ≈ 70,7 kt."
+     },
+     {
+      "q": "Vs = 48 kt. En un tirón de la palanca con n = 2,5, ¿a qué velocidad se entra en pérdida?",
+      "a": "48 × √2,5 = 48 × 1,58 ≈ 75,9 kt."
+     }
+    ]
+   },
+   {
+    "title": "Pérdida en viraje (pérdida acelerada)",
+    "text": [
+     "En un viraje nivelado la sustentación debe ser n veces el peso: n = 1/cos φ. Para producirla, el piloto aumenta el ángulo de ataque con la palanca. Eso acerca el ala al ángulo crítico, y la Vs sube con √n: +7 % a 30°, +19 % a 45° y +41 % a 60°. Si vuelas a 1,2 Vs con las alas niveladas y metes 60° de inclinación, la Vs sube a 1,41 Vs y entras en pérdida: es una **pérdida acelerada**, que ocurre a **mayor velocidad que la normal** y puede acabar en barrena si hay guiñada."
+    ],
+    "figure": "calc:turn",
+    "caption": "Calculadora: inclinación y TAS → factor de carga, aumento de Vs, radio y régimen.",
+    "formulas": [
+     {
+      "f": "n = 1 / cos φ",
+      "note": "30° → 1,15; 45° → 1,41; 60° → 2; 70° → 2,92."
+     },
+     {
+      "f": "Vs(n) = Vs · √n",
+      "note": "Con n = 2, Vs × 1,41."
+     }
+    ]
+   },
+   {
+    "title": "Por dónde empieza la pérdida en el ala",
+    "text": [
+     "En un ala rectangular o con torsión, la pérdida empieza cerca de la **raíz**; en una trapezoidal o en flecha sin torsión, cerca de la **punta**. Por eso el ala con washout conserva el control lateral: los alerones están en la punta, que aún sustenta. Al mismo tiempo, el flujo separado de la raíz golpea la cola y avisa con bataneo."
+    ],
+    "figure": "svg:080-perdida-planta",
+    "caption": "La planta y la torsión deciden dónde se separa primero el flujo."
+   },
+   {
+    "title": "Avisos de pérdida",
+    "text": [
+     "El aviso más fiable es el que el fabricante instala: una **lámina (vane)** o un **interruptor** de ángulo de ataque en el borde de ataque que acciona una **bocina** unos 5 a 10 kt antes de la pérdida en vuelo recto. Además hay avisos naturales: **bataneo** en la cola y en los mandos, morro alto, mandos blandos con poca respuesta, ruido del aire en descenso, y caída en la velocidad indicada. El hielo en las superficies puede **anular el aviso** o la sensibilidad de la bocina, y el aviso depende de que el sensor esté limpio."
+    ]
+   },
+   {
+    "title": "Recuperación de la pérdida",
+    "text": [
+     "La recuperación consiste en **reducir el ángulo de ataque**. Siempre: palanca adelante lo necesario para que la sustentación vuelva. Después, potencia máxima (o la que indique el POH), alas niveladas con el timón (con el ala parcialmente en pérdida, los alerones empeoran la situación porque aumentan el ángulo de ataque del ala que baja), y recuperación suave de la actitud sin provocar una segunda pérdida. Los flaps se retraen por etapas, según el POH. Una pérdida con potencia (despegue, aproximación) tiene morro más alto y mayor tendencia a girar a la izquierda en una hélice que gira a derechas; se corrige con timón."
+    ],
+    "bullets": [
+     "**Primero:** palanca adelante (reducir α). **Después:** potencia máxima. **Mantén:** alas niveladas con el timón.",
+     "En la **pérdida acelerada** es igual: relaja el tirón y baja el morro; no sigas tirando.",
+     "La recuperación pierde altura: por eso las pérdidas se practican con altura suficiente y, cerca del suelo, se vuela siempre por encima de las velocidades del POH."
+    ],
+    "note": {
+     "kind": "warn",
+     "text": "El ejercicio de pérdidas se hace con altura suficiente (la escuela fija el mínimo) y siguiendo el POH del avión. No lo practiques sin instructor."
+    }
+   },
+   {
+    "title": "Cola en T",
+    "text": [
+     "En un avión con estabilizador en lo alto de la deriva (cola en T), cuando el ángulo de ataque es muy alto la estela del ala pérdida puede envolver a la cola. La profundidad pierde eficacia justo cuando más hace falta y el avión puede quedar en una **pérdida profunda (deep stall)**: morro alto, caída casi vertical y sin posibilidad de bajar el morro. Se previene con un **empujador de palanca (stick pusher)**, un sistema que baja el morro automáticamente al llegar al ángulo crítico. No aparece en los aviones PPL habituales, pero sí en el examen."
+    ]
+   },
+   {
+    "title": "Barrena",
+    "text": [
+     "La **barrena** es un movimiento autorrotativo: el avión, en pérdida, gira y desciende en una trayectoria casi vertical. Se produce con una **pérdida y guiñada simultáneas**: el ala que baja (la interior) tiene mayor ángulo de ataque y más resistencia, la exterior menor ángulo de ataque y más sustentación. Esa diferencia mantiene la rotación.",
+     "Fases: **incipiente** (primera vuelta, aún se desarrolla), **plenamente desarrollada** (rotación, descenso y velocidad estabilizados, trayectoria casi vertical) y **recuperación**. En barrena, la velocidad de aire **es baja y estable** (en el entorno de la de pérdida), el n es cercano a 1 y el anemómetro marca valores bajos y casi constantes; el indicador de viraje muestra el giro y la bola va a un lado. Con **CG muy atrasado** la barrena puede ser plana, más rotación que descenso, y puede no recuperarse.",
+     "La recuperación estándar sigue la regla **PARE** (la técnica general; si el POH dice otra cosa, vale el POH):"
+    ],
+    "bullets": [
+     "**P**ower: potencia al ralentí.",
+     "**A**ilerons: alerones neutros.",
+     "**R**udder: timón a fondo contra el sentido de rotación.",
+     "**E**levator: profundidad hacia delante (por delante del neutro) hasta que cese la rotación.",
+     "Cuando cese la rotación: timón neutro y salida suave del picado, sin sobrepasar el factor de carga ni la VNE."
+    ],
+    "note": {
+     "kind": "warn",
+     "text": "La mayoría de las avionetas de categoría normal tienen la barrena intencionada prohibida; las limitaciones están en el POH."
+    }
+   },
+   {
+    "title": "Barrena y espiral picada",
+    "text": [
+     "Se confunden con facilidad, pero son opuestas. En la **espiral picada**, el avión no está en pérdida: baja con una inclinación cada vez mayor, con **velocidad creciente** y factor de carga creciente. Recuperación: potencia al ralentí, alas niveladas con los alerones y, después, tirar de la palanca para recuperar el picado, sin sobrepasar la VNE ni el factor de carga límite. Si tiras de la palanca antes de nivelar las alas, aprietas la espiral."
+    ],
+    "table": {
+     "caption": "Barrena frente a espiral picada",
+     "head": [
+      "",
+      "Barrena",
+      "Espiral picada"
+     ],
+     "rows": [
+      [
+       "Ángulo de ataque",
+       "Por encima del crítico (en pérdida)",
+       "Por debajo del crítico"
+      ],
+      [
+       "Velocidad",
+       "Baja y estable",
+       "Alta y creciente"
+      ],
+      [
+       "Factor de carga",
+       "Cercano a 1",
+       "Creciente"
+      ],
+      [
+       "Recuperación",
+       "PARE",
+       "Potencia ralentí, alas niveladas, luego recuperar el picado"
+      ]
+     ]
+    }
+   }
+  ],
+  "numbers": [
+   "Pérdida a α crítico (≈ 15°–18°), no a una velocidad fija",
+   "Vs ∝ √masa y ∝ √n; +7 %, +19 % y +41 % a 30°, 45° y 60°",
+   "Aviso de bocina 5–10 kt antes de la pérdida",
+   "PARE: potencia ralentí, alerones neutros, timón contrario, profundidad adelante",
+   "Barrena: velocidad baja y estable; espiral: alta y creciente"
+  ],
+  "traps": [
+   "La pérdida no depende de la velocidad ni de la actitud, sino del ángulo de ataque.",
+   "En un viraje la Vs sube: puedes entrar en pérdida a velocidad mayor que la del POH.",
+   "CG adelantado aumenta la Vs; CG atrasado la baja, pero empeora la recuperación.",
+   "En barrena nunca se tira de la palanca; en espiral, nivela alas antes de tirar.",
+   "La potencia reduce la Vs, pero no impide la pérdida."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "FAA, Airplane Flying Handbook (FAA-H-8083-3C)",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "080.08",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "080.08.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "La pérdida de sustentación se produce siempre que:",
+   "options": [
+    "Se reduce la velocidad por debajo de 60 kt",
+    "Se supera el ángulo de ataque crítico",
+    "Se pone el morro por encima del horizonte",
+    "Se reduce la potencia"
+   ],
+   "correct": 1,
+   "why": "La pérdida depende del ángulo de ataque: puede ocurrir a cualquier velocidad, actitud o potencia.",
+   "whyNot": [
+    "No existe una velocidad universal de pérdida.",
+    null,
+    "Se puede estar en pérdida con el morro bajo.",
+    "La potencia no determina el ángulo crítico."
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.08.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "El bataneo (buffet) previo a la pérdida se debe a:",
+   "options": [
+    "Un fallo del motor",
+    "La vibración de la hélice",
+    "Las rachas de viento",
+    "La turbulencia del flujo separado que golpea la cola"
+   ],
+   "correct": 3,
+   "why": "El flujo separado en el extradós genera remolinos que sacuden estabilizador y mandos.",
+   "whyNot": [
+    "No tiene relación con el motor.",
+    "La hélice no causa bataneo aerodinámico.",
+    "El bataneo previo a la pérdida aparece también con aire en calma.",
+    null
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.08.003",
+   "type": "calculo",
+   "level": 1,
+   "q": "Un avión tiene Vs = 55 kt a 1100 kg. A 1000 kg la Vs será aproximadamente:",
+   "options": [
+    "52 kt",
+    "50 kt",
+    "55 kt",
+    "58 kt"
+   ],
+   "correct": 0,
+   "why": "Vs ∝ √masa: 55 · √(1000/1100) ≈ 52,4 kt.",
+   "whyNot": [
+    null,
+    "Resulta de aplicar la proporción lineal de masa (55 · 0,91).",
+    "La Vs depende de la masa: con 1000 kg no puede seguir siendo 55 kt.",
+    "Aumentaría con más masa, no con menos."
+   ],
+   "ref": "Vs ∝ √m"
+  },
+  {
+   "id": "080.08.004",
+   "type": "calculo",
+   "level": 2,
+   "q": "Vs = 50 kt en vuelo recto. En un viraje nivelado de 60° de inclinación, la velocidad de pérdida es de:",
+   "options": [
+    "57 kt",
+    "60 kt",
+    "71 kt",
+    "100 kt"
+   ],
+   "correct": 2,
+   "why": "n = 2; Vs = 50 · √2 ≈ 70,7 kt.",
+   "whyNot": [
+    "Resulta de usar n = 1,3 en vez de 2.",
+    "Resulta de sumar 10 kt de margen.",
+    null,
+    "Resulta de multiplicar por n sin hacer la raíz."
+   ],
+   "ref": "n = 1/cos φ"
+  },
+  {
+   "id": "080.08.005",
+   "type": "calculo",
+   "level": 2,
+   "q": "Vs = 48 kt. En una recogida con n = 2,5, la pérdida se produce a:",
+   "options": [
+    "120 kt",
+    "61 kt",
+    "76 kt",
+    "53 kt"
+   ],
+   "correct": 2,
+   "why": "48 · √2,5 = 48 · 1,58 ≈ 75,9 kt.",
+   "whyNot": [
+    "Resulta de multiplicar por n sin raíz.",
+    "Resulta de multiplicar por 1,27 en vez de 1,58.",
+    null,
+    "Resulta de multiplicar por 1,1, el factor de n = 1,2."
+   ],
+   "ref": "Vs ∝ √n"
+  },
+  {
+   "id": "080.08.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "La velocidad de pérdida en IAS, al aumentar la altitud con el mismo peso y configuración:",
+   "options": [
+    "Prácticamente no cambia",
+    "Aumenta con la altitud",
+    "Disminuye porque la TAS es mayor",
+    "Se duplica cada 5000 ft"
+   ],
+   "correct": 0,
+   "why": "El anemómetro mide ½ρV², la misma presión dinámica que necesita el ala.",
+   "whyNot": [
+    null,
+    "La TAS de pérdida sí sube, la IAS no.",
+    "La TAS aumenta, la IAS no cambia.",
+    "No existe esa relación."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.08.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "Con los flaps extendidos, la velocidad de pérdida:",
+   "options": [
+    "Aumenta",
+    "No cambia",
+    "Es mayor que sin flaps solo con potencia",
+    "Disminuye"
+   ],
+   "correct": 3,
+   "why": "Los flaps aumentan CLmax y la superficie.",
+   "whyNot": [
+    "La Vs aumenta con otros factores, no con los flaps.",
+    "Los flaps modifican CLmax y la superficie, así que la Vs cambia.",
+    "Los flaps reducen la Vs con o sin potencia.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.08.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un CG adelantado en relación con la velocidad de pérdida:",
+   "options": [
+    "La disminuye",
+    "La aumenta",
+    "No la modifica",
+    "La anula"
+   ],
+   "correct": 1,
+   "why": "La cola debe empujar más hacia abajo y el ala debe sustentar más.",
+   "whyNot": [
+    "Es el CG atrasado el que la disminuye.",
+    null,
+    "La velocidad del viento no modifica la sustentación respecto al aire.",
+    "Un CG adelantado no suprime la pérdida: solo cambia la velocidad a la que ocurre."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.08.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "La potencia aplicada en una avioneta monomotor de hélice, respecto a la Vs:",
+   "options": [
+    "La reduce algo",
+    "La aumenta",
+    "No tiene efecto",
+    "La reduce a cero"
+   ],
+   "correct": 0,
+   "why": "El chorro de la hélice y la componente vertical del empuje ayudan al ala.",
+   "whyNot": [
+    null,
+    "La Vs disminuye con potencia.",
+    "La hélice sí influye: el chorro sobre el ala y el empuje vertical reducen algo la Vs.",
+    "La Vs nunca se hace cero."
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.08.010",
+   "type": "concepto",
+   "level": 3,
+   "q": "Con hielo en el borde de ataque, la velocidad de pérdida:",
+   "options": [
+    "Disminuye",
+    "Se mantiene y el aviso es más fiable",
+    "Aumenta y el aviso puede no sonar",
+    "Disminuye y el aviso suena antes"
+   ],
+   "correct": 2,
+   "why": "El hielo reduce CLmax y puede dejar inoperativo el sensor de aviso.",
+   "whyNot": [
+    "El hielo reduce CLmax, así que la Vs aumenta.",
+    "El hielo no mejora el aviso; lo degrada.",
+    null,
+    "Sube, y el aviso no suena antes."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.08.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una pérdida acelerada es aquella que:",
+   "options": [
+    "Se produce con el motor al ralentí",
+    "Se produce a una velocidad mayor que la normal por un factor de carga alto",
+    "Se produce a la velocidad mínima",
+    "Se produce solo con flaps"
+   ],
+   "correct": 1,
+   "why": "Al aumentar n, la velocidad de pérdida sube con √n.",
+   "whyNot": [
+    "La potencia no define la pérdida acelerada.",
+    null,
+    "Es a velocidad mayor que la normal.",
+    "Puede ocurrir con o sin flaps."
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.08.012",
+   "type": "calculo",
+   "level": 3,
+   "q": "Vuelas nivelado a 1,2 Vs y entras en un viraje de 60° manteniendo la misma velocidad indicada. ¿Qué ocurre?",
+   "options": [
+    "Sigues con margen: la Vs sube solo un 7 %",
+    "No ocurre nada: la Vs depende solo de la masa",
+    "La Vs baja porque aumenta el factor de carga",
+    "Entras en pérdida: la Vs pasa a 1,41 Vs, mayor que tu velocidad"
+   ],
+   "correct": 3,
+   "why": "A 60° n = 2 y la Vs sube un 41 %. Como 1,2 Vs es menor que 1,41 Vs, tu velocidad queda por debajo de la nueva Vs.",
+   "whyNot": [
+    "Un 7 % corresponde a 30° de inclinación.",
+    "La Vs depende también del factor de carga.",
+    "El mayor factor de carga eleva la Vs, no la baja.",
+    null
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.08.013",
+   "type": "concepto",
+   "level": 1,
+   "q": "La primera acción para recuperarse de una pérdida es:",
+   "options": [
+    "Dar potencia y tirar de la palanca",
+    "Utilizar los alerones para levantar el ala",
+    "Recoger los flaps de golpe",
+    "Reducir el ángulo de ataque, palanca hacia delante"
+   ],
+   "correct": 3,
+   "why": "Hay que volver por debajo del ángulo crítico.",
+   "whyNot": [
+    "Tirar mantendría la pérdida.",
+    "Los alerones pueden agravarla.",
+    "Los flaps se retraen por etapas.",
+    null
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.08.014",
+   "type": "concepto",
+   "level": 2,
+   "q": "Durante una pérdida con un ala que cae, el mando preferente para levantarla es:",
+   "options": [
+    "Los alerones a fondo",
+    "El timón, para evitar aumentar el ángulo de ataque del ala que baja",
+    "La palanca hacia atrás",
+    "Los flaps"
+   ],
+   "correct": 1,
+   "why": "El aleron hacia abajo en el ala caída aumenta su ángulo de ataque y puede agravar la pérdida.",
+   "whyNot": [
+    "Pueden agravar la pérdida.",
+    null,
+    "Tirar de la palanca mantiene el ángulo de ataque por encima del crítico.",
+    "Los flaps no controlan el alabeo."
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.08.015",
+   "type": "concepto",
+   "level": 3,
+   "q": "Una avioneta de cola en T puede sufrir una pérdida profunda porque:",
+   "options": [
+    "La hélice se para",
+    "El CG se mueve adelante",
+    "La estela del ala en pérdida envuelve la cola y la profundidad pierde eficacia",
+    "El motor no da potencia"
+   ],
+   "correct": 2,
+   "why": "El estabilizador queda dentro de la estela de baja energía.",
+   "whyNot": [
+    "La hélice no interviene.",
+    "La pérdida profunda no depende de la posición del CG sino de la estela del ala sobre la cola.",
+    null,
+    "El motor no es la causa."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.08.016",
+   "type": "concepto",
+   "level": 2,
+   "q": "El dispositivo que baja automáticamente el morro al llegar al ángulo crítico se llama:",
+   "options": [
+    "Empujador de palanca (stick pusher)",
+    "Compensador",
+    "Servo de alabeo",
+    "Amortiguador de guiñada"
+   ],
+   "correct": 0,
+   "why": "El stick pusher empuja la palanca hacia delante al llegar al ángulo crítico, evitando una pérdida profunda.",
+   "whyNot": [
+    null,
+    "El compensador reduce fuerzas de palanca.",
+    "El servo no controla el cabeceo así.",
+    "El amortiguador de guiñada actúa en el eje vertical."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.08.017",
+   "type": "concepto",
+   "level": 2,
+   "q": "La barrena es consecuencia de:",
+   "options": [
+    "Exceso de velocidad con alas niveladas",
+    "Pérdida con guiñada asimétrica (autorrotación)",
+    "Fallo de motor únicamente",
+    "Viraje a la derecha"
+   ],
+   "correct": 1,
+   "why": "El ala interior tiene mayor ángulo de ataque y más resistencia; el avión rota.",
+   "whyNot": [
+    "Esa es la espiral picada.",
+    null,
+    "El fallo de motor no genera barrena por sí solo.",
+    "El sentido del viraje no es causa."
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.08.018",
+   "type": "concepto",
+   "level": 2,
+   "q": "En una barrena plenamente desarrollada, la velocidad indicada es:",
+   "options": [
+    "Alta y creciente",
+    "Cero",
+    "Igual a VNE",
+    "Baja y prácticamente constante"
+   ],
+   "correct": 3,
+   "why": "El avión está en pérdida y el descenso se estabiliza con velocidad baja.",
+   "whyNot": [
+    "Es lo propio de la espiral picada.",
+    "No llega a cero.",
+    "VNE sería con picado.",
+    null
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.08.019",
+   "type": "concepto",
+   "level": 2,
+   "q": "La regla PARE en la recuperación de una barrena empieza por:",
+   "options": [
+    "Potencia al ralentí",
+    "Profundidad atrás",
+    "Alerones a fondo",
+    "Flaps abajo"
+   ],
+   "correct": 0,
+   "why": "P = Power idle; A = Ailerons neutral; R = Rudder opposite; E = Elevator forward.",
+   "whyNot": [
+    null,
+    "En barrena se empuja hacia delante.",
+    "Los alerones se dejan neutros.",
+    "Los flaps no forman parte de PARE."
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.08.020",
+   "type": "concepto",
+   "level": 3,
+   "q": "Con el CG excesivamente atrasado, la barrena:",
+   "options": [
+    "Es más fácil de recuperar",
+    "No se produce",
+    "Tiende a ser plana y difícil de recuperar",
+    "Desaparece con timón neutro"
+   ],
+   "correct": 2,
+   "why": "Con CG atrasado, la cola pierde autoridad y el morro queda alto.",
+   "whyNot": [
+    "Con CG muy atrasado la recuperación se hace más difícil, no más fácil.",
+    "Sigue pudiendo producirse.",
+    null,
+    "Con timón neutro continúa."
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.08.021",
+   "type": "concepto",
+   "level": 2,
+   "q": "En una espiral picada, a diferencia de una barrena:",
+   "options": [
+    "La velocidad se mantiene baja",
+    "El ángulo de ataque es mayor que el crítico",
+    "La velocidad aumenta y el avión no está en pérdida",
+    "El factor de carga es 1"
+   ],
+   "correct": 2,
+   "why": "Es un viraje descendente que se aprieta con velocidad creciente.",
+   "whyNot": [
+    "Es propio de la barrena.",
+    "Está por debajo del crítico.",
+    null,
+    "El factor de carga aumenta."
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.08.022",
+   "type": "concepto",
+   "level": 2,
+   "q": "La recuperación correcta de una espiral picada empieza por:",
+   "options": [
+    "Reducir potencia y nivelar las alas, y después recuperar el picado",
+    "Tirar de la palanca con fuerza",
+    "Dar potencia máxima",
+    "Aplicar timón contrario a fondo"
+   ],
+   "correct": 0,
+   "why": "Si tiras con alas inclinadas, aprietas la espiral y el factor de carga se dispara.",
+   "whyNot": [
+    null,
+    "Aumenta la inclinación y n.",
+    "La velocidad ya es alta.",
+    "Es la técnica de barrena."
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.08.023",
+   "type": "lectura",
+   "level": 2,
+   "q": "Según la figura, en un ala trapezoidal sin torsión la pérdida comienza por:",
+   "figure": "svg:080-perdida-planta",
+   "options": [
+    "La raíz",
+    "Toda el ala a la vez",
+    "El borde de ataque",
+    "La punta, con riesgo de perder el control con los alerones"
+   ],
+   "correct": 3,
+   "why": "En esa planta la punta alcanza antes el ángulo crítico.",
+   "whyNot": [
+    "Eso es la rectangular o con torsión.",
+    "Eso es la elíptica.",
+    "La pérdida es un fenómeno de separación.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.08.024",
+   "type": "calculo",
+   "level": 2,
+   "q": "A 30° de inclinación en viraje nivelado, el factor de carga es aproximadamente:",
+   "options": [
+    "1,41",
+    "1,15",
+    "1,5",
+    "2"
+   ],
+   "correct": 1,
+   "why": "n = 1/cos 30° = 1/0,866 = 1,155.",
+   "whyNot": [
+    "Es el valor a 45°.",
+    null,
+    "Es el valor de la categoría normal en valor absoluto aproximado.",
+    "Es el valor a 60°."
+   ],
+   "ref": "n = 1/cos φ"
+  },
+  {
+   "id": "080.08.025",
+   "type": "concepto",
+   "level": 3,
+   "q": "¿Cuál de estas afirmaciones sobre el aviso de pérdida es correcta?",
+   "options": [
+    "Suele sonar unos 5 a 10 kt antes de la pérdida en vuelo recto",
+    "Suena después de la pérdida",
+    "Siempre funciona con hielo",
+    "Solo funciona con flaps abajo"
+   ],
+   "correct": 0,
+   "why": "El sensor se ajusta para avisar antes de alcanzar el ángulo crítico.",
+   "whyNot": [
+    null,
+    "El aviso está diseñado para sonar antes de la pérdida.",
+    "El hielo puede inutilizar el sensor.",
+    "Funciona también con flaps retraídos."
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.08.026",
+   "type": "calculo",
+   "level": 2,
+   "q": "Vs = 50 kt. Vuelas nivelado a 65 kt y entras en un viraje de 45° sin variar la velocidad. ¿Qué ocurre?",
+   "options": [
+    "Entras en pérdida: la Vs pasa a 71 kt",
+    "Entras en pérdida: la Vs pasa a 65 kt",
+    "No entras en pérdida: la Vs pasa a unos 59 kt",
+    "No entras en pérdida: la Vs sigue en 50 kt"
+   ],
+   "correct": 2,
+   "why": "n = 1/cos 45° = 1,41; Vs = 50 · √1,41 ≈ 59,5 kt, por debajo de los 65 kt que llevas, aunque el margen se reduce.",
+   "whyNot": [
+    "71 kt es la Vs a 60° de inclinación.",
+    "Es una coincidencia numérica sin base.",
+    null,
+    "La Vs sube con el factor de carga."
+   ],
+   "ref": "n = 1/cos φ"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.080.08.01",
+   "front": "Qué determina la pérdida",
+   "back": "El ángulo de ataque crítico (≈ 15°–18°), no la velocidad ni la actitud"
+  },
+  {
+   "id": "c.080.08.02",
+   "front": "Vs en viraje",
+   "back": "Vs · √n: +7 % a 30°, +19 % a 45°, +41 % a 60°"
+  },
+  {
+   "id": "c.080.08.03",
+   "front": "PARE",
+   "back": "Power ralentí, Ailerons neutros, Rudder contra el giro, Elevator adelante"
+  },
+  {
+   "id": "c.080.08.04",
+   "front": "Barrena frente a espiral",
+   "back": "Barrena: en pérdida, velocidad baja y estable. Espiral: sin pérdida, velocidad creciente"
+  }
+ ]
+}

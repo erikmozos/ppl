@@ -1,0 +1,490 @@
+{
+  "lesson": {
+    "id": "090.06",
+    "title": "Colaciones y acuses de recibo",
+    "summary": "Lista obligatoria de colaciones (SERA.8015), cómo se colaciona, autorizaciones condicionales, por qué se termina con el distintivo, qué basta con acusar y qué hacer si la colación es incorrecta.",
+    "objectives": [
+      "Enumerar los datos que hay que colacionar y los que basta con acusar",
+      "Colacionar correctamente una autorización o instrucción terminando con el distintivo",
+      "Entender y colacionar una autorización condicional",
+      "Reaccionar cuando el controlador corrige tu colación"
+    ],
+    "sections": [
+      {
+        "title": "Para qué sirve colacionar",
+        "text": [
+          "Colacionar es **repetir** una autorización o instrucción para que el controlador compruebe que la has entendido bien. Es la red de seguridad de la radio: si el piloto oye mal, el controlador lo escucha en la colación y lo corrige antes de que haya consecuencias. Por eso colacionar no es repetir como un loro: debes entender lo que repites y asegurarte de que puedes cumplirlo.",
+          "La colación **termina siempre con el distintivo** de la aeronave. Sin él, el controlador no sabe quién ha colacionado, sobre todo si hay varios aviones en la frecuencia."
+        ]
+      },
+      {
+        "title": "Qué hay que colacionar (SERA.8015)",
+        "text": [
+          "La lista obligatoria es cerrada: lo que aparece en ella se colaciona completo; lo que no, se acusa con el distintivo."
+        ],
+        "table": {
+          "caption": "Datos de colación obligatoria",
+          "head": [
+            "Dato",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Autorizaciones de ruta",
+              "«Autorizado a la CTR de Villanueva por November, 2000 pies»"
+            ],
+            [
+              "Instrucciones de entrar, aterrizar, despegar, mantenerse fuera, cruzar, rodar o retroceder en pista",
+              "«Pista 13, autorizado a aterrizar»; «mantenga posición»; «cruce pista 13»"
+            ],
+            [
+              "Pista en uso",
+              "«Pista 13 en uso»"
+            ],
+            [
+              "Reglaje de altímetro",
+              "«QNH 1015»"
+            ],
+            [
+              "Códigos SSR",
+              "«Transponda 4521»"
+            ],
+            [
+              "Cambios de frecuencia",
+              "«Contacte Madrid Información en 124 decimal 7»"
+            ],
+            [
+              "Instrucciones de nivel, rumbo y velocidad",
+              "«Mantenga 3500 pies»; «rumbo 270»"
+            ],
+            [
+              "Niveles de transición",
+              "«Nivel de transición 70»"
+            ]
+          ],
+          "src": "SERA.8015(e); AIP GEN 1.7"
+        },
+        "note": {
+          "kind": "tip",
+          "text": "Mnemotecnia: Ruta, Pista, Altímetro, Squawk, Frecuencia, Nivel-Rumbo-Velocidad, Transición."
+        }
+      },
+      {
+        "title": "Qué basta con acusar",
+        "text": [
+          "Hay mensajes que no necesitan colación. Por ejemplo, la **información de tráfico** («tráfico a las 12, un Piper en final»), el **viento**, la información meteorológica general y las instrucciones de notificar. A esos respondes con tu distintivo precedido de lo que corresponda: «tráfico a la vista», «buscando tráfico», «cumpliré» o «recibido», y el distintivo.",
+          "No uses «recibido» (**ROGER**) para una instrucción de colación obligatoria: no sirve."
+        ]
+      },
+      {
+        "title": "Autorizaciones condicionales",
+        "text": [
+          "Una **autorización condicional** impone una condición sobre otro tráfico: «detrás del Cessna en final corta, alinéese y espere detrás». El orden de la frase es: **distintivo, condición, autorización y repetición breve de la condición**. Cuando recibes una, debes **identificar el tráfico** de la condición y colacionarla con la condición incluida.",
+          "Las condiciones solo se usan con tráfico que **ambos ven**. Si no ves al avión, no aceptes la condición: di «no tengo el tráfico a la vista» y el controlador cambiará la instrucción."
+        ],
+        "examples": [
+          {
+            "q": "La torre dice: «EC-ABC, detrás del Piper en final corta, alinee y espere detrás». ¿Qué colacionas?",
+            "a": "«Detrás del Piper en final corta, alineo y espero detrás, EC-ABC.» Antes debes tener identificado al Piper; si no lo ves, lo dices."
+          }
+        ]
+      },
+      {
+        "title": "Ejemplos en español e inglés",
+        "examples": [
+          {
+            "q": "Español: «EC-ABC, ruede al punto de espera pista 13 vía Alfa, QNH 1015, transponda 7000».",
+            "a": "«Punto de espera pista 13 vía Alfa, QNH 1015, transpondo 7000, EC-ABC»."
+          },
+          {
+            "q": "Inglés: «EC-ABC, wind 140 degrees 8 knots, runway 13, cleared for take-off».",
+            "a": "«Runway 13, cleared for take-off, EC-ABC». El viento se acusa con la colación completa; no hace falta repetirlo."
+          },
+          {
+            "q": "Español: «EC-ABC, notifique abandonando el circuito por Sierra».",
+            "a": "«Notificaré abandonando por Sierra, EC-ABC» o «cumpliré, EC-ABC». Es una instrucción de notificar, no de colación obligatoria."
+          }
+        ]
+      },
+      {
+        "title": "Errores típicos",
+        "bullets": [
+          "Contestar «recibido» a una autorización de despegue o de aterrizaje.",
+          "Colacionar solo la pista y olvidar el QNH o el código SSR de la misma instrucción.",
+          "Colacionar una instrucción sin entenderla, por temor a pedir que la repitan.",
+          "Aceptar una condición sobre un tráfico que no has identificado.",
+          "No cerrar con el distintivo o abreviarlo antes de que lo haya hecho el ATS."
+        ]
+      },
+      {
+        "title": "Si la colación es incorrecta",
+        "text": [
+          "Si colacionas mal, el controlador dice «**negativo**» seguido de la versión correcta, y tú tienes que colacionar de nuevo. Si te das cuenta de un error tuyo, di «**corrección**» y repite. No cumplas una instrucción que no has entendido: pide «**repita**» (en inglés, «**say again**»)."
+        ]
+      }
+    ],
+    "numbers": [
+      "Se colaciona: ruta, instrucciones de pista, pista en uso, reglaje, SSR, frecuencia, nivel, rumbo y velocidad, niveles de transición",
+      "La colación termina con el distintivo",
+      "Información de tráfico y viento: basta con acusar con el distintivo"
+    ],
+    "traps": [
+      "«Recibido» no es una colación.",
+      "La información de tráfico no se colaciona: se responde «tráfico a la vista» o «buscando tráfico».",
+      "En una autorización condicional hay que haber identificado el tráfico de la condición.",
+      "No terminar la colación con el distintivo es un error frecuente."
+    ],
+    "spain": [
+      "AIP GEN 1.7 recoge la lista de colaciones obligatorias que se aplica en España; compruébala en la edición vigente."
+    ],
+    "sources": [
+      {
+        "title": "SERA.8015 y SERA, sección 14 (EASA)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
+      },
+      {
+        "title": "AIP España GEN 1.7 (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/contenido_AIP/GEN/LE_GEN_1_7_en.html"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología ES/EN",
+        "href": "#/licencias/fraseologia"
+      },
+      {
+        "label": "Simulador de radio",
+        "href": "#/licencias/fraseologia?tab=radio"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "090.06.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Cómo termina siempre una colación?",
+      "options": [
+        "Con «recibido»",
+        "Con la hora UTC",
+        "Con el distintivo de la aeronave",
+        "Con «cambio»"
+      ],
+      "correct": 2,
+      "why": "La colación se cierra con el distintivo para que el controlador sepa quién ha colacionado.",
+      "whyNot": [
+        "No termina así.",
+        "No termina así.",
+        null,
+        "No termina así."
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.06.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál de estos datos no hay que colacionar?",
+      "options": [
+        "La información de tráfico",
+        "El QNH",
+        "El código SSR",
+        "La pista en uso"
+      ],
+      "correct": 0,
+      "why": "La información de tráfico se acusa con el distintivo («tráfico a la vista» o «buscando tráfico»).",
+      "whyNot": [
+        null,
+        "Los reglajes de altímetro se colacionan.",
+        "Los códigos SSR se colacionan.",
+        "La pista en uso se colaciona."
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.06.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "La torre dice «autorizado a aterrizar pista 13». ¿Qué colacionas?",
+      "options": [
+        "Recibido, y tu distintivo",
+        "Autorizado, y tu distintivo",
+        "Afirmativo, y tu distintivo",
+        "Pista 13, autorizado a aterrizar, y tu distintivo"
+      ],
+      "correct": 3,
+      "why": "La autorización de aterrizaje se colaciona con la pista y se termina con el distintivo.",
+      "whyNot": [
+        "Recibido no colaciona.",
+        "Falta la pista.",
+        "Afirmativo no es fraseología.",
+        null
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.06.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué debe contener la colación de «ruede al punto de espera pista 13 vía Alfa, QNH 1015, transponda 7000»?",
+      "options": [
+        "Recibido y el distintivo",
+        "Punto de espera pista 13, vía Alfa, QNH 1015, transpondo 7000 y el distintivo",
+        "Pista 13 y el distintivo",
+        "Solo el QNH y el distintivo"
+      ],
+      "correct": 1,
+      "why": "Instrucción de rodaje a pista, ruta, QNH y código SSR se colacionan.",
+      "whyNot": [
+        "Falta todo lo que hay que colacionar.",
+        null,
+        "Faltan la ruta, el QNH y el código.",
+        "Faltan la pista y el código."
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.06.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Se colaciona un cambio de frecuencia?",
+      "options": [
+        "Sí, y se repite la frecuencia y el distintivo",
+        "No, basta con «recibido»",
+        "Solo si la pide el piloto",
+        "Solo en espacio de clase C"
+      ],
+      "correct": 0,
+      "why": "La lista de colaciones incluye los cambios de frecuencia.",
+      "whyNot": [
+        null,
+        "El cambio de frecuencia está en la lista.",
+        "Es obligatorio.",
+        "Es obligatorio siempre."
+      ],
+      "ref": "AIP GEN 1.7"
+    },
+    {
+      "id": "090.06.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "«Mantenga posición» se responde con:",
+      "options": [
+        "«Recibido» y el distintivo",
+        "«Afirmo» y el distintivo",
+        "«Mantengo posición» y el distintivo",
+        "Solo el distintivo"
+      ],
+      "correct": 2,
+      "why": "Las instrucciones de mantenerse fuera de pista se colacionan.",
+      "whyNot": [
+        "Recibido no colaciona.",
+        "No es la respuesta.",
+        null,
+        "Falta la colación."
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.06.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Se colaciona una instrucción de rumbo?",
+      "options": [
+        "No, basta con el distintivo",
+        "Sí, siempre",
+        "Solo si es superior a 180°",
+        "Solo si el ATC lo pide"
+      ],
+      "correct": 1,
+      "why": "Las instrucciones de rumbo se colacionan.",
+      "whyNot": [
+        "Los rumbos están en la lista.",
+        null,
+        "No depende del rumbo.",
+        "Es obligatorio."
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.06.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cómo respondes a «tráfico a las 12 en final, un Piper»?",
+      "options": [
+        "Con la colación completa del mensaje",
+        "Con «recibido» y nada más",
+        "No respondes",
+        "«Tráfico a la vista» o «buscando tráfico» y el distintivo"
+      ],
+      "correct": 3,
+      "why": "La información de tráfico se acusa diciendo si lo ves o lo buscas.",
+      "whyNot": [
+        "No se colaciona la información de tráfico.",
+        "Debes decir si lo ves.",
+        "Debes acusar.",
+        null
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.06.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es una autorización condicional?",
+      "options": [
+        "Una autorización que solo vale de día",
+        "Una autorización con plan de vuelo",
+        "Una autorización sujeta a la condición de otro tráfico",
+        "Una autorización a mitad de pista"
+      ],
+      "correct": 2,
+      "why": "La autorización condicional depende de otro tráfico, que debes identificar.",
+      "whyNot": [
+        "No es el concepto.",
+        "No es el concepto.",
+        null,
+        "No es el concepto."
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.06.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "La torre dice «detrás del Piper en final corta, alinee y espere detrás». Si no ves al Piper, ¿qué haces?",
+      "options": [
+        "Decir que no tienes el tráfico a la vista",
+        "Alinear de todas formas",
+        "Colacionar y alinear",
+        "Contestar «recibido»"
+      ],
+      "correct": 0,
+      "why": "Solo se acepta una condición sobre un tráfico que ves.",
+      "whyNot": [
+        null,
+        "No debes aceptar sin ver el tráfico.",
+        "No debes aceptar la condición.",
+        "No colaciona."
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.06.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si el controlador te corrige una colación con «negativo», ¿qué haces?",
+      "options": [
+        "Ignorarlo y seguir",
+        "Repetir lo mismo con más volumen",
+        "Cambiar de frecuencia",
+        "Colacionar de nuevo la versión correcta"
+      ],
+      "correct": 3,
+      "why": "Tras un «negativo» y la versión correcta, debes volver a colacionar.",
+      "whyNot": [
+        "Hay que corregir.",
+        "Debes colacionar la versión correcta.",
+        "No tiene relación.",
+        null
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.06.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si no has entendido una instrucción, ¿qué debes hacer?",
+      "options": [
+        "Colacionar lo que crees haber oído",
+        "Pedir que la repitan: «repita»",
+        "Responder «recibido»",
+        "No decir nada"
+      ],
+      "correct": 1,
+      "why": "Ante una duda, pide «repita» (say again).",
+      "whyNot": [
+        "No debes colacionar lo que no entiendes.",
+        null,
+        "Recibido no resuelve la duda.",
+        "Debes pedir repetición."
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.06.013",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Cuál de estas colaciones es la correcta para «QNH 1015, transponda 4521»?",
+      "options": [
+        "QNH uno cero uno cinco, transpondo cuatro cinco dos uno, EC-ABC",
+        "QNH mil quince, transpondo cuatro mil quinientos veintiuno, EC-ABC",
+        "Recibido, EC-ABC",
+        "QNH uno cero uno cinco, EC-ABC"
+      ],
+      "correct": 0,
+      "why": "El QNH y el código se colacionan dígito a dígito y se cierra con el distintivo.",
+      "whyNot": [
+        null,
+        "No se dicen así.",
+        "Recibido no colaciona.",
+        "Falta el código."
+      ],
+      "ref": "SERA.8015"
+    },
+    {
+      "id": "090.06.014",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Por qué se cierra la colación con el distintivo?",
+      "options": [
+        "Para que suene más profesional",
+        "Para que no se pierda la frecuencia",
+        "Para que el controlador sepa quién colaciona",
+        "Porque lo exige el transpondedor"
+      ],
+      "correct": 2,
+      "why": "Sin el distintivo no se sabe qué avión ha colacionado.",
+      "whyNot": [
+        "No es el motivo.",
+        "No es el motivo.",
+        null,
+        "No tiene relación."
+      ],
+      "ref": "SERA.8015"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.090.06.01",
+      "front": "Qué se colaciona",
+      "back": "Ruta, instrucciones de pista, pista en uso, reglaje, SSR, frecuencia, nivel, rumbo y velocidad, niveles de transición"
+    },
+    {
+      "id": "c.090.06.02",
+      "front": "Cómo termina una colación",
+      "back": "Con el distintivo"
+    },
+    {
+      "id": "c.090.06.03",
+      "front": "Información de tráfico",
+      "back": "No se colaciona: «tráfico a la vista» o «buscando tráfico»"
+    },
+    {
+      "id": "c.090.06.04",
+      "front": "RECIBIDO y colaciones",
+      "back": "Recibido no colaciona"
+    },
+    {
+      "id": "c.090.06.05",
+      "front": "Autorización condicional",
+      "back": "Identifica el tráfico de la condición y colaciónala con ella"
+    },
+    {
+      "id": "c.090.06.06",
+      "front": "Colación corregida",
+      "back": "Si el ATC dice «negativo», colaciona la versión correcta"
+    }
+  ]
+}

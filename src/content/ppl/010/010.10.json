@@ -1,0 +1,546 @@
+{
+  "lesson": {
+    "id": "010.10",
+    "title": "Altimetría y transpondedor",
+    "summary": "Reglajes QNH, QFE y 1013,25, altitud, nivel y capa de transición, cuándo cambiar el reglaje, modos A, C y S del transpondedor, códigos especiales e IDENT.",
+    "objectives": [
+      "Distinguir QNH, QFE y 1013,25 y saber qué lee el altímetro con cada uno",
+      "Aplicar las reglas de la altitud y el nivel de transición y de la capa de transición",
+      "Saber cuándo se cambia el reglaje al subir y al bajar",
+      "Conocer los modos A, C y S del transpondedor y sus códigos especiales",
+      "Usar correctamente el IDENT y los códigos 7000, 7500, 7600 y 7700"
+    ],
+    "sections": [
+      {
+        "title": "Qué hace un altímetro y por qué hay que reglarlo",
+        "text": [
+          "El altímetro es un barómetro que convierte la presión estática en altura. Como la presión del aire cambia con el tiempo y con la situación meteorológica, hace falta una referencia: la **ventanilla de reglaje** (Kollsman) introduce la presión de referencia con la que el instrumento calcula. Cambiar el valor de esa ventanilla cambia la lectura, de modo que a cada reglaje le corresponde una **referencia de altura** distinta.",
+          "Hay tres reglajes que se citan con códigos Q, y debes saber lo que lees con cada uno."
+        ],
+        "table": {
+          "caption": "Reglajes del altímetro",
+          "head": [
+            "Reglaje",
+            "Qué pones en la ventanilla",
+            "Qué lees"
+          ],
+          "rows": [
+            [
+              "QNH",
+              "La presión al nivel medio del mar, calculada por el servicio meteorológico con la atmósfera estándar",
+              "Altitud sobre el nivel medio del mar. Al aterrizar lees la elevación del aeródromo"
+            ],
+            [
+              "QFE",
+              "La presión en el aeródromo (en el punto de referencia o en el umbral)",
+              "Altura sobre el aeródromo. Al aterrizar lees cero"
+            ],
+            [
+              "QNE (1013,25 hPa)",
+              "La presión de la atmósfera estándar al nivel del mar",
+              "Altitud de presión y niveles de vuelo (FL)"
+            ]
+          ],
+          "src": "Doc 8168; SERA"
+        },
+        "note": {
+          "kind": "tip",
+          "text": "Los tres reglajes dan lecturas de la misma presión; lo que cambia es el origen de las medidas."
+        }
+      },
+      {
+        "title": "Altitud de transición, nivel de transición y capa de transición",
+        "text": [
+          "Por encima de cierta altitud interesa que todos los aviones usen el **mismo reglaje** (1013,25 hPa), de modo que sus lecturas sean comparables y se mantenga la separación vertical aunque el QNH cambie de una zona a otra. Por debajo, interesa saber la altitud real sobre el terreno, así que se usa el **QNH local**. El cambio entre una cosa y otra ocurre en la **altitud de transición (TA)**, y la información se da en niveles por encima del **nivel de transición (TL)**. Entre ambos queda la **capa de transición**.",
+          "Por debajo o a la TA, la posición vertical se da en **altitudes** (QNH). Por encima o a partir del TL, en **niveles de vuelo** (1013,25). Dentro de la capa de transición, ascendiendo se informa en niveles y descendiendo, en altitudes."
+        ],
+        "bullets": [
+          "**Ascendiendo**, al cruzar la altitud de transición, se pone **1013,25 hPa**.",
+          "**Descendiendo**, al cruzar el nivel de transición, se pone el **QNH**.",
+          "En España la altitud de transición habitual es **6000 ft**, con excepciones en algunos aeropuertos (AIP ENR 1.7).",
+          "El nivel de transición varía con el QNH: con presiones bajas el TL sube; el ATC o el ATIS te lo comunica."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Calcular una altitud de presión",
+        "text": [
+          "La altitud de presión es la que marcaría tu altímetro con 1013,25 hPa en la ventanilla. A nivel del mar, cada hectopascal de diferencia equivale a unos 30 ft (en examen se usa 30 ft por hPa)."
+        ],
+        "examples": [
+          {
+            "q": "En un aeródromo de elevación 600 ft el QNH es 1003 hPa. ¿Cuál es la altitud de presión?",
+            "a": "La presión es 10 hPa menor que la estándar, así que el altímetro con 1013 leería más bajo: 10 × 30 = 300 ft más. Altitud de presión = 600 + 300 = 900 ft."
+          }
+        ],
+        "figure": "calc:altimetry",
+        "caption": "Calculadora de QNH, QFE y 1013 para obtener la altitud de presión y la de densidad"
+      },
+      {
+        "title": "Errores típicos del reglaje",
+        "bullets": [
+          "Volar **de zona de altas a bajas presiones** sin reajustar: el altímetro lee de más y vuelas más bajo de lo que crees. Regla: «de alta a baja, cuidado con el suelo».",
+          "Volar de aire cálido a aire frío con el mismo reglaje: el altímetro lee de más y vuelas más bajo de lo que marca.",
+          "Con el reglaje de **QFE** no se leen altitudes: no sirve para evitar obstáculos en ruta.",
+          "No olvidar poner el QNH al descender: es una de las causas de accidentes en aproximación."
+        ]
+      },
+      {
+        "title": "El transpondedor: modos A, C y S",
+        "text": [
+          "El transpondedor responde a la interrogación de un radar secundario (SSR) y manda a tierra información que la antena primaria no recibe. Hay tres modos que debes distinguir."
+        ],
+        "table": {
+          "caption": "Modos del transpondedor",
+          "head": [
+            "Modo",
+            "Información que transmite"
+          ],
+          "rows": [
+            [
+              "A",
+              "Un código de cuatro dígitos octales (4096 posibles) que identifica la aeronave en la pantalla"
+            ],
+            [
+              "C",
+              "El código del modo A más la altitud de presión (en incrementos de 100 ft), referida a 1013,25 hPa"
+            ],
+            [
+              "S",
+              "Interrogación selectiva con la dirección de 24 bits de cada aeronave, más datos adicionales y un enlace de datos con el tráfico y con ATC"
+            ]
+          ],
+          "src": "Anexo 10; Doc 7030"
+        },
+        "bullets": [
+          "La altitud que transmite el modo C **no depende del reglaje del altímetro**: siempre es altitud de presión.",
+          "Los selectores típicos son OFF, STBY (espera), ON (modo A) y ALT (modos A y C). Pon ALT cuando ATC o el procedimiento lo requiera; en espera, el aparato no responde."
+        ]
+      },
+      {
+        "title": "Códigos especiales e IDENT",
+        "table": {
+          "caption": "Códigos de transpondedor",
+          "head": [
+            "Código",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "7000",
+              "Código VFR en Europa si ATC no asigna otro"
+            ],
+            [
+              "7500",
+              "Interferencia ilícita"
+            ],
+            [
+              "7600",
+              "Fallo de comunicaciones"
+            ],
+            [
+              "7700",
+              "Emergencia"
+            ]
+          ],
+          "src": "Doc 7030; SERA"
+        },
+        "text": [
+          "Cuando ATC te pide **IDENT** o «squawk ident», pulsas el botón IDENT una vez. Eso hace que tu marca destelle en la pantalla de ATC y te distingue de otros. No lo pulses sin que te lo pidan. Al cambiar de código en el mando evita pasar por 7500, 7600 o 7700 aunque sea un instante: podrías activar una alarma."
+        ]
+      }
+    ],
+    "numbers": [
+      "QNH → altitud; QFE → altura sobre el aeródromo; 1013,25 → altitud de presión y niveles de vuelo",
+      "Al subir se pone 1013,25 en la altitud de transición; al bajar, QNH en el nivel de transición",
+      "Altitud de transición habitual en España: 6000 ft",
+      "30 ft por hPa para estimar la altitud de presión",
+      "Modo A: 4096 códigos; modo C: añade altitud de presión; modo S: interrogación selectiva",
+      "7000 VFR; 7500 interferencia ilícita; 7600 fallo de radio; 7700 emergencia"
+    ],
+    "traps": [
+      "En la capa de transición se informa en niveles al subir y en altitudes al bajar.",
+      "Con el reglaje de QFE nunca lees altitudes sobre el nivel del mar.",
+      "La altitud del modo C es de presión, no de QNH.",
+      "De alta a baja presión el altímetro lee de más y el avión vuela más bajo de lo que marca."
+    ],
+    "spain": [
+      "La altitud de transición es 6000 ft con carácter general (AIP ENR 1.7), con excepciones locales publicadas.",
+      "El código VFR en España y Europa es 7000 salvo asignación distinta de ATC."
+    ],
+    "sources": [
+      {
+        "title": "Doc 8168 PANS-OPS (reglaje de altímetro)"
+      },
+      {
+        "title": "AIP España ENR 1.7: reglaje de altímetro (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/contenido_AIP/ENR/LE_ENR_1_7_en.pdf"
+      },
+      {
+        "title": "Doc 7030: Procedimientos suplementarios regionales (códigos SSR)"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología",
+        "href": "#/licencias/fraseologia"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "010.10.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué lee el altímetro con el QNH puesto en la ventanilla?",
+      "options": [
+        "La altura sobre el aeródromo",
+        "El nivel de vuelo",
+        "La altitud sobre el nivel medio del mar",
+        "Cero en tierra"
+      ],
+      "correct": 2,
+      "why": "El QNH hace que el altímetro indique altitud sobre el nivel medio del mar; en el aeródromo marca su elevación.",
+      "whyNot": [
+        "Eso es con el QFE.",
+        "Eso es con 1013,25 hPa.",
+        null,
+        "Con QNH lees la elevación del aeródromo."
+      ],
+      "ref": "Doc 8168"
+    },
+    {
+      "id": "010.10.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "Con el QFE puesto, el altímetro en el aeródromo marca:",
+      "options": [
+        "Cero",
+        "La elevación del aeródromo",
+        "1013",
+        "El nivel de vuelo del circuito"
+      ],
+      "correct": 0,
+      "why": "El QFE es la presión en el aeródromo: el altímetro indica altura sobre él, y cero al tomar tierra.",
+      "whyNot": [
+        null,
+        "Eso es con el QNH.",
+        "No muestra presión en la altura.",
+        "Eso es con 1013,25."
+      ],
+      "ref": "Doc 8168"
+    },
+    {
+      "id": "010.10.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué se mide con el reglaje 1013,25 hPa?",
+      "options": [
+        "Altitud sobre el nivel del mar",
+        "Altura sobre el aeródromo",
+        "Altitud de densidad",
+        "Altitud de presión y niveles de vuelo"
+      ],
+      "correct": 3,
+      "why": "Con 1013,25 hPa el altímetro indica la altitud de presión y se utiliza para los niveles de vuelo.",
+      "whyNot": [
+        "Eso es con QNH.",
+        "Eso es con QFE.",
+        "Requiere además corregir por temperatura.",
+        null
+      ],
+      "ref": "Doc 8168"
+    },
+    {
+      "id": "010.10.004",
+      "type": "regla",
+      "level": 1,
+      "q": "Subes y cruzas la altitud de transición. ¿Qué haces?",
+      "options": [
+        "Pones el QNH",
+        "Pones 1013,25 hPa en la ventanilla",
+        "Pones el QFE",
+        "No haces nada"
+      ],
+      "correct": 1,
+      "why": "Al ascender y cruzar la altitud de transición se cambia a 1013,25 hPa.",
+      "whyNot": [
+        "Es lo que se hace al descender.",
+        null,
+        "No es el reglaje de transición.",
+        "Hay que cambiar el reglaje."
+      ],
+      "ref": "SERA; Doc 8168"
+    },
+    {
+      "id": "010.10.005",
+      "type": "regla",
+      "level": 1,
+      "q": "Desciendes y cruzas el nivel de transición. ¿Qué haces?",
+      "options": [
+        "Pones el QNH",
+        "Pones 1013,25",
+        "Pones el QFE",
+        "Esperas a la altura de circuito"
+      ],
+      "correct": 0,
+      "why": "Al descender y cruzar el nivel de transición se pone el QNH.",
+      "whyNot": [
+        null,
+        "Es lo que se hace al subir.",
+        "Solo si lo pide ATC.",
+        "Debe hacerse al cruzar el nivel de transición."
+      ],
+      "ref": "SERA; Doc 8168"
+    },
+    {
+      "id": "010.10.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es la capa de transición?",
+      "options": [
+        "El espacio entre la TMA y la CTR",
+        "La capa donde se cambia el transpondedor",
+        "El espacio entre la altitud de transición y el nivel de transición",
+        "El espacio por debajo de 1000 ft AGL"
+      ],
+      "correct": 2,
+      "why": "La capa de transición queda entre la TA y el TL.",
+      "whyNot": [
+        "No es la capa de transición.",
+        "No es la capa de transición.",
+        null,
+        "No es la capa de transición."
+      ],
+      "ref": "Doc 8168"
+    },
+    {
+      "id": "010.10.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "Dentro de la capa de transición, ¿cómo se expresa la posición vertical al ascender?",
+      "options": [
+        "En altitudes",
+        "En niveles de vuelo",
+        "En alturas sobre el aeródromo",
+        "En pies sobre QFE"
+      ],
+      "correct": 1,
+      "why": "Al ascender dentro de la capa se informa en niveles; al descender, en altitudes.",
+      "whyNot": [
+        "Eso es al descender.",
+        null,
+        "No se usa.",
+        "No se usa."
+      ],
+      "ref": "Doc 8168"
+    },
+    {
+      "id": "010.10.008",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuál es la altitud de transición habitual en España?",
+      "options": [
+        "3000 ft",
+        "10 000 ft",
+        "FL100",
+        "6000 ft"
+      ],
+      "correct": 3,
+      "why": "El AIP ENR 1.7 fija 6000 ft con carácter general, con excepciones.",
+      "whyNot": [
+        "No es la cifra habitual.",
+        "Es la altitud de transición de otros Estados.",
+        "Es un nivel de vuelo.",
+        null
+      ],
+      "ref": "AIP ENR 1.7",
+      "es": true
+    },
+    {
+      "id": "010.10.009",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un aeródromo de elevación 600 ft con QNH 1003 hPa. ¿Cuál es la altitud de presión (30 ft por hPa)?",
+      "options": [
+        "300 ft",
+        "600 ft",
+        "900 ft",
+        "1200 ft"
+      ],
+      "correct": 2,
+      "why": "Diferencia de presión: 1013 − 1003 = 10 hPa → 300 ft. Altitud de presión = 600 + 300 = 900 ft.",
+      "whyNot": [
+        "Es solo la corrección por presión: te falta sumar la elevación.",
+        "Es la elevación del aeródromo: te falta sumar la corrección por presión.",
+        null,
+        "Estás sumando 600 ft a 600 ft."
+      ],
+      "ref": "Doc 8168"
+    },
+    {
+      "id": "010.10.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "Vuelas de una zona de altas presiones a otra de bajas sin cambiar el reglaje. ¿Qué ocurre?",
+      "options": [
+        "El altímetro lee más de lo real y vuelas más bajo de lo que marca",
+        "El altímetro lee menos de lo real y vuelas más alto",
+        "No cambia nada",
+        "El altímetro se bloquea"
+      ],
+      "correct": 0,
+      "why": "Si la presión baja, el altímetro (con el mismo reglaje) sobreindica: la altitud real es menor que la marcada.",
+      "whyNot": [
+        null,
+        "Es lo contrario.",
+        "Sí cambia.",
+        "No se bloquea."
+      ],
+      "ref": "Doc 8168"
+    },
+    {
+      "id": "010.10.011",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué transmite un transpondedor en modo A?",
+      "options": [
+        "La altitud de presión",
+        "La dirección de 24 bits",
+        "La velocidad de la aeronave",
+        "Un código de cuatro dígitos"
+      ],
+      "correct": 3,
+      "why": "El modo A transmite el código de identificación asignado.",
+      "whyNot": [
+        "Eso es el modo C.",
+        "Eso es el modo S.",
+        "No transmite eso.",
+        null
+      ],
+      "ref": "Anexo 10"
+    },
+    {
+      "id": "010.10.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué añade el modo C al modo A?",
+      "options": [
+        "La velocidad respecto al suelo",
+        "La altitud de presión",
+        "El QNH",
+        "La dirección de 24 bits"
+      ],
+      "correct": 1,
+      "why": "El modo C transmite la altitud de presión, en incrementos de 100 ft.",
+      "whyNot": [
+        "No la añade.",
+        null,
+        "No transmite el QNH.",
+        "Eso es el modo S."
+      ],
+      "ref": "Anexo 10"
+    },
+    {
+      "id": "010.10.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál es la característica del modo S?",
+      "options": [
+        "La interrogación selectiva con la dirección de 24 bits de cada aeronave",
+        "El código de 4096 posibilidades",
+        "Solo la altitud de presión",
+        "La emisión de voz"
+      ],
+      "correct": 0,
+      "why": "El modo S interroga selectivamente y permite enlace de datos.",
+      "whyNot": [
+        null,
+        "Eso es el modo A.",
+        "Eso es el modo C.",
+        "No transmite voz."
+      ],
+      "ref": "Anexo 10"
+    },
+    {
+      "id": "010.10.014",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Qué código de transpondedor se utiliza en VFR si ATC no asigna otro?",
+      "options": [
+        "2000",
+        "7700",
+        "7000",
+        "0000"
+      ],
+      "correct": 2,
+      "why": "En Europa el código VFR es 7000.",
+      "whyNot": [
+        "Es el código IFR sin asignar.",
+        "Es emergencia.",
+        null,
+        "No es el código VFR."
+      ],
+      "ref": "Doc 7030; SERA"
+    },
+    {
+      "id": "010.10.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "ATC te pide IDENT. ¿Qué haces?",
+      "options": [
+        "Cambias a 7700",
+        "Pulsas el botón IDENT una vez",
+        "Apagas el transpondedor un momento",
+        "Cambias a modo C"
+      ],
+      "correct": 1,
+      "why": "El botón IDENT hace destellar tu marca en la pantalla de ATC.",
+      "whyNot": [
+        "Es el código de emergencia.",
+        null,
+        "No es el procedimiento.",
+        "No es lo que se pide."
+      ],
+      "ref": "Doc 4444"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.010.10.01",
+      "front": "QNH",
+      "back": "Presión al nivel del mar: el altímetro marca altitud sobre el nivel medio del mar"
+    },
+    {
+      "id": "c.010.10.02",
+      "front": "QFE",
+      "back": "Presión del aeródromo: el altímetro marca altura sobre él y cero al aterrizar"
+    },
+    {
+      "id": "c.010.10.03",
+      "front": "1013,25 hPa",
+      "back": "Altitud de presión y niveles de vuelo"
+    },
+    {
+      "id": "c.010.10.04",
+      "front": "Cambio de reglaje",
+      "back": "Al subir, 1013,25 en la altitud de transición; al bajar, QNH en el nivel de transición"
+    },
+    {
+      "id": "c.010.10.05",
+      "front": "Altitud de transición en España",
+      "back": "6000 ft con carácter general"
+    },
+    {
+      "id": "c.010.10.06",
+      "front": "Modo A, C y S",
+      "back": "A: código; C: + altitud de presión; S: interrogación selectiva con dirección de 24 bits"
+    },
+    {
+      "id": "c.010.10.07",
+      "front": "Códigos especiales",
+      "back": "7000 VFR; 7500 interferencia ilícita; 7600 fallo de radio; 7700 emergencia"
+    }
+  ]
+}

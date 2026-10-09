@@ -1,0 +1,534 @@
+{
+  "lesson": {
+    "id": "020.04",
+    "title": "Mandos de vuelo",
+    "summary": "Mandos primarios (alerones, profundidad, dirección) y secundarios (flaps, compensadores), cómo se transmite el movimiento (cables, poleas, varillas), flaps manuales del PA-28 y eléctricos del C172S, compensadores, bloqueos y fallos.",
+    "objectives": [
+      "Relacionar cada mando primario con el eje y el movimiento que controla",
+      "Describir cómo se transmite el movimiento desde la cabina a las superficies",
+      "Explicar el funcionamiento y los límites de los flaps manuales del PA-28-161 y eléctricos del C172S",
+      "Entender el compensador (trim) y para qué sirve",
+      "Actuar ante un bloqueo o un fallo de mandos y comprobar los mandos en el prevuelo"
+    ],
+    "sections": [
+      {
+        "title": "Mandos primarios",
+        "text": [
+          "Los mandos primarios controlan el movimiento del avión alrededor de sus tres ejes. Cada uno tiene una superficie y un mando en cabina.",
+          "Con alerones **diferenciales**, el alerón que sube se desplaza más que el que baja: así se compensa la **guiñada adversa**, el efecto por el que el ala que sube, con el alerón bajado, genera más resistencia y el morro tiende a irse hacia el lado contrario del viraje."
+        ],
+        "table": {
+          "caption": "Mandos primarios",
+          "head": [
+            "Superficie",
+            "Eje",
+            "Movimiento",
+            "Mando en cabina"
+          ],
+          "rows": [
+            [
+              "Alerones",
+              "Longitudinal",
+              "Alabeo",
+              "Volante o palanca a un lado"
+            ],
+            [
+              "Timón de profundidad",
+              "Lateral",
+              "Cabeceo",
+              "Volante o palanca adelante y atrás"
+            ],
+            [
+              "Timón de dirección",
+              "Vertical",
+              "Guiñada",
+              "Pedales"
+            ]
+          ],
+          "src": "PHAK cap. 6"
+        },
+        "bullets": [
+          "Palanca hacia atrás: el borde de salida del timón de profundidad sube y el morro sube. Palanca adelante: el morro baja.",
+          "Volante a la derecha: el alerón derecho sube y el izquierdo baja; el avión alabea a la derecha.",
+          "Pedal derecho: el timón gira a la derecha y el morro guiña a la derecha.",
+          "El **PA-28-161** monta un **estabilizador móvil de una sola pieza (stabilator)** en lugar de estabilizador fijo y timón de profundidad: el volante lo mueve entero. El C172S lleva el timón de profundidad separado del estabilizador fijo."
+        ]
+      },
+      {
+        "title": "Cómo se transmite el movimiento",
+        "text": [
+          "Entre la cabina y las superficies hay un sistema mecánico. En los aviones ligeros se usan tres soluciones, a menudo combinadas:",
+          "**Cables y poleas**: ligeros y flexibles, con **tensores** (turnbuckles) para ajustar su tensión y **poleas** para guiarlos. Solo trabajan a tracción, de modo que hacen falta dos cables, uno de ida y otro de vuelta. **Varillas rígidas** (pushrods): trabajan a tracción y compresión, y se usan en recorridos cortos y rectos. **Tubos de torsión**: giran para transmitir el movimiento en un tramo. Los PA-28 y los C172 usan cables y poleas para los alerones, el timón de dirección y la profundidad, con algunos tramos de varillas."
+        ],
+        "bullets": [
+          "Un cable demasiado flojo da holgura; demasiado tenso, rigidez y desgaste. Cambia con la temperatura, por la dilatación.",
+          "**Masas de equilibrado** y compensación aerodinámica evitan el **aleteo (flutter)**, una vibración peligrosa de las superficies a alta velocidad.",
+          "Un **tope de recorrido** limita el movimiento de las superficies y protege la estructura."
+        ]
+      },
+      {
+        "title": "Flaps",
+        "text": [
+          "Los **flaps** son superficies secundarias en el borde de salida de las alas. Al extenderlos, aumentan la curvatura del perfil: suben el **coeficiente de sustentación** y la **resistencia**. Permiten volar más lento, bajar la velocidad de pérdida y aproximar con una pendiente más pronunciada sin ganar velocidad. El detalle aerodinámico está en Principios de vuelo."
+        ],
+        "table": {
+          "caption": "Flaps de los dos aviones del curso",
+          "head": [
+            "",
+            "PA-28-161 Warrior III",
+            "Cessna 172S"
+          ],
+          "rows": [
+            [
+              "Accionamiento",
+              "Manual: palanca entre los asientos con trinquete",
+              "Eléctrico: interruptor en el panel"
+            ],
+            [
+              "Posiciones",
+              "0°, 10°, 25° y 40°",
+              "0°, 10°, 20° y 30°"
+            ],
+            [
+              "Indicación",
+              "Posiciones por el recorrido de la palanca",
+              "Indicador de posición en el panel"
+            ],
+            [
+              "Fallo del sistema",
+              "Pérdida mecánica: se queda en la posición",
+              "Fallo eléctrico: se queda donde esté; guardar disyuntor y aterrizar con la configuración que haya"
+            ]
+          ],
+          "src": "POH PA-28-161 y C172S"
+        },
+        "verify": true,
+        "bullets": [
+          "Extiende los flaps solo por debajo de **VFE** (velocidad máxima con flaps extendidos), el límite del arco blanco.",
+          "En el PA-28-161 los flaps se bajan por escalones y se suben soltando el trinquete y levantando la palanca. Cada ajuste cambia el cabeceo: prepárate a compensar.",
+          "Los flaps **asimétricos** (uno sí y otro no) provocan un alabeo fuerte: se contrarresta con alerones, y se aterriza con cuidado según el POH."
+        ]
+      },
+      {
+        "title": "Compensadores (trim)",
+        "text": [
+          "El **compensador** es una pequeña superficie (**aleta o *tab***) en el borde de salida de un mando principal que permite mantener una posición **sin esfuerzo continuo** en la palanca. El compensador de profundidad es el más importante: con una **rueda** de compensación en cabina, la aleta se mueve en sentido contrario a la superficie; el flujo la empuja y la superficie principal se coloca en la posición que alivia el esfuerzo.",
+          "En vuelo se compensa para la velocidad que quieres: primero actitud y potencia, después se compensa para que el avión mantenga esa velocidad con la palanca suelta. El compensador no es un mando de maniobra: un compensador mal ajustado carga la palanca, sobre todo en la **arremetida** o en un aterrizaje a plena potencia. En el PA-28-161 el compensador de profundidad actúa sobre una aleta del estabilizador móvil."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Bloqueos y fallos",
+        "text": [
+          "En tierra, los **bloqueos de mandos** (gust lock o control lock) sujetan palanca y superficies contra el viento. Hay que **quitarlos antes de arrancar**: un bloqueo olvidado puede impedir el movimiento en el despegue. En el prevuelo se comprueban movimiento libre, sentido correcto, holguras, cables y herrajes.",
+          "En vuelo, los fallos son raros pero hay que tenerlos presentes. Si **se atasca la profundidad**, se controla el cabeceo con el compensador y la potencia. Si **se atascan los alerones**, se alabea con el timón de dirección. Si se rompe un cable, se pilota con los mandos restantes y se aterriza lo antes posible. La lista exacta es la del POH."
+        ]
+      }
+    ],
+    "numbers": [
+      "Alerones: longitudinal; profundidad: lateral; dirección: vertical",
+      "PA-28-161: stabilator y flaps manuales (0, 10, 25 y 40°); C172S: flaps eléctricos (0, 10, 20 y 30°)",
+      "Flaps solo por debajo de VFE; aleteo (flutter): vibración de las superficies",
+      "Compensador: aleta que mantiene la posición sin esfuerzo",
+      "Quitar el bloqueo de mandos antes de arrancar"
+    ],
+    "traps": [
+      "Confundir el eje de cada mando: los alerones controlan el alabeo (eje longitudinal).",
+      "Pensar que el compensador sustituye a la palanca: es un ajuste para quitar esfuerzo.",
+      "Extender flaps por encima de VFE.",
+      "Olvidar que en el PA-28 el estabilizador horizontal es móvil y entero.",
+      "Dar por buenos los mandos sin comprobar el sentido en el prevuelo."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 6",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Manual de vuelo del PA-28-161 y del C172S",
+        "url": "https://www.piper.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Prevuelo del PA-28: mandos de vuelo",
+        "href": "#/ac/pa28/flow/preflight"
+      },
+      {
+        "label": "Prevuelo del C172",
+        "href": "#/ac/c172/flow/preflight"
+      },
+      {
+        "label": "Antes del despegue en el PA-28",
+        "href": "#/ac/pa28/flow/beforeto"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.04.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "Los alerones controlan el movimiento alrededor del eje:",
+      "options": [
+        "Longitudinal",
+        "Lateral",
+        "Vertical",
+        "Transversal inclinado"
+      ],
+      "correct": 0,
+      "why": "Los alerones provocan el alabeo, giro alrededor del eje longitudinal.",
+      "whyNot": [
+        null,
+        "El eje lateral es el del cabeceo.",
+        "El eje vertical es el de la guiñada.",
+        "No existe tal eje."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.04.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "El timón de profundidad controla:",
+      "options": [
+        "El alabeo",
+        "La velocidad",
+        "La guiñada",
+        "El cabeceo"
+      ],
+      "correct": 3,
+      "why": "Mueve el morro arriba o abajo: movimiento de cabeceo alrededor del eje lateral.",
+      "whyNot": [
+        "Eso son los alerones.",
+        "La velocidad se controla con potencia y actitud.",
+        "Eso es el timón de dirección.",
+        null
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.04.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "Al tirar de la palanca hacia atrás, el borde de salida del timón de profundidad:",
+      "options": [
+        "Baja",
+        "Gira lateralmente",
+        "No se mueve",
+        "Sube"
+      ],
+      "correct": 3,
+      "why": "El borde de salida sube y la cola baja, de modo que el morro sube.",
+      "whyNot": [
+        "Bajaría con la palanca hacia delante.",
+        "Solo se mueve en el eje lateral.",
+        "Se mueve con la palanca.",
+        null
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.04.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "Los alerones diferenciales sirven para:",
+      "options": [
+        "Aumentar el cabeceo",
+        "Reducir el factor de carga",
+        "Aumentar la sustentación",
+        "Reducir la guiñada adversa"
+      ],
+      "correct": 3,
+      "why": "El alerón que sube se desplaza más que el que baja, para compensar la resistencia adicional del ala que sube y reducir la guiñada adversa.",
+      "whyNot": [
+        "No actúan sobre el cabeceo.",
+        "No cambian el factor de carga.",
+        "Los alerones no son hipersustentadores.",
+        null
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.04.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "El PA-28-161 monta, en lugar de estabilizador fijo y timón de profundidad:",
+      "options": [
+        "Un canard",
+        "Una cola en V",
+        "Un estabilizador móvil de una pieza (stabilator)",
+        "Un timón de doble pieza"
+      ],
+      "correct": 2,
+      "why": "El stabilator es un estabilizador entero que se mueve con el volante.",
+      "whyNot": [
+        "No tiene canard.",
+        "No es de cola en V.",
+        null,
+        "No existe esa solución en el PA-28."
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "020.04.006",
+      "type": "concepto",
+      "level": 1,
+      "q": "Los cables de mandos de vuelo trabajan principalmente a:",
+      "options": [
+        "Compresión",
+        "Tracción",
+        "Torsión",
+        "Flexión"
+      ],
+      "correct": 1,
+      "why": "Un cable solo puede tirar: por eso hay dos cables, uno para cada sentido.",
+      "whyNot": [
+        "Un cable se arruga si se comprime.",
+        null,
+        "No trabajan a torsión.",
+        "No trabajan a flexión."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.04.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es el aleteo (flutter)?",
+      "options": [
+        "Una vibración peligrosa de las superficies a alta velocidad",
+        "Un movimiento de la palanca en turbulencia",
+        "Un ruido del motor",
+        "Un fallo del compensador"
+      ],
+      "correct": 0,
+      "why": "El flutter es una vibración aeroelástica que puede destruir una superficie; se evita con masas de equilibrado.",
+      "whyNot": [
+        null,
+        "Es un fenómeno de las superficies, no de la palanca.",
+        "No tiene relación con el motor.",
+        "El compensador no lo provoca."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.04.008",
+      "type": "regla",
+      "level": 1,
+      "q": "Los flaps del PA-28-161 Warrior III se accionan:",
+      "options": [
+        "Con un motor eléctrico",
+        "Manualmente con una palanca",
+        "Hidráulicamente",
+        "Con un pedal"
+      ],
+      "correct": 1,
+      "why": "Son manuales: una palanca entre los asientos con trinquete.",
+      "whyNot": [
+        "Eso es el C172S.",
+        null,
+        "No usa hidráulica.",
+        "No se accionan con pedal."
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "020.04.009",
+      "type": "regla",
+      "level": 1,
+      "q": "Los flaps del C172S se accionan:",
+      "options": [
+        "Manualmente con palanca",
+        "Con un cable de tracción",
+        "Eléctricamente con un interruptor",
+        "Con un pedal"
+      ],
+      "correct": 2,
+      "why": "El C172S tiene flaps eléctricos con interruptor en el panel.",
+      "whyNot": [
+        "Eso es el PA-28.",
+        "No tiene cable de tracción directo.",
+        null,
+        "No se accionan con pedal."
+      ],
+      "ref": "POH C172S"
+    },
+    {
+      "id": "020.04.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "Al extender los flaps se aumentan:",
+      "options": [
+        "La sustentación y la resistencia",
+        "Solo la resistencia",
+        "La velocidad de pérdida",
+        "El alcance"
+      ],
+      "correct": 0,
+      "why": "El perfil con más curvatura da más sustentación y más resistencia: se vuela más lento y con más pendiente.",
+      "whyNot": [
+        null,
+        "También aumenta la sustentación.",
+        "Disminuye la velocidad de pérdida.",
+        "Aumenta la resistencia y reduce el alcance."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.04.011",
+      "type": "regla",
+      "level": 1,
+      "q": "La velocidad máxima con flaps extendidos se indica con:",
+      "options": [
+        "VNO",
+        "VA",
+        "VNE",
+        "VFE"
+      ],
+      "correct": 3,
+      "why": "VFE es el final del arco blanco.",
+      "whyNot": [
+        "VNO es el final del arco verde.",
+        "VA es la velocidad de maniobra.",
+        "VNE es la raya roja.",
+        null
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "020.04.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "El compensador de profundidad (trim) sirve para:",
+      "options": [
+        "Mantener la posición del avión sin esfuerzo continuo en la palanca",
+        "Aumentar el recorrido de la palanca",
+        "Frenar el avión",
+        "Sustituir al timón de profundidad"
+      ],
+      "correct": 0,
+      "why": "La aleta compensadora desplaza la superficie hasta una posición de equilibrio y alivia la carga en la palanca.",
+      "whyNot": [
+        null,
+        "No cambia el recorrido.",
+        "No es un freno.",
+        "El timón sigue siendo necesario."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.04.013",
+      "type": "regla",
+      "level": 2,
+      "q": "Se atascan los alerones en vuelo. ¿Cómo se controla el alabeo?",
+      "options": [
+        "Con el compensador de profundidad",
+        "Con los flaps",
+        "Con el timón de dirección",
+        "No se puede"
+      ],
+      "correct": 2,
+      "why": "El pedal produce guiñada y con ella alabeo (efecto secundario del timón), lo que permite virar.",
+      "whyNot": [
+        "El compensador actúa sobre el cabeceo.",
+        "Los flaps no controlan el alabeo.",
+        null,
+        "Con el timón sí se puede."
+      ],
+      "ref": "PHAK cap. 6; POH"
+    },
+    {
+      "id": "020.04.014",
+      "type": "regla",
+      "level": 1,
+      "q": "El bloqueo de mandos (gust lock) debe quitarse:",
+      "options": [
+        "Después de despegar",
+        "Solo si hay viento",
+        "Antes de arrancar y rodar",
+        "Nunca"
+      ],
+      "correct": 2,
+      "why": "Un bloqueo puesto impide mover los mandos: se quita en el prevuelo, antes de arrancar.",
+      "whyNot": [
+        "Sería demasiado tarde.",
+        "Se quita siempre, haya o no viento.",
+        null,
+        "Se retira siempre antes del vuelo."
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "020.04.015",
+      "type": "lectura",
+      "level": 2,
+      "q": "En el prevuelo del PA-28, al mover el volante a la izquierda ves que el alerón izquierdo baja. ¿Qué indica?",
+      "data": "Volante a la izquierda\nAlerón izquierdo: baja\nAlerón derecho: sube",
+      "options": [
+        "Funcionamiento correcto",
+        "Las conexiones están invertidas",
+        "Falta tensión en el cable",
+        "Los flaps están extendidos"
+      ],
+      "correct": 1,
+      "why": "El volante a la izquierda debe subir el alerón izquierdo y bajar el derecho. Si ocurre al revés, los mandos están invertidos: no se vuela.",
+      "whyNot": [
+        "Con el volante a la izquierda debe subir el alerón izquierdo.",
+        null,
+        "Los cables flojos darían holgura, no movimiento inverso.",
+        "Los flaps no afectan a los alerones."
+      ],
+      "ref": "POH; PHAK cap. 6"
+    },
+    {
+      "id": "020.04.016",
+      "type": "concepto",
+      "level": 3,
+      "q": "El efecto de un flap asimétrico (uno extendido y el otro no) es:",
+      "options": [
+        "Un alabeo hacia el lado del flap extendido",
+        "Un alabeo fuerte hacia el lado del flap retraído",
+        "Un cabeceo",
+        "Ninguno"
+      ],
+      "correct": 1,
+      "why": "El ala con flap extendido da más sustentación y sube: el avión alabea hacia el lado del flap retraído. Hay que contrarrestarlo con alerones.",
+      "whyNot": [
+        "El ala con flap extendido sube, no baja.",
+        null,
+        "El efecto principal es de alabeo.",
+        "Produce un alabeo notable."
+      ],
+      "ref": "PHAK cap. 6"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.04.01",
+      "front": "Ejes y mandos primarios",
+      "back": "Alerones: alabeo (longitudinal). Profundidad: cabeceo (lateral). Dirección: guiñada (vertical)"
+    },
+    {
+      "id": "c.020.04.02",
+      "front": "Flaps del PA-28-161 y del C172S",
+      "back": "PA-28: manuales (0, 10, 25 y 40°). C172S: eléctricos (0, 10, 20 y 30°)"
+    },
+    {
+      "id": "c.020.04.03",
+      "front": "Qué hace el compensador",
+      "back": "Mantiene la posición sin esfuerzo continuo en la palanca"
+    },
+    {
+      "id": "c.020.04.04",
+      "front": "Alerones atascados en vuelo",
+      "back": "Alabear con el timón de dirección y aterrizar cuanto antes"
+    },
+    {
+      "id": "c.020.04.05",
+      "front": "Estabilizador del PA-28",
+      "back": "Móvil de una sola pieza (stabilator)"
+    }
+  ]
+}

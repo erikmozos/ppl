@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <title>Estabilidad estática (bola en valle, llano y colina) y dinámica (oscilación amortiguada, mantenida y divergente)</title>
+  <defs>
+    <marker id="080-estabilidad-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+  </defs>
+  <text x="20" y="24" class="tx b">Estática: qué hace el avión al ser desplazado</text>
+  <path d="M30 100 C60 40 120 40 150 100" class="ln thick" fill="none" transform="translate(0 20) scale(1 -1) translate(0 -140)"/>
+  <circle cx="90" cy="82" r="9" class="ac"/>
+  <text x="90" y="128" class="txo b" text-anchor="middle">Positiva</text>
+  <text x="90" y="146" class="tx2" text-anchor="middle">tiende a volver</text>
+  <line x1="215" y1="100" x2="325" y2="100" class="ln thick"/>
+  <circle cx="270" cy="91" r="9" class="ac"/>
+  <text x="270" y="128" class="tx b" text-anchor="middle">Neutra</text>
+  <text x="270" y="146" class="tx2" text-anchor="middle">se queda donde la dejas</text>
+  <path d="M390 100 C420 40 480 40 510 100" class="ln thick" fill="none"/>
+  <circle cx="450" cy="45" r="9" class="ac"/>
+  <text x="450" y="128" class="txw b" text-anchor="middle">Negativa</text>
+  <text x="450" y="146" class="tx2" text-anchor="middle">se aleja cada vez más</text>
+  <text x="20" y="190" class="tx b">Dinámica: cómo evoluciona la perturbación con el tiempo</text>
+  <line x1="20" y1="270" x2="205" y2="270" class="ln2 dash"/>
+  <path d="M20 270 C35 205 50 205 60 270 C70 310 80 310 90 270 C97 245 104 245 111 270 C116 285 121 285 126 270 C130 262 134 262 138 270 L205 270" class="ok-ln thick" fill="none"/>
+  <text x="112" y="335" class="txo b" text-anchor="middle">Amortiguada</text>
+  <text x="112" y="351" class="tx2" text-anchor="middle">estable</text>
+  <line x1="225" y1="270" x2="410" y2="270" class="ln2 dash"/>
+  <path d="M225 270 C240 225 260 225 275 270 C290 315 310 315 325 270 C340 225 360 225 375 270 C385 295 400 305 410 285" class="ln thick" fill="none"/>
+  <text x="317" y="335" class="tx b" text-anchor="middle">Mantenida</text>
+  <text x="317" y="351" class="tx2" text-anchor="middle">amplitud constante</text>
+  <line x1="430" y1="270" x2="620" y2="270" class="ln2 dash"/>
+  <path d="M430 270 C440 255 450 255 460 270 C470 290 480 290 490 270 C505 235 520 235 535 270 C550 320 565 320 580 270 C595 215 610 200 620 185" class="wa-ln thick" fill="none"/>
+  <text x="525" y="335" class="txw b" text-anchor="middle">Divergente</text>
+  <text x="525" y="351" class="tx2" text-anchor="middle">inestable</text>
+</svg>

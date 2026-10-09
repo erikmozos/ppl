@@ -1,0 +1,501 @@
+{
+  "lesson": {
+    "id": "020.21",
+    "title": "Anemómetro y variómetro",
+    "summary": "Cómo mide la velocidad el anemómetro y qué distingue IAS, CAS, EAS y TAS; arcos de colores y su significado (amarillo solo en aire en calma); errores; y el variómetro con su retardo.",
+    "objectives": [
+      "Explicar cómo el anemómetro mide la presión dinámica y la convierte en velocidad",
+      "Diferenciar IAS, CAS, EAS y TAS y aproximar la TAS con la regla del 2 % por 1000 ft",
+      "Interpretar los arcos de colores y las velocidades características VS0, VS1, VFE, VNO y VNE",
+      "Reconocer los errores del anemómetro",
+      "Describir el variómetro, su retardo y el variómetro instantáneo"
+    ],
+    "sections": [
+      {
+        "title": "El anemómetro",
+        "text": [
+          "El anemómetro (ASI, *airspeed indicator*) recibe la **presión total** del pitot en una cápsula (o diafragma) y la **presión estática** en la caja que la rodea. La cápsula se hincha en función de la diferencia, es decir, de la **presión dinámica** q = ½ · ρ · V². El mecanismo transforma esa deformación en una aguja. Como la escala está calibrada para la densidad del nivel del mar en atmósfera estándar, el instrumento no da la velocidad real respecto al aire más que a nivel del mar.",
+          "Esto explica la diferencia entre varias velocidades. Todas se refieren al aire, no al suelo."
+        ]
+      },
+      {
+        "title": "IAS, CAS, EAS y TAS",
+        "table": {
+          "caption": "Velocidades del aire",
+          "head": [
+            "Sigla",
+            "Nombre",
+            "Qué es"
+          ],
+          "rows": [
+            [
+              "IAS",
+              "Velocidad indicada",
+              "Lo que lee el anemómetro"
+            ],
+            [
+              "CAS",
+              "Velocidad calibrada",
+              "IAS corregida por error de instrumento y de posición (tablas del POH)"
+            ],
+            [
+              "EAS",
+              "Velocidad equivalente",
+              "CAS corregida por compresibilidad (casi nula en avionetas)"
+            ],
+            [
+              "TAS",
+              "Velocidad verdadera",
+              "EAS corregida por la densidad real del aire: velocidad del avión respecto al aire"
+            ]
+          ],
+          "src": "PHAK cap. 8"
+        },
+        "text": [
+          "Cada vez que se corrige un efecto, se obtiene una velocidad nueva. La cadena es la de la tabla.",
+          "A baja velocidad, el error de compresibilidad es despreciable y CAS ≈ EAS. La diferencia importante para ti es **IAS frente a TAS**. Al subir, la densidad baja y para igual presión dinámica el avión va más deprisa: la **TAS es mayor que la IAS** y la diferencia crece con la altitud y con la temperatura. Una regla aproximada: **TAS ≈ IAS + 2 % por cada 1000 ft** de altitud de presión (válida en altitudes bajas)."
+        ],
+        "formulas": [
+          {
+            "f": "TAS ≈ IAS × (1 + 0,02 × altitud en miles de ft)",
+            "note": "Aproximación; a mayor temperatura, algo mayor."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Vuelas con 100 kt de IAS a 6000 ft de altitud de presión. ¿Cuál es la TAS aproximada?",
+            "a": "2 % × 6 = 12 %. 100 × 1,12 = 112 kt."
+          },
+          {
+            "q": "Con IAS 90 kt a 4000 ft, ¿qué TAS esperas?",
+            "a": "8 %: 90 × 1,08 ≈ 97 kt."
+          }
+        ],
+        "figure": "calc:tas",
+        "caption": "Calculadora de velocidades: IAS, altitud de presión y temperatura dan la TAS."
+      },
+      {
+        "title": "Arcos de colores y velocidades características",
+        "text": [
+          "Los arcos de colores del anemómetro marcan los rangos de velocidad que fija el manual de vuelo. Se refieren siempre a **IAS**.",
+          "El **arco blanco** va de VS0 (velocidad de pérdida con flaps y tren en configuración de aterrizaje) a **VFE** (velocidad máxima con flaps extendidos): es el rango de uso de los flaps. El **arco verde** va de **VS1** (pérdida en configuración limpia) a **VNO** (velocidad máxima de crucero estructural): es el rango de operación normal. El **arco amarillo** va de **VNO a VNE** y solo se vuela **en aire en calma**, con precaución y sin movimientos bruscos de mandos; la **raya roja** marca **VNE**, la velocidad que nunca se debe exceder."
+        ],
+        "figure": "svg:020-arcos-anemometro",
+        "caption": "Arcos del anemómetro con valores de ejemplo cercanos a los de un PA-28-161.",
+        "table": {
+          "caption": "Velocidades de los dos aviones del curso (aproximadas; consulta el POH)",
+          "head": [
+            "",
+            "PA-28-161 Warrior III",
+            "Cessna 172S"
+          ],
+          "rows": [
+            [
+              "VS0 (inicio del arco blanco)",
+              "44 kt",
+              "40 kt"
+            ],
+            [
+              "VS1 (inicio del arco verde)",
+              "50 kt",
+              "48 kt"
+            ],
+            [
+              "VFE (fin del arco blanco)",
+              "103 kt",
+              "85 kt con flaps completos (110 kt con 10°)"
+            ],
+            [
+              "VNO (fin del arco verde)",
+              "126 kt",
+              "129 kt"
+            ],
+            [
+              "VNE (raya roja)",
+              "160 kt",
+              "163 kt"
+            ]
+          ],
+          "src": "POH PA-28-161 y C172S"
+        },
+        "verify": true,
+        "bullets": [
+          "**Aire en calma**: las ráfagas y la turbulencia generan cargas extra; entre VNO y VNE solo se vuela sin turbulencia.",
+          "**VA** (velocidad de maniobra) no suele estar marcada: un mando a fondo por debajo de VA no rompe el avión, pero depende de la masa."
+        ]
+      },
+      {
+        "title": "Errores del anemómetro",
+        "text": [
+          "Además de los obstáculos del sistema pitot-estático (020.19), el anemómetro tiene errores propios: **de instrumento** (fabricación), **de posición** (flujo local en las tomas, variable con el ángulo de ataque y los flaps), **de compresibilidad** (importa a velocidades altas) y **de densidad** (la diferencia entre IAS y TAS). A velocidades bajas, con flaps y morro alto, el error de posición es mayor, por lo que los POH incluyen una tabla de IAS a CAS."
+        ]
+      },
+      {
+        "title": "El variómetro",
+        "text": [
+          "El variómetro (VSI) indica la **velocidad vertical** en pies por minuto. Una cápsula recibe la presión estática directamente y la caja que la rodea la recibe a través de un **orificio calibrado**. Cuando el avión sube o baja, la presión de la cápsula cambia de inmediato, pero la de la caja tarda en igualarse: esa diferencia mueve la aguja.",
+          "Al depender de ese retardo, el variómetro tiene un **retraso de unos 6 a 9 segundos** en estabilizarse. El **variómetro instantáneo (IVSI)** añade un acelerómetro que reacciona antes: al tirar de los mandos, la lectura sube enseguida. En vuelo recto y nivelado debe marcar cero; si no es así, se corrige el desvío del cero en el prevuelo."
+        ]
+      }
+    ],
+    "numbers": [
+      "TAS ≈ IAS + 2 % por cada 1000 ft de altitud de presión",
+      "Arco blanco: VS0 a VFE; verde: VS1 a VNO; amarillo: VNO a VNE solo en aire en calma; raya roja: VNE",
+      "PA-28-161 (POH, aproximado): VS0 44, VS1 50, VFE 103, VNO 126, VNE 160 kt",
+      "IAS → CAS (instrumento y posición) → EAS (compresibilidad) → TAS (densidad)",
+      "Variómetro: retraso 6-9 s; el IVSI reacciona antes"
+    ],
+    "traps": [
+      "Creer que el arco amarillo es de uso normal: solo se vuela en aire en calma.",
+      "Pensar que los arcos están en TAS: están en IAS.",
+      "Confundir VNO (fin del arco verde) con VNE (raya roja).",
+      "Pensar que la TAS es menor que la IAS en altitud: es mayor.",
+      "Olvidar que el variómetro tarda unos segundos en estabilizarse: no se persigue la aguja."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 8",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Manual de vuelo del PA-28-161 y del C172S, sección 2: limitaciones",
+        "url": "https://www.piper.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Cabina del PA-28 (anemómetro)",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.21.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "El anemómetro mide:",
+      "options": [
+        "La presión estática",
+        "La variación de la presión estática",
+        "La temperatura del aire",
+        "La presión dinámica (total menos estática)"
+      ],
+      "correct": 3,
+      "why": "La cápsula recibe la presión total y la caja la estática; su deformación mide la diferencia, es decir, la presión dinámica.",
+      "whyNot": [
+        "La estática se mide con el altímetro.",
+        "La variación de la estática la mide el variómetro.",
+        "No es un termómetro.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.21.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "La velocidad que lee directamente el anemómetro es la:",
+      "options": [
+        "TAS",
+        "IAS",
+        "CAS",
+        "Velocidad respecto al suelo"
+      ],
+      "correct": 1,
+      "why": "IAS es la lectura directa del instrumento, sin ninguna corrección.",
+      "whyNot": [
+        "La TAS exige corregir por densidad.",
+        null,
+        "La CAS corrige errores de instrumento y posición.",
+        "La velocidad respecto al suelo incluye el viento."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.21.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "La CAS es la IAS corregida por:",
+      "options": [
+        "Temperatura y densidad",
+        "Viento",
+        "Compresibilidad",
+        "Error de instrumento y de posición"
+      ],
+      "correct": 3,
+      "why": "CAS = IAS corregida por el error del instrumento y el error de posición de las tomas.",
+      "whyNot": [
+        "Eso lleva a la TAS.",
+        "El viento afecta a la velocidad respecto al suelo.",
+        "Eso lleva a la EAS.",
+        null
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.21.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "En altitud, para una misma IAS, la TAS es:",
+      "options": [
+        "Mayor",
+        "Igual",
+        "Menor",
+        "Cero"
+      ],
+      "correct": 0,
+      "why": "La densidad baja con la altitud; para igual presión dinámica el avión va más deprisa respecto al aire.",
+      "whyNot": [
+        null,
+        "Solo coinciden al nivel del mar estándar.",
+        "Sería menor en un lugar con aire más denso que el estándar.",
+        "No tiene sentido físico."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.21.005",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con IAS 100 kt a 5000 ft de altitud de presión, la TAS aproximada con la regla del 2 % por 1000 ft es:",
+      "options": [
+        "110 kt",
+        "100 kt",
+        "105 kt",
+        "120 kt"
+      ],
+      "correct": 0,
+      "why": "2 % × 5 = 10 %: 100 × 1,10 = 110 kt.",
+      "whyNot": [
+        null,
+        "Ignora la altitud.",
+        "Aplica un 1 % por 1000 ft.",
+        "Aplica un 4 % por 1000 ft."
+      ],
+      "ref": "Regla TAS ≈ IAS + 2 % por 1000 ft"
+    },
+    {
+      "id": "020.21.006",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con IAS 90 kt a 8000 ft, la TAS aproximada es:",
+      "options": [
+        "90 kt",
+        "98 kt",
+        "104 kt",
+        "81 kt"
+      ],
+      "correct": 2,
+      "why": "2 % × 8 = 16 %: 90 × 1,16 ≈ 104 kt.",
+      "whyNot": [
+        "Ignora la altitud.",
+        "Aplica un 8 % en total.",
+        null,
+        "Resta en vez de sumar."
+      ],
+      "ref": "Regla TAS ≈ IAS + 2 % por 1000 ft"
+    },
+    {
+      "id": "020.21.007",
+      "type": "regla",
+      "level": 1,
+      "q": "El arco verde del anemómetro va de:",
+      "options": [
+        "VS0 a VFE",
+        "VS1 a VNO",
+        "VNO a VNE",
+        "VFE a VNE"
+      ],
+      "correct": 1,
+      "why": "El arco verde cubre el rango normal de operación: de la pérdida en configuración limpia (VS1) a VNO.",
+      "whyNot": [
+        "Eso es el arco blanco.",
+        null,
+        "Eso es el arco amarillo.",
+        "No es ningún arco."
+      ],
+      "ref": "POH; FAR 23.1545"
+    },
+    {
+      "id": "020.21.008",
+      "type": "regla",
+      "level": 1,
+      "q": "El arco amarillo del anemómetro, entre VNO y VNE, solo se usa:",
+      "options": [
+        "En aire en calma y con precaución",
+        "En cualquier condición",
+        "En descenso",
+        "Con flaps extendidos"
+      ],
+      "correct": 0,
+      "why": "Entre VNO y VNE la estructura no admite cargas de ráfaga fuertes: solo se vuela en aire en calma.",
+      "whyNot": [
+        null,
+        "Con turbulencia es peligroso.",
+        "El descenso no cambia el límite.",
+        "Con flaps hay un límite menor (VFE)."
+      ],
+      "ref": "POH; FAR 23.1545"
+    },
+    {
+      "id": "020.21.009",
+      "type": "regla",
+      "level": 1,
+      "q": "La raya roja del anemómetro marca:",
+      "options": [
+        "VNE",
+        "VNO",
+        "VFE",
+        "VS0"
+      ],
+      "correct": 0,
+      "why": "La raya roja indica la velocidad que nunca debe excederse (VNE).",
+      "whyNot": [
+        null,
+        "VNO es el final del arco verde.",
+        "VFE es el final del arco blanco.",
+        "VS0 es el principio del arco blanco."
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "020.21.010",
+      "type": "regla",
+      "level": 2,
+      "q": "El arco blanco va de:",
+      "options": [
+        "VS1 a VNO",
+        "VNO a VNE",
+        "VS0 a VFE",
+        "VFE a VNE"
+      ],
+      "correct": 2,
+      "why": "Es el rango de velocidades con flaps extendidos, de la pérdida en configuración de aterrizaje a la velocidad máxima con flaps.",
+      "whyNot": [
+        "Eso es el arco verde.",
+        "Eso es el amarillo.",
+        null,
+        "No es un arco."
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "020.21.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "El variómetro tiene un retraso de:",
+      "options": [
+        "Unos 2 minutos",
+        "Unos 6 a 9 segundos",
+        "Ningún retraso",
+        "30 segundos"
+      ],
+      "correct": 1,
+      "why": "El orificio calibrado retrasa la igualación de la presión de la caja con la de la cápsula.",
+      "whyNot": [
+        "Es demasiado para un instrumento de este tipo.",
+        null,
+        "Sí tiene retraso.",
+        "30 segundos es excesivo."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.21.012",
+      "type": "concepto",
+      "level": 3,
+      "q": "El variómetro instantáneo (IVSI) mejora al convencional porque:",
+      "options": [
+        "Mide la presión total",
+        "Incorpora un acelerómetro que reacciona antes",
+        "No usa presión estática",
+        "Tiene una cápsula más grande"
+      ],
+      "correct": 1,
+      "why": "El acelerómetro reacciona de inmediato a los cambios de actitud y compensa el retraso inicial.",
+      "whyNot": [
+        "La presión total no interviene.",
+        null,
+        "Sí usa presión estática.",
+        "El tamaño de la cápsula no explica la mejora."
+      ],
+      "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.21.013",
+      "type": "lectura",
+      "level": 2,
+      "q": "Según la figura, volar a 135 kt de IAS con turbulencia fuerte es:",
+      "figure": "svg:020-arcos-anemometro",
+      "options": [
+        "Normal, está en el arco verde",
+        "Correcto, está en el arco blanco",
+        "Peligroso: supera la raya roja",
+        "Inadecuado: está en el arco amarillo"
+      ],
+      "correct": 3,
+      "why": "135 kt está entre VNO (126) y VNE (160): arco amarillo, solo permitido en aire en calma.",
+      "whyNot": [
+        "El verde termina en 126 kt.",
+        "El arco blanco termina en 103 kt.",
+        "La raya roja está en 160 kt.",
+        null
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "020.21.014",
+      "type": "concepto",
+      "level": 3,
+      "q": "El error de posición del anemómetro es mayor:",
+      "options": [
+        "En crucero con flaps retraídos",
+        "En vuelo recto y nivelado a velocidad alta",
+        "A baja velocidad, con flaps y morro alto",
+        "En tierra"
+      ],
+      "correct": 2,
+      "why": "A baja velocidad y con ángulos de ataque grandes, el flujo local en las tomas es más desfavorable.",
+      "whyNot": [
+        "En crucero el error es pequeño.",
+        "A velocidad alta y con poco ángulo de ataque el error es mínimo.",
+        null,
+        "En tierra no hay flujo."
+      ],
+      "ref": "PHAK cap. 8"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.21.01",
+      "front": "IAS, CAS, EAS y TAS",
+      "back": "IAS lectura; CAS corrige instrumento y posición; EAS compresibilidad; TAS densidad"
+    },
+    {
+      "id": "c.020.21.02",
+      "front": "Regla de TAS",
+      "back": "TAS ≈ IAS + 2 % por cada 1000 ft"
+    },
+    {
+      "id": "c.020.21.03",
+      "front": "Arco verde y arco blanco",
+      "back": "Verde: VS1 a VNO. Blanco: VS0 a VFE"
+    },
+    {
+      "id": "c.020.21.04",
+      "front": "Arco amarillo",
+      "back": "De VNO a VNE; solo en aire en calma"
+    },
+    {
+      "id": "c.020.21.05",
+      "front": "Retardo del variómetro",
+      "back": "6 a 9 segundos; el IVSI usa un acelerómetro para reaccionar antes"
+    }
+  ]
+}

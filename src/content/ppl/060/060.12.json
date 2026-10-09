@@ -1,0 +1,647 @@
+{
+ "lesson": {
+  "title": "VOR",
+  "summary": "VHF omnidireccional: principio, radiales, OBS y CDI, TO/FROM, cono de silencio, alcance, errores, identificación y cómo interceptar y seguir un radial.",
+  "objectives": [
+   "Explicar el principio del VOR y qué es un radial",
+   "Interpretar el CDI, el OBS y la bandera TO/FROM",
+   "Determinar en qué radial estás y cómo interceptar y seguir uno",
+   "Entender el cono de silencio, el alcance y las limitaciones",
+   "Identificar la estación y reconocer una indicación no fiable"
+  ],
+  "sections": [
+   {
+    "title": "Principio del VOR",
+    "text": [
+     "El **VOR** (VHF omnidirectional range) emite en **VHF entre 108,0 y 117,975 MHz**, con una separación de 50 kHz entre canales, y da al receptor de a bordo la **dirección magnética desde la estación** hasta él. Cada dirección se llama **radial**: el radial 090 es la línea que sale de la estación hacia el este. Hay 360 radiales, referidos al norte magnético de la estación.",
+     "La estación emite dos señales de 30 Hz. Una es la **de referencia**, igual en todas las direcciones. La otra, **variable**, gira alrededor de la estación como un faro, y su fase respecto a la de referencia depende de la dirección. El receptor mide la diferencia de fase entre ambas y de ella obtiene el radial en el que está. Es una ayuda de **línea de vista** y no sufre los efectos nocturno ni de costa del NDB.",
+     "Las frecuencias de 108,00 a 111,975 MHz se reparten con el ILS. Las que tienen una **cifra impar en las décimas** (108,10; 108,15; 110,30…) son de localizadores ILS; las de décima par (108,00; 108,05; 108,20…) son de VOR."
+    ]
+   },
+   {
+    "title": "Los instrumentos: OBS, CDI y TO/FROM",
+    "text": [
+     "El indicador de VOR de la cabina tiene tres elementos. El **OBS** (omnibearing selector) es el mando con el que seleccionas el radial o el curso que quieres. El **CDI** (course deviation indicator) es la aguja vertical que indica si el curso seleccionado está a tu izquierda o a tu derecha. El indicador **TO/FROM** señala si, siguiendo el curso seleccionado, **te acercas a la estación o te alejas de ella**.",
+     "El CDI tiene una **deflexión completa de 10° a cada lado** del curso, y cada punto de la escala equivale a **2°**. A 60 NM de la estación, 1° son 1 NM, así que un punto son unas 2 NM de desplazamiento a esa distancia, y esa sensibilidad aumenta al acercarte. **El CDI no depende del rumbo del avión**: la aguja se mueve solo si cambia tu posición respecto al radial seleccionado."
+    ],
+    "figure": "svg:060-vor-cdi",
+    "caption": "Con OBS 360°: centrado y TO (estás en el radial 180); aguja a la izquierda; centrado y FROM (radial 360); bandera de alarma.",
+    "bullets": [
+     "Aguja a la izquierda: el curso seleccionado está a tu izquierda; gira hacia él.",
+     "Aguja a la derecha: el curso seleccionado está a tu derecha.",
+     "TO: el curso seleccionado te lleva hacia la estación; FROM: te aleja de ella.",
+     "Bandera OFF (o NAV): señal débil o equipo averiado; no uses la indicación."
+    ]
+   },
+   {
+    "title": "Simulador de VOR",
+    "text": [
+     "Mueve el avión alrededor de la estación y gira el OBS. Verás cómo cambian el CDI y el indicador TO/FROM; compruébalo antes con las reglas de arriba."
+    ],
+    "figure": "sim:vor"
+   },
+   {
+    "title": "En qué radial estás y cómo interceptar uno",
+    "text": [
+     "Para saber en qué radial estás, **gira el OBS hasta centrar la aguja con FROM**: la lectura del OBS es el radial. Si centras con TO, el OBS marca el QDM (rumbo a la estación) y el radial en el que estás es el recíproco.",
+     "Para **interceptar un radial** sin viento: sintoniza e identifica la estación; pon el OBS en el radial o el curso deseado; vuela un rumbo que forme **30° o 45°** con el curso, hacia él (con el CDI deflectado, el curso está del lado de la aguja); cuando la aguja se empiece a mover hacia el centro, gira hacia el curso para tomar el rumbo del curso, y corrige la deriva. Para **seguir** el radial, pequeñas correcciones de 5° a 10° hacia el lado de la aguja y vuelve al rumbo del curso con una corrección menor cuando se centra.",
+     "Si vuelas **en sentido contrario** al curso seleccionado, la aguja actúa al revés (**sensación inversa**): para evitarlo, pon el OBS en el curso que vuelas (el rumbo magnético aproximado) y comprueba que el indicador muestra TO si vas hacia la estación y FROM si te alejas."
+    ],
+    "examples": [
+     {
+      "q": "OBS 360° con TO y aguja centrada. ¿En qué radial estás?",
+      "a": "Siguiendo 360° llegarías a la estación (TO). Estás al sur de ella, en el radial 180°."
+     },
+     {
+      "q": "OBS 270° con FROM y aguja centrada.",
+      "a": "Estás en el radial 270°, al oeste de la estación, y si sigues el rumbo 270° te alejas de ella."
+     },
+     {
+      "q": "Con OBS 090° y TO, la aguja está dos puntos a la derecha. ¿Dónde está el curso 090° respecto a ti y qué haces?",
+      "a": "A tu derecha, 4° del curso (dos puntos de 2°). Vira a la derecha, en dirección a la aguja."
+     },
+     {
+      "q": "El CDI muestra tres puntos de desviación a 30 NM de la estación. ¿Cuántas millas estás del curso?",
+      "a": "3 puntos = 6°; 6° × 30 / 60 = 3 NM."
+     }
+    ]
+   },
+   {
+    "title": "Tiempo a la estación",
+    "text": [
+     "Con el mismo método del ADF puedes estimar el tiempo hasta la estación: vuela perpendicular al radial, con el OBS en el radial que cruzas y mide cuánto tarda el CDI en cambiar una cantidad de grados. Con el avión en el través: **tiempo a la estación (min) = segundos transcurridos / grados de cambio de radial**."
+    ],
+    "examples": [
+     {
+      "q": "Con rumbo perpendicular al radial, el radial cambia 10° en 4 minutos. ¿Cuánto falta?",
+      "a": "240 s / 10° = 24 minutos."
+     }
+    ]
+   },
+   {
+    "title": "Cono de silencio, alcance y errores",
+    "text": [
+     "Justo sobre la estación hay una zona en la que la señal desaparece, el **cono de silencio** (un cono invertido con el vértice en la antena). Al atravesarlo, el CDI se vuelve errático, la bandera TO/FROM oscila y puede aparecer OFF; el cono es tanto más ancho cuanto más alto vuelas. Por eso, el paso por la estación se reconoce por el **cambio de TO a FROM** tras un instante de indicación errática.",
+     "El alcance es de **línea de vista**: crece con la altitud y lo limitan el relieve y la curvatura. Con 5000 ft se alcanza una distancia del orden de 80 NM, según el terreno. Los errores del VOR son las reflexiones en montañas y edificios (trayectorias múltiples), que dan una aguja inestable en ciertos radiales; la técnica **Doppler (DVOR)** reduce la sensibilidad al emplazamiento. Es habitual comprobar el receptor en tierra y en el aire contra puntos de verificación publicados."
+    ],
+    "note": {
+     "kind": "warn",
+     "text": "Antes de fiarte de un VOR, escucha su identificación en morse (tres letras, repetida cada unos 30 segundos). Si no hay identificación o suena un mensaje de prueba, no uses la estación aunque el instrumento indique algo."
+    }
+   }
+  ],
+  "numbers": [
+   "VOR: 108,0–117,975 MHz; décimas pares para VOR en 108–111,975 MHz, impares para ILS",
+   "Radial: dirección magnética desde la estación; 360 radiales",
+   "CDI: deflexión completa 10° a cada lado; un punto = 2°",
+   "Radial con FROM centrado = lectura del OBS; con TO centrado, el radial es el recíproco",
+   "Tiempo a la estación (min) = segundos / grados de cambio de radial"
+  ],
+  "traps": [
+   "El CDI no depende del rumbo del avión.",
+   "Radial es «desde» la estación; QDM es «hacia» ella.",
+   "Volar contra el curso seleccionado produce sensación inversa.",
+   "El VOR no tiene efecto nocturno ni de costa.",
+   "El cono de silencio está sobre la estación, no a un lado.",
+   "Una bandera OFF o sin identificación hace inútil la indicación."
+  ],
+  "sources": [
+   {
+    "title": "OACI, Anexo 10, vol. I: ayudas radioeléctricas, VOR"
+   },
+   {
+    "title": "FAA, Instrument Flying Handbook (FAA-H-8083-15B), cap. 9 y PHAK cap. 16",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation"
+   },
+   {
+    "title": "ENAIRE, AIP España, ENR 4.1",
+    "url": "https://aip.enaire.es/"
+   }
+  ],
+  "id": "060.12",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "060.12.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "El VOR proporciona al piloto:",
+   "options": [
+    "La marcación relativa",
+    "La distancia a la estación",
+    "El radial magnético en el que está respecto a la estación",
+    "La altitud"
+   ],
+   "correct": 2,
+   "why": "El VOR da la dirección magnética desde la estación, el radial, sin importar el rumbo del avión.",
+   "whyNot": [
+    "Es la medida del ADF.",
+    "La distancia la da el DME.",
+    null,
+    "No da altitud."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.12.002",
+   "type": "regla",
+   "level": 1,
+   "q": "La banda de frecuencias del VOR es:",
+   "options": [
+    "960 a 1215 MHz",
+    "190 a 1750 kHz",
+    "118 a 137 MHz",
+    "108,0 a 117,975 MHz"
+   ],
+   "correct": 3,
+   "why": "El VOR utiliza la parte baja de VHF, entre 108,0 y 117,975 MHz.",
+   "whyNot": [
+    "Es la del DME.",
+    "Es la del NDB.",
+    "Es la de comunicaciones.",
+    null
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.12.003",
+   "type": "concepto",
+   "level": 1,
+   "q": "El radial 090 de un VOR es:",
+   "options": [
+    "El rumbo a volar para ir a la estación",
+    "La línea que sale de la estación hacia el este magnético",
+    "La línea que llega a la estación desde el este",
+    "El norte verdadero"
+   ],
+   "correct": 1,
+   "why": "Un radial es una dirección magnética medida desde la estación hacia fuera.",
+   "whyNot": [
+    "El rumbo para ir a la estación sería el QDM (270°).",
+    null,
+    "Un radial es desde la estación.",
+    "La referencia es magnética, no verdadera."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.12.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "El CDI del VOR depende de:",
+   "options": [
+    "La posición del avión respecto al radial seleccionado",
+    "El rumbo del avión",
+    "La velocidad",
+    "La altitud"
+   ],
+   "correct": 0,
+   "why": "La aguja se mueve cuando cambia tu posición respecto al radial, no cuando cambia el rumbo.",
+   "whyNot": [
+    null,
+    "Girar el avión no mueve la aguja.",
+    "No depende de la velocidad.",
+    "No depende de la altitud."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.12.005",
+   "type": "regla",
+   "level": 2,
+   "q": "La deflexión completa del CDI de un VOR equivale a:",
+   "options": [
+    "5° a cada lado",
+    "10° a cada lado del curso",
+    "20° a cada lado",
+    "2° a cada lado"
+   ],
+   "correct": 1,
+   "why": "Cada punto son 2° y hay cinco puntos a cada lado: 10°.",
+   "whyNot": [
+    "No es el valor estándar.",
+    null,
+    "No es el valor estándar.",
+    "Es lo que vale un punto."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.12.006",
+   "type": "calculo",
+   "level": 2,
+   "q": "A 30 NM de la estación, el CDI marca 3 puntos de desviación. La distancia al curso es de:",
+   "options": [
+    "3 NM",
+    "10 NM",
+    "6 NM",
+    "1,5 NM"
+   ],
+   "correct": 0,
+   "why": "3 puntos = 6°; 6° × 30 / 60 = 3 NM (1 en 60).",
+   "whyNot": [
+    null,
+    "Es la deflexión completa en grados, no la distancia.",
+    "Es el ángulo en grados (6°), no la distancia.",
+    "Correspondería a una distancia de 15 NM."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.12.007",
+   "type": "calculo",
+   "level": 1,
+   "q": "OBS 360° con TO y aguja centrada. Estás en el radial:",
+   "options": [
+    "360°",
+    "090°",
+    "270°",
+    "180°"
+   ],
+   "correct": 3,
+   "why": "Si 360° te lleva a la estación, estás al sur de ella, en el radial 180°.",
+   "whyNot": [
+    "Con FROM sería el radial 360°.",
+    "No tiene relación.",
+    "No tiene relación.",
+    null
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.12.008",
+   "type": "calculo",
+   "level": 1,
+   "q": "OBS 270° con FROM y aguja centrada. Estás en el radial:",
+   "options": [
+    "180°",
+    "360°",
+    "270°",
+    "090°"
+   ],
+   "correct": 2,
+   "why": "Con FROM centrado, el radial coincide con el valor del OBS.",
+   "whyNot": [
+    "No tiene relación.",
+    "No tiene relación.",
+    null,
+    "Es el recíproco: con TO."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.12.009",
+   "type": "concepto",
+   "level": 1,
+   "q": "El indicador TO/FROM del VOR señala:",
+   "options": [
+    "Si el VOR está encendido",
+    "Si el avión está a la izquierda o a la derecha",
+    "Si la señal es fuerte",
+    "Si siguiendo el curso seleccionado vas hacia la estación o te alejas de ella"
+   ],
+   "correct": 3,
+   "why": "TO significa que el curso seleccionado conduce a la estación; FROM, que se aleja de ella.",
+   "whyNot": [
+    "No es su función.",
+    "Eso lo hace la aguja del CDI.",
+    "La bandera de alarma indica señal débil.",
+    null
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.12.010",
+   "type": "lectura",
+   "level": 2,
+   "q": "En la figura, con OBS 360° la segunda indicación (aguja a la izquierda) significa que debes:",
+   "figure": "svg:060-vor-cdi",
+   "options": [
+    "Virar hacia la derecha",
+    "Mantener el rumbo",
+    "Virar hacia la izquierda, hacia el curso",
+    "Cambiar el OBS a 180°"
+   ],
+   "correct": 2,
+   "why": "La aguja indica en qué lado está el curso: si está a la izquierda, gira hacia ese lado para interceptarlo.",
+   "whyNot": [
+    "Sería alejarse del curso.",
+    "No conseguirías centrar la aguja.",
+    null,
+    "No se recomienda cambiar el OBS."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.12.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "El cono de silencio es:",
+   "options": [
+    "La zona de sombra tras una montaña",
+    "La zona sobre la estación en la que no se recibe señal fiable",
+    "La zona del NDB",
+    "Un cono de ruido del motor"
+   ],
+   "correct": 1,
+   "why": "Sobre la antena se anula la señal y el CDI y el TO/FROM se vuelven erráticos.",
+   "whyNot": [
+    "Es otro fenómeno distinto.",
+    null,
+    "Es característica del VOR.",
+    "No está relacionado con el motor."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.12.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "Si vuelas en sentido contrario al curso seleccionado en el OBS, la aguja:",
+   "options": [
+    "Se bloquea",
+    "Marca TO siempre",
+    "Funciona normalmente",
+    "Actúa al revés (sensación inversa)"
+   ],
+   "correct": 3,
+   "why": "El CDI indica dónde está el curso seleccionado; si vuelas el recíproco, parece que hay que girar al lado contrario.",
+   "whyNot": [
+    "No se bloquea.",
+    "Mostraría FROM.",
+    "El sentido contrario produce un comportamiento invertido.",
+    null
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.12.013",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una bandera OFF en el indicador del VOR indica:",
+   "options": [
+    "El avión está a la derecha del radial",
+    "La estación está identificada",
+    "Señal insuficiente o equipo averiado: no se debe usar la indicación",
+    "El avión está sobre la estación"
+   ],
+   "correct": 2,
+   "why": "La bandera de alarma avisa de que la indicación no es fiable.",
+   "whyNot": [
+    "Eso lo indica la aguja del CDI.",
+    "La identificación es en morse.",
+    null,
+    "Sobre la estación hay un cono de silencio."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.12.014",
+   "type": "concepto",
+   "level": 1,
+   "q": "Antes de usar un VOR hay que:",
+   "options": [
+    "Poner el OBS a cero",
+    "Cambiar a modo ANT",
+    "Subir el volumen al máximo",
+    "Escuchar su identificación en morse"
+   ],
+   "correct": 3,
+   "why": "La identificación en morse confirma que es la estación correcta y que no está en pruebas.",
+   "whyNot": [
+    "No es un requisito.",
+    "El modo ANT es del ADF.",
+    "No es un requisito.",
+    null
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.12.015",
+   "type": "concepto",
+   "level": 1,
+   "q": "El alcance del VOR está limitado por:",
+   "options": [
+    "La ionosfera",
+    "La línea de vista",
+    "La curvatura con onda de tierra",
+    "La hora del día"
+   ],
+   "correct": 1,
+   "why": "Es una ayuda VHF de línea de vista: el alcance crece con la altitud.",
+   "whyNot": [
+    "No usa reflexión ionosférica.",
+    null,
+    "No sigue la curvatura.",
+    "No depende de la hora."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.12.016",
+   "type": "concepto",
+   "level": 2,
+   "q": "A diferencia del NDB, el VOR:",
+   "options": [
+    "No sufre efecto nocturno ni de costa",
+    "Usa onda de tierra",
+    "Sufre efecto de costa",
+    "Sufre efecto nocturno"
+   ],
+   "correct": 0,
+   "why": "En VHF y con propagación de línea de vista, el VOR no tiene esos errores.",
+   "whyNot": [
+    null,
+    "Usa onda directa.",
+    "Es del NDB.",
+    "Es del NDB."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.12.017",
+   "type": "calculo",
+   "level": 2,
+   "q": "Perpendicular al radial, este cambia 10° en 4 minutos. El tiempo hasta la estación es de:",
+   "options": [
+    "40 min",
+    "24 min",
+    "4 min",
+    "2,5 min"
+   ],
+   "correct": 1,
+   "why": "240 s / 10° = 24 minutos.",
+   "whyNot": [
+    "Resulta de multiplicar 4 × 10.",
+    null,
+    "Es el tiempo medido.",
+    "Resulta de dividir 10 / 4."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.12.018",
+   "type": "concepto",
+   "level": 2,
+   "q": "Las frecuencias entre 108,00 y 111,975 MHz con la cifra de las décimas impar corresponden a:",
+   "options": [
+    "VOR",
+    "Localizadores ILS",
+    "DME",
+    "NDB"
+   ],
+   "correct": 1,
+   "why": "En 108–111,975 MHz, las décimas impares son de ILS y las pares de VOR.",
+   "whyNot": [
+    "Los VOR usan las décimas pares en esa banda.",
+    null,
+    "El DME es UHF.",
+    "El NDB es LF/MF."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.12.019",
+   "type": "concepto",
+   "level": 2,
+   "q": "Para saber en qué radial estás, giras el OBS hasta centrar la aguja con:",
+   "options": [
+    "OFF",
+    "Cualquier indicación",
+    "FROM",
+    "TO"
+   ],
+   "correct": 2,
+   "why": "Con FROM centrado, el OBS marca el radial en el que estás.",
+   "whyNot": [
+    "OFF es una bandera de alarma.",
+    "El valor depende de TO o FROM.",
+    null,
+    "Con TO obtienes el QDM."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.12.020",
+   "type": "calculo",
+   "level": 2,
+   "q": "OBS 090° con TO y la aguja a la derecha, dos puntos. El curso 090° queda a tu:",
+   "options": [
+    "Derecha, a unos 4°",
+    "Izquierda, a unos 10°",
+    "Derecha, a unos 2°",
+    "Izquierda, a unos 4°"
+   ],
+   "correct": 0,
+   "why": "La aguja se desplaza hacia el lado donde está el curso: dos puntos = 4°.",
+   "whyNot": [
+    null,
+    "Cada punto son 2°.",
+    "Cada punto son 2°; hay dos puntos.",
+    "Lo indica la aguja: a la derecha."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.12.021",
+   "type": "concepto",
+   "level": 2,
+   "q": "Las trayectorias múltiples (reflexiones en terreno o edificios) afectan al VOR produciendo:",
+   "options": [
+    "Un alcance mayor",
+    "Un cono de silencio mayor",
+    "Una aguja inestable en ciertos radiales",
+    "Una bandera OFF permanente"
+   ],
+   "correct": 2,
+   "why": "Las reflexiones modifican la fase que mide el receptor y producen oscilaciones en ciertos radiales.",
+   "whyNot": [
+    "No aumentan el alcance.",
+    "No es la causa del cono.",
+    null,
+    "No es la causa de OFF permanente."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.12.022",
+   "type": "calculo",
+   "level": 2,
+   "q": "Estás en el radial 225° de un VOR y quieres volar hacia la estación. Seleccionas en el OBS:",
+   "options": [
+    "045° y verás TO",
+    "045° y verás FROM",
+    "225° y verás TO",
+    "225° y verás FROM"
+   ],
+   "correct": 0,
+   "why": "Hacia la estación vuelas el recíproco del radial: 225 − 180 = 045°, y el indicador marca TO.",
+   "whyNot": [
+    null,
+    "Con 045° el curso va hacia la estación, así que verías TO y no FROM.",
+    "Con 225° seleccionado el indicador no puede mostrar TO: ese curso te aleja.",
+    "Con 225° verías FROM, pero ese curso te aleja de la estación."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.12.023",
+   "type": "concepto",
+   "level": 1,
+   "q": "Un radial de VOR se mide respecto al:",
+   "options": [
+    "Norte magnético de la estación",
+    "Norte de la brújula del avión",
+    "Rumbo del avión",
+    "Norte verdadero"
+   ],
+   "correct": 0,
+   "why": "El radial se refiere al norte magnético en la estación (variación declarada en el AIP).",
+   "whyNot": [
+    null,
+    "La brújula del avión no interviene en el radial.",
+    "El radial no depende del rumbo.",
+    "Los VOR se alinean con el norte magnético, no con el verdadero."
+   ],
+   "ref": "Anexo 10 OACI"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.060.12.01",
+   "front": "VOR",
+   "back": "108,0–117,975 MHz; radial = dirección magnética desde la estación"
+  },
+  {
+   "id": "c.060.12.02",
+   "front": "CDI",
+   "back": "Deflexión completa 10° por lado; cada punto 2°; no depende del rumbo"
+  },
+  {
+   "id": "c.060.12.03",
+   "front": "En qué radial estás",
+   "back": "OBS centrando la aguja con FROM: el valor del OBS es el radial"
+  },
+  {
+   "id": "c.060.12.04",
+   "front": "TO/FROM",
+   "back": "TO: el curso seleccionado te lleva a la estación; FROM: te aleja"
+  },
+  {
+   "id": "c.060.12.05",
+   "front": "Cono de silencio",
+   "back": "Zona sobre la estación sin señal fiable; cambio de TO a FROM al pasar"
+  },
+  {
+   "id": "c.060.12.06",
+   "front": "VOR frente a NDB",
+   "back": "El VOR no sufre efecto nocturno ni de costa"
+  },
+  {
+   "id": "c.060.12.07",
+   "front": "Frecuencias VOR e ILS",
+   "back": "En 108–111,975 MHz: décimas pares VOR, impares localizador ILS"
+  }
+ ]
+}

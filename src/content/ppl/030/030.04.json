@@ -1,0 +1,1096 @@
+{
+ "lesson": {
+  "title": "Cálculo del CG",
+  "summary": "Equilibrio de momentos, datum y brazo, método aritmético, tablas de momentos, envolvente gráfica, hoja de carga con CG al despegue, al aterrizaje y sin combustible, mover o añadir carga e informe de pesada.",
+  "objectives": [
+   "Calcular masa, momento y CG de una carga completa con el método aritmético",
+   "Comprobar el resultado en la envolvente y en las tres situaciones: despegue, aterrizaje y sin combustible",
+   "Resolver cuánto hay que mover, añadir o quitar para corregir un CG fuera de límites",
+   "Obtener la masa en vacío básica y su brazo a partir de un informe de pesada",
+   "Manejar tablas de momentos y unidades inglesas (lb, in, USG)"
+  ],
+  "sections": [
+   {
+    "title": "El principio: equilibrio de momentos",
+    "text": [
+     "El avión se comporta como una balanza. Si lo apoyas en un único punto, queda en equilibrio cuando los momentos a un lado y otro se compensan. Ese punto de apoyo es el **centro de gravedad (CG)**. El **momento** de una carga es su masa por su **brazo**, la distancia horizontal que la separa de una referencia. Esa referencia es el **datum**: un plano vertical arbitrario que fija el fabricante (en muchos aviones, la pared de fuego o el borde de ataque del ala). Los brazos se miden desde el datum: positivos hacia atrás, negativos si la carga está por delante.",
+     "El CG de todo el avión se obtiene sumando los momentos de todas las masas y dividiendo por la masa total. Es la media de los brazos ponderada por las masas, y ahí está la clave: lo que pesa más manda."
+    ],
+    "formulas": [
+     {
+      "f": "Momento = masa × brazo",
+      "note": "kg · m (o lb · in)."
+     },
+     {
+      "f": "CG = Σ momentos / Σ masas",
+      "note": "La suma incluye la masa en vacío básica con su brazo."
+     }
+    ],
+    "figure": "svg:030-brazos",
+    "caption": "Datum, brazos y momentos en el avión de ejemplo."
+   },
+   {
+    "title": "Método aritmético paso a paso",
+    "text": [
+     "Para un avión de ejemplo con masa en vacío básica de 690 kg (brazo 2,18 m), asientos delanteros a 2,05 m, traseros a 3,00 m, equipaje a 3,60 m y combustible a 2,40 m (todo medido desde el datum), el procedimiento es siempre el mismo:"
+    ],
+    "bullets": [
+     "**1.** Escribe cada elemento con su masa en kg. El combustible, que se carga en litros, se pasa a kg con AVGAS = 0,72 kg/l.",
+     "**2.** Multiplica la masa por el brazo para sacar el momento de cada línea.",
+     "**3.** Suma masas y suma momentos.",
+     "**4.** Divide la suma de momentos entre la suma de masas: ese es el CG.",
+     "**5.** Comprueba la masa contra la MTOM y el CG contra la envolvente, a esa masa.",
+     "**6.** Repite para el aterrizaje y para el avión sin combustible."
+    ],
+    "table": {
+     "caption": "Ejemplo 1: piloto y acompañante 160 kg, equipaje 20 kg, 150 l de AVGAS",
+     "head": [
+      "Elemento",
+      "Masa (kg)",
+      "Brazo (m)",
+      "Momento (kg·m)"
+     ],
+     "rows": [
+      [
+       "Masa en vacío básica",
+       "690,0",
+       "2,18",
+       "1504,2"
+      ],
+      [
+       "Asientos delanteros",
+       "160,0",
+       "2,05",
+       "328,0"
+      ],
+      [
+       "Equipaje",
+       "20,0",
+       "3,60",
+       "72,0"
+      ],
+      [
+       "Combustible (150 l × 0,72)",
+       "108,0",
+       "2,40",
+       "259,2"
+      ],
+      [
+       "Total al despegue",
+       "978,0",
+       "2,212",
+       "2163,4"
+      ]
+     ],
+     "src": "Datos de ejemplo"
+    },
+    "examples": [
+     {
+      "q": "Calcula el CG del ejemplo 1 y comprueba que está en límites.",
+      "a": "Masa = 690 + 160 + 20 + 108 = 978 kg (menor que la MTOM de 1100 kg). Momento = 2163,4 kg·m. CG = 2163,4 / 978 = 2,212 m. El límite delantero a 978 kg es 2,148 m y el trasero 2,36 m: el CG está dentro."
+     }
+    ]
+   },
+   {
+    "title": "La envolvente gráfica",
+    "text": [
+     "La **envolvente de CG** es la gráfica del manual que dibuja, para cada masa, entre qué posiciones puede estar el CG. El límite trasero es una línea vertical (2,36 m en el avión de ejemplo). El **límite delantero** no lo es: se mantiene en 2,10 m hasta unos 885 kg y a partir de ahí **se desplaza hacia atrás** hasta 2,21 m a la masa máxima de 1100 kg. Al aumentar la masa se exige un CG más atrasado, porque con el avión más pesado hace falta más autoridad de profundidad para rotar. Para comprobar un punto, entra por la masa en vertical y por el CG en horizontal: debe caer dentro del polígono.",
+     "En la envolvente de ejemplo, D (despegue, 1035,8 kg y 2,265 m), A (aterrizaje, 971,0 kg y 2,256 m) y Z (sin combustible, 935 kg y 2,250 m) caen dentro. El punto X (1000 kg y 2,14 m) está fuera porque, a esa masa, el límite delantero es 2,159 m."
+    ],
+    "figure": "svg:030-envolvente",
+    "caption": "Envolvente del avión de ejemplo con tres puntos dentro (D, A y Z) y uno fuera (X).",
+    "note": {
+     "kind": "tip",
+     "text": "Si trabajas con una tabla de límites, interpola: el límite delantero a una masa intermedia está entre los valores de las filas vecinas, en proporción a la masa."
+    }
+   },
+   {
+    "title": "Tablas de momentos (índice)",
+    "text": [
+     "Muchos manuales no te piden multiplicar: te dan una **tabla de momentos** o una **gráfica de carga** en la que, para cada masa de cada elemento, lees ya su momento (a menudo dividido entre 100 o entre 1000 para manejar números pequeños). Tú solo sumas. Después, en la envolvente, entras con la masa total y el **momento total** (o el índice) en lugar de entrar con el CG. Es el mismo cálculo, con otra escala.",
+     "La tabla siguiente es la del combustible del avión de ejemplo (brazo 2,40 m, 0,72 kg/l), con el momento expresado en kg·m / 100:"
+    ],
+    "table": {
+     "caption": "Combustible: litros, masa y momento / 100 (brazo 2,40 m)",
+     "head": [
+      "Litros",
+      "Masa (kg)",
+      "Momento / 100"
+     ],
+     "rows": [
+      [
+       "20",
+       "14,4",
+       "0,35"
+      ],
+      [
+       "40",
+       "28,8",
+       "0,69"
+      ],
+      [
+       "60",
+       "43,2",
+       "1,04"
+      ],
+      [
+       "80",
+       "57,6",
+       "1,38"
+      ],
+      [
+       "100",
+       "72,0",
+       "1,73"
+      ],
+      [
+       "120",
+       "86,4",
+       "2,07"
+      ],
+      [
+       "140",
+       "100,8",
+       "2,42"
+      ],
+      [
+       "160",
+       "115,2",
+       "2,76"
+      ],
+      [
+       "182",
+       "131,0",
+       "3,14"
+      ]
+     ],
+     "src": "Datos de ejemplo"
+    },
+    "examples": [
+     {
+      "q": "Con la tabla anterior, ¿cuál es el índice del combustible de 100 l y cuánto vale el momento real?",
+      "a": "Índice 1,73 (kg·m/100), es decir, 172,8 kg·m: 72,0 kg × 2,40 m."
+     }
+    ]
+   },
+   {
+    "title": "Hoja de carga completa: despegue, aterrizaje y sin combustible",
+    "text": [
+     "Cargar bien un avión no es solo calcular el CG al despegue. Hay tres puntos que debes comprobar en la envolvente:"
+    ],
+    "bullets": [
+     "**Al despegue:** masa de rampa menos el combustible de rodaje (el CG es el de la carga al despegue).",
+     "**Al aterrizaje:** restas el combustible de viaje y, con él, su momento. Si el combustible está detrás del CG, el CG **avanza**; si está delante, **retrocede**.",
+     "**Sin combustible utilizable (ZFM):** es el caso más desfavorable si el combustible está detrás del CG: el CG puede salirse por el límite delantero. Hay que comprobarlo aunque no vayas a volar así."
+    ],
+    "examples": [
+     {
+      "q": "Continúa el ejemplo 1: tras consumir 60 l, ¿dónde queda el CG al aterrizar?",
+      "a": "Combustible gastado: 60 × 0,72 = 43,2 kg. Masa = 978,0 − 43,2 = 934,8 kg. Momento = 2163,4 − 43,2 × 2,40 = 2059,72 kg·m. CG = 2,203 m. El combustible estaba detrás del CG (2,212 m), así que el CG avanzó 9 mm."
+     },
+     {
+      "q": "¿Y el ZFM del ejemplo 1?",
+      "a": "Sin combustible: masa 870 kg, momento 1904,2 kg·m, CG = 2,189 m. Con 870 kg el límite delantero sigue en 2,10 m: dentro."
+     },
+     {
+      "q": "Ejemplo 2: piloto 80 kg, 160 kg en los asientos traseros, 40 kg de equipaje y 100 l. ¿Es seguro?",
+      "a": "Masa = 690 + 80 + 160 + 40 + 72 = 1042 kg (menor que 1100). Momento = 1504,2 + 164,0 + 480,0 + 144,0 + 172,8 = 2465,0 kg·m. CG = 2465,0 / 1042 = 2,366 m, por detrás del límite trasero (2,36 m). **Fuera de límites**, aunque la masa sea correcta. Tras consumir 60 l el CG avanza solo a 2,364 m: sigue fuera."
+     }
+    ]
+   },
+   {
+    "title": "Corregir un CG fuera de límites",
+    "text": [
+     "Cuando el CG no cabe en la envolvente tienes tres herramientas: mover cargas, quitarlas o añadirlas. Para **mover** una masa m una distancia d, el CG se desplaza hacia el lado al que llevas la carga:",
+     "La masa que aparece dividiendo es la **masa total del avión**, no la de la carga movida. Para **añadir o quitar** una carga el cálculo es una media ponderada nueva: nuevo CG = (momento total ± m·brazo) / (masa total ± m)."
+    ],
+    "formulas": [
+     {
+      "f": "ΔCG = m × d / M",
+      "note": "m = masa movida; d = distancia movida; M = masa total del avión."
+     },
+     {
+      "f": "m = M × ΔCG / d",
+      "note": "Masa que hay que mover para desplazar el CG ΔCG."
+     },
+     {
+      "f": "Nuevo CG = (Σ momentos ± m · brazo) / (M ± m)",
+      "note": "Añadir (+) o quitar (−) una carga m en su brazo."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Ejemplo 3: masa 1017 kg y CG 2,264 m. Se pasan 25 kg de carga del asiento trasero (3,00 m) al delantero (2,05 m). ¿Nuevo CG?",
+      "a": "d = 3,00 − 2,05 = 0,95 m hacia delante. ΔCG = 25 × 0,95 / 1017 = 0,0234 m. Nuevo CG = 2,264 − 0,023 = 2,240 m. (Comprobación por momentos: (2302,0 − 75,0 + 51,25) / 1017 = 2,240.)"
+     },
+     {
+      "q": "Con los datos del ejemplo 2 (masa 1042 kg y CG 2,366 m), ¿cuántos kg de equipaje de los asientos traseros hay que pasar a la plaza delantera para bajar el CG a 2,34 m?",
+      "a": "ΔCG = 2,366 − 2,34 = 0,0256 m; d = 0,95 m. m = 1042 × 0,0256 / 0,95 ≈ 28,1 kg."
+     },
+     {
+      "q": "Con los datos del ejemplo 2, ¿cuánto equipaje (brazo 3,60 m) hay que sacar para llegar justo al límite trasero?",
+      "a": "(2465,0 − 3,60 x) / (1042 − x) = 2,36 → x = (2465,0 − 2,36 × 1042) / (3,60 − 2,36) = 4,74 kg. En la práctica se quitan 10 kg o más para tener margen: con 5 kg menos el CG sería 2,3597 m, apenas dentro."
+     },
+     {
+      "q": "Con los datos del ejemplo 3 (masa 1017 kg, CG 2,264 m), ¿qué CG resulta si se añaden 15 kg al equipaje (3,60 m)?",
+      "a": "Momento = 2302,0 + 15 × 3,60 = 2356,0 kg·m; masa = 1032 kg. CG = 2,283 m."
+     },
+     {
+      "q": "En el ejemplo 3 baja el pasajero de atrás de 75 kg (brazo 3,00 m). ¿Nuevo CG?",
+      "a": "Masa = 942 kg; momento = 2077,0 kg·m. CG = 2,205 m."
+     }
+    ]
+   },
+   {
+    "title": "Informe de pesada: la masa en vacío básica",
+    "text": [
+     "La masa en vacío básica y su brazo no son datos de catálogo: salen de **pesar el avión**. Se coloca sobre básculas bajo cada rueda (con los depósitos a combustible no utilizable, aceite completo y la configuración de equipo que tiene el avión), se anota la lectura de cada rueda y se calcula el CG con los brazos de las ruedas. El resultado va al **informe de pesada** y al manual, y es el punto de partida de toda hoja de carga. La norma (**NCO.POL.105**) exige que la masa y el CG estén establecidos por pesada real antes de entrar en servicio, que se documenten los efectos acumulados de modificaciones y reparaciones y que el avión se vuelva a pesar si estos efectos no se conocen con exactitud."
+    ],
+    "examples": [
+     {
+      "q": "Pesada con la rueda de morro (brazo 1,45 m) a 215,0 kg y las dos principales (brazo 2,50 m) a 480,0 kg en total. ¿BEM y brazo?",
+      "a": "Masa = 215,0 + 480,0 = 695,0 kg. Momento = 215,0 × 1,45 + 480,0 × 2,50 = 311,75 + 1200,0 = 1511,75 kg·m. Brazo = 1511,75 / 695,0 = 2,175 m."
+     }
+    ],
+    "note": {
+     "kind": "warn",
+     "text": "Si cambia el equipo instalado (radio, asientos, ELT), el BEM y su brazo cambian: usa siempre el valor actualizado del informe de pesada, no el del manual de fábrica."
+    }
+   },
+   {
+    "title": "Unidades inglesas: lb, in y galones",
+    "text": [
+     "Algunos manuales usan libras, pulgadas y galones americanos. El método es idéntico; solo cambian las unidades y las conversiones: 1 kg = 2,205 lb; 1 in = 0,0254 m; 1 USG = 3,785 l; el AVGAS pesa unas 6 lb por galón (0,72 kg/l)."
+    ],
+    "examples": [
+     {
+      "q": "BEM 1540 lb a 86,0 in; asientos delanteros 330 lb a 80,5 in; equipaje 40 lb a 142,8 in; 40 USG de AVGAS a 95,0 in. ¿Masa y CG?",
+      "a": "Combustible: 40 × 6 = 240 lb. Masa = 1540 + 330 + 40 + 240 = 2150 lb (≈ 975 kg). Momento = 132 440 + 26 565 + 5712 + 22 800 = 187517 lb·in. CG = 187517 / 2150 = 87,22 in (≈ 2,215 m)."
+     }
+    ]
+   },
+   {
+    "title": "Calculadora de masa y centrado",
+    "text": [
+     "Practica con la calculadora: cambia la carga y observa cómo se desplazan los puntos de despegue y aterrizaje en la envolvente y cuándo salen. Los datos son de un PA-28-161 de ejemplo, no de tu avión."
+    ],
+    "figure": "calc:cg",
+    "caption": "Masa y centrado de un PA-28-161 de ejemplo."
+   },
+   {
+    "title": "Errores típicos al calcular",
+    "bullets": [
+     "Usar **litros como kilos** en el combustible.",
+     "**No sumar el avión vacío** con su brazo propio (olvidar el BEM o usar el brazo equivocado).",
+     "Calcular la media de los brazos en lugar de ponderar por las masas.",
+     "Comprobar el CG con la envolvente pero **no la masa** contra la MTOM, o al revés.",
+     "**No comprobar el aterrizaje ni el avión sin combustible.**",
+     "Usar el límite delantero del avión ligero para un avión pesado: el límite cambia con la masa.",
+     "En ΔCG = m·d/M, dividir por la masa movida en lugar de por la masa total."
+    ]
+   }
+  ],
+  "numbers": [
+   "Momento = masa × brazo; CG = Σ momentos / Σ masas",
+   "ΔCG = m · d / M (M = masa total)",
+   "AVGAS 0,72 kg/l; 1 USG = 3,785 l; 1 kg = 2,205 lb; 1 in = 0,0254 m",
+   "Comprobar CG al despegue, al aterrizaje y sin combustible",
+   "NCO.POL.105: masa y CG por pesada real; volver a pesar si no se conocen los efectos de las modificaciones",
+   "Combustible detrás del CG: al gastarlo el CG avanza"
+  ],
+  "traps": [
+   "Se calcula bien el CG al despegue pero se olvida el aterrizaje o el avión sin combustible: puede salirse por delante.",
+   "El combustible está en litros y la tabla pide kilos (0,72 kg/l).",
+   "El límite delantero depende de la masa: no es una vertical.",
+   "En ΔCG = m·d/M, M es la masa total, no la movida."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Aircraft Weight and Balance Handbook (FAA-H-8083-1B)",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/aircraft_weight_balance_handbook"
+   },
+   {
+    "title": "EASA, Part-NCO y AMC/GM (Reglamento (UE) 965/2012), Easy Access Rules for Air Operations",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 030",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "030.04",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "030.04.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "El momento de una carga respecto al datum se calcula como:",
+   "options": [
+    "Masa dividida entre el brazo",
+    "Masa por brazo",
+    "Masa más brazo",
+    "Brazo dividido entre la masa"
+   ],
+   "correct": 1,
+   "why": "Momento = masa × brazo, en kg·m (o lb·in). Es la base de toda la hoja de carga.",
+   "whyNot": [
+    "Dividir daría una magnitud sin sentido físico para este cálculo.",
+    null,
+    "Una suma mezclaría kilos con metros.",
+    "Eso es la inversa de la masa por unidad de brazo, que no se usa."
+   ],
+   "ref": "FAA-H-8083-1B, cap. 4"
+  },
+  {
+   "id": "030.04.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "El datum es:",
+   "options": [
+    "El centro de gravedad del avión vacío",
+    "El punto de aplicación de la sustentación",
+    "La posición del piloto",
+    "Un plano vertical de referencia desde el que se miden los brazos"
+   ],
+   "correct": 3,
+   "why": "El fabricante fija el datum de forma arbitraria; todos los brazos del manual se miden desde él.",
+   "whyNot": [
+    "El CG del avión vacío es un dato calculado, no la referencia.",
+    "La sustentación actúa en el centro de presiones.",
+    "La posición del piloto es un brazo más.",
+    null
+   ],
+   "ref": "FAA-H-8083-1B, cap. 4"
+  },
+  {
+   "id": "030.04.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una carga situada por delante del datum tiene un brazo:",
+   "options": [
+    "Negativo",
+    "Positivo",
+    "Nulo",
+    "Igual a la distancia al CG"
+   ],
+   "correct": 0,
+   "why": "Los brazos positivos se miden hacia atrás del datum; hacia delante son negativos.",
+   "whyNot": [
+    null,
+    "Positivo sería para cargas por detrás del datum.",
+    "Solo sería nulo si estuviera sobre el datum.",
+    "El brazo se mide desde el datum, no desde el CG."
+   ],
+   "ref": "FAA-H-8083-1B, cap. 4"
+  },
+  {
+   "id": "030.04.004",
+   "type": "regla",
+   "level": 1,
+   "q": "El CG de un avión cargado se obtiene:",
+   "options": [
+    "Haciendo la media aritmética de los brazos",
+    "Sumando todos los brazos",
+    "Dividiendo la suma de momentos entre la suma de masas",
+    "Dividiendo la masa total entre la suma de momentos"
+   ],
+   "correct": 2,
+   "why": "Es una media de los brazos ponderada por las masas: CG = Σ momentos / Σ masas.",
+   "whyNot": [
+    "La media sin ponderar ignora cuánto pesa cada carga.",
+    "Los brazos no se suman.",
+    null,
+    "Es la inversa del cociente correcto."
+   ],
+   "ref": "FAA-H-8083-1B, cap. 4"
+  },
+  {
+   "id": "030.04.005",
+   "type": "calculo",
+   "level": 1,
+   "q": "Un avión con BEM de 690 kg a 2,18 m lleva un piloto de 80 kg a 2,05 m y nada más. El CG es:",
+   "options": [
+    "2,115 m",
+    "2,180 m",
+    "2,166 m",
+    "2,050 m"
+   ],
+   "correct": 2,
+   "why": "Masa = 770 kg; momento = 1504,2 + 164,0 = 1668,2 kg·m; CG = 1668,2/770 = 2,166 m.",
+   "whyNot": [
+    "Es la media simple de 2,18 y 2,05, sin ponderar por las masas.",
+    "Es el brazo del avión vacío: se olvida al piloto.",
+    null,
+    "Es el brazo del piloto: se olvida el avión vacío."
+   ],
+   "ref": "FAA-H-8083-1B, cap. 4"
+  },
+  {
+   "id": "030.04.006",
+   "type": "calculo",
+   "level": 2,
+   "q": "BEM 690 kg a 2,18 m; asientos delanteros 160 kg a 2,05 m; equipaje 20 kg a 3,60 m; 150 l de AVGAS (0,72 kg/l) a 2,40 m. El CG al despegue es:",
+   "options": [
+    "2,212 m",
+    "2,220 m",
+    "2,183 m",
+    "2,300 m"
+   ],
+   "correct": 0,
+   "why": "Combustible = 108 kg; masa 978 kg; momento 2163,4 kg·m; CG = 2,212 m.",
+   "whyNot": [
+    null,
+    "Resulta de tomar los 150 l como 150 kg (da 2,220 m).",
+    "Resulta de olvidar el equipaje (da 2,183 m).",
+    "No sale de ninguna combinación correcta de los datos."
+   ],
+   "ref": "FAA-H-8083-1B, cap. 4"
+  },
+  {
+   "id": "030.04.007",
+   "type": "calculo",
+   "level": 1,
+   "q": "¿Cuántos kg pesan 80 l de AVGAS a 0,72 kg/l?",
+   "options": [
+    "80,0 kg",
+    "64,0 kg",
+    "111,1 kg",
+    "57,6 kg"
+   ],
+   "correct": 3,
+   "why": "80 × 0,72 = 57,6 kg.",
+   "whyNot": [
+    "Es el valor numérico en litros, sin convertir.",
+    "Resulta de usar 0,80 kg/l, densidad de otro combustible.",
+    "Resulta de dividir por 0,72 en lugar de multiplicar.",
+    null
+   ],
+   "ref": "Densidad AVGAS ≈ 0,72 kg/l"
+  },
+  {
+   "id": "030.04.008",
+   "type": "calculo",
+   "level": 2,
+   "q": "¿Cuántos kg pesan 30 galones americanos de AVGAS (1 USG = 3,785 l; 0,72 kg/l)?",
+   "options": [
+    "21,6 kg",
+    "81,8 kg",
+    "113,6 kg",
+    "157,7 kg"
+   ],
+   "correct": 1,
+   "why": "30 × 3,785 = 113,55 l; × 0,72 = 81,8 kg.",
+   "whyNot": [
+    "Resulta de multiplicar los galones por 0,72 sin pasar a litros.",
+    null,
+    "Resulta de pasar a litros y no convertir a kg.",
+    "Resulta de dividir los litros entre 0,72."
+   ],
+   "ref": "1 USG = 3,785 l"
+  },
+  {
+   "id": "030.04.009",
+   "type": "calculo",
+   "level": 2,
+   "q": "MTOM 1100 kg; BEM 690 kg; ocupantes y equipaje 330 kg + 40 kg. El máximo de combustible por masa es, aproximadamente:",
+   "options": [
+    "56 l",
+    "569 l",
+    "111 l",
+    "40 l"
+   ],
+   "correct": 0,
+   "why": "1100 − 690 − 330 − 40 = 40 kg de combustible; 40 / 0,72 = 55,6 l.",
+   "whyNot": [
+    null,
+    "Resulta de olvidar los ocupantes y el equipaje: (1100 − 690) / 0,72.",
+    "Resulta de olvidar el equipaje: (1100 − 690 − 330) / 0,72.",
+    "Son 40 kg, no 40 l: faltaba convertir a litros."
+   ],
+   "ref": "MTOM; AFM"
+  },
+  {
+   "id": "030.04.010",
+   "type": "calculo",
+   "level": 3,
+   "q": "Con los datos del ejemplo 1 (978 kg y CG 2,212 m), tras consumir 60 l de combustible (brazo 2,40 m), el CG al aterrizar es:",
+   "options": [
+    "2,212 m",
+    "2,225 m",
+    "2,203 m",
+    "2,200 m"
+   ],
+   "correct": 2,
+   "why": "Masa = 978 − 43,2 = 934,8 kg; momento = 2163,4 − 43,2 × 2,40 = 2059,72; CG = 2,203 m.",
+   "whyNot": [
+    "Es el CG al despegue: no se han restado masa ni momento.",
+    "El CG avanza al consumir el combustible, no retrocede.",
+    null,
+    "Resulta de restar 60 kg en lugar de 43,2 kg."
+   ],
+   "ref": "FAA-H-8083-1B"
+  },
+  {
+   "id": "030.04.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "El combustible está en un brazo de 2,40 m y el CG del avión cargado es 2,21 m. Al consumir combustible, el CG:",
+   "options": [
+    "Retrocede",
+    "Avanza",
+    "No cambia",
+    "Sube de masa"
+   ],
+   "correct": 1,
+   "why": "Se quita una masa que estaba detrás del CG: el CG se mueve hacia delante.",
+   "whyNot": [
+    "Retrocedería si el depósito estuviera por delante del CG.",
+    null,
+    "Cambia porque la masa quitada no está en el CG.",
+    "No es un efecto sobre la masa, sino sobre el centrado."
+   ],
+   "ref": "FAA-H-8083-1B"
+  },
+  {
+   "id": "030.04.012",
+   "type": "calculo",
+   "level": 3,
+   "q": "Ejemplo 1 sin combustible (BEM, 160 kg delante y 20 kg de equipaje), el CG es:",
+   "options": [
+    "2,212 m",
+    "2,300 m",
+    "2,050 m",
+    "2,189 m"
+   ],
+   "correct": 3,
+   "why": "Masa 870 kg; momento 1904,2 kg·m; CG = 2,189 m: el combustible estaba detrás, así que sin él el CG es menor.",
+   "whyNot": [
+    "Es el CG con combustible, no el de sin combustible.",
+    "El CG no se desplaza tanto hacia atrás al quitar combustible.",
+    "Es el brazo de los asientos, no el CG total.",
+    null
+   ],
+   "ref": "FAA-H-8083-1B"
+  },
+  {
+   "id": "030.04.013",
+   "type": "concepto",
+   "level": 3,
+   "q": "En ΔCG = m · d / M, la M es:",
+   "options": [
+    "La masa de la carga movida",
+    "El BEM",
+    "La masa del combustible",
+    "La masa total del avión"
+   ],
+   "correct": 3,
+   "why": "El desplazamiento del CG se reparte sobre toda la masa del avión, no solo sobre la carga movida.",
+   "whyNot": [
+    "La carga movida es m, que multiplica.",
+    "El BEM no es la masa total.",
+    "El combustible es solo una parte.",
+    null
+   ],
+   "ref": "FAA-H-8083-1B"
+  },
+  {
+   "id": "030.04.014",
+   "type": "calculo",
+   "level": 2,
+   "q": "Un avión de 1017 kg tiene el CG en 2,264 m. Se pasan 25 kg del asiento trasero (3,00 m) al delantero (2,05 m). El nuevo CG es:",
+   "options": [
+    "2,287 m",
+    "2,240 m",
+    "2,264 m",
+    "2,229 m"
+   ],
+   "correct": 1,
+   "why": "ΔCG = 25 × 0,95 / 1017 = 0,023 m hacia delante; CG = 2,240 m.",
+   "whyNot": [
+    "El CG se desplaza hacia delante, no hacia atrás.",
+    null,
+    "Es el CG antes de mover la carga.",
+    "Resulta de dividir entre la BEM (690 kg) en lugar de la masa total."
+   ],
+   "ref": "ΔCG = m·d/M"
+  },
+  {
+   "id": "030.04.015",
+   "type": "calculo",
+   "level": 3,
+   "q": "Con masa 1042 kg y CG 2,366 m, ¿cuántos kg de carga hay que pasar del asiento trasero (3,00 m) al delantero (2,05 m) para bajar el CG a 2,34 m?",
+   "options": [
+    "13 kg",
+    "56 kg",
+    "28 kg",
+    "17 kg"
+   ],
+   "correct": 2,
+   "why": "ΔCG = 0,0256 m; m = M × ΔCG / d = 1042 × 0,0256 / 0,95 ≈ 28,1 kg.",
+   "whyNot": [
+    "Resulta de usar d = 2,05 m (el brazo del asiento delantero) en lugar de 0,95 m.",
+    "Es el doble del valor correcto.",
+    null,
+    "Resulta de usar d = 1,55 m (3,60 − 2,05 m), la distancia desde el equipaje."
+   ],
+   "ref": "m = M·ΔCG/d"
+  },
+  {
+   "id": "030.04.016",
+   "type": "calculo",
+   "level": 2,
+   "q": "Con masa 1017 kg y CG 2,264 m, se añaden 15 kg al equipaje (3,60 m). El nuevo CG es:",
+   "options": [
+    "2,283 m",
+    "2,264 m",
+    "2,350 m",
+    "2,254 m"
+   ],
+   "correct": 0,
+   "why": "Momento = 2302,0 + 54,0 = 2356,0; masa = 1032 kg; CG = 2,283 m.",
+   "whyNot": [
+    null,
+    "Es el CG original: la carga añadida detrás lo atrasa.",
+    "Resulta de sumar el brazo en lugar del momento.",
+    "Añadir carga detrás hace que el CG retroceda, no avance."
+   ],
+   "ref": "FAA-H-8083-1B"
+  },
+  {
+   "id": "030.04.017",
+   "type": "calculo",
+   "level": 3,
+   "q": "Con masa 1042 kg y CG 2,366 m (límite trasero 2,36 m), ¿cuánto equipaje (brazo 3,60 m) hay que quitar como mínimo para llegar al límite?",
+   "options": [
+    "1,0 kg",
+    "4,7 kg",
+    "10,0 kg",
+    "28,1 kg"
+   ],
+   "correct": 1,
+   "why": "x = (2465,0 − 2,36 × 1042) / (3,60 − 2,36) = 4,74 kg.",
+   "whyNot": [
+    "Es demasiado poco: el CG seguiría fuera.",
+    null,
+    "Sería suficiente, pero no es el mínimo.",
+    "Es la masa a mover entre asientos para bajar el CG hasta 2,34 m, otro problema."
+   ],
+   "ref": "FAA-H-8083-1B"
+  },
+  {
+   "id": "030.04.018",
+   "type": "lectura",
+   "level": 2,
+   "q": "A la vista de la hoja de carga, la situación es:",
+   "data": "HOJA DE CARGA (avión de ejemplo)\nElemento              kg     brazo   momento\nBEM                  690,0   2,18    1504,2\nPiloto               80,0    2,05     164,0\nAsientos traseros   160,0    3,00     480,0\nEquipaje             40,0    3,60     144,0\nCombustible 100 l    72,0    2,40     172,8\nTOTAL              1042,0    ----    2465,0\nLímites a 1042 kg: delantero 2,18 m, trasero 2,36 m",
+   "options": [
+    "Masa excesiva, CG correcto",
+    "Todo dentro de límites",
+    "CG fuera por delante",
+    "Masa correcta y CG fuera por detrás del límite trasero"
+   ],
+   "correct": 3,
+   "why": "CG = 2465,0 / 1042,0 = 2,366 m, mayor que 2,36 m. La masa (1042 kg) es menor que la MTOM de 1100 kg.",
+   "whyNot": [
+    "La MTOM del ejemplo es 1100 kg y la masa es 1042 kg.",
+    "El CG supera el límite trasero.",
+    "El CG está muy por encima del límite delantero (2,18 m).",
+    null
+   ],
+   "ref": "Hoja de carga de ejemplo"
+  },
+  {
+   "id": "030.04.019",
+   "type": "lectura",
+   "level": 2,
+   "q": "En la envolvente de ejemplo, el punto X (1000 kg y 2,14 m) está fuera porque:",
+   "figure": "svg:030-envolvente",
+   "options": [
+    "Está por delante del límite delantero de esa masa",
+    "Supera la MTOM",
+    "Está por detrás del límite trasero",
+    "La masa es inferior al mínimo"
+   ],
+   "correct": 0,
+   "why": "A 1000 kg el límite delantero es 2,159 m y el CG de X es 2,14 m, es decir, más adelantado.",
+   "whyNot": [
+    null,
+    "1000 kg es menor que la MTOM de 1100 kg.",
+    "El límite trasero es 2,36 m y X está en 2,14 m.",
+    "El mínimo de la gráfica no es relevante para este punto."
+   ],
+   "ref": "Envolvente de ejemplo"
+  },
+  {
+   "id": "030.04.020",
+   "type": "lectura",
+   "level": 2,
+   "q": "El punto Z de la figura (935 kg y 2,250 m, sin combustible) está:",
+   "figure": "svg:030-envolvente",
+   "options": [
+    "Fuera por delante",
+    "Fuera por detrás",
+    "Dentro de la envolvente",
+    "Por encima de la MTOM"
+   ],
+   "correct": 2,
+   "why": "A 935 kg el límite delantero es 2,126 m y el trasero 2,36 m; 2,250 m queda entre ambos.",
+   "whyNot": [
+    "Está por detrás del límite delantero (2,126 m), no por delante.",
+    "Está por delante del límite trasero (2,36 m).",
+    null,
+    "935 kg es menor que 1100 kg."
+   ],
+   "ref": "Envolvente de ejemplo"
+  },
+  {
+   "id": "030.04.021",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un CG por delante del límite delantero puede producir:",
+   "options": [
+    "Pérdida de estabilidad longitudinal",
+    "Una velocidad de pérdida menor",
+    "Falta de autoridad de profundidad para rotar o redondear",
+    "Mayor facilidad para salir de una barrena"
+   ],
+   "correct": 2,
+   "why": "Con el CG muy adelantado el avión es muy estable pero la profundidad puede no bastar para levantar el morro.",
+   "whyNot": [
+    "La estabilidad aumenta, no disminuye.",
+    "La velocidad de pérdida aumenta con CG adelantado.",
+    null,
+    "La recuperación es más fácil con CG adelantado, pero eso no es el problema del límite delantero."
+   ],
+   "ref": "030.01; PHAK cap. 10"
+  },
+  {
+   "id": "030.04.022",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un CG por detrás del límite trasero produce, sobre todo:",
+   "options": [
+    "Pérdida de estabilidad longitudinal y dificultad para recuperar de pérdida o barrena",
+    "Pérdida de autoridad de profundidad en la rotación",
+    "Más velocidad de pérdida",
+    "Mandos más pesados"
+   ],
+   "correct": 0,
+   "why": "Cuanto más atrás, menos estable: el avión puede ser inestable y difícil de recuperar.",
+   "whyNot": [
+    null,
+    "Eso es un problema del CG adelantado.",
+    "Con CG atrasado la Vs baja.",
+    "Los mandos se aligeran con el CG atrasado."
+   ],
+   "ref": "030.01; PHAK cap. 10"
+  },
+  {
+   "id": "030.04.023",
+   "type": "regla",
+   "level": 2,
+   "q": "Según NCO.POL.105, el avión debe volverse a pesar cuando:",
+   "options": [
+    "Cada vez que se cambia de piloto",
+    "Cada año, sin excepción",
+    "Cuando cambia la temperatura",
+    "No se conoce con exactitud el efecto de las modificaciones sobre la masa y el CG"
+   ],
+   "correct": 3,
+   "why": "NCO.POL.105 exige actualizar la masa y el CG por pesada real si los efectos acumulados de las modificaciones no se conocen con exactitud.",
+   "whyNot": [
+    "No depende del piloto.",
+    "NCO.POL.105 no fija ese periodo anual general.",
+    "La temperatura no afecta al informe de pesada.",
+    null
+   ],
+   "ref": "NCO.POL.105"
+  },
+  {
+   "id": "030.04.024",
+   "type": "calculo",
+   "level": 2,
+   "q": "Pesada: rueda de morro 215,0 kg (brazo 1,45 m) y ruedas principales 480,0 kg (brazo 2,50 m). El brazo de la masa en vacío es:",
+   "options": [
+    "1,975 m",
+    "2,175 m",
+    "2,500 m",
+    "1,450 m"
+   ],
+   "correct": 1,
+   "why": "Momento = 311,75 + 1200,0 = 1511,75 kg·m; masa = 695,0 kg; brazo = 2,175 m.",
+   "whyNot": [
+    "Es la media de los dos brazos, sin ponderar por las masas.",
+    null,
+    "Es el brazo de las ruedas principales solamente.",
+    "Es el brazo de la rueda de morro solamente."
+   ],
+   "ref": "NCO.POL.105; FAA-H-8083-1B"
+  },
+  {
+   "id": "030.04.025",
+   "type": "calculo",
+   "level": 3,
+   "q": "BEM 1540 lb a 86,0 in; 330 lb a 80,5 in; 40 lb a 142,8 in; 240 lb de combustible a 95,0 in. El CG es:",
+   "options": [
+    "87,22 in",
+    "86,24 in",
+    "85,03 in",
+    "101,08 in"
+   ],
+   "correct": 0,
+   "why": "Masa 2150 lb; momento 187517 lb·in; CG = 87,22 in.",
+   "whyNot": [
+    null,
+    "Resulta de olvidar el combustible.",
+    "Resulta de olvidar el equipaje y el combustible.",
+    "Es la media simple de los cuatro brazos, sin ponderar por las masas."
+   ],
+   "ref": "FAA-H-8083-1B"
+  },
+  {
+   "id": "030.04.026",
+   "type": "calculo",
+   "level": 2,
+   "q": "Con la tabla de momentos del ejemplo, 100 l de AVGAS (72 kg a 2,40 m) corresponden a un momento / 100 de:",
+   "options": [
+    "17,3",
+    "0,73",
+    "1,73",
+    "2,40"
+   ],
+   "correct": 2,
+   "why": "72,0 × 2,40 = 172,8 kg·m; entre 100 = 1,73.",
+   "whyNot": [
+    "Resulta de dividir entre 10 en lugar de entre 100.",
+    "Resulta de dividir solo la masa entre 100.",
+    null,
+    "Es el brazo, no el momento."
+   ],
+   "ref": "Tabla de ejemplo"
+  },
+  {
+   "id": "030.04.027",
+   "type": "calculo",
+   "level": 1,
+   "q": "MTOM 1100 kg y BEM 690 kg: la carga útil es:",
+   "options": [
+    "1790 kg",
+    "410 kg",
+    "690 kg",
+    "1100 kg"
+   ],
+   "correct": 1,
+   "why": "Carga útil = MTOM − BEM = 410 kg, incluyendo el combustible utilizable.",
+   "whyNot": [
+    "Resulta de sumar MTOM y BEM.",
+    null,
+    "Es la BEM, no la carga útil.",
+    "Es la MTOM."
+   ],
+   "ref": "030.02"
+  },
+  {
+   "id": "030.04.028",
+   "type": "calculo",
+   "level": 2,
+   "q": "Una carga de 25 kg se coloca en el equipaje a 3,60 m. Su momento es:",
+   "options": [
+    "6,9 kg·m",
+    "0,14 kg·m",
+    "625 kg·m",
+    "90,0 kg·m"
+   ],
+   "correct": 3,
+   "why": "25 × 3,60 = 90,0 kg·m.",
+   "whyNot": [
+    "Resulta de dividir la masa entre el brazo (25 / 3,60).",
+    "Resulta de dividir el brazo entre la masa (3,60 / 25).",
+    "Resulta de elevar la masa al cuadrado (25²).",
+    null
+   ],
+   "ref": "Momento = masa × brazo"
+  },
+  {
+   "id": "030.04.029",
+   "type": "concepto",
+   "level": 3,
+   "q": "Para comprobar la seguridad de la carga, además del CG al despegue hay que comprobar:",
+   "options": [
+    "Solo la masa de aterrizaje",
+    "Solo el CG al despegue",
+    "El CG con el doble de combustible",
+    "El CG al aterrizaje y el CG sin combustible utilizable"
+   ],
+   "correct": 3,
+   "why": "Al consumir combustible el CG se desplaza; el caso sin combustible puede salir por el límite delantero.",
+   "whyNot": [
+    "La masa sola no garantiza el centrado: el CG también puede salirse.",
+    "Con solo el despegue se olvidan el aterrizaje y el avión sin combustible.",
+    "El doble de combustible no es una condición real de carga.",
+    null
+   ],
+   "ref": "FAA-H-8083-1B"
+  },
+  {
+   "id": "030.04.030",
+   "type": "calculo",
+   "level": 3,
+   "q": "Con los datos del ejemplo 3 (1017 kg y 2,264 m), baja un pasajero trasero de 75 kg (3,00 m). El nuevo CG es:",
+   "options": [
+    "2,264 m",
+    "2,205 m",
+    "2,365 m",
+    "2,150 m"
+   ],
+   "correct": 1,
+   "why": "Masa = 942 kg; momento = 2077,0 kg·m; CG = 2,205 m. Al quitar masa de detrás, el CG avanza.",
+   "whyNot": [
+    "Es el CG antes de que baje el pasajero.",
+    null,
+    "El CG avanza al quitar masa detrás, no retrocede.",
+    "Resulta de restar solo la masa, sin restar el momento."
+   ],
+   "ref": "FAA-H-8083-1B"
+  },
+  {
+   "id": "030.04.031",
+   "type": "concepto",
+   "level": 2,
+   "q": "Si cargas un avión con el CG justo en el límite trasero y añades una carga detrás del CG, el CG:",
+   "options": [
+    "Avanza",
+    "No cambia",
+    "Sale de la envolvente por detrás",
+    "Se queda dentro por aumentar la masa"
+   ],
+   "correct": 2,
+   "why": "La carga añadida detrás atrasa el CG; ya estaba en el límite.",
+   "whyNot": [
+    "Avanza si la carga se añade por delante.",
+    "Cambia porque la nueva masa no está en el CG.",
+    null,
+    "El límite trasero es vertical: más masa no lo amplía."
+   ],
+   "ref": "FAA-H-8083-1B"
+  },
+  {
+   "id": "030.04.032",
+   "type": "concepto",
+   "level": 2,
+   "q": "En la envolvente de ejemplo, al aumentar la masa el límite delantero del CG:",
+   "options": [
+    "Se desplaza hacia atrás, y el margen se hace más estrecho",
+    "Se mantiene vertical, igual para todas las masas",
+    "Se desplaza hacia delante, y el margen aumenta",
+    "Desaparece por encima de 885 kg"
+   ],
+   "correct": 0,
+   "why": "A más masa hace falta más autoridad de profundidad, así que el CG debe estar algo más atrás: el límite pasa de 2,10 m a 2,21 m.",
+   "whyNot": [
+    null,
+    "En el ejemplo es vertical solo hasta 885 kg y luego se inclina.",
+    "Es el sentido contrario: aumenta el brazo mínimo permitido.",
+    "El límite sigue existiendo y es más restrictivo."
+   ],
+   "ref": "Envolvente de ejemplo"
+  },
+  {
+   "id": "030.04.033",
+   "type": "concepto",
+   "level": 2,
+   "q": "Para desplazar el CG lo máximo posible, conviene mover:",
+   "options": [
+    "Una carga pequeña una distancia pequeña",
+    "Una carga pesada una distancia grande",
+    "Una carga pesada pegada al CG",
+    "Una carga ligera sobre el datum"
+   ],
+   "correct": 1,
+   "why": "ΔCG = m·d/M: el efecto crece con la masa movida y con la distancia.",
+   "whyNot": [
+    "El producto m·d sería mínimo.",
+    null,
+    "Una carga junto al CG casi no cambia el momento total.",
+    "Una carga ligera movida poco cambia poco el CG."
+   ],
+   "ref": "ΔCG = m·d/M"
+  },
+  {
+   "id": "030.04.034",
+   "type": "calculo",
+   "level": 2,
+   "q": "Combustible 30 USG (6 lb/USG) en un depósito a 95,0 in. El momento aportado es:",
+   "options": [
+    "2850 lb·in",
+    "180 lb·in",
+    "1710 lb·in",
+    "17 100 lb·in"
+   ],
+   "correct": 3,
+   "why": "30 × 6 = 180 lb; 180 × 95,0 = 17 100 lb·in.",
+   "whyNot": [
+    "Resulta de multiplicar 30 por 95,0 sin pasar a lb.",
+    "Es la masa en lb, no el momento.",
+    "Resulta de dividir el momento entre 10.",
+    null
+   ],
+   "ref": "Unidades inglesas"
+  },
+  {
+   "id": "030.04.035",
+   "type": "calculo",
+   "level": 2,
+   "q": "Masa de rampa 1050 kg, combustible de rodaje 4 kg y combustible de viaje 40 kg. La masa al aterrizar es:",
+   "options": [
+    "1006 kg",
+    "1010 kg",
+    "1046 kg",
+    "1002 kg"
+   ],
+   "correct": 0,
+   "why": "TOM = 1050 − 4 = 1046 kg; masa al aterrizar = 1046 − 40 = 1006 kg.",
+   "whyNot": [
+    null,
+    "Resulta de olvidar el combustible de rodaje (1050 − 40).",
+    "Es la masa al despegue: no se ha restado el combustible de viaje.",
+    "Resulta de restar dos veces el rodaje (1050 − 4 − 4 − 40)."
+   ],
+   "ref": "030.02"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.030.04.01",
+   "front": "Momento y CG",
+   "back": "Momento = masa × brazo; CG = Σ momentos / Σ masas"
+  },
+  {
+   "id": "c.030.04.02",
+   "front": "Mover una carga",
+   "back": "ΔCG = m · d / M, con M la masa total del avión"
+  },
+  {
+   "id": "c.030.04.03",
+   "front": "Qué tres CG comprobar",
+   "back": "Despegue, aterrizaje y sin combustible utilizable"
+  },
+  {
+   "id": "c.030.04.04",
+   "front": "Densidades y conversiones",
+   "back": "AVGAS 0,72 kg/l; 1 USG = 3,785 l; 1 kg = 2,205 lb; 1 in = 0,0254 m"
+  }
+ ]
+}

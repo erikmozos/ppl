@@ -1,0 +1,309 @@
+{
+ "lesson": {
+  "title": "Contaminación",
+  "summary": "Efectos del hielo, la escarcha, la nieve, la lluvia y la suciedad en el borde de ataque sobre la sustentación, la resistencia, la pérdida, el control y los hipersustentadores.",
+  "objectives": [
+   "Distinguir hielo, escarcha, nieve, lluvia y suciedad y sus efectos aerodinámicos",
+   "Explicar por qué una capa fina de rugosidad en el extradós reduce tanto CLmax",
+   "Relacionar la contaminación con la velocidad de pérdida y el aviso de pérdida",
+   "Aplicar el concepto de aeronave limpia antes del despegue"
+  ],
+  "sections": [
+   {
+    "title": "Por qué la contaminación es tan peligrosa",
+    "text": [
+     "El ala depende de que la capa límite del extradós se mantenga pegada a la superficie. Cualquier **rugosidad en el borde de ataque** (escarcha, hielo, nieve, suciedad, insectos, pintura dañada) hace que la capa límite se vuelva turbulenta antes y se **separe a menor ángulo de ataque**. El perfil se «estropea»: baja el CLmax, baja el ángulo de ataque crítico y sube la resistencia. Lo traicionero es que el efecto no es proporcional al grosor: una capa de escarcha de pocas décimas de milímetro, con la rugosidad de una lija gruesa, puede reducir la sustentación máxima alrededor de un 30 % y aumentar la resistencia en torno a un 40 %. El peso añadido es lo de menos."
+    ],
+    "note": {
+     "kind": "warn",
+     "text": "Las cifras del 30 % y el 40 % son datos orientativos de la FAA y se citan en muchos manuales; úsalas como orden de magnitud, no como cálculo."
+    },
+    "verify": true
+   },
+   {
+    "title": "Efectos en la pérdida y el control",
+    "bullets": [
+     "**Velocidad de pérdida más alta** y **ángulo de ataque crítico más bajo**: puedes entrar en pérdida a una velocidad y a un ángulo con los que normalmente vuelas con seguridad.",
+     "**El aviso de pérdida se retrasa o desaparece:** el aviso se calcula para el ala limpia; si el flujo se separa antes, o si el sensor está helado, la bocina puede sonar tarde o no sonar.",
+     "**Pérdida más brusca:** con el flujo roto, el avión puede caer un ala sin aviso.",
+     "**Más resistencia y menos tracción:** el avión pierde velocidad en ascenso y el techo disminuye. La hélice con hielo pierde empuje.",
+     "**Control degradado:** el hielo en las bisagras o los contrapesos puede bloquear los mandos y los compensadores; la escarcha en la cola reduce la eficacia de la profundidad.",
+     "**Peso y centrado:** el hielo añade masa y puede cambiar el CG.",
+     "**Tailplane stall:** el hielo en el estabilizador horizontal puede entrar en pérdida (el avión pica); suele aparecer al extender flaps, que aumentan el downwash. La recuperación consiste en retraer los flaps y tirar de la palanca."
+    ]
+   },
+   {
+    "title": "Hipersustentadores contaminados",
+    "text": [
+     "Los flaps y los dispositivos de borde de ataque trabajan con ángulos de ataque más altos y con flujos muy sensibles. Con hielo o escarcha, **pierden gran parte de su efecto** y la Vs0 aumenta más de lo previsto. Una nieve o hielo acumulados en las ranuras o bisagras puede dejar un flap bloqueado, o provocar una extensión asimétrica. Antes de volar, comprueba que flaps y compensadores se mueven libres y sin acumulación."
+    ]
+   },
+   {
+    "title": "Tipos de contaminación",
+    "table": {
+     "caption": "Contaminantes en el ala y su efecto",
+     "head": [
+      "Contaminante",
+      "Qué ocurre",
+      "Efecto principal"
+     ],
+     "rows": [
+      [
+       "Hielo (de estructura o en vuelo)",
+       "Se forma en vuelo por gotas subenfriadas o en tierra por precipitación helada",
+       "Cambia la forma del perfil: gran pérdida de CLmax y aumento de resistencia y peso"
+      ],
+      [
+       "Escarcha",
+       "Fina capa cristalina que se forma sobre una superficie fría",
+       "Rugosidad: reduce mucho CLmax con un peso despreciable"
+      ],
+      [
+       "Nieve",
+       "Nieve en alas y cola; puede hacer una capa de hielo si se funde y se hiela",
+       "Rugosidad y peso; solo se elimina del todo con el avión limpio"
+      ],
+      [
+       "Lluvia intensa",
+       "Película de agua y gotas",
+       "Reduce algo CLmax y aumenta CD; empeora el despegue y el aterrizaje"
+      ],
+      [
+       "Insectos y suciedad",
+       "Acumulación en el borde de ataque",
+       "Rugosidad: aumenta la Vs y la resistencia"
+      ]
+     ]
+    },
+    "text": [
+     "En el vuelo, el hielo se forma si hay humedad visible y temperatura cercana o inferior a 0 °C (más en la meteorología, bloque 050). Si encuentras formación de hielo en ruta, sal del área o desciende a aire más cálido. Para tierra, la regla es la de la **aeronave limpia**: no se despega con hielo, nieve ni escarcha adheridos a alas, estabilizadores, superficies de control, hélices o tomas."
+    ]
+   }
+  ],
+  "numbers": [
+   "Rugosidad del tamaño de lija: ≈ −30 % de sustentación máxima y ≈ +40 % de resistencia (orientativo)",
+   "Contaminación: ↑ Vs, ↓ CLmax, ↓ α crítico, ↑ resistencia",
+   "Aeronave limpia: ni hielo, ni nieve ni escarcha en alas, cola, mandos y hélice",
+   "Tailplane stall: aparece al extender flaps con hielo en la cola"
+  ],
+  "traps": [
+   "El efecto de la escarcha no es proporcional a su peso: unas décimas de milímetro bastan.",
+   "El aviso de pérdida no es fiable con hielo.",
+   "Los flaps con hielo pierden eficacia: la Vs0 sube más de lo previsto.",
+   "Despegar con «solo un poco de escarcha» es una infracción y un riesgo grave."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "FAA, Airplane Flying Handbook (FAA-H-8083-3C)",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "080.10",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "080.10.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "El efecto principal de una capa fina de escarcha sobre el extradós es:",
+   "options": [
+    "Aumentar CLmax",
+    "Reducir CLmax y aumentar la resistencia",
+    "Reducir la velocidad de pérdida",
+    "Aumentar el ángulo de ataque crítico"
+   ],
+   "correct": 1,
+   "why": "La rugosidad provoca que el flujo se separe antes, con menos sustentación y más resistencia.",
+   "whyNot": [
+    "El CLmax disminuye con la rugosidad, no aumenta.",
+    null,
+    "La Vs sube porque hace falta más velocidad para sostener el peso.",
+    "El ángulo crítico disminuye, porque el flujo se separa antes."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.10.002",
+   "type": "concepto",
+   "level": 2,
+   "q": "Con hielo en las alas, la velocidad de pérdida:",
+   "options": [
+    "Disminuye",
+    "No cambia",
+    "Se hace igual a la TAS",
+    "Aumenta"
+   ],
+   "correct": 3,
+   "why": "Al reducirse CLmax hay que volar más rápido para sostener el peso.",
+   "whyNot": [
+    "Disminuiría solo si aumentara CLmax, y el hielo lo reduce.",
+    "Cambia: baja CLmax y sube la Vs.",
+    "La Vs no se iguala a la TAS por el hielo.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.10.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "Con el borde de ataque contaminado, el ángulo de ataque crítico:",
+   "options": [
+    "Disminuye",
+    "Aumenta",
+    "No cambia",
+    "Pasa a ser siempre 15°"
+   ],
+   "correct": 0,
+   "why": "El flujo se separa con menor ángulo de ataque.",
+   "whyNot": [
+    null,
+    "El efecto real es el contrario: el flujo se separa antes.",
+    "Cambia: baja con la contaminación.",
+    "No hay un valor fijo; lo que ocurre es que disminuye."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.10.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "El aviso de pérdida del avión en condiciones de hielo:",
+   "options": [
+    "Suena antes de lo normal",
+    "Es más fiable",
+    "Puede sonar tarde o no sonar",
+    "Se activa solo con los flaps extendidos"
+   ],
+   "correct": 2,
+   "why": "El aviso se calibra para el ala limpia y el sensor puede estar helado.",
+   "whyNot": [
+    "El aviso no suena antes: la separación puede adelantarse sin que el sensor lo detecte.",
+    "El hielo degrada el aviso, no lo hace más fiable.",
+    null,
+    "El aviso no depende de que los flaps estén extendidos."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.10.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "Los hipersustentadores con hielo o escarcha:",
+   "options": [
+    "Aumentan su eficacia",
+    "Reducen la resistencia",
+    "Pierden parte de su eficacia y la Vs0 aumenta",
+    "No se ven afectados"
+   ],
+   "correct": 2,
+   "why": "Trabajan con ángulos de ataque y flujos sensibles a la rugosidad.",
+   "whyNot": [
+    "Su eficacia disminuye, no aumenta.",
+    "La resistencia aumenta con la contaminación.",
+    null,
+    "Se ven afectados, y más que el ala limpia."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.10.006",
+   "type": "concepto",
+   "level": 1,
+   "q": "Antes del despegue, el concepto de aeronave limpia exige que:",
+   "options": [
+    "No haya hielo, nieve ni escarcha en alas, cola, mandos y hélice",
+    "Se despegue solo si el hielo es menor de 1 mm",
+    "Solo se limpien las alas",
+    "Se confíe en que el hielo se funda con el calor del motor"
+   ],
+   "correct": 0,
+   "why": "Cualquier contaminación en las superficies críticas degrada la sustentación.",
+   "whyNot": [
+    null,
+    "No hay un grosor tolerable de escarcha en las superficies críticas.",
+    "Cola, mandos y hélice también son superficies críticas.",
+    "El calor del motor no garantiza que se funda y no llega a las alas."
+   ],
+   "ref": "AFH cap. 4; principio de aeronave limpia"
+  },
+  {
+   "id": "080.10.007",
+   "type": "concepto",
+   "level": 3,
+   "q": "El tailplane stall por hielo en el estabilizador suele manifestarse:",
+   "options": [
+    "Con una subida brusca al retraer gases",
+    "Con una guiñada a la izquierda",
+    "Con vibración de la hélice",
+    "Con un picado brusco al extender flaps"
+   ],
+   "correct": 3,
+   "why": "El hielo hace que el estabilizador pierda al aumentar el downwash con flaps; el morro pica.",
+   "whyNot": [
+    "Una subida brusca no es el síntoma típico: lo habitual es picar.",
+    "El tailplane stall afecta al cabeceo, no a la guiñada.",
+    "La vibración de hélice no se debe al hielo en la cola.",
+    null
+   ],
+   "ref": "AFH cap. 4"
+  },
+  {
+   "id": "080.10.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "El efecto del hielo sobre el peso del avión es:",
+   "options": [
+    "Una disminución",
+    "Un aumento, aunque secundario respecto al efecto aerodinámico",
+    "Nulo",
+    "El efecto más importante"
+   ],
+   "correct": 1,
+   "why": "La masa del hielo es pequeña comparada con el efecto aerodinámico en CLmax y resistencia.",
+   "whyNot": [
+    "El hielo añade masa, no la reduce.",
+    null,
+    "El hielo siempre añade algo de masa.",
+    "El efecto aerodinámico es mucho mayor que el del peso."
+   ],
+   "ref": "PHAK cap. 5"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.080.10.01",
+   "front": "Efecto del hielo o la escarcha en el ala",
+   "back": "Menos CLmax, menos ángulo crítico, más resistencia y más Vs"
+  },
+  {
+   "id": "c.080.10.02",
+   "front": "Aeronave limpia",
+   "back": "Sin hielo, nieve ni escarcha en alas, cola, mandos y hélice antes de despegar"
+  },
+  {
+   "id": "c.080.10.03",
+   "front": "Aviso de pérdida con hielo",
+   "back": "Puede sonar tarde o no sonar"
+  }
+ ]
+}

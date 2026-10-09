@@ -1,0 +1,655 @@
+{
+ "lesson": {
+  "title": "NDB y ADF",
+  "summary": "Radiofaro no direccional (NDB) y radiogoniómetro automático (ADF): principio, RBI y RMI, QDM y QDR, errores (nocturno, de costa, tormentas), seguimiento de una derrota y estimación del tiempo a la estación.",
+  "objectives": [
+   "Explicar el principio del NDB y del ADF",
+   "Leer un RBI y un RMI y calcular QDM y QDR",
+   "Distinguir homing de tracking y cómo se corrige el viento",
+   "Reconocer los errores del ADF y sus causas",
+   "Estimar el tiempo y la distancia a la estación con las reglas del ala y del doble ángulo",
+   "Identificar la estación antes de usarla"
+  ],
+  "sections": [
+   {
+    "title": "Principio del NDB y del ADF",
+    "text": [
+     "El **NDB** (non-directional beacon) es una radiobaliza en tierra que emite en todas direcciones en LF/MF, **entre 190 y 1750 kHz**, con una identificación en morse de dos o tres letras. No contiene información de dirección; la dirección la obtiene el **ADF** (automatic direction finder) de a bordo: una antena de cuadro (direccional) y otra de sentido (omnidireccional) permiten saber desde qué lado llega la señal y sin ambigüedad.",
+     "El ADF mide el ángulo entre el **eje longitudinal del avión** y la **dirección hacia la estación**, que es la **marcación relativa (RM)**. No sabe nada del norte. Lo que a ti te interesa, la dirección magnética a la estación, la tienes que obtener sumando el rumbo.",
+     "El equipo se sintoniza a la frecuencia, **se identifica la estación en morse** (siempre, antes de fiarte de ella) y se selecciona ADF en lugar de ANT; en el modo ANT solo oyes el audio, sin marcación. Para NDB no modulados puede hacer falta el **BFO** (oscilador de batido) para oír la identificación."
+    ]
+   },
+   {
+    "title": "Los indicadores: RBI y RMI",
+    "text": [
+     "El **RBI** (relative bearing indicator) tiene la tarjeta fija, con 0° arriba, y su aguja marca directamente la **marcación relativa**: 000° si la estación está justo delante, 090° a la derecha, 180° detrás, 270° a la izquierda. El **RMI** (radio magnetic indicator) tiene la tarjeta conectada al direccional, de modo que gira con el rumbo: la punta de la aguja marca el **QDM** y la cola el **QDR**, sin cálculos."
+    ],
+    "figure": "svg:060-adf",
+    "caption": "Rumbo 040° y marcación relativa 060°: el RBI da 060° y el RMI da directamente QDM 100°."
+   },
+   {
+    "title": "Cálculo de QDM y QDR",
+    "text": [
+     "Como el RBI mide respecto al morro y el QDM respecto al norte magnético, hay que **sumar el rumbo magnético**. Si el resultado pasa de 360°, resta 360°."
+    ],
+    "formulas": [
+     {
+      "f": "QDM = rumbo magnético + marcación relativa",
+      "note": "Si pasa de 360°, resta 360°. Es el rumbo a volar hacia la estación, sin viento."
+     },
+     {
+      "f": "QDR = QDM ± 180°",
+      "note": "El radial magnético desde la estación en el que estás."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Rumbo magnético 270° y marcación relativa 090°.",
+      "a": "QDM = 270 + 90 = 360° (norte). QDR = 180°: estás al sur de la estación."
+     },
+     {
+      "q": "Rumbo magnético 050° y marcación relativa 030°.",
+      "a": "QDM = 080°. QDR = 080 + 180 = 260°."
+     },
+     {
+      "q": "Rumbo magnético 200° y marcación relativa 250°.",
+      "a": "200 + 250 = 450°; resta 360: QDM = 090°. QDR = 270°."
+     },
+     {
+      "q": "Rumbo magnético 340° y marcación relativa 060°.",
+      "a": "340 + 60 = 400°; resta 360: QDM = 040°. QDR = 220°."
+     }
+    ]
+   },
+   {
+    "title": "Simulador de ADF",
+    "text": [
+     "Mueve el rumbo y la marcación relativa y comprueba el QDM, el QDR y la marcación magnética; comprueba antes los ejemplos a mano."
+    ],
+    "figure": "sim:adf"
+   },
+   {
+    "title": "Homing y tracking",
+    "text": [
+     "**Homing** (ir directo) es mantener la aguja a 000°, es decir, apuntar siempre hacia la estación. Con viento lateral, el avión deriva y tiene que girar continuamente hacia la estación: la trayectoria es una **curva** (en espiral hacia la estación) y la derrota resultante es más larga. **Tracking** (seguir una derrota) es volar una radial o un QDM concreto, corrigiendo la deriva: se mantiene un rumbo constante que compense el viento, y la aguja queda **desplazada** respecto a 000° una cantidad igual a la corrección.",
+     "Para interceptar una derrota hacia la estación con QDM conocido: vuela con un rumbo que forme un ángulo de interceptación (por ejemplo 30° o 45°) hacia la derrota deseada y mantenlo hasta que la marcación indique que estás sobre ella (rumbo + marcación = QDM deseado). Después gira para tomar la derrota y corrige la deriva. Si vuelas con el rumbo igual al QDM y la aguja está a la izquierda del morro, la estación está a tu izquierda: estás a la **derecha** de la derrota, y debes girar a la izquierda."
+    ],
+    "bullets": [
+     "Aguja a la izquierda del morro: la estación queda a la izquierda; estás a la derecha de la derrota.",
+     "Aguja a la derecha del morro: la estación queda a la derecha; estás a la izquierda de la derrota.",
+     "Al pasar sobre la estación, la aguja gira rápidamente (unos 180°) o se vuelve errática: así sabes que has pasado."
+    ]
+   },
+   {
+    "title": "Distancia y tiempo a la estación",
+    "text": [
+     "Sin DME puedes estimar cuánto falta con dos observaciones. En la **regla del ala** vuelas con un rumbo que deja la estación a 90° (la aguja a 090° o 270°) y cuentas el tiempo que tarda la aguja en cambiar 10°. En el **doble ángulo** mides el tiempo entre dos marcaciones sobre el morro, la segunda doble de la primera (45° y 90°, por ejemplo), y la distancia a la estación en ese momento es igual a la distancia recorrida entre ambas."
+    ],
+    "formulas": [
+     {
+      "f": "Tiempo a la estación (min) = tiempo transcurrido (s) / variación de marcación (°)",
+      "note": "Aplicable con la estación cerca del través."
+     },
+     {
+      "f": "Distancia (NM) = GS (kt) × tiempo (min) / 60",
+      "note": "Con la GS medida."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Con la estación en el través, la marcación cambia 10° en 3 minutos. ¿Cuánto falta?",
+      "a": "t = 180 s / 10° = 18 minutos hasta la estación."
+     },
+     {
+      "q": "Con GS 90 kt, la marcación pasa de 045° a 090° en 6 minutos. ¿A qué distancia estás de la estación al llegar al través?",
+      "a": "Distancia recorrida = 90 × 6 / 60 = 9 NM. En el doble ángulo (45°–90°), la distancia a la estación es 9 NM."
+     }
+    ]
+   },
+   {
+    "title": "Alcance y errores",
+    "text": [
+     "El NDB usa **onda de tierra**: el alcance depende de la potencia, de la frecuencia y del terreno (mejor sobre el mar). Un NDB de aproximación (locator) llega a unas 15–25 NM; uno de ruta, a 50 NM o más. Estas cifras son aproximadas y se leen en el AIP. Los errores del ADF vienen de la propagación y no los detecta el equipo:",
+     "**Efecto nocturno**: al anochecer y amanecer, la onda ionosférica se suma a la de tierra y la aguja oscila o da lecturas falsas. **Efecto de costa**: la onda se refracta al pasar de tierra a mar y la marcación se desvía; es mayor con ángulos de cruce pequeños. **Efecto montañoso**: reflexiones en el relieve. **Tormentas**: la estática atrae la aguja hacia el cumulonimbo. **Interferencias**: otra estación en la misma frecuencia o radiodifusión AM. **Error de cuadrante**: distorsión de la señal por el fuselaje, compensada al instalar el equipo. **Error de inclinación**: la aguja es poco fiable durante un viraje con alabeo; toma las marcaciones con las alas niveladas."
+    ],
+    "note": {
+     "kind": "tip",
+     "text": "Si una lectura del ADF te parece incoherente con la estima, no la creas: el ADF no tiene bandera de alarma. Comprueba que ves la identificación y confirma con otra referencia."
+    }
+   }
+  ],
+  "numbers": [
+   "NDB: 190–1750 kHz; usa onda de tierra",
+   "QDM = rumbo magnético + marcación relativa (si pasa de 360°, resta 360°)",
+   "QDR = QDM ± 180°",
+   "RBI: tarjeta fija, marcación relativa; RMI: tarjeta con el rumbo, QDM en la punta",
+   "Tiempo a la estación (min) = tiempo (s) / cambio de marcación (°)",
+   "Doble ángulo: de 45° a 90°, distancia = distancia recorrida"
+  ],
+  "traps": [
+   "El RBI no da el QDM: hay que sumar el rumbo.",
+   "Confundir QDM (hacia la estación) con QDR (desde la estación).",
+   "El efecto nocturno y el de costa son del NDB, no del VOR.",
+   "El ADF no tiene bandera de alarma: identifica siempre la estación.",
+   "La estática de una tormenta atrae la aguja hacia el cumulonimbo.",
+   "El homing con viento lateral no sigue una derrota recta."
+  ],
+  "sources": [
+   {
+    "title": "OACI, Anexo 10, vol. I: radiofaros no direccionales"
+   },
+   {
+    "title": "FAA, Instrument Flying Handbook (FAA-H-8083-15B), cap. 9 y PHAK cap. 16",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation"
+   },
+   {
+    "title": "ENAIRE, AIP España, ENR 4.1: radioayudas para la navegación en ruta",
+    "url": "https://aip.enaire.es/"
+   }
+  ],
+  "id": "060.11",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "060.11.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "El NDB emite:",
+   "options": [
+    "Una señal de aterrizaje",
+    "Pulsos interrogadores",
+    "Una señal omnidireccional sin información de dirección",
+    "Una señal direccional con radiales"
+   ],
+   "correct": 2,
+   "why": "El NDB emite en todas direcciones; la dirección la obtiene el ADF de a bordo.",
+   "whyNot": [
+    "No es una ayuda de aterrizaje.",
+    "Los pulsos son del DME.",
+    null,
+    "Eso es el VOR."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.11.002",
+   "type": "regla",
+   "level": 1,
+   "q": "La banda de frecuencias del NDB es:",
+   "options": [
+    "190 a 1750 kHz",
+    "960 a 1215 MHz",
+    "118 a 137 MHz",
+    "108 a 117,975 MHz"
+   ],
+   "correct": 0,
+   "why": "El NDB usa LF/MF, de 190 a 1750 kHz.",
+   "whyNot": [
+    null,
+    "Es la banda del DME.",
+    "Es la banda de comunicaciones.",
+    "Es la banda del VOR."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.11.003",
+   "type": "calculo",
+   "level": 1,
+   "q": "Rumbo magnético 270° y marcación relativa 090°. El QDM es:",
+   "options": [
+    "360°",
+    "270°",
+    "180°",
+    "090°"
+   ],
+   "correct": 0,
+   "why": "QDM = 270 + 90 = 360°.",
+   "whyNot": [
+    null,
+    "Es el rumbo, sin sumar.",
+    "Resta en vez de sumar.",
+    "Es la marcación relativa."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.11.004",
+   "type": "calculo",
+   "level": 1,
+   "q": "Rumbo magnético 050° y marcación relativa 030°. El QDM es:",
+   "options": [
+    "020°",
+    "230°",
+    "260°",
+    "080°"
+   ],
+   "correct": 3,
+   "why": "QDM = 050 + 030 = 080°.",
+   "whyNot": [
+    "Resta en vez de sumar.",
+    "No corresponde a este cálculo.",
+    "Es el QDR.",
+    null
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.11.005",
+   "type": "calculo",
+   "level": 2,
+   "q": "Rumbo magnético 200° y marcación relativa 250°. El QDM es:",
+   "options": [
+    "090°",
+    "450°",
+    "270°",
+    "110°"
+   ],
+   "correct": 0,
+   "why": "200 + 250 = 450°; se resta 360: 090°.",
+   "whyNot": [
+    null,
+    "No se puede dar un valor mayor de 360°.",
+    "Es el QDR.",
+    "Resulta de restar 90 a 200."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.11.006",
+   "type": "calculo",
+   "level": 2,
+   "q": "Rumbo magnético 340° y marcación relativa 060°. El QDR es:",
+   "options": [
+    "400°",
+    "160°",
+    "220°",
+    "040°"
+   ],
+   "correct": 2,
+   "why": "QDM = 340 + 60 = 400 − 360 = 040°; QDR = 040 + 180 = 220°.",
+   "whyNot": [
+    "No se pueden dar rumbos mayores de 360°.",
+    "Resulta de restar 60 del QDM.",
+    null,
+    "Es el QDM."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.11.007",
+   "type": "calculo",
+   "level": 1,
+   "q": "El QDM es 080°. El QDR es:",
+   "options": [
+    "350°",
+    "080°",
+    "260°",
+    "170°"
+   ],
+   "correct": 2,
+   "why": "QDR = QDM ± 180° = 260°.",
+   "whyNot": [
+    "Resulta de restar 90°.",
+    "Es el mismo QDM.",
+    null,
+    "Resulta de sumar 90°."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.11.008",
+   "type": "concepto",
+   "level": 1,
+   "q": "Un RBI muestra:",
+   "options": [
+    "El rumbo magnético",
+    "La distancia a la estación",
+    "El QDM directamente",
+    "La marcación relativa"
+   ],
+   "correct": 3,
+   "why": "El RBI tiene tarjeta fija y su aguja marca el ángulo respecto al morro.",
+   "whyNot": [
+    "El rumbo lo da el direccional.",
+    "No indica distancia.",
+    "Eso lo muestra el RMI.",
+    null
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.11.009",
+   "type": "concepto",
+   "level": 1,
+   "q": "En un RMI, la punta de la aguja indica:",
+   "options": [
+    "El rumbo verdadero",
+    "El QDM",
+    "El QDR",
+    "La marcación relativa"
+   ],
+   "correct": 1,
+   "why": "La tarjeta del RMI gira con el rumbo y la punta indica el QDM; la cola, el QDR.",
+   "whyNot": [
+    "Es magnética, no verdadera.",
+    null,
+    "Eso lo muestra la cola de la aguja.",
+    "Eso lo muestra el RBI."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.11.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "El efecto nocturno del ADF se produce principalmente:",
+   "options": [
+    "Solo cuando hay nubes",
+    "En la costa",
+    "Al amanecer y al anochecer",
+    "Solo al mediodía"
+   ],
+   "correct": 2,
+   "why": "En los cambios día/noche, la onda ionosférica reflejada interfiere con la de tierra y la aguja oscila.",
+   "whyNot": [
+    "No depende de las nubes.",
+    "Es el efecto de costa.",
+    null,
+    "Con luz diurna la capa D absorbe la onda ionosférica."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.11.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "El efecto de costa en el ADF consiste en que:",
+   "options": [
+    "La onda se refracta al pasar de tierra a mar",
+    "La estación se identifica mal",
+    "La aguja oscila por la noche",
+    "La aguja apunta a las nubes"
+   ],
+   "correct": 0,
+   "why": "Al atravesar la costa con un ángulo pequeño, la onda se curva y la marcación se desvía; el error es menor con ángulos cercanos a 90°.",
+   "whyNot": [
+    null,
+    "No es un error de identificación.",
+    "Es el nocturno.",
+    "Es la estática de tormentas."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.11.012",
+   "type": "concepto",
+   "level": 1,
+   "q": "Una tormenta cercana hace que la aguja del ADF:",
+   "options": [
+    "Gire sin parar siempre",
+    "Se vuelva más precisa",
+    "Marque la estación con exactitud",
+    "Se oriente hacia el cumulonimbo"
+   ],
+   "correct": 3,
+   "why": "Las descargas eléctricas producen estática y la aguja tiende a apuntar a su origen.",
+   "whyNot": [
+    "No es siempre un giro continuo.",
+    "La estática empeora la precisión.",
+    "La marcación pierde fiabilidad.",
+    null
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.11.013",
+   "type": "concepto",
+   "level": 2,
+   "q": "Antes de usar un NDB para navegar, lo primero es:",
+   "options": [
+    "Poner el ADF a cero",
+    "Subir el volumen",
+    "Seleccionar ANT en el receptor",
+    "Identificar su señal en morse"
+   ],
+   "correct": 3,
+   "why": "Hay que escuchar la identificación: el ADF no tiene bandera de aviso de señal incorrecta.",
+   "whyNot": [
+    "No es un paso de verificación.",
+    "No sirve para verificar la estación.",
+    "En ANT no hay marcación.",
+    null
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.11.014",
+   "type": "concepto",
+   "level": 2,
+   "q": "Volar hacia un NDB manteniendo la aguja en 000° con viento lateral se llama homing y produce:",
+   "options": [
+    "Una trayectoria curva hacia la estación",
+    "Una derrota igual al QDM",
+    "Una trayectoria en espiral que se aleja",
+    "Una trayectoria recta"
+   ],
+   "correct": 0,
+   "why": "El avión es empujado por el viento, gira para apuntar a la estación y el resultado es una curva.",
+   "whyNot": [
+    null,
+    "La derrota no coincide con el QDM.",
+    "Se acerca a la estación.",
+    "Con viento lateral, no es recta."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.11.015",
+   "type": "concepto",
+   "level": 2,
+   "q": "Vuelas con rumbo 090° igual al QDM y la aguja marca 350°. Estás:",
+   "options": [
+    "Sobre la derrota",
+    "A la derecha de la derrota",
+    "A la izquierda de la derrota",
+    "Pasando la estación"
+   ],
+   "correct": 1,
+   "why": "La aguja a la izquierda indica que la estación queda a la izquierda: estás desplazado a la derecha de la derrota.",
+   "whyNot": [
+    "La derrota está a la izquierda de tu posición.",
+    null,
+    "La estación a la izquierda implica que has derivado a la derecha.",
+    "Si estuvieras sobre la derrota, la aguja marcaría 000°."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.11.016",
+   "type": "concepto",
+   "level": 1,
+   "q": "Al pasar sobre un NDB, la aguja del ADF:",
+   "options": [
+    "Se queda fija en 000°",
+    "Gira rápidamente hacia atrás o se vuelve errática",
+    "Marca 090°",
+    "Se desconecta siempre"
+   ],
+   "correct": 1,
+   "why": "Sobre la estación, la antena recibe la señal desde arriba y la aguja se vuelve inestable; luego marca 180° respecto al morro.",
+   "whyNot": [
+    "No se queda en 000°.",
+    null,
+    "No marca un valor fijo.",
+    "No se desconecta."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.11.017",
+   "type": "calculo",
+   "level": 2,
+   "q": "Con la estación en el través, la marcación cambia 10° en 3 minutos. El tiempo hasta la estación es de:",
+   "options": [
+    "30 min",
+    "18 min",
+    "3 min",
+    "10 min"
+   ],
+   "correct": 1,
+   "why": "Tiempo = 180 s / 10° = 18 minutos.",
+   "whyNot": [
+    "Resulta de multiplicar 3 × 10.",
+    null,
+    "Es el tiempo transcurrido.",
+    "Es el cambio de marcación."
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.11.018",
+   "type": "calculo",
+   "level": 3,
+   "q": "Con GS 90 kt, la marcación pasa de 045° a 090° en 6 minutos. La distancia a la estación al estar en el través es de:",
+   "options": [
+    "6 NM",
+    "15 NM",
+    "4,5 NM",
+    "9 NM"
+   ],
+   "correct": 3,
+   "why": "En el doble ángulo, la distancia a la estación es igual a la distancia recorrida: 90 × 6 / 60 = 9 NM.",
+   "whyNot": [
+    "Es el tiempo, no la distancia.",
+    "Calcula con 150 kt.",
+    "Resulta de usar 45 kt.",
+    null
+   ],
+   "ref": "FAA IFH cap. 9"
+  },
+  {
+   "id": "060.11.019",
+   "type": "concepto",
+   "level": 2,
+   "q": "La onda que utiliza el NDB es:",
+   "options": [
+    "De tierra",
+    "Directa de línea de vista",
+    "Ionosférica solamente",
+    "De satélite"
+   ],
+   "correct": 0,
+   "why": "El NDB, en LF/MF, utiliza onda de tierra, con mayor alcance sobre el mar.",
+   "whyNot": [
+    null,
+    "La usa VHF.",
+    "La usa principalmente HF.",
+    "Es la del GNSS."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.11.020",
+   "type": "lectura",
+   "level": 2,
+   "q": "En la figura, con rumbo 040° y marcación relativa 060°, el QDM es:",
+   "figure": "svg:060-adf",
+   "options": [
+    "280°",
+    "100°",
+    "020°",
+    "040°"
+   ],
+   "correct": 1,
+   "why": "QDM = 040 + 060 = 100°. En el RMI, la punta de la aguja marca 100° directamente.",
+   "whyNot": [
+    "Es el QDR.",
+    null,
+    "Resta en vez de sumar.",
+    "Es el rumbo del avión."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.11.021",
+   "type": "concepto",
+   "level": 2,
+   "q": "El BFO del receptor ADF sirve para:",
+   "options": [
+    "Calcular el QDM",
+    "Aumentar el alcance",
+    "Oír la identificación de un NDB sin modulación",
+    "Cambiar de frecuencia"
+   ],
+   "correct": 2,
+   "why": "El oscilador de batido genera un tono que permite escuchar el morse de las estaciones no moduladas.",
+   "whyNot": [
+    "No calcula marcaciones.",
+    "No amplía el alcance.",
+    null,
+    "No cambia la frecuencia."
+   ],
+   "ref": "Anexo 10 OACI"
+  },
+  {
+   "id": "060.11.022",
+   "type": "concepto",
+   "level": 2,
+   "q": "Marcación relativa 180°: la estación está:",
+   "options": [
+    "A la derecha",
+    "Detrás del avión",
+    "A la izquierda",
+    "Delante del avión"
+   ],
+   "correct": 1,
+   "why": "La marcación relativa se mide desde el morro en sentido horario: 180° es justo detrás.",
+   "whyNot": [
+    "A la derecha sería 090°.",
+    null,
+    "A la izquierda sería 270°.",
+    "Delante sería 000°."
+   ],
+   "ref": "FAA IFH cap. 9"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.060.11.01",
+   "front": "NDB",
+   "back": "190–1750 kHz; onda de tierra; sin información de dirección"
+  },
+  {
+   "id": "c.060.11.02",
+   "front": "QDM con el ADF",
+   "back": "Rumbo magnético + marcación relativa (resta 360° si pasa de 360°)"
+  },
+  {
+   "id": "c.060.11.03",
+   "front": "QDR",
+   "back": "QDM ± 180°"
+  },
+  {
+   "id": "c.060.11.04",
+   "front": "RBI y RMI",
+   "back": "RBI: marcación relativa. RMI: QDM en la punta y QDR en la cola"
+  },
+  {
+   "id": "c.060.11.05",
+   "front": "Errores del ADF",
+   "back": "Nocturno (amanecer y anochecer), de costa, de montaña, tormentas, interferencias"
+  },
+  {
+   "id": "c.060.11.06",
+   "front": "Tiempo a la estación",
+   "back": "Segundos transcurridos / grados de cambio de marcación (en el través)"
+  },
+  {
+   "id": "c.060.11.07",
+   "front": "Doble ángulo 45°–90°",
+   "back": "La distancia a la estación es la distancia recorrida entre las dos marcaciones"
+  }
+ ]
+}

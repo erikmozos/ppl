@@ -1,0 +1,298 @@
+{
+ "lesson": {
+  "title": "Montaña y visibilidad",
+  "summary": "Peligros del vuelo en montaña (turbulencia, ondas, descendentes, nubes y valles sin salida), inversiones de valle y fenómenos que reducen la visibilidad: precipitación, bruma, calima, polvo, humo y ceniza volcánica.",
+  "objectives": [
+   "Reconocer los peligros meteorológicos del vuelo en terreno montañoso",
+   "Entender las inversiones de valle y sus consecuencias para la visibilidad",
+   "Distinguir niebla, neblina, calima, polvo, humo y ceniza volcánica",
+   "Aplicar normas prudentes para cruzar crestas y valles",
+   "Valorar el efecto de la visibilidad oblicua y del sol de cara"
+  ],
+  "sections": [
+   {
+    "title": "Peligros en terreno montañoso",
+    "text": [
+     "La montaña convierte el viento en un problema para el avión ligero. Con viento fuerte perpendicular a una cordillera aparecen **ondas de montaña**, **rotores** y **turbulencia orográfica**: el aire sube con fuerza a barlovento, pero **desciende con intensidad a sotavento**, con descendentes que pueden superar el régimen máximo de ascenso del avión (véase 050.07). Un avión que sube por una ladera a sotavento puede encontrarse en una corriente descendente que lo empuja contra el terreno.",
+     "Los **valles** concentran el viento (efecto Venturi) y pueden ser **sin salida**: en un valle estrecho, un viraje de 180° puede necesitar más radio del que hay. Vuela por el lado del valle con el viento, de forma que puedas virar hacia terreno abierto, y mantén margen para dar la vuelta. Las **nubes** pegadas a las laderas (techos bajos, nubes que se forman por ascenso orográfico y cubren la cresta) pueden ocultar el terreno: no entres en ellas y no vueles bajo un techo si no ves el terreno por delante.",
+     "Para cruzar una cresta, hazlo **con un ángulo de unos 45°** respecto a ella (para poder alejarte con un viraje corto si hay descendente) y con **margen amplio de altura** sobre la cresta, mayor cuanto más fuerte sea el viento. Es una norma de buena práctica, no una norma legal. La altura mínima legal sobre obstáculos es la de SERA.5005(f)."
+    ]
+   },
+   {
+    "title": "Inversiones de valle",
+    "text": [
+     "En una noche despejada y de viento flojo, el aire que se enfría en las laderas es más denso y **se desliza hacia el fondo del valle** (viento catabático). Allí se acumula una capa de aire frío y, encima, aire más cálido: es una **inversión de valle**. Atrapa humedad, humo y contaminación bajo ella, y es una causa típica de **nieblas y estratos** en los valles que **no se disipan** hasta que el sol calienta el suelo, a menudo a media mañana o después.",
+     "Para el piloto, supone que un valle puede estar cubierto de niebla cuando las cumbres tienen el cielo despejado, y que la visibilidad en el valle y la de los puertos pueden ser muy diferentes. Los aeródromos de valle son muy sensibles a esta situación."
+    ]
+   },
+   {
+    "title": "Fenómenos que reducen la visibilidad",
+    "text": [
+     "La visibilidad la reducen partículas o gotas en suspensión. Se distinguen por el tamaño de la partícula, la humedad y la visibilidad resultante. En el METAR se codifican con las abreviaturas siguientes."
+    ],
+    "table": {
+     "caption": "Hidrometeoros y litometeoros que reducen la visibilidad",
+     "head": [
+      "Fenómeno",
+      "Código",
+      "Qué es",
+      "Visibilidad"
+     ],
+     "rows": [
+      [
+       "Niebla",
+       "FG",
+       "Gotitas de agua en suspensión",
+       "Menos de 1000 m"
+      ],
+      [
+       "Neblina",
+       "BR",
+       "Gotitas, humedad alta",
+       "De 1000 a 5000 m"
+      ],
+      [
+       "Calima",
+       "HZ",
+       "Partículas secas muy pequeñas en suspensión",
+       "Reducción variable, cielo con tono lechoso o amarillento"
+      ],
+      [
+       "Polvo y arena",
+       "DU, SA",
+       "Partículas del suelo levantadas por el viento",
+       "Pueden bajar a menos de 1000 m"
+      ],
+      [
+       "Humo",
+       "FU",
+       "Partículas de combustión",
+       "Muy reducida cerca de incendios"
+      ],
+      [
+       "Ceniza volcánica",
+       "VA",
+       "Partículas de roca, abrasivas",
+       "Peligrosa; no volar en ella"
+      ],
+      [
+       "Lluvia, llovizna, nieve",
+       "RA, DZ, SN",
+       "Precipitación",
+       "Nieve fuerte: menos de 1000 m; lluvia intensa: varios km"
+      ]
+     ],
+     "src": "OACI Anexo 3; AEMET AU-GUI-0102"
+    },
+    "bullets": [
+     "La **calima** es una bruma seca (polvo sahariano, contaminación) que en España es frecuente con aire **tropical continental** y con vientos del sur; a menudo se forma bajo una **inversión**, de modo que por encima la visibilidad es buena. Es importante la **visibilidad oblicua**: mirando hacia el Sol o hacia arriba o abajo con calima es mucho peor que la horizontal notificada. En el METAR, la calima solo se codifica (HZ) si la visibilidad baja de 5000 m.",
+     "La **ceniza volcánica** es un caso aparte: los motores se paran y las superficies se desgastan. No se debe volar en ella ni cerca. Los **VAAC** (centros de avisos de cenizas volcánicas) la difunden en avisos y los SIGMET de ceniza duran hasta 6 h."
+    ]
+   }
+  ],
+  "numbers": [
+   "Niebla (FG): visibilidad menor de 1000 m; neblina (BR): de 1000 a 5000 m",
+   "Calima (HZ): partículas secas; se codifica con visibilidad inferior a 5000 m",
+   "Cruce de una cresta: ángulo de 45° y margen amplio de altura",
+   "SIGMET de ceniza volcánica: hasta 6 h",
+   "Inversión de valle: aire frío atrapado, nieblas que tardan en disiparse"
+  ],
+  "traps": [
+   "Calima es aire seco; neblina es húmedo.",
+   "La visibilidad horizontal puede ser buena mientras la oblicua es muy mala.",
+   "Un valle puede estar en niebla con las cumbres despejadas.",
+   "El sotavento de una cresta con viento fuerte es lo más peligroso: descendentes y rotores."
+  ],
+  "sources": [
+   {
+    "title": "AEMET, Apuntes de meteorología aeronáutica",
+    "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
+   },
+   {
+    "title": "OACI, Anexo 3: servicio meteorológico para la navegación aérea internacional"
+   },
+   {
+    "title": "FAA, Mountain Flying (FAA-P-8740-60) y Aviation Weather Handbook",
+    "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+   }
+  ],
+  "id": "050.17",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "050.17.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "A sotavento de una cordillera con viento fuerte perpendicular, el peligro principal son:",
+   "options": [
+    "Las descendentes y los rotores",
+    "El hielo de carburador",
+    "La calima",
+    "La niebla de radiación"
+   ],
+   "correct": 0,
+   "why": "A sotavento hay descendentes que pueden superar el régimen de ascenso del avión, y rotores.",
+   "whyNot": [
+    null,
+    "Es un problema de humedad.",
+    "No es un fenómeno específico del relieve.",
+    "Es un efecto nocturno."
+   ],
+   "ref": "FAA-P-8740-60"
+  },
+  {
+   "id": "050.17.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "Una inversión de valle:",
+   "options": [
+    "Aumenta el viento",
+    "Provoca tormentas",
+    "Atrapa aire frío, humedad y humo en el fondo del valle",
+    "Dispersa la niebla"
+   ],
+   "correct": 2,
+   "why": "El aire frío y denso se acumula en el valle bajo una capa más cálida.",
+   "whyNot": [
+    "Con inversión hay estabilidad.",
+    "Hay estabilidad, no inestabilidad.",
+    null,
+    "Favorece la niebla."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.17.003",
+   "type": "regla",
+   "level": 1,
+   "q": "La neblina (BR) es el fenómeno en que la visibilidad horizontal es de:",
+   "options": [
+    "De 5 a 10 km",
+    "1000 a 5000 m",
+    "Más de 10 km",
+    "Menos de 1000 m"
+   ],
+   "correct": 1,
+   "why": "Niebla (FG) por debajo de 1000 m; neblina (BR) entre 1000 y 5000 m.",
+   "whyNot": [
+    "No se considera neblina.",
+    null,
+    "No hay restricción.",
+    "Eso es niebla."
+   ],
+   "ref": "OACI Anexo 3"
+  },
+  {
+   "id": "050.17.004",
+   "type": "concepto",
+   "level": 2,
+   "q": "La calima se diferencia de la neblina en que:",
+   "options": [
+    "Está formada por gotitas",
+    "Está formada por partículas secas",
+    "Siempre da visibilidad nula",
+    "Solo ocurre con lluvia"
+   ],
+   "correct": 1,
+   "why": "La calima es polvo o contaminación en suspensión, aire seco.",
+   "whyNot": [
+    "Eso es la neblina.",
+    null,
+    "Reduce la visibilidad, no la anula.",
+    "No necesita lluvia."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.17.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "Con calima, volar con el Sol de cara:",
+   "options": [
+    "Reduce mucho la visibilidad oblicua",
+    "Aumenta la visibilidad",
+    "Elimina la calima",
+    "No cambia nada"
+   ],
+   "correct": 0,
+   "why": "La luz dispersa por las partículas deslumbra y la visibilidad en esa dirección es peor que la notificada.",
+   "whyNot": [
+    null,
+    "La mejora no existe.",
+    "No elimina nada.",
+    "Sí cambia: el brillo se dispersa."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.17.006",
+   "type": "concepto",
+   "level": 1,
+   "q": "Ante una nube de ceniza volcánica:",
+   "options": [
+    "Reducir la mezcla",
+    "Atravesarla rápido",
+    "No volar en ella ni cerca",
+    "Subir por encima"
+   ],
+   "correct": 2,
+   "why": "La ceniza abrasiva puede detener los motores y dañar el avión.",
+   "whyNot": [
+    "No tiene relación.",
+    "Los motores pueden fallar.",
+    null,
+    "Puede extenderse a gran altitud."
+   ],
+   "ref": "OACI Anexo 3"
+  },
+  {
+   "id": "050.17.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "Para cruzar una cresta con viento fuerte se recomienda:",
+   "options": [
+    "Cruzar paralelo a la cresta",
+    "Cruzar perpendicular a baja altura",
+    "Cruzar solo de noche",
+    "Acercarse con un ángulo de unos 45° y con margen de altura"
+   ],
+   "correct": 3,
+   "why": "El ángulo de 45° permite virar para alejarse si aparece una descendente.",
+   "whyNot": [
+    "No cruza la cresta.",
+    "No deja salida si hay descendente.",
+    "La noche reduce la visibilidad del terreno.",
+    null
+   ],
+   "ref": "FAA-P-8740-60"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.050.17.01",
+   "front": "Niebla y neblina",
+   "back": "Niebla (FG): menos de 1000 m; neblina (BR): 1000 a 5000 m"
+  },
+  {
+   "id": "c.050.17.02",
+   "front": "Calima",
+   "back": "Partículas secas; reduce más la visibilidad oblicua"
+  },
+  {
+   "id": "c.050.17.03",
+   "front": "Cruzar una cresta",
+   "back": "Unos 45° y con margen amplio de altura"
+  },
+  {
+   "id": "c.050.17.04",
+   "front": "Inversión de valle",
+   "back": "Aire frío atrapado, humo y niebla que tardan en disiparse"
+  },
+  {
+   "id": "c.050.17.05",
+   "front": "Ceniza volcánica",
+   "back": "No volar en ella ni cerca; avisos VAAC y SIGMET"
+  }
+ ]
+}

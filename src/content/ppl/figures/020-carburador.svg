@@ -29,7 +29,7 @@
 <text x="10" y="150" class="txw b" font-size="13">2 Hielo de evaporación</text>
 <text x="10" y="166" class="tx2">la gasolina se evapora y el</text>
 <text x="10" y="182" class="tx2">venturi expande el aire:</text>
-<text x="10" y="198" class="tx2">el aire cae hasta ~20 °C</text>
+<text x="10" y="198" class="tx2">el aire cae 20 °C o más</text>
 <line x1="150" y1="170" x2="236" y2="168" class="ln2"/>
 <text x="10" y="262" class="txw b" font-size="13">3 Hielo de estrangulamiento</text>
 <text x="10" y="278" class="tx2">tras la mariposa casi cerrada</text>

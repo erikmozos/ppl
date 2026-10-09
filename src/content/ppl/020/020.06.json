@@ -1,0 +1,615 @@
+{
+  "lesson": {
+    "id": "020.06",
+    "title": "Sistema de combustible",
+    "summary": "Depósitos, ventilación, selector, bombas, filtro y drenajes, indicadores, contaminación y bloqueo por vapor; comparación del sistema por bomba del PA-28-161 (ala baja) con el de gravedad del C172S (ala alta).",
+    "objectives": [
+      "Describir los componentes de un sistema de combustible de avión ligero y el recorrido del combustible",
+      "Explicar la diferencia entre alimentación por gravedad (ala alta) y por bomba (ala baja)",
+      "Manejar el selector del PA-28-161 (izquierdo, derecho, cerrado) y del C172S (izquierdo, derecho, ambos, cerrado)",
+      "Explicar para qué sirve la bomba eléctrica y cuándo se usa",
+      "Reconocer la contaminación, la obstrucción de la ventilación y el bloqueo por vapor, y distinguir agotamiento de falta de alimentación"
+    ],
+    "sections": [
+      {
+        "title": "Componentes y recorrido",
+        "text": [
+          "El combustible va del depósito al motor por un circuito con pocos elementos, y casi todos son objeto de una pregunta de examen. Los **depósitos** están en las alas, uno en cada lado. De cada depósito, el combustible llega al **selector**, que elige de cuál se alimenta el motor o lo corta. Después pasa por el **filtro** o **decantador** (*gascolator*, el punto más bajo del sistema, donde se acumulan el agua y los sedimentos y tiene su propio drenaje), por las **bombas** y por el **carburador** (PA-28) o la **unidad de inyección** (C172S).",
+          "Cada depósito lleva además un **tapón**, una toma de **ventilación**, un **drenaje** (sumidero) en el punto más bajo y un **indicador de cantidad** (020.18). La **ventilación** pone el depósito en comunicación con el aire exterior: así la presión en el depósito se iguala a la ambiente a medida que el combustible baja. Si la toma de ventilación se **obstruye** (hielo, insectos, tapón mal puesto), se forma vacío en el depósito y el combustible deja de fluir: el motor se para aunque el depósito no esté vacío."
+        ],
+        "figure": "svg:020-sistemas-combustible",
+        "caption": "Sistemas de combustible del PA-28-161 (con bombas) y del C172S (por gravedad), lado a lado."
+      },
+      {
+        "title": "PA-28-161: ala baja, con bomba",
+        "text": [
+          "En el PA-28-161 Warrior III los depósitos están **por debajo del nivel del carburador y del motor**: el combustible no baja solo, hay que **bombearlo**. Por eso el sistema lleva una **bomba mecánica**, movida por el motor, y una **bomba eléctrica de respaldo** (auxiliar). Los dos depósitos suman unos **48 galones US utilizables** (unos 182 l). El selector tiene tres posiciones: **izquierdo, derecho y cerrado (OFF)**; **no tiene posición BOTH**, de modo que **solo se alimenta de un depósito a la vez** y hay que alternar de depósito según el POH.",
+          "La **bomba eléctrica** respalda a la mecánica en las fases críticas. Se pone en **ON** para el arranque (según POH), el **despegue** y el **aterrizaje**, y **al cambiar de depósito**, y también si la presión de combustible baja o se sospecha un fallo de la bomba mecánica, y se apaga en el resto del vuelo. Un manómetro de **presión de combustible** (psi) vigila el funcionamiento. El **cebador** (primer) envía una pequeña cantidad de combustible directamente a los cilindros para el arranque en frío."
+        ],
+        "verify": true,
+        "note": {
+          "kind": "warn",
+          "text": "Cambiar de depósito con la bomba eléctrica en OFF puede dejar al motor sin combustible un instante. Hazlo con la bomba en ON, a una altitud segura y comprobando la presión."
+        }
+      },
+      {
+        "title": "C172S: ala alta, por gravedad",
+        "text": [
+          "En el Cessna 172S los depósitos están en el **ala alta**, **por encima del motor**: el combustible **baja por gravedad** hasta el selector y la unidad de inyección. Aun así, el motor de inyección necesita una **bomba mecánica** para dar presión y, para el arranque y fases críticas, una **bomba eléctrica auxiliar**. Los depósitos suman unos **53 galones US utilizables** (unos 200 l). El selector tiene cuatro posiciones: **izquierdo, derecho, ambos (BOTH) y cerrado**, y la posición normal es **BOTH**, que alimenta el motor de los dos depósitos a la vez y equilibra el consumo. Los POH piden **un solo depósito** en ciertas fases (por ejemplo, con viento cruzado en el aterrizaje o en vuelo con un depósito desequilibrado), según instrucciones.",
+          "Con la alimentación por gravedad, el combustible llega sin bomba, pero **una maniobra con morro muy bajo o un gran alabeo** pueden desalimentar el depósito o la toma si hay poco combustible. Por eso se evitan actitudes extremas con poca cantidad y el uso de un solo depósito casi vacío."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Indicadores y control de la cantidad",
+        "text": [
+          "Los indicadores de cantidad no son fiables al 100 % (020.18). El piloto debe **comprobar la cantidad visualmente** en el prevuelo y **calcular el consumo** para el vuelo. La **cantidad no utilizable** es el combustible que queda en el depósito y no llega al motor en vuelo; no se cuenta en la planificación. Un consumo típico de estos aviones ronda los **30 a 40 l/h** en crucero, pero los valores exactos son los del POH."
+        ],
+        "formulas": [
+          {
+            "f": "1 galón US = 3,785 l; masa (kg) = litros × 0,72",
+            "note": "Para pasar de capacidades en galones a litros y kilos de AVGAS."
+          }
+        ],
+        "examples": [
+          {
+            "q": "El C172S tiene 53 galones US utilizables. ¿Cuántos litros y kilos son?",
+            "a": "53 × 3,785 ≈ 200,6 l. 200,6 × 0,72 ≈ 144 kg."
+          },
+          {
+            "q": "Consumes 35 l/h y quieres 1 h 45 min de vuelo más la reserva. ¿Cuántos litros necesitas en el vuelo?",
+            "a": "35 × 1,75 = 61,25 l de vuelo, más la reserva obligatoria que corresponda."
+          }
+        ]
+      },
+      {
+        "title": "Contaminación y bloqueo por vapor",
+        "text": [
+          "La **contaminación** más común es el **agua** (020.10) y los sedimentos. Se evita drenando los puntos bajos (sumideros y *gascolator*) antes del primer vuelo del día y tras cada repostaje, repostando solo de fuentes fiables, con tapones cerrados y filtrando con gamuza. Una **fuga** de combustible es señal de peligro: se ve como una mancha o se huele; el avión no sale.",
+          "El **bloqueo por vapor** (*vapor lock*) aparece cuando el combustible **hierve en las tuberías** por **calor**, baja presión (altitud) o mucha volatilidad (gasolina de automoción): se forman burbujas de vapor que impiden que la bomba empuje combustible líquido, y el motor funciona mal o se para. Se previene con la **bomba eléctrica** en ON, que presuriza las líneas, y evitando permanecer parado con el motor caliente. Si aparece, se activa la bomba eléctrica, se enriquece la mezcla y se cambia de depósito si hace falta."
+        ],
+        "bullets": [
+          "**Agotamiento de combustible** (*fuel exhaustion*): no queda combustible utilizable.",
+          "**Falta de alimentación** (*fuel starvation*): hay combustible en el depósito pero no llega al motor (selector mal puesto, ventilación obstruida, obstrucción, bloqueo por vapor)."
+        ]
+      }
+    ],
+    "numbers": [
+      "PA-28-161: ala baja; bomba mecánica y bomba eléctrica de respaldo; selector izquierdo, derecho y cerrado (sin BOTH)",
+      "C172S: ala alta, por gravedad; selector izquierdo, derecho, ambos y cerrado; posición normal BOTH",
+      "Bomba eléctrica del PA-28 en ON en despegue, aterrizaje y al cambiar de depósito (según POH)",
+      "1 galón US = 3,785 l; AVGAS ≈ 0,72 kg/l",
+      "Ventilación obstruida: vacío en el depósito y el motor se para sin estar vacío"
+    ],
+    "traps": [
+      "Creer que el PA-28 tiene posición BOTH en el selector: no la tiene.",
+      "Pensar que, con ala alta y gravedad, no hace falta bomba alguna: el C172S de inyección lleva bombas.",
+      "Cambiar de depósito con la bomba eléctrica en OFF.",
+      "Confundir agotamiento de combustible con falta de alimentación.",
+      "Fiarse del indicador de cantidad sin comprobar el depósito visualmente."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 7: sistemas de combustible",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Manual de vuelo del PA-28-161 Warrior III y del Cessna 172S: sistema de combustible",
+        "url": "https://www.piper.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Prevuelo del PA-28: drenajes de combustible",
+        "href": "#/ac/pa28/flow/preflight"
+      },
+      {
+        "label": "Prueba de motor del PA-28 (bomba eléctrica y selector)",
+        "href": "#/ac/pa28/flow/runup"
+      },
+      {
+        "label": "Arranque del C172 (selector y bomba)",
+        "href": "#/ac/c172/flow/start"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.06.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "En un PA-28-161 de ala baja, el combustible llega al motor:",
+      "options": [
+        "Por gravedad",
+        "Impulsado por bombas",
+        "Por la presión del escape",
+        "Por la depresión del carburador solamente"
+      ],
+      "correct": 1,
+      "why": "Los depósitos están por debajo del motor: hace falta una bomba mecánica y una eléctrica de respaldo.",
+      "whyNot": [
+        "La gravedad funciona en el ala alta.",
+        null,
+        "El escape no alimenta combustible.",
+        "La depresión del carburador no basta con depósitos bajos."
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "020.06.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "En un C172S de ala alta, el combustible llega a la unidad de inyección:",
+      "options": [
+        "Solo por gravedad, sin bomba",
+        "Por gravedad hasta el selector y con bomba para la presión de inyección",
+        "Solo por bomba eléctrica",
+        "Por presión del tren"
+      ],
+      "correct": 1,
+      "why": "Baja por gravedad desde el ala alta, pero un motor de inyección necesita bomba para dar presión.",
+      "whyNot": [
+        "La inyección no puede funcionar solo con gravedad.",
+        null,
+        "La bomba mecánica es la principal.",
+        "El tren no tiene relación."
+      ],
+      "ref": "POH C172S"
+    },
+    {
+      "id": "020.06.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "El selector de combustible del PA-28-161 tiene las posiciones:",
+      "options": [
+        "Izquierdo, derecho y cerrado",
+        "Izquierdo, derecho y ambos",
+        "Izquierdo, ambos y cerrado",
+        "Solo abierto y cerrado"
+      ],
+      "correct": 0,
+      "why": "No hay posición BOTH: se alimenta de un depósito a la vez.",
+      "whyNot": [
+        null,
+        "No tiene posición «ambos».",
+        "Tampoco ambos.",
+        "Tiene tres posiciones."
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "020.06.004",
+      "type": "concepto",
+      "level": 1,
+      "q": "La posición normal del selector de combustible del C172S es:",
+      "options": [
+        "Ambos (BOTH)",
+        "Derecho",
+        "Izquierdo",
+        "Cerrado"
+      ],
+      "correct": 0,
+      "why": "Con BOTH se alimentan los dos depósitos y se equilibra el consumo.",
+      "whyNot": [
+        null,
+        "Igual que el izquierdo.",
+        "Se usa solo en casos concretos.",
+        "Cerrado corta el combustible."
+      ],
+      "ref": "POH C172S"
+    },
+    {
+      "id": "020.06.005",
+      "type": "regla",
+      "level": 2,
+      "q": "En un PA-28, la bomba eléctrica de combustible se pone en ON:",
+      "options": [
+        "En despegue, aterrizaje y al cambiar de depósito",
+        "Solo en crucero",
+        "Nunca",
+        "Solo para arrancar en caliente"
+      ],
+      "correct": 0,
+      "why": "Respalda a la bomba mecánica en las fases críticas y en el cambio de depósito.",
+      "whyNot": [
+        null,
+        "En crucero normalmente va en OFF.",
+        "Se usa en las fases críticas.",
+        "Se usa también en despegue y aterrizaje."
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "020.06.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Para qué sirve la ventilación del depósito de combustible?",
+      "options": [
+        "Para enfriar el combustible",
+        "Para medir la cantidad",
+        "Para vaciar el agua",
+        "Para igualar la presión interior con la exterior a medida que baja el nivel"
+      ],
+      "correct": 3,
+      "why": "Sin ventilación, el combustible que sale crea vacío y deja de fluir.",
+      "whyNot": [
+        "No refrigera el combustible.",
+        "La cantidad la mide el indicador.",
+        "El agua se drena por los sumideros.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.06.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si la ventilación de un depósito se obstruye, el efecto más probable es:",
+      "options": [
+        "El motor funciona con más potencia",
+        "La mezcla se enriquece",
+        "El combustible se calienta",
+        "Se forma vacío en el depósito y cesa el flujo"
+      ],
+      "correct": 3,
+      "why": "El combustible que se consume deja vacío en el depósito, y con el tiempo el flujo se corta.",
+      "whyNot": [
+        "La potencia no aumenta.",
+        "No actúa sobre la mezcla.",
+        "No hay efecto térmico apreciable.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.06.008",
+      "type": "concepto",
+      "level": 1,
+      "q": "El filtro (gascolator) está en:",
+      "options": [
+        "El punto más alto",
+        "El punto más bajo del sistema de combustible",
+        "Dentro del carburador",
+        "En el escape"
+      ],
+      "correct": 1,
+      "why": "El agua y los sedimentos se acumulan en el punto más bajo, donde está el decantador con su drenaje.",
+      "whyNot": [
+        "El agua se acumularía abajo, no arriba.",
+        null,
+        "No está dentro del carburador.",
+        "No tiene relación con el escape."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.06.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "El bloqueo por vapor se debe a:",
+      "options": [
+        "Combustible que hierve en las líneas por calor o baja presión",
+        "Falta de aire en el depósito",
+        "Hielo en el carburador",
+        "Un filtro obstruido"
+      ],
+      "correct": 0,
+      "why": "El vapor impide que la bomba empuje líquido, y el motor funciona mal o se para.",
+      "whyNot": [
+        null,
+        "Eso es obstrucción de la ventilación.",
+        "El hielo es otro fenómeno.",
+        "Es otra causa de falta de alimentación."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.06.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué medida ayuda a evitar o resolver un bloqueo por vapor?",
+      "options": [
+        "Poner la bomba eléctrica en ON",
+        "Cerrar el selector",
+        "Empobrecer la mezcla",
+        "Quitar la calefacción del pitot"
+      ],
+      "correct": 0,
+      "why": "La bomba eléctrica presuriza las líneas y evita que el combustible hierva.",
+      "whyNot": [
+        null,
+        "Cortaría el combustible.",
+        "Empobrecer calienta más.",
+        "No tiene relación."
+      ],
+      "ref": "POH; PHAK cap. 7"
+    },
+    {
+      "id": "020.06.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "«Fuel starvation» se refiere a:",
+      "options": [
+        "No queda combustible en los depósitos",
+        "Combustible contaminado",
+        "Exceso de combustible",
+        "Hay combustible en el depósito pero no llega al motor"
+      ],
+      "correct": 3,
+      "why": "En la falta de alimentación hay combustible, pero un fallo (selector, ventilación, obstrucción, vapor) impide que llegue.",
+      "whyNot": [
+        "Eso es agotamiento (fuel exhaustion).",
+        "La contaminación es otra causa.",
+        "No es un exceso.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.06.012",
+      "type": "regla",
+      "level": 1,
+      "q": "El agua en el sistema de combustible se detecta:",
+      "options": [
+        "Solo con el motor en marcha",
+        "Por el color del combustible",
+        "Drenando el gascolator y los sumideros y observando la muestra",
+        "Mirando el indicador de cantidad"
+      ],
+      "correct": 2,
+      "why": "Se drena y se mira la muestra: el agua forma una burbuja o capa clara en el fondo.",
+      "whyNot": [
+        "Es una comprobación de tierra, antes del vuelo.",
+        "El color no basta para detectar agua.",
+        null,
+        "El indicador no mide agua."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.06.013",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un depósito contiene 120 l de AVGAS (0,72 kg/l). ¿Cuánto pesa el combustible?",
+      "options": [
+        "120 kg",
+        "86,4 kg",
+        "166,7 kg",
+        "72 kg"
+      ],
+      "correct": 1,
+      "why": "120 × 0,72 = 86,4 kg.",
+      "whyNot": [
+        "Confunde litros con kilos.",
+        null,
+        "Divide entre 0,72.",
+        "Es la masa de 100 l."
+      ],
+      "ref": "Densidad del AVGAS"
+    },
+    {
+      "id": "020.06.014",
+      "type": "calculo",
+      "level": 2,
+      "q": "El PA-28-161 tiene unos 48 galones US utilizables. ¿Cuántos litros son aproximadamente?",
+      "options": [
+        "127 l",
+        "48 l",
+        "182 l",
+        "250 l"
+      ],
+      "correct": 2,
+      "why": "Cada galón US son 3,785 l: 48 × 3,785 ≈ 182 l.",
+      "whyNot": [
+        "Divide entre 3,785.",
+        "Confunde galones con litros.",
+        null,
+        "Multiplica por un valor excesivo."
+      ],
+      "ref": "1 galón US = 3,785 l"
+    },
+    {
+      "id": "020.06.015",
+      "type": "calculo",
+      "level": 3,
+      "q": "Consumes 38 l/h. ¿Cuánto combustible consumes en 1 h 30 min?",
+      "options": [
+        "38 l",
+        "76 l",
+        "57 l",
+        "25 l"
+      ],
+      "correct": 2,
+      "why": "Consumo × tiempo: 38 l/h × 1,5 h = 57 l.",
+      "whyNot": [
+        "Es el consumo de 1 hora.",
+        "Corresponde a 2 horas.",
+        null,
+        "Divide entre 1,5."
+      ],
+      "ref": "Consumo × tiempo"
+    },
+    {
+      "id": "020.06.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con un depósito casi vacío y el avión en actitud de morro muy bajo, existe riesgo de que:",
+      "options": [
+        "El combustible suba por el depósito",
+        "La toma de combustible quede sin combustible momentáneamente",
+        "Se hiele el carburador",
+        "Aumente la presión de aceite"
+      ],
+      "correct": 1,
+      "why": "Con poco combustible, una actitud extrema puede dejar la toma de salida sin cubrir.",
+      "whyNot": [
+        "No tiene sentido físico.",
+        null,
+        "No guarda relación.",
+        "No guarda relación."
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "020.06.017",
+      "type": "concepto",
+      "level": 2,
+      "q": "La cantidad de combustible no utilizable:",
+      "options": [
+        "Se incluye en la planificación de autonomía",
+        "Es el combustible de reserva",
+        "No se cuenta en la autonomía",
+        "Es el agua del depósito"
+      ],
+      "correct": 2,
+      "why": "Es la que queda en el depósito y no llega al motor en vuelo: no se cuenta como disponible.",
+      "whyNot": [
+        "Se excluye de la autonomía.",
+        "La reserva se puede usar en vuelo.",
+        null,
+        "No es agua."
+      ],
+      "ref": "POH; masa y centrado"
+    },
+    {
+      "id": "020.06.018",
+      "type": "lectura",
+      "level": 2,
+      "q": "En un PA-28-161 llevas 15 minutos con el depósito izquierdo. ¿Qué se hace para cambiar de depósito?",
+      "data": "Depósito izquierdo: 8 galones restantes\nDepósito derecho: 20 galones\nPresión de combustible: normal\nBomba eléctrica: OFF",
+      "options": [
+        "Cambiar el selector al derecho con la bomba en OFF",
+        "Cerrar el selector",
+        "Poner la bomba eléctrica en ON, cambiar al depósito derecho y comprobar la presión",
+        "Subir flaps"
+      ],
+      "correct": 2,
+      "why": "Se pone la bomba eléctrica en ON, se cambia de depósito y se comprueba la presión antes de apagarla.",
+      "whyNot": [
+        "Con la bomba en OFF puede haber una interrupción de combustible.",
+        "Cerrar el selector deja al motor sin combustible.",
+        null,
+        "Los flaps no tienen relación."
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "020.06.019",
+      "type": "lectura",
+      "level": 2,
+      "q": "Según la figura, una diferencia entre los selectores de los dos aviones es que:",
+      "figure": "svg:020-sistemas-combustible",
+      "options": [
+        "Los dos tienen las mismas posiciones",
+        "El C172S no tiene posición «cerrado»",
+        "El PA-28-161 no tiene selector",
+        "El PA-28-161 no tiene posición «ambos» y el C172S sí"
+      ],
+      "correct": 3,
+      "why": "El selector del PA-28 es izquierdo, derecho y cerrado; el del C172S añade la posición «ambos».",
+      "whyNot": [
+        "Se diferencian en la posición «ambos».",
+        "El C172S sí tiene posición cerrado.",
+        "El PA-28 sí tiene selector.",
+        null
+      ],
+      "ref": "POH PA-28-161 y C172S"
+    },
+    {
+      "id": "020.06.020",
+      "type": "concepto",
+      "level": 1,
+      "q": "El cebador (primer) de un PA-28-161 sirve para:",
+      "options": [
+        "Enviar una pequeña cantidad de combustible a los cilindros para el arranque en frío",
+        "Reponer combustible en vuelo",
+        "Medir el combustible",
+        "Apagar el motor"
+      ],
+      "correct": 0,
+      "why": "Facilita el arranque en frío inyectando combustible directamente en los cilindros.",
+      "whyNot": [
+        null,
+        "No repone combustible.",
+        "No mide.",
+        "No se usa para apagar."
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "020.06.021",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una fuga de combustible visible en el prevuelo supone:",
+      "options": [
+        "Nada, es normal",
+        "Que es condensación",
+        "Que hay que subir la mezcla",
+        "Que el avión no debe volar hasta repararla"
+      ],
+      "correct": 3,
+      "why": "Una fuga es un peligro de incendio y de agotamiento: el avión no sale.",
+      "whyNot": [
+        "No es normal.",
+        "Una fuga no se confunde con condensación.",
+        "La mezcla no tiene relación.",
+        null
+      ],
+      "ref": "POH"
+    },
+    {
+      "id": "020.06.022",
+      "type": "regla",
+      "level": 2,
+      "q": "El selector de combustible en CERRADO (OFF) en vuelo provoca:",
+      "options": [
+        "Más potencia",
+        "La parada del motor al agotarse el combustible de las líneas",
+        "Que se alimente de ambos depósitos",
+        "Nada"
+      ],
+      "correct": 1,
+      "why": "Corta el combustible: el motor funciona unos instantes con el residual y se para.",
+      "whyNot": [
+        "No aumenta potencia.",
+        null,
+        "Corta ambos depósitos.",
+        "Sí provoca la parada."
+      ],
+      "ref": "POH"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.06.01",
+      "front": "Selector del PA-28-161",
+      "back": "Izquierdo, derecho y cerrado; sin BOTH; un solo depósito a la vez"
+    },
+    {
+      "id": "c.020.06.02",
+      "front": "Selector del C172S",
+      "back": "Izquierdo, derecho, ambos y cerrado; posición normal: BOTH"
+    },
+    {
+      "id": "c.020.06.03",
+      "front": "Alimentación: ala baja y ala alta",
+      "back": "Ala baja (PA-28): bomba mecánica y eléctrica. Ala alta (C172S): gravedad más bombas para la inyección"
+    },
+    {
+      "id": "c.020.06.04",
+      "front": "Bomba eléctrica del PA-28: cuándo ON",
+      "back": "Despegue, aterrizaje y al cambiar de depósito (según POH)"
+    },
+    {
+      "id": "c.020.06.05",
+      "front": "Ventilación del depósito obstruida",
+      "back": "Vacío en el depósito y el motor se para con combustible"
+    },
+    {
+      "id": "c.020.06.06",
+      "front": "Bloqueo por vapor",
+      "back": "Combustible que hierve en las líneas; se evita con la bomba eléctrica en ON"
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "lesson": {
+    "id": "020.15",
+    "title": "Mezcla",
+    "summary": "Mezcla estequiométrica, de máxima potencia y de máxima economía; cómo empobrecer con la EGT o con las RPM; efectos de la mezcla rica y pobre; detonación, preencendido y petardeos.",
+    "objectives": [
+      "Definir la mezcla estequiométrica, la de máxima potencia y la de máxima economía con sus proporciones aproximadas",
+      "Leer una curva de EGT y potencia y explicar cómo se empobrece con un indicador de EGT o sin él",
+      "Describir los efectos de una mezcla demasiado rica y de una demasiado pobre",
+      "Diferenciar detonación y preencendido, sus causas y cómo se corrigen",
+      "Aplicar la regla de enriquecer antes de subir potencia y empobrecer en altitud"
+    ],
+    "sections": [
+      {
+        "title": "Tres mezclas de referencia",
+        "text": [
+          "Se llama **mezcla** a la proporción entre el aire y la gasolina que entran al cilindro, medida en masa. La **estequiométrica** (15:1, unos 15 kg de aire por kg de combustible) es la teórica en la que todo el combustible se quema con todo el oxígeno disponible. Sin embargo, el motor no da su máxima potencia con esa mezcla ni consume lo mínimo con ella. Las dos mezclas que importan en el uso diario son estas:",
+          "La **mezcla de máxima potencia** es algo más **rica** que la estequiométrica, de unos **12:1** (valor aproximado). Con exceso de combustible, el oxígeno se aprovecha por completo, la combustión es más rápida y la gasolina sobrante refrigera. La **mezcla de máxima economía** es **pobre**, de unos **16 a 17:1**: gasta menos combustible por hora y por kilómetro, con menos potencia. La temperatura de los gases de escape (EGT) es máxima en torno a la estequiométrica, un poco hacia el lado pobre, y baja hacia ambos lados."
+        ],
+        "figure": "svg:020-curva-egt",
+        "caption": "Potencia y EGT según la riqueza de la mezcla (curvas esquemáticas; los valores exactos dependen del motor).",
+        "verify": true
+      },
+      {
+        "title": "Efectos de la mezcla rica y pobre",
+        "text": [
+          "Una mezcla **rica** es segura: el combustible sobrante evapora y enfría los cilindros y rebaja el riesgo de detonación. Por eso se vuela con mezcla rica en el despegue, el ascenso con potencia alta y la aproximación. El precio es el consumo, la **carbonilla** en las bujías, la pérdida de potencia si se excede y, con exceso grave, humo negro y afterfire.",
+          "Una mezcla **pobre** es peligrosa si se hace sin control: las temperaturas de culatas y de gases suben, aparece el riesgo de **detonación** y de **preencendido**, el motor funciona a tirones y con poca potencia, puede haber petardeos por la admisión y, si se mantiene, se dañan válvulas y pistones. En crucero y con potencia moderada se aprovecha el ahorro, pero de forma ordenada."
+        ],
+        "bullets": [
+          "Mezcla rica: motor más frío, más combustible, bujías sucias de carbonilla.",
+          "Mezcla pobre: motor más caliente, riesgo de detonación y sobrecalentamiento, pérdida de potencia si se pasa de pobre.",
+          "Petardeo por admisión (*backfire*): mezcla demasiado pobre que quema despacio y regresa por la admisión. Llamarada o estallido por el escape (*afterfire*): mezcla demasiado rica con combustible sin quemar."
+        ]
+      },
+      {
+        "title": "Cómo se empobrece",
+        "text": [
+          "Con la altitud el aire es menos denso y, con el mando de mezcla en rica, la proporción se enriquece de forma progresiva (020.11). Se **empobrece** para recuperar una mezcla correcta. Sin indicador de EGT se hace por el sonido y las RPM: con el motor en crucero se tira lentamente de la mezcla hasta que las RPM suben al máximo y empiezan a caer o el motor se pone áspero, y se **enriquece un poco** hasta volver a la suavidad. Es el método habitual en motores de carburador con paso fijo (POH del PA-28-161).",
+          "Con un indicador de **EGT** se empobrece hasta el **pico de temperatura** y luego se enriquece una cantidad que fija el POH del avión: un poco del lado rico del pico da la mayor potencia, y en el pico o del lado pobre se obtiene la máxima economía, que algunos POH solo permiten por debajo de cierto porcentaje de potencia. La EGT depende de cada cilindro y avión, así que no se usan cifras fijas sin consultar el manual."
+        ],
+        "verify": true,
+        "bullets": [
+          "**Enriquecer antes de subir la potencia; empobrecer después de bajarla.** Así el motor nunca queda pobre y caliente con alta potencia.",
+          "En el descenso se enriquece al bajar para que, al volver la potencia, la mezcla no sea pobre.",
+          "En el despegue y la aproximación, mezcla en **rica** (salvo despegue en altitud elevada, donde el POH indica empobrecer).",
+          "Mezcla en **corte de ralentí** para parar un motor de carburador."
+        ],
+        "examples": [
+          {
+            "q": "Asciendes con mezcla en rica y llegas a crucero a 6000 ft con 75 % de potencia. ¿Cómo empobreces en un PA-28-161 sin EGT?",
+            "a": "Con la potencia de crucero y las RPM estables, tiras del mando de mezcla poco a poco hasta que las RPM suben al máximo o el motor se pone áspero, y enriqueces un poco para recuperar la suavidad. En descenso, vuelves a enriquecer a medida que bajas."
+          }
+        ]
+      },
+      {
+        "title": "Detonación",
+        "text": [
+          "En una combustión normal, la chispa enciende la mezcla y el frente de llama avanza de forma suave. En la **detonación**, la última parte de la mezcla, comprimida y calentada por el frente de llama, se **inflama de forma espontánea y explosiva** antes de que llegue la llama. Las ondas de choque golpean pistón y culata, con un ruido metálico (*knock*), y pueden perforar el pistón, agrietar la culata o romper segmentos. La detonación ocurre **después de la chispa**.",
+          "Las causas son presión y temperatura excesivas en el cilindro: **combustible con octanaje inferior al exigido**, **mezcla demasiado pobre**, **presión de admisión alta con RPM bajas**, **sobrecalentamiento** y aire de admisión muy caliente. En cabina notarás vibración, aspereza y temperatura de culatas y de aceite altas."
+        ],
+        "bullets": [
+          "Prevención: grado de combustible correcto, mezcla rica según el POH y no sobrepasar los límites de presión de admisión y RPM.",
+          "Corrección: enriquecer la mezcla, reducir potencia, aumentar la velocidad y abrir los flaps de capó si hay."
+        ]
+      },
+      {
+        "title": "Preencendido",
+        "text": [
+          "El **preencendido** es la inflamación de la mezcla **antes** de que salte la chispa, por un punto caliente en la cámara: un depósito de carbonilla incandescente, un electrodo de bujía muy caliente o una válvula sobrecalentada. La presión sube antes de tiempo, empuja al pistón en contra de su movimiento y calienta aún más, con lo que el fallo se agrava. Puede acabar en detonación, y detonación y preencendido pueden estimularse entre sí.",
+          "Para distinguirlos: **detonación después de la chispa; preencendido antes de la chispa**. Se previene con bujías del grado térmico correcto, sin carbonilla, mezcla correcta y buena refrigeración. Ante la sospecha, se hace lo mismo que contra la detonación: enriquecer, reducir potencia y refrigerar."
+        ],
+        "note": {
+          "kind": "tip",
+          "text": "El aviso de examen de siempre: detonación = combustión explosiva después de la chispa; preencendido = ignición antes de la chispa."
+        }
+      }
+    ],
+    "numbers": [
+      "Estequiométrica: 15:1; máxima potencia: unos 12:1; máxima economía: unos 16-17:1 (aire:combustible en masa)",
+      "La EGT es máxima cerca de la estequiométrica, algo hacia el lado pobre",
+      "Mezcla rica refrigera; mezcla pobre calienta y facilita detonación",
+      "Detonación: después de la chispa; preencendido: antes de la chispa",
+      "Enriquecer antes de subir potencia; empobrecer tras bajar potencia"
+    ],
+    "traps": [
+      "Creer que la mezcla de máxima potencia es la estequiométrica: es algo más rica.",
+      "Pensar que una mezcla muy pobre es la más fría: cerca de la estequiométrica y pobre la EGT es más alta.",
+      "Empobrecer con mucha potencia en altitud baja: es una causa clásica de sobrecalentamiento.",
+      "Confundir detonación con preencendido: el momento respecto a la chispa lo distingue.",
+      "Olvidar enriquecer antes de aumentar la potencia en la aproximación o en una arremetida."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 7",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Lycoming, Operator's Manual (procedimientos de empobrecimiento) y POH del avión",
+        "url": "https://www.lycoming.com/"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Arranque del PA-28 (mezcla rica)",
+        "href": "#/ac/pa28/flow/start"
+      },
+      {
+        "label": "Antes del despegue en el PA-28",
+        "href": "#/ac/pa28/flow/beforeto"
+      },
+      {
+        "label": "Despegue y crucero en el C172",
+        "href": "#/ac/c172/flow/takeoff"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.15.001",
+      "type": "regla",
+      "level": 1,
+      "q": "La proporción estequiométrica de aire y combustible, en masa, es aproximadamente:",
+      "options": [
+        "8:1",
+        "12:1",
+        "15:1",
+        "20:1"
+      ],
+      "correct": 2,
+      "why": "La mezcla químicamente perfecta es de unos 15 kg de aire por kg de gasolina.",
+      "whyNot": [
+        "8:1 es una mezcla muy rica, fuera del rango de uso.",
+        "12:1 es la mezcla de máxima potencia, más rica.",
+        null,
+        "20:1 es una mezcla tan pobre que apenas quema."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.15.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "La mezcla de máxima potencia es:",
+      "options": [
+        "Más rica que la estequiométrica",
+        "Igual a la estequiométrica",
+        "Más pobre que la estequiométrica",
+        "La más pobre que admite el motor"
+      ],
+      "correct": 0,
+      "why": "Con unos 12:1, el exceso de combustible aprovecha todo el oxígeno, quema rápido y refrigera.",
+      "whyNot": [
+        null,
+        "Es algo más rica, no igual.",
+        "La más pobre es la de máxima economía.",
+        "La mezcla mínima admisible es otra cosa y sin potencia."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.15.003",
+      "type": "concepto",
+      "level": 2,
+      "q": "La mezcla de máxima economía:",
+      "options": [
+        "Es más rica que la de máxima potencia",
+        "Es la que da más potencia",
+        "Es pobre y da menos potencia",
+        "Solo se usa en el despegue"
+      ],
+      "correct": 2,
+      "why": "En torno a 16-17:1 el consumo por hora es mínimo, a cambio de menos potencia.",
+      "whyNot": [
+        "Es más pobre, no más rica.",
+        "La máxima potencia es la de 12:1.",
+        null,
+        "En el despegue se usa mezcla rica."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.15.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una mezcla demasiado pobre en crucero provoca:",
+      "options": [
+        "Más refrigeración",
+        "Menos consumo de forma segura siempre",
+        "Más temperatura y riesgo de detonación",
+        "Carbonilla en las bujías"
+      ],
+      "correct": 2,
+      "why": "Menos combustible para evaporar y refrigerar: suben la temperatura de culatas y de gases y el riesgo de detonación.",
+      "whyNot": [
+        "La refrigeración la da la mezcla rica.",
+        "Reduce el consumo pero con peligro.",
+        null,
+        "La carbonilla es de mezcla rica."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.15.005",
+      "type": "concepto",
+      "level": 1,
+      "q": "Una mezcla demasiado rica produce:",
+      "options": [
+        "Más potencia siempre",
+        "Detonación",
+        "Sobrecalentamiento",
+        "Bujías sucias de carbonilla, más consumo y menos potencia"
+      ],
+      "correct": 3,
+      "why": "Exceso de combustible sin quemar: hollín en bujías, más consumo y, si es excesiva, pérdida de potencia.",
+      "whyNot": [
+        "Pasado cierto punto, la potencia baja.",
+        "La detonación se asocia a mezcla pobre y sobrecalentamiento.",
+        "La mezcla rica enfría el motor.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.15.006",
+      "type": "regla",
+      "level": 2,
+      "q": "Al subir de altitud con el mando de mezcla en rica y sin ajustarlo, la mezcla:",
+      "options": [
+        "Se enriquece",
+        "Se empobrece",
+        "No cambia",
+        "Pasa a ser estequiométrica"
+      ],
+      "correct": 0,
+      "why": "El aire es menos denso y el sistema sigue dosificando casi el mismo combustible: la mezcla se vuelve más rica y hay que empobrecerla.",
+      "whyNot": [
+        null,
+        "Con menos aire por el mismo combustible se enriquece.",
+        "La altitud sí cambia la densidad.",
+        "No hay motivo para que se quede en 15:1."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.15.007",
+      "type": "regla",
+      "level": 1,
+      "q": "Al aumentar la potencia para una arremetida, el orden correcto con la mezcla es:",
+      "options": [
+        "Enriquecer la mezcla antes de aumentar la potencia",
+        "Empobrecer antes de subir potencia",
+        "No tocar la mezcla ni la potencia",
+        "Cortar la mezcla"
+      ],
+      "correct": 0,
+      "why": "Se enriquece antes de subir potencia para que el motor no quede pobre y caliente con potencia alta.",
+      "whyNot": [
+        null,
+        "Empobrecer con más potencia calienta el motor.",
+        "Siempre hay que ajustar según la fase de vuelo.",
+        "El corte de ralentí para el motor."
+      ],
+      "ref": "PHAK cap. 7; POH"
+    },
+    {
+      "id": "020.15.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un avión de carburador y paso fijo sin EGT, el empobrecimiento de la mezcla en crucero se hace:",
+      "options": [
+        "Hasta que el motor se pare",
+        "Hasta que baje la presión de aceite",
+        "Hasta el máximo de RPM o aspereza y luego enriqueciendo un poco",
+        "Hasta alcanzar el corte de ralentí"
+      ],
+      "correct": 2,
+      "why": "Se tira de la mezcla hasta que las RPM suben al máximo (o el motor se pone áspero) y se enriquece algo para recuperar suavidad.",
+      "whyNot": [
+        "Se pararía el motor.",
+        "La presión de aceite no es una referencia de mezcla.",
+        null,
+        "El corte de ralentí es para parar el motor."
+      ],
+      "ref": "PHAK cap. 7; POH PA-28-161"
+    },
+    {
+      "id": "020.15.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con un indicador de EGT, al empobrecer la mezcla desde rica, la EGT:",
+      "options": [
+        "Baja siempre",
+        "No cambia",
+        "Sube siempre",
+        "Sube hasta un máximo y después baja"
+      ],
+      "correct": 3,
+      "why": "La EGT alcanza un máximo cerca de la mezcla estequiométrica y luego baja al seguir empobreciendo.",
+      "whyNot": [
+        "Con mezcla rica la EGT es baja y sube al empobrecer.",
+        "La EGT es sensible a la mezcla.",
+        "Después del pico baja.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.15.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "La detonación se produce:",
+      "options": [
+        "Antes de la chispa",
+        "Después de la chispa, con la mezcla restante inflamándose de forma explosiva",
+        "Solo con mezcla rica",
+        "Solo en motores con inyección"
+      ],
+      "correct": 1,
+      "why": "El frente de llama comprime y calienta el resto de la mezcla, que se inflama de forma espontánea y explosiva.",
+      "whyNot": [
+        "Antes de la chispa es preencendido.",
+        null,
+        "Es típica de mezcla pobre y sobrecalentamiento.",
+        "Puede darse en cualquier motor."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.15.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "El preencendido se origina por:",
+      "options": [
+        "Una chispa demasiado retrasada",
+        "Un punto caliente en la cámara de combustión",
+        "Un octanaje demasiado alto",
+        "Una mezcla muy rica"
+      ],
+      "correct": 1,
+      "why": "Un depósito incandescente, una bujía muy caliente o una válvula sobrecalentada encienden la mezcla antes de la chispa.",
+      "whyNot": [
+        "El retraso de la chispa no causa preencendido.",
+        null,
+        "Un octanaje alto reduce el riesgo.",
+        "La mezcla rica enfría y reduce el riesgo."
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.15.012",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuál de estas medidas ayuda a corregir una detonación en vuelo?",
+      "options": [
+        "Empobrecer la mezcla",
+        "Cerrar la calefacción de cabina",
+        "Subir la presión de admisión",
+        "Enriquecer la mezcla y reducir potencia"
+      ],
+      "correct": 3,
+      "why": "Mezcla más rica refrigera, y menos potencia baja presión y temperatura; aumentar velocidad ayuda a refrigerar.",
+      "whyNot": [
+        "Empobrecer agrava la detonación.",
+        "La calefacción de cabina no interviene.",
+        "Más presión empeora la detonación.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.15.013",
+      "type": "concepto",
+      "level": 3,
+      "q": "Una llamarada por el escape con humo negro suele indicar:",
+      "options": [
+        "Mezcla demasiado pobre",
+        "Calefacción de carburador conectada",
+        "Octanaje superior al necesario",
+        "Mezcla demasiado rica con combustible sin quemar"
+      ],
+      "correct": 3,
+      "why": "El combustible sin quemar sale al escape y se inflama allí (afterfire). El petardeo por la admisión es de mezcla pobre.",
+      "whyNot": [
+        "La mezcla pobre provoca petardeos por la admisión.",
+        "La calefacción no causa llamas en el escape.",
+        "No produce llamaradas.",
+        null
+      ],
+      "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.15.014",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con una mezcla de 12:1 por masa, ¿cuántos kilos de gasolina consume el motor por cada 60 kg de aire?",
+      "options": [
+        "5 kg",
+        "4 kg",
+        "6 kg",
+        "720 kg"
+      ],
+      "correct": 0,
+      "why": "60 ÷ 12 = 5 kg de gasolina.",
+      "whyNot": [
+        null,
+        "4 kg corresponde a una mezcla de 15:1.",
+        "6 kg corresponde a una mezcla de 10:1.",
+        "Multiplica en lugar de dividir."
+      ],
+      "ref": "Mezcla de máxima potencia, aproximadamente 12:1"
+    },
+    {
+      "id": "020.15.015",
+      "type": "lectura",
+      "level": 2,
+      "q": "Según la figura, ¿en qué zona de la curva se obtiene la máxima potencia?",
+      "figure": "svg:020-curva-egt",
+      "options": [
+        "En el pico de la EGT",
+        "En la mezcla de unos 12:1, del lado rico",
+        "En la mezcla de 16-17:1",
+        "En la mezcla más pobre posible"
+      ],
+      "correct": 1,
+      "why": "La curva azul de potencia tiene su máximo en torno a 12:1, a la izquierda del pico de EGT.",
+      "whyNot": [
+        "El pico de EGT está cerca de 15:1, donde la potencia ya ha bajado.",
+        null,
+        "Ahí se obtiene la máxima economía, con menos potencia.",
+        "A la derecha la potencia desciende."
+      ],
+      "ref": "Esquema propio; PHAK cap. 7"
+    },
+    {
+      "id": "020.15.016",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Qué mezcla es la más recomendable para el despegue en un aeródromo a nivel del mar?",
+      "options": [
+        "Corte de ralentí",
+        "Rica",
+        "Empobrecida al máximo de EGT",
+        "Pobre de máxima economía"
+      ],
+      "correct": 1,
+      "why": "Con potencia máxima se necesita mezcla rica para refrigerar y evitar detonación; el POH puede indicar empobrecer solo en altitud elevada.",
+      "whyNot": [
+        "Corte de ralentí para el motor.",
+        null,
+        "Con plena potencia, el pico de EGT es peligroso.",
+        "Con potencia alta, la mezcla pobre calienta demasiado."
+      ],
+      "ref": "POH PA-28-161 y C172S"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.15.01",
+      "front": "Mezcla estequiométrica",
+      "back": "15:1 en masa (aire:combustible)"
+    },
+    {
+      "id": "c.020.15.02",
+      "front": "Mezcla de máxima potencia y de máxima economía",
+      "back": "Máxima potencia: unos 12:1, rica. Máxima economía: unos 16-17:1, pobre"
+    },
+    {
+      "id": "c.020.15.03",
+      "front": "Detonación frente a preencendido",
+      "back": "Detonación: explosiva, después de la chispa. Preencendido: antes de la chispa por un punto caliente"
+    },
+    {
+      "id": "c.020.15.04",
+      "front": "Efectos de la mezcla pobre",
+      "back": "Más temperatura, riesgo de detonación y menos potencia"
+    },
+    {
+      "id": "c.020.15.05",
+      "front": "Orden de ajuste de mezcla y potencia",
+      "back": "Enriquecer antes de subir potencia; empobrecer después de bajarla"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300">
+  <title>Compensador, tab antibalance y tab servo en una superficie de profundidad: sentido del tab respecto a la superficie</title>
+  <defs>
+    <marker id="080-tabs-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="3.5" markerHeight="3.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker>
+  </defs>
+  <text x="10" y="24" class="tx b">Compensador (trim)</text>
+  <text x="10" y="42" class="tx2">el tab va al contrario que la superficie</text>
+  <g transform="translate(10 130) scale(1.35)">
+    <path d="M0 0 C0 -6 10 -9 40 -9 L80 -5 L80 5 L40 8 C10 8 0 5 0 0Z" class="soft"/>
+    <g transform="rotate(-15 80 0)">
+      <path d="M80 -5 L130 -2 L130 2 L80 5 Z" class="ac"/>
+      <path d="M130 -2 L146 -1 L146 1 L130 2 Z" class="wa" transform="rotate(35 130 0)"/>
+    </g>
+  </g>
+  <text x="225" y="24" class="tx b">Antibalance</text>
+  <text x="225" y="42" class="tx2">el tab va en el mismo sentido</text>
+  <g transform="translate(225 130) scale(1.35)">
+    <path d="M0 0 C0 -6 10 -9 40 -9 L80 -5 L80 5 L40 8 C10 8 0 5 0 0Z" class="soft"/>
+    <g transform="rotate(-15 80 0)">
+      <path d="M80 -5 L130 -2 L130 2 L80 5 Z" class="ac"/>
+      <path d="M130 -2 L146 -1 L146 1 L130 2 Z" class="wa" transform="rotate(-25 130 0)"/>
+    </g>
+  </g>
+  <text x="440" y="24" class="tx b">Servo</text>
+  <text x="440" y="42" class="tx2">el mando mueve el tab y este la superficie</text>
+  <g transform="translate(440 130) scale(1.35)">
+    <path d="M0 0 C0 -6 10 -9 40 -9 L80 -5 L80 5 L40 8 C10 8 0 5 0 0Z" class="soft"/>
+    <g transform="rotate(-15 80 0)">
+      <path d="M80 -5 L130 -2 L130 2 L80 5 Z" class="ac"/>
+      <path d="M130 -2 L146 -1 L146 1 L130 2 Z" class="wa" transform="rotate(35 130 0)"/>
+    </g>
+  </g>
+  <text x="10" y="215" class="tx2">Superficie de profundidad con el borde de salida hacia arriba en los tres casos.</text>
+  <text x="10" y="236" class="txw">Tab en rojo, superficie en azul.</text>
+  <text x="10" y="262" class="tx2">Compensador: se mueve con la rueda de trim y mantiene la superficie en su sitio sin esfuerzo.</text>
+  <text x="10" y="280" class="tx2">Antibalance: aumenta el esfuerzo en palanca y da estabilidad a un mando muy sensible (estabilizador móvil).</text>
+</svg>

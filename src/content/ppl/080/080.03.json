@@ -1,0 +1,409 @@
+{
+ "lesson": {
+  "title": "Perfil y ala",
+  "summary": "Nomenclatura del perfil (cuerda, línea media, curvatura, espesor relativo) y geometría del ala (envergadura, superficie, alargamiento, estrechamiento, flecha, torsión) con su efecto en la pérdida.",
+  "objectives": [
+   "Nombrar las partes de un perfil y distinguir curvatura de espesor",
+   "Calcular alargamiento y estrechamiento a partir de las dimensiones del ala",
+   "Comparar las formas en planta del ala y dónde empieza la pérdida en cada una",
+   "Explicar para qué sirve la torsión geométrica (washout)"
+  ],
+  "sections": [
+   {
+    "title": "Nomenclatura del perfil",
+    "text": [
+     "El **perfil** es la sección del ala que obtienes al cortarla en el sentido de la marcha. Sus elementos son los mismos en todos los textos y el examen los pregunta tal cual:"
+    ],
+    "bullets": [
+     "**Borde de ataque:** punto más adelantado del perfil, normalmente redondeado.",
+     "**Borde de salida:** punto más retrasado, afilado.",
+     "**Cuerda (c):** recta que une el borde de ataque con el de salida. Es la referencia para medir el ángulo de ataque.",
+     "**Línea media (de curvatura):** línea que equidista del extradós y el intradós. En un perfil simétrico coincide con la cuerda.",
+     "**Curvatura (camber):** la máxima distancia entre la línea media y la cuerda, en % de la cuerda. Más curvatura, más sustentación a ángulo de ataque cero.",
+     "**Espesor máximo:** mayor distancia entre extradós e intradós. El **espesor relativo** es el cociente espesor/cuerda, en %.",
+     "**Extradós** (superficie superior) e **intradós** (inferior)."
+    ],
+    "figure": "svg:080-perfil",
+    "caption": "Nomenclatura del perfil: cuerda, línea media, curvatura y espesor, y ángulo de ataque frente a calaje."
+   },
+   {
+    "title": "Curvatura y espesor: qué cambia cada uno",
+    "text": [
+     "Un perfil **simétrico** (curvatura cero) da sustentación nula con ángulo de ataque cero. Un perfil **curvado** ya sustenta a α = 0 y necesita un ángulo de ataque ligeramente **negativo** (el ángulo de sustentación nula, algo como −2° en un perfil de avioneta) para anularla. Por eso las avionetas con perfiles curvados vuelan con el fuselaje casi horizontal.",
+     "El **espesor relativo** actúa sobre el CL máximo y la resistencia. Un perfil más grueso (12–15 %) admite más CLmax, entra en pérdida de forma más suave y es estructuralmente cómodo; un perfil muy delgado resiste menos a velocidad alta pero entra en pérdida de forma más brusca. Una avioneta típica usa espesores del 12 % al 15 %.",
+     "Los perfiles NACA de cuatro cifras ilustran los números: en un NACA 2412, el primer dígito es la curvatura máxima (2 % de la cuerda), el segundo la posición de esa curvatura (en décimas, 40 %) y los dos últimos el espesor (12 %). Es un perfil de la familia que usan avionetas como el Cessna 172."
+    ],
+    "examples": [
+     {
+      "q": "Un perfil NACA 4415 tiene una cuerda de 1,5 m. ¿Cuánto vale su espesor máximo?",
+      "a": "Las dos últimas cifras dan el espesor: 15 % de 1,5 m = 0,225 m. La curvatura máxima es el 4 % (6 cm), situada al 40 % de la cuerda."
+     }
+    ]
+   },
+   {
+    "title": "Geometría del ala",
+    "text": [
+     "Al pasar del perfil al ala aparecen nuevas medidas. La **envergadura (b)** es la distancia de punta a punta. La **superficie alar (S)** es la proyección de las alas en planta, incluida la parte que atraviesa el fuselaje. La **cuerda media** es S / b. El **alargamiento (AR)** relaciona envergadura y superficie, y mide lo «estrecha y larga» que es el ala. El **estrechamiento (λ)** es la relación entre la cuerda en la punta y la cuerda en la raíz:",
+     "El alargamiento manda en la resistencia inducida (mayor AR, menor resistencia inducida, como verás en 080.06). Los veleros tienen alargamientos de 20 a 30; una avioneta, de 6 a 8."
+    ],
+    "formulas": [
+     {
+      "f": "AR = b² / S = b / cuerda media",
+      "note": "Sin unidades. Mayor alargamiento: menos resistencia inducida."
+     },
+     {
+      "f": "λ = c punta / c raíz",
+      "note": "1 en un ala rectangular; menor de 1 si se estrecha hacia la punta."
+     }
+    ],
+    "examples": [
+     {
+      "q": "Un ala tiene 10,8 m de envergadura y 16 m² de superficie. ¿Alargamiento?",
+      "a": "AR = 10,8² / 16 = 116,64 / 16 ≈ 7,3."
+     },
+     {
+      "q": "Un ala trapezoidal de 10 m de envergadura tiene 1,8 m de cuerda en la raíz y 1,0 m en la punta. Calcula S, AR y λ.",
+      "a": "Cuerda media = (1,8 + 1,0)/2 = 1,4 m; S = 10 × 1,4 = 14 m². AR = 10² / 14 ≈ 7,1. λ = 1,0 / 1,8 ≈ 0,56."
+     }
+    ]
+   },
+   {
+    "title": "Forma en planta, flecha y pérdida",
+    "text": [
+     "La forma del ala vista desde arriba determina cómo se reparte la sustentación y **dónde empieza a perder** cuando se supera el ángulo de ataque crítico. Esto es muy preguntado:"
+    ],
+    "bullets": [
+     "**Rectangular:** la sustentación por metro es casi uniforme; la pérdida empieza en la **raíz** y se extiende hacia fuera. Es la más dócil: avisa y los alerones siguen respondiendo.",
+     "**Trapezoidal (estrechada):** la punta tiene menos cuerda y menos número de Reynolds; tiende a perder primero en la **punta**, con riesgo de caída de un ala.",
+     "**Elíptica:** el reparto es ideal (mínima resistencia inducida), pero pierde casi **toda a la vez**, sin aviso.",
+     "**En flecha:** las puntas tienden a perder primero; se corrige con torsión o ranuras.",
+     "**Torsión (washout):** el ala se fabrica con menos calaje en la punta que en la raíz, o con un perfil distinto. Así, cuando la raíz alcanza el ángulo crítico, la punta aún está por debajo: la pérdida empieza en la **raíz**, el aviso (bataneo en la cola) llega antes y los alerones conservan su eficacia."
+    ],
+    "figure": "svg:080-perdida-planta",
+    "caption": "Dónde empieza la pérdida según la planta del ala."
+   },
+   {
+    "title": "Torsión geométrica y aerodinámica",
+    "text": [
+     "La **torsión geométrica** es lo que acabas de ver: calaje menor en la punta. La **torsión aerodinámica** consigue lo mismo cambiando el perfil: en la punta se usa uno con menos curvatura, que a igual ángulo de ataque sustenta menos. En ambos casos la punta trabaja a menor ángulo de ataque efectivo que la raíz. Tiene un coste: la sustentación de un ala con torsión es algo menos eficiente en crucero, pero la mejora en seguridad compensa."
+    ],
+    "note": {
+     "kind": "tip",
+     "text": "Regla para el examen: torsión = la pérdida empieza en la raíz y conservas los alerones; ala trapezoidal o en flecha sin torsión = la pérdida empieza en la punta."
+    }
+   }
+  ],
+  "numbers": [
+   "AR = b² / S",
+   "λ = cuerda punta / cuerda raíz",
+   "NACA 2412: 2 % de curvatura al 40 % de la cuerda, 12 % de espesor",
+   "Perfil simétrico: CL = 0 con α = 0; perfil curvado: α de sustentación nula negativo (≈ −2°)",
+   "Veleros: AR de 20 a 30; avionetas: de 6 a 8"
+  ],
+  "traps": [
+   "La curvatura no es el espesor: se mide desde la línea media, no desde el extradós al intradós.",
+   "La cuerda no coincide con la línea media más que en perfiles simétricos.",
+   "Con torsión, la pérdida empieza en la raíz; sin torsión, en una trapezoidal empieza en la punta.",
+   "El alargamiento no tiene unidades: es b²/S."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "080.03",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "080.03.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "La cuerda de un perfil es:",
+   "options": [
+    "La distancia entre extradós e intradós",
+    "La recta que une el borde de ataque con el borde de salida",
+    "La línea equidistante del extradós y el intradós",
+    "La distancia de punta a punta del ala"
+   ],
+   "correct": 1,
+   "why": "Es la referencia geométrica con la que se mide el ángulo de ataque.",
+   "whyNot": [
+    "Eso es el espesor.",
+    null,
+    "Eso es la línea media.",
+    "Eso es la envergadura."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.03.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "La curvatura (camber) de un perfil se mide:",
+   "options": [
+    "Como la distancia entre extradós e intradós",
+    "Como el ángulo de la cuerda con el eje del fuselaje",
+    "Como el cociente envergadura/superficie",
+    "Como la máxima distancia entre la línea media y la cuerda"
+   ],
+   "correct": 3,
+   "why": "La curvatura es la separación máxima de la línea media respecto a la cuerda, en % de la cuerda.",
+   "whyNot": [
+    "Eso es el espesor.",
+    "Eso es el calaje.",
+    "Eso es el alargamiento.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.03.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un perfil simétrico:",
+   "options": [
+    "Tiene sustentación cero con ángulo de ataque cero",
+    "Produce sustentación positiva con α = 0",
+    "Solo funciona con flaps",
+    "Tiene el extradós más curvado que el intradós"
+   ],
+   "correct": 0,
+   "why": "En un perfil simétrico, las presiones de ambas caras se igualan con α = 0.",
+   "whyNot": [
+    null,
+    "Es lo que ocurre con un perfil curvado.",
+    "Los flaps no son necesarios para que funcione.",
+    "Eso describe un perfil curvado."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.03.004",
+   "type": "calculo",
+   "level": 1,
+   "q": "Un ala tiene 12 m de envergadura y 18 m² de superficie. Su alargamiento es:",
+   "options": [
+    "1,5",
+    "0,67",
+    "8",
+    "216"
+   ],
+   "correct": 2,
+   "why": "AR = b²/S = 144/18 = 8.",
+   "whyNot": [
+    "Es S/b = 18/12, que da la cuerda media en metros, no el alargamiento.",
+    "Es b/S = 12/18, el cociente sin elevar al cuadrado.",
+    null,
+    "Es el producto b · S, que no tiene significado aquí."
+   ],
+   "ref": "AR = b²/S"
+  },
+  {
+   "id": "080.03.005",
+   "type": "calculo",
+   "level": 2,
+   "q": "Un ala trapezoidal tiene una cuerda de 2,0 m en la raíz y 1,0 m en la punta. Su estrechamiento es:",
+   "options": [
+    "2",
+    "0,67",
+    "0,5",
+    "1,5"
+   ],
+   "correct": 2,
+   "why": "λ = cuerda en la punta / cuerda en la raíz = 1,0 / 2,0 = 0,5.",
+   "whyNot": [
+    "Es el cociente inverso (raíz / punta).",
+    "Es la cuerda de la punta dividida por la cuerda media (1,0 / 1,5).",
+    null,
+    "Es la cuerda media en metros, no una relación."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.03.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "La torsión geométrica (washout) del ala consiste en que el calaje:",
+   "options": [
+    "Disminuye hacia la punta",
+    "Aumenta hacia la punta",
+    "Es igual en toda la envergadura",
+    "Se reduce hacia la raíz"
+   ],
+   "correct": 0,
+   "why": "Con menos calaje en la punta, la raíz alcanza antes el ángulo crítico.",
+   "whyNot": [
+    null,
+    "Entonces la punta perdería primero.",
+    "Eso es un ala sin torsión.",
+    "Sería lo contrario del washout."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.03.007",
+   "type": "concepto",
+   "level": 2,
+   "q": "La principal ventaja de la torsión geométrica es que la pérdida:",
+   "options": [
+    "Empieza en la punta y los alerones dejan de funcionar",
+    "Empieza a la vez en todo el ala",
+    "Se produce a menor ángulo de ataque",
+    "Empieza en la raíz y los alerones conservan eficacia"
+   ],
+   "correct": 3,
+   "why": "Con la raíz perdiendo primero, la punta (donde van los alerones) sigue sustentando.",
+   "whyNot": [
+    "Eso es lo que ocurre sin torsión en alas estrechadas.",
+    "Eso es más propio del ala elíptica.",
+    "La torsión no cambia el ángulo crítico del perfil.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.03.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un ala rectangular sin torsión, la pérdida empieza normalmente:",
+   "options": [
+    "En la punta",
+    "En la raíz",
+    "En el centro de los alerones",
+    "En la sección de los flaps solo"
+   ],
+   "correct": 1,
+   "why": "En el ala rectangular la raíz es la zona que primero alcanza el ángulo crítico.",
+   "whyNot": [
+    "Es característico del ala estrechada o en flecha.",
+    null,
+    "Los alerones están en la punta y siguen portando.",
+    "La raíz no se limita a los flaps."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.03.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un ala elíptica tiene la particularidad de que:",
+   "options": [
+    "Entra en pérdida casi simultáneamente en toda la envergadura",
+    "Entra en pérdida primero en la punta",
+    "Tiene la mayor resistencia inducida",
+    "Tiene siempre torsión"
+   ],
+   "correct": 0,
+   "why": "El reparto elíptico lleva toda el ala al ángulo crítico a la vez, con poco aviso.",
+   "whyNot": [
+    null,
+    "Es lo propio del ala trapezoidal o en flecha.",
+    "Tiene la mínima resistencia inducida.",
+    "No necesita torsión; es una forma en planta."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.03.010",
+   "type": "concepto",
+   "level": 3,
+   "q": "Respecto a un ala de mayor alargamiento, a igual superficie y sustentación:",
+   "options": [
+    "Genera más resistencia parásita siempre",
+    "Genera más resistencia inducida",
+    "Genera menos resistencia inducida",
+    "Entra en pérdida a menor ángulo de ataque"
+   ],
+   "correct": 2,
+   "why": "Mayor envergadura para la misma superficie reparte la sustentación sobre más aire y reduce los torbellinos de punta.",
+   "whyNot": [
+    "La parásita depende de la superficie mojada, no del alargamiento solo.",
+    "Con mayor alargamiento la resistencia inducida disminuye, no aumenta.",
+    null,
+    "El ángulo crítico depende del perfil, no del alargamiento."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.03.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un NACA 2412, el número 12 indica:",
+   "options": [
+    "La curvatura máxima, 12 %",
+    "El espesor máximo, 12 % de la cuerda",
+    "La posición del espesor máximo",
+    "El ángulo de sustentación nula"
+   ],
+   "correct": 1,
+   "why": "Las dos últimas cifras de un NACA de cuatro dígitos dan el espesor máximo en porcentaje de la cuerda.",
+   "whyNot": [
+    "La curvatura máxima es el primer dígito.",
+    null,
+    "La posición de la curvatura máxima es el segundo dígito.",
+    "Ese ángulo depende de la curvatura, no se indica."
+   ],
+   "ref": "Nomenclatura NACA"
+  },
+  {
+   "id": "080.03.012",
+   "type": "lectura",
+   "level": 2,
+   "q": "Según la figura de la planta del ala, en un ala trapezoidal sin torsión la pérdida empieza en:",
+   "figure": "svg:080-perdida-planta",
+   "options": [
+    "La raíz",
+    "El centro de la semi-ala",
+    "El borde de salida",
+    "La punta"
+   ],
+   "correct": 3,
+   "why": "La punta de un ala estrechada trabaja con menos cuerda y menos Reynolds y llega antes al ángulo crítico.",
+   "whyNot": [
+    "Es lo propio del ala rectangular o con torsión.",
+    "No hay una zona inicial central.",
+    "La pérdida es una cuestión de envergadura, no de borde de salida.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.080.03.01",
+   "front": "Alargamiento",
+   "back": "AR = b² / S: envergadura al cuadrado entre superficie"
+  },
+  {
+   "id": "c.080.03.02",
+   "front": "Estrechamiento",
+   "back": "λ = cuerda en la punta / cuerda en la raíz"
+  },
+  {
+   "id": "c.080.03.03",
+   "front": "Torsión geométrica (washout)",
+   "back": "Menos calaje en la punta: la pérdida empieza en la raíz y los alerones siguen eficaces"
+  },
+  {
+   "id": "c.080.03.04",
+   "front": "Perfil simétrico",
+   "back": "Sustentación nula con ángulo de ataque cero"
+  }
+ ]
+}

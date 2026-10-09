@@ -1,0 +1,419 @@
+{
+ "lesson": {
+  "title": "Hipersustentadores",
+  "summary": "Flaps de borde de salida (simple, de intradós, ranurado y Fowler), su efecto en la curva CL–α, la resistencia y el cabeceo, flaps asimétricos, y ranuras y slats de borde de ataque.",
+  "objectives": [
+   "Explicar para qué sirven los flaps y cómo modifican CLmax, la Vs y el ángulo crítico",
+   "Distinguir los cuatro tipos de flap de borde de salida",
+   "Describir el efecto de los flaps en la resistencia y en el cabeceo",
+   "Explicar qué ocurre con una deflexión asimétrica",
+   "Diferenciar ranuras y slats de los flaps y su efecto en el ángulo crítico"
+  ],
+  "sections": [
+   {
+    "title": "Para qué sirven los hipersustentadores",
+    "text": [
+     "Un ala diseñada para crucero rápido es fina y con poca curvatura, y necesita velocidad alta para sustentar el peso. Para despegar y aterrizar interesa lo contrario: volar despacio. Los **hipersustentadores** son dispositivos que aumentan el **CLmax** (y a veces la superficie) del ala temporalmente. Con ellos, la velocidad de pérdida baja (Vs0 frente a Vs1), y con ella las velocidades de despegue y aproximación y las distancias en pista. Además, permiten una **trayectoria de aproximación más inclinada** sin ganar velocidad, porque aumentan la resistencia."
+    ]
+   },
+   {
+    "title": "Efecto de los flaps en la curva CL–α",
+    "text": [
+     "Bajar un flap equivale a **curvar más el perfil**. La curva CL–α se desplaza hacia arriba: con el mismo ángulo de ataque, más CL; el ángulo de sustentación nula pasa a ser más negativo; el CLmax aumenta mucho. El **ángulo de ataque crítico**, en cambio, **disminuye algo** (se llega al CLmax con menos ángulo), por lo que con flaps extendidos el morro está más bajo para la misma velocidad: mejora la visibilidad en la aproximación."
+    ],
+    "figure": "svg:080-flaps-cl",
+    "caption": "Con flaps: más CLmax, α0 más negativo y ángulo crítico algo menor.",
+    "examples": [
+     {
+      "q": "Con los flaps retraídos, CLmax = 1,5 y Vs1 = 50 kt. Extendidos, CLmax = 2,0. ¿Qué Vs0 resulta?",
+      "a": "Vs ∝ 1/√CLmax: Vs0 = 50 × √(1,5/2,0) = 50 × 0,866 ≈ 43 kt."
+     }
+    ]
+   },
+   {
+    "title": "Tipos de flap de borde de salida",
+    "text": [
+     "Se diferencian por cuánto aumentan el CLmax y por el coste en resistencia:"
+    ],
+    "table": {
+     "caption": "Flaps de borde de salida (aumentos orientativos de CLmax; dependen del diseño)",
+     "head": [
+      "Tipo",
+      "Cómo funciona",
+      "Aumento de CLmax"
+     ],
+     "rows": [
+      [
+       "Simple (plain)",
+       "El borde de salida del perfil gira hacia abajo, aumentando la curvatura",
+       "Moderado"
+      ],
+      [
+       "De intradós (split)",
+       "Solo baja una placa de la cara inferior; mucha resistencia",
+       "Moderado, con mucha resistencia"
+      ],
+      [
+       "Ranurado (slotted)",
+       "Una ranura entre el ala y el flap lleva aire de alta energía del intradós al extradós y retrasa la separación",
+       "Alto"
+      ],
+      [
+       "Fowler",
+       "Se desliza hacia atrás y gira, aumentando la superficie y la cuerda además de la curvatura; en parte son ranurados",
+       "El mayor"
+      ]
+     ],
+     "src": "PHAK cap. 5; AFH cap. 3"
+    },
+    "figure": "svg:080-flaps-tipos",
+    "caption": "Cuatro tipos de flap de borde de salida.",
+    "verify": true,
+    "note": {
+     "kind": "tip",
+     "text": "En la cabina: el PA-28-161 lleva flaps simples manuales con posiciones de 0°, 10°, 25° y 40°; el C172S, flaps eléctricos hasta 30°. Confirma siempre los valores y los límites VFE en el POH del avión."
+    }
+   },
+   {
+    "title": "Resistencia y cabeceo con flaps",
+    "text": [
+     "Los flaps aumentan la **resistencia**, sobre todo la inducida y la de forma: el avión baja el ángulo de planeo y, a igual potencia, pierde velocidad. Los primeros grados (despegue) suben más la sustentación que la resistencia; los últimos (aterrizaje) suben mucho más la resistencia que la sustentación, por eso los flaps de despegue son intermedios.",
+     "Sobre el **cabeceo** actúan dos efectos opuestos: el perfil con más curvatura genera un **momento de picado** (el centro de presiones retrocede) y, a la vez, el flap aumenta el downwash sobre la cola, que tiende a **levantar** el morro. El resultado neto depende de la posición del ala y del estabilizador y lo da el POH; el piloto lo corrige con la compensación. Los flaps también hacen que el avión tienda a **flotar** (ballooning) al extenderlos con velocidad alta: aumenta CL sin cambiar el ángulo de ataque."
+    ]
+   },
+   {
+    "title": "Deflexión asimétrica",
+    "text": [
+     "Si un flap se extiende y el otro no, o lo hacen en distinta cuantía (avería del mecanismo o rotura de un cable), se produce una **asimetría de sustentación y resistencia**: el avión se inclina hacia el lado del flap retraído, y gira hacia el lado del flap extendido por la resistencia. El piloto lo contrarresta con alerones y timón, y debe **retraer los flaps** si el control resulta difícil y aterrizar a mayor velocidad con la configuración que permita el POH. Es una emergencia infrecuente, pero entra en el examen."
+    ]
+   },
+   {
+    "title": "Ranuras y slats de borde de ataque",
+    "text": [
+     "Los dispositivos de borde de ataque actúan sobre el flujo en el borde de ataque. Una **ranura (slot)** fija, o un **slat** móvil, deja pasar aire de alta energía del intradós al extradós y **retrasa la separación**. El resultado es contrario al de los flaps de borde de salida: el **ángulo de ataque crítico aumenta** y el CLmax también. Los slats automáticos se abren solos al aumentar el ángulo de ataque y se usan en aviones STOL y en algunos veleros y aviones de transporte. También existen flaps de borde de ataque (Krueger) con el mismo propósito.",
+     "Regla: **flaps de borde de salida: más CLmax con menor α crítico; ranuras y slats: más CLmax con mayor α crítico**."
+    ],
+    "bullets": [
+     "Los slats permiten volar y aterrizar a ángulos de ataque altos sin que el flujo se separe, y por eso reducen la Vs.",
+     "Un slat o ranura mal cerrado o con hielo pierde eficacia."
+    ]
+   }
+  ],
+  "numbers": [
+   "Flaps de borde de salida: ↑ CLmax, ↑ CD, ↓ α crítico, ↓ Vs",
+   "Slats y ranuras: ↑ CLmax y ↑ α crítico",
+   "Fowler: el mayor aumento de CLmax; intradós: más resistencia",
+   "PA-28-161: flaps 0°/10°/25°/40°; C172S: hasta 30° (comprobar en el POH)",
+   "Vs0 es la velocidad de pérdida con flaps en configuración de aterrizaje"
+  ],
+  "traps": [
+   "Los flaps de borde de salida bajan el ángulo crítico; los slats lo suben.",
+   "Los flaps no aumentan solo la sustentación: la resistencia aumenta también, y la última parte del recorrido, sobre todo.",
+   "Con flaps abajo, la velocidad de pérdida baja pero la IAS de crucero también, por VFE.",
+   "Extender flaps a alta velocidad puede dañarlos: respeta VFE."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "FAA, Airplane Flying Handbook (FAA-H-8083-3C)",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "080.09",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "080.09.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "El efecto principal de los flaps de borde de salida es:",
+   "options": [
+    "Disminuir la resistencia en aproximación",
+    "Aumentar CLmax y permitir menores velocidades de pérdida",
+    "Aumentar la velocidad de crucero",
+    "Reducir la superficie alar"
+   ],
+   "correct": 1,
+   "why": "Al aumentar la curvatura (y a veces la superficie), el ala sustenta más a baja velocidad.",
+   "whyNot": [
+    "Aumentan la resistencia, no la disminuyen.",
+    null,
+    "Los flaps no se usan en crucero: lo empeoran.",
+    "Algunos tipos, como el Fowler, aumentan la superficie."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.09.002",
+   "type": "concepto",
+   "level": 2,
+   "q": "Al extender los flaps de borde de salida, el ángulo de ataque crítico:",
+   "options": [
+    "Aumenta mucho",
+    "No cambia",
+    "Se hace cero",
+    "Disminuye algo"
+   ],
+   "correct": 3,
+   "why": "El CLmax se alcanza con un ángulo de ataque algo menor.",
+   "whyNot": [
+    "Es el efecto de las ranuras y slats, no de los flaps.",
+    "Cambia: el perfil con más curvatura alcanza antes el CLmax.",
+    "El crítico sigue siendo positivo, de unos 14° en el ejemplo.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.09.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "Cuando un flap de borde de salida se baja, el ángulo de sustentación nula del perfil:",
+   "options": [
+    "Es más negativo",
+    "Es menos negativo",
+    "No cambia",
+    "Se hace positivo"
+   ],
+   "correct": 0,
+   "why": "La mayor curvatura da sustentación incluso con ángulos de ataque negativos.",
+   "whyNot": [
+    null,
+    "Eso ocurriría si se redujera la curvatura.",
+    "Sí cambia: depende de la curvatura del perfil.",
+    "Con flap sigue siendo negativo, no positivo."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.09.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "El flap Fowler se caracteriza por:",
+   "options": [
+    "Bajar solo la placa de la cara inferior",
+    "Ser solo un tramo del borde de ataque",
+    "Deslizarse hacia atrás, aumentando la cuerda y la superficie del ala",
+    "No aumentar la superficie alar"
+   ],
+   "correct": 2,
+   "why": "Es el que consigue el mayor aumento de CLmax.",
+   "whyNot": [
+    "Eso describe el flap de intradós.",
+    "Un dispositivo de borde de ataque es un slat o un Krueger.",
+    null,
+    "Sí aumenta la superficie: de ahí su gran efecto."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.09.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "El flap de intradós (split) se caracteriza por:",
+   "options": [
+    "Ser el más eficiente de todos",
+    "No aumentar la resistencia",
+    "Generar bastante resistencia con un aumento moderado de CLmax",
+    "Funcionar solo en el borde de ataque"
+   ],
+   "correct": 2,
+   "why": "Baja una placa de la cara inferior, lo que produce mucha resistencia.",
+   "whyNot": [
+    "El más eficiente es el Fowler.",
+    "Es justo lo contrario: aumenta mucho la resistencia.",
+    null,
+    "Es un flap de borde de salida, no de ataque."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.09.006",
+   "type": "concepto",
+   "level": 2,
+   "q": "En el flap ranurado, la ranura sirve para:",
+   "options": [
+    "Llevar aire de alta energía al extradós y retrasar la separación",
+    "Reducir la superficie alar",
+    "Extender el ala hacia atrás",
+    "Reducir la presión dinámica"
+   ],
+   "correct": 0,
+   "why": "El aire del intradós refuerza la capa límite del extradós del flap.",
+   "whyNot": [
+    null,
+    "La ranura no modifica la superficie alar.",
+    "Extender el ala hacia atrás es el Fowler.",
+    "La presión dinámica depende de ρ y V, no de la ranura."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.09.007",
+   "type": "calculo",
+   "level": 2,
+   "q": "Con flaps retraídos, CLmax = 1,5 y Vs = 50 kt. Con flaps extendidos CLmax = 2,0. La nueva Vs es aproximadamente:",
+   "options": [
+    "38 kt",
+    "58 kt",
+    "67 kt",
+    "43 kt"
+   ],
+   "correct": 3,
+   "why": "Vs ∝ 1/√CLmax: 50 · √(1,5/2,0) ≈ 43 kt.",
+   "whyNot": [
+    "Resulta de aplicar el cociente 1,5/2,0 sin la raíz (50 · 0,75).",
+    "Resulta de invertir el cociente, como si los flaps subieran la Vs.",
+    "Resulta de invertir el cociente y no aplicar la raíz.",
+    null
+   ],
+   "ref": "Vs ∝ 1/√CLmax"
+  },
+  {
+   "id": "080.09.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "Al extender los flaps de forma brusca en vuelo a velocidad alta, el efecto inmediato es:",
+   "options": [
+    "Una disminución de la resistencia",
+    "Un aumento de sustentación y resistencia, con tendencia a flotar",
+    "Ningún efecto",
+    "Una pérdida inmediata"
+   ],
+   "correct": 1,
+   "why": "El CL aumenta con el mismo ángulo de ataque y la resistencia crece.",
+   "whyNot": [
+    "La resistencia crece, no disminuye.",
+    null,
+    "Los flaps siempre cambian CL y CD.",
+    "Extender flaps a velocidad alta no provoca pérdida; el riesgo es dañar el flap por superar VFE."
+   ],
+   "ref": "AFH cap. 3"
+  },
+  {
+   "id": "080.09.009",
+   "type": "concepto",
+   "level": 2,
+   "q": "Con flaps extendidos para aterrizar, respecto al vuelo limpio y misma velocidad, la trayectoria de aproximación es:",
+   "options": [
+    "Más inclinada, por la mayor resistencia",
+    "Más tendida, por la mayor sustentación",
+    "Igual",
+    "Imposible de mantener"
+   ],
+   "correct": 0,
+   "why": "La mayor resistencia permite una pendiente mayor sin ganar velocidad.",
+   "whyNot": [
+    null,
+    "Más sustentación no tiende la trayectoria: la mayor resistencia la empina.",
+    "La trayectoria cambia por la mayor resistencia.",
+    "Se mantiene sin problema con la técnica adecuada."
+   ],
+   "ref": "AFH cap. 8"
+  },
+  {
+   "id": "080.09.010",
+   "type": "concepto",
+   "level": 3,
+   "q": "Si un flap queda extendido y el otro retraído, el avión tenderá a:",
+   "options": [
+    "Mantener el vuelo recto sin cambios",
+    "Entrar en barrena inmediata",
+    "Inclinarse y girar hacia el lado de menor sustentación y mayor resistencia, requiriendo corrección",
+    "Aumentar la sustentación en ambos lados"
+   ],
+   "correct": 2,
+   "why": "La asimetría produce balanceo y guiñada; se corrige con alerones y timón y se aterriza con cuidado.",
+   "whyNot": [
+    "La asimetría produce un momento de balanceo y guiñada que hay que corregir.",
+    "No se entra en barrena de forma inmediata; se corrige con alerones y timón.",
+    null,
+    "Un lado queda con menos sustentación, no más en ambos."
+   ],
+   "ref": "AFH cap. 3"
+  },
+  {
+   "id": "080.09.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "Las ranuras y los slats de borde de ataque:",
+   "options": [
+    "Disminuyen el ángulo de ataque crítico",
+    "Aumentan el ángulo de ataque crítico",
+    "Eliminan la resistencia",
+    "No afectan al ángulo crítico"
+   ],
+   "correct": 1,
+   "why": "Retrasan la separación del flujo y permiten mayores ángulos de ataque.",
+   "whyNot": [
+    "Es el efecto de los flaps de borde de salida.",
+    null,
+    "No eliminan la resistencia.",
+    "Sí afectan: su efecto principal es retrasar la separación y subir el ángulo crítico."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.09.012",
+   "type": "lectura",
+   "level": 2,
+   "q": "En la figura de las curvas CL–α, comparada con la curva sin flaps, la curva con flaps:",
+   "figure": "svg:080-flaps-cl",
+   "options": [
+    "Tiene menor CLmax y se interrumpe con más ángulo",
+    "Es idéntica",
+    "Tiene la misma pendiente pero menor CLmax",
+    "Tiene mayor CLmax y se interrumpe con menos ángulo de ataque"
+   ],
+   "correct": 3,
+   "why": "Con flaps CLmax sube (≈ 2,0 frente a 1,5) y el crítico baja (14° frente a 16°).",
+   "whyNot": [
+    "Es justo lo contrario de lo que muestra la figura.",
+    "Cambian CLmax, α0 y el ángulo crítico.",
+    "El CLmax con flaps es mayor, no menor.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.080.09.01",
+   "front": "Flaps de borde de salida: efecto en α crítico y CLmax",
+   "back": "CLmax aumenta; el ángulo crítico disminuye algo"
+  },
+  {
+   "id": "c.080.09.02",
+   "front": "Slats y ranuras: efecto",
+   "back": "Aumentan el ángulo crítico y el CLmax"
+  },
+  {
+   "id": "c.080.09.03",
+   "front": "Flap con mayor aumento de CLmax",
+   "back": "Fowler (se desliza atrás: más cuerda y superficie)"
+  },
+  {
+   "id": "c.080.09.04",
+   "front": "Flap de intradós",
+   "back": "Baja solo la placa inferior; mucha resistencia"
+  }
+ ]
+}

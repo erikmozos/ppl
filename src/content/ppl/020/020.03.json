@@ -1,0 +1,323 @@
+{
+  "lesson": {
+    "id": "020.03",
+    "title": "Hidráulica básica",
+    "summary": "Principio de Pascal y multiplicación de fuerza, cálculo de presiones y desplazamientos, circuito del freno hidráulico de un avión ligero, tipos de líquido hidráulico y averías típicas.",
+    "objectives": [
+      "Enunciar el principio de Pascal y aplicar P = F ÷ A",
+      "Calcular la fuerza obtenida en un pistón de mayor área y el desplazamiento correspondiente",
+      "Describir el circuito de frenos: depósito, cilindro maestro, tubería, pinza y pastillas",
+      "Diferenciar los líquidos hidráulicos mineral y sintético y por qué no se mezclan",
+      "Reconocer averías: aire en el circuito, fugas y líquido contaminado"
+    ],
+    "sections": [
+      {
+        "title": "Principio de Pascal",
+        "text": [
+          "Un líquido es prácticamente **incompresible** y transmite la presión que se le aplica en un recipiente cerrado **por igual y en todas direcciones**. Es el **principio de Pascal**, base de la hidráulica. En un avión ligero se aprovecha en los frenos y, en aviones mayores, en tren retráctil, flaps y mandos.",
+          "La **presión** es la fuerza dividida entre el área sobre la que actúa. Si un pistón pequeño empuja el líquido, la presión resultante actúa en todo el circuito, y un pistón grande conectado a él recibe una **fuerza mayor**, en proporción a su área. A cambio, el pistón grande se **mueve menos**: lo que se gana en fuerza se pierde en recorrido, porque el volumen de líquido desplazado es el mismo."
+        ],
+        "formulas": [
+          {
+            "f": "P = F ÷ A",
+            "note": "Presión = fuerza ÷ área (por ejemplo, psi = lb ÷ in², o Pa = N ÷ m²)."
+          },
+          {
+            "f": "F₂ = F₁ × (A₂ ÷ A₁)",
+            "note": "Fuerza en el pistón de salida; la presión es la misma en ambos pistones."
+          },
+          {
+            "f": "d₂ = d₁ × (A₁ ÷ A₂)",
+            "note": "Recorrido del pistón de salida: el volumen desplazado se conserva."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Empujas con 40 N un pistón de 2 cm² de área. ¿Qué fuerza ejerce un pistón de 10 cm² unido por el mismo líquido?",
+            "a": "Presión = 40 ÷ 2 = 20 N/cm². Fuerza en el pistón grande = 20 × 10 = 200 N. Se multiplica por 5, que es la relación de áreas."
+          },
+          {
+            "q": "Con el mismo sistema, el pistón pequeño recorre 5 cm. ¿Cuánto avanza el grande?",
+            "a": "d₂ = 5 × (2 ÷ 10) = 1 cm. La fuerza se multiplica por 5 y el recorrido se divide por 5."
+          }
+        ]
+      },
+      {
+        "title": "El circuito de los frenos",
+        "text": [
+          "Los frenos de un avión ligero son un circuito hidráulico muy sencillo, uno por rueda principal. Cada pedal empuja el pistón de un **cilindro maestro**, que está conectado con un **depósito** de líquido. La presión viaja por una tubería y por un tubo flexible hasta la **pinza** de la rueda, donde uno o varios pistones aprietan las **pastillas** contra el disco. Al soltar el pedal, un muelle devuelve el pistón y el líquido vuelve al cilindro maestro; las pastillas se separan del disco.",
+          "Como el líquido es incompresible, el sistema responde de inmediato y se puede dosificar la frenada. La relación de áreas entre el cilindro maestro y los pistones de la pinza multiplica la fuerza que haces con el pie. El **freno de aparcamiento** retiene esa presión con un trinquete o una válvula."
+        ],
+        "bullets": [
+          "**Aire en el circuito**: se comprime y el pedal queda esponjoso; se purga el circuito.",
+          "**Fuga de líquido**: el pedal se hunde y el freno pierde eficacia; suele verse humedad alrededor de la pinza o del cilindro.",
+          "**Líquido contaminado o degradado**: hierve con el calor de la frenada (se forman burbujas) y el freno desaparece; se cambia según el programa de mantenimiento.",
+          "El **nivel del depósito** se revisa en el prevuelo si el POH lo exige."
+        ]
+      },
+      {
+        "title": "Líquidos hidráulicos",
+        "text": [
+          "El líquido hidráulico transmite la presión, lubrica, protege contra la corrosión y refrigera. Los más habituales:"
+        ],
+        "table": {
+          "caption": "Líquidos hidráulicos de aviación",
+          "head": [
+            "Tipo",
+            "Características",
+            "Uso"
+          ],
+          "rows": [
+            [
+              "Mineral (MIL-PRF-5606)",
+              "Base de aceite mineral, de color rojo; inflamable",
+              "Aviación ligera: frenos y amortiguadores; sellos de caucho nitrilo"
+            ],
+            [
+              "Sintético fosfato-éster (Skydrol)",
+              "Ininflamable, de color púrpura o verdoso; ataca pinturas, plásticos y sellos de goma común",
+              "Aviación comercial y grandes aviones"
+            ],
+            [
+              "Vegetal (obsoleto)",
+              "Aceite de ricino y alcohol, de color azul; retirado",
+              "Sistemas muy antiguos"
+            ]
+          ],
+          "src": "PHAK cap. 6; especificaciones MIL"
+        },
+        "verify": true,
+        "bullets": [
+          "**Los líquidos no se mezclan**: cada uno exige sellos y juntas de material compatible. Mezclar un mineral con uno de fosfato-éster destruye los sellos y causa fugas. Se rellena siempre con el líquido que indica el manual de mantenimiento."
+        ]
+      }
+    ],
+    "numbers": [
+      "Pascal: la presión se transmite por igual en todas direcciones en un líquido incompresible",
+      "P = F ÷ A; F₂ = F₁ × A₂ ÷ A₁; el recorrido se reduce en la misma proporción",
+      "Frenos: pedal, cilindro maestro, tubería, pinza y pastillas contra el disco",
+      "Líquido mineral rojo (MIL-PRF-5606) en aviación ligera; Skydrol en aviación comercial",
+      "Los líquidos hidráulicos no se mezclan"
+    ],
+    "traps": [
+      "Creer que un pistón grande multiplica también el recorrido: lo reduce.",
+      "Pensar que la presión es mayor en el pistón pequeño: es la misma en todo el circuito.",
+      "Rellenar con un líquido distinto al del manual: destruye los sellos.",
+      "Confundir pedal esponjoso (aire) con pedal que se hunde (fuga).",
+      "Olvidar que la presión es fuerza dividida entre área."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 6: sistemas hidráulicos",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "FAA, Aviation Maintenance Technician Handbook – Airframe, cap. 12",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/amt_airframe_handbook"
+      }
+    ],
+    "reviewed": "2026-10-09",
+    "links": [
+      {
+        "label": "Prevuelo del PA-28: frenos",
+        "href": "#/ac/pa28/flow/preflight"
+      },
+      {
+        "label": "Prevuelo del C172",
+        "href": "#/ac/c172/flow/preflight"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.03.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "El principio de Pascal establece que en un líquido encerrado, la presión aplicada se transmite:",
+      "options": [
+        "Solo en la dirección de la fuerza",
+        "Por igual en todas direcciones",
+        "Solo hacia abajo",
+        "Con más intensidad en el pistón mayor"
+      ],
+      "correct": 1,
+      "why": "La presión se transmite por igual y en todas direcciones en un líquido incompresible encerrado.",
+      "whyNot": [
+        "La transmisión no es direccional.",
+        null,
+        "No depende de la gravedad.",
+        "La presión es la misma; lo que cambia es la fuerza."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.03.002",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un pistón de 4 cm² recibe una fuerza de 80 N. ¿Qué presión genera?",
+      "options": [
+        "320 N/cm²",
+        "20 N/cm²",
+        "0,05 N/cm²",
+        "84 N/cm²"
+      ],
+      "correct": 1,
+      "why": "P = F ÷ A = 80 ÷ 4 = 20 N/cm².",
+      "whyNot": [
+        "Multiplica en vez de dividir.",
+        null,
+        "Divide el área entre la fuerza.",
+        "Suma las magnitudes."
+      ],
+      "ref": "P = F / A"
+    },
+    {
+      "id": "020.03.003",
+      "type": "calculo",
+      "level": 2,
+      "q": "El pistón pequeño tiene 3 cm² y el grande 12 cm². Si se aplican 50 N al pequeño, la fuerza en el grande es de:",
+      "options": [
+        "12,5 N",
+        "150 N",
+        "200 N",
+        "50 N"
+      ],
+      "correct": 2,
+      "why": "Relación de áreas = 12 ÷ 3 = 4; 50 × 4 = 200 N.",
+      "whyNot": [
+        "Divide entre 4.",
+        "Usa la suma de áreas.",
+        null,
+        "La fuerza cambia con las áreas."
+      ],
+      "ref": "F₂ = F₁ × A₂/A₁"
+    },
+    {
+      "id": "020.03.004",
+      "type": "calculo",
+      "level": 3,
+      "q": "En el sistema anterior (3 cm² y 12 cm²), si el pistón pequeño recorre 8 cm, el grande recorre:",
+      "options": [
+        "2 cm",
+        "32 cm",
+        "8 cm",
+        "0,5 cm"
+      ],
+      "correct": 0,
+      "why": "El volumen desplazado es el mismo: 8 × (3 ÷ 12) = 2 cm.",
+      "whyNot": [
+        null,
+        "Multiplica en lugar de dividir.",
+        "El recorrido cambia con las áreas.",
+        "Divide dos veces por 4."
+      ],
+      "ref": "Conservación del volumen"
+    },
+    {
+      "id": "020.03.005",
+      "type": "concepto",
+      "level": 1,
+      "q": "El freno de un avión ligero transmite la fuerza del pie al disco mediante:",
+      "options": [
+        "Líquido hidráulico en un circuito cerrado",
+        "Cables",
+        "Un eje de transmisión",
+        "Aire comprimido"
+      ],
+      "correct": 0,
+      "why": "El pedal acciona un cilindro maestro que envía líquido a presión hasta la pinza.",
+      "whyNot": [
+        null,
+        "Los cables se usan en los mandos, no en los frenos.",
+        "No hay eje de transmisión.",
+        "No usa aire comprimido."
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.03.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "El pedal de freno esponjoso se debe habitualmente a:",
+      "options": [
+        "Líquido demasiado denso",
+        "Falta de aceite en el motor",
+        "Pastillas nuevas",
+        "Aire en el circuito hidráulico"
+      ],
+      "correct": 3,
+      "why": "El aire se comprime, al contrario que el líquido, y da sensación esponjosa.",
+      "whyNot": [
+        "Un líquido más denso no ablanda el pedal.",
+        "No tiene relación con el motor.",
+        "Las pastillas nuevas no cambian la sensación.",
+        null
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.03.007",
+      "type": "regla",
+      "level": 2,
+      "q": "El líquido hidráulico mineral de la aviación ligera es normalmente de color:",
+      "options": [
+        "Incoloro",
+        "Azul",
+        "Verde",
+        "Rojo"
+      ],
+      "correct": 3,
+      "why": "El líquido mineral MIL-PRF-5606 es rojo.",
+      "whyNot": [
+        "No es incoloro.",
+        "El azul era el líquido vegetal antiguo.",
+        "El verde no corresponde al mineral.",
+        null
+      ],
+      "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.03.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Por qué no deben mezclarse líquidos hidráulicos de distinto tipo?",
+      "options": [
+        "Porque cambia su color",
+        "Porque aumenta su densidad",
+        "Porque pueden dañar los sellos y causar fugas",
+        "Porque lo prohíbe el reglamento de seguridad solo"
+      ],
+      "correct": 2,
+      "why": "Cada líquido exige sellos compatibles; mezclar mineral y sintético destruye juntas y produce fugas.",
+      "whyNot": [
+        "El color no es el problema.",
+        "La densidad no es lo relevante.",
+        null,
+        "El motivo técnico es la incompatibilidad."
+      ],
+      "ref": "PHAK cap. 6"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.03.01",
+      "front": "Principio de Pascal",
+      "back": "En un líquido encerrado, la presión se transmite por igual en todas direcciones"
+    },
+    {
+      "id": "c.020.03.02",
+      "front": "Fuerza y recorrido en un circuito hidráulico",
+      "back": "F₂ = F₁ × A₂/A₁; el recorrido se reduce en la misma proporción"
+    },
+    {
+      "id": "c.020.03.03",
+      "front": "Pedal de freno esponjoso",
+      "back": "Aire en el circuito: hay que purgar"
+    },
+    {
+      "id": "c.020.03.04",
+      "front": "Líquido hidráulico mineral",
+      "back": "Rojo (MIL-PRF-5606); no se mezcla con otros tipos"
+    }
+  ]
+}

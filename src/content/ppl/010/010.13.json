@@ -1,0 +1,288 @@
+{
+  "lesson": {
+    "id": "010.13",
+    "title": "Búsqueda y salvamento (Anexo 12)",
+    "summary": "Fases de emergencia, organización de la búsqueda y salvamento (SAR), qué hacer ante un accidente o una llamada de socorro, balizas de localización de emergencia, señales con embarcaciones, código visual tierra-aire y acuse de recibo desde el aire.",
+    "objectives": [
+      "Enumerar las fases de emergencia y quién las declara",
+      "Saber qué hacer si ves un accidente o recibes una llamada de socorro",
+      "Reconocer el código visual tierra-aire de los supervivientes y el acuse de recibo del avión",
+      "Conocer el papel de la baliza ELT"
+    ],
+    "sections": [
+      {
+        "title": "Organización de la búsqueda y salvamento",
+        "text": [
+          "El **Anexo 12** de la OACI obliga a los Estados a organizar un **servicio de búsqueda y salvamento (SAR)** en su territorio y en las aguas bajo su responsabilidad. Un **centro coordinador de salvamento (RCC)** dirige las operaciones; los **ATS** reciben las alertas y se las pasan al RCC. En España, el SAR aeronáutico coordina con el servicio de salvamento marítimo para los accidentes sobre el mar.",
+          "Las **fases de emergencia** son tres, y ya las has visto en el bloque de espacio aéreo: **INCERFA** (incertidumbre), **ALERFA** (alerta) y **DETRESFA** (peligro). El servicio de alerta las declara y el RCC activa los medios según la fase."
+        ]
+      },
+      {
+        "title": "Qué hacer ante un accidente o una llamada de socorro",
+        "text": [
+          "Si oyes una llamada de **socorro** o **urgencia** de otra aeronave, mantén el silencio radio salvo que puedas ayudar, **anota** la posición y los datos y, si ATC no la ha oído, **retransmítela**. Si ves un accidente, **sobrevuela** el lugar a una altura que te permita ver y no estorbar, **anota** la posición y el estado de la aeronave y de los ocupantes, y avisa a ATC o al RCC.",
+          "Si el accidentado eres tú: **estabiliza** el avión (vuela, navega, comunica), llama por radio con **MAYDAY**, ajusta el transpondedor a **7700**, si la situación lo permite elige un lugar de aterrizaje forzoso, **activa la baliza ELT** si tienes tiempo y, ya en tierra, mantente cerca del avión, que es más fácil de ver que tú."
+        ]
+      },
+      {
+        "title": "Balizas de localización de emergencia (ELT)",
+        "text": [
+          "Una **ELT** (emergency locator transmitter) es una baliza que emite una señal de socorro cuando se activa, de forma automática en un impacto o manual por la tripulación. Emite en **406 MHz**, que reciben los satélites **Cospas-Sarsat**, y lleva una señal de apoyo en **121,5 MHz** para que los medios de búsqueda se orienten en la fase final. La frecuencia de 121,5 MHz es además la frecuencia de socorro aeronáutica que escuchan los controladores y muchos pilotos."
+        ]
+      },
+      {
+        "title": "Código visual tierra-aire",
+        "text": [
+          "Los supervivientes que ven pasar un avión pueden comunicarse con él mediante **signos en el suelo** de al menos 2,5 m de lado, formados con piedras, ramas, ropa u otro material que contraste con el suelo."
+        ],
+        "figure": "svg:010-codigo-tierra-aire",
+        "caption": "Código visual tierra-aire de los supervivientes",
+        "bullets": [
+          "**V**: necesitamos ayuda. **X**: necesitamos asistencia médica. **N**: no o negativo. **Y**: sí o afirmativo. **Flecha**: vamos en esa dirección.",
+          "Una **X** no es «ayuda» a secas: pide atención médica."
+        ]
+      },
+      {
+        "title": "Acuse de recibo desde el aire",
+        "text": [
+          "Cuando una aeronave ve las señales de unos supervivientes, debe indicar si las ha entendido. **De día**, acusa recibo **alabeando**. **De noche**, **destellando dos veces** los faros de aterrizaje o las luces de navegación. Si no las entiende, **vuela en círculo** sobre la señal."
+        ]
+      },
+      {
+        "title": "Señales entre aeronave y embarcación",
+        "text": [
+          "Si una aeronave ve una embarcación o un buque y quiere dirigirlo hacia otra embarcación en peligro, hace tres cosas, en orden: **sobrevuela** la embarcación en círculo al menos una vez, **cruza por delante** de su proa a baja altura haciendo balanceo de alas, y **se dirige** hacia el lugar de la emergencia. Si la embarcación ha entendido y va a seguir al avión, cambia de rumbo detrás de la aeronave. Si no puede, lo indica con la señal del código internacional de señales correspondiente."
+        ],
+        "verify": true
+      }
+    ],
+    "numbers": [
+      "Fases: INCERFA, ALERFA, DETRESFA",
+      "Código tierra-aire: V ayuda, X asistencia médica, N no, Y sí, flecha dirección",
+      "Acuse de recibo desde el aire: alabeo de día; dos destellos de luces de noche",
+      "ELT: 406 MHz (con apoyo en 121,5 MHz)",
+      "Tamaño de los signos: al menos 2,5 m"
+    ],
+    "traps": [
+      "X es asistencia médica; V es ayuda.",
+      "La ELT se detecta por satélite en 406 MHz; los 121,5 MHz son para orientarse.",
+      "No retransmitas un MAYDAY si ATC ya lo ha oído y está coordinando."
+    ],
+    "spain": [
+      "El servicio SAR aeronáutico lo coordina el Ejército del Aire y el marítimo, Salvamento Marítimo (SASEMAR)."
+    ],
+    "sources": [
+      {
+        "title": "Anexo 12 de la OACI: Búsqueda y salvamento"
+      },
+      {
+        "title": "AIP España GEN 3.6: búsqueda y salvamento (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología",
+        "href": "#/licencias/fraseologia"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "010.13.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "En el código visual tierra-aire, la letra V significa:",
+      "options": [
+        "Necesitamos asistencia médica",
+        "Sí, afirmativo",
+        "Necesitamos ayuda",
+        "No, negativo"
+      ],
+      "correct": 2,
+      "why": "En el código tierra-aire del Anexo 12, la V significa que se necesita ayuda.",
+      "whyNot": [
+        "Eso es la X.",
+        "Eso es la Y.",
+        null,
+        "Eso es la N."
+      ],
+      "ref": "Anexo 12"
+    },
+    {
+      "id": "010.13.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "En el código visual tierra-aire, la X significa:",
+      "options": [
+        "Necesitamos asistencia médica",
+        "Necesitamos ayuda en general",
+        "No, negativo",
+        "Sí, afirmativo"
+      ],
+      "correct": 0,
+      "why": "La X pide asistencia médica.",
+      "whyNot": [
+        null,
+        "Eso es la V.",
+        "Eso es la N.",
+        "Eso es la Y."
+      ],
+      "ref": "Anexo 12"
+    },
+    {
+      "id": "010.13.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "En el código tierra-aire, la letra N significa:",
+      "options": [
+        "Necesitamos ayuda",
+        "Norte",
+        "Necesitamos agua",
+        "No o negativo"
+      ],
+      "correct": 3,
+      "why": "En el código tierra-aire del Anexo 12, la N significa no o negativo.",
+      "whyNot": [
+        "Eso es la V.",
+        "No es la dirección.",
+        "No existe esa señal.",
+        null
+      ],
+      "ref": "Anexo 12"
+    },
+    {
+      "id": "010.13.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "En el código tierra-aire, una flecha significa:",
+      "options": [
+        "Aterriza aquí",
+        "Vamos en esta dirección",
+        "Necesitamos ayuda",
+        "Hay peligro en esa dirección"
+      ],
+      "correct": 1,
+      "why": "La flecha indica la dirección en la que se desplazan.",
+      "whyNot": [
+        "No es su significado.",
+        null,
+        "Eso es la V.",
+        "No es su significado."
+      ],
+      "ref": "Anexo 12"
+    },
+    {
+      "id": "010.13.005",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuál es el tamaño mínimo de los signos del código tierra-aire?",
+      "options": [
+        "2,5 m",
+        "50 cm",
+        "1 m",
+        "10 m"
+      ],
+      "correct": 0,
+      "why": "Los signos deben tener al menos 2,5 m.",
+      "whyNot": [
+        null,
+        "Es demasiado pequeño.",
+        "No es la cifra.",
+        "No es la cifra."
+      ],
+      "ref": "Anexo 12"
+    },
+    {
+      "id": "010.13.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "De día, ¿cómo acusa recibo de una señal tierra-aire un avión que la ha entendido?",
+      "options": [
+        "Con un viraje de 360° sobre ellos",
+        "Aterrizando cerca",
+        "Alabeando",
+        "Con luces de aterrizaje"
+      ],
+      "correct": 2,
+      "why": "De día se acusa alabeando; de noche, con dos destellos.",
+      "whyNot": [
+        "Es la señal de no entendido.",
+        "No es la señal.",
+        null,
+        "Es la señal nocturna."
+      ],
+      "ref": "Anexo 12"
+    },
+    {
+      "id": "010.13.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "De noche, ¿cómo acusa recibo un avión que ha entendido la señal?",
+      "options": [
+        "Apagando todas las luces",
+        "Destellando dos veces los faros de aterrizaje o las luces de navegación",
+        "Con luz roja fija",
+        "Alabeando"
+      ],
+      "correct": 1,
+      "why": "De noche se destellan dos veces las luces.",
+      "whyNot": [
+        "No es la señal.",
+        null,
+        "No es la señal.",
+        "Es la señal diurna."
+      ],
+      "ref": "Anexo 12"
+    },
+    {
+      "id": "010.13.008",
+      "type": "regla",
+      "level": 2,
+      "q": "¿En qué frecuencia emite la baliza de emergencia (ELT) que detectan los satélites?",
+      "options": [
+        "121,5 MHz",
+        "118,0 MHz",
+        "243,0 MHz",
+        "406 MHz"
+      ],
+      "correct": 3,
+      "why": "Cospas-Sarsat recibe las ELT en 406 MHz.",
+      "whyNot": [
+        "Es la frecuencia de apoyo o de orientación.",
+        "No es la ELT.",
+        "Es la frecuencia militar de socorro.",
+        null
+      ],
+      "ref": "Anexo 12; Anexo 10"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.010.13.01",
+      "front": "Código tierra-aire",
+      "back": "V ayuda; X asistencia médica; N no; Y sí; flecha dirección"
+    },
+    {
+      "id": "c.010.13.02",
+      "front": "Acuse de recibo desde el aire",
+      "back": "De día, alabear; de noche, dos destellos de luces"
+    },
+    {
+      "id": "c.010.13.03",
+      "front": "ELT",
+      "back": "Baliza de emergencia: 406 MHz con apoyo en 121,5 MHz"
+    },
+    {
+      "id": "c.010.13.04",
+      "front": "Fases de emergencia",
+      "back": "INCERFA, ALERFA, DETRESFA"
+    },
+    {
+      "id": "c.010.13.05",
+      "front": "Tamaño de los signos tierra-aire",
+      "back": "Al menos 2,5 m"
+    }
+  ]
+}

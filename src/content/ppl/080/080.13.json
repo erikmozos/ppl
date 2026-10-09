@@ -1,0 +1,565 @@
+{
+ "lesson": {
+  "title": "Limitaciones",
+  "summary": "Flameo, VFE, VNO, VNE y arcos del anemómetro; factor de carga y categorías; diagrama de maniobra V-n, velocidad de maniobra VA y efecto de la masa; diagrama de ráfagas.",
+  "objectives": [
+   "Explicar el flameo y las velocidades límite VFE, VNO y VNE",
+   "Interpretar los arcos del anemómetro, incluido el arco amarillo solo en aire en calma",
+   "Conocer los factores de carga límite de cada categoría",
+   "Interpretar el diagrama V-n y calcular VA",
+   "Explicar cómo cambian VA y la capacidad de maniobra con la masa y qué hacen las ráfagas"
+  ],
+  "sections": [
+   {
+    "title": "Límites estructurales y aeroelásticos",
+    "text": [
+     "Un avión tiene dos tipos de límites: los de **velocidad** (por flameo y por resistencia de la estructura y de los dispositivos) y los de **factor de carga** (cuánto puede doblarse el ala sin romperse). El **flameo (flutter)** es una oscilación autoexcitada de las superficies de control o del ala, causada por la interacción entre las fuerzas aerodinámicas y la elasticidad de la estructura. Aparece a partir de cierta velocidad, y por eso la VNE se fija con un margen sobre la velocidad de flameo. El balance de masas (080.12) lo retrasa, pero no lo elimina."
+    ]
+   },
+   {
+    "title": "Velocidades y arcos del anemómetro",
+    "text": [
+     "El anemómetro marca con colores los límites que importan al piloto:"
+    ],
+    "table": {
+     "caption": "Velocidades límite y arcos del anemómetro",
+     "head": [
+      "Marca",
+      "Velocidad",
+      "Significado"
+     ],
+     "rows": [
+      [
+       "Arco blanco",
+       "VS0 a VFE",
+       "Rango de uso de flaps. VS0: pérdida en configuración de aterrizaje. VFE: máxima con flaps extendidos"
+      ],
+      [
+       "Arco verde",
+       "VS1 a VNO",
+       "Rango normal de operación. VS1: pérdida en configuración limpia. VNO: máxima de crucero estructural"
+      ],
+      [
+       "Arco amarillo",
+       "VNO a VNE",
+       "Solo en aire en calma y con precaución, sin mandos bruscos"
+      ],
+      [
+       "Línea roja",
+       "VNE",
+       "Velocidad que nunca se debe superar: riesgo de daño estructural o de flameo"
+      ]
+     ],
+     "src": "CS-23 / POH"
+    },
+    "figure": "svg:080-anemometro",
+    "caption": "Arcos del anemómetro con valores de ejemplo.",
+    "bullets": [
+     "**VFE:** velocidad máxima con flaps extendidos (cada posición puede tener su límite).",
+     "**VNO:** velocidad máxima de crucero estructural; por encima, solo en aire en calma. Es la velocidad máxima en turbulencia.",
+     "**VNE:** velocidad que no se debe superar nunca.",
+     "**VA:** velocidad de maniobra, en el POH, no está marcada en el anemómetro."
+    ],
+    "verify": true,
+    "note": {
+     "kind": "tip",
+     "text": "Valores del POH como orden de magnitud: PA-28-161, VS0 44, VFE 102, VNO 126 y VNE 160 kt; C172S, VS0 40, VFE 85, VNO 129 y VNE 163 kt. Comprueba en el POH del avión que vueles."
+    }
+   },
+   {
+    "title": "Factor de carga y categorías",
+    "text": [
+     "El **factor de carga n** es la relación entre la sustentación y el peso: n = L/W. En vuelo recto vale 1; en un viraje o una recogida sube; en turbulencia varía. La estructura tiene un **factor de carga límite**: la carga máxima que puede soportar sin deformación permanente. La estructura se calcula para soportar además un **factor de seguridad de 1,5** (carga última = 1,5 × límite).",
+     "Según su uso, las avionetas se certifican en una categoría:"
+    ],
+    "table": {
+     "caption": "Categorías y factores de carga límite",
+     "head": [
+      "Categoría",
+      "n positivo",
+      "n negativo",
+      "Uso"
+     ],
+     "rows": [
+      [
+       "Normal",
+       "+3,8",
+       "−1,52",
+       "Vuelo normal, sin acrobacia"
+      ],
+      [
+       "Utilitaria",
+       "+4,4",
+       "−1,76",
+       "Maniobras suaves, barrena en algunos aviones"
+      ],
+      [
+       "Acrobática",
+       "+6",
+       "−3",
+       "Acrobacia"
+      ]
+     ],
+     "src": "CS-23 / FAR 23"
+    },
+    "examples": [
+     {
+      "q": "Un avión de 1000 kg en categoría normal. ¿Qué sustentación máxima puede soportar la estructura?",
+      "a": "n máx = 3,8: 3,8 × 1000 kg = 3800 kg de sustentación (≈ 37 280 N). La carga última es 1,5 veces mayor (5,7 g)."
+     }
+    ],
+    "note": {
+     "kind": "warn",
+     "text": "La categoría depende de la masa y de la configuración: un avión utilitario con pasajeros y equipaje solo cumple la categoría normal."
+    }
+   },
+   {
+    "title": "El diagrama de maniobra V‑n",
+    "text": [
+     "El diagrama V‑n representa el factor de carga n en vertical y la velocidad en horizontal. Tiene tres elementos: la **curva de pérdida acelerada**, que sube con V² (a mayor velocidad, el ala puede generar más n antes de perder); las **líneas de carga límite** positiva y negativa, y la **línea vertical de VNE**. El punto donde la curva de pérdida corta la línea de carga límite define la **velocidad de maniobra VA**:"
+    ],
+    "formulas": [
+     {
+      "f": "VA = VS · √n límite",
+      "note": "Con VS en la configuración de máxima masa y n límite positivo."
+     }
+    ],
+    "figure": "svg:080-vn",
+    "caption": "Diagrama V-n de ejemplo: la curva de pérdida acelerada corta el límite +3,8 g en VA.",
+    "examples": [
+     {
+      "q": "VS = 50 kt y n límite = 3,8. ¿Cuánto vale VA?",
+      "a": "VA = 50 × √3,8 = 50 × 1,949 ≈ 97 kt."
+     }
+    ],
+    "bullets": [
+     "**Por debajo de VA** el ala entra en pérdida antes de alcanzar la carga límite: protege la estructura contra una tirada brusca de palanca.",
+     "**Por encima de VA** se puede superar la carga límite con un solo mando brusco y producir daño estructural.",
+     "VA no protege contra movimientos de mandos repetidos o combinados, ni contra ráfagas."
+    ]
+   },
+   {
+    "title": "Efecto de la masa en VA",
+    "text": [
+     "VA depende de VS, y VS depende de la masa: **VA ∝ √masa**. A menor masa, menor VS y menor VA: un avión ligero necesita **menos velocidad** para que una deflexión brusca supere su carga límite. El POH da la VA para la masa máxima; a masa menor, hay que volar por debajo de ella."
+    ],
+    "examples": [
+     {
+      "q": "VA = 97 kt con 1100 kg. ¿VA con 900 kg?",
+      "a": "97 × √(900/1100) = 97 × 0,905 ≈ 88 kt."
+     }
+    ]
+   },
+   {
+    "title": "Ráfagas",
+    "text": [
+     "Una ráfaga vertical cambia súbitamente el ángulo de ataque y, con él, la sustentación. El incremento del factor de carga crece con la **velocidad**, con la **intensidad de la ráfaga** y con la **pendiente de la curva CL–α** (alas de gran alargamiento reaccionan más), y disminuye con la **carga alar** (un avión pesado con ala pequeña acelera menos). El diagrama de ráfagas dibuja líneas inclinadas que parten de n = 1 y que se abren con la velocidad; la intersección con los límites marca la velocidad máxima en turbulencia. Por eso existe la **VNO**: por encima se limita a aire en calma, y por debajo, en turbulencia, conviene volar a la velocidad de penetración de turbulencia que indique el POH (a menudo VA)."
+    ]
+   }
+  ],
+  "numbers": [
+   "Categorías: normal +3,8/−1,52 g; utilitaria +4,4/−1,76 g; acrobática +6/−3 g",
+   "Factor de seguridad de la estructura: 1,5",
+   "VA = VS · √n límite; VA ∝ √masa",
+   "Arco blanco VS0–VFE; verde VS1–VNO; amarillo VNO–VNE (solo en aire en calma); línea roja VNE",
+   "Ráfagas: más n a más velocidad; se reduce con más carga alar"
+  ],
+  "traps": [
+   "El arco amarillo no está prohibido, pero solo se usa en aire en calma y sin mandos bruscos.",
+   "VA baja con la masa: un avión ligero tolera menos deflexión brusca a la misma velocidad.",
+   "VA protege de un solo movimiento brusco de mando, no de movimientos repetidos ni de ráfagas.",
+   "Las cargas por ráfaga crecen con la velocidad; por eso existe la VNO."
+  ],
+  "sources": [
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "FAA, Airplane Flying Handbook (FAA-H-8083-3C)",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+   },
+   {
+    "title": "EASA, CS-23, subparte C (cargas de vuelo y maniobra)",
+    "url": "https://www.easa.europa.eu/en/document-library/certification-specifications"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "080.13",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "080.13.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "El arco blanco del anemómetro comprende desde:",
+   "options": [
+    "VS1 hasta VNO",
+    "VS0 hasta VFE",
+    "VNO hasta VNE",
+    "VS0 hasta VNO"
+   ],
+   "correct": 1,
+   "why": "Es el rango en que se pueden usar los flaps: desde la pérdida en configuración de aterrizaje hasta la VFE.",
+   "whyNot": [
+    "Eso es el arco verde.",
+    null,
+    "Eso es el arco amarillo.",
+    "El blanco termina en VFE, no en VNO."
+   ],
+   "ref": "CS-23.1545"
+  },
+  {
+   "id": "080.13.002",
+   "type": "concepto",
+   "level": 1,
+   "q": "El arco verde del anemómetro comprende desde:",
+   "options": [
+    "VS0 hasta VFE",
+    "VNO hasta VNE",
+    "VS1 hasta VNE",
+    "VS1 hasta VNO"
+   ],
+   "correct": 3,
+   "why": "Es el rango normal de operación, desde la pérdida limpia hasta la máxima de crucero estructural.",
+   "whyNot": [
+    "Eso es el arco blanco.",
+    "Eso es el arco amarillo.",
+    "El verde termina en VNO.",
+    null
+   ],
+   "ref": "CS-23.1545"
+  },
+  {
+   "id": "080.13.003",
+   "type": "concepto",
+   "level": 2,
+   "q": "El arco amarillo del anemómetro (de VNO a VNE) indica que:",
+   "options": [
+    "Solo se puede volar en aire en calma y con precaución",
+    "Está prohibido volar en esa franja",
+    "Es la velocidad recomendada en turbulencia",
+    "Es el rango de uso de flaps"
+   ],
+   "correct": 0,
+   "why": "En esa franja una turbulencia puede producir cargas peligrosas.",
+   "whyNot": [
+    null,
+    "No está prohibido, pero sí restringido.",
+    "En turbulencia se debe estar por debajo de VNO o de la velocidad que indique el POH.",
+    "El rango de flaps es el arco blanco."
+   ],
+   "ref": "CS-23.1545"
+  },
+  {
+   "id": "080.13.004",
+   "type": "concepto",
+   "level": 1,
+   "q": "La línea roja del anemómetro señala:",
+   "options": [
+    "La velocidad de pérdida",
+    "La velocidad de mejor planeo",
+    "La VNE, que nunca debe superarse",
+    "La velocidad de flaps"
+   ],
+   "correct": 2,
+   "why": "Es el límite de velocidad por encima del cual hay riesgo de daño o flameo.",
+   "whyNot": [
+    "La pérdida es el inicio del arco blanco o verde.",
+    "La mejor velocidad de planeo no está marcada.",
+    null,
+    "La VFE es el final del arco blanco."
+   ],
+   "ref": "CS-23.1545"
+  },
+  {
+   "id": "080.13.005",
+   "type": "concepto",
+   "level": 2,
+   "q": "La VNO es:",
+   "options": [
+    "La velocidad máxima con flaps extendidos",
+    "La velocidad máxima de maniobra",
+    "La velocidad máxima de crucero estructural, límite del arco verde",
+    "La velocidad de pérdida con flaps"
+   ],
+   "correct": 2,
+   "why": "Por encima de VNO solo se vuela en aire en calma.",
+   "whyNot": [
+    "Esa es la VFE.",
+    "Esa es la VA.",
+    null,
+    "Esa es la VS0."
+   ],
+   "ref": "CS-23.1545"
+  },
+  {
+   "id": "080.13.006",
+   "type": "concepto",
+   "level": 1,
+   "q": "El factor de carga límite en categoría normal es:",
+   "options": [
+    "+3,8 y −1,52",
+    "+4,4 y −1,76",
+    "+6 y −3",
+    "+2,5 y −1"
+   ],
+   "correct": 0,
+   "why": "Es el valor de CS-23 para aviones de categoría normal.",
+   "whyNot": [
+    null,
+    "Esos son los de la categoría utilitaria.",
+    "Esos son los de la categoría acrobática.",
+    "No corresponde a la categoría normal."
+   ],
+   "ref": "CS-23.337"
+  },
+  {
+   "id": "080.13.007",
+   "type": "concepto",
+   "level": 1,
+   "q": "El factor de carga límite en categoría utilitaria es:",
+   "options": [
+    "+3,8 y −1,52",
+    "+6 y −3",
+    "+4,4 y −3",
+    "+4,4 y −1,76"
+   ],
+   "correct": 3,
+   "why": "La utilitaria soporta más carga que la normal.",
+   "whyNot": [
+    "Esos son los de la categoría normal.",
+    "Esos son los de la categoría acrobática.",
+    "El límite negativo es −1,76, no −3.",
+    null
+   ],
+   "ref": "CS-23.337"
+  },
+  {
+   "id": "080.13.008",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un factor de seguridad de 1,5 significa que:",
+   "options": [
+    "La carga límite es 1,5 veces la última",
+    "La carga última es 1,5 veces la carga límite",
+    "El avión soporta 1,5 g más",
+    "La velocidad máxima es 1,5 VS"
+   ],
+   "correct": 1,
+   "why": "Con la carga límite no hay deformación permanente; la estructura aguanta 1,5 veces más antes de romperse.",
+   "whyNot": [
+    "Es al revés: la última es mayor.",
+    null,
+    "No es una suma, es un factor.",
+    "Se refiere a cargas, no a velocidades."
+   ],
+   "ref": "CS-23.303"
+  },
+  {
+   "id": "080.13.009",
+   "type": "calculo",
+   "level": 1,
+   "q": "Un avión de categoría normal con n límite = 3,8 y VS = 50 kt tiene una VA de aproximadamente:",
+   "options": [
+    "97 kt",
+    "190 kt",
+    "75 kt",
+    "63 kt"
+   ],
+   "correct": 0,
+   "why": "VA = VS · √3,8 = 50 · 1,95 ≈ 97 kt.",
+   "whyNot": [
+    null,
+    "Es VS · n, sin la raíz.",
+    "Resulta de multiplicar VS por 1,5.",
+    "Resulta de multiplicar VS por √1,6."
+   ],
+   "ref": "VA = VS·√n"
+  },
+  {
+   "id": "080.13.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "Si la masa del avión disminuye, la velocidad de maniobra VA:",
+   "options": [
+    "Aumenta",
+    "No cambia",
+    "Disminuye",
+    "Se hace igual a VNO"
+   ],
+   "correct": 2,
+   "why": "VA ∝ √masa: con menos masa baja la VS y con ella VA.",
+   "whyNot": [
+    "VA aumenta con la masa; si la masa baja, VA baja.",
+    "VA cambia con la masa porque depende de VS, que depende de la masa.",
+    null,
+    "VA y VNO son valores distintos."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.13.011",
+   "type": "calculo",
+   "level": 2,
+   "q": "VA = 97 kt con 1100 kg. Con 900 kg valdrá aproximadamente:",
+   "options": [
+    "79 kt",
+    "88 kt",
+    "97 kt",
+    "107 kt"
+   ],
+   "correct": 1,
+   "why": "97 · √(900/1100) ≈ 88 kt.",
+   "whyNot": [
+    "Resulta de aplicar el cociente de masas sin raíz.",
+    null,
+    "Con menos masa VA baja; no se mantiene en 97 kt.",
+    "Aumentaría con más masa, no con menos."
+   ],
+   "ref": "VA ∝ √m"
+  },
+  {
+   "id": "080.13.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "Volar por debajo de VA garantiza que:",
+   "options": [
+    "La estructura soporte ráfagas fuertes sin límite",
+    "Se puedan mover los mandos repetida y bruscamente",
+    "El avión no entre en pérdida",
+    "Una deflexión brusca de un mando no sobrecargue la estructura por entrar el ala en pérdida antes"
+   ],
+   "correct": 3,
+   "why": "Por debajo de VA el ala pierde antes de superar la carga límite con un solo movimiento.",
+   "whyNot": [
+    "VA no protege contra ráfagas.",
+    "Movimientos repetidos pueden dañar la estructura.",
+    "Se puede entrar en pérdida; justo por eso protege.",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.13.013",
+   "type": "concepto",
+   "level": 2,
+   "q": "En el diagrama V‑n, la curva de pérdida acelerada:",
+   "options": [
+    "Es una recta horizontal",
+    "Decrece con la velocidad",
+    "Es independiente de la velocidad",
+    "Crece con el cuadrado de la velocidad"
+   ],
+   "correct": 3,
+   "why": "n = (V/VS)²: la carga que puede generar el ala crece con V².",
+   "whyNot": [
+    "La línea horizontal es la carga límite.",
+    "Aumenta con la velocidad.",
+    "Depende de V².",
+    null
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.13.014",
+   "type": "concepto",
+   "level": 2,
+   "q": "Las cargas por ráfaga aumentan con:",
+   "options": [
+    "La carga alar",
+    "La velocidad y la pendiente de la curva CL–α",
+    "La disminución de la velocidad",
+    "El peso de combustible"
+   ],
+   "correct": 1,
+   "why": "Δn ∝ V · a · Ue / (W/S): más velocidad y mayor pendiente, más carga.",
+   "whyNot": [
+    "Con más carga alar, la carga baja.",
+    null,
+    "Con menos velocidad la carga baja.",
+    "El combustible no es un factor directo."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.13.015",
+   "type": "concepto",
+   "level": 3,
+   "q": "El flameo se produce por:",
+   "options": [
+    "Un exceso de factor de carga",
+    "La pérdida de sustentación",
+    "La interacción entre las fuerzas aerodinámicas y la elasticidad de la estructura",
+    "La mezcla pobre del motor"
+   ],
+   "correct": 2,
+   "why": "Es una oscilación autoexcitada que puede destruir una superficie.",
+   "whyNot": [
+    "El factor de carga es otro límite.",
+    "La pérdida es un fenómeno de ángulo de ataque.",
+    null,
+    "No es un asunto del motor."
+   ],
+   "ref": "PHAK cap. 5"
+  },
+  {
+   "id": "080.13.016",
+   "type": "lectura",
+   "level": 2,
+   "q": "En el diagrama V‑n de la figura, a la derecha de la VNE:",
+   "figure": "svg:080-vn",
+   "options": [
+    "Queda fuera de la envolvente permitida",
+    "Es la zona de pérdida acelerada",
+    "Es el arco blanco",
+    "Es la zona de ráfagas únicamente"
+   ],
+   "correct": 0,
+   "why": "La VNE cierra la envolvente por la derecha.",
+   "whyNot": [
+    null,
+    "La pérdida acelerada es la curva de la izquierda.",
+    "El arco blanco está al otro extremo.",
+    "Fuera de la VNE no hay envolvente."
+   ],
+   "ref": "PHAK cap. 5"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.080.13.01",
+   "front": "Arcos del anemómetro",
+   "back": "Blanco VS0–VFE; verde VS1–VNO; amarillo VNO–VNE (solo en aire en calma); línea roja VNE"
+  },
+  {
+   "id": "c.080.13.02",
+   "front": "Factores de carga límite por categoría",
+   "back": "Normal +3,8/−1,52; utilitaria +4,4/−1,76; acrobática +6/−3"
+  },
+  {
+   "id": "c.080.13.03",
+   "front": "VA y la masa",
+   "back": "VA = VS·√n límite; baja con la masa (∝ √masa)"
+  },
+  {
+   "id": "c.080.13.04",
+   "front": "Por debajo de VA",
+   "back": "El ala entra en pérdida antes de superar la carga límite con un único mando brusco"
+  }
+ ]
+}

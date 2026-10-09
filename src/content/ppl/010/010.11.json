@@ -1,0 +1,360 @@
+{
+  "lesson": {
+    "id": "010.11",
+    "title": "Información aeronáutica (Anexo 15)",
+    "summary": "La estructura del AIP (GEN, ENR y AD), enmiendas y suplementos, el ciclo AIRAC de 28 días, los NOTAM y su lectura, las AIC y los boletines de información previa al vuelo.",
+    "objectives": [
+      "Saber qué contiene cada parte del AIP y cómo se actualiza",
+      "Distinguir enmienda, suplemento, AIC y NOTAM",
+      "Explicar el ciclo AIRAC de 28 días",
+      "Leer un NOTAM sencillo y usar el boletín de información previa al vuelo"
+    ],
+    "sections": [
+      {
+        "title": "Para qué sirve el servicio de información aeronáutica",
+        "text": [
+          "Antes de volar necesitas saber cómo es el aeródromo, qué espacios hay en tu ruta, qué frecuencias usar y si hay algo que haya cambiado: una pista cerrada, un espacio activo, una antena nueva. El **Anexo 15** de la OACI obliga a cada Estado a tener un **servicio de información aeronáutica (AIS)** que reúna, compruebe y publique esa información. En España, lo presta **ENAIRE**.",
+          "La información se divide en dos grandes grupos: la **permanente o de larga duración**, que está en el AIP, y la **temporal o urgente**, que se envía en forma de NOTAM."
+        ]
+      },
+      {
+        "title": "El AIP: GEN, ENR y AD",
+        "text": [
+          "El **AIP** (Aeronautical Information Publication, publicación de información aeronáutica) es el documento de referencia del Estado. Se organiza en tres partes."
+        ],
+        "table": {
+          "caption": "Partes del AIP",
+          "head": [
+            "Parte",
+            "Contenido"
+          ],
+          "rows": [
+            [
+              "GEN (general)",
+              "Normas, organismos, abreviaturas, sistemas de medida, diferencias con la OACI (GEN 1.7)"
+            ],
+            [
+              "ENR (en ruta)",
+              "Reglas generales, espacio aéreo, rutas ATS, ayudas a la navegación, zonas prohibidas, restringidas y peligrosas (ENR 5.1) y avisos para la navegación"
+            ],
+            [
+              "AD (aeródromos)",
+              "Información de cada aeródromo: pistas, distancias, ayudas, frecuencias, procedimientos y cartas"
+            ]
+          ],
+          "src": "Anexo 15"
+        },
+        "note": {
+          "kind": "es",
+          "text": "El AIP de España lo publica ENAIRE. Las diferencias con la OACI y SERA están en GEN 1.7, y las zonas LE-P, LE-R y LE-D, en ENR 5.1."
+        }
+      },
+      {
+        "title": "Enmiendas, suplementos y el ciclo AIRAC",
+        "text": [
+          "El AIP se mantiene al día con **enmiendas** (AMDT), para cambios permanentes, y **suplementos** (SUP), para cambios temporales de larga duración o con mucho texto o gráficos. Ambos cambian el contenido del AIP.",
+          "Los cambios que afectan a operaciones se publican siguiendo el sistema **AIRAC** (Aeronautical Information Regulation and Control), con **fechas de entrada en vigor comunes en todo el mundo**, cada **28 días**. Se anuncian con antelación (al menos 28 días) para que operadores y proveedores puedan preparar sus cartas y bases de datos. Un cambio AIRAC no entra en vigor entre dos fechas."
+        ],
+        "bullets": [
+          "El ciclo AIRAC es de **28 días**; los cambios importantes se avisan con 56 días."
+        ]
+      },
+      {
+        "title": "NOTAM",
+        "text": [
+          "Un **NOTAM** es un aviso distribuido por telecomunicaciones con información sobre el establecimiento, estado o modificación de una instalación, servicio, procedimiento o peligro aeronáutico, cuyo conocimiento a tiempo es esencial para el personal que opera aeronaves. Se usa para lo que es **temporal o urgente**: una pista cerrada por obras, un VOR fuera de servicio, un espacio activado, una grúa.",
+          "Hay tres tipos: **NOTAMN** (nuevo), **NOTAMR** (sustituye a otro) y **NOTAMC** (cancela otro). Cada NOTAM lleva un identificador (serie, número y año) y campos: **Q** (calificador), **A** (lugar), **B** (inicio de validez), **C** (fin), **D** (horario), **E** (texto) y **F/G** (límites verticales)."
+        ],
+        "examples": [
+          {
+            "q": "Un NOTAM ficticio dice: A1234/26 NOTAMN, A) LEXX, B) 2610150800, C) 2610171600, D) 0800-1600, E) RWY 09/27 CLSD DUE TO WORKS. ¿Qué significa?",
+            "a": "Es un NOTAM nuevo para LEXX. La pista 09/27 está cerrada por obras desde el 15 de octubre de 2026 a las 08:00 UTC hasta el 17 de octubre a las 16:00 UTC, en el horario diario de 08:00 a 16:00 UTC. Si no hay otra pista, tu vuelo a LEXX en esas horas debe replanificarse."
+          }
+        ]
+      },
+      {
+        "title": "AIC y boletín de información previa al vuelo",
+        "text": [
+          "Las **AIC** (circulares de información aeronáutica) dan información que no encaja como NOTAM ni como AIP: avisos de cambios importantes futuros, información administrativa o explicativa, de carácter técnico o legislativo. No son urgentes.",
+          "El **boletín de información previa al vuelo (PIB)** es un resumen de los NOTAM vigentes de interés para tu vuelo (aeródromos, ruta, FIR). Antes de volar, consúltalo por la web de ENAIRE o en la oficina ARO. Los avisos de situaciones especiales tienen nombre propio: **SNOWTAM** para nieve o hielo en pista, **ASHTAM** para ceniza volcánica y **BIRDTAM** para aves."
+        ]
+      }
+    ],
+    "numbers": [
+      "AIRAC: 28 días",
+      "AIP: GEN, ENR y AD",
+      "Enmienda: cambio permanente; suplemento: cambio temporal de larga duración",
+      "NOTAM: temporal o urgente; NOTAMN, NOTAMR, NOTAMC"
+    ],
+    "traps": [
+      "Un cambio AIRAC solo entra en vigor en las fechas del ciclo de 28 días.",
+      "Las AIC no sustituyen a los NOTAM ni a las enmiendas del AIP.",
+      "Los NOTAM caducan; si no hay cancelación, comprueba el campo C (fin de validez)."
+    ],
+    "spain": [
+      "ENAIRE publica el AIP de España, los NOTAM y los boletines de información previa (PIB)."
+    ],
+    "sources": [
+      {
+        "title": "AIP España (ENAIRE)",
+        "url": "https://aip.enaire.es/AIP/"
+      },
+      {
+        "title": "Anexo 15 de la OACI: Servicios de información aeronáutica"
+      }
+    ],
+    "links": [
+      {
+        "label": "Fraseología",
+        "href": "#/licencias/fraseologia"
+      }
+    ],
+    "reviewed": "2026-10-09"
+  },
+  "questions": [
+    {
+      "id": "010.11.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Cuáles son las tres partes del AIP?",
+      "options": [
+        "GEN, MET y COM",
+        "ENR, AIS y NOTAM",
+        "GEN, ENR y AD",
+        "AD, TMA y CTR"
+      ],
+      "correct": 2,
+      "why": "El AIP se divide en GEN (general), ENR (en ruta) y AD (aeródromos).",
+      "whyNot": [
+        "MET y COM no son partes del AIP.",
+        "No son las partes del AIP.",
+        null,
+        "No son las partes del AIP."
+      ],
+      "ref": "Anexo 15"
+    },
+    {
+      "id": "010.11.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Dónde se publican las diferencias de España con la OACI y SERA?",
+      "options": [
+        "En el AIP GEN 1.7",
+        "En el AIP ENR 5.1",
+        "En el AIP AD 2",
+        "En un NOTAM"
+      ],
+      "correct": 0,
+      "why": "GEN 1.7 contiene las diferencias nacionales.",
+      "whyNot": [
+        null,
+        "Ahí están las zonas prohibidas, restringidas y peligrosas.",
+        "Es la información de cada aeródromo.",
+        "Los NOTAM son temporales."
+      ],
+      "ref": "AIP GEN 1.7",
+      "es": true
+    },
+    {
+      "id": "010.11.003",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Cada cuántos días hay una fecha AIRAC?",
+      "options": [
+        "14 días",
+        "30 días",
+        "56 días",
+        "28 días"
+      ],
+      "correct": 3,
+      "why": "El ciclo AIRAC es de 28 días.",
+      "whyNot": [
+        "No es la cifra.",
+        "No es la cifra.",
+        "Es la antelación de aviso de cambios importantes.",
+        null
+      ],
+      "ref": "Anexo 15"
+    },
+    {
+      "id": "010.11.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es una enmienda del AIP?",
+      "options": [
+        "Un aviso urgente y temporal",
+        "Un cambio permanente de su contenido",
+        "Un cambio temporal de larga duración",
+        "Un boletín de información previa"
+      ],
+      "correct": 1,
+      "why": "Las enmiendas cambian de forma permanente el AIP.",
+      "whyNot": [
+        "Eso es un NOTAM.",
+        null,
+        "Eso es un suplemento.",
+        "Eso es un PIB."
+      ],
+      "ref": "Anexo 15"
+    },
+    {
+      "id": "010.11.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es un suplemento del AIP?",
+      "options": [
+        "Un cambio temporal de larga duración o con mucho texto o gráficos",
+        "Un cambio permanente",
+        "Un aviso urgente por telecomunicaciones",
+        "Una circular administrativa"
+      ],
+      "correct": 0,
+      "why": "Los suplementos recogen cambios temporales de larga duración.",
+      "whyNot": [
+        null,
+        "Eso es una enmienda.",
+        "Eso es un NOTAM.",
+        "Eso es una AIC."
+      ],
+      "ref": "Anexo 15"
+    },
+    {
+      "id": "010.11.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Para qué se usa un NOTAM?",
+      "options": [
+        "Para publicar cambios permanentes",
+        "Para publicar normas administrativas",
+        "Para avisar de información temporal o urgente de interés para la operación",
+        "Para dar el tiempo previsto"
+      ],
+      "correct": 2,
+      "why": "Un NOTAM da información temporal o urgente.",
+      "whyNot": [
+        "Eso es una enmienda.",
+        "Eso es una AIC.",
+        null,
+        "Eso es la meteorología."
+      ],
+      "ref": "Anexo 15"
+    },
+    {
+      "id": "010.11.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa NOTAMC?",
+      "options": [
+        "Que es un NOTAM nuevo",
+        "Que cancela un NOTAM anterior",
+        "Que sustituye a otro",
+        "Que es de carácter militar"
+      ],
+      "correct": 1,
+      "why": "NOTAMN es nuevo, NOTAMR sustituye y NOTAMC cancela.",
+      "whyNot": [
+        "Eso es NOTAMN.",
+        null,
+        "Eso es NOTAMR.",
+        "No es su significado."
+      ],
+      "ref": "Anexo 15"
+    },
+    {
+      "id": "010.11.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué son las AIC?",
+      "options": [
+        "Cartas de aproximación",
+        "Informes de accidentes",
+        "Avisos urgentes de pista",
+        "Circulares con información no apta para NOTAM ni AIP, como avisos de futuros cambios"
+      ],
+      "correct": 3,
+      "why": "Las AIC dan información administrativa, explicativa o de cambios futuros.",
+      "whyNot": [
+        "No son cartas.",
+        "No lo son.",
+        "Son NOTAM.",
+        null
+      ],
+      "ref": "Anexo 15"
+    },
+    {
+      "id": "010.11.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es un boletín de información previa al vuelo (PIB)?",
+      "options": [
+        "Un plan de vuelo",
+        "Un informe meteorológico",
+        "Un resumen de los NOTAM vigentes de interés para el vuelo",
+        "Una enmienda del AIP"
+      ],
+      "correct": 2,
+      "why": "El PIB reúne los NOTAM pertinentes para tu vuelo.",
+      "whyNot": [
+        "No es un plan.",
+        "No lo es.",
+        null,
+        "No lo es."
+      ],
+      "ref": "Anexo 15"
+    },
+    {
+      "id": "010.11.010",
+      "type": "lectura",
+      "level": 2,
+      "q": "En un NOTAM, el campo C indica:",
+      "options": [
+        "El fin de la validez",
+        "El lugar",
+        "El inicio de la validez",
+        "El texto"
+      ],
+      "correct": 0,
+      "why": "B es el inicio y C el fin de la validez.",
+      "whyNot": [
+        null,
+        "Eso es el campo A.",
+        "Eso es el campo B.",
+        "Eso es el campo E."
+      ],
+      "ref": "Anexo 15",
+      "data": "A1234/26 NOTAMN\nQ) LEXX/QMRLC/IV/NBO/A/000/999/\nA) LEXX B) 2610150800 C) 2610171600\nD) 0800-1600\nE) RWY 09/27 CLSD DUE TO WORKS"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.010.11.01",
+      "front": "Partes del AIP",
+      "back": "GEN, ENR y AD"
+    },
+    {
+      "id": "c.010.11.02",
+      "front": "Enmienda frente a suplemento",
+      "back": "Enmienda: cambio permanente; suplemento: cambio temporal de larga duración"
+    },
+    {
+      "id": "c.010.11.03",
+      "front": "AIRAC",
+      "back": "Ciclo de 28 días con fechas de entrada en vigor comunes"
+    },
+    {
+      "id": "c.010.11.04",
+      "front": "NOTAM",
+      "back": "Aviso temporal o urgente; NOTAMN nuevo, NOTAMR sustituye, NOTAMC cancela"
+    },
+    {
+      "id": "c.010.11.05",
+      "front": "AIC",
+      "back": "Circular con información que no es NOTAM ni AIP"
+    },
+    {
+      "id": "c.010.11.06",
+      "front": "PIB",
+      "back": "Resumen de los NOTAM vigentes de interés para el vuelo"
+    }
+  ]
+}

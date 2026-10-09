@@ -1,0 +1,896 @@
+{
+ "lesson": {
+  "title": "Despegue y aterrizaje con el manual",
+  "summary": "Cómo se leen las tablas y gráficas de despegue y aterrizaje de estilo POH: altitud de presión, temperatura, masa, viento, superficie y pendiente, factores de seguridad y comparación con la pista disponible.",
+  "objectives": [
+   "Leer e interpolar una tabla de despegue y de aterrizaje con altitud de presión y temperatura",
+   "Aplicar correcciones de masa, viento, superficie y pendiente en el orden adecuado y sin duplicarlas",
+   "Aplicar los factores de seguridad recomendados",
+   "Comparar el resultado con TORA, TODA y LDA y decidir"
+  ],
+  "sections": [
+   {
+    "title": "Qué te da el manual y qué no",
+    "text": [
+     "El AFM o POH trae las **distancias de despegue y aterrizaje** en tablas o en gráficas. Todos los valores se miden en las condiciones de ensayo: pista de asfalto o de hormigón, seca y llana, avión en buen estado, piloto de pruebas, flaps y potencia como indica el manual. **No incluyen ningún margen de seguridad.** Tu avión, tu pista y tu técnica son peores, y por eso se aplican correcciones y, encima, un factor de seguridad. El **orden de trabajo** es siempre el mismo: calcular la altitud de presión y la temperatura, entrar en la tabla o gráfica, interpolar, corregir por masa, viento, superficie y pendiente, aplicar el factor de seguridad y comparar con la distancia disponible.",
+     "Los datos de este bloque son de un **avión de ejemplo** (1100 kg, tablas de despegue y aterrizaje propias): sirven para aprender el método y no son de ningún avión real. Con los POH del PA-28-161 y del C172S el procedimiento es idéntico; solo cambian los números, los formatos (tablas en ft y lb, o gráficas de varios paneles) y los factores. Al examinarte, lee siempre las notas de la tabla: cada manual dice qué corrección ya está aplicada."
+    ]
+   },
+   {
+    "title": "Tabla de despegue (ejemplo)",
+    "text": [
+     "En cada celda aparecen dos números: la **carrera en tierra** y la **distancia hasta 50 ft**, en metros. Entra por la fila de la altitud de presión y la columna de la temperatura. Si tu dato no coincide con una fila o una columna, **interpola** linealmente entre las dos más cercanas. Como las tablas suelen reflejar el rendimiento de la masa máxima, a una masa menor hay que corregir (más abajo)."
+    ],
+    "table": {
+     "caption": "Despegue del avión de ejemplo: carrera / distancia hasta 50 ft (m). 1100 kg, flaps 10°, asfalto seco, sin viento",
+     "head": [
+      "PA (ft)",
+      "0 °C",
+      "10 °C",
+      "20 °C",
+      "30 °C",
+      "40 °C"
+     ],
+     "rows": [
+      [
+       "0",
+       "240 / 410",
+       "275 / 455",
+       "305 / 505",
+       "340 / 550",
+       "375 / 600"
+      ],
+      [
+       "2000",
+       "300 / 510",
+       "345 / 565",
+       "385 / 625",
+       "425 / 680",
+       "470 / 735"
+      ],
+      [
+       "4000",
+       "370 / 615",
+       "420 / 680",
+       "470 / 750",
+       "520 / 815",
+       "565 / 880"
+      ],
+      [
+       "6000",
+       "445 / 730",
+       "505 / 805",
+       "560 / 880",
+       "615 / 955",
+       "670 / 1030"
+      ]
+     ],
+     "src": "Datos de ejemplo"
+    },
+    "examples": [
+     {
+      "q": "Lee la carrera y la distancia hasta 50 ft con PA 2000 ft y 20 °C.",
+      "a": "Fila 2000 ft, columna 20 °C: 385 m de carrera y 625 m hasta 50 ft."
+     },
+     {
+      "q": "Interpola la distancia hasta 50 ft para PA 4000 ft y 25 °C.",
+      "a": "Fila 4000 ft: 750 m a 20 °C y 815 m a 30 °C. A 25 °C, justo en medio: (750 + 815) / 2 = 782,5 m."
+     },
+     {
+      "q": "Interpola las dos distancias para PA 3000 ft y 25 °C.",
+      "a": "Primero a 25 °C en las filas de 2000 y 4000 ft. 2000 ft: carrera 405,0 m y distancia 652,5 m. 4000 ft: 495,0 m y 782,5 m. A 3000 ft, el punto medio: carrera 450,0 m y distancia 717,5 m."
+     }
+    ]
+   },
+   {
+    "title": "Gráfica de despegue",
+    "text": [
+     "Muchos manuales presentan lo mismo en forma de gráfica. La que sigue es una versión simplificada, con datos de ejemplo, de una gráfica de despegue: temperatura en horizontal y distancia hasta 50 ft en vertical, con una línea por altitud de presión. Se entra por la temperatura, se sube hasta la línea de la altitud de presión (interpolando entre líneas si hace falta) y se lee la distancia en el eje vertical. Con varias entradas (masa, viento), el POH real encadena varios paneles; en cada panel, la línea de salida del anterior es la de entrada del siguiente."
+    ],
+    "figure": "svg:030-despegue",
+    "caption": "Distancia hasta 50 ft frente a temperatura, con una línea por altitud de presión. Ejemplo de lectura: 25 °C y 4000 ft dan unos 780 m.",
+    "note": {
+     "kind": "tip",
+     "text": "Si tu temperatura o altitud queda entre dos líneas, no te quedes con la más cercana: interpola. Para ser conservador, redondea siempre hacia la condición peor (más altitud, más temperatura)."
+    }
+   },
+   {
+    "title": "Correcciones: masa, viento, superficie y pendiente",
+    "text": [
+     "Después de la lectura base se corrige por el resto de condiciones. En el avión de ejemplo (los de tu avión están en su POH) las correcciones son:"
+    ],
+    "table": {
+     "caption": "Correcciones del avión de ejemplo (no del POH)",
+     "head": [
+      "Condición",
+      "Corrección"
+     ],
+     "rows": [
+      [
+       "Masa menor de 1100 kg",
+       "Multiplicar por (masa / 1100)²: 1050 kg ×0,91; 1000 kg ×0,83"
+      ],
+      [
+       "Viento de cara",
+       "Restar un 10 % por cada 10 kt"
+      ],
+      [
+       "Viento en cola",
+       "Sumar un 10 % por cada 2 kt, hasta 10 kt"
+      ],
+      [
+       "Hierba corta y seca",
+       "Sumar un 15 %"
+      ],
+      [
+       "Pendiente ascendente",
+       "Sumar un 5 % por cada 1 % de pendiente"
+      ]
+     ],
+     "src": "Datos de ejemplo"
+    },
+    "bullets": [
+     "**Orden:** el orden de aplicación entre factores multiplicativos no altera el resultado. Lo que sí importa es **no duplicar**: si el manual ya incorpora el 50 % del viento de cara y el 150 % del de cola, tú solo introduces la componente real del viento a lo largo de la pista.",
+     "El viento en cola penaliza mucho más de lo que ayuda el de cara: con 4 kt de cola ya pierdes más que lo que ganas con 4 kt de cara.",
+     "Una pista **mojada** o con **nieve fundente** requiere correcciones mucho mayores en el aterrizaje (frenado) que en el despegue.",
+     "Usa siempre el viento que **realmente** sopla a lo largo de la pista, no el de la torre en una racha."
+    ],
+    "verify": true
+   },
+   {
+    "title": "Factores de seguridad",
+    "text": [
+     "Las tablas son sin margen. Las autoridades y manuales de seguridad recomiendan un factor sobre la distancia del AFM, normalmente **×1,33 para el despegue** y **×1,43 para el aterrizaje**, aplicado a la distancia total hasta o desde 50 ft. Esos valores son la referencia del leaflet de seguridad de la CAA británica y no un requisito de Part-NCO, pero son un criterio razonable que muchas escuelas adoptan. Si la pista es de hierba, está mojada o tiene pendiente, se acumulan además las correcciones de superficie y estado."
+    ],
+    "verify": true
+   },
+   {
+    "title": "Ejemplos completos de despegue",
+    "examples": [
+     {
+      "q": "PA 2000 ft, 30 °C, masa 1100 kg, viento de cara de 10 kt a lo largo de la pista, asfalto seco y llano. ¿Distancia de despegue con factor de seguridad? ¿Cabe en una pista con TORA 800 m y TODA 850 m?",
+      "a": "Tabla: 425 m de carrera y 680 m hasta 50 ft. Viento de cara 10 kt: −10 % → 382,5 y 612,0 m. Factor de seguridad ×1,33: carrera 509 m y distancia hasta 50 ft 814 m. Carrera (509 m) menor que TORA 800 m y distancia (814 m) menor que TODA 850 m: cabe, con 36 m de margen en la TODA."
+     },
+     {
+      "q": "PA 0, 20 °C, 1100 kg, viento en cola de 4 kt y hierba corta seca. ¿Distancia hasta 50 ft con factor de seguridad?",
+      "a": "Tabla: 305 / 505 m. Viento en cola de 4 kt: +20 % (×1,20). Hierba: +15 % (×1,15). Factores: ×1,38. Carrera 421 m y distancia 697 m. Con ×1,33: 560 m y 927 m. Una pista de 800 m de TODA no sería suficiente."
+     },
+     {
+      "q": "PA 2000 ft, 20 °C, viento cero, pendiente ascendente del 2 % y 1000 kg. ¿Distancia hasta 50 ft sin factor de seguridad?",
+      "a": "Tabla: 625 m. Masa: ×0,83 (1000 kg) → 517 m. Pendiente: +10 % (2 % × 5) → 568 m."
+     }
+    ]
+   },
+   {
+    "title": "Tabla y ejemplos de aterrizaje",
+    "text": [
+     "En el aterrizaje se lee igual, con la **carrera de aterrizaje** y la **distancia desde 50 ft**. Se corrige por masa de aterrizaje, viento, superficie y flaps; la velocidad de aproximación es la del manual y se mide el estado de la pista (seca o mojada), que en el aterrizaje pesa más que en el despegue."
+    ],
+    "table": {
+     "caption": "Aterrizaje del avión de ejemplo: carrera / distancia desde 50 ft (m). 1000 kg, flaps 40°, asfalto seco, sin viento",
+     "head": [
+      "PA (ft)",
+      "0 °C",
+      "10 °C",
+      "20 °C",
+      "30 °C",
+      "40 °C"
+     ],
+     "rows": [
+      [
+       "0",
+       "185 / 380",
+       "195 / 400",
+       "205 / 420",
+       "215 / 440",
+       "225 / 460"
+      ],
+      [
+       "2000",
+       "210 / 425",
+       "220 / 450",
+       "230 / 470",
+       "240 / 495",
+       "250 / 515"
+      ],
+      [
+       "4000",
+       "230 / 475",
+       "245 / 500",
+       "255 / 525",
+       "270 / 550",
+       "280 / 575"
+      ],
+      [
+       "6000",
+       "255 / 525",
+       "270 / 550",
+       "280 / 580",
+       "295 / 605",
+       "310 / 630"
+      ]
+     ],
+     "src": "Datos de ejemplo"
+    },
+    "examples": [
+     {
+      "q": "PA 2000 ft, 20 °C, viento de cara de 8 kt (corrección del ejemplo: 1 % por kt) y pista asfaltada. ¿Distancia desde 50 ft con factor de seguridad? ¿Y con una LDA de 700 m?",
+      "a": "Tabla: 230 / 470 m. Viento: −8 % → 432,4 m. Factor ×1,43: 618 m. Con LDA 700 m: cabe, con 82 m de margen."
+     }
+    ],
+    "note": {
+     "kind": "warn",
+     "text": "En el aterrizaje la corrección del viento de cara y la de cola de tu manual pueden ser distintas de las del despegue: léelas siempre en las notas de la tabla."
+    }
+   },
+   {
+    "title": "Buenas prácticas con el manual",
+    "bullets": [
+     "Calcula **antes** de ir al avión, con los datos reales de masa, altitud de presión y temperatura.",
+     "Con altitud de densidad alta, empobrece la mezcla en el despegue **según el POH** (la altitud a partir de la cual se hace depende del avión); sin empobrecer, la potencia y las distancias empeoran.",
+     "Comprueba el **régimen máximo del motor** en el punto de despegue: si no llega al valor del POH, aborta.",
+     "Si la distancia con factor supera la disponible, **reduce la masa** (menos combustible o carga), **espera** a un momento más fresco, **cambia de pista** o **no despegues**.",
+     "Anota el cálculo en el navlog: es parte de la preparación del vuelo."
+    ]
+   }
+  ],
+  "numbers": [
+   "Interpolar dos veces: temperatura y altitud de presión",
+   "Factores de seguridad recomendados: ×1,33 en el despegue y ×1,43 en el aterrizaje (CAA)",
+   "Distancias del POH: sin margen, en pista seca y asfaltada, avión nuevo",
+   "No duplicar el factor de viento que ya lleva la tabla",
+   "Carrera se compara con la TORA; distancia hasta 50 ft, con la TODA o la TORA si hay obstáculos"
+  ],
+  "traps": [
+   "Aplicar el viento dos veces: ya está en la tabla o en la corrección, no en ambas.",
+   "Leer la tabla con la temperatura equivocada o sin interpolar.",
+   "Olvidar que la tabla es sin margen de seguridad.",
+   "Usar la masa máxima de la tabla con un avión más ligero y no corregir (o al revés).",
+   "El viento en cola pesa más que el de cara."
+  ],
+  "sources": [
+   {
+    "title": "CAA (Reino Unido), Safety Sense Leaflet 7: Aeroplane Performance"
+   },
+   {
+    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+   },
+   {
+    "title": "EASA, Part-NCO y AMC/GM (Reglamento (UE) 965/2012), Easy Access Rules for Air Operations",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations"
+   },
+   {
+    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 030",
+    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+   }
+  ],
+  "links": [
+   {
+    "label": "Cabina del PA-28",
+    "href": "#/ac/pa28"
+   },
+   {
+    "label": "Cabina del C172",
+    "href": "#/ac/c172"
+   }
+  ],
+  "id": "030.07",
+  "reviewed": "2026-10-09"
+ },
+ "questions": [
+  {
+   "id": "030.07.001",
+   "type": "concepto",
+   "level": 1,
+   "q": "Las distancias de despegue y aterrizaje del POH:",
+   "options": [
+    "Ya incluyen un factor de seguridad de 1,5",
+    "No incluyen ningún margen de seguridad y están medidas en condiciones de ensayo",
+    "Son las de un día medio de verano",
+    "Son las de un piloto con poca experiencia"
+   ],
+   "correct": 1,
+   "why": "El manual da las distancias de certificación: pista seca y asfaltada, avión nuevo y piloto de pruebas, sin factores de seguridad.",
+   "whyNot": [
+    "Los márgenes los añade el piloto, no el manual.",
+    null,
+    "Se miden con las condiciones de ensayo, no con una media climática.",
+    "Las hace un piloto de pruebas."
+   ],
+   "ref": "AFM; CAA SS7"
+  },
+  {
+   "id": "030.07.002",
+   "type": "concepto",
+   "level": 2,
+   "q": "Los factores de seguridad recomendados por la CAA para despegue y aterrizaje son, respectivamente:",
+   "options": [
+    "1,43 y 1,33",
+    "1,15 y 1,30",
+    "1,5 y 1,5",
+    "1,33 y 1,43"
+   ],
+   "correct": 3,
+   "why": "Se aplican a la distancia total hasta o desde 50 ft: ×1,33 en despegue y ×1,43 en aterrizaje.",
+   "whyNot": [
+    "Están invertidos.",
+    "Son valores demasiado bajos para esa recomendación.",
+    "Son los del factor estructural, no los de performance.",
+    null
+   ],
+   "ref": "CAA Safety Sense 7"
+  },
+  {
+   "id": "030.07.003",
+   "type": "lectura",
+   "level": 1,
+   "q": "Según la tabla de despegue de ejemplo, con PA 2000 ft y 20 °C, la distancia hasta 50 ft es:",
+   "data": "DESPEGUE (avión de ejemplo) 1100 kg, flaps 10°, asfalto seco, sin viento\nCarrera en tierra / distancia hasta 50 ft, en metros\nPA (ft)     0 °C      10 °C      20 °C      30 °C      40 °C     \n     0    240/410     275/455     305/505     340/550     375/600     \n  2000    300/510     345/565     385/625     425/680     470/735     \n  4000    370/615     420/680     470/750     520/815     565/880     \n  6000    445/730     505/805     560/880     615/955     670/1030    ",
+   "options": [
+    "625 m",
+    "565 m",
+    "750 m",
+    "385 m"
+   ],
+   "correct": 0,
+   "why": "Se entra por la fila de 2000 ft y la columna de 20 °C: 385 m de carrera y 625 m hasta 50 ft.",
+   "whyNot": [
+    null,
+    "Es la lectura de la columna de 10 °C.",
+    "Es la lectura de la fila de 4000 ft.",
+    "Es la carrera en tierra, no la distancia hasta 50 ft."
+   ],
+   "ref": "Tabla de ejemplo"
+  },
+  {
+   "id": "030.07.004",
+   "type": "lectura",
+   "level": 1,
+   "q": "Con la tabla de despegue de ejemplo, ¿cuál es la carrera en tierra con PA 4000 ft y 30 °C?",
+   "data": "DESPEGUE (avión de ejemplo) 1100 kg, flaps 10°, asfalto seco, sin viento\nCarrera en tierra / distancia hasta 50 ft, en metros\nPA (ft)     0 °C      10 °C      20 °C      30 °C      40 °C     \n     0    240/410     275/455     305/505     340/550     375/600     \n  2000    300/510     345/565     385/625     425/680     470/735     \n  4000    370/615     420/680     470/750     520/815     565/880     \n  6000    445/730     505/805     560/880     615/955     670/1030    ",
+   "options": [
+    "815 m",
+    "470 m",
+    "520 m",
+    "615 m"
+   ],
+   "correct": 2,
+   "why": "Fila de 4000 ft, columna de 30 °C: 520 m de carrera.",
+   "whyNot": [
+    "Es la distancia hasta 50 ft.",
+    "Es la lectura de 20 °C.",
+    null,
+    "Es la lectura de la fila de 6000 ft."
+   ],
+   "ref": "Tabla de ejemplo"
+  },
+  {
+   "id": "030.07.005",
+   "type": "calculo",
+   "level": 2,
+   "q": "Con la tabla de despegue de ejemplo, ¿qué distancia hasta 50 ft corresponde a PA 4000 ft y 25 °C?",
+   "data": "DESPEGUE (avión de ejemplo) 1100 kg, flaps 10°, asfalto seco, sin viento\nCarrera en tierra / distancia hasta 50 ft, en metros\nPA (ft)     0 °C      10 °C      20 °C      30 °C      40 °C     \n     0    240/410     275/455     305/505     340/550     375/600     \n  2000    300/510     345/565     385/625     425/680     470/735     \n  4000    370/615     420/680     470/750     520/815     565/880     \n  6000    445/730     505/805     560/880     615/955     670/1030    ",
+   "options": [
+    "750 m",
+    "815 m",
+    "783 m",
+    "880 m"
+   ],
+   "correct": 2,
+   "why": "A 4000 ft: 750 m a 20 °C y 815 m a 30 °C. A 25 °C: (750 + 815) / 2 = 782,5 m.",
+   "whyNot": [
+    "Es el valor de 20 °C, sin interpolar.",
+    "Es el valor de 30 °C, sin interpolar.",
+    null,
+    "Es el valor de 40 °C."
+   ],
+   "ref": "Tabla de ejemplo"
+  },
+  {
+   "id": "030.07.006",
+   "type": "calculo",
+   "level": 2,
+   "q": "Con la tabla de despegue de ejemplo, ¿cuál es la carrera con PA 3000 ft y 20 °C?",
+   "data": "DESPEGUE (avión de ejemplo) 1100 kg, flaps 10°, asfalto seco, sin viento\nCarrera en tierra / distancia hasta 50 ft, en metros\nPA (ft)     0 °C      10 °C      20 °C      30 °C      40 °C     \n     0    240/410     275/455     305/505     340/550     375/600     \n  2000    300/510     345/565     385/625     425/680     470/735     \n  4000    370/615     420/680     470/750     520/815     565/880     \n  6000    445/730     505/805     560/880     615/955     670/1030    ",
+   "options": [
+    "428 m",
+    "385 m",
+    "470 m",
+    "385 m + 470 m"
+   ],
+   "correct": 0,
+   "why": "Se interpola entre las filas de 2000 y 4000 ft a 20 °C: (385 + 470) / 2 = 427,5 m.",
+   "whyNot": [
+    null,
+    "Es la lectura de la fila de 2000 ft.",
+    "Es la lectura de la fila de 4000 ft.",
+    "Es la suma de las dos lecturas, no su media."
+   ],
+   "ref": "Tabla de ejemplo"
+  },
+  {
+   "id": "030.07.007",
+   "type": "calculo",
+   "level": 2,
+   "q": "La carrera de despegue de la tabla es 385 m. Con viento de cara de 10 kt (−10 % por cada 10 kt en el avión de ejemplo) resulta:",
+   "options": [
+    "385 m",
+    "424 m",
+    "308 m",
+    "347 m"
+   ],
+   "correct": 3,
+   "why": "385 × 0,90 = 346,5 m ≈ 347 m.",
+   "whyNot": [
+    "Es la lectura sin viento.",
+    "Resulta de aplicar el viento como un aumento (×1,10).",
+    "Resulta de aplicar −20 %, la corrección de 20 kt.",
+    null
+   ],
+   "ref": "Corrección de viento de ejemplo"
+  },
+  {
+   "id": "030.07.008",
+   "type": "calculo",
+   "level": 2,
+   "q": "La distancia hasta 50 ft es 625 m. Con 6 kt de viento en cola (+10 % por cada 2 kt) resulta:",
+   "options": [
+    "688 m",
+    "813 m",
+    "563 m",
+    "650 m"
+   ],
+   "correct": 1,
+   "why": "6 kt de cola son tres tramos de 2 kt: +30 %. 625 × 1,30 = 812,5 m ≈ 813 m.",
+   "whyNot": [
+    "Es un +10 %.",
+    null,
+    "Es la corrección de viento de cara, no de cola.",
+    "Es un +4 %."
+   ],
+   "ref": "Corrección de viento de ejemplo"
+  },
+  {
+   "id": "030.07.009",
+   "type": "calculo",
+   "level": 2,
+   "q": "La distancia hasta 50 ft con 1100 kg es 625 m. Con 1000 kg (corrección ×0,83) resulta:",
+   "options": [
+    "517 m",
+    "568 m",
+    "625 m",
+    "750 m"
+   ],
+   "correct": 0,
+   "why": "625 × (1000/1100)² = 625 × 0,826 ≈ 516 m.",
+   "whyNot": [
+    null,
+    "Resulta de multiplicar solo por 1000/1100 (×0,91).",
+    "La masa menor sí reduce la distancia.",
+    "Es un aumento, no una reducción."
+   ],
+   "ref": "Corrección de masa de ejemplo"
+  },
+  {
+   "id": "030.07.010",
+   "type": "calculo",
+   "level": 2,
+   "q": "La distancia de la tabla es 625 m. Si la pista es de hierba corta y seca (+15 %), la distancia es:",
+   "options": [
+    "656 m",
+    "750 m",
+    "719 m",
+    "531 m"
+   ],
+   "correct": 2,
+   "why": "625 × 1,15 = 718,75 m ≈ 719 m.",
+   "whyNot": [
+    "Resulta de aplicar solo un +5 %.",
+    "Es el +20 %, valor de otra corrección.",
+    null,
+    "Es una reducción en lugar de un aumento."
+   ],
+   "ref": "Corrección de superficie de ejemplo"
+  },
+  {
+   "id": "030.07.011",
+   "type": "calculo",
+   "level": 3,
+   "q": "PA 2000 ft, 30 °C, 1100 kg, viento de cara de 10 kt, asfalto seco. La distancia hasta 50 ft con factor de seguridad es aproximadamente:",
+   "options": [
+    "612 m",
+    "814 m",
+    "904 m",
+    "995 m"
+   ],
+   "correct": 1,
+   "why": "Tabla: 680 m. Viento de cara −10 % = 612,0 m. ×1,33 = 814 m.",
+   "whyNot": [
+    "Es el resultado sin el factor de seguridad.",
+    null,
+    "Es el resultado sin la corrección de viento.",
+    "Resulta de sumar el viento en lugar de restarlo."
+   ],
+   "ref": "Método de tablas"
+  },
+  {
+   "id": "030.07.012",
+   "type": "calculo",
+   "level": 3,
+   "q": "Con el resultado anterior (814 m hasta 50 ft y 509 m de carrera), una pista con TORA 800 m y TODA 850 m:",
+   "options": [
+    "No es suficiente porque falla la TORA",
+    "No es suficiente porque falla la TODA",
+    "Es suficiente solo si hay viento en cola",
+    "Es suficiente: la carrera cabe en la TORA y la distancia en la TODA"
+   ],
+   "correct": 3,
+   "why": "Carrera 509 m menor que 800 m y distancia 814 m menor que 850 m.",
+   "whyNot": [
+    "La carrera cabe con margen en los 800 m.",
+    "La distancia cabe en los 850 m de TODA.",
+    "El viento en cola empeoraría el resultado.",
+    null
+   ],
+   "ref": "TORA/TODA"
+  },
+  {
+   "id": "030.07.013",
+   "type": "calculo",
+   "level": 3,
+   "q": "PA 0, 20 °C, 1100 kg, viento en cola de 4 kt (+20 %) y hierba corta seca (+15 %). Con factor de seguridad, la distancia hasta 50 ft es aproximadamente:",
+   "options": [
+    "505 m",
+    "697 m",
+    "672 m",
+    "927 m"
+   ],
+   "correct": 3,
+   "why": "Tabla 505 m; ×1,20; ×1,15; ×1,33: 927 m.",
+   "whyNot": [
+    "Es la lectura de la tabla sin correcciones.",
+    "Resulta de no aplicar el factor de seguridad.",
+    "Resulta de olvidar viento en cola y hierba.",
+    null
+   ],
+   "ref": "Método de tablas"
+  },
+  {
+   "id": "030.07.014",
+   "type": "lectura",
+   "level": 2,
+   "q": "En la gráfica de despegue de ejemplo, con 30 °C y PA 2000 ft, la distancia hasta 50 ft es aproximadamente:",
+   "figure": "svg:030-despegue",
+   "options": [
+    "580 m",
+    "680 m",
+    "790 m",
+    "880 m"
+   ],
+   "correct": 1,
+   "why": "La línea de 2000 ft a 30 °C da unos 680 m.",
+   "whyNot": [
+    "Es el valor de 10 °C aproximadamente.",
+    null,
+    "Es el valor de la línea de 4000 ft.",
+    "Es el valor de 40 °C a 4000 ft."
+   ],
+   "ref": "Gráfica de ejemplo"
+  },
+  {
+   "id": "030.07.015",
+   "type": "lectura",
+   "level": 2,
+   "q": "En la gráfica de despegue de ejemplo, a 25 °C y 4000 ft de altitud de presión, la lectura es:",
+   "figure": "svg:030-despegue",
+   "options": [
+    "≈ 650 m",
+    "≈ 910 m",
+    "≈ 780 m",
+    "≈ 530 m"
+   ],
+   "correct": 2,
+   "why": "Se entra por 25 °C, se sube hasta la línea de 4000 ft y se lee en el eje vertical.",
+   "whyNot": [
+    "Es la línea de 2000 ft.",
+    "Es la línea de 6000 ft.",
+    null,
+    "Es la línea de nivel del mar."
+   ],
+   "ref": "Gráfica de ejemplo"
+  },
+  {
+   "id": "030.07.016",
+   "type": "concepto",
+   "level": 2,
+   "q": "Si el POH indica que su tabla de distancias «ya incluye el 50 % del viento de cara», debes:",
+   "options": [
+    "Introducir solo el viento real y no volver a corregir con el factor del 50 %",
+    "Aplicar además el 50 % otra vez por seguridad",
+    "Ignorar el viento en cola",
+    "Duplicar el viento de cara"
+   ],
+   "correct": 0,
+   "why": "La tabla ya lo contempla: aplicarlo de nuevo duplicaría la corrección.",
+   "whyNot": [
+    null,
+    "Sería duplicar la corrección y quedarse corto de seguridad en sentido opuesto.",
+    "El viento en cola debe tenerse en cuenta con su corrección.",
+    "Duplicarlo daría una distancia menor que la real."
+   ],
+   "ref": "AFM"
+  },
+  {
+   "id": "030.07.017",
+   "type": "concepto",
+   "level": 2,
+   "q": "En el despegue, si la distancia requerida con factor de seguridad supera la disponible, lo prudente es:",
+   "options": [
+    "Despegar con flaps a tope",
+    "Reducir la masa, esperar a un momento más fresco, cambiar de pista o no despegar",
+    "Despegar sin factor de seguridad",
+    "Aumentar la potencia sobre la del POH"
+   ],
+   "correct": 1,
+   "why": "Se trata de recuperar el margen de seguridad: menos masa, mejor temperatura o una pista más larga.",
+   "whyNot": [
+    "Los flaps solo se usan según el manual.",
+    null,
+    "El factor de seguridad se mantiene.",
+    "No se puede exceder el máximo del motor."
+   ],
+   "ref": "AFM"
+  },
+  {
+   "id": "030.07.018",
+   "type": "concepto",
+   "level": 2,
+   "q": "Respecto a la distancia hasta 50 ft del despegue, comparada con la carrera en tierra:",
+   "options": [
+    "Es igual",
+    "Es menor",
+    "Solo es mayor con viento en cola",
+    "Es mayor, porque añade la subida inicial hasta 50 ft"
+   ],
+   "correct": 3,
+   "why": "Incluye la carrera más la distancia recorrida en el aire hasta los 50 ft.",
+   "whyNot": [
+    "Siempre es mayor.",
+    "No puede ser menor que la carrera.",
+    "Es siempre mayor.",
+    null
+   ],
+   "ref": "AFM"
+  },
+  {
+   "id": "030.07.019",
+   "type": "lectura",
+   "level": 1,
+   "q": "Con la tabla de aterrizaje de ejemplo, PA 2000 ft y 20 °C, la distancia desde 50 ft es:",
+   "data": "ATERRIZAJE (avión de ejemplo) 1000 kg, flaps 40°, asfalto seco, sin viento\nCarrera en tierra / distancia desde 50 ft, en metros\nPA (ft)     0 °C      10 °C      20 °C      30 °C      40 °C     \n     0    185/380     195/400     205/420     215/440     225/460     \n  2000    210/425     220/450     230/470     240/495     250/515     \n  4000    230/475     245/500     255/525     270/550     280/575     \n  6000    255/525     270/550     280/580     295/605     310/630     ",
+   "options": [
+    "470 m",
+    "230 m",
+    "420 m",
+    "525 m"
+   ],
+   "correct": 0,
+   "why": "Fila de 2000 ft, columna de 20 °C: 230 m de carrera y 470 m desde 50 ft.",
+   "whyNot": [
+    null,
+    "Es la carrera en tierra.",
+    "Es la lectura a nivel del mar.",
+    "Es la lectura de la fila de 4000 ft."
+   ],
+   "ref": "Tabla de ejemplo"
+  },
+  {
+   "id": "030.07.020",
+   "type": "calculo",
+   "level": 3,
+   "q": "Tabla de aterrizaje: 470 m desde 50 ft. Viento de cara con corrección del 8 %, factor ×1,43. La distancia final es:",
+   "options": [
+    "672 m",
+    "432 m",
+    "618 m",
+    "726 m"
+   ],
+   "correct": 2,
+   "why": "470 × 0,92 = 432,4 m; × 1,43 = 618 m.",
+   "whyNot": [
+    "Falta la corrección de viento de cara.",
+    "Falta el factor de seguridad.",
+    null,
+    "Sumó el viento de cara en lugar de restarlo."
+   ],
+   "ref": "Método de tablas"
+  },
+  {
+   "id": "030.07.021",
+   "type": "concepto",
+   "level": 2,
+   "q": "Respecto al aterrizaje, una pista mojada exige:",
+   "options": [
+    "Menos distancia, porque hay menos fricción",
+    "La misma distancia",
+    "Más distancia de frenado y más margen que en seco",
+    "Un viento de cara siempre"
+   ],
+   "correct": 2,
+   "why": "El rozamiento disminuye: aumenta la carrera y puede haber hidroplaneo.",
+   "whyNot": [
+    "Menos fricción alarga la frenada.",
+    "Sí cambia, por la frenada.",
+    null,
+    "El viento no es obligatorio."
+   ],
+   "ref": "AFM; CAA SS7"
+  },
+  {
+   "id": "030.07.022",
+   "type": "calculo",
+   "level": 1,
+   "q": "Una distancia de 1650 ft equivale aproximadamente a:",
+   "options": [
+    "503 m",
+    "5412 m",
+    "1650 m",
+    "376 m"
+   ],
+   "correct": 0,
+   "why": "1650 × 0,3048 = 503 m.",
+   "whyNot": [
+    null,
+    "Resulta de multiplicar por 3,28 en lugar de dividir.",
+    "No se han convertido las unidades.",
+    "Resulta de multiplicar por 0,228."
+   ],
+   "ref": "1 ft = 0,3048 m"
+  },
+  {
+   "id": "030.07.023",
+   "type": "concepto",
+   "level": 2,
+   "q": "A gran altitud de densidad, para despegar:",
+   "options": [
+    "No se debe tocar la mezcla",
+    "Se pone mezcla rica a toda potencia",
+    "Se retrasa la potencia",
+    "Se empobrece la mezcla según el POH para recuperar potencia"
+   ],
+   "correct": 3,
+   "why": "A mayor altitud el aire es menos denso: con mezcla rica en plena potencia el motor se «ahoga» y rinde menos.",
+   "whyNot": [
+    "La falta de empobrecimiento reduce la potencia.",
+    "La mezcla rica excesiva pierde potencia.",
+    "Más potencia es lo que se busca para despegar.",
+    null
+   ],
+   "ref": "POH"
+  },
+  {
+   "id": "030.07.024",
+   "type": "calculo",
+   "level": 2,
+   "q": "La distancia hasta 50 ft es 625 m en una pista con una pendiente ascendente del 2 % (+5 % por cada 1 %). La distancia es:",
+   "options": [
+    "750 m",
+    "688 m",
+    "656 m",
+    "563 m"
+   ],
+   "correct": 1,
+   "why": "2 % × 5 = +10 %; 625 × 1,10 = 687,5 m ≈ 688 m.",
+   "whyNot": [
+    "Resulta de aplicar +10 % por cada 1 % (×1,20).",
+    null,
+    "Resulta de aplicar +5 % en total.",
+    "Una pendiente descendente la reduciría; esta es ascendente."
+   ],
+   "ref": "Corrección de pendiente de ejemplo"
+  },
+  {
+   "id": "030.07.025",
+   "type": "concepto",
+   "level": 2,
+   "q": "La distancia de despegue con obstáculo al final de pista se debe comparar con:",
+   "options": [
+    "La distancia de despegue hasta 50 ft frente a la distancia disponible hasta el obstáculo",
+    "Solo con la carrera en tierra",
+    "Solo con la LDA",
+    "Con la ASDA"
+   ],
+   "correct": 0,
+   "why": "El obstáculo exige superar su altura; por eso se usa la distancia hasta 50 ft, no solo la carrera.",
+   "whyNot": [
+    null,
+    "La carrera no cubre la altura del obstáculo.",
+    "La LDA es de aterrizaje.",
+    "La ASDA es para abortar el despegue."
+   ],
+   "ref": "AFM"
+  },
+  {
+   "id": "030.07.026",
+   "type": "calculo",
+   "level": 3,
+   "q": "Con el avión a 1050 kg (×0,91), la distancia hasta 50 ft de la tabla a PA 4000 ft y 20 °C (750 m) es aproximadamente:",
+   "options": [
+    "750 m",
+    "823 m",
+    "683 m",
+    "716 m"
+   ],
+   "correct": 2,
+   "why": "750 × (1050/1100)² = 750 × 0,911 = 683 m.",
+   "whyNot": [
+    "Es el valor sin corrección de masa.",
+    "Resulta de invertir el cociente de masas, como si el avión fuera más pesado.",
+    null,
+    "Resulta de aplicar solo el cociente simple de masas (×0,955) en lugar del cuadrático."
+   ],
+   "ref": "Corrección de masa de ejemplo"
+  },
+  {
+   "id": "030.07.027",
+   "type": "lectura",
+   "level": 2,
+   "q": "Con la tabla de aterrizaje de ejemplo, PA 4000 ft y 30 °C, la carrera de aterrizaje es:",
+   "data": "ATERRIZAJE (avión de ejemplo) 1000 kg, flaps 40°, asfalto seco, sin viento\nCarrera en tierra / distancia desde 50 ft, en metros\nPA (ft)     0 °C      10 °C      20 °C      30 °C      40 °C     \n     0    185/380     195/400     205/420     215/440     225/460     \n  2000    210/425     220/450     230/470     240/495     250/515     \n  4000    230/475     245/500     255/525     270/550     280/575     \n  6000    255/525     270/550     280/580     295/605     310/630     ",
+   "options": [
+    "550 m",
+    "270 m",
+    "255 m",
+    "240 m"
+   ],
+   "correct": 1,
+   "why": "Fila de 4000 ft, columna de 30 °C: 270 m de carrera.",
+   "whyNot": [
+    "Es la distancia desde 50 ft.",
+    null,
+    "Es la lectura de 20 °C.",
+    "Es la lectura de la fila de 2000 ft."
+   ],
+   "ref": "Tabla de ejemplo"
+  },
+  {
+   "id": "030.07.028",
+   "type": "concepto",
+   "level": 2,
+   "q": "Aterrizar con viento en cola, comparado con la calma, hace que la distancia de aterrizaje:",
+   "options": [
+    "Disminuya, porque la sustentación aumenta",
+    "No cambie si la IAS es la misma",
+    "Disminuya solo en pista mojada",
+    "Aumente notablemente, porque la velocidad respecto al suelo en el toque es mayor"
+   ],
+   "correct": 3,
+   "why": "La IAS de aproximación es la misma, pero la velocidad respecto al suelo es mayor: la energía a disipar crece con el cuadrado de esa velocidad.",
+   "whyNot": [
+    "La sustentación depende de la IAS, no de la GS.",
+    "Aunque la IAS sea la misma, la GS cambia y con ella la energía a disipar.",
+    "En seco también aumenta la distancia.",
+    null
+   ],
+   "ref": "AFM; PHAK cap. 11"
+  }
+ ],
+ "cards": [
+  {
+   "id": "c.030.07.01",
+   "front": "Orden de trabajo con la tabla",
+   "back": "PA y temperatura → tabla → interpolar → masa, viento, superficie, pendiente → factor de seguridad → comparar con TORA/TODA o LDA"
+  },
+  {
+   "id": "c.030.07.02",
+   "front": "Factores de seguridad recomendados (CAA)",
+   "back": "×1,33 en el despegue y ×1,43 en el aterrizaje, sobre la distancia hasta o desde 50 ft"
+  },
+  {
+   "id": "c.030.07.03",
+   "front": "Viento y tablas",
+   "back": "No aplicar dos veces el factor de viento si la tabla ya lo incluye; el viento en cola penaliza más que el de cara ayuda"
+  }
+ ]
+}

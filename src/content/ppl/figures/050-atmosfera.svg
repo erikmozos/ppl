@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340">
+  <title>Capas de la atmósfera y perfil de temperatura ISA: troposfera hasta la tropopausa, isotermia en la baja estratosfera y altura de la tropopausa según la latitud</title>
+  <rect x="60" y="30" width="340" height="260" class="sky"/>
+  <rect x="60" y="174.5" width="340" height="115.5" class="ac" opacity="0.5"/>
+  <line x1="60" y1="174.5" x2="400" y2="174.5" class="ln2 dash"/>
+  <line x1="60" y1="290.0" x2="400" y2="290.0" class="ln thick"/>
+  <path d="M330.0 290.0 L190.0 174.5 L190.0 80.0 L295.7 32.0" class="wa-ln thick" fill="none"/>
+  <text x="338" y="284" class="txw b">+15 °C</text>
+  <text x="182" y="190" class="txw b" text-anchor="end">−56,5 °C</text>
+  <text x="70" y="232" class="tx b">TROPOSFERA</text>
+  <text x="70" y="248" class="tx2">−1,98 °C por 1000 ft</text>
+  <text x="70" y="262" class="tx2">nubes y tiempo</text>
+  <text x="205" y="132" class="tx b">ESTRATOSFERA</text>
+  <text x="205" y="148" class="tx2">isoterma hasta 20 km; luego sube</text>
+  <text x="68" y="168" class="txa b">Tropopausa ISA: 11 km (36 090 ft)</text>
+  <text x="36" y="294" class="tx2" text-anchor="end">0</text>
+  <line x1="56" y1="237.5" x2="64" y2="237.5" class="ln2"/>
+  <text x="52" y="241.5" class="tx2" text-anchor="end" font-size="11">5 km</text>
+  <line x1="56" y1="185.0" x2="64" y2="185.0" class="ln2"/>
+  <text x="52" y="189.0" class="tx2" text-anchor="end" font-size="11">10 km</text>
+  <line x1="56" y1="80.0" x2="64" y2="80.0" class="ln2"/>
+  <text x="52" y="84.0" class="tx2" text-anchor="end" font-size="11">20 km</text>
+  <text x="530" y="40" class="tx b" text-anchor="middle">Tropopausa según la latitud</text>
+  <line x1="450" y1="290.0" x2="450" y2="206.0" class="ac-ln thick"/>
+  <circle cx="450" cy="206.0" r="4" class="ac-fill"/>
+  <text x="450" y="196.0" class="tx b" text-anchor="middle" font-size="12">8 km</text>
+  <text x="450" y="306.0" class="tx2" text-anchor="middle" font-size="11">Polos</text>
+  <line x1="530" y1="290.0" x2="530" y2="174.5" class="ac-ln thick"/>
+  <circle cx="530" cy="174.5" r="4" class="ac-fill"/>
+  <text x="530" y="164.5" class="tx b" text-anchor="middle" font-size="12">11 km</text>
+  <text x="530" y="306.0" class="tx2" text-anchor="middle" font-size="11">Latitudes medias</text>
+  <line x1="610" y1="290.0" x2="610" y2="111.5" class="ac-ln thick"/>
+  <circle cx="610" cy="111.5" r="4" class="ac-fill"/>
+  <text x="610" y="101.5" class="tx b" text-anchor="middle" font-size="12">17 km</text>
+  <text x="610" y="306.0" class="tx2" text-anchor="middle" font-size="11">Ecuador</text>
+  <text x="530" y="326" class="tx2" text-anchor="middle" font-size="11">Más alta en verano y en el ecuador</text>
+</svg>
