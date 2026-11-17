@@ -2,20 +2,22 @@
   "lesson": {
     "id": "020.04",
     "title": "Mandos de vuelo",
-    "summary": "Mandos primarios (alerones, profundidad, dirección) y secundarios (flaps, compensadores), cómo se transmite el movimiento (cables, poleas, varillas), flaps manuales del PA-28 y eléctricos del C172S, compensadores, bloqueos y fallos.",
+    "course": "Tema 2 · Mandos de vuelo",
+    "summary": "Mandos primarios y secundarios, mando manual, parcialmente asistido y totalmente asistido, comprobaciones del sistema, momento de bisagra, compensación aerodinámica, tabs, equilibrado de masas, guiñada adversa, inversión del alerón, flaps, slats y trim.",
     "objectives": [
       "Relacionar cada mando primario con el eje y el movimiento que controla",
-      "Describir cómo se transmite el movimiento desde la cabina a las superficies",
-      "Explicar el funcionamiento y los límites de los flaps manuales del PA-28-161 y eléctricos del C172S",
-      "Entender el compensador (trim) y para qué sirve",
-      "Actuar ante un bloqueo o un fallo de mandos y comprobar los mandos en el prevuelo"
+      "Distinguir un mando manual, uno parcialmente asistido (reversible) y uno totalmente asistido (irreversible)",
+      "Explicar qué son el momento de bisagra y la compensación aerodinámica, y cómo se comporta cada tab",
+      "Describir el flutter, la guiñada adversa y la inversión del alerón, con sus soluciones",
+      "Explicar los mandos secundarios: flaps, slats y trim, con los flaps del PA-28-161 y del C172S",
+      "Comprobar los mandos en el prevuelo y actuar ante un bloqueo o un fallo"
     ],
     "sections": [
       {
-        "title": "Mandos primarios",
+        "title": "Mandos primarios y ejes",
         "text": [
-          "Los mandos primarios controlan el movimiento del avión alrededor de sus tres ejes. Cada uno tiene una superficie y un mando en cabina.",
-          "Con alerones **diferenciales**, el alerón que sube se desplaza más que el que baja: así se compensa la **guiñada adversa**, el efecto por el que el ala que sube, con el alerón bajado, genera más resistencia y el morro tiende a irse hacia el lado contrario del viraje."
+          "Un avión gira alrededor de su centro de gravedad en tres ejes perpendiculares entre sí, y cada uno tiene su mando primario. Los **alerones** (*ailerons*, más los **spoilers de alabeo** en los aviones grandes) hacen alabear (*roll*) alrededor del eje **longitudinal**; el **timón de profundidad** (*elevator*) hace cabecear (*pitch*) alrededor del eje **lateral**; el **timón de dirección** (*rudder*) hace guiñar (*yaw*) alrededor del eje **vertical**. Se llaman primarios porque con ellos cambias la actitud y, con la actitud, la trayectoria.",
+          "¿Cómo consigue una superficie girar al avión entero? Modificando la fuerza aerodinámica del perfil al que pertenece (un ala o la cola) por uno de tres caminos: cambiar su **curvatura** (*camber*), cambiar su **ángulo de ataque** o **estropear el flujo** a propósito (*spoiling*) para que pierda sustentación. Esa fuerza, multiplicada por su distancia al centro de gravedad, es el momento que hace girar el avión. El alerón que baja aumenta la curvatura de su ala; el stabilator del PA-28 cambia el ángulo de ataque de toda la cola; un spoiler arruina el flujo sobre el extradós."
         ],
         "table": {
           "caption": "Mandos primarios",
@@ -27,49 +29,331 @@
           ],
           "rows": [
             [
-              "Alerones",
+              "Alerones (más spoilers de alabeo)",
               "Longitudinal",
-              "Alabeo",
+              "Alabeo (roll)",
               "Volante o palanca a un lado"
             ],
             [
               "Timón de profundidad",
               "Lateral",
-              "Cabeceo",
+              "Cabeceo (pitch)",
               "Volante o palanca adelante y atrás"
             ],
             [
               "Timón de dirección",
               "Vertical",
-              "Guiñada",
+              "Guiñada (yaw)",
               "Pedales"
             ]
           ],
-          "src": "PHAK cap. 6"
+          "src": "Curso, tema 2; PHAK cap. 6"
         },
         "bullets": [
-          "Palanca hacia atrás: el borde de salida del timón de profundidad sube y el morro sube. Palanca adelante: el morro baja.",
-          "Volante a la derecha: el alerón derecho sube y el izquierdo baja; el avión alabea a la derecha.",
+          "Palanca hacia atrás: el borde de salida del timón de profundidad sube, la cola baja y el morro sube. Palanca adelante: el morro baja.",
+          "Volante a la derecha: el alerón derecho sube, el izquierdo baja y el avión alabea a la derecha.",
           "Pedal derecho: el timón gira a la derecha y el morro guiña a la derecha.",
-          "El **PA-28-161** monta un **estabilizador móvil de una sola pieza (stabilator)** en lugar de estabilizador fijo y timón de profundidad: el volante lo mueve entero. El C172S lleva el timón de profundidad separado del estabilizador fijo."
+          "El **PA-28-161** monta un **estabilizador móvil de una sola pieza (stabilator)**: el volante mueve toda la cola horizontal, que cambia de ángulo de ataque. El C172S lleva el timón de profundidad articulado detrás de un estabilizador fijo."
+        ],
+        "ideas": [
+          "Piensa en un pollo en el asador. El pincho que lo atraviesa de pico a cola es el eje longitudinal (rodar sobre sí mismo); el que cruza de ala a ala es el lateral (cabecear arriba y abajo); el que baja por el lomo es el vertical (girar como una peonza).",
+          "Sacar la mano por la ventanilla del coche sirve de maqueta: inclínala, cúrvala o ábrela en abanico y notarás cómo cambia la fuerza del aire. Las superficies de mando hacen justo eso con el ala o con la cola."
         ]
       },
       {
-        "title": "Cómo se transmite el movimiento",
+        "title": "Cómo llega la orden del piloto a la superficie",
         "text": [
-          "Entre la cabina y las superficies hay un sistema mecánico. En los aviones ligeros se usan tres soluciones, a menudo combinadas:",
-          "**Cables y poleas**: ligeros y flexibles, con **tensores** (turnbuckles) para ajustar su tensión y **poleas** para guiarlos. Solo trabajan a tracción, de modo que hacen falta dos cables, uno de ida y otro de vuelta. **Varillas rígidas** (pushrods): trabajan a tracción y compresión, y se usan en recorridos cortos y rectos. **Tubos de torsión**: giran para transmitir el movimiento en un tramo. Los PA-28 y los C172 usan cables y poleas para los alerones, el timón de dirección y la profundidad, con algunos tramos de varillas."
+          "El movimiento de los mandos puede lograrse de tres maneras. En un **mando manual** (*manual*), la columna se une a las superficies solo con cables y poleas: lo que empujas con el brazo es lo que mueve la superficie. En un **mando totalmente asistido** (*fully powered*), la columna no mueve la superficie sino una válvula, y son **actuadores hidráulicos** los que la desplazan. En un **mando parcialmente asistido** (*partially powered*), los cables siguen moviendo la superficie, pero un servomecanismo hidráulico o eléctrico se encarga de buena parte del esfuerzo.",
+          "La diferencia práctica está en el sentido de la información. Un mando es **reversible** cuando la fuerza sobre la superficie viaja de vuelta hasta la columna: lo es el manual y lo es el parcialmente asistido, y por eso el piloto nota en la mano la presión del aire. El mando totalmente asistido es **irreversible**: el actuador aguanta la carga y la columna no se entera, de modo que la sensación hay que fabricarla (véase más abajo)."
+        ],
+        "table": {
+          "caption": "Tipos de transmisión del movimiento",
+          "head": [
+            "Tipo",
+            "Quién mueve la superficie",
+            "Reversible",
+            "Sensación en el mando",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Manual",
+              "El piloto, por cables y poleas",
+              "Sí",
+              "Natural: ves y notas la carga",
+              "PA-28-161 y C172S"
+            ],
+            [
+              "Parcialmente asistido",
+              "Cables más servo hidráulico o eléctrico",
+              "Sí",
+              "Natural pero con menos esfuerzo",
+              "Aviones medianos"
+            ],
+            [
+              "Totalmente asistido",
+              "Actuadores hidráulicos mandados por válvulas",
+              "No",
+              "Artificial (unidad Q feel)",
+              "Aviones grandes"
+            ]
+          ],
+          "src": "Curso, tema 2"
+        },
+        "bullets": [
+          "**Cables y poleas**: ligeros y flexibles; los **tensores** (*turnbuckles*) ajustan la tensión y las poleas los guían. Solo trabajan a tracción, así que hacen falta dos cables, uno para cada sentido.",
+          "**Varillas** (*pushrods*): rígidas, trabajan a tracción y a compresión; sirven para tramos cortos y rectos. **Tubos de torsión**: transmiten el giro en un tramo.",
+          "Un **tope de recorrido** limita el movimiento y protege la estructura. Los PA-28 y los C172 son de mando manual, con cables y poleas para alerones, dirección y profundidad, y algunos tramos de varilla."
+        ],
+        "ideas": [
+          "Mando manual: los frenos de una bicicleta, donde tu mano tira del cable y el cable aprieta la pastilla. Parcialmente asistido: la dirección asistida de un coche, que sigue unida mecánicamente a las ruedas pero te quita esfuerzo. Totalmente asistido: el volante de un videojuego con vibración, donde lo que notas en la mano lo fabrica una máquina.",
+          "Un cable es como una cuerda de tender: tira, pero no empuja. Por eso un mando con cables necesita un cable de ida y otro de vuelta, como los dos hilos de una marioneta."
+        ]
+      },
+      {
+        "title": "Comprobaciones del sistema de mandos",
+        "text": [
+          "Después del mantenimiento, y tras cualquier ajuste del sistema de mandos, se hacen varias comprobaciones, y en algunos casos parte de ellas corresponde al piloto. Se mira la **tensión de los cables**; el **aseguramiento y bloqueo** de uniones y mandos; el **recorrido** (que cada mando tenga libertad de movimiento, llegue a su tope y mueva la superficie en el sentido correcto); la **fricción**, que se mide acoplando una balanza de resorte al mando y tirando; y la **holgura** (*backlash*), el movimiento libre de la columna cuando se invierte el sentido sin que la superficie se mueva.",
+          "En el prevuelo, el piloto comprueba lo que está a su alcance: que el bloqueo de mandos (*gust lock*) esté **quitado**, que los mandos se muevan con suavidad y sin saltos, que el sentido sea el correcto (volante a la izquierda: el alerón izquierdo sube) y que no haya holgura excesiva en las superficies al agitarlas con la mano."
+        ],
+        "table": {
+          "caption": "Comprobaciones y qué descubren",
+          "head": [
+            "Comprobación",
+            "Qué descubre",
+            "Cómo se hace"
+          ],
+          "rows": [
+            [
+              "Tensión de cables",
+              "Cables flojos (holgura) o demasiado tensos (rigidez, desgaste)",
+              "Tensiómetro y tensores; varía con la temperatura"
+            ],
+            [
+              "Aseguramiento y bloqueo",
+              "Uniones sin pasador, tuercas sin frenar",
+              "Inspección visual de herrajes"
+            ],
+            [
+              "Recorrido",
+              "Topes mal ajustados, roces, mandos invertidos",
+              "Mover cada mando de tope a tope y observar la superficie"
+            ],
+            [
+              "Fricción",
+              "Poleas agarrotadas, cables rozando",
+              "Balanza de resorte acoplada al mando"
+            ],
+            [
+              "Holgura (backlash)",
+              "Juego muerto al invertir el movimiento",
+              "Mover el mando y notar el punto en que responde la superficie"
+            ]
+          ],
+          "src": "Curso, tema 2"
+        },
+        "ideas": [
+          "La holgura es la misma que notas en una cadena de bicicleta floja: al empezar a pedalear hacia atrás hay un momento en que el pedal se mueve pero la rueda todavía no responde.",
+          "Medir la fricción con una balanza es como comprobar con un dinamómetro cuánto cuesta abrir una puerta de bisagras oxidadas: si hace falta mucha fuerza, algo roza."
+        ]
+      },
+      {
+        "title": "Mandos totalmente asistidos: actuador, servoválvula y sensación artificial",
+        "text": [
+          "En aviones grandes las superficies son enormes y las velocidades altas, de modo que el esfuerzo en la columna sería inaguantable. La solución es una potencia hidráulica o eléctrica que mueva las superficies por ti. Esos mandos son irreversibles: una carga sobre la superficie no mueve la columna, y el sistema no tiene sensibilidad natural. Los componentes esenciales son un **actuador hidráulico** (*actuator*), una **servoválvula** o válvula de control (*servo valve*) y una **unidad de sensación artificial** (*artificial feel unit*).",
+          "Funciona así. Al mover la columna solo desplazas una válvula selectora lineal. Esa válvula deja un lado de un pistón de doble efecto conectado a la presión hidráulica y el otro a la línea de retorno, y el pistón empuja la superficie hacia su nueva posición. A medida que la superficie se acerca a la posición mandada, un mecanismo de **seguimiento o realimentación** (*follow-up*) recoloca la válvula poco a poco hasta cerrar la línea de presión y también el retorno: el aceite queda atrapado a ambos lados y se produce un **bloqueo hidráulico** que mantiene la superficie quieta. Así el movimiento de la superficie es proporcional a lo que mandaste, y no más.",
+          "Como el piloto no recibe ninguna carga, existiría el riesgo de **sobrecontrolar** el avión, es decir, de tirar de la columna con una fuerza que el avión no resistiría. Por eso la **unidad Q feel** (de la presión dinámica q = ½·ρ·V², *artificial Q feel unit*) simula en la columna un esfuerzo proporcional a la **deflexión** de la superficie y también a la **velocidad**: cuanto más desvías la superficie y más rápido vas, más pesa el mando, como en un avión de mando manual."
         ],
         "bullets": [
-          "Un cable demasiado flojo da holgura; demasiado tenso, rigidez y desgaste. Cambia con la temperatura, por la dilatación.",
-          "**Masas de equilibrado** y compensación aerodinámica evitan el **aleteo (flutter)**, una vibración peligrosa de las superficies a alta velocidad.",
-          "Un **tope de recorrido** limita el movimiento de las superficies y protege la estructura."
+          "Actuador: el cilindro que empuja la superficie. Servoválvula: la que reparte la presión a un lado u otro del pistón. Sensación artificial: el muelle o la presión que carga la columna.",
+          "Sin realimentación, la superficie seguiría moviéndose mientras haya presión. Con ella se detiene en la posición proporcional a la columna.",
+          "La sensación artificial crece con la deflexión **y** con la velocidad, no solo con una de las dos."
+        ],
+        "ideas": [
+          "La servoválvula es como el grifo de la bañera con tapón: al abrirlo entra agua por un lado, y al cerrarlo del todo el nivel se queda donde está. El seguimiento es la mano que va cerrando el grifo a medida que el agua llega al nivel que querías.",
+          "La unidad Q feel es el muelle que ponen en los mandos de un simulador: no hace volar nada, solo te hace creer que el aire empuja, y evita que des un tirón de palanca que rompería el avión."
         ]
       },
       {
-        "title": "Flaps",
+        "title": "El momento de bisagra",
         "text": [
-          "Los **flaps** son superficies secundarias en el borde de salida de las alas. Al extenderlos, aumentan la curvatura del perfil: suben el **coeficiente de sustentación** y la **resistencia**. Permiten volar más lento, bajar la velocidad de pérdida y aproximar con una pendiente más pronunciada sin ganar velocidad. El detalle aerodinámico está en Principios de vuelo."
+          "Cuando el piloto mueve el mando, la superficie gira alrededor de su **línea de bisagra** (*hinge line*) y entra en la corriente de aire. Allí aparece una fuerza aerodinámica por la diferencia de presiones, y esa fuerza se opone a la deflexión: el flujo intenta devolver la superficie a su sitio. Lo que el piloto tiene que vencer para mantener la superficie desviada es el **momento de bisagra** (*hinge moment*) y es lo que nota como esfuerzo en el mando.",
+          "El momento de bisagra es la fuerza aerodinámica multiplicada por la distancia entre la línea de bisagra y el centro de presiones de la superficie. Crece con el tamaño de la superficie y con el **cuadrado de la velocidad**: si duplicas la velocidad, el esfuerzo se multiplica por cuatro. Cuando las cargas son demasiado grandes para el brazo del piloto hay dos remedios, que casi siempre se combinan: los servomandos (asistencia de potencia, en aviones grandes) y la **compensación aerodinámica**, que aprovecha fuerzas aerodinámicas adicionales para reducir el momento de bisagra."
+        ],
+        "formulas": [
+          {
+            "f": "H = F · d",
+            "note": "H: momento de bisagra; F: fuerza aerodinámica sobre la superficie; d: distancia de la bisagra al centro de presiones."
+          },
+          {
+            "f": "H ∝ S · V²",
+            "note": "Proporcional al tamaño de la superficie y al cuadrado de la velocidad."
+          }
+        ],
+        "examples": [
+          {
+            "q": "En un avión con mando manual, el esfuerzo en la palanca a 80 kt IAS es de 20 N con una deflexión dada. ¿Cuánto vale con la misma deflexión a 120 kt?",
+            "a": "Como H ∝ V², el factor es (120 / 80)² = 1,5² = 2,25. El esfuerzo pasa a unos 20 × 2,25 = 45 N."
+          },
+          {
+            "q": "Un fabricante agranda el timón un 20 % (S × 1,2) y el avión vuela un 10 % más rápido (V × 1,1). ¿Cuánto crece el momento de bisagra?",
+            "a": "1,2 × 1,1² = 1,2 × 1,21 ≈ 1,45. El momento de bisagra aumenta un 45 %."
+          }
+        ],
+        "ideas": [
+          "Es como abrir una puerta empujándola cerca de las bisagras: cuesta muchísimo, porque el brazo es corto. Empujando lejos, cuesta poco. El momento de bisagra es esa dificultad, y depende de cuánta fuerza haga el aire y de lo lejos de la bisagra que se aplique.",
+          "Sacar una tabla grande por la ventanilla del coche a 120 km/h cuesta nueve veces más que a 40 km/h: no el triple, sino nueve. Esa es la V²."
+        ]
+      },
+      {
+        "title": "Compensación aerodinámica: bisagra retrasada, horn e interna",
+        "text": [
+          "Compensar aerodinámicamente es meter una parte de la superficie por delante de la bisagra, o acercar la bisagra al centro de presiones, de modo que el aire trabaje a favor del piloto. Hay tres soluciones de superficie: la bisagra retrasada, el horn y la compensación interna.",
+          "**Bisagra retrasada** (*inset hinge*): la línea de bisagra se coloca detrás del borde de ataque de la superficie, no en él. Al reducirse la distancia entre la bisagra y el centro de presiones, el momento de bisagra baja. La porción de superficie que queda por delante de la bisagra tira en sentido contrario y alivia el esfuerzo. Se aplica en el elevador, en los alerones y en el timón de dirección.",
+          "**Compensación tipo horn** (*horn balance*): una parte pequeña de la superficie, normalmente la punta, sobresale por delante de la bisagra. La fuerza aerodinámica sobre ese cuerno crea un momento de bisagra opuesto al principal y lo reduce. Según el curso, se ve en el timón de dirección y en el elevador, pero no en el alerón.",
+          "**Compensación interna** (*internal balance*): es el mismo principio que el horn, pero con la porción compensadora escondida dentro del ala y separada de la superficie por un sellado. La diferencia de presiones entre el extradós y el intradós actúa sobre ese panel interior. Se usa en los alerones de aviones grandes."
+        ],
+        "figure": "svg:020-compensacion-aerodinamica",
+        "caption": "Tres formas de compensación aerodinámica de una superficie de mando: bisagra retrasada, horn y compensación interna (esquemas propios).",
+        "ideas": [
+          "Una puerta de vaivén de un bar del oeste tiene las bisagras en el centro: la mitad que empujas por delante se compensa con la otra mitad que se va al otro lado, y casi no pesa. La bisagra retrasada hace un poco lo mismo.",
+          "El horn es como el pico de la tapa de una olla, un saliente por delante del eje que al empujar el aire ayuda a girar. La compensación interna es ese mismo saliente guardado dentro de la caja."
+        ]
+      },
+      {
+        "title": "Los tabs: balance, antibalance, servo y spring",
+        "text": [
+          "Un **tab** es un pequeño perfil montado en el borde de salida de una superficie de mando, detrás de la línea de bisagra. Sirve para modificar la fuerza aerodinámica y, con ella, el esfuerzo. Hay cuatro tipos de compensación y el truco para distinguirlos es preguntarse tres cosas: quién mueve el tab, hacia dónde se mueve respecto a la superficie y qué pasa con el esfuerzo y con la eficacia.",
+          "**Tab de balance** (*balance tab*): el piloto mueve la superficie directamente y el tab, unido a ella por una varilla, se mueve en **sentido contrario**. La fuerza sobre el tab ayuda a mover la superficie, de modo que baja el esfuerzo; pero la curvatura (*camber*) del perfil resultante es menor, así que se pierde **eficacia**.",
+          "**Tab antibalance** (*anti-balance tab*): también la superficie la mueve el piloto, pero el tab se mueve en el **mismo sentido** que ella. Aumenta la curvatura y por tanto la **eficacia**, pero también el **esfuerzo**. Interesa donde la superficie es demasiado sensible: el stabilator del PA-28 lleva en su borde de salida un tab de este tipo, que además hace de compensador.",
+          "**Tab servo** (*servo tab*): el piloto no mueve la superficie sino solo el tab. La superficie está articulada a su brazo con libre giro y la mueve la fuerza aerodinámica que aparece sobre el tab, en sentido contrario al tab. Reduce mucho el esfuerzo, pero a velocidades indicadas bajas el tab no genera fuerza suficiente. Además reduce la eficacia del mando.",
+          "**Tab de resorte** (*spring tab*): funciona como el servo, pero el accionamiento pasa por un resorte. A baja IAS el resorte no cede y el piloto mueve la superficie casi directamente, así que el problema del servo a baja velocidad desaparece; a IAS altas la carga aerodinámica comprime el resorte y el tab asiste, reduciendo el esfuerzo. También baja la eficacia del mando."
+        ],
+        "table": {
+          "caption": "Tabs de compensación aerodinámica",
+          "head": [
+            "Tab",
+            "Quién lo mueve",
+            "Sentido respecto a la superficie",
+            "Esfuerzo",
+            "Eficacia"
+          ],
+          "rows": [
+            [
+              "Balance",
+              "La superficie, por varilla",
+              "Contrario",
+              "Baja",
+              "Baja"
+            ],
+            [
+              "Antibalance",
+              "La superficie, por varilla",
+              "El mismo",
+              "Sube",
+              "Sube"
+            ],
+            [
+              "Servo",
+              "El piloto, solo el tab",
+              "La superficie sigue al tab en sentido contrario",
+              "Baja mucho (con IAS alta)",
+              "Baja"
+            ],
+            [
+              "Spring (resorte)",
+              "El piloto, a través de un resorte",
+              "Como el servo, con asistencia a IAS alta",
+              "Baja",
+              "Baja"
+            ]
+          ],
+          "src": "Curso, tema 2"
+        },
+        "figure": "sim:tabs",
+        "caption": "Prueba cada tab: mueve el mando y mira el sentido del tab, el esfuerzo y la eficacia.",
+        "ideas": [
+          "El tab de balance es el contrapeso de una balanza romana: cuando bajas la superficie, el tab sube y empuja con ella. El antibalance es lo contrario, como tener que cargar con una mochila que sube cuando tú subes.",
+          "El servo tab es como el timón pequeño de un velero grande: giras solo el pequeño y el agua se encarga de mover el grande. El spring tab añade un muelle para que, a velocidad baja, donde el agua casi no empuja, el timón grande siga respondiendo a tu mano."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Equilibrado de masas y aleteo (flutter)",
+        "text": [
+          "Una superficie de mando es un objeto largo unido al ala o a la cola por una bisagra, y tanto el ala como la cola son elásticas. Con carga, la estructura se flexiona y se tuerce, y esa deformación puede excitar la superficie. Si el **centro de gravedad de la superficie está por detrás de la línea de bisagra**, la inercia de su masa la hace oscilar alrededor de la bisagra, y esa oscilación se alimenta a sí misma con la deformación de la estructura: es el **aleteo** o *flutter*, una vibración aeroelástica que crece rápidamente y puede romper la superficie o la cola.",
+          "La cura es la **compensación de masas** (*mass balance*): se añade un contrapeso por delante de la bisagra, normalmente en un brazo o en el morro de la superficie, hasta que su centro de gravedad se adelanta a la línea de bisagra o, al menos, coincide con ella. Así disminuye el momento de inercia alrededor de la bisagra y el flutter no se desarrolla. El flutter es el motivo de que se hagan pruebas de vibración en tierra y en vuelo, y de que una superficie repintada o reparada deba reequilibrarse, porque añadir pintura o masa por detrás la desequilibra."
+        ],
+        "ideas": [
+          "Una regla de plástico que sobresale de la mesa y vibra al dar un golpecito es la superficie con su aleteo. Si le pegas una moneda en la punta que sobresale, vibra de otra manera; si la pones sobre el eje, apenas vibra. El contrapeso de masas es esa moneda.",
+          "Una veleta con la cola pesada, atrás del eje, bascula con cada ráfaga; con el peso por delante, queda estable. Con el centro de gravedad detrás de la bisagra, la superficie se comporta como la veleta mal equilibrada."
+        ]
+      },
+      {
+        "title": "Guiñada adversa y cómo se corrige",
+        "text": [
+          "Cuando alabeas, el alerón del ala que sube baja, y el del ala que baja sube. El alerón que baja aumenta la curvatura de su ala: más sustentación y también más **resistencia inducida**. En el otro lado, el alerón que sube reduce la sustentación y la resistencia inducida de esa ala. Resultado: el ala que sube tiene más resistencia que la que baja, y el avión guiña hacia el lado **contrario** al del alabeo. Alabeas a la izquierda y el morro tira a la derecha: eso es la **guiñada adversa** (*adverse yaw*).",
+          "El efecto es incómodo para el piloto (y para el pasajero) y se combate de cuatro maneras. Los **alerones diferenciales** (los habituales en aviones ligeros) hacen que el alerón que sube se desvíe más que el que baja, para igualar la resistencia. Los **alerones Frise** hacen sobresalir el borde de ataque del alerón que sube por debajo del intradós del ala, lo que crea resistencia extra justo en el lado que baja y compensa la del otro ala. El **acoplamiento alerón-timón** (*aileron-rudder coupling*) mueve el timón de dirección automáticamente al mover los alerones, en sentido que neutraliza la guiñada. Los **spoilers de alabeo** levantan un panel en el ala que baja, con lo que esa ala pierde sustentación y gana resistencia, y esa resistencia tira del morro hacia el lado del viraje."
+        ],
+        "table": {
+          "caption": "Métodos para reducir la guiñada adversa",
+          "head": [
+            "Método",
+            "Qué hace",
+            "Dónde se ve"
+          ],
+          "rows": [
+            [
+              "Alerones diferenciales",
+              "El alerón que sube se mueve más que el que baja",
+              "Aviones ligeros, incluidos PA-28 y C172"
+            ],
+            [
+              "Alerón Frise",
+              "El que sube saca el borde de ataque bajo el ala y aumenta la resistencia en esa ala",
+              "Aviones ligeros y de transporte"
+            ],
+            [
+              "Acoplamiento alerón-timón",
+              "El timón de dirección se mueve solo al mover los alerones",
+              "Aviones de transporte"
+            ],
+            [
+              "Spoilers de alabeo",
+              "Un spoiler sube en el ala que baja y suma resistencia de ese lado",
+              "Aviones grandes"
+            ]
+          ],
+          "src": "Curso, tema 2"
+        },
+        "figure": "svg:020-guinada-adversa",
+        "caption": "Alabeo a la izquierda: el ala derecha, con más sustentación y más resistencia inducida, retrasa ese lado y el morro guiña a la derecha (esquema propio).",
+        "bullets": [
+          "Regla de oro: **alabeo a un lado, guiñada al otro**. En el examen siempre es la guiñada opuesta.",
+          "Con pedales coordinas el viraje en un avión ligero: el pie del lado hacia el que alabeas compensa la guiñada adversa. Es el mismo principio que el acoplamiento alerón-timón, pero con el pie en lugar de un mecanismo."
+        ],
+        "ideas": [
+          "Es como empujar un carrito de supermercado con una rueda que roza: el lado que frena más hace girar el carro hacia sí. El ala con más resistencia es la rueda que roza.",
+          "El alerón Frise es una cuchara de remo que se hunde más de un lado de la barca para compensar que el otro lado ya empuja más."
+        ]
+      },
+      {
+        "title": "Inversión del alerón y alerones interiores",
+        "text": [
+          "Los alerones se montan en la punta del ala porque ahí el brazo hasta el eje longitudinal es el mayor y, con la misma fuerza, el momento de alabeo también. El precio es que ahí el ala es más flexible y recibe el máximo de torsión y de flexión. Cuando el alerón baja, además de añadir sustentación, retuerce el ala con el borde de ataque hacia abajo, y ese giro reduce el ángulo de ataque del ala. A baja velocidad la torsión es pequeña y no importa. A alta velocidad (una velocidad de inversión concreta) la torsión puede cancelar el efecto del alerón o incluso invertirlo: la **inversión del alerón** (*aileron reversal*), con la que el avión alabea al revés de lo mandado o pierde eficacia de control.",
+          "Para evitarlo se montan los alerones más cerca del encastre, donde el ala es más rígida, aunque se pierda brazo. En aviones grandes se usan alerones exteriores solo a baja velocidad, y a alta velocidad el alabeo lo hacen los alerones interiores y los **spoilers de alabeo**, que no retuercen el ala de la misma manera."
+        ],
+        "ideas": [
+          "Empujar el extremo de una regla de plástico flexible con el dedo de canto: la punta se dobla y se tuerce, no responde. Empujar cerca de donde la sujetas la mueve limpiamente. Esa es la ventaja de los alerones interiores a alta velocidad."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Mandos secundarios: flaps",
+        "text": [
+          "Los mandos secundarios no son imprescindibles para volar, pero mejoran las prestaciones y la maniobrabilidad, sobre todo en despegue, aterrizaje y descenso. Son los **flaps**, los **slats** y dispositivos de borde de ataque, los **spoilers**, los **aerofrenos** y los **tabs de compensación**. Los primarios gobiernan la actitud; los secundarios ayudan a la seguridad y a la eficiencia.",
+          "Los **flaps de borde de salida** (*trailing edge flaps*) son dispositivos hipersustentadores: aumentan la curvatura y, en algunos diseños, también la cuerda y la superficie alar, y con ello suben el coeficiente de sustentación a baja velocidad. Reducen la velocidad de pérdida y acortan las distancias de despegue y de aterrizaje. Todos los diseños aumentan la **sustentación y la resistencia**, en distinta proporción; la resistencia extra permite aproximar con más pendiente sin ganar velocidad.",
+          "En los aviones grandes, una unidad de potencia hidromecánica, controlada eléctricamente, mueve los flaps cuando seleccionas una posición, y los indicadores de cabina muestran dónde están. Están protegidos frente a movimientos asimétricos (un lado sí y el otro no) y frente a movimientos no mandados. El **sistema de alivio de carga de flaps** (*load relief system*, LRS) los retrae automáticamente si la velocidad supera un valor predeterminado, ligado a los límites de **VF** (velocidad de diseño con flaps) y **VFE** (máxima con flaps extendidos). Los aviones ligeros no lo llevan: la protección es respetar VFE, el final del arco blanco."
         ],
         "table": {
           "caption": "Flaps de los dos aviones del curso",
@@ -104,39 +388,166 @@
         },
         "verify": true,
         "bullets": [
-          "Extiende los flaps solo por debajo de **VFE** (velocidad máxima con flaps extendidos), el límite del arco blanco.",
+          "Extiende los flaps solo por debajo de **VFE**, el límite del arco blanco.",
           "En el PA-28-161 los flaps se bajan por escalones y se suben soltando el trinquete y levantando la palanca. Cada ajuste cambia el cabeceo: prepárate a compensar.",
-          "Los flaps **asimétricos** (uno sí y otro no) provocan un alabeo fuerte: se contrarresta con alerones, y se aterriza con cuidado según el POH."
+          "Los flaps **asimétricos** provocan un alabeo fuerte hacia el lado del flap retraído: se contrarresta con alerones y se aterriza con cuidado según el POH."
+        ],
+        "ideas": [
+          "Sacar los flaps es como abrir las alas de un abanico: la superficie crece y se curva, el aire empuja más, pero también frena más. Por eso puedes bajar la velocidad sin caerte, y por eso la rampa de aproximación se vuelve más empinada.",
+          "El sistema de alivio de carga es el fusible mecánico del hipersustentador: si la velocidad pasa de un valor, repliega los flaps igual que un paraguas se da la vuelta antes de romperse."
         ]
       },
       {
-        "title": "Compensadores (trim)",
+        "title": "Dispositivos de borde de ataque: slats y auto slats",
         "text": [
-          "El **compensador** es una pequeña superficie (**aleta o *tab***) en el borde de salida de un mando principal que permite mantener una posición **sin esfuerzo continuo** en la palanca. El compensador de profundidad es el más importante: con una **rueda** de compensación en cabina, la aleta se mueve en sentido contrario a la superficie; el flujo la empuja y la superficie principal se coloca en la posición que alivia el esfuerzo.",
-          "En vuelo se compensa para la velocidad que quieres: primero actitud y potencia, después se compensa para que el avión mantenga esa velocidad con la palanca suelta. El compensador no es un mando de maniobra: un compensador mal ajustado carga la palanca, sobre todo en la **arremetida** o en un aterrizaje a plena potencia. En el PA-28-161 el compensador de profundidad actúa sobre una aleta del estabilizador móvil."
+          "Los **flaps de borde de ataque** y los **slats** son hipersustentadores que se colocan por delante del ala, se mueven con potencia hidráulica o con motores de turbina de aire y se mandan con la misma palanca de flaps. Al extenderse reenergizan la capa límite, es decir, hacen pasar aire rápido por el extradós, de modo que el ala puede volar con ángulos de ataque mayores antes de entrar en pérdida. Así se consigue un coeficiente de sustentación mayor, una velocidad de pérdida menor y mejores prestaciones.",
+          "Normalmente se **extienden antes** que los flaps de borde de salida y se **retraen en último lugar**. Si el avión lleva **auto slats**, estos se extienden por sí solos al acercarse al ángulo de ataque de pérdida. Como respaldo, el accionamiento alternativo es un sistema hidráulico de reserva o, en los accionados por turbina de aire, un sistema eléctrico de emergencia. Ni el PA-28 ni el C172S llevan slats, pero hay que conocer el principio."
+        ],
+        "ideas": [
+          "El slat es como la ranura de una persiana veneciana abierta justo delante del ala: deja pasar un chorro rápido que pega el aire al ala, igual que un chorro de agua se pega a la curva de una cuchara.",
+          "Los flaps de borde de ataque se sacan los primeros y se guardan los últimos, como el paraguas que abres antes de salir y cierras después de entrar."
+        ]
+      },
+      {
+        "title": "Trim y compensadores",
+        "text": [
+          "El **trim** (compensador) mantiene una superficie de mando (timón de dirección, elevador o alerones) en una posición determinada, de modo que el piloto no tenga que sostener una fuerza continua sobre el mando para mantener la actitud deseada. Su mayor beneficio es reducir la carga de trabajo, física y mental. Es una pequeña aleta en el borde de salida de la superficie que se mueve en sentido contrario a ella con una rueda de la cabina: el flujo la empuja y la superficie principal se coloca en la posición que alivia el esfuerzo.",
+          "El trim de **cabeceo** (*pitch trim*) es el más habitual. El de **guiñada** suele encontrarse en bimotores, donde un fallo de motor crea un momento de guiñada permanente. El de **alabeo** es raro. Hay que **retrimar** al cambiar la velocidad, la potencia o la posición del centro de gravedad. En vuelo se compensa para la velocidad que quieres: primero actitud y potencia, después se compensa para que el avión mantenga esa velocidad con la palanca suelta."
+        ],
+        "bullets": [
+          "El compensador no es un mando de maniobra. Un compensador mal ajustado carga la palanca, sobre todo en la **arremetida** o en un aterrizaje a plena potencia.",
+          "En el PA-28-161 el compensador de profundidad es una rueda en la cabina que actúa sobre una aleta del estabilizador móvil; en el C172S es también una rueda con indicador de posición, y la posición de despegue está marcada."
+        ],
+        "ideas": [
+          "El trim es el piloto automático del pobre: es el ajuste del asiento de un coche hasta que no tienes que apretar el volante para ir recto. Si cambias de carga, de velocidad o de cuesta, hay que reajustarlo.",
+          "Con el trim bien puesto, el avión vuela como una bicicleta a la que sueltas el manillar: sigue recto sin esfuerzo. Con el trim mal puesto, es como llevar una bolsa pesada colgada del manillar: puedes, pero cansa."
         ],
         "verify": true
       },
       {
         "title": "Bloqueos y fallos",
         "text": [
-          "En tierra, los **bloqueos de mandos** (gust lock o control lock) sujetan palanca y superficies contra el viento. Hay que **quitarlos antes de arrancar**: un bloqueo olvidado puede impedir el movimiento en el despegue. En el prevuelo se comprueban movimiento libre, sentido correcto, holguras, cables y herrajes.",
+          "En tierra, los **bloqueos de mandos** (*gust lock* o *control lock*) sujetan palanca y superficies contra el viento. Hay que **quitarlos antes de arrancar**: un bloqueo olvidado puede impedir el movimiento en el despegue. En el prevuelo se comprueban movimiento libre, sentido correcto, holguras, cables y herrajes.",
           "En vuelo, los fallos son raros pero hay que tenerlos presentes. Si **se atasca la profundidad**, se controla el cabeceo con el compensador y la potencia. Si **se atascan los alerones**, se alabea con el timón de dirección. Si se rompe un cable, se pilota con los mandos restantes y se aterriza lo antes posible. La lista exacta es la del POH."
+        ],
+        "ideas": [
+          "El bloqueo de mandos es el candado de la bicicleta: seguro en el aparcamiento, desastroso si sales a la carretera sin quitarlo."
         ]
+      }
+    ],
+    "outline": [
+      {
+        "title": "Primarios y ejes",
+        "items": [
+          "Alerones: alabeo, eje longitudinal",
+          "Profundidad: cabeceo, eje lateral",
+          "Dirección: guiñada, eje vertical",
+          "Fuerza aerodinámica por curvatura, ángulo de ataque o spoiling"
+        ]
+      },
+      {
+        "title": "Transmisión",
+        "items": [
+          "Manual: cables y poleas, reversible",
+          "Parcialmente asistido: servo, reversible",
+          "Totalmente asistido: actuador, servoválvula, Q feel, irreversible",
+          "Comprobar tensión, bloqueo, recorrido, fricción y holgura"
+        ]
+      },
+      {
+        "title": "Momento de bisagra y compensación",
+        "items": [
+          "H = fuerza × distancia a la bisagra",
+          "H ∝ superficie × V²",
+          "Bisagra retrasada, horn, interna"
+        ]
+      },
+      {
+        "title": "Los cuatro tabs",
+        "items": [
+          "Balance: sentido contrario, baja esfuerzo y eficacia",
+          "Antibalance: mismo sentido, sube esfuerzo y eficacia",
+          "Servo: el piloto mueve solo el tab",
+          "Spring: servo con resorte, también a baja IAS"
+        ]
+      },
+      {
+        "title": "Flutter, guiñada adversa e inversión",
+        "items": [
+          "Flutter: CG de la superficie detrás de la bisagra; se cura con masas por delante",
+          "Guiñada adversa: alabeo a un lado, morro al otro",
+          "Soluciones: diferencial, Frise, acoplamiento alerón-timón, spoilers",
+          "Inversión: torsión del ala; alerones interiores y spoilers"
+        ]
+      },
+      {
+        "title": "Secundarios",
+        "items": [
+          "Flaps: más sustentación y resistencia; VFE y alivio de carga",
+          "Slats: reenergizan la capa límite; salen antes y entran después",
+          "Trim: cabeceo habitual; guiñada en bimotores"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "Ejes y movimientos van en el mismo orden: longitudinal con alabeo (roll), lateral con cabeceo (pitch), vertical con guiñada (yaw). Imagina: ruedas sobre ti mismo, cabeceas de sueño, giras la cabeza.",
+      "Tabs: BALANCE = contrario y baja el esfuerzo (balanza); ANTI = acompaña, sube el esfuerzo y la eficacia; SERVO = solo mueves el tab; SPRING = servo con muelle.",
+      "Momento de bisagra: «superficie por velocidad al cuadrado», o S·V². Doble velocidad, cuádruple esfuerzo.",
+      "Guiñada adversa: alabeo y guiñada siempre al revés, como los dos pedales de la bicicleta cuando uno sube y otro baja.",
+      "Slats por delante: salen los primeros y entran los últimos."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Qué diferencia un mando reversible de uno irreversible?",
+        "a": "En el reversible la fuerza del aire sobre la superficie llega a la columna y el piloto la nota (manual y parcialmente asistido). En el irreversible el actuador hidráulico absorbe la carga y la columna no la recibe; hace falta una sensación artificial."
+      },
+      {
+        "q": "¿Para qué sirve la unidad Q feel y de qué depende el esfuerzo que simula?",
+        "a": "Evita el sobrecontrol dando al piloto una carga artificial. Es proporcional a la deflexión de la superficie y a la velocidad."
+      },
+      {
+        "q": "¿De qué depende el momento de bisagra y qué ocurre si doblas la velocidad?",
+        "a": "De la fuerza aerodinámica y de la distancia entre la bisagra y el centro de presiones, y es proporcional a la superficie y a V². Con el doble de velocidad se multiplica por cuatro."
+      },
+      {
+        "q": "Explica la diferencia entre un tab de balance y uno antibalance.",
+        "a": "El de balance se mueve en sentido contrario a la superficie: baja el esfuerzo y la eficacia. El antibalance se mueve en el mismo sentido: sube el esfuerzo y la eficacia."
+      },
+      {
+        "q": "¿Por qué se producen el flutter y la compensación de masas que lo evita?",
+        "a": "Si el CG de la superficie está detrás de la bisagra, su inercia la hace oscilar al deformarse la estructura. Un contrapeso por delante adelanta el CG y evita la oscilación."
+      },
+      {
+        "q": "¿Por qué hay guiñada adversa y cómo se reduce?",
+        "a": "El ala que sube tiene el alerón bajado y más resistencia inducida, y el morro guiña al lado contrario del alabeo. Se reduce con alerones diferenciales, Frise, acoplamiento alerón-timón o spoilers de alabeo."
+      },
+      {
+        "q": "¿Qué es la inversión del alerón y cómo se evita?",
+        "a": "A alta velocidad el alerón retuerce el ala y la torsión puede anular o invertir su efecto. Se evita con alerones más cerca del encastre y con spoilers en alta velocidad."
+      },
+      {
+        "q": "¿Por qué se retrima el avión y qué mando de trim es el más habitual?",
+        "a": "Al cambiar la velocidad, la potencia o el centro de gravedad. El trim de cabeceo es el más habitual; el de guiñada se ve en bimotores."
       }
     ],
     "numbers": [
       "Alerones: longitudinal; profundidad: lateral; dirección: vertical",
+      "Momento de bisagra: proporcional a la superficie y a V²; doble velocidad, cuádruple momento",
+      "Tabs: balance (contrario, baja esfuerzo y eficacia); antibalance (mismo sentido, sube ambos); servo; spring",
       "PA-28-161: stabilator y flaps manuales (0, 10, 25 y 40°); C172S: flaps eléctricos (0, 10, 20 y 30°)",
-      "Flaps solo por debajo de VFE; aleteo (flutter): vibración de las superficies",
-      "Compensador: aleta que mantiene la posición sin esfuerzo",
+      "Flaps solo por debajo de VFE; el alivio de carga (LRS) retrae flaps por encima de VF o VFE",
+      "Slats: se extienden antes que los flaps y se retraen después; auto slats cerca de la pérdida",
+      "Comprobaciones: tensión, aseguramiento, recorrido, fricción y holgura",
       "Quitar el bloqueo de mandos antes de arrancar"
     ],
     "traps": [
       "Confundir el eje de cada mando: los alerones controlan el alabeo (eje longitudinal).",
-      "Pensar que el compensador sustituye a la palanca: es un ajuste para quitar esfuerzo.",
-      "Extender flaps por encima de VFE.",
-      "Olvidar que en el PA-28 el estabilizador horizontal es móvil y entero.",
+      "Decir que el momento de bisagra es proporcional a V: es proporcional a V².",
+      "Pensar que todos los tabs reducen el esfuerzo: el antibalance lo aumenta.",
+      "Confundir el tab servo con el de balance: en el servo el piloto no mueve la superficie directamente.",
+      "Creer que la guiñada adversa va hacia el lado del alabeo: va hacia el contrario.",
+      "Creer que el horn balance se usa en el alerón (según el curso, no).",
+      "Extender flaps por encima de VFE, o suponer que un avión ligero tiene alivio de carga.",
       "Dar por buenos los mandos sin comprobar el sentido en el prevuelo."
     ],
     "sources": [
@@ -147,9 +558,12 @@
       {
         "title": "Manual de vuelo del PA-28-161 y del C172S",
         "url": "https://www.piper.com/"
+      },
+      {
+        "title": "Material del curso, tema 2 «Mandos de vuelo» (instructores)"
       }
     ],
-    "reviewed": "2026-10-09",
+    "reviewed": "2026-11-17",
     "links": [
       {
         "label": "Prevuelo del PA-28: mandos de vuelo",
@@ -502,6 +916,637 @@
         "Produce un alabeo notable."
       ],
       "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.04.017",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué mando de vuelo se clasifica como totalmente asistido por potencia (irreversible)?",
+      "options": [
+        "El que mueve las superficies solo con cables, poleas y tensores",
+        "El que mueve las superficies con actuadores hidráulicos gobernados por válvulas",
+        "El que reduce el esfuerzo con un servomecanismo pero mantiene los cables",
+        "El que usa tabs de balance para aliviar el esfuerzo"
+      ],
+      "correct": 1,
+      "why": "En el mando totalmente asistido la columna solo desplaza una válvula y es el actuador hidráulico el que mueve la superficie; la carga aerodinámica no vuelve a la columna.",
+      "whyNot": [
+        "Eso es un mando manual, que es reversible.",
+        null,
+        "Eso es el parcialmente asistido, que sigue siendo reversible.",
+        "El tab no cambia la arquitectura del mando; es compensación aerodinámica."
+      ],
+      "ref": "Curso, tema 2; EASA CS-25"
+    },
+    {
+      "id": "020.04.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un mando reversible, una fuerza aerodinámica sobre la superficie:",
+      "options": [
+        "La absorbe el actuador y no llega a la columna",
+        "La simula una unidad Q feel",
+        "Solo se nota por encima de VFE",
+        "Se transmite a la columna y el piloto la nota"
+      ],
+      "correct": 3,
+      "why": "Reversible significa que la fuerza de la superficie viaja de vuelta al mando. Lo son el manual y el parcialmente asistido.",
+      "whyNot": [
+        "Eso ocurre en un mando irreversible.",
+        "El Q feel solo existe en mandos irreversibles, donde hay que fabricar la sensación.",
+        "No tiene relación con VFE.",
+        null
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.019",
+      "type": "concepto",
+      "level": 2,
+      "q": "La unidad de sensación artificial (Q feel) se instala para:",
+      "options": [
+        "Dar al piloto un esfuerzo proporcional a la deflexión y a la velocidad",
+        "Reducir la presión hidráulica del actuador",
+        "Mover el trim de forma automática",
+        "Limitar la velocidad máxima del avión"
+      ],
+      "correct": 0,
+      "why": "En un mando irreversible el piloto no recibe carga alguna; el Q feel la simula, proporcional a la deflexión y a la velocidad, para evitar el sobrecontrol.",
+      "whyNot": [
+        null,
+        "No regula la presión del circuito.",
+        "No mueve el trim.",
+        "No limita la velocidad del avión."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.020",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Cuáles son los componentes esenciales de un mando totalmente asistido?",
+      "options": [
+        "Cables, poleas y tensores",
+        "Tab servo, tab de resorte y masas de equilibrado",
+        "Actuador hidráulico, servoválvula y unidad de sensación artificial",
+        "Actuador, flaps y spoilers"
+      ],
+      "correct": 2,
+      "why": "El actuador mueve la superficie, la servoválvula lo gobierna y la unidad de esfuerzo artificial da la sensación al piloto, con realimentación para la proporcionalidad.",
+      "whyNot": [
+        "Eso es un mando manual.",
+        "Eso son tabs y compensación de masas, que son aerodinámica y estructura.",
+        null,
+        "Flaps y spoilers son mandos secundarios."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.021",
+      "type": "concepto",
+      "level": 2,
+      "q": "Cuando la columna devuelve a su posición neutra y el actuador queda quieto, lo que impide que la superficie se mueva es:",
+      "options": [
+        "El muelle de la unidad Q feel",
+        "El tab de resorte",
+        "Un bloqueo hidráulico al cerrar la válvula las líneas de presión y retorno",
+        "La fricción de los cables"
+      ],
+      "correct": 2,
+      "why": "Con la columna en la posición mandada, la válvula bloquea la presión y el retorno: el aceite queda atrapado a ambos lados del pistón.",
+      "whyNot": [
+        "El Q feel simula carga en la columna, no mantiene la superficie.",
+        "El tab de resorte es compensación aerodinámica.",
+        null,
+        "Un mando totalmente asistido no se sujeta con cables ni con rozamiento."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.022",
+      "type": "concepto",
+      "level": 2,
+      "q": "El momento de bisagra de una superficie de mando es proporcional a:",
+      "options": [
+        "Su superficie y al cuadrado de la velocidad",
+        "Su masa y a la velocidad",
+        "Su superficie y a la velocidad",
+        "Su cuerda e independiente de la velocidad"
+      ],
+      "correct": 0,
+      "why": "H = F · d y la fuerza aerodinámica crece con la superficie y con V², así que H ∝ S · V².",
+      "whyNot": [
+        null,
+        "La masa no interviene en el momento aerodinámico.",
+        "La dependencia es con V², no con V.",
+        "Depende mucho de la velocidad."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.023",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con una deflexión dada del timón de profundidad, el esfuerzo en la palanca es de 15 N a 90 kt IAS. ¿Cuánto es con la misma deflexión a 135 kt IAS?",
+      "options": [
+        "Unos 22 N",
+        "Unos 45 N",
+        "Unos 60 N",
+        "Unos 34 N"
+      ],
+      "correct": 3,
+      "why": "H ∝ V²: (135 / 90)² = 1,5² = 2,25. 15 N × 2,25 ≈ 34 N.",
+      "whyNot": [
+        "22 N sería un factor de 1,5, que es lineal en V.",
+        "45 N sería un factor de 3.",
+        "60 N sería un factor de 4, que corresponde a doblar la velocidad.",
+        null
+      ],
+      "ref": "H ∝ V²"
+    },
+    {
+      "id": "020.04.024",
+      "type": "calculo",
+      "level": 3,
+      "q": "Un fabricante aumenta un 50 % la superficie del timón de profundidad y la velocidad de crucero pasa de 100 a 120 kt. ¿Cuánto crece el momento de bisagra?",
+      "options": [
+        "Aproximadamente 1,8 veces",
+        "Aproximadamente 2,2 veces",
+        "Aproximadamente 3 veces",
+        "Aproximadamente 1,5 veces"
+      ],
+      "correct": 1,
+      "why": "Factor de superficie 1,5 por (120 / 100)² = 1,44: 1,5 × 1,44 = 2,16, unas 2,2 veces.",
+      "whyNot": [
+        "1,8 sería 1,5 × 1,2, tomando la velocidad lineal.",
+        null,
+        "3 sale de 1,5 × 2, un factor de velocidad inventado.",
+        "1,5 solo cuenta el efecto de la superficie."
+      ],
+      "ref": "H ∝ S · V²"
+    },
+    {
+      "id": "020.04.025",
+      "type": "concepto",
+      "level": 2,
+      "q": "La bisagra retrasada (inset hinge) reduce el momento de bisagra porque:",
+      "options": [
+        "Aumenta la masa por delante de la bisagra",
+        "Acorta la distancia entre la bisagra y el centro de presiones",
+        "Añade un tab en el borde de salida",
+        "Cambia el sentido de giro de la superficie"
+      ],
+      "correct": 1,
+      "why": "Al situar la bisagra detrás del borde de ataque, el brazo del momento es menor y parte de la superficie por delante equilibra a la de detrás.",
+      "whyNot": [
+        "Eso es compensación de masas contra el flutter.",
+        null,
+        "Eso sería un tab, que es otra solución.",
+        "El sentido de giro no cambia."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.026",
+      "type": "concepto",
+      "level": 2,
+      "q": "En la compensación tipo horn (horn balance):",
+      "options": [
+        "Una masa por delante de la bisagra evita el flutter",
+        "Una cavidad sellada interior iguala presiones",
+        "Un tab se mueve en sentido opuesto a la superficie",
+        "Una parte de la superficie, por delante de la bisagra, genera un momento que se opone al principal"
+      ],
+      "correct": 3,
+      "why": "El horn sobresale por delante de la bisagra y su fuerza crea un momento contrario, que reduce el total. Se usa en timón de dirección y elevador.",
+      "whyNot": [
+        "Eso es la compensación de masas.",
+        "Eso es la compensación interna, usada en alerones de aviones grandes.",
+        "Eso es un tab de balance.",
+        null
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.027",
+      "type": "concepto",
+      "level": 2,
+      "q": "El tab de balance (balance tab) se caracteriza por:",
+      "options": [
+        "Moverse en sentido opuesto a la superficie y reducir esfuerzo y eficacia",
+        "Moverse en el mismo sentido y aumentar la eficacia",
+        "Ser el único que mueve el piloto, sin mover la superficie",
+        "Aumentar el esfuerzo en el mando"
+      ],
+      "correct": 0,
+      "why": "El tab, unido a la superficie, se mueve al revés que ella: ayuda a girarla (menos esfuerzo) pero reduce la curvatura efectiva (menos eficacia).",
+      "whyNot": [
+        null,
+        "Eso es el antibalance.",
+        "Eso es el tab servo.",
+        "El balance reduce el esfuerzo; el antibalance lo aumenta."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.028",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un tab antibalance (anti-balance tab) produce:",
+      "options": [
+        "Más eficacia y menos esfuerzo",
+        "Menos eficacia y menos esfuerzo",
+        "Más eficacia de la superficie y más esfuerzo en el mando",
+        "Menos eficacia y más esfuerzo"
+      ],
+      "correct": 2,
+      "why": "Se mueve en el mismo sentido que la superficie, aumenta la curvatura y por eso la eficacia, pero también el esfuerzo.",
+      "whyNot": [
+        "No es posible: aumentar la curvatura carga el mando.",
+        "Eso lo hace el tab de balance.",
+        null,
+        "El antibalance aumenta la eficacia, no la reduce."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.029",
+      "type": "concepto",
+      "level": 3,
+      "q": "En un tab servo, el piloto:",
+      "options": [
+        "Mueve la superficie y el tab la sigue en sentido contrario",
+        "Mueve la superficie y el tab en el mismo sentido",
+        "Solo mueve el tab, y la fuerza aerodinámica sobre él mueve la superficie",
+        "Mueve el tab a través de un resorte que cede a IAS bajas"
+      ],
+      "correct": 2,
+      "why": "El tab va unido al mando y la superficie gira libre sobre su eje; se mueve en sentido opuesto al tab por la fuerza que este genera, y el efecto aumenta con la IAS.",
+      "whyNot": [
+        "Eso es el tab de balance.",
+        "Eso es el antibalance.",
+        null,
+        "El resorte pertenece al spring tab."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.030",
+      "type": "concepto",
+      "level": 3,
+      "q": "El tab de resorte (spring tab) resuelve el problema del servo tab a baja IAS porque:",
+      "options": [
+        "El resorte transmite el movimiento a la superficie hasta que la carga aerodinámica lo comprime",
+        "Aumenta la fuerza aerodinámica sobre el tab a baja velocidad",
+        "Hace que el tab se mueva en el mismo sentido que la superficie",
+        "Elimina el momento de bisagra de la superficie"
+      ],
+      "correct": 0,
+      "why": "A baja IAS la carga no vence al resorte y el mando mueve la superficie casi directamente; a IAS altas el resorte cede y el tab asiste.",
+      "whyNot": [
+        null,
+        "La fuerza sobre el tab sigue siendo pequeña a baja IAS.",
+        "Ese sentido es el del antibalance.",
+        "El momento de bisagra no desaparece, solo se asiste."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.031",
+      "type": "concepto",
+      "level": 2,
+      "q": "El flutter se produce cuando el centro de gravedad de la superficie está:",
+      "options": [
+        "Por delante de la línea de bisagra",
+        "Exactamente sobre el eje lateral del avión",
+        "En el borde de ataque del ala",
+        "Detrás de la línea de bisagra"
+      ],
+      "correct": 3,
+      "why": "Con el CG detrás de la bisagra, la inercia de la superficie le hace oscilar al deformarse la estructura; se evita con masas por delante.",
+      "whyNot": [
+        "Con el CG por delante el flutter no se desarrolla.",
+        "El eje lateral del avión no tiene relación con la bisagra.",
+        "La posición en el ala no determina el flutter de la superficie.",
+        null
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.032",
+      "type": "concepto",
+      "level": 2,
+      "q": "El aleteo (flutter) se evita añadiendo masa:",
+      "options": [
+        "Por detrás de la línea de bisagra",
+        "Por delante de la línea de bisagra",
+        "En el borde de salida del tab",
+        "En la punta del ala"
+      ],
+      "correct": 1,
+      "why": "El contrapeso adelanta el centro de gravedad de la superficie y reduce el momento de inercia sobre la bisagra.",
+      "whyNot": [
+        "Añadir masa detrás empeora el flutter.",
+        null,
+        "Un tab pesado también desequilibra hacia atrás.",
+        "La punta del ala no es la superficie de mando."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.033",
+      "type": "concepto",
+      "level": 1,
+      "q": "Si alabeas a la izquierda y la guiñada adversa actúa, el morro tiende a ir:",
+      "options": [
+        "Hacia la izquierda",
+        "Hacia la derecha",
+        "Hacia arriba",
+        "No se desvía en ningún sentido"
+      ],
+      "correct": 1,
+      "why": "El ala derecha sube con el alerón bajado, tiene más resistencia inducida y retrasa ese lado: el morro guiña a la derecha, al lado opuesto al alabeo.",
+      "whyNot": [
+        "Esa sería una guiñada proversa, no adversa.",
+        null,
+        "Es un movimiento de guiñada, no de cabeceo.",
+        "La guiñada adversa existe y se corrige con el diseño o con los pedales."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.034",
+      "type": "concepto",
+      "level": 3,
+      "q": "En un alerón tipo Frise, cuando el alerón sube:",
+      "options": [
+        "Su borde de ataque queda oculto y el ala pierde resistencia",
+        "El timón de dirección se mueve automáticamente",
+        "Se levanta un spoiler en el otro ala",
+        "Su borde de ataque sobresale bajo el ala y aumenta la resistencia de ese lado"
+      ],
+      "correct": 3,
+      "why": "El borde de ataque sale por el intradós, crea resistencia en el ala que baja y compensa la resistencia inducida del otro lado.",
+      "whyNot": [
+        "Es lo contrario de lo que hace el Frise.",
+        "Eso es el acoplamiento alerón-timón.",
+        "Eso no es el alerón Frise; los spoilers de alabeo van en el ala que baja.",
+        null
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.035",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Cuál de los siguientes NO es un método para reducir la guiñada adversa?",
+      "options": [
+        "Un tab de balance en el timón de dirección",
+        "Alerones tipo Frise",
+        "Acoplamiento alerón-timón",
+        "Spoilers de alabeo"
+      ],
+      "correct": 0,
+      "why": "El tab de balance reduce el esfuerzo en el mando, no actúa sobre la guiñada adversa.",
+      "whyNot": [
+        null,
+        "Es un método válido: más resistencia en el ala que baja.",
+        "Es un método válido: el timón se mueve con los alerones.",
+        "Es un método válido: resistencia en el ala que baja."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.036",
+      "type": "concepto",
+      "level": 3,
+      "q": "La inversión del alerón es el efecto por el que, a alta velocidad:",
+      "options": [
+        "La guiñada adversa pasa a ser proversa",
+        "El flutter se transmite al timón de dirección",
+        "La torsión del ala puede anular o invertir el efecto del alerón",
+        "El alerón se bloquea contra su tope"
+      ],
+      "correct": 2,
+      "why": "El alerón retuerce el ala y cambia su ángulo de ataque; a la velocidad de inversión ese giro compensa el efecto del alerón y puede invertirlo.",
+      "whyNot": [
+        "No se refiere a la guiñada.",
+        "El flutter es otro fenómeno de las superficies.",
+        null,
+        "No es un bloqueo mecánico."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.037",
+      "type": "concepto",
+      "level": 2,
+      "q": "Para reducir los efectos de la torsión sobre los alerones se pueden:",
+      "options": [
+        "Montar los alerones más cerca de la punta del ala",
+        "Añadir un horn al alerón",
+        "Montar los alerones más cerca del encastre y usar spoilers a alta velocidad",
+        "Quitar los tabs de compensación"
+      ],
+      "correct": 2,
+      "why": "Cerca del encastre el ala es más rígida; a alta velocidad el alabeo lo asumen los spoilers y alerones interiores.",
+      "whyNot": [
+        "Cerca de la punta la torsión es mayor.",
+        "El horn reduce el momento de bisagra, no la torsión del ala.",
+        null,
+        "Los tabs no influyen en la torsión del ala."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.038",
+      "type": "regla",
+      "level": 2,
+      "q": "El sistema de alivio de carga de flaps (LRS) en aviones grandes:",
+      "options": [
+        "Retrae los flaps si la velocidad supera un valor ligado a VF y VFE",
+        "Extiende los flaps al reducirse la velocidad",
+        "Sustituye a las comprobaciones de fricción",
+        "Mueve los slats de forma asimétrica"
+      ],
+      "correct": 0,
+      "why": "El LRS protege la estructura retrayendo los flaps automáticamente cuando la velocidad supera sus límites.",
+      "whyNot": [
+        null,
+        "Hace lo contrario: los repliega.",
+        "No tiene relación con las comprobaciones de mantenimiento.",
+        "La protección es contra asimetría, no la provoca."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.039",
+      "type": "concepto",
+      "level": 2,
+      "q": "Los dispositivos de borde de ataque (slats) permiten volar con mayor ángulo de ataque porque:",
+      "options": [
+        "Aumentan la curvatura del borde de salida",
+        "Reducen la resistencia inducida del ala",
+        "Desplazan hacia delante el centro de gravedad",
+        "Reenergizan la capa límite sobre el extradós"
+      ],
+      "correct": 3,
+      "why": "El aire rápido que pasa por la ranura mantiene pegado el flujo al ala, por lo que la pérdida se retrasa y sube el CL máximo.",
+      "whyNot": [
+        "Eso lo hacen los flaps de borde de salida.",
+        "No es su efecto principal.",
+        "No modifican el centro de gravedad.",
+        null
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.040",
+      "type": "regla",
+      "level": 2,
+      "q": "Respecto a los flaps de borde de salida, los dispositivos de borde de ataque normalmente:",
+      "options": [
+        "Se extienden después y se retraen antes",
+        "Se extienden antes y se retraen después",
+        "Se extienden y se retraen a la vez",
+        "Solo se extienden en la aproximación final"
+      ],
+      "correct": 1,
+      "why": "Salen primero y entran en último lugar; los auto slats pueden salir solos cerca de la pérdida.",
+      "whyNot": [
+        "Es justo al revés.",
+        null,
+        "La secuencia es diferente.",
+        "Se usan también en el despegue."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.041",
+      "type": "concepto",
+      "level": 2,
+      "q": "Los auto slats se extienden automáticamente:",
+      "options": [
+        "Cuando se selecciona tren abajo",
+        "Cuando el avión se aproxima al ángulo de ataque de pérdida",
+        "Al superar VFE",
+        "Cuando fallan los flaps de borde de salida"
+      ],
+      "correct": 1,
+      "why": "Detectan la proximidad de la pérdida y salen solos para retrasarla.",
+      "whyNot": [
+        "No dependen del tren.",
+        null,
+        "Con VFE se retraerían los flaps, no se extienden los slats.",
+        "El fallo de los flaps no los activa."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.042",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué trim es el más habitual y cuál se encuentra normalmente en bimotores?",
+      "options": [
+        "Alabeo el más habitual; cabeceo en bimotores",
+        "Guiñada el más habitual; alabeo en bimotores",
+        "Cabeceo el más habitual; alabeo en bimotores",
+        "Cabeceo el más habitual; guiñada en bimotores"
+      ],
+      "correct": 3,
+      "why": "El trim de cabeceo es el de uso universal; el de guiñada ayuda a compensar el momento por un motor parado en un bimotor; el de alabeo es el menos frecuente.",
+      "whyNot": [
+        "El de alabeo es el menos frecuente.",
+        "El de guiñada no es el más habitual.",
+        "El de alabeo apenas se usa.",
+        null
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.043",
+      "type": "regla",
+      "level": 2,
+      "q": "Una de estas situaciones NO obliga a retrimar el avión:",
+      "options": [
+        "Cambiar el rumbo sin variar velocidad ni potencia",
+        "Cambiar la velocidad",
+        "Cambiar la potencia",
+        "Cambiar la posición del centro de gravedad"
+      ],
+      "correct": 0,
+      "why": "El trim depende de la velocidad, la potencia y el CG. Cambiar solo de rumbo no cambia el equilibrio en cabeceo.",
+      "whyNot": [
+        null,
+        "Al cambiar de velocidad cambia la carga en el mando.",
+        "La potencia modifica el momento de cabeceo y la corriente en la cola.",
+        "El CG modifica el momento que debe equilibrar el trim."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.044",
+      "type": "regla",
+      "level": 2,
+      "q": "La fricción en el sistema de mandos se mide:",
+      "options": [
+        "Midiendo la tensión de los cables con un tensiómetro",
+        "Observando el sentido de movimiento de la superficie",
+        "Acoplando una balanza de resorte al mando",
+        "Moviendo la columna y detectando el juego al invertir el sentido"
+      ],
+      "correct": 2,
+      "why": "La balanza de resorte indica la fuerza necesaria para mover el mando, que revela poleas agarrotadas o roces.",
+      "whyNot": [
+        "Eso mide la tensión, otra comprobación.",
+        "Eso comprueba el recorrido y el sentido.",
+        null,
+        "Eso es la holgura (backlash)."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.045",
+      "type": "concepto",
+      "level": 2,
+      "q": "La holgura (backlash) del sistema de mandos es:",
+      "options": [
+        "La resistencia al movimiento de los cables",
+        "La tensión excesiva de los cables",
+        "El movimiento libre de la columna al invertir el sentido sin que la superficie responda",
+        "La deflexión máxima de la superficie"
+      ],
+      "correct": 2,
+      "why": "Es el juego muerto entre el mando y la superficie, por ejemplo por cables flojos o articulaciones gastadas.",
+      "whyNot": [
+        "Eso es fricción.",
+        "Eso es exceso de tensión.",
+        null,
+        "Eso es el recorrido."
+      ],
+      "ref": "Curso, tema 2"
+    },
+    {
+      "id": "020.04.046",
+      "type": "lectura",
+      "level": 2,
+      "q": "En el prevuelo del PA-28-161 tiras de la palanca hacia atrás y miras la cola. ¿Qué es lo normal?",
+      "data": "Palanca: hacia atrás\nSuperficie: stabilator (estabilizador móvil)\nObservación: ?",
+      "options": [
+        "El borde de salida del estabilizador sube y el morro sube",
+        "El borde de salida del estabilizador baja y el morro sube",
+        "El borde de salida del estabilizador sube y el morro baja",
+        "Solo se mueve el tab, no el estabilizador"
+      ],
+      "correct": 0,
+      "why": "Con la palanca atrás el stabilator gira entero y su borde de salida sube: la cola produce más fuerza hacia abajo, la cola baja y el morro sube.",
+      "whyNot": [
+        null,
+        "Si el borde de salida bajara, el morro bajaría.",
+        "Con el borde de salida arriba el morro sube, no baja.",
+        "El stabilator se mueve entero, con su tab antibalance."
+      ],
+      "ref": "POH PA-28-161"
     }
   ],
   "cards": [
@@ -512,23 +1557,38 @@
     },
     {
       "id": "c.020.04.02",
-      "front": "Flaps del PA-28-161 y del C172S",
-      "back": "PA-28: manuales (0, 10, 25 y 40°). C172S: eléctricos (0, 10, 20 y 30°)"
+      "front": "Mando reversible frente a irreversible",
+      "back": "Reversible: la carga llega a la columna (manual y parcialmente asistido). Irreversible: actuador hidráulico y Q feel"
     },
     {
       "id": "c.020.04.03",
-      "front": "Qué hace el compensador",
-      "back": "Mantiene la posición sin esfuerzo continuo en la palanca"
+      "front": "Momento de bisagra",
+      "back": "Proporcional a la superficie y a V². Doble velocidad, cuádruple momento"
     },
     {
       "id": "c.020.04.04",
-      "front": "Alerones atascados en vuelo",
-      "back": "Alabear con el timón de dirección y aterrizar cuanto antes"
+      "front": "Tab de balance y antibalance",
+      "back": "Balance: sentido contrario, baja esfuerzo y eficacia. Antibalance: mismo sentido, sube esfuerzo y eficacia"
     },
     {
       "id": "c.020.04.05",
-      "front": "Estabilizador del PA-28",
-      "back": "Móvil de una sola pieza (stabilator)"
+      "front": "Tab servo y spring",
+      "back": "Servo: el piloto mueve solo el tab. Spring: servo con resorte, también efectivo a baja IAS"
+    },
+    {
+      "id": "c.020.04.06",
+      "front": "Guiñada adversa y soluciones",
+      "back": "Alabeo a un lado, guiñada al otro. Diferenciales, Frise, acoplamiento alerón-timón, spoilers de alabeo"
+    },
+    {
+      "id": "c.020.04.07",
+      "front": "Flutter y su remedio",
+      "back": "CG de la superficie detrás de la bisagra; se cura con masa por delante de la bisagra"
+    },
+    {
+      "id": "c.020.04.08",
+      "front": "Flaps del PA-28-161 y del C172S",
+      "back": "PA-28: manuales (0, 10, 25 y 40°). C172S: eléctricos (0, 10, 20 y 30°). Siempre por debajo de VFE"
     }
   ]
 }

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330">
+<title>Inyección directa common rail: bomba de alta presión, conducto común, inyectores y control del FADEC</title>
+<defs>
+<marker id="020-common-rail-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+</defs>
+<rect x="20" y="120" width="86" height="60" class="soft"/>
+<text x="63" y="146" class="tx" text-anchor="middle">Depósito</text>
+<text x="63" y="164" class="tx2" font-size="12" text-anchor="middle">de combustible</text>
+<line x1="106" y1="150" x2="142" y2="150" class="ln thick" marker-end="url(#020-common-rail-f)"/>
+<circle cx="180" cy="150" r="36" class="ac"/>
+<text x="180" y="146" class="txa b" text-anchor="middle">Bomba</text>
+<text x="180" y="161" class="tx2" font-size="11" text-anchor="middle">alta presión</text>
+<line x1="218" y1="150" x2="262" y2="150" class="wa-ln thick" marker-end="url(#020-common-rail-f)"/>
+<rect x="266" y="130" width="250" height="40" rx="20" class="wa"/>
+<text x="391" y="155" class="txw b" text-anchor="middle">Common rail: unos 2000 bar</text>
+<line x1="310" y1="170" x2="310" y2="214" class="wa-ln thick"/>
+<line x1="391" y1="170" x2="391" y2="214" class="wa-ln thick"/>
+<line x1="472" y1="170" x2="472" y2="214" class="wa-ln thick"/>
+<rect x="294" y="214" width="32" height="40" class="soft"/>
+<rect x="375" y="214" width="32" height="40" class="soft"/>
+<rect x="456" y="214" width="32" height="40" class="soft"/>
+<text x="310" y="238" class="tx2" font-size="11" text-anchor="middle">Iny.</text>
+<text x="391" y="238" class="tx2" font-size="11" text-anchor="middle">Iny.</text>
+<text x="472" y="238" class="tx2" font-size="11" text-anchor="middle">Iny.</text>
+<text x="391" y="278" class="tx2" font-size="12" text-anchor="middle">Un inyector por cilindro (solenoide o piezoeléctrico)</text>
+<rect x="266" y="14" width="250" height="60" class="ok"/>
+<text x="391" y="38" class="txo b" text-anchor="middle">FADEC</text>
+<text x="391" y="56" class="tx2" font-size="12" text-anchor="middle">decide cuándo y cuánto inyectar</text>
+<path d="M266 44 H236 V234 H290" class="ok-ln dash" fill="none" marker-end="url(#020-common-rail-f)"/>
+<text x="228" y="208" class="txo" font-size="11" text-anchor="end">órdenes eléctricas</text>
+<text x="228" y="222" class="txo" font-size="11" text-anchor="end">a cada inyector</text>
+<rect x="540" y="14" width="86" height="100" class="soft"/>
+<text x="583" y="36" class="tx b" font-size="12" text-anchor="middle">Sensores</text>
+<text x="583" y="56" class="tx2" font-size="11" text-anchor="middle">RPM</text>
+<text x="583" y="72" class="tx2" font-size="11" text-anchor="middle">T aire</text>
+<text x="583" y="88" class="tx2" font-size="11" text-anchor="middle">densidad aire</text>
+<text x="583" y="104" class="tx2" font-size="11" text-anchor="middle">palanca gases</text>
+<line x1="540" y1="44" x2="518" y2="44" class="ok-ln" marker-end="url(#020-common-rail-f)"/>
+</svg>

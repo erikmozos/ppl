@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280">
+<title>Tres diseños de ala vistos de frente: en voladizo, semivoladizo y arriostrada exteriormente</title>
+<g>
+<rect x="89" y="110" width="36" height="70" rx="14" class="soft"/>
+<rect x="12" y="160" width="190" height="9" class="ac"/>
+<text x="107" y="214" class="tx b" text-anchor="middle">En voladizo</text>
+<text x="107" y="232" class="tx2" text-anchor="middle">apoyada solo en la raíz</text>
+<text x="107" y="250" class="tx2" text-anchor="middle">PA-28-161 (ala baja)</text>
+</g>
+<g>
+<rect x="302" y="110" width="36" height="70" rx="14" class="soft"/>
+<rect x="225" y="104" width="190" height="9" class="ac"/>
+<line x1="304" y1="170" x2="268" y2="113" class="ln thick"/>
+<line x1="336" y1="170" x2="372" y2="113" class="ln thick"/>
+<text x="320" y="214" class="tx b" text-anchor="middle">Semivoladizo</text>
+<text x="320" y="232" class="tx2" text-anchor="middle">apoyo exterior parcial y corto</text>
+</g>
+<g>
+<rect x="515" y="110" width="36" height="70" rx="14" class="soft"/>
+<rect x="438" y="104" width="190" height="9" class="ac"/>
+<line x1="517" y1="172" x2="460" y2="113" class="ln thick"/>
+<line x1="549" y1="172" x2="606" y2="113" class="ln thick"/>
+<text x="533" y="214" class="tx b" text-anchor="middle">Arriostrada</text>
+<text x="533" y="232" class="tx2" text-anchor="middle">montante hasta media ala</text>
+<text x="533" y="250" class="tx2" text-anchor="middle">C172S (ala alta)</text>
+</g>
+<text x="320" y="48" class="txa b" text-anchor="middle">Más apoyos exteriores: ala más ligera, pero más resistencia</text>
+<line x1="60" y1="64" x2="580" y2="64" class="ac-ln"/>
+</svg>

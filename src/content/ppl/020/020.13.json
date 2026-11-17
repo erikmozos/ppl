@@ -2,26 +2,30 @@
   "lesson": {
     "id": "020.13",
     "title": "Lubricación",
-    "summary": "Funciones del aceite del motor, sistema de cárter húmedo y de cárter seco, bomba, válvula de alivio, filtro y radiador, tipos y viscosidad del aceite, lectura de presión y temperatura y qué hacer ante un fallo.",
+    "summary": "Funciones primaria y secundarias del aceite, cárter húmedo y sus limitaciones, cárter seco con su bomba de recuperación, aceites minerales, monogrado y compuesto, viscosidad y temperatura, presión y temperatura en cabina y fallo de lubricación.",
     "objectives": [
-      "Enumerar las funciones del aceite además de lubricar",
-      "Diferenciar un sistema de cárter húmedo de uno de cárter seco y seguir el recorrido del aceite",
-      "Explicar qué hacen la válvula de alivio, el filtro, su válvula de derivación y el radiador de aceite",
-      "Interpretar presión y temperatura de aceite y decidir qué hacer ante un fallo",
-      "Distinguir aceite mineral, con detergentes y multigrado, y el significado de la viscosidad"
+      "Explicar la función primaria del aceite y enumerar sus funciones secundarias",
+      "Describir el circuito de cárter húmedo y sus limitaciones",
+      "Explicar cómo funciona el cárter seco, la bomba de recuperación y sus ventajas",
+      "Distinguir aceite monogrado y compuesto, y relacionar viscosidad con temperatura",
+      "Interpretar presión y temperatura de aceite y actuar ante un fallo de lubricación"
     ],
     "sections": [
       {
         "title": "Para qué sirve el aceite",
         "text": [
-          "El aceite hace mucho más que reducir el rozamiento. Cada una de sus funciones explica una pregunta de examen.",
-          "**Lubrica**: forma una película entre piezas metálicas en movimiento (cigüeñal, bielas, árbol de levas, camisas y segmentos) y evita el contacto directo. **Refrigera**: se lleva calor de pistones y cojinetes que el aire no alcanza y lo cede en el radiador de aceite. **Sella**: la película entre segmentos y camisa mejora la compresión. **Limpia**: arrastra partículas y residuos de combustión hasta el filtro. **Protege** contra la corrosión de las piezas internas, sobre todo cuando el motor está parado, y **amortigua** golpes de las piezas."
+          "Las piezas del motor de pistón son de metal, soportan cargas mecánicas altas, altas temperaturas y velocidades elevadas, y las partes móviles se deslizan unas contra otras. Ese deslizamiento produce **fricción**, y la fricción genera **calor y desgaste**: sin lubricación, los componentes se degradarían hasta destruirse y el motor perdería mucha eficiencia. Se pueden lubricar con aceites, grasas, polvos o incluso sólidos, pero en un motor de aviación el sistema es de **aceite**.",
+          "La **función primaria** del aceite es **reducir la fricción y el desgaste** entre superficies en movimiento: forma una película que separa el metal del metal (cigüeñal, bielas, árbol de levas, camisas y segmentos). Además tiene **funciones secundarias** muy importantes: **refrigera** (se lleva el calor de la fricción y de la combustión a zonas que el aire no alcanza y lo cede en el radiador de aceite); **limpia** (arrastra partículas y residuos de desgaste hasta el filtro); **protege contra la corrosión** (oxidación y degradación química de las piezas internas, sobre todo con el motor parado); presta **servicios hidráulicos** (la presión del aceite acciona mecanismos, como el cambio de paso de una hélice de velocidad constante); y sirve como **indicador del estado del motor** (*engine health*), porque su presión, su temperatura y las partículas metálicas que arrastra dicen cómo va el motor. También **sella** la holgura entre segmentos y camisa, y **amortigua** golpes."
+        ],
+        "ideas": [
+          "El aceite es como la película de agua que deja resbalar el patinaje sobre hielo: las cuchillas no se tocan con el hielo directamente, se deslizan sobre una capa líquida.",
+          "Y es también un análisis de sangre del motor: si la sangre (el aceite) sale con virutas metálicas, algo se está desgastando por dentro."
         ]
       },
       {
-        "title": "El circuito: cárter húmedo",
+        "title": "Cárter húmedo (wet sump)",
         "text": [
-          "En un sistema de **cárter húmedo**, el aceite se guarda en el propio cárter, bajo el motor, que hace de depósito. Es el sistema del O-320 del PA-28-161 y del IO-360 del C172S. El recorrido es este:"
+          "La mayoría de los motores de aviones ligeros no acrobáticos usan **cárter húmedo**. El aceite se almacena en el propio **cárter** (*oil sump*), la parte baja del motor, que hace a la vez de depósito y de reserva. Es el sistema del O-320 del PA-28-161 y del IO-360 del C172S. El recorrido es este:"
         ],
         "bullets": [
           "Una **bomba de engranajes**, movida por el motor, **aspira** el aceite del cárter a través de un colador.",
@@ -30,22 +34,62 @@
           "Se reparte por galerías hasta los cojinetes y demás piezas, y cae de nuevo al cárter.",
           "Si hay un **radiador de aceite**, una válvula termostática lo desvía por el radiador cuando el aceite está caliente y lo evita cuando está frío, para que el aceite llegue pronto a su temperatura de trabajo.",
           "Un **respiradero** del cárter ventila los gases que se escapan por los segmentos y evita que suba la presión interna; el aceite que sale por él mancha la parte inferior del fuselaje."
+        ],
+        "ideas": [
+          "El cárter húmedo es como la bañera con el desagüe en el fondo: el agua (aceite) está siempre en el mismo recipiente desde el que la bomba la saca.",
+          "La válvula de alivio es como la válvula de una olla a presión: cuando la presión pasa del límite, deja escapar el exceso para que no reviente."
         ]
       },
       {
-        "title": "Cárter seco",
+        "title": "Limitaciones del cárter húmedo",
         "text": [
-          "En un sistema de **cárter seco**, el aceite se almacena en un **depósito separado** y el cárter solo recoge el que cae; una bomba de recuperación lo devuelve al depósito. Se usa en motores acrobáticos, turboalimentados y de más potencia, porque el depósito puede ser mayor y refrigerar mejor, y funciona con el avión invertido. No es el caso de tu avión de escuela."
+          "El cárter húmedo es sencillo y fiable en un avión de escuela, pero tiene cuatro limitaciones. **Primera:** en maniobras con aceleraciones altas, cambios bruscos de actitud o ángulos pronunciados, el aceite se desplaza dentro del cárter y la bomba puede **dejar de aspirar** un instante, con riesgo para los componentes críticos. **Segunda:** como el aceite está dentro del propio motor, es más difícil **regular y disipar su temperatura**. **Tercera:** al estar siempre en contacto con superficies calientes, sufre **degradación térmica, oxidación y contaminación**, lo que acorta su vida y sus propiedades. **Cuarta:** su **capacidad es limitada** por el volumen del cárter, y con ella la refrigeración, la lubricación y la reserva."
+        ],
+        "ideas": [
+          "Es como beber con una pajita de un vaso que inclinas mucho: el líquido se desplaza y la pajita aspira aire un momento. Por eso el cárter húmedo no es el sistema de un avión acrobático."
+        ]
+      },
+      {
+        "title": "Cárter seco (dry sump)",
+        "text": [
+          "El **cárter seco** nació para superar esas limitaciones. El aceite no se guarda en el cárter, sino en un **depósito externo** (*oil reservoir*) hecho para eso. Una **bomba de presión** lo impulsa desde el depósito hasta los circuitos internos del motor, donde lubrica, refrigera y limpia. Después, una **bomba de recuperación o barrido** (*scavenge pump*) lo aspira del cárter y lo devuelve al depósito. Su función principal es dejar el cárter **casi vacío** mientras el motor funciona, para que el aceite no se acumule.",
+          "Para vaciar el cárter con eficacia, la bomba de recuperación tiene una capacidad de caudal **entre un 25 % y un 50 % superior** a la de presión: así el aceite sale del cárter más deprisa de lo que entra. Las ventajas del sistema son: lubricación **fiable en vuelo acrobático, invertido y con aceleraciones extremas**; **mayor capacidad total** de aceite; **mejor control de su temperatura**; **menos degradación térmica y oxidación**; **menos pérdidas por agitación del aceite** (*oil churning*) en el cárter; y **presión más estable** en todas las condiciones. Se usa en motores acrobáticos, turboalimentados y de más potencia. No es el caso del avión de escuela."
+        ],
+        "figure": "svg:020-carter-seco",
+        "caption": "Cárter húmedo frente a cárter seco: dónde está el aceite y qué bombas lo mueven",
+        "ideas": [
+          "El cárter seco es como una cafetera de goteo con jarra aparte: el café (aceite) no se queda en el filtro, la bomba lo lleva a una jarra independiente y desde allí se sirve.",
+          "La bomba de recuperación va con más caudal que la de presión por la misma razón que el desagüe de una bañera es más ancho que el grifo: si no, se desborda."
         ]
       },
       {
         "title": "Tipos de aceite y viscosidad",
         "text": [
-          "La **viscosidad** es la resistencia del aceite a fluir. Se indica con el número SAE: cuanto más alto, más espeso. Un aceite demasiado fluido no mantiene la película con calor; uno demasiado espeso circula mal con frío y tarda en llegar al motor al arrancar.",
-          "Un aceite **monogrado** (SAE 40, SAE 50) tiene una viscosidad que cambia mucho con la temperatura. Un **multigrado** (por ejemplo 20W-50) se comporta como uno fluido en frío (el número con W, de *winter*) y como uno más espeso con calor, así que sirve todo el año. El aceite elegido para un motor es el que fija el POH según la temperatura exterior; no se mezclan marcas ni tipos sin consultar.",
-          "Hay dos grandes familias. El aceite **mineral** sin aditivos se usa en el **rodaje** de un motor nuevo o recién rectificado, para que los segmentos se asienten. El aceite **con detergentes y dispersantes sin cenizas** (ashless dispersant) mantiene en suspensión los residuos y los lleva al filtro; es el habitual en el servicio normal. Un mismo motor no cambia de uno a otro sin respetar las indicaciones del fabricante."
+          "Los aceites de los motores de pistón aeronáuticos son normalmente de **base mineral**. Cuando el aceite no lleva aditivos se llama **monogrado** o **aceite puro**. Cuando se le incorporan aditivos específicos (antioxidantes, inhibidores de corrosión, antidesgaste o dispersantes) se llama **aceite compuesto**, y esos aditivos le permiten cumplir requisitos de rendimiento y certificación más exigentes. El aceite mineral sin aditivos se usa en el **rodaje** de un motor nuevo o recién rectificado, para que los segmentos se asienten; el compuesto con dispersantes sin cenizas (*ashless dispersant*), que mantiene los residuos en suspensión y los lleva al filtro, es el habitual en servicio normal. No se mezclan marcas ni tipos sin consultar al fabricante.",
+          "La **viscosidad** es la medida de la **fricción interna** de un fluido, su resistencia a fluir: dicho de otro modo, su espesor. Se indica con el número SAE y cuanto más alto, más espeso. Y varía mucho con la temperatura: al **subir la temperatura baja la viscosidad** (el aceite se hace más fluido), y al **bajar la temperatura sube** (más espeso). Un aceite **multigrado** (por ejemplo 20W-50) se comporta como uno fluido en frío (la W es de *winter*) y como uno más espeso en caliente, y por eso sirve todo el año. El aceite que se usa lo fija el POH según la temperatura exterior."
         ],
-        "verify": true
+        "ideas": [
+          "La miel del frigorífico y la miel calentada al baño maría son la misma miel, pero una cae a cucharadas y la otra se vierte: la viscosidad depende de la temperatura.",
+          "Un aceite multigrado es como un abrigo que se adapta: en frío se comporta como uno ligero para fluir enseguida, y en calor como uno más grueso para no desaparecer."
+        ],
+        "table": {
+          "caption": "Efectos de una viscosidad inadecuada",
+          "head": [
+            "Situación",
+            "Qué ocurre"
+          ],
+          "rows": [
+            [
+              "Viscosidad demasiado alta (aceite frío)",
+              "Arranque difícil, el aceite tarda en llegar a las piezas críticas, más pérdidas por fricción y más potencia absorbida por el propio motor (FHP, friction horsepower)"
+            ],
+            [
+              "Viscosidad demasiado baja (aceite muy caliente)",
+              "Película lubricante más fina, más contacto metal con metal, más desgaste, menor eficiencia de lubricación y riesgo de fallo de cojinetes y pistones"
+            ]
+          ],
+          "src": "Curso, Tema 7"
+        }
       },
       {
         "title": "Presión y temperatura en cabina",
@@ -88,6 +132,10 @@
         "bullets": [
           "Antes del primer vuelo del día se comprueba el **nivel de aceite** con la varilla, con el motor parado y frío, y que el tapón esté cerrado.",
           "Un consumo de aceite ligeramente mayor con mucho uso es normal, pero una pérdida repentina o aceite en el parabrisas indica avería."
+        ],
+        "ideas": [
+          "Es lo que pasa con una botella de agua oculta en una nevera: al principio cuesta sacar el líquido porque está viscoso; la presión alta al arrancar en frío es esa resistencia.",
+          "Una presión que cae mientras la temperatura sube es como la sirena de un coche con el depósito de aceite vacío: es una señal real, no un fallo del reloj."
         ]
       },
       {
@@ -104,21 +152,28 @@
         "note": {
           "kind": "warn",
           "text": "Presión baja con la temperatura normal puede ser un sensor averiado; presión baja con temperatura creciente casi nunca lo es. Ante la duda, trátalo como avería real."
-        }
+        },
+        "ideas": [
+          "Es lo mismo que cuando se enciende la luz del aceite en el coche: no esperas a llegar a casa, paras. Aquí además te estás jugando el motor y el vuelo."
+        ]
       }
     ],
     "numbers": [
-      "Funciones: lubricar, refrigerar, sellar, limpiar, proteger y amortiguar",
-      "Cárter húmedo (PA-28-161 y C172S): el cárter es el depósito; cárter seco: depósito separado",
+      "Función primaria: reducir fricción y desgaste; secundarias: refrigerar, limpiar, proteger de la corrosión, servicios hidráulicos e indicar el estado del motor (y sellar y amortiguar)",
+      "Cárter húmedo (PA-28-161 y C172S): el cárter es el depósito; limitado en maniobras, control térmico y capacidad",
+      "Cárter seco: depósito externo, bomba de presión y bomba de recuperación con un 25-50 % más de capacidad",
+      "Aceite monogrado (puro): sin aditivos; compuesto: con aditivos; base mineral",
+      "Viscosidad: sube al bajar la temperatura y baja al subirla",
       "Válvula de alivio: limita la presión; válvula de derivación del filtro: asegura el caudal si se obstruye",
-      "Presión tras el arranque: debe subir en unos segundos (30 s en el POH típico)",
-      "Multigrado 20W-50: fluido en frío y más espeso en caliente"
+      "Presión tras el arranque: debe subir en unos segundos (30 s en el POH típico)"
     ],
     "traps": [
-      "Creer que el aceite solo lubrica: refrigera, sella, limpia y protege.",
+      "Creer que el aceite solo lubrica: refrigera, limpia, protege, sella e indica el estado del motor.",
       "Pensar que con aceite frío la presión alta indica avería: es normal.",
-      "Confundir el aceite mineral de rodaje con el aceite con detergentes del servicio normal.",
-      "Pensar que la válvula de derivación del filtro es un fallo: es una protección que prioriza el caudal."
+      "Confundir el aceite mineral de rodaje con el aceite con aditivos del servicio normal.",
+      "Pensar que la válvula de derivación del filtro es un fallo: es una protección que prioriza el caudal.",
+      "Creer que a más temperatura el aceite es más espeso: es más fluido; al enfriarse se espesa.",
+      "Pensar que la bomba de recuperación del cárter seco es igual de grande que la de presión: es un 25-50 % mayor."
     ],
     "spain": [
       "En verano, en los aeródromos del interior y del sur, la temperatura de aceite sube con facilidad en el rodaje y el ascenso: vigílala."
@@ -131,9 +186,12 @@
       {
         "title": "Manual de vuelo del PA-28-161 y del C172S",
         "url": "https://www.piper.com/"
+      },
+      {
+        "title": "Curso de CGA (ATPLENJOY/DREAMAIR), Tema 7: Motores y hélices"
       }
     ],
-    "reviewed": "2026-10-09",
+    "reviewed": "2026-11-17",
     "links": [
       {
         "label": "Arranque del PA-28: presión de aceite",
@@ -146,6 +204,78 @@
       {
         "label": "Prevuelo del PA-28 (nivel de aceite)",
         "href": "#/ac/pa28/flow/preflight"
+      }
+    ],
+    "course": "Tema 7 · Motores y hélices (sistemas de lubricación)",
+    "outline": [
+      {
+        "title": "Funciones",
+        "items": [
+          "Primaria: reducir fricción y desgaste",
+          "Secundarias: refrigerar, limpiar, anticorrosión",
+          "Hidráulicas e indicador del estado del motor",
+          "También sella y amortigua"
+        ]
+      },
+      {
+        "title": "Cárter húmedo",
+        "items": [
+          "Aceite en el cárter (PA-28 y C172S)",
+          "Bomba, alivio, filtro con derivación, radiador",
+          "Limitaciones: maniobras, temperatura, oxidación, capacidad"
+        ]
+      },
+      {
+        "title": "Cárter seco",
+        "items": [
+          "Depósito externo",
+          "Bomba de presión y de recuperación (25-50 % más)",
+          "Ventajas: acrobacia, capacidad, temperatura, presión estable"
+        ]
+      },
+      {
+        "title": "Aceites",
+        "items": [
+          "Mineral: monogrado (sin aditivos) o compuesto (con ellos)",
+          "Multigrado 20W-50",
+          "Viscosidad alta en frío, baja en calor",
+          "Efectos: arranque difícil y FHP; película fina y metal-metal"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "Funciones del aceite: «LiRe LiPro SeAm»: Lubrica, Refrigera, Limpia, Protege, Sella, Amortigua (y avisa del estado del motor).",
+      "Cárter seco: «dos bombas, un depósito aparte, más caudal la de recuperación».",
+      "Viscosidad y temperatura: «caliente fluye, frío espesa»."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Cuál es la función primaria del aceite y cuáles las secundarias?",
+        "a": "Primaria: reducir fricción y desgaste. Secundarias: refrigerar, limpiar, proteger de la corrosión, servicios hidráulicos e indicar el estado del motor."
+      },
+      {
+        "q": "¿Por qué el cárter húmedo tiene problemas en maniobras bruscas?",
+        "a": "Porque el aceite se desplaza por el cárter y la bomba puede dejar de aspirarlo un instante."
+      },
+      {
+        "q": "¿Cómo funciona el cárter seco?",
+        "a": "El aceite está en un depósito externo; una bomba de presión lo envía al motor y una de recuperación lo devuelve desde el cárter."
+      },
+      {
+        "q": "¿Por qué la bomba de recuperación es un 25-50 % mayor?",
+        "a": "Para sacar el aceite del cárter más deprisa de lo que entra y mantenerlo casi vacío."
+      },
+      {
+        "q": "¿Qué diferencia hay entre aceite monogrado y compuesto?",
+        "a": "El monogrado o puro no lleva aditivos; el compuesto sí (antioxidantes, anticorrosivos, antidesgaste, dispersantes)."
+      },
+      {
+        "q": "¿Qué le pasa al aceite al calentarse y al enfriarse?",
+        "a": "Al calentarse se hace más fluido (menos viscoso); al enfriarse se espesa."
+      },
+      {
+        "q": "Consecuencias de un aceite demasiado espeso y demasiado fluido.",
+        "a": "Espeso: arranque difícil, circulación lenta y más FHP. Fluido: película fina, contacto metal con metal y desgaste."
       }
     ]
   },
@@ -402,6 +532,174 @@
         "10 °C no es una temperatura alta de aceite."
       ],
       "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.13.013",
+      "type": "concepto",
+      "level": 1,
+      "q": "La función primaria de la lubricación es:",
+      "options": [
+        "Refrigerar el motor",
+        "Reducir la fricción y el desgaste entre superficies en movimiento",
+        "Limpiar de residuos el cárter",
+        "Aumentar la presión de admisión"
+      ],
+      "correct": 1,
+      "why": "La función principal del aceite es evitar el contacto metal con metal, reduciendo fricción y desgaste; refrigerar, limpiar y proteger son secundarias.",
+      "whyNot": [
+        "Es una función secundaria.",
+        null,
+        "Es otra función secundaria.",
+        "El aceite no actúa sobre la presión de admisión."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.13.014",
+      "type": "regla",
+      "level": 2,
+      "q": "En un cárter seco, la capacidad de la bomba de recuperación respecto a la de presión es:",
+      "options": [
+        "Igual",
+        "Un 25-50 % menor",
+        "Entre un 25 % y un 50 % mayor",
+        "Diez veces mayor"
+      ],
+      "correct": 2,
+      "why": "Un caudal algo mayor garantiza que el cárter quede casi vacío y el aceite vuelva al depósito más deprisa de lo que sale.",
+      "whyNot": [
+        "Entonces el aceite se acumularía en el cárter.",
+        "No bastaría para vaciar el cárter.",
+        null,
+        "Es muy superior a lo necesario; el curso indica un 25-50 %."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.13.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una limitación del cárter húmedo es que:",
+      "options": [
+        "El aceite no puede refrigerar nada",
+        "Necesita dos bombas siempre",
+        "No funciona en un avión de escuela",
+        "En maniobras bruscas el aceite se desplaza y la bomba puede interrumpir la aspiración"
+      ],
+      "correct": 3,
+      "why": "El desplazamiento del aceite en el cárter con aceleraciones y cambios de actitud puede cortar la aspiración un instante.",
+      "whyNot": [
+        "El aceite refrigera, pero con menos control en ese sistema.",
+        "Solo necesita una bomba de presión.",
+        "La mayoría de aviones ligeros la usa.",
+        null
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.13.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un aceite monogrado, también llamado aceite puro, es el que:",
+      "options": [
+        "No lleva aditivos",
+        "Lleva antioxidantes y dispersantes",
+        "Es de base vegetal",
+        "Solo se usa en vuelo invertido"
+      ],
+      "correct": 0,
+      "why": "El aceite sin aditivos es monogrado o puro; con aditivos antidesgaste, anticorrosión, antioxidantes o dispersantes es compuesto.",
+      "whyNot": [
+        null,
+        "Eso es un aceite compuesto.",
+        "Los aceites de aviación son normalmente de base mineral.",
+        "No tiene relación con el vuelo invertido."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.13.017",
+      "type": "concepto",
+      "level": 1,
+      "q": "Cuando aumenta la temperatura del aceite, su viscosidad:",
+      "options": [
+        "Aumenta y el aceite es más espeso",
+        "No cambia",
+        "Disminuye y el aceite es más fluido",
+        "Se duplica siempre"
+      ],
+      "correct": 2,
+      "why": "El calor hace al aceite más fluido; el frío lo espesa.",
+      "whyNot": [
+        "Es al revés.",
+        "La viscosidad depende mucho de la temperatura.",
+        null,
+        "No sigue ese comportamiento."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.13.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un aceite demasiado fluido por temperatura alta provoca:",
+      "options": [
+        "Menos espesor de la película y más contacto metal con metal",
+        "Arranques difíciles",
+        "Mayor potencia de rozamiento por viscosidad",
+        "Menos desgaste"
+      ],
+      "correct": 0,
+      "why": "Con viscosidad baja la película es fina, hay más contacto entre metales, más desgaste y riesgo de fallo de cojinetes y pistones.",
+      "whyNot": [
+        null,
+        "Eso se asocia a un aceite demasiado espeso por el frío.",
+        "Eso pasa con aceite espeso.",
+        "Con menos película hay más desgaste."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.13.019",
+      "type": "concepto",
+      "level": 3,
+      "q": "La potencia que el motor absorbe por su propio rozamiento interno, mayor con aceite frío y espeso, se llama:",
+      "options": [
+        "Potencia indicada (IHP)",
+        "Friction horsepower (FHP)",
+        "Presión media efectiva",
+        "Potencia de arranque"
+      ],
+      "correct": 1,
+      "why": "La FHP es la potencia consumida internamente para vencer fricciones; crece si el aceite es muy viscoso.",
+      "whyNot": [
+        "Es la potencia de los gases en el cilindro.",
+        null,
+        "Es una presión, no una potencia de rozamiento.",
+        "No es un concepto de motor."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.13.020",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué ventaja tiene el cárter seco respecto al húmedo?",
+      "options": [
+        "El aceite se guarda en el cárter, que es más grande",
+        "No necesita bomba de presión",
+        "Tiene menos capacidad total",
+        "Mejor control de la temperatura del aceite y lubricación fiable en acrobacia e invertido"
+      ],
+      "correct": 3,
+      "why": "El depósito externo permite más capacidad, mejor temperatura y lubricación fiable en maniobras extremas.",
+      "whyNot": [
+        "En el cárter seco el aceite está en un depósito aparte.",
+        "Necesita bomba de presión y de recuperación.",
+        "Tiene mayor capacidad total.",
+        null
+      ],
+      "ref": "Curso Tema 7"
     }
   ],
   "cards": [
@@ -424,6 +722,31 @@
       "id": "c.020.13.04",
       "front": "Presión de aceite baja y temperatura en aumento",
       "back": "Pérdida de aceite: reducir potencia y prepararse para aterrizar"
+    },
+    {
+      "id": "c.020.13.05",
+      "front": "Función primaria del aceite",
+      "back": "Reducir la fricción y el desgaste entre superficies en movimiento"
+    },
+    {
+      "id": "c.020.13.06",
+      "front": "Funciones secundarias del aceite",
+      "back": "Refrigerar, limpiar, proteger de la corrosión, servicios hidráulicos e indicar el estado del motor"
+    },
+    {
+      "id": "c.020.13.07",
+      "front": "Cárter seco: bombas",
+      "back": "De presión (depósito a motor) y de recuperación (cárter a depósito, 25-50 % más caudal)"
+    },
+    {
+      "id": "c.020.13.08",
+      "front": "Aceite monogrado y compuesto",
+      "back": "Monogrado: sin aditivos. Compuesto: con aditivos antioxidantes, anticorrosivos, antidesgaste o dispersantes"
+    },
+    {
+      "id": "c.020.13.09",
+      "front": "Viscosidad y temperatura",
+      "back": "Más calor, menos viscosidad; más frío, más viscosidad"
     }
   ]
 }

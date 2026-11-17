@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 310">
+<title>Control de la presión de cabina: aire entrante, válvula de salida y dispositivos de seguridad</title>
+<defs><marker id="020-presurizacion-control-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" class="ink-fill"/></marker><marker id="020-presurizacion-control-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" class="ac-fill"/></marker></defs>
+<rect x="110" y="80" width="430" height="160" rx="60" class="soft"/>
+<rect x="130" y="100" width="390" height="70" rx="30" class="ac"/>
+<line x1="130" y1="170" x2="520" y2="170" class="ln thick"/>
+<rect x="130" y="172" width="390" height="40" class="sky" opacity="0.5"/>
+<rect x="296" y="166" width="22" height="8" class="wa"/>
+<text x="325" y="192" class="tx2">panel de alivio</text>
+<text x="325" y="140" class="txa b" text-anchor="middle">Cabina presurizada</text>
+<text x="190" y="196" class="tx2" text-anchor="middle">bodega</text>
+<line x1="20" y1="150" x2="118" y2="150" class="ac-ln thick" marker-end="url(#020-presurizacion-control-a)"/>
+<text x="20" y="116" class="txa b">Aire a caudal</text>
+<text x="20" y="132" class="txa b">constante</text>
+<text x="20" y="170" class="tx2">(motores)</text>
+<line x1="400" y1="240" x2="400" y2="286" class="ln thick" marker-end="url(#020-presurizacion-control-f)"/>
+<text x="412" y="276" class="tx b">Válvula de salida</text>
+<text x="412" y="294" class="tx2">cerrar: sube la presión; abrir: baja</text>
+<line x1="190" y1="38" x2="190" y2="96" class="ln thick" marker-end="url(#020-presurizacion-control-f)"/>
+<text x="190" y="20" class="tx2" text-anchor="middle">Alivio hacia el interior</text>
+<text x="190" y="32" class="tx2" font-size="11" text-anchor="middle">(fuera &gt; dentro 0,5–1 psi)</text>
+<line x1="330" y1="96" x2="330" y2="38" class="wa-ln thick" marker-end="url(#020-presurizacion-control-f)"/>
+<text x="330" y="20" class="txw" text-anchor="middle">Alivio de sobrepresión</text>
+<text x="330" y="32" class="tx2" font-size="11" text-anchor="middle">(diferencial máximo)</text>
+<line x1="428" y1="96" x2="428" y2="38" class="ln thick" marker-end="url(#020-presurizacion-control-f)"/>
+<text x="500" y="20" class="tx2" text-anchor="middle">Válvula de descarga</text>
+<text x="500" y="32" class="tx2" font-size="11" text-anchor="middle">(manual, presión a cero)</text>
+</svg>

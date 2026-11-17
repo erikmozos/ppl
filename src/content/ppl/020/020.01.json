@@ -1,64 +1,328 @@
 {
   "lesson": {
     "id": "020.01",
-    "title": "Cargas y estructura",
-    "summary": "Las cinco cargas básicas (tracción, compresión, cortadura, torsión y flexión), los tipos de estructura de un avión ligero (tubos, monocasco, semimonocasco, composites), materiales, alas, fuselaje, empenaje y parabrisas, y los límites de carga y de fatiga.",
+    "title": "Diseño estructural, cargas y estructura",
+    "summary": "Filosofías de diseño (vida segura, a prueba de fallos, tolerante al daño), cargas y esfuerzos, deformación y límite elástico, fatiga y corrosión, mantenimiento hard-time y on-condition, monocasco y semimonocasco, materiales y uniones, ala y empenaje, flutter, fuselaje presurizado, factor de carga y masas estructurales máximas.",
+    "course": "Tema 1 · Fuselaje y estructura",
     "objectives": [
-      "Reconocer tracción, compresión, cortadura, torsión y flexión y dónde actúan en un avión",
-      "Diferenciar estructura de tubos, monocasco y semimonocasco y sus ventajas e inconvenientes",
-      "Conocer los materiales habituales y sus problemas: corrosión y fatiga",
-      "Describir las partes de ala, fuselaje y empenaje y el cuidado del parabrisas",
-      "Distinguir carga límite y carga última y el factor de carga de las categorías normal y utility"
+      "Distinguir las filosofías de vida segura, a prueba de fallos y tolerante al daño y relacionarlas con la redundancia y el mantenimiento",
+      "Identificar tracción, compresión, cortadura, flexión y torsión y explicar esfuerzo, deformación y límite elástico",
+      "Explicar el pandeo, la fatiga, la corrosión y cómo se previenen y se detectan",
+      "Describir estructuras monocasco y semimonocasco, materiales, uniones, alas, empenaje y flutter",
+      "Aplicar carga límite, carga última y factor de carga, y explicar las masas máximas estructurales y la MZFM"
     ],
     "sections": [
       {
-        "title": "Las cinco cargas",
+        "title": "Filosofías de diseño estructural",
         "text": [
-          "Una estructura de avión soporta fuerzas de distinto tipo. Se agrupan en cinco **cargas** básicas, y cada pieza suele soportar varias a la vez:"
+          "Un avión se diseña partiendo de una pregunta incómoda: **¿qué pasa el día que una pieza se cansa o se rompe?** Hay tres respuestas históricas, que no se excluyen y que explican después cómo se mantiene cada pieza: la **filosofía de vida segura** (safe life), la **filosofía a prueba de fallos** (fail-safe) y la **filosofía tolerante al daño** (damage tolerant).",
+          "En la de **vida segura** se asigna a la pieza un periodo que debe aguantar sin fallar, calculado a partir de su comportamiento a fatiga y expresado en horas de vuelo o en número de vuelos. Al llegar al final se sustituye, **esté como esté**. Es típica de estructuras metálicas sencillas. En la **a prueba de fallos** la carga viaja por **varios caminos**: si aparece una grieta en uno, los demás siguen soportando el avión hasta que alguien la encuentre en una revisión. Se apoya, por tanto, en la **redundancia**. La **tolerante al daño** no fija una vida segura: la pieza está proyectada para que el fallo de uno de sus elementos no comprometa el conjunto durante toda la vida del avión, pero eso solo es verdad si se hacen **inspecciones regulares** y se evalúa a menudo su estado."
         ],
         "table": {
-          "caption": "Cargas básicas y un ejemplo en un avión ligero",
+          "caption": "Las tres filosofías de diseño estructural",
+          "head": [
+            "Filosofía",
+            "Idea clave",
+            "Cómo se controla"
+          ],
+          "rows": [
+            [
+              "Vida segura (safe life)",
+              "Vida útil fija basada en la fatiga; se cambia aunque parezca sana",
+              "Contador de horas o de ciclos (mantenimiento hard-time)"
+            ],
+            [
+              "A prueba de fallos (fail-safe)",
+              "Varios caminos de carga: una grieta no tumba la estructura",
+              "Inspección periódica que encuentre la grieta a tiempo"
+            ],
+            [
+              "Tolerante al daño (damage tolerant)",
+              "Sin vida fija; soporta el fallo de elementos sueltos",
+              "Inspecciones regulares y evaluación frecuente del estado"
+            ]
+          ]
+        },
+        "ideas": [
+          "Vida segura es el yogur con fecha de caducidad: se tira el día marcado aunque huela perfecto.",
+          "A prueba de fallos es la mochila con dos asas: si se rompe una, no se te cae todo al suelo.",
+          "Tolerante al daño es el coche que no se cambia a los 200 000 km, sino cuando el mecánico, revisión tras revisión, dice que el desgaste ya no es aceptable."
+        ]
+      },
+      {
+        "title": "Redundancia",
+        "text": [
+          "La **redundancia** consiste en multiplicar los componentes críticos de un sistema para que el fallo de uno no sea el fallo del sistema. Estadísticamente, reduce la probabilidad de la condición de fallo, porque para perder la función tienen que fallar **todos** los elementos a la vez. Por eso las superficies de mando de un avión moderno se dividen en superficies más pequeñas: por ejemplo, **dos elevadores con dos actuadores cada uno**.",
+          "Como regla general, los sistemas **mecánicos se duplican** y los **electrónicos pueden triplicarse**, porque la probabilidad de fallo de la electrónica suele ser mayor. Con tres canales, además, si uno discrepa se le puede ignorar por mayoría; con dos, cuando discrepan no sabes cuál tiene razón."
+        ],
+        "examples": [
+          {
+            "q": "Un canal falla una vez cada 1000 horas (probabilidad 10⁻³ por hora) y los fallos son independientes. ¿Con qué probabilidad fallan a la vez dos canales? ¿Y tres?",
+            "a": "Se multiplican las probabilidades: 10⁻³ × 10⁻³ = 10⁻⁶ (una vez cada millón de horas) con dos canales, y 10⁻⁹ con tres."
+          }
+        ],
+        "ideas": [
+          "Llevar dos paraguas no los hace más bonitos, pero para quedarte mojado tienen que romperse los dos.",
+          "La rueda de repuesto del coche: la mayoría de los viajes no la usas, pero el día del pinchazo es la diferencia entre llegar o quedarte tirado."
+        ]
+      },
+      {
+        "title": "Cargas y esfuerzos: tracción, compresión, cortadura, flexión y torsión",
+        "text": [
+          "Toda pieza de un avión recibe fuerzas, que se agrupan en cinco **cargas**. Tres son simples. La **compresión** empuja dos superficies una contra otra y obliga a la pieza a acortarse. La **tracción** las separa y estira la pieza en la dirección de la fuerza. La **cizalladura** o **cortadura** es una fuerza aplicada **tangencialmente**, con efecto de corte: es la carga típica de los **remaches**, que unen chapas intentando evitar que una resbale sobre la otra.",
+          "Otras dos son **combinadas**. La **flexión** produce tracción en un lado de la pieza y compresión en el otro; las alas están sometidas a flexión constantemente. La **torsión** es el retorcimiento a lo largo del eje: aparece en cualquier eje que gira (la hélice, una turbina) y también en las puntas de ala. Una misma pieza suele soportar varias cargas a la vez."
+        ],
+        "figure": "svg:020-cargas-basicas",
+        "caption": "Las cinco cargas básicas y un ejemplo de cada una",
+        "table": {
+          "caption": "Cargas en un avión ligero (PA-28, C172)",
           "head": [
             "Carga",
-            "Qué hace",
-            "Ejemplo"
+            "Dónde la encuentras"
           ],
           "rows": [
             [
               "Tracción",
-              "Estira el material",
-              "Los montantes del ala del C172 con el avión en vuelo; la parte inferior del ala al doblarse hacia arriba"
+              "Montante del ala del C172 en vuelo; parte inferior del ala al curvarse hacia arriba"
             ],
             [
               "Compresión",
-              "Comprime o acorta",
-              "El tren de aterrizaje al tocar la pista; la parte superior del ala en vuelo"
+              "Tren de aterrizaje al tocar; parte superior del ala en vuelo; montante en tierra"
             ],
             [
-              "Cortadura (cizalladura)",
-              "Desliza una capa del material sobre otra",
-              "Los remaches y tornillos que unen el ala al fuselaje; el alma del larguero"
-            ],
-            [
-              "Torsión",
-              "Retuerce",
-              "El fuselaje al aplicar el timón de dirección; el ala por el momento del perfil"
+              "Cortadura",
+              "Remaches y tornillos que unen el ala al fuselaje; alma del larguero"
             ],
             [
               "Flexión",
-              "Curva: tracción en un lado y compresión en el otro",
-              "El larguero del ala: sostiene el peso del avión en vuelo"
+              "Larguero del ala: sostiene el peso del avión con la sustentación"
+            ],
+            [
+              "Torsión",
+              "Eje de la hélice o del motor; fuselaje al pisar el pedal del timón de dirección; ala con el movimiento de los alerones"
             ]
           ],
           "src": "PHAK cap. 6"
         },
         "bullets": [
-          "En vuelo la sustentación **dobla el ala hacia arriba**: el extradós (superior) se comprime y el intradós (inferior) se estira. En tierra, con el avión parado, ocurre al revés.",
-          "La flexión es la suma de una tracción y una compresión a ambos lados del eje neutro: por eso el larguero tiene alas (cabezas) separadas por un alma."
+          "En vuelo la sustentación **curva el ala hacia arriba**: el extradós (superior) se comprime y el intradós (inferior) se estira. En tierra, con el avión parado, el sentido se invierte.",
+          "El larguero tiene dos cabezas separadas por un alma porque la flexión es la suma de una compresión arriba y una tracción abajo: el material útil está lejos del eje neutro."
+        ],
+        "ideas": [
+          "Compresión: apretar un muelle con las manos. Tracción: estirar una goma elástica.",
+          "Cizalladura: unas tijeras; las dos hojas deslizan una junto a la otra y cortan el papel entre ambas.",
+          "Flexión: doblar una regla de plástico; la cara de fuera se estira y la de dentro se comprime.",
+          "Torsión: escurrir una toalla mojada retorciéndola."
         ]
       },
       {
-        "title": "Tipos de estructura",
+        "title": "Esfuerzo y pandeo",
+        "text": [
+          "El **esfuerzo** (σ) es la fuerza por unidad de superficie que aparece **dentro** de la pieza como respuesta a las cargas externas: una especie de presión interna. Dice cuánto se está apretando el material y se compara con la resistencia que se le exige. La misma carga produce más esfuerzo en una pieza fina que en una gruesa, y por eso se refuerzan las zonas de carga concentrada.",
+          "El **pandeo** o inestabilidad estructural aparece cuando una estructura tipo carcasa se comprime y un elemento se **dobla lateralmente**. Su rasgo peligroso es que ocurre con esfuerzos **mucho menores** que los de rotura. En la práctica, un fuselaje con pandeo (arrugas o abolladuras en el revestimiento) indica que el avión ha sufrido **cargas anormales** (un aterrizaje muy duro, turbulencia fuerte, una maniobra por encima del límite): se avisa a mantenimiento antes de volar."
+        ],
+        "formulas": [
+          {
+            "f": "σ = F / A",
+            "note": "Esfuerzo = fuerza entre área de la sección; en N/mm² (= MPa) o en psi."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Una varilla de sección 50 mm² soporta una tracción de 10 kN. ¿Qué esfuerzo sufre? ¿Y si la sección fuera de 100 mm²?",
+            "a": "10 000 N / 50 mm² = 200 N/mm² (200 MPa). Con 100 mm² serían 100 N/mm²: doblar la sección reparte la carga y el esfuerzo se reduce a la mitad."
+          }
+        ],
+        "ideas": [
+          "Una pajita de refresco apretada por los extremos se dobla mucho antes de aplastarse: eso es el pandeo.",
+          "Una lata vacía aguanta que te subas encima, pero si le das un golpecito de lado se arruga: aguanta mucho bien centrada y poco con un defecto."
+        ]
+      },
+      {
+        "title": "Deformación y límite elástico",
+        "text": [
+          "La **deformación** (ε) es el cambio de forma o de dimensiones que provoca el esfuerzo. Se mide como porcentaje de las dimensiones originales y por eso es **adimensional**: una barra de 100 mm que se estira 0,2 mm tiene una deformación del 0,2 %. En una estructura de avión siempre hay deformación, aunque no se vea.",
+          "Mientras el material es elástico, esfuerzo y deformación son proporcionales y su cociente es una constante, el **módulo de elasticidad de Young** (E). Si la deformación se queda dentro del **límite elástico**, al retirar la carga la pieza **recupera** sus dimensiones. Si se supera, la deformación es **plástica**: queda **permanente**. Esta idea explica el diseño por cargas: la carga límite debe permanecer dentro de la zona elástica, y la carga última puede entrar en la plástica sin que la pieza se rompa."
+        ],
+        "figure": "svg:020-esfuerzo-deformacion",
+        "caption": "Esfuerzo y deformación: si pasas el límite elástico, al soltar queda deformación permanente",
+        "formulas": [
+          {
+            "f": "ε (%) = (ΔL / L₀) × 100",
+            "note": "ΔL es el alargamiento y L₀ la longitud sin carga."
+          },
+          {
+            "f": "E = σ / ε",
+            "note": "Módulo de Young; en la zona elástica, la pendiente de la recta."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Una barra de 250 mm se estira 0,5 mm al cargarla y, al soltarla, vuelve a medir 250 mm. ¿Qué deformación tuvo? ¿Fue elástica?",
+            "a": "ε = 0,5 / 250 × 100 = 0,2 %. Fue elástica porque recuperó la longitud original. Si se hubiera quedado en 250,2 mm, habría una deformación plástica de 0,2 mm."
+          }
+        ],
+        "ideas": [
+          "El muelle de un bolígrafo vuelve a su sitio (elástico); un clip que doblas del todo ya no se endereza solo (plástico).",
+          "Estirar una goma de pelo o estirar plastilina: la primera recupera su forma, la segunda se queda larga."
+        ]
+      },
+      {
+        "title": "Cargas estáticas, dinámicas y cíclicas",
+        "text": [
+          "Un avión recibe cargas en vuelo y en tierra, y conviene clasificarlas por **cómo varían con el tiempo**. El **factor de carga** es directamente proporcional al esfuerzo y a la deformación de los componentes: más g, más esfuerzo."
+        ],
+        "table": {
+          "caption": "Clasificación de las cargas por su evolución en el tiempo",
+          "head": [
+            "Tipo",
+            "Qué es",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Estática",
+              "Se aplica de forma continua sobre el componente",
+              "Cualquier fuerza gravitatoria: el peso de la estructura"
+            ],
+            [
+              "Dinámica",
+              "Cambia de magnitud con el tiempo; no es continua",
+              "La sustentación; el peso del combustible en las alas, que baja durante el vuelo"
+            ],
+            [
+              "Cíclica",
+              "Carga periódica a intervalos regulares",
+              "Ráfagas sobre el ala; las vibraciones, una de las más significativas"
+            ]
+          ],
+          "src": "Curso"
+        },
+        "bullets": [
+          "Las **cargas cíclicas** son la causa de la **fatiga** y de las fracturas por fatiga en aviación."
+        ],
+        "ideas": [
+          "Estática: un libro apoyado en una mesa. Dinámica: una mochila con una botella que vas vaciando. Cíclica: la cama elástica de un parque, que sube y baja una y otra vez."
+        ]
+      },
+      {
+        "title": "Fatiga",
+        "text": [
+          "La **fatiga** es el debilitamiento gradual de un material por esfuerzos repetidos. Puede producir grietas y fallos si no se detecta y repara a tiempo. Lo sorprendente es que la magnitud de la carga cíclica puede ser **mucho menor que la resistencia última** del material y, aun así, la repetición hace fallar la pieza metálica de forma catastrófica.",
+          "Un fallo por fatiga depende de dos factores: **cuánto esfuerzo** se repite y **cuántos ciclos** se acumulan. A menos esfuerzo, más ciclos aguanta la pieza; a más esfuerzo, menos. Las grietas nacen donde se **concentran** los esfuerzos: agujeros de remaches, esquinas vivas, arañazos, ventanillas y puertas. Por eso las ventanas son redondeadas y se refuerzan con placas, y por eso un rayón profundo en una pieza muy cargada merece atención. En un avión ligero un ciclo es, a grandes rasgos, un vuelo; en uno de línea cada vuelo añade además un ciclo de presurización."
+        ],
+        "ideas": [
+          "Doblar un clip hacia delante y hacia atrás: no se rompe al primer doblez, pero se acaba partiendo con la fuerza de un niño.",
+          "Una bolsa de patatas se rasga con facilidad si empiezas por la muesca: el esfuerzo se concentra en ese punto."
+        ]
+      },
+      {
+        "title": "Corrosión",
+        "text": [
+          "La **corrosión** es un proceso químico por el que un material cambia gradualmente a un estado más estable (el hierro se convierte en óxido). El proceso químico es el mismo siempre; cambia lo que lo desencadena, y de ahí vienen los tipos de corrosión. **El agua está detrás de la mayoría de las reacciones corrosivas** de un avión.",
+          "Dos casos merecen nombre propio. La **corrosión bajo tensión** es la acción simultánea de corrosión y fatiga: la corrosión abre una grieta inicial y la fatiga hace que esa grieta crezca. La **corrosión electrolítica** (galvánica) aparece cuando dos metales distintos están unidos **sin aislamiento adecuado**; si hay agua entre ellos, se forma una pila y el más débil se corroe. Además, hay líquidos agresivos a bordo: el ácido de las **baterías** (por eso van en cajas metálicas con drenaje), los productos químicos de las **aguas residuales** y el **fluido hidráulico** de los grandes aviones, corrosivo y tóxico."
+        ],
+        "ideas": [
+          "La bici olvidada bajo la lluvia: la cadena se pone naranja antes que nada.",
+          "Una moneda y un clavo metidos en un limón hacen una pila: dos metales distintos y un líquido es justo la receta de la corrosión electrolítica."
+        ]
+      },
+      {
+        "title": "Prevención y detección de la corrosión",
+        "text": [
+          "La exposición al ambiente, la humedad y los contaminantes aceleran la corrosión, igual que una pintura mal aplicada o una preparación deficiente de la superficie. Los esfuerzos la concentran en **cigüeñales, trenes de aterrizaje, fijaciones y rodamientos**, y se forma en **hendiduras** donde se retiene agua: uniones, solapes y tornillería. La prevención se basa en **recubrimientos** (pintura, anodizado, Alclad), **limpieza**, **inspecciones** y **compuestos anticorrosión**.",
+          "Detectarla es cuestión de mirar colores: la corrosión altera el **color y la textura** de la superficie."
+        ],
+        "table": {
+          "caption": "Cómo reconocer la corrosión por su aspecto",
+          "head": [
+            "Material",
+            "Aspecto de la corrosión"
+          ],
+          "rows": [
+            [
+              "Ferrosos (acero, hierro)",
+              "Manchas rojas o naranjas (óxido)"
+            ],
+            [
+              "Aluminio",
+              "Al principio blanco o gris, con aspecto apagado y deslucido; después, polvo blanco o gris"
+            ],
+            [
+              "Cobre",
+              "Depósito salino azul verdoso"
+            ]
+          ],
+          "src": "Curso"
+        },
+        "bullets": [
+          "Los **orificios de drenaje** del fondo del fuselaje y de las alas deben estar libres: si no, el agua se queda dentro y corroe desde el interior."
+        ],
+        "ideas": [
+          "Piensa en un semáforo de colores: rojo para el hierro, blanco para el aluminio, azul verdoso para el cobre."
+        ]
+      },
+      {
+        "title": "Mantenimiento hard-time y on-condition",
+        "text": [
+          "Hay dos grandes maneras de decidir **cuándo** tocar una pieza. En el mantenimiento **hard-time** (a tiempo fijo) el componente se revisa o se sustituye tras un número determinado de horas de vuelo o de ciclos: es la consecuencia directa de la filosofía de **vida segura**. En el mantenimiento **on-condition** (bajo condición) se sustituye o revisa **antes de que falle**, pero no por calendario sino por su **estado**: el componente está diseñado para mostrar cuándo se acerca a su límite y se inspecciona con regularidad."
+        ],
+        "table": {
+          "caption": "Hard-time frente a on-condition",
+          "head": [
+            "",
+            "Hard-time",
+            "On-condition"
+          ],
+          "rows": [
+            [
+              "Criterio",
+              "Horas de vuelo o ciclos acumulados",
+              "Estado medido en inspecciones"
+            ],
+            [
+              "Origen",
+              "Filosofía de vida segura",
+              "Piezas que avisan de su desgaste; filosofías a prueba de fallos y tolerante al daño"
+            ],
+            [
+              "Ejemplo en un avión ligero",
+              "Revisión general del motor al alcanzar las horas del fabricante; batería de la baliza",
+              "Pastillas de freno, dibujo del neumático, holguras, compresión de los cilindros"
+            ]
+          ]
+        },
+        "note": {
+          "kind": "tip",
+          "text": "Que una pieza sea on-condition no significa que se repare cuando falla: se cambia cuando la inspección dice que ya no es fiable, antes del fallo."
+        },
+        "ideas": [
+          "Cambiar el aceite cada 6 meses sin mirar nada es hard-time; cambiar las pastillas cuando asoma el testigo de desgaste es on-condition."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Inspección exterior (walkaround)",
+        "text": [
+          "La inspección exterior es la última oportunidad de ver un daño antes del vuelo. La rutina del curso es: primero **alejarte** y mirar el avión de conjunto, que debe verse equilibrado, sin una ala caída ni un tren raro; después, el fuselaje, especialmente donde se concentran los esfuerzos: **mamparos y raíces de las alas**; luego, **debajo** del avión y el tren, en busca de fugas. Un avión de **material compuesto** es más difícil de evaluar, porque el daño interior (una delaminación) no siempre se ve.",
+          "Ojo con las manchas: el **aceite**, el **fluido hidráulico** y los **compuestos anticorrosión** pueden parecerse. Si no sabes qué es, averigua su origen antes de volar. Todo daño visible debe estar señalado e identificado en el **mapa de daños** del avión, de modo que puedas distinguir entre una marca ya conocida y una nueva."
+        ],
+        "bullets": [
+          "En el PA-28-161 y el C172S sigue el recorrido de la lista del POH (alas, cola, tren, motor) y fíjate en remaches sueltos, arrugas en el revestimiento y holguras de mandos.",
+          "Si ves una arruga (pandeo) o una grieta alrededor de remaches, no vuelas hasta que lo revise mantenimiento."
+        ],
+        "ideas": [
+          "Es como mirar un coche de segunda mano: de lejos para ver si está torcido, y de cerca por abajo para ver si hay manchas en el suelo."
+        ]
+      },
+      {
+        "title": "Principios de construcción: monocasco y semimonocasco",
+        "text": [
+          "Los componentes estructurales deben tener **resistencia** para soportar las cargas y **rigidez** para no deformarse. Según cómo se transmitan y absorban las cargas, hay dos tipos de estructura. En el **monocasco** las **cuadernas** (marcos) y los mamparos dan la geometría y fijan el revestimiento; el **revestimiento**, de capa gruesa de aleación de aluminio, magnesio, titanio o compuesto, soporta los esfuerzos de tracción y la mayor parte de la flexión y la torsión. Es simple, pero tiene poca capacidad para cargas concentradas y **cualquier daño superficial reduce su resistencia**.",
+          "El **semimonocasco** tiene lo mismo y añade **cuadernas adicionales**, **larguerillos** y **largueros longitudinales** que refuerzan la forma y absorben parte de las cargas. Según el curso, los larguerillos ayudan frente a las cargas laterales, los largueros dan rigidez en el sentido longitudinal (sobre todo frente a la flexión) y las cuadernas ayudan con la torsión. El revestimiento sigue soportando buena parte de la carga. El curso lo propone como el más adecuado para aviones de transporte presurizados."
+        ],
+        "figure": "svg:020-semimonocasco",
+        "caption": "Semimonocasco: cuadernas, largueros, larguerillos y revestimiento",
         "table": {
           "caption": "Tipos de estructura del fuselaje",
           "head": [
@@ -70,96 +334,376 @@
             [
               "Celosía de tubos",
               "Armazón de tubos de acero soldados, cubierto de tela",
-              "Sencilla y robusta; difícil de dar buenas formas aerodinámicas; hoy poco frecuente"
+              "Sencilla y robusta; difícil de dar formas aerodinámicas; poco frecuente hoy"
             ],
             [
               "Monocasco",
-              "El revestimiento exterior soporta todas las cargas, con cuadernas para darle forma",
-              "Muy limpia aerodinámicamente; frágil: una abolladura o un agujero debilita la pieza"
+              "El revestimiento soporta casi todo; cuadernas para dar forma",
+              "Simple; frágil frente a cargas concentradas y abolladuras"
             ],
             [
               "Semimonocasco",
-              "Revestimiento + cuadernas + largueros y larguerillos; el conjunto soporta las cargas",
-              "El más usado (PA-28, C172): ligero, resistente y con redundancia si falla un elemento"
+              "Revestimiento más cuadernas, largueros y larguerillos",
+              "Ligero, resistente y con redundancia; es el del PA-28 y el C172S"
             ],
             [
               "Materiales compuestos",
-              "Fibra de carbono o vidrio con resina, a menudo en sándwich con núcleo de espuma o nido de abeja",
-              "Muy ligera y de formas suaves; hay que vigilar delaminaciones, impactos y exposición al calor o a disolventes"
+              "Fibra y resina, a menudo en sándwich con núcleo alveolar",
+              "Muy ligera, de formas suaves; hay que vigilar delaminación, impactos y calor"
             ]
           ],
-          "src": "PHAK cap. 6"
+          "src": "Curso; PHAK cap. 6"
         },
-        "figure": "svg:020-semimonocasco",
-        "caption": "Estructura semimonocasco: cuadernas, largueros, larguerillos y revestimiento.",
+        "note": {
+          "kind": "warn",
+          "text": "El curso presenta el monocasco como adecuado para aviones ligeros y el semimonocasco para los presurizados de transporte, pero el PA-28 y el C172S son de semimonocasco. Las dos cosas se estudian: en el examen, un avión ligero metálico suele ser semimonocasco."
+        },
+        "ideas": [
+          "El monocasco es una cáscara de huevo: fina y resistente por su forma, pero una pequeña grieta la debilita mucho.",
+          "El semimonocasco es la cáscara de huevo con costillas por dentro, como el casco de un barco: si falla una, las demás ayudan."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Partes del ala, del fuselaje y del empenaje",
         "text": [
-          "La forma de organizar la estructura define cómo se reparten las cargas.",
-          "El PA-28-161 y el C172S son de **semimonocasco** de aleación de aluminio. Las **cuadernas** (mamparos) dan forma a la sección, los **largueros** y **larguerillos** llevan la flexión a lo largo del fuselaje y el **revestimiento** (la piel) soporta tracción y cortadura y ayuda a repartir las cargas."
-        ]
+          "El **ala** es una caja estructural. Los **largueros** (principal y secundario) soportan la flexión; las **costillas** dan forma al perfil y reparten la carga entre largueros y revestimiento; el **revestimiento** cierra la caja y colabora. En el interior del ala van los **depósitos de combustible**, uno en cada lado en el PA-28-161 y en el C172S.",
+          "El **fuselaje** aloja cabina, equipaje y motor y une alas y empenaje. El **empenaje** tiene el estabilizador vertical, con el timón de dirección, y el horizontal, con el de profundidad. En el PA-28-161 el horizontal es un **estabilizador móvil de una sola pieza (stabilator)**; el C172S lleva estabilizador fijo y timón de profundidad separado.",
+          "El **parabrisas** y las ventanillas son de **metacrilato (acrílico)**: se rayan con facilidad y se limpian con agua y jabón suave, paño blando o gamuza, **sin disolventes** ni productos domésticos, que lo agrietan y lo vuelven opaco. Una grieta reduce la visibilidad y la resistencia a un impacto de ave."
+        ],
+        "ideas": [
+          "Las costillas del ala son como las varillas de un paraguas: dan forma y reparten el esfuerzo sobre la tela."
+        ],
+        "verify": false
       },
       {
         "title": "Materiales",
         "text": [
-          "El material ideal es **ligero, resistente, rígido y fácil de reparar**. Los más usados son:",
-          "Las **aleaciones de aluminio** (series 2024 y 7075, a menudo revestidas con una capa de aluminio puro, *Alclad*, que protege de la corrosión) forman casi todo el PA-28 y el C172. El **acero** (por ejemplo cromo-molibdeno) se usa en piezas muy cargadas: bancada del motor, tren principal, herrajes. El **titanio** y el **magnesio** aparecen en piezas especiales. Los **materiales compuestos** se extienden en aviones modernos.",
-          "Dos enemigos de la estructura son la **corrosión** (oxidación que debilita el metal, favorecida por humedad, salinidad y contacto entre metales distintos) y la **fatiga**: la repetición de ciclos de carga produce pequeñas grietas que crecen aunque la carga sea menor que el límite de rotura. Por eso las revisiones buscan grietas, corrosión y deformaciones."
+          "El material ideal es ligero, resistente, rígido y fácil de reparar. Las propiedades que se piden son: **resistencia** (aguantar carga sin romperse), **rigidez** (deformarse poco), **ductilidad** (deformarse antes de romper, avisando) y **tenacidad** (absorber energía de impactos). Ninguno lo tiene todo, y por eso se combinan.",
+          "Los **materiales compuestos** combinan una **matriz** (la resina) con un **refuerzo** de fibras embebidas, y muchas piezas llevan además un **núcleo alveolar** (honeycomb). Una vez dado el molde, se **cura** (curing) con alta temperatura y presión para expulsar el aire atrapado y endurecer la pieza. Su gran ventaja es que se puede **ajustar** resistencia, rigidez y flexibilidad cambiando el tipo de fibra, su orientación o el orden de apilado de las capas. En un avión ligero de aluminio, el aluminio suele llevar una capa de aluminio puro (**Alclad**) que lo protege de la corrosión."
+        ],
+        "table": {
+          "caption": "Materiales aeronáuticos y su uso",
+          "head": [
+            "Material",
+            "Ventajas y límites",
+            "Uso típico"
+          ],
+          "rows": [
+            [
+              "Aleaciones de aluminio",
+              "Los más empleados en estructuras por su buena relación resistencia-peso; buena conductividad térmica y eléctrica; soldabilidad limitada",
+              "Revestimiento, costillas, largueros, cuadernas"
+            ],
+            [
+              "Aleaciones de acero",
+              "Solo donde la resistencia es crítica y el peso se puede aceptar",
+              "Bancada del motor, tren principal, herrajes"
+            ],
+            [
+              "Titanio",
+              "Mucho más ligero que el acero; resiste fuego y corrosión hasta unos 400 °C",
+              "Mamparos cortafuegos (firewalls); álabes del fan tradicionalmente"
+            ],
+            [
+              "Aleaciones de magnesio",
+              "Muy ligeras: el aluminio pesa algo más de una vez y media más",
+              "Aplicaciones concretas de poca carga"
+            ],
+            [
+              "Materiales compuestos",
+              "Fibras en una matriz de resina; se adaptan a las cargas; se emplean de forma extensa en estructuras poco cargadas",
+              "Carenados, empenajes, aviones modernos"
+            ]
+          ],
+          "src": "Curso"
+        },
+        "ideas": [
+          "Un compuesto es como el contrachapado: capas orientadas en distintas direcciones para que ninguna dirección sea la débil.",
+          "El aluminio es el pan de todos los días: sirve para casi todo; el acero es el hueso de jamón: solo donde de verdad hace falta."
         ]
       },
       {
-        "title": "Ala, fuselaje y empenaje",
+        "title": "Métodos de unión y remachado",
         "text": [
-          "El **ala** es una caja estructural. Los **largueros** (principal y secundario) son las piezas longitudinales que soportan la flexión; las **costillas** dan forma al perfil y reparten la carga entre largueros y revestimiento; y el **revestimiento** cierra la caja y colabora en la resistencia. En el interior del ala van los **depósitos de combustible**, uno en cada lado, tanto en el PA-28-161 como en el C172S. El C172S es de **ala alta con montantes** (puntales), que aligeran la flexión en la raíz; el PA-28-161 es de **ala baja en voladizo** de planta rectangular, sin montantes.",
-          "El **fuselaje** aloja cabina, equipaje y motor, y une alas y empenaje. El **empenaje** (la cola) tiene el **estabilizador vertical**, con el timón de dirección, y el **horizontal**, con el timón de profundidad. En el PA-28-161 el horizontal es un **estabilizador móvil de una sola pieza (stabilator)**; el C172S lleva estabilizador fijo y timón de profundidad separado.",
-          "El **parabrisas** y las ventanillas son de **metacrilato (acrílico)**. Se rayan con facilidad y el polvo seco las arañaría: se limpian con agua y jabón suave, con paño blando o piel de gamuza, sin disolventes ni productos de limpieza de uso doméstico, que las agrietan y vuelven opacas. Una grieta en el parabrisas reduce la resistencia a la presión de un impacto de ave y la visibilidad."
+          "Los componentes se unen por **remachado, soldadura, pernos, pasadores, adhesivos y tornillos**. Cada uno tiene su lugar: el remachado para chapas de revestimiento y estructura de aluminio; la soldadura en estructuras de tubo de acero; los pernos y los pasadores en uniones muy cargadas o articuladas que se desmontan; los adhesivos en compuestos y en núcleos alveolares; los tornillos en paneles de acceso.",
+          "El **remachado** consiste en pasar el remache por orificios alineados y **deformar su extremo libre** para formar una segunda cabeza. Da uniones fuertes, permanentes y fiables, y puede hacerse a mano o con equipos mecánicos. Los remaches están diseñados principalmente para soportar **esfuerzos cortantes**, no para que se tire de ellos: por eso en las uniones remachadas se procura que la carga les llegue como cortadura."
         ],
-        "verify": true
+        "ideas": [
+          "El remache es una grapa gigante: sujeta dos hojas para que no resbalen entre sí, pero no está pensada para tirar de ellas.",
+          "El perno es un tornillo con tuerca para uniones que se pueden desmontar; el remache, una unión que solo se quita rompiéndola."
+        ],
+        "verify": false
       },
       {
-        "title": "Límites de carga",
+        "title": "Diseño del ala: voladizo, semivoladizo y arriostrada",
         "text": [
-          "Cada avión tiene un límite de lo que su estructura puede soportar. La **carga límite** es la máxima carga que se espera en servicio; la estructura debe soportarla **sin deformación permanente**. La **carga última** es la que provoca la rotura, y las normas la fijan en **1,5 veces la carga límite** (factor de seguridad 1,5): la estructura debe aguantarla al menos 3 segundos sin romper. Se expresa con el **factor de carga** n, en múltiplos de g.",
-          "Para un avión de categoría **normal**, el factor de carga límite es de **+3,8 g y −1,52 g** en configuración limpia; en **utility**, +4,4 g; en acrobática, +6 g y −3 g. Con flaps extendidos el límite positivo suele ser de **+2 g** (según POH). Estos valores se relacionan con el diagrama V-n y con la velocidad de maniobra VA, que verás en Principios de vuelo."
+          "Un **voladizo** es un elemento apoyado solo en un extremo, y por eso es **autoportante**: transmite todas las cargas por dentro. Hay tres diseños de ala. El **ala en voladizo (cantiléver)** no lleva apoyos exteriores. El **ala semivoladizo (semi-cantilever)** es todavía en gran parte autoportante, pero cuenta con algún apoyo exterior parcial. El **ala arriostrada exteriormente (externally braced)** se apoya en montantes o tirantes que alivian la flexión en la raíz.",
+          "Los apoyos permiten un ala más ligera, pero tanto el semivoladizo como el arriostrado pagan una **penalización aerodinámica**: más resistencia que el voladizo. El **PA-28-161** (ala baja) es en voladizo; el **C172S** (ala alta con montantes) es arriostrado. En vuelo la sustentación tira del montante hacia arriba y lo pone en **tracción**; en tierra puede trabajar en compresión."
+        ],
+        "figure": "svg:020-ala-tipos",
+        "caption": "Tres diseños de ala: más apoyos, ala más ligera pero con más resistencia aerodinámica",
+        "ideas": [
+          "Voladizo: un trampolín de piscina, sujeto solo por un extremo. Arriostrado: una balda con escuadras debajo.",
+          "Las escuadras permiten usar una balda más fina, pero se ven y estorban: eso es la resistencia añadida."
+        ],
+        "verify": true,
+        "note": {
+          "kind": "warn",
+          "text": "Los textos del curso son escuetos sobre el ala semivoladizo y los fabricantes usan los términos con matices; para el examen, recuerda: voladizo = sin apoyos exteriores, arriostrada = montantes exteriores y ambas con apoyos tienen más resistencia."
+        }
+      },
+      {
+        "title": "Diseño del empenaje: cola convencional y cola en T",
+        "text": [
+          "Para que el aire llegue limpio al empenaje se usan dos configuraciones estándar. En la **cola horizontal convencional** el estabilizador queda ligeramente por encima del plano alar, para que el flujo perturbado del ala no lo moje. En la **cola en T** el estabilizador horizontal está arriba, en la punta de la deriva, en aire sin perturbar (**free stream**), con lo que es **menos propenso al flutter**.",
+          "La cola en T tiene dos inconvenientes. Es más susceptible a la **pérdida profunda (super-stall o deep stall)**: a gran ángulo de ataque, la estela del ala en pérdida envuelve la cola, el elevador deja de ser eficaz y es difícil bajar el morro. Y **carga más** el plano vertical, que debe ser estructuralmente más fuerte y, por tanto, más pesado. El PA-28-161 y el C172S llevan cola convencional."
+        ],
+        "figure": "svg:020-cola-t",
+        "caption": "Cola convencional y cola en T con la estela del ala en pérdida",
+        "ideas": [
+          "La cola en T es como poner la antena en la azotea: recibe señal limpia, sin la sombra de los edificios, pero el mástil que la sostiene tiene que ser mucho más fuerte.",
+          "Super-stall: ir detrás de un camión grande; el aire turbulento de delante te tapa y tus mandos dejan de notarse."
+        ]
+      },
+      {
+        "title": "Cargas y esfuerzos en vuelo",
+        "text": [
+          "Las alas soportan cargas altísimas en vuelo. Los motores montados en ellas generan **empuje**, que tiende a doblar las alas hacia atrás; la **resistencia aerodinámica** aumenta ese momento flector. La **sustentación** las curva hacia arriba mientras el peso del fuselaje tira hacia abajo, y la deflexión de los **alerones** añade una carga de torsión.",
+          "Las condiciones **asimétricas**, como el fallo de un motor, crean un momento de guiñada hacia el motor inoperativo. Al corregir hay que **tener cuidado** para no sobrecargar el empenaje, especialmente el estabilizador vertical y sus superficies. El accidente del vuelo 587 de American Airlines mostró cómo movimientos bruscos y alternativos del timón de dirección pueden romper la deriva. Aunque tu avión no tiene esta sensibilidad, la lección vale: por encima de la velocidad de maniobra VA no se dan golpes completos de mando, y nunca se mueven mandos a fondo de un lado a otro en turbulencia."
+        ],
+        "ideas": [
+          "Sujetar una bolsa pesada con una sola asa dobla la bolsa; moverla de lado a lado a toda velocidad acaba rompiendo el asa."
+        ]
+      },
+      {
+        "title": "Flutter y equilibrado de masas",
+        "text": [
+          "El **flutter** es una vibración aeroelástica **autoexcitada** que suele aparecer en los estabilizadores horizontales o en las puntas de ala, normalmente tras la deflexión de superficies de mando. Surge de la interacción entre las **fuerzas aerodinámicas**, las **fuerzas de inercia** y las propiedades **elásticas** de la estructura, y puede llegar al fallo catastrófico. **No debe aparecer en ningún punto de la envolvente normal de vuelo.**",
+          "Se previene con el **equilibrado de masas** (mass balancing): se desplaza el centro de gravedad de la superficie de mando **hacia la línea de bisagra**, con contrapesos, lo que cambia su inercia y su periodo de vibración. Por eso los contrapesos no deben tocarse, y repintar una superficie de mando sin volver a equilibrarla puede ser peligroso. Cuanto más rápido vuela el avión, más fácil es el flutter: tu velocidad VNE deja un margen con respecto a esa vibración."
+        ],
+        "ideas": [
+          "Una persiana mal sujeta que vibra con el viento, o la bandera que ondea cada vez más fuerte: cada sacudida alimenta la siguiente.",
+          "El contrapeso es el cero del timón: es como cargar una puerta de forma que no se vaya sola a un lado."
+        ]
+      },
+      {
+        "title": "Fuselaje y envolvente presurizada",
+        "text": [
+          "El fuselaje de un avión presurizado es un tubo que trabaja como un globo: sufre el empuje interno de la presión de cabina en cada vuelo. Sus componentes, según el curso, son:"
+        ],
+        "bullets": [
+          "**Suspensión del piso** (vigas transversales, crossbeams): da resistencia estructural y soporta el piso de pasajeros o de carga.",
+          "**Paneles de piso**: separan la cabina de las zonas inferiores (bodegas, compartimentos de servicio); en aviones modernos suelen ser de sándwich o de núcleo alveolar (honeycomb).",
+          "**Placas de refuerzo** (doublers): refuerzan los bordes de las aberturas del revestimiento, como ventanillas y puertas, donde los esfuerzos se concentran y nacen las grietas por fatiga."
+        ],
+        "ideas": [
+          "Un doubler es el parche de las rodilleras de un pantalón: refuerza justo donde se concentra el desgaste.",
+          "Si recortas un agujero en una caja de cartón, es por los bordes del agujero por donde empieza a romperse."
+        ]
+      },
+      {
+        "title": "Factor de carga, carga límite y carga última",
+        "text": [
+          "El **factor de carga** (n) es la relación entre la fuerza que soporta la estructura y el peso del avión, y se expresa en g. La **carga límite** (limit load) es la máxima que se espera durante la operación normal: la estructura debe soportarla **sin deformación permanente**. Multiplicada por un **factor de seguridad de 1,5** da la **carga última** (ultimate load), y la estructura debe soportarla **3 segundos** sin romperse. Por encima de la carga límite hay que esperar **deformación permanente**, aunque no rotura.",
+          "Para la categoría **normal**, el factor de carga límite es **+3,8 g y −1,52 g** en configuración limpia; en **utility**, +4,4 g; en acrobática, +6 g y −3 g. Con flaps extendidos el límite positivo suele ser de **+2 g** (según el POH). Estos valores se enlazan con el diagrama V-n y la velocidad de maniobra VA."
         ],
         "formulas": [
           {
             "f": "Carga última = 1,5 × carga límite",
-            "note": "Factor de seguridad de las normas de certificación."
+            "note": "Factor de seguridad de las normas de certificación; la estructura aguanta 3 s."
           }
         ],
         "examples": [
           {
-            "q": "Un avión de categoría normal tiene un factor de carga límite de +3,8 g. ¿Cuál es el factor de carga último?",
+            "q": "Un avión de categoría normal tiene +3,8 g de carga límite. ¿Cuál es el factor de carga último?",
             "a": "3,8 × 1,5 = 5,7 g."
+          },
+          {
+            "q": "Un virado nivelado con 60° de alabeo exige n = 1/cos 60° = 2 g. ¿Qué margen queda hasta la carga límite de +3,8 g?",
+            "a": "3,8 − 2 = 1,8 g de margen. Con 2 g no se deforma nada; la deformación permanente empezaría por encima de 3,8 g."
           }
         ],
+        "ideas": [
+          "Un puente con un cartel de «máximo 10 toneladas» está construido para aguantar bastante más, pero no para que lo cruces con más cada día."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Masas estructurales máximas y la MZFM",
+        "text": [
+          "La estructura impone varios límites de masa, y cada uno protege un momento del vuelo. La **masa máxima de rodaje** (maximum structural taxi mass, o masa máxima en plataforma o ramp) es la del inicio del rodaje, al salir del puesto; después se consume combustible hasta la **masa de despegue** (TOM). La **MTOM** es la masa máxima al inicio de la carrera de despegue, incluyendo todo y a todos; su certificación tiene en cuenta limitaciones **estructurales y de performance**. La **MSLM** (masa máxima estructural de aterrizaje) es la máxima en el aterrizaje en condiciones normales.",
+          "La **MZFM** (maximum zero fuel mass) es la masa máxima del avión **sin combustible utilizable**. ¿Por qué existe? Porque el momento flector en la **raíz del ala** es máximo cuando hay **poco combustible en las alas**: el combustible, que pesa hacia abajo, contrarresta parte de la flexión que provoca la sustentación. Al consumirse, durante el vuelo, ese alivio se va perdiendo, y el ala queda más cargada. Por eso hay que limitar la masa cuando los depósitos están vacíos: la carga de pago no puede compensarse con combustible."
+        ],
+        "figure": "svg:020-masas-estructurales",
+        "caption": "Masas máximas: la MZFM limita la carga aunque sobren kilos en el resto",
+        "table": {
+          "caption": "Masas estructurales máximas",
+          "head": [
+            "Masa",
+            "Qué limita"
+          ],
+          "rows": [
+            [
+              "Masa máxima de rodaje (rampa)",
+              "Masa al inicio del rodaje"
+            ],
+            [
+              "MTOM",
+              "Masa al inicio de la carrera de despegue (estructura y performance)"
+            ],
+            [
+              "MSLM",
+              "Masa en el aterrizaje normal"
+            ],
+            [
+              "MZFM",
+              "Masa sin combustible utilizable; protege la raíz del ala"
+            ]
+          ],
+          "src": "Curso"
+        },
+        "examples": [
+          {
+            "q": "Un avión de línea tiene MZFM = 61 000 kg y una masa en vacío operativa de 42 000 kg. ¿Cuánta carga de pago puede llevar como máximo, aunque le sobre MTOM?",
+            "a": "Carga máxima = MZFM − masa en vacío operativa = 61 000 − 42 000 = 19 000 kg."
+          },
+          {
+            "q": "MTOM = 73 500 kg; MSLM = 64 500 kg. Si el viaje consume 7 000 kg, ¿se puede aterrizar con la masa de despegue máxima?",
+            "a": "Aterrizaría con 73 500 − 7 000 = 66 500 kg, 2 000 kg por encima de la MSLM. Habría que despegar con menos masa (como máximo 71 500 kg) o prever un consumo mayor."
+          }
+        ],
+        "ideas": [
+          "La MZFM es como la bolsa de la compra con asa débil: no importa cuánto cabe en la bolsa; lo que importa es lo que aguanta el asa cuando la bolsa va entera y sin alivio.",
+          "Los kilos que despegan por encima de la MZFM tienen que ser combustible, que además alivia el ala."
+        ],
+        "note": {
+          "kind": "tip",
+          "text": "En aviones ligeros como el PA-28 y el C172S el POH no publica una MZFM: la limitación que verás en masa y centrado es la masa máxima de despegue y el centrado (ver 030)."
+        },
         "verify": true
       }
     ],
+    "outline": [
+      {
+        "title": "Filosofías de diseño",
+        "items": [
+          "Vida segura: vida fija, hard-time",
+          "A prueba de fallos: varios caminos de carga",
+          "Tolerante al daño: sin vida fija, inspecciones",
+          "Redundancia: mecánicos x2, electrónicos x3"
+        ]
+      },
+      {
+        "title": "Cargas y materiales",
+        "items": [
+          "Tracción, compresión, cortadura",
+          "Flexión y torsión: cargas combinadas",
+          "Esfuerzo = F / A; deformación = ΔL / L₀",
+          "Zona elástica recupera; plástica queda permanente"
+        ]
+      },
+      {
+        "title": "Daños y mantenimiento",
+        "items": [
+          "Estática, dinámica y cíclica; la cíclica produce fatiga",
+          "Corrosión: agua; rojo, blanco, azul verdoso",
+          "Hard-time: horas o ciclos; on-condition: estado",
+          "Walkaround: mamparos, raíces de ala, mapa de daños"
+        ]
+      },
+      {
+        "title": "Estructura",
+        "items": [
+          "Monocasco: la piel lo soporta casi todo",
+          "Semimonocasco: cuadernas, largueros y larguerillos",
+          "Materiales: aluminio, acero, titanio, magnesio, compuestos",
+          "Uniones: remache (cortadura), perno, soldadura, adhesivo"
+        ]
+      },
+      {
+        "title": "Ala, cola y límites",
+        "items": [
+          "Ala: voladizo, semivoladizo, arriostrada",
+          "Cola en T: menos flutter, más super-stall",
+          "Flutter: contrapeso hacia la bisagra",
+          "Carga última = 1,5 × límite durante 3 s; MZFM protege la raíz del ala"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "Las tres filosofías, en orden de menos a más sofisticada: Segura (cambio por tiempo), Fallos (varios caminos), Daño (inspección y tolerancia).",
+      "Colores de corrosión: Rojo = hierro, Blanco = aluminio, Azul verdoso = cobre.",
+      "TCC-FT: Tracción, Compresión, Cortadura (simples); Flexión y Torsión (combinadas).",
+      "MZFM = Zero Fuel: con los depósitos vacíos no hay combustible que alivie la flexión, así que el tope de masa lo pone la raíz del ala."
+    ],
+    "selfCheck": [
+      {
+        "q": "Explica con tus palabras la diferencia entre vida segura y a prueba de fallos.",
+        "a": "En vida segura la pieza se cambia tras un número de horas o ciclos aunque esté bien. En a prueba de fallos la carga tiene varios caminos, de modo que una grieta en uno no tumba la estructura mientras se detecta en una inspección."
+      },
+      {
+        "q": "¿Por qué un material puede romperse por fatiga con cargas muy inferiores a su resistencia última?",
+        "a": "Porque la repetición de los ciclos va creando y haciendo crecer grietas; depende del esfuerzo repetido y del número de ciclos."
+      },
+      {
+        "q": "¿Qué diferencia hay entre deformación elástica y plástica?",
+        "a": "La elástica desaparece al quitar la carga; la plástica supera el límite elástico y deja una deformación permanente."
+      },
+      {
+        "q": "¿Cómo distinguirías la corrosión de un componente de aluminio de la de uno de acero?",
+        "a": "El acero se pone rojo o naranja; el aluminio se ve deslucido y con polvo blanco o gris."
+      },
+      {
+        "q": "¿Qué mantenimiento deriva de la vida segura y cuál de revisar por estado?",
+        "a": "Hard-time deriva de la vida segura (horas o ciclos); on-condition se hace según el estado del componente."
+      },
+      {
+        "q": "¿Por qué la cola en T carga más la deriva y es peligrosa en pérdida?",
+        "a": "Porque el estabilizador horizontal está arriba y transmite sus fuerzas a la deriva, que debe ser más fuerte; y a gran ángulo de ataque la estela del ala lo envuelve (pérdida profunda)."
+      },
+      {
+        "q": "¿Cómo se evita el flutter en una superficie de mando?",
+        "a": "Con el equilibrado de masas: se sitúa el centro de gravedad de la superficie cerca de la línea de bisagra, con contrapesos."
+      },
+      {
+        "q": "¿Para qué existe la MZFM y qué ocurre con una carga mayor?",
+        "a": "Para limitar el momento flector en la raíz del ala cuando no hay combustible que lo alivie; la carga que excede de la MZFM no se puede llevar."
+      }
+    ],
     "numbers": [
-      "Cinco cargas: tracción, compresión, cortadura, torsión y flexión",
-      "En vuelo, extradós del ala en compresión e intradós en tracción",
-      "Estructura habitual: semimonocasco de aluminio; el monocasco es frágil ante abolladuras",
-      "Carga última = 1,5 × carga límite",
-      "Categoría normal: +3,8 g y −1,52 g; utility: +4,4 g"
+      "Carga última = 1,5 × carga límite, soportada 3 segundos",
+      "Categoría normal: +3,8 g y −1,52 g; utility: +4,4 g; acrobática: +6 g y −3 g",
+      "Aluminio corroído: polvo blanco o gris; ferroso: rojo o naranja; cobre: azul verdoso",
+      "Titanio: resistente a la corrosión y al fuego hasta unos 400 °C",
+      "Esfuerzo σ = F / A; deformación ε = ΔL / L₀",
+      "Redundancia: sistemas mecánicos duplicados y electrónicos triplicados",
+      "Masa máxima sin combustible (MZFM) = masa en vacío + carga de pago máxima"
     ],
     "traps": [
       "Confundir cortadura con torsión: la cortadura desliza capas, la torsión retuerce.",
-      "Creer que el monocasco es más resistente: una pequeña abolladura lo debilita.",
-      "Pensar que el límite de rotura es la carga límite: es la última (1,5 veces).",
-      "Limpiar el parabrisas con producto doméstico o paño seco: agrieta y raya el metacrilato.",
-      "Olvidar que el sentido de las cargas del ala se invierte en tierra y en vuelo."
+      "Creer que el monocasco es más resistente: una abolladura lo debilita.",
+      "Pensar que carga límite es la de rotura: es la última (1,5 veces).",
+      "Decir que la fatiga necesita cargas altas: las repetidas, aunque sean menores, bastan.",
+      "Confundir hard-time (horas fijas) con on-condition (por estado).",
+      "Creer que la cola en T es siempre mejor: gana en flutter y pierde en pérdida profunda.",
+      "Pensar que la MZFM limita al avión con los depósitos llenos: limita la masa sin combustible.",
+      "Limpiar el parabrisas con producto doméstico o paño seco: agrieta el metacrilato."
     ],
     "sources": [
       {
-        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 6: sistemas aeronáuticos",
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 6: sistemas de la aeronave",
         "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
       },
       {
-        "title": "EASA CS-23: cargas y factor de seguridad",
+        "title": "EASA CS-23 y CS-25: cargas, factor de seguridad y masas",
         "url": "https://www.easa.europa.eu/en/document-library/certification-specifications"
+      },
+      {
+        "title": "Material del curso: Fuselaje, estructura y sistemas (ATPLENJOY/DREAMAIR)"
       }
     ],
-    "reviewed": "2026-10-09",
+    "reviewed": "2026-11-17",
     "links": [
       {
         "label": "Prevuelo del PA-28: ala, fuselaje y cola",
@@ -550,6 +1094,638 @@
         "Los remaches solo unen piezas."
       ],
       "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.01.019",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un componente al que se asigna un número de horas o ciclos tras el cual se sustituye aunque parezca sano responde a la filosofía de:",
+      "options": [
+        "Tolerante al daño",
+        "Vida segura (safe life)",
+        "Redundancia múltiple",
+        "Mantenimiento on-condition"
+      ],
+      "correct": 1,
+      "why": "En la filosofía de vida segura se fija una vida útil basada en la fatiga y se sustituye el componente al final, independientemente de su estado.",
+      "whyNot": [
+        "La tolerante al daño no fija vida segura: se inspecciona y se evalúa el estado.",
+        null,
+        "La redundancia es un medio para la a prueba de fallos, no una filosofía de sustitución por tiempo.",
+        "On-condition es lo contrario: se actúa por el estado, no por horas."
+      ],
+      "ref": "Curso; CS-23"
+    },
+    {
+      "id": "020.01.020",
+      "type": "concepto",
+      "level": 2,
+      "q": "En la filosofía a prueba de fallos (fail-safe), la estructura sigue soportando las cargas tras la aparición de una grieta porque:",
+      "options": [
+        "Se sustituye por completo cada cierto número de horas",
+        "Lleva un revestimiento más grueso de lo necesario",
+        "Se inspecciona a mano antes de cada vuelo",
+        "Distribuye la carga por varios caminos y se basa en la redundancia"
+      ],
+      "correct": 3,
+      "why": "La carga viaja por múltiples trayectorias: si una falla, las demás resisten hasta que la grieta se detecta en el mantenimiento.",
+      "whyNot": [
+        "No es un cambio periódico: es redundancia estructural.",
+        "Más espesor no es la idea, sino varios caminos de carga.",
+        "Las inspecciones son regulares, no una por vuelo, y no es lo que da la capacidad de resistir.",
+        null
+      ],
+      "ref": "Curso; CS-23"
+    },
+    {
+      "id": "020.01.021",
+      "type": "concepto",
+      "level": 2,
+      "q": "La filosofía tolerante al daño se diferencia de la de vida segura en que:",
+      "options": [
+        "No fija una vida segura y se apoya en inspecciones regulares",
+        "Se sustituye siempre a las 10 000 horas",
+        "Se aplica solo a los motores alternativos",
+        "Se basa en que no aparecen grietas nunca"
+      ],
+      "correct": 0,
+      "why": "El componente soporta el fallo de elementos individuales durante toda la vida, pero la operación segura exige inspecciones y evaluación frecuente.",
+      "whyNot": [
+        null,
+        "No hay una vida fija: el elemento se evalúa por inspección.",
+        "No se aplica solo a motores; es un criterio de diseño estructural.",
+        "Supone que las grietas pueden aparecer y por eso se inspecciona."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.022",
+      "type": "calculo",
+      "level": 2,
+      "q": "Dos canales redundantes independientes fallan cada uno con probabilidad 10⁻³ por hora. La probabilidad de que fallen ambos a la vez es:",
+      "options": [
+        "2 × 10⁻³ por hora",
+        "10⁻⁹ por hora",
+        "10⁻⁶ por hora",
+        "10⁻¹ por hora"
+      ],
+      "correct": 2,
+      "why": "Para fallos independientes se multiplican las probabilidades: 10⁻³ × 10⁻³ = 10⁻⁶ por hora.",
+      "whyNot": [
+        "Eso sería sumarlas, y la suma no refleja que deben fallar los dos.",
+        "10⁻⁹ corresponde a tres canales, no a dos.",
+        null,
+        "Es mucho más probable que la de un solo canal; la redundancia reduce la probabilidad."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.023",
+      "type": "regla",
+      "level": 1,
+      "q": "Las arrugas en el revestimiento del fuselaje (pandeo) suelen indicar que el avión:",
+      "options": [
+        "Lleva demasiado combustible",
+        "Ha sufrido cargas anormales",
+        "Tiene corrosión galvánica",
+        "Es de estructura de tubos"
+      ],
+      "correct": 1,
+      "why": "El pandeo aparece con esfuerzos inferiores a los de rotura y revela una sobrecarga: aterrizaje duro, turbulencia fuerte o exceso de g.",
+      "whyNot": [
+        "El combustible no arruga el revestimiento.",
+        null,
+        "La corrosión cambia el color del metal, no produce arrugas por compresión.",
+        "Una estructura de tubos no tiene este revestimiento."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.024",
+      "type": "calculo",
+      "level": 2,
+      "q": "Una varilla de sección 50 mm² soporta una tracción de 10 kN. El esfuerzo en ella es de:",
+      "options": [
+        "0,2 N/mm²",
+        "500 N/mm²",
+        "20 N/mm²",
+        "200 N/mm²"
+      ],
+      "correct": 3,
+      "why": "σ = F / A = 10 000 N / 50 mm² = 200 N/mm² (200 MPa).",
+      "whyNot": [
+        "Sería dividir al revés (50 / 10 000).",
+        "500 resulta de multiplicar fuerza por área en lugar de dividir.",
+        "20 sale de usar 10 N en lugar de 10 000 N (kN a N).",
+        null
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.025",
+      "type": "calculo",
+      "level": 2,
+      "q": "Una barra de 250 mm se alarga 0,5 mm bajo carga. Su deformación es de:",
+      "options": [
+        "0,2 %",
+        "0,5 %",
+        "2 %",
+        "0,02 %"
+      ],
+      "correct": 0,
+      "why": "ε = ΔL / L₀ × 100 = 0,5 / 250 × 100 = 0,2 %.",
+      "whyNot": [
+        null,
+        "0,5 % sería dividir por 100 mm en lugar de 250.",
+        "2 % supone un error de una potencia de diez.",
+        "0,02 % divide mal una potencia de diez."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.026",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si una pieza se carga por encima de su límite elástico y luego se descarga, ocurre que:",
+      "options": [
+        "Recupera exactamente la forma que tenía antes",
+        "Se rompe siempre en cuanto se retira la carga",
+        "Queda con una deformación permanente (plástica)",
+        "Se vuelve más ligera al perder material"
+      ],
+      "correct": 2,
+      "why": "Por encima del límite elástico la deformación ya es plástica y permanece al retirar la carga.",
+      "whyNot": [
+        "Recuperar la forma es lo que pasa dentro del límite elástico.",
+        "Rotura y deformación permanente son cosas distintas.",
+        null,
+        "La masa no depende de la deformación."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.027",
+      "type": "concepto",
+      "level": 2,
+      "q": "La carga producida por las ráfagas sobre el ala, repetida periódicamente, es un ejemplo de carga:",
+      "options": [
+        "Estática",
+        "Cíclica",
+        "Dinámica continua",
+        "De cortadura"
+      ],
+      "correct": 1,
+      "why": "Las cargas cíclicas se repiten a intervalos y son la causa de la fatiga; las ráfagas y las vibraciones son ejemplos.",
+      "whyNot": [
+        "La estática se aplica de forma continua, como el peso de la estructura.",
+        null,
+        "La dinámica cambia de magnitud, pero no necesariamente de forma periódica.",
+        "La cortadura es un tipo de esfuerzo, no una clase por la evolución en el tiempo."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.028",
+      "type": "concepto",
+      "level": 3,
+      "q": "Un fallo por fatiga depende principalmente de:",
+      "options": [
+        "Solo de la carga máxima aplicada una vez",
+        "El color de la pintura",
+        "La temperatura del aire exterior únicamente",
+        "La magnitud del esfuerzo repetido y el número de ciclos"
+      ],
+      "correct": 3,
+      "why": "La fatiga es acumulativa: depende de cuánto esfuerzo se repite y de cuántas veces, no de una sola carga alta.",
+      "whyNot": [
+        "Una carga única no explica la fatiga; puede ser menor que la de rotura.",
+        "La pintura no determina la fatiga, aunque protege de la corrosión.",
+        "La temperatura influye poco frente a esfuerzo y ciclos.",
+        null
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.029",
+      "type": "concepto",
+      "level": 2,
+      "q": "La corrosión electrolítica (galvánica) se favorece cuando:",
+      "options": [
+        "Hay dos metales distintos unidos sin aislamiento y con agua entre ellos",
+        "Solo hay un metal, sin pintar y bajo la lluvia",
+        "El metal está seco, limpio y bien aislado de la humedad",
+        "Dos piezas del mismo metal están unidas con tornillos"
+      ],
+      "correct": 0,
+      "why": "Dos metales distintos en contacto con agua forman una pila: el más débil se corroe.",
+      "whyNot": [
+        null,
+        "Sin humedad la reacción prácticamente no avanza.",
+        "La electrolítica necesita dos metales diferentes.",
+        "No volar no la provoca; la humedad sí."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.030",
+      "type": "concepto",
+      "level": 1,
+      "q": "Un polvo blanco o gris sobre una pieza de aluminio es señal de:",
+      "options": [
+        "Óxido de hierro",
+        "Cera anticorrosión",
+        "Corrosión",
+        "Pintura nueva"
+      ],
+      "correct": 2,
+      "why": "La corrosión del aluminio se presenta como polvo blanco o gris, con aspecto apagado.",
+      "whyNot": [
+        "El óxido de hierro es rojo o naranja.",
+        "Los compuestos anticorrosión no se ven como polvo.",
+        null,
+        "La pintura nueva no deja polvo."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.031",
+      "type": "concepto",
+      "level": 2,
+      "q": "La corrosión bajo tensión es el resultado de la acción simultánea de:",
+      "options": [
+        "Compresión y torsión",
+        "Cizalladura y pandeo",
+        "Flutter y hielo",
+        "Corrosión y fatiga"
+      ],
+      "correct": 3,
+      "why": "La corrosión puede iniciar una grieta y la fatiga la hace crecer.",
+      "whyNot": [
+        "Son cargas mecánicas, no el fenómeno descrito.",
+        "Son otras cargas y otra inestabilidad.",
+        "El hielo y el flutter no definen este tipo de corrosión.",
+        null
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.032",
+      "type": "concepto",
+      "level": 2,
+      "q": "El mantenimiento hard-time consiste en:",
+      "options": [
+        "Cambiar un componente únicamente cuando se avería",
+        "Revisar o sustituir un componente tras un número determinado de horas o ciclos",
+        "Sustituirlo según el estado que muestran las inspecciones",
+        "No revisarlo nunca durante toda su vida útil"
+      ],
+      "correct": 1,
+      "why": "Es el mantenimiento a tiempo fijo, consecuencia de la filosofía de vida segura.",
+      "whyNot": [
+        "Eso es mantenimiento correctivo, no hard-time.",
+        null,
+        "Eso describe el on-condition.",
+        "Tampoco existe un componente que no se revise."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.033",
+      "type": "concepto",
+      "level": 2,
+      "q": "En el mantenimiento on-condition se sustituye o revisa un componente:",
+      "options": [
+        "Siempre a las mismas horas",
+        "Únicamente tras una avería",
+        "Antes de que falle, según su estado",
+        "Nunca sin permiso del fabricante"
+      ],
+      "correct": 2,
+      "why": "Es mantenimiento predictivo: el componente indica su estado y se inspecciona regularmente.",
+      "whyNot": [
+        "Eso es hard-time.",
+        "Eso sería mantenimiento correctivo.",
+        null,
+        "No es una condición de la clasificación."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.034",
+      "type": "concepto",
+      "level": 2,
+      "q": "En la inspección exterior encuentras una mancha bajo el avión que puede ser aceite, fluido hidráulico o compuesto anticorrosión. Lo correcto es:",
+      "options": [
+        "Ignorarla, porque siempre es compuesto anticorrosión",
+        "Limpiarla y seguir sin comunicarlo a nadie",
+        "Suponer que es aceite del motor y no mirar más",
+        "Identificar su origen antes de volar, porque se parecen"
+      ],
+      "correct": 3,
+      "why": "Las tres sustancias pueden verse parecidas; hay que saber cuál es y de dónde sale antes de decidir si el avión puede volar.",
+      "whyNot": [
+        "No siempre lo es.",
+        "Ocultar una fuga impide detectar un fallo.",
+        "Sin análisis no se puede asumir su origen.",
+        null
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.035",
+      "type": "concepto",
+      "level": 2,
+      "q": "En el curso, el semimonocasco añade al monocasco:",
+      "options": [
+        "Cuadernas adicionales, larguerillos y largueros longitudinales",
+        "Solo un revestimiento más fino",
+        "Tubos soldados y tela",
+        "Una única pieza de composite"
+      ],
+      "correct": 0,
+      "why": "Esos elementos refuerzan la forma y absorben parte de las cargas; el revestimiento sigue soportando mucha carga.",
+      "whyNot": [
+        null,
+        "El semimonocasco añade elementos, no solo cambia el revestimiento.",
+        "La celosía de tubos con tela es otro tipo de construcción.",
+        "El composite es un material, no un tipo de estructura por sí solo."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.036",
+      "type": "concepto",
+      "level": 2,
+      "q": "El titanio se usa en mamparos cortafuegos (firewalls) porque:",
+      "options": [
+        "Es más barato y fácil de trabajar que el aluminio",
+        "Es peor conductor del calor que cualquier otro metal",
+        "Es más ligero que el acero y resiste el fuego y la corrosión hasta unos 400 °C",
+        "Es el material metálico más ligero que se conoce"
+      ],
+      "correct": 2,
+      "why": "Combina bajo peso con buena resistencia mecánica y a la corrosión hasta del orden de 400 °C.",
+      "whyNot": [
+        "No es más barato.",
+        "El sonido no es el criterio.",
+        null,
+        "El magnesio es más ligero."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.037",
+      "type": "concepto",
+      "level": 1,
+      "q": "Los remaches están diseñados principalmente para soportar esfuerzos de:",
+      "options": [
+        "Tracción",
+        "Cortadura",
+        "Compresión pura",
+        "Torsión"
+      ],
+      "correct": 1,
+      "why": "Un remache une chapas evitando que una deslice sobre otra; está pensado para cargas cortantes, no para tirar de él.",
+      "whyNot": [
+        "No se diseñan para que se tire de ellos.",
+        null,
+        "No actúan como puntales a compresión.",
+        "La torsión no es su carga típica."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.038",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un ala en voladizo (cantiléver) es aquella que:",
+      "options": [
+        "Lleva dos montantes exteriores hasta media ala",
+        "Está sujeta al fuselaje por cables tensados",
+        "Se apoya en el tren de aterrizaje en vuelo",
+        "Está apoyada solo en un extremo y transmite internamente todas las cargas"
+      ],
+      "correct": 3,
+      "why": "Es autoportante: no necesita apoyos exteriores y no tiene la resistencia añadida de montantes.",
+      "whyNot": [
+        "Eso es un ala arriostrada exteriormente.",
+        "Los cables son un arriostramiento exterior.",
+        "El tren no sostiene el ala en vuelo.",
+        null
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.039",
+      "type": "concepto",
+      "level": 3,
+      "q": "Respecto a la cola convencional, la cola en T tiene:",
+      "options": [
+        "Menos riesgo de flutter, más riesgo de pérdida profunda y una deriva más cargada",
+        "Más riesgo de flutter y una deriva más ligera",
+        "Ninguna diferencia aerodinámica apreciable",
+        "Mejor control del elevador siempre en pérdida"
+      ],
+      "correct": 0,
+      "why": "Su estabilizador queda en aire sin perturbar (menos flutter), pero la estela del ala en pérdida lo envuelve y la deriva soporta más carga.",
+      "whyNot": [
+        null,
+        "Es justo al revés: tiene menos flutter y más peso en la deriva.",
+        "Sí hay diferencias aerodinámicas importantes.",
+        "En pérdida profunda es peor, no mejor."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.040",
+      "type": "concepto",
+      "level": 2,
+      "q": "El flutter se previene principalmente mediante:",
+      "options": [
+        "Mayor velocidad de crucero",
+        "El equilibrado de masas de las superficies de mando",
+        "Pintar las alas con colores claros",
+        "Aumentar la presión de los neumáticos"
+      ],
+      "correct": 1,
+      "why": "Se acerca el centro de gravedad de la superficie a la línea de bisagra con contrapesos, cambiando su periodo de vibración.",
+      "whyNot": [
+        "Más velocidad favorece el flutter, no lo previene.",
+        null,
+        "El color no influye.",
+        "Los neumáticos no tienen relación."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.041",
+      "type": "regla",
+      "level": 2,
+      "q": "Las estructuras se diseñan para soportar la carga última durante:",
+      "options": [
+        "1 segundo",
+        "30 segundos",
+        "3 segundos",
+        "1 minuto"
+      ],
+      "correct": 2,
+      "why": "La carga última (1,5 × límite) debe soportarse 3 segundos sin rotura, aunque quede deformación permanente.",
+      "whyNot": [
+        "1 s es demasiado poco para la norma.",
+        "Tampoco son 30 s.",
+        null,
+        "Un minuto sería excesivo."
+      ],
+      "ref": "CS-23; Curso"
+    },
+    {
+      "id": "020.01.042",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un avión de categoría utility tiene un factor de carga límite de +4,4 g. Su factor de carga último es:",
+      "options": [
+        "4,4 g",
+        "2,9 g",
+        "8,8 g",
+        "6,6 g"
+      ],
+      "correct": 3,
+      "why": "Carga última = carga límite × 1,5, es decir, 4,4 × 1,5 = 6,6 g.",
+      "whyNot": [
+        "Es el límite, no el último.",
+        "Sale de dividir por 1,5 en lugar de multiplicar.",
+        "Resulta de multiplicar por 2.",
+        null
+      ],
+      "ref": "CS-23"
+    },
+    {
+      "id": "020.01.043",
+      "type": "concepto",
+      "level": 3,
+      "q": "La MZFM limita la masa del avión sin combustible porque:",
+      "options": [
+        "Los depósitos vacíos pesan más que los llenos",
+        "El tren de aterrizaje no soporta el avión sin combustible",
+        "El momento flector en la raíz del ala es máximo cuando hay poco combustible en las alas",
+        "El peso del combustible aumenta la sustentación del ala"
+      ],
+      "correct": 2,
+      "why": "El combustible de las alas, al pesar, contrarresta la flexión que provoca la sustentación; sin él la raíz del ala sufre más.",
+      "whyNot": [
+        "Los depósitos vacíos no pesan más que llenos.",
+        "Eso no es la razón estructural de la MZFM.",
+        null,
+        "El combustible no aumenta la sustentación."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.044",
+      "type": "calculo",
+      "level": 3,
+      "q": "Un avión de línea tiene MZFM = 61 000 kg y masa en vacío operativa de 42 000 kg. La carga de pago máxima es:",
+      "options": [
+        "61 000 kg",
+        "19 000 kg",
+        "103 000 kg",
+        "42 000 kg"
+      ],
+      "correct": 1,
+      "why": "Carga máxima = MZFM − masa en vacío operativa = 61 000 − 42 000 = 19 000 kg.",
+      "whyNot": [
+        "Es la MZFM entera, sin descontar el avión.",
+        null,
+        "Resulta de sumar en lugar de restar.",
+        "Es la masa en vacío, no la carga."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.045",
+      "type": "calculo",
+      "level": 3,
+      "q": "MTOM = 73 500 kg y MSLM = 64 500 kg. Con un consumo de 7 000 kg en el viaje, aterrizando con la masa de despegue máxima:",
+      "options": [
+        "Se superaría la MSLM en 2 000 kg",
+        "Se aterrizaría 1 000 kg por debajo de la MSLM",
+        "Se aterrizaría justo en la MSLM",
+        "Se superaría la MSLM en 7 000 kg"
+      ],
+      "correct": 0,
+      "why": "Aterrizaje: 73 500 − 7 000 = 66 500 kg, que son 2 000 kg más que la MSLM (64 500 kg).",
+      "whyNot": [
+        null,
+        "Resulta de restar mal el consumo.",
+        "Solo ocurriría con un consumo de 9 000 kg.",
+        "Confunde el consumo con el exceso."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.046",
+      "type": "concepto",
+      "level": 1,
+      "q": "La masa máxima estructural de rodaje (rampa) es la limitación estructural correspondiente a:",
+      "options": [
+        "La masa máxima permitida en el aterrizaje normal",
+        "La masa del avión sin combustible utilizable",
+        "La masa al inicio de la carrera de despegue",
+        "La masa del avión al inicio del rodaje, saliendo del puesto"
+      ],
+      "correct": 3,
+      "why": "Se aplica al salir de la posición de estacionamiento; luego el consumo de combustible lleva a la masa de despegue.",
+      "whyNot": [
+        "Eso es la MSLM.",
+        "Eso es la MZFM.",
+        "Eso es la MTOM.",
+        null
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.01.047",
+      "type": "lectura",
+      "level": 2,
+      "q": "En la curva de esfuerzo y deformación, el tramo que sigue al límite elástico corresponde a:",
+      "options": [
+        "Deformación plástica, que queda permanente",
+        "Deformación elástica recuperable",
+        "Compresión pura",
+        "Una zona sin esfuerzo"
+      ],
+      "correct": 0,
+      "why": "Tras el límite elástico la deformación ya no se recupera al soltar la carga.",
+      "whyNot": [
+        null,
+        "La elástica es la recta anterior.",
+        "No es un tipo de carga.",
+        "Hay esfuerzo y deformación en todo el tramo."
+      ],
+      "ref": "Curso",
+      "figure": "svg:020-esfuerzo-deformacion"
+    },
+    {
+      "id": "020.01.048",
+      "type": "lectura",
+      "level": 2,
+      "q": "En la figura, el ala que lleva montantes exteriores largos hasta media ala es la:",
+      "options": [
+        "En voladizo",
+        "Semivoladizo con apoyo corto",
+        "Arriostrada exteriormente",
+        "De cuerdas elásticas"
+      ],
+      "correct": 2,
+      "why": "Los montantes largos son el rasgo de un ala arriostrada exteriormente, como la del C172S.",
+      "whyNot": [
+        "El voladizo no lleva apoyos exteriores.",
+        "El semivoladizo de la figura tiene apoyos cortos.",
+        null,
+        "Esa categoría no existe."
+      ],
+      "ref": "Curso",
+      "figure": "svg:020-ala-tipos"
     }
   ],
   "cards": [
@@ -577,6 +1753,36 @@
       "id": "c.020.01.05",
       "front": "Limpieza del parabrisas",
       "back": "Agua y jabón suave con paño blando; nunca disolventes"
+    },
+    {
+      "id": "c.020.01.06",
+      "front": "Filosofías de diseño estructural",
+      "back": "Vida segura (se cambia por horas o ciclos), a prueba de fallos (varios caminos de carga), tolerante al daño (sin vida fija, con inspecciones)"
+    },
+    {
+      "id": "c.020.01.07",
+      "front": "Hard-time y on-condition",
+      "back": "Hard-time: sustitución a horas o ciclos fijos (vida segura). On-condition: se actúa por el estado, antes del fallo"
+    },
+    {
+      "id": "c.020.01.08",
+      "front": "Color de la corrosión",
+      "back": "Hierro: rojo o naranja. Aluminio: polvo blanco o gris. Cobre: depósito azul verdoso"
+    },
+    {
+      "id": "c.020.01.09",
+      "front": "Carga límite, carga última y factor",
+      "back": "Última = 1,5 × límite, durante 3 s; tras superar la límite queda deformación permanente"
+    },
+    {
+      "id": "c.020.01.10",
+      "front": "Cola en T",
+      "back": "Menos flutter (aire limpio), más riesgo de pérdida profunda y deriva más resistente"
+    },
+    {
+      "id": "c.020.01.11",
+      "front": "Por qué existe la MZFM",
+      "back": "El ala sufre la máxima flexión en la raíz cuando hay poco combustible en ella"
     }
   ]
 }

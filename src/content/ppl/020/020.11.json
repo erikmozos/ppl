@@ -2,19 +2,19 @@
   "lesson": {
     "id": "020.11",
     "title": "Carburador e inyección",
-    "summary": "Cómo dosifica la mezcla un carburador de flotador, el hielo de carburador (tipos, condiciones, síntomas y calefacción) y cómo cambia todo con un motor de inyección como el del C172S, incluido el arranque en caliente.",
+    "summary": "Requisitos de un carburador, cómo dosifica la mezcla un carburador de flotador, hielo de carburador y su calefacción, inyección indirecta con sus ventajas, inyección directa common rail (unos 2000 bar) y FADEC con sus sensores.",
     "objectives": [
-      "Describir cómo un carburador de flotador forma la mezcla (venturi, cuba, surtidor, mariposa) y qué hacen la bomba de aceleración y el corrector de mezcla",
-      "Distinguir los tres tipos de hielo de carburador y las condiciones de temperatura y humedad en que aparecen",
-      "Predecir el efecto de la calefacción del carburador en las RPM con y sin hielo, en paso fijo y en velocidad constante",
-      "Explicar los inconvenientes de la calefacción: pérdida de potencia y aire sin filtrar",
-      "Comparar el sistema de inyección del C172S con el carburador del PA-28-161, incluidos el aire alternativo y el arranque en caliente"
+      "Enumerar los requisitos básicos que debe cumplir un carburador",
+      "Explicar cómo dosifica el combustible un carburador de flotador y qué hacen sus circuitos",
+      "Reconocer las condiciones, los tipos y los síntomas del hielo de carburador y usar la calefacción correctamente",
+      "Enumerar las ventajas de la inyección indirecta y por qué elimina el hielo de carburador",
+      "Describir el common rail, los inyectores y el papel del FADEC con sus sensores"
     ],
     "sections": [
       {
         "title": "Qué tiene que hacer el sistema de alimentación",
         "text": [
-          "El motor necesita mezclar aire y gasolina en una proporción muy concreta y hacerlo en todo el rango de potencias, del ralentí a la potencia máxima. Esa proporción se mide en masa: la mezcla químicamente perfecta, la **estequiométrica**, es de unos **15 kg de aire por 1 kg de gasolina** (15:1). Con más aire la mezcla es pobre; con menos, rica. En el bloque 020.15 verás qué proporción conviene en cada fase.",
+          "El motor necesita mezclar aire y combustible en una proporción muy concreta y hacerlo en todo el rango de potencias, del ralentí a la máxima. Esa proporción se mide en masa: la mezcla químicamente perfecta, la **estequiométrica**, es de unos **15 kg de aire por 1 kg de gasolina** (15:1). Con más aire la mezcla es pobre; con menos, rica. En el bloque 020.15 verás qué proporción conviene en cada fase.",
           "Hay dos maneras de dosificar el combustible: el **carburador**, que lo aspira aprovechando la depresión del aire que pasa, y la **inyección**, que lo envía a presión hasta cada cilindro. El PA-28-161 Warrior III lleva un Lycoming O-320 con carburador; el Cessna 172S lleva un Lycoming IO-360 con inyección. Esa diferencia determina cómo arrancas, qué vigilas en el descenso y qué haces ante el hielo."
         ],
         "examples": [
@@ -22,6 +22,19 @@
             "q": "Un motor aspira 60 kg de aire en cierto tiempo con mezcla estequiométrica 15:1. ¿Cuánto combustible consume en ese tiempo?",
             "a": "60 ÷ 15 = 4 kg de gasolina, unos 5,6 l de AVGAS a 0,72 kg/l."
           }
+        ],
+        "ideas": [
+          "Un carburador es como un cocinero que mezcla el aderezo a ojo según el viento que sopla: si hay mucho aire pone más aceite. La inyección es el mismo cocinero con una jeringuilla graduada: pone exactamente lo que toca en cada plato."
+        ]
+      },
+      {
+        "title": "Requisitos básicos de un carburador",
+        "text": [
+          "Un carburador cumple su trabajo si satisface tres requisitos. **Primero**, controlar la **relación aire-combustible** según la posición de la mariposa de gases (throttle) en todos los niveles de potencia, desde el ralentí hasta la plena potencia, y también durante las aceleraciones y desaceleraciones, cuando el aire y la gasolina se mueven a ritmos distintos. **Segundo**, funcionar bien en todas las **altitudes y temperaturas** del rango de operación del motor: la densidad del aire cambia y el carburador no puede quedarse corto ni pasarse. **Tercero**, **facilitar el arranque** y poder **cortar el suministro** de combustible para parar el motor (el corte de ralentí que verás más abajo).",
+          "Cada pieza del carburador que estudias en la sección siguiente existe para cumplir alguno de estos requisitos: el surtidor principal para la potencia normal, el circuito de ralentí para las RPM bajas, la bomba de aceleración para los cambios bruscos y el corrector de mezcla para las diferentes altitudes."
+        ],
+        "ideas": [
+          "Es como un camarero de barra con tres obligaciones: servir bien con poca gente y con el local lleno, atender igual de bien en invierno y en verano, y poder cerrar el grifo cuando se acaba la noche."
         ]
       },
       {
@@ -37,6 +50,11 @@
           "**Bomba de aceleración**: al abrir los gases de golpe, el aire llega antes que la gasolina y la mezcla se empobrece un instante. Un pistón o un diafragma inyecta un chorro extra de combustible y evita tirones o que el motor se ahogue. Por eso se avanza la palanca de gases con suavidad.",
           "**Corrector de mezcla**: el mando de mezcla reduce el caudal de combustible mediante una aguja dosificadora. Es la forma de compensar la menor densidad del aire con la altitud (ver 020.15).",
           "**Corte de ralentí (idle cut-off)**: al llevar la mezcla al extremo de pobre se corta el combustible y el motor se para. Es la forma normal de parar un motor de carburador, con el ralentí estabilizado."
+        ],
+        "ideas": [
+          "El venturi es como estrechar una manguera con el pulgar: el agua sale más deprisa por el hueco y la presión cae; esa caída de presión es la que aspira la gasolina como una pajita.",
+          "La cuba de flotador funciona como la cisterna del váter: el flotador cierra la entrada cuando el agua llega a su nivel, y así la descarga siempre es igual.",
+          "La bomba de aceleración es dar un empujón de más al columpio justo al arrancarlo: ayuda cuando el motor pide mucho de golpe."
         ]
       },
       {
@@ -70,7 +88,11 @@
             ]
           ],
           "src": "FAA PHAK cap. 7"
-        }
+        },
+        "ideas": [
+          "Es lo que notas cuando te echas alcohol en la mano: al evaporarse se siente frío. La gasolina que se evapora enfría el aire del carburador igual, y esa humedad se congela.",
+          "El hielo de impacto es como la escarcha que se forma en el parabrisas al conducir con niebla helada: se pega a lo primero que toca."
+        ]
       },
       {
         "title": "Cuándo hay riesgo",
@@ -83,7 +105,11 @@
         "note": {
           "kind": "tip",
           "text": "En el examen, la respuesta casi siempre es la combinación: humedad alta, temperatura moderada (unos −10 a +25 °C) y potencia reducida. El aire seco o muy frío y el muy caliente y seco son poco peligrosos."
-        }
+        },
+        "ideas": [
+          "Piensa en la lata fría que sacas del frigorífico un día húmedo: se llena de gotas aunque la cocina esté templada. El carburador es esa lata.",
+          "El peligro es mayor con la mariposa casi cerrada porque es como un cuello de botella: cuanto más estrecho, más se enfría el aire al pasar."
+        ]
       },
       {
         "title": "Síntomas y calefacción del carburador",
@@ -127,12 +153,17 @@
           "kind": "es",
           "text": "En el PA-28 la comprobación de la calefacción forma parte de la prueba de motor (cabina de la app). El momento exacto de conectarla en descenso y aproximación lo fija el POH o el criterio de la escuela."
         },
-        "verify": true
+        "verify": true,
+        "ideas": [
+          "La calefacción del carburador es como el desempañador del coche: no lo usas a medias, lo pones a tope hasta que se despeja el cristal. Y no lo quieres al máximo si necesitas toda la potencia.",
+          "Las RPM que bajan tras aplicar calor sin hielo son como las de un corredor que respira aire caliente y menos denso: rinde algo menos."
+        ]
       },
       {
-        "title": "Inyección: el motor del C172S",
+        "title": "Inyección indirecta: el motor del C172S",
         "text": [
-          "En un motor de **inyección** (el IO-360 del C172S) una bomba envía gasolina a presión a un dosificador y de ahí a un **inyector por cilindro**, junto a la válvula de admisión. No hay venturi ni mariposa que enfríen el aire con el combustible, así que **no existe el hielo de evaporación ni el de estrangulamiento** y tampoco hay mando de calefacción del carburador. La distribución entre cilindros es más uniforme y el motor responde mejor a los gases.",
+          "En un motor de **inyección indirecta** (el IO-360 del C172S) una bomba envía la gasolina a presión a un dosificador y de ahí a un **inyector por cilindro**, junto a la válvula de admisión, de modo que el combustible se mezcla con el aire justo antes de entrar en el cilindro. Se llama indirecta porque el combustible no se inyecta dentro de la cámara de combustión.",
+          "Tiene varias ventajas frente al carburador. Trabaja a **baja presión**, lo que simplifica el sistema. Reparte el combustible con **buena distribución** entre los cilindros, así que la combustión es más uniforme. **No tiene los problemas de hielo de carburador**: no hay venturi ni mariposa que enfríen el aire con la gasolina que se evapora, de modo que no existen el hielo de evaporación ni el de estrangulamiento y tampoco hay mando de calefacción del carburador. Y la bomba de combustible **no necesita sincronizarse** con el ciclo del motor: no tiene que inyectar en un instante concreto.",
           "Sigue existiendo el **hielo de impacto** en la toma o el filtro. Para eso el C172S lleva una **toma de aire alternativa**: una trampilla que deja entrar el aire del interior del capó, más caliente, y se abre sola o a mano si el filtro se obstruye. Un indicio de filtro obstruido es la caída de la presión de admisión.",
           "Inconvenientes: tras parar un motor caliente, el calor acumulado vaporiza el combustible en las líneas y el arranque es más difícil; además, un exceso de cebado ahoga el motor. El **arranque en caliente** de un motor de inyección tiene un procedimiento propio en el POH (mezcla, gases, bomba eléctrica): sigue el del avión y no improvises."
         ],
@@ -172,22 +203,81 @@
           ],
           "src": "POH del PA-28-161 y del C172S"
         },
-        "verify": true
+        "verify": true,
+        "ideas": [
+          "Un inyector por cilindro es como un camarero por mesa en lugar de uno solo para todo el local: nadie se queda sin su plato, y todos reciben lo mismo.",
+          "El arranque en caliente difícil se parece a una botella de refresco olvidada al sol: al abrirla sale más espuma (vapor) que líquido."
+        ]
+      },
+      {
+        "title": "Inyección directa: common rail y FADEC",
+        "text": [
+          "En la **inyección directa**, el combustible se inyecta **dentro de la cámara de combustión**. Es el sistema de los motores diésel modernos de aviación y funciona así: una **única bomba de combustible de muy alta presión**, de unos **2000 bar** (unos 29 000 psi), llena un conducto acumulador común llamado **common rail**. De ese conducto sale combustible a toda esa presión hacia los **inyectores**, uno por cilindro, que se abren y cierran con una orden eléctrica mediante un **solenoide** o, en los sistemas más modernos, un **actuador piezoeléctrico** (un cristal que se deforma con la tensión y es muy rápido).",
+          "Quien decide el instante y la cantidad es el **FADEC (Full Authority Digital Engine Control)**, un ordenador con autoridad total sobre el motor. Calcula cuándo y cuánto inyectar según las RPM y recibe datos de varios **sensores**: la **temperatura del aire**, la **densidad del aire** y la **posición de la palanca de gases**. Con esos tres datos sabe qué combustible necesita el motor en cada momento sin que el piloto toque la mezcla.",
+          "El control electrónico da cuatro ventajas: **mayor eficiencia** en el consumo de combustible, **mejor gestión de la potencia**, **menos emisiones contaminantes** y un funcionamiento más **suave y preciso**. A cambio, el motor y el avión dependen de la electrónica y de la alimentación del FADEC."
+        ],
+        "figure": "svg:020-common-rail",
+        "caption": "Common rail: bomba de alta presión, conducto común, inyectores y FADEC con sus sensores",
+        "table": {
+          "caption": "Los tres sistemas de alimentación",
+          "head": [
+            "",
+            "Carburador",
+            "Inyección indirecta",
+            "Inyección directa (common rail)"
+          ],
+          "rows": [
+            [
+              "Quién dosifica",
+              "Depresión del venturi",
+              "Dosificador mecánico y bomba",
+              "FADEC con inyectores electrónicos"
+            ],
+            [
+              "Presión",
+              "Casi atmosférica",
+              "Baja",
+              "Muy alta (unos 2000 bar)"
+            ],
+            [
+              "Dónde entra el combustible",
+              "Antes de la mariposa",
+              "Junto a la válvula de admisión",
+              "Dentro de la cámara"
+            ],
+            [
+              "Hielo de carburador",
+              "Sí",
+              "No",
+              "No"
+            ]
+          ],
+          "src": "Curso, Tema 7"
+        },
+        "ideas": [
+          "El common rail es como la red de agua de una ciudad: una bomba mantiene toda la tubería presurizada y cada grifo (inyector) solo tiene que abrirse cuando se lo piden.",
+          "El FADEC es el conductor automático de un coche moderno: mira la temperatura, la altitud y tu pedal, y decide solo cuánto combustible dar."
+        ]
       }
     ],
     "numbers": [
       "Mezcla estequiométrica: unos 15 kg de aire por 1 kg de gasolina (15:1)",
+      "Carburador: controla la mezcla en todo el rango, funciona en todas las altitudes y temperaturas y facilita el arranque y el corte",
       "Caída de temperatura en el carburador: 20 °C o más; hielo posible incluso con 20 °C y humedad alta",
       "Riesgo máximo: humedad alta, unos −10 a +25 °C y potencia reducida",
       "Calefacción sin hielo: las RPM bajan y se quedan bajas; con hielo: bajan y luego suben",
-      "Paso fijo: el hielo se nota en las RPM; velocidad constante: en la MAP"
+      "Inyección indirecta: baja presión, buena distribución, sin hielo de carburador, bomba sin sincronizar",
+      "Common rail: unos 2000 bar (29 000 psi), inyectores de solenoide o piezoeléctricos",
+      "FADEC: decide instante y cantidad según RPM y sensores de temperatura y densidad del aire y posición de la palanca de gases"
     ],
     "traps": [
       "Creer que solo hay hielo con frío: el hielo de evaporación se forma por encima de 20 °C con humedad alta.",
       "Esperar que las RPM suban siempre al conectar la calefacción: sin hielo bajan y se quedan bajas.",
       "Usar calefacción parcial: puede ser peor que no usarla.",
       "Olvidar que el aire de la calefacción no pasa por el filtro.",
-      "Pensar que un motor de inyección no puede helarse: sigue habiendo hielo de impacto en la toma o el filtro."
+      "Pensar que un motor de inyección no puede helarse: sigue habiendo hielo de impacto en la toma o el filtro.",
+      "Confundir inyección indirecta (junto a la válvula de admisión, baja presión) con la directa (en la cámara, common rail a unos 2000 bar).",
+      "Creer que el FADEC solo lee las RPM: también usa temperatura y densidad del aire y la posición de la palanca de gases."
     ],
     "spain": [
       "En costa o tras la lluvia, con humedad alta y entre 10 y 20 °C, el riesgo de hielo de carburador en descenso existe durante todo el año, también en verano."
@@ -200,9 +290,12 @@
       {
         "title": "Manual de vuelo (POH) del Piper PA-28-161 Warrior III y del Cessna 172S",
         "url": "https://www.piper.com/"
+      },
+      {
+        "title": "Curso de CGA (ATPLENJOY/DREAMAIR), Tema 7: Motores y hélices"
       }
     ],
-    "reviewed": "2026-10-09",
+    "reviewed": "2026-11-17",
     "links": [
       {
         "label": "Prueba de motor en la cabina del PA-28 (calefacción del carburador)",
@@ -215,6 +308,79 @@
       {
         "label": "Arranque del C172 (inyección)",
         "href": "#/ac/c172/flow/start"
+      }
+    ],
+    "course": "Tema 7 · Motores y hélices (carburadores y sistemas de inyección)",
+    "outline": [
+      {
+        "title": "Carburador",
+        "items": [
+          "Requisitos: mezcla en todo el rango, altitudes y temperaturas, arranque y corte",
+          "Venturi, surtidor, cuba y mariposa",
+          "Ralentí, bomba de aceleración, corrector y corte de ralentí"
+        ]
+      },
+      {
+        "title": "Hielo de carburador",
+        "items": [
+          "Evaporación, estrangulamiento e impacto",
+          "Humedad alta, −10 a +25 °C y poca potencia",
+          "Síntoma: RPM (paso fijo) o MAP (velocidad constante)",
+          "Calefacción: todo o nada, aire sin filtrar"
+        ]
+      },
+      {
+        "title": "Inyección indirecta",
+        "items": [
+          "Un inyector por cilindro junto a la admisión",
+          "Baja presión, buena distribución",
+          "Sin hielo de carburador; sigue el de impacto",
+          "Bomba sin sincronizar"
+        ]
+      },
+      {
+        "title": "Inyección directa",
+        "items": [
+          "Bomba única de unos 2000 bar",
+          "Common rail y inyectores de solenoide o piezo",
+          "FADEC: RPM y sensores",
+          "Eficiencia, potencia, emisiones y suavidad"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "Hielo de carburador: «humedad, templado y poco gas»; el aire seco, el frío extremo y la potencia alta lo evitan.",
+      "Tres tipos de hielo: «E-E-I»: evaporación, estrangulamiento, impacto.",
+      "Sensores del FADEC: «tiempo, aire y pedal»: temperatura, densidad del aire y palanca de gases."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Qué tres cosas tiene que hacer bien un carburador?",
+        "a": "Controlar la mezcla en todo el rango de potencias y en aceleración y desaceleración; funcionar en todas las altitudes y temperaturas; facilitar el arranque y permitir cortar el combustible."
+      },
+      {
+        "q": "¿Por qué el hielo de carburador puede formarse con 20 °C?",
+        "a": "Porque la gasolina que se evapora y el aire que se expande enfrían el aire dentro del carburador 20 °C o más; si hay humedad, esta se congela."
+      },
+      {
+        "q": "¿Cómo distingues, con hélice de paso fijo, si había hielo al aplicar calefacción?",
+        "a": "Sin hielo, las RPM bajan y se quedan bajas. Con hielo, bajan y luego suben al fundirse; al cerrar la calefacción quedan por encima del valor inicial."
+      },
+      {
+        "q": "Cuatro ventajas de la inyección indirecta frente al carburador.",
+        "a": "Baja presión (sistema sencillo), buena distribución entre cilindros, sin problemas de hielo de carburador y bomba que no necesita sincronizarse con el ciclo."
+      },
+      {
+        "q": "¿Qué es el common rail y qué le pasa al combustible en él?",
+        "a": "Un conducto acumulador común al que una bomba única envía combustible a unos 2000 bar y que lo reparte a los inyectores."
+      },
+      {
+        "q": "¿Qué hace el FADEC y qué sensores usa?",
+        "a": "Controla el instante y la cantidad de inyección según las RPM, con la temperatura y densidad del aire y la posición de la palanca de gases."
+      },
+      {
+        "q": "¿Por qué un motor de inyección puede tener hielo aunque no tenga carburador?",
+        "a": "Por el hielo de impacto en la toma de aire o el filtro; para eso hay una toma de aire alternativa."
       }
     ]
   },
@@ -726,6 +892,216 @@
         "El interruptor de magnetos se cierra después, no a la vez."
       ],
       "ref": "POH PA-28-161; PHAK cap. 7"
+    },
+    {
+      "id": "020.11.025",
+      "type": "concepto",
+      "level": 1,
+      "q": "Entre los requisitos básicos de un carburador está:",
+      "options": [
+        "Mantener la presión de combustible en unos 2000 bar",
+        "Funcionar solo a la altitud de despegue",
+        "Controlar la relación aire-combustible en todos los niveles de potencia, del ralentí a la plena potencia",
+        "Impedir que el motor se pare nunca"
+      ],
+      "correct": 2,
+      "why": "El carburador tiene que dosificar bien en todo el rango de potencias, también en aceleraciones y desaceleraciones, a cualquier altitud y temperatura de operación, y facilitar arranque y parada.",
+      "whyNot": [
+        "Eso es de la inyección directa common rail.",
+        "Debe funcionar en todas las altitudes y temperaturas del rango del motor.",
+        null,
+        "Debe poder cortar el suministro para parar el motor."
+      ],
+      "ref": "Curso Tema 7; PHAK cap. 7"
+    },
+    {
+      "id": "020.11.026",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un carburador debe poder:",
+      "options": [
+        "Funcionar bien en todas las altitudes y temperaturas del rango operativo del motor",
+        "Hacerlo solo en tierra y a baja potencia",
+        "Funcionar sin necesidad de mezcla",
+        "Impedir que se corte el suministro de combustible"
+      ],
+      "correct": 0,
+      "why": "La densidad del aire cambia con altitud y temperatura, y el carburador debe seguir dando una mezcla adecuada con la ayuda del mando de mezcla.",
+      "whyNot": [
+        null,
+        "Debe cubrir todo el rango, también el vuelo a distintas altitudes.",
+        "El control de mezcla compensa precisamente la altitud en el carburador.",
+        "Debe permitir cortarlo para parar el motor."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.11.027",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una ventaja de la inyección indirecta es que:",
+      "options": [
+        "Trabaja a unos 2000 bar",
+        "Inyecta el combustible en la cámara de combustión",
+        "Necesita calefacción de carburador",
+        "Trabaja a baja presión, lo que simplifica el sistema"
+      ],
+      "correct": 3,
+      "why": "La inyección indirecta trabaja a baja presión, reparte bien el combustible, no tiene hielo de carburador y su bomba no necesita sincronizarse.",
+      "whyNot": [
+        "Esa presión es de la inyección directa common rail.",
+        "Eso es la inyección directa; la indirecta inyecta junto a la válvula de admisión.",
+        "No tiene carburador: elimina el hielo de evaporación y estrangulamiento.",
+        null
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.11.028",
+      "type": "concepto",
+      "level": 3,
+      "q": "En un sistema de inyección indirecta, la bomba de combustible:",
+      "options": [
+        "Debe inyectar justo en el PMS de cada cilindro",
+        "No necesita sincronizarse con el ciclo de funcionamiento del motor",
+        "Debe abrirse y cerrarse con el árbol de levas",
+        "Solo funciona al aplicar calefacción"
+      ],
+      "correct": 1,
+      "why": "La bomba mantiene el combustible a baja presión y los inyectores lo dosifican junto a la admisión; no hay que sincronizarla con las carreras.",
+      "whyNot": [
+        "Eso exige sincronía; la indirecta no la necesita.",
+        null,
+        "No va unida a la distribución para inyectar.",
+        "No hay relación con la calefacción de carburador."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.11.029",
+      "type": "regla",
+      "level": 1,
+      "q": "La presión aproximada del common rail de un sistema de inyección directa es de:",
+      "options": [
+        "Unos 20 bar",
+        "Unos 200 bar",
+        "Unos 2000 bar",
+        "Unos 20 000 bar"
+      ],
+      "correct": 2,
+      "why": "Una única bomba mantiene el acumulador común a unos 2000 bar (unos 29 000 psi) para alimentar los inyectores electrónicos.",
+      "whyNot": [
+        "Es cien veces menor que la real.",
+        "Es diez veces menor que la real.",
+        null,
+        "Es diez veces mayor que la real."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.11.030",
+      "type": "concepto",
+      "level": 2,
+      "q": "En la inyección directa common rail, quién decide el momento y la cantidad de la inyección es:",
+      "options": [
+        "El FADEC, según las RPM y los datos de sus sensores",
+        "El piloto con el mando de mezcla",
+        "El flotador de la cuba",
+        "El árbol de levas"
+      ],
+      "correct": 0,
+      "why": "El FADEC calcula cuándo y cuánto inyectar según las RPM y la información de la temperatura y la densidad del aire y de la posición de la palanca de gases.",
+      "whyNot": [
+        null,
+        "Con FADEC no se controla manualmente la mezcla.",
+        "No hay cuba de flotador en la inyección.",
+        "No dosifica el combustible: controla las válvulas."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.11.031",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál de estos datos recibe el FADEC de un sensor?",
+      "options": [
+        "El nivel de la cuba de flotador",
+        "La posición de la palanca de gases",
+        "La temperatura de la calefacción de carburador",
+        "La posición de la válvula de aguja"
+      ],
+      "correct": 1,
+      "why": "Entre los sensores del FADEC están la temperatura del aire, la densidad del aire y la posición de la palanca de gases (throttle position).",
+      "whyNot": [
+        "En el common rail no hay cuba de flotador.",
+        null,
+        "No hay calefacción de carburador en inyección directa.",
+        "La válvula de aguja es del carburador."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.11.032",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué mejora aporta el control electrónico de la inyección directa?",
+      "options": [
+        "Más hielo en el venturi",
+        "Mayor dependencia del mando de mezcla",
+        "Menos eficiencia de combustible",
+        "Menos emisiones contaminantes y un funcionamiento más suave y preciso"
+      ],
+      "correct": 3,
+      "why": "El control electrónico permite más eficiencia, mejor gestión de potencia, menos emisiones y un funcionamiento más suave y preciso.",
+      "whyNot": [
+        "No hay venturi ni carburador.",
+        "El FADEC dosifica solo.",
+        "Mejora la eficiencia en el consumo de combustible.",
+        null
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.11.033",
+      "type": "concepto",
+      "level": 2,
+      "q": "Los inyectores del common rail se accionan mediante:",
+      "options": [
+        "Solenoides o, en los sistemas más modernos, actuadores piezoeléctricos",
+        "El árbol de levas",
+        "La depresión del venturi",
+        "Un flotador y una válvula de aguja"
+      ],
+      "correct": 0,
+      "why": "Cada inyector se abre y cierra con una orden eléctrica del FADEC, con un solenoide o un actuador piezoeléctrico.",
+      "whyNot": [
+        null,
+        "No dependen de la distribución mecánica.",
+        "No hay venturi.",
+        "Eso es del carburador."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.11.034",
+      "type": "concepto",
+      "level": 2,
+      "q": "La diferencia entre inyección indirecta y directa es que la directa inyecta el combustible:",
+      "options": [
+        "Antes del carburador",
+        "Dentro de la cámara de combustión",
+        "Junto a la válvula de admisión",
+        "En el colector de escape"
+      ],
+      "correct": 1,
+      "why": "En la inyección directa el combustible entra a alta presión directamente en la cámara; en la indirecta, junto a la válvula de admisión.",
+      "whyNot": [
+        "No hay carburador en ninguna de las dos.",
+        null,
+        "Eso es la indirecta.",
+        "El combustible se inyecta donde se quema, no en el escape."
+      ],
+      "ref": "Curso Tema 7"
     }
   ],
   "cards": [
@@ -763,6 +1139,31 @@
       "id": "c.020.11.07",
       "front": "Motor de inyección: qué hielo sigue existiendo",
       "back": "Hielo de impacto en la toma; se resuelve con el aire alternativo"
+    },
+    {
+      "id": "c.020.11.08",
+      "front": "Requisitos de un carburador",
+      "back": "Controlar la mezcla en todo el rango, funcionar a cualquier altitud y temperatura, facilitar el arranque y poder cortar el combustible"
+    },
+    {
+      "id": "c.020.11.09",
+      "front": "Inyección indirecta: ventajas",
+      "back": "Baja presión, buena distribución, sin hielo de carburador y bomba sin sincronizar"
+    },
+    {
+      "id": "c.020.11.10",
+      "front": "Common rail",
+      "back": "Bomba única de unos 2000 bar que alimenta un acumulador común y los inyectores"
+    },
+    {
+      "id": "c.020.11.11",
+      "front": "FADEC en la inyección",
+      "back": "Decide momento y cantidad según RPM, con temperatura y densidad del aire y palanca de gases"
+    },
+    {
+      "id": "c.020.11.12",
+      "front": "Ventajas del control electrónico",
+      "back": "Eficiencia, gestión de potencia, menos emisiones y funcionamiento suave y preciso"
     }
   ]
 }

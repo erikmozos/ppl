@@ -2,6 +2,7 @@
 import { AltimetryCalc, CgCalc, CrosswindCalc, FuelCalc, OneInSixty, TasCalc, TimeCalc, TurnCalc, VmcCalc, WindCalc } from './calcs'
 import { MetarCalc } from './metar'
 import { AdfSim, VorSim } from './radionav'
+import { OhmCalc, OttoSim, TabsSim, TurbofanSim } from './systems'
 
 const REGISTRY: Record<string, () => React.ReactNode> = {
   'calc:vmc': () => <VmcCalc />,
@@ -17,6 +18,10 @@ const REGISTRY: Record<string, () => React.ReactNode> = {
   'calc:fuel': () => <FuelCalc />,
   'sim:vor': () => <VorSim />,
   'sim:adf': () => <AdfSim />,
+  'sim:turbofan': () => <TurbofanSim />,
+  'sim:otto': () => <OttoSim />,
+  'sim:tabs': () => <TabsSim />,
+  'calc:ohm': () => <OhmCalc />,
 }
 
 export default function Widget({ id }: { id: string }) {

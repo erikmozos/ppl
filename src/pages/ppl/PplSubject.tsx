@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react'
 import type { Subject } from '../../data/licenses/types'
 import type { SyllabusSubject } from '../../data/licenses/ppl-syllabus'
+import { Outline } from '../../components/LessonView'
+import { Rich } from '../../components/Rich'
 import { hasLesson, lessonsOf, useLessons } from '../../study/content'
 import { blockStats, readiness } from '../../study/exam'
 import { generateMany, hasGenerator } from '../../study/generators'
@@ -15,7 +17,7 @@ const shuffle = <T,>(a: T[]) => a.map(x => [Math.random(), x] as const).sort((p,
 export function PplSubject({ syl, sub, tab }: { syl: SyllabusSubject; sub?: Subject; tab: string }) {
   const s = useStore()
   const base = `#/licencias/ppl/${syl.id}`
-  const tabs: [string, string][] = [['temario', 'Temario'], ['practicar', 'Practicar'], ['fichas', 'Fichas'], ['simulacro', 'Simulacro'], ['recursos', 'Libros y recursos']]
+  const tabs: [string, string][] = [['temario', 'Temario'], ['resumen', 'Resumen para estudiar'], ['practicar', 'Practicar'], ['fichas', 'Fichas'], ['simulacro', 'Simulacro'], ['recursos', 'Libros y recursos']]
   const t = tabs.some(x => x[0] === tab) ? tab : 'temario'
   const stats = useMemo(() => blockStats(s.study), [s.study])
   const r = readiness(syl, s.study, stats)
@@ -38,28 +40,48 @@ export function PplSubject({ syl, sub, tab }: { syl: SyllabusSubject; sub?: Subj
       <nav className="tabs" role="tablist">
         {tabs.map(([id, name]) => <a key={id} role="tab" aria-selected={t === id} className={t === id ? 'on' : ''} href={`${base}?tab=${id}`}>{name}</a>)}
       </nav>
-      {t === 'temario' && (
-        <ol className="lesson-list">
-          {syl.blocks.map((b, i) => {
-            const st = stats[b.id]
-            const has = hasLesson(b.id)
-            return (
-              <li key={b.id} className={has ? '' : 'pending'}>
-                <span className="lesson-n">{i + 1}</span>
-                <div className="lesson-body">
-                  {has ? <a href={`${base}/${b.id}`}>{b.title}</a> : <span>{b.title}</span>}
-                  <p className="muted small">{b.topics}</p>
-                </div>
-                <div className="lesson-meta small">
-                  {s.study.lessons[b.id] && <span className="tag ok">leída</span>}
-                  {!has && <span className="tag">en redacción</span>}
-                  {st && st[1] > 0 && <span className={st[0] / st[1] >= 0.75 ? 'ok-text' : st[0] / st[1] >= 0.6 ? '' : 'bad-text'}>{Math.round((st[0] / st[1]) * 100)} % · {st[1]}</span>}
-                </div>
-              </li>
-            )
-          })}
-        </ol>
-      )}
+      {t === 'temario' && (() => {
+        const row = (b: SyllabusSubject['blocks'][number]) => {
+          const i = syl.blocks.indexOf(b)
+          const st = stats[b.id]
+          const has = hasLesson(b.id)
+          return (
+            <li key={b.id} className={has ? '' : 'pending'}>
+              <span className="lesson-n">{i + 1}</span>
+              <div className="lesson-body">
+                {has ? <a href={`${base}/${b.id}`}>{b.title}</a> : <span>{b.title}</span>}
+                <p className="muted small">{b.topics}</p>
+              </div>
+              <div className="lesson-meta small">
+                {s.study.lessons[b.id] && <span className="tag ok">leída</span>}
+                {!has && <span className="tag">en redacción</span>}
+                {st && st[1] > 0 && <span className={st[0] / st[1] >= 0.75 ? 'ok-text' : st[0] / st[1] >= 0.6 ? '' : 'bad-text'}>{Math.round((st[0] / st[1]) * 100)} % · {st[1]}</span>}
+              </div>
+            </li>
+          )
+        }
+        if (!syl.course) return <ol className="lesson-list">{syl.blocks.map(row)}</ol>
+        const inCourse = new Set(syl.course.flatMap(c => c.blocks))
+        const rest = syl.blocks.filter(b => !inCourse.has(b.id))
+        return (
+          <div>
+            <p className="muted small">Ordenado como el temario de tus instructores. Al final, los bloques del temario oficial que el curso todavía no ha dado.</p>
+            {syl.course.map(c => (
+              <div key={c.title}>
+                <p className="course-group">{c.title}</p>
+                <ol className="lesson-list">{c.blocks.map(id => syl.blocks.find(b => b.id === id)!).filter(Boolean).map(row)}</ol>
+              </div>
+            ))}
+            {rest.length > 0 && (
+              <div>
+                <p className="course-group">Resto del temario oficial <span className="muted small">(no está en las diapositivas del curso)</span></p>
+                <ol className="lesson-list">{rest.map(row)}</ol>
+              </div>
+            )}
+          </div>
+        )
+      })()}
+      {t === 'resumen' && <SubjectSummary syl={syl} />}
       {t === 'practicar' && <PracticeSetup syl={syl} />}
       {t === 'fichas' && <SubjectCards syl={syl} />}
       {t === 'simulacro' && <ExamCenter fixed={syl} />}
@@ -148,6 +170,35 @@ function SubjectCards({ syl }: { syl: SyllabusSubject }) {
         <button className="btn" disabled={!all.length} onClick={() => setMode('all')}>Repasarlas todas</button>
         <button className="btn ghost" disabled={inQueue === all.length} onClick={() => actions.addCards(all.map(c => 'c:' + c.id))}>Añadir todas a mi repaso</button>
       </div>
+    </div>
+  )
+}
+
+/** Resumen para estudiar e imprimir: esquema, cifras, mnemotecnias y trampas de cada lección */
+function SubjectSummary({ syl }: { syl: SyllabusSubject }) {
+  const files = useLessons(syl.code)
+  if (!files) return <p className="muted">Cargando…</p>
+  const order = syl.course ? [...syl.course.flatMap(c => c.blocks), ...syl.blocks.map(b => b.id)] : syl.blocks.map(b => b.id)
+  const ids = [...new Set(order)]
+  const list = ids.map(id => files.find(f => f.lesson.id === id)).filter(Boolean) as typeof files
+  return (
+    <div className="summary-print narrow-doc">
+      <div className="row between wrap-row no-print">
+        <p className="muted small">Todo lo esencial de {syl.name.toLowerCase()} en una página: el esquema de cada lección, las cifras, las mnemotecnias y las trampas de examen.</p>
+        <button className="btn sm" onClick={() => window.print()}>Imprimir o guardar en PDF</button>
+      </div>
+      {list.map(f => {
+        const l = f.lesson
+        return (
+          <section key={l.id} className="sum-lesson">
+            <h3><span className="mono muted small">{l.id}</span> {l.title}</h3>
+            {l.outline?.length ? <Outline l={l} compact /> : <p className="small">{l.summary}</p>}
+            <ul className="numbers">{l.numbers.map((n, i) => <li key={i}><Rich text={n} /></li>)}</ul>
+            {l.mnemonics?.length ? <p className="small"><b>Mnemotecnias:</b> {l.mnemonics.map((m, i) => <span key={i}><Rich text={m} />{i < l.mnemonics!.length - 1 ? ' · ' : ''}</span>)}</p> : null}
+            <p className="small"><b>Trampas:</b> {l.traps.map((m, i) => <span key={i}><Rich text={m} />{i < l.traps.length - 1 ? ' · ' : ''}</span>)}</p>
+          </section>
+        )
+      })}
     </div>
   )
 }

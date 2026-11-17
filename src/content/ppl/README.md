@@ -79,6 +79,18 @@ Cada lección enseña su bloque **entero** y lo hace como un buen profesor de es
 9. Tono: castellano de España, claro, sobrio y directo, segunda persona («tú»). Nada de frases de relleno («en este apasionante tema…»), ni exclamaciones, ni emojis. Términos como en el examen: «altitud de presión», «masa en vacío básica», «reserva final»; unidades ft, kt, NM, hPa, °C, kg, l. Siglas inglesas en su forma oficial (VMC, QNH, TODA) y explicadas la primera vez.
 10. Fecha `reviewed`: `2026-10-09`.
 
+## Material del curso y modelos de estudio
+
+Cuando una materia tiene material de los instructores (en `course-material/<materia>/`, que no se publica), la lección sigue su orden, su terminología y su nivel, y añade:
+
+- `course`: de qué tema del curso sale (`"Tema 2 · Mandos de vuelo"`).
+- `ideas` (en cada sección): comparaciones cotidianas para entender el concepto, aunque sean tontas («el momento de bisagra es como abrir una puerta empujando cerca de las bisagras»). Al menos una en casi todas las secciones.
+- `outline`: esquema para estudiar, de 3 a 6 ramas con ítems cortos (cada ítem, una línea).
+- `mnemonics`: trucos para memorizar listas y cifras.
+- `selfCheck`: de 5 a 8 preguntas abiertas de «explícalo con tus palabras», con respuesta breve.
+
+Nunca se copia el texto de las diapositivas: se explica con palabras propias, más claro y más completo. Si el material del curso contradice una norma o un dato técnico contrastado, se respeta el enfoque del curso, se marca la sección con `verify` y se anota en el informe.
+
 ## Las preguntas
 
 Reglas del banco (formato de AESA):
@@ -130,6 +142,10 @@ Una sección puede insertar un widget con `"figure": "calc:<id>"`. Disponibles (
 | `calc:fuel` | Velocidad, tiempo, distancia y combustible |
 | `sim:vor` | CDI del VOR con OBS y TO/FROM |
 | `sim:adf` | RBI del ADF: QDM y QDR |
+| `sim:turbofan` | Partes de un turbofán (explorar y pruébate) |
+| `sim:otto` | Ciclo de cuatro tiempos animado |
+| `sim:tabs` | Tabs de compensación: sentido, esfuerzo y eficacia |
+| `calc:ohm` | Ley de Ohm, serie y paralelo |
 
 ## Fuentes de referencia
 

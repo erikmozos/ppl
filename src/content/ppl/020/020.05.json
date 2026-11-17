@@ -1,87 +1,245 @@
 {
   "lesson": {
     "id": "020.05",
-    "title": "Antihielo",
-    "summary": "Calefacción del pitot y del parabrisas, otros sistemas antihielo y deshielo, el hielo estructural y por qué un PA-28 o un C172 no están certificados para volar en hielo conocido; calefacción de cabina y riesgo de monóxido de carbono.",
+    "title": "Formación de hielo, antihielo y deshielo",
+    "course": "Tema 4 · Antihielo y deshielo",
+    "summary": "Gotas subenfriadas, factores y efectos del hielo, tipos (transparente, escarchado, escarcha), avisos y detectores, botas neumáticas, protección térmica y por fluido, hélice, calefacción del pitot y límites de un avión no certificado para hielo.",
     "objectives": [
-      "Explicar para qué sirve la calefacción del pitot y cómo se comprueba",
-      "Distinguir sistemas antihielo y de deshielo, y conocer los más habituales",
-      "Describir los efectos del hielo estructural y los tipos de hielo",
-      "Entender qué significa que un avión no esté certificado para volar en hielo conocido y qué hacer si se forma hielo",
-      "Reconocer el riesgo del monóxido de carbono de la calefacción de cabina"
+      "Explicar cómo se forma el hielo, de qué factores depende y qué efectos tiene en las prestaciones",
+      "Distinguir hielo transparente, escarchado y escarcha, con sus temperaturas según el curso",
+      "Diferenciar los avisos primario automático, primario manual y advisory",
+      "Describir los detectores Teddington y Smiths, las botas neumáticas, la protección térmica y el fluido FPD",
+      "Explicar los efectos del hielo en la hélice y la calefacción del pitot",
+      "Saber por qué el PA-28-161 y el C172S no vuelan en hielo conocido y qué hacer si aparece"
     ],
     "sections": [
       {
-        "title": "Hielo en el avión: por qué importa",
+        "title": "Cómo se forma el hielo y de qué depende",
         "text": [
-          "El hielo se forma cuando el avión vuela entre **gotas de agua sobreenfriadas** (líquidas por debajo de 0 °C) que se congelan al chocar con la superficie. Ocurre con más frecuencia en nubes, lluvia o niebla con temperaturas entre 0 y −20 °C aproximadamente. En un avión ligero sin protección, el hielo es una de las amenazas más serias del vuelo.",
-          "Sus efectos se acumulan: **cambia el perfil** de las alas y la cola, **reduce la sustentación** y **aumenta la resistencia**; aumenta el **peso**; sube la **velocidad de pérdida** y baja el ángulo de ataque crítico; en la **hélice**, desequilibra y reduce el empuje; en el **pitot y las tomas estáticas**, falsea o anula las indicaciones; en el **parabrisas**, quita visibilidad; en el **carburador**, causa pérdida de potencia (020.11). Además, un avión con hielo puede entrar en pérdida con una velocidad mayor y sin avisos."
+          "El hielo en un avión es cualquier depósito o recubrimiento de hielo causado, sobre todo, por **gotas de agua subenfriadas** (*supercooled water droplets*): gotas que siguen líquidas aunque estén por debajo de 0 °C, porque no han encontrado nada a lo que agarrarse para congelarse. Al chocar contra las partes del avión que miran al flujo, la gota recibe por fin ese «agarre», se congela y se pega. En la atmósfera estas gotas viven entre **0 °C y −40 °C**. Por debajo de −40 °C ya están congeladas, son cristales, y no se adhieren a la superficie de la misma manera.",
+          "La cantidad y la forma del hielo dependen de seis factores: el **tamaño de las gotas**, la **concentración** de gotas (cuánta agua líquida hay por metro cúbico), la **forma de la superficie** (un borde fino capta más que uno romo), la **velocidad del avión** (más velocidad, más gotas golpean por segundo y más calentamiento por fricción), la **temperatura del aire** con presencia de nubes de agua subenfriada, y la **temperatura de la propia superficie**."
         ],
-        "bullets": [
-          "**Hielo escarcha (rime)**: opaco y blanquecino, de gotas pequeñas que se congelan al instante; se adhiere al borde de ataque.",
-          "**Hielo claro (clear)**: transparente y liso, de gotas grandes que se extienden antes de congelarse; es más peligroso, pesado y difícil de quitar.",
-          "**Hielo mixto**: mezcla de ambos."
+        "ideas": [
+          "Una gota subenfriada es como un jugador de bingo que no ha cantado línea: sigue de pie mientras nadie lo toque, pero a la primera sacudida se congela de golpe. El ala le da esa sacudida.",
+          "Un parabrisas de coche en una noche fría y húmeda se llena de escarcha antes que el resto de la chapa: la forma y la temperatura de la superficie deciden dónde se pega primero el hielo."
         ]
       },
       {
-        "title": "Calefacción del pitot",
+        "title": "Efectos del hielo",
         "text": [
-          "El **tubo de pitot** lleva una **resistencia eléctrica** en su interior que lo calienta para evitar que el hielo cierre la toma y deje el anemómetro sin indicación (020.19). El mando está en el panel, con su disyuntor, y se activa con **humedad visible** y temperatura próxima o inferior a 0 °C. En el PA-28-161 hay un interruptor «PITOT HEAT» y en el C172S un interruptor similar.",
-          "En tierra se usa poco tiempo: sin el flujo de aire, la resistencia se calienta mucho y puede dañarse o quemar al que la toque. En el prevuelo se comprueba que funciona, con el máster conectado y el interruptor activado, a través de la lectura del amperímetro (una pequeña descarga) o con un toque rápido y cuidadoso del tubo, según indique el POH. Algunos aviones llevan una luz de aviso de fallo de la calefacción."
+          "El hielo en las superficies deforma los perfiles y altera la capa límite, y eso se paga en prestaciones. En las alas aumenta mucho la **resistencia**, sube la **velocidad de pérdida** y también el **peso**, y desploma el **coeficiente máximo de sustentación** (CLmáx). El avión cae antes, y con menos aviso, porque el perfil ya no es el que se diseñó.",
+          "Afecta además a la **estabilidad**, al **equilibrado de los mandos**, a las características del empenaje (una cola cargada de hielo puede entrar en pérdida antes que el ala), puede **bloquear los controles** y puede comprometer la capacidad del motor y de otros instrumentos para seguir funcionando en condiciones de hielo. Las zonas que más lo sufren son los **bordes de ataque** de ala y cola, la **hélice**, la toma de aire del motor, los **tubos de pitot y las tomas estáticas**, las antenas y el parabrisas.",
+          "El efecto sobre el despegue y el aterrizaje es importante, y por eso hay una regla sin excepciones: **bajo ninguna circunstancia** se permite despegar con hielo sobre las superficies de ala o de cola."
+        ],
+        "bullets": [
+          "Más resistencia, más peso, más velocidad de pérdida, menos CLmáx.",
+          "Se degradan la estabilidad, los mandos y el empenaje; los controles pueden bloquearse.",
+          "Pitot, tomas estáticas, hélice, motor y parabrisas, todos afectados.",
+          "Despegar con hielo en ala o cola: nunca."
+        ],
+        "ideas": [
+          "Es como correr con una mochila llena de piedras y las zapatillas llenas de barro: pesas más, frenas más y no agarras como antes. El avión con hielo vuela con una mochila y zapatillas nuevas que no ha elegido.",
+          "Imagina poner un cartón rugoso sobre el ala: no solo le quita sustentación, sino que cambia la forma del perfil sobre el que el aire se había acostumbrado a deslizarse."
+        ]
+      },
+      {
+        "title": "Tipos de hielo y escarcha",
+        "text": [
+          "El **hielo transparente** o vítreo (*clear ice* o *glaze ice*) es una capa densa, compacta y de aspecto cristalino. Se forma en zonas con gotas subenfriadas **grandes**, típicas de nubes Cu, Ns y Sc, con temperaturas entre **0 °C y −10 °C**. Las gotas grandes no se congelan al instante: se extienden por la superficie y después se congelan, formando una capa continua que resulta difícil de eliminar.",
+          "El **hielo escarchado** (*rime ice*) es un depósito opaco o blanco lechoso. Se forma con una **baja tasa de captación**, en zonas con gotas **pequeñas**, normalmente entre **−10 °C y −20 °C**. Cada gota se congela de inmediato al chocar, atrapando aire entre las gotas: el resultado es **frágil** y fácil de eliminar una vez formado.",
+          "La **escarcha** (*frost*) es otra cosa: un depósito blanco, de estructura semicristalina, que cubre la superficie del avión parado, y sus efectos son menores que los del hielo compacto, pero no por eso son aceptables. En el extradós del ala crea rugosidad, aumenta la fricción parásita, quita energía a la capa límite y aumenta la resistencia. Reduce el CLmáx y aumenta la velocidad de pérdida. **Bajo ninguna circunstancia** debe despegar un avión con escarcha en ala o empenaje, porque los efectos pueden no notarse hasta que ya es tarde."
+        ],
+        "table": {
+          "caption": "Tipos de hielo según el curso",
+          "head": [
+            "Tipo",
+            "Aspecto",
+            "Gotas",
+            "Temperatura",
+            "Cómo es"
+          ],
+          "rows": [
+            [
+              "Transparente (clear, glaze)",
+              "Cristalino, denso y compacto",
+              "Grandes (Cu, Ns, Sc)",
+              "0 a −10 °C",
+              "Se extiende y es difícil de quitar"
+            ],
+            [
+              "Escarchado (rime)",
+              "Opaco, blanco lechoso",
+              "Pequeñas, baja captación",
+              "−10 a −20 °C",
+              "Frágil y fácil de quitar"
+            ],
+            [
+              "Escarcha (frost)",
+              "Blanco, semicristalino",
+              "No es hielo de nube; cubre el avión parado",
+              "Superficie bajo cero",
+              "Rugosidad: más resistencia y más Vs; prohibido despegar con ella"
+            ]
+          ],
+          "src": "Curso, tema 4"
+        },
+        "figure": "svg:020-tipos-hielo",
+        "caption": "Rangos de temperatura de cada tipo de hielo según el curso, dentro de la zona de gotas subenfriadas (esquema propio).",
+        "note": {
+          "kind": "warn",
+          "text": "Una capa de escarcha fina parece inofensiva y no lo es: rugosidad es resistencia y pérdida de sustentación. Se quita antes de despegar, siempre."
+        },
+        "ideas": [
+          "El hielo claro es como un charco que se congela: el agua se extiende y queda una placa lisa y dura. El rime es como las gotas de agua en el congelador, cada una se congela donde cae y queda un manto de bolitas con aire entre ellas, quebradizo.",
+          "La escarcha del coche por la mañana nunca cae de la nube, aparece sola cuando el parabrisas está más frío que el aire. Pasa igual con un avión que ha pasado la noche al raso."
         ],
         "verify": true
       },
       {
-        "title": "Sistemas antihielo y deshielo",
+        "title": "Avisos de hielo: automático, manual y advisory",
         "text": [
-          "Un sistema **antihielo** evita que el hielo se forme; uno de **deshielo** lo elimina una vez formado. En aviones grandes y en algunos ligeros certificados para hielo hay:"
+          "Los sistemas de aviso se clasifican según quién decide activar la protección. En el **primario automático** el detector de hielo forma parte de un sistema automático de protección: con la señal del detector, el sistema conecta solo el antihielo o el deshielo cuando hace falta. Esto mejora el consumo de combustible, reduce el desgaste de los elementos móviles y baja la carga de trabajo de la tripulación.",
+          "En el **primario manual** el detector avisa a la tripulación de que hay que proteger el avión, y es la tripulación la que conecta el sistema. En el **asesor o complementario** (*advisory*) el detector es solo una alerta de respaldo: la tripulación activa la protección según las instrucciones del fabricante o de la compañía, de modo que tiene que actuar de forma proactiva cuando las condiciones son favorables a la formación de hielo, sin esperar a que el detector avise."
         ],
         "table": {
-          "caption": "Sistemas de protección contra el hielo",
+          "caption": "Tipos de aviso de hielo",
           "head": [
-            "Sistema",
             "Tipo",
-            "Cómo actúa"
+            "Quién conecta la protección",
+            "Papel del detector"
           ],
           "rows": [
             [
-              "Calefacción del pitot y de las tomas estáticas",
-              "Antihielo",
-              "Resistencia eléctrica en el tubo"
+              "Primario automático",
+              "El propio sistema",
+              "Manda la señal que activa la protección"
             ],
             [
-              "Calefacción del parabrisas",
-              "Antihielo",
-              "Resistencia eléctrica en una capa conductora, o aire caliente"
+              "Primario manual",
+              "La tripulación, al recibir el aviso",
+              "Avisa de que hay que conectarla"
             ],
+            [
+              "Asesor (advisory)",
+              "La tripulación, por criterio del fabricante o la compañía",
+              "Alerta de respaldo; no sustituye al procedimiento"
+            ]
+          ],
+          "src": "Curso, tema 4"
+        },
+        "ideas": [
+          "Automático: las luces del pasillo que se encienden solas cuando pasas. Manual: el timbre de la puerta que te avisa y tú abres. Advisory: el aviso del móvil de que lloverá hoy, pero ya habías decidido llevar paraguas por tu cuenta."
+        ]
+      },
+      {
+        "title": "Detectores de hielo: Teddington y Smiths",
+        "text": [
+          "Los detectores se basan en la **acreción**: acumulan hielo de la misma manera que lo harían las superficies del avión, pero en un sensor que se puede mirar o que da una señal. El **detector Teddington** es un mástil con perfil aerodinámico que sobresale en la corriente. El piloto ve desde la cabina el hielo acumulado en él, y puede conectar un calentador para derretirlo.",
+          "El **detector Smiths** es un tubo hueco con orificios y un elemento calefactor interior, que también sobresale al viento. Mientras los orificios delanteros están libres, el aire entra y las presiones se compensan. Cuando se bloquean con hielo, aparece una diferencia de presión que activa la señal de aviso."
+        ],
+        "table": {
+          "caption": "Detectores de hielo",
+          "head": [
+            "Detector",
+            "Qué es",
+            "Cómo avisa"
+          ],
+          "rows": [
+            [
+              "Teddington",
+              "Mástil aerodinámico expuesto al aire",
+              "Se ve el hielo acumulado en el mástil; calentador para quitarlo"
+            ],
+            [
+              "Smiths",
+              "Tubo hueco con orificios y calefactor interno",
+              "El hielo tapa los orificios frontales y la diferencia de presión activa el aviso"
+            ]
+          ],
+          "src": "Curso, tema 4"
+        },
+        "ideas": [
+          "El Teddington es el dedo que sacas por la ventanilla para ver si llueve: el hielo lo ves tú. El Smiths es la pajita de refresco que se tapa con un cubito: no ves nada, pero notas que ya no sale líquido y eso te avisa."
+        ]
+      },
+      {
+        "title": "Protección contra el hielo: botas neumáticas",
+        "text": [
+          "Las **botas neumáticas** (*pneumatic boots*) son un sistema **mecánico de deshielo**, usado en aviones de pistón y en turbohélices bimotores como el ATR 42/72, que elimina el hielo ya formado. Están hechas de una cubierta de caucho natural y tejido engomado sobre una serie de tubos planos inflables, y se fijan al borde de ataque con remaches o pegamento. Cuando se inflan, el borde de ataque cambia de forma y el hielo se agrieta y sale desprendido por el aire.",
+          "Como el hielo debe formarse antes de que se quite, las botas son un sistema de **deshielo**, no de antihielo: conviene inflarlas cuando haya un espesor mínimo de hielo, no con el avión limpio. Sus inconvenientes son el aumento de la **resistencia de perfil**, el **desgaste rápido** y un **mantenimiento costoso**."
+        ],
+        "ideas": [
+          "Es como romper el hielo de una bandeja doblándola: se hincha y se deshincha, el hielo se agrieta y se cae. Solo funciona si ya hay hielo que romper."
+        ]
+      },
+      {
+        "title": "Protección térmica y por fluido",
+        "text": [
+          "El principio de la **protección térmica** es calentar la superficie, ya sea para evitar que se forme hielo (antihielo) o para fundir el que se ha pegado (deshielo). Su gran ventaja es que el mismo sistema sirve para las dos funciones, y que la forma de la superficie no se altera, así que no aparece resistencia adicional como con las botas. Para grandes superficies, como los bordes de ataque de las alas, se usa **aire caliente de sangrado** (*bleed air*) tomado del motor. Para áreas pequeñas y sondas se usa **calentamiento eléctrico**, normalmente con corriente alterna trifásica (AC de tres fases).",
+          "Los **sistemas por fluido** emplean un **fluido depresor del punto de congelación** (FPD, *freezing point depressant*) que funde el hielo y evita que se adhiera. Un sistema típico tiene un **depósito de almacenamiento**, una **bomba**, **tuberías de distribución** y un **panel distribuidor**, y el fluido se reparte por la superficie del perfil gracias al flujo de aire."
+        ],
+        "table": {
+          "caption": "Sistemas de protección contra el hielo (curso)",
+          "head": [
+            "Sistema",
+            "Función",
+            "Idea clave"
+          ],
+          "rows": [
             [
               "Botas neumáticas",
               "Deshielo",
-              "Se inflan en el borde de ataque y rompen el hielo"
+              "Mecánico; quita hielo ya formado; más resistencia de perfil"
             ],
             [
-              "Bordes de ataque calentados (aire caliente o resistencias)",
-              "Antihielo o deshielo",
-              "Evitan o funden el hielo"
-            ],
-            [
-              "Líquido antihielo (TKS)",
+              "Térmico por aire de sangrado",
               "Antihielo y deshielo",
-              "Un líquido sale por poros del borde de ataque y de la hélice"
+              "Grandes superficies; no cambia la forma"
             ],
             [
-              "Hélice con resistencias o líquido",
-              "Antihielo",
-              "Evita el hielo en las palas"
+              "Térmico eléctrico",
+              "Antihielo y deshielo",
+              "Áreas pequeñas y sondas; AC trifásica"
             ],
             [
-              "Calefacción del carburador",
+              "Fluido FPD",
+              "Antihielo y deshielo",
+              "Depósito, bomba, tuberías y panel distribuidor"
+            ],
+            [
+              "Calefacción del pitot y del parabrisas",
               "Antihielo",
-              "Aire caliente en la toma del carburador (020.11)"
+              "Resistencia eléctrica"
             ]
           ],
-          "src": "PHAK cap. 6"
-        }
+          "src": "Curso, tema 4"
+        },
+        "ideas": [
+          "El aire de sangrado es el secador de pelo del avión: el mismo aire caliente que hace girar el motor se desvía para calentar el borde de ataque. La resistencia eléctrica es la que quita la niebla de la luneta trasera del coche.",
+          "El fluido FPD es la sal que echan en la carretera: baja el punto de congelación del agua, y con ella se derrite el hielo o ni siquiera llega a agarrarse."
+        ]
+      },
+      {
+        "title": "Protección de la hélice",
+        "text": [
+          "El hielo en una pala deforma el perfil, y eso supone una pérdida de eficiencia: la hélice empuja menos. Peor aún, el hielo no se pega igual en todas las palas ni se desprende a la vez, así que aparece un **desequilibrio** que puede producir vibraciones destructivas. Por eso las hélices de los aviones certificados para hielo tienen protección propia: resistencias eléctricas en el borde de ataque de las palas o fluido antihielo que sale por el buje y se reparte por las palas por la fuerza centrífuga.",
+          "El PA-28-161 y el C172S no llevan protección de hélice porque no están certificados para volar en hielo."
+        ],
+        "ideas": [
+          "Una lavadora con la colada mal repartida golpea y vibra: con hielo en una pala pasa lo mismo, pero a miles de revoluciones por minuto y delante de tus pies."
+        ],
+        "verify": true
+      },
+      {
+        "title": "Calefacción del pitot y del parabrisas",
+        "text": [
+          "El **tubo de pitot** lleva una **resistencia eléctrica** en su interior que lo calienta para evitar que el hielo cierre la toma y deje el anemómetro sin indicación (020.19). El mando está en el panel, con su disyuntor, y se activa con **humedad visible** y temperatura próxima o inferior a 0 °C. En el PA-28-161 hay un interruptor «PITOT HEAT» y en el C172S un interruptor similar.",
+          "En tierra se usa poco tiempo: sin el flujo de aire, la resistencia se calienta mucho y puede dañarse o quemar al que la toque. En el prevuelo se comprueba que funciona, con el máster conectado y el interruptor activado, a través de la lectura del amperímetro (una pequeña descarga) o con un toque rápido y cuidadoso del tubo, según indique el POH. Algunos aviones llevan una luz de aviso de fallo de la calefacción. En los aviones grandes el parabrisas se calienta con una capa conductora o con aire caliente, y se protegen también las tomas estáticas y las sondas de ángulo de ataque."
+        ],
+        "verify": true,
+        "ideas": [
+          "La calefacción del pitot es como la resistencia de una tostadora: tiene que dejar pasar corriente para calentarse, pero si la dejas encendida sin pan (sin aire) se pone al rojo. Por eso en tierra, poco rato."
+        ]
       },
       {
         "title": "Aviones no certificados para hielo",
@@ -92,28 +250,132 @@
         "note": {
           "kind": "warn",
           "text": "Un avión ligero sin protección que entra en hielo no puede mantenerlo mucho tiempo. La decisión se toma al primer indicio, no cuando ya hay mucho."
-        }
+        },
+        "ideas": [
+          "Es como salir a la nieve con zapatillas de verano: puedes dar unos pasos, pero la solución no es caminar con más cuidado, sino volver a casa antes de que sea tarde."
+        ]
       },
       {
         "title": "Calefacción de cabina y monóxido de carbono",
         "text": [
-          "En los aviones ligeros, la calefacción de cabina y el desempañado del parabrisas usan aire que se calienta al pasar por un **manguito** alrededor del **escape**. Si el escape tiene una grieta, pueden entrar gases en la cabina, con **monóxido de carbono (CO)**, un gas inodoro e incoloro que causa dolor de cabeza, mareo y somnolencia y que, sin aviso, puede hacer perder el conocimiento.",
+          "En los aviones ligeros, la calefacción de cabina y el desempañado del parabrisas usan aire que se calienta al pasar por un **manguito** alrededor del **escape**. Si el escape tiene una grieta, pueden entrar gases en la cabina, con **monóxido de carbono (CO)**, un gas inodoro e incoloro que causa dolor de cabeza, mareo y somnolencia y que, sin aviso, puede hacer perder el conocimiento (véase también el bloque de aire acondicionado, 020.25).",
           "Se instala un **detector de CO** (un disco que cambia de color o un sensor electrónico). Si hay sospecha de CO (síntomas o detector), se **cierra la calefacción**, se **abre la ventilación** y se aterriza lo antes posible. En el prevuelo se inspecciona el escape y el manguito en busca de grietas y holguras."
+        ],
+        "ideas": [
+          "El CO es el invitado invisible de la calefacción de leña mal ventilada: no huele, no se ve, y cuando notas algo ya estás mareado."
         ]
       }
     ],
+    "outline": [
+      {
+        "title": "Formación",
+        "items": [
+          "Gotas subenfriadas: 0 a −40 °C",
+          "Por debajo de −40 °C, cristales",
+          "Seis factores: gotas, concentración, forma, velocidad, temperatura, superficie"
+        ]
+      },
+      {
+        "title": "Efectos",
+        "items": [
+          "Más resistencia, peso y Vs; menos CLmáx",
+          "Afecta a estabilidad, mandos y empenaje",
+          "Pitot, hélice, motor y parabrisas",
+          "Despegar con hielo o escarcha: nunca"
+        ]
+      },
+      {
+        "title": "Tipos de hielo",
+        "items": [
+          "Transparente: 0 a −10 °C, gotas grandes, difícil de quitar",
+          "Escarchado (rime): −10 a −20 °C, gotas pequeñas, frágil",
+          "Escarcha: rugosidad; prohibido despegar"
+        ]
+      },
+      {
+        "title": "Avisos y detectores",
+        "items": [
+          "Primario automático, primario manual, advisory",
+          "Teddington: mástil visible con calentador",
+          "Smiths: tubo con orificios; la presión da el aviso"
+        ]
+      },
+      {
+        "title": "Protección",
+        "items": [
+          "Botas neumáticas: deshielo mecánico",
+          "Térmica: aire de sangrado (grande) o eléctrica (pequeñas y sondas)",
+          "Fluido FPD: depósito, bomba, tuberías, panel",
+          "Hélice: resistencias o fluido"
+        ]
+      },
+      {
+        "title": "El avión de escuela",
+        "items": [
+          "PA-28 y C172S no certificados para hielo conocido",
+          "Pitot calefactado: poco rato en tierra",
+          "Si hay hielo: salir de la zona y no fiarse del aviso de pérdida"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "Frío y tamaño: cuanto más cerca de 0 °C, gotas más grandes y hielo más duro (transparente); más frío, más fino y quebradizo (escarchado).",
+      "Avisos: AUTOmático = el sistema; MANUAL = tú con el aviso; ADVISORY = tú por criterio, el detector solo respalda.",
+      "Protección: sangrado para lo grande, electricidad para lo pequeño y sondas, botas para romper, fluido para bajar el punto de congelación.",
+      "Escarcha: «ni un grano». Si no la ves cubierta de escarcha en ala o cola, vuelas; si la hay, no."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Por qué existe agua líquida por debajo de 0 °C y cuándo se congela?",
+        "a": "Las gotas subenfriadas no se congelan hasta que chocan con una superficie. Al impactar con el avión se congelan y se pegan. Existen entre 0 y −40 °C; por debajo de −40 °C ya son cristales."
+      },
+      {
+        "q": "Nombra los factores que determinan cuánto hielo se forma.",
+        "a": "Tamaño de las gotas, concentración, forma de la superficie, velocidad del avión, temperatura ambiente y presencia de nubes de agua subenfriada, y temperatura de la superficie."
+      },
+      {
+        "q": "¿Qué efectos tiene el hielo en las alas?",
+        "a": "Aumenta la resistencia, la velocidad de pérdida y el peso, y reduce mucho el CLmáx; además afecta a estabilidad, mandos y empenaje."
+      },
+      {
+        "q": "Compara el hielo transparente y el escarchado (rime).",
+        "a": "Transparente: denso, cristalino, gotas grandes, 0 a −10 °C, difícil de quitar. Escarchado: opaco, gotas pequeñas, −10 a −20 °C, frágil y fácil de quitar."
+      },
+      {
+        "q": "¿Por qué no se puede despegar con escarcha?",
+        "a": "La escarcha da rugosidad, aumenta la resistencia, reduce el CLmáx y sube la velocidad de pérdida, y sus efectos pueden no notarse hasta que es tarde."
+      },
+      {
+        "q": "¿En qué se diferencian los tres tipos de aviso de hielo?",
+        "a": "En el automático el sistema conecta la protección; en el manual el detector avisa y la tripulación conecta; en el advisory la tripulación actúa por criterio del fabricante y el detector solo respalda."
+      },
+      {
+        "q": "¿Cómo funcionan los detectores Teddington y Smiths?",
+        "a": "Teddington: mástil con hielo visible desde la cabina y calentador. Smiths: tubo hueco con orificios; si el hielo tapa los frontales, la diferencia de presión activa el aviso."
+      },
+      {
+        "q": "¿Cuándo se usa protección térmica, botas o fluido?",
+        "a": "Térmica: aire de sangrado para grandes superficies y electricidad para pequeñas y sondas. Botas: deshielo mecánico de hielo ya formado. Fluido FPD: funde el hielo e impide que se adhiera."
+      }
+    ],
     "numbers": [
-      "Hielo en nubes, lluvia o niebla entre 0 y −20 °C aproximadamente",
-      "PA-28-161 y C172S: no certificados para hielo conocido; solo pitot y carburador (PA-28) calefactados",
-      "Rime (opaco) frente a hielo claro (transparente y más peligroso)",
-      "Pitot: poco tiempo en tierra para no dañarlo; comprobar en el prevuelo",
-      "CO: gas inodoro; cerrar calefacción, ventilar y aterrizar"
+      "Gotas subenfriadas entre 0 y −40 °C; por debajo de −40 °C, cristales",
+      "Hielo transparente: 0 a −10 °C, gotas grandes (Cu, Ns, Sc); escarchado (rime): −10 a −20 °C, gotas pequeñas",
+      "Efectos del hielo: más resistencia, peso y velocidad de pérdida; menos CLmáx",
+      "Avisos: primario automático, primario manual y advisory",
+      "Botas neumáticas: deshielo; sangrado para superficies grandes; eléctrico para áreas pequeñas y sondas (AC trifásica)",
+      "Fluido FPD: depósito, bomba, tuberías y panel distribuidor",
+      "PA-28-161 y C172S: no certificados para hielo conocido; solo pitot (y carburador) calefactados",
+      "Pitot: poco tiempo en tierra para no dañarlo; comprobar en el prevuelo"
     ],
     "traps": [
       "Creer que la calefacción del pitot resuelve el hielo estructural: solo protege el pitot.",
       "Mantener la calefacción del pitot encendida mucho tiempo en tierra: se daña.",
       "Fiarse del aviso de pérdida con hielo: la pérdida aparece a mayor velocidad.",
       "Pensar que el hielo claro es menos peligroso por ser transparente: es peor.",
+      "Confundir rangos: el transparente es el más cercano a 0 °C (0 a −10), el escarchado va después (−10 a −20).",
+      "Pensar que la escarcha es inofensiva porque es fina: nunca se despega con ella.",
+      "Creer que las botas neumáticas evitan que se forme el hielo: lo quitan después.",
       "Olvidar que la calefacción de cabina puede introducir CO."
     ],
     "sources": [
@@ -124,9 +386,12 @@
       {
         "title": "Manual de vuelo del PA-28-161 y del C172S: limitaciones",
         "url": "https://www.piper.com/"
+      },
+      {
+        "title": "Material del curso, tema 4 «Sistemas antihielo y de deshielo» (instructores)"
       }
     ],
-    "reviewed": "2026-10-09",
+    "reviewed": "2026-11-17",
     "links": [
       {
         "label": "Prevuelo del PA-28: pitot",
@@ -310,28 +575,469 @@
         null
       ],
       "ref": "PHAK cap. 8"
+    },
+    {
+      "id": "020.05.009",
+      "type": "concepto",
+      "level": 1,
+      "q": "Las gotas de agua subenfriadas que producen hielo en un avión existen en la atmósfera entre:",
+      "options": [
+        "0 °C y −10 °C",
+        "0 °C y −40 °C",
+        "−20 °C y −60 °C",
+        "+10 °C y −10 °C"
+      ],
+      "correct": 1,
+      "why": "Entre 0 y −40 °C el agua líquida sigue sin congelar hasta que choca con una superficie. Por debajo de −40 °C ya son cristales.",
+      "whyNot": [
+        "Es el rango del hielo transparente, no de todas las gotas subenfriadas.",
+        null,
+        "No hay gotas líquidas tan frías.",
+        "Por encima de 0 °C el agua no está subenfriada."
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "Por debajo de −40 °C no hay formación de hielo en la célula como con las gotas subenfriadas porque:",
+      "options": [
+        "Las gotas son demasiado grandes para adherirse",
+        "El aire es demasiado seco para formar nubes",
+        "La velocidad del avión impide que se peguen",
+        "Las gotas ya están congeladas y no se adhieren de la misma manera"
+      ],
+      "correct": 3,
+      "why": "A esa temperatura el agua ya es cristal y rebota o se desliza en vez de congelarse al impactar.",
+      "whyNot": [
+        "Las gotas no son más grandes con el frío.",
+        "No es un asunto de humedad del aire.",
+        "La velocidad no es el motivo.",
+        null
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuál de estos factores NO afecta a la severidad de la formación de hielo?",
+      "options": [
+        "El color de la pintura de la célula",
+        "El tamaño de las gotas",
+        "La concentración de gotas en la nube",
+        "La forma de la superficie del avión"
+      ],
+      "correct": 0,
+      "why": "Influyen el tamaño y la concentración de gotas, la forma de la superficie, la velocidad, la temperatura ambiente y de la superficie. El color no.",
+      "whyNot": [
+        null,
+        "Gotas más grandes implican más captación y otro tipo de hielo.",
+        "Más gotas por metro cúbico dan más acreción.",
+        "Los bordes finos captan más gotas que los romos."
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.012",
+      "type": "regla",
+      "level": 2,
+      "q": "El hielo transparente (clear o glaze) se forma, según el curso, con temperaturas entre:",
+      "options": [
+        "−10 °C y −20 °C",
+        "−20 °C y −30 °C",
+        "0 °C y −10 °C",
+        "0 °C y +10 °C"
+      ],
+      "correct": 2,
+      "why": "Es el rango más cercano a 0 °C, con gotas grandes de nubes Cu, Ns y Sc.",
+      "whyNot": [
+        "Ese es el rango del hielo escarchado (rime).",
+        "Es una zona más fría que las del curso para los dos tipos.",
+        null,
+        "No hay hielo con temperatura positiva del aire exterior."
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.013",
+      "type": "regla",
+      "level": 2,
+      "q": "El hielo escarchado (rime) se forma típicamente con temperaturas de:",
+      "options": [
+        "0 °C a −10 °C",
+        "−30 °C a −40 °C",
+        "−10 °C a −20 °C",
+        "−5 °C a +5 °C"
+      ],
+      "correct": 2,
+      "why": "Gotas pequeñas que se congelan al instante, con baja tasa de captación y un depósito opaco y frágil.",
+      "whyNot": [
+        "Ese es el rango del hielo transparente.",
+        "Con ese frío las gotas son escasas.",
+        null,
+        "En temperaturas positivas no se forma."
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.014",
+      "type": "concepto",
+      "level": 2,
+      "q": "De los dos tipos de hielo de nube, el más fácil de eliminar una vez formado es:",
+      "options": [
+        "El escarchado (rime), por ser frágil",
+        "El transparente (clear), por ser liso",
+        "El transparente, por ser menos denso",
+        "Los dos igual de fáciles"
+      ],
+      "correct": 0,
+      "why": "El rime es opaco y quebradizo; el transparente es denso, compacto y se extiende sobre la superficie.",
+      "whyNot": [
+        null,
+        "El liso y denso es el más difícil de quitar.",
+        "El transparente es más denso, no menos.",
+        "Hay diferencia clara entre ellos."
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "La escarcha (frost) sobre el ala produce:",
+      "options": [
+        "Más sustentación por la rugosidad",
+        "Menor velocidad de pérdida por el peso añadido",
+        "Ningún efecto si es fina",
+        "Más resistencia, menos CLmáx y mayor velocidad de pérdida"
+      ],
+      "correct": 3,
+      "why": "La rugosidad aumenta la fricción parásita y quita energía a la capa límite, lo que reduce el CLmáx y sube la velocidad de pérdida.",
+      "whyNot": [
+        "La rugosidad degrada la sustentación.",
+        "El peso es despreciable; lo que cuenta es la capa límite.",
+        "Incluso una capa fina degrada las prestaciones.",
+        null
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.016",
+      "type": "regla",
+      "level": 1,
+      "q": "Respecto a despegar con escarcha en ala o empenaje, el curso establece que:",
+      "options": [
+        "Se puede si la capa es fina",
+        "No debe despegar bajo ninguna circunstancia",
+        "Se puede si se aumenta la velocidad de rotación",
+        "Solo se prohíbe si hay más de 3 mm"
+      ],
+      "correct": 1,
+      "why": "Los efectos pueden no manifestarse hasta que ya es demasiado tarde: la regla no admite excepciones.",
+      "whyNot": [
+        "No hay un espesor tolerable según el curso.",
+        null,
+        "Más velocidad de rotación no corrige la pérdida de sustentación.",
+        "No existe tal umbral en la regla del curso."
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.017",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un sistema de aviso de hielo primario automático:",
+      "options": [
+        "La tripulación conecta la protección al recibir el aviso",
+        "El detector activa por sí solo los sistemas antihielo o de deshielo",
+        "La tripulación conecta la protección según el manual del fabricante",
+        "No hay detector, solo temperatura exterior"
+      ],
+      "correct": 1,
+      "why": "El detector forma parte del sistema de protección y manda la señal que lo activa, lo que ahorra combustible, desgaste y carga de trabajo.",
+      "whyNot": [
+        "Eso es el primario manual.",
+        null,
+        "Eso es el advisory.",
+        "El detector es esencial en los tres tipos."
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un sistema de aviso de hielo asesor (advisory):",
+      "options": [
+        "El detector conecta solo la protección",
+        "El detector avisa y el piloto conecta",
+        "No se necesita ninguna intervención",
+        "La tripulación actúa por criterio del fabricante o la compañía y el detector es una alerta de respaldo"
+      ],
+      "correct": 3,
+      "why": "El piloto debe anticiparse y activar la protección cuando haya condiciones de hielo, sin esperar al detector.",
+      "whyNot": [
+        "Eso es el primario automático.",
+        "Eso es el primario manual.",
+        "El advisory exige actuar de forma proactiva.",
+        null
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.019",
+      "type": "concepto",
+      "level": 2,
+      "q": "El detector de hielo Teddington es:",
+      "options": [
+        "Un mástil con perfil aerodinámico que permite ver el hielo desde la cabina y tiene un calentador",
+        "Un tubo hueco con orificios que avisa por diferencia de presión",
+        "Una resistencia que mide la temperatura de las alas",
+        "Un sensor que activa las botas sin aviso"
+      ],
+      "correct": 0,
+      "why": "Es un detector por acreción: el hielo se acumula en el mástil, el piloto lo ve y puede calentarlo.",
+      "whyNot": [
+        null,
+        "Eso describe el Smiths.",
+        "No mide la temperatura de las alas.",
+        "No activa las botas automáticamente."
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.020",
+      "type": "concepto",
+      "level": 3,
+      "q": "El detector Smiths da el aviso cuando:",
+      "options": [
+        "El hielo se acumula en el mástil y se ve desde la cabina",
+        "El calefactor interno supera una temperatura",
+        "El hielo bloquea los orificios frontales del tubo y aparece una diferencia de presión",
+        "El flujo de aire alcanza cierta velocidad"
+      ],
+      "correct": 2,
+      "why": "Es un tubo hueco con orificios y calefactor: al taparse los delanteros, la diferencia de presión activa la señal.",
+      "whyNot": [
+        "Eso describe el Teddington.",
+        "El calefactor sirve para quitar el hielo, no para avisar.",
+        null,
+        "No depende de la velocidad."
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.021",
+      "type": "concepto",
+      "level": 2,
+      "q": "Las botas neumáticas son un sistema de:",
+      "options": [
+        "Antihielo térmico por aire de sangrado",
+        "Antihielo por fluido en el panel distribuidor",
+        "Deshielo mecánico que rompe el hielo ya formado en el borde de ataque",
+        "Calefacción eléctrica de sondas"
+      ],
+      "correct": 2,
+      "why": "Tubos inflables de caucho sobre el borde de ataque que cambian de forma al inflarse y rompen el hielo. Aumentan la resistencia de perfil y se desgastan.",
+      "whyNot": [
+        "Eso es la protección térmica.",
+        "Eso es el sistema FPD.",
+        null,
+        "Las sondas usan resistencias eléctricas."
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.022",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un inconveniente de las botas neumáticas es:",
+      "options": [
+        "Aumentan la resistencia de perfil, se desgastan rápido y su mantenimiento es costoso",
+        "Consumen mucho aire de sangrado del motor",
+        "Dejan el avión sin protección en tierra",
+        "Modifican la forma del perfil solo si están desinfladas"
+      ],
+      "correct": 0,
+      "why": "El caucho sobre el borde de ataque añade resistencia de perfil y se degrada, de modo que el mantenimiento es caro.",
+      "whyNot": [
+        null,
+        "Las botas usan aire a presión, no sangrado térmico.",
+        "No tiene relación con estar en tierra.",
+        "La distorsión es mayor al inflarse."
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.023",
+      "type": "concepto",
+      "level": 2,
+      "q": "Para calentar grandes superficies como los bordes de ataque de las alas se usa:",
+      "options": [
+        "Resistencias eléctricas de corriente continua",
+        "Fluido FPD con bomba",
+        "Botas neumáticas con tubos planos",
+        "Aire caliente de sangrado"
+      ],
+      "correct": 3,
+      "why": "La protección térmica de superficies grandes usa aire caliente de sangrado; las pequeñas y las sondas usan calefacción eléctrica.",
+      "whyNot": [
+        "La electricidad se reserva para áreas pequeñas y sondas.",
+        "El FPD es un sistema de fluido, no térmico.",
+        "Las botas son mecánicas.",
+        null
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.024",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una ventaja de la protección térmica es que:",
+      "options": [
+        "Elimina el hielo sin gastar energía",
+        "El mismo sistema hace antihielo y deshielo sin modificar la forma de la superficie",
+        "Solo funciona cuando ya se ha formado hielo",
+        "Aumenta la resistencia de perfil"
+      ],
+      "correct": 1,
+      "why": "Calentar la superficie sirve para las dos funciones y no cambia el perfil, así que no añade resistencia.",
+      "whyNot": [
+        "Consume aire de sangrado o electricidad.",
+        null,
+        "También previene la formación de hielo.",
+        "No cambia el perfil: esa es su ventaja."
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.025",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un sistema típico de fluido depresor del punto de congelación (FPD) consta de:",
+      "options": [
+        "Tubos inflables, compresor y válvula de descarga",
+        "Depósito, bomba, tuberías de distribución y panel distribuidor",
+        "Mástil, calefactor y detector de presión",
+        "Resistencias, generador trifásico y termostato"
+      ],
+      "correct": 1,
+      "why": "El fluido se bombea al panel distribuidor y se reparte por el perfil con el flujo de aire; funde el hielo y evita que se adhiera.",
+      "whyNot": [
+        "Eso son las botas neumáticas.",
+        null,
+        "Eso es un detector.",
+        "Eso es calefacción eléctrica."
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.026",
+      "type": "concepto",
+      "level": 2,
+      "q": "El hielo en las palas de la hélice provoca:",
+      "options": [
+        "Aumento del empuje por la mayor rugosidad",
+        "Solo un aumento del consumo",
+        "Un descenso de la temperatura de culatas",
+        "Pérdida de eficiencia y desequilibrio con posibles vibraciones destructivas"
+      ],
+      "correct": 3,
+      "why": "El perfil se deforma y el hielo no se reparte igual en todas las palas: aparece desequilibrio.",
+      "whyNot": [
+        "La deformación reduce la eficiencia.",
+        "El efecto principal es el desequilibrio y la pérdida de empuje.",
+        "No tiene que ver con las culatas.",
+        null
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.027",
+      "type": "lectura",
+      "level": 2,
+      "q": "Vuelas en una nube estratificada espesa y el termómetro marca −6 °C. Notas hielo en el borde de ataque, liso y casi transparente. ¿Qué tipo es lo más probable?",
+      "data": "Nube: estratificada espesa\nTemperatura exterior: −6 °C\nDepósito en el borde de ataque: liso, casi transparente",
+      "options": [
+        "Hielo transparente (clear), difícil de quitar",
+        "Hielo escarchado (rime), frágil",
+        "Escarcha formada en tierra",
+        "Cristales de hielo que no se adhieren"
+      ],
+      "correct": 0,
+      "why": "A −6 °C estás en el rango 0 a −10 °C, el del hielo transparente, con gotas grandes y una capa lisa y densa.",
+      "whyNot": [
+        null,
+        "El rime corresponde a −10 a −20 °C y es opaco.",
+        "La escarcha se forma en superficies frías al raso, no en vuelo en nube.",
+        "Los cristales solo aparecen por debajo de −40 °C."
+      ],
+      "ref": "Curso, tema 4"
+    },
+    {
+      "id": "020.05.028",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un avión cuyo POH prohíbe volar en hielo conocido, como el PA-28-161, está sin certificar para ello porque:",
+      "options": [
+        "No tiene calefacción del pitot",
+        "Su velocidad de pérdida es demasiado alta",
+        "No lleva un sistema que proteja célula, hélice e instrumentos demostrado en vuelo",
+        "Solo se aplica a los aviones de ala baja"
+      ],
+      "correct": 2,
+      "why": "Hay que evitar las condiciones; solo la calefacción del pitot y del carburador no protege la célula ni la hélice.",
+      "whyNot": [
+        "Sí la lleva, pero no basta.",
+        "No es un criterio de certificación.",
+        null,
+        "El C172S, de ala alta, tampoco está certificado."
+      ],
+      "ref": "POH PA-28-161; PHAK cap. 12"
     }
   ],
   "cards": [
     {
       "id": "c.020.05.01",
-      "front": "Calefacción del pitot",
-      "back": "Resistencia eléctrica contra el hielo en la toma; poco tiempo en tierra"
+      "front": "Gotas subenfriadas: rango de temperatura",
+      "back": "Entre 0 y −40 °C; por debajo de −40 °C ya son cristales"
     },
     {
       "id": "c.020.05.02",
-      "front": "Antihielo y deshielo",
-      "back": "Antihielo evita que se forme; deshielo lo elimina una vez formado"
+      "front": "Hielo transparente (clear)",
+      "back": "0 a −10 °C, gotas grandes (Cu, Ns, Sc), denso y difícil de quitar"
     },
     {
       "id": "c.020.05.03",
-      "front": "Hielo claro frente a rime",
-      "back": "Claro: transparente, pesado y más peligroso. Rime: opaco y blanquecino"
+      "front": "Hielo escarchado (rime)",
+      "back": "−10 a −20 °C, gotas pequeñas, opaco, frágil y fácil de quitar"
     },
     {
       "id": "c.020.05.04",
+      "front": "Escarcha antes del despegue",
+      "back": "Prohibido despegar con escarcha en ala o empenaje: sube la Vs y baja el CLmáx"
+    },
+    {
+      "id": "c.020.05.05",
+      "front": "Avisos de hielo",
+      "back": "Primario automático (activa solo), primario manual (avisa y tú conectas) y advisory (tú por criterio)"
+    },
+    {
+      "id": "c.020.05.06",
+      "front": "Teddington y Smiths",
+      "back": "Teddington: mástil visible con calentador. Smiths: tubo con orificios y aviso por diferencia de presión"
+    },
+    {
+      "id": "c.020.05.07",
+      "front": "Botas, térmica y FPD",
+      "back": "Botas: deshielo mecánico. Térmica: sangrado (grande) o eléctrica (pequeñas). FPD: fluido que baja el punto de congelación"
+    },
+    {
+      "id": "c.020.05.08",
       "front": "PA-28 y C172S ante hielo",
-      "back": "No certificados para hielo conocido: evitarlo"
+      "back": "No certificados para hielo conocido: evitarlo; calefacción del pitot poco rato en tierra"
     }
   ]
 }

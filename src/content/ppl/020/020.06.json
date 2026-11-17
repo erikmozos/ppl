@@ -2,53 +2,168 @@
   "lesson": {
     "id": "020.06",
     "title": "Sistema de combustible",
-    "summary": "Depósitos, ventilación, selector, bombas, filtro y drenajes, indicadores, contaminación y bloqueo por vapor; comparación del sistema por bomba del PA-28-161 (ala baja) con el de gravedad del C172S (ala alta).",
+    "course": "Tema 5 · Sistema de combustible",
+    "summary": "Función y componentes, selector, filtros y drenajes, alimentación por gravedad o por presión, tipos de depósito, combustible inutilizable y parámetros monitorizados; comparación del PA-28-161 (ala baja, bombas) con el C172S (ala alta, gravedad, BOTH).",
     "objectives": [
-      "Describir los componentes de un sistema de combustible de avión ligero y el recorrido del combustible",
-      "Explicar la diferencia entre alimentación por gravedad (ala alta) y por bomba (ala baja)",
+      "Describir la función del sistema de combustible y sus componentes: depósitos, línea de alimentación, bomba, selector, filtros y drenaje",
+      "Explicar la diferencia entre alimentación por gravedad (ala alta) y por presión (ala baja)",
       "Manejar el selector del PA-28-161 (izquierdo, derecho, cerrado) y del C172S (izquierdo, derecho, ambos, cerrado)",
-      "Explicar para qué sirve la bomba eléctrica y cuándo se usa",
+      "Distinguir los depósitos integrales, rígidos y flexibles, con sus ventajas",
+      "Explicar qué es el combustible inutilizable y qué parámetros se monitorizan",
       "Reconocer la contaminación, la obstrucción de la ventilación y el bloqueo por vapor, y distinguir agotamiento de falta de alimentación"
     ],
     "sections": [
       {
-        "title": "Componentes y recorrido",
+        "title": "Función y componentes del sistema",
         "text": [
-          "El combustible va del depósito al motor por un circuito con pocos elementos, y casi todos son objeto de una pregunta de examen. Los **depósitos** están en las alas, uno en cada lado. De cada depósito, el combustible llega al **selector**, que elige de cuál se alimenta el motor o lo corta. Después pasa por el **filtro** o **decantador** (*gascolator*, el punto más bajo del sistema, donde se acumulan el agua y los sedimentos y tiene su propio drenaje), por las **bombas** y por el **carburador** (PA-28) o la **unidad de inyección** (C172S).",
-          "Cada depósito lleva además un **tapón**, una toma de **ventilación**, un **drenaje** (sumidero) en el punto más bajo y un **indicador de cantidad** (020.18). La **ventilación** pone el depósito en comunicación con el aire exterior: así la presión en el depósito se iguala a la ambiente a medida que el combustible baja. Si la toma de ventilación se **obstruye** (hielo, insectos, tapón mal puesto), se forma vacío en el depósito y el combustible deja de fluir: el motor se para aunque el depósito no esté vacío."
+          "El sistema de combustible tiene una misión simple que no admite fallos: **almacenar** el combustible y **suministrarlo** al motor en todo momento mientras funciona. Y no basta con que llegue lo justo: el sistema debe ser capaz de dar **más combustible del que el motor necesita** en las fases de consumo más exigente del vuelo, normalmente el despegue y el ascenso, con potencia máxima.",
+          "Los elementos básicos son los **depósitos**, la **línea de alimentación** (tuberías, válvulas y filtros) y una **bomba de refuerzo** (*boost pump*), que mantiene el flujo y la presión. Entre los depósitos y el motor se interponen el **selector**, los **filtros**, el **filtro principal o decantador** (*gascolator*, el punto más bajo del sistema, con su propio drenaje) y, al final, el **carburador** (PA-28) o la **unidad de inyección** (C172S). Cada depósito lleva además un **tapón**, una toma de **ventilación**, un **drenaje** en el punto más bajo y un **indicador de cantidad** (020.18)."
         ],
         "figure": "svg:020-sistemas-combustible",
-        "caption": "Sistemas de combustible del PA-28-161 (con bombas) y del C172S (por gravedad), lado a lado."
+        "caption": "Comparación de los dos circuitos: ala baja con bombas (PA-28-161) y ala alta por gravedad (C172S).",
+        "ideas": [
+          "Es la cañería de una casa: el depósito es la cisterna, el selector el grifo general, los filtros las rejillas del desagüe y la bomba el motor de agua que da presión cuando la cisterna está por debajo del grifo.",
+          "El sistema debe tener sobrante como una nevera con más comida de la que vas a comer en la cena más pesada del año: si justo alcanza, el día que aprietes el acelerador al máximo te quedas corto."
+        ]
       },
       {
-        "title": "PA-28-161: ala baja, con bomba",
+        "title": "Depósitos, selector, filtros y drenajes",
         "text": [
-          "En el PA-28-161 Warrior III los depósitos están **por debajo del nivel del carburador y del motor**: el combustible no baja solo, hay que **bombearlo**. Por eso el sistema lleva una **bomba mecánica**, movida por el motor, y una **bomba eléctrica de respaldo** (auxiliar). Los dos depósitos suman unos **48 galones US utilizables** (unos 182 l). El selector tiene tres posiciones: **izquierdo, derecho y cerrado (OFF)**; **no tiene posición BOTH**, de modo que **solo se alimenta de un depósito a la vez** y hay que alternar de depósito según el POH.",
-          "La **bomba eléctrica** respalda a la mecánica en las fases críticas. Se pone en **ON** para el arranque (según POH), el **despegue** y el **aterrizaje**, y **al cambiar de depósito**, y también si la presión de combustible baja o se sospecha un fallo de la bomba mecánica, y se apaga en el resto del vuelo. Un manómetro de **presión de combustible** (psi) vigila el funcionamiento. El **cebador** (primer) envía una pequeña cantidad de combustible directamente a los cilindros para el arranque en frío."
+          "El ejemplo de sistema que usa el curso lleva **dos depósitos rígidos tipo cajón en cada ala** que drenan hacia las líneas del sistema. Una **válvula selectora** puede girarse a **cuatro posiciones**: cortar el suministro, alimentar desde **ambos** depósitos o alimentar desde el **depósito seleccionado** (izquierdo o derecho). En los aviones del curso el selector es más sencillo: el **PA-28-161 tiene tres posiciones** (izquierdo, derecho y cerrado, sin BOTH) y el **C172S tiene cuatro** (izquierdo, derecho, **ambos** y cerrado), con BOTH como posición normal.",
+          "Para proteger el motor, se instalan **filtros al inicio de las líneas** y un **filtro principal antes de la bomba**. También hay una **válvula de drenaje**, cuya función es **vaciar el sistema** de combustible si es necesario, y los sumideros de cada depósito, que se usan en el prevuelo para sacar agua y sedimentos. La **ventilación** pone el depósito en contacto con el aire exterior para igualar la presión mientras baja el nivel: si se obstruye, se forma vacío y el combustible deja de fluir aunque el depósito no esté vacío."
         ],
+        "ideas": [
+          "El selector de cuatro posiciones es el interruptor de una lavadora con programas: apagado, ambos tambores, solo el izquierdo o solo el derecho. Con tres programas (PA-28) falta el de «ambos».",
+          "Los filtros son el colador de la pasta: uno a la entrada de cada tubería para las piedras gruesas y uno principal antes de la bomba para que nada llegue a la parte que no puede tragar suciedad."
+        ]
+      },
+      {
+        "title": "Alimentación por gravedad y por presión",
+        "text": [
+          "El combustible llega al motor de dos maneras. En la **alimentación por gravedad** (*gravity feed*), el depósito está por encima del motor, así que el combustible baja solo, como el agua de una botella boca abajo. Esto funciona bien en aeronaves pequeñas de **ala alta** que vuelan **a baja altitud y con poca variación de fuerzas g**, porque el motor está a un nivel de referencia inferior al de los depósitos. En la **alimentación por presión**, una bomba (mecánica movida por el motor, eléctrica de respaldo o ambas) empuja el combustible hacia el motor, y es la solución cuando los depósitos están por debajo, como en un **ala baja**, o cuando las maniobras o la altitud harían fallar la gravedad.",
+          "Pero hay que ser precisos: un C172S es de ala alta y recibe el combustible por gravedad hasta el selector y la unidad de inyección, pero su motor de **inyección necesita presión** y por eso también lleva bomba mecánica y bomba eléctrica auxiliar. El PA-28-161 es de ala baja con carburador, y sus depósitos están por debajo del motor, de modo que depende de la bomba mecánica y de la eléctrica de respaldo."
+        ],
+        "table": {
+          "caption": "PA-28-161 y C172S: dos soluciones al mismo problema",
+          "head": [
+            "",
+            "PA-28-161 Warrior III",
+            "Cessna 172S"
+          ],
+          "rows": [
+            [
+              "Posición del ala",
+              "Baja: depósitos por debajo del motor",
+              "Alta: depósitos por encima del motor"
+            ],
+            [
+              "Alimentación",
+              "Por presión: bomba mecánica y eléctrica de respaldo",
+              "Gravedad hasta el selector, más bombas para la presión de inyección"
+            ],
+            [
+              "Selector",
+              "Izquierdo, derecho y cerrado (sin BOTH)",
+              "Izquierdo, derecho, ambos (BOTH) y cerrado"
+            ],
+            [
+              "Motor",
+              "Carburador",
+              "Inyección"
+            ],
+            [
+              "Utilizable aproximado",
+              "48 galones US (unos 182 l)",
+              "53 galones US (unos 200 l)"
+            ]
+          ],
+          "src": "POH PA-28-161 y C172S"
+        },
         "verify": true,
+        "ideas": [
+          "Beber de un vaso con una pajita (ala baja, hay que chupar: la bomba) es distinto a beber de un porrón (ala alta: la gravedad hace el trabajo). Pero si el porrón tiene que dar presión a un grifo de ducha (inyección), necesita su bomba también.",
+          "Gravedad solo funciona bien con la botella boca abajo: si el avión pica con poco combustible, el líquido se va al fondo del depósito y puede dejar descubierta la salida."
+        ]
+      },
+      {
+        "title": "PA-28-161 y C172S: la bomba eléctrica y el selector",
+        "text": [
+          "En el PA-28-161 la **bomba eléctrica** respalda a la mecánica en las fases críticas. Se pone en **ON** para el arranque (según POH), el **despegue** y el **aterrizaje**, y **al cambiar de depósito**, y también si la presión de combustible baja o se sospecha un fallo de la bomba mecánica, y se apaga en el resto del vuelo. Un manómetro de **presión de combustible** (psi) vigila el funcionamiento. El **cebador** (*primer*) envía una pequeña cantidad de combustible directamente a los cilindros para el arranque en frío. Como no hay posición BOTH, **solo se alimenta de un depósito a la vez** y hay que alternar de depósito según el POH.",
+          "En el C172S la posición normal es **BOTH**, que alimenta el motor de los dos depósitos a la vez y equilibra el consumo. Los POH piden **un solo depósito** en ciertas fases (por ejemplo, con viento cruzado en el aterrizaje o en vuelo con un depósito desequilibrado), según instrucciones. Con la alimentación por gravedad, una maniobra con morro muy bajo o un gran alabeo pueden desalimentar el depósito o la toma si hay poco combustible; por eso se evitan actitudes extremas con poca cantidad y el uso de un solo depósito casi vacío."
+        ],
         "note": {
           "kind": "warn",
-          "text": "Cambiar de depósito con la bomba eléctrica en OFF puede dejar al motor sin combustible un instante. Hazlo con la bomba en ON, a una altitud segura y comprobando la presión."
-        }
+          "text": "Cambiar de depósito con la bomba eléctrica en OFF puede dejar al motor sin combustible un instante. En el PA-28 hazlo con la bomba en ON, a una altitud segura y comprobando la presión."
+        },
+        "verify": true,
+        "ideas": [
+          "La bomba eléctrica es el segundo cubo de una cadena de bomberos: no hace falta siempre, pero en el momento crítico (despegue, aterrizaje, cambio de depósito) lo quieres a mano por si falla el primero."
+        ]
       },
       {
-        "title": "C172S: ala alta, por gravedad",
+        "title": "Tipos de depósito: integral, rígido y flexible",
         "text": [
-          "En el Cessna 172S los depósitos están en el **ala alta**, **por encima del motor**: el combustible **baja por gravedad** hasta el selector y la unidad de inyección. Aun así, el motor de inyección necesita una **bomba mecánica** para dar presión y, para el arranque y fases críticas, una **bomba eléctrica auxiliar**. Los depósitos suman unos **53 galones US utilizables** (unos 200 l). El selector tiene cuatro posiciones: **izquierdo, derecho, ambos (BOTH) y cerrado**, y la posición normal es **BOTH**, que alimenta el motor de los dos depósitos a la vez y equilibra el consumo. Los POH piden **un solo depósito** en ciertas fases (por ejemplo, con viento cruzado en el aterrizaje o en vuelo con un depósito desequilibrado), según instrucciones.",
-          "Con la alimentación por gravedad, el combustible llega sin bomba, pero **una maniobra con morro muy bajo o un gran alabeo** pueden desalimentar el depósito o la toma si hay poco combustible. Por eso se evitan actitudes extremas con poca cantidad y el uso de un solo depósito casi vacío."
+          "Según el espacio libre de la estructura, se instalan tres tipos de depósito. El **depósito integral** (*integral tank*, o de **ala húmeda**, *wet wing*) se consigue **sellando** por dentro elementos estructurales como los cajones de torsión del ala y la sección central. Da **mucho volumen** y sus ventajas son el aprovechamiento eficiente del espacio interior y el **bajo peso adicional**, porque la estructura hace de depósito.",
+          "El **depósito rígido** (*rigid tank*) suele ser metálico, un contenedor tipo cajón alojado en el ala o el fuselaje. No contribuye a la integridad estructural del avión y su ventaja principal es la **facilidad de inspección** (y de sustitución). El **depósito flexible** o de vejiga (*bladder tank*) está hecho de un material blando y flexible y se instala en el ala o el fuselaje. Puede **expandirse y contraerse** con la cantidad de combustible y **no requiere ventilación**, porque al vaciarse se pliega en vez de crear vacío."
         ],
-        "verify": true
+        "table": {
+          "caption": "Tipos de depósito",
+          "head": [
+            "Tipo",
+            "Cómo es",
+            "Ventajas",
+            "Detalle"
+          ],
+          "rows": [
+            [
+              "Integral (wet wing)",
+              "La propia estructura sellada",
+              "Gran volumen, aprovecha el espacio y casi no añade peso",
+              "Se sella con sellante; contribuye a la estructura"
+            ],
+            [
+              "Rígido",
+              "Caja metálica dentro del ala o fuselaje",
+              "Fácil de inspeccionar",
+              "No contribuye a la integridad estructural"
+            ],
+            [
+              "Flexible (bladder)",
+              "Vejiga de material blando",
+              "Se adapta al espacio; no necesita ventilación",
+              "Se expande y contrae según la cantidad"
+            ]
+          ],
+          "src": "Curso, tema 5"
+        },
+        "ideas": [
+          "El integral es una casa donde el hueco de las paredes hace de depósito: no gastas en cisternas, pero los muros tienen que ser estancos. El rígido es una cisterna de metal que metes en un hueco. El flexible es una bolsa de agua: se arruga cuando sale el líquido y no necesita que entre aire."
+        ]
       },
       {
-        "title": "Indicadores y control de la cantidad",
+        "title": "Combustible inutilizable y parámetros monitorizados",
         "text": [
-          "Los indicadores de cantidad no son fiables al 100 % (020.18). El piloto debe **comprobar la cantidad visualmente** en el prevuelo y **calcular el consumo** para el vuelo. La **cantidad no utilizable** es el combustible que queda en el depósito y no llega al motor en vuelo; no se cuenta en la planificación. Un consumo típico de estos aviones ronda los **30 a 40 l/h** en crucero, pero los valores exactos son los del POH."
+          "Las cantidades mínima y máxima que se pueden usar vienen fijadas por lo que hay en los depósitos, pero incluso con el depósito en su cantidad mínima queda combustible en las tuberías que no se puede aprovechar. Es el **combustible inutilizable** (*unusable fuel*). Cumple una función de seguridad: garantiza que el sistema siga lleno de **combustible líquido**, sin **burbujas de aire** en las tuberías ni en las bombas. En planificación no se cuenta como combustible disponible (020.18).",
+          "Los instrumentos informan normalmente de cuatro parámetros: la **cantidad de combustible** (de tipo **flotador**), la **temperatura** del combustible, la **presión** y el **flujo**. En los aviones ligeros la cantidad es lo habitual en el panel, y el caudal (consumo) o la presión dependen del modelo. Las indicaciones de cantidad no son fiables al 100 %: comprueba la cantidad visualmente en el prevuelo."
+        ],
+        "ideas": [
+          "El combustible inutilizable es el fondo de la tetera que no vierte nunca: está ahí, pero no cuenta para servir tazas. Y es mejor así, porque si vacías la tetera del todo entra aire en el grifo.",
+          "Los cuatro parámetros son como el cuadro del coche: cuánto queda (flotador), qué calor tiene, con qué presión sale y cuánto gastas por hora."
+        ]
+      },
+      {
+        "title": "Indicadores y cálculo de combustible",
+        "text": [
+          "Los indicadores de cantidad no son fiables al 100 % (020.18). El piloto debe **comprobar la cantidad visualmente** en el prevuelo y **calcular el consumo** para el vuelo. Un consumo típico de estos aviones ronda los **30 a 40 l/h** en crucero, pero los valores exactos son los del POH."
         ],
         "formulas": [
           {
             "f": "1 galón US = 3,785 l; masa (kg) = litros × 0,72",
             "note": "Para pasar de capacidades en galones a litros y kilos de AVGAS."
+          },
+          {
+            "f": "tiempo = combustible ÷ consumo",
+            "note": "Con litros y l/h; resta antes la reserva final."
           }
         ],
         "examples": [
@@ -59,6 +174,10 @@
           {
             "q": "Consumes 35 l/h y quieres 1 h 45 min de vuelo más la reserva. ¿Cuántos litros necesitas en el vuelo?",
             "a": "35 × 1,75 = 61,25 l de vuelo, más la reserva obligatoria que corresponda."
+          },
+          {
+            "q": "Sales con 120 l utilizables y consumes 30 l/h. La reserva final es de 30 min (15 l). ¿Cuánto puedes volar antes de entrar en reserva final?",
+            "a": "Combustible disponible: 120 − 15 = 105 l. Tiempo: 105 ÷ 30 = 3,5 h, es decir, 3 h 30 min."
           }
         ]
       },
@@ -71,14 +190,112 @@
         "bullets": [
           "**Agotamiento de combustible** (*fuel exhaustion*): no queda combustible utilizable.",
           "**Falta de alimentación** (*fuel starvation*): hay combustible en el depósito pero no llega al motor (selector mal puesto, ventilación obstruida, obstrucción, bloqueo por vapor)."
+        ],
+        "ideas": [
+          "El bloqueo por vapor es como una burbuja en la manguera de un jardín: el agua no sale aunque el grifo esté abierto, porque la bomba empuja aire en vez de líquido. Presurizar las líneas la aplasta.",
+          "Agotamiento es nevera vacía; falta de alimentación es nevera llena con la puerta atascada."
         ]
+      }
+    ],
+    "outline": [
+      {
+        "title": "Función y componentes",
+        "items": [
+          "Almacenar y suministrar siempre, con margen sobre el consumo máximo",
+          "Depósitos, línea de alimentación, bomba de refuerzo",
+          "Selector, filtros, gascolator, drenajes y ventilación"
+        ]
+      },
+      {
+        "title": "Selector",
+        "items": [
+          "Curso: cuatro posiciones (cortar, ambos, depósito seleccionado)",
+          "PA-28-161: izquierdo, derecho, cerrado (sin BOTH)",
+          "C172S: izquierdo, derecho, ambos y cerrado; normal BOTH"
+        ]
+      },
+      {
+        "title": "Gravedad frente a presión",
+        "items": [
+          "Gravedad: ala alta, baja altitud, poca variación de g",
+          "Presión: bombas; ala baja o maniobras exigentes",
+          "C172S: gravedad más bombas para la inyección"
+        ]
+      },
+      {
+        "title": "Tipos de depósito",
+        "items": [
+          "Integral (wet wing): gran volumen, poco peso",
+          "Rígido: fácil de inspeccionar, no es estructural",
+          "Flexible (bladder): se expande, sin ventilación"
+        ]
+      },
+      {
+        "title": "Inutilizable y parámetros",
+        "items": [
+          "Inutilizable: mantiene las líneas llenas de líquido, sin burbujas",
+          "Cantidad (flotador), temperatura, presión y flujo"
+        ]
+      },
+      {
+        "title": "Incidentes",
+        "items": [
+          "Agua: drenar antes del primer vuelo y tras repostar",
+          "Ventilación obstruida: vacío y corte de flujo",
+          "Vapor lock: bomba eléctrica ON",
+          "Exhaustion frente a starvation"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "Ala BAJA = BOMBA; ala ALTA = gravedad (pero la inyección también pide bomba).",
+      "El PA-28 tiene el selector «sin BOTH»: tres posiciones, un depósito a la vez. El C172S añade «ambos».",
+      "Depósitos: INTEGRAL = ala húmeda (sellada); RÍGIDO = caja que se inspecciona; FLEXIBLE = vejiga que no necesita venteo.",
+      "Cuatro parámetros: cantidad, temperatura, presión y flujo, «CaTePreFlu».",
+      "Starvation = hay pero no llega; exhaustion = no hay."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Qué función tiene el sistema de combustible y por qué debe tener margen?",
+        "a": "Almacenar y suministrar combustible a los motores en todo momento. Debe poder dar más de lo que el motor consume en las fases más críticas, como el despegue."
+      },
+      {
+        "q": "Describe el selector del curso y los de los dos aviones.",
+        "a": "El del curso tiene cuatro posiciones: cortar, ambos, y depósito seleccionado. El PA-28-161 tiene izquierdo, derecho y cerrado; el C172S, izquierdo, derecho, ambos y cerrado."
+      },
+      {
+        "q": "¿Qué filtros y drenajes lleva el sistema?",
+        "a": "Filtros al inicio de las líneas y un filtro principal antes de la bomba; una válvula de drenaje para vaciar el sistema, y sumideros en los depósitos."
+      },
+      {
+        "q": "Explica la diferencia entre alimentación por gravedad y por presión.",
+        "a": "Por gravedad: depósito sobre el motor, ala alta, baja altitud y poca variación de g. Por presión: bombas que empujan el combustible, necesarias en ala baja y para inyección."
+      },
+      {
+        "q": "Compara depósitos integral, rígido y flexible.",
+        "a": "Integral: estructura sellada, gran volumen y poco peso. Rígido: caja metálica fácil de inspeccionar, no estructural. Flexible: vejiga que se expande y no necesita ventilación."
+      },
+      {
+        "q": "¿Qué es el combustible inutilizable y para qué sirve?",
+        "a": "El que queda en las tuberías con el depósito en su mínimo y no puede usarse. Garantiza combustible líquido sin burbujas en tuberías y bombas."
+      },
+      {
+        "q": "¿Qué parámetros se monitorizan?",
+        "a": "Cantidad (flotador), temperatura, presión y flujo de combustible."
+      },
+      {
+        "q": "¿Qué diferencia hay entre fuel exhaustion y fuel starvation y qué causa un bloqueo por vapor?",
+        "a": "Exhaustion: no queda combustible utilizable. Starvation: hay combustible, pero no llega al motor. El vapor lock es combustible que hierve en las líneas por calor o baja presión."
       }
     ],
     "numbers": [
       "PA-28-161: ala baja; bomba mecánica y bomba eléctrica de respaldo; selector izquierdo, derecho y cerrado (sin BOTH)",
-      "C172S: ala alta, por gravedad; selector izquierdo, derecho, ambos y cerrado; posición normal BOTH",
+      "C172S: ala alta, gravedad más bombas para la inyección; selector izquierdo, derecho, ambos y cerrado; normal BOTH",
+      "Selector del curso: cuatro posiciones (cortar, ambos, depósito seleccionado)",
       "Bomba eléctrica del PA-28 en ON en despegue, aterrizaje y al cambiar de depósito (según POH)",
       "1 galón US = 3,785 l; AVGAS ≈ 0,72 kg/l",
+      "Depósitos: integral (wet wing), rígido y flexible (bladder, sin ventilación)",
+      "Parámetros: cantidad (flotador), temperatura, presión y flujo",
       "Ventilación obstruida: vacío en el depósito y el motor se para sin estar vacío"
     ],
     "traps": [
@@ -86,7 +303,9 @@
       "Pensar que, con ala alta y gravedad, no hace falta bomba alguna: el C172S de inyección lleva bombas.",
       "Cambiar de depósito con la bomba eléctrica en OFF.",
       "Confundir agotamiento de combustible con falta de alimentación.",
-      "Fiarse del indicador de cantidad sin comprobar el depósito visualmente."
+      "Fiarse del indicador de cantidad sin comprobar el depósito visualmente.",
+      "Pensar que los depósitos flexibles necesitan ventilación: no la necesitan, porque se pliegan.",
+      "Contar el combustible inutilizable como disponible en la planificación."
     ],
     "sources": [
       {
@@ -96,9 +315,12 @@
       {
         "title": "Manual de vuelo del PA-28-161 Warrior III y del Cessna 172S: sistema de combustible",
         "url": "https://www.piper.com/"
+      },
+      {
+        "title": "Material del curso, tema 5 «Sistema de combustible» (instructores)"
       }
     ],
-    "reviewed": "2026-10-09",
+    "reviewed": "2026-11-17",
     "links": [
       {
         "label": "Prevuelo del PA-28: drenajes de combustible",
@@ -578,38 +800,389 @@
         "Sí provoca la parada."
       ],
       "ref": "POH"
+    },
+    {
+      "id": "020.06.023",
+      "type": "concepto",
+      "level": 1,
+      "q": "La función principal del sistema de combustible de una aeronave es:",
+      "options": [
+        "Solo almacenar el combustible durante el vuelo",
+        "Almacenar combustible y suministrarlo al motor en todo momento, también en las fases de mayor consumo",
+        "Medir el consumo de cada depósito",
+        "Calentar el combustible antes de la combustión"
+      ],
+      "correct": 1,
+      "why": "El sistema debe poder dar al motor más combustible del que necesita en las fases de consumo más crítico, como el despegue.",
+      "whyNot": [
+        "Almacenar sin suministrar no cumpliría su función.",
+        null,
+        "Medir es una función de los instrumentos, no del sistema.",
+        "No es la función principal del sistema."
+      ],
+      "ref": "Curso, tema 5"
+    },
+    {
+      "id": "020.06.024",
+      "type": "concepto",
+      "level": 2,
+      "q": "Los componentes básicos de un sistema de combustible son:",
+      "options": [
+        "Carburador, filtro de aire y tubo de escape",
+        "Depósito, selector y válvula de descarga",
+        "Bomba de aceite, filtro y radiador",
+        "Depósitos, línea de alimentación y bomba de refuerzo"
+      ],
+      "correct": 3,
+      "why": "Son los elementos principales del curso: los depósitos almacenan, la línea distribuye y la bomba mantiene el flujo.",
+      "whyNot": [
+        "Son elementos del motor y de la admisión, no del sistema de combustible.",
+        "La válvula de descarga es del sistema de presurización.",
+        "Son del sistema de lubricación.",
+        null
+      ],
+      "ref": "Curso, tema 5"
+    },
+    {
+      "id": "020.06.025",
+      "type": "concepto",
+      "level": 2,
+      "q": "En el sistema de ejemplo del curso, la válvula selectora de depósitos tiene cuatro posiciones:",
+      "options": [
+        "Cortar el suministro, ambos depósitos y cada uno de los depósitos seleccionados",
+        "Izquierdo, derecho, cebador y cerrado",
+        "Abierto, cerrado y dos posiciones de emergencia",
+        "Encendido, apagado, filtro y drenaje"
+      ],
+      "correct": 0,
+      "why": "El selector permite cortar el combustible, alimentar desde ambos depósitos o elegir un depósito.",
+      "whyNot": [
+        null,
+        "El cebador no es una posición del selector.",
+        "No tiene posiciones de emergencia como tales.",
+        "Filtro y drenaje son elementos aparte."
+      ],
+      "ref": "Curso, tema 5"
+    },
+    {
+      "id": "020.06.026",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Dónde se colocan los filtros de combustible del sistema del curso?",
+      "options": [
+        "Solo en el tapón de cada depósito",
+        "Únicamente dentro del carburador",
+        "Al inicio de las líneas y un filtro principal antes de la bomba",
+        "Después de la bomba y antes del selector"
+      ],
+      "correct": 2,
+      "why": "Los filtros iniciales retienen las partículas gruesas y el principal protege la bomba.",
+      "whyNot": [
+        "El tapón no es el filtro del sistema.",
+        "El carburador tiene su propio filtro, pero no es el único.",
+        null,
+        "El principal va antes de la bomba, no después."
+      ],
+      "ref": "Curso, tema 5"
+    },
+    {
+      "id": "020.06.027",
+      "type": "concepto",
+      "level": 2,
+      "q": "La válvula de drenaje del sistema de combustible sirve para:",
+      "options": [
+        "Regular la presión de la bomba",
+        "Cambiar de depósito en vuelo",
+        "Vaciar el sistema de combustible cuando sea necesario",
+        "Medir la cantidad de combustible"
+      ],
+      "correct": 2,
+      "why": "Su función es poder vaciar el combustible del sistema, por ejemplo en mantenimiento.",
+      "whyNot": [
+        "La presión la controla la bomba y sus reguladores.",
+        "Eso es el selector.",
+        null,
+        "Eso son los indicadores de cantidad."
+      ],
+      "ref": "Curso, tema 5"
+    },
+    {
+      "id": "020.06.028",
+      "type": "concepto",
+      "level": 2,
+      "q": "La alimentación por gravedad es adecuada en aviones pequeños que:",
+      "options": [
+        "Tienen el depósito por encima del motor, vuelan bajo y con poca variación de g",
+        "Tienen el depósito por debajo del motor",
+        "Vuelan a gran altitud con grandes variaciones de g",
+        "Llevan solo depósitos flexibles"
+      ],
+      "correct": 0,
+      "why": "En un ala alta el combustible baja solo hacia el motor, siempre que las maniobras no descubran la salida del depósito.",
+      "whyNot": [
+        null,
+        "Con el depósito por debajo hace falta bomba.",
+        "A gran altitud y con variaciones de g la gravedad no es fiable.",
+        "El tipo de depósito no determina la alimentación."
+      ],
+      "ref": "Curso, tema 5"
+    },
+    {
+      "id": "020.06.029",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Por qué un C172S de ala alta lleva también bomba de combustible?",
+      "options": [
+        "Porque el combustible no baja por gravedad",
+        "Porque el selector solo funciona con presión",
+        "Porque el depósito está por debajo del motor",
+        "Porque el motor de inyección necesita presión que la gravedad no da"
+      ],
+      "correct": 3,
+      "why": "La gravedad lleva el combustible hasta la unidad de inyección, pero la inyección precisa presión, así que hay bomba mecánica y eléctrica auxiliar.",
+      "whyNot": [
+        "Sí baja por gravedad desde el ala alta.",
+        "El selector es una válvula mecánica independiente de la presión.",
+        "En un ala alta el depósito está por encima.",
+        null
+      ],
+      "ref": "POH C172S; curso, tema 5"
+    },
+    {
+      "id": "020.06.030",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un depósito integral (wet wing) se caracteriza por:",
+      "options": [
+        "Ser una caja metálica fácil de inspeccionar",
+        "Estar formado por la estructura del ala sellada, con gran volumen y poco peso añadido",
+        "Ser una vejiga que no necesita ventilación",
+        "Estar fuera de la estructura del avión"
+      ],
+      "correct": 1,
+      "why": "Se sellan los cajones de torsión y la sección central; la estructura hace de depósito y aprovecha el espacio.",
+      "whyNot": [
+        "Eso describe el rígido.",
+        null,
+        "Eso describe el flexible.",
+        "El integral forma parte de la estructura."
+      ],
+      "ref": "Curso, tema 5"
+    },
+    {
+      "id": "020.06.031",
+      "type": "concepto",
+      "level": 2,
+      "q": "Respecto a los depósitos rígidos, ¿cuál es la afirmación correcta?",
+      "options": [
+        "Contribuyen a la rigidez del ala y no se inspeccionan",
+        "No contribuyen a la integridad estructural y son fáciles de inspeccionar",
+        "Se expanden y contraen con el combustible",
+        "No necesitan ventilación"
+      ],
+      "correct": 1,
+      "why": "Son contenedores tipo cajón, normalmente metálicos, dentro del ala o fuselaje.",
+      "whyNot": [
+        "No son estructurales y sí se inspeccionan.",
+        null,
+        "Eso es propio de los flexibles.",
+        "Los rígidos sí necesitan ventilación."
+      ],
+      "ref": "Curso, tema 5"
+    },
+    {
+      "id": "020.06.032",
+      "type": "concepto",
+      "level": 2,
+      "q": "Los depósitos flexibles (bladder tanks):",
+      "options": [
+        "Son estructurales y se sellan en el ala",
+        "Necesitan ventilación para igualar presiones",
+        "Son metálicos y de forma fija",
+        "Pueden expandirse y contraerse y no requieren ventilación"
+      ],
+      "correct": 3,
+      "why": "Al ser de material blando se pliegan al vaciarse, así que no se forma vacío.",
+      "whyNot": [
+        "Eso es el integral.",
+        "Es el caso de los rígidos.",
+        "Son de material blando, no metálico.",
+        null
+      ],
+      "ref": "Curso, tema 5"
+    },
+    {
+      "id": "020.06.033",
+      "type": "concepto",
+      "level": 2,
+      "q": "El combustible inutilizable es útil porque:",
+      "options": [
+        "Garantiza combustible líquido en las tuberías, sin burbujas de aire en tuberías ni bombas",
+        "Es la reserva final obligatoria del vuelo",
+        "Sirve para refrigerar el motor",
+        "Se usa en emergencia como reserva de última hora"
+      ],
+      "correct": 0,
+      "why": "Aunque no se pueda usar, mantiene el sistema lleno de líquido.",
+      "whyNot": [
+        null,
+        "La reserva final es combustible utilizable que se calcula aparte.",
+        "No tiene función de refrigeración.",
+        "No es utilizable, por definición."
+      ],
+      "ref": "Curso, tema 5"
+    },
+    {
+      "id": "020.06.034",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Cuál de estos parámetros del combustible NO se monitoriza normalmente?",
+      "options": [
+        "La cantidad (tipo flotador)",
+        "La presión",
+        "El octanaje",
+        "El flujo"
+      ],
+      "correct": 2,
+      "why": "Se monitorizan cantidad, temperatura, presión y flujo. El octanaje es una propiedad del combustible y no se mide en cabina.",
+      "whyNot": [
+        "Se monitoriza con indicadores de tipo flotador.",
+        "Se monitoriza.",
+        null,
+        "Se monitoriza."
+      ],
+      "ref": "Curso, tema 5"
+    },
+    {
+      "id": "020.06.035",
+      "type": "calculo",
+      "level": 2,
+      "q": "Sales con 150 l utilizables, consumes 30 l/h y la reserva final es de 30 min (15 l). ¿Cuánto puedes volar antes de entrar en reserva final?",
+      "options": [
+        "5 h",
+        "4 h",
+        "4 h 30 min",
+        "3 h 30 min"
+      ],
+      "correct": 2,
+      "why": "150 − 15 = 135 l. 135 ÷ 30 = 4,5 h = 4 h 30 min.",
+      "whyNot": [
+        "5 h es 150 ÷ 30: no resta la reserva.",
+        "4 h resta una reserva de 30 l.",
+        null,
+        "3 h 30 min resta demasiado combustible."
+      ],
+      "ref": "Consumo × tiempo"
+    },
+    {
+      "id": "020.06.036",
+      "type": "calculo",
+      "level": 2,
+      "q": "El depósito izquierdo del PA-28-161 contiene 20 galones US de AVGAS (0,72 kg/l). ¿Cuánto pesa aproximadamente el combustible?",
+      "options": [
+        "55 kg",
+        "14 kg",
+        "76 kg",
+        "200 kg"
+      ],
+      "correct": 0,
+      "why": "20 × 3,785 = 75,7 l. 75,7 × 0,72 ≈ 54,5 kg, unos 55 kg.",
+      "whyNot": [
+        null,
+        "14 kg resulta de multiplicar 20 por 0,72 sin convertir a litros.",
+        "76 kg son los litros, no los kilos.",
+        "200 kg no tiene relación con los datos."
+      ],
+      "ref": "1 galón US = 3,785 l; 0,72 kg/l"
+    },
+    {
+      "id": "020.06.037",
+      "type": "regla",
+      "level": 2,
+      "q": "Para cambiar de depósito en vuelo con un PA-28-161 de forma segura, se debe:",
+      "options": [
+        "Cambiar el selector con la bomba en OFF",
+        "Pasar primero el selector a CERRADO",
+        "Cambiar de depósito solo en tierra",
+        "Poner la bomba eléctrica en ON, cambiar el selector y comprobar la presión"
+      ],
+      "correct": 3,
+      "why": "La bomba eléctrica asegura el flujo durante el cambio, y la presión confirma que el nuevo depósito alimenta bien.",
+      "whyNot": [
+        "Con la bomba en OFF puede quedar un instante sin combustible.",
+        "Cerrarlo corta el combustible y para el motor.",
+        "En el PA-28 hay que alternar depósitos en vuelo.",
+        null
+      ],
+      "ref": "POH PA-28-161"
+    },
+    {
+      "id": "020.06.038",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un avión de ala baja suele necesitar bomba de combustible porque:",
+      "options": [
+        "El ala baja no tiene ventilación",
+        "Los depósitos están por debajo del motor y el combustible no baja solo",
+        "El combustible es más denso en ala baja",
+        "El selector solo funciona con presión"
+      ],
+      "correct": 1,
+      "why": "Con los depósitos más bajos que el carburador, hay que empujar el combustible: bomba mecánica y eléctrica de respaldo.",
+      "whyNot": [
+        "La ventilación es independiente de la posición del ala.",
+        null,
+        "La densidad no depende de la posición del ala.",
+        "El selector es una válvula mecánica."
+      ],
+      "ref": "Curso, tema 5; POH PA-28-161"
     }
   ],
   "cards": [
     {
       "id": "c.020.06.01",
+      "front": "Función del sistema de combustible",
+      "back": "Almacenar y suministrar combustible en todo momento, con más caudal del que el motor pide en el consumo máximo"
+    },
+    {
+      "id": "c.020.06.02",
       "front": "Selector del PA-28-161",
       "back": "Izquierdo, derecho y cerrado; sin BOTH; un solo depósito a la vez"
     },
     {
-      "id": "c.020.06.02",
+      "id": "c.020.06.03",
       "front": "Selector del C172S",
       "back": "Izquierdo, derecho, ambos y cerrado; posición normal: BOTH"
     },
     {
-      "id": "c.020.06.03",
+      "id": "c.020.06.04",
       "front": "Alimentación: ala baja y ala alta",
       "back": "Ala baja (PA-28): bomba mecánica y eléctrica. Ala alta (C172S): gravedad más bombas para la inyección"
     },
     {
-      "id": "c.020.06.04",
+      "id": "c.020.06.05",
+      "front": "Depósitos: integral, rígido y flexible",
+      "back": "Integral (wet wing): estructura sellada. Rígido: caja fácil de inspeccionar. Flexible (bladder): se expande y no necesita ventilación"
+    },
+    {
+      "id": "c.020.06.06",
+      "front": "Combustible inutilizable",
+      "back": "Queda en las tuberías; mantiene el sistema lleno de líquido y sin burbujas; no se cuenta como disponible"
+    },
+    {
+      "id": "c.020.06.07",
+      "front": "Parámetros monitorizados",
+      "back": "Cantidad (flotador), temperatura, presión y flujo de combustible"
+    },
+    {
+      "id": "c.020.06.08",
       "front": "Bomba eléctrica del PA-28: cuándo ON",
       "back": "Despegue, aterrizaje y al cambiar de depósito (según POH)"
     },
     {
-      "id": "c.020.06.05",
-      "front": "Ventilación del depósito obstruida",
-      "back": "Vacío en el depósito y el motor se para con combustible"
-    },
-    {
-      "id": "c.020.06.06",
-      "front": "Bloqueo por vapor",
-      "back": "Combustible que hierve en las líneas; se evita con la bomba eléctrica en ON"
+      "id": "c.020.06.09",
+      "front": "Ventilación obstruida y bloqueo por vapor",
+      "back": "Ventilación obstruida: vacío y corte del flujo. Vapor lock: combustible que hierve; se evita con la bomba eléctrica en ON"
     }
   ]
 }

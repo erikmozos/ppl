@@ -2,13 +2,14 @@
   "lesson": {
     "id": "020.02",
     "title": "Tren, frenos y neumáticos",
-    "summary": "Tipos de tren de aterrizaje, amortiguadores, dirección de la rueda de morro y amortiguador de shimmy, frenos de disco hidráulicos y freno de aparcamiento, neumáticos, presión, desgaste y aquaplaning.",
+    "summary": "Tipos de tren, cargas que soporta el tren (touchdown, rodaje y torsión de las ruedas principales), aterrizaje sobre la rueda de morro, amortiguadores, dirección de la rueda de morro y amortiguador de shimmy, frenos de disco hidráulicos y de aparcamiento, neumáticos y aquaplaning.",
     "objectives": [
       "Distinguir el tren triciclo, el convencional y el tándem y sus efectos en tierra",
       "Describir el amortiguador oleoneumático y el de ballesta de acero y cómo se comprueba",
       "Explicar la dirección de la rueda de morro y para qué sirve el amortiguador de shimmy",
       "Describir el sistema de frenos de disco hidráulicos y el freno de aparcamiento",
-      "Interpretar el estado y la presión de los neumáticos y reconocer el aquaplaning"
+      "Interpretar el estado y la presión de los neumáticos y reconocer el aquaplaning",
+      "Explicar las cargas del tren de aterrizaje y por qué no se debe tocar primero con la rueda de morro"
     ],
     "sections": [
       {
@@ -41,13 +42,34 @@
             ]
           ],
           "src": "PHAK cap. 6"
-        }
+        },
+        "ideas": [
+          "El triciclo es un carrito de supermercado empujado hacia delante: tiende a seguir recto. El tren convencional es empujar el carrito marcha atrás: cualquier desvío se agranda."
+        ]
+      },
+      {
+        "title": "Cargas en el tren de aterrizaje",
+        "text": [
+          "El tren de aterrizaje es el único elemento que transmite fuerzas entre el avión y el suelo. Durante el **rodaje**, la **carrera de despegue** y el **aterrizaje** aparecen fuerzas debidas al momento lineal y a la inercia del avión. Las más grandes se producen en el **toque (touchdown)**: una **fuerza de impacto** por el peso y la velocidad vertical, y una **fuerza horizontal** por el rozamiento de las ruedas al empezar a girar. Algunas aeronaves grandes necesitan **cuatro o seis ruedas por pata principal** para repartir esas cargas.",
+          "Las **ruedas principales** soportan también un **esfuerzo de torsión importante durante el rodaje**, sobre todo al virar con el avión parado o casi: las ruedas se retuercen sobre el pavimento y transmiten ese momento a la pata."
+        ],
+        "bullets": [
+          "El peso y la velocidad vertical determinan la energía que el amortiguador debe disipar; un toque duro o un rebote la aumentan.",
+          "Con más ruedas por pata, cada neumático soporta menos carga y la presión sobre la pista baja."
+        ],
+        "ideas": [
+          "Las cuatro o seis ruedas de las patas principales son como los zapatos de nieve: repartes el peso sobre más superficie.",
+          "Girar sobre sí mismo con las zapatillas pegadas al suelo da el mismo esfuerzo de torsión que sufren las ruedas al virar cerradas."
+        ]
       },
       {
         "title": "Estabilidad en tierra y tren fijo o retráctil",
         "text": [
           "En el tren **triciclo** el centro de gravedad queda **por delante del tren principal**: si el avión se desvía, la fuerza centrífuga lo devuelve a la trayectoria. En el convencional el CG queda **por detrás** y un desvío tiende a agrandarse (trompo, *ground loop*).",
           "El tren puede ser **fijo** (más simple y barato, con más resistencia) o **retráctil** (menor resistencia, más peso, complejidad y riesgo de aterrizar con el tren arriba). El PA-28-161 Warrior III y el C172S llevan tren **triciclo fijo**."
+        ],
+        "ideas": [
+          "Tirar de un carrito por delante lo mantiene recto; empujarlo desde atrás lo hace bailar: por eso el CG delante de las ruedas principales estabiliza."
         ]
       },
       {
@@ -60,14 +82,41 @@
           "**Ballesta o tubo de acero flexible**: las patas principales del C172S son de **acero de muelle**, que se flexiona y absorbe energía sin aceite. Es sencillo, robusto y no necesita mantenimiento de fluido.",
           "El conjunto lleva una **horquilla de torsión** (torque link) que impide que la rueda gire respecto al tubo."
         ],
-        "verify": true
+        "verify": true,
+        "ideas": [
+          "El oleoneumático es la jeringuilla con aire y agua: el aire es el muelle y el orificio frena el émbolo. La ballesta de acero es un trampolín: se dobla y devuelve sin aceite."
+        ]
       },
       {
         "title": "Dirección y amortiguador de shimmy",
         "text": [
           "En el tren triciclo, la **rueda de morro** guía el avión en tierra. En el PA-28-161 y el C172S es **dirigible con los pedales**: unas varillas o cables unen los pedales del timón de dirección a la rueda, de modo que pisar un pedal mueve la rueda y el timón a la vez. Para virajes cerrados se usa además el **freno diferencial**. En algunos aviones la rueda es **libre** (se orienta sola) y se maneja con frenos y empuje. Para mover el avión sin motor se usa la **barra de remolque** en la rueda de morro, sin forzar el giro más allá de sus topes.",
           "A cierta velocidad, la rueda de morro puede empezar a oscilar de lado a lado de forma violenta: el **shimmy**. Un **amortiguador de shimmy** (hidráulico o de fricción) en la pata de morro frena esas oscilaciones. Un neumático desgastado de forma desigual, falta de presión o holguras aumentan el riesgo."
+        ],
+        "ideas": [
+          "El shimmy es la rueda loca de un carro de la compra que empieza a temblar al ir deprisa; el amortiguador es la mano que la sujeta."
         ]
+      },
+      {
+        "title": "Aterrizaje sobre la rueda de morro",
+        "text": [
+          "Tocar con la rueda de morro **antes** que con las principales es un error serio. La pata de morro **no está diseñada para absorber las cargas del touchdown**, sino solo las de **guiado direccional** y de la rotación. Además, el avión puede entrar en una situación **no controlada** (rebotes, oscilaciones, pérdida de dirección) y acabar en accidente.",
+          "El impacto debe producirse **lo más cerca posible del centro de gravedad**, con las ruedas principales, para que el tren absorba la energía y desacelere el avión verticalmente de forma gradual. Un toque de morro puede además **deformar el fuselaje**. Si ocurre, el avión debe ser revisado por mantenimiento antes de volver a volar."
+        ],
+        "bullets": [
+          "En la toma: pon el avión en actitud de morro alto y toca primero con las principales; baja el morro después, con suavidad.",
+          "Si rebotas o te asientas de morro y no controlas el avión, no intentes salvarlo con correcciones bruscas: da potencia y ve al aire (motor y al aire), y repite la aproximación.",
+          "Después de un toque duro, los síntomas son arrugas en el revestimiento o holgura en el tren de morro: avisa y no vuelas."
+        ],
+        "ideas": [
+          "La pata de morro es la patita delantera de una mesa pequeña: sirve para guiar, no para soportar un golpe fuerte.",
+          "Aterrizar de morro es como saltar de un escalón de puntillas y de cabeza: nadie lo diseña así."
+        ],
+        "verify": true,
+        "note": {
+          "kind": "warn",
+          "text": "La actuación tras un rebote o un toque de morro depende del avión y de la situación; sigue el POH del PA-28-161 o del C172S y los criterios de tu instructor."
+        }
       },
       {
         "title": "Frenos",
@@ -81,7 +130,10 @@
           "**Frenar con fuerza y rodar largo** calienta los frenos: pueden desvanecerse (*fade*).",
           "Los frenos de un avión ligero son solo de las **ruedas principales**; el de morro no frena."
         ],
-        "verify": true
+        "verify": true,
+        "ideas": [
+          "Un pedal esponjoso es una manguera con aire dentro: aprietas y parte de la fuerza se gasta en comprimir las burbujas."
+        ]
       },
       {
         "title": "Neumáticos",
@@ -89,7 +141,10 @@
           "Un neumático de aviación tiene una banda de rodadura con **estrías**, una carcasa de tejido y caucho y, en muchos casos, una **cámara**. La **presión** que fija el POH es crítica: demasiado baja provoca desgaste en los bordes, calentamiento y riesgo de que se salga de la llanta; demasiado alta, desgaste en el centro, menos adherencia y menos amortiguación. Se comprueba con el neumático frío.",
           "Las **marcas de deslizamiento (slip marks)**, líneas pintadas a la vez en el neumático y en la llanta, deben estar alineadas: si se separan, el neumático ha girado sobre la llanta y puede arrancar la válvula. En el prevuelo se miran también el desgaste (no deben verse las lonas), los cortes, las ampollas y la presión. Un neumático plano en un solo punto indica un bloqueo de freno en un aterrizaje."
         ],
-        "verify": true
+        "verify": true,
+        "ideas": [
+          "Un neumático poco hinchado se come los bordes; muy hinchado, el centro: igual que la suela de un zapato mal apoyado."
+        ]
       },
       {
         "title": "Aquaplaning",
@@ -112,7 +167,10 @@
           "Con riesgo de aquaplaning, usa la parte de pista menos mojada, toca con la velocidad más baja posible y evita frenar fuerte hasta que baje la velocidad.",
           "Con viento cruzado y pista mojada, el riesgo de perder el control direccional aumenta."
         ],
-        "verify": true
+        "verify": true,
+        "ideas": [
+          "Es como un zapato nuevo sobre un suelo mojado y encerado: no frena porque hay una película entre el zapato y el suelo."
+        ]
       }
     ],
     "numbers": [
@@ -120,14 +178,17 @@
       "Triciclo: CG por delante de las ruedas principales; convencional: por detrás",
       "Amortiguador oleoneumático (aceite y aire): PA-28; ballesta de acero: patas principales del C172S",
       "Shimmy: oscilación de la rueda de morro; lo reduce el amortiguador de shimmy",
-      "Velocidad de aquaplaning ≈ 9 × √(psi) en kt"
+      "Velocidad de aquaplaning ≈ 9 × √(psi) en kt",
+      "Cargas del tren: máximas en el toque; 4 o 6 ruedas por pata en aviones grandes",
+      "Aterrizaje de morro: el impacto debe darse cerca del centro de gravedad"
     ],
     "traps": [
       "Creer que el tren convencional es más estable en tierra: es el triciclo.",
       "Pensar que el freno de aparcamiento funciona solo con el mando: hay que pisar los pedales mientras se tira.",
       "Confundir shimmy (oscilación de la rueda de morro) con aquaplaning.",
       "Medir la presión del neumático con el neumático caliente.",
-      "Pensar que los frenos están en las tres ruedas: solo en las principales."
+      "Pensar que los frenos están en las tres ruedas: solo en las principales.",
+      "Pensar que la pata de morro soporta el toque como las principales: solo guía y rota."
     ],
     "sources": [
       {
@@ -137,9 +198,12 @@
       {
         "title": "Manual de vuelo del PA-28-161 y del C172S",
         "url": "https://www.piper.com/"
+      },
+      {
+        "title": "Material del curso: Estructura del avión (ATPLENJOY/DREAMAIR)"
       }
     ],
-    "reviewed": "2026-10-09",
+    "reviewed": "2026-11-17",
     "links": [
       {
         "label": "Prevuelo del PA-28: tren y neumáticos",
@@ -152,6 +216,89 @@
       {
         "label": "Arranque del PA-28 (freno de aparcamiento)",
         "href": "#/ac/pa28/flow/start"
+      }
+    ],
+    "course": "Tema 1 · Fuselaje y estructura",
+    "outline": [
+      {
+        "title": "Tipos de tren",
+        "items": [
+          "Triciclo: CG delante de las principales; estable",
+          "Convencional: CG detrás; riesgo de trompo",
+          "Tándem: planeadores",
+          "Fijo o retráctil"
+        ]
+      },
+      {
+        "title": "Cargas del tren",
+        "items": [
+          "Máximas en el toque: impacto y rozamiento",
+          "Aeronaves grandes: 4 o 6 ruedas por pata",
+          "Principales: torsión al virar",
+          "Morro: solo guiado y rotación"
+        ]
+      },
+      {
+        "title": "Aterrizaje de morro",
+        "items": [
+          "La pata de morro no absorbe el toque",
+          "Impacto cerca del CG",
+          "Riesgo: pérdida de control y fuselaje deformado",
+          "Revisión posterior"
+        ]
+      },
+      {
+        "title": "Amortiguadores y dirección",
+        "items": [
+          "Oleoneumático: aire y aceite",
+          "Ballesta: acero de muelle sin fluido",
+          "Dirección de morro con pedales",
+          "Shimmy: lo frena su amortiguador"
+        ]
+      },
+      {
+        "title": "Frenos y neumáticos",
+        "items": [
+          "Discos hidráulicos en las principales",
+          "Esponjoso: aire; que se hunde: fuga",
+          "Presión en frío; marcas de deslizamiento",
+          "Aquaplaning ≈ 9 × √psi kt"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "Triciclo = CG Delante, estable; Convencional = CG Detrás, trompo.",
+      "Toque correcto: PRINCIPALES primero, morro después. «El morro, el último en llegar.»",
+      "Aquaplaning: 9 por raíz de la presión."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Por qué el tren triciclo es más estable en tierra que el convencional?",
+        "a": "Porque el CG queda delante de las ruedas principales: si el avión se desvía, la inercia lo realinea con la trayectoria. En el convencional el CG queda detrás y el desvío tiende a agrandarse."
+      },
+      {
+        "q": "¿Cuándo son más grandes las cargas del tren y por qué?",
+        "a": "En el toque, por el impacto debido al peso y a la velocidad vertical y por el rozamiento horizontal al empezar a girar las ruedas."
+      },
+      {
+        "q": "¿Por qué no se debe tocar primero con la rueda de morro?",
+        "a": "Porque su pata solo está diseñada para guiado y rotación, no para el impacto; además puede perderse el control y deformar el fuselaje."
+      },
+      {
+        "q": "¿Qué diferencia hay entre un amortiguador oleoneumático y uno de ballesta?",
+        "a": "El primero usa aire como muelle y aceite que pasa por un orificio como freno; el segundo absorbe energía flexionándose, sin fluido."
+      },
+      {
+        "q": "¿Qué indica un pedal esponjoso y uno que se hunde?",
+        "a": "Esponjoso: aire en el circuito. Que se hunde: fuga o fallo del cilindro maestro."
+      },
+      {
+        "q": "¿Para qué sirven las marcas de deslizamiento?",
+        "a": "Muestran si el neumático ha girado sobre la llanta: si se desalinean, hay que revisar."
+      },
+      {
+        "q": "¿Qué es el aquaplaning y qué haces para evitarlo?",
+        "a": "Pérdida de contacto del neumático con el suelo por una capa de agua; se evita tocando lo más despacio posible, en la parte menos mojada y sin frenar fuerte al principio."
       }
     ]
   },
@@ -491,6 +638,174 @@
         "La llanta no se desgasta por presión."
       ],
       "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.02.017",
+      "type": "concepto",
+      "level": 2,
+      "q": "Las cargas más significativas sobre el tren de aterrizaje aparecen:",
+      "options": [
+        "En el rodaje a baja velocidad",
+        "En el toque (touchdown), por el impacto y el rozamiento",
+        "En el despegue con el avión ya en el aire",
+        "En el estacionamiento"
+      ],
+      "correct": 1,
+      "why": "Al tocar hay una fuerza de impacto por el peso y la velocidad vertical y una fuerza horizontal por el rozamiento.",
+      "whyNot": [
+        "En el rodaje las cargas son menores.",
+        null,
+        "Con el avión en el aire el tren no soporta cargas.",
+        "Parado soporta solo el peso estático."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.02.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "Algunos aviones grandes montan cuatro o seis ruedas por pata principal para:",
+      "options": [
+        "Tener más frenos independientes únicamente",
+        "Frenar solo en aterrizajes cortos",
+        "Reducir el peso del tren",
+        "Soportar adecuadamente las cargas generadas"
+      ],
+      "correct": 3,
+      "why": "Repartir la carga entre varias ruedas permite soportar los esfuerzos del tren y bajar la presión en pista.",
+      "whyNot": [
+        "No es el objetivo principal.",
+        "No depende de la longitud de pista.",
+        "Más ruedas aumentan el peso del conjunto.",
+        null
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.02.019",
+      "type": "concepto",
+      "level": 2,
+      "q": "Las ruedas principales sufren un esfuerzo de torsión importante durante:",
+      "options": [
+        "El rodaje, sobre todo al virar",
+        "El vuelo de crucero",
+        "La rotación en el despegue",
+        "La extensión de los flaps"
+      ],
+      "correct": 0,
+      "why": "Al virar con el avión rodando, las ruedas se retuercen sobre el pavimento y transmiten el momento a la pata.",
+      "whyNot": [
+        null,
+        "En crucero el tren no toca el suelo.",
+        "En la rotación predomina el peso, no la torsión de rodaje.",
+        "Los flaps no influyen en el tren."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.02.020",
+      "type": "concepto",
+      "level": 2,
+      "q": "La pata del tren de morro está diseñada para soportar principalmente:",
+      "options": [
+        "Las cargas del touchdown",
+        "Todo el peso del avión en el toque",
+        "Las cargas de guiado direccional y de rotación",
+        "La fuerza de frenado"
+      ],
+      "correct": 2,
+      "why": "No está dimensionada para el impacto del toque, sino para guiar y para las cargas de rotación.",
+      "whyNot": [
+        "Eso lo soportan las principales.",
+        "Tampoco en el toque.",
+        null,
+        "El frenado se hace en las ruedas principales."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.02.021",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un aterrizaje en el que la rueda de morro toca primero puede provocar:",
+      "options": [
+        "Un frenado más suave",
+        "Menos carga en las ruedas principales siempre",
+        "Un toque más cerca del centro de gravedad",
+        "Pérdida de control y deformaciones del fuselaje"
+      ],
+      "correct": 3,
+      "why": "El impacto no es absorbido por las patas adecuadas, puede dejar el avión incontrolado y deformar el fuselaje.",
+      "whyNot": [
+        "No frena mejor.",
+        "No se descarga el tren principal; el morro recibe el golpe.",
+        "Es justo lo contrario del toque correcto.",
+        null
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.02.022",
+      "type": "concepto",
+      "level": 3,
+      "q": "Para desacelerar verticalmente de forma progresiva, el impacto del toque debe producirse:",
+      "options": [
+        "Lo más cerca posible del centro de gravedad, con las ruedas principales",
+        "Con la rueda de morro, para que absorba la energía",
+        "En las puntas de las alas",
+        "Con el avión inclinado y una sola rueda"
+      ],
+      "correct": 0,
+      "why": "Así las patas del tren absorben la energía y la desaceleración es gradual.",
+      "whyNot": [
+        null,
+        "La pata de morro no está diseñada para eso.",
+        "Las puntas de ala no tocan el suelo.",
+        "Tocar con una sola rueda sobrecarga una pata y es inseguro."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.02.023",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con un neumático a 25 psi, la velocidad aproximada a la que puede aparecer el aquaplaning (9 × √p) es de:",
+      "options": [
+        "225 kt",
+        "45 kt",
+        "25 kt",
+        "18 kt"
+      ],
+      "correct": 1,
+      "why": "√25 = 5; 9 × 5 = 45 kt.",
+      "whyNot": [
+        "Resulta de multiplicar 9 por 25.",
+        null,
+        "Es la presión tomada como velocidad.",
+        "Se obtiene al multiplicar por 2 la raíz en lugar de por 9."
+      ],
+      "ref": "Fórmula orientativa de aquaplaning dinámico"
+    },
+    {
+      "id": "020.02.024",
+      "type": "concepto",
+      "level": 2,
+      "q": "Tras un aterrizaje muy duro con toque de morro, lo correcto antes del siguiente vuelo es:",
+      "options": [
+        "Seguir volando si el avión rueda recto",
+        "Inflar más los neumáticos",
+        "Que mantenimiento revise tren, fuselaje y bancada, aunque no se vea daño",
+        "Cambiar solo las pastillas de freno"
+      ],
+      "correct": 2,
+      "why": "Las cargas fuera del diseño pueden dejar arrugas, grietas o deformaciones que no se ven a simple vista.",
+      "whyNot": [
+        "Un daño estructural puede no afectar al rodaje a simple vista.",
+        "La presión no es la solución a un daño estructural.",
+        null,
+        "Los frenos no son el elemento afectado."
+      ],
+      "ref": "Curso; PHAK cap. 6"
     }
   ],
   "cards": [
@@ -523,6 +838,16 @@
       "id": "c.020.02.06",
       "front": "Velocidad de aquaplaning",
       "back": "≈ 9 × √(presión en psi), en kt"
+    },
+    {
+      "id": "c.020.02.07",
+      "front": "Aterrizaje sobre la rueda de morro",
+      "back": "La pata de morro solo guía y rota; el toque debe ser con las principales, cerca del CG"
+    },
+    {
+      "id": "c.020.02.08",
+      "front": "Cargas del tren",
+      "back": "Máximas en el toque (impacto y rozamiento); torsión en las ruedas principales al virar; 4 o 6 ruedas por pata en aviones grandes"
     }
   ]
 }

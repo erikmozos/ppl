@@ -1,0 +1,812 @@
+{
+  "lesson": {
+    "id": "020.25",
+    "title": "Sistemas neumáticos, aire acondicionado y presurización",
+    "summary": "Sistema neumático frente al hidráulico, aplicaciones, aire acondicionado en aviones no presurizados (aire de impacto y calefactor por escape, con el riesgo de CO) y presurizados (sobrealimentador y aire de sangrado), altitud de cabina, velocidad vertical y presión diferencial, control con válvulas de salida y dispositivos de seguridad.",
+    "course": "Tema 3 · Sistemas neumáticos y presurización",
+    "objectives": [
+      "Comparar el sistema neumático con el hidráulico y citar las aplicaciones del aire comprimido",
+      "Describir el aire acondicionado de un avión no presurizado y el riesgo de monóxido de carbono con calefactor por escape",
+      "Explicar los dos métodos de presurización y por qué hace falta (hipoxia)",
+      "Definir altitud de cabina, velocidad vertical de cabina y presión diferencial y calcular con ellas",
+      "Describir el control de la presión con las válvulas de salida y los dispositivos de seguridad"
+    ],
+    "sections": [
+      {
+        "title": "Qué es un sistema neumático",
+        "text": [
+          "Un **sistema neumático** usa **aire o gas comprimido** para accionar componentes del avión. Funciona casi igual que uno hidráulico, con un fluido confinado que transmite la potencia, con la diferencia de que el fluido es **aire** y no un líquido. Se emplea para arrancar motores, acondicionar el aire, presurizar, deshelar y accionar algunos mecanismos.",
+          "La comparación con el hidráulico se resume en una tabla: lo que se gana en peso y sencillez se paga en precisión y en lo difícil que es detectar una fuga. La causa de fondo es la **compresibilidad** del aire: comprimirlo almacena energía como un muelle, y por eso transmite menos potencia por unidad de fluido y se mueve con menos exactitud."
+        ],
+        "table": {
+          "caption": "Neumático frente a hidráulico",
+          "head": [
+            "",
+            "Neumático (aire)",
+            "Hidráulico (líquido)"
+          ],
+          "rows": [
+            [
+              "Peso",
+              "Menor",
+              "Mayor"
+            ],
+            [
+              "Coste",
+              "Menor",
+              "Mayor"
+            ],
+            [
+              "Tuberías",
+              "Menos; no necesita retorno a la bomba",
+              "Más: circuito de ida y de vuelta"
+            ],
+            [
+              "Fugas",
+              "Menos peligrosas, pero difíciles de detectar",
+              "Fáciles de ver y más peligrosas (fluido inflamable o tóxico)"
+            ],
+            [
+              "Presión disponible",
+              "Menor",
+              "Mayor"
+            ],
+            [
+              "Precisión",
+              "Menor, por la compresibilidad del gas",
+              "Mayor"
+            ]
+          ],
+          "src": "Curso; PHAK cap. 7"
+        },
+        "ideas": [
+          "Empujar con una jeringuilla llena de agua mueve el émbolo al instante; con una llena de aire, el émbolo «patina» porque el aire se comprime primero.",
+          "Un neumático de bici es un sistema neumático: ligero, barato y blando, pero no te fías de él para algo que exige precisión."
+        ]
+      },
+      {
+        "title": "Aplicaciones del aire comprimido",
+        "text": [
+          "El aire comprimido (muchas veces aire de sangrado, ver más abajo) sirve para muchas funciones, sobre todo en aviones de línea:"
+        ],
+        "bullets": [
+          "**Acondicionamiento de aire** y **presurización** de la cabina.",
+          "**Antihielo** de perfiles aerodinámicos y de motores.",
+          "**Motores de turbina de aire**, como los arrancadores.",
+          "**Presurización del depósito hidráulico** y del de agua potable.",
+          "**Inversores de empuje**.",
+          "Accionamiento de **flaps y slats** de borde de ataque y de salida."
+        ],
+        "ideas": [
+          "Piensa en el aire comprimido como la navaja suiza de un avión de línea: una sola fuente, muchas herramientas."
+        ]
+      },
+      {
+        "title": "Aire acondicionado en aviones no presurizados",
+        "text": [
+          "En un avión **no presurizado** se usa **aire de impacto (ram air)**: aire exterior que entra por una toma y se usa para **ventilar** y **calentar** la cabina. Para calentarlo en invierno, el aire de impacto pasa por un **calefactor**, que puede ser **por escape** (el aire rodea el tubo de escape caliente) o **de combustión** (un pequeño quemador independiente), y se **mezcla** en proporciones variables con aire frío para lograr una temperatura agradable.",
+          "Aquí está el riesgo que conoces del PA-28 y del C172: si el intercambiador del escape se agrieta, los **gases de escape** pasan al aire de la cabina y traen **monóxido de carbono (CO)**. El aire de impacto no debe contaminarse nunca con gases de escape. El CO es **incoloro e inodoro** y se une a la hemoglobina mucho mejor que el oxígeno, de modo que produce hipoxia sin que lo notes: dolor de cabeza, somnolencia, mareo y, por último, pérdida de consciencia."
+        ],
+        "bullets": [
+          "Antes de volar en invierno, revisa que haya un **detector de CO** (las tarjetas que cambian de color son baratas) y que no esté caducado.",
+          "Si sospechas de CO: **cierra la calefacción**, **abre la ventilación** y los ventiletes, pasa a oxígeno si lo hay, y **desciende y aterriza** lo antes posible. No esperes a «ver si se pasa».",
+          "Tras el aterrizaje, el avión no vuela hasta que mantenimiento revise el sistema de escape y la calefacción."
+        ],
+        "ideas": [
+          "El CO es el invitado silencioso: no tiene olor ni color y te va quitando la capacidad de darte cuenta de que algo va mal.",
+          "Calentar la cabina con aire que ha rodeado el escape es como calentarte las manos en una estufa de leña: bien si la estufa está sana, peligroso si tiene fugas."
+        ],
+        "note": {
+          "kind": "warn",
+          "text": "Un detector de CO a bordo es una ayuda, no una garantía: si tienes dolor de cabeza y olor a humo o a combustible en cabina con la calefacción puesta, actúa como si hubiera CO."
+        }
+      },
+      {
+        "title": "Aviones presurizados: sobrealimentador de cabina y aire de sangrado",
+        "text": [
+          "Hay dos métodos para meter aire en una cabina presurizada. El primero, usado en aviones antiguos o de pistón, es el **sobrealimentador de cabina accionado por el motor** (engine-driven cabin supercharger o blower): un compresor movido por el motor comprime el aire exterior y lo envía a la cabina.",
+          "El segundo, el de los aviones a reacción, es el **aire de sangrado del motor** (bleed air): se extrae aire de **gran caudal y baja presión** del **compresor de baja presión** (LP) o del de presión intermedia, y, si hace falta, también del de alta (HP). La **válvula de corte de alta presión (HPSOV, High Pressure Shut-Off Valve)** es sensible a la presión y de accionamiento neumático: permanece **abierta cuando el aire de baja presión es insuficiente** para el caudal necesario, de modo que el sistema coge aire del compresor HP, más caliente, solo cuando lo necesita. Ese aire se enfría y se acondiciona antes de entrar a la cabina."
+        ],
+        "ideas": [
+          "El sobrealimentador es una bomba de bici que mueve el motor. El sangrado es un grifo que abres del aire que el motor ya ha comprimido para sí mismo.",
+          "La HPSOV es el interruptor de «reserva»: si el depósito principal (LP) no da suficiente, abre el segundo (HP)."
+        ]
+      },
+      {
+        "title": "Presurización: por qué y para qué",
+        "text": [
+          "Los aviones de línea vuelan alto porque ahí son **más eficientes**, evitan el peor tiempo y, con las altas razones de ascenso y descenso, llegan rápido. Pero al subir **baja la presión** y por encima de cierta altitud el aire ya no basta para respirar con normalidad: aparece la **hipoxia**, una falta de oxígeno en el organismo que reduce la concentración, provoca pérdida de consciencia y puede causar la muerte. La **presurización** mantiene dentro de la cabina una presión parecida a la de altitudes bajas, aunque se esté en crucero a más de **30 000 ft**, y permite moverse con normalidad **sin oxígeno suplementario**.",
+          "Según el curso, en aviones no presurizados la hipoxia puede aparecer volando por encima de **10 000 ft de día y 5 000 ft de noche**. En tu avión ligero esto significa que, **si subes por encima de esas altitudes**, la presurización no te protege: tienes que gestionar el oxígeno tú."
+        ],
+        "table": {
+          "caption": "Oxígeno en aviones no presurizados (Part-NCO)",
+          "head": [
+            "Altitud de presión en cabina",
+            "Qué hace la tripulación (NCO.OP.190)"
+          ],
+          "rows": [
+            [
+              "Por encima de 13 000 ft",
+              "Oxígeno suplementario siempre"
+            ],
+            [
+              "Entre 10 000 y 13 000 ft",
+              "Oxígeno si el vuelo a esa altitud dura más de 30 minutos"
+            ],
+            [
+              "Por debajo de 10 000 ft",
+              "No es obligatorio, aunque de noche la visión empeora desde unos 5 000 ft"
+            ]
+          ],
+          "src": "NCO.OP.190"
+        },
+        "verify": true,
+        "note": {
+          "kind": "tip",
+          "text": "Las cifras de 10 000 y 5 000 ft son las del curso y las habituales en factores humanos; la obligación reglamentaria de uso de oxígeno (Part-NCO) es la de la tabla. En la práctica, el piloto privado en España rara vez vuela tan alto con un PA-28 o un C172, pero hay que conocer la regla."
+        },
+        "ideas": [
+          "Subir a 10 000 ft sin presurizar es como correr con una mascarilla: puedes, pero te cansas antes y piensas peor sin darte cuenta.",
+          "Sin presurización, el propio piloto es la «cabina presurizada»: depende del oxígeno de la botella."
+        ]
+      },
+      {
+        "title": "Altitud de cabina, velocidad vertical de cabina y presión diferencial",
+        "text": [
+          "La **altitud de cabina** es la altitud a la que equivale la presión del interior. Normalmente se mantiene en torno a **8 000 ft** y en algunos aviones más modernos en torno a **5 000 ft**, para mayor confort. Lo más cómodo sería mantener la cabina a la altitud del aeropuerto de salida, pero eso provocaría una **presión diferencial** (interior menos exterior) enorme, y un esfuerzo excesivo sobre el fuselaje: es el motivo estructural de que la cabina no sea de nivel del mar.",
+          "La **velocidad vertical de cabina** es la razón de ascenso o descenso del interior, y se mantiene sobre **500 ft/min** (por confort de los oídos) con independencia de lo que haga el avión."
+        ],
+        "figure": "svg:020-altitud-cabina",
+        "caption": "A FL350 con la cabina a 8 000 ft: la presión diferencial es de unos 7,5 psi",
+        "formulas": [
+          {
+            "f": "Presión diferencial = presión de cabina − presión exterior",
+            "note": "Se mide en psi; el fuselaje está diseñado para un diferencial máximo."
+          }
+        ],
+        "examples": [
+          {
+            "q": "En crucero a FL350 la presión exterior es de unos 3,5 psi y la de una cabina a 8 000 ft, de unos 10,9 psi. ¿Cuál es la presión diferencial?",
+            "a": "10,9 − 3,5 ≈ 7,4 psi (unos 7,5 psi): es lo que el fuselaje soporta en cada vuelo."
+          },
+          {
+            "q": "La cabina baja de 8 000 ft al nivel del mar a 500 ft/min. ¿Cuánto dura el descenso de cabina?",
+            "a": "8 000 / 500 = 16 minutos. Si el avión desciende a 2 000 ft/min desde FL350 tarda unos 17,5 minutos: la cabina va a su ritmo y se programa para llegar a tierra a la vez."
+          }
+        ],
+        "ideas": [
+          "La presión diferencial es lo que pasa en un globo: dentro hay más presión que fuera, y la goma lo aguanta si no se infla demasiado.",
+          "El oído es el que manda: por eso los 500 ft/min de cabina son lentos aunque el avión baje a 2000 ft/min."
+        ]
+      },
+      {
+        "title": "Control de la presurización y válvulas de salida",
+        "text": [
+          "La presión de cabina se controla con un **flujo másico constante** de aire que entra (lo suministra el sistema de aire acondicionado a través del **controlador de flujo másico**) y una **tasa de descarga variable** hacia la atmósfera por las **válvulas de salida (outflow valves)**. Si **cierras** la válvula, sale menos aire y **sube** la presión de cabina; si la **abres**, sale más aire y **baja**.",
+          "En modo **automático** las gobierna el **controlador de presión**, que sigue un programa de altitud de cabina y de velocidad vertical; en modo **manual** las gobierna la **tripulación**. El mismo principio se usa para subir o bajar la cabina: no se cambia lo que entra, sino lo que sale."
+        ],
+        "figure": "svg:020-presurizacion-control",
+        "caption": "El aire entra a caudal constante; la válvula de salida regula la presión; las válvulas de alivio y el panel protegen la estructura",
+        "ideas": [
+          "Piensa en una bañera con el grifo siempre abierto al mismo caudal: si cierras el desagüe, el nivel (la presión) sube; si lo abres, baja.",
+          "El controlador de presión es el piloto automático de la bañera; el modo manual es tú con la mano en el desagüe."
+        ]
+      },
+      {
+        "title": "Dispositivos de seguridad",
+        "text": [
+          "Una cabina presurizada tiene varias protecciones para que ni el exceso de presión ni la falta de ella dañen la estructura:"
+        ],
+        "table": {
+          "caption": "Protecciones de la presurización",
+          "head": [
+            "Dispositivo",
+            "Qué hace"
+          ],
+          "rows": [
+            [
+              "Válvula de alivio de sobrepresión (hacia el exterior)",
+              "Libera la sobrepresión cuando se supera la presión diferencial máxima del tipo de avión"
+            ],
+            [
+              "Válvula de alivio hacia el interior (de presión negativa)",
+              "Se abre cuando la presión exterior supera a la interior entre 0,5 y 1,0 psi, para evitar un diferencial negativo excesivo"
+            ],
+            [
+              "Válvula de descarga (dump valve)",
+              "Manual: la tripulación reduce la presión de cabina hasta cero en una emergencia"
+            ],
+            [
+              "Paneles de alivio (blow-out panels)",
+              "Entre el compartimento de pasajeros y el de carga: evitan diferencias excesivas, por ejemplo si se abre una puerta de carga en vuelo"
+            ]
+          ],
+          "src": "Curso"
+        },
+        "ideas": [
+          "La válvula de sobrepresión es la válvula de la olla a presión; la de presión negativa es como abrir el tapón de un bote al vacío.",
+          "Los paneles de alivio son los «fusibles» del suelo: ceden para que se igualen las presiones y no se parta la estructura."
+        ]
+      },
+      {
+        "title": "Zonas presurizadas y no presurizadas",
+        "text": [
+          "No todo el fuselaje se presuriza. La **envolvente presurizada** (el tubo del fuselaje) incluye la cabina de pasajeros, la cabina de vuelo y, en algunos casos, ciertos compartimentos de carga. Quedan **fuera** zonas como el radomo del morro, el hueco del tren, la bodega de cola y los carenados, que se ventilan o se igualan con la presión exterior. Las puertas de tipo tapón (plug) se cierran **hacia dentro** del hueco para que la presión las apriete aún más contra su marco."
+        ],
+        "verify": true,
+        "ideas": [
+          "La zona presurizada es la habitación calentita de una casa; el garaje y el tejado están fuera de la calefacción."
+        ]
+      },
+      {
+        "title": "Despresurización: qué hacer",
+        "text": [
+          "Una despresurización puede ser **gradual** (la cabina sube lentamente por una fuga o un fallo de control) o **rápida** (una rotura de puerta, ventanilla o estructura), con ruido, niebla y salida de objetos. El tiempo útil de conciencia a gran altitud es de **segundos a pocos minutos**, así que lo primero es **ponerse la máscara de oxígeno** y después **descender** a una altitud segura (en torno a 10 000 ft, o a la mínima segura) según el procedimiento del avión.",
+          "Para ti, piloto de avión ligero, la lección es la misma, a pequeña escala: si sientes hipoxia por altitud, **desciende**; si sientes síntomas por CO, **abre ventilación, cierra calefacción y desciende y aterriza**."
+        ],
+        "verify": true
+      }
+    ],
+    "outline": [
+      {
+        "title": "Neumático",
+        "items": [
+          "Aire comprimido como fluido",
+          "Menos peso, coste y tuberías; sin retorno",
+          "Fugas difíciles de detectar; menor presión y precisión",
+          "Aplicaciones: aire, presurización, antihielo, arranque, flaps"
+        ]
+      },
+      {
+        "title": "No presurizado",
+        "items": [
+          "Aire de impacto (ram air)",
+          "Calefactor por escape o de combustión",
+          "Riesgo: CO por fuga de escape",
+          "Respuesta: calefacción cerrada, ventilación, descenso"
+        ]
+      },
+      {
+        "title": "Presurizado",
+        "items": [
+          "Sobrealimentador accionado por el motor",
+          "Aire de sangrado: LP, IP y HP con HPSOV",
+          "Altitud de cabina 8 000 ft (o 5 000 ft)",
+          "Velocidad vertical de cabina 500 ft/min"
+        ]
+      },
+      {
+        "title": "Control",
+        "items": [
+          "Caudal constante de entrada",
+          "Válvula de salida: cerrar sube, abrir baja",
+          "Automático o manual",
+          "Presión diferencial limitada por la estructura"
+        ]
+      },
+      {
+        "title": "Seguridad e hipoxia",
+        "items": [
+          "Alivio de sobrepresión y hacia el interior (0,5–1 psi)",
+          "Válvula de descarga manual y paneles de alivio",
+          "Hipoxia: más de 10 000 ft de día, 5 000 ft de noche (curso)",
+          "Oxígeno: 13 000 ft siempre; 10 000–13 000 ft más de 30 min"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "Cerrar la válvula de salida = Cerrar el desagüe: la presión sube.",
+      "Cabina: 8 000 ft y 500 ft/min; el avión sube o baja deprisa, la cabina lo hace despacio para cuidar tus oídos.",
+      "CO: Cierra la calefacción, Orea la cabina y desciende.",
+      "Alivio interior 0,5 a 1 psi: «medio a uno».",
+      "HPSOV = High Pressure Shut-Off Valve: se abre cuando la presión baja no llega."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Por qué el sistema neumático es menos preciso que el hidráulico?",
+        "a": "Porque el aire es compresible: comprimirlo almacena energía como un muelle, así que transmite menos potencia por unidad de fluido y mueve con menos exactitud."
+      },
+      {
+        "q": "¿Cómo se calienta la cabina de un PA-28 y qué riesgo conlleva?",
+        "a": "Con aire de impacto que rodea el tubo de escape; si el intercambiador se agrieta, el CO entra en cabina y produce hipoxia sin olor ni color."
+      },
+      {
+        "q": "Sospechas de CO en vuelo: ¿qué haces?",
+        "a": "Cierras la calefacción, abres la ventilación, usas oxígeno si lo hay, y desciendes y aterrizas lo antes posible."
+      },
+      {
+        "q": "¿Por qué no se mantiene la cabina a la altitud del aeropuerto de salida?",
+        "a": "Porque la presión diferencial con el exterior sería enorme y sobrecargaría el fuselaje."
+      },
+      {
+        "q": "¿Cómo controla la tripulación o el controlador la presión de cabina?",
+        "a": "Con un flujo de entrada constante y variando la salida con las válvulas de salida: cerrar sube la presión, abrir la baja."
+      },
+      {
+        "q": "¿Para qué sirven la válvula de alivio hacia el interior y la de sobrepresión?",
+        "a": "La de sobrepresión libera presión cuando se supera el diferencial máximo; la inversa se abre cuando fuera supera a dentro entre 0,5 y 1 psi."
+      },
+      {
+        "q": "¿Qué hacen la válvula de descarga y los paneles de alivio?",
+        "a": "La válvula de descarga, manual, lleva la presión de cabina a cero en emergencia; los paneles de alivio igualan presiones entre pasaje y carga."
+      },
+      {
+        "q": "¿A partir de qué altitud exige Part-NCO oxígeno continuo en un avión no presurizado?",
+        "a": "Por encima de 13 000 ft siempre; entre 10 000 y 13 000 ft, si dura más de 30 minutos."
+      }
+    ],
+    "numbers": [
+      "Altitud de cabina típica: unos 8 000 ft (unos 5 000 ft en aviones modernos)",
+      "Velocidad vertical de cabina: unos 500 ft/min",
+      "Presión diferencial a FL350 con cabina a 8 000 ft: unos 7,5 psi",
+      "Válvula de alivio hacia el interior: se abre cuando fuera supera a dentro por 0,5 a 1 psi",
+      "Hipoxia en no presurizados: sobre 10 000 ft de día y 5 000 ft de noche (curso)",
+      "Oxígeno (NCO.OP.190): 13 000 ft siempre; 10 000–13 000 ft si dura más de 30 min"
+    ],
+    "traps": [
+      "Pensar que cerrar la válvula de salida baja la presión: la sube.",
+      "Confundir la válvula de descarga manual con la de alivio de sobrepresión, que es automática.",
+      "Creer que el CO se huele: es incoloro e inodoro.",
+      "Pensar que el aire de impacto sale ya caliente: se calienta con un calefactor y se mezcla.",
+      "Confundir altitud de cabina (presión interior) con altitud del avión.",
+      "Creer que el sistema neumático es más preciso que el hidráulico: es menos, por la compresibilidad."
+    ],
+    "sources": [
+      {
+        "title": "EASA CS-25 (CS 25.841 Pressurised cabins) y Part-NCO (NCO.OP.190 Use of supplemental oxygen)",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules"
+      },
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 7",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "Material del curso: Sistemas neumáticos (ATPLENJOY/DREAMAIR)"
+      }
+    ],
+    "reviewed": "2026-11-17",
+    "links": [
+      {
+        "label": "Procedimiento de arranque del PA-28",
+        "href": "#/ac/pa28/flow/start"
+      },
+      {
+        "label": "Prevuelo del C172",
+        "href": "#/ac/c172/flow/preflight"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "020.25.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "Una ventaja de un sistema neumático frente a uno hidráulico es:",
+      "options": [
+        "Menor peso y no necesita retorno del fluido a la bomba",
+        "Mayor precisión de movimiento",
+        "Mayor presión disponible",
+        "Fugas siempre fáciles de detectar"
+      ],
+      "correct": 0,
+      "why": "El aire comprimido da instalaciones más ligeras y baratas, con menos tuberías y sin circuito de retorno.",
+      "whyNot": [
+        null,
+        "El gas es compresible: la precisión es menor.",
+        "El hidráulico dispone de más presión.",
+        "En el neumático las fugas son difíciles de detectar."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.25.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una desventaja del sistema neumático es:",
+      "options": [
+        "Mayor peso",
+        "Mayor coste",
+        "Menor precisión por la compresibilidad del gas",
+        "Necesidad de un depósito de retorno"
+      ],
+      "correct": 2,
+      "why": "Al comprimirse, el aire transmite menos potencia por unidad de fluido y mueve con menos exactitud.",
+      "whyNot": [
+        "Es más ligero, no más pesado.",
+        "Es más barato.",
+        null,
+        "No necesita retorno."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.25.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Cuál de estas es una aplicación del aire comprimido en un avión de línea?",
+      "options": [
+        "Alimentación de las luces de navegación",
+        "Accionamiento de los inversores de empuje",
+        "Brújula magnética",
+        "Calefacción del pitot por aire"
+      ],
+      "correct": 1,
+      "why": "Entre las aplicaciones están el aire acondicionado, la presurización, el antihielo y los inversores de empuje.",
+      "whyNot": [
+        "Las luces usan electricidad.",
+        null,
+        "La brújula es magnética, sin aire.",
+        "El calentador del pitot es eléctrico."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.25.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un avión no presurizado con calefacción por escape, el principal riesgo es:",
+      "options": [
+        "Que la cabina se presurice demasiado",
+        "Que el aire de impacto sea demasiado frío",
+        "Que falle el controlador de presión",
+        "Que gases de escape contaminen la cabina con monóxido de carbono"
+      ],
+      "correct": 3,
+      "why": "Si el intercambiador del escape tiene una fuga, entra CO en la cabina; el aire de impacto no debe contaminarse con escape.",
+      "whyNot": [
+        "Un avión no presurizado no tiene presurización.",
+        "No es el riesgo propio de la calefacción.",
+        "Ese avión no tiene controlador de presión.",
+        null
+      ],
+      "ref": "Curso; PHAK cap. 7"
+    },
+    {
+      "id": "020.25.005",
+      "type": "concepto",
+      "level": 2,
+      "q": "El monóxido de carbono en cabina es especialmente peligroso porque:",
+      "options": [
+        "Es incoloro e inodoro y produce hipoxia sin que el piloto lo note",
+        "Huele a combustible y se detecta fácilmente",
+        "Solo aparece con la calefacción apagada",
+        "Es más pesado que el aire y no entra en cabina"
+      ],
+      "correct": 0,
+      "why": "El CO no se ve ni se huele y desplaza el oxígeno de la sangre, así que los síntomas llegan sin aviso claro.",
+      "whyNot": [
+        null,
+        "No huele a nada.",
+        "Aparece con la calefacción por escape en marcha, no apagada.",
+        "Entra en cabina por el sistema de aire, no por gravedad."
+      ],
+      "ref": "PHAK cap. 17"
+    },
+    {
+      "id": "020.25.006",
+      "type": "regla",
+      "level": 2,
+      "q": "Si sospechas de monóxido de carbono volando un avión ligero con calefacción por escape, lo correcto es:",
+      "options": [
+        "Subir más para respirar mejor",
+        "Aumentar la calefacción para disipar el gas",
+        "Cerrar la calefacción, abrir la ventilación y aterrizar cuanto antes",
+        "Continuar y avisar a mantenimiento al llegar"
+      ],
+      "correct": 2,
+      "why": "Hay que cortar la fuente (calefacción), ventilar con aire exterior y bajar a tierra lo antes posible.",
+      "whyNot": [
+        "Subir agrava la hipoxia.",
+        "Más calefacción introduce más gases.",
+        null,
+        "Seguir con CO puede provocar pérdida de consciencia."
+      ],
+      "ref": "PHAK cap. 17"
+    },
+    {
+      "id": "020.25.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "El método de presurización por aire de sangrado del motor extrae aire:",
+      "options": [
+        "De bajo caudal y alta presión de la cámara de combustión",
+        "De gran caudal y baja presión, normalmente del compresor de baja o intermedia presión",
+        "Del escape del motor",
+        "Del depósito de combustible"
+      ],
+      "correct": 1,
+      "why": "El aire de sangrado sale de los compresores, sobre todo el de baja presión (LP) o el de presión intermedia, y puede tomarse del de alta si hace falta.",
+      "whyNot": [
+        "La cámara de combustión no es la fuente.",
+        null,
+        "El escape contiene gases quemados.",
+        "El depósito de combustible no suministra aire a la cabina."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.25.008",
+      "type": "concepto",
+      "level": 3,
+      "q": "La válvula de corte de alta presión (HPSOV) del sistema de sangrado permanece abierta cuando:",
+      "options": [
+        "El avión está en tierra con motores parados únicamente",
+        "La presión de cabina supera el máximo",
+        "La tripulación activa la válvula de descarga",
+        "La presión del aire del sistema de baja presión es insuficiente para el caudal necesario"
+      ],
+      "correct": 3,
+      "why": "Es neumática y sensible a la presión: si el aire LP no alcanza, se abre y toma aire del compresor de alta.",
+      "whyNot": [
+        "No depende de si los motores están parados.",
+        "Ese caso lo gestionan las válvulas de alivio.",
+        "La válvula de descarga es otro componente.",
+        null
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.25.009",
+      "type": "regla",
+      "level": 2,
+      "q": "La altitud de cabina normal en un avión de línea presurizado es de unos:",
+      "options": [
+        "8 000 ft",
+        "2 000 ft",
+        "20 000 ft",
+        "Igual a la del aeropuerto de salida siempre"
+      ],
+      "correct": 0,
+      "why": "Se mantiene en torno a 8 000 ft, y en algunos aviones modernos en torno a 5 000 ft, por confort.",
+      "whyNot": [
+        null,
+        "2 000 ft supondría una presión diferencial excesiva.",
+        "20 000 ft produciría hipoxia.",
+        "Mantener siempre la altitud del aeropuerto cargaría demasiado el fuselaje."
+      ],
+      "ref": "Curso; CS 25.841"
+    },
+    {
+      "id": "020.25.010",
+      "type": "regla",
+      "level": 1,
+      "q": "La velocidad vertical de cabina se mantiene normalmente en torno a:",
+      "options": [
+        "50 ft/min",
+        "500 ft/min",
+        "2 000 ft/min",
+        "10 000 ft/min"
+      ],
+      "correct": 1,
+      "why": "Un valor próximo a 500 ft/min da el máximo confort, con independencia de la velocidad vertical del avión.",
+      "whyNot": [
+        "Es demasiado lenta.",
+        null,
+        "Es la velocidad vertical típica del avión, no la de cabina.",
+        "Sería incómodo y peligroso para los oídos."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.25.011",
+      "type": "calculo",
+      "level": 2,
+      "q": "La cabina de un avión baja de 8 000 ft al nivel del mar a 500 ft/min. ¿Cuánto tarda?",
+      "options": [
+        "4 minutos",
+        "8 minutos",
+        "16 minutos",
+        "40 minutos"
+      ],
+      "correct": 2,
+      "why": "8 000 ft / 500 ft/min = 16 minutos.",
+      "whyNot": [
+        "Resulta de dividir por 2 000.",
+        "Divide por 1 000.",
+        null,
+        "Divide por 200."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.25.012",
+      "type": "calculo",
+      "level": 3,
+      "q": "A FL350 la presión exterior es de 3,5 psi y la interior de 10,9 psi. La presión diferencial es de:",
+      "options": [
+        "14,4 psi",
+        "3,5 psi",
+        "10,9 psi",
+        "7,4 psi"
+      ],
+      "correct": 3,
+      "why": "Diferencial = interior − exterior = 10,9 − 3,5 = 7,4 psi.",
+      "whyNot": [
+        "Suma las presiones en lugar de restar.",
+        "Solo es la presión exterior.",
+        "Solo es la presión interior.",
+        null
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.25.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "Para aumentar la presión de cabina con el sistema en automático o manual, la acción sobre la válvula de salida es:",
+      "options": [
+        "Abrirla, para que salga más aire",
+        "Cerrarla, para que salga menos aire",
+        "Dejarla fija y aumentar la altitud",
+        "Abrir la válvula de descarga"
+      ],
+      "correct": 1,
+      "why": "La válvula de salida regula el caudal que sale: al cerrarla sube la presión de cabina; al abrirla, baja.",
+      "whyNot": [
+        "Abrirla baja la presión.",
+        null,
+        "La altitud no sube la presión interior.",
+        "La válvula de descarga baja la presión a cero."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.25.014",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Por qué no se mantiene la cabina a la altitud del aeropuerto de salida?",
+      "options": [
+        "Porque los pasajeros prefieren aire frío",
+        "Porque los motores no dan aire suficiente",
+        "Porque lo impide la ley de Boyle",
+        "Porque la presión diferencial sería excesiva y sobrecargaría el fuselaje"
+      ],
+      "correct": 3,
+      "why": "Cuanto más baja la altitud de cabina, mayor la diferencia con la presión exterior y mayor el esfuerzo estructural.",
+      "whyNot": [
+        "No es una cuestión de preferencia.",
+        "Los motores dan aire suficiente.",
+        "No es una cuestión de leyes físicas, sino estructural.",
+        null
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.25.015",
+      "type": "regla",
+      "level": 2,
+      "q": "La válvula de alivio hacia el interior se abre cuando la presión exterior supera a la interior en:",
+      "options": [
+        "Entre 0,5 y 1,0 psi",
+        "Entre 5 y 10 psi",
+        "Más de 50 psi",
+        "Exactamente 0 psi"
+      ],
+      "correct": 0,
+      "why": "Evita un diferencial negativo excesivo: se abre con una diferencia pequeña, de 0,5 a 1,0 psi.",
+      "whyNot": [
+        null,
+        "Sería un valor demasiado alto.",
+        "Un valor así dañaría la estructura.",
+        "Se abre cuando la diferencia ya es apreciable."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.25.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "La válvula de descarga (dump valve) de una cabina presurizada es:",
+      "options": [
+        "Un componente automático que mantiene constante la presión",
+        "La válvula que protege de un diferencial negativo",
+        "Un componente manual que permite bajar la presión de cabina a cero",
+        "El dispositivo que abre la puerta de carga"
+      ],
+      "correct": 2,
+      "why": "La tripulación la acciona en emergencia para reducir la presión a cero.",
+      "whyNot": [
+        "Esa es la función de las válvulas de salida con el controlador.",
+        "Esa es la válvula de alivio hacia el interior.",
+        null,
+        "No tiene que ver con la puerta de carga."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.25.017",
+      "type": "concepto",
+      "level": 2,
+      "q": "Los paneles de alivio (blow-out panels) entre pasajeros y carga sirven para:",
+      "options": [
+        "Iluminar la bodega",
+        "Evitar diferencias excesivas de presión entre ambos compartimentos",
+        "Mantener la cabina presurizada siempre",
+        "Aumentar la altitud de cabina"
+      ],
+      "correct": 1,
+      "why": "Si, por ejemplo, se abre una puerta de carga en vuelo, el panel cede e iguala las presiones, protegiendo el suelo.",
+      "whyNot": [
+        "No son luminarias.",
+        null,
+        "Ceden para igualar presiones, no para mantener la presión.",
+        "No influyen en la altitud de cabina."
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.25.018",
+      "type": "concepto",
+      "level": 1,
+      "q": "La hipoxia es:",
+      "options": [
+        "Un exceso de oxígeno en la sangre",
+        "Un aumento de la presión de cabina",
+        "La contaminación de la cabina por escape",
+        "La falta de oxígeno en el organismo por baja presión del aire"
+      ],
+      "correct": 3,
+      "why": "A gran altitud la presión del aire es insuficiente y el cuerpo no recibe oxígeno suficiente: baja la concentración y llega la pérdida de consciencia.",
+      "whyNot": [
+        "Eso es lo contrario.",
+        "La hipoxia no es un exceso de presión.",
+        "Eso describiría una intoxicación por CO, no la definición de hipoxia.",
+        null
+      ],
+      "ref": "Curso"
+    },
+    {
+      "id": "020.25.019",
+      "type": "regla",
+      "level": 3,
+      "q": "Según Part-NCO, en un avión no presurizado la tripulación debe usar oxígeno suplementario siempre por encima de:",
+      "options": [
+        "13 000 ft de altitud de presión en cabina",
+        "5 000 ft",
+        "8 000 ft",
+        "18 000 ft"
+      ],
+      "correct": 0,
+      "why": "NCO.OP.190: por encima de 13 000 ft siempre; entre 10 000 y 13 000 ft cuando se supera una duración de 30 minutos.",
+      "whyNot": [
+        null,
+        "5 000 ft es una referencia de visión nocturna, no la obligación.",
+        "8 000 ft es la altitud de cabina típica de un avión de línea.",
+        "18 000 ft supera el límite reglamentario."
+      ],
+      "ref": "NCO.OP.190"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c.020.25.01",
+      "front": "Neumático frente a hidráulico",
+      "back": "Neumático: más ligero y barato, sin retorno; pero menos preciso y fugas difíciles de detectar (aire compresible)"
+    },
+    {
+      "id": "c.020.25.02",
+      "front": "Riesgo de la calefacción por escape",
+      "back": "Monóxido de carbono en cabina: incoloro e inodoro; cerrar calefacción, ventilar y aterrizar"
+    },
+    {
+      "id": "c.020.25.03",
+      "front": "Altitud y velocidad vertical de cabina",
+      "back": "Altitud de cabina unos 8 000 ft (5 000 ft en modernos); velocidad vertical unos 500 ft/min"
+    },
+    {
+      "id": "c.020.25.04",
+      "front": "Válvula de salida",
+      "back": "Cerrarla sube la presión de cabina; abrirla la baja; automático (controlador) o manual"
+    },
+    {
+      "id": "c.020.25.05",
+      "front": "Válvulas de seguridad de la cabina",
+      "back": "Alivio de sobrepresión, alivio hacia el interior (0,5–1 psi), válvula de descarga manual y paneles de alivio"
+    },
+    {
+      "id": "c.020.25.06",
+      "front": "Oxígeno en no presurizados (NCO.OP.190)",
+      "back": "Siempre por encima de 13 000 ft; entre 10 000 y 13 000 ft si dura más de 30 minutos"
+    }
+  ]
+}

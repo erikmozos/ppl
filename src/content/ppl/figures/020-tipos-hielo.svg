@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300">
+<title>Tipos de hielo según la temperatura exterior, con los rangos del curso: transparente de 0 a −10 °C, escarchado de −10 a −20 °C, gotas subenfriadas hasta −40 °C (esquema propio)</title>
+<text x="320" y="24" class="tx b" text-anchor="middle">Temperatura exterior en nube con gotas de agua líquida</text>
+<rect x="40" y="50" width="560" height="30" class="sky"/>
+<text x="320" y="70" class="tx" text-anchor="middle">Gotas subenfriadas (líquidas por debajo de 0 °C)</text>
+<rect x="40" y="100" width="140" height="56" class="wa"/>
+<text x="110" y="124" class="txw b" text-anchor="middle">Hielo transparente</text>
+<text x="110" y="142" class="tx2" font-size="11" text-anchor="middle">(clear o glaze)</text>
+<rect x="180" y="100" width="140" height="56" class="ac"/>
+<text x="250" y="124" class="txa b" text-anchor="middle">Hielo escarchado</text>
+<text x="250" y="142" class="tx2" font-size="11" text-anchor="middle">(rime)</text>
+<rect x="320" y="100" width="280" height="56" class="soft"/>
+<text x="460" y="124" class="tx2" text-anchor="middle">Cada vez más frío:</text>
+<text x="460" y="142" class="tx2" text-anchor="middle">gotas más escasas</text>
+<line x1="40" y1="170" x2="600" y2="170" class="ln"/>
+<line x1="40" y1="164" x2="40" y2="176" class="ln"/>
+<line x1="180" y1="164" x2="180" y2="176" class="ln"/>
+<line x1="320" y1="164" x2="320" y2="176" class="ln"/>
+<line x1="600" y1="164" x2="600" y2="176" class="ln"/>
+<text x="40" y="194" class="tx" text-anchor="middle">0 °C</text>
+<text x="180" y="194" class="tx" text-anchor="middle">−10 °C</text>
+<text x="320" y="194" class="tx" text-anchor="middle">−20 °C</text>
+<text x="600" y="194" class="tx" text-anchor="middle">−40 °C</text>
+<text x="110" y="214" class="tx2" font-size="11" text-anchor="middle">Gotas grandes</text>
+<text x="110" y="228" class="tx2" font-size="11" text-anchor="middle">Nubes Cu, Ns, Sc</text>
+<text x="110" y="242" class="tx2" font-size="11" text-anchor="middle">Denso y difícil de quitar</text>
+<text x="250" y="214" class="tx2" font-size="11" text-anchor="middle">Gotas pequeñas</text>
+<text x="250" y="228" class="tx2" font-size="11" text-anchor="middle">Baja tasa de captación</text>
+<text x="250" y="242" class="tx2" font-size="11" text-anchor="middle">Frágil y fácil de quitar</text>
+<text x="500" y="214" class="tx2" font-size="11" text-anchor="middle">Por debajo de −40 °C las gotas</text>
+<text x="500" y="228" class="tx2" font-size="11" text-anchor="middle">ya son cristales y no se</text>
+<text x="500" y="242" class="tx2" font-size="11" text-anchor="middle">adhieren igual</text>
+<text x="320" y="282" class="tx2" font-size="11" text-anchor="middle">Rangos según el curso; otras fuentes dan márgenes algo distintos y una zona mixta</text>
+</svg>

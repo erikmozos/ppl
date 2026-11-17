@@ -2,146 +2,221 @@
   "lesson": {
     "id": "020.07",
     "title": "Electricidad básica",
-    "summary": "Tensión, corriente y resistencia, ley de Ohm, potencia, corriente continua y alterna, circuitos en serie y en paralelo, y magnetismo básico, con ejemplos resueltos y ejemplos de un avión ligero.",
+    "summary": "Átomo y electrones libres, corriente y su medida, efectos de la corriente, resistencia, ley de Ohm y potencia, circuitos en serie y paralelo, corriente continua y alterna, e imanes permanentes y temporales.",
     "objectives": [
-      "Definir tensión, corriente, resistencia y potencia y sus unidades",
-      "Aplicar la ley de Ohm y la fórmula de la potencia",
-      "Diferenciar corriente continua y alterna",
-      "Calcular resistencias equivalentes en serie y en paralelo y su efecto en corrientes y tensiones",
-      "Explicar las bases del magnetismo y la inducción, que explican el alternador y el magneto"
+      "Explicar qué es la corriente a partir del átomo, los electrones libres y los iones",
+      "Medir y convertir corrientes (A, mA, μA) y citar los tres efectos de la corriente",
+      "Definir la resistencia y aplicar la ley de Ohm y la fórmula de la potencia",
+      "Calcular resistencias y corrientes en circuitos en serie y en paralelo",
+      "Diferenciar corriente continua y alterna y sus ventajas",
+      "Distinguir imanes permanentes y temporales y cómo se pierde el magnetismo"
     ],
     "sections": [
       {
-        "title": "Tensión, corriente y resistencia",
+        "title": "El átomo, los electrones libres y los iones",
         "text": [
-          "La corriente eléctrica es un flujo de electrones por un conductor. Tres magnitudes la describen, y se entienden bien con la analogía del agua en una tubería."
+          "Toda la materia está hecha de átomos, y cada átomo tiene un **núcleo** con **protones** (carga positiva) y **neutrones** (sin carga), rodeado por **electrones** (carga negativa). Los electrones se quedan en sus órbitas porque los protones los atraen. Si el átomo tiene tantos protones como electrones, es **neutro**.",
+          "En los metales hay electrones muy poco ligados que se escapan con facilidad al átomo vecino: son los **electrones libres**. El átomo que suelta uno queda con carga positiva y es un **ión positivo (catión)**; el que lo recibe queda negativo y es un **ión negativo (anión)**. La **corriente eléctrica** no es más que el movimiento ordenado de esos electrones libres en una dirección."
+        ],
+        "ideas": [
+          "Un átomo neutro es como una sala de cine con tantos asientos como espectadores: cuando alguien se levanta y se va a la sala de al lado, la primera queda con un asiento libre (positiva) y la segunda con uno de más (negativa).",
+          "Los electrones libres son los alumnos que no se atan al pupitre: cualquier empujón y ya están en el asiento de al lado.",
+          "La corriente es una cola de gente que avanza toda en el mismo sentido; el desorden de cada uno por su cuenta no mueve a nadie hacia ninguna parte."
+        ]
+      },
+      {
+        "title": "Tensión, corriente y sus efectos",
+        "text": [
+          "La **tensión** (V, voltios) es lo que empuja a los electrones: la diferencia de potencial entre dos puntos. La **corriente** (símbolo **I**) es la cantidad de electrones que pasan por un punto del conductor en un segundo y se mide en **amperios (A)**. Se mide con un **amperímetro**, que se **intercala en serie** para que toda la corriente pase por él. En aviación se usan submúltiplos: un **miliamperio (mA)** es la milésima parte de un amperio y un **microamperio (μA)** es la millonésima.",
+          "El paso de corriente tiene tres efectos, y de ellos viven casi todos los sistemas del avión:"
         ],
         "table": {
-          "caption": "Magnitudes básicas",
+          "caption": "Efectos de la corriente eléctrica",
           "head": [
-            "Magnitud",
-            "Símbolo",
-            "Unidad",
-            "Analogía hidráulica"
+            "Efecto",
+            "Qué ocurre",
+            "Dónde lo ves"
           ],
           "rows": [
             [
-              "Tensión (voltaje)",
-              "V",
-              "voltio (V)",
-              "La presión del agua"
+              "Térmico",
+              "El conductor se calienta",
+              "Bombilla incandescente, calefactor del pitot, fusible"
             ],
             [
-              "Corriente (intensidad)",
-              "I",
-              "amperio (A)",
-              "El caudal de agua"
+              "Magnético",
+              "Aparece un campo magnético alrededor del conductor",
+              "Generador, alternador, relé, solenoide"
             ],
             [
-              "Resistencia",
-              "R",
-              "ohmio (Ω)",
-              "El estrechamiento de la tubería"
-            ],
-            [
-              "Potencia",
-              "P",
-              "vatio (W)",
-              "La energía por segundo del chorro"
+              "Químico",
+              "En un líquido conductor (electrolito) se produce una reacción con los metales sumergidos",
+              "La batería"
             ]
           ],
-          "src": "PHAK cap. 6"
+          "src": "Curso CGA, tema 6"
         },
-        "bullets": [
-          "Los aviones ligeros usan **corriente continua** a **14 V** (batería de 12 V y alternador) o **28 V** (batería de 24 V), según el modelo.",
-          "La **tensión** empuja a los electrones; la **resistencia** se opone al paso de la corriente."
+        "formulas": [
+          {
+            "f": "1 mA = 0,001 A    1 μA = 0,000001 A",
+            "note": "Para pasar de mA a A, divide entre 1000"
+          }
+        ],
+        "examples": [
+          {
+            "q": "Un instrumento consume 350 mA. ¿Cuántos amperios son?",
+            "a": "350 mA ÷ 1000 = 0,35 A."
+          }
+        ],
+        "ideas": [
+          "La tensión es la presión del agua en la manguera; la corriente es el caudal que sale por segundo (litros por segundo equivalen a amperios).",
+          "El amperímetro es como el contador de coches de un peaje: tiene que estar dentro de la carretera para contarlos; si lo pones en un camino paralelo no cuenta nada útil.",
+          "El efecto térmico es el de frotarte las manos: lo que pasa se nota en calor. El químico es el de la pila; el magnético, el del imán que se enciende cuando pasa corriente."
+        ]
+      },
+      {
+        "title": "Resistencia y ohmio",
+        "text": [
+          "Para que circule corriente hace falta un **circuito**, un camino completo y cerrado. Cuantas menos oposiciones haya en él, más corriente circula. A esa oposición se le llama **resistencia (R)**; su unidad es el **ohmio (Ω)** y se mide con un **ohmímetro** (con el circuito sin alimentar).",
+          "Con una tensión fija, **a menor resistencia, mayor corriente**; a mayor resistencia, menos corriente. Por eso la corriente de un circuito se regula cambiando la resistencia: con resistencias de valor conocido, **fijas o variables** (un potenciómetro, como el de la luz del panel, es una resistencia variable)."
+        ],
+        "ideas": [
+          "La resistencia es el estrechamiento de la manguera: cuanto más pellizcas, menos agua sale con la misma presión.",
+          "Es también un atasco en la autopista: con la misma gente queriendo salir, cuantos más carriles cortados, menos coches pasan por minuto.",
+          "Una resistencia variable es el grifo: lo abres y cierras para dar el caudal que quieres."
         ]
       },
       {
         "title": "Ley de Ohm y potencia",
         "text": [
-          "La **ley de Ohm** relaciona las tres magnitudes: a mayor tensión, mayor corriente; a mayor resistencia, menor corriente. La **potencia eléctrica** que consume un aparato es el producto de tensión por corriente."
+          "En un circuito cerrado la tensión, la corriente y la resistencia están ligadas por la **ley de Ohm**: **V = I × R**. Despejando, **I = V ÷ R** y **R = V ÷ I**. Con **R constante**, la corriente es **directamente proporcional a la tensión** (el doble de voltios, el doble de amperios). Con **V constante**, la corriente es **inversamente proporcional a la resistencia**.",
+          "La **potencia** que consume un aparato se calcula con **P = V × I**, en vatios (W). Combinándola con Ohm también vale **P = I² × R**.",
+          "Prueba la calculadora: cambia la tensión y la resistencia y observa cómo se mueven la corriente y la potencia."
         ],
+        "figure": "calc:ohm",
+        "caption": "Calculadora de la ley de Ohm, con una resistencia o con dos en serie o en paralelo.",
         "formulas": [
           {
             "f": "V = I × R",
-            "note": "Tensión (V) = corriente (A) × resistencia (Ω)."
+            "note": "Tensión (V) = corriente (A) × resistencia (Ω)"
+          },
+          {
+            "f": "I = V ÷ R",
+            "note": "Para saber cuánta corriente circula"
+          },
+          {
+            "f": "R = V ÷ I",
+            "note": "Para saber qué resistencia hay"
           },
           {
             "f": "P = V × I",
-            "note": "Potencia (W) = tensión (V) × corriente (A); también P = I² × R = V² ÷ R."
+            "note": "Potencia en vatios"
           }
         ],
         "examples": [
           {
-            "q": "Una lámpara de 28 V consume 2 A. ¿Qué resistencia tiene y qué potencia disipa?",
-            "a": "R = V ÷ I = 28 ÷ 2 = 14 Ω. P = V × I = 28 × 2 = 56 W."
+            "q": "Una resistencia de 10 Ω está conectada a una batería de 24 V. ¿Qué corriente circula?",
+            "a": "I = V ÷ R = 24 ÷ 10 = 2,4 A."
           },
           {
-            "q": "Una radio conectada a 14 V consume 140 W. ¿Qué corriente circula?",
-            "a": "I = P ÷ V = 140 ÷ 14 = 10 A. El disyuntor de ese circuito tiene que ser de más de 10 A y protege el cableado."
+            "q": "Una radio de 70 W está conectada a 14 V. ¿Qué corriente consume?",
+            "a": "Despeja de P = V × I: I = P ÷ V = 70 ÷ 14 = 5 A."
           },
           {
-            "q": "¿Qué ocurre con la corriente si se duplica la resistencia con la misma tensión?",
-            "a": "Se reduce a la mitad (I = V ÷ R)."
+            "q": "Un calefactor de pitot toma 7 A a 14 V. ¿Qué resistencia tiene y qué potencia disipa?",
+            "a": "R = V ÷ I = 14 ÷ 7 = 2 Ω. P = V × I = 14 × 7 = 98 W."
+          },
+          {
+            "q": "Con la misma batería de 24 V, cambias la resistencia de 10 Ω a 20 Ω. ¿Qué pasa con la corriente?",
+            "a": "I = 24 ÷ 20 = 1,2 A. Al duplicar R, la corriente pasa de 2,4 A a 1,2 A: la mitad."
           }
-        ]
-      },
-      {
-        "title": "Corriente continua y alterna",
-        "text": [
-          "En la **corriente continua (CC)**, los electrones circulan siempre en el mismo sentido. La dan las baterías y se usa en casi todos los sistemas de un avión ligero. En la **corriente alterna (CA)**, el sentido y el valor cambian de forma periódica, con una **frecuencia** en hercios (Hz). El **alternador** de un avión ligero genera en realidad CA, que **rectifica** (convierte en CC) con diodos antes de distribuirla (020.08). Las redes domésticas europeas usan CA a 50 Hz; en aviones grandes se usa CA a 400 Hz.",
-          "Un **diodo** deja pasar la corriente solo en un sentido: es la pieza que rectifica. Un **condensador** almacena carga y filtra variaciones; una **bobina** se opone a los cambios de corriente."
-        ]
-      },
-      {
-        "title": "Circuitos en serie y en paralelo",
-        "text": [
-          "En un circuito en **serie**, los elementos se conectan uno detrás de otro: la corriente es **la misma** en todos y la tensión se **reparte**. La resistencia equivalente es la **suma**. En un circuito en **paralelo**, los elementos se conectan entre los mismos dos puntos: la tensión es **la misma** en todos y la corriente se **reparte**. La resistencia equivalente es **menor** que la menor de las resistencias.",
-          "En un avión, casi todos los consumidores (radios, luces, bombas) están en **paralelo** sobre la barra: así cada uno recibe la tensión completa y se puede apagar sin afectar a los demás. Los **fusibles** y **disyuntores** van en **serie** con el consumidor, para cortar el circuito si la corriente excede un valor."
         ],
+        "ideas": [
+          "Si la tensión es la presión del agua y la resistencia el estrechamiento de la manguera, el caudal es presión dividida por estrechamiento: sube la presión y sale más agua; aprietas la manguera y sale menos.",
+          "Para despejar con facilidad, dibuja un triángulo con V arriba e I y R abajo: tapa la que buscas y te queda la operación (si tapas V, multiplicas I por R).",
+          "La potencia es cuánto trabaja el aparato: un caudal grande a mucha presión mueve más rueda de molino."
+        ]
+      },
+      {
+        "title": "Circuito en serie y en paralelo",
+        "text": [
+          "Un **circuito** es el camino cerrado por el que circulan los electrones y que lleva la energía a los sistemas del avión. Se le pueden añadir fuentes, resistencias, voltímetros, amperímetros e **interruptores** para abrirlo o cerrarlo. Los componentes se conectan de dos formas.",
+          "En **serie** están uno detrás de otro, en un único camino: la **corriente es la misma** en todos, las **tensiones se reparten** y las **resistencias se suman**. En **paralelo** cada componente tiene su propia rama: la **tensión es la misma** en todas, las **corrientes se suman** y la resistencia total sale **menor que la menor** de las ramas. Un **voltímetro** se conecta en paralelo; un amperímetro, en serie."
+        ],
+        "figure": "svg:020-serie-paralelo",
+        "caption": "Serie y paralelo con una batería y dos resistencias.",
         "formulas": [
           {
-            "f": "Serie: R = R₁ + R₂ + …",
-            "note": "La corriente es la misma; las tensiones se suman."
+            "f": "Serie: R total = R1 + R2 + R3",
+            "note": "La misma corriente I en todas"
           },
           {
-            "f": "Paralelo: 1/R = 1/R₁ + 1/R₂ + …",
-            "note": "La tensión es la misma; las corrientes se suman. Con dos resistencias iguales, R = R₁ ÷ 2."
+            "f": "Paralelo: 1/R total = 1/R1 + 1/R2 + 1/R3",
+            "note": "La misma tensión V en cada rama; para dos: R = (R1 × R2) ÷ (R1 + R2)"
           }
         ],
         "examples": [
           {
-            "q": "Dos resistencias de 4 Ω y 6 Ω en serie con una batería de 12 V. ¿Qué corriente circula?",
-            "a": "R = 4 + 6 = 10 Ω. I = 12 ÷ 10 = 1,2 A, igual en las dos."
+            "q": "Dos resistencias de 3 Ω y 7 Ω en serie, a 20 V. ¿Qué resistencia total y qué corriente?",
+            "a": "R = 3 + 7 = 10 Ω; I = 20 ÷ 10 = 2 A, la misma por las dos."
           },
           {
-            "q": "Dos resistencias de 6 Ω en paralelo. ¿Cuál es la resistencia equivalente?",
-            "a": "1/R = 1/6 + 1/6 = 2/6, luego R = 3 Ω."
+            "q": "Dos resistencias iguales de 8 Ω en paralelo. ¿Qué resistencia total?",
+            "a": "1/R = 1/8 + 1/8 = 2/8, luego R = 4 Ω (la mitad, porque son iguales)."
+          },
+          {
+            "q": "A 12 V conectas en paralelo 4 Ω y 6 Ω. ¿Qué corriente da la batería?",
+            "a": "I1 = 12 ÷ 4 = 3 A; I2 = 12 ÷ 6 = 2 A; total = 5 A. Comprueba: R = (4 × 6) ÷ 10 = 2,4 Ω y 12 ÷ 2,4 = 5 A."
           }
+        ],
+        "ideas": [
+          "Serie es la guirnalda antigua de Navidad: si una bombilla se funde, se apaga todo porque el camino es único.",
+          "Paralelo son los enchufes de tu casa: cada aparato tiene su rama y al desenchufar uno los demás siguen, igual que las radios, luces y bombas de un avión conectados a la barra.",
+          "Dos cajas en paralelo en el supermercado dejan pasar más gente que una sola: abrir ramas baja la resistencia total, igual que abrir carriles baja el atasco.",
+          "Los fusibles y los disyuntores van en serie con lo que protegen: son el peaje único del camino, y si salta, nadie pasa."
         ]
       },
       {
-        "title": "Magnetismo",
+        "title": "Corriente continua y corriente alterna",
         "text": [
-          "Un **imán** tiene dos polos, norte y sur; polos iguales se repelen y distintos se atraen. Un imán crea un **campo magnético**, representado por líneas de fuerza que salen del polo norte y entran en el sur. Algunos materiales (hierro, níquel, cobalto) son **ferromagnéticos**: se imantan y se atraen con un imán. Un imán **permanente** conserva su campo; un **electroimán** lo crea al pasar corriente por una bobina.",
-          "El vínculo entre electricidad y magnetismo explica casi todo el equipo eléctrico del avión. Una corriente crea un campo magnético (**electromagnetismo**: relés, solenoides, motor de arranque). Y un campo magnético **variable** en un conductor induce una **tensión** (**inducción electromagnética**, ley de Faraday), que es el principio del **alternador** y del **magneto** (020.14). El motor eléctrico es el proceso inverso."
+          "La **corriente continua (DC)** circula siempre en el **mismo sentido**: es la de la batería, la que se controla con más facilidad y la que usan los pequeños aparatos. Hasta aquí hemos trabajado con DC. La **corriente alterna (AC)** puede circular **en los dos sentidos**, cambiando de dirección de forma periódica. Su ventaja es que con **transformadores** se puede subir o bajar la tensión, lo que permite distribuir la energía con eficiencia.",
+          "En un avión ligero la energía se genera en forma de AC (en el alternador) y se **rectifica** a DC para alimentar la barra y la batería; lo verás en el bloque del sistema eléctrico (020.08)."
+        ],
+        "ideas": [
+          "La DC es un río que baja siempre hacia el mar; la AC es el agua de una bañera que haces ir y venir con la mano.",
+          "Un transformador es como el cambio de marchas de una bici: sube la tensión (marcha dura, poca corriente) o la baja (marcha corta, más corriente) según lo que convenga."
+        ]
+      },
+      {
+        "title": "Magnetismo e imanes",
+        "text": [
+          "Los **imanes** crean un campo magnético invisible que atrae materiales **ferromagnéticos** como el hierro y el acero. Si cuelgas un imán de un hilo, se orienta con el campo terrestre y señala de **norte a sur**: así funciona una brújula.",
+          "El magnetismo puede ser **permanente o temporal**. Los **imanes permanentes** son de **aceros aleados duros**: cuestan de imantar, pero conservan el magnetismo mucho tiempo. Los **temporales** son de **hierro dulce**: se imantan fácilmente y lo pierden enseguida; por eso sirven en relés y electroimanes, que se conectan y desconectan a voluntad.",
+          "El magnetismo se **destruye o debilita** con **calor**, **golpes o martillazos** y **caídas desde altura**. Y, recíprocamente, una corriente que pasa por un conductor crea un campo magnético (el efecto magnético); un campo magnético variable genera corriente, que es el principio del alternador y del magneto."
+        ],
+        "ideas": [
+          "El hierro dulce es el alumno que se apunta a todo y lo deja a la semana; el acero duro es el que tarda en convencerse, pero cuando se apunta no se baja nunca.",
+          "Calentar o golpear un imán es como remover un puzle ya montado: las piezas (regiones magnéticas) pierden su orden y se pierde el campo.",
+          "La brújula del salpicadero es un imán colgado que busca el norte; un golpe fuerte (un rayo, por ejemplo) puede dejarla magnetizada de otra manera."
         ]
       }
     ],
     "numbers": [
-      "V = I × R; P = V × I",
-      "Serie: R = suma y la corriente es la misma; paralelo: la tensión es la misma y 1/R es la suma de 1/R",
+      "V = I × R; I = V ÷ R; R = V ÷ I; P = V × I",
+      "1 mA = 0,001 A; 1 μA = 0,000001 A",
+      "Serie: misma corriente, R = suma. Paralelo: misma tensión, 1/R = suma de 1/R",
+      "Amperímetro en serie; voltímetro en paralelo; ohmímetro sin alimentar",
       "Aviones ligeros: CC a 14 V (batería de 12 V) o 28 V (24 V)",
-      "El alternador genera CA y la rectifica a CC con diodos",
-      "Un campo magnético variable induce tensión (Faraday): alternador y magneto"
+      "Imán permanente: acero aleado duro; temporal: hierro dulce"
     ],
     "traps": [
-      "Confundir tensión (V) con corriente (A).",
+      "Confundir tensión (V) con corriente (A): la tensión empuja, la corriente es el caudal.",
       "Sumar resistencias en paralelo como si estuvieran en serie.",
       "Pensar que en serie la tensión es la misma en todos los elementos: es la corriente.",
-      "Olvidar que los fusibles van en serie con el circuito que protegen.",
-      "Dar por hecho que la batería suministra CA: es CC."
+      "Olvidar que los fusibles y los disyuntores van en serie con el circuito que protegen.",
+      "Dar por hecho que la batería suministra AC: es DC.",
+      "Conectar el amperímetro en paralelo: se mide la corriente intercalándolo en serie.",
+      "Creer que a más resistencia hay más corriente: es justo al revés, a igual tensión."
     ],
     "sources": [
       {
@@ -153,7 +228,7 @@
         "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/amt_general_handbook"
       }
     ],
-    "reviewed": "2026-10-09",
+    "reviewed": "2026-11-17",
     "links": [
       {
         "label": "Cabina del PA-28: panel eléctrico",
@@ -162,6 +237,90 @@
       {
         "label": "Cabina del C172: panel eléctrico",
         "href": "#/ac/c172"
+      }
+    ],
+    "course": "Tema 6 · Electricidad",
+    "outline": [
+      {
+        "title": "Qué es la corriente",
+        "items": [
+          "Átomo: protones (+), neutrones, electrones (−)",
+          "Electrones libres: se escapan al átomo vecino",
+          "Ión positivo pierde electrón; ión negativo lo gana",
+          "Corriente = movimiento ordenado de electrones libres"
+        ]
+      },
+      {
+        "title": "Magnitudes y unidades",
+        "items": [
+          "Corriente I en amperios (A), amperímetro en serie",
+          "mA = milésima; μA = millonésima",
+          "Tensión V en voltios; resistencia R en ohmios (Ω)",
+          "Ohmímetro: sin alimentar"
+        ]
+      },
+      {
+        "title": "Ley de Ohm y potencia",
+        "items": [
+          "V = I × R, I = V ÷ R, R = V ÷ I",
+          "V fija: más R, menos I",
+          "R fija: más V, más I",
+          "P = V × I"
+        ]
+      },
+      {
+        "title": "Serie y paralelo",
+        "items": [
+          "Serie: misma I, R se suma, V se reparte",
+          "Paralelo: misma V, I se suma, R total menor",
+          "Consumidores del avión en paralelo",
+          "Fusibles y disyuntores en serie"
+        ]
+      },
+      {
+        "title": "DC, AC y magnetismo",
+        "items": [
+          "DC un sentido (batería); AC dos sentidos (transformadores)",
+          "Imán permanente: acero duro; temporal: hierro dulce",
+          "Pérdida: calor, golpes, caídas",
+          "Efectos: térmico, magnético, químico"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "VIR: la tensión se forma con I y R; para despejar tapa la letra que buscas en el triángulo V sobre I y R.",
+      "Serie, la Suma de resistencias y la misma corriente (S, S). Paralelo, la misma tensión y la resistencia pequeña.",
+      "Amperímetro Atravesado (en serie), voltímetro Visitante (en paralelo).",
+      "TeMaQu: efectos Térmico, Magnético y Químico (bombilla, generador, batería)."
+    ],
+    "selfCheck": [
+      {
+        "q": "Explica con tus palabras qué es la corriente eléctrica empezando por el átomo.",
+        "a": "Los metales tienen electrones libres poco ligados; al aplicar una tensión se mueven todos ordenadamente en un sentido pasando de átomo a átomo. Esa circulación es la corriente."
+      },
+      {
+        "q": "Si en un circuito de tensión fija doblas la resistencia, ¿qué le pasa a la corriente y por qué?",
+        "a": "Se reduce a la mitad, porque I = V ÷ R: es inversamente proporcional a la resistencia."
+      },
+      {
+        "q": "¿Cómo conectarías un amperímetro y un voltímetro, y por qué es distinto?",
+        "a": "El amperímetro en serie, porque cuenta la corriente que pasa por el camino. El voltímetro en paralelo, porque compara la tensión entre dos puntos sin desviar apenas corriente."
+      },
+      {
+        "q": "¿Por qué una guirnalda antigua se apaga entera con una bombilla fundida y las luces de casa no?",
+        "a": "La guirnalda está en serie (camino único): al abrirse uno se abre todo. Las luces de casa están en paralelo, cada una con su rama."
+      },
+      {
+        "q": "Una resistencia de 6 Ω y otra de 3 Ω en paralelo: ¿mayor o menor que 3 Ω? Calcúlala.",
+        "a": "Menor: 1/R = 1/6 + 1/3 = 1/2, R = 2 Ω."
+      },
+      {
+        "q": "¿Por qué un relé usa hierro dulce y no acero duro?",
+        "a": "Porque debe imantarse al pasar corriente y desimantarse al cortarla; el hierro dulce hace justo eso."
+      },
+      {
+        "q": "Nombra los tres efectos de la corriente y un ejemplo de cada uno.",
+        "a": "Térmico (bombilla), magnético (generador o relé) y químico (batería)."
       }
     ]
   },
@@ -438,6 +597,279 @@
         "Va en el circuito eléctrico, no en el exterior."
       ],
       "ref": "PHAK cap. 6"
+    },
+    {
+      "id": "020.07.014",
+      "type": "concepto",
+      "level": 1,
+      "q": "La corriente eléctrica en un conductor metálico es:",
+      "options": [
+        "El movimiento de los protones del núcleo hacia el polo positivo",
+        "La energía que guardan los neutrones de cada átomo",
+        "El movimiento ordenado de electrones libres en un sentido",
+        "El desplazamiento de átomos completos a lo largo del cable"
+      ],
+      "correct": 2,
+      "why": "Los protones y los neutrones están fijos en el núcleo; lo que se mueve son los electrones libres, los más débilmente ligados, y lo hacen todos en la misma dirección.",
+      "whyNot": [
+        "Los protones no se mueven por el cable.",
+        "Los neutrones no tienen carga ni viajan.",
+        null,
+        "Los átomos quedan en su sitio; solo se mueven electrones."
+      ],
+      "ref": "Curso CGA, tema 6 (Electricidad)"
+    },
+    {
+      "id": "020.07.015",
+      "type": "concepto",
+      "level": 1,
+      "q": "Un átomo que pierde un electrón se convierte en:",
+      "options": [
+        "Un ión positivo (catión)",
+        "Un ión negativo (anión)",
+        "Un átomo neutro con un neutrón más",
+        "Un átomo con un protón menos"
+      ],
+      "correct": 0,
+      "why": "Al perder una carga negativa quedan más protones que electrones y el átomo queda positivo: catión. El que gana el electrón se vuelve anión.",
+      "whyNot": [
+        null,
+        "El anión es el que gana electrones.",
+        "Los neutrones no cambian la carga ni se ganan al soltar un electrón.",
+        "Los protones no se pierden en un fenómeno eléctrico."
+      ],
+      "ref": "Curso CGA, tema 6 (Electricidad)"
+    },
+    {
+      "id": "020.07.016",
+      "type": "calculo",
+      "level": 1,
+      "q": "Una corriente de 250 mA equivale a:",
+      "options": [
+        "25 A",
+        "2,5 A",
+        "0,025 A",
+        "0,25 A"
+      ],
+      "correct": 3,
+      "why": "1 mA es la milésima parte de 1 A: 250 mA = 250 ÷ 1000 = 0,25 A.",
+      "whyNot": [
+        "25 A serían 25 000 mA.",
+        "2,5 A son 2500 mA.",
+        "0,025 A son 25 mA.",
+        null
+      ],
+      "ref": "Curso CGA, tema 6 (Electricidad)"
+    },
+    {
+      "id": "020.07.017",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué efecto de la corriente es la base del funcionamiento de una batería?",
+      "options": [
+        "El térmico: el calentamiento del conductor",
+        "El químico: la reacción entre el electrolito y los electrodos",
+        "El magnético: el campo alrededor del cable",
+        "El mecánico: la vibración de las placas"
+      ],
+      "correct": 1,
+      "why": "En una batería la reacción química en el electrolito y en los metales sumergidos libera electrones. El efecto térmico es el de la bombilla incandescente y el magnético el de los generadores y los relés.",
+      "whyNot": [
+        "Es el principio de la bombilla o de una resistencia calefactora.",
+        null,
+        "Es el principio del generador, del relé y del solenoide.",
+        "No es uno de los efectos básicos de la corriente."
+      ],
+      "ref": "Curso CGA, tema 6 (Electricidad)"
+    },
+    {
+      "id": "020.07.018",
+      "type": "concepto",
+      "level": 1,
+      "q": "Con la tensión constante, si se duplica la resistencia del circuito, la corriente:",
+      "options": [
+        "Se duplica",
+        "Se mantiene igual",
+        "Se reduce a la mitad",
+        "Se cuadruplica"
+      ],
+      "correct": 2,
+      "why": "I = V ÷ R: con V fija, la corriente es inversamente proporcional a la resistencia. El doble de resistencia, la mitad de corriente.",
+      "whyNot": [
+        "Eso ocurriría si se redujera la resistencia a la mitad.",
+        "Solo cambiaría si cambiara la tensión.",
+        null,
+        "No hay relación cuadrática en la ley de Ohm."
+      ],
+      "ref": "Curso CGA, tema 6 (Electricidad)"
+    },
+    {
+      "id": "020.07.019",
+      "type": "calculo",
+      "level": 2,
+      "q": "Por un circuito alimentado a 28 V circulan 4 A. ¿Qué resistencia total tiene?",
+      "options": [
+        "7 Ω",
+        "112 Ω",
+        "0,14 Ω",
+        "24 Ω"
+      ],
+      "correct": 0,
+      "why": "R = V ÷ I = 28 ÷ 4 = 7 Ω.",
+      "whyNot": [
+        null,
+        "Has multiplicado (28 × 4) en vez de dividir.",
+        "Has invertido la división (4 ÷ 28).",
+        "Has restado en vez de dividir."
+      ],
+      "ref": "Curso CGA, tema 6 (Electricidad)"
+    },
+    {
+      "id": "020.07.020",
+      "type": "calculo",
+      "level": 2,
+      "q": "Dos resistencias de 6 Ω y 3 Ω en paralelo equivalen a:",
+      "options": [
+        "9 Ω",
+        "4,5 Ω",
+        "18 Ω",
+        "2 Ω"
+      ],
+      "correct": 3,
+      "why": "1/R = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2, luego R = 2 Ω. En paralelo siempre sale menos que la menor de las dos.",
+      "whyNot": [
+        "Eso es la suma en serie.",
+        "Es la media, que no es la fórmula del paralelo.",
+        "Es el producto, que tampoco es la fórmula.",
+        null
+      ],
+      "ref": "Curso CGA, tema 6 (Electricidad)"
+    },
+    {
+      "id": "020.07.021",
+      "type": "calculo",
+      "level": 2,
+      "q": "Una batería de 12 V alimenta dos resistencias de 4 Ω y 8 Ω conectadas en serie. La corriente es de:",
+      "options": [
+        "3 A",
+        "1 A",
+        "1,5 A",
+        "24 A"
+      ],
+      "correct": 1,
+      "why": "R total = 4 + 8 = 12 Ω; I = 12 ÷ 12 = 1 A, la misma en las dos resistencias.",
+      "whyNot": [
+        "Es la corriente si solo estuviera la de 4 Ω: olvidas sumar la otra.",
+        null,
+        "Es la corriente si solo estuviera la de 8 Ω.",
+        "Has multiplicado la tensión por dos sin motivo."
+      ],
+      "ref": "Curso CGA, tema 6 (Electricidad)"
+    },
+    {
+      "id": "020.07.022",
+      "type": "concepto",
+      "level": 2,
+      "q": "La ventaja de la corriente alterna (AC) en la distribución de energía es que:",
+      "options": [
+        "Su tensión se puede subir o bajar con transformadores",
+        "Circula siempre en un solo sentido y es más fácil de controlar",
+        "Se puede almacenar directamente en una batería",
+        "No produce ningún campo magnético"
+      ],
+      "correct": 0,
+      "why": "Con transformadores se eleva o reduce la tensión, lo que permite distribuir con eficiencia. La DC es la de un solo sentido y la que almacenan las baterías.",
+      "whyNot": [
+        null,
+        "Eso describe la corriente continua.",
+        "La batería almacena energía química y entrega DC.",
+        "Toda corriente crea un campo magnético."
+      ],
+      "ref": "Curso CGA, tema 6 (Electricidad)"
+    },
+    {
+      "id": "020.07.023",
+      "type": "concepto",
+      "level": 1,
+      "q": "Un imán temporal se fabrica con:",
+      "options": [
+        "Acero aleado duro",
+        "Hierro dulce",
+        "Cobre",
+        "Aluminio"
+      ],
+      "correct": 1,
+      "why": "El hierro dulce se imanta con facilidad y pierde enseguida el magnetismo. Los permanentes usan aceros aleados duros.",
+      "whyNot": [
+        "Es el material de los imanes permanentes.",
+        null,
+        "El cobre no es ferromagnético.",
+        "El aluminio no es ferromagnético."
+      ],
+      "ref": "Curso CGA, tema 6 (Electricidad)"
+    },
+    {
+      "id": "020.07.024",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un imán permanente puede perder su magnetismo si:",
+      "options": [
+        "Se acerca a un trozo de cobre",
+        "Se deja quieto en un cajón durante años",
+        "Se calienta mucho, recibe golpes fuertes o cae desde cierta altura",
+        "Se orienta con su polo norte hacia el norte"
+      ],
+      "correct": 2,
+      "why": "El calor y los golpes desordenan las regiones magnéticas del material y debilitan el campo.",
+      "whyNot": [
+        "El cobre no afecta al imán.",
+        "Un imán permanente conserva su magnetismo mucho tiempo.",
+        null,
+        "La orientación no lo desimanta."
+      ],
+      "ref": "Curso CGA, tema 6 (Electricidad)"
+    },
+    {
+      "id": "020.07.025",
+      "type": "concepto",
+      "level": 2,
+      "q": "Para medir la corriente que consume un aparato, el amperímetro se conecta:",
+      "options": [
+        "En paralelo con el aparato",
+        "En paralelo con la batería",
+        "Con el circuito sin alimentar",
+        "En serie, para que toda la corriente pase por él"
+      ],
+      "correct": 3,
+      "why": "El amperímetro cuenta los electrones que pasan por un punto, así que se intercala en el camino. En paralelo (como un voltímetro) provocaría un cortocircuito. El ohmímetro sí se usa sin alimentar.",
+      "whyNot": [
+        "Así se mide la tensión, no la corriente.",
+        "Así se mide la tensión de la batería.",
+        "Sin alimentar no circula corriente que medir.",
+        null
+      ],
+      "ref": "Curso CGA, tema 6 (Electricidad)"
+    },
+    {
+      "id": "020.07.026",
+      "type": "calculo",
+      "level": 3,
+      "q": "Una lámpara de 21 W funciona a 14 V. Su resistencia es, aproximadamente:",
+      "options": [
+        "0,67 Ω",
+        "9,3 Ω",
+        "1,5 Ω",
+        "294 Ω"
+      ],
+      "correct": 1,
+      "why": "I = P ÷ V = 21 ÷ 14 = 1,5 A; R = V ÷ I = 14 ÷ 1,5 ≈ 9,3 Ω.",
+      "whyNot": [
+        "Es 14 ÷ 21 invertido: no corresponde a la resistencia.",
+        null,
+        "Es la corriente, en amperios, no la resistencia.",
+        "Es el producto P × V, que no es una fórmula válida."
+      ],
+      "ref": "Curso CGA, tema 6 (Electricidad)"
     }
   ],
   "cards": [
@@ -465,6 +897,21 @@
       "id": "c.020.07.05",
       "front": "Dónde van fusibles y disyuntores",
       "back": "En serie con el circuito que protegen"
+    },
+    {
+      "id": "c.020.07.06",
+      "front": "Efectos de la corriente",
+      "back": "Térmico (bombilla), magnético (generador) y químico (batería)"
+    },
+    {
+      "id": "c.020.07.07",
+      "front": "Cómo se conectan amperímetro y voltímetro",
+      "back": "Amperímetro en serie; voltímetro en paralelo"
+    },
+    {
+      "id": "c.020.07.08",
+      "front": "Imanes permanentes y temporales",
+      "back": "Permanente: acero aleado duro. Temporal: hierro dulce. Se pierde por calor, golpes o caídas"
     }
   ]
 }

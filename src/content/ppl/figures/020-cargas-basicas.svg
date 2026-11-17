@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 290">
+<title>Las cinco cargas básicas: tracción, compresión, cortadura, flexión y torsión</title>
+<defs><marker id="020-cargas-basicas-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" class="ink-fill"/></marker></defs>
+<rect x="34" y="100" width="60" height="40" class="soft"/>
+<line x1="34" y1="120" x2="8" y2="120" class="ln thick" marker-end="url(#020-cargas-basicas-f)"/>
+<line x1="94" y1="120" x2="120" y2="120" class="ln thick" marker-end="url(#020-cargas-basicas-f)"/>
+<rect x="162" y="100" width="60" height="40" class="soft"/>
+<line x1="134" y1="120" x2="160" y2="120" class="ln thick" marker-end="url(#020-cargas-basicas-f)"/>
+<line x1="250" y1="120" x2="224" y2="120" class="ln thick" marker-end="url(#020-cargas-basicas-f)"/>
+<rect x="290" y="94" width="60" height="26" class="soft"/>
+<rect x="290" y="120" width="60" height="26" class="soft"/>
+<line x1="290" y1="82" x2="350" y2="82" class="ln thick" marker-end="url(#020-cargas-basicas-f)"/>
+<line x1="350" y1="158" x2="290" y2="158" class="ln thick" marker-end="url(#020-cargas-basicas-f)"/>
+<path d="M408 108 Q448 138 488 108 L488 128 Q448 158 408 128 Z" class="soft"/>
+<line x1="448" y1="70" x2="448" y2="116" class="ln thick" marker-end="url(#020-cargas-basicas-f)"/>
+<text x="388" y="112" class="txw b">−</text>
+<text x="388" y="142" class="txo b">+</text>
+<rect x="530" y="104" width="62" height="32" class="soft"/>
+<ellipse cx="592" cy="120" rx="8" ry="16" class="soft"/>
+<ellipse cx="530" cy="120" rx="8" ry="16" class="soft"/>
+<path d="M608 92 Q626 120 608 148" class="ln thick" fill="none" marker-end="url(#020-cargas-basicas-f)"/>
+<path d="M514 148 Q496 120 514 92" class="ln thick" fill="none" marker-end="url(#020-cargas-basicas-f)"/>
+<g class="tx b" text-anchor="middle">
+<text x="64" y="206" class="txo b">Tracción</text>
+<text x="192" y="206" class="txw b">Compresión</text>
+<text x="320" y="206" class="txa b">Cortadura</text>
+<text x="448" y="206" class="tx b">Flexión</text>
+<text x="561" y="206" class="tx b">Torsión</text>
+</g>
+<g class="tx2" text-anchor="middle">
+<text x="64" y="226">estira</text>
+<text x="192" y="226">acorta</text>
+<text x="320" y="226">desliza capas</text>
+<text x="448" y="226">dobla</text>
+<text x="561" y="226">retuerce</text>
+<text x="64" y="248">montante en vuelo</text>
+<text x="192" y="248">tren al aterrizar</text>
+<text x="320" y="248">remaches</text>
+<text x="448" y="248">larguero del ala</text>
+<text x="561" y="248">eje de la hélice</text>
+</g>
+<text x="448" y="272" class="tx2" text-anchor="middle">− comprime arriba, + estira abajo</text>
+</svg>

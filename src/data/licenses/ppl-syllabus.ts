@@ -3,6 +3,8 @@
 
 export interface SyllabusBlock { id: string; title: string; topics: string; target: number }
 export interface SyllabusSubject {
+  /** temas del curso de los instructores, con los bloques que cubre cada uno */
+  course?: { title: string; blocks: string[] }[]
   code: string
   id: string
   name: string
@@ -701,8 +703,8 @@ export const PPL_SYLLABUS: SyllabusSubject[] = [
     "blocks": [
       {
         "id": "020.01",
-        "title": "Cargas y estructura",
-        "topics": "Tracción, compresión, cortadura, torsión y flexión; estructura de tubos, monocasco y semimonocasco; materiales; alas, fuselaje, empenaje y parabrisas; límites",
+        "title": "Diseño estructural, cargas y estructura",
+        "topics": "Filosofías de diseño (vida segura, a prueba de fallos, tolerante al daño) y redundancia; cargas (tracción, compresión, cortadura, flexión, torsión), esfuerzo, deformación y límite elástico, pandeo; cargas estáticas, dinámicas y cíclicas; fatiga y corrosión (tipos, prevención y detección); mantenimiento hard-time y on-condition; construcción monocasco y semimonocasco, materiales y métodos de unión; diseño del ala y del empenaje (cola en T), flutter; fuselaje presurizado; factor de carga, carga límite y última; masas estructurales máximas (MZFM); inspección exterior",
         "target": 16
       },
       {
@@ -720,14 +722,20 @@ export const PPL_SYLLABUS: SyllabusSubject[] = [
       {
         "id": "020.04",
         "title": "Mandos de vuelo",
-        "topics": "Primarios y secundarios, cables y varillas, flaps eléctricos (C172) y manuales (PA-28), compensadores, fallos y bloqueos",
+        "topics": "Primarios y secundarios, cables y varillas, flaps eléctricos (C172) y manuales (PA-28), compensadores, fallos y bloqueos; mandos reversibles e irreversibles, servomandos hidráulicos y sensación artificial (Q feel); momento de bisagra y compensación aerodinámica (bisagra retrasada, horn, interna); tabs de compensación, antibalance, servo y de resorte; equilibrado de masas; guiñada adversa (Frise, acoplamiento alerón-timón, spoilers de alabeo), inversión del alerón; secundarios (flaps, slats, spoilers, trim) y alivio de carga de flaps",
         "target": 14
       },
       {
         "id": "020.05",
-        "title": "Antihielo",
-        "topics": "Calefacción del pitot y del parabrisas; límites de un avión no certificado para hielo",
+        "title": "Formación de hielo, antihielo y deshielo",
+        "topics": "Formación de hielo y factores, efectos aerodinámicos, tipos (claro, escarcha opaca, escarcha), sistemas de aviso y detectores, botas neumáticas, protección térmica (aire de sangrado y eléctrica), fluido depresor del punto de congelación, protección de hélices; calefacción del pitot y del parabrisas; límites de un avión no certificado para hielo",
         "target": 6
+      },
+      {
+        "id": "020.25",
+        "title": "Sistemas neumáticos, aire acondicionado y presurización",
+        "topics": "Sistema neumático frente al hidráulico (ventajas e inconvenientes), aplicaciones del aire comprimido, aire acondicionado en aviones no presurizados (aire de impacto, calefactor por escape y riesgo de CO) y presurizados (sobrealimentador, aire de sangrado), presurización: altitud de cabina, velocidad vertical de cabina, presión diferencial, control con válvulas de salida, válvulas de alivio positiva y negativa, válvula de descarga y paneles de alivio; hipoxia como motivo de la presurización",
+        "target": 10
       },
       {
         "id": "020.06",
@@ -750,7 +758,7 @@ export const PPL_SYLLABUS: SyllabusSubject[] = [
       {
         "id": "020.09",
         "title": "Motor de pistón",
-        "topics": "Tipos, componentes, ciclo de cuatro tiempos con avance y retraso de válvulas, relación de compresión",
+        "topics": "Tipos, componentes, ciclo de cuatro tiempos con avance y retraso de válvulas, relación de compresión; ciclo Otto teórico y real, potencia indicada y presión media efectiva; motor diésel (encendido por compresión)",
         "target": 18
       },
       {
@@ -762,7 +770,7 @@ export const PPL_SYLLABUS: SyllabusSubject[] = [
       {
         "id": "020.11",
         "title": "Carburador e inyección",
-        "topics": "Carburador de flotador, control de mezcla, bomba de aceleración, calefacción del carburador, tipos de hielo; inyección y arranque en caliente",
+        "topics": "Carburador de flotador, control de mezcla, bomba de aceleración, calefacción del carburador, tipos de hielo; inyección y arranque en caliente; inyección indirecta y directa (common rail), FADEC",
         "target": 22
       },
       {
@@ -842,6 +850,62 @@ export const PPL_SYLLABUS: SyllabusSubject[] = [
         "title": "Comunicaciones, avisos y pantallas",
         "topics": "VHF, HF y satélite; aviso de pérdida neumático o eléctrico; pantallas electrónicas, AHRS y ordenador de datos de aire",
         "target": 12
+      }
+    ],
+    "course": [
+      {
+        "title": "Tema 1 · Fuselaje y estructura",
+        "blocks": [
+          "020.01",
+          "020.02",
+          "020.03"
+        ]
+      },
+      {
+        "title": "Tema 2 · Mandos de vuelo",
+        "blocks": [
+          "020.04"
+        ]
+      },
+      {
+        "title": "Tema 3 · Sistemas neumáticos y presurización",
+        "blocks": [
+          "020.25"
+        ]
+      },
+      {
+        "title": "Tema 4 · Antihielo y deshielo",
+        "blocks": [
+          "020.05"
+        ]
+      },
+      {
+        "title": "Tema 5 · Sistema de combustible",
+        "blocks": [
+          "020.06",
+          "020.10"
+        ]
+      },
+      {
+        "title": "Tema 6 · Electricidad",
+        "blocks": [
+          "020.07",
+          "020.08"
+        ]
+      },
+      {
+        "title": "Tema 7 · Motores y hélices",
+        "blocks": [
+          "020.09",
+          "020.11",
+          "020.12",
+          "020.13",
+          "020.14",
+          "020.15",
+          "020.16",
+          "020.17",
+          "020.18"
+        ]
       }
     ]
   },

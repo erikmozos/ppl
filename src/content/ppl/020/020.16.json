@@ -2,33 +2,61 @@
   "lesson": {
     "id": "020.16",
     "title": "Hélices",
-    "summary": "Cómo funciona una hélice: ángulo de pala, de avance y de ataque; hélices de paso fijo (ascenso y crucero) y de velocidad constante con su regulador; orden de las palancas y fallos habituales.",
+    "summary": "Función de la hélice y tercera ley de Newton, la pala como perfil con componentes axial y tangencial, geometría y ángulo de pala, hélices de paso fijo y de paso variable, sus ventajas, rango desde embanderamiento a paso inverso, orden de las palancas y fallos.",
     "objectives": [
-      "Definir ángulo de pala, ángulo de avance y ángulo de ataque de una hélice",
-      "Explicar por qué una hélice de paso fijo es un compromiso y la diferencia entre paso de ascenso y de crucero",
-      "Describir el funcionamiento de una hélice de velocidad constante y de su regulador",
-      "Aplicar el orden correcto de las palancas al subir o bajar potencia",
-      "Reconocer los fallos típicos de la hélice y el mantenimiento básico"
+      "Explicar cómo genera empuje una hélice (Newton) y descomponer la fuerza de la pala en axial y tangencial",
+      "Nombrar las partes de la pala y definir el ángulo de pala (pitch angle)",
+      "Explicar por qué en paso fijo el ángulo de ataque cambia con la TAS y las RPM",
+      "Describir la hélice de paso variable: control independiente de RPM y presión de admisión, y sus ventajas",
+      "Situar embanderamiento, paso grueso, paso fino y paso inverso en el rango de la pala",
+      "Aplicar el orden de las palancas y reaccionar ante los fallos más habituales"
     ],
     "sections": [
       {
-        "title": "La hélice como ala giratoria",
+        "title": "Qué hace una hélice",
         "text": [
-          "Una pala de hélice es un perfil alar que gira. Cada sección de la pala tiene una **cuerda** y está inclinada respecto al **plano de rotación** de la hélice. El ángulo entre la cuerda y ese plano es el **ángulo de pala** (β). La pala gira y a la vez avanza con el avión, así que el viento relativo que ve es la suma de las dos velocidades: la **velocidad de giro** (U, que crece hacia la punta) y la de **avance** (V). El ángulo entre el viento relativo y el plano de rotación es el **ángulo de avance** (φ, con tan φ = V ÷ U). El **ángulo de ataque** es lo que queda: **α = β − φ**.",
-          "El empuje sale de la sustentación de cada pala, perpendicular al viento relativo, del mismo modo que un ala. Como la punta va mucho más deprisa que la raíz, la pala está **torsionada**: el ángulo de pala disminuye hacia la punta para que el ángulo de ataque sea parecido en toda su longitud. El **paso** es el avance teórico de la hélice en una vuelta, como un tornillo; a mayor ángulo de pala, mayor paso."
+          "La función de una hélice es **convertir la potencia mecánica del motor en empuje** que mueva el avión por el aire. Lo hace **acelerando una gran masa de aire hacia atrás**: como reacción aparece una fuerza hacia delante que impulsa el avión. Es la **tercera ley de Newton**: a toda acción corresponde una reacción de igual magnitud y sentido contrario.",
+          "Cada pala se comporta como un **perfil aerodinámico que gira** (*rotating airfoil*): al girar, crea una diferencia de presión entre sus dos caras y de ahí sale una **fuerza aerodinámica resultante**. Esa fuerza se descompone en dos: la **componente axial**, en la dirección del eje, que produce el **empuje** (*thrust*), y la **componente tangencial**, que va en el plano de giro y es la resistencia aerodinámica que se opone a la rotación (*drag*): es la que el motor tiene que vencer. El empuje total de la hélice es la suma de las fuerzas axiales de todas las secciones de todas las palas."
+        ],
+        "ideas": [
+          "Una hélice funciona como un remo en el agua, pero girando: empuja el aire hacia atrás y el avión avanza como la barca, porque el remo no se lleva el agua pero sí la empuja.",
+          "Si eres un patinador sobre ruedas que lanza un balón pesado hacia atrás, sales disparado hacia delante: eso es Newton, y la hélice lo hace con toneladas de aire por segundo."
+        ]
+      },
+      {
+        "title": "Geometría de la pala",
+        "text": [
+          "Como un ala, la pala tiene un perfil cuidadosamente diseñado para generar sustentación que, actuando en el plano de rotación, se convierte en empuje. Se distinguen cuatro elementos. La **raíz** (*blade root*) es la zona más cercana al **cubo o buje** de la hélice. La **punta** (*blade tip*) es el extremo más alejado del eje de giro. El **borde de ataque** (*leading edge*) es el que encuentra primero el aire durante el giro y el **borde de salida** (*trailing edge*) es por donde el flujo abandona el perfil. La recta que une ambos bordes es la **cuerda**.",
+          "Una pala no es igual de ancha ni va igual de inclinada en toda su longitud. La punta se mueve mucho más deprisa que la raíz, porque recorre un círculo mucho mayor en el mismo tiempo; por eso la pala está **torsionada**, con menor ángulo hacia la punta, como se ve más abajo."
+        ],
+        "ideas": [
+          "En un tiovivo, los que van en el borde exterior recorren mucho más camino que los del centro en cada vuelta: así se mueve la punta de la pala frente a la raíz.",
+          "El borde de ataque es la parte de la pala que «muerde» el aire, como el filo de un cuchillo que entra primero en la tarta."
+        ]
+      },
+      {
+        "title": "Ángulo de pala, de avance y de ataque",
+        "text": [
+          "La pala se monta en el cubo de modo que su **línea de cuerda** forme un ángulo con el **plano de rotación**. Ese ángulo es el **ángulo de pala** o **de paso** (*blade angle, pitch angle*): uno de los parámetros que más condicionan el rendimiento. Un ángulo de pala mayor significa que la hélice «quiere» avanzar más por cada vuelta, y uno menor, menos. El **paso** es precisamente ese avance teórico en una vuelta, como un tornillo en la madera: a mayor ángulo, mayor paso.",
+          "La pala gira y a la vez avanza con el avión, así que el viento relativo es la suma de la **velocidad de giro** (U, que crece hacia la punta) y la de **avance** (V). El ángulo entre el viento relativo y el plano de rotación es el **ángulo de avance** (φ, con tan φ = V ÷ U). El **ángulo de ataque** es lo que queda entre la cuerda y el viento relativo: **α = β − φ**. El empuje sale de la sustentación de cada sección, perpendicular al viento relativo, del mismo modo que un ala.",
+          "La pala está **torsionada**: el ángulo de pala disminuye hacia la punta para que el ángulo de ataque sea parecido en toda su longitud, porque en la punta φ es menor."
         ],
         "figure": "svg:020-angulo-pala",
         "caption": "Sección de pala: β ángulo de pala, φ ángulo de avance y α = β − φ el ángulo de ataque.",
         "bullets": [
           "A igual RPM, al **aumentar la velocidad** del avión crece φ y **disminuye α**: la pala trabaja con menos ángulo y da menos empuje.",
           "Con el avión parado o despacio (despegue), φ es pequeño y α es grande, cercano a la pérdida de la pala: el empuje estático es alto, pero la pala puede entrar en pérdida si el ángulo de pala es excesivo."
+        ],
+        "ideas": [
+          "El ángulo de pala es como la inclinación de la hoja de un ventilador: más inclinada, más aire mueve por vuelta, pero más cuesta moverla.",
+          "Es como un tornillo: si la rosca es muy abierta, avanza mucho por vuelta; si es muy cerrada, avanza poco pero entra con menos esfuerzo."
         ]
       },
       {
         "title": "Hélice de paso fijo",
         "text": [
-          "En una hélice de **paso fijo** el ángulo de pala no se puede cambiar: es el del PA-28-161 Warrior III y el de muchas avionetas. Es un compromiso entre despegue y crucero, y el fabricante elige uno de los dos extremos:",
-          "El paso de **ascenso** (ángulo pequeño, paso corto) da mucho empuje a baja velocidad y permite que el motor llegue a sus RPM máximas, con buen ascenso, pero en crucero el motor podría pasarse de vueltas o gastar de más. El paso de **crucero** (ángulo mayor, paso largo) rinde mejor a velocidad alta, pero en el despegue el motor no llega a RPM máximas y el empuje estático es peor. Tu avión de escuela suele montar una hélice de compromiso."
+          "En una hélice de **paso fijo** (*fixed pitch*) el ángulo de pala no se puede cambiar durante el vuelo: es el del PA-28-161 Warrior III y el de muchas avionetas. Como el ángulo es fijo, su rendimiento depende solo de dos variables: la **velocidad verdadera (TAS)** del avión y las **RPM** de la hélice. Y eso hace que el **ángulo de ataque cambie continuamente** durante el vuelo: al acelerar sube φ y baja α; al ralentizarse en un ascenso, ocurre lo contrario.",
+          "Es un compromiso entre despegue y crucero y el fabricante elige entre dos extremos. El paso de **ascenso** (ángulo pequeño, paso corto) da mucho empuje a baja velocidad y permite que el motor llegue a sus RPM máximas, con buen ascenso, pero en crucero el motor podría pasarse de vueltas o gastar de más. El paso de **crucero** (ángulo mayor, paso largo) rinde mejor a velocidad alta, pero en el despegue el motor no llega a RPM máximas y el empuje estático es peor. Tu avión de escuela suele montar una hélice de compromiso."
         ],
         "table": {
           "caption": "Hélice de paso fijo: ascenso y crucero",
@@ -64,16 +92,35 @@
         "bullets": [
           "Con paso fijo, el **tacómetro** mide la potencia: más gases, más RPM. Las RPM también suben al ganar velocidad (picado) y bajan si el avión reduce la velocidad en ascenso.",
           "En un picado pronunciado las RPM pueden superar la raya roja: reduce potencia y velocidad."
+        ],
+        "ideas": [
+          "Una hélice de paso fijo es como una bicicleta de una sola marcha: si la eliges ligera, arrancas bien pero a toda velocidad las piernas no dan más; si la eliges larga, vas fuerte en llano pero cuesta arrancar."
         ]
       },
       {
-        "title": "Hélice de velocidad constante",
+        "title": "Hélice de paso variable",
         "text": [
-          "Una hélice de **paso variable** puede cambiar el ángulo de pala en vuelo. La más habitual en aviación ligera es la de **velocidad constante**: un **regulador** (governor) cambia el paso para mantener las RPM que el piloto elige con el **mando de hélice**. El **mando de gases** fija la **presión de admisión** (MAP), que es la potencia disponible; el mando de la hélice fija las **RPM**, que se mantienen aunque cambien la velocidad o la potencia.",
-          "El regulador usa **contrapesos** que se abren por la fuerza centrífuga y mueven una válvula: si las RPM suben por encima de las elegidas, la válvula hace que la hélice pase a **paso grueso** (más ángulo, más par resistente, las RPM bajan); si bajan, la hélice pasa a **paso fino** y las RPM suben. Se mueve con **aceite del motor a presión**, que el regulador aumenta con una bomba propia. El resultado es un rendimiento muy bueno en todo el rango, porque la pala trabaja siempre con un ángulo de ataque favorable.",
-          "El despegue se hace con la palanca de hélice en **paso fino** (RPM máximas), y el crucero se hace con menos RPM y un paso más grueso, con menos ruido y consumo. Por eso este tipo de hélice y el motor con mando de MAP pide más atención al operar el motor."
+          "La potencia de un motor de pistón depende de dos cosas: la **presión de admisión (MAP, manifold pressure)** y las **RPM**. Con una hélice de paso fijo las dos están ligadas y el piloto casi no puede combinarlas a su gusto. Con una hélice de **paso variable** (*variable pitch propeller*) el piloto puede cambiar el ángulo de pala en operación mediante un mecanismo **hidráulico, mecánico o electrohidráulico**, y así controlar las **RPM independientemente** de la presión de admisión. Al modificar el ángulo de pala se modifica la carga aerodinámica que la hélice impone al motor: más ángulo, más carga y menos RPM; menos ángulo, menos carga y más RPM.",
+          "La versión más habitual en aviación ligera es la de **velocidad constante**: un **regulador** (*governor*) cambia el paso para mantener las RPM que el piloto elige con el **mando de hélice**. El **mando de gases** fija la MAP (la potencia disponible) y el mando de la hélice fija las RPM, que se mantienen aunque cambien la velocidad o la potencia.",
+          "El regulador usa **contrapesos** que se abren por la fuerza centrífuga y mueven una válvula: si las RPM suben por encima de las elegidas, la hélice pasa a **paso grueso** (más ángulo, más par resistente, las RPM bajan); si bajan, pasa a **paso fino** y las RPM suben. Se mueve con **aceite del motor a presión**, que el regulador aumenta con una bomba propia. El despegue se hace con la palanca de hélice en **paso fino** (RPM máximas) y el crucero con menos RPM y paso más grueso, con menos ruido y consumo."
         ],
-        "verify": true
+        "figure": "svg:020-pasos-helice",
+        "caption": "Posiciones de la pala de una hélice de paso variable respecto al plano de rotación",
+        "ideas": [
+          "Una hélice de paso variable es como una bicicleta con marchas: puedes elegir la ligera para arrancar y la larga para ir en llano, mientras pedaleas siempre al ritmo (RPM) que prefieres.",
+          "El regulador es el cambio automático del coche: tú eliges el régimen y él se ocupa de mantenerlo cambiando de marcha."
+        ]
+      },
+      {
+        "title": "Ventajas del paso variable y rango de ángulos",
+        "text": [
+          "La gran ventaja es poder **optimizar el conjunto motor-hélice** en cada fase del vuelo. Eso se traduce en cuatro beneficios: **mejor eficiencia propulsiva**, porque la pala trabaja cerca de su ángulo de ataque óptimo a distintas velocidades y altitudes; **mejor economía de combustible**, porque se pueden elegir configuraciones de potencia más eficientes; **menor desgaste del motor**, porque se evita operar a RPM excesivas y se reducen esfuerzos mecánicos, vibraciones y cargas; y **mejor rendimiento en todas las fases**: despegue, ascenso, crucero y descenso.",
+          "Las hélices modernas de paso variable cubren un **rango amplio de ángulos**. En un extremo está la posición de **embanderamiento** (*feathered*), el **paso más grueso** posible, con las palas casi alineadas con el viento relativo: la hélice con el motor parado apenas ofrece resistencia. En el otro extremo está el **paso inverso** (*reverse pitch*), el paso más fino, incluso con ángulo **negativo**, que hace que el empuje vaya hacia atrás y ayude a frenar tras el aterrizaje. Entre ambos están el paso fino (despegue) y el paso grueso (crucero)."
+        ],
+        "ideas": [
+          "El embanderamiento es como poner la mano plana, de canto, al sacarla por la ventanilla: casi no hay resistencia. Con la palma de cara al viento, frena mucho: ese es el paso inverso.",
+          "Tener mando de hélice es como tener cambio de marchas en la bicicleta: no corres más, pero gastas menos fuerza en cada tramo."
+        ]
       },
       {
         "title": "Orden de las palancas y límites",
@@ -103,18 +150,23 @@
       }
     ],
     "numbers": [
+      "Newton: acelerar aire hacia atrás da empuje hacia delante",
+      "Fuerza de la pala: componente axial (empuje) y tangencial (resistencia a la rotación)",
+      "Pala: raíz (cerca del cubo), punta, borde de ataque y borde de salida",
       "α = β − φ: ángulo de ataque = ángulo de pala − ángulo de avance",
-      "Paso fijo: el tacómetro mide la potencia; paso de ascenso (fino) frente a crucero (grueso)",
-      "Velocidad constante: gases = MAP, hélice = RPM; el regulador cambia el paso",
-      "Subir potencia: mezcla, hélice, gases; bajar potencia: gases, hélice, mezcla",
-      "Simple efecto: sin presión de aceite, normalmente paso fino y RPM altas (según POH)"
+      "Paso fijo: el ángulo de ataque cambia con TAS y RPM; ascenso (fino) frente a crucero (grueso)",
+      "Paso variable: controla RPM independientemente de la MAP; hidráulico, mecánico o electrohidráulico",
+      "Rango: del embanderamiento (paso más grueso) al paso inverso (paso más fino, incluso negativo)",
+      "Subir potencia: mezcla, hélice, gases; bajar potencia: gases, hélice, mezcla"
     ],
     "traps": [
       "Confundir el ángulo de pala con el ángulo de ataque: el de ataque es β − φ.",
       "Creer que en una hélice de paso fijo el ascenso se hace con paso grueso: es paso fino.",
       "Subir la presión de admisión con RPM bajas: puede provocar detonación.",
       "Pensar que con paso fijo se controlan por separado MAP y RPM: solo hay gases.",
-      "Olvidar que la hélice puede arrancar con magneto vivo aunque la llave esté en OFF."
+      "Olvidar que la hélice puede arrancar con magneto vivo aunque la llave esté en OFF.",
+      "Confundir el embanderamiento (paso más grueso) con el paso inverso (el más fino, hasta ángulo negativo).",
+      "Creer que la componente tangencial da empuje: da la resistencia que se opone al giro."
     ],
     "sources": [
       {
@@ -124,9 +176,12 @@
       {
         "title": "Manual de vuelo del PA-28-161 Warrior III y del Cessna 172S",
         "url": "https://www.piper.com/"
+      },
+      {
+        "title": "Curso de CGA (ATPLENJOY/DREAMAIR), Tema 7: Motores y hélices"
       }
     ],
-    "reviewed": "2026-10-09",
+    "reviewed": "2026-11-17",
     "links": [
       {
         "label": "Cabina del PA-28 (gases, mezcla y hélice de paso fijo)",
@@ -139,6 +194,77 @@
       {
         "label": "Prueba de motor del PA-28",
         "href": "#/ac/pa28/flow/runup"
+      }
+    ],
+    "course": "Tema 7 · Motores y hélices (hélices)",
+    "outline": [
+      {
+        "title": "Cómo empuja",
+        "items": [
+          "Newton: acelerar aire hacia atrás",
+          "Pala = perfil que gira",
+          "Axial = empuje; tangencial = resistencia al giro"
+        ]
+      },
+      {
+        "title": "La pala",
+        "items": [
+          "Raíz, punta, borde de ataque y de salida",
+          "Ángulo de pala: cuerda y plano de rotación",
+          "α = β − φ; pala torsionada"
+        ]
+      },
+      {
+        "title": "Paso fijo",
+        "items": [
+          "Ángulo de ataque cambia con TAS y RPM",
+          "Ascenso (fino) frente a crucero (grueso)",
+          "Tacómetro = potencia"
+        ]
+      },
+      {
+        "title": "Paso variable",
+        "items": [
+          "RPM independientes de la MAP",
+          "Regulador, contrapesos y aceite a presión",
+          "Ventajas: eficiencia, economía, menos desgaste, todas las fases",
+          "Rango: bandera a paso inverso"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "α = β − φ: «el ataque es la pala menos el avance».",
+      "Paso: «fino para empezar, grueso para cruzar, bandera para parar, inverso para frenar».",
+      "Orden de palancas: «subir: mezcla, hélice, gases; bajar: gases, hélice, mezcla»."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Por qué una hélice produce empuje? (Newton)",
+        "a": "Acelera una masa de aire hacia atrás; la reacción es una fuerza igual y contraria hacia delante."
+      },
+      {
+        "q": "¿Qué hacen la componente axial y la tangencial de la fuerza de la pala?",
+        "a": "La axial da el empuje; la tangencial es la resistencia que se opone a la rotación y que el motor debe vencer."
+      },
+      {
+        "q": "Define el ángulo de pala y di qué pasa si es mayor.",
+        "a": "Ángulo entre la cuerda y el plano de rotación; mayor ángulo, mayor paso: avanza más por vuelta pero carga más al motor."
+      },
+      {
+        "q": "¿Por qué en paso fijo cambia el ángulo de ataque a lo largo del vuelo?",
+        "a": "Porque el ángulo de pala es fijo y TAS y RPM varían: cambia φ y, con él, α = β − φ."
+      },
+      {
+        "q": "¿Qué permite el paso variable que no permite el fijo?",
+        "a": "Controlar las RPM independientemente de la presión de admisión cambiando el ángulo de pala."
+      },
+      {
+        "q": "Cuatro ventajas del paso variable.",
+        "a": "Mejor eficiencia propulsiva, mejor economía de combustible, menor desgaste del motor y mejor rendimiento en todas las fases del vuelo."
+      },
+      {
+        "q": "¿Qué es el embanderamiento y qué es el paso inverso?",
+        "a": "Embanderamiento: paso más grueso, palas alineadas con el viento. Paso inverso: paso más fino, incluso negativo, con empuje hacia atrás."
       }
     ]
   },
@@ -479,6 +605,195 @@
         "No hay estabilización fija."
       ],
       "ref": "PHAK cap. 7"
+    },
+    {
+      "id": "020.16.017",
+      "type": "concepto",
+      "level": 1,
+      "q": "El principio físico por el que una hélice produce empuje es:",
+      "options": [
+        "La primera ley de Newton",
+        "La tercera ley de Newton: acelera aire hacia atrás y el avión recibe una reacción hacia delante",
+        "El principio de Bernoulli aplicado al fuselaje",
+        "El efecto giroscópico de la hélice"
+      ],
+      "correct": 1,
+      "why": "La hélice lanza una gran masa de aire hacia atrás y la reacción de igual magnitud y sentido contrario impulsa el avión hacia delante.",
+      "whyNot": [
+        "No explica por qué la hélice acelera el aire.",
+        null,
+        "Bernoulli explica la sustentación, no el empuje de reacción de la hélice.",
+        "Es un efecto secundario que no genera empuje."
+      ],
+      "ref": "Curso Tema 7; PHAK cap. 7"
+    },
+    {
+      "id": "020.16.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "De la fuerza aerodinámica total de una pala, la componente axial:",
+      "options": [
+        "Produce la resistencia que se opone a la rotación",
+        "Es siempre cero con el avión en vuelo",
+        "Aumenta la presión de admisión",
+        "Produce el empuje"
+      ],
+      "correct": 3,
+      "why": "La componente axial va en la dirección del eje y su suma en todas las secciones es el empuje. La tangencial es la resistencia al giro.",
+      "whyNot": [
+        "Esa es la componente tangencial.",
+        "Da el empuje en todo momento.",
+        "No actúa sobre la admisión.",
+        null
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.16.019",
+      "type": "concepto",
+      "level": 1,
+      "q": "La parte de la pala más cercana al cubo de la hélice se llama:",
+      "options": [
+        "Raíz",
+        "Punta",
+        "Borde de ataque",
+        "Borde de salida"
+      ],
+      "correct": 0,
+      "why": "La raíz está junto al cubo o buje, y la punta en el extremo opuesto.",
+      "whyNot": [
+        null,
+        "Es el extremo más alejado del eje.",
+        "Es el borde que encuentra primero el aire.",
+        "Es el borde por donde sale el aire."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.16.020",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con una hélice de paso variable, el piloto puede controlar:",
+      "options": [
+        "Solo la presión de admisión",
+        "El número de palas en vuelo",
+        "Las RPM independientemente de la presión de admisión",
+        "El octanaje del combustible"
+      ],
+      "correct": 2,
+      "why": "Al cambiar el ángulo de pala varía la carga sobre el motor y se fijan las RPM sin depender de la MAP.",
+      "whyNot": [
+        "Con paso fijo solo se controla por gases; con paso variable, ambas.",
+        "El número de palas es fijo.",
+        null,
+        "Es independiente de la hélice."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.16.021",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una ventaja de la hélice de paso variable es:",
+      "options": [
+        "Menor eficiencia en el despegue",
+        "Mejor eficiencia propulsiva y menor desgaste del motor al evitar RPM excesivas",
+        "Mayor consumo en crucero",
+        "Más vibraciones"
+      ],
+      "correct": 1,
+      "why": "Puede trabajar cerca del ángulo de ataque óptimo en cada fase y evitar RPM excesivas, con mejor economía y menos desgaste.",
+      "whyNot": [
+        "Mejora el rendimiento en el despegue.",
+        null,
+        "Permite mejor economía de combustible.",
+        "Reduce vibraciones y cargas."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.16.022",
+      "type": "concepto",
+      "level": 2,
+      "q": "La posición de embanderamiento de una hélice de paso variable corresponde al:",
+      "options": [
+        "Paso más grueso posible",
+        "Paso más fino posible",
+        "Paso inverso",
+        "Paso de despegue"
+      ],
+      "correct": 0,
+      "why": "En bandera las palas quedan casi alineadas con el viento relativo: mínima resistencia con el motor parado.",
+      "whyNot": [
+        null,
+        "Esa posición está cerca del paso inverso.",
+        "Es el extremo opuesto, con empuje hacia atrás.",
+        "El despegue usa paso fino."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.16.023",
+      "type": "concepto",
+      "level": 3,
+      "q": "El paso inverso de una hélice de paso variable es:",
+      "options": [
+        "El paso más grueso posible",
+        "Un paso solo para crucero",
+        "Un paso solo posible con hélice de paso fijo",
+        "El paso más fino, incluso con ángulo negativo"
+      ],
+      "correct": 3,
+      "why": "El paso inverso permite empuje hacia atrás y se extiende más allá del paso fino, con ángulo negativo respecto al flujo.",
+      "whyNot": [
+        "Eso es el embanderamiento.",
+        "No se usa en crucero.",
+        "Con paso fijo no se puede cambiar de paso.",
+        null
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.16.024",
+      "type": "concepto",
+      "level": 2,
+      "q": "En una hélice de paso fijo, el ángulo de ataque de la pala varía porque cambian:",
+      "options": [
+        "El octanaje y la temperatura",
+        "El número de palas y el cubo",
+        "La velocidad verdadera (TAS) y las RPM",
+        "Solo la presión de aceite"
+      ],
+      "correct": 2,
+      "why": "Con ángulo de pala constante, α = β − φ cambia al variar φ, que depende de TAS y RPM.",
+      "whyNot": [
+        "No intervienen en el ángulo de ataque de la pala.",
+        "Son fijos.",
+        null,
+        "No actúa sobre una pala de paso fijo."
+      ],
+      "ref": "Curso Tema 7"
+    },
+    {
+      "id": "020.16.025",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un ángulo de pala mayor significa que la hélice intenta avanzar:",
+      "options": [
+        "Una distancia menor por cada vuelta",
+        "Una distancia mayor por cada vuelta",
+        "Lo mismo por cada vuelta",
+        "Hacia atrás"
+      ],
+      "correct": 1,
+      "why": "El paso es el avance teórico por vuelta: crece con el ángulo de pala.",
+      "whyNot": [
+        "Es lo contrario: el menor ángulo da menor paso.",
+        null,
+        "Cambia el avance teórico por vuelta.",
+        "El avance hacia atrás solo ocurre con ángulo negativo (paso inverso)."
+      ],
+      "ref": "Curso Tema 7"
     }
   ],
   "cards": [
@@ -506,6 +821,26 @@
       "id": "c.020.16.05",
       "front": "Fallo de aceite al regulador (simple efecto)",
       "back": "Normalmente paso fino y RPM altas (según POH)"
+    },
+    {
+      "id": "c.020.16.06",
+      "front": "Hélice: principio y fuerzas",
+      "back": "Newton: acelera aire hacia atrás. Componente axial = empuje; tangencial = resistencia al giro"
+    },
+    {
+      "id": "c.020.16.07",
+      "front": "Paso variable: qué permite",
+      "back": "Controlar RPM independientemente de la presión de admisión"
+    },
+    {
+      "id": "c.020.16.08",
+      "front": "Embanderamiento y paso inverso",
+      "back": "Bandera: paso más grueso. Inverso: paso más fino, incluso negativo (empuje hacia atrás)"
+    },
+    {
+      "id": "c.020.16.09",
+      "front": "Paso fijo: ángulo de ataque",
+      "back": "Cambia con TAS y RPM, porque el ángulo de pala no cambia"
     }
   ]
 }

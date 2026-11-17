@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330">
+<title>Puntos de inflamación aproximados de los combustibles: a la derecha de cada valor, el vapor puede inflamarse con una chispa (esquema propio, valores orientativos)</title>
+<text x="320" y="22" class="tx b" text-anchor="middle">Punto de inflamación de cada combustible (valores orientativos)</text>
+<text x="40" y="48" class="tx" >Gasolina de aviación (AVGAS)</text>
+<rect x="40" y="54" width="80" height="22" class="soft"/>
+<rect x="120" y="54" width="480" height="22" class="wa"/>
+<text x="128" y="70" class="txw b" font-size="12">≈ −40 °C</text>
+<text x="40" y="100" class="tx" >Gasolina de automoción (mogas)</text>
+<rect x="40" y="106" width="68" height="22" class="soft"/>
+<rect x="108" y="106" width="492" height="22" class="wa"/>
+<text x="116" y="122" class="txw b" font-size="12">≈ −43 °C</text>
+<text x="40" y="152" class="tx" >Jet A-1 (queroseno)</text>
+<rect x="40" y="158" width="392" height="22" class="soft"/>
+<rect x="432" y="158" width="168" height="22" class="wa"/>
+<text x="440" y="174" class="txw b" font-size="12">≥ 38 °C</text>
+<text x="40" y="204" class="tx" >Diésel</text>
+<rect x="40" y="210" width="460" height="22" class="soft"/>
+<rect x="500" y="210" width="100" height="22" class="wa"/>
+<text x="508" y="226" class="txw b" font-size="12">> 55 °C</text>
+<line x1="340" y1="50" x2="340" y2="250" class="ac-ln thick dash"/>
+<text x="344" y="44" class="txa" font-size="11">ambiente típico: 15 °C</text>
+<line x1="40" y1="256" x2="600" y2="256" class="ln"/>
+<line x1="40" y1="251" x2="40" y2="261" class="ln"/>
+<text x="40" y="276" class="tx2" font-size="11" text-anchor="middle">−60</text>
+<line x1="120" y1="251" x2="120" y2="261" class="ln"/>
+<text x="120" y="276" class="tx2" font-size="11" text-anchor="middle">−40</text>
+<line x1="200" y1="251" x2="200" y2="261" class="ln"/>
+<text x="200" y="276" class="tx2" font-size="11" text-anchor="middle">−20</text>
+<line x1="280" y1="251" x2="280" y2="261" class="ln"/>
+<text x="280" y="276" class="tx2" font-size="11" text-anchor="middle">0</text>
+<line x1="360" y1="251" x2="360" y2="261" class="ln"/>
+<text x="360" y="276" class="tx2" font-size="11" text-anchor="middle">20</text>
+<line x1="440" y1="251" x2="440" y2="261" class="ln"/>
+<text x="440" y="276" class="tx2" font-size="11" text-anchor="middle">40</text>
+<line x1="520" y1="251" x2="520" y2="261" class="ln"/>
+<text x="520" y="276" class="tx2" font-size="11" text-anchor="middle">60</text>
+<line x1="600" y1="251" x2="600" y2="261" class="ln"/>
+<text x="600" y="276" class="tx2" font-size="11" text-anchor="middle">80</text>
+<text x="320" y="298" class="tx" text-anchor="middle">Temperatura del combustible (°C)</text>
+<text x="320" y="316" class="tx2" font-size="11" text-anchor="middle">Gris: el vapor es demasiado escaso para inflamarse. Rojo: con una chispa, el vapor se inflama.</text>
+</svg>

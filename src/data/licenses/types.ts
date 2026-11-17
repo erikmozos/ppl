@@ -17,6 +17,8 @@ export interface Block {
   caption?: string
   /** nota destacada: diferencia española, aviso o consejo */
   note?: { kind: 'es' | 'warn' | 'tip'; text: string }
+  /** «Para entenderlo»: comparaciones cotidianas, aunque sean tontas, que hacen intuitivo el concepto */
+  ideas?: string[]
 }
 
 export interface Question { q: string; options: string[]; correct: number; why: string }
@@ -96,6 +98,13 @@ export interface Lesson {
   reviewed: string
   /** enlaces a las cabinas o a otros módulos de la app */
   links?: { label: string; href: string }[]
+  /** esquema para estudiar: el tema en ramas cortas, para repasar de un vistazo */
+  outline?: { title: string; items: string[] }[]
+  mnemonics?: string[]
+  /** «Explícalo con tus palabras»: preguntas abiertas con su respuesta para autoevaluarse */
+  selfCheck?: { q: string; a: string }[]
+  /** de qué tema del curso de tus instructores sale la lección */
+  course?: string
 }
 
 export type QType = 'concepto' | 'regla' | 'calculo' | 'lectura'

@@ -60,6 +60,9 @@ for (const sub of PPL_SYLLABUS) {
     if (!Array.isArray(L.traps) || L.traps.length < 2) err(blk.id, 'traps: al menos 2')
     if (!Array.isArray(L.sources) || !L.sources.length || L.sources.some(s => !s.title)) err(blk.id, 'sources: al menos 1, todas con title')
     if (!DATE.test(L.reviewed ?? '')) err(blk.id, 'reviewed: AAAA-MM-DD')
+    if (L.outline !== undefined && (!Array.isArray(L.outline) || L.outline.some(o => !o.title || !Array.isArray(o.items) || !o.items.length))) err(blk.id, 'outline: [{title, items[]}]')
+    if (L.selfCheck !== undefined && (!Array.isArray(L.selfCheck) || L.selfCheck.some(o => !o.q || !o.a))) err(blk.id, 'selfCheck: [{q, a}]')
+    if (L.mnemonics !== undefined && (!Array.isArray(L.mnemonics) || L.mnemonics.some(x => typeof x !== 'string' || !x.trim()))) err(blk.id, 'mnemonics: array de textos')
     let lw = 0, figs = 0
     ;(L.sections ?? []).forEach((b, i) => {
       const w = `${blk.id} sección ${i + 1} «${b.title}»`
@@ -72,8 +75,10 @@ for (const sub of PPL_SYLLABUS) {
       }
       b.examples?.forEach(e => { if (!e.q || !e.a) err(w, 'ejemplo sin q o sin a') })
       if (b.note && (!['es', 'warn', 'tip'].includes(b.note.kind) || !b.note.text)) err(w, 'note: kind es|warn|tip y text')
+      if (b.ideas !== undefined && (!Array.isArray(b.ideas) || b.ideas.some(x => typeof x !== 'string' || !x.trim()))) err(w, 'ideas: array de textos')
+      b.ideas?.forEach(x => checkText(w + ' idea', x))
       checkFigure(w, b.figure); if (b.figure) figs++
-      lw += blockWords(b) + (b.note ? words(b.note.text) : 0)
+      lw += blockWords(b) + (b.note ? words(b.note.text) : 0) + (b.ideas ?? []).reduce((a, s) => a + words(s), 0)
     })
     const qs = data.questions ?? []
     const pos = [0, 0, 0, 0]

@@ -10,7 +10,7 @@ export const slug = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀
 /** Bloque de estudio: texto, viñetas, tabla, fórmulas, ejemplos resueltos y figura, con lectura en voz alta */
 export function StudyBlock({ b, level = 3 }: { b: Block; level?: 2 | 3 }) {
   const sp = useSpeech()
-  const toRead = [b.title, ...(b.text ?? []), ...(b.bullets ?? []), ...(b.formulas ?? []).map(f => `${f.f}. ${f.note ?? ''}`), ...(b.examples ?? []).map(e => `Ejemplo: ${e.q} Solución: ${e.a}`), b.note?.text ?? ''].map(plain).join('. ')
+  const toRead = [b.title, ...(b.text ?? []), ...(b.bullets ?? []), ...(b.formulas ?? []).map(f => `${f.f}. ${f.note ?? ''}`), ...(b.examples ?? []).map(e => `Ejemplo: ${e.q} Solución: ${e.a}`), ...(b.ideas ?? []), b.note?.text ?? ''].map(plain).join('. ')
   const H = level === 2 ? 'h2' : 'h3'
   return (
     <section className="block" id={slug(b.title)}>
@@ -51,6 +51,7 @@ export function StudyBlock({ b, level = 3 }: { b: Block; level?: 2 | 3 }) {
           ))}
         </div>
       )}
+      {b.ideas?.map((x, i) => <div key={i} className="callout idea"><b>Para entenderlo.</b> <Rich text={x} /></div>)}
       {b.note && <div className={`callout ${b.note.kind}`}><b>{NOTE[b.note.kind]}.</b> <Rich text={b.note.text} /></div>}
     </section>
   )

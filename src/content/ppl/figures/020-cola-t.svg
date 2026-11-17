@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260">
+<title>Cola convencional y cola en T, con la estela del ala a gran ángulo de ataque</title>
+<g>
+<path d="M10 130 L220 138 L290 150 L220 162 L10 168 Z" class="soft"/>
+<rect x="70" y="170" width="70" height="8" class="ac"/>
+<path d="M236 142 L262 86 L282 86 L284 148 Z" class="ac"/>
+<rect x="244" y="144" width="62" height="7" class="ac"/>
+<text x="160" y="40" class="tx b" text-anchor="middle">Cola convencional</text>
+<text x="160" y="196" class="tx2" text-anchor="middle">ala</text>
+<text x="272" y="76" class="tx2" text-anchor="middle">deriva</text>
+<text x="290" y="172" class="tx2" text-anchor="middle">estabilizador</text>
+<text x="160" y="222" class="tx2" text-anchor="middle">Horizontal bajo, fuera de la estela del ala</text>
+<text x="160" y="240" class="tx2" text-anchor="middle">Deriva sin cargas añadidas</text>
+</g>
+<g transform="translate(330 0)">
+<path d="M10 130 L220 138 L290 150 L220 162 L10 168 Z" class="soft"/>
+<rect x="70" y="170" width="70" height="8" class="ac"/>
+<path d="M236 142 L262 86 L282 86 L284 148 Z" class="ac"/>
+<rect x="246" y="82" width="62" height="7" class="ac"/>
+<polygon points="140,168 250,100 250,126 140,176" class="wa" stroke-dasharray="4 3"/>
+<text x="160" y="40" class="tx b" text-anchor="middle">Cola en T</text>
+<text x="120" y="100" class="txw" text-anchor="middle">estela del ala</text>
+<text x="120" y="114" class="txw" text-anchor="middle">en pérdida</text>
+<text x="160" y="222" class="tx2" text-anchor="middle">Horizontal en aire limpio: menos flutter</text>
+<text x="160" y="240" class="tx2" text-anchor="middle">Riesgo de pérdida profunda; deriva más fuerte</text>
+</g>
+</svg>

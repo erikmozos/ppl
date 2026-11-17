@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330">
+<title>Posiciones del ángulo de pala de una hélice de paso variable: fino, grueso, embanderada e inversa respecto al plano de rotación</title>
+<defs>
+<marker id="020-pasos-helice-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+</defs>
+<text x="320" y="22" class="tx2" text-anchor="middle">Sección de pala: el ángulo se mide entre la cuerda y el plano de rotación</text>
+<line x1="20" y1="120" x2="620" y2="120" class="ln2 dash"/>
+<text x="620" y="108" class="tx2" font-size="11" text-anchor="end">plano de rotación</text>
+<g transform="translate(95 200)">
+<ellipse cx="0" cy="0" rx="42" ry="7" transform="rotate(-10)" class="ac"/>
+<text x="0" y="50" class="tx b" text-anchor="middle">Paso fino</text>
+<text x="0" y="68" class="tx2" font-size="11" text-anchor="middle">ángulo pequeño</text>
+<text x="0" y="84" class="tx2" font-size="11" text-anchor="middle">despegue, RPM altas</text>
+</g>
+<g transform="translate(235 200)">
+<ellipse cx="0" cy="0" rx="42" ry="7" transform="rotate(-35)" class="ac"/>
+<text x="0" y="50" class="tx b" text-anchor="middle">Paso grueso</text>
+<text x="0" y="68" class="tx2" font-size="11" text-anchor="middle">ángulo grande</text>
+<text x="0" y="84" class="tx2" font-size="11" text-anchor="middle">crucero, RPM bajas</text>
+</g>
+<g transform="translate(375 200)">
+<ellipse cx="0" cy="0" rx="42" ry="7" transform="rotate(-85)" class="ok"/>
+<text x="0" y="50" class="txo b" text-anchor="middle">Embanderada</text>
+<text x="0" y="68" class="tx2" font-size="11" text-anchor="middle">casi 90°, paso más</text>
+<text x="0" y="84" class="tx2" font-size="11" text-anchor="middle">grueso: motor parado</text>
+</g>
+<g transform="translate(525 200)">
+<ellipse cx="0" cy="0" rx="42" ry="7" transform="rotate(12)" class="wa"/>
+<text x="0" y="50" class="txw b" text-anchor="middle">Paso inverso</text>
+<text x="0" y="68" class="tx2" font-size="11" text-anchor="middle">ángulo negativo:</text>
+<text x="0" y="84" class="tx2" font-size="11" text-anchor="middle">empuje hacia atrás</text>
+</g>
+<line x1="20" y1="300" x2="620" y2="300" class="ln thick" marker-end="url(#020-pasos-helice-f)"/>
+<text x="20" y="320" class="tx2" font-size="11">Rango de la hélice de paso variable: del paso más fino (e inverso) al más grueso (bandera)</text>
+</svg>

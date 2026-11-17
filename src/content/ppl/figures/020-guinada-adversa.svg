@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330">
+<title>Guiñada adversa: alabeo a la izquierda, mayor resistencia inducida en el ala derecha que sube y morro que guiña a la derecha (vista desde arriba, esquema propio)</title>
+<defs>
+<marker id="020-guinada-adversa-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker>
+<marker id="020-guinada-adversa-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker>
+</defs>
+<rect x="290" y="70" width="60" height="180" rx="28" class="soft"/>
+<rect x="30" y="130" width="262" height="46" class="soft"/>
+<rect x="348" y="130" width="262" height="46" class="soft"/>
+<rect x="250" y="230" width="140" height="22" class="soft"/>
+<rect x="38" y="160" width="86" height="16" class="ac"/>
+<rect x="516" y="160" width="86" height="16" class="ac"/>
+<text x="81" y="150" class="tx2" font-size="11" text-anchor="middle">alerón sube</text>
+<text x="559" y="150" class="tx2" font-size="11" text-anchor="middle">alerón baja</text>
+<line x1="81" y1="122" x2="81" y2="84" class="ac-ln thick" marker-end="url(#020-guinada-adversa-g)"/>
+<text x="81" y="64" class="txa" text-anchor="middle">menos sustentación</text>
+<text x="81" y="78" class="txa" text-anchor="middle" font-size="11">(el ala izquierda baja)</text>
+<line x1="559" y1="122" x2="559" y2="84" class="ac-ln thick" marker-end="url(#020-guinada-adversa-g)"/>
+<text x="559" y="64" class="txa" text-anchor="middle">más sustentación</text>
+<text x="559" y="78" class="txa" text-anchor="middle" font-size="11">(el ala derecha sube)</text>
+<line x1="480" y1="178" x2="480" y2="226" class="wa-ln thick" marker-end="url(#020-guinada-adversa-f)"/>
+<text x="530" y="248" class="txw" text-anchor="middle">más resistencia inducida</text>
+<line x1="150" y1="178" x2="150" y2="196" class="wa-ln thick" marker-end="url(#020-guinada-adversa-f)"/>
+<text x="110" y="216" class="txw" text-anchor="middle">menos resistencia</text>
+<path d="M300 66 Q 320 46 345 62" fill="none" class="wa-ln thick" marker-end="url(#020-guinada-adversa-f)"/>
+<text x="320" y="36" class="txw b" text-anchor="middle">el morro guiña a la derecha</text>
+<text x="320" y="296" class="tx" text-anchor="middle">Alabeo a la izquierda, guiñada a la derecha: sentidos opuestos</text>
+<text x="320" y="316" class="tx2" font-size="11" text-anchor="middle">El ala con más resistencia retrasa su lado y tira del morro hacia él</text>
+</svg>

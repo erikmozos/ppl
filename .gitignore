@@ -7,3 +7,6 @@ firestore.rules
 .firebase
 .DS_Store
 .claude/
+
+# material de los instructores (no se publica)
+course-material/

@@ -15,4 +15,8 @@ export const WIDGETS: Record<string, string> = {
   'calc:fuel': 'Velocidad, tiempo, distancia y combustible (litros, kilos y galones US).',
   'sim:vor': 'VOR: mueve el avión y el OBS y observa el CDI y la bandera TO/FROM.',
   'sim:adf': 'ADF/RBI: rumbo y marcación relativa → QDM, QDR y marcación magnética, con el instrumento dibujado.',
+  'sim:turbofan': 'Partes de un turbofán sobre la imagen numerada: explorar y pruébate.',
+  'sim:otto': 'Ciclo de cuatro tiempos animado: válvulas, pistón, bujías y ángulo de cigüeñal.',
+  'sim:tabs': 'Tabs de compensación (balance, antibalance, servo, spring y trim): sentido, esfuerzo y eficacia.',
+  'calc:ohm': 'Ley de Ohm con una resistencia o dos en serie o en paralelo: corriente y potencia.',
 }

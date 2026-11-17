@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330">
+<title>Curva de esfuerzo y deformación: zona elástica, límite elástico, zona plástica y rotura</title>
+<defs><marker id="020-esfuerzo-deformacion-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" class="ink-fill"/></marker></defs>
+<rect x="80" y="40" width="140" height="220" class="ok"/>
+<rect x="220" y="40" width="280" height="220" class="wa"/>
+<line x1="80" y1="260" x2="80" y2="30" class="ln" marker-end="url(#020-esfuerzo-deformacion-f)"/>
+<line x1="80" y1="260" x2="580" y2="260" class="ln" marker-end="url(#020-esfuerzo-deformacion-f)"/>
+<line x1="80" y1="260" x2="220" y2="130" class="ac-ln thick"/>
+<path d="M220 130 Q300 92 400 82 Q455 80 480 112" class="ac-ln thick" fill="none"/>
+<line x1="472" y1="102" x2="490" y2="122" class="wa-ln thick"/>
+<line x1="490" y1="102" x2="472" y2="122" class="wa-ln thick"/>
+<line x1="80" y1="130" x2="220" y2="130" class="ln2 dash"/>
+<line x1="220" y1="130" x2="220" y2="260" class="ln2 dash"/>
+<line x1="400" y1="82" x2="171" y2="260" class="ln2 dash"/>
+<line x1="80" y1="276" x2="171" y2="276" class="ok-ln thick"/>
+<text x="125" y="296" class="txo b" text-anchor="middle">permanente</text>
+<text x="138" y="238" class="txo b" text-anchor="middle">Zona</text>
+<text x="138" y="254" class="txo b" text-anchor="middle">elástica</text>
+<text x="360" y="200" class="txw b" text-anchor="middle">Zona plástica</text>
+<text x="360" y="218" class="tx2" text-anchor="middle">al soltar queda deformación permanente</text>
+<text x="88" y="122" class="tx2">Límite elástico</text>
+<text x="400" y="68" class="tx2" text-anchor="middle">resistencia máxima</text>
+<text x="496" y="98" class="txw b">Rotura</text>
+<text x="90" y="24" class="tx2">Esfuerzo (σ)</text>
+<text x="580" y="284" class="tx2" text-anchor="end">Deformación (ε)</text>
+<text x="132" y="176" class="tx2" text-anchor="middle" transform="rotate(-43 132 176)">recta: E = σ / ε</text>
+</svg>

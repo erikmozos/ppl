@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 370">
+<title>Masas estructurales máximas: rampa, despegue, aterrizaje y sin combustible, con un ejemplo no a escala</title>
+<rect x="60" y="285" width="90" height="55" class="soft"/>
+<rect x="60" y="225" width="90" height="60" class="ac"/>
+<rect x="60" y="105" width="90" height="120" class="ok"/>
+<rect x="60" y="60" width="90" height="45" class="wa"/>
+<text x="105" y="318" class="tx b" text-anchor="middle">Vacío</text>
+<text x="105" y="260" class="txa b" text-anchor="middle">Carga</text>
+<text x="105" y="170" class="txo b" text-anchor="middle">Combustible</text>
+<text x="105" y="86" class="txw b" font-size="11" text-anchor="middle">Rodaje</text>
+<line x1="150" y1="225" x2="640" y2="225" class="ln dash"/>
+<line x1="150" y1="160" x2="640" y2="160" class="ac-ln dash"/>
+<line x1="150" y1="105" x2="640" y2="105" class="ln dash"/>
+<line x1="150" y1="60" x2="640" y2="60" class="ln dash"/>
+<text x="168" y="218" class="tx b">MZFM  61 000 kg</text>
+<text x="168" y="241" class="tx2">sin combustible: el ala se flecta más con los depósitos vacíos</text>
+<text x="168" y="153" class="txa b">MSLM  64 500 kg</text>
+<text x="168" y="176" class="tx2">aterrizaje: masa de despegue menos combustible del viaje</text>
+<text x="168" y="98" class="tx b">MTOM  73 500 kg</text>
+<text x="168" y="121" class="tx2">estructura y performance, al empezar la carrera de despegue</text>
+<text x="168" y="53" class="tx b">Masa máxima de rodaje (rampa)  73 800 kg</text>
+<text x="168" y="76" class="tx2">al salir del puesto; hasta el despegue se quema combustible</text>
+<text x="168" y="316" class="tx2">Masa en vacío operativa 42 000 kg: no cuenta como carga</text>
+<text x="168" y="352" class="tx2">Cifras de ejemplo, no a escala</text>
+</svg>

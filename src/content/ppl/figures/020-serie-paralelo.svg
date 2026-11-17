@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330">
+<title>Circuito en serie y circuito en paralelo con una batería y dos resistencias: corriente, tensión y resistencia total</title>
+<defs>
+<marker id="020-serie-paralelo-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+</defs>
+<text x="150" y="26" class="tx b" text-anchor="middle">Serie: un solo camino</text>
+<text x="490" y="26" class="tx b" text-anchor="middle">Paralelo: dos caminos</text>
+<line x1="320" y1="14" x2="320" y2="310" class="ln2 dash"/>
+<!-- serie -->
+<polyline points="40,108 40,60 85,60" class="ln" fill="none"/>
+<rect x="85" y="48" width="56" height="24" class="soft"/>
+<text x="113" y="65" class="tx b" text-anchor="middle">R1</text>
+<polyline points="141,60 175,60" class="ln" fill="none"/>
+<rect x="175" y="48" width="56" height="24" class="soft"/>
+<text x="203" y="65" class="tx b" text-anchor="middle">R2</text>
+<polyline points="231,60 270,60 270,170 40,170 40,132" class="ln" fill="none"/>
+<line x1="26" y1="108" x2="54" y2="108" class="ln thick"/>
+<line x1="33" y1="120" x2="47" y2="120" class="ln thick"/>
+<text x="62" y="118" class="tx2" font-size="11">Batería</text>
+<line x1="150" y1="40" x2="190" y2="40" class="ac-ln" marker-end="url(#020-serie-paralelo-f)"/>
+<text x="160" y="36" class="txa b" font-size="12" text-anchor="middle">I</text>
+<text x="150" y="205" class="tx" text-anchor="middle">R total = R1 + R2</text>
+<text x="150" y="226" class="txa" text-anchor="middle">La misma corriente en todo</text>
+<text x="150" y="247" class="tx" text-anchor="middle">La tensión se reparte</text>
+<text x="150" y="268" class="txw" text-anchor="middle">Si uno se abre, se corta todo</text>
+<!-- paralelo -->
+<polyline points="360,108 360,60 620,60" class="ln" fill="none"/>
+<polyline points="360,132 360,170 620,170" class="ln" fill="none"/>
+<line x1="346" y1="108" x2="374" y2="108" class="ln thick"/>
+<line x1="353" y1="120" x2="367" y2="120" class="ln thick"/>
+<text x="382" y="118" class="tx2" font-size="11">Batería</text>
+<line x1="470" y1="60" x2="470" y2="88" class="ln"/>
+<rect x="450" y="88" width="40" height="44" class="soft"/>
+<text x="470" y="115" class="tx b" text-anchor="middle">R1</text>
+<line x1="470" y1="132" x2="470" y2="170" class="ln"/>
+<line x1="560" y1="60" x2="560" y2="88" class="ln"/>
+<rect x="540" y="88" width="40" height="44" class="soft"/>
+<text x="560" y="115" class="tx b" text-anchor="middle">R2</text>
+<line x1="560" y1="132" x2="560" y2="170" class="ln"/>
+<line x1="428" y1="76" x2="428" y2="96" class="ac-ln" marker-end="url(#020-serie-paralelo-f)"/>
+<text x="420" y="90" class="txa b" font-size="12" text-anchor="end">I1</text>
+<line x1="518" y1="76" x2="518" y2="96" class="ac-ln" marker-end="url(#020-serie-paralelo-f)"/>
+<text x="510" y="90" class="txa b" font-size="12" text-anchor="end">I2</text>
+<text x="490" y="205" class="tx" text-anchor="middle">1/R total = 1/R1 + 1/R2</text>
+<text x="490" y="226" class="txa" text-anchor="middle">La misma tensión en cada rama</text>
+<text x="490" y="247" class="tx" text-anchor="middle">La corriente se reparte: I = I1 + I2</text>
+<text x="490" y="268" class="txo" text-anchor="middle">Si una rama se abre, la otra sigue</text>
+<text x="320" y="306" class="tx2" font-size="11" text-anchor="middle">Los consumidores de un avión van en paralelo a la barra</text>
+</svg>
