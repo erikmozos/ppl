@@ -9,7 +9,7 @@ export const readingMinutes = (l: Lesson) => Math.max(3, Math.round(JSON.stringi
 export function LessonView({ l }: { l: Lesson }) {
   return (
     <article className="lesson">
-      {l.course && <p className="course-tag">Según tu curso · {l.course}</p>}
+      {l.course && <p className="course-tag">Curso DreamAir · {l.course}</p>}
       <section className="objectives">
         <h2>Al terminar sabrás</h2>
         <ul className="study-list">{l.objectives.map((o, i) => <li key={i}><Rich text={o} /></li>)}</ul>

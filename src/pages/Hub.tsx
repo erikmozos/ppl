@@ -38,6 +38,11 @@ export function Hub() {
       )}
 
       <section className="index-rows">
+        <a className="index-row" href="#/dreamair">
+          <span className="index-k">DreamAir</span>
+          <span className="index-body"><b>Tu escuela de vuelo</b><span className="muted">Las asignaturas tal como las dan tus instructores, tema a tema: lecciones ampliadas, ejemplos para entenderlo, esquemas, autoevaluación, preguntas y fichas.</span></span>
+          <Icon name="right" />
+        </a>
         <a className="index-row" href="#/licencias/ppl">
           <span className="index-k">PPL(A)</span>
           <span className="index-body"><b>Temario completo y simulador de examen</b><span className="muted">9 materias y {blocks} lecciones con preguntas explicadas, fichas con repaso espaciado, simulacros con los tiempos de AESA y gestor de la convocatoria.{read ? ` Llevas ${read} lecciones.` : ''}</span></span>

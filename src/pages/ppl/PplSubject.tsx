@@ -60,26 +60,7 @@ export function PplSubject({ syl, sub, tab }: { syl: SyllabusSubject; sub?: Subj
             </li>
           )
         }
-        if (!syl.course) return <ol className="lesson-list">{syl.blocks.map(row)}</ol>
-        const inCourse = new Set(syl.course.flatMap(c => c.blocks))
-        const rest = syl.blocks.filter(b => !inCourse.has(b.id))
-        return (
-          <div>
-            <p className="muted small">Ordenado como el temario de tus instructores. Al final, los bloques del temario oficial que el curso todavía no ha dado.</p>
-            {syl.course.map(c => (
-              <div key={c.title}>
-                <p className="course-group">{c.title}</p>
-                <ol className="lesson-list">{c.blocks.map(id => syl.blocks.find(b => b.id === id)!).filter(Boolean).map(row)}</ol>
-              </div>
-            ))}
-            {rest.length > 0 && (
-              <div>
-                <p className="course-group">Resto del temario oficial <span className="muted small">(no está en las diapositivas del curso)</span></p>
-                <ol className="lesson-list">{rest.map(row)}</ol>
-              </div>
-            )}
-          </div>
-        )
+        return <ol className="lesson-list">{syl.blocks.map(row)}</ol>
       })()}
       {t === 'resumen' && <SubjectSummary syl={syl} />}
       {t === 'practicar' && <PracticeSetup syl={syl} />}
@@ -111,7 +92,7 @@ export function readyText(r: ReturnType<typeof readiness>) {
   return parts.join(' · ') || 'En progreso'
 }
 
-function PracticeSetup({ syl }: { syl: SyllabusSubject }) {
+export function PracticeSetup({ syl, only }: { syl: SyllabusSubject; only?: string[] }) {
   const s = useStore()
   const files = useLessons(syl.code)
   const [sel, setSel] = useState<Set<string>>(new Set())
@@ -120,10 +101,10 @@ function PracticeSetup({ syl }: { syl: SyllabusSubject }) {
   const [calc, setCalc] = useState(true)
   const [run, setRun] = useState<{ key: number; qs: ReturnType<typeof generateMany> } | null>(null)
   if (!files) return <p className="muted">Cargando preguntas…</p>
-  const blocks = files.map(f => f.lesson.id)
-  const pool = files.filter(f => !sel.size || sel.has(f.lesson.id)).flatMap(f => f.questions)
+  const blocks = files.map(f => f.lesson.id).filter(id => !only || only.includes(id))
+  const pool = files.filter(f => (!sel.size && (!only || only.includes(f.lesson.id))) || sel.has(f.lesson.id)).flatMap(f => f.questions)
     .filter(q => filter === 'todas' || (filter === 'nuevas' ? !s.study.q[q.id] : s.study.q[q.id] && !s.study.q[q.id].last))
-  const genBlocks = (sel.size ? [...sel] : syl.blocks.map(b => b.id)).filter(hasGenerator)
+  const genBlocks = (sel.size ? [...sel] : only ?? syl.blocks.map(b => b.id)).filter(hasGenerator)
   function start() {
     const g = calc && filter !== 'falladas' ? generateMany(Math.round(n / 5), genBlocks) : []
     setRun({ key: Date.now(), qs: shuffle([...shuffle(pool).slice(0, n - g.length), ...g]) })
@@ -148,7 +129,7 @@ function PracticeSetup({ syl }: { syl: SyllabusSubject }) {
   )
 }
 
-function SubjectCards({ syl }: { syl: SyllabusSubject }) {
+export function SubjectCards({ syl }: { syl: SyllabusSubject }) {
   const s = useStore()
   const files = useLessons(syl.code)
   const [mode, setMode] = useState<'due' | 'all' | null>(null)
@@ -175,11 +156,10 @@ function SubjectCards({ syl }: { syl: SyllabusSubject }) {
 }
 
 /** Resumen para estudiar e imprimir: esquema, cifras, mnemotecnias y trampas de cada lección */
-function SubjectSummary({ syl }: { syl: SyllabusSubject }) {
+export function SubjectSummary({ syl, order: given }: { syl: SyllabusSubject; order?: string[] }) {
   const files = useLessons(syl.code)
   if (!files) return <p className="muted">Cargando…</p>
-  const order = syl.course ? [...syl.course.flatMap(c => c.blocks), ...syl.blocks.map(b => b.id)] : syl.blocks.map(b => b.id)
-  const ids = [...new Set(order)]
+  const ids = given ?? syl.blocks.map(b => b.id)
   const list = ids.map(id => files.find(f => f.lesson.id === id)).filter(Boolean) as typeof files
   return (
     <div className="summary-print narrow-doc">

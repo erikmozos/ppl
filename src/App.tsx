@@ -11,6 +11,8 @@ import { syllabusById } from './data/licenses/ppl-syllabus'
 import { PplHome } from './pages/ppl/PplHome'
 import { PplSubject } from './pages/ppl/PplSubject'
 import { PplLesson } from './pages/ppl/PplLesson'
+import { DreamAirHome, DreamAirLesson, DreamAirSubject } from './pages/DreamAir'
+import { schoolSubject } from './data/school'
 import { AircraftPage } from './pages/AircraftPage'
 import { FlowPage } from './pages/FlowPage'
 import { Editor } from './pages/Editor'
@@ -49,6 +51,13 @@ export function App() {
     else if (parts[2] === 'spots') page = <SpotEditor ac={ac} />
     else if (parts[2] === 'edit') page = <Editor key={parts[3] ?? 'new'} ac={ac} flowId={parts[3]} hotspots={query.get('tab') === 'hotspots'} />
     else page = <AircraftPage ac={ac} tab={query.get('tab') ?? 'guide'} />
+  } else if (parts[0] === 'dreamair') {
+    const sub = parts[1] ? schoolSubject(parts[1]) : undefined
+    const tab = query.get('tab') ?? ''
+    if (!parts[1]) page = <DreamAirHome />
+    else if (!sub) page = <NotFound />
+    else if (parts[2]) page = <DreamAirLesson key={parts[2]} sub={sub} id={parts[2]} tab={tab} />
+    else page = <DreamAirSubject key={sub.id} sub={sub} tab={tab} />
   } else if (parts[0] === 'licencias' && parts[1] === 'ppl') {
     const syl = parts[2] ? syllabusById(parts[2]) : undefined
     const tab = query.get('tab') ?? ''
@@ -79,7 +88,7 @@ export function App() {
         </a>
         <button className="menu-btn" aria-label="Menú" aria-expanded={menu} onClick={() => setMenu(m => !m)}><Icon name={menu ? 'x' : 'menu'} size={20} /></button>
         <nav className={menu ? 'open' : ''}>
-          {([['licencias/ppl', 'PPL'], ['licencias', 'Licencias'], ['cockpits', 'Cockpits'], ['progress', 'Progreso'], ['guia', 'Guía']] as const).map(([href, label]) => {
+          {([['dreamair', 'DreamAir'], ['licencias/ppl', 'PPL'], ['licencias', 'Licencias'], ['cockpits', 'Cockpits'], ['progress', 'Progreso'], ['guia', 'Guía']] as const).map(([href, label]) => {
             const on = href === 'licencias/ppl' ? parts[0] === 'licencias' && parts[1] === 'ppl' : href === 'licencias' ? parts[0] === 'licencias' && parts[1] !== 'ppl' : parts[0] === href
             return <a key={href} href={`#/${href}`} className={on ? 'on' : ''} aria-current={on ? 'page' : undefined}>{label}</a>
           })}

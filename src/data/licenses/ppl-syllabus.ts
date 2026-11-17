@@ -3,8 +3,6 @@
 
 export interface SyllabusBlock { id: string; title: string; topics: string; target: number }
 export interface SyllabusSubject {
-  /** temas del curso de los instructores, con los bloques que cubre cada uno */
-  course?: { title: string; blocks: string[] }[]
   code: string
   id: string
   name: string
@@ -850,62 +848,6 @@ export const PPL_SYLLABUS: SyllabusSubject[] = [
         "title": "Comunicaciones, avisos y pantallas",
         "topics": "VHF, HF y satélite; aviso de pérdida neumático o eléctrico; pantallas electrónicas, AHRS y ordenador de datos de aire",
         "target": 12
-      }
-    ],
-    "course": [
-      {
-        "title": "Tema 1 · Fuselaje y estructura",
-        "blocks": [
-          "020.01",
-          "020.02",
-          "020.03"
-        ]
-      },
-      {
-        "title": "Tema 2 · Mandos de vuelo",
-        "blocks": [
-          "020.04"
-        ]
-      },
-      {
-        "title": "Tema 3 · Sistemas neumáticos y presurización",
-        "blocks": [
-          "020.25"
-        ]
-      },
-      {
-        "title": "Tema 4 · Antihielo y deshielo",
-        "blocks": [
-          "020.05"
-        ]
-      },
-      {
-        "title": "Tema 5 · Sistema de combustible",
-        "blocks": [
-          "020.06",
-          "020.10"
-        ]
-      },
-      {
-        "title": "Tema 6 · Electricidad",
-        "blocks": [
-          "020.07",
-          "020.08"
-        ]
-      },
-      {
-        "title": "Tema 7 · Motores y hélices",
-        "blocks": [
-          "020.09",
-          "020.11",
-          "020.12",
-          "020.13",
-          "020.14",
-          "020.15",
-          "020.16",
-          "020.17",
-          "020.18"
-        ]
       }
     ]
   },
