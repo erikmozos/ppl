@@ -18,6 +18,7 @@ let prefs = loadPrefs()
 let voices: SpeechSynthesisVoice[] = []
 /** audios neuronales pregenerados (npm run audio): hashes disponibles en /audio */
 let neural = new Set<string>()
+let lessonAudio = new Set<string>()
 let neuralVoice = ''
 const subs = new Set<() => void>()
 let snap = { prefs, voices, speaking: false, supported, neuralCount: 0, neuralVoice }
@@ -34,6 +35,7 @@ export function textHash(t: string) {
 }
 
 if (typeof window !== 'undefined' && typeof fetch !== 'undefined') {
+  fetch('/audio/lessons/manifest.json').then(r => (r.ok ? r.json() : null)).then((m: { files: string[] } | null) => { if (m) { lessonAudio = new Set(m.files); emit() } }).catch(() => {})
   fetch('/audio/manifest.json').then(r => (r.ok ? r.json() : null)).then((m: { voice: string; files: string[] } | null) => {
     if (m) { neural = new Set(m.files); neuralVoice = m.voice; emit() }
   }).catch(() => {})
@@ -81,9 +83,10 @@ export function speak(text: string): Promise<void> {
   if (supported) speechSynthesis.cancel()
   audio?.pause()
   const h = textHash(text)
-  if (prefs.engine === 'neural' && neural.has(h)) {
+  const src = lessonAudio.has(h) ? `/audio/lessons/${h}.m4a` : neural.has(h) ? `/audio/${h}.m4a` : null
+  if (prefs.engine === 'neural' && src) {
     return new Promise(resolve => {
-      const a = new Audio(`/audio/${h}.m4a`)
+      const a = new Audio(src)
       audio = a
       a.playbackRate = prefs.rate
       const done = () => { if (my === token) emit(); resolve() }

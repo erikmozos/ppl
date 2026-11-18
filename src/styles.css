@@ -720,3 +720,56 @@ input[type=file] { max-width: 100%; }
 }
 .tf-img { width: 100%; max-width: 640px; display: block; margin: 0 auto; border-radius: 6px; background: #fff; }
 .seg-row button.bad { background: var(--bad-soft); color: var(--bad); }
+
+/* Modo paso a paso */
+.steps-mode { display: grid; gap: 14px; max-width: 760px; }
+.steps-top { display: grid; gap: 6px; position: sticky; top: 56px; z-index: 4; background: var(--bg); padding: 8px 0; }
+.step-card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px 24px; display: grid; gap: 12px; animation: stepIn .25s ease; }
+.step-card h2 { margin: 0; }
+.step-card.end { text-align: left; }
+.step-k { font-size: 13px; color: var(--muted); margin: 0; font-weight: 600; }
+.step-text { font-size: 17px; line-height: 1.6; margin: 0; color: var(--text); }
+.idea-hero { background: var(--ok-soft); border-radius: 10px; padding: 14px 16px; }
+.idea-hero span { font-size: 12px; font-weight: 700; color: var(--ok); text-transform: none; }
+.idea-hero p { margin: 4px 0 0; font-size: 17px; line-height: 1.5; color: var(--text); }
+.step-more { display: grid; gap: 10px; border-top: 1px solid var(--line); padding-top: 10px; }
+.steps-nav { display: flex; justify-content: space-between; gap: 10px; }
+@keyframes stepIn { from { opacity: 0; transform: translateY(6px); } }
+@media (max-width: 600px) { .step-card { padding: 16px; } .step-text, .idea-hero p { font-size: 16px; } .steps-top { top: 0; } }
+@media (prefers-reduced-motion: reduce) { .step-card { animation: none; } }
+
+/* Móvil: estudiar en el metro con una mano */
+.swipe-hint, .steps-count { display: none; }
+.top { padding-left: max(24px, env(safe-area-inset-left)); padding-right: max(24px, env(safe-area-inset-right)); }
+@media (max-width: 600px) {
+  .top { padding-top: env(safe-area-inset-top); padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
+  .wrap { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
+  .page-head.compact-sm .lead, .page-head.compact-sm .meta, .page-head.compact-sm .crumb { display: none; }
+  .page-head.compact-sm h1 { font-size: 22px; margin: 4px 0 0; }
+  .page-head { margin-bottom: 10px; }
+  .tabs { margin-bottom: 14px; }
+  .tabs a { padding: 10px 10px; font-size: 14px; }
+  .steps-top { position: static; padding: 0; }
+  .steps-mode { padding-bottom: 84px; gap: 10px; }
+  .steps-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; background: var(--surface); border-top: 1px solid var(--line); padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); align-items: center; }
+  .steps-bar .btn { min-height: 46px; padding: 8px 18px; font-size: 16px; }
+  .steps-bar .btn.primary { flex: 1; max-width: 220px; margin-left: auto; }
+  .steps-count { display: inline; margin: 0 8px; }
+  .hide-sm { display: none; }
+  .swipe-hint { display: block; text-align: center; margin: 0; }
+  .step-card { border-radius: 10px; padding: 16px; gap: 10px; }
+  .step-card h2 { font-size: 20px; }
+  .option { padding: 13px 12px; min-height: 48px; }
+  .icon-btn { width: 40px; height: 40px; }
+  .check .steps-nav .btn { min-height: 46px; flex: 1; }
+  .numbers li { padding: 8px 12px; }
+  .outline { grid-template-columns: 1fr; }
+  .lesson-list li { padding: 14px 0; }
+  .lesson-body a { display: block; padding: 2px 0; }
+  .continue a { min-width: 0; width: 100%; }
+  .index-row { padding: 16px 2px; }
+  .exam-grid .cell { width: 38px; height: 36px; }
+  .grades .btn { flex: 1 1 40%; min-height: 46px; }
+  table.study-table { font-size: 14px; }
+  .fig-wrap { margin: 10px -4px; }
+}

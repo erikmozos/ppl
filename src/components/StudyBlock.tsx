@@ -1,5 +1,6 @@
 import type { Block } from '../data/licenses/types'
-import { Rich, plain } from './Rich'
+import { Rich } from './Rich'
+import { blockSpeech } from '../study/narration'
 import { speak, stopSpeech, useSpeech } from '../speech'
 import { Figure } from './Figure'
 import { Icon } from './Icon'
@@ -10,7 +11,7 @@ export const slug = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀
 /** Bloque de estudio: texto, viñetas, tabla, fórmulas, ejemplos resueltos y figura, con lectura en voz alta */
 export function StudyBlock({ b, level = 3 }: { b: Block; level?: 2 | 3 }) {
   const sp = useSpeech()
-  const toRead = [b.title, ...(b.text ?? []), ...(b.bullets ?? []), ...(b.formulas ?? []).map(f => `${f.f}. ${f.note ?? ''}`), ...(b.examples ?? []).map(e => `Ejemplo: ${e.q} Solución: ${e.a}`), ...(b.ideas ?? []), b.note?.text ?? ''].map(plain).join('. ')
+  const toRead = blockSpeech(b)
   const H = level === 2 ? 'h2' : 'h3'
   return (
     <section className="block" id={slug(b.title)}>

@@ -6,7 +6,7 @@ import { blockStats, readiness } from '../study/exam'
 import { useStore } from '../store'
 import { Icon } from '../components/Icon'
 import { PracticeSetup, SubjectCards, SubjectSummary, readyText } from './ppl/PplSubject'
-import { ExamCenter } from './ppl/parts'
+import { ExamCenter, dueKeys } from './ppl/parts'
 import { PplLesson, type LessonCtx } from './ppl/PplLesson'
 
 const courseBlocks = (s: SchoolSubject) => s.temas.flatMap(t => t.blocks)
@@ -22,6 +22,7 @@ export function DreamAirHome() {
         <h1>{SCHOOL.name}</h1>
         <p className="lead">{SCHOOL.summary}</p>
       </header>
+      <ContinueBar />
       <section className="index-rows">
         {SCHOOL_SUBJECTS.map(sub => {
           const ids = courseBlocks(sub)
@@ -109,11 +110,31 @@ export function DreamAirLesson({ sub, id, tab }: { sub: SchoolSubject; id: strin
   const syl = syllabusByCode(sub.code)!
   const order = [...courseBlocks(sub), ...syl.blocks.map(b => b.id).filter(x => !courseBlocks(sub).includes(x))]
   const ctx: LessonCtx = {
-    home: `#/dreamair/${sub.id}`, homeLabel: `${SCHOOL.name} · ${sub.short}`,
+    stepsFirst: true, home: `#/dreamair/${sub.id}`, homeLabel: `${SCHOOL.name} · ${sub.short}`,
     lesson: x => `#/dreamair/${sub.id}/${x}`,
     order: order.map(x => syl.blocks.find(b => b.id === x)!),
     sideTitle: `Curso de ${sub.short}`,
     end: { href: `#/dreamair/${sub.id}?tab=simulacro`, label: 'Simulacro de la asignatura' },
   }
   return <PplLesson syl={syl} id={id} tab={tab} ctx={ctx} />
+}
+
+/** Por dónde seguir: la primera lección del curso sin leer y el repaso pendiente */
+function ContinueBar() {
+  const s = useStore()
+  const due = dueKeys(s.study)
+  const n = due.q.length + due.c.length
+  let next: { sub: SchoolSubject; id: string; title: string } | null = null
+  for (const sub of SCHOOL_SUBJECTS) {
+    const syl = syllabusByCode(sub.code)!
+    const id = courseBlocks(sub).find(x => hasLesson(x) && !s.study.lessons[x])
+    if (id) { next = { sub, id, title: syl.blocks.find(b => b.id === id)!.title }; break }
+  }
+  if (!next && !n) return null
+  return (
+    <section className="continue">
+      {next && <a href={`#/dreamair/${next.sub.id}/${next.id}`}><span className="muted small">Seguir con {next.sub.short}</span><b>{next.title}</b></a>}
+      {n > 0 && <a href="#/licencias/ppl?tab=repaso"><span className="muted small">Repaso de hoy</span><b>{n} preguntas y fichas pendientes</b></a>}
+    </section>
+  )
 }

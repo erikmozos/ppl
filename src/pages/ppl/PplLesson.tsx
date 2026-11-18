@@ -6,10 +6,11 @@ import { actions, useStore } from '../../store'
 import { LessonToc, LessonView, readingMinutes } from '../../components/LessonView'
 import { Practice } from '../../components/Practice'
 import { CardReview } from '../../components/CardReview'
+import { LessonSteps } from '../../components/LessonSteps'
 import { Icon } from '../../components/Icon'
 
 /** Contexto de navegación: el PPL general (orden oficial) o la sección de la escuela (orden del curso) */
-export interface LessonCtx { home: string; homeLabel: string; lesson: (id: string) => string; order: { id: string; title: string }[]; sideTitle: string; end: { href: string; label: string } }
+export interface LessonCtx { stepsFirst?: boolean; home: string; homeLabel: string; lesson: (id: string) => string; order: { id: string; title: string }[]; sideTitle: string; end: { href: string; label: string } }
 
 export function PplLesson({ syl, id, tab, ctx: given }: { syl: SyllabusSubject; id: string; tab: string; ctx?: LessonCtx }) {
   const ctx: LessonCtx = given ?? { home: `#/licencias/ppl/${syl.id}`, homeLabel: `${syl.code} ${syl.name}`, lesson: x => `#/licencias/ppl/${syl.id}/${x}`, order: syl.blocks, sideTitle: `Temario de ${syl.name.toLowerCase()}`, end: { href: `#/licencias/ppl/${syl.id}?tab=simulacro`, label: 'Simulacro de la materia' } }
@@ -19,14 +20,14 @@ export function PplLesson({ syl, id, tab, ctx: given }: { syl: SyllabusSubject; 
   const idx = ctx.order.findIndex(b => b.id === id)
   const prev = ctx.order[idx - 1], next = ctx.order[idx + 1]
   const base = ctx.lesson(id)
-  const t = tab === 'preguntas' || tab === 'fichas' ? tab : 'leccion'
+  const t = ['preguntas', 'fichas', 'pasos', 'leccion'].includes(tab) ? tab : ctx.stepsFirst ? 'pasos' : 'leccion'
   const questions = useMemo(() => (file ? [...file.questions, ...(hasGenerator(id) ? Array.from({ length: 5 }, () => generate(id)) : [])] : []), [file, id])
   const read = !!s.study.lessons[id]
   useEffect(() => { window.scrollTo({ top: 0 }) }, [id, t])
 
   if (!blk) return <div className="wrap"><p>Lección no encontrada.</p></div>
   const head = (
-    <header className="page-head">
+    <header className={`page-head ${t === 'pasos' ? 'compact-sm' : ''}`}>
       <a className="back" href={ctx.home}><Icon name="left" size={14} /> {ctx.homeLabel}</a>
       <p className="crumb">Lección {idx + 1} de {ctx.order.length} · <span className="mono">{id}</span></p>
       <h1>{file?.lesson.title ?? blk.title}</h1>
@@ -50,7 +51,8 @@ export function PplLesson({ syl, id, tab, ctx: given }: { syl: SyllabusSubject; 
         <div className="doc-main">
           {head}
           <nav className="tabs" role="tablist">
-            <a role="tab" aria-selected={t === 'leccion'} className={t === 'leccion' ? 'on' : ''} href={base}>Lección</a>
+            <a role="tab" aria-selected={t === 'pasos'} className={t === 'pasos' ? 'on' : ''} href={`${base}?tab=pasos`}>Paso a paso</a>
+            <a role="tab" aria-selected={t === 'leccion'} className={t === 'leccion' ? 'on' : ''} href={`${base}?tab=leccion`}>Lección completa</a>
             <a role="tab" aria-selected={t === 'preguntas'} className={t === 'preguntas' ? 'on' : ''} href={`${base}?tab=preguntas`}>Preguntas ({questions.length})</a>
             <a role="tab" aria-selected={t === 'fichas'} className={t === 'fichas' ? 'on' : ''} href={`${base}?tab=fichas`}>Fichas ({file.cards.length})</a>
           </nav>
@@ -65,6 +67,7 @@ export function PplLesson({ syl, id, tab, ctx: given }: { syl: SyllabusSubject; 
               </div>
             </>
           )}
+          {t === 'pasos' && <LessonSteps key={id} file={file} onDone={() => { location.hash = `${base.slice(1)}?tab=preguntas` }} />}
           {t === 'preguntas' && <Practice questions={questions} mode="leccion" title={l.title} />}
           {t === 'fichas' && <CardReview key={id} cards={file.cards} />}
           <LessonNav ctx={ctx} prev={prev} next={next} />
