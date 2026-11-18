@@ -56,3 +56,12 @@ export function useLesson(id: string): LessonFile | null | undefined {
 }
 
 export const questionsOf = (files: LessonFile[]): BankQuestion[] => files.flatMap(f => f.questions)
+
+/** Descarga todo el temario y sus figuras para tenerlo en la caché (uso sin conexión en la PWA) */
+export async function preloadAll(onProgress?: (done: number, total: number) => void) {
+  const jobs: (() => Promise<unknown>)[] = [...LESSON_IDS.map(id => () => loadLesson(id)), ...[...figurePath.keys()].map(n => () => loadFigure(n)), () => import('../components/widgets')]
+  let done = 0
+  for (let i = 0; i < jobs.length; i += 8) {
+    await Promise.all(jobs.slice(i, i + 8).map(j => j().catch(() => null).then(() => onProgress?.(++done, jobs.length))))
+  }
+}

@@ -4,6 +4,7 @@ import { firebaseEnabled, syncNow, useSession } from '../firebase'
 import { PPL_SYLLABUS } from '../data/licenses/ppl-syllabus'
 import { blockStats, readiness } from '../study/exam'
 import { readyText } from './ppl/PplSubject'
+import { preloadAll } from '../study/content'
 
 export function Progress() {
   const s = useStore()
@@ -32,6 +33,8 @@ export function Progress() {
       <h1>Progreso</h1>
       <h2 className="sec">PPL(A)</h2>
       <PplProgress />
+      <h2 className="sec">Sin conexión</h2>
+      <Offline />
       <h2 className="sec">Cabinas</h2>
       <div className="kpis">
         <div className="card kpi"><b>{s.attempts.length}</b><span>repasos</span></div>
@@ -130,6 +133,20 @@ function PplProgress() {
           <thead><tr><th>Materia</th><th>Acierto</th><th>Preparación</th></tr></thead>
           <tbody>{PPL_SYLLABUS.map(sub => { const r = readiness(sub, s.study, stats); return <tr key={sub.code}><td><a href={`#/licencias/ppl/${sub.id}`}>{sub.code} {sub.name}</a></td><td>{r.accuracy === null ? '—' : `${r.accuracy} % de ${r.answered}`}</td><td className={r.ready ? 'ok-text' : 'muted small'}>{r.ready ? 'Lista para el examen' : readyText(r)}</td></tr> })}</tbody>
         </table>
+      </div>
+    </div>
+  )
+}
+
+/** Guarda el temario en el dispositivo para estudiar sin cobertura (con la web instalada como app) */
+function Offline() {
+  const [p, setP] = useState<[number, number] | null>(null)
+  const done = p && p[0] === p[1]
+  return (
+    <div className="panel">
+      <p className="small">Para instalarla en el iPhone: ábrela en Safari, toca Compartir y «Añadir a pantalla de inicio». Lo que ya has abierto queda guardado; con este botón guardas todo el temario (lecciones, preguntas, fichas y figuras) para estudiar en el avión o sin cobertura.</p>
+      <div className="row gap wrap-row">
+        <button className="btn" disabled={!!p && !done} onClick={() => { setP([0, 1]); preloadAll((d, t) => setP([d, t])) }}>{done ? 'Temario guardado' : p ? `Guardando… ${p[0]}/${p[1]}` : 'Guardar el temario para usarlo sin conexión'}</button>
       </div>
     </div>
   )
