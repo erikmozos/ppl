@@ -72,7 +72,14 @@
           }
         ],
         "figure": "calc:tas",
-        "caption": "Calculadora de velocidades: IAS, altitud de presión y temperatura dan la TAS."
+        "caption": "Calculadora de velocidades: IAS, altitud de presión y temperatura dan la TAS.",
+        "video": {
+          "src": "/video/lessons/020.21-anemometro-variometro.mp4",
+          "vtt": "/video/lessons/020.21-anemometro-variometro.vtt",
+          "poster": "/video/lessons/020.21-anemometro-variometro-poster.jpg",
+          "title": "Velocidades IAS y TAS, arcos de colores y variómetro",
+          "duration": 65
+        }
       },
       {
         "title": "Arcos de colores y velocidades características",

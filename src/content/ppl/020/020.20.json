@@ -16,7 +16,14 @@
         "text": [
           "El altímetro es un **barómetro aneroide** graduado en altitud. Dentro de una caja hermética con la **presión estática** del avión hay una pila de **cápsulas aneroides**: discos metálicos ondulados y sellados, con un vacío parcial en su interior y un muelle que evita que se aplasten. Al subir, la presión estática baja, las cápsulas se dilatan y un mecanismo de palancas y engranajes mueve las agujas; al bajar, ocurre lo contrario.",
           "El instrumento solo mide presión. La conversión a altura usa la **atmósfera estándar internacional** (ISA): cada presión corresponde a una altitud fija. Por eso necesita un **reglaje**: una ventana (Kollsman) que se ajusta con un botón e indica el valor de presión de referencia, en **hPa** (o en pulgadas de mercurio en otros países). Al girar el botón, se desplaza el cero de la escala."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.20-altimetro.mp4",
+          "vtt": "/video/lessons/020.20-altimetro.vtt",
+          "poster": "/video/lessons/020.20-altimetro-poster.jpg",
+          "title": "El altímetro: cápsulas, reglajes y errores",
+          "duration": 61
+        }
       },
       {
         "title": "Reglajes: QNH, QFE y 1013",

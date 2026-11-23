@@ -17,7 +17,14 @@
           "Muchos instrumentos del motor son manómetros. El más habitual usa un **tubo de Bourdon**: un tubo metálico de sección aplanada, enrollado en forma de C. Cuando entra presión en su interior, el tubo trata de enderezarse, como un matasuegras que se despliega. Ese pequeño movimiento se amplifica con un sector dentado y un piñón que mueve la aguja. Se usa para la **presión de aceite**, la de **combustible** y la de **vacío o succión** de los giróscopos, y se llama manómetro de presión **relativa** porque mide frente a la presión exterior.",
           "El indicador de **presión de admisión** (MAP) necesita medir una presión **absoluta**. Lleva una **cápsula aneroide** cerrada y sin aire (casi vacío), que se dilata o contrae con la presión del colector y mueve la aguja. Como en el altímetro, la cápsula es la referencia de presión absoluta; se calibra en **pulgadas de mercurio** (inHg).",
           "Una avería del tubo o de la tubería que lo conecta puede hacer que el instrumento no marque nada, aunque el motor esté bien. Por eso, un fallo del indicador y una avería real se distinguen por el resto de datos: temperatura, ruido, olor y comportamiento del motor."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.18-sensores.mp4",
+          "vtt": "/video/lessons/020.18-sensores.vtt",
+          "poster": "/video/lessons/020.18-sensores-poster.jpg",
+          "title": "Sensores de motor: Bourdon, cápsula y termopar",
+          "duration": 66
+        }
       },
       {
         "title": "Temperatura: termopar y termorresistencia",
