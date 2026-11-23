@@ -113,7 +113,14 @@
           "Cizalladura: unas tijeras; las dos hojas deslizan una junto a la otra y cortan el papel entre ambas.",
           "Flexión: doblar una regla de plástico; la cara de fuera se estira y la de dentro se comprime.",
           "Torsión: escurrir una toalla mojada retorciéndola."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.01-cargas.mp4",
+          "vtt": "/video/lessons/020.01-cargas.vtt",
+          "poster": "/video/lessons/020.01-cargas-poster.jpg",
+          "title": "Las 5 cargas que aguanta tu avión",
+          "duration": 96
+        }
       },
       {
         "title": "Esfuerzo y pandeo",

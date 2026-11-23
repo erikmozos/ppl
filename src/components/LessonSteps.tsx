@@ -5,6 +5,7 @@ import { speak, stopSpeech, useSpeech } from '../speech'
 import { blockSpeech } from '../study/narration'
 import { Rich } from './Rich'
 import { Figure } from './Figure'
+import { LessonVideo } from './LessonVideo'
 import { Icon } from './Icon'
 import { Outline } from './LessonView'
 import { QuestionStem, Explanation } from './Practice'
@@ -128,6 +129,7 @@ function LearnCard({ b }: { b: Block }) {
         <h2>{b.title}</h2>
         {(sp.supported || sp.neuralCount > 0) && <button className="icon-btn" onClick={() => (sp.speaking ? stopSpeech() : speak(blockSpeech(b)))} aria-label="Escuchar esta parte"><Icon name={sp.speaking ? 'stop' : 'speaker'} /></button>}
       </div>
+      {b.video && <LessonVideo v={b.video} />}
       {b.ideas?.[0] && <div className="idea-hero"><span>Para entenderlo</span><p><Rich text={b.ideas[0]} /></p></div>}
       {first && <p className="step-text"><Rich text={first} /></p>}
       {b.bullets && <ul className="study-list">{b.bullets.map((t, i) => <li key={i}><Rich text={t} /></li>)}</ul>}

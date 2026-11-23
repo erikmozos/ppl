@@ -3,6 +3,7 @@ import { Rich } from './Rich'
 import { blockSpeech } from '../study/narration'
 import { speak, stopSpeech, useSpeech } from '../speech'
 import { Figure } from './Figure'
+import { LessonVideo } from './LessonVideo'
 import { Icon } from './Icon'
 
 const NOTE: Record<string, string> = { es: 'En España', warn: 'Atención', tip: 'Consejo' }
@@ -24,6 +25,7 @@ export function StudyBlock({ b, level = 3 }: { b: Block; level?: 2 | 3 }) {
           </button>
         )}
       </div>
+      {b.video && <LessonVideo v={b.video} />}
       {b.text?.map((t, i) => <p key={i}><Rich text={t} /></p>)}
       {b.bullets && <ul className="study-list">{b.bullets.map((t, i) => <li key={i}><Rich text={t} /></li>)}</ul>}
       {b.formulas && (
