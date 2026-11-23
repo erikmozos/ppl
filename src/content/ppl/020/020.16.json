@@ -102,7 +102,14 @@
         ],
         "ideas": [
           "Una hélice de paso fijo es como una bicicleta de una sola marcha: si la eliges ligera, arrancas bien pero a toda velocidad las piernas no dan más; si la eliges larga, vas fuerte en llano pero cuesta arrancar."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.16-paso-fijo-variable.mp4",
+          "vtt": "/video/lessons/020.16-paso-fijo-variable.vtt",
+          "poster": "/video/lessons/020.16-paso-fijo-variable-poster.jpg",
+          "title": "Hélice de paso fijo y de paso variable",
+          "duration": 62
+        }
       },
       {
         "title": "Hélice de paso variable",

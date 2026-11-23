@@ -23,7 +23,14 @@
           "**Anemómetro**: cápsula con la presión total dentro y la estática en la caja; su deflexión mide la **presión dinámica**, que da la velocidad.",
           "**Altímetro**: cápsulas aneroides selladas en una caja con la presión estática; mide la presión absoluta y la traduce a altitud.",
           "**Variómetro (VSI)**: la estática llega a la cápsula directamente y a la caja a través de un orificio calibrado; mide la **velocidad de cambio** de la presión estática, con un retraso de unos segundos."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.19-pitot-estatico.mp4",
+          "vtt": "/video/lessons/020.19-pitot-estatico.vtt",
+          "poster": "/video/lessons/020.19-pitot-estatico-poster.jpg",
+          "title": "El sistema pitot-estático",
+          "duration": 53
+        }
       },
       {
         "title": "Tubo de pitot, drenaje y calefacción",
@@ -78,7 +85,14 @@
           "Una fuente alternativa en cabina toma una presión algo **menor** que la exterior (por el efecto del flujo alrededor del fuselaje), así que los instrumentos leen algo más alto de lo real. El POH da las correcciones si las hay.",
           "En un avión **sin fuente alternativa**, el recurso de emergencia es romper el cristal del variómetro para dejar entrar la presión de cabina: solo con la toma estática obstruida y siguiendo el POH."
         ],
-        "verify": true
+        "verify": true,
+        "video": {
+          "src": "/video/lessons/020.19-obstrucciones.mp4",
+          "vtt": "/video/lessons/020.19-obstrucciones.vtt",
+          "poster": "/video/lessons/020.19-obstrucciones-poster.jpg",
+          "title": "Obstrucciones del pitot y de la estática: qué marca cada instrumento",
+          "duration": 54
+        }
       },
       {
         "title": "Errores de los instrumentos",

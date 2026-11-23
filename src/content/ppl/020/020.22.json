@@ -66,7 +66,14 @@
           "Para virar a un rumbo concreto con la brújula, calcula de antemano cuánto antes o después salir.",
           "Usa el direccional para los virajes y la brújula solo para ponerlo en hora.",
           "A mayor latitud, mayor error de virajes y de aceleración, porque aumenta la inclinación magnética."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.22-brujula.mp4",
+          "vtt": "/video/lessons/020.22-brujula.vtt",
+          "poster": "/video/lessons/020.22-brujula-poster.jpg",
+          "title": "Errores de la brújula: UNOS y ANDS",
+          "duration": 54
+        }
       },
       {
         "title": "Cuándo fiarse de la brújula",

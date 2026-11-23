@@ -22,7 +22,14 @@
           "1 inHg ≈ 33,9 hPa. Presión estándar: 29,92 inHg a nivel del mar.",
           "Potencia máxima del PA-28-161 Warrior III: 160 hp a 2700 RPM; del C172S: 180 hp a 2700 RPM (valores nominales, según POH)."
         ],
-        "verify": true
+        "verify": true,
+        "video": {
+          "src": "/video/lessons/020.17-manejo-motor.mp4",
+          "vtt": "/video/lessons/020.17-manejo-motor.vtt",
+          "poster": "/video/lessons/020.17-manejo-motor-poster.jpg",
+          "title": "Potencia, atmósfera y manejo del motor por fases",
+          "duration": 63
+        }
       },
       {
         "title": "Influencia de la atmósfera",

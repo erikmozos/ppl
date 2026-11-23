@@ -17,7 +17,14 @@
           "Un **giróscopo** es un rotor pesado que gira muy deprisa. Tiene dos propiedades que lo hacen útil como referencia.",
           "La primera es la **rigidez en el espacio** (inercia giroscópica): el eje de un rotor que gira mantiene su orientación respecto al espacio si no lo perturba una fuerza. Es mayor cuanto **más masa** tiene el rotor, **más rápido gira** y **más lejos del eje** está concentrada la masa. La segunda es la **precesión**: cuando se aplica una fuerza al eje, el giróscopo no se inclina en la dirección de la fuerza, sino que responde **90° más allá, en el sentido de giro del rotor**. Es lo que hace que un instrumento giroscópico reaccione a un viraje del avión y es también la fuente de varios errores.",
           "Un giróscopo con **dos grados de libertad** (montado en dos anillos, o cardan) puede orientarse en cualquier dirección y es el que usan el horizonte y el direccional. Uno con **un solo grado de libertad** solo puede girar en torno a un eje, y se usa para medir velocidades de giro (el coordinador)."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.23-giroscopos.mp4",
+          "vtt": "/video/lessons/020.23-giroscopos.vtt",
+          "poster": "/video/lessons/020.23-giroscopos-poster.jpg",
+          "title": "Giróscopos: rigidez, precesión e instrumentos",
+          "duration": 72
+        }
       },
       {
         "title": "Deriva real y aparente",
