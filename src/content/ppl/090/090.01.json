@@ -1,26 +1,32 @@
 {
   "lesson": {
     "id": "090.01",
-    "title": "Definiciones, estaciones y categorías de mensajes",
-    "summary": "Términos básicos de radiotelefonía, estaciones aeronáuticas (Torre, Rodadura, Autorizaciones, Aproximación, Control, Información, AFIS y Radio), idioma de las comunicaciones y categorías de mensajes con su orden de prioridad.",
+    "title": "Estaciones, categorías de mensajes y radiogoniometría",
+    "summary": "Radiotelefonía aeronáutica, términos y estaciones, categorías de mensajes y su prioridad (socorro, urgencia, radiogoniometría, seguridad de vuelo, meteorología y regularidad), Q-codes de radiogoniometría QDM, QDR, QTE y QUJ y su procedimiento.",
     "objectives": [
-      "Definir los términos básicos de las comunicaciones aeronáuticas",
-      "Identificar qué estación presta cada servicio por el nombre con el que se la llama",
-      "Ordenar las categorías de mensajes por su prioridad",
-      "Saber en qué idioma se comunica un piloto VFR en España"
+      "Definir los términos básicos y reconocer cada estación por su sufijo",
+      "Ordenar las seis categorías de mensajes por prioridad y poner un ejemplo de cada una",
+      "Explicar qué es la radiogoniometría y cuándo la usa el ATS",
+      "Distinguir QDM, QDR, QTE y QUJ y convertir entre ellos",
+      "Describir los mensajes de seguridad de vuelo, meteorológicos y de regularidad"
     ],
     "sections": [
       {
         "title": "Radiotelefonía aeronáutica: qué es y quién la regula",
         "text": [
-          "La **radiotelefonía** es la comunicación por voz mediante ondas de radio. En aviación VFR se hace en la banda de **VHF** (118 a 136,975 MHz), con una frecuencia por servicio: cuando cambias de dependencia ATS, cambias de frecuencia. El **servicio móvil aeronáutico** es el que comunica estaciones de tierra con aeronaves, y entre ellas.",
-          "Las normas de procedimiento y de fraseología vienen del **Anexo 10 de la OACI** (volumen II) y del **Doc 9432** (Manual de radiotelefonía). En la Unión Europea se recogen en la **sección 14 de SERA** (SERA.14001 a 14050). España añade sus diferencias en el **AIP GEN 1.7**. La finalidad de todas estas reglas es una sola: que el mensaje se entienda a la primera, aunque quien habla y quien escucha tengan idiomas o acentos distintos."
+          "La **radiotelefonía** es la comunicación por voz mediante ondas de radio, y en aviación VFR se hace en la banda de **VHF** (118 a 136,975 MHz), con una frecuencia por servicio: cuando cambias de dependencia ATS, cambias de frecuencia. El **servicio móvil aeronáutico** es el que comunica estaciones de tierra con aeronaves, y entre ellas.",
+          "Las normas de procedimiento y de fraseología vienen del **Anexo 10 de la OACI** (vol. II) y del **Doc 9432** (Manual de radiotelefonía). En la Unión Europea se recogen en la **sección 14 de SERA** (SERA.14001 a 14050). España añade sus diferencias en el **AIP GEN 1.7**. La finalidad de todas estas reglas es una sola: que el mensaje se entienda a la primera, aunque quien habla y quien escucha tengan idiomas o acentos distintos."
+        ],
+        "ideas": [
+          "Es como el código de circulación de la radio: da igual de qué país seas, si todos paran en rojo, nadie se choca. Aquí, si todos dicen las cosas igual, nadie se equivoca."
         ]
       },
       {
         "title": "Términos que debes manejar",
+        "text": [
+          "Estos son los términos que aparecen en todo el bloque de comunicaciones. Una **estación aeronáutica** es una estación de radio del servicio móvil aeronáutico situada en tierra: crea el enlace aire-tierra para proteger la seguridad de las aeronaves y asegurar la regularidad y eficacia del vuelo. Todo el vocabulario siguiente cuelga de ahí."
+        ],
         "table": {
-          "caption": "Definiciones básicas",
           "head": [
             "Término",
             "Significado"
@@ -57,18 +63,25 @@
             [
               "Control de tránsito aéreo (ATC)",
               "Servicio que evita colisiones y ordena el tráfico y que da autorizaciones e instrucciones"
+            ],
+            [
+              "Radiogoniometría (D/F)",
+              "Determinación de la dirección de la fuente de una señal de radio"
             ]
           ],
+          "caption": "Definiciones básicas",
           "src": "Anexo 10, vol. II; Doc 9432; SERA.14"
-        }
+        },
+        "ideas": [
+          "La estación aeronáutica es como la centralita de un hospital: no cura (no vuela), pero hace posible que quien cura (el piloto) reciba la información y los permisos justos."
+        ]
       },
       {
         "title": "Las estaciones y cómo se las llama",
         "text": [
-          "A cada dependencia se la llama con el **nombre del lugar más un sufijo** que dice qué servicio presta. Saber leer el sufijo te dice con quién estás hablando, qué puede pedirte y qué puedes pedirle."
+          "A cada dependencia se la llama con el **nombre del lugar más un sufijo** que dice qué servicio presta. Saber leer el sufijo te dice con quién estás hablando, qué puede pedirte y qué puedes pedirle. En la **primera comunicación** con una dependencia el nombre del lugar es obligatorio; una vez establecido el contacto, puede omitirse el lugar o el servicio si no hay riesgo de confusión."
         ],
         "table": {
-          "caption": "Sufijos de los distintivos de estación",
           "head": [
             "Sufijo",
             "Inglés",
@@ -76,14 +89,24 @@
           ],
           "rows": [
             [
-              "Torre",
-              "Tower",
-              "Control de aeródromo: despegues, aterrizajes y circuito"
+              "Control",
+              "Control",
+              "Control de área (centro de control); ejemplo: Sevilla Control"
             ],
             [
-              "Rodadura",
+              "Aproximación",
+              "Approach",
+              "Control de aproximación: llegadas y salidas en la CTR y la TMA; ejemplo: Madrid Aproximación"
+            ],
+            [
+              "Torre",
+              "Tower",
+              "Control de aeródromo: despegues, aterrizajes y circuito; ejemplo: Sabadell Torre"
+            ],
+            [
+              "Rodadura o Superficie",
               "Ground",
-              "Control de rodaje por el área de maniobras"
+              "Control de rodaje por el área de maniobras; ejemplo: Sabadell Rodadura"
             ],
             [
               "Autorizaciones",
@@ -91,14 +114,9 @@
               "Retransmite las autorizaciones de ruta antes de la puesta en marcha"
             ],
             [
-              "Aproximación",
-              "Approach",
-              "Control de aproximación: llegadas y salidas en la CTR y la TMA"
-            ],
-            [
-              "Control",
-              "Control",
-              "Control de área (centro de control)"
+              "Radar",
+              "Radar",
+              "Servicio de vigilancia radar; ejemplo: Madrid Radar"
             ],
             [
               "Información",
@@ -111,27 +129,38 @@
               "Estación de radio aeroterrestre que da información sin ser ATC"
             ]
           ],
-          "src": "Doc 9432; AIP España"
+          "caption": "Sufijos de los distintivos de estación",
+          "src": "Doc 9432; SERA.14; AIP España"
         },
         "note": {
           "kind": "tip",
           "text": "El AFIS informa y no autoriza. Torre autoriza. Si el sufijo es «Información» o «Radio», nadie te autoriza a despegar o a aterrizar: lo decides tú."
         },
-        "verify": true
+        "verify": true,
+        "ideas": [
+          "Es como llamar a una empresa: «Ventas», «Atención al cliente» y «Recepción» te dicen de entrada qué te pueden dar. El sufijo es el nombre del departamento."
+        ]
       },
       {
         "title": "Idioma de las comunicaciones",
         "text": [
           "Las comunicaciones aeroterrestres se hacen en el idioma que habitualmente use la estación en tierra, o en **inglés**. En España se utilizan el **español** y el **inglés**, y el piloto puede pedir que se use inglés. Una vez elegido el idioma de un intercambio, no conviene cambiar sin motivo en mitad de la comunicación. El nivel de competencia lingüística que necesitas figura en tu licencia (nivel 4 como mínimo)."
+        ],
+        "ideas": [
+          "Cambiar de idioma a media conversación es como cambiar el sentido de la marcha en plena rotonda: mejor decidirlo antes de entrar."
         ]
       },
       {
         "title": "Categorías de mensajes y su prioridad",
         "text": [
-          "No todos los mensajes valen lo mismo. Cuando varios quieren usar la frecuencia a la vez, el orden de prioridad es el siguiente, de mayor a menor."
+          "No todos los mensajes valen lo mismo: cuando varios quieren usar la frecuencia a la vez, se atienden por un **orden de prioridad** fijado en el Anexo 10 y pensado para que lo que más afecta a la seguridad pase primero. De mayor a menor: **socorro, urgencia, radiogoniometría, seguridad de vuelo, meteorología y regularidad del vuelo**."
+        ],
+        "bullets": [
+          "Quien oye una llamada de socorro **interrumpe** cualquier transmisión que pudiera molestar y escucha.",
+          "Una llamada de socorro o de urgencia puede hacerse en la frecuencia en uso o en **121,5 MHz**.",
+          "Las dos primeras categorías se estudian a fondo en la lección 090.10."
         ],
         "table": {
-          "caption": "Orden de prioridad de los mensajes",
           "head": [
             "Prioridad",
             "Categoría",
@@ -156,24 +185,128 @@
             [
               "4",
               "Mensajes de seguridad de vuelo",
-              "Autorizaciones ATC, informes de posición, avisos de tráfico"
+              "Autorizaciones ATC, informes de posición, avisos de tráfico, SIGMET"
             ],
             [
               "5",
               "Mensajes meteorológicos",
-              "ATIS, SIGMET, informes de viento"
+              "ATIS, METAR, TAF, informes de viento"
             ],
             [
               "6",
               "Mensajes de regularidad del vuelo",
-              "Cambios de horario, de combustible o de servicios"
+              "Cambios de horario o de servicios, petición de autorización de sobrevuelo"
             ]
           ],
+          "caption": "Orden de prioridad de los mensajes",
           "src": "Anexo 10, vol. II, 5.1.1"
         },
+        "ideas": [
+          "Piensa en las urgencias de un hospital: un infarto pasa antes que una torcedura, y un papeleo administrativo, el último. Las categorías de mensajes funcionan como el triaje."
+        ]
+      },
+      {
+        "title": "Radiogoniometría (D/F) y Q-codes",
+        "text": [
+          "La **radiogoniometría** (*Direction Finding*, **D/F**) es el proceso de determinar la **dirección de la fuente de una señal de radio**. Para usarla solo necesitas un sistema de comunicaciones VHF aire-tierra: la estación con goniómetro (VDF) mide de dónde llega tu transmisión y te dice qué rumbo seguir. Es el servicio que el ATS ofrece cuando cree que una aeronave está **perdida o en dificultades**, y funciona incluso sin radar.",
+          "Se pide con fraseología o con los **códigos Q** de cuatro letras: **QDM** es el rumbo magnético que debe seguir la aeronave, **sin viento**, para llegar a la estación VDF; **QDR** es la marcación magnética de la aeronave **desde** la estación; **QTE** es la marcación **verdadera** de la aeronave desde la estación; y **QUJ** es el rumbo **verdadero** para llegar a la estación. QDM y QDR difieren 180°, y QUJ y QTE también."
+        ],
+        "table": {
+          "head": [
+            "Código",
+            "Qué es",
+            "Referencia",
+            "Sentido"
+          ],
+          "rows": [
+            [
+              "QDM",
+              "Rumbo magnético para ir a la estación (sin viento)",
+              "Norte magnético",
+              "Hacia la estación"
+            ],
+            [
+              "QDR",
+              "Marcación magnética de la aeronave",
+              "Norte magnético",
+              "Desde la estación"
+            ],
+            [
+              "QUJ",
+              "Rumbo verdadero para ir a la estación",
+              "Norte verdadero",
+              "Hacia la estación"
+            ],
+            [
+              "QTE",
+              "Marcación verdadera de la aeronave",
+              "Norte verdadero",
+              "Desde la estación"
+            ]
+          ],
+          "caption": "Códigos Q de radiogoniometría",
+          "src": "Anexo 10; Doc 8400; apuntes del curso"
+        },
+        "examples": [
+          {
+            "q": "El goniómetro te da QDR 270. ¿Dónde estás y qué rumbo magnético debes seguir sin viento para ir a la estación?",
+            "a": "El QDR es la marcación desde la estación: estás al oeste. El QDM es el recíproco: 270 − 180 = 090, así que debes poner rumbo 090 magnético."
+          },
+          {
+            "q": "Con la variación de 3° W, el QDM es 090. ¿Cuál es el QUJ (rumbo verdadero)?",
+            "a": "Con variación oeste el norte magnético queda al oeste del verdadero y el rumbo magnético es mayor que el verdadero: verdadero = magnético − 3° = 090 − 3 = 087. El QUJ es 087°."
+          }
+        ],
+        "note": {
+          "kind": "tip",
+          "text": "QDM empieza por «a la estación» (voy hacia ella); QDR, por «desde la estación». Mnemotecnia: QDM = «Dirige a la Meta»; QDR = «De la Radio». Con el recíproco de uno tienes el otro."
+        },
+        "ideas": [
+          "Es como una llamada al 112 desde un móvil sin GPS: la central mide de dónde llega la señal y te dice «ve hacia el norte» (el QDM). Tú solo necesitas hablar.",
+          "Imagina que llamas a alguien que te grita desde lejos: él sabe de qué lado le llega tu voz (QDR) y te dice qué dirección tomar para llegar a él (QDM), que es justo la contraria."
+        ]
+      },
+      {
+        "title": "Cómo se desarrolla un servicio de radiogoniometría",
+        "text": [
+          "Cuando aceptas el servicio, la dependencia ATS sigue un guion para que no te pierdas más. Te pide que **sigas en VFR** y te da el **QNH**; te pregunta por el **rumbo y la altitud** y te pide que los mantengas, y que **sincronices el girodireccional con la brújula**; te pide el **tiempo en tu nivel y el combustible restante**; te pregunta qué **equipo de navegación** llevas y tu **IAS**; te indica el **sentido de viraje y el QDM**; te avisa cuando el **aeródromo está a la vista**; te pide que transmitas **de forma periódica** para ir recalculando el QDM; y te notifica cuándo **termina el servicio**."
+        ],
         "bullets": [
-          "Quien oye una llamada de socorro **interrumpe** cualquier transmisión que pudiera molestar y escucha.",
-          "Una llamada de socorro o de urgencia puede hacerse en la frecuencia en uso o en **121,5 MHz**."
+          "El ATS ofrece este servicio cuando cree que una aeronave puede estar **perdida o con dificultades**.",
+          "El piloto sigue en VFR y mantiene rumbo y altitud mientras le dan el QDM.",
+          "El girodireccional debe estar sincronizado con la brújula para que el rumbo sea fiable.",
+          "Transmitir de forma periódica permite al goniómetro actualizar el QDM."
+        ],
+        "ideas": [
+          "Es como seguir a un guía de montaña por teléfono: él no te ve, pero te dice «tira hacia la derecha» y tú le vas contando cada pocos minutos dónde estás para que corrija."
+        ]
+      },
+      {
+        "title": "Mensajes de seguridad de vuelo",
+        "text": [
+          "Los **mensajes de seguridad de vuelo** son los que afectan a una aeronave que vuela o está a punto de salir, y por eso van justo detrás de la radiogoniometría. Incluyen tres grupos: los **mensajes de movimiento y de control** definidos en el PANS-ATM (Doc 4444), es decir, los que se refieren a aeronaves en vuelo o próximas a despegar; los **mensajes originados por un operador de aeronaves** de importancia inmediata para las aeronaves en vuelo o que se preparan a salir; y los **mensajes meteorológicos limitados a SIGMET**, informes especiales de aeronave, AIRMET, avisos de ceniza volcánica y de ciclones tropicales y pronósticos enmendados."
+        ],
+        "ideas": [
+          "Piensa en el aviso «cuidado, tormenta en tu ruta» que te manda alguien que sabe que estás conduciendo: no es una charla, es información que cambia lo que haces ahora mismo."
+        ]
+      },
+      {
+        "title": "Mensajes meteorológicos",
+        "text": [
+          "La información meteorológica que recibe el piloto procede de la que se facilita a las dependencias de los servicios de tránsito aéreo: la observación actual (**METAR**) y la previsión (**TAF**). Se proporciona por **iniciativa de la dependencia** que presta el servicio de información de vuelo o **a petición del piloto**. Los **SPECI** (informes especiales) y los pronósticos de aeródromo se transmiten, a petición del piloto, por las dependencias ATS correspondientes.",
+          "Cuando el ATS te lo pide, debes **cooperar y notificar voluntariamente** los datos meteorológicos que necesite: tu información puede evitar problemas a otros aviones. Es la regla del buen vecino de la aviación: el que ve el tiempo real informa a los que aún no han llegado."
+        ],
+        "ideas": [
+          "Es como el aviso de «atasco en la salida» que te da el conductor que acaba de pasar por allí: sin él, el siguiente se mete de lleno."
+        ]
+      },
+      {
+        "title": "Mensajes de regularidad del vuelo",
+        "text": [
+          "Los **mensajes de regularidad del vuelo** son los de menor prioridad porque tratan de la organización y no de la seguridad inmediata. Incluyen los mensajes sobre **cambios en los horarios de operación** de las aeronaves, los mensajes sobre los **servicios que se prestarán** a las aeronaves y los mensajes sobre **los preparativos previos al vuelo** relativos a los servicios de navegación aérea y operativos para operaciones no regulares, por ejemplo las **solicitudes de autorización de sobrevuelo**."
+        ],
+        "ideas": [
+          "Es como llamar a la compañía para avisar de que tu viaje se retrasa: importa, pero cede el paso a quien está en plena carretera con un problema."
         ]
       }
     ],
@@ -181,12 +314,16 @@
       "Orden de prioridad: socorro, urgencia, radiogoniometría, seguridad de vuelo, meteorología, regularidad",
       "Banda de comunicaciones aeronáuticas: 118 a 136,975 MHz",
       "Frecuencia de socorro: 121,5 MHz",
+      "QDM y QUJ: hacia la estación; QDR y QTE: desde la estación",
+      "QDM y QDR (y QUJ y QTE) difieren 180°",
       "Legibilidad: escala de 1 a 5"
     ],
     "traps": [
       "El mensaje de radiogoniometría va después de la urgencia y antes de la seguridad de vuelo.",
-      "Los mensajes meteorológicos van detrás de los de seguridad de vuelo.",
-      "Un AFIS no autoriza: «Información» no es Torre."
+      "Los mensajes meteorológicos van detrás de los de seguridad de vuelo, aunque un SIGMET cuenta como seguridad de vuelo.",
+      "Un AFIS no autoriza: «Información» no es Torre.",
+      "QDM es hacia la estación; QDR, desde ella. No se intercambian.",
+      "QDM y QDR son magnéticos; QUJ y QTE, verdaderos."
     ],
     "spain": [
       "En España se emplea el español o el inglés; los distintivos de estación siguen los nombres de lugar más el sufijo.",
@@ -216,7 +353,85 @@
         "href": "#/licencias/fraseologia?tab=radio"
       }
     ],
-    "reviewed": "2026-10-09"
+    "reviewed": "2026-11-23",
+    "course": "Tema 3 · Categorías de mensajes, socorro y urgencia",
+    "outline": [
+      {
+        "title": "Regulación y términos",
+        "items": [
+          "Anexo 10, Doc 9432, SERA.14, AIP GEN 1.7",
+          "Estación aeronáutica, distintivo, colación, legibilidad, FIS y ATC"
+        ]
+      },
+      {
+        "title": "Estaciones",
+        "items": [
+          "Nombre del lugar más sufijo",
+          "Torre, Rodadura, Autorizaciones, Aproximación, Control, Radar",
+          "Información y Radio informan; no autorizan"
+        ]
+      },
+      {
+        "title": "Prioridad",
+        "items": [
+          "Socorro, urgencia, radiogoniometría, seguridad, meteorología, regularidad",
+          "Quien oye un socorro interrumpe su transmisión"
+        ]
+      },
+      {
+        "title": "Radiogoniometría",
+        "items": [
+          "D/F: dirección de la fuente de la señal; solo VHF",
+          "QDM y QUJ: hacia la estación",
+          "QDR y QTE: desde la estación",
+          "Magnéticos QDM/QDR; verdaderos QUJ/QTE"
+        ]
+      },
+      {
+        "title": "Resto de categorías",
+        "items": [
+          "Seguridad de vuelo: movimiento y control, operador, SIGMET",
+          "Meteo: METAR y TAF por iniciativa o a petición; cooperar",
+          "Regularidad: horarios, servicios, sobrevuelo"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "Prioridad: «Soy Un Radio-Sensible, Muy Rápido»: Socorro, Urgencia, Radiogoniometría, Seguridad, Meteorología, Regularidad.",
+      "QDM = «Dirige a la Meta» (hacia la estación); QDR = «De la Radio» (desde la estación). Recíprocos: ±180°.",
+      "Magnético con M (QDM y QDR); verdadero con T/U (QTE y QUJ).",
+      "El ATS no autoriza si dices «Información» o «Radio»: se informa, no se manda."
+    ],
+    "selfCheck": [
+      {
+        "q": "Ordena las seis categorías de mensajes por prioridad y da un ejemplo de cada una.",
+        "a": "Socorro (MAYDAY), urgencia (PAN PAN), radiogoniometría (petición de QDM), seguridad de vuelo (autorización ATC, SIGMET), meteorología (ATIS, METAR) y regularidad (cambios de horario, sobrevuelo)."
+      },
+      {
+        "q": "¿Qué es la radiogoniometría y cuándo la ofrece el ATS?",
+        "a": "Es la determinación de la dirección de la fuente de una señal de radio; el ATS la ofrece cuando cree que una aeronave está perdida o en dificultades, y solo necesita un sistema VHF aire-tierra."
+      },
+      {
+        "q": "Explica la diferencia entre QDM y QDR.",
+        "a": "QDM es el rumbo magnético que debes seguir, sin viento, para ir a la estación; QDR es la marcación magnética de la aeronave desde la estación. Difieren 180°."
+      },
+      {
+        "q": "Si el QDR es 090, ¿cuál es el QDM y dónde estás respecto a la estación?",
+        "a": "QDM 270. Estás al este de la estación, y para ir a ella vuelas al oeste (270)."
+      },
+      {
+        "q": "¿Qué diferencia hay entre «Torre» y «Información» para el piloto?",
+        "a": "Torre es ATC y autoriza despegues y aterrizajes; Información (FIS o AFIS) solo da información y no autoriza."
+      },
+      {
+        "q": "¿Qué tipos de mensajes forman los de seguridad de vuelo?",
+        "a": "Movimiento y control (PANS-ATM), mensajes de un operador de importancia inmediata para vuelos y meteorología limitada a SIGMET, informes especiales de aeronave, AIRMET, ceniza volcánica, ciclones y pronósticos enmendados."
+      },
+      {
+        "q": "¿Por qué debes cooperar si el ATS te pide datos meteorológicos?",
+        "a": "Porque tu información sobre el tiempo real puede evitar problemas a otras aeronaves."
+      }
+    ]
   },
   "questions": [
     {
@@ -534,6 +749,258 @@
         "Es el control de aeródromo."
       ],
       "ref": "Doc 9432"
+    },
+    {
+      "id": "090.01.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué es la radiogoniometría (D/F)?",
+      "options": [
+        "La medida de la distancia entre dos aeronaves",
+        "El cálculo de la altitud de presión",
+        "La descodificación de un METAR por radio",
+        "La determinación de la dirección de la fuente de una señal de radio"
+      ],
+      "correct": 3,
+      "why": "La radiogoniometría determina de dónde llega una señal de radio y, para usarla, solo hace falta una comunicación VHF aire-tierra.",
+      "whyNot": [
+        "La distancia no se determina con D/F.",
+        "Nada que ver con la altimetría.",
+        "Un METAR se descodifica leyéndolo, no con goniometría.",
+        null
+      ],
+      "ref": "Anexo 10; apuntes del curso"
+    },
+    {
+      "id": "090.01.017",
+      "type": "concepto",
+      "level": 2,
+      "q": "El QDM es:",
+      "options": [
+        "La marcación magnética de la aeronave desde la estación",
+        "El rumbo magnético a seguir, sin viento, para ir a la estación",
+        "El rumbo verdadero a seguir hacia la estación",
+        "La marcación verdadera de la aeronave desde la estación"
+      ],
+      "correct": 1,
+      "why": "QDM: rumbo magnético hacia la estación VDF, sin considerar el viento.",
+      "whyNot": [
+        "Eso es el QDR.",
+        null,
+        "Eso es el QUJ.",
+        "Eso es el QTE."
+      ],
+      "ref": "Anexo 10; Doc 8400"
+    },
+    {
+      "id": "090.01.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "El QDR es:",
+      "options": [
+        "La marcación magnética de la aeronave desde la estación",
+        "El rumbo magnético a seguir para ir a la estación",
+        "La marcación verdadera de la aeronave desde la estación",
+        "El rumbo verdadero a seguir para ir a la estación"
+      ],
+      "correct": 0,
+      "why": "QDR: marcación magnética de la aeronave desde la estación VDF.",
+      "whyNot": [
+        null,
+        "Eso es el QDM.",
+        "Eso es el QTE.",
+        "Eso es el QUJ."
+      ],
+      "ref": "Anexo 10; Doc 8400"
+    },
+    {
+      "id": "090.01.019",
+      "type": "concepto",
+      "level": 2,
+      "q": "El QTE es:",
+      "options": [
+        "La marcación magnética de la aeronave desde la estación",
+        "El rumbo verdadero a seguir hacia la estación",
+        "El rumbo magnético a seguir hacia la estación",
+        "La marcación verdadera de la aeronave desde la estación"
+      ],
+      "correct": 3,
+      "why": "QTE: marcación verdadera de la aeronave desde la estación.",
+      "whyNot": [
+        "Eso es el QDR.",
+        "Eso es el QUJ.",
+        "Eso es el QDM.",
+        null
+      ],
+      "ref": "Anexo 10; Doc 8400"
+    },
+    {
+      "id": "090.01.020",
+      "type": "concepto",
+      "level": 2,
+      "q": "El QUJ es:",
+      "options": [
+        "La marcación verdadera de la aeronave desde la estación",
+        "El rumbo magnético a seguir para ir a la estación",
+        "El rumbo verdadero a seguir para ir a la estación",
+        "La marcación magnética desde la estación"
+      ],
+      "correct": 2,
+      "why": "QUJ: rumbo verdadero hacia la estación.",
+      "whyNot": [
+        "Eso es el QTE.",
+        "Eso es el QDM.",
+        null,
+        "Eso es el QDR."
+      ],
+      "ref": "Anexo 10; Doc 8400"
+    },
+    {
+      "id": "090.01.021",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un goniómetro te da QDR 125. ¿Qué QDM debes seguir (sin viento) para ir a la estación?",
+      "options": [
+        "125",
+        "305",
+        "215",
+        "035"
+      ],
+      "correct": 1,
+      "why": "El QDM es el recíproco del QDR: 125 + 180 = 305.",
+      "whyNot": [
+        "Ese es el propio QDR: marcación desde la estación, no rumbo hacia ella.",
+        null,
+        "Resulta de sumar 90 en lugar de 180.",
+        "Resulta de restar 90 en lugar de sumar 180."
+      ],
+      "ref": "QDM = QDR ± 180"
+    },
+    {
+      "id": "090.01.022",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cuándo utiliza el ATS el servicio de radiogoniometría?",
+      "options": [
+        "Siempre que se entra en una CTR",
+        "Solo cuando hay un fallo de transpondedor",
+        "Cuando cree que una aeronave puede estar perdida o en dificultades",
+        "Solo cuando se pide expresamente un ATIS"
+      ],
+      "correct": 2,
+      "why": "La radiogoniometría se usa cuando se estima que una aeronave puede estar perdida o en dificultades.",
+      "whyNot": [
+        "No es un servicio de entrada a espacios aéreos.",
+        "No depende del transpondedor.",
+        null,
+        "No tiene relación con el ATIS."
+      ],
+      "ref": "Apuntes del curso; Anexo 10"
+    },
+    {
+      "id": "090.01.023",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un servicio de radiogoniometría, ¿qué te pide el ATS respecto al girodireccional?",
+      "options": [
+        "Que lo apagues",
+        "Que lo cales a cero",
+        "Que lo desconectes del piloto automático",
+        "Que lo sincronices con la brújula"
+      ],
+      "correct": 3,
+      "why": "Se pide sincronizarlo con la brújula para que el rumbo sea fiable al seguir el QDM.",
+      "whyNot": [
+        "Apagarlo no ayuda.",
+        "Calarlo a cero no lo hace fiable.",
+        "No se tratan acoples del piloto automático.",
+        null
+      ],
+      "ref": "Apuntes del curso"
+    },
+    {
+      "id": "090.01.024",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué mensaje tiene mayor prioridad, uno de radiogoniometría o uno de seguridad de vuelo?",
+      "options": [
+        "El de radiogoniometría",
+        "El de seguridad de vuelo",
+        "Tienen la misma prioridad",
+        "Depende del idioma de la comunicación"
+      ],
+      "correct": 0,
+      "why": "En el orden del Anexo 10 la radiogoniometría ocupa el tercer lugar y la seguridad de vuelo el cuarto.",
+      "whyNot": [
+        null,
+        "La seguridad de vuelo va después.",
+        "Cada categoría tiene su posición.",
+        "El idioma no cambia la prioridad."
+      ],
+      "ref": "Anexo 10 vol. II, 5.1.1"
+    },
+    {
+      "id": "090.01.025",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un SIGMET transmitido por radio se clasifica, a efectos de prioridad, como:",
+      "options": [
+        "Mensaje meteorológico de prioridad 5",
+        "Mensaje de seguridad de vuelo",
+        "Mensaje de regularidad del vuelo",
+        "Mensaje de urgencia"
+      ],
+      "correct": 1,
+      "why": "Los mensajes meteorológicos limitados a SIGMET, informes especiales de aeronave y AIRMET están dentro de los de seguridad de vuelo.",
+      "whyNot": [
+        "Aunque es meteorología, el SIGMET va con seguridad de vuelo.",
+        null,
+        "No trata de horarios ni servicios.",
+        "No declara una urgencia de aeronave."
+      ],
+      "ref": "Anexo 10 vol. II, 5.1.1"
+    },
+    {
+      "id": "090.01.026",
+      "type": "concepto",
+      "level": 1,
+      "q": "Un mensaje que solicita autorización de sobrevuelo para un vuelo no regular es de:",
+      "options": [
+        "Seguridad de vuelo",
+        "Radiogoniometría",
+        "Urgencia",
+        "Regularidad del vuelo"
+      ],
+      "correct": 3,
+      "why": "Los preparativos previos al vuelo para operaciones no regulares, como las autorizaciones de sobrevuelo, son mensajes de regularidad.",
+      "whyNot": [
+        "No afectan a la seguridad inmediata de un vuelo.",
+        "Nada que ver con la dirección de una señal.",
+        "No hay peligro para una aeronave.",
+        null
+      ],
+      "ref": "Anexo 10 vol. II, 5.1.1"
+    },
+    {
+      "id": "090.01.027",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cómo recibe el piloto normalmente la información meteorológica (METAR y TAF) del ATS?",
+      "options": [
+        "Solo cuando el piloto declara urgencia",
+        "Solo en la frecuencia de emergencia",
+        "Por iniciativa del servicio de información de vuelo o a petición del piloto",
+        "Solo si el vuelo es nocturno"
+      ],
+      "correct": 2,
+      "why": "La información meteorológica se facilita por iniciativa de la dependencia que presta el FIS o a petición del piloto.",
+      "whyNot": [
+        "No hace falta urgencia.",
+        "Se da en la frecuencia en uso.",
+        null,
+        "No depende de que sea de noche."
+      ],
+      "ref": "Apuntes del curso; Anexo 10"
     }
   ],
   "cards": [
@@ -571,6 +1038,21 @@
       "id": "c.090.01.07",
       "front": "Colación",
       "back": "Repetir la instrucción para confirmar que se ha entendido"
+    },
+    {
+      "id": "c.090.01.08",
+      "front": "QDM y QUJ",
+      "back": "Rumbo magnético (QDM) o verdadero (QUJ) hacia la estación"
+    },
+    {
+      "id": "c.090.01.09",
+      "front": "QDR y QTE",
+      "back": "Marcación magnética (QDR) o verdadera (QTE) de la aeronave desde la estación"
+    },
+    {
+      "id": "c.090.01.10",
+      "front": "Radiogoniometría",
+      "back": "El ATS la ofrece si cree que la aeronave está perdida; solo requiere VHF aire-tierra"
     }
   ]
 }

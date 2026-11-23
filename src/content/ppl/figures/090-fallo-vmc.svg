@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <title>Fallo de comunicaciones en VFR: comprobar la radio, probar otra frecuencia, transmitir a ciegas con 7600 y, si sigues en VMC, aterrizar en el aeródromo adecuado más próximo; si pierdes las VMC, emergencia</title>
+  <defs>
+    <marker id="090-fallo-vmc-flecha" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+  </defs>
+  <rect x="120" y="10" width="400" height="46" rx="8" class="ac"/>
+  <text x="320" y="30" class="tx b" text-anchor="middle">1. Vuela el avión y revisa la radio</text>
+  <text x="320" y="47" class="tx2" text-anchor="middle">volumen, frecuencia, cascos, PTT, disyuntor</text>
+  <line x1="320" y1="56" x2="320" y2="76" class="ln" marker-end="url(#090-fallo-vmc-flecha)"/>
+  <rect x="120" y="78" width="400" height="46" rx="8" class="ac"/>
+  <text x="320" y="98" class="tx b" text-anchor="middle">2. Prueba otra frecuencia o estación</text>
+  <text x="320" y="115" class="tx2" text-anchor="middle">otra radio, otro avión, 121,5 MHz</text>
+  <line x1="320" y1="124" x2="320" y2="144" class="ln" marker-end="url(#090-fallo-vmc-flecha)"/>
+  <rect x="120" y="146" width="400" height="46" rx="8" class="ac"/>
+  <text x="320" y="166" class="tx b" text-anchor="middle">3. Transpondedor 7600 y transmite a ciegas</text>
+  <text x="320" y="183" class="tx2" text-anchor="middle">cada mensaje dos veces, en la frecuencia en uso</text>
+  <line x1="320" y1="192" x2="320" y2="212" class="ln" marker-end="url(#090-fallo-vmc-flecha)"/>
+  <rect x="190" y="214" width="260" height="40" rx="20" class="soft"/>
+  <text x="320" y="239" class="tx b" text-anchor="middle">4. ¿Sigues en VMC?</text>
+  <path d="M190 234 L150 234 L150 276" class="ok-ln" fill="none" marker-end="url(#090-fallo-vmc-flecha)"/>
+  <text x="170" y="226" class="txo b" text-anchor="middle">Sí</text>
+  <path d="M450 234 L490 234 L490 276" class="wa-ln" fill="none" marker-end="url(#090-fallo-vmc-flecha)"/>
+  <text x="470" y="226" class="txw b" text-anchor="middle">No</text>
+  <rect x="20" y="278" width="300" height="84" rx="8" class="ok"/>
+  <text x="170" y="298" class="txo b" text-anchor="middle">Continúa en VMC</text>
+  <text x="170" y="316" class="tx" text-anchor="middle">aterriza en el aeródromo adecuado</text>
+  <text x="170" y="332" class="tx" text-anchor="middle">más próximo y notifica tu llegada</text>
+  <text x="170" y="350" class="tx2" font-size="11" text-anchor="middle">en tierra, avisa al ATS por el medio más rápido</text>
+  <rect x="340" y="278" width="280" height="84" rx="8" class="wa"/>
+  <text x="480" y="298" class="txw b" text-anchor="middle">Ya no es VFR: emergencia</text>
+  <text x="480" y="316" class="tx" text-anchor="middle">MAYDAY a ciegas, 7700</text>
+  <text x="480" y="332" class="tx" text-anchor="middle">y aterrizaje en el lugar más seguro</text>
+  <text x="320" y="392" class="tx2" text-anchor="middle">En una CTR, antes que nada, sigue el procedimiento publicado en la carta VFR</text>
+  <text x="320" y="408" class="tx2" text-anchor="middle">o, a falta de él, el general (1000 ft AGL máx., sin cruzar finales, atento a luces)</text>
+</svg>

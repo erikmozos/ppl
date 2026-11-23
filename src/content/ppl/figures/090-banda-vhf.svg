@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 392">
+  <title>Reparto de la banda VHF aeronáutica de 118 a 136,975 MHz: servicios nacionales e internacionales, movimientos en tierra, frecuencia de emergencia 121,5, SAR auxiliar 123,1 y frecuencia entre pilotos 123,45</title>
+  <rect x="40.0" y="110" width="100.2" height="36" class="ac"/>
+  <rect x="146.1" y="110" width="11.5" height="36" class="ok"/>
+  <rect x="157.9" y="110" width="30.9" height="36" class="soft"/>
+  <rect x="191.8" y="110" width="16.0" height="36" class="ac"/>
+  <rect x="208.0" y="110" width="176.6" height="36" class="ac"/>
+  <rect x="384.8" y="110" width="35.1" height="36" class="soft"/>
+  <rect x="420.2" y="110" width="179.1" height="36" class="ac"/>
+  <rect x="141.7" y="104" width="3" height="48" class="wa-fill"/>
+  <rect x="188.8" y="110" width="3" height="36" class="ok-fill"/>
+  <line x1="40.0" y1="146" x2="40.0" y2="152" class="ln2"/>
+  <text x="40.0" y="166" class="tx2" font-size="11" text-anchor="middle">118</text>
+  <line x1="98.9" y1="146" x2="98.9" y2="152" class="ln2"/>
+  <text x="98.9" y="166" class="tx2" font-size="11" text-anchor="middle">120</text>
+  <line x1="157.9" y1="146" x2="157.9" y2="152" class="ln2"/>
+  <text x="157.9" y="166" class="tx2" font-size="11" text-anchor="middle">122</text>
+  <line x1="216.8" y1="146" x2="216.8" y2="152" class="ln2"/>
+  <text x="216.8" y="166" class="tx2" font-size="11" text-anchor="middle">124</text>
+  <line x1="275.8" y1="146" x2="275.8" y2="152" class="ln2"/>
+  <text x="275.8" y="166" class="tx2" font-size="11" text-anchor="middle">126</text>
+  <line x1="334.7" y1="146" x2="334.7" y2="152" class="ln2"/>
+  <text x="334.7" y="166" class="tx2" font-size="11" text-anchor="middle">128</text>
+  <line x1="393.7" y1="146" x2="393.7" y2="152" class="ln2"/>
+  <text x="393.7" y="166" class="tx2" font-size="11" text-anchor="middle">130</text>
+  <line x1="452.6" y1="146" x2="452.6" y2="152" class="ln2"/>
+  <text x="452.6" y="166" class="tx2" font-size="11" text-anchor="middle">132</text>
+  <line x1="511.6" y1="146" x2="511.6" y2="152" class="ln2"/>
+  <text x="511.6" y="166" class="tx2" font-size="11" text-anchor="middle">134</text>
+  <line x1="570.5" y1="146" x2="570.5" y2="152" class="ln2"/>
+  <text x="570.5" y="166" class="tx2" font-size="11" text-anchor="middle">136</text>
+  <text x="14" y="26" class="tx b">Banda VHF aeronáutica (MHz)</text>
+  <line x1="143.2" y1="104" x2="143.2" y2="62" class="wa-ln"/>
+  <text x="143.2" y="44" class="txw b" text-anchor="middle">121,5</text>
+  <text x="143.2" y="58" class="tx2" font-size="11" text-anchor="middle">emergencia</text>
+  <line x1="190.3" y1="110" x2="190.3" y2="84" class="ok-ln"/>
+  <text x="198.3" y="80" class="txo b">123,1</text>
+  <text x="198.3" y="94" class="tx2" font-size="11">SAR auxiliar</text>
+  <line x1="200.6" y1="146" x2="200.6" y2="150" class="ac-ln"/>
+  <path d="M200.6 152 L200.6 186 L210.6 186" class="ac-ln" fill="none"/>
+  <text x="214.6" y="190" class="txa b">123,45</text>
+  <text x="262.6" y="190" class="tx2" font-size="11">aire-aire (interpiloto)</text>
+  <rect x="20" y="205" width="16" height="14" rx="3" class="ac"/>
+  <text x="46" y="216" class="tx b" font-size="12">118 a 121,4</text>
+  <text x="190" y="216" class="tx2">Móvil aeronáutico nacional e internacional (TWR, APP…)</text>
+  <rect x="20" y="226" width="16" height="14" rx="3" class="wa"/>
+  <text x="46" y="237" class="tx b" font-size="12">121,5</text>
+  <text x="190" y="237" class="tx2">Frecuencia de emergencia</text>
+  <rect x="20" y="247" width="16" height="14" rx="3" class="ok"/>
+  <text x="46" y="258" class="tx b" font-size="12">121,6 a 121,9917</text>
+  <text x="190" y="258" class="tx2">Movimientos en tierra y autorizaciones ATS (Rodadura, Autorizaciones)</text>
+  <rect x="20" y="268" width="16" height="14" rx="3" class="soft"/>
+  <text x="46" y="279" class="tx b" font-size="12">122 a 123,05</text>
+  <text x="190" y="279" class="tx2">Móvil aeronáutico nacional</text>
+  <rect x="20" y="289" width="16" height="14" rx="3" class="ac"/>
+  <text x="46" y="300" class="tx b" font-size="12">123,15 a 123,6917</text>
+  <text x="190" y="300" class="tx2">Móvil aeronáutico (incluye 123,45 aire-aire)</text>
+  <rect x="20" y="310" width="16" height="14" rx="3" class="ac"/>
+  <text x="46" y="321" class="tx b" font-size="12">123,7 a 129,6917</text>
+  <text x="190" y="321" class="tx2">Nacional e internacional</text>
+  <rect x="20" y="331" width="16" height="14" rx="3" class="soft"/>
+  <text x="46" y="342" class="tx b" font-size="12">129,7 a 130,8917</text>
+  <text x="190" y="342" class="tx2">Solo nacional</text>
+  <rect x="20" y="352" width="16" height="14" rx="3" class="ac"/>
+  <text x="46" y="363" class="tx b" font-size="12">130,9 a 136,975</text>
+  <text x="190" y="363" class="tx2">Nacional e internacional</text>
+</svg>

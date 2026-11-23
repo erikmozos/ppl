@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 466">
+<title>Símbolos del tiempo significativo para precipitación y visibilidad: lluvia, llovizna, nieve, chubasco, granizo, tormenta, lluvia engelante, niebla, neblina, calima, humo, nieve elevada, polvo y tormenta de arena (dibujo propio)</title>
+<text x="320" y="24" class="tx b" text-anchor="middle">Fenómenos del mapa de tiempo significativo: precipitación y visibilidad</text>
+<rect x="16.0" y="40" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(52.0,62.0)"><circle r="7" class="ink-fill"/></g>
+<text x="92.0" y="59.0" class="tx b">Lluvia (rain)</text><text x="92.0" y="76.0" class="tx2" font-size="11">punto negro</text>
+<rect x="336.0" y="40" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(372.0,62.0)"><circle cx="0" cy="-3" r="3.5" class="ink-fill"/><path d="M0 0 C0 5 -2 8 -5 10" class="ln thick" fill="none"/></g>
+<text x="412.0" y="59.0" class="tx b">Llovizna (drizzle)</text><text x="412.0" y="76.0" class="tx2" font-size="11">coma</text>
+<rect x="16.0" y="92" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(52.0,114.0)"><path d="M-14 0H14M-7 -12L7 12M-7 12L7 -12" class="ln thick" fill="none"/></g>
+<text x="92.0" y="111.0" class="tx b">Nieve (snow)</text><text x="92.0" y="128.0" class="tx2" font-size="11">asterisco</text>
+<rect x="336.0" y="92" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(372.0,114.0)"><path d="M-11 -6H11L0 14Z" class="ln thick" fill="none"/><circle cx="0" cy="-12" r="3" class="ink-fill"/></g>
+<text x="412.0" y="111.0" class="tx b">Chubasco (shower)</text><text x="412.0" y="128.0" class="tx2" font-size="11">triángulo invertido</text>
+<rect x="16.0" y="144" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(52.0,166.0)"><path d="M-11 -2H11L0 16Z" class="ln thick" fill="none"/><path d="M-5 -14H5M-3 -18L3 -10M-3 -10L3 -18" class="ln" fill="none"/></g>
+<text x="92.0" y="163.0" class="tx b">Chubasco de nieve</text><text x="92.0" y="180.0" class="tx2" font-size="11">triángulo con asterisco</text>
+<rect x="336.0" y="144" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(372.0,166.0)"><path d="M-12 12H12L0 -10Z" class="ln thick" fill="none"/></g>
+<text x="412.0" y="163.0" class="tx b">Granizo (hail)</text><text x="412.0" y="180.0" class="tx2" font-size="11">triángulo</text>
+<rect x="16.0" y="196" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(52.0,218.0)"><path d="M-9 -14V14M-9 -14H8L-4 0L8 12" class="ln thick" fill="none"/><path d="M8 12L1 11L6 5Z" class="ink-fill"/></g>
+<text x="92.0" y="215.0" class="tx b">Tormenta</text><text x="92.0" y="232.0" class="tx2" font-size="11">R con flecha</text>
+<rect x="336.0" y="196" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(372.0,218.0)"><circle cx="-8" cy="2" r="5" class="ink-fill"/><path d="M-14 -2C-14 -10 -3 -10 -2 -1" class="ln" fill="none"/><path d="M-2 4C6 12 14 8 18 -2" class="ln thick" fill="none"/></g>
+<text x="412.0" y="215.0" class="tx b">Lluvia engelante</text><text x="412.0" y="232.0" class="tx2" font-size="11">punto con gancho</text>
+<rect x="16.0" y="248" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(52.0,270.0)"><path d="M-16 -8H16M-16 0H16M-16 8H16" class="ln thick" fill="none"/></g>
+<text x="92.0" y="267.0" class="tx b">Niebla extensa</text><text x="92.0" y="284.0" class="tx2" font-size="11">tres rayas</text>
+<rect x="336.0" y="248" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(372.0,270.0)"><path d="M-16 -4H16M-16 4H16" class="ln thick" fill="none"/></g>
+<text x="412.0" y="267.0" class="tx b">Neblina (mist)</text><text x="412.0" y="284.0" class="tx2" font-size="11">dos rayas</text>
+<rect x="16.0" y="300" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(52.0,322.0)"><path d="M0 0C-6 -10 -18 -10 -18 0C-18 10 -6 10 0 0C6 -10 18 -10 18 0C18 10 6 10 0 0Z" class="ln thick" fill="none"/></g>
+<text x="92.0" y="319.0" class="tx b">Calima (haze)</text><text x="92.0" y="336.0" class="tx2" font-size="11">ocho tumbado</text>
+<rect x="336.0" y="300" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(372.0,322.0)"><path d="M-18 4C-14 -10 -4 -10 0 0S14 10 18 -4" class="ln thick" fill="none"/></g>
+<text x="412.0" y="319.0" class="tx b">Humo extenso (smoke)</text><text x="412.0" y="336.0" class="tx2" font-size="11">línea ondulada</text>
+<rect x="16.0" y="352" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(52.0,374.0)"><path d="M-14 0H12M0 -12V12" class="ln thick" fill="none"/><path d="M14 0L6 -5V5Z" class="ink-fill"/></g>
+<text x="92.0" y="371.0" class="tx b">Nieve elevada por el viento</text><text x="92.0" y="388.0" class="tx2" font-size="11">cruz con flecha</text>
+<rect x="336.0" y="352" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(372.0,374.0)"><path d="M7 -13C-8 -16 -11 -3 0 0C11 3 8 16 -7 13" class="ln thick" fill="none"/></g>
+<text x="412.0" y="371.0" class="tx b">Calima de polvo o arena</text><text x="412.0" y="388.0" class="tx2" font-size="11">S</text>
+<rect x="16.0" y="404" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(52.0,426.0)"><path d="M7 -13C-8 -16 -11 -3 0 0C11 3 8 16 -7 13" class="ln thick" fill="none"/><path d="M-4 13H18" class="ln thick" fill="none"/><path d="M19 13L12 9V17Z" class="ink-fill"/></g>
+<text x="92.0" y="423.0" class="tx b">Tormenta de arena o polvo</text><text x="92.0" y="440.0" class="tx2" font-size="11">S con flecha</text>
+</svg>

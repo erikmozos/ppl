@@ -1,45 +1,60 @@
 {
  "lesson": {
+  "id": "050.05",
   "title": "Circulación general y climatología",
-  "summary": "Por qué hay vientos dominantes: las células de Hadley, Ferrel y polar, la ZCIT, el anticiclón de las Azores, los oestes y la corriente en chorro, las zonas climáticas y las situaciones típicas que verás sobre España (del oeste, anticiclónica y pantano barométrico).",
+  "course": "Tema 6 · Sistemas de presión y climatología",
+  "summary": "Circulación general (células de Hadley, Ferrel y polar), zonas climáticas por latitud, efecto estacional, ZCIT y monzones, presión media de enero y julio, vientos dominantes y corrientes en chorro, clima de África noroccidental y situaciones típicas sobre España.",
   "objectives": [
-   "Describir las tres células de circulación de cada hemisferio y los vientos de superficie que producen",
-   "Situar la ZCIT, las altas subtropicales y el frente polar y explicar su desplazamiento estacional",
-   "Explicar qué es una corriente en chorro, dónde se encuentra y qué riesgos tiene para el vuelo",
-   "Reconocer las zonas climáticas y el clima de España, con el papel del anticiclón de las Azores",
-   "Distinguir las situaciones del oeste, anticiclónica y de pantano barométrico y el tiempo que traen"
+   "Explicar por qué el aire circula en tres células por hemisferio y qué vientos de superficie y zonas de presión produce cada una",
+   "Describir las zonas climáticas por latitud (ecuatorial, sabana, subtropical árida, templada y polar) y sus fenómenos",
+   "Situar la ZCIT y explicar su desplazamiento estacional, los monzones y el riesgo aeronáutico que suponen",
+   "Distinguir las corrientes en chorro (subtropical, del frente polar, tropical del este y ártica) y su turbulencia",
+   "Reconocer el clima y las situaciones típicas de España, y los vientos regionales y el polvo del norte de África"
   ],
   "sections": [
    {
+    "title": "Qué estudia la climatología",
+    "text": [
+     "La climatología estudia cómo se combinan precipitación, temperatura, humedad, insolación y viento para formar el clima de una zona, es decir, el tiempo que cabe esperar a lo largo de los años. Al piloto le interesa porque los datos históricos permiten anticipar qué esperar en la ruta y en el destino, y qué fenómenos pueden aparecer: visibilidad, nubosidad, tormentas, engelamiento, turbulencia y viento predominante.",
+     "La regla de oro del curso es que la combinación de latitud, estación, continente o mar y relieve define el clima operativo. Lo que sigue son esas piezas, de la circulación general al detalle local."
+    ],
+    "ideas": [
+     "El clima es el armario y el tiempo es la ropa que te pones hoy: el armario del Sáhara no tiene paraguas ni abrigo, el de Galicia tiene de todo."
+    ]
+   },
+   {
     "title": "El motor: calor desigual y rotación de la Tierra",
     "text": [
-     "El Sol calienta más el ecuador que los polos. Si la Tierra no girase, el aire caliente subiría en el ecuador, viajaría en altura hasta los polos, se enfriaría, descendería y volvería por el suelo en una sola célula por hemisferio. Pero la Tierra gira y **Coriolis** desvía el aire hacia la derecha en el hemisferio norte y hacia la izquierda en el sur, lo que rompe esa célula única en **tres células** por hemisferio.",
-     "Es un esquema medio: la circulación real se deforma por los continentes, los océanos y las estaciones, y por eso el tiempo cambia a diario. Pero explica dónde están los desiertos, los anticiclones, los alisios y los frentes."
+     "El Sol calienta más el ecuador que los polos, y esa diferencia pone en marcha la circulación del aire. Si la Tierra no girase, el aire caliente subiría en el ecuador, viajaría en altura hasta los polos, se enfriaría, bajaría y volvería por el suelo en una sola célula por hemisferio. Pero la Tierra gira y la fuerza de **Coriolis** desvía el aire hacia la derecha en el hemisferio norte y hacia la izquierda en el sur, lo que rompe esa célula única en **tres células** por hemisferio.",
+     "El aire va siempre de altas a bajas presiones y, al desviarse, acaba rodeando los sistemas. Este es un modelo idealizado: la circulación real se deforma por los continentes, los océanos, la superficie terrestre y la inclinación del eje de 23,5°. El hemisferio sur se parece más al modelo ideal porque tiene mucha más proporción de océanos y menos obstáculos."
     ],
     "figure": "svg:050-circulacion",
-    "caption": "Corte meridional del hemisferio norte: las tres células, las zonas de ascenso (bajas) y de descenso (altas) y los vientos de superficie."
+    "caption": "Células de circulación general, altas y bajas y vientos de superficie",
+    "ideas": [
+     "Piensa en sopa calentada en una olla: sube por el centro, se enfría en el borde y baja. Si además giras la olla, los remolinos se parten en anillos. La Tierra es la olla que gira."
+    ]
    },
    {
     "title": "Las tres células",
     "text": [
-     "**Célula de Hadley (0°–30°)**. El aire caliente y húmedo asciende en la zona de convergencia del ecuador, forma grandes cumulonimbos y a gran altura se desplaza hacia el polo. Hacia los 30° ya se ha enfriado y desciende, creando las **altas subtropicales** (cielos despejados, desiertos y, en el Atlántico, el anticiclón de las Azores). En superficie vuelve hacia el ecuador y Coriolis lo desvía a la derecha: son los **alisios**, del noreste en el hemisferio norte y del sureste en el sur.",
-     "**Célula polar (60°–90°)**. El aire frío desciende en el polo (alta polar), sale por la superficie hacia el ecuador y Coriolis lo desvía hacia el oeste: **levantes polares** del noreste. A unos 60° se encuentra con el aire más templado.",
-     "**Célula de Ferrel (30°–60°)**. Es una célula «indirecta», impulsada por las otras dos. En superficie el aire va de las altas subtropicales hacia el polo y Coriolis lo desvía hacia el este: son los **vientos del oeste** (los «oestes») de latitudes medias, los que traen a España las borrascas atlánticas. A unos 60° ese aire cálido choca con el polar frío: es el **frente polar**, la cuna de las depresiones de latitudes medias."
+     "La **célula de Hadley (0°–30°)** mueve el aire caliente y húmedo del ecuador hacia las altas subtropicales y vuelve como alisios. El aire asciende en la zona de convergencia del ecuador, forma grandes cumulonimbos y en altura se desplaza hacia el polo. Hacia los 30° ya se ha enfriado y desciende, creando las **altas subtropicales** (cielos despejados, desiertos y, en el Atlántico, el anticiclón de las Azores). En superficie vuelve hacia el ecuador y Coriolis lo desvía a la derecha: son los **alisios** (*trade winds*), del noreste en el hemisferio norte y del sureste en el sur.",
+     "La **célula polar (60°–90°)** envía el aire frío del polo hacia latitudes más bajas. El aire frío desciende en el polo (alta polar), sale por la superficie hacia el ecuador y Coriolis lo desvía hacia el oeste: los **levantes polares** del noreste. A unos 60° se encuentra con aire más templado.",
+     "La **célula de Ferrel (30°–60°)** es «indirecta» y la impulsan sus dos vecinas. En superficie el aire va de las altas subtropicales hacia el polo y Coriolis lo desvía hacia el este: los **vientos del oeste** (*westerlies*), que traen a España las borrascas atlánticas. A unos 60° ese aire más cálido choca con el polar frío: es el **frente polar**, cuna de las depresiones de latitudes medias."
     ],
     "table": {
-     "caption": "Resumen de las células del hemisferio norte",
+     "caption": "Células del hemisferio norte",
      "head": [
       "Célula",
       "Latitud",
       "Viento de superficie",
-      "Zona de presión asociada"
+      "Presión asociada"
      ],
      "rows": [
       [
        "Hadley",
        "0°–30°",
        "Alisios del NE",
-       "Baja en el ecuador (ZCIT) y alta subtropical en 30°"
+       "Baja ecuatorial (ZCIT) y alta subtropical a 30°"
       ],
       [
        "Ferrel",
@@ -53,67 +68,172 @@
        "Levantes polares del NE",
        "Bajas en el frente polar (60°) y alta polar"
       ]
-     ]
-    }
-   },
-   {
-    "title": "La ZCIT y su desplazamiento estacional",
-    "text": [
-     "La **zona de convergencia intertropical (ZCIT)** es la franja donde confluyen los alisios de los dos hemisferios. Allí el aire asciende con fuerza y produce una banda casi continua de tormentas y lluvias intensas. En el ecuador hay pocos vientos de superficie (calmas ecuatoriales), pero mucha actividad vertical.",
-     "Sigue al Sol con retraso: **se desplaza hacia el hemisferio de verano**, de modo que en julio queda al norte del ecuador y en enero al sur (con variaciones locales muy grandes sobre los continentes). Con ella se desplazan todos los demás cinturones, incluida la alta subtropical y el frente polar. Para España esto significa que en verano la alta de las Azores avanza hacia el norte y el noreste, cubre la península y desvía las borrascas hacia latitudes más altas; en invierno retrocede hacia el sur y deja pasar las borrascas atlánticas por el noroeste."
+     ],
+     "src": "Curso, tema 6"
+    },
+    "ideas": [
+     "Tres engranajes: los dos de los extremos (Hadley y polar) giran por su cuenta, y el del medio (Ferrel) gira «de rebote», con el sentido contrario, igual que un engranaje entre dos ruedas."
     ]
    },
    {
-    "title": "Vientos del oeste y corriente en chorro",
+    "title": "Zonas climáticas por latitud",
     "text": [
-     "Entre las altas subtropicales y el frente polar, el aire en altura es más cálido al sur y más frío al norte. Esa diferencia de temperatura crea un gradiente de presión fuerte en altura. Con Coriolis equilibrándolo, el viento geostrófico sopla casi siempre de **oeste a este** y se concentra en una banda estrecha: la **corriente en chorro** (jet stream).",
-     "Se considera corriente en chorro cuando el viento supera los **60 kt** en un núcleo de máxima velocidad. Es larga (miles de kilómetros), ancha (cientos) y poco espesa (unos kilómetros) y serpentea. Se distinguen dos chorros principales en cada hemisferio:"
+     "Las zonas climáticas siguen a las células: cada franja de latitud tiene un tipo de aire y de tiempo característico. En la **zona ecuatorial (0°–10°)** la humedad es alta y la convección constante: chubascos fuertes y tormentas, con vientos flojos. En la **sabana o zona tropical (10°–20°)** hay una estación seca en invierno y las lluvias ecuatoriales llegan en verano.",
+     "En la **zona subtropical árida (20°–35°)** manda la subsidencia anticiclónica: aire cálido y seco, desiertos y estepas. Más allá empiezan las **zonas templadas y polares**, que dependen del frente polar, de las borrascas viajeras, de los anticiclones fríos y, en las zonas más extremas, del suelo helado permanente (permafrost)."
     ],
     "table": {
-     "caption": "Corrientes en chorro del hemisferio norte",
+     "caption": "Zonas climáticas del curso",
+     "head": [
+      "Zona",
+      "Latitud",
+      "Rasgo",
+      "Fenómenos para el vuelo"
+     ],
+     "rows": [
+      [
+       "Ecuatorial",
+       "0°–10°",
+       "Humedad alta, convección diaria",
+       "Chubascos fuertes, tormentas, vientos flojos"
+      ],
+      [
+       "Sabana o tropical",
+       "10°–20°",
+       "Seco en invierno, lluvias en verano",
+       "Cb y tormentas en la estación húmeda"
+      ],
+      [
+       "Subtropical árida",
+       "20°–35°",
+       "Subsidencia anticiclónica",
+       "Aire seco, desiertos, calima y polvo"
+      ],
+      [
+       "Templada y polar",
+       "Más allá de 35°",
+       "Frente polar, borrascas y anticiclones fríos",
+       "Frentes, nieblas, engelamiento, nieve"
+      ]
+     ],
+     "src": "Curso, resumen de climatología"
+    },
+    "ideas": [
+     "Es el menú de un restaurante por latitudes: en el ecuador sirven siempre sopa (humedad y tormentas), en 30° sirven siempre tostadas (aire seco), y en medio, de todo según el día."
+    ]
+   },
+   {
+    "title": "Efecto estacional y ZCIT",
+    "text": [
+     "El Sol se «desplaza» entre los trópicos a lo largo del año, y con él los cinturones de presión y la lluvia. El punto subsolar (donde el Sol está en la vertical) se mueve entre el trópico de **Cáncer** en junio y el de **Capricornio** en diciembre. La **ITCZ** (zona de convergencia intertropical, *ZCIT*) y el ecuador térmico migran hacia el hemisferio de verano, con algo de retraso. Cerca del ecuador llueve casi todo el año, con máximos cerca de los equinoccios, cuando el Sol está sobre el ecuador.",
+     "La **ZCIT** es la franja centrada en el ecuador térmico donde convergen los alisios de los dos hemisferios. Allí el aire asciende de forma generalizada y produce Cu, Cb y tormentas; si el aire es estable aparecen As y Ns con lluvia más continua. No es un frente: no hay una superficie frontal definida, y su anchura varía entre **25 y 300 NM**. El riesgo aeronáutico son las tormentas, la turbulencia severa y el engelamiento desde unos **16 000 ft**.",
+     "Para España significa que en verano la alta de las Azores avanza hacia el norte y el noreste, cubre la península y desvía las borrascas hacia latitudes más altas; en invierno retrocede hacia el sur y deja pasar los frentes atlánticos por el noroeste."
+    ],
+    "ideas": [
+     "La ZCIT es como el cinturón de una persona que engorda en verano: sube hacia donde hace más calor y vuelve a bajar con el frío, con un poco de retraso respecto al Sol."
+    ]
+   },
+   {
+    "title": "Temperatura, océanos y relieve",
+    "text": [
+     "Los continentes se calientan y se enfrían más rápido que el mar, y por eso la amplitud de temperatura anual y diaria es mayor sobre tierra. El océano, con su gran inercia térmica, suaviza el clima de la costa. El Atlántico Norte se mantiene relativamente cálido por las corrientes marinas, y eso suaviza el clima de Europa occidental. Las grandes cordilleras (Himalaya, Rocosas) bloquean masas de aire y deforman mucho las isotermas. En latitudes altas los contrastes entre tierra y mar influyen en el frente polar y en los jets.",
+     "El **nivel de congelación** sube hacia el ecuador. En el ecuador su media ronda los **16 000 ft** y puede alcanzar los 18 000 ft sobre el sudeste asiático en julio, por eso el granizo de las tormentas ecuatoriales suele fundirse antes de llegar al suelo. En otras latitudes cambia más con la estación, sobre todo sobre tierra. La humedad relativa varía con la latitud y con la estación, con máximos en las zonas ecuatoriales y en latitudes altas."
+    ],
+    "ideas": [
+     "La tierra es un bocadillo: se calienta enseguida y se enfría enseguida. El mar es un termo de sopa: tarda en calentarse y tarda en enfriarse."
+    ]
+   },
+   {
+    "title": "Presión media: enero y julio",
+    "text": [
+     "El mapa medio de presión cambia con las estaciones porque los continentes se calientan o se enfrían más que el mar. En **enero** domina el frío continental del hemisferio norte: la **alta de Siberia** y altas sobre Norteamérica. La baja ecuatorial queda al sur del ecuador y las altas subtropicales dominan sobre los océanos. En **julio** el calentamiento continental crea **bajas térmicas**: la baja de Baluchistán, sobre Pakistán y Asia, y otra sobre Norteamérica, mientras el anticiclón de las **Azores** y las altas del Pacífico se refuerzan como altas subtropicales dominantes.",
+     "Este movimiento de los centros de acción explica los vientos que se invierten con la estación: el monzón. Y en España explica que el tiempo sea tan distinto en verano (alta sobre la península, baja térmica en la meseta) y en invierno (frentes del Atlántico y anticiclón frío continental)."
+    ],
+    "ideas": [
+     "Las altas y bajas son como las mareas de un día caluroso: en invierno el continente se «vacía de calor» y se llena de alta presión; en verano se llena de calor y se vacía de presión."
+    ]
+   },
+   {
+    "title": "Vientos de superficie dominantes",
+    "text": [
+     "Los vientos de superficie dominantes son el resultado de las células y de la desviación de Coriolis. Los **alisios** son vientos casi constantes que convergen en la vaguada ecuatorial desde las altas subtropicales. Entre 40° y 60° soplan los **oestes** (*westerlies*), por la salida polar de las altas subtropicales y Coriolis. En el hemisferio sur son más fuertes y continuos, y se conocen como los *Roaring Forties* («los cuarenta rugientes»). Cerca de los polos hay **vientos polares del este** y vientos catabáticos, sobre todo en invierno."
+    ],
+    "ideas": [
+     "Los alisios son los cargadores de los navegantes de siempre: soplan fijos del noreste para llevar los barcos hacia América. Los oestes son los que los traían de vuelta."
+    ]
+   },
+   {
+    "title": "Monzones",
+    "text": [
+     "Un monzón es un viento estacional que cambia de sentido entre invierno y verano, y está asociado a la alta continental invernal o a la baja térmica estival. El **monzón del NE** sale del anticiclón siberiano: aire más fresco y seco, aunque puede humedecerse al cruzar el mar. El **monzón del SW**, en verano, trae aire muy húmedo tras un largo recorrido marítimo: genera Cu y Cb, tormentas, bases bajas y turbulencia severa.",
+     "Afecta a la India, Sri Lanka, Birmania, Malasia occidental y también a la costa occidental africana. Con él llegan las estaciones húmedas y secas y los cambios estacionales de presión, que son el resultado del desplazamiento de la ZCIT."
+    ],
+    "ideas": [
+     "Un monzón es la respiración del continente: en invierno exhala aire frío y seco hacia el mar; en verano inhala aire cargado de humedad del océano."
+    ]
+   },
+   {
+    "title": "Vientos en altura y corrientes en chorro",
+    "text": [
+     "Una corriente en chorro (*jet stream*) es un viento fuerte y estrecho de oeste a este cerca de la tropopausa, que se origina por el fuerte contraste de temperatura en altura. Entre las altas subtropicales y el frente polar el aire es más cálido al sur y más frío al norte, lo que crea un gradiente de presión en altura; con Coriolis equilibrándolo, el viento geostrófico sopla casi siempre de oeste a este y se concentra en una banda estrecha. Se considera chorro cuando el viento supera los **60 kt** en un núcleo de máxima velocidad. Es larga (miles de kilómetros), ancha (cientos) y poco espesa (unos kilómetros), y serpentea.",
+     "El curso distingue cuatro. El **chorro subtropical** está alrededor de 200 hPa (FL390), se sitúa a 25°–40° en invierno y a 40°–45° en verano, y puede superar 100 kt. El **chorro del frente polar** sigue al frente polar: más al sur en invierno y más al norte en verano. El **chorro tropical del este** (*Tropical Easterly Jet*) aparece en el verano boreal entre 10° y 20° N, cerca de 150 hPa y 45 000 ft. El **chorro ártico** surge en brotes de aire ártico sobre grandes continentes.",
+     "Alrededor del núcleo hay cizalladura intensa y **turbulencia en aire claro (CAT)**, sobre todo en el lado frío y bajo el núcleo, con isotacas muy juntas. Para un avión ligero por debajo de FL100 el chorro no es un problema directo, pero dirige las borrascas y los frentes que sí afectan a tu vuelo."
+    ],
+    "table": {
+     "caption": "Corrientes en chorro según el curso",
      "head": [
       "Chorro",
       "Dónde",
-      "Altura aproximada",
+      "Nivel",
       "Notas"
      ],
      "rows": [
       [
-       "Polar (del frente polar)",
-       "Cerca de 50°–60° N, sobre el frente polar",
-       "FL300–FL400, bajo la tropopausa de latitudes medias",
-       "Más intenso en invierno; con frecuencia sobre España al avanzar el frente polar al sur"
+       "Subtropical",
+       "25°–40° (invierno), 40°–45° (verano)",
+       "200 hPa, FL390",
+       "Más de 100 kt"
       ],
       [
-       "Subtropical",
-       "Cerca de 30° N",
-       "Más alto, en torno a FL400 o por encima",
-       "Más estable y alejado de las bajas"
+       "Frente polar",
+       "Sigue al frente polar",
+       "Bajo la tropopausa de latitudes medias",
+       "Más al sur en invierno y al norte en verano"
+      ],
+      [
+       "Tropical del este",
+       "10°–20° N, verano boreal",
+       "150 hPa, 45 000 ft",
+       "Viento del este"
+      ],
+      [
+       "Ártico",
+       "Brotes de aire ártico sobre grandes continentes",
+       "Altura",
+       "Eventual"
       ]
      ],
+     "src": "Curso, resumen de climatología",
      "verify": true
     },
-    "bullets": [
-     "Velocidades de 100 kt son frecuentes en invierno y pueden llegar a más de 200 kt. Es más intensa y más baja en latitud en invierno, porque el contraste de temperatura es mayor.",
-     "Alrededor del núcleo hay **cizalladura intensa** y **turbulencia en aire claro (CAT)**, sobre todo en el lado frío (polar) y bajo el núcleo, con isotacas apretadas.",
-     "Para un avión ligero que vuela por debajo de FL100 el chorro no es un problema directo, pero el chorro dirige las borrascas y los frentes que sí afectan a tu vuelo."
+    "ideas": [
+     "El chorro es un río de aire en medio del océano de aire: avanza deprisa y estrecho, y en sus orillas, donde el agua corre más lenta junto a la corriente rápida, se forman remolinos (la CAT)."
     ]
    },
    {
-    "title": "Zonas climáticas y clima de España",
+    "title": "Vientos regionales y África noroccidental",
     "text": [
-     "Las zonas climáticas siguen a las células: **tropical** (ecuador, lluvia abundante todo el año o con estación húmeda), **subtropical** (bajo las altas subtropicales, secas), **templada** (dominada por los oestes y el frente polar, con las cuatro estaciones) y **polar**.",
-     "España está en el borde norte de la zona subtropical, bajo la influencia del frente polar en invierno y del anticiclón de las Azores en verano. Eso da un clima **mediterráneo**: veranos secos y cálidos, lluvias concentradas en otoño, invierno y primavera. En el noroeste y el Cantábrico la influencia atlántica da clima oceánico, más lluvioso; en el sudeste el clima es semiárido."
+     "Hay vientos regionales célebres que se nombran en los partes y conviene asociar a su causa. El **Föhn** (en Norteamérica, *Chinook*) es un viento descendente, seco y cálido a sotavento de una montaña, que puede subir deprisa la temperatura. El **Mistral** y la **Bora** están canalizados por valles o pasos: son fuertes, turbulentos y frecuentes en invierno. El **Sirocco**, el **Ghibli** y el **Khamsin** son vientos cálidos, secos y polvorientos del norte de África que reducen la visibilidad. El **Harmattan** es un viento del NE polvoriento que sopla hacia la ZCIT y puede bajar la visibilidad por debajo de 1000 m.",
+     "En África noroccidental, el curso destaca estas claves. En invierno, al sur de 20° N: la ZCIT está al sur, hay alta presión sahariana y sopla el Harmattan, seco y polvoriento. En verano, la ZCIT avanza hacia el norte y el Harmattan gira y se transforma en un monzón del SW húmedo, con Cu, Cb, chubascos fuertes y tormentas; retrocede en otoño. La tropopausa media está a unos 54 000 ft y el nivel de congelación en torno a 15 000 ft durante todo el año."
     ],
-    "note": {
-     "kind": "es",
-     "text": "La alta de las Azores es el factor de tiempo número uno para el vuelo VFR en España: con ella al oeste o sobre la península, el tiempo es bueno y estable; cuando se retira hacia el sur, entran los frentes atlánticos por el noroeste y el golfo de Cádiz."
-    }
+    "ideas": [
+     "El Föhn es el aire que, tras subir a un puerto, baja por el otro lado como un secador de pelo: seco y cálido. El Mistral es el aire que se mete por un embudo (el valle del Ródano) y sale con fuerza."
+    ]
    },
    {
-    "title": "Situaciones típicas sobre España",
+    "title": "Clima y situaciones típicas sobre España",
     "text": [
-     "Lo que verás en los partes y mapas se reduce a pocas situaciones:"
+     "España está en el borde norte de la zona subtropical, bajo la influencia del frente polar en invierno y del anticiclón de las Azores en verano. Eso da un clima **mediterráneo**: veranos secos y cálidos, y lluvias concentradas en otoño, invierno y primavera. En el noroeste y el Cantábrico la influencia atlántica da clima oceánico, más lluvioso; en el sudeste el clima es semiárido.",
+     "Lo que verás en los partes y mapas se reduce a pocas situaciones: la **del oeste** (borrascas y frentes que llegan en sucesión), la **anticiclónica** (una alta cubre la península o está cerca) y el **pantano barométrico** (presiones casi iguales). Con anticiclón el viento y la visibilidad dependen de la estación: la inversión de subsidencia atrapa bruma y humo bajo ella, y el cielo despejado favorece la niebla de radiación. En pantano barométrico mandan las brisas y la convección locales."
     ],
     "table": {
      "caption": "Tres situaciones características",
@@ -125,43 +245,169 @@
      "rows": [
       [
        "Del oeste (zonal)",
-       "Flujo del oeste en altura con borrascas y frentes que llegan en sucesión desde el Atlántico",
-       "Nubes y lluvias en el oeste y el norte, viento del suroeste y noroeste, buen tiempo relativo a sotavento (Mediterráneo)"
+       "Flujo del oeste en altura con borrascas y frentes que llegan del Atlántico",
+       "Nubes y lluvias en el oeste y el norte; buen tiempo relativo a sotavento"
       ],
       [
        "Anticiclónica",
        "Una alta cubre la península o está cerca",
-       "Cielos despejados, viento flojo; en invierno, nieblas e inversiones por subsidencia; en verano, calor, calima y brisas"
+       "Cielos despejados, viento flojo; en invierno, nieblas por subsidencia; en verano, calor, calima y brisas"
       ],
       [
        "Pantano barométrico",
-       "Gradiente de presión casi nulo, sin ninguna alta ni baja dominante",
-       "Vientos flojos y variables; en verano, tormentas de tarde por convección; en invierno, niebla persistente"
+       "Gradiente casi nulo, sin alta ni baja dominante",
+       "Vientos flojos y variables; tormentas de tarde en verano; niebla en invierno"
       ]
-     ]
+     ],
+     "src": "AEMET"
     },
-    "bullets": [
-     "Con **anticiclón** el viento y la visibilidad dependen de la estación: la inversión de subsidencia atrapa bruma y humo bajo ella, y el cielo despejado favorece la niebla de radiación.",
-     "En **pantano barométrico** los movimientos del aire los dicta el calentamiento local: brisas, térmicas y convección. Es la situación típica de las tormentas veraniegas del interior.",
-     "La **baja térmica ibérica** del verano y la **DANA** se estudian en el bloque de sistemas de presión."
+    "note": {
+     "kind": "es",
+     "text": "La alta de las Azores es el factor número uno para el vuelo VFR en España: con ella al oeste o sobre la península el tiempo es bueno y estable; cuando se retira al sur entran los frentes atlánticos por el noroeste y el golfo de Cádiz."
+    },
+    "ideas": [
+     "España es una casa con dos porteros: en verano hace de portero la alta de las Azores y no deja pasar a las borrascas; en invierno se va al sur y las borrascas entran como Pedro por su casa."
     ]
+   },
+   {
+    "title": "Ejemplos resueltos",
+    "examples": [
+     {
+      "q": "En enero, un vuelo regional va de Dakar hacia el interior de África, al sur de 20° N. ¿Qué tiempo y qué peligro esperas?",
+      "a": "En invierno, al sur de 20° N la ZCIT está al sur y domina la alta sahariana con el Harmattan: viento del NE, seco y polvoriento, con visibilidad que puede caer por debajo de 1000 m. El peligro es la visibilidad reducida, no las tormentas."
+     },
+     {
+      "q": "Eres un piloto en el ecuador: el termómetro marca 28 °C a nivel del mar y el nivel de congelación está a 16 000 ft. ¿Hay riesgo de engelamiento a 10 000 ft?",
+      "a": "No por temperatura: a 10 000 ft estás por debajo del nivel de congelación, así que no hay hielo estructural en las nubes. Por encima de unos 16 000 ft, en los Cb de la ZCIT, sí."
+     },
+     {
+      "q": "¿Dónde está la ZCIT en julio respecto a enero sobre África occidental?",
+      "a": "En julio se desplaza hacia el hemisferio de verano (norte), con retraso respecto al Sol; en enero está más al sur. De ahí el monzón del SW en verano al sur del Sahel."
+     }
+    ]
+   }
+  ],
+  "outline": [
+   {
+    "title": "Circulación general",
+    "items": [
+     "Calor desigual y Coriolis: tres células por hemisferio",
+     "Hadley 0°–30°: alisios; Ferrel 30°–60°: oestes; polar 60°–90°: levantes",
+     "Altas subtropicales a 30°, bajas del frente polar a 60°",
+     "El real se deforma por tierras, mares y la inclinación de 23,5°"
+    ]
+   },
+   {
+    "title": "Zonas climáticas",
+    "items": [
+     "Ecuatorial 0–10°: convección y tormentas",
+     "Sabana 10–20°: seco en invierno, lluvias en verano",
+     "Subtropical árida 20–35°: subsidencia, desiertos",
+     "Templada y polar: frente polar, borrascas, anticiclones fríos"
+    ]
+   },
+   {
+    "title": "Estaciones",
+    "items": [
+     "Punto subsolar: Cáncer en junio, Capricornio en diciembre",
+     "ZCIT y ecuador térmico hacia el hemisferio de verano",
+     "Lluvia en el ecuador casi todo el año, con máximos en equinoccios",
+     "De ahí los monzones y las estaciones húmeda y seca"
+    ]
+   },
+   {
+    "title": "ZCIT y monzones",
+    "items": [
+     "ZCIT: convergencia de alisios, 25–300 NM de ancho, sin superficie frontal",
+     "Cu, Cb, tormentas y engelamiento desde unos 16 000 ft",
+     "Monzón NE: más fresco y seco; monzón SW: húmedo y tormentoso",
+     "India, Sri Lanka, Birmania, Malasia occidental y África occidental"
+    ]
+   },
+   {
+    "title": "Presión y vientos",
+    "items": [
+     "Enero: alta de Siberia y bajas oceánicas",
+     "Julio: baja térmica (Baluchistán) y altas de Azores y Pacífico",
+     "Alisios, oestes de 40°–60°, Roaring Forties, levantes polares"
+    ]
+   },
+   {
+    "title": "Chorros y vientos regionales",
+    "items": [
+     "Subtropical: 200 hPa / FL390, más de 100 kt",
+     "Del frente polar: sigue al frente; más al sur en invierno",
+     "Tropical del este: 10–20° N, 150 hPa, en verano",
+     "Foehn, Mistral, Bora, Sirocco, Harmattan"
+    ]
+   }
+  ],
+  "mnemonics": [
+   "Las tres células de dentro a fuera, como las capas de una cebolla: Hadley (0–30), Ferrel (30–60) y polar (60–90). La del medio, Ferrel, es la «indirecta», la que gira empujada por sus vecinas.",
+   "Alisios hacia el ecuador, oestes en el medio, levantes en el polo: el viento de superficie de cada célula, siempre con la desviación de Coriolis a la derecha (HN).",
+   "Altas en 30°, bajas en 0° y 60°: AL-BA-AL-BA, a partir del ecuador.",
+   "La ZCIT sigue al Sol con retraso: va al hemisferio de verano. En julio, al norte; en enero, al sur.",
+   "Subtropical = Seco (subsidencia), ecuatorial = Sopa (aire húmedo y chubascos)."
+  ],
+  "selfCheck": [
+   {
+    "q": "¿Por qué hay tres células por hemisferio y no una sola?",
+    "a": "Sin rotación el aire caliente del ecuador iría hasta los polos y volvería en una célula única. Pero Coriolis lo desvía y lo rompe en tres: Hadley, Ferrel y polar, con zonas de ascenso en 0° y 60° y de descenso en 30° y en el polo."
+   },
+   {
+    "q": "¿Dónde están las zonas áridas del mundo y por qué?",
+    "a": "Hacia 20°–35° de latitud, bajo las altas subtropicales, donde baja el aire de la célula de Hadley. La subsidencia calienta y seca el aire y disipa las nubes: desiertos y estepas."
+   },
+   {
+    "q": "¿Cómo se desplaza la ZCIT durante el año y qué consecuencia tiene?",
+    "a": "Sigue al Sol con retraso y va al hemisferio de verano. Sobre una zona continental esto crea estación húmeda cuando llega y seca cuando se va, y explica los monzones."
+   },
+   {
+    "q": "¿Qué riesgos tiene volar en la ZCIT?",
+    "a": "Cu y Cb abundantes con tormentas, turbulencia severa y engelamiento desde unos 16 000 ft. No hay una superficie frontal definida, y su anchura varía entre 25 y 300 NM."
+   },
+   {
+    "q": "¿Qué diferencia hay entre el monzón NE y el SW?",
+    "a": "El NE llega desde el anticiclón siberiano: más fresco y seco, aunque puede humedecerse sobre el mar. El SW trae aire muy húmedo tras un largo recorrido marítimo: Cu, Cb, tormentas, base baja y turbulencia severa."
+   },
+   {
+    "q": "¿Dónde están y cuánto soplan las corrientes en chorro principales?",
+    "a": "La subtropical está hacia 200 hPa (FL390) y puede superar 100 kt; la del frente polar sigue al frente, más al sur en invierno. Hay otras dos: la tropical del este (150 hPa, 10–20° N, verano) y la ártica, en brotes de aire polar."
+   },
+   {
+    "q": "¿Qué es el Harmattan y por qué importa a un piloto?",
+    "a": "Un viento del noreste, seco y polvoriento, que sopla desde el Sáhara hacia la ZCIT en invierno. Puede dejar la visibilidad por debajo de 1000 m."
+   },
+   {
+    "q": "¿Por qué el anticiclón de las Azores condiciona el tiempo de España?",
+    "a": "En verano se extiende hacia el norte y cubre la península: tiempo seco y estable, con las borrascas desviadas al norte. En invierno retrocede al sur y deja pasar los frentes atlánticos."
    }
   ],
   "numbers": [
    "Células por hemisferio: Hadley 0°–30°, Ferrel 30°–60°, polar 60°–90°",
-   "Alisios: noreste en el hemisferio norte y sureste en el sur",
-   "Oestes en latitudes medias; levantes polares del NE",
-   "ZCIT: convergencia de los alisios; se desplaza hacia el hemisferio de verano",
-   "Corriente en chorro: viento de al menos 60 kt, más intensa en invierno",
-   "Alta subtropical a 30° de latitud; frente polar a unos 60°",
-   "El anticiclón de las Azores domina el verano en España y se retira al sur en invierno"
+   "Alisios del NE (HN) y del SE (HS); oestes entre 40° y 60°; levantes polares del NE",
+   "ZCIT: anchura de 25 a 300 NM; sin superficie frontal; engelamiento desde unos 16 000 ft",
+   "Zonas climáticas: ecuatorial 0–10°; sabana 10–20°; subtropical árida 20–35°",
+   "Nivel de congelación en el ecuador: unos 16 000 ft (hasta 18 000 ft en el SE asiático en julio)",
+   "Punto subsolar: Cáncer en junio y Capricornio en diciembre",
+   "Corriente en chorro: núcleo de al menos 60 kt",
+   "Chorro subtropical: unos 200 hPa o FL390; más de 100 kt; tropical del este: 150 hPa, 10–20° N",
+   "Harmattan: visibilidad que puede bajar de 1000 m",
+   "África noroccidental: tropopausa media 54 000 ft; nivel de congelación unos 15 000 ft todo el año"
   ],
   "traps": [
    "La célula de Ferrel va en sentido contrario a Hadley y la polar: es indirecta y su viento de superficie es del oeste, no de los alisios.",
-   "Confundir la dirección: los alisios del NE soplan hacia el SW (son «del noreste»).",
-   "Pensar que la corriente en chorro es un viento de superficie: está en la tropopausa y es de oeste a este.",
-   "Creer que la alta de las Azores da tiempo estable también en invierno: cuando se retira al sur dejan pasar los frentes.",
-   "Olvidar que la ZCIT se mueve hacia el hemisferio de verano, no hacia el de invierno."
+   "Los alisios del NE soplan desde el noreste, hacia el suroeste.",
+   "La corriente en chorro no es un viento de superficie: está cerca de la tropopausa y es de oeste a este (salvo la tropical del este).",
+   "Creer que la alta de las Azores da tiempo estable también en invierno: cuando se retira al sur, dejan pasar los frentes.",
+   "La ZCIT se mueve hacia el hemisferio de verano, no hacia el de invierno.",
+   "Pensar que el ecuador nunca ve engelamiento: aunque el nivel de congelación está alto (16 000 ft), los Cb de la ZCIT producen engelamiento por encima.",
+   "Confundir Foehn (cálido y seco a sotavento) con Mistral y Bora (fríos, canalizados por valles y pasos)."
+  ],
+  "spain": [
+   "España tiene clima mediterráneo, con influencia atlántica en el noroeste y semiárido en el sudeste.",
+   "Los frentes atlánticos entran sobre todo por el noroeste y el golfo de Cádiz de octubre a mayo; en verano la alta de las Azores los desvía hacia el norte.",
+   "La calima sahariana llega a Canarias y a la península con aire tropical continental del sur o del este."
   ],
   "sources": [
    {
@@ -169,20 +415,14 @@
     "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
    },
    {
-    "title": "AEMET, Atlas climático ibérico y climatología de España",
-    "url": "https://www.aemet.es/es/conocermas/recursos_en_linea/publicaciones_y_estudios/publicaciones"
+    "title": "FAA-H-8083-28, Aviation Weather Handbook",
+    "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
    },
    {
-    "title": "FAA-H-8083-28, Aviation Weather Handbook (circulación y corriente en chorro)",
-    "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+    "title": "Material del curso, resumen de climatología (instructores)"
    }
   ],
-  "spain": [
-   "España tiene clima mediterráneo, con influencia atlántica en el noroeste y semiárido en el sudeste.",
-   "Los frentes atlánticos entran sobre todo por el noroeste y el golfo de Cádiz de octubre a mayo; en verano la alta de las Azores los desvía hacia el norte."
-  ],
-  "id": "050.05",
-  "reviewed": "2026-10-09"
+  "reviewed": "2026-11-23"
  },
  "questions": [
   {
@@ -394,6 +634,132 @@
     "Con alta y gradiente débil el viento es flojo."
    ],
    "ref": "AEMET"
+  },
+  {
+   "id": "050.05.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "Respecto a la zona de convergencia intertropical (ZCIT), es cierto que:",
+   "options": [
+    "No tiene una superficie frontal definida y su anchura varía entre 25 y 300 NM",
+    "Es un frente frío estacionario de unos 5 NM de ancho",
+    "Está fija sobre el ecuador todo el año",
+    "Solo produce nubes estables sin riesgo de tormentas"
+   ],
+   "correct": 0,
+   "why": "La ZCIT es la zona de convergencia de los alisios: no es un frente con superficie definida, ancha entre 25 y 300 NM, con Cu, Cb y tormentas.",
+   "whyNot": [
+    null,
+    "No es un frente frío: es convergencia de masas de aire de los dos hemisferios.",
+    "Se desplaza hacia el hemisferio de verano con las estaciones.",
+    "Produce Cb, tormentas y turbulencia severa."
+   ],
+   "ref": "Curso, resumen de climatología"
+  },
+  {
+   "id": "050.05.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "El Harmattan es un viento:",
+   "options": [
+    "Húmedo del suroeste, que trae lluvias a la costa africana en verano",
+    "Cálido y seco que desciende a sotavento de una montaña",
+    "Frío y racheado que baja por el valle del Ródano en invierno",
+    "Del noreste, seco y polvoriento, que sopla hacia la ZCIT y puede bajar la visibilidad de 1000 m"
+   ],
+   "correct": 3,
+   "why": "El Harmattan sopla en invierno desde el Sáhara hacia la ZCIT, cargado de polvo; puede reducir la visibilidad por debajo de 1000 m.",
+   "whyNot": [
+    "Eso describe el monzón del SW.",
+    "Eso es un viento de tipo Föhn.",
+    "Eso es el Mistral.",
+    null
+   ],
+   "ref": "Curso, resumen de climatología"
+  },
+  {
+   "id": "050.05.013",
+   "type": "concepto",
+   "level": 2,
+   "q": "El monzón del SW se caracteriza por:",
+   "options": [
+    "Aire fresco y seco del anticiclón siberiano con cielos despejados",
+    "Aire muy húmedo de largo recorrido marítimo: Cu, Cb, tormentas y turbulencia severa",
+    "Viento catabático frío de las altiplanicies",
+    "Ausencia de nubosidad de desarrollo vertical"
+   ],
+   "correct": 1,
+   "why": "El monzón SW llega húmedo tras un largo trayecto marino y produce Cu y Cb, bases bajas, tormentas y turbulencia severa.",
+   "whyNot": [
+    "Eso describe el monzón del NE.",
+    null,
+    "Los catabáticos son vientos de ladera, no un monzón.",
+    "Es todo lo contrario: tiene mucha nubosidad de desarrollo."
+   ],
+   "ref": "Curso, resumen de climatología"
+  },
+  {
+   "id": "050.05.014",
+   "type": "concepto",
+   "level": 1,
+   "q": "La zona subtropical árida (20°–35°) es seca porque:",
+   "options": [
+    "Allí converge la ZCIT con aire húmedo",
+    "Hay frentes fríos constantes",
+    "Domina la subsidencia anticiclónica de las altas subtropicales",
+    "El aire asciende y se enfría con rapidez"
+   ],
+   "correct": 2,
+   "why": "Bajo las altas subtropicales baja el aire de la célula de Hadley: se comprime, se calienta y se aleja de la saturación; resultan desiertos y estepas.",
+   "whyNot": [
+    "La ZCIT está en torno al ecuador, no a 20°–35°.",
+    "Los frentes se dan en el frente polar, más al norte.",
+    null,
+    "El ascenso corresponde a la zona ecuatorial, no a la subtropical."
+   ],
+   "ref": "Curso, resumen de climatología"
+  },
+  {
+   "id": "050.05.015",
+   "type": "regla",
+   "level": 2,
+   "q": "El nivel de congelación medio en el ecuador ronda:",
+   "options": [
+    "16 000 ft",
+    "5000 ft",
+    "10 000 ft",
+    "30 000 ft"
+   ],
+   "correct": 0,
+   "why": "En el ecuador el nivel de 0 °C medio ronda los 16 000 ft, y puede llegar a 18 000 ft sobre el sudeste asiático en julio.",
+   "whyNot": [
+    null,
+    "5000 ft es un valor de latitudes altas o de invierno.",
+    "10 000 ft es un valor de latitudes medias.",
+    "30 000 ft es la zona de las corrientes en chorro, no el nivel de congelación."
+   ],
+   "ref": "Curso, resumen de climatología"
+  },
+  {
+   "id": "050.05.016",
+   "type": "concepto",
+   "level": 2,
+   "q": "En enero, en el hemisferio norte, domina sobre el continente asiático:",
+   "options": [
+    "La baja de Baluchistán, de origen térmico",
+    "El anticiclón de las Azores",
+    "La ZCIT, con tormentas continuas",
+    "La alta de Siberia, un anticiclón frío"
+   ],
+   "correct": 3,
+   "why": "En invierno el enfriamiento continental crea la alta de Siberia. La baja de Baluchistán es de julio.",
+   "whyNot": [
+    "La baja de Baluchistán es una baja térmica de verano.",
+    "Las Azores están sobre el Atlántico y no sobre Asia.",
+    "La ZCIT está sobre el ecuador térmico, no domina Asia en enero.",
+    null
+   ],
+   "ref": "Curso, resumen de climatología"
   }
  ],
  "cards": [
@@ -410,17 +776,17 @@
   {
    "id": "c.050.05.03",
    "front": "ZCIT",
-   "back": "Convergencia de los alisios en el ecuador: aire ascendente y tormentas; se desplaza hacia el hemisferio de verano"
+   "back": "Convergencia de los alisios: aire ascendente, Cb y tormentas; 25–300 NM; se desplaza al hemisferio de verano"
   },
   {
    "id": "c.050.05.04",
    "front": "Corriente en chorro: definición",
-   "back": "Núcleo de viento de al menos 60 kt, de oeste a este, en la tropopausa; más intensa en invierno"
+   "back": "Núcleo de viento de al menos 60 kt, de oeste a este, cerca de la tropopausa; más intensa en invierno"
   },
   {
    "id": "c.050.05.05",
    "front": "Chorro y turbulencia",
-   "back": "Cizalladura intensa: turbulencia en aire claro (CAT) en torno al núcleo"
+   "back": "Cizalladura intensa: turbulencia en aire claro (CAT), sobre todo en el lado frío y bajo el núcleo"
   },
   {
    "id": "c.050.05.06",
@@ -431,6 +797,26 @@
    "id": "c.050.05.07",
    "front": "Pantano barométrico",
    "back": "Gradientes casi nulos, viento flojo y variable; tormentas de tarde en verano o nieblas en invierno"
+  },
+  {
+   "id": "c.050.05.08",
+   "front": "Zonas climáticas del curso",
+   "back": "Ecuatorial 0–10°, sabana 10–20°, subtropical árida 20–35°, templada y polar"
+  },
+  {
+   "id": "c.050.05.09",
+   "front": "Nivel de congelación en el ecuador",
+   "back": "Unos 16 000 ft de media (hasta 18 000 ft sobre el SE asiático en julio)"
+  },
+  {
+   "id": "c.050.05.10",
+   "front": "Monzón NE y monzón SW",
+   "back": "NE: fresco y seco (alta de Siberia). SW: muy húmedo, Cu/Cb, tormentas y turbulencia severa"
+  },
+  {
+   "id": "c.050.05.11",
+   "front": "Harmattan",
+   "back": "Viento del NE, seco y polvoriento, hacia la ZCIT; visibilidad que puede bajar de 1000 m"
   }
  ]
 }

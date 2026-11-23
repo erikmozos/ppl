@@ -1,110 +1,347 @@
 {
  "lesson": {
+  "id": "050.15",
   "title": "Engelamiento",
-  "summary": "Condiciones del engelamiento, tipos de hielo (claro, opaco y mixto), escarcha y lluvia engelante, efectos sobre el avión, cómo evitarlo y relación con el hielo de carburador.",
+  "course": "Tema 7 · Peligros: engelamiento, turbulencia y niebla",
+  "summary": "Condiciones del engelamiento, hielo claro, escarcha opaca, hielo mixto, lluvia engelante, nieve compacta, escarcha blanca y cristales de hielo; factores de severidad, engelamiento de motores a reacción, efectos sobre el avión, cómo evitarlo y el hielo de carburador.",
   "objectives": [
-   "Explicar cuándo y por qué se forma hielo en un avión en vuelo",
-   "Distinguir hielo claro, opaco y mixto, y la escarcha",
-   "Reconocer los efectos del hielo sobre la sustentación, el peso, las tomas y la hélice",
-   "Evitar las condiciones de engelamiento y saber qué hacer si se entra en ellas",
-   "Entender el hielo de carburador y su prevención con calor de carburador"
+   "Explicar por qué el agua puede estar líquida bajo cero y cuándo se forma hielo estructural en vuelo",
+   "Distinguir hielo claro, escarcha opaca (rime), hielo mixto, lluvia engelante, nieve compacta, escarcha blanca y cristales de hielo",
+   "Relacionar la severidad del engelamiento con el tipo de nube, la forma del avión, la velocidad y la temperatura de la base",
+   "Describir el engelamiento de los motores a reacción y de los motores de émbolo, y el uso del calor de carburador",
+   "Aplicar las reglas para evitar el engelamiento y reaccionar si se entra en él, sobre todo con lluvia engelante"
   ],
   "sections": [
    {
     "title": "Cuándo hay engelamiento",
     "text": [
-     "El hielo estructural se forma cuando el avión vuela en **aire con agua líquida visible** (nubes o precipitación) y la **superficie del avión está a 0 °C o menos**. Lo sorprendente es que el agua puede seguir **líquida por debajo de 0 °C**: son gotas **sobreenfriadas**, que no se han congelado porque les falta un núcleo; al chocar con el avión se congelan al instante. En una nube, la mayor parte del agua sobreenfriada se encuentra entre **0 y −20 °C**; hacia −40 °C ya casi todo son cristales de hielo, que no se pegan al avión.",
-     "Es más probable e intenso en **Ns y Cb**, en las zonas frontales, en las laderas de barlovento con ascendencias orográficas y cerca de la isoterma de 0 °C. El aire frío y seco no produce engelamiento. En los GAMET figura el **nivel de congelación (FZLVL)**."
+     "El hielo estructural se forma cuando el avión vuela en aire con agua líquida visible y su superficie está a 0 °C o menos. El agua puede seguir líquida por debajo de 0 °C: son gotas **sobreenfriadas** (*supercooled*), que no se han congelado porque les falta un núcleo al que agarrarse. Al chocar con el avión se congelan casi al instante. En una nube la mayor parte del agua sobreenfriada está entre **0 y −20 °C**; hacia −40 °C ya casi todo son cristales y el engelamiento es despreciable, porque las gotas son muy pequeñas y escasas.",
+     "Es más probable e intenso en las nubes de desarrollo vertical (Cu y Cb) y en Ns, en las zonas frontales, en las laderas de barlovento y cerca de la isoterma de 0 °C. El aire frío y seco no produce engelamiento. En los GAMET figura el nivel de congelación (FZLVL)."
+    ],
+    "ideas": [
+     "Una gota sobreenfriada es como una persona en equilibrio sobre una cuerda: aguanta sin caer mientras nadie la toca, pero un empujón (el avión) la hace caer, es decir, congelar, al instante.",
+     "Piensa en una botella de agua sacada del congelador que sigue líquida: al golpearla, de repente se hace hielo. Es lo que le pasa a la gota al chocar con el borde de ataque."
     ]
    },
    {
-    "title": "Tipos de hielo",
+    "title": "Hielo claro (clear ice)",
+    "text": [
+     "El hielo claro es transparente y se forma con gotas grandes: es el más peligroso por la velocidad a la que se acumula. Una gota grande empieza a congelar al chocar, y al hacerlo libera calor latente; esto retrasa la congelación del resto, de modo que parte de la gota fluye hacia atrás sobre la superficie y se congela después. No queda aire atrapado bajo ese flujo, y por eso el hielo es transparente, liso y duro.",
+     "Aparece en Ns, Cu y Cb a temperaturas de 0 a −20 °C, según el curso (muchos textos lo dan de 0 a −10 °C, y dejan el opaco para −10 a −20 °C). Se extiende más allá del borde de ataque y cambia la forma del perfil con mucha rapidez. Es difícil de ver y difícil de quitar."
+    ],
+    "ideas": [
+     "Es como el agua que cae sobre una sartén fría en el congelador: se extiende, se queda lisa y transparente, y se pega muy fuerte. Es el hielo de una pista de patinaje."
+    ]
+   },
+   {
+    "title": "Escarcha opaca (rime ice)",
+    "text": [
+     "La escarcha opaca (*rime ice*, hielo opaco) es una capa rugosa, lechosa y quebradiza que se forma cuando gotas pequeñas se congelan al instante al chocar. Tarda poco en congelar y atrapa aire entre las gotas, por eso es blanquecina y opaca. Suele aparecer en nubes estratiformes y a temperaturas más bajas, y se acumula sobre todo en el borde de ataque, siguiendo el perfil.",
+     "Es menos pegajosa y se rompe con más facilidad que el hielo claro, pero también deforma el borde de ataque y, con ello, la sustentación."
+    ],
+    "ideas": [
+     "Piensa en la escarcha de un congelador viejo: granulada, blanca y mate. Cada gota congela donde cae, sin tiempo de extenderse."
+    ]
+   },
+   {
+    "title": "Hielo mixto",
+    "text": [
+     "El hielo mixto es la combinación de claro y opaco, y suma lo peor de los dos efectos. En nube, entre 0 y −20 °C, es muy frecuente encontrar una mezcla de gotas grandes y pequeñas. Las pequeñas forman un depósito rugoso en el borde de ataque y las grandes añaden el flujo hacia atrás: el resultado es una acumulación rápida y de forma muy irregular."
+    ],
     "table": {
-     "caption": "Tipos de engelamiento en vuelo",
+     "caption": "Los tres hielos de las nubes según el curso",
      "head": [
       "Tipo",
+      "Gotas",
       "Aspecto",
-      "Cómo se forma",
+      "Temperatura típica",
       "Peligro"
      ],
      "rows": [
       [
-       "Claro (glaze)",
-       "Transparente, liso y duro",
-       "Gotas grandes, a 0 °C a −10 °C; lluvia engelante; se extiende sobre la superficie",
-       "Muy alto: se pega, es pesado y difícil de eliminar; el más peligroso"
+       "Claro (clear)",
+       "Grandes",
+       "Transparente, liso y duro; fluye hacia atrás",
+       "0 a −20 °C (curso); sobre todo 0 a −10 °C en otros textos",
+       "El más peligroso: se acumula muy deprisa"
       ],
       [
        "Opaco (rime)",
+       "Pequeñas",
        "Blanquecino, rugoso y quebradizo",
-       "Gotas pequeñas, −10 °C a −20 °C; congelan al instante y atrapan aire",
-       "Alto: deforma el borde de ataque, aunque se rompe con más facilidad"
+       "Más frío, nubes estratiformes",
+       "Alto, aunque se rompe más fácil"
       ],
       [
        "Mixto",
-       "Mezcla de ambos",
-       "Gotas de distintos tamaños, entre −10 °C y −15 °C",
-       "Alto"
+       "Mezcla",
+       "Rugoso con parte transparente",
+       "0 a −20 °C",
+       "Lo peor de ambos"
       ]
      ],
-     "src": "FAA-H-8083-28; AEMET"
+     "src": "Curso, flight hazards; FAA-H-8083-28",
+     "verify": true
     },
-    "text": [
-     "El tipo de hielo depende del **tamaño de las gotas** y de la temperatura, como resume la tabla.",
-     "La **lluvia engelante** es lluvia cuyas gotas están sobreenfriadas, y es muy peligrosa: se forma cuando la precipitación atraviesa una **capa de aire frío** bajo cero tras haber estado en una capa cálida encima. Se congela al contacto con cualquier superficie y puede formar una capa de hielo claro grueso en minutos.",
-     "La **escarcha** es distinta: es un depósito de cristales de hielo sobre superficies **estacionadas** en una noche fría, despejada y húmeda. No se forma en vuelo. Una capa de escarcha **estropea el perfil del ala** y debe retirarse **antes de despegar**: una superficie contaminada puede perder una gran parte de la sustentación."
+    "ideas": [
+     "Como una mezcla de nieve y lluvia helada sobre el parabrisas: parte se queda como granizado blanco y parte como una costra transparente."
     ]
    },
    {
-    "title": "Efectos sobre el avión",
+    "title": "Lluvia engelante (rain ice)",
     "text": [
-     "El hielo afecta al avión de varias formas a la vez. **Aumenta el peso** y **deforma el perfil**, de modo que la sustentación máxima disminuye y la **velocidad de pérdida sube** (a veces sin aviso previo del morro). **Aumenta la resistencia** y reduce la potencia útil. Puede **bloquear las tomas del pitot y de estática**, dando indicaciones erróneas de velocidad, altitud y régimen vertical, y bloquear las **superficies de mando**. En la hélice produce vibraciones y pérdida de tracción; en las antenas, ruido de radio; y en el parabrisas, pérdida de visibilidad.",
-     "Con hielo acumulado la velocidad de pérdida sube: aproxima más deprisa de lo normal, con poco flap y sin maniobras bruscas."
+     "La lluvia engelante es lluvia que se sobreenfría al caer desde una inversión hacia aire bajo cero, y se congela al contacto con el avión. No se congela en el aire: al llegar al avión forma hielo claro u opaco, y se acumula muy deprisa. La reacción correcta es virar de inmediato a rumbo recíproco, antes de que el hielo anule el control.",
+     "Se da en una franja estrecha de altitudes bajas, de unos **1000 ft**, por delante de un frente cálido o una oclusión, y se asocia sobre todo con la lluvia moderada continua que cae de Ns. El mecanismo es el de la figura: la nieve se funde en la capa cálida de encima y las gotas atraviesan una capa fría junto al suelo, sin tiempo de congelarse.",
+     "Una pista práctica: si en el aeródromo el METAR señala FZRA, o si caen gránulos de hielo (*ice pellets*, que son gotas que sí han congelado en la capa fría), hay una capa cálida encima y una peligrosa franja de lluvia engelante en el aire."
+    ],
+    "figure": "svg:050-lluvia-engelante",
+    "caption": "Perfil de la lluvia engelante: capa cálida intermedia y capa fría baja",
+    "ideas": [
+     "Es como echar agua tibia a un vaso helado: no congela en el aire, pero en cuanto toca el vaso se pega y forma una costra transparente. Tú eres el vaso.",
+     "Piensa en un día de lluvia helada: los coches y las farolas quedan cubiertos de una funda transparente, pero la lluvia nunca fue hielo en el aire."
     ]
    },
    {
-    "title": "Cómo evitarlo",
+    "title": "Nieve compacta (pack snow)",
     "text": [
-     "Los aviones de entrenamiento como el PA-28 y el Cessna 172 **no están certificados para volar en condiciones de engelamiento conocido**; el único método fiable es **evitarlo**. Antes del vuelo, estudia el nivel de congelación y las nubes en la ruta. En vuelo, **sal de la zona cuanto antes**: desciende hacia aire más cálido (si el terreno lo permite y hay aire por encima de 0 °C), o cambia de rumbo hacia aire sin nubes, o asciende a una capa más fría con cielo despejado. **Evita las nubes y la precipitación** si la temperatura está cerca de 0 °C o por debajo. Si el avión tiene calentador del pitot, enciéndelo antes de entrar en zonas de riesgo."
+     "La nieve compacta es hielo formado por una mezcla de gotas sobreenfriadas y nieve, que puede bloquear tomas de aire y otras aberturas del avión. Es una forma de engelamiento propia de zonas con precipitación nivosa y nubes con agua líquida. Los efectos normales sobre la aerodinámica son pequeños, pero obstruye entradas de aire, sondas y rejillas."
+    ],
+    "ideas": [
+     "Es como una bola de nieve mojada: la nieve por sí sola no se pega, pero la nieve húmeda con agua helada sí, y tapona orificios."
+    ]
+   },
+   {
+    "title": "Escarcha blanca (hoar frost)",
+    "text": [
+     "La escarcha blanca (*hoar frost*) es un depósito de cristales de hielo formado por sublimación directa del vapor sobre una superficie bajo cero, y se da en aire claro. Se forma si la temperatura del avión es inferior a 0 °C y el aire que lo rodea se enfría hasta el nivel de saturación: el vapor se convierte en cristales sin pasar por el estado líquido. Es un depósito blanco y cristalino, parecido a la escarcha del suelo.",
+     "En tierra aparece de noche y hay que retirarla antes de despegar: la rugosidad aumenta la fricción y la recorrida de despegue, empeora la sustentación, tapa los parabrisas e interfiere con las antenas de radio.",
+     "En vuelo puede darse en dos casos: en un descenso rápido desde una región muy fría a una capa cálida y húmeda, y al ascender desde una temperatura bajo cero a través de una inversión. No es severa. Se resuelve volando a una capa con temperatura positiva o aumentando la velocidad para producir calentamiento cinético."
+    ],
+    "ideas": [
+     "Es como cuando entras en una habitación cálida con las gafas heladas: se empañan de repente sin que haya salido ni una gota de agua. El vapor se hace hielo directamente sobre una superficie fría.",
+     "No confundas «escarcha blanca» con «escarcha opaca»: la primera se pega sin nube, por sublimación; la segunda es hielo de gotas en una nube."
+    ]
+   },
+   {
+    "title": "Engelamiento por cristales de hielo (ICI)",
+    "text": [
+     "Los cristales de hielo muy pequeños pueden causar pérdida repentina de empuje en algunos motores a reacción. Este peligro (*Ice Crystal Icing*, ICI) no suele provocar parada completa, pero puede afectar a más de un motor a la vez, y se da fuera de las condiciones que las autoridades definen como «de engelamiento» en el manual del avión.",
+     "Las zonas con grandes concentraciones de cristales de unos 40 micras están dentro y cerca de los sistemas convectivos, sobre todo en latitudes tropicales y sobre los océanos, donde el aire cálido contiene más humedad y las cimas pueden romper la tropopausa. Pueden persistir tiempo después de que la convección decaiga. Casi no se ven ni de día. No aparecen en el radar de a bordo, porque a esas alturas hace tanto frío que no sobrevive agua líquida: son las condiciones «glaciadas». A niveles más bajos pueden convivir con gotas sobreenfriadas, y se habla entonces de condiciones de fase mixta.",
+     "El mayor riesgo está a sotavento de las cimas de grandes áreas convectivas, en la zona del yunque. Una cúpula que sobresale del yunque (*overshooting top*) indica convección fuerte. No hay que confundirlos con los cristales grandes y poco densos de Ci, Cs y Cc, que no son peligrosos."
+    ],
+    "ideas": [
+     "Es como la harina fina en el aire de una panadería: cuando es muy densa y muy fina, entra en todas partes y atasca los filtros, y no se ve."
+    ]
+   },
+   {
+    "title": "Factores que determinan la severidad",
+    "text": [
+     "La severidad del engelamiento depende de la cantidad de agua líquida que encuentra el avión y de cómo la capta. La concentración de gotas es mayor en las nubes de desarrollo vertical, porque las corrientes ascendentes son más fuertes: Cu y Cb dan engelamiento moderado a severo. Siempre hay más gotas cerca de la base de la nube, donde es más cálido. Una base más cálida contiene más vapor y por tanto más agua libre.",
+     "La forma del avión también importa. Los perfiles finos captan hielo con más rapidez que los gruesos. La cola, los montantes del tren y las antenas tienen secciones estrechas y acumulan hielo antes: un poco de hielo en el plano principal puede indicar un engelamiento más serio en otras partes. A mayor velocidad el avión choca con más gotas por unidad de tiempo, aunque el calentamiento cinético puede compensarlo: si sube la temperatura de la superficie por encima de 0 °C evita el hielo, pero si queda por debajo de 0 °C puede aumentar el riesgo."
+    ],
+    "table": {
+     "caption": "Severidad típica según la nube",
+     "head": [
+      "Nube",
+      "Engelamiento"
+     ],
+     "rows": [
+      [
+       "Cu y Cb",
+       "Moderado a severo"
+      ],
+      [
+       "Ns",
+       "Moderado a severo"
+      ],
+      [
+       "Sc",
+       "Ligero a moderado (puede ser severo en zonas montañosas)"
+      ],
+      [
+       "Ac, As y St",
+       "Ligero"
+      ],
+      [
+       "Ci, Cs y Cc",
+       "Nulo o trazas"
+      ]
+     ],
+     "src": "Curso, flight hazards"
+    },
+    "ideas": [
+     "Un perfil fino es como una cuchilla: corta (y recoge) más gotas. Uno grueso es una pala roma: las empuja hacia los lados.",
+     "Cuanto más rápido cruzas la lluvia, más te mojas por segundo, pero un chaparrón con viento de cara también te calienta la cara: esa es la idea del calentamiento cinético."
+    ]
+   },
+   {
+    "title": "Engelamiento de motores a reacción",
+    "text": [
+     "El hielo en un motor a reacción puede formarse en los labios de la toma de aire y en las paletas guía de entrada, y si se desprende y entra en el motor puede dañar las palas. Es normal algo de hielo en las primeras etapas, pero el antihielo del motor debe ponerse en ON cuando hay precipitación o humedad visible y la temperatura exterior indicada es de **+10 °C o menos** (hasta −40 °C).",
+     "Hay otros factores. Si hay hielo sobre las sondas de presión de entrada (P1), la indicación de potencia puede ser errónea. Hay que usar los igniters (encendedores) en condiciones de posible engelamiento, o se puede apagar el motor. En vuelos largos a temperaturas muy bajas el combustible puede congelar, y debes conocer su punto de congelación para el tipo de avión. Por último, el uso del antihielo y del deshielo suele costar prestaciones.",
+     "El hielo claro puede formarse con temperatura exterior positiva cuando las gotas tocan un avión cuya superficie superior está a 0 °C o menos, por ejemplo porque el combustible muy frío enfría el ala por conducción. Esto puede ocurrir también en tierra con humedad alta, lluvia, llovizna o niebla, y quedar cubierto por nieve y pasar inadvertido. Su desprendimiento al despegar es especialmente peligroso en aviones con motores en la cola."
+    ],
+    "ideas": [
+     "Los labios helados de la toma son como un tapón de hielo en la boca de una manguera: si se desprende un trozo, sale disparado hacia las palas."
+    ]
+   },
+   {
+    "title": "Efectos del hielo y cómo evitarlo",
+    "text": [
+     "El hielo afecta al avión de varias formas a la vez. Aumenta el peso y deforma el perfil, de modo que la sustentación máxima disminuye y la **velocidad de pérdida sube**, a veces sin aviso del morro. Aumenta la resistencia y reduce la potencia útil. Puede bloquear las tomas del pitot y de estática, con indicaciones erróneas de velocidad, altitud y régimen vertical, y puede bloquear las superficies de mando. En la hélice produce vibraciones y pérdida de tracción; en las antenas, ruido de radio; en el parabrisas, pérdida de visibilidad.",
+     "Los aviones de entrenamiento como el PA-28 y el Cessna 172 **no están certificados para volar en condiciones de engelamiento conocido**: el único método fiable es evitarlo. Antes del vuelo, estudia el nivel de congelación y las nubes en la ruta. En vuelo, sal de la zona cuanto antes: desciende hacia aire más cálido si el terreno lo permite, o cambia de rumbo hacia aire sin nubes. Evita las nubes y la precipitación si la temperatura está cerca de 0 °C o por debajo. Con hielo acumulado aproxima con mayor velocidad, poco flap y sin maniobras bruscas."
     ],
     "bullets": [
-     "Retira toda la escarcha, hielo y nieve antes de despegar; el avión debe estar limpio.",
+     "Retira toda la escarcha, hielo y nieve antes de despegar: el avión debe estar limpio.",
      "Con el nivel 0 °C bajo tu altitud de crucero, una nube es una trampa de hielo.",
-     "Con lluvia engelante, da media vuelta: es la peor situación."
+     "Con lluvia engelante, da media vuelta: es la peor situación.",
+     "Si hay calentador del pitot, enciéndelo antes de entrar en zonas de riesgo."
+    ],
+    "ideas": [
+     "El hielo es un pasajero que pesa, que te cambia las alas y que te tapa el pitot: la solución no es subirlo a bordo, es no invitarlo."
     ]
    },
    {
     "title": "Hielo de carburador",
     "text": [
-     "En un motor con **carburador** (como el del PA-28), la evaporación del combustible y la bajada de presión en el venturi pueden enfriar el aire de admisión **hasta unos 20 °C por debajo de la temperatura exterior**. Si hay humedad, el vapor se congela y se acumula en el venturi y en la mariposa. Puede formarse **con cielos despejados y temperaturas exteriores de hasta 20 a 25 °C** y humedad alta; es más probable con potencia reducida (descenso, rodaje, aproximación).",
-     "Síntomas: pérdida de revoluciones o de presión de admisión sin causa y funcionamiento áspero. El remedio es **aplicar calor al carburador al completo** y mantenerlo; el motor puede ir peor unos segundos mientras el hielo se derrite. Usa el calor de carburador **de forma preventiva** en las condiciones propicias, **siempre antes de reducir potencia para aproximar**, y consulta el POH. Un motor de **inyección** (como el del C172S) no tiene carburador y no sufre hielo en el venturi, aunque tiene su propia toma de aire alterna."
+     "En un motor con carburador el aire de admisión puede enfriarse hasta unos 20 °C por debajo de la temperatura exterior por dos motivos: la evaporación del combustible y la bajada de presión en el venturi. Si hay humedad, el vapor se congela y se acumula en el venturi y en la mariposa. Puede formarse con cielos despejados y temperaturas exteriores de hasta **20 a 25 °C** con humedad alta, y es más probable con potencia reducida (descenso, rodaje, aproximación).",
+     "Síntomas: pérdida de revoluciones o de presión de admisión sin causa, y funcionamiento áspero. El remedio es aplicar calor al carburador al completo y mantenerlo; el motor puede ir peor unos segundos mientras el hielo se derrite. Usa el calor de carburador de forma preventiva en las condiciones propicias, siempre antes de reducir potencia para aproximar, y consulta el POH. Un motor de inyección (como el del C172S) no tiene carburador y no sufre hielo en el venturi, aunque tiene su propia toma de aire alterna."
     ],
-    "links": [
+    "figure": "svg:020-riesgo-hielo",
+    "caption": "Riesgo orientativo de hielo de carburador según temperatura y humedad (esquema del bloque de motores)",
+    "ideas": [
+     "Es como el frío que sientes en el dedo al pulverizar desodorante: al evaporarse el líquido, el bote y el aire se enfrían bruscamente. En el carburador pasa lo mismo con la gasolina, y el vapor de agua del aire se hace hielo."
+    ]
+   },
+   {
+    "title": "Ejemplos resueltos",
+    "examples": [
      {
-      "label": "Prueba de motor del PA-28: comprobación del calor de carburador",
-      "href": "#/ac/pa28/flow/runup"
+      "q": "Vuelas en un PA-28 a 6000 ft, con una temperatura exterior de +2 °C, en Sc con base a 4500 ft y tope a 7000 ft, y el nivel de congelación está a 5500 ft. ¿Hay riesgo de engelamiento y qué haces?",
+      "a": "Hay agua líquida visible en la nube y, por encima de 5500 ft, la temperatura es 0 °C o menos; por tanto, hay riesgo (ligero a moderado en Sc). El avión no está certificado para engelamiento conocido: sal de la nube hacia aire más cálido, descendiendo bajo 5500 ft si el terreno lo permite, o cambia de rumbo hacia cielo despejado."
+     },
+     {
+      "q": "A 8 °C de temperatura exterior, humedad relativa alta y cielo despejado, entras a la aproximación con el PA-28 y reduces potencia sin calor de carburador. ¿Qué puede ocurrir y qué haces antes de reducir?",
+      "a": "Con humedad alta y temperaturas hasta 20–25 °C se forma hielo de carburador, sobre todo a potencia reducida. Antes de reducir potencia para aproximar aplica calor de carburador al completo, según el POH, y vigila las revoluciones."
+     },
+     {
+      "q": "Una mañana helada, el avión ha pasado la noche fuera con un fino velo blanco en las alas. ¿Despegas si «es solo escarcha»?",
+      "a": "No. La escarcha estropea el perfil, sube la velocidad de pérdida y alarga la recorrida. Hay que retirarla por completo antes de despegar."
      }
     ]
    }
   ],
+  "outline": [
+   {
+    "title": "Condiciones",
+    "items": [
+     "Agua líquida visible y superficie a 0 °C o menos",
+     "Gotas sobreenfriadas, sobre todo entre 0 y −20 °C",
+     "A −40 °C o menos casi no hay engelamiento",
+     "Más intenso en Cu, Cb y Ns"
+    ]
+   },
+   {
+    "title": "Tipos de hielo",
+    "items": [
+     "Claro: gotas grandes, transparente, el más peligroso",
+     "Opaco (rime): gotas pequeñas, lechoso, rugoso",
+     "Mixto: mezcla, lo peor de ambos",
+     "Lluvia engelante: rayas de hielo rápido; cambia de rumbo en el acto"
+    ]
+   },
+   {
+    "title": "Otros depósitos",
+    "items": [
+     "Nieve compacta: gotas más nieve; bloquea tomas",
+     "Escarcha blanca: sublimación en aire claro y superficie bajo cero",
+     "Cristales de hielo: motores a reacción cerca de convección tropical"
+    ]
+   },
+   {
+    "title": "Factores de severidad",
+    "items": [
+     "Concentración de gotas: mayor en nubes de desarrollo y cerca de la base",
+     "Perfil fino y elementos delgados captan más hielo",
+     "Más velocidad, más gotas por segundo, pero el calentamiento cinético compensa",
+     "Temperatura de la base: más cálida, más agua"
+    ]
+   },
+   {
+    "title": "Motores",
+    "items": [
+     "A reacción: antihielo con precipitación y OAT ≤ +10 °C",
+     "Sondas P1 con hielo falsean la potencia; usar igniters",
+     "Hielo claro con temperatura exterior positiva por combustible frío",
+     "Émbolo: hielo de carburador con humedad hasta 20–25 °C"
+    ]
+   }
+  ],
+  "mnemonics": [
+   "CLARO = Cristalino y Caro (peligroso): gotas Grandes, hielo Transparente, fluye hacia atrás. RIME = Rugoso, Itsy (pequeñas gotas), Mate, Enseguida.",
+   "Mixto = suma de los dos males: lo peor del claro (peso, extensión) y lo peor del opaco (forma rugosa en el borde de ataque).",
+   "Lluvia engelante = «Llueve y cuelga»: cae por encima de una capa cálida y se congela al tocar. Gira 180° al instante.",
+   "Gotas grandes, hielo claro; gotas pequeñas, hielo opaco: cuanto más frío, más opaco.",
+   "Cu, Cb y Ns, moderado a severo; Sc, ligero a moderado; Ac, As y St, ligero; Ci, Cs y Cc, nada."
+  ],
+  "selfCheck": [
+   {
+    "q": "¿Por qué puede haber agua líquida a −10 °C en una nube?",
+    "a": "Porque son gotas sobreenfriadas: les falta un núcleo para congelar y se mantienen líquidas bajo cero hasta que chocan con el avión, donde se congelan casi al instante."
+   },
+   {
+    "q": "¿Por qué el hielo claro es el más peligroso?",
+    "a": "Porque las gotas grandes tardan en congelar, fluyen hacia atrás antes de hacerlo y forman una capa transparente y dura que se extiende rápido. Es el que más deprisa se acumula."
+   },
+   {
+    "q": "¿Cómo se forma la lluvia engelante y qué debes hacer si te la encuentras?",
+    "a": "La lluvia se sobreenfría al caer desde una inversión hacia aire bajo cero y congela al chocar con el avión. Se acumula muy deprisa en una franja baja de unos 1000 ft ante un frente cálido; hay que virar de inmediato a rumbo recíproco."
+   },
+   {
+    "q": "¿En qué se diferencian la escarcha opaca y la escarcha blanca?",
+    "a": "La opaca (rime) es hielo por gotas sobreenfriadas que congelan en vuelo dentro de nubes. La blanca (hoar frost) es un depósito de cristales por sublimación del vapor sobre una superficie bajo cero, en aire claro y sin gotas."
+   },
+   {
+    "q": "¿Por qué importa la escarcha en tierra antes de despegar?",
+    "a": "Estropea el perfil y aumenta la rugosidad y la resistencia: aumenta la recorrida de despegue y la velocidad de pérdida, tapa el parabrisas y puede interferir con las antenas."
+   },
+   {
+    "q": "¿Por qué son peligrosos los cristales de hielo para los motores a reacción?",
+    "a": "Se acumulan por encima de la convección tropical, no se ven en el radar, no encajan en la definición de condiciones de engelamiento y pueden causar pérdida repentina de empuje en varios motores a la vez."
+   },
+   {
+    "q": "¿Qué cambia entre el engelamiento de un Cb y el de un Ac?",
+    "a": "En el Cb las corrientes ascendentes mantienen mucha agua líquida en gotas grandes: engelamiento de moderado a severo. En el Ac es ligero."
+   },
+   {
+    "q": "¿Cuándo y cómo se usa el calor de carburador en un PA-28?",
+    "a": "Cuando hay riesgo de hielo (humedad, temperaturas de hasta 20–25 °C, potencia reducida) y siempre antes de reducir para aproximar. Se aplica completo y se mantiene aunque el motor funcione peor unos segundos."
+   }
+  ],
   "numbers": [
    "Hielo estructural: agua líquida visible y superficie a 0 °C o menos",
-   "Más probable entre 0 y −20 °C",
-   "Hielo claro: gotas grandes, 0 a −10 °C; opaco: gotas pequeñas, −10 a −20 °C",
-   "La lluvia engelante es el engelamiento más peligroso",
-   "Hielo de carburador posible con hasta 20–25 °C y humedad alta",
+   "Más probable entre 0 y −20 °C; a −40 °C o menos, engelamiento despreciable",
+   "Hielo claro: gotas grandes (el curso lo sitúa de 0 a −20 °C en Ns, Cu y Cb); opaco: gotas pequeñas y más frío",
+   "Lluvia engelante: banda baja de unos 1000 ft delante de un frente cálido u oclusión, con Ns",
+   "Gotas de ICI: unos 40 micras; no aparecen en el radar",
+   "Severidad: Cu, Cb y Ns moderado a severo; Sc ligero a moderado; Ac, As y St ligero; Ci, Cs y Cc nulo",
+   "Jet: antihielo con precipitación y OAT ≤ +10 °C (hasta −40 °C)",
+   "Hielo de carburador: posible con humedad alta y temperaturas exteriores de hasta 20–25 °C",
    "Un PA-28 o un C172 no están certificados para engelamiento conocido"
   ],
   "traps": [
-   "El hielo claro es el más peligroso, aunque parezca inofensivo.",
-   "La escarcha no se forma en vuelo; se retira antes del despegue.",
-   "Se puede formar hielo de carburador con cielo despejado y temperaturas altas.",
-   "Con muy bajas temperaturas (−40 °C) casi no hay hielo estructural, porque ya no hay agua líquida.",
-   "Aire seco y frío no produce engelamiento."
+   "El hielo claro es el más peligroso, aunque parezca inofensivo y transparente.",
+   "La escarcha blanca no es hielo opaco: la primera se forma por sublimación en aire claro; la segunda, por gotas sobreenfriadas en nube.",
+   "No dar importancia a una escarcha fina antes de despegar: estropea el perfil.",
+   "Pensar que a −40 °C hay máximo engelamiento: casi no hay gotas líquidas.",
+   "Creer que el aire frío y seco produce engelamiento: necesita agua líquida visible.",
+   "Confiar en el radar para detectar cristales de hielo: no los ve.",
+   "Creer que se necesita nube para el hielo de carburador: se forma con cielo despejado y humedad alta.",
+   "Pensar que un motor de inyección está libre de todo hielo: no tiene carburador, pero su toma puede obstruirse."
   ],
   "sources": [
    {
-    "title": "FAA-H-8083-28, Aviation Weather Handbook: engelamiento",
+    "title": "FAA-H-8083-28, Aviation Weather Handbook",
     "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
    },
    {
@@ -112,11 +349,10 @@
     "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
    },
    {
-    "title": "Piper PA-28-161 Warrior III, POH: calor de carburador"
+    "title": "Material del curso, «Meteorology flight hazards» (instructores)"
    }
   ],
-  "id": "050.15",
-  "reviewed": "2026-10-09"
+  "reviewed": "2026-11-23"
  },
  "questions": [
   {
@@ -328,6 +564,153 @@
     null
    ],
    "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.15.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "La escarcha blanca (hoar frost) se forma por:",
+   "options": [
+    "Gotas grandes que congelan y fluyen hacia atrás",
+    "Lluvia sobreenfriada que cae sobre el avión",
+    "Sublimación directa del vapor de agua sobre una superficie bajo cero",
+    "Impacto de nieve húmeda y gotas sobreenfriadas"
+   ],
+   "correct": 2,
+   "why": "La escarcha blanca es un depósito de cristales que aparece cuando el vapor se convierte en hielo directamente (sublimación) sobre una superficie bajo cero, en aire claro.",
+   "whyNot": [
+    "Eso es el hielo claro.",
+    "Eso es la lluvia engelante.",
+    null,
+    "Eso es la nieve compacta (pack snow)."
+   ],
+   "ref": "Curso, flight hazards"
+  },
+  {
+   "id": "050.15.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "Ante lluvia engelante en vuelo, la acción más prudente es:",
+   "options": [
+    "Ascender a la máxima velocidad de ascenso",
+    "Reducir velocidad y mantener rumbo",
+    "Encender solo el calentador de pitot y continuar",
+    "Virar de inmediato a rumbo recíproco, porque se acumula muy deprisa"
+   ],
+   "correct": 3,
+   "why": "La lluvia engelante provoca un engelamiento muy rápido en una franja estrecha. Hay que salir de ella cuanto antes, y el curso indica virar a rumbo recíproco.",
+   "whyNot": [
+    "Subir puede llevarte hacia la capa fría de arriba sin salir del problema.",
+    "Reducir velocidad aumenta la velocidad de pérdida con hielo y mantiene la exposición.",
+    "El pitot no resuelve el hielo estructural.",
+    null
+   ],
+   "ref": "Curso, flight hazards"
+  },
+  {
+   "id": "050.15.013",
+   "type": "concepto",
+   "level": 1,
+   "q": "La severidad típica del engelamiento en Cu y Cb es:",
+   "options": [
+    "Moderada a severa",
+    "Nula o trazas",
+    "Siempre ligera",
+    "Solo severa en Ci"
+   ],
+   "correct": 0,
+   "why": "En las nubes de desarrollo vertical las corrientes ascendentes mantienen mucha agua líquida en gotas grandes: engelamiento moderado a severo.",
+   "whyNot": [
+    null,
+    "Eso corresponde a Ci, Cs y Cc.",
+    "Ligera es la de Ac, As y St.",
+    "Ci no produce engelamiento significativo."
+   ],
+   "ref": "Curso, flight hazards"
+  },
+  {
+   "id": "050.15.014",
+   "type": "concepto",
+   "level": 2,
+   "q": "Los cristales de hielo (ICI) en los motores a reacción:",
+   "options": [
+    "Se detectan siempre en el radar como núcleos de lluvia",
+    "No se ven en el radar de a bordo y se dan cerca de convección, fuera de las condiciones de engelamiento del manual",
+    "Solo ocurren en Cirrus de gran espesor",
+    "Solo afectan a motores de émbolo"
+   ],
+   "correct": 1,
+   "why": "En los niveles altos el agua sobreenfriada no sobrevive: son condiciones glaciadas y los cristales finos no se ven en el radar; ocurren fuera de las condiciones de engelamiento definidas.",
+   "whyNot": [
+    "El radar no los ve: son demasiado pequeños y fríos.",
+    null,
+    "Los cristales grandes y poco densos de Ci no son peligrosos.",
+    "Es un problema de turbinas, no de motores de émbolo."
+   ],
+   "ref": "Curso, flight hazards"
+  },
+  {
+   "id": "050.15.015",
+   "type": "regla",
+   "level": 2,
+   "q": "Según el curso, el antihielo del motor a reacción debe ponerse en ON con precipitación o humedad visible y temperatura exterior indicada de:",
+   "options": [
+    "+30 °C o menos",
+    "0 °C exacto",
+    "−40 °C o más",
+    "+10 °C o menos (hasta −40 °C)"
+   ],
+   "correct": 3,
+   "why": "La condición es humedad o precipitación con OAT de +10 °C o menos y hasta −40 °C; ahí es donde existe agua líquida que puede congelar en el motor.",
+   "whyNot": [
+    "+30 °C está muy por encima de cualquier engelamiento posible.",
+    "Se aplica en un rango, no solo a 0 °C.",
+    "Por debajo de −40 °C el engelamiento es despreciable.",
+    null
+   ],
+   "ref": "Curso, flight hazards"
+  },
+  {
+   "id": "050.15.016",
+   "type": "concepto",
+   "level": 3,
+   "q": "Una gota grande de agua sobreenfriada forma hielo claro porque:",
+   "options": [
+    "Se congela al instante sin dejar fluir nada",
+    "Contiene aire atrapado que la hace opaca",
+    "Al empezar a congelar libera calor latente, que retrasa la congelación y deja fluir parte de la gota hacia atrás",
+    "Siempre cae como lluvia engelante"
+   ],
+   "correct": 2,
+   "why": "El calor latente liberado al empezar a congelar retrasa el proceso; parte del agua fluye hacia atrás y congela después, sin atrapar aire: hielo transparente.",
+   "whyNot": [
+    "Congelar de inmediato es lo propio de gotas pequeñas (opaco).",
+    "Aire atrapado es el opaco.",
+    null,
+    "El hielo claro se forma también con gotas de nube, no solo con lluvia engelante."
+   ],
+   "ref": "Curso, flight hazards"
+  },
+  {
+   "id": "050.15.017",
+   "type": "concepto",
+   "level": 2,
+   "q": "El hielo mixto en una nube con gotas de distintos tamaños:",
+   "options": [
+    "Solo se forma por debajo de −40 °C",
+    "Combina el depósito rugoso de gotas pequeñas con el flujo hacia atrás de las grandes",
+    "Es siempre menos peligroso que el claro",
+    "Se forma en aire claro por sublimación"
+   ],
+   "correct": 1,
+   "why": "En la mezcla las pequeñas dan depósito opaco en el borde de ataque y las grandes aportan flujo hacia atrás: suma los peores efectos de ambos.",
+   "whyNot": [
+    "Por debajo de −40 °C casi no hay agua líquida.",
+    null,
+    "Suma lo peor de los dos, no es menos peligroso.",
+    "La sublimación en aire claro es la escarcha blanca."
+   ],
+   "ref": "Curso, flight hazards"
   }
  ],
  "cards": [
@@ -338,23 +721,43 @@
   },
   {
    "id": "c.050.15.02",
-   "front": "Hielo claro y opaco",
-   "back": "Claro: gotas grandes, transparente y peligroso. Opaco: gotas pequeñas, blanquecino"
+   "front": "Hielo claro y escarcha opaca",
+   "back": "Claro: gotas grandes, transparente, fluye hacia atrás, el más peligroso. Opaco (rime): gotas pequeñas, blanquecino y rugoso"
   },
   {
    "id": "c.050.15.03",
    "front": "Lluvia engelante",
-   "back": "Lluvia que cae por una capa bajo cero y congela al contacto: la más peligrosa"
+   "back": "Lluvia sobreenfriada desde una inversión: ≈1000 ft delante de un frente cálido; se vira a rumbo recíproco"
   },
   {
    "id": "c.050.15.04",
-   "front": "Escarcha",
-   "back": "Se deposita en tierra; debe retirarse antes de despegar"
+   "front": "Escarcha blanca (hoar frost)",
+   "back": "Sublimación del vapor sobre una superficie bajo cero; en tierra se retira antes de despegar"
   },
   {
    "id": "c.050.15.05",
    "front": "Hielo de carburador",
-   "back": "Posible con cielo despejado y hasta 20-25 °C con humedad; calor de carburador completo"
+   "back": "Posible con cielo despejado y hasta 20–25 °C con humedad; calor de carburador completo"
+  },
+  {
+   "id": "c.050.15.06",
+   "front": "Nieve compacta (pack snow)",
+   "back": "Mezcla de gotas sobreenfriadas y nieve; bloquea tomas; efectos normalmente leves"
+  },
+  {
+   "id": "c.050.15.07",
+   "front": "Cristales de hielo (ICI)",
+   "back": "≈40 micras, cerca de convección tropical, no se ven en el radar; pérdida de empuje en turbinas"
+  },
+  {
+   "id": "c.050.15.08",
+   "front": "Severidad por nube",
+   "back": "Cu, Cb, Ns: moderado a severo; Sc: ligero a moderado; Ac, As, St: ligero; Ci, Cs, Cc: nulo"
+  },
+  {
+   "id": "c.050.15.09",
+   "front": "Antihielo del motor a reacción",
+   "back": "ON con precipitación y OAT ≤ +10 °C (hasta −40 °C); usar igniters"
   }
  ]
 }

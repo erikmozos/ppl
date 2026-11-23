@@ -1,422 +1,909 @@
 {
- "lesson": {
-  "title": "Flujo y fuerzas",
-  "summary": "Líneas de corriente, flujo bidimensional y tridimensional, la resultante aerodinámica y su descomposición en sustentación y resistencia, y la diferencia entre ángulo de ataque, de calaje, actitud y trayectoria.",
-  "objectives": [
-   "Interpretar las líneas de corriente y el tubo de corriente alrededor de un perfil",
-   "Distinguir el flujo bidimensional del tridimensional",
-   "Descomponer la resultante aerodinámica en sustentación (perpendicular al viento relativo) y resistencia (paralela)",
-   "Calcular la sustentación con L = ½ρV²S·CL",
-   "Diferenciar ángulo de ataque, ángulo de calaje, actitud y ángulo de trayectoria y relacionarlos"
-  ],
-  "sections": [
-   {
-    "title": "Líneas de corriente y tubos de corriente",
-    "text": [
-     "Una **línea de corriente** es la trayectoria que sigue una partícula de aire en un flujo estacionario: en cada punto, la tangente a la línea marca la dirección de la velocidad. Dos líneas de corriente nunca se cruzan y el aire no atraviesa una línea de corriente. Varias líneas juntas forman un **tubo de corriente**, y sobre él aplicas lo que ya conoces: la continuidad (A · V constante) y Bernoulli (p + ½ρV² constante).",
-     "Alrededor de un perfil con ángulo de ataque positivo las líneas se comportan así: delante del borde de ataque el aire sube (**corriente ascendente** o upwash); una línea llega al **punto de remanso**, donde el aire se frena del todo y se divide, y las demás pasan por encima o por debajo. Sobre el extradós las líneas se **juntan** (el tubo se estrecha), el aire se acelera y la presión estática baja. Detrás del borde de salida el aire queda desviado hacia abajo (**corriente descendente** o downwash): es la reacción de Newton a la fuerza que el ala ha ejercido sobre el aire."
+  "lesson": {
+    "title": "Flujo y fuerzas",
+    "summary": "La atmósfera y el modelo ISA, temperatura y presión, el altímetro barométrico, Bernoulli como conservación de la energía, el sistema pitot-estático, líneas de corriente, flujo 2D y 3D, resultante aerodinámica, sustentación y resistencia, y ángulo de ataque frente a calaje, actitud y trayectoria.",
+    "objectives": [
+      "Describir la composición del aire y los valores de la atmósfera estándar (ISA)",
+      "Explicar temperatura y presión desde el movimiento de las moléculas y usar p = ρ · R · T",
+      "Explicar cómo el altímetro barométrico convierte presión en altitud y qué hace la subescala",
+      "Entender Bernoulli como conservación de la energía y el origen de la presión total en el punto de remanso",
+      "Describir el sistema pitot-estático, qué instrumento usa cada toma y qué pasa si se obstruye",
+      "Interpretar las líneas de corriente y distinguir el flujo bidimensional del tridimensional",
+      "Descomponer la resultante aerodinámica en sustentación (perpendicular al viento relativo) y resistencia (paralela)",
+      "Calcular la sustentación con L = ½ρV²S·CL",
+      "Diferenciar ángulo de ataque, de calaje, actitud y trayectoria y relacionarlos"
     ],
-    "figure": "svg:080-lineas-corriente",
-    "caption": "Líneas de corriente alrededor de un perfil: se juntan sobre el extradós, donde el aire corre más y la presión baja."
-   },
-   {
-    "title": "Flujo bidimensional y tridimensional",
-    "text": [
-     "En el **flujo 2D** se estudia un corte del ala, un perfil, como si el ala tuviera envergadura infinita: el aire solo se mueve en el plano del perfil (adelante, atrás, arriba, abajo). Sirve para entender la forma del perfil y su curva CL–α. En el **flujo 3D** hay un ala real, de envergadura finita, y aparece una componente a lo largo de la envergadura: el aire de abajo, a más presión, se escapa hacia la punta y sube al extradós, a menos presión. De ahí salen los torbellinos de punta, el downwash y la resistencia inducida, que verás en el bloque 080.06.",
-     "Para el examen basta esta idea: el perfil 2D tiene la sustentación «ideal»; el ala 3D pierde parte de ella y paga una resistencia extra por tener puntas."
+    "sections": [
+      {
+        "title": "La atmósfera: composición y modelo ISA",
+        "text": [
+          "La atmósfera es una mezcla de gases que rodea la Tierra y que, hasta muy arriba, mantiene siempre la misma proporción de componentes: alrededor del **78 % de nitrógeno**, el **21 % de oxígeno**, cerca de un **1 % de argón** y trazas de dióxido de carbono, neón y otros gases, más una cantidad **variable de vapor de agua** (entre casi nada y un 4 %).",
+          "Lo que cambia con la altitud no es la proporción de oxígeno, sino cuántas moléculas hay por metro cúbico. Por eso a gran altura falta oxígeno aunque el 21 % siga siendo el mismo, y por eso el ala encuentra menos aire contra el que apoyarse. Casi toda la masa del aire (y todo el tiempo meteorológico) está en la **troposfera**, que llega hasta unos 11 km (36 000 ft) en la atmósfera estándar y termina en la **tropopausa**.",
+          "Como el aire real cambia cada día, se define una atmósfera de referencia, la **atmósfera estándar internacional (ISA)** de la OACI. Es el patrón con el que se calibran los instrumentos y se comparan las prestaciones del avión. En ella, a nivel del mar hay 1013,25 hPa y 15 °C, la densidad es de 1,225 kg/m³ y la temperatura baja 6,5 °C por kilómetro (unos 2 °C por cada 1000 ft) hasta los 11 km, donde llega a −56,5 °C y se mantiene constante en la capa siguiente. La presión baja mucho más deprisa: a unos 5500 m (18 000 ft) ya es la mitad, unos 500 hPa."
+        ],
+        "table": {
+          "caption": "Valores de la atmósfera estándar (ISA)",
+          "head": [
+            "Nivel",
+            "Presión (hPa)",
+            "Temperatura (°C)",
+            "Densidad (kg/m³)"
+          ],
+          "rows": [
+            [
+              "Nivel del mar",
+              "1013,25",
+              "15",
+              "1,225"
+            ],
+            [
+              "5000 ft (1524 m)",
+              "843",
+              "5,1",
+              "1,056"
+            ],
+            [
+              "10 000 ft (3048 m)",
+              "697",
+              "−4,8",
+              "0,905"
+            ],
+            [
+              "18 000 ft (5486 m)",
+              "506",
+              "−20,7",
+              "0,688"
+            ],
+            [
+              "Tropopausa, 11 km (36 000 ft)",
+              "226",
+              "−56,5",
+              "0,364"
+            ]
+          ],
+          "src": "OACI, Doc 7488"
+        },
+        "ideas": [
+          "Imagina una pila de colchones: el de abajo aguanta el peso de todos los que tiene encima y está muy aplastado; el de arriba apenas soporta nada y está hinchado. El aire de abajo está comprimido y es denso; el de arriba, ligero.",
+          "La ISA es como la «talla M» de la ropa: no es la medida de nadie en concreto, pero sirve para decir cuánto se desvía cada día real (ISA +10 significa 10 °C más cálido que el estándar)."
+        ],
+        "figure": "svg:050-atmosfera",
+        "caption": "Capas de la atmósfera: la troposfera llega hasta la tropopausa, a unos 11 km."
+      },
+      {
+        "title": "Temperatura y presión: las moléculas en movimiento",
+        "text": [
+          "La **temperatura** del aire es la señal que percibimos de la agitación de sus moléculas, y la **presión** es el resultado de sus golpes contra una superficie.",
+          "Las moléculas del aire se mueven al azar a cientos de metros por segundo, chocan unas con otras y cambian de dirección. El aire caliente no es otra cosa que moléculas que se mueven más deprisa y chocan con más frecuencia; el frío, lo contrario. La **presión** es la fuerza por unidad de superficie que producen esos choques sobre una pared, en todas las direcciones por igual, y se mide en pascales (1 Pa = 1 N/m²); en aviación se usa el hectopascal (1 hPa = 100 Pa). A nivel del mar, la presión de 1013,25 hPa equivale al peso de la columna de aire que hay encima: unos 10 300 kg sobre cada metro cuadrado.",
+          "Los tres datos están ligados por la **ecuación de estado de los gases perfectos**: p = ρ · R · T, con R = 287 J/(kg·K) para el aire y T en kelvin (K = °C + 273,15). Dicho en palabras: a igual temperatura, más presión significa más moléculas por metro cúbico (más densidad); a igual presión, más temperatura significa moléculas más separadas (menos densidad). Es la razón de que el aire caliente y de montaña sea el que peor sustenta."
+        ],
+        "formulas": [
+          {
+            "f": "ρ = p / (R · T)",
+            "note": "p en Pa, T en K, R = 287 J/(kg·K). Con p = 101 325 Pa y T = 288,15 K sale ρ = 1,225 kg/m³."
+          }
+        ],
+        "examples": [
+          {
+            "q": "En un aeródromo de montaña la presión es 900 hPa y el aire está a 7 °C. ¿Qué densidad tiene?",
+            "a": "Pasa a unidades SI: p = 90 000 Pa y T = 7 + 273,15 ≈ 280 K. ρ = 90 000 / (287 × 280) = 1,12 kg/m³, un 9 % menos que en ISA a nivel del mar. A igual velocidad, el ala sustenta ese 9 % menos."
+          }
+        ],
+        "ideas": [
+          "Una sala llena de pelotas de goma botando: cuanto más rápido bota cada una, más calor hay; cuantas más haya en la sala, más golpes recibe la pared por segundo, que es la presión.",
+          "Una olla a presión funciona porque, al calentar, las moléculas chocan más fuerte y más a menudo contra las paredes: más temperatura, más presión si el volumen no puede crecer."
+        ]
+      },
+      {
+        "title": "El altímetro barométrico",
+        "text": [
+          "El **altímetro barométrico** mide la presión atmosférica y la presenta como una altitud, aplicando la relación entre presión y altitud del modelo ISA.",
+          "Por dentro lleva una cápsula aneroide: una caja metálica cerrada, con vacío parcial y un muelle que evita que se aplaste, rodeada del aire de la toma estática. Al subir, la presión exterior baja y la cápsula se dilata; al bajar, se comprime. Una cadena de palancas y engranajes amplifica ese movimiento diminuto y lo traduce en el giro de las agujas sobre una esfera graduada en pies. La altitud que sale de aplicar la ISA a la presión medida se llama **altitud de presión** (*pressure altitude*).",
+          "Como la presión al nivel del mar cambia cada día y de un sitio a otro, el altímetro lleva un **mando de ajuste** que mueve la presión de referencia mostrada en una ventanilla (la subescala). La presión a la que se refiere la indicación es la que pones ahí: con **QNH** el altímetro marca altitud sobre el nivel medio del mar; con **QFE**, altura sobre el aeródromo (marca cero al aterrizar); con **1013,25 hPa** marca altitud de presión, la base de los niveles de vuelo. Cerca del nivel del mar, 1 hPa de diferencia en la subescala equivale a unos 27 ft (30 ft como cifra redonda).",
+          "Hay dos errores que debes tener presentes. Si vuelas hacia una zona de **presión más baja** sin reajustar la subescala, la altitud real es **menor** que la indicada. Y si el aire es **más frío que ISA**, el aire está más comprimido y las capas de presión están más juntas: también vuelas más bajo de lo que marca. Se resume con «de alto a bajo, cuidado con el suelo»."
+        ],
+        "formulas": [
+          {
+            "f": "1 hPa ≈ 27 ft (cerca del nivel del mar)",
+            "note": "Subir la subescala aumenta la indicación; bajarla la reduce."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Un aeródromo está a 600 ft y el QNH es 1003 hPa. Con la subescala en 1013 hPa, ¿qué marca el altímetro en tierra?",
+            "a": "La subescala está 10 hPa por encima del QNH real, lo que añade 10 × 27 ≈ 270 ft a la lectura: marcará unos 870 ft en lugar de 600. Sobreindica, y eso es lo peligroso: estás más bajo de lo que crees."
+          },
+          {
+            "q": "Vuelas con QNH 1020 hPa y entras en una zona donde el QNH real es 1000 hPa sin tocar la subescala. ¿Qué error cometes?",
+            "a": "La presión real es 20 hPa menor que la que tienes puesta, así que el altímetro sobreindica unos 20 × 27 = 540 ft. Estás 540 ft más bajo de lo que marca."
+          }
+        ],
+        "figure": "calc:altimetry",
+        "caption": "Cambia QNH, QFE y 1013 y observa cómo se desplaza la indicación.",
+        "ideas": [
+          "La subescala es como el cero de una báscula: si no la tienes bien puesta, la lectura sale desplazada. Poner mal el QNH es pesarse con la báscula descalibrada.",
+          "Piensa en la cápsula aneroide como un acordeón cerrado: cuanto menos aire empuja desde fuera, más se estira y más sube la aguja."
+        ]
+      },
+      {
+        "title": "Bernoulli: la energía del aire en movimiento",
+        "text": [
+          "El teorema de Bernoulli es la conservación de la energía aplicada a un fluido: la energía no se crea ni se destruye, solo cambia de forma, y en el aire en movimiento se reparte entre energía de movimiento y energía de presión.",
+          "Cada porción de aire lleva por unidad de volumen dos clases de energía: la **cinética**, ½ρV², por estar moviéndose, y la de **presión**, que es simplemente la presión estática p. Para un fluido incompresible y sin rozamiento (los efectos viscosos son las pérdidas), la suma de las dos permanece constante a lo largo de una línea de corriente. Si el aire acelera, gana energía cinética a costa de presión; si se frena, devuelve esa energía en forma de presión.",
+          "La energía cinética por unidad de volumen se llama **presión dinámica** (q = ½ρV²), y la suma de estática más dinámica es la **presión total** (p_t), que se mantiene constante. Su valor extremo ocurre en el **punto de remanso** (*stagnation point*), donde el aire se detiene del todo y toda su energía de movimiento se ha convertido en presión. En el tubo pitot ocurre exactamente eso. En 080.01 tienes la deducción con el Venturi; aquí queda la idea: **acelerar es gastar presión estática y frenar es recuperarla**."
+        ],
+        "formulas": [
+          {
+            "f": "p + ½ · ρ · V² = p_t = constante",
+            "note": "Estática + dinámica = total. Válida a lo largo de una línea de corriente, sin rozamiento y con densidad constante (hasta unos 0,3 de Mach)."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Un avión vuela a 100 kt a nivel del mar en ISA. ¿Cuánto suma la presión dinámica a la presión estática en la boca del pitot?",
+            "a": "100 kt = 51,4 m/s. q = ½ · 1,225 · 51,4² = 1618 Pa ≈ 16,2 hPa. El pitot capta p + 16,2 hPa y el anemómetro, al restar la estática, deduce los 100 kt."
+          }
+        ],
+        "ideas": [
+          "Una montaña rusa sin rozamiento: arriba va lenta pero alta, abajo rápida y baja; lo que pierde en altura lo gana en velocidad. El aire hace lo mismo cambiando presión por velocidad.",
+          "Si frenas de golpe una pelota que va rodando contra una pared, toda su energía de movimiento se convierte en un golpe en la pared. El punto de remanso de un perfil es la «pared» donde el aire se frena y golpea con su presión total."
+        ]
+      },
+      {
+        "title": "El sistema pitot-estático",
+        "text": [
+          "El **sistema pitot-estático** lleva a los instrumentos las dos presiones necesarias, la total y la estática, y de su diferencia sale la velocidad.",
+          "El **tubo de pitot** apunta de frente al aire y está cerrado por dentro: el aire que entra no puede seguir y se detiene, de modo que su energía de movimiento se convierte en presión y el tubo capta la presión total. Tiene un calefactor contra el hielo y un orificio minúsculo de drenaje para evacuar el agua. Las **tomas estáticas** son pequeños orificios al ras del fuselaje, normalmente uno a cada lado para compensar el derrape, colocados donde el flujo es paralelo a la superficie y por tanto solo se nota la presión del aire en reposo.",
+          "Cada instrumento usa lo que necesita. El **anemómetro** (*airspeed indicator*) recibe la presión total en una cápsula flexible y la estática en la caja que la rodea: a más velocidad, más presión dinámica, más se hincha la cápsula y más marca la aguja. El **altímetro** y el **variómetro** usan solo la presión estática (el variómetro mide cómo cambia).",
+          "Las averías se razonan con las dos presiones. Si se obstruye la **entrada del pitot pero no el drenaje**, la presión interior se escapa y el anemómetro cae hacia cero. Si se tapan **entrada y drenaje**, la presión total queda atrapada: el anemómetro se comporta como un altímetro (en nivelado no varía; al ascender marca de más y al descender, de menos). Si se obstruyen las **tomas estáticas**, el altímetro se queda clavado a la altitud del bloqueo, el variómetro marca cero, y el anemómetro marca de **menos al subir** y de **más al bajar**. El remedio es la **fuente de estática alternativa** que lleva el avión (los PA-28 y C172 la tienen; se usa según el POH y con su tabla de corrección)."
+        ],
+        "table": {
+          "caption": "Qué instrumentos usa cada toma y qué pasa si falla",
+          "head": [
+            "Fallo",
+            "Anemómetro",
+            "Altímetro",
+            "Variómetro"
+          ],
+          "rows": [
+            [
+              "Pitot obstruido con drenaje abierto",
+              "Cae hacia cero",
+              "Normal",
+              "Normal"
+            ],
+            [
+              "Pitot y drenaje obstruidos",
+              "Como un altímetro: sube al ascender, baja al descender",
+              "Normal",
+              "Normal"
+            ],
+            [
+              "Toma estática obstruida",
+              "Marca de menos al subir y de más al bajar",
+              "Congelado",
+              "Cero"
+            ]
+          ],
+          "src": "PHAK cap. 8; POH PA-28-161 y C172S"
+        },
+        "figure": "svg:020-pitot-estatico",
+        "caption": "El pitot lleva la presión total al anemómetro; las tomas estáticas alimentan anemómetro, altímetro y variómetro.",
+        "ideas": [
+          "El pitot es como sacar la mano abierta por la ventanilla: te empuja el aire y notas la presión de choque. Las tomas estáticas son como la mano de canto: apenas notas el viento y solo percibes el ambiente.",
+          "El anemómetro es un globo dentro de una caja cerrada: el pitot lo hincha con el empujón del aire y la toma estática presiona la caja desde fuera. Lo que se nota es solo la diferencia."
+        ]
+      },
+      {
+        "title": "Líneas de corriente y tubos de corriente",
+        "text": [
+          "Una **línea de corriente** es la trayectoria que sigue una partícula de aire en un flujo estacionario: en cada punto, la tangente a la línea marca la dirección de la velocidad. Dos líneas de corriente nunca se cruzan y el aire no atraviesa una línea de corriente. Varias líneas juntas forman un **tubo de corriente**, y sobre él aplicas lo que ya conoces: la continuidad (A · V constante) y Bernoulli (p + ½ρV² constante).",
+          "Alrededor de un perfil con ángulo de ataque positivo las líneas se comportan así: delante del borde de ataque el aire sube (**corriente ascendente** o upwash); una línea llega al **punto de remanso**, donde el aire se frena del todo y se divide, y las demás pasan por encima o por debajo. Sobre el extradós las líneas se **juntan** (el tubo se estrecha), el aire se acelera y la presión estática baja. Detrás del borde de salida el aire queda desviado hacia abajo (**corriente descendente** o downwash): es la reacción de Newton a la fuerza que el ala ha ejercido sobre el aire."
+        ],
+        "figure": "svg:080-lineas-corriente",
+        "caption": "Líneas de corriente alrededor de un perfil: se juntan sobre el extradós, donde el aire corre más y la presión baja.",
+        "ideas": [
+          "Los flotadores de un río visto desde un puente dibujan las líneas de corriente: donde el cauce se estrecha, se juntan y corren más rápido.",
+          "El humo de una varita de incienso en una habitación sin corrientes sube en una hebra limpia: esa hebra es una línea de corriente."
+        ]
+      },
+      {
+        "title": "Flujo bidimensional y tridimensional",
+        "text": [
+          "En el **flujo 2D** se estudia un corte del ala, un perfil, como si el ala tuviera envergadura infinita: el aire solo se mueve en el plano del perfil (adelante, atrás, arriba, abajo). Sirve para entender la forma del perfil y su curva CL–α. En el **flujo 3D** hay un ala real, de envergadura finita, y aparece una componente a lo largo de la envergadura: el aire de abajo, a más presión, se escapa hacia la punta y sube al extradós, a menos presión. De ahí salen los torbellinos de punta, el downwash y la resistencia inducida, que verás en el bloque 080.06.",
+          "Para el examen basta esta idea: el perfil 2D tiene la sustentación «ideal»; el ala 3D pierde parte de ella y paga una resistencia extra por tener puntas."
+        ],
+        "ideas": [
+          "Una barra de pan: una rebanada es el perfil (2D, sin extremos por los que el aire se escape) y la barra entera, con sus dos puntas, es el ala (3D).",
+          "Es la diferencia entre un tobogán infinitamente ancho, donde nadie se cae por los lados, y uno normal, donde el agua se escapa por los bordes."
+        ]
+      },
+      {
+        "title": "La resultante aerodinámica",
+        "text": [
+          "El aire actúa sobre toda la superficie del ala con presiones (más bajas en el extradós, más altas en el intradós) y con rozamiento. La suma de todas esas fuerzas es una única fuerza, la **resultante aerodinámica** (R), aplicada en el **centro de presiones**. Para trabajar con ella se descompone en dos componentes que se definen respecto al **viento relativo**, nunca respecto al horizonte ni a la cuerda:"
+        ],
+        "bullets": [
+          "**Sustentación (L):** componente **perpendicular** al viento relativo (es decir, a la trayectoria de vuelo).",
+          "**Resistencia (D):** componente **paralela** al viento relativo y de sentido contrario al movimiento.",
+          "El **viento relativo** es el flujo de aire que el ala «ve» y es igual y de sentido opuesto a la trayectoria del avión. Si el avión asciende, el viento relativo viene de arriba y delante."
+        ],
+        "figure": "svg:080-resultante",
+        "caption": "La resultante se descompone en sustentación (perpendicular al viento relativo) y resistencia (paralela). En ascenso, la sustentación se inclina hacia atrás respecto a la vertical.",
+        "ideas": [
+          "Varias personas empujando un mismo sofá, cada una en un punto y con su propia fuerza, pueden sustituirse por una única flecha: la suma de todas. Eso es la resultante.",
+          "Saca la mano plana por la ventanilla del coche: el aire la empuja hacia atrás y, si la inclinas, también hacia arriba. Una componente es resistencia, la otra sustentación."
+        ]
+      },
+      {
+        "title": "Sustentación y resistencia: de qué dependen",
+        "text": [
+          "Sustentación y resistencia tienen la misma estructura, porque ambas son una presión dinámica multiplicada por una superficie y por un coeficiente que recoge la forma y el ángulo de ataque:",
+          "Los tres factores que controlas son la **velocidad** (al cuadrado), la **densidad** y el **ángulo de ataque** (a través de CL). La superficie S y la forma del perfil vienen de fábrica, aunque los flaps cambian ambas. En vuelo nivelado y uniforme la sustentación tiene que igualar al peso; si bajas la velocidad, solo puedes mantener L aumentando CL, es decir, el ángulo de ataque, hasta llegar al crítico. Por eso a poca velocidad el morro va alto, y por eso la pérdida tiene un límite de velocidad por abajo.",
+          "En un ascenso o descenso rectilíneo y estabilizado la sustentación no vale exactamente el peso: es **L = W · cos γ**, algo menor, porque parte del peso se reparte a lo largo de la trayectoria. Con γ de 5° la diferencia es del 0,4 %, despreciable en la práctica."
+        ],
+        "formulas": [
+          {
+            "f": "L = ½ · ρ · V² · S · CL",
+            "note": "ρ en kg/m³, V en m/s, S en m²: L en newtons."
+          },
+          {
+            "f": "D = ½ · ρ · V² · S · CD",
+            "note": "Misma presión dinámica y superficie; cambia el coeficiente."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Una avioneta de 1100 kg (W = 10 791 N) con S = 16 m² vuela a 100 kt a nivel del mar (ρ = 1,225). ¿Qué CL necesita en vuelo nivelado?",
+            "a": "V = 51,4 m/s; q = 0,6125 × 51,4² ≈ 1618 Pa. L = W, así que CL = W / (q · S) = 10 791 / (1618 × 16) ≈ 0,42."
+          },
+          {
+            "q": "La misma avioneta vuela ahora a 70 kt en nivelado. ¿Qué CL necesita?",
+            "a": "V = 36 m/s; q = 0,6125 × 36² ≈ 794 Pa. CL = 10 791 / (794 × 16) ≈ 0,85. Al bajar la velocidad de 100 a 70 kt, CL se ha duplicado: hay que subir el ángulo de ataque."
+          },
+          {
+            "q": "Con S = 16 m², V = 50 m/s, CL = 0,5 y ρ = 1,225, ¿cuánta sustentación hay?",
+            "a": "q = 0,6125 × 2500 = 1531 Pa; L = 1531 × 16 × 0,5 ≈ 12 250 N."
+          }
+        ],
+        "ideas": [
+          "La mano en la ventanilla a 100 km/h empuja cuatro veces más que a 50 km/h: el efecto crece con el cuadrado de la velocidad.",
+          "A mayor altura, el aire es menos denso, como correr por una piscina de gelatina ligera en vez de una de agua: hay menos masa que desviar y el ala necesita ir más deprisa."
+        ]
+      },
+      {
+        "title": "Ángulo de ataque, calaje, actitud y trayectoria",
+        "text": [
+          "El ángulo de ataque, el de calaje, la actitud y el ángulo de trayectoria son cuatro ángulos distintos que se confunden en el examen, y conviene separarlos desde el principio.",
+          "El **ángulo de ataque (α)** es el que forman la cuerda del perfil y el viento relativo. Es el que determina el CL y la pérdida. El **ángulo de calaje** (o de incidencia) es el que forma la cuerda del ala, en la raíz, con el eje longitudinal del fuselaje; lo fija el fabricante y no lo puedes cambiar en vuelo. La **actitud de cabeceo (θ)** es el ángulo del eje longitudinal con el horizonte: lo que ves por el parabrisas. El **ángulo de trayectoria (γ)** es el de la trayectoria con el horizonte: positivo si subes, negativo si bajas.",
+          "Se relacionan por α = θ + calaje − γ. Si ignoras el calaje (ala con la cuerda alineada con el eje), basta α = θ − γ: el ángulo de ataque es la actitud menos la trayectoria. Por eso un avión puede estar con el morro **arriba** y con ángulo de ataque **pequeño** (en ascenso rápido) o con el morro **abajo** y ángulo de ataque **grande** (en un picado que se tira de golpe de la palanca). La pérdida depende de α, no de la actitud."
+        ],
+        "formulas": [
+          {
+            "f": "α = θ + calaje − γ",
+            "note": "Con calaje nulo: α = actitud − trayectoria."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Un avión con calaje de 2° asciende con una actitud de 8° y una trayectoria de +5°. ¿Qué ángulo de ataque lleva?",
+            "a": "α = 8 + 2 − 5 = 5°."
+          },
+          {
+            "q": "En un descenso estabilizado con actitud de −2° y trayectoria de −5° (sin calaje), ¿cuál es α?",
+            "a": "α = −2 − (−5) = 3°. El morro está por debajo del horizonte y, sin embargo, el ala trabaja a un ángulo de ataque positivo."
+          }
+        ],
+        "figure": "svg:080-alfa-trayectoria",
+        "caption": "Con el mismo ángulo de ataque, el avión puede volar nivelado, subir o bajar: cambian la actitud y la trayectoria.",
+        "ideas": [
+          "Un surfista en una ola: el ángulo de la tabla con el horizonte (actitud) no es el ángulo con el que ataca el agua (ataque), porque el agua también se mueve.",
+          "Un libro apoyado en un atril: el atril está inclinado respecto a la mesa (calaje) y tú puedes inclinar aún más el libro (cambiar el ángulo de ataque), pero la inclinación fija del atril nunca la cambias en vuelo."
+        ]
+      },
+      {
+        "title": "El calaje y la forma del perfil",
+        "text": [
+          "El ángulo de calaje existe para que en crucero el fuselaje vaya casi horizontal (menos resistencia y mejor visibilidad) mientras el ala trabaja ya con un ángulo de ataque útil. Otra cosa distinta es la **torsión (washout)** del ala, un calaje que disminuye hacia la punta y que verás en 080.03. No los mezcles: el calaje es un ángulo del conjunto ala‑fuselaje; el ángulo de ataque, un ángulo del flujo."
+        ],
+        "figure": "svg:080-perfil",
+        "caption": "Cuerda, línea media y ángulo de ataque frente a ángulo de calaje.",
+        "ideas": [
+          "Una tabla de planchar ligeramente inclinada en el suelo: el calaje es esa inclinación de fábrica. Así el fuselaje va recto mientras el ala ya «muerde» el aire.",
+          "El washout es como una hélice retorcida: la punta está menos inclinada que la raíz, igual que las palas de un ventilador de techo."
+        ]
+      }
+    ],
+    "numbers": [
+      "Aire: 78 % N₂, 21 % O₂, 1 % Ar; vapor de agua variable",
+      "ISA nivel del mar: 1013,25 hPa, 15 °C, 1,225 kg/m³; −6,5 °C/km (≈ −2 °C/1000 ft) hasta 11 km",
+      "A unos 5500 m (18 000 ft) la presión es la mitad",
+      "p = ρ · R · T, con R = 287 J/(kg·K) y T en K",
+      "Subescala: 1 hPa ≈ 27 ft; QNH = altitud, QFE = altura, 1013 = altitud de presión",
+      "Presión total = estática + dinámica; q = ½ρV²",
+      "Sustentación: L = ½ρV²S·CL, perpendicular al viento relativo",
+      "Resistencia: D = ½ρV²S·CD, paralela al viento relativo",
+      "A doble velocidad (mismo CL), cuádruple sustentación",
+      "α = θ + calaje − γ (con calaje nulo: actitud − trayectoria)",
+      "En ascenso o descenso estabilizado, L = W · cos γ"
+    ],
+    "traps": [
+      "Con presión real más baja que la de la subescala, el altímetro sobreindica: estás más bajo de lo que crees.",
+      "Con pitot obstruido (entrada y drenaje) el anemómetro actúa como altímetro; si el drenaje está abierto, cae a cero.",
+      "Con toma estática obstruida el altímetro se congela, no el anemómetro: este marca de menos en ascenso y de más en descenso.",
+      "El porcentaje de oxígeno es el mismo en altura; lo que baja es la densidad.",
+      "La sustentación no es «hacia arriba»: es perpendicular al viento relativo, no al horizonte.",
+      "El ángulo de ataque no es la actitud: con el morro bajo puedes tener ángulo de ataque alto.",
+      "El calaje es fijo; el ángulo de ataque lo cambias tú con la palanca.",
+      "El viento relativo es opuesto a la trayectoria, no al eje del avión."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+      },
+      {
+        "title": "OACI, Doc 7488: Manual de la atmósfera tipo"
+      },
+      {
+        "title": "Curso DreamAir/ATPLENJOY, Principios de vuelo (POF 1)"
+      }
+    ],
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ],
+    "id": "080.02",
+    "reviewed": "2026-11-23",
+    "course": "Tema 2 · El perfil, la atmósfera, Bernoulli y el pitot",
+    "outline": [
+      {
+        "title": "Atmósfera",
+        "items": [
+          "78 % N₂, 21 % O₂, 1 % Ar, vapor variable",
+          "ISA: 1013,25 hPa, 15 °C, 1,225 kg/m³",
+          "−6,5 °C/km hasta 11 km, luego −56,5 °C",
+          "p = ρ · R · T"
+        ]
+      },
+      {
+        "title": "Altímetro",
+        "items": [
+          "Cápsula aneroide y presión estática",
+          "Altitud de presión con 1013,25",
+          "Subescala: QNH, QFE, 1013",
+          "De alto a bajo, cuidado con el suelo"
+        ]
+      },
+      {
+        "title": "Bernoulli y pitot",
+        "items": [
+          "Energía cinética + energía de presión = constante",
+          "Presión total en el punto de remanso",
+          "Pitot: total; tomas estáticas: estática",
+          "Anemómetro usa las dos; altímetro y variómetro, la estática"
+        ]
+      },
+      {
+        "title": "Flujo y fuerzas",
+        "items": [
+          "Líneas de corriente y tubos de corriente",
+          "Resultante: L perpendicular, D paralela al viento relativo",
+          "L y D = ½ρV²S·C",
+          "α = θ + calaje − γ"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "ISA nivel del mar: «mil trece, quince, uno veintidós» (1013 hPa, 15 °C, 1,225 kg/m³).",
+      "Subescala: sube la subescala, sube la lectura; presión baja, cuidado al suelo.",
+      "Pitot tapado: sin drenaje, es altímetro; con drenaje abierto, a cero. Estática tapada: altímetro clavado.",
+      "Los cuatro ángulos: Ataque (cuerda–viento), Calaje (cuerda–fuselaje), Actitud (fuselaje–horizonte), Trayectoria (vuelo–horizonte)."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Por qué falta oxígeno a gran altura si el aire sigue teniendo un 21 % de oxígeno?",
+        "a": "Porque el porcentaje es el mismo, pero hay menos moléculas por metro cúbico: la presión y la densidad bajan, y con ellas el oxígeno disponible."
+      },
+      {
+        "q": "¿Qué mide el altímetro y cómo lo convierte en altitud?",
+        "a": "Mide la presión estática con una cápsula aneroide y la convierte en altitud con la relación del modelo ISA; la subescala fija la presión de referencia."
+      },
+      {
+        "q": "Si vuelas hacia una zona de presión más baja sin tocar la subescala, ¿cuál es el error?",
+        "a": "El altímetro sobreindica: la altitud real es menor que la indicada, porque la presión de referencia puesta es mayor que la real."
+      },
+      {
+        "q": "¿Qué energías se intercambian según Bernoulli y por qué se llama presión total a su suma?",
+        "a": "Energía cinética por volumen (presión dinámica) y energía de presión (presión estática); su suma es la presión total, que vale lo que se mide donde el aire se frena del todo."
+      },
+      {
+        "q": "Explica con las dos presiones qué pasa si se tapan las tomas estáticas y el avión sube.",
+        "a": "El altímetro se queda en la altitud del bloqueo; el anemómetro resta una estática atrapada mayor que la real, así que marca de menos; el variómetro marca cero."
+      },
+      {
+        "q": "Distingue ángulo de ataque, calaje, actitud y trayectoria.",
+        "a": "Ataque: cuerda y viento relativo; calaje: cuerda del ala y eje del fuselaje (fijo); actitud: eje del fuselaje y horizonte; trayectoria: dirección del vuelo y horizonte."
+      },
+      {
+        "q": "¿Por qué la sustentación es perpendicular al viento relativo y no «hacia arriba»?",
+        "a": "Porque se define respecto al flujo que ve el ala, no respecto al horizonte; en ascenso o descenso se inclina junto con la trayectoria."
+      }
     ]
-   },
-   {
-    "title": "La resultante aerodinámica",
-    "text": [
-     "El aire actúa sobre toda la superficie del ala con presiones (más bajas en el extradós, más altas en el intradós) y con rozamiento. La suma de todas esas fuerzas es una única fuerza, la **resultante aerodinámica** (R), aplicada en el **centro de presiones**. Para trabajar con ella se descompone en dos componentes que se definen respecto al **viento relativo**, nunca respecto al horizonte ni a la cuerda:"
-    ],
-    "bullets": [
-     "**Sustentación (L):** componente **perpendicular** al viento relativo (es decir, a la trayectoria de vuelo).",
-     "**Resistencia (D):** componente **paralela** al viento relativo y de sentido contrario al movimiento.",
-     "El **viento relativo** es el flujo de aire que el ala «ve» y es igual y de sentido opuesto a la trayectoria del avión. Si el avión asciende, el viento relativo viene de arriba y delante."
-    ],
-    "figure": "svg:080-resultante",
-    "caption": "La resultante se descompone en sustentación (perpendicular al viento relativo) y resistencia (paralela). En ascenso, la sustentación se inclina hacia atrás respecto a la vertical."
-   },
-   {
-    "title": "Sustentación y resistencia: de qué dependen",
-    "text": [
-     "Sustentación y resistencia tienen la misma estructura, porque ambas son una presión dinámica multiplicada por una superficie y por un coeficiente que recoge la forma y el ángulo de ataque:",
-     "Los tres factores que controlas son la **velocidad** (al cuadrado), la **densidad** y el **ángulo de ataque** (a través de CL). La superficie S y la forma del perfil vienen de fábrica, aunque los flaps cambian ambas. En vuelo nivelado y uniforme la sustentación tiene que igualar al peso; si bajas la velocidad, solo puedes mantener L aumentando CL, es decir, el ángulo de ataque, hasta llegar al crítico. Por eso a poca velocidad el morro va alto, y por eso la pérdida tiene un límite de velocidad por abajo.",
-     "En un ascenso o descenso rectilíneo y estabilizado la sustentación no vale exactamente el peso: es **L = W · cos γ**, algo menor, porque parte del peso se reparte a lo largo de la trayectoria. Con γ de 5° la diferencia es del 0,4 %, despreciable en la práctica."
-    ],
-    "formulas": [
-     {
-      "f": "L = ½ · ρ · V² · S · CL",
-      "note": "ρ en kg/m³, V en m/s, S en m²: L en newtons."
-     },
-     {
-      "f": "D = ½ · ρ · V² · S · CD",
-      "note": "Misma presión dinámica y superficie; cambia el coeficiente."
-     }
-    ],
-    "examples": [
-     {
-      "q": "Una avioneta de 1100 kg (W = 10 791 N) con S = 16 m² vuela a 100 kt a nivel del mar (ρ = 1,225). ¿Qué CL necesita en vuelo nivelado?",
-      "a": "V = 51,4 m/s; q = 0,6125 × 51,4² ≈ 1618 Pa. L = W, así que CL = W / (q · S) = 10 791 / (1618 × 16) ≈ 0,42."
-     },
-     {
-      "q": "La misma avioneta vuela ahora a 70 kt en nivelado. ¿Qué CL necesita?",
-      "a": "V = 36 m/s; q = 0,6125 × 36² ≈ 794 Pa. CL = 10 791 / (794 × 16) ≈ 0,85. Al bajar la velocidad de 100 a 70 kt, CL se ha duplicado: hay que subir el ángulo de ataque."
-     },
-     {
-      "q": "Con S = 16 m², V = 50 m/s, CL = 0,5 y ρ = 1,225, ¿cuánta sustentación hay?",
-      "a": "q = 0,6125 × 2500 = 1531 Pa; L = 1531 × 16 × 0,5 ≈ 12 250 N."
-     }
-    ]
-   },
-   {
-    "title": "Ángulo de ataque, calaje, actitud y trayectoria",
-    "text": [
-     "Cuatro ángulos que se confunden en el examen y que tienes que separar:",
-     "El **ángulo de ataque (α)** es el que forman la cuerda del perfil y el viento relativo. Es el que determina el CL y la pérdida. El **ángulo de calaje** (o de incidencia) es el que forma la cuerda del ala, en la raíz, con el eje longitudinal del fuselaje; lo fija el fabricante y no lo puedes cambiar en vuelo. La **actitud de cabeceo (θ)** es el ángulo del eje longitudinal con el horizonte: lo que ves por el parabrisas. El **ángulo de trayectoria (γ)** es el de la trayectoria con el horizonte: positivo si subes, negativo si bajas.",
-     "Se relacionan por α = θ + calaje − γ. Si ignoras el calaje (ala con la cuerda alineada con el eje), basta α = θ − γ: el ángulo de ataque es la actitud menos la trayectoria. Por eso un avión puede estar con el morro **arriba** y con ángulo de ataque **pequeño** (en ascenso rápido) o con el morro **abajo** y ángulo de ataque **grande** (en un picado que se tira de golpe de la palanca). La pérdida depende de α, no de la actitud."
-    ],
-    "formulas": [
-     {
-      "f": "α = θ + calaje − γ",
-      "note": "Con calaje nulo: α = actitud − trayectoria."
-     }
-    ],
-    "examples": [
-     {
-      "q": "Un avión con calaje de 2° asciende con una actitud de 8° y una trayectoria de +5°. ¿Qué ángulo de ataque lleva?",
-      "a": "α = 8 + 2 − 5 = 5°."
-     },
-     {
-      "q": "En un descenso estabilizado con actitud de −2° y trayectoria de −5° (sin calaje), ¿cuál es α?",
-      "a": "α = −2 − (−5) = 3°. El morro está por debajo del horizonte y, sin embargo, el ala trabaja a un ángulo de ataque positivo."
-     }
-    ],
-    "figure": "svg:080-alfa-trayectoria",
-    "caption": "Con el mismo ángulo de ataque, el avión puede volar nivelado, subir o bajar: cambian la actitud y la trayectoria."
-   },
-   {
-    "title": "El calaje y la forma del perfil",
-    "text": [
-     "El ángulo de calaje existe para que en crucero el fuselaje vaya casi horizontal (menos resistencia y mejor visibilidad) mientras el ala trabaja ya con un ángulo de ataque útil. Otra cosa distinta es la **torsión (washout)** del ala, un calaje que disminuye hacia la punta y que verás en 080.03. No los mezcles: el calaje es un ángulo del conjunto ala‑fuselaje; el ángulo de ataque, un ángulo del flujo."
-    ],
-    "figure": "svg:080-perfil",
-    "caption": "Cuerda, línea media y ángulo de ataque frente a ángulo de calaje."
-   }
+  },
+  "questions": [
+    {
+      "id": "080.02.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La sustentación es la componente de la resultante aerodinámica que es:",
+      "options": [
+        "Perpendicular al horizonte",
+        "Perpendicular al viento relativo",
+        "Paralela a la cuerda del ala",
+        "Paralela al eje longitudinal del avión"
+      ],
+      "correct": 1,
+      "why": "Por definición, la sustentación se mide perpendicular al viento relativo, es decir, a la trayectoria de vuelo, y la resistencia paralela a él.",
+      "whyNot": [
+        "Eso sería la vertical local, que solo coincide en vuelo horizontal.",
+        null,
+        "La cuerda es una referencia del perfil, no del flujo.",
+        "El eje del avión es una referencia de la estructura, no del flujo."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.02.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "El ángulo de ataque es el ángulo formado por:",
+      "options": [
+        "La cuerda del perfil y el horizonte",
+        "El eje longitudinal y el horizonte",
+        "La cuerda del ala y el eje del fuselaje",
+        "La cuerda del perfil y el viento relativo"
+      ],
+      "correct": 3,
+      "why": "El ángulo de ataque relaciona la cuerda con el flujo que llega al ala (viento relativo).",
+      "whyNot": [
+        "Eso es el ángulo entre la cuerda y la horizontal, que depende de la actitud.",
+        "Es la actitud de cabeceo.",
+        "Eso es el ángulo de calaje, fijo.",
+        null
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.02.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "El ángulo de calaje (incidencia) del ala es:",
+      "options": [
+        "Fijo, y lo forma la cuerda del ala con el eje longitudinal del fuselaje",
+        "Variable con la palanca de profundidad",
+        "Fijo, y lo forma la cuerda con el viento relativo",
+        "Variable con los flaps, siempre"
+      ],
+      "correct": 0,
+      "why": "El calaje lo fija el fabricante al montar el ala; no cambia en vuelo.",
+      "whyNot": [
+        null,
+        "Con la palanca cambia el ángulo de ataque y la actitud, no el calaje.",
+        "Eso es el ángulo de ataque, que sí varía.",
+        "Los flaps modifican la curvatura del perfil, no el calaje de la estructura."
+      ],
+      "ref": "AFH cap. 3"
+    },
+    {
+      "id": "080.02.004",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un avión con calaje de 2° asciende con actitud de 8° y trayectoria de +5°. Su ángulo de ataque es:",
+      "options": [
+        "3°",
+        "1°",
+        "5°",
+        "11°"
+      ],
+      "correct": 2,
+      "why": "α = actitud + calaje − trayectoria = 8 + 2 − 5 = 5°.",
+      "whyNot": [
+        "Es 8 − 5 sin añadir el calaje.",
+        "Resultado de restar el calaje en lugar de sumarlo (8 − 2 − 5).",
+        null,
+        "Suma actitud, calaje y trayectoria con el mismo signo."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.02.005",
+      "type": "calculo",
+      "level": 1,
+      "q": "Si la velocidad se duplica manteniendo el mismo CL y la misma densidad, la sustentación:",
+      "options": [
+        "Se duplica",
+        "Se multiplica por dos raíz de dos",
+        "Se multiplica por cuatro",
+        "Se mantiene igual"
+      ],
+      "correct": 2,
+      "why": "L = ½ρV²S·CL depende de V al cuadrado: 2² = 4.",
+      "whyNot": [
+        "Sería así si L fuera proporcional a V.",
+        "Esa relación aparece con la raíz cuadrada, como en la Vs.",
+        null,
+        "Solo se mantendría si CL bajase a la cuarta parte."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.02.006",
+      "type": "calculo",
+      "level": 2,
+      "q": "Una avioneta con S = 16 m² vuela a 50 m/s con CL = 0,5 a nivel del mar (ρ = 1,225 kg/m³). La sustentación es aproximadamente:",
+      "options": [
+        "12 250 N",
+        "6 125 N",
+        "24 500 N",
+        "30 600 N"
+      ],
+      "correct": 0,
+      "why": "q = ½ · 1,225 · 50² = 1531 Pa; L = 1531 · 16 · 0,5 ≈ 12 250 N.",
+      "whyNot": [
+        null,
+        "Olvida la superficie o divide dos veces por 2.",
+        "Ha omitido el factor ½ de la presión dinámica.",
+        "Ha usado V sin elevar al cuadrado de forma coherente."
+      ],
+      "ref": "L = ½ρV²S·CL"
+    },
+    {
+      "id": "080.02.007",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué factor NO aparece en la fórmula de la sustentación?",
+      "options": [
+        "La densidad del aire",
+        "La superficie alar",
+        "El cuadrado de la velocidad",
+        "La masa del avión"
+      ],
+      "correct": 3,
+      "why": "L = ½ρV²S·CL: depende de ρ, V, S y CL. La masa no aparece; es el peso lo que la sustentación tiene que igualar en vuelo nivelado.",
+      "whyNot": [
+        "Es un factor directo de la fórmula.",
+        "Es un factor directo de la fórmula.",
+        "Es un factor directo de la fórmula.",
+        null
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.02.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "Sobre el extradós, las líneas de corriente se juntan. Esto implica que el aire:",
+      "options": [
+        "Se frena y su presión estática aumenta",
+        "Se acelera y su presión estática disminuye",
+        "Se acelera y su presión estática aumenta",
+        "Mantiene velocidad y presión"
+      ],
+      "correct": 1,
+      "why": "Continuidad: el tubo se estrecha y la velocidad aumenta. Bernoulli: a más velocidad, menos presión estática.",
+      "whyNot": [
+        "Es lo que ocurre donde las líneas se separan.",
+        null,
+        "Contradice a Bernoulli: al acelerarse el aire, la estática baja, no sube.",
+        "Si las líneas se juntan, la velocidad no puede mantenerse."
+      ],
+      "ref": "PHAK cap. 4"
+    },
+    {
+      "id": "080.02.009",
+      "type": "concepto",
+      "level": 2,
+      "q": "El flujo bidimensional (2D) en aerodinámica corresponde a:",
+      "options": [
+        "Un perfil como si el ala tuviera envergadura infinita",
+        "Un ala real con torbellinos de punta",
+        "Un avión con dos alas",
+        "Un flujo con dos velocidades distintas"
+      ],
+      "correct": 0,
+      "why": "El 2D estudia un corte del ala sin movimiento a lo largo de la envergadura: sin torbellinos de punta ni resistencia inducida.",
+      "whyNot": [
+        null,
+        "Eso es el flujo 3D.",
+        "No tiene relación con el número de planos.",
+        "No hace referencia a velocidades."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.02.010",
+      "type": "concepto",
+      "level": 3,
+      "q": "En un ascenso rectilíneo estabilizado con trayectoria γ, la sustentación vale:",
+      "options": [
+        "W, exactamente",
+        "W · sen γ",
+        "W · cos γ, ligeramente menor que el peso",
+        "W / cos γ, mayor que el peso"
+      ],
+      "correct": 2,
+      "why": "El peso se reparte en una componente perpendicular a la trayectoria (W cos γ), que equilibra la sustentación, y otra paralela (W sen γ), que suma a la resistencia.",
+      "whyNot": [
+        "Solo es así en vuelo horizontal.",
+        "W sen γ es la componente del peso a lo largo de la trayectoria.",
+        null,
+        "Daría una sustentación mayor que el peso, que no hace falta."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.02.011",
+      "type": "lectura",
+      "level": 2,
+      "q": "En la figura, tres trayectorias con el mismo ángulo de ataque. ¿Qué ocurre cuando solo cambia la potencia con la palanca fija?",
+      "figure": "svg:080-alfa-trayectoria",
+      "options": [
+        "Cambia el ángulo de ataque y no la trayectoria",
+        "Cambia la trayectoria (nivelado, ascenso o descenso) y no el ángulo de ataque",
+        "Cambian ambos en la misma proporción",
+        "No cambia ninguno de los dos"
+      ],
+      "correct": 1,
+      "why": "Con el mismo ángulo de ataque y la misma velocidad, más potencia da ascenso y menos potencia, descenso: lo que varía es la trayectoria.",
+      "whyNot": [
+        "El ángulo de ataque lo fija la posición de la palanca (y la compensación).",
+        null,
+        "Sería cierto solo si moviera la palanca.",
+        "Se modifica la trayectoria, que es lo que muestra la figura."
+      ],
+      "ref": "AFH cap. 4"
+    },
+    {
+      "id": "080.02.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "La corriente descendente (downwash) detrás del ala es:",
+      "options": [
+        "Un defecto que se evita con el diedro",
+        "Producida solo por los flaps",
+        "Igual a la corriente ascendente delante del ala",
+        "La reacción del aire a la fuerza que el ala ejerce sobre él (tercera ley de Newton)"
+      ],
+      "correct": 3,
+      "why": "El ala desvía una masa de aire hacia abajo; el aire reacciona empujando el ala hacia arriba.",
+      "whyNot": [
+        "El diedro no tiene relación con el downwash.",
+        "El downwash existe siempre que hay sustentación.",
+        "Es de mayor intensidad que el upwash delante del ala.",
+        null
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.02.013",
+      "type": "concepto",
+      "level": 1,
+      "q": "¿Qué gas es el más abundante en el aire seco de la atmósfera?",
+      "options": [
+        "Oxígeno, con el 21 %",
+        "Nitrógeno, con el 78 %",
+        "Argón, con el 1 %",
+        "Dióxido de carbono, con el 0,04 %"
+      ],
+      "correct": 1,
+      "why": "El aire seco contiene alrededor de un 78 % de nitrógeno, un 21 % de oxígeno y un 1 % de argón. Ni el CO₂ ni el resto de gases superan el 0,05 %.",
+      "whyNot": [
+        "El oxígeno es el segundo, con el 21 %.",
+        null,
+        "El argón es el tercero, con alrededor del 1 %.",
+        "El CO₂ es solo una traza."
+      ],
+      "ref": "OACI Doc 7488; Curso POF 1"
+    },
+    {
+      "id": "080.02.014",
+      "type": "regla",
+      "level": 2,
+      "q": "En la atmósfera estándar ISA, por debajo de la tropopausa, la temperatura:",
+      "options": [
+        "Aumenta unos 2 °C cada 1000 ft",
+        "Se mantiene en 15 °C hasta la tropopausa",
+        "Disminuye 1 °C cada 100 m",
+        "Disminuye 6,5 °C por kilómetro, unos 2 °C cada 1000 ft"
+      ],
+      "correct": 3,
+      "why": "El gradiente ISA es de −6,5 °C/km (−1,98 °C/1000 ft) hasta los 11 km, donde se llega a −56,5 °C.",
+      "whyNot": [
+        "Es al revés: la temperatura baja con la altura en la troposfera.",
+        "Solo el valor de nivel del mar es 15 °C; baja con la altura.",
+        "1 °C cada 100 m son 10 °C/km, el gradiente adiabático seco, no el ISA.",
+        null
+      ],
+      "ref": "OACI Doc 7488"
+    },
+    {
+      "id": "080.02.015",
+      "type": "calculo",
+      "level": 2,
+      "q": "La presión del aire es 900 hPa y su temperatura es 280 K (R = 287 J/(kg·K)). Su densidad es de aproximadamente:",
+      "options": [
+        "1,12 kg/m³",
+        "1,23 kg/m³",
+        "0,80 kg/m³",
+        "1,60 kg/m³"
+      ],
+      "correct": 0,
+      "why": "ρ = p / (R · T) = 90 000 / (287 × 280) = 1,12 kg/m³.",
+      "whyNot": [
+        null,
+        "1,225 es la densidad ISA a nivel del mar, con 1013 hPa y 288 K.",
+        "Es un valor más propio de unos 12 000–14 000 ft; no sale de estos datos.",
+        "Superaría la densidad de nivel del mar ISA, algo imposible con menos presión y solo 8 K menos de temperatura."
+      ],
+      "ref": "Curso POF 1; ecuación de los gases"
+    },
+    {
+      "id": "080.02.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "El altímetro barométrico obtiene la altitud a partir de:",
+      "options": [
+        "La distancia al suelo medida con ondas de radio",
+        "La diferencia entre la presión total y la estática",
+        "La presión estática, convertida a altitud con el modelo ISA",
+        "La temperatura exterior y la densidad del aire"
+      ],
+      "correct": 2,
+      "why": "Una cápsula aneroide responde a la presión estática y la esfera está graduada con la relación altitud-presión de la ISA.",
+      "whyNot": [
+        "Eso es el radioaltímetro, un instrumento distinto.",
+        "Esa diferencia es la presión dinámica, que usa el anemómetro.",
+        null,
+        "El altímetro barométrico no mide temperatura ni densidad; solo presión."
+      ],
+      "ref": "Curso POF 1; PHAK cap. 8"
+    },
+    {
+      "id": "080.02.017",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un aeródromo está a 600 ft y el QNH es 1003 hPa. Con la subescala del altímetro en 1013 hPa (1 hPa ≈ 27 ft), en tierra el altímetro marcará unos:",
+      "options": [
+        "330 ft",
+        "870 ft",
+        "600 ft",
+        "1013 ft"
+      ],
+      "correct": 1,
+      "why": "La subescala está 10 hPa por encima del QNH, lo que suma 10 × 27 ≈ 270 ft: 600 + 270 = 870 ft. Sobreindica.",
+      "whyNot": [
+        "Restaría los 270 ft en lugar de sumarlos: subir la subescala sube la lectura.",
+        null,
+        "Eso marcaría con el QNH correcto.",
+        "1013 es el valor de presión, no una altitud."
+      ],
+      "ref": "Curso POF 1; PHAK cap. 8"
+    },
+    {
+      "id": "080.02.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "Vuelas hacia una zona de presión más baja sin reajustar la subescala del altímetro. La altitud real, respecto a la indicada, es:",
+      "options": [
+        "Mayor que la indicada",
+        "Igual, porque el altímetro mide la altitud verdadera",
+        "Imposible de determinar sin conocer la velocidad",
+        "Menor que la indicada"
+      ],
+      "correct": 3,
+      "why": "La subescala tiene una presión de referencia mayor que la real, así que el altímetro sobreindica: estás más bajo de lo que marca.",
+      "whyNot": [
+        "Eso ocurre al revés, al volar hacia presiones más altas.",
+        "El altímetro mide presión, no altitud verdadera; solo da la altitud correcta en ISA y con la subescala bien puesta.",
+        "La velocidad no interviene en el error de subescala.",
+        null
+      ],
+      "ref": "Curso POF 1; PHAK cap. 8"
+    },
+    {
+      "id": "080.02.019",
+      "type": "concepto",
+      "level": 2,
+      "q": "Durante el vuelo se obstruyen la entrada del pitot y su orificio de drenaje, y las tomas estáticas funcionan. Si asciendes a velocidad constante, el anemómetro:",
+      "options": [
+        "Aumenta su indicación aunque la velocidad real no cambie",
+        "Marca cero",
+        "Disminuye su indicación aunque la velocidad real no cambie",
+        "Se mantiene fijo siempre"
+      ],
+      "correct": 0,
+      "why": "La presión total queda atrapada, mientras la estática baja al subir. La diferencia crece y el anemómetro se comporta como un altímetro: marca más.",
+      "whyNot": [
+        null,
+        "Marcaría cero si el drenaje estuviera abierto y la presión se escapara.",
+        "Disminuiría en descenso, no en ascenso.",
+        "Solo se mantiene fijo en vuelo nivelado; al cambiar de altitud, varía."
+      ],
+      "ref": "Curso POF 1; PHAK cap. 8"
+    },
+    {
+      "id": "080.02.020",
+      "type": "concepto",
+      "level": 3,
+      "q": "Se obstruyen las tomas estáticas durante un descenso. El altímetro y el anemómetro mostrarán:",
+      "options": [
+        "El altímetro correcto y el anemómetro marcando de menos",
+        "El altímetro bajando más despacio y el anemómetro marcando de menos",
+        "El altímetro congelado en la altitud del bloqueo y el anemómetro marcando de más",
+        "El altímetro y el anemómetro congelados"
+      ],
+      "correct": 2,
+      "why": "La estática atrapada es menor que la real al bajar, así que la diferencia con la presión total es mayor y el anemómetro marca de más. El altímetro se queda clavado.",
+      "whyNot": [
+        "El altímetro no puede ser correcto, porque no recibe presión nueva.",
+        "El altímetro no baja ni despacio: queda congelado.",
+        null,
+        "El anemómetro sigue funcionando con la total y la estática atrapada; no se congela."
+      ],
+      "ref": "Curso POF 1; PHAK cap. 8"
+    }
   ],
-  "numbers": [
-   "Sustentación: L = ½ρV²S·CL, perpendicular al viento relativo",
-   "Resistencia: D = ½ρV²S·CD, paralela al viento relativo",
-   "A doble velocidad (mismo CL), cuádruple sustentación",
-   "α = θ + calaje − γ (con calaje nulo: actitud − trayectoria)",
-   "En ascenso o descenso estabilizado, L = W · cos γ"
-  ],
-  "traps": [
-   "La sustentación no es «hacia arriba»: es perpendicular al viento relativo, no al horizonte.",
-   "El ángulo de ataque no es la actitud: con el morro bajo puedes tener ángulo de ataque alto.",
-   "El calaje es fijo; el ángulo de ataque lo cambias tú con la palanca.",
-   "El viento relativo es opuesto a la trayectoria, no al eje del avión."
-  ],
-  "sources": [
-   {
-    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
-    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
-   },
-   {
-    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
-    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
-   }
-  ],
-  "links": [
-   {
-    "label": "Cabina del PA-28",
-    "href": "#/ac/pa28"
-   },
-   {
-    "label": "Cabina del C172",
-    "href": "#/ac/c172"
-   }
-  ],
-  "id": "080.02",
-  "reviewed": "2026-10-09"
- },
- "questions": [
-  {
-   "id": "080.02.001",
-   "type": "concepto",
-   "level": 1,
-   "q": "La sustentación es la componente de la resultante aerodinámica que es:",
-   "options": [
-    "Perpendicular al horizonte",
-    "Perpendicular al viento relativo",
-    "Paralela a la cuerda del ala",
-    "Paralela al eje longitudinal del avión"
-   ],
-   "correct": 1,
-   "why": "Por definición, la sustentación se mide perpendicular al viento relativo, es decir, a la trayectoria de vuelo, y la resistencia paralela a él.",
-   "whyNot": [
-    "Eso sería la vertical local, que solo coincide en vuelo horizontal.",
-    null,
-    "La cuerda es una referencia del perfil, no del flujo.",
-    "El eje del avión es una referencia de la estructura, no del flujo."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.02.002",
-   "type": "concepto",
-   "level": 1,
-   "q": "El ángulo de ataque es el ángulo formado por:",
-   "options": [
-    "La cuerda del perfil y el horizonte",
-    "El eje longitudinal y el horizonte",
-    "La cuerda del ala y el eje del fuselaje",
-    "La cuerda del perfil y el viento relativo"
-   ],
-   "correct": 3,
-   "why": "El ángulo de ataque relaciona la cuerda con el flujo que llega al ala (viento relativo).",
-   "whyNot": [
-    "Eso es el ángulo entre la cuerda y la horizontal, que depende de la actitud.",
-    "Es la actitud de cabeceo.",
-    "Eso es el ángulo de calaje, fijo.",
-    null
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.02.003",
-   "type": "concepto",
-   "level": 1,
-   "q": "El ángulo de calaje (incidencia) del ala es:",
-   "options": [
-    "Fijo, y lo forma la cuerda del ala con el eje longitudinal del fuselaje",
-    "Variable con la palanca de profundidad",
-    "Fijo, y lo forma la cuerda con el viento relativo",
-    "Variable con los flaps, siempre"
-   ],
-   "correct": 0,
-   "why": "El calaje lo fija el fabricante al montar el ala; no cambia en vuelo.",
-   "whyNot": [
-    null,
-    "Con la palanca cambia el ángulo de ataque y la actitud, no el calaje.",
-    "Eso es el ángulo de ataque, que sí varía.",
-    "Los flaps modifican la curvatura del perfil, no el calaje de la estructura."
-   ],
-   "ref": "AFH cap. 3"
-  },
-  {
-   "id": "080.02.004",
-   "type": "calculo",
-   "level": 2,
-   "q": "Un avión con calaje de 2° asciende con actitud de 8° y trayectoria de +5°. Su ángulo de ataque es:",
-   "options": [
-    "3°",
-    "1°",
-    "5°",
-    "11°"
-   ],
-   "correct": 2,
-   "why": "α = actitud + calaje − trayectoria = 8 + 2 − 5 = 5°.",
-   "whyNot": [
-    "Es 8 − 5 sin añadir el calaje.",
-    "Resultado de restar el calaje en lugar de sumarlo (8 − 2 − 5).",
-    null,
-    "Suma actitud, calaje y trayectoria con el mismo signo."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.02.005",
-   "type": "calculo",
-   "level": 1,
-   "q": "Si la velocidad se duplica manteniendo el mismo CL y la misma densidad, la sustentación:",
-   "options": [
-    "Se duplica",
-    "Se multiplica por dos raíz de dos",
-    "Se multiplica por cuatro",
-    "Se mantiene igual"
-   ],
-   "correct": 2,
-   "why": "L = ½ρV²S·CL depende de V al cuadrado: 2² = 4.",
-   "whyNot": [
-    "Sería así si L fuera proporcional a V.",
-    "Esa relación aparece con la raíz cuadrada, como en la Vs.",
-    null,
-    "Solo se mantendría si CL bajase a la cuarta parte."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.02.006",
-   "type": "calculo",
-   "level": 2,
-   "q": "Una avioneta con S = 16 m² vuela a 50 m/s con CL = 0,5 a nivel del mar (ρ = 1,225 kg/m³). La sustentación es aproximadamente:",
-   "options": [
-    "12 250 N",
-    "6 125 N",
-    "24 500 N",
-    "30 600 N"
-   ],
-   "correct": 0,
-   "why": "q = ½ · 1,225 · 50² = 1531 Pa; L = 1531 · 16 · 0,5 ≈ 12 250 N.",
-   "whyNot": [
-    null,
-    "Olvida la superficie o divide dos veces por 2.",
-    "Ha omitido el factor ½ de la presión dinámica.",
-    "Ha usado V sin elevar al cuadrado de forma coherente."
-   ],
-   "ref": "L = ½ρV²S·CL"
-  },
-  {
-   "id": "080.02.007",
-   "type": "concepto",
-   "level": 1,
-   "q": "¿Qué factor NO aparece en la fórmula de la sustentación?",
-   "options": [
-    "La densidad del aire",
-    "La superficie alar",
-    "El cuadrado de la velocidad",
-    "La masa del avión"
-   ],
-   "correct": 3,
-   "why": "L = ½ρV²S·CL: depende de ρ, V, S y CL. La masa no aparece; es el peso lo que la sustentación tiene que igualar en vuelo nivelado.",
-   "whyNot": [
-    "Es un factor directo de la fórmula.",
-    "Es un factor directo de la fórmula.",
-    "Es un factor directo de la fórmula.",
-    null
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.02.008",
-   "type": "concepto",
-   "level": 2,
-   "q": "Sobre el extradós, las líneas de corriente se juntan. Esto implica que el aire:",
-   "options": [
-    "Se frena y su presión estática aumenta",
-    "Se acelera y su presión estática disminuye",
-    "Se acelera y su presión estática aumenta",
-    "Mantiene velocidad y presión"
-   ],
-   "correct": 1,
-   "why": "Continuidad: el tubo se estrecha y la velocidad aumenta. Bernoulli: a más velocidad, menos presión estática.",
-   "whyNot": [
-    "Es lo que ocurre donde las líneas se separan.",
-    null,
-    "Contradice a Bernoulli: al acelerarse el aire, la estática baja, no sube.",
-    "Si las líneas se juntan, la velocidad no puede mantenerse."
-   ],
-   "ref": "PHAK cap. 4"
-  },
-  {
-   "id": "080.02.009",
-   "type": "concepto",
-   "level": 2,
-   "q": "El flujo bidimensional (2D) en aerodinámica corresponde a:",
-   "options": [
-    "Un perfil como si el ala tuviera envergadura infinita",
-    "Un ala real con torbellinos de punta",
-    "Un avión con dos alas",
-    "Un flujo con dos velocidades distintas"
-   ],
-   "correct": 0,
-   "why": "El 2D estudia un corte del ala sin movimiento a lo largo de la envergadura: sin torbellinos de punta ni resistencia inducida.",
-   "whyNot": [
-    null,
-    "Eso es el flujo 3D.",
-    "No tiene relación con el número de planos.",
-    "No hace referencia a velocidades."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.02.010",
-   "type": "concepto",
-   "level": 3,
-   "q": "En un ascenso rectilíneo estabilizado con trayectoria γ, la sustentación vale:",
-   "options": [
-    "W, exactamente",
-    "W · sen γ",
-    "W · cos γ, ligeramente menor que el peso",
-    "W / cos γ, mayor que el peso"
-   ],
-   "correct": 2,
-   "why": "El peso se reparte en una componente perpendicular a la trayectoria (W cos γ), que equilibra la sustentación, y otra paralela (W sen γ), que suma a la resistencia.",
-   "whyNot": [
-    "Solo es así en vuelo horizontal.",
-    "W sen γ es la componente del peso a lo largo de la trayectoria.",
-    null,
-    "Daría una sustentación mayor que el peso, que no hace falta."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.02.011",
-   "type": "lectura",
-   "level": 2,
-   "q": "En la figura, tres trayectorias con el mismo ángulo de ataque. ¿Qué ocurre cuando solo cambia la potencia con la palanca fija?",
-   "figure": "svg:080-alfa-trayectoria",
-   "options": [
-    "Cambia el ángulo de ataque y no la trayectoria",
-    "Cambia la trayectoria (nivelado, ascenso o descenso) y no el ángulo de ataque",
-    "Cambian ambos en la misma proporción",
-    "No cambia ninguno de los dos"
-   ],
-   "correct": 1,
-   "why": "Con el mismo ángulo de ataque y la misma velocidad, más potencia da ascenso y menos potencia, descenso: lo que varía es la trayectoria.",
-   "whyNot": [
-    "El ángulo de ataque lo fija la posición de la palanca (y la compensación).",
-    null,
-    "Sería cierto solo si moviera la palanca.",
-    "Se modifica la trayectoria, que es lo que muestra la figura."
-   ],
-   "ref": "AFH cap. 4"
-  },
-  {
-   "id": "080.02.012",
-   "type": "concepto",
-   "level": 2,
-   "q": "La corriente descendente (downwash) detrás del ala es:",
-   "options": [
-    "Un defecto que se evita con el diedro",
-    "Producida solo por los flaps",
-    "Igual a la corriente ascendente delante del ala",
-    "La reacción del aire a la fuerza que el ala ejerce sobre él (tercera ley de Newton)"
-   ],
-   "correct": 3,
-   "why": "El ala desvía una masa de aire hacia abajo; el aire reacciona empujando el ala hacia arriba.",
-   "whyNot": [
-    "El diedro no tiene relación con el downwash.",
-    "El downwash existe siempre que hay sustentación.",
-    "Es de mayor intensidad que el upwash delante del ala.",
-    null
-   ],
-   "ref": "PHAK cap. 5"
-  }
- ],
- "cards": [
-  {
-   "id": "c.080.02.01",
-   "front": "Sustentación y resistencia: respecto a qué se definen",
-   "back": "Respecto al viento relativo: L perpendicular, D paralela"
-  },
-  {
-   "id": "c.080.02.02",
-   "front": "Ángulo de ataque",
-   "back": "Ángulo entre la cuerda del perfil y el viento relativo"
-  },
-  {
-   "id": "c.080.02.03",
-   "front": "Relación entre α, actitud, calaje y trayectoria",
-   "back": "α = actitud + calaje − trayectoria"
-  },
-  {
-   "id": "c.080.02.04",
-   "front": "Sustentación a doble velocidad con el mismo CL",
-   "back": "Cuatro veces mayor (depende de V²)"
-  }
- ]
+  "cards": [
+    {
+      "id": "c.080.02.01",
+      "front": "Sustentación y resistencia: respecto a qué se definen",
+      "back": "Respecto al viento relativo: L perpendicular, D paralela"
+    },
+    {
+      "id": "c.080.02.02",
+      "front": "Ángulo de ataque",
+      "back": "Ángulo entre la cuerda del perfil y el viento relativo"
+    },
+    {
+      "id": "c.080.02.03",
+      "front": "Relación entre α, actitud, calaje y trayectoria",
+      "back": "α = actitud + calaje − trayectoria"
+    },
+    {
+      "id": "c.080.02.04",
+      "front": "Sustentación a doble velocidad con el mismo CL",
+      "back": "Cuatro veces mayor (depende de V²)"
+    },
+    {
+      "id": "c.080.02.05",
+      "front": "ISA a nivel del mar",
+      "back": "1013,25 hPa, 15 °C, 1,225 kg/m³; −6,5 °C/km hasta 11 km"
+    },
+    {
+      "id": "c.080.02.06",
+      "front": "Altímetro con presión real menor que la subescala",
+      "back": "Sobreindica: la altitud real es menor que la indicada"
+    },
+    {
+      "id": "c.080.02.07",
+      "front": "Pitot y drenaje obstruidos",
+      "back": "El anemómetro actúa como altímetro: sube al ascender, baja al descender"
+    },
+    {
+      "id": "c.080.02.08",
+      "front": "Toma estática obstruida",
+      "back": "Altímetro congelado, variómetro a cero, anemómetro de menos al subir y de más al bajar"
+    }
+  ]
 }

@@ -1,64 +1,305 @@
 {
  "lesson": {
+  "id": "050.14",
   "title": "Sistemas de presión",
-  "summary": "Anticiclones cálidos y fríos, dorsales y subsidencia; depresiones frontales, térmicas, orográficas y polares; vaguadas, pantano barométrico y DANA, con el tiempo asociado a cada uno.",
+  "course": "Tema 6 · Sistemas de presión y climatología",
+  "summary": "Depresiones, anticiclones, vaguadas, dorsales y cols; anticiclones fríos y cálidos, subsidencia, baja térmica ibérica, depresiones orográficas y polares y DANA, con el tiempo asociado a cada sistema.",
   "objectives": [
-   "Describir el movimiento del aire y el tiempo en un anticiclón y en una depresión",
-   "Distinguir anticiclones cálidos y fríos y dorsales",
-   "Explicar qué es la baja térmica ibérica y por qué no tiene frentes",
-   "Reconocer vaguadas, pantanos barométricos y DANA",
-   "Asociar cada sistema a su tiempo y riesgo para el vuelo"
+   "Nombrar los cinco sistemas de presión que forman las isobaras (depresión, anticiclón, vaguada, dorsal y col) y reconocerlos en un mapa",
+   "Describir el movimiento del aire en una depresión y en un anticiclón, en superficie y en altura, y el tiempo que traen",
+   "Explicar la inversión de subsidencia y por qué un anticiclón no siempre significa cielo limpio",
+   "Distinguir anticiclones y bajas frías y cálidas según cómo cambia la presión con la altura",
+   "Reconocer la baja térmica ibérica, las depresiones orográficas y polares y la DANA, y su riesgo para el vuelo"
   ],
   "sections": [
    {
-    "title": "Anticiclón y depresión",
+    "title": "Los sistemas de presión: cinco formas de isobaras",
     "text": [
-     "Un **anticiclón** (alta presión) es un área donde la presión en el centro es mayor que a su alrededor. Una **depresión o borrasca** (baja presión) es lo contrario. En el hemisferio norte el viento rodea el anticiclón en **sentido horario** y la depresión en **sentido antihorario**, y en superficie, por la fricción, se desvía hacia fuera del anticiclón y hacia dentro de la borrasca.",
-     "En el anticiclón el aire **diverge en superficie** y **desciende desde arriba (subsidencia)**; al bajar se comprime y se calienta, y las nubes se disipan. En la depresión el aire **converge en superficie** y **asciende**, se enfría, condensa y forma nubes y precipitación. De ahí la regla básica: **anticiclón, tiempo estable y despejado; borrasca, nubosidad y precipitación**. Las isobaras muy juntas indican viento fuerte."
+     "Las isobaras dibujan unas pocas formas que se repiten en todos los mapas, y reconocerlas permite adivinar el tiempo antes de leer un solo mensaje. Son los **sistemas de presión** (*pressure distribution systems*): la **depresión** o baja (*low*, también llamada ciclón), el **anticiclón** o alta (*high*), la **vaguada** (*trough*), la **dorsal** o cuña (*ridge*) y el **col**.",
+     "Una depresión es una zona de presión comparativamente baja, con isobaras más o menos circulares y concéntricas y el valor mínimo en el centro. El anticiclón es lo mismo pero con la presión máxima en el centro. La vaguada es una prolongación alargada de baja presión que sale de una depresión; la dorsal es una prolongación alargada de alta presión que sale de un anticiclón. El col es el punto o zona entre dos altas y dos bajas dispuestas en cruz, donde el gradiente de presión es muy pequeño y el viento es casi inexistente."
+    ],
+    "figure": "svg:050-sistemas-presion",
+    "caption": "Isobaras y circulación del aire en el hemisferio norte: las letras A (alta) y B (baja) son las del mapa español",
+    "table": {
+     "caption": "Los cinco sistemas y su tiempo habitual",
+     "head": [
+      "Sistema",
+      "Isobaras",
+      "Aire",
+      "Tiempo típico"
+     ],
+     "rows": [
+      [
+       "Depresión (low)",
+       "Cerradas, presión mínima en el centro",
+       "Converge en superficie, asciende, diverge en altura",
+       "Nubosidad, precipitación y viento fuerte si las isobaras están juntas"
+      ],
+      [
+       "Anticiclón (high)",
+       "Cerradas, presión máxima en el centro",
+       "Desciende (subsidencia), diverge en superficie",
+       "Estable, viento flojo; bruma, estratos o niebla bajo la inversión"
+      ],
+      [
+       "Vaguada (trough)",
+       "Forma de V o U, abierta desde una baja",
+       "Convergencia y ascenso a lo largo del eje",
+       "Nubes y lluvia; suele acompañar a los frentes"
+      ],
+      [
+       "Dorsal (ridge)",
+       "Forma de cuña, abierta desde una alta",
+       "Subsidencia a lo largo del eje",
+       "Estable y de buen aspecto; posibles estratos bajo la inversión"
+      ],
+      [
+       "Col",
+       "Cruce entre dos altas y dos bajas",
+       "Gradiente casi nulo",
+       "Viento flojo y variable; niebla en invierno, tormentas locales en verano"
+      ]
+     ],
+     "src": "Curso, tema 6; AEMET"
+    },
+    "ideas": [
+     "Imagina la presión como altura de un terreno. La alta es una colina, la baja un hoyo, la dorsal una loma alargada, la vaguada un barranco y el col el puerto entre dos colinas, que es plano justo en el collado. El aire rueda cuesta abajo del mapa, aunque la rotación de la Tierra lo desvía.",
+     "Las isobaras juntas son las curvas de nivel de una ladera empinada: viento fuerte. Separadas, una llanura: viento flojo."
     ]
    },
    {
-    "title": "Anticiclones",
+    "title": "Depresión: el aire sube",
     "text": [
-     "Un **anticiclón cálido** o dinámico, como el de las **Azores**, es profundo: la subsidencia genera una **inversión de subsidencia** en capas bajas que atrapa humedad y polvo por debajo, y el resultado es estabilidad, cielos despejados y, a veces, calima o niebla baja en invierno. Un **anticiclón frío** o térmico, como el que se forma en invierno sobre el continente por el enfriamiento del suelo, es poco profundo y se asocia a **inversión de radiación**, nieblas y estratos bajos persistentes, con viento flojo.",
-     "Una **dorsal** es una prolongación de la alta presión, como una cuña; el tiempo en ella es estable y de buen aspecto, aunque la subsidencia produce niebla o estratos por debajo de la inversión. Su contrario es la **vaguada**."
+     "En una depresión el aire converge cerca del suelo, asciende y vuelve a diverger en la altura, y esa subida es la fábrica de nubes y precipitación. Al subir el aire se enfría por expansión, el vapor condensa y, con humedad suficiente, aparecen nubes de desarrollo y lluvia. Por eso se asocia a mal tiempo, con viento que aumenta al estrechar las isobaras hacia el centro.",
+     "En el hemisferio norte el aire gira alrededor de la baja en **sentido antihorario** y, por el rozamiento con el suelo, se curva hacia dentro del centro. En el sur sucede al revés. Para saber dónde está la baja respecto al viento: de espaldas al viento, la baja queda a tu izquierda en el hemisferio norte.",
+     "El curso distingue dos clases. Las **depresiones frontales** son de gran escala y típicas de las latitudes templadas: nacen en el frente polar y llevan frentes cálido, frío y oclusión (se estudian en el tema de frentes). Las **depresiones no frontales** son de pequeña escala y pueden aparecer en casi cualquier lugar: térmicas, orográficas y polares, que veremos más adelante. Que una depresión se rellene o se profundice depende de un balance: si el aire que diverge en altura es más que el que converge abajo, el aire del suelo sube a reponerlo y la presión baja."
+    ],
+    "ideas": [
+     "Una borrasca es como el desagüe de una bañera con el tapón quitado, pero al revés: el aire se mete hacia el centro desde todos los lados y no tiene más salida que subir. Un vaso de leche hirviendo muestra lo mismo: sube, rebosa arriba y se esparce.",
+     "Piensa en la espuma de la cerveza: lo que sube forma una capa visible. Lo que sube en la atmósfera forma nubes."
     ]
    },
    {
-    "title": "Depresiones",
+    "title": "Anticiclón: el aire baja",
     "text": [
-     "Las **depresiones frontales** son las borrascas atlánticas de latitudes medias, con frentes cálido, frío y oclusión (véase 050.13). Otras bajas no son frontales. La **depresión térmica**, como la **baja térmica ibérica** del verano, se forma sobre la meseta por el calentamiento intenso del suelo: el aire caliente sube y la presión baja. No tiene frentes, produce convergencia en superficie y, con humedad, tormentas de tarde, además de calima y rachas de viento. Las **depresiones orográficas** (de sotavento) se forman por el flujo sobre una cordillera, por ejemplo, la de Génova a sotavento de los Alpes. Las **bajas polares** son pequeñas e intensas, sobre el mar en aire frío inestable.",
-     "La **vaguada** es una prolongación alargada de baja presión, con isobaras en forma de V. En ella hay convergencia y nubosidad, y suelen acompañar a los frentes. El **pantano barométrico** es una región amplia de presiones casi iguales, con isobaras muy separadas y poco viento; los fenómenos locales (nieblas, tormentas convectivas) dependen del suelo, del calentamiento y de la humedad, y son difíciles de predecir."
+     "En un anticiclón el aire desciende por el centro y se abre hacia fuera cerca del suelo, y esa subsidencia mantiene el cielo estable y las nubes se disuelven. El aire que baja se comprime y se calienta (de forma adiabática, es decir, sin intercambiar calor con el exterior), de modo que se aleja de la saturación. Las isobaras suelen estar muy separadas, así que el viento es flojo.",
+     "En el hemisferio norte gira en **sentido horario** y se abre hacia fuera por el rozamiento. Al calentarse por compresión, el aire que baja acaba más cálido que la capa de debajo, y esa capa cálida sobre otra más fría es la **inversión de subsidencia** (*subsidence inversion*). Impide el ascenso, atrapa debajo humedad, polvo y humo, y deja un techo nuboso de estratos bajos o una bruma que reduce la visibilidad.",
+     "Esa es la gran trampa del anticiclón: bajo cielo despejado y viento flojo, las noches largas favorecen la niebla de radiación, y en verano la calima y el calor reducen la visibilidad. Un piloto debe leer «alta presión» como estabilidad y buena visibilidad en altura, pero con posible niebla, estrato o bruma en superficie."
+    ],
+    "ideas": [
+     "Es una tapadera de olla: la inversión de subsidencia deja el humo, el polvo y la humedad aprisionados debajo, igual que el vapor bajo la tapa. Por encima se ve de maravilla.",
+     "El aire que baja se calienta como la bomba de una bici cuando la usas un rato: comprimir calienta."
+    ]
+   },
+   {
+    "title": "Anticiclones y bajas fríos y cálidos",
+    "text": [
+     "La diferencia entre un sistema frío y uno cálido está en cómo cambia la presión al subir: el aire frío es denso y la presión cae con la altura mucho más deprisa que en el aire cálido. Por eso una **alta fría** (*cold high*) es poco profunda: alta en superficie, pero a unos kilómetros se debilita y arriba se convierte en baja. Lo contrario ocurre con una **baja cálida** (*warm low*): baja en superficie, pero con la altura se rellena y arriba es una alta. En cambio una **baja fría** (*cold low*) es baja a todos los niveles y se hace más profunda con la altura, y una **alta cálida** (*warm high*) es alta a todos los niveles y más fuerte arriba.",
+     "Los ejemplos reales ayudan. La alta de **Siberia** en invierno y los anticiclones que se forman sobre el continente helado son altas frías, con inversión de radiación, nieblas y estratos bajos persistentes. La **baja térmica ibérica** del verano es una baja cálida. Las **DANA**, las bajas polares y las bajas aisladas son bajas frías. El anticiclón de las **Azores** es el prototipo de alta cálida o dinámica: profunda, con subsidencia sobre una zona muy extensa."
+    ],
+    "table": {
+     "caption": "Variación de la presión con la altura",
+     "head": [
+      "Sistema",
+      "En superficie",
+      "En altura",
+      "Ejemplo"
+     ],
+     "rows": [
+      [
+       "Alta fría (cold high)",
+       "Alta",
+       "Baja",
+       "Anticiclón de Siberia en invierno"
+      ],
+      [
+       "Baja cálida (warm low)",
+       "Baja",
+       "Alta",
+       "Baja térmica ibérica en verano"
+      ],
+      [
+       "Baja fría (cold low)",
+       "Baja",
+       "Baja, más profunda",
+       "DANA, baja polar"
+      ],
+      [
+       "Alta cálida (warm high)",
+       "Alta",
+       "Alta, más fuerte",
+       "Anticiclón de las Azores"
+      ]
+     ],
+     "src": "Curso, tema 6"
+    },
+    "ideas": [
+     "Piensa en una pila de colchones. Si el aire es frío, la pila está apretada y baja de golpe al subir; si es cálido, la pila es esponjosa y mantiene la presión mucho más arriba.",
+     "Los fríos «mueren» con la altura (la alta fría se deshace) y los cálidos crecen hacia arriba: si hace calor abajo, arriba hay más aire y más presión."
+    ]
+   },
+   {
+    "title": "Dorsales, vaguadas y cols",
+    "text": [
+     "Una dorsal y una vaguada son las ramas alargadas de una alta y de una baja, y el tiempo en ellas se parece al de su sistema madre. La **dorsal** (*ridge*) es una cuña de alta presión: subsidencia, estabilidad y buena apariencia general, pero con estratos o niebla bajo la inversión. La **vaguada** (*trough*) es una lengua de baja presión con isobaras en V: hay convergencia, nubes y chubascos, y suele acompañar a los frentes, que se sitúan a lo largo de su eje.",
+     "Al pasar una vaguada el viento cambia de dirección con cierta rapidez, y en el hemisferio norte rola en sentido horario (*veering*): por ejemplo, del suroeste al noroeste. En la dorsal, el viento cambia con más lentitud.",
+     "El **col** es la zona de transición entre dos altas y dos bajas dispuestas en cruz, con un gradiente de presión casi nulo y por tanto viento flojo y variable. Su tiempo depende de las condiciones locales y es difícil de predecir: niebla de radiación persistente en invierno o tormentas de tarde por convección en verano. Es el «pantano barométrico» de los partes."
+    ],
+    "ideas": [
+     "La dorsal es como una península de alta presión que se adentra en el mar de bajas; la vaguada es una bahía de baja presión que se adentra en la tierra de las altas.",
+     "El col es el collado entre dos montañas: un lugar sin pendiente, donde una canica queda sin saber hacia dónde rodar. Así el aire: no tiene empujón y hace lo que le pida el suelo."
+    ]
+   },
+   {
+    "title": "Depresiones que no son frontales",
+    "text": [
+     "No toda baja trae frentes: la **depresión térmica**, la **orográfica** y la **polar** se forman por causas locales o térmicas. La **baja térmica ibérica** del verano nace sobre la meseta por el calentamiento intenso del suelo: el aire caliente sube y la presión baja. No tiene frentes, produce convergencia en superficie y, si hay humedad, tormentas de tarde, además de calima y rachas de viento.",
+     "Una **depresión orográfica** (de sotavento) se forma cuando el flujo cruza una cordillera: el aire desciende por la ladera de sotavento, se estira y la presión baja. Un ejemplo clásico es la depresión de Génova, a sotavento de los Alpes. Las **bajas polares** son depresiones pequeñas pero intensas que aparecen sobre el mar en aire frío inestable, con chubascos de nieve y viento fuerte."
+    ],
+    "ideas": [
+     "La baja térmica es una olla en el fuego: la tierra se calienta, el aire sube como el vapor y deja un hueco de presión por debajo. No hay choque de masas de aire, sólo cocina."
     ]
    },
    {
     "title": "DANA y gota fría",
     "text": [
-     "Una **DANA** (depresión aislada en niveles altos) es una masa de aire frío en altura que se aísla de la corriente en chorro y gira como un remolino a unos 5 o 6 km de altura. Lo que se llama **gota fría** es la misma idea. En altura es muy fría, así que, si encima hay aire cálido y húmedo en superficie (por ejemplo, el Mediterráneo en otoño, aún caliente), el gradiente se vuelve muy inestable: **tormentas intensas, lluvias muy fuertes, granizo y mal tiempo persistente**, y puede ser peligrosa tanto para el vuelo como en tierra.",
-     "Rasgos prácticos: su centro es lento e impredecible; puede llevar tormentas al mismo punto durante muchas horas; el mal tiempo puede no coincidir con frentes. En el mapa de superficie puede haber poca señal, y en la altura se ve como una baja cerrada de aire frío."
+     "Una **DANA** es una masa de aire muy frío en altura que se ha separado de la corriente en chorro y gira como un remolino aislado. Las siglas significan Depresión Aislada en Niveles Altos, y la «gota fría» es el mismo fenómeno con el nombre antiguo. Sus rasgos son un núcleo muy frío a 5 o 6 km de altura y un desplazamiento lento y errático.",
+     "Lo peligroso es la combinación con el suelo. Si abajo hay aire cálido y húmedo, como el Mediterráneo en otoño, el gradiente vertical de temperatura se vuelve extremo y se disparan **tormentas intensas, lluvias torrenciales, granizo y mal tiempo persistente** en el mismo lugar durante horas. En el mapa de superficie puede haber poca señal, y se detecta mejor en altura como una baja cerrada de aire frío o en el vapor de agua del satélite."
     ],
     "note": {
      "kind": "es",
      "text": "En España las DANA son más frecuentes en otoño y primavera. Las lluvias torrenciales del Mediterráneo y las grandes inundaciones se han asociado repetidamente a ellas."
-    }
+    },
+    "ideas": [
+     "Es como una pelota de aire frío que se ha escapado de la cinta transportadora (la corriente en chorro) y gira sola en un rincón. Sobre un mar cálido es como echar hielo a una olla hirviendo: burbujea con violencia."
+    ]
+   },
+   {
+    "title": "Ejemplos resueltos",
+    "examples": [
+     {
+      "q": "En un mapa de superficie ves isobaras circulares cerradas con 1020, 1024 y 1028 hPa de fuera hacia dentro. ¿Qué sistema es, cómo gira el viento en el hemisferio norte y qué tiempo cabe esperar?",
+      "a": "La presión aumenta hacia el centro, así que es un anticiclón. El viento gira en sentido horario y se abre algo hacia fuera por el rozamiento. Hay subsidencia: estabilidad, viento flojo si las isobaras están separadas y, según la época, bruma, estratos bajos o niebla bajo la inversión."
+     },
+     {
+      "q": "Una mañana de enero estás en un aeródromo de la meseta norte, con un anticiclón de 1035 hPa encima, cielo despejado y viento en calma. Ayer el METAR dio 03/01. ¿Qué vigilas?",
+      "a": "Es una alta fría con inversión de radiación. La temperatura y el punto de rocío están a 2 °C, así que basta un poco de enfriamiento nocturno para saturar: niebla de radiación probable al amanecer. Aunque en altura la visibilidad sea excelente, el aeródromo puede cerrar toda la mañana."
+     },
+     {
+      "q": "¿Qué esperas al pasar una vaguada en el hemisferio norte con viento del suroeste previo?",
+      "a": "Convergencia, nubes y lluvia durante el paso, y después un cambio de viento en sentido horario (veering) hacia el noroeste, con aire más frío y mejora gradual."
+     }
+    ]
+   }
+  ],
+  "outline": [
+   {
+    "title": "Los cinco sistemas",
+    "items": [
+     "Depresión (low) y anticiclón (high): isobaras cerradas",
+     "Vaguada (trough): extensión alargada de baja",
+     "Dorsal (ridge): extensión alargada de alta",
+     "Col: entre dos altas y dos bajas, gradiente casi nulo"
+    ]
+   },
+   {
+    "title": "Depresión",
+    "items": [
+     "Convergencia en superficie, ascenso, divergencia en altura",
+     "Antihorario en el hemisferio norte",
+     "Frontal (grande, latitudes templadas) o no frontal (pequeña, en cualquier sitio)",
+     "Nubes, precipitación y viento"
+    ]
+   },
+   {
+    "title": "Anticiclón",
+    "items": [
+     "Subsidencia, divergencia en superficie",
+     "Horario en el hemisferio norte",
+     "Inversión de subsidencia: aire más cálido sobre otro más frío",
+     "Estable, viento flojo; bruma, estratos o niebla bajo la inversión"
+    ]
+   },
+   {
+    "title": "Fríos y cálidos",
+    "items": [
+     "Alta fría: alta en superficie y baja en altura",
+     "Baja cálida: baja en superficie y alta en altura",
+     "Baja fría: baja a todos los niveles, más profunda arriba",
+     "Alta cálida: alta a todos los niveles, más fuerte arriba"
+    ]
+   },
+   {
+    "title": "Bajas que no son frontales",
+    "items": [
+     "Térmica: calentamiento del suelo, sin frentes (baja ibérica)",
+     "Orográfica: sotavento de una cordillera",
+     "Polar: pequeña e intensa sobre el mar",
+     "DANA: baja fría aislada en altura"
+    ]
+   }
+  ],
+  "mnemonics": [
+   "Anticiclón = A de Alta y de Arriba hacia Abajo: el aire baja (subsidencia) y se ve el cielo. Borrasca = el aire Brota hacia arriba y llegan las nubes.",
+   "Horario con la alta, antihorario con la baja: la H de Horario y la H de High. En el hemisferio norte la baja queda a tu izquierda si das la espalda al viento.",
+   "El relieve del mapa: alta = colina, baja = hoyo, dorsal = loma alargada, vaguada = barranco, col = puerto de montaña.",
+   "Frío arriba, caliente abajo: la alta fría se acaba (se debilita) con la altura; la baja cálida también se desinfla y arriba es alta. Los cálidos suben, los fríos bajan.",
+   "DANA: Depresión Aislada en Niveles Altos. Si el aire frío se queda aislado arriba y el mar de abajo está caliente, hay tormenta."
+  ],
+  "selfCheck": [
+   {
+    "q": "¿Qué diferencia una vaguada de una depresión y una dorsal de un anticiclón?",
+    "a": "La vaguada y la dorsal son extensiones alargadas: la vaguada, de una baja, con las isobaras en forma de V o U; la dorsal, de una alta, en forma de cuña. Depresión y anticiclón son sistemas de isobaras cerradas con un centro."
+   },
+   {
+    "q": "¿Qué le pasa al aire en una depresión, desde el suelo hasta la altura?",
+    "a": "Converge en superficie, asciende (con nubes y precipitación si hay humedad) y diverge en altura. Si la divergencia de arriba supera a la convergencia de abajo, la depresión se profundiza."
+   },
+   {
+    "q": "¿Por qué el aire que baja en un anticiclón se calienta y qué consecuencia tiene?",
+    "a": "Al descender se comprime y se calienta de forma adiabática, hasta quedar más cálido que el aire inferior: es la inversión de subsidencia, que atrapa humedad y polvo debajo y mantiene el cielo estable, con bruma o estratos bajos."
+   },
+   {
+    "q": "¿Cómo cambia con la altura una alta fría y una baja cálida?",
+    "a": "La alta fría se debilita y arriba se convierte en baja. La baja cálida se debilita y arriba se convierte en alta. El aire frío es más denso y la presión cae antes con la altura."
+   },
+   {
+    "q": "¿Qué es un col y qué tiempo trae?",
+    "a": "La zona entre dos altas y dos bajas, con un gradiente de presión casi nulo. Hay viento muy flojo y variable y el tiempo depende de lo local: niebla en invierno o tormentas de tarde en verano."
+   },
+   {
+    "q": "¿Por qué no hay frentes en la baja térmica ibérica?",
+    "a": "Porque nace del calentamiento del suelo de la meseta, no del choque de dos masas de aire distintas. Genera convergencia y ascenso locales y, con humedad, tormentas de tarde."
+   },
+   {
+    "q": "¿Qué es una DANA y por qué es peligrosa en otoño en el Mediterráneo?",
+    "a": "Una depresión aislada de aire muy frío en altura, desligada de la corriente en chorro. Con el mar todavía cálido, la diferencia de temperatura entre arriba y abajo desestabiliza la atmósfera y dispara tormentas y lluvias torrenciales."
    }
   ],
   "numbers": [
-   "Anticiclón: sentido horario (HN), divergencia en superficie, subsidencia, tiempo estable",
-   "Depresión: sentido antihorario (HN), convergencia, ascenso, nubes y precipitación",
+   "Anticiclón: horario (HN), subsidencia, divergencia en superficie, tiempo estable",
+   "Depresión: antihorario (HN), convergencia en superficie, ascenso, divergencia en altura",
+   "Vaguada: extensión de baja. Dorsal: extensión de alta. Col: gradiente casi nulo entre dos altas y dos bajas",
+   "Alta fría: alta en superficie y baja en altura. Baja cálida: baja en superficie y alta en altura",
+   "Baja fría y alta cálida: el mismo signo a todos los niveles, reforzado con la altura",
+   "Inversión de subsidencia: el aire que desciende se calienta adiabáticamente",
    "Baja térmica ibérica: verano, sin frentes; tormentas de tarde y calima",
-   "DANA: baja aislada en altura, fría; tormentas y lluvia intensa si hay aire cálido y húmedo debajo",
-   "Isobaras juntas: viento fuerte"
+   "DANA: baja fría aislada a unos 5–6 km; tormentas intensas con aire cálido y húmedo debajo",
+   "Isobaras juntas: viento fuerte; isobaras separadas: viento flojo"
   ],
   "traps": [
-   "La baja térmica ibérica no es una borrasca con frentes.",
-   "Anticiclón no siempre es buen tiempo: las nieblas y los estratos bajos aparecen bajo la inversión.",
-   "Una DANA no tiene que mostrar un frente en superficie.",
-   "En el hemisferio norte el viento gira en horario alrededor de los anticiclones y en antihorario alrededor de las borrascas."
+   "Anticiclón no significa siempre buen tiempo: bajo la inversión de subsidencia hay bruma, estratos y niebla.",
+   "Confundir vaguada (de baja) y dorsal (de alta).",
+   "Pensar que la baja térmica ibérica es una borrasca con frentes: no los tiene.",
+   "Creer que el col trae viento fuerte: es el punto de viento casi nulo entre dos altas y dos bajas.",
+   "Decir que una alta fría sigue siendo alta en altura: arriba se transforma en baja.",
+   "Pensar que una DANA siempre se ve como frente en superficie; puede no dejar casi huella en el mapa.",
+   "Confundir el sentido de giro: en el hemisferio norte la alta es horaria y la baja antihoraria; en el sur es al revés."
   ],
   "spain": [
    "La baja térmica ibérica domina el interior peninsular en verano.",
-   "Las DANA, sobre todo en otoño, provocan lluvias torrenciales en el Mediterráneo."
+   "Las DANA, sobre todo en otoño y primavera, provocan lluvias torrenciales en el Mediterráneo.",
+   "El anticiclón de las Azores es un anticiclón cálido, profundo y estable que condiciona el tiempo de España."
   ],
   "sources": [
    {
@@ -68,10 +309,12 @@
    {
     "title": "FAA-H-8083-28, Aviation Weather Handbook",
     "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+   },
+   {
+    "title": "Material del curso, tema 6 «Sistemas de presión» (instructores)"
    }
   ],
-  "id": "050.14",
-  "reviewed": "2026-10-09"
+  "reviewed": "2026-11-23"
  },
  "questions": [
   {
@@ -262,18 +505,123 @@
     "No se origina por una cordillera."
    ],
    "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.14.010",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un col en un mapa de superficie es:",
+   "options": [
+    "La zona entre dos altas y dos bajas, con gradiente de presión muy pequeño y viento flojo",
+    "Una extensión alargada de baja presión con isobaras en V",
+    "Una región con isobaras muy juntas y viento fuerte",
+    "Un anticiclón frío con inversión de radiación"
+   ],
+   "correct": 0,
+   "why": "El col aparece entre dos altas y dos bajas dispuestas en cruz; las isobaras casi no se aprietan, el gradiente de presión es mínimo y el viento es muy débil.",
+   "whyNot": [
+    null,
+    "Eso es una vaguada.",
+    "Las isobaras juntas dan viento fuerte, lo contrario del col.",
+    "Es una alta, no un punto de silla entre dos sistemas."
+   ],
+   "ref": "Curso tema 6; AEMET"
+  },
+  {
+   "id": "050.14.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una alta fría (cold high) en superficie, al ascender en altura:",
+   "options": [
+    "Se hace más fuerte y se mantiene alta",
+    "Se debilita y a algún nivel se convierte en baja",
+    "Se convierte en un frente estacionario",
+    "Se mantiene igual hasta la tropopausa"
+   ],
+   "correct": 1,
+   "why": "El aire frío es más denso y la presión cae más deprisa con la altura. Por eso la alta fría es poco profunda y en altura queda por debajo de la presión de su entorno.",
+   "whyNot": [
+    "Eso describe una alta cálida (warm high).",
+    null,
+    "Un frente es una superficie de contraste, no un cambio de signo de la presión.",
+    "Con aire frío no se mantiene: la presión desciende más rápido."
+   ],
+   "ref": "Curso tema 6"
+  },
+  {
+   "id": "050.14.012",
+   "type": "concepto",
+   "level": 1,
+   "q": "En una dorsal (ridge) el tiempo suele ser:",
+   "options": [
+    "Inestable, con chubascos y tormentas continuos",
+    "De viento muy fuerte y precipitaciones intensas",
+    "Idéntico al de un frente cálido en sus primeras horas",
+    "Estable, con subsidencia, aunque con estratos o niebla bajo la inversión"
+   ],
+   "correct": 3,
+   "why": "La dorsal es una cuña de alta presión: el aire desciende, hay estabilidad y buena visibilidad en altura. Bajo la inversión pueden aparecer estratos, bruma o niebla.",
+   "whyNot": [
+    "Eso es la vaguada.",
+    "El viento intenso lo marcan las isobaras juntas, no la dorsal.",
+    "Un frente cálido trae nubes cada vez más bajas y lluvia continua, no la estabilidad de una cuña.",
+    null
+   ],
+   "ref": "Curso tema 6; AEMET"
+  },
+  {
+   "id": "050.14.013",
+   "type": "concepto",
+   "level": 3,
+   "q": "En el hemisferio norte, al pasar una vaguada, el viento suele:",
+   "options": [
+    "Rolar en sentido antihorario (backing), de NW a SW",
+    "Mantener la dirección y aumentar en 10 kt",
+    "Rolar en sentido horario (veering), por ejemplo de SW a NW",
+    "Calmarse por completo y quedar variable"
+   ],
+   "correct": 2,
+   "why": "Al pasar el eje de la vaguada el viento gira en sentido horario: del suroeste previo al noroeste posterior, con aire más frío y mejora.",
+   "whyNot": [
+    "El rolar antihorario (backing) es lo habitual al acercarse una baja desde el oeste, no al pasar su vaguada.",
+    "La dirección cambia al cruzar el eje; no se mantiene.",
+    null,
+    "La calma es propia del col, no de la vaguada."
+   ],
+   "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.14.014",
+   "type": "concepto",
+   "level": 2,
+   "q": "En una depresión, la divergencia del aire en altura mayor que la convergencia en superficie hace que la baja:",
+   "options": [
+    "Se rellene, porque llega aire de todos lados",
+    "Se profundice, porque el aire del suelo sube a reponer el que sale",
+    "Se convierta en un anticiclón",
+    "Se convierta en un col inmediatamente"
+   ],
+   "correct": 1,
+   "why": "La divergencia en altura saca aire de la columna más deprisa de lo que entra por la superficie; la presión en superficie baja y la depresión se profundiza.",
+   "whyNot": [
+    "Se rellena cuando la convergencia de superficie supera a la divergencia de arriba.",
+    null,
+    "Para convertirse en alta tendría que hundirse aire sobre ella; el balance descrito la profundiza.",
+    "El col es un punto de gradiente casi nulo; no se produce así."
+   ],
+   "ref": "Curso tema 6"
   }
  ],
  "cards": [
   {
    "id": "c.050.14.01",
-   "front": "Anticiclón",
+   "front": "Anticiclón (high)",
    "back": "Horario (HN); subsidencia; divergencia en superficie; estable"
   },
   {
    "id": "c.050.14.02",
-   "front": "Borrasca",
-   "back": "Antihorario (HN); convergencia; ascenso; nubes y precipitación"
+   "front": "Depresión (low)",
+   "back": "Antihorario (HN); convergencia; ascenso; divergencia en altura; nubes y precipitación"
   },
   {
    "id": "c.050.14.03",
@@ -283,12 +631,27 @@
   {
    "id": "c.050.14.04",
    "front": "DANA",
-   "back": "Baja aislada fría en altura; con aire cálido y húmedo debajo da tormentas intensas"
+   "back": "Depresión aislada de aire frío en altura; con aire cálido y húmedo debajo da tormentas intensas"
   },
   {
    "id": "c.050.14.05",
-   "front": "Pantano barométrico",
-   "back": "Presiones casi iguales, poco viento, tiempo local"
+   "front": "Col y pantano barométrico",
+   "back": "Entre dos altas y dos bajas: gradiente casi nulo, viento flojo y variable, tiempo local"
+  },
+  {
+   "id": "c.050.14.06",
+   "front": "Dorsal y vaguada",
+   "back": "Dorsal: cuña de alta, estable. Vaguada: lengua de baja, nubes y lluvia"
+  },
+  {
+   "id": "c.050.14.07",
+   "front": "Alta fría y baja cálida",
+   "back": "Alta fría: alta abajo y baja arriba. Baja cálida: baja abajo y alta arriba"
+  },
+  {
+   "id": "c.050.14.08",
+   "front": "Inversión de subsidencia",
+   "back": "El aire que baja se calienta adiabáticamente y queda más cálido que la capa inferior: atrapa humedad y polvo"
   }
  ]
 }

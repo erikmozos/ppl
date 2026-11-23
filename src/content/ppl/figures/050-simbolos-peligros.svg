@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 310">
+<title>Símbolos del tiempo significativo para peligros del vuelo: turbulencia moderada y fuerte, engelamiento moderado y fuerte, ondas de montaña, línea de turbonada, ciclón tropical, erupción volcánica, montañas ocultas y material radiactivo (dibujo propio)</title>
+<text x="320" y="24" class="tx b" text-anchor="middle">Peligros del mapa de tiempo significativo</text>
+<rect x="16.0" y="40" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(52.0,62.0)"><path d="M-18 8H-9L0 -8L9 8H18" class="ln thick" fill="none"/></g>
+<text x="92.0" y="59.0" class="tx b">Turbulencia moderada</text><text x="92.0" y="76.0" class="tx2" font-size="11">un pico</text>
+<rect x="336.0" y="40" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(372.0,62.0)"><path d="M-18 10H-12L0 -12L12 10H18" class="ln thick" fill="none"/><path d="M-7 10L0 -2L7 10" class="ln thick" fill="none"/></g>
+<text x="412.0" y="59.0" class="tx b">Turbulencia fuerte</text><text x="412.0" y="76.0" class="tx2" font-size="11">dos picos</text>
+<rect x="16.0" y="92" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(52.0,114.0)"><path d="M-12 -12C-12 8 12 8 12 -12" class="ln thick" fill="none"/><path d="M0 -14V14" class="ln thick" fill="none"/></g>
+<text x="92.0" y="111.0" class="tx b">Engelamiento moderado</text><text x="92.0" y="128.0" class="tx2" font-size="11">copa y un trazo</text>
+<rect x="336.0" y="92" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(372.0,114.0)"><path d="M-12 -12C-12 8 12 8 12 -12" class="ln thick" fill="none"/><path d="M-4 -14V14M4 -14V14" class="ln thick" fill="none"/></g>
+<text x="412.0" y="111.0" class="tx b">Engelamiento fuerte</text><text x="412.0" y="128.0" class="tx2" font-size="11">copa y dos trazos</text>
+<rect x="16.0" y="144" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(52.0,166.0)"><path d="M-18 0C-8 -13 8 -13 18 0C8 13 -8 13 -18 0Z" class="ln thick" fill="none"/></g>
+<text x="92.0" y="163.0" class="tx b">Ondas de montaña</text><text x="92.0" y="180.0" class="tx2" font-size="11">lente</text>
+<rect x="336.0" y="144" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(372.0,166.0)"><path d="M-18 8L-9 -8L0 8L9 -8L18 8" class="ln thick" fill="none"/></g>
+<text x="412.0" y="163.0" class="tx b">Línea de turbonada</text><text x="412.0" y="180.0" class="tx2" font-size="11">zigzag</text>
+<rect x="16.0" y="196" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(52.0,218.0)"><circle cx="0" cy="6" r="8" class="ln thick" fill="none"/><path d="M-8 6C-8 -6 2 -12 12 -12" class="ln thick" fill="none"/><path d="M8 6C8 12 10 15 14 17" class="ln thick" fill="none"/></g>
+<text x="92.0" y="215.0" class="tx b">Ciclón tropical</text><text x="92.0" y="232.0" class="tx2" font-size="11">gancho en espiral</text>
+<rect x="336.0" y="196" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(372.0,218.0)"><path d="M-14 14L-5 0H5L14 14Z" class="ln thick" fill="none"/><path d="M-6 -6L-9 -13M0 -8V-16M6 -6L9 -13" class="ln thick" fill="none"/></g>
+<text x="412.0" y="215.0" class="tx b">Erupción volcánica</text><text x="412.0" y="232.0" class="tx2" font-size="11">volcán con humo</text>
+<rect x="16.0" y="248" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(52.0,270.0)"><path d="M-18 14L-9 -8L0 14ZM0 14L9 -8L18 14Z" class="ink-fill"/></g>
+<text x="92.0" y="267.0" class="tx b">Montañas ocultas</text><text x="92.0" y="284.0" class="tx2" font-size="11">dos picos negros</text>
+<rect x="336.0" y="248" width="288.0" height="44" rx="6" class="soft"/>
+<g transform="translate(372.0,270.0)"><circle r="15" class="ln thick" fill="none"/><path d="M0 0 L-5.5 -9.5 A11 11 0 0 1 5.5 -9.5 Z" class="ink-fill"/><path d="M0 0 L11.0 0.0 A11 11 0 0 1 5.5 9.5 Z" class="ink-fill"/><path d="M0 0 L-5.5 9.5 A11 11 0 0 1 -11.0 0.0 Z" class="ink-fill"/><circle r="3" class="bg-fill"/></g>
+<text x="412.0" y="267.0" class="tx b">Material radiactivo</text><text x="412.0" y="284.0" class="tx2" font-size="11">trébol en círculo</text>
+</svg>

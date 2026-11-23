@@ -2,14 +2,14 @@
   "lesson": {
     "id": "060.07",
     "title": "Computador de navegación",
-    "summary": "Manejo paso a paso del computador de navegación tipo CRP-5 o E6B: velocidad, tiempo, distancia, combustible, conversiones, TAS y altitud verdadera en el lado de cálculo; rumbo, GS y viento en el lado del viento. Con ejemplos resueltos y comprobación mental.",
+    "summary": "Manejo paso a paso del computador de navegación circular (CR3 del curso, con los métodos del CRP-5 y el E6B): velocidad, tiempo, distancia, combustible, conversiones, TAS y altitud verdadera en el lado de cálculo; rumbo, GS y viento en el lado del viento, con ejercicios resueltos para repetir a mano.",
     "objectives": [
-      "Resolver velocidad, tiempo, distancia y combustible con la regla circular y situar la coma con una estimación previa",
-      "Convertir NM, km y SM; m y ft; litros, galones y kilos, incluido el paso de volumen a masa con la densidad",
-      "Obtener la TAS a partir de la CAS, la altitud de presión y la temperatura, y la altitud verdadera a partir de la indicada",
-      "Hallar rumbo y GS para una derrota dada con el método del viento abajo (CRP-5) y del viento arriba (E6B)",
-      "Hallar derrota y GS a partir del rumbo, y el viento a partir de rumbo, TAS, derrota y GS",
-      "Comprobar cada resultado con cálculo mental antes de marcar la respuesta"
+      "Colocar y leer las escalas del computador sin perder la coma decimal",
+      "Resolver velocidad, tiempo, distancia y combustible con el índice 60",
+      "Convertir unidades y calcular TAS y altitud verdadera",
+      "Resolver los tres problemas del viento: rumbo y GS, derrota y GS, y hallar el viento",
+      "Repetir ejercicios resueltos a mano y comprobarlos con una estimación mental",
+      "Evitar los errores típicos de colocación y de lectura"
     ],
     "sections": [
       {
@@ -22,7 +22,27 @@
         "note": {
           "kind": "es",
           "text": "Guía AESA FOR-EFT-GU01: computador de navegación facilitado por el vigilante (o propio revisado), calculadora con memoria y regla a escala en pantalla. Llévalo dominado: en 25 minutos y 12 preguntas no hay tiempo para aprender a usarlo."
-        }
+        },
+        "ideas": [
+          "Es como aprender a usar una calculadora científica antes del examen: nadie te la va a explicar en la sala, y los minutos del examen valen oro. Con el computador pasa igual: tienes que haber hecho mil veces cada operación."
+        ]
+      },
+      {
+        "title": "El CR3 del curso: qué es y cómo se maneja",
+        "text": [
+          "El **CR3** es el computador de navegación circular de la escuela: una cara con regla de cálculo circular (velocidad, tiempo, distancia, combustible, conversiones, TAS y altitud) y otra con un disco giratorio y una regla para resolver el triángulo de velocidades con rumbo, derrota, deriva, TAS, GS y viento. Las diapositivas del curso solo nombran el CR3 sin desarrollar su uso, así que esta lección explica el manejo con los métodos estándar de cualquier computador circular, que son los que el CR3 repite.",
+          "Antes de empezar, localiza en tu CR3 tres cosas: el **índice de 60 minutos** (la flecha o triángulo de la escala interior), el **10** (índice para multiplicar y dividir) y **cuánto vale cada marca** en la zona que vas a leer. La posición de las ventanas y los nombres de las marcas de conversión varían entre modelos; si algo no coincide con lo que se describe aquí, manda el manual de tu CR3 y las indicaciones del instructor."
+        ],
+        "bullets": [
+          "Receta general: 1) estima el resultado de cabeza; 2) coloca el índice o la pareja de valores; 3) lee; 4) compara con la estimación; 5) comprueba unidades y horas decimales.",
+          "Lado de cálculo: tiempo, distancia, velocidad, combustible, conversiones, TAS y altitud verdadera.",
+          "Lado del viento: tres problemas (rumbo y GS, derrota y GS, viento).",
+          "Practica con tu propio CR3: los resultados de la sección «Ejercicios resueltos» están calculados para repetirlos y compararlos."
+        ],
+        "verify": true,
+        "ideas": [
+          "Un computador circular es el cuchillo multiusos de la cabina: una navaja con herramientas para cada cosa. Antes de usarlo, mira qué herramienta es cada una (índice 60, índice 10, ventanas) y cómo se coloca."
+        ]
       },
       {
         "title": "Lado de cálculo: cómo funciona la regla circular",
@@ -36,6 +56,9 @@
           "Escala interior: tiempo en minutos (índice 60 = 1 h); CAS y altitud indicada en los problemas de altitud.",
           "Ventanas: velocidad (altitud de presión frente a temperatura) para la TAS; altitud para la altitud verdadera; altitud de densidad.",
           "Marcas de conversión en la escala exterior: km, NM (náuticas), SM (terrestres), m, ft, litros, galones US e imperiales, kg y lb."
+        ],
+        "ideas": [
+          "Dos ruedas dentadas que engranan: da igual cuánto gires, las proporciones siguen igual. La regla circular es una tabla de multiplicar infinita: una sola posición del disco da toda una hilera de resultados que guardan la misma proporción."
         ]
       },
       {
@@ -66,6 +89,9 @@
             "q": "Distancia en 35 min con GS 96 kt.",
             "a": "Estimación: algo más de 1,5 NM/min por 35 min, unas 55 NM. Computador: índice 60 frente a 96; frente a 35 de la interior lees 56 en la exterior. Resultado: 56 NM."
           }
+        ],
+        "ideas": [
+          "El índice 60 es «una hora»: si pones esa hora frente a 105 kt, la regla ya sabe cuánto recorres en cualquier fracción de hora. Es como tener el velocímetro de un coche fijado y mirar el cuentakilómetros para cada minuto."
         ]
       },
       {
@@ -92,12 +118,15 @@
             "q": "Quedan 140 l utilizables con un consumo de 32 l/h. Autonomía.",
             "a": "Índice 60 frente a 32; frente a 140 de la exterior lees 262 en la interior: 262 min = 4 h 22 min. Con calculadora: 140 / 32 = 4,375 h, y 0,375 × 60 = 22,5 min. Si tienes que llegar con 30 min de reserva final, puedes volar 3 h 52 min antes de empezar a gastarla."
           }
+        ],
+        "ideas": [
+          "El combustible es la misma regla con otra etiqueta: si el coche gasta 6 litros a la hora, tras media hora ha gastado 3. Cambia «kilómetros» por «litros» y tienes el mismo problema."
         ]
       },
       {
         "title": "Calculadora: tiempo y combustible",
         "text": [
-          "Repite aquí los ejemplos de las dos secciones anteriores y compara con lo que leas en tu computador. Si la diferencia es mayor de un 2 %, revisa qué marca has leído o si has puesto el índice 60 o el 10."
+          "Comprueba aquí los resultados del computador con la calculadora de tiempo y combustible. Repite aquí los ejemplos de las dos secciones anteriores y compara con lo que leas en tu computador. Si la diferencia es mayor de un 2 %, revisa qué marca has leído o si has puesto el índice 60 o el 10."
         ],
         "figure": "calc:fuel"
       },
@@ -189,6 +218,9 @@
             "q": "Elevación de 2400 m en pies.",
             "a": "2400 × 3,281 ≈ 7870 ft. Comprobación: 2400 × 3,3 ≈ 7900."
           }
+        ],
+        "ideas": [
+          "Convertir de NM a km es como cambiar euros por dólares en el mostrador: se coloca el cambio una vez y todas las cantidades se convierten con la misma proporción."
         ]
       },
       {
@@ -208,6 +240,9 @@
             "q": "CAS 110 kt a 4500 ft de altitud de presión: compara +6 °C (ISA) con +20 °C.",
             "a": "Con ISA, TAS ≈ 118 kt; con +20 °C (ISA +14), TAS ≈ 120 kt. A igual CAS y altitud de presión, el aire caliente (menos denso) da más TAS."
           }
+        ],
+        "ideas": [
+          "Una persona nada con la misma brazada en agua dulce que en agua salada, pero en agua espesa avanza menos con el mismo esfuerzo. El anemómetro da el «esfuerzo» (CAS); la TAS es lo que avanzas, y en altura el aire es más fino y te deja avanzar más."
         ]
       },
       {
@@ -236,7 +271,10 @@
         "note": {
           "kind": "warn",
           "text": "El error por frío es el peligroso: te acerca al terreno. Tenlo en cuenta al decidir tu altitud mínima de seguridad en invierno o sobre montaña."
-        }
+        },
+        "ideas": [
+          "El altímetro es un metro de costurera que se encoge con el frío: marca más metros de los que mide la cinta real. Por eso en aire frío estás más bajo de lo que dice el altímetro."
+        ]
       },
       {
         "title": "Lado del viento: partes",
@@ -246,12 +284,15 @@
           "Hay dos convenios para marcar el viento. En el **método del viento abajo** (el del manual del CRP-5) la cruz del viento se marca por debajo del punto central, en la dirección hacia la que sopla, y el punto central representa la punta del vector aire. En el **método del viento arriba** (el del E6B) el punto del viento se marca por encima del punto central, hacia el lado del que viene. Los dos dan el mismo resultado; no los mezcles."
         ],
         "figure": "svg:060-computador-viento",
-        "caption": "Lado del viento tipo CRP-5, método del viento abajo, ya resuelto: punto central sobre la TAS, rumbo bajo el índice, cruz del viento sobre el arco de la GS y la línea de deriva, y la derrota frente a esa misma deriva en la escala fija."
+        "caption": "Lado del viento tipo CRP-5, método del viento abajo, ya resuelto: punto central sobre la TAS, rumbo bajo el índice, cruz del viento sobre el arco de la GS y la línea de deriva, y la derrota frente a esa misma deriva en la escala fija.",
+        "ideas": [
+          "El lado del viento es una pizarra con un disco giratorio: el disco sirve para elegir hacia dónde miras, y la regla, para fijar la velocidad. Dibujas el viento una vez y luego solo giras."
+        ]
       },
       {
         "title": "Problema 1: hallar rumbo y GS (conoces derrota, TAS y viento)",
         "text": [
-          "Es el problema de la planificación: has medido la derrota en la carta, tienes el viento previsto y la TAS de crucero, y necesitas el rumbo y la GS para el log. Datos del ejemplo: **derrota 220° verdadera, TAS 100 kt, viento 270/25**."
+          "Hallar el rumbo y la GS a partir de la derrota, la TAS y el viento es el problema de la planificación: has medido la derrota en la carta, tienes el viento previsto y la TAS de crucero, y necesitas el rumbo y la GS para el log. Datos del ejemplo: **derrota 220° verdadera, TAS 100 kt, viento 270/25**."
         ],
         "bullets": [
           "CRP-5 (viento abajo), paso 1: pon 270 bajo el índice y marca la cruz 25 kt por debajo del punto central, sobre la línea central (con el punto central en el arco de 100, la cruz cae en el de 75).",
@@ -272,12 +313,15 @@
         "note": {
           "kind": "tip",
           "text": "Al terminar, convierte el rumbo verdadero en magnético con la variación (y en brújula con el desvío). El computador trabaja con lo que le das: viento verdadero y derrota verdadera dan rumbo verdadero."
-        }
+        },
+        "ideas": [
+          "Es el problema del nadador que quiere llegar a un punto exacto de la otra orilla: sabes dónde quieres llegar (derrota), a qué velocidad nadas (TAS) y cómo es la corriente (viento); te falta saber a dónde apuntar la nariz (rumbo) y cuánto tardarás (GS)."
+        ]
       },
       {
         "title": "Problema 2: hallar derrota y GS (conoces rumbo, TAS y viento)",
         "text": [
-          "Útil para saber adónde te lleva un rumbo, por ejemplo al desviarte o para dibujar una posición estimada. Con el método del viento abajo es el más directo: no hay que tantear."
+          "Hallar la derrota y la GS a partir del rumbo, la TAS y el viento sirve para saber adónde te lleva un rumbo, por ejemplo al desviarte o para dibujar una posición estimada. Con el método del viento abajo es el más directo: no hay que tantear."
         ],
         "bullets": [
           "Marca el viento (CRP-5: cruz por debajo del punto central) y pon el punto central sobre la TAS.",
@@ -289,12 +333,15 @@
             "q": "Rumbo 150° verdadero, TAS 110 kt, viento 200/20. Derrota y GS.",
             "a": "Bajo la cruz: deriva 9° a la izquierda y GS 98 kt. Derrota = 150 − 9 = 141°. Comprobación: viento 50° a la derecha del rumbo → cruzada ≈ 15 kt → deriva ≈ 15 × 60 / 110 ≈ 8°, a la izquierda; de cara ≈ 13 kt → GS ≈ 97 kt."
           }
+        ],
+        "ideas": [
+          "Es el nadador que ha apuntado la nariz a un sitio y quiere saber dónde acabará con la corriente: conoces rumbo y velocidad, y el cálculo te dice adónde te arrastra el río."
         ]
       },
       {
         "title": "Problema 3: hallar el viento (conoces rumbo, TAS, derrota y GS)",
         "text": [
-          "Es el problema del vuelo: has mantenido un rumbo y una TAS conocidos y, con dos puntos fijos, has medido la derrota real y la GS. Datos del ejemplo: **rumbo 075° verdadero, TAS 105 kt, derrota 083°, GS 92 kt**."
+          "Hallar el viento a partir de dos puntos fijos es el problema del vuelo: has mantenido un rumbo y una TAS conocidos y has medido la derrota real y la GS. Datos del ejemplo: **rumbo 075° verdadero, TAS 105 kt, derrota 083°, GS 92 kt**."
         ],
         "bullets": [
           "CRP-5: pon el punto central sobre la TAS (105) y el rumbo (075) bajo el índice.",
@@ -312,6 +359,9 @@
             "q": "TAS 110 kt, GS 95 kt, derrota 090°, rumbo 080°. Viento.",
             "a": "Deriva 10° a la derecha: viento por la izquierda (del norte-nordeste) y con componente de cara (GS < TAS). Computador: unos 035/23. Comprobación: cruzada ≈ 10 × 110 / 60 ≈ 18 kt, de cara ≈ 110 − 95 = 15 kt; módulo ≈ 23 kt a unos 50° a la izquierda de 090°."
           }
+        ],
+        "ideas": [
+          "Es el detective de la corriente: si sabes a dónde apuntaste y dónde terminaste de verdad, puedes deducir cómo era el río que te empujó."
         ]
       },
       {
@@ -324,7 +374,66 @@
           "Combinar viento verdadero con derrota magnética, o dar como magnético el rumbo verdadero que sale del computador.",
           "Leer horas decimales como minutos: 0,4 h son 24 min.",
           "No estimar antes y colocar mal la coma: 24 min, 2,4 h y 240 NM están en el mismo punto de la escala."
+        ],
+        "ideas": [
+          "Casi todos los errores son de «colocación» (dejar un número en el sitio equivocado) o de «lectura» (leer una marca como si valiera otra cosa): revisa dónde está cada cosa antes de girar."
         ]
+      },
+      {
+        "title": "Ejercicios resueltos para repetir a mano",
+        "text": [
+          "Repite estos ejercicios con tu CR3 hasta obtener los mismos resultados dentro de la tolerancia normal de la regla (un 1-2 %, o uno o dos nudos y grados). En cada uno aparece primero la estimación mental y después la colocación en el computador: si tu lectura no se parece a la estimación, has colocado algo mal.",
+          "Los ejercicios 1 a 6 son del lado de cálculo (tiempo, distancia, velocidad, combustible, conversión y TAS) y los 7 a 9 son los tres problemas del lado del viento. Las respuestas del viento están calculadas con trigonometría y redondeadas como las leerías en el computador."
+        ],
+        "examples": [
+          {
+            "q": "Ejercicio 1 (tiempo). Tramo de 63 NM con GS 108 kt. ¿Cuánto tiempo?",
+            "a": "Estimación: 108 kt son 1,8 NM/min; 63 ÷ 1,8 = 35 min. Computador: índice 60 frente a 108 en la exterior; frente a 63 en la exterior lees 35 en la interior. Resultado: 35 min (no 58: 0,58 h serían 35 min, no 58 min)."
+          },
+          {
+            "q": "Ejercicio 2 (distancia). GS 96 kt durante 25 min. ¿Cuántas NM?",
+            "a": "Estimación: 96 kt = 1,6 NM/min; 25 × 1,6 = 40. Computador: índice 60 frente a 96; frente a 25 min en la interior lees 40 en la exterior. Resultado: 40 NM."
+          },
+          {
+            "q": "Ejercicio 3 (velocidad). Recorres 27 NM en 15 min. ¿GS?",
+            "a": "Estimación: 27 NM en un cuarto de hora son 4 × 27 = 108 kt. Computador: pon 27 (exterior) frente a 15 (interior); lee la exterior frente al índice 60: 108 kt."
+          },
+          {
+            "q": "Ejercicio 4 (combustible). Consumo 28 l/h durante 2 h 10 min. ¿Cuántos litros?",
+            "a": "2 h 10 min = 130 min (no 2,10 h ni 2,6 h). Estimación: 2 h × 28 = 56 l, más 10 min (unos 5 l) = 61 l. Computador: índice 60 frente a 28; frente a 130 min lees 60,7. Resultado: unos 61 l."
+          },
+          {
+            "q": "Ejercicio 5 (conversión). 75 l de AVGAS (0,72 kg/l). ¿Cuántos kg?",
+            "a": "Estimación: 75 × 0,7 ≈ 52,5 kg. Resultado: 75 × 0,72 = 54 kg. Error típico: dividir entre 0,72 (104 kg)."
+          },
+          {
+            "q": "Ejercicio 6 (TAS). CAS 120 kt a 3000 ft de altitud de presión en atmósfera estándar. ¿TAS?",
+            "a": "Regla: 2 % × 3 = 6 % de 120 = 7 kt. TAS ≈ 127 kt. El computador (altitud de presión 3 frente a +9 °C, CAS 120 en la interior) da en la exterior unos 125 kt."
+          },
+          {
+            "q": "Ejercicio 7 (problema 1). Derrota 130°, TAS 100 kt, viento 180/20. Rumbo y GS.",
+            "a": "Estimación: el viento llega a 50° por la derecha de la derrota; cruzada ≈ 20 × 0,77 ≈ 15 kt → corrección ≈ 15 × 60 / 100 ≈ 9° a la derecha (hacia el viento); de cara ≈ 20 × 0,64 ≈ 13 kt → GS ≈ 99 − 13 ≈ 86 kt. Computador (viento abajo): viento 180 bajo el índice, cruz 20 kt por debajo del punto central; punto central sobre 100; derrota 130 bajo el índice; tantea hasta que la deriva bajo la cruz (9° izquierda) sea la frente a la que está la derrota. Resultado: rumbo 139°, GS 86 kt."
+          },
+          {
+            "q": "Ejercicio 8 (problema 2). Rumbo 045°, TAS 100 kt, viento 090/20. Derrota y GS.",
+            "a": "Estimación: el viento llega del este, 45° a la derecha del rumbo; cruzada ≈ 14 kt → deriva ≈ 14 × 60 / 100 ≈ 8° a la izquierda; de cara ≈ 14 kt → GS ≈ 86 kt. Computador: cruz del viento y punto central sobre 100, rumbo bajo el índice; lees deriva 8° izquierda y GS 87 kt. Derrota = 045 − 8 = 037° (aprox.; el cálculo exacto da 036°). Resultado: derrota ≈ 036° y GS ≈ 87 kt."
+          },
+          {
+            "q": "Ejercicio 9 (problema 3). Rumbo 270°, TAS 100 kt, derrota 262°, GS 90 kt. ¿Viento?",
+            "a": "Estimación: la deriva es 8° a la izquierda (la derrota está 8° a la izquierda del rumbo), así que el viento llega por la derecha (del norte-noroeste). Cruzada ≈ 8 × 100 / 60 ≈ 13 kt; de cara ≈ 100 − 90 = 10 kt: el viento llega unos 50° a la derecha del rumbo con unos 17 kt. Computador: lees dirección ≈ 320° y velocidad ≈ 17 kt. Resultado: viento ≈ 320/17."
+          }
+        ],
+        "ideas": [
+          "Es como practicar escalas con un instrumento musical: no las tocas para el concierto, sino para que, cuando llegue la pieza, los dedos ya sepan dónde ir. Cada ejercicio es una escala del computador."
+        ]
+      },
+      {
+        "title": "Calculadora: comprueba tus triángulos de viento",
+        "text": [
+          "Comprueba con la calculadora de viento los ejercicios 7 a 9 de la sección anterior. Introduce los datos y compara su resultado con el que obtuviste en el computador: si hay más de dos grados o dos nudos de diferencia, has colocado mal el viento o la TAS."
+        ],
+        "figure": "calc:wind",
+        "caption": "Calculadora del triángulo de velocidades: úsala para comprobar los problemas del computador, no para sustituirlo."
       }
     ],
     "numbers": [
@@ -335,7 +444,10 @@
       "1 NM = 1,852 km = 1,15 SM; 1 SM = 1,609 km; 1 m = 3,281 ft",
       "1 galón US = 3,785 l; 1 galón imperial = 4,546 l; 1 kg = 2,205 lb; AVGAS ≈ 0,72 kg/l",
       "Viento abajo (CRP-5): punto central sobre la TAS, GS y deriva bajo la cruz del viento",
-      "Viento arriba (E6B): punto del viento sobre la TAS, GS bajo el punto central, corrección leída directamente"
+      "Viento arriba (E6B): punto del viento sobre la TAS, GS bajo el punto central, corrección leída directamente",
+      "Receta: 1) estima; 2) coloca; 3) lee; 4) compara; 5) unidades y horas decimales",
+      "33,33 m/s = 120 km/h; 1500 ft = 457 m",
+      "Ejemplos de referencia: 63 NM a GS 108 = 35 min; 28 l/h durante 130 min = 61 l; 75 l AVGAS = 54 kg; derrota 130°, TAS 100, viento 180/20 = rumbo 139°, GS 86"
     ],
     "traps": [
       "La regla circular no tiene coma: estima siempre antes (24, 2,4 y 240 están en el mismo punto).",
@@ -345,7 +457,9 @@
       "El viento se pone bajo el índice por su dirección de procedencia y en grados verdaderos.",
       "En el CRP-5 el rumbo para una derrota se tantea hasta que coincidan las dos derivas; en el E6B la corrección sale directa.",
       "El rumbo que sale del computador es verdadero si los datos lo eran: falta la variación.",
-      "En aire frío la altitud verdadera es menor que la indicada."
+      "En aire frío la altitud verdadera es menor que la indicada.",
+      "Dar por bueno un resultado sin estimarlo antes: la regla no marca la coma.",
+      "Convertir horas decimales a minutos mal: 0,58 h son 35 min, no 58 min."
     ],
     "spain": [
       "AESA presta el computador en el examen (o admite uno propio revisado) y la pantalla incluye calculadora con memoria y regla a escala (guía FOR-EFT-GU01)."
@@ -368,7 +482,88 @@
         "url": "https://www.senasa.es/recursos/adobePDF/2025/pdf/FOR-EFT-GU01_Ed_01_Examenes_teoricos_PART_%20FCL.pdf"
       }
     ],
-    "reviewed": "2026-10-09"
+    "reviewed": "2026-11-23",
+    "course": "Tema 7 · Computador CR3",
+    "outline": [
+      {
+        "title": "Preparar el computador",
+        "items": [
+          "Localizar el índice 60 y el índice 10",
+          "Saber cuánto vale cada marca",
+          "Estimar antes de mover"
+        ]
+      },
+      {
+        "title": "Lado de cálculo",
+        "items": [
+          "Índice 60 frente a GS o consumo horario",
+          "Tiempo, distancia, velocidad y combustible",
+          "Conversiones de unidades",
+          "TAS: altitud de presión y temperatura; CAS en la interior"
+        ]
+      },
+      {
+        "title": "Altitud",
+        "items": [
+          "Altitud verdadera: en frío, más baja que la indicada",
+          "4 % por cada 10 °C de la ISA"
+        ]
+      },
+      {
+        "title": "Lado del viento",
+        "items": [
+          "Problema 1: rumbo y GS",
+          "Problema 2: derrota y GS",
+          "Problema 3: viento",
+          "Viento abajo (CRP-5) y viento arriba (E6B)"
+        ]
+      },
+      {
+        "title": "Comprobación",
+        "items": [
+          "Estimar con la regla del reloj",
+          "Unidades y horas decimales",
+          "Verdadero frente a magnético"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "Índice 60 = una hora: se coloca frente a la velocidad (GS o consumo).",
+      "Regla sin coma: 24, 2,4 y 240 comparten posición; la estimación decide cuál es.",
+      "Horas decimales: multiplica por 60; 0,4 h = 24 min; 0,75 h = 45 min.",
+      "Viento: se mete de dónde viene; el rumbo se corrige hacia el viento.",
+      "Altitud verdadera: del calor al frío, cuidado con el lío (frío = más bajo)."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Para qué sirve el índice 60 de la escala interior y dónde se coloca?",
+        "a": "Representa una hora (60 min): se coloca frente a la GS (o el consumo horario) en la escala exterior."
+      },
+      {
+        "q": "¿Por qué conviene estimar antes de usar la regla circular?",
+        "a": "Porque la regla no tiene coma decimal y la estimación te dice de qué orden de magnitud es el resultado."
+      },
+      {
+        "q": "Tramo de 63 NM con GS 108 kt: ¿cuánto tiempo y cómo lo haces?",
+        "a": "35 min: índice 60 frente a 108 y lees 35 frente a 63 en la exterior."
+      },
+      {
+        "q": "¿Cómo pasas litros de AVGAS a kg?",
+        "a": "Multiplicas por 0,72 (densidad aproximada del AVGAS)."
+      },
+      {
+        "q": "¿Qué datos necesitas para obtener la TAS y cómo se colocan?",
+        "a": "Altitud de presión, temperatura exterior y CAS: altitud frente a temperatura en la ventana y TAS en la exterior frente a la CAS en la interior."
+      },
+      {
+        "q": "Resume los tres problemas del lado del viento.",
+        "a": "1) conocida la derrota, TAS y viento: rumbo y GS; 2) conocidos rumbo, TAS y viento: derrota y GS; 3) conocidos rumbo, TAS, derrota y GS: el viento."
+      },
+      {
+        "q": "En frío, ¿la altitud verdadera es mayor o menor que la indicada?",
+        "a": "Menor: estás más bajo de lo que marca el altímetro."
+      }
+    ]
   },
   "questions": [
     {
@@ -1160,6 +1355,216 @@
       ],
       "ref": "Pooleys CRP-5 Computer Handbook (2017)",
       "url": "https://pilotshop.co.nz/cdn/shop/files/crp-5-booklet-2017.pdf"
+    },
+    {
+      "id": "060.07.037",
+      "type": "calculo",
+      "level": 1,
+      "q": "Un tramo de 63 NM con GS 108 kt se recorre en:",
+      "options": [
+        "35 min",
+        "58 min",
+        "3,5 min",
+        "63 min"
+      ],
+      "correct": 0,
+      "why": "63 × 60 / 108 = 35 min. Con el computador, índice 60 frente a 108 y lectura frente a 63.",
+      "whyNot": [
+        null,
+        "58 sale de leer 0,58 h como minutos.",
+        "3,5 min es un error de coma de la regla circular.",
+        "63 min confunde las NM con los minutos."
+      ],
+      "ref": "Curso Tema 7 (CR3); tiempo = distancia × 60 / GS"
+    },
+    {
+      "id": "060.07.038",
+      "type": "calculo",
+      "level": 1,
+      "q": "Recorres 27 NM en 15 minutos. Tu GS es de:",
+      "options": [
+        "54 kt",
+        "108 kt",
+        "1,8 kt",
+        "405 kt"
+      ],
+      "correct": 1,
+      "why": "En un cuarto de hora recorres 27 NM, así que en una hora 4 × 27 = 108 NM: 108 kt.",
+      "whyNot": [
+        "54 kt corresponde a recorrer 27 NM en media hora.",
+        null,
+        "1,8 es NM por minuto, no nudos.",
+        "405 sale de multiplicar 27 por 15."
+      ],
+      "ref": "Curso Tema 7 (CR3)"
+    },
+    {
+      "id": "060.07.039",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con un consumo de 28 l/h, en 2 h 10 min se gastan aproximadamente:",
+      "options": [
+        "73 l",
+        "36 l",
+        "61 l",
+        "56 l"
+      ],
+      "correct": 2,
+      "why": "2 h 10 min = 130 min. 28 × 130 / 60 ≈ 61 l.",
+      "whyNot": [
+        "73 l resulta de leer 2 h 10 min como 2,6 h.",
+        "36 l resulta de leer 130 min como 1,3 h.",
+        null,
+        "56 l solo tiene en cuenta las dos horas, sin los 10 minutos."
+      ],
+      "ref": "Curso Tema 7 (combustible)"
+    },
+    {
+      "id": "060.07.040",
+      "type": "calculo",
+      "level": 1,
+      "q": "75 l de AVGAS con una densidad de 0,72 kg/l pesan:",
+      "options": [
+        "104 kg",
+        "75 kg",
+        "5,4 kg",
+        "54 kg"
+      ],
+      "correct": 3,
+      "why": "La masa es el volumen por la densidad: 75 × 0,72 = 54 kg.",
+      "whyNot": [
+        "104 kg sale de dividir entre 0,72.",
+        "75 kg no convierte la unidad.",
+        "5,4 kg es un error de coma.",
+        null
+      ],
+      "ref": "Curso Tema 7 (conversiones)"
+    },
+    {
+      "id": "060.07.041",
+      "type": "concepto",
+      "level": 1,
+      "q": "En la escala exterior del computador circular, la marca de «36» puede representar:",
+      "options": [
+        "3,6, 36 o 360, según el orden de magnitud del problema",
+        "siempre 36",
+        "siempre 3,6",
+        "siempre 360"
+      ],
+      "correct": 0,
+      "why": "La escala circular no tiene coma decimal: la posición es la misma para 3,6, 36 y 360. Se decide por una estimación previa.",
+      "whyNot": [
+        null,
+        "El mismo punto sirve para varias potencias de 10.",
+        "No siempre es 3,6.",
+        "No siempre es 360."
+      ],
+      "ref": "Curso Tema 7 (CR3)"
+    },
+    {
+      "id": "060.07.042",
+      "type": "calculo",
+      "level": 3,
+      "q": "Derrota verdadera 130°, TAS 100 kt, viento 180/20. El rumbo y la GS aproximados son:",
+      "options": [
+        "121° y 86 kt",
+        "139° y 86 kt",
+        "139° y 114 kt",
+        "130° y 86 kt"
+      ],
+      "correct": 1,
+      "why": "El viento llega por la derecha de la derrota (50°): cruzada ≈ 15 kt, corrección ≈ 9° hacia el viento (derecha): rumbo 139°. De cara ≈ 13 kt: GS ≈ 86 kt.",
+      "whyNot": [
+        "121° corrige hacia el lado contrario al viento.",
+        null,
+        "114 kt supone viento de cola, pero el viento 180 es de cara para una derrota de 130°.",
+        "130° no aplica la corrección de deriva."
+      ],
+      "ref": "Curso Tema 7 (problema 1, CR3)"
+    },
+    {
+      "id": "060.07.043",
+      "type": "calculo",
+      "level": 3,
+      "q": "Rumbo 270°, TAS 100 kt; entre dos puntos fijos mides derrota 262° y GS 90 kt. El viento es aproximadamente:",
+      "options": [
+        "140/17",
+        "230/17",
+        "320/17",
+        "320/10"
+      ],
+      "correct": 2,
+      "why": "La derrota 8° a la izquierda del rumbo indica un viento que llega por la derecha, y con GS 10 kt menor que la TAS: cruzada ≈ 13 kt y de cara ≈ 10 kt. Viento desde ≈ 320°, ≈ 17 kt.",
+      "whyNot": [
+        "140/17 da la dirección hacia la que sopla, no de la que viene.",
+        "230/17 coloca el viento a la izquierda del rumbo.",
+        null,
+        "10 kt es solo la diferencia TAS − GS; la velocidad real del viento incluye la componente cruzada."
+      ],
+      "ref": "Curso Tema 7 (problema 3, CR3)"
+    },
+    {
+      "id": "060.07.044",
+      "type": "calculo",
+      "level": 2,
+      "q": "CAS 120 kt a 3000 ft de altitud de presión en atmósfera estándar. La TAS es aproximadamente:",
+      "options": [
+        "120 kt",
+        "114 kt",
+        "136 kt",
+        "127 kt"
+      ],
+      "correct": 3,
+      "why": "Con la regla del 2 % por cada 1000 ft: 6 % de 120 = 7 kt, así que la TAS ≈ 127 kt.",
+      "whyNot": [
+        "120 kt ignora la corrección por densidad.",
+        "114 kt resta en lugar de sumar.",
+        "136 kt sale de aplicar un 2 % por cada 100 ft.",
+        null
+      ],
+      "ref": "Curso Tema 7 (TAS)"
+    },
+    {
+      "id": "060.07.045",
+      "type": "calculo",
+      "level": 1,
+      "q": "Un aeródromo está a 1500 ft de elevación. En metros son aproximadamente:",
+      "options": [
+        "457 m",
+        "4920 m",
+        "500 m",
+        "1500 m"
+      ],
+      "correct": 0,
+      "why": "1 ft = 0,3048 m: 1500 × 0,3048 ≈ 457 m.",
+      "whyNot": [
+        null,
+        "4920 m sale de multiplicar por 3,28 en lugar de dividir.",
+        "500 m sale de dividir entre 3 en lugar de entre 3,28.",
+        "1500 m confunde pies y metros."
+      ],
+      "ref": "Curso Tema 7 (conversiones)"
+    },
+    {
+      "id": "060.07.046",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con GS 150 kt, 40 NM se recorren en:",
+      "options": [
+        "27 min",
+        "16 min",
+        "24 min",
+        "37 min"
+      ],
+      "correct": 1,
+      "why": "40 × 60 / 150 = 16 min (150 kt = 2,5 NM/min).",
+      "whyNot": [
+        "27 min sale de leer 0,27 h como minutos.",
+        null,
+        "24 min corresponde a una GS de 100 kt.",
+        "37 min sale de leer 3,75 como 37 min."
+      ],
+      "ref": "Curso Tema 7 (CR3)"
     }
   ],
   "cards": [
@@ -1197,6 +1602,16 @@
       "id": "c.060.07.07",
       "front": "Litros de AVGAS a kilos",
       "back": "Multiplicar por unos 0,72 (kg/l)"
+    },
+    {
+      "id": "c.060.07.08",
+      "front": "Receta del computador",
+      "back": "Estima, coloca, lee, compara con la estimación y comprueba unidades y horas decimales."
+    },
+    {
+      "id": "c.060.07.09",
+      "front": "Leer la regla circular sin coma",
+      "back": "La misma posición vale 3,6, 36 o 360: lo decide la estimación previa."
     }
   ]
 }

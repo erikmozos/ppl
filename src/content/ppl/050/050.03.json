@@ -1,604 +1,1012 @@
 {
- "lesson": {
-  "title": "ISA y altimetría",
-  "summary": "Atmósfera estándar internacional, funcionamiento del altímetro y reglajes QNH, QFE y 1013, altitud y nivel de transición, altitud de presión y de densidad, y errores del altímetro por presión, temperatura y relieve, con cálculos resueltos.",
-  "objectives": [
-   "Recordar los valores ISA y calcular temperaturas ISA y desviaciones",
-   "Usar el altímetro con QNH, QFE y 1013 y aplicar la altitud y el nivel de transición",
-   "Calcular altitud de presión y altitud de densidad",
-   "Corregir los errores por presión y por temperatura y reconocer el error por flujo acelerado sobre el relieve",
-   "Resolver los ejercicios de altimetría del examen"
-  ],
-  "sections": [
-   {
-    "title": "La atmósfera estándar (ISA)",
-    "text": [
-     "La atmósfera real cambia cada día; la **ISA** (International Standard Atmosphere) es un modelo fijo que sirve de referencia común para calibrar altímetros, calcular prestaciones y comparar. Si todos usan la misma referencia, un nivel de vuelo es el mismo para todos los aviones."
+  "lesson": {
+    "id": "050.03",
+    "title": "ISA y altimetría",
+    "course": "Tema 3 · Altimetría",
+    "summary": "Atmósfera estándar ISA, funcionamiento del altímetro y de la subescala (QNH, QFE, 1013), variación horizontal de la presión, altitud, nivel y capa de transición, altitud de presión y errores del altímetro por presión, temperatura y relieve, con cálculos resueltos.",
+    "objectives": [
+      "Dar los valores de la ISA y calcular la temperatura ISA y la desviación",
+      "Explicar qué mide el altímetro y qué indica con QNH, QFE y 1013,25 en la subescala",
+      "Aplicar «de alta a baja, cuidado abajo» y calcular el error por variación de presión",
+      "Manejar altitud, nivel y capa de transición al ascender y al descender",
+      "Calcular altitud de presión, QFE y el error por temperatura, y reconocer el error por flujo acelerado sobre el relieve"
     ],
-    "table": {
-     "caption": "Valores de la ISA",
-     "head": [
-      "Parámetro",
-      "Valor"
-     ],
-     "rows": [
-      [
-       "Temperatura al nivel del mar",
-       "+15 °C"
+    "sections": [
+      {
+        "title": "La atmósfera estándar (ISA)",
+        "text": [
+          "La atmósfera real cambia cada día, así que la **ISA** (*International Standard Atmosphere*) es un modelo fijo que sirve de referencia común para calibrar altímetros, calcular prestaciones y comparar datos. El altímetro está calibrado según la ISA, y por eso solo indica la altitud verdadera cuando la atmósfera real coincide exactamente con ella, algo que prácticamente nunca ocurre.",
+          "Para saber cuánto se aparta el día real del modelo se usa la **desviación ISA**: temperatura real menos temperatura ISA a esa altitud. Si da +10 se dice «ISA + 10» (más cálido que el estándar) y si da −5, «ISA − 5» (más frío)."
+        ],
+        "ideas": [
+          "La ISA es la talla «M» del mundo de la atmósfera: la camiseta a la que todos los aparatos están calibrados. Un día real casi nunca es talla M exacta, y el altímetro, que solo sabe de tallas M, se equivoca un poco cada vez.",
+          "Es como el peso medio de una caja de tornillos: sirve para comparar todas las demás cajas, aunque ninguna pese exactamente eso."
+        ],
+        "table": {
+          "caption": "Valores de la ISA",
+          "head": [
+            "Parámetro",
+            "Valor"
+          ],
+          "rows": [
+            [
+              "Temperatura al nivel del mar",
+              "+15 °C"
+            ],
+            [
+              "Presión al nivel del mar",
+              "1013,25 hPa (29,92 inHg)"
+            ],
+            [
+              "Densidad al nivel del mar",
+              "1,225 kg/m³"
+            ],
+            [
+              "Gradiente de temperatura hasta la tropopausa",
+              "−1,98 °C por 1000 ft (−6,5 °C por km)"
+            ],
+            [
+              "Tropopausa",
+              "36 090 ft (11 km), −56,5 °C"
+            ],
+            [
+              "Entre 36 090 y 65 617 ft",
+              "Isotermo, −56,5 °C"
+            ],
+            [
+              "Velocidad del sonido al nivel del mar",
+              "661 kt (340 m/s)"
+            ]
+          ],
+          "src": "OACI Doc 7488"
+        },
+        "formulas": [
+          {
+            "f": "T ISA (°C) = 15 − 2 × (altitud en miles de ft)",
+            "note": "Válida hasta 36 090 ft, con 2 °C por 1000 ft como aproximación."
+          },
+          {
+            "f": "Desviación ISA = temperatura real − T ISA",
+            "note": "Se expresa como ISA + 10, ISA − 5, etc."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Temperatura ISA a 8000 ft.",
+            "a": "15 − 2 × 8 = −1 °C."
+          },
+          {
+            "q": "A 8000 ft mides +9 °C. ¿Desviación ISA?",
+            "a": "9 − (−1) = +10: ISA + 10."
+          }
+        ]
+      },
+      {
+        "title": "El altímetro (The altimeter)",
+        "text": [
+          "El altímetro es un **barómetro aneroide** graduado en pies: una cápsula metálica casi vacía se expande o se contrae con la presión estática, y un mecanismo mueve la aguja sobre una escala. Como la presión baja con la altura, puede decirte a qué distancia vertical estás de un nivel de referencia.",
+          "La clave es esa palabra: **referencia**. El altímetro solo mide la separación vertical respecto a un **datum de presión** (un valor de presión que tú le dices). No corrige por sí mismo ni la temperatura, ni la humedad, ni las diferencias entre la atmósfera real y la estándar: de eso tienes que encargarte tú. Y no confundas el altímetro con el **radioaltímetro**, que mide la altura sobre el terreno o el agua que hay justo debajo con ondas de radio, no la altitud sobre el nivel del mar."
+        ],
+        "ideas": [
+          "El altímetro es una regla que solo sabe medir distancias desde el punto donde tú pongas el cero. Si pones mal el cero, mide perfecto... desde el sitio equivocado.",
+          "Es como una balanza de cocina que hay que tarar: si no la pones a cero con el cuenco vacío, todo lo que pesas sale mal por la misma cantidad."
+        ]
+      },
+      {
+        "title": "Ajuste de la subescala: QNH, QFE y 1013 (Kollsman window)",
+        "text": [
+          "La **subescala** (ventanilla Kollsman) es la ventanilla de la esfera donde seleccionas el valor de presión de referencia, en **hPa, mb o inHg**: ese valor es la presión que el altímetro considera equivalente a **cero pies**. Cambiar el ajuste desplaza la escala completa, y lo que la lectura significa depende de lo que hayas puesto.",
+          "Con el **QNH** (presión reducida al nivel del mar según la atmósfera estándar) el altímetro indica la **altitud**, es decir, la elevación sobre el nivel medio del mar, y en tierra marca la elevación del aeródromo. Con el **QFE** (la presión del aeródromo, referida a su elevación) indica la **altura** sobre el aeródromo y marca aproximadamente cero en la pista. Con **1013,25 hPa** (29,92 inHg) indica la **altitud de presión**, que se lee como **nivel de vuelo** (FL): FL065 es 6500 ft con 1013 puesto. El QNH lo da ATC o el ATIS; el QFF, parecido al QNH pero con la temperatura real, es para los mapas y no se pone en el altímetro."
+        ],
+        "ideas": [
+          "El QNH es el cero «del mar»: con él, el altímetro te dice cuánto sobresales del nivel del mar. El QFE es el cero «de la pista»: te dice cuánto sobresales de ella. El 1013 es el cero «de todos»: el mismo para todo el mundo.",
+          "Es como medir tu altura con tres referencias distintas: descalzo en el suelo de casa, subido a una silla, o con respecto al nivel de la calle. Cada una te da un número válido para su cero."
+        ],
+        "bullets": [
+          "Altitud (QNH): sobre el nivel del mar; la que se usa por debajo de la altitud de transición.",
+          "Altura (QFE): sobre el aeródromo; en España se usa poco.",
+          "Nivel de vuelo (1013,25): se usa por encima del nivel de transición."
+        ]
+      },
+      {
+        "title": "Variación horizontal de la presión: «de alta a baja, cuidado abajo»",
+        "text": [
+          "Si vuelas con una altitud indicada constante y con un reglaje fijo, **tu altitud verdadera cambia** cuando la presión cambia de un sitio a otro. El altímetro sigue una superficie de presión constante, y esa superficie sube y baja sobre el mapa. Con isobaras horizontales (presión igual a lo largo de la ruta) no pasa nada: altitud indicada y verdadera coinciden. Pero si la presión es menor en el destino, las isobaras descienden y, aunque el altímetro marque lo mismo, **en realidad estás bajando** respecto al mar y al terreno.",
+          "De ahí las dos reglas del curso: **«From high to low, look out below»** (de alta a baja presión, cuidado, estás más bajo de lo que marca) y **«From low to high, clear the sky»** (de baja a alta presión, estás más alto de lo que marca). La primera es la peligrosa, porque te acerca al terreno sin que el instrumento lo diga; la segunda es la cómoda, porque te deja un margen extra. La corrección es sencilla: al llegar al destino, pon el QNH local y el altímetro vuelve a coincidir con la altitud verdadera."
+        ],
+        "ideas": [
+          "Imagina un barco sobre las olas: el altímetro no mide cuánto sube la ola, mide siempre «a la misma presión». Si la superficie de presión se hunde en una zona de bajas, el avión que la sigue se hunde con ella aunque la aguja no se mueva.",
+          "Es como conducir con el cuentakilómetros desajustado: marca bien en el taller, pero al cambiar de coche (de sitio) el error aparece sin avisar."
+        ],
+        "figure": "svg:050-altimetro-presion",
+        "caption": "Altitud indicada constante hacia una presión menor: la altitud verdadera disminuye.",
+        "examples": [
+          {
+            "q": "Sales con QNH 1020 y llevas 3000 ft indicados constantes hasta un destino con QNH 1005, sin reajustar. ¿Qué altitud verdadera tendrás?",
+            "a": "Diferencia de presión: 15 hPa × 27 ft ≈ 405 ft. Vas hacia presión menor: estás ≈ 405 ft más bajo, es decir, unos 2600 ft."
+          }
+        ]
+      },
+      {
+        "title": "Por qué hay que ajustar y colacionar el QNH",
+        "text": [
+          "Mantener bien puesta la subescala es una obligación de seguridad: cuando el controlador te da un QNH, **debes colacionarlo** (repetirlo) y ponerlo. Así el altímetro indica correctamente la altitud respecto al nivel de referencia, todas las aeronaves de la zona usan la misma referencia y se mantiene la separación vertical entre ellas.",
+          "La mayoría de los servicios de tránsito aéreo civiles trabajan con **QNH**, pero hay diferencias por países. En Rusia, por ejemplo, algunas altitudes se dan en metros y los servicios ATS pueden dar QFE, que el piloto convierte a QNH."
+        ],
+        "ideas": [
+          "Es como sincronizar relojes antes de una operación: aunque cada reloj funcione bien, si no están a la misma hora, la coordinación falla. El QNH es la hora que sincroniza todos los altímetros."
+        ],
+        "note": {
+          "kind": "tip",
+          "text": "Si dudas del QNH que te han dado, pídelo otra vez: pedir una repetición de un dato de altimetría nunca está de más."
+        }
+      },
+      {
+        "title": "El ajuste estándar 1013 y la capa de transición (Transition layer)",
+        "text": [
+          "Por debajo de la **altitud de transición** (*transition altitude*, TA) se vuela con el **QNH** del aeródromo y en **altitudes**, para saber cuánto margen hay sobre el terreno. Por encima, **todos los aviones ponen 1013,25 hPa** y vuelan en **niveles de vuelo** (FL), de modo que ATC y todos los aviones usan la misma referencia y mantienen la separación sin importar las variaciones locales de presión.",
+          "La TA es fija para un aeródromo concreto, pero no es única para todos: en zonas montañosas suele ser más alta y en zonas bajas, más baja, y hay que comprobarla antes de operar en un aeródromo desconocido (en Estados Unidos es de 18 000 ft). El **nivel de transición** (*transition level*, TL) es el nivel de vuelo utilizable más bajo por encima de la TA, y **no es fijo**: depende de la presión del día. Cuando la presión es baja, las superficies de presión están más cerca del suelo, así que hay que subir el TL para que quede un margen vertical suficiente (de unos 1000 ft) entre un avión a la TA y otro al TL. La zona entre la TA y el TL es la **capa de transición** (*transition layer*).",
+          "El orden de operaciones es: **al ascender**, pasas a 1013 al cruzar la altitud de transición; **al descender**, pasas a QNH al cruzar el nivel de transición. En la capa de transición se vuela en altitudes al ascender y en niveles al descender. Una regla para recordarlo: *se sube con la altitud y se baja con el nivel*."
+        ],
+        "ideas": [
+          "Es un edificio con un rellano común: por debajo del rellano cada vecino usa su propio ascensor (QNH), y por encima todos comparten el mismo (1013). El rellano (capa de transición) es el único sitio donde cambias.",
+          "La TA es la planta del rellano, que no se mueve. El TL es la marca de «primer piso utilizable por encima», que sube o baja según cómo esté de hinchado el edificio (la presión)."
+        ],
+        "figure": "svg:050-capa-transicion",
+        "caption": "Altitud de transición, capa de transición y nivel de transición.",
+        "note": {
+          "kind": "es",
+          "text": "En España la altitud de transición no es única: se publica para cada aeródromo en el AIP (parte AD). Consulta la carta VAC o el AIP de cada aeropuerto."
+        },
+        "verify": true
+      },
+      {
+        "title": "Calculadora de altimetría",
+        "text": [
+          "Introduce QNH, elevación y temperatura y la calculadora te da la altitud de presión, la altitud de densidad y la lectura del altímetro. Úsala para comprobar los ejemplos de abajo, después de intentarlos a mano."
+        ],
+        "figure": "calc:altimetry"
+      },
+      {
+        "title": "Altitud de presión y QFE: cálculos",
+        "text": [
+          "La **altitud de presión** es la que marca el altímetro con 1013,25 puesto. Con QNH distinto de 1013, se calcula con la elevación y la diferencia entre 1013 y el QNH a razón de 27 ft por hPa: **altitud de presión = elevación + (1013 − QNH) × 27**. Si el QNH es menor que 1013, la altitud de presión es mayor que la elevación (la superficie de presión estándar queda por encima).",
+          "A partir de la altitud de presión se obtiene la **altitud de densidad** corrigiendo por temperatura (**+120 ft por cada °C por encima de la ISA**), tal como se vio en 050.02. Y si necesitas el **QFE** (presión en el aeródromo), se resta al QNH lo que pesa el aire entre el mar y la elevación: **QFE ≈ QNH − elevación / 27**."
+        ],
+        "ideas": [
+          "Es un ascensor: para pasar de la presión del mar a la del aeródromo restas un hPa por cada 27 ft que subes. Y a la inversa, sumas un hPa por cada 27 ft que bajas."
+        ],
+        "formulas": [
+          {
+            "f": "Altitud de presión = elevación + (1013 − QNH) × 27",
+            "note": "En ft, con el QNH en hPa."
+          },
+          {
+            "f": "QFE ≈ QNH − elevación / 27",
+            "note": "En hPa, con la elevación en ft."
+          },
+          {
+            "f": "Altitud de densidad ≈ altitud de presión + 120 × (OAT − T ISA)",
+            "note": "Fórmula aproximada, detalle en 050.02."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Aeródromo a 2000 ft con QNH 1003. ¿Altitud de presión?",
+            "a": "(1013 − 1003) × 27 = 270 ft; 2000 + 270 = 2270 ft."
+          },
+          {
+            "q": "Con altitud de presión 2300 ft y OAT +30 °C, ¿altitud de densidad?",
+            "a": "ISA a 2300 ft = 15 − 2 × 2,3 = 10,4 °C. Desviación = 30 − 10,4 = +19,6. 2300 + 120 × 19,6 ≈ 4650 ft."
+          },
+          {
+            "q": "Aeródromo a 810 ft y QNH 1013. ¿QFE?",
+            "a": "810 / 27 = 30 hPa; QFE = 1013 − 30 = 983 hPa."
+          },
+          {
+            "q": "Aterrizas en un aeródromo a nivel del mar con el altímetro aún en 1013, pero el QNH real es 1022. ¿Qué marcará en tierra?",
+            "a": "Pones una referencia 9 hPa menor que la real: el altímetro subindica, unos 9 × 27 ≈ 240 ft por debajo de cero (aproximadamente −240 ft). El material del curso da en este ejemplo unos 550 ft; con 27 ft por hPa la cuenta sale en unos 240 ft y con signo negativo, así que conviene comentarlo con el instructor."
+          }
+        ],
+        "verify": true
+      },
+      {
+        "title": "Error por temperatura (Temperature error)",
+        "text": [
+          "El altímetro supone una atmósfera ISA, y **ningún ajuste de la subescala compensa la temperatura**: la corrección la calcula y la aplica el piloto. Cuando el aire está **más frío** que la ISA, la columna de aire se contrae y las superficies de presión se acercan entre sí, así que la altitud verdadera es **inferior** a la indicada. Con aire **más cálido**, la columna se dilata y la altitud verdadera es **superior**.",
+          "Por eso, volando con altitud indicada constante de una zona de aire cálido a otra de aire frío, te vas acercando al terreno sin que el instrumento lo diga: **«From hot to cold, look out below»**. A la inversa, de frío a cálido, estás más alto de lo que marca: **«From cold to hot, you are higher than you thought»**. La corrección aproximada es el **4 % de la altitud por cada 10 °C de desviación ISA**, es decir, 4 ft por °C y por cada 1000 ft de altura. En condiciones normales el error solo por temperatura no suele ser grande, pero en aire muy frío y cerca del terreno sí puede serlo.",
+          "Como en el caso de la presión, el error de temperatura se acumula con el de presión, y los dos van en la misma dirección en un día frío con presión baja: estás más bajo de lo que marca por las dos causas a la vez."
+        ],
+        "ideas": [
+          "El aire frío es una pila de cojines aplastados: cada cojín (superficie de presión) está más cerca del siguiente, así que para subir lo mismo que marca el altímetro tienes que recorrer menos altura real.",
+          "Es como si la regla del altímetro se encogiera con el frío: sigue marcando 1000 en el último metro, pero mide menos."
+        ],
+        "formulas": [
+          {
+            "f": "Corrección ≈ 4 × desviación ISA (°C) × altitud (miles de ft)",
+            "note": "Corrección en ft; resta si el aire es más frío que la ISA."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Altímetro con 5000 ft sobre una capa 20 °C más fría que la ISA. ¿Altitud verdadera?",
+            "a": "Corrección = 4 × 20 × 5 = 400 ft: estás a unos 4600 ft (más bajo que lo indicado)."
+          },
+          {
+            "q": "Indicas 6000 ft sobre una capa ISA − 15. ¿Altitud verdadera?",
+            "a": "4 × 15 × 6 = 360 ft menos: 5640 ft."
+          }
+        ]
+      },
+      {
+        "title": "Error por flujo acelerado sobre el relieve y otros errores",
+        "text": [
+          "Cuando un viento fuerte cruza un valle estrecho o una cresta de montaña, el aire se acelera por el **efecto Venturi** y la **presión estática baja**. El altímetro cree que has subido y **sobreindica**: la altitud verdadera es inferior a la indicada, justo donde menos margen tienes sobre el relieve. El efecto es mayor con viento fuerte (por encima de unos 30 kt) y con condiciones estables.",
+          "Un altímetro aneroide solo da la altitud verdadera si la atmósfera es ISA. Cuando no lo es, tiene errores por la **temperatura**, la **presión** y la **distribución vertical de la presión**, a los que se suman el error de instrumento y el de posición de la toma estática."
+        ],
+        "ideas": [
+          "Es como el tubo de una manguera apretado con el dedo: el agua sale más rápido y con menos presión lateral. El aire que se aprieta entre dos montañas hace lo mismo con la toma estática del avión."
+        ],
+        "note": {
+          "kind": "warn",
+          "text": "Aire frío, presión baja y viento fuerte sobre montaña: los tres errores van en el mismo sentido (estás más bajo de lo que marca). Con mala visibilidad sobre relieve, eso mata."
+        }
+      }
+    ],
+    "outline": [
+      {
+        "title": "ISA",
+        "items": [
+          "15 °C, 1013,25 hPa, 1,225 kg/m³",
+          "−1,98 °C por 1000 ft; tropopausa 36 090 ft, −56,5 °C",
+          "Desviación ISA = real − ISA"
+        ]
+      },
+      {
+        "title": "Altímetro y subescala",
+        "items": [
+          "Aneroide: mide presión respecto a un datum",
+          "No corrige temperatura, humedad ni atmósfera real",
+          "QNH: altitud; QFE: altura; 1013: nivel de vuelo; QFF: mapas"
+        ]
+      },
+      {
+        "title": "Error por presión",
+        "items": [
+          "De alta a baja, cuidado abajo",
+          "De baja a alta, estás más alto",
+          "1 hPa ≈ 27 ft"
+        ]
+      },
+      {
+        "title": "Transición",
+        "items": [
+          "TA: fija por aeródromo; 1013 al subir",
+          "TL: depende del QNH; QNH al bajar",
+          "Capa de transición entre ambos"
+        ]
+      },
+      {
+        "title": "Error por temperatura y relieve",
+        "items": [
+          "4 % por 10 °C o 4 ft por °C y 1000 ft",
+          "De cálido a frío, estás más bajo",
+          "Venturi sobre relieve: altímetro sobreindica"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "«From High to Low, look out below»; «From Low to High, clear the sky»; «From hot to cold, look out below».",
+      "Altitud de presión = elevación + (1013 − QNH) × 27: «1013 menos QNH, por 27».",
+      "TA fija (Altitud); TL variable (Level): «la A es fija, la L es flotante».",
+      "Se sube con la altitud (ajusta 1013 en la TA), se baja con el nivel (ajusta QNH en el TL).",
+      "4-10-4: 4 % por cada 10 °C; 4 ft por °C y 1000 ft."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Qué mide realmente un altímetro y qué no corrige?",
+        "a": "Mide presión y la traduce en separación vertical respecto a un datum que tú eliges. No corrige temperatura, humedad ni las diferencias entre la atmósfera real y la ISA."
+      },
+      {
+        "q": "¿Qué indica el altímetro en tierra con QNH, con QFE y con 1013 puestos?",
+        "a": "Con QNH, la elevación del aeródromo; con QFE, aproximadamente cero; con 1013, la altitud de presión del aeródromo."
+      },
+      {
+        "q": "Si vuelas hacia una zona de menor presión sin reajustar, ¿qué le pasa a tu altitud verdadera y por qué?",
+        "a": "Disminuye: el altímetro sigue una superficie de presión constante, que desciende hacia la baja, así que estás más bajo de lo que marca."
+      },
+      {
+        "q": "Explica por qué por encima de la TA todos usan 1013.",
+        "a": "Para tener una referencia común independiente de la presión local y así mantener la separación vertical; a esa altura no importa la distancia al terreno."
+      },
+      {
+        "q": "¿Por qué el nivel de transición cambia con la presión y la altitud de transición no?",
+        "a": "La TA es un valor publicado para el aeródromo. El TL es un nivel de presión estándar, y con presión baja hay que subirlo para mantener el margen vertical respecto a la TA."
+      },
+      {
+        "q": "¿Por qué estás más bajo de lo indicado al ir de aire cálido a aire frío?",
+        "a": "Porque en aire frío las superficies de presión están más juntas; con la misma altitud indicada, la altura real es menor."
+      },
+      {
+        "q": "¿Cómo corriges aproximadamente el error por temperatura?",
+        "a": "Restas el 4 % de la altitud por cada 10 °C por debajo de la ISA, es decir 4 ft por °C y por 1000 ft."
+      },
+      {
+        "q": "¿Qué ocurre con el altímetro cuando un viento fuerte cruza una cresta?",
+        "a": "El aire se acelera, la presión estática baja y el altímetro sobreindica: estás más bajo de lo que marca."
+      }
+    ],
+    "numbers": [
+      "ISA: 15 °C, 1013,25 hPa, 1,225 kg/m³, −1,98 °C por 1000 ft hasta 36 090 ft (−56,5 °C)",
+      "T ISA = 15 − 2 × (miles de ft)",
+      "Altitud de presión = elevación + (1013 − QNH) × 27",
+      "QFE = QNH − elevación / 27",
+      "Corrección por temperatura: 4 % por cada 10 °C; 4 ft por °C y por 1000 ft",
+      "Ascenso: 1013 al cruzar la altitud de transición; descenso: QNH al cruzar el nivel de transición",
+      "Altitud de densidad ≈ altitud de presión + 120 × (OAT − ISA)"
+    ],
+    "traps": [
+      "De alta a baja presión sin reajustar: estás más bajo de lo que marca.",
+      "En aire más frío que la ISA, la altitud real es inferior a la indicada.",
+      "Con QNH menor de 1013 la altitud de presión es mayor que la elevación.",
+      "El nivel de transición cambia con el QNH; la altitud de transición es fija por aeródromo.",
+      "El radioaltímetro mide la altura sobre el terreno, no la altitud sobre el nivel del mar.",
+      "Sobre una cresta con viento fuerte, el altímetro sobreindica."
+    ],
+    "sources": [
+      {
+        "title": "Curso DreamAir (ATPLENJOY), Meteorología, tema 3: altimetría"
+      },
+      {
+        "title": "OACI, Doc 7488 (atmósfera tipo) y Doc 8168 (PANS-OPS)",
+        "url": "https://www.icao.int/"
+      },
+      {
+        "title": "AIP España (ENAIRE), AD: altitud de transición por aeródromo",
+        "url": "https://aip.enaire.es/"
+      },
+      {
+        "title": "FAA-H-8083-25, Pilot's Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/pilot-handbook-aeronautical-knowledge"
+      }
+    ],
+    "reviewed": "2026-11-23"
+  },
+  "questions": [
+    {
+      "id": "050.03.001",
+      "type": "regla",
+      "level": 1,
+      "q": "La atmósfera estándar al nivel del mar tiene:",
+      "options": [
+        "15 °C y 1013,25 hPa",
+        "10 °C y 1013,25 hPa",
+        "20 °C y 1013 hPa",
+        "15 °C y 1000 hPa"
       ],
-      [
-       "Presión al nivel del mar",
-       "1013,25 hPa (29,92 inHg)"
+      "correct": 0,
+      "why": "ISA: +15 °C, 1013,25 hPa, 1,225 kg/m³.",
+      "whyNot": [
+        null,
+        "La temperatura ISA no es 10 °C.",
+        "La temperatura ISA es 15 °C.",
+        "La presión ISA no es 1000 hPa."
       ],
-      [
-       "Densidad al nivel del mar",
-       "1,225 kg/m³"
-      ],
-      [
-       "Gradiente de temperatura hasta la tropopausa",
-       "−1,98 °C por 1000 ft (−6,5 °C por km)"
-      ],
-      [
-       "Tropopausa",
-       "36 090 ft (11 km), −56,5 °C"
-      ],
-      [
-       "Entre 36 090 y 65 617 ft",
-       "Isotermo, −56,5 °C"
-      ],
-      [
-       "Velocidad del sonido al nivel del mar",
-       "661 kt (340 m/s)"
-      ]
-     ],
-     "src": "OACI Doc 7488"
+      "ref": "OACI Doc 7488"
     },
-    "formulas": [
-     {
-      "f": "T ISA (°C) = 15 − 2 × (altitud en miles de ft)",
-      "note": "Válida hasta 36 090 ft con 2 °C por 1000 ft como aproximación."
-     },
-     {
-      "f": "Desviación ISA = temperatura real − temperatura ISA",
-      "note": "Se expresa como ISA + 10, ISA − 5, etc."
-     }
-    ],
-    "examples": [
-     {
-      "q": "Temperatura ISA a 8000 ft.",
-      "a": "Cada 1000 ft baja unos 2 °C: 15 − 2 × 8 = −1 °C."
-     },
-     {
-      "q": "A 8000 ft mides +9 °C. ¿Desviación ISA?",
-      "a": "9 − (−1) = +10: ISA + 10."
-     }
-    ]
-   },
-   {
-    "title": "El altímetro y sus reglajes",
-    "text": [
-     "El altímetro es un **barómetro aneroide** graduado en pies: mide la **presión estática** y la convierte en altitud según la ISA. Una **subescala** (ventanilla Kollsman) permite elegir la presión de referencia, y con ella cambia lo que significa la lectura.",
-     "Con **QNH** (presión reducida al nivel del mar según la atmósfera estándar) indica la **altitud**, que es la elevación sobre el nivel del mar; en el aeródromo, indica su elevación. Con **QFE** (presión del aeródromo) indica la **altura** sobre el aeródromo y marca 0 en la pista. Con **1013,25 hPa** indica la **altitud de presión**, y se lee como **nivel de vuelo** (FL): FL065 es 6500 ft con 1013,25 puesto."
-    ],
-    "bullets": [
-     "Altitud (QNH): sobre el nivel del mar; la que se usa por debajo de la altitud de transición.",
-     "Altura (QFE): sobre el aeródromo; poco usada en España.",
-     "Nivel de vuelo (1013,25): se usa por encima del nivel de transición."
-    ]
-   },
-   {
-    "title": "Altitud y nivel de transición",
-    "text": [
-     "Para que todos vuelen con el mismo reglaje, hay una **altitud de transición** (TA), por encima de la cual se vuela con 1013,25 y se habla de niveles de vuelo, y un **nivel de transición** (TL), el primer nivel de vuelo utilizable por encima de ella. Entre ambos hay una **capa de transición**. Al **ascender**, se calibra 1013,25 al cruzar la **altitud de transición**; al **descender**, se calibra QNH al cruzar el **nivel de transición** y pasa a indicarse altitud. La regla sirve para recordar el orden: se sube con la altitud y se baja con el nivel.",
-     "El nivel de transición depende del QNH del día: con presión baja, el nivel de transición sube, para mantener la separación vertical. Lo comunica el ATC o el ATIS."
-    ],
-    "note": {
-     "kind": "es",
-     "text": "En España la altitud de transición no es única: se publica para cada aeródromo en el AIP (parte AD). Consulta la carta VAC o la AIP de cada aeropuerto."
+    {
+      "id": "050.03.002",
+      "type": "calculo",
+      "level": 1,
+      "q": "La temperatura ISA a 8000 ft es:",
+      "options": [
+        "−1 °C",
+        "−5 °C",
+        "+7 °C",
+        "+1 °C"
+      ],
+      "correct": 0,
+      "why": "Cada 1000 ft baja unos 2 °C: 15 − 2 × 8 = −1 °C.",
+      "whyNot": [
+        null,
+        "Resulta de usar 2,5 °C por 1000 ft.",
+        "Resulta de restar 8 sin multiplicar por 2.",
+        "Resulta de restar 14 en lugar de 16."
+      ],
+      "ref": "OACI Doc 7488"
+    },
+    {
+      "id": "050.03.003",
+      "type": "calculo",
+      "level": 2,
+      "q": "A 8000 ft la temperatura exterior es +9 °C. La desviación ISA es:",
+      "options": [
+        "ISA + 24",
+        "ISA + 9",
+        "ISA + 10",
+        "ISA − 10"
+      ],
+      "correct": 2,
+      "why": "La ISA a 8000 ft es −1 °C: 9 − (−1) = +10.",
+      "whyNot": [
+        "Suma 15 °C en lugar de restar la temperatura ISA.",
+        "Es la temperatura, no la desviación.",
+        null,
+        "El signo es el contrario."
+      ],
+      "ref": "OACI Doc 7488"
+    },
+    {
+      "id": "050.03.004",
+      "type": "concepto",
+      "level": 1,
+      "q": "Con el QNH puesto en la subescala, el altímetro indica:",
+      "options": [
+        "La altitud de densidad",
+        "La altitud sobre el nivel del mar",
+        "La altura sobre el aeródromo",
+        "El nivel de vuelo"
+      ],
+      "correct": 1,
+      "why": "Con QNH el altímetro marca la elevación del aeródromo cuando estás en él.",
+      "whyNot": [
+        "No se indica con ese reglaje.",
+        null,
+        "Eso ocurre con QFE.",
+        "Eso ocurre con 1013,25."
+      ],
+      "ref": "OACI Doc 8168"
+    },
+    {
+      "id": "050.03.005",
+      "type": "concepto",
+      "level": 1,
+      "q": "Al ascender, se calibra 1013,25 hPa cuando se cruza:",
+      "options": [
+        "El nivel de transición",
+        "La altitud de transición",
+        "La altura de circuito",
+        "1000 ft AGL"
+      ],
+      "correct": 1,
+      "why": "Subiendo se cambia a 1013,25 en la altitud de transición; bajando, a QNH en el nivel de transición.",
+      "whyNot": [
+        "Se cruza al descender.",
+        null,
+        "No es una referencia para el reglaje.",
+        "No es una referencia para el reglaje."
+      ],
+      "ref": "SERA.5010; OACI Doc 8168"
+    },
+    {
+      "id": "050.03.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "Al descender, se pone el QNH cuando se cruza:",
+      "options": [
+        "La altura de decisión",
+        "El nivel de transición",
+        "La altitud de transición",
+        "La altitud mínima de sector"
+      ],
+      "correct": 1,
+      "why": "Al bajar se pasa de niveles de vuelo a altitudes en el nivel de transición.",
+      "whyNot": [
+        "No tiene relación.",
+        null,
+        "Se usa al ascender.",
+        "No tiene relación."
+      ],
+      "ref": "SERA.5010; OACI Doc 8168"
+    },
+    {
+      "id": "050.03.007",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con 1013 puesto y marcando 3000 ft, el QNH real es 1003. La altitud real es aproximadamente:",
+      "options": [
+        "2970 ft",
+        "3000 ft",
+        "3270 ft",
+        "2730 ft"
+      ],
+      "correct": 3,
+      "why": "Con presión menor que la de la subescala, el altímetro sobreindica: 10 hPa × 27 ft = 270 ft menos.",
+      "whyNot": [
+        "Resulta de usar 3 ft por hPa.",
+        "El error de presión no es nulo.",
+        "Suma en vez de restar.",
+        null
+      ],
+      "ref": "FAA PHAK cap. 8"
+    },
+    {
+      "id": "050.03.008",
+      "type": "concepto",
+      "level": 1,
+      "q": "«De alta a baja, cuidado abajo» significa que si vuelas hacia una presión menor sin reajustar:",
+      "options": [
+        "Estás más bajo de lo que indica el altímetro",
+        "Estás más alto",
+        "No cambia nada",
+        "El altímetro se bloquea"
+      ],
+      "correct": 0,
+      "why": "Al bajar la presión el altímetro sobreindica: la altitud real es inferior.",
+      "whyNot": [
+        null,
+        "Es el error contrario.",
+        "Hay error de presión.",
+        "El altímetro no se bloquea."
+      ],
+      "ref": "FAA PHAK cap. 8"
+    },
+    {
+      "id": "050.03.009",
+      "type": "calculo",
+      "level": 2,
+      "q": "Aeródromo a 2000 ft y QNH 1003. Con 27 ft por hPa, la altitud de presión es:",
+      "options": [
+        "2270 ft",
+        "2500 ft",
+        "2100 ft",
+        "1730 ft"
+      ],
+      "correct": 0,
+      "why": "(1013 − 1003) × 27 = 270; 2000 + 270 = 2270 ft.",
+      "whyNot": [
+        null,
+        "Es una estimación sin base.",
+        "Usa 10 ft por hPa.",
+        "Resta la corrección en vez de sumarla."
+      ],
+      "ref": "FAA PHAK cap. 8"
+    },
+    {
+      "id": "050.03.010",
+      "type": "calculo",
+      "level": 3,
+      "q": "Altitud de presión 2300 ft con OAT +30 °C. La altitud de densidad es aproximadamente:",
+      "options": [
+        "2300 ft",
+        "4650 ft",
+        "3500 ft",
+        "−50 ft"
+      ],
+      "correct": 1,
+      "why": "ISA a 2300 ft: 10,4 °C; desviación +19,6; 2300 + 120 × 19,6 ≈ 4650 ft.",
+      "whyNot": [
+        "No aplica la corrección por temperatura.",
+        null,
+        "Usa una desviación de solo 10 °C en lugar de 19,6 °C.",
+        "Resta la corrección en vez de sumarla."
+      ],
+      "ref": "FAA PHAK cap. 11"
+    },
+    {
+      "id": "050.03.011",
+      "type": "calculo",
+      "level": 3,
+      "q": "Altímetro marcando 5000 ft sobre una capa 20 °C más fría que la ISA. La altitud verdadera es aproximadamente:",
+      "options": [
+        "5400 ft",
+        "4000 ft",
+        "4600 ft",
+        "5000 ft"
+      ],
+      "correct": 2,
+      "why": "Corrección = 4 ft × 20 × 5 = 400 ft; en aire frío se resta.",
+      "whyNot": [
+        "Es el signo contrario: el aire frío da una altitud real inferior.",
+        "Resulta de restar demasiado.",
+        null,
+        "Hay error de temperatura."
+      ],
+      "ref": "FAA PHAK cap. 8"
+    },
+    {
+      "id": "050.03.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "En una atmósfera más fría que la ISA, el altímetro:",
+      "options": [
+        "Indica correctamente",
+        "Subindica: la altitud real es mayor",
+        "Se bloquea",
+        "Sobreindica: la altitud real es menor"
+      ],
+      "correct": 3,
+      "why": "En aire frío las superficies de presión están más cerca del suelo: estás más bajo de lo que marca.",
+      "whyNot": [
+        "Hay un error por temperatura.",
+        "Ocurre en aire más cálido.",
+        "No se bloquea por la temperatura.",
+        null
+      ],
+      "ref": "FAA PHAK cap. 8"
+    },
+    {
+      "id": "050.03.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un viento fuerte que cruza una cresta acelera el aire y baja la presión estática. El altímetro:",
+      "options": [
+        "No cambia",
+        "Indica más altitud de la real",
+        "Indica menos altitud de la real",
+        "Se bloquea"
+      ],
+      "correct": 1,
+      "why": "Con menos presión estática el altímetro «cree» que estás más alto: estás más bajo de lo que marca.",
+      "whyNot": [
+        "Sí se ve afectado.",
+        null,
+        "Es el error contrario.",
+        "No se bloquea."
+      ],
+      "ref": "FAA PHAK cap. 8"
+    },
+    {
+      "id": "050.03.014",
+      "type": "calculo",
+      "level": 2,
+      "q": "Aeródromo a 810 ft con QNH 1013. Con 27 ft por hPa, el QFE es:",
+      "options": [
+        "953 hPa",
+        "1043 hPa",
+        "1013 hPa",
+        "983 hPa"
+      ],
+      "correct": 3,
+      "why": "810 / 27 = 30 hPa; QFE = 1013 − 30 = 983 hPa.",
+      "whyNot": [
+        "Resta el doble.",
+        "Suma en vez de restar.",
+        "El QFE no es igual al QNH en un aeródromo elevado.",
+        null
+      ],
+      "ref": "OACI Doc 8168"
+    },
+    {
+      "id": "050.03.015",
+      "type": "concepto",
+      "level": 1,
+      "q": "Un nivel de vuelo es una superficie de presión constante referida a:",
+      "options": [
+        "El QNH local",
+        "El QFE",
+        "1013,25 hPa",
+        "La presión de la pista"
+      ],
+      "correct": 2,
+      "why": "Los niveles de vuelo se miden con el altímetro puesto a 1013,25 hPa.",
+      "whyNot": [
+        "El QNH cambia con el lugar.",
+        "Es del aeródromo.",
+        null,
+        "Es del aeródromo."
+      ],
+      "ref": "OACI Anexo 2"
+    },
+    {
+      "id": "050.03.016",
+      "type": "concepto",
+      "level": 1,
+      "q": "La altitud de presión es la que indica el altímetro con:",
+      "options": [
+        "La temperatura ISA",
+        "QFE puesto",
+        "QNH puesto",
+        "1013,25 hPa puesto"
+      ],
+      "correct": 3,
+      "why": "Con 1013,25 la lectura es la altitud de presión.",
+      "whyNot": [
+        "No es un reglaje.",
+        "Es la altura.",
+        "Es la altitud.",
+        null
+      ],
+      "ref": "FAA PHAK cap. 11"
+    },
+    {
+      "id": "050.03.017",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una altitud de densidad alta significa:",
+      "options": [
+        "Menor temperatura",
+        "Más densidad del aire",
+        "Peores prestaciones de despegue, ascenso y motor",
+        "Mejores prestaciones"
+      ],
+      "correct": 2,
+      "why": "La densidad del aire es menor que en la ISA a esa altitud: la carrera de despegue se alarga.",
+      "whyNot": [
+        "Suele darse con calor.",
+        "Significa menos densidad.",
+        null,
+        "Con aire menos denso, peores."
+      ],
+      "ref": "FAA PHAK cap. 11"
+    },
+    {
+      "id": "050.03.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "El nivel de transición, cuando baja el QNH:",
+      "options": [
+        "Sube",
+        "Baja",
+        "No cambia",
+        "Se iguala a la altitud de transición"
+      ],
+      "correct": 0,
+      "why": "Con QNH bajo el nivel de transición sube para mantener la separación respecto a la altitud de transición.",
+      "whyNot": [
+        null,
+        "Es al revés.",
+        "Depende del QNH.",
+        "Debe quedar por encima."
+      ],
+      "ref": "SERA.5010; OACI Doc 8168"
+    },
+    {
+      "id": "050.03.019",
+      "type": "concepto",
+      "level": 1,
+      "q": "El altímetro, por sí solo, no corrige automáticamente:",
+      "options": [
+        "La presión estática",
+        "El reglaje de la subescala",
+        "La temperatura ni las diferencias respecto a la atmósfera estándar",
+        "El efecto del tiempo transcurrido"
+      ],
+      "correct": 2,
+      "why": "Solo mide la separación vertical respecto a un datum de presión; la temperatura la corrige el piloto.",
+      "whyNot": [
+        "La presión estática es justo lo que mide.",
+        "El reglaje lo pone el piloto.",
+        null,
+        "No es un error del altímetro."
+      ],
+      "ref": "Curso, tema 3"
+    },
+    {
+      "id": "050.03.020",
+      "type": "concepto",
+      "level": 1,
+      "q": "El valor que seleccionas en la subescala del altímetro es la presión que el instrumento:",
+      "options": [
+        "Mide directamente en el exterior",
+        "Corrige por temperatura",
+        "Usa para calcular la densidad",
+        "Considera equivalente a cero pies"
+      ],
+      "correct": 3,
+      "why": "Es el datum: el altímetro mide a partir de ese valor de presión como si fuera el nivel cero.",
+      "whyNot": [
+        "La presión exterior la mide el instrumento, no se selecciona.",
+        "La temperatura no se corrige con la subescala.",
+        "La subescala no tiene que ver con la densidad.",
+        null
+      ],
+      "ref": "Curso, tema 3"
+    },
+    {
+      "id": "050.03.021",
+      "type": "concepto",
+      "level": 1,
+      "q": "«From low to high, clear the sky» significa que, al volar hacia presión mayor sin reajustar el QNH:",
+      "options": [
+        "Estás más bajo de lo que indica",
+        "El altímetro se bloquea",
+        "Estás más alto de lo que indica el altímetro",
+        "La altitud indicada no cambia nunca"
+      ],
+      "correct": 2,
+      "why": "Es la situación cómoda: la altitud verdadera es mayor que la indicada.",
+      "whyNot": [
+        "Es lo que pasa de alta a baja presión.",
+        "No se bloquea.",
+        null,
+        "Cambia la relación con la altitud verdadera."
+      ],
+      "ref": "Curso, tema 3"
+    },
+    {
+      "id": "050.03.022",
+      "type": "calculo",
+      "level": 2,
+      "q": "Sales con QNH 1020 y vuelas con 3000 ft indicados constantes hasta un destino con QNH 1005, sin reajustar. Con 27 ft por hPa, la altitud verdadera al llegar es aproximadamente:",
+      "options": [
+        "2600 ft",
+        "3400 ft",
+        "3000 ft",
+        "2900 ft"
+      ],
+      "correct": 0,
+      "why": "Presión menor: 15 hPa × 27 ft ≈ 405 ft más bajo; 3000 − 405 ≈ 2600 ft.",
+      "whyNot": [
+        null,
+        "Sumas en lugar de restar: es el sentido de baja a alta.",
+        "Solo coincidirían con presión constante.",
+        "Resultaría de usar solo 5 hPa de diferencia."
+      ],
+      "ref": "Curso, tema 3"
+    },
+    {
+      "id": "050.03.023",
+      "type": "concepto",
+      "level": 2,
+      "q": "Por encima de la altitud de transición se usa 1013,25 hPa para:",
+      "options": [
+        "Medir la altitud sobre el aeródromo",
+        "Que todas las aeronaves tengan una referencia común y mantengan la separación vertical",
+        "Corregir el error por temperatura",
+        "Medir el nivel del mar real"
+      ],
+      "correct": 1,
+      "why": "El ajuste estándar da la misma referencia a todos, independientemente de la presión local.",
+      "whyNot": [
+        "Eso es el QFE.",
+        null,
+        "Ningún ajuste corrige la temperatura.",
+        "El 1013 es un valor estándar, no el QNH real."
+      ],
+      "ref": "Curso, tema 3"
+    },
+    {
+      "id": "050.03.024",
+      "type": "concepto",
+      "level": 2,
+      "q": "La altitud de transición de un aeródromo es:",
+      "options": [
+        "Igual en todos los aeródromos de España",
+        "Variable con el QNH diario",
+        "Siempre de 18 000 ft",
+        "Un valor fijo para ese aeródromo, publicado en el AIP"
+      ],
+      "correct": 3,
+      "why": "La TA no cambia con la presión del día, pero varía de un aeródromo a otro según el relieve.",
+      "whyNot": [
+        "Se publica para cada aeródromo.",
+        "Eso es el nivel de transición.",
+        "Es el valor de Estados Unidos, no de España.",
+        null
+      ],
+      "ref": "Curso, tema 3; AIP España AD"
+    },
+    {
+      "id": "050.03.025",
+      "type": "calculo",
+      "level": 3,
+      "q": "Indicas 6000 ft sobre una capa 15 °C más fría que la ISA (4 % por cada 10 °C). La altitud verdadera es aproximadamente:",
+      "options": [
+        "6360 ft",
+        "5400 ft",
+        "5640 ft",
+        "6000 ft"
+      ],
+      "correct": 2,
+      "why": "Corrección = 4 × 15 × 6 = 360 ft; como el aire es más frío, 6000 − 360 = 5640 ft.",
+      "whyNot": [
+        "Sumas en lugar de restar: es para aire más cálido.",
+        "Aplicarías 6 % por cada 10 °C.",
+        null,
+        "El error por temperatura existe aunque no se vea."
+      ],
+      "ref": "Curso, tema 3"
+    },
+    {
+      "id": "050.03.026",
+      "type": "concepto",
+      "level": 1,
+      "q": "Volando de aire cálido a aire frío con altitud indicada constante, la altitud verdadera:",
+      "options": [
+        "Es superior a la indicada",
+        "Es inferior a la indicada",
+        "Coincide con la indicada",
+        "Aumenta primero y luego disminuye"
+      ],
+      "correct": 1,
+      "why": "En aire frío las superficies de presión están más juntas: «From hot to cold, look out below».",
+      "whyNot": [
+        "Es el caso de frío a cálido.",
+        null,
+        "Solo con una atmósfera ISA exacta.",
+        "No hay ese comportamiento."
+      ],
+      "ref": "Curso, tema 3"
+    },
+    {
+      "id": "050.03.027",
+      "type": "concepto",
+      "level": 2,
+      "q": "El radioaltímetro mide:",
+      "options": [
+        "La altura sobre el terreno o el agua que hay justo debajo",
+        "La altitud sobre el nivel medio del mar",
+        "La presión estática",
+        "La altitud de presión"
+      ],
+      "correct": 0,
+      "why": "Utiliza ondas de radio para medir la distancia al suelo; no es lo mismo que la altitud sobre el nivel medio del mar.",
+      "whyNot": [
+        null,
+        "Solo se aproxima sobre el mar.",
+        "Eso lo mide el altímetro barométrico.",
+        "Eso lo da el altímetro con 1013."
+      ],
+      "ref": "Curso, tema 3"
+    },
+    {
+      "id": "050.03.028",
+      "type": "calculo",
+      "level": 2,
+      "q": "Con un altímetro aún en 1013 y un QNH real de 1022 en un aeródromo a nivel del mar, el altímetro en tierra indicaría aproximadamente:",
+      "options": [
+        "+240 ft",
+        "0 ft",
+        "+550 ft",
+        "−240 ft"
+      ],
+      "correct": 3,
+      "why": "La referencia puesta (1013) es 9 hPa menor que la real: el altímetro subindica unos 9 × 27 ≈ 240 ft, es decir, −240 ft.",
+      "whyNot": [
+        "Con QNH real menor que 1013 daría la lectura contraria.",
+        "Solo con el QNH correcto.",
+        "No sale de la cuenta: 9 hPa × 27 ft son unos 240 ft, y por debajo de cero.",
+        null
+      ],
+      "ref": "Cálculo con 27 ft por hPa"
     }
-   },
-   {
-    "title": "Calculadora de altimetría",
-    "text": [
-     "Introduce QNH, elevación y temperatura y la calculadora te da la altitud de presión, la altitud de densidad y la lectura del altímetro. Usa primero los ejemplos de abajo a mano."
-    ],
-    "figure": "calc:altimetry"
-   },
-   {
-    "title": "Altitud de presión y de densidad",
-    "text": [
-     "La **altitud de presión** es la altitud que marca el altímetro con 1013,25 puesto. Se calcula con la elevación y la diferencia entre 1013 y el QNH (27 ft por hPa): **altitud de presión = elevación + (1013 − QNH) × 27**. Con QNH menor que 1013, la altitud de presión es mayor que la elevación.",
-     "La **altitud de densidad** es la altitud ISA a la que la densidad coincide con la actual: se calcula corrigiendo la altitud de presión por la temperatura: **altitud de densidad ≈ altitud de presión + 120 × (OAT − temperatura ISA)**. Es el dato clave para prestaciones: una altitud de densidad alta significa aire menos denso y peor rendimiento de despegue, ascenso y motor."
-    ],
-    "examples": [
-     {
-      "q": "Aeródromo a 2000 ft con QNH 1003. ¿Altitud de presión?",
-      "a": "(1013 − 1003) × 27 = 270 ft; 2000 + 270 = 2270 ft."
-     },
-     {
-      "q": "Con altitud de presión 2300 ft y OAT +30 °C, ¿altitud de densidad?",
-      "a": "ISA a 2300 ft = 15 − 2 × 2,3 = 10,4 °C. Desviación = 30 − 10,4 = +19,6. 2300 + 120 × 19,6 = 4652 ft."
-     },
-     {
-      "q": "Aeródromo a 810 ft y QNH 1013. ¿QFE?",
-      "a": "810 / 27 = 30 hPa; QFE = 1013 − 30 = 983 hPa."
-     }
-    ]
-   },
-   {
-    "title": "Errores del altímetro",
-    "text": [
-     "**Error de presión**: si vuelas hacia una zona de menor presión sin reajustar el QNH, el altímetro **sobreindica**: tu altitud real es **inferior** a la que marca. La regla es «**de alta a baja, cuidado abajo**»: 1 hPa ≈ 27 ft, así que con 10 hPa de diferencia estás unos 270 ft más bajo. **Error de temperatura**: el altímetro supone una atmósfera ISA. Si el aire es **más frío** que la ISA, la presión baja más rápido y la altitud real es **inferior** a la indicada; con aire más cálido, **superior**. La corrección aproximada es de **4 ft por cada °C de desviación y cada 1000 ft** de altura: es el 4 % por cada 10 °C.",
-     "**Error por flujo acelerado**: cuando un viento fuerte (por encima de unos 30 kt) cruza una cresta o un puerto de montaña, el aire se acelera por el efecto Venturi y la **presión estática baja**. El altímetro, que cree que has subido, **sobreindica**: estás más bajo de lo que marca, justo cuando menos margen tienes sobre el relieve. A estos errores se suman el de instrumento y el de posición de la toma estática."
-    ],
-    "examples": [
-     {
-      "q": "Llevas 1013 puesto, el QNH real es 1003 y marcas 3000 ft. ¿Altitud real?",
-      "a": "10 hPa × 27 ft ≈ 270 ft: la altitud real es unos 2730 ft."
-     },
-     {
-      "q": "Altímetro con 5000 ft sobre una capa 20 °C más fría que la ISA. ¿Altitud verdadera?",
-      "a": "Corrección = 4 × 20 × 5 = 400 ft: estás a unos 4600 ft (más bajo que lo indicado)."
-     }
-    ],
-    "note": {
-     "kind": "warn",
-     "text": "Aire frío, presión baja y viento fuerte sobre montaña: los tres errores van en el mismo sentido (estás más bajo de lo que marca). Con mala visibilidad sobre relieve, eso mata."
+  ],
+  "cards": [
+    {
+      "id": "c.050.03.01",
+      "front": "ISA",
+      "back": "15 °C; 1013,25 hPa; 1,225 kg/m³; −1,98 °C por 1000 ft hasta 36 090 ft (−56,5 °C)"
+    },
+    {
+      "id": "c.050.03.02",
+      "front": "Temperatura ISA",
+      "back": "15 − 2 × (miles de ft)"
+    },
+    {
+      "id": "c.050.03.03",
+      "front": "Altitud de presión",
+      "back": "Elevación + (1013 − QNH) × 27 ft"
+    },
+    {
+      "id": "c.050.03.04",
+      "front": "QFE a partir del QNH",
+      "back": "QFE ≈ QNH − elevación / 27"
+    },
+    {
+      "id": "c.050.03.05",
+      "front": "Reglajes",
+      "back": "QNH: altitud; QFE: altura; 1013,25: nivel de vuelo"
+    },
+    {
+      "id": "c.050.03.06",
+      "front": "Transición",
+      "back": "Ascenso: 1013 en la altitud de transición; descenso: QNH en el nivel de transición"
+    },
+    {
+      "id": "c.050.03.07",
+      "front": "Error de temperatura",
+      "back": "Aire frío: altitud real inferior; ≈ 4 % por cada 10 °C (4 ft por °C y por 1000 ft)"
+    },
+    {
+      "id": "c.050.03.08",
+      "front": "De alta a baja",
+      "back": "Cuidado abajo: hacia menor presión sin reajustar, estás más bajo"
+    },
+    {
+      "id": "c.050.03.09",
+      "front": "Flujo acelerado sobre relieve",
+      "back": "Venturi: baja la presión estática y el altímetro sobreindica"
     }
-   }
-  ],
-  "numbers": [
-   "ISA: 15 °C, 1013,25 hPa, 1,225 kg/m³, −1,98 °C por 1000 ft hasta 36 090 ft (−56,5 °C)",
-   "T ISA = 15 − 2 × (miles de ft)",
-   "Altitud de presión = elevación + (1013 − QNH) × 27",
-   "Altitud de densidad ≈ altitud de presión + 120 × (OAT − ISA)",
-   "QFE = QNH − elevación / 27",
-   "Corrección por aire frío: 4 ft por °C y por 1000 ft",
-   "Ascenso: 1013 al cruzar la altitud de transición; descenso: QNH al cruzar el nivel de transición"
-  ],
-  "traps": [
-   "De alta a baja presión sin reajustar: estás más bajo de lo que marca.",
-   "En aire más frío que la ISA la altitud real es inferior a la indicada.",
-   "Con QNH menor de 1013 la altitud de presión es mayor que la elevación.",
-   "El nivel de transición cambia con el QNH; la altitud de transición es fija por aeródromo.",
-   "Sobre una cresta con viento fuerte, el altímetro sobreindica."
-  ],
-  "sources": [
-   {
-    "title": "OACI, Doc 7488: Atmósfera tipo; Doc 8168 PANS-OPS (reglajes del altímetro)"
-   },
-   {
-    "title": "SERA.5010 (nivel de transición) y AIP España, ENR 1.7 (reglaje del altímetro)",
-    "url": "https://aip.enaire.es/"
-   },
-   {
-    "title": "FAA PHAK (FAA-H-8083-25C), cap. 8",
-    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
-   }
-  ],
-  "id": "050.03",
-  "reviewed": "2026-10-09"
- },
- "questions": [
-  {
-   "id": "050.03.001",
-   "type": "regla",
-   "level": 1,
-   "q": "La atmósfera estándar al nivel del mar tiene:",
-   "options": [
-    "15 °C y 1013,25 hPa",
-    "10 °C y 1013,25 hPa",
-    "20 °C y 1013 hPa",
-    "15 °C y 1000 hPa"
-   ],
-   "correct": 0,
-   "why": "ISA: +15 °C, 1013,25 hPa, 1,225 kg/m³.",
-   "whyNot": [
-    null,
-    "La temperatura ISA no es 10 °C.",
-    "La temperatura ISA es 15 °C.",
-    "La presión ISA no es 1000 hPa."
-   ],
-   "ref": "OACI Doc 7488"
-  },
-  {
-   "id": "050.03.002",
-   "type": "calculo",
-   "level": 1,
-   "q": "La temperatura ISA a 8000 ft es:",
-   "options": [
-    "−1 °C",
-    "−5 °C",
-    "+7 °C",
-    "+1 °C"
-   ],
-   "correct": 0,
-   "why": "Cada 1000 ft baja unos 2 °C: 15 − 2 × 8 = −1 °C.",
-   "whyNot": [
-    null,
-    "Resulta de usar 2,5 °C por 1000 ft.",
-    "Resulta de restar 8 sin multiplicar por 2.",
-    "Resulta de restar 14 en lugar de 16."
-   ],
-   "ref": "OACI Doc 7488"
-  },
-  {
-   "id": "050.03.003",
-   "type": "calculo",
-   "level": 2,
-   "q": "A 8000 ft la temperatura exterior es +9 °C. La desviación ISA es:",
-   "options": [
-    "ISA + 24",
-    "ISA + 9",
-    "ISA + 10",
-    "ISA − 10"
-   ],
-   "correct": 2,
-   "why": "La ISA a 8000 ft es −1 °C: 9 − (−1) = +10.",
-   "whyNot": [
-    "Suma 15 °C en lugar de restar la temperatura ISA.",
-    "Es la temperatura, no la desviación.",
-    null,
-    "El signo es el contrario."
-   ],
-   "ref": "OACI Doc 7488"
-  },
-  {
-   "id": "050.03.004",
-   "type": "concepto",
-   "level": 1,
-   "q": "Con el QNH puesto en la subescala, el altímetro indica:",
-   "options": [
-    "La altitud de densidad",
-    "La altitud sobre el nivel del mar",
-    "La altura sobre el aeródromo",
-    "El nivel de vuelo"
-   ],
-   "correct": 1,
-   "why": "Con QNH el altímetro marca la elevación del aeródromo cuando estás en él.",
-   "whyNot": [
-    "No se indica con ese reglaje.",
-    null,
-    "Eso ocurre con QFE.",
-    "Eso ocurre con 1013,25."
-   ],
-   "ref": "OACI Doc 8168"
-  },
-  {
-   "id": "050.03.005",
-   "type": "concepto",
-   "level": 1,
-   "q": "Al ascender, se calibra 1013,25 hPa cuando se cruza:",
-   "options": [
-    "El nivel de transición",
-    "La altitud de transición",
-    "La altura de circuito",
-    "1000 ft AGL"
-   ],
-   "correct": 1,
-   "why": "Subiendo se cambia a 1013,25 en la altitud de transición; bajando, a QNH en el nivel de transición.",
-   "whyNot": [
-    "Se cruza al descender.",
-    null,
-    "No es una referencia para el reglaje.",
-    "No es una referencia para el reglaje."
-   ],
-   "ref": "SERA.5010; OACI Doc 8168"
-  },
-  {
-   "id": "050.03.006",
-   "type": "concepto",
-   "level": 2,
-   "q": "Al descender, se pone el QNH cuando se cruza:",
-   "options": [
-    "La altura de decisión",
-    "El nivel de transición",
-    "La altitud de transición",
-    "La altitud mínima de sector"
-   ],
-   "correct": 1,
-   "why": "Al bajar se pasa de niveles de vuelo a altitudes en el nivel de transición.",
-   "whyNot": [
-    "No tiene relación.",
-    null,
-    "Se usa al ascender.",
-    "No tiene relación."
-   ],
-   "ref": "SERA.5010; OACI Doc 8168"
-  },
-  {
-   "id": "050.03.007",
-   "type": "calculo",
-   "level": 2,
-   "q": "Con 1013 puesto y marcando 3000 ft, el QNH real es 1003. La altitud real es aproximadamente:",
-   "options": [
-    "2970 ft",
-    "3000 ft",
-    "3270 ft",
-    "2730 ft"
-   ],
-   "correct": 3,
-   "why": "Con presión menor que la de la subescala, el altímetro sobreindica: 10 hPa × 27 ft = 270 ft menos.",
-   "whyNot": [
-    "Resulta de usar 3 ft por hPa.",
-    "El error de presión no es nulo.",
-    "Suma en vez de restar.",
-    null
-   ],
-   "ref": "FAA PHAK cap. 8"
-  },
-  {
-   "id": "050.03.008",
-   "type": "concepto",
-   "level": 1,
-   "q": "«De alta a baja, cuidado abajo» significa que si vuelas hacia una presión menor sin reajustar:",
-   "options": [
-    "Estás más bajo de lo que indica el altímetro",
-    "Estás más alto",
-    "No cambia nada",
-    "El altímetro se bloquea"
-   ],
-   "correct": 0,
-   "why": "Al bajar la presión el altímetro sobreindica: la altitud real es inferior.",
-   "whyNot": [
-    null,
-    "Es el error contrario.",
-    "Hay error de presión.",
-    "El altímetro no se bloquea."
-   ],
-   "ref": "FAA PHAK cap. 8"
-  },
-  {
-   "id": "050.03.009",
-   "type": "calculo",
-   "level": 2,
-   "q": "Aeródromo a 2000 ft y QNH 1003. Con 27 ft por hPa, la altitud de presión es:",
-   "options": [
-    "2270 ft",
-    "2500 ft",
-    "2100 ft",
-    "1730 ft"
-   ],
-   "correct": 0,
-   "why": "(1013 − 1003) × 27 = 270; 2000 + 270 = 2270 ft.",
-   "whyNot": [
-    null,
-    "Es una estimación sin base.",
-    "Usa 10 ft por hPa.",
-    "Resta la corrección en vez de sumarla."
-   ],
-   "ref": "FAA PHAK cap. 8"
-  },
-  {
-   "id": "050.03.010",
-   "type": "calculo",
-   "level": 3,
-   "q": "Altitud de presión 2300 ft con OAT +30 °C. La altitud de densidad es aproximadamente:",
-   "options": [
-    "2300 ft",
-    "4650 ft",
-    "3500 ft",
-    "−50 ft"
-   ],
-   "correct": 1,
-   "why": "ISA a 2300 ft: 10,4 °C; desviación +19,6; 2300 + 120 × 19,6 ≈ 4650 ft.",
-   "whyNot": [
-    "No aplica la corrección por temperatura.",
-    null,
-    "Usa una desviación de solo 10 °C en lugar de 19,6 °C.",
-    "Resta la corrección en vez de sumarla."
-   ],
-   "ref": "FAA PHAK cap. 11"
-  },
-  {
-   "id": "050.03.011",
-   "type": "calculo",
-   "level": 3,
-   "q": "Altímetro marcando 5000 ft sobre una capa 20 °C más fría que la ISA. La altitud verdadera es aproximadamente:",
-   "options": [
-    "5400 ft",
-    "4000 ft",
-    "4600 ft",
-    "5000 ft"
-   ],
-   "correct": 2,
-   "why": "Corrección = 4 ft × 20 × 5 = 400 ft; en aire frío se resta.",
-   "whyNot": [
-    "Es el signo contrario: el aire frío da una altitud real inferior.",
-    "Resulta de restar demasiado.",
-    null,
-    "Hay error de temperatura."
-   ],
-   "ref": "FAA PHAK cap. 8"
-  },
-  {
-   "id": "050.03.012",
-   "type": "concepto",
-   "level": 2,
-   "q": "En una atmósfera más fría que la ISA, el altímetro:",
-   "options": [
-    "Indica correctamente",
-    "Subindica: la altitud real es mayor",
-    "Se bloquea",
-    "Sobreindica: la altitud real es menor"
-   ],
-   "correct": 3,
-   "why": "En aire frío las superficies de presión están más cerca del suelo: estás más bajo de lo que marca.",
-   "whyNot": [
-    "Hay un error por temperatura.",
-    "Ocurre en aire más cálido.",
-    "No se bloquea por la temperatura.",
-    null
-   ],
-   "ref": "FAA PHAK cap. 8"
-  },
-  {
-   "id": "050.03.013",
-   "type": "concepto",
-   "level": 2,
-   "q": "Un viento fuerte que cruza una cresta acelera el aire y baja la presión estática. El altímetro:",
-   "options": [
-    "No cambia",
-    "Indica más altitud de la real",
-    "Indica menos altitud de la real",
-    "Se bloquea"
-   ],
-   "correct": 1,
-   "why": "Con menos presión estática el altímetro «cree» que estás más alto: estás más bajo de lo que marca.",
-   "whyNot": [
-    "Sí se ve afectado.",
-    null,
-    "Es el error contrario.",
-    "No se bloquea."
-   ],
-   "ref": "FAA PHAK cap. 8"
-  },
-  {
-   "id": "050.03.014",
-   "type": "calculo",
-   "level": 2,
-   "q": "Aeródromo a 810 ft con QNH 1013. Con 27 ft por hPa, el QFE es:",
-   "options": [
-    "953 hPa",
-    "1043 hPa",
-    "1013 hPa",
-    "983 hPa"
-   ],
-   "correct": 3,
-   "why": "810 / 27 = 30 hPa; QFE = 1013 − 30 = 983 hPa.",
-   "whyNot": [
-    "Resta el doble.",
-    "Suma en vez de restar.",
-    "El QFE no es igual al QNH en un aeródromo elevado.",
-    null
-   ],
-   "ref": "OACI Doc 8168"
-  },
-  {
-   "id": "050.03.015",
-   "type": "concepto",
-   "level": 1,
-   "q": "Un nivel de vuelo es una superficie de presión constante referida a:",
-   "options": [
-    "El QNH local",
-    "El QFE",
-    "1013,25 hPa",
-    "La presión de la pista"
-   ],
-   "correct": 2,
-   "why": "Los niveles de vuelo se miden con el altímetro puesto a 1013,25 hPa.",
-   "whyNot": [
-    "El QNH cambia con el lugar.",
-    "Es del aeródromo.",
-    null,
-    "Es del aeródromo."
-   ],
-   "ref": "OACI Anexo 2"
-  },
-  {
-   "id": "050.03.016",
-   "type": "concepto",
-   "level": 1,
-   "q": "La altitud de presión es la que indica el altímetro con:",
-   "options": [
-    "La temperatura ISA",
-    "QFE puesto",
-    "QNH puesto",
-    "1013,25 hPa puesto"
-   ],
-   "correct": 3,
-   "why": "Con 1013,25 la lectura es la altitud de presión.",
-   "whyNot": [
-    "No es un reglaje.",
-    "Es la altura.",
-    "Es la altitud.",
-    null
-   ],
-   "ref": "FAA PHAK cap. 11"
-  },
-  {
-   "id": "050.03.017",
-   "type": "concepto",
-   "level": 2,
-   "q": "Una altitud de densidad alta significa:",
-   "options": [
-    "Menor temperatura",
-    "Más densidad del aire",
-    "Peores prestaciones de despegue, ascenso y motor",
-    "Mejores prestaciones"
-   ],
-   "correct": 2,
-   "why": "La densidad del aire es menor que en la ISA a esa altitud: la carrera de despegue se alarga.",
-   "whyNot": [
-    "Suele darse con calor.",
-    "Significa menos densidad.",
-    null,
-    "Con aire menos denso, peores."
-   ],
-   "ref": "FAA PHAK cap. 11"
-  },
-  {
-   "id": "050.03.018",
-   "type": "concepto",
-   "level": 2,
-   "q": "El nivel de transición, cuando baja el QNH:",
-   "options": [
-    "Sube",
-    "Baja",
-    "No cambia",
-    "Se iguala a la altitud de transición"
-   ],
-   "correct": 0,
-   "why": "Con QNH bajo el nivel de transición sube para mantener la separación respecto a la altitud de transición.",
-   "whyNot": [
-    null,
-    "Es al revés.",
-    "Depende del QNH.",
-    "Debe quedar por encima."
-   ],
-   "ref": "SERA.5010; OACI Doc 8168"
-  }
- ],
- "cards": [
-  {
-   "id": "c.050.03.01",
-   "front": "ISA",
-   "back": "15 °C; 1013,25 hPa; 1,225 kg/m³; −1,98 °C por 1000 ft hasta 36 090 ft (−56,5 °C)"
-  },
-  {
-   "id": "c.050.03.02",
-   "front": "Temperatura ISA",
-   "back": "15 − 2 × (miles de ft)"
-  },
-  {
-   "id": "c.050.03.03",
-   "front": "Altitud de presión",
-   "back": "Elevación + (1013 − QNH) × 27 ft"
-  },
-  {
-   "id": "c.050.03.04",
-   "front": "Altitud de densidad",
-   "back": "Altitud de presión + 120 × (OAT − ISA)"
-  },
-  {
-   "id": "c.050.03.05",
-   "front": "Reglajes",
-   "back": "QNH: altitud; QFE: altura; 1013,25: nivel de vuelo"
-  },
-  {
-   "id": "c.050.03.06",
-   "front": "Transición",
-   "back": "Ascenso: 1013 en la altitud de transición; descenso: QNH en el nivel de transición"
-  },
-  {
-   "id": "c.050.03.07",
-   "front": "Error de temperatura",
-   "back": "Aire frío: altitud real inferior; ≈ 4 ft por °C y por 1000 ft"
-  },
-  {
-   "id": "c.050.03.08",
-   "front": "De alta a baja",
-   "back": "Cuidado abajo: hacia menor presión sin reajustar, estás más bajo"
-  }
- ]
+  ]
 }

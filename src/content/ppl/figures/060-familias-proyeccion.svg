@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300">
+  <title>Tres familias de proyección cartográfica: plana, cilíndrica (Mercator) y cónica (Lambert)</title>
+  <!-- Plana -->
+  <polygon points="46,176 160,176 188,150 74,150" class="ac"/>
+  <circle cx="110" cy="112" r="48" class="sky"/>
+  <path d="M62 112 A48 12 0 0 0 158 112" class="ln2" fill="none"/>
+  <circle cx="110" cy="160" r="3" class="ink-fill"/>
+  <text x="110" y="206" class="tx b" text-anchor="middle">Plana</text>
+  <text x="110" y="224" class="tx2" text-anchor="middle">plano tangente (aquí en un polo)</text>
+  <text x="110" y="240" class="tx2" text-anchor="middle">carta polar: meridianos radiales</text>
+  <!-- Cilíndrica -->
+  <ellipse cx="320" cy="48" rx="60" ry="10" class="ln2" fill="none"/>
+  <line x1="260" y1="48" x2="260" y2="176" class="ln"/>
+  <line x1="380" y1="48" x2="380" y2="176" class="ln"/>
+  <circle cx="320" cy="112" r="56" class="sky"/>
+  <path d="M264 112 A56 14 0 0 0 376 112" class="ok-ln thick" fill="none"/>
+  <path d="M264 112 A56 14 0 0 1 376 112" class="ok-ln dash" fill="none"/>
+  <path d="M260 176 A60 10 0 0 0 380 176" class="ln" fill="none"/>
+  <path d="M260 176 A60 10 0 0 1 380 176" class="ln2 dash" fill="none"/>
+  <text x="320" y="206" class="tx b" text-anchor="middle">Cilíndrica</text>
+  <text x="320" y="224" class="tx2" text-anchor="middle">cilindro tangente al ecuador</text>
+  <text x="320" y="240" class="tx2" text-anchor="middle">Mercator directa</text>
+  <!-- Cónica -->
+  <line x1="530" y1="26" x2="470" y2="170" class="ln"/>
+  <line x1="530" y1="26" x2="590" y2="170" class="ln"/>
+  <path d="M470 170 A60 10 0 0 0 590 170" class="ln" fill="none"/>
+  <path d="M470 170 A60 10 0 0 1 590 170" class="ln2 dash" fill="none"/>
+  <circle cx="530" cy="112" r="50" class="sky"/>
+  <path d="M497 90 A38 8 0 0 0 563 90" class="ok-ln thick" fill="none"/>
+  <path d="M497 90 A38 8 0 0 1 563 90" class="ok-ln dash" fill="none"/>
+  <text x="530" y="206" class="tx b" text-anchor="middle">Cónica</text>
+  <text x="530" y="224" class="tx2" text-anchor="middle">cono apoyado en un paralelo</text>
+  <text x="530" y="240" class="tx2" text-anchor="middle">Lambert conforme</text>
+  <text x="320" y="278" class="txo b" text-anchor="middle">En verde, la línea donde la superficie toca la esfera: ahí no hay deformación</text>
+</svg>

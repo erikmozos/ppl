@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 410">
+<title>Sistemas de presión en el hemisferio norte: anticiclón, depresión, dorsal, vaguada, col y movimiento vertical del aire (esquema propio)</title>
+<defs><marker id="050-sistemas-presion-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+<marker id="050-sistemas-presion-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker>
+<marker id="050-sistemas-presion-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker></defs>
+<rect x="10" y="10" width="200" height="190" rx="8" class="soft"/>
+<rect x="220" y="10" width="200" height="190" rx="8" class="soft"/>
+<rect x="430" y="10" width="200" height="190" rx="8" class="soft"/>
+<rect x="10" y="210" width="200" height="190" rx="8" class="soft"/>
+<rect x="220" y="210" width="200" height="190" rx="8" class="soft"/>
+<rect x="430" y="210" width="200" height="190" rx="8" class="soft"/>
+<circle cx="110" cy="95" r="16" class="ln2" fill="none"/>
+<circle cx="110" cy="95" r="34" class="ln2" fill="none"/>
+<circle cx="110" cy="95" r="52" class="ln2" fill="none"/>
+<text x="110" y="101" class="txa b" text-anchor="middle" font-size="18">A</text>
+<path d="M131.5 57.8 A43 43 0 0 1 150.4 80.3" class="ac-ln thick" fill="none" marker-end="url(#050-sistemas-presion-a)"/>
+<path d="M147.2 116.5 A43 43 0 0 1 124.7 135.4" class="ac-ln thick" fill="none" marker-end="url(#050-sistemas-presion-a)"/>
+<path d="M88.5 132.2 A43 43 0 0 1 69.6 109.7" class="ac-ln thick" fill="none" marker-end="url(#050-sistemas-presion-a)"/>
+<path d="M72.8 73.5 A43 43 0 0 1 95.3 54.6" class="ac-ln thick" fill="none" marker-end="url(#050-sistemas-presion-a)"/>
+<text x="110" y="172" class="tx b" text-anchor="middle">Anticiclón</text><text x="110" y="188" class="tx2" font-size="11" text-anchor="middle">horario, hacia fuera</text>
+<circle cx="320" cy="95" r="16" class="ln2" fill="none"/>
+<circle cx="320" cy="95" r="34" class="ln2" fill="none"/>
+<circle cx="320" cy="95" r="52" class="ln2" fill="none"/>
+<text x="320" y="101" class="txw b" text-anchor="middle" font-size="18">B</text>
+<path d="M360.4 80.3 A43 43 0 0 0 341.5 57.8" class="wa-ln thick" fill="none" marker-end="url(#050-sistemas-presion-w)"/>
+<path d="M334.7 135.4 A43 43 0 0 0 357.2 116.5" class="wa-ln thick" fill="none" marker-end="url(#050-sistemas-presion-w)"/>
+<path d="M279.6 109.7 A43 43 0 0 0 298.5 132.2" class="wa-ln thick" fill="none" marker-end="url(#050-sistemas-presion-w)"/>
+<path d="M305.3 54.6 A43 43 0 0 0 282.8 73.5" class="wa-ln thick" fill="none" marker-end="url(#050-sistemas-presion-w)"/>
+<text x="320" y="172" class="tx b" text-anchor="middle">Depresión</text><text x="320" y="188" class="tx2" font-size="11" text-anchor="middle">antihorario, hacia dentro</text>
+<path d="M468 150 C468 60 492 28 530 28 C568 28 592 60 592 150" class="ln2" fill="none"/>
+<path d="M486 150 C486 82 504 52 530 52 C556 52 574 82 574 150" class="ln2" fill="none"/>
+<path d="M504 150 C504 104 514 78 530 78 C546 78 556 104 556 150" class="ln2" fill="none"/>
+<line x1="530" y1="150" x2="530" y2="24" class="ac-ln dash"/>
+<text x="530" y="136" class="txa b" text-anchor="middle" font-size="16">A</text>
+<text x="530" y="172" class="tx b" text-anchor="middle">Dorsal (cuña)</text><text x="530" y="188" class="tx2" font-size="11" text-anchor="middle">alta que se alarga</text>
+<path d="M48 230 C48 320 72 352 110 352 C148 352 172 320 172 230" class="ln2" fill="none"/>
+<path d="M66 230 C66 298 84 328 110 328 C136 328 154 298 154 230" class="ln2" fill="none"/>
+<path d="M84 230 C84 276 94 302 110 302 C126 302 136 276 136 230" class="ln2" fill="none"/>
+<line x1="110" y1="234" x2="110" y2="352" class="wa-ln dash"/>
+<text x="110" y="262" class="txw b" text-anchor="middle" font-size="16">B</text>
+<text x="110" y="370" class="tx b" text-anchor="middle">Vaguada</text><text x="110" y="386" class="tx2" font-size="11" text-anchor="middle">baja que se alarga</text>
+<text x="258" y="305" class="txa b" text-anchor="middle" font-size="16">A</text>
+<text x="382" y="305" class="txa b" text-anchor="middle" font-size="16">A</text>
+<text x="320" y="253" class="txw b" text-anchor="middle" font-size="16">B</text>
+<text x="320" y="357" class="txw b" text-anchor="middle" font-size="16">B</text>
+<path d="M294 294 C308 294 312 284 312 270" class="ln2" fill="none"/><path d="M346 294 C332 294 328 284 328 270" class="ln2" fill="none"/>
+<path d="M294 306 C308 306 312 316 312 330" class="ln2" fill="none"/><path d="M346 306 C332 306 328 316 328 330" class="ln2" fill="none"/>
+<circle cx="320" cy="300" r="4" class="ink-fill"/>
+<text x="320" y="370" class="tx b" text-anchor="middle">Col</text><text x="320" y="386" class="tx2" font-size="11" text-anchor="middle">entre dos altas y dos bajas</text>
+<text x="320" y="234" class="tx2" font-size="11" text-anchor="middle">viento casi nulo</text>
+<line x1="440" y1="350" x2="620" y2="350" class="ln thick"/><rect x="440" y="350" width="180" height="6" class="ground"/>
+<line x1="470" y1="230" x2="470" y2="322" class="ac-ln thick" marker-end="url(#050-sistemas-presion-a)"/><line x1="500" y1="230" x2="500" y2="322" class="ac-ln thick" marker-end="url(#050-sistemas-presion-a)"/>
+<line x1="570" y1="322" x2="570" y2="232" class="wa-ln thick" marker-end="url(#050-sistemas-presion-w)"/><line x1="598" y1="322" x2="598" y2="232" class="wa-ln thick" marker-end="url(#050-sistemas-presion-w)"/>
+<text x="485" y="224" class="txa b" text-anchor="middle" font-size="12">A: baja</text><text x="584" y="224" class="txw b" text-anchor="middle" font-size="12">B: sube</text>
+<line x1="486" y1="342" x2="458" y2="342" class="ac-ln" marker-end="url(#050-sistemas-presion-a)"/><line x1="500" y1="342" x2="528" y2="342" class="ac-ln" marker-end="url(#050-sistemas-presion-a)"/>
+<line x1="544" y1="342" x2="572" y2="342" class="wa-ln" marker-end="url(#050-sistemas-presion-w)"/><line x1="620" y1="342" x2="592" y2="342" class="wa-ln" marker-end="url(#050-sistemas-presion-w)"/>
+<text x="530" y="372" class="tx b" text-anchor="middle">Corte vertical</text><text x="530" y="388" class="tx2" font-size="11" text-anchor="middle">subsidencia frente a ascenso</text>
+</svg>

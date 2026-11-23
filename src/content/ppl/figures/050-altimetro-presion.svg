@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340">
+  <title>De alta a baja presión con el mismo reglaje: la superficie de presión desciende y la altitud verdadera disminuye respecto a la indicada</title>
+  <defs>
+    <marker id="050-altpres-flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+    <marker id="050-altpres-flecha-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker>
+  </defs>
+  <rect x="0" y="0" width="640" height="340" class="sky"/>
+  <rect x="0" y="290" width="640" height="50" class="ground"/>
+  <!-- referencia: altitud verdadera de salida -->
+  <line x1="40" y1="110" x2="610" y2="110" class="ln2 dash"/>
+  <text x="330" y="102" class="tx2">Altitud verdadera de salida (referencia)</text>
+  <!-- superficie de presión -->
+  <path d="M40 110 L610 175" class="ac-ln thick"/>
+  <text x="250" y="152" class="txa b" transform="rotate(6.5 250 152)">Superficie de presión que sigue el altímetro</text>
+  <!-- avión en salida -->
+  <g transform="translate(90,100)">
+    <ellipse cx="0" cy="0" rx="18" ry="5" class="ac"/>
+    <line x1="-2" y1="0" x2="-6" y2="-14" class="ln thick"/>
+    <line x1="-2" y1="0" x2="-6" y2="12" class="ln thick"/>
+    <path d="M-16 0 L-22 -8" class="ln"/>
+  </g>
+  <!-- avión en destino -->
+  <g transform="translate(540,167)">
+    <ellipse cx="0" cy="0" rx="18" ry="5" class="ac"/>
+    <line x1="-2" y1="0" x2="-6" y2="-14" class="ln thick"/>
+    <line x1="-2" y1="0" x2="-6" y2="12" class="ln thick"/>
+    <path d="M-16 0 L-22 -8" class="ln"/>
+  </g>
+  <!-- trayectoria -->
+  <path d="M120 103 L508 163" class="ln dash" marker-end="url(#050-altpres-flecha)"/>
+  <!-- diferencia -->
+  <line x1="590" y1="110" x2="590" y2="172" class="wa-ln" marker-start="url(#050-altpres-flecha-w)" marker-end="url(#050-altpres-flecha-w)"/>
+  <text x="584" y="128" class="txw b" text-anchor="end">≈ 400 ft</text>
+  <text x="584" y="143" class="txw" text-anchor="end">más bajo</text>
+  <!-- terreno -->
+  <path d="M430 290 L500 240 L540 262 L590 232 L640 290 Z" class="soft"/>
+  <!-- etiquetas de zonas -->
+  <text x="40" y="40" class="tx b">Alta presión</text>
+  <text x="40" y="58" class="tx2">Salida: QNH 1020</text>
+  <text x="40" y="76" class="tx2">3000 ft indicados = 3000 ft verdaderos</text>
+  <text x="600" y="40" class="tx b" text-anchor="end">Baja presión</text>
+  <text x="600" y="58" class="tx2" text-anchor="end">Destino: QNH 1005, sin reajustar</text>
+  <text x="600" y="76" class="tx2" text-anchor="end">3000 ft indicados ≈ 2600 ft verdaderos</text>
+  <text x="320" y="240" class="tx" text-anchor="middle">«From high to low, look out below»</text>
+  <text x="320" y="262" class="tx2" text-anchor="middle">15 hPa × 27 ft ≈ 400 ft</text>
+  <text x="320" y="316" class="tx2" text-anchor="middle">Al llegar, pon el QNH local y el altímetro vuelve a coincidir con la altitud verdadera</text>
+</svg>

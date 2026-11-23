@@ -1,580 +1,934 @@
 {
- "lesson": {
-  "title": "Sistema solar y la Tierra",
-  "summary": "El movimiento de la Tierra y las estaciones, la forma del planeta, círculos máximos y menores, ortodrómica y loxodrómica, latitud y longitud, y cómo se mide la distancia sobre la esfera.",
-  "objectives": [
-   "Explicar la rotación, la traslación y por qué hay estaciones",
-   "Situar el Sol en solsticios y equinoccios y entender su movimiento aparente",
-   "Distinguir círculo máximo, círculo menor, ortodrómica y loxodrómica",
-   "Leer y escribir coordenadas geográficas en grados, minutos y segundos",
-   "Calcular distancias norte-sur y este-oeste con la latitud",
-   "Aplicar la convergencia de meridianos"
-  ],
-  "sections": [
-   {
-    "title": "Rotación, traslación y estaciones",
-    "text": [
-     "La Tierra hace dos movimientos a la vez. La **rotación** es el giro sobre su eje, de **oeste a este**, en unas 24 horas (23 h 56 min respecto a las estrellas). Por eso el Sol parece salir por el este y ponerse por el oeste, y por eso hay día y noche. La **traslación** es la órbita alrededor del Sol, que dura **365,25 días**; esa fracción es la razón de los años bisiestos.",
-     "El eje de rotación **no es perpendicular** al plano de la órbita (la eclíptica): está inclinado unos **23,5°**. Esa inclinación, y no la distancia al Sol, es la causa de las estaciones. La Tierra está más cerca del Sol (perihelio) a principios de enero, en pleno invierno del hemisferio norte. Cuando el hemisferio norte está inclinado hacia el Sol, los rayos llegan más verticales y los días son más largos: es verano.",
-     "El punto del globo donde el Sol está en el cenit al mediodía se llama punto subsolar, y su latitud es la **declinación** del Sol. La declinación varía entre +23,5° y −23,5° a lo largo del año."
+  "lesson": {
+    "title": "Sistema solar y la Tierra",
+    "summary": "Movimientos de la Tierra, estaciones y trayectoria aparente del Sol, solsticios y equinoccios, forma y tamaño de la Tierra, círculos máximos y menores, latitud y longitud con sus diferencias (también al cruzar el antimeridiano) y distancias sobre la esfera.",
+    "objectives": [
+      "Explicar la rotación, la traslación y por qué hay estaciones",
+      "Describir el movimiento aparente del Sol y cómo cambia su trayectoria con la estación y la latitud",
+      "Situar solsticios y equinoccios y calcular la altura del Sol al mediodía",
+      "Distinguir círculo máximo, círculo menor, ortodrómica y loxodrómica",
+      "Calcular diferencia de latitud y de longitud, incluso cruzando Greenwich o el antimeridiano",
+      "Calcular distancias norte-sur y este-oeste con la latitud"
     ],
-    "table": {
-     "caption": "Posición del Sol a lo largo del año",
-     "head": [
-      "Fecha aproximada",
-      "Fenómeno",
-      "Declinación del Sol",
-      "Qué ocurre"
-     ],
-     "rows": [
-      [
-       "20-21 de marzo",
-       "Equinoccio de primavera (hemisferio norte)",
-       "0°",
-       "Sol en el cenit sobre el ecuador; día y noche casi iguales"
+    "sections": [
+      {
+        "title": "Rotación, traslación y estaciones",
+        "text": [
+          "La Tierra hace dos movimientos a la vez. La **rotación** es el giro sobre su eje, de **oeste a este**, en unas 24 horas (23 h 56 min respecto a las estrellas). Por eso el Sol parece salir por el este y ponerse por el oeste, y por eso hay día y noche. La **traslación** es la órbita alrededor del Sol, que dura **365,25 días**; esa fracción es la razón de los años bisiestos.",
+          "El eje de rotación **no es perpendicular** al plano de la órbita (la eclíptica): está inclinado unos **23,5°**. Esa inclinación, y no la distancia al Sol, es la causa de las estaciones. La Tierra está más cerca del Sol (perihelio) a principios de enero, en pleno invierno del hemisferio norte. Cuando el hemisferio norte está inclinado hacia el Sol, los rayos llegan más verticales y los días son más largos: es verano.",
+          "El punto del globo donde el Sol está en el cenit al mediodía se llama punto subsolar, y su latitud es la **declinación** del Sol. La declinación varía entre +23,5° y −23,5° a lo largo del año."
+        ],
+        "table": {
+          "caption": "Posición del Sol a lo largo del año",
+          "head": [
+            "Fecha aproximada",
+            "Fenómeno",
+            "Declinación del Sol",
+            "Qué ocurre"
+          ],
+          "rows": [
+            [
+              "20-21 de marzo",
+              "Equinoccio de primavera (hemisferio norte)",
+              "0°",
+              "Sol en el cenit sobre el ecuador; día y noche casi iguales"
+            ],
+            [
+              "21 de junio",
+              "Solsticio de verano (hemisferio norte)",
+              "+23,5° (trópico de Cáncer)",
+              "Día más largo en el norte; el Sol de mediodía más alto"
+            ],
+            [
+              "22-23 de septiembre",
+              "Equinoccio de otoño",
+              "0°",
+              "Sol en el cenit sobre el ecuador de nuevo"
+            ],
+            [
+              "21 de diciembre",
+              "Solsticio de invierno (hemisferio norte)",
+              "−23,5° (trópico de Capricornio)",
+              "Día más corto en el norte"
+            ]
+          ],
+          "src": "Datos astronómicos estándar"
+        },
+        "ideas": [
+          "La rotación es una persona dando vueltas sentada en una silla de oficina: ve pasar la lámpara de la habitación una vez por vuelta (el día y la noche). La traslación es esa misma persona yendo, además, en un carrito alrededor de la lámpara.",
+          "Para ver las estaciones, inclina una naranja con el palillo del eje siempre apuntando al mismo rincón del cuarto y dale la vuelta a una lámpara: en media órbita el polo norte mira hacia la lámpara y en la otra media, hacia el lado contrario. La distancia a la lámpara casi no cambia; lo que cambia es hacia qué lado está inclinada."
+        ]
+      },
+      {
+        "title": "Movimiento aparente del Sol y trayectoria según la estación",
+        "text": [
+          "El Sol no recorre el cielo: **el movimiento diario que ves es un efecto de la rotación de la Tierra**, que gira de oeste a este y te lleva a ti bajo el Sol. Por la mañana sube, alcanza su altura máxima en el **mediodía solar** (cuando cruza tu meridiano, hacia el sur si estás en latitudes medias del hemisferio norte) y baja hasta ponerse por el oeste. Sale exactamente por el este solo en los equinoccios: en verano sale algo al norte del este y en invierno, algo al sur.",
+          "La **trayectoria** cambia a lo largo del año por la traslación y la inclinación del eje: la Tierra recorre su órbita con el eje apuntando siempre a la misma dirección, y así va variando la latitud sobre la que el Sol cae vertical (su declinación). En verano la trayectoria es **más alta y más larga**, y hay más horas de luz; en invierno es **más baja y más corta**, con menos horas de luz; en primavera y otoño queda a medio camino.",
+          "El efecto depende de la **latitud**. Cerca del ecuador la trayectoria casi no cambia y el día dura unas 12 horas todo el año. En latitudes medias, como España o el resto de Europa, el cambio es muy visible: unas 15 horas de luz en junio frente a unas 9 horas y media en diciembre. Más allá de los círculos polares (66,5°) hay días enteros con Sol de medianoche y otros sin que salga."
+        ],
+        "formulas": [
+          {
+            "f": "Altura del Sol al mediodía = 90° − |latitud − declinación|",
+            "note": "Latitud y declinación con signo (norte y declinación positiva). Declinación: +23,5° en el solsticio de junio, 0° en los equinoccios, −23,5° en el de diciembre."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Altura del Sol al mediodía en un lugar a 40° N en los solsticios y en un equinoccio.",
+            "a": "Junio: 90 − |40 − 23,5| = 73,5°. Equinoccio: 90 − 40 = 50°. Diciembre: 90 − |40 + 23,5| = 26,5°. Por eso las sombras son largas en invierno y cortas en verano."
+          }
+        ],
+        "ideas": [
+          "Es lo que pasa en un tren: te parece que los árboles corren hacia atrás y eres tú quien se mueve. El Sol parece moverse porque eres tú, subido a la Tierra, quien gira.",
+          "La sombra de un palo clavado en el patio es un reloj de estaciones: a mediodía es larguísima en diciembre y casi un charquito en junio."
+        ]
+      },
+      {
+        "title": "Solsticios, equinoccios y vuelo VFR",
+        "text": [
+          "Los **solsticios** son los extremos del año y los **equinoccios**, los puntos medios: en el solsticio de verano del hemisferio norte (21 de junio) el día es el más largo y el Sol de mediodía el más alto; en el de invierno (21 de diciembre) el día es el más corto y el Sol el más bajo; en los equinoccios (marzo y septiembre) el Sol cae vertical sobre el ecuador y día y noche duran aproximadamente lo mismo, unas 12 horas.",
+          "Para un piloto esto no es astronomía de museo, sino planificación. Las **horas de salida y puesta del Sol** y la **duración del día** te dicen de cuánta luz dispones para un vuelo VFR, y el Sol sirve como **orientación aproximada** (por el este por la mañana, por el oeste por la tarde, al sur a mediodía). Con el Sol bajo aparece además el **deslumbramiento**: empeora la visibilidad de vuelo hacia el este por la mañana y hacia el oeste por la tarde, justo cuando buscas el campo, un punto de referencia o el tráfico."
+        ],
+        "bullets": [
+          "Verano: más horas de luz, más tiempo para volar VFR, pero también más calor y turbulencia convectiva por la tarde.",
+          "Invierno: pocas horas de luz; calcula la hora del ocaso y del fin del crepúsculo civil antes de despegar (véase el tema 6).",
+          "Con el Sol de cara a baja altura, protege la vista y ten más cuidado con la visibilidad y con el tráfico que no ves."
+        ],
+        "ideas": [
+          "Es como conducir de cara al atardecer con el parasol bajado: ves mal la carretera, el cartel y al coche que viene. En vuelo, el tráfico y la pista se esconden igual en ese resplandor.",
+          "Equinoccio viene de «noche igual»; solsticio, de «Sol quieto»: es el momento en que el Sol parece detenerse un instante en su punto más alto o más bajo antes de volver."
+        ]
+      },
+      {
+        "title": "Forma de la Tierra",
+        "text": [
+          "La Tierra no es una esfera perfecta, sino un **esferoide achatado por los polos**: el radio ecuatorial (unos 6378 km) es unos 21 km mayor que el polar (6357 km). El achatamiento es de 1/298. Para la navegación se usa el **elipsoide WGS-84**, que es el modelo del GPS; el **geoide** es la superficie de nivel medio del mar, que es la referencia real de las altitudes.",
+          "La Tierra es el tercer planeta del sistema solar y, vista desde fuera, parece una esfera. Si se mide su circunferencia, sale algo distinta según por dónde: la **ecuatorial** mide unos **40 075 km, casi 21 640 NM**, y la **polar** (pasando por los polos) unos **40 008 km, casi 21 600 NM**. La diferencia es pequeña y en navegación se toma 21 600 NM (360° × 60′), que es justo lo que hace que 1′ de latitud sea 1 NM.",
+          "Para cálculos de navegación VFR se trata como esfera. De ahí salen las dos equivalencias que debes saber: una circunferencia de círculo máximo mide **360° × 60′ = 21 600 NM** y **1′ de arco = 1 NM = 1852 m**."
+        ],
+        "ideas": [
+          "Imagina un balón de playa sobre el que alguien se ha sentado un momento: sigue pareciendo una esfera, pero está un pelín achatado arriba y abajo. Así es la Tierra y por eso los cálculos de pilotos de avioneta usan una esfera sin problema."
+        ]
+      },
+      {
+        "title": "Círculos máximos y menores",
+        "text": [
+          "Un **círculo máximo** es la intersección de la esfera con un plano que pasa por su centro. Es el círculo más grande que se puede dibujar sobre ella y divide la esfera en dos mitades iguales. El **ecuador** y todos los **meridianos** (unidos con su antimeridiano) son círculos máximos. Un **círculo menor** es la intersección con un plano que no pasa por el centro: todos los **paralelos** salvo el ecuador lo son.",
+          "La distancia más corta entre dos puntos de la superficie es un arco de círculo máximo, la **ortodrómica**. Una **loxodrómica** es la línea que corta a todos los meridianos con el mismo ángulo: tiene rumbo constante, pero es más larga salvo que sea un meridiano o un paralelo."
+        ],
+        "figure": "svg:060-esfera",
+        "caption": "El ecuador y los meridianos son círculos máximos; el resto de los paralelos, círculos menores.",
+        "bullets": [
+          "Ortodrómica: arco de círculo máximo; distancia mínima; el rumbo verdadero cambia a lo largo de la ruta salvo en meridianos y ecuador.",
+          "Loxodrómica: rumbo constante respecto a los meridianos; en Mercator es una recta; se curva hacia el polo en forma de espiral.",
+          "Un meridiano y el ecuador son a la vez ortodrómica y loxodrómica; un paralelo (distinto del ecuador) es una loxodrómica, no una ortodrómica."
+        ],
+        "ideas": [
+          "Parte una sandía por la mitad pasando por el centro: dos mitades iguales y un corte lo más grande posible (círculo máximo). Corta una rodaja cerca de la corteza y el borde es un círculo menor.",
+          "La ortodrómica es el hilo tenso entre dos chinchetas clavadas en un globo terráqueo: el camino más corto. La loxodrómica es lo que dibujarías caminando siempre con la misma brújula, que no es el camino más corto."
+        ]
+      },
+      {
+        "title": "Latitud y longitud",
+        "text": [
+          "La **latitud** es el ángulo, medido en el centro de la Tierra, entre el ecuador y el punto: de 0° a 90°, Norte o Sur. La **longitud** es el ángulo entre el meridiano de Greenwich y el meridiano del punto: de 0° a 180°, Este u Oeste. Se escriben en grados, minutos y segundos. Madrid-Barajas está en 40° 28′ N, 003° 34′ W.",
+          "En la AIP y en las cartas las coordenadas se publican en el formato de seis y siete cifras: **402800N 0033400W** significa 40° 28′ 00″ N y 003° 34′ 00″ W. Los grados de longitud llevan siempre tres cifras."
+        ],
+        "examples": [
+          {
+            "q": "Interpreta 413700N 0020000E.",
+            "a": "41° 37′ 00″ de latitud norte y 002° 00′ 00″ de longitud este, es decir, al este de Greenwich."
+          }
+        ],
+        "ideas": [
+          "La latitud son las plantas de un edificio contando desde la planta baja (el ecuador): hacia arriba, norte; hacia abajo, sur. La longitud es el número de portal en una calle larguísima cuyo portal cero está en Greenwich."
+        ]
+      },
+      {
+        "title": "Latitud y diferencia de latitud",
+        "text": [
+          "La **diferencia de latitud** (*difference of latitude*, d.lat) es cuánto te has desplazado hacia el norte o el sur: la resta entre las latitudes de los dos puntos, con nombre N si llegas más al norte y S si llegas más al sur. Como 1′ de latitud es 1 NM, convertirla en distancia norte-sur es inmediato: los minutos de d.lat son las millas náuticas recorridas.",
+          "Si los dos puntos están en el mismo hemisferio, restas. Si uno está al norte y otro al sur del ecuador, **sumas**, porque cruzas el ecuador. La latitud no pasa de 90°; en los polos todos los meridianos se juntan."
+        ],
+        "examples": [
+          {
+            "q": "Punto A a 40° N y punto B a 46° N: d.lat y distancia.",
+            "a": "46 − 40 = 6° N, es decir, 360′ = 360 NM hacia el norte."
+          },
+          {
+            "q": "De 12° S a 8° N.",
+            "a": "Hemisferios distintos: 12 + 8 = 20° N = 1200 NM."
+          },
+          {
+            "q": "De 35° N a 22° N.",
+            "a": "35 − 22 = 13° S = 780 NM hacia el sur."
+          }
+        ],
+        "ideas": [
+          "Es como un ascensor: de la planta 4 a la 10 has subido 6 pisos; del sótano 2 a la planta 3 has subido 5 (sumas, porque cruzas la planta baja)."
+        ]
+      },
+      {
+        "title": "Longitud, diferencia de longitud y el antimeridiano",
+        "text": [
+          "La **diferencia de longitud** (*difference of longitude*, d.long) es cuánto te has desplazado hacia el este o el oeste: la diferencia entre las longitudes de los dos puntos, con nombre E si el destino queda más al este y W si más al oeste. Si ambos puntos están al mismo lado de Greenwich, **restas**; si están a lados distintos, **sumas**, porque cruzas el meridiano 0°.",
+          "El truco aparece al cruzar el **antimeridiano**, el meridiano de 180° opuesto al de Greenwich (por donde pasa, con desvíos, la línea de cambio de fecha). Las longitudes solo llegan hasta 180°, así que pasado el 180° E no sigues con 181° E: **empiezas a contar en el oeste**. Cuando al sumar una longitud este superes 180°, resta ese resultado de 360° y cambia E por W (190° E es 170° W). Al revés, si al restar desde una longitud oeste sobrepasas 180° W, haces lo mismo con W y E intercambiados. Y para saber cuánto te has movido entre 170° E y 170° W no restes 170 − 170 (cero): el camino corto son 10° + 10° = 20° hacia el este. La d.long nunca pasa de 180°."
+        ],
+        "formulas": [
+          {
+            "f": "Longitud de llegada = longitud de salida ± d.long (este suma, oeste resta); si pasa de 180°, se resta de 360° y se cambia E por W",
+            "note": "Siempre eliges el camino corto: la d.long entre dos puntos es como máximo 180°."
+          }
+        ],
+        "examples": [
+          {
+            "q": "De 003° E a 010° E.",
+            "a": "Mismo lado de Greenwich: 10 − 3 = 7° E."
+          },
+          {
+            "q": "De 005° W a 008° E.",
+            "a": "Lados distintos: 5 + 8 = 13° E."
+          },
+          {
+            "q": "De 170° E a 170° W.",
+            "a": "Cruzas el 180°: (180 − 170) + (180 − 170) = 20° E."
+          },
+          {
+            "q": "Sales de 160° E y avanzas 30° de longitud hacia el este. ¿Dónde llegas?",
+            "a": "160 + 30 = 190° E. Pasa de 180°, así que 360 − 190 = 170° y el nombre cambia: 170° W."
+          },
+          {
+            "q": "Sales de 170° W y avanzas 25° de longitud hacia el oeste.",
+            "a": "170 + 25 = 195° W (se suma hacia el oeste desde una longitud oeste). 360 − 195 = 165° y el nombre cambia: 165° E."
+          }
+        ],
+        "figure": "svg:060-antimeridiano",
+        "caption": "Al cruzar el antimeridiano la longitud pasa de E a O: 160° E más 30° hacia el este es 170° O.",
+        "ideas": [
+          "Es como el reloj: después de las doce no viene la «trece», vuelve la una. Después del 180° no viene el 181°, vuelves a contar desde el otro lado.",
+          "Piensa en un videojuego antiguo en que sales por el borde derecho de la pantalla y apareces por el izquierdo: el antimeridiano es ese borde de la pantalla del mundo."
+        ]
+      },
+      {
+        "title": "Medir distancias sobre la esfera",
+        "text": [
+          "Los meridianos son círculos máximos: a lo largo de uno, **1′ de latitud equivale a 1 NM** en cualquier lugar. Los paralelos son círculos cada vez más pequeños, por lo que **1′ de longitud mide 1 NM solo en el ecuador** y disminuye con el coseno de la latitud. La distancia este-oeste sobre un paralelo se llama apartamiento."
+        ],
+        "formulas": [
+          {
+            "f": "Distancia N-S (NM) = diferencia de latitud en minutos",
+            "note": "1° = 60 NM."
+          },
+          {
+            "f": "Distancia E-W (NM) = diferencia de longitud en minutos × cos(latitud)",
+            "note": "Solo sobre un paralelo."
+          },
+          {
+            "f": "Convergencia de meridianos ≈ diferencia de longitud × sen(latitud media)",
+            "note": "Es el cambio de rumbo verdadero a lo largo de una ortodrómica."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Distancia entre 40° N y 43° 30′ N sobre el mismo meridiano.",
+            "a": "Diferencia de 3° 30′ = 210′, es decir, 210 NM."
+          },
+          {
+            "q": "Distancia sobre el paralelo de 40° N entre 002° W y 006° W.",
+            "a": "4° = 240′. 240 × cos 40° = 240 × 0,766 ≈ 184 NM."
+          },
+          {
+            "q": "A 60° N, ¿cuánto mide 1° de longitud?",
+            "a": "60′ × cos 60° = 60 × 0,5 = 30 NM."
+          },
+          {
+            "q": "Convergencia entre dos puntos separados 10° de longitud en el paralelo de 30° N.",
+            "a": "10° × sen 30° = 10° × 0,5 = 5°: el rumbo verdadero de la ortodrómica cambia 5° entre el principio y el final."
+          }
+        ],
+        "ideas": [
+          "Los meridianos son como los gajos de una naranja: separados en el ecuador y cada vez más juntos hacia el tallo y el polo opuesto. Un paso de 1° de longitud te cuesta mucho en el ecuador y casi nada junto al polo."
+        ]
+      }
+    ],
+    "numbers": [
+      "Rotación de oeste a este, 24 h; traslación, 365,25 días",
+      "Inclinación del eje: 23,5°; trópicos a 23,5° N y S; círculos polares a 66,5°",
+      "Circunferencia ecuatorial: 40 075 km (≈ 21 640 NM); polar: 40 008 km (≈ 21 600 NM)",
+      "1′ de latitud = 1 NM = 1852 m; 1° = 60 NM",
+      "1′ de longitud = 1 NM × cos(latitud)",
+      "Altura del Sol al mediodía = 90° − |latitud − declinación|",
+      "Longitud de 0° a 180° E/W; al pasar de 180°, restar de 360° y cambiar E/W",
+      "Convergencia ≈ Δlongitud × sen(latitud media)"
+    ],
+    "traps": [
+      "Las estaciones se deben a la inclinación del eje, no a la distancia al Sol.",
+      "1′ de longitud solo es 1 NM en el ecuador; en latitud 60° es la mitad.",
+      "En Mercator una recta es una loxodrómica, no una ortodrómica.",
+      "Un paralelo es una loxodrómica (rumbo constante 090° o 270°) pero no la distancia más corta.",
+      "Ecuador y meridianos son círculos máximos; los demás paralelos no.",
+      "Al cruzar el 180° no se sigue con 181° E: 190° E es 170° W.",
+      "Si los dos puntos están a lados distintos del ecuador (o de Greenwich) hay que sumar las diferencias, no restar.",
+      "El Sol sale exactamente por el este solo en los equinoccios."
+    ],
+    "sources": [
+      {
+        "title": "OACI, Anexo 4 y Doc 9674: sistema geodésico mundial WGS-84"
+      },
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 16",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "ENAIRE, AIP España, GEN 2.1 (unidades) y AD (coordenadas)",
+        "url": "https://aip.enaire.es/"
+      }
+    ],
+    "id": "060.01",
+    "reviewed": "2026-11-23",
+    "course": "Tema 1 · La Tierra y el Sol",
+    "outline": [
+      {
+        "title": "Movimientos",
+        "items": [
+          "Rotación: oeste a este, 24 h; día y noche",
+          "Traslación: 365,25 días; años bisiestos",
+          "Eje inclinado 23,5°: causa de las estaciones"
+        ]
+      },
+      {
+        "title": "El Sol visto desde la Tierra",
+        "items": [
+          "Movimiento diario aparente por la rotación",
+          "Verano: trayectoria alta y larga; invierno: baja y corta",
+          "Altura a mediodía = 90° − |lat − decl|",
+          "Solsticios, equinoccios y deslumbramiento VFR"
+        ]
+      },
+      {
+        "title": "Forma y tamaño",
+        "items": [
+          "Esferoide achatado; WGS-84",
+          "Ecuatorial 40 075 km (21 640 NM); polar 40 008 km (21 600 NM)",
+          "1′ = 1 NM = 1852 m"
+        ]
+      },
+      {
+        "title": "Círculos",
+        "items": [
+          "Máximo: ecuador y meridianos",
+          "Menor: resto de paralelos",
+          "Ortodrómica: la más corta",
+          "Loxodrómica: rumbo constante"
+        ]
+      },
+      {
+        "title": "Coordenadas y diferencias",
+        "items": [
+          "Latitud 0°-90° N/S; longitud 0°-180° E/W",
+          "d.lat: resta o suma según hemisferio",
+          "d.long: resta, suma o cruce del 180°"
+        ]
+      },
+      {
+        "title": "Distancias",
+        "items": [
+          "1′ de latitud = 1 NM siempre",
+          "1′ de longitud = cos lat NM",
+          "Convergencia ≈ d.long × sen lat"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "Estaciones: el eje inclinado, no la distancia; en enero la Tierra está más cerca del Sol y aquí es invierno.",
+      "Equinoccio, «noche igual»; solsticio, «Sol quieto» en su punto más alto o más bajo.",
+      "Altura del Sol a mediodía: noventa menos lo que te separa de la declinación (90 − |lat − dec|).",
+      "Cruzar el 180°: sumo, si paso de 180 lo resto de 360 y cambio E por W (Pac-Man).",
+      "Latitud, peldaños desde el ecuador (1′ = 1 NM); longitud, gajos de naranja (se estrechan con cos lat)."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Por qué hay estaciones si la distancia al Sol casi no cambia?",
+        "a": "Por la inclinación del eje (23,5°): según la época, un hemisferio recibe los rayos más verticales y más horas de Sol que el otro."
+      },
+      {
+        "q": "¿Por qué el Sol parece moverse de este a oeste?",
+        "a": "Porque la Tierra gira de oeste a este: nosotros nos movemos bajo un Sol fijo."
+      },
+      {
+        "q": "¿Cuál es la altura del Sol al mediodía a 40° N en un equinoccio y por qué?",
+        "a": "50°: 90° − 40° con declinación 0°."
+      },
+      {
+        "q": "¿Cuál es la diferencia entre ortodrómica y loxodrómica?",
+        "a": "La ortodrómica es el arco de círculo máximo, el camino más corto; la loxodrómica corta los meridianos con ángulo constante (rumbo fijo) y suele ser más larga."
+      },
+      {
+        "q": "Sales de 170° E y avanzas 25° de longitud hacia el este. ¿Dónde llegas?",
+        "a": "170 + 25 = 195° E, que son 165° W (360 − 195 y se cambia el nombre)."
+      },
+      {
+        "q": "¿Cuántas NM mide 1° de longitud a 60° N?",
+        "a": "30 NM: 60′ × cos 60° = 60 × 0,5."
+      },
+      {
+        "q": "¿Por qué 1′ de latitud es siempre 1 NM?",
+        "a": "Porque la milla náutica se definió como 1′ de arco de meridiano, que es un círculo máximo."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "060.01.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "La causa de las estaciones del año es:",
+      "options": [
+        "La actividad solar",
+        "La distancia variable de la Tierra al Sol",
+        "La inclinación del eje de la Tierra respecto a su órbita",
+        "El giro de la Tierra sobre su eje"
       ],
-      [
-       "21 de junio",
-       "Solsticio de verano (hemisferio norte)",
-       "+23,5° (trópico de Cáncer)",
-       "Día más largo en el norte; el Sol de mediodía más alto"
+      "correct": 2,
+      "why": "El eje está inclinado unos 23,5°; según la fecha, un hemisferio recibe más rayos verticales y más horas de sol que el otro.",
+      "whyNot": [
+        "No varía con el ciclo anual.",
+        "La Tierra está más cerca del Sol en enero, en pleno invierno del norte.",
+        null,
+        "La rotación produce el día y la noche, no las estaciones."
       ],
-      [
-       "22-23 de septiembre",
-       "Equinoccio de otoño",
-       "0°",
-       "Sol en el cenit sobre el ecuador de nuevo"
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.01.002",
+      "type": "regla",
+      "level": 1,
+      "q": "El Sol está en el cenit sobre el trópico de Cáncer en:",
+      "options": [
+        "El solsticio de diciembre",
+        "El solsticio de junio",
+        "El equinoccio de marzo",
+        "El equinoccio de septiembre"
       ],
-      [
-       "21 de diciembre",
-       "Solsticio de invierno (hemisferio norte)",
-       "−23,5° (trópico de Capricornio)",
-       "Día más corto en el norte"
-      ]
-     ],
-     "src": "Datos astronómicos estándar"
+      "correct": 1,
+      "why": "El 21 de junio la declinación del Sol es +23,5°, la latitud del trópico de Cáncer.",
+      "whyNot": [
+        "En diciembre está sobre el trópico de Capricornio.",
+        null,
+        "En el equinoccio el Sol está sobre el ecuador.",
+        "En septiembre está sobre el ecuador."
+      ],
+      "ref": "Astronomía de posición"
+    },
+    {
+      "id": "060.01.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "En cuál de estas situaciones están más cerca el Sol y la Tierra:",
+      "options": [
+        "A principios de enero",
+        "A principios de julio",
+        "En el solsticio de junio",
+        "En el equinoccio de marzo"
+      ],
+      "correct": 0,
+      "why": "El perihelio es a principios de enero. La distancia varía poco y no es la causa de las estaciones.",
+      "whyNot": [
+        null,
+        "Es el afelio, el punto más lejano.",
+        "No coincide con el solsticio.",
+        "No hay relación con el equinoccio."
+      ],
+      "ref": "Astronomía de posición"
+    },
+    {
+      "id": "060.01.004",
+      "type": "concepto",
+      "level": 1,
+      "q": "La Tierra gira sobre su eje en sentido:",
+      "options": [
+        "De oeste a este",
+        "De sur a norte",
+        "De norte a sur",
+        "De este a oeste"
+      ],
+      "correct": 0,
+      "why": "La rotación es de oeste a este, y por eso el Sol parece salir por el este.",
+      "whyNot": [
+        null,
+        "El eje es norte-sur.",
+        "El eje es norte-sur.",
+        "Ese es el sentido aparente del Sol."
+      ],
+      "ref": "Astronomía de posición"
+    },
+    {
+      "id": "060.01.005",
+      "type": "regla",
+      "level": 2,
+      "q": "En un equinoccio, el Sol al mediodía está en el cenit sobre:",
+      "options": [
+        "El trópico de Capricornio",
+        "El trópico de Cáncer",
+        "El ecuador",
+        "Los polos"
+      ],
+      "correct": 2,
+      "why": "En los equinoccios la declinación del Sol es 0°: el Sol está sobre el ecuador y el día dura casi igual que la noche en todo el mundo.",
+      "whyNot": [
+        "Está ahí solo en el solsticio de diciembre.",
+        "Está ahí solo en el solsticio de junio.",
+        null,
+        "Nunca está en el cenit sobre los polos."
+      ],
+      "ref": "Astronomía de posición"
+    },
+    {
+      "id": "060.01.006",
+      "type": "concepto",
+      "level": 1,
+      "q": "Un círculo máximo de la Tierra es:",
+      "options": [
+        "Un círculo cuyo plano pasa por el centro de la Tierra",
+        "Un círculo cuyo plano no pasa por el centro",
+        "Una línea de rumbo constante",
+        "Cualquier paralelo"
+      ],
+      "correct": 0,
+      "why": "Un círculo máximo es la intersección de la esfera con un plano que pasa por su centro. Son el ecuador y los meridianos.",
+      "whyNot": [
+        null,
+        "Es la definición de círculo menor.",
+        "Es una loxodrómica.",
+        "Los paralelos, excepto el ecuador, son círculos menores."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.01.007",
+      "type": "concepto",
+      "level": 1,
+      "q": "La ortodrómica entre dos puntos es:",
+      "options": [
+        "Un paralelo",
+        "El arco de círculo máximo, la distancia más corta",
+        "Una línea recta sobre cualquier carta",
+        "La línea de rumbo constante"
+      ],
+      "correct": 1,
+      "why": "La ortodrómica es el arco de círculo máximo que une los dos puntos, el camino más corto sobre la esfera.",
+      "whyNot": [
+        "Un paralelo no es ortodrómica salvo el ecuador.",
+        null,
+        "Solo en Lambert se aproxima a una recta.",
+        "Esa es la loxodrómica."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.01.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "La loxodrómica se caracteriza por:",
+      "options": [
+        "Tener rumbo variable",
+        "Ser siempre la distancia más corta",
+        "Coincidir con un círculo máximo",
+        "Cortar a todos los meridianos con el mismo ángulo"
+      ],
+      "correct": 3,
+      "why": "Una loxodrómica es una línea de rumbo constante: corta los meridianos con un ángulo fijo.",
+      "whyNot": [
+        "Tiene rumbo constante.",
+        "La distancia más corta es la ortodrómica.",
+        "Solo coincide en meridianos y ecuador.",
+        null
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.01.009",
+      "type": "regla",
+      "level": 1,
+      "q": "Un minuto de latitud equivale a:",
+      "options": [
+        "1 SM",
+        "1 km",
+        "1 NM",
+        "Depende de la latitud"
+      ],
+      "correct": 2,
+      "why": "Un minuto de arco de meridiano mide una milla náutica (1852 m) en cualquier latitud.",
+      "whyNot": [
+        "1 SM = 1609 m.",
+        "1 NM = 1,852 km.",
+        null,
+        "Es el minuto de longitud el que depende de la latitud."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.01.010",
+      "type": "calculo",
+      "level": 1,
+      "q": "La distancia sobre un meridiano entre 40° N y 43° 30′ N es:",
+      "options": [
+        "210 NM",
+        "350 NM",
+        "420 NM",
+        "180 NM"
+      ],
+      "correct": 0,
+      "why": "3° 30′ son 210′, y 1′ = 1 NM.",
+      "whyNot": [
+        null,
+        "Se obtiene al contar 3° 30′ como 350′.",
+        "Es el doble de la correcta.",
+        "Es la distancia de 3° exactos."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.01.011",
+      "type": "calculo",
+      "level": 2,
+      "q": "A 60° N, 1° de longitud equivale a:",
+      "options": [
+        "52 NM",
+        "15 NM",
+        "30 NM",
+        "60 NM"
+      ],
+      "correct": 2,
+      "why": "Distancia = 60′ × cos 60° = 30 NM.",
+      "whyNot": [
+        "Es el valor para 30° de latitud (60 × cos 30°).",
+        "Es la cuarta parte; el coseno de 60° es 0,5, no 0,25.",
+        null,
+        "Es el valor en el ecuador."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.01.012",
+      "type": "calculo",
+      "level": 2,
+      "q": "Entre 002° W y 006° W sobre el paralelo de 40° N hay aproximadamente:",
+      "options": [
+        "154 NM",
+        "184 NM",
+        "240 NM",
+        "313 NM"
+      ],
+      "correct": 1,
+      "why": "4° = 240′; 240 × cos 40° = 240 × 0,766 ≈ 184 NM.",
+      "whyNot": [
+        "Resulta de usar cos 50° en vez de cos 40°.",
+        null,
+        "Es la distancia en el ecuador (4° × 60).",
+        "Resulta de dividir entre el coseno en vez de multiplicar."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.01.013",
+      "type": "regla",
+      "level": 2,
+      "q": "La circunferencia de un círculo máximo de la Tierra mide aproximadamente:",
+      "options": [
+        "10 800 NM",
+        "5400 NM",
+        "40 000 NM",
+        "21 600 NM"
+      ],
+      "correct": 3,
+      "why": "360° × 60′ = 21 600 NM, equivalente a unos 40 000 km.",
+      "whyNot": [
+        "Es la mitad: 180° × 60′.",
+        "Es la cuarta parte del valor correcto.",
+        "Son kilómetros, no millas náuticas.",
+        null
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.01.014",
+      "type": "lectura",
+      "level": 1,
+      "q": "La coordenada 413700N 0020000E indica un punto:",
+      "data": "413700N 0020000E",
+      "options": [
+        "Al norte del ecuador y al oeste de Greenwich",
+        "Al norte del ecuador y al este de Greenwich",
+        "Al sur del ecuador y al oeste de Greenwich",
+        "Al sur del ecuador y al este de Greenwich"
+      ],
+      "correct": 1,
+      "why": "413700N es 41° 37′ 00″ N y 0020000E es 002° 00′ 00″ E. Los grados de longitud llevan tres cifras.",
+      "whyNot": [
+        "La E es este, no oeste.",
+        null,
+        "Ambas letras indican la dirección contraria.",
+        "La N es norte, no sur."
+      ],
+      "ref": "AIP España, GEN 2.1"
+    },
+    {
+      "id": "060.01.015",
+      "type": "concepto",
+      "level": 2,
+      "q": "La forma de la Tierra es:",
+      "options": [
+        "Una esfera perfecta",
+        "Un elipsoide alargado por los polos",
+        "Un cilindro",
+        "Un esferoide achatado por los polos"
+      ],
+      "correct": 3,
+      "why": "El radio ecuatorial es unos 21 km mayor que el polar: la Tierra está achatada por los polos. El WGS-84 es el elipsoide que la modela.",
+      "whyNot": [
+        "El radio polar es menor que el ecuatorial.",
+        "La forma es la contraria.",
+        "No es una esfera perfecta, sino ligeramente achatada.",
+        null
+      ],
+      "ref": "OACI Doc 9674 (WGS-84)"
+    },
+    {
+      "id": "060.01.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "A lo largo de una ortodrómica entre dos puntos de distinta longitud, el rumbo verdadero:",
+      "options": [
+        "Cambia continuamente, salvo en meridianos y ecuador",
+        "Es siempre constante",
+        "Es igual en origen y destino",
+        "Siempre disminuye 90°"
+      ],
+      "correct": 0,
+      "why": "Los meridianos convergen hacia los polos, así que el ángulo con el que el círculo máximo los corta cambia en cada punto.",
+      "whyNot": [
+        null,
+        "Eso es una loxodrómica.",
+        "Difiere en la convergencia de meridianos.",
+        "Esa afirmación no existe en navegación."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.01.017",
+      "type": "calculo",
+      "level": 3,
+      "q": "Convergencia aproximada de los meridianos entre dos puntos a 30° N separados 10° de longitud:",
+      "options": [
+        "3°",
+        "20°",
+        "10°",
+        "5°"
+      ],
+      "correct": 3,
+      "why": "Convergencia = Δlongitud × sen(latitud) = 10° × 0,5 = 5°.",
+      "whyNot": [
+        "Es el producto por cos 30° y redondeado.",
+        "Se obtiene al multiplicar por 2 el seno de 30°.",
+        "Es la diferencia de longitud, sin multiplicar por el seno.",
+        null
+      ],
+      "ref": "Navegación general"
+    },
+    {
+      "id": "060.01.018",
+      "type": "concepto",
+      "level": 1,
+      "q": "Un paralelo de latitud (distinto del ecuador) es:",
+      "options": [
+        "Un meridiano",
+        "Un círculo menor y una loxodrómica",
+        "Una ortodrómica",
+        "Un círculo máximo"
+      ],
+      "correct": 1,
+      "why": "Un paralelo es un círculo menor, y como corta los meridianos a 90° siempre, es una línea de rumbo constante (loxodrómica).",
+      "whyNot": [
+        "Los meridianos son perpendiculares a los paralelos.",
+        null,
+        "No es la distancia más corta.",
+        "Solo el ecuador lo es."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.01.019",
+      "type": "calculo",
+      "level": 2,
+      "q": "A 40° N, la altura del Sol al mediodía en el solsticio de invierno (declinación −23,5°) es de:",
+      "options": [
+        "50°",
+        "63,5°",
+        "26,5°",
+        "73,5°"
+      ],
+      "correct": 2,
+      "why": "Altura = 90° − |latitud − declinación| = 90° − |40° − (−23,5°)| = 90° − 63,5° = 26,5°. Es la época de las sombras más largas.",
+      "whyNot": [
+        "50° es la altura en un equinoccio (declinación 0°).",
+        "63,5° es la distancia al cenit, no la altura sobre el horizonte.",
+        null,
+        "73,5° es la altura en el solsticio de verano."
+      ],
+      "ref": "Curso Tema 1; fórmula de la altura meridiana del Sol"
+    },
+    {
+      "id": "060.01.020",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un avión vuela hacia el este desde 178° E hasta 172° W. La diferencia de longitud es:",
+      "options": [
+        "10° W",
+        "6° E",
+        "350° E",
+        "10° E"
+      ],
+      "correct": 3,
+      "why": "Cruzas el antimeridiano: de 178° E a 180° hay 2° y de 180° a 172° W hay 8°; en total 10° hacia el este. Se elige siempre el camino corto.",
+      "whyNot": [
+        "La dirección es este, no oeste.",
+        "6° sale de restar 178 − 172 sin tener en cuenta que son longitudes de nombre distinto.",
+        "350° sale de sumar 178 + 172, y es el camino largo: la d.long nunca pasa de 180°.",
+        null
+      ],
+      "ref": "Curso Tema 1 (diferencia de longitud)"
+    },
+    {
+      "id": "060.01.021",
+      "type": "calculo",
+      "level": 1,
+      "q": "Un avión pasa de 12° S a 8° N manteniendo el mismo meridiano. La distancia norte-sur recorrida es:",
+      "options": [
+        "1200 NM",
+        "240 NM",
+        "480 NM",
+        "720 NM"
+      ],
+      "correct": 0,
+      "why": "Los puntos están en hemisferios distintos, así que las latitudes se suman: 12° + 8° = 20° = 1200′ = 1200 NM.",
+      "whyNot": [
+        null,
+        "240 NM sale de restar 12° − 8° = 4°; al cruzar el ecuador hay que sumar.",
+        "480 NM son solo los 8° del hemisferio norte.",
+        "720 NM son solo los 12° del hemisferio sur."
+      ],
+      "ref": "Curso Tema 1 (diferencia de latitud)"
+    },
+    {
+      "id": "060.01.022",
+      "type": "concepto",
+      "level": 1,
+      "q": "En el solsticio de verano, en latitudes medias del hemisferio norte, la trayectoria aparente del Sol respecto a la del equinoccio es:",
+      "options": [
+        "más baja y más corta, con menos horas de luz",
+        "igual de alta pero recorrida más despacio",
+        "más alta, pero con el mismo número de horas de luz",
+        "más alta y más larga, con más horas de luz"
+      ],
+      "correct": 3,
+      "why": "En verano el hemisferio norte está inclinado hacia el Sol: la trayectoria es más alta y más larga, y el día dura más.",
+      "whyNot": [
+        "Eso ocurre en el solsticio de invierno.",
+        "La altura cambia y la duración del día también; no es una cuestión de velocidad.",
+        "Si la trayectoria es más larga, el día dura más.",
+        null
+      ],
+      "ref": "Curso Tema 1 (trayectoria del Sol)"
+    },
+    {
+      "id": "060.01.023",
+      "type": "regla",
+      "level": 1,
+      "q": "La circunferencia ecuatorial de la Tierra mide aproximadamente:",
+      "options": [
+        "21 600 km",
+        "40 075 NM",
+        "40 075 km, unas 21 640 NM",
+        "12 756 km"
+      ],
+      "correct": 2,
+      "why": "La circunferencia ecuatorial es de unos 40 075 km, que dividido entre 1,852 da casi 21 640 NM. La polar mide 40 008 km (unas 21 600 NM).",
+      "whyNot": [
+        "21 600 es el número de millas náuticas de 360° × 60′, no de kilómetros.",
+        "Confunde los kilómetros con las millas náuticas.",
+        null,
+        "12 756 km es aproximadamente el diámetro ecuatorial, no la circunferencia."
+      ],
+      "ref": "Curso Tema 1; WGS-84"
+    },
+    {
+      "id": "060.01.024",
+      "type": "concepto",
+      "level": 1,
+      "q": "Con el Sol bajo sobre el horizonte a primera hora de la mañana, la visibilidad de vuelo por deslumbramiento empeora sobre todo hacia:",
+      "options": [
+        "el oeste",
+        "el este",
+        "el norte",
+        "el sur"
+      ],
+      "correct": 1,
+      "why": "Por la mañana el Sol sale por el este (aproximadamente), así que mirar hacia allí con el Sol bajo deslumbra. Por la tarde ocurre hacia el oeste.",
+      "whyNot": [
+        "El oeste es el lado del deslumbramiento por la tarde.",
+        null,
+        "El Sol no sale por el norte.",
+        "El Sol al amanecer no está al sur."
+      ],
+      "ref": "Curso Tema 1 (relación con la navegación aérea)"
     }
-   },
-   {
-    "title": "Forma de la Tierra",
-    "text": [
-     "La Tierra no es una esfera perfecta, sino un **esferoide achatado por los polos**: el radio ecuatorial (unos 6378 km) es unos 21 km mayor que el polar (6357 km). El achatamiento es de 1/298. Para la navegación se usa el **elipsoide WGS-84**, que es el modelo del GPS; el **geoide** es la superficie de nivel medio del mar, que es la referencia real de las altitudes.",
-     "Para cálculos de navegación VFR se trata como esfera. De ahí salen las dos equivalencias que debes saber: una circunferencia de círculo máximo mide **360° × 60′ = 21 600 NM** y **1′ de arco = 1 NM = 1852 m**."
-    ]
-   },
-   {
-    "title": "Círculos máximos y menores",
-    "text": [
-     "Un **círculo máximo** es la intersección de la esfera con un plano que pasa por su centro. Es el círculo más grande que se puede dibujar sobre ella y divide la esfera en dos mitades iguales. El **ecuador** y todos los **meridianos** (unidos con su antimeridiano) son círculos máximos. Un **círculo menor** es la intersección con un plano que no pasa por el centro: todos los **paralelos** salvo el ecuador lo son.",
-     "La distancia más corta entre dos puntos de la superficie es un arco de círculo máximo, la **ortodrómica**. Una **loxodrómica** es la línea que corta a todos los meridianos con el mismo ángulo: tiene rumbo constante, pero es más larga salvo que sea un meridiano o un paralelo."
-    ],
-    "figure": "svg:060-esfera",
-    "caption": "El ecuador y los meridianos son círculos máximos; el resto de los paralelos, círculos menores.",
-    "bullets": [
-     "Ortodrómica: arco de círculo máximo; distancia mínima; el rumbo verdadero cambia a lo largo de la ruta salvo en meridianos y ecuador.",
-     "Loxodrómica: rumbo constante respecto a los meridianos; en Mercator es una recta; se curva hacia el polo en forma de espiral.",
-     "Un meridiano y el ecuador son a la vez ortodrómica y loxodrómica; un paralelo (distinto del ecuador) es una loxodrómica, no una ortodrómica."
-    ]
-   },
-   {
-    "title": "Latitud y longitud",
-    "text": [
-     "La **latitud** es el ángulo, medido en el centro de la Tierra, entre el ecuador y el punto: de 0° a 90°, Norte o Sur. La **longitud** es el ángulo entre el meridiano de Greenwich y el meridiano del punto: de 0° a 180°, Este u Oeste. Se escriben en grados, minutos y segundos. Madrid-Barajas está en 40° 28′ N, 003° 34′ W.",
-     "En la AIP y en las cartas las coordenadas se publican en el formato de seis y siete cifras: **402800N 0033400W** significa 40° 28′ 00″ N y 003° 34′ 00″ W. Los grados de longitud llevan siempre tres cifras."
-    ],
-    "examples": [
-     {
-      "q": "Interpreta 413700N 0020000E.",
-      "a": "41° 37′ 00″ de latitud norte y 002° 00′ 00″ de longitud este, es decir, al este de Greenwich."
-     }
-    ]
-   },
-   {
-    "title": "Medir distancias sobre la esfera",
-    "text": [
-     "Los meridianos son círculos máximos: a lo largo de uno, **1′ de latitud equivale a 1 NM** en cualquier lugar. Los paralelos son círculos cada vez más pequeños, por lo que **1′ de longitud mide 1 NM solo en el ecuador** y disminuye con el coseno de la latitud. La distancia este-oeste sobre un paralelo se llama apartamiento."
-    ],
-    "formulas": [
-     {
-      "f": "Distancia N-S (NM) = diferencia de latitud en minutos",
-      "note": "1° = 60 NM."
-     },
-     {
-      "f": "Distancia E-W (NM) = diferencia de longitud en minutos × cos(latitud)",
-      "note": "Solo sobre un paralelo."
-     },
-     {
-      "f": "Convergencia de meridianos ≈ diferencia de longitud × sen(latitud media)",
-      "note": "Es el cambio de rumbo verdadero a lo largo de una ortodrómica."
-     }
-    ],
-    "examples": [
-     {
-      "q": "Distancia entre 40° N y 43° 30′ N sobre el mismo meridiano.",
-      "a": "Diferencia de 3° 30′ = 210′, es decir, 210 NM."
-     },
-     {
-      "q": "Distancia sobre el paralelo de 40° N entre 002° W y 006° W.",
-      "a": "4° = 240′. 240 × cos 40° = 240 × 0,766 ≈ 184 NM."
-     },
-     {
-      "q": "A 60° N, ¿cuánto mide 1° de longitud?",
-      "a": "60′ × cos 60° = 60 × 0,5 = 30 NM."
-     },
-     {
-      "q": "Convergencia entre dos puntos separados 10° de longitud en el paralelo de 30° N.",
-      "a": "10° × sen 30° = 10° × 0,5 = 5°: el rumbo verdadero de la ortodrómica cambia 5° entre el principio y el final."
-     }
-    ]
-   }
   ],
-  "numbers": [
-   "Rotación de oeste a este, 24 h; traslación, 365,25 días",
-   "Inclinación del eje: 23,5°; trópicos a 23,5° N y S; círculos polares a 66,5°",
-   "Circunferencia de círculo máximo: 21 600 NM; 1′ = 1 NM = 1852 m",
-   "1′ de latitud = 1 NM; 1′ de longitud = 1 NM × cos(latitud)",
-   "Latitud de 0° a 90°; longitud de 0° a 180°",
-   "Convergencia ≈ Δlongitud × sen(latitud media)"
-  ],
-  "traps": [
-   "Las estaciones se deben a la inclinación del eje, no a la distancia al Sol.",
-   "1′ de longitud solo es 1 NM en el ecuador; en latitud 60° es la mitad.",
-   "En Mercator una recta es una loxodrómica, no una ortodrómica.",
-   "Un paralelo es una loxodrómica (rumbo constante 090° o 270°) pero no la distancia más corta.",
-   "Ecuador y meridianos son círculos máximos; los demás paralelos no."
-  ],
-  "sources": [
-   {
-    "title": "OACI, Anexo 4 y Doc 9674: sistema geodésico mundial WGS-84"
-   },
-   {
-    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 16",
-    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
-   },
-   {
-    "title": "ENAIRE, AIP España, GEN 2.1 (unidades) y AD (coordenadas)",
-    "url": "https://aip.enaire.es/"
-   }
-  ],
-  "id": "060.01",
-  "reviewed": "2026-10-09"
- },
- "questions": [
-  {
-   "id": "060.01.001",
-   "type": "concepto",
-   "level": 1,
-   "q": "La causa de las estaciones del año es:",
-   "options": [
-    "La actividad solar",
-    "La distancia variable de la Tierra al Sol",
-    "La inclinación del eje de la Tierra respecto a su órbita",
-    "El giro de la Tierra sobre su eje"
-   ],
-   "correct": 2,
-   "why": "El eje está inclinado unos 23,5°; según la fecha, un hemisferio recibe más rayos verticales y más horas de sol que el otro.",
-   "whyNot": [
-    "No varía con el ciclo anual.",
-    "La Tierra está más cerca del Sol en enero, en pleno invierno del norte.",
-    null,
-    "La rotación produce el día y la noche, no las estaciones."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.01.002",
-   "type": "regla",
-   "level": 1,
-   "q": "El Sol está en el cenit sobre el trópico de Cáncer en:",
-   "options": [
-    "El solsticio de diciembre",
-    "El solsticio de junio",
-    "El equinoccio de marzo",
-    "El equinoccio de septiembre"
-   ],
-   "correct": 1,
-   "why": "El 21 de junio la declinación del Sol es +23,5°, la latitud del trópico de Cáncer.",
-   "whyNot": [
-    "En diciembre está sobre el trópico de Capricornio.",
-    null,
-    "En el equinoccio el Sol está sobre el ecuador.",
-    "En septiembre está sobre el ecuador."
-   ],
-   "ref": "Astronomía de posición"
-  },
-  {
-   "id": "060.01.003",
-   "type": "concepto",
-   "level": 1,
-   "q": "En cuál de estas situaciones están más cerca el Sol y la Tierra:",
-   "options": [
-    "A principios de enero",
-    "A principios de julio",
-    "En el solsticio de junio",
-    "En el equinoccio de marzo"
-   ],
-   "correct": 0,
-   "why": "El perihelio es a principios de enero. La distancia varía poco y no es la causa de las estaciones.",
-   "whyNot": [
-    null,
-    "Es el afelio, el punto más lejano.",
-    "No coincide con el solsticio.",
-    "No hay relación con el equinoccio."
-   ],
-   "ref": "Astronomía de posición"
-  },
-  {
-   "id": "060.01.004",
-   "type": "concepto",
-   "level": 1,
-   "q": "La Tierra gira sobre su eje en sentido:",
-   "options": [
-    "De oeste a este",
-    "De sur a norte",
-    "De norte a sur",
-    "De este a oeste"
-   ],
-   "correct": 0,
-   "why": "La rotación es de oeste a este, y por eso el Sol parece salir por el este.",
-   "whyNot": [
-    null,
-    "El eje es norte-sur.",
-    "El eje es norte-sur.",
-    "Ese es el sentido aparente del Sol."
-   ],
-   "ref": "Astronomía de posición"
-  },
-  {
-   "id": "060.01.005",
-   "type": "regla",
-   "level": 2,
-   "q": "En un equinoccio, el Sol al mediodía está en el cenit sobre:",
-   "options": [
-    "El trópico de Capricornio",
-    "El trópico de Cáncer",
-    "El ecuador",
-    "Los polos"
-   ],
-   "correct": 2,
-   "why": "En los equinoccios la declinación del Sol es 0°: el Sol está sobre el ecuador y el día dura casi igual que la noche en todo el mundo.",
-   "whyNot": [
-    "Está ahí solo en el solsticio de diciembre.",
-    "Está ahí solo en el solsticio de junio.",
-    null,
-    "Nunca está en el cenit sobre los polos."
-   ],
-   "ref": "Astronomía de posición"
-  },
-  {
-   "id": "060.01.006",
-   "type": "concepto",
-   "level": 1,
-   "q": "Un círculo máximo de la Tierra es:",
-   "options": [
-    "Un círculo cuyo plano pasa por el centro de la Tierra",
-    "Un círculo cuyo plano no pasa por el centro",
-    "Una línea de rumbo constante",
-    "Cualquier paralelo"
-   ],
-   "correct": 0,
-   "why": "Un círculo máximo es la intersección de la esfera con un plano que pasa por su centro. Son el ecuador y los meridianos.",
-   "whyNot": [
-    null,
-    "Es la definición de círculo menor.",
-    "Es una loxodrómica.",
-    "Los paralelos, excepto el ecuador, son círculos menores."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.01.007",
-   "type": "concepto",
-   "level": 1,
-   "q": "La ortodrómica entre dos puntos es:",
-   "options": [
-    "Un paralelo",
-    "El arco de círculo máximo, la distancia más corta",
-    "Una línea recta sobre cualquier carta",
-    "La línea de rumbo constante"
-   ],
-   "correct": 1,
-   "why": "La ortodrómica es el arco de círculo máximo que une los dos puntos, el camino más corto sobre la esfera.",
-   "whyNot": [
-    "Un paralelo no es ortodrómica salvo el ecuador.",
-    null,
-    "Solo en Lambert se aproxima a una recta.",
-    "Esa es la loxodrómica."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.01.008",
-   "type": "concepto",
-   "level": 2,
-   "q": "La loxodrómica se caracteriza por:",
-   "options": [
-    "Tener rumbo variable",
-    "Ser siempre la distancia más corta",
-    "Coincidir con un círculo máximo",
-    "Cortar a todos los meridianos con el mismo ángulo"
-   ],
-   "correct": 3,
-   "why": "Una loxodrómica es una línea de rumbo constante: corta los meridianos con un ángulo fijo.",
-   "whyNot": [
-    "Tiene rumbo constante.",
-    "La distancia más corta es la ortodrómica.",
-    "Solo coincide en meridianos y ecuador.",
-    null
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.01.009",
-   "type": "regla",
-   "level": 1,
-   "q": "Un minuto de latitud equivale a:",
-   "options": [
-    "1 SM",
-    "1 km",
-    "1 NM",
-    "Depende de la latitud"
-   ],
-   "correct": 2,
-   "why": "Un minuto de arco de meridiano mide una milla náutica (1852 m) en cualquier latitud.",
-   "whyNot": [
-    "1 SM = 1609 m.",
-    "1 NM = 1,852 km.",
-    null,
-    "Es el minuto de longitud el que depende de la latitud."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.01.010",
-   "type": "calculo",
-   "level": 1,
-   "q": "La distancia sobre un meridiano entre 40° N y 43° 30′ N es:",
-   "options": [
-    "210 NM",
-    "350 NM",
-    "420 NM",
-    "180 NM"
-   ],
-   "correct": 0,
-   "why": "3° 30′ son 210′, y 1′ = 1 NM.",
-   "whyNot": [
-    null,
-    "Se obtiene al contar 3° 30′ como 350′.",
-    "Es el doble de la correcta.",
-    "Es la distancia de 3° exactos."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.01.011",
-   "type": "calculo",
-   "level": 2,
-   "q": "A 60° N, 1° de longitud equivale a:",
-   "options": [
-    "52 NM",
-    "15 NM",
-    "30 NM",
-    "60 NM"
-   ],
-   "correct": 2,
-   "why": "Distancia = 60′ × cos 60° = 30 NM.",
-   "whyNot": [
-    "Es el valor para 30° de latitud (60 × cos 30°).",
-    "Es la cuarta parte; el coseno de 60° es 0,5, no 0,25.",
-    null,
-    "Es el valor en el ecuador."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.01.012",
-   "type": "calculo",
-   "level": 2,
-   "q": "Entre 002° W y 006° W sobre el paralelo de 40° N hay aproximadamente:",
-   "options": [
-    "154 NM",
-    "184 NM",
-    "240 NM",
-    "313 NM"
-   ],
-   "correct": 1,
-   "why": "4° = 240′; 240 × cos 40° = 240 × 0,766 ≈ 184 NM.",
-   "whyNot": [
-    "Resulta de usar cos 50° en vez de cos 40°.",
-    null,
-    "Es la distancia en el ecuador (4° × 60).",
-    "Resulta de dividir entre el coseno en vez de multiplicar."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.01.013",
-   "type": "regla",
-   "level": 2,
-   "q": "La circunferencia de un círculo máximo de la Tierra mide aproximadamente:",
-   "options": [
-    "10 800 NM",
-    "5400 NM",
-    "40 000 NM",
-    "21 600 NM"
-   ],
-   "correct": 3,
-   "why": "360° × 60′ = 21 600 NM, equivalente a unos 40 000 km.",
-   "whyNot": [
-    "Es la mitad: 180° × 60′.",
-    "Es la cuarta parte del valor correcto.",
-    "Son kilómetros, no millas náuticas.",
-    null
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.01.014",
-   "type": "lectura",
-   "level": 1,
-   "q": "La coordenada 413700N 0020000E indica un punto:",
-   "data": "413700N 0020000E",
-   "options": [
-    "Al norte del ecuador y al oeste de Greenwich",
-    "Al norte del ecuador y al este de Greenwich",
-    "Al sur del ecuador y al oeste de Greenwich",
-    "Al sur del ecuador y al este de Greenwich"
-   ],
-   "correct": 1,
-   "why": "413700N es 41° 37′ 00″ N y 0020000E es 002° 00′ 00″ E. Los grados de longitud llevan tres cifras.",
-   "whyNot": [
-    "La E es este, no oeste.",
-    null,
-    "Ambas letras indican la dirección contraria.",
-    "La N es norte, no sur."
-   ],
-   "ref": "AIP España, GEN 2.1"
-  },
-  {
-   "id": "060.01.015",
-   "type": "concepto",
-   "level": 2,
-   "q": "La forma de la Tierra es:",
-   "options": [
-    "Una esfera perfecta",
-    "Un elipsoide alargado por los polos",
-    "Un cilindro",
-    "Un esferoide achatado por los polos"
-   ],
-   "correct": 3,
-   "why": "El radio ecuatorial es unos 21 km mayor que el polar: la Tierra está achatada por los polos. El WGS-84 es el elipsoide que la modela.",
-   "whyNot": [
-    "El radio polar es menor que el ecuatorial.",
-    "La forma es la contraria.",
-    "No es una esfera perfecta, sino ligeramente achatada.",
-    null
-   ],
-   "ref": "OACI Doc 9674 (WGS-84)"
-  },
-  {
-   "id": "060.01.016",
-   "type": "concepto",
-   "level": 2,
-   "q": "A lo largo de una ortodrómica entre dos puntos de distinta longitud, el rumbo verdadero:",
-   "options": [
-    "Cambia continuamente, salvo en meridianos y ecuador",
-    "Es siempre constante",
-    "Es igual en origen y destino",
-    "Siempre disminuye 90°"
-   ],
-   "correct": 0,
-   "why": "Los meridianos convergen hacia los polos, así que el ángulo con el que el círculo máximo los corta cambia en cada punto.",
-   "whyNot": [
-    null,
-    "Eso es una loxodrómica.",
-    "Difiere en la convergencia de meridianos.",
-    "Esa afirmación no existe en navegación."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.01.017",
-   "type": "calculo",
-   "level": 3,
-   "q": "Convergencia aproximada de los meridianos entre dos puntos a 30° N separados 10° de longitud:",
-   "options": [
-    "3°",
-    "20°",
-    "10°",
-    "5°"
-   ],
-   "correct": 3,
-   "why": "Convergencia = Δlongitud × sen(latitud) = 10° × 0,5 = 5°.",
-   "whyNot": [
-    "Es el producto por cos 30° y redondeado.",
-    "Se obtiene al multiplicar por 2 el seno de 30°.",
-    "Es la diferencia de longitud, sin multiplicar por el seno.",
-    null
-   ],
-   "ref": "Navegación general"
-  },
-  {
-   "id": "060.01.018",
-   "type": "concepto",
-   "level": 1,
-   "q": "Un paralelo de latitud (distinto del ecuador) es:",
-   "options": [
-    "Un meridiano",
-    "Un círculo menor y una loxodrómica",
-    "Una ortodrómica",
-    "Un círculo máximo"
-   ],
-   "correct": 1,
-   "why": "Un paralelo es un círculo menor, y como corta los meridianos a 90° siempre, es una línea de rumbo constante (loxodrómica).",
-   "whyNot": [
-    "Los meridianos son perpendiculares a los paralelos.",
-    null,
-    "No es la distancia más corta.",
-    "Solo el ecuador lo es."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  }
- ],
- "cards": [
-  {
-   "id": "c.060.01.01",
-   "front": "Causa de las estaciones",
-   "back": "Inclinación del eje terrestre (23,5°), no la distancia al Sol"
-  },
-  {
-   "id": "c.060.01.02",
-   "front": "Rotación de la Tierra",
-   "back": "De oeste a este, en 24 h; el Sol parece salir por el este"
-  },
-  {
-   "id": "c.060.01.03",
-   "front": "Círculo máximo",
-   "back": "Plano que pasa por el centro: ecuador y meridianos"
-  },
-  {
-   "id": "c.060.01.04",
-   "front": "Ortodrómica y loxodrómica",
-   "back": "Arco de círculo máximo (distancia mínima) y línea de rumbo constante"
-  },
-  {
-   "id": "c.060.01.05",
-   "front": "Equivalencias de longitud",
-   "back": "1′ de latitud = 1 NM = 1852 m; 1′ de longitud = 1 NM × cos(latitud)"
-  },
-  {
-   "id": "c.060.01.06",
-   "front": "Circunferencia de la Tierra",
-   "back": "360° × 60′ = 21 600 NM"
-  },
-  {
-   "id": "c.060.01.07",
-   "front": "Convergencia de meridianos",
-   "back": "Δlongitud × sen(latitud media)"
-  }
- ]
+  "cards": [
+    {
+      "id": "c.060.01.01",
+      "front": "Causa de las estaciones",
+      "back": "Inclinación del eje terrestre (23,5°), no la distancia al Sol"
+    },
+    {
+      "id": "c.060.01.02",
+      "front": "Rotación de la Tierra",
+      "back": "De oeste a este, en 24 h; el Sol parece salir por el este"
+    },
+    {
+      "id": "c.060.01.03",
+      "front": "Círculo máximo",
+      "back": "Plano que pasa por el centro: ecuador y meridianos"
+    },
+    {
+      "id": "c.060.01.04",
+      "front": "Ortodrómica y loxodrómica",
+      "back": "Arco de círculo máximo (distancia mínima) y línea de rumbo constante"
+    },
+    {
+      "id": "c.060.01.05",
+      "front": "Equivalencias de longitud",
+      "back": "1′ de latitud = 1 NM = 1852 m; 1′ de longitud = 1 NM × cos(latitud)"
+    },
+    {
+      "id": "c.060.01.06",
+      "front": "Circunferencia de la Tierra",
+      "back": "360° × 60′ = 21 600 NM"
+    },
+    {
+      "id": "c.060.01.07",
+      "front": "Convergencia de meridianos",
+      "back": "Δlongitud × sen(latitud media)"
+    },
+    {
+      "id": "c.060.01.08",
+      "front": "Altura del Sol al mediodía",
+      "back": "90° − |latitud − declinación|. A 40° N: 73,5° en junio, 50° en equinoccio, 26,5° en diciembre."
+    },
+    {
+      "id": "c.060.01.09",
+      "front": "Cruzar el antimeridiano",
+      "back": "Se suma la d.long; si pasa de 180°, se resta de 360° y se cambia E por W: 160° E + 30° = 170° W."
+    }
+  ]
 }

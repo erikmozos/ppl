@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340">
+<title>Lluvia engelante: nieve que cae, se funde en una capa cálida sobre cero y se sobreenfría en una capa fría junto al suelo, donde congela al chocar con el avión (esquema propio)</title>
+<defs><marker id="050-lluvia-engelante-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker></defs>
+<text x="90" y="22" class="tx b" text-anchor="middle">Temperatura</text>
+<line x1="30" y1="290" x2="150" y2="290" class="ln"/><line x1="30" y1="40" x2="30" y2="290" class="ln"/>
+<line x1="90" y1="40" x2="90" y2="290" class="wa-ln dash"/><text x="90" y="308" class="txw b" text-anchor="middle" font-size="12">0 °C</text>
+<polyline points="50,60 62,120 112,150 128,190 60,235 52,285" class="ac-ln thick" fill="none"/>
+<text x="30" y="324" class="tx2" font-size="11">frío</text><text x="150" y="324" class="tx2" font-size="11" text-anchor="end">cálido</text>
+<rect x="190" y="40" width="430" height="90" class="ac"/><rect x="190" y="130" width="430" height="80" class="wa"/><rect x="190" y="210" width="430" height="80" class="ac"/><rect x="190" y="290" width="430" height="20" class="ground"/>
+<text x="204" y="62" class="txa b">Capa fría de arriba: nieve</text><text x="204" y="80" class="tx2" font-size="12">los cristales bajan sin fundirse</text>
+<text x="204" y="152" class="txw b">Capa cálida (sobre 0 °C): lluvia</text><text x="204" y="170" class="tx2" font-size="12">la nieve se funde y las gotas crecen</text>
+<text x="204" y="232" class="txa b">Capa fría junto al suelo (bajo 0 °C)</text><text x="204" y="250" class="tx2" font-size="12">gotas sobreenfriadas: siguen líquidas</text>
+<line x1="420" y1="52" x2="412" y2="70" class="ln2"/>
+<line x1="420" y1="140" x2="412" y2="170" class="ac-ln"/>
+<line x1="420" y1="215" x2="412" y2="262" class="ac-ln"/>
+<line x1="470" y1="52" x2="462" y2="70" class="ln2"/>
+<line x1="470" y1="140" x2="462" y2="170" class="ac-ln"/>
+<line x1="470" y1="215" x2="462" y2="262" class="ac-ln"/>
+<line x1="520" y1="52" x2="512" y2="70" class="ln2"/>
+<line x1="520" y1="140" x2="512" y2="170" class="ac-ln"/>
+<line x1="520" y1="215" x2="512" y2="262" class="ac-ln"/>
+<line x1="570" y1="52" x2="562" y2="70" class="ln2"/>
+<line x1="570" y1="140" x2="562" y2="170" class="ac-ln"/>
+<line x1="570" y1="215" x2="562" y2="262" class="ac-ln"/>
+<path d="M470 270 L520 270 L532 264 L540 270 L548 270 L540 276 L520 278 L470 276 Z" class="ink-fill"/>
+<text x="508" y="304" class="txw b" text-anchor="middle" font-size="12">congela al chocar: hielo claro grueso</text>
+<text x="204" y="270" class="tx2" font-size="12">≈ 1000 ft de espesor</text>
+</svg>

@@ -1,368 +1,648 @@
 {
- "lesson": {
-  "title": "Coeficientes",
-  "summary": "Qué son CL y CD, de qué dependen, las fórmulas de sustentación y resistencia, la relación L/D y su uso para calcular la velocidad de pérdida.",
-  "objectives": [
-   "Explicar qué recogen los coeficientes CL y CD y por qué no tienen unidades",
-   "Calcular sustentación, resistencia y L/D con las fórmulas",
-   "Deducir la velocidad de pérdida a partir de CLmax",
-   "Relacionar cada coeficiente con el ángulo de ataque, los flaps y el estado de la superficie"
-  ],
-  "sections": [
-   {
-    "title": "Por qué existen los coeficientes",
-    "text": [
-     "La sustentación depende de muchas cosas: densidad, velocidad, tamaño del ala, forma del perfil, ángulo de ataque, flaps, estado de la superficie. Los ingenieros separan lo que se puede medir (densidad, velocidad, superficie) de todo lo demás, y meten «todo lo demás» en un número sin unidades: el **coeficiente de sustentación CL**. Igual para la resistencia, con el **coeficiente de resistencia CD**.",
-     "Dicho de otra forma: la presión dinámica ½ρV² mide la energía de la corriente, S dice cuánta ala tiene el aire que atacar, y CL (o CD) dice **cómo de eficaz** es esa ala en ese momento. Por eso se pueden comparar alas de tamaños muy distintos."
+  "lesson": {
+    "title": "Coeficientes",
+    "summary": "Qué son CL y CD, la fórmula de la sustentación factor a factor, cómo cambia L con la velocidad, la densidad, la superficie y el ángulo de ataque, la velocidad de pérdida desde CLmax y la finura L/D.",
+    "objectives": [
+      "Explicar qué recogen los coeficientes CL y CD y por qué no tienen unidades",
+      "Calcular sustentación, resistencia y L/D con las fórmulas",
+      "Deducir la velocidad de pérdida a partir de CLmax",
+      "Relacionar cada coeficiente con el ángulo de ataque, los flaps y el estado de la superficie"
     ],
-    "formulas": [
-     {
-      "f": "L = ½ · ρ · V² · S · CL",
-      "note": "Sustentación (N)."
-     },
-     {
-      "f": "D = ½ · ρ · V² · S · CD",
-      "note": "Resistencia (N)."
-     },
-     {
-      "f": "L / D = CL / CD",
-      "note": "Finura aerodinámica: a igual presión dinámica y superficie, la relación de fuerzas es la de coeficientes."
-     }
+    "sections": [
+      {
+        "title": "Por qué existen los coeficientes",
+        "text": [
+          "La sustentación depende de muchas cosas: densidad, velocidad, tamaño del ala, forma del perfil, ángulo de ataque, flaps, estado de la superficie. Los ingenieros separan lo que se puede medir (densidad, velocidad, superficie) de todo lo demás, y meten «todo lo demás» en un número sin unidades: el **coeficiente de sustentación CL**. Igual para la resistencia, con el **coeficiente de resistencia CD**.",
+          "Dicho de otra forma: la presión dinámica ½ρV² mide la energía de la corriente, S dice cuánta ala tiene el aire que atacar, y CL (o CD) dice **cómo de eficaz** es esa ala en ese momento. Por eso se pueden comparar alas de tamaños muy distintos."
+        ],
+        "formulas": [
+          {
+            "f": "L = ½ · ρ · V² · S · CL",
+            "note": "Sustentación (N)."
+          },
+          {
+            "f": "D = ½ · ρ · V² · S · CD",
+            "note": "Resistencia (N)."
+          },
+          {
+            "f": "L / D = CL / CD",
+            "note": "Finura aerodinámica: a igual presión dinámica y superficie, la relación de fuerzas es la de coeficientes."
+          }
+        ],
+        "ideas": [
+          "Un coeficiente es como un «índice de eficacia»: igual que el rendimiento de una bombilla se compara en lumen por vatio sin importar su tamaño, CL permite comparar alas de cualquier tamaño.",
+          "Es como el precio por kilo: independientemente de cuánta fruta compres, el precio por kilo describe la calidad de la oferta."
+        ]
+      },
+      {
+        "title": "La fórmula de la sustentación, factor a factor",
+        "text": [
+          "La sustentación se calcula con L = ½ · ρ · V² · S · CL, y cada factor tiene un papel distinto: ½ρV² es la presión dinámica, S la superficie sobre la que actúa y CL la eficacia con que el ala convierte esa presión en fuerza.",
+          "Lo importante para el examen es cómo escala cada factor. La velocidad entra **al cuadrado**: doblarla multiplica la sustentación por cuatro, y subirla un 10 % la aumenta un 21 %. La densidad y la superficie entran **de forma lineal**: la mitad de densidad, la mitad de sustentación. Y CL, que contiene el ángulo de ataque y la forma del perfil, es el factor que el piloto maneja con la palanca. En vuelo nivelado, la sustentación tiene que igualar siempre al peso: si cambia un factor, otro tiene que compensarlo."
+        ],
+        "table": {
+          "caption": "Cómo cambia la sustentación al variar un factor (los demás constantes)",
+          "head": [
+            "Cambio",
+            "Efecto en la sustentación",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Velocidad × 2",
+              "× 4",
+              "De 60 a 120 kt"
+            ],
+            [
+              "Velocidad + 10 %",
+              "+ 21 %",
+              "De 100 a 110 kt"
+            ],
+            [
+              "Velocidad × 0,5",
+              "× 0,25",
+              "De 100 a 50 kt"
+            ],
+            [
+              "Densidad × 0,74",
+              "× 0,74 (−26 %)",
+              "De nivel del mar a 10 000 ft con la misma TAS"
+            ],
+            [
+              "Superficie × 1,2",
+              "× 1,2",
+              "Flaps Fowler que alargan el ala"
+            ],
+            [
+              "α de 5° a 10° (tramo lineal)",
+              "Aprox. × 1,7",
+              "CL de 0,7 a 1,2 con a = 0,1 por grado y α0 = −2°"
+            ]
+          ],
+          "src": "Cálculo con L = ½ρV²S·CL"
+        },
+        "ideas": [
+          "La fórmula es como la receta de una paella: la velocidad es el fuego (cuenta al cuadrado), la densidad y la superficie son la cantidad de arroz y el tamaño de la paella, y el CL es lo bien que sabes cocinar.",
+          "Una vela de barco: más viento (V²) o más tela (S) dan más fuerza; un buen ajuste de la vela (CL) la exprime todavía más."
+        ]
+      },
+      {
+        "title": "De qué depende cada coeficiente",
+        "text": [
+          "CL y CD **dependen del ángulo de ataque** y de la forma del perfil y del ala; no dependen directamente de la velocidad (aunque el número de Reynolds introduce pequeñas variaciones). Son función de:"
+        ],
+        "bullets": [
+          "**Ángulo de ataque:** CL crece casi linealmente hasta el crítico y luego cae. CD es mínimo con α pequeños y crece rápido a ángulos altos (la resistencia inducida crece con CL²).",
+          "**Flaps y dispositivos:** aumentan CLmax y también CD.",
+          "**Estado de la superficie:** el hielo, la escarcha, la lluvia intensa o los insectos reducen CLmax y aumentan CD.",
+          "**Forma en planta y alargamiento:** a mayor alargamiento, menos CD inducida a igual CL.",
+          "**Compresibilidad:** irrelevante a las velocidades de una avioneta."
+        ],
+        "note": {
+          "kind": "warn",
+          "text": "La densidad no está dentro de CL ni de CD: aparece en la fórmula. Si subes de altitud, ρ baja y, a la misma IAS, la TAS necesaria sube; CL, que depende del ángulo de ataque, no cambia."
+        },
+        "ideas": [
+          "El coeficiente cambia con el ángulo de ataque como la apertura de una compuerta: más abierta (más α) pasa más agua (más CL), hasta que el torrente se desborda (pérdida).",
+          "Un ala con hielo es una cuchara con la punta mellada: mueve el aire peor, así que su CL máximo cae y su resistencia sube."
+        ]
+      },
+      {
+        "title": "Ejemplos con la fórmula",
+        "examples": [
+          {
+            "q": "Una avioneta de 1100 kg (W = 10 791 N) tiene S = 16 m². ¿Qué CL necesita para volar nivelada a 80 kt (41,2 m/s) a nivel del mar?",
+            "a": "q = 0,6125 × 41,2² = 1040 Pa. CL = 10 791 / (1040 × 16) ≈ 0,65."
+          },
+          {
+            "q": "En ese vuelo el coeficiente de resistencia total es CD = 0,05. ¿Cuánto vale la resistencia y qué finura tiene?",
+            "a": "D = 1040 × 16 × 0,05 = 832 N. L/D = CL/CD = 0,65/0,05 = 13."
+          },
+          {
+            "q": "Con ρ = 1,225 y CL máximo = 1,5, calcula la velocidad de pérdida del avión del ejemplo (W = 10 791 N, S = 16 m²).",
+            "a": "En la pérdida L = W con CL = CLmax: V = √(2W / (ρ S CLmax)) = √(21 582 / (1,225 × 16 × 1,5)) = √734 ≈ 27,1 m/s ≈ 52,7 kt."
+          },
+          {
+            "q": "Con flaps, CLmax = 2,0. ¿Nueva velocidad de pérdida?",
+            "a": "V = √(21 582 / (1,225 × 16 × 2,0)) = √550,5 ≈ 23,5 m/s ≈ 45,6 kt. Los flaps bajan la Vs porque suben el CLmax."
+          }
+        ],
+        "text": [
+          "Los ejemplos que siguen enseñan a manejar la fórmula con unidades del examen: pasa los nudos a m/s, calcula la presión dinámica en pascales y luego aplica S y el coeficiente."
+        ],
+        "ideas": [
+          "Calcula siempre en este orden: velocidad en m/s, presión dinámica q, y después multiplicas por S y por el coeficiente. Es como seguir una receta paso a paso: si te saltas el orden, el resultado sale mal."
+        ]
+      },
+      {
+        "title": "Qué ocurre al cambiar la velocidad en vuelo nivelado",
+        "text": [
+          "En vuelo nivelado la sustentación es fija (igual al peso), así que si reduces la velocidad el CL tiene que aumentar en proporción inversa al cuadrado de la velocidad.",
+          "Al despejar de L = W, queda CL = 2W / (ρ V² S): para el mismo peso y la misma densidad, **CL es proporcional a 1/V²**. Reducir la velocidad a la mitad exige multiplicar el CL por cuatro, lo cual solo se consigue subiendo el ángulo de ataque hasta que se alcanza CLmax. Por debajo de esa velocidad, el avión ya no puede sostener su peso: es la velocidad de pérdida. Por eso, volando lento hay que tirar de la palanca y acercarse al ángulo crítico, mientras que a velocidad alta basta un ángulo de ataque diminuto."
+        ],
+        "examples": [
+          {
+            "q": "Una avioneta vuela nivelada a 100 kt con CL = 0,3. Sin cambiar peso ni altitud, reduce a 70 kt manteniendo el nivel. ¿Qué CL necesita?",
+            "a": "CL ∝ 1/V²: CL₂ = 0,3 × (100 / 70)² = 0,3 × 2,04 = 0,61. Para ir un 30 % más lenta, el CL se ha doblado."
+          }
+        ],
+        "ideas": [
+          "Sostener una bandeja con una mano a la altura del pecho: si te mueves más despacio, tienes que inclinar la bandeja más. A cierta inclinación, deja de funcionar y todo cae.",
+          "En bici, a poca velocidad el equilibrio se vuelve inestable, y tienes que corregir mucho más con el manillar: el ala, a poca velocidad, exige más ángulo de ataque."
+        ]
+      },
+      {
+        "title": "La velocidad de pérdida desde la fórmula",
+        "text": [
+          "Si despejas la velocidad de L = W, queda la expresión de la velocidad a la que un CL dado equilibra el peso. Con CL = CLmax, es la velocidad de pérdida en vuelo recto. De ahí se leen directamente los factores del examen:"
+        ],
+        "bullets": [
+          "Vs crece con la **raíz cuadrada del peso**: +21 % de masa, +10 % de Vs.",
+          "Vs decrece con la **raíz de ρ**: a mayor altitud, la TAS de pérdida sube, pero la **IAS de pérdida no cambia**, porque el anemómetro mide justo ½ρV².",
+          "Vs decrece con la **raíz de CLmax**: flaps abajo, menor Vs; hielo, mayor Vs.",
+          "Vs decrece con la **raíz de S**: más superficie, menor velocidad."
+        ],
+        "formulas": [
+          {
+            "f": "Vs = √( 2 · W / (ρ · S · CLmax) )",
+            "note": "Velocidad (TAS) de pérdida en vuelo recto nivelado, con W en newtons."
+          }
+        ],
+        "ideas": [
+          "Es como la capacidad de una grúa: con más carga necesitas un gancho más fuerte (más CLmax) o una mayor superficie; si no, no levantas el peso.",
+          "La velocidad mínima a la que se sostiene un avión es como la velocidad mínima a la que puedes montar en monopatín sin caerte: depende de lo pesado que seas y del agarre (CLmax)."
+        ]
+      },
+      {
+        "title": "La finura y el ángulo de mejor planeo",
+        "text": [
+          "La relación **L/D** (finura) indica cuánto sustenta el ala por cada unidad de resistencia. Es máxima con un ángulo de ataque concreto, bastante inferior al crítico (típicamente de 4° a 6° en avionetas). A ese ángulo de ataque el avión alcanza la mejor distancia de planeo y la velocidad de mínima resistencia (VMD, que verás en 080.07). Una avioneta ligera ronda L/D = 9–11; un velero, 40 o más."
+        ],
+        "figure": "svg:080-cl-alfa",
+        "caption": "CL frente a α: el máximo CL queda muy por encima del ángulo de mejor finura.",
+        "ideas": [
+          "La finura es el rendimiento de un coche en km por litro: para L/D = 10, cada metro de altura perdida te da 10 de recorrido horizontal.",
+          "Un planeador es un coche muy eficiente; una avioneta, uno normal; un avión sin motor, con tren y flaps fuera, un camión."
+        ]
+      }
+    ],
+    "numbers": [
+      "L = ½ρV²S·CL; D = ½ρV²S·CD",
+      "L/D = CL/CD",
+      "Vs = √(2W/(ρ S CLmax))",
+      "+21 % de masa: +10 % de Vs",
+      "La mejor L/D se da con α de 4° a 6°, muy por debajo del crítico",
+      "V × 2 → L × 4; V + 10 % → L + 21 %",
+      "CL ∝ 1/V² en vuelo nivelado: la mitad de velocidad, cuatro veces el CL",
+      "Con ρ × 0,74 (10 000 ft ISA), L baja un 26 % a igual TAS",
+      "Presión dinámica a 80 kt, nivel del mar: ≈ 1040 Pa"
+    ],
+    "traps": [
+      "CL y CD no tienen unidades.",
+      "La IAS de pérdida no cambia con la altitud; la TAS sí.",
+      "Los flaps aumentan CLmax y CD a la vez.",
+      "El mejor ángulo de ataque para planear no es el crítico.",
+      "Subir la velocidad un 10 % no sube la sustentación un 10 %, sino un 21 %.",
+      "Reducir la velocidad a la mitad no duplica el CL: lo multiplica por cuatro."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+      },
+      {
+        "title": "Curso DreamAir/ATPLENJOY, Principios de vuelo (POF 1)"
+      }
+    ],
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ],
+    "id": "080.05",
+    "reviewed": "2026-11-23",
+    "course": "Tema 3 · Flujo y sustentación",
+    "outline": [
+      {
+        "title": "Coeficientes",
+        "items": [
+          "CL y CD no tienen unidades",
+          "Dependen de α, perfil, flaps, superficie",
+          "No dependen directamente de V ni de ρ"
+        ]
+      },
+      {
+        "title": "Fórmulas",
+        "items": [
+          "L = ½ρV²S·CL; D = ½ρV²S·CD",
+          "L/D = CL/CD",
+          "V al cuadrado, ρ y S lineales"
+        ]
+      },
+      {
+        "title": "Vuelo nivelado",
+        "items": [
+          "L = W",
+          "CL ∝ 1/V²",
+          "Vs = √(2W/(ρ S CLmax))"
+        ]
+      },
+      {
+        "title": "Finura",
+        "items": [
+          "L/D máxima con α de 4° a 6°",
+          "Avioneta 9–11; velero 40 o más"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "V al cuadrado: «doblas la velocidad, cuadruplicas la fuerza».",
+      "Vs: peso arriba, ρ, S y CLmax abajo, todo bajo raíz.",
+      "L = W en nivelado: «lento, mucho ángulo; rápido, poco»."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Por qué se usan coeficientes en lugar de dar directamente la fuerza?",
+        "a": "Porque separan lo que se puede medir (densidad, velocidad, superficie) de lo que depende de la forma y el ángulo de ataque, y permiten comparar alas de distinto tamaño."
+      },
+      {
+        "q": "¿Por qué doblar la velocidad cuadruplica la sustentación?",
+        "a": "Porque la sustentación es proporcional a la presión dinámica, que depende de V²."
+      },
+      {
+        "q": "En vuelo nivelado, si reduces la velocidad a la mitad, ¿qué le ocurre al CL?",
+        "a": "Se multiplica por cuatro, porque L = W exige CL ∝ 1/V²; solo es posible subiendo el ángulo de ataque hasta CLmax."
+      },
+      {
+        "q": "¿Por qué la IAS de pérdida no cambia con la altitud?",
+        "a": "Porque la pérdida ocurre con un CL fijo y una presión dinámica fija, que es lo que mide el anemómetro; la TAS sí sube."
+      },
+      {
+        "q": "¿Cómo afecta el peso a la velocidad de pérdida?",
+        "a": "Vs crece con la raíz del peso: +21 % de masa, +10 % de Vs."
+      },
+      {
+        "q": "¿Qué es la finura y con qué ángulo de ataque es máxima?",
+        "a": "L/D; es máxima con un α de unos 4° a 6° en avioneta, muy por debajo del crítico."
+      }
     ]
-   },
-   {
-    "title": "De qué depende cada coeficiente",
-    "text": [
-     "CL y CD **dependen del ángulo de ataque** y de la forma del perfil y del ala; no dependen directamente de la velocidad (aunque el número de Reynolds introduce pequeñas variaciones). Son función de:"
-    ],
-    "bullets": [
-     "**Ángulo de ataque:** CL crece casi linealmente hasta el crítico y luego cae. CD es mínimo con α pequeños y crece rápido a ángulos altos (la resistencia inducida crece con CL²).",
-     "**Flaps y dispositivos:** aumentan CLmax y también CD.",
-     "**Estado de la superficie:** el hielo, la escarcha, la lluvia intensa o los insectos reducen CLmax y aumentan CD.",
-     "**Forma en planta y alargamiento:** a mayor alargamiento, menos CD inducida a igual CL.",
-     "**Compresibilidad:** irrelevante a las velocidades de una avioneta."
-    ],
-    "note": {
-     "kind": "warn",
-     "text": "La densidad no está dentro de CL ni de CD: aparece en la fórmula. Si subes de altitud, ρ baja y, a la misma IAS, la TAS necesaria sube; CL, que depende del ángulo de ataque, no cambia."
+  },
+  "questions": [
+    {
+      "id": "080.05.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "El coeficiente de sustentación CL:",
+      "options": [
+        "Se mide en newtons",
+        "No tiene unidades y depende sobre todo del ángulo de ataque y la forma del ala",
+        "Depende directamente de la velocidad",
+        "Es independiente del ángulo de ataque"
+      ],
+      "correct": 1,
+      "why": "CL es un número adimensional que resume forma, ángulo de ataque y estado de la superficie.",
+      "whyNot": [
+        "Newtons es la unidad de la sustentación, no del coeficiente.",
+        null,
+        "La velocidad aparece aparte, elevada al cuadrado, en la fórmula.",
+        "Es función directa del ángulo de ataque."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.05.002",
+      "type": "calculo",
+      "level": 2,
+      "q": "Una avioneta de W = 10 791 N y S = 16 m² vuela a 41,2 m/s a nivel del mar (ρ = 1,225). El CL necesario en vuelo nivelado es aproximadamente:",
+      "options": [
+        "1,3",
+        "0,33",
+        "0,16",
+        "0,65"
+      ],
+      "correct": 3,
+      "why": "q = 0,6125 · 41,2² ≈ 1040 Pa; CL = 10 791 / (1040 · 16) ≈ 0,65.",
+      "whyNot": [
+        "Resulta de olvidar el factor ½ de la presión dinámica.",
+        "Resulta de dividir dos veces por 2.",
+        "Resulta de usar V en vez de V² en la presión dinámica.",
+        null
+      ],
+      "ref": "L = ½ρV²S·CL"
+    },
+    {
+      "id": "080.05.003",
+      "type": "calculo",
+      "level": 1,
+      "q": "Un ala produce una sustentación de 9000 N con una resistencia de 750 N. Su L/D es:",
+      "options": [
+        "12",
+        "0,083",
+        "8250",
+        "9750"
+      ],
+      "correct": 0,
+      "why": "L/D = 9000 / 750 = 12.",
+      "whyNot": [
+        null,
+        "Es el cociente inverso D/L.",
+        "Es la resta L − D, que no es una relación.",
+        "Es la suma L + D."
+      ],
+      "ref": "L/D"
+    },
+    {
+      "id": "080.05.004",
+      "type": "calculo",
+      "level": 3,
+      "q": "Para W = 10 791 N, S = 16 m², ρ = 1,225 y CLmax = 1,5, la velocidad de pérdida es aproximadamente:",
+      "options": [
+        "27 kt",
+        "75 kt",
+        "53 kt",
+        "106 kt"
+      ],
+      "correct": 2,
+      "why": "V = √(2W/(ρ S CLmax)) = √734 ≈ 27,1 m/s ≈ 52,7 kt.",
+      "whyNot": [
+        "27,1 es el valor en m/s, no en kt.",
+        "Resulta de multiplicar por √2.",
+        null,
+        "Resulta de duplicar la velocidad en m/s y pasar a kt."
+      ],
+      "ref": "Vs = √(2W/ρSCLmax)"
+    },
+    {
+      "id": "080.05.005",
+      "type": "calculo",
+      "level": 2,
+      "q": "Si el peso aumenta un 21 %, manteniendo todo lo demás, la velocidad de pérdida aumenta aproximadamente:",
+      "options": [
+        "21 %",
+        "5 %",
+        "10 %",
+        "46 %"
+      ],
+      "correct": 2,
+      "why": "Vs ∝ √W: √1,21 = 1,10.",
+      "whyNot": [
+        "Sería así si Vs fuera proporcional al peso.",
+        "No corresponde a ninguna relación de la fórmula: la raíz de 1,21 es 1,10.",
+        null,
+        "Es el cuadrado, 1,21², que corresponde a un efecto inverso."
+      ],
+      "ref": "Vs ∝ √W"
+    },
+    {
+      "id": "080.05.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "Al extender los flaps, los coeficientes cambian así:",
+      "options": [
+        "CLmax aumenta y CD aumenta",
+        "CLmax aumenta y CD disminuye",
+        "CLmax disminuye y CD aumenta",
+        "CLmax y CD no cambian"
+      ],
+      "correct": 0,
+      "why": "Los flaps aumentan la curvatura: más sustentación máxima, pero también más resistencia.",
+      "whyNot": [
+        null,
+        "Más sustentación viene acompañada de más resistencia.",
+        "El CLmax sube, no baja.",
+        "Los flaps modifican ambos."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.05.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "Con la altitud (a igual IAS y mismo ángulo de ataque), el CL necesario para sostener el vuelo nivelado:",
+      "options": [
+        "Es mayor porque ρ es menor",
+        "Es menor porque la TAS es mayor",
+        "Desaparece de la fórmula",
+        "Es el mismo, aunque la TAS es mayor"
+      ],
+      "correct": 3,
+      "why": "La IAS mide ½ρV², igual en ambas altitudes; el CL, que depende de α, no cambia.",
+      "whyNot": [
+        "La menor ρ se compensa con mayor TAS.",
+        "La TAS mayor compensa justo la menor densidad.",
+        "CL siempre está en la fórmula.",
+        null
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.05.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "El ángulo de ataque que da la máxima relación L/D es:",
+      "options": [
+        "Igual al ángulo crítico",
+        "Bastante menor que el ángulo crítico",
+        "Siempre cero",
+        "Mayor que el ángulo crítico"
+      ],
+      "correct": 1,
+      "why": "La finura máxima ocurre con ángulos de ataque de unos 4° a 6°, lejos del crítico.",
+      "whyNot": [
+        "Con el crítico la resistencia es enorme y la finura baja.",
+        null,
+        "Con α = 0 el CL es demasiado pequeño.",
+        "No se puede volar por encima del crítico."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.05.009",
+      "type": "calculo",
+      "level": 2,
+      "q": "En una ala con S = 16 m², q = 1000 Pa y L = 8000 N, el CL es:",
+      "options": [
+        "0,5",
+        "2",
+        "0,06",
+        "8"
+      ],
+      "correct": 0,
+      "why": "CL = L/(q S) = 8000 / (1000 · 16) = 0,5.",
+      "whyNot": [
+        null,
+        "Resulta de dividir entre 4000 en lugar de entre 16 000.",
+        "Resulta de calcular 1/S y olvidar L.",
+        "Resulta de dividir L entre q sin considerar la superficie (8000/1000)."
+      ],
+      "ref": "L = q·S·CL"
+    },
+    {
+      "id": "080.05.010",
+      "type": "concepto",
+      "level": 3,
+      "q": "¿Qué ocurre con la IAS de pérdida al subir de 2000 a 8000 ft si no cambian peso, flaps ni configuración?",
+      "options": [
+        "Aumenta por la menor densidad",
+        "Disminuye por la menor temperatura",
+        "Prácticamente nada; la TAS de pérdida sí aumenta",
+        "Disminuye porque la TAS es mayor"
+      ],
+      "correct": 2,
+      "why": "El anemómetro mide ½ρV², igual que el ala: se pierde a la misma presión dinámica, por lo que la IAS es la misma.",
+      "whyNot": [
+        "La menor densidad se compensa con mayor TAS; la IAS no cambia.",
+        "La temperatura afecta a la TAS, no a la IAS de pérdida.",
+        null,
+        "El efecto de la TAS ya está incluido en la IAS."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.05.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "Si la velocidad aumenta un 10 % con CL, densidad y superficie constantes, la sustentación:",
+      "options": [
+        "Aumenta un 10 %",
+        "Aumenta aproximadamente un 21 %",
+        "Aumenta un 5 %",
+        "Aumenta un 100 %"
+      ],
+      "correct": 1,
+      "why": "L es proporcional a V²: 1,1² = 1,21, es decir, un 21 % más.",
+      "whyNot": [
+        "Sería así si L fuese proporcional a V, pero depende de V².",
+        null,
+        "El 5 % no corresponde a ninguna relación de la fórmula.",
+        "Aumentar un 100 % exigiría una velocidad 1,41 veces mayor."
+      ],
+      "ref": "Curso POF 1; PHAK cap. 5"
+    },
+    {
+      "id": "080.05.012",
+      "type": "calculo",
+      "level": 2,
+      "q": "En vuelo nivelado, un avión reduce la velocidad de 100 a 70 kt (mismo peso y densidad). El CL necesario:",
+      "options": [
+        "Se mantiene igual",
+        "Se reduce a la mitad",
+        "Aumenta aproximadamente el doble",
+        "Aumenta aproximadamente un 43 %"
+      ],
+      "correct": 2,
+      "why": "CL ∝ 1/V²: (100/70)² ≈ 2,04, así que el CL casi se duplica.",
+      "whyNot": [
+        "Con L = W, si V baja el CL tiene que subir.",
+        "El CL no se reduce al bajar la velocidad.",
+        null,
+        "Un 43 % sería la relación lineal 100/70, pero V entra al cuadrado."
+      ],
+      "ref": "Curso POF 1"
+    },
+    {
+      "id": "080.05.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "A igual TAS, subir a una altitud donde la densidad es el 74 % de la del nivel del mar reduce la sustentación (mismo CL y S) en:",
+      "options": [
+        "74 %",
+        "13 %",
+        "0 %, porque la sustentación solo depende de V",
+        "26 %"
+      ],
+      "correct": 3,
+      "why": "L es proporcional a ρ: con ρ al 74 % la sustentación es el 74 %, es decir, un 26 % menos.",
+      "whyNot": [
+        "Sería la sustentación restante, no la reducida.",
+        "No sale de ninguna combinación de los datos.",
+        "La sustentación también depende de la densidad.",
+        null
+      ],
+      "ref": "Curso POF 1"
+    },
+    {
+      "id": "080.05.014",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué factor de la sustentación recoge la forma del perfil y el ángulo de ataque sin aparecer de forma explícita en L = ½ρV²S·CL?",
+      "options": [
+        "La velocidad V",
+        "El coeficiente de sustentación CL",
+        "La superficie alar S",
+        "La densidad ρ"
+      ],
+      "correct": 1,
+      "why": "CL agrupa el efecto del ángulo de ataque, la forma del perfil y del ala, y el estado de la superficie.",
+      "whyNot": [
+        "La velocidad aparece explícita como V².",
+        null,
+        "Sí aparece, pero es el coeficiente quien lleva la forma y el ángulo de ataque.",
+        "La superficie es un dato geométrico, no un efecto de forma aerodinámica."
+      ],
+      "ref": "Curso POF 1"
+    },
+    {
+      "id": "080.05.015",
+      "type": "calculo",
+      "level": 3,
+      "q": "Con CL = 1,0, S = 16 m², ρ = 1,225 kg/m³ y V = 40 m/s, la sustentación vale aproximadamente:",
+      "options": [
+        "7840 N",
+        "31 360 N",
+        "980 N",
+        "15 680 N"
+      ],
+      "correct": 3,
+      "why": "L = ½ · 1,225 · 40² · 16 · 1,0 = 0,6125 · 1600 · 16 = 15 680 N.",
+      "whyNot": [
+        "Es la mitad del valor correcto: se ha dividido dos veces entre 2.",
+        "Es el doble: se ha usado ρ · V² sin ½.",
+        "980 N es solo la presión dinámica en pascales, sin multiplicar por S y CL.",
+        null
+      ],
+      "ref": "Curso POF 1"
     }
-   },
-   {
-    "title": "Ejemplos con la fórmula",
-    "examples": [
-     {
-      "q": "Una avioneta de 1100 kg (W = 10 791 N) tiene S = 16 m². ¿Qué CL necesita para volar nivelada a 80 kt (41,2 m/s) a nivel del mar?",
-      "a": "q = 0,6125 × 41,2² = 1040 Pa. CL = 10 791 / (1040 × 16) ≈ 0,65."
-     },
-     {
-      "q": "En ese vuelo el coeficiente de resistencia total es CD = 0,05. ¿Cuánto vale la resistencia y qué finura tiene?",
-      "a": "D = 1040 × 16 × 0,05 = 832 N. L/D = CL/CD = 0,65/0,05 = 13."
-     },
-     {
-      "q": "Con ρ = 1,225 y CL máximo = 1,5, calcula la velocidad de pérdida del avión del ejemplo (W = 10 791 N, S = 16 m²).",
-      "a": "En la pérdida L = W con CL = CLmax: V = √(2W / (ρ S CLmax)) = √(21 582 / (1,225 × 16 × 1,5)) = √734 ≈ 27,1 m/s ≈ 52,7 kt."
-     },
-     {
-      "q": "Con flaps, CLmax = 2,0. ¿Nueva velocidad de pérdida?",
-      "a": "V = √(21 582 / (1,225 × 16 × 2,0)) = √550,5 ≈ 23,5 m/s ≈ 45,6 kt. Los flaps bajan la Vs porque suben el CLmax."
-     }
-    ]
-   },
-   {
-    "title": "La velocidad de pérdida desde la fórmula",
-    "text": [
-     "Si despejas la velocidad de L = W, queda la expresión de la velocidad a la que un CL dado equilibra el peso. Con CL = CLmax, es la velocidad de pérdida en vuelo recto. De ahí se leen directamente los factores del examen:"
-    ],
-    "bullets": [
-     "Vs crece con la **raíz cuadrada del peso**: +21 % de masa, +10 % de Vs.",
-     "Vs decrece con la **raíz de ρ**: a mayor altitud, la TAS de pérdida sube, pero la **IAS de pérdida no cambia**, porque el anemómetro mide justo ½ρV².",
-     "Vs decrece con la **raíz de CLmax**: flaps abajo, menor Vs; hielo, mayor Vs.",
-     "Vs decrece con la **raíz de S**: más superficie, menor velocidad."
-    ],
-    "formulas": [
-     {
-      "f": "Vs = √( 2 · W / (ρ · S · CLmax) )",
-      "note": "Velocidad (TAS) de pérdida en vuelo recto nivelado, con W en newtons."
-     }
-    ]
-   },
-   {
-    "title": "La finura y el ángulo de mejor planeo",
-    "text": [
-     "La relación **L/D** (finura) indica cuánto sustenta el ala por cada unidad de resistencia. Es máxima con un ángulo de ataque concreto, bastante inferior al crítico (típicamente de 4° a 6° en avionetas). A ese ángulo de ataque el avión alcanza la mejor distancia de planeo y la velocidad de mínima resistencia (VMD, que verás en 080.07). Una avioneta ligera ronda L/D = 9–11; un velero, 40 o más."
-    ],
-    "figure": "svg:080-cl-alfa",
-    "caption": "CL frente a α: el máximo CL queda muy por encima del ángulo de mejor finura."
-   }
   ],
-  "numbers": [
-   "L = ½ρV²S·CL; D = ½ρV²S·CD",
-   "L/D = CL/CD",
-   "Vs = √(2W/(ρ S CLmax))",
-   "+21 % de masa: +10 % de Vs",
-   "La mejor L/D se da con α de 4° a 6°, muy por debajo del crítico"
-  ],
-  "traps": [
-   "CL y CD no tienen unidades.",
-   "La IAS de pérdida no cambia con la altitud; la TAS sí.",
-   "Los flaps aumentan CLmax y CD a la vez.",
-   "El mejor ángulo de ataque para planear no es el crítico."
-  ],
-  "sources": [
-   {
-    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
-    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
-   },
-   {
-    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
-    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
-   }
-  ],
-  "links": [
-   {
-    "label": "Cabina del PA-28",
-    "href": "#/ac/pa28"
-   },
-   {
-    "label": "Cabina del C172",
-    "href": "#/ac/c172"
-   }
-  ],
-  "id": "080.05",
-  "reviewed": "2026-10-09"
- },
- "questions": [
-  {
-   "id": "080.05.001",
-   "type": "concepto",
-   "level": 1,
-   "q": "El coeficiente de sustentación CL:",
-   "options": [
-    "Se mide en newtons",
-    "No tiene unidades y depende sobre todo del ángulo de ataque y la forma del ala",
-    "Depende directamente de la velocidad",
-    "Es independiente del ángulo de ataque"
-   ],
-   "correct": 1,
-   "why": "CL es un número adimensional que resume forma, ángulo de ataque y estado de la superficie.",
-   "whyNot": [
-    "Newtons es la unidad de la sustentación, no del coeficiente.",
-    null,
-    "La velocidad aparece aparte, elevada al cuadrado, en la fórmula.",
-    "Es función directa del ángulo de ataque."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.05.002",
-   "type": "calculo",
-   "level": 2,
-   "q": "Una avioneta de W = 10 791 N y S = 16 m² vuela a 41,2 m/s a nivel del mar (ρ = 1,225). El CL necesario en vuelo nivelado es aproximadamente:",
-   "options": [
-    "1,3",
-    "0,33",
-    "0,16",
-    "0,65"
-   ],
-   "correct": 3,
-   "why": "q = 0,6125 · 41,2² ≈ 1040 Pa; CL = 10 791 / (1040 · 16) ≈ 0,65.",
-   "whyNot": [
-    "Resulta de olvidar el factor ½ de la presión dinámica.",
-    "Resulta de dividir dos veces por 2.",
-    "Resulta de usar V en vez de V² en la presión dinámica.",
-    null
-   ],
-   "ref": "L = ½ρV²S·CL"
-  },
-  {
-   "id": "080.05.003",
-   "type": "calculo",
-   "level": 1,
-   "q": "Un ala produce una sustentación de 9000 N con una resistencia de 750 N. Su L/D es:",
-   "options": [
-    "12",
-    "0,083",
-    "8250",
-    "9750"
-   ],
-   "correct": 0,
-   "why": "L/D = 9000 / 750 = 12.",
-   "whyNot": [
-    null,
-    "Es el cociente inverso D/L.",
-    "Es la resta L − D, que no es una relación.",
-    "Es la suma L + D."
-   ],
-   "ref": "L/D"
-  },
-  {
-   "id": "080.05.004",
-   "type": "calculo",
-   "level": 3,
-   "q": "Para W = 10 791 N, S = 16 m², ρ = 1,225 y CLmax = 1,5, la velocidad de pérdida es aproximadamente:",
-   "options": [
-    "27 kt",
-    "75 kt",
-    "53 kt",
-    "106 kt"
-   ],
-   "correct": 2,
-   "why": "V = √(2W/(ρ S CLmax)) = √734 ≈ 27,1 m/s ≈ 52,7 kt.",
-   "whyNot": [
-    "27,1 es el valor en m/s, no en kt.",
-    "Resulta de multiplicar por √2.",
-    null,
-    "Resulta de duplicar la velocidad en m/s y pasar a kt."
-   ],
-   "ref": "Vs = √(2W/ρSCLmax)"
-  },
-  {
-   "id": "080.05.005",
-   "type": "calculo",
-   "level": 2,
-   "q": "Si el peso aumenta un 21 %, manteniendo todo lo demás, la velocidad de pérdida aumenta aproximadamente:",
-   "options": [
-    "21 %",
-    "5 %",
-    "10 %",
-    "46 %"
-   ],
-   "correct": 2,
-   "why": "Vs ∝ √W: √1,21 = 1,10.",
-   "whyNot": [
-    "Sería así si Vs fuera proporcional al peso.",
-    "No corresponde a ninguna relación de la fórmula: la raíz de 1,21 es 1,10.",
-    null,
-    "Es el cuadrado, 1,21², que corresponde a un efecto inverso."
-   ],
-   "ref": "Vs ∝ √W"
-  },
-  {
-   "id": "080.05.006",
-   "type": "concepto",
-   "level": 2,
-   "q": "Al extender los flaps, los coeficientes cambian así:",
-   "options": [
-    "CLmax aumenta y CD aumenta",
-    "CLmax aumenta y CD disminuye",
-    "CLmax disminuye y CD aumenta",
-    "CLmax y CD no cambian"
-   ],
-   "correct": 0,
-   "why": "Los flaps aumentan la curvatura: más sustentación máxima, pero también más resistencia.",
-   "whyNot": [
-    null,
-    "Más sustentación viene acompañada de más resistencia.",
-    "El CLmax sube, no baja.",
-    "Los flaps modifican ambos."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.05.007",
-   "type": "concepto",
-   "level": 2,
-   "q": "Con la altitud (a igual IAS y mismo ángulo de ataque), el CL necesario para sostener el vuelo nivelado:",
-   "options": [
-    "Es mayor porque ρ es menor",
-    "Es menor porque la TAS es mayor",
-    "Desaparece de la fórmula",
-    "Es el mismo, aunque la TAS es mayor"
-   ],
-   "correct": 3,
-   "why": "La IAS mide ½ρV², igual en ambas altitudes; el CL, que depende de α, no cambia.",
-   "whyNot": [
-    "La menor ρ se compensa con mayor TAS.",
-    "La TAS mayor compensa justo la menor densidad.",
-    "CL siempre está en la fórmula.",
-    null
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.05.008",
-   "type": "concepto",
-   "level": 2,
-   "q": "El ángulo de ataque que da la máxima relación L/D es:",
-   "options": [
-    "Igual al ángulo crítico",
-    "Bastante menor que el ángulo crítico",
-    "Siempre cero",
-    "Mayor que el ángulo crítico"
-   ],
-   "correct": 1,
-   "why": "La finura máxima ocurre con ángulos de ataque de unos 4° a 6°, lejos del crítico.",
-   "whyNot": [
-    "Con el crítico la resistencia es enorme y la finura baja.",
-    null,
-    "Con α = 0 el CL es demasiado pequeño.",
-    "No se puede volar por encima del crítico."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.05.009",
-   "type": "calculo",
-   "level": 2,
-   "q": "En una ala con S = 16 m², q = 1000 Pa y L = 8000 N, el CL es:",
-   "options": [
-    "0,5",
-    "2",
-    "0,06",
-    "8"
-   ],
-   "correct": 0,
-   "why": "CL = L/(q S) = 8000 / (1000 · 16) = 0,5.",
-   "whyNot": [
-    null,
-    "Resulta de dividir entre 4000 en lugar de entre 16 000.",
-    "Resulta de calcular 1/S y olvidar L.",
-    "Resulta de dividir L entre q sin considerar la superficie (8000/1000)."
-   ],
-   "ref": "L = q·S·CL"
-  },
-  {
-   "id": "080.05.010",
-   "type": "concepto",
-   "level": 3,
-   "q": "¿Qué ocurre con la IAS de pérdida al subir de 2000 a 8000 ft si no cambian peso, flaps ni configuración?",
-   "options": [
-    "Aumenta por la menor densidad",
-    "Disminuye por la menor temperatura",
-    "Prácticamente nada; la TAS de pérdida sí aumenta",
-    "Disminuye porque la TAS es mayor"
-   ],
-   "correct": 2,
-   "why": "El anemómetro mide ½ρV², igual que el ala: se pierde a la misma presión dinámica, por lo que la IAS es la misma.",
-   "whyNot": [
-    "La menor densidad se compensa con mayor TAS; la IAS no cambia.",
-    "La temperatura afecta a la TAS, no a la IAS de pérdida.",
-    null,
-    "El efecto de la TAS ya está incluido en la IAS."
-   ],
-   "ref": "PHAK cap. 5"
-  }
- ],
- "cards": [
-  {
-   "id": "c.080.05.01",
-   "front": "Fórmulas de sustentación y resistencia",
-   "back": "L = ½ρV²S·CL; D = ½ρV²S·CD"
-  },
-  {
-   "id": "c.080.05.02",
-   "front": "Velocidad de pérdida en función de CLmax",
-   "back": "Vs = √(2W / (ρ·S·CLmax)); menos Vs con más CLmax"
-  },
-  {
-   "id": "c.080.05.03",
-   "front": "Efecto de los flaps en los coeficientes",
-   "back": "Suben CLmax y CD"
-  },
-  {
-   "id": "c.080.05.04",
-   "front": "L/D máxima",
-   "back": "Con α de 4° a 6°, lejos del ángulo crítico"
-  }
- ]
+  "cards": [
+    {
+      "id": "c.080.05.01",
+      "front": "Fórmulas de sustentación y resistencia",
+      "back": "L = ½ρV²S·CL; D = ½ρV²S·CD"
+    },
+    {
+      "id": "c.080.05.02",
+      "front": "Velocidad de pérdida en función de CLmax",
+      "back": "Vs = √(2W / (ρ·S·CLmax)); menos Vs con más CLmax"
+    },
+    {
+      "id": "c.080.05.03",
+      "front": "Efecto de los flaps en los coeficientes",
+      "back": "Suben CLmax y CD"
+    },
+    {
+      "id": "c.080.05.04",
+      "front": "L/D máxima",
+      "back": "Con α de 4° a 6°, lejos del ángulo crítico"
+    },
+    {
+      "id": "c.080.05.05",
+      "front": "V a la fórmula L",
+      "back": "L ∝ V²: V × 2 → L × 4; V + 10 % → L + 21 %"
+    },
+    {
+      "id": "c.080.05.06",
+      "front": "CL en vuelo nivelado al variar V",
+      "back": "CL ∝ 1/V²: la mitad de velocidad exige cuatro veces el CL"
+    }
+  ]
 }

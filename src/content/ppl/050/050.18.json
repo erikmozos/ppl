@@ -1,14 +1,15 @@
 {
  "lesson": {
+  "id": "050.18",
   "title": "Observación y mapas",
-  "summary": "Cómo se observa la atmósfera (estaciones, radiosondeo, satélite visible, infrarrojo y de vapor de agua, radar, AIREP) y cómo se leen el mapa de superficie, el SIGWX de baja cota y los mapas de viento y temperatura en altura.",
+  "course": "Tema 8 · Mapas y símbolos del tiempo significativo",
+  "summary": "Observación en superficie y en altura, satélite y radar, mapa de superficie (isobaras, altas, bajas, frentes), símbolos del tiempo significativo de fenómenos y peligros, mapas de altura y SIGWX de baja cota, y rutina de planificación.",
   "objectives": [
-   "Describir los medios de observación y qué mide cada uno",
-   "Interpretar imágenes de satélite visible, infrarrojo y de vapor de agua, y el radar",
-   "Leer un mapa de superficie: isobaras, centros de presión y frentes",
-   "Conocer los niveles de presión estándar y su altitud aproximada",
-   "Leer un SIGWX de baja cota y un mapa de viento y temperatura en altura",
-   "Saber qué es un AIREP y cuándo se envía"
+   "Identificar las fuentes de observación (estación, radiosondeo, satélite, radar, rayos, AIREP) y qué mide cada una",
+   "Leer un mapa de superficie: isobaras, centros de alta y de baja, frentes, vaguadas y dorsales",
+   "Reconocer los símbolos del tiempo significativo para precipitación, visibilidad y peligros (turbulencia, engelamiento, ondas, ciclón tropical, etc.)",
+   "Interpretar los mapas de altura y el SIGWX de baja cota, con alturas AMSL",
+   "Combinar mapas, satélite, radar, METAR, TAF y GAMET para decidir el vuelo"
   ],
   "sections": [
    {
@@ -16,6 +17,10 @@
     "text": [
      "Las **estaciones meteorológicas de superficie** (manuales o automáticas) miden temperatura, punto de rocío, presión, viento, visibilidad, nubes y fenómenos. Con ellas se elaboran los informes **METAR** de los aeródromos y los mensajes **SYNOP** de la red general. El **radiosondeo** es un globo con un sensor que sube hasta unos 30 km y mide presión, temperatura, humedad y viento (por el seguimiento del globo); se lanza normalmente a las **00 y las 12 UTC** y proporciona el perfil vertical de la atmósfera, útil para ver inversiones, el nivel de 0 °C o la estabilidad.",
      "Un **AIREP** es el informe que un piloto transmite en vuelo con la posición, la hora, el nivel y los datos meteorológicos observados. Hay AIREP **rutinarios** y **especiales**, estos últimos obligatorios para fenómenos que afectan a la seguridad (turbulencia severa, engelamiento, cizalladura, tormentas, ceniza). Un piloto VFR puede informar de las condiciones al ATC por radio, con lo que ayuda a otros pilotos."
+    ],
+    "ideas": [
+     "El radiosondeo es como meter un termómetro y una veleta en un ascensor de globo: va subiendo y apuntando a cada piso qué tiempo hace.",
+     "El METAR es la foto del aeródromo; el SYNOP, la foto del pueblo de al lado."
     ]
    },
    {
@@ -29,6 +34,9 @@
      "Infrarrojo: temperatura del tope; blanco brillante = tope frío y alto = Cb o nubes altas; día y noche.",
      "Vapor de agua: humedad en altura; chorros y DANA.",
      "Radar: precipitación, no nubes."
+    ],
+    "ideas": [
+     "El satélite es el ojo del dron que mira desde arriba; el radar es una linterna que se refleja en la lluvia. En la noche, la imagen infrarroja es como una cámara térmica: lo más frío (más alto) se ve más brillante."
     ]
    },
    {
@@ -36,6 +44,47 @@
     "text": [
      "El **mapa de superficie** (análisis) muestra la presión reducida al nivel del mar con **isobaras** (normalmente cada 4 hPa), los centros de **alta (A o H)** y de **baja (B o L)**, y los **frentes**. Cuanto más juntas están las isobaras, más viento. En el hemisferio norte, la baja queda a la izquierda si te pones de espaldas al viento. Los frentes llevan símbolos: **frío**, línea con triángulos hacia donde avanza (azules); **cálido**, línea con semicírculos (rojos); **ocluido**, ambos (púrpura); **estacionario**, alterna ambos.",
      "Con un mapa de superficie puedes deducir la **dirección y fuerza del viento general**, la posición de los frentes y de las vaguadas y la tendencia del tiempo. No reemplaza al METAR ni al TAF, pero te da el contexto: de dónde viene el frente que da esa nubosidad."
+    ],
+    "ideas": [
+     "Un mapa de isobaras es un mapa topográfico donde la altura es la presión: las curvas juntas son una ladera empinada."
+    ],
+    "examples": [
+     {
+      "q": "En un mapa de superficie ves isobaras cerradas de 1032 hPa al oeste y una línea de isobaras en V con un frente frío (triángulos azules apuntando al este) más al este. Vuelas hacia el este con viento del oeste. ¿Qué lees?",
+      "a": "Al oeste hay un anticiclón (alta presión) y al este una vaguada con un frente frío que avanza hacia el este, hacia donde vas. Esperas un cambio en el tiempo: nubes y chubascos en el frente, con viento que rola a noroeste y mejora detrás. Mira METAR, TAF y SIGWX para concretar."
+     },
+     {
+      "q": "En un mapa, las isobaras alrededor de una baja están a 4 hPa y muy juntas al sur y muy separadas al norte. ¿En qué lado hay más viento?",
+      "a": "Al sur, donde las isobaras están más juntas: el gradiente de presión es mayor y el viento es más fuerte. Al norte, con las isobaras separadas, el viento es más flojo."
+     }
+    ]
+   },
+   {
+    "title": "Símbolos del tiempo significativo: fenómenos",
+    "text": [
+     "Los mapas de tiempo significativo usan símbolos fijos y universales para dibujar el tiempo, y conviene reconocerlos de un vistazo, con su nombre en inglés. La precipitación se dibuja con símbolos sencillos: un **punto negro** es lluvia (*rain*), una **coma** es llovizna (*drizzle*), un **asterisco** es nieve (*snow*), un **triángulo invertido** es chubasco (*shower*, con el punto o el asterisco encima, si es de lluvia o de nieve) y un **triángulo derecho** es granizo (*hail*). La **tormenta** (*thunderstorm*) es una R con una flecha, y la **lluvia engelante** (*freezing rain*) es el punto de la lluvia con un gancho; la llovizna engelante lleva el gancho con la coma.",
+     "La visibilidad reducida también tiene símbolos propios: **tres rayas horizontales** son niebla extensa (*widespread fog*), **dos rayas**, neblina (*mist*), un **ocho tumbado**, calima (*haze*), una **línea ondulada**, humo extenso (*smoke*) y una **S** es calima de polvo o arena (*dust haze*). Con una flecha en la S se representa la tormenta de arena o polvo, y una cruz con flecha, la nieve elevada por el viento (*blowing snow*)."
+    ],
+    "figure": "svg:050-simbolos-fenomenos",
+    "caption": "Símbolos de precipitación y de visibilidad reducida (dibujo propio)",
+    "ideas": [
+     "Los símbolos son un código de pictogramas: el punto negro es la gota que cae, la coma es la gota pequeña, el asterisco es el copo, el triángulo invertido es el chubasco que cae de un cielo cuajado.",
+     "Niebla = tres rayas (una pared gruesa); neblina = dos rayas (un velo más fino): menos rayas, menos niebla.",
+     "Calima = el ocho tumbado, como unas gafas de bruma que nublan la vista."
+    ]
+   },
+   {
+    "title": "Símbolos del tiempo significativo: peligros",
+    "text": [
+     "Los peligros del vuelo tienen símbolos que se leen igual en todos los mapas. La **turbulencia** se dibuja como un pico sobre una línea: uno para moderada y dos para fuerte (*moderate* y *severe turbulence*). El **engelamiento** (*aircraft icing*) es una copa con trazos verticales: más trazos, más intensidad (moderado y fuerte). Las **ondas de montaña** (*mountain waves*) son una lente. Una **línea de turbonada** (*squall line*) lleva un zigzag.",
+     "Además hay símbolos para fenómenos de gran escala: el **ciclón tropical** o tormenta tropical (*tropical revolving storm*, *tropical cyclone*), una espiral; la **erupción volcánica**, un volcán con humo; las **montañas ocultas** (*mountain obscuration*), dos picos negros; y los **materiales radiactivos** en la atmósfera, un trébol dentro de un círculo. Un cuadro de leyenda del mapa los lista siempre."
+    ],
+    "figure": "svg:050-simbolos-peligros",
+    "caption": "Símbolos de peligros del vuelo (dibujo propio)",
+    "ideas": [
+     "Turbulencia: el picudo del electrocardiograma: un pico, sacudida moderada; dos picos, fuerte.",
+     "Engelamiento: la copa de un helado con palitos: un palito, moderado; más palitos, más hielo.",
+     "Ondas de montaña: una lente, como la forma de las nubes lenticulares que las delatan."
     ]
    },
    {
@@ -74,7 +123,21 @@
       ]
      ],
      "src": "ISA; AEMET"
-    }
+    },
+    "ideas": [
+     "El mapa de 500 hPa es como una foto a 18 000 ft: no dice qué pasa abajo, pero marca por dónde van las borrascas."
+    ]
+   },
+   {
+    "title": "Cómo leer un SIGWX de baja cota",
+    "text": [
+     "Un SIGWX de baja cota resume en un solo mapa los peligros de un tramo de tiempo concreto, y se lee zona por zona. Las zonas con tiempo significativo se encierran con una línea y dentro se anotan los símbolos de fenómenos y peligros del apartado anterior, junto con la nubosidad significativa, que lleva sus alturas de base y tope sobre el nivel del mar. Los Cb se indican con su frecuencia: aislados (ISOL), ocasionales (OCNL) o frecuentes (FRQ), o embebidos en otras nubes (EMBD).",
+     "El nivel de congelación y las alturas entre las que hay turbulencia o engelamiento se anotan como cifras sobre el mapa. Hay que mirar la fecha y hora de validez y las alturas AMSL. Úsalo para ver qué te espera en la ruta, y combínalo con el GAMET, que lo describe con texto."
+    ],
+    "ideas": [
+     "Un SIGWX es como un mapa del tesoro de peligros: te dice en qué recuadro están, a qué altura y cuánto de grandes."
+    ],
+    "verify": true
    },
    {
     "title": "Cómo se aprovecha todo para planificar",
@@ -84,7 +147,112 @@
     "note": {
      "kind": "es",
      "text": "AEMET publica sus productos aeronáuticos en el portal AMA y en su web: imágenes de satélite Meteosat, radar de la red nacional, mapas de superficie y de altura, SIGWX de baja cota y GAMET. Consulta siempre la fecha y la hora de validez."
-    }
+    },
+    "ideas": [
+     "Preparar el vuelo es como ir de viaje: primero miras el mapa general, luego el parte local, luego el tráfico en tiempo real, y solo entonces decides."
+    ]
+   },
+   {
+    "title": "Ejemplos resueltos",
+    "examples": [
+     {
+      "q": "En un SIGWX ves, en una zona, el símbolo de engelamiento moderado con la indicación FZLVL 6000 ft y nubosidad BKN con base 4000 y tope 9000 ft AMSL. Vuelas a 5000 ft en un PA-28. ¿Qué haces?",
+      "a": "A 5000 ft estás por debajo del nivel de congelación (6000 ft), pero el tope de las nubes está a 9000 ft y por encima de 6000 ft hay engelamiento moderado. Mientras vueles bajo 6000 ft y fuera de nube no habrá hielo; no asciendas dentro de esa capa y vigila la temperatura. El PA-28 no está certificado para engelamiento conocido."
+     },
+     {
+      "q": "Un METAR de un aeródromo a 600 ft AMSL dice BKN010. El SIGWX da base de BKN a 1600 ft AMSL. ¿Son iguales?",
+      "a": "Sí: 1000 ft AGL sobre un aeródromo a 600 ft AMSL son 1600 ft AMSL. Por eso se dice que no hay que mezclarlos sin convertir."
+     },
+     {
+      "q": "En el mapa de 500 hPa ves un viento del oeste de 80 kt. ¿Qué te dice sobre tu vuelo VFR a 4000 ft?",
+      "a": "El 500 hPa está a unos 18 000 ft: no te afecta de forma directa, pero guía las borrascas y frentes que llegarán. Con viento fuerte en altura, vigila el aumento del viento medio en los niveles bajos y el cambio de tiempo."
+     }
+    ]
+   }
+  ],
+  "outline": [
+   {
+    "title": "Observación",
+    "items": [
+     "Estaciones: METAR y SYNOP",
+     "Radiosondeo: 00 y 12 UTC",
+     "AIREP rutinario y especial",
+     "Detectores de rayos"
+    ]
+   },
+   {
+    "title": "Satélite y radar",
+    "items": [
+     "Visible: solo de día",
+     "Infrarrojo: tope frío = blanco = alto",
+     "Vapor de agua: aire seco oscuro; chorros y DANA",
+     "Radar: ve la precipitación, no las nubes"
+    ]
+   },
+   {
+    "title": "Mapa de superficie",
+    "items": [
+     "Isobaras cada 4 hPa; juntas = viento fuerte",
+     "Altas, bajas, dorsales, vaguadas y cols",
+     "Frentes: frío (triángulos), cálido (semicírculos), ocluido, estacionario"
+    ]
+   },
+   {
+    "title": "Símbolos",
+    "items": [
+     "Precipitación: punto, coma, asterisco, triángulo invertido, R, gancho",
+     "Visibilidad: tres rayas, dos rayas, ocho tumbado, línea ondulada, S",
+     "Peligros: pico (turbulencia), copa (engelamiento), lente (ondas), zigzag (turbonada), espiral (ciclón)"
+    ]
+   },
+   {
+    "title": "Altura y SIGWX",
+    "items": [
+     "Niveles: 850 hPa, 700, 500 y 300",
+     "SIGWX de baja cota: SFC–FL150, ±3 h, alturas AMSL",
+     "Emisión a las 00, 06, 12 y 18 UTC"
+    ]
+   }
+  ],
+  "mnemonics": [
+   "Niveles de presión: 850 → 5000 ft; 700 → 10 000 ft; 500 → 18 000 ft; 300 → 30 000 ft. Se recuerdan como «cinco, diez, dieciocho, treinta» (en miles de pies).",
+   "Infrarrojo: «más frío, más blanco, más alto». Visible: «luz del día».",
+   "Radar: lo que moja. El radar solo ve lo que cae, no lo que flota.",
+   "Rain = punto negro; snow = asterisco; shower = triángulo invertido; haze = ocho tumbado; fog = tres rayas (una más que mist).",
+   "Frente frío: triángulos azules que apuntan adonde avanza; frente cálido: semicírculos rojos."
+  ],
+  "selfCheck": [
+   {
+    "q": "¿Qué miden las estaciones de superficie y qué productos nacen de ellas?",
+    "a": "Temperatura, punto de rocío, presión, viento, visibilidad, nubes y fenómenos. Con ellas se elaboran los METAR de aeródromo y los SYNOP de la red general."
+   },
+   {
+    "q": "¿Qué es un radiosondeo y cuándo se hace?",
+    "a": "Un globo con sensor que mide presión, temperatura, humedad y viento hasta unos 30 km; se lanza a las 00 y 12 UTC y da el perfil vertical, útil para inversiones, el nivel de 0 °C y la estabilidad."
+   },
+   {
+    "q": "¿Cómo interpretas las imágenes de satélite visible, infrarroja y de vapor de agua?",
+    "a": "En el visible, el brillo es la luz del Sol reflejada y solo existe de día. En el infrarrojo, más frío es más alto y más blanco, de día y de noche. En vapor de agua, lo oscuro es seco y descendente y se ven chorros y DANA."
+   },
+   {
+    "q": "¿Por qué el radar no ve todas las nubes?",
+    "a": "Detecta la precipitación (gotas, granizo o nieve), no las nubes sin precipitación, y tiene huecos de cobertura en terreno montañoso."
+   },
+   {
+    "q": "¿Cómo se reconoce en un mapa de superficie un anticiclón, una vaguada y un frente frío?",
+    "a": "El anticiclón son isobaras cerradas con la presión máxima en el centro. La vaguada es una lengua de baja con isobaras en V. El frente frío es una línea con triángulos que apuntan al lado hacia el que avanza."
+   },
+   {
+    "q": "¿Qué símbolos del tiempo significativo conoces para precipitación?",
+    "a": "Lluvia: punto negro. Llovizna: coma. Nieve: asterisco. Chubasco: triángulo invertido. Granizo: triángulo. Tormenta: R con flecha. Lluvia engelante: punto con gancho."
+   },
+   {
+    "q": "¿Y para peligros del vuelo?",
+    "a": "Turbulencia moderada y fuerte (picos), engelamiento moderado y fuerte (copa con trazos), ondas de montaña (lente), línea de turbonada (zigzag), ciclón tropical (espiral), erupción volcánica y montañas ocultas."
+   },
+   {
+    "q": "¿Por qué no se pueden mezclar las alturas del SIGWX y del METAR?",
+    "a": "El SIGWX refiere las alturas al nivel medio del mar (AMSL) y el METAR a la altura sobre el aeródromo (AGL)."
    }
   ],
   "numbers": [
@@ -92,29 +260,35 @@
    "Isobaras normalmente cada 4 hPa",
    "850 hPa ≈ 5000 ft; 700 hPa ≈ 10 000 ft; 500 hPa ≈ 18 000 ft; 300 hPa ≈ 30 000 ft",
    "SIGWX de baja cota: SFC–FL150; emisión 00, 06, 12 y 18 UTC; ±3 h",
-   "Infrarrojo: más frío = tope más alto = más blanco"
+   "Infrarrojo: más frío = tope más alto = más blanco",
+   "Símbolos: lluvia punto, llovizna coma, nieve asterisco, chubasco triángulo invertido, granizo triángulo, niebla tres rayas, neblina dos rayas, calima ocho tumbado"
   ],
   "traps": [
    "El radar solo ve precipitación, no nubes.",
    "El visible solo sirve de día; el infrarrojo, siempre.",
    "Las alturas del SIGWX son AMSL; las del METAR, AGL.",
-   "Las isobaras juntas indican viento fuerte, no mucha presión."
+   "Las isobaras juntas indican viento fuerte, no mucha presión.",
+   "Confundir niebla (tres rayas) con neblina (dos rayas) en el mapa.",
+   "Confundir chubasco (triángulo invertido) con granizo (triángulo derecho).",
+   "Pensar que el SIGWX está en alturas sobre el suelo: son AMSL."
   ],
   "sources": [
    {
-    "title": "AEMET, Guía de productos aeronáuticos AU-GUI-0102",
-    "url": "https://www.aemet.es/documentos/es/conocermas/aeronautica/AU-GUI-0102.pdf"
+    "title": "AEMET, productos aeronáuticos y portal AMA",
+    "url": "https://www.aemet.es/es/eltiempo/prediccion/aeronauticos"
    },
    {
-    "title": "AEMET, Apuntes de meteorología aeronáutica",
-    "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
+    "title": "OACI Anexo 3 y Doc 8896, Manual of Aeronautical Meteorological Practice"
    },
    {
-    "title": "OACI, Anexo 3 (AIREP) y Doc 8896 Manual de meteorología aeronáutica"
+    "title": "FAA-H-8083-28, Aviation Weather Handbook",
+    "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+   },
+   {
+    "title": "Material del curso, «Symbols for significant weather» (instructores)"
    }
   ],
-  "id": "050.18",
-  "reviewed": "2026-10-09"
+  "reviewed": "2026-11-23"
  },
  "questions": [
   {
@@ -326,6 +500,90 @@
     "No muestra nubes bajas."
    ],
    "ref": "AEMET apuntes"
+  },
+  {
+   "id": "050.18.011",
+   "type": "regla",
+   "level": 1,
+   "q": "En un mapa de tiempo significativo, un punto negro (●) representa:",
+   "options": [
+    "Lluvia",
+    "Llovizna",
+    "Nieve",
+    "Chubasco"
+   ],
+   "correct": 0,
+   "why": "El punto negro es el símbolo de lluvia (rain). La llovizna es una coma, la nieve un asterisco y el chubasco un triángulo invertido.",
+   "whyNot": [
+    null,
+    "La llovizna es una coma.",
+    "La nieve es un asterisco.",
+    "El chubasco es un triángulo invertido."
+   ],
+   "ref": "Curso, símbolos del tiempo significativo"
+  },
+  {
+   "id": "050.18.012",
+   "type": "regla",
+   "level": 1,
+   "q": "Un triángulo invertido en un mapa de tiempo significativo significa:",
+   "options": [
+    "Granizo (hail)",
+    "Tormenta",
+    "Chubasco (shower)",
+    "Niebla"
+   ],
+   "correct": 2,
+   "why": "El triángulo invertido es chubasco; con un punto es de lluvia y con un asterisco es de nieve. El granizo es un triángulo derecho.",
+   "whyNot": [
+    "El granizo es un triángulo con la punta hacia arriba.",
+    "La tormenta es una R con flecha.",
+    null,
+    "La niebla son tres rayas horizontales."
+   ],
+   "ref": "Curso, símbolos del tiempo significativo"
+  },
+  {
+   "id": "050.18.013",
+   "type": "concepto",
+   "level": 2,
+   "q": "Un símbolo con forma de lente (elipse apuntada) en un SIGWX indica:",
+   "options": [
+    "Turbulencia fuerte",
+    "Engelamiento moderado",
+    "Calima",
+    "Ondas de montaña"
+   ],
+   "correct": 3,
+   "why": "La lente representa las ondas de montaña (mountain waves), por la forma de las nubes lenticulares que las delatan.",
+   "whyNot": [
+    "La turbulencia fuerte son dos picos.",
+    "El engelamiento es una copa con trazos.",
+    "La calima es un ocho tumbado.",
+    null
+   ],
+   "ref": "Curso, símbolos del tiempo significativo"
+  },
+  {
+   "id": "050.18.014",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un mapa de tiempo significativo, el símbolo con forma de ocho tumbado (∞) representa:",
+   "options": [
+    "Niebla extensa",
+    "Calima (haze)",
+    "Neblina (mist)",
+    "Humo extenso"
+   ],
+   "correct": 1,
+   "why": "El ocho tumbado es calima; la niebla son tres rayas, la neblina dos y el humo una línea ondulada.",
+   "whyNot": [
+    "La niebla son tres rayas horizontales.",
+    null,
+    "La neblina son dos rayas.",
+    "El humo es una línea ondulada."
+   ],
+   "ref": "Curso, símbolos del tiempo significativo"
   }
  ],
  "cards": [
@@ -353,6 +611,26 @@
    "id": "c.050.18.05",
    "front": "SIGWX de baja cota",
    "back": "SFC a FL150, alturas AMSL; 00, 06, 12 y 18 UTC, ±3 h"
+  },
+  {
+   "id": "c.050.18.06",
+   "front": "Símbolos de precipitación",
+   "back": "Lluvia punto negro; llovizna coma; nieve asterisco; chubasco triángulo invertido; granizo triángulo; tormenta R"
+  },
+  {
+   "id": "c.050.18.07",
+   "front": "Símbolos de visibilidad",
+   "back": "Niebla tres rayas; neblina dos rayas; calima ocho tumbado; humo línea ondulada; polvo S"
+  },
+  {
+   "id": "c.050.18.08",
+   "front": "Símbolos de peligros",
+   "back": "Turbulencia: pico (dos, fuerte); engelamiento: copa con trazos; ondas: lente; turbonada: zigzag; ciclón: espiral"
+  },
+  {
+   "id": "c.050.18.09",
+   "front": "Alturas del SIGWX y del METAR",
+   "back": "SIGWX: AMSL. METAR: AGL. Convertir antes de comparar"
   }
  ]
 }

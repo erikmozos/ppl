@@ -1,17 +1,174 @@
 {
   "lesson": {
     "id": "090.11",
-    "title": "Propagación VHF y frecuencias",
-    "summary": "Propagación en línea de vista de las ondas VHF, alcance aproximado 1,23 × √altura, factores que lo limitan, banda de 118 a 136,975 MHz y canalización de 25 kHz y de 8,33 kHz.",
-    "objectives": ["Explicar por qué el alcance VHF depende de la altura de las antenas", "Calcular el alcance aproximado con la fórmula 1,23 × √h", "Conocer los factores que limitan el alcance", "Conocer la banda de comunicaciones aeronáuticas y la canalización de 25 kHz y 8,33 kHz"],
+    "title": "Principios de radio y propagación VHF",
+    "summary": "Qué es una onda de radio, frecuencia, periodo y longitud de onda, bandas, onda de tierra, ionosférica y espacial, alcance en línea de vista (1,23 × √h), factores que debilitan la señal, banda VHF aeronáutica y canalización de 25 y 8,33 kHz.",
+    "objectives": [
+      "Explicar qué es una onda electromagnética y calcular frecuencia, periodo y longitud de onda",
+      "Situar las bandas LF, MF, HF, VHF y UHF con su uso aeronáutico",
+      "Distinguir la onda de tierra, la ionosférica y la espacial (directa y reflejada) y saber cuál usa la VHF",
+      "Calcular el alcance en línea de vista con 1,23 × √h",
+      "Describir la atenuación, la refracción y el desvanecimiento (fading)",
+      "Manejar la banda de 118 a 136,975 MHz y la canalización de 25 y 8,33 kHz"
+    ],
     "sections": [
       {
-        "title": "La VHF viaja en línea recta",
-        "text": ["Las ondas de **VHF** se propagan en **línea de vista**: viajan en línea recta y no siguen la curvatura de la Tierra ni rodean obstáculos grandes. Por eso el alcance de una comunicación VHF depende sobre todo de **la altura de las antenas**: cuanto más alto estás, más lejos ves el horizonte y más lejos llega tu señal. A baja altura, una montaña o el propio horizonte te cortan la comunicación aunque la estación esté a pocas millas.", "Esta es la razón por la que a baja altura en la sierra a veces no oyes a la torre de un aeropuerto cercano y, en cambio, a 8000 ft los oyes a 100 NM."]
+        "title": "Qué es una onda de radio",
+        "text": [
+          "Una **onda de radio** es una onda electromagnética (*electromagnetic wave*): una perturbación formada por un campo eléctrico y un campo magnético que se regeneran uno a otro mientras viajan. A diferencia del sonido, **no necesita ningún medio** para propagarse: avanza igual por el aire que por el vacío, y todas las ondas electromagnéticas, sea cual sea su frecuencia, van a la **velocidad de la luz**, unos **300 000 km/s** (3 × 10^8 m/s).",
+          "El motor es la antena. Cuando haces circular una corriente que cambia con rapidez por un conductor, las cargas eléctricas modifican el espacio que las rodea y crean un campo eléctrico (componente eléctrica, la idea de Faraday). Ese campo, al variar con el tiempo, genera uno magnético (componente magnética), y las ecuaciones de Maxwell muestran que un campo magnético que varía crea a su vez uno eléctrico. Los dos oscilan, se sostienen mutuamente y se alejan de la antena como **radiación electromagnética**. Para el piloto, la consecuencia es que el enlace entre el avión y el suelo (torre, ayudas a la navegación, otros aviones, satélites) no necesita cable."
+        ],
+        "ideas": [
+          "Piensa en sacudir una cuerda tensa de un extremo: la sacudida viaja por la cuerda aunque tú te quedes quieto. La antena es tu mano; la onda, la sacudida que se aleja.",
+          "Un campo eléctrico que cambia hace nacer uno magnético y al revés, como dos niños que se pasan un balón sin parar: el balón sigue su camino sin que nadie lo sujete ni haga falta un suelo que lo sostenga."
+        ]
       },
       {
-        "title": "El alcance: 1,23 × √altura",
-        "text": ["Una estimación práctica del alcance en línea de vista es:"],
+        "title": "Frecuencia, periodo y longitud de onda",
+        "text": [
+          "La **frecuencia** (*f*) es el número de ciclos completos que hace la onda en un segundo y se mide en **hercios** (Hz). En radio se usan múltiplos: **1 kHz** son 1000 Hz, **1 MHz** son 1000 kHz y **1 GHz** son 1000 MHz. El **periodo** (*T*) es el tiempo que tarda en completarse un ciclo, y la **longitud de onda** (*λ*) es la distancia que recorre la onda en ese tiempo, es decir, lo que mide un ciclo en el espacio.",
+          "Las tres magnitudes van atadas por la velocidad de la luz: a más frecuencia, ciclo más corto y onda más corta. Con la frecuencia en MHz, **λ (m) = 300 / f (MHz)**. Eso explica por qué la antena de un avión de VHF es una varilla de unos 60 cm: una antena eficaz mide aproximadamente un cuarto de la longitud de onda."
+        ],
+        "formulas": [
+          {
+            "f": "T = 1 / f",
+            "note": "T en segundos y f en hercios. A 121,5 MHz, T ≈ 8,2 nanosegundos."
+          },
+          {
+            "f": "λ = c / f  →  λ (m) = 300 / f (MHz)",
+            "note": "c = 300 000 km/s. Cuanto mayor es la frecuencia, menor la longitud de onda."
+          }
+        ],
+        "examples": [
+          {
+            "q": "¿Qué longitud de onda tiene la frecuencia de emergencia, 121,5 MHz, y cuánto mide aproximadamente la antena de cuarto de onda?",
+            "a": "λ = 300 / 121,5 ≈ 2,47 m. Un cuarto de onda son unos 0,62 m: de ahí la varilla corta de las antenas de VHF de los aviones ligeros."
+          },
+          {
+            "q": "Una emisora transmite en 6 MHz. ¿Qué longitud de onda tiene y en qué banda cae?",
+            "a": "λ = 300 / 6 = 50 m. Está entre 3 y 30 MHz, así que es HF."
+          }
+        ],
+        "ideas": [
+          "Imagina las olas del mar llegando a la playa: cuántas llegan por minuto es la frecuencia; la distancia entre cresta y cresta es la longitud de onda. Si las olas son más seguidas, necesariamente están más juntas."
+        ]
+      },
+      {
+        "title": "Las bandas de frecuencia",
+        "text": [
+          "El espectro de radio se reparte en bandas por décadas de frecuencia y cada una tiene un comportamiento propio al propagarse. En aviación las usas todas: las bajas para radiofaros, las altas para comunicaciones de larga distancia y la VHF para el día a día."
+        ],
+        "table": {
+          "head": [
+            "Banda",
+            "Frecuencias",
+            "Uso aeronáutico típico"
+          ],
+          "rows": [
+            [
+              "LF (baja frecuencia)",
+              "30 a 300 kHz",
+              "Radiofaros NDB y navegación de largo alcance"
+            ],
+            [
+              "MF (frecuencia media)",
+              "300 kHz a 3 MHz",
+              "NDB y ADF (radiocompás)"
+            ],
+            [
+              "HF (alta frecuencia)",
+              "3 a 30 MHz",
+              "Comunicaciones de larga distancia, vuelos oceánicos"
+            ],
+            [
+              "VHF (muy alta)",
+              "30 a 300 MHz",
+              "Comunicaciones aire-tierra (118 a 136,975), VOR y localizador del ILS (108 a 117,975)"
+            ],
+            [
+              "UHF (ultra alta)",
+              "300 MHz a 3 GHz",
+              "Senda de planeo del ILS, DME, radar secundario (1030 y 1090 MHz)"
+            ],
+            [
+              "SHF (super alta)",
+              "3 a 30 GHz",
+              "Radar meteorológico de a bordo y radioaltímetro"
+            ]
+          ],
+          "caption": "Bandas de radio y su uso en aviación",
+          "src": "Anexo 10 OACI; UIT"
+        },
+        "note": {
+          "kind": "tip",
+          "text": "Para recordar el orden: LF, MF, HF, VHF, UHF, SHF; cada banda multiplica por diez. La que te interesa en el vuelo VFR es la VHF."
+        },
+        "ideas": [
+          "Como en una orquesta: los graves (LF y MF) se oyen detrás de la esquina y llegan lejos pegados al suelo; los agudos (VHF y superiores) van derechos como un rayo de linterna."
+        ]
+      },
+      {
+        "title": "Onda de tierra o superficial (ground wave)",
+        "text": [
+          "La **onda de tierra** sigue la curvatura de la Tierra. La parte de la onda que roza el suelo se frena, y eso hace que el frente de onda se doble hacia abajo y acompañe la superficie: es la **difracción**. Existe sobre todo en **LF y MF** (el curso la sitúa hasta HF), y por eso los radiofaros NDB se oyen más allá del horizonte.",
+          "Su alcance depende de tres factores: la **frecuencia** (a más frecuencia, antes se debilita), la **superficie** sobre la que viaja (el mar conduce mejor que el terreno seco y rocoso, y la onda llega más lejos) y la **polarización** de la onda (la vertical se atenúa menos). A medida que avanza va perdiendo energía y se acaba apagando; por eso la onda de tierra no sirve para grandes distancias."
+        ],
+        "ideas": [
+          "Es como la voz de alguien que habla detrás de la esquina de un edificio: la oyes aunque no lo veas porque el sonido rodea el obstáculo; la luz de su linterna, en cambio, no."
+        ]
+      },
+      {
+        "title": "Onda ionosférica (sky wave)",
+        "text": [
+          "La **onda ionosférica** sube hacia el cielo y vuelve a tierra porque la **ionosfera**, capas de gas ionizado entre unos 60 y 400 km de altura, la **refracta**. Es el mecanismo de la **HF** (3 a 30 MHz): con un solo salto, la señal cae a miles de kilómetros del emisor. Por eso se usa en las comunicaciones oceánicas, donde la VHF no llega.",
+          "Tiene un inconveniente: entre el punto donde se apaga la onda de tierra y el punto donde regresa la ionosférica queda una **zona de silencio** sin recepción, y el estado de la ionosfera cambia con la hora del día, la estación y la actividad solar, de modo que la calidad varía. Las ondas de **VHF y superiores atraviesan la ionosfera** sin volver, así que esta ruta no existe para las comunicaciones VFR."
+        ],
+        "ideas": [
+          "Piensa en lanzar una pelota contra el techo de un frontón: rebota y cae lejos de ti. La ionosfera hace de techo, pero solo para las frecuencias de HF; la VHF, más fina, lo atraviesa como una bala que no rebota."
+        ]
+      },
+      {
+        "title": "Onda directa y onda espacial (space wave)",
+        "text": [
+          "La **onda directa** viaja en línea recta del emisor al receptor, como la luz, y no rodea obstáculos: donde una montaña o un edificio tapa la línea, se crean **zonas de sombra** sin señal. La **onda espacial** es el conjunto de la onda directa y la **onda reflejada en el suelo**, que llega al receptor por un camino algo más largo. Las diapositivas definen el término de dos maneras (a veces para la directa sola, a veces para la suma de ambas); lo que debes saber es que la comunicación VHF funciona en línea de vista.",
+          "La onda espacial existe en todas las bandas, pero es el **único camino** para la **VHF y superiores**. Su alcance lo limita el **horizonte radioeléctrico** (*radio horizon*), algo más lejano que el horizonte óptico porque la atmósfera curva ligeramente el rayo hacia abajo. A cambio de ese alcance limitado, la VHF llega clara y casi libre de ruido atmosférico."
+        ],
+        "figure": "svg:090-ondas-propagacion",
+        "caption": "Las tres rutas de propagación: tierra (LF, MF), ionosférica (HF) y espacial (VHF y superiores)",
+        "ideas": [
+          "La VHF es como una linterna: si hay una pared en medio, no ilumina lo que queda detrás. Cuanto más alto subes la linterna, más lejos alcanza el haz."
+        ]
+      },
+      {
+        "title": "El alcance en línea de vista: 1,23 × √h",
+        "text": [
+          "Como la VHF viaja en línea recta, el alcance depende sobre todo de la **altura de las antenas**: cuanto más alto estás, más lejos está tu horizonte y más lejos llega tu señal. La estimación práctica del alcance en millas náuticas, con la altura en pies, es:"
+        ],
+        "table": {
+          "head": [
+            "Altura de la aeronave",
+            "Alcance aproximado"
+          ],
+          "rows": [
+            [
+              "1000 ft",
+              "39 NM"
+            ],
+            [
+              "3000 ft",
+              "67 NM"
+            ],
+            [
+              "5000 ft",
+              "87 NM"
+            ],
+            [
+              "10 000 ft",
+              "123 NM"
+            ]
+          ],
+          "caption": "Alcance aproximado en línea de vista (antena de tierra a nivel del suelo)"
+        },
         "formulas": [
           {
             "f": "Alcance (NM) ≈ 1,23 × √h (ft)",
@@ -26,56 +183,86 @@
           {
             "q": "Una aeronave a 4900 ft habla con una torre cuya antena está a 100 ft. ¿Qué alcance tiene?",
             "a": "√4900 = 70 y √100 = 10; 1,23 × (70 + 10) ≈ 98 NM."
+          },
+          {
+            "q": "A 3000 ft sobre una estación a 25 NM hay un macizo montañoso en medio. ¿Puedes esperar comunicación?",
+            "a": "El alcance teórico a 3000 ft es 67 NM, de modo que el horizonte no te limita, pero el macizo corta la línea de vista: la comunicación puede ser mala o imposible. Subir o cambiar de rumbo para ver la estación la mejora."
           }
+        ],
+        "figure": "svg:090-linea-vista",
+        "caption": "Con altura hay línea de vista; a baja cota el terreno tapa la estación",
+        "ideas": [
+          "Cuando subes a una torre ves más lejos: no ves con más fuerza, ves por encima de lo que antes te tapaba. Con la radio ocurre igual: más altura, horizonte más lejano."
         ]
       },
       {
-        "title": "Factores que limitan el alcance",
-        "bullets": ["La **altura** de las dos antenas: es el factor principal.", "Los **obstáculos**: montañas, edificios o el propio terreno entre las dos antenas.", "La **potencia** del transmisor y la **sensibilidad** del receptor.", "La **antena**: su tipo, su estado y su posición en la aeronave (la señal se atenúa si el fuselaje la tapa).", "Las condiciones atmosféricas y las interferencias, aunque su efecto es menor en VHF que en otras bandas."]
+        "title": "Qué debilita o distorsiona la señal",
+        "text": [
+          "Una señal de radio nunca llega con la misma fuerza con la que sale. La **atenuación** es la pérdida de potencia a medida que aumenta la distancia al emisor: la energía se reparte en un frente cada vez mayor. Además, la onda puede sufrir **refracción** y **reflexión** al cambiar de medio. Hay tres casos: la **refracción costera** (la onda pasa de tierra a mar y cambia de dirección porque los dos medios son distintos), la **refracción atmosférica** (masas de aire con grandes diferencias de temperatura, presión y humedad) y la **refracción ionosférica** (zonas con distinto nivel de ionización, que es la que da la onda ionosférica).",
+          "El **desvanecimiento** (*fading*) aparece cuando al receptor llegan dos ondas de la misma frecuencia por caminos diferentes, por ejemplo la directa y la reflejada. Si llegan **en fase**, se suman y la señal **aumenta**; si llegan **en contrafase**, se restan y la señal **se debilita** hasta desaparecer. Otros factores que acortan el alcance son los **obstáculos**, la **potencia** del transmisor, la **sensibilidad** del receptor y el estado y la posición de la **antena** (el fuselaje puede taparla cuando el avión se inclina)."
+        ],
+        "ideas": [
+          "Dos personas empujan un columpio: si empujan a la vez, sube más; si una empuja cuando la otra frena, se anulan. Con el fading pasa lo mismo con la onda directa y la reflejada.",
+          "Gritar en una sala grande: cuanto más lejos está el oyente, menos te oye (atenuación); si se coloca donde rebota el eco justo en contra, casi no te oye (fading)."
+        ]
       },
       {
         "title": "Por qué se usa la VHF en aviación",
-        "text": ["La banda de **VHF** (muy alta frecuencia, de 30 a 300 MHz) tiene ventajas claras para la comunicación aire-tierra: la señal es **clara y casi libre de ruido atmosférico**, las antenas son pequeñas y caben en el avión, y el alcance en línea de vista basta para cubrir un aeródromo o un sector de control. La comunicación es en **modulación de amplitud (AM)** y con **polarización vertical**, por eso las antenas de las aeronaves son varillas verticales (látigos) en la panza o el dorso del fuselaje.", "La contrapartida es el alcance limitado. Cuando necesitas comunicar a mayor distancia, como en un vuelo oceánico, se usa la **HF** (3–30 MHz), que rebota en la ionosfera y llega mucho más lejos, aunque con peor calidad. En el vuelo VFR en España vas a usar siempre la VHF."]
+        "text": [
+          "La **VHF** (30 a 300 MHz) tiene ventajas claras para la comunicación aire-tierra: la señal es **clara y casi libre de ruido atmosférico**, las antenas son pequeñas, y el alcance en línea de vista basta para cubrir un aeródromo o un sector. La comunicación es en **modulación de amplitud (AM)** y con **polarización vertical**, por eso las antenas de los aviones son varillas verticales en el dorso o la panza del fuselaje.",
+          "La contrapartida es el alcance limitado. Cuando hace falta comunicar a mayor distancia, como en un vuelo oceánico, se usa la **HF**, que rebota en la ionosfera y llega mucho más lejos, aunque con peor calidad. En el vuelo VFR en España vas a usar siempre la VHF. Muchas dependencias ATS tienen **estaciones remotas** (repetidores en un punto alto) para ampliar la cobertura de una frecuencia."
+        ],
+        "ideas": [
+          "La VHF es como hablar por un walkie de buena calidad desde un balcón: se oye nítido, pero solo mientras os veáis. La HF es como un altavoz de plaza mayor que se oye lejos, pero con ruido de fondo."
+        ]
       },
       {
-        "title": "Alcance en la práctica",
-        "text": ["La fórmula da el alcance máximo **teórico**, con el terreno llano entre las antenas. En la práctica, las montañas y los edificios lo reducen, y una antena montada bajo el fuselaje pierde señal cuando el avión se inclina y el propio fuselaje queda en medio. Muchas dependencias del servicio de tránsito aéreo tienen **estaciones remotas** (repetidores situados en un punto alto) para ampliar la cobertura de una frecuencia.", "Para tener una idea rápida, la tabla da el alcance sobre una antena en el suelo; si la antena de tierra está en una torre, suma su raíz como se vio en la fórmula."],
-        "table": {
-          "caption": "Alcance aproximado en línea de vista según la altura (antena de tierra a nivel del suelo)",
-          "head": ["Altura de la aeronave", "Alcance aproximado"],
-          "rows": [
-            ["1000 ft", "39 NM"],
-            ["3000 ft", "67 NM"],
-            ["5000 ft", "87 NM"],
-            ["10 000 ft", "123 NM"]
-          ]
-        },
-        "examples": [
-          {
-            "q": "Vuelas a 3000 ft sobre una estación de tierra a 25 NM, pero un macizo montañoso queda entre vosotros. ¿Puedes esperar comunicación?",
-            "a": "El alcance teórico a 3000 ft es 67 NM, de modo que el horizonte no te limita, pero el macizo corta la línea de vista: la comunicación puede ser mala o imposible. Subir, o cambiar de rumbo para ver la estación, mejora la señal."
-          }
+        "title": "La banda y los canales",
+        "text": [
+          "Las comunicaciones aire-tierra civiles usan la banda de **118,000 a 136,975 MHz**. La banda de **108 a 117,975 MHz** es la de las ayudas a la navegación (VOR e ILS). La frecuencia **121,500 MHz** es la de emergencia. El reparto detallado de la banda está en la lección de técnica de transmisión (090.03).",
+          "Tradicionalmente cada canal ocupaba **25 kHz**, lo que daba **760 canales**. Para tener más, se introdujo la canalización de **8,33 kHz**, que divide cada canal de 25 kHz en **tres** y triplica la capacidad. Los canales de 8,33 kHz se identifican con **seis dígitos** (118,005; 118,010; 118,015…), de ahí la regla de decir los seis dígitos salvo si el quinto y el sexto son cero. En la Unión Europea los equipos de 8,33 kHz son obligatorios para el servicio móvil aeronáutico (Reglamento (UE) 1079/2012); comprueba las excepciones vigentes. Si en las diapositivas ves canales de 25 kHz por debajo de cierto nivel de vuelo y de 8,33 kHz por encima, es la historia de la transición; hoy rige el 8,33 kHz.",
+          "Si tu radio es de 25 kHz solo podrás sintonizar los canales cuya terminación coincida con esa rejilla."
+        ],
+        "verify": true,
+        "ideas": [
+          "Piensa en una autopista con carriles de 25 kHz: al hacerlos tres veces más estrechos caben tres coches donde antes cabía uno. Por eso se necesita el número largo para distinguirlos."
         ]
       },
       {
         "title": "Qué hacer cuando no oyes o no te oyen",
-        "text": ["Antes de pensar que la radio está estropeada, repasa lo básico: **frecuencia** correcta sintonizada (comprueba los seis dígitos), **volumen** y **silenciador (squelch)** bien ajustados, selector de **transmisión** en el equipo que estás usando y **auriculares y micrófono** conectados. Si todo está bien y sigues sin comunicar, **gana altura** si puedes hacerlo con seguridad, o varía tu posición para recuperar la línea de vista, y prueba una frecuencia alternativa. Si no consigues contacto, aplica el procedimiento de fallo de comunicaciones del bloque correspondiente (código 7600).", "Para comprobar la calidad de la comunicación se usa la escala de **legibilidad de 1 a 5**: 1 ilegible, 2 legible a ratos, 3 legible con dificultad, 4 legible, 5 perfectamente legible. «Comprobación de radio, ¿cómo me recibe?» se contesta, por ejemplo, «Le recibo cinco»."]
-      },
-      {
-        "title": "La banda y los canales",
-        "text": ["Las comunicaciones aire-tierra civiles usan la banda de **118,000 a 136,975 MHz**. La banda de **108 a 117,975 MHz** corresponde a las ayudas de navegación (VOR e ILS). La frecuencia **121,500 MHz** es la de emergencia.", "Tradicionalmente cada canal ocupaba **25 kHz**, lo que daba 760 canales. Para tener más, se introdujo la canalización de **8,33 kHz**, que divide cada canal de 25 kHz en tres y multiplica la capacidad. Los canales de 8,33 kHz se identifican con **seis dígitos** (118,005; 118,010; 118,015…), de ahí la regla de decir los seis dígitos salvo si el quinto y el sexto son cero. Las radios VHF modernas sintonizan 8,33 kHz.", "En Europa, los equipos con canalización de **8,33 kHz** son obligatorios en todo el espacio aéreo y para todas las frecuencias del servicio móvil aeronáutico desde diciembre de 2018, según el Reglamento (UE) 1079/2012 (comprueba las excepciones vigentes). Si tu radio es de 25 kHz solo podrás usar los canales cuya terminación coincida con esa rejilla."],
-        "verify": true
+        "text": [
+          "Antes de pensar que la radio está estropeada, repasa lo básico: **frecuencia** correcta sintonizada (comprueba los seis dígitos), **volumen** y **silenciador (squelch)** bien ajustados, selector de **transmisión** en el equipo que estás usando y **auriculares y micrófono** conectados. Si todo está bien, **gana altura** si puedes hacerlo con seguridad, o varía tu posición para recuperar la línea de vista, y prueba una frecuencia alternativa. Si no consigues contacto, aplica el procedimiento de fallo de comunicaciones (lección 090.09, código 7600)."
+        ],
+        "ideas": [
+          "Es como el wifi de casa: antes de llamar a la compañía miras si el cable está puesto, si el router está encendido y si estás en la habitación adecuada."
+        ]
       }
     ],
-    "numbers": ["Alcance VHF ≈ 1,23 × √h (ft) en NM", "Banda de comunicaciones: 118,000 a 136,975 MHz", "Canalización: 25 kHz (760 canales) y 8,33 kHz (tres canales por cada uno de 25 kHz)", "Frecuencia de socorro: 121,5 MHz", "Escala de legibilidad: 1 ilegible a 5 perfectamente legible"],
-    "traps": ["El alcance depende de la altura, no de la potencia en primer lugar.", "La VHF no sigue la curvatura de la Tierra; la HF sí, por reflexión en la ionosfera.", "108 a 117,975 MHz es la banda de navegación, no de comunicaciones.", "Pensar que más potencia equivale a más alcance: la línea de vista y la altura mandan."],
-    "spain": ["En el AIP España, AD 2, figuran las frecuencias de cada aeródromo con sus seis dígitos (8,33 kHz)."],
+    "numbers": [
+      "Velocidad de las ondas de radio: unos 300 000 km/s",
+      "λ (m) = 300 / f (MHz)",
+      "VHF: 30 a 300 MHz; HF: 3 a 30 MHz",
+      "Alcance VHF ≈ 1,23 × √h (ft) en NM",
+      "Banda de comunicaciones: 118,000 a 136,975 MHz; navegación VOR/ILS: 108 a 117,975 MHz",
+      "Canalización: 25 kHz (760 canales) y 8,33 kHz (tres canales por cada uno de 25 kHz)",
+      "Frecuencia de emergencia: 121,5 MHz"
+    ],
+    "traps": [
+      "El alcance depende de la altura, no de la potencia en primer lugar: más potencia no rodea una montaña.",
+      "La VHF no sigue la curvatura de la Tierra; la HF llega lejos porque rebota en la ionosfera.",
+      "108 a 117,975 MHz es la banda de navegación, no de comunicaciones.",
+      "A más frecuencia, menor longitud de onda; no al revés.",
+      "El fading no es un fallo de la radio: es interferencia entre la onda directa y la reflejada."
+    ],
+    "spain": [
+      "En el AIP España, AD 2, figuran las frecuencias de cada aeródromo con sus seis dígitos (8,33 kHz)."
+    ],
     "sources": [
       {
-        "title": "Anexo 10, vol. III (VHF)"
+        "title": "Anexo 10 OACI, vol. III y V (VHF y espectro)"
       },
       {
-        "title": "SERA, sección 14 (EASA)",
+        "title": "SERA, sección 14: fraseología (Easy Access Rules, EASA)",
         "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
       }
     ],
@@ -89,7 +276,96 @@
         "href": "#/licencias/fraseologia?tab=radio"
       }
     ],
-    "reviewed": "2026-10-09"
+    "reviewed": "2026-11-23",
+    "course": "Tema 1 · Principios de radio y propagación",
+    "outline": [
+      {
+        "title": "La onda de radio",
+        "items": [
+          "Electromagnética: sin medio y a la velocidad de la luz",
+          "Campo eléctrico y magnético que se regeneran",
+          "f = 1/T; λ = c/f; λ (m) = 300 / f (MHz)"
+        ]
+      },
+      {
+        "title": "Bandas",
+        "items": [
+          "LF y MF: NDB, onda de tierra",
+          "HF (3 a 30 MHz): larga distancia, ionosfera",
+          "VHF (30 a 300 MHz): comunicaciones en línea de vista",
+          "UHF: senda de planeo, DME y radar secundario"
+        ]
+      },
+      {
+        "title": "Tres rutas de propagación",
+        "items": [
+          "Tierra: difracción, LF y MF, depende de frecuencia, superficie y polarización",
+          "Ionosférica: refracción, HF, zona de silencio",
+          "Espacial: directa más reflejada; única en VHF y superiores"
+        ]
+      },
+      {
+        "title": "Alcance en VHF",
+        "items": [
+          "≈ 1,23 × √h (ft) en NM",
+          "Se suma √h de la antena de tierra",
+          "Obstáculos, potencia, sensibilidad y antena"
+        ]
+      },
+      {
+        "title": "Qué la debilita",
+        "items": [
+          "Atenuación con la distancia",
+          "Refracción costera, atmosférica e ionosférica",
+          "Fading: en fase suma, en contrafase resta"
+        ]
+      },
+      {
+        "title": "Banda y canales",
+        "items": [
+          "118 a 136,975 MHz; 108 a 117,975 es navegación",
+          "25 kHz (760 canales) y 8,33 kHz (tres por canal)",
+          "Seis dígitos; 121,5 emergencia"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "Bandas por orden: LF, MF, HF, VHF, UHF, SHF; cada una diez veces más alta que la anterior. La VHF empieza en 30 MHz.",
+      "Alcance VHF: «uno veintitrés por la raíz de la altura en pies». A 2500 ft, la raíz es 50, y 50 × 1,23 ≈ 61 NM.",
+      "Longitud de onda: «trescientos entre megahercios». 300 / 121,5 ≈ 2,5 m.",
+      "Fading: en fase, suman (más señal); en contrafase, restan (menos señal).",
+      "Tres ondas: tierra rodea (difracción), cielo rebota (ionosfera), espacio va derecho (VHF)."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Qué es una onda de radio y por qué no necesita un medio?",
+        "a": "Es una onda electromagnética: un campo eléctrico y uno magnético que se regeneran mutuamente. Por eso se propaga también por el vacío, a la velocidad de la luz (unos 300 000 km/s)."
+      },
+      {
+        "q": "Calcula la longitud de onda de 118 MHz y explica por qué la antena es tan corta.",
+        "a": "λ = 300 / 118 ≈ 2,5 m. Una antena eficaz mide un cuarto de onda, unos 60 cm."
+      },
+      {
+        "q": "¿Por qué la VHF no sigue la curvatura de la Tierra ni rebota en la ionosfera?",
+        "a": "A esa frecuencia la onda de tierra se atenúa enseguida y la ionosfera la deja pasar. Solo queda la onda espacial, en línea de vista."
+      },
+      {
+        "q": "¿Qué diferencia hay entre onda de tierra, ionosférica y espacial?",
+        "a": "La de tierra sigue la superficie por difracción (LF y MF); la ionosférica sube y vuelve refractada en la ionosfera (HF); la espacial va directa más reflejada (VHF y superiores)."
+      },
+      {
+        "q": "Vuelas a 4900 ft sobre una torre cuya antena está a 100 ft. ¿Qué alcance esperas?",
+        "a": "1,23 × (√4900 + √100) = 1,23 × (70 + 10) ≈ 98 NM, siempre que el terreno no tape la línea de vista."
+      },
+      {
+        "q": "¿Qué es el fading y cuándo se produce?",
+        "a": "Es el desvanecimiento de la señal cuando llegan al receptor dos ondas de la misma frecuencia por caminos distintos (por ejemplo directa y reflejada): si están en contrafase se restan y la señal se debilita."
+      },
+      {
+        "q": "¿Cuántos canales de 8,33 kHz caben en uno de 25 kHz y cómo se reconocen?",
+        "a": "Tres. Se identifican con seis dígitos, y en radio se dicen todos salvo que el quinto y el sexto sean cero."
+      }
+    ]
   },
   "questions": [
     {
@@ -97,10 +373,20 @@
       "type": "concepto",
       "level": 1,
       "q": "¿Cómo se propagan las ondas VHF?",
-      "options": ["Siguiendo la curvatura de la Tierra", "Reflejándose en la ionosfera", "En línea de vista", "Rodeando las montañas"],
+      "options": [
+        "Siguiendo la curvatura de la Tierra",
+        "Reflejándose en la ionosfera",
+        "En línea de vista",
+        "Rodeando las montañas"
+      ],
       "correct": 2,
       "why": "La VHF viaja en línea recta; el alcance depende de la altura.",
-      "whyNot": ["Eso es la HF.", "Eso es la HF.", null, "No rodean obstáculos grandes."],
+      "whyNot": [
+        "Eso es la HF.",
+        "Eso es la HF.",
+        null,
+        "No rodean obstáculos grandes."
+      ],
       "ref": "Anexo 10, vol. III"
     },
     {
@@ -108,10 +394,20 @@
       "type": "calculo",
       "level": 2,
       "q": "Una aeronave vuela a 2500 ft sobre una estación de tierra. ¿Cuál es el alcance aproximado?",
-      "options": ["61 NM", "25 NM", "122 NM", "250 NM"],
+      "options": [
+        "61 NM",
+        "25 NM",
+        "122 NM",
+        "250 NM"
+      ],
       "correct": 0,
       "why": "1,23 × √2500 = 1,23 × 50 ≈ 61 NM.",
-      "whyNot": [null, "Es la altura dividida por 100.", "Es el doble.", "No es el cálculo."],
+      "whyNot": [
+        null,
+        "Es la altura dividida por 100.",
+        "Es el doble.",
+        "No es el cálculo."
+      ],
       "ref": "Doc 9432"
     },
     {
@@ -119,10 +415,20 @@
       "type": "concepto",
       "level": 2,
       "q": "¿Cuál es el factor que más limita el alcance de la VHF?",
-      "options": ["La temperatura", "La hora del día", "La frecuencia exacta", "La altura de las antenas y los obstáculos"],
+      "options": [
+        "La temperatura",
+        "La hora del día",
+        "La frecuencia exacta",
+        "La altura de las antenas y los obstáculos"
+      ],
       "correct": 3,
       "why": "El alcance depende de la línea de vista, determinada por la altura y los obstáculos.",
-      "whyNot": ["No es el factor principal.", "No es el factor principal.", "No es el factor principal.", null],
+      "whyNot": [
+        "No es el factor principal.",
+        "No es el factor principal.",
+        "No es el factor principal.",
+        null
+      ],
       "ref": "Doc 9432"
     },
     {
@@ -130,10 +436,20 @@
       "type": "regla",
       "level": 2,
       "q": "¿En qué banda se hacen las comunicaciones aire-tierra civiles de VHF?",
-      "options": ["108 a 117,975 MHz", "118,000 a 136,975 MHz", "137 a 150 MHz", "225 a 400 MHz"],
+      "options": [
+        "108 a 117,975 MHz",
+        "118,000 a 136,975 MHz",
+        "137 a 150 MHz",
+        "225 a 400 MHz"
+      ],
       "correct": 1,
       "why": "La banda de comunicaciones va de 118,000 a 136,975 MHz.",
-      "whyNot": ["Es la banda de navegación.", null, "No es la banda de comunicaciones.", "Es UHF militar."],
+      "whyNot": [
+        "Es la banda de navegación.",
+        null,
+        "No es la banda de comunicaciones.",
+        "Es UHF militar."
+      ],
       "ref": "Anexo 10, vol. III"
     },
     {
@@ -141,31 +457,276 @@
       "type": "concepto",
       "level": 2,
       "q": "¿Cuántos canales de 8,33 kHz caben en cada canal de 25 kHz?",
-      "options": ["Tres", "Dos", "Cuatro", "Seis"],
+      "options": [
+        "Tres",
+        "Dos",
+        "Cuatro",
+        "Seis"
+      ],
       "correct": 0,
       "why": "La canalización de 8,33 kHz triplica los canales de 25 kHz.",
-      "whyNot": [null, "No es la cifra.", "No es la cifra.", "No es la cifra."],
+      "whyNot": [
+        null,
+        "No es la cifra.",
+        "No es la cifra.",
+        "No es la cifra."
+      ],
       "ref": "Anexo 10, vol. III"
+    },
+    {
+      "id": "090.11.006",
+      "type": "calculo",
+      "level": 2,
+      "q": "¿Qué longitud de onda tiene la frecuencia de emergencia de 121,5 MHz?",
+      "options": [
+        "Unos 25 m",
+        "Unos 2,5 m",
+        "Unos 0,25 m",
+        "Unos 250 m"
+      ],
+      "correct": 1,
+      "why": "λ = c / f = 300 / 121,5 ≈ 2,47 m. Una antena de cuarto de onda mide por eso unos 60 cm.",
+      "whyNot": [
+        "Sería la longitud de una onda de 12 MHz (HF), no de VHF.",
+        null,
+        "Sería la de una onda de unos 1200 MHz (UHF).",
+        "Sería la de una onda de 1,2 MHz (MF)."
+      ],
+      "ref": "Anexo 10 OACI; λ = c/f"
+    },
+    {
+      "id": "090.11.007",
+      "type": "concepto",
+      "level": 1,
+      "q": "Las ondas de radio, ¿a qué velocidad se propagan en el espacio libre?",
+      "options": [
+        "A la velocidad del sonido",
+        "A una velocidad que crece con la frecuencia",
+        "A la mitad de la velocidad de la luz en VHF",
+        "A la velocidad de la luz"
+      ],
+      "correct": 3,
+      "why": "Todas las ondas electromagnéticas viajan a la velocidad de la luz (unos 300 000 km/s), con independencia de su frecuencia.",
+      "whyNot": [
+        "El sonido es una onda mecánica y es unas 900 000 veces más lento.",
+        "La velocidad no depende de la frecuencia; lo que cambia es la longitud de onda.",
+        "No existe ningún caso en que la VHF viaje más despacio por ser VHF.",
+        null
+      ],
+      "ref": "Anexo 10 OACI, propagación"
+    },
+    {
+      "id": "090.11.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué ocurre con la longitud de onda cuando aumenta la frecuencia?",
+      "options": [
+        "Aumenta",
+        "No cambia porque depende de la potencia",
+        "Disminuye",
+        "Aumenta solo en VHF"
+      ],
+      "correct": 2,
+      "why": "Como λ = c / f, a mayor frecuencia la longitud de onda es menor.",
+      "whyNot": [
+        "Sería cierto si la fórmula fuese λ = c · f, pero es una división.",
+        "La potencia no interviene en la relación entre frecuencia y longitud de onda.",
+        null,
+        "Esa relación es la misma en todas las bandas."
+      ],
+      "ref": "Anexo 10 OACI; λ = c/f"
+    },
+    {
+      "id": "090.11.009",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué onda de propagación utiliza la comunicación VHF en el vuelo VFR?",
+      "options": [
+        "La de tierra, que sigue la curvatura",
+        "La espacial, en línea de vista",
+        "La ionosférica, que rebota en el cielo",
+        "La ionosférica de día y la de tierra de noche"
+      ],
+      "correct": 1,
+      "why": "La VHF solo dispone de la onda espacial: no sigue la curvatura de la Tierra y atraviesa la ionosfera sin volver.",
+      "whyNot": [
+        "La onda de tierra se atenúa demasiado rápido a frecuencias de VHF.",
+        null,
+        "La ionosfera no refracta la VHF: la deja pasar.",
+        "No existe alternancia día-noche en VHF."
+      ],
+      "ref": "Anexo 10 OACI; apuntes del curso"
+    },
+    {
+      "id": "090.11.010",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué banda de frecuencias se refracta en la ionosfera y permite comunicar a miles de kilómetros?",
+      "options": [
+        "La VHF, de 30 a 300 MHz",
+        "La UHF, de 300 MHz a 3 GHz",
+        "La HF, de 3 a 30 MHz",
+        "La MF, de 300 kHz a 3 MHz"
+      ],
+      "correct": 2,
+      "why": "La onda ionosférica es característica de la HF y se usa en las comunicaciones oceánicas.",
+      "whyNot": [
+        "La VHF atraviesa la ionosfera.",
+        "La UHF también la atraviesa y se propaga en línea de vista.",
+        null,
+        "La MF se propaga sobre todo como onda de tierra."
+      ],
+      "ref": "Anexo 10 OACI"
+    },
+    {
+      "id": "090.11.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "La onda de tierra (surface wave) es útil sobre todo en las bandas:",
+      "options": [
+        "VHF y UHF",
+        "HF y SHF",
+        "Solo en SHF",
+        "LF y MF"
+      ],
+      "correct": 3,
+      "why": "La onda de tierra sigue la superficie por difracción y es útil en LF y MF, como los radiofaros NDB. A más frecuencia se atenúa antes.",
+      "whyNot": [
+        "La VHF y la UHF van en línea de vista.",
+        "La SHF es todavía más directiva y no sigue la superficie.",
+        "En SHF casi no existe onda de tierra útil.",
+        null
+      ],
+      "ref": "Apuntes del curso; Anexo 10"
+    },
+    {
+      "id": "090.11.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "Dos ondas de la misma frecuencia llegan al receptor en contrafase. ¿Qué ocurre con la señal?",
+      "options": [
+        "Se debilita y puede desaparecer (fading)",
+        "Se refuerza, porque suman energía",
+        "Cambia de frecuencia",
+        "No sufre ningún efecto"
+      ],
+      "correct": 0,
+      "why": "Si la directa y la reflejada llegan en contrafase se restan y producen desvanecimiento. En fase se suman y la señal aumenta.",
+      "whyNot": [
+        null,
+        "Eso ocurre en fase, no en contrafase.",
+        "Las ondas no cambian de frecuencia por interferir entre sí.",
+        "Precisamente se produce el fading."
+      ],
+      "ref": "Apuntes del curso; propagación"
+    },
+    {
+      "id": "090.11.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "La pérdida de potencia de una señal conforme aumenta la distancia al emisor se llama:",
+      "options": [
+        "Refracción",
+        "Atenuación",
+        "Difracción",
+        "Modulación"
+      ],
+      "correct": 1,
+      "why": "La atenuación es la pérdida de potencia con la distancia. Refracción y difracción cambian la dirección de la onda.",
+      "whyNot": [
+        "La refracción es el cambio de dirección al cambiar de medio.",
+        null,
+        "La difracción es el curvado de la onda alrededor de un obstáculo o de la superficie.",
+        "La modulación es la forma de imprimir la voz en la onda."
+      ],
+      "ref": "Apuntes del curso"
+    },
+    {
+      "id": "090.11.014",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Qué polarización usan las comunicaciones VHF aeronáuticas?",
+      "options": [
+        "Horizontal",
+        "Circular",
+        "Indistinta, según la altura",
+        "Vertical"
+      ],
+      "correct": 3,
+      "why": "Las antenas de los aviones son varillas verticales porque la polarización de la VHF aeronáutica es vertical.",
+      "whyNot": [
+        "La horizontal se usa, por ejemplo, en televisión.",
+        "No se usa polarización circular en comunicaciones aeronáuticas VHF.",
+        "La polarización es fija y no depende de la altura.",
+        null
+      ],
+      "ref": "Anexo 10 OACI, vol. III"
+    },
+    {
+      "id": "090.11.015",
+      "type": "calculo",
+      "level": 3,
+      "q": "Un avión vuela a 3600 ft sobre la antena de una estación de tierra. ¿Qué alcance teórico aproximado tiene en línea de vista?",
+      "options": [
+        "120 NM",
+        "49 NM",
+        "74 NM",
+        "98 NM"
+      ],
+      "correct": 2,
+      "why": "√3600 = 60 y 1,23 × 60 = 73,8, unos 74 NM.",
+      "whyNot": [
+        "Sale de aplicar la fórmula con la altura mal convertida; no corresponde a 3600 ft.",
+        "Sale de usar una altura de solo 1600 ft (1,23 × 40).",
+        null,
+        "Es el alcance de una aeronave a 4900 ft con una torre de 100 ft, otro caso."
+      ],
+      "ref": "Alcance VHF ≈ 1,23 × √h"
     }
   ],
   "cards": [
     {
       "id": "c.090.11.01",
-      "front": "Alcance VHF",
-      "back": "≈ 1,23 × √h (ft), en NM"
+      "front": "Velocidad de una onda de radio",
+      "back": "La de la luz: unos 300 000 km/s"
     },
     {
       "id": "c.090.11.02",
-      "front": "Propagación VHF",
-      "back": "En línea de vista; depende de la altura y de los obstáculos"
+      "front": "Longitud de onda",
+      "back": "λ (m) = 300 / f (MHz); a más frecuencia, menos longitud"
     },
     {
       "id": "c.090.11.03",
-      "front": "Banda de comunicaciones",
-      "back": "118,000 a 136,975 MHz"
+      "front": "Bandas de radio por orden",
+      "back": "LF, MF, HF, VHF, UHF, SHF"
     },
     {
       "id": "c.090.11.04",
+      "front": "Onda de tierra",
+      "back": "Sigue la superficie por difracción; LF y MF"
+    },
+    {
+      "id": "c.090.11.05",
+      "front": "Onda ionosférica",
+      "back": "Se refracta en la ionosfera; HF; deja zona de silencio"
+    },
+    {
+      "id": "c.090.11.06",
+      "front": "Alcance VHF",
+      "back": "≈ 1,23 × √h (ft), en NM; depende de la altura y de los obstáculos"
+    },
+    {
+      "id": "c.090.11.07",
+      "front": "Fading",
+      "back": "Ondas directa y reflejada: en fase suman, en contrafase restan"
+    },
+    {
+      "id": "c.090.11.08",
+      "front": "Banda de comunicaciones",
+      "back": "118,000 a 136,975 MHz (navegación: 108 a 117,975)"
+    },
+    {
+      "id": "c.090.11.09",
       "front": "Canalización",
       "back": "25 kHz o 8,33 kHz (tres canales por cada uno de 25 kHz)"
     }

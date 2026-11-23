@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340">
+  <title>Corte vertical de una oclusión fría y de una oclusión cálida: el aire cálido queda elevado sobre las masas frías</title>
+  <rect x="0" y="0" width="640" height="340" class="sky"/>
+  <!-- ===== Oclusión fría (izquierda) ===== -->
+  <!-- aire cálido elevado -->
+  <path d="M12 96 L112 150 L300 60 L300 20 L12 20 Z" class="wa"/>
+  <!-- aire más frío (detrás) -->
+  <path d="M12 250 L12 96 L112 150 L190 250 Z" class="ac"/>
+  <!-- aire frío (delante) -->
+  <path d="M112 150 L300 60 L300 250 L190 250 Z" class="soft"/>
+  <rect x="0" y="250" width="312" height="30" class="ground"/>
+  <text x="156" y="46" class="txw b" text-anchor="middle">Aire cálido elevado</text>
+  <text x="62" y="212" class="txa b" text-anchor="middle">Más frío</text>
+  <text x="62" y="228" class="tx2" font-size="12" text-anchor="middle">(detrás)</text>
+  <text x="246" y="212" class="tx b" text-anchor="middle">Frío</text>
+  <text x="246" y="228" class="tx2" font-size="12" text-anchor="middle">(delante)</text>
+  <path d="M190 250 m-7 0 l14 0 l-7 -12 z" class="ink-fill"/>
+  <text x="156" y="274" class="tx2" font-size="12" text-anchor="middle">frente ocluido en superficie</text>
+  <text x="156" y="304" class="tx b" text-anchor="middle">Oclusión fría</text>
+  <text x="156" y="322" class="tx2" font-size="12" text-anchor="middle">el aire de detrás es el más frío</text>
+  <!-- ===== Oclusión cálida (derecha) ===== -->
+  <path d="M332 100 L560 150 L628 110 L628 20 L332 20 Z" class="wa"/>
+  <path d="M332 250 L332 100 L560 150 L450 250 Z" class="soft"/>
+  <path d="M450 250 L560 150 L628 110 L628 250 Z" class="ac"/>
+  <rect x="320" y="250" width="320" height="30" class="ground"/>
+  <text x="480" y="46" class="txw b" text-anchor="middle">Aire cálido elevado</text>
+  <text x="385" y="212" class="tx b" text-anchor="middle">Frío</text>
+  <text x="385" y="228" class="tx2" font-size="12" text-anchor="middle">(detrás)</text>
+  <text x="570" y="212" class="txa b" text-anchor="middle">Más frío</text>
+  <text x="570" y="228" class="tx2" font-size="12" text-anchor="middle">(delante)</text>
+  <path d="M450 250 m-7 0 l14 0 l-7 -12 z" class="ink-fill"/>
+  <text x="480" y="274" class="tx2" font-size="12" text-anchor="middle">frente ocluido en superficie</text>
+  <text x="480" y="304" class="tx b" text-anchor="middle">Oclusión cálida</text>
+  <text x="480" y="322" class="tx2" font-size="12" text-anchor="middle">el aire de delante es el más frío</text>
+  <line x1="316" y1="20" x2="316" y2="330" class="ln2 dash"/>
+</svg>

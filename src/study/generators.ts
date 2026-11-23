@@ -213,6 +213,21 @@ const descent: Gen = () => {
   ], `Tiempo = ${d} / ${gs} × 60 = ${fmt(min, 1)} min. Régimen = ${fmt(alt)} / ${fmt(min, 1)} ≈ ${f(ok)}.`, 'Planificación del descenso', 2)
 }
 
+const departure: Gen = () => {
+  // como en Aerotest: dos puntos en el mismo paralelo, distancia este-oeste → longitud del segundo
+  const lat = pick([30, 45, 60]), lonA = rnd(-170, 170, 10), east = Math.random() < 0.5
+  const dlong = rnd(10, 40, 5), d = Math.round(dlong * 60 * Math.cos(rad(lat)))
+  const lonFmt = (l: number) => { const x = ((l + 540) % 360) - 180; return x === 180 || x === -180 ? '180°' : `${Math.abs(x)}°${x >= 0 ? 'E' : 'W'}` }
+  const ok = lonA + (east ? dlong : -dlong)
+  const noCos = lonA + (east ? 1 : -1) * Math.round(d / 60)
+  const f = (l: number) => lonFmt(l)
+  return make('060.03', 'dep', `Dos puntos en el mismo paralelo. A está en ${lat}°N ${lonFmt(lonA)} y B está ${d} NM al ${east ? 'este' : 'oeste'} de A. ¿Cuál es la longitud de B?`, f(ok), [
+    [f(lonA - (ok - lonA)), 'Has sumado la diferencia de longitud hacia el lado contrario.'],
+    [f(noCos), 'Has dividido la distancia entre 60 sin multiplicar por el coseno de la latitud: eso solo vale en el ecuador.'],
+    [f(lonA + (east ? 1 : -1) * Math.round((d * Math.cos(rad(lat))) / 60)), 'Has multiplicado por el coseno en lugar de dividir.'],
+  ], `Distancia este-oeste = Δlong (min) × cos(latitud). Δlong = ${d} / (60 × cos ${lat}°) = ${dlong}°. Desde ${lonFmt(lonA)}, ${dlong}° al ${east ? 'este' : 'oeste'}: ${f(ok)}. Si pasas el antimeridiano (180°), las longitudes E se convierten en W.`, 'Navegación general: departure = Δlong × cos lat', 2)
+}
+
 /** generadores por bloque del temario */
 export const GENERATORS: Record<string, Gen[]> = {
   '030.04': [cg],
@@ -220,6 +235,7 @@ export const GENERATORS: Record<string, Gen[]> = {
   '030.05': [densityAlt],
   '030.07': [crosswind],
   '060.02': [localTime],
+  '060.03': [departure],
   '060.07': [tas, wind, fuelLeg],
   '060.08': [oneInSixty, descent],
   '060.11': [qdm],

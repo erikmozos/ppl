@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <title>Altitud de transición, capa de transición y nivel de transición: QNH y altitudes debajo, 1013 y niveles de vuelo encima</title>
+  <defs>
+    <marker id="050-captr-flecha-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker>
+    <marker id="050-captr-flecha-o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ok-fill"/></marker>
+  </defs>
+  <rect x="0" y="0" width="640" height="360" class="sky"/>
+  <rect x="0" y="320" width="640" height="40" class="ground"/>
+  <rect x="0" y="130" width="640" height="80" class="ac" stroke="none"/>
+  <line x1="0" y1="130" x2="640" y2="130" class="ac-ln thick"/>
+  <line x1="0" y1="210" x2="640" y2="210" class="ac-ln thick"/>
+  <text x="330" y="176" class="txa b" text-anchor="middle">Capa de transición</text>
+  <text x="330" y="194" class="tx2" text-anchor="middle">margen vertical entre ambos</text>
+  <text x="26" y="122" class="tx b">Nivel de transición (TL)</text>
+  <text x="26" y="148" class="tx2">primer FL utilizable</text>
+  <text x="26" y="164" class="tx2">cambia con el QNH</text>
+  <text x="26" y="202" class="tx b">Altitud de transición (TA)</text>
+  <text x="26" y="228" class="tx2">fija para cada aeródromo (AIP)</text>
+  <text x="26" y="70" class="txo b">Encima: 1013,25 hPa</text>
+  <text x="26" y="88" class="tx2">se vuela en niveles de vuelo (FL)</text>
+  <text x="26" y="292" class="txa b">Debajo: QNH local</text>
+  <text x="26" y="308" class="tx2">se vuela en altitudes</text>
+  <text x="26" y="256" class="tx2">QNH bajo: el TL sube</text>
+  <text x="26" y="272" class="tx2">QNH alto: el TL baja</text>
+  <line x1="520" y1="300" x2="520" y2="216" class="ok-ln thick" marker-end="url(#050-captr-flecha-o)"/>
+  <text x="532" y="262" class="txo b">Ascenso</text>
+  <text x="532" y="278" class="txo">1013 en la TA</text>
+  <line x1="520" y1="46" x2="520" y2="124" class="ac-ln thick" marker-end="url(#050-captr-flecha-a)"/>
+  <text x="532" y="76" class="txa b">Descenso</text>
+  <text x="532" y="92" class="txa">QNH en el TL</text>
+  <text x="320" y="344" class="tx2" text-anchor="middle">Se sube con la altitud, se baja con el nivel</text>
+</svg>

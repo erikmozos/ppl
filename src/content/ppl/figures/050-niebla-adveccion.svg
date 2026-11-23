@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380">
+<title>Niebla de advección: aire cálido y húmedo que pasa sobre mar frío (arriba) o sobre tierra fría desde un mar cálido (abajo) se enfría hasta saturarse (esquema propio)</title>
+<defs><marker id="050-niebla-adveccion-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="wa-fill"/></marker>
+<marker id="050-niebla-adveccion-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ac-fill"/></marker></defs>
+<rect x="10" y="10" width="620" height="170" rx="8" class="sky"/>
+<rect x="10" y="130" width="310" height="50" class="wa"/><rect x="320" y="130" width="310" height="50" class="ac"/>
+<line x1="40" y1="64" x2="290" y2="64" class="wa-ln thick" marker-end="url(#050-niebla-adveccion-w)"/>
+<text x="40" y="52" class="txw b">Aire cálido y húmedo hacia el mar</text>
+<ellipse cx="480" cy="116" rx="110" ry="18" class="soft"/><ellipse cx="520" cy="100" rx="70" ry="12" class="soft"/>
+<text x="480" y="120" class="tx b" text-anchor="middle">niebla de advección</text>
+<text x="165" y="160" class="txw b" text-anchor="middle">Tierra cálida</text><text x="475" y="160" class="txa b" text-anchor="middle">Mar relativamente frío</text>
+<text x="40" y="30" class="tx b">Caso 1: de tierra a un mar frío</text>
+<rect x="10" y="200" width="620" height="170" rx="8" class="sky"/>
+<rect x="10" y="320" width="310" height="50" class="ac"/><rect x="320" y="320" width="310" height="50" class="wa"/>
+<text x="40" y="220" class="tx b">Caso 2: de un mar cálido a tierra fría</text>
+<line x1="610" y1="256" x2="360" y2="256" class="wa-ln thick" marker-end="url(#050-niebla-adveccion-w)"/>
+<text x="610" y="244" class="txw b" text-anchor="end">Aire cálido y húmedo hacia tierra</text>
+<ellipse cx="150" cy="306" rx="110" ry="18" class="soft"/><ellipse cx="110" cy="290" rx="70" ry="12" class="soft"/>
+<text x="150" y="310" class="tx b" text-anchor="middle">niebla de advección</text>
+<text x="165" y="350" class="txa b" text-anchor="middle">Tierra fría (invierno)</text><text x="475" y="350" class="txw b" text-anchor="middle">Mar relativamente cálido</text>
+</svg>

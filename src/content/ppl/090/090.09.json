@@ -1,27 +1,49 @@
 {
   "lesson": {
     "id": "090.09",
-    "title": "Fallo de comunicaciones",
-    "summary": "Comprobaciones ante un fallo de radio, código 7600, transmisión a ciegas, seguir en VMC y aterrizar en el aeródromo adecuado más próximo, señales luminosas de la torre y procedimientos del AIP para cada CTR.",
+    "title": "Fallo de comunicaciones, reglas del aire y señales",
+    "summary": "Comprobaciones ante un fallo de radio, procedimiento VFR (7600, transmisión a ciegas, seguir en VMC y aterrizar), reglas del aire y mínimos VMC, señales luminosas de la torre, señales del área de señales y códigos de búsqueda y salvamento.",
     "objectives": [
-      "Seguir el orden de comprobaciones ante una pérdida de comunicaciones",
-      "Aplicar el procedimiento VFR de fallo de comunicaciones",
-      "Interpretar las señales luminosas de la torre y acusar recibo",
-      "Diferenciar el procedimiento VFR del IFR"
+      "Comprobar la radio antes de declarar un fallo de comunicaciones",
+      "Aplicar el procedimiento VFR: 7600, transmisión a ciegas, seguir en VMC y aterrizar",
+      "Explicar por qué mantener nivel y ruta es un procedimiento IFR",
+      "Aplicar la tabla VMC de SERA.5001 según banda y clase",
+      "Interpretar las señales luminosas de la torre y las del área de señales",
+      "Reconocer los códigos tierra-aire de búsqueda y salvamento y de supervivientes"
     ],
     "sections": [
       {
         "title": "Primero, comprueba tu radio",
         "text": [
-          "La mayoría de «fallos de radio» no son averías, son un fallo de uso. Antes de declarar nada, comprueba: **volumen** y **squelch**, **frecuencia** correcta sintonizada, **cascos** y **micrófono** bien conectados, **PTT** (que no esté atascado), **interruptor de radio** (avionics master) y **fusibles** o disyuntores. Si tienes dos radios, prueba con la otra, y llama a otra estación o a otro avión, o en 121,5 MHz.",
-          "Mantén el control del avión primero: no te distraigas de volar mientras buscas el fallo."
+          "Un fallo de comunicaciones **no es en sí una emergencia**: depende de cada caso y de las circunstancias, y la mayoría de los «fallos de radio» no son averías sino fallos de uso. Antes de declarar nada, comprueba **volumen** y **silenciador (squelch)**, la **frecuencia** correcta, **cascos** y **micrófono** bien conectados, que el **PTT** no esté atascado, el **interruptor de radio** (avionics master) y los **fusibles** o disyuntores. Si tienes dos radios, prueba con la otra, y llama a otra estación o a otro avión, o en 121,5 MHz.",
+          "Y recuerda el orden de prioridades: **mantén el control del avión** antes de nada; no te distraigas de volar mientras buscas el fallo."
+        ],
+        "bullets": [
+          "Mantén el control de la aeronave.",
+          "Evalúa la situación.",
+          "Intenta comunicar en una frecuencia alternativa.",
+          "Comprueba el funcionamiento correcto del equipo implicado.",
+          "Aplica el procedimiento de fallo de comunicaciones."
+        ],
+        "ideas": [
+          "Antes de dar por muerto el móvil, compruebas que no está en modo avión, que tienes batería y que la tarjeta está bien puesta. Con la radio, igual: la mitad de los fallos son del usuario."
+        ]
+      },
+      {
+        "title": "Qué dice la norma: escucha continua y transmisión a ciegas",
+        "text": [
+          "Una aeronave en **vuelo controlado** debe mantener **escucha continua** en la frecuencia de la dependencia de control y, cuando haga falta, establecer comunicación bilateral con ella. Si falla la comunicación, debe intentar **contactar en otra frecuencia adecuada a la ruta**, y establecer comunicación con **otras aeronaves o estaciones aeronáuticas**. Si tampoco así lo logra, **transmite su mensaje dos veces** en la frecuencia asignada, precedido de la expresión «**transmitiendo a ciegas**» (*transmitting blind*).",
+          "Si el problema es del **receptor** (no oyes pero crees que sí te oyen), transmites los informes en las horas o posiciones previstas en la frecuencia en uso, precedidos de «**transmitiendo a ciegas por fallo del receptor**» (*transmitting blind due to receiver failure*). Y cuando no puedas comunicar por avería de la radio, **selecciona el código 7600** en el transpondedor para indicar fallo de comunicaciones y sigue el procedimiento establecido."
+        ],
+        "ideas": [
+          "Es como gritar en una habitación a oscuras por si alguien te oye: no sabes si hay respuesta, pero hablas claro y dos veces para que quien sí oiga, entienda."
         ]
       },
       {
         "title": "Procedimiento VFR de fallo de comunicaciones",
         "text": [
-          "Si no logras restablecer la comunicación, aplicas el procedimiento VFR: **pon el transpondedor en 7600**, **transmite a ciegas** repitiendo cada mensaje (por si tu transmisor funciona aunque no oigas), **continúa en VMC**, **aterriza en el aeródromo adecuado más próximo** e **informa de tu llegada** al ATS por el medio más rápido. En un aeródromo controlado, **obedece las señales luminosas** de la torre.",
-          "Una transmisión a ciegas sigue esta estructura: «Transmitiendo a ciegas por fallo del receptor, [distintivo], [posición, altitud, intenciones]». Si solo falla el transmisor y recibes, ATC puede pedirte que respondas con el IDENT o cambiando de código; hazlo."
+          "Si el vuelo es en **condiciones meteorológicas visuales (VMC)** y el fallo te impide seguir como vuelo controlado o mantener comunicación bilateral en el canal apropiado, el procedimiento es: **continuar el vuelo en VMC**, **aterrizar en el aeródromo adecuado más próximo** y **notificar la llegada** a la dependencia ATC correspondiente, por el medio más rápido. **Pon el 7600** en el transpondedor y **transmite a ciegas** repitiendo cada mensaje.",
+          "En España las cartas de aproximación visual incluyen **procedimientos de fallo de radio**, de modo que un VFR continúa y realiza el procedimiento publicado del aeródromo en cuestión. Si no hay instrucciones específicas, existe un **procedimiento general**: entrar en la CTR por las rutas de la carta de aproximación visual, mantener como máximo **1000 ft sobre el terreno**, permanecer a la vista de la torre mientras esperas señales luminosas, mantenerse libre del tráfico del aeródromo y **no cruzar bajo ningún concepto las áreas de aproximación final** de las pistas. Si formas parte del tráfico de un aeródromo controlado, **estate alerta a las señales visuales** de la torre."
         ],
         "examples": [
           {
@@ -32,57 +54,222 @@
             "q": "Inglés: la misma transmisión.",
             "a": "«Transmitting blind due to receiver failure, Villanueva Tower, Echo Charlie Alpha Bravo Charlie, 8 miles north, 2500 feet, joining left downwind runway 13 for landing, squawking 7600.»"
           }
+        ],
+        "figure": "svg:090-fallo-vmc",
+        "caption": "Fallo de comunicaciones en VFR: de la comprobación a la decisión",
+        "verify": true,
+        "ideas": [
+          "Si pierdes el contacto con tu guía en la montaña pero ves el refugio, no te pones a esperar donde estás: sigues el camino que se ve y llegas al refugio, y avisas al llegar."
         ]
       },
       {
         "title": "Por qué no «mantener nivel y ruta»",
         "text": [
-          "El procedimiento de mantener el último nivel asignado y la ruta durante cierto tiempo es un procedimiento **IFR**, pensado para que ATC sepa dónde estás. En **VFR** la regla es diferente: sigues volando en VMC y **aterrizas en el aeródromo adecuado más próximo**. Si no puedes mantener las VMC, el vuelo ya no es VFR y la situación se convierte en una emergencia (MAYDAY por transmisión a ciegas y 7700)."
+          "El procedimiento de mantener el último nivel asignado y la ruta durante cierto tiempo es un procedimiento **IFR**, pensado para que ATC sepa dónde estás cuando vuelas sin referencias visuales. En **VFR** la regla es diferente: sigues volando en VMC y **aterrizas en el aeródromo adecuado más próximo**. Si no puedes mantener las VMC, el vuelo ya no es VFR y la situación se convierte en una emergencia (MAYDAY por transmisión a ciegas y 7700)."
         ],
         "note": {
           "kind": "warn",
           "text": "Fallo de radio VFR: 7600, VMC y aeródromo adecuado más próximo. El procedimiento de mantener nivel y ruta es IFR."
-        }
+        },
+        "ideas": [
+          "El que va con el GPS roto en una carretera que conoce sigue por la carretera (VFR); el que va en niebla cerrada sigue el rumbo y la velocidad previstos para que los demás sepan dónde estará (IFR)."
+        ]
+      },
+      {
+        "title": "Reglas del aire y condiciones VMC",
+        "text": [
+          "El curso incluye aquí las reglas del aire porque la regla de fallo de radio depende de que puedas mantener las **condiciones meteorológicas visuales (VMC)**. Las reglas del aire completas están en la lección 010.06 (reglas generales) y la tabla VMC y todo lo de VFR en 010.07; aquí tienes lo esencial. SERA.5001 fija tres valores según la **banda de altitud** y la **clase de espacio aéreo**: la **visibilidad de vuelo**, la **distancia horizontal** a las nubes y la **distancia vertical**.",
+          "La banda superior es a 10 000 ft AMSL (3050 m) o por encima: **8 km**. La banda intermedia, por debajo de 10 000 ft y por encima de 3000 ft AMSL o de 1000 ft sobre el terreno (lo que sea **mayor**): **5 km**. En ambas, a **1500 m** horizontalmente y **1000 ft (300 m)** verticalmente de las nubes. La banda inferior, a 3000 ft AMSL o 1000 ft AGL o por debajo (lo que sea mayor), exige **5 km** y las mismas distancias a las nubes en clases A a E, y en clases **F y G** solo **5 km, libre de nubes y con la superficie a la vista**. La clase A figura solo a título orientativo porque en ella no se admite el VFR."
+        ],
+        "table": {
+          "head": [
+            "Banda de altitud",
+            "Clase de espacio aéreo",
+            "Visibilidad de vuelo",
+            "Distancia a las nubes"
+          ],
+          "rows": [
+            [
+              "10 000 ft AMSL (3050 m) o por encima",
+              "A, B, C, D, E, F, G",
+              "8 km",
+              "1500 m en horizontal; 1000 ft (300 m) en vertical"
+            ],
+            [
+              "Por debajo de 10 000 ft y por encima de 3000 ft AMSL o 1000 ft AGL (lo mayor)",
+              "A, B, C, D, E, F, G",
+              "5 km",
+              "1500 m en horizontal; 1000 ft en vertical"
+            ],
+            [
+              "A 3000 ft AMSL o 1000 ft AGL, o por debajo (lo mayor)",
+              "A, B, C, D, E",
+              "5 km",
+              "1500 m en horizontal; 1000 ft en vertical"
+            ],
+            [
+              "A 3000 ft AMSL o 1000 ft AGL, o por debajo (lo mayor)",
+              "F, G",
+              "5 km",
+              "Libre de nubes y con la superficie a la vista"
+            ]
+          ],
+          "caption": "Mínimos VMC (SERA.5001, tabla S5-1)",
+          "src": "SERA.5001"
+        },
+        "examples": [
+          {
+            "q": "Vuelas en clase G a 4500 ft AMSL sobre un terreno a 1500 ft. ¿Qué mínimos necesitas?",
+            "a": "El límite inferior es el mayor de 3000 ft AMSL y 1500 + 1000 = 2500 ft AMSL, o sea 3000 ft AMSL. A 4500 ft estás por encima: 5 km de visibilidad y 1500 m / 1000 ft de las nubes."
+          },
+          {
+            "q": "Vuelas en clase G a 2000 ft AMSL sobre un terreno a 500 ft. ¿Y ahora?",
+            "a": "Estás en la banda baja: 5 km, libre de nubes y con la superficie a la vista (solo F y G)."
+          },
+          {
+            "q": "Vuelas en clase D a 2000 ft AMSL.",
+            "a": "Banda baja, pero la clase es D: sigues necesitando 5 km y 1500 m / 1000 ft de las nubes. La excepción es solo de F y G."
+          },
+          {
+            "q": "Estás en clase E a 11 000 ft AMSL.",
+            "a": "Banda alta: 8 km de visibilidad y 1500 m / 1000 ft de las nubes."
+          }
+        ],
+        "figure": "calc:vmc",
+        "caption": "Calculadora de mínimos VMC: elige banda, clase y comprueba los valores",
+        "note": {
+          "kind": "tip",
+          "text": "El curso da el límite superior en 10 000 ft AMSL. En SERA se toma FL100 si la altitud de transición es inferior a 10 000 ft; en la práctica es lo mismo. Regla de memoria: 8, 5, 5 y «1500, 1000». Solo F y G, abajo, se quedan «libres de nubes y con superficie a la vista»."
+        },
+        "verify": true,
+        "ideas": [
+          "Es como las normas de ver al conductor de delante: en autopista (arriba) necesitas más distancia que en una calle (abajo), y solo en caminos de tierra vacíos (F y G, abajo) te basta con que no haya obstáculos a la vista."
+        ]
       },
       {
         "title": "Señales luminosas de la torre",
         "text": [
-          "Si la torre ve tu avión y no te puede hablar, te comunica con señales luminosas. Debes conocerlas en vuelo y en tierra. Acusa recibo **alabeando** de día o **destellando los faros de aterrizaje o las luces de navegación** de noche."
+          "Si la torre ve tu avión y no te puede hablar, te comunica con una **lámpara de señales** (luz verde, roja o blanca, fija o con destellos). El significado depende de si estás en vuelo o en tierra. Regla mnemotécnica: el **verde** autoriza, el **rojo** detiene o niega y el **blanco** te devuelve (a la plataforma o al punto de partida).",
+          "Acusa recibo **en vuelo** alabeando (de día, salvo en base y final) o, de noche, encendiendo y apagando **dos veces** los faros de aterrizaje o las luces de navegación. **En tierra**, de día moviendo los alerones o el timón; de noche, dos destellos de los faros o de las luces de navegación."
         ],
+        "table": {
+          "head": [
+            "Señal de la torre",
+            "Aeronave en vuelo",
+            "Aeronave en tierra"
+          ],
+          "rows": [
+            [
+              "Verde fija",
+              "Autorizado a aterrizar",
+              "Autorizado a despegar"
+            ],
+            [
+              "Roja fija",
+              "Ceda el paso a otra aeronave y siga en circuito",
+              "Alto"
+            ],
+            [
+              "Destellos verdes",
+              "Regrese para aterrizar (la autorización se dará después)",
+              "Autorizado a rodar"
+            ],
+            [
+              "Destellos rojos",
+              "Aeródromo peligroso, no aterrice",
+              "Apártese del área de aterrizaje en uso"
+            ],
+            [
+              "Destellos blancos",
+              "Aterrice en este aeródromo y diríjase a la plataforma",
+              "Regrese al punto de partida"
+            ]
+          ],
+          "caption": "Señales luminosas de la torre",
+          "src": "SERA, apéndice 1, 3.1; lección 010.06"
+        },
         "figure": "svg:010-senales-luminosas",
-        "caption": "Señales luminosas y pirotécnicas de la torre"
+        "caption": "Señales luminosas y pirotécnicas de la torre. Más detalle en la lección 010.06",
+        "ideas": [
+          "Es un semáforo: verde, adelante; rojo, quieto o fuera; blanco, vuelve de donde vienes. Los destellos son lo mismo, pero más suaves."
+        ]
+      },
+      {
+        "title": "Señales visuales en tierra: el área de señales",
+        "text": [
+          "En los aeródromos, sobre todo en los no controlados, el **área de señales** (un recuadro visible desde el aire, cerca de la torre o de la pista) muestra paneles horizontales con instrucciones. Al sobrevolar el campo antes de incorporarte al circuito debes reconocerlas. Las más importantes son: **cuadrado rojo con dos diagonales amarillas** (aspa): **prohibido aterrizar**; **cuadrado rojo con una diagonal amarilla**: precauciones especiales en la aproximación y el aterrizaje; **pesa blanca** (dos círculos unidos por una barra): aterrizar, despegar y rodar **solo por pistas y calles de rodaje**; **pesa blanca con una barra negra en cada círculo**: aterrizar y despegar solo por pistas, y las demás maniobras sin esa obligación; **cruz sencilla** sobre pista o calle: zona **cerrada** al tránsito; **T de aterrizaje**: aterrizar y despegar en dirección **paralela al palo de la T hacia el travesaño**."
+        ],
+        "figure": "svg:010-area-senales",
+        "caption": "Señales del área de señales; la tabla completa y la oficina ATS, planeadores y circuito a la derecha están en 010.06",
+        "ideas": [
+          "Piensa en las señales de tráfico en la carretera: la cruz es «prohibido el paso», la T es la flecha que te dice hacia dónde ir, la pesa blanca es la señal de «solo por la calzada»."
+        ]
+      },
+      {
+        "title": "Señales de búsqueda y salvamento",
+        "text": [
+          "Cuando una aeronave ha tenido un accidente y hay supervivientes, y los equipos de rescate buscan, ambos usan **códigos visuales** extendidos en el suelo con tela, piedras o palos. Los **supervivientes** disponen de un código tierra-aire con símbolos sencillos: **V** necesitamos ayuda, **X** necesitamos ayuda médica, **N** no o negativo, **Y** sí o afirmativo y una **flecha** estamos avanzando en esa dirección. Los **equipos de rescate** responden con otro código: **LLL** operación terminada, **LL** hemos hallado a todos los ocupantes, una **doble cruz** solo a algunos, **XX** no podemos continuar y regresamos, **flechas opuestas** nos hemos dividido en dos grupos, **dos flechas** hemos recibido información de que la aeronave está en esa dirección y **NN** no hemos hallado nada."
+        ],
+        "figure": "svg:010-codigo-tierra-aire",
+        "caption": "Código de los supervivientes (tierra-aire)",
+        "ideas": [
+          "V de «venid», X de «médico» (cruz de farmacia), N de «no» y Y de «yes». Las letras de los rescatadores son los códigos de un cuaderno de campo: LLL, todo terminado; NN, nada encontrado."
+        ]
+      },
+      {
+        "title": "Código de los equipos de búsqueda y salvamento",
+        "text": [
+          "Estos son los símbolos que usan los equipos de rescate, para que los supervivientes y los aviones que buscan entiendan cómo va la operación."
+        ],
+        "figure": "svg:090-codigo-busqueda",
+        "caption": "Señales de los equipos de búsqueda y salvamento",
+        "ideas": [
+          "Funciona como los marcadores de una excursión de rescate: tres letras L (de «listo»), N doble (de «nada»), X doble (de «nos vamos»)."
+        ]
       },
       {
         "title": "Después de aterrizar y cómo prevenirlo",
         "text": [
           "Una vez en tierra, **informa de tu llegada** al ATS del aeródromo o, si no hay, por teléfono a la dependencia ATS más cercana, para que no se active la búsqueda. Pide que revisen la radio antes de volver a volar.",
-          "La mejor prevención es la preparación: comprueba la radio en tierra («comprobación de radio» con la torre o con la estación de información), lleva las frecuencias anotadas, conoce las señales luminosas y, si es posible, ten una radio portátil de reserva con batería cargada. Un fallo de radio sin preparación es una situación de alta carga de trabajo; con ella es un procedimiento más."
+          "La mejor prevención es la preparación: comprueba la radio en tierra con la torre o con la estación de información, lleva las frecuencias anotadas, conoce las señales luminosas y, si es posible, ten una radio portátil de reserva con batería cargada. Un fallo de radio sin preparación es una situación de alta carga de trabajo; con ella es un procedimiento más."
+        ],
+        "ideas": [
+          "Es como llevar una linterna en el coche: no pretendes quedarte sin batería, pero si ocurre, no quieres improvisar en la oscuridad."
         ]
       },
       {
         "title": "Procedimientos del AIP para cada CTR",
         "text": [
           "Cada CTR publica en el AIP (AD 2) y en la carta VFR sus **procedimientos de fallo de comunicaciones**: por qué punto abandonar la CTR o por dónde incorporarte al circuito, y qué altitud mantener. Consúltalos antes de entrar en una CTR; saberlos te ahorra improvisar en un momento en el que tienes mucha carga de trabajo."
+        ],
+        "ideas": [
+          "Es como saber dónde está la salida de emergencia de un teatro antes de que empiece la función: no la buscas cuando ya hay humo."
         ]
       }
     ],
     "numbers": [
       "Código de transpondedor en fallo de comunicaciones: 7600",
+      "Transmisión a ciegas: dos veces",
       "Procedimiento VFR: seguir en VMC, aterrizar en el aeródromo adecuado más próximo e informar",
+      "En CTR sin procedimiento específico: máximo 1000 ft sobre el terreno y no cruzar finales",
+      "VMC: 8 km a 10 000 ft AMSL o más; 5 km por debajo; nubes a 1500 m y 1000 ft",
       "Acuse a señales luminosas: alabeo de día, destello de luces de noche",
       "Frecuencia para intentar contacto: 121,5 MHz"
     ],
     "traps": [
       "Mantener nivel y ruta es procedimiento IFR, no VFR.",
       "7600 es fallo de comunicaciones; 7700 emergencia; 7500 interferencia ilícita.",
-      "La luz roja fija en vuelo es «ceda el paso y siga en circuito», no «no aterrice»."
+      "La luz roja fija en vuelo es «ceda el paso y siga en circuito», no «no aterrice».",
+      "El destello rojo en vuelo sí es «no aterrice»; y en tierra, «apártese del área de aterrizaje».",
+      "«Libre de nubes y con la superficie a la vista» solo existe en clases F y G, en la banda baja.",
+      "La clase A aparece en la tabla VMC solo a título orientativo: no se vuela VFR en clase A."
     ],
     "spain": [
-      "El AIP España, AD 2, publica los procedimientos de fallo de comunicaciones de cada CTR."
+      "El AIP España, AD 2, publica los procedimientos de fallo de comunicaciones de cada CTR; las cartas de aproximación visual los incluyen."
     ],
     "sources": [
       {
-        "title": "Anexo 2 y SERA (fallo de comunicaciones)",
+        "title": "Anexo 2 y SERA (fallo de comunicaciones, VMC y apéndice 1)",
         "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
       },
       {
@@ -98,9 +285,102 @@
       {
         "label": "Simulador de radio",
         "href": "#/licencias/fraseologia?tab=radio"
+      },
+      {
+        "label": "Reglas generales del aire (010.06)",
+        "href": "#/licencias/ppl/derecho/010.06"
+      },
+      {
+        "label": "Reglas de vuelo visual (010.07)",
+        "href": "#/licencias/ppl/derecho/010.07"
       }
     ],
-    "reviewed": "2026-10-09"
+    "reviewed": "2026-11-23",
+    "course": "Tema 5 · Fallo de comunicaciones, reglas del aire y señales",
+    "outline": [
+      {
+        "title": "Primero la radio",
+        "items": [
+          "Volumen, squelch, frecuencia, cascos, PTT, disyuntor",
+          "Fallo no es emergencia por sí mismo",
+          "Volar, evaluar, frecuencia alternativa, comprobar, procedimiento"
+        ]
+      },
+      {
+        "title": "Norma y procedimiento VFR",
+        "items": [
+          "Transmitir a ciegas dos veces",
+          "Fallo del receptor: transmitir a ciegas por fallo del receptor",
+          "7600; seguir en VMC; aterrizar en el aeródromo adecuado más próximo; notificar",
+          "En CTR: carta de aproximación visual; a falta de ella, procedimiento general"
+        ]
+      },
+      {
+        "title": "VMC",
+        "items": [
+          "8 km a 10 000 ft AMSL o más; 5 km por debajo",
+          "1500 m y 1000 ft de las nubes",
+          "F y G abajo: libre de nubes y superficie a la vista"
+        ]
+      },
+      {
+        "title": "Señales luminosas",
+        "items": [
+          "Verde autoriza; rojo detiene o niega; blanco devuelve",
+          "Acuse: alabeo (vuelo) o alerones/timón (tierra); destellos de luces de noche"
+        ]
+      },
+      {
+        "title": "Señales en tierra y SAR",
+        "items": [
+          "Aspa: prohibido aterrizar; una diagonal: precaución",
+          "Pesa blanca; cruz cerrada; T de aterrizaje",
+          "Supervivientes: V, X, N, Y, flecha",
+          "Rescate: LLL, LL, doble cruz, XX, flechas, NN"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "Fallo de radio VFR: «Siete-seis, sigo en VMC, aterrizo cerca, aviso al llegar».",
+      "Transmitir a ciegas: dos veces; fallo del receptor: añade «por fallo del receptor».",
+      "Luces: verde autoriza, rojo detiene, blanco devuelve.",
+      "VMC: 8, 5, 5 y «1500, 1000»; F y G abajo, libres de nubes.",
+      "Supervivientes: V = venid, X = médico, N = no, Y = yes."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Qué compruebas antes de declarar un fallo de comunicaciones?",
+        "a": "Volumen, squelch, frecuencia, cascos y micrófono, PTT, interruptor de radio y fusibles; prueba otra radio, otra estación o 121,5 MHz."
+      },
+      {
+        "q": "Describe el procedimiento VFR de fallo de comunicaciones.",
+        "a": "7600, transmitir a ciegas, continuar en VMC, aterrizar en el aeródromo adecuado más próximo y notificar la llegada al ATC."
+      },
+      {
+        "q": "¿Cómo transmites a ciegas y qué cambia si falla el receptor?",
+        "a": "Dos veces, precedido de «transmitiendo a ciegas»; si falla el receptor, «transmitiendo a ciegas por fallo del receptor» en las horas o posiciones previstas."
+      },
+      {
+        "q": "¿Por qué no se mantiene nivel y ruta en VFR?",
+        "a": "Es un procedimiento IFR; en VFR sigues en VMC y aterrizas en el aeródromo adecuado más próximo. Si pierdes las VMC, el vuelo deja de ser VFR y es una emergencia."
+      },
+      {
+        "q": "¿Qué visibilidad y distancia a nubes exige la VMC a 6000 ft AMSL en clase G con terreno a nivel del mar?",
+        "a": "6000 ft está por encima de 3000 ft AMSL y por debajo de 10 000 ft: 5 km de visibilidad, 1500 m horizontales y 1000 ft verticales de las nubes."
+      },
+      {
+        "q": "¿Qué significan las luces verde fija, roja fija y destellos rojos en vuelo?",
+        "a": "Autorizado a aterrizar; ceda el paso y siga en circuito; aeródromo peligroso, no aterrice."
+      },
+      {
+        "q": "¿Qué indican el aspa roja y amarilla, la T y la cruz blanca en el suelo?",
+        "a": "Prohibido aterrizar; dirección de aterrizaje y despegue paralela al palo hacia el travesaño; zona cerrada."
+      },
+      {
+        "q": "¿Qué significan V, X, N, Y y LLL en el suelo?",
+        "a": "Necesitamos ayuda, ayuda médica, no, sí, y operación terminada (rescate)."
+      }
+    ]
   },
   "questions": [
     {
@@ -312,6 +592,300 @@
         "Cambia el procedimiento."
       ],
       "ref": "SERA"
+    },
+    {
+      "id": "090.09.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un fallo de comunicaciones, cuando la comunicación no se logra restablecer, ¿cuántas veces se transmite el mensaje a ciegas en la frecuencia asignada?",
+      "options": [
+        "Una vez",
+        "Tres veces",
+        "Cinco veces",
+        "Dos veces"
+      ],
+      "correct": 3,
+      "why": "Se transmite dos veces precedido de «transmitiendo a ciegas».",
+      "whyNot": [
+        "Una vez no es lo establecido.",
+        "Tres veces es la repetición del MAYDAY.",
+        "No hay cinco repeticiones.",
+        null
+      ],
+      "ref": "SERA; apuntes del curso"
+    },
+    {
+      "id": "090.09.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "Fallo de receptor: ¿con qué expresión se precede la transmisión a ciegas?",
+      "options": [
+        "Transmitiendo en emergencia",
+        "Transmitiendo a ciegas por fallo del receptor",
+        "Sin recepción, cambio",
+        "Recibido, sin comunicación"
+      ],
+      "correct": 1,
+      "why": "La expresión es «transmitting blind due to receiver failure», que se envía en las horas o posiciones previstas.",
+      "whyNot": [
+        "No es la expresión normalizada.",
+        null,
+        "Falta la expresión de transmisión a ciegas.",
+        "No forma parte de la fraseología."
+      ],
+      "ref": "SERA; apuntes del curso"
+    },
+    {
+      "id": "090.09.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un vuelo VFR con fallo de comunicaciones, ¿dónde se aterriza?",
+      "options": [
+        "En el aeródromo de destino previsto",
+        "En el aeródromo adecuado más próximo",
+        "En el último punto notificado",
+        "Donde se pueda mantener nivel y ruta"
+      ],
+      "correct": 1,
+      "why": "El procedimiento VFR es continuar en VMC, aterrizar en el aeródromo adecuado más próximo y notificar.",
+      "whyNot": [
+        "El destino puede quedar lejos.",
+        null,
+        "No es un punto de aterrizaje.",
+        "Mantener nivel y ruta es IFR."
+      ],
+      "ref": "SERA; apuntes del curso"
+    },
+    {
+      "id": "090.09.014",
+      "type": "concepto",
+      "level": 3,
+      "q": "Si en una CTR no hay instrucciones específicas por fallo de radio, ¿qué altura máxima se mantiene según el procedimiento general?",
+      "options": [
+        "500 ft sobre el terreno",
+        "2000 ft sobre el terreno",
+        "3000 ft AMSL",
+        "1000 ft sobre el terreno"
+      ],
+      "correct": 3,
+      "why": "El procedimiento general indica mantener como máximo 1000 ft AGL.",
+      "whyNot": [
+        "No es el valor del procedimiento general.",
+        "Excede el máximo indicado.",
+        "No es una altura sobre el terreno.",
+        null
+      ],
+      "ref": "AIP España; apuntes del curso"
+    },
+    {
+      "id": "090.09.015",
+      "type": "concepto",
+      "level": 3,
+      "q": "En el procedimiento general de fallo de radio en una CTR, ¿qué no se debe hacer bajo ningún concepto?",
+      "options": [
+        "Entrar por las rutas de la carta VFR",
+        "Mantenerse a la vista de la torre",
+        "Cruzar las áreas de aproximación final de las pistas",
+        "Esperar las señales luminosas"
+      ],
+      "correct": 2,
+      "why": "Se debe permanecer libre del tráfico y no cruzar las áreas de aproximación final.",
+      "whyNot": [
+        "Es lo que sí hay que hacer.",
+        "Es lo que se pide.",
+        null,
+        "Es la forma de recibir instrucciones."
+      ],
+      "ref": "AIP España; apuntes del curso"
+    },
+    {
+      "id": "090.09.016",
+      "type": "lectura",
+      "level": 2,
+      "q": "Vuelas en clase G a 8000 ft AMSL sobre terreno llano al nivel del mar. ¿Qué visibilidad y distancia a las nubes exige la VMC?",
+      "options": [
+        "5 km; 1500 m horizontal y 1000 ft vertical",
+        "8 km; 1500 m horizontal y 1000 ft vertical",
+        "5 km, libre de nubes y con la superficie a la vista",
+        "1500 m de visibilidad; libre de nubes"
+      ],
+      "correct": 0,
+      "why": "8000 ft está por debajo de 10 000 y por encima de 3000 ft AMSL: 5 km y 1500 m / 1000 ft.",
+      "whyNot": [
+        null,
+        "Los 8 km corresponden a 10 000 ft AMSL o más.",
+        "Eso es solo para F y G a 3000 ft AMSL o menos.",
+        "No es un mínimo de la tabla."
+      ],
+      "ref": "SERA.5001"
+    },
+    {
+      "id": "090.09.017",
+      "type": "lectura",
+      "level": 2,
+      "q": "Vuelas en clase G a 2000 ft AMSL sobre terreno a nivel del mar. ¿Qué mínimos exige la VMC?",
+      "options": [
+        "8 km y 1500 m de las nubes",
+        "5 km, libre de nubes y con la superficie a la vista",
+        "5 km y 1500 m horizontal, 1000 ft vertical",
+        "1500 m y libre de nubes"
+      ],
+      "correct": 1,
+      "why": "A 3000 ft AMSL o menos, en clases F y G: 5 km, libre de nubes y con la superficie a la vista.",
+      "whyNot": [
+        "Esa visibilidad es para 10 000 ft o más.",
+        null,
+        "Esos mínimos son los de las clases A a E.",
+        "No es el valor de la tabla."
+      ],
+      "ref": "SERA.5001"
+    },
+    {
+      "id": "090.09.018",
+      "type": "lectura",
+      "level": 2,
+      "q": "Vuelas en clase D a 2000 ft AMSL. ¿Pueden aplicarse los mínimos reducidos de F y G?",
+      "options": [
+        "No: necesitas 5 km y 1500 m horizontal, 1000 ft vertical",
+        "Sí, la altura baja lo permite",
+        "Sí, si hay superficie a la vista",
+        "Solo de día"
+      ],
+      "correct": 0,
+      "why": "La reducción a libre de nubes y superficie a la vista solo existe en clases F y G.",
+      "whyNot": [
+        null,
+        "La altura no cambia la clase.",
+        "La excepción es solo para F y G.",
+        "Tampoco depende de ser de día."
+      ],
+      "ref": "SERA.5001"
+    },
+    {
+      "id": "090.09.019",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa un panel cuadrado rojo con dos diagonales amarillas en el área de señales?",
+      "options": [
+        "Precauciones especiales en la aproximación",
+        "Solo pistas y calles de rodaje",
+        "Pista o calle cerrada",
+        "Prohibido aterrizar"
+      ],
+      "correct": 3,
+      "why": "El aspa roja y amarilla significa prohibido aterrizar.",
+      "whyNot": [
+        "Eso es el cuadrado rojo con una sola diagonal.",
+        "Eso es la pesa blanca.",
+        "Eso es una cruz sencilla.",
+        null
+      ],
+      "ref": "SERA, apéndice 1, 3.2"
+    },
+    {
+      "id": "090.09.020",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué significa una T de aterrizaje en el área de señales?",
+      "options": [
+        "Aterrizar en dirección contraria al palo",
+        "Solo se puede despegar",
+        "Aterrizar y despegar en dirección paralela al palo de la T, hacia el travesaño",
+        "La pista está cerrada"
+      ],
+      "correct": 2,
+      "why": "La T señala la dirección: paralela al palo y hacia el travesaño.",
+      "whyNot": [
+        "Es el sentido opuesto.",
+        "Indica aterrizaje y despegue.",
+        null,
+        "El cierre se indica con una cruz."
+      ],
+      "ref": "SERA, apéndice 1, 3.2"
+    },
+    {
+      "id": "090.09.021",
+      "type": "concepto",
+      "level": 1,
+      "q": "En el código de supervivientes, ¿qué indica la letra V?",
+      "options": [
+        "Necesitamos ayuda médica",
+        "Necesitamos ayuda",
+        "No o negativo",
+        "Sí o afirmativo"
+      ],
+      "correct": 1,
+      "why": "V significa necesitamos ayuda; X es ayuda médica, N no e Y sí.",
+      "whyNot": [
+        "Eso es la X.",
+        null,
+        "Eso es la N.",
+        "Eso es la Y."
+      ],
+      "ref": "SERA, apéndice 1"
+    },
+    {
+      "id": "090.09.022",
+      "type": "concepto",
+      "level": 2,
+      "q": "En el código de los equipos de búsqueda y salvamento, ¿qué significa LLL?",
+      "options": [
+        "Hemos hallado a todos los ocupantes",
+        "No hemos hallado nada",
+        "Operación terminada",
+        "Regresamos a la base"
+      ],
+      "correct": 2,
+      "why": "LLL es operación terminada; LL, hemos hallado a todos; NN, no hemos hallado nada; XX, regresamos.",
+      "whyNot": [
+        "Eso es LL.",
+        "Eso es NN.",
+        null,
+        "Eso es XX."
+      ],
+      "ref": "SERA, apéndice 1"
+    },
+    {
+      "id": "090.09.023",
+      "type": "concepto",
+      "level": 2,
+      "q": "Luz de la torre: destellos verdes dirigidos a una aeronave en tierra. ¿Qué significan?",
+      "options": [
+        "Autorizado a despegar",
+        "Alto",
+        "Regrese al punto de partida",
+        "Autorizado a rodar"
+      ],
+      "correct": 3,
+      "why": "Destellos verdes en tierra: autorizado a rodar.",
+      "whyNot": [
+        "Eso es verde fija.",
+        "Eso es roja fija.",
+        "Eso son los destellos blancos.",
+        null
+      ],
+      "ref": "SERA, apéndice 1, 3.1"
+    },
+    {
+      "id": "090.09.024",
+      "type": "concepto",
+      "level": 2,
+      "q": "Destellos blancos de la torre a una aeronave en tierra significan:",
+      "options": [
+        "Regrese al punto de partida en el aeródromo",
+        "Alto",
+        "Autorizado a despegar",
+        "Apártese del área de aterrizaje"
+      ],
+      "correct": 0,
+      "why": "Los destellos blancos devuelven al punto de partida (en vuelo, aterrizar y dirigirse a la plataforma).",
+      "whyNot": [
+        null,
+        "Alto es luz roja fija.",
+        "Despegar es verde fija.",
+        "Eso son los destellos rojos."
+      ],
+      "ref": "SERA, apéndice 1, 3.1"
     }
   ],
   "cards": [
@@ -344,6 +918,26 @@
       "id": "c.090.09.06",
       "front": "Acuse a señales luminosas",
       "back": "Alabeo de día; destello de luces de noche"
+    },
+    {
+      "id": "c.090.09.07",
+      "front": "Transmisión a ciegas",
+      "back": "Dos veces, precedida de «transmitiendo a ciegas»"
+    },
+    {
+      "id": "c.090.09.08",
+      "front": "VMC a 10 000 ft AMSL o más",
+      "back": "8 km y 1500 m / 1000 ft de las nubes"
+    },
+    {
+      "id": "c.090.09.09",
+      "front": "Aspa roja y amarilla",
+      "back": "Prohibido aterrizar"
+    },
+    {
+      "id": "c.090.09.10",
+      "front": "Supervivientes: V, X, N, Y",
+      "back": "Ayuda, ayuda médica, no, sí"
     }
   ]
 }

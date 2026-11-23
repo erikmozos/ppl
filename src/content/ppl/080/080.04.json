@@ -1,434 +1,728 @@
 {
- "lesson": {
-  "title": "Flujo sobre el perfil",
-  "summary": "Punto de remanso, distribución de presiones, centro de presiones y su desplazamiento con el ángulo de ataque, capa límite y separación, y la curva CL–α con su ángulo crítico.",
-  "objectives": [
-   "Localizar el punto de remanso y explicar cómo se desplaza con el ángulo de ataque",
-   "Describir la distribución de presiones en extradós e intradós",
-   "Explicar cómo se mueve el centro de presiones al variar α",
-   "Explicar la capa límite y por qué se separa",
-   "Leer la curva CL–α: pendiente, α de sustentación nula, CLmax y ángulo crítico"
-  ],
-  "sections": [
-   {
-    "title": "Punto de remanso",
-    "text": [
-     "Cuando el aire llega al borde de ataque, una línea de corriente choca con el perfil y se detiene del todo: es el **punto de remanso**. Ahí la velocidad relativa es cero, toda la presión dinámica se convierte en estática y se mide la presión total (la misma situación que en la boca de un tubo pitot). Desde ese punto el aire se reparte: una parte rodea el borde de ataque y va por el extradós; el resto sigue por el intradós.",
-     "Con ángulo de ataque pequeño el punto de remanso está casi en el borde de ataque. Al **aumentar α**, el punto de remanso **se desplaza hacia atrás por el intradós**, y el aire que sube al extradós tiene que rodear el borde de ataque con más curva, acelerándose mucho. En el borde de salida hay otro punto de remanso, pero de menor importancia."
-    ]
-   },
-   {
-    "title": "Distribución de presiones",
-    "text": [
-     "Si miras el perfil con flechas que representan la presión sobre él, verás sobre el **extradós** presiones **inferiores** a la atmosférica (succión) y sobre el **intradós**, ligeramente superiores o cercanas a la atmosférica. El peso de la sustentación lo lleva sobre todo el extradós: aproximadamente **dos tercios de la sustentación** vienen de la succión de arriba y un tercio de la sobrepresión de abajo. Por eso un ala con la superficie superior sucia o helada pierde mucho.",
-     "La succión es máxima cerca del borde de ataque (el **pico de succión**) y aumenta con el ángulo de ataque. Más allá, a lo largo de la cuerda, la presión sube otra vez hacia el valor del flujo libre: el aire tiene que frenarse en una zona de presión creciente, lo que se llama **gradiente adverso de presión**. Es el origen de la separación."
+  "lesson": {
+    "title": "Flujo sobre el perfil",
+    "summary": "El flujo relativo o corriente libre, el punto de remanso, la distribución de presiones, el origen de la sustentación como sobrepresión y succión, la sustentación negativa, el centro de presiones y el aerodinámico, la capa límite y la separación, y la curva CL–α.",
+    "objectives": [
+      "Definir el flujo de aire relativo (dirección, condición y magnitud) y el ángulo de ataque",
+      "Localizar el punto de remanso y explicar cómo se mueve con el ángulo de ataque",
+      "Explicar el origen de la sustentación con sobrepresión y succión respecto a la presión ambiente",
+      "Entender cuándo la sustentación puede ser negativa y por qué un perfil asimétrico sustenta a α = 0",
+      "Describir el centro de presiones y cómo se desplaza con α",
+      "Explicar la capa límite, la separación y la curva CL–α con su ángulo crítico"
     ],
-    "figure": "svg:080-presiones",
-    "caption": "Distribución de presiones, punto de remanso y centro de presiones; el CP se desplaza con el ángulo de ataque."
-   },
-   {
-    "title": "Centro de presiones y centro aerodinámico",
-    "text": [
-     "El **centro de presiones (CP)** es el punto de la cuerda donde se puede suponer aplicada la resultante aerodinámica. No es fijo. En un perfil curvado, al **aumentar α el CP se desplaza hacia delante** (el pico de succión crece cerca del borde de ataque) y al **disminuir α se desplaza hacia atrás**. Justo después de la pérdida, la succión desaparece en la parte delantera y el CP retrocede bruscamente. En un perfil simétrico el CP se mantiene casi fijo, alrededor del 25 % de la cuerda.",
-     "Como el CP se mueve, resulta incómodo para analizar la estabilidad. Se usa en su lugar el **centro aerodinámico**, un punto cercano al 25 % de la cuerda alrededor del cual el momento de cabeceo se mantiene casi constante mientras α varíe dentro del tramo lineal. Un perfil curvado genera un momento de **picado** (de morro abajo) alrededor de ese punto; es el motivo del estabilizador, que debe dar una fuerza hacia abajo para equilibrarlo."
-    ]
-   },
-   {
-    "title": "Capa límite y separación",
-    "text": [
-     "El aire pegado a la superficie se frena por rozamiento; esa fina capa en la que la velocidad pasa de cero a la de la corriente se llama **capa límite**. Al principio es **laminar** (capas ordenadas, poco rozamiento), pero pasa a **turbulenta** (más gruesa, más rozamiento, más energía cerca de la pared). Una capa turbulenta resiste mejor el gradiente adverso y se separa más tarde.",
-     "Cuando la presión crece hacia atrás y la capa límite ya no tiene energía para avanzar, el flujo se **separa** de la superficie: aparece una zona de aire revuelto, la sustentación cae y la resistencia se dispara. En una avioneta la separación empieza cerca del borde de salida y avanza hacia delante conforme aumenta α. Es la causa de la pérdida y de la vibración que la anuncia (bataneo)."
-    ]
-   },
-   {
-    "title": "La curva CL–α",
-    "text": [
-     "La curva CL–α resume el comportamiento del perfil. Tiene un **tramo lineal**: CL crece de forma proporcional a α, con una pendiente de unos 0,1 por grado (2π por radián). Corta el eje horizontal en el **ángulo de sustentación nula (α0)**, que es cero en un perfil simétrico y negativo (≈ −2°) en uno curvado. Más arriba la curva se redondea y alcanza el **CLmax**; el ángulo correspondiente es el **ángulo de ataque crítico**, típicamente entre 15° y 18° en avionetas. Pasado ese punto, CL cae: es la pérdida."
+    "sections": [
+      {
+        "title": "El flujo de aire relativo o corriente libre",
+        "text": [
+          "El **flujo de aire relativo** o **corriente libre** (*free stream flow*) es el aire que el avión «ve» venir, sin perturbar por su presencia, y de él dependen todos los ángulos y fuerzas aerodinámicas.",
+          "Se define por tres rasgos. Su **dirección** es paralela a la trayectoria de vuelo del centro de gravedad y de **sentido opuesto**: si el avión sube, el aire le llega desde arriba y delante. Su **condición** es la del aire cercano al avión pero no alterado por él: ahí la presión, la temperatura y la velocidad son las del ambiente. Y su **magnitud** es la velocidad verdadera del avión, la **TAS** (*true airspeed*), medida respecto a la masa de aire, no respecto al suelo: el viento de cola o de cara cambia la velocidad sobre el terreno, pero no el flujo relativo.",
+          "Entre la línea de cuerda del perfil y este flujo se forma el **ángulo de ataque (α)**, también llamado ángulo de incidencia aerodinámica. Es el ángulo que de verdad manda sobre la sustentación, y por eso lo tratamos aparte de la actitud del avión."
+        ],
+        "examples": [
+          {
+            "q": "Un avión vuela con 90 kt de TAS y viento de cola de 20 kt. ¿Qué velocidad tiene el flujo relativo y cuál es su velocidad sobre el terreno?",
+            "a": "El flujo relativo es respecto al aire: 90 kt. La velocidad sobre el terreno (GS) sí cambia: 90 + 20 = 110 kt. Al ala le da igual el viento; solo le importa cuánto aire pasa por ella."
+          }
+        ],
+        "ideas": [
+          "Si vas en bici un día de viento, lo que notas en la cara es la velocidad relativa entre tú y el aire, no la que marca el suelo: con viento de cola, el aire casi no te sopla aunque vayas deprisa.",
+          "El flujo relativo es como el viento que sientes con la cabeza fuera del tren: viene siempre de la dirección hacia la que te mueves, sea cual sea el morro del tren."
+        ]
+      },
+      {
+        "title": "Punto de remanso",
+        "text": [
+          "Cuando el aire llega al borde de ataque, una línea de corriente choca con el perfil y se detiene del todo: es el **punto de remanso**. Ahí la velocidad relativa es cero, toda la presión dinámica se convierte en estática y se mide la presión total (la misma situación que en la boca de un tubo pitot). Desde ese punto el aire se reparte: una parte rodea el borde de ataque y va por el extradós; el resto sigue por el intradós.",
+          "Con ángulo de ataque pequeño el punto de remanso está casi en el borde de ataque. Al **aumentar α**, el punto de remanso **se desplaza hacia atrás por el intradós**, y el aire que sube al extradós tiene que rodear el borde de ataque con más curva, acelerándose mucho. En el borde de salida hay otro punto de remanso, pero de menor importancia."
+        ],
+        "ideas": [
+          "Es como un esquiador que se tira contra una valla: justo donde la golpea, su velocidad es cero. En el perfil, la línea de corriente que choca con el morro se detiene ahí y se reparte a un lado y a otro, como un río que se encuentra con la proa de un pilar de puente.",
+          "Si aumenta α, el punto donde el agua del río choca con el pilar se desplaza hacia abajo, por el lado de abajo, y el agua de arriba tiene que dar una vuelta más cerrada."
+        ]
+      },
+      {
+        "title": "Distribución de presiones",
+        "text": [
+          "Si miras el perfil con flechas que representan la presión sobre él, verás sobre el **extradós** presiones **inferiores** a la atmosférica (succión) y sobre el **intradós**, ligeramente superiores o cercanas a la atmosférica. El peso de la sustentación lo lleva sobre todo el extradós: aproximadamente **dos tercios de la sustentación** vienen de la succión de arriba y un tercio de la sobrepresión de abajo. Por eso un ala con la superficie superior sucia o helada pierde mucho.",
+          "La succión es máxima cerca del borde de ataque (el **pico de succión**) y aumenta con el ángulo de ataque. Más allá, a lo largo de la cuerda, la presión sube otra vez hacia el valor del flujo libre: el aire tiene que frenarse en una zona de presión creciente, lo que se llama **gradiente adverso de presión**. Es el origen de la separación.",
+          "Cuando aumenta el ángulo de ataque ocurren cuatro cosas a la vez: el punto de remanso baja por el intradós, el punto de presión mínima avanza hacia el borde de ataque, aumenta la succión en el extradós (con un pico muy intenso junto al morro) y disminuye la del intradós. A ángulos de ataque elevados el intradós deja de tener succión y pasa a tener **sobrepresión**: presión superior a la de la corriente libre. Un perfil curvado con ángulo cero ya tiene más succión arriba que abajo, y por eso sustenta."
+        ],
+        "figure": "svg:080-presiones",
+        "caption": "Distribución de presiones, punto de remanso y centro de presiones; el CP se desplaza con el ángulo de ataque.",
+        "ideas": [
+          "El perfil con flechas de presión es como un cojín desigual: arriba tira hacia fuera (succión) y abajo empuja un poco hacia dentro (sobrepresión), y la suma da fuerza hacia arriba.",
+          "Imagina el ala cubierta de ventosas arriba y de manos que empujan abajo: las ventosas del morro tiran con más fuerza que las del resto."
+        ]
+      },
+      {
+        "title": "Origen de la sustentación: sobrepresión y succión",
+        "text": [
+          "La sustentación nace de que la presión local sobre el ala es distinta de la presión del aire ambiente, y esa diferencia depende de la velocidad local del flujo.",
+          "En cada punto del perfil, la presión depende de la velocidad local v del aire en ese punto, comparada con la velocidad V de la corriente libre (Bernoulli). Donde el aire va **más lento que V**, la presión sube por encima de la ambiente: **sobrepresión**. Donde va **más rápido que V**, la presión baja por debajo de la ambiente: **succión** o sobrepresión negativa. En un ala con ángulo de ataque positivo el aire se acelera sobre el extradós y se frena bajo el intradós, y la suma de todas esas diferencias de presión por la superficie del ala da la sustentación.",
+          "Un perfil **asimétrico** sustenta incluso con ángulo de ataque cero: su forma hace que la succión del extradós sea mayor que la del intradós (en el intradós el aire también puede ir algo más rápido que V, pero acelera mucho menos), y esa diferencia es una fuerza neta hacia arriba. Un perfil simétrico, en cambio, necesita ángulo de ataque positivo.",
+          "La sustentación **también puede ser negativa**. Con un ángulo de ataque suficientemente negativo, la presión media sobre el extradós supera a la del intradós y la fuerza aerodinámica apunta hacia abajo. Lo hacen deliberadamente el estabilizador horizontal de muchas avionetas en crucero y los aviones de acrobacia en vuelo invertido."
+        ],
+        "ideas": [
+          "Piensa en la presión como el nivel de agua en una piscina con varios compartimentos: donde el flujo corre más rápido el nivel baja (succión) y donde se estanca el nivel sube (sobrepresión). El ala se mueve hacia el lado donde el nivel está bajo.",
+          "Un paraguas abierto que se levanta con el viento: arriba el aire corre y el nivel baja; por dentro, el aire casi parado empuja hacia fuera. Es una sustentación casera."
+        ]
+      },
+      {
+        "title": "Centro de presiones y centro aerodinámico",
+        "text": [
+          "El **centro de presiones (CP)** es el punto de la cuerda donde se puede suponer aplicada la resultante aerodinámica. No es fijo. En un perfil curvado, al **aumentar α el CP se desplaza hacia delante** (el pico de succión crece cerca del borde de ataque) y al **disminuir α se desplaza hacia atrás**. Justo después de la pérdida, la succión desaparece en la parte delantera y el CP retrocede bruscamente. En un perfil simétrico el CP se mantiene casi fijo, alrededor del 25 % de la cuerda.",
+          "Como el CP se mueve, resulta incómodo para analizar la estabilidad. Se usa en su lugar el **centro aerodinámico**, un punto cercano al 25 % de la cuerda alrededor del cual el momento de cabeceo se mantiene casi constante mientras α varíe dentro del tramo lineal. Un perfil curvado genera un momento de **picado** (de morro abajo) alrededor de ese punto; es el motivo del estabilizador, que debe dar una fuerza hacia abajo para equilibrarlo."
+        ],
+        "ideas": [
+          "El CP es como el punto donde sostienes una regla en equilibrio sobre un dedo cuando le pegan un trozo de plastilina en distintos sitios: se desplaza al cambiar el reparto. El centro aerodinámico es un punto «de referencia» donde el momento no cambia.",
+          "Un balancín donde un niño se mueve de sitio sin avisar: el punto de equilibrio no está quieto."
+        ]
+      },
+      {
+        "title": "Capa límite y separación",
+        "text": [
+          "El aire pegado a la superficie se frena por rozamiento; esa fina capa en la que la velocidad pasa de cero a la de la corriente se llama **capa límite**. Al principio es **laminar** (capas ordenadas, poco rozamiento), pero pasa a **turbulenta** (más gruesa, más rozamiento, más energía cerca de la pared). Una capa turbulenta resiste mejor el gradiente adverso y se separa más tarde.",
+          "Cuando la presión crece hacia atrás y la capa límite ya no tiene energía para avanzar, el flujo se **separa** de la superficie: aparece una zona de aire revuelto, la sustentación cae y la resistencia se dispara. En una avioneta la separación empieza cerca del borde de salida y avanza hacia delante conforme aumenta α. Es la causa de la pérdida y de la vibración que la anuncia (bataneo)."
+        ],
+        "ideas": [
+          "Una capa límite es como una cola ordenada en la puerta de un estadio (laminar) que se desordena de golpe en el centro (turbulenta): la turbulenta resiste más empujones, pero también roza más.",
+          "Cuando subes una cuesta cada vez más empinada con una bici, llega un momento en que ya no tienes energía para seguir pegado a la pendiente y te quedas parado. El aire pegado al ala hace lo mismo cuando la presión crece detrás."
+        ]
+      },
+      {
+        "title": "La curva CL–α",
+        "text": [
+          "La curva CL–α resume el comportamiento del perfil. Tiene un **tramo lineal**: CL crece de forma proporcional a α, con una pendiente de unos 0,1 por grado (2π por radián). Corta el eje horizontal en el **ángulo de sustentación nula (α0)**, que es cero en un perfil simétrico y negativo (≈ −2°) en uno curvado. Más arriba la curva se redondea y alcanza el **CLmax**; el ángulo correspondiente es el **ángulo de ataque crítico**, típicamente entre 15° y 18° en avionetas. Pasado ese punto, CL cae: es la pérdida."
+        ],
+        "formulas": [
+          {
+            "f": "CL ≈ a · (α − α0)",
+            "note": "a ≈ 0,1 por grado en el tramo lineal; α0 ≈ −2° en un perfil curvado de avioneta."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Un perfil con a = 0,1 por grado y α0 = −2°. ¿CL con α = 6°?",
+            "a": "CL = 0,1 × (6 − (−2)) = 0,8."
+          },
+          {
+            "q": "Con el mismo perfil, ¿qué α hace falta para CL = 0,5?",
+            "a": "0,5 = 0,1 × (α + 2) → α = 3°."
+          }
+        ],
+        "figure": "svg:080-cl-alfa",
+        "caption": "Curva CL–α: tramo lineal, CLmax, ángulo crítico y pérdida.",
+        "ideas": [
+          "La curva CL–α es como el pedal del acelerador de un coche con limitador: al principio, cada grado más de inclinación da la misma ganancia, hasta que llegas a un tope y el motor se «ahoga».",
+          "Es una cuesta que sube recta y luego redondea en la cima: la cima es CLmax y, si te pasas del borde, caes."
+        ]
+      },
+      {
+        "title": "Qué cambia y qué no con la pérdida",
+        "text": [
+          "El ángulo crítico es una propiedad del perfil y de su estado superficial, no de la velocidad, la masa ni la potencia: el ala entra en pérdida **siempre que se supera el α crítico**, en cualquier actitud y a cualquier velocidad. Lo que sí cambia es la velocidad a la que ocurre en vuelo recto, porque la sustentación necesaria depende del peso. Los hipersustentadores, el hielo y la contaminación modifican el CLmax; lo verás en 080.09 y 080.10."
+        ],
+        "ideas": [
+          "El ángulo crítico es el borde de una mesa: da igual a qué velocidad te acerques, si pasas el borde, caes. Lo que cambia es dónde está tu coche respecto al borde.",
+          "Es como el límite de inclinación de un cohete que puede girar: no depende de lo cargado que vaya, sino del diseño del cohete."
+        ]
+      }
     ],
-    "formulas": [
-     {
-      "f": "CL ≈ a · (α − α0)",
-      "note": "a ≈ 0,1 por grado en el tramo lineal; α0 ≈ −2° en un perfil curvado de avioneta."
-     }
+    "numbers": [
+      "Pendiente del tramo lineal ≈ 0,1 por grado",
+      "Ángulo de pérdida típico de avioneta: 15° a 18°",
+      "α0 de un perfil curvado ≈ −2°; del simétrico, 0°",
+      "Centro aerodinámico ≈ 25 % de la cuerda",
+      "≈ 2/3 de la sustentación procede de la succión del extradós",
+      "El flujo relativo tiene la magnitud de la TAS y sentido opuesto a la trayectoria",
+      "Donde v > V: presión menor que la ambiente (succión); v < V: sobrepresión",
+      "Con α creciente: remanso baja, presión mínima avanza, el pico de succión crece y el CP avanza",
+      "Perfil asimétrico: sustenta a α = 0; simétrico: CL = 0 a α = 0"
     ],
-    "examples": [
-     {
-      "q": "Un perfil con a = 0,1 por grado y α0 = −2°. ¿CL con α = 6°?",
-      "a": "CL = 0,1 × (6 − (−2)) = 0,8."
-     },
-     {
-      "q": "Con el mismo perfil, ¿qué α hace falta para CL = 0,5?",
-      "a": "0,5 = 0,1 × (α + 2) → α = 3°."
-     }
+    "traps": [
+      "Al aumentar α, el centro de presiones avanza (perfil curvado), y tras la pérdida retrocede.",
+      "El punto de remanso se desplaza hacia atrás por el intradós al aumentar α, no hacia delante.",
+      "El ángulo crítico no cambia con la velocidad ni con la masa.",
+      "Capa turbulenta no es «mala»: resiste más la separación, aunque roza más.",
+      "El flujo relativo no depende del viento: su magnitud es la TAS, no la velocidad sobre el terreno.",
+      "La sobrepresión no es lo mismo que mayor velocidad: donde el aire va más rápido que la corriente libre la presión baja.",
+      "La sustentación puede ser negativa si el ángulo de ataque es suficientemente negativo, aunque el avión vuele recto."
     ],
-    "figure": "svg:080-cl-alfa",
-    "caption": "Curva CL–α: tramo lineal, CLmax, ángulo crítico y pérdida."
-   },
-   {
-    "title": "Qué cambia y qué no con la pérdida",
-    "text": [
-     "El ángulo crítico es una propiedad del perfil y de su estado superficial, no de la velocidad, la masa ni la potencia: el ala entra en pérdida **siempre que se supera el α crítico**, en cualquier actitud y a cualquier velocidad. Lo que sí cambia es la velocidad a la que ocurre en vuelo recto, porque la sustentación necesaria depende del peso. Los hipersustentadores, el hielo y la contaminación modifican el CLmax; lo verás en 080.09 y 080.10."
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "FAA, Airplane Flying Handbook (FAA-H-8083-3C)",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+      },
+      {
+        "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
+        "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
+      },
+      {
+        "title": "Curso DreamAir/ATPLENJOY, Principios de vuelo (POF 1)"
+      }
+    ],
+    "links": [
+      {
+        "label": "Cabina del PA-28",
+        "href": "#/ac/pa28"
+      },
+      {
+        "label": "Cabina del C172",
+        "href": "#/ac/c172"
+      }
+    ],
+    "id": "080.04",
+    "reviewed": "2026-11-23",
+    "course": "Tema 3 · Flujo y sustentación",
+    "outline": [
+      {
+        "title": "Flujo relativo",
+        "items": [
+          "Dirección: paralela a la trayectoria y opuesta",
+          "Condición: aire no perturbado",
+          "Magnitud: TAS",
+          "α: cuerda con flujo relativo"
+        ]
+      },
+      {
+        "title": "Presiones y remanso",
+        "items": [
+          "Remanso: v = 0, presión total",
+          "Extradós: succión; intradós: sobrepresión o menos succión",
+          "Pico de succión junto al morro",
+          "≈ 2/3 de la sustentación sale del extradós"
+        ]
+      },
+      {
+        "title": "Origen y CP",
+        "items": [
+          "v > V: succión; v < V: sobrepresión",
+          "Sustentación negativa con α muy negativo",
+          "CP avanza con α creciente",
+          "Centro aerodinámico ≈ 25 % de c"
+        ]
+      },
+      {
+        "title": "Separación y CL–α",
+        "items": [
+          "Capa límite laminar y turbulenta",
+          "Gradiente adverso, separación",
+          "Tramo lineal ≈ 0,1 por grado",
+          "CLmax y α crítico (15–18°)"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "Más rápido, menos presión (succión); más lento, más presión (sobrepresión).",
+      "Al subir α: remanso baja, mínimo avanza, pico sube, CP avanza («abajo, delante, arriba, delante»).",
+      "Flujo relativo: misma magnitud que la TAS y sentido contrario al vuelo."
+    ],
+    "selfCheck": [
+      {
+        "q": "Define el flujo de aire relativo con su dirección, condición y magnitud.",
+        "a": "Dirección paralela y opuesta a la trayectoria del CG; condición de aire no perturbado por el avión; magnitud igual a la TAS."
+      },
+      {
+        "q": "¿Por qué el viento no cambia la velocidad del flujo relativo?",
+        "a": "Porque el flujo relativo se mide respecto a la masa de aire, que se mueve con el viento; solo cambia la velocidad sobre el terreno."
+      },
+      {
+        "q": "Explica el origen de la sustentación con sobrepresión y succión.",
+        "a": "Donde el aire local va más lento que la corriente libre hay sobrepresión; donde va más rápido, succión. La suma de estas diferencias de presión sobre el ala es la sustentación."
+      },
+      {
+        "q": "¿Cuándo puede ser negativa la sustentación?",
+        "a": "Con un ángulo de ataque suficientemente negativo: la presión media en el extradós supera a la del intradós y la fuerza apunta hacia abajo."
+      },
+      {
+        "q": "¿Qué pasa con el punto de remanso, el pico de succión y el CP al aumentar α?",
+        "a": "El remanso baja por el intradós, el pico de succión crece y avanza hacia el morro y el CP avanza hacia el borde de ataque."
+      },
+      {
+        "q": "¿Por qué se separa el flujo?",
+        "a": "Porque la presión crece hacia atrás (gradiente adverso) y el aire pegado a la pared, ya frenado por rozamiento, no tiene energía para avanzar."
+      }
     ]
-   }
+  },
+  "questions": [
+    {
+      "id": "080.04.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "En el punto de remanso del borde de ataque, la velocidad relativa del aire es:",
+      "options": [
+        "Máxima",
+        "Cero",
+        "Igual a la de la corriente libre",
+        "La mitad de la corriente libre"
+      ],
+      "correct": 1,
+      "why": "Es el punto donde la línea de corriente se detiene y toda la presión dinámica pasa a estática.",
+      "whyNot": [
+        "La velocidad máxima está sobre el extradós, en la zona de menor presión.",
+        null,
+        "Eso ocurre lejos del perfil.",
+        "No existe una velocidad intermedia fija en ese punto."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.04.002",
+      "type": "concepto",
+      "level": 2,
+      "q": "Al aumentar el ángulo de ataque, el punto de remanso se desplaza:",
+      "options": [
+        "Hacia delante, por el extradós",
+        "Hacia el borde de salida por el extradós",
+        "No se mueve",
+        "Hacia atrás, por el intradós"
+      ],
+      "correct": 3,
+      "why": "Con más α el borde de ataque queda más «de cara» al flujo y el punto de remanso baja y retrocede por el intradós.",
+      "whyNot": [
+        "Se mueve al contrario.",
+        "El punto de remanso queda siempre en la parte frontal del perfil.",
+        "Cambia de posición; no es fijo.",
+        null
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.04.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "En vuelo normal, la mayor parte de la sustentación del ala procede de:",
+      "options": [
+        "La succión (baja presión) del extradós",
+        "La sobrepresión del intradós únicamente",
+        "El rozamiento del aire",
+        "La presión en el borde de salida"
+      ],
+      "correct": 0,
+      "why": "Aproximadamente dos tercios de la sustentación proceden de la baja presión sobre el extradós.",
+      "whyNot": [
+        null,
+        "El intradós aporta alrededor de un tercio.",
+        "El rozamiento genera resistencia, no sustentación.",
+        "El borde de salida no tiene un papel dominante."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.04.004",
+      "type": "concepto",
+      "level": 2,
+      "q": "En un perfil curvado, al aumentar el ángulo de ataque (dentro del tramo normal) el centro de presiones:",
+      "options": [
+        "Se desplaza hacia el borde de salida",
+        "Permanece fijo",
+        "Se desplaza hacia el borde de ataque",
+        "Sale del perfil"
+      ],
+      "correct": 2,
+      "why": "El pico de succión crece cerca del borde de ataque y arrastra consigo la posición de la resultante.",
+      "whyNot": [
+        "Eso ocurre al reducir α o tras la pérdida.",
+        "Solo es casi fijo en el perfil simétrico.",
+        null,
+        "Siempre está sobre la cuerda."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.04.005",
+      "type": "concepto",
+      "level": 3,
+      "q": "Justo al superar el ángulo crítico, el centro de presiones:",
+      "options": [
+        "Avanza bruscamente hacia el borde de ataque",
+        "Sigue avanzando de forma progresiva",
+        "Retrocede bruscamente hacia el borde de salida",
+        "Se mantiene en el 25 % de la cuerda"
+      ],
+      "correct": 2,
+      "why": "Al separarse el flujo se pierde la succión en la zona delantera y la resultante se desplaza hacia atrás.",
+      "whyNot": [
+        "Es lo que ocurre al aumentar α antes de la pérdida.",
+        "Esa tendencia se invierte tras la pérdida.",
+        null,
+        "Esa posición corresponde al centro aerodinámico."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.04.006",
+      "type": "concepto",
+      "level": 2,
+      "q": "La capa límite es:",
+      "options": [
+        "La fina capa de aire junto a la superficie en la que la velocidad pasa de cero a la de la corriente",
+        "La zona de aire por delante del borde de ataque",
+        "La estela turbulenta que deja el avión",
+        "La capa de la atmósfera cercana al suelo"
+      ],
+      "correct": 0,
+      "why": "Es la región donde el rozamiento frena el aire en contacto con la superficie.",
+      "whyNot": [
+        null,
+        "Es el flujo previo al impacto con el perfil, no una capa de rozamiento.",
+        "La estela es otro fenómeno (torbellinos).",
+        "Se refiere a la capa límite atmosférica, otro concepto."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.04.007",
+      "type": "concepto",
+      "level": 2,
+      "q": "La separación de la capa límite se produce porque:",
+      "options": [
+        "La densidad del aire aumenta",
+        "La velocidad del avión es excesiva",
+        "El aire se calienta por fricción y se expande",
+        "La presión aumenta en el sentido del flujo y el aire pegado a la pared se queda sin energía"
+      ],
+      "correct": 3,
+      "why": "El gradiente adverso de presión frena el aire cercano a la pared hasta detenerlo e invertirlo.",
+      "whyNot": [
+        "La densidad apenas cambia a estas velocidades.",
+        "La separación es función del ángulo de ataque, no de la velocidad.",
+        "El calentamiento no es la causa.",
+        null
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.04.008",
+      "type": "concepto",
+      "level": 2,
+      "q": "Una capa límite turbulenta, comparada con una laminar:",
+      "options": [
+        "Produce menos rozamiento y se separa antes",
+        "Resiste mejor la separación aunque produce más rozamiento",
+        "Produce menos rozamiento y se separa después",
+        "Siempre se separa antes y roza más"
+      ],
+      "correct": 1,
+      "why": "Tiene más energía junto a la pared: aguanta más el gradiente adverso, a cambio de más resistencia de fricción.",
+      "whyNot": [
+        "Roza más, no menos.",
+        null,
+        "Roza más, no menos.",
+        "Se separa más tarde, no antes."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.04.009",
+      "type": "concepto",
+      "level": 1,
+      "q": "El ángulo de sustentación nula de un perfil curvado es:",
+      "options": [
+        "Ligeramente negativo",
+        "Cero",
+        "Igual al ángulo crítico",
+        "Siempre 5° positivo"
+      ],
+      "correct": 0,
+      "why": "Un perfil curvado ya produce sustentación con α = 0, y hay que bajar ligeramente el borde de ataque para anularla.",
+      "whyNot": [
+        null,
+        "Es el valor del perfil simétrico.",
+        "El crítico es el de CLmax, mucho mayor.",
+        "El perfil curvado de avioneta se anula alrededor de −2°."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.04.010",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un perfil tiene a = 0,1 por grado y α0 = −2°. Para obtener CL = 0,7, hace falta un ángulo de ataque de:",
+      "options": [
+        "7°",
+        "3°",
+        "5°",
+        "9°"
+      ],
+      "correct": 2,
+      "why": "0,7 = 0,1 · (α + 2) → α + 2 = 7 → α = 5°.",
+      "whyNot": [
+        "Es CL/a = 0,7/0,1 sin tener en cuenta α0.",
+        "Resulta de restar 2° en lugar de sumarlos (5 − 2).",
+        null,
+        "Resulta de sumar 2° dos veces (7 + 2)."
+      ],
+      "ref": "CL = a(α − α0)"
+    },
+    {
+      "id": "080.04.011",
+      "type": "concepto",
+      "level": 2,
+      "q": "El ángulo de ataque crítico del ala:",
+      "options": [
+        "Aumenta con el peso",
+        "Es independiente de la velocidad y de la masa",
+        "Disminuye a mayor altitud",
+        "Es mayor si se vuela más rápido"
+      ],
+      "correct": 1,
+      "why": "El α crítico es una propiedad del perfil y de su superficie: cambia con flaps, hielo o contaminación, pero no con la velocidad ni la masa.",
+      "whyNot": [
+        "Con más peso se llega al α crítico a mayor velocidad, no a distinto ángulo.",
+        null,
+        "No depende de la altitud.",
+        "La velocidad no lo modifica."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.04.012",
+      "type": "lectura",
+      "level": 2,
+      "q": "En la curva CL–α de la figura, tras alcanzar el ángulo crítico, al seguir tirando de la palanca:",
+      "figure": "svg:080-cl-alfa",
+      "options": [
+        "El CL sigue aumentando de forma lineal",
+        "El CL se mantiene en su máximo",
+        "La resistencia disminuye",
+        "El CL disminuye y la resistencia aumenta"
+      ],
+      "correct": 3,
+      "why": "Pasado el ángulo crítico el flujo se separa: cae la sustentación y se dispara la resistencia.",
+      "whyNot": [
+        "Eso solo ocurre dentro del tramo lineal.",
+        "El máximo es solo un punto, no un tramo.",
+        "La resistencia crece con la separación.",
+        null
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.04.013",
+      "type": "lectura",
+      "level": 2,
+      "q": "Según la distribución de presiones de la figura, el pico de succión se encuentra:",
+      "figure": "svg:080-presiones",
+      "options": [
+        "En el intradós, cerca del borde de salida",
+        "En el extradós, junto al borde de salida",
+        "En el intradós, junto al borde de ataque",
+        "En el extradós, cerca del borde de ataque"
+      ],
+      "correct": 3,
+      "why": "La mayor succión aparece sobre el extradós poco después del borde de ataque y crece con α.",
+      "whyNot": [
+        "El intradós trabaja con presiones cercanas o superiores a la atmosférica.",
+        "Al borde de salida la presión se recupera hacia la libre.",
+        "Ahí está la sobrepresión, no la succión.",
+        null
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.04.014",
+      "type": "concepto",
+      "level": 3,
+      "q": "El centro aerodinámico de un perfil se sitúa aproximadamente en:",
+      "options": [
+        "El 50 % de la cuerda",
+        "El 25 % de la cuerda, donde el momento de cabeceo es casi constante",
+        "El borde de ataque",
+        "El punto donde actúa siempre el centro de presiones"
+      ],
+      "correct": 1,
+      "why": "Alrededor del 25 % de la cuerda el momento de cabeceo no varía con α en el tramo lineal.",
+      "whyNot": [
+        "Esa posición no tiene un significado especial.",
+        null,
+        "El borde de ataque no es un punto de referencia aerodinámico.",
+        "El centro de presiones se mueve; el aerodinámico no."
+      ],
+      "ref": "PHAK cap. 5"
+    },
+    {
+      "id": "080.04.015",
+      "type": "concepto",
+      "level": 1,
+      "q": "El flujo de aire relativo (corriente libre) tiene la dirección:",
+      "options": [
+        "Paralela a la cuerda del perfil y del mismo sentido que el avance",
+        "Perpendicular a la trayectoria de vuelo",
+        "Paralela a la trayectoria de vuelo del centro de gravedad y de sentido opuesto",
+        "Igual a la dirección del viento meteorológico"
+      ],
+      "correct": 2,
+      "why": "El flujo relativo es paralelo a la trayectoria del CG y de sentido contrario. El ángulo de ataque se mide entre la cuerda y esa dirección.",
+      "whyNot": [
+        "La cuerda es una línea del perfil; el flujo relativo se define respecto a la trayectoria, no a ella.",
+        "Perpendicular sería la dirección de la sustentación, no del flujo.",
+        null,
+        "El flujo relativo no depende del viento: es relativo a la masa de aire en que vuela el avión."
+      ],
+      "ref": "Curso POF 1; PHAK cap. 5"
+    },
+    {
+      "id": "080.04.016",
+      "type": "calculo",
+      "level": 1,
+      "q": "Un avión vuela a 90 kt de TAS con viento de cola de 20 kt. La velocidad del flujo relativo respecto al ala es de:",
+      "options": [
+        "90 kt",
+        "110 kt",
+        "70 kt",
+        "20 kt"
+      ],
+      "correct": 0,
+      "why": "El flujo relativo se mide respecto al aire: su magnitud es la TAS, 90 kt. El viento solo cambia la velocidad sobre el terreno.",
+      "whyNot": [
+        null,
+        "110 kt sería la velocidad sobre el terreno con viento de cola.",
+        "70 kt aparecería con viento de cara si se confunde TAS con GS.",
+        "El viento nunca es la velocidad del flujo relativo."
+      ],
+      "ref": "Curso POF 1"
+    },
+    {
+      "id": "080.04.017",
+      "type": "concepto",
+      "level": 2,
+      "q": "En las zonas del perfil donde el aire local va más rápido que la corriente libre, la presión local es:",
+      "options": [
+        "Mayor que la ambiente: hay sobrepresión",
+        "Igual a la ambiente",
+        "Mayor, porque la energía cinética aumenta",
+        "Menor que la ambiente: hay succión"
+      ],
+      "correct": 3,
+      "why": "Según Bernoulli, donde crece la energía cinética baja la presión estática. Si v es mayor que V, la presión local es menor que la ambiente.",
+      "whyNot": [
+        "La sobrepresión aparece donde el aire se frena.",
+        "La presión solo sería igual a la ambiente donde la velocidad sea igual a V.",
+        "Aumenta la energía cinética, pero la presión estática disminuye para que la total se mantenga.",
+        null
+      ],
+      "ref": "Curso POF 1; PHAK cap. 5"
+    },
+    {
+      "id": "080.04.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Puede ser negativa la sustentación de un perfil?",
+      "options": [
+        "Sí, con un ángulo de ataque suficientemente negativo",
+        "No, la sustentación siempre apunta hacia arriba",
+        "Solo en vuelo invertido y con perfil simétrico",
+        "Solo si el avión baja de la velocidad de pérdida"
+      ],
+      "correct": 0,
+      "why": "Con α suficientemente negativo, la presión media sobre el extradós supera a la del intradós y la fuerza resultante es hacia abajo, como la del estabilizador en crucero.",
+      "whyNot": [
+        null,
+        "La sustentación se define respecto al viento relativo y puede tener cualquier signo.",
+        "No hace falta volar invertido ni usar un perfil simétrico para que ocurra.",
+        "La pérdida reduce la sustentación, pero no la hace negativa por sí sola."
+      ],
+      "ref": "Curso POF 1; PHAK cap. 5"
+    },
+    {
+      "id": "080.04.019",
+      "type": "calculo",
+      "level": 2,
+      "q": "Un perfil con pendiente 0,1 por grado y α0 = −2° vuela a α = 8°. Su CL es aproximadamente:",
+      "options": [
+        "0,6",
+        "0,8",
+        "1,0",
+        "1,2"
+      ],
+      "correct": 2,
+      "why": "CL = a · (α − α0) = 0,1 · (8 + 2) = 1,0.",
+      "whyNot": [
+        "0,6 sale de olvidar el signo de α0 (0,1 · (8 − 2)).",
+        "0,8 corresponde a α = 6° con este mismo perfil.",
+        null,
+        "1,2 requeriría α = 10°."
+      ],
+      "ref": "Curso POF 1"
+    },
+    {
+      "id": "080.04.020",
+      "type": "concepto",
+      "level": 3,
+      "q": "En el perfil, la sobrepresión (presión mayor que la de la corriente libre) aparece:",
+      "options": [
+        "Donde el aire se acelera por encima de la velocidad de la corriente libre",
+        "Donde la velocidad local es menor que la de la corriente libre, como cerca del punto de remanso",
+        "Solo en el extradós",
+        "Únicamente en las puntas del ala"
+      ],
+      "correct": 1,
+      "why": "Donde el aire se frena, parte de su energía cinética se convierte en presión, que supera a la ambiente. El máximo está en el punto de remanso.",
+      "whyNot": [
+        "Ahí la presión baja: es la succión.",
+        null,
+        "También aparece en el intradós, sobre todo con ángulos de ataque altos.",
+        "Las puntas del ala generan torbellinos, no sobrepresión específica."
+      ],
+      "ref": "Curso POF 1"
+    },
+    {
+      "id": "080.04.021",
+      "type": "concepto",
+      "level": 2,
+      "q": "Al aumentar el ángulo de ataque en un perfil, la succión sobre el intradós:",
+      "options": [
+        "Aumenta, igual que en el extradós",
+        "Se mantiene constante a cualquier ángulo",
+        "Desaparece de golpe a α = 0",
+        "Disminuye y, a ángulos de ataque altos, se convierte en sobrepresión"
+      ],
+      "correct": 3,
+      "why": "Al crecer α el aire bajo el perfil se frena más; la succión del intradós se reduce y, para ángulos suficientemente altos, la presión pasa a superar a la ambiente.",
+      "whyNot": [
+        "Es al revés: aumenta la del extradós, pero la del intradós se reduce.",
+        "La presión cambia de forma continua con α.",
+        "No hay ningún salto en α = 0.",
+        null
+      ],
+      "ref": "Curso POF 1"
+    }
   ],
-  "numbers": [
-   "Pendiente del tramo lineal ≈ 0,1 por grado",
-   "Ángulo de pérdida típico de avioneta: 15° a 18°",
-   "α0 de un perfil curvado ≈ −2°; del simétrico, 0°",
-   "Centro aerodinámico ≈ 25 % de la cuerda",
-   "≈ 2/3 de la sustentación procede de la succión del extradós"
-  ],
-  "traps": [
-   "Al aumentar α, el centro de presiones avanza (perfil curvado), y tras la pérdida retrocede.",
-   "El punto de remanso se desplaza hacia atrás por el intradós al aumentar α, no hacia delante.",
-   "El ángulo crítico no cambia con la velocidad ni con la masa.",
-   "Capa turbulenta no es «mala»: resiste más la separación, aunque roza más."
-  ],
-  "sources": [
-   {
-    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 5",
-    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
-   },
-   {
-    "title": "FAA, Airplane Flying Handbook (FAA-H-8083-3C)",
-    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
-   },
-   {
-    "title": "EASA, Easy Access Rules for Aircrew: AMC1 FCL.210; FCL.215, temario 080",
-    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011"
-   }
-  ],
-  "links": [
-   {
-    "label": "Cabina del PA-28",
-    "href": "#/ac/pa28"
-   },
-   {
-    "label": "Cabina del C172",
-    "href": "#/ac/c172"
-   }
-  ],
-  "id": "080.04",
-  "reviewed": "2026-10-09"
- },
- "questions": [
-  {
-   "id": "080.04.001",
-   "type": "concepto",
-   "level": 1,
-   "q": "En el punto de remanso del borde de ataque, la velocidad relativa del aire es:",
-   "options": [
-    "Máxima",
-    "Cero",
-    "Igual a la de la corriente libre",
-    "La mitad de la corriente libre"
-   ],
-   "correct": 1,
-   "why": "Es el punto donde la línea de corriente se detiene y toda la presión dinámica pasa a estática.",
-   "whyNot": [
-    "La velocidad máxima está sobre el extradós, en la zona de menor presión.",
-    null,
-    "Eso ocurre lejos del perfil.",
-    "No existe una velocidad intermedia fija en ese punto."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.04.002",
-   "type": "concepto",
-   "level": 2,
-   "q": "Al aumentar el ángulo de ataque, el punto de remanso se desplaza:",
-   "options": [
-    "Hacia delante, por el extradós",
-    "Hacia el borde de salida por el extradós",
-    "No se mueve",
-    "Hacia atrás, por el intradós"
-   ],
-   "correct": 3,
-   "why": "Con más α el borde de ataque queda más «de cara» al flujo y el punto de remanso baja y retrocede por el intradós.",
-   "whyNot": [
-    "Se mueve al contrario.",
-    "El punto de remanso queda siempre en la parte frontal del perfil.",
-    "Cambia de posición; no es fijo.",
-    null
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.04.003",
-   "type": "concepto",
-   "level": 1,
-   "q": "En vuelo normal, la mayor parte de la sustentación del ala procede de:",
-   "options": [
-    "La succión (baja presión) del extradós",
-    "La sobrepresión del intradós únicamente",
-    "El rozamiento del aire",
-    "La presión en el borde de salida"
-   ],
-   "correct": 0,
-   "why": "Aproximadamente dos tercios de la sustentación proceden de la baja presión sobre el extradós.",
-   "whyNot": [
-    null,
-    "El intradós aporta alrededor de un tercio.",
-    "El rozamiento genera resistencia, no sustentación.",
-    "El borde de salida no tiene un papel dominante."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.04.004",
-   "type": "concepto",
-   "level": 2,
-   "q": "En un perfil curvado, al aumentar el ángulo de ataque (dentro del tramo normal) el centro de presiones:",
-   "options": [
-    "Se desplaza hacia el borde de salida",
-    "Permanece fijo",
-    "Se desplaza hacia el borde de ataque",
-    "Sale del perfil"
-   ],
-   "correct": 2,
-   "why": "El pico de succión crece cerca del borde de ataque y arrastra consigo la posición de la resultante.",
-   "whyNot": [
-    "Eso ocurre al reducir α o tras la pérdida.",
-    "Solo es casi fijo en el perfil simétrico.",
-    null,
-    "Siempre está sobre la cuerda."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.04.005",
-   "type": "concepto",
-   "level": 3,
-   "q": "Justo al superar el ángulo crítico, el centro de presiones:",
-   "options": [
-    "Avanza bruscamente hacia el borde de ataque",
-    "Sigue avanzando de forma progresiva",
-    "Retrocede bruscamente hacia el borde de salida",
-    "Se mantiene en el 25 % de la cuerda"
-   ],
-   "correct": 2,
-   "why": "Al separarse el flujo se pierde la succión en la zona delantera y la resultante se desplaza hacia atrás.",
-   "whyNot": [
-    "Es lo que ocurre al aumentar α antes de la pérdida.",
-    "Esa tendencia se invierte tras la pérdida.",
-    null,
-    "Esa posición corresponde al centro aerodinámico."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.04.006",
-   "type": "concepto",
-   "level": 2,
-   "q": "La capa límite es:",
-   "options": [
-    "La fina capa de aire junto a la superficie en la que la velocidad pasa de cero a la de la corriente",
-    "La zona de aire por delante del borde de ataque",
-    "La estela turbulenta que deja el avión",
-    "La capa de la atmósfera cercana al suelo"
-   ],
-   "correct": 0,
-   "why": "Es la región donde el rozamiento frena el aire en contacto con la superficie.",
-   "whyNot": [
-    null,
-    "Es el flujo previo al impacto con el perfil, no una capa de rozamiento.",
-    "La estela es otro fenómeno (torbellinos).",
-    "Se refiere a la capa límite atmosférica, otro concepto."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.04.007",
-   "type": "concepto",
-   "level": 2,
-   "q": "La separación de la capa límite se produce porque:",
-   "options": [
-    "La densidad del aire aumenta",
-    "La velocidad del avión es excesiva",
-    "El aire se calienta por fricción y se expande",
-    "La presión aumenta en el sentido del flujo y el aire pegado a la pared se queda sin energía"
-   ],
-   "correct": 3,
-   "why": "El gradiente adverso de presión frena el aire cercano a la pared hasta detenerlo e invertirlo.",
-   "whyNot": [
-    "La densidad apenas cambia a estas velocidades.",
-    "La separación es función del ángulo de ataque, no de la velocidad.",
-    "El calentamiento no es la causa.",
-    null
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.04.008",
-   "type": "concepto",
-   "level": 2,
-   "q": "Una capa límite turbulenta, comparada con una laminar:",
-   "options": [
-    "Produce menos rozamiento y se separa antes",
-    "Resiste mejor la separación aunque produce más rozamiento",
-    "Produce menos rozamiento y se separa después",
-    "Siempre se separa antes y roza más"
-   ],
-   "correct": 1,
-   "why": "Tiene más energía junto a la pared: aguanta más el gradiente adverso, a cambio de más resistencia de fricción.",
-   "whyNot": [
-    "Roza más, no menos.",
-    null,
-    "Roza más, no menos.",
-    "Se separa más tarde, no antes."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.04.009",
-   "type": "concepto",
-   "level": 1,
-   "q": "El ángulo de sustentación nula de un perfil curvado es:",
-   "options": [
-    "Ligeramente negativo",
-    "Cero",
-    "Igual al ángulo crítico",
-    "Siempre 5° positivo"
-   ],
-   "correct": 0,
-   "why": "Un perfil curvado ya produce sustentación con α = 0, y hay que bajar ligeramente el borde de ataque para anularla.",
-   "whyNot": [
-    null,
-    "Es el valor del perfil simétrico.",
-    "El crítico es el de CLmax, mucho mayor.",
-    "El perfil curvado de avioneta se anula alrededor de −2°."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.04.010",
-   "type": "calculo",
-   "level": 2,
-   "q": "Un perfil tiene a = 0,1 por grado y α0 = −2°. Para obtener CL = 0,7, hace falta un ángulo de ataque de:",
-   "options": [
-    "7°",
-    "3°",
-    "5°",
-    "9°"
-   ],
-   "correct": 2,
-   "why": "0,7 = 0,1 · (α + 2) → α + 2 = 7 → α = 5°.",
-   "whyNot": [
-    "Es CL/a = 0,7/0,1 sin tener en cuenta α0.",
-    "Resulta de restar 2° en lugar de sumarlos (5 − 2).",
-    null,
-    "Resulta de sumar 2° dos veces (7 + 2)."
-   ],
-   "ref": "CL = a(α − α0)"
-  },
-  {
-   "id": "080.04.011",
-   "type": "concepto",
-   "level": 2,
-   "q": "El ángulo de ataque crítico del ala:",
-   "options": [
-    "Aumenta con el peso",
-    "Es independiente de la velocidad y de la masa",
-    "Disminuye a mayor altitud",
-    "Es mayor si se vuela más rápido"
-   ],
-   "correct": 1,
-   "why": "El α crítico es una propiedad del perfil y de su superficie: cambia con flaps, hielo o contaminación, pero no con la velocidad ni la masa.",
-   "whyNot": [
-    "Con más peso se llega al α crítico a mayor velocidad, no a distinto ángulo.",
-    null,
-    "No depende de la altitud.",
-    "La velocidad no lo modifica."
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.04.012",
-   "type": "lectura",
-   "level": 2,
-   "q": "En la curva CL–α de la figura, tras alcanzar el ángulo crítico, al seguir tirando de la palanca:",
-   "figure": "svg:080-cl-alfa",
-   "options": [
-    "El CL sigue aumentando de forma lineal",
-    "El CL se mantiene en su máximo",
-    "La resistencia disminuye",
-    "El CL disminuye y la resistencia aumenta"
-   ],
-   "correct": 3,
-   "why": "Pasado el ángulo crítico el flujo se separa: cae la sustentación y se dispara la resistencia.",
-   "whyNot": [
-    "Eso solo ocurre dentro del tramo lineal.",
-    "El máximo es solo un punto, no un tramo.",
-    "La resistencia crece con la separación.",
-    null
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.04.013",
-   "type": "lectura",
-   "level": 2,
-   "q": "Según la distribución de presiones de la figura, el pico de succión se encuentra:",
-   "figure": "svg:080-presiones",
-   "options": [
-    "En el intradós, cerca del borde de salida",
-    "En el extradós, junto al borde de salida",
-    "En el intradós, junto al borde de ataque",
-    "En el extradós, cerca del borde de ataque"
-   ],
-   "correct": 3,
-   "why": "La mayor succión aparece sobre el extradós poco después del borde de ataque y crece con α.",
-   "whyNot": [
-    "El intradós trabaja con presiones cercanas o superiores a la atmosférica.",
-    "Al borde de salida la presión se recupera hacia la libre.",
-    "Ahí está la sobrepresión, no la succión.",
-    null
-   ],
-   "ref": "PHAK cap. 5"
-  },
-  {
-   "id": "080.04.014",
-   "type": "concepto",
-   "level": 3,
-   "q": "El centro aerodinámico de un perfil se sitúa aproximadamente en:",
-   "options": [
-    "El 50 % de la cuerda",
-    "El 25 % de la cuerda, donde el momento de cabeceo es casi constante",
-    "El borde de ataque",
-    "El punto donde actúa siempre el centro de presiones"
-   ],
-   "correct": 1,
-   "why": "Alrededor del 25 % de la cuerda el momento de cabeceo no varía con α en el tramo lineal.",
-   "whyNot": [
-    "Esa posición no tiene un significado especial.",
-    null,
-    "El borde de ataque no es un punto de referencia aerodinámico.",
-    "El centro de presiones se mueve; el aerodinámico no."
-   ],
-   "ref": "PHAK cap. 5"
-  }
- ],
- "cards": [
-  {
-   "id": "c.080.04.01",
-   "front": "Qué es el punto de remanso",
-   "back": "Punto del borde de ataque donde el aire se detiene (velocidad cero, presión total)"
-  },
-  {
-   "id": "c.080.04.02",
-   "front": "Centro de presiones al aumentar α (perfil curvado)",
-   "back": "Avanza hacia el borde de ataque; tras la pérdida retrocede"
-  },
-  {
-   "id": "c.080.04.03",
-   "front": "Pendiente de la curva CL–α",
-   "back": "≈ 0,1 por grado en el tramo lineal"
-  },
-  {
-   "id": "c.080.04.04",
-   "front": "Por qué se separa la capa límite",
-   "back": "Porque la presión crece hacia atrás y el aire pegado a la pared se queda sin energía"
-  }
- ]
+  "cards": [
+    {
+      "id": "c.080.04.01",
+      "front": "Qué es el punto de remanso",
+      "back": "Punto del borde de ataque donde el aire se detiene (velocidad cero, presión total)"
+    },
+    {
+      "id": "c.080.04.02",
+      "front": "Centro de presiones al aumentar α (perfil curvado)",
+      "back": "Avanza hacia el borde de ataque; tras la pérdida retrocede"
+    },
+    {
+      "id": "c.080.04.03",
+      "front": "Pendiente de la curva CL–α",
+      "back": "≈ 0,1 por grado en el tramo lineal"
+    },
+    {
+      "id": "c.080.04.04",
+      "front": "Por qué se separa la capa límite",
+      "back": "Porque la presión crece hacia atrás y el aire pegado a la pared se queda sin energía"
+    },
+    {
+      "id": "c.080.04.05",
+      "front": "Flujo de aire relativo",
+      "back": "Paralelo y opuesto a la trayectoria del CG; aire no perturbado; magnitud igual a la TAS"
+    },
+    {
+      "id": "c.080.04.06",
+      "front": "Sobrepresión y succión",
+      "back": "Aire local más lento que V: sobrepresión; más rápido que V: succión. La diferencia genera sustentación"
+    }
+  ]
 }

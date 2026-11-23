@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 450">
+  <title>Señales de búsqueda y salvamento que los equipos de rescate extienden en el suelo: LLL operación terminada, LL todos hallados, doble cruz solo algunos, XX regresamos, flechas opuestas dos grupos, dos flechas la aeronave está en esa dirección, NN nada hallado</title>
+  <defs>
+    <marker id="090-codigo-busqueda-flecha" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" class="ink-fill"/></marker>
+  </defs>
+  <rect x="8" y="8" width="624" height="434" rx="8" class="ground"/>
+  <text x="24" y="32" class="tx b">Señales de los equipos de búsqueda y salvamento (se extienden en el suelo)</text>
+  <g class="ln thick"><path d="M40 54 L40 90 L56 90 M68 54 L68 90 L84 90 M96 54 L96 90 L112 90" fill="none"/></g>
+  <text x="150" y="72" class="tx b">LLL</text>
+  <text x="290" y="72" class="tx">Operación terminada</text>
+  <line x1="24" y1="102" x2="616" y2="102" class="ln2"/>
+  <g class="ln thick"><path d="M50 108 L50 144 L68 144 M82 108 L82 144 L100 144 M42 152 L108 152" fill="none"/></g>
+  <text x="150" y="128" class="tx b">LL</text>
+  <text x="290" y="128" class="tx">Hemos hallado a todos los ocupantes</text>
+  <line x1="24" y1="158" x2="616" y2="158" class="ln2"/>
+  <g class="ln thick"><path d="M52 170 L52 202 M36 186 L68 186 M88 170 L88 202 M72 186 L104 186" fill="none"/></g>
+  <text x="150" y="184" class="tx b">Doble cruz</text>
+  <text x="290" y="184" class="tx">Hemos hallado solo a algunos ocupantes</text>
+  <line x1="24" y1="214" x2="616" y2="214" class="ln2"/>
+  <g class="ln thick"><path d="M36 224 L64 260 M64 224 L36 260 M78 224 L106 260 M106 224 L78 260" fill="none"/></g>
+  <text x="150" y="240" class="tx b">XX</text>
+  <text x="290" y="240" class="tx">No podemos continuar: regresamos a la base</text>
+  <line x1="24" y1="270" x2="616" y2="270" class="ln2"/>
+  <g class="ln thick"><path d="M36 290 L110 290 M36 310 L110 310" fill="none" opacity="0"/><path d="M34 288 L108 288" fill="none" marker-end="url(#090-codigo-busqueda-flecha)"/><path d="M110 310 L36 310" fill="none" marker-end="url(#090-codigo-busqueda-flecha)"/></g>
+  <text x="150" y="292" class="tx b">Flechas opuestas</text>
+  <text x="290" y="292" class="tx">Nos hemos dividido en dos grupos</text>
+  <text x="290" y="310" class="tx2">cada uno va en el sentido que indica su flecha</text>
+  <line x1="24" y1="326" x2="616" y2="326" class="ln2"/>
+  <g class="ln thick"><path d="M34 354 L66 354" fill="none" marker-end="url(#090-codigo-busqueda-flecha)"/><path d="M78 354 L110 354" fill="none" marker-end="url(#090-codigo-busqueda-flecha)"/></g>
+  <text x="150" y="348" class="tx b">Dos flechas</text>
+  <text x="290" y="348" class="tx">Se ha recibido información de que</text>
+  <text x="290" y="366" class="tx2">la aeronave está en esa dirección</text>
+  <line x1="24" y1="382" x2="616" y2="382" class="ln2"/>
+  <g class="ln thick"><path d="M40 428 L40 392 L62 428 L62 392 M78 428 L78 392 L100 428 L100 392" fill="none"/></g>
+  <text x="150" y="408" class="tx b">NN</text>
+  <text x="290" y="408" class="tx">No hemos hallado nada: seguimos buscando</text>
+</svg>

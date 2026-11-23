@@ -1,639 +1,1137 @@
 {
- "lesson": {
-  "title": "Direcciones y distancias",
-  "summary": "Norte verdadero, magnético y de brújula; variación, isógonas y desvío; cadena TVMDC en los dos sentidos; unidades de distancia (NM, SM, km, m, ft) y sus conversiones.",
-  "objectives": [
-   "Distinguir norte verdadero, magnético y de brújula y las diferencias entre ellos",
-   "Aplicar variación y desvío con su signo correcto en los dos sentidos",
-   "Leer una isógona y una tarjeta de desvíos",
-   "Convertir NM, SM, km, m y ft con cifras de examen",
-   "Medir distancias con la escala adecuada de la carta"
-  ],
-  "sections": [
-   {
-    "title": "Tres nortes",
-    "text": [
-     "Las direcciones se miden en grados desde el norte, en sentido horario, con tres cifras (000° a 360°). Lo difícil es que hay **tres nortes** distintos. El **norte verdadero** (T) apunta al polo norte geográfico, por donde pasa el eje de rotación; es la referencia de las cartas y de los meridianos. El **norte magnético** (M) apunta al polo norte magnético, que está en el Ártico canadiense y se desplaza unos kilómetros cada año; es lo que busca una aguja imantada sin perturbaciones. El **norte de brújula** (C) es el que marca la brújula de tu avión, que además de la Tierra siente los campos magnéticos del propio avión.",
-     "El ángulo entre T y M es la **variación** (o declinación magnética). El ángulo entre M y C es el **desvío**. De ahí sale la cadena que se usa en cada tramo: **T → M → C**, cuya abreviatura mnemotécnica es TVMDC (Verdadero, Variación, Magnético, Desvío, Compás)."
+  "lesson": {
+    "title": "Direcciones y distancias",
+    "summary": "Unidades de distancia y altura (NM, SM, km, m, ft), minutos de latitud y de longitud, norte verdadero, magnético y de brújula, variación, isógonas y desvío, círculo máximo, círculo menor y loxodrómica, convergencia de los meridianos y departure (apartamiento), con el cruce del antimeridiano.",
+    "objectives": [
+      "Convertir entre NM, SM, km, m y ft de memoria y con comprobación",
+      "Distinguir un minuto de latitud (siempre 1 NM) de un minuto de longitud (cos lat NM)",
+      "Pasar de rumbo verdadero a magnético y a brújula, y a la inversa, con los signos correctos",
+      "Explicar círculo máximo, círculo menor y loxodrómica, y la convergencia de los meridianos",
+      "Calcular el departure y la diferencia de longitud, incluido el cruce del antimeridiano",
+      "Medir distancias y rumbos en la carta con la escala y el meridiano adecuados"
+    ],
+    "sections": [
+      {
+        "title": "Unidades de distancia",
+        "text": [
+          "En el aire se miden las distancias en **millas náuticas (NM)**; la visibilidad se da en metros o km, las alturas en pies, y en algunos países (EE. UU., Reino Unido) las millas terrestres aparecen en documentos. Las equivalencias que debes saber de memoria son pocas.",
+          "La milla náutica es 1 minuto de arco de meridiano, por eso 1′ de latitud = 1 NM (véase 060.01). La milla terrestre (SM) es la inglesa de uso ordinario. La conversión entre ellas se resuelve con el computador o de cabeza: 1 NM ≈ 1,15 SM."
+        ],
+        "table": {
+          "caption": "Equivalencias de distancia",
+          "head": [
+            "Unidad",
+            "Valor"
+          ],
+          "rows": [
+            [
+              "1 NM",
+              "1852 m = 1,852 km = 6076 ft ≈ 1,15 SM"
+            ],
+            [
+              "1 SM",
+              "1609 m = 5280 ft ≈ 0,87 NM"
+            ],
+            [
+              "1 km",
+              "0,54 NM = 3281 ft"
+            ],
+            [
+              "1 m",
+              "3,28 ft"
+            ],
+            [
+              "1 ft",
+              "0,3048 m"
+            ]
+          ],
+          "src": "ICAO Anexo 5"
+        },
+        "examples": [
+          {
+            "q": "Convierte 100 km a NM.",
+            "a": "100 / 1,852 = 54 NM."
+          },
+          {
+            "q": "Convierte 15 000 ft a metros.",
+            "a": "15 000 × 0,3048 = 4572 m."
+          },
+          {
+            "q": "Una visibilidad de 5 SM. ¿Cuántas NM?",
+            "a": "5 × 1609 / 1852 = 4,3 NM."
+          },
+          {
+            "q": "Velocidad de 108 km/h en kt.",
+            "a": "108 / 1,852 = 58 kt."
+          },
+          {
+            "q": "Un viento de 33,33 m/s, ¿a cuántos km/h equivale?",
+            "a": "33,33 × 3,6 = 120 km/h (para pasar de m/s a km/h se multiplica por 3,6; el curso da esta pareja como referencia: 33,33 m/s = 120 km/h)."
+          }
+        ],
+        "ideas": [
+          "La milla náutica es «un minuto de la vuelta al mundo»: si te desplazas un minuto de arco sobre un meridiano has recorrido exactamente 1 NM. Para estimar de cabeza, 1 NM son casi 2 km (1,852), y la milla terrestre (la de las carreteras inglesas y americanas) es un poco más corta, 1,61 km frente a 1,85 km.",
+          "Los pies son para la altura, lo mismo que los centímetros se usan para tallar a una persona: en aviación casi nunca verás metros de altitud, salvo en alguna elevación, el RVR o la visibilidad."
+        ]
+      },
+      {
+        "title": "Minutos de latitud y de longitud",
+        "text": [
+          "Un **minuto de latitud** equivale siempre a **1 NM**, en cualquier lugar de la Tierra, y por tanto 1° de latitud son 60 NM. Es así porque los meridianos son círculos máximos, y la milla náutica se definió precisamente como 1′ de arco de círculo máximo.",
+          "Un **minuto de longitud**, en cambio, **solo vale 1 NM en el ecuador**. Los paralelos son círculos cada vez más pequeños hacia los polos, los meridianos se juntan y la distancia entre dos meridianos consecutivos disminuye. Un minuto de longitud mide 1 NM × cos(latitud): unas 0,77 NM a 40° N, 0,5 NM a 60° N y casi cero junto al polo."
+        ],
+        "table": {
+          "caption": "Cuánto mide 1° de longitud según la latitud",
+          "head": [
+            "Latitud",
+            "cos lat",
+            "1° de longitud (NM)",
+            "1′ de longitud (NM)"
+          ],
+          "rows": [
+            [
+              "0° (ecuador)",
+              "1",
+              "60",
+              "1"
+            ],
+            [
+              "40°",
+              "0,77",
+              "46",
+              "0,77"
+            ],
+            [
+              "60°",
+              "0,5",
+              "30",
+              "0,5"
+            ],
+            [
+              "80°",
+              "0,17",
+              "10",
+              "0,17"
+            ]
+          ],
+          "src": "Cálculo: 60 × cos(latitud)"
+        },
+        "ideas": [
+          "Piensa en una naranja pelada en gajos: en el ecuador cada gajo es ancho, junto a los polos se estrecha hasta ser casi una línea. Un «paso de un gajo» no es el mismo trayecto en todas partes.",
+          "Los escalones de una escalera (latitud) miden siempre lo mismo; las filas de un anfiteatro circular (longitud) son más cortas cuanto más cerca del centro."
+        ]
+      },
+      {
+        "title": "Tres nortes",
+        "text": [
+          "Las direcciones se miden en grados desde el norte, en sentido horario, con tres cifras (000° a 360°). Lo difícil es que hay **tres nortes** distintos. El **norte verdadero** (T) apunta al polo norte geográfico, por donde pasa el eje de rotación; es la referencia de las cartas y de los meridianos. El **norte magnético** (M) apunta al polo norte magnético, que está en el Ártico canadiense y se desplaza unos kilómetros cada año; es lo que busca una aguja imantada sin perturbaciones. El **norte de brújula** (C) es el que marca la brújula de tu avión, que además de la Tierra siente los campos magnéticos del propio avión.",
+          "El ángulo entre T y M es la **variación** (o declinación magnética). El ángulo entre M y C es el **desvío**. De ahí sale la cadena que se usa en cada tramo: **T → M → C**, cuya abreviatura mnemotécnica es TVMDC (Verdadero, Variación, Magnético, Desvío, Compás)."
+        ],
+        "ideas": [
+          "Tres personas, tres nortes: el cartógrafo señala el norte geográfico (el de las cartas, fijo); el geólogo con su brújula señala el magnético (que se mueve despacio); y tú, en la cabina, ves el de la brújula del avión, que además está «contaminada» por tu propio avión."
+        ]
+      },
+      {
+        "title": "Variación e isógonas",
+        "text": [
+          "La variación depende del lugar y cambia lentamente con el tiempo. Se dice **oeste (W)** cuando el norte magnético queda al oeste del verdadero, y **este (E)** cuando queda al este. La carta aeronáutica dibuja las **isógonas**, líneas de igual variación; la línea de variación cero se llama **agónica**. Cada carta indica además el año de publicación y el cambio anual: la variación hay que leerla en la carta vigente de la zona.",
+          "En la península ibérica la variación actual está comprendida aproximadamente entre unos 3° W y 2° E, según el lugar, y en Canarias es bastante mayor al oeste. Es un valor que varía cada año; úsalo siempre de la carta y no de memoria."
+        ],
+        "verify": true,
+        "ideas": [
+          "Las isógonas son como las curvas de nivel de un mapa de montaña, pero en vez de altura marcan cuántos grados se desvía la brújula del norte verdadero en cada sitio; la agónica es la «cota cero», donde no hay diferencia."
+        ]
+      },
+      {
+        "title": "Desvío de brújula",
+        "text": [
+          "La brújula del avión se ve afectada por motores, circuitos eléctricos, radios, herramientas y el propio fuselaje, que crean campos magnéticos locales. Esa perturbación es el **desvío** y depende del rumbo del avión. Por eso el avión lleva una **tarjeta de desvíos** junto a la brújula, hecha al «compensar» el instrumento (compensación en una zona libre de interferencias): da para cada rumbo magnético el valor de brújula que hay que gobernar.",
+          "Se llama desvío **este** cuando el norte de la brújula queda al este del magnético y **oeste** cuando queda al oeste. Conviene comprobar en tierra que la brújula coincide con la pista alineada y que el soporte de la tarjeta no ha cambiado con nuevos equipos: un transpondedor o una radio nuevos pueden cambiar el desvío."
+        ],
+        "table": {
+          "caption": "Tarjeta de desvíos de ejemplo",
+          "head": [
+            "Para volar (magnético)",
+            "Gobernar (brújula)"
+          ],
+          "rows": [
+            [
+              "000°",
+              "001°"
+            ],
+            [
+              "090°",
+              "088°"
+            ],
+            [
+              "180°",
+              "179°"
+            ],
+            [
+              "270°",
+              "272°"
+            ]
+          ],
+          "src": "Ejemplo didáctico"
+        },
+        "ideas": [
+          "Es como llevar un imán de nevera en el bolsillo mientras usas una brújula de excursionista: la aguja se tuerce según cómo te pongas. El avión lleva su propio «imán» (motor, radios, cables), y por eso se tuerce de forma distinta en cada rumbo; la tarjeta de desvíos es la tabla de cuánto."
+        ]
+      },
+      {
+        "title": "La cadena TVMDC",
+        "text": [
+          "Para pasar del verdadero a la brújula: variación W se suma y variación E se resta; desvío W se suma y desvío E se resta. Regla: **«el oeste suma y el este resta»** (en inglés, East is least, West is best) cuando vas **de verdadero a brújula**. En sentido contrario, de brújula a verdadero, se hace al revés: el oeste se resta y el este se suma. Antes de calcular, escribe siempre la cadena T V M D C y las flechas del sentido."
+        ],
+        "formulas": [
+          {
+            "f": "M = T + variación (W +, E −) ; C = M + desvío (W +, E −)",
+            "note": "De verdadero a brújula."
+          },
+          {
+            "f": "M = C − desvío (W +, E −) ; T = M − variación (W +, E −)",
+            "note": "De brújula a verdadero."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Rumbo verdadero 120°, variación 3° W. ¿Rumbo magnético?",
+            "a": "W se suma: 123°."
+          },
+          {
+            "q": "Rumbo verdadero 270°, variación 4° E.",
+            "a": "E se resta: 266°."
+          },
+          {
+            "q": "Rumbo verdadero 200°, variación 5° E, desvío 2° W. ¿Rumbo de brújula?",
+            "a": "M = 200 − 5 = 195°. C = 195 + 2 = 197°."
+          },
+          {
+            "q": "Brújula 085°, desvío 3° W, variación 2° E. ¿Rumbo verdadero?",
+            "a": "M = 085 − 3 = 082°. T = 082 + 2 = 084°."
+          }
+        ],
+        "note": {
+          "kind": "warn",
+          "text": "Si el cálculo cruza el 360° o el 000°, aplica la suma o la resta y después ajusta: 355° + 8° = 363° = 003°."
+        },
+        "ideas": [
+          "La cadena es un traductor de idiomas encadenado: del norte de las cartas (verdadero) al magnético con la variación, y del magnético al de la brújula con el desvío. Al volver de la brújula al verdadero, haces el camino inverso con los signos inversos."
+        ]
+      },
+      {
+        "title": "Rumbo verdadero, magnético y de brújula (heading)",
+        "text": [
+          "El **rumbo** (*heading*) es el ángulo, medido en sentido horario, entre un norte y el **eje longitudinal del avión**, es decir, hacia dónde apunta el morro. Según el norte que uses hay tres rumbos: el **rumbo verdadero** (*true heading*, TH) con el norte verdadero, el **rumbo magnético** (*magnetic heading*, MH) con el magnético y el **rumbo de brújula** (*compass heading*, CH), lo que marca la brújula, afectado por la variación y por el desvío.",
+          "No lo confundas con la **derrota** (*track*), que es la dirección del camino sobre el suelo y que difiere del rumbo por el viento (tema 5). Las derrotas también pueden ser verdaderas (TT) o magnéticas (MT)."
+        ],
+        "bullets": [
+          "TH → aplicas la variación → MH → aplicas el desvío → CH.",
+          "CH → quitas el desvío → MH → quitas la variación → TH.",
+          "La carta mide en verdadero; las pistas se numeran en magnético; la brújula marca en brújula."
+        ],
+        "ideas": [
+          "El rumbo es hacia dónde miras tú; la derrota, hacia dónde va realmente tu barca arrastrada por la corriente."
+        ]
+      },
+      {
+        "title": "Círculo máximo, círculo menor y loxodrómica",
+        "text": [
+          "Un **círculo máximo** (*great circle*, ortodrómica) es el que resulta de cortar la esfera con un plano que pasa por su centro, y **el arco de círculo máximo es la distancia más corta entre dos puntos**. El ecuador y cada meridiano junto con su meridiano opuesto son círculos máximos. Un **círculo menor** (*small circle*) se obtiene con un plano que no pasa por el centro: todos los paralelos salvo el ecuador lo son.",
+          "La **loxodrómica** (*rhumb line*) es la línea que corta todos los meridianos con el mismo ángulo: mantiene un rumbo constante, pero normalmente no es el camino más corto (solo lo es en los meridianos y en el ecuador). Un paralelo es una loxodrómica de rumbo 090° o 270°, pero no un círculo máximo. A lo largo de una ortodrómica el rumbo va cambiando."
+        ],
+        "table": {
+          "caption": "Las tres líneas de la esfera",
+          "head": [
+            "Línea",
+            "Cómo se define",
+            "Distancia",
+            "Rumbo"
+          ],
+          "rows": [
+            [
+              "Ortodrómica (círculo máximo)",
+              "Plano por el centro de la Tierra",
+              "La más corta",
+              "Cambia a lo largo del trayecto"
+            ],
+            [
+              "Círculo menor",
+              "Plano que no pasa por el centro",
+              "No es la más corta",
+              "Los paralelos (salvo el ecuador) lo son"
+            ],
+            [
+              "Loxodrómica (rhumb line)",
+              "Corta los meridianos con ángulo constante",
+              "Algo más larga",
+              "Constante"
+            ]
+          ],
+          "src": "Curso, tema 2"
+        },
+        "ideas": [
+          "Sobre un globo, el hilo tenso entre dos chinchetas es la ortodrómica; seguir una brújula fija es la loxodrómica. Para ir a Nueva York desde Madrid, el hilo se despega hacia el norte: el camino «más recto» del mapa plano no es el más corto."
+        ]
+      },
+      {
+        "title": "Convergencia de los meridianos (convergencia de la Tierra)",
+        "text": [
+          "Los meridianos no son paralelos: se separan en el ecuador y **convergen** hasta juntarse en los polos. La **convergencia de la Tierra** es el ángulo que forman dos meridianos entre sí a una latitud dada, y vale aproximadamente la **diferencia de longitud multiplicada por el seno de la latitud**: es cero en el ecuador (los meridianos son paralelos) y toda la diferencia de longitud en el polo.",
+          "Sirve para saber cómo cambia el rumbo de una ortodrómica. Como corta cada meridiano con un ángulo distinto, su rumbo inicial y el final difieren en la convergencia. La loxodrómica está siempre entre ambos: su rumbo coincide con el que tiene la ortodrómica **a medio camino**, y el **ángulo de conversión** (la diferencia entre el rumbo de la ortodrómica en un extremo y el de la loxodrómica) es la **mitad** de la convergencia. En el hemisferio norte la ortodrómica se curva hacia el polo respecto a la loxodrómica."
+        ],
+        "formulas": [
+          {
+            "f": "Convergencia ≈ d.long × sen(latitud media)",
+            "note": "La latitud media es la del punto medio de la ruta."
+          },
+          {
+            "f": "Ángulo de conversión = ½ × convergencia",
+            "note": "Rumbo de la loxodrómica menos rumbo inicial de la ortodrómica."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Ruta entre 50° N 000° y 50° N 020° E. Convergencia, ángulo de conversión y rumbos aproximados.",
+            "a": "Convergencia = 20° × sen 50° = 20 × 0,766 ≈ 15,3°. Ángulo de conversión ≈ 7,7°. La loxodrómica es la recta de rumbo 090°. La ortodrómica sale hacia el norte del este (090° − 7,7° ≈ 082°) y llega con rumbo ≈ 098°."
+          }
+        ],
+        "ideas": [
+          "Dos personas que parten del ecuador caminando hacia el norte cada una por su meridiano nunca se tocan al principio, pero al acercarse al polo se van cruzando los caminos. El ángulo entre sus trayectorias es la convergencia: crece según te acercas al polo."
+        ]
+      },
+      {
+        "title": "Departure (apartamiento) y el antimeridiano",
+        "text": [
+          "El **departure** (apartamiento) es la distancia en NM entre dos puntos medida a lo largo de un paralelo, y se obtiene **multiplicando la diferencia de longitud en minutos por el coseno de la latitud**. Es consecuencia de que 1′ de longitud solo vale 1 NM en el ecuador. Para hacer el camino inverso, de millas a longitud, se **divide** entre el coseno: d.long (′) = departure ÷ cos(latitud). Si la ruta no sigue un solo paralelo, se usa la latitud media.",
+          "Este es el cálculo que sale en el examen cuando preguntan en qué longitud queda un punto B situado a cierta distancia al este o al oeste de otro punto A, a la misma latitud. Siguiendo el método del curso: 1) como la latitud es la misma, te mueves sobre un paralelo; 2) convierte la distancia en d.long dividiendo entre el coseno; 3) suma si vas al este o resta si vas al oeste; 4) si te pasas de 180°, resta de 360° y cambia E por W."
+        ],
+        "formulas": [
+          {
+            "f": "Departure (NM) = d.long (′) × cos(latitud)",
+            "note": "Lo que mides sobre un paralelo."
+          },
+          {
+            "f": "d.long (′) = departure (NM) ÷ cos(latitud)",
+            "note": "Pasar de millas a minutos de longitud."
+          }
+        ],
+        "examples": [
+          {
+            "q": "Punto A: 60° N 160° E. Punto B: 60° N, a 900 NM al este de A. ¿Longitud de B?",
+            "a": "d.long = 900 ÷ cos 60° = 900 ÷ 0,5 = 1800′ = 30° (1800 ÷ 60). Hacia el este: 160° E + 30° = 190° E. Como pasa de 180°: 360° − 190° = 170°, y el nombre cambia: B está en 170° W."
+          },
+          {
+            "q": "Misma latitud, pero B está a 750 NM al oeste de A (60° N 170° W).",
+            "a": "d.long = 750 ÷ 0,5 = 1500′ = 25°. Hacia el oeste desde una longitud oeste se suma: 170° W + 25° = 195° W; 360° − 195° = 165° y el nombre cambia: 165° E."
+          },
+          {
+            "q": "Distancia sobre el paralelo de 60° N entre 175° E y 175° W.",
+            "a": "d.long = 10° (cruza el antimeridiano) = 600′. Departure = 600 × cos 60° = 300 NM."
+          },
+          {
+            "q": "Departure para 5° de diferencia de longitud a 40° N.",
+            "a": "300′ × cos 40° = 300 × 0,766 ≈ 230 NM."
+          },
+          {
+            "q": "¿Cuántos minutos de longitud hay en 120 NM a 48° N?",
+            "a": "120 ÷ cos 48° = 120 ÷ 0,669 ≈ 179′, casi 3° (2° 59′)."
+          }
+        ],
+        "figure": "svg:060-antimeridiano",
+        "caption": "900 NM al este a 60° N equivalen a 30° de longitud: de 160° E se llega a 170° O.",
+        "note": {
+          "kind": "warn",
+          "text": "El error clásico es olvidar el coseno y pasar 900 NM a 15° de longitud (900 ÷ 60). A 60° N cada grado de longitud solo son 30 NM, no 60."
+        },
+        "ideas": [
+          "Es el problema del cinturón de una naranja: la franja que hay entre dos gajos no mide lo mismo cerca del tallo que en el centro. Si recorres 900 NM «a lo ancho» cerca del tallo, abarcas muchos gajos; en el centro, pocos.",
+          "Piensa en una cinta métrica con marcas que se van apretando conforme subes: para cubrir la misma distancia necesitas más marcas (más grados) cuanto más al norte estés."
+        ]
+      },
+      {
+        "title": "Medir distancias en la carta",
+        "text": [
+          "En una carta **Lambert** la escala es prácticamente constante, así que puedes medir con una regla y la escala gráfica o con la relación 1 cm = 5 km en el 1:500.000. En una carta **Mercator** la escala **crece con la latitud**: se mide la distancia con la escala de latitudes **a la altura del tramo medido** (la escala de latitud en el margen). Nunca se usa la escala de longitudes para distancias.",
+          "Para medir un rumbo se usa un transportador o un regla-rumbo apoyados en un meridiano **a la mitad del tramo**: en una carta Lambert, los meridianos convergen y el ángulo cambia de un punto a otro de la derrota."
+        ],
+        "ideas": [
+          "Medir el rumbo en el meridiano de la mitad del tramo es como medir la inclinación de una cuesta por su punto medio: en los extremos la pendiente (el ángulo) es algo distinta porque los meridianos de una Lambert se abren o se cierran."
+        ]
+      }
+    ],
+    "numbers": [
+      "T → M → C: variación W suma y E resta, desvío W suma y E resta (de verdadero a brújula)",
+      "1 NM = 1852 m = 6076 ft ≈ 1,15 SM; 1 SM = 1609 m = 5280 ft",
+      "1 km ≈ 0,54 NM; 1 m = 3,28 ft; 1 ft = 0,3048 m; 33,33 m/s = 120 km/h",
+      "1′ de latitud = 1 NM; 1° = 60 NM; 1′ de longitud = cos lat NM",
+      "Departure = d.long (′) × cos lat; d.long (′) = departure ÷ cos lat",
+      "Convergencia ≈ d.long × sen lat; ángulo de conversión = ½ convergencia",
+      "Isógonas: igual variación; agónica: variación cero"
+    ],
+    "traps": [
+      "De brújula a verdadero hay que invertir los signos: W resta y E suma.",
+      "Variación y desvío se aplican en pasos separados y con sus propios signos.",
+      "Medir distancias en Mercator con la escala de longitudes en lugar de la de latitudes.",
+      "Confundir NM con SM al leer visibilidades de otros países.",
+      "El norte magnético se mueve: la variación de una carta antigua no vale.",
+      "Olvidar el coseno al pasar millas a longitud: a 60° N, 900 NM son 30°, no 15°.",
+      "Al cruzar el 180°, 190° E no existe: es 170° W.",
+      "El ángulo de conversión es la mitad de la convergencia, no la convergencia entera."
+    ],
+    "spain": [
+      "La variación de las cartas de ENAIRE se actualiza en cada edición: consulta siempre la isógona vigente de la zona."
+    ],
+    "sources": [
+      {
+        "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 16",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "title": "OACI, Anexo 5: unidades de medida"
+      },
+      {
+        "title": "ENAIRE, cartas VFR 1:500.000",
+        "url": "https://www.enaire.es/"
+      }
+    ],
+    "id": "060.03",
+    "reviewed": "2026-11-23",
+    "course": "Tema 2 · Distancias y direcciones",
+    "outline": [
+      {
+        "title": "Unidades",
+        "items": [
+          "NM, SM, km, m, ft y sus equivalencias",
+          "1 NM = 1,852 km; 1 SM = 1,61 km",
+          "33,33 m/s = 120 km/h"
+        ]
+      },
+      {
+        "title": "Minutos de lat y de long",
+        "items": [
+          "1′ lat = 1 NM siempre",
+          "1′ long = cos lat NM; solo 1 NM en el ecuador"
+        ]
+      },
+      {
+        "title": "Direcciones",
+        "items": [
+          "Norte verdadero, magnético y de brújula",
+          "Variación (E/W), isógonas, agónica",
+          "Desvío y tarjeta de desvíos",
+          "TH → MH → CH y de vuelta"
+        ]
+      },
+      {
+        "title": "Líneas de la esfera",
+        "items": [
+          "Círculo máximo: distancia mínima",
+          "Círculo menor: paralelos",
+          "Loxodrómica: rumbo constante"
+        ]
+      },
+      {
+        "title": "Convergencia",
+        "items": [
+          "≈ d.long × sen lat",
+          "Ángulo de conversión = ½ convergencia",
+          "En el hemisferio norte la ortodrómica va hacia el polo"
+        ]
+      },
+      {
+        "title": "Departure",
+        "items": [
+          "dep = d.long × cos lat",
+          "d.long = dep ÷ cos lat",
+          "Cruce del 180°: restar de 360° y cambiar E/W"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "De verdadero a brújula: «el oeste suma y el este resta» (West is best, East is least); de vuelta, al revés.",
+      "Tres nortes: Verdadero (mapa), Magnético (planeta), Compás (avión).",
+      "Departure: multiplicas al pasar de minutos a millas (el coseno encoge) y divides al pasar de millas a minutos.",
+      "Convergencia con seno: cero en el ecuador, máxima en el polo; el ángulo de conversión es su mitad.",
+      "Cruzar el 180°: me paso, resto de 360 y cambio E por W."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Por qué 1′ de latitud es siempre 1 NM y 1′ de longitud no?",
+        "a": "Porque los meridianos son círculos máximos y los paralelos (salvo el ecuador) se hacen más pequeños hacia los polos: 1′ de longitud mide cos lat NM."
+      },
+      {
+        "q": "Pasa 120 km/h a m/s y a kt aproximados.",
+        "a": "120 km/h = 33,33 m/s (÷ 3,6) y 120 ÷ 1,852 ≈ 65 kt."
+      },
+      {
+        "q": "¿Qué diferencia hay entre variación y desvío?",
+        "a": "La variación separa el norte verdadero del magnético y depende del lugar; el desvío separa el magnético del de la brújula y depende del rumbo del avión."
+      },
+      {
+        "q": "Rumbo verdadero 090° y variación 4° W: ¿rumbo magnético?",
+        "a": "094° (el oeste suma de verdadero a magnético)."
+      },
+      {
+        "q": "Describe una ortodrómica y una loxodrómica y di cuál es más corta.",
+        "a": "La ortodrómica es el arco de círculo máximo y es la más corta; la loxodrómica corta los meridianos con ángulo constante y es algo más larga."
+      },
+      {
+        "q": "¿Cómo calculas la longitud de un punto B situado 900 NM al este de A (60° N 160° E)?",
+        "a": "d.long = 900 ÷ cos 60° = 1800′ = 30°; 160° E + 30° = 190° E = 170° W."
+      },
+      {
+        "q": "¿Qué es la convergencia y cuál es el ángulo de conversión?",
+        "a": "Es el ángulo entre dos meridianos a una latitud (≈ d.long × sen lat); el ángulo de conversión es la mitad."
+      }
     ]
-   },
-   {
-    "title": "Variación e isógonas",
-    "text": [
-     "La variación depende del lugar y cambia lentamente con el tiempo. Se dice **oeste (W)** cuando el norte magnético queda al oeste del verdadero, y **este (E)** cuando queda al este. La carta aeronáutica dibuja las **isógonas**, líneas de igual variación; la línea de variación cero se llama **agónica**. Cada carta indica además el año de publicación y el cambio anual: la variación hay que leerla en la carta vigente de la zona.",
-     "En la península ibérica la variación actual está comprendida aproximadamente entre unos 3° W y 2° E, según el lugar, y en Canarias es bastante mayor al oeste. Es un valor que varía cada año; úsalo siempre de la carta y no de memoria."
-    ],
-    "verify": true
-   },
-   {
-    "title": "Desvío de brújula",
-    "text": [
-     "La brújula del avión se ve afectada por motores, circuitos eléctricos, radios, herramientas y el propio fuselaje, que crean campos magnéticos locales. Esa perturbación es el **desvío** y depende del rumbo del avión. Por eso el avión lleva una **tarjeta de desvíos** junto a la brújula, hecha al «compensar» el instrumento (compensación en una zona libre de interferencias): da para cada rumbo magnético el valor de brújula que hay que gobernar.",
-     "Se llama desvío **este** cuando el norte de la brújula queda al este del magnético y **oeste** cuando queda al oeste. Conviene comprobar en tierra que la brújula coincide con la pista alineada y que el soporte de la tarjeta no ha cambiado con nuevos equipos: un transpondedor o una radio nuevos pueden cambiar el desvío."
-    ],
-    "table": {
-     "caption": "Tarjeta de desvíos de ejemplo",
-     "head": [
-      "Para volar (magnético)",
-      "Gobernar (brújula)"
-     ],
-     "rows": [
-      [
-       "000°",
-       "001°"
+  },
+  "questions": [
+    {
+      "id": "060.03.001",
+      "type": "concepto",
+      "level": 1,
+      "q": "El ángulo entre el norte verdadero y el norte magnético se llama:",
+      "options": [
+        "Variación",
+        "Desvío",
+        "Deriva",
+        "Convergencia"
       ],
-      [
-       "090°",
-       "088°"
+      "correct": 0,
+      "why": "La variación (declinación magnética) depende del lugar y del año; se lee en las isógonas de la carta.",
+      "whyNot": [
+        null,
+        "El desvío es el ángulo entre el norte magnético y el de brújula.",
+        "La deriva es el ángulo entre rumbo y derrota.",
+        "La convergencia es el ángulo entre meridianos."
       ],
-      [
-       "180°",
-       "179°"
-      ],
-      [
-       "270°",
-       "272°"
-      ]
-     ],
-     "src": "Ejemplo didáctico"
-    }
-   },
-   {
-    "title": "La cadena TVMDC",
-    "text": [
-     "Para pasar del verdadero a la brújula: variación W se suma y variación E se resta; desvío W se suma y desvío E se resta. Regla: **«el oeste suma y el este resta»** (en inglés, East is least, West is best) cuando vas **de verdadero a brújula**. En sentido contrario, de brújula a verdadero, se hace al revés: el oeste se resta y el este se suma. Antes de calcular, escribe siempre la cadena T V M D C y las flechas del sentido."
-    ],
-    "formulas": [
-     {
-      "f": "M = T + variación (W +, E −) ; C = M + desvío (W +, E −)",
-      "note": "De verdadero a brújula."
-     },
-     {
-      "f": "M = C − desvío (W +, E −) ; T = M − variación (W +, E −)",
-      "note": "De brújula a verdadero."
-     }
-    ],
-    "examples": [
-     {
-      "q": "Rumbo verdadero 120°, variación 3° W. ¿Rumbo magnético?",
-      "a": "W se suma: 123°."
-     },
-     {
-      "q": "Rumbo verdadero 270°, variación 4° E.",
-      "a": "E se resta: 266°."
-     },
-     {
-      "q": "Rumbo verdadero 200°, variación 5° E, desvío 2° W. ¿Rumbo de brújula?",
-      "a": "M = 200 − 5 = 195°. C = 195 + 2 = 197°."
-     },
-     {
-      "q": "Brújula 085°, desvío 3° W, variación 2° E. ¿Rumbo verdadero?",
-      "a": "M = 085 − 3 = 082°. T = 082 + 2 = 084°."
-     }
-    ],
-    "note": {
-     "kind": "warn",
-     "text": "Si el cálculo cruza el 360° o el 000°, aplica la suma o la resta y después ajusta: 355° + 8° = 363° = 003°."
-    }
-   },
-   {
-    "title": "Unidades de distancia",
-    "text": [
-     "En el aire se miden las distancias en **millas náuticas (NM)**; la visibilidad se da en metros o km, las alturas en pies, y en algunos países (EE. UU., Reino Unido) las millas terrestres aparecen en documentos. Las equivalencias que debes saber de memoria son pocas.",
-     "La milla náutica es 1 minuto de arco de meridiano, por eso 1′ de latitud = 1 NM (véase 060.01). La milla terrestre (SM) es la inglesa de uso ordinario. La conversión entre ellas se resuelve con el computador o de cabeza: 1 NM ≈ 1,15 SM."
-    ],
-    "table": {
-     "caption": "Equivalencias de distancia",
-     "head": [
-      "Unidad",
-      "Valor"
-     ],
-     "rows": [
-      [
-       "1 NM",
-       "1852 m = 1,852 km = 6076 ft ≈ 1,15 SM"
-      ],
-      [
-       "1 SM",
-       "1609 m = 5280 ft ≈ 0,87 NM"
-      ],
-      [
-       "1 km",
-       "0,54 NM = 3281 ft"
-      ],
-      [
-       "1 m",
-       "3,28 ft"
-      ],
-      [
-       "1 ft",
-       "0,3048 m"
-      ]
-     ],
-     "src": "ICAO Anexo 5"
+      "ref": "FAA PHAK cap. 16"
     },
-    "examples": [
-     {
-      "q": "Convierte 100 km a NM.",
-      "a": "100 / 1,852 = 54 NM."
-     },
-     {
-      "q": "Convierte 15 000 ft a metros.",
-      "a": "15 000 × 0,3048 = 4572 m."
-     },
-     {
-      "q": "Una visibilidad de 5 SM. ¿Cuántas NM?",
-      "a": "5 × 1609 / 1852 = 4,3 NM."
-     },
-     {
-      "q": "Velocidad de 108 km/h en kt.",
-      "a": "108 / 1,852 = 58 kt."
-     }
-    ]
-   },
-   {
-    "title": "Medir distancias en la carta",
-    "text": [
-     "En una carta **Lambert** la escala es prácticamente constante, así que puedes medir con una regla y la escala gráfica o con la relación 1 cm = 5 km en el 1:500.000. En una carta **Mercator** la escala **crece con la latitud**: se mide la distancia con la escala de latitudes **a la altura del tramo medido** (la escala de latitud en el margen). Nunca se usa la escala de longitudes para distancias.",
-     "Para medir un rumbo se usa un transportador o un regla-rumbo apoyados en un meridiano **a la mitad del tramo**: en una carta Lambert, los meridianos convergen y el ángulo cambia de un punto a otro de la derrota."
-    ]
-   }
+    {
+      "id": "060.03.002",
+      "type": "concepto",
+      "level": 1,
+      "q": "El ángulo entre el norte magnético y el norte de la brújula del avión se llama:",
+      "options": [
+        "Variación",
+        "Marcación",
+        "Desvío",
+        "Deriva"
+      ],
+      "correct": 2,
+      "why": "El desvío lo producen los campos magnéticos del propio avión y varía con el rumbo.",
+      "whyNot": [
+        "La variación es entre el verdadero y el magnético.",
+        "La marcación relativa es respecto al eje del avión.",
+        null,
+        "La deriva es entre el rumbo y la derrota."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.03.003",
+      "type": "concepto",
+      "level": 1,
+      "q": "Las isógonas son líneas de la carta que unen puntos de igual:",
+      "options": [
+        "Desvío",
+        "Altitud",
+        "Presión",
+        "Variación magnética"
+      ],
+      "correct": 3,
+      "why": "Una isógona une puntos con la misma variación; la línea de variación cero es la agónica.",
+      "whyNot": [
+        "El desvío depende del avión, no del lugar.",
+        "Las líneas de igual altitud son las curvas de nivel.",
+        "Las líneas de igual presión son isobaras.",
+        null
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.03.004",
+      "type": "calculo",
+      "level": 1,
+      "q": "Rumbo verdadero 120° y variación 3° W. El rumbo magnético es:",
+      "options": [
+        "120°",
+        "123°",
+        "117°",
+        "303°"
+      ],
+      "correct": 1,
+      "why": "De verdadero a magnético, el oeste se suma: 120 + 3 = 123°.",
+      "whyNot": [
+        "Ignora la variación.",
+        null,
+        "Resta la variación W, que se suma al ir de verdadero a magnético.",
+        "Es el rumbo recíproco."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.03.005",
+      "type": "calculo",
+      "level": 1,
+      "q": "Rumbo verdadero 270° y variación 4° E. El rumbo magnético es:",
+      "options": [
+        "274°",
+        "086°",
+        "270°",
+        "266°"
+      ],
+      "correct": 3,
+      "why": "De verdadero a magnético, el este se resta: 270 − 4 = 266°.",
+      "whyNot": [
+        "Suma una variación E, que se resta.",
+        "Es el recíproco de 266°.",
+        "No aplica la variación.",
+        null
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.03.006",
+      "type": "calculo",
+      "level": 2,
+      "q": "Rumbo magnético 085° y variación 2° W. El rumbo verdadero es:",
+      "options": [
+        "087°",
+        "083°",
+        "085°",
+        "263°"
+      ],
+      "correct": 1,
+      "why": "De magnético a verdadero se invierte: el oeste se resta: 085 − 2 = 083°.",
+      "whyNot": [
+        "Suma la variación W en el sentido de verdadero a magnético, no al revés.",
+        null,
+        "No aplica la variación.",
+        "Es el recíproco."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.03.007",
+      "type": "calculo",
+      "level": 2,
+      "q": "Rumbo verdadero 200°, variación 5° E y desvío 2° W. El rumbo de brújula es:",
+      "options": [
+        "193°",
+        "197°",
+        "207°",
+        "203°"
+      ],
+      "correct": 1,
+      "why": "M = 200 − 5 = 195°; C = 195 + 2 = 197° (desvío W se suma).",
+      "whyNot": [
+        "Aplica el desvío con el signo contrario.",
+        null,
+        "Suma la variación E en vez de restar.",
+        "Aplica ambos signos al revés."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.03.008",
+      "type": "calculo",
+      "level": 3,
+      "q": "Brújula 085°, desvío 3° W y variación 2° E. El rumbo verdadero es:",
+      "options": [
+        "080°",
+        "090°",
+        "088°",
+        "084°"
+      ],
+      "correct": 3,
+      "why": "M = 085 − 3 = 082°; T = 082 + 2 = 084° (variación E se suma al ir hacia verdadero).",
+      "whyNot": [
+        "Resta ambas correcciones.",
+        "Suma ambas correcciones.",
+        "Aplica solo el desvío con signo equivocado y olvida la variación.",
+        null
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.03.009",
+      "type": "calculo",
+      "level": 2,
+      "q": "Rumbo verdadero 355° y variación 8° W. El rumbo magnético es:",
+      "options": [
+        "347°",
+        "363°",
+        "003°",
+        "355°"
+      ],
+      "correct": 2,
+      "why": "355 + 8 = 363°, y al pasar de 360° se resta 360: 003°.",
+      "whyNot": [
+        "Resta en vez de sumar.",
+        "No se escribe un rumbo superior a 360°.",
+        null,
+        "No aplica la variación."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.03.010",
+      "type": "regla",
+      "level": 1,
+      "q": "Una milla náutica equivale a:",
+      "options": [
+        "1500 m",
+        "1852 m",
+        "1000 m",
+        "1609 m"
+      ],
+      "correct": 1,
+      "why": "1 NM = 1852 m, la longitud de un minuto de arco de meridiano.",
+      "whyNot": [
+        "No corresponde a ninguna unidad.",
+        null,
+        "Es un kilómetro.",
+        "Es la milla terrestre."
+      ],
+      "ref": "OACI Anexo 5"
+    },
+    {
+      "id": "060.03.011",
+      "type": "regla",
+      "level": 2,
+      "q": "Una milla terrestre (SM) equivale a:",
+      "options": [
+        "1609 m (5280 ft)",
+        "3048 m",
+        "1852 m (6076 ft)",
+        "1000 m"
+      ],
+      "correct": 0,
+      "why": "La milla terrestre inglesa mide 1609 m y 5280 ft.",
+      "whyNot": [
+        null,
+        "Son 10 000 ft.",
+        "Es la milla náutica.",
+        "Es un kilómetro."
+      ],
+      "ref": "OACI Anexo 5"
+    },
+    {
+      "id": "060.03.012",
+      "type": "calculo",
+      "level": 1,
+      "q": "100 km equivalen a unas:",
+      "options": [
+        "185 NM",
+        "100 NM",
+        "54 NM",
+        "62 NM"
+      ],
+      "correct": 2,
+      "why": "100 / 1,852 = 54 NM.",
+      "whyNot": [
+        "Multiplica por 1,852 en lugar de dividir.",
+        "Confunde km y NM.",
+        null,
+        "Resulta de convertir a SM."
+      ],
+      "ref": "OACI Anexo 5"
+    },
+    {
+      "id": "060.03.013",
+      "type": "calculo",
+      "level": 1,
+      "q": "15 000 ft equivalen a:",
+      "options": [
+        "4572 m",
+        "5000 m",
+        "49 213 m",
+        "1524 m"
+      ],
+      "correct": 0,
+      "why": "15 000 × 0,3048 = 4572 m.",
+      "whyNot": [
+        null,
+        "Es una aproximación de 3 ft por m.",
+        "Multiplica los pies por 3,28.",
+        "Divide entre 10 en lugar de multiplicar por 0,3048."
+      ],
+      "ref": "OACI Anexo 5"
+    },
+    {
+      "id": "060.03.014",
+      "type": "calculo",
+      "level": 2,
+      "q": "Una visibilidad de 5 SM equivale a unas:",
+      "options": [
+        "5,8 NM",
+        "8,0 NM",
+        "2,7 NM",
+        "4,3 NM"
+      ],
+      "correct": 3,
+      "why": "5 × 1609 / 1852 = 4,3 NM.",
+      "whyNot": [
+        "Multiplica en vez de dividir (5 × 1,15).",
+        "Es 5 SM expresadas en km.",
+        "Es lo que valen 5 km en NM.",
+        null
+      ],
+      "ref": "OACI Anexo 5"
+    },
+    {
+      "id": "060.03.015",
+      "type": "calculo",
+      "level": 2,
+      "q": "Una velocidad de 108 km/h equivale a unos:",
+      "options": [
+        "200 kt",
+        "58 kt",
+        "67 kt",
+        "108 kt"
+      ],
+      "correct": 1,
+      "why": "108 / 1,852 = 58 kt.",
+      "whyNot": [
+        "Multiplica por 1,852.",
+        null,
+        "Resulta de dividir entre 1,609 (mph).",
+        "Confunde unidades."
+      ],
+      "ref": "OACI Anexo 5"
+    },
+    {
+      "id": "060.03.016",
+      "type": "lectura",
+      "level": 2,
+      "q": "Con esta tarjeta de desvíos, para volar el rumbo magnético 090° hay que gobernar en la brújula:",
+      "data": "MAGN  BRUJULA\n000   001\n090   088\n180   179\n270   272",
+      "options": [
+        "270°",
+        "090°",
+        "088°",
+        "092°"
+      ],
+      "correct": 2,
+      "why": "La tarjeta indica la lectura de brújula para cada rumbo magnético: 090° → 088°.",
+      "whyNot": [
+        "Es el rumbo recíproco.",
+        "Es el rumbo magnético sin corrección.",
+        null,
+        "Aplica el desvío con el signo opuesto."
+      ],
+      "ref": "Tarjeta de desvíos"
+    },
+    {
+      "id": "060.03.017",
+      "type": "concepto",
+      "level": 2,
+      "q": "En una carta Mercator, las distancias se miden con:",
+      "options": [
+        "Cualquier escala porque es constante",
+        "La escala de la leyenda sin más",
+        "La escala de latitudes a la altura del tramo",
+        "La escala de longitudes"
+      ],
+      "correct": 2,
+      "why": "En Mercator la escala crece con la latitud: se usa la escala de latitudes cercana al tramo (1′ de latitud = 1 NM).",
+      "whyNot": [
+        "En Mercator la escala varía con la latitud.",
+        "La leyenda no sustituye a la escala de latitud local.",
+        null,
+        "La escala de longitudes es constante y no sirve para distancias."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.03.018",
+      "type": "concepto",
+      "level": 1,
+      "q": "Los rumbos se miden en:",
+      "options": [
+        "Grados desde el norte, en sentido horario",
+        "Grados desde el sur, en sentido horario",
+        "Grados desde el este, en sentido antihorario",
+        "Cuadrantes de 90° cada uno"
+      ],
+      "correct": 0,
+      "why": "Los rumbos y derrotas van de 000° a 360° desde el norte, en sentido horario.",
+      "whyNot": [
+        null,
+        "El origen es el norte.",
+        "Es la convención matemática.",
+        "No se usan cuadrantes en navegación aérea."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.03.019",
+      "type": "concepto",
+      "level": 2,
+      "q": "Se dice que la variación es oeste cuando:",
+      "options": [
+        "El norte magnético está al oeste del verdadero",
+        "El norte de la brújula está al oeste del magnético",
+        "El norte magnético está al este del verdadero",
+        "El Sol sale por el oeste"
+      ],
+      "correct": 0,
+      "why": "La variación W significa que el norte magnético está al oeste del geográfico: hay que sumar para ir de verdadero a magnético.",
+      "whyNot": [
+        null,
+        "Es el desvío, no la variación.",
+        "Esa es variación este.",
+        "No tiene relación con el Sol."
+      ],
+      "ref": "FAA PHAK cap. 16"
+    },
+    {
+      "id": "060.03.020",
+      "type": "calculo",
+      "level": 2,
+      "q": "La distancia sobre el paralelo de 40° N correspondiente a una diferencia de longitud de 5° es aproximadamente:",
+      "options": [
+        "300 NM",
+        "383 NM",
+        "193 NM",
+        "230 NM"
+      ],
+      "correct": 3,
+      "why": "Departure = d.long × cos lat = 300′ × cos 40° = 300 × 0,766 ≈ 230 NM.",
+      "whyNot": [
+        "300 NM es la d.long en minutos sin aplicar el coseno.",
+        "383 NM sale de dividir entre el coseno en lugar de multiplicar.",
+        "193 NM sale de multiplicar por sen 40° en lugar de cos 40°.",
+        null
+      ],
+      "ref": "Curso Tema 2 (departure)"
+    },
+    {
+      "id": "060.03.021",
+      "type": "calculo",
+      "level": 3,
+      "q": "Punto A: 60° N 170° E. Punto B: 60° N, a 900 NM al este de A. La longitud de B es:",
+      "options": [
+        "160° W",
+        "175° W",
+        "160° E",
+        "140° E"
+      ],
+      "correct": 0,
+      "why": "d.long = 900 ÷ cos 60° = 1800′ = 30°. Hacia el este: 170° E + 30° = 200° E; al pasar de 180°, 360° − 200° = 160° y el nombre cambia: 160° W.",
+      "whyNot": [
+        null,
+        "175° W resulta de olvidar el coseno: 900 NM = 15° y 170° + 15° = 185° E = 175° W.",
+        "160° E olvida cambiar el nombre al cruzar el antimeridiano.",
+        "140° E sería ir 30° hacia el oeste en lugar de hacia el este."
+      ],
+      "ref": "Curso Tema 2 (departure y antimeridiano)"
+    },
+    {
+      "id": "060.03.022",
+      "type": "calculo",
+      "level": 3,
+      "q": "Punto A: 60° N 170° W. Punto B: 60° N, a 750 NM al oeste de A. La longitud de B es:",
+      "options": [
+        "145° W",
+        "165° E",
+        "165° W",
+        "177° 30′ E"
+      ],
+      "correct": 1,
+      "why": "d.long = 750 ÷ 0,5 = 1500′ = 25°. Hacia el oeste desde 170° W: 170° + 25° = 195° W; 360° − 195° = 165° y el nombre cambia: 165° E.",
+      "whyNot": [
+        "145° W sería ir 25° hacia el este (170° − 25°).",
+        null,
+        "165° W no cambia el nombre al pasar de 180° W.",
+        "177° 30′ E sale de olvidar el coseno: 750 NM = 12,5° y 170° + 12,5° = 182,5° W = 177,5° E."
+      ],
+      "ref": "Curso Tema 2 (departure y antimeridiano)"
+    },
+    {
+      "id": "060.03.023",
+      "type": "calculo",
+      "level": 2,
+      "q": "La distancia sobre el paralelo de 60° N entre los puntos 175° E y 175° W (por el camino corto) es:",
+      "options": [
+        "600 NM",
+        "10 500 NM",
+        "300 NM",
+        "150 NM"
+      ],
+      "correct": 2,
+      "why": "La d.long por el camino corto es 10° (cruza el antimeridiano) = 600′. Departure = 600 × cos 60° = 300 NM.",
+      "whyNot": [
+        "600 NM olvida el coseno.",
+        "10 500 NM usa los 350° del camino largo: 350 × 60 × 0,5.",
+        null,
+        "150 NM aplica el coseno sobre una d.long de 5°."
+      ],
+      "ref": "Curso Tema 2 (departure)"
+    },
+    {
+      "id": "060.03.024",
+      "type": "calculo",
+      "level": 2,
+      "q": "La convergencia de los meridianos entre dos puntos a 50° N de latitud media y 12° de diferencia de longitud es aproximadamente:",
+      "options": [
+        "7,7°",
+        "12°",
+        "4,6°",
+        "9,2°"
+      ],
+      "correct": 3,
+      "why": "Convergencia ≈ d.long × sen lat = 12° × sen 50° = 12 × 0,766 ≈ 9,2°.",
+      "whyNot": [
+        "7,7° sale de multiplicar por cos 50° en vez de sen 50°.",
+        "12° sería la convergencia en el polo (sen 90° = 1).",
+        "4,6° es el ángulo de conversión (la mitad), no la convergencia.",
+        null
+      ],
+      "ref": "Curso Tema 2 (convergencia de la Tierra)"
+    },
+    {
+      "id": "060.03.025",
+      "type": "calculo",
+      "level": 2,
+      "q": "Si la convergencia entre dos puntos es de 8°, el ángulo de conversión es:",
+      "options": [
+        "4°",
+        "8°",
+        "16°",
+        "2°"
+      ],
+      "correct": 0,
+      "why": "El ángulo de conversión es la mitad de la convergencia: 8° ÷ 2 = 4°.",
+      "whyNot": [
+        null,
+        "8° es la convergencia, no el ángulo de conversión.",
+        "16° sería el doble: se ha multiplicado en lugar de dividir.",
+        "2° divide dos veces."
+      ],
+      "ref": "Curso Tema 2 (convergencia y conversión)"
+    },
+    {
+      "id": "060.03.026",
+      "type": "concepto",
+      "level": 3,
+      "q": "En el hemisferio norte, volando hacia el este entre dos puntos de la misma latitud, la ortodrómica respecto a la loxodrómica:",
+      "options": [
+        "pasa más al sur, hacia el ecuador",
+        "pasa más al norte, hacia el polo",
+        "coincide exactamente con ella",
+        "pasa más al norte solo si la ruta supera 1000 NM"
+      ],
+      "correct": 1,
+      "why": "Los meridianos convergen hacia el polo, así que el arco de círculo máximo se curva hacia él: sale con un rumbo más al norte que la loxodrómica y es más corto que el paralelo.",
+      "whyNot": [
+        "Es al revés: la ortodrómica se curva hacia el polo.",
+        null,
+        "Solo coinciden en meridianos y ecuador; un paralelo no es una ortodrómica.",
+        "No existe ese umbral: ocurre siempre, aunque la diferencia sea pequeña en rutas cortas."
+      ],
+      "ref": "Curso Tema 2 (great circle y rhumb line)"
+    },
+    {
+      "id": "060.03.027",
+      "type": "regla",
+      "level": 1,
+      "q": "Un viento de 33,33 m/s equivale a:",
+      "options": [
+        "62 km/h",
+        "200 km/h",
+        "120 km/h",
+        "90 km/h"
+      ],
+      "correct": 2,
+      "why": "Para pasar de m/s a km/h se multiplica por 3,6: 33,33 × 3,6 = 120 km/h.",
+      "whyNot": [
+        "62 km/h sale de multiplicar por 1,852 (que sirve para pasar kt a km/h).",
+        "200 km/h sale de multiplicar por 6.",
+        null,
+        "90 km/h no corresponde a ese factor."
+      ],
+      "ref": "Curso Tema 2 (unidades)"
+    },
+    {
+      "id": "060.03.028",
+      "type": "calculo",
+      "level": 1,
+      "q": "La distancia sobre un mismo meridiano entre 41° 15′ N y 38° 45′ N es de:",
+      "options": [
+        "138 NM",
+        "250 NM",
+        "180 NM",
+        "150 NM"
+      ],
+      "correct": 3,
+      "why": "La diferencia de latitud es 41° 15′ − 38° 45′ = 2° 30′ = 150′, y 1′ de latitud es 1 NM: 150 NM.",
+      "whyNot": [
+        "138 NM resulta de leer 2° 30′ como 2,30°.",
+        "250 NM resulta de leer 2° 30′ como 2,5 × 100.",
+        "180 NM no corresponde a esa diferencia de latitud.",
+        null
+      ],
+      "ref": "Curso Tema 2 (minutos de latitud)"
+    }
   ],
-  "numbers": [
-   "T → M → C: variación W suma y E resta, desvío W suma y E resta (de verdadero a brújula)",
-   "1 NM = 1852 m = 6076 ft ≈ 1,15 SM",
-   "1 SM = 1609 m = 5280 ft",
-   "1 km = 0,54 NM; 1 m = 3,28 ft; 1 ft = 0,3048 m",
-   "Isógonas: igual variación; agónica: variación cero"
-  ],
-  "traps": [
-   "De brújula a verdadero hay que invertir los signos: W resta y E suma.",
-   "Variación y desvío se aplican en pasos separados y con sus propios signos.",
-   "Medir distancias en Mercator con la escala de longitudes en lugar de la de latitudes.",
-   "Confundir NM con SM al leer visibilidades de otros países.",
-   "El norte magnético se mueve: la variación de una carta antigua no vale."
-  ],
-  "spain": [
-   "La variación de las cartas de ENAIRE se actualiza en cada edición: consulta siempre la isógona vigente de la zona."
-  ],
-  "sources": [
-   {
-    "title": "FAA, Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25C), cap. 16",
-    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
-   },
-   {
-    "title": "OACI, Anexo 5: unidades de medida"
-   },
-   {
-    "title": "ENAIRE, cartas VFR 1:500.000",
-    "url": "https://www.enaire.es/"
-   }
-  ],
-  "id": "060.03",
-  "reviewed": "2026-10-09"
- },
- "questions": [
-  {
-   "id": "060.03.001",
-   "type": "concepto",
-   "level": 1,
-   "q": "El ángulo entre el norte verdadero y el norte magnético se llama:",
-   "options": [
-    "Variación",
-    "Desvío",
-    "Deriva",
-    "Convergencia"
-   ],
-   "correct": 0,
-   "why": "La variación (declinación magnética) depende del lugar y del año; se lee en las isógonas de la carta.",
-   "whyNot": [
-    null,
-    "El desvío es el ángulo entre el norte magnético y el de brújula.",
-    "La deriva es el ángulo entre rumbo y derrota.",
-    "La convergencia es el ángulo entre meridianos."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.03.002",
-   "type": "concepto",
-   "level": 1,
-   "q": "El ángulo entre el norte magnético y el norte de la brújula del avión se llama:",
-   "options": [
-    "Variación",
-    "Marcación",
-    "Desvío",
-    "Deriva"
-   ],
-   "correct": 2,
-   "why": "El desvío lo producen los campos magnéticos del propio avión y varía con el rumbo.",
-   "whyNot": [
-    "La variación es entre el verdadero y el magnético.",
-    "La marcación relativa es respecto al eje del avión.",
-    null,
-    "La deriva es entre el rumbo y la derrota."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.03.003",
-   "type": "concepto",
-   "level": 1,
-   "q": "Las isógonas son líneas de la carta que unen puntos de igual:",
-   "options": [
-    "Desvío",
-    "Altitud",
-    "Presión",
-    "Variación magnética"
-   ],
-   "correct": 3,
-   "why": "Una isógona une puntos con la misma variación; la línea de variación cero es la agónica.",
-   "whyNot": [
-    "El desvío depende del avión, no del lugar.",
-    "Las líneas de igual altitud son las curvas de nivel.",
-    "Las líneas de igual presión son isobaras.",
-    null
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.03.004",
-   "type": "calculo",
-   "level": 1,
-   "q": "Rumbo verdadero 120° y variación 3° W. El rumbo magnético es:",
-   "options": [
-    "120°",
-    "123°",
-    "117°",
-    "303°"
-   ],
-   "correct": 1,
-   "why": "De verdadero a magnético, el oeste se suma: 120 + 3 = 123°.",
-   "whyNot": [
-    "Ignora la variación.",
-    null,
-    "Resta la variación W, que se suma al ir de verdadero a magnético.",
-    "Es el rumbo recíproco."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.03.005",
-   "type": "calculo",
-   "level": 1,
-   "q": "Rumbo verdadero 270° y variación 4° E. El rumbo magnético es:",
-   "options": [
-    "274°",
-    "086°",
-    "270°",
-    "266°"
-   ],
-   "correct": 3,
-   "why": "De verdadero a magnético, el este se resta: 270 − 4 = 266°.",
-   "whyNot": [
-    "Suma una variación E, que se resta.",
-    "Es el recíproco de 266°.",
-    "No aplica la variación.",
-    null
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.03.006",
-   "type": "calculo",
-   "level": 2,
-   "q": "Rumbo magnético 085° y variación 2° W. El rumbo verdadero es:",
-   "options": [
-    "087°",
-    "083°",
-    "085°",
-    "263°"
-   ],
-   "correct": 1,
-   "why": "De magnético a verdadero se invierte: el oeste se resta: 085 − 2 = 083°.",
-   "whyNot": [
-    "Suma la variación W en el sentido de verdadero a magnético, no al revés.",
-    null,
-    "No aplica la variación.",
-    "Es el recíproco."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.03.007",
-   "type": "calculo",
-   "level": 2,
-   "q": "Rumbo verdadero 200°, variación 5° E y desvío 2° W. El rumbo de brújula es:",
-   "options": [
-    "193°",
-    "197°",
-    "207°",
-    "203°"
-   ],
-   "correct": 1,
-   "why": "M = 200 − 5 = 195°; C = 195 + 2 = 197° (desvío W se suma).",
-   "whyNot": [
-    "Aplica el desvío con el signo contrario.",
-    null,
-    "Suma la variación E en vez de restar.",
-    "Aplica ambos signos al revés."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.03.008",
-   "type": "calculo",
-   "level": 3,
-   "q": "Brújula 085°, desvío 3° W y variación 2° E. El rumbo verdadero es:",
-   "options": [
-    "080°",
-    "090°",
-    "088°",
-    "084°"
-   ],
-   "correct": 3,
-   "why": "M = 085 − 3 = 082°; T = 082 + 2 = 084° (variación E se suma al ir hacia verdadero).",
-   "whyNot": [
-    "Resta ambas correcciones.",
-    "Suma ambas correcciones.",
-    "Aplica solo el desvío con signo equivocado y olvida la variación.",
-    null
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.03.009",
-   "type": "calculo",
-   "level": 2,
-   "q": "Rumbo verdadero 355° y variación 8° W. El rumbo magnético es:",
-   "options": [
-    "347°",
-    "363°",
-    "003°",
-    "355°"
-   ],
-   "correct": 2,
-   "why": "355 + 8 = 363°, y al pasar de 360° se resta 360: 003°.",
-   "whyNot": [
-    "Resta en vez de sumar.",
-    "No se escribe un rumbo superior a 360°.",
-    null,
-    "No aplica la variación."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.03.010",
-   "type": "regla",
-   "level": 1,
-   "q": "Una milla náutica equivale a:",
-   "options": [
-    "1500 m",
-    "1852 m",
-    "1000 m",
-    "1609 m"
-   ],
-   "correct": 1,
-   "why": "1 NM = 1852 m, la longitud de un minuto de arco de meridiano.",
-   "whyNot": [
-    "No corresponde a ninguna unidad.",
-    null,
-    "Es un kilómetro.",
-    "Es la milla terrestre."
-   ],
-   "ref": "OACI Anexo 5"
-  },
-  {
-   "id": "060.03.011",
-   "type": "regla",
-   "level": 2,
-   "q": "Una milla terrestre (SM) equivale a:",
-   "options": [
-    "1609 m (5280 ft)",
-    "3048 m",
-    "1852 m (6076 ft)",
-    "1000 m"
-   ],
-   "correct": 0,
-   "why": "La milla terrestre inglesa mide 1609 m y 5280 ft.",
-   "whyNot": [
-    null,
-    "Son 10 000 ft.",
-    "Es la milla náutica.",
-    "Es un kilómetro."
-   ],
-   "ref": "OACI Anexo 5"
-  },
-  {
-   "id": "060.03.012",
-   "type": "calculo",
-   "level": 1,
-   "q": "100 km equivalen a unas:",
-   "options": [
-    "185 NM",
-    "100 NM",
-    "54 NM",
-    "62 NM"
-   ],
-   "correct": 2,
-   "why": "100 / 1,852 = 54 NM.",
-   "whyNot": [
-    "Multiplica por 1,852 en lugar de dividir.",
-    "Confunde km y NM.",
-    null,
-    "Resulta de convertir a SM."
-   ],
-   "ref": "OACI Anexo 5"
-  },
-  {
-   "id": "060.03.013",
-   "type": "calculo",
-   "level": 1,
-   "q": "15 000 ft equivalen a:",
-   "options": [
-    "4572 m",
-    "5000 m",
-    "49 213 m",
-    "1524 m"
-   ],
-   "correct": 0,
-   "why": "15 000 × 0,3048 = 4572 m.",
-   "whyNot": [
-    null,
-    "Es una aproximación de 3 ft por m.",
-    "Multiplica los pies por 3,28.",
-    "Divide entre 10 en lugar de multiplicar por 0,3048."
-   ],
-   "ref": "OACI Anexo 5"
-  },
-  {
-   "id": "060.03.014",
-   "type": "calculo",
-   "level": 2,
-   "q": "Una visibilidad de 5 SM equivale a unas:",
-   "options": [
-    "5,8 NM",
-    "8,0 NM",
-    "2,7 NM",
-    "4,3 NM"
-   ],
-   "correct": 3,
-   "why": "5 × 1609 / 1852 = 4,3 NM.",
-   "whyNot": [
-    "Multiplica en vez de dividir (5 × 1,15).",
-    "Es 5 SM expresadas en km.",
-    "Es lo que valen 5 km en NM.",
-    null
-   ],
-   "ref": "OACI Anexo 5"
-  },
-  {
-   "id": "060.03.015",
-   "type": "calculo",
-   "level": 2,
-   "q": "Una velocidad de 108 km/h equivale a unos:",
-   "options": [
-    "200 kt",
-    "58 kt",
-    "67 kt",
-    "108 kt"
-   ],
-   "correct": 1,
-   "why": "108 / 1,852 = 58 kt.",
-   "whyNot": [
-    "Multiplica por 1,852.",
-    null,
-    "Resulta de dividir entre 1,609 (mph).",
-    "Confunde unidades."
-   ],
-   "ref": "OACI Anexo 5"
-  },
-  {
-   "id": "060.03.016",
-   "type": "lectura",
-   "level": 2,
-   "q": "Con esta tarjeta de desvíos, para volar el rumbo magnético 090° hay que gobernar en la brújula:",
-   "data": "MAGN  BRUJULA\n000   001\n090   088\n180   179\n270   272",
-   "options": [
-    "270°",
-    "090°",
-    "088°",
-    "092°"
-   ],
-   "correct": 2,
-   "why": "La tarjeta indica la lectura de brújula para cada rumbo magnético: 090° → 088°.",
-   "whyNot": [
-    "Es el rumbo recíproco.",
-    "Es el rumbo magnético sin corrección.",
-    null,
-    "Aplica el desvío con el signo opuesto."
-   ],
-   "ref": "Tarjeta de desvíos"
-  },
-  {
-   "id": "060.03.017",
-   "type": "concepto",
-   "level": 2,
-   "q": "En una carta Mercator, las distancias se miden con:",
-   "options": [
-    "Cualquier escala porque es constante",
-    "La escala de la leyenda sin más",
-    "La escala de latitudes a la altura del tramo",
-    "La escala de longitudes"
-   ],
-   "correct": 2,
-   "why": "En Mercator la escala crece con la latitud: se usa la escala de latitudes cercana al tramo (1′ de latitud = 1 NM).",
-   "whyNot": [
-    "En Mercator la escala varía con la latitud.",
-    "La leyenda no sustituye a la escala de latitud local.",
-    null,
-    "La escala de longitudes es constante y no sirve para distancias."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.03.018",
-   "type": "concepto",
-   "level": 1,
-   "q": "Los rumbos se miden en:",
-   "options": [
-    "Grados desde el norte, en sentido horario",
-    "Grados desde el sur, en sentido horario",
-    "Grados desde el este, en sentido antihorario",
-    "Cuadrantes de 90° cada uno"
-   ],
-   "correct": 0,
-   "why": "Los rumbos y derrotas van de 000° a 360° desde el norte, en sentido horario.",
-   "whyNot": [
-    null,
-    "El origen es el norte.",
-    "Es la convención matemática.",
-    "No se usan cuadrantes en navegación aérea."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  },
-  {
-   "id": "060.03.019",
-   "type": "concepto",
-   "level": 2,
-   "q": "Se dice que la variación es oeste cuando:",
-   "options": [
-    "El norte magnético está al oeste del verdadero",
-    "El norte de la brújula está al oeste del magnético",
-    "El norte magnético está al este del verdadero",
-    "El Sol sale por el oeste"
-   ],
-   "correct": 0,
-   "why": "La variación W significa que el norte magnético está al oeste del geográfico: hay que sumar para ir de verdadero a magnético.",
-   "whyNot": [
-    null,
-    "Es el desvío, no la variación.",
-    "Esa es variación este.",
-    "No tiene relación con el Sol."
-   ],
-   "ref": "FAA PHAK cap. 16"
-  }
- ],
- "cards": [
-  {
-   "id": "c.060.03.01",
-   "front": "Variación y desvío",
-   "back": "Variación: norte verdadero y magnético. Desvío: magnético y de brújula"
-  },
-  {
-   "id": "c.060.03.02",
-   "front": "Signos de verdadero a brújula",
-   "back": "Oeste suma, este resta (variación y desvío)"
-  },
-  {
-   "id": "c.060.03.03",
-   "front": "De brújula a verdadero",
-   "back": "Se invierten los signos: oeste resta, este suma"
-  },
-  {
-   "id": "c.060.03.04",
-   "front": "Isógona y agónica",
-   "back": "Isógona: igual variación; agónica: variación cero"
-  },
-  {
-   "id": "c.060.03.05",
-   "front": "1 NM en metros y pies",
-   "back": "1852 m; 6076 ft"
-  },
-  {
-   "id": "c.060.03.06",
-   "front": "1 SM en metros y pies",
-   "back": "1609 m; 5280 ft"
-  },
-  {
-   "id": "c.060.03.07",
-   "front": "Conversión rápida",
-   "back": "km × 0,54 = NM; ft × 0,3048 = m"
-  },
-  {
-   "id": "c.060.03.08",
-   "front": "Mercator: medir distancias",
-   "back": "Con la escala de latitudes a la altura del tramo"
-  }
- ]
+  "cards": [
+    {
+      "id": "c.060.03.01",
+      "front": "Variación y desvío",
+      "back": "Variación: norte verdadero y magnético. Desvío: magnético y de brújula"
+    },
+    {
+      "id": "c.060.03.02",
+      "front": "Signos de verdadero a brújula",
+      "back": "Oeste suma, este resta (variación y desvío)"
+    },
+    {
+      "id": "c.060.03.03",
+      "front": "De brújula a verdadero",
+      "back": "Se invierten los signos: oeste resta, este suma"
+    },
+    {
+      "id": "c.060.03.04",
+      "front": "Isógona y agónica",
+      "back": "Isógona: igual variación; agónica: variación cero"
+    },
+    {
+      "id": "c.060.03.05",
+      "front": "1 NM en metros y pies",
+      "back": "1852 m; 6076 ft"
+    },
+    {
+      "id": "c.060.03.06",
+      "front": "1 SM en metros y pies",
+      "back": "1609 m; 5280 ft"
+    },
+    {
+      "id": "c.060.03.07",
+      "front": "Conversión rápida",
+      "back": "km × 0,54 = NM; ft × 0,3048 = m"
+    },
+    {
+      "id": "c.060.03.08",
+      "front": "Mercator: medir distancias",
+      "back": "Con la escala de latitudes a la altura del tramo"
+    },
+    {
+      "id": "c.060.03.09",
+      "front": "Departure",
+      "back": "Distancia sobre un paralelo: d.long (′) × cos lat. Al revés: d.long = departure ÷ cos lat."
+    },
+    {
+      "id": "c.060.03.10",
+      "front": "Convergencia y ángulo de conversión",
+      "back": "Convergencia ≈ d.long × sen lat; el ángulo de conversión es su mitad."
+    },
+    {
+      "id": "c.060.03.11",
+      "front": "Longitud de B a 900 NM al este de 160° E a 60° N",
+      "back": "900 ÷ cos 60° = 1800′ = 30°; 160° E + 30° = 190° E = 170° W."
+    }
+  ]
 }

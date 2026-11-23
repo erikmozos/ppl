@@ -1,30 +1,117 @@
 {
   "lesson": {
     "id": "090.05",
-    "title": "Distintivos de llamada",
-    "summary": "Distintivos de estaciones y de aeronaves, forma completa y abreviada (primer carácter y al menos los dos últimos, solo después de que lo use el ATS), distintivos parecidos y el prefijo STUDENT en España.",
+    "title": "Distintivos de estaciones y aeronaves",
+    "summary": "Distintivos de las estaciones (lugar más sufijo), tipos de distintivo de aeronave, forma completa y abreviada, regla de que solo se abrevia tras el ATS, distintivos parecidos, prefijo STUDENT y comprobación de radio.",
     "objectives": [
-      "Componer el distintivo de una estación y el de una aeronave de aviación general",
-      "Abreviar un distintivo de aeronave con la regla del primer carácter y los dos últimos, y saber cuándo se puede",
-      "Actuar cuando hay distintivos parecidos en la frecuencia",
-      "Usar el prefijo STUDENT cuando corresponde"
+      "Formar el distintivo de cualquier estación ATS con su sufijo",
+      "Distinguir los tres tipos de distintivo de aeronave",
+      "Abreviar un distintivo solo cuando el ATS lo ha hecho y de la forma correcta",
+      "Resolver la confusión entre distintivos parecidos",
+      "Hacer la primera llamada y una comprobación de radio"
     ],
     "sections": [
       {
         "title": "El distintivo de las estaciones",
         "text": [
-          "Cada dependencia ATS tiene un distintivo formado por el **nombre del lugar** y un **sufijo** que dice el servicio: Villanueva **Torre**, Villanueva **Rodadura**, Villanueva **Aproximación**, Madrid **Control**, Madrid **Información**. Cuando ya has establecido comunicación con la estación y no hay riesgo de confusión, puede abreviarse a su servicio («Torre»).",
-          "El nombre del lugar se pronuncia como lo hacen en la frecuencia, no deletreado."
+          "Cada dependencia ATS tiene un distintivo formado por el **nombre del lugar** y un **sufijo** que dice el servicio: Villanueva **Torre**, Madrid **Aproximación**, Sevilla **Control**. En la **primera comunicación** debes incluir siempre el **nombre del lugar**; una vez establecido el contacto y si no hay riesgo de confusión, puede omitirse el nombre del lugar o el sufijo del servicio.",
+          "Una **estación aeronáutica** es una estación de radio del servicio móvil aeronáutico situada en tierra, que da el enlace aire-tierra para proteger la seguridad de las aeronaves y asegurar la regularidad y eficacia del vuelo. El nombre del lugar se pronuncia como lo hacen en la frecuencia, no deletreado."
+        ],
+        "table": {
+          "head": [
+            "Unidad o servicio",
+            "Sufijo (español)",
+            "Sufijo (inglés)",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Centro de control de área",
+              "CONTROL",
+              "CONTROL",
+              "Sevilla Control"
+            ],
+            [
+              "Control de aproximación",
+              "APROXIMACIÓN",
+              "APPROACH",
+              "Madrid Aproximación"
+            ],
+            [
+              "Control de aeródromo",
+              "TORRE",
+              "TOWER",
+              "Sabadell Torre"
+            ],
+            [
+              "Control de movimientos en superficie",
+              "SUPERFICIE o RODADURA",
+              "GROUND",
+              "Sabadell Rodadura"
+            ],
+            [
+              "Radar",
+              "RADAR",
+              "RADAR",
+              "Madrid Radar"
+            ],
+            [
+              "Servicio de información de vuelo",
+              "INFORMACIÓN",
+              "INFORMATION",
+              "Stansted Información"
+            ]
+          ],
+          "caption": "Distintivos de estación",
+          "src": "Doc 9432; SERA.14; AIP GEN 1.7"
+        },
+        "ideas": [
+          "Es como las direcciones postales: la ciudad (el lugar) y el departamento (el sufijo). En la primera carta pones la dirección completa; si ya habéis hablado, basta con «secretaría»."
         ]
       },
       {
-        "title": "El distintivo de las aeronaves",
+        "title": "Los tres tipos de distintivo de aeronave",
         "text": [
-          "Para un avión de aviación general se usa la **matrícula**, deletreada con el alfabeto fonético: EC-ABC es «Eco Charlie Alfa Bravo Charlie». En la primera llamada puedes anteponer el **tipo o el fabricante**: «Cessna EC-ABC» o «Cessna uno siete dos EC-ABC». Esa forma completa se mantiene hasta que el ATS use la abreviada.",
-          "El **distintivo abreviado** conserva el **primer carácter** y **al menos los dos últimos**: EC-ABC pasa a ser «**E-BC**» (Eco Bravo Charlie), y con el tipo, «Cessna BC». Es importante: **solo puedes abreviar tu distintivo después de que lo haya hecho el ATS** con tu aeronave. Si lo abrevias antes, puedes crear confusión con otros aviones."
+          "Una aeronave se identifica en radio por su **distintivo de llamada** (*call sign*). Existen tres formas. El **tipo a** son los **caracteres de la matrícula** (EC-ABC), opcionalmente precedidos del **tipo de aeronave** o del fabricante («Cessna EC-ABC»). El **tipo b** es el **designador telefónico** del operador seguido de los **cuatro últimos caracteres** de la matrícula. El **tipo c** es el designador telefónico del operador seguido de la **identificación del vuelo** (es el de las aerolíneas). Un piloto de aviación general usa el tipo a, deletreado con el alfabeto fonético: EC-ABC es «Eco Charlie Alfa Bravo Charlie».",
+          "Al **establecer comunicación** usas siempre el distintivo **completo**. Esa forma se mantiene hasta que el ATS use la abreviada."
         ],
         "table": {
-          "caption": "Formas del distintivo de EC-ABC",
+          "head": [
+            "Tipo",
+            "Composición",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "a",
+              "Matrícula (con tipo o fabricante, opcional)",
+              "EC-ABC; Cessna EC-ABC"
+            ],
+            [
+              "b",
+              "Designador telefónico del operador + últimos cuatro caracteres de la matrícula",
+              "Aerolínea + los cuatro últimos"
+            ],
+            [
+              "c",
+              "Designador telefónico del operador + identificación del vuelo",
+              "Iberia 3456"
+            ]
+          ],
+          "caption": "Tipos de distintivo de aeronave",
+          "src": "Anexo 10, vol. II; SERA.14"
+        },
+        "ideas": [
+          "Piensa en tu nombre completo, con apellidos, para la primera presentación, y en tu apodo cuando ya te conocen. Con el distintivo, el apodo (la forma abreviada) solo lo puedes usar cuando el controlador lo use contigo primero."
+        ]
+      },
+      {
+        "title": "El distintivo abreviado",
+        "text": [
+          "Cuando la comunicación ya está bien establecida y no hay riesgo de confusión con otros distintivos, el distintivo puede **abreviarse**. Para el tipo a, la forma abreviada conserva el **primer carácter** de la matrícula y **al menos los dos últimos**: EC-ABC pasa a ser «**E-BC**» (Eco Bravo Charlie), EC-EQB pasa a «E-QB», y con el tipo, «Cessna BC». El curso lo presenta como «el primer carácter y los dos o tres últimos».",
+          "La regla más preguntada es esta: **nunca abrevies tu distintivo salvo que la estación de tierra lo haya abreviado antes**. Si lo abrevias por tu cuenta puedes confundirte con otro avión de la misma frecuencia. Una vez que has usado el distintivo abreviado, **no cambies de tipo de distintivo** durante el vuelo, salvo que el ATC te lo ordene temporalmente por motivos de seguridad."
+        ],
+        "table": {
           "head": [
             "Situación",
             "Se dice"
@@ -43,21 +130,55 @@
               "«STUDENT Eco Charlie Alfa Bravo Charlie»"
             ]
           ],
+          "caption": "Formas del distintivo de EC-ABC",
           "src": "Anexo 10, vol. II; AIP GEN 1.7"
         },
         "note": {
           "kind": "warn",
           "text": "No cambies de tipo de distintivo en vuelo, salvo que ATC te lo indique por razones de seguridad. El cambio es temporal y se revierte cuando el ATC lo indique."
-        }
+        },
+        "ideas": [
+          "Es como en el trabajo: no te autoproclamas «Pepe» si en la oficina todos te llaman «Josep». Esperas a que otros usen el diminutivo contigo."
+        ]
       },
       {
         "title": "Distintivos parecidos",
         "text": [
           "Cuando en una misma frecuencia hay **distintivos parecidos** (por ejemplo, EC-ABC y EC-ABD), el riesgo de que un piloto cumpla la instrucción del otro es real. Para evitarlo se repite el distintivo **al principio y al final del mensaje**, y el controlador puede indicarte que uses el distintivo completo o que lo cambies temporalmente. Si oyes un distintivo parecido al tuyo, **escucha con más atención** antes de contestar."
+        ],
+        "ideas": [
+          "Dos compañeros de clase con nombres casi iguales, Marta y Martina: el profesor suele añadir el apellido para no equivocarse. El distintivo repetido al principio y al final cumple esa función."
+        ]
+      },
+      {
+        "title": "Prefijo STUDENT",
+        "text": [
+          "Los **alumnos piloto que vuelan solos** añaden el prefijo **STUDENT** a su distintivo en la primera llamada a una estación: «STUDENT Eco Charlie Alfa Bravo Charlie». Es una diferencia española (AIP GEN 1.7) que avisa a ATC de que el piloto es un alumno, para que hable más despacio y dé instrucciones más sencillas. Una vez establecido el contacto, se sigue con el distintivo habitual."
+        ],
+        "ideas": [
+          "Es como la L de conductor novel en el coche: no cambia las normas, pero los demás saben que deben darte más margen."
+        ]
+      },
+      {
+        "title": "Comprobación de radio",
+        "text": [
+          "La **comprobación de radio** (*radio check*) es una transmisión de prueba para saber si tu radio funciona y cómo se te oye. Llamas a la estación, dices tu distintivo, pides «comprobación de radio» y la frecuencia; la estación contesta con la **escala de legibilidad de 1 a 5**."
+        ],
+        "examples": [
+          {
+            "q": "Haces una comprobación de radio con Villanueva Torre en 118,1 antes de rodar. ¿Cómo la pides?",
+            "a": "«Villanueva Torre, Eco Charlie Alfa Bravo Charlie, comprobación de radio, uno uno ocho decimal uno.» La contestación típica: «Eco Charlie Alfa Bravo Charlie, Villanueva Torre, le recibo cinco»."
+          }
+        ],
+        "ideas": [
+          "Es probar el micro antes de empezar la clase online: «¿me oís?». La escala de 1 a 5 es la respuesta de los de la otra punta."
         ]
       },
       {
         "title": "Ejemplos de uso en una llamada",
+        "text": [
+          "Unos casos prácticos para fijar el orden de la llamada: primero la estación, después tú."
+        ],
         "examples": [
           {
             "q": "Primera llamada de EC-ABC a Villanueva Torre, en español OACI.",
@@ -75,17 +196,17 @@
       },
       {
         "title": "Errores típicos con los distintivos",
+        "text": [
+          "Estos errores son los que más se cometen y los que se preguntan en examen."
+        ],
         "bullets": [
           "Abreviar el distintivo en la primera llamada «para ir más rápido»: aumenta la confusión y no está permitido.",
           "Decir solo el tipo de avión («Cessna») sin matrícula: el controlador no sabe a quién se dirige la respuesta.",
           "No terminar la colación con el distintivo: el controlador no sabe quién ha colacionado.",
           "Contestar a una instrucción dirigida a otro avión de distintivo parecido. Antes de cumplir, comprueba que el distintivo es el tuyo."
-        ]
-      },
-      {
-        "title": "Prefijo STUDENT",
-        "text": [
-          "Los **alumnos piloto que vuelan solos** añaden el prefijo **STUDENT** a su distintivo en la primera llamada a una estación: «STUDENT Eco Charlie Alfa Bravo Charlie». Es una diferencia española (AIP GEN 1.7) que avisa a ATC de que el piloto es un alumno, para que hable más despacio y dé instrucciones más sencillas. Una vez establecido el contacto, se sigue con el distintivo habitual."
+        ],
+        "ideas": [
+          "Contestar a una instrucción de otro avión de nombre parecido es como coger la maleta de otro pasajero porque se parece a la tuya: compruebas la etiqueta antes de irte."
         ]
       }
     ],
@@ -93,20 +214,23 @@
       "Distintivo abreviado: primer carácter y al menos los dos últimos (EC-ABC → E-BC)",
       "Solo se abrevia después de que el ATS lo haga",
       "Distintivos parecidos: se repite el distintivo al principio y al final del mensaje",
-      "Alumno solo en España: prefijo STUDENT en la primera llamada"
+      "Alumno solo en España: prefijo STUDENT en la primera llamada",
+      "Comprobación de radio: se responde con legibilidad de 1 a 5"
     ],
     "traps": [
       "No cambies el orden de la llamada: primero la estación llamada y después tú.",
       "El piloto no puede abreviar su distintivo por iniciativa propia.",
       "El distintivo abreviado de EC-ABC es E-BC, no EC-BC ni ABC.",
-      "STUDENT es un prefijo español; no sustituye al distintivo completo."
+      "STUDENT es un prefijo español; no sustituye al distintivo completo.",
+      "Una vez abreviado, no se vuelve al completo salvo que el ATC lo indique."
     ],
     "spain": [
-      "AIP GEN 1.7: prefijo STUDENT para alumnos solos y repetición del distintivo cuando son parecidos."
+      "AIP GEN 1.7: prefijo STUDENT para alumnos solos y repetición del distintivo cuando son parecidos.",
+      "En España la torre de superficie se llama normalmente «Rodadura»."
     ],
     "sources": [
       {
-        "title": "SERA, sección 14 (EASA)",
+        "title": "SERA, sección 14: fraseología (Easy Access Rules, EASA)",
         "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera"
       },
       {
@@ -124,7 +248,79 @@
         "href": "#/licencias/fraseologia?tab=radio"
       }
     ],
-    "reviewed": "2026-10-09"
+    "reviewed": "2026-11-23",
+    "course": "Tema 4 · Distintivos y colaciones",
+    "outline": [
+      {
+        "title": "Estaciones",
+        "items": [
+          "Lugar más sufijo",
+          "Primera llamada con lugar; después puede omitirse"
+        ]
+      },
+      {
+        "title": "Aeronaves",
+        "items": [
+          "Tipo a: matrícula (con tipo opcional)",
+          "Tipo b: operador más últimos cuatro caracteres",
+          "Tipo c: operador más identificación del vuelo"
+        ]
+      },
+      {
+        "title": "Abreviado",
+        "items": [
+          "Primer carácter y al menos los dos últimos: EC-ABC es E-BC",
+          "Solo tras abreviar el ATS",
+          "No cambiar de tipo en vuelo salvo orden del ATC"
+        ]
+      },
+      {
+        "title": "Casos especiales",
+        "items": [
+          "Parecidos: repetir al principio y al final",
+          "STUDENT en la primera llamada (España)"
+        ]
+      },
+      {
+        "title": "Comprobación de radio",
+        "items": [
+          "Estación, distintivo, comprobación de radio, frecuencia",
+          "Respuesta con legibilidad de 1 a 5"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "Abreviado = primero y últimos dos: E + BC.",
+      "Regla de oro: no te pongas el apodo; espera a que el controlador lo use contigo primero.",
+      "Tres tipos: a (matrícula), b (operador + 4 últimos), c (operador + vuelo).",
+      "Distintivos gemelos: «principio y final» del mensaje."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Cuál es el distintivo abreviado de EC-ABC y cuándo puedes usarlo?",
+        "a": "E-BC. Solo después de que la estación de tierra lo haya usado primero."
+      },
+      {
+        "q": "¿Qué hay que decir en la primera llamada a una estación?",
+        "a": "Su nombre de lugar y sufijo y tu distintivo completo, deletreado."
+      },
+      {
+        "q": "Explica los tres tipos de distintivo de aeronave.",
+        "a": "Tipo a: matrícula, opcionalmente con el tipo; tipo b: designador telefónico del operador y los cuatro últimos de la matrícula; tipo c: designador telefónico y número de vuelo."
+      },
+      {
+        "q": "¿Qué haces si en la frecuencia hay distintivos parecidos?",
+        "a": "Repites el distintivo al principio y al final del mensaje y escuchas con más atención antes de contestar."
+      },
+      {
+        "q": "¿Puedes cambiar de tipo de distintivo en vuelo?",
+        "a": "No, salvo que el ATC lo indique temporalmente por motivos de seguridad."
+      },
+      {
+        "q": "¿Para qué sirve el prefijo STUDENT?",
+        "a": "Avisa al ATC de que quien llama es un alumno que vuela solo; se usa en la primera llamada en España."
+      }
+    ]
   },
   "questions": [
     {
@@ -323,22 +519,190 @@
       "id": "090.05.010",
       "type": "concepto",
       "level": 2,
-      "q": "El controlador te llama por tu distintivo abreviado (E-BC) y tú contestas con el distintivo completo. ¿Es correcto?",
+      "q": "El controlador te llama con tu distintivo abreviado (E-BC). ¿Cómo contestas?",
       "options": [
-        "Sí, pero lo habitual es contestar con la forma abreviada",
-        "No, está prohibido",
-        "Sí, y además es obligatorio",
-        "No, hay que cambiar de frecuencia"
+        "Con el distintivo abreviado, que ya está autorizado",
+        "Con el distintivo completo, porque la abreviatura no es válida",
+        "Con solo el tipo de avión",
+        "Sin distintivo"
       ],
       "correct": 0,
-      "why": "Puedes usar la forma completa; lo habitual es contestar con la forma que usa el ATS.",
+      "why": "Cuando el ATS usa tu distintivo abreviado, ya puedes usarlo tú también, mientras no haya riesgo de confusión.",
       "whyNot": [
         null,
-        "No lo está.",
-        "No es obligatorio.",
-        "No tiene relación."
+        "Sí es válida: el ATS la ha utilizado primero.",
+        "Sin matrícula, el controlador no sabe quién responde.",
+        "El distintivo siempre se dice en la respuesta."
       ],
       "ref": "Anexo 10, vol. II"
+    },
+    {
+      "id": "090.05.011",
+      "type": "regla",
+      "level": 1,
+      "q": "¿Qué hay que incluir en la primera comunicación con una dependencia ATS?",
+      "options": [
+        "Solo el sufijo del servicio",
+        "El tipo de aeronave y la hora",
+        "El código de transpondedor",
+        "El nombre del lugar"
+      ],
+      "correct": 3,
+      "why": "La primera comunicación debe incluir el nombre del lugar. Después puede omitirse el lugar o el sufijo si no hay confusión.",
+      "whyNot": [
+        "Sin lugar no se identifica la dependencia.",
+        "No son requisitos de la primera llamada.",
+        "No es un dato de la llamada inicial.",
+        null
+      ],
+      "ref": "Apuntes del curso; SERA.14"
+    },
+    {
+      "id": "090.05.012",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Cómo se llama el servicio de control de movimientos en superficie en la fraseología en español?",
+      "options": [
+        "Autorizaciones o Delivery",
+        "Rodadura o Superficie",
+        "Aproximación",
+        "Información"
+      ],
+      "correct": 1,
+      "why": "El sufijo en español es Rodadura (o Superficie), «Ground» en inglés.",
+      "whyNot": [
+        "Delivery transmite autorizaciones, no controla el rodaje.",
+        null,
+        "Aproximación es control de llegadas y salidas.",
+        "Información da servicio de información de vuelo."
+      ],
+      "ref": "Doc 9432; AIP GEN 1.7"
+    },
+    {
+      "id": "090.05.013",
+      "type": "concepto",
+      "level": 2,
+      "q": "¿Qué compone un distintivo de aeronave de tipo b?",
+      "options": [
+        "Solo los caracteres de la matrícula",
+        "Designador telefónico del operador y los cuatro últimos caracteres de la matrícula",
+        "Designador telefónico y número de vuelo",
+        "Tipo de aeronave y matrícula"
+      ],
+      "correct": 1,
+      "why": "Tipo b: designador telefónico del operador más los últimos cuatro caracteres de la matrícula.",
+      "whyNot": [
+        "Eso es el tipo a.",
+        null,
+        "Eso es el tipo c.",
+        "Eso es el tipo a con el tipo de aeronave opcional."
+      ],
+      "ref": "Anexo 10 vol. II"
+    },
+    {
+      "id": "090.05.014",
+      "type": "concepto",
+      "level": 2,
+      "q": "Un piloto de aviación general con matrícula EC-EQB y que no es alumno hace su primera llamada. ¿Qué distintivo usa?",
+      "options": [
+        "Eco Quebec Bravo",
+        "Quebec Bravo",
+        "STUDENT Eco Quebec Bravo",
+        "Eco Charlie Eco Quebec Bravo"
+      ],
+      "correct": 3,
+      "why": "La primera llamada lleva el distintivo completo de la matrícula, deletreado.",
+      "whyNot": [
+        "Es la forma abreviada, que solo se usa tras el ATS.",
+        "Es una abreviatura incompleta.",
+        "El prefijo es solo para alumnos que vuelan solos.",
+        null
+      ],
+      "ref": "Anexo 10 vol. II; AIP GEN 1.7"
+    },
+    {
+      "id": "090.05.015",
+      "type": "regla",
+      "level": 2,
+      "q": "¿Qué distintivo abreviado corresponde a la matrícula EC-EQB?",
+      "options": [
+        "EC-QB",
+        "EQB",
+        "E-QB",
+        "E-EC"
+      ],
+      "correct": 2,
+      "why": "Primer carácter más los dos últimos: E y QB.",
+      "whyNot": [
+        "No conserva el primer carácter.",
+        "Sin separación no es la forma abreviada, que conserva E.",
+        null,
+        "No contiene los dos últimos caracteres."
+      ],
+      "ref": "Anexo 10 vol. II"
+    },
+    {
+      "id": "090.05.016",
+      "type": "concepto",
+      "level": 2,
+      "q": "Para pedir una comprobación de radio, ¿qué contestará la estación?",
+      "options": [
+        "La legibilidad en la escala de 1 a 5",
+        "La hora UTC",
+        "El QNH",
+        "El código de transpondedor"
+      ],
+      "correct": 0,
+      "why": "La contestación a una comprobación de radio es la legibilidad de tu transmisión, de 1 a 5.",
+      "whyNot": [
+        null,
+        "No tiene relación con la hora.",
+        "El QNH no se facilita en esta respuesta.",
+        "El código se asigna en otras circunstancias."
+      ],
+      "ref": "Anexo 10 vol. II; apuntes del curso"
+    },
+    {
+      "id": "090.05.017",
+      "type": "concepto",
+      "level": 3,
+      "q": "Mientras vuelas con distintivo abreviado, ¿qué puede hacer cambiar temporalmente el tipo de distintivo?",
+      "options": [
+        "La decisión del piloto cuando quiera",
+        "Una instrucción del ATC por motivos de seguridad",
+        "El cambio de frecuencia",
+        "La entrada en una CTR"
+      ],
+      "correct": 1,
+      "why": "Solo una orden del ATC por seguridad justifica un cambio temporal del tipo de distintivo.",
+      "whyNot": [
+        "No puede hacerlo por cuenta propia.",
+        null,
+        "Cambiar de frecuencia no cambia el distintivo.",
+        "Entrar en una CTR no afecta al distintivo."
+      ],
+      "ref": "Apuntes del curso; SERA.14"
+    },
+    {
+      "id": "090.05.018",
+      "type": "concepto",
+      "level": 2,
+      "q": "Oyes en la frecuencia un distintivo muy parecido al tuyo. ¿Qué debes hacer?",
+      "options": [
+        "Escuchar con más atención antes de cumplir o contestar",
+        "Contestar siempre para evitar silencios",
+        "Cambiar de frecuencia",
+        "Dejar de usar tu distintivo"
+      ],
+      "correct": 0,
+      "why": "Hay que comprobar que la instrucción es para ti antes de cumplirla.",
+      "whyNot": [
+        null,
+        "Contestar a lo ajeno es el error que se quiere evitar.",
+        "No hace falta cambiar de frecuencia.",
+        "El distintivo no se abandona."
+      ],
+      "ref": "SERA.14; AIP GEN 1.7"
     }
   ],
   "cards": [
@@ -366,6 +730,21 @@
       "id": "c.090.05.05",
       "front": "Cambio de distintivo en vuelo",
       "back": "Solo por instrucción de ATC, de forma temporal"
+    },
+    {
+      "id": "c.090.05.06",
+      "front": "Primera llamada",
+      "back": "Nombre del lugar y servicio, y distintivo completo"
+    },
+    {
+      "id": "c.090.05.07",
+      "front": "Tipos de distintivo",
+      "back": "a: matrícula; b: operador + últimos 4; c: operador + número de vuelo"
+    },
+    {
+      "id": "c.090.05.08",
+      "front": "Comprobación de radio",
+      "back": "Estación, distintivo, «comprobación de radio» y frecuencia; respuesta con legibilidad 1 a 5"
     }
   ]
 }

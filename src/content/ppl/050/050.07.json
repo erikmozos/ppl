@@ -1,21 +1,58 @@
 {
  "lesson": {
+  "id": "050.07",
   "title": "Ondas de montaña y turbulencia",
-  "summary": "Cómo se forman las ondas de montaña, los lenticulares y los rotores; los tipos de turbulencia (convectiva, mecánica, orográfica, frontal, en aire claro y de estela), las intensidades y cómo evitarla.",
+  "course": "Tema 7 · Peligros: engelamiento, turbulencia y niebla",
+  "summary": "Dónde hay turbulencia (capa de fricción, nubes y aire claro), turbulencia térmica y mecánica, ondas de montaña, rotores y cómo evitarlos, chorros, cumulonimbos, aire claro, estela turbulenta e intensidades.",
   "objectives": [
-   "Enumerar las condiciones para que se formen ondas de montaña y reconocer sus señales (lenticulares, rotores, nube de cima)",
-   "Explicar dónde está el peligro: rotor, descendentes y error del altímetro",
-   "Clasificar la turbulencia por su causa y reconocer cuándo aparece cada tipo",
-   "Distinguir las intensidades ligera, moderada, severa y extrema por sus efectos en el avión",
+   "Situar la turbulencia: capa de fricción, interior de las nubes y aire claro",
+   "Explicar de qué depende el espesor de la capa de fricción y cómo cambia entre el día y la noche, y el papel de la inversión nocturna",
+   "Enumerar las condiciones de las ondas de montaña, reconocer lenticulares, rotor y nube de cima, y aplicar las reglas para evitarlas",
+   "Clasificar la turbulencia por su causa (térmica, mecánica, orográfica, frontal, de aire claro, de estela) y por su intensidad",
    "Aplicar las precauciones de la estela turbulenta al despegar y aterrizar"
   ],
   "sections": [
    {
-    "title": "Ondas de montaña",
+    "title": "Dónde hay turbulencia",
     "text": [
-     "Cuando el viento sopla contra una cordillera y el aire por encima es estable, el aire que ha sido empujado hacia arriba **no se limita a pasar**: vuelve a bajar por sotavento, rebasa su nivel de equilibrio y vuelve a subir, como un muelle. El resultado es una **onda estacionaria** sobre la que el avión puede encontrar ascendentes y descendentes de gran intensidad, que pueden alcanzar la tropopausa y extenderse decenas de kilómetros a sotavento.",
-     "Las ondas no necesitan que el cielo esté nublado: cuando el aire es seco, la onda es invisible y solo la delata el avión. Por eso hay que conocer las condiciones que la favorecen."
+     "La turbulencia aparece en tres lugares: en la capa de fricción, dentro de las nubes y en aire claro. La primera es la capa más baja de la atmósfera y es donde ocurren casi todos los despegues y aterrizajes. La segunda es la de los Cu y Cb, y la tercera es la más traicionera, porque no se ve."
     ],
+    "ideas": [
+     "Es como la carretera: hay baches junto al suelo (fricción), atascos dentro de la ciudad (nubes) y viento lateral en un puente despejado (aire claro), que nadie te avisa."
+    ]
+   },
+   {
+    "title": "La capa de fricción",
+    "text": [
+     "La capa de fricción es la parte baja de la atmósfera, desde la superficie hasta unos 2000 a 3000 ft sobre ella, donde el suelo influye en el aire. Su espesor depende de tres cosas: la **rugosidad del terreno** (cuanto más rugoso, mayor es la desviación vertical y más alto llega), la **velocidad del viento** (más viento, más desviación) y la **estabilidad** de la capa (una capa estable se resiste al movimiento vertical y limita la profundidad). Dentro hay dos fuentes de turbulencia: la **convección** (térmicas) y la **turbulencia mecánica** por fricción.",
+     "De día, las térmicas reducen la estabilidad en niveles bajos y ensanchan la capa. De noche solo hay turbulencia mecánica, la estabilidad aumenta por el enfriamiento del suelo y la capa se adelgaza. Con cielo despejado el enfriamiento puede crear una **inversión** en niveles bajos: se inhibe la mezcla vertical y el efecto de la fricción se hace mayor. Por debajo de la inversión el viento es flojo y de dirección muy distinta a la del viento mucho más fuerte de encima, de modo que se produce **cizalladura** en la inversión. Un avión que sube o baja a través de ella nota un cambio rápido de velocidad y dirección, y puede encontrar turbulencia moderada a severa."
+    ],
+    "figure": "svg:050-capa-friccion",
+    "caption": "La capa de fricción de día (térmicas, 2000–3000 ft) y de noche (inversión y cizalladura)",
+    "ideas": [
+     "De día la capa de fricción es una olla hirviendo: mucho movimiento hasta arriba. De noche es una olla tapada con una lámina: arriba corre el aire, abajo apenas se mueve, y el roce entre ambos hace remolinos justo en la tapa.",
+     "Un río con piedras (terreno rugoso) forma remolinos más altos que un río liso: lo mismo con el viento."
+    ]
+   },
+   {
+    "title": "Turbulencia térmica y mecánica",
+    "text": [
+     "La turbulencia térmica nace del calentamiento del suelo y su intensidad depende de qué superficie sea. La insolación genera corrientes de convección cuya fuerza depende del calentamiento de la superficie. El suelo de roca u hormigón se calienta rápido y da corrientes verticales fuertes; la hierba y el bosque se calientan despacio y dan corrientes débiles. Por eso un aeródromo junto a un polígono industrial o una pista de asfalto agita más en las tardes de verano que uno rodeado de campo verde.",
+     "La turbulencia mecánica la causan las obstrucciones físicas al flujo normal del aire: colinas, montañas, costas, árboles y edificios. Es más intensa con viento fuerte y se nota sobre todo en despegues y aterrizajes cerca de hangares o árboles."
+    ],
+    "ideas": [
+     "La tarde de verano es una plancha: el asfalto es la zona caliente y el césped, la fría. El aire sube donde la plancha quema y baja por donde está fresco, como las burbujas de una olla.",
+     "Un edificio en el viento es una piedra en un río: detrás hay un remolino."
+    ]
+   },
+   {
+    "title": "Ondas de montaña (mountain waves)",
+    "text": [
+     "Cuando el viento sopla contra una cordillera y el aire por encima es estable, el aire que ha sido empujado hacia arriba no se limita a pasar: vuelve a bajar por sotavento, rebasa su nivel de equilibrio y vuelve a subir, como un muelle. El resultado es una **onda estacionaria** (*standing wave* u *onda de sotavento*, *lee wave*, MTW) sobre la que el avión encuentra ascendentes y descendentes intensos, que pueden alcanzar la tropopausa y extenderse decenas de kilómetros a sotavento.",
+     "Las ondas no necesitan nubes: con aire seco, la onda es invisible y solo la delata el avión. El curso fija estas condiciones: el viento perpendicular a la cordillera (±30°) y sin cambios importantes de dirección con la altura; velocidad de al menos **15 kt** en las cimas y creciente con la altura; y una capa marcada de estabilidad hacia la altitud de las cimas (una capa isotérmica o una inversión), con aire menos estable por encima y por debajo. Otras fuentes piden 20–25 kt, y un relieve que sea una cresta alargada y no una montaña aislada."
+    ],
+    "figure": "svg:050-onda-montana",
+    "caption": "Onda de montaña: lenticulares en las crestas, rotor bajo ellas y nube de cima",
     "table": {
      "caption": "Condiciones que favorecen las ondas de montaña",
      "head": [
@@ -24,52 +61,81 @@
      ],
      "rows": [
       [
-       "Viento a la altura de la cresta",
-       "Al menos 20–25 kt, aumentando con la altura"
+       "Dirección del viento",
+       "Perpendicular a la cordillera (±30°) y sin giro importante con la altura"
       ],
       [
-       "Dirección",
-       "Casi perpendicular a la cordillera (dentro de unos 30°)"
+       "Velocidad en las cimas",
+       "Al menos 15 kt según el curso (otras fuentes, 20–25 kt), creciente con la altura"
       ],
       [
        "Estabilidad",
-       "Capa estable (o inversión) a la altura de la cima y sobre ella"
+       "Capa marcada de estabilidad (isotérmica o inversión) a la altura de las cimas, con aire menos estable arriba y abajo"
       ],
       [
        "Relieve",
-       "Una cresta alargada y bastante alta, no una montaña aislada"
-      ],
-      [
-       "Perfil del viento",
-       "Sin cambios bruscos de dirección con la altura"
+       "Cresta alargada y alta, no una montaña aislada"
       ]
      ],
+     "src": "Curso, turbulencia",
      "verify": true
     },
-    "figure": "svg:050-onda-montana",
-    "caption": "Onda de montaña: lenticulares en las crestas, descendentes en los senos y rotor bajo la primera cresta."
+    "ideas": [
+     "El agua de un arroyo que pasa sobre una roca sumergida forma una ola quieta justo detrás, donde el agua sigue corriendo pero la ola no se mueve. Esa ola quieta es la onda de montaña, solo que en el aire."
+    ]
    },
    {
-    "title": "Nubes lenticulares, rotores y nube de cima",
+    "title": "Efectos y señales visuales de las ondas",
     "text": [
-     "Si el aire tiene humedad suficiente, la onda lo delata con nubes. En la cresta de la onda el aire sube, se enfría y condensa: aparece una nube con forma de lente, **Ac lenticularis** (o Sc y Ci lenticulares, según el nivel), que parece inmóvil porque se forma por delante y se disipa por detrás. Es el aviso más claro de ondas. Una **nube de cima** (de cresta o de casquete) se forma sobre la montaña, y a veces una **nube de barrera** (un banco de nubes) cae por sotavento.",
-     "Debajo de la cresta de la onda, cerca del suelo y a sotavento, el aire gira sobre un eje horizontal: es el **rotor**. A veces se ve como un cúmulo desgarrado, el **cúmulo de rotor**, pero puede ser invisible. Es la parte más peligrosa: **turbulencia severa o extrema**, capaz de dañar el avión o hacerte perder el control cerca del suelo. En el rotor un despegue o aterrizaje en un aeródromo a sotavento puede ser inseguro."
+     "Volar dentro de la onda puede ser suave, pero el peligro está en el rotor, y la onda a veces se rompe con violencia. La turbulencia más severa se encuentra en la **zona del rotor**, bajo las crestas de las ondas de sotavento, y suele marcarse con nubes de rodillo (*roll clouds*). El rotor más potente se encuentra bajo la **primera cresta de onda** (a una longitud de onda de la montaña), a la altura de la cima o algo por encima. En ocasiones se producen turbulencias violentas cuando la onda «rompe».",
+     "Las señales visuales son las siguientes. Las nubes **lenticulares** (en forma de lente) se forman en las crestas de las ondas, sobre las cimas y a sotavento, y pueden llegar hasta la tropopausa o por encima; los bordes desgarrados indican turbulencia. Parecen quietas porque se forman por delante y se disipan por detrás. Las nubes de **rotor** o de rodillo aparecen bajo las crestas de las ondas fuertes. La **nube de cima** (*cap cloud*) se forma sobre la cresta, y los vientos fuertes pueden arrastrar la nube por la ladera de sotavento.",
+     "Hay un caso especial: el **rotor en cadena** (*rotor streaming*). Si los vientos que llegan a la cordillera son fuertes solo en niveles bajos y flojos o de sentido inverso en altura, se pueden formar rotores violentos que se desplazan a favor del viento desde la ladera de sotavento, al contrario que los estacionarios.",
+     "Debajo de una cresta, en el interior de la onda, la presión estática baja y el altímetro puede indicar más de lo real, de modo que el avión está más bajo de lo que crees. Los ascendentes y descendentes pueden superar 1000 ft/min y, con viento muy fuerte, los descendentes pueden superar la capacidad de ascenso de un avión ligero."
+    ],
+    "ideas": [
+     "El rotor es un rodillo de cocina: una rueda de aire que gira horizontalmente bajo la cresta. Si lo atraviesas, el rodillo te sacude arriba y abajo como a la masa.",
+     "Las lenticulares son platillos volantes de nubes: se quedan quietas aunque el viento sea fuerte, y avisan de que debajo de ellos hay una montaña de aire moviéndose."
+    ]
+   },
+   {
+    "title": "Cómo evitar lo peor de las ondas",
+    "text": [
+     "Las reglas del curso para evitar el peor efecto de las ondas se resumen en diez puntos. No existe una norma que fije una altura mínima sobre las cimas: son reglas de prudencia, y con viento fuerte y lenticulares la decisión sensata es no cruzar."
     ],
     "bullets": [
-     "Altímetro: en el interior de la onda la presión estática disminuye bajo las crestas y el altímetro indica **más** de lo real: el avión está más bajo que lo que marca.",
-     "Los ascendentes y descendentes pueden superar 1000 ft/min y, si el viento es muy fuerte, los descendentes pueden superar la capacidad de ascenso de un avión ligero.",
-     "Atraviesa la cordillera con ángulo recto, con altura holgada sobre la cresta y desde barlovento; si hay lenticulares o nube de rotor, desvíate o aborta."
+     "Lee el parte meteorológico antes del vuelo.",
+     "Cruza la cordillera en ángulo de 90°.",
+     "Vuela a la velocidad recomendada de penetración en turbulencia.",
+     "No vueles paralelo y justo a sotavento de la cordillera, a ninguna altura.",
+     "Evita la zona del rotor o sus proximidades.",
+     "Evita los niveles de vuelo a menos de 5000 ft de la capa estable, donde la turbulencia severa es más probable.",
+     "Deja un margen sobre el terreno más alto al menos igual a la altura de ese terreno sobre el terreno local.",
+     "Evita el vuelo bajo hacia la cordillera desde sotavento: las variaciones de altura del avión están en oposición de fase con la onda y los descendentes son peligrosos.",
+     "Evita el vuelo alto a sotavento: el margen de buffet es pequeño y la velocidad de las ondas estacionarias que se aproximan es elevada, con mayores cargas sobre la estructura.",
+     "Prepárate para engelamiento en nube."
     ],
-    "verify": true,
     "note": {
      "kind": "warn",
-     "text": "No hay una altura mínima oficial para cruzar con seguridad: la regla práctica de mantener mucho más de 2000 ft sobre la cima con viento fuerte es criterio prudente, no norma. Si hay lenticulares y viento fuerte, no cruces."
-    }
+     "text": "No hay una altura mínima oficial para cruzar con seguridad: la regla del curso es criterio prudente, no norma. Si hay lenticulares y viento fuerte, no cruces."
+    },
+    "ideas": [
+     "Es como cruzar una vía de tren: en perpendicular, atento y sin quedarte en medio ni caminar junto a ella."
+    ]
    },
    {
-    "title": "Tipos de turbulencia",
+    "title": "Chorros, cumulonimbos y aire claro",
     "text": [
-     "La **turbulencia** son movimientos irregulares del aire que sacuden el avión. Se clasifica por su causa:"
+     "La turbulencia también nace en el chorro, en los Cb y en el aire claro sin nubes. Los **chorros** (*jet streams*) son corrientes estrechas y rápidas justo bajo la tropopausa; la turbulencia asociada suele estar en el **lado frío** del chorro, bajo el núcleo, donde la cizalladura es mayor, con una zona secundaria sobre el núcleo que se extiende a la estratosfera cuando el viento cae con rapidez. Es más severa con chorros curvos, en desarrollo y de movimiento rápido, y en zonas montañosas, sobre todo con ondas de montaña.",
+     "En un **cumulonimbo** hay turbulencia en su interior por las corrientes verticales intensas; esas corrientes arrastran aire desde alrededor de la nube y la energía del aire que sube se transmite por encima de la nube, creando turbulencia allí también. La **turbulencia en aire claro** (CAT) aparece sin nubes, por cizalladura vertical y horizontal junto a los chorros y en la tropopausa, sin aviso visual."
+    ],
+    "ideas": [
+     "El chorro es un río de aire rápido: en las orillas, donde el aire rápido roza al lento, se forman remolinos. Y el Cb es una olla de aire hirviendo: salpica dentro, alrededor y por arriba."
+    ]
+   },
+   {
+    "title": "Tipos de turbulencia según su causa",
+    "text": [
+     "Se resumen según su origen en la tabla que sigue; combina lo visto hasta ahora con la turbulencia frontal y la de estela."
     ],
     "table": {
      "caption": "Turbulencia según su causa",
@@ -80,7 +146,7 @@
      ],
      "rows": [
       [
-       "Convectiva",
+       "Convectiva o térmica",
        "Térmicas y corrientes ascendentes y descendentes por calentamiento del suelo; cúmulos y cumulonimbos",
        "Tardes de verano, bajo y dentro de los cúmulos; se evita volando por encima o por la mañana"
       ],
@@ -109,7 +175,8 @@
        "Vórtices de punta de ala del avión que te precede",
        "Detrás y debajo de aeronaves mayores, sobre todo en despegue y aterrizaje"
       ]
-     ]
+     ],
+     "src": "Curso; AEMET"
     }
    },
    {
@@ -118,12 +185,14 @@
      "Un avión que genera sustentación deja detrás dos **torbellinos de punta de ala** que giran en sentidos opuestos. Son más intensos cuanto mayor es la masa, menor la velocidad y mayor el ángulo de ataque: el peor caso es un avión pesado, **limpio y lento** (despegue y aterrizaje). Los vórtices **descienden** unos 300–500 ft/min hasta unos 500–900 ft por debajo de la trayectoria, y se separan con el viento; con viento nulo o muy flojo se mantienen en la pista y con viento cruzado de 5 kt, el vórtice de barlovento puede quedarse sobre la pista.",
      "Precauciones en la práctica: si despegas tras una aeronave mayor, **rota antes de su punto de rotación** y mantén una trayectoria por encima de la suya; si aterrizas tras una mayor, **mantente por encima de su senda y toca más allá de su punto de toma**. Espera al menos **2 minutos** para despegar detrás de una aeronave mayor desde la misma pista (el ATC aplica las separaciones de estela). Un helicóptero estacionario también genera estela fuerte."
     ],
-    "verify": true
+    "ideas": [
+     "Una lancha deja una estela en el agua que dura un rato y se hunde; la estela del avión baja como el humo de un cigarrillo en una habitación sin corriente: no desaparece al instante."
+    ]
    },
    {
     "title": "Intensidades de la turbulencia",
     "text": [
-     "Se informa en cuatro grados, que se distinguen por lo que ocurre en el avión, no por una cifra:"
+     "Se informa en cuatro grados, que se distinguen por lo que ocurre en el avión, no por una cifra. En turbulencia moderada o fuerte, reduce la IAS a la velocidad de penetración en turbulencia (VA o la que indique el POH) para no sobrepasar el factor de carga. No intentes mantener la altitud a toda costa en turbulencia fuerte: mantén la actitud, evita maniobras bruscas y acepta variaciones de altitud. Los informes de turbulencia (PIREP) y los SIGMET sirven para evitarla."
     ],
     "table": {
      "caption": "Intensidad de la turbulencia",
@@ -153,73 +222,161 @@
        "El avión es lanzado violentamente; control prácticamente imposible; posibles daños estructurales",
        "Imposible mantenerse en el asiento"
       ]
-     ]
-    },
-    "bullets": [
-     "Velocidad de maniobra (VA): en turbulencia moderada o fuerte reduce la IAS a la velocidad de penetración en turbulencia (VA o la que indique el POH) para no sobrepasar el factor de carga.",
-     "No intentes mantener la altitud a toda costa en turbulencia fuerte: mantén la actitud, evita maniobras bruscas y acepta variaciones de altitud.",
-     "Los informes de turbulencia del piloto (PIREP) y los SIGMET sirven para evitarla; en los mapas SIGWX se marca la turbulencia moderada o fuerte."
+     ],
+     "src": "AEMET; FAA-H-8083-28"
+    }
+   },
+   {
+    "title": "Ejemplos resueltos",
+    "examples": [
+     {
+      "q": "Una noche despejada y en calma, el METAR da viento 03005KT en el suelo y el pronóstico da 30 kt del noroeste a 1000 ft. Vas a salir y a ascender. ¿Qué esperas al cruzar los 1000 ft?",
+      "a": "Hay una inversión nocturna baja: bajo ella el viento es flojo y de otra dirección, y por encima es fuerte. Al cruzarla habrá cizalladura: cambio rápido de velocidad (puede caer la IAS) y de dirección, con turbulencia moderada o severa. Hay que anticiparlo: mantén margen de velocidad y la actitud."
+     },
+     {
+      "q": "Quieres cruzar una cordillera que sobresale 5000 ft del terreno local. Hay viento de 25 kt perpendicular y lenticulares en las cimas. ¿A qué altura mínima sobre el terreno local la cruzas, y la cruzas?",
+      "a": "La regla del curso pide un margen igual a la altura del terreno sobre el terreno local: unos 5000 ft sobre la cima, es decir, a unos 10 000 ft sobre el terreno local. En un avión ligero con lenticulares y viento de 25 kt la decisión sensata es no cruzar y esperar o desviarte."
+     },
+     {
+      "q": "Una aeronave mayor ha despegado de la misma pista hace un minuto con viento flojo. ¿Despegas ya?",
+      "a": "No: espera al menos 2 minutos. Con viento flojo los vórtices se mantienen en la pista. Rota antes de su punto de rotación y vuela por encima de su trayectoria."
+     }
     ]
    }
   ],
+  "outline": [
+   {
+    "title": "Dónde",
+    "items": [
+     "Capa de fricción",
+     "Dentro de las nubes",
+     "En aire claro"
+    ]
+   },
+   {
+    "title": "Capa de fricción",
+    "items": [
+     "Del suelo a 2000–3000 ft",
+     "Más profunda con terreno rugoso, viento fuerte e inestabilidad",
+     "De día: térmicas y rozamiento",
+     "De noche: solo mecánica; inversión baja que crea cizalladura"
+    ]
+   },
+   {
+    "title": "Térmica y mecánica",
+    "items": [
+     "Térmica: rocas y hormigón calientan fuerte; hierba y bosque, poco",
+     "Mecánica: colinas, montañas, costas, árboles y edificios"
+    ]
+   },
+   {
+    "title": "Ondas de montaña",
+    "items": [
+     "Viento perpendicular (±30°) y sin giro con la altura",
+     "Viento en la cima de al menos 15 kt (curso) y creciente",
+     "Capa estable a la altura de la cima",
+     "Lenticulares, rotor bajo la primera cresta y nube de cima"
+    ]
+   },
+   {
+    "title": "Evitar las ondas",
+    "items": [
+     "Leer el parte y cruzar a 90°",
+     "Velocidad de penetración, no volar paralelo ni cerca del rotor",
+     "Margen sobre la cima igual a su altura sobre el terreno",
+     "Evitar vuelo bajo a favor del viento hacia la montaña"
+    ]
+   },
+   {
+    "title": "Otras fuentes",
+    "items": [
+     "Chorro: lado frío, bajo el núcleo, y sobre el núcleo",
+     "Cb: dentro, alrededor y por encima",
+     "CAT: aire claro, sin aviso visual",
+     "Estela: vórtices que descienden"
+    ]
+   }
+  ],
+  "mnemonics": [
+   "Capa de fricción: «RVE» (Rugosidad, Velocidad, Estabilidad): las tres cosas que la hacen más gruesa o más fina.",
+   "Ondas de montaña: «P-V-E»: Perpendicular, Viento fuerte, Estable en la cima.",
+   "Rotor: bajo la cresta y bajo la nube de rodillo: el rodillo (roll cloud) está donde gira el aire.",
+   "Lenticular = lente que no se mueve: se forma por delante y se disipa por detrás, como una ola de surf.",
+   "Estela: «pesado, limpio y lento» es lo peor, y los vórtices bajan; tú rotas antes y aterrizas más largo."
+  ],
+  "selfCheck": [
+   {
+    "q": "¿Dónde se encuentra la turbulencia?",
+    "a": "En tres lugares: en la capa de fricción (del suelo a 2000–3000 ft), dentro de las nubes (sobre todo de desarrollo vertical) y en aire claro (CAT)."
+   },
+   {
+    "q": "¿De qué depende el espesor de la capa de fricción?",
+    "a": "De la rugosidad del terreno, de la velocidad del viento y de la estabilidad: cuanto más rugoso, más viento y más inestable, más gruesa."
+   },
+   {
+    "q": "¿Por qué hay cizalladura de noche junto al suelo y qué hace el avión al cruzarla?",
+    "a": "Con cielo despejado se forma una inversión baja bajo la cual el viento es flojo y de otra dirección que el fuerte de arriba. Al subir o bajar por esa inversión hay un cambio brusco de velocidad y dirección, con turbulencia moderada a severa."
+   },
+   {
+    "q": "¿Qué condiciones favorecen las ondas de montaña?",
+    "a": "Viento perpendicular a la cordillera (±30°), sin cambios de dirección con la altura, de al menos 15 kt en la cima y creciente, y una capa estable (isotérmica o inversión) a la altura de las cimas."
+   },
+   {
+    "q": "¿Dónde está el rotor y qué lo señala?",
+    "a": "Bajo las crestas de las ondas de sotavento, el más fuerte bajo la primera cresta, a nivel de la cima o algo por encima. Lo señalan las nubes de rodillo (roll clouds); los lenticulares marcan las crestas."
+   },
+   {
+    "q": "¿Cuál es la regla de margen sobre la cima al cruzar una cordillera con ondas?",
+    "a": "Dejar un margen sobre el terreno más alto al menos igual a la altura de ese terreno sobre el terreno local."
+   },
+   {
+    "q": "¿Dónde se concentra la turbulencia de un chorro?",
+    "a": "Sobre todo en el lado frío del chorro y bajo el núcleo, donde la cizalladura es mayor, con una zona secundaria sobre el núcleo. Es peor con chorros curvos, en desarrollo y sobre montañas."
+   },
+   {
+    "q": "¿Por qué es peligrosa la estela y qué haces tras un avión mayor?",
+    "a": "Dos vórtices que descienden detrás de un avión pesado, limpio y lento. Rotar antes de su punto de rotación y volar por encima de su senda; al aterrizar, mantenerte por encima y tocar más allá de su toma; esperar 2 minutos para despegar."
+   }
+  ],
   "numbers": [
-   "Ondas de montaña: viento de 20–25 kt o más, casi perpendicular a la cordillera, con capa estable",
-   "Lenticulares en las crestas de la onda; rotor bajo ellas con turbulencia severa o extrema",
-   "Ondas: el altímetro indica más de lo real bajo la cresta",
-   "Estela: los vórtices bajan unos 300–500 ft/min; rota antes y aterriza más allá del punto de toma de la aeronave que precede",
-   "2 min de espera para despegar tras una aeronave mayor desde la misma pista",
-   "Turbulencia: ligera, moderada, severa y extrema, según los efectos en el avión",
-   "CAT: turbulencia en aire claro, cerca de la corriente en chorro y de la tropopausa"
+   "Capa de fricción: de la superficie a unos 2000–3000 ft",
+   "Ondas: viento perpendicular (±30°), de al menos 15 kt en la cima (curso; otras fuentes dan 20–25 kt) y creciente con la altura",
+   "Capa estable a la altura de las cimas (isotérmica o inversión)",
+   "Rotor más fuerte: bajo la primera cresta a sotavento; lenticulares, nubes de rodillo y de cima",
+   "Margen sobre la cima al menos igual a la altura de la cima sobre el terreno local",
+   "Evitar niveles dentro de 5000 ft de la capa estable donde la turbulencia severa es más probable",
+   "Chorro: turbulencia en el lado frío, bajo el núcleo; secundaria sobre él",
+   "Estela: los vórtices bajan unos 300–500 ft/min; 2 min de espera tras una aeronave mayor",
+   "Turbulencia: ligera, moderada, severa y extrema"
   ],
   "traps": [
    "Pensar que sin nubes no hay ondas: los lenticulares solo aparecen si hay humedad.",
    "Creer que el rotor está en la cresta de la onda: está debajo y a sotavento, cerca del suelo.",
-   "Fiarse del altímetro en ondas: indica más de lo real y el avión está más bajo.",
+   "Fiarse del altímetro en ondas: puede indicar más de lo real y el avión estar más bajo.",
    "Confundir turbulencia mecánica (obstáculos y suelo) con orográfica (ondas del relieve).",
-   "Olvidar que la estela baja: vuela por encima de la trayectoria de la aeronave que te precede."
+   "Olvidar que la estela baja: vuela por encima de la trayectoria del avión que te precede.",
+   "Creer que un vuelo en onda siempre es agitado: puede ser suave, pero el rotor y las ondas rotas son violentos.",
+   "Pensar que de noche la capa de fricción es más gruesa: es más fina, aunque con cizalladura en la inversión."
+  ],
+  "spain": [
+   "Las ondas de montaña son frecuentes sobre los Pirineos, la cordillera Cantábrica y el Sistema Central (Guadarrama, Gredos) con viento fuerte perpendicular a la sierra. Los SIGMET las avisan con las siglas MTW (onda de montaña)."
   ],
   "sources": [
+   {
+    "title": "FAA-H-8083-28, Aviation Weather Handbook",
+    "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+   },
    {
     "title": "AEMET, Apuntes de meteorología aeronáutica",
     "url": "https://repositorio.aemet.es/bitstream/20.500.11765/16764/1/Apuntes_Meteorologia_Aeronautica_compressed.pdf"
    },
    {
-    "title": "FAA-H-8083-28, Aviation Weather Handbook (turbulencia y ondas de montaña)",
-    "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
-   },
-   {
-    "title": "OACI Doc 4444 PANS-ATM (estela turbulenta)",
-    "url": "https://www.icao.int/publications/pages/publication.aspx?docnum=4444"
+    "title": "Material del curso, «Meteorology flight hazards» y apuntes de turbulencia (instructores)"
    }
   ],
-  "spain": [
-   "Las ondas de montaña son frecuentes sobre los Pirineos, la cordillera Cantábrica y el Sistema Central (Guadarrama, Gredos) con viento fuerte perpendicular a la sierra. Los SIGMET las avisan con las siglas MTW (onda de montaña)."
-  ],
-  "id": "050.07",
-  "reviewed": "2026-10-09"
+  "reviewed": "2026-11-23"
  },
  "questions": [
-  {
-   "id": "050.07.001",
-   "type": "regla",
-   "level": 2,
-   "q": "Una de las condiciones para las ondas de montaña es:",
-   "options": [
-    "Viento de al menos 20–25 kt casi perpendicular a la cordillera y capa estable",
-    "Viento flojo (menos de 10 kt) paralelo a la cordillera y aire inestable",
-    "Viento de 20–25 kt paralelo a la cordillera y aire inestable",
-    "Calma y aire muy húmedo cerca de una montaña aislada"
-   ],
-   "correct": 0,
-   "why": "Ondas: viento fuerte y creciente con la altura, casi perpendicular a la cordillera, y estabilidad a la altura de la cima.",
-   "whyNot": [
-    null,
-    "El viento flojo no genera ondas y debe ser perpendicular, no paralelo.",
-    "El viento paralelo no obliga al aire a ascender; además necesita estabilidad.",
-    "Sin viento no hay onda."
-   ],
-   "ref": "AEMET; FAA-H-8083-28"
-  },
   {
    "id": "050.07.002",
    "type": "concepto",
@@ -408,23 +565,191 @@
     "El rotor es turbulencia severa."
    ],
    "ref": "FAA-H-8083-28"
+  },
+  {
+   "id": "050.07.001",
+   "type": "regla",
+   "level": 2,
+   "q": "Una de las condiciones para las ondas de montaña es:",
+   "options": [
+    "Viento de al menos 15 kt en la cima, casi perpendicular a la cordillera (±30°) y una capa estable a su altura",
+    "Viento flojo (menos de 10 kt) paralelo a la cordillera y aire inestable",
+    "Viento paralelo a la cordillera y aire inestable a todos los niveles",
+    "Calma y aire muy húmedo cerca de una montaña aislada"
+   ],
+   "correct": 0,
+   "why": "El curso pide viento perpendicular (±30°) sin cambios importantes de dirección con la altura, de al menos 15 kt en las cimas y creciente, y una capa estable a la altura de las cimas.",
+   "whyNot": [
+    null,
+    "Con viento flojo y paralelo no se forma la onda.",
+    "Si el viento es paralelo, la cordillera no lo obliga a ascender.",
+    "La calma no genera onda: hace falta flujo y estabilidad."
+   ],
+   "ref": "Curso, turbulencia; FAA-H-8083-28"
+  },
+  {
+   "id": "050.07.011",
+   "type": "concepto",
+   "level": 2,
+   "q": "El espesor de la capa de fricción es mayor cuando:",
+   "options": [
+    "El terreno es liso, el viento flojo y la capa estable",
+    "Hay inversión fuerte pegada al suelo",
+    "Es de noche con cielo despejado",
+    "El terreno es rugoso, el viento fuerte y la capa inestable"
+   ],
+   "correct": 3,
+   "why": "La profundidad depende de la rugosidad, la velocidad del viento y la estabilidad: más rugosidad, más viento y menos estabilidad dan una capa más gruesa.",
+   "whyNot": [
+    "Terreno liso, poco viento y estabilidad lo reducen.",
+    "Una inversión pegada al suelo limita la capa.",
+    "De noche con cielo despejado la capa se hace más fina.",
+    null
+   ],
+   "ref": "Curso, turbulencia"
+  },
+  {
+   "id": "050.07.012",
+   "type": "concepto",
+   "level": 2,
+   "q": "Una noche despejada se forma una inversión baja. Un avión que sube a través de ella puede encontrar:",
+   "options": [
+    "Cizalladura con cambio brusco de velocidad y dirección y posible turbulencia moderada o severa",
+    "Aire siempre en calma y vuelo muy suave",
+    "Solo un cambio de temperatura sin efecto en el viento",
+    "Una nube de rotor"
+   ],
+   "correct": 0,
+   "why": "Bajo la inversión el viento es flojo y de otra dirección que el fuerte de encima; al atravesarla hay cizalladura con cambios rápidos de velocidad y dirección.",
+   "whyNot": [
+    null,
+    "La inversión es justamente donde se rompe la calma.",
+    "El viento sí cambia mucho entre los dos lados de la inversión.",
+    "Un rotor es propio de ondas de montaña, no de una inversión nocturna."
+   ],
+   "ref": "Curso, turbulencia"
+  },
+  {
+   "id": "050.07.013",
+   "type": "concepto",
+   "level": 3,
+   "q": "La turbulencia asociada a una corriente en chorro se encuentra sobre todo:",
+   "options": [
+    "En el lado cálido y por encima del núcleo",
+    "Solo en el centro del núcleo",
+    "En el lado frío del chorro, bajo el núcleo, con otra zona secundaria sobre él",
+    "Siempre a más de 5000 ft del chorro, sin relación con él"
+   ],
+   "correct": 2,
+   "why": "La máxima cizalladura está en el lado frío, bajo el núcleo; hay una zona secundaria sobre el núcleo, donde el viento cae con rapidez.",
+   "whyNot": [
+    "El lado cálido tiene menos cizalladura.",
+    "En el centro del núcleo el viento es máximo y la cizalladura es menor.",
+    null,
+    "La turbulencia está justo junto al chorro, no lejos de él."
+   ],
+   "ref": "Curso, turbulencia"
+  },
+  {
+   "id": "050.07.014",
+   "type": "concepto",
+   "level": 2,
+   "q": "El rotor más potente de una onda de montaña se encuentra normalmente:",
+   "options": [
+    "Sobre la cima de la montaña, bajo la nube de cima",
+    "Bajo la primera cresta de onda a sotavento, a nivel de la cima o algo por encima",
+    "A barlovento, a gran altura",
+    "En el centro de la onda, sin relación con las nubes"
+   ],
+   "correct": 1,
+   "why": "El rotor más fuerte se encuentra bajo la primera cresta de la onda de sotavento y suele estar marcado por nubes de rodillo, a la altura de la cima o algo más.",
+   "whyNot": [
+    "La nube de cima se forma sobre la cresta, pero el rotor está a sotavento.",
+    null,
+    "A barlovento el aire asciende de forma ordenada.",
+    "Las nubes de rodillo marcan el rotor."
+   ],
+   "ref": "Curso, turbulencia"
+  },
+  {
+   "id": "050.07.015",
+   "type": "concepto",
+   "level": 1,
+   "q": "La turbulencia térmica es más intensa sobre superficies de:",
+   "options": [
+    "Roca u hormigón, que se calientan rápido",
+    "Hierba y bosque, que se calientan despacio",
+    "Mar abierto, que se calienta rápido",
+    "Nieve recién caída"
+   ],
+   "correct": 0,
+   "why": "Las rocas y el hormigón se calientan deprisa y dan corrientes verticales fuertes; la hierba y el bosque se calientan despacio.",
+   "whyNot": [
+    null,
+    "La hierba y el bosque dan convección débil.",
+    "El mar se calienta muy despacio.",
+    "La nieve refleja la radiación y se calienta poco."
+   ],
+   "ref": "Curso, turbulencia"
+  },
+  {
+   "id": "050.07.016",
+   "type": "concepto",
+   "level": 3,
+   "q": "El rotor en cadena (rotor streaming) puede aparecer cuando:",
+   "options": [
+    "El viento es muy fuerte a todos los niveles y perpendicular",
+    "El viento es fuerte solo en niveles bajos y flojo o inverso en altura",
+    "No hay viento en la cima",
+    "La capa estable está por encima de la tropopausa"
+   ],
+   "correct": 1,
+   "why": "Con viento fuerte solo abajo y flojo o invertido arriba, los rotores se forman en la ladera de sotavento y se desplazan a favor del viento.",
+   "whyNot": [
+    "Con viento fuerte a todos los niveles se forman ondas estacionarias.",
+    null,
+    "Sin viento no se forma rotor.",
+    "La capa estable debe estar a la altura de las cimas."
+   ],
+   "ref": "Curso, turbulencia"
+  },
+  {
+   "id": "050.07.017",
+   "type": "concepto",
+   "level": 2,
+   "q": "En un cumulonimbo la turbulencia se encuentra:",
+   "options": [
+    "Solo dentro de la nube, nunca fuera",
+    "Solo en la base",
+    "Solo en el yunque, pero no en la base",
+    "Dentro de la nube y también por encima de ella"
+   ],
+   "correct": 3,
+   "why": "Las corrientes verticales intensas generan turbulencia en el interior y transmiten energía por encima de la nube; también hay turbulencia por el aire arrastrado desde fuera.",
+   "whyNot": [
+    "La energía se transmite también por encima.",
+    "Hay turbulencia en toda la nube, no solo en la base.",
+    "Está en todo el cuerpo de la nube, no solo en el yunque.",
+    null
+   ],
+   "ref": "Curso, turbulencia"
   }
  ],
  "cards": [
   {
    "id": "c.050.07.01",
    "front": "Condiciones de las ondas de montaña",
-   "back": "Viento ≥ 20–25 kt casi perpendicular a la cordillera, capa estable en la cima, creciente con la altura"
+   "back": "Viento perpendicular (±30°), al menos 15 kt en la cima (curso; otras fuentes 20–25 kt), creciente con la altura, y capa estable en la cima"
   },
   {
    "id": "c.050.07.02",
    "front": "Señales de onda y rotor",
-   "back": "Lenticulares en las crestas; rotor bajo ellas, a sotavento; turbulencia severa o extrema"
+   "back": "Lenticulares en las crestas; nubes de rodillo (rotor) bajo ellas; nube de cima; turbulencia severa o extrema en el rotor"
   },
   {
    "id": "c.050.07.03",
    "front": "Altímetro en onda de montaña",
-   "back": "Indica más de lo real: el avión está más bajo"
+   "back": "Puede indicar más de lo real: el avión está más bajo"
   },
   {
    "id": "c.050.07.04",
@@ -434,7 +759,7 @@
   {
    "id": "c.050.07.05",
    "front": "Estela: precauciones",
-   "back": "Rotar antes y volar por encima; aterrizar más allá del punto de toma; los vórtices bajan"
+   "back": "Rotar antes y volar por encima; aterrizar más allá del punto de toma; 2 min de espera; los vórtices bajan"
   },
   {
    "id": "c.050.07.06",
@@ -444,7 +769,17 @@
   {
    "id": "c.050.07.07",
    "front": "Dónde está el rotor",
-   "back": "Bajo la cresta de la onda, a sotavento y cerca del suelo"
+   "back": "Bajo la primera cresta de la onda a sotavento, a nivel de la cima o algo más"
+  },
+  {
+   "id": "c.050.07.08",
+   "front": "Capa de fricción",
+   "back": "Del suelo a 2000–3000 ft; depende de rugosidad, viento y estabilidad; de noche, inversión y cizalladura"
+  },
+  {
+   "id": "c.050.07.09",
+   "front": "Turbulencia de un chorro",
+   "back": "En el lado frío, bajo el núcleo; secundaria sobre el núcleo; peor con chorros curvos"
   }
  ]
 }

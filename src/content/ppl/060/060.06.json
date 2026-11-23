@@ -2,14 +2,13 @@
   "lesson": {
     "id": "060.06",
     "title": "Navegación a estima",
-    "summary": "Derrota, rumbos verdadero, magnético y de brújula, viento, IAS, CAS, TAS y GS, deriva y corrección de deriva, posición estimada y ETA: la base de todo el cálculo de navegación.",
+    "summary": "Derrota y rumbos (verdadero, magnético y de brújula), IAS, CAS, TAS y GS, viento, deriva y ángulo de corrección (WCA), triángulo de velocidades, posición estimada y cálculo de la ETA.",
     "objectives": [
-      "Distinguir derrota, rumbo, deriva y corrección de deriva, y aplicar sus signos sin dudar",
-      "Pasar de rumbo verdadero a magnético y a brújula con la variación y el desvío",
-      "Encadenar IAS, CAS, TAS y GS y saber qué cambia con la altitud y qué con el viento",
-      "Descomponer el viento en componente cruzada y de cara con senos y cosenos o con la regla del reloj",
-      "Resolver de cabeza un triángulo de velocidades: corrección, rumbo y GS",
-      "Calcular una posición estimada y una ETA a partir del último punto conocido"
+      "Distinguir IAS, CAS, TAS y GS y saber cómo se pasa de una a otra",
+      "Diferenciar track y heading, y deriva y WCA",
+      "Resolver el triángulo de velocidades y comprobar el resultado de cabeza",
+      "Calcular la posición estimada y la ETA con la GS",
+      "Pasar entre rumbos verdadero, magnético y de brújula y entre derrotas verdadera y magnética"
     ],
     "sections": [
       {
@@ -18,6 +17,9 @@
           "Navegar a estima (DR, dead reckoning) es **calcular dónde estás a partir de dónde estabas**: conoces el último punto fijo (un pueblo, un cruce de autopista o una posición radio), el rumbo que has mantenido, la velocidad y el viento, y el tiempo transcurrido. Con eso dibujas la posición estimada sin mirar por la ventanilla.",
           "En VFR la estima no sustituye a la navegación observada (comparar carta y terreno): la prepara. Antes del vuelo calculas rumbo, tiempo y combustible de cada tramo; en vuelo, la estima te dice **qué deberías ver y cuándo**, y la observación lo confirma o te avisa de que algo no cuadra. Si el GNSS falla o te pierdes, la estima es lo único que te queda.",
           "El examen de AESA pregunta este bloque de dos maneras: conceptos (qué es la deriva, de dónde sopla el viento, qué vector es cada uno) y cálculos cortos que tienes que poder hacer con el computador y comprobar de cabeza. Esta lección enseña los conceptos y el cálculo mental; el manejo del computador está en la lección 060.07."
+        ],
+        "ideas": [
+          "Es caminar por un bosque con los ojos cerrados contando pasos y girando con una brújula: sabes dónde empezaste, qué dirección llevas y cuánto has caminado, y con eso dices dónde estás; si luego abres los ojos y ves el río, corriges."
         ]
       },
       {
@@ -46,7 +48,10 @@
         "note": {
           "kind": "tip",
           "text": "Escribe siempre la columna completa (V, var, M, desv, B) en el log. Casi todos los fallos de examen en esta materia son de signo, no de concepto."
-        }
+        },
+        "ideas": [
+          "El rumbo es hacia dónde apunta la proa de la barca; la derrota, por dónde va realmente la barca, porque la corriente (el viento) la empuja de lado."
+        ]
       },
       {
         "title": "Velocidades: IAS, CAS, TAS y GS",
@@ -90,6 +95,9 @@
             "q": "IAS 100 kt (CAS igual) a 5000 ft en atmósfera estándar. TAS aproximada.",
             "a": "2 % × 5 = 10 %: TAS ≈ 110 kt. El computador da unos 108 kt; la regla siempre queda un poco por arriba."
           }
+        ],
+        "ideas": [
+          "La IAS es lo que marca el velocímetro del coche; la CAS, esa lectura corregida porque el velocímetro tiene un error de fábrica; la TAS, lo que de verdad avanzas por el aire (al subir el aire es más fino y para sentir el mismo «empuje» hay que ir más rápido); y la GS, lo que ve el pueblo por el que pasas. Un viento de cola es como una cinta transportadora en un aeropuerto: tú caminas igual (TAS) pero el suelo pasa más deprisa (GS)."
         ]
       },
       {
@@ -163,6 +171,9 @@
             "q": "Derrota 250°, viento 220/30. Componentes.",
             "a": "El viento viene 30° a la izquierda de la derrota. Cruzada = 30 × 0,5 = 15 kt desde la izquierda; de cara = 30 × 0,87 ≈ 26 kt."
           }
+        ],
+        "ideas": [
+          "El viento se nombra como las visitas: «viene del oeste» (270) quiere decir que llega desde el oeste, no que va hacia él. Una bandera en el campo siempre apunta hacia donde el viento va, a la contra de donde viene."
         ]
       },
       {
@@ -201,6 +212,60 @@
             "q": "Derrota 045°, TAS 95 kt, viento 360/15. Rumbo y GS.",
             "a": "Ángulo 45° por la izquierda. Deriva máxima = 15 × 60 / 95 ≈ 9,5°; × 0,7 ≈ 6,5° a la izquierda. Rumbo ≈ 039°. De cara = 15 × 0,71 ≈ 11 kt: GS ≈ 84 kt."
           }
+        ],
+        "ideas": [
+          "Es el cálculo de nadar en un río: si apuntas la nariz directamente a la otra orilla, la corriente te arrastra río abajo (deriva). Para llegar justo enfrente debes apuntar río arriba (WCA), y llegarás más despacio."
+        ]
+      },
+      {
+        "title": "Vocabulario del curso: track, heading, deriva y WCA",
+        "text": [
+          "El curso agrupa en un mismo sitio varios pares de palabras que se parecen y no significan lo mismo. **Track** (derrota) es el camino sobre el suelo; **heading** (rumbo) es hacia dónde apunta el morro. **TAS** es la velocidad en la masa de aire; **GS** (groundspeed) es la velocidad sobre el suelo. La **deriva** (*drift*) es el ángulo entre el rumbo y la derrota producido por el viento: es un efecto. El **ángulo de corrección de deriva** (*Wind Correction Angle*, **WCA**) es el que tú aplicas al rumbo, hacia el viento, para mantener la derrota deseada: es una corrección. Con un viento constante, el WCA tiene el mismo valor que la deriva y signo opuesto.",
+          "Todas las direcciones tienen su versión verdadera, magnética y (para el rumbo) de brújula: **true track** (TT), **magnetic track** (MT), **true heading** (TH), **magnetic heading** (MH) y **compass heading** (CH)."
+        ],
+        "table": {
+          "caption": "Pares que no hay que confundir",
+          "head": [
+            "Término",
+            "Qué es",
+            "Se mide entre"
+          ],
+          "rows": [
+            [
+              "Track (derrota)",
+              "Camino sobre el suelo",
+              "Norte y la trayectoria sobre el suelo"
+            ],
+            [
+              "Heading (rumbo)",
+              "Dirección del morro",
+              "Norte y el eje longitudinal del avión"
+            ],
+            [
+              "Drift (deriva)",
+              "Efecto del viento",
+              "Rumbo y derrota"
+            ],
+            [
+              "WCA",
+              "Corrección que aplicas",
+              "Derrota deseada y rumbo a volar"
+            ],
+            [
+              "TAS",
+              "Velocidad en la masa de aire",
+              "Vector aire"
+            ],
+            [
+              "Groundspeed (GS)",
+              "Velocidad sobre el suelo",
+              "Vector suelo"
+            ]
+          ],
+          "src": "Curso, tema 5"
+        },
+        "ideas": [
+          "Deriva y WCA son como la enfermedad y la medicina: la deriva es lo que hace el viento si no haces nada; el WCA es lo que haces tú para contrarrestarla."
         ]
       },
       {
@@ -234,7 +299,14 @@
           {
             "q": "Despegas a las 10:42 UTC. Tramo de 64 NM con TAS 110 kt y GS 96 kt. ETA.",
             "a": "64 × 60 / 96 = 40 min. ETA 11:22 UTC. Con la TAS saldrían 35 min, y leer 0,67 h como 67 min daría 11:49: los dos son errores típicos."
+          },
+          {
+            "q": "Pasas por un punto fijo a las 11:05 UTC. Faltan 78 NM para el destino y tu GS es de 104 kt. ETA.",
+            "a": "78 × 60 / 104 = 45 min. ETA = 11:05 + 0:45 = 11:50 UTC."
           }
+        ],
+        "ideas": [
+          "La ETA es la hora de llegada de un autobús: la hora a la que pasó por la última parada más el tiempo que tarda en hacer el trayecto a la velocidad real (GS), nunca a la velocidad que pone en la ficha técnica (TAS)."
         ]
       },
       {
@@ -256,7 +328,9 @@
       "TAS ≈ CAS + 2 % por cada 1000 ft",
       "Tiempo (min) = distancia × 60 / GS",
       "Viento del METAR, TAF y pronósticos: verdadero; viento de torre y ATIS: magnético",
-      "Deriva a la derecha: derrota = rumbo + deriva; el viento viene de la izquierda"
+      "Deriva a la derecha: derrota = rumbo + deriva; el viento viene de la izquierda",
+      "ETA = hora del último punto + distancia × 60 / GS (en UTC)",
+      "WCA = deriva con signo opuesto; deriva = rumbo y derrota; WCA = derrota deseada y rumbo"
     ],
     "traps": [
       "Viento 270/20 sopla desde el oeste, no hacia el oeste: el avión se desplaza hacia el este.",
@@ -265,7 +339,9 @@
       "El tiempo se calcula con la GS; usar la TAS es el distractor más repetido.",
       "0,7 h son 42 min, no 70 min.",
       "La variación W se suma al pasar de verdadero a magnético; restarla es el error de signo clásico.",
-      "Viento de pronóstico (verdadero) frente a viento de torre (magnético): no los mezcles con la derrota equivocada."
+      "Viento de pronóstico (verdadero) frente a viento de torre (magnético): no los mezcles con la derrota equivocada.",
+      "Confundir deriva (efecto del viento) con WCA (corrección): son iguales en valor y opuestas en signo.",
+      "Calcular la ETA con la TAS en lugar de con la GS."
     ],
     "spain": [
       "En el examen de AESA hay en pantalla una calculadora con memoria y una regla a escala, y el vigilante presta un computador de navegación (se admite uno propio revisado): aprende a hacer estos cálculos con el computador físico y a comprobarlos de cabeza."
@@ -291,11 +367,90 @@
         "url": "https://www.senasa.es/recursos/adobePDF/2025/pdf/FOR-EFT-GU01_Ed_01_Examenes_teoricos_PART_%20FCL.pdf"
       }
     ],
-    "reviewed": "2026-10-09",
+    "reviewed": "2026-11-23",
     "links": [
       {
         "label": "Cabina del PA-28: brújula y direccional",
         "href": "#/ac/pa28"
+      }
+    ],
+    "course": "Tema 5 · Velocidades y ETA",
+    "outline": [
+      {
+        "title": "Direcciones",
+        "items": [
+          "Track frente a heading",
+          "TT, MT, TH, MH, CH",
+          "De T a C: W suma y E resta"
+        ]
+      },
+      {
+        "title": "Velocidades",
+        "items": [
+          "IAS → CAS (instrumento y posición)",
+          "CAS → TAS (altitud de presión y temperatura)",
+          "TAS → GS (viento)",
+          "TAS ≈ CAS + 2 % por 1000 ft"
+        ]
+      },
+      {
+        "title": "Viento",
+        "items": [
+          "Sopla de donde da el nombre; dirección verdadera (METAR, TAF), magnética (torre, ATIS)",
+          "No cambia IAS ni TAS: cambia GS y derrota"
+        ]
+      },
+      {
+        "title": "Deriva y corrección",
+        "items": [
+          "Deriva: rumbo y derrota",
+          "WCA: lo que aplicas, hacia el viento",
+          "Deriva máxima ≈ viento × 60 / TAS"
+        ]
+      },
+      {
+        "title": "ETA",
+        "items": [
+          "Tiempo = distancia × 60 / GS",
+          "ETA = hora último punto + EET",
+          "Horas decimales a minutos × 60"
+        ]
+      }
+    ],
+    "mnemonics": [
+      "IAS → CAS → TAS → GS: Instrumento, Calibración, aire Verdadero (densidad), Suelo (viento).",
+      "Deriva = efecto, WCA = corrección; si el viento llega por la derecha, corriges a la derecha (hacia el viento).",
+      "Con viento de cola la GS supera a la TAS; con viento de cara, es menor.",
+      "ETA siempre con la GS y en UTC; 0,75 h son 45 min, no 75."
+    ],
+    "selfCheck": [
+      {
+        "q": "¿Qué diferencia hay entre IAS, CAS, TAS y GS?",
+        "a": "IAS es la lectura del anemómetro; CAS, la IAS corregida por instrumento y posición; TAS, la velocidad real en la masa de aire; GS, la velocidad sobre el suelo."
+      },
+      {
+        "q": "¿Por qué la TAS es mayor que la CAS en altitud?",
+        "a": "Porque el aire es menos denso: hay que ir más rápido para obtener la misma presión dinámica."
+      },
+      {
+        "q": "¿Qué diferencia hay entre deriva y WCA?",
+        "a": "La deriva es el ángulo entre rumbo y derrota causado por el viento; el WCA es el que aplicas tú al rumbo, hacia el viento, para mantener la derrota."
+      },
+      {
+        "q": "Viento 270/20 y rumbo 090°: ¿es de cara o de cola y qué pasa con la GS?",
+        "a": "Sopla desde el oeste hacia el este, así que es de cola: la GS es unos 20 kt mayor que la TAS."
+      },
+      {
+        "q": "Pasas un punto a las 10:20 y quedan 50 NM con GS 100 kt. ¿ETA?",
+        "a": "50 × 60 / 100 = 30 min: 10:50."
+      },
+      {
+        "q": "¿Qué cambia el viento y qué no?",
+        "a": "Cambia la GS y la derrota; no cambia la TAS, la IAS ni el rumbo."
+      },
+      {
+        "q": "¿Cuánto es la deriva máxima con viento de 25 kt y TAS 100 kt?",
+        "a": "25 × 60 / 100 = 15°."
       }
     ]
   },
@@ -764,6 +919,69 @@
         "Es el rumbo recíproco, sin relación con la deriva."
       ],
       "ref": "Pooleys CRP-5 Handbook, aplicación de la deriva"
+    },
+    {
+      "id": "060.06.023",
+      "type": "calculo",
+      "level": 2,
+      "q": "Pasas un punto de control a las 11:05 UTC; faltan 78 NM al destino con TAS 115 kt y GS 104 kt. La ETA es:",
+      "options": [
+        "11:46 UTC",
+        "12:20 UTC",
+        "11:50 UTC",
+        "11:12 UTC"
+      ],
+      "correct": 2,
+      "why": "El tiempo se calcula con la GS: 78 × 60 / 104 = 45 min; 11:05 + 0:45 = 11:50 UTC.",
+      "whyNot": [
+        "11:46 sale de usar la TAS (78 × 60 / 115 ≈ 41 min) en lugar de la GS.",
+        "12:20 sale de leer 0,75 h como 75 minutos.",
+        null,
+        "11:12 sale de leer 0,75 h como 7,5 minutos."
+      ],
+      "ref": "Curso Tema 5 (ETA)"
+    },
+    {
+      "id": "060.06.024",
+      "type": "concepto",
+      "level": 1,
+      "q": "El ángulo de corrección de deriva (WCA) es:",
+      "options": [
+        "el ángulo entre el rumbo y la derrota producido por el viento",
+        "el ángulo entre la TAS y la GS",
+        "el ángulo que se aplica al rumbo, hacia el viento, para mantener la derrota deseada",
+        "el ángulo entre el norte verdadero y el norte magnético"
+      ],
+      "correct": 2,
+      "why": "El WCA es la corrección que aplica el piloto; la deriva es el efecto del viento. Ambos valen lo mismo y tienen signo opuesto.",
+      "whyNot": [
+        "Esa es la definición de deriva (drift), que es el efecto, no la corrección.",
+        "No es un ángulo entre velocidades, sino entre direcciones.",
+        null,
+        "Eso es la variación."
+      ],
+      "ref": "Curso Tema 5 (drift y WCA)"
+    },
+    {
+      "id": "060.06.025",
+      "type": "concepto",
+      "level": 1,
+      "q": "Vuelas con un viento de cola. Respecto a la TAS, la GS es:",
+      "options": [
+        "mayor",
+        "menor",
+        "igual, porque el viento no afecta a la velocidad",
+        "igual a la IAS"
+      ],
+      "correct": 0,
+      "why": "El viento de cola suma su velocidad a la TAS y aumenta la GS. La TAS y la IAS no cambian.",
+      "whyNot": [
+        null,
+        "La GS es menor con viento de cara.",
+        "El viento sí afecta a la GS; lo que no cambia es la TAS.",
+        "La GS no tiene por qué coincidir con la IAS; depende del viento y de la altitud."
+      ],
+      "ref": "Curso Tema 5 (TAS y GS)"
     }
   ],
   "cards": [
@@ -796,6 +1014,16 @@
       "id": "c.060.06.06",
       "front": "De rumbo verdadero a magnético con variación W",
       "back": "Se suma la variación W; la E se resta"
+    },
+    {
+      "id": "c.060.06.07",
+      "front": "Deriva y WCA",
+      "back": "Deriva: rumbo y derrota (efecto del viento). WCA: lo que aplicas, hacia el viento, y de signo contrario a la deriva."
+    },
+    {
+      "id": "c.060.06.08",
+      "front": "ETA",
+      "back": "ETA = hora del último punto + distancia × 60 / GS (UTC). Con la GS, no con la TAS."
     }
   ]
 }
