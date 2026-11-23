@@ -40,7 +40,14 @@
             "q": "Con el mismo sistema, el pistón pequeño recorre 5 cm. ¿Cuánto avanza el grande?",
             "a": "d₂ = 5 × (2 ÷ 10) = 1 cm. La fuerza se multiplica por 5 y el recorrido se divide por 5."
           }
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.03-pascal.mp4",
+          "vtt": "/video/lessons/020.03-pascal.vtt",
+          "poster": "/video/lessons/020.03-pascal-poster.jpg",
+          "title": "Hidráulica básica: el principio de Pascal en los frenos",
+          "duration": 62
+        }
       },
       {
         "title": "El circuito de los frenos",

@@ -84,7 +84,14 @@
         "ideas": [
           "El pistón y el cigüeñal funcionan como tus piernas y los pedales de una bicicleta: las piernas suben y bajan en línea recta y los pedales lo convierten en giro.",
           "Las válvulas son la puerta de entrada y la de salida de una discoteca: si las dos están abiertas a la vez, la gente se cuela y se va sin control; por eso casi siempre solo una está abierta."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.09-cuatro-tiempos.mp4",
+          "vtt": "/video/lessons/020.09-cuatro-tiempos.vtt",
+          "poster": "/video/lessons/020.09-cuatro-tiempos-poster.jpg",
+          "title": "El motor de pistón y el ciclo de cuatro tiempos",
+          "duration": 69
+        }
       },
       {
         "title": "Componentes del motor",
@@ -149,7 +156,14 @@
         "ideas": [
           "Una válvula con retraso de cierre es como cerrar la puerta del metro justo después de que pase el último viajero que viene corriendo: el tren (el pistón) ya ha cambiado de sentido, pero la gente que traía velocidad aún entra.",
           "El cruce de válvulas es el instante del relevo en una carrera: el que acaba de correr aún no ha soltado el testigo y el siguiente ya lo está cogiendo."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.09-distribucion-compresion.mp4",
+          "vtt": "/video/lessons/020.09-distribucion-compresion.vtt",
+          "poster": "/video/lessons/020.09-distribucion-compresion-poster.jpg",
+          "title": "Avance y retraso de válvulas, y relación de compresión",
+          "duration": 70
+        }
       },
       {
         "title": "Ciclo teórico frente al ciclo real",

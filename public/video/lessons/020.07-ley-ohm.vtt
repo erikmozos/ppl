@@ -1,0 +1,91 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:02.238
+La tensión, en voltios,
+
+00:00:02.194 --> 00:00:04.674
+es lo que empuja a los electrones.
+
+00:00:04.686 --> 00:00:06.711
+La corriente, en amperios,
+
+00:00:06.680 --> 00:00:09.106
+es cuántos pasan por un punto cada
+
+00:00:09.005 --> 00:00:09.861
+segundo.
+
+00:00:10.786 --> 00:00:12.599
+La resistencia, en ohmios,
+
+00:00:12.530 --> 00:00:14.330
+es la oposición al paso de la
+
+00:00:14.202 --> 00:00:15.093
+corriente.
+
+00:00:15.074 --> 00:00:16.476
+Con la misma tensión,
+
+00:00:16.419 --> 00:00:19.345
+menos resistencia significa más corriente.
+
+00:00:20.276 --> 00:00:21.911
+Las tres se unen en la ley
+
+00:00:21.795 --> 00:00:22.484
+de Ohm:
+
+00:00:22.403 --> 00:00:25.355
+tensión igual a corriente por resistencia.
+
+00:00:25.364 --> 00:00:26.747
+El doble de voltios,
+
+00:00:26.694 --> 00:00:28.237
+el doble de amperios.
+
+00:00:28.212 --> 00:00:29.948
+Y la potencia, en vatios,
+
+00:00:29.883 --> 00:00:31.719
+es tensión por corriente.
+
+00:00:32.656 --> 00:00:34.545
+En un circuito en serie todo va
+
+00:00:34.416 --> 00:00:35.808
+por un único camino:
+
+00:00:35.753 --> 00:00:37.348
+la corriente es la misma,
+
+00:00:37.267 --> 00:00:39.965
+las tensiones se reparten y las resistencias
+
+00:00:39.942 --> 00:00:40.712
+se suman.
+
+00:00:41.596 --> 00:00:44.402
+En paralelo, cada componente tiene su rama:
+
+00:00:44.324 --> 00:00:45.754
+la tensión es la misma,
+
+00:00:45.671 --> 00:00:47.239
+las corrientes se suman,
+
+00:00:47.156 --> 00:00:49.278
+y la resistencia total es menor que
+
+00:00:49.159 --> 00:00:50.794
+la de la rama más pequeña.
+
+00:00:51.698 --> 00:00:52.651
+Y para medir:
+
+00:00:52.582 --> 00:00:55.291
+el voltímetro, en paralelo; el amperímetro,
+
+00:00:55.269 --> 00:00:56.017
+en serie.

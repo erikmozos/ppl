@@ -72,7 +72,14 @@
           "La tensión es la presión del agua en la manguera; la corriente es el caudal que sale por segundo (litros por segundo equivalen a amperios).",
           "El amperímetro es como el contador de coches de un peaje: tiene que estar dentro de la carretera para contarlos; si lo pones en un camino paralelo no cuenta nada útil.",
           "El efecto térmico es el de frotarte las manos: lo que pasa se nota en calor. El químico es el de la pila; el magnético, el del imán que se enciende cuando pasa corriente."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.07-ley-ohm.mp4",
+          "vtt": "/video/lessons/020.07-ley-ohm.vtt",
+          "poster": "/video/lessons/020.07-ley-ohm-poster.jpg",
+          "title": "Tensión, corriente, resistencia y la ley de Ohm",
+          "duration": 59
+        }
       },
       {
         "title": "Resistencia y ohmio",

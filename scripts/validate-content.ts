@@ -78,6 +78,10 @@ for (const sub of PPL_SYLLABUS) {
       if (b.ideas !== undefined && (!Array.isArray(b.ideas) || b.ideas.some(x => typeof x !== 'string' || !x.trim()))) err(w, 'ideas: array de textos')
       b.ideas?.forEach(x => checkText(w + ' idea', x))
       checkFigure(w, b.figure); if (b.figure) figs++
+      if (b.video) {
+        if (!b.video.src || !b.video.title) err(w, 'video: src y title obligatorios')
+        for (const f of [b.video.src, b.video.vtt, b.video.poster]) if (f && !existsSync(join('public', f))) err(w, `video: falta public${f}`)
+      }
       lw += blockWords(b) + (b.note ? words(b.note.text) : 0) + (b.ideas ?? []).reduce((a, s) => a + words(s), 0)
     })
     const qs = data.questions ?? []

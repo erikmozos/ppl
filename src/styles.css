@@ -265,6 +265,10 @@ main { padding: 24px 0 56px; }
 
 /* ── Figuras ── */
 .fig-wrap { margin: 16px 0; }
+.lesson-video { margin: 14px 0 18px; }
+.lesson-video video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #0A1322; border: 1px solid var(--line); border-radius: var(--r); }
+.lesson-video figcaption { font-size: 14px; color: var(--muted); margin-top: 6px; }
+.lesson-video-k { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #0A1322; background: #FFC23D; border-radius: 6px; padding: 1px 7px; margin-right: 4px; }
 .fig-wrap figcaption { font-size: 14px; color: var(--muted); margin-top: 6px; }
 .fig { display: block; background: var(--f-bg); border: 1px solid var(--line); border-radius: var(--r); padding: 8px; color: var(--f-ink); }
 .fig svg { display: block; width: 100%; height: auto; max-height: 520px; }

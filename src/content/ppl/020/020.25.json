@@ -148,7 +148,14 @@
         "ideas": [
           "Subir a 10 000 ft sin presurizar es como correr con una mascarilla: puedes, pero te cansas antes y piensas peor sin darte cuenta.",
           "Sin presurización, el propio piloto es la «cabina presurizada»: depende del oxígeno de la botella."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.25-presurizacion.mp4",
+          "vtt": "/video/lessons/020.25-presurizacion.vtt",
+          "poster": "/video/lessons/020.25-presurizacion-poster.jpg",
+          "title": "Presurización: altitud de cabina, outflow valve y despresurización",
+          "duration": 79
+        }
       },
       {
         "title": "Altitud de cabina, velocidad vertical de cabina y presión diferencial",

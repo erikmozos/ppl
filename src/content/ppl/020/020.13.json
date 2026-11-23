@@ -38,7 +38,14 @@
         "ideas": [
           "El cárter húmedo es como la bañera con el desagüe en el fondo: el agua (aceite) está siempre en el mismo recipiente desde el que la bomba la saca.",
           "La válvula de alivio es como la válvula de una olla a presión: cuando la presión pasa del límite, deja escapar el exceso para que no reviente."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.13-lubricacion.mp4",
+          "vtt": "/video/lessons/020.13-lubricacion.vtt",
+          "poster": "/video/lessons/020.13-lubricacion-poster.jpg",
+          "title": "Lubricación: cárter húmedo, presión y fallo de aceite",
+          "duration": 66
+        }
       },
       {
         "title": "Limitaciones del cárter húmedo",

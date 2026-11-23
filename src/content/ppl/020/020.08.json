@@ -80,6 +80,13 @@
         "note": {
           "kind": "tip",
           "text": "En el PA-28 y el C172 la protección de la mayoría de los circuitos son disyuntores en el panel; el POH indica cuáles son fusibles y cuántos repuestos hay a bordo."
+        },
+        "video": {
+          "src": "/video/lessons/020.08-protecciones.mp4",
+          "vtt": "/video/lessons/020.08-protecciones.vtt",
+          "poster": "/video/lessons/020.08-protecciones-poster.jpg",
+          "title": "Fusibles y disyuntores",
+          "duration": 59
         }
       },
       {
@@ -162,7 +169,14 @@
           "El hidrómetro del electrolito es como el medidor de azúcar del refresco: más azúcar (ácido), más densidad, batería más cargada.",
           "La batería es la despensa del avión: si el alternador no repone, solo te quedan las latas hasta que se acaben."
         ],
-        "verify": true
+        "verify": true,
+        "video": {
+          "src": "/video/lessons/020.08-bateria-alternador.mp4",
+          "vtt": "/video/lessons/020.08-bateria-alternador.vtt",
+          "poster": "/video/lessons/020.08-bateria-alternador-poster.jpg",
+          "title": "Batería, alternador, regulador y fallo del alternador",
+          "duration": 71
+        }
       },
       {
         "title": "Relés",

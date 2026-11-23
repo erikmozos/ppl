@@ -19,7 +19,14 @@
         ],
         "figure": "svg:020-curva-egt",
         "caption": "Potencia y EGT según la riqueza de la mezcla (curvas esquemáticas; los valores exactos dependen del motor).",
-        "verify": true
+        "verify": true,
+        "video": {
+          "src": "/video/lessons/020.15-mezcla.mp4",
+          "vtt": "/video/lessons/020.15-mezcla.vtt",
+          "poster": "/video/lessons/020.15-mezcla-poster.jpg",
+          "title": "La mezcla: rica, pobre y cómo se empobrece",
+          "duration": 73
+        }
       },
       {
         "title": "Efectos de la mezcla rica y pobre",
@@ -62,7 +69,14 @@
         "bullets": [
           "Prevención: grado de combustible correcto, mezcla rica según el POH y no sobrepasar los límites de presión de admisión y RPM.",
           "Corrección: enriquecer la mezcla, reducir potencia, aumentar la velocidad y abrir los flaps de capó si hay."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.15-detonacion-preencendido.mp4",
+          "vtt": "/video/lessons/020.15-detonacion-preencendido.vtt",
+          "poster": "/video/lessons/020.15-detonacion-preencendido-poster.jpg",
+          "title": "Detonación y preencendido",
+          "duration": 60
+        }
       },
       {
         "title": "Preencendido",

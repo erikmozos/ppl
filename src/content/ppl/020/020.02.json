@@ -45,7 +45,14 @@
         },
         "ideas": [
           "El triciclo es un carrito de supermercado empujado hacia delante: tiende a seguir recto. El tren convencional es empujar el carrito marcha atrás: cualquier desvío se agranda."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.02-tren.mp4",
+          "vtt": "/video/lessons/020.02-tren.vtt",
+          "poster": "/video/lessons/020.02-tren-poster.jpg",
+          "title": "Tipos de tren y amortiguadores",
+          "duration": 74
+        }
       },
       {
         "title": "Cargas en el tren de aterrizaje",
@@ -95,7 +102,14 @@
         ],
         "ideas": [
           "El shimmy es la rueda loca de un carro de la compra que empieza a temblar al ir deprisa; el amortiguador es la mano que la sujeta."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.02-rueda-morro.mp4",
+          "vtt": "/video/lessons/020.02-rueda-morro.vtt",
+          "poster": "/video/lessons/020.02-rueda-morro-poster.jpg",
+          "title": "Rueda de morro, shimmy y por qué no aterrizar de morro",
+          "duration": 70
+        }
       },
       {
         "title": "Aterrizaje sobre la rueda de morro",
@@ -133,7 +147,14 @@
         "verify": true,
         "ideas": [
           "Un pedal esponjoso es una manguera con aire dentro: aprietas y parte de la fuerza se gasta en comprimir las burbujas."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.02-frenos-neumaticos.mp4",
+          "vtt": "/video/lessons/020.02-frenos-neumaticos.vtt",
+          "poster": "/video/lessons/020.02-frenos-neumaticos-poster.jpg",
+          "title": "Frenos, neumáticos y aquaplaning",
+          "duration": 71
+        }
       },
       {
         "title": "Neumáticos",

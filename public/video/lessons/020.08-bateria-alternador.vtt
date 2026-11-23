@@ -1,0 +1,97 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:02.608
+En la avioneta hay dos fuentes de
+
+00:00:02.481 --> 00:00:03.590
+electricidad.
+
+00:00:03.609 --> 00:00:06.203
+La batería almacena energía química:
+
+00:00:06.166 --> 00:00:08.610
+sirve para arrancar y como reserva.
+
+00:00:09.523 --> 00:00:11.825
+La fuente principal es el alternador,
+
+00:00:11.795 --> 00:00:13.882
+que convierte el giro del motor en
+
+00:00:13.753 --> 00:00:15.664
+electricidad por inducción:
+
+00:00:15.640 --> 00:00:18.006
+un campo magnético que varía dentro de
+
+00:00:17.877 --> 00:00:19.880
+una bobina induce una tensión.
+
+00:00:20.785 --> 00:00:22.830
+Como el motor cambia de vueltas en
+
+00:00:22.701 --> 00:00:25.460
+cada fase, un regulador controla la corriente
+
+00:00:25.403 --> 00:00:27.249
+de la bobina de campo y mantiene
+
+00:00:27.182 --> 00:00:29.262
+la salida en unos catorce voltios,
+
+00:00:29.200 --> 00:00:31.262
+en un sistema de batería de doce.
+
+00:00:31.184 --> 00:00:33.177
+Si el regulador falla y la tensión
+
+00:00:33.099 --> 00:00:35.794
+sube, un relé de sobretensión desconecta el
+
+00:00:35.665 --> 00:00:36.571
+alternador.
+
+00:00:37.504 --> 00:00:39.463
+Todo se conecta en paralelo a una
+
+00:00:39.344 --> 00:00:40.840
+barra de distribución.
+
+00:00:40.844 --> 00:00:43.026
+Y un relé de desconexión impide que,
+
+00:00:42.922 --> 00:00:44.403
+si el alternador falla,
+
+00:00:44.319 --> 00:00:46.371
+la batería intente alimentarlo.
+
+00:00:47.314 --> 00:00:49.736
+¿Cómo sabes que el alternador no carga?
+
+00:00:49.670 --> 00:00:52.568
+El amperímetro marca descarga continua o cero,
+
+00:00:52.475 --> 00:00:54.614
+el voltímetro baja o se enciende la
+
+00:00:54.485 --> 00:00:55.452
+luz de aviso.
+
+00:00:55.385 --> 00:00:58.244
+Comprueba el disyuntor del alternador y rearma
+
+00:00:58.156 --> 00:00:59.145
+una sola vez.
+
+00:01:00.007 --> 00:01:02.177
+Si no vuelve, la batería sola aguanta
+
+00:01:02.097 --> 00:01:04.611
+unos treinta minutos con la carga mínima.
+
+00:01:04.551 --> 00:01:06.283
+Apaga lo que no sea esencial y
+
+00:01:06.143 --> 00:01:07.756
+planifica el aterrizaje.

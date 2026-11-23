@@ -83,7 +83,14 @@
         "ideas": [
           "Las aletas son como las del radiador de tu salón o como los dedos de un abanico: más superficie de contacto con el aire significa más calor que se va.",
           "Los deflectores son como los tabiques que encauzan el humo de una chimenea: sin ellos el aire se va por el camino más fácil y deja sin enfriar los rincones."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.12-refrigeracion.mp4",
+          "vtt": "/video/lessons/020.12-refrigeracion.vtt",
+          "poster": "/video/lessons/020.12-refrigeracion-poster.jpg",
+          "title": "Refrigeración por aire, CHT y enfriamiento brusco",
+          "duration": 66
+        }
       },
       {
         "title": "Medir la temperatura: el CHT y el termopar",

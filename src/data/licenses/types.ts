@@ -1,5 +1,8 @@
 // Tipos de la sección de licencias (recorrido modular EASA Part-FCL en España)
 
+/** Vídeo explicativo: src, subtítulos .vtt y póster servidos desde public/ */
+export interface LessonVideoRef { src: string; vtt?: string; poster?: string; title: string; duration?: number }
+
 export interface Table { caption?: string; head: string[]; rows: string[][]; src?: string }
 
 /** Bloque de contenido de estudio: texto, viñetas, tabla, fórmulas o ejemplos resueltos */
@@ -15,6 +18,8 @@ export interface Block {
   /** figura: 'svg:<nombre>' (src/content/ppl/figures/<nombre>.svg) o 'calc:<widget>' (calculadora interactiva) */
   figure?: string
   caption?: string
+  /** vídeo explicativo animado de la sección (archivos en public/video/lessons/) */
+  video?: LessonVideoRef
   /** nota destacada: diferencia española, aviso o consejo */
   note?: { kind: 'es' | 'warn' | 'tip'; text: string }
   /** «Para entenderlo»: comparaciones cotidianas, aunque sean tontas, que hacen intuitivo el concepto */
