@@ -58,7 +58,14 @@
         "ideas": [
           "Piensa en un pollo en el asador. El pincho que lo atraviesa de pico a cola es el eje longitudinal (rodar sobre sí mismo); el que cruza de ala a ala es el lateral (cabecear arriba y abajo); el que baja por el lomo es el vertical (girar como una peonza).",
           "Sacar la mano por la ventanilla del coche sirve de maqueta: inclínala, cúrvala o ábrela en abanico y notarás cómo cambia la fuerza del aire. Las superficies de mando hacen justo eso con el ala o con la cola."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.04-mandos-primarios.mp4",
+          "vtt": "/video/lessons/020.04-mandos-primarios.vtt",
+          "poster": "/video/lessons/020.04-mandos-primarios-poster.jpg",
+          "title": "Mandos primarios, ejes y cómo llega la orden",
+          "duration": 74
+        }
       },
       {
         "title": "Cómo llega la orden del piloto a la superficie",
@@ -172,7 +179,14 @@
         "ideas": [
           "La servoválvula es como el grifo de la bañera con tapón: al abrirlo entra agua por un lado, y al cerrarlo del todo el nivel se queda donde está. El seguimiento es la mano que va cerrando el grifo a medida que el agua llega al nivel que querías.",
           "La unidad Q feel es el muelle que ponen en los mandos de un simulador: no hace volar nada, solo te hace creer que el aire empuja, y evita que des un tirón de palanca que rompería el avión."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.04-asistidos.mp4",
+          "vtt": "/video/lessons/020.04-asistidos.vtt",
+          "poster": "/video/lessons/020.04-asistidos-poster.jpg",
+          "title": "Mandos asistidos: actuador, servoválvula y sensación artificial",
+          "duration": 59
+        }
       },
       {
         "title": "El momento de bisagra",
@@ -203,7 +217,14 @@
         "ideas": [
           "Es como abrir una puerta empujándola cerca de las bisagras: cuesta muchísimo, porque el brazo es corto. Empujando lejos, cuesta poco. El momento de bisagra es esa dificultad, y depende de cuánta fuerza haga el aire y de lo lejos de la bisagra que se aplique.",
           "Sacar una tabla grande por la ventanilla del coche a 120 km/h cuesta nueve veces más que a 40 km/h: no el triple, sino nueve. Esa es la V²."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.04-bisagra-tabs.mp4",
+          "vtt": "/video/lessons/020.04-bisagra-tabs.vtt",
+          "poster": "/video/lessons/020.04-bisagra-tabs-poster.jpg",
+          "title": "Momento de bisagra, compensación aerodinámica y tabs",
+          "duration": 77
+        }
       },
       {
         "title": "Compensación aerodinámica: bisagra retrasada, horn e interna",
@@ -335,7 +356,14 @@
         "ideas": [
           "Es como empujar un carrito de supermercado con una rueda que roza: el lado que frena más hace girar el carro hacia sí. El ala con más resistencia es la rueda que roza.",
           "El alerón Frise es una cuchara de remo que se hunde más de un lado de la barca para compensar que el otro lado ya empuja más."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.04-guinada-adversa.mp4",
+          "vtt": "/video/lessons/020.04-guinada-adversa.vtt",
+          "poster": "/video/lessons/020.04-guinada-adversa-poster.jpg",
+          "title": "Guiñada adversa e inversión del alerón",
+          "duration": 63
+        }
       },
       {
         "title": "Inversión del alerón y alerones interiores",
@@ -395,7 +423,14 @@
         "ideas": [
           "Sacar los flaps es como abrir las alas de un abanico: la superficie crece y se curva, el aire empuja más, pero también frena más. Por eso puedes bajar la velocidad sin caerte, y por eso la rampa de aproximación se vuelve más empinada.",
           "El sistema de alivio de carga es el fusible mecánico del hipersustentador: si la velocidad pasa de un valor, repliega los flaps igual que un paraguas se da la vuelta antes de romperse."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.04-flaps-slats.mp4",
+          "vtt": "/video/lessons/020.04-flaps-slats.vtt",
+          "poster": "/video/lessons/020.04-flaps-slats-poster.jpg",
+          "title": "Flaps y slats: mandos secundarios",
+          "duration": 64
+        }
       },
       {
         "title": "Dispositivos de borde de ataque: slats y auto slats",

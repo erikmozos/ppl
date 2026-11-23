@@ -153,7 +153,14 @@
         ],
         "ideas": [
           "El octanaje es la serenidad de la gasolina bajo presión: una de 100 octanos aguanta que la aprieten mucho sin perder los nervios y explotar antes de tiempo. No es la fuerza (la energía), es la sangre fría."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.10-avgas-octanaje.mp4",
+          "vtt": "/video/lessons/020.10-avgas-octanaje.vtt",
+          "poster": "/video/lessons/020.10-avgas-octanaje-poster.jpg",
+          "title": "Octanaje, grados y colores de la AVGAS",
+          "duration": 65
+        }
       },
       {
         "title": "Grados y colores",

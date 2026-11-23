@@ -55,7 +55,14 @@
           "El venturi es como estrechar una manguera con el pulgar: el agua sale más deprisa por el hueco y la presión cae; esa caída de presión es la que aspira la gasolina como una pajita.",
           "La cuba de flotador funciona como la cisterna del váter: el flotador cierra la entrada cuando el agua llega a su nivel, y así la descarga siempre es igual.",
           "La bomba de aceleración es dar un empujón de más al columpio justo al arrancarlo: ayuda cuando el motor pide mucho de golpe."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.11-carburador-inyeccion.mp4",
+          "vtt": "/video/lessons/020.11-carburador-inyeccion.vtt",
+          "poster": "/video/lessons/020.11-carburador-inyeccion-poster.jpg",
+          "title": "El carburador de flotador y la inyección",
+          "duration": 58
+        }
       },
       {
         "title": "Hielo de carburador: por qué se forma",
@@ -92,7 +99,14 @@
         "ideas": [
           "Es lo que notas cuando te echas alcohol en la mano: al evaporarse se siente frío. La gasolina que se evapora enfría el aire del carburador igual, y esa humedad se congela.",
           "El hielo de impacto es como la escarcha que se forma en el parabrisas al conducir con niebla helada: se pega a lo primero que toca."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.11-hielo-carburador.mp4",
+          "vtt": "/video/lessons/020.11-hielo-carburador.vtt",
+          "poster": "/video/lessons/020.11-hielo-carburador-poster.jpg",
+          "title": "Hielo de carburador: cuándo aparece y qué hacer",
+          "duration": 71
+        }
       },
       {
         "title": "Cuándo hay riesgo",

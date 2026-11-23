@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:02.377
+¿Qué pasa el día que una pieza
+
+00:00:02.287 --> 00:00:04.419
+del avión se cansa o se rompe?
+
+00:00:04.364 --> 00:00:07.133
+Los ingenieros tienen tres respuestas,
+
+00:00:07.120 --> 00:00:09.411
+y cada una decide cómo se mantiene
+
+00:00:09.357 --> 00:00:10.290
+esa pieza.
+
+00:00:11.186 --> 00:00:11.989
+Primera:
+
+00:00:11.954 --> 00:00:12.999
+vida segura.
+
+00:00:12.953 --> 00:00:14.921
+La pieza tiene una vida fija,
+
+00:00:14.835 --> 00:00:17.228
+calculada por fatiga, en horas o en
+
+00:00:17.101 --> 00:00:18.453
+número de vuelos.
+
+00:00:18.407 --> 00:00:20.352
+Al llegar al final se cambia,
+
+00:00:20.289 --> 00:00:21.510
+esté como esté.
+
+00:00:21.441 --> 00:00:23.988
+Como un yogur con fecha de caducidad.
+
+00:00:24.926 --> 00:00:25.664
+Segunda:
+
+00:00:25.618 --> 00:00:26.920
+a prueba de fallos.
+
+00:00:26.863 --> 00:00:29.054
+La carga viaja por varios caminos.
+
+00:00:29.008 --> 00:00:30.806
+Si aparece una grieta en uno,
+
+00:00:30.703 --> 00:00:33.291
+los demás siguen aguantando el avión hasta
+
+00:00:33.193 --> 00:00:35.789
+que alguien la encuentre en una revisión.
+
+00:00:35.753 --> 00:00:37.698
+Como una mochila con dos asas.
+
+00:00:38.571 --> 00:00:39.304
+Tercera:
+
+00:00:39.257 --> 00:00:40.570
+tolerante al daño.
+
+00:00:40.492 --> 00:00:41.668
+No hay vida fija.
+
+00:00:41.590 --> 00:00:43.842
+La pieza soporta el fallo de elementos
+
+00:00:43.785 --> 00:00:46.271
+sueltos, pero solo si se inspecciona con
+
+00:00:46.152 --> 00:00:48.271
+regularidad y se evalúa a menudo su
+
+00:00:48.142 --> 00:00:48.816
+estado.
+
+00:00:49.709 --> 00:00:51.239
+La clave de todo esto es la
+
+00:00:51.109 --> 00:00:52.052
+redundancia:
+
+00:00:52.042 --> 00:00:54.972
+multiplicar los componentes críticos para que el
+
+00:00:54.842 --> 00:00:56.408
+fallo de uno no sea el fallo
+
+00:00:56.308 --> 00:00:57.225
+del sistema.
+
+00:00:57.175 --> 00:00:58.996
+Lo mecánico se suele duplicar,
+
+00:00:58.941 --> 00:01:01.171
+y lo electrónico se puede triplicar.
+
+00:01:02.091 --> 00:01:03.145
+¿Por qué tres?
+
+00:01:03.074 --> 00:01:04.969
+Porque si un canal discrepa,
+
+00:01:04.927 --> 00:01:07.308
+los otros dos le ganan por mayoría.
+
+00:01:07.272 --> 00:01:09.572
+Con solo dos, cuando no coinciden,
+
+00:01:09.541 --> 00:01:11.415
+no sabes cuál tiene razón.
+
+00:01:12.306 --> 00:01:12.965
+Repaso:
+
+00:01:12.904 --> 00:01:15.002
+vida segura, se cambia por horas.
+
+00:01:14.932 --> 00:01:16.104
+A prueba de fallos,
+
+00:01:16.029 --> 00:01:17.628
+varios caminos de carga.
+
+00:01:17.558 --> 00:01:20.147
+Tolerante al daño, inspección constante.

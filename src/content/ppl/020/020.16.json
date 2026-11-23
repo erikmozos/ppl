@@ -32,7 +32,14 @@
         "ideas": [
           "En un tiovivo, los que van en el borde exterior recorren mucho más camino que los del centro en cada vuelta: así se mueve la punta de la pala frente a la raíz.",
           "El borde de ataque es la parte de la pala que «muerde» el aire, como el filo de un cuchillo que entra primero en la tarta."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.16-pala.mp4",
+          "vtt": "/video/lessons/020.16-pala.vtt",
+          "poster": "/video/lessons/020.16-pala-poster.jpg",
+          "title": "Geometría de la pala: ángulo de pala, de avance y de ataque",
+          "duration": 53
+        }
       },
       {
         "title": "Ángulo de pala, de avance y de ataque",

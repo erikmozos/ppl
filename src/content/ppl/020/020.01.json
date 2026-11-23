@@ -47,7 +47,14 @@
           "Vida segura es el yogur con fecha de caducidad: se tira el día marcado aunque huela perfecto.",
           "A prueba de fallos es la mochila con dos asas: si se rompe una, no se te cae todo al suelo.",
           "Tolerante al daño es el coche que no se cambia a los 200 000 km, sino cuando el mecánico, revisión tras revisión, dice que el desgaste ya no es aceptable."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.01-filosofias.mp4",
+          "vtt": "/video/lessons/020.01-filosofias.vtt",
+          "poster": "/video/lessons/020.01-filosofias-poster.jpg",
+          "title": "Vida segura, a prueba de fallos y tolerante al daño",
+          "duration": 84
+        }
       },
       {
         "title": "Redundancia",
@@ -143,7 +150,14 @@
         "ideas": [
           "Una pajita de refresco apretada por los extremos se dobla mucho antes de aplastarse: eso es el pandeo.",
           "Una lata vacía aguanta que te subas encima, pero si le das un golpecito de lado se arruga: aguanta mucho bien centrada y poco con un defecto."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.01-esfuerzo-pandeo.mp4",
+          "vtt": "/video/lessons/020.01-esfuerzo-pandeo.vtt",
+          "poster": "/video/lessons/020.01-esfuerzo-pandeo-poster.jpg",
+          "title": "Esfuerzo, deformación, límite elástico y pandeo",
+          "duration": 76
+        }
       },
       {
         "title": "Deformación y límite elástico",
@@ -221,7 +235,14 @@
         "ideas": [
           "Doblar un clip hacia delante y hacia atrás: no se rompe al primer doblez, pero se acaba partiendo con la fuerza de un niño.",
           "Una bolsa de patatas se rasga con facilidad si empiezas por la muesca: el esfuerzo se concentra en ese punto."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.01-fatiga-corrosion.mp4",
+          "vtt": "/video/lessons/020.01-fatiga-corrosion.vtt",
+          "poster": "/video/lessons/020.01-fatiga-corrosion-poster.jpg",
+          "title": "Fatiga, corrosión y tipos de mantenimiento",
+          "duration": 86
+        }
       },
       {
         "title": "Corrosión",
@@ -369,7 +390,14 @@
           "El monocasco es una cáscara de huevo: fina y resistente por su forma, pero una pequeña grieta la debilita mucho.",
           "El semimonocasco es la cáscara de huevo con costillas por dentro, como el casco de un barco: si falla una, las demás ayudan."
         ],
-        "verify": true
+        "verify": true,
+        "video": {
+          "src": "/video/lessons/020.01-monocasco.mp4",
+          "vtt": "/video/lessons/020.01-monocasco.vtt",
+          "poster": "/video/lessons/020.01-monocasco-poster.jpg",
+          "title": "Monocasco, semimonocasco, materiales y remaches",
+          "duration": 84
+        }
       },
       {
         "title": "Partes del ala, del fuselaje y del empenaje",
@@ -458,6 +486,13 @@
         "note": {
           "kind": "warn",
           "text": "Los textos del curso son escuetos sobre el ala semivoladizo y los fabricantes usan los términos con matices; para el examen, recuerda: voladizo = sin apoyos exteriores, arriostrada = montantes exteriores y ambas con apoyos tienen más resistencia."
+        },
+        "video": {
+          "src": "/video/lessons/020.01-ala-empenaje.mp4",
+          "vtt": "/video/lessons/020.01-ala-empenaje.vtt",
+          "poster": "/video/lessons/020.01-ala-empenaje-poster.jpg",
+          "title": "Ala en voladizo o arriostrada, cola convencional o en T",
+          "duration": 73
         }
       },
       {
@@ -492,7 +527,14 @@
         "ideas": [
           "Una persiana mal sujeta que vibra con el viento, o la bandera que ondea cada vez más fuerte: cada sacudida alimenta la siguiente.",
           "El contrapeso es el cero del timón: es como cargar una puerta de forma que no se vaya sola a un lado."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.01-flutter.mp4",
+          "vtt": "/video/lessons/020.01-flutter.vtt",
+          "poster": "/video/lessons/020.01-flutter-poster.jpg",
+          "title": "Flutter y equilibrado de masas",
+          "duration": 59
+        }
       },
       {
         "title": "Fuselaje y envolvente presurizada",
@@ -534,7 +576,14 @@
         "ideas": [
           "Un puente con un cartel de «máximo 10 toneladas» está construido para aguantar bastante más, pero no para que lo cruces con más cada día."
         ],
-        "verify": true
+        "verify": true,
+        "video": {
+          "src": "/video/lessons/020.01-factor-carga.mp4",
+          "vtt": "/video/lessons/020.01-factor-carga.vtt",
+          "poster": "/video/lessons/020.01-factor-carga-poster.jpg",
+          "title": "Factor de carga, carga límite y carga última, y la MZFM",
+          "duration": 75
+        }
       },
       {
         "title": "Masas estructurales máximas y la MZFM",

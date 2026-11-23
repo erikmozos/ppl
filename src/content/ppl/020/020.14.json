@@ -27,7 +27,14 @@
         ],
         "bullets": [
           "Ventajas: funciona sin el sistema eléctrico principal, es muy fiable y redundante, mantiene el encendido aunque se pierda toda la electricidad de a bordo, y aumenta la seguridad al reducir el riesgo de parada del motor por fallo de encendido."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.14-encendido.mp4",
+          "vtt": "/video/lessons/020.14-encendido.vtt",
+          "poster": "/video/lessons/020.14-encendido-poster.jpg",
+          "title": "Magnetos, doble encendido y prueba de magnetos",
+          "duration": 74
+        }
       },
       {
         "title": "Doble encendido: seguridad y rendimiento",

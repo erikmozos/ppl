@@ -1,0 +1,91 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.946
+Una avería eléctrica puede provocar sobrecorriente,
+
+00:00:03.973 --> 00:00:06.018
+calentamiento y, en un avión,
+
+00:00:05.942 --> 00:00:06.952
+un incendio.
+
+00:00:06.927 --> 00:00:09.268
+Por eso cada circuito va protegido,
+
+00:00:09.237 --> 00:00:11.569
+siempre en serie con lo que cuida.
+
+00:00:12.460 --> 00:00:14.304
+El fusible lleva un hilo que se
+
+00:00:14.175 --> 00:00:16.430
+funde con la sobrecorriente y abre el
+
+00:00:16.301 --> 00:00:17.092
+circuito.
+
+00:00:17.055 --> 00:00:19.164
+Se puede sustituir una sola vez por
+
+00:00:19.044 --> 00:00:20.739
+otro del mismo tipo y valor,
+
+00:00:20.656 --> 00:00:22.878
+y es obligatorio llevar repuestos.
+
+00:00:23.801 --> 00:00:25.941
+El disyuntor, o circuit breaker,
+
+00:00:25.883 --> 00:00:28.021
+hace de interruptor y fusible a la
+
+00:00:27.892 --> 00:00:28.408
+vez:
+
+00:00:28.323 --> 00:00:29.587
+salta con el calor,
+
+00:00:29.507 --> 00:00:31.753
+se puede rearmar, y puedes tirar de
+
+00:00:31.625 --> 00:00:33.810
+él a mano para aislar un circuito.
+
+00:00:34.728 --> 00:00:35.889
+Hay dos clases.
+
+00:00:35.839 --> 00:00:38.431
+El no trip-free se puede mantener cerrado
+
+00:00:38.358 --> 00:00:39.922
+con la avería presente,
+
+00:00:39.877 --> 00:00:41.227
+y eso es peligroso.
+
+00:00:41.211 --> 00:00:43.561
+El trip-free no se cierra mientras la
+
+00:00:43.433 --> 00:00:45.658
+avería siga, aunque lo sujetes.
+
+00:00:46.569 --> 00:00:48.014
+Si un disyuntor salta,
+
+00:00:47.932 --> 00:00:49.258
+rearma una sola vez,
+
+00:00:49.155 --> 00:00:51.031
+tras esperar un minuto a que se
+
+00:00:50.902 --> 00:00:51.587
+enfríe.
+
+00:00:51.531 --> 00:00:52.756
+Si vuelve a saltar,
+
+00:00:52.684 --> 00:00:53.708
+no lo rearmes:
+
+00:00:53.663 --> 00:00:55.445
+hay un fallo en el circuito.

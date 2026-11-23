@@ -22,7 +22,14 @@
         "ideas": [
           "Una gota subenfriada es como un jugador de bingo que no ha cantado línea: sigue de pie mientras nadie lo toque, pero a la primera sacudida se congela de golpe. El ala le da esa sacudida.",
           "Un parabrisas de coche en una noche fría y húmeda se llena de escarcha antes que el resto de la chapa: la forma y la temperatura de la superficie deciden dónde se pega primero el hielo."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.05-hielo.mp4",
+          "vtt": "/video/lessons/020.05-hielo.vtt",
+          "poster": "/video/lessons/020.05-hielo-poster.jpg",
+          "title": "Cómo se forma el hielo, sus efectos y sus tipos",
+          "duration": 72
+        }
       },
       {
         "title": "Efectos del hielo",
@@ -170,7 +177,14 @@
         ],
         "ideas": [
           "Es como romper el hielo de una bandeja doblándola: se hincha y se deshincha, el hielo se agrieta y se cae. Solo funciona si ya hay hielo que romper."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.05-proteccion-hielo.mp4",
+          "vtt": "/video/lessons/020.05-proteccion-hielo.vtt",
+          "poster": "/video/lessons/020.05-proteccion-hielo-poster.jpg",
+          "title": "Antihielo y deshielo: botas, calor, fluido y pitot",
+          "duration": 74
+        }
       },
       {
         "title": "Protección térmica y por fluido",
@@ -263,7 +277,14 @@
         ],
         "ideas": [
           "El CO es el invitado invisible de la calefacción de leña mal ventilada: no huele, no se ve, y cuando notas algo ya estás mareado."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.05-monoxido.mp4",
+          "vtt": "/video/lessons/020.05-monoxido.vtt",
+          "poster": "/video/lessons/020.05-monoxido-poster.jpg",
+          "title": "Calefacción de cabina y monóxido de carbono",
+          "duration": 52
+        }
       }
     ],
     "outline": [
