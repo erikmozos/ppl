@@ -51,7 +51,9 @@ async function tts(text){
   const body={contents:[{parts:[{text:STYLE+"\n\n"+text}]}],generationConfig:{responseModalities:['AUDIO'],speechConfig:{voiceConfig:{prebuiltVoiceConfig:{voiceName:$('voice').value}}}}};
   const r=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${$('model').value}:generateContent`,{method:'POST',headers:{'x-goog-api-key':key,'Content-Type':'application/json'},body:JSON.stringify(body)});
   const d=await r.json(); if(d.error){const e=new Error(d.error.message||'error');e.code=d.error.code;throw e;}
-  const p=d.candidates[0].content.parts.find(x=>x.inlineData); return Uint8Array.from(atob(p.inlineData.data),c=>c.charCodeAt(0));
+  const c=d.candidates&&d.candidates[0]; const p=c&&c.content&&c.content.parts&&c.content.parts.find(x=>x.inlineData);
+  if(!p) throw new Error('Gemini no devolvió audio ('+((c&&c.finishReason)||'sin respuesta')+')');
+  return Uint8Array.from(atob(p.inlineData.data),c=>c.charCodeAt(0));
 }
 async function run(){
   if(running) return; running=true; clearTimeout(timer);
@@ -62,7 +64,7 @@ async function run(){
     try{ const pcm=await tts(it.text); await put(it.id,{wav:wav(pcm),dur:pcm.length/48000,model:$('model').value,voice:$('voice').value}); await render(); await new Promise(r=>setTimeout(r,7000)); }
     catch(e){
       if(e.code===429){const t=new Date(Date.now()+30*60000); status(`Cuota agotada por ahora. Reintento automático a las ${t.toLocaleTimeString('es-ES',{hour:'2-digit',minute:'2-digit'})} (deja la página abierta). La cuota diaria gratuita se renueva sobre las 9:00.`,'err'); running=false; timer=setTimeout(run,30*60000); break;}
-      status('Error en '+it.id+': '+e.message+' · reintento en 60 s','err'); await new Promise(r=>setTimeout(r,60000));
+      status('Error en '+it.id+': '+e.message+' · reintento en 20 s','err'); await new Promise(r=>setTimeout(r,20000));
     }
   }
 }
