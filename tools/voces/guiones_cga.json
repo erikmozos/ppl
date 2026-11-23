@@ -1,0 +1,1613 @@
+[
+ {
+  "id": "020.01-cargas",
+  "lesson": "020.01",
+  "sections": [
+   3
+  ],
+  "title": "Las 5 cargas que aguanta tu avión",
+  "done": true,
+  "scenes": [
+   {
+    "text": "Tu avión aguanta cinco tipos de carga, muchas veces a la vez. Y en el examen te las van a preguntar. Vamos una a una.",
+    "visual": "Título con avión y 5 cargas"
+   },
+   {
+    "text": "Primera: la tracción. Separa los extremos y estira la pieza, como una goma elástica. En vuelo la sufre el montante del ala de la Cessna.",
+    "visual": "Barra estirándose y montante en vuelo"
+   },
+   {
+    "text": "Segunda: la compresión. Empuja hacia dentro y acorta la pieza, como cuando aprietas un muelle. La encuentras en el tren de aterrizaje cada vez que tocas pista.",
+    "visual": "Barra comprimida y tren al tocar pista"
+   },
+   {
+    "text": "Tercera: la cortadura, o cizalladura. Es una fuerza tangencial que intenta que una chapa resbale sobre la otra, como las hojas de unas tijeras. Es la carga típica de los remaches.",
+    "visual": "Chapas remachadas con plano de corte"
+   },
+   {
+    "text": "Cuarta: la flexión, que combina las dos primeras. En vuelo, la sustentación curva el ala hacia arriba: el extradós se comprime y el intradós se estira. Por eso el larguero tiene dos cabezas separadas por un alma. Y ojo: en tierra, el sentido se invierte.",
+    "visual": "Ala curvándose, larguero y en tierra"
+   },
+   {
+    "text": "Quinta: la torsión, el retorcimiento a lo largo del eje, como cuando escurres una toalla. La sufre el eje de la hélice, y también el ala cuando mueves los alerones.",
+    "visual": "Eje retorciéndose, hélice y alerones"
+   },
+   {
+    "text": "Repaso rápido: tracción estira, compresión acorta, cortadura desliza, flexión dobla y torsión retuerce. Y recuerda: una misma pieza suele soportar varias a la vez.",
+    "visual": "Tarjetas de repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.01-filosofias",
+  "lesson": "020.01",
+  "sections": [
+   1,
+   2
+  ],
+  "title": "Vida segura, a prueba de fallos y tolerante al daño",
+  "scenes": [
+   {
+    "text": "¿Qué pasa el día que una pieza del avión se cansa o se rompe? Los ingenieros tienen tres respuestas, y cada una decide cómo se mantiene esa pieza.",
+    "visual": "Título + avión con una pieza parpadeando en rojo"
+   },
+   {
+    "text": "Primera: vida segura. La pieza tiene una vida fija, calculada por fatiga, en horas o en número de vuelos. Al llegar al final se cambia, esté como esté. Como un yogur con fecha de caducidad.",
+    "visual": "Pieza con contador de horas llegando a cero y siendo sustituida"
+   },
+   {
+    "text": "Segunda: a prueba de fallos. La carga viaja por varios caminos. Si aparece una grieta en uno, los demás siguen aguantando el avión hasta que alguien la encuentre en una revisión. Como una mochila con dos asas.",
+    "visual": "Varios caminos de carga; uno se agrieta y la carga se reparte"
+   },
+   {
+    "text": "Tercera: tolerante al daño. No hay vida fija. La pieza soporta el fallo de elementos sueltos, pero solo si se inspecciona con regularidad y se evalúa a menudo su estado.",
+    "visual": "Estructura con lupa de inspección periódica"
+   },
+   {
+    "text": "La clave de todo esto es la redundancia: multiplicar los componentes críticos para que el fallo de uno no sea el fallo del sistema. Lo mecánico se suele duplicar, y lo electrónico se puede triplicar.",
+    "visual": "Dos actuadores mecánicos y tres canales electrónicos"
+   },
+   {
+    "text": "¿Por qué tres? Porque si un canal discrepa, los otros dos le ganan por mayoría. Con solo dos, cuando no coinciden, no sabes cuál tiene razón.",
+    "visual": "Votación 2 contra 1 entre tres canales"
+   },
+   {
+    "text": "Repaso: vida segura, se cambia por horas. A prueba de fallos, varios caminos de carga. Tolerante al daño, inspección constante.",
+    "visual": "Tarjetas de repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.01-esfuerzo-pandeo",
+  "lesson": "020.01",
+  "sections": [
+   4,
+   5,
+   6
+  ],
+  "title": "Esfuerzo, deformación, límite elástico y pandeo",
+  "scenes": [
+   {
+    "text": "Cuando cargas una pieza, por dentro aparece una especie de presión interna. Se llama esfuerzo, y es la fuerza por unidad de superficie.",
+    "visual": "Barra con flechas y sección coloreada"
+   },
+   {
+    "text": "La misma carga produce más esfuerzo en una pieza fina que en una gruesa. Por eso se refuerzan las zonas donde la carga se concentra.",
+    "visual": "Pieza fina roja frente a gruesa azul con la misma carga"
+   },
+   {
+    "text": "El esfuerzo provoca deformación: un cambio de forma que se mide en porcentaje. Una barra de cien milímetros que se estira dos décimas tiene una deformación del cero coma dos por ciento.",
+    "visual": "Barra de 100 mm estirándose 0,2 mm"
+   },
+   {
+    "text": "Mientras el material es elástico, esfuerzo y deformación van a la par, y al quitar la carga la pieza recupera su forma. Si superas el límite elástico, la deformación se queda para siempre: es plástica.",
+    "visual": "Curva esfuerzo-deformación: tramo recto elástico y tramo plástico"
+   },
+   {
+    "text": "Ojo con el pandeo: una pieza comprimida se dobla de lado con esfuerzos mucho menores que los de rotura. Si ves arrugas o abolladuras en el revestimiento, el avión ha sufrido cargas anormales: avisa a mantenimiento antes de volar.",
+    "visual": "Panel comprimido que se arruga"
+   },
+   {
+    "text": "Y las cargas, según cómo cambian: estáticas, como el peso de la estructura; dinámicas, como la sustentación; y cíclicas, como las ráfagas y las vibraciones, que son las que causan la fatiga.",
+    "visual": "Tres gráficas: constante, variable, periódica"
+   }
+  ]
+ },
+ {
+  "id": "020.01-fatiga-corrosion",
+  "lesson": "020.01",
+  "sections": [
+   7,
+   8,
+   9,
+   10
+  ],
+  "title": "Fatiga, corrosión y tipos de mantenimiento",
+  "scenes": [
+   {
+    "text": "La fatiga es el debilitamiento de un material por esfuerzos repetidos. Lo sorprendente es que una carga mucho menor que la de rotura, repetida suficientes veces, puede romper una pieza metálica de golpe.",
+    "visual": "Clip doblándose una y otra vez hasta romperse"
+   },
+   {
+    "text": "Depende de dos cosas: cuánto esfuerzo se repite y cuántos ciclos se acumulan. Y las grietas nacen donde se concentran los esfuerzos: agujeros de remaches, esquinas vivas y arañazos. Por eso las ventanillas son redondeadas.",
+    "visual": "Grieta naciendo en el borde de un agujero; ventana cuadrada frente a redonda"
+   },
+   {
+    "text": "La corrosión es un proceso químico, y casi siempre hay agua detrás. Dos tipos con nombre propio: bajo tensión, cuando la corrosión abre la grieta y la fatiga la hace crecer; y galvánica, cuando dos metales distintos se tocan sin aislar.",
+    "visual": "Gota de agua entre dos metales formando una pila"
+   },
+   {
+    "text": "Se detecta por el color: óxido rojo o naranja en el acero, polvo blanco o gris en el aluminio, y un depósito azul verdoso en el cobre. Y los drenajes del fuselaje y las alas tienen que estar libres.",
+    "visual": "Muestras de color por material"
+   },
+   {
+    "text": "Para decidir cuándo cambiar una pieza hay dos criterios. Hard-time: por horas o ciclos, como la revisión general del motor. On-condition: por su estado, como las pastillas de freno o el dibujo del neumático.",
+    "visual": "Reloj de horas frente a lupa de inspección"
+   },
+   {
+    "text": "Recuerda: on-condition no significa cambiarla cuando falla. Se cambia cuando la inspección dice que ya no es fiable, antes de que falle.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.01-monocasco",
+  "lesson": "020.01",
+  "sections": [
+   12,
+   13,
+   14,
+   15
+  ],
+  "title": "Monocasco, semimonocasco, materiales y remaches",
+  "scenes": [
+   {
+    "text": "Una estructura de avión necesita dos cosas: resistencia para aguantar las cargas, y rigidez para no deformarse. Hay dos formas clásicas de conseguirlo.",
+    "visual": "Fuselaje en sección"
+   },
+   {
+    "text": "En el monocasco, el revestimiento grueso soporta casi todo, y las cuadernas solo le dan forma. Es sencillo, pero frágil ante cargas concentradas: una abolladura le quita resistencia.",
+    "visual": "Tubo de revestimiento con cuadernas; abolladura en rojo"
+   },
+   {
+    "text": "El semimonocasco añade largueros, larguerillos y más cuadernas. Los largueros dan rigidez a lo largo, sobre todo frente a la flexión; los larguerillos ayudan con las cargas laterales; y las cuadernas, con la torsión. Es ligero, resistente y redundante: es el del PA-28 y el de la Cessna 172.",
+    "visual": "Esqueleto que se construye pieza a pieza con etiquetas"
+   },
+   {
+    "text": "En el ala, los largueros soportan la flexión, las costillas dan forma al perfil, y dentro van los depósitos de combustible.",
+    "visual": "Ala en corte: larguero, costillas, depósito"
+   },
+   {
+    "text": "El material estrella es el aluminio, por su relación resistencia-peso, a menudo con una capa protectora llamada Alclad. El acero va donde la resistencia es crítica, como la bancada del motor o el tren. Y el titanio, en el cortafuegos.",
+    "visual": "Iconos de materiales sobre el avión"
+   },
+   {
+    "text": "Las chapas se unen con remaches. Y un detalle de examen: los remaches están pensados para trabajar a cortadura, no para que se tire de ellos.",
+    "visual": "Remache formando su segunda cabeza; flecha de cortadura"
+   }
+  ]
+ },
+ {
+  "id": "020.01-ala-empenaje",
+  "lesson": "020.01",
+  "sections": [
+   16,
+   17
+  ],
+  "title": "Ala en voladizo o arriostrada, cola convencional o en T",
+  "scenes": [
+   {
+    "text": "¿Por qué el ala de la Cessna lleva montantes y la del PA-28 no? Todo depende de cómo se reparten las cargas.",
+    "visual": "Cessna de frente con montantes junto a PA-28"
+   },
+   {
+    "text": "El ala en voladizo no tiene apoyos exteriores: lleva todas las cargas por dentro hasta la raíz. Es la del PA-28.",
+    "visual": "Ala sin montante con carga hasta la raíz"
+   },
+   {
+    "text": "El ala arriostrada se apoya en montantes que alivian la flexión en la raíz. Permite un ala más ligera, pero a cambio tiene más resistencia aerodinámica. Es la de la Cessna 172, y en vuelo su montante trabaja a tracción.",
+    "visual": "Montante resaltado en azul con flechas de tracción"
+   },
+   {
+    "text": "En la cola, la configuración convencional pone el estabilizador algo por encima del ala, para que no le moje el aire perturbado.",
+    "visual": "Vista lateral con estela del ala"
+   },
+   {
+    "text": "La cola en T lo sube a lo alto de la deriva, en aire limpio, y así es menos propensa al flutter. Pero tiene dos pegas: es más susceptible a la pérdida profunda, cuando la estela del ala envuelve la cola y el timón de profundidad deja de responder; y carga más la deriva, que tiene que ser más fuerte y más pesada.",
+    "visual": "Cola en T; a gran ángulo de ataque la estela la envuelve"
+   },
+   {
+    "text": "Resumen: voladizo, sin apoyos. Arriostrada, con montantes. Cola en T, aire limpio, pero cuidado con la pérdida profunda.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.01-flutter",
+  "lesson": "020.01",
+  "sections": [
+   19
+  ],
+  "title": "Flutter y equilibrado de masas",
+  "scenes": [
+   {
+    "text": "El flutter es una vibración que se alimenta a sí misma. Suele aparecer en el estabilizador horizontal o en las puntas de ala, y puede acabar en un fallo catastrófico.",
+    "visual": "Superficie de mando vibrando con amplitud creciente"
+   },
+   {
+    "text": "Nace de la interacción de tres cosas: las fuerzas aerodinámicas, las fuerzas de inercia y la elasticidad de la estructura. Y no debe aparecer en ningún punto de la envolvente normal de vuelo.",
+    "visual": "Tres flechas que se combinan"
+   },
+   {
+    "text": "Se previene con el equilibrado de masas: unos contrapesos acercan el centro de gravedad de la superficie de mando a su línea de bisagra, y eso cambia cómo vibra.",
+    "visual": "Contrapeso delante de la bisagra; centro de gravedad que se desplaza"
+   },
+   {
+    "text": "Por eso los contrapesos no se tocan, y repintar una superficie de mando sin volver a equilibrarla puede ser peligroso, porque la pintura añade peso detrás de la bisagra.",
+    "visual": "Capa de pintura añadiendo masa detrás de la bisagra"
+   },
+   {
+    "text": "Y cuanto más rápido vuelas, más fácil es el flutter. Tu velocidad nunca exceder, la VNE, deja un margen con respecto a esa vibración.",
+    "visual": "Anemómetro con la línea roja de VNE"
+   }
+  ]
+ },
+ {
+  "id": "020.01-factor-carga",
+  "lesson": "020.01",
+  "sections": [
+   21,
+   22
+  ],
+  "title": "Factor de carga, carga límite y carga última, y la MZFM",
+  "scenes": [
+   {
+    "text": "El factor de carga es la relación entre la fuerza que soporta la estructura y el peso del avión. Se mide en g.",
+    "visual": "Avión en viraje con indicador de g"
+   },
+   {
+    "text": "La carga límite es la máxima que se espera en operación normal, y la estructura debe aguantarla sin deformarse para siempre. Multiplicada por un factor de seguridad de uno coma cinco, da la carga última, que debe soportar tres segundos sin romperse.",
+    "visual": "Escala: límite, por 1,5, última"
+   },
+   {
+    "text": "Entre las dos, puede quedar deformación permanente, pero no rotura.",
+    "visual": "Zona entre límite y última en ámbar"
+   },
+   {
+    "text": "Las cifras de examen: categoría normal, más tres coma ocho y menos uno coma cincuenta y dos g. Utility, más cuatro coma cuatro. Acrobática, más seis y menos tres. Y con flaps, normalmente más dos g, según el POH.",
+    "visual": "Tabla animada de categorías"
+   },
+   {
+    "text": "Y una masa curiosa, la MZFM, la masa máxima sin combustible utilizable. Existe porque el combustible de las alas pesa hacia abajo y contrarresta parte de la flexión de la sustentación. Al gastarlo, la raíz del ala queda más cargada.",
+    "visual": "Ala con combustible frente a ala vacía; flexión mayor en la raíz"
+   },
+   {
+    "text": "En el PA-28 y en la Cessna 172 el POH no publica MZFM: allí lo que manda es la masa máxima de despegue y el centrado.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.02-tren",
+  "lesson": "020.02",
+  "sections": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "title": "Tipos de tren y amortiguadores",
+  "scenes": [
+   {
+    "text": "El tren de aterrizaje es lo único que une el avión con el suelo: lo sostiene, absorbe el golpe del aterrizaje y le deja rodar y frenar.",
+    "visual": "Avión de lado tocando pista"
+   },
+   {
+    "text": "El más común es el triciclo: dos ruedas principales detrás del centro de gravedad y una de morro. Es estable en tierra, porque si te desvías, la propia inercia te devuelve a la trayectoria. Es el del PA-28 y la Cessna 172.",
+    "visual": "Vista superior: CG delante del tren principal; desvío que se corrige"
+   },
+   {
+    "text": "El convencional, con patín de cola, tiene el centro de gravedad detrás de las ruedas principales. Un desvío tiende a crecer, y acabas en un trompo.",
+    "visual": "CG detrás; desvío que crece en espiral"
+   },
+   {
+    "text": "Las mayores cargas llegan en el toque: el impacto vertical y el rozamiento de las ruedas al empezar a girar. Y al virar casi parado, las ruedas se retuercen sobre el pavimento.",
+    "visual": "Flechas de impacto y rozamiento en la rueda"
+   },
+   {
+    "text": "El amortiguador oleoneumático combina aire y aceite: el aire hace de muelle y el aceite, al pasar por un orificio, frena el rebote. En el prevuelo, mira que el vástago tenga su extensión y que no pierda aceite.",
+    "visual": "Cilindro con aire arriba y aceite pasando por un orificio"
+   },
+   {
+    "text": "Las patas principales de la Cessna 172 son de acero de muelle: se flexionan y absorben la energía sin nada de aceite. Simples y robustas.",
+    "visual": "Pata de acero flexionándose"
+   }
+  ]
+ },
+ {
+  "id": "020.02-rueda-morro",
+  "lesson": "020.02",
+  "sections": [
+   5,
+   6
+  ],
+  "title": "Rueda de morro, shimmy y por qué no aterrizar de morro",
+  "scenes": [
+   {
+    "text": "En el PA-28 y la Cessna 172, la rueda de morro se gobierna con los pedales: unas varillas la unen al timón de dirección, y al pisar un pedal se mueven los dos a la vez. Para virajes cerrados, ayúdate con el freno diferencial.",
+    "visual": "Pedal conectado a rueda y timón"
+   },
+   {
+    "text": "A cierta velocidad, la rueda de morro puede empezar a oscilar violentamente de lado a lado. Es el shimmy, y lo frena un amortiguador en la pata de morro. Un neumático gastado de forma desigual, poca presión u holguras lo empeoran.",
+    "visual": "Rueda oscilando con amortiguador que la frena"
+   },
+   {
+    "text": "Ahora, un error serio: tocar primero con la rueda de morro. Esa pata no está hecha para absorber el aterrizaje, solo para guiar el avión y aguantar la rotación.",
+    "visual": "Toque de morro con la pata en rojo"
+   },
+   {
+    "text": "Lo correcto es actitud de morro alto, tocar con las principales, cerca del centro de gravedad, y bajar el morro después, con suavidad.",
+    "visual": "Secuencia: principales primero, morro después"
+   },
+   {
+    "text": "Si rebotas o te asientas de morro y no controlas el avión, no lo intentes salvar con correcciones bruscas: potencia, y al aire. Y tras un toque duro, si ves arrugas en el revestimiento u holgura en el tren de morro, avisa y no vueles.",
+    "visual": "Motor y al aire; revestimiento arrugado"
+   }
+  ]
+ },
+ {
+  "id": "020.02-frenos-neumaticos",
+  "lesson": "020.02",
+  "sections": [
+   7,
+   8,
+   9
+  ],
+  "title": "Frenos, neumáticos y aquaplaning",
+  "scenes": [
+   {
+    "text": "Los frenos de una avioneta son de disco hidráulicos, solo en las ruedas principales. Pisas la punta del pedal, un cilindro maestro empuja líquido hasta la pinza, y las pastillas aprietan el disco.",
+    "visual": "Pedal, tubería y pinza apretando el disco"
+   },
+   {
+    "text": "Izquierdo y derecho son independientes, y por eso puedes dirigir el avión rodando con freno diferencial.",
+    "visual": "Avión girando con un solo freno"
+   },
+   {
+    "text": "Las averías típicas: pedal esponjoso, hay aire en el circuito. Pedal que se hunde poco a poco, una fuga. Y si frenas fuerte durante mucho rato, se calientan y pierden eficacia.",
+    "visual": "Burbujas de aire en el circuito; gota de fuga"
+   },
+   {
+    "text": "La presión del neumático la marca el POH y se mide en frío. Baja gasta los bordes y lo calienta; alta gasta el centro y agarra menos. Y las marcas pintadas en el neumático y la llanta tienen que coincidir: si se separan, el neumático ha girado.",
+    "visual": "Huella con presión baja, correcta y alta; marcas desalineadas"
+   },
+   {
+    "text": "En pista mojada, el neumático puede flotar sobre el agua: es el aquaplaning. Los frenos dejan de funcionar y pierdes el control direccional.",
+    "visual": "Neumático levantado sobre una capa de agua"
+   },
+   {
+    "text": "Si hay riesgo, usa la parte menos mojada de la pista, toca lo más lento posible, y no frenes fuerte hasta que baje la velocidad.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.03-pascal",
+  "lesson": "020.03",
+  "sections": [
+   1,
+   2,
+   3
+  ],
+  "title": "Hidráulica básica: el principio de Pascal en los frenos",
+  "scenes": [
+   {
+    "text": "Un líquido casi no se comprime, y transmite la presión por igual en todas direcciones. Es el principio de Pascal, la base de toda la hidráulica.",
+    "visual": "Recipiente cerrado con flechas de presión iguales"
+   },
+   {
+    "text": "La presión es fuerza dividida entre área. Si un pistón pequeño empuja el líquido, esa misma presión llega a un pistón grande, que recibe una fuerza mayor en proporción a su área.",
+    "visual": "Dos pistones conectados: pequeño y grande"
+   },
+   {
+    "text": "Pero nada es gratis: el pistón grande se mueve menos. Lo que ganas en fuerza lo pierdes en recorrido, porque el volumen de líquido desplazado es el mismo.",
+    "visual": "Recorridos distintos con el mismo volumen"
+   },
+   {
+    "text": "Así funcionan los frenos: el pedal empuja el cilindro maestro, la presión viaja por la tubería y los pistones de la pinza aprietan las pastillas. Tu pie se multiplica.",
+    "visual": "Circuito de freno completo"
+   },
+   {
+    "text": "El líquido de una avioneta es mineral y de color rojo. Y una regla de oro: los líquidos no se mezclan, porque destrozan los sellos. Se rellena siempre con el que dice el manual.",
+    "visual": "Bote de líquido rojo; sellos dañados al mezclar"
+   }
+  ]
+ },
+ {
+  "id": "020.04-mandos-primarios",
+  "lesson": "020.04",
+  "sections": [
+   1,
+   2,
+   3
+  ],
+  "title": "Mandos primarios, ejes y cómo llega la orden",
+  "scenes": [
+   {
+    "text": "Un avión gira alrededor de su centro de gravedad en tres ejes, y cada eje tiene su mando primario.",
+    "visual": "Avión con los tres ejes dibujados"
+   },
+   {
+    "text": "Los alerones hacen alabear alrededor del eje longitudinal. El timón de profundidad hace cabecear alrededor del eje lateral. Y el timón de dirección hace guiñar alrededor del eje vertical.",
+    "visual": "Cada mando moviéndose con su eje resaltado"
+   },
+   {
+    "text": "Palanca atrás: el timón de profundidad sube, la cola baja y el morro sube. Volante a la derecha: el alerón derecho sube, el izquierdo baja, y alabeas a la derecha. Pedal derecho: el morro guiña a la derecha.",
+    "visual": "Cabina con mando y superficie sincronizados"
+   },
+   {
+    "text": "La orden llega con cables y poleas, que solo trabajan a tracción, por eso van por parejas; o con varillas, que empujan y tiran. Un mando así es reversible: la fuerza del aire vuelve a tu mano y notas la presión.",
+    "visual": "Cables, poleas y varillas hasta la superficie"
+   },
+   {
+    "text": "En los aviones grandes, los mandos totalmente asistidos son irreversibles: un actuador hidráulico aguanta la carga y la columna no nota nada. Por eso la sensación hay que fabricarla.",
+    "visual": "Actuador hidráulico y columna sin flecha de retorno"
+   },
+   {
+    "text": "En el prevuelo: quita el bloqueo de mandos, comprueba que se mueven con suavidad, en el sentido correcto, y sin holguras excesivas. Volante a la izquierda: el alerón izquierdo sube.",
+    "visual": "Repaso del prevuelo"
+   }
+  ]
+ },
+ {
+  "id": "020.04-bisagra-tabs",
+  "lesson": "020.04",
+  "sections": [
+   5,
+   6,
+   7,
+   13
+  ],
+  "title": "Momento de bisagra, compensación aerodinámica y tabs",
+  "scenes": [
+   {
+    "text": "Cuando desvías una superficie de mando, el aire intenta devolverla a su sitio. Lo que tienes que vencer es el momento de bisagra, y es lo que notas como esfuerzo.",
+    "visual": "Superficie desviada con flecha de retorno"
+   },
+   {
+    "text": "Crece con el tamaño de la superficie y con el cuadrado de la velocidad: al doble de velocidad, cuatro veces más esfuerzo.",
+    "visual": "Gráfica de esfuerzo frente a velocidad"
+   },
+   {
+    "text": "Para aliviarlo se mete parte de la superficie por delante de la bisagra. Con bisagra retrasada, con un cuerno en la punta llamado horn, o con un panel interno escondido dentro del ala.",
+    "visual": "Tres compensaciones aerodinámicas"
+   },
+   {
+    "text": "Luego están los tabs, pequeñas aletas en el borde de salida. El tab de balance se mueve al revés que la superficie: baja el esfuerzo, pero se pierde eficacia. El antibalance se mueve en el mismo sentido: más eficacia y más esfuerzo. Es el del stabilator del PA-28.",
+    "visual": "Tab de balance y antibalance moviéndose"
+   },
+   {
+    "text": "En el servo tab, el piloto solo mueve el tab, y es el aire el que mueve la superficie. Reduce mucho el esfuerzo, pero a baja velocidad apenas funciona.",
+    "visual": "Servo tab moviendo la superficie"
+   },
+   {
+    "text": "Y el trim, el compensador, mantiene la superficie en su sitio para que no tengas que sostener fuerza. Primero actitud y potencia, después compensas. Y recuerda: el trim no es un mando de maniobra.",
+    "visual": "Rueda de trim y aleta compensadora"
+   }
+  ]
+ },
+ {
+  "id": "020.04-asistidos",
+  "lesson": "020.04",
+  "sections": [
+   4
+  ],
+  "title": "Mandos asistidos: actuador, servoválvula y sensación artificial",
+  "scenes": [
+   {
+    "text": "En un avión grande, las superficies son enormes y las velocidades altas. Mover los mandos a pulso sería imposible.",
+    "visual": "Avión de línea con superficies grandes"
+   },
+   {
+    "text": "La solución: al mover la columna solo desplazas una válvula. Esa válvula manda presión hidráulica a un lado de un pistón, y el pistón mueve la superficie.",
+    "visual": "Columna, servoválvula, pistón de doble efecto"
+   },
+   {
+    "text": "Cuando la superficie llega a la posición mandada, un mecanismo de seguimiento cierra la válvula. El aceite queda atrapado y la superficie se queda quieta. Se mueve exactamente lo que pediste.",
+    "visual": "Realimentación cerrando la válvula"
+   },
+   {
+    "text": "Pero como el mando es irreversible, el piloto no nota ninguna carga, y podría pedir más de lo que el avión aguanta.",
+    "visual": "Columna sin sensación, avión sobrecargado"
+   },
+   {
+    "text": "Por eso existe la sensación artificial, el Q feel, que fabrica en la columna un esfuerzo proporcional a la deflexión de la superficie y a la velocidad: cuanto más desvías el mando y más rápido vuelas, más pesa, como en un avión de mando manual.",
+    "visual": "Unidad Q feel con fuerza creciente con la velocidad"
+   }
+  ]
+ },
+ {
+  "id": "020.04-guinada-adversa",
+  "lesson": "020.04",
+  "sections": [
+   9,
+   10
+  ],
+  "title": "Guiñada adversa e inversión del alerón",
+  "scenes": [
+   {
+    "text": "Alabeas a la izquierda y el morro se va a la derecha. Es la guiñada adversa, y tiene una explicación sencilla.",
+    "visual": "Avión alabeando a la izquierda con morro a la derecha"
+   },
+   {
+    "text": "El alerón que baja aumenta la curvatura de su ala: más sustentación, pero también más resistencia inducida. Esa ala frena más, y el avión guiña hacia el lado contrario al alabeo.",
+    "visual": "Flechas de resistencia distintas en cada ala"
+   },
+   {
+    "text": "Se combate con alerones diferenciales, donde el que sube se desvía más que el que baja; con alerones Frise, que asoman por debajo del ala que baja y añaden resistencia ahí; con acoplamiento alerón-timón; o con spoilers de alabeo.",
+    "visual": "Cuatro soluciones animadas"
+   },
+   {
+    "text": "Regla de examen: alabeo a un lado, guiñada al otro. Y en el avión, coordina con pedal.",
+    "visual": "Bola centrada con pedal"
+   },
+   {
+    "text": "Otro fenómeno, en aviones rápidos: la inversión del alerón. A alta velocidad, el alerón que baja retuerce la punta del ala, le quita ángulo de ataque, y puede anular o incluso invertir el alabeo.",
+    "visual": "Punta de ala retorciéndose"
+   },
+   {
+    "text": "Por eso los aviones grandes usan alerones interiores y spoilers a alta velocidad, donde el ala es más rígida.",
+    "visual": "Alerones interiores y spoilers"
+   }
+  ]
+ },
+ {
+  "id": "020.04-flaps-slats",
+  "lesson": "020.04",
+  "sections": [
+   11,
+   12
+  ],
+  "title": "Flaps y slats: mandos secundarios",
+  "scenes": [
+   {
+    "text": "Los mandos secundarios no son imprescindibles para volar, pero mejoran las prestaciones, sobre todo al despegar y al aterrizar.",
+    "visual": "Ala con flaps y slats"
+   },
+   {
+    "text": "Los flaps de borde de salida aumentan la curvatura, y en algunos diseños también la superficie del ala. Suben la sustentación a baja velocidad: bajan la velocidad de pérdida y acortan despegue y aterrizaje.",
+    "visual": "Flap extendiéndose y perfil más curvado"
+   },
+   {
+    "text": "Todos los flaps aumentan sustentación y resistencia. Esa resistencia extra te deja aproximar con más pendiente sin ganar velocidad.",
+    "visual": "Senda de aproximación más inclinada"
+   },
+   {
+    "text": "Los slats van por delante del ala. Al extenderse hacen pasar aire rápido por el extradós, reenergizan la capa límite, y el ala aguanta más ángulo de ataque antes de entrar en pérdida.",
+    "visual": "Slat abierto con flujo por la ranura"
+   },
+   {
+    "text": "Normalmente se extienden antes que los flaps y se retraen los últimos. Y los auto slats salen solos al acercarse a la pérdida.",
+    "visual": "Secuencia slats-flaps"
+   },
+   {
+    "text": "Ni el PA-28 ni la Cessna 172 llevan slats, pero el principio entra en el examen.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.25-presurizacion",
+  "lesson": "020.25",
+  "sections": [
+   5,
+   6,
+   7,
+   8,
+   10
+  ],
+  "title": "Presurización: altitud de cabina, outflow valve y despresurización",
+  "scenes": [
+   {
+    "text": "Los aviones de línea vuelan alto porque allí son más eficientes. Pero arriba la presión baja tanto que aparece la hipoxia: falta de oxígeno, pérdida de consciencia y, al final, la muerte.",
+    "visual": "Avión subiendo con la presión exterior bajando"
+   },
+   {
+    "text": "La presurización mantiene dentro una presión parecida a la de poca altitud. La altitud de cabina suele rondar los ocho mil pies, y en aviones modernos unos cinco mil.",
+    "visual": "Fuselaje con indicador de altitud de cabina"
+   },
+   {
+    "text": "¿Por qué no a nivel del mar? Porque la presión diferencial, interior menos exterior, sería enorme, y el fuselaje sufriría demasiado. Y la cabina sube o baja a unos quinientos pies por minuto, por los oídos.",
+    "visual": "Flechas de presión diferencial sobre el fuselaje"
+   },
+   {
+    "text": "El truco del control: entra un caudal de aire constante, y lo que se regula es lo que sale, con las válvulas de salida. Cierras la válvula, sube la presión. La abres, baja.",
+    "visual": "Outflow valve abriéndose y cerrándose"
+   },
+   {
+    "text": "Para que nada dañe la estructura hay válvulas de alivio de sobrepresión, de presión negativa, una válvula de descarga manual y paneles de alivio entre cabina y bodega.",
+    "visual": "Iconos de dispositivos de seguridad"
+   },
+   {
+    "text": "Si hay una despresurización, primero la máscara de oxígeno, y luego descenso a una altitud segura. En tu avioneta, sin presurizar, la hipoxia puede aparecer por encima de diez mil pies de día y cinco mil de noche.",
+    "visual": "Máscara de oxígeno y descenso"
+   }
+  ]
+ },
+ {
+  "id": "020.05-hielo",
+  "lesson": "020.05",
+  "sections": [
+   1,
+   2,
+   3
+  ],
+  "title": "Cómo se forma el hielo, sus efectos y sus tipos",
+  "scenes": [
+   {
+    "text": "El hielo en un avión nace de gotas de agua subenfriadas: gotas que siguen líquidas por debajo de cero grados, porque no han encontrado nada a lo que agarrarse.",
+    "visual": "Gota líquida bajo cero acercándose al ala"
+   },
+   {
+    "text": "Al chocar contra el ala, por fin encuentran ese agarre, se congelan y se pegan. Viven entre cero y menos cuarenta grados: más frío, y ya son cristales.",
+    "visual": "Gota congelándose en el borde de ataque"
+   },
+   {
+    "text": "Sus efectos: más resistencia, más peso, más velocidad de pérdida y un coeficiente máximo de sustentación que se desploma. El avión entra en pérdida antes y con menos aviso. Y una cola con hielo puede entrar en pérdida antes que el ala.",
+    "visual": "Perfil deformado por hielo; flechas de efectos"
+   },
+   {
+    "text": "El hielo transparente, o vítreo, viene de gotas grandes, entre cero y menos diez grados. Las gotas se extienden antes de congelarse y forman una capa compacta, difícil de quitar.",
+    "visual": "Capa transparente extendiéndose"
+   },
+   {
+    "text": "El hielo escarchado, opaco y blanco, viene de gotas pequeñas, entre menos diez y menos veinte. Cada gota se congela al instante atrapando aire: es frágil y se quita mejor.",
+    "visual": "Depósito blanco poroso"
+   },
+   {
+    "text": "Y la escarcha cubre el avión parado. Sus efectos son menores, pero no se despega con ella: se limpia antes de volar.",
+    "visual": "Avión en plataforma con escarcha"
+   }
+  ]
+ },
+ {
+  "id": "020.05-proteccion-hielo",
+  "lesson": "020.05",
+  "sections": [
+   6,
+   7,
+   8,
+   9
+  ],
+  "title": "Antihielo y deshielo: botas, calor, fluido y pitot",
+  "scenes": [
+   {
+    "text": "Hay dos estrategias: el antihielo, que evita que se forme, y el deshielo, que quita el que ya se ha formado.",
+    "visual": "Ala con hielo y ala limpia"
+   },
+   {
+    "text": "Las botas neumáticas son deshielo: unos tubos de caucho en el borde de ataque se inflan, cambian la forma del perfil y el hielo se agrieta y sale volando. Se inflan con un mínimo de hielo, no con el ala limpia.",
+    "visual": "Bota inflándose y hielo rompiéndose"
+   },
+   {
+    "text": "La protección térmica calienta la superficie, y sirve para las dos cosas. En las alas de los aviones grandes, con aire caliente de sangrado; en sondas y zonas pequeñas, con resistencias eléctricas.",
+    "visual": "Borde de ataque calentándose en rojo"
+   },
+   {
+    "text": "También hay sistemas por fluido, que reparten un líquido que baja el punto de congelación. Y en la hélice, el hielo además la desequilibra y puede provocar vibraciones destructivas.",
+    "visual": "Hélice con hielo desigual vibrando"
+   },
+   {
+    "text": "El pitot lleva una resistencia que lo calienta para que el hielo no lo tape. Se activa con humedad visible y temperatura cerca o por debajo de cero. En tierra, solo un momento: sin aire se calienta muchísimo.",
+    "visual": "Tubo pitot con resistencia e interruptor PITOT HEAT"
+   },
+   {
+    "text": "El PA-28 y la Cessna 172 no están certificados para volar en condiciones de hielo. Si lo encuentras, sal de él.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.05-monoxido",
+  "lesson": "020.05",
+  "sections": [
+   11
+  ],
+  "title": "Calefacción de cabina y monóxido de carbono",
+  "scenes": [
+   {
+    "text": "En una avioneta, la calefacción de cabina usa aire que se calienta al pasar por un manguito alrededor del tubo de escape.",
+    "visual": "Escape con manguito y aire hacia la cabina"
+   },
+   {
+    "text": "Si el escape tiene una grieta, los gases entran en la cabina, y con ellos el monóxido de carbono: un gas sin color y sin olor.",
+    "visual": "Grieta en el escape y gas entrando en cabina"
+   },
+   {
+    "text": "Se une a la sangre mucho mejor que el oxígeno y produce hipoxia sin que lo notes: dolor de cabeza, mareo, somnolencia y, sin aviso, pérdida de consciencia.",
+    "visual": "Glóbulo rojo capturado por CO"
+   },
+   {
+    "text": "Por eso se lleva un detector de CO, un disco que cambia de color o un sensor electrónico. Y en el prevuelo se inspeccionan el escape y el manguito, buscando grietas.",
+    "visual": "Detector cambiando de color"
+   },
+   {
+    "text": "Si sospechas monóxido: cierra la calefacción, abre la ventilación, y aterriza lo antes posible.",
+    "visual": "Tres pasos en tarjetas"
+   }
+  ]
+ },
+ {
+  "id": "020.06-sistema-combustible",
+  "lesson": "020.06",
+  "sections": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "title": "Sistema de combustible: gravedad, bombas y selector",
+  "scenes": [
+   {
+    "text": "El sistema de combustible tiene una misión que no admite fallos: llevar combustible al motor en todo momento, y de sobra en el despegue y el ascenso, cuando más consume.",
+    "visual": "Depósitos, tuberías y motor"
+   },
+   {
+    "text": "El recorrido: depósitos en las alas, selector, filtros, el decantador o gascolator, que es el punto más bajo del sistema, y al final el carburador o la unidad de inyección.",
+    "visual": "Flujo animado por el circuito con etiquetas"
+   },
+   {
+    "text": "Hay dos formas de alimentar. Por gravedad, con los depósitos por encima del motor, como una botella boca abajo. O por presión, con una bomba que empuja.",
+    "visual": "Gravedad frente a bomba"
+   },
+   {
+    "text": "La Cessna 172, de ala alta, recibe por gravedad hasta el selector, pero su motor de inyección necesita presión, así que lleva bomba mecánica y eléctrica auxiliar. El PA-28, de ala baja, depende de la bomba mecánica y de la eléctrica de respaldo.",
+    "visual": "Cessna y PA-28 con sus bombas"
+   },
+   {
+    "text": "En el PA-28, la bomba eléctrica en ON para despegar, aterrizar y cambiar de depósito. Su selector no tiene posición BOTH: alimenta de un depósito cada vez y hay que ir alternando.",
+    "visual": "Selector del PA-28: izquierdo, derecho, cerrado"
+   },
+   {
+    "text": "En la Cessna 172, el selector tiene BOTH, la posición normal, que alimenta de los dos depósitos a la vez.",
+    "visual": "Selector de la C172 en BOTH"
+   }
+  ]
+ },
+ {
+  "id": "020.06-indicadores-contaminacion",
+  "lesson": "020.06",
+  "sections": [
+   6,
+   7,
+   8
+  ],
+  "title": "Combustible inutilizable, indicadores, contaminación y vapor lock",
+  "scenes": [
+   {
+    "text": "Aunque el depósito marque su mínimo, siempre queda combustible en las tuberías que no se puede usar. Es el combustible inutilizable, y no se cuenta en la planificación.",
+    "visual": "Depósito con franja de inutilizable"
+   },
+   {
+    "text": "Los indicadores de cantidad no son fiables al cien por cien. En el prevuelo, comprueba la cantidad a la vista y calcula el consumo del vuelo con los datos del POH.",
+    "visual": "Indicador con interrogante y varilla de comprobación"
+   },
+   {
+    "text": "La contaminación más común es el agua. Se drena antes del primer vuelo del día y tras cada repostaje, en los sumideros y en el decantador, hasta que la muestra salga limpia.",
+    "visual": "Vaso de muestras con burbuja de agua en el fondo"
+   },
+   {
+    "text": "Una fuga de combustible, que se ve o se huele, significa que el avión no sale.",
+    "visual": "Mancha de combustible bajo el ala"
+   },
+   {
+    "text": "El bloqueo por vapor aparece cuando el combustible hierve en las tuberías, por calor, por altitud o por gasolina muy volátil. Las burbujas impiden que la bomba empuje líquido, y el motor falla.",
+    "visual": "Burbujas de vapor en la tubería"
+   },
+   {
+    "text": "Se previene con la bomba eléctrica en ON. Y si aparece: bomba eléctrica, mezcla más rica, y cambia de depósito si hace falta.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.10-avgas-octanaje",
+  "lesson": "020.10",
+  "sections": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "title": "Octanaje, grados y colores de la AVGAS",
+  "scenes": [
+   {
+    "text": "El octanaje no mide la energía de la gasolina. Mide su resistencia a la detonación, a explotar sola cuando se comprime y se calienta en el cilindro.",
+    "visual": "Cilindro comprimiendo mezcla"
+   },
+   {
+    "text": "Más octanaje permite más compresión y más temperatura sin detonar. Por eso la regla del POH: usa el grado mínimo indicado, o uno superior aprobado, nunca uno inferior.",
+    "visual": "Escala de octanaje con zona prohibida"
+   },
+   {
+    "text": "Un grado inferior provoca detonación, temperatura de culatas alta, pistones perforados y fallo del motor.",
+    "visual": "Pistón dañado"
+   },
+   {
+    "text": "En España verás casi siempre la cien LL, de color azul. Pero el color es una ayuda, no una garantía: comprueba también el surtidor y la placa de la boca de llenado.",
+    "visual": "Muestra azul y placa del depósito"
+   },
+   {
+    "text": "La UL91, sin plomo, solo si lo aprueban el motor y el avión. Y el Jet A-1 es queroseno: nunca en un motor de gasolina.",
+    "visual": "Surtidores UL91 y Jet A-1"
+   },
+   {
+    "text": "Y el agua, más densa, se queda abajo en el vaso de muestras, con un límite nítido. Drena hasta que salga limpia.",
+    "visual": "Vaso con capa de agua"
+   }
+  ]
+ },
+ {
+  "id": "020.07-ley-ohm",
+  "lesson": "020.07",
+  "sections": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "title": "Tensión, corriente, resistencia y la ley de Ohm",
+  "scenes": [
+   {
+    "text": "La tensión, en voltios, es lo que empuja a los electrones. La corriente, en amperios, es cuántos pasan por un punto cada segundo.",
+    "visual": "Electrones empujados por una pila"
+   },
+   {
+    "text": "La resistencia, en ohmios, es la oposición al paso de la corriente. Con la misma tensión, menos resistencia significa más corriente.",
+    "visual": "Conductor ancho frente a estrecho"
+   },
+   {
+    "text": "Las tres se unen en la ley de Ohm: tensión igual a corriente por resistencia. El doble de voltios, el doble de amperios. Y la potencia, en vatios, es tensión por corriente.",
+    "visual": "Triángulo V = I × R"
+   },
+   {
+    "text": "En un circuito en serie todo va por un único camino: la corriente es la misma, las tensiones se reparten y las resistencias se suman.",
+    "visual": "Circuito en serie"
+   },
+   {
+    "text": "En paralelo, cada componente tiene su rama: la tensión es la misma, las corrientes se suman, y la resistencia total es menor que la de la rama más pequeña.",
+    "visual": "Circuito en paralelo"
+   },
+   {
+    "text": "Y para medir: el voltímetro, en paralelo; el amperímetro, en serie.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.08-bateria-alternador",
+  "lesson": "020.08",
+  "sections": [
+   6,
+   8,
+   9,
+   10,
+   11
+  ],
+  "title": "Batería, alternador, regulador y fallo del alternador",
+  "scenes": [
+   {
+    "text": "En la avioneta hay dos fuentes de electricidad. La batería almacena energía química: sirve para arrancar y como reserva de emergencia.",
+    "visual": "Batería con celdas"
+   },
+   {
+    "text": "La fuente principal es el alternador, que convierte el giro del motor en electricidad por inducción: un campo magnético que varía dentro de una bobina induce una tensión.",
+    "visual": "Imán girando dentro de una bobina"
+   },
+   {
+    "text": "Como el motor cambia de vueltas en cada fase, un regulador controla la corriente de la bobina de campo y mantiene la salida en unos catorce voltios, en un sistema de batería de doce. Si el regulador falla y la tensión sube, un relé de sobretensión desconecta el alternador.",
+    "visual": "Regulador manteniendo 14 V"
+   },
+   {
+    "text": "Todo se conecta en paralelo a una barra de distribución. Y un relé de desconexión impide que, si el alternador falla, la batería intente alimentarlo.",
+    "visual": "Esquema: alternador, batería, barra, cargas"
+   },
+   {
+    "text": "¿Cómo sabes que ha fallado? El amperímetro marca descarga continua o cero, el voltímetro baja o se enciende la luz de aviso. Comprueba el disyuntor del alternador y rearma una sola vez.",
+    "visual": "Amperímetro en descarga y luz ALT"
+   },
+   {
+    "text": "Si no vuelve, la batería sola aguanta unos treinta minutos con la carga mínima. Desconecta todo lo que no sea esencial, y planifica aterrizar.",
+    "visual": "Load shedding: cargas apagándose"
+   }
+  ]
+ },
+ {
+  "id": "020.08-protecciones",
+  "lesson": "020.08",
+  "sections": [
+   2,
+   3
+  ],
+  "title": "Fusibles y disyuntores",
+  "scenes": [
+   {
+    "text": "Una avería eléctrica puede provocar sobrecorriente, calentamiento y, en un avión, un incendio. Por eso cada circuito va protegido, siempre en serie con lo que cuida.",
+    "visual": "Cable calentándose"
+   },
+   {
+    "text": "El fusible lleva un hilo que se funde con la sobrecorriente y abre el circuito. Se puede sustituir una sola vez por otro del mismo tipo y valor, y es obligatorio llevar repuestos.",
+    "visual": "Fusible fundiéndose"
+   },
+   {
+    "text": "El disyuntor, o circuit breaker, hace de interruptor y fusible a la vez: salta con el calor, se puede rearmar, y puedes tirar de él a mano para aislar un circuito.",
+    "visual": "Disyuntor saltando"
+   },
+   {
+    "text": "Hay dos clases. El no trip-free se puede mantener cerrado con la avería presente, y eso es peligroso. El trip-free no se cierra mientras la avería siga, aunque lo sujetes.",
+    "visual": "Dos disyuntores comparados"
+   },
+   {
+    "text": "Si un disyuntor salta, rearma una sola vez, tras esperar un minuto a que se enfríe. Si vuelve a saltar, no lo rearmes: hay un fallo en el circuito.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.09-cuatro-tiempos",
+  "lesson": "020.09",
+  "sections": [
+   2,
+   4
+  ],
+  "title": "El motor de pistón y el ciclo de cuatro tiempos",
+  "scenes": [
+   {
+    "text": "Dentro de cada cilindro, el pistón sube y baja en línea recta. La biela lo une al cigüeñal, que convierte ese vaivén en giro, y con él mueve la hélice.",
+    "visual": "Cilindro, biela y cigüeñal girando"
+   },
+   {
+    "text": "El cilindro respira por dos válvulas: la de admisión deja entrar la mezcla de aire y combustible, y la de escape deja salir los gases quemados.",
+    "visual": "Válvulas abriéndose"
+   },
+   {
+    "text": "Primer tiempo, admisión: el pistón baja y entra la mezcla. Segundo, compresión: las dos válvulas cerradas y el pistón sube apretando la mezcla.",
+    "visual": "Animación de admisión y compresión"
+   },
+   {
+    "text": "Tercero, explosión o expansión: salta la chispa, la mezcla arde y empuja el pistón hacia abajo. Es el único tiempo que da trabajo. Cuarto, escape: el pistón sube y expulsa los gases.",
+    "visual": "Chispa, expansión y escape"
+   },
+   {
+    "text": "Cada tiempo es media vuelta de cigüeñal: el ciclo completo necesita dos vueltas, y cada cilindro da un impulso cada dos vueltas. Con cuatro cilindros, dos impulsos por vuelta.",
+    "visual": "Contador de vueltas y cuatro cilindros"
+   },
+   {
+    "text": "Repaso: admisión, compresión, explosión y escape. Dos vueltas por ciclo.",
+    "visual": "Tarjetas de repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.09-distribucion-compresion",
+  "lesson": "020.09",
+  "sections": [
+   6,
+   7,
+   8
+  ],
+  "title": "Avance y retraso de válvulas, y relación de compresión",
+  "scenes": [
+   {
+    "text": "En teoría, cada válvula se abre y se cierra justo en un punto muerto. En un motor real eso desperdiciaría potencia, porque los gases tienen inercia.",
+    "visual": "Diagrama de distribución circular"
+   },
+   {
+    "text": "Por eso la admisión se abre un poco antes del punto muerto superior, y se cierra bastante después del inferior: la mezcla que entra rápido sigue llenando el cilindro aunque el pistón ya suba.",
+    "visual": "Sector de admisión ampliado"
+   },
+   {
+    "text": "El escape se abre antes del punto muerto inferior y se cierra después del superior. Y alrededor del punto muerto superior, durante un instante, las dos válvulas están abiertas a la vez: es el cruce de válvulas.",
+    "visual": "Sector de cruce de válvulas resaltado"
+   },
+   {
+    "text": "Por eso el ciclo real tiene las esquinas redondeadas y da menos potencia que el ideal.",
+    "visual": "Diagrama presión-volumen ideal frente a real"
+   },
+   {
+    "text": "La relación de compresión compara el volumen del cilindro con el pistón abajo y con el pistón arriba. Más compresión, mejor rendimiento y más potencia.",
+    "visual": "Pistón abajo y arriba con volúmenes"
+   },
+   {
+    "text": "El límite lo pone la detonación: comprimir más calienta más la mezcla. Por eso un motor de compresión alta exige gasolina de más octanaje.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.11-carburador-inyeccion",
+  "lesson": "020.11",
+  "sections": [
+   3,
+   7
+  ],
+  "title": "El carburador de flotador y la inyección",
+  "scenes": [
+   {
+    "text": "El corazón del carburador es el venturi: un estrechamiento donde el aire se acelera y su presión baja.",
+    "visual": "Venturi con aire acelerándose"
+   },
+   {
+    "text": "Esa depresión aspira la gasolina por el surtidor principal, que sale de una cuba con flotador. El flotador mantiene el nivel constante, abriendo y cerrando una válvula de aguja, como la cisterna del baño.",
+    "visual": "Cuba con flotador y válvula de aguja"
+   },
+   {
+    "text": "Después del venturi está la mariposa, la válvula que mueves con la palanca de gases. Regula cuánta mezcla llega al motor, y con ella, la potencia.",
+    "visual": "Mariposa abriéndose con el gas"
+   },
+   {
+    "text": "La Cessna 172 lleva inyección indirecta: una bomba manda la gasolina a presión a un dosificador, y de ahí a un inyector por cilindro, junto a la válvula de admisión.",
+    "visual": "Inyectores junto a cada cilindro"
+   },
+   {
+    "text": "Ventajas: reparte mejor el combustible entre los cilindros y no sufre el hielo de carburador, porque no hay venturi ni mariposa que enfríen el aire con la gasolina.",
+    "visual": "Comparación carburador frente a inyección"
+   }
+  ]
+ },
+ {
+  "id": "020.11-hielo-carburador",
+  "lesson": "020.11",
+  "sections": [
+   4,
+   5,
+   6
+  ],
+  "title": "Hielo de carburador: cuándo aparece y qué hacer",
+  "scenes": [
+   {
+    "text": "El hielo de carburador no necesita frío. Puede formarse con el aire a veinte grados o más, si hay mucha humedad.",
+    "visual": "Termómetro a 20 °C y nube de humedad"
+   },
+   {
+    "text": "La gasolina al evaporarse roba calor al aire, y el aire que se expande tras el venturi y la mariposa también se enfría. La caída puede superar los veinte grados, y la humedad se congela en las paredes y en la mariposa.",
+    "visual": "Termómetro bajando dentro del carburador; hielo en la mariposa"
+   },
+   {
+    "text": "El riesgo crece con humedad alta, temperaturas entre unos menos diez y más veinticinco grados, y poca potencia, porque la mariposa casi cerrada enfría más.",
+    "visual": "Gráfica de riesgo con zona roja"
+   },
+   {
+    "text": "En el PA-28, de hélice de paso fijo, el primer síntoma es una caída gradual de vueltas con el gas fijo, a veces con vibración. Con hélice de velocidad constante, cae la presión de admisión.",
+    "visual": "Tacómetro bajando poco a poco"
+   },
+   {
+    "text": "La calefacción del carburador manda aire caliente del escape. Siempre total, nunca parcial. Ese aire es menos denso, así que al aplicarla las vueltas bajan: si se quedan bajas, no había hielo; si luego se recuperan, lo había.",
+    "visual": "Carb heat y RPM que baja y luego sube"
+   },
+   {
+    "text": "Y como entra sin filtrar, no la uses en tierra sobre polvo o arena.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.12-refrigeracion",
+  "lesson": "020.12",
+  "sections": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "title": "Refrigeración por aire, CHT y enfriamiento brusco",
+  "scenes": [
+   {
+    "text": "El motor de una avioneta se refrigera por aire: la corriente de la hélice y la velocidad de avance pasan entre las aletas de los cilindros.",
+    "visual": "Aire atravesando aletas de cilindro"
+   },
+   {
+    "text": "El carenado dirige el flujo, y dentro unos deflectores obligan al aire a pasar por cada cilindro, para que todos se enfríen por igual.",
+    "visual": "Capó con deflectores guiando el aire"
+   },
+   {
+    "text": "La temperatura se vigila con el CHT, la temperatura de culatas, medida con un termopar en el cilindro más caliente. Y también con la temperatura del aceite.",
+    "visual": "Indicador CHT con arcos"
+   },
+   {
+    "text": "Causas de sobrecalentamiento: mezcla demasiado pobre, mucha potencia con poca velocidad, como subir a Vx, calor exterior, poco aceite o mucho rato en tierra.",
+    "visual": "Iconos de causas"
+   },
+   {
+    "text": "Qué hacer: enriquecer la mezcla, bajar el morro para ganar velocidad y meter más aire, y si hace falta, reducir potencia.",
+    "visual": "Mezcla, morro abajo, potencia"
+   },
+   {
+    "text": "Y cuidado con lo contrario: cortar la potencia de golpe en un descenso largo enfría los cilindros demasiado rápido y puede agrietar las culatas. Reduce potencia de forma progresiva.",
+    "visual": "Culata con grieta por enfriamiento brusco"
+   }
+  ]
+ },
+ {
+  "id": "020.13-lubricacion",
+  "lesson": "020.13",
+  "sections": [
+   2,
+   6,
+   7
+  ],
+  "title": "Lubricación: cárter húmedo, presión y fallo de aceite",
+  "scenes": [
+   {
+    "text": "El PA-28 y la Cessna 172 usan cárter húmedo: el aceite se guarda en la parte baja del propio motor.",
+    "visual": "Motor con cárter lleno de aceite"
+   },
+   {
+    "text": "Una bomba de engranajes lo aspira, una válvula de alivio limita la presión, pasa por el filtro, y si este se obstruye, una válvula de derivación deja pasar el aceite igualmente.",
+    "visual": "Circuito de aceite animado"
+   },
+   {
+    "text": "Tras el arranque, la presión debe subir en unos segundos, normalmente unos treinta en frío. Si no sube, para el motor. Con el aceite frío la presión es alta, y baja al calentarse.",
+    "visual": "Manómetro subiendo tras el arranque"
+   },
+   {
+    "text": "Antes del primer vuelo del día, comprueba el nivel con la varilla y que el tapón quede cerrado.",
+    "visual": "Varilla de aceite"
+   },
+   {
+    "text": "En vuelo, si la presión cae y la temperatura sube, es una pérdida de aceite real: el motor puede agarrotarse en minutos.",
+    "visual": "Presión cayendo y temperatura subiendo"
+   },
+   {
+    "text": "Reduce potencia, elige el campo más cercano y prepara un aterrizaje de emergencia. Presión baja con temperatura normal puede ser el sensor, pero ante la duda, trátalo como avería real.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.14-encendido",
+  "lesson": "020.14",
+  "sections": [
+   1,
+   2,
+   5,
+   6
+  ],
+  "title": "Magnetos, doble encendido y prueba de magnetos",
+  "scenes": [
+   {
+    "text": "Los motores de avioneta no encienden la mezcla con la batería, sino con magnetos: generadores autónomos que mueve el propio motor, con un imán permanente y un transformador que eleva la tensión para la chispa.",
+    "visual": "Magneto con imán girando"
+   },
+   {
+    "text": "Así, aunque falle todo el sistema eléctrico, el motor sigue funcionando.",
+    "visual": "Batería apagada y motor girando"
+   },
+   {
+    "text": "Además el encendido es doble: dos magnetos, izquierdo y derecho, y dos bujías por cilindro. Si falla uno, el otro mantiene el motor. Y con dos chispas la combustión es más rápida y completa.",
+    "visual": "Cilindro con dos bujías"
+   },
+   {
+    "text": "Cuidado con el cable P: es el que pone el magneto a masa en OFF. Si se suelta o se corta, el magneto queda vivo aunque la llave esté en OFF, y la hélice puede arrancar el motor al moverla. Trata siempre la hélice como conectada.",
+    "visual": "Cable P cortado y hélice en rojo"
+   },
+   {
+    "text": "En la prueba de magnetos, pasa de BOTH a R, anota las vueltas, vuelve a BOTH, y repite con L. No te detengas en OFF.",
+    "visual": "Llave de magnetos y tacómetro"
+   },
+   {
+    "text": "Se mira la caída máxima de vueltas y la diferencia entre magnetos. Caída excesiva suele ser una bujía sucia. Diferencia de más de cincuenta vueltas: el avión no sale.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.15-mezcla",
+  "lesson": "020.15",
+  "sections": [
+   1,
+   2,
+   3
+  ],
+  "title": "La mezcla: rica, pobre y cómo se empobrece",
+  "scenes": [
+   {
+    "text": "La mezcla es la proporción de aire y gasolina que entra al cilindro. La teórica, la estequiométrica, son unos quince kilos de aire por cada kilo de combustible.",
+    "visual": "Balanza aire-combustible 15:1"
+   },
+   {
+    "text": "Pero el motor da su máxima potencia algo más rico, unos doce a uno. Y gasta lo mínimo algo más pobre, unos dieciséis o diecisiete a uno.",
+    "visual": "Escala con tres mezclas de referencia"
+   },
+   {
+    "text": "La mezcla rica es segura: la gasolina sobrante enfría los cilindros y aleja la detonación. Por eso se usa al despegar, al subir con mucha potencia y en la aproximación.",
+    "visual": "Cilindro fresco con mezcla rica"
+   },
+   {
+    "text": "La pobre, sin control, es peligrosa: suben las temperaturas, aparece la detonación, el motor va a tirones y se dañan válvulas y pistones.",
+    "visual": "Cilindro rojo con mezcla pobre"
+   },
+   {
+    "text": "Al subir, el aire es menos denso y la mezcla se enriquece sola, así que hay que empobrecer. Sin indicador de EGT: en crucero, tira despacio de la mezcla hasta que las vueltas suben al máximo y empiezan a caer, y enriquece un poco hasta que el motor vuelva a ir suave.",
+    "visual": "Palanca roja y tacómetro subiendo y bajando"
+   },
+   {
+    "text": "Con EGT, se empobrece hasta el pico de temperatura y luego se enriquece lo que diga el POH.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.15-detonacion-preencendido",
+  "lesson": "020.15",
+  "sections": [
+   4,
+   5
+  ],
+  "title": "Detonación y preencendido",
+  "scenes": [
+   {
+    "text": "En una combustión normal, la chispa enciende la mezcla y la llama avanza de forma suave por el cilindro.",
+    "visual": "Frente de llama suave"
+   },
+   {
+    "text": "En la detonación, la última parte de la mezcla, apretada y calentada por la llama, explota sola antes de que la llama llegue. Las ondas de choque golpean el pistón y la culata, y pueden perforarlo.",
+    "visual": "Explosión en el borde del cilindro"
+   },
+   {
+    "text": "Causas: octanaje inferior al exigido, mezcla demasiado pobre, mucha presión de admisión con pocas vueltas, y sobrecalentamiento.",
+    "visual": "Iconos de causas"
+   },
+   {
+    "text": "El preencendido es otra cosa: la mezcla se enciende antes de la chispa, por un punto caliente, como carbonilla incandescente o una bujía muy caliente.",
+    "visual": "Punto caliente encendiendo antes de la chispa"
+   },
+   {
+    "text": "La clave del examen: detonación, después de la chispa. Preencendido, antes de la chispa. Y uno puede provocar el otro.",
+    "visual": "Línea de tiempo con la chispa en medio"
+   },
+   {
+    "text": "Ante la sospecha de cualquiera de los dos: enriquece la mezcla, reduce potencia y refrigera el motor.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.16-pala",
+  "lesson": "020.16",
+  "sections": [
+   2,
+   3
+  ],
+  "title": "Geometría de la pala: ángulo de pala, de avance y de ataque",
+  "scenes": [
+   {
+    "text": "Una pala de hélice es un ala que gira. Genera sustentación, y en el plano de rotación esa sustentación se convierte en empuje.",
+    "visual": "Pala girando con flecha de empuje"
+   },
+   {
+    "text": "La punta va mucho más rápido que la raíz, porque recorre un círculo mayor en el mismo tiempo. Por eso la pala va retorcida: más inclinada en la raíz y menos en la punta.",
+    "visual": "Pala con torsión y velocidades distintas"
+   },
+   {
+    "text": "El ángulo de pala, o de paso, es el que forma la cuerda con el plano de rotación. Como un tornillo: más ángulo, más avance teórico por vuelta.",
+    "visual": "Ángulo de pala y tornillo avanzando"
+   },
+   {
+    "text": "Pero la pala gira y a la vez avanza con el avión. El viento relativo combina las dos velocidades, y su ángulo con el plano de giro es el ángulo de avance.",
+    "visual": "Triángulo de velocidades"
+   },
+   {
+    "text": "El ángulo de ataque de la pala es la diferencia entre el ángulo de pala y el de avance. Es el que de verdad decide cuánto empuja.",
+    "visual": "Ángulo de ataque entre cuerda y viento relativo"
+   }
+  ]
+ },
+ {
+  "id": "020.16-paso-fijo-variable",
+  "lesson": "020.16",
+  "sections": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "title": "Hélice de paso fijo y de paso variable",
+  "scenes": [
+   {
+    "text": "En una hélice de paso fijo, como la del PA-28, el ángulo de pala no cambia. Su rendimiento depende solo de la velocidad y de las vueltas, y el ángulo de ataque varía todo el rato.",
+    "visual": "Hélice de paso fijo con ángulo de ataque cambiando"
+   },
+   {
+    "text": "Es un compromiso: un paso corto da buen empuje al despegar y subir, pero en crucero el motor se pasa de vueltas; un paso largo va bien en crucero, pero despega peor.",
+    "visual": "Balanza ascenso frente a crucero"
+   },
+   {
+    "text": "Con paso variable, el piloto cambia el ángulo de pala y controla las vueltas independientemente de la presión de admisión. Más ángulo, más carga y menos vueltas.",
+    "visual": "Pala cambiando de ángulo y tacómetro"
+   },
+   {
+    "text": "Las palancas, de izquierda a derecha: gases, negra; hélice, azul; y mezcla, roja.",
+    "visual": "Tres palancas de colores"
+   },
+   {
+    "text": "Para subir potencia: mezcla, luego hélice, y por último gases. Para bajarla: gases primero, y después hélice.",
+    "visual": "Secuencia animada de palancas"
+   },
+   {
+    "text": "La razón: nunca mucha presión de admisión con pocas vueltas, porque provoca detonación y daña el motor.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.17-manejo-motor",
+  "lesson": "020.17",
+  "sections": [
+   1,
+   2,
+   4
+  ],
+  "title": "Potencia, atmósfera y manejo del motor por fases",
+  "scenes": [
+   {
+    "text": "La potencia de un motor de pistón depende de cuánta mezcla quema por segundo. En cabina lo ves con la presión de admisión y con las vueltas.",
+    "visual": "Indicadores MAP y RPM"
+   },
+   {
+    "text": "Con el motor parado, la presión de admisión marca la presión atmosférica. Al ralentí, con la mariposa casi cerrada, cae mucho, y al abrir gases sube hacia la del ambiente.",
+    "visual": "Aguja de MAP moviéndose con el gas"
+   },
+   {
+    "text": "Un motor atmosférico pierde potencia cuando el aire es menos denso: más o menos un tres por ciento cada mil pies de altitud. El calor y la humedad restan todavía más.",
+    "visual": "Montaña, termómetro y gotas"
+   },
+   {
+    "text": "Día caluroso, húmedo y aeródromo alto: poca potencia, carrera de despegue larga y ascenso débil.",
+    "visual": "Pista larga y avión subiendo poco"
+   },
+   {
+    "text": "Por fases: despegue, potencia máxima y mezcla rica. Crucero, normalmente entre el cincuenta y cinco y el setenta y cinco por ciento, con la mezcla empobrecida. Y en el descenso, reduce potencia de forma progresiva y ve enriqueciendo.",
+    "visual": "Perfil de vuelo con ajustes por fase"
+   },
+   {
+    "text": "Los valores exactos, siempre los del POH de tu avión.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.18-sensores",
+  "lesson": "020.18",
+  "sections": [
+   1,
+   2,
+   5
+  ],
+  "title": "Sensores de motor: Bourdon, cápsula y termopar",
+  "scenes": [
+   {
+    "text": "Muchos instrumentos del motor son manómetros con un tubo de Bourdon: un tubo metálico aplanado y curvado en forma de C. Al entrar presión intenta enderezarse, como un matasuegras, y ese movimiento mueve la aguja.",
+    "visual": "Tubo de Bourdon desenrollándose"
+   },
+   {
+    "text": "Se usa para la presión de aceite, la de combustible y la succión de los giróscopos. Mide frente a la presión exterior.",
+    "visual": "Tres manómetros"
+   },
+   {
+    "text": "La presión de admisión necesita medir presión absoluta, y por eso usa una cápsula aneroide cerrada y sin aire.",
+    "visual": "Cápsula aneroide"
+   },
+   {
+    "text": "Para las temperaturas altas, como la de gases de escape o la de culatas, se usa el termopar: dos metales distintos unidos que generan una pequeña tensión al calentarse. No necesita alimentación.",
+    "visual": "Termopar generando tensión"
+   },
+   {
+    "text": "¿Fallo del indicador o avería real? Mira si los demás acompañan. Presión de aceite baja con temperatura normal y motor suave sugiere el sensor. Si dos o tres indicadores se mueven a la vez, es el motor.",
+    "visual": "Indicadores coherentes frente a uno aislado"
+   },
+   {
+    "text": "Y ante la duda, trata el instrumento como si dijera la verdad.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.19-pitot-estatico",
+  "lesson": "020.19",
+  "sections": [
+   1,
+   2
+  ],
+  "title": "El sistema pitot-estático",
+  "scenes": [
+   {
+    "text": "Tres instrumentos dependen del aire que rodea al avión: el anemómetro, el altímetro y el variómetro.",
+    "visual": "Los tres instrumentos en el panel"
+   },
+   {
+    "text": "La presión estática es la atmosférica a tu altura. Al moverte, el aire que choca de frente añade la presión dinámica. Y la suma de las dos es la presión total.",
+    "visual": "Presión estática más dinámica igual a total"
+   },
+   {
+    "text": "El tubo de pitot apunta al viento y recoge la presión total. Las tomas estáticas son orificios a ras del fuselaje que recogen solo la estática.",
+    "visual": "Pitot y tomas estáticas en el avión"
+   },
+   {
+    "text": "El altímetro y el variómetro usan solo la estática. El anemómetro compara la total con la estática: la diferencia es la dinámica, que da la velocidad.",
+    "visual": "Tuberías hacia cada instrumento"
+   },
+   {
+    "text": "En el prevuelo: funda del pitot quitada, tubo y orificio de drenaje libres de insectos y suciedad, y la calefacción funcionando, con cuidado de no quemarte.",
+    "visual": "Prevuelo del pitot"
+   }
+  ]
+ },
+ {
+  "id": "020.19-obstrucciones",
+  "lesson": "020.19",
+  "sections": [
+   3
+  ],
+  "title": "Obstrucciones del pitot y de la estática: qué marca cada instrumento",
+  "scenes": [
+   {
+    "text": "Es de lo que más cae en el examen, y se razona con una idea: si una presión queda atrapada, el instrumento solo responde a los cambios de la otra.",
+    "visual": "Tubo tapado con presión atrapada"
+   },
+   {
+    "text": "Pitot tapado con el drenaje abierto: la presión se escapa y el anemómetro cae a cero. Altímetro y variómetro, normales.",
+    "visual": "Anemómetro cayendo a cero"
+   },
+   {
+    "text": "Pitot y drenaje tapados: la presión total queda atrapada y el anemómetro funciona como un altímetro. Indica más al subir y menos al bajar.",
+    "visual": "Anemómetro subiendo al ascender"
+   },
+   {
+    "text": "Toma estática tapada: el altímetro se congela en la altitud del bloqueo, el variómetro marca cero, y el anemómetro indica menos de la real al subir y más al bajar.",
+    "visual": "Altímetro congelado y variómetro a cero"
+   },
+   {
+    "text": "La fuente estática alternativa de cabina toma una presión algo menor: anemómetro y altímetro marcan algo más alto, y el variómetro da un salto momentáneo al abrirla.",
+    "visual": "Válvula de estática alternativa"
+   }
+  ]
+ },
+ {
+  "id": "020.20-altimetro",
+  "lesson": "020.20",
+  "sections": [
+   1,
+   2,
+   5
+  ],
+  "title": "El altímetro: cápsulas, reglajes y errores",
+  "scenes": [
+   {
+    "text": "El altímetro es un barómetro graduado en pies. Dentro, unas cápsulas selladas se dilatan al subir, porque baja la presión, y mueven las agujas.",
+    "visual": "Cápsulas dilatándose y agujas girando"
+   },
+   {
+    "text": "Solo mide presión, así que necesita un reglaje en la ventanilla. Con QNH lees altitud sobre el nivel del mar, y en tierra marca la elevación del aeródromo. Con mil trece, niveles de vuelo.",
+    "visual": "Ventanilla Kollsman con QNH y 1013"
+   },
+   {
+    "text": "Cada hectopascal que subes el reglaje, la lectura sube unos treinta pies.",
+    "visual": "Reglaje +1 hPa y aguja +30 ft"
+   },
+   {
+    "text": "Error de presión: si vuelas hacia una zona de menor presión sin reajustar, el altímetro marca más de la cuenta y estás más bajo de lo que crees. De alta a baja, cuidado abajo.",
+    "visual": "Isobaras y avión descendiendo sin saberlo"
+   },
+   {
+    "text": "Error de temperatura: con aire más frío que el estándar, también estás más bajo que la altitud indicada. Con aire más cálido, más alto.",
+    "visual": "Capas de presión juntas con aire frío"
+   },
+   {
+    "text": "Resumen: hacia bajas presiones o hacia el frío, estás más bajo de lo que marca.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.21-anemometro-variometro",
+  "lesson": "020.21",
+  "sections": [
+   2,
+   3,
+   5
+  ],
+  "title": "Velocidades IAS y TAS, arcos de colores y variómetro",
+  "scenes": [
+   {
+    "text": "El anemómetro lee la velocidad indicada, la IAS. Corregida por errores de instrumento y posición, es la calibrada; y corregida por densidad, la verdadera, la TAS.",
+    "visual": "Cadena IAS, CAS, EAS, TAS"
+   },
+   {
+    "text": "Al subir, el aire es menos denso, y para la misma indicación vas más rápido. Regla aproximada: TAS igual a IAS más un dos por ciento por cada mil pies.",
+    "visual": "IAS fija y TAS creciendo con la altitud"
+   },
+   {
+    "text": "Los arcos siempre son IAS. El blanco, de VS0 a VFE, es el rango de los flaps. El verde, de VS1 a VNO, el de operación normal.",
+    "visual": "Anemómetro con arco blanco y verde"
+   },
+   {
+    "text": "El amarillo, de VNO a VNE, solo con aire en calma y sin movimientos bruscos. Y la raya roja es VNE: nunca la excedas.",
+    "visual": "Arco amarillo y raya roja"
+   },
+   {
+    "text": "El variómetro mide la velocidad vertical comparando la estática de una cápsula con la de una caja que se llena por un orificio calibrado. Por eso va con un retraso de unos seis a nueve segundos.",
+    "visual": "Cápsula y orificio calibrado del variómetro"
+   }
+  ]
+ },
+ {
+  "id": "020.22-brujula",
+  "lesson": "020.22",
+  "sections": [
+   5,
+   6
+  ],
+  "title": "Errores de la brújula: UNOS y ANDS",
+  "scenes": [
+   {
+    "text": "La brújula solo se lee bien en vuelo recto y nivelado, a velocidad constante. Al virar o acelerar, la rosa gira sin que gire el avión.",
+    "visual": "Brújula oscilando en viraje"
+   },
+   {
+    "text": "Error de viraje, UNOS: en el hemisferio norte, virando hacia el norte la brújula se queda corta, así que sales del viraje antes de que marque norte. Virando hacia el sur se adelanta, y sigues girando después de que marque sur.",
+    "visual": "Viraje al norte y al sur con la rosa"
+   },
+   {
+    "text": "Este error es máximo con rumbos norte y sur, y nulo con este y oeste.",
+    "visual": "Rosa con zonas de error"
+   },
+   {
+    "text": "Error de aceleración, ANDS: con rumbo este u oeste, al acelerar la brújula indica un giro hacia el norte, y al decelerar, hacia el sur.",
+    "visual": "Avión acelerando con rumbo este"
+   },
+   {
+    "text": "En el hemisferio sur se invierten. Y como el direccional deriva, se compara con la brújula cada unos quince minutos, en vuelo recto y nivelado.",
+    "visual": "Repaso"
+   }
+  ]
+ },
+ {
+  "id": "020.23-giroscopos",
+  "lesson": "020.23",
+  "sections": [
+   1,
+   3,
+   4,
+   5,
+   6
+  ],
+  "title": "Giróscopos: rigidez, precesión e instrumentos",
+  "scenes": [
+   {
+    "text": "Un giróscopo es un rotor pesado que gira muy deprisa. Tiene dos propiedades: rigidez en el espacio, que mantiene su eje orientado; y precesión, que hace que al empujarlo responda noventa grados más allá, en el sentido de giro.",
+    "visual": "Rotor girando y precesión a 90°"
+   },
+   {
+    "text": "El horizonte artificial mantiene fijo el plano horizontal mientras el avión cabecea y alabea a su alrededor.",
+    "visual": "Horizonte artificial en movimiento"
+   },
+   {
+    "text": "El direccional mantiene el rumbo, pero no es magnético y deriva. Se ajusta con la brújula al arrancar y cada unos quince minutos, en vuelo recto y nivelado.",
+    "visual": "Direccional y brújula"
+   },
+   {
+    "text": "El coordinador de viraje muestra el alabeo y el régimen de giro. El viraje estándar es de tres grados por segundo: trescientos sesenta en dos minutos. Y la bola, centrada, indica vuelo coordinado.",
+    "visual": "Coordinador con marca 2 MIN y bola"
+   },
+   {
+    "text": "Horizonte y direccional suelen funcionar por vacío, con una bomba movida por el motor, entre cuatro y medio y cinco y medio pulgadas. El coordinador es eléctrico.",
+    "visual": "Indicador de succión"
+   },
+   {
+    "text": "Si falla la bomba de vacío, horizonte y direccional empiezan a mentir poco a poco, a veces sin aviso. El coordinador sigue funcionando: úsalo.",
+    "visual": "Repaso"
+   }
+  ]
+ }
+]
