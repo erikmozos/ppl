@@ -1,0 +1,100 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:02.917
+Los motores de avioneta no encienden la
+
+00:00:02.789 --> 00:00:04.230
+mezcla con la batería,
+
+00:00:04.171 --> 00:00:05.479
+sino con magnetos:
+
+00:00:05.446 --> 00:00:08.539
+generadores autónomos que mueve el propio motor,
+
+00:00:08.458 --> 00:00:10.950
+con un imán permanente y un transformador
+
+00:00:10.938 --> 00:00:13.260
+que eleva la tensión para la chispa.
+
+00:00:14.156 --> 00:00:17.111
+Así, aunque falle todo el sistema eléctrico,
+
+00:00:17.079 --> 00:00:19.020
+el motor sigue funcionando.
+
+00:00:19.977 --> 00:00:22.225
+Además el encendido es doble:
+
+00:00:22.173 --> 00:00:24.740
+dos magnetos, izquierdo y derecho,
+
+00:00:24.694 --> 00:00:26.661
+y dos bujías por cilindro.
+
+00:00:26.645 --> 00:00:29.007
+Si falla uno, el otro mantiene el
+
+00:00:28.882 --> 00:00:29.585
+motor.
+
+00:00:29.532 --> 00:00:31.935
+Y con dos chispas la combustión es
+
+00:00:31.809 --> 00:00:33.533
+más rápida y completa.
+
+00:00:34.467 --> 00:00:36.127
+Cuidado con el cable P:
+
+00:00:36.021 --> 00:00:37.714
+es el que pone el magneto a
+
+00:00:37.575 --> 00:00:38.547
+masa en OFF.
+
+00:00:38.463 --> 00:00:39.984
+Si se suelta o se corta,
+
+00:00:39.906 --> 00:00:42.295
+el magneto queda vivo aunque la llave
+
+00:00:42.201 --> 00:00:44.108
+esté en OFF, y la hélice puede
+
+00:00:44.014 --> 00:00:46.051
+arrancar el motor al moverla.
+
+00:00:46.012 --> 00:00:48.693
+Trata siempre la hélice como conectada.
+
+00:00:49.626 --> 00:00:51.546
+En la prueba de magnetos,
+
+00:00:51.522 --> 00:00:52.829
+pasa de BOTH a R,
+
+00:00:52.712 --> 00:00:55.346
+anota las vueltas, vuelve a BOTH,
+
+00:00:55.268 --> 00:00:56.600
+y repite con L.
+
+00:00:56.503 --> 00:00:58.337
+No te detengas en OFF.
+
+00:00:59.216 --> 00:01:01.401
+Se mira la caída máxima de vueltas
+
+00:01:01.330 --> 00:01:03.546
+y la diferencia entre magnetos.
+
+00:01:03.520 --> 00:01:06.374
+Caída excesiva suele ser una bujía sucia.
+
+00:01:06.314 --> 00:01:09.070
+Diferencia de más de cincuenta vueltas:
+
+00:01:09.033 --> 00:01:10.312
+el avión no sale.

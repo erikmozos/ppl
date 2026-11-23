@@ -24,7 +24,14 @@
         "ideas": [
           "Es la cañería de una casa: el depósito es la cisterna, el selector el grifo general, los filtros las rejillas del desagüe y la bomba el motor de agua que da presión cuando la cisterna está por debajo del grifo.",
           "El sistema debe tener sobrante como una nevera con más comida de la que vas a comer en la cena más pesada del año: si justo alcanza, el día que aprietes el acelerador al máximo te quedas corto."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.06-sistema-combustible.mp4",
+          "vtt": "/video/lessons/020.06-sistema-combustible.vtt",
+          "poster": "/video/lessons/020.06-sistema-combustible-poster.jpg",
+          "title": "Sistema de combustible: gravedad, bombas y selector",
+          "duration": 75
+        }
       },
       {
         "title": "Depósitos, selector, filtros y drenajes",
@@ -149,7 +156,14 @@
         "ideas": [
           "El combustible inutilizable es el fondo de la tetera que no vierte nunca: está ahí, pero no cuenta para servir tazas. Y es mejor así, porque si vacías la tetera del todo entra aire en el grifo.",
           "Los cuatro parámetros son como el cuadro del coche: cuánto queda (flotador), qué calor tiene, con qué presión sale y cuánto gastas por hora."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/020.06-indicadores-contaminacion.mp4",
+          "vtt": "/video/lessons/020.06-indicadores-contaminacion.vtt",
+          "poster": "/video/lessons/020.06-indicadores-contaminacion-poster.jpg",
+          "title": "Combustible inutilizable, indicadores, contaminación y vapor lock",
+          "duration": 64
+        }
       },
       {
         "title": "Indicadores y cálculo de combustible",
