@@ -1,0 +1,850 @@
+[
+ {
+  "id": "080.01-masa-peso-cg",
+  "lesson": "080.01",
+  "sections": [
+   0,
+   1,
+   2
+  ],
+  "title": "Masa, peso y centro de gravedad",
+  "fuente": "diapositivas POF 1 (5-7)",
+  "scenes": [
+   {
+    "text": "Antes de hablar de alas, tres palabras que en el examen se confunden mucho: masa, fuerza y peso.",
+    "visual": "Plano cinematográfico: una Cessna 152 parada en la plataforma de Sabadell al amanecer. La cámara se acerca lentamente al fuselaje. Aparecen, una a una y pegadas al avión, tres etiquetas pequeñas: MASA · FUERZA · PESO."
+   },
+   {
+    "text": "La masa es la cantidad de materia, y se mide en kilos. La fuerza es lo que cambia el movimiento de un cuerpo o lo deforma, y se mide en newtons. Y el peso es la fuerza con la que la gravedad tira de esa masa: masa por g, con g igual a nueve coma ochenta y uno.",
+    "visual": "Animación 3D: el avión se 'llena' de partículas (masa, kg). Luego una mano empuja un carro de remolque y el avión se mueve (fuerza, N). Finalmente aparece una flecha roja vertical desde el avión hacia el suelo que crece mientras se escribe W = m · g."
+   },
+   {
+    "text": "Un ejemplo con números redondos: una avioneta de mil kilos pesa nueve mil ochocientos diez newtons. Exactamente lo mismo que un metro cúbico de agua.",
+    "visual": "Balanza gigante animada sobre la pista: en un platillo baja la avioneta, en el otro un cubo de agua azul de 1 m³. La balanza oscila y se equilibra. Bajo cada platillo, la cifra 9810 N."
+   },
+   {
+    "text": "La gravedad tira de cada pedacito del avión, del motor, de las alas, de ti. Pero todas esas fuerzas se pueden resumir en una sola, que actúa en un punto: el centro de gravedad.",
+    "visual": "Vista explosionada del avión: decenas de flechitas rojas, una en cada pieza (motor, depósitos, asientos, cola). Las flechas se deslizan y se funden en una única flecha gruesa en un punto bajo el ala, que se ilumina: CG."
+   },
+   {
+    "text": "Prueba fácil: si cuelgas el avión justo de su centro de gravedad, se queda en equilibrio, sin cabecear ni hacia delante ni hacia atrás. Cuélgalo de otro punto y bascula.",
+    "visual": "Simulación física: el avión cuelga de un cable de grúa. Primero desde el CG: queda horizontal y quieto. Corte a pantalla dividida: a la derecha, colgado desde el morro, el avión gira hasta quedar con la cola hacia abajo."
+   },
+   {
+    "text": "Para recordar: masa en kilos, fuerza en newtons, y el peso es una fuerza que actúa en el centro de gravedad.",
+    "visual": "La cámara se aleja del avión colgado y vuelve a la plataforma. Sobre el avión quedan sólo la flecha W anclada en el CG y la etiqueta 'kg ≠ N'."
+   }
+  ]
+ },
+ {
+  "id": "080.01-newton",
+  "lesson": "080.01",
+  "sections": [
+   3
+  ],
+  "title": "La primera ley de Newton y las cuatro fuerzas",
+  "fuente": "diapositivas POF 1 (8) y estabilidad (60)",
+  "scenes": [
+   {
+    "text": "¿Por qué un avión en crucero puede ir recto y a velocidad constante sin que tú hagas nada? La respuesta tiene más de trescientos años.",
+    "visual": "Plano aire-aire: un PA-28 en crucero sobre la costa del Maresme, perfectamente estable. La cámara lo acompaña en paralelo. Ninguna mano en los mandos en un inserto de cabina."
+   },
+   {
+    "text": "Es la primera ley de Newton: un cuerpo sigue en reposo, o en movimiento uniforme y en línea recta, mientras no actúe sobre él una fuerza exterior que no esté equilibrada.",
+    "visual": "Animación 2D sobre fondo oscuro: un disco de hockey se desliza sin fin por una pista de hielo infinita. Luego un palo lo golpea de lado y su trayectoria cambia. Rótulo discreto: 1.ª ley de Newton."
+   },
+   {
+    "text": "Sobre el avión actúan cuatro fuerzas. Sustentación hacia arriba, peso hacia abajo, empuje hacia delante y resistencia hacia atrás.",
+    "visual": "Volvemos al PA-28. Brotan del avión cuatro flechas de colores, una tras otra, con el nombre junto a la punta: sustentación (arriba), peso (abajo), empuje (delante), resistencia (detrás)."
+   },
+   {
+    "text": "En vuelo recto y nivelado a velocidad constante, la sustentación iguala al peso y el empuje iguala a la resistencia. La resultante es cero, y por eso el avión no acelera ni cambia de trayectoria.",
+    "visual": "Las flechas opuestas se emparejan con un indicador tipo balanza: arriba = abajo, delante = detrás. Un pequeño contador de 'aceleración' en la esquina marca 0. El anemómetro y el altímetro de un inserto de cabina quedan quietos."
+   },
+   {
+    "text": "Ahora mete potencia. El empuje supera a la resistencia, la resultante ya no es cero, y el avión acelera hasta que la resistencia, que crece con la velocidad, vuelve a igualar el empuje. Nuevo equilibrio.",
+    "visual": "Mano en el mando de gases empujando. La flecha de empuje crece; el anemómetro sube. La flecha de resistencia se alarga poco a poco hasta igualar al empuje y la aguja del anemómetro se detiene en un valor mayor."
+   },
+   {
+    "text": "Lo mismo pasa con una ráfaga: rompe el equilibrio, aparece una aceleración, y el avión cambia de velocidad, de trayectoria o de actitud hasta encontrar una nueva situación de equilibrio.",
+    "visual": "Una ráfaga visible (líneas de aire) golpea el ala desde abajo: el avión sube el morro un instante. Cámara lenta y congelación: aparece la flecha de fuerza resultante. Se reanuda y el avión se reestabiliza."
+   }
+  ]
+ },
+ {
+  "id": "080.02-aire-presion-altimetro",
+  "lesson": "080.02",
+  "sections": [
+   0,
+   1,
+   2
+  ],
+  "title": "El aire: densidad, temperatura, presión y el altímetro",
+  "fuente": "diapositivas POF 1 (12-18)",
+  "scenes": [
+   {
+    "text": "Volamos dentro de un fluido invisible. Para entender cómo sustenta, primero hay que entender qué es el aire.",
+    "visual": "Plano cinematográfico: la Cessna rueda hacia la pista y la cámara 'atraviesa' el aire frente a la hélice. El aire se vuelve visible como una nube de partículas diminutas."
+   },
+   {
+    "text": "Es una mezcla de gases: un setenta y ocho por ciento de nitrógeno, un veintiuno de oxígeno, y un uno por ciento de otros gases. Un metro cúbico de aire a nivel del mar tiene una masa de aproximadamente uno coma dos kilos.",
+    "visual": "Zoom a un cubo transparente de 1 m³ lleno de partículas de colores: naranja (N₂, 78 %), azul (O₂, 21 %) y unas pocas verdes (1 %). El cubo se posa sobre una báscula que marca ≈ 1,2 kg."
+   },
+   {
+    "text": "La temperatura es la agitación de esas moléculas. En aire caliente se mueven más deprisa y chocan más a menudo. En aire frío, más despacio.",
+    "visual": "Pantalla dividida: dos cubos de aire. Izquierda, azul y frío, partículas lentas. Derecha, rojo y cálido, partículas rápidas con chispas de colisión. Termómetros pequeños junto a cada uno."
+   },
+   {
+    "text": "La presión atmosférica es el peso de la columna de aire que tienes encima. A nivel del mar, en la atmósfera estándar, son mil trece coma veinticinco hectopascales. Y cuanto más subes, menos aire queda encima y menos presión.",
+    "visual": "Columna de aire 3D desde el suelo hasta el espacio sobre el aeródromo. La avioneta asciende dentro de la columna y la parte de columna por encima de ella se hace más corta; un indicador de presión baja de 1013 hacia valores menores."
+   },
+   {
+    "text": "La densidad depende sobre todo de la temperatura, de la presión y de la humedad. Y es clave para todo lo demás: sustentación, resistencia y potencia del motor.",
+    "visual": "Tres diales animados alrededor del cubo de aire: temperatura, presión, humedad. Al girar cada uno, el cubo se 'vacía' o se 'llena' de partículas."
+   },
+   {
+    "text": "Con esa relación entre presión y altitud funciona el altímetro: una cápsula aneroide se expande cuando baja la presión, y un mecanismo convierte ese movimiento en pies, según el modelo de la atmósfera estándar. Por eso lo que indica se llama altitud de presión. La ventanilla deja ajustar la presión de referencia.",
+    "visual": "Corte transversal animado del altímetro de la Cessna: al subir el avión, la cápsula aneroide se hincha, las palancas giran y la aguja avanza de 1000 a 2000 ft. Primer plano de la ventanilla de referencia con el mando girando."
+   }
+  ]
+ },
+ {
+  "id": "080.02-bernoulli-pitot",
+  "lesson": "080.02",
+  "sections": [
+   3,
+   4
+  ],
+  "title": "Bernoulli y cómo sabe el avión a qué velocidad va",
+  "fuente": "diapositivas POF 1 (19-23)",
+  "scenes": [
+   {
+    "text": "El anemómetro no mide la velocidad con un radar ni con un GPS. Mide presiones. Y la clave para entenderlo es Bernoulli.",
+    "visual": "Primer plano del anemómetro de un PA-28 en carrera de despegue: la aguja sube por el arco verde. La cámara sigue un tubo desde detrás del instrumento hasta el pitot bajo el ala."
+   },
+   {
+    "text": "El teorema de Bernoulli es conservación de la energía. En un fluido en movimiento, la presión estática más la presión dinámica, la energía del movimiento, se mantiene constante. Esa suma es la presión total.",
+    "visual": "Tubo de corriente animado con un estrechamiento: las partículas aceleran en la garganta. Dos barras de colores encima: 'estática' baja y 'dinámica' sube, pero su suma (barra total) no cambia de altura."
+   },
+   {
+    "text": "Si frenas el aire hasta pararlo del todo, su energía de movimiento no desaparece: se convierte en presión. En ese punto, el punto de remanso, la presión es la presión total.",
+    "visual": "Cámara lenta: un chorro de partículas choca contra el morro redondeado de un perfil y se detiene en un punto que se ilumina (punto de remanso). Una barra de presión sube hasta el valor 'total'."
+   },
+   {
+    "text": "Eso es exactamente el tubo de pitot: el aire entra, el tubo está cerrado por dentro, el aire se detiene y lo que llega al instrumento es presión total. Por las tomas estáticas, en el costado, llega la presión estática.",
+    "visual": "Animación 3D del sistema pitot-estático del PA-28: flujo de partículas entrando en el pitot (azul) y llegando por un tubo rojo al anemómetro; desde la toma estática del fuselaje sale un tubo azul hacia los tres instrumentos."
+   },
+   {
+    "text": "Dentro del anemómetro, un diafragma recibe la total por dentro y la estática por fuera. La diferencia es la presión dinámica. Más velocidad, más presión dinámica, más se hincha el diafragma, y más avanza la aguja.",
+    "visual": "Corte del anemómetro: diafragma que se hincha con presión total; palanca y sector mueven la aguja. Al lado, un avión acelera: tres indicadores encadenados se iluminan en secuencia: velocidad ↑ → q ↑ → aguja ↑."
+   },
+   {
+    "text": "Resumen: pitot, presión total. Estática, presión estática. La diferencia, presión dinámica. Y eso es lo que el anemómetro convierte en velocidad indicada.",
+    "visual": "Vista aérea del PA-28 en vuelo con el pitot y la toma estática destacados en dos colores, y la ecuación pt − ps = q flotando discreta bajo el ala."
+   }
+  ]
+ },
+ {
+  "id": "080.01-ias-cas-eas-tas",
+  "lesson": "080.01",
+  "sections": [
+   7
+  ],
+  "title": "IAS, CAS, EAS y TAS",
+  "fuente": "diapositivas POF 1 (9) y Navegación (35)",
+  "scenes": [
+   {
+    "text": "El anemómetro marca cien nudos. ¿Vas de verdad a cien nudos respecto al aire? Depende. Hay cuatro velocidades y conviene no mezclarlas.",
+    "visual": "Cabina de la Cessna 172 en crucero: anemómetro clavado en 100 kt. La cámara sale por el parabrisas y se coloca a la par del avión con un velocímetro flotante con un signo de interrogación."
+   },
+   {
+    "text": "La IAS, velocidad indicada, es lo que lees en el instrumento. Corrígela por los errores del instrumento y de posición de las tomas, y tienes la CAS, velocidad calibrada.",
+    "visual": "Escalera animada de cuatro peldaños. En el primero, IAS. Una lupa sobre la toma estática del fuselaje muestra el flujo perturbado; al corregirlo, la cifra sube al segundo peldaño: CAS."
+   },
+   {
+    "text": "Corrige la CAS por compresibilidad, que importa a altas velocidades, y tienes la EAS. Y corrige la EAS por la densidad del aire, y tienes la TAS: la velocidad real del avión respecto a la masa de aire.",
+    "visual": "Tercer peldaño: un avión de línea rápido comprime el aire delante del morro (EAS). Cuarto peldaño: el cubo de aire se vuelve menos denso y la cifra salta a TAS."
+   },
+   {
+    "text": "La TAS es la que importa en navegación. Y un detalle clave: para la misma IAS, la TAS aumenta con la altitud, porque el aire es menos denso y el avión tiene que ir más rápido para crear la misma presión dinámica.",
+    "visual": "Pantalla dividida: misma Cessna a 1000 ft y a 8000 ft, ambos anemómetros en 100 kt. Al de 8000 ft lo adelanta en el suelo una sombra más rápida, con la TAS mayor marcada sobre ella."
+   },
+   {
+    "text": "Para recordar el orden: indicada, calibrada, equivalente y verdadera. Instrumento y posición, compresibilidad, y densidad.",
+    "visual": "La escalera completa, con cada peldaño iluminándose a ritmo de la narración y su corrección escrita en pequeño en la contrahuella."
+   }
+  ]
+ },
+ {
+  "id": "080.03-perfil",
+  "lesson": "080.03",
+  "sections": [
+   0,
+   1
+  ],
+  "title": "Anatomía de un perfil aerodinámico",
+  "fuente": "diapositivas POF 1 (10-11, 24-25)",
+  "scenes": [
+   {
+    "text": "Si cortas el ala de tu avioneta con un plano de lado, lo que ves es el perfil aerodinámico. Una forma diseñada para producir sustentación con muy buena eficiencia.",
+    "visual": "Animación 3D: el ala de un PA-28 en el hangar. Un plano láser vertical la atraviesa y la sección se separa y gira hacia cámara, quedando el perfil grande en pantalla."
+   },
+   {
+    "text": "Delante, el borde de ataque, el punto más adelantado del perfil. Detrás, el borde de salida. La recta que los une es la línea de cuerda.",
+    "visual": "Sobre el perfil, un punto de luz recorre el contorno y se detiene en el borde de ataque, luego en el borde de salida. Entre ambos se dibuja la cuerda como un trazo que crece."
+   },
+   {
+    "text": "Arriba, el extradós; abajo, el intradós. La línea que va justo por el medio de las dos superficies es la línea media de curvatura. Cuanto más se separa de la cuerda, más curvado es el perfil.",
+    "visual": "El extradós se tiñe de un color y el intradós de otro. Se dibuja la línea media; luego un deslizador aumenta la curvatura y el perfil se 'abomba' en directo."
+   },
+   {
+    "text": "El espesor es la distancia entre extradós e intradós en cada punto, y el espesor máximo es su valor mayor. En el morro, el radio del borde de ataque mide lo redondeado que es.",
+    "visual": "Un calibre animado mide el espesor en varios puntos y se queda en el máximo. En el morro, un círculo encaja en la curvatura del borde de ataque y muestra su radio."
+   },
+   {
+    "text": "Ahora comprueba en tu prevuelo: recorre con la vista el borde de ataque, busca golpes o abolladuras. Cualquier daño ahí cambia la forma del perfil, y con ella cómo fluye el aire.",
+    "visual": "Plano real: la mano del piloto recorre el borde de ataque de una Cessna 152 en el prevuelo con una linterna. Inserto: perfil con una abolladura y líneas de corriente perturbadas."
+   },
+   {
+    "text": "Repaso: borde de ataque, borde de salida, cuerda, extradós, intradós, línea media y espesor.",
+    "visual": "El perfil gira 360° mientras cada parte se ilumina al ser nombrada con una etiqueta mínima pegada a su contorno."
+   }
+  ]
+ },
+ {
+  "id": "080.04-viento-relativo-sustentacion",
+  "lesson": "080.04",
+  "sections": [
+   0,
+   1,
+   3
+  ],
+  "title": "Viento relativo, ángulo de ataque y de dónde sale la sustentación",
+  "fuente": "diapositivas POF 1 (26-29, 55)",
+  "scenes": [
+   {
+    "text": "El aire que de verdad le importa al ala es el viento relativo: el flujo que ve el avión al moverse.",
+    "visual": "Cámara montada en el ala de la Cessna en vuelo; líneas de aire pasan de delante a atrás. La cámara se aleja y muestra la trayectoria del avión con una flecha opuesta: viento relativo."
+   },
+   {
+    "text": "Es paralelo a la trayectoria y de sentido contrario. Se toma lejos del avión, donde el aire no está perturbado. Y su magnitud es la TAS, la velocidad verdadera.",
+    "visual": "El avión asciende en diagonal: la flecha del viento relativo se inclina con la trayectoria, no con el morro. Tres etiquetas aparecen junto a la flecha: dirección, aire no perturbado, magnitud = TAS."
+   },
+   {
+    "text": "El ángulo entre la cuerda del perfil y ese viento relativo es el ángulo de ataque. Ojo: no es el ángulo del morro respecto al horizonte.",
+    "visual": "Pantalla dividida: izquierda, perfil con la cuerda y el viento relativo y el arco α entre ellos. Derecha, el avión con el morro alto pero trayectoria también alta: el ángulo de ataque es pequeño aunque la actitud sea grande."
+   },
+   {
+    "text": "Donde las líneas de corriente se juntan, el aire acelera y la presión baja. Donde se separan, el aire frena y la presión sube. Delante, en el punto de remanso, el aire se para y se divide.",
+    "visual": "Simulación 2D de líneas de corriente alrededor del perfil con partículas: se aprietan sobre el extradós (aceleran, se tiñen de azul) y se abren cerca del borde de ataque inferior (frenan, rojo). Punto de remanso brillando."
+   },
+   {
+    "text": "Sobre gran parte del extradós aparece succión, presión menor que la del aire libre. Y donde el aire frena, sobrepresión. La diferencia empuja el ala hacia arriba: eso es la sustentación.",
+    "visual": "Las presiones se dibujan como flechas sobre el contorno: flechas azules hacia fuera en el extradós (succión) y rojas hacia dentro abajo (sobrepresión). Se suman en una flecha vertical grande: L."
+   },
+   {
+    "text": "Un perfil curvado da algo de sustentación incluso con ángulo de ataque cero. Y con un ángulo de ataque suficientemente negativo, la sustentación puede ir hacia abajo.",
+    "visual": "El perfil gira a α = 0: sigue habiendo una pequeña flecha L arriba. Luego gira a α negativo: las succiones pasan al intradós y la flecha L apunta hacia abajo. Inserto: avioneta empujando el morro en un vuelo de cero g."
+   }
+  ]
+ },
+ {
+  "id": "080.04-centro-presiones-curva-cl",
+  "lesson": "080.04",
+  "sections": [
+   4,
+   6
+  ],
+  "title": "El centro de presiones y la curva CL–α",
+  "fuente": "diapositivas POF 1 (30-32, 41, 57-58)",
+  "scenes": [
+   {
+    "text": "Todas las presiones del perfil se pueden resumir en una sola fuerza que actúa en un punto: el centro de presiones. Y ese punto se mueve.",
+    "visual": "Perfil con su distribución de presiones como una 'nube' de flechas. Las flechas se condensan en una sola flecha que nace de un punto de la cuerda, etiquetado CP."
+   },
+   {
+    "text": "Al aumentar el ángulo de ataque, el punto de remanso baja, el pico de succión se acerca al borde de ataque, y el centro de presiones avanza.",
+    "visual": "Secuencia a cámara lenta con α = −6°, 4° y 10°: el punto de remanso desciende por el morro, la nube de succión se concentra delante, y el punto CP se desliza hacia el borde de ataque."
+   },
+   {
+    "text": "La curva CL alfa cuenta la historia completa. Al principio, más ángulo de ataque, más coeficiente de sustentación, casi en línea recta.",
+    "visual": "Fondo oscuro, gráfico que se dibuja en directo: eje α horizontal, eje CL vertical. Un perfil pequeño cabalga sobre la curva inclinándose más a medida que la curva sube recta."
+   },
+   {
+    "text": "Hasta un máximo, el CL máximo, que se alcanza en el ángulo de ataque crítico. A partir de ahí el flujo se separa y la sustentación cae: es la pérdida.",
+    "visual": "La curva se curva y llega al pico (punto brillante, CLmax, αcrit). El perfil sobre la curva muestra el flujo despegándose del extradós en remolinos mientras la curva baja."
+   },
+   {
+    "text": "Un perfil con curvatura positiva da sustentación con ángulo cero. Uno simétrico, no. Y para uno con curvatura negativa, el CL es negativo con ángulo cero.",
+    "visual": "Tres curvas paralelas se superponen y desplazan: curvatura positiva, simétrica y negativa, cada una con su perfil dibujado al lado y su corte con el eje marcado."
+   },
+   {
+    "text": "Y en vuelo: cada punto de la curva es una actitud del avión. A medida que vuelas más despacio, necesitas más ángulo de ataque para mantener la sustentación, hasta llegar al crítico.",
+    "visual": "Junto a la curva, cuatro siluetas del mismo avión a velocidades decrecientes, cada una con más morro arriba, unidas por líneas discontinuas a su punto de la curva. La última, en αcrit, parpadea en ámbar."
+   }
+  ]
+ },
+ {
+  "id": "080.05-formula-sustentacion",
+  "lesson": "080.05",
+  "sections": [
+   1,
+   4,
+   5
+  ],
+  "title": "La fórmula de la sustentación en vuelo real",
+  "fuente": "diapositivas POF 1 (40-41, 55)",
+  "scenes": [
+   {
+    "text": "La sustentación cabe en una línea: un medio, por rho, por uve al cuadrado, por ese, por CL. Pero lo interesante es lo que significa cuando estás volando.",
+    "visual": "La fórmula L = ½ ρ V² S CL se escribe sobre el cielo detrás de una Cessna 152 en vuelo. Cada término queda anclado a algo del avión mediante una línea fina."
+   },
+   {
+    "text": "Rho es la densidad del aire. Uve, la velocidad, y va al cuadrado. Ese es la superficie alar. Y CL, el coeficiente de sustentación, depende sobre todo de la forma del perfil y del ángulo de ataque.",
+    "visual": "ρ se conecta al aire alrededor (partículas), V² a un anemómetro, S al ala que se ilumina en planta, CL al perfil que se inclina."
+   },
+   {
+    "text": "Al doble de velocidad, cuatro veces más sustentación, si no cambias nada más. Por eso la velocidad es tan poderosa.",
+    "visual": "Simulación: el mismo avión a 60 y a 120 kt. La flecha de sustentación del segundo es cuatro veces más larga; el avión se dispara hacia arriba."
+   },
+   {
+    "text": "Pero en vuelo nivelado la sustentación tiene que igualar al peso. Si reduces velocidad, para mantener la sustentación tienes que subir el CL, es decir, más ángulo de ataque. Más despacio, más morro arriba.",
+    "visual": "Cabina: se reduce potencia, el anemómetro baja y el piloto tira suavemente para mantener altitud; el horizonte artificial muestra el morro subiendo. Inserto del perfil inclinándose y el CL subiendo en una barra."
+   },
+   {
+    "text": "El límite llega cuando ya no puedes subir más el CL: el CL máximo. La velocidad a la que pasa en vuelo nivelado es la velocidad de pérdida.",
+    "visual": "La barra de CL toca su tope y parpadea; el anemómetro se detiene en el límite inferior del arco blanco. Flujo separándose sobre el ala en el inserto."
+   },
+   {
+    "text": "También influyen el estado de la superficie, como el hielo, la lluvia o la suciedad, y la compresibilidad a altas velocidades. Un ala sucia o con hielo pierde CL máximo.",
+    "visual": "Pantalla dividida: ala limpia frente a ala con escarcha. Mismo ángulo de ataque, pero en la del hielo el flujo se separa antes y su flecha de sustentación es más corta."
+   }
+  ]
+ },
+ {
+  "id": "080.06-torbellinos-alargamiento",
+  "lesson": "080.06",
+  "sections": [
+   1,
+   2,
+   3
+  ],
+  "title": "Torbellinos de punta, resistencia inducida y alargamiento",
+  "fuente": "diapositivas POF 1 (36-39)",
+  "scenes": [
+   {
+    "text": "Un ala real tiene un final, y en ese final pasa algo que el perfil en dos dimensiones no cuenta.",
+    "visual": "Plano cinematográfico al atardecer: una Cessna en aproximación con humedad en el aire; desde la punta del ala nace un remolino visible que se enrolla tras el avión."
+   },
+   {
+    "text": "Debajo del ala hay más presión que encima. En las puntas, el aire del intradós se escapa hacia el extradós, y se enrosca formando los torbellinos de punta de ala.",
+    "visual": "Vista frontal 3D del ala: zona roja (alta presión) debajo y azul (baja) encima. Partículas se escapan por la punta, rodean el borde y se enrollan en espiral hacia atrás."
+   },
+   {
+    "text": "Además, en el intradós el aire tiende a ir hacia las puntas, y en el extradós hacia la raíz. Detrás del ala, todo eso se enrolla y forma la estela.",
+    "visual": "Vista en planta: flechas sobre el intradós apuntando hacia fuera y sobre el extradós hacia dentro. En el borde de salida se cruzan y la lámina de aire se enrolla en dos tubos detrás del avión."
+   },
+   {
+    "text": "Los torbellinos empujan el aire hacia abajo detrás del ala, el downwash. La sustentación se inclina hacia atrás, y esa componente hacia atrás es la resistencia inducida: el precio de sustentar.",
+    "visual": "Perfil con el flujo inclinado hacia abajo detrás. La flecha de sustentación se inclina; se descompone en una vertical y otra horizontal hacia atrás que se ilumina en rojo: resistencia inducida."
+   },
+   {
+    "text": "El alargamiento es lo esbelta que es el ala. Un ala larga y estrecha tiene la curva de sustentación más inclinada y menos resistencia inducida. Por eso los veleros tienen esas alas.",
+    "visual": "Pantalla dividida: velero de alas larguísimas frente a un ala corta y ancha, con torbellinos mucho más débiles en el velero. Debajo, las dos curvas CL–α: la del alargamiento alto, más empinada."
+   },
+   {
+    "text": "Y la flecha también cuenta: un ala en flecha tiene una curva de sustentación menos inclinada que un ala recta.",
+    "visual": "Un ala recta se transforma en ala en flecha mientras su curva CL–α se tumba ligeramente. La cámara termina sobre la estela de la Cessna disipándose sobre la pista."
+   }
+  ]
+ },
+ {
+  "id": "080.07-resistencia-total",
+  "lesson": "080.07",
+  "sections": [
+   0,
+   1,
+   2,
+   4,
+   5
+  ],
+  "title": "Resistencia parásita, inducida y total",
+  "fuente": "diapositivas POF 1 (34-35)",
+  "scenes": [
+   {
+    "text": "Todo lo que frena al avión se resume en dos resistencias que se comportan justo al revés con la velocidad.",
+    "visual": "Plano aire-aire de un PA-28: el aire se hace visible chocando contra el morro, el tren y las antenas, y enroscándose en las puntas del ala, en dos colores distintos."
+   },
+   {
+    "text": "La resistencia parásita es la del avión empujando el aire: forma, rozamiento, tren, antenas. Es proporcional a la presión dinámica, es decir, al cuadrado de la velocidad.",
+    "visual": "El aire contra el morro y el tren se tiñe de azul. Al acelerar el avión, la nube azul se espesa rápidamente. Un gráfico pequeño dibuja una curva azul que sube con la velocidad."
+   },
+   {
+    "text": "La inducida es el precio de la sustentación, y es inversamente proporcional a la presión dinámica. Despacio, con mucho ángulo de ataque, es grande. Rápido, se hace pequeña.",
+    "visual": "Los torbellinos de punta se tiñen de rojo. Avión lento con morro alto: torbellinos gruesos. Avión rápido: torbellinos finos. En el gráfico, una curva roja que baja con la velocidad."
+   },
+   {
+    "text": "Súmalas y sale la resistencia total, con forma de U. En el ejemplo del curso, el mínimo está alrededor de noventa nudos: ahí el avión necesita menos empuje para volar nivelado.",
+    "visual": "Gráfico 'resistencia frente a IAS': las dos curvas se suman y se dibuja la curva total en U. Un punto se desliza por la U y se detiene en el mínimo, cerca de 90 kt, que se ilumina."
+   },
+   {
+    "text": "Y si se para el motor, el empuje es cero. Lo único que compensa la resistencia es la componente del peso hacia delante, a lo largo de la trayectoria. Por eso un avión planea siempre descendiendo.",
+    "visual": "Simulación: la hélice se detiene, el avión baja el morro y planea. La flecha del peso se descompone y una componente apunta hacia delante, a lo largo de la trayectoria, igualando a la resistencia."
+   },
+   {
+    "text": "Cuanto mejor sea la relación entre sustentación y resistencia, la finura, más lejos llega planeando. La polar del avión resume esa relación.",
+    "visual": "Dos planeos desde la misma altura sobre el Vallès: el avión con mejor L/D llega más lejos sobre el terreno. Transición a la polar CL–CD dibujándose con el punto de mejor finura marcado."
+   }
+  ]
+ },
+ {
+  "id": "080.06-efecto-suelo",
+  "lesson": "080.06",
+  "sections": [
+   5
+  ],
+  "title": "Efecto suelo",
+  "fuente": "diapositivas POF 1 (33)",
+  "scenes": [
+   {
+    "text": "Estás en el aterrizaje, cortas gases a un palmo de la pista… y el avión no quiere tocar. Sigue flotando. Es el efecto suelo.",
+    "visual": "Plano cinematográfico bajo, a ras de pista en Sabadell: una Cessna 152 en recogida flota metros y metros sobre el eje sin tocar. Inserto de cabina: gases al ralentí."
+   },
+   {
+    "text": "Cerca del suelo, los torbellinos de punta de ala no pueden desarrollarse del todo. Se debilitan, y con ellos el downwash.",
+    "visual": "Vista frontal 3D del ala a gran altura con torbellinos completos. El ala desciende hacia la pista y los torbellinos 'chocan' con el suelo, se aplastan y pierden intensidad."
+   },
+   {
+    "text": "Resultado, para el mismo ángulo de ataque: más sustentación y menos resistencia inducida.",
+    "visual": "Pantalla dividida a la misma α: arriba en vuelo libre, abajo en efecto suelo. Abajo la flecha de sustentación es algo mayor y la de resistencia inducida más corta."
+   },
+   {
+    "text": "Solo es significativo por debajo de aproximadamente la mitad de la envergadura sobre el terreno. Por encima de una envergadura se considera despreciable.",
+    "visual": "Junto al avión, una regla vertical con la envergadura como unidad: zona coloreada intensa hasta ½ envergadura, degradado hasta 1 envergadura, transparente por encima."
+   },
+   {
+    "text": "Por eso, en el despegue, el efecto suelo desaparece poco después de dejar la pista. Si el avión se va al aire demasiado pronto, puede costarle seguir subiendo al salir de él.",
+    "visual": "Despegue: el avión despega pronto y lento, sube, sale de la zona coloreada y la flecha de resistencia inducida crece de golpe; el variómetro baja hacia cero en un inserto."
+   },
+   {
+    "text": "Para recordar: cerca del suelo, torbellinos más débiles, más sustentación y menos resistencia inducida. Por debajo de media envergadura.",
+    "visual": "Final: la Cessna por fin toca suavemente; la cámara se eleva y se ven los dos torbellinos aplastados disipándose sobre el asfalto."
+   }
+  ]
+ },
+ {
+  "id": "080.09-flaps",
+  "lesson": "080.09",
+  "sections": [
+   1,
+   2,
+   3
+  ],
+  "title": "Flaps: por qué suben el CL y qué tipos hay",
+  "fuente": "diapositivas POF 1 (42-48)",
+  "scenes": [
+   {
+    "text": "En el tramo de base bajas un punto de flap. El avión levanta el morro, y puedes volar más despacio. ¿Qué ha pasado en el ala?",
+    "visual": "Cabina de la Cessna 172 en base: mano en la palanca de flaps a 10°. Corte exterior: el flap baja por detrás del ala y el morro sube ligeramente."
+   },
+   {
+    "text": "El flap simple solo se deflecta hacia abajo. Al hacerlo, aumenta la curvatura del perfil, y es como si tuvieras un ángulo de ataque virtual mayor.",
+    "visual": "Perfil con flap simple que baja un ángulo δ. Se dibuja la nueva línea media, más curvada, y una cuerda 'virtual' del borde de ataque al nuevo borde de salida, inclinada un Δα."
+   },
+   {
+    "text": "La curva CL alfa se desplaza hacia arriba: más CL para el mismo ángulo y más CL máximo. Pero ojo: en la mayoría de los casos, el ángulo de ataque crítico se reduce.",
+    "visual": "Gráfico CL–α: curva roja sin flaps; aparece la azul con flap, desplazada hacia arriba e izquierda. Se marcan ΔCLmax y el pequeño −Δαcrit entre los picos."
+   },
+   {
+    "text": "Hay varios tipos: simple, de intradós o split, ranurado, y Fowler, que además retrocede y aumenta la cuerda y la superficie. El Fowler es el que más CL máximo consigue.",
+    "visual": "Carrusel 3D de perfiles que se transforman uno en otro: plain, split, slotted, Fowler de una, dos y tres ranuras, con aire pasando por las ranuras. A la derecha, las curvas CL suben escalonadas."
+   },
+   {
+    "text": "Al extender flap, la distribución de presiones cambia sobre todo en la zona del flap, y el centro de presiones se desplaza hacia atrás.",
+    "visual": "Perfil con nube de presiones: al bajar el flap la nube crece en la parte trasera y el punto CP se desplaza hacia el borde de salida."
+   },
+   {
+    "text": "Y como el flap y sus anclajes no aguantan presiones dinámicas altas, existe una velocidad máxima con flaps extendidos: la VFE.",
+    "visual": "Anemómetro de la Cessna con el arco blanco iluminado; la aguja se acerca a su límite superior (VFE) y parpadea. Toma exterior del flap vibrando con flujo rápido."
+   }
+  ]
+ },
+ {
+  "id": "080.09-borde-ataque",
+  "lesson": "080.09",
+  "sections": [
+   6
+  ],
+  "title": "Dispositivos de borde de ataque: slats y ranuras",
+  "fuente": "diapositivas POF 1 (49-52)",
+  "scenes": [
+   {
+    "text": "Los flaps trabajan en el borde de salida. Pero también se puede ayudar al ala por delante, en el borde de ataque.",
+    "visual": "Plano cinematográfico de un reactor en aproximación con los slats desplegados; zoom al borde de ataque abriéndose."
+   },
+   {
+    "text": "Hay flaps de borde de ataque, como el de morro caído, el Krueger o el de curvatura variable, y hay ranuras y slats.",
+    "visual": "Secuencia de perfiles que se transforman: leading edge drop flap, Krueger que sale de debajo del ala, flap de curvatura variable y slat."
+   },
+   {
+    "text": "El problema de un borde de ataque fino y poco curvado es que a ángulos altos el flujo se separa justo después del pico de succión. Un flap de borde de ataque aumenta la curvatura y suaviza ese pico.",
+    "visual": "Perfil a α alto: el flujo forma un pico azul intenso en el morro y se despega en remolinos. Al bajar el morro del perfil, el pico se reduce y el flujo se mantiene pegado."
+   },
+   {
+    "text": "La ranura deja pasar aire desde la alta presión del intradós a la baja presión del extradós. Ese chorro le mete energía a la capa límite, y la separación se retrasa hasta ángulos de ataque del orden de veinticinco grados.",
+    "visual": "Pantalla dividida: slat cerrado con flujo separado y remolinos; slat abierto con un chorro rápido por la ranura que 'pega' el flujo al extradós. Indicador de α llegando a ~25°."
+   },
+   {
+    "text": "Resultado: más CL máximo y un ángulo de ataque crítico mayor, manteniendo más o menos la pendiente de la curva. Hay slats fijos, en aviones pequeños y lentos, y retráctiles, en los de línea.",
+    "visual": "Gráfico CL–α: la curva se alarga hacia arriba y a la derecha. Junto al gráfico, una avioneta STOL con slots fijos y un avión de línea con slats retráctiles."
+   }
+  ]
+ },
+ {
+  "id": "080.08-perdida",
+  "lesson": "080.08",
+  "sections": [
+   0,
+   1,
+   2
+  ],
+  "title": "La pérdida: qué pasa en el ala",
+  "fuente": "diapositivas POF 1 (53-58)",
+  "scenes": [
+   {
+    "text": "La pérdida no tiene que ver con que el motor se pare ni con ir despacio. Tiene que ver con el ángulo de ataque.",
+    "visual": "Cabina de la Cessna 152 en una práctica de pérdidas a altura segura sobre el Vallès: gases reducidos, morro subiendo, anemómetro bajando. Suena la bocina de aviso."
+   },
+   {
+    "text": "Cuanto más despacio vuelas, más CL necesitas, y por tanto más ángulo de ataque. Si ese ángulo supera el crítico, el ala entra en pérdida.",
+    "visual": "Perfil grande con indicador de α. A medida que el anemómetro del inserto baja, el perfil se inclina más, hasta cruzar una marca roja de αcrit."
+   },
+   {
+    "text": "En el extradós, la presión baja hasta un mínimo y luego vuelve a subir hacia el borde de salida. Esa subida es un gradiente adverso: el aire tiene que ir cuesta arriba.",
+    "visual": "Sobre el extradós, un 'terreno' de presión: el aire baja una cuesta hasta el mínimo y luego sube una cuesta hasta el borde de salida. Partículas que van perdiendo velocidad al subir."
+   },
+   {
+    "text": "Con más ángulo, el punto de remanso baja, el mínimo de presión se adelanta y la cuesta se hace más empinada. La capa límite pasa de laminar a turbulenta y, al final, se despega.",
+    "visual": "Zoom a la capa límite: lupa en la zona laminar (capas ordenadas), punto de transición, zona turbulenta y punto de separación donde se forman remolinos. Al aumentar α, el punto de separación avanza hacia el morro."
+   },
+   {
+    "text": "Pasado el ángulo crítico, el CL ya no sube, baja. Puede pasar de forma progresiva o brusca, según el diseño. Y trae pérdida de altura y de control.",
+    "visual": "El avión exterior: bataneo visible en la cola por el aire turbulento, el morro cae. Gráfico CL–α con el punto cayendo por el lado derecho del pico."
+   },
+   {
+    "text": "Por eso la pérdida se evita en operación normal, y sobre todo cerca del suelo: en el despegue y en el aterrizaje.",
+    "visual": "Pantalla dividida: despegue y recogida a pocos pies de la pista, con un margen de seguridad (franja verde) sobre la marca de αcrit."
+   }
+  ]
+ },
+ {
+  "id": "080.08-recuperacion-aviso",
+  "lesson": "080.08",
+  "sections": [
+   6,
+   7,
+   8
+  ],
+  "title": "Cómo se recupera una pérdida y cómo te avisa el avión",
+  "fuente": "diapositivas POF 1 (61-64)",
+  "scenes": [
+   {
+    "text": "Si la pérdida es por exceso de ángulo de ataque, la salida es reducirlo. Todo lo demás viene después.",
+    "visual": "Cabina, a altura segura: la bocina suena, el bataneo sacude la imagen. Primer plano de la mano en el volante."
+   },
+   {
+    "text": "A menudo basta con aflojar la presión hacia atrás del volante. Según el avión y la pérdida, puede hacer falta un empuje suave hacia delante. El flujo vuelve a pegarse al ala.",
+    "visual": "La mano afloja y empuja suavemente. Inserto del perfil: el α baja y las líneas de corriente se vuelven a pegar al extradós de delante hacia atrás."
+   },
+   {
+    "text": "Con el morro ligeramente por debajo del horizonte, potencia máxima autorizada, para perder la menor altura posible.",
+    "visual": "Horizonte artificial con el morro un poco bajo; la mano empuja gases a fondo; el altímetro deja de bajar y empieza a recuperar."
+   },
+   {
+    "text": "En un ala recta, usa el timón de dirección para evitar que caiga un ala. Y cuidado con los alerones: el que baja aumenta el ángulo de ataque de esa parte del ala y la puede meter más en pérdida.",
+    "visual": "Vista trasera del avión: el ala izquierda empieza a caer. Pedal correctivo y el ala se recupera. Inserto: alerón bajado sobre la punta con el flujo despegándose."
+   },
+   {
+    "text": "El avión tiene que avisarte con margen. El aviso puede venir de la propia aerodinámica, como el bataneo, o de un dispositivo. Un aviso solo visual no vale.",
+    "visual": "Primer plano del avisador de pérdida en el borde de ataque de la Cessna: la lengüeta sube con el flujo y suena la bocina. Una luz roja sola aparece tachada."
+   },
+   {
+    "text": "El aviso tiene que empezar por encima de la velocidad de pérdida: con deceleraciones de menos de un nudo por segundo, al menos cinco nudos o un cinco por ciento antes, el mayor de los dos.",
+    "visual": "Anemómetro con dos marcas en su escala: VSW (aviso) y la velocidad de pérdida identificada, y entre ambas una franja que se rellena con '≥ 5 kt o 5 %'."
+   }
+  ]
+ },
+ {
+  "id": "080.11-tipos-estabilidad",
+  "lesson": "080.11",
+  "sections": [
+   0,
+   1
+  ],
+  "title": "Estabilidad estática y dinámica",
+  "fuente": "diapositivas POF 1 (60-66)",
+  "scenes": [
+   {
+    "text": "Una ráfaga te levanta el morro y sueltas los mandos. ¿Qué hace el avión? Eso es la estabilidad.",
+    "visual": "Plano aire-aire: un PA-28 en crucero recibe una ráfaga, sube el morro. Inserto: manos soltando el volante."
+   },
+   {
+    "text": "La estabilidad estática mira la tendencia inicial justo después de la perturbación. Si tiende a volver, es positiva. Si se queda en la nueva posición, neutra. Y si se aleja cada vez más, negativa.",
+    "visual": "Tres canicas animadas: en un cuenco (vuelve, positiva), sobre una mesa plana (se queda, neutra) y sobre una cúpula (se escapa, negativa). Cada una junto a un avión que hace lo mismo con el morro."
+   },
+   {
+    "text": "La estabilidad dinámica mira lo que pasa a lo largo del tiempo: si las oscilaciones se van amortiguando, se mantienen o crecen.",
+    "visual": "Gráfico de cabeceo frente a tiempo dibujándose en directo con tres trazos: oscilación amortiguada, constante y divergente. La silueta del avión se mueve siguiendo cada trazo."
+   },
+   {
+    "text": "Hay un precio: cuanto más estable estáticamente es un avión, más se resiste a cualquier cambio, también a los que pides tú. Más estabilidad, menos maniobrabilidad.",
+    "visual": "Pantalla dividida: avioneta escuela muy estable que tarda en responder a un tirón del volante, frente a un avión acrobático que gira al instante."
+   },
+   {
+    "text": "Por eso una avioneta de escuela es estable y tranquila, y un acrobático es más maniobrable.",
+    "visual": "La cámara vuelve al PA-28: el morro, tras dos oscilaciones suaves, vuelve a su actitud. Rótulo mínimo: positiva y amortiguada."
+   }
+  ]
+ },
+ {
+  "id": "080.11-longitudinal",
+  "lesson": "080.11",
+  "sections": [
+   3,
+   4
+  ],
+  "title": "Estabilidad longitudinal y el papel del estabilizador",
+  "fuente": "diapositivas POF 1 (66-69)",
+  "scenes": [
+   {
+    "text": "La estabilidad longitudinal es la del cabeceo, morro arriba y morro abajo. Y depende de un equilibrio de momentos alrededor del centro de gravedad.",
+    "visual": "Vista lateral 3D del avión sobre fondo oscuro, con un eje transversal brillando en el CG. El avión oscila como un balancín alrededor de ese eje."
+   },
+   {
+    "text": "La sustentación del ala, por su brazo hasta el centro de gravedad, tiene que igualar a la fuerza del estabilizador por su brazo. L sub W por d, igual a L sub H por l.",
+    "visual": "Flecha LW en el ala y LH en la cola. Los brazos d y l se dibujan como barras desde el CG. Un balancín se nivela cuando LW·d = LH·l, ecuación discreta bajo el avión."
+   },
+   {
+    "text": "Si una ráfaga aumenta el ángulo de ataque, se rompe ese equilibrio. Con estabilidad positiva, el avión tiende a volver a su ángulo de ataque de compensación.",
+    "visual": "Ráfaga desde abajo: el morro sube. La flecha de la cola crece y crea un par que baja el morro. El avión vuelve a su actitud inicial con una oscilación amortiguada."
+   },
+   {
+    "text": "El fuselaje, solo, hace lo contrario: con ángulo de ataque positivo genera un momento de morro arriba que crece con el ángulo. Su contribución a la estabilidad es negativa.",
+    "visual": "El fuselaje se separa del avión: succión ascendente en el morro y descendente en la cola, flechas casi iguales y opuestas. Aparece un par giratorio rojo de morro arriba."
+   },
+   {
+    "text": "Un avión inestable sería casi imposible de pilotar a mano, salvo que tenga un sistema de aumento de estabilidad: un ordenador que vigila la actitud con giróscopos y mueve las superficies.",
+    "visual": "Simulación: un avión inestable tras una ráfaga diverge cada vez más. Corte: el mismo avión con un pequeño 'cerebro' electrónico y giróscopos que corrige la superficie de cola y lo estabiliza."
+   }
+  ]
+ },
+ {
+  "id": "080.11-potencia-flaps",
+  "lesson": "080.11",
+  "sections": [
+   5,
+   6
+  ],
+  "title": "Potencia y flaps: lo que desestabiliza",
+  "fuente": "diapositivas POF 1 (70-72)",
+  "scenes": [
+   {
+    "text": "En un motor y al aire metes potencia y flaps a la vez. Justo en ese momento, tu avión es menos estable longitudinalmente. Veamos por qué.",
+    "visual": "Escena real: Cessna 172 en final corta que inicia motor y al aire: gases a fondo, flaps aún extendidos, el morro tiende a subir con fuerza."
+   },
+   {
+    "text": "En casi todos los aviones, la potencia desestabiliza. Si la línea de empuje pasa por debajo o por encima del centro de gravedad, crea un momento de cabeceo.",
+    "visual": "Vista lateral de un reactor con motores bajo el ala: flecha de empuje por debajo del CG y el brazo d. Aparece un momento rotatorio de morro arriba."
+   },
+   {
+    "text": "Además, cuando aumenta el ángulo de ataque la velocidad baja pero el empuje apenas cambia, o incluso aumenta en los aviones de hélice. Ese momento ayuda a subir todavía más el morro.",
+    "visual": "Gráficos pequeños sincronizados: el α sube, la velocidad baja y la barra de empuje se mantiene. El par de morro arriba se hace proporcionalmente más fuerte."
+   },
+   {
+    "text": "En una avioneta de hélice delantera, el aire que atraviesa el disco de la hélice cambia de dirección y genera una fuerza vertical delante del centro de gravedad. Con más ángulo de ataque, más fuerza y más morro arriba.",
+    "visual": "Animación de flujo sobre la Cessna: aire llegando inclinado al disco de la hélice y saliendo recto. Una flecha F vertical nace en la hélice, a distancia d del CG, girando el avión morro arriba."
+   },
+   {
+    "text": "Y los flaps de borde de salida también desestabilizan: aumentan el downwash que llega al estabilizador y le quitan presión dinámica. La cola pierde eficacia.",
+    "visual": "Vista lateral con líneas de corriente: sin flaps el aire llega limpio a la cola; con flaps a 30°, el flujo baja con fuerza y la cola queda sumergida en aire más lento y más inclinado."
+   },
+   {
+    "text": "La peor combinación: flaps fuera, CL alto y potencia aplicada. Aproximación con potencia o motor y al aire. Por eso el punto neutro con potencia puede fijar el centrado más atrasado admisible.",
+    "visual": "Tres iconos se encienden a la vez en una esquina: flaps, CL alto, potencia. La escena de la Cessna en motor y al aire vuelve con el piloto bajando el morro y compensando con trim."
+   }
+  ]
+ },
+ {
+  "id": "080.12-mandos",
+  "lesson": "080.12",
+  "sections": [
+   0,
+   3,
+   4
+  ],
+  "title": "Tres ejes, tres mandos: profundidad, alerones y timón",
+  "fuente": "diapositivas POF 1 (74-80)",
+  "scenes": [
+   {
+    "text": "Los mandos crean desequilibrios controlados: rompen el equilibrio de momentos un instante para cambiar la actitud del avión.",
+    "visual": "Vista 3D de un PA-28 suspendido en el aire con tres ejes de colores atravesando el CG: longitudinal, lateral y vertical."
+   },
+   {
+    "text": "El timón de profundidad controla el cabeceo, alrededor del eje lateral. Tiras, el timón sube, la cola baja y el morro sube.",
+    "visual": "Cabina: el volante viene hacia atrás. Exterior: el estabilizador/elevador sube, aparece una fuerza hacia abajo en la cola y el avión gira sobre el eje lateral."
+   },
+   {
+    "text": "Los alerones controlan el alabeo, alrededor del eje longitudinal. Se mueven de forma diferencial: el que sube quita sustentación a su semiala, el que baja la aumenta. La diferencia hace alabear.",
+    "visual": "Volante a la derecha. Vista trasera: alerón derecho arriba (flecha de sustentación más corta), izquierdo abajo (más larga). El avión alabea a la derecha sobre su eje longitudinal."
+   },
+   {
+    "text": "En los aviones de transporte, los spoilers ayudan: si se despliegan en una sola semiala, quitan sustentación y añaden resistencia en ese lado. A alta velocidad pueden sustituir en parte a los alerones.",
+    "visual": "Ala de un avión de línea vista desde la ventanilla: los spoilers se levantan solo en el ala derecha mientras el avión alabea a la derecha."
+   },
+   {
+    "text": "Y el timón de dirección controla la guiñada, alrededor del eje vertical. Pedal derecho, el timón se va a la derecha y el morro también.",
+    "visual": "Pedal derecho en cabina. Exterior desde arriba: el timón se desvía, fuerza lateral en la deriva, el morro guiña a la derecha sobre el eje vertical."
+   },
+   {
+    "text": "En el prevuelo: volante atrás, la profundidad sube. Volante a la derecha, el alerón derecho sube. Comprueba siempre el sentido.",
+    "visual": "Plano real de prevuelo en el PA-28: alguien mueve el volante en cabina mientras otra cámara muestra la superficie correspondiente moviéndose en el sentido correcto, con un ✓ discreto."
+   }
+  ]
+ },
+ {
+  "id": "080.12-bisagra-fuerza-mando",
+  "lesson": "080.12",
+  "sections": [
+   2
+  ],
+  "title": "Momento de bisagra y fuerza en los mandos",
+  "fuente": "diapositivas POF 1 (73, 76)",
+  "scenes": [
+   {
+    "text": "¿Por qué el volante pesa más a medida que vuelas más rápido? Por el momento de bisagra.",
+    "visual": "Cabina: el piloto tira del volante a 80 kt con facilidad; a 120 kt el mismo tirón cuesta visiblemente más (la mano tiembla, indicador de fuerza mayor)."
+   },
+   {
+    "text": "Cuando desvías una superficie, el aire empuja sobre ella con una fuerza. Esa fuerza, aplicada a cierta distancia de la bisagra, crea un momento que intenta devolverla a su sitio. Momento igual a fuerza por distancia.",
+    "visual": "Perfil del estabilizador con el elevador deflectado: flecha roja F1 sobre el elevador a distancia d1 de la bisagra, arco M1 girando. Fórmula M1 = F1 · d1 discreta."
+   },
+   {
+    "text": "Para mantener la superficie desviada, tú tienes que hacer un momento igual y contrario a través de las varillas o los cables. Esa es la fuerza que notas en la mano.",
+    "visual": "La varilla de mando empuja con una flecha verde F2 en su brazo d2, creando el momento M2 opuesto. La mano del piloto en el volante se sincroniza con la flecha verde."
+   },
+   {
+    "text": "Ahora un detalle de estabilidad. Si subes el ángulo de ataque, un avión estable genera un momento de morro abajo. Para mantener ese nuevo ángulo necesitas más fuerza hacia abajo en la cola: elevador hacia arriba, lo que se llama deflexión negativa.",
+    "visual": "Avión en cabeceo positivo con un par de morro abajo. El elevador sube (ángulo −δe) y aparece Lt hacia abajo en la cola que compensa el par."
+   },
+   {
+    "text": "Por eso, en un avión estable, volar más lento y con más ángulo de ataque pide tirar más del volante. La fuerza en el mando te informa.",
+    "visual": "Secuencia de tres velocidades decrecientes: el elevador sube cada vez más y la mano tira cada vez más; el trim termina aliviando la fuerza."
+   }
+  ]
+ },
+ {
+  "id": "080.13-aeroelasticidad",
+  "lesson": "080.13",
+  "sections": [
+   0,
+   1
+  ],
+  "title": "Limitaciones, elasticidad y aeroelasticidad",
+  "fuente": "diapositivas POF 1 (80-82)",
+  "scenes": [
+   {
+    "text": "Las limitaciones de tu avión no son caprichos del fabricante. Protegen tres cosas: la resistencia de la estructura, su rigidez y que sigas teniendo control.",
+    "visual": "Plano cinematográfico del ala de un planeador moderno flexionándose en vuelo con turbulencia; corte al manual de vuelo abierto por la página de limitaciones."
+   },
+   {
+    "text": "La estructura no es rígida, es elástica. Se deforma en proporción a la carga y, mientras no pases el límite elástico, vuelve a su forma al quitarla.",
+    "visual": "Ensayo animado: una barra de aluminio con una pesa se curva y, al retirar la pesa, vuelve a su forma. Más carga: queda doblada para siempre (zona roja del gráfico esfuerzo-deformación)."
+   },
+   {
+    "text": "La aeroelasticidad es un círculo: las cargas aerodinámicas deforman el ala, la deformación cambia su geometría, la nueva geometría cambia las cargas, y vuelta a empezar.",
+    "visual": "Ciclo animado con el ala en el centro y cuatro flechas circulares: carga → deformación → nueva geometría → nueva carga. Cada paso se ve en el ala real (sube, se retuerce)."
+   },
+   {
+    "text": "El ala se dobla y a la vez se retuerce alrededor de su eje de flexión. Y las alas con mucho alargamiento son más flexibles.",
+    "visual": "Ala 3D con el eje de flexión marcado: primero se flexiona hacia arriba, luego cada sección gira alrededor del eje (torsión). Comparativa lado a lado con un ala corta y rígida."
+   },
+   {
+    "text": "Cuando las cargas cambian rápido, la energía elástica se convierte en movimiento, y aparecen fenómenos como la divergencia, la inversión de mando o el flutter.",
+    "visual": "Cámara lenta: punta de estabilizador horizontal vibrando cada vez más (flutter) en un túnel de viento. Tres etiquetas mínimas: divergencia · inversión de mando · flutter."
+   }
+  ]
+ },
+ {
+  "id": "080.13-factores-carga",
+  "lesson": "080.13",
+  "sections": [
+   2,
+   3,
+   4
+  ],
+  "title": "Factor de carga, carga límite y carga última",
+  "fuente": "diapositivas POF 1 (83-85)",
+  "scenes": [
+   {
+    "text": "En un viraje a sesenta grados de alabeo, nivelado, notas que te hundes en el asiento. Pesas el doble. Tu avión también.",
+    "visual": "Cabina de la Cessna 172 en viraje escarpado a 60° sobre el Vallès: horizonte inclinado, el piloto se hunde en el asiento. Un acelerómetro animado en la esquina marca 2 g."
+   },
+   {
+    "text": "La carga límite es la máxima que se espera en operación normal. La estructura la tiene que aguantar sin deformación permanente.",
+    "visual": "Ala 3D cargada progresivamente con flechas: se flexiona y vuelve al soltar. Barra lateral de carga con la marca 'límite'."
+   },
+   {
+    "text": "La carga última es la que la rompe. Y el factor de seguridad, la relación entre las dos, es normalmente uno coma cinco: la estructura aguanta hasta una vez y media la carga límite antes de llegar a la última.",
+    "visual": "La barra lateral continúa por encima del límite hasta 'última' (×1,5). Entre ambas, el ala queda deformada; al llegar a la última, se fractura en cámara lenta."
+   },
+   {
+    "text": "Los factores de carga límite dependen de la categoría. Categoría normal: al menos más dos coma cinco, sin necesidad de pasar de más tres coma ocho. Utility, más cuatro coma cuatro. Acrobática, más seis.",
+    "visual": "Tres avionetas en fila (normal, utility, acrobática) con acelerómetros que se llenan hasta +2,5…+3,8, +4,4 y +6,0 mientras cada una hace una maniobra más exigente."
+   },
+   {
+    "text": "Y los negativos: categoría normal, menos uno coma cincuenta y dos. Utility, menos uno coma setenta y seis. Acrobática, menos tres. Y transporte, menos uno.",
+    "visual": "Los mismos acelerómetros bajan por debajo de cero con un empujón de mando: −1,52, −1,76, −3,0; un avión de línea aparece con −1,0."
+   },
+   {
+    "text": "Con flaps extendidos el margen se reduce: el factor de carga máximo baja normalmente de dos coma cinco a dos. Una ráfaga con flaps fuera puede cargar mucho la estructura.",
+    "visual": "Cessna con flaps a 30° en aproximación atravesando una ráfaga: el acelerómetro salta y su tope se ha movido de 2,5 a 2,0 (franja roja más baja)."
+   }
+  ]
+ },
+ {
+  "id": "080.13-vn-arcos",
+  "lesson": "080.13",
+  "sections": [
+   5,
+   6
+  ],
+  "title": "El diagrama V-n y los arcos del anemómetro",
+  "fuente": "diapositivas POF 1 (84, 86-87)",
+  "scenes": [
+   {
+    "text": "Todo lo anterior cabe en un dibujo: el diagrama de maniobra, factor de carga frente a velocidad. Dentro, vuelas seguro. Fuera, no.",
+    "visual": "Fondo oscuro: se dibuja en directo el diagrama V-n (curva de CLmax, techo de factor de carga límite, VD a la derecha, zona negativa abajo). El interior se rellena de gris."
+   },
+   {
+    "text": "La curva de la izquierda es el CL máximo: a baja velocidad, el ala entra en pérdida antes de poder cargar la estructura.",
+    "visual": "Un punto (el avión) se mueve por la curva izquierda: tira del mando y en vez de subir el factor de carga, entra en pérdida (icono de flujo separado)."
+   },
+   {
+    "text": "Donde esa curva corta la carga límite está la VA, la velocidad de maniobra. Por debajo, un mando de profundidad completo y brusco te mete en pérdida antes de pasar el límite. Por encima, puede dar cargas estructurales excesivas.",
+    "visual": "El punto se coloca justo en VA. Pantalla dividida: por debajo de VA, el tirón brusco acaba en pérdida (verde); por encima de VA, el tirón dispara el acelerómetro más allá del límite (rojo)."
+   },
+   {
+    "text": "Hacia la derecha, la VC, velocidad de crucero de diseño, y la VD, velocidad de picado de diseño. La VD no es para volar: es para comprobar que la estructura aguanta.",
+    "visual": "VC y VD se marcan en el eje con líneas verticales. Junto a VD, un pequeño banco de ensayos estructurales en lugar de un avión volando."
+   },
+   {
+    "text": "En tu anemómetro: la línea roja es la VNE, aproximadamente cero coma nueve VD. La VNO, límite del arco verde, no supera el menor entre VC y cero coma ochenta y nueve VNE.",
+    "visual": "Transición del diagrama al anemómetro de la Cessna: la línea roja se ilumina (VNE ≈ 0,9 VD) y luego el final del arco verde (VNO ≤ mín(VC; 0,89 VNE))."
+   },
+   {
+    "text": "Entre la VNO y la VNE está el arco amarillo, el rango de precaución: solo en aire en calma y sin maniobras bruscas. En los aviones de línea, el límite se llama VMO, y en altura manda el Mach máximo, MMO.",
+    "visual": "La aguja entra en el arco amarillo mientras afuera el aire es liso; luego aparece turbulencia y la aguja vuelve al verde. Corte final: PFD de un avión de línea con VMO y MMO."
+   }
+  ]
+ }
+]

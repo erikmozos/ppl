@@ -1,0 +1,1163 @@
+[
+ {
+  "id": "050.01-capas-tropopausa",
+  "lesson": "050.01",
+  "sections": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "title": "Las capas de la atmósfera y la tropopausa",
+  "fuente": "THE ATMOSPHERE / Meteo ATPLenjoy",
+  "scenes": [
+   {
+    "text": "Las nubes, la lluvia, las tormentas: todo el tiempo que te vas a encontrar volando ocurre en una capa sorprendentemente fina de la atmósfera.",
+    "visual": "Plano desde la órbita bajando hacia la península: la atmósfera es una línea azul finísima en el borde de la Tierra. La cámara desciende atravesando capas hasta una Cessna sobre Montserrat."
+   },
+   {
+    "text": "El aire es nitrógeno, un setenta y ocho por ciento; oxígeno, casi un veintiuno; argón, casi un uno; y una pequeña cantidad de dióxido de carbono. Y varía en presión, temperatura, densidad y humedad, en vertical y en horizontal.",
+    "visual": "Partículas de colores formando una columna de aire; proporciones que se ordenan solas como una barra apilada. Cuatro diales flotantes giran: presión, temperatura, densidad, humedad."
+   },
+   {
+    "text": "La capa de abajo es la troposfera: la temperatura baja al subir, contiene tres cuartas partes de la masa de la atmósfera y casi todo el tiempo meteorológico.",
+    "visual": "Corte vertical animado: un termómetro sube con un globo sonda y su columna baja de temperatura. Nubes, lluvia y un cumulonimbo quedan todos dentro de la franja inferior."
+   },
+   {
+    "text": "Su techo es la tropopausa, donde la temperatura deja de bajar. Su altura depende de lo caliente que esté el aire en superficie: en el ecuador, de dieciséis a dieciocho kilómetros y unos menos setenta y cinco grados; en los polos, unos ocho kilómetros y entre menos cuarenta y menos cincuenta.",
+    "visual": "Corte del globo de polo a polo: la tropopausa como una línea que sube sobre el ecuador y baja sobre los polos, con dos 'pliegues' bruscos hacia 40° y 60° de latitud. Termómetros en cada extremo."
+   },
+   {
+    "text": "En latitudes medias, a cincuenta grados norte, la media es de once kilómetros, unos treinta y seis mil pies, con menos cincuenta y seis coma cinco grados. Cuanto más alta, más fría.",
+    "visual": "Zoom a 50°N: un avión de línea cruza la tropopausa a FL360; un termómetro marca −56,5 °C."
+   },
+   {
+    "text": "Encima, la estratosfera: la temperatura se mantiene hasta unos veinte kilómetros y luego sube, por el ozono que absorbe la radiación ultravioleta. Por eso, cuanto más alto se vuela, más importan el ozono y la radiación cósmica.",
+    "visual": "La cámara sube por la estratosfera: el termómetro se estabiliza y luego sube hacia −2,5 °C a 47 km. Rayos ultravioleta absorbidos por una capa brillante de ozono; partículas de radiación cósmica atravesando."
+   }
+  ]
+ },
+ {
+  "id": "050.01-como-se-calienta",
+  "lesson": "050.01",
+  "sections": [
+   4,
+   5
+  ],
+  "title": "Cómo se calienta la troposfera",
+  "fuente": "THE ATMOSPHERE / Meteo ATPLenjoy",
+  "scenes": [
+   {
+    "text": "El sol no calienta el aire directamente. Calienta el suelo, y es el suelo el que calienta el aire. Parece un detalle, pero explica las térmicas, las inversiones y muchas nieblas.",
+    "visual": "Plano cinematográfico de una mañana de verano en el Vallès: el sol sale y el asfalto de la pista de Sabadell empieza a brillar con calima de calor."
+   },
+   {
+    "text": "La radiación solar es de onda corta y atraviesa la troposfera casi sin calentarla. Una parte se refleja en las cimas de las nubes y en el agua. El resto calienta la superficie: es la insolación.",
+    "visual": "Rayos amarillos ondulados de onda corta atraviesan el aire sin cambiarlo de color. Unos rebotan en un banco de nubes y en el mar; el resto colorea el suelo de rojo creciente."
+   },
+   {
+    "text": "La Tierra radia calor siempre, en onda larga. Esa radiación la absorben los gases de efecto invernadero, sobre todo el vapor de agua, el dióxido de carbono y el metano.",
+    "visual": "Desde el suelo salen ondas rojas largas hacia arriba; moléculas de H₂O, CO₂ y CH₄ las atrapan y se iluminan, calentando la capa baja."
+   },
+   {
+    "text": "El aire en contacto con el suelo se calienta por conducción. Al estar más caliente, es menos denso y sube: es la convección, las térmicas que notas en la Cessna al mediodía.",
+    "visual": "Burbujas de aire cálido se despegan del asfalto y del campo, ascienden en columnas. Una Cessna atraviesa una térmica: inserto de cabina con el variómetro saltando y un pequeño bote."
+   },
+   {
+    "text": "Al subir, el aire se enfría y el vapor se condensa en gotitas: nace la nube. Y al condensarse libera calor latente, que calienta todavía más la troposfera.",
+    "visual": "La columna térmica alcanza su nivel de condensación y forma un cúmulo que crece. Destellos de calor salen de las gotitas al formarse."
+   },
+   {
+    "text": "Resumen: el sol calienta el suelo, y el aire se calienta desde abajo por conducción, convección, radiación terrestre y condensación.",
+    "visual": "Vista amplia del paisaje con los cuatro procesos activos a la vez, cada uno con un icono mínimo que se enciende al nombrarlo."
+   }
+  ]
+ },
+ {
+  "id": "050.01-inversiones-temperaturas",
+  "lesson": "050.01",
+  "sections": [
+   6,
+   7
+  ],
+  "title": "Inversiones y temperaturas máxima y mínima",
+  "fuente": "THE ATMOSPHERE / Meteo ATPLenjoy",
+  "scenes": [
+   {
+    "text": "Normalmente hace más frío cuanto más subes. Pero a veces pasa lo contrario: es una inversión, y la verás muchas mañanas de invierno.",
+    "visual": "Amanecer de invierno en el Vallès: una capa de niebla y humo plana atrapada sobre el valle; por encima, cielo limpio y Montserrat asomando."
+   },
+   {
+    "text": "De noche, con cielo despejado, el suelo radia y se enfría, y enfría por conducción el aire que toca. El aire de arriba sigue templado. Es la inversión de radiación.",
+    "visual": "Corte vertical con perfil de temperatura dibujándose en directo: de noche, la curva se dobla hacia la derecha cerca del suelo. Ondas de calor escapando al cielo despejado."
+   },
+   {
+    "text": "En un anticiclón, el aire desciende en el centro y se calienta al comprimirse. Queda más caliente que el de abajo: inversión de subsidencia. También puede haber inversiones por turbulencia, a dos o tres mil pies, y en la tropopausa.",
+    "visual": "Gran cúpula de alta presión: flechas de aire bajando y calentándose (rojo). Una 'tapa' templada se forma a cierta altura, atrapando calima debajo."
+   },
+   {
+    "text": "Las nubes cambian las temperaturas. De día, reflejan radiación solar y la máxima es menor. De noche, devuelven la radiación terrestre y la mínima es mayor.",
+    "visual": "Pantalla dividida día/noche: de día, nubes reflejan los rayos y el termómetro sube menos; de noche, las nubes actúan de manta y el termómetro baja menos."
+   },
+   {
+    "text": "El viento también. De día mezcla el aire caliente de abajo con el frío de arriba y baja la máxima. De noche rompe la inversión, mezcla aire templado de arriba y sube la mínima.",
+    "visual": "Mismo valle con viento: remolinos de mezcla que difuminan las capas de colores. Termómetros de máxima y mínima ajustándose."
+   },
+   {
+    "text": "Y si despegas por la mañana bajo una inversión, al atravesarla puedes notar un cambio de viento y algo de turbulencia.",
+    "visual": "PA-28 despegando del valle neblinoso: al cruzar la capa de inversión, la manga del suelo indica calma y arriba el viento es más fuerte; ligera sacudida en cabina."
+   }
+  ]
+ },
+ {
+  "id": "050.02-presion-barometros",
+  "lesson": "050.02",
+  "sections": [
+   0,
+   1,
+   2
+  ],
+  "title": "La presión atmosférica y cómo se mide",
+  "fuente": "meteorologia.pptx (45-53)",
+  "scenes": [
+   {
+    "text": "Sobre tu cabeza hay una columna de aire de decenas de kilómetros. Su peso es la presión atmosférica, y actúa en todas las direcciones.",
+    "visual": "Piloto junto a la Cessna en la plataforma; una columna de aire translúcida se extiende sobre él hasta el espacio. Pequeñas flechas lo presionan desde todas las direcciones."
+   },
+   {
+    "text": "Se mide en hectopascales o milibares, que son lo mismo, o en pulgadas de mercurio. Uno de los primeros instrumentos fue el barómetro de mercurio.",
+    "visual": "Tres etiquetas de unidades se convierten una en otra: 1 hPa = 1 mb; inHg. Transición a un laboratorio con un barómetro de mercurio."
+   },
+   {
+    "text": "Un tubo de vidrio cerrado por arriba, lleno de mercurio, metido boca abajo en una cubeta. La presión del aire empuja el mercurio de la cubeta y sostiene la columna. En la atmósfera estándar a nivel del mar, veintinueve coma noventa y dos pulgadas: setenta y seis centímetros.",
+    "visual": "Animación 3D del barómetro: flechas de presión empujan la superficie de la cubeta y la columna sube hasta 29,92 inHg / 76 cm; en lo alto del tubo, un vacío. Al subir la presión, la columna sube; al bajar, baja."
+   },
+   {
+    "text": "El barómetro aneroide usa una cápsula metálica casi sin aire. Se expande cuando baja la presión y se contrae cuando sube, y un mecanismo lo lleva a una aguja. Es menos preciso, pero más sensible a pequeños cambios. Si además registra en un papel, es un barógrafo.",
+    "visual": "Corte de un aneroide: la cápsula 'respira' y la aguja se mueve. Al lado, un barógrafo con su tambor girando y una plumilla trazando la curva de presión del día."
+   },
+   {
+    "text": "Y si calibras ese aneroide en pies, tienes un altímetro: la presión baja al subir, y el instrumento lo convierte en altitud.",
+    "visual": "El aneroide se transforma en el altímetro de la Cessna. El avión despega y la aguja avanza mientras la columna de aire sobre él se acorta."
+   },
+   {
+    "text": "Las diferencias de presión de un lugar a otro se deben al peso distinto de las columnas de aire: más aire encima, más presión.",
+    "visual": "Dos columnas sobre un mapa de España: una más llena de partículas (alta presión) y otra más vacía (baja), con sus valores en hPa."
+   }
+  ]
+ },
+ {
+  "id": "050.02-isobaras-gradiente",
+  "lesson": "050.02",
+  "sections": [
+   3,
+   4
+  ],
+  "title": "Isobaras y fuerza del gradiente de presión",
+  "fuente": "meteorologia.pptx (54-56)",
+  "scenes": [
+   {
+    "text": "Un mapa del tiempo con isobaras es como un mapa topográfico de la presión. Aprende a leerlo y sabrás dónde soplará fuerte.",
+    "visual": "Vista desde el aire de la península; sobre ella se dibujan isobaras curvas que se cierran sobre una borrasca al oeste y un anticiclón sobre el centro."
+   },
+   {
+    "text": "Primero hay que reducir todas las presiones al nivel del mar. Si no, una estación en la montaña siempre marcaría menos que una en la costa solo por estar más alta.",
+    "visual": "Estaciones meteorológicas a distintas alturas (costa, Montseny, Pirineo) con su presión. Una animación las 'baja' al nivel del mar y sus cifras se igualan para poder compararlas."
+   },
+   {
+    "text": "Luego se unen los puntos de igual presión: las isobaras. Si se cierran sobre valores bajos, es una borrasca o depresión. Sobre valores altos, un anticiclón.",
+    "visual": "Las estaciones se convierten en puntos con valores y unas líneas los unen solas formando las isobaras. Aparecen las letras B y A en los centros."
+   },
+   {
+    "text": "El aire tiende a ir de la alta a la baja presión. Esa fuerza es la fuerza del gradiente de presión.",
+    "visual": "Flechas blancas salen del anticiclón hacia la borrasca, perpendiculares a las isobaras."
+   },
+   {
+    "text": "Igual que en un mapa topográfico unas curvas de nivel juntas son una pendiente fuerte, unas isobaras juntas son un gradiente fuerte, y normalmente viento intenso. Separadas, viento flojo.",
+    "visual": "Pantalla dividida: a la izquierda, curvas de nivel juntas y una ladera empinada por la que rueda una bola rápido. A la derecha, isobaras juntas y mangas de viento horizontales; isobaras separadas y mangas caídas."
+   },
+   {
+    "text": "Ejemplo práctico: si en tu ruta las isobaras se aprietan, espera viento fuerte y probablemente turbulencia mecánica en baja cota.",
+    "visual": "Ruta Sabadell–Reus dibujada sobre el mapa cruzando isobaras apretadas; una Cessna con un vector de viento grande y sacudidas al pasar cerca de los relieves."
+   }
+  ]
+ },
+ {
+  "id": "050.02-qfe-qnh-qff-qne",
+  "lesson": "050.02",
+  "sections": [
+   5
+  ],
+  "title": "QFE, QNH, QFF y QNE",
+  "fuente": "meteorologia.pptx (29-31, 58-62)",
+  "scenes": [
+   {
+    "text": "Cuatro códigos, cuatro presiones. Y todas se entienden con el mismo avión aparcado en el mismo aeródromo.",
+    "visual": "Cessna en la plataforma de un aeródromo elevado. Primer plano del altímetro con la ventanilla Kollsman. Cuatro códigos esperan en la esquina: QFE · QNH · QFF · QNE."
+   },
+   {
+    "text": "El QFE es la presión medida en el aeródromo, a su elevación. Si la pones en el altímetro, en tierra marca cero pies, y en vuelo te da la altura sobre ese aeródromo.",
+    "visual": "Se gira la ventanilla al QFE: la aguja va a 0. El avión despega y una flecha verde mide la altura desde la pista; el altímetro sigue esa flecha."
+   },
+   {
+    "text": "El QNH es ese QFE reducido al nivel del mar con la atmósfera estándar. Con QNH, en tierra el altímetro marca la elevación del aeródromo, y en vuelo, la altitud sobre el nivel del mar. Se redondea hacia abajo, sin decimales.",
+    "visual": "Ventanilla a QNH: la aguja sube hasta la elevación del aeródromo. En vuelo, una flecha azul mide desde el nivel del mar dibujado bajo el terreno."
+   },
+   {
+    "text": "El QFF también reduce la presión al nivel del mar, pero con la temperatura real. Es el que usan los mapas de isobaras, para meteorología, no para tu altímetro.",
+    "visual": "Corte a un mapa de isobaras: las cifras de las isobaras parpadean con la etiqueta 'QFF'. El altímetro del avión aparece tachado al lado."
+   },
+   {
+    "text": "Y el QNE es la presión estándar: mil trece coma veinticinco hectopascales, o veintinueve coma noventa y dos pulgadas. Con ella se vuela en niveles de vuelo.",
+    "visual": "Ventanilla a 1013: el altímetro muestra la altitud de presión. Un avión de línea en FL080 con una flecha roja desde una línea de referencia estándar."
+   },
+   {
+    "text": "Resumen con el mismo avión: QFE, altura sobre el aeródromo. QNH, altitud sobre el mar. QNE, nivel de vuelo. QFF, solo en los mapas.",
+    "visual": "Escena final: el avión en vuelo con tres flechas de colores (verde desde la pista, azul desde el mar, roja desde la referencia 1013) que se separan como un abanico."
+   }
+  ]
+ },
+ {
+  "id": "050.02-altitud-densidad",
+  "lesson": "050.02",
+  "sections": [
+   7,
+   8
+  ],
+  "title": "Densidad relativa y altitud de densidad",
+  "fuente": "meteorologia.pptx (2-5)",
+  "scenes": [
+   {
+    "text": "Mismo avión, misma pista. Un día de enero despega en un suspiro. Un día de agosto se come media pista. La culpa es de la densidad.",
+    "visual": "Pantalla dividida: día frío y seco a nivel del mar, la Cessna despega corto y sube fuerte; día caluroso y húmedo en un aeródromo a 5000 ft, carrera larguísima y ascenso pobre."
+   },
+   {
+    "text": "La densidad es masa por volumen. En la atmósfera estándar a nivel del mar, uno coma doscientos veinticinco kilos por metro cúbico.",
+    "visual": "Cubo de 1 m³ de aire sobre una báscula: 1,225 kg/m³, ρ = m/V discreto."
+   },
+   {
+    "text": "La densidad relativa compara la que hay con esa. Si hay un kilo por metro cúbico, uno entre uno coma doscientos veinticinco, un ochenta y dos por ciento.",
+    "visual": "El cubo pierde partículas hasta 1,000 kg/m³; un medidor circular baja al 82 %."
+   },
+   {
+    "text": "La altitud de densidad es la altitud de la atmósfera estándar que tiene esa misma densidad. Un cincuenta por ciento de densidad corresponde a unos veinte mil pies. Aunque estés en otra altitud, el avión rinde como si estuviera ahí.",
+    "visual": "Escala vertical ISA: 100 % al nivel del mar, 50 % a 20 000 ft, 25 % a 40 000 ft, 10 % a 60 000 ft. El medidor del cubo apunta al 50 % y una avioneta 'fantasma' sube hasta 20 000 ft."
+   },
+   {
+    "text": "Se calcula corrigiendo la altitud de presión por la desviación de temperatura respecto a la estándar. Y la suben tres cosas: temperatura alta, humedad alta y aeródromo elevado.",
+    "visual": "Tres diales: termómetro, humedad, elevación. Al subir cada uno, el cubo se vacía de partículas y la avioneta fantasma sube."
+   },
+   {
+    "text": "Con altitud de densidad alta: más carrera de despegue, menos régimen de ascenso, menos potencia en el motor y menos eficacia de alas, hélice y mandos. Calcúlalo antes de un despegue de verano.",
+    "visual": "Vuelta a la pista de agosto: la Cessna corre, la hélice 'muerde' menos aire, el variómetro sube poco. Cuatro iconos mínimos se encienden: carrera ↑, ascenso ↓, potencia ↓, eficacia ↓."
+   }
+  ]
+ },
+ {
+  "id": "050.03-altimetro-qnh-qfe",
+  "lesson": "050.03",
+  "sections": [
+   1,
+   2
+  ],
+  "title": "El altímetro y la ventanilla Kollsman",
+  "fuente": "meteorologia.pptx (28-31, 59)",
+  "scenes": [
+   {
+    "text": "Tu altímetro no sabe a qué altura estás. Mide presión. Lo que le dices en la ventanilla decide desde dónde cuenta.",
+    "visual": "Primer plano del altímetro de la Cessna en vuelo. La cámara atraviesa el cristal y entra en el instrumento."
+   },
+   {
+    "text": "Dentro hay una cápsula aneroide parcialmente vacía. Si la presión baja, se expande; si sube, se contrae. Un mecanismo mueve las agujas sobre una escala en pies.",
+    "visual": "Corte del altímetro: la cápsula se hincha al subir el avión, las palancas giran y las agujas avanzan."
+   },
+   {
+    "text": "La ventanilla Kollsman muestra la presión de referencia. Esa presión es la que el altímetro considera cero pies.",
+    "visual": "Primer plano de la ventanilla: el mando gira y los números pasan; una línea de 'cero pies' se mueve en un corte del terreno según la presión elegida."
+   },
+   {
+    "text": "Pon el QNH y medirá desde el nivel medio del mar: en vuelo te dará la altitud. Es el ajuste normal, y te lo da la dependencia de control o de información.",
+    "visual": "Radio: 'QNH uno cero uno ocho'. El piloto ajusta 1018. La línea de cero baja al nivel del mar; la flecha de altitud azul va del mar al avión."
+   },
+   {
+    "text": "Pon el QFE y medirá desde el aeródromo: en tierra marca cero y en vuelo te da la altura sobre la pista.",
+    "visual": "Ajuste del QFE: la línea de cero sube a la pista; el altímetro en tierra marca 0 y en el circuito marca la altura sobre la pista."
+   },
+   {
+    "text": "Y un límite que no hay que olvidar: el altímetro solo mide respecto a un nivel de presión. No corrige la temperatura, ni la humedad, ni que la atmósfera real no sea la estándar.",
+    "visual": "El altímetro con tres pequeñas nubes de 'temperatura', 'humedad' y 'atmósfera real' rebotando contra su cristal sin entrar."
+   }
+  ]
+ },
+ {
+  "id": "050.03-alta-a-baja",
+  "lesson": "050.03",
+  "sections": [
+   3,
+   4
+  ],
+  "title": "De alta a baja, cuidado abajo",
+  "fuente": "meteorologia.pptx (32-35)",
+  "scenes": [
+   {
+    "text": "Despegas con el QNH bien puesto y mantienes tres mil pies todo el viaje. El altímetro no se mueve. Pero tú sí puedes estar bajando.",
+    "visual": "PA-28 despega de un aeródromo con QNH 1020 y nivela a 3000 ft. Inserto: altímetro clavado en 3000."
+   },
+   {
+    "text": "Si la presión no cambia en la ruta, las isobaras son horizontales: tres mil indicados son tres mil de verdad todo el camino.",
+    "visual": "Corte lateral de la ruta con isobaras horizontales; el avión vuela recto y una flecha de altitud verdadera constante lo acompaña."
+   },
+   {
+    "text": "Pero si vas hacia una zona de presión más baja, las isobaras bajan. El altímetro sigue la isobara de sus tres mil pies, y el avión desciende con ella hacia el terreno sin que la aguja se mueva.",
+    "visual": "El corte cambia: las isobaras se inclinan hacia abajo hacia el destino con QNH 1010. El avión sigue su isobara y baja; la flecha de altitud verdadera se encoge y una colina se acerca peligrosamente."
+   },
+   {
+    "text": "Diez hectopascales de diferencia, a unos veintisiete pies por hectopascal, son unos doscientos setenta pies más bajo de lo que crees. De alta a baja, cuidado abajo.",
+    "visual": "Congelación de imagen: 1020 − 1010 = 10 hPa × 27 ft ≈ 270 ft; la diferencia entre altitud indicada y verdadera se marca en rojo. Rótulo: 'High to low, look out below'."
+   },
+   {
+    "text": "Al revés, de baja a alta, estarás más alto de lo que indica. Es menos peligroso. Y en cuanto pones el QNH del destino, indicada y verdadera vuelven a coincidir.",
+    "visual": "Corte inverso con isobaras subiendo y el avión subiendo con ellas (flecha verde). Luego el piloto ajusta el QNH local y las flechas se igualan."
+   },
+   {
+    "text": "Por eso el QNH se colaciona siempre que te lo dan: tu altímetro queda bien y todos los aviones de la zona usan la misma referencia para separarse.",
+    "visual": "Dos aviones en la misma zona con el mismo QNH y separación vertical correcta; un tercero con QNH viejo aparece desplazado. Radio: 'QNH uno cero uno cero, EC-…' colacionado."
+   }
+  ]
+ },
+ {
+  "id": "050.03-transicion-altitud-presion",
+  "lesson": "050.03",
+  "sections": [
+   5,
+   7
+  ],
+  "title": "Altitud de transición, nivel de transición y altitud de presión",
+  "fuente": "meteorologia.pptx (5, 36-40, 62)",
+  "scenes": [
+   {
+    "text": "Por debajo, altitudes con QNH. Por encima, niveles de vuelo con mil trece. Entre medias hay una frontera que hay que saber cruzar.",
+    "visual": "Corte vertical del espacio sobre un aeródromo: una línea naranja (altitud de transición) y una verde (nivel de transición) con una franja entre ambas."
+   },
+   {
+    "text": "Al subir y pasar la altitud de transición, todos ponen mil trece. Así vuelan en niveles de vuelo y todos usan la misma referencia, aunque el QNH cambie de un sitio a otro.",
+    "visual": "Un avión asciende y al cruzar la línea naranja la ventanilla Kollsman gira a 1013; su etiqueta cambia de '6000 ft' a 'FL060'. Otros aviones arriba con sus FL."
+   },
+   {
+    "text": "La altitud de transición es fija para cada aeródromo, más alta en zonas montañosas. En Estados Unidos, en general, dieciocho mil pies. Compruébala siempre en un aeródromo nuevo.",
+    "visual": "Dos aeródromos lado a lado: uno en llanura con la línea baja y otro en montaña con la línea más alta."
+   },
+   {
+    "text": "Al bajar, cambias al QNH en el nivel de transición, el nivel de vuelo utilizable más bajo. Ese no es fijo: depende de la presión. La franja entre los dos es la capa de transición.",
+    "visual": "Un avión desciende y al cruzar la línea verde ajusta el QNH. Animación: con presión baja, las isobaras se aprietan y el TL sube; con presión alta, baja. La franja se colorea: capa de transición."
+   },
+   {
+    "text": "La altitud de presión es lo que marca el altímetro con mil trece. Cada hectopascal en capas bajas son unos veintisiete pies. Si el QNH está por debajo de mil trece, la altitud de presión es mayor que la verdadera.",
+    "visual": "Aeródromo a nivel del mar con QNH 1003. El altímetro con 1013 marca ≈ 270 ft en tierra. Cálculo discreto: (1013 − 1003) × 27 ≈ 270 ft."
+   },
+   {
+    "text": "Con QNH por encima de mil trece, la altitud de presión es menor que la verdadera. Y la regla de siempre: de alta a baja presión sin corregir, el altímetro te marca más de lo que tienes.",
+    "visual": "Mismo aeródromo con QNH 1023: el altímetro con 1013 marca por debajo de cero (≈ −270 ft). Cierre con el corte de isobaras inclinadas de 'high to low'."
+   }
+  ]
+ },
+ {
+  "id": "050.03-error-temperatura",
+  "lesson": "050.03",
+  "sections": [
+   8
+  ],
+  "title": "Error por temperatura: de caliente a frío, cuidado abajo",
+  "fuente": "meteorologia.pptx (41-44, 56-57)",
+  "scenes": [
+   {
+    "text": "Mismo QNH, misma altitud indicada. Pero en aire frío estás más bajo de lo que dice el altímetro. Y no hay ninguna ruedecita que lo arregle.",
+    "visual": "Escena real: Cessna sobre terreno nevado del Pirineo en un día gélido, altímetro marcando la altitud de seguridad. Una línea discontinua roja muestra que en realidad va más bajo."
+   },
+   {
+    "text": "El aire frío es más denso y la columna se contrae: las isobaras se aprietan hacia el suelo. En aire cálido, la columna se dilata y se separan.",
+    "visual": "Dos columnas de aire con isobaras: la fría (azul) se encoge como un acordeón cerrado; la cálida (roja) se estira. QNH 1020 en la base de ambas."
+   },
+   {
+    "text": "El altímetro está calibrado para la atmósfera estándar. Si vuelas de aire cálido a frío manteniendo la altitud indicada, sigues una isobara que baja. Estás más cerca del terreno de lo que crees.",
+    "visual": "Imagen del curso recreada en 3D: el avión vuela de la zona WARM AIR a COLD AIR siguiendo la isobara de 1010 mb, que desciende. Flecha de altitud verdadera más corta en el aire frío."
+   },
+   {
+    "text": "Regla aproximada: un cuatro por ciento de la altitud por cada diez grados de desviación respecto a la estándar. A tres mil pies con diez grados menos que la estándar, unos ciento veinte pies más bajo.",
+    "visual": "Congelación: 3000 ft × 4 % = 120 ft, dibujado como el hueco entre la altitud indicada y la verdadera."
+   },
+   {
+    "text": "De caliente a frío, cuidado abajo. De frío a caliente, estás más alto de lo que pensabas. La corrección la calculas y la aplicas tú.",
+    "visual": "La animación se invierte: de frío a caliente la isobara sube y el avión con ella (flecha verde)."
+   },
+   {
+    "text": "Un apunte: el radioaltímetro no mide la altitud sobre el mar, sino la altura sobre el terreno que tienes justo debajo.",
+    "visual": "Un avión de línea sobre montañas con un haz desde la panza hasta el terreno: la cifra de radioaltímetro cambia con cada cresta mientras la altitud se mantiene."
+   }
+  ]
+ },
+ {
+  "id": "050.04-viento-fuerzas",
+  "lesson": "050.04",
+  "sections": [
+   1,
+   2,
+   3
+  ],
+  "title": "Gradiente, Coriolis, geostrófico y viento en superficie",
+  "fuente": "Meteo ATPLenjoy (Wind)",
+  "scenes": [
+   {
+    "text": "El aire quiere ir de la alta a la baja presión en línea recta. Pero nunca llega en línea recta. La Tierra gira.",
+    "visual": "Mapa con un anticiclón y una borrasca: una partícula de aire sale hacia la borrasca; el globo terrestre gira debajo y la trayectoria se curva."
+   },
+   {
+    "text": "El gradiente empuja de la alta a la baja. Coriolis desvía el aire a la derecha en el hemisferio norte: máxima en los polos, nula en el ecuador, y crece con la velocidad.",
+    "visual": "Vectores animados sobre la partícula: PGF hacia la baja; CF a 90° a la derecha del movimiento. Un globo muestra el efecto fuerte en el polo y cero en el ecuador."
+   },
+   {
+    "text": "Por encima de la capa de fricción, con isobaras rectas, las dos fuerzas se equilibran y el viento sopla paralelo a las isobaras: el viento geostrófico. Si las isobaras se curvan, entra la fuerza centrífuga y es el viento del gradiente.",
+    "visual": "La partícula acelera, se desvía y termina deslizándose paralela a isobaras rectas con PGF y CF iguales y opuestas. Luego en isobaras curvas aparece una tercera flecha centrífuga."
+   },
+   {
+    "text": "Alrededor de una borrasca, la centrífuga se opone al gradiente y el viento es más flojo. En un anticiclón, se suma, y es más fuerte. Con quinientas millas de radio y cuarenta nudos geostróficos, treinta y cuatro en la baja y cincuenta y ocho en la alta.",
+    "visual": "Pantalla dividida: viento girando antihorario en una baja (34 kt) y horario en una alta (58 kt), con el valor geostrófico 40 kt de referencia."
+   },
+   {
+    "text": "Cerca del suelo, el rozamiento frena el viento, Coriolis pierde fuerza y el viento cruza las isobaras hacia la baja. Sobre tierra, girado unos treinta grados a la izquierda y a la mitad de velocidad. Sobre el mar, diez grados y un setenta por ciento.",
+    "visual": "Corte de la capa de fricción: el vector de 2000 ft paralelo a las isobaras; al bajar, se acorta y gira hacia la baja. Comparativa tierra (−30°, 50 %) y mar (−10°, 70 %)."
+   },
+   {
+    "text": "De día, el viento en superficie rola a la derecha y refresca, con máximo hacia las tres de la tarde. De noche, retrocede y amaina.",
+    "visual": "Timelapse de un día en Sabadell: la manga de viento gira y se infla a media tarde, cae y gira al anochecer."
+   }
+  ]
+ },
+ {
+  "id": "050.06-brisas-valles",
+  "lesson": "050.06",
+  "sections": [
+   1,
+   3
+  ],
+  "title": "Brisa de mar, brisa de tierra y viento de valle",
+  "fuente": "Meteo ATPLenjoy (Land and sea breezes, Valley winds)",
+  "scenes": [
+   {
+    "text": "Por la mañana despegas por la veinte. A media tarde, el viento ha cambiado y la pista en uso es la otra. No es casualidad: es la brisa.",
+    "visual": "Timelapse sobre un aeródromo costero mediterráneo: la manga apunta hacia el mar por la mañana y gira hacia tierra a mediodía; la pista en uso cambia en un letrero animado."
+   },
+   {
+    "text": "En un día de sol, con gradiente flojo, la tierra se calienta mucho más rápido que el mar. El aire sobre tierra sube y se expande, y a unos mil pies la presión queda más alta que sobre el mar. Abajo, el aire va del mar a tierra.",
+    "visual": "Corte costa-mar animado: el suelo rojo, el mar azul. Columnas de aire ascendiendo sobre tierra, flecha de retorno arriba hacia el mar y flecha en superficie del mar a la tierra: brisa de mar."
+   },
+   {
+    "text": "La brisa de mar llega de ocho a catorce millas a cada lado de la costa, con unos diez nudos, casi perpendicular a la costa. Puede meter tierra adentro una niebla marina o formar pequeños cúmulos.",
+    "visual": "Vista aérea de la costa: franja de brisa a ambos lados de la costa. Sobre tierra, pequeños cúmulos en línea; desde el mar, un banco de niebla avanza hacia una pista costera."
+   },
+   {
+    "text": "Por la noche se invierte: la tierra se enfría antes y el aire va de tierra al mar. La brisa de tierra es más floja, unos cinco nudos, y no pasa de unas cinco millas de la costa.",
+    "visual": "La escena se vuelve nocturna: el suelo azul frío, flechas suaves hacia el mar."
+   },
+   {
+    "text": "Entre montañas, el viento se canaliza por los valles y acelera. Un pequeño cambio de dirección general puede invertir por completo el viento del valle. Con terreno abrupto, mucha turbulencia en baja cota.",
+    "visual": "Maqueta 3D de un valle: el viento general de lado entra por un paso y acelera dentro (líneas más juntas). Cambia ligeramente el viento general y el del valle se invierte. PA-28 zarandeado en el fondo."
+   },
+   {
+    "text": "Ese acelerón tiene otro efecto, el Venturi: la presión baja, y la altitud verdadera queda por debajo de la indicada. Pasa en valles estrechos y sobre crestas con viento fuerte.",
+    "visual": "Corte del valle con isobaras bajando en el estrechamiento; el avión mantiene altitud indicada y se acerca al terreno. Flecha roja de altitud verdadera más corta."
+   }
+  ]
+ },
+ {
+  "id": "050.06-catabaticos-foehn",
+  "lesson": "050.06",
+  "sections": [
+   2,
+   4
+  ],
+  "title": "Vientos catabáticos, anabáticos y efecto Foehn",
+  "fuente": "Meteo ATPLenjoy (Katabatic, Anabatic, Föhn)",
+  "scenes": [
+   {
+    "text": "Las montañas fabrican su propio viento. De noche baja, de día sube. Y a veces, al otro lado, llega un viento cálido y seco que parece imposible.",
+    "visual": "Timelapse 24 h de una ladera pirenaica: de noche ríos de aire frío bajan, de día corrientes suben por la ladera soleada."
+   },
+   {
+    "text": "De noche, la ladera se enfría por radiación y enfría el aire en contacto. Más denso, se desliza ladera abajo: el viento catabático. De media, unos diez nudos, más con nieve, cielo despejado y gradiente flojo.",
+    "visual": "Ladera nevada de noche: el aire azul se escurre ladera abajo como un líquido y se acumula en el valle, donde aparece escarcha y niebla."
+   },
+   {
+    "text": "Ese aire frío en el fondo del valle ayuda a la escarcha y a la niebla, y deja aire más templado encima: una inversión. El ejemplo de examen es la Bora, en el norte del Adriático.",
+    "visual": "Perfil de temperatura en el valle: frío abajo, templado arriba. Mapa del Adriático con flechas de la Bora bajando a la costa."
+   },
+   {
+    "text": "De día, la ladera al sol se calienta y el aire sube por ella: el viento anabático, suave, unos cinco nudos.",
+    "visual": "Ladera sur soleada: burbujas cálidas reptando hacia la cima, flechas cortas hacia arriba."
+   },
+   {
+    "text": "El Foehn: aire húmedo obligado a subir una cordillera se enfría, se satura, forma nubes y llueve en barlovento. Pierde humedad. Al bajar por sotavento, con la base de nubes más alta, se calienta durante más altura de la que se enfrió saturado.",
+    "visual": "Corte de la cordillera: aire subiendo (azul), nube y lluvia en barlovento, gotas cayendo. Al otro lado el aire baja seco y se va tiñendo de rojo; termómetros abajo a cada lado."
+   },
+   {
+    "text": "Resultado: en barlovento, nubes bajas y lluvia. En sotavento, aire más cálido, seco y turbulento. Se llama Foehn en los Alpes, Chinook en las Rocosas y Zonda en los Andes.",
+    "visual": "Termómetros comparados: el de sotavento marca más. Mini globo con tres etiquetas geográficas. Avioneta cruzando a sotavento con sacudidas."
+   }
+  ]
+ },
+ {
+  "id": "050.12-masas-aire-origen",
+  "lesson": "050.12",
+  "sections": [
+   0,
+   1,
+   2
+  ],
+  "title": "Qué es una masa de aire y cómo cambia",
+  "fuente": "meteorologia.pptx (6-11)",
+  "scenes": [
+   {
+    "text": "El aire que hoy tienes sobre Sabadell puede haber pasado una semana sobre el Atlántico Norte, o sobre el Sáhara. Eso decide el tiempo que vas a volar.",
+    "visual": "Mapa animado de Europa y el Atlántico: una burbuja de aire marcada viaja desde el Atlántico Norte hasta Cataluña; otra desde el Sáhara."
+   },
+   {
+    "text": "Una masa de aire es un gran volumen de aire con temperatura y humedad bastante uniformes en horizontal. Las adquiere al quedarse mucho tiempo sobre una superficie grande y homogénea: su región fuente.",
+    "visual": "Una burbuja de aire se posa sobre un océano frío y va tomando su color azul y humedad (gotitas). Otras burbujas sobre un desierto, un continente helado."
+   },
+   {
+    "text": "Se nombran por dos letras. Por su latitud: tropical, polar o ártica. Por su origen: marítima, húmeda, o continental, seca. Así salen la polar marítima, la polar continental, la tropical marítima, la tropical continental y la ártica.",
+    "visual": "Mapamundi de julio con las regiones fuente encendiéndose y etiquetas mínimas (mP, cP, mT, cT, A) apareciendo sobre cada una."
+   },
+   {
+    "text": "Al moverse, cambia. Sobre una superficie más cálida se calienta desde abajo: se vuelve más inestable, más cálida en capas bajas y con menos humedad relativa.",
+    "visual": "La burbuja azul se desplaza sobre tierra cálida: su base se pone roja, aparecen corrientes ascendentes y cúmulos creciendo."
+   },
+   {
+    "text": "Sobre una superficie más fría se enfría desde abajo: más estable, más fría abajo y con más humedad relativa, más cerca de saturarse.",
+    "visual": "Una burbuja cálida se desplaza sobre mar frío: su base se pone azul, capas planas, estratos bajos y bruma."
+   },
+   {
+    "text": "Regla para el vuelo: calentada desde abajo, inestable, cúmulos y turbulencia. Enfriada desde abajo, estable, nubes bajas y mala visibilidad.",
+    "visual": "Pantalla dividida final con una Cessna en cada escenario: sacudidas entre cúmulos a la izquierda; vuelo suave pero bajo techo y bruma a la derecha."
+   }
+  ]
+ },
+ {
+  "id": "050.12-masas-polares-articas",
+  "lesson": "050.12",
+  "sections": [
+   3,
+   5
+  ],
+  "title": "Masas polares y ártica",
+  "fuente": "meteorologia.pptx (12-17)",
+  "scenes": [
+   {
+    "text": "Las masas frías llegan del norte y, según por dónde hayan pasado, traen tiempos muy distintos.",
+    "visual": "Mapa del hemisferio norte con flechas frías bajando desde el Ártico, el Atlántico Norte y Rusia hacia Europa."
+   },
+   {
+    "text": "La polar marítima nace sobre mares fríos: aire frío, poca humedad absoluta pero humedad relativa alta, y estable en origen. Al llegar a tierra más cálida, se calienta por abajo y se vuelve inestable: cúmulos, cumulonimbos, chubascos fuertes, granizo y tormentas, sobre todo en costas expuestas al noroeste.",
+    "visual": "Burbuja mP llegando del Atlántico a la costa: estallan cúmulos y un cumulonimbo con chubasco y granizo. Cessna bordeando el chubasco."
+   },
+   {
+    "text": "Para volar: buena visibilidad salvo en los chubascos, vuelo turbulento, y cambios rápidos de visibilidad y techo. De noche, la convección se apaga y puede aparecer niebla de radiación.",
+    "visual": "Timelapse: tarde con cúmulos y sacudidas en cabina; noche estrellada; amanecer con niebla en el fondo del valle."
+   },
+   {
+    "text": "La polar marítima de retorno baja hacia el sur del Atlántico y vuelve por el oeste o suroeste. Abajo se ha templado y humedecido, pero arriba sigue siendo polar. Puede volverse inestable muy rápido: cúmulos, cumulonimbos y tormentas.",
+    "visual": "Mapa con la trayectoria en U alrededor de una borrasca al oeste de Irlanda llegando por el suroeste; corte vertical: base cálida (rojo) y altura fría (azul), cúmulos disparándose."
+   },
+   {
+    "text": "La polar continental se forma sobre la Europa continental, Rusia o Asia: estable, seca y muy fría en invierno, con poca nube y buena visibilidad, aunque con calima o humo cerca del suelo. En verano, cálida, seca y estable.",
+    "visual": "Flujo del este cruzando Europa: cielo azul helado, campos escarchados, una capa de bruma seca baja. Cessna volando suave."
+   },
+   {
+    "text": "Y la ártica: muy fría, estable y seca en origen. Si pasa sobre un mar más cálido gana humedad, se vuelve inestable y trae cúmulos, nevadas intensas y ventiscas.",
+    "visual": "Globo terrestre del curso: chorro ondulado, aire ártico bajando sobre Norteamérica y un mar cálido; nubes de nieve formándose y ventisca sobre una pista."
+   }
+  ]
+ },
+ {
+  "id": "050.12-masas-tropicales",
+  "lesson": "050.12",
+  "sections": [
+   4,
+   5
+  ],
+  "title": "Masas tropicales y ecuatorial",
+  "fuente": "meteorologia.pptx (14-15, 18)",
+  "scenes": [
+   {
+    "text": "Las masas cálidas llegan del sur y del suroeste, y lo que traen depende de si vienen del mar o del desierto.",
+    "visual": "Mapa con flechas cálidas desde las Azores y desde el Sáhara convergiendo en la península."
+   },
+   {
+    "text": "La tropical marítima nace sobre mares cálidos: cálida, generalmente estable, con mucha humedad absoluta y humedad relativa moderada.",
+    "visual": "Burbuja sobre el Atlántico subtropical cargándose de vapor visible."
+   },
+   {
+    "text": "Trae nubes bajas, estratos y estratocúmulos, llovizna o lluvia débil, y visibilidad reducida por bruma. Vuelo suave, pero con techos bajos. En pleno verano, el sol puede romper esa nubosidad y dejar cielos despejados o pequeños cúmulos.",
+    "visual": "Escena de aproximación en Sabadell bajo un techo bajo gris y bruma; luego timelapse de verano en que el estrato se rompe en cúmulos pequeños."
+   },
+   {
+    "text": "La tropical continental se forma sobre desiertos: muy cálida, seca y estable. Poca o ninguna nube y sin lluvia, pero con calima de polvo que puede reducir mucho la visibilidad horizontal.",
+    "visual": "Polvo del Sáhara tiñendo de ocre el cielo de la península; desde la cabina, el horizonte desaparece y la pista se ve tarde."
+   },
+   {
+    "text": "Esa calima afecta a las referencias visuales, a la navegación visual y a la aproximación. Desde arriba ves el suelo en vertical, pero no hacia delante.",
+    "visual": "Pantalla dividida: vista vertical clara del terreno frente a vista oblicua hacia la pista casi borrada por la calima."
+   },
+   {
+    "text": "Y la ecuatorial, que no suele llegar a Europa: muy cálida y muy húmeda, con convección intensa, nubes de gran desarrollo y lluvias fuertes. Va ligada a los alisios, los monzones y la zona de convergencia intertropical.",
+    "visual": "Globo girando hacia el ecuador: línea de cumulonimbos de la ITCZ y lluvia torrencial."
+   }
+  ]
+ },
+ {
+  "id": "050.13-frente-polar",
+  "lesson": "050.13",
+  "sections": [
+   0,
+   1,
+   2
+  ],
+  "title": "Frentes y el frente polar",
+  "fuente": "meteorologia.pptx (19-21)",
+  "scenes": [
+   {
+    "text": "Dos masas de aire distintas no se mezclan fácilmente. La frontera entre ellas es un frente, y ahí se fabrica buena parte del mal tiempo.",
+    "visual": "Animación 3D: una masa azul fría y una roja cálida se acercan; en el contacto se forma una superficie inclinada con nubes."
+   },
+   {
+    "text": "Un frente tiene solo unas millas de anchura. La zona frontal, donde interactúan, puede llegar a trescientas millas.",
+    "visual": "Vista desde arriba: línea frontal fina; luego una banda translúcida más ancha alrededor, con una regla de 300 NM."
+   },
+   {
+    "text": "El frente polar separa el aire tropical marítimo, más cálido, del polar marítimo, más frío. Se extiende por el Atlántico y el Pacífico, más o menos entre treinta y cinco y sesenta y cinco grados norte, de media hacia los cincuenta. En verano sube y en invierno baja.",
+    "visual": "Globo con la línea del frente polar serpenteando entre 35° y 65°N; se desplaza al norte en un verano animado y al sur en invierno."
+   },
+   {
+    "text": "En él se forman ondulaciones: el aire cálido se mete en el frío, baja la presión, y nace una borrasca con su sector cálido. Se mueven de oeste a este con los vientos de altura.",
+    "visual": "Vista desde arriba: la línea frontal se ondula; una lengua roja penetra en el azul, aparece una B y la onda se convierte en frente cálido y frío con símbolos. La borrasca avanza hacia Europa."
+   },
+   {
+    "text": "También hay un frente ártico, entre aire ártico y polar, más al norte. Y un frente mediterráneo, entre el aire europeo y el del norte de África, que en verano suele desaparecer.",
+    "visual": "Mapa con tres líneas frontales: ártica (norte), polar (centro) y mediterránea (sobre el Mediterráneo, que se desvanece al pasar a verano)."
+   },
+   {
+    "text": "Por eso el noroeste de Europa vive muy a menudo bajo el frente polar, con borrascas pasando una tras otra.",
+    "visual": "Timelapse de satélite estilizado: borrascas en tren cruzando el Atlántico hacia las islas británicas."
+   }
+  ]
+ },
+ {
+  "id": "050.13-frente-calido",
+  "lesson": "050.13",
+  "sections": [
+   3
+  ],
+  "title": "El frente cálido",
+  "fuente": "meteorologia.pptx (22); flight hazards (rain ice)",
+  "scenes": [
+   {
+    "text": "Vuelas hacia un frente cálido. Primero, cirros altos y bonitos. Una hora después, estás bajo un techo gris y la visibilidad se cae. Veamos por qué.",
+    "visual": "Cabina del PA-28 en ruta: cirros finos arriba. Timelapse acelerado: el cielo se cubre, la base baja y empieza a llover sobre el parabrisas."
+   },
+   {
+    "text": "En un frente cálido, el aire cálido avanza y sube por encima del aire frío. La pendiente es muy suave, unos uno a ciento cincuenta.",
+    "visual": "Corte vertical 3D: cuña azul fría debajo y aire rojo subiendo por encima en una rampa muy tendida; indicación 1:150."
+   },
+   {
+    "text": "Al subir tan despacio, forma nubes en capas: arriba cirros, luego cirroestratos, altoestratos y, cerca del frente, nimboestratos. La nubosidad baja y se espesa a medida que se acerca.",
+    "visual": "La rampa se llena de nubes en capas de arriba a abajo (Ci, Cs, As, Ns) con etiquetas mínimas. La cámara viaja a lo largo de la rampa hacia el frente."
+   },
+   {
+    "text": "La precipitación empieza y va aumentando hasta que pasa el frente. La visibilidad baja poco a poco, y en superficie puede aparecer niebla.",
+    "visual": "Lluvia que empieza fina y se intensifica. En el suelo, en la base del frente, se forma niebla sobre la pista."
+   },
+   {
+    "text": "Peligro añadido: lluvia engelante. La lluvia cae del aire cálido de arriba a una capa bajo cero, se subenfría, y al chocar con el avión se congela muy rápido. Unos mil pies por delante del frente. Lo que hay que hacer: rumbo inverso, ya.",
+    "visual": "Corte: gotas cayendo desde la capa roja a la azul bajo cero; al tocar el ala del PA-28 se convierten en hielo transparente. El avión vira 180° de inmediato."
+   },
+   {
+    "text": "Para el VFR: techos que bajan, lluvia y visibilidad que empeoran progresivamente. Decide pronto, antes de quedarte atrapado entre el techo y el terreno.",
+    "visual": "Vista exterior: la Cessna metida en la cuña entre la base de nubes descendente y el terreno que sube; la cámara se aleja mostrando cómo se estrecha el hueco."
+   }
+  ]
+ },
+ {
+  "id": "050.13-frente-frio",
+  "lesson": "050.13",
+  "sections": [
+   4
+  ],
+  "title": "El frente frío",
+  "fuente": "meteorologia.pptx (23)",
+  "scenes": [
+   {
+    "text": "El frente frío llega deprisa y con fuerza. Pero cuando pasa, a menudo deja el mejor día para volar.",
+    "visual": "Plano cinematográfico: una línea de nubes oscuras avanzando sobre el Vallès con rachas que doblan los árboles."
+   },
+   {
+    "text": "Aquí el aire frío avanza y se mete por debajo del cálido, levantándolo de golpe. La pendiente es más pronunciada que en el frente cálido: unos uno a ochenta.",
+    "visual": "Corte 3D: una cuña azul empinada empuja por debajo del aire rojo, que sale disparado hacia arriba; indicación 1:80. Comparativa pequeña con la rampa de 1:150 del frente cálido."
+   },
+   {
+    "text": "El resultado es nubosidad que aparece rápido, a menudo con cumulonimbos embebidos, y precipitación en forma de chubascos, a veces con granizo.",
+    "visual": "Torres de cúmulos y cumulonimbos que crecen sobre la cuña; chubascos intensos y granizo rebotando en la plataforma."
+   },
+   {
+    "text": "En Europa, en invierno, un frente frío suele dar los fenómenos más intensos y las lluvias más fuertes.",
+    "visual": "Mapa de superficie con el frente frío con triángulos azules barriendo la península."
+   },
+   {
+    "text": "Tras el paso, el tiempo mejora de forma notable y la temperatura baja claramente, porque ha entrado aire más frío.",
+    "visual": "Timelapse: el frente pasa, el cielo se limpia, visibilidad enorme sobre el Pirineo. Un termómetro baja varios grados."
+   },
+   {
+    "text": "Para volar: un frente frío con cumulonimbos embebidos no se atraviesa. Se espera a que pase.",
+    "visual": "Cessna en tierra con la tapa del pitot puesta mientras el frente cruza; después despega bajo cielo limpio."
+   }
+  ]
+ },
+ {
+  "id": "050.13-chorro-oclusion",
+  "lesson": "050.13",
+  "sections": [
+   6,
+   7
+  ],
+  "title": "La corriente en chorro y las oclusiones",
+  "fuente": "meteorologia.pptx (24-26)",
+  "scenes": [
+   {
+    "text": "Una borrasca del frente polar vista en tres dimensiones tiene un río de viento por encima, y termina su vida ocluyéndose.",
+    "visual": "Borrasca en 3D con sus frentes; por encima, una cinta rápida de viento cerca de la tropopausa."
+   },
+   {
+    "text": "En altura, el viento sopla más o menos paralelo a los frentes. En el hemisferio norte, mirando hacia donde va el viento, el aire frío queda a la izquierda.",
+    "visual": "Un observador 'cabalga' el viento de altura: a su izquierda se tiñe de azul (frío), a su derecha de rojo."
+   },
+   {
+    "text": "La corriente en chorro va cerca de la tropopausa, en el aire cálido: unas cuatrocientas millas por delante del frente cálido en superficie, y unas doscientas por detrás del frente frío.",
+    "visual": "Corte vertical con el chorro como un tubo brillante: delante del frente cálido a 400 NM y detrás del frío a 200 NM, ambos en el lado cálido."
+   },
+   {
+    "text": "El frente frío suele ir más rápido que el cálido. Cuando lo alcanza y lo adelanta, el aire del sector cálido queda levantado por encima: es la oclusión.",
+    "visual": "Vista desde arriba: el frente frío (azul) gira y alcanza al cálido (rojo); se funden en una línea morada. Corte 3D: la cuña roja se separa del suelo y sube."
+   },
+   {
+    "text": "Si el aire de delante del frente cálido es más frío que el de detrás del frente frío, el de detrás sube por encima: oclusión de tipo cálido, más frecuente en invierno.",
+    "visual": "Corte: tres masas; la de detrás (menos fría) asciende sobre la de delante (más fría). En superficie solo se ve un frente cálido."
+   },
+   {
+    "text": "Da una banda extensa de precipitación, sobre todo continua y estratiforme. Y se mueve a una velocidad parecida a la de los frentes fríos.",
+    "visual": "Lluvia continua en una banda ancha sobre el mapa; una Cessna espera en tierra mientras la banda avanza."
+   }
+  ]
+ },
+ {
+  "id": "050.14-sistemas-presion",
+  "lesson": "050.14",
+  "sections": [
+   0,
+   1,
+   2,
+   4
+  ],
+  "title": "Borrascas, anticiclones, vaguadas, dorsales y collados",
+  "fuente": "THE ATMOSPHERE / Meteo ATPLenjoy (Pressure systems)",
+  "scenes": [
+   {
+    "text": "Las isobaras dibujan cinco formas. Si las reconoces, adivinas el tiempo antes de leer el pronóstico.",
+    "visual": "Mapa de superficie de Europa animado; las isobaras se dibujan solas y aparecen cinco formas que se iluminan una por una."
+   },
+   {
+    "text": "Una depresión o borrasca: isobaras más o menos circulares alrededor de la presión más baja. En superficie el aire converge, sube, y diverge en altura. Por eso trae nubes y precipitación.",
+    "visual": "Vista 3D de una baja: flechas girando antihorario hacia el centro, columna de aire ascendiendo y formando nubes, y saliendo arriba."
+   },
+   {
+    "text": "Un anticiclón: presión más alta en el centro. El aire desciende y se calienta, con la inversión de subsidencia. Tiempo generalmente estable, aunque con calima atrapada debajo.",
+    "visual": "Vista 3D de una alta: aire bajando en el centro, girando horario hacia fuera, cielo despejado y una capa de calima baja bajo una tapa."
+   },
+   {
+    "text": "Una vaguada es una lengua alargada de baja presión que sale de una borrasca. Una cuña o dorsal, una lengua de alta presión que sale de un anticiclón.",
+    "visual": "Sobre el mapa, una lengua de isobaras en V sale de la B (vaguada) y otra en U redondeada sale de la A (dorsal)."
+   },
+   {
+    "text": "Y el collado, o col, es la zona entre dos altas y dos bajas: el gradiente es mínimo y el viento, muy débil o casi nulo.",
+    "visual": "Cuatro centros enfrentados en cruz; en el centro, las isobaras se separan mucho y una manga de viento cae flácida."
+   },
+   {
+    "text": "Lectura rápida para tu vuelo: borrasca y vaguada, aire que sube y mal tiempo. Anticiclón y dorsal, aire que baja y estabilidad.",
+    "visual": "Dos rutas en Cessna sobre el mismo mapa: una entra en la vaguada con nubes y lluvia, otra va bajo la dorsal con cielo limpio."
+   }
+  ]
+ },
+ {
+  "id": "050.05-circulacion-itcz",
+  "lesson": "050.05",
+  "sections": [
+   0,
+   1,
+   3,
+   4
+  ],
+  "title": "Circulación general, zonas climáticas y la ITCZ",
+  "fuente": "resumen_climatologia_meteorologia (1-9)",
+  "scenes": [
+   {
+    "text": "La climatología te dice qué tiempo esperar en una ruta antes de mirar el pronóstico del día. Importa por la visibilidad, las nubes, las tormentas, el hielo, la turbulencia y el viento dominante.",
+    "visual": "Globo terrestre girando con una ruta larga dibujada; iconos de los seis peligros apareciendo a lo largo de ella."
+   },
+   {
+    "text": "El aire va de altas a bajas presiones y la rotación de la Tierra lo desvía. Los continentes, los océanos y la inclinación del eje, de veintitrés grados y medio, deforman el modelo ideal. El hemisferio sur, con más océano, se parece más.",
+    "visual": "Globo idealizado con bandas de viento regulares; se añaden continentes y las bandas se deforman. Eje inclinado 23,5°."
+   },
+   {
+    "text": "Por latitud: en el ecuador, mucha humedad, convección, chubascos fuertes, tormentas y viento flojo. Entre diez y veinte grados, sabana: estación seca en invierno y lluvias en verano. Entre veinte y treinta y cinco, aire seco que desciende: desiertos.",
+    "visual": "La cámara barre del ecuador hacia el norte: selva con cumulonimbos, sabana alternando seca/húmeda, desierto bajo un anticiclón con aire bajando."
+   },
+   {
+    "text": "Las templadas y polares dependen del frente polar: borrascas viajeras, anticiclones fríos y permafrost.",
+    "visual": "Sigue el barrido: borrascas cruzando Europa, tundra helada."
+   },
+   {
+    "text": "El sol de mediodía en la vertical se mueve entre los trópicos: Cáncer en junio, Capricornio en diciembre. Y con él migran el ecuador térmico y la ITCZ hacia el hemisferio de verano.",
+    "visual": "Animación anual: un punto solar sube y baja entre los trópicos; una banda de nubes (ITCZ) lo sigue al norte en junio y al sur en diciembre."
+   },
+   {
+    "text": "La ITCZ es donde convergen los alisios de los dos hemisferios. Mucho ascenso: cúmulos, cumulonimbos y tormentas, con una anchura de veinticinco a trescientas millas. Riesgo: turbulencia fuerte y engelamiento desde unos dieciséis mil pies.",
+    "visual": "Vista 3D de la ITCZ: alisios del NE y del SE convergiendo, línea de cumulonimbos y un avión de línea desviándose; marca de 16 000 ft en las torres."
+   }
+  ]
+ },
+ {
+  "id": "050.05-monzones-chorros-locales",
+  "lesson": "050.05",
+  "sections": [
+   8,
+   9,
+   10
+  ],
+  "title": "Monzones, corrientes en chorro y vientos regionales",
+  "fuente": "resumen_climatologia_meteorologia (10-13); Meteo ATPLenjoy (Mediterranean winds)",
+  "scenes": [
+   {
+    "text": "Hay vientos que cambian con la estación, ríos de viento a cuarenta mil pies y vientos locales con nombre propio. Todos entran en el examen.",
+    "visual": "Globo con tres capas de animación: flechas estacionales sobre Asia, un chorro serpenteante arriba y pequeños remolinos regionales en el Mediterráneo."
+   },
+   {
+    "text": "Los monzones van ligados a altas continentales en invierno y bajas térmicas en verano. El del noreste es más fresco y seco. El del suroeste es muy húmedo: cúmulos, cumulonimbos, tormentas, bases bajas y turbulencia fuerte.",
+    "visual": "Mapa de la India: en invierno flechas secas del NE desde Siberia; en verano flechas húmedas del SW desde el océano con torres de nubes formándose."
+   },
+   {
+    "text": "El chorro subtropical va hacia doscientos hectopascales, FL trescientos noventa, entre veinticinco y cuarenta grados en invierno, y puede superar los cien nudos. El del frente polar se mueve con el frente: más al sur en invierno, más al norte en verano.",
+    "visual": "Corte vertical del globo con dos tubos de chorro cerca de la tropopausa y una etiqueta 'FL390 · > 100 kt'; el del frente polar se desplaza con las estaciones."
+   },
+   {
+    "text": "Vientos regionales: el Mistral baja por el valle del Ródano, frío, fuerte y turbulento, de cuarenta a setenta y cinco nudos. La Bora, en el Adriático, unos setenta nudos con rachas de más de cien.",
+    "visual": "Mapa del sur de Francia y del Adriático con flechas canalizadas; mar picado y una avioneta muy zarandeada."
+   },
+   {
+    "text": "Del norte de África, el Siroco, el Ghibli y el Khamsin: cálidos, secos y polvorientos, por delante de borrascas que cruzan la costa africana. La visibilidad puede bajar de mil metros. Y el Harmattan, del noreste, polvoriento, hacia la ITCZ.",
+    "visual": "Mapa del norte de África: flechas del sur levantando polvo hacia el Mediterráneo; cámara a una pista cuya visibilidad cae bajo una nube ocre."
+   },
+   {
+    "text": "Y el Foehn, cálido y seco a sotavento de las montañas. Para volar, vigila la ITCZ, el monzón del suroeste, los chorros, los vientos locales fuertes y el polvo.",
+    "visual": "Montaje final rápido de los escenarios anteriores con un icono de aviso en cada uno."
+   }
+  ]
+ },
+ {
+  "id": "050.15-tipos-hielo",
+  "lesson": "050.15",
+  "sections": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "title": "Hielo claro, opaco, mixto y lluvia engelante",
+  "fuente": "METEOROLOGY flight hazards (2-8)",
+  "scenes": [
+   {
+    "text": "El hielo en vuelo nace de gotas subenfriadas: agua líquida por debajo de cero que se congela al chocar con el avión. Según el tamaño de la gota, el hielo es muy distinto.",
+    "visual": "Cámara lenta extrema: una gota líquida en aire a −8 °C se acerca al borde de ataque de un PA-28 y al tocarlo se transforma en hielo."
+   },
+   {
+    "text": "Gota grande: empieza a congelarse y libera calor latente. Eso retrasa la congelación y parte del agua corre hacia atrás sobre el ala. Se forma hielo claro, transparente, sin aire atrapado.",
+    "visual": "Gotas grandes impactando: se extienden, fluyen hacia atrás y se congelan en una capa lisa y transparente que crece rápido."
+   },
+   {
+    "text": "Se forma en nimboestratos, cúmulos y cumulonimbos, entre cero y menos veinte grados. Es el más peligroso por lo rápido que se acumula.",
+    "visual": "Nube de desarrollo vertical con escala de temperatura 0 a −20 °C al lado; el borde de ataque engorda a ojos vista en timelapse."
+   },
+   {
+    "text": "Gota pequeña: se congela al instante al chocar. Sale hielo opaco, rugoso, blanco lechoso. Típico de nubes estratiformes y de temperaturas más bajas.",
+    "visual": "Gotas diminutas que se congelan en el punto de impacto atrapando burbujas: costra blanca rugosa en el borde de ataque, dentro de un estrato."
+   },
+   {
+    "text": "Si hay gotas grandes y pequeñas a la vez, entre cero y menos veinte, sale hielo mixto: lo peor de los dos.",
+    "visual": "Pantalla dividida con los dos tipos fundiéndose en un borde de ataque con cuernos irregulares."
+   },
+   {
+    "text": "La lluvia engelante cae desde aire cálido, por encima de una inversión, a una capa bajo cero. Se acumula muy deprisa, por delante de frentes cálidos u oclusiones, hacia los mil pies. Acción del piloto: rumbo inverso inmediatamente.",
+    "visual": "Corte vertical con capa cálida arriba y fría abajo; lluvia atravesándolas. El PA-28 entra, el parabrisas se vidria y el avión vira 180° de inmediato."
+   }
+  ]
+ },
+ {
+  "id": "050.15-escarcha-severidad",
+  "lesson": "050.15",
+  "sections": [
+   5,
+   6,
+   8
+  ],
+  "title": "Escarcha, nieve compacta y qué hace más severo el hielo",
+  "fuente": "METEOROLOGY flight hazards (9-12, 19)",
+  "scenes": [
+   {
+    "text": "Te levantas, vas al aeródromo y la Cessna está blanca. No es nieve: es escarcha, y no se despega con ella.",
+    "visual": "Amanecer helado en la plataforma: la Cessna 152 cubierta de cristales blancos; primer plano de los cristales en el ala."
+   },
+   {
+    "text": "La escarcha blanca se forma por sublimación: el vapor pasa directamente a hielo sobre una superficie bajo cero, en aire claro. En tierra, sobre todo de noche.",
+    "visual": "Animación molecular: vapor de agua que pasa a cristal directamente sobre el ala fría, sin fase líquida."
+   },
+   {
+    "text": "Hay que quitarla antes de despegar: aumenta el rozamiento y la carrera de despegue, tapa el parabrisas y el hielo en las antenas interfiere la radio.",
+    "visual": "Tres consecuencias encadenadas: carrera de despegue más larga en una pista animada, parabrisas opaco, y el sonido de la radio con ruido."
+   },
+   {
+    "text": "En vuelo aparece si desciendes rápido desde aire muy frío a una capa cálida y húmeda, o si subes a través de una inversión. Es leve: se va volando en aire por encima de cero o más rápido. La nieve compacta, gotas subenfriadas con nieve, puede tapar tomas de aire.",
+    "visual": "Descenso rápido de un avión frío a una capa húmeda: el parabrisas se empaña de cristales. Inserto: toma de aire del motor obstruida por nieve compacta."
+   },
+   {
+    "text": "La severidad depende de la nube: cúmulos, cumulonimbos y nimboestratos, de moderado a fuerte. Estratocúmulos, de ligero a moderado, fuerte en montaña. Altocúmulos, altoestratos y estratos, ligero. Y cirros, nada o trazas.",
+    "visual": "Escalera de nubes animada con un medidor de intensidad de hielo junto a cada una."
+   },
+   {
+    "text": "Y más cosas: más agua cerca de la base de la nube, las formas finas cogen hielo antes, y la cola, los montantes y las antenas acumulan más rápido que el ala. Si ves un poco en el ala, puede haber bastante más en otros sitios.",
+    "visual": "Cessna 172 en vuelo con zoom secuencial: borde de ataque con una fina capa; montante, antena y estabilizador con más hielo acumulado."
+   }
+  ]
+ },
+ {
+  "id": "050.15-cristales-reactores",
+  "lesson": "050.15",
+  "sections": [
+   7,
+   9
+  ],
+  "title": "Cristales de hielo y engelamiento de motores a reacción",
+  "fuente": "METEOROLOGY flight hazards (13-24)",
+  "scenes": [
+   {
+    "text": "Hay un hielo que no se ve, no sale en el radar y aun así puede hacer que un motor a reacción pierda empuje. Son los cristales de hielo en alta concentración.",
+    "visual": "Avión de línea en crucero junto a un yunque de cumulonimbo, aire aparentemente limpio. Zoom microscópico: nube densa de cristales diminutos."
+   },
+   {
+    "text": "Son cristales muy pequeños, de unas cuarenta micras, dentro y cerca de sistemas convectivos, sobre todo en latitudes tropicales y sobre el océano. No aparecen en el radar meteorológico porque no hay agua líquida.",
+    "visual": "Pantalla de radar del avión 'limpia' en primer plano, mientras afuera los cristales entran en el motor."
+   },
+   {
+    "text": "El riesgo mayor está a sotavento de los topes de grandes cumulonimbos, bajo el yunque. Los topes que sobresalen del yunque indican convección fuerte.",
+    "visual": "Cumulonimbo 3D con su yunque estirado por el viento y un 'overshooting top'; una zona sombreada a sotavento marca el riesgo."
+   },
+   {
+    "text": "No hay que confundirlos con los cristales grandes y poco densos de los cirros, que no son peligrosos. Y por debajo de menos cuarenta grados, el engelamiento es normalmente despreciable.",
+    "visual": "Pantalla dividida: cirros inofensivos frente a la nube de cristales densos junto al yunque."
+   },
+   {
+    "text": "En un reactor, el hielo se forma en el labio de la toma y en los álabes guía. Si se suelta y entra, puede dañar el motor. El antihielo del motor se conecta con precipitación y temperatura indicada de diez grados o menos, hasta menos cuarenta.",
+    "visual": "Corte de un turbofán: hielo creciendo en el labio de la toma; un trozo se desprende hacia el fan. En cabina, interruptor ENG ANTI-ICE pasa a ON con la temperatura en +10 °C."
+   },
+   {
+    "text": "Además, el hielo en las sondas falsea las indicaciones de potencia, y el combustible muy frío puede enfriar el ala y formar hielo claro incluso con temperatura exterior positiva. Y todo antihielo cuesta prestaciones.",
+    "visual": "Ala de un avión de línea en tierra con llovizna y +5 °C: aparece hielo claro sobre el depósito de combustible frío."
+   }
+  ]
+ },
+ {
+  "id": "050.07-friccion-turbulencia",
+  "lesson": "050.07",
+  "sections": [
+   0,
+   1,
+   2
+  ],
+  "title": "La capa de fricción, turbulencia térmica y mecánica",
+  "fuente": "METEOROLOGY flight hazards (24-26); Meteo ATPLenjoy (Turbulence)",
+  "scenes": [
+   {
+    "text": "La turbulencia aparece en tres sitios: en la capa de fricción, dentro de las nubes y en aire claro. Empezamos por la que más vas a sentir en avioneta: la de abajo.",
+    "visual": "Cessna en circuito de Sabadell un mediodía de verano; la cámara tiembla con las sacudidas. Tres iconos discretos: fricción · nubes · aire claro."
+   },
+   {
+    "text": "La capa de fricción va del suelo a unos dos o tres mil pies. Es más profunda cuanto más rugoso es el terreno, más fuerte el viento y menos estable el aire.",
+    "visual": "Corte del terreno con una capa coloreada encima que crece sobre montañas y con viento fuerte, y se aplana con aire estable."
+   },
+   {
+    "text": "La turbulencia térmica sale de las corrientes de convección. La roca y el hormigón se calientan rápido y dan térmicas fuertes. La hierba y los bosques, débiles.",
+    "visual": "Vista aérea: térmicas visibles saliendo con fuerza de la pista y de un polígono; columnas débiles sobre un bosque. La Cessna en final pasa del bosque al asfalto y salta."
+   },
+   {
+    "text": "La mecánica la causan los obstáculos al viento: colinas, montañas, costas, árboles y edificios.",
+    "visual": "Viento cruzando hangares y árboles junto a la cabecera: remolinos detrás de los obstáculos que zarandean a la Cessna en la recogida."
+   },
+   {
+    "text": "De día, las térmicas hacen la capa más profunda. De noche, el suelo se enfría y puede formarse una inversión baja. Abajo el viento es flojo; arriba, mucho más fuerte y con otra dirección.",
+    "visual": "Corte día/noche: de día la capa crece; de noche se aplasta y aparece la línea de inversión con viento flojo abajo y fuerte arriba."
+   },
+   {
+    "text": "Al atravesar esa inversión subiendo o bajando, cambio brusco de velocidad y dirección del viento: cizalladura, con turbulencia que puede ser de moderada a fuerte.",
+    "visual": "PA-28 ascendiendo de noche: al cruzar la inversión el anemómetro salta y el avión se sacude; flechas de viento cambiando de tamaño y dirección justo en la línea."
+   }
+  ]
+ },
+ {
+  "id": "050.07-ondas-montana",
+  "lesson": "050.07",
+  "sections": [
+   3,
+   4,
+   5
+  ],
+  "title": "Ondas de montaña y rotores",
+  "fuente": "Meteo ATPLenjoy (Mountain waves, Rotor streaming)",
+  "scenes": [
+   {
+    "text": "Un día de viento fuerte sobre el Pirineo, ves nubes lisas como lentejas suspendidas en el cielo. Son la firma de las ondas de montaña.",
+    "visual": "Plano cinematográfico: nubes lenticulares apiladas sobre el Pirineo nevado, inmóviles mientras el viento sopla."
+   },
+   {
+    "text": "Hacen falta tres cosas: viento perpendicular a la cordillera, más o menos treinta grados, sin cambiar mucho de dirección con la altura; al menos quince nudos en las cumbres, aumentando con la altura; y una capa estable cerca de las cumbres.",
+    "visual": "Corte de la cordillera: flecha de viento perpendicular con su abanico de ±30°, velocidad creciendo con la altura y una capa estable marcada a la altura de las cimas."
+   },
+   {
+    "text": "Detrás de la montaña, el aire ondula como el agua detrás de una piedra en un río. En las crestas de las ondas se forman las lenticulares. En la cima, la nube de capuchón.",
+    "visual": "Las líneas de corriente ondulan a sotavento; lenticulares formándose en las crestas, capuchón sobre la cima que se derrama por la ladera de sotavento."
+   },
+   {
+    "text": "Lo peor está bajo las crestas, en el rotor, a menudo marcado por nubes de rotor. El más fuerte, bajo la primera cresta. Si el viento fuerte es solo bajo, los rotores pueden viajar a sotavento: rotor streaming.",
+    "visual": "Bajo la primera cresta, un remolino giratorio con una nube en rollo. Una avioneta que entra en él es volteada. Luego varios rotores se desprenden y viajan a sotavento."
+   },
+   {
+    "text": "Cómo evitarlo: lee el pronóstico, cruza la cordillera a noventa grados, a velocidad de penetración en turbulencia, y nunca vueles paralelo y justo a sotavento. Evita el rotor y los cinco mil pies alrededor de la capa estable.",
+    "visual": "Vista en planta: ruta de la Cessna cruzando la cordillera en perpendicular (verde) frente a una ruta paralela a sotavento (roja tachada)."
+   },
+   {
+    "text": "Deja sobre la cresta un margen igual a su altura sobre el terreno de alrededor, no te acerques bajo desde sotavento, y prepárate para hielo en nube.",
+    "visual": "Corte con una regla: la altura de la cresta sobre el valle se copia por encima de la cresta como margen mínimo. Una avioneta que llega baja desde sotavento cae en una descendente."
+   }
+  ]
+ },
+ {
+  "id": "050.07-chorro-cb",
+  "lesson": "050.07",
+  "sections": [
+   6
+  ],
+  "title": "Turbulencia en chorros y cumulonimbos",
+  "fuente": "Meteo ATPLenjoy (Jet streams, Cumulonimbus)",
+  "scenes": [
+   {
+    "text": "Hay turbulencia sin una sola nube, a treinta y cinco mil pies. Y hay turbulencia que se ve desde lejos: la del cumulonimbo.",
+    "visual": "Avión de línea en cielo azul profundo con una sacudida brusca; corte a un cumulonimbo enorme en el horizonte."
+   },
+   {
+    "text": "Las corrientes en chorro son ríos de viento estrechos y rápidos justo debajo de la tropopausa. La turbulencia está sobre todo en el lado frío, justo por debajo del núcleo, donde la cizalladura es mayor.",
+    "visual": "Corte del chorro: núcleo rojo; zona sombreada de turbulencia en el lado frío bajo el núcleo, y otra secundaria por encima entrando en la estratosfera."
+   },
+   {
+    "text": "Es peor con chorros curvados, en desarrollo o muy rápidos, y sobre montañas, sobre todo si además hay ondas.",
+    "visual": "El chorro se curva sobre una cordillera con ondas debajo; la zona sombreada se intensifica."
+   },
+   {
+    "text": "Dentro de un cumulonimbo hay corrientes verticales muy fuertes. Arrastran aire de alrededor de la nube, creando turbulencia fuera, y transmiten energía hacia encima del tope.",
+    "visual": "Corte 3D del cumulonimbo: corriente ascendente roja, descendentes azules, aire entrando por los lados y ondas de turbulencia por encima del yunque."
+   },
+   {
+    "text": "Regla práctica para cualquier avión: a un cumulonimbo no se entra, ni se pasa por debajo, ni se roza.",
+    "visual": "Cessna desviándose con amplio margen alrededor de un cumulonimbo aislado, con una zona de exclusión dibujada a su alrededor."
+   }
+  ]
+ },
+ {
+  "id": "050.10-nieblas",
+  "lesson": "050.10",
+  "sections": [
+   2,
+   3,
+   4
+  ],
+  "title": "Niebla de radiación, de advección, frontal y orográfica",
+  "fuente": "Meteo ATPLenjoy (Advection, Orographic, Frontal fog) · ampliación: lección 050.10 de la web",
+  "scenes": [
+   {
+    "text": "La niebla es una nube pegada al suelo. Y saber cómo se forma te dice si se irá a media mañana o te dejará en tierra todo el día.",
+    "visual": "Amanecer en Sabadell: la pista desaparece bajo niebla, solo asoma la torre. Una Cessna espera en la plataforma."
+   },
+   {
+    "text": "La de radiación: noche despejada, aire húmedo y viento flojo. El suelo se enfría por radiación, enfría el aire que toca y lo satura. Se forma solo sobre tierra, primero en las zonas bajas, y suele ser más densa justo después del amanecer.",
+    "visual": "Timelapse nocturno: ondas de calor escapan del suelo bajo cielo estrellado; una capa de niebla nace en el fondo del valle y crece hasta el amanecer."
+   },
+   {
+    "text": "Se disipa cuando el sol calienta el suelo, cuando aumenta el viento o cuando llega aire más seco. Muchas veces, basta con esperar.",
+    "visual": "Timelapse matinal: el sol calienta, la niebla se levanta en estrato y se rompe en cúmulos. La Cessna arranca."
+   },
+   {
+    "text": "La de advección: aire cálido y húmedo que se mueve sobre una superficie más fría y se enfría hasta saturarse. Necesita viento, puede formarse de día o de noche, y no se va con el sol. La brisa puede meter una niebla marina en un aeródromo de costa por la tarde.",
+    "visual": "Vista aérea: banco de niebla sobre el mar frío avanzando con el viento hacia una pista costera que se cubre en minutos."
+   },
+   {
+    "text": "La frontal se forma por delante de un frente cálido: la lluvia del aire cálido se evapora en el aire frío de abajo y lo satura. La orográfica, cuando el aire húmedo sube por una ladera y se enfría: tapa las cimas.",
+    "visual": "Pantalla dividida: corte de un frente cálido con lluvia evaporándose cerca del suelo; y una ladera con el aire subiendo y la niebla cubriendo la cumbre del Montseny."
+   },
+   {
+    "text": "Para el VFR: nunca intentes colarte por debajo de la niebla. Mira la diferencia entre temperatura y punto de rocío, ten un alternativo y combustible para llegar.",
+    "visual": "PA-28 dando media vuelta ante una pared de niebla que cubre el valle; inserto de un METAR con T y Td muy próximas resaltadas."
+   }
+  ]
+ },
+ {
+  "id": "050.18-simbolos-sigwx",
+  "lesson": "050.18",
+  "sections": [
+   3,
+   4,
+   6
+  ],
+  "title": "Símbolos del tiempo significativo y cómo leer un SIGWX",
+  "fuente": "Symbols for significant weather (PDF) · ampliación: lección 050.18 de la web",
+  "scenes": [
+   {
+    "text": "Un mapa de tiempo significativo resume en un dibujo todo lo que te puede complicar el vuelo. Pero hay que saber leer sus símbolos.",
+    "visual": "Un SIGWX de baja cota estilizado de la península aparece sobre una mesa de briefing junto a la carta VFR; la cámara se acerca."
+   },
+   {
+    "text": "La precipitación: un punto es lluvia, una coma es llovizna, un asterisco es nieve, un triángulo invertido es chubasco y un triángulo, granizo. La tormenta, una R con flecha.",
+    "visual": "Cada símbolo se dibuja trazo a trazo y se transforma en una mini escena del fenómeno real (gotas, llovizna, copos, chubasco, granizo, rayo)."
+   },
+   {
+    "text": "La lluvia engelante es el punto con un gancho. Tres rayas, niebla extensa. Dos rayas, neblina. Un ocho tumbado, calima. Y una línea ondulada, humo.",
+    "visual": "Los símbolos aparecen sobre zonas del mapa mientras el paisaje bajo ellos cambia: niebla, bruma, calima y humo de un incendio."
+   },
+   {
+    "text": "Los peligros: turbulencia, un pico sobre una línea, uno moderada y dos fuerte. Engelamiento, una copa con trazos verticales. Ondas de montaña, una lente. Y la línea de turbonada, un zigzag.",
+    "visual": "Cada símbolo de peligro se coloca en el mapa y de él brota la escena 3D correspondiente sobre la ruta de una Cessna."
+   },
+   {
+    "text": "Para leerlo: las zonas con tiempo significativo van rodeadas por una línea, con sus símbolos, las nubes con base y tope sobre el nivel del mar, y los cumulonimbos como aislados, ocasionales, frecuentes o embebidos.",
+    "visual": "Zoom a una zona del SIGWX: se resaltan la línea que la rodea, el símbolo de engelamiento, 'ISOL CB 030/250' y la base/tope de nubes."
+   },
+   {
+    "text": "Mira siempre la hora de validez, el nivel de congelación y que las alturas son sobre el mar. Y combínalo con el GAMET y con tu ruta.",
+    "visual": "La ruta Sabadell–Lleida se superpone al SIGWX; sobre ella se encienden en orden la validez, el nivel de congelación 0 °C y una zona a evitar."
+   }
+  ]
+ }
+]

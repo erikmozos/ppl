@@ -1,0 +1,500 @@
+[
+ {
+  "id": "090.11-ondas-radio",
+  "lesson": "090.11",
+  "sections": [
+   0,
+   1
+  ],
+  "title": "Qué es una onda de radio",
+  "fuente": "COMUNICACIONES VFR (1-4)",
+  "scenes": [
+   {
+    "text": "Cada vez que pulsas el botón del micro, tu voz sale de la antena convertida en una onda electromagnética que viaja a la velocidad de la luz.",
+    "visual": "Cabina de la Cessna: el pulgar presiona el PTT. La cámara sigue el cable hasta la antena del techo y de ella brotan ondas concéntricas hacia la torre de Sabadell."
+   },
+   {
+    "text": "A diferencia del sonido, las ondas electromagnéticas no necesitan un medio para propagarse. Y todas, sea cual sea su frecuencia, viajan a la velocidad de la luz.",
+    "visual": "Pantalla dividida: el sonido de una campana dentro de una campana de vacío se apaga; una onda de radio cruza el vacío sin problema."
+   },
+   {
+    "text": "Tienen dos componentes que oscilan juntos: un campo eléctrico, que crea la antena cargada, y un campo magnético. Un campo eléctrico que varía crea uno magnético, y al revés. Así la energía se suelta y viaja.",
+    "visual": "Animación 3D de la onda saliendo de un dipolo: campo eléctrico (rojo) oscilando en vertical y magnético (azul) en horizontal, perpendiculares, avanzando juntos."
+   },
+   {
+    "text": "La frecuencia es el número de ciclos por segundo. Un ciclo por segundo es un hercio; mil, un kilohercio; un millón, un megahercio; mil millones, un gigahercio.",
+    "visual": "Una onda se dibuja en directo con un contador de ciclos en un segundo. Escala de prefijos que se amplía: Hz → kHz → MHz → GHz."
+   },
+   {
+    "text": "El periodo es lo que tarda un ciclo. Y la longitud de onda, la distancia que recorre la onda en un ciclo.",
+    "visual": "Sobre la onda: un cronómetro mide un ciclo (periodo T) y una regla mide de cresta a cresta (λ)."
+   },
+   {
+    "text": "Cuando sintonizas ciento dieciocho coma algo en la radio, estás eligiendo una de esas frecuencias, en megahercios.",
+    "visual": "Primer plano del dial de la radio VHF girando hasta una frecuencia de la banda aeronáutica en MHz."
+   }
+  ]
+ },
+ {
+  "id": "090.11-propagacion",
+  "lesson": "090.11",
+  "sections": [
+   3,
+   5,
+   6,
+   7
+  ],
+  "title": "Cómo viaja la señal: onda de tierra, onda espacial y desvanecimiento",
+  "fuente": "COMUNICACIONES VFR (3-6) · alcance 1,23·√h: ampliación de la lección 090.11 de la web",
+  "scenes": [
+   {
+    "text": "¿Por qué a dos mil pies hablas con la torre desde lejos y en tierra, detrás de una colina, no te oye nadie? Por cómo viajan las ondas.",
+    "visual": "Pantalla dividida: Cessna en vuelo comunicando con la torre a gran distancia; otra en tierra detrás de una colina con las ondas bloqueadas."
+   },
+   {
+    "text": "La onda de tierra, o de superficie, sigue la curvatura de la Tierra. La parte que toca el suelo se frena y la onda se dobla: es la difracción. Funciona sobre todo en frecuencias bajas y medias, y su alcance depende de la frecuencia, de la superficie y de la polarización.",
+    "visual": "Corte del globo: ondas de baja frecuencia que se pegan a la superficie y la rodean, más lejos sobre el mar que sobre tierra."
+   },
+   {
+    "text": "La onda espacial va en línea recta, como la luz, de antena a antena, y en VHF es el único camino. Detrás de un obstáculo quedan zonas de sombra.",
+    "visual": "Ondas rectas desde la torre: alcanzan a la Cessna en vuelo pero chocan con una montaña y dejan una zona de sombra detrás."
+   },
+   {
+    "text": "Su alcance lo marca el horizonte radio, un poco más allá del óptico por la refracción. Una regla práctica: uno coma veintitrés por la raíz de la altura en pies, en millas. A dos mil quinientos pies, unas sesenta millas.",
+    "visual": "Corte de la curvatura terrestre: la línea de vista desde el avión toca el horizonte; al subir el avión el alcance crece. Cálculo discreto: 1,23 × √2500 = 1,23 × 50 ≈ 61 NM."
+   },
+   {
+    "text": "La señal pierde potencia con la distancia: atenuación. Y se dobla al cambiar de medio: refracción en la costa, en la atmósfera o en la ionosfera.",
+    "visual": "Ondas que se debilitan (se aclaran) con la distancia; luego se tuercen al pasar de tierra a mar y al atravesar capas de aire distintas."
+   },
+   {
+    "text": "Y el desvanecimiento: si la onda directa y la reflejada llegan juntas, en fase se suman y la señal crece; en contrafase se restan y se debilita.",
+    "visual": "Dos caminos hacia el avión: directo y reflejado en el suelo. Las dos ondas se superponen en una animación: crestas alineadas (señal fuerte) y desalineadas (señal que se apaga)."
+   }
+  ]
+ },
+ {
+  "id": "090.03-banda-vhf",
+  "lesson": "090.03",
+  "sections": [
+   0
+  ],
+  "title": "La banda VHF aeronáutica",
+  "fuente": "COMUNICACIONES VFR (VHF radiotelephony)",
+  "scenes": [
+   {
+    "text": "Todas las frecuencias que vas a usar volando están en una franja estrecha de la VHF, y cada trozo tiene su uso.",
+    "visual": "Una regla de frecuencias de 118 a 137 MHz se despliega sobre el panel de la Cessna como un teclado luminoso."
+   },
+   {
+    "text": "Va de ciento dieciocho a ciento treinta y seis coma nueve siete cinco megahercios, para el servicio móvil aeronáutico: torres, aproximaciones, control y servicios de información.",
+    "visual": "La regla se colorea por zonas; iconos de torre y radar sobre las zonas principales."
+   },
+   {
+    "text": "Hay frecuencias que debes conocer de memoria. Ciento veintiuno coma cinco es la de emergencia.",
+    "visual": "El tramo 121.5 se ilumina en rojo; la radio de la Cessna se sintoniza en 121.500."
+   },
+   {
+    "text": "De ciento veintiuno coma seis a ciento veintiuno coma nueve nueve uno siete, movimiento en tierra y autorizaciones. Ciento veintitrés coma uno, auxiliar de búsqueda y salvamento.",
+    "visual": "Un avión rodando en la plataforma con el tramo 121.6–121.9917 iluminado; luego un helicóptero de SAR con 123.1."
+   },
+   {
+    "text": "Y ciento veintitrés coma cuarenta y cinco, aire-aire, la frecuencia entre pilotos para zonas remotas y oceánicas.",
+    "visual": "Dos aviones sobre el océano conectados por una onda con la etiqueta 123.45."
+   },
+   {
+    "text": "En Europa conviven canales de veinticinco kilohercios y de ocho coma treinta y tres. Comprueba siempre que tu radio y la frecuencia que te dan coinciden en todos sus decimales.",
+    "visual": "Primer plano del display de la radio mostrando una frecuencia con tres decimales; se compara dígito a dígito con la que dicta la torre."
+   }
+  ]
+ },
+ {
+  "id": "090.03-tecnica-transmision",
+  "lesson": "090.03",
+  "sections": [
+   1,
+   5
+  ],
+  "title": "Técnica de micrófono y transmisión",
+  "fuente": "COMUNICACIONES VFR (Microphone and transmission techniques)",
+  "scenes": [
+   {
+    "text": "En una frecuencia de torre un sábado por la mañana, cada segundo cuenta. Una buena técnica de radio no es estilo: es seguridad.",
+    "visual": "Plano de la torre de Sabadell con varios aviones en el circuito y un ruido de radio superpuesto de muchas voces."
+   },
+   {
+    "text": "Micrófono a la distancia adecuada: demasiado cerca, la voz se distorsiona. Frecuencia correcta y volumen bien ajustado.",
+    "visual": "Primer plano del casco: el micro se aleja ligeramente de los labios y la onda de voz pasa de saturada a limpia."
+   },
+   {
+    "text": "Si acabas de sintonizar, espera y escucha antes de hablar, para no pisar a nadie.",
+    "visual": "Animación de dos transmisiones solapadas que se convierten en un pitido; luego el piloto espera un silencio y transmite limpio."
+   },
+   {
+    "text": "Mensajes concisos, tono normal, unas cien palabras por minuto, y sin muletillas como eh o bueno.",
+    "visual": "Barra de ritmo de voz estable; una muletilla aparece como un bloque gris que se elimina."
+   },
+   {
+    "text": "Pulsa el botón antes de empezar a hablar y mantenlo hasta terminar. Y comprueba que no se queda pulsado: un micro abierto bloquea la frecuencia para todos.",
+    "visual": "Primer plano del PTT: pulsar → hablar → soltar. Luego el botón atascado y todos los aviones del circuito con un icono de frecuencia bloqueada."
+   },
+   {
+    "text": "Para la hora, normalmente basta con los minutos, cifra a cifra. Si hay riesgo de confusión, se dice también la hora.",
+    "visual": "Reloj UTC 10:27; burbuja de radio 'dos siete'. Luego un caso ambiguo y la burbuja completa 'uno cero dos siete'."
+   }
+  ]
+ },
+ {
+  "id": "090.01-estaciones-categorias",
+  "lesson": "090.01",
+  "sections": [
+   2,
+   4,
+   7,
+   8,
+   9
+  ],
+  "title": "Estaciones aeronáuticas y categorías de mensajes",
+  "fuente": "COMUNICACIONES VFR (Message categories, Station call signs)",
+  "scenes": [
+   {
+    "text": "Antes de hablar, hay que saber a quién llamas y qué prioridad tiene lo que vas a decir.",
+    "visual": "Mapa con la ruta de una Cessna desde Sabadell; a lo largo de ella se iluminan las distintas dependencias que irá contactando."
+   },
+   {
+    "text": "El nombre de la estación es el lugar más un sufijo. Control, para un centro de control de área. Aproximación. Torre. Rodadura o superficie para el movimiento en tierra. Radar. E Información, para el servicio de información de vuelo.",
+    "visual": "Cada sufijo aparece pegado a su instalación real en una animación: centro de control, radar de aproximación, torre, plataforma, pantalla radar, oficina de información."
+   },
+   {
+    "text": "En la primera llamada se dice siempre el nombre completo, con el lugar. Una vez establecido el contacto, se puede omitir.",
+    "visual": "Burbuja de radio 'Sabadell Torre, EC-EQB…' en la primera llamada; en las siguientes, el nombre de la estación se desvanece."
+   },
+   {
+    "text": "Los mensajes tienen un orden de prioridad: socorro, urgencia, radiogoniometría, seguridad de vuelo, meteorológicos y regularidad del vuelo.",
+    "visual": "Pila de seis sobres ordenándose por altura; el de socorro sube arriba con borde rojo, el de urgencia ámbar, y así hasta regularidad."
+   },
+   {
+    "text": "Seguridad de vuelo son los mensajes de movimiento y control y los de los operadores importantes para aviones en vuelo o a punto de salir, además de SIGMET, AIRMET y aeronotificaciones especiales.",
+    "visual": "Un controlador pasa una autorización; aparece un SIGMET en una pantalla."
+   },
+   {
+    "text": "Los meteorológicos son el METAR y el TAF. Y cuando el ATS te lo pida, colabora y notifica el tiempo que encuentras: puede ayudar a otros aviones. Los de regularidad tratan horarios, servicios y autorizaciones de sobrevuelo.",
+    "visual": "La Cessna en ruta transmitiendo 'base de nubes a dos mil quinientos pies'; el dato aparece en la pantalla de otro avión que se dirige hacia allí."
+   }
+  ]
+ },
+ {
+  "id": "090.01-radiogoniometria",
+  "lesson": "090.01",
+  "sections": [
+   5,
+   6
+  ],
+  "title": "Radiogoniometría y los códigos Q",
+  "fuente": "COMUNICACIONES VFR (Direction finding, Q code)",
+  "scenes": [
+   {
+    "text": "Estás perdido. Con solo tu radio VHF, una estación en tierra puede decirte hacia dónde volar. Es la radiogoniometría.",
+    "visual": "Cessna sobre terreno desconocido con mal tiempo alrededor; el piloto mira la carta sin reconocer nada."
+   },
+   {
+    "text": "Cuando transmites, la estación detecta de qué dirección viene tu señal. Con eso te da una marcación o un rumbo, sin radar.",
+    "visual": "Antena radiogoniométrica en tierra girando; tu transmisión llega como un haz y la antena marca su dirección."
+   },
+   {
+    "text": "QDM: el rumbo magnético a volar para llegar a la estación, sin viento. QDR: la marcación magnética del avión desde la estación.",
+    "visual": "Vista cenital: estación en el centro, avión al suroeste. Flecha del avión a la estación (QDM) y flecha opuesta desde la estación al avión (QDR), referidas al norte magnético."
+   },
+   {
+    "text": "QTE: la marcación verdadera del avión desde la estación. QUJ: el rumbo verdadero para ir a la estación.",
+    "visual": "Las mismas flechas, ahora referidas al norte verdadero (en otro color)."
+   },
+   {
+    "text": "El servicio: te piden que sigas en VFR y te dan el QNH; que mantengas rumbo y altitud y sincronices el direccional con la brújula. Te preguntan el tiempo, el combustible, tu equipo y tu IAS.",
+    "visual": "Cabina: el piloto ajusta el QNH y alinea el giróscopo direccional con la brújula mientras se escuchan las preguntas de la estación."
+   },
+   {
+    "text": "Luego te indican el sentido del viraje y el QDM, te piden que transmitas cada cierto tiempo, y te avisan cuando el aeródromo esté a la vista. Al final, te dicen que el servicio ha terminado.",
+    "visual": "La Cessna vira al QDM; cada transmisión hace que la antena corrija la flecha; aparece la pista en el horizonte."
+   }
+  ]
+ },
+ {
+  "id": "090.10-mayday",
+  "lesson": "090.10",
+  "sections": [
+   0,
+   1,
+   2,
+   5,
+   6
+  ],
+  "title": "Socorro: MAYDAY",
+  "fuente": "COMUNICACIONES VFR (Distress)",
+  "scenes": [
+   {
+    "text": "Peligro grave e inminente que necesita ayuda inmediata. Eso es una situación de socorro. Y se declara con una palabra: MAYDAY.",
+    "visual": "Cessna 152 en crucero; el motor tose y se para. La hélice se detiene en cámara lenta."
+   },
+   {
+    "text": "Pero primero, los tres principios: vuela el avión. Pon un rumbo adecuado para mantener una altitud segura. Y comunica.",
+    "visual": "Tres pasos encendiéndose en secuencia: manos al volante y velocidad de planeo; giro hacia un campo despejado; mano al PTT."
+   },
+   {
+    "text": "Se transmite en la frecuencia que estás usando: MAYDAY, MAYDAY, MAYDAY. Si no estás con ninguna dependencia, en ciento veintiuno coma cinco. Y con transpondedor, mejor antes de llamar, el código siete siete cero cero.",
+    "visual": "Radio en la frecuencia en uso; luego alternativa a 121.500. Primer plano del transpondedor tecleando 7700."
+   },
+   {
+    "text": "El mensaje, con lo que puedas: la estación llamada, tu identificación, el tipo de avión, la emergencia, tus intenciones, y tu posición, nivel y rumbo. Por ejemplo: Sabadell Torre, EC-EQB, Cessna ciento cincuenta y dos, fallo de motor, aterrizaje forzoso, cinco millas al norte del campo, dos mil pies, rumbo uno ocho cero.",
+    "visual": "Mientras se oye la llamada, cada elemento se coloca como un bloque en una línea que se arma: estación, matrícula, tipo, emergencia, intenciones, posición."
+   },
+   {
+    "text": "MAYDAY impone silencio de radio: nadie más transmite en esa frecuencia hasta que termine la emergencia. El socorro tiene prioridad absoluta.",
+    "visual": "Otros aviones en el circuito con sus micros en mute; la frecuencia queda limpia para la Cessna."
+   },
+   {
+    "text": "Y si dudas de la seguridad de tu avión, declara. Mejor una emergencia cancelada que una no declarada a tiempo.",
+    "visual": "La Cessna planea hacia un campo y aterriza; en la torre, el controlador ya tiene los servicios en marcha."
+   }
+  ]
+ },
+ {
+  "id": "090.10-pan-pan",
+  "lesson": "090.10",
+  "sections": [
+   3
+  ],
+  "title": "Urgencia: PAN PAN",
+  "fuente": "COMUNICACIONES VFR (Urgency)",
+  "scenes": [
+   {
+    "text": "No todo problema es un MAYDAY. Cuando la seguridad del avión o de alguien a bordo está afectada, pero no necesitas ayuda inmediata, es una urgencia.",
+    "visual": "Cabina de la Cessna 172: un pasajero se encuentra mal; el piloto lo mira y luego al horizonte."
+   },
+   {
+    "text": "Se declara con PAN PAN, tres veces, seguido del distintivo de la estación. Y se declara en cuanto detectas la situación.",
+    "visual": "Burbuja de radio con 'PAN PAN' repetido tres veces en ámbar."
+   },
+   {
+    "text": "En la frecuencia de la estación con la que estás. Si no consigues contacto, en ciento veintiuno coma cinco.",
+    "visual": "Radio en la frecuencia en uso; un intento fallido y cambio a 121.500."
+   },
+   {
+    "text": "El orden: PAN PAN tres veces, la estación llamada, tu identificación, el tipo, la naturaleza de la urgencia, tus intenciones, tu posición, nivel y rumbo, y cualquier otra información útil.",
+    "visual": "La llamada se construye bloque a bloque: 'PAN PAN ×3 · Sabadell Torre · EC-EQB · Cessna 172 · pasajero indispuesto · solicito aterrizaje inmediato · 8 millas al oeste, 2500 ft, rumbo 090'."
+   },
+   {
+    "text": "La gran diferencia con el socorro: la urgencia la puedes cancelar si la situación se resuelve.",
+    "visual": "El pasajero se recupera; burbuja de radio 'cancelo PAN PAN'; el ámbar se apaga."
+   }
+  ]
+ },
+ {
+  "id": "090.05-distintivos",
+  "lesson": "090.05",
+  "sections": [
+   1,
+   2
+  ],
+  "title": "Distintivos de llamada y cómo abreviarlos",
+  "fuente": "COMUNICACIONES VFR (Aircraft call signs)",
+  "scenes": [
+   {
+    "text": "Tu avión tiene un nombre en la radio: su distintivo de llamada. Y no lo puedes acortar cuando te apetezca.",
+    "visual": "Primer plano de la matrícula pintada en el fuselaje de la Cessna: EC-EQB."
+   },
+   {
+    "text": "Al establecer contacto, siempre el distintivo completo. Echo Charlie Echo Quebec Bravo.",
+    "visual": "Burbuja de radio con el alfabeto fonético apareciendo letra a letra sobre la matrícula."
+   },
+   {
+    "text": "El abreviado solo se usa cuando la comunicación ya está bien establecida y no hay riesgo de confusión con otro avión. Y el piloto nunca abrevia antes de que lo haga la estación de tierra.",
+    "visual": "Diálogo animado: la torre responde 'E-QB…' y solo entonces el piloto usa el abreviado."
+   },
+   {
+    "text": "Si el distintivo es la matrícula, el abreviado es al menos la primera letra y las dos o tres últimas. EC-EQB queda en Echo Quebec Bravo.",
+    "visual": "Las letras de la matrícula se apartan: queda la E inicial y las últimas 'QB'."
+   },
+   {
+    "text": "Una vez usado el abreviado, no se cambia de tipo de distintivo durante el vuelo, salvo temporalmente si te lo indica control por seguridad.",
+    "visual": "Dos aviones con matrículas parecidas en la misma frecuencia; la torre les pide el distintivo completo temporalmente para no confundirlos."
+   }
+  ]
+ },
+ {
+  "id": "090.06-colaciones",
+  "lesson": "090.06",
+  "sections": [
+   0,
+   1
+  ],
+  "title": "Qué hay que colacionar",
+  "fuente": "COMUNICACIONES VFR (Read-back requirements)",
+  "scenes": [
+   {
+    "text": "Colacionar es repetir lo que te han dicho para que quien te lo dijo compruebe que lo has entendido bien. Es la red de seguridad de la radio.",
+    "visual": "La torre transmite una instrucción; la Cessna la repite; en la torre, un ✓ se enciende al coincidir las dos."
+   },
+   {
+    "text": "Las autorizaciones de control se colacionan siempre. Y además, una lista concreta que hay que saberse.",
+    "visual": "Una lista se va escribiendo sobre la vista de la plataforma de Sabadell mientras ocurre cada escena."
+   },
+   {
+    "text": "Entrar en pista, mantener posición o esperar antes de la pista, las instrucciones de rodaje, la pista en uso, el reglaje altimétrico y el código de transpondedor.",
+    "visual": "Escenas cortas: la Cessna detenida en el punto de espera, rodando por la calle, el altímetro ajustando el QNH, el transpondedor tecleando un código."
+   },
+   {
+    "text": "Autorizado a aterrizar o a despegar, cruzar o rodar por la pista en uso, rumbo y velocidad, instrucciones de nivel, y cambios de frecuencia.",
+    "visual": "La Cessna despegando, otra cruzando la pista, un avión con rumbo y nivel asignados en un radar, y la radio cambiando de frecuencia."
+   },
+   {
+    "text": "Un ejemplo: Sabadell Torre te dice QNH uno cero uno cinco, pista tres uno, autorizado a despegar. Tu respuesta: QNH uno cero uno cinco, pista tres uno, autorizado a despegar, Echo Quebec Bravo.",
+    "visual": "Burbujas de radio torre y avión con los datos clave resaltados en los dos mensajes, coincidiendo."
+   },
+   {
+    "text": "Si la colación no es correcta, la estación la corrige. Por eso no vale un simple recibido para estas instrucciones.",
+    "visual": "Colación con '1051' en lugar de '1015': la torre responde con la corrección y el dato erróneo se tacha."
+   }
+  ]
+ },
+ {
+  "id": "090.09-fallo-comunicaciones",
+  "lesson": "090.09",
+  "sections": [
+   0,
+   1,
+   2
+  ],
+  "title": "Fallo de comunicaciones en VFR",
+  "fuente": "COMUNICACIONES VFR (Communication failure)",
+  "scenes": [
+   {
+    "text": "Llamas a la torre y no contesta nadie. Silencio. No es una emergencia en sí misma, pero hay un procedimiento.",
+    "visual": "Cabina de la Cessna en ruta hacia Sabadell: el piloto llama y solo oye silencio."
+   },
+   {
+    "text": "Primero, mantén el control del avión y evalúa. Luego descarta lo simple: equipo de radio, micrófono o cascos, un disyuntor saltado, el volumen. E intenta otra frecuencia.",
+    "visual": "Secuencia rápida de comprobaciones: mano sobre el volante, volumen arriba, clavija de cascos, disyuntor, cambio de frecuencia."
+   },
+   {
+    "text": "Si sigue sin funcionar, intenta contactar con otros aviones u otras estaciones. Si no, transmite tu mensaje dos veces en la frecuencia asignada, precedido de transmitiendo a ciegas.",
+    "visual": "Burbuja de radio repetida dos veces con 'transmitiendo a ciegas' mientras las ondas salen sin respuesta."
+   },
+   {
+    "text": "Si es el receptor lo que falla, transmite tus notificaciones a las horas o en los puntos previstos, diciendo transmitiendo a ciegas por fallo de receptor. Y selecciona en el transpondedor el siete seis cero cero.",
+    "visual": "Primer plano del transpondedor tecleando 7600; en la pantalla de un controlador aparece la etiqueta de fallo de comunicaciones."
+   },
+   {
+    "text": "En VMC: sigue en condiciones visuales, aterriza en el aeródromo adecuado más cercano y notifica tu llegada. En España, las cartas de aproximación visual publican el procedimiento de cada aeródromo.",
+    "visual": "Carta de aproximación visual de Sabadell en la rodilla, con el procedimiento de fallo de comunicaciones resaltado."
+   },
+   {
+    "text": "Si no hay procedimiento específico: entra por las rutas de la carta visual, a un máximo de mil pies sobre el terreno, a la vista de la torre esperando señales luminosas, apartado del tráfico, y nunca cruces las áreas de aproximación final.",
+    "visual": "Vista aérea del aeródromo: la Cessna entra por un punto de notificación, vuela a ≤1000 ft AGL con la torre a la vista y la final marcada como zona prohibida."
+   }
+  ]
+ },
+ {
+  "id": "090.09-senales-luminosas",
+  "lesson": "090.09",
+  "sections": [
+   5
+  ],
+  "title": "Las señales luminosas de la torre",
+  "fuente": "ampliación: lección 090.09 de la web (SERA, apéndice 1)",
+  "scenes": [
+   {
+    "text": "Te has quedado sin radio y estás a la vista de la torre. Ahora te van a hablar con una lámpara de colores. Y significa distinto en vuelo que en tierra.",
+    "visual": "Desde la Cessna en el circuito, la torre con su lámpara de señales apuntando al avión."
+   },
+   {
+    "text": "Verde fija: en vuelo, autorizado a aterrizar; en tierra, autorizado a despegar. Destellos verdes: en vuelo, regrese para aterrizar; en tierra, autorizado a rodar.",
+    "visual": "Pantalla dividida vuelo/tierra con la luz verde fija y luego en destellos; cada lado muestra la acción del avión."
+   },
+   {
+    "text": "Roja fija: en vuelo, ceda el paso y siga en el circuito; en tierra, alto. Destellos rojos: en vuelo, aeródromo peligroso, no aterrice; en tierra, apártese del área de aterrizaje.",
+    "visual": "Mismo formato con luz roja fija y en destellos."
+   },
+   {
+    "text": "Destellos blancos: en vuelo, aterrice y diríjase a la plataforma; en tierra, regrese al punto de partida.",
+    "visual": "Luz blanca en destellos con ambas escenas."
+   },
+   {
+    "text": "Para acusar recibo: en vuelo, de día, alabeando, salvo en base y final. De noche, encendiendo y apagando dos veces los faros o las luces de navegación.",
+    "visual": "La Cessna alabea suavemente sobre el aeródromo de día; de noche, sus faros parpadean dos veces."
+   },
+   {
+    "text": "Regla para recordar: el verde autoriza, el rojo detiene o niega, y el blanco te devuelve.",
+    "visual": "Tres luces en fila que se encienden con su palabra mínima: autoriza · detiene · devuelve."
+   }
+  ]
+ },
+ {
+  "id": "090.09-senales-tierra-sar",
+  "lesson": "090.09",
+  "sections": [
+   6,
+   7,
+   8
+  ],
+  "title": "Señales en tierra y códigos de búsqueda y salvamento",
+  "fuente": "señales.png · señales tierra aire.png",
+  "scenes": [
+   {
+    "text": "Sin radio, el suelo también te habla. En el área de señales del aeródromo, y en un rescate, con símbolos dibujados en el terreno.",
+    "visual": "Vista aérea del área de señales de un aeródromo junto a la torre; la cámara baja desde la Cessna en el circuito."
+   },
+   {
+    "text": "Un panel rojo con una cruz amarilla: prohibido aterrizar. Un panel rojo con una diagonal amarilla: precauciones especiales en la aproximación y el aterrizaje.",
+    "visual": "Los dos paneles aparecen en el área de señales con la Cessna reaccionando: se aleja en el primer caso; aproxima con cuidado en el segundo."
+   },
+   {
+    "text": "Una mancuerna blanca: aterrizar, despegar y rodar solo en pistas y calles de rodaje. Con barras negras en los círculos: aterrizar y despegar solo en pistas, pero las demás maniobras no.",
+    "visual": "Los dos símbolos de mancuerna en el área de señales; animación del avión siguiendo solo las superficies pavimentadas."
+   },
+   {
+    "text": "Una cruz: pistas o calles cerradas. Y una T: se aterriza y despega paralelo al brazo largo de la T y hacia el travesaño.",
+    "visual": "Una cruz blanca pintada sobre una pista; luego una T gigante y la Cessna alineándose con el brazo y aterrizando hacia el travesaño."
+   },
+   {
+    "text": "Si eres superviviente: una V, necesitamos ayuda. Una X, ayuda médica. Una N, no. Una Y, sí. Y una flecha, avanzamos en esa dirección.",
+    "visual": "Vista aérea de un claro en un bosque: los símbolos se trazan en el suelo con ramas, uno tras otro, vistos desde un avión de búsqueda."
+   },
+   {
+    "text": "Y los equipos de búsqueda: LLL, operación terminada. LL, hemos hallado a todos los ocupantes. XX, no podemos continuar, regresamos a la base. Y NN, no hemos hallado nada, seguimos buscando.",
+    "visual": "Los códigos de los equipos de rescate trazados en una pradera, vistos desde el aire, con un helicóptero de SAR sobrevolando."
+   }
+  ]
+ },
+ {
+  "id": "090.09-minimos-vmc",
+  "lesson": "090.09",
+  "sections": [
+   4
+  ],
+  "title": "Visibilidad y distancia a nubes en VFR",
+  "fuente": "reglas de vuelo.png",
+  "scenes": [
+   {
+    "text": "Para volar VFR no basta con ver el suelo. Hay unas visibilidades y distancias a las nubes mínimas, y dependen de la altitud y del espacio aéreo.",
+    "visual": "Cessna en vuelo con una esfera transparente a su alrededor que representa la visibilidad y un 'cajón' de distancias a las nubes."
+   },
+   {
+    "text": "A diez mil pies o más sobre el nivel del mar: ocho kilómetros de visibilidad, y mil quinientos metros de las nubes en horizontal y trescientos metros, mil pies, en vertical.",
+    "visual": "Corte vertical del espacio por capas: en la capa superior la esfera de visibilidad crece a 8 km y el cajón de nubes se dibuja 1500 m / 300 m."
+   },
+   {
+    "text": "Por debajo de diez mil pies, y por encima de tres mil o de mil sobre el terreno, el mayor de los dos: cinco kilómetros, con las mismas distancias a nubes.",
+    "visual": "La Cessna baja a la capa intermedia; la esfera se reduce a 5 km; el cajón se mantiene."
+   },
+   {
+    "text": "A tres mil pies o por debajo, o a mil sobre el terreno, el mayor: en espacios B, C, D y E, cinco kilómetros y las mismas distancias. En F y G, cinco kilómetros, libre de nubes y con la superficie a la vista, salvo las excepciones previstas.",
+    "visual": "La Cessna baja a la capa inferior; la pantalla se divide: en clase D, cajón de nubes completo; en clase G, el cajón desaparece y aparece un enlace visual con el suelo."
+   },
+   {
+    "text": "Para el examen y para la vida real: cuanto más bajo y en espacio no controlado, más se relajan los mínimos, pero nunca dejas de necesitar ver el suelo y apartarte de las nubes.",
+    "visual": "Vista amplia final con las tres capas del corte animadas a la vez y la Cessna descendiendo de una a otra."
+   }
+  ]
+ }
+]

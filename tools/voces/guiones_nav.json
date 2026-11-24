@@ -1,0 +1,504 @@
+[
+ {
+  "id": "060.01-sol-estaciones",
+  "lesson": "060.01",
+  "sections": [
+   0,
+   1,
+   2
+  ],
+  "title": "El Sol, las estaciones y tus vuelos VFR",
+  "fuente": "gnav dreamair (3-6)",
+  "scenes": [
+   {
+    "text": "El Sol no se mueve por el cielo. Eres tú, sobre una Tierra que gira, da vueltas al Sol y está inclinada. Y eso decide cuántas horas de luz tienes para volar.",
+    "visual": "Plano desde el espacio: la Tierra girando sobre su eje inclinado mientras recorre su órbita. La cámara baja hasta la plataforma de Sabadell, donde el sol sale por el este."
+   },
+   {
+    "text": "Cada día, el Sol sale por el este, sube, alcanza su altura máxima al mediodía solar y se pone por el oeste. Es un movimiento aparente, por la rotación de la Tierra.",
+    "visual": "Timelapse sobre la pista: arco del sol de este a oeste con su punto más alto marcado al mediodía; la sombra de una Cessna gira y se acorta."
+   },
+   {
+    "text": "Las estaciones no se deben a estar más cerca o más lejos del Sol, sino a la inclinación del eje, unos veintitrés grados y medio. Durante el año, un hemisferio recibe el Sol más de frente que el otro.",
+    "visual": "Órbita vista desde arriba: el eje siempre inclinado hacia el mismo punto del espacio; en junio el hemisferio norte mira al sol y en diciembre el sur. Rayos más verticales sobre el hemisferio de verano."
+   },
+   {
+    "text": "En verano, el Sol hace un arco más alto y más largo: días largos. En invierno, más bajo y más corto. En el solsticio de verano, el día más largo; en el de invierno, el más corto; y en los equinoccios, día y noche casi iguales.",
+    "visual": "Cúpula celeste sobre el aeródromo con tres arcos superpuestos (solsticio de verano, equinoccio, solsticio de invierno) y relojes de horas de luz junto a cada uno."
+   },
+   {
+    "text": "Cuanto más lejos del ecuador, más cambia. En Europa se nota mucho; cerca de los polos puede haber días larguísimos o muy cortos.",
+    "visual": "El globo con tres observadores (ecuador, Europa, cerca del polo) y sus arcos solares: casi igual todo el año, variación notable y variación extrema."
+   },
+   {
+    "text": "Para tu vuelo: horas de salida y puesta, duración del día, y cuidado con el sol bajo. Por la mañana deslumbra hacia el este y por la tarde hacia el oeste. Planifica la hora del vuelo y el sentido de la aproximación.",
+    "visual": "Cabina de la Cessna en final al atardecer con rumbo oeste: el sol bajo de frente borra la pista con el reflejo. El piloto baja la visera; plano alternativo con rumbo este y pista nítida."
+   }
+  ]
+ },
+ {
+  "id": "060.01-tierra-coordenadas",
+  "lesson": "060.01",
+  "sections": [
+   3,
+   5,
+   6,
+   7
+  ],
+  "title": "La forma de la Tierra, latitud y longitud",
+  "fuente": "gnav dreamair (2, 7-9)",
+  "scenes": [
+   {
+    "text": "Para navegar, la Tierra se considera casi una esfera. Casi: está un poco achatada por los polos.",
+    "visual": "Globo 3D que se achata ligeramente; dos circunferencias se dibujan: ecuatorial y polar."
+   },
+   {
+    "text": "La circunferencia en el ecuador mide cuarenta mil setenta y cinco kilómetros, unas veintiún mil seiscientas cuarenta millas náuticas. Por los polos, cuarenta mil ocho kilómetros, unas veintiún mil seiscientas.",
+    "visual": "Un avión recorre el ecuador dejando una estela con un contador (40 075 km ≈ 21 640 NM) y luego un meridiano completo (40 008 km ≈ 21 600 NM)."
+   },
+   {
+    "text": "La dividen el ecuador, los polos, los meridianos, que van de polo a polo, y los paralelos, círculos paralelos al ecuador.",
+    "visual": "Sobre el globo se dibujan el eje, el ecuador, varios meridianos y paralelos, cada uno con su color."
+   },
+   {
+    "text": "La latitud es la distancia angular al norte o al sur del ecuador, de cero a noventa grados. Si vas de cuarenta norte a cuarenta y seis norte, la diferencia de latitud es de seis grados hacia el norte.",
+    "visual": "Corte del globo con un ángulo desde el centro hasta un punto: la latitud. Un avión vuela de 40°N a 46°N a lo largo de un meridiano y el arco de 6° se ilumina."
+   },
+   {
+    "text": "La longitud es la distancia angular al este o al oeste del meridiano de Greenwich, de cero a ciento ochenta grados. De tres grados este a diez grados este, una diferencia de longitud de siete grados hacia el este.",
+    "visual": "Vista desde el polo: el meridiano de Greenwich como origen y el ángulo hacia el este. Un avión vuela de 003°E a 010°E sobre un paralelo; arco de 7° iluminado."
+   },
+   {
+    "text": "Así cualquier punto queda definido por dos números. Sabadell, por ejemplo, está en torno a cuarenta y un grados y medio norte y dos grados este.",
+    "visual": "La cámara cae del globo a Cataluña; dos líneas se cruzan sobre el aeródromo de Sabadell con sus coordenadas aproximadas."
+   }
+  ]
+ },
+ {
+  "id": "060.03-unidades-minutos",
+  "lesson": "060.03",
+  "sections": [
+   0,
+   1
+  ],
+  "title": "Millas, pies y por qué un minuto de latitud es una milla",
+  "fuente": "gnav dreamair (11-12)",
+  "scenes": [
+   {
+    "text": "En aviación las distancias van en millas náuticas y las alturas en pies. No es un capricho: la milla náutica sale de la propia Tierra.",
+    "visual": "Carta VFR desplegada en la mesa de briefing; regla de navegación con escala en NM sobre la ruta."
+   },
+   {
+    "text": "Una milla náutica son mil ochocientos cincuenta y dos metros. Una milla terrestre, la que verás en algunas visibilidades de Estados Unidos, son unos mil seiscientos diez metros. Y un metro, tres coma veintiocho pies.",
+    "visual": "Barras comparativas que crecen en pantalla: 1 NM = 1,852 km; 1 SM ≈ 1,61 km; 1 m = 3,28 ft, junto a una Cessna como escala."
+   },
+   {
+    "text": "La milla náutica se usa para distancias en ruta, alcances y visibilidad. Los pies, para altura y altitud. Los metros aparecen en algunas elevaciones, en el RVR o en datos técnicos.",
+    "visual": "Iconos animados: ruta con millas, altímetro en pies, una pista con el RVR en metros."
+   },
+   {
+    "text": "Lo bonito: un minuto de latitud es una milla náutica. Un grado son sesenta millas. Subir por un meridiano un grado es recorrer sesenta millas.",
+    "visual": "Corte del globo: un arco de meridiano dividido en 60 minutos; un avión recorre un minuto y un contador marca 1 NM, luego un grado entero y 60 NM."
+   },
+   {
+    "text": "Con la longitud no pasa. Un minuto de longitud solo vale una milla en el ecuador. Al subir de latitud los meridianos se juntan y el minuto de longitud vale cada vez menos.",
+    "visual": "Vista del globo con meridianos convergiendo; dos aviones separados un minuto de longitud: uno en el ecuador (1 NM) y otro en 60°N mucho más juntos."
+   },
+   {
+    "text": "Por eso en la carta las distancias se miden en la escala de latitud, la de los lados, nunca en la de arriba y abajo.",
+    "visual": "Mano con un compás de puntas midiendo una ruta y trasladándola al margen lateral de la carta (escala de latitud). La escala superior aparece tachada."
+   }
+  ]
+ },
+ {
+  "id": "060.03-tres-nortes-tvmdc",
+  "lesson": "060.03",
+  "sections": [
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "title": "Norte verdadero, magnético y de brújula",
+  "fuente": "gnav dreamair (14-15, 25)",
+  "scenes": [
+   {
+    "text": "Tu carta, tu brújula y tu avión no apuntan al mismo norte. Hay tres, y hay que saber pasar de uno a otro.",
+    "visual": "Cabina de la Cessna: brújula marcando 091. Carta en las rodillas con la derrota trazada en 090. Signo de interrogación entre ambos."
+   },
+   {
+    "text": "El norte verdadero es el geográfico, el de los meridianos de la carta. El magnético es hacia donde apunta una brújula sin errores. Y el de brújula es lo que marca la brújula de tu avión.",
+    "visual": "Globo con tres flechas: hacia el polo norte geográfico, hacia el polo magnético desplazado y una tercera ligeramente desviada en la cabina."
+   },
+   {
+    "text": "La variación es el ángulo entre el verdadero y el magnético. Puede ser este u oeste, cambia según la zona, y las isógonas unen los puntos de igual variación.",
+    "visual": "Mapa de Europa con isógonas curvas dibujándose; zoom a Cataluña con el valor de variación de la carta."
+   },
+   {
+    "text": "El desvío lo provoca el propio avión: equipos eléctricos, estructura metálica, radios. Cambia con el rumbo, y por eso hay una tablilla de desvíos junto a la brújula.",
+    "visual": "Interior del panel: campos magnéticos de la radio y el cableado dibujados como líneas que tuercen la aguja. Primer plano de la tablilla 'For / Steer' en la cabina."
+   },
+   {
+    "text": "La cadena: verdadero, aplicas variación, magnético; aplicas desvío, brújula. Con variación oeste se suma. Rumbo verdadero cero noventa, variación dos oeste: magnético cero noventa y dos. Con desvío de un grado este, se resta: brújula cero noventa y uno.",
+    "visual": "Tres anillos de rosa náutica encadenados (T → M → C). 090 pasa por el filtro '2° W' y sale 092; pasa por '1° E' y sale 091. Rótulo mínimo: TVMDC."
+   },
+   {
+    "text": "Y el rumbo, verdadero, magnético o de brújula, es siempre el ángulo entre ese norte y el eje longitudinal del avión: hacia dónde apunta el morro.",
+    "visual": "Vista cenital del avión con su eje longitudinal y los tres nortes; los tres ángulos se dibujan desde cada norte hasta el morro."
+   }
+  ]
+ },
+ {
+  "id": "060.03-ortodromica-loxodromica",
+  "lesson": "060.03",
+  "sections": [
+   7
+  ],
+  "title": "Ortodrómica, círculo menor y loxodrómica",
+  "fuente": "gnav dreamair (17-18)",
+  "scenes": [
+   {
+    "text": "De Vancouver a Moscú, el camino más corto no parece una línea recta en un mapa normal. Pasa cerca del Ártico.",
+    "visual": "Mapa plano: dos rutas de Vancouver (49N 127W) a Moscú (56N 037E): una recta horizontal (roja) y una curva que sube hacia el norte (azul)."
+   },
+   {
+    "text": "Un círculo máximo, la ortodrómica, es cualquier círculo cuyo plano pasa por el centro de la Tierra. Es la distancia más corta entre dos puntos de la superficie. El ecuador y cada meridiano con su opuesto son círculos máximos.",
+    "visual": "Globo 3D cortado por un plano que pasa por el centro: la intersección es un círculo máximo que une las dos ciudades. El ecuador y un meridiano se iluminan también."
+   },
+   {
+    "text": "Un círculo menor es uno cuyo plano no pasa por el centro. Todos los paralelos, salvo el ecuador, lo son.",
+    "visual": "Planos paralelos al ecuador cortando el globo y dejando paralelos como círculos más pequeños."
+   },
+   {
+    "text": "La loxodrómica corta todos los meridianos con el mismo ángulo. Su ventaja: rumbo constante. Su pega: normalmente no es la distancia más corta.",
+    "visual": "Un avión sobre el globo mantiene la brújula fija; su traza corta cada meridiano con el mismo ángulo dibujado, formando una espiral suave."
+   },
+   {
+    "text": "Las dos rutas, juntas: la ortodrómica más corta pero con rumbo cambiante, la loxodrómica más larga pero con rumbo fijo.",
+    "visual": "Las dos rutas del ejemplo animadas en el globo con dos aviones: el de la ortodrómica llega antes; su brújula va girando, la del otro no cambia."
+   }
+  ]
+ },
+ {
+  "id": "060.05-mercator",
+  "lesson": "060.05",
+  "sections": [
+   0,
+   1,
+   2
+  ],
+  "title": "Proyección Mercator directa",
+  "fuente": "gnav dreamair (19-22); proyecciones.png",
+  "scenes": [
+   {
+    "text": "Aplanar una esfera sin deformarla es imposible. Cada proyección elige qué conserva y qué sacrifica.",
+    "visual": "Una piel de naranja con el mapa del mundo que se intenta aplanar y se rasga. Tres familias de proyección aparecen: plana, cilíndrica y cónica."
+   },
+   {
+    "text": "La Mercator directa es cilíndrica: imagina un cilindro tangente al ecuador. Y es conforme: conserva los ángulos y las formas pequeñas.",
+    "visual": "Un cilindro transparente envuelve el globo tocando el ecuador; la superficie del globo se proyecta y el cilindro se desenrolla en un mapa plano."
+   },
+   {
+    "text": "Los meridianos son rectas verticales y paralelas. Los paralelos, rectas horizontales, y se cortan a noventa grados. Pero los paralelos se separan cada vez más hacia los polos.",
+    "visual": "La cuadrícula del mapa se dibuja: meridianos verticales equiespaciados; paralelos cuya separación crece hacia arriba y abajo."
+   },
+   {
+    "text": "Su gran ventaja: la loxodrómica es una línea recta. Mantener un rumbo constante es tan fácil como trazar con la regla.",
+    "visual": "Una regla traza una recta entre dos puntos; un avión sobre el globo en paralelo mantiene rumbo fijo siguiendo esa misma línea."
+   },
+   {
+    "text": "En cambio, la ortodrómica aparece curva, salvo en el ecuador o en un meridiano. Y la escala aumenta al alejarse del ecuador: cerca de los polos todo se deforma muchísimo y los polos no se pueden representar.",
+    "visual": "Ruta ortodrómica curvándose hacia el polo en el mapa. Groenlandia se infla hasta parecer del tamaño de África y luego se compara con su tamaño real en el globo."
+   },
+   {
+    "text": "Resumen Mercator: cilíndrica y conforme, meridianos paralelos, loxodrómica recta y escala que crece hacia los polos.",
+    "visual": "El mapa Mercator se enrolla de nuevo en el cilindro alrededor del globo."
+   }
+  ]
+ },
+ {
+  "id": "060.05-lambert-escala",
+  "lesson": "060.05",
+  "sections": [
+   3,
+   4,
+   7
+  ],
+  "title": "Lambert cónica conforme y la escala de la carta",
+  "fuente": "gnav dreamair (23-25, 33)",
+  "scenes": [
+   {
+    "text": "Tu carta OACI uno a quinientos mil no es Mercator. Es una Lambert, y por eso las rutas de avión se trazan tan bien en ella.",
+    "visual": "Carta aeronáutica de Cataluña sobre la mesa; la cámara se acerca a su cuadrícula y se ve que los meridianos no son paralelos."
+   },
+   {
+    "text": "La Lambert cónica conforme apoya un cono sobre la Tierra. Conserva ángulos y formas pequeñas. Los meridianos son rectas que convergen hacia el polo, y los paralelos, arcos de circunferencia.",
+    "visual": "Un cono translúcido se apoya en el globo sobre latitudes medias; se proyecta y se desenrolla en un abanico con meridianos convergentes y paralelos en arco."
+   },
+   {
+    "text": "Es muy útil en latitudes medias, con poca deformación dentro de una región. La escala es más exacta cerca de los paralelos estándar. Por eso se usa tanto en cartas aeronáuticas.",
+    "visual": "El abanico con dos paralelos estándar resaltados; una franja verde de deformación mínima entre ellos que cubre la península."
+   },
+   {
+    "text": "En ella la ortodrómica sale casi recta o con una curvatura ligera, y la loxodrómica suele ser curva. Al revés que en la Mercator.",
+    "visual": "Pantalla dividida Mercator/Lambert con las mismas dos rutas: en Mercator la RL recta y la GC curva; en Lambert la GC casi recta y la RL curva."
+   },
+   {
+    "text": "La escala te dice cuánto representa la carta. Uno a quinientos mil significa que una unidad en la carta son quinientas mil en la realidad.",
+    "visual": "Un centímetro en la carta se 'despliega' sobre el terreno real convirtiéndose en 5 km."
+   },
+   {
+    "text": "Ejemplo de examen: veinticuatro centímetros en una carta uno a quinientos mil. Son doce millones de centímetros, ciento veinte kilómetros. Dividido entre uno coma ochocientos cincuenta y dos, sesenta y cuatro coma ocho millas náuticas.",
+    "visual": "Regla midiendo 24 cm sobre la carta; la cifra se transforma paso a paso: 24 × 500 000 = 12 000 000 cm → 120 km → ÷ 1,852 → 64,8 NM."
+   }
+  ]
+ },
+ {
+  "id": "060.04-magnetismo",
+  "lesson": "060.04",
+  "sections": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "title": "Magnetismo terrestre, variación y el magnetismo del avión",
+  "fuente": "gnav dreamair (27-30)",
+  "scenes": [
+   {
+    "text": "La Tierra se comporta como si tuviera un gran imán dentro. Gracias a él funciona tu brújula. Pero ese imán no está quieto ni alineado con el eje.",
+    "visual": "Globo 3D transparente con un imán inclinado en su interior; líneas de campo saliendo de un polo y entrando en el otro."
+   },
+   {
+    "text": "El norte verdadero es fijo, el de los mapas. El magnético es hacia donde apunta la brújula, no coincide con el geográfico y se mueve un poco cada año.",
+    "visual": "Vista del Ártico: el polo geográfico fijo y el magnético desplazándose a lo largo de los años con una estela de puntos."
+   },
+   {
+    "text": "La fuerza magnética se descompone en una componente horizontal, la que hace girar la aguja, y otra vertical, que la inclina. Cerca del ecuador magnético domina la horizontal; cerca de los polos, la vertical.",
+    "visual": "Una aguja de brújula viajando del ecuador magnético al polo: el vector se descompone; en el ecuador la componente horizontal es grande y la aguja se mueve libre; cerca del polo la vertical tira de ella hacia abajo."
+   },
+   {
+    "text": "La variación cambia de un lugar a otro y también con los años. Por eso la carta indica la variación de un año y su cambio anual, este u oeste.",
+    "visual": "Primer plano de la leyenda de una carta con 'Variation 2°W (2025)' y 'Annual change'; la línea isógona se desplaza ligeramente al pasar los años."
+   },
+   {
+    "text": "Y tu avión tiene su propio magnetismo, permanente e inducido, por el metal y los equipos eléctricos. Se suma al de la Tierra y altera la brújula.",
+    "visual": "Cabina de la Cessna con campos magnéticos dibujados alrededor del motor, la radio y el cableado, que deforman las líneas terrestres cerca de la brújula."
+   },
+   {
+    "text": "Así que mantén lejos de la brújula móviles, auriculares con imán, herramientas, linternas magnéticas o relojes. Un móvil en la guantera puede moverte la aguja varios grados.",
+    "visual": "Un móvil se apoya junto a la brújula y la aguja gira; al retirarlo, vuelve. Iconos de objetos a evitar que se alejan de la brújula."
+   }
+  ]
+ },
+ {
+  "id": "060.06-velocidades-viento",
+  "lesson": "060.06",
+  "sections": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "title": "TAS, GS, rumbo, derrota, deriva y WCA",
+  "fuente": "gnav dreamair (35-36)",
+  "scenes": [
+   {
+    "text": "Pones el morro hacia tu destino, y el viento te lleva de lado. Para llegar, tienes que apuntar a otro sitio.",
+    "visual": "Vista cenital: Cessna apuntando con el morro a un punto de notificación; su traza sobre el suelo se desvía con el viento y no llega."
+   },
+   {
+    "text": "La IAS es la del anemómetro. La CAS la corrige por errores de instrumento y posición. La TAS es la velocidad real respecto a la masa de aire, y para la misma IAS aumenta con la altitud.",
+    "visual": "Escalera IAS → CAS → TAS con el anemómetro al lado; el avión sube y la TAS crece con la misma IAS."
+   },
+   {
+    "text": "La velocidad respecto al suelo, la GS, depende de la TAS y del viento. Con viento de cara, menos GS. De cola, más.",
+    "visual": "Pantalla dividida: misma Cessna con TAS 100 kt; con viento de cara la sombra en el suelo avanza más lenta (GS 80), con viento de cola más rápida (GS 120)."
+   },
+   {
+    "text": "El rumbo es hacia donde apunta el morro. La derrota, el camino que haces sobre el suelo. La deriva es el ángulo entre los dos, el efecto del viento.",
+    "visual": "Vista cenital con dos líneas desde el avión: eje del morro (heading) y traza sobre el suelo (track); el ángulo entre ellas se rellena: drift."
+   },
+   {
+    "text": "El ángulo de corrección de viento es lo que tú aplicas al rumbo para mantener la derrota deseada. Deriva es el efecto; WCA, tu corrección.",
+    "visual": "El avión gira el morro hacia el viento un WCA; ahora la traza coincide con la línea de la carta y llega al punto de notificación."
+   },
+   {
+    "text": "Todo junto forma el triángulo de velocidades: el vector aire con rumbo y TAS, el vector viento, y el resultado, derrota y GS.",
+    "visual": "Los tres vectores se dibujan encadenados sobre el mapa formando el triángulo, con sus etiquetas mínimas (HDG/TAS, W/V, TR/GS)."
+   }
+  ]
+ },
+ {
+  "id": "060.06-eta",
+  "lesson": "060.06",
+  "sections": [
+   7
+  ],
+  "title": "Calcular la ETA",
+  "fuente": "gnav dreamair (36)",
+  "scenes": [
+   {
+    "text": "La ETA es la hora estimada de llegada. Y se calcula con dos datos: la distancia y la velocidad respecto al suelo.",
+    "visual": "Cabina de la Cessna en ruta: rodilla con el log de navegación; columna 'ETA' vacía."
+   },
+   {
+    "text": "Tiempo igual a distancia entre GS. Ojo: con la GS, no con la TAS, porque lo que importa es lo que avanzas sobre el suelo.",
+    "visual": "Fórmula t = d / GS escrita a mano en el log; una TAS tachada al lado."
+   },
+   {
+    "text": "Ejemplo: sesenta millas hasta el siguiente punto, con una GS de noventa nudos. Sesenta entre noventa, dos tercios de hora: cuarenta minutos.",
+    "visual": "Mapa con el tramo de 60 NM; un reloj de arena animado con 40 min mientras una Cessna recorre el tramo."
+   },
+   {
+    "text": "Si pasas por el punto anterior a las diez y quince UTC, tu ETA es las diez y cincuenta y cinco UTC.",
+    "visual": "Reloj UTC 10:15 en el punto de salida; 40 minutos pasan rápido y el reloj marca 10:55 al llegar. Se escribe en el log."
+   },
+   {
+    "text": "Y en vuelo, compruébalo: si llegas al punto antes o después de lo previsto, el viento real no es el del pronóstico. Recalcula la GS y actualiza la ETA.",
+    "visual": "La Cessna llega al punto a 10:58; el piloto tacha la ETA, calcula la nueva GS y corrige la siguiente."
+   }
+  ]
+ },
+ {
+  "id": "060.02-utc-lmt-husos",
+  "lesson": "060.02",
+  "sections": [
+   0,
+   1,
+   2,
+   4,
+   6
+  ],
+  "title": "Hora aparente, UTC, hora media local y husos horarios",
+  "fuente": "gnav dreamair (37-40)",
+  "scenes": [
+   {
+    "text": "Un plan de vuelo, un METAR o un NOTAM: todos van en la misma hora en todo el mundo. Sin eso, la aviación sería un caos de husos horarios.",
+    "visual": "Montaje rápido de un METAR, un plan de vuelo y un NOTAM con la hora 'Z' resaltada, sobre un globo con relojes de distintas ciudades."
+   },
+   {
+    "text": "La hora aparente se basa en la posición real del Sol: mediodía cuando está más alto. Pero no es uniforme durante el año, así que no sirve como referencia práctica.",
+    "visual": "Reloj de sol en el aeródromo; su sombra marca el mediodía aparente, que se adelanta y retrasa respecto a un reloj normal a lo largo de un timelapse anual."
+   },
+   {
+    "text": "En aviación se usa el UTC, el tiempo universal coordinado, basado en relojes atómicos y más preciso que el antiguo GMT, que era la hora media solar de Greenwich.",
+    "visual": "Reloj atómico estilizado con 'UTC'; al lado, el observatorio de Greenwich con 'GMT' en tono histórico."
+   },
+   {
+    "text": "La hora media local depende de la longitud. La Tierra gira quince grados por hora: un grado son cuatro minutos. Al este, la hora local va adelantada; al oeste, retrasada. Un lugar a dos grados este va ocho minutos por delante del UTC.",
+    "visual": "Globo girando con una cuadrícula de meridianos cada 15°; un reloj por meridiano. Zoom a 2°E: 2 × 4 = 8 min por delante de Greenwich."
+   },
+   {
+    "text": "La Tierra se divide en veinticuatro husos de unos quince grados, de una hora cada uno. Pero las horas oficiales se adaptan a razones políticas: en invierno España usa UTC más uno, y en verano UTC más dos.",
+    "visual": "Mapa del mundo con los husos horarios rectos y luego deformados por las fronteras. España se ilumina con UTC+1 / UTC+2."
+   },
+   {
+    "text": "Y cerca del meridiano ciento ochenta está la línea de cambio de fecha: al cruzarla, se suma o se resta un día. No es recta, porque se adapta a fronteras y territorios.",
+    "visual": "Vista del Pacífico: la línea zigzagueante; un avión la cruza y el calendario de su cabina salta un día adelante, otro avión al revés retrocede."
+   }
+  ]
+ },
+ {
+  "id": "060.02-orto-ocaso-crepusculo",
+  "lesson": "060.02",
+  "sections": [
+   7
+  ],
+  "title": "Orto, ocaso y crepúsculo civil",
+  "fuente": "gnav dreamair (41)",
+  "scenes": [
+   {
+    "text": "La luz del día no se acaba en el momento en que se pone el sol. Saber exactamente cuándo empieza y cuándo termina importa para el VFR.",
+    "visual": "Timelapse de puesta de sol desde la plataforma de Sabadell con la Cessna en primer plano; el cielo pasa de dorado a azul."
+   },
+   {
+    "text": "El orto, o salida del sol, es cuando el borde superior del Sol aparece en el horizonte. El ocaso, cuando el borde superior desaparece.",
+    "visual": "Primer plano del horizonte con el disco solar: una línea marca el borde superior al aparecer y al desaparecer."
+   },
+   {
+    "text": "El crepúsculo civil es el periodo antes del orto y después del ocaso en el que todavía hay luz suficiente para ciertas actividades visuales. Termina cuando el centro del Sol está unos seis grados por debajo del horizonte.",
+    "visual": "Corte lateral con el horizonte y el sol bajando; un ángulo de 6° desde el horizonte hasta el centro del sol; la franja de crepúsculo se colorea."
+   },
+   {
+    "text": "Consulta siempre las horas de orto y ocaso del día, y vuelve con margen. Una aproximación al anochecer, con el sol bajo y la luz cayendo, es más difícil de lo que parece.",
+    "visual": "Cessna aterrizando al final del crepúsculo civil con la pista apenas iluminada; reloj UTC en una esquina cerca de la hora límite."
+   }
+  ]
+ },
+ {
+  "id": "060.07-cr3-calculo",
+  "lesson": "060.07",
+  "sections": [
+   2,
+   3,
+   4
+  ],
+  "title": "El CR3: velocidad, tiempo, distancia y combustible",
+  "fuente": "ampliación: lección 060.07 de la web (las diapositivas solo nombran el CR3)",
+  "scenes": [
+   {
+    "text": "El CR3 es una regla de cálculo circular. Con una sola posición resuelve una tabla entera de tiempos o de consumos.",
+    "visual": "Primer plano del lado de cálculo de un computador circular sobre la mesa de briefing; la escala interior gira suavemente."
+   },
+   {
+    "text": "Tiene dos escalas enfrentadas: la exterior, fija, y la interior, que gira. Si pones una pareja de valores enfrentados, todas las demás parejas guardan la misma proporción.",
+    "visual": "Animación de las dos escalas: se alinea un par de valores y se iluminan otros pares que mantienen la misma relación."
+   },
+   {
+    "text": "En la interior hay una marca especial en el sesenta, el índice de una hora. Casi todo en navegación es algo por hora, así que se empieza poniendo ese índice frente a la velocidad o el consumo.",
+    "visual": "La flecha/triángulo del 60 se ilumina en la escala interior y gira hasta quedar frente a un valor de la exterior."
+   },
+   {
+    "text": "Ejemplo: GS de noventa nudos. Pones el sesenta frente al noventa. Frente a cuarenta minutos en la interior, lees en la exterior sesenta millas.",
+    "visual": "El índice 60 se coloca bajo el 90 de la exterior; un cursor se desplaza al 40 de la interior y señala el 60 de la exterior. Un avión recorre 60 NM en 40 min en un mapa mínimo."
+   },
+   {
+    "text": "Con el combustible es igual: pones el sesenta frente al consumo por hora, y frente al tiempo de vuelo lees lo que vas a gastar.",
+    "visual": "El índice 60 se coloca frente a un consumo horario; frente al tiempo de vuelo aparece la cantidad de combustible, junto a un depósito que se vacía."
+   },
+   {
+    "text": "Y una costumbre que te salvará en el examen: estima el resultado de cabeza antes. Las marcas no valen lo mismo en toda la escala, y es fácil leer diez veces de más.",
+    "visual": "Bocadillo con una estimación rápida ('~60 NM'); el resultado del CR3 coincide. Un resultado erróneo de '600' aparece tachado."
+   }
+  ]
+ },
+ {
+  "id": "060.07-cr3-viento",
+  "lesson": "060.07",
+  "sections": [
+   9,
+   10
+  ],
+  "title": "El CR3: hallar rumbo y GS con el lado del viento",
+  "fuente": "ampliación: lección 060.07 de la web (las diapositivas solo nombran el CR3)",
+  "scenes": [
+   {
+    "text": "Has medido la derrota en la carta, tienes la TAS y el viento previsto. Necesitas el rumbo y la GS para el log. Eso lo resuelve el lado del viento.",
+    "visual": "Mesa de briefing con la carta, la derrota trazada a 220° y el pronóstico de viento 270/25. El computador gira a su lado del viento."
+   },
+   {
+    "text": "Tiene un disco transparente que gira con una rosa de trescientos sesenta grados, un índice arriba, escalas de deriva a los lados y una regla con arcos de velocidad y líneas de deriva.",
+    "visual": "Vista explosionada del lado del viento: disco, índice, escala de deriva y regla deslizante, cada pieza encajando en su sitio."
+   },
+   {
+    "text": "Ejemplo de la web: derrota doscientos veinte, TAS cien nudos, viento de dos setenta a veinticinco. Primero marcas el viento en el disco.",
+    "visual": "El disco gira hasta 270 bajo el índice y aparece una marca de viento a 25 kt del punto central."
+   },
+   {
+    "text": "Luego llevas la regla a la TAS, pones la derrota bajo el índice y ajustas hasta que la deriva que lees coincide con la que aplicas. Salen unos once grados de corrección hacia la derecha.",
+    "visual": "La regla se desliza al arco de 100; el disco gira a 220 y se ajusta en pequeños pasos hasta que la marca cae sobre la línea de 11°."
+   },
+   {
+    "text": "Rumbo: doscientos veinte más once, doscientos treinta y uno. Y la GS, en el arco que pasa por la marca: unos ochenta y dos nudos.",
+    "visual": "Lectura final con lupa: rumbo 231° bajo el índice, GS 82 kt en el arco. Corte a la Cessna en vuelo con el morro desviado hacia el viento y la traza siguiendo la línea de 220°."
+   },
+   {
+    "text": "Comprobación rápida: viento de la derecha, corrección a la derecha. Viento con componente de cara, GS menor que la TAS. Si no cuadra, revisa.",
+    "visual": "Vista cenital del triángulo de velocidades del ejemplo dibujado a escala, con los dos chequeos marcados con ✓."
+   }
+  ]
+ }
+]
