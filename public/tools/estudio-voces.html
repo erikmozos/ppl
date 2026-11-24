@@ -38,7 +38,7 @@ audio{height:32px;max-width:260px}
 details{grid-column:1/-1}summary{cursor:pointer;color:var(--mute);font-size:13px}
 details textarea{width:100%;min-height:180px;margin-top:8px;line-height:1.5}
 .badge{font-size:12px;padding:2px 8px;border-radius:20px;background:#1d3962;color:var(--mute);white-space:nowrap}
-.badge.ok{background:rgba(63,214,181,.12);color:var(--ok)}.badge.edit{background:rgba(255,194,61,.12);color:var(--amber)}
+.badge.err{background:rgba(255,106,77,.12);color:var(--err);white-space:normal;max-width:320px}.badge.ok{background:rgba(63,214,181,.12);color:var(--ok)}.badge.edit{background:rgba(255,194,61,.12);color:var(--amber)}
 label.ghost{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:10px;min-height:34px;padding:4px 10px;font-size:13px}
 @media(max-width:640px){.vid{grid-template-columns:1fr}.acts{justify-content:flex-start}audio{max-width:100%}}
 @media(prefers-reduced-motion:reduce){.meter i{transition:none}}
@@ -110,9 +110,24 @@ async function tts(text){
   if(!p)throw new Error('Gemini no devolvió audio ('+((c&&c.finishReason)||'sin respuesta')+')');
   return Uint8Array.from(atob(p.inlineData.data),ch=>ch.charCodeAt(0));
 }
+const SIL=new Uint8Array(33600); // 0,7 s de silencio (24 kHz, 16 bit)
+const cat=arr=>{const n=arr.reduce((a,b)=>a+b.length,0),o=new Uint8Array(n);let i=0;for(const a of arr){o.set(a,i);i+=a.length}return o};
+async function ttsSafe(text){
+  try{return await tts(text)}
+  catch(e){
+    if(!/no devolvió audio/.test(e.message))throw e;
+    const ps=text.split(/\n\n+/);if(ps.length<2)throw e;
+    status('Gemini no devolvió audio con el texto entero: lo genero en dos mitades…');
+    const h=Math.ceil(ps.length/2);
+    const a=await tts(ps.slice(0,h).join('\n\n'));const b=await tts(ps.slice(h).join('\n\n'));
+    return cat([a,SIL,b]);
+  }
+}
+const lastErr={};
 async function genOne(v){
   busy=v.id;renderList();status(`Generando ${v.id}…`);
-  try{const pcm=await tts(await textOf(v));await put('v',v.id,{wav:wav(pcm),dur:pcm.length/48000,model:$('model').value,voice:$('voice').value,at:Date.now()});have.add(v.id);}
+  try{const pcm=await ttsSafe(await textOf(v));delete lastErr[v.id];await put('v',v.id,{wav:wav(pcm),dur:pcm.length/48000,model:$('model').value,voice:$('voice').value,at:Date.now()});have.add(v.id);}
+  catch(e){lastErr[v.id]=e.message;throw e}
   finally{busy=null}
 }
 
@@ -127,7 +142,7 @@ async function renderList(){
     let st='<span class="badge">pendiente</span>',au='';
     if(busy===v.id)st='<span class="badge edit">generando…</span>';
     else if(have.has(v.id)){const r=await get('v',v.id);if(r){st=`<span class="badge ok">✓ ${r.dur.toFixed(1)} s</span>`;if(!urls.has(v.id))urls.set(v.id,URL.createObjectURL(r.wav));au=`<audio controls preload="none" src="${urls.get(v.id)}"></audio>`}}
-    const ed=edited.has(v.id)?'<span class="badge edit">texto editado</span>':'';
+    const ed=(edited.has(v.id)?'<span class="badge edit">texto editado</span>':'')+(!have.has(v.id)&&lastErr[v.id]&&busy!==v.id?`<span class="badge err" title="${esc(lastErr[v.id])}">error: ${esc(lastErr[v.id].slice(0,60))}</span>`:'');
     rows.push(`<div class="vid"><div><div class="id">${esc(v.id)} · ${v.scenes.length} escenas</div><h3>${esc(v.title)}</h3></div>
       <div class="acts">${ed}${st}${au}<button class="ghost" data-gen="${esc(v.id)}">${have.has(v.id)?'Regenerar':'Generar'}</button>${have.has(v.id)?`<button class="ghost" data-del="${esc(v.id)}">Borrar</button>`:''}</div>
       <details data-id="${esc(v.id)}"><summary>Ver / editar narración</summary><textarea data-txt="${esc(v.id)}"></textarea><div class="row" style="margin-top:6px"><button class="ghost" data-save="${esc(v.id)}">Guardar texto</button><button class="ghost" data-reset="${esc(v.id)}">Volver al guion original</button></div></details></div>`);
@@ -158,7 +173,7 @@ async function run(scope){
     catch(e){
       await refresh();
       if(e.fatal){status('Error: '+e.message,'err');running=false;break}
-      if(e.code===429){status('Cuota agotada por ahora. Reintento automático en 2 minutos (deja la página abierta).','err');running=false;timer=setTimeout(()=>run(scope),120000);break}
+      if(e.code===429){status(/per day|daily|PerDay/i.test(e.message)?'Cuota diaria agotada para este modelo ('+((e.message.match(/limit: \d+/)||[''])[0])+'). '+((e.message.match(/retry in ([\dhms.]+)/)||[,''])[1]?'Google dice reintentar en '+e.message.match(/retry in ((?:\d+h)?(?:\d+m)?)/)[1]+'. ':'')+'La página seguirá probando cada 30 min si la dejas abierta.':'Límite por minuto alcanzado. Reintento automático en 2 minutos.','err');running=false;timer=setTimeout(()=>run(scope),/per day|daily|PerDay/i.test(e.message)?1800000:120000);break}
       fail[v.id]=(fail[v.id]||0)+1;status(`Error en ${v.id}: ${e.message} · reintento en 20 s`,'err');await new Promise(r=>setTimeout(r,20000));
     }
   }
