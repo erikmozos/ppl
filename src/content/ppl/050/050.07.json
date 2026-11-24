@@ -19,7 +19,14 @@
     ],
     "ideas": [
      "Es como la carretera: hay baches junto al suelo (fricción), atascos dentro de la ciudad (nubes) y viento lateral en un puente despejado (aire claro), que nadie te avisa."
-    ]
+    ],
+    "video": {
+     "src": "/video/lessons/050.07-friccion-turbulencia.mp4",
+     "vtt": "/video/lessons/050.07-friccion-turbulencia.vtt",
+     "poster": "/video/lessons/050.07-friccion-turbulencia-poster.jpg",
+     "title": "La capa de fricción, turbulencia térmica y mecánica",
+     "duration": 75
+    }
    },
    {
     "title": "La capa de fricción",
@@ -82,7 +89,14 @@
     },
     "ideas": [
      "El agua de un arroyo que pasa sobre una roca sumergida forma una ola quieta justo detrás, donde el agua sigue corriendo pero la ola no se mueve. Esa ola quieta es la onda de montaña, solo que en el aire."
-    ]
+    ],
+    "video": {
+     "src": "/video/lessons/050.07-ondas-montana.mp4",
+     "vtt": "/video/lessons/050.07-ondas-montana.vtt",
+     "poster": "/video/lessons/050.07-ondas-montana-poster.jpg",
+     "title": "Ondas de montaña y rotores",
+     "duration": 82
+    }
    },
    {
     "title": "Efectos y señales visuales de las ondas",
@@ -130,7 +144,14 @@
     ],
     "ideas": [
      "El chorro es un río de aire rápido: en las orillas, donde el aire rápido roza al lento, se forman remolinos. Y el Cb es una olla de aire hirviendo: salpica dentro, alrededor y por arriba."
-    ]
+    ],
+    "video": {
+     "src": "/video/lessons/050.07-chorro-cb.mp4",
+     "vtt": "/video/lessons/050.07-chorro-cb.vtt",
+     "poster": "/video/lessons/050.07-chorro-cb-poster.jpg",
+     "title": "Turbulencia en chorros y cumulonimbos",
+     "duration": 67
+    }
    },
    {
     "title": "Tipos de turbulencia según su causa",

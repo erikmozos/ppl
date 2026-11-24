@@ -31,7 +31,14 @@
     ],
     "ideas": [
      "Es como el agua que cae sobre una sartén fría en el congelador: se extiende, se queda lisa y transparente, y se pega muy fuerte. Es el hielo de una pista de patinaje."
-    ]
+    ],
+    "video": {
+     "src": "/video/lessons/050.15-tipos-hielo.mp4",
+     "vtt": "/video/lessons/050.15-tipos-hielo.vtt",
+     "poster": "/video/lessons/050.15-tipos-hielo-poster.jpg",
+     "title": "Hielo claro, opaco, mixto y lluvia engelante",
+     "duration": 78
+    }
    },
    {
     "title": "Escarcha opaca (rime ice)",
@@ -108,7 +115,14 @@
     ],
     "ideas": [
      "Es como una bola de nieve mojada: la nieve por sí sola no se pega, pero la nieve húmeda con agua helada sí, y tapona orificios."
-    ]
+    ],
+    "video": {
+     "src": "/video/lessons/050.15-escarcha-severidad.mp4",
+     "vtt": "/video/lessons/050.15-escarcha-severidad.vtt",
+     "poster": "/video/lessons/050.15-escarcha-severidad-poster.jpg",
+     "title": "Escarcha, nieve compacta y qué hace más severo el hielo",
+     "duration": 90
+    }
    },
    {
     "title": "Escarcha blanca (hoar frost)",
@@ -131,7 +145,14 @@
     ],
     "ideas": [
      "Es como la harina fina en el aire de una panadería: cuando es muy densa y muy fina, entra en todas partes y atasca los filtros, y no se ve."
-    ]
+    ],
+    "video": {
+     "src": "/video/lessons/050.15-cristales-reactores.mp4",
+     "vtt": "/video/lessons/050.15-cristales-reactores.vtt",
+     "poster": "/video/lessons/050.15-cristales-reactores-poster.jpg",
+     "title": "Cristales de hielo y engelamiento de motores a reacción",
+     "duration": 89
+    }
    },
    {
     "title": "Factores que determinan la severidad",

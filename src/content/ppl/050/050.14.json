@@ -65,7 +65,14 @@
     "ideas": [
      "Imagina la presión como altura de un terreno. La alta es una colina, la baja un hoyo, la dorsal una loma alargada, la vaguada un barranco y el col el puerto entre dos colinas, que es plano justo en el collado. El aire rueda cuesta abajo del mapa, aunque la rotación de la Tierra lo desvía.",
      "Las isobaras juntas son las curvas de nivel de una ladera empinada: viento fuerte. Separadas, una llanura: viento flojo."
-    ]
+    ],
+    "video": {
+     "src": "/video/lessons/050.14-sistemas-presion.mp4",
+     "vtt": "/video/lessons/050.14-sistemas-presion.vtt",
+     "poster": "/video/lessons/050.14-sistemas-presion-poster.jpg",
+     "title": "Borrascas, anticiclones, vaguadas, dorsales y collados",
+     "duration": 69
+    }
    },
    {
     "title": "Depresión: el aire sube",

@@ -47,6 +47,13 @@
             ]
           ],
           "src": "Curso, tema 1; OACI Doc 7488"
+        },
+        "video": {
+          "src": "/video/lessons/050.01-capas-tropopausa.mp4",
+          "vtt": "/video/lessons/050.01-capas-tropopausa.vtt",
+          "poster": "/video/lessons/050.01-capas-tropopausa-poster.jpg",
+          "title": "Las capas de la atmósfera y la tropopausa",
+          "duration": 90
         }
       },
       {
@@ -135,7 +142,14 @@
         "ideas": [
           "Es el coche aparcado al sol con las ventanillas cerradas: la luz atraviesa el cristal sin calentarlo, calienta el salpicadero, y el salpicadero emite calor que el cristal no deja salir.",
           "También funciona como una manta: no genera calor, pero retiene el que emite el suelo."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/050.01-como-se-calienta.mp4",
+          "vtt": "/video/lessons/050.01-como-se-calienta.vtt",
+          "poster": "/video/lessons/050.01-como-se-calienta-poster.jpg",
+          "title": "Cómo se calienta la troposfera",
+          "duration": 80
+        }
       },
       {
         "title": "Conducción, convección y condensación (Conduction, convection, condensation)",
@@ -210,7 +224,14 @@
             "q": "¿Qué temperatura da la ISA a 10 000 ft?",
             "a": "15 − 2 × 10 = −5 °C."
           }
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/050.01-inversiones-temperaturas.mp4",
+          "vtt": "/video/lessons/050.01-inversiones-temperaturas.vtt",
+          "poster": "/video/lessons/050.01-inversiones-temperaturas-poster.jpg",
+          "title": "Inversiones y temperaturas máxima y mínima",
+          "duration": 70
+        }
       },
       {
         "title": "Temperatura máxima y mínima: efecto de las nubes y del viento",

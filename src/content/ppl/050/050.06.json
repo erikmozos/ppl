@@ -50,6 +50,13 @@
     "note": {
      "kind": "es",
      "text": "En el litoral mediterráneo y en Baleares la brisa marina es la regla en verano y un componente del circuito: la pista orientada hacia el mar puede tener viento de cara por la tarde y calma o viento flojo de tierra por la mañana. Los cambios de pista a lo largo del día son habituales."
+    },
+    "video": {
+     "src": "/video/lessons/050.06-brisas-valles.mp4",
+     "vtt": "/video/lessons/050.06-brisas-valles.vtt",
+     "poster": "/video/lessons/050.06-brisas-valles-poster.jpg",
+     "title": "Brisa de mar, brisa de tierra y viento de valle",
+     "duration": 83
     }
    },
    {
@@ -62,7 +69,14 @@
      "Anabático y de valle: de día, aire ascendente (útil para vuelo a vela, turbulento para el avión).",
      "Catabático y de montaña: de noche, aire descendente que se acumula en las zonas bajas.",
      "Un aeródromo en un valle puede cambiar de pista a lo largo del día por esta razón."
-    ]
+    ],
+    "video": {
+     "src": "/video/lessons/050.06-catabaticos-foehn.mp4",
+     "vtt": "/video/lessons/050.06-catabaticos-foehn.vtt",
+     "poster": "/video/lessons/050.06-catabaticos-foehn-poster.jpg",
+     "title": "Vientos catabáticos, anabáticos y efecto Foehn",
+     "duration": 79
+    }
    },
    {
     "title": "Canalización y efecto Venturi",

@@ -22,7 +22,14 @@
         "ideas": [
           "Un frente es como el aceite y el vinagre en la vinagrera: dos líquidos de distinta densidad que no se mezclan y se quedan en capas, con una línea clara entre ambos.",
           "La zona frontal es la mancha difusa que queda entre las dos capas si agitas un poco la vinagrera; el frente, la línea fina en el centro."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/050.13-frente-polar.mp4",
+          "vtt": "/video/lessons/050.13-frente-polar.vtt",
+          "poster": "/video/lessons/050.13-frente-polar-poster.jpg",
+          "title": "Frentes y el frente polar",
+          "duration": 79
+        }
       },
       {
         "title": "Los frentes principales del globo",
@@ -94,7 +101,14 @@
             "q": "La superficie frontal de un frente cálido está a 6000 ft sobre tu posición. ¿A qué distancia está el frente en superficie y cuándo llegará si avanza a 15 kt?",
             "a": "6000 ft son casi 1 NM de altura; con pendiente 1:150 el frente en superficie está a unas 150 NM. A 15 kt tarda 10 horas."
           }
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/050.13-frente-calido.mp4",
+          "vtt": "/video/lessons/050.13-frente-calido.vtt",
+          "poster": "/video/lessons/050.13-frente-calido-poster.jpg",
+          "title": "El frente cálido",
+          "duration": 89
+        }
       },
       {
         "title": "Frente frío (Cold front)",
@@ -113,7 +127,14 @@
             "q": "Un frente frío con pendiente 1:50 tiene su superficie a 6000 ft sobre ti. ¿A qué distancia está el frente en superficie?",
             "a": "6000 ft son casi 1 NM: unas 50 NM de distancia, mucho menos que en un frente cálido."
           }
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/050.13-frente-frio.mp4",
+          "vtt": "/video/lessons/050.13-frente-frio.vtt",
+          "poster": "/video/lessons/050.13-frente-frio-poster.jpg",
+          "title": "El frente frío",
+          "duration": 59
+        }
       },
       {
         "title": "Sector cálido y frente estacionario",
@@ -153,6 +174,13 @@
             ]
           ],
           "src": "Curso, tema 5"
+        },
+        "video": {
+          "src": "/video/lessons/050.13-chorro-oclusion.mp4",
+          "vtt": "/video/lessons/050.13-chorro-oclusion.vtt",
+          "poster": "/video/lessons/050.13-chorro-oclusion-poster.jpg",
+          "title": "La corriente en chorro y las oclusiones",
+          "duration": 71
         }
       },
       {

@@ -32,7 +32,14 @@
             "q": "El QNH de tu aeródromo es 1008 hPa. ¿Es una presión alta o baja respecto a la estándar?",
             "a": "1013,25 − 1008 ≈ 5 hPa por debajo: es una presión algo baja, típica de una zona de bajas."
           }
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/050.02-presion-barometros.mp4",
+          "vtt": "/video/lessons/050.02-presion-barometros.vtt",
+          "poster": "/video/lessons/050.02-presion-barometros-poster.jpg",
+          "title": "La presión atmosférica y cómo se mide",
+          "duration": 84
+        }
       },
       {
         "title": "Barómetros: de mercurio, aneroide y barógrafo",
@@ -130,7 +137,14 @@
         "ideas": [
           "Es como ver una montaña en un mapa topográfico: las curvas de nivel son las isobaras, la cima es el anticiclón y el valle es la borrasca.",
           "Un mapa sin reducir sería como medir la altura de todos los niños de un colegio subidos cada uno a una silla de distinta altura: no se puede comparar."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/050.02-isobaras-gradiente.mp4",
+          "vtt": "/video/lessons/050.02-isobaras-gradiente.vtt",
+          "poster": "/video/lessons/050.02-isobaras-gradiente-poster.jpg",
+          "title": "Isobaras y fuerza del gradiente de presión",
+          "duration": 64
+        }
       },
       {
         "title": "Fuerza del gradiente de presión (Pressure gradient force)",
@@ -182,6 +196,13 @@
             ]
           ],
           "src": "Curso, tema 2; OACI Anexo 3 y Doc 8168"
+        },
+        "video": {
+          "src": "/video/lessons/050.02-qfe-qnh-qff-qne.mp4",
+          "vtt": "/video/lessons/050.02-qfe-qnh-qff-qne.vtt",
+          "poster": "/video/lessons/050.02-qfe-qnh-qff-qne-poster.jpg",
+          "title": "QFE, QNH, QFF y QNE",
+          "duration": 84
         }
       },
       {
@@ -210,7 +231,14 @@
             "f": "ρ = p / (R · T)",
             "note": "Densidad proporcional a la presión e inversa a la temperatura absoluta (en kelvin)."
           }
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/050.02-altitud-densidad.mp4",
+          "vtt": "/video/lessons/050.02-altitud-densidad.vtt",
+          "poster": "/video/lessons/050.02-altitud-densidad-poster.jpg",
+          "title": "Densidad relativa y altitud de densidad",
+          "duration": 72
+        }
       },
       {
         "title": "Densidad relativa y altitud de densidad (Density altitude)",

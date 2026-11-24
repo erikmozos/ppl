@@ -76,7 +76,14 @@
      "**Ley de Buys-Ballot** (hemisferio norte): si das la espalda al viento, la baja presión queda a tu izquierda."
     ],
     "figure": "svg:050-viento",
-    "caption": "En altura, el gradiente y Coriolis se equilibran y el viento sopla paralelo a las isobaras; en superficie, la fricción reduce Coriolis y el viento cruza las isobaras hacia la baja."
+    "caption": "En altura, el gradiente y Coriolis se equilibran y el viento sopla paralelo a las isobaras; en superficie, la fricción reduce Coriolis y el viento cruza las isobaras hacia la baja.",
+    "video": {
+     "src": "/video/lessons/050.04-viento-fuerzas.mp4",
+     "vtt": "/video/lessons/050.04-viento-fuerzas.vtt",
+     "poster": "/video/lessons/050.04-viento-fuerzas-poster.jpg",
+     "title": "Gradiente, Coriolis, geostrófico y viento en superficie",
+     "duration": 93
+    }
    },
    {
     "title": "Viento geostrófico y viento del gradiente",

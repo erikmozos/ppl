@@ -90,7 +90,14 @@
         "ideas": [
           "El altímetro es una regla que solo sabe medir distancias desde el punto donde tú pongas el cero. Si pones mal el cero, mide perfecto... desde el sitio equivocado.",
           "Es como una balanza de cocina que hay que tarar: si no la pones a cero con el cuenco vacío, todo lo que pesas sale mal por la misma cantidad."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/050.03-altimetro-qnh-qfe.mp4",
+          "vtt": "/video/lessons/050.03-altimetro-qnh-qfe.vtt",
+          "poster": "/video/lessons/050.03-altimetro-qnh-qfe-poster.jpg",
+          "title": "El altímetro y la ventanilla Kollsman",
+          "duration": 67
+        }
       },
       {
         "title": "Ajuste de la subescala: QNH, QFE y 1013 (Kollsman window)",
@@ -125,7 +132,14 @@
             "q": "Sales con QNH 1020 y llevas 3000 ft indicados constantes hasta un destino con QNH 1005, sin reajustar. ¿Qué altitud verdadera tendrás?",
             "a": "Diferencia de presión: 15 hPa × 27 ft ≈ 405 ft. Vas hacia presión menor: estás ≈ 405 ft más bajo, es decir, unos 2600 ft."
           }
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/050.03-alta-a-baja.mp4",
+          "vtt": "/video/lessons/050.03-alta-a-baja.vtt",
+          "poster": "/video/lessons/050.03-alta-a-baja-poster.jpg",
+          "title": "De alta a baja, cuidado abajo",
+          "duration": 75
+        }
       },
       {
         "title": "Por qué hay que ajustar y colacionar el QNH",
@@ -158,7 +172,14 @@
           "kind": "es",
           "text": "En España la altitud de transición no es única: se publica para cada aeródromo en el AIP (parte AD). Consulta la carta VAC o el AIP de cada aeropuerto."
         },
-        "verify": true
+        "verify": true,
+        "video": {
+          "src": "/video/lessons/050.03-transicion-altitud-presion.mp4",
+          "vtt": "/video/lessons/050.03-transicion-altitud-presion.vtt",
+          "poster": "/video/lessons/050.03-transicion-altitud-presion-poster.jpg",
+          "title": "Altitud de transición, nivel de transición y altitud de presión",
+          "duration": 100
+        }
       },
       {
         "title": "Calculadora de altimetría",
@@ -236,7 +257,14 @@
             "q": "Indicas 6000 ft sobre una capa ISA − 15. ¿Altitud verdadera?",
             "a": "4 × 15 × 6 = 360 ft menos: 5640 ft."
           }
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/050.03-error-temperatura.mp4",
+          "vtt": "/video/lessons/050.03-error-temperatura.vtt",
+          "poster": "/video/lessons/050.03-error-temperatura-poster.jpg",
+          "title": "Error por temperatura: de caliente a frío, cuidado abajo",
+          "duration": 70
+        }
       },
       {
         "title": "Error por flujo acelerado sobre el relieve y otros errores",

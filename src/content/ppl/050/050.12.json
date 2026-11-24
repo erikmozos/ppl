@@ -21,7 +21,14 @@
         "ideas": [
           "Una masa de aire es como una sopa que ha estado a fuego lento mucho rato: todo el caldo tiene la misma temperatura y el mismo sabor. La región fuente es la olla.",
           "Si dejas la ventana abierta en un cuarto durante días, el aire acaba oliendo a lo que hay dentro: a campo, a mar o a polvo. Así adquieren las masas su «personalidad»."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/050.12-masas-aire-origen.mp4",
+          "vtt": "/video/lessons/050.12-masas-aire-origen.vtt",
+          "poster": "/video/lessons/050.12-masas-aire-origen-poster.jpg",
+          "title": "Qué es una masa de aire y cómo cambia",
+          "duration": 79
+        }
       },
       {
         "title": "Modificación de una masa de aire (Modification)",
@@ -144,7 +151,14 @@
           "La mP es el aire que llega de la cocina de la abuela cuando abres la ventana: fresco, húmedo y con ganas de hacer lío. La cP es el aire de la nevera: seco, frío y quieto.",
           "La mP de retorno es como una taza de té que ha dado una vuelta por el pasillo: ya no está tan fría y ha cogido humedad por el camino."
         ],
-        "verify": true
+        "verify": true,
+        "video": {
+          "src": "/video/lessons/050.12-masas-polares-articas.mp4",
+          "vtt": "/video/lessons/050.12-masas-polares-articas.vtt",
+          "poster": "/video/lessons/050.12-masas-polares-articas-poster.jpg",
+          "title": "Masas polares y ártica",
+          "duration": 95
+        }
       },
       {
         "title": "Masas tropicales: marítima y continental",
@@ -155,7 +169,14 @@
         "ideas": [
           "La mT es el aire del vestuario de una piscina cubierta: cálido, húmedo y que empaña el espejo en cuanto toca algo frío. La cT es el aire de un secador de pelo: muy caliente y seco, con polvo en suspensión.",
           "El Sáhara es el desierto de las masas de aire: lo que sale de allí es cálido, seco y con arena."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/050.12-masas-tropicales.mp4",
+          "vtt": "/video/lessons/050.12-masas-tropicales.vtt",
+          "poster": "/video/lessons/050.12-masas-tropicales-poster.jpg",
+          "title": "Masas tropicales y ecuatorial",
+          "duration": 80
+        }
       },
       {
         "title": "Masas ártica y ecuatorial",

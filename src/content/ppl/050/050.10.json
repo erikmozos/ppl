@@ -97,7 +97,14 @@
     "ideas": [
      "El suelo de noche es una persona sin manta: sin nubes que lo abriguen, se enfría rápido y enfría el aire que toca. Con viento flojo, lo mezcla un poco y el frío sube; con viento fuerte, el frío se reparte y no se nota.",
      "Es la niebla de los espejos del coche al amanecer: no la trae nadie, nace de la propia noche despejada."
-    ]
+    ],
+    "video": {
+     "src": "/video/lessons/050.10-nieblas.mp4",
+     "vtt": "/video/lessons/050.10-nieblas.vtt",
+     "poster": "/video/lessons/050.10-nieblas-poster.jpg",
+     "title": "Niebla de radiación, de advección, frontal y orográfica",
+     "duration": 87
+    }
    },
    {
     "title": "Niebla de advección",

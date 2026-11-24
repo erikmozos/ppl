@@ -20,7 +20,14 @@
     ],
     "ideas": [
      "El clima es el armario y el tiempo es la ropa que te pones hoy: el armario del Sáhara no tiene paraguas ni abrigo, el de Galicia tiene de todo."
-    ]
+    ],
+    "video": {
+     "src": "/video/lessons/050.05-circulacion-itcz.mp4",
+     "vtt": "/video/lessons/050.05-circulacion-itcz.vtt",
+     "poster": "/video/lessons/050.05-circulacion-itcz-poster.jpg",
+     "title": "Circulación general, zonas climáticas y la ITCZ",
+     "duration": 97
+    }
    },
    {
     "title": "El motor: calor desigual y rotación de la Tierra",
@@ -169,7 +176,14 @@
     ],
     "ideas": [
      "Un monzón es la respiración del continente: en invierno exhala aire frío y seco hacia el mar; en verano inhala aire cargado de humedad del océano."
-    ]
+    ],
+    "video": {
+     "src": "/video/lessons/050.05-monzones-chorros-locales.mp4",
+     "vtt": "/video/lessons/050.05-monzones-chorros-locales.vtt",
+     "poster": "/video/lessons/050.05-monzones-chorros-locales-poster.jpg",
+     "title": "Monzones, corrientes en chorro y vientos regionales",
+     "duration": 92
+    }
    },
    {
     "title": "Vientos en altura y corrientes en chorro",
