@@ -1,0 +1,116 @@
+WEBVTT
+
+00:00:00.347 --> 00:00:02.952
+El anemómetro no mide la velocidad con un
+
+00:00:02.952 --> 00:00:04.425
+radar ni con un GPS.
+
+00:00:04.425 --> 00:00:06.134
+Mide presiones.
+
+00:00:06.134 --> 00:00:09.397
+Y la clave para entenderlo es Bernoulli.
+
+00:00:10.866 --> 00:00:13.579
+El teorema de Bernoulli es conservación de la
+
+00:00:13.579 --> 00:00:14.883
+energía.
+
+00:00:14.883 --> 00:00:16.887
+En un fluido en movimiento,
+
+00:00:16.887 --> 00:00:19.976
+la presión estática más la presión dinámica,
+
+00:00:19.976 --> 00:00:21.864
+la energía del movimiento,
+
+00:00:21.864 --> 00:00:23.779
+se mantiene constante.
+
+00:00:23.779 --> 00:00:25.502
+Esa suma es la presión total.
+
+00:00:26.922 --> 00:00:29.240
+Si frenas el aire hasta pararlo del todo,
+
+00:00:29.240 --> 00:00:32.166
+su energía de movimiento no desaparece:
+
+00:00:32.166 --> 00:00:33.576
+se convierte en presión.
+
+00:00:33.576 --> 00:00:35.424
+En ese punto,
+
+00:00:35.424 --> 00:00:37.019
+el punto de remanso,
+
+00:00:37.019 --> 00:00:38.811
+la presión es la presión total.
+
+00:00:40.221 --> 00:00:42.344
+Eso es exactamente el tubo de pitot:
+
+00:00:42.344 --> 00:00:43.962
+el aire entra,
+
+00:00:43.962 --> 00:00:46.622
+el tubo está cerrado por dentro,
+
+00:00:46.622 --> 00:00:48.845
+el aire se detiene y lo que llega
+
+00:00:48.845 --> 00:00:50.721
+al instrumento es presión total.
+
+00:00:50.721 --> 00:00:52.838
+Por las tomas estáticas,
+
+00:00:52.838 --> 00:00:53.776
+en el costado,
+
+00:00:53.776 --> 00:00:55.603
+llega la presión estática.
+
+00:00:56.520 --> 00:00:57.903
+Dentro del anemómetro,
+
+00:00:57.903 --> 00:01:00.537
+un diafragma recibe la total por dentro y
+
+00:01:00.537 --> 00:01:02.898
+la estática por fuera.
+
+00:01:02.898 --> 00:01:05.124
+La diferencia es la presión dinámica.
+
+00:01:05.124 --> 00:01:08.330
+Más velocidad, más presión dinámica,
+
+00:01:08.330 --> 00:01:10.019
+más se hincha el diafragma,
+
+00:01:10.019 --> 00:01:11.831
+y más avanza la aguja.
+
+00:01:14.157 --> 00:01:15.135
+Resumen:
+
+00:01:15.135 --> 00:01:17.716
+pitot, presión total.
+
+00:01:17.716 --> 00:01:20.236
+Estática, presión estática.
+
+00:01:20.236 --> 00:01:23.091
+La diferencia, presión dinámica.
+
+00:01:23.091 --> 00:01:25.301
+Y eso es lo que el anemómetro convierte
+
+00:01:25.301 --> 00:01:26.657
+en velocidad indicada.
+

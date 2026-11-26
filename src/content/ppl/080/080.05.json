@@ -84,7 +84,14 @@
         "ideas": [
           "La fórmula es como la receta de una paella: la velocidad es el fuego (cuenta al cuadrado), la densidad y la superficie son la cantidad de arroz y el tamaño de la paella, y el CL es lo bien que sabes cocinar.",
           "Una vela de barco: más viento (V²) o más tela (S) dan más fuerza; un buen ajuste de la vela (CL) la exprime todavía más."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.05-formula-sustentacion.mp4",
+          "vtt": "/video/lessons/080.05-formula-sustentacion.vtt",
+          "poster": "/video/lessons/080.05-formula-sustentacion-poster.jpg",
+          "title": "La fórmula de la sustentación en vuelo real",
+          "duration": 83
+        }
       },
       {
         "title": "De qué depende cada coeficiente",

@@ -25,7 +25,14 @@
         "ideas": [
           "Sacar la mano por la ventanilla del coche en distintas posiciones: de canto apenas la notas (forma afilada); con la palma abierta te empuja (forma roma). Es la resistencia de forma.",
           "Pasar la mano por una pared lisa y por una rugosa: la rugosa «frena» más. Es la fricción, y por eso los aviones se lavan y se pulen."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.07-resistencia-total.mp4",
+          "vtt": "/video/lessons/080.07-resistencia-total.vtt",
+          "poster": "/video/lessons/080.07-resistencia-total-poster.jpg",
+          "title": "Resistencia parásita, inducida y total",
+          "duration": 80
+        }
       },
       {
         "title": "Parásita e inducida frente a la presión dinámica",

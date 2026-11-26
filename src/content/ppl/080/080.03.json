@@ -28,7 +28,14 @@
         "ideas": [
           "Dibuja en una hoja el perfil de un ala de avión de papel: el borde por el que entra el aire es el de ataque; por el que sale, el de salida; la línea recta que los une es la cuerda.",
           "Extradós es la cara de «arriba», de «extra», fuera; intradós, la de «dentro». Es como el lomo y el vientre de un pez."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.03-perfil.mp4",
+          "vtt": "/video/lessons/080.03-perfil.vtt",
+          "poster": "/video/lessons/080.03-perfil-poster.jpg",
+          "title": "Anatomía de un perfil aerodinámico",
+          "duration": 69
+        }
       },
       {
         "title": "Parámetros geométricos del perfil y valores típicos",

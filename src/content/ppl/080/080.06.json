@@ -34,7 +34,14 @@
         "ideas": [
           "Dos peonzas que giran en sentidos contrarios detrás del avión: entre ellas el aire va hacia abajo y por fuera va hacia arriba, como entre dos ruedas de un tren que giran al revés.",
           "El viento relativo efectivo es como el viento que sientes en bici cuando alguien te echa un cubo de agua desde arriba: ya no viene recto, viene algo inclinado."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.06-torbellinos-alargamiento.mp4",
+          "vtt": "/video/lessons/080.06-torbellinos-alargamiento.vtt",
+          "poster": "/video/lessons/080.06-torbellinos-alargamiento-poster.jpg",
+          "title": "Torbellinos de punta, resistencia inducida y alargamiento",
+          "duration": 65
+        }
       },
       {
         "title": "Resistencia inducida",
@@ -161,7 +168,14 @@
         "ideas": [
           "Un coche de carreras con alerones pegados al suelo recibe más agarre: aire comprimido entre el coche y el asfalto. Un avión que se acerca a la pista nota el mismo «colchón», aunque mucho más suave.",
           "Es como bracear en una bañera: cuando tus manos rozan el fondo, notas que el agua te sostiene más porque no puede escapar hacia abajo."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.06-efecto-suelo.mp4",
+          "vtt": "/video/lessons/080.06-efecto-suelo.vtt",
+          "poster": "/video/lessons/080.06-efecto-suelo-poster.jpg",
+          "title": "Efecto suelo",
+          "duration": 62
+        }
       },
       {
         "title": "La estela turbulenta",

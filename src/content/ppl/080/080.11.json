@@ -20,7 +20,14 @@
         ],
         "ideas": [
           "Una bola en el fondo de un cuenco, otra sobre una mesa plana y otra en lo alto de una colina: las tres están en equilibrio, pero solo la primera vuelve a su sitio si la empujas un poco."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.11-tipos-estabilidad.mp4",
+          "vtt": "/video/lessons/080.11-tipos-estabilidad.vtt",
+          "poster": "/video/lessons/080.11-tipos-estabilidad-poster.jpg",
+          "title": "Estabilidad estática y dinámica",
+          "duration": 52
+        }
       },
       {
         "title": "Estabilidad estática, dinámica y maniobrabilidad",
@@ -98,7 +105,14 @@
         "ideas": [
           "Una flecha lanzada con las plumas atrás vuela recta porque el peso está delante de las plumas, que actúan como la cola. Si pones las plumas delante, la flecha da vueltas: el CG tiene que ir delante del punto neutro.",
           "Un carro de supermercado con el peso muy cerca del eje de las ruedas delanteras es difícil de girar pero va recto; con la carga detrás, se te va de lado a cada irregularidad."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.11-longitudinal.mp4",
+          "vtt": "/video/lessons/080.11-longitudinal.vtt",
+          "poster": "/video/lessons/080.11-longitudinal-poster.jpg",
+          "title": "Estabilidad longitudinal y el papel del estabilizador",
+          "duration": 63
+        }
       },
       {
         "title": "Contribución del fuselaje",
@@ -119,7 +133,14 @@
         "verify": true,
         "ideas": [
           "Cuando das gas a fondo en una moto en pie de gallo, la rueda delantera tiende a levantarse: algo parecido ocurre con el morro de una avioneta al dar potencia a baja velocidad."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.11-potencia-flaps.mp4",
+          "vtt": "/video/lessons/080.11-potencia-flaps.vtt",
+          "poster": "/video/lessons/080.11-potencia-flaps-poster.jpg",
+          "title": "Potencia y flaps: lo que desestabiliza",
+          "duration": 76
+        }
       },
       {
         "title": "Efecto de los hipersustentadores sobre la estabilidad",

@@ -35,7 +35,14 @@
         "ideas": [
           "Un paquete de azúcar de un kilo sigue siendo un kilo de azúcar en la Luna (masa), pero allí te cuesta menos levantarlo (peso).",
           "Piensa en la masa como «lo que hay» y en el peso como «lo que la Tierra tira de ello»: si cambias de planeta, lo que hay no cambia, lo que tira sí."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.01-masa-peso-cg.mp4",
+          "vtt": "/video/lessons/080.01-masa-peso-cg.vtt",
+          "poster": "/video/lessons/080.01-masa-peso-cg-poster.jpg",
+          "title": "Masa, peso y centro de gravedad",
+          "duration": 79
+        }
       },
       {
         "title": "Centro de gravedad",
@@ -142,7 +149,14 @@
         "ideas": [
           "Primera ley: frenas en seco en el coche y el café sale hacia delante porque quiere seguir como iba. Segunda ley: empujar un carrito de la compra vacío o lleno exige fuerzas muy distintas para la misma aceleración. Tercera ley: sentado en una silla con ruedas, empujas la pared y retrocedes tú.",
           "Un helicóptero de juguete sujeto con una cuerda a una mano: la hélice empuja el aire hacia abajo y el aire empuja al helicóptero hacia arriba. Un ala hace lo mismo con una gran masa de aire, mucho más despacio."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.01-newton.mp4",
+          "vtt": "/video/lessons/080.01-newton.vtt",
+          "poster": "/video/lessons/080.01-newton-poster.jpg",
+          "title": "La primera ley de Newton y las cuatro fuerzas",
+          "duration": 81
+        }
       },
       {
         "title": "Presión estática, dinámica y total",
@@ -281,7 +295,14 @@
         "ideas": [
           "El anemómetro no sabe lo rápido que vas, solo cuánto te empuja el aire. Es como un nadador que mide su velocidad por la resistencia que nota: en aire fino, para notar el mismo empujón tienes que ir más rápido.",
           "Piensa en la IAS como lo que «sientes» y en la TAS como lo que «recorres». Para pilotar el ala te importa lo que sientes (pérdida a la misma IAS); para llegar a tiempo, lo que recorres."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.01-ias-cas-eas-tas.mp4",
+          "vtt": "/video/lessons/080.01-ias-cas-eas-tas.vtt",
+          "poster": "/video/lessons/080.01-ias-cas-eas-tas-poster.jpg",
+          "title": "IAS, CAS, EAS y TAS",
+          "duration": 65
+        }
       }
     ],
     "numbers": [

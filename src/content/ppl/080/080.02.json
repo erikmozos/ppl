@@ -68,7 +68,14 @@
           "La ISA es como la «talla M» de la ropa: no es la medida de nadie en concreto, pero sirve para decir cuánto se desvía cada día real (ISA +10 significa 10 °C más cálido que el estándar)."
         ],
         "figure": "svg:050-atmosfera",
-        "caption": "Capas de la atmósfera: la troposfera llega hasta la tropopausa, a unos 11 km."
+        "caption": "Capas de la atmósfera: la troposfera llega hasta la tropopausa, a unos 11 km.",
+        "video": {
+          "src": "/video/lessons/080.02-aire-presion-altimetro.mp4",
+          "vtt": "/video/lessons/080.02-aire-presion-altimetro.vtt",
+          "poster": "/video/lessons/080.02-aire-presion-altimetro-poster.jpg",
+          "title": "El aire: densidad, temperatura, presión y el altímetro",
+          "duration": 90
+        }
       },
       {
         "title": "Temperatura y presión: las moléculas en movimiento",
@@ -147,7 +154,14 @@
         "ideas": [
           "Una montaña rusa sin rozamiento: arriba va lenta pero alta, abajo rápida y baja; lo que pierde en altura lo gana en velocidad. El aire hace lo mismo cambiando presión por velocidad.",
           "Si frenas de golpe una pelota que va rodando contra una pared, toda su energía de movimiento se convierte en un golpe en la pared. El punto de remanso de un perfil es la «pared» donde el aire se frena y golpea con su presión total."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.02-bernoulli-pitot.mp4",
+          "vtt": "/video/lessons/080.02-bernoulli-pitot.vtt",
+          "poster": "/video/lessons/080.02-bernoulli-pitot-poster.jpg",
+          "title": "Bernoulli y cómo sabe el avión a qué velocidad va",
+          "duration": 87
+        }
       },
       {
         "title": "El sistema pitot-estático",

@@ -39,7 +39,14 @@
         "ideas": [
           "Dobla una hoja de papel por el borde de atrás hacia abajo y sopla por encima: el borde curvado se levanta más que la hoja plana. Esa mayor curvatura es lo que hace subir el CL.",
           "Piensa en el ala como una cuchara de servir: cuanto más honda, más sopa recoge. El flap hace la cuchara más honda, pero con la cuchara más honda el borde se desborda antes (ángulo crítico menor)."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.09-flaps.mp4",
+          "vtt": "/video/lessons/080.09-flaps.vtt",
+          "poster": "/video/lessons/080.09-flaps-poster.jpg",
+          "title": "Flaps: por qué suben el CL y qué tipos hay",
+          "duration": 69
+        }
       },
       {
         "title": "Tipos de flap de borde de salida",
@@ -133,7 +140,14 @@
         "ideas": [
           "La ranura es como la rendija de una puerta que da a un pasillo con corriente: el aire entra rápido por ella y barre la pared de dentro. En el ala, ese aire rápido barre el extradós y evita que se despegue.",
           "Para evitar que una curva muy cerrada derrape, la peraltas: el flap de borde de ataque hace lo mismo con la entrada del aire, la hace más suave."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.09-borde-ataque.mp4",
+          "vtt": "/video/lessons/080.09-borde-ataque.vtt",
+          "poster": "/video/lessons/080.09-borde-ataque-poster.jpg",
+          "title": "Dispositivos de borde de ataque: slats y ranuras",
+          "duration": 65
+        }
       }
     ],
     "numbers": [

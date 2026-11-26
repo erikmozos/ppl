@@ -55,7 +55,14 @@
         ],
         "ideas": [
           "Piensa en un pollo en el asador: el pincho que lo atraviesa de pico a cola es el eje longitudinal (rodar sobre sí mismo), el que cruza de ala a ala es el lateral (cabecear) y el que baja por el lomo es el vertical (girar como una peonza)."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.12-mandos.mp4",
+          "vtt": "/video/lessons/080.12-mandos.vtt",
+          "poster": "/video/lessons/080.12-mandos-poster.jpg",
+          "title": "Tres ejes, tres mandos: profundidad, alerones y timón",
+          "duration": 70
+        }
       },
       {
         "title": "Control en cabeceo: profundidad, downwash y estela",
@@ -81,7 +88,14 @@
         ],
         "ideas": [
           "Abrir una puerta empujando cerca de las bisagras cuesta muchísimo; empujando lejos de ellas, casi nada. En un mando, el centro de presiones suele estar lejos de la bisagra: el avión empuja la puerta por su sitio más desfavorable, y por eso necesitas compensarlo."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.12-bisagra-fuerza-mando.mp4",
+          "vtt": "/video/lessons/080.12-bisagra-fuerza-mando.vtt",
+          "poster": "/video/lessons/080.12-bisagra-fuerza-mando-poster.jpg",
+          "title": "Momento de bisagra y fuerza en los mandos",
+          "duration": 65
+        }
       },
       {
         "title": "Timón de dirección: control de guiñada",

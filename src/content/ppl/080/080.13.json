@@ -20,7 +20,14 @@
         ],
         "ideas": [
           "Una regla de plástico: si la doblas poco, vuelve a su sitio; si la doblas más allá de cierto punto, queda deformada o se rompe. Los límites son lo que te dice hasta dónde la puedes doblar y con qué rapidez."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.13-aeroelasticidad.mp4",
+          "vtt": "/video/lessons/080.13-aeroelasticidad.vtt",
+          "poster": "/video/lessons/080.13-aeroelasticidad-poster.jpg",
+          "title": "Limitaciones, elasticidad y aeroelasticidad",
+          "duration": 54
+        }
       },
       {
         "title": "Elasticidad estructural y aeroelasticidad",
@@ -46,7 +53,14 @@
         "verify": true,
         "ideas": [
           "Las puertas de un armario ligero soportan que las abras suavemente, pero si las abres de golpe o te cuelgas de ellas, se rompen. Los flaps son esas puertas: delicados cuando están extendidos."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.13-factores-carga.mp4",
+          "vtt": "/video/lessons/080.13-factores-carga.vtt",
+          "poster": "/video/lessons/080.13-factores-carga-poster.jpg",
+          "title": "Factor de carga, carga límite y carga última",
+          "duration": 76
+        }
       },
       {
         "title": "Cargas y factores de seguridad",
@@ -143,7 +157,14 @@
         "verify": true,
         "ideas": [
           "Es como el límite de velocidad en una curva: con poca velocidad, antes de derrapar (pérdida) no te pasa nada grave; con mucha, el coche aguanta el giro hasta que algo se rompe. VA es la velocidad por debajo de la cual el derrape llega antes que la rotura."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.13-vn-arcos.mp4",
+          "vtt": "/video/lessons/080.13-vn-arcos.vtt",
+          "poster": "/video/lessons/080.13-vn-arcos-poster.jpg",
+          "title": "El diagrama V-n y los arcos del anemómetro",
+          "duration": 81
+        }
       },
       {
         "title": "Velocidades y arcos del anemómetro",

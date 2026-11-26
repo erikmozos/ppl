@@ -20,7 +20,14 @@
         "ideas": [
           "Un ciclista que sube una cuesta muy empinada: si la pendiente pasa de cierto valor, no importa lo fuerte que pedalee, la rueda patina. En el ala, ese límite de pendiente es el ángulo de ataque crítico, y la rueda que patina es el aire que se despega.",
           "El avioncito de papel que lanzas con el morro demasiado alto se queda sin sustentación y cae: no ha perdido velocidad por «falta de motor», sino que el ángulo era excesivo."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.08-perdida.mp4",
+          "vtt": "/video/lessons/080.08-perdida.vtt",
+          "poster": "/video/lessons/080.08-perdida-poster.jpg",
+          "title": "La pérdida: qué pasa en el ala",
+          "duration": 67
+        }
       },
       {
         "title": "Capa límite, separación y bataneo",
@@ -175,7 +182,14 @@
         },
         "ideas": [
           "Si un patinete empieza a derrapar en una bajada, lo primero es dejar de inclinarte hacia atrás y soltar el freno trasero; solo después aceleras. Con el avión: primero bajas el morro, después das gas."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.08-recuperacion-aviso.mp4",
+          "vtt": "/video/lessons/080.08-recuperacion-aviso.vtt",
+          "poster": "/video/lessons/080.08-recuperacion-aviso-poster.jpg",
+          "title": "Cómo se recupera una pérdida y cómo te avisa el avión",
+          "duration": 75
+        }
       },
       {
         "title": "Uso de los mandos según el tipo de ala",

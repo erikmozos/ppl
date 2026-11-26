@@ -27,7 +27,14 @@
         "ideas": [
           "Si vas en bici un día de viento, lo que notas en la cara es la velocidad relativa entre tú y el aire, no la que marca el suelo: con viento de cola, el aire casi no te sopla aunque vayas deprisa.",
           "El flujo relativo es como el viento que sientes con la cabeza fuera del tren: viene siempre de la dirección hacia la que te mueves, sea cual sea el morro del tren."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.04-viento-relativo-sustentacion.mp4",
+          "vtt": "/video/lessons/080.04-viento-relativo-sustentacion.vtt",
+          "poster": "/video/lessons/080.04-viento-relativo-sustentacion-poster.jpg",
+          "title": "Viento relativo, ángulo de ataque y de dónde sale la sustentación",
+          "duration": 78
+        }
       },
       {
         "title": "Punto de remanso",
@@ -76,7 +83,14 @@
         "ideas": [
           "El CP es como el punto donde sostienes una regla en equilibrio sobre un dedo cuando le pegan un trozo de plastilina en distintos sitios: se desplaza al cambiar el reparto. El centro aerodinámico es un punto «de referencia» donde el momento no cambia.",
           "Un balancín donde un niño se mueve de sitio sin avisar: el punto de equilibrio no está quieto."
-        ]
+        ],
+        "video": {
+          "src": "/video/lessons/080.04-centro-presiones-curva-cl.mp4",
+          "vtt": "/video/lessons/080.04-centro-presiones-curva-cl.vtt",
+          "poster": "/video/lessons/080.04-centro-presiones-curva-cl-poster.jpg",
+          "title": "El centro de presiones y la curva CL–α",
+          "duration": 70
+        }
       },
       {
         "title": "Capa límite y separación",
