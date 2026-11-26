@@ -71,7 +71,14 @@
      "Los símbolos son un código de pictogramas: el punto negro es la gota que cae, la coma es la gota pequeña, el asterisco es el copo, el triángulo invertido es el chubasco que cae de un cielo cuajado.",
      "Niebla = tres rayas (una pared gruesa); neblina = dos rayas (un velo más fino): menos rayas, menos niebla.",
      "Calima = el ocho tumbado, como unas gafas de bruma que nublan la vista."
-    ]
+    ],
+    "video": {
+     "src": "/video/lessons/050.18-simbolos-sigwx.mp4",
+     "vtt": "/video/lessons/050.18-simbolos-sigwx.vtt",
+     "poster": "/video/lessons/050.18-simbolos-sigwx-poster.jpg",
+     "title": "Símbolos del tiempo significativo y cómo leer un SIGWX",
+     "duration": 84
+    }
    },
    {
     "title": "Símbolos del tiempo significativo: peligros",
